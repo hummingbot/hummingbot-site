@@ -1,4 +1,6 @@
-Hummingbot is the leading open source crypto trading bot, used by thousands of individual and professional traders and developers. Its modular architecture lets users build and maintain connectors, strategies, and other components without impacting other sections of the codebase.
+Hummingbot is the leading open source crypto trading bot, used by thousands of individual and professional traders and developers. Its modular architecture lets users build and maintain connectors, strategies, and other components independently, and many users have modified and customized the Hummingbot software for their own use.
+
+The Hummingbot community is comprised of its global user base of individual liquidity miners, as well as professional traders, market makers, and software developers. Like the Hummingbot codebase itself, our community is open, decentralized, and diverse.
 
 ## 🏛️ Official Channels
 

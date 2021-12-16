@@ -118,10 +118,14 @@ nav:
   - Home:
     - Home: index.md
     - About: about.md
-    - FAQ: faq.md
     - Community: community.md
-    - Recent News:
-      - Recent News: news/index.md
+    - Maintenance: maintenance.md
+    - Governance:
+        - Governance: governance/index.md
+        - Whitepaper: governance/whitepaper.md
+        - HBOT: governance/hbot.md
+    - News & Updates:
+      - News & Updates: news/index.md
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
   - Documentation:
@@ -235,6 +239,7 @@ nav:
       - Ping Pong: strategy-configs/ping-pong.md
       - Rate Oracle: strategy-configs/rate-oracle.md
     - Troubleshooting: troubleshooting.md
+    - FAQ: faq.md
     - Glossary: glossary.md
   - Developers:
       - Developers: developers/index.md
@@ -263,10 +268,6 @@ nav:
         - Scripts: developers/scripts/index.md
         - Script Base Class: developers/scripts/script-base.md
       - Debug Console: developers/debug.md
-  - Governance:
-      - Governance: governance/index.md
-      - Whitepaper: governance/whitepaper.md
-      - HBOT: governance/hbot.md
   - Releases:
     - Releases: release-notes/index.md
     - 0.46.0: release-notes/0.46.0.md

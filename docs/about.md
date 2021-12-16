@@ -11,9 +11,25 @@ Below are the core principles that underpin Hummingbot’s development:
 
 ## Purpose
 
-The foundation’s primary role is to coordinate the ongoing maintenance and improvement of the open source Hummingbot codebase via a decentralized set of actors: Sponsors, Contributors, Maintainers, and Users.
+### Decentralized Maintenance
 
-![](/assets/img/foundation-flywheel.webp)
+The primary purpose of Hummingbot Foundation is to enable a decentralized, bazaar-style model of software development for the Hummingbot codebase.
+
+In Eric Raymond's 1997 essay [The Cathedral and the Bazaar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar), he described the model used by the open source Linux operating system project:
+
+>Linus Torvalds’s style of development—release early and often, delegate everything you can, be open to the point of promiscuity—came as a surprise. No quiet, reverent cathedral-building here—rather, the Linux community seemed to resemble a great babbling **bazaar** of differing agendas and approaches ... out of which a coherent and stable system could seemingly emerge only by a succession of miracles.
+
+Today, Linux is the world's dominant operating system, powering virtually every website and the majority of mobile devices. Similar to Linux, Hummingbot’s modular architecture allows connectors to [exchanges](/exchanges) and blockchain [protocols](/protocols), as well as [strategy templates](/strategies), to be built independently, making it easy for independent, community developers to contribute and maintain individual components.
+
+See [Maintenance](/maintenance) for more details.
+
+### Decentralized Governance
+
+Hummingbot Foundation is also an experiment in decentralized governance. All pull requests, or proposed code changes to the Github code repository, will need to be submitted as a Pull Request Proposal and be approved by HBOT holders in order to be merged into the codebase and included in an official release.
+
+In addition, HBOT holders will be able to create and vote on Improvement Proposals that direct the Foundation to implement architectural changes or prioritize specific enhancements or bug fixes. HBOT holders will also be able to create and vote on Governance Proposals that modify aspects of the governance system or allocate funding toward grant programs. Development work that results from an approved grant or Improvement Proposal also will need to undergo the pull request approval process in order to be merged into the development branch.
+
+Pull requests will be continually approved and merged through the month. Approximately once per month, the development branch of the codebase will be cloned onto the master branch of the codebase, which will subsequently be packaged into an official release in various formats for different operating systems.
 
 The medium of governance is the Hummingbot Governance Token (HBOT), a standard ERC-20 token with a fixed total supply. The sole use case for HBOT is to empower holders to decide how the Hummingbot codebase changes over time through proposals. 
 

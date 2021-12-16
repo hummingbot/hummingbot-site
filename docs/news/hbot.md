@@ -21,7 +21,7 @@ An initial interim Board of Directors has been appointed, comprising of five dir
 * Gene Cheon – CFO, Hummingbot Foundation
 * Howard Chu – Hummingbot user and Eagle Club member
 
-To retain independence, Foundation bylaws stipulate that no more than two CoinAlpha officers can be members of the Board of Directors. The board provides oversight staff who oversee day-to-day operations of the Foundation. Initially, the Foundation employs 8 staff members: COO, CFO, engineering, project management, QA, and community support.
+To retain independence, Foundation bylaws stipulate that no more than two CoinAlpha officers can be members of the Board of Directors. The Board provides oversight staff who oversee day-to-day operations of the Foundation. Initially, the Foundation will employ 8 staff members: COO, CFO, engineering, project management, QA, and community support.
 
 The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository. **We have transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: https://github.com/hummingbot/hummingbot**.
 
@@ -31,11 +31,11 @@ The official Foundation website, which also includes the Hummingbot documentatio
 
 Hummingbot’s [past 61 releases](/release-notes/) containing 12,625 commits from 112 unique code contributors have been an extended beta period that have shown that a decentralized, community maintenance model is both sustainable and scalable.
 
-Thousands of users around the world build and run trading bots with Hummingbot every day, many of them on CoinAlpha’s [Hummingbot Miner](https://miner.hummingbot.io) decentralized market making platform, where 3700 individual market makers have filled $2.8 billion of trade volume for more than 80 token issuers.
+Thousands of users around the world build and run trading bots with Hummingbot every day, many of them on CoinAlpha’s [Hummingbot Miner](https://miner.hummingbot.io) decentralized market making platform, where 3,700 individual market makers have filled $2.8 billion of trade volume for more than 80 token issuers.
 
 This activity also benefits exchanges connected to Hummingbot. Based on income from existing connector maintenance agreements that rebate a portion of fees incurred by Hummingbot users, the Foundation is projected to be self-sustainable at inception, not even including projected future income from administering bounties.
 
-As community maintainers enable the Hummingbot ecosystem to scale, we expect maintenance costs to grow linearly with the number of connectors and strategies. However, we expect volume and fee share income to rise exponentially as more individuals and professionals use Hummingbot, further enhancing the Foundation’s projected sustainability.
+As community maintainers enable the Hummingbot ecosystem to scale, we expect maintenance costs to grow linearly with the number of connectors and strategies. However, we expect volume and fees accruing to the Foundation to rise exponentially as more individuals and professionals use Hummingbot, further enhancing the Foundation’s projected sustainability.
 
 ![](/assets/img/hbot-economics.png)
 
@@ -63,7 +63,7 @@ The sole use case for HBOT Tokens will be to empower holders to decide how the H
 
 All pull requests, or proposed code changes to the Github code repository, will need to be submitted as a Pull Request Proposal and be approved by HBOT holders in order to be merged into the codebase and included in an official release. 
 
-See the Hummingbot Foundation governance whitepaper (LINK TO PAGE ON FOUNDATION SITE) for more details.
+See the [Hummingbot Foundation Governance whitepaper](https://hummingbot.org/governance/whitepaper) for more details.
 
 In addition, HBOT token holders will be able to appoint members of the Hummingbot Foundation’s Board of Directors.  One of the first planned Governance Proposals (Q1 2022) will allow HBOT token holders to confirm the members of the interim Board of Directors or otherwise appoint an alternative Board.
 
@@ -73,17 +73,21 @@ HBOT token holders do not have any financial rights or any claims to the assets 
 
 The goal of the HBOT distribution plan is to disseminate HBOT tokens into the hands of stewards who have the long-term goal of expanding the Hummingbot project.  With this in mind, the Hummingbot Foundation has authorized the distribution of HBOT tokens and future plans as follows:
 
-| **Total Token Supply**         |   100% |  1,000,000,000 |
+
+| **HBOT Distribution (Total Supply = 1,000,000,000**)  |  |  |
 |:-------------------------------|-------:|-----------------:|
-| **Hummingbot Community Pool**  |  40.0% |    400,000,000   |
+| **Hummingbot Community Pool**  |  **40.0%** | **400,000,000**   |
 | Retroactive Distribution       |   4.0% |     90,000,000   |
 | Year 1 Reserve                 |   9.0% |     90,000,000   |
 | Year 2 Reserve                 |   9.0% |     90,000,000   |
 | Year 3 Reserve                 |   9.0% |     90,000,000   |
 | Year 4 Reserve                 |   9.0% |     90,000,000   |
-| **Hummingbot Foundation Team** |   1.0% |     10,000,000   |
-| **CoinAlpha Investors**        |  37.9% |    370,923,556   |
-| **CoinAlpha Team**             |  21.1% |    210,766,444   |
+| **Hummingbot Foundation Team** |   **1.0%** | **10,000,000**   |
+| **CoinAlpha Investors**        |  **37.9%** | **370,923,556**   |
+| **CoinAlpha Team**             |  **21.1%** | **210,766,444**   |
+
+
+
 
 We believe that this distribution plan ensures that existing stakeholders, who have been involved in the Hummingbot development process, have experience with the software and codebase, and have expertise in related fields to market-making bots (in trading, markets, and software development) will have a say in the future governance of Hummingbot.  Meanwhile, future code contributors will also be engaged and have the opportunity to participate in Hummingbot governance.
 
@@ -111,7 +115,7 @@ This distribution will give developers who have contributed to the Hummingbot co
 
 Why distribute to Hummingbot Miner users rather than all Hummingbot users? Since Hummingbot is client software that users install and run on their local devices or on cloud-hosted servers, there is no way to centrally track and verify Hummingbot usage globally. However, since Hummingbot’s main purpose is to build and run market making bots, we believe that a significant portion of the Hummingbot user base participates in the Hummingbot Miner platform. Since Hummingbot Miner users need to provide a read-only API key in order to access the platform, we can verify their level of activity and distribute tokens based on that historical activity.
 
-A total pool of 35,500,000 HBOT tokens will be allocated to users of Hummingbot Miner (“miners”).  To minimize concentration of tokens, each registered miner is subject to a token allocation cap of 2% of the retroactive distribution pool (or 800,000 HBOT tokens) per registered miner.  Meanwhile, the minimum amount of tokens that each eligible miner will be able to claim is 1,000 HBOT tokens.  Subject to these constraints, the tokens will be distributed to miners based on their pro-rata share of the total USD value of rewards they have earned on the Hummingbot Miner platform as compared to the total USD value of rewards paid out in total through the platform. We anticipate that the limited distribution to pre-existing Hummingbot Miner participants to look like this:
+A total pool of 35,350,000 HBOT tokens will be allocated to users of Hummingbot Miner (“miners”).  To minimize concentration of tokens, each registered miner is subject to a token allocation cap of 2% of the retroactive distribution pool (or 800,000 HBOT tokens) per registered miner.  Meanwhile, the minimum amount of tokens that each eligible miner will be able to claim is 1,000 HBOT tokens.  Subject to these constraints, the tokens will be distributed to miners based on their pro-rata share of the total USD value of rewards they have earned on the Hummingbot Miner platform as compared to the total USD value of rewards paid out in total through the platform. We anticipate that the limited distribution to pre-existing Hummingbot Miner participants to look like this:
 
 * **Average allocation per miner**: 14,017 HBOT tokens
 * **Total eligible miners**: 2,522
