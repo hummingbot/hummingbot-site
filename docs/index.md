@@ -7,7 +7,7 @@ hide:
 
 Welcome to the official website for the Hummingbot Foundation and documentation site for Hummingbot.
 
-[Hummingbot](https://github.com/coinalpha/hummingbot) is software that helps you build and run automated trading strategies (bots). Its codebase is free and publicly available on Github under the Apache 2.0 open source license. 
+Hummingbot is software that helps you build and run automated trading strategies (bots). Its codebase is free and publicly available on [Github](https://github.com/hummingbot/hummingbot) under the Apache 2.0 open source license.
 
 Hummingbot Foundation is a not-for-profit foundation that facilitates decentralized maintenance and governance of the Hummingbot codebase, powered by the Hummingbot Governance Token (HBOT).
 
