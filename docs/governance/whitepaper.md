@@ -1,0 +1,1 @@
+[Governance whitepaper](https://docs.google.com/document/d/1MZpRbH4D7biS7POcQzbrKcoUiIED2d9mlg23nK0H6mY/edit#)
