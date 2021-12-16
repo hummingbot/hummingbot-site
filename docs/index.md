@@ -19,18 +19,17 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 - [News](/news): Recent news and updates
 - [Community](/community): Participate in the global Hummingbot ecosystem
 
-## 🐤 Read the docs
+## 📚 Read the docs
 
 - [Documentation](/docs): Get started with Hummingbot
 - [Developers](/developers): Start building your own connectors and strategies
 - [Releases](/release-notes): What's included in the latest release and historical releases
 
-## 🗳️ Govern how Hummingbot evolves
+## ✅ Govern with HBOT
 
 - [Governance](/governance): System overview
+- [Whitepaper](/governance/whitepaper): Detailed description of how the governance system works
 - [HBOT](/governance/hbot): For HBOT token holders - how to claim and vote your tokens
-- [Maintainers](/governance/maintainers): For developers who maintain and contribute to Hummingbot 
-- [Sponsors](/governance/sponsors): For exchanges, trading firms, and blockchain protocols who sponsor Hummingbot development work
 
 ## 📬 Newsletter
 

@@ -10,7 +10,7 @@ repo_url: 'https://github.com/hummingbot/hummingbot'
 edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/docs/'
 
 # Copyright
-copyright: Copyright &copy; 2022 Hummingbot Foundation
+copyright: Copyright &copy; 2021 Hummingbot Foundation
 
 # Configuration
 theme:
@@ -47,8 +47,8 @@ theme:
 
 plugins:
   - search
-  # - tags
-  # - git-revision-date
+  - tags
+  - git-revision-date
   # - social:
   #     cards_color:
   #       fill: '#0FF1CE'
@@ -266,10 +266,7 @@ nav:
   - Governance:
       - Governance: governance/index.md
       - Whitepaper: governance/whitepaper.md
-      - Proposals: governance/proposals.md
       - HBOT: governance/hbot.md
-      - Maintainers: governance/maintainers.md
-      - Sponsors: governance/sponsors.md
   - Releases:
     - Releases: release-notes/index.md
     - 0.46.0: release-notes/0.46.0.md

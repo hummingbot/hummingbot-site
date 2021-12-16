@@ -47,13 +47,11 @@ Starting with this 1.0.0 release, Hummingbot users and community members will be
 
 The Hummingbot Governance Token (HBOT) has been deployed to the Ethereum blockchain with the following details:
 
-|                           |                                                           |
-|---------------------------|-----------------------------------------------------------|
-| Issuer                    | Hummingbot Foundation, a Cayman Islands foundation        |
-| Contract address          | `[0xTBD]`                                                 |
-| Symbol                    | HBOT                                                      |
-| Name                      | Hummingbot Governance Token                               |
-| Total Supply              | 1,000,000,000                                             |
+* **Issuer**: Hummingbot Foundation
+* **Contract Address**: `[0xTBD]`
+* **Name**: Hummingbot Governance Token
+* **Symbol**: HBOT
+* **Total Supply**: 1,000,000,000
 
 The HBOT token is a standard ERC-20 token.  It has a fixed total supply so there will never be any additional HBOT tokens created.
 
@@ -106,8 +104,8 @@ Also included are 3 Github users who have made significant code contributions to
 This distribution will give developers who have contributed to the Hummingbot code base in the past a voice in the future governance of the Hummingbot source code.
 
 * **Allocation per developer**: 75,000 HBOT tokens
-* **Total eligible developers**: 60
-* **Total allocation**: 4,500,000 HBOT tokens or 0.45% of total HBOT token supply
+* **Total eligible developers**: 62
+* **Total allocation**: 4,650,000 HBOT tokens or 0.465% of total HBOT token supply
 
 **Hummingbot Miner users**: Users on the Hummingbot Miner decentralized market making platform have played a vital role in the Hummingbot community, providing the majority of feedback, bug reports, testing, and feature requests for the Hummingbot codebase.  These users have been essential to where the Hummingbot code base has gotten to today, and we expect their continued active participation in the future of Hummingbot.
 
@@ -115,10 +113,10 @@ Why distribute to Hummingbot Miner users rather than all Hummingbot users? Since
 
 A total pool of 35,500,000 HBOT tokens will be allocated to users of Hummingbot Miner (“miners”).  To minimize concentration of tokens, each registered miner is subject to a token allocation cap of 2% of the retroactive distribution pool (or 800,000 HBOT tokens) per registered miner.  Meanwhile, the minimum amount of tokens that each eligible miner will be able to claim is 1,000 HBOT tokens.  Subject to these constraints, the tokens will be distributed to miners based on their pro-rata share of the total USD value of rewards they have earned on the Hummingbot Miner platform as compared to the total USD value of rewards paid out in total through the platform. We anticipate that the limited distribution to pre-existing Hummingbot Miner participants to look like this:
 
-* **Average allocation per miner**: 14,076 HBOT tokens
+* **Average allocation per miner**: 14,017 HBOT tokens
 * **Total eligible miners**: 2,522
-* **Total allocation**: 35,500,000 HBOT or 3.55% of total HBOT token supply
-* **Eligibility**: earned at least USD 1 equivalent on liquidity mining rewards on Hummingbot Miner, between launch (March 2020) to December 13, 2021, 11.59pm UTC
+* **Total allocation**: 35,350,000 HBOT or 3.535% of total HBOT token supply
+* **Eligibility**: Earned at least USD 1 equivalent on liquidity mining rewards on Hummingbot Miner, between launch (March 2020) to December 13, 2021, 11.59pm UTC
 
 #### Future Community Activities (36%)
 

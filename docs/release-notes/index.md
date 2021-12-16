@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+
 # Release Notes
 
 We generally release a new version of Hummingbot every 4 weeks, along with periodic intermittent releases.

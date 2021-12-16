@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+
 This section is for developers looking to contribute to Hummingbot or extend its capabilities:
 
 * [Strategies](/developers/strategies): Create and customize your own strategies
