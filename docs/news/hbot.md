@@ -76,13 +76,13 @@ The goal of the HBOT distribution plan is to disseminate HBOT tokens into the ha
 | **HBOT Distribution (Total Supply = 1,000,000,000**)  |  |  |
 |:-------------------------------|-------:|-----------------:|
 | **Hummingbot Community Pool**  |  **40.0%** | **400,000,000**   |
-| Retroactive Distribution       |   4.0% |     90,000,000   |
+| Retroactive Distribution       |   4.0% |     40,000,000   |
 | Year 1 Reserve                 |   9.0% |     90,000,000   |
 | Year 2 Reserve                 |   9.0% |     90,000,000   |
 | Year 3 Reserve                 |   9.0% |     90,000,000   |
 | Year 4 Reserve                 |   9.0% |     90,000,000   |
 | **Hummingbot Foundation Team** |   **1.0%** | **10,000,000**   |
-| **CoinAlpha Investors**        |  **37.9%** | **370,923,556**   |
+| **CoinAlpha Investors**        |  **37.9%** | **379,233,556**   |
 | **CoinAlpha Team**             |  **21.1%** | **210,766,444**   |
 
 We believe that this distribution plan ensures that existing stakeholders, who have been involved in the Hummingbot development process, have experience with the software and codebase, and have expertise in related fields to market-making bots (in trading, markets, and software development) will have a say in the future governance of Hummingbot.  Meanwhile, future code contributors will also be engaged and have the opportunity to participate in Hummingbot governance.
@@ -111,7 +111,7 @@ This distribution will give developers who have contributed to the Hummingbot co
 
 Why distribute to Hummingbot Miner users rather than all Hummingbot users? Since Hummingbot is client software that users install and run on their local devices or on cloud-hosted servers, there is no way to centrally track and verify Hummingbot usage globally. However, since Hummingbot’s main purpose is to build and run market making bots, we believe that a significant portion of the Hummingbot user base participates in the Hummingbot Miner platform. Since Hummingbot Miner users need to provide a read-only API key in order to access the platform, we can verify their level of activity and distribute tokens based on that historical activity.
 
-A total pool of 35,350,000 HBOT tokens will be allocated to users of Hummingbot Miner (“miners”).  To minimize concentration of tokens, each registered miner is subject to a token allocation cap of 2% of the retroactive distribution pool (or 800,000 HBOT tokens) per registered miner.  Meanwhile, the minimum amount of tokens that each eligible miner will be able to claim is 1,000 HBOT tokens.  Subject to these constraints, the tokens will be distributed to miners based on their pro-rata share of the total USD value of rewards they have earned on the Hummingbot Miner platform as compared to the total USD value of rewards paid out in total through the platform. We anticipate that the limited distribution to pre-existing Hummingbot Miner participants to look like this:
+A total pool of 35,350,000 HBOT tokens will be allocated to users of Hummingbot Miner (“miners”).  To minimize concentration of tokens, each registered miner is subject to a token allocation cap of 800,000 HBOT tokens (or 2% of the total retroactive distribution pool).  Meanwhile, the minimum amount of tokens that each eligible miner will be able to claim is 1,000 HBOT tokens.  Subject to these constraints, the tokens will be distributed to miners based on their pro-rata share of the total USD value of rewards they have earned on the Hummingbot Miner platform as compared to the total USD value of rewards paid out in total through the platform. We anticipate that the limited distribution to pre-existing Hummingbot Miner participants to look like this:
 
 * **Average allocation per miner**: 14,017 HBOT tokens
 * **Total eligible miners**: 2,522
