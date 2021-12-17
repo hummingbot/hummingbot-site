@@ -1,3 +1,7 @@
+## 📬 Newsletter
+
+Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
+
 ## Official Updates
 
 * Dec 2021: [Introducing the Hummingbot Governance Token: HBOT](./hbot)
@@ -30,5 +34,4 @@
 * [Comparing liquidity mining options in DeFi vs. Hummingbot](https://hummingbot.io/blog/2020-08-liquidity-mining-hummingbot-vs-defi)
 * [The thin crust of liquidity: Why crypto needs more market makers](https://hummingbot.io/blog/2019-01-thin-crust-of-liquidity)
 * [Mapping the crypto market maker landscape](https://hummingbot.io/blog/2020-02-crypto-market-marker-list)
-
 

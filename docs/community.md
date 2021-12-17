@@ -26,11 +26,14 @@ Note that CoinAlpha maintains the Twitter account https://twitter.com/hummingbot
 
 ### Github
 
-The Foundation Github organization is located at https://github.com/hummingbot. The Hummingbot codebase is located at https://github.com/hummingbot/hummingbot, a monorepo that contains the codebase for Hummingbot, Hummingbot Gateway, and related documentation.
+The Foundation Github organization is located at https://github.com/hummingbot. It contains:
+
+* [`hummingbot`](https://github.com/hummingbot/hummingbot): monorepo that contains the code for the Hummingbot trading client and Hummingbot Gateway
+* [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot Foundation website and Hummingbot documentation site
 
 ### Docker
 
-The Hummingbot DockerHub is hosted at: https://hub.docker.com/r/coinalpha/hummingbot. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
+The Hummingbot DockerHub is currently being hosted by CoinAlpha at: https://hub.docker.com/r/coinalpha/hummingbot and will move to Foundation ownership soon. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
 
 ## 👪 Community Channels
 
