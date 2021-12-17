@@ -13,17 +13,17 @@ As announced in [this October post](https://hummingbot.io/en/blog/hummingbot-fou
 
 Like our spiritual predecessor the Linux Foundation, we believe that community maintenance is key to scaling Hummingbot to every exchange and blockchain and enabling traders to build any type of bot.
 
-An initial interim Board of Directors has been appointed, comprising of five directors:
+An initial interim Board of Directors has been appointed, comprised of five directors:
 
 * Michael Feng – CEO, CoinAlpha, Inc.
 * Brett Gibson – Partner, Initialized Capital and CoinAlpha, Inc. Director
-* Arthur Cheong – Partner, Defiance Capital
+* Arthur Cheong – Partner, DeFiance Capital
 * Gene Cheon – CFO, Hummingbot Foundation
 * Howard Chu – Hummingbot user and Eagle Club member
 
-To retain independence, Foundation bylaws stipulate that no more than two CoinAlpha officers can be members of the Board of Directors. The Board provides oversight staff who oversee day-to-day operations of the Foundation. Initially, the Foundation will employ 8 staff members: COO, CFO, engineering, project management, QA, and community support.
+To retain independence, Foundation bylaws stipulate that no more than two officers or directors of an outside entity can be members of the Board of Directors. The Board oversees staff who handle the day-to-day operations of the Foundation. Initially, the Foundation will employ 8 staff members who handle: a COO, a CFO, an engineering lead, 1 product manager, 1 project manager, 2 community managers, and 1 quality assurance analyst.
 
-The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository. **We have transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: https://github.com/hummingbot/hummingbot**.
+The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open source Hummingbot code repository. **CoinAlpha has transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: https://github.com/hummingbot/hummingbot**.
 
 The official Foundation website, which also includes the Hummingbot documentation, is deployed at https://hummingbot.org. It is also a community-maintained open source repository: https://github.com/hummingbot/hummingbot-site.
 
@@ -55,7 +55,7 @@ The Hummingbot Governance Token (HBOT) has been deployed to the Ethereum blockch
 
 The HBOT token is a standard ERC-20 token.  It has a fixed total supply so there will never be any additional HBOT tokens created.
 
-The sole use case for HBOT Tokens will be to empower holders to decide how the Hummingbot codebase changes over time through voting on three types of proposals:
+The HBOT Token has no monetary or economic value. The sole use case for HBOT Tokens will be to empower holders to decide how the Hummingbot codebase changes over time through voting on three types of proposals:
 
 * **Pull Request Proposals (PRP)**: a proposal linked to an open pull request in the Hummingbot code repository;
 * **Improvement Proposals (IP)**: a proposal linked to an issue in the Hummingbot Github repository that specifies a proposed improvement to a component of the Hummingbot codebase, and;
@@ -63,7 +63,7 @@ The sole use case for HBOT Tokens will be to empower holders to decide how the H
 
 All pull requests, or proposed code changes to the Github code repository, will need to be submitted as a Pull Request Proposal and be approved by HBOT holders in order to be merged into the codebase and included in an official release. 
 
-See the [Hummingbot Foundation Governance whitepaper](https://hummingbot.org/governance/whitepaper) for more details.
+See the [Hummingbot Foundation Governance whitepaper](/governance/whitepaper) for more details.
 
 In addition, HBOT token holders will be able to appoint members of the Hummingbot Foundation’s Board of Directors.  One of the first planned Governance Proposals (Q1 2022) will allow HBOT token holders to confirm the members of the interim Board of Directors or otherwise appoint an alternative Board.
 
@@ -72,7 +72,6 @@ HBOT token holders do not have any financial rights or any claims to the assets 
 ## HBOT Token Distribution
 
 The goal of the HBOT distribution plan is to disseminate HBOT tokens into the hands of stewards who have the long-term goal of expanding the Hummingbot project.  With this in mind, the Hummingbot Foundation has authorized the distribution of HBOT tokens and future plans as follows:
-
 
 | **HBOT Distribution (Total Supply = 1,000,000,000**)  |  |  |
 |:-------------------------------|-------:|-----------------:|
@@ -85,9 +84,6 @@ The goal of the HBOT distribution plan is to disseminate HBOT tokens into the ha
 | **Hummingbot Foundation Team** |   **1.0%** | **10,000,000**   |
 | **CoinAlpha Investors**        |  **37.9%** | **370,923,556**   |
 | **CoinAlpha Team**             |  **21.1%** | **210,766,444**   |
-
-
-
 
 We believe that this distribution plan ensures that existing stakeholders, who have been involved in the Hummingbot development process, have experience with the software and codebase, and have expertise in related fields to market-making bots (in trading, markets, and software development) will have a say in the future governance of Hummingbot.  Meanwhile, future code contributors will also be engaged and have the opportunity to participate in Hummingbot governance.
 
@@ -130,7 +126,7 @@ The Hummingbot Foundation’s initial plan is to release an equal amount of the 
 
 ### CoinAlpha Investors (37.9%)
 
-CoinAlpha’s investors have played a key role in supporting the creation and development of the Hummingbot code base. The Hummingbot codebase originated as the proprietary software stack for a quantitative hedge fund operated by CoinAlpha from 2017-2018. Afterwards, CoinAlpha investors supported the decision to modularize and streamline the codebase in order to enable community contribution starting in April 2019, as well as the subsequent 2 ½ years of operation and development as an open source project. As such, the Hummingbot codebase represents substantial intellectual property value that is being transferred from CoinAlpha to the Hummingbot Foundation.
+CoinAlpha’s investors have played a key role in supporting the creation and development of the Hummingbot codebase. The Hummingbot codebase originated as the proprietary software stack for a quantitative hedge fund operated by CoinAlpha from 2017-2018. Afterwards, CoinAlpha investors supported the decision to modularize and streamline the codebase in order to enable community contribution starting in April 2019, as well as the subsequent 2 ½ years of operation and development as an open source project. As such, the Hummingbot codebase represents substantial intellectual property value that is being transferred from CoinAlpha to the Hummingbot Foundation.
 
 CoinAlpha’s equity holders represents a diverse group of angel investors, crypto funds, and traditional venture capital firms.  As such, the Foundation values their guidance, input, and continued involvement with the Hummingbot open source project going forward, and the Foundation expects to continue to benefit from the active participation of this constituency.
 
@@ -157,9 +153,51 @@ The historical HBOT token distribution process will run for approximately two an
 
 Afterwards, any unclaimed tokens will revert to the Hummingbot Foundation and will be added to the Year 1 Reserve.
 
-## Claim Site
+### Claim Site
 
 The only official site where recipients can claim tokens is located at https://claim.hummingbot.org (the “Claim Site”). Please make sure that your browser is loading this URL before using the site. 
 
 After login, the Claim Site will display a user’s token allocation (if any), and users will be able to input an Ethereum wallet address where they would like to receive their HBOT tokens.
 
+![](/assets/img/hbot-claim-site.png)
+
+### How to Access the Claim Site
+
+#### Github code contributors
+
+Github users who are eligible to claim HBOT tokens will be added to a private Hummingbot Foundation Github repository: HBOT github airdrop.  This private repository will provide eligible code contributors with instructions on how to confirm their email address or provide an alternative email address that they would like to use for the claim process. Afterwards, a user login will be created for Github code contributors on the Claim Site.
+
+#### Hummingbot Miner users
+
+Users of Hummingbot Miner who are eligible to claim tokens can visit the Claim Site and log in with their Miner credentials.
+
+### Weekly Distributions
+
+The Hummingbot Foundation expects to distribute tokens to Github code contributors and Hummingbot Miner users who have submitted valid Ethereum wallet addresses in weekly distributions. For administrative purposes, the HBOT token claim period will be divided into weekly periods. Users who have claimed tokens and inputted their Ethereum wallet addresses will receive the tokens during the subsequent week.
+
+For example:
+
+* **Initial weekly claim period**: December 17, 2021 00:00 UTC to December 24, 2021 00:00 UTC
+* **Initial distribution window**: Between December 24, 2021 00:00 UTC and December 31, 2021 00:00 UTC
+
+The first distributions of tokens will occur during the initial distribution window for users who claimed tokens in the initial weekly claim period. This process will repeat weekly throughout the entire claim period through the end of February 2021.
+
+The Hummingbot Foundation plans to maintain some flexibility on the precise timing for distributing tokens to account for, among other things, prevailing Ethereum gas prices.  Users will be notified by email when their respective HBOT tokens have been distributed to them.
+
+## Governance Process
+
+### Snapshot
+
+The Hummingbot Foundation plans to use [Snapshot](https://snapshot.org/) as the primary governance system for all proposals. Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. All proposals and voting can be found on the official Hummingbot Snapshot hosted at https://snapshot.org/#/hbot.eth.
+
+See the [Hummingbot Foundation Governance](/governance/whitepaper) whitepaper for additional details about the governance process, such as proposal types, minim token balance requirements, and quorum/approval thresholds.
+
+### Voting Delegation
+
+HBOT token holders may delegate their votes to other members of the Hummingbot community by enabling delegation at [Snapshot Delegate](https://snapshot.org/#/delegate). In order to limit delegation to the HBOT tokens and Hummingbot Foundation matters (and exclude delegation for other tokens you may own that also vote on Snapshot), make sure to enter `hbot.eth` in the Space field.
+
+Users who have delegated their tokens can still override any delegation by directly voting their tokens. Voting outright always overrides any delegation. As the Hummingbot Foundation becomes firmly established and community participation increases, HBOT token holders in the future may choose to propose to disable voting by delegation, thereby allocating greater voting power toward community members who vote outright only.
+
+HBOT tokens allocated to CoinAlpha investors and team members are locked up in `TokenVesting` smart contracts that enforce a 1-year token lockup period followed by a straight-line release schedule.  For investors, tokens have a 1-year linear release schedule in year 2, whereas for team members and service providers, the tokens have a 3-year linear release schedule between years 2 to 4.  In order to allow for investors and team members to participate in governance voting, these `TokenVesting` contracts are enabled for delegation, permitting locked tokens to be voted by a delegate during the applicable lockup period.
+
+In the future, however, HBOT token holders may choose to propose to disable or limit voting delegation, as community members may see fit.

@@ -53,7 +53,7 @@ The current board members are:
 
 Hummingbot is the leading open source software for building market making and arbitrage bots. Launched in April 2019, Hummingbot served the cryptocurrency market’s need for liquidity by enabling anyone to become a liquidity provider. Because Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies, it has scaled into a bazaar-style open source project with many contributors and users around the world, both individual and professional.
 
-Hummingbot was originally built and opensourced by CoinAlpha, Inc, a startup based in Mountain View, California. CoinAlpha is backed by [Initialized Capital](https://initialized.com/), [Bain Capital Ventures](https://www.baincapitalventures.com/), [Defiance Capital](https://www.defiance.capital/), and other leading crypto and fintech investors.
+Hummingbot was originally built and open sourced by CoinAlpha Inc, a startup based in Mountain View, California. CoinAlpha is backed by [Initialized Capital](https://initialized.com/), [Bain Capital Ventures](https://www.baincapitalventures.com/), [DeFiance Capital](https://www.defiance.capital/), and other leading crypto and fintech investors.
 
 CoinAlpha runs businesses that support the Hummingbot ecosystem, such as:
 

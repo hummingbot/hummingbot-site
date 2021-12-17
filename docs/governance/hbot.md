@@ -19,13 +19,19 @@ The historical HBOT token distribution process will run during the following per
 
 The official Claim Site where recipients can claim HBOT tokens is located at https://claim.hummingbot.org. Please make sure that your browser is loading this URL before using the site. 
 
-### Github code contributors
+For administrative purposes, the HBOT token claim period will be divided into weekly periods. Users who have claimed tokens and inputted their Ethereum wallet addresses will receive the tokens during the subsequent week.
+
+The first distributions of tokens will occur during the initial distribution window for users who claimed tokens in the initial weekly claim period. This process will repeat weekly throughout the entire claim period through the end of February 2021.
+
+The Hummingbot Foundation plans to maintain some flexibility on the precise timing for distributing tokens to account for, among other things, prevailing Ethereum gas prices.  Users will be notified by email when their respective HBOT tokens have been distributed to them.
+
+#### Github code contributors
 
 Github code contributors eligible to claim HBOT tokens have been added to a private Hummingbot Foundation Github repository: https://github.com/hummingbot/claim-hbot-tokens. If you can access the repository with your Github login, then you are eligible to claim tokens.
 
 The repository provides eligible code contributors with instructions on how to confirm their email address or provide an alternative email address that they would like to use for the claim process. Afterwards, a user login will be created for Github code contributors on the Claim Site.
 
-### Hummingbot Miner users
+#### Hummingbot Miner users
 
 Users who have earned at least USD 1 equivalent in liquidity rewards on Hummingbot Miner are eligible to claim tokens can visit the Claim Site and log in with their Hummingbot Miner credentials.
 

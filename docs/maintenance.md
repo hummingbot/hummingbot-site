@@ -20,20 +20,24 @@ Certain exchanges and protocols act as **Sponsors** and have contractual agreeme
 
 ### Active agreements
 
-| Connector                               | Type      | Amount  | Maintainer | 
-|-----------------------------------------|-----------| ------- | ---------- |
-| [AscendEx](/exchanges/ascendex)         | fee share | 40%     | CoinAlpha  |
-| [Binance.com](/exchanges/binance)       | fee share | 30%     | CoinAlpha  |
-| [BitMart](/exchanges/bitmart)           | fee share | 45%     | [srirambandi](https://github.com/srirambandi)|
-| [CoinZoom](/exchanges/coinzoom)         | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger)|
-| [Digifinex](/exchanges/digifinex)       | fee share | 30%     |            |
-| [KuCoin](/exchanges/kucoin)             | fee share | 30%     | CoinAlpha  |
-| [Gate.io](/exchanges/ascendex)          | fee share | 20%     | CoinAlpha  |
-| [HitBTC](/exchanges/hitbtc)             | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger)|
-| [Huobi](/exchanges/huobi)               | fee share | 40%     |            |
-| [OkEx](/exchanges/okex)                 | fee share | 40%     |            |
-| [ProBit](/exchanges/probit)             | fee share | 30%     |            |
-| [NDAX](/exchanges/ndax)                 | monthly pmt| $500   |            |
+| Connector                               | Type      | Amount  | Developer  | Maintainer  |
+|-----------------------------------------|-----------| ------- | ---------- | ----------- |
+| [AscendEx](/exchanges/ascendex)         | fee share | 40%     | CoinAlpha  | CoinAlpha   |
+| [Binance.com](/exchanges/binance)       | fee share | 30%     | CoinAlpha  | CoinAlpha   |
+| [Bitfinex](/exchanges/bitfinex)         | fee share | 30%     | [nionis](https://github.com/nionis) |   |
+| [BitMart](/exchanges/bitmart)           | fee share | 45%     | [srirambandi](https://github.com/srirambandi) |   |
+| [ByBit Perpetual](/exchanges/bybit-perpetual) | fee share | 20-30% | CoinAlpha | CoinAlpha |
+| [CoinZoom](/exchanges/coinzoom)         | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger) |   |
+| [Crypto.com](/exchanges/crypto-com)     | fee share | 25%     | CoinAlpha  |             |
+| [Digifinex](/exchanges/digifinex)       | fee share | 30%     | [msr888](https://github.com/msr888) | |
+| [Gate.io](/exchanges/ascendex)          | fee share | 20%     | [TheHolyRoger](https://github.com/TheHolyRoger) | CoinAlpha |
+| [Himalaya](/exchanges/himalaya)         | monthly fee | $750  | CoinAlpha  |             |
+| [HitBTC](/exchanges/hitbtc)             | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger) |   |
+| [Huobi](/exchanges/huobi)               | fee share | 30-40%  | CoinAlpha  | CoinAlpha   |
+| [KuCoin](/exchanges/kucoin)             | fee share | 30%     | CoinAlpha  | CoinAlpha   |
+| [OkEx](/exchanges/okex)                 | fee share | 40%     | CoinAlpha  | CoinAlpha   |
+| [NDAX](/exchanges/ndax)                 | monthly fee| $500   | CoinAlpha  |             |
+| [ProBit](/exchanges/probit)             | fee share | 30%     | CoinAlpha  | CoinAlpha   |
 
 ## Bounties, grants, and hackathons
 
@@ -62,7 +66,7 @@ The winning [`hedge`](/strategies/hedge/) strategy was merged in version [0.45.0
 * **Start date**: May 3, 2021
 * **End date**: May 23, 2021
 * **Total prize amount**: $5,000 (including tips)
-* **Winners post**: https://hummingbot.io/blog/2021-05-opendefi-hackathon-hummingbot-bounty-winner/
+* **Winners**: https://hummingbot.io/blog/2021-05-opendefi-hackathon-hummingbot-bounty-winner/
 
 | Contributor                                        | Contribution                                               | Bounty   | Amount     |
 |----------------------------------------------------|------------------------------------------------------------|--------- | ---------- |
