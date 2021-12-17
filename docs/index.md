@@ -14,6 +14,7 @@ Hummingbot Foundation is a not-for-profit foundation that facilitates decentrali
 Help us **democratize high-frequency trading** and give sophisticated algorithms to everyone in the world!
 
 ## 👨‍👩‍👧‍👧 About us
+
 - [About](/about): About Hummingbot and the Foundation
 - [News](/news): Recent news and updates
 - [Community](/community): Participate in the global Hummingbot ecosystem
@@ -22,18 +23,18 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 
 - [Documentation](/docs): Learn how to use Hummingbot
 - [Developers](/developers): Start building your own connectors and strategies
-- [Releases](/release-notes): What's in the the latest release
+- [Releases](/release-notes): What's included in the latest release
 
 ## ✅ Govern with HBOT
 
-- [Governance](/governance): System overview
+- [Governance](/governance): Decide how the Hummingbot codebase evolves
 - [Whitepaper](/governance/whitepaper): Detailed description of how the governance system works
-- [HBOT](/governance/hbot): For HBOT token holders - how to claim and vote your tokens
+- [HBOT](/governance/hbot): How to claim and vote your HBOT tokens
 
 ## 💪 Contribute to Hummingbot
 
-- [Contribution Guidelines](/developers/contributions/)
-- [Maintenance](/maintenance)
+- [Contribution Guidelines](/developers/contributions/): Read this before submitting a pull request
+- [Maintenance](/maintenance): Get paid for building and maintaining Hummingbot components
 
 ## 📬 Newsletter
 
