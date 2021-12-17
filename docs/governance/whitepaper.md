@@ -99,7 +99,7 @@ There will initially be three types of proposals, and each type will have differ
 
 | Proposal Type           | Pull Request            | Improvement             | Governance              |
 | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
-| Minimum HBOT Balance    | 0                       | 10,000                  | 50,000                  |
+| Minimum HBOT Balance    | 1                       | 10,000                  | 50,000                  |
 | Quorum Percentage       | 1% of HBOT total supply | 3% of HBOT total supply | 10% of HBOT total supply |
 | Approval Threshold      | >50% of tokens voted    | >50% of tokens voted    | >50% of tokens voted    |
 | Vote Duration           | 7 days                  | 14 days                 | 14 days                 |
@@ -111,7 +111,7 @@ HBOT token holdings entitles the holder to an equivalent amount of votes, includ
 A Pull Request Proposal (PRP) will be a proposal linked to an open pull request in the Hummingbot code repository. Each PRP will go through the process below:
 
 1. A Github pull request is created by any community member; 
-2. Any community member creates a PRP in Snapshot linked to the pull request;
+2. Any HBOT holder with at least 1 HBOT voting power creates a PRP in Snapshot linked to the pull request;
 3. The Foundation performs a preliminary review (e.g., for sufficient documentation, adequate unit tests, and the inclusion of developer contact information) and adds the results to the issue;
 4. The community has 7 days to discuss, review, and vote on the PRP;
 5. If at least 1% of total HBOT tokens have voted (either directly or via delegation) and at least 50% of votes approve, the Foundation labels the Github pull request as “approved”;

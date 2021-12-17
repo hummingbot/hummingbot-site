@@ -165,7 +165,7 @@ After login, the Claim Site will display a user’s token allocation (if any), a
 
 #### Github code contributors
 
-Github users who are eligible to claim HBOT tokens will be added to a private Hummingbot Foundation Github repository: HBOT github airdrop.  This private repository will provide eligible code contributors with instructions on how to confirm their email address or provide an alternative email address that they would like to use for the claim process. Afterwards, a user login will be created for Github code contributors on the Claim Site.
+Github users who are eligible to claim HBOT tokens will be added to the following private Hummingbot Foundation Github repository: https://github.com/hummingbot/claim-hbot-tokens.  This private repository provides eligible code contributors with instructions on how to confirm their email address or provide an alternative email address that they would like to use for the claim process. Afterwards, a user login will be created for Github code contributors on the Claim Site.
 
 #### Hummingbot Miner users
 
