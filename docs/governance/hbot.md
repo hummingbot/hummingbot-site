@@ -1,7 +1,7 @@
 The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that lets holders to decide how the Hummingbot codebase changes and to govern the Hummingbot Foundation through voting.
 
 * **Issuer**: Hummingbot Foundation
-* **Contract Address**: `[0xTBD]`
+* **Contract Address**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb))
 * **Name**: Hummingbot Governance Token
 * **Symbol**: HBOT
 * **Total Supply**: 1,000,000,000

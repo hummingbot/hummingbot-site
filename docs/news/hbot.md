@@ -48,7 +48,7 @@ Starting with this 1.0.0 release, Hummingbot users and community members will be
 The Hummingbot Governance Token (HBOT) has been deployed to the Ethereum blockchain with the following details:
 
 * **Issuer**: Hummingbot Foundation
-* **Contract Address**: `[0xTBD]`
+* **Contract Address**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb))
 * **Name**: Hummingbot Governance Token
 * **Symbol**: HBOT
 * **Total Supply**: 1,000,000,000
