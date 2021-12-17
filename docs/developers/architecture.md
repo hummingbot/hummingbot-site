@@ -57,8 +57,8 @@ At every clock tick, which happens every second by default, the `Clock` would no
 The order of the notifications for every clock tick is the same as the order the `TimeIterator` objects were added to the `Clock` via `Clock.add_iterator()`. This allows data dependencies between `TimeIterator` objects to be realized. e.g. if a strategy object depends on the most up-to-date market information from a market connector, then calling `Clock.add_iterator()` with the exchange connector before the strategy object will guarantee the market connector is always updated before the strategy object.
 
 **References:**
-https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/clock.pyx
-https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/time_iterator.pyx
+https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/clock.pyx
+https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/time_iterator.pyx
 
 ## Connectors
 
@@ -79,7 +79,7 @@ Unlike the market interfaces from similar open source trading libraries, Humming
 
 You can compare this to trading libraries that don't provide order tracking - trading bot writers would either have to come up with the tracking logic on their own; or risk the bot making or cancelling more orders than is needed, when exchange API calls get delayed or outright failed during periods of busy trading activity on the exchange.
 
-For example, in the Binance exchange connector [`binance_exchange.pyx`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx), you can find the order tracking logic in `BinanceExchange.c_start_tracking_order()` and `BinanceExchange.c_stop_tracking_order()`. These functions are typically called when orders are being created, cancelled, and also when order status updates arrive from the exchange API.
+For example, in the Binance exchange connector [`binance_exchange.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx), you can find the order tracking logic in `BinanceExchange.c_start_tracking_order()` and `BinanceExchange.c_stop_tracking_order()`. These functions are typically called when orders are being created, cancelled, and also when order status updates arrive from the exchange API.
 
 ![](/assets/img/architecture-order-tracking.webp)
 
@@ -121,10 +121,10 @@ For example, here is how the `balancer/sell` API endpoint is implemented in Gate
 
 **References:**
 
-* https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector_base.pyx
-* https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx
-* https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py
-* https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py
+* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx
+* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx
+* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py
+* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py
 * https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.ts
 
 ## Strategies

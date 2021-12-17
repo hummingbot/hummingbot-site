@@ -5,7 +5,7 @@ tags:
 
 # `bitmart`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/development/hummingbot/connector/exchange/bitmart)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bitmart)
 
 ## ℹ️ Exchange Info
 
@@ -40,6 +40,6 @@ You are now connected to bitmart.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.25% maker fees and 0.25% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/development/hummingbot/connector/exchange/bitmart/bitmart_utils.py#L17)).
+Hummingbot assumes 0.25% maker fees and 0.25% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/connector/exchange/bitmart/bitmart_utils.py#L17)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

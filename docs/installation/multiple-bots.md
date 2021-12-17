@@ -41,7 +41,7 @@ The below command downloads the Hummingbot repository from GitHub, where `$FOLDE
 
 ```
 cd ~
-git clone https://github.com/CoinAlpha/hummingbot.git $FOLDER_NAME
+git clone https://github.com/hummingbot/hummingbot.git $FOLDER_NAME
 ```
 
 Do another install in the new directory.

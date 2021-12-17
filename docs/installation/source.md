@@ -40,7 +40,7 @@ _Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
     exec bash
 
     # 4) Clone Hummingbot
-    git clone https://github.com/CoinAlpha/hummingbot.git
+    git clone https://github.com/hummingbot/hummingbot.git
 
     # 5) Install Hummingbot
     cd hummingbot && ./clean && ./install
@@ -92,7 +92,7 @@ unset __conda_setup
 
 ```
 # 1) Clone Hummingbot repo
-git clone https://github.com/CoinAlpha/hummingbot.git
+git clone https://github.com/hummingbot/hummingbot.git
 
 # 2) Navigate into the hummingbot folder
 cd hummingbot
@@ -171,7 +171,7 @@ exit
     export CONDAPATH="$(pwd)/miniconda3"
     export PYTHON="$(pwd)/miniconda3/envs/hummingbot/python3"
     # Clone Hummingbot
-    git clone https://github.com/CoinAlpha/hummingbot.git
+    git clone https://github.com/hummingbot/hummingbot.git
     # Install Hummingbot
     export hummingbotPath="$(pwd)/hummingbot" && cd $hummingbotPath && ./install
     # Activate environment and compile code

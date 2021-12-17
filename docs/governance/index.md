@@ -25,7 +25,7 @@ Each proposal type has different governance parameters:
 
 | Proposal Type           | Pull Request            | Improvement             | Governance              |
 | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
-| Minimum HBOT Balance    | 0                       | 10,000                  | 50,000                  |
+| Minimum HBOT Balance    | 1                       | 10,000                  | 50,000                  |
 | Quorum Percentage       | 1% of HBOT total supply | 3% of HBOT total supply | 10% of HBOT total supply |
 | Approval Threshold      | >50% of tokens voted    | >50% of tokens voted    | >50% of tokens voted    |
 | Vote Duration           | 7 days                  | 14 days                 | 14 days                 |

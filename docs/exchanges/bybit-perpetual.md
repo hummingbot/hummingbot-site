@@ -5,7 +5,7 @@ tags:
 
 # `bybit_perpetual`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/development/hummingbot/connector/derivative/bybit_perpetual)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/derivative/bybit_perpetual)
 
 ## ℹ️ Exchange Info
 
@@ -44,6 +44,6 @@ You are now connected to bybit_perpetual.
 
 ## 🪙 Fees
 
-Hummingbot assumes -0.025% maker fees and 0.075% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/development/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_utils.py#L15)).
+Hummingbot assumes -0.025% maker fees and 0.075% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_utils.py#L15)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

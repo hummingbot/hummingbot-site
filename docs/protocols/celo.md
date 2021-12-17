@@ -10,7 +10,7 @@ tags:
 
 ## 📁 Folders
 
-* [Hummingbot - Connector](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/other/celo)
+* [Hummingbot - Connector](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/other/celo)
 
 ## ℹ️ Protocol Info
 

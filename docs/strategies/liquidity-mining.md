@@ -6,7 +6,7 @@ tags:
 
 # `liquidity_mining`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/liquidity_mining)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining)
 
 ## 📝 Summary
 
@@ -23,7 +23,7 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/liquidity_mining/liquidity_mining_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining/liquidity_mining_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|

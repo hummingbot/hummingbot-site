@@ -5,10 +5,10 @@ tags:
 
 # `binance_us`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
 
 !!! note
-    Since their APIs are identical, `binance_us` uses the same connector folder as [`binance`](../binance). See [`binance.utils.py`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_utils.py#L60) for information related to Binance.US.
+    Since their APIs are identical, `binance_us` uses the same connector folder as [`binance`](../binance). See [`binance.utils.py`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_utils.py#L60) for information related to Binance.US.
 
 ## ℹ️ Exchange Info
 
@@ -40,6 +40,6 @@ You are now connected to binance_us.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_utils.py#L63)).
+Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_utils.py#L63)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

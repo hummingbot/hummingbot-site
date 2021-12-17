@@ -137,7 +137,7 @@ Note
   ```
 
 !!! note
-    Notice that we assign an abitruary limit id (i.e. `HTTP_ENDPOINTS_LIMIT_ID`) to the API pools and we use the [`LinkedLimitWeightPair`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/api_throttler/data_types.py) to assign an endpoint to the API pool. Also do note that an endpoint may belong to multiple other endpoints. It is also worth noting that there can be more complex implementations to API pools as seen in the ByBit Perpetual connector [here](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_constants.py).
+    Notice that we assign an abitruary limit id (i.e. `HTTP_ENDPOINTS_LIMIT_ID`) to the API pools and we use the [`LinkedLimitWeightPair`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/api_throttler/data_types.py) to assign an endpoint to the API pool. Also do note that an endpoint may belong to multiple other endpoints. It is also worth noting that there can be more complex implementations to API pools as seen in the ByBit Perpetual connector [here](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_constants.py).
 
 #### 3. Weighted Request Rate Limits
 

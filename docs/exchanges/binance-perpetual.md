@@ -5,7 +5,7 @@ tags:
 
 # `binance_perpetual`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
 
 ## ℹ️ Exchange Info
 
@@ -45,6 +45,6 @@ You are now connected to binance_perpetual.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.02% maker fees and 0.04% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/derivative/binance_perpetual/binance_perpetual_utils.py#L18)).
+Hummingbot assumes 0.02% maker fees and 0.04% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/binance_perpetual/binance_perpetual_utils.py#L18)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

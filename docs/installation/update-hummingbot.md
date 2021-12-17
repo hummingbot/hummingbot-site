@@ -82,7 +82,7 @@ Instead, you need to run `./create.sh` to create a new instance with the latest 
 
 ## Source
 
-The Hummingbot codebase is hosted at https://github.com/coinalpha/hummingbot.
+The Hummingbot codebase is hosted at https://github.com/hummingbot/hummingbot.
 
 === "Scripts"
 

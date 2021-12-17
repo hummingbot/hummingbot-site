@@ -57,7 +57,7 @@ The [Hummingbot YouTube channel](https://www.youtube.com/c/hummingbot), maintain
 
 ### 中文
 
-* **hummingbot_chinese repo**: Originally a community-created resource, CoinAlpha maintains a wiki that contains general information about Hummingbot in Mandarin: https://github.com/coinalpha/hummingbot_chinese
+* **hummingbot_chinese repo**: Originally a community-created resource, CoinAlpha maintains a wiki that contains general information about Hummingbot in Mandarin: https://github.com/hummingbot/hummingbot_chinese
 * **WeChat**: CoinAlpha maintains a WeChat support group for users of Hummingbot and Hummingbot Miner. To join, add the group admin `amtf202004` to your WeChat.
 * **Discord #中文 channel**
 

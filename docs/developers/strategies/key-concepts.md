@@ -15,7 +15,7 @@ The `start()` function is what gets called when user calls the strategy on clien
 
 ## StrategyBase class
 
-All strategies extend the [`StrategyBase`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class. This class allows extraction of logic that would be repetitively written in all strategies otherwise. 
+All strategies extend the [`StrategyBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class. This class allows extraction of logic that would be repetitively written in all strategies otherwise. 
 
 * **Event listeners** : The client’s prompt eventually leads to changes on server with the help of event listeners. Depending on action taken by the client, corresponding event listeners are called to execute the appropriate job.
 * **Data frames** : The base class handles creation of data frames for market status, `market_status_data_frame()`, and wallet balance, `wallet_balance_data_frame()`, so it is easy for developers to create and access about particular markets.
@@ -43,7 +43,7 @@ To assist in the development of custom strategies, there are many overridable fu
 
 ## Market class
 
-The [`Market`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/market/market_base.pyx) class contains overridable functions that can help get basic information about an exchange that a strategy is operating on, which can include the balance, prices, and order books for any particular asset traded on the exchange. 
+The [`Market`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/market/market_base.pyx) class contains overridable functions that can help get basic information about an exchange that a strategy is operating on, which can include the balance, prices, and order books for any particular asset traded on the exchange. 
 
 * `c_buy()`: called when the user wants to place a buy order
 * `c_sell()`: called when the user wants to place a sell order
@@ -70,7 +70,7 @@ Important commands on Hummingbot client:
 * `config` : Prompts users asking for details about strategy set up (e.g. token, market name, etc). Prompts can be modified in `{strategy name}_config_map.py`
 
 ### Exposing new strategy to Hummingbot client
-Make strategy name known to the client by adding name to [hummingbot/client/settings.py](https://github.com/CoinAlpha/hummingbot/blob/development/hummingbot/client/settings.py) under `STRATEGIES` variable. There should also be a template file that contains config variables and its documentation in the [hummingbot/templates](https://github.com/CoinAlpha/hummingbot/tree/development/hummingbot/templates) directory. The naming convention for this yml file is `conf_{strategy name}_TEMPLATE`. 
+Make strategy name known to the client by adding name to [hummingbot/client/settings.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/client/settings.py) under `STRATEGIES` variable. There should also be a template file that contains config variables and its documentation in the [hummingbot/templates](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/templates) directory. The naming convention for this yml file is `conf_{strategy name}_TEMPLATE`. 
 
 ### Setting question prompts for strategy parameters
 Strategy parameters can be set in the `config_map` file. Each parameter (represented as dictionary key) is mapped to a `ConfigVar` type where developer can specify the name of the parameter, prompts that will be provided to the user, and validator that will check the values entered. 

@@ -2,7 +2,7 @@
 
 ### Binary: Why does my anti-virus software flag Hummingbot's binary installer?
 
-This has been reported by some users starting from version 0.33 (see [GitHub issue #2680](https://github.com/CoinAlpha/hummingbot/issues/2680)).
+This has been reported by some users starting from version 0.33 (see [GitHub issue #2680](https://github.com/hummingbot/hummingbot/issues/2680)).
 
 The two AV engines that give a positive reading are Gridinsoft and Cyren. They both have methods of submitting false positives:
 

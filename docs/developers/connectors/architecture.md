@@ -58,14 +58,14 @@ Below are the detailed descriptions of tasks for each component and its correspo
 
 **File:** `*_exchange/derivative.py` — REQUIRED
 
-Connector modules are centered around an `Exchange/Derivative` class, which are ultimately children of [`ConnectorBase`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector_base.pyx).
+Connector modules are centered around an `Exchange/Derivative` class, which are ultimately children of [`ConnectorBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx).
 Each `Exchange/Derivative` class contains an `OrderBookTracker` and `UserStreamTracker,` and they are responsible for maintaining order books and user account information.
 
 `Exchange/Derivative` instances also contain a list of `InFlightOrders`, which are orders placed by Hummingbot currently on the order book.
 Typically, it is also helpful to have an exchange-specific `Auth` class, which generates the necessary authentication parameters/headers to access restricted REST endpoints and WebSocket channel, such as for placing orders and listening for order updates.
 
 The `Derivative` class in particular inherits functions that are specifically used in perpetual markets.
-See the [PerpetualTrading](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/perpetual_trading.py) class for more info.
+See the [PerpetualTrading](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/perpetual_trading.py) class for more info.
 
 ### ConnectorAuth.py
 

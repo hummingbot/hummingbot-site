@@ -8,7 +8,7 @@ tags:
 # `celo_arb`
 
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/celo_arb)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/celo_arb)
 
 ## 📝 Summary
 
@@ -31,7 +31,7 @@ It executes offsetting buy and sell orders in both markets in order to capture a
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/celo_arb/celo_arb_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/celo_arb/celo_arb_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
@@ -43,4 +43,4 @@ It executes offsetting buy and sell orders in both markets in order to capture a
 
 ## 📓 Description
 
-[Trading logic](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/celo_arb/celo_arb.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/celo_arb/celo_arb.pyx)

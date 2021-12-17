@@ -2,7 +2,7 @@
 
 ## Adding Connectors to Exchanges on Other Blockchains
 
-Hummingbot currently has connectors to Ethereum-based exchanges and has built in [Ethereum wallet support](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/wallet/ethereum).
+Hummingbot currently has connectors to Ethereum-based exchanges and has built in [Ethereum wallet support](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/wallet/ethereum).
 
 We plan to support multiple blockchains in the near future. To support blockchains other than Ethereum, connectors for new blockchains other than Ethereum would require integrations that enables the following blockchain-specific functionalities:
 
@@ -20,7 +20,7 @@ The throttle functionality in the Hummingbot utils directory can be used to cont
 
 ### How the throttle function works
 
-The following code is used to explain how the throttle function works. The code is included in [`hummingbot/core/utils/asyncio_throttle.py`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/utils/asyncio_throttle.py) file and can also be executed by using the Python interpreter.
+The following code is used to explain how the throttle function works. The code is included in [`hummingbot/core/utils/asyncio_throttle.py`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/utils/asyncio_throttle.py) file and can also be executed by using the Python interpreter.
 
 ```
 throttler = Throttler(rate_limit=(20, 1.0))

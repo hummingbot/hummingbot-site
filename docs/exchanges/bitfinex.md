@@ -5,7 +5,7 @@ tags:
 
 # `bitfinex`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/bitfinex)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitfinex)
 
 ## ℹ️ Exchange Info
 
@@ -39,6 +39,6 @@ You are now connected to bitfinex.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.2% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/bitfinex/bitfinex_utils.py#L20)).
+Hummingbot assumes 0.1% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/bitfinex/bitfinex_utils.py#L20)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

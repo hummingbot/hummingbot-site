@@ -5,7 +5,7 @@ tags:
 
 # `okex`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/okex)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okex)
 
 ## ℹ️ Exchange Info
 
@@ -40,6 +40,6 @@ You are now connected to okex.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.15% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/okex/okex_utils.py#L12)).
+Hummingbot assumes 0.1% maker fees and 0.15% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/okex/okex_utils.py#L12)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

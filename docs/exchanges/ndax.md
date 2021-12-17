@@ -5,7 +5,7 @@ tags:
 
 # `ndax`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
 
 ## ℹ️ Exchange Info
 
@@ -40,7 +40,7 @@ You are now connected to ndax.
 
 ## 🪙 Fees
 
-Hummingbot assumes 2% maker fees and 2% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_utils.py#L14)).
+Hummingbot assumes 2% maker fees and 2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_utils.py#L14)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
 

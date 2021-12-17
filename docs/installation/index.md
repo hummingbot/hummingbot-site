@@ -2,9 +2,9 @@ Hummingbot is a local software client that helps you run trading strategies that
 
 ## Releases
 
-Hummingbot's code is publicly hosted at https://github.com/coinalpha/hummingbot, and the `development` branch is continually updated. 
+Hummingbot's code is publicly hosted at https://github.com/hummingbot/hummingbot, and the `development` branch is continually updated. 
 
-Approximately once a month, we publish an official release of Hummingbot onto the `master` branch. See [Releases](https://github.com/CoinAlpha/hummingbot/releases).
+Approximately once a month, we publish an official release of Hummingbot onto the `master` branch. See [Releases](https://github.com/hummingbot/hummingbot/releases).
 
 ## Installation options
 

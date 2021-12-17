@@ -1,13 +1,13 @@
 ## Introduction
 This section of the tutorial provides an overview of the 
-[`HangingOrdersTracker`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/hanging_orders_tracker.py)
+[`HangingOrdersTracker`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hanging_orders_tracker.py)
 helper class designed to assist strategies with managing [hanging orders](/strategy-configs/hanging-orders/). It automates
 a large part of the process, including renewing outdated orders and cancelling orders that have drifted too far from
 the market price. 
 
 Two examples of its usage can be found in the
-[`PureMarketMakingStrategy`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx)
-and the [`AvellanedaMarketMakingStrategy`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making.pyx)
+[`PureMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx)
+and the [`AvellanedaMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making.pyx)
 strategies.
 
 ## Fundamental Concepts

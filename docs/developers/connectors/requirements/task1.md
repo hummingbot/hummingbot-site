@@ -19,7 +19,7 @@ The first components to implement are as follows:
 The `OrderBookTracker` contains subsidiary classes that help maintain the real-time order book of a market.
 Namely, the classes are `OrderBookTrackerDataSource`, `OrderBook` and `OrderBookMessage`.
 
-Integrating a new exchange connector requires you to extend from the `OrderBookTracker` base class [here](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/data_type/order_book_tracker.py)
+Integrating a new exchange connector requires you to extend from the `OrderBookTracker` base class [here](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/data_type/order_book_tracker.py)
 
 
 !!! note
@@ -43,7 +43,7 @@ This function is only needed for **Perpetual** connectors. It returns `True` if 
 
 The `OrderBookTrackerDataSource` class is responsible for making API calls and/or WebSocket queries to obtain order book snapshots, order book deltas, public order book trades and miscellaneous information on the order book.
 
-Integrating your data source component requires you to extend from the `OrderBookTrackerDataSource` base class [here](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/data_type/order_book_tracker_data_source.py).
+Integrating your data source component requires you to extend from the `OrderBookTrackerDataSource` base class [here](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/data_type/order_book_tracker_data_source.py).
 
 The following details the **required** functions in `OrderBookTrackerDataSource`:
 
@@ -66,7 +66,7 @@ Performs the necessary API request(s) to get the last traded price for the given
 Fetches order book snapshot for a particular trading pair from the exchange REST API.<br/>
 
 !!! note
-    Certain exchanges do not add a timestamp/nonce to the snapshot response. In this case, to maintain a real-time order book would require generating a timestamp for every order book snapshot and delta messages received and applying them accordingly. In the [Bittrex connector](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector), this is performed by invoking the `queryExchangeState` topic on the SignalR WebSocket client.
+    Certain exchanges do not add a timestamp/nonce to the snapshot response. In this case, to maintain a real-time order book would require generating a timestamp for every order book snapshot and delta messages received and applying them accordingly. In the [Bittrex connector](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector), this is performed by invoking the `queryExchangeState` topic on the SignalR WebSocket client.
 
 **Input Parameter(s):** client: `aiohttp.ClientSession`, trading_pair: `str` <br/>
 **Expected Output(s):** `Dict[str, any]`
@@ -79,7 +79,7 @@ Create a new `OrderBook` instance and populate its `bids` and `asks` by applying
 **Expected Output(s):** `OrderBook`
 
 !!! note
-    Certain exchanges do not add a timestamp/nonce to the snapshot response. In this case, to maintain a real-time order book would require generating a timestamp for every order book snapshot and delta messages received and applying them accordingly. In the [Bittrex connector](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector), this is performed by invoking the `queryExchangeState` topic on the SignalR WebSocket client.
+    Certain exchanges do not add a timestamp/nonce to the snapshot response. In this case, to maintain a real-time order book would require generating a timestamp for every order book snapshot and delta messages received and applying them accordingly. In the [Bittrex connector](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector), this is performed by invoking the `queryExchangeState` topic on the SignalR WebSocket client.
 
 ### `get_funding_info`
 
@@ -133,7 +133,7 @@ Only needed for **Perpetual** connectors. Retrieves the symbol update messages f
 **Expected Output(s):** None
 
 !!! note
-    See [here](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/data_type/funding_info.py) for reference to the `FundingInfo` data object.
+    See [here](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/data_type/funding_info.py) for reference to the `FundingInfo` data object.
 
 
 ## OrderBook
@@ -158,7 +158,7 @@ Converts json diff data from the exchange into standard `OrderBookMessage` forma
 **Expected Output(s):** `OrderBookMessage`
 
 !!! warning
-    Include `update_id` as part of `content` in the `OrderBookMessage` of both snapshot and diff messages. `update_id` should be an incrementally increasing integer that indicates the sequence in which the diff should be applied to the order book. See [`OrderBookMessage`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/data_type/order_book_message.py#L38-L42)
+    Include `update_id` as part of `content` in the `OrderBookMessage` of both snapshot and diff messages. `update_id` should be an incrementally increasing integer that indicates the sequence in which the diff should be applied to the order book. See [`OrderBookMessage`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/data_type/order_book_message.py#L38-L42)
 
 ### `trade_message_from_exchange`
 
@@ -168,7 +168,7 @@ Converts json trade data from the exchange into standard `OrderBookMessage` form
 **Expected Output(s):** `OrderBookMessage`
 
 !!! warning
-    Include `update_id` as part of `content` in the `OrderBookMessage` of both snapshot and diff messages. `update_id` should be an incrementally increasing integer that indicates the sequence in which the diff should be applied to the order book. See [`OrderBookMessage`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/data_type/order_book_message.py#L38-L42)
+    Include `update_id` as part of `content` in the `OrderBookMessage` of both snapshot and diff messages. `update_id` should be an incrementally increasing integer that indicates the sequence in which the diff should be applied to the order book. See [`OrderBookMessage`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/data_type/order_book_message.py#L38-L42)
 
 
 ## OrderBookMessage
@@ -229,7 +229,7 @@ Below are some examples of such functions:
 !!! note
     The `convert_from/to_exchange_trading_pair()` functions are only required if the exchange does not provide trading pairs in `Base-Quote` format.
 
-For examples, you can refer to [Ndax](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_utils.py) or [Crypto.com](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/crypto_com/crypto_com_utils.py).
+For examples, you can refer to [Ndax](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_utils.py) or [Crypto.com](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/crypto_com/crypto_com_utils.py).
 
 ## Exchange Constants
 
@@ -244,7 +244,7 @@ Below are some examples of such variables
 | `WS_PRIVATE_CHANNELS` | `List[str]` | List of all the WebSocket channels that an exchange provides. |
 | `ORDER_STATUSES`      | `List[str]` | List of all the order statuses as defined by the exchange.    |
 
-For examples, you can refer to [Ndax](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_constants.py) or [Crypto.com](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/crypto_com/crypto_com_constants.py).
+For examples, you can refer to [Ndax](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_constants.py) or [Crypto.com](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/crypto_com/crypto_com_constants.py).
 
 ## Debugging & Testing
 

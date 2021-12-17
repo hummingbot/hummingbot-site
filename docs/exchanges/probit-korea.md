@@ -5,7 +5,7 @@ tags:
 
 # `probit_kr`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/probit)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/probit)
 
 ## ℹ️ Exchange Info
 
@@ -38,6 +38,6 @@ You are now connected to probit_kr.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/probit/probit_utils.py#L93)).
+Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/probit/probit_utils.py#L93)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

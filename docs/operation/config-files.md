@@ -19,7 +19,7 @@ These configuration files created and used by Hummingbot are saved in the `conf/
 - Installed via Binary (Windows): `%localappdata%\hummingbot.io\Hummingbot\conf`
 - Installed via Binary (MacOS): `~/Library/Application\ Support/Hummingbot/Conf`
 
-The template configuration files can be found here: [Config Templates](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/templates).
+The template configuration files can be found here: [Config Templates](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/templates).
 
 !!! warning
     Exit Hummingbot and ensure it is not running when you modify the config files. Changes will take effect the next time Hummingbot is started.

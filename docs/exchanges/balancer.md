@@ -11,7 +11,7 @@ tags:
 
 ## 📁 Folders
 
-* [Hummingbot - Connector](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/connector/balancer)
+* [Hummingbot - Connector](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/connector/balancer)
 * [Gateway - Routes](https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.ts)
 * [Gateway - Service](https://github.com/CoinAlpha/gateway-api/blob/master/src/services/balancer.js)
 
