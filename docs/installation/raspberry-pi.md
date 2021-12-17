@@ -125,7 +125,7 @@ Logout and login again to enable `conda`, this will make the `conda` command ava
 
 ```
 # Clone the Hummingbot repo from Github
-git clone https://github.com/CoinAlpha/hummingbot.git
+git clone https://github.com/hummingbot/hummingbot.git
 
 # Install the pip dependencies
 cd hummingbot

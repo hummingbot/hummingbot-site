@@ -5,7 +5,7 @@ tags:
 
 # `kraken`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/kraken)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken)
 
 ## ℹ️ Exchange Info
 
@@ -38,6 +38,6 @@ You are now connected to kraken.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.16% maker fees and 0.26% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/kraken/kraken_utils.py#L16)).
+Hummingbot assumes 0.16% maker fees and 0.26% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/kraken/kraken_utils.py#L16)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

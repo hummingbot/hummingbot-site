@@ -85,13 +85,13 @@ limit_order_config_map ={
     ),
 }
 ```
-The parameters in this file are mapped as key-value pairs. Each field uses a [ConfigVar](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/client/config/config_var.py#L20) method to accept parameters. ConfigVar is a variable that you can use to control the trading behavior of the bot. 
+The parameters in this file are mapped as key-value pairs. Each field uses a [ConfigVar](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/client/config/config_var.py#L20) method to accept parameters. ConfigVar is a variable that you can use to control the trading behavior of the bot. 
 
 The `key` parameter identifies the field, while the `prompt` parameter lets you choose the prompt message. If you include `prompt_on_new`, the prompt will be asked each time the user creates a new strategy. Otherwise, it will only be displayed when the user configures the parameter with `config`.
 
 In the above example, the `strategy` field identifies the trading strategy: `LimitOrder`. Similarly, we use `connector` field to prompt for the name of the exchange, and the `market` field to prompt for trading pair that you want to trade. Note that the prompt for `market` uses a function which uses the value for `connector` set by the user in the previous question.
 
-Additionally, you can supply validators as parameters to ensure only accepted values are entered, and you can use the `default` parameter to supply a default value to the parameters. See the [ConfigVar](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/client/config/config_var.py#L20) file for all the ways that you can set strategy parameters.
+Additionally, you can supply validators as parameters to ensure only accepted values are entered, and you can use the `default` parameter to supply a default value to the parameters. See the [ConfigVar](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/client/config/config_var.py#L20) file for all the ways that you can set strategy parameters.
 
 ### `start.py `
 
@@ -190,9 +190,9 @@ class LimitOrder(StrategyPyBase):
         self.logger().info(order_completed_event)
 ```
 
-Check out the [MarketTradingPairTuple](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/market_trading_pair_tuple.py) class for more methods to add to your bot.
+Check out the [MarketTradingPairTuple](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/market_trading_pair_tuple.py) class for more methods to add to your bot.
 
-Both [StrategyPyBase](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/strategy_py_base.pyx) class and `buy_with_specific_market` method derive from the strategy base class. To learn more about other methods you can use using the class, visit [Strategy_base](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx).
+Both [StrategyPyBase](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_py_base.pyx) class and `buy_with_specific_market` method derive from the strategy base class. To learn more about other methods you can use using the class, visit [Strategy_base](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx).
 
 ### `conf_limit_order_strategy_TEMPLATE.yml`
 

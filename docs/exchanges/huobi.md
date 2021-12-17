@@ -5,7 +5,7 @@ tags:
 
 # `huobi`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/huobi)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/huobi)
 
 ## ℹ️ Exchange Info
 
@@ -38,6 +38,6 @@ You are now connected to huobi.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/huobi/huobi_utils.py#L22)).
+Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/huobi/huobi_utils.py#L22)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

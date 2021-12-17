@@ -5,7 +5,7 @@ tags:
 
 # `gate_io`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/gate_io)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/gate_io)
 
 ## ℹ️ Exchange Info
 
@@ -39,6 +39,6 @@ You are now connected to gate_io.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/gate_io/gate_io_utils.py#L21)).
+Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/gate_io/gate_io_utils.py#L21)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

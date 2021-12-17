@@ -6,7 +6,7 @@ tags:
 
 # `loopring`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/loopring)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/loopring)
 
 ## ℹ️ Exchange Info
 
@@ -43,7 +43,7 @@ You are now connected to loopring.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0% maker fees and 0.2% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/loopring/loopring_utils.py#L11)).
+Hummingbot assumes 0% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/loopring/loopring_utils.py#L11)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
 

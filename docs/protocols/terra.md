@@ -10,7 +10,7 @@ tags:
 
 ## 📁 Folders
 
-* [Hummingbot - Connector](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/connector/terra)
+* [Hummingbot - Connector](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/connector/terra)
 * [Gateway - Routes](https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/terra.ts)
 * [Gateway - Service](https://github.com/CoinAlpha/gateway-api/blob/master/src/services/terra.ts)
 

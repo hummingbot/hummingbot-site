@@ -5,7 +5,7 @@ tags:
 
 # `hitbtc`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc)
 
 ## ℹ️ Exchange Info
 
@@ -38,6 +38,6 @@ You are now connected to hitbtc.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.25% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/hitbtc/hitbtc_utils.py#L25)).
+Hummingbot assumes 0.1% maker fees and 0.25% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/hitbtc/hitbtc_utils.py#L25)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

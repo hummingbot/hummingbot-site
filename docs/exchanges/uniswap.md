@@ -11,7 +11,7 @@ tags:
 
 ## 📁 Folders
 
-* [Hummingbot - Connector](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/connector/uniswap)
+* [Hummingbot - Connector](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/connector/uniswap)
 * [Gateway - Routes](https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/uniswap.ts)
 * [Gateway - Service](https://github.com/CoinAlpha/gateway-api/blob/master/src/services/uniswap.js)
 

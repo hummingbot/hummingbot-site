@@ -5,7 +5,7 @@ tags:
 
 # `WazirX`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/wazirx)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/wazirx)
 
 ## ℹ️ Exchange Info
 
@@ -38,6 +38,6 @@ You are now connected to WazirX.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/wazirx/wazirx_utils.py#L15)).
+Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/wazirx/wazirx_utils.py#L15)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

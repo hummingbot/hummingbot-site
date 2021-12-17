@@ -8,7 +8,7 @@ tags:
 
 # `hedge`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/hedge)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/hedge)
 
 ## 📝 Summary
 
@@ -27,7 +27,7 @@ This strategy was the winning submission in the [dYdX hackathon](https://humming
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/hedge/hedge_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hedge/hedge_config_map.py)
 
 | Parameter                        | Type        | Default     | Prompt New? | Prompt                                                 |
 |----------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
@@ -44,12 +44,12 @@ This strategy was the winning submission in the [dYdX hackathon](https://humming
 
 ## 📓 Description
 
-[Trading logic](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/hedge/hedge.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hedge/hedge.pyx)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
 
-*By [leastchaos](https://github.com/leastchaos) - see original [pull request](https://github.com/CoinAlpha/hummingbot/pull/4121)*
+*By [leastchaos](https://github.com/leastchaos) - see original [pull request](https://github.com/hummingbot/hummingbot/pull/4121)*
 
 **Summary**
 

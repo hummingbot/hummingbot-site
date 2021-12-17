@@ -5,7 +5,7 @@ tags:
 
 # `liquid`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/liquid)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/liquid)
 
 ## ℹ️ Exchange Info
 
@@ -38,7 +38,7 @@ You are now connected to liquid.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/liquid/liquid_utils.py#L8)).
+Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/liquid/liquid_utils.py#L8)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
 

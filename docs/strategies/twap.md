@@ -6,7 +6,7 @@ tags:
 
 # `twap`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/twap)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/twap)
 
 ## 📝 Summary
 
@@ -25,7 +25,7 @@ We recommend this strategy as a starting point for developers looking to build t
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/twap/twap_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/twap/twap_config_map.py)
 
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
@@ -44,7 +44,7 @@ We recommend this strategy as a starting point for developers looking to build t
 
 ## 📓 Description
 
-[Trading logic](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/twap/twap.py)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/twap/twap.py)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.

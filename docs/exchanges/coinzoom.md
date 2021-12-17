@@ -5,7 +5,7 @@ tags:
 
 # `coinzoom`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/coinzoom)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinzoom)
 
 ## ℹ️ Exchange Info
 
@@ -38,6 +38,6 @@ You are now connected to coinzoom.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.2% maker fees and 0.26% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/coinzoom/coinzoom_utils.py#L22)).
+Hummingbot assumes 0.2% maker fees and 0.26% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/coinzoom/coinzoom_utils.py#L22)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

@@ -6,7 +6,7 @@ tags:
 
 # `dydx_perpetual`
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
 
 ## ℹ️ Exchange Info
 
@@ -57,6 +57,6 @@ Follow the instructions below to deposit assets onto dYdX's Layer 2 side-chain:
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.05% maker fees and 0.20% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/dydx/dydx_utils.py#L11)).
+Hummingbot assumes 0.05% maker fees and 0.20% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/dydx/dydx_utils.py#L11)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

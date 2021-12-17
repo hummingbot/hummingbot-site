@@ -18,7 +18,7 @@ In the future, Hummingbot aims to extend support to other exchange and asset typ
 Connectors may vary in quality. The CoinAlpha QA team keeps a rough indicator of each connector's working status:
 
 * <span style="color:green; font-size:20px">⬤</span> Connector appears to be working properly.
-* <span style="color:yellow; font-size:20px">⬤</span> Connector has one or more reported issues. Search for [outstanding issues](https://github.com/CoinAlpha/hummingbot/issues) related to this exchange.
+* <span style="color:yellow; font-size:20px">⬤</span> Connector has one or more reported issues. Search for [outstanding issues](https://github.com/hummingbot/hummingbot/issues) related to this exchange.
 * <span style="color:red; font-size:20px">⬤</span> Connector does not seem to work.
 
 ## Maintainer

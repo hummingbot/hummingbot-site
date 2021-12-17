@@ -289,7 +289,7 @@ After the initial public release of Gateway v2, we will establish a rotating "of
 
 ## Availability and Timeline
 
-Hummingbot Gateway v2 is currently under active development under the branch [`feat/gateway-v2`](https://github.com/CoinAlpha/hummingbot/tree/feat/gateway-v2). Issues related to Gateway are tagged with the `gateway` label.
+Hummingbot Gateway v2 is currently under active development under the branch [`feat/gateway-v2`](https://github.com/hummingbot/hummingbot/tree/feat/gateway-v2). Issues related to Gateway are tagged with the `gateway` label.
 
 At the time this blog post is written, Gateway v2 is prototype, pre-alpha software, so our priority is to build a production-ready architecture that offers extensible support for Uniswap-style AMMs on EVM-compatible chains.
 

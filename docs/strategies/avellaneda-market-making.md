@@ -6,7 +6,7 @@ tags:
 
 # `avellaneda_market_making`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/avellaneda_market_making)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/avellaneda_market_making)
 
 ## 📝 Summary
 
@@ -23,7 +23,7 @@ This strategy implements a market making strategy described in the classic paper
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making_config_map.py)
 
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
@@ -55,7 +55,7 @@ This strategy implements a market making strategy described in the classic paper
 
 ## 📓 Description
 
-[Trading logic](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making.pyx)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.

@@ -6,7 +6,7 @@ tags:
 
 # `spot_perpetual_arbitrage`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage)
 
 ## 📝 Summary
 
@@ -27,7 +27,7 @@ Open
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|

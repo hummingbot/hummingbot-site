@@ -9,7 +9,7 @@ tags:
 
 # `aroon_oscillator`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/aroon_oscillator)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/aroon_oscillator)
 
 ## 📝 Summary
 
@@ -28,7 +28,7 @@ This strategy was the winning submission in the Hummingbot track of the [Open De
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator_config_map.py)
 
 | Parameter                        | Type        | Default     | Prompt New? | Prompt                                                 |
 |----------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
@@ -67,12 +67,12 @@ This strategy was the winning submission in the Hummingbot track of the [Open De
 
 ## 📓 Description
 
-[Trading logic](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator.pyx)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
 
-*By [squarelover](https://github.com/squarelover) - see original [pull request](https://github.com/CoinAlpha/hummingbot/pull/3430)*
+*By [squarelover](https://github.com/squarelover) - see original [pull request](https://github.com/hummingbot/hummingbot/pull/3430)*
 
 One of the major downsides to many of the Market-Making strategies in Hummingbot is that they don't understand trends. In my experience, I've often had my bots trade on the wrong side of a trend. This is what it frequently looks like: 
 ![Bad Bad Bot, No Good!](https://www.dropbox.com/temp_thumb_from_token/s/2q3j6mnnqup0bl4?preserve_transparency=False&size=1200x1200&size_mode=4)

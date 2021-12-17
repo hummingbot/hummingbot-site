@@ -34,7 +34,7 @@ Hummingbot is a general source framework for crypto algorithmic trading. We welc
 Hummingbot features an active, friendly community of users globally! Here are some ways to get help if you're encountering issues:
 
 * Check out the [Glossary](/glossary) to understand trading jargon and [Troubleshooting](/troubleshooting) for common questions about using Hummingbot
-* To report a bug or request a new feature, post a [new issue](https://github.com/CoinAlpha/hummingbot/issues/new/choose) in [GitHub](https://github.com/coinalpha/hummingbot). **Please follow the template and include detailed descriptions of the bug, steps to reproduction, supporting artifacts such as screenshots, logs, configuration settings, and suggested fixes, if any.**
+* To report a bug or request a new feature, post a [new issue](https://github.com/hummingbot/hummingbot/issues/new/choose) in [GitHub](https://github.com/hummingbot/hummingbot). **Please follow the template and include detailed descriptions of the bug, steps to reproduction, supporting artifacts such as screenshots, logs, configuration settings, and suggested fixes, if any.**
 * Join the official [Discord](https://discord.hummingbot.io) and post your question on **#general** or **#trader-chat**
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.

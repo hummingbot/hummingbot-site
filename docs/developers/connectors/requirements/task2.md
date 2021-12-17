@@ -34,7 +34,7 @@ Below are some variable(s) and its respective description that you might find us
 | `_auth`           | `Auth`          | The `Auth` class used by the `UserStreamTrackerDataSource`.                                                                   |
 
 !!! tip
-    For an example on how `_domain` is propagated throughout the connector, you can refer to [Binance](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx) or [Ndax](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_exchange.py).
+    For an example on how `_domain` is propagated throughout the connector, you can refer to [Binance](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx) or [Ndax](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_exchange.py).
     Notice that `_domain` is passed along from `Exchange` to `OrderBookTracker` and `UserStreamTracker` and subsequently to `OrderBookTrackerDataSource` and `UserStreamTrackerDataSource`.
 
 The following details the **required** functions in `UserStreamTrackerDataSource`: <br/>
@@ -69,7 +69,7 @@ This can be achieved in 2 ways(depending on the available API on the exchange):
 1. **REST API**
 
    In this scenario, we would have to periodically make API requests to the exchange to retrieve information on the user's **account balances** and **order statuses**.
-   An example of this can be seen in [Huobi's connector exchange file](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/huobi/huobi_exchange.pyx) connector.
+   An example of this can be seen in [Huobi's connector exchange file](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/huobi/huobi_exchange.pyx) connector.
 
    As seen in the `Exchange` class, Huobi uses REST API alone by periodically calling the market's `_update_balances()` and `_update_order_status()` through the `_status_polling_loop()`.
    Also, it can be seen that no user stream files exist in Huobi's connector directory.
@@ -83,7 +83,7 @@ This can be achieved in 2 ways(depending on the available API on the exchange):
    This is especially important since Hummingbot needs to know the available account balances and order statuses at all times.
 
 !!! tip
-    In most scenarios, as seen in most other Centralized Exchanges(i.e. [Binance](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_user_stream_tracker.py), [Crypto.com](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/crypto_com/crypto_com_user_stream_tracker.py), [ProBit](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/probit/probit_user_stream_tracker.py)), a simple WebSocket integration is used to listen on selected topics and retrieving messages to be processed in `Exchange` class.
+    In most scenarios, as seen in most other Centralized Exchanges(i.e. [Binance](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_user_stream_tracker.py), [Crypto.com](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/crypto_com/crypto_com_user_stream_tracker.py), [ProBit](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/probit/probit_user_stream_tracker.py)), a simple WebSocket integration is used to listen on selected topics and retrieving messages to be processed in `Exchange` class.
 
 The following details the **required** functions to be implemented in `UserStreamTracker`:
 
@@ -124,7 +124,7 @@ Below are some variable(s) and its respective description that you might find us
 | `auth_token` | `Optional[str]` | The OAuth token associated to a user. An optional variable depending on the exchange specifications.      |
 
 !!! note
-    The `Auth` class is not restricted to the above attributes. Depending on the Exchanges, more attributes might be required. See [`NdaxAuth`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_auth.py), where an additional attribute `uid` is required as part of the signature generation process.
+    The `Auth` class is not restricted to the above attributes. Depending on the Exchanges, more attributes might be required. See [`NdaxAuth`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_auth.py), where an additional attribute `uid` is required as part of the signature generation process.
 
 The following details the **required** functions to be implemented in `Auth`:
 

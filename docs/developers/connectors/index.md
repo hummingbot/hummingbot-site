@@ -4,7 +4,7 @@ Exchange connectors are packages of code that link Hummingbot's internal trading
 
 ## Examples / templates
 
-There are [existing connectors](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector). Note that each folder contained here marks different exchange connector types. These should serve as a template for creating a new exchange connector.
+There are [existing connectors](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector). Note that each folder contained here marks different exchange connector types. These should serve as a template for creating a new exchange connector.
 
 Building a new exchange connector requires conforming to the template code to the new exchange's APIs, identifying and handling any differences in functions/behaviors, and testing the new exchange connector on that exchange.
 
@@ -12,26 +12,26 @@ The following list some examples/templates that you can refer to when building t
 
 ### Spot Connectors
 
-- [Ndax](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
-- [Crypto.com](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/crypto_com) 
+- [Ndax](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
+- [Crypto.com](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/crypto_com) 
 
 ### Perpetual Connectors
 
-- [Bybit Perpetual](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual)
+- [Bybit Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual)
 
 ## Exchange connector requirements
 
 1. A complete set of exchange connector files as listed [above](https://docs.hummingbot.io/exchanges/).
-2. Unit tests (see existing unit tests [here](https://github.com/CoinAlpha/hummingbot/tree/master/test/hummingbot/connector/exchange/) or [here](https://github.com/CoinAlpha/hummingbot/tree/master/test/hummingbot/connector/derivative)):
-  - Exchange Class ([example](https://github.com/CoinAlpha/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_exchange.py))
-  - Orderbook tracker ([example](https://github.com/CoinAlpha/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_order_book_tracker.py))
-  - Orderbook data source ([example](https://github.com/CoinAlpha/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_api_order_book_data_source.py))
-  - Orderbook message class ([example](https://github.com/CoinAlpha/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_order_book_message.py))
-  - User stream tracker ([example](https://github.com/CoinAlpha/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_user_stream_tracker.py))
-  - User stream data source ([example](https://github.com/CoinAlpha/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_api_user_stream_data_source.py))
-  - User authentication module ([example](https://github.com/CoinAlpha/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_auth.py))
-  - Inflight order class ([example](https://github.com/CoinAlpha/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_in_flight_order.py))
-  - Utils module ([example](https://github.com/CoinAlpha/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_utils.py))
+2. Unit tests (see existing unit tests [here](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/) or [here](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/derivative)):
+  - Exchange Class ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_exchange.py))
+  - Orderbook tracker ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_order_book_tracker.py))
+  - Orderbook data source ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_api_order_book_data_source.py))
+  - Orderbook message class ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_order_book_message.py))
+  - User stream tracker ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_user_stream_tracker.py))
+  - User stream data source ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_api_user_stream_data_source.py))
+  - User authentication module ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_auth.py))
+  - Inflight order class ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_in_flight_order.py))
+  - Utils module ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_utils.py))
 
 3. Documentation:
   - Code commenting (particularly for any code that is materially different from the templates/examples)
@@ -49,7 +49,7 @@ We encourage and welcome contributions from the community, subject to the guidel
 ### Guidelines for community developers
 - Provide a point of contact to the Hummingbot team.
 - Commitment to connector maintenance and keeping it up to date with Hummingbot releases. <br/>*Any connectors that are not kept up to date or have unaddressed bugs will be removed from subsequent releases of Hummingbot unless such issues are resolved.*
-- Adhere to [contributing guide](https://github.com/CoinAlpha/hummingbot/blob/master/CONTRIBUTING.md), code conventions used in the Hummingbot repo, and these guidelines outlined here.
+- Adhere to [contributing guide](https://github.com/hummingbot/hummingbot/blob/master/CONTRIBUTING.md), code conventions used in the Hummingbot repo, and these guidelines outlined here.
 - Complete all of the work listed in [Exchange connector requirements](#exchange-connector-requirements).
 - Address any comments or issues raised by the Hummingbot development team during the code review process.
 - Notify the Hummingbot team and community of any known issues are bugs that are discovered.

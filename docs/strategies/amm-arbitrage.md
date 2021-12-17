@@ -6,7 +6,7 @@ tags:
 
 # `amm_arb`
 
-## 📁 [Strategy folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy/amm_arb)
+## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/amm_arb)
 
 ## 📝 Summary
 
@@ -24,7 +24,7 @@ This strategy monitors prices between a trading pair on an `amm` exchange versus
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/amm_arb/amm_arb_config_map.py)
+[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_arb/amm_arb_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
@@ -42,7 +42,7 @@ This strategy monitors prices between a trading pair on an `amm` exchange versus
 
 ## 📓 Description
 
-[Trading logic](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/amm_arb/amm_arb.py)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_arb/amm_arb.py)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
