@@ -3,7 +3,7 @@ tags:
 - spot exchange connector
 ---
 
-# `MEXC Global`
+# `mexc`
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc)
 
