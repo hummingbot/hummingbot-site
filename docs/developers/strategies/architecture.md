@@ -5,7 +5,7 @@ All strategy classes are derived from the [`StrategyBase`](https://github.com/hu
 
 The concrete strategy classes included with Hummingbot, including [`ArbitrageStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx), [`CrossExchangeMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx), and [`PureMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx) - are all child classes of `StrategyBase`.
 
-Each `StrategyBase` object may be managing multiple [`MarketBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/market/market_base.pyx) and [`WalletBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/wallet/wallet_base.pyx) objects.
+Each `StrategyBase` object may be managing multiple [`MarketBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/market/market_base.pyx) and `WalletBase` objects.
 
 ## How It Works
 

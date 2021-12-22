@@ -8,7 +8,7 @@ This section will breakdown some of the ways to debug and test the code. You are
 ## Option 1. Unit Test Cases
 
 For each tasks(1->3), you are required to create a unit test case. Namely they are `test_*_order_book_tracker.py`, `test_*_user_stream_tracker.py` and `test_*_market.py`. 
-Examples can be found in the [test/integration](https://github.com/hummingbot/hummingbot/tree/master/test/integration) folder.
+Examples can be found in the [test/integration](https://github.com/hummingbot/hummingbot/tree/master/test/) folder.
 
 Below are a list of items required for the Unit Tests:
 

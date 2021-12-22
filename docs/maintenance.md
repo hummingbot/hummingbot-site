@@ -22,7 +22,7 @@ Certain exchanges and protocols act as **Sponsors** and have contractual agreeme
 
 | Connector                               | Type      | Amount  | Developer  | Maintainer  |
 |-----------------------------------------|-----------| ------- | ---------- | ----------- |
-| [AscendEx](/exchanges/ascendex)         | fee share | 40%     | CoinAlpha  | CoinAlpha   |
+| [AscendEx](/exchanges/ascend-ex)         | fee share | 40%     | CoinAlpha  | CoinAlpha   |
 | [Binance.com](/exchanges/binance)       | fee share | 30%     | CoinAlpha  | CoinAlpha   |
 | [Bitfinex](/exchanges/bitfinex)         | fee share | 30%     | [nionis](https://github.com/nionis) |   |
 | [BitMart](/exchanges/bitmart)           | fee share | 45%     | [srirambandi](https://github.com/srirambandi) |   |
@@ -30,7 +30,7 @@ Certain exchanges and protocols act as **Sponsors** and have contractual agreeme
 | [CoinZoom](/exchanges/coinzoom)         | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger) |   |
 | [Crypto.com](/exchanges/crypto-com)     | fee share | 25%     | CoinAlpha  |             |
 | [Digifinex](/exchanges/digifinex)       | fee share | 30%     | [msr888](https://github.com/msr888) | |
-| [Gate.io](/exchanges/ascendex)          | fee share | 20%     | [TheHolyRoger](https://github.com/TheHolyRoger) | CoinAlpha |
+| [Gate.io](/exchanges/gate-io)           | fee share | 20%     | [TheHolyRoger](https://github.com/TheHolyRoger) | CoinAlpha |
 | [Himalaya](/exchanges/himalaya)         | monthly fee | $750  | CoinAlpha  |             |
 | [HitBTC](/exchanges/hitbtc)             | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger) |   |
 | [Huobi](/exchanges/huobi)               | fee share | 30-40%  | CoinAlpha  | CoinAlpha   |
