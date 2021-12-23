@@ -16,7 +16,7 @@ _Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
 
 ```bash
     # 1) Download install script
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/install-from-source/install-source-ubuntu.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/install-from-source/install-source-ubuntu.sh
 
     # 2) Enable script permissions
     chmod a+x install-source-ubuntu.sh
@@ -155,7 +155,7 @@ exit
     cd ~
 
     # 2) Download install script
-    curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/install-from-source/install-source-windows.sh -o install-source-windows.sh
+    curl https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/install-from-source/install-source-windows.sh -o install-source-windows.sh
 
     # 3) Enable script permissions
     chmod a+x install-source-windows.sh

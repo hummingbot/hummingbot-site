@@ -41,9 +41,9 @@ You can install Hummingbot with **_either_** of the following options:
 
     ```bash
     # 1) Download Hummingbot install, start, and update script
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/create.sh
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/start.sh
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/update.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/create.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/start.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/update.sh
 
     # 2) Enable script permissions
     chmod a+x *.sh

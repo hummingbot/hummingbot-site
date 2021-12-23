@@ -31,7 +31,7 @@ Updating to the latest docker image (e.g. `coinalpha/hummingbot:latest`)
     rm -rf update.sh
 
     # 2) Download update script
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/update.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/update.sh
 
     # 3) Enable script permissions
     chmod a+x update.sh
@@ -88,7 +88,7 @@ The Hummingbot codebase is hosted at https://github.com/hummingbot/hummingbot.
 
     ```bash
     # 1) Download update script to the *root* folder
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/install-from-source/update.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/install-from-source/update.sh
 
     # 2) Enable script permissions
     chmod a+x update.sh

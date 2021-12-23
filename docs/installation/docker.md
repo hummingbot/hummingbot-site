@@ -17,7 +17,7 @@ _Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
 
     ```bash
     # 1) Download Docker install script
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/install-docker/install-docker-ubuntu.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/install-docker/install-docker-ubuntu.sh
 
     # 2) Enable script permissions
     chmod a+x install-docker-ubuntu.sh
@@ -58,9 +58,9 @@ _Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
 
     ```bash
     # 1) Download Hummingbot install, start, and update script
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/docker-commands/create.sh
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/docker-commands/start.sh
-    wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/docker-commands/update.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/update.sh
 
     # 2) Enable script permissions
     chmod a+x *.sh
@@ -100,9 +100,9 @@ You can install Docker by [downloading an installer](https://docs.docker.com/doc
 
     ```bash
     # 1) Download Hummingbot install, start, and update script
-    curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/docker-commands/create.sh -o create.sh
-    curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/docker-commands/start.sh -o start.sh
-    curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/master/installation/docker-commands/update.sh -o update.sh
+    curl https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh -o create.sh
+    curl https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh -o start.sh
+    curl https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/update.sh -o update.sh
 
     # 2) Enable script permissions
     chmod a+x *.sh
