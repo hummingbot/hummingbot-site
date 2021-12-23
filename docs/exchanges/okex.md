@@ -21,7 +21,7 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [0.33.0](/release-notes/0.33.0/) by CoinAlpha
-* Maintainer: 
+* Maintainer: CoinAlpha
 
 ## 🔑 Connection
 
