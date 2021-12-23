@@ -41,10 +41,10 @@ We pledge that we will not use the information/data your provide us for trading 
 
 ## 🙋‍♂️ Getting help with Hummingbot Miner
 
-For users using Hummingbot to earn rewards on [Hummingbot Miner](https:/miner.hummingbot.io), the Miner team maintains 24/7 dedicated technical support for users. The support team helps users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues.
+For users using Hummingbot to earn rewards on [Hummingbot Miner](https://miner.hummingbot.io), the Miner team maintains 24/7 dedicated technical support for users. The support team helps users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues.
 
 You can access Miner support via the following methods:
 
 * Email: Send us a message at [support@hummingbot.io](mailto:support@hummingbot.io)
-* Live chat: Click the chat widget in the lower right hand corner of the [Miner website](https:/miner.hummingbot.io),
+* Live chat: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io),
 * Discord: Post a message on the **#support** or **#liquidity-mining** channels on [Discord](https://discord.hummingbot.io)

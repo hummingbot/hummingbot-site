@@ -63,7 +63,7 @@ Similar to the `pure_market_making_strategy`, the `perpetual_market_making` stra
 
 ## 📓 Description
 
-[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making/perpetual_market_making.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making/perpetual_market_making.py)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
