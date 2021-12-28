@@ -124,7 +124,7 @@ nav:
         - Governance: governance/index.md
         - Whitepaper: governance/whitepaper.md
         - HBOT: governance/hbot.md
-        - PRP: governance/prp.md
+        - Pull Request Proposals: governance/prp.md
     - News & Updates:
       - News & Updates: news/index.md
       - Introducing HBOT: news/hbot.md
