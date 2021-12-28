@@ -30,6 +30,7 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 - [Governance](/governance): Decide how the Hummingbot codebase evolves
 - [Whitepaper](/governance/whitepaper): Detailed description of how the governance system works
 - [HBOT](/governance/hbot): How to claim and vote your HBOT tokens
+- [PRP](/governance/prp): How to vote a proposal linked to an open pull request in the Hummingbot code repository
 
 ## 💪 Contribute to Hummingbot
 
