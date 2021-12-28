@@ -1,164 +1,112 @@
----
-hide:
-- toc
----
+# Pull Request Proposals (PRP)
 
+## Summary
 
-# Pull Request Proposal (PRP)
+HBOT token holders have the right to vote and approve pull requests, or proposed code changes to the official Hummingbot code repository, via **Pull Request Proposals (PRP)**. 
 
+All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on the Hummingbot Snapshot space related to it.
 
-## What is a Pull Request Proposal (PRP)?
-HBOT token holders have the right to vote on which Pull Requests should be added to the main Hummingbot Client Release. The first step is the Pull Request Proposal. Anyone can create a Pull Request Proposal related to a Pull Request. There is no need to hold HBOT tokens to create a PR o PRP. The votation in snapshop will then determine what PRPs are approved by majority and subject to review by Foundation for determination of integrity, quality and security issues before merging to master branch.  
-All Pull Requests targeting the development branch will be merged into the main code-base only if there is an approved Pull Request Proposal on the Hummingbot Snapshot page related to it.
+## Branches
 
-## Hummingbot Development Cycle
-The Hummingbot Client Repository has three main branches related to the development cycle of each new version:
+![](/assets/img/pull request proposal workflow.png)
 
+The Hummingbot code repository has three main branches related to the development cycle of each monthly release:
 
-### 1.	Development branch
-All Pull Requests aiming to be included on the master branch must be targeted to the development branch. They are then promoted from development to the staging branch before passing to master
-Pull Requests targeted to the development branch will only be considered to merge into staging only when there is an approved Pull Request Proposal related to it. 
+### `development`
 
+All pull requests aiming to be included on the `master` branch must be targeted to the development branch. They are then promoted from `development` to `staging` before passing to `master`. Pull requests targeting the `development` branch will only be merged into `staging` only when there is an approved PRP related to it. 
 
-### 2.	Staging branch
+### `staging`
 
-Staging branch is used by the Foundation team to test all code changes before adding them to the master branch. The development branch is the prior step to staging branch.
+`staging` is used by the Foundation QA team to conduct a thorough test all code changes before adding them to the `master` branch.
 
+### `master`
 
-### 3.	 Master branch
-Master is the main release branch and contains the latest stable version of the Hummingbot Client. The staging branch is the step prior to master for Foundation QA review
+`master` is the main release branch and contains the latest stable version of the Hummingbot software client and is released once per month.
 
+## Release cadence
 
-
-## Pull Requests Proposals Approval and Implementation Cycle
-
-
- There is a workflow of approvals for the Pull Request Process
-
- ![](/assets/img/pull request proposal workflow.png)
-
-
-In any given month, each Hummingbot Foundation Proposal Release will have a two Months cycle:
+Hummingbot ships a new release approximately every month. Each release is built, tested and released over a two-month cycle that overlaps with the next release.
 
 ![](/assets/img/pull request proposal period.png)
 
+### Month 1: review and approve
 
-Month 1
-During the first month of the development cycle, Pull Request Proposals approved during this period will be scheduled to be added to the next month's release.
-Only Pull Request Proposals approved before the cut-off date will be added to the following release.
+During the first month, PRPs approved during this period will be scheduled to be added to the next release. Only PRPs approved before the cutoff date will be added.
 
+### Month 2: test and release
 
-Month 2
-During the second month of the development cycle, The Foundation team will merge all the remaining approved Pull Request Proposals, and move the development branch to the staging branch, and run all tests needed.
-A new release can happen on any day of the second month, as soon as all approved Pull Requests are merged, and the Foundation QA team signs off the release.
+During the second month, The Foundation team will merge all remaining PRPs that are approved but not yet merged, merge the `development` branch into the `staging` branch, and run all tests needed. A new release can happen anytime during Month 2 as soon as all approved pull request are merge and the Foundation QA team signs off the release.
 
-## How to have your Pull Request added to the Hummingbot code base 
+## PRP lifecycle
 
+### 1. Pull request submitted
 
-### 1. Create the Pull Request  
+Anyone can submit a new [pull request](https://github.com/hummingbot/hummingbot/pulls) in the Hummingbot repository targeting the `development` branch.
 
+Specifically, the pull request should:  
 
-For a Pull Request to be considered "open for voting", all the requirements below must be fulfilled:  
+* Target the `development` branch with no merge conflicts
+* Contain a clear description
+* Enable **Allow edits by maintainers**
+* Contain unit tests and and they all pass (connectors only)
 
-a.	Is targeted to the development branch;  
+For more information, see [Contribution Guidelines](http://localhost:8000/developers/contributions/#5-create-a-pull-request).
 
-b.	Contains a clear description of what is the objective of the Pull Request;  
+### 2. Proposal created
 
-c.	Passes all the existing Unit Tests;  
+With the pull request created and the minimum requirements met, the next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot.eth. This space is dedicated for Pull Request Proposals (PRP).
 
-d.	No merging conflicts exists;  
+The PRP should contain the following information:
 
-
-When all the requirements above are met, a Pull Request Proposal can be created, allowing the community to vote if the Pull Request will be merged into the development branch. If the Pull Request or the Proposal does not meet the requirements described above, it will be deleted by the Foundation Team
-
-!!! note
-
-    In order to test and improve the process of voting and merging the approved PRP, 
-    only Hummingbot Foundation members will be able to create new PRPs until January 30rd.
-
-
-### 2. Create the Code Merge Proposal
-
-
-With the PR created, and the minimum requirements met, a Code Merge Proposal will be created on the Snapshot Page  https://snapshot.org/#/hbot.eth.
-
-
+* **Title**: Pull request number and title
+* **Description**: Description summary and a link to the pull request in Github
 
 !!! note
+    In the near future, any ETH address with at least 1 HBOT can create a Pull Request Proposal related to a Pull Request. In order to test and improve the process of voting and merging the approved PRP, only Hummingbot Foundation members will be able to create new PRPs until the Hummingbot 1.0 release, scheduled for late January.
 
-    Anyone can create a Pull Request Proposal related to a Pull Request.
+If the pull request or PRP do not meet the requirements described above, the PRP may be deleted by Foundation staff.
 
-
-The proposal must contain the following information:
-Title: It must contain the PR number and the PR title
-Description: It must contain a description of what the PR Code does, with a link to the Github page.
-
-
-
-Example:
+Here is an example of a PRP in Snapshot:
 
 ![](/assets/img/example prp.png)
 
+### 3. Pending review
 
-Once created, the proposal will be "Pending" for 4 days, as a Review Period:   
+The Voting Period for PRPs is currently **7 days**, divided between Pending (4 days) and Active (3 days).
 
+The initial **Pending** period gives the entire Hummingbot community time to discuss the pull request, review the code submitted, and decide whether the Foundation should undertake the time and effort to review and merge in the proposed changes
 
-o	This period can be used by the community to review the code submitted.  
+* Proposal submitter may promote discussion of the pull request on Discord **#governance** channels and the Governance Forum
+* The developer that created the pull request will be able to change his pull request as needed
+* Code changes during this period must not change the original intent of the pull request
 
-o	The developer that created the PR will be able to change his Pull Request as needed.  
+!!! note "Discuss code on Github"
+    All discussions related to the code changes should happen on the Github page associated with pull request
 
-o	All discussions related to the Proposal must happen on the PR Github page. 
+### 4. Active voting
 
-o	Code changes during this period must not change the original intent of the Proposal.  
+After the Pending period has finished, the PRP becomes Active and enables voting for 3 days:
 
+* No code changes should be made to the pull request during this period.  A proposal may be considered invalid by the Foundation if changes occur.
+* If the Quorum Percentage (currently 100,000 tokens) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
 
+!!! warning "Proposal nullification"
+    The Foundation can nullify the proposal if it detects major issues on the pull request. Some examples of what could cause a proposal to be nullified are:
 
-### 3. Voting period for Code Merge Proposal
+    * Security issues are detected on the pull request (i.e. exposition of private keys) by the Foundation or any member of the community;
 
+    * Changes are committed to the pull request that changes the original intent;
 
-After the Review Period, the vote will automatically start, for a 3 days period. This is the Voting Period: 
+    * Pull request proposed makes the rest of the code unusable or unstable;
 
-•	No changes must be made to the PR during the voting period.  
-The voting will be considered invalid by the Foundation if changes on the commit happen during the voting period.
+    * Any other major issue with the code.
 
-•	The Foundation can, at any point, nullify or reject the proposal if it detects major issues on the Pull Request. Some examples of what could cause a proposal to be nullified are:  
+### 5. Code merged or rejected
 
-o	Security issues are detected on the Pull Request (i.e. exposition of private keys) by the Foundation or any member of the community. 
+If the PRP is approved, the Foundation will attempt to merge the related pull request into the `development` branch. During the merge process, the Foundation QA team will test the submitted pull request to ensure that it works properly. If issues are found by the Foundation QA team, the developer will be contacted to fix the problems found before completing the merge.
 
-o	Changes are committed to the Pull Request that changes the original intent. 
+The Foundation reserves the right to revert an approved pull request if major issues are found during the merge process. In that case, Foundation will publish a public retrospective explaining the reason for this decision.
 
-o	The Pull Request proposed makes the rest of the code unusable or unstable.
+If the PRP fails to meet the approval thresholds at the end of the Voting Period, it will be rejected. Afterwards, the Foundation will close the related pull request in the Hummingbot repository. However, the developer is free to create a new pull request and a new proposal at a subsequent date.
 
-
-### 4. Voting Results
-
-
-The minimum quorum for a Pull Request Proposal is 1% of the total HBOT tokens in circulation.
-To be approved, a Pull Request Proposal must have more than 50% of the total votes cast on the For option.
-
-
-## Rejection
-
-If a proposal fails to meet the approval thresholds at the end of the 7 days voting period, (4 days for review, 3 days for voting) it will be rejected.
-Once rejected, the respective PR will also be closed on the Hummingbot Repository.
-The developer who created the PR is free to create a new PR and a new proposal.
-
-
-## Approval
-
-If the proposal is approved(> 50% For), The Foundation will schedule the merge of the related Pull Request into the development branch.
-During the merging process, the Foundation QA team will test the submitted Pull Request to ensure that it works properly.
-If issues are found by the Foundation QA team, the developer will be contacted to fix the problems found before completing the merge.
-The Foundation still reserves the right to revert an approved Pull Request if major issues are found during the merging process. In that case, a report will be published by the foundation explaining the reason for this decision.
-
-## Revision
-
-Some examples of problems that could cause a Pull Request to be reverted are:  
-
-1.	Security issues are detected on the Pull Request (i.e. exposition of private keys) by the Foundation or any member of the community.  
-
-2.	Changes are committed to the Pull Request that changes the original intent.  
-
-3.	The Pull Request proposed makes the rest of the code unusable or unstable.  
-
-4.	Any other major issue with the code submitted.
