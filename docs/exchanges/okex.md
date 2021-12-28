@@ -5,11 +5,11 @@ tags:
 
 # `okex`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okex)
+## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/okex)
 
 ## ℹ️ Exchange Info
 
-**OKEx** 
+**OKEx**
 [Website](https://www.okex.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/okex/) | [CoinGecko](https://www.coingecko.com/en/exchanges/okex)
 
 * API docs: https://www.okex.com/docs/en/
@@ -21,12 +21,12 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [0.33.0](/release-notes/0.33.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* Maintainer:
 
 ## 🔑 Connection
 
 Run `connect okex` in order to enter your API keys:
- 
+
 ```
 Enter your OKEx API key >>>
 Enter your OKEx secret key >>>
@@ -40,6 +40,10 @@ You are now connected to okex.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.1% maker fees and 0.15% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/okex/okex_utils.py#L12)).
+Hummingbot assumes 0.1% maker fees and 0.15% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/okex/okex_utils.py#L12)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+
+## 🛑 Limitations
+
+No trade events information is provided by this exchange.

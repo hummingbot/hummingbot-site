@@ -5,7 +5,7 @@ tags:
 
 # `beaxy`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/beaxy)
+## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/beaxy)
 
 ## ℹ️ Exchange Info
 
@@ -38,7 +38,10 @@ You are now connected to beaxy.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.15% maker fees and 0.25% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/beaxy/beaxy_utils.py#L11)).
+Hummingbot assumes 0.15% maker fees and 0.25% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/beaxy/beaxy_utils.py#L11)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
 
+## 🛑 Limitations
+
+No fee information is provided by this exchange.

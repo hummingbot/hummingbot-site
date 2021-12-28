@@ -5,11 +5,11 @@ tags:
 
 # `blocktane`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/blocktane)
+## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/connector/exchange/blocktane)
 
 ## ℹ️ Exchange Info
 
-**Blocktane** 
+**Blocktane**
 [Website](https://blocktane.io/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/blocktane/)
 
 * API docs: https://blocktane.io/api
@@ -25,7 +25,7 @@ tags:
 ## 🔑 Connection
 
 Run `connect blocktane` in order to enter your API keys:
- 
+
 ```
 Enter your Blocktane API key >>>
 Enter your Blocktane API secret >>>
@@ -38,6 +38,10 @@ You are now connected to blocktane.
 
 ## 🪙 Fees
 
-Hummingbot assumes 0.15% maker fees and 0.25% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/blocktane/blocktane_utils.py#L12)).
+Hummingbot assumes 0.15% maker fees and 0.25% taker fees ([source](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/blocktane/blocktane_utils.py#L12)).
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+
+## 🛑 Limitations
+
+No fee information is provided by this exchange.
