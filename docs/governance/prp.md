@@ -51,7 +51,7 @@ Specifically, the pull request should:
 * Enable **Allow edits by maintainers**
 * Contain unit tests and and they all pass (connectors only)
 
-For more information, see [Contribution Guidelines](http://localhost:8000/developers/contributions/#5-create-a-pull-request).
+For more information, see [Contribution Guidelines](/developers/contributions/#5-create-a-pull-request).
 
 ### 2. Proposal created
 
