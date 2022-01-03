@@ -9,6 +9,7 @@ All pull requests will only be merged into `development` and included in a subse
 ## Branches
 
 ![](/assets/img/pull request proposal workflow.png)
+*PRP code merge workflow*
 
 The Hummingbot code repository has three main branches related to the development cycle of each monthly release:
 
@@ -29,33 +30,36 @@ All pull requests aiming to be included on the `master` branch must be targeted 
 Hummingbot ships a new release approximately every month. Each release is built, tested and released over a two-month cycle that overlaps with the next release.
 
 ![](/assets/img/pull request proposal period.png)
+*Release schedule*
 
-### Month 1: review and approve
+### Month 1: Review and approve
 
 During the first month, PRPs approved during this period will be scheduled to be added to the next release. Only PRPs approved before the cutoff date will be added.
 
-### Month 2: test and release
+### Month 2: Test and release
 
-During the second month, The Foundation team will merge all remaining PRPs that are approved but not yet merged, merge the `development` branch into the `staging` branch, and run all tests needed. A new release can happen anytime during Month 2 as soon as all approved pull request are merge and the Foundation QA team signs off the release.
+During the second month, The Foundation team will merge all remaining PRPs that are approved but not yet merged, merge the `development` branch into the `staging` branch, and run all tests needed. 
+
+A new release can happen anytime during Month 2. There is no fixed date for, and it will heppen as when all approved pull request are merge and the Foundation QA team signs off the new release.
 
 ## PRP lifecycle
 
-### 1. Pull request submitted
+### 1. Pull request is created
 
 Anyone can submit a new [pull request](https://github.com/hummingbot/hummingbot/pulls) in the Hummingbot repository targeting the `development` branch.
 
-Specifically, the pull request should:  
+Specifically, the pull request must:  
 
-* Target the `development` branch with no merge conflicts
-* Contain a clear description
-* Enable **Allow edits by maintainers**
-* Contain unit tests and and they all pass (connectors only)
+* Target the `development` branch with no merge conflicts;
+* Contain a clear description of what what **Pull Request** does and why it is needed;
+* Enable **Allow edits by maintainers**;
+* Contain unit tests and and they all pass (connectors only);
 
 For more information, see [Contribution Guidelines](/developers/contributions/#5-create-a-pull-request).
 
-### 2. Proposal created
+### 2. Proposal is created
 
-With the pull request created and the minimum requirements met, the next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot.eth. This space is dedicated for Pull Request Proposals (PRP).
+With the pull request created and the minimum requirements listed above are met, the next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot-prp.eth. **This space is dedicated for Pull Request Proposals (PRP).**
 
 The PRP should contain the following information:
 
@@ -70,6 +74,7 @@ If the pull request or PRP do not meet the requirements described above, the PRP
 Here is an example of a PRP in Snapshot:
 
 ![](/assets/img/example prp.png)
+*PRP on example*
 
 ### 3. Pending review
 
@@ -77,7 +82,7 @@ The Voting Period for PRPs is currently **7 days**, divided between Pending (4 d
 
 The initial **Pending** period gives the entire Hummingbot community time to discuss the pull request, review the code submitted, and decide whether the Foundation should undertake the time and effort to review and merge in the proposed changes
 
-* Proposal submitter may promote discussion of the pull request on Discord **#governance** channels and the Governance Forum
+* Proposal submitter may promote discussion of the pull request on Discord **#governance-chat** channels and the [Governance Forum](https://commonwealth.im/hummingbot-foundation/)
 * The developer that created the pull request will be able to change his pull request as needed
 * Code changes during this period must not change the original intent of the pull request
 
@@ -88,7 +93,7 @@ The initial **Pending** period gives the entire Hummingbot community time to dis
 
 After the Pending period has finished, the PRP becomes Active and enables voting for 3 days:
 
-* No code changes should be made to the pull request during this period.  A proposal may be considered invalid by the Foundation if changes occur.
+* No code changes should be made to the pull request during this period.  **A proposal may be considered invalid by the Foundation if changes occur**.
 * If the Quorum Percentage (currently 100,000 tokens) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
 
 !!! warning "Proposal nullification"
