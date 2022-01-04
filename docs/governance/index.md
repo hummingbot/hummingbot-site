@@ -32,6 +32,8 @@ Each proposal type has different governance parameters:
 
 ## How to Participate
 
+Discussions related to all Proposals must be on the [Hummingbot Governance Forum](https://commonwealth.im/hummingbot-foundation/).
+
 Pull Request Proposals (PRP) are live and can be found on the Hummingbot Foundation Snapshot: [Snapshot](https://snapshot.org/#/hbot.eth). 
 
 
