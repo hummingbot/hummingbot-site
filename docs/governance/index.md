@@ -17,7 +17,7 @@ For more information, see the [Hummingbot Foundation Governance whitepaper](/whi
 
 HBOT holders can vote on three types of proposals:
 
-* **Pull Request Proposal (PRP)**: a proposal linked to an open pull request in the Hummingbot code repository
+* [**Pull Request Proposal (PRP)**](/governance/prp): a proposal linked to an open pull request in the Hummingbot code repository
 * **Improvement Proposal (IP)**: a proposal linked to an issue in the Hummingbot Github repository that specifies a proposed improvement to a component of the Hummingbot codebase
 * **Governance Proposal (GP)**: a proposal linked to an issue in the Hummingbot Github repository that specifies either a proposed modification to the Foundation governance system, or a proposed distribution of HBOT tokens from the treasury for a community activity such as a grant. 
 
@@ -32,7 +32,8 @@ Each proposal type has different governance parameters:
 
 ## How to Participate
 
-All proposals can be found on the Hummingbot Foundation Snapshot: [Snapshot](https://snapshot.org/#/hbot.eth). 
+Pull Request Proposals (PRP) are live and can be found on the Hummingbot Foundation Snapshot: [Snapshot](https://snapshot.org/#/hbot.eth). 
 
-Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. 
+
+Governance Proposals (GP) and Improvement Proposals (IP) voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. 
 
