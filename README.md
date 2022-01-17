@@ -12,7 +12,7 @@ The deployed site at https://hummingbot.org uses the [Insiders build](https://sq
 
 ```
 # change to conda base environment since there may be conflicts with other environments like hummingbot
-➜ conda activate
+➜ conda deactivate
 
 # install mkdocs-material-insiders and dependencies (HTTPS)
 (base) ➜ pip install git+https://github.com/CoinAlpha/mkdocs-material-insiders.git
