@@ -16,11 +16,16 @@ tags:
 * Transaction fees: https://www.hbg.com/en-us/about/fee/
 * Minimum order size: https://huobiglobal.zendesk.com/hc/en-us/articles/900000210246-Announcement-on-Adjusting-Minimum-Order-Amount-for-Some-Trading-Pairs
 * Creating API keys: https://www.huobi.com/support/en-us/detail/360000203002
+* Referral link: https://www.huobi.com/en-us/topic/double-reward/?invite_code=en9k2223
+
+!!! note
+    Special fee rate by registering through the link above.
+    Spot trading: Maker/taker 0.099%, 0.08% with HT deduction
 
 ## 👷 Maintenance
 
 * Release added: [0.14.0](/release-notes/0.14.0/) by CoinAlpha
-* Maintainer: 
+* Maintainer: CoinAlpha
 
 ## 🔑 Connection
 

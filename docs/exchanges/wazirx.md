@@ -3,7 +3,7 @@ tags:
 - spot exchange connector
 ---
 
-# `WazirX`
+# `wazirx`
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/wazirx)
 
