@@ -6,6 +6,9 @@ Welcome to the official website and documentation for Hummingbot and the Humming
 
 This documentation site uses [MkDocs](https://www.mkdocs.org/) documentation-focused static site engine, along with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, of which Hummingbot is a proud sponsor.
 
+!!! note "Cairo dependency"
+    Since we recently added social cards, you may need to install the [Cairo](https://www.cairographics.org/) graphics library to run this locally. On macOS, you can install it globally using [Homebrew](https://brew.sh/) with `brew install cairo`.
+
 ### Insiders
 
 The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of , which features experimental features like tags and social cards. For Hummingbot site editors, see below for how to deploy the site in your local development environment and Netlify:
