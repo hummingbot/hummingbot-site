@@ -12,7 +12,7 @@ Building a new exchange connector requires conforming to the template code to th
 ## The Gold Standard
 
 We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
-and the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+and the [Binance Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual)
 connectors as the gold standard and most up-to-date implementations in the code base.
 
 ## Exchange connector requirements
