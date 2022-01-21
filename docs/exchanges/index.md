@@ -42,12 +42,12 @@ Exchanges and other institutions can visit the [official Hummingbot website](htt
 | [Binance](/exchanges/binance)                   | [binance.com](https://binance.com)           |                                  | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
 | [Binance US](/exchanges/binance-us)             | [binance.us](https://www.binance.us)         |                                  | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
 | [Bitfinex](/exchanges/bitfinex)                 | [bitfinex.com](https://bitfinex.com)         |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
-| [BitMart](/exchanges/bitmart)                   | [bitmart.com](https://www.bitmart.com/)      |                                  | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
+| [BitMart](/exchanges/bitmart)                   | [bitmart.com](https://www.bitmart.com/)      |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Bittrex Global](/exchanges/bittrex)            | [bittrex.com](https://bittrex.com)           |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Blocktane](/exchanges/blocktane)               | [blocktane.io](https://blocktane.io/)        |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Coinbase Pro](/exchanges/coinbase)             | [pro.coinbase.com](https://pro.coinbase.com) |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Coinzoom](/exchanges/coinzoom)                 | [coinzoom.com](https://www.coinzoom.com/)    |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
-| [Crypto.com](/exchanges/crypto-com)             | [crypto.com](https://crypto.com)             |                                  | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
+| [Crypto.com](/exchanges/crypto-com)             | [crypto.com](https://crypto.com)             |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Digifinex](/exchanges/digifinex)               | [digifinex.com](https://www.digifinex.com/)  |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [FTX](/exchanges/ftx)                           | [ftx.com](https://ftx.com/foundation)        |                                  | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
 | [Gate.io](/exchanges/gate-io)                   | [gate.io](https://www.gate.io/)              |                                  | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
@@ -71,7 +71,7 @@ Exchanges and other institutions can visit the [official Hummingbot website](htt
 | ------------------------------------------------ | -------------------------------------------- | --------------------------------- | -----------| ---------------------------------------------------- |
 | [Binance Futures](/exchanges/binance-perpetual)  | [binance.com](https://binance.com)           |                                   | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |  
 | [Bybit](/exchanges/bybit-perpetual)              | [bybit.com](https://www.bybit.com/en-US/)    |                                   | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
-| [dYdX Perpetual](/exchanges/dydx-perpetual)      | [dydx.exchange](https://dydx.exchange/)      | [ethereum](/protocols/ethereum)   | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
+| [dYdX Perpetual](/exchanges/dydx-perpetual)      | [dydx.exchange](https://dydx.exchange/)      | [ethereum](/protocols/ethereum)   | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 
 ### `amm`
 
@@ -79,8 +79,8 @@ Exchanges and other institutions can visit the [official Hummingbot website](htt
 | ------------------------------------------------ | -------------------------------------------- | --------------------------------- | ---------- | ---------------------------------------------------- |
 | [Balancer](/exchanges/balancer)                  | [balancer.fi](https://balancer.fi/)          | [ethereum](/protocols/ethereum)   | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
 | [Celo](/protocols/celo)                         | [celo.org](https://celo.org/)                | [celo](/protocols/celo)           | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
-| [Perpetual Finance](/exchanges/perp-fi/)         | [perp.exchange](https://perp.exchange/)      | xdai                              | CoinAlpha  | <span style="color:red; font-size:25px">⬤</span> |
-| [Terra](/protocols/terra/)                       | [terra.money](https://www.terra.money/)      | [terra](/protocols/terra)         | CoinAlpha  | <span style="color:green; font-size:25px">⬤</span> |
+| [Perpetual Finance](/exchanges/perp-fi/)         | [perp.exchange](https://perp.exchange/)      | xdai                              | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
+| [Terra](/protocols/terra/)                       | [terra.money](https://www.terra.money/)      | [terra](/protocols/terra)         | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Uniswap](/exchanges/uniswap/)                   | [uniswap.org](https://uniswap.org/)          | [ethereum](/protocols/ethereum)   | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 | [Uniswap v3](/exchanges/uniswap-v3)              | [uniswap.org](https://uniswap.org/)          | [ethereum](/protocols/ethereum)   | CoinAlpha  | <span style="color:yellow; font-size:25px">⬤</span> |
 
