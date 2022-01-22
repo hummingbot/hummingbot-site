@@ -1,21 +1,20 @@
-# Pull Request Proposals (PRP)
-
 ## Summary
 
 HBOT token holders have the right to vote and approve pull requests, or proposed code changes to the official Hummingbot code repository, via **Pull Request Proposals (PRP)**. 
 
 All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on the Hummingbot Snapshot space related to it.
 
-## Proposal Voting Requirements
+## Voting requirements
 
-| Proposal Type                | Pull Request              |
-| ---------------------------- | ----------------------  - |
+| Proposal Type                | Pull Request Proposal     |
+| ---------------------------- | ------------------------- |
+| Snapshot                     | https://snapshot.org/#/hbot-prp.eth |
 | Min HBOT Balance to create   | 1                         |
 | Quorum Percentage            | 0.1% of HBOT total supply |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 7 days                    |
 
-## PRP lifecycle
+## Lifecycle
 
 ### 1. Pull request is created
 
@@ -84,7 +83,7 @@ The Foundation reserves the right to revert an approved pull request if major is
 
 If the PRP fails to meet the approval thresholds at the end of the Voting Period, it will be rejected. Afterwards, the Foundation will close the related pull request in the Hummingbot repository. However, the developer is free to create a new pull request and a new proposal at a subsequent date.
 
-## Development & Release Cycle
+## Development & release cycle
 
 <!-- @todo Create a new page about the release process and keep here only info about the PRP voting and approval. -->
 

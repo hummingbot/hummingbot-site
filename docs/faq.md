@@ -11,23 +11,35 @@ See below for answers to frequently asked questions about:
 
 Hummingbot is software that helps you build and run crypto trading bots, freely available at https://github.com/hummingbot/hummingbot under the open source Apache 2.0 license.
 
-**Hummingbot is open source client software, not a protocol**. With many connectors and strategies being added all the time, it’s a constantly evolving publicly available codebase that constantly sees open pull requests from contributors seeking to merge their changes into the master branch of Hummingbot codebase, which is released once a month and widely used by tens of thousands of individual and professional bot-runners globally.
+### Is Hummingbot a protocol or an exchange?
+
+No, Hummingbot is open source client software that you install on a local machine that interacts with exchanges and protocols. 
+
+With many connectors and strategies being added all the time, Hummingbot is a constantly evolving publicly available codebase with frequent external contributors seeking to merge their changes into the `master` branch, which is released once a month and widely used by tens of thousands of individual and professional bot-runners globally.
 
 ### How do people use Hummingbot?
 
-You can use Hummingbot to build any types of automated crypto trading bot, but the most common use cases are market making and arbitrage bots. Market making bots provide liquidity to a trading pair on an exchange, while arbitrage bots exploit price differences betweeen trading pairs on different exchanges.
+You can use Hummingbot to build any types of automated crypto trading bot, with the most common bot types being market making and arbitrage bots. Market making bots provide liquidity to a trading pair on an exchange, while arbitrage bots exploit price differences betweeen trading pairs on different exchanges.
 
 Typically, users install the Docker image version on AWS or another cloud provider. Afterwards, they can add their API key or private keys to it, which allows them to configure and run one of Hummingbot's pre-built strategies on many different exchanges. 
 
 Since Hummingbot is an open, modular codebase, many developers and professional firms fork the codebase and use it for their own purposes.
 
-### Why are you making Hummingbot available to the general public?
+### Why is Hummingbot open source?
+
+1. **Trust and transparency**: Market makers need to keep their API keys, private keys, and strategy configuration private and secure, so which is why Hummingbot is a local software client, not a web-based platform. In addition, Hummingbot's open source codebase enables anyone to inspect and audit the code.
+
+2. **Community maintenance**: Hummingbot's value proposition is that it connects to many different centralized and decentralized exchanges, along with pre-built strategy templates that enable users to run many different types of trading strategies. In order to scale the number of connectors and strategies, Hummingbot relies upon its open source community.
+
+3. **Democratizing HFT**: From the beginning, our mission has been to democratize high-frequency trading with open source software.
+
+### Why did you make Hummingbot available to the general public?
 
 As we wrote in the original [Hummingbot whitepaper](https://hummingbot.io/hummingbot.pdf), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
 
 Later, we pioneered the concept of **decentralized market making** by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform: [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
 
-This has allowed CoinAlpha to spin off Hummingbot into its own open source foundation, which is dedicated to keeping Hummingbot open source and maintained by its community.
+This has allowed CoinAlpha to spin off Hummingbot into a not-for-profit foundation, which is dedicated to keeping Hummingbot open source.
 
 ### What is market making?
 
@@ -35,11 +47,7 @@ Market making is the act of simultaneously creating buy and sell orders for an a
 
 Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
 
-In addition, the prohibitively high payment demanded by pro-market makers, coupled with a lack of transparency and industry standards, creates perverse incentives for certain bad players to act maliciously via wash trading and market manipulation. For more discussion on the liquidity problem, please check out [this blog post](https://www.hummingbot.io/blog/2019-01-thin-crust-of-liquidity/).
-
-### Why are you making Hummingbot open source?
-
-**Trust and Transparency**. Market makers need to keep their API keys, private keys, and strategy configuration private and secure, so which is why Hummingbot is a local software client, not a web-based platform. In addition, Hummingbot's open source codebase enables anyone to inspect and audit the code.
+See [How does market making work?](/news/market-making/) for more information.
 
 ### How does Hummingbot store my private keys and API keys?
 
@@ -54,20 +62,6 @@ Hummingbot is a free software, so you can download, install, and run it for free
 Transactions from Hummingbot are normal transactions conducted on exchanges; therefore when operating Hummingbot, you would be subject to each exchange’s fees (e.g. maker, taker, and withdrawal fees), as you would if you were trading on that exchange normally (i.e. without Hummingbot).
 
 There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](/exchanges/).
-
-### Besides market risk, what other risks does a market maker face?
-
-There are many moving parts when operating a market making a bot that all have to work together to properly function:
-
-- Hummingbot code
-- Exchange APIs
-- Ethereum blockchain and node
-- Network connectivity
-- Hummingbot host computer
-
-A fault in any component may result in bot errors, ranging from minor and inconsequential to major.
-
-It is essential for any market-making bot to regularly refresh its bid and ask offers on the market to adjust to changing market conditions. Suppose a market-making bot is disconnected from the exchange for an extended period of time. In that case, the bid/ask offers it previously made would be left on the market and subject to price fluctuations of the market. Those orders may be filled at a loss as market prices move, while the market maker is offline. Therefore, any market maker needs to make sure technical infrastructure is secure and reliable.
 
 ### How do I use Hummingbot on a AMM decentralized exchange like Uniswap?
 

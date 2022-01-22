@@ -33,3 +33,17 @@ However, it is still possible to improve the probability of generating profits i
 
 Market making in volatile or trending markets is more advanced and risky for new traders. It's recommended that a trader looking to market make in this kind of environment to get mentally familiar with it (e.g. via paper trading) before committing meaningful capital to the strategy.
 
+## Other Risks
+
+There are many moving parts when operating a market making a bot that all have to work together to properly function:
+
+- Hummingbot code
+- Exchange API connectivity and rate limits
+- Internet connectivity
+- Availability of machine disk space and memory
+- Blockchain and node connectivity (for trading on DEXs)
+
+A fault in any component may result in bot errors, ranging from minor and inconsequential to major.
+
+It is essential for any market-making bot to regularly refresh its bid and ask offers on the market to adjust to changing market conditions. Suppose a market-making bot is disconnected from the exchange for an extended period of time. In that case, the bid/ask offers it previously made would be left on the market and subject to price fluctuations of the market. Those orders may be filled at a loss as market prices move, while the market maker is offline. Therefore, any market maker needs to make sure technical infrastructure is secure and reliable.
+
