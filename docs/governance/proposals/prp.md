@@ -19,35 +19,31 @@ All pull requests will only be merged into `development` and included in a subse
 
 ### 1. Pull request is created
 
-Anyone can submit a new [pull request](https://github.com/hummingbot/hummingbot/pulls) in the Hummingbot repository targeting the `development` branch.
+Anyone can submit a new [pull request](https://github.com/hummingbot/hummingbot/pulls) in the Hummingbot repository.
 
-Specifically, the pull request must:  
+For a pull request to be included in a PRP, it must satisy the following requirements:
 
-* Target the `development` branch with no merge conflicts;
-* Contain a clear description of what what **Pull Request** does and why it is needed;
-* Enable **Allow edits by maintainers**;
-* Contain unit tests and and they all pass (connectors only);
+1. Target the `development` branch with no merge conflicts;
+2. Contain a clear description of what what **Pull Request** does and why it is needed;
+3. Enable **Allow edits by maintainers**;
+4. Contain unit tests and and they all pass (connectors only);
+
+If the pull request included in a PRP does not meet the requirements described above, the PRP will be removed by Foundation staff.
 
 For more information, see [Contribution Guidelines](/developers/contributions/#5-create-a-pull-request).
 
 ### 2. Proposal is created
 
-With the pull request created and the minimum requirements listed above are met, the next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot-prp.eth. **This space is dedicated for Pull Request Proposals (PRP).**
+The next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot-prp.eth. **This space is dedicated for Pull Request Proposals (PRP).**
 
 The PRP should contain the following information:
 
 * **Title**: Pull request number and title
 * **Description**: Description summary and a link to the pull request in Github
 
-!!! note
-    In the near future, any ETH address with at least 1 HBOT can create a Pull Request Proposal related to a Pull Request. In order to test and improve the process of voting and merging the approved PRP, only Hummingbot Foundation members will be able to create new PRPs until the Hummingbot 1.0 release, scheduled for late January.
-
-If the pull request or PRP do not meet the requirements described above, the PRP may be deleted by Foundation staff.
-
 Here is an example of a PRP in Snapshot:
 
-![](/assets/img/example prp.png)
-*PRP on example*
+[![PRP on example](/assets/img/example prp.png)](/assets/img/example prp.png)
 
 ### 3. Pending review
 
@@ -96,8 +92,7 @@ After a PRP is approved the Pull Request linked to it will go through the follow
 
 ### Branches
 
-![](/assets/img/pull request proposal workflow.png)
-*PRP code merge workflow*
+[![PRP code merge workflow](/assets/img/pull request proposal workflow.png)](/assets/img/pull request proposal workflow.png)
 
 The Hummingbot code repository has three main branches related to the development cycle of each monthly release:
 
@@ -117,8 +112,7 @@ All pull requests aiming to be included on the `master` branch must be targeted 
 
 Hummingbot ships a new release approximately every month. Each release is built, tested and released over a two-month cycle that overlaps with the next release.
 
-![](/assets/img/pull request proposal period.png)
-*Release schedule*
+[![Release schedule](/assets/img/pull request proposal period.png)](/assets/img/pull request proposal period.png)
 
 #### Month 1: Review and approve
 
