@@ -1,7 +1,7 @@
 !!! note
-    Originally buried in the FAQ, we converted this answer into a separate article to help users gain more intuition about the theory of market making. Note that this is for educational purposes only and is not financial or investment advice.
+    Originally buried in the FAQ, we converted this answer into a separate article to help users gain more intuition about the theory of market making, as well as the risks entailed. Note that this is for educational purposes only and is not financial or investment advice.
 
-#### Ideal case
+## Ideal case
 
 Market making strategies work best when you have a relatively calm market, but with sufficient trading activity. What that means for pure market makers is that he would be able to get both of his bid and ask offers traded regularly; the price of his inventory doesn't change by a lot, so there's no risk of him ending up on the wrong side a trend. Thus he would be able to repeatedly capture small profits via the bid/ask spread over time.
 
@@ -11,7 +11,7 @@ In the figure above, the period between 25 Feb and 12 Mar would be an example of
 
 In this scenario, the market maker needs to be sure that the trading spread he sets is larger than the trading fees given to the exchange.
 
-#### Low trading activity
+## Risk: Low trading activity
 
 Markets with low trading activity higher risk for pure market-making strategies. Here's an example:
 
@@ -21,7 +21,7 @@ There's a risk in any market with low trading activity. The market maker may nee
 
 Other strategies may be more suitable from a risk perspective in this type of market, e.g. [cross-exchange market making](/strategies/cross-exchange-market-making).
 
-#### Market/inventory risk due to low volatile or trending markets
+## Risk: Volatile and trending markets
 
 Another common risk that market makers need to be aware of is trending markets. Here's one example:
 

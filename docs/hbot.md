@@ -8,9 +8,11 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 
 ## Purpose
 
-[Connector maintenance agreements](https://hummingbot.org/maintenance/#connector-maintenance-agreements) with exchange partners sustain the day-to-day operations of the Hummingbot Foundation. The Foundation is cashflow positive from inception and expects that this margin will increase as more individuals and professionals use Hummingbot.
+[Connector maintenance agreements](https://hummingbot.org/maintenance/#connector-maintenance-agreements) with exchange partners sustain the day-to-day operations of the Hummingbot Foundation. The Foundation is cashflow positive from inception and expects that this margin will increase as more individuals and professionals use Hummingbot. Any excess proceeds are held in the Foundation community treasury. 
 
-Therefore, the Foundation can reserve HBOT for purely for community governance and does not intend on selling the token or issuing more tokens in the future. 100% of the HBOT token supply is distributed to past stakeholders, future contributors, developers, and users.
+Therefore, the sole use case of the HBOT token is for community governance. HBOT tokens empower holders to approve any changes to the Hummingbot codebase, re-elect Foundation Board of Directors, and allocate future HBOT distributions and the Foundation community treasury.
+
+The Foundation does not plan to sell or issue HBOT tokens in the future. **100% of the HBOT token supply will be distributed to past stakeholders, future contributors, developers, and users at no cost.**
 
 ## Reputable Information Sources
 
@@ -28,7 +30,7 @@ The Hummingbot codebase originated as the proprietary software stack for a quant
 
 In the [HBOT announcement](/news/hbot), we announced that the following allocation schedule in order to promote continued engagement and governance participation from both past and future stewards of Hummingbot:
 
-| Type | % of Total Supply | Token Distribution | Lockup | Linear Unlock |
+| Type | % of Total Supply | Tokens | Initial Lockup | Linear Unlock |
 |------|------------------:|-------------------:|--------|---------------|
 | CoinAlpha Investors | 37.9% | 379,233,556 | 12 months | 12 months |
 | CoinAlpha Team | 21.1% | 210,766,444 | 12 months | 36 months |
@@ -36,11 +38,14 @@ In the [HBOT announcement](/news/hbot), we announced that the following allocati
 | Community - Retroactive | 4.0% | 40,000,000 | none | none |
 | Community - Future | 36.0% | 36,000,000 | none | none |
 
+*[Initial Lockup]: Initial period during which tokens are locked in a smart contract
+*[Linear Unlock]: After lockup, tokens unlock linearly over this timeframe
+
 ## Future Community Distributions
 
 The remaining 36 million HBOT tokens outstanding (36% of the total HBOT supply) will be distributed during the first 4 years after Foundation inception. 
 
-| Year  | % of Total Supply | Token Distribution |
+| Year  | % of Total Supply | Tokens |
 |-------|-------:|-----------------:|
 | 2022  |   9.0% |     90,000,000   |
 | 2023  |   9.0% |     90,000,000   |

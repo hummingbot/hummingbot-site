@@ -25,7 +25,9 @@ Since Hummingbot is an open, modular codebase, many developers and professional 
 
 As we wrote in the original [Hummingbot whitepaper](https://hummingbot.io/hummingbot.pdf), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
 
-Later, we pioneered the concept of community-powered, decentralized market making by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform: [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
+Later, we pioneered the concept of **decentralized market making** by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform: [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
+
+This has allowed CoinAlpha to spin off Hummingbot into its own open source foundation, which is dedicated to keeping Hummingbot open source and maintained by its community.
 
 ### What is market making?
 
@@ -69,7 +71,7 @@ It is essential for any market-making bot to regularly refresh its bid and ask o
 
 ### How do I use Hummingbot on a AMM decentralized exchange like Uniswap?
 
-On an Automatic Market Maker (AMM) decentralized exchange, users deposit tokens into a pool to provide liquidity and earn LP tokens. Since AMM pools depend on arbitrage to keep prices in line with other venues, Hummingbot's [`amm-arb`](/strategies/amm-arb) strategy allows users to run an arbitrage bot that may earn profits from exploiting price differences between the AMM and other exchanges.
+On an Automatic Market Maker (AMM) decentralized exchange, users deposit tokens into a pool to provide liquidity and earn LP tokens. Since AMM pools depend on arbitrage to keep prices in line with other venues, Hummingbot's [`amm-arb`](/strategies/amm-arbitrage) strategy allows users to run an arbitrage bot that may earn profits from exploiting price differences between the AMM and other exchanges.
 
 ## Hummingbot Foundation
 
@@ -146,7 +148,7 @@ To prevent HBOT token holders from being scammed by fraudulent versions of the t
 
 The Foundation's aim is to distribute HBOT tokens to Hummingbot users, who primarily use the software to run market making and arbitrage bots across centralized and decentralized exchanges. 
 
-Therefore, we welcome proposals from exchanges that can help the Foundation distribute HBOT tokens to Hummingbot users based on their level of trading activity using the exchange's connector. See Liquidity Distributions in [Hummingbot Governance Proposals](/governance/hgp) for more information.
+Therefore, we welcome proposals from exchanges that can help the Foundation distribute HBOT tokens to Hummingbot users based on their level of trading activity using the exchange's connector. See Liquidity Distributions in [Hummingbot Governance Proposals](/governance/proposals/hgp) for more information.
 
 ### I was an early user of Hummingbot. Am I eligible to claim HBOT tokens?
 
@@ -156,8 +158,9 @@ Other than those listed in the [HBOT announcement](https://hummingbot.io/en/blog
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 
-If you accidentally entered a Binance deposit address to claim your tokens, here is how you may be able to retrieve those tokens:
+If you accidentally entered a Binance.com deposit address to claim your tokens, here is how you may be able to retrieve those tokens:
 
+* Log into Binance.com
 * In the Wallet section -> Deposit Crypto, there is a "deposit hasn't arrived?" section
 * Select "Search" and "Deposited an Unlisted coin"
 * Select "Submit Appeal" and enter the transaction details
