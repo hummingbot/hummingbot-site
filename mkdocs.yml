@@ -49,10 +49,10 @@ plugins:
   - search
   - tags
   - git-revision-date
-  # - social:
-  #     cards_color:
-  #       fill: '#0FF1CE'
-  #       text: '#FFFFFF'
+  - social:
+      cards_color:
+        fill: rgb(40, 47, 56)
+        text: white
 
 extra:
   homepage: https://hummingbot.org
