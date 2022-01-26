@@ -29,10 +29,10 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 
 ## ✅ Govern with HBOT
 
-- [Governance](/governance): Decide how the Hummingbot codebase evolves
+- [Governance](/governance): All things related to Foundation governance
 - [Whitepaper](/governance/whitepaper): Detailed description of how the governance system works
-- [Proposals](/governance/proposals): Types of proposals
-- [Epochs](/governance/epochs): 6-month cycles with fixed HBOT distribution targets
+- [Proposals](/governance/proposals): Different types of proposals
+- [Epochs](/governance/epochs): Fixed HBOT distribution cycles
 
 ## 💪 Contribute to Hummingbot
 

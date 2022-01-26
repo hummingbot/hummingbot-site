@@ -146,7 +146,7 @@ Please see [Reputable Sources](/hbot/#reputable-information-sources) for informa
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed 5-month [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed[Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
 See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
 
@@ -154,7 +154,7 @@ See [Hummingbot Governance Proposals](/governance/proposals) for more informatio
 
 The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively. 
 
-Other than those listed in the [HBOT announcement](https://hummingbot.io/en/blog/introducing-hbot), there are no other eligible HBOT recipients.
+Other than those listed in the [HBOT announcement](/news/hbot), there are no other eligible HBOT recipients.
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 
