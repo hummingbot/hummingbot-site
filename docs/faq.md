@@ -104,6 +104,12 @@ The Foundation also employs staff who administer the governance system, respond 
 - Package monthly releases into Docker containers for various environments
 - Maintain and update documentation
 
+### Why is the Hummingbot Foundation domiciled in the Cayman Islands?
+
+For the past 20 years, the Cayman Islands has been one of the preferred global jurisdictions for the incorporation of new securitizations, special purpose vehicles, and other new organizations. In 2017, the Cayman Islands introduced the Foundation Company structure, a flexible structure that allows a limited liability legal entity to operate similar to a civil law foundation, steered by a decentralized set of participants. The Hummingbot Foundation uses this structure.
+
+See [What is a Cayman Foundation Company?](https://www.zedra.com/news-events/news/what-is-a-cayman-foundation-company/) from Zedra, our corporate services provider in the Cayman Islands.
+
 ### How do I apply for a job with the Hummingbot Foundation?
 
 See [this page](https://angel.co/company/hummingbot/jobs), and apply for the ones marked **Hummingbot Foundation**. Alternatively, post a message with your CV to one of the Foundation staff on Discord.
@@ -132,17 +138,17 @@ No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#
 
 ### How do I know that I'm using the correct HBOT token? 
 
-To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, below is a compilation of verified HBOT-related pages on reputable sources. This does not constitute investment advice or a recommendation for any platform or market listed below.
-
-- Etherscan: [https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb)
-- CoinGecko: [https://www.coingecko.com/en/coins/hummingbot](https://www.coingecko.com/en/coins/hummingbot)
-- CoinMarketCap: [https://coinmarketcap.com/currencies/hummingbot/](https://coinmarketcap.com/currencies/hummingbot/)
+To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from [Reputable Sources](/hbot/#reputable-information-sources). This does not constitute investment advice or a recommendation for any platform or market listed.
 
 ### Does the Foundation plan to list HBOT on (any crypto exchange)?
 
-The Foundation's aim is to distribute HBOT tokens to Hummingbot users, who primarily use the software to run market making and arbitrage bots across centralized and decentralized exchanges. 
+Please see [Reputable Sources](/hbot/#reputable-information-sources) for information about venues where HBOT may be traded.
 
-Therefore, we welcome proposals from exchanges that can help the Foundation distribute HBOT tokens to Hummingbot users based on their level of trading activity using the exchange's connector. See Liquidity Distributions in [Hummingbot Governance Proposals](/governance/proposals/hgp) for more information.
+### How does the Foundation plan to distribute remaining HBOT tokens?
+
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed 5-month [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+
+See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
 
 ### I was an early user of Hummingbot. Am I eligible to claim HBOT tokens?
 

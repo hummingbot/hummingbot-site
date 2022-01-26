@@ -1,41 +1,29 @@
+The Hummingbot Foundation is an experiment in creating a self-sustainable open source ecosystem. [Distribution](/hbot/#community-distributions) of the remaining HBOT community reserves (36 million tokens or 36% of total HBOT supply) to the Hummingbot user base over the next 4 years is an important aspect of preserving Foundation self-sustainability. Therefore, the Foundation plans to iterate and improve on this distribution process via **Epochs**. 
 
-We separate the HBOT distribution process into epochs. These are basically long sprints, after which we will conduct an open retrospective and try to improve the process in the next epoch.
+Each Epoch is a fixed, 5-month period with specific HBOT distribution-related goals across various categories. Epochs are basically long agile sprints, after which the Foundation will conduct an open retrospective and strengthen internal processes for the next Epoch.
 
 ## Epoch 1
 
-- Goal: distribute 30m HBOT tokens
-- Dates: Feb 1, 2022 to June 30, 2022
+- **Start**: Feb 1, 2022
+- **End**: June 30, 2022
+- **Goal**: Distribute 30 million HBOT tokens
 
-### Distribution Targets
+| Category                                                                      | Total HBOT Available      | Target Number of Grants |
+| ------------------------------------------------------------------------------| ------------------------- | ----------------------- |
+| [Liquidity Distributions](/governance/proposals/hgp/#liquidity-distributions-ld) | 15,000,000                | 10 platforms             |
+| [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg)               | 10,000,000                | 50 dev grants           |
+| [Initiative Budget](/governance/proposals/hgp/#initiative-budget-ib)     | 5,000,000                 | 5 initiatives           |
 
-- Liquidity Distributions: 15 million tokens
-- Dev Grants: 10 million tokens
-- Community Initiatives: 5 million tokens
+### HBOT Guidance
 
-### Guidance for requesting HBOT rewards
+In requesting HBOT grants for Hummingbot Improvement Proposals (HIPs) related to a community-approved [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg), developers may need guidance in determining how much HBOT to request for unit of time/effort spent on a given task.
 
-Devs submitting Improvement Proposals should include the following fields in each IP
-
-- Estimated number of dev days
-- Number of HBOT tokens requested
-- Implied USD daily rate based on current HBOT prices
-
-#### Example: bug fix
-
-- 2 days
-- 10k HBOT
-- $200/day at @$0.04 HBOT price
-
-#### Example: new connector
-
-- 15 days
-- 100k HBOT
-- $266/day at $0.04 HBOT price
-
-Projects that require more than one month of work should first be submitted as GPs, then broken up into individual smaller tasks submitted as IPs
+For Epoch 1, the Hummingbot Foundation believes the **20,000 HBOT** for one day of work is a reasonable amount for an experienced developer to request for a HIP that falls under an approved Dev Grant Budget. However, developers are free to request more or less than this amount in their proposal.
 
 ## Epoch 2
 
-- Goal: distribute 60m HBOT tokens
-- July 1, 2022 to Dec 31, 2022
+- **Start**: August 1, 2022
+- **End**: December 31, 2022
+- **Goal**: Distribute 60 million HBOT tokens
 
+We plan to conduct an open retrospective and strengthen Foundation processes after Epoch 1 before finalizing goals for Epoch 2.

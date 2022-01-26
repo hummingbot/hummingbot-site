@@ -8,11 +8,11 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 
 ## Purpose
 
-[Connector maintenance agreements](https://hummingbot.org/maintenance/#connector-maintenance-agreements) with exchange partners sustain the day-to-day operations of the Hummingbot Foundation. The Foundation is cashflow positive from inception and expects that this margin will increase as more individuals and professionals use Hummingbot. Any excess proceeds are held in the Foundation community treasury. 
+From [14+ agreements](/maintenance/agreements/) with exchanges that rebate fees based on user trading activity along their respective connectors, **the Foundation is cashflow positive from inception** and expects that this margin will increase as more individuals and professionals use Hummingbot. Any excess proceeds are held in the Foundation treasury. 
 
-Therefore, the sole use case of the HBOT token is for community governance. HBOT tokens empower holders to approve any changes to the Hummingbot codebase, re-elect Foundation Board of Directors, and allocate future HBOT distributions and the Foundation community treasury.
+**The sole use case of the HBOT token is community governance.** HBOT tokens empower holders to govern many aspects of the Hummingbot Foundation, including approving all changes to the Hummingbot codebase, electing Board of Directors, and allocating HBOT community distributions and other assets in the Foundation treasury.
 
-The Foundation does not plan to sell or issue HBOT tokens in the future. **100% of the HBOT token supply will be distributed to past stakeholders, future contributors, developers, and users at no cost.**
+**The Foundation will never sell or issue more HBOT tokens.** 100% of the HBOT token supply will be distributed to past stakeholders, future contributors, developers, and users.
 
 ## Reputable Information Sources
 
@@ -22,28 +22,11 @@ To prevent HBOT token holders from being scammed by fraudulent versions of the t
 - **CoinGecko**: [https://www.coingecko.com/en/coins/hummingbot](https://www.coingecko.com/en/coins/hummingbot)
 - **CoinMarketCap**: [https://coinmarketcap.com/currencies/hummingbot/](https://coinmarketcap.com/currencies/hummingbot/)
 
-## HBOT Allocation
+## Community Distributions
 
-The goal of the HBOT distribution plan is to disseminate HBOT tokens into the hands of stewards who have the long-term goal of expanding and maintaining the Hummingbot project.
+At Foundation inception, 4 million (4% of total HBOT supply) was distributed to 62 historical Github contributors to the Hummingbot codebase and 2,522 historical users of the Hummingbot Miner platform. See the **Claim Your Tokens** section below if you haven't yet claimed yours.
 
-The Hummingbot codebase originated as the proprietary software stack for a quantitative hedge fund operated by CoinAlpha from 2017-2018. Afterwards, CoinAlpha investors supported the decision to open source this intellectual property in order to enable community participation. Since April 2019, the CoinAlpha team has worked alongside external developers to build and maintain the codebase, resulting in 12,625 commits from 112 unique code contributors prior to the inception of the Foundation.
-
-In the [HBOT announcement](/news/hbot), we announced that the following allocation schedule in order to promote continued engagement and governance participation from both past and future stewards of Hummingbot:
-
-| Type | % of Total Supply | Tokens | Initial Lockup | Linear Unlock |
-|------|------------------:|-------------------:|--------|---------------|
-| CoinAlpha Investors | 37.9% | 379,233,556 | 12 months | 12 months |
-| CoinAlpha Team | 21.1% | 210,766,444 | 12 months | 36 months |
-| Foundation Team | 1.0% | 10,000,000 | 12 months | 36 months |
-| Community - Retroactive | 4.0% | 40,000,000 | none | none |
-| Community - Future | 36.0% | 36,000,000 | none | none |
-
-*[Initial Lockup]: Initial period during which tokens are locked in a smart contract
-*[Linear Unlock]: After lockup, tokens unlock linearly over this timeframe
-
-## Future Community Distributions
-
-The remaining 36 million HBOT tokens outstanding (36% of the total HBOT supply) will be distributed during the first 4 years after Foundation inception. 
+The remaining 36 million HBOT tokens outstanding (36% of total HBOT supply) will be distributed during the first 4 years after Foundation inception.
 
 | Year  | % of Total Supply | Tokens |
 |-------|-------:|-----------------:|
@@ -54,11 +37,11 @@ The remaining 36 million HBOT tokens outstanding (36% of the total HBOT supply) 
 
 The Foundation aims to distribute these tokens to:
 
-* Users who utilize Hummingbot software to provide liquidity to Hummingbot-connected [exchanges](/connectors), both centralized and decentralized;
+* Users who utilize Hummingbot software to provide liquidity to Hummingbot-connected [exchanges](/exchanges) and decentralized market making platforms;
 * Developers who improve and extend the Hummingbot codebase;
 * Community members who create content, update documentation, and perform other work that benefit the Hummingbot ecosystem.
 
-See [Epochs](/governance/epochs) for more information on how HBOT is distributed.
+See [Epochs](/governance/epochs) for more information on how HBOT will be distributed.
 
 ## Claim Your Tokens
 
@@ -91,9 +74,7 @@ Users who have earned at least USD 1 equivalent in liquidity rewards on Hummingb
 
 ## Voting Your Tokens
 
-All proposals can be found on the Hummingbot Foundation Snapshot: https://snapshot.org/#/hbot.eth. 
-
-Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. 
+See [Governance](/governance) for information about how to vote using your HBOT token balance (no gas required!) and participate in deciding the future of Hummingbot.
 
 ## Delegation
 

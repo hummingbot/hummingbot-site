@@ -1,8 +1,8 @@
 HBOT holders can vote on three types of proposals:
 
-* [**Pull Request Proposal (PRP)**](/prp): a proposal linked to an open pull request in the Hummingbot code repository. The community votes if the linked Pull Request should be added to the main code-base; 
-* [**Hummingbot Improvement Proposal (HIP)**](/hip): a proposal of an improvement to a component of the Hummingbot codebase.
-* [**Hummingbot Governance Proposal (HGP)**](/hgp): a proposal for modification to the Foundation governance system, or a proposed distribution of HBOT tokens from the treasury for a community activity such as a grant.
+* [**Pull Request Proposal (PRP)**](prp): a proposal linked to an open pull request in the Hummingbot code repository. The community votes if the linked Pull Request should be added to the main code-base; 
+* [**Hummingbot Improvement Proposal (HIP)**](hip): a proposal of an improvement to a component of the Hummingbot codebase.
+* [**Hummingbot Governance Proposal (HGP)**](hgp): a proposal for modification to the Foundation governance system, or a proposed distribution of HBOT tokens from the treasury for a community activity such as a grant.
 
 Each proposal type has different Governance Parameters:
 

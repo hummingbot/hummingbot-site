@@ -1,85 +1,75 @@
 ## Summary
 
-**Improvement Proposals (IP)** encompass all types of proposals that are not covered by **Governance Proposals (GP)** or **Pull Request Proposals (PRP).**
-
-These proposals are a tool for the Hummingbot Community to suggest improvements for the Hummingbot ecosystem.
+Hummingbot Improvement Proposals (HIP) allow HBOT token holders to propose fixes to the Hummingbot codebase, request HBOT dev grants associated with an approved Dev Grant Budget, and elect community members. Generally, HIPs should be used for proposals that are not covered by [HGPs](../hgp) or [PRPs](../prp).
 
 ## Voting requirements
 
-Since this type of proposal has the biggest impact on Foundation and may allocates a significant portion of the HBOT treasury,  it has the highest requirements for approval.
-
-| Proposal Type                | Hummingbot Governance Proposal |
+| Proposal Type                | Hummingbot Improvement Proposal |
 | ---------------------------- | ------------------------- |
-| Snapshot                     | https://snapshot.org/#/hbot.eth |
+| Snapshot                     | https://snapshot.org/#/hbot-ip.eth |
 | Min HBOT Balance to create   | 10,000                    |
-| Quorum Percentage            | 3% of HBOT total supply   |
+| Quorum Percentage            | 1% of HBOT total supply   |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 14 days                   |
 
-## Before creating a proposal
+## Before creating a HIP
 
-**Improvement Proposals (IP)** must have clear objectives and actions needed to be carried out by the Hummingbot Foundation and/or the Hummingbot Community.
+!!! note "Improvement Proposals vs Governance Proposals"
+    Improvement Proposals (HIP) are intended for smaller, specific chunks of work that a single developer can perform. Unlike governance proposals (HGP), developers can request HBOT in an HIP for specific work that they individually perform, as long as it is linked to an approved Dev Grant Budget.
 
-The community should avoid create **IPs** that do not have a defined objective, and a clear idea of how that objective should be achieved.
+It is a good practice to discuss proposals with the community before opening it for voting. Proponents should create a thread in [Commonwealth](https://commonwealth.im/hummingbot-foundation) and share it in the **#governance-chat** channel in [Discord](https://discord.hummingbot.io) to encourage ample discussion.
 
-- If the **objective and execution of a proposal isn’t clear yet**, we suggest starting a discussion thread on the [Hummingbot Commonwealth Forum]([https://commonwealth.im/hummingbot-foundation/](https://commonwealth.im/hummingbot-foundation/)) to discuss with the community how to implement your idea.
-- If you are looking to **request an improvement on Hummingbot codebase**, we suggest creating a [Github Issue]([https://github.com/hummingbot/hummingbot/issues](https://github.com/hummingbot/hummingbot/issues)).
+Projects that require **more than one month** of estimated development work should be submitted as HGPs, then which can then be broken up into individual smaller tasks that enable participation by multiple community developers.
 
-## Improvement Proposal Format
+## Format
 
-There is no specific format related to the creation of **IPs,** but each of them must contain at least the following sections, to allow the community have a clear idea what the proposal is about, and how its objective would be achieved.
+To be considered valid, a HIP must contain the following fields:
 
-- **Objective:** A summary of the final goal of the proposal
-- **Actions:** A bullet-point list of what actions will be needed to achieve the proposal objetive
-- **Description:** A more detailed description of the proposal, including the rationale of the proposal.
+- **Title**: Title should start with `HIP` followed by its count along with the Category code
+- **Category**: Category name
+- **Summary**: A succinct summary of the proposal
+- **Linked HGP:**  Associated Dev Grant Budget or Community Initiative HGP, if any
+- **Description**: Detailed explanation of the improvement requested or work proposed
 
-## Special Cases
+The Hummingbot Foundation reserves the right to remove or nullify HIPs that do not have sufficient information.
 
-Altough almost any kind of improvement (excluding those coverede by the other two types of proposal), some **Improvement Proposals (IP)** must follow some special rules for it’s creation, depeding on what process is attached to it.
+## Categories
 
-### 1. Dev Grants requests
+While HIPs are not restricted to certain categories, we expect that most will fall under the ones below:
 
-As established on the **Governace Proposals (GP)**, [Dev Grants](link) follows a 3 step process:
+### Fix Requests (FR)
 
-1. A **Governance Proposal (GP)** defines the topic and the budget allocated to the Grant
-2. Community Developers creates an **Improvement Proposals (IP)** requesting a share of the that Grant
-3. If the **IP** is approved by community vote, the developer proceeds to create a **Pull Request Proposal (PRP)** related to it. Once the **PRP** is approved, the developer will receive his grant.
+Use this category for proposed bug fixes and enhancements to the Hummingbot codebase. We recommend first creating a detailed [Github Issue](https://github.com/hummingbot/hummingbot/issues) and referencing specific code changes when possible.
 
-**Improvement Proposals (IP)** requesting the participation on Dev Grants must be written using the specific structure below to be considered a valid request:
+After an Fix Request HIP has been approved, the Foundation will either assign the work to the Maintainer of the affected Hummingbot component or another available Maintainer, if the component has no assigned Maintainer. In the future, the Foundation plans to create Bounties that enable community developers to earn HBOT tokens by working on approved Fix Requests.
 
-- **Title:** The proposal must contain **GRANT REQUEST** written on the beginning of the title.;
-- **Dev Grant Proposal:**  A link to the approved **Governance Proposal (GP)** that allocates the budget;
-- **Github handle:** The developer Github name, where the **PRP** will be created from;
-- **Ethereum wallet:** The address the developer want to receive the requested grant after the respective **PRP** is approved;
-- **Objective:** A summary of what will be built with the funds requested from the grant;
-- **Amount Requested:** How much of the approved Dev Grant budget the developer wants to receive after delivering his Proposal.
-- **Details:** All details related to the proposal. We suggest to add as much information as possible, from the design of the prosal to how the proposed solution will be implemented. Proposals with better details allows the rest of the community to understand the proposal objective and do a better judgment of it.
+Improvement Request HIPs should only have *For*, *Against*, and *Abstain* voting options.
 
-The Hummingbot Foundation reserves the right to invalidate **Improvement Proposals (IP**) ****that do not follow the rules established above.
+### Dev Grant Requests (DG)
 
-Dev Grant Requests proposals must only have “For”, “Against” and “Abstains” voting options.
+As described in [HGP: Dev Grant Budgets](/governance/proposals/hgp/#dev-grant-budget-dg), developers can request Dev Grants for proposed contributions that fits specific Dev Grant Budgets that the Hummingbot community has allocated via HGPs. 
 
-### HBOT guidelines
+Proposals of this type should include the following additional fields:
 
-- Improvement Proposal - how much HBOT to ask for?
-    - Smaller: 10-50k
-        - Less than 1 week
-        - Example: Bug fix
-    - Larger: 50k-200k
-        - 1-4 weeks
-        - Example: Connector
-    - Projects larger than 1 month should first be submitted as GPs, then broken up into individual smaller tasks submitted as IPs
+- **Github Handle**: Developer's Github handle that will issue the pull request
+- **Ethereum Wallet**: Address to receive the HBOT grant after the submitted **PRP** is approved
+- **Total HBOT Requested**: Amount of Dev Grant budget the developer requested (see HBOT Guidelines below)
+- **Estimated Dev Days**: Estimated number of days of work required
+- **HBOT Per Day**: Total HBOT Requested / Estimated Dev Days
 
-### 2. Initiatives Elections
+These HIPs should only have *For*, *Against*, and *Abstain* voting options.
 
-Any Initiative approved through a **Governance Proposal (GP)** that requires community members to be assigned for specific roles should go through an **Improvement Proposal (IP)** voting.
+For guidance in setting how much HBOT to request, please see [Epoch 1: HBOT Guidance](/governance/epochs/#hbot-guidance).
 
-For this type of election, the following structure must be followed:
+### Initiative Elections (IE)
 
-- **Title:** The proposal must contain **ELECTION** on it’s title, along with a reference to the **Governance Proposal (GP)** releated to it.
-- **Role:** The description of what is the role that is being voted on;
-- **Type of election:** The definition if the election is for voting on individuals or teams;
-- **Registration post:** A link to the respective Hummingbot Foundation Forum post where the candidates registered to participate on the election;
-- **Available positions:** The number of available positions that will be filled by the election.
+Any Initiative Budget approved through a HGP that requires community members to be assigned for specific roles should be elected via this category of HIP.
 
-The voting options must contain the candidates (Individuals or Teams) participating on the election.
+Proposals of this type should include the following additional fields:
+
+- **Title**: Title should contain **ELECTION** and a reference to the linked HGP
+- **Role**: Description of role that to be voted on
+- **Election Type**: Number of roles and election procedure
+- **Registration Link**: Link to open forum thread where the candidates can submit applications
+
+The voting options should contain the candidates (either individuals or teams) participating in the election.

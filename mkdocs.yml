@@ -121,16 +121,19 @@ nav:
     - FAQ: faq.md
     - HBOT Token: hbot.md
     - Community: community.md
-    - Maintenance: maintenance.md
+    - Maintenance:
+      - Maintenance: maintenance/index.md
+      - Agreements: maintenance/agreements.md
+      - Monthly Reports: maintenance/reports.md
     - Governance:
-        - Governance: governance/index.md
-        - Whitepaper: governance/whitepaper.md
-        - Proposals: 
-          - Proposals: governance/proposals/index.md
-          - Pull Request Proposals (PRP): governance/proposals/prp.md
-          - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
-          - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
-        - Epochs: governance/epochs.md
+      - Governance: governance/index.md
+      - Whitepaper: governance/whitepaper.md
+      - Proposals: 
+        - Proposals: governance/proposals/index.md
+        - Pull Request Proposals (PRP): governance/proposals/prp.md
+        - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
+        - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
+      - Epochs: governance/epochs.md
     - News & Updates:
       - News & Updates: news/index.md
       - Introducing HBOT: news/hbot.md

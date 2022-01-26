@@ -1,8 +1,6 @@
 ## Summary
 
-HBOT token holders have the right to vote and approve pull requests, or proposed code changes to the official Hummingbot code repository, via **Pull Request Proposals (PRP)**. 
-
-All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on the Hummingbot Snapshot space related to it.
+HBOT token holders have the right to approve all pull requests, or proposed code changes, to the official Hummingbot code repository. All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on Snapshot related to it.
 
 ## Voting requirements
 

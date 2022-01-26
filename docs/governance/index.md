@@ -6,19 +6,21 @@ The purpose of the Hummingbot Foundation is to empower the HBOT token holders to
 * Electing the foundation's Board of Directors
 * Allocating grants and other expenditures of the community treasury
 
-For more information, see the [Hummingbot Foundation Governance whitepaper](/whitepaper).
+For more information, see the [Hummingbot Foundation Governance whitepaper](whitepaper).
 
 ## Proposals
 
 HBOT token holders can create and vote on various types of **Proposals** to steer the evolution of the project. Each proposal type may have different guidelines, HBOT balance requirements, and approval/quorum thresholds.
 
-See [Proposals](/proposals) for more information.
+See [Proposals](proposals) for more information.
 
 ## Epochs
 
-In order to continually iterate and improve the governance process, we divide the next Hummingbot's future into **Epochs**. Epochs are a series of 6-month periods that have target HBOT distribution budgets across each Proposal type. Basically, epochs are long "sprints" that enable the Foundation to conduct a retrospective afterwards and improve the process for the next epoch.
+In order to continually iterate and improve the governance process, we divide the next Hummingbot's future into **Epochs**. 
 
-See [Epochs](/epochs) for more information.
+Epochs are a series of 5-month periods that allocate target HBOT distribution budgets across various HGP categories. Basically, epochs are long "sprints" that enable the Foundation to conduct a retrospective afterwards and improve the process for the next epoch.
+
+See [Epochs](epochs) for more information.
 
 ## How to Participate
 
@@ -36,7 +38,7 @@ We use a number of platforms that enable community engagement in different ways.
 
 ### Commonwealth
 
-Use Commonwealth for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. Unlike Discord, so that they don't get lost in Discord. Commonwealth has a nice Snapshot integration, so this should be the easiest way to present an idea and mobilizing 💪🏻 votes for it!
+Use [Commonwealth](https://commonwealth.im/hummingbot-foundation) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. Unlike Discord, so that they don't get lost in Discord. Commonwealth has a nice Snapshot integration, so this should be the easiest way to present an idea and mobilizing 💪🏻 votes for it!
 
 * Exploratory research
 * Proposal feedback
@@ -46,16 +48,16 @@ Use Commonwealth for **long-form discussions** and to get feedback on explorator
 
 All **proposal voting** occur on [Snapshot](https://snapshot.org/), which features an off-chain, gas-less voting system that allows you to vote by signing messages using your HBOT token balance as of a certain block.
 
-Each proposal type has a different Snapshot:
+Each Proposal type has a different Snapshot space dedicated to it:
 
-* Pull Request Proposals (HGP): https://snapshot.org/#/hbot-prp.eth
-* Hummingbot Improvement Proposals (HGP): https://snapshot.org/#/hbot-ip.eth
+* Pull Request Proposals (PRP): https://snapshot.org/#/hbot-prp.eth
+* Hummingbot Improvement Proposals (HIP): https://snapshot.org/#/hbot-ip.eth
 * Hummingbot Governance Proposals (HGP): https://snapshot.org/#/hbot.eth
 
 ### Github
 
-For Pull Request Proposal feedback as well as any other code-related questions, please use the Hummingbot [Github](https://github.com/hummingbot/hummingbot).
+For feedback or questions relating to the Hummingbot codebase, please create an issue in [Github](https://github.com/hummingbot/hummingbot) an reference specific sections of the code where applicable.
 
 * Feedback on Pull Request Proposals
-* Feature requests for new connectors and strategies
+* Feature requests for new exchange connectors and strategies
 * Code comments and questions
