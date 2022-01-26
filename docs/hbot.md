@@ -6,6 +6,43 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 * **Symbol**: HBOT
 * **Total Supply**: 1,000,000,000
 
+## Purpose
+
+From [14+ agreements](/maintenance/agreements/) with exchanges that rebate fees based on user trading activity along their respective connectors, **the Foundation is cashflow positive from inception** and expects that this margin will increase as more individuals and professionals use Hummingbot. Any excess proceeds are held in the Foundation treasury. 
+
+**The sole use case of the HBOT token is community governance.** HBOT tokens empower holders to govern many aspects of the Hummingbot Foundation, including approving all changes to the Hummingbot codebase, electing Board of Directors, and allocating HBOT community distributions and other assets in the Foundation treasury.
+
+**The Foundation will never sell or issue more HBOT tokens.** 100% of the HBOT token supply will be distributed to past stakeholders, future contributors, developers, and users.
+
+## Reputable Information Sources
+
+To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, below is a compilation of HBOT-related pages on reputable sources. This does not constitute investment advice or a recommendation for any platform or market listed below.
+
+- **Etherscan**: [https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb)
+- **CoinGecko**: [https://www.coingecko.com/en/coins/hummingbot](https://www.coingecko.com/en/coins/hummingbot)
+- **CoinMarketCap**: [https://coinmarketcap.com/currencies/hummingbot/](https://coinmarketcap.com/currencies/hummingbot/)
+
+## Community Distributions
+
+At Foundation inception, 4 million (4% of total HBOT supply) was distributed to 62 historical Github contributors to the Hummingbot codebase and 2,522 historical users of the Hummingbot Miner platform. See the **Claim Your Tokens** section below if you haven't yet claimed yours.
+
+The remaining 36 million HBOT tokens outstanding (36% of total HBOT supply) will be distributed during the first 4 years after Foundation inception.
+
+| Year  | % of Total Supply | Tokens |
+|-------|-------:|-----------------:|
+| 2022  |   9.0% |     90,000,000   |
+| 2023  |   9.0% |     90,000,000   |
+| 2024  |   9.0% |     90,000,000   |
+| 2025  |   9.0% |     90,000,000   |
+
+The Foundation aims to distribute these tokens to:
+
+* Users who utilize Hummingbot software to provide liquidity to Hummingbot-connected [exchanges](/exchanges) and decentralized market making platforms;
+* Developers who improve and extend the Hummingbot codebase;
+* Community members who create content, update documentation, and perform other work that benefit the Hummingbot ecosystem.
+
+See [Epochs](/governance/epochs) for more information on how HBOT will be distributed.
+
 ## Claim Your Tokens
 
 A portion of HBOT tokens will be disseminated to eligible Hummingbot users who have contributed code to the Github repository and have earned rewards on the Hummingbot Miner platform. See [Introducing HBOT](/news/hbot) for more information.
@@ -14,8 +51,8 @@ To ensure that recipients securely receive their HBOT tokens, the Foundation wil
 
 The historical HBOT token distribution process will run during the following period:
 
-* Start date:	December 17, 2021
-* End date:	February 28, 2021 11.59pm UTC
+* **Start date**:	December 17, 2021
+* **End date**:	February 28, 2021 11.59pm UTC
 
 The official Claim Site where recipients can claim HBOT tokens is located at https://claim.hummingbot.org. Please make sure that your browser is loading this URL before using the site. 
 
@@ -37,9 +74,7 @@ Users who have earned at least USD 1 equivalent in liquidity rewards on Hummingb
 
 ## Voting Your Tokens
 
-All proposals can be found on the Hummingbot Foundation Snapshot: https://snapshot.org/#/hbot.eth. 
-
-Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. 
+See [Governance](/governance) for information about how to vote using your HBOT token balance (no gas required!) and participate in deciding the future of Hummingbot.
 
 ## Delegation
 

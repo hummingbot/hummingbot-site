@@ -118,17 +118,27 @@ nav:
   - Home:
     - Home: index.md
     - About: about.md
+    - FAQ: faq.md
+    - HBOT Token: hbot.md
     - Community: community.md
-    - Maintenance: maintenance.md
+    - Maintenance:
+      - Maintenance: maintenance/index.md
+      - Agreements: maintenance/agreements.md
+      - Monthly Reports: maintenance/reports.md
     - Governance:
-        - Governance: governance/index.md
-        - Whitepaper: governance/whitepaper.md
-        - HBOT: governance/hbot.md
-        - Pull Request Proposals: governance/prp.md
+      - Governance: governance/index.md
+      - Whitepaper: governance/whitepaper.md
+      - Proposals: 
+        - Proposals: governance/proposals/index.md
+        - Pull Request Proposals (PRP): governance/proposals/prp.md
+        - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
+        - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
+      - Epochs: governance/epochs.md
     - News & Updates:
       - News & Updates: news/index.md
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
+      - How does market making work?: news/market-making.md
   - Documentation:
     - Documentation: docs.md
     - Installation:
@@ -240,7 +250,6 @@ nav:
       - Ping Pong: strategy-configs/ping-pong.md
       - Rate Oracle: strategy-configs/rate-oracle.md
     - Troubleshooting: troubleshooting.md
-    - FAQ: faq.md
     - Glossary: glossary.md
   - Developers:
       - Developers: developers/index.md

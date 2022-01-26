@@ -3,7 +3,7 @@ hide:
 - toc
 ---
 
-# Community-owned software for building crypto trading bots
+# The open source ecosystem for crypto trading bots
 
 Welcome to the official website for the Hummingbot Foundation and documentation site for Hummingbot.
 
@@ -16,7 +16,9 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 ## 👨‍👩‍👧‍👧 About us
 
 - [About](/about): About Hummingbot and the Foundation
+- [FAQ](/faq): Answers to common questions
 - [News](/news): Recent news and updates
+- [HBOT](/hbot): How to claim, vote, and earn Hummingbot Governance Tokens (HBOT)
 - [Community](/community): Participate in the global Hummingbot ecosystem
 
 ## 📚 Read the docs
@@ -29,8 +31,8 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 
 - [Governance](/governance): Decide how the Hummingbot codebase evolves
 - [Whitepaper](/governance/whitepaper): Detailed description of how the governance system works
-- [HBOT](/governance/hbot): How to claim and vote your HBOT tokens
-- [PRP](/governance/prp): How to vote a proposal linked to an open pull request in the Hummingbot code repository
+- [Proposals](/governance/proposals): Types of proposals
+- [Epochs](/governance/epochs): 6-month cycles with fixed HBOT distribution targets
 
 ## 💪 Contribute to Hummingbot
 

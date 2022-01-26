@@ -1,24 +1,59 @@
-### What is Hummingbot?
 
-[Hummingbot](http://hummingbot.io) is open-source software that helps you build and run market-making bots. For more detailed information, please read the [Hummingbot whitepaper](https://www.hummingbot.io/hummingbot.pdf).
+See below for answers to frequently asked questions about:
 
-### Why are you making Hummingbot available to the general public rather than just running it in-house?
+* [Hummingbot software](#hummingbot-software)
+* [Hummingbot Foundation](#hummingbot-foundation)
+* [HBOT token](#hummingbot-software)
 
-We make money by administering [Liquidity Mining](https://support.hummingbot.io/hc/en-us) programs, which allow token projects to source liquidity from a decentralized network rather than from a single firm. Hummingbot is a free tool that anyone can use to participate in liquidity mining.
+## Hummingbot software
 
-### Why are you making Hummingbot open source?
+### What type of software is Hummingbot?
 
-**Trust and Transparency**. To use crypto trading bots, users must provide their private keys and exchange API keys. An open-source codebase enables anyone to inspect and audit the code.
+Hummingbot is software that helps you build and run crypto trading bots, freely available at https://github.com/hummingbot/hummingbot under the open source Apache 2.0 license.
 
-### How much cryptocurrency do I need to get started?
+### Is Hummingbot a protocol or an exchange?
 
-There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in our [spot connectors](/exchanges/) documentation.
+No, Hummingbot is open source client software that you install on a local machine that interacts with exchanges and protocols. 
 
-### Are my private keys and API keys secure?
+With many connectors and strategies being added all the time, Hummingbot is a constantly evolving publicly available codebase with frequent external contributors seeking to merge their changes into the `master` branch, which is released once a month and widely used by tens of thousands of individual and professional bot-runners globally.
+
+### How do people use Hummingbot?
+
+You can use Hummingbot to build any types of automated crypto trading bot, with the most common bot types being market making and arbitrage bots. Market making bots provide liquidity to a trading pair on an exchange, while arbitrage bots exploit price differences betweeen trading pairs on different exchanges.
+
+Typically, users install the Docker image version on AWS or another cloud provider. Afterwards, they can add their API key or private keys to it, which allows them to configure and run one of Hummingbot's pre-built strategies on many different exchanges. 
+
+Since Hummingbot is an open, modular codebase, many developers and professional firms fork the codebase and use it for their own purposes.
+
+### Why is Hummingbot open source?
+
+1. **Trust and transparency**: Market makers need to keep their API keys, private keys, and strategy configuration private and secure, so which is why Hummingbot is a local software client, not a web-based platform. In addition, Hummingbot's open source codebase enables anyone to inspect and audit the code.
+
+2. **Community maintenance**: Hummingbot's value proposition is that it connects to many different centralized and decentralized exchanges, along with pre-built strategy templates that enable users to run many different types of trading strategies. In order to scale the number of connectors and strategies, Hummingbot relies upon its open source community.
+
+3. **Democratizing HFT**: From the beginning, our mission has been to democratize high-frequency trading with open source software.
+
+### Why did you make Hummingbot available to the general public?
+
+As we wrote in the original [Hummingbot whitepaper](https://hummingbot.io/hummingbot.pdf), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
+
+Later, we pioneered the concept of **decentralized market making** by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform: [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
+
+This has allowed CoinAlpha to spin off Hummingbot into a not-for-profit foundation, which is dedicated to keeping Hummingbot open source.
+
+### What is market making?
+
+Market making is the act of simultaneously creating buy and sell orders for an asset in a market. By doing so, a market maker acts as a liquidity provider, facilitating other market participants to trade by giving them the ability to fill the market maker's orders. Traditionally, market-making industry has been dominated by highly technical quantitative hedge funds and trading firms that have the infrastructure and intelligence to deploy sophisticated algorithms at scale.
+
+Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
+
+See [How does market making work?](/news/market-making/) for more information.
+
+### How does Hummingbot store my private keys and API keys?
+
+Similar to wallet software, Hummingbot stores your private keys and API keys in encrypted form, using the password you enter when you first start Hummingbot. These keys are saved in your `/conf` folder.
 
 Since Hummingbot is a local client, your private keys and API keys are as secure as the computer you are running them on. This is because the keys are used to create authorized instructions locally on the local machine, and only the instructions which have already been signed or authorized are sent out from the client.
-
-Always use caution and make sure the computer you are running Hummingbot on is safe, secure, and free from unauthorized access.
 
 ### What does it cost for me to run Hummingbot?
 
@@ -26,76 +61,106 @@ Hummingbot is a free software, so you can download, install, and run it for free
 
 Transactions from Hummingbot are normal transactions conducted on exchanges; therefore when operating Hummingbot, you would be subject to each exchange’s fees (e.g. maker, taker, and withdrawal fees), as you would if you were trading on that exchange normally (i.e. without Hummingbot).
 
-### What exchanges does Hummingbot support?
+There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](/exchanges/).
 
-Hummingbot has a vast majority of Centralized and Decentralized exchanges to choose from, and You can do different strategies with different connectors. To learn more about the exchanges that Hummingbot supports, refer to the following links,
+### How do I use Hummingbot on a AMM decentralized exchange like Uniswap?
 
-- [Hummingbot Connectors](/exchanges/)
+On an Automatic Market Maker (AMM) decentralized exchange, users deposit tokens into a pool to provide liquidity and earn LP tokens. Since AMM pools depend on arbitrage to keep prices in line with other venues, Hummingbot's [`amm-arb`](/strategies/amm-arbitrage) strategy allows users to run an arbitrage bot that may earn profits from exploiting price differences between the AMM and other exchanges.
 
-### What is market-making?
+## Hummingbot Foundation
 
-Market making is the act of simultaneously creating buy and sell orders for an asset in a market. By doing so, a market maker acts as a liquidity provider, facilitating other market participants to trade by giving them the ability to fill the market maker's orders. Traditionally, market-making industry has been dominated by highly technical quantitative hedge funds and trading firms that have the infrastructure and intelligence to deploy sophisticated algorithms at scale.
+### What does the Hummingbot Foundation do?
 
-Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
+The Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository.
 
-In addition, the prohibitively high payment demanded by pro-market makers, coupled with a lack of transparency and industry standards, creates perverse incentives for certain bad players to act maliciously via wash trading and market manipulation. For more discussion on the liquidity problem, please check out [this blog post](https://www.hummingbot.io/blog/2019-01-thin-crust-of-liquidity/).
+Below are its main roles and responsibilities:
 
-### How does market making work?
+- **Maintenance**: Appoint and compensate **maintainers** who maintain Hummingbot exchange connectors by fixing bugs, resolving API changes, and adding features.
+- **Bounties**: Enable the community to sponsor bounties that reward community contributors for building new connectors, features, and enhancements
+- **Governance:** Enable the community to steer the evolution of the codebase by prioritizing work on Github issues and pull requests
 
-> **Warning:** Not financial or investment advice. Below are descriptions of some risks associated with the pure market-making strategy. There may be additional risks not described below.
+Since Hummingbot is not a blockchain protocol, but rather open source client software run locally on individual client devices that interacts with protocols and exchanges, the Foundation governance system aims to fits into the existing Hummingbot open source software release process, which has been used to handle thousands of Github issues and pull requests created by the community over the past three years.
 
-#### Ideal case
+### How is the Hummingbot Foundation sustainable?
 
-Market making strategies work best when you have a relatively calm market, but with sufficient trading activity. What that means for pure market makers is that he would be able to get both of his bid and ask offers traded regularly; the price of his inventory doesn't change by a lot, so there's no risk of him ending up on the wrong side a trend. Thus he would be able to repeatedly capture small profits via the bid/ask spread over time.
+A large part of Hummingbot’s value comes from the number of connectors it supports and its overall usage, which can be measured by the aggregate trading activity that Hummingbot users supply to connected exchanges and protocols. The Foundation has fee share agreements and other partnerships with these exchanges and protocols that rebate fees based on usage, tracked at the API header level.
 
-![A calm market with regular trading activity](/assets/img/pure-mm-calm.png)
+Meanwhile, community developers can maintain Hummingbot components of the codebase and extend the toolset to more markets and asset types, keeping maintenance costs low.
 
-In the figure above, the period between 25 Feb and 12 Mar would be an example of the ideal case. The asset price stayed within a relatively small range, and there was sufficient trading activity for a market maker's offers to be taken regularly.
+In addition, the Foundation plans to charge bounty administration fees to administer, review and merge the development work performed by bounty contributors.
 
-In this scenario, the market maker needs to be sure that the trading spread he sets is larger than the trading fees given to the exchange.
+Based on the source of income above, the Foundation is projected to be self-sustainable at inception. Over time, we expect this margin to increase as volume and fees generated grow as the Hummingbot user base expands.
 
-#### Low trading activity
+### Who runs the Hummingbot Foundation?
 
-Markets with low trading activity higher risk for pure market-making strategies. Here's an example:
+A five-person Board of Directors provides oversight over the Foundation and oversees staff who manage day-to-day operations. This board is elected by HBOT token holders every 12 months.
 
-![A market with low trading activity](/assets/img/pure-mm-low-volume.png)
+In addition, the Foundation has a Chief Operating Officer and Chief Finance Officer, who collectively manage partnerships with exchanges, negotiate contracts with maintainers, and oversee the Foundation’s budget and finances.
 
-There's a risk in any market with low trading activity. The market maker may need to hold onto inventory for a long time without a chance to trade it back. During that time, the prices of the traded assets may rise or drop dramatically despite seeing no or little trading activity on the exchange. This exposes the market maker to inventory risk, even after mitigating some of this risk using wider bid spreads.
+The Foundation also employs staff who administer the governance system, respond to users on Discord, and handle other day-to-day operations of maintaining Hummingbot, including:
 
-Other strategies may be more suitable from a risk perspective in this type of market, e.g. [cross-exchange market making](/strategies/cross-exchange-market-making).
+- Review pull requests and issues linked to proposals
+- Communicate and coordinate with sponsors, maintainers, and contributors
+- Package monthly releases into Docker containers for various environments
+- Maintain and update documentation
 
-#### Market/inventory risk due to low volatile or trending markets
+### Why is the Hummingbot Foundation domiciled in the Cayman Islands?
 
-Another common risk that market makers need to be aware of is trending markets. Here's one example:
+For the past 20 years, the Cayman Islands has been one of the preferred global jurisdictions for the incorporation of new securitizations, special purpose vehicles, and other new organizations. In 2017, the Cayman Islands introduced the Foundation Company structure, a flexible structure that allows a limited liability legal entity to operate similar to a civil law foundation, steered by a decentralized set of participants. The Hummingbot Foundation uses this structure.
 
-![A trending market](/assets/img/pure-mm-trending.png)
+See [What is a Cayman Foundation Company?](https://www.zedra.com/news-events/news/what-is-a-cayman-foundation-company/) from Zedra, our corporate services provider in the Cayman Islands.
 
-Suppose a pure market maker sets his spreads naively in such a market, e.g. equidistant bid/ask spread. In that case, there's a risk of the market maker's bid consistently being filled as prices trend down, while at the same time the market continues to move away from the market maker's ask, decreasing the probability of sells. This would result in an accumulation of inventory at precisely the time where this would reduce inventory value, which is a "wrong-way" risk.
+### How do I apply for a job with the Hummingbot Foundation?
 
-However, it is still possible to improve the probability of generating profits in this kind of market by skewing bid asks, i.e., setting a wider bid spread (e.g., -4%) than ask spread (e.g., +0.5%). In this way, the market maker is trying to catch price spikes in the direction of the trend and buy additional inventory only in the event of larger moves, but sell more quickly when there is an opportunity to minimize the duration of the inventory is held. This approach also has a mean reversion bias, i.e. buy only when there is a larger move downwards, in the hopes of stabilization or recovery after such a large move.
+See [this page](https://angel.co/company/hummingbot/jobs), and apply for the ones marked **Hummingbot Foundation**. Alternatively, post a message with your CV to one of the Foundation staff on Discord.
 
-Market making in volatile or trending markets is more advanced and risky for new traders. It's recommended that a trader looking to market make in this kind of environment to get mentally familiar with it (e.g. via paper trading) before committing meaningful capital to the strategy.
+## HBOT token
 
-### Besides market risk, what other risks does a market maker face?
+### What is the HBOT token?
 
-There are many moving parts when operating a market making a bot that all have to work together to properly function:
+The Hummingbot Governance Token (HBOT) is the medium of governance for the Hummingbot open source ecosystem. It is a standard Ethereum ERC-20 token with a fixed total supply of 1,000,000 HBOT tokens.
 
-- Hummingbot code
-- Exchange APIs
-- Ethereum blockchain and node
-- Network connectivity
-- Hummingbot host computer
+### What can I do with the HBOT token?
 
-A fault in any component may result in bot errors, ranging from minor and inconsequential to major.
+HBOT is a governance token that give holders control over the Hummingbot codebase, the HBOT community treasury, and the Hummingbot Foundation. For instance, holders can:
 
-It is essential for any market-making bot to regularly refresh its bid and ask offers on the market to adjust to changing market conditions. Suppose a market-making bot is disconnected from the exchange for an extended period of time. In that case, the bid/ask offers it previously made would be left on the market and subject to price fluctuations of the market. Those orders may be filled at a loss as market prices move, while the market maker is offline. Therefore, any market maker needs to make sure technical infrastructure is secure and reliable.
+- Approve all pull requests to the Hummingbot codebase
+- Propose architectural changes and steer the roadmap
+- Allocate the HBOT community treasury
+- Appoint maintainers for exchange connectors who share in fees rebated from that exchange
+- Elect Foundation board of directors
 
-### What would I need to do to market make on an "exchange" like uniswap with assets on my ledger ethereum wallet?
+HBOT token holders make these decisions by creating proposals and voting with their token balances. One HBOT equals one vote, and voting does not consume any tokens.
 
-"Market making" on AMM is accomplished by the contract (automated "market maker"), but users can act as a "liquidity provider" by depositing assets into the AMM smart contract, allowing the contract to facilitate trades.
+### Will voting with HBOT cost gas or incur other transaction fees?
 
-The AMM strategy in Hummingbot arbs the AMM contract by trading with contract vs some other exchange.
+No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#/), which lets HBOT holders vote by signing messages using their HBOT token balance to vote on issues without paying gas. Snapshots are recorded to IPFS to generate a permanent record.
 
-If you want to act as "liquidity provider" for the AMM, you can deposit assets into it using your ledger. (Note, you get in exchange a share of the AMM pool, but the assets you deposit leave your wallet and are deposited into the AMM; which you can later withdraw, but the amounts may have changed).
+### How do I know that I'm using the correct HBOT token? 
 
-If you want to trade using Hummingbot using the amm-arb strategy, you can not use your ledger, since the bot needs a "hot wallet" to trade. Instead, you have to set up a separate Ethereum wallet with its address/private key and use that for trading. You also have to transfer the assets from your ledger to that new wallet to allow for trading.
+To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from [Reputable Sources](/hbot/#reputable-information-sources). This does not constitute investment advice or a recommendation for any platform or market listed.
+
+### Does the Foundation plan to list HBOT on (any crypto exchange)?
+
+Please see [Reputable Sources](/hbot/#reputable-information-sources) for information about venues where HBOT may be traded.
+
+### How does the Foundation plan to distribute remaining HBOT tokens?
+
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed 5-month [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+
+See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
+
+### I was an early user of Hummingbot. Am I eligible to claim HBOT tokens?
+
+The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively. 
+
+Other than those listed in the [HBOT announcement](https://hummingbot.io/en/blog/introducing-hbot), there are no other eligible HBOT recipients.
+
+### What if I accidentally used an exchange address to claim HBOT tokens?
+
+If you accidentally entered a Binance.com deposit address to claim your tokens, here is how you may be able to retrieve those tokens:
+
+* Log into Binance.com
+* In the Wallet section -> Deposit Crypto, there is a "deposit hasn't arrived?" section
+* Select "Search" and "Deposited an Unlisted coin"
+* Select "Submit Appeal" and enter the transaction details
