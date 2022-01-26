@@ -119,7 +119,7 @@ nav:
     - Home: index.md
     - About: about.md
     - FAQ: faq.md
-    - HBOT Token: hbot.md
+    - HBOT: hbot.md
     - Community: community.md
     - Maintenance:
       - Maintenance: maintenance/index.md
