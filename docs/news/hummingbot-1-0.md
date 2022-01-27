@@ -4,7 +4,7 @@
 
 Hummingbot is an experiment to create decentralized, self-sustainable open source software, powered by user trading activity and governed by HBOT token holders. Our aim is to create a community-owned and maintained toolbox that lets anyone in the world become a high-frequency trader or market maker.
 
-After 61 beta releases spanning almost 2 million lines of code written by 113 unique contributors, **we are excited to announce the launch of [Hummingbot 1.0](http://localhost:8000/release-notes/1.0.0/), the first official release of the Hummingbot software.**
+After 61 beta releases spanning almost 2 million lines of code written by 113 unique contributors, **we are excited to announce the launch of [Hummingbot 1.0](/release-notes/1.0.0/), the first official release of the Hummingbot software.**
 
 ## What is Hummingbot 1.0?
 
