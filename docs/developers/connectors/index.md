@@ -4,38 +4,24 @@ Exchange connectors are packages of code that link Hummingbot's internal trading
 
 ## Examples / templates
 
-There are [existing connectors](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector). Note that each folder contained here marks different exchange connector types. These should serve as a template for creating a new exchange connector.
+You can find the existing connectors [here](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector).
+Note that each folder contained here marks different exchange connector types. These should serve as a template for creating a new exchange connector.
 
 Building a new exchange connector requires conforming to the template code to the new exchange's APIs, identifying and handling any differences in functions/behaviors, and testing the new exchange connector on that exchange.
 
-The following list some examples/templates that you can refer to when building the connector:
+## The Gold Standard
 
-### Spot Connectors
-
-- [Ndax](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
-- [Crypto.com](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/crypto_com) 
-
-### Perpetual Connectors
-
-- [Bybit Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual)
+We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+and the [Binance Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual)
+connectors as the gold standard and most up-to-date implementations in the code base.
 
 ## Exchange connector requirements
 
-1. A complete set of exchange connector files as listed [above](https://docs.hummingbot.io/exchanges/).
-2. Unit tests (see existing unit tests [here](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/) or [here](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/derivative)):
-  - Exchange Class ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_exchange.py))
-  - Orderbook tracker ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_order_book_tracker.py))
-  - Orderbook data source ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_api_order_book_data_source.py))
-  - Orderbook message class ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_order_book_message.py))
-  - User stream tracker ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_user_stream_tracker.py))
-  - User stream data source ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_api_user_stream_data_source.py))
-  - User authentication module ([example](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/ndax/test_ndax_auth.py))
-  - Inflight order class ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_in_flight_order.py))
-  - Utils module ([example](https://github.com/hummingbot/hummingbot/blob/master/test/hummingbot/connector/exchange/ndax/test_ndax_utils.py))
-
+1. A complete set of exchange connector files based off of the examples [above](#examples-templates).
+2. Unit tests covering at least 80% of the new code — you can once again refer to the Binance connectors are go-to examples.
 3. Documentation:
-  - Code commenting (particularly for any code that is materially different from the templates/examples)
-  - Any specific instructions for the use of that exchange connector ([example](https://docs.hummingbot.io/exchanges/binance/))
+    * Code commenting (particularly for any code that is materially different from the templates/examples)
+    * Any specific instructions for the use of that exchange connector ([example](../../exchanges/binance.md))
 
 ## Requirements for community-developed connectors
 

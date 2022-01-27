@@ -53,41 +53,6 @@ The `ticker` command displays the market prices, specifically the best bid, best
 | `--exchange`     | Specifies the exchange when running a secondary exchange     |
 | `--market`       | Specifies the trading pair when running a secondary exchange |
 
-## open_orders
-
-Show all active open orders.
-
-| Command Argument | Description                           |
-| ---------------- | ------------------------------------- |
-| `--full_report`  | Show full report with size comparison |
-
-!!! note
-    `open_orders` only works with Binance exchange connector.
-
-## trades
-
-Show trades
-
-!!! note
-    `trades` only works with Binance exchange connector. If your desired trading pair does not show any result on your hummingbot terminal when running the `trades` command, you can use the following command `trades --market [pair]`.
-
-![img/trades_sample.png](/assets/img/trades_sample.png)
-
-## pnl
-
-Show profit and losses
-
-| Command Argument       | Description                                      |
-| ---------------------- | ------------------------------------------------ |
-| `--days`               | How many days in the past (can be decimal value) |
-| `--market`             | The market you want to see pnl                   |
-| `--open_order_markets` | See pnl from current open order markets          |
-
-!!! note
-    `pnl` only works with Binance exchange connector. If your desired trading pair does not show any result on your hummingbot terminal when running the `pnl` command. You can edit the `conf_global.yml` file on your hummingbot folder and add the market pair that you're trading under the `binance_market` list. You can also add it on your hummingbot terminal by using `config binance_market`
-
-![img/market_binance.png](/assets/img/market_binance.png)
-
 ## status
 
 Get the market status of the current bot.
