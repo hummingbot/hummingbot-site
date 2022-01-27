@@ -1,7 +1,7 @@
 ---
 tags:
 - spot exchange connector
-- ⛏️ liquidity mining exchange
+- ⛏️ Miner exchange
 ---
 
 # `kucoin`

@@ -136,6 +136,7 @@ nav:
       - Epochs: governance/epochs.md
     - News & Updates:
       - News & Updates: news/index.md
+      - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
       - How does market making work?: news/market-making.md
