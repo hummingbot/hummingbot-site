@@ -4,6 +4,7 @@ Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com
 
 ## Official Updates
 
+* Jan 2022: [Epoch 1 Plan](./epoch-1)
 * Dec 2021: [Introducing the Hummingbot Governance Token: HBOT](./hbot)
 * Oct 2021: [Introducing the Hummingbot Foundation](./foundation)
 
