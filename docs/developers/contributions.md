@@ -4,7 +4,7 @@ All contributors should adhere to the code conventions used in the Hummingbot re
 
 ## General workflow
 
-1. Fork the [CoinAlpha/hummingbot](https://github.com/hummingbot/hummingbot) repository.
+1. Fork the [hummingbot/hummingbot](https://github.com/hummingbot/hummingbot) repository.
 2. Create a new branch from the `development` branch in your fork.
 3. Make commits to your branch.
 4. When you have finished with your fix / feature / connector / documentation:
