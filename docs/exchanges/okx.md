@@ -3,20 +3,20 @@ tags:
 - spot exchange connector
 ---
 
-# `okex`
+# `okx`
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okex)
 
 ## ℹ️ Exchange Info
 
 **OKEx** 
-[Website](https://www.okex.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/okex/) | [CoinGecko](https://www.coingecko.com/en/exchanges/okex)
+[Website](https://www.okx.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/okx/) | [CoinGecko](https://www.coingecko.com/en/exchanges/okx)
 
-* API docs: https://www.okex.com/docs/en/
-* Transaction fees: https://www.okex.com/fees.html
+* API docs: https://www.okx.com/docs/en/
+* Transaction fees: https://www.okx.com/fees.html
 * Minimum order size: https://www.okex.com/support/hc/en-us/articles/360059776832-OKEx-to-adjust-minimum-order-amounts-for-some-spot-and-margin-trading-pairs
-* Creating API keys: https://www.okex.com/academy/en/complete-guide-to-okex-api-v5-upgrade
-* Referral link: https://www.okex.com/join/1931920
+* Creating API keys: https://www.okx.com/academy/en/complete-guide-to-okex-api-v5-upgrade/
+* Referral link: https://www.okx.com/join/1931920
 
 ## 👷 Maintenance
 
