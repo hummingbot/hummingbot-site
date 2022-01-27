@@ -1,7 +1,8 @@
 ---
 tags:
 - spot exchange connector
-- ⛏️ liquidity mining exchange
+- ⭐ reference connector
+- ⛏️ Miner exchange
 ---
 
 # `binance`

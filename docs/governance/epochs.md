@@ -18,7 +18,7 @@ Each Epoch is a fixed, 5-month period with specific HBOT distribution-related go
 
 In requesting HBOT grants for Hummingbot Improvement Proposals (HIPs) related to a community-approved [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg), developers may need guidance in determining how much HBOT to request for unit of time/effort spent on a given task.
 
-For Epoch 1, the Hummingbot Foundation believes the **20,000 HBOT** for one day of work is a reasonable amount for an experienced developer to request for a HIP that falls under an approved Dev Grant Budget. However, developers are free to request more or less than this amount in their proposal.
+For Epoch 1, the Hummingbot Foundation believes that **20,000 HBOT for one day of work** is a reasonable amount for an experienced developer to request for a valid HIP. However, developers are free to request more or less than this amount in their proposal.
 
 ## Epoch 2
 
