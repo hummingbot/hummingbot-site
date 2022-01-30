@@ -104,7 +104,10 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      check_paths: true
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.tasklist:
