@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
 # Project info
 site_name: Hummingbot Foundation
 site_description: The official website and documentation site for the Hummingbot Foundation
@@ -39,10 +41,10 @@ theme:
       code: Roboto Mono
   features:
     - navigation.instant
-    - navigation.tracking # insiders
+    - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky # insiders
-    - navigation.indexes # insiders
+    - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.top
 
 plugins:
@@ -101,12 +103,16 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      user: hummingbot
+      repo: hummingbot
+      repo_url_shorthand: true
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
