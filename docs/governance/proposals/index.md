@@ -13,10 +13,3 @@ Each proposal type has different Governance Parameters:
 | Min HBOT Balance             | 1                         | 10,000                  | 50,000                   |
 | Quorum Percentage            | 0.1% of HBOT total supply | 3% of HBOT total supply | 10% of HBOT total supply |
 | Approval Threshold           | >50% of tokens approved   | >50% of tokens approved | >50% of tokens approved  |
-
-*[Snapshot]: Where to vote
-*[Vote Duration]: How long each vote lasts
-*[Min HBOT Balance]: Minimum HBOT balance needed to create proposal
-*[Quorum Percentage]: Total tokens that need to participate in voting for proposal to be approved
-*[Approval Threshold]: Threshold needed to approve a proposal
-
