@@ -132,8 +132,10 @@ nav:
     - Community: community.md
     - Maintenance:
       - Maintenance: maintenance/index.md
-      - Agreements: maintenance/agreements.md
       - Monthly Reports: maintenance/reports.md
+      - Exchange Maintenance Process: maintenance/process.md
+      - Active Agreements: maintenance/agreements.md
+      - Active Maintainers: maintenance/maintainers.md
     - Governance:
       - Governance: governance/index.md
       - Whitepaper: governance/whitepaper.md
