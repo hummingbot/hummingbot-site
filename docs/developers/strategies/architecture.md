@@ -1,4 +1,4 @@
-![StrategyBase class relations](/assets/img/strategy-uml.svg)
+[![StrategyBase class relations](/assets/img/strategy-uml.svg)](/assets/img/strategy-uml.svg)
 
 All strategy classes are derived from the [`StrategyBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class, which is derived from the [`TimeIterator`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class.
 
