@@ -36,7 +36,7 @@ The Foundation will charge Sponsors a fee in order to administer the program and
 
 | Contributor                                        | Contribution                                               | Bounty   | Amount     |
 |----------------------------------------------------|------------------------------------------------------------|--------- | ---------- |
-| [leastchaos](https://github.com/leastchaos)        | [#4121](https://github.com/hummingbot/hummingbot/pull/4121) | Strategy | $10,000    |
+| [leastchaos](https://github.com/leastchaos)        | #4121 | Strategy | $10,000    |
 | [cryptoulette](https://twitter.com/cryptoulette)   | [guide](https://docs.google.com/document/d/1CuMFk7DalTUUvpDkzI9-72nC8WFre3CW/edit?usp=sharing&ouid=106910946131072781869&rtpof=true&sd=true) + [video](https://www.youtube.com/watch?v=T1rsNcFD5Cw) | Content | $2,000 |
 
 The winning [`hedge`](/strategies/hedge/) strategy was merged in version [0.45.0](/release-notes/0.45.0/).
@@ -51,7 +51,7 @@ The winning [`hedge`](/strategies/hedge/) strategy was merged in version [0.45.0
 
 | Contributor                                        | Contribution                                               | Bounty   | Amount     |
 |----------------------------------------------------|------------------------------------------------------------|--------- | ---------- |
-| [squarelover](https://github.com/squarelover)      | [#3430](https://github.com/hummingbot/hummingbot/pull/3430) | Strategy | $2,000     |
+| [squarelover](https://github.com/squarelover)      | #3430 | Strategy | $2,000     |
 
 The winning [`aroon-oscillator`](/strategies/aroon-oscillator/) strategy was merged in version [0.45.0](/release-notes/0.45.0/).
 
