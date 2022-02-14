@@ -1,6 +1,6 @@
 # Connector Architecture
 
-![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)
+[![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)](/assets/img/connector-architecture-diagram.svg)
 
 The **_Architecture Diagram_**, given above, depicts the high-level design of a Connector. 
 
@@ -9,7 +9,7 @@ The **_Architecture Diagram_**, given above, depicts the high-level design of a 
 
 ## Connector Component Overview
 
-![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)
+[![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)](/assets/img/high-level-connector-architecture-diagram.svg)
 
 Each connector is comprised of the following components.
 Below are the detailed descriptions of tasks for each component and its corresponding files.
