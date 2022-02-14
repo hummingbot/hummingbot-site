@@ -39,7 +39,8 @@ We encourage new maintainers to complete the following application form:
     
     - Exchange or developer engages Foundation about the connector
     
-    - Preliminary business development meeting between Foundation and Exchange to go over a presentation that explains Foundation role, benefits, user base, etc 
+    - Meeting between Foundation and Exchange to go over a
+   presentation that explains Foundation role and benefits.
     
 #### 2. **SCOPING**
 
@@ -58,11 +59,14 @@ We encourage new maintainers to complete the following application form:
     
         * Does the exchange have comprehensive API documentation?
     
-     !!! note "When contact comes from developer, Foundation attempts to engage exchange in development discussion"
+     !!! note
+
+      When contact comes from developer, Foundation attempts to engage exchange in development discussion.
     
  ###   Project scoping:
     
-    Foundation PM to collect API existing documentation and meet certified developers-maintainers to select one to develop connector or maintain existing
+    Foundation PM to collect API existing documentation.
+    Foundations meets certified developers-maintainers.
     
     - Project scoping information usually needed:
     
@@ -72,7 +76,7 @@ We encourage new maintainers to complete the following application form:
          1.c  maturity of the api
          1.c  how developed or new is the exchange
        2. existing perpetual or spot connector when available
-       3. size project duration in days/hours with the information on how developed is the api, precedent of connectors if any (reusable or not)
+       3. size the project duration in days/hours 
        4. estimate the project high level costs and constraints
        5. presentation to exchange on connector
 
@@ -99,9 +103,18 @@ Parameters to identify in evaluation:
     - Speed to deliver
     - Interest from developer
     
-    Once approved by exchange, the developer - maintainer selection will be made public as well as developer compensation.
+   * Once approved by exchange, the developer - maintainer selection and compensation will be made public.
     
-    All the connector development charges go from exchange to developer. Foundation will negotiate fee share agreement and marketing actions with exchange and provide project management and QA as part of contribution. Foundation will provide incentive agreement to maximize usage of connector for exchange. The developer gets from Foundation 20% of the variable fee share agreement or 50% of fixed amount agreement of Exchange with Foundation as a compensation for ongoing maintenance as long as maintenance is performing well. The remaining portion goes to Foundation for sustainment. 
+* All the connector development charges go from exchange to developer. 
+
+* Foundation will negotiate fee share agreement and marketing actions with exchange.
+
+      - Foundation will provide incentive agreement to maximize usage of connector for exchange.
+      -  The developer gets from Foundation:
+         -   20% of the variable fee share agreement, or
+         -   50% of fixed amount agreement of Exchange with Foundation 
+         -   this is a compensation for ongoing maintenance as long as maintenance is performing well. 
+         -   the remaining portion goes to Foundation for sustainment. 
     
 #### 5. **PROCESS  IMPROVEMENT PROPOSAL (if connector gets funded by Foundation, if funded by Exchange or already developed goes directly to PRP)**
     
