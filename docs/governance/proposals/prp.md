@@ -8,7 +8,7 @@ HBOT token holders have the right to approve all pull requests, or proposed code
 | ---------------------------- | ------------------------- |
 | Snapshot                     | https://snapshot.org/#/hbot-prp.eth |
 | Min HBOT Balance to create   | 1                         |
-| Quorum Percentage            | 0.1% of HBOT total supply |
+| Quorum Percentage            | 0.1% of HBOT circulating supply |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 7 days                    |
 

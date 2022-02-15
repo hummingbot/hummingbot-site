@@ -10,7 +10,7 @@ Since this type of proposal has the biggest impact on Foundation and may allocat
 | ---------------------------- | ------------------------- |
 | Snapshot                     | https://snapshot.org/#/hbot.eth |
 | Min HBOT Balance to create   | 50,000                    |
-| Quorum Percentage            | 3% of HBOT total supply   |
+| Quorum Percentage            | 3% of HBOT circulating supply   |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 14 days                   |
 
