@@ -193,27 +193,6 @@ The `BudgetChecker` also locks in collateral required for orders and adjusts col
 - `adjust_candidate()`
 - `populate_collateral_entries()`
 
-### Example
-
-```python
-budget_checker = market_info.market.budget_checker
-order_candidate = OrderCandidate(
-    trading_pair=market_info.trading_pair,
-    is_maker=False,
-    order_type=OrderType.LIMIT,
-    order_side=TradeType.BUY,
-    amount=order_amount,
-    price=order_price,
-)
-
-adjusted_candidate_order = budget_checker.adjust_candidate(order_candidate, all_or_none=True)
-
-if adjusted_candidate_order.amount < order_amount:
-    # Order cannot be placed
-else:
-    # Order can be placed
-```
-
 ### TradeFee
 
 #### TradeFeeSchema
@@ -241,3 +220,24 @@ Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_im
 #### DeductedFromReturnsTradeFee
 
 Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
+
+### Example
+
+```python
+budget_checker = market_info.market.budget_checker
+order_candidate = OrderCandidate(
+    trading_pair=market_info.trading_pair,
+    is_maker=False,
+    order_type=OrderType.LIMIT,
+    order_side=TradeType.BUY,
+    amount=order_amount,
+    price=order_price,
+)
+
+adjusted_candidate_order = budget_checker.adjust_candidate(order_candidate, all_or_none=True)
+
+if adjusted_candidate_order.amount < order_amount:
+    # Order cannot be placed
+else:
+    # Order can be placed
+```
