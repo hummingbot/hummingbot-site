@@ -159,3 +159,85 @@ Below are some of the user functions or properties under `OrderTracker` that you
     Returns a dictionary of order IDs that are being cancelled.
 
     Return type: `Dict[str, float]`
+
+
+## Fee Accounting
+
+### OrderCandidate
+
+An order proposal created by a strategy.
+
+A `BudgetChecker` takes an `OrderCandidate` and fills in fees to be paid for this particular order (in pre-defined tokens). Then checks if, after accounting for the fees, the account balances allow for a placement of this order, and if not, adjusts the order amount accordingly. 
+
+Fees can be payable in the base tokens, quote tokens, or 3rd party tokens.
+
+If an order opens a position, fees will be charged as an additional cost of the order.
+
+If an order closes a position, fees will be deducted from the returns.
+
+### BudgetChecker
+
+Is intended to be a single universal solution for fee accounting and checking feasibility of `OrderCandidates`.
+
+Provides utilities for strategies to check the potential impact of `OrderCandidates` on user account balances.
+Mainly used to determine if sufficient balances are available to place a set of strategy-proposed orders.
+
+It can work with a single `OrderCandidate` or a list of `OrderCandidates`. 
+In case of multiple `OrderCandidates` the `BudgetChecker` verfies if the set of orders as a whole is feasible.
+
+The `BudgetChecker` also locks in collateral required for orders and adjusts collateral available for future `OrderCandidates`.
+
+- `reset_locked_collateral()`
+- `adjust_candidates()`
+- `adjust_candidate_and_lock_available_collateral()`
+- `adjust_candidate()`
+- `populate_collateral_entries()`
+
+### Example
+
+```python
+budget_checker = market_info.market.budget_checker
+order_candidate = OrderCandidate(
+    trading_pair=market_info.trading_pair,
+    is_maker=False,
+    order_type=OrderType.LIMIT,
+    order_side=TradeType.BUY,
+    amount=order_amount,
+    price=order_price,
+)
+
+adjusted_candidate_order = budget_checker.adjust_candidate(order_candidate, all_or_none=True)
+
+if adjusted_candidate_order.amount < order_amount:
+    # Order cannot be placed
+else:
+    # Order can be placed
+```
+
+### TradeFee
+
+#### TradeFeeSchema
+
+Contains the necessary information to build the `TradeFee` object.
+For both makers and takers specifies percent and fixed fees, and tokens in which the fees are paid.
+
+- `percent_fee_token: str`
+- `maker_percent_fee_decimal: Decimal`
+- `taker_percent_fee_decimal: Decimal`
+- `buy_percent_fee_deducted_from_returns: bool`
+- `maker_fixed_fees: List`
+- `taker_fixed_fees: List`
+
+#### TradeFeeBase
+
+- `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
+- `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
+- `get_fee_impact_on_order_returns()`: returns order returns for a particular position closing `OrderCandidate` with fees accounted for
+
+#### AddedToCostTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
+
+#### DeductedFromReturnsTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
