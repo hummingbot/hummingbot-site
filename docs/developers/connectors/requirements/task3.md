@@ -6,7 +6,7 @@ In Task 3, we will be required to implement the `Exchange`/`Derivative` Class. T
 
 If the exchange is a derivative exchange, the connector must also inherit from the `PerpetualTrading` class.
 
-For examples, refer to [Ndax](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_exchange.py) and [Bybit Perpetual](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_derivative.py)
+For examples, refer to [Binance](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py) and [Binance Perpetual](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/binance_perpetual/binance_perpetual_derivative.py)
 
 ### Exchange/Derivative Class
 

@@ -12,33 +12,32 @@ The **_Architecture Diagram_**, given above, depicts the high-level design of a 
 ```
 hummingbot/connector/
 ├── connector/
-│   ├── uniswap
-│   │   ├── uniswap_connector.py
-│   │   ├── uniswap_utils.py
-│   │   ├── dummy.pxd
-│   │   └── dummy.pyx
 │   └── ...
 ├── derivative/
-│   ├── bybit_perpetual
-│   │   ├── bybit_perpetual_api_order_book_data_source.py
-│   │   ├── bybit_perpetual_derivative.py
-│   │   ├── bybit_perpetual_order_book_tracker.py
-│   │   ├── bybit_perpetual_order_book.py
-│   │   ├── bybit_perpetual_user_stream_tracker.py
-│   │   ├── bybit_perpetual_utils.py
-│   │   ├── bybit_perpetual_constants.py
+│   ├── binance_perpetual
+│   │   ├── binance_perpetual_api_order_book_data_source.py
+│   │   ├── binance_perpetual_auth.py
+│   │   ├── binance_perpetual_derivative.py
+│   │   ├── binance_perpetual_order_book.py
+│   │   ├── binance_perpetual_order_book_tracker.py
+│   │   ├── binance_perpetual_user_stream_data_source.py
+│   │   ├── binance_perpetual_user_stream_tracker.py
+│   │   ├── binance_perpetual_utils.py
+│   │   ├── constants.py
 │   │   ├── dummy.pxd
 │   │   └── dummy.pyx
 │   └── ...
 └── exchange/
-    ├── ndax
-    │   ├── ndax_api_order_book_data_source.py
-    │   ├── ndax_derivative.py
-    │   ├── ndax_order_book_tracker.py
-    │   ├── ndax_order_book.py
-    │   ├── ndax_user_stream_tracker.py
-    │   ├── ndax_utils.py
-    │   ├── ndax_constants.py
+    ├── binance
+    │   ├── binance_api_order_book_data_source.py
+    │   ├── binance_api_user_stream_data_source.py
+    │   ├── binance_auth.py
+    │   ├── binance_constants.py
+    │   ├── binance_exchange.py
+    │   ├── binance_order_book.py
+    │   ├── binance_order_book_tracker.py
+    │   ├── binance_user_stream_tracker.py
+    │   ├── binance_utils.py
     │   ├── dummy.pxd
     │   └── dummy.pyx
     └── ...
