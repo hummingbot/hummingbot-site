@@ -1,36 +1,12 @@
-# Task 3 — Exchange/Derivative Connector & InFlightOrder
+# Task 3 — Exchange/Derivative Connector
 
 ## Overview
 
-In Task 3, we will be required to implement both `InFlightOrder` and `Exchange`/`Derivative` Class. The primary bulk of implementing a new connector is in this task.
+In Task 3, we will be required to implement the `Exchange`/`Derivative` Class. The primary bulk of implementing a new connector is in this task.
 
 If the exchange is a derivative exchange, the connector must also inherit from the `PerpetualTrading` class.
 
 For examples, refer to [Ndax](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ndax/ndax_exchange.py) and [Bybit Perpetual](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_derivative.py)
-
-### InFlightOrder Class
-
-As seen in the [Connector Component Overview](/developers/connectors/architecture/#connector-component-overview), the `Exchange`/`Derivative` class depends on the `InFlightOrder` Class.
-The `InFlightOrder` abstracts an order's details and is primarily used by the `Exchange`/`Derivative` class to manage all active orders.
-
-The **_InFlightOrder Class Diagram_**, given below, details the critical variables and functions in the `InFlightOrder` class.
-
-![InFlightOrderUMLDiagram](/assets/img/in-flight-order-class-diagram.svg)
-
-!!! note
-The `InFlightOrder` associated with a `Derivative` class includes the `leverage` and `position` attributes.
-The `position` attribute is set to a [`PositionAction`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py#L81-L83)
-enum **value** (i.e. it should be a string).
-
-Below are the functions that need to be implemented in the new `InFlightOrder` class.
-
-| Function(s)                | Input                          | Output          | Description                                                                                                             |
-| -------------------------- | ------------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `is_done`                  | `None`                         | `bool`          | Returns `True` if the order state is completely filled or cancelled.                                                    |
-| `is_failure`               | `None`                         | `bool`          | Returns `True` if placing the order is unsuccessfully.                                                                  |
-| `is_cancelled`             | `None`                         | `bool`          | Returns `True` if the order state is cancelled.                                                                         |
-| `from_json`                | data: `Dict[str, Any]`         | `InFlightOrder` | Converts the order data from a JSON object to an `InFlightOrder` object.                                                |
-| `update_with_trade_update` | trade_update: `Dict[str, Any]` | `bool`          | Updates the in flight order with trade update from the REST or WebSocket API. Returns `True` if the order gets updated. |
 
 ### Exchange/Derivative Class
 
@@ -116,7 +92,7 @@ This function is responsible for executing the API request to place the order on
 - Upon successfully placing the order, the tracked order will be updated with the resulting **_exchange order ID_** from the API Response.
 
 !!! note
-The tracked order is an `InFlightOrder` that is within a dictionary variable(`_in_flight_orders`) in the `Exchange`/`Derivative` class. `InFlightOrder` are Hummingbot's internal records of orders it has placed that remain open in the exchange. When such orders are either filled or canceled, they are removed from the dictionary by calling [stop_tracking_order()](#stop_tracking_order) method, and the relevant event completion flag is passed to the strategy module.
+The tracked order is an `InFlightOrder` that is tracked by the `ClientOrderTracker` in the `Exchange`/`Derivative` class. `InFlightOrder` are Hummingbot's internal records of orders it has placed that remain open in the exchange. When such orders are either filled or canceled, they are removed from the dictionary by calling [stop_tracking_order()](#stop_tracking_order) method, and the relevant event completion flag is passed to the strategy module.
 
 **Input Parameter(s):**
 
@@ -195,7 +171,7 @@ In the case of perpetual connectors, positions must be tracked as well.
 
 #### `start_tracking_order()`
 
-Starts tracking an order by simply adding it into `_in_flight_orders` dictionary.
+Starts tracking an order by simply passing it to the `ClientOrderTracker`,
 
 **Input Parameter(s):**
 
@@ -218,7 +194,7 @@ In most cases, the `exchange_order_id` is only provided after the place order AP
 
 #### `stop_tracking_order()`
 
-Stops the tracking of order by simply removing it from `_in_flight_orders` dictionary.
+Stops the tracking of order by calling the appropriate method of the `ClientOrderTracker`.
 
 **Input Parameter(s):**
 
@@ -636,6 +612,24 @@ Below are the property functions specific to the `Derivative` class.
 | `account_positions`    | `Dict[str, Position]` | Returns a dictionary of current active open positions.                                                                                                                                                                                                     |
 | `funding_payment_span` | `List[int]`           | Returns the `_funding_payment_span` instance variable representing the time span (in seconds) before and after funding period when exchanges consider active positions eligible for funding payment. `_funding_payment_span` can be set on initialization. |
 | `position_mode`        | `PositionMode`        | Returns the current position mode for exchanges that support both one-way and hedge modes.                                                                                                                                                                 |
+
+### ClientOrderTracker and the InFlightOrder Class
+
+As seen in the [Connector Component Overview](/developers/connectors/architecture/#connector-component-overview), the `Exchange`/`Derivative` class depends on the `ClientOrderTracker` and the `InFlightOrder` Class.
+The `InFlightOrder` abstracts an order's details and is primarily used by the `Exchange`/`Derivative` class through the `ClientOrderTracker` to manage all active orders.
+
+The **_InFlightOrder and ClientOrderTracker Class Diagram_**, given below, details the critical variables, properties and methods in the `InFlightOrder` and `ClientTracker` class and the relationship between them.
+
+![InFlightOrderClientOrderTrackerUMLDiagram](/assets/img/in-flight-order-client-order-tracker-class-diagram.svg)
+
+!!! note
+The `InFlightOrder` in a `ClientOrderTracker` associated with a `Derivative` class takes advantage of the `leverage` and `position` attributes.
+
+If not in a `Derivative` class, the default `leverage` is set to 1 and default `position` is set to NIL.
+
+The `position` attribute is of type [`PositionAction`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py#L51-L54).
+
+The `InFlightOrder` class and the `ClientOrderTracker` class are intended to be used as they are, universally, without any need to be extended or modified through inheritance.
 
 ## Debugging & Testing
 

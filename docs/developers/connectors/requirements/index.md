@@ -26,7 +26,7 @@ Implementing a new connector can generally be split into 3 major tasks:
 
 - **Task 1:** [OrderBookDataSource & OrderBookTracker](/developers/connectors/requirements/task1/)
 - **Task 2:** [UserStreamDataSource, UserStreamTracker & Auth](/developers/connectors/requirements/task2/)
-- **Task 3:** [Exchange Connector](/developers/connectors/requirements/task3/)
+- **Task 3:** [Exchange/Derivative Connector](/developers/connectors/requirements/task3/)
 
 ## Tasks and UML Diagram
 
