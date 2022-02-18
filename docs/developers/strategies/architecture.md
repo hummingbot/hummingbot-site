@@ -171,9 +171,10 @@ A `BudgetChecker` takes an `OrderCandidate` and fills in fees to be paid for thi
 
 Fees can be payable in the base tokens, quote tokens, or 3rd party tokens.
 
-If an order opens a position, fees will be charged as an additional cost of the order.
+In general, if an order opens a position, fees will be charged as an additional cost of the order, and if an order closes a position, fees will be deducted from the returns.
+A few exchanges however don't follow this principle. Strategies however don't have to handle this and should rely on the BudgetChecker obtained from the exchange to calculate fees the correct way.
 
-If an order closes a position, fees will be deducted from the returns.
+Once the candidate order has been sized by the `BudgetChecker`, the strategy can examine the sized order to get more information such as `OrderCandidate.collateral_dict` to get a dictionary of the costs associated with the order, or `OrderCandidate.potential_returns` to get an idea of the token and amount of the returns associated with the order.
 
 ### BudgetChecker
 
