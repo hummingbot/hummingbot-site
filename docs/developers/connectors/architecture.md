@@ -140,7 +140,7 @@ It is important to keep a consistent and accurate state of all active orders pla
 
 **File:** `/hummingbot/connector/client_order_tracker.py`
 
-An instance of `ClientOrderTracker` holds and manages `InFlightOrders` for its connector.
+An instance of `ClientOrderTracker` holds and manages `InFlightOrders` by calling the connector's `trigger_event` method.
 
 Provides utilities for connectors to update in-flight orders and to handle order errors.
 

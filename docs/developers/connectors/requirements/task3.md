@@ -631,6 +631,11 @@ The `position` attribute is of type [`PositionAction`](https://github.com/hummin
 
 The `InFlightOrder` class and the `ClientOrderTracker` class are intended to be used as they are, universally, without any need to be extended or modified through inheritance.
 
+A connector calls the methods of its `ClientOrderTracker`:
+
+- `process_order_update()` - to update an order's status
+- `process_trade_update()` - to include an executed trade in a particular order
+
 ## Debugging & Testing
 
 As part of the QA process, for each task (Task 1 through 3), you are **required** to include the unit test cases for the code review process to begin. Refer to [Option 1: Unit Test Cases](/developers/connectors/requirements/debug&test/#option-1-unit-test-cases) to build your unit tests.
