@@ -633,8 +633,8 @@ The `InFlightOrder` class and the `ClientOrderTracker` class are intended to be 
 
 A connector calls the methods of its `ClientOrderTracker`:
 
-- `process_order_update()` - to update an order's status
-- `process_trade_update()` - to include an executed trade in a particular order
+- `process_order_update()` - to update an order's status by passing it an instance of the `OrderUpdate` class
+- `process_trade_update()` - to include an executed trade in a particular order by passing it an instance of the `TradeUpdate` class
 
 ## Debugging & Testing
 
