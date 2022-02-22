@@ -146,3 +146,62 @@ For more details on how to begin implementing the components, please refer to th
 ## Protocol Connector Components Overview\ [TBD\]
 
 Coming soon.
+
+## Fee Accounting
+
+### TradeFee
+
+`TradeFee` is being used by the `BudgetChecker` to determine the appropriate amount and asset of fees to be applied to an order.
+An exchange needs to provide a `TradeFeeSchema` defining its fee structure. Based on this schema a `TradeFee` object will be constructed.
+
+#### TradeFeeSchema
+
+Contains the necessary information to build the `TradeFee` object.
+For both makers and takers specifies percent and fixed fees, and tokens in which the fees are paid.
+
+- `percent_fee_token: str`
+- `maker_percent_fee_decimal: Decimal`
+- `taker_percent_fee_decimal: Decimal`
+- `buy_percent_fee_deducted_from_returns: bool`
+- `maker_fixed_fees: List`
+- `taker_fixed_fees: List`
+
+
+#### TradeFeeBase
+
+The `TradeFeeBase` class uses a `TradeFeeSchema` object of the connector to determine fees to be applied - their types, amounts and assets.
+
+- `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
+- `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
+- `get_fee_impact_on_order_returns()`: returns order returns for a particular position closing `OrderCandidate` with fees accounted for
+
+#### AddedToCostTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
+
+#### DeductedFromReturnsTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
+
+#### Example - `TradeFeeSchema`
+
+```python
+trade_fee_schema = TradeFeeSchema(
+    maker_percent_fee_decimal=Decimal("1.0"),
+    taker_percent_fee_decimal=Decimal("2.3")
+)
+```
+
+#### Example - `TradeFee`
+
+```python
+from hummingbot.client.settings import AllConnectorSettings
+
+trade_fee_schema = AllConnectorSettings.get_connector_settings()[exchange].trade_fee_schema
+
+percent = trade_fee_schema.maker_percent_fee_decimal if is_maker else trade_fee_schema.taker_percent_fee_decimal
+fixed_fees = trade_fee_schema.maker_fixed_fees if is_maker else trade_fee_schema.taker_fixed_fees
+
+trade_fee = AddedToCostTradeFee(percent, trade_fee_schema.percent_fee_token, fixed_fees)
+```
+

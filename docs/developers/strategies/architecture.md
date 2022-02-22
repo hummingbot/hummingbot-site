@@ -194,34 +194,6 @@ The `BudgetChecker` also locks in collateral required for orders and adjusts col
 - `adjust_candidate()`
 - `populate_collateral_entries()`
 
-### TradeFee
-
-#### TradeFeeSchema
-
-Contains the necessary information to build the `TradeFee` object.
-For both makers and takers specifies percent and fixed fees, and tokens in which the fees are paid.
-
-- `percent_fee_token: str`
-- `maker_percent_fee_decimal: Decimal`
-- `taker_percent_fee_decimal: Decimal`
-- `buy_percent_fee_deducted_from_returns: bool`
-- `maker_fixed_fees: List`
-- `taker_fixed_fees: List`
-
-#### TradeFeeBase
-
-- `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
-- `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
-- `get_fee_impact_on_order_returns()`: returns order returns for a particular position closing `OrderCandidate` with fees accounted for
-
-#### AddedToCostTradeFee
-
-Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
-
-#### DeductedFromReturnsTradeFee
-
-Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
-
 ### Example
 
 ```python
