@@ -169,7 +169,7 @@ For both makers and takers specifies percent and fixed fees, and tokens in which
 
 #### TradeFeeBase
 
-The `TradeFeeBase` class uses a `TradeFeeSchema` object of the connector to determine fees to be applied - their types, amounts and assets.
+A specific instance of the `TradeFeeBase` class defines the fees to be applied to an order - their types, amounts and assets.
 
 - `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
 - `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
