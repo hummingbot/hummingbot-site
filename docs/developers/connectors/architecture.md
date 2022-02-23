@@ -177,7 +177,8 @@ A specific instance of the `TradeFeeBase` class defines the fees to be applied t
 
 #### AddedToCostTradeFee
 
-Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
+Fees of this class are applied on top of the cost of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90.9 USDT and added 10 COINX — this is most exchanges' approach to fees).
 
 #### DeductedFromReturnsTradeFee
 
