@@ -148,16 +148,22 @@ For more details on how to begin implementing the components, please refer to th
 Coming soon.
 
 ## Fee Accounting
+The `BudgetChecker` uses the information from a `TradeFeeSchema` to generate a specific instance of `TradeFeeBase` that is then applied to an `OrderCandidate` in order to asses the order's effects on account balances.
 
 ### TradeFee
 
-`TradeFee` is being used by the `BudgetChecker` to determine the appropriate amount and asset of fees to be applied to an order.
-An exchange needs to provide a `TradeFeeSchema` defining its fee structure. Based on this schema a `TradeFee` object will be constructed.
+The `TradeFee` object contains the necessary information to account for fees when estimating an order's impact on account balances.
 
 #### TradeFeeSchema
 
 Contains the necessary information to build the `TradeFee` object.
 For both makers and takers specifies percent and fixed fees, and tokens in which the fees are paid.
+Exchanges must specify their respective default schemas inside their `[exchange]_utils.py` files:
+```python
+DEFAULT_FEES = TradeFeeSchema(
+    maker_percent_fee_decimal=Decimal("0.001"),
+    taker_percent_fee_decimal=Decimal("0.001"),
+)
 
 - `percent_fee_token: str`
 - `maker_percent_fee_decimal: Decimal`
