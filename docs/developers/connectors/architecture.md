@@ -188,7 +188,8 @@ Fees of this class are applied on top of the cost of a buy order (e.g. a buy ord
 
 #### DeductedFromReturnsTradeFee
 
-Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
+Fees of this class are deducted from the returns of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90 USDT and added 9.9 COINX — this is Binance's approach to fees).
 
 #### Example - `TradeFeeSchema`
 
