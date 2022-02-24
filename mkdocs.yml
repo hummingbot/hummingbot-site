@@ -143,7 +143,10 @@ nav:
         - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
         - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
       - Active Governance Proposals: governance/active.md
-      - Epochs: governance/epochs.md
+      - Epochs:
+        - Epochs: governance/epochs/index.md
+        - Epoch 1: governance/epochs/epoch1.md
+        - Epoch 2: governance/epochs/epoch2.md
     - News & Updates:
       - News & Updates: news/index.md
       - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md

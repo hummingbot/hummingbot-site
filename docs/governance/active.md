@@ -1,4 +1,3 @@
-## Active Governance Proposals
 
 The Proposals listed below have been approved and are currently in effect:
 
