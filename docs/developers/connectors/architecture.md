@@ -162,8 +162,9 @@ Exchanges must specify their respective default schemas inside their `[exchange]
 ```python
 DEFAULT_FEES = TradeFeeSchema(
     maker_percent_fee_decimal=Decimal("0.001"),
-    taker_percent_fee_decimal=Decimal("0.001"),
+    taker_percent_fee_decimal=Decimal("0.001")
 )
+```
 
 - `percent_fee_token: str`
 - `maker_percent_fee_decimal: Decimal`
