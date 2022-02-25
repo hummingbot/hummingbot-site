@@ -11,5 +11,17 @@ Each proposal type has different Governance Parameters:
 | Snapshot                     | https://snapshot.org/#/hbot-prp.eth | https://snapshot.org/#/hbot-ip.eth | https://snapshot.org/#/hbot.eth |
 | Vote Duration                | 7 days                    | 14 days                 | 14 days                  |
 | Min HBOT Balance             | 1                         | 10,000                  | 50,000                   |
-| Quorum Percentage            | 0.1% of HBOT total supply | 3% of HBOT total supply | 10% of HBOT total supply |
+| Quorum Percentage            | 0.1% of HBOT circulating supply | 3% of HBOT circulating supply | 10% of HBOT circulating supply |
 | Approval Threshold           | >50% of tokens approved   | >50% of tokens approved | >50% of tokens approved  |
+
+## Minimum Quorum Updates
+
+After the Approval of [HGP-3](https://snapshot.org/#/hbot.eth/proposal/0x9a58b2136b5c20af9d4fd507cd8174e7f6e21425549bbe864e089154f76da415) the minimum Quorum needed for the approval of proposal is now a percentage of the circulating supply.
+
+*Last Update: 01/31/2022*
+
+|                       |                |
+|-----------------------|----------------|
+|**Total Supply**       | 1,000,000,000  |
+|**Circulating Supply** | 27,169,236     |
+
