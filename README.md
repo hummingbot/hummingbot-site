@@ -11,17 +11,23 @@ This documentation site uses [MkDocs](https://www.mkdocs.org/) documentation-foc
 
 ### Insiders
 
-The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of , which features experimental features like tags and social cards. For Hummingbot site editors, see below for how to deploy the site in your local development environment and Netlify:
+The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of MkDocs-Material, which features experimental features like tags and social cards. For site editors, please request access to the CoinAlpha fork of the Insiders repo, so that you can deploy the site in your local development environment and Netlify.
 
 ```
-# change to conda base environment since there may be conflicts with other environments like hummingbot
-➜ conda deactivate
+# create new conda environment
+(base) ➜ conda create -n mkdocs-material
 
-# install mkdocs-material-insiders and dependencies (HTTPS)
-(base) ➜ pip install git+https://github.com/CoinAlpha/mkdocs-material-insiders.git
+# activate new environment
+(base) ➜ conda activate mkdocs-material
 
-# install mkdocs-material-insiders and dependencies (SSH)
-(base) ➜ pip install git+ssh://git@github.com/CoinAlpha/mkdocs-material-insiders
+# install pip
+(mkdocs-material) ➜ conda install pip
+
+# install mkdocs-material-insiders and dependencies
+# (http)
+(mkdocs-material) ➜ pip install git+https://github.com/CoinAlpha/mkdocs-material-insiders.git
+# (ssh)
+(mkdocs-material) ➜ pip install git+ssh://git@github.com/CoinAlpha/mkdocs-material-insiders
 
 # install revision date plugin
 (base) ➜ pip install mkdocs-git-revision-date-plugin
