@@ -130,9 +130,10 @@ nav:
     - FAQ: faq.md
     - HBOT: hbot.md
     - Community: community.md
+    - Reporting: 
+      - Reporting: reporting/index.md
     - Maintenance:
       - Maintenance: maintenance/index.md
-      - Monthly Reports: maintenance/reports.md
       - Exchange Maintenance Process: maintenance/process.md
       - Active Agreements: maintenance/agreements.md
       - Active Maintainers: maintenance/maintainers.md
@@ -197,6 +198,7 @@ nav:
       - TWAP: strategies/twap.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
+      - AltMarkets: exchanges/altmarkets.md
       - AscendEX: exchanges/ascend-ex.md
       - Balancer: exchanges/balancer.md
       - Beaxy: exchanges/beaxy.md
