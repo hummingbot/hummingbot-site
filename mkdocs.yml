@@ -134,7 +134,6 @@ nav:
       - Reporting: reporting/index.md
     - Maintenance:
       - Maintenance: maintenance/index.md
-      - Exchange Maintenance Process: maintenance/process.md
       - Active Agreements: maintenance/agreements.md
       - Active Maintainers: maintenance/maintainers.md
     - Governance:
