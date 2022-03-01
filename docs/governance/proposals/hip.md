@@ -8,7 +8,7 @@ Hummingbot Improvement Proposals (HIP) allow HBOT token holders to propose fixes
 | ---------------------------- | ------------------------- |
 | Snapshot                     | https://snapshot.org/#/hbot-ip.eth |
 | Min HBOT Balance to create   | 10,000                    |
-| Quorum Percentage            | 1% of HBOT total supply   |
+| Quorum Percentage            | 1% of HBOT circulating supply   |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 14 days                   |
 
