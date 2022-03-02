@@ -37,7 +37,7 @@ Note that HGPs only have *For*, *Against*, and *Abstain* voting options, so prop
 
 ## Categories
 
-Proposals related to the topics below need to be approved via a HGP before they can be executed by the Hummingbot Foundation team. Proposals that do not fit in any of these categories should be created through a [Hummingbot Improvement Proposal (HIP)](hip) and will be deleted by the Hummingbot Foundation team if they are created as a HGP.
+Proposals related to the topics below need to be approved via a HGP before they can be executed by the Hummingbot Foundation team. Proposals that do not fit in any of these categories should be created through a [Hummingbot Improvement Proposal (HIP)](/governance/proposals/hip/) and will be deleted by the Hummingbot Foundation team if they are created as a HGP.
 
 ### Liquidity Distributions (LD)
 
@@ -59,8 +59,8 @@ Each Dev Grant Budget should define the total number of HBOT reserved, distribut
 
 After approval, a Dev Grant Budget will be distributed in the following manner:
 
-1. A Developer looking to receive a share of the Dev Grant Budget should create a [Hummingbot Improvement Proposal (HIP)](hip) that describes the scope of the intended work and share of budget sought.
-2. After the HIP is approved, the developer should create a [Pull Request Proposal (PRP)](prp) referencing a Github pull containing the work.
+1. A Developer looking to receive a share of the Dev Grant Budget should create a [Hummingbot Improvement Proposal (HIP)]/governance/proposals/hip/) that describes the scope of the intended work and share of budget sought.
+2. After the HIP is approved, the developer should create a [Pull Request Proposal (PRP)](/governance/proposals/prp/) referencing a Github pull containing the work.
 3. After the PRP is approved, which means the work will be merged into the codebase, the requested HBOT share of Dev Grant Budget is paid to the developer.
 
  If the PRP is rejected, the developer can resubmit the proposal at any moment, so long as the Dev Grant Budget is still available and active.

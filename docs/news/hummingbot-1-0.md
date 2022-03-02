@@ -36,7 +36,7 @@ As the industry-leading crypto trading bot framework, Hummingbot has become an i
 
 Hummingbot is one of the only internally-funded and self-sustainable public goods projects in crypto. From [14+ agreements](/maintenance/agreements) with exchanges that rebate fees based on user trading activity along their respective connectors, **the Foundation is cashflow positive from inception**. As the number of exchange connectors and users increase, we expect this cashflow margin to increase significantly greater than maintenance costs, and excess proceeds will be held in the Foundation treasury available for HBOT token holders to decide how to allocate.
 
-To give the community transparency into operations, the Foundation will publish the monthly fees shared and the estimated fee-generating volume collected from each exchange partner, along with the share paid to staffing costs, maintainers, and allocation to the community. The Foundation plans to publish a [Monthly Report](/maintenance/reports/) listing these sources and uses of funds, starting in February 2022.
+To give the community transparency into operations, the Foundation will publish the monthly fees shared and the estimated fee-generating volume collected from each exchange partner, along with the share paid to staffing costs, maintainers, and allocation to the community. The Foundation plans to publish a [Monthly Report](/reporting/) listing these sources and uses of funds, starting in February 2022.
 
 ## DAO governed by HBOT holders
 

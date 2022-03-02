@@ -3,7 +3,7 @@
 - **End, PRP cutoff**: June 30, 2022
 - **Goal**: Distribute 30 million HBOT tokens
 
-The last day to submit [Hummingbot Improvement Proposals (HIPs)](./proposals/hip) requesting a share of Dev Grant Budgets is May 31, 2022, and the last day to submit [Pull Request Proposals (PRPs)](./proposals/prp) linked to approved HIPs is June 30, 2022.
+The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/proposals/hip/) requesting a share of Dev Grant Budgets is May 31, 2022, and the last day to submit [Pull Request Proposals (PRPs)](/governance/proposals/prp/) linked to approved HIPs is June 30, 2022.
 
 | Category                                                                      | Total HBOT Available      | Target Number of Grants |
 | ------------------------------------------------------------------------------| ------------------------- | ----------------------- |

@@ -19,6 +19,6 @@ Exchanges enter into contractual agreements with the Foundation and its associat
 | [HitBTC](/exchanges/hitbtc)             | fee share | 40%     | [TheHolyRoger](https://github.com/TheHolyRoger) |   |
 | [Huobi](/exchanges/huobi)               | fee share | 30-40%  | CoinAlpha  | CoinAlpha   |
 | [KuCoin](/exchanges/kucoin)             | fee share | 30%     | CoinAlpha  | CoinAlpha   |
-| [OkEx](/exchanges/okex)                 | fee share | 40%     | CoinAlpha  | CoinAlpha   |
+| [OkEx](/exchanges/okx)                  | fee share | 40%     | CoinAlpha  | CoinAlpha   |
 | [NDAX](/exchanges/ndax)                 | monthly fee| $500   | CoinAlpha  |             |
 | [ProBit](/exchanges/probit)             | fee share | 30%     | CoinAlpha  | CoinAlpha   |
