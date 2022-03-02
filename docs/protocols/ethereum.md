@@ -56,7 +56,8 @@ When you import a wallet with Hummingbot, a JSON file named `key_file_[address].
 Within the Hummingbot CLI, you can use the `export_private_key` command to display the private key associated with a wallet address. You can import your wallet to dApps like Metamask and MyCrypto using this private key as well.
 
 !!! warning
-    Ensure that you no longer have your wallet's private key in your clipboard. There is a risk that a malicious website that you visit may utilize Javascript to access your clipboard and copy its contents.
+    Ensure that you no longer have your wallet's private key in your clipboard. There is a real risk that a malicious website
+    may utilize Javascript to access your clipboard and copy its contents.
 
 ## Connecting to Ethereum Node 📡
 
