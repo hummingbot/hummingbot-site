@@ -130,10 +130,10 @@ nav:
     - FAQ: faq.md
     - HBOT: hbot.md
     - Community: community.md
+    - Reporting: 
+      - Reporting: reporting/index.md
     - Maintenance:
       - Maintenance: maintenance/index.md
-      - Monthly Reports: maintenance/reports.md
-      - Exchange Maintenance Process: maintenance/process.md
       - Active Agreements: maintenance/agreements.md
       - Active Maintainers: maintenance/maintainers.md
     - Governance:
@@ -144,7 +144,11 @@ nav:
         - Pull Request Proposals (PRP): governance/proposals/prp.md
         - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
         - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
-      - Epochs: governance/epochs.md
+      - Active Governance Proposals: governance/active.md
+      - Epochs:
+        - Epochs: governance/epochs/index.md
+        - Epoch 1: governance/epochs/epoch1.md
+        - Epoch 2: governance/epochs/epoch2.md
     - News & Updates:
       - News & Updates: news/index.md
       - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md
@@ -193,6 +197,7 @@ nav:
       - TWAP: strategies/twap.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
+      - AltMarkets: exchanges/altmarkets.md
       - AscendEX: exchanges/ascend-ex.md
       - Balancer: exchanges/balancer.md
       - Beaxy: exchanges/beaxy.md
@@ -288,6 +293,8 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.1.0: release-notes/1.1.0.md
+    - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
     - 0.46.0: release-notes/0.46.0.md
     - 0.45.0: release-notes/0.45.0.md

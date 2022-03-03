@@ -8,7 +8,7 @@ HBOT token holders have the right to approve all pull requests, or proposed code
 | ---------------------------- | ------------------------- |
 | Snapshot                     | https://snapshot.org/#/hbot-prp.eth |
 | Min HBOT Balance to create   | 1                         |
-| Quorum Percentage            | 0.1% of HBOT total supply |
+| Quorum Percentage            | 0.1% of HBOT circulating supply |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 7 days                    |
 
@@ -60,7 +60,7 @@ The initial **Pending** period gives the entire Hummingbot community time to dis
 After the Pending period has finished, the PRP becomes Active and enables voting for 3 days:
 
 * No code changes should be made to the pull request during this period.  **A proposal may be considered invalid by the Foundation if changes occur**.
-* If the Quorum Percentage (currently 100,000 tokens) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
+* If the Quorum Percentage (0.1% of the circulating supply) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
 
 !!! warning "Proposal nullification"
     The Foundation can nullify the proposal if it detects major issues on the pull request. Some examples of what could cause a proposal to be nullified are:

@@ -13,7 +13,7 @@ This is done by calling `start_tracking_order()` method in the #Exchange# class.
 
 ### Order Lifecycle Flowchart
 
-![Figure 1: Order lifecycle flowchart](/assets/img/connector-order-lifecycle.svg)
+[![Figure 1: Order lifecycle flowchart](/assets/img/connector-order-lifecycle.svg)](/assets/img/connector-order-lifecycle.svg)
 
 ### Creating an Order
 
