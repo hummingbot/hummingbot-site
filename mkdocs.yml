@@ -51,10 +51,10 @@ plugins:
   - search
   - tags
   - git-revision-date
-  - social:
-      cards_color:
-        fill: rgb(40, 47, 56)
-        text: white
+  # - social:
+  #    cards_color:
+  #      fill: rgb(40, 47, 56)
+  #      text: white
 
 extra:
   homepage: https://hummingbot.org
@@ -279,6 +279,7 @@ nav:
           - Connector Architecture: developers/connectors/architecture/index.md
           - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
           - API Throttler: developers/connectors/architecture/api_throttler.md
+        - Connector Build Process: developers/connectors/connectorbuildprocess.md
         - Debug and Testing: developers/connectors/debug&test.md
       - Strategies:
         - Developing Strategies: developers/strategies/index.md

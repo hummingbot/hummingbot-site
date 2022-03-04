@@ -1,6 +1,90 @@
 # Debugging & Testing
 
-This section will break down some ways to debug and test the code. You are not required to use these options during your development process, but they will greatly help you in it.
+This section will break down some ways to debug and test the code. 
+
+
+# Connector build testing
+
+## Unit Testing
+
+It is expected that all the connector components mentioned in the connector build process will have unit tests validating all methods. This is independent from any validation done by QA testing.
+
+All connector unit tests should not depend on active connections to the exchange to perform the validations. Instead, the interactions with the exchange should always be mocked or emulated. That can be done using the `aioresponses` library for all REST requests, and using the class `NetworkMockingAssistant` for websocket interactions. 
+
+Examples for their use can be found in both Binance and Binance Perpetual connectors' unit tests.
+
+Binance connector tests can be found in [https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/binance](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/binance)
+
+Binance Perpetual connector tests can be found in [https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/derivative/binance_perpetual](https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/derivative/binance_perpetual)
+
+## QA Connector testing [checklist](https://docs.google.com/document/d/1jpwjYHHgOQkNKPSZV3RS7iXFnW-IQ2rvXAV_d9BSMEI/edit?usp=sharing)
+
+### Basic validations (required to check the connector is usable)
+
+
+| Validation              |               Description        |
+| ---------------------- | --------------------------- |
+| Connecting an API key | - Connects when a valid API key is added 
+|  |- Throws an error or warning if the API key is invalid, expired, or has other issues
+| | - The same API key can be used on multiple bots unless specified that can only be used in one instance at a time |
+ Pulling the balance | - Displays the current available balance and should match the balance shown in the exchange.
+ ||- The allocation should be updated whenever there is an open order |
+| Market availability during the strategy creation | -  Autocomplete lists should be available when setting a market during the strategy creation.
+ || - All markets should work when the created strategy is started. |
+| Order submission and cancellation | - Created orders must include an order ID with broker prefix when available.
+||- Orders are submitted without any error in the client.
+||- Submitted order should match the information of the open order in the exchange.
+||- Orders are canceled without any error. Orders are not getting stuck or left out unless it is a manual order.
+|| - The client should not cancel orders that are not created within the instance such as manual orders, orders created by other instances, or third-party bots.
+||- Gracefully rejects/cancels orders that don’t pass the exchange rule. |
+| Data integrity | - Orders book in the client is in sync with the order book in the exchange.
+||- Constantly update whenever there is a change in the exchange.
+||- Prices are updated constantly (status and ticker) whenever there is a change in the exchange. |
+| Filled event | - Full and partial fills are both tracked and recorded properly.
+||- Filled order information should match the trade history in the exchange. |
+
+### Advanced validations
+
+---
+
+| Validation | Description |
+| --- | --- |
+| Compatibility with the available strategies | - The connector should work on any of the strategies available in the client unless the connector is intended for a specific strategy.
+||- The connector should work both as a maker and taker exchange (spot connectors only) |
+| Price updates and balance updates | - In the status window, the prices are constantly being updated whenever a change takes place in the order book.
+||- Available balances are updated whenever an order is created or canceled.
+||- A consistent number of orders are created except if there are multiple bots using the asset, there are hanging orders or an order is removed due to a specific parameter. |
+| Fast refresh rate | - Gracefully cancels orders: No stuck or lost ordersBalance updates accordingly.
+||- There should be no error in the logs during the fast cancellation.
+||- Filled orders are tracked and saved if a filled event took place.
+||- Rate limit warnings are thrown whenever the request is close to maximizing the allowed limit.
+||- Stops placing an order when the rate limit is reached but maintains the connectivity with the exchange. |
+| Long refresh rate | - Maintains connectivity when there is an open order.
+||- Gracefully cancel an order when not filled.
+||- No error should come up during the period that an order is opened (exceptions if there are network issues).
+||- If a network issue took place, the open orders should be tracked once the connection is established.
+||- Tracked and save filled events that may happen during a disconnection. |
+| Multiple orders | - Simultaneously submitting multiple orders without any error.
+||- Simultaneously cancels all the orders without any error.
+||- Available balance and allocations are adjusted accordingly.
+||- Order amounts and levels are adjusted accordingly based on the available balance. |
+| Hanging order | - Continuously tracked hanging orders created within the instance.
+||- Tracked and saved a filled hanging order.
+||- Hanging order should be canceled whenever the strategy is stopped or reached the cancelation percentage.
+||- Hanging orders remain uncanceled whenever non-hanging orders are refreshed.
+||- No hanging order duplication. |
+| Multiple bots | - Open orders in each bot should not be affected by cancelation events happening in another bot.
+||- There should be no conflicting order IDs |
+| History | - Correctly display filled order information.
+||- No duplicate ordersSave partial fills.
+||- Display only orders created by the instance.
+||- Correctly displays asset information. |
+| Trade fees | - Should use the trade fee if available otherwise an estimate fee is used.
+||- The transaction fee recorded in the client (CSV or SQLite) should match the fee shown in the trade history in the exchange. |
+| Data aggregation | - When enabled, all filled trades are aggregated in Datadog.
+||- If the bot is stopped and a filled event took place within the heartbeat interval, this should still be aggregated. |
+
+
 
 !!! warning
     As part of the QA process, you are **required** to include the unit test cases for the code review process to begin. Refer to [Option 1: Unit Test Cases](#option-1-unit-test-cases) to build your unit tests.
