@@ -1,8 +1,7 @@
-### Export Keys
 
 ### `export keys`
 
-Displays API keys, secret keys and wallet private key in the command output pane.
+Displays API keys, secret keys and wallet details in the command output pane.
 
 ```
 >>>  export keys
