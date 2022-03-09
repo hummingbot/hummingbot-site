@@ -1,6 +1,7 @@
 ---
 tags:
 - perp exchange connector
+- ⭐ reference connector
 ---
 
 # `binance_perpetual`

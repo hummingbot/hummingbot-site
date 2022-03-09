@@ -1,7 +1,7 @@
 ---
 tags:
 - market making
-- ⛏️ liquidity mining strategy
+- ⛏️ Miner strategy
 ---
 
 # `cross_exchange_market_making`

@@ -1,53 +1,46 @@
-# Pull Request Proposals (PRP)
-
 ## Summary
 
-HBOT token holders have the right to vote and approve pull requests, or proposed code changes to the official Hummingbot code repository, via **Pull Request Proposals (PRP)**. 
+HBOT token holders have the right to approve all pull requests, or proposed code changes, to the official Hummingbot code repository. All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on Snapshot related to it.
 
-All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on the Hummingbot Snapshot space related to it.
+## Voting requirements
 
-## Proposal Voting Requirements
-
-| Proposal Type                | Pull Request              |
-| ---------------------------- | ----------------------  - |
+| Proposal Type                | Pull Request Proposal     |
+| ---------------------------- | ------------------------- |
+| Snapshot                     | https://snapshot.org/#/hbot-prp.eth |
 | Min HBOT Balance to create   | 1                         |
-| Quorum Percentage            | 0.1% of HBOT total supply |
+| Quorum Percentage            | 0.1% of HBOT circulating supply |
 | Approval Threshold           | >50% of tokens approved   |
 | Vote Duration                | 7 days                    |
 
-## PRP lifecycle
+## Lifecycle
 
 ### 1. Pull request is created
 
-Anyone can submit a new [pull request](https://github.com/hummingbot/hummingbot/pulls) in the Hummingbot repository targeting the `development` branch.
+Anyone can submit a new [pull request](https://github.com/hummingbot/hummingbot/pulls) in the Hummingbot repository.
 
-Specifically, the pull request must:  
+For a pull request to be included in a PRP, it must satisy the following requirements:
 
-* Target the `development` branch with no merge conflicts;
-* Contain a clear description of what what **Pull Request** does and why it is needed;
-* Enable **Allow edits by maintainers**;
-* Contain unit tests and and they all pass (connectors only);
+1. Target the `development` branch with no merge conflicts;
+2. Contain a clear description of what what **Pull Request** does and why it is needed;
+3. Enable **Allow edits by maintainers**;
+4. Contain unit tests and and they all pass (connectors only);
+
+If the pull request included in a PRP does not meet the requirements described above, the PRP will be removed by Foundation staff.
 
 For more information, see [Contribution Guidelines](/developers/contributions/#5-create-a-pull-request).
 
 ### 2. Proposal is created
 
-With the pull request created and the minimum requirements listed above are met, the next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot-prp.eth. **This space is dedicated for Pull Request Proposals (PRP).**
+The next step is to create a proposal on the following Snapshot space: https://snapshot.org/#/hbot-prp.eth. **This space is dedicated for Pull Request Proposals (PRP).**
 
 The PRP should contain the following information:
 
 * **Title**: Pull request number and title
 * **Description**: Description summary and a link to the pull request in Github
 
-!!! note
-    In the near future, any ETH address with at least 1 HBOT can create a Pull Request Proposal related to a Pull Request. In order to test and improve the process of voting and merging the approved PRP, only Hummingbot Foundation members will be able to create new PRPs until the Hummingbot 1.0 release, scheduled for late January.
-
-If the pull request or PRP do not meet the requirements described above, the PRP may be deleted by Foundation staff.
-
 Here is an example of a PRP in Snapshot:
 
-![](/assets/img/example prp.png)
-*PRP on example*
+[![PRP on example](/assets/img/example prp.png)](/assets/img/example prp.png)
 
 ### 3. Pending review
 
@@ -67,7 +60,7 @@ The initial **Pending** period gives the entire Hummingbot community time to dis
 After the Pending period has finished, the PRP becomes Active and enables voting for 3 days:
 
 * No code changes should be made to the pull request during this period.  **A proposal may be considered invalid by the Foundation if changes occur**.
-* If the Quorum Percentage (currently 100,000 tokens) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
+* If the Quorum Percentage (0.1% of the circulating supply) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
 
 !!! warning "Proposal nullification"
     The Foundation can nullify the proposal if it detects major issues on the pull request. Some examples of what could cause a proposal to be nullified are:
@@ -88,7 +81,7 @@ The Foundation reserves the right to revert an approved pull request if major is
 
 If the PRP fails to meet the approval thresholds at the end of the Voting Period, it will be rejected. Afterwards, the Foundation will close the related pull request in the Hummingbot repository. However, the developer is free to create a new pull request and a new proposal at a subsequent date.
 
-## Development & Release Cycle
+## Development & release cycle
 
 <!-- @todo Create a new page about the release process and keep here only info about the PRP voting and approval. -->
 
@@ -96,8 +89,7 @@ After a PRP is approved the Pull Request linked to it will go through the follow
 
 ### Branches
 
-![](/assets/img/pull request proposal workflow.png)
-*PRP code merge workflow*
+[![PRP code merge workflow](/assets/img/pull request proposal workflow.png)](/assets/img/pull request proposal workflow.png)
 
 The Hummingbot code repository has three main branches related to the development cycle of each monthly release:
 
@@ -117,8 +109,7 @@ All pull requests aiming to be included on the `master` branch must be targeted 
 
 Hummingbot ships a new release approximately every month. Each release is built, tested and released over a two-month cycle that overlaps with the next release.
 
-![](/assets/img/pull request proposal period.png)
-*Release schedule*
+[![Release schedule](/assets/img/pull request proposal period.png)](/assets/img/pull request proposal period.png)
 
 #### Month 1: Review and approve
 

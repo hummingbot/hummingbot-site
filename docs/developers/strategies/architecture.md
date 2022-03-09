@@ -1,4 +1,4 @@
-![StrategyBase class relations](/assets/img/strategy-uml.svg)
+[![StrategyBase class relations](/assets/img/strategy-uml.svg)](/assets/img/strategy-uml.svg)
 
 All strategy classes are derived from the [`StrategyBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class, which is derived from the [`TimeIterator`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class.
 
@@ -159,3 +159,58 @@ Below are some of the user functions or properties under `OrderTracker` that you
     Returns a dictionary of order IDs that are being cancelled.
 
     Return type: `Dict[str, float]`
+
+
+## Fee Accounting
+
+### OrderCandidate
+
+An order proposal created by a strategy.
+
+A `BudgetChecker` takes an `OrderCandidate` and fills in fees to be paid for this particular order (in pre-defined tokens). Then checks if, after accounting for the fees, the account balances allow for a placement of this order, and if not, adjusts the order amount accordingly. 
+
+Fees can be payable in the base tokens, quote tokens, or 3rd party tokens.
+
+In general, if an order opens a position, fees will be charged as an additional cost of the order, and if an order closes a position, fees will be deducted from the returns.
+A few exchanges however don't follow this principle. Strategies however don't have to handle this and should rely on the BudgetChecker obtained from the exchange to calculate fees the correct way.
+
+Once the candidate order has been sized by the `BudgetChecker`, the strategy can examine the sized order to get more information such as `OrderCandidate.collateral_dict` to get a dictionary of the costs associated with the order, or `OrderCandidate.potential_returns` to get an idea of the token and amount of the returns associated with the order.
+
+### BudgetChecker
+
+Is intended to be a single universal solution for fee accounting and checking feasibility of `OrderCandidates`.
+
+Provides utilities for strategies to check the potential impact of `OrderCandidates` on user account balances.
+Mainly used to determine if sufficient balances are available to place a set of strategy-proposed orders.
+
+It can work with a single `OrderCandidate` or a list of `OrderCandidates`. 
+In case of multiple `OrderCandidates` the `BudgetChecker` verfies if the set of orders as a whole is feasible.
+
+The `BudgetChecker` also locks in collateral required for orders and adjusts collateral available for future `OrderCandidates`.
+
+- `reset_locked_collateral()`
+- `adjust_candidates()`
+- `adjust_candidate_and_lock_available_collateral()`
+- `adjust_candidate()`
+- `populate_collateral_entries()`
+
+### Example
+
+```python
+budget_checker = market_info.market.budget_checker
+order_candidate = OrderCandidate(
+    trading_pair=market_info.trading_pair,
+    is_maker=False,
+    order_type=OrderType.LIMIT,
+    order_side=TradeType.BUY,
+    amount=order_amount,
+    price=order_price,
+)
+
+adjusted_candidate_order = budget_checker.adjust_candidate(order_candidate, all_or_none=True)
+
+if adjusted_candidate_order.amount < order_amount:
+    # Order cannot be placed
+else:
+    # Order can be placed
+```

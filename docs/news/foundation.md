@@ -123,7 +123,7 @@ CoinAlpha will continue to maintain certain parts of the codebase, in addition t
 
 CoinAlpha will assign to the Foundation all fee share agreements with exchanges that rebate a portion of fees incurred by Hummingbot users based on their usage of Hummingbot, tracked at the API header level.
 
-Currently, CoinAlpha has numerous agreements with exchanges, including [Binance.com](/exchanges/binance), [OKEx](/exchanges/okex), [Huobi](/exchanges/huobi), [KuCoin](/exchanges/kucoin), [Gate.io](/exchanges/gate-io), [Bitfinex](/exchanges/bitfinex), and [AscendEX](/exchanges/ascendex). For each exchange connector, the Foundation will appoint a maintainer, who will be responsible for fixing bugs in exchange for a portion of the fees generated.
+Currently, CoinAlpha has numerous agreements with exchanges, including [Binance.com](/exchanges/binance), [OKEx](/exchanges/okx), [Huobi](/exchanges/huobi), [KuCoin](/exchanges/kucoin), [Gate.io](/exchanges/gate-io), [Bitfinex](/exchanges/bitfinex), and [AscendEX](/exchanges/ascend-ex/). For each exchange connector, the Foundation will appoint a maintainer, who will be responsible for fixing bugs in exchange for a portion of the fees generated.
 
 In addition, the Foundation plans to charge bounty administration fees to administer, review and merge the development work performed by bounty contributors.
 
