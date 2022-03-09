@@ -1,0 +1,18 @@
+{
+  "name": "hummingbot-site",
+  "version": "1.0.0",
+  "description": "Welcome to the official website and documentation for Hummingbot and the Hummingbot Foundation!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hummingbot/hummingbot-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hummingbot/hummingbot-site/issues"
+  },
+  "homepage": "https://github.com/hummingbot/hummingbot-site#readme",
+  "devDependencies": {
+    "netlify-plugin-cache": "^1.0.3"
+  }
+}

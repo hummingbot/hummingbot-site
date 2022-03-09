@@ -111,7 +111,7 @@ The closer the `risk_factor` is to **zero**, the more symmetrical will be orders
 
 In that case, the user is taking more inventory risk, because there will be no skew on the orders positions aiming to reach the `inventory_target_base_pct`.
 
-The igher the value, the more aggressive the strategy will be to reach the `inventory_target_base_pct`, increasing the distance between the **Reservation price** and the market mid price.
+The higher the value, the more aggressive the strategy will be to reach the `inventory_target_base_pct`, increasing the distance between the **Reservation price** and the market mid price.
 
 It's a unit-less parameter, that can be set to any non-zero value as necessary, depending on the inventory risk the user is willing to take. 
 
@@ -120,6 +120,17 @@ It's a unit-less parameter, that can be set to any non-zero value as necessary, 
 > The only way to find a value for the `risk_factor` is to experiment with different values and see it's effects on the **Reservation price** and the **Optimal spread**.
 
 Given the right market conditions and the right `risk_factor`, it's possible that the optimal spread will be wider than the absolute price of the asset, or that the reservation price will by far away from the mid price, in both cases resulting in the optimal bid price to be lower than or equal to 0. If this happens neiher buy or sell will be placed. To prevent it from happening, users can set the `risk_factor` to a lower value.
+
+The following examples can serve as a starting point in tuning the parameter. It's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
+
+| Asset price  | Example risk factor |
+|--------------|---------------------|
+| 2500         | 2                   |
+| 10           | 10                  |
+| 0.01         | 1000                |
+
+![Figure 1: Risk factor adjustment flow chart ](/assets/img/avellaneda_risk_factor.svg)
+
 
 #### ETA (Order size adjustment)
 
@@ -133,7 +144,7 @@ Users have an option to layer orders on both sides. If more than 1 `order_levels
 
 ### Trading logic flow
 
-![Figure 1: Strategy flow chart](/assets/img/avellaneda.svg)
+![Figure 2: Strategy flow chart](/assets/img/avellaneda.svg)
 
 | Step                               | Meaning                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------|

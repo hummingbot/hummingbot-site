@@ -1,55 +1,15 @@
 # Connector Architecture
 
-![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)
+[![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)](/assets/img/connector-architecture-diagram.svg)
 
 The **_Architecture Diagram_**, given above, depicts the high-level design of a Connector. 
 
 !!! tip
     Notice that for `Derivative` connectors, we have a multiple inheritance to `ExchangeBase` and `PerpetualTrading`.
 
-## Root Directory and File Structure
-
-```
-hummingbot/connector/
-├── connector/
-│   ├── uniswap
-│   │   ├── uniswap_connector.py
-│   │   ├── uniswap_in_flight_order.py
-│   │   ├── uniswap_utils.py
-│   │   ├── dummy.pxd
-│   │   └── dummy.pyx
-│   └── ...
-├── derivative/
-│   ├── bybit_perpetual
-│   │   ├── bybit_perpetual_api_order_book_data_source.py
-│   │   ├── bybit_perpetual_derivative.py
-│   │   ├── bybit_perpetual_in_flight_order.py
-│   │   ├── bybit_perpetual_order_book_tracker.py
-│   │   ├── bybit_perpetual_order_book.py
-│   │   ├── bybit_perpetual_user_stream_tracker.py
-│   │   ├── bybit_perpetual_utils.py
-│   │   ├── bybit_perpetual_constants.py
-│   │   ├── dummy.pxd
-│   │   └── dummy.pyx
-│   └── ...
-└── exchange/
-    ├── ndax
-    │   ├── ndax_api_order_book_data_source.py
-    │   ├── ndax_derivative.py
-    │   ├── ndax_in_flight_order.py
-    │   ├── ndax_order_book_tracker.py
-    │   ├── ndax_order_book.py
-    │   ├── ndax_user_stream_tracker.py
-    │   ├── ndax_utils.py
-    │   ├── ndax_constants.py
-    │   ├── dummy.pxd
-    │   └── dummy.pyx
-    └── ...
-```
-
 ## Connector Component Overview
 
-![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)
+[![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)](/assets/img/high-level-connector-architecture-diagram.svg)
 
 Each connector is comprised of the following components.
 Below are the detailed descriptions of tasks for each component and its corresponding files.
@@ -62,10 +22,9 @@ Connector modules are centered around an `Exchange/Derivative` class, which are 
 Each `Exchange/Derivative` class contains an `OrderBookTracker` and `UserStreamTracker,` and they are responsible for maintaining order books and user account information.
 
 `Exchange/Derivative` instances also contain a list of `InFlightOrders`, which are orders placed by Hummingbot currently on the order book.
-Typically, it is also helpful to have an exchange-specific `Auth` class, which generates the necessary authentication parameters/headers to access restricted REST endpoints and WebSocket channel, such as for placing orders and listening for order updates.
 
 The `Derivative` class in particular inherits functions that are specifically used in perpetual markets.
-See the [PerpetualTrading](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/perpetual_trading.py) class for more info.
+See the [`PerpetualTrading`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/perpetual_trading.py) class for more info.
 
 ### ConnectorAuth.py
 
