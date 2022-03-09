@@ -105,3 +105,71 @@ For more details on how to begin implementing the components, please refer to th
 ## Protocol Connector Components Overview\ [TBD\]
 
 Coming soon.
+
+## Fee Accounting
+The `BudgetChecker` uses the information from a `TradeFeeSchema` to generate a specific instance of `TradeFeeBase` that is then applied to an `OrderCandidate` in order to asses the order's effects on account balances.
+
+### TradeFee
+
+The `TradeFee` object contains the necessary information to account for fees when estimating an order's impact on account balances.
+
+#### TradeFeeSchema
+
+Contains the necessary information to build the `TradeFee` object.
+For both makers and takers specifies percent and fixed fees, and tokens in which the fees are paid.
+Exchanges must specify their respective default schemas inside their `[exchange]_utils.py` files:
+```python
+DEFAULT_FEES = TradeFeeSchema(
+    maker_percent_fee_decimal=Decimal("0.001"),
+    taker_percent_fee_decimal=Decimal("0.001")
+)
+```
+
+- `percent_fee_token: str`
+- `maker_percent_fee_decimal: Decimal`
+- `taker_percent_fee_decimal: Decimal`
+- `buy_percent_fee_deducted_from_returns: bool`
+- `maker_fixed_fees: List`
+- `taker_fixed_fees: List`
+
+
+#### TradeFeeBase
+
+A specific instance of the `TradeFeeBase` class defines the fees to be applied to an order - their types, amounts and assets.
+
+- `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
+- `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
+- `get_fee_impact_on_order_returns()`: returns order returns for a particular position closing `OrderCandidate` with fees accounted for
+
+#### AddedToCostTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
+Fees of this class are applied on top of the cost of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90.9 USDT and added 10 COINX — this is most exchanges' approach to fees).
+
+#### DeductedFromReturnsTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
+Fees of this class are deducted from the returns of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90 USDT and added 9.9 COINX — this is Binance's approach to fees).
+
+#### Example - `TradeFeeSchema`
+
+```python
+trade_fee_schema = TradeFeeSchema(
+    maker_percent_fee_decimal=Decimal("1.0"),
+    taker_percent_fee_decimal=Decimal("2.3")
+)
+```
+
+#### Example - `TradeFee`
+
+```python
+from hummingbot.client.settings import AllConnectorSettings
+
+trade_fee_schema = AllConnectorSettings.get_connector_settings()[exchange].trade_fee_schema
+
+percent = trade_fee_schema.maker_percent_fee_decimal if is_maker else trade_fee_schema.taker_percent_fee_decimal
+fixed_fees = trade_fee_schema.maker_fixed_fees if is_maker else trade_fee_schema.taker_fixed_fees
+
+trade_fee = AddedToCostTradeFee(percent, trade_fee_schema.percent_fee_token, fixed_fees)
+```
+
