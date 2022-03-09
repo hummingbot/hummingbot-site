@@ -51,11 +51,17 @@ The current board members are:
 
 ## History
 
-Hummingbot is the leading open source software for building market making and arbitrage bots. Launched in April 2019, Hummingbot served the cryptocurrency market’s need for liquidity by enabling anyone to become a liquidity provider. Because Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies, it has scaled into a bazaar-style open source project with many contributors and users around the world, both individual and professional.
+Hummingbot is the leading open source software for building market making and arbitrage bots. 
+
+As we wrote in the original [Hummingbot whitepaper](https://hummingbot.io/hummingbot.pdf), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
+
+Launched in April 2019, Hummingbot served the cryptocurrency market’s need for liquidity by enabling anyone to become a liquidity provider. Because Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies, it has scaled into a bazaar-style open source project with many contributors and users around the world, both individual and professional.
 
 Hummingbot was originally built and open sourced by CoinAlpha Inc, a startup based in Mountain View, California. CoinAlpha is backed by [Initialized Capital](https://initialized.com/), [Bain Capital Ventures](https://www.baincapitalventures.com/), [DeFiance Capital](https://www.defiance.capital/), and other leading crypto and fintech investors.
 
-CoinAlpha runs businesses that support the Hummingbot ecosystem, such as:
+Later, we pioneered the concept of community-powered, decentralized market making by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform, [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
+
+Today, CoinAlpha runs businesses that support the Hummingbot ecosystem, such as:
 
 * [Hummingbot Miner](https://miner.hummingbot.io): a decentralized market making platform where Hummingbot users can run market making bots on centralized exchanges to earn token rewards from token issuers who seek a decentralized, community-based alternative to hiring market makers for liquidity services
 * [Hummingbot Pro](/developers/architecture/#hummingbot-pro-preview): a forthcoming module that combines a Cython-based backtesting engine plugin, access to historical order book data, and associated services/support aimed at professional and institutional Hummingbot users.

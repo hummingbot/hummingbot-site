@@ -1,6 +1,7 @@
 ---
 tags:
 - spot exchange connector
+- ⛏️ Miner exchange
 ---
 
 # `gate_io`

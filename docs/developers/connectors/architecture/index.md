@@ -1,51 +1,15 @@
 # Connector Architecture
 
-![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)
+[![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)](/assets/img/connector-architecture-diagram.svg)
 
 The **_Architecture Diagram_**, given above, depicts the high-level design of a Connector. 
 
 !!! tip
     Notice that for `Derivative` connectors, we have a multiple inheritance to `ExchangeBase` and `PerpetualTrading`.
 
-## Root Directory and File Structure
-
-```
-hummingbot/connector/
-├── connector/
-│   └── ...
-├── derivative/
-│   ├── binance_perpetual
-│   │   ├── binance_perpetual_api_order_book_data_source.py
-│   │   ├── binance_perpetual_auth.py
-│   │   ├── binance_perpetual_derivative.py
-│   │   ├── binance_perpetual_order_book.py
-│   │   ├── binance_perpetual_order_book_tracker.py
-│   │   ├── binance_perpetual_user_stream_data_source.py
-│   │   ├── binance_perpetual_user_stream_tracker.py
-│   │   ├── binance_perpetual_utils.py
-│   │   ├── constants.py
-│   │   ├── dummy.pxd
-│   │   └── dummy.pyx
-│   └── ...
-└── exchange/
-    ├── binance
-    │   ├── binance_api_order_book_data_source.py
-    │   ├── binance_api_user_stream_data_source.py
-    │   ├── binance_auth.py
-    │   ├── binance_constants.py
-    │   ├── binance_exchange.py
-    │   ├── binance_order_book.py
-    │   ├── binance_order_book_tracker.py
-    │   ├── binance_user_stream_tracker.py
-    │   ├── binance_utils.py
-    │   ├── dummy.pxd
-    │   └── dummy.pyx
-    └── ...
-```
-
 ## Connector Component Overview
 
-![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)
+[![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)](/assets/img/high-level-connector-architecture-diagram.svg)
 
 Each connector is comprised of the following components.
 Below are the detailed descriptions of tasks for each component and its corresponding files.
@@ -61,7 +25,7 @@ Each `Exchange/Derivative` class contains an `OrderBookTracker` and `UserStreamT
 Typically, it is also helpful to have an exchange-specific `Auth` class, which generates the necessary authentication parameters/headers to access restricted REST endpoints and WebSocket channel, such as for placing orders and listening for order updates.
 
 The `Derivative` class in particular inherits functions that are specifically used in perpetual markets.
-See the [PerpetualTrading](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/perpetual_trading.py) class for more info.
+See the [`PerpetualTrading`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/perpetual_trading.py) class for more info.
 
 ### ConnectorAuth.py
 

@@ -1,3 +1,20 @@
-.md-header, .md-tabs {
-  background-color: rgb(40, 47, 56) !important;
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: rgb(29, 34, 40);
+  --md-default-bg-color--light: rgb(29, 34, 40, 0.54);
+  --md-default-bg-color--lighter: rgb(29, 34, 40, 0.26);
+  --md-default-bg-color--lightest: rgb(29, 34, 40, 0.07);
+  --md-footer-bg-color: rgb(23, 27, 32, 0.87);
+  --md-footer-bg-color-dark: rgb(23, 27, 32);
+}
+
+.md-header,
+.md-tabs,
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  background-color: rgb(40, 47, 56);
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-nav__source {
+    background-color: rgb(23, 27, 32);
+  }
 }
