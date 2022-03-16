@@ -10,7 +10,7 @@ The Hummingbot Foundation’s primary role is to coordinate the ongoing maintena
 
 ## Monthly reporting
 
-To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation will publish a monthly report that lists the sources and uses of funds, starting in February 2021.
+To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation will publish a monthly report that lists the sources and uses of funds, starting in February 2022.
 
 See [Monthly Reports](/reporting) for more information.
 
