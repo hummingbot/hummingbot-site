@@ -149,7 +149,7 @@ To ensure that Retroactive Distribution recipients securely receive their HBOT t
 The historical HBOT token distribution process will run for approximately two and a half months:
 
 * **Start date**:	December 17, 2021
-* **End date**:	February 28, 2021 11.59pm UTC
+* **End date**:	February 28, 2022 11.59pm UTC
 
 Afterwards, any unclaimed tokens will revert to the Hummingbot Foundation and will be added to the Year 1 Reserve.
 
@@ -180,7 +180,7 @@ For example:
 * **Initial weekly claim period**: December 17, 2021 00:00 UTC to December 24, 2021 00:00 UTC
 * **Initial distribution window**: Between December 24, 2021 00:00 UTC and December 31, 2021 00:00 UTC
 
-The first distributions of tokens will occur during the initial distribution window for users who claimed tokens in the initial weekly claim period. This process will repeat weekly throughout the entire claim period through the end of February 2021.
+The first distributions of tokens will occur during the initial distribution window for users who claimed tokens in the initial weekly claim period. This process will repeat weekly throughout the entire claim period through the end of February 2022.
 
 The Hummingbot Foundation plans to maintain some flexibility on the precise timing for distributing tokens to account for, among other things, prevailing Ethereum gas prices.  Users will be notified by email when their respective HBOT tokens have been distributed to them.
 
