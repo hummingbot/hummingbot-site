@@ -293,6 +293,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.2.0: release-notes/1.2.0.md
     - 1.1.1: release-notes/1.1.1.md
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
