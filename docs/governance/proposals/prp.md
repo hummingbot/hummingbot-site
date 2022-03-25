@@ -2,6 +2,8 @@
 
 HBOT token holders have the right to approve all pull requests, or proposed code changes, to the official Hummingbot code repository. All pull requests will only be merged into `development` and included in a subsequent release if there is an approved PRP on Snapshot related to it.
 
+Since [HGP-10 GC](https://snapshot.org/#/hbot.eth/proposal/0x4c11d3166c9582fb33da9ccbd9ab3df8bae74f7d6dd18424f4fca866b1a8ebfd) was passed, the current PRP voting period was changed from 4 days pending, 3 days for voting, to 7 days open for voting.
+
 ## Voting requirements
 
 | Proposal Type                | Pull Request Proposal     |
@@ -38,28 +40,17 @@ The PRP should contain the following information:
 * **Title**: Pull request number and title
 * **Description**: Description summary and a link to the pull request in Github
 
+* Proposal submitter may promote discussion of the pull request on Discord **#governance-chat** channels and the [Governance Forum](https://commonwealth.im/hummingbot-foundation/)
+
 Here is an example of a PRP in Snapshot:
 
 [![PRP on example](/assets/img/example prp.png)](/assets/img/example prp.png)
 
-### 3. Pending review
+### 3. Active voting
 
-The Voting Period for PRPs is currently **7 days**, divided between Pending (4 days) and Active (3 days).
+Once the proposal is published, the PRP becomes Active and enables voting for 7 days:
 
-The initial **Pending** period gives the entire Hummingbot community time to discuss the pull request, review the code submitted, and decide whether the Foundation should undertake the time and effort to review and merge in the proposed changes
-
-* Proposal submitter may promote discussion of the pull request on Discord **#governance-chat** channels and the [Governance Forum](https://commonwealth.im/hummingbot-foundation/)
-* The developer that created the pull request will be able to change his pull request as needed
-* Code changes during this period must not change the original intent of the pull request
-
-!!! note "Discuss code on Github"
-    All discussions related to the code changes should happen on the Github page associated with pull request
-
-### 4. Active voting
-
-After the Pending period has finished, the PRP becomes Active and enables voting for 3 days:
-
-* No code changes should be made to the pull request during this period.  **A proposal may be considered invalid by the Foundation if changes occur**.
+* No code changes should be made to the pull request during this period.  **A PRP will be considered invalid if the respective Pull Request is changed after it’s creation**.
 * If the Quorum Percentage (0.1% of the circulating supply) have voted (either directly or via delegation) and the Approval Threshold based on participating votes (currently 50%) is exceeded, the Foundation labels the Github pull request as “approved”;
 
 !!! warning "Proposal nullification"
@@ -73,7 +64,7 @@ After the Pending period has finished, the PRP becomes Active and enables voting
 
     * Any other major issue with the code.
 
-### 5. Code merged or rejected
+### 4. Code merged or rejected
 
 If the PRP is approved, the Foundation will attempt to merge the related pull request into the `development` branch. During the merge process, the Foundation QA team will test the submitted pull request to ensure that it works properly. If issues are found by the Foundation QA team, the developer will be contacted to fix the problems found before completing the merge.
 
