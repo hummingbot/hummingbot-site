@@ -25,11 +25,15 @@ For Epoch 1, the Hummingbot Foundation believes that **20,000 HBOT for one day o
 |[HGP-2](https://snapshot.org/#/hbot.eth/proposal/0x3971d8250ba82cd631141949dbfc77f2df11e99547b265074cab3155c8c36ad0)| 5,000,000 | Approved |
 |[HGP-4](https://snapshot.org/#/hbot.eth/proposal/0xd0c5b54badfd631d7433da0f76795a9dc0d82fc66596d547cda2f3537f903e3f)| 1,000,000 | Approved |
 |[HGP-5](https://snapshot.org/#/hbot.eth/proposal/0xc2b0005a70183758d9bec46a0b532ddebb3e903738e4ba17302c5dd66ec874a0)| 2,000,000 | Approved |
+|[HGP-6](https://snapshot.org/#/hbot.eth/proposal/0xdcec64d93ed0741360c63eb2fcd897a20e24ed0f15ef7f2d7a90564b70be58b3)| 1,000,000 | Approved |
+|[HGP-7](https://snapshot.org/#/hbot.eth/proposal/0x4480a6868355b8f4ad3dfcfa5d3e8bb043175bb8b250549433e5ba3360af536f)| 2,500,000 | Approved |
+|[HGP-8](https://snapshot.org/#/hbot.eth/proposal/0x1586f3f7b94a05d17f34627b7f51484e578a4764d02d96c6cd18c2832ba34713)| 3,000,000 | Approved |
+|[HGP-11](https://snapshot.org/#/hbot.eth/proposal/0x649beb18fc251ba2be18b76612e5ce1a29a1be96b41bdd31ec3a045b79512821)| 2,000,000 | Approved |
 
 
-**Total HBOT allocated on Epoch 1:** 8,000,000
+**Total HBOT allocated on Epoch 1:** 16,500,000
 
-**HBOT still available for Epoch 1 Distribution:** 22,000,000
+**HBOT still available for Epoch 1 Distribution:** 13,500,000
 
 ## Epoch 1 Review
 
