@@ -58,6 +58,6 @@ Once your wallet has been connected to the gateway, you can the connection with
 balance
 ```
 
-And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges.
+And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. Other ERC20 token assets on your wallet will only be displayed once you have loaded an [amm_arb strategy](/strategies/amm-arbitrage/).
 
 ![Getting blockchain asset balances](/assets/img/gateway-balance.png)

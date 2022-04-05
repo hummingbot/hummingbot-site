@@ -6,19 +6,21 @@ tags:
 
 # `uniswap`
 
-!!! note
-    This connector is currently being refactored as part of the [Gateway V2 redesign](/developers/gateway). The current V1 version is working, but may have usability issues that will be addressed in the redesign.
+The Uniswap protocol connector is now managed by Gateway V2 - where the Gateway is now responsible for all on-chain operations (e.g. fetching prices and creating trade transactions), and the `GatewayEVMAMM` class on Hummingbot side is responsible for interfacing with Gateway V2.
 
 ## 📁 Folders
 
-* [Hummingbot - Connector](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/connector/uniswap)
-* [Gateway - Routes](https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/uniswap.ts)
-* [Gateway - Service](https://github.com/CoinAlpha/gateway-api/blob/master/src/services/uniswap.js)
+** TBA: Update the links after feat/gateway-v2 has been merged. **
+
+* [Hummingbot - GatewayEVMAMM](https://github.com/)
+* [Gateway V2 - Uniswap Routes](https://github.com/)
+* [Gateway V2 - Uniswap Controller](https://github.com/)
+* [Gateway V2 - Uniswap Class](https://github.com/)
 
 ## ℹ️ Exchange Info
 
-**Uniswap** 
-[Website](https://uniswap.org/) | [CoinMarketCap](https://coinmarketcap.com/currencies/terra-luna/) | [CoinGecko](https://www.coingecko.com/en/coins/uniswap)
+**Uniswap**
+[Website](https://uniswap.org/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/uniswap-v2/) | [CoinGecko](https://www.coingecko.com/en/exchanges/uniswap_v2)
 
 * API docs: https://docs.uniswap.org/protocol/V2/introduction
 * SDK: https://docs.uniswap.org/sdk/introduction
@@ -26,11 +28,12 @@ tags:
 
 ## 👷 Maintenance
 
-* Release added: [0.34.0](/release-notes/0.34.0/) by CoinAlpha
+* TBA
 * Maintainer: CoinAlpha
 
-## 🔑 Connection
+## 🔑 Setup
 
-First, follow the instructions to install and run [Hummingbot Gateway](/protocols/gateway/).
-
-Since this exchange is an Ethereum-based decentralized exchange (DEX), run `connect ethereum` in order to connect your Ethereum wallet. See [Ethereum](/protocols/ethereum) for more information.
+1. Follow the instructions to install and run [Hummingbot Gateway V2](/protocols/gateway/).
+2. Run `gateway connect uniswap` and add your Ethereum wallet to Gateway V2 for trading on Uniswap.
+3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Uniswap and a different exchange.
+4. Run `start` to start the strategy, and you're trading!

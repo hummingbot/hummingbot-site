@@ -34,11 +34,10 @@ This strategy monitors prices between a trading pair on an `amm` exchange versus
 | `market_2` | string | | True | Enter the token trading pair you would like to trade on [connector_2] |
 | `order_amount` | decimal | | True | What is the amount of [base_asset] per order? |
 | `min_profitability` | decimal | 1 | True | What is the minimum profitability for you to make a trade? |
-| `market_1_slippage_buffer` | decimal | 0.05 | True | How much buffer do you want to add to the price to account for slippage for orders on the first market |
+| `market_1_slippage_buffer` | decimal | 1 | True | How much buffer do you want to add to the price to account for slippage for orders on the first market |
 | `market_2_slippage_buffer` | decimal | 0 | True | How much buffer do you want to add to the price to account for slippage for orders on the second market |
 | `concurrent_orders_submission` | bool | False | True | Do you want to submit both arb orders concurrently (Yes/No) ? If No, the bot will wait for first connector order filled before submitting the other order |
-| `use_oracle_conversion_rate` | bool | | True | Do you want to use rate oracle on unmatched trading pairs? (Yes/No) |
-| `secondary_to_primary_quote_conversion_rate` | decimal | 1 | False | Enter conversion rate for secondary quote asset value to primary quote asset value |
+| `gateway_transaction_cancel_interval` | int | 600 | True | After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds) >>> |
 
 ## 📓 Description
 

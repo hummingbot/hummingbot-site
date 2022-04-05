@@ -226,6 +226,7 @@ nav:
       - MEXC: exchanges/mexc.md 
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx.md
+      - Pangolin: exchanges/pangolin.md
       - Perpetual Protocol: exchanges/perp-fi.md
       - ProBit Global: exchanges/probit.md
       - ProBit Korea: exchanges/probit-korea.md
@@ -234,8 +235,7 @@ nav:
       - WazirX: exchanges/wazirx.md
     - Protocol Connectors:
       - Protocol Connectors: protocols/index.md
-      - Gateway: protocols/gateway.md
-      - Ethereum: protocols/ethereum.md
+      - Gateway V2: protocols/gateway.md
       - Celo: protocols/celo.md
       - Terra: protocols/terra.md
     - Global Configs:
