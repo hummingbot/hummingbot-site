@@ -10,7 +10,7 @@ The Hummingbot Foundation’s primary role is to coordinate the ongoing maintena
 
 ## Monthly reporting
 
-To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation will publish a monthly report that lists the sources and uses of funds, starting in February 2021.
+To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation will publish a monthly report that lists the sources and uses of funds, starting in February 2022.
 
 See [Monthly Reports](/reporting) for more information.
 
@@ -18,7 +18,7 @@ See [Monthly Reports](/reporting) for more information.
 
 Hummingbot [exchange connectors](/exchanges) integrate with the API of a cryptocurrency exchange in order to expose standardized data format and endpoints to Hummingbot strategies (automated processes that interact with exchange APIs) that are created and configured by Users. Since exchange APIs vary widely, these connectors allow anyone to run bots across multiple exchanges without requiring engineering time on low-level exchange API integrations.
 
-See [Agreements](/agreements) for an active list of agreements.
+See [Agreements](/maintenance/agreements) for an active list of agreements.
 
 ## Bounties, grants, and hackathons
 

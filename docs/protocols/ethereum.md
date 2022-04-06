@@ -25,28 +25,28 @@ tags:
 * Release added: [0.2.0](/release-notes/0.2.0/) by CoinAlpha
 * Maintainer: CoinAlpha
 
-## 🔑 Connection
+## 🔑 Connecting Ethereum Wallet
 
 There are two ways to connect your Ethereum wallet:
 
-1. Importing the wallet's keyfile
-2. Importing the wallet's private key
+1. Importing via wallet's JSON keyfile
+2. Importing via wallet's private key
 
 We recommend using the keyfile method over copying and pasting the private key. If your private key remains in your clipboard, there is a risk that a malicious website that you visit may utilize Javascript to access your clipboard and copy its contents.
 
-### Keyfile
+### Importing via JSON Keyfile
 
 To import your wallet using its JSON keyfile:
 
 1. Export the JSON keyfile from other wallets such as Metamask, MyCrypto, or MyEtherWallet
-2. Save the file in the `/conf` directory
+2. Save the file in the `$PROJECT_HOME/conf` directory
 3. Rename the file to `key_file_[address].json`, where `[address]` is the public Ethereum address in the format `0xabc...def`.
 4. Start Hummingbot
 5. Run `connect` command to confirm if keys are confirmed and added for ethereum.
 
 When you import a wallet with Hummingbot, a JSON file named `key_file_[address].json` is created in the `/conf` directory. This JSON keyfile contains the encrypted private key of your wallet and can be imported into other dApps.
 
-### Private key
+### Importing via Wallet Private Key
 
 1. Run the command `connect ethereum` in the Hummingbot client
 2. Enter your wallet private key
@@ -55,7 +55,11 @@ When you import a wallet with Hummingbot, a JSON file named `key_file_[address].
 
 Within the Hummingbot CLI, you can use the `export_private_key` command to display the private key associated with a wallet address. You can import your wallet to dApps like Metamask and MyCrypto using this private key as well.
 
-## 📡 Node
+!!! warning
+    Ensure that you no longer have your wallet's private key in your clipboard. There is a real risk that a malicious website
+    may utilize Javascript to access your clipboard and copy its contents.
+
+## Connecting to Ethereum Node 📡
 
 Interacting with blockchain protocols requires access to a **node** through which you can send and receive data.
 

@@ -5,7 +5,7 @@
 ### Prerequisites
 
 !!! note
-    This installation method is currently under testing and awaiting feedback from users. Should you run into problems or have found a fix to solve errors along the way, feel free to reach out through our [Discord](https://discord.com/invite/2MN3UWg) support channel.
+    This installation method is currently under testing and awaiting feedback from users. Should you run into problems or have found a fix to solve errors along the way, feel free to reach out through our [Discord](https://discord.hummingbot.io/) support channel.
 
 **Install Docker and change permissions**
 
@@ -30,7 +30,7 @@ Exit
 
 **Install Hummingbot**
 
-The Latest ARM version can be found here (filter list by "arm") - https://hub.docker.com/r/coinalpha/hummingbot/tags?page=1&ordering=last_updated&name=arm
+The Latest ARM version can be found here (filter list by "arm") - [CoinAlpha DockerHub](https://hub.docker.com/r/coinalpha/hummingbot/tags?page=1&ordering=last_updated&name=arm)
 
 You can install Hummingbot with **_either_** of the following options:
 
@@ -53,7 +53,7 @@ You can install Hummingbot with **_either_** of the following options:
 
     # 4) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version: [ latest/development ] ( default = 'latest' )
-    >> version-0.42.0-arm_beta
+    >> version-1.1.0-arm_beta
     ```
 
 === "Manual"
@@ -76,7 +76,7 @@ You can install Hummingbot with **_either_** of the following options:
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    coinalpha/hummingbot:version-0.42.0-arm_beta
+    coinalpha/hummingbot:version-1.1.0-arm_beta
     ```
 
 ## Install from source
@@ -95,7 +95,7 @@ The only way to currently install Hummingbot on a Raspberry Pi is by downloading
 
 **Install 64-bit Raspberry Pi OS**
 
-To run Hummingbot on a Raspberry Pi, a 64-bit OS is required. Raspberry Pi has a beta 64-bit version of the Raspberry Pi OS. You can download the OS from the [Raspberry Pi website](https://www.raspberrypi.org/forums/viewtopic.php?f=117&t=275370).
+To run Hummingbot on a Raspberry Pi, a 64-bit OS is required. Raspberry Pi now has an official 64-bit version of the Raspberry Pi OS. You can download the 64-bit OS from the [Raspberry Pi website](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit).
 
 **Load the image file to your Raspberry Pi’s SD card**
 
