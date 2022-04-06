@@ -61,3 +61,7 @@ balance
 And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. Other ERC20 token assets on your wallet will only be displayed once you have loaded an [amm_arb strategy](/strategies/amm-arbitrage/).
 
 ![Getting blockchain asset balances](/assets/img/gateway-balance.png)
+
+## Special Notes about Avalanche and Pangolin
+
+Gateway V2 uses Avalache's public RPC URLs for connecting to Avalanche and Pangolin. This is good enough for running short-term tests on Pangolin. However, for real trading workloads, you should get a dedicated Avalanche RPC endpoint for your trading bot (e.g. via [Moralis Speedy Nodes](https://moralis.io/speedy-nodes/)) - which allows for much higher RPC request volumes from trading bots. 
