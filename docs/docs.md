@@ -15,8 +15,8 @@ New to Hummingbot? Start here!
 Learn about the different components in Hummingbot:
 
 - [Strategies](/strategies): Various algorithmic trading strategies
-- [Exchange Connectors](/exchanges): Connectors to centralized and decentralized exchanges
-- [Protocol Connectors](/protocols): Connectors to Layer 1 and Layer 2 protocols
+- [Exchange Connectors](/exchanges): Supported centralized and decentralized exchanges
+- [Gateway](/gateway): Standalone middleware that connects to decentralized exchanges on various blockchain protocols
 - [Global Configs](/global-configs): Global configurable modules
 - [Strategy Configs](/strategy-configs): Strategy-specific configurable parameters
 
