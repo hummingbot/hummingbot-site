@@ -14,12 +14,13 @@ The Pangolin protocol connector is managed by Gateway V2 - where the Gateway is 
 
 ## 📁 Folders
 
-** TBA: Update the links after feat/gateway-v2 has been merged. **
+!!! note
+    Gateway V2 is currently living on CoinAlpha's `feat/gateway-v2` branch at the moment - it will be merged to Hummingbot master within a month or two.
 
-* [Hummingbot - GatewayEVMAMM](https://github.com/)
-* [Gateway V2 - Pangolin Routes](https://github.com/)
-* [Gateway V2 - Pangolin Controller](https://github.com/)
-* [Gateway V2 - Pangolin Class](https://github.com/)
+* [Hummingbot - GatewayEVMAMM](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/hummingbot/strategy/amm_arb/amm_arb.py)
+* [Gateway V2 - AMM Routes](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/gateway/src/amm/amm.routes.ts)
+* [Gateway V2 - Uniswap-Like Controller](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/gateway/src/connectors/uniswap/uniswap.controllers.ts)
+* [Gateway V2 - Pangolin Class](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/gateway/src/connectors/pangolin/pangolin.ts)
 
 ## ℹ️ Exchange Info
 
