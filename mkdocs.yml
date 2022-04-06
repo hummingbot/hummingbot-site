@@ -197,47 +197,52 @@ nav:
       - TWAP: strategies/twap.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
-      - AltMarkets: exchanges/altmarkets.md
-      - AscendEX: exchanges/ascend-ex.md
-      - Balancer: exchanges/balancer.md
-      - Beaxy: exchanges/beaxy.md
-      - Binance: exchanges/binance.md
-      - Binance Perpetual: exchanges/binance-perpetual.md
-      - Binance US: exchanges/binance-us.md
-      - Bitfinex: exchanges/bitfinex.md
-      - BitMart: exchanges/bitmart.md
-      - Bittrex Global: exchanges/bittrex.md
-      - Blocktane: exchanges/blocktane.md
-      - Bybit Perpetual: exchanges/bybit-perpetual.md
-      - Coinbase Pro: exchanges/coinbase.md
-      - CoinZoom: exchanges/coinzoom.md
-      - Crypto.com : exchanges/crypto-com.md
-      - Digifinex: exchanges/digifinex.md
-      - dYdX Perpetual: exchanges/dydx-perpetual.md
-      - FTX: exchanges/ftx.md
-      - Gate.io: exchanges/gate-io.md
-      - Himalaya: exchanges/himalaya.md
-      - HitBTC: exchanges/hitbtc.md
-      - Huobi Global: exchanges/huobi.md
-      - KuCoin: exchanges/kucoin.md
-      - Kraken: exchanges/kraken.md
-      - Liquid: exchanges/liquid.md
-      - Loopring: exchanges/loopring.md
-      - MEXC: exchanges/mexc.md 
-      - NDAX: exchanges/ndax.md
-      - OKX: exchanges/okx.md
-      - Pangolin: exchanges/pangolin.md
-      - Perpetual Protocol: exchanges/perp-fi.md
-      - ProBit Global: exchanges/probit.md
-      - ProBit Korea: exchanges/probit-korea.md
-      - Uniswap: exchanges/uniswap.md
-      - Uniswap V3: exchanges/uniswap-v3.md
-      - WazirX: exchanges/wazirx.md
-    - Protocol Connectors:
-      - Protocol Connectors: protocols/index.md
-      - Gateway V2: protocols/gateway.md
-      - Celo: protocols/celo.md
-      - Terra: protocols/terra.md
+      - Spot:
+        - Spot: exchanges/spot/index.md
+        - AltMarkets: exchanges/altmarkets.md
+        - AscendEX: exchanges/ascend-ex.md
+        - Balancer: exchanges/balancer.md
+        - Beaxy: exchanges/beaxy.md
+        - Binance: exchanges/binance.md
+        - Binance US: exchanges/binance-us.md
+        - Bitfinex: exchanges/bitfinex.md
+        - BitMart: exchanges/bitmart.md
+        - Bittrex Global: exchanges/bittrex.md
+        - Blocktane: exchanges/blocktane.md
+        - Coinbase Pro: exchanges/coinbase.md
+        - CoinZoom: exchanges/coinzoom.md
+        - Crypto.com : exchanges/crypto-com.md
+        - Digifinex: exchanges/digifinex.md
+        - FTX: exchanges/ftx.md
+        - Gate.io: exchanges/gate-io.md
+        - Himalaya: exchanges/himalaya.md
+        - HitBTC: exchanges/hitbtc.md
+        - Huobi Global: exchanges/huobi.md
+        - KuCoin: exchanges/kucoin.md
+        - Kraken: exchanges/kraken.md
+        - Liquid: exchanges/liquid.md
+        - Loopring: exchanges/loopring.md
+        - MEXC: exchanges/mexc.md 
+        - NDAX: exchanges/ndax.md
+        - OKX: exchanges/okx.md
+        - ProBit Global: exchanges/probit.md
+        - ProBit Korea: exchanges/probit-korea.md
+        - WazirX: exchanges/wazirx.md
+      - Perp:
+        - Perp: exchanges/perp/index.md
+        - Binance Futures: exchanges/binance-perpetual.md
+        - Bybit: exchanges/bybit-perpetual.md
+        - dYdX: exchanges/dydx-perpetual.md
+      - AMM:
+        - AMM: exchanges/amm/index.md
+        - Uniswap: exchanges/uniswap.md
+        - Pangolin: exchanges/pangolin.md
+    - Gateway:
+      - Gateway: gateway/index.md  
+      - Ethereum: gateway/ethereum.md
+      - Avalanche: gateway/avalanche.md
+      - Harmony: gateway/harmony.md
+      - Solana: gateway/solana.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
