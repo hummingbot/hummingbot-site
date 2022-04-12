@@ -2,83 +2,37 @@
 
 Exchange connectors are packages of code that link Hummingbot's internal trading algorithms with live information from different cryptocurrency exchanges. They interact with a given exchange's API, such as by gathering order book data and sending and cancelling trades.
 
-## Examples / templates
+## Templates
 
 You can find the existing connectors [here](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector).
 Note that each folder contained here marks different exchange connector types. These should serve as a template for creating a new exchange connector.
 
 Building a new exchange connector requires conforming to the template code to the new exchange's APIs, identifying and handling any differences in functions/behaviors, and testing the new exchange connector on that exchange.
 
-## The Gold Standard
-
-We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
-and the [Binance Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual)
-connectors as the gold standard and most up-to-date implementations in the code base.
+!!! note "The Gold Standard"
+    We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance) and the [Binance Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual) connectors as the most up-to-date connector implementations in the codebase.
 
 ## Exchange connector requirements
-
-1. A complete set of exchange connector files based off of the examples [above](#examples-templates).
-2. Unit tests covering at least 80% of the new code — you can once again refer to the Binance connectors are go-to examples.
-3. Documentation:
-    * Code commenting (particularly for any code that is materially different from the templates/examples)
-    * Any specific instructions for the use of that exchange connector ([example](../../exchanges/binance.md))
-
-## Requirements for community-developed connectors
-
-!!! note "Approval Required"
-    If you would like to create a connector for a currently unsupported exchange, please contact the Hummingbot team to discuss beforehand and for approval. Due to the large amount of work in reviewing, testing, and maintaining exchange connectors, we will only merge in connectors that will have a meaningful benefit and impact to the Hummingbot community.
 
 Introducing an exchange connector into the Hummingbot code base requires a mutual commitment from the Hummingbot team and community developers to maintaining a high standard of code quality and software reliability.
 
 We encourage and welcome contributions from the community, subject to the guidelines and expectations outlined below.
 
-### Guidelines for community developers
-- Provide a point of contact to the Hummingbot team.
-- Commitment to connector maintenance and keeping it up to date with Hummingbot releases. <br/>*Any connectors that are not kept up to date or have unaddressed bugs will be removed from subsequent releases of Hummingbot unless such issues are resolved.*
-- Adhere to [contributing guide](https://github.com/hummingbot/hummingbot/blob/master/CONTRIBUTING.md), code conventions used in the Hummingbot repo, and these guidelines outlined here.
-- Complete all of the work listed in [Exchange connector requirements](#exchange-connector-requirements).
-- Address any comments or issues raised by the Hummingbot development team during the code review process.
-- Notify the Hummingbot team and community of any known issues are bugs that are discovered.
+1. **Connector folder**: A folder that contains a complete set of connector files based off of the examples above.
+2. **Unit tests:** Tests that cover at least 80% of the new code — see the tests in the connectors above.
+3. **Inline code comments** (particularly for any code that is materially different from the templates)
+4. **Documentation**: Documentation that contains useful information about the exchange for bot users
 
-### Acceptance
-- The best way to create a connector that adheres to Hummingbot’s standard is by cloning the logic of existing connectors. We’ve done a lot of work to build our core connectors, so no need to reinvent the wheel.
-- Existing connector files to use as code samples are in [Exchange connector requirements](#exchange-connector-requirements).
-- While we don't require developers to have every file (You don’t need to implement a user stream if the exchange doesn’t support user stream, for instance), some general guidelines are:
-    - Websocket > Rest. Hummingbot is a high-frequency trading bot, which means it’d perform better when it has all the information in real-time.
-    - Adhere to conventions. Using the same naming pattern / code structure will help our developers review your code and get your connector approved faster.
-    - Always add in-code comments for your custom logic.
-- Required functionalities;
-    - Tracking real-time order book snapshots / diffs / trades
-    - Getting prices from top of the order book
-    - Order parameter quantization (Adjust any order price / quantity inputs into values accepted by the exchange, taking into account min / max order size requirement, number of digits, etc)
-    - Submitting limit buy and sell orders
-    - Submitting market buy and sell orders
-    - Cancelling a single order
-    - Cancelling all orders that the bot submitted
-    - Tracking all in-flight orders
-    - Updating statuses of in-flight orders
-    - Updating user balance (all balance & balance available for trading)
-    - Any other functionalities / error handling required in order to trade on the exchange
-    - Extensive unit tests that cover all functionalities above
-1. Once the PR is submitted, our developers will review your code and likely request changes. Please expect the review process to take 2-3 weeks before the PR is merged.
-2. After the requirements above are fulfilled, we will merge the PR to `development` branch, which will be merged into `master` in the next release.
-3. In the future, we may separate community-contributed connectors and strategies from the core Hummingbot codebase, so that users can choose to install exchange connectors that they are using. However, we will not do that right now.
-<table><tbody><tr><td bgcolor="#ecf3ff">**General Note on Trading Pair Conversion**: </br> HummingBot's standard pair format is: `Base_Asset`-`Quote_Asset`. Therefore, a new connector that doesn't follow that convention of naming pairs would require both `convert_to_exchange_trading_pair` and `convert_from_exchange_trading_pair` methods to be implemented in the connector's market.pyx file. In addition, such connectors have to convert trading pairs in the `execute_buy` and `execute_sell` methods using the `convert_to_exchange_trading_pair` before placing order and also ensure that the dictionary keys for `self._trading_rules` are in HummingBot's pair format using `convert_from_exchange_trading_pair`. </td></tr></tbody></table>
+### Process overview
 
-### Expectations for the Hummingbot team
-- Make available a dedicated channel on discord (https://discord.hummingbot.io) during the initial development process.
-- Provide a main point of contact for the developer.
-- Notify developer of code changes that may affect the connector.
-- Notify the developer of any bug reports or issues reported by Hummingbot users.
-- Code review.
-- Testing and QA.
+1. Build a spot or perp connector that fulfills the requirements listed in the [Build process](./build) and the [QA Testing process](./test).
 
-The Hummingbot team reserves the right to withhold community code contributions and excluding them from the Hummingbot code base should any such contributions fail to meet the above requirements.
+2. Submit a pull request with the connector to the `development` branch in Github, following the [Contribution Guidelines](/developers/contributions/).
 
-## Required skills
-- Python
-- Prior Cython experience is a plus
+3. Submit a Pull Request Proposal (PRP) in the [Hummingbot PRP Snapshot](https://snapshot.org/#/hbot-prp.eth). In particular, the PRP should identify a dedicated maintainer who will be responsible for fixing bugs and applying updates.
+
+Only connectors
 
 ## Additional resources
-- Developer discussions, please visit the `#dev` channel on our [discord server](https://discord.hummingbot.io).
-- Contact the dev team: [dev@hummingbot.io](mailto:dev@hummingbot.io)
+
+For questions, please visit the **#dev** channel on our [Discord](https://discord.hummingbot.io) or post your question under the Connectors topic in our [forum](https://commonwealth.im/hummingbot-foundation)
