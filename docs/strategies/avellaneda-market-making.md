@@ -191,3 +191,22 @@ The `minimum_spread` parameter is optional, it has no effect on the calculated r
 
 - [High-frequency Trading in a Limit Order Book - Avellaneda, Stoikov](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf)
 - [Optimal High-Frequency Market Making - Fushimi, Rojas, Herman](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf)
+
+## 📓 Blogs / FAQs
+
+* [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://hummingbot.io/en/blog/2021-04-avellaneda-stoikov-market-making-strategy)
+    * A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+
+* [Avellaneda strategy: A technical deep dive](https://hummingbot.io/en/blog/2021-04-avellaneda-tech-deepdown)
+    * We will explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
+
+* 🎥&emsp;[New Avellaneda Market Making Strategy Demo + AMA | Hummingbot Live](https://www.youtube.com/watch?v=ZbkkGvB-fis)
+    * Demo of the latest iteration of Avellaneda Market Making strategy
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

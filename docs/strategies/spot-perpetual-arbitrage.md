@@ -45,3 +45,20 @@ Open
 | `next_arbitrage_cycle_delay` | float | 120 | False | How long do you want the strategy to wait to cool off from an arbitrage cycle (in seconds) |
 
 ## 📓 Description
+
+## 📓 Blogs / FAQs
+
+* [How to Use the New Spot-perpetual Arbitrage Strategy](https://hummingbot.io/en/blog/2021-03-spot-perpetual-protocol-guide?_ga=2.92539037.1247821620.1649675450-567388704.1647856298)
+    * Learn how the spot-perpetual arbitrage strategy works and how you can make use of it.
+
+* [How it works: Spot Perpetual Arbitrage](https://master--docs-hb-v3.netlify.app/strategies/spot-perpetual-arb/)
+    * 🎥&emsp;[Spot-Perpetual Arbitrage Strategy Demo | Hummingbot Live](https://www.youtube.com/watch?v=hJPmAy-Ellk)
+        * A live demo on how you can set parameters to run the spot-perpetual arbitrage strategy
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

@@ -105,3 +105,22 @@ The optimal arbitrage size calculation logic can be found in the functions `c_fi
 If the calculated arbitrage size is greater than 0, then the arbitrage strategy would send both the market buy and market sell orders to the two markets simultaneously. Arbitrage opportunities are usually rare and are quickly exploited by traders, and so it is important to send both orders out without any wait.
 
 The order execution logic can be found in the function `c_process_market_pair_inner()` inside [arbitrage.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx).
+
+## 📓 Blogs / FAQs
+
+* [What is Arbitrage?](https://hummingbot.io/en/blog/2020-09-what-is-arbitrage/)
+    * The concept of arbitrage is fairly simple: Arbitrage is the purchase and sale of an asset in order to benefit from a difference in the price of the asset between markets.
+
+* [Hummingbot Blog - Arbitrage](https://hummingbot.io/en/blog/tag/arbitrage/)
+    * Check out our blog to find out more about the arbitrage strategy.
+
+* [Learn how to use Arbitrage strategies](https://master--docs-hb-v3.netlify.app/strategies/arbitrage/)
+    * Arbitrage is described in [Strategies](https://master--docs-hb-v3.netlify.app/strategies/overview/), with a further discussion in the Hummingbot [white paper](https://hummingbot.io/hummingbot.pdf).
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

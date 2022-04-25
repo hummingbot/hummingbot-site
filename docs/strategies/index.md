@@ -38,6 +38,30 @@ Market making strategies help you provide liquidity to an exchange while mitigat
 | [`pure_market_making`](./pure-market-making)                    | `spot`              | CoinAlpha      | Our original single-pair market making strategy                                  |
 | [`uniswap_v3_lp`](./uniswap-v3-lp)                              | [`uniswap-v3`](/exchanges/uniswap-v3)| CoinAlpha | Manage liquidity positions on Uniswap-V3 style AMMs                  |
 
+## Useful Links:
+
+  * 🎥&emsp;[What is Market Making? Interview with Hummingbot CEO Michael Feng](https://www.youtube.com/watch?v=HfHaQS-nWHw)
+    * Hummingbot's CEO, Michael Feng, explains how the market-making and hedge fund business works. Michael talks about how Hummingbot started out as a quantitative hedge fund and turned to open source software to decentralize the market process with the Hummingbot miner liquidity mining platform.
+
+  * [HBOT 101 : What Is Market Making?](https://hummingbot.io/en/blog/2020-09-what-is-market-making/)
+    * This article goes through the basic concepts of market making for beginners.
+
+  * [Basic concepts of Crypto Trading](https://hummingbot.io/en/academy/basic-concepts-of-crypto-trading/#market-makers-and-market-takers)
+    * Basic 101 concepts of crypto trading and common terminologies.
+
+  * [How does Market Making work?](https://hummingbot.org/news/market-making/)
+    * Basic walkthrough of how market making works
+
+  * [Beginner’s Top misconceptions on market making](https://hummingbot.io/en/blog/2022-03-02-beginners-top-misconceptions/)
+    * Common misconceptions for beginners that can save you a lot of time from making mistakes 
+
+  * [Common hallmarks of successful miners](https://hummingbot.io/en/blog/2022-03-04-common-hallmarks-of-successful-miners/?_ga=2.132136973.206438680.1650509270-569987294.1641179028)
+    * You must be wondering, what are the top miners doing that is earning them thousands of dollars a week? This piece is a result of discussions with some of the miners who are in the Eagle Club, and we hope it unveils some of the things profitable miners do.
+    
+  * 🎥&emsp;[Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw)
+    * Eagle club member cgambit who ranks top on our leaderboard shares his tips and insights on pure market making
+
+
 ### Arbitrage
 
 Arbitrage strategies help you monitor different markets for opportunities to realize an arbitrage profit and capture them when they arise.
@@ -49,6 +73,14 @@ Arbitrage strategies help you monitor different markets for opportunities to rea
 | [`celo-arb`](./celo-arbitrage)                                  | [`celo`](/protocols/celo)|          | Exploits price differences between Celo and other exchanges                               |
 | [`spot_perpetual_arbitrage`](./spot-perpetual-arbitrage)        | `spot`, `perp`      | CoinAlpha     | Exploits price differences between spot and perpetual swap exchanges                      |
 
+Arbitrage is the buying and selling of an asset in order to benefit from a difference in the price of the asset between markets. To explore arbitration further, here are a few helpful links.
+
+## Useful Links:
+  * [What is Arbitrage?](https://hummingbot.io/en/blog/2020-09-what-is-arbitrage/)
+  * [Introducing the new Balancer connector and arbitrage strategy!](https://hummingbot.io/en/blog/2020-11-balancer-arbitrage/)
+  * [Learn more Arbitrage and other Arbitrage opportunity / strategies](https://hummingbot.io/en/blog/tag/arbitrage/)
+  * 🎥&emsp;[How to Spot Market Making and Arbitrage opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU)
+
 ### Utility
 
 | Name                                                            | Valid Exchanges     | Maintainer    | Description                                                                               |
@@ -56,3 +88,12 @@ Arbitrage strategies help you monitor different markets for opportunities to rea
 | [`hedge`](./hedge)                                              | `perp`              |               | Hedges spot exchange inventory risk using perpetual swaps (dYdX hackathon winner)         |
 | [`twap`](./twap)                                                | `spot`              |               | Places a batch of limit orders over a period of time                                      |
 | `vwap`                                                          | `spot`              |               | Places a batch of limit orders based on order book volume                                 |
+
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

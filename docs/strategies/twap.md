@@ -99,3 +99,22 @@ TWAP processes orders when there is a remaining order quantity & the specified t
     This demo is for instructional and educational purposes only. Any parameters used are purely for demo purposes only. We are not giving any legal, tax, financial, or investment advice. Every user is responsible for their use and configuration of Hummingbot.
 
 <iframe width="733" height="474" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 📓 Blogs / FAQs
+
+* [How to arbitrage AMMs like Uniswap and Balancer](https://hummingbot.io/en/blog/2020-12-amm-arbitrage-uniswap-balancer)
+    * Learn how you can Arbitrage AMMsw with our strategy
+
+* [Uniswap v3 Liquidity Pool Strategy](https://master--docs-hb-v3.netlify.app/strategies/uniswapv3-lp/)
+    * Before you can use the Uniswap v3 LP Strategy in Hummingbot, you need to install and configure the [Gateway API server](https://master--docs-hb-v3.netlify.app/gateway/installation).  A guide on how to set up the installation and configuration of the strategy.
+
+* 🎥&emsp;[Uniswap V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI)
+    * Demo of the latest iteration of Uniswap V3 strategy
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
