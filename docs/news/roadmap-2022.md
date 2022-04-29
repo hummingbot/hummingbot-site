@@ -2,21 +2,31 @@
 
 Since Hummingbot Foundation was incepted at the beginning of the year, we have been busy hiring staff, taking over the monthly Hummingbot release cycle, and building processes that enable the HBOT token holder community to govern the Hummingbot codebase.
 
-In this post, we want to inform the broader Hummingbot community about the milestones that the Foundation aims to accomplish for the rest of 2022, as well as the initiatives that we plan to start in the second half of the year.
+In this post, we want to inform the broader Hummingbot community about the milestones that the Foundation aims to accomplish and the initiatives we aim to start for the remainder of the year.
 
-As a recap, in December 2021, we established Hummingbot Foundation as an independent, not-for-profit Cayman Islands foundation company that controls write access over the [Github code repository for Hummingbot](https://github.com/hummingbot/hummingbot), the leading open source framework to build and run crypto trading bots. 
+As a recap, Hummingbot Foundation was established in December 2021 as an independent, not-for-profit Cayman Islands foundation company that controls write access over the official [Github code repository](https://github.com/hummingbot/hummingbot) for Hummingbot, the leading open source framework to build and run crypto trading bots. 
 
-Hummingbot Foundation’s primary goal is to enable Hummingbot to be maintained and improved by a decentralized set of community maintainers and contributors. The Foundation utilizes an off-chain governance system powered by HBOT token holders, who vote on various types of proposals that decide how the Hummingbot codebase evolves, how the HBOT treasury is allocated, and how the Foundation is governed.
+## Mission
 
-The Foundation sustains day-to-day operations from exchange partnerships that rebate fees based on the level of trading activity conducted through their respective connectors, tracked via custom headers at the API request level. We match each exchange partner with a dedicated community maintainer who builds and maintains a connector (low-level integration with the exchange’s WebSocket/REST API) and earns a share of the fees rebated by the exchange. This scalable, community-driven maintenance model allows the Hummingbot codebase to support every exchange in the world while ensuring a high bar for code quality while keeping maintenance costs low.
+The Foundation's long-term mission is to democratize high-frequency trading (HFT) with Hummingbot, an open source, professional-grade, Python-based client with standardized, low-latency connectors to every centralized and decentralized exchange, a high-frequency trading engine that supports all the major product and order types, and a robust library of community-created trading strategies and scripts.
+
+To accomplish this at scale, the Foundation utilizes a bazaar-style model of software development that relies upon a decentralized set of community **maintainers**, developers who build and maintain individual exchange [connectors](/exchanges) or [strategies](/strategies).
+
+Since the Foundation is a decentralized autonomous organization (DAO) governed by HBOT token holders, we utilize an [off-chain governance system](https://snapshot.org/#/hbot.eth) that enables HBOT holders to vote without paying gas on [proposals](/governance/proposals/) that decide how the Hummingbot codebase evolves, how the HBOT treasury is allocated, and how the Foundation is governed.
+
+## Business Model
+
+Sustaining day-to-day operation are exchange partnerships that rebate fees based on the level of trading activity conducted through their respective connectors, tracked via custom headers at the API request level. 
 
 ![](/assets/img/foundation-biz-model.jpg)
 
+We match each exchange partner with a dedicated community maintainer who builds and maintains a connector (low-level integration with the exchange’s WebSocket/REST API) and earns a share of the fees rebated by the exchange. This scalable, community-driven maintenance model allows the Hummingbot codebase to support every exchange in the world while ensuring a high bar for code quality while keeping maintenance costs low.
+
 In each of the first 3 months of operation, the Foundation recorded a net profit. See [Reporting](https://hummingbot.org/reporting/) for more details.
 
-Below, we list the key roadmap themes that the Foundation will work toward during the remainder of 2022 in order to further the Hummingbot mission of making high-frequency trading open source and accessible to everyone in the world.
-
 ## 2022 Roadmap Themes
+
+Below, we list the key roadmap themes that the Foundation will work toward during the remainder of 2022 in order to further the Hummingbot mission of making high-frequency trading open source and accessible to everyone in the world.
 
 ### 🤝 Scale exchange-maintainer partnerships
 
@@ -32,7 +42,7 @@ Maintaining reliable, fast HFT-quality integrations across the exchange landscap
 
 ### 🔗 Expand DEX connectors
 
-Hummingbot’s new Gateway-V2 module, which has been merged to `development`, is stateless middleware library, written primarily in Typescript, that maps various DEX smart contract methods, APIs, and SDKs on various blockchains into standardized REST trading endpoints that can be utilized by the Python-based Hummingbot trading client or any other trading system. It allows developers from different DEX communities to “plug in” their DEXs into the broader Hummingbot community of arbitrageurs and market makers by adding lightweight connectors to Gateway. 
+Hummingbot’s new [Gateway-V2 module](/developers/gateway), which was recently merged to Hummingbot's public `development` branch, is a stateless middleware library, written primarily in Typescript, that maps various DEX smart contract methods, APIs, and SDKs on various blockchains into standardized REST trading endpoints that can be utilized by the Python-based Hummingbot trading client or any other trading system. It allows developers from different DEX communities to “plug in” their DEXs into the broader Hummingbot community of arbitrageurs and market makers by adding lightweight connectors to Gateway. 
 
 CoinAlpha has contributed the initial Ethereum and Avalanche DEX connectors, while separate teams from the Solana, Cosmos, Harmony, Near, and Polkadot ecosystems are building support for their respective chain families, as well as connectors for the DEXs on those chains. After Gateway is merged to Hummingbot’s `master` branch and included in the upcoming May release, we expect many more DEXs and chains to be supported. 
 
@@ -42,14 +52,16 @@ CoinAlpha has contributed the initial Ethereum and Avalanche DEX connectors, whi
 
 ### 📓 Improve documentation
 
-Adding documentation of various types, from how-to-guides to FAQs to developer tutorials, as as well in a well-organized and easily discoverable manner, is a critically important part of growing any open source project, especially one like Hummingbot that is maintained by a global maintainer community.
+Adding documentation of various types, from how-to-guides to FAQs to developer tutorials (and in a well-organized and easily discoverable manner) is a critically important part of growing any open source project at scale, especially one like Hummingbot that is maintained by a global maintainer community.
+
+To improve our documentation, we plan to begin versioning documentation by release, add sections that enable community members to contribute content and resources, as well as content bounties that use HBOT tokens to incentivize creation of how-to guides, videos and other Hummingbot-related content.
 
 - Version docs by release
 - Add Community Resources section to docs
 - Move Foundation-related news into a new Blog section
 - Expand developer docs for building CEX and DEX connectors
 - Expand developer docs for creating Scripts
-- Expand guides, videos and other how-to content that explain how to use new Hummingbot features
+- Launch content bounties
 
 ### 👨‍👨‍👧‍👦 Grow developer community
 

@@ -4,12 +4,16 @@ Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com
 
 ## Official Updates
 
+* Apr 2022: [Hummingbot Roadmap 2022](./roadmap-2022)
 * Jan 2022: [Hummingbot 1.0 and HBOT Distribution Plan](./hummingbot-1-0)
 * Dec 2021: [Introducing the Hummingbot Governance Token: HBOT](./hbot)
 * Oct 2021: [Introducing the Hummingbot Foundation](./foundation)
 
-## Community News 
+## Community News
 
+* Apr 2022: [Liquidity DAO April Connector Bounty Program](https://talk.harmony.one/t/liquidity-dao-april-connectors-bounty-program/16599)
+* Mar 2022: [Pecunia.Finance Funded By SifDAO To Build A Connector Between Sifchain DEX & Hummingbot!](https://medium.com/@pecuniafinancedao/pecunia-finance-funded-by-sifdao-to-build-a-connector-between-sifchain-dex-hummingbot-b2845f843682)
+* Mar 2022: [Liquidity DAO Q1 2022 Progress Report](https://talk.harmony.one/t/liquidity-dao-q1-2022-term-1-progress-report/15179/4)
 * Nov 2021: [Harmony and Hummingbot launch ONE Liquidity DAO](https://medium.com/harmony-one/harmony-and-hummingbot-launch-liquidity-dao-fef96b761c8f)
 * Oct 2021: [The DeFiant - Team Behind Hummingbot Gives Away Its Code Via Foundation](https://thedefiant.io/coin-alpha-hummingbot-foundation/)
 
