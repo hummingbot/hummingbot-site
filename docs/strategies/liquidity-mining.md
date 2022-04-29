@@ -44,3 +44,19 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 | `max_order_age` | float | 3600 | False | What is the maximum life time of your orders (in seconds)? |
 
 ## 📓 Description
+
+## 📓 Blogs / FAQs
+
+* [Liquidity Mining Blogs](https://hummingbot.io/en/blog/tag/liquidity-mining/)
+    * Checkout our blog to learn more about Hummingbot Liquidity Mining
+
+* 🎥&emsp;[Liquidity Mining Explained | For New Users](https://www.youtube.com/watch?v=ME5osB8sX_s)
+    * Learn about Liquidity Mining and how to set up a market-making bot to earn rewards in an exchange.
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

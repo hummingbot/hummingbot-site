@@ -95,3 +95,24 @@ Each tick, the bot monitors the pool mid price (`last_price`) and compare it to 
 
 - Currently, the strategy does not remove existing positions. The user should do it manually through the Uniswap interace (https://app.uniswap.org/#/pool).
 - The `status` command shows the current profitability of each position, using the `quote` asset as reference
+
+## 📓 Blogs / FAQs
+
+* [Advanced TWAP Strategy](https://hummingbot.io/en/advanced-twap-strategy?_ga=2.197347887.1247821620.1649675450-567388704.1647856298)
+    * The “twap_plus” strategy highly involves the Relative Strength Indicator (RSI) trend of a certain trading pair to execute trades. This way users can setup bots to match whenever the RSI levels are theoretically giving “Buy” signals or “Sell” signals and decide potential entry and exit points.
+
+* [How it works: TWAP Strategy](https://master--docs-hb-v3.netlify.app/strategies/twap/)
+
+    * 🎥&emsp;[Create a Custom Strategy | Hummingbot Live](https://www.youtube.com/watch?v=td-E3M0qRsA&list=PLDwlNkL_4MMfdo3Vax5HUwvaduSu33-Mk)
+        * Learn about creating custom strategies with Paulo. Hummingbot lets you customize your strategies by configuring your bots to optimize its maximum potential in liquidity providing.
+
+* [Strategy coding for dummies](https://hummingbot.io/en/blog/2022-03-26-strategy-coding-for-dummies)
+    * This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy 
+    
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

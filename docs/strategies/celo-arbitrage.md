@@ -44,3 +44,22 @@ It executes offsetting buy and sell orders in both markets in order to capture a
 ## 📓 Description
 
 [Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/celo_arb/celo_arb.pyx)
+
+## 📓 Blogs / FAQs
+
+* [Quickstart Guide for celo-arb](https://hummingbot.io/en/academy/celo-arb/?_ga=2.247744654.866973443.1649059002-567388704.1647856298)
+    * We have created this guide to help users of the new celo-arb strategy install and run the strategy on a cloud instance.
+
+* [New arbitrage opportunity: Wrapped CELO](https://hummingbot.io/en/blog/2020-12-wrapped-celo-uniswap-arbitrage)
+    * This article introduces a new arbitration strategy known as Wrapped Celo arbitration.
+
+* [How celo-arb works](https://hummingbot.io/en/blog/2020-06-celo-arbitrage)
+    * This article will let you know why we are a incredible fans of Celo and how Celo works.
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

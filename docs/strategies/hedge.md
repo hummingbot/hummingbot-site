@@ -89,3 +89,18 @@ it will then execute a sell order of (0.5BTC-0.2BTC) = 0.3BTC on the taker marke
 - `spot` exchange: tested on `ascend_ex` and `binance`
 - On `dydx_perpetual`, `hedge_interval` <1 may cause issue such as unexpected clock tick error and rate limit
 - On `binance_perpetual`, `hedge_interval` has been tested to work with 0.01s
+
+## 📓 Blogs / FAQs
+
+* 🎥&emsp;[Hedge in Market Making | Trader Strategies | Part 01](https://www.youtube.com/watch?v=vO79P7ROwtA)
+* 🎥&emsp;[Hedge & Risk Management | Trader Strategies | Part 02](https://www.youtube.com/watch?v=YQ6vwJOD1Go)
+* 🎥&emsp;[Hedge in Market Making using dYdX Perpetuals | Trader Strategies | Part 03](https://www.youtube.com/watch?v=E_M_SUAP3Zo&t=8s)
+    * In this 3 part series, Paulo will discuss Hedge in Market Making, including its basic concepts, risk management and hedging with DYDX Perpetuals.
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.

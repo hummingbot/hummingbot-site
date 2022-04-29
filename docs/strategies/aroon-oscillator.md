@@ -112,3 +112,16 @@ a setting lower than 1.0 will decrease its effect on the spread during a strong 
 The rest of the strategy is pretty much copied from PureMarketMakingStrategy. A few options have been removed
 such as the pricing delegates. There are more features that could possibly be removed since they don't work
 well with the Indicator.
+
+## 📓 Blogs / FAQs
+
+* 🎥&emsp;[Aroon Indicator Strategy Hummingbot Live Followup](https://www.youtube.com/watch?v=5iOorb46aVw)
+    * Learn how Mike used Aroon Indicator Strategy to set up purchase/sale pricing.
+
+## 🧑‍🎓 Go-to resources to learn more
+
+* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
+    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+
+* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
+    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
