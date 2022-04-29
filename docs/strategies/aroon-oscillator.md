@@ -86,7 +86,7 @@ Here's a screenshot of the status screen:
 You can learn more about Aroon Indicators, here:
 https://www.investopedia.com/terms/a/aroon.asp
 
-AroonOscillatorStrategy is a market-making strategy that uses Aroon Indicators to detect trends.
+The Aroon Oscillator strategy is a market-making strategy that uses Aroon Indicators to detect trends.
 A user will set up the number of periods in the Indicator and how long each period is in seconds.
 The user also sets a minimum and maximum spread that they desire. Then the indicator will use the
 collected period data to automatically adjust the spreads to try and position orders at the best
@@ -113,15 +113,10 @@ The rest of the strategy is pretty much copied from PureMarketMakingStrategy. A 
 such as the pricing delegates. There are more features that could possibly be removed since they don't work
 well with the Indicator.
 
-## 📓 Blogs / FAQs
+## ℹ️ More Resources
 
-* 🎥&emsp;[Aroon Indicator Strategy Hummingbot Live Followup](https://www.youtube.com/watch?v=5iOorb46aVw)
-    * Learn how Mike used Aroon Indicator Strategy to set up purchase/sale pricing.
+:fontawesome-solid-globe: [Investopedia - Aroon Oscillator](https://www.investopedia.com/terms/a/aroonoscillator.asp): Learn how the Aroon Oscillator indicator works.
 
-## 🧑‍🎓 Go-to resources to learn more
+:fontawesome-brands-youtube: [Aroon Indicator Strategy Hummingbot Live Followup](https://www.youtube.com/watch?v=5iOorb46aVw): Learn how to set up an `aroon-oscillator` bot.
 
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
-
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

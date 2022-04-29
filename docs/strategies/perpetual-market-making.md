@@ -95,16 +95,8 @@ New opening orders are not being placed if one or more of existing opening order
 
 ![Figure 3: Position management flow chart](/assets/img/perp_mm-flowchart-3.svg)
 
-## 📓 Blogs / FAQs
+## ℹ️ More Resources
 
-* [How It Works: Perpetual Market Making](https://master--docs-hb-v3.netlify.app/strategies/perpetual-market-making/)
-    * 🎥&emsp;[Perpetual Market Making Demo | Hummingbot Live](https://www.youtube.com/watch?v=IclhZWtKiSA)
-        * Demo of the Perpetual Market Making strategy
+:fontawesome-brands-youtube: [Perpetual Market Making Demo | Hummingbot Live](https://www.youtube.com/watch?v=IclhZWtKiSA): Demo of the Perpetual Market Making strategy
 
-## 🧑‍🎓 Go-to resources to learn more
-
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
-
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

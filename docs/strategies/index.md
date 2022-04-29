@@ -89,11 +89,10 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 | [`twap`](./twap)                                                | `spot`              |               | Places a batch of limit orders over a period of time                                      |
 | `vwap`                                                          | `spot`              |               | Places a batch of limit orders based on order book volume                                 |
 
+## ℹ️ More Resources
 
-## 🧑‍🎓 Go-to resources to learn more
+:fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy 
 
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+:fontawesome-brands-youtube: [Create a Custom Strategy | Hummingbot Live](https://www.youtube.com/watch?v=td-E3M0qRsA&list=PLDwlNkL_4MMfdo3Vax5HUwvaduSu33-Mk): Learn about creating custom strategies with Paulo. Hummingbot lets you customize your strategies by configuring your bots to optimize its maximum potential in liquidity providing.
 
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

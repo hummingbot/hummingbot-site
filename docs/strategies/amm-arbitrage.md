@@ -48,21 +48,10 @@ Hummingbot will be accessing `amm` exchanges via Gateway V2 from v1.4.0. If you 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
 
-## 📓 Blogs / FAQs
+## ℹ️ More Resources
 
-* [Quickstart Guide for amm_arb](https://hummingbot.io/en/academy/amm-arb)
-    * This guide will walk you through the installation and launch of the new amm_arb strategy.
+:fontawesome-solid-book: [How to arbitrage AMMs like Uniswap and Balancer](https://hummingbot.io/blog/2020-12-amm-arbitrage-uniswap-balancer): Learn how you can Arbitrage AMMs with our strategy
 
-* 🎥&emsp;[How to Spot Market Making and Arbitrage opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU)
-    * Learn how to optimize the arbitrage strategy for different opportunities.
+:fontawesome-solid-book: [Quickstart Guide for amm_arb (deprecated)](https://hummingbot.io/en/academy/amm-arb): This guide will walk you through the installation and launch of the new `amm_arb` strategy
 
-* [How to use AMM arbitrage strategy](https://master--docs-hb-v3.netlify.app/strategies/amm-arb/)
-    * Prior to using the AMM arbitration strategy in Hummingbot, you must install and configure the Gateway API server.
-
-## 🧑‍🎓 Go-to resources to learn more
-
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
-
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

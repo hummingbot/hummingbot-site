@@ -45,18 +45,16 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 ## 📓 Description
 
-## 📓 Blogs / FAQs
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/liquidity-mining/liquidity-mining.pyx)
 
-* [Liquidity Mining Blogs](https://hummingbot.io/en/blog/tag/liquidity-mining/)
-    * Checkout our blog to learn more about Hummingbot Liquidity Mining
+## ℹ️ More Resources
 
-* 🎥&emsp;[Liquidity Mining Explained | For New Users](https://www.youtube.com/watch?v=ME5osB8sX_s)
-    * Learn about Liquidity Mining and how to set up a market-making bot to earn rewards in an exchange.
+:fontawesome-solid-globe: [Hummingbot Miner Help Center](https://support.hummingbot.io): Check out our latest announcements, campaigns, documentations, handy articles and much more.
 
-## 🧑‍🎓 Go-to resources to learn more
+:fontawesome-solid-book: [Liquidty Mining related blog posts](https://hummingbot.io/en/blog/tag/liquidity-mining/)
 
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+:fontawesome-solid-book: [Demystifying liquidity mining rewards](https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards)
 
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+:fontawesome-brands-youtube: [Liquidity Mining Explained | For New Users](https://www.youtube.com/watch?v=ME5osB8sX_s): Learn about Liquidity Mining and how to set up a market-making bot to earn rewards in an exchange.
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

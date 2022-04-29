@@ -100,21 +100,10 @@ TWAP processes orders when there is a remaining order quantity & the specified t
 
 <iframe width="733" height="474" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 📓 Blogs / FAQs
+## ℹ️ More Resources
 
-* [How to arbitrage AMMs like Uniswap and Balancer](https://hummingbot.io/en/blog/2020-12-amm-arbitrage-uniswap-balancer)
-    * Learn how you can Arbitrage AMMsw with our strategy
+:fontawesome-solid-book: [Advanced TWAP Strategy](https://hummingbot.io/blog/advanced-twap-strategy): The “twap_plus” strategy highly involves the Relative Strength Indicator (RSI) trend of a certain trading pair to execute trades. This way users can setup bots to match whenever the RSI levels are theoretically giving “Buy” signals or “Sell” signals and decide potential entry and exit points.
 
-* [Uniswap v3 Liquidity Pool Strategy](https://master--docs-hb-v3.netlify.app/strategies/uniswapv3-lp/)
-    * Before you can use the Uniswap v3 LP Strategy in Hummingbot, you need to install and configure the [Gateway API server](https://master--docs-hb-v3.netlify.app/gateway/installation).  A guide on how to set up the installation and configuration of the strategy.
+:fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy 
 
-* 🎥&emsp;[Uniswap V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI)
-    * Demo of the latest iteration of Uniswap V3 strategy
-
-## 🧑‍🎓 Go-to resources to learn more
-
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
-
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

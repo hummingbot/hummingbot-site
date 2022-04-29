@@ -241,22 +241,16 @@ Currently, only the following parameters can be reconfigured without stopping th
 !!! note
     Reconfiguring of `inventory_target_base_pct` for DEX connectors is not working at the moment. -->
 
-## 📓 Blogs / FAQs
 
-* [Pure Market Making (PMM) Strategy](https://hummingbot.io/en/academy-level-2-c-beginner-strategy-1-pure-market-making-pmm-strategy?_ga=2.197730863.1247821620.1649675450-567388704.1647856298)
-    * Use Pure Market Making Strategy but set dynamic bid/ask orders based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders using inventory skew or spreads-adjusted
 
-* [How it works: Pure Market Making](https://master--docs-hb-v3.netlify.app/strategies/pure-market-making/)
-    * 🎥&emsp;[How to set up a simple pure market making bot on Binance](https://www.youtube.com/watch?v=La7E6uudOYY)
-        * Learn how to create pure market making bot on Binance exchange.
+## ℹ️ More Resources
 
-* 🎥&emsp;[Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw)
-    * Eagle club member cgambit who ranks top on our leaderboard shares his tips and insights on pure market making 
+:fontawesome-solid-book: [What is market making?](https://hummingbot.io/blog/2020-09-what-is-market-making): A blog post that explains the basics of market making.
 
-## 🧑‍🎓 Go-to resources to learn more
+:fontawesome-brands-youtube: [How to set up a simple pure market making bot on Binance](https://www.youtube.com/watch?v=La7E6uudOYY): Learn how to create pure market making bot on Binance exchange.
 
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
+:fontawesome-brands-youtube: [Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw): Eagle Club member and top Hummingbot Miner earner `cgambit` shares his tips and insights on pure market making.
 
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+:fontawesome-solid-book: [Pure Market Making (PMM) Strategy](https://hummingbot.io/academy-level-2-c-beginner-strategy-1-pure-market-making-pmm-strategy): Use Pure Market Making Strategy but set dynamic bid/ask orders based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders using inventory skew or spreads-adjusted.
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

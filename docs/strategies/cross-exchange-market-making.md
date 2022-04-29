@@ -150,21 +150,12 @@ The cross exchange market making strategy would always immediately hedge any ord
 
 The logic of the hedging order fill flow can be found in the function `c_did_fill_order()` and `c_check_and_hedge_orders()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
 
-## 📓 Blogs / FAQs
+## ℹ️ More Resources
 
-* [What is cross exchange market making?](https://hummingbot.io/en/blog/2020-09-what-is-cross-exchange-market-making)
-    * A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+:fontawesome-solid-book: [What is cross exchange market making?](https://hummingbot.io/en/blog/2020-09-what-is-cross-exchange-market-making): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
 
-* [Use cross-exchange market making (XEMM) strategy to lower risk](https://hummingbot.io/en/academy-level-2-d-beginner-strategy-2-use-cross-exchange-market-making-xemm?_ga=2.121376520.1247821620.1649675450-567388704.1647856298)
-    * The XMM strategy effectively reduces inventory risk. This article talks about how to proceed with XEMM in place.
+:fontawesome-solid-book: [Use cross-exchange market making (XEMM) strategy to lower risk](https://hummingbot.io/academy-level-2-d-beginner-strategy-2-use-cross-exchange-market-making-xemm): The XMM strategy effectively reduces inventory risk. This article talks about how to proceed with XEMM in place.
 
-* 🎥&emsp;[Cross Exchange Market Making Strategy in FTX | Hummingbot Live](https://www.youtube.com/watch?v=gwLjSe0t8K8)
-    * In this video, Paulo shows how to optimize a Cross Exchange Market-Making strategy in the FTX exchange connector using the Hummingbot app.
+:fontawesome-brands-youtube: [Cross Exchange Market Making Strategy in FTX | Hummingbot Live](https://www.youtube.com/watch?v=gwLjSe0t8K8): In this video, Paulo shows how to optimize a Cross Exchange Market-Making strategy in the FTX exchange connector using the Hummingbot app.
 
-## 🧑‍🎓 Go-to resources to learn more
-
-* [Find more guides at Hummingbot Academy](https://hummingbot.io/en/academy/)
-    * Hummingbot Academy is a comprehensive go-to resource for users to learn everything from installing Hummingbot, setting your own servers, to strategies, trader tips, and building your own custom strategies and connectors. Includes quick start guides, FAQ, video tutorials & case studies, and much more. 
-
-* [Hummingbot Miner Guide](https://support.hummingbot.io/hc/en-us)
-    * Check out our latest announcements, campaigns, documentations, handy articles and much more.
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
