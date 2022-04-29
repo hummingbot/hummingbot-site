@@ -136,6 +136,7 @@ nav:
       - Maintenance: maintenance/index.md
       - Active Agreements: maintenance/agreements.md
       - Active Maintainers: maintenance/maintainers.md
+      - Staging Bug Hunt: maintenance/staging.md
     - Governance:
       - Governance: governance/index.md
       - Whitepaper: governance/whitepaper.md
