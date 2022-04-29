@@ -240,3 +240,17 @@ Currently, only the following parameters can be reconfigured without stopping th
 
 !!! note
     Reconfiguring of `inventory_target_base_pct` for DEX connectors is not working at the moment. -->
+
+
+
+## ℹ️ More Resources
+
+:fontawesome-solid-book: [What is market making?](https://hummingbot.io/blog/2020-09-what-is-market-making): A blog post that explains the basics of market making.
+
+:fontawesome-brands-youtube: [How to set up a simple pure market making bot on Binance](https://www.youtube.com/watch?v=La7E6uudOYY): Learn how to create pure market making bot on Binance exchange.
+
+:fontawesome-brands-youtube: [Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw): Eagle Club member and top Hummingbot Miner earner `cgambit` shares his tips and insights on pure market making.
+
+:fontawesome-solid-book: [Pure Market Making (PMM) Strategy](https://hummingbot.io/academy-level-2-c-beginner-strategy-1-pure-market-making-pmm-strategy): Use Pure Market Making Strategy but set dynamic bid/ask orders based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders using inventory skew or spreads-adjusted.
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

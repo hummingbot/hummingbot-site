@@ -89,3 +89,16 @@ it will then execute a sell order of (0.5BTC-0.2BTC) = 0.3BTC on the taker marke
 - `spot` exchange: tested on `ascend_ex` and `binance`
 - On `dydx_perpetual`, `hedge_interval` <1 may cause issue such as unexpected clock tick error and rate limit
 - On `binance_perpetual`, `hedge_interval` has been tested to work with 0.01s
+
+
+## ℹ️ More Resources
+
+In the 3-part series below, Paulo will discuss Hedge in Market Making, including its basic concepts, risk management and hedging with DYDX Perpetuals.
+
+:fontawesome-brands-youtube: [Hedge in Market Making | Trader Strategies | Part 01](https://www.youtube.com/watch?v=vO79P7ROwtA)
+
+:fontawesome-brands-youtube: [Hedge & Risk Management | Trader Strategies | Part 02](https://www.youtube.com/watch?v=YQ6vwJOD1Go)
+
+:fontawesome-brands-youtube: [Hedge in Market Making using dYdX Perpetuals | Trader Strategies | Part 03](https://www.youtube.com/watch?v=E_M_SUAP3Zo&t=8s)
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

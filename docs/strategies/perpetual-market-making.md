@@ -95,6 +95,8 @@ New opening orders are not being placed if one or more of existing opening order
 
 ![Figure 3: Position management flow chart](/assets/img/perp_mm-flowchart-3.svg)
 
+## ℹ️ More Resources
 
+:fontawesome-brands-youtube: [Perpetual Market Making Demo | Hummingbot Live](https://www.youtube.com/watch?v=IclhZWtKiSA): Demo of the Perpetual Market Making strategy
 
-
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

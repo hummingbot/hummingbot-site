@@ -86,7 +86,7 @@ Here's a screenshot of the status screen:
 You can learn more about Aroon Indicators, here:
 https://www.investopedia.com/terms/a/aroon.asp
 
-AroonOscillatorStrategy is a market-making strategy that uses Aroon Indicators to detect trends.
+The Aroon Oscillator strategy is a market-making strategy that uses Aroon Indicators to detect trends.
 A user will set up the number of periods in the Indicator and how long each period is in seconds.
 The user also sets a minimum and maximum spread that they desire. Then the indicator will use the
 collected period data to automatically adjust the spreads to try and position orders at the best
@@ -112,3 +112,11 @@ a setting lower than 1.0 will decrease its effect on the spread during a strong 
 The rest of the strategy is pretty much copied from PureMarketMakingStrategy. A few options have been removed
 such as the pricing delegates. There are more features that could possibly be removed since they don't work
 well with the Indicator.
+
+## ℹ️ More Resources
+
+:fontawesome-solid-globe: [Investopedia - Aroon Oscillator](https://www.investopedia.com/terms/a/aroonoscillator.asp): Learn how the Aroon Oscillator indicator works.
+
+:fontawesome-brands-youtube: [Aroon Indicator Strategy Hummingbot Live Followup](https://www.youtube.com/watch?v=5iOorb46aVw): Learn how to set up an `aroon-oscillator` bot.
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
