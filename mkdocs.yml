@@ -151,6 +151,7 @@ nav:
         - Epoch 2: governance/epochs/epoch2.md
     - News & Updates:
       - News & Updates: news/index.md
+      - Hummingbot Foundation Roadmap 2022: news/roadmap-2022.md
       - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
