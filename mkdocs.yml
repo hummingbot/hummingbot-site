@@ -211,6 +211,7 @@ nav:
         - Bittrex Global: exchanges/bittrex.md
         - Blocktane: exchanges/blocktane.md
         - Coinbase Pro: exchanges/coinbase.md
+        - CoinFLEX: exchanges/coinflex.md
         - CoinZoom: exchanges/coinzoom.md
         - Crypto.com : exchanges/crypto-com.md
         - Digifinex: exchanges/digifinex.md
@@ -301,6 +302,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.3.0: release-notes/1.3.0.md
     - 1.2.0: release-notes/1.2.0.md
     - 1.1.1: release-notes/1.1.1.md
     - 1.1.0: release-notes/1.1.0.md
