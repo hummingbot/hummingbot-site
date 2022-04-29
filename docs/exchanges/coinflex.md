@@ -46,6 +46,11 @@ https://coinflex.com/fees/
 
 Hummingbot assumes 0% maker fees and 0.08% taker fees.
 
+| VIP tier | Spot Maker | Spot Taker | Perp Maker | Perp Taker |
+| -------- | ---------- | ---------- | ---------- | ---------- |
+|    4     |     0%     |    0.057%  |   -0.017%  |   0.057%   |
+|    5     |     0%     |    0.051%  |   -0.021%  |   0.051%   |
+|    6     |     0%     |    0.040%  |   -0.030%  |   0.040%   |
 
 Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
 
