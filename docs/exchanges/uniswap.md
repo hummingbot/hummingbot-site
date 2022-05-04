@@ -34,7 +34,7 @@ The Uniswap protocol connector is now managed by Gateway V2 - where the Gateway 
 
 ## 🔑 Setup
 
-1. Follow the instructions to install and run [Hummingbot Gateway V2](/protocols/gateway/).
+1. Follow the instructions to install and run [Hummingbot Gateway V2](/gateway/).
 2. Run `gateway connect uniswap` and add your Ethereum wallet to Gateway V2 for trading on Uniswap.
 3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Uniswap and a different exchange.
 4. Run `start` to start the strategy, and you're trading!
