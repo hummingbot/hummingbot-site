@@ -17,7 +17,7 @@ This strategy is a predecessor to the `amm_arb` strategy built specifically to h
 It executes offsetting buy and sell orders in both markets in order to capture arbitrage opportunities with profitability higher than `min_profitability`, net of transaction costs, which include both blockchain transaction fees (gas) and exchange fees.
 
 !!! note
-    Currently, this strategy requires users to install the `celo-cli` tool alongside Hummingbot. In the future, CoinAlpha plans to add a Celo connector to [Gateway](/protocols/gateway) so that the generic `amm_arb` strategy works with Celo.
+    Currently, this strategy requires users to install the `celo-cli` tool alongside Hummingbot. In the future, CoinAlpha plans to add a Celo connector to [Gateway](/gateway) so that the generic `amm_arb` strategy works with Celo.
 
 ## 🏦 Exchanges supported
 
