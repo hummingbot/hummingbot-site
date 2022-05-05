@@ -240,6 +240,7 @@ nav:
         - AMM: exchanges/amm/index.md
         - Uniswap: exchanges/uniswap.md
         - Pangolin: exchanges/pangolin.md
+        - Openocean: exchanges/openocean.md
     - Gateway:
       - Gateway: gateway/index.md  
       - Ethereum: gateway/ethereum.md
