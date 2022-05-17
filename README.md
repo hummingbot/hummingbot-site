@@ -25,9 +25,9 @@ The deployed site at https://hummingbot.org uses the [Insiders build](https://sq
 
 # install mkdocs-material-insiders and dependencies
 # (http)
-(mkdocs-material) ➜ pip install git+https://github.com/CoinAlpha/mkdocs-material-insiders.git
+(mkdocs-material) ➜ pip install git+https://github.com/hummingbot/mkdocs-material-insiders.git
 # (ssh)
-(mkdocs-material) ➜ pip install git+ssh://git@github.com/CoinAlpha/mkdocs-material-insiders
+(mkdocs-material) ➜ pip install git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
 
 # install revision date plugin
 (base) ➜ pip install mkdocs-git-revision-date-plugin
