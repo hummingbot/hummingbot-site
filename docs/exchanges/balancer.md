@@ -29,6 +29,6 @@ tags:
 
 ## 🔑 Connection
 
-First, follow the instructions to install and run [Hummingbot Gateway](/protocols/gateway/).
+First, follow the instructions to install and run [Hummingbot Gateway](/gateway/).
 
 Since this exchange is an Ethereum-based decentralized exchange (DEX), run `connect ethereum` in order to connect your Ethereum wallet. See [Ethereum](/protocols/ethereum) for more information.

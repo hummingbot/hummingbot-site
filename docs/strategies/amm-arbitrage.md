@@ -12,7 +12,7 @@ tags:
 
 This strategy monitors prices between a trading pair on an `amm` exchange versus another trading pair on another `spot` or `amm` exchange in order to identify arbitrage opportunities. Similar to the `arbitrage` strategy, it executes offsetting buy and sell orders in both markets in order to capture arbitrage opportunities with profitability higher than `min_profitability`, net of transaction costs, which include both blockchain transaction fees (gas) and exchange fees.
 
-Hummingbot will be accessing `amm` exchanges via Gateway V2 from v1.4.0. If you are looking for instructions on how to configure `amm` exchanges, refer to the [Gateway V2](/protocols/gateway/) and the [`amm`](/exchanges/#amm) specific setup instructions.
+Hummingbot will be accessing `amm` exchanges via Gateway V2 from v1.4.0. If you are looking for instructions on how to configure `amm` exchanges, refer to the [Gateway V2](/gateway/) and the [`amm`](/exchanges/#amm) specific setup instructions.
 
 ## 🏦 Exchanges supported
 
