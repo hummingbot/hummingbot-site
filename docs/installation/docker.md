@@ -136,32 +136,42 @@ You can install Docker by [downloading an installer](https://docs.docker.com/doc
 
 ## Windows
 
-The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. Windows users can install using Hummingbot using [Docker Desktop](https://docs.docker.com/docker-for-windows/).
+The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot in **Windows Subsystem for Linux (WSL)**.
 
-!!! note
-    Docker Toolbox has been deprecated and is no longer in active development. Please see this [link](https://docs.docker.com/docker-for-windows/docker-toolbox/) for more info.
+WSL lets developers run a Linux environment directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup. With WSL, Windows 10/11 users are able to run a Linux Virtual Machine without performance loss, and without the need of dual boot. See [here](https://docs.microsoft.com/en-us/windows/wsl/about) for more detail about WSL.
 
-### Install Docker Desktop
+### Install WSL
 
-![Docker Desktop](/assets/img/docker_desktop_download.gif)
+**1. Open Powershell as `admin`**
 
-**1 - Install Docker Desktop**
+Search for "Powershell" on the start menu, right-click and "run as admin"
 
-- [Windows Home](https://docs.docker.com/docker-for-windows/install-windows-home/)
-- [Windows Pro / Enterprise](https://docs.docker.com/docker-for-windows/install/)
+![Powershell start](/assets/img/wsl-powershell.png)
 
-**2 - Enable WSL 2**
+**2. Run the Install WSL commmand**
 
-To enable WSL 2, open `Windows PowerShell` and run it as administrator. Use the command below, and this will take a while to complete:
-
-```
-wsl.exe --set-version Ubuntu-18.04 2
+```bash
+wsl --install
 ```
 
-**3 - Open Docker Desktop, Go to Settings > Resources, and then enable WSL Integration**
+By default, WSL uses the Ubuntu distribution of Linux, which is compatible for Hummingbot.
 
-![Docker Desktop WSL enable](/assets/img/docker_desktop_WSLenable.gif)
+**3. Start WSL**
 
-**4 - Open `Ubuntu 18.04 LTS` and install Hummingbot**
+After the installation, just type `wsl` on the Powershell or on the Command prompt.
 
-Follow the instructions in the Linux section above to complete installing Hummingbot.
+Note that the first time WSL is executed, you will be asked to create a new default username/password.
+
+**4. Install Ubuntu from Windows Store**
+
+Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Store and install it as an app in the Start menu. That way, you don't have to run Powershell every time you use Hummingbot. 
+
+![Powershell start](/assets/img/wsl-distros.png)
+
+**5. Install Docker and Hummingbot**
+
+With WSL installed, you now have a Linux Virtual Machine running under Windows.
+
+![Linux on Windows](/assets/img/wsl-running.png)
+
+Follow the instructions in the **Install Hummingbot** section above to complete the installation process.

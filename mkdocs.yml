@@ -163,7 +163,6 @@ nav:
       - Installation: installation/index.md
       - Docker: installation/docker.md
       - Source: installation/source.md
-      - Windows WSL: installation/windows-wsl.md
       - Raspberry Pi: installation/raspberry-pi.md
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md
