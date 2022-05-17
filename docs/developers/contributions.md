@@ -100,7 +100,7 @@ Once the pull request has been reviewed and accepted; it will be merged by a mem
 !!! note
       Tests are very important. Submit tests if your pull request contains new, testable behavior. See [Unit test coverage](#unit-test-coverage) for more information.
 
-It is required to present a minimum 75% unit test coverage of all the changes included in a pull request. Some components are, however, excluded from this validation (for example all UI components).
+It is required to present a minimum 80% unit test coverage of all the changes included in a pull request. Some components are, however, excluded from this validation (for example all UI components).
 
 To calculate the diff-coverage locally on your computer, run `make development-diff-cover` after running all tests.
 
