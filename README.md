@@ -37,6 +37,14 @@ The deployed site at https://hummingbot.org uses the [Insiders build](https://sq
 
 ```
 
+#### Cairo dependency
+
+You may need to install [Cairo](https://cairographics.org/download) to run the Insiders build. On MacOS, the easiest way to install Cairo is with [Homebrew](https://brew.sh/):
+
+```
+brew install cairo
+```
+
 ### Regular
 
 You can also generate the site using the normal version of Material for MkDocs:
