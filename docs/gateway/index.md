@@ -75,3 +75,11 @@ balance
 And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. Other ERC20 token assets on your wallet will only be displayed once you have loaded an [amm_arb strategy](/strategies/amm-arbitrage/).
 
 ![Getting blockchain asset balances](/assets/img/gateway-balance.png)
+
+## Token Pairs
+
+Gateway-V2 currently doesn't support native token pairs. You'll have to wrap the tokens manually for all the currently supported connectors. For example, when trading using ``AVAX-USDC`` you'll need to enter the trading pair as ``WAVAX-USDC.e``
+
+Currently, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding messages in the future that will explain why the market isn't ready. 
+
+Also, the reason why Hummingbot doesn't auto wrap the tokens is because this will incur extra gas fees per trade and you will save more on gas fees if you manually wrap the amount of tokens you want instead. 
