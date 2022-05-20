@@ -1,9 +1,59 @@
-## ScriptBase
+# PMM Scripts
 
-This is the base class (`hummingbot/script/script_base.py`) for your script, it provides data, events and functions
-as below.
+Snippets of Python code that let users customize the [Pure Market Making](/strategies/pure-market-making) strategy.
 
-### Data
+!!! warning
+    PMM Scripts were an early experiment to let users customize Hummingbot, but it can only be used with the PMM strategy. In the 1.4.0 release, we introduced a generalized form of [Scripts](./index.md)
+
+## How it works
+
+After configured, the PMMScript will start automatically once the Pure Market Making strategy starts and stops when the strategy stops.
+A PMMScript is run on a new dedicated process, in case where the script fails or has a bug, your main Hummingbot
+application can still function.
+
+## Create your own PMMScript
+
+1. Create a new script file, you can see examples in the Examples section below, and save it into the [`/pmm-scripts` folder](https://github.com/hummingbot/hummingbot/tree/development/pmm_scripts)
+2. Configure your Hummingbot
+   1. Inside Hummingbot run command `config pmm_script_enabled` and/or `config pmm_script_file_path`.
+   2. Editing `conf_global.yml` file using a text editor.
+   ```json
+   pmm_script_enabled: true
+   pmm_script_file_path: spreads_adjusted_on_volatility_script.py
+   ```
+3. Start running a strategy
+
+## Examples
+
+The following examples can be found in the [`/pmm-scripts` folder](https://github.com/hummingbot/hummingbot/tree/development/pmm_scripts):
+
+### hello_world_script.py
+
+The most basic example only a few lines of code.
+
+### ping_pong_script.py
+
+Replicates our current ping pong strategy using script.
+
+### price_band_script.py
+
+Replicates our current price band strategy using script.
+
+### dynamic_price_band_script.py
+
+Demonstrates how to set the band around mid price moving average, the band moves as the average moves.
+
+### spreads_adjusted_on_volatility_script.py
+
+Demonstrates how to adjust bid and ask spreads dynamically based on price volatility.
+
+### script_template.py
+
+Provides you a base template to start using the scripts functions.
+
+## PMMScriptBase class
+
+`PMMScriptBase` is the base class for PMM Scripts.
 
 At every tick, the script gets current market price (`mid_price`), strategy configuration (`pmm_parameters`) and
 total balances (`all_total_balances`). The `mid_price` is stored in a list (`mid_prices`) where a new `mid_price`

@@ -299,7 +299,9 @@ nav:
         - Hanging Orders Tracker: developers/strategies/hanging-orders.md
       - Scripts:
         - Scripts: developers/scripts/index.md
-        - Script Base Class: developers/scripts/script-base.md
+        - Getting Started: developers/scripts/getting-started.md
+        - Examples: developers/scripts/script-examples.md
+        - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
