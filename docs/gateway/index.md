@@ -16,7 +16,6 @@ the `gateway` directory inside the Hummingbot repository.
 
 See [Developers - Gateway](/developers/gateway) for more information about its history, background, and intended developer experience.
 
-
 ## Chains supported
 
 Currently, Gateway supports the following blockchains:
@@ -52,7 +51,7 @@ Once you see the message "Loaded new configs into Gateway container", and the "G
 
 ![Gateway Running](/assets/img/gateway-create.png)
 
-## Setting Up DEX connectors
+## Setting up DEX connectors
 
 Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges. 
 
@@ -75,3 +74,9 @@ balance
 And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. Other ERC20 token assets on your wallet will only be displayed once you have loaded an [amm_arb strategy](/strategies/amm-arbitrage/).
 
 ![Getting blockchain asset balances](/assets/img/gateway-balance.png)
+
+## No auto-wrapping
+
+Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
+
+Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `1.5.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
