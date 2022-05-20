@@ -300,7 +300,7 @@ nav:
       - Scripts:
         - Scripts: developers/scripts/index.md
         - Getting Started: developers/scripts/getting-started.md
-        - Examples: developers/scripts/script-examples.md
+        - Examples: developers/scripts/examples.md
         - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
   - Releases:
