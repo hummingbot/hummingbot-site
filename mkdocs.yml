@@ -241,6 +241,8 @@ nav:
         - Uniswap: exchanges/uniswap.md
         - Pangolin: exchanges/pangolin.md
     - Gateway:
+      - Gateway Setup: gateway/gateway-setup.md
+      - Running Strategy with Gateway: gateway/running-strategy-with-gateway.md
       - Gateway: gateway/index.md  
       - Ethereum: gateway/ethereum.md
       - Avalanche: gateway/avalanche.md
