@@ -241,8 +241,6 @@ nav:
         - Uniswap: exchanges/uniswap.md
         - Pangolin: exchanges/pangolin.md
     - Gateway:
-      - Gateway Setup: gateway/gateway-setup.md
-      - Running Strategy with Gateway: gateway/running-strategy-with-gateway.md
       - Gateway: gateway/index.md  
       - Ethereum: gateway/ethereum.md
       - Avalanche: gateway/avalanche.md
@@ -307,6 +305,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.4.0: release-notes/1.4.0.md
     - 1.3.0: release-notes/1.3.0.md
     - 1.2.0: release-notes/1.2.0.md
     - 1.1.1: release-notes/1.1.1.md
