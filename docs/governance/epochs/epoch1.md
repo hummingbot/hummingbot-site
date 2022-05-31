@@ -31,7 +31,7 @@ For Epoch 1, the Hummingbot Foundation believes that **20,000 HBOT for one day o
 |[HGP-11](https://snapshot.org/#/hbot.eth/proposal/0x649beb18fc251ba2be18b76612e5ce1a29a1be96b41bdd31ec3a045b79512821)| 2,000,000 | Approved |
 |[HGP-13](https://snapshot.org/#/hbot.eth/proposal/0x04d9d865e872f7e50bef1eca957ffbeb76c0cb22883440de5438f46be6d2a1ac)| 225,000 | Approved |
 |[HGP-14](https://snapshot.org/#/hbot.eth/proposal/0x1fdb9a1ce7f3198c05711564dccad8dfbe9468078a77bc10647e80c30d49dd64)| 1,000,000 | Approved |
-|[HGP-15](https://snapshot.org/#/hbot.eth/proposal/0x1fdb9a1ce7f3198c05711564dccad8dfbe9468078a77bc10647e80c30d49dd64)| 2,000,000 | Approved |
+|[HGP-15](https://snapshot.org/#/hbot.eth/proposal/0x998c026e1cc9671f94af4e4991a7ebd2c0783d717dc8d73f4a0e47ea0cf7d77b)| 2,000,000 | Approved |
 
 **Total HBOT allocated on Epoch 1:** 19,725,000
 

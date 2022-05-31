@@ -7,9 +7,8 @@ The Proposals listed below have been approved and are currently in effect:
 - [HGP-10 [GC] Remove the 4 days pending period for PRPs](https://snapshot.org/#/hbot.eth/proposal/0x4c11d3166c9582fb33da9ccbd9ab3df8bae74f7d6dd18424f4fca866b1a8ebfd)
 - [HGP-12 [GC] Change all proposals voting period to 7 days](https://snapshot.org/#/hbot.eth/proposal/0x3518fdbd6b5793908698fb1fc6a38dccf4ca2e9923f3510dac1878c9081acc6d)
 - [HGP-13 [IB] Match HBOT to ONE reward from ONE Liquidity DAO liquidity campaign](https://snapshot.org/#/hbot.eth/proposal/0x04d9d865e872f7e50bef1eca957ffbeb76c0cb22883440de5438f46be6d2a1ac)
-
-### April 7-9, 2022
-- [HGP-6 [IB] ETHPortland Hackathon](https://snapshot.org/#/hbot.eth/proposal/0xdcec64d93ed0741360c63eb2fcd897a20e24ed0f15ef7f2d7a90564b70be58b3)
+- [HGP-16 [LD] Bridge HBOT tokens to Avalanche C-Chain with nomad.xyz](https://snapshot.org/#/hbot.eth/proposal/QmTxj6WFu1r9BhEBmFXJtmmgctayvzYvi5ESMrR113m9c6)
+- [HGP-17 [GC] Gov/legal changes to Foundation bylaws](https://snapshot.org/#/hbot.eth/proposal/0xfc1e42adb4f1e867102c6a5d9f4e0f91cb44107e433bcb27fc7dc95068dc22a9)
 
 ### End of Epoch 1 (June 30, 2022)
 
@@ -24,3 +23,7 @@ The Proposals listed below have been approved and are currently in effect:
 - [HGP-1 [GC] Confirmation of current Board of Directors](https://snapshot.org/#/hbot.eth/proposal/0x8059481cf3003a132d4ac1a566e645ec138dfca307718b5c67557e0de771311b)
 - [HGP-9 [IB] Distribution of unclaimed HBOT from initial launch on Hummingbot Miner](https://snapshot.org/#/hbot.eth/proposal/0x3bcb32a3db01ce61a30775e3739afa73a6b029944139dd9c6443ff0de4a2acd5)
 - [HGP-15 [IB] Airdrop HBOT tokens to community developers](https://snapshot.org/#/hbot.eth/proposal/0x998c026e1cc9671f94af4e4991a7ebd2c0783d717dc8d73f4a0e47ea0cf7d77b)
+
+### Expired Proposals
+
+- [HGP-6 [IB] ETHPortland Hackathon](https://snapshot.org/#/hbot.eth/proposal/0xdcec64d93ed0741360c63eb2fcd897a20e24ed0f15ef7f2d7a90564b70be58b3)
