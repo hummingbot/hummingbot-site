@@ -30,8 +30,8 @@ Start Hummingbot, and issue the following commands to connect to your test walle
 >>> gateway connect pangolin
 ```
 
-!!! warning
-    **Ensure to remove private keys from clipboard once used.**
+!!! warning "Remove private keys from clipboard"
+    Make sure to remove the copied private keys from your clipboard after use.
 
 ## Setting Up Global Configuration
 
