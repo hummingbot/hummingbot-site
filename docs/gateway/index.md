@@ -9,21 +9,18 @@ tags:
 
 ## What is Gateway-V2?
 
-Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges on various blockchain protocols that are used in the [amm-arb strategy](/strategies/amm-arbitrage/) and other strategies. Essentially, Gateway is a light web server that enables Hummingbot client to send and receive data from different blockchain protocols and provides an easier entry point for external devs to build connectors to other protocols.
+Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges
+on various blockchain protocols. Gateway lets you run a single trading bot that can operate on both CEXs and DEXs, enabling more creative and powerful strategies.
 
-Gateway V2 is now part of the Hummingbot repository. You can find the gateway V2 code living under
-the `gateway` directory inside the Hummingbot repository.
+See [History](./history) for more information about Gateway's history, background, and intended developer experience.
 
-See [Developers - Gateway](/developers/gateway) for more information about its history, background, and intended developer experience.
+See [Developers - Gateway](/developers/gateway) for how to set up Gateway from source, add DEX connectors, configure custom tokens, and other developer-oriented tasks.
 
-## Chains supported
+## DEXs and chains supported
 
-Currently, Gateway supports the following blockchains:
+See [DEXs](./exchanges) for the list of decentralized exchanges that Gateway currently supports.
 
-* [Ethereum](./ethereum)
-* [Avalanche](./avalanche)
-* [Harmony](./harmony)
-* [Solana](./solana)
+See [Chains](./chains) for the list of currently supported blockchains.
 
 ## Prerequisites
 

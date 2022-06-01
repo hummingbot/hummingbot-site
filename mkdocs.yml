@@ -236,16 +236,19 @@ nav:
         - Binance Futures: exchanges/binance-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
-      - AMM:
-        - AMM: exchanges/amm/index.md
-        - Uniswap: exchanges/uniswap.md
-        - Pangolin: exchanges/pangolin.md
-    - Gateway:
-      - Gateway: gateway/index.md  
-      - Ethereum: gateway/ethereum.md
-      - Avalanche: gateway/avalanche.md
-      - Harmony: gateway/harmony.md
-      - Solana: gateway/solana.md
+    - Gateway Connectors:
+      - Gateway Connectors: gateway/index.md
+      - DEXs:
+        - DEXs: gateway/exchanges/index.md
+        - Uniswap: gateway/exchanges/uniswap.md
+        - Pangolin: gateway/exchanges/pangolin.md
+      - Chains:
+        - Chains: gateway/chains/index.md
+        - Ethereum: gateway/chains/ethereum.md
+        - Avalanche: gateway/chains/avalanche.md
+        - Harmony: gateway/chains/harmony.md
+        - Solana: gateway/chains/solana.md
+      - History: gateway/history.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
@@ -280,8 +283,7 @@ nav:
       - Developers: developers/index.md
       - Contribution Guidelines: developers/contributions.md
       - Architecture: developers/architecture.md
-      - Gateway: developers/gateway.md
-      - Connectors:
+      - Exchange Connectors:
         - Developing Connectors: developers/connectors/index.md
         - Architecture:
           - Connector Architecture: developers/connectors/architecture/index.md
@@ -290,6 +292,10 @@ nav:
         - Build Process: developers/connectors/build.md
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
+      - Gateway Connectors:
+        - Gateway Connectors: developers/gateway/index.md
+        - Setup: developers/gateway/setup.md
+        - Running AMM-ARB with Gateway: developers/gateway/running-amm-arb.md
       - Strategies:
         - Developing Strategies: developers/strategies/index.md
         - Architecture: developers/strategies/architecture.md
