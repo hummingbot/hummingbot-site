@@ -13,6 +13,8 @@ To give the Hummingbot community transparency into the operations of the Humming
 
 [March 2022](https://shard-watcher-5b5.notion.site/March-2022-463b9f78a6384899b25cfc9bf6aef9ba)
 
+[April 2022](https://shard-watcher-5b5.notion.site/April-2022-7725536be9f44d6e8d22c1b0a7d31818)
+
 ## HBOT Allocation Report
 
 We maintain a report that gives community an overview of how HBOT tokens have been allocated through Hummingbot Governance Proposals:
