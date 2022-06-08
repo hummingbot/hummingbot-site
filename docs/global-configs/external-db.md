@@ -32,14 +32,14 @@ db_name: dbname
 
 ## Configuration parameters
 
-| Configuration Parameter | Possible Values                                |
-| ----------------------- |------------------------------------------------|
-| db_engine               | `sqlite`,`postgresql`,`mysql`,`oracle`,`mssql` |
-| db_host                 | any string e.g. `127.0.0.1`                    |
-| db_port                 | any string e.g. `3306`                         |
-| db_username             | any string e.g. `username`                     |
-| db_password             | any string e.g. `password`                     |
-| db_name                 | any string e.g. `dbname`                       |
+| Configuration Parameter | Possible Values                              |
+| ----------------------- | -------------------------------------------- |
+| db_engine               | `sqlite`,`postgres`,`mysql`,`oracle`,`mssql` |
+| db_host                 | any string e.g. `127.0.0.1`                  |
+| db_port                 | any string e.g. `3306`                       |
+| db_username             | any string e.g. `username`                   |
+| db_password             | any string e.g. `password`                   |
+| db_name                 | any string e.g. `dbname`                     |
 
 ## SQLAlchemy dialects
 
