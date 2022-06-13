@@ -102,8 +102,6 @@ TWAP processes orders when there is a remaining order quantity & the specified t
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [Advanced TWAP Strategy](https://hummingbot.io/blog/advanced-twap-strategy): The “twap_plus” strategy highly involves the Relative Strength Indicator (RSI) trend of a certain trading pair to execute trades. This way users can setup bots to match whenever the RSI levels are theoretically giving “Buy” signals or “Sell” signals and decide potential entry and exit points.
-
 :fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy 
 
 *Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
