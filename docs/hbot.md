@@ -3,7 +3,7 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 * **Issuer**: Hummingbot Foundation
 * **Token Contract Addressess**:
     * **Ethereum**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb))
-    * **Avalanche**: `0x38Dcf0532699b880E6a125F7d918380524CD60a6` ([Snowtrace](https://snowtrace.io/address/0x38Dcf0532699b880E6a125F7d918380524CD60a6))
+    * **Avalanche**: `0x38Dcf0532699b880E6a125F7d918380524CD60a6` ([Snowtrace](https://snowtrace.io/token/0x38Dcf0532699b880E6a125F7d918380524CD60a6))
 * **Name**: Hummingbot Governance Token
 * **Symbol**: HBOT
 * **Total Supply**: 1,000,000,000
@@ -24,6 +24,9 @@ To prevent HBOT token holders from being scammed by fraudulent versions of the t
 - **CoinGecko**: [https://www.coingecko.com/en/coins/hummingbot](https://www.coingecko.com/en/coins/hummingbot)
 - **CoinMarketCap**: [https://coinmarketcap.com/currencies/hummingbot/](https://coinmarketcap.com/currencies/hummingbot/)
 
+## Approved HBOT Chain Bridges
+
+- **[Nomad](https://app.nomad.xyz/)** - Bridge to Avalanche Blockchain
 ## Community Distributions
 
 At Foundation inception, 4 million (4% of total HBOT supply) was distributed to 62 historical Github contributors to the Hummingbot codebase and 2,522 historical users of the Hummingbot Miner platform. See the **Claim Your Tokens** section below if you haven't yet claimed yours.
