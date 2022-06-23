@@ -79,7 +79,7 @@ Unlike the market interfaces from similar open source trading libraries, Humming
 
 You can compare this to trading libraries that don't provide order tracking - trading bot writers would either have to come up with the tracking logic on their own; or risk the bot making or cancelling more orders than is needed, when exchange API calls get delayed or outright failed during periods of busy trading activity on the exchange.
 
-For example, in the Binance exchange connector [`binance_exchange.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx), you can find the order tracking logic in `BinanceExchange.c_start_tracking_order()` and `BinanceExchange.c_stop_tracking_order()`. These functions are typically called when orders are being created, cancelled, and also when order status updates arrive from the exchange API.
+For example, in the Binance exchange connector [`binance_exchange.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py), you can find the order tracking logic in `BinanceExchange.c_start_tracking_order()` and `BinanceExchange.c_stop_tracking_order()`. These functions are typically called when orders are being created, cancelled, and also when order status updates arrive from the exchange API.
 
 ![](/assets/img/architecture-order-tracking.webp)
 
@@ -122,7 +122,7 @@ For example, here is how the `balancer/sell` API endpoint is implemented in Gate
 **References:**
 
 * https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx
-* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx
+* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py
 * https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py
 * https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py
 * https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.ts

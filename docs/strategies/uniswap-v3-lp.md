@@ -17,7 +17,7 @@ This strategy creates and maintains Uniswap positions as the market price change
 
 ## 🏦 Exchanges supported
 
-[`uniswap-v3`](/gateway/exchanges/uniswap-v3)
+`uniswap-v3`
 
 ## 👷 Maintainer
 
