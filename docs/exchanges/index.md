@@ -1,4 +1,4 @@
-An exchange connector integrates with the API of a crypto exchange to enable high-frequency, two-way communication between the Hummingbot client and the exchange.
+An exchange connector integrates with the API of a crypto exchange to enable high-frequency, two-way communication between the Hummingbot client and the exchange. Currently there are `28` connectors available for spot exchanges and `3` perpetual market connectors. For Gateway there are `4` blockchains supported and `2` dex connectors available. 
 
 ## Exchange types
 
