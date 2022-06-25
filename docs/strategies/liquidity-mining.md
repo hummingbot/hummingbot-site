@@ -45,7 +45,7 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 ## 📓 Description
 
-[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/liquidity-mining/liquidity-mining.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/liquidity_mining/liquidity_mining.py)
 
 ## ℹ️ More Resources
 

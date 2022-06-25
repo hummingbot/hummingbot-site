@@ -21,7 +21,7 @@ It executes offsetting buy and sell orders in both markets in order to capture a
 
 ## 🏦 Exchanges supported
 
-* [Celo protocol](/protocols/celo)
+* Celo protocol
 * [`spot` exchanges](/exchanges/#spot)
 
 ## 👷 Maintenance

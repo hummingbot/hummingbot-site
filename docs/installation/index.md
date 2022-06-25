@@ -17,7 +17,7 @@ You can initially try out `hummingbot` in your browser without installing anythi
 
 !!! warning
     Binary releases are no longer maintained. The last available version is 0.46.
-    We recommend enabling WSL on Windows 10/11 and running Hummingbot on the integrated Linux Virtual Machine. Instructions [here](./windows-wsl)
+    We recommend enabling WSL on Windows 10/11 and running Hummingbot on the integrated Linux Virtual Machine. Instructions [here](/installation/docker/#install-wsl)
 
 Download and run the binary installer to install the last available binary release of Hummingbot:
 

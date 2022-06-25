@@ -19,7 +19,7 @@ In Eric Raymond's 1997 essay [The Cathedral and the Bazaar](https://en.wikipedia
 
 >Linus Torvalds’s style of development—release early and often, delegate everything you can, be open to the point of promiscuity—came as a surprise. No quiet, reverent cathedral-building here—rather, the Linux community seemed to resemble a great babbling **bazaar** of differing agendas and approaches ... out of which a coherent and stable system could seemingly emerge only by a succession of miracles.
 
-Today, Linux is the world's dominant operating system, powering virtually every website and the majority of mobile devices. Similar to Linux, Hummingbot’s modular architecture allows connectors to [exchanges](/exchanges) and blockchain [protocols](/protocols), as well as [strategy templates](/strategies), to be built independently, making it easy for independent, community developers to contribute and maintain individual components.
+Today, Linux is the world's dominant operating system, powering virtually every website and the majority of mobile devices. Similar to Linux, Hummingbot’s modular architecture allows connectors to [exchanges](/exchanges) and blockchain [protocols](/gateway/), as well as [strategy templates](/strategies), to be built independently, making it easy for independent, community developers to contribute and maintain individual components.
 
 See [Maintenance](/maintenance) for more details.
 

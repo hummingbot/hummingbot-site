@@ -26,8 +26,8 @@ Hummingbot is a general source framework for crypto algorithmic trading. We welc
 
 - [Contribution Guidelines](/developers/contributions): How to submit contributions to the Hummingbot codebase
 - [Developers](/developers): Explanation of Hummingbot's architecture and detailed reference on how to build connectors and strategies
-- [Building Connectors](/developers/connectors/requirements): Requirements for building an integration to a new crypto exchange
-- [Creating Strategies](/developers/connectors/requirements): Tutorial that shows you how to create a new Hummingbot strategy
+- [Building Connectors](https://hummingbot.org/developers/connectors/#exchange-connector-requirements): Requirements for building an integration to a new crypto exchange
+- [Creating Strategies](https://hummingbot.org/developers/connectors/#exchange-connector-requirements): Tutorial that shows you how to create a new Hummingbot strategy
 
 ## 🙋‍♂️ Getting help (general)
 
