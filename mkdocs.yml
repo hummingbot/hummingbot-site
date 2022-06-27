@@ -295,6 +295,7 @@ nav:
       - Gateway Connectors:
         - Gateway Connectors: developers/gateway/index.md
         - Setup: developers/gateway/setup.md
+        - API Interface: developers/gateway/api-interface.md
         - Building Gateway Connectors: developers/gateway/building-gateway-connectors.md
         - Running AMM-ARB with Gateway: developers/gateway/running-amm-arb.md
       - Strategies:
