@@ -190,6 +190,7 @@ nav:
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
       - Celo Arbitrage: strategies/celo-arbitrage.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+      - Fixed Grid: strategies/fixed-grid.md
       - Hedge: strategies/hedge.md
       - Liquidity Mining: strategies/liquidity-mining.md
       - Perpetual Market Making: strategies/perpetual-market-making.md
@@ -211,6 +212,7 @@ nav:
         - BitMart: exchanges/bitmart.md
         - Bittrex Global: exchanges/bittrex.md
         - Blocktane: exchanges/blocktane.md
+        - Bybit: exchanges/bybit.md
         - Coinbase Pro: exchanges/coinbase.md
         - CoinFLEX: exchanges/coinflex.md
         - CoinZoom: exchanges/coinzoom.md
@@ -235,6 +237,7 @@ nav:
         - Perp: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
+        - CoinFLEX Perpetual: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
@@ -242,6 +245,8 @@ nav:
         - DEXs: gateway/exchanges/index.md
         - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
+        - Sushiswap: gateway/exchanges/sushiswap.md
+        - TraderJoe: gateway/exchanges/traderjoe.md
       - Chains:
         - Chains: gateway/chains/index.md
         - Ethereum: gateway/chains/ethereum.md
@@ -312,6 +317,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.5.0: release-notes/1.5.0.md
     - 1.4.0: release-notes/1.4.0.md
     - 1.3.0: release-notes/1.3.0.md
     - 1.2.0: release-notes/1.2.0.md
