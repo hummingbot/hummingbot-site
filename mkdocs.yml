@@ -242,6 +242,7 @@ nav:
         - DEXs: gateway/exchanges/index.md
         - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
+        - Serum: gateway/exchanges/serum.md
       - Chains:
         - Chains: gateway/chains/index.md
         - Ethereum: gateway/chains/ethereum.md

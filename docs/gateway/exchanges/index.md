@@ -10,4 +10,9 @@ Currently, Gateway is designed to support Automatic Market Maker (**AMM**) type 
 
 ## CLOB
 
- As Gateway grows, we expect it to support other types of DEXs, particularly Central Limit Order Book (CLOB) exchanges like [Serum](https://portal.projectserum.com/).
+Central Limit Order Book (CLOB) DEX exchanges.
+
+
+| Exchange          | Website                                      | Chain(s)                         | Status                                               | Issues                                                                                                                                                      |
+|-------------------|----------------------------------------------|----------------------------------| ---------------------------------------------------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Serum](./serum/) | [serum.exchange](https://www.projectserum.com/) | [Solana](/gateway/chains/solana) | <span style="color:yellow; font-size:25px">⬤</span> | Connector has one or more reported issues. Search for [outstanding issues](https://github.com/hummingbot/hummingbot/labels/serum) related to this exchange. |
