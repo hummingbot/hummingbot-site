@@ -9,40 +9,51 @@ tags:
 
 ## What is Gateway-V2?
 
-Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges
-on various blockchain protocols. Gateway lets you run a single trading bot that can operate on both CEXs and DEXs, enabling more creative and powerful strategies.
+Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges (DEX) on various blockchain protocols. 
+
+Gateway lets you create a trading bot that can operate on both DEXs as well as centralized exchanges (CEXs), enabling users to access cross-exchange liquidity provision and arbitrage opportunities, as well as to create their own customized strategies and scripts.
 
 See [History](./history) for more information about Gateway's history, background, and intended developer experience.
 
 ## Using Gateway
 
-See [Setting up Gateway](./setup) for instructions on how to use Gateway from a non-technical trader's perspective.
+See [Setting up Gateway](./setup) for instructions on how to launch and use Gateway from the Hummingbot client interface.
 
-See [Developers - Gateway](/developers/gateway) for how to set up Gateway from source, add DEX connectors, configure custom tokens, and other developer-oriented tasks.
+See [Developers - Gateway](/developers/gateway) for how to install Gateway from source, add DEX connectors, configure custom tokens, and other developer-oriented tasks.
 
-## DEXs and chains supported
+## Supported DEXs
 
-Gateway supports multiple blockchains and multiple decentralized exchange models
+### AMM
 
-Currently, it supports the following blockchains:
+Gateway supports the following types of Automatic Market Maker (AMM) DEXs:
 
-* [Ethereum and EVM Chains](./ethereum)
-* [Solana](./solana)
+- **AMM**: AMMs similar to [Uniswap V2](https://docs.uniswap.org/protocol/V2/introduction)
+- **Concentrated Liquidity AMM**: AMMs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
+- **Perpetual AMM**: AMMs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
 
-Currently, it supports the following DEX types:
+See [AMM DEXs](./exchanges/amm) for a list of currently supported venues.
 
- * [AMM](./exchanges): Automated Market Maker exchanges similar to Uniswap V2, Uniswap V3, and Perpetual Protocol
- * [CLOB](./exchanges): Automated Market Maker exchanges similar to Serum and Mango Markets
+### CLOB
 
-!!! note "CLOB DEXs with Python SDKs"
-    As an alternative to building a Gateway connector, CLOB DEXs with Python SDKs and centralized exchange-like API interfaces can choose to integrate directly into the standard Hummingbot client. See [dYdX](/exchanges/dydx-perpetual/) for an example of an perpetual futures DEX connector, and [Loopring](/exchanges/loopring/) for an example of a spot DEX connector.
+Gateway plans to support the following types of Central Limit Order Book (CLOB) DEXs:
 
-## Adding connectors
+- **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
+- **Margin CLOB**: CLOB DEXs that support margin accounts, similar to [Mango Markets](https://docs.mango.markets/)
+- **Perpetual CLOB**: CLOB DEXs that support trade perpetual futures 
+
+See [CLOB DEXs](./exchanges/clob) for a list of currently supported venues.
+
+## Supported Blockchains
+
+* [Ethereum and EVM Chains](./chains/ethereum)
+* [Solana](./chains/solana) (In progress)
+
+## Adding Gateway Connectors
 
 ### Developer Tutorial
 
 See [Building Gateway Connectors](/developers/gateway/building-gateway-connectors/) for a step-by-step guide for adding a connector to a Uniswap-like AMM on an EVM-compatible chain).
 
-## API Interfaces
+### API Interfaces
 
 See [Developers - Gateway API Interfaces](/developers/gateway/api-interface/) for the standard API endpoints that each DEX type supports.

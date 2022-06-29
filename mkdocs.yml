@@ -238,15 +238,16 @@ nav:
         - dYdX: exchanges/dydx-perpetual.md
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
-      - Setting up Gateway: gateway/setup.md
-      - DEXs:
-        - DEXs: gateway/exchanges/index.md
+      - AMM DEXs:
+        - AMM DEXs: gateway/exchanges/amm/index.md
         - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
-      - Chains:
-        - Chains: gateway/chains/index.md
+      - CLOB DEXs:
+        - CLOB DEXs: gateway/exchanges/clob/index.md
+      - Supported Blockchains:
         - Ethereum and Other EVM Chains: gateway/chains/ethereum.md
         - Solana: gateway/chains/solana.md
+      - Setting up Gateway: gateway/setup.md
       - History: gateway/history.md
     - Global Configs:
       - Global Configs: global-configs/index.md
