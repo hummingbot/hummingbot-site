@@ -3,8 +3,6 @@ hide:
 - toc
 tags:
 - 👨‍👩‍👧‍👦 community contribution
-- market making
-- ⛏️ liquidity mining strategy
 ---
 
 # `fixed_grid`
