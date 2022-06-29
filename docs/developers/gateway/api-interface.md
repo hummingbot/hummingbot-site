@@ -10,7 +10,7 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 
 - **ConnectorBase**: Endpoints for all DEXs
 - **AMM**: Endpoints for spot AMM connectors needed to enable swapping assets (example: `uniswap`)
-- **AMM (Concentrated Liquidity)**: *Additional endpoints for spot AMM connectors that support concentrated liquidity ranges (example: `uniswap-v3`)
+- **Concentrated Liquidity AMM**: *Additional endpoints for spot AMM connectors that support concentrated liquidity ranges (example: `uniswap-v3`)
 - **Perpetual AMM**: Endpoints for perpetual futures AMMs (example: `perp`)
 - **CLOB**: Endpoints for central limit order book (CLOB) DEXs (example: `serum`)
 - **Margined CLOB**: Additional endpoints for CLOB DEXs that support margin accounts (example: `mango`)
@@ -54,7 +54,7 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 
 - Description: Get balances for an address
 - Request: `{chain, network, address, tokenSymbols}`
-- Response: `{ nonce }`
+- Response: `{ balances }`
 
 **GET `/network/poll`**
 
