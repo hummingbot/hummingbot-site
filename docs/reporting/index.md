@@ -15,6 +15,8 @@ To give the Hummingbot community transparency into the operations of the Humming
 
 [April 2022](https://hummingbot-foundation.notion.site/April-2022-7725536be9f44d6e8d22c1b0a7d31818)
 
+[May 2022](https://hummingbot-foundation.notion.site/May-2022-ca1145e8b8e4431dbb55bcad69ac485e)
+
 ## HBOT Allocation Report
 
 We maintain a report that gives community an overview of how HBOT tokens have been allocated through Hummingbot Governance Proposals:
