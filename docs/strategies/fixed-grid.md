@@ -11,13 +11,15 @@ tags:
 
 ## 📝 Summary
 
-The `fixed grid strategy` is often the entry point of users to algorithmic trading in crypto. It is available free to use on popular exchanges such as Binance and Kucoin. The fixed grid strategy is a useful tool for market making in consolidating / range-bound price action, and for stablecoin pairs. The only parameters needed to set up this strategy are the grid ceiling price, the grid floor price and the number of grid levels.
+The `fixed_grid` strategy is similar to "Grid Trading Bot" strategies available on popular exchanges such as Binance and Kucoin, which are often the entry point of users to algorithmic trading in crypto. The strategy may provide a useful tool for market making in consolidating or range-bound markets, as well as for stablecoin pairs. 
+
+The main parameters needed to set up this strategy are `grid_price_ceiling`, `grid_price_floor`, `n_levels` (the number of grid levels).
 
 This strategy was submitted to Hummingbot by a community developer as part of the Developer Grant of the [HGP-4](https://snapshot.org/#/hbot.eth/proposal/0xd0c5b54badfd631d7433da0f76795a9dc0d82fc66596d547cda2f3537f903e3f) proposal.
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

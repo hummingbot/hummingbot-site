@@ -36,7 +36,6 @@ Market making strategies help you provide liquidity to an exchange while mitigat
 | [`liquidity_mining`](./liquidity-mining)                        | `spot`              | CoinAlpha     | Provide liquidity on multiple pairs using a single base or quote token            |
 | [`perpetual_market_making`](./perpetual-market-making)          | `perp`              | CoinAlpha     | Market-making strategy for perpetual swap markets                                 |
 | [`pure_market_making`](./pure-market-making)                    | `spot`              | CoinAlpha      | Our original single-pair market making strategy                                  |
-| [`uniswap_v3_lp`](./uniswap-v3-lp)                              | [`uniswap-v3`](/exchanges/uniswap-v3)| CoinAlpha | Manage liquidity positions on Uniswap-V3 style AMMs                  |
 
 ## Useful Links:
 
@@ -70,7 +69,6 @@ Arbitrage strategies help you monitor different markets for opportunities to rea
 |-----------------------------------------------------------------|---------------------|---------------|-------------------------------------------------------------------------------------------|
 | [`amm_arb`](./amm-arbitrage)                                    | `spot`, `amm`       | CoinAlpha     | Exploits price differences between AMM and spot exchanges                                 |
 | [`arbitrage`](./arbitrage)                                      | `spot`              |               | Exploits price differences between two different spot exchanges                           |
-| [`celo-arb`](./celo-arbitrage)                                  | [`celo`](/protocols/celo)|          | Exploits price differences between Celo and other exchanges                               |
 | [`spot_perpetual_arbitrage`](./spot-perpetual-arbitrage)        | `spot`, `perp`      | CoinAlpha     | Exploits price differences between spot and perpetual swap exchanges                      |
 
 Arbitrage is the buying and selling of an asset in order to benefit from a difference in the price of the asset between markets. To explore arbitration further, here are a few helpful links.
@@ -88,7 +86,6 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 | [`fixed grid`](./fixed-grid)                                    | `spot`              |               | Place orders above and below a set price (dev grant proposal under HGP-4)      |
 | [`hedge`](./hedge)                                              | `perp`              |               | Hedges spot exchange inventory risk using perpetual swaps (dYdX hackathon winner)         |
 | [`twap`](./twap)                                                | `spot`              |               | Places a batch of limit orders over a period of time                                      |
-| `vwap`                                                          | `spot`              |               | Places a batch of limit orders based on order book volume                                 |
 
 ## ℹ️ More Resources
 

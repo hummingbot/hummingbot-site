@@ -188,7 +188,6 @@ nav:
       - Arbitrage: strategies/arbitrage.md
       - Aroon Oscillator: strategies/aroon-oscillator.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Celo Arbitrage: strategies/celo-arbitrage.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
       - Fixed Grid: strategies/fixed-grid.md
       - Hedge: strategies/hedge.md
@@ -196,15 +195,13 @@ nav:
       - Perpetual Market Making: strategies/perpetual-market-making.md
       - Pure Market Making: strategies/pure-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - Uniswap-v3 LP: strategies/uniswap-v3-lp.md
       - TWAP: strategies/twap.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
-      - Spot:
-        - Spot: exchanges/spot/index.md
+      - Spot Markets:
+        - Spot Markets: exchanges/spot/index.md
         - AltMarkets: exchanges/altmarkets.md
         - AscendEX: exchanges/ascend-ex.md
-        - Balancer: exchanges/balancer.md
         - Beaxy: exchanges/beaxy.md
         - Binance: exchanges/binance.md
         - Binance US: exchanges/binance-us.md
@@ -233,11 +230,11 @@ nav:
         - ProBit Global: exchanges/probit.md
         - ProBit Korea: exchanges/probit-korea.md
         - WazirX: exchanges/wazirx.md
-      - Perp:
-        - Perp: exchanges/perp/index.md
+      - Perpetual Futures Markets:
+        - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
-        - CoinFLEX Perpetual: exchanges/coinflex-perpetual.md
+        - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
@@ -250,7 +247,7 @@ nav:
       - CLOB DEXs:
         - CLOB DEXs: gateway/exchanges/clob/index.md
       - Supported Blockchains:
-        - Ethereum and Other EVM Chains: gateway/chains/ethereum.md
+        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
         - Solana: gateway/chains/solana.md
       - Setting up Gateway: gateway/setup.md
       - History: gateway/history.md

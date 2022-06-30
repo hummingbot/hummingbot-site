@@ -17,6 +17,7 @@ See [History](/gateway/history) in the main Gateway section for more information
 
 ## Building on Gateway
 
-* [Setup](./setup): Install and configure Gateway
+* [Setup](./setup): Install and configure Gateway from a developer's standpoint
+* [Gatetway API Interfaces](./api-interfaces): API interfaces for different DEX types supported by Gateway
 * [Building Gateway Connectors](./building-gateway-connectors): Step-by-step guide to adding DEX connectors to Gateway
 * [Running AMM-ARB with Gateway](./running-amm-arb): Developer-oriented tutorial that shows you how to test out the [`amm-arb`](/strategies/amm-arbitrage) strategy with Gateway 

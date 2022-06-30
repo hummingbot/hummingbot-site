@@ -14,7 +14,7 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

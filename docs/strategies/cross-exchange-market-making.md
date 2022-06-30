@@ -14,7 +14,7 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

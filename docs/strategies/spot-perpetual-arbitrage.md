@@ -18,8 +18,8 @@ With the position open, the bot will scan the prices on both connectors, and onc
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
-[`perp` exchanges](/exchanges/#perp)
+[`spot` exchanges](/exchanges/spot)
+[`perp` exchanges](/exchanges/perp)
 
 ## 👷 Maintainer
 
