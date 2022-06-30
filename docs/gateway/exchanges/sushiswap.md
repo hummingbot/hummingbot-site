@@ -4,20 +4,13 @@ tags:
 - ethereum dex
 ---
 
-!!! note
-    Gateway V2 comes with Avalanche's public RPC URL by default, which is good enough for short-term testing. But for real trading bots, you should configure your own node URL (e.g. via Moralis Speedy Nodes) which gives you higher API request rate limits.
-
-
 # `sushiswap`
 
-The Sushiswap protocol connector is managed by Gateway V2 - where the Gateway is now responsible for all on-chain operations (e.g. fetching prices and creating trade transactions), and the `GatewayEVMAMM` class on Hummingbot side is responsible for interfacing with Gateway V2.
+The SushiSwap connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
 
-## 📁 Folders
+It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
 
-* [Hummingbot - GatewayEVMAMM](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/hummingbot/strategy/amm_arb/amm_arb.py)
-* [Gateway V2 - AMM Routes](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/gateway/src/amm/amm.routes.ts)
-* [Gateway V2 - Uniswap-Like Controller](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/gateway/src/connectors/uniswap/uniswap.controllers.ts)
-* [Gateway V2 - Sushiswap Class](https://github.com/CoinAlpha/hummingbot/blob/feat/gateway-v2/gateway/src/connectors/sushiswap/sushiswap.ts)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/sushiswap)
 
 ## ℹ️ Exchange Info
 
@@ -28,10 +21,13 @@ The Sushiswap protocol connector is managed by Gateway V2 - where the Gateway is
 * SDK: https://github.com/sushiswap/sdk
 * FAQ: https://docs.sushi.com/docs/FAQ/General%20FAQ
 
-## 👷 Maintenance
+## 🔗 Supported Chains
 
-* TBA
-* Maintainer: [james-hummingbot](https://github.com/james-hummingbot)
+* [Ethereum](/gateway/chains/ethereum)
+
+## 👷 Developer
+
+Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/) 
 
 ## 🔑 Setup
 
