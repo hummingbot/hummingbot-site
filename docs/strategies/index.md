@@ -85,6 +85,7 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 
 | Name                                                            | Valid Exchanges     | Maintainer    | Description                                                                               |
 |-----------------------------------------------------------------|---------------------|---------------|-------------------------------------------------------------------------------------------|
+| [`fixed grid`](./fixed-grid)                                    | `spot`              |               | Place orders above and below a set price (dev grant proposal under HGP-4)      |
 | [`hedge`](./hedge)                                              | `perp`              |               | Hedges spot exchange inventory risk using perpetual swaps (dYdX hackathon winner)         |
 | [`twap`](./twap)                                                | `spot`              |               | Places a batch of limit orders over a period of time                                      |
 | `vwap`                                                          | `spot`              |               | Places a batch of limit orders based on order book volume                                 |
