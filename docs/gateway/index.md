@@ -9,71 +9,51 @@ tags:
 
 ## What is Gateway-V2?
 
-Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges
-on various blockchain protocols. Gateway lets you run a single trading bot that can operate on both CEXs and DEXs, enabling more creative and powerful strategies.
+Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges (DEX) on various blockchain protocols. 
+
+Gateway lets you create a trading bot that can operate on both DEXs as well as centralized exchanges (CEXs), enabling users to access cross-exchange liquidity provision and arbitrage opportunities, as well as to create their own customized strategies and scripts.
 
 See [History](./history) for more information about Gateway's history, background, and intended developer experience.
 
-See [Developers - Gateway](/developers/gateway) for how to set up Gateway from source, add DEX connectors, configure custom tokens, and other developer-oriented tasks.
+## Using Gateway
 
-## DEXs and chains supported
+See [Setting up Gateway](./setup) for instructions on how to launch and use Gateway from the Hummingbot client interface.
 
-See [DEXs](./exchanges) for the list of decentralized exchanges that Gateway currently supports.
+See [Developers - Gateway](/developers/gateway) for how to install Gateway from source, add DEX connectors, configure custom tokens, and other developer-oriented tasks.
 
-See [Chains](./chains) for the list of currently supported blockchains.
+## Supported DEXs
 
-## Prerequisites
+### AMM
 
-Gateway requires Docker to be installed on the host system. You can find instructions on how to install Docker from Docker's website:
+Gateway supports the following types of Automatic Market Maker (AMM) DEXs:
 
-* [Installing Docker on Windows](https://docs.docker.com/desktop/windows/install/)
-* [Installing Docker on Linux](https://docs.docker.com/engine/install/ubuntu/)
-* [Installing Docker on macOS](https://docs.docker.com/desktop/mac/install/)
+- **AMM**: AMMs similar to [Uniswap V2](https://docs.uniswap.org/protocol/V2/introduction)
+- **Concentrated Liquidity AMM**: AMMs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
+- **Perpetual AMM**: AMMs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
 
-You will also need to have an Infura account to set up Gateway, as the setup process will ask you for your Infura API key. Infura accounts are free, and you can create your own at https://infura.io/.
+See [AMM DEXs](./exchanges/amm) for a list of currently supported venues.
 
-## Setting up Gateway
+### CLOB
 
-Inside the main Hummingbot console, issue the command
+Gateway plans to support the following types of Central Limit Order Book (CLOB) DEXs:
 
-```
-gateway create
-```
+- **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
+- **Margin CLOB**: CLOB DEXs that support margin accounts, similar to [Mango Markets](https://docs.mango.markets/)
+- **Perpetual CLOB**: CLOB DEXs that support trade perpetual futures 
 
-This initializes Hummingbot gateway and starts it as a Docker container in your system. Once gateway has been initialized, it will be automatically started whenever you start Hummingbot.
+See [CLOB DEXs](./exchanges/clob) for a list of currently supported venues.
 
-You will be asked to input your Infura API key after the Docker container has been created and running. Enter the API key, and wait for the configuration to be loaded in the Gateway container.
+## Supported Blockchains
 
-Once you see the message "Loaded new configs into Gateway container", and the "Gateway" status flips to "ON" in the status bar, your Gateway installation is ready to use.
+* [Ethereum and EVM Chains](./chains/ethereum)
+* [Solana](./chains/solana) (In progress)
 
-![Gateway Running](/assets/img/gateway-create.png)
+## Adding Gateway Connectors
 
-## Setting up DEX connectors
+### Developer Tutorial
 
-Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges. 
+See [Building Gateway Connectors](/developers/gateway/building-gateway-connectors/) for a step-by-step guide for adding a connector to a Uniswap-like AMM on an EVM-compatible chain).
 
-Let's say you want to connect to Uniswap.
+### API Interfaces
 
-```
-gateway connect uniswap
-```
-
-You will then be asked about which network you want to connect to (i.e. mainnet or testnets), and then the private key of your wallet.
-
-![Connecting wallet to Gateway](/assets/img/gateway-connect.png)
-
-Once your wallet has been connected to the gateway, you can the connection with
-
-```
-balance
-```
-
-And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. Other ERC20 token assets on your wallet will only be displayed once you have loaded an [amm_arb strategy](/strategies/amm-arbitrage/).
-
-![Getting blockchain asset balances](/assets/img/gateway-balance.png)
-
-## No auto-wrapping
-
-Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
-
-Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
+See [Developers - Gateway API Interfaces](/developers/gateway/api-interface/) for the standard API endpoints that each DEX type supports.
