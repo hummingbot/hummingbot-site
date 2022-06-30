@@ -238,17 +238,17 @@ nav:
         - dYdX: exchanges/dydx-perpetual.md
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
-      - DEXs:
-        - DEXs: gateway/exchanges/index.md
+      - AMM DEXs:
+        - AMM DEXs: gateway/exchanges/amm/index.md
         - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
+      - CLOB DEXs:
+        - CLOB DEXs: gateway/exchanges/clob/index.md
         - Serum: gateway/exchanges/serum.md
-      - Chains:
-        - Chains: gateway/chains/index.md
-        - Ethereum: gateway/chains/ethereum.md
-        - Avalanche: gateway/chains/avalanche.md
-        - Harmony: gateway/chains/harmony.md
+      - Supported Blockchains:
+        - Ethereum and Other EVM Chains: gateway/chains/ethereum.md
         - Solana: gateway/chains/solana.md
+      - Setting up Gateway: gateway/setup.md
       - History: gateway/history.md
     - Global Configs:
       - Global Configs: global-configs/index.md
@@ -295,7 +295,8 @@ nav:
         - Debugging: developers/connectors/debug.md
       - Gateway Connectors:
         - Gateway Connectors: developers/gateway/index.md
-        - Setup: developers/gateway/setup.md
+        - Setting up Gateway for Developers: developers/gateway/setup.md
+        - Gateway API Interfaces: developers/gateway/api-interface.md
         - Building Gateway Connectors: developers/gateway/building-gateway-connectors.md
         - Running AMM-ARB with Gateway: developers/gateway/running-amm-arb.md
       - Strategies:
