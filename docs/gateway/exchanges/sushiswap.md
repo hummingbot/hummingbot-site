@@ -27,7 +27,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 👷 Developer
 
-Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/) 
+Added by Faouzijedidi1 in [v1.5.0](/release-notes/1.5.0/) 
 
 ## 🔑 Setup
 
