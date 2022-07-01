@@ -16,7 +16,7 @@ Similar to the `pure_market_making_strategy`, the `perpetual_market_making` stra
 
 ## 🏦 Exchanges supported
 
-[`perp` exchanges](/exchanges/#perp)
+[`perp` exchanges](/exchanges/perp)
 
 ## 👷 Maintenance
 

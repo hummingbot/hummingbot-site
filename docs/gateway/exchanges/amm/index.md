@@ -8,8 +8,8 @@ Gateway supports the following types of Automatic Market Maker (AMM) DEXs:
 | ---------- | --------- | --------| --------- | --------- | ------- |
 | [Uniswap V2](./uniswap/)  | [uniswap.org](https://uniswap.org/) | AMM | [Ethereum](/gateway/chains/ethereum) | CoinAlpha | Released in [v1.4.0](/release-notes/1.4.0/) |
 | [Pangolin](./pangolin/)| [pangolin.exchange](https://pangolin.exchange/) | AMM | [Avalanche](/gateway/chains/ethereum#avalanche) | CoinAlpha | Released in [v1.4.0](/release-notes/1.4.0/) |
-| Trader Joe | [traderjoe.xyz](https://traderjoe.xyz/) | AMM | [Avalanche](/gateway/chains/ethereum/#avalanche) | Hummingbot Foundation | Merged into [development](https://github.com/hummingbot/hummingbot/tree/development) |
-| SushiSwap | [sushi.com](https://sushi.com/) | AMM | [Ethereum](/gateway/chains/ethereum) | [james-hummingbot](https://github.com/james-hummingbot) | Merged into [development](https://github.com/hummingbot/hummingbot/tree/development) |
+| [Trader Joe](./traderjoe/) | [traderjoe.xyz](https://traderjoe.xyz/) | AMM | [Avalanche](/gateway/chains/ethereum/#avalanche) | [james-hummingbot](https://github.com/james-hummingbot) | Released in [v1.5.0](/release-notes/1.5.0/) |
+| [SushiSwap]((./traderjoe/)) | [sushi.com](https://sushi.com/) | AMM | [Ethereum](/gateway/chains/ethereum) | [james-hummingbot](https://github.com/james-hummingbot) | Released in [v1.5.0](/release-notes/1.5.0/) |
 | OpenOcean | [openocean.finance](https://openocean.finance/) | AMM | [Avalanche](/gateway/chains/ethereum/#avalanche) | [kanghoulin](https://github.com/kanghoulin) | [Open pull request](https://github.com/hummingbot/hummingbot/pull/5271) |
 | Curve | [sushi.com](https://sushi.com/) | AMM | [Ethereum](/gateway/chains/ethereum) | [james-hummingbot](https://github.com/james-hummingbot) | [Open pull request](https://github.com/hummingbot/hummingbot/pull/5334) |
 | QuickSwap | [quickswap.exchange](https://quickswap.exchange/) | AMM | [Polygon](/gateway/chains/ethereum#polygon) | [james-hummingbot](https://github.com/james-hummingbot) | [Open pull request](https://github.com/hummingbot/hummingbot/pull/5378) |

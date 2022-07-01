@@ -21,10 +21,13 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: https://docs.uniswap.org/sdk/introduction
 * Fees: https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees
 
-## 👷 Maintenance
+## 🔗 Supported Chains
 
-* Release added: [1.4.0](/release-notes/1.4.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* [Ethereum](/gateway/chains/ethereum)
+
+## 👷 Developer
+
+Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/) 
 
 ## 🔑 Setup
 

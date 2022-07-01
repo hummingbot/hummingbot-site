@@ -19,7 +19,7 @@ See [History](./history) for more information about Gateway's history, backgroun
 
 See [Setting up Gateway](./setup) for instructions on how to launch and use Gateway from the Hummingbot client interface.
 
-See [Developers - Gateway](/developers/gateway) for how to install Gateway from source, add DEX connectors, configure custom tokens, and other developer-oriented tasks.
+See [Setting up Gateway - Developers](/developers/gateway/setup) for instructions on how to install Gateway from source so that you can add DEX connectors, configure custom tokens, and perform other developer-oriented tasks.
 
 ## Supported DEXs
 

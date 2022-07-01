@@ -21,10 +21,13 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: https://github.com/pangolindex/sdk
 * FAQ: https://pangolin.exchange/faq/
 
-## 👷 Maintenance
+## 🔗 Supported Chains
 
-* Release added: [1.4.0](/release-notes/1.4.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* [Avalanche](/gateway/chains/ethereum/#avalanche)
+
+## 👷 Developer
+
+Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/) 
 
 ## 🔑 Setup
 

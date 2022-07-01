@@ -16,7 +16,7 @@ We recommend this strategy as a starting point for developers looking to build t
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
