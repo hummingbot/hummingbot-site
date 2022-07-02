@@ -238,6 +238,11 @@ nav:
         - dYdX: exchanges/dydx-perpetual.md
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
+      - Setting up Gateway: gateway/setup.md
+      - History: gateway/history.md
+      - Supported Blockchains:
+        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
+        - Solana: gateway/chains/solana.md
       - AMM DEXs:
         - AMM DEXs: gateway/exchanges/amm/index.md
         - Uniswap: gateway/exchanges/uniswap.md
@@ -246,11 +251,6 @@ nav:
         - TraderJoe: gateway/exchanges/traderjoe.md
       - CLOB DEXs:
         - CLOB DEXs: gateway/exchanges/clob/index.md
-      - Supported Blockchains:
-        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
-        - Solana: gateway/chains/solana.md
-      - Setting up Gateway: gateway/setup.md
-      - History: gateway/history.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
