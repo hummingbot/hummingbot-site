@@ -20,7 +20,7 @@ In addition, the strategy contains a number of parameters to enable traders to c
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

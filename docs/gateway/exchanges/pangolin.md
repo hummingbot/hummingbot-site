@@ -21,17 +21,20 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: https://github.com/pangolindex/sdk
 * FAQ: https://pangolin.exchange/faq/
 
-## 👷 Maintenance
+## 🔗 Supported Chains
 
-* Release added: [1.4.0](/release-notes/1.4.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* [Avalanche](/gateway/chains/ethereum/#avalanche)
+
+## 👷 Developer
+
+Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/) 
 
 ## 🔑 Setup
 
-!!! note
-    Gateway V2 comes with Avalanche's public RPC URL by default, which is good enough for short-term testing. But for real trading bots, you should configure your own node URL (e.g. via Moralis Speedy Nodes) which gives you higher API request rate limits.
+1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container, but **DO NOT** run `gateway connect pangolin` yet.
+2. Run `gateway config avalanche.nodeKey` and enter your [Moralis](https://moralis.io/) Speedy Node API key (i.e. `https://speedy-nodes-nyc.moralis.io/<API-KEY>/avalanche/mainnet`).
+3. Alternatively, run `gateway config avalanche.networks.avalanche.nodeURL` and add the RPC URL from any provider. You can use the default Avalanche RPC endpoint `https://api.avax.network/ext/bc/C/rpc`, but it may be slow.
+4. Now, run `gateway connect pangolin` and add your Avalanche wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
+5. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between TraderJoe and a different exchange.
+6. Run `start` to start the strategy, and you're trading!
 
-1. Follow the instructions to install and run [Hummingbot Gateway V2](/gateway/).
-2. Run `gateway connect pangolin` and add your Avalanche wallet to Gateway V2 for trading on Pangolin.
-3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
-4. Run `start` to start the strategy, and you're trading!

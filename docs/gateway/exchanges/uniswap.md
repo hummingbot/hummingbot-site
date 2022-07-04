@@ -21,14 +21,17 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: https://docs.uniswap.org/sdk/introduction
 * Fees: https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees
 
-## 👷 Maintenance
+## 🔗 Supported Chains
 
-* Release added: [1.4.0](/release-notes/1.4.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* [Ethereum](/gateway/chains/ethereum)
+
+## 👷 Developer
+
+Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/) 
 
 ## 🔑 Setup
 
 1. Follow the instructions to install and run [Hummingbot Gateway V2](/gateway/).
-2. Run `gateway connect uniswap` and add your Ethereum wallet to Gateway V2 for trading on Uniswap.
+2. Run `gateway connect uniswap` and add your Ethereum wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
 3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Uniswap and a different exchange.
 4. Run `start` to start the strategy, and you're trading!

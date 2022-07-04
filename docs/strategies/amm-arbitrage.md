@@ -16,8 +16,8 @@ Hummingbot will be accessing `amm` exchanges via Gateway V2 from v1.4.0. If you 
 
 ## 🏦 Exchanges supported
 
-* [`amm` exchanges](/exchanges/#amm)
-* [`spot` exchanges](/exchanges/#spot)
+* [`amm` exchanges](/gateway/exchanges/amm)
+* [`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

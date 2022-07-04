@@ -26,9 +26,12 @@ You will be asked to input your Infura API key after the Docker container has be
 
 Once you see the message "Loaded new configs into Gateway container", and the "Gateway" status flips to "ON" in the status bar, your Gateway installation is ready to use.
 
-![Gateway Running](/assets/img/gateway-create.png)
+[![Gateway Running](/assets/img/gateway-create.png)](/assets/img/gateway-create.png)
 
-## Setting up DEX connectors
+!!! warning "Why does Gateway continually emit disconnection messages?"
+    Any time you change a Gateway config, it restarts in order to propagate that setting across other related settings. Therefore, you may see log messages about Gateway losing and re-establishing connection.
+
+## Setting up DEX connectors on Ethereum
 
 Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges. 
 
@@ -38,22 +41,23 @@ Let's say you want to connect to Uniswap.
 gateway connect uniswap
 ```
 
-You will then be asked about which network you want to connect to (i.e. mainnet or testnets), and then the private key of your wallet.
+You will then be asked about which network you want to connect to (i.e. `mainnet` or `ropsten`), and then the private key of your wallet.
 
-![Connecting wallet to Gateway](/assets/img/gateway-connect.png)
+!!! note "Setting up DEX connectors on other EVM-based chains"
+    As of the `v1.5.0` release, we recommend that users DO NOT run `gateway connect <exchange>` directly for DEXs on EVM-based chains other than Ethereum mainnet.
+    
+    Instead, follow the setup instructions on each DEX's documentation page, i.e. [TraderJoe](/gateway/exchanges/traderjoe).
 
-Once your wallet has been connected to the gateway, you can the connection with
+Once your wallet has been connected to the gateway, you can the test the connection by running `balance`.
 
-```
-balance
-```
+[![Connecting wallet to Gateway](/assets/img/gateway-connect.png)](/assets/img/gateway-connect.png)
 
 And you should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. Other ERC20 token assets on your wallet will only be displayed once you have loaded an [amm_arb strategy](/strategies/amm-arbitrage/).
 
-![Getting blockchain asset balances](/assets/img/gateway-balance.png)
+[![Getting blockchain asset balances](/assets/img/gateway-balance.png)](/assets/img/gateway-balance.png)
 
 ## No auto-wrapping
 
 Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
 
-Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
+Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.

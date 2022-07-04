@@ -6,28 +6,40 @@ This page contains notes about connecting Gateway to the Ethereum blockhain and 
 
 📁 [EVM class folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/evm) 
 
+### Supported Networks
+
+* `mainnet` (mainnet)
+* `kovan` (testnet)
+* `ropsten` (testnet)
+
+### Node Providers
+
+As of the `v1.5.0` release, Gateway's default node provider is [Infura](https://infura.io). To add your Infura API key, run `gateway config ethereum.nodeKey` and enter your Infura API key (i.e. `https://mainnet.infura.io/v3/<API-key>`).
+
+Alternatively, run `gateway config ethereum.networks.mainnet.nodeURL` and add the mainnet RPC URL from any provider. To set the testnet RPC URLs, run `gateway config ethereum.networks.kovan.nodeURL` and `gateway config ethereum.networks.ropsten.nodeURL`.
+
 ## Avalanche  
 
 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/avalanche)
 
-### Moralis Speedy Nodes
+### Supported Networks
 
-Gateway uses Avalache's public RPC URLs for connecting to Avalanche-based DEXs like Pangolin, which is sufficient good enough for running short-term tests on Pangolin. 
+* `avalanche` (mainnet)
+* `fuji` (testnet)
 
-However, for real trading workloads, you should get a dedicated Avalanche RPC endpoint for your trading bot via [Moralis Speedy Nodes](https://moralis.io/speedy-nodes/), which allows for much higher RPC request volumes from trading bots.
+### Node Providers
 
-Afterwards, set the Speedy Node URL in Gateway:
-```
-# Set the node URL for Avalanche mainnet
-gateway config avalanche.networks.avalanche.nodeURL <Moralis node URL>
+As of the `v1.5.0` release, Gateway's default node provider is [Moralis](https://moralis.io). To add your Moralis Speedy Node API key, run `gateway config avalanche.nodeKey` and enter your Moralis Speedy Node API key (i.e. `https://speedy-nodes-nyc.moralis.io/<API-KEY>/avalanche/mainnet`).
 
-# Set the node URL for Avalanche testnet
-gateway config avalanche.networks.fuji.nodeURL <Moralis testnet node URL>
-```
+Alternatively, run `gateway config avalanche.networks.avalanche.nodeURL` and add the mainnet RPC URL from any provider. You can use the default Avalanche RPC endpoint `https://api.avax.network/ext/bc/C/rpc`, but it may be slow. To set the testnet RPC URLs, run `gateway config avalanche.networks.fuji.nodeURL`.
 
 ## Harmony
 
 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/harmony)
+
+## Polygon
+
+📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
 
 ## Arbitrum
 
@@ -38,9 +50,5 @@ Coming soon.
 Coming soon.
 
 ## Optimism
-
-Coming soon.
-
-## Polygon
 
 Coming soon.

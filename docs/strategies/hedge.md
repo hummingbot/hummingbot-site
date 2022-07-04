@@ -18,7 +18,7 @@ This strategy was the winning submission in the [dYdX hackathon](https://humming
 
 ## 🏦 Exchanges supported
 
-[`perp` exchanges](/exchanges/#perp)
+[`perp` exchanges](/exchanges/perp)
 
 ## 👷 Maintenance
 

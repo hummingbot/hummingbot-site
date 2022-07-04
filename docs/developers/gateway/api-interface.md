@@ -13,7 +13,7 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 - **Concentrated Liquidity AMM**: *Additional endpoints for spot AMM connectors that support concentrated liquidity ranges (example: `uniswap-v3`)
 - **Perpetual AMM**: Endpoints for perpetual futures AMMs (example: `perp`)
 - **CLOB**: Endpoints for central limit order book (CLOB) DEXs (example: `serum`)
-- **Margined CLOB**: Additional endpoints for CLOB DEXs that support margin accounts (example: `mango`)
+- **Margin CLOB**: Additional endpoints for CLOB DEXs that support margin accounts (example: `mango`)
 - **Perpetual CLOB**: Endpoints for perpetual futures CLOB DEXs
 
 !!! note
@@ -207,7 +207,7 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 
 In progress - see https://github.com/yourtrading-ai/hummingbot/blob/feat/gateway-v2_clob-serum/gateway/src/clob/clob.routes.ts.
 
-### Margined CLOB
+### Margin CLOB
 
 *Additional endpoints for CLOB DEXs that support margin accounts*
 
