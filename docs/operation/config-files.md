@@ -42,6 +42,10 @@ Running this command will automatically create the following files in these fold
 | `conf_amm_arb_[#].yml`                  | Settings for the [amm arbitrage](/strategies/amm-arbitrage/) strategy.                                     |
 | `conf_spot_perpetual_arbitrage_[#].yml` | Settings for the [spot perpetual arbitrage](/strategies/spot-perpetual-arbitrage/) strategy.         |
 | `conf_avellaneda_market_making_[#].yml` | Settings for the [avellaneda market making](/strategies/avellaneda-market-making/) strategy.         |
+| `conf_aroon_oscillator_[#].yml`         | Settings for the [aroon oscillator](/strategies/aroon-oscillator/) |
+| `conf_hedge_[#].yml`                    | Settings for the [hedge](/strategies/hedge/)                       |
+| `conf_TWAP_[#].yml`                     | Settings for the [TWAP](/strategies/twap/)                         |
+| `conf_fixed_grid_[#].yml`               | Settings for the [fixed grid](/strategies/fixed-grid/)             |
 
 !!! tip
     For editing configuration files directly, once they are created, you may find it easier to edit the configuration files in the `conf/` folder. Simply open them with a text editor and make any desired modifications.
@@ -61,6 +65,10 @@ We have developed walkthroughs for each strategy:
 - [Liquidity Mining](/strategies/liquidity-mining/)
 - [Spot Perpetual Arbitrage](/strategies/spot-perpetual-arbitrage/)
 - [Avellaneda Market Making](/strategies/avellaneda-market-making/)
+- [Aroon Oscillator](/strategies/aroon-oscillator/)
+- [Hedge](/strategies/hedge/)
+- [TWAP](/strategies/twap/)
+- [Fixed Grid](/strategies/fixed-grid/)
 
 !!! note
     When configuring your bot, make sure you are aware of your exchange's minimum order sizes and fees, and check that your trading pair has sufficient order book and trading volumes. You can find more info about specific exchanges in the [Connectors](/exchanges/) section.
@@ -79,19 +87,7 @@ You can also skip the prompt by running `import [file_name]` command.
 !!! tip
     Press **TAB** to scroll through the auto-complete selections.
 
-## Autofill import
-
-Choose between `start` and `config` after importing a strategy file. This will be applicable for all imported strategies.
-
-Prompt:
-
-```
-What to auto-fill in the prompt after each import command? (start/config) >>>
-```
-
 **Sample usage**
-
-`autofill_import = start`
 
 ```
 >>>`import conf_pure_mm_1.yml`
