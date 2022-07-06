@@ -19,7 +19,7 @@ This strategy was the winning submission in the Hummingbot track of the [Open De
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

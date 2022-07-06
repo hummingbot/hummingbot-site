@@ -13,7 +13,7 @@ This strategy monitor prices in two different trading pairs and executes offsett
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 

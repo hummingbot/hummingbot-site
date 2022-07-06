@@ -10,6 +10,26 @@ https://blog.gridinsoft.com/how-to-report-the-false-detection/ https://www.cyren
 
 We believe these are fairly generic designations that are probably triggered by the general crypto code in the `ethsnarks` module for the Loopring connector.
 
+### System has not been booted with systemd as init system (PID 1). Can't operate.
+![systemd error](/docker-io.jpg)
+
+If you are trying to install Docker on a WSL system without Docker Desktop you'll get the above error after running the install script. 
+To create a new Hummingbot instance open a WSL (Ubuntu) terminal and run `sudo dockerd` and leave the window running. Open a second terminal and run the following:
+
+``` 
+# 1) Download Hummingbot install, start, and update script
+wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh
+wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
+wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/update.sh
+
+# 2) Enable script permissions
+chmod a+x *.sh
+
+# 3) Create a hummingbot instance
+./create.sh
+
+```
+
 ### Source: ModuleNotFoundError
 
 ```

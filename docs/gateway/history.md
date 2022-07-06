@@ -14,7 +14,7 @@ Hummingbot Gateway was originally conceived as an interface for Hummingbot to in
 
 As a result, the original Hummingbot Gateway had a relatively simple architecture, and did not account for many of the failure modes seen in modern DEXes like Uniswap. e.g. stuck blockchain transactions. As a result, the original Hummingbot Gateway could not provide the reliability expected of production trading systems.
 
-We decided to do a major overhaul of the Hummingbot Gateway architecture in Q3 2020. The redesigned Hummingbot Gateway will be called **Gateway v2**.
+We decided to do a major overhaul of the Hummingbot Gateway architecture in Q3 2021. The redesigned Hummingbot Gateway will be called **Gateway v2**.
 
 ## Gateway V2
 

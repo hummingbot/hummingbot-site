@@ -14,7 +14,7 @@ This strategy implements a market making strategy described in the classic paper
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
