@@ -16,8 +16,6 @@ These configuration files created and used by Hummingbot are saved in the `conf/
 - Installed via Docker: `hummingbot_files/hummingbot_conf`
   - `hummingbot_files` is the default name of the parent directory. This can be different depending on the setup
     when the instance was created.
-- Installed via Binary (Windows): `%localappdata%\hummingbot.io\Hummingbot\conf`
-- Installed via Binary (MacOS): `~/Library/Application\ Support/Hummingbot/Conf`
 
 The template configuration files can be found here: [Config Templates](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/templates).
 
@@ -44,7 +42,7 @@ Running this command will automatically create the following files in these fold
 | `conf_avellaneda_market_making_[#].yml` | Settings for the [avellaneda market making](/strategies/avellaneda-market-making/) strategy.         |
 | `conf_aroon_oscillator_[#].yml`         | Settings for the [aroon oscillator](/strategies/aroon-oscillator/) |
 | `conf_hedge_[#].yml`                    | Settings for the [hedge](/strategies/hedge/)                       |
-| `conf_TWAP_[#].yml`                     | Settings for the [TWAP](/strategies/twap/)                         |
+| `conf_twap_[#].yml`                     | Settings for the [TWAP](/strategies/twap/)                         |
 | `conf_fixed_grid_[#].yml`               | Settings for the [fixed grid](/strategies/fixed-grid/)             |
 
 !!! tip
