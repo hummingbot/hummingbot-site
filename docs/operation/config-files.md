@@ -102,23 +102,6 @@ Enter "start" to start market making
 
 ```
 
-Here's an example if using the config command
-`autofill_import = config`
-
-```
->>>`import conf_pure_mm_1.yml`
-Configuration from conf_pure_mm_1.yml file is imported.
-
-Preliminary checks:
- - Exchange check: All connections confirmed.
- - Strategy check: All required parameters confirmed.
- -All checks: Confirmed.
-
-Enter "start" to start market making
-
->>> config
-
-```
 
 ## Create command shortcuts
 
