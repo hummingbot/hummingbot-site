@@ -14,17 +14,17 @@ Below are the available commands in the current Hummingbot release.
 | `config`          | Display the current bot's configuration                       |
 | `start`           | Start the current bot                                         |
 | `stop`            | Stop the current bot                                          |
-| `open_orders`     | Show all active open orders                                   |
-| `trades`          | Show trades                                                   |
-| `pnl`             | Show profit and losses                                        |
 | `status`          | Get the market status of the current bot                      |
 | `history`         | See the past performance of the current bot                   |
-| `generate_certs`  | Create SSL certifications for Gateway communication.          |
+| `gateway`         | Helper commands for Gateway server                            |
 | `exit`            | Exit and cancel all outstanding orders                        |
 | `export`          | Export your bot's trades or private keys                      |
-| `order_book`      | Displays the top 5 bid/ask prices and volume                  |
 | `ticker`          | Show market ticker of current order book                      |
-| `autofill_import` | Choose between `start` and `config` when importing a strategy |
+| `pmm_script`      | Send command to running PMM script instance                   |
+| `previous`        | Imports the last strategy used                                |
+| `rate`            | Show rate of a given trading pair                             |
+| `order_book`      | Displays the top 5 bid/ask prices and volume                  |
+| `tab_example`     | Display hello world                                           |
 
 ## Docker commands
 
@@ -34,7 +34,7 @@ These are the commonly used docker commands when using Hummingbot.
 | ----------------------------- | ----------------------------- |
 | `docker ps -a`                | List containers               |
 | `docker rm [container name]`  | Remove one or more containers |
-| `docker rmi [image name]`    | Remove one or more images     |
+| `docker rmi [image name]`     | Remove one or more images     |
 | `docker rm $(docker ps -a q)` | Remove all containers         |
 
 To view more docker commands, go to [Docker Command Line Reference](https://docs.docker.com/engine/reference/commandline/docker/).
