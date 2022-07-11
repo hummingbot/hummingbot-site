@@ -39,6 +39,7 @@ Hummingbot will be accessing `amm` exchanges via Gateway V2 from v1.4.0. If you 
 | `market_1_slippage_buffer` | decimal | 1 | True | How much buffer do you want to add to the price to account for slippage for orders on the first market |
 | `market_2_slippage_buffer` | decimal | 0 | True | How much buffer do you want to add to the price to account for slippage for orders on the second market |
 | `concurrent_orders_submission` | bool | False | True | Do you want to submit both arb orders concurrently (Yes/No) ? If No, the bot will wait for first connector order filled before submitting the other order |
+| `debug_price_shim` | bool | Do you want to enable the debug price shim for integration tests? If you don't know what it does you should keep it disabled. |
 | `gateway_transaction_cancel_interval` | int | 600 | True | After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds) >>> |
 
 ## 📓 Description
