@@ -26,6 +26,20 @@ Below are the available commands in the current Hummingbot release.
 | `order_book`      | Displays the top 5 bid/ask prices and volume                  |
 | `tab_example`     | Display hello world                                           |
 
+## Gateway commands
+
+| Command           | Function                                                      |
+| ----------------- | ------------------------------------------------------------- |
+| `create`          | Create gateway docker container instance                      |
+| `config`          | View or update gateway configuration                          |
+| `connect`         | Start the current bot                                         |
+| `connector-tokens`| Report token balances for gateway connectors                  |
+| `generate-certs`  | Create ssl certificate for gateway                            |
+| `start`           | Start gateway docker instance                                 |
+| `status`          | Chech status of gateway docker instance                       |
+| `stop`            | Stop gateway docker instance                                  |
+| `test-connection` | Ping gateway api server                                       |
+
 ## Docker commands
 
 These are the commonly used docker commands when using Hummingbot.
