@@ -36,7 +36,7 @@ Below are the available commands in the current Hummingbot release.
 | `connector-tokens`| Report token balances for gateway connectors                  |
 | `generate-certs`  | Create ssl certificate for gateway                            |
 | `start`           | Start gateway docker instance                                 |
-| `status`          | Chech status of gateway docker instance                       |
+| `status`          | Check status of gateway docker instance                       |
 | `stop`            | Stop gateway docker instance                                  |
 | `test-connection` | Ping gateway api server                                       |
 
