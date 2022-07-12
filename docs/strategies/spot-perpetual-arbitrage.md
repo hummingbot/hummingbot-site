@@ -46,7 +46,7 @@ Open
 
 ## 📓 Description
 =
-[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/spot-perpetual-arbitragte/spot-perpetual-arbitrage.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage.py)
 
 ## ℹ️ More Resources
 
