@@ -30,7 +30,7 @@ Exit
 
 **Install Hummingbot**
 
-The Latest ARM version can be found here (filter list by "arm") - [CoinAlpha DockerHub](https://hub.docker.com/r/coinalpha/hummingbot/tags?page=1&ordering=last_updated&name=arm)
+The Latest ARM version can be found here (filter list by "arm") - [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
 
 You can install Hummingbot with **_either_** of the following options:
 
@@ -53,7 +53,7 @@ You can install Hummingbot with **_either_** of the following options:
 
     # 4) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version: [ latest/development ] ( default = 'latest' )
-    >> version-1.1.0-arm_beta
+    >> version-1.5.0-arm_beta
     ```
 
 === "Manual"
@@ -76,7 +76,7 @@ You can install Hummingbot with **_either_** of the following options:
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    coinalpha/hummingbot:version-1.1.0-arm_beta
+    hummingbot/hummingbot:version-1.5.0-arm_beta
     ```
 
 ## Install from source

@@ -19,7 +19,7 @@ For example:
 
 Hummingbot is regularly updated each month (see [Release Notes](/release-notes/)) and recommends users to periodically update their installations to get the latest version of the software.
 
-Updating to the latest docker image (e.g. `coinalpha/hummingbot:latest`)
+Updating to the latest docker image (e.g. `hummingbot/hummingbot:latest`)
 
 !!! note
     Make sure to stop all the containers using the same image first  before running the `./update.sh` script.
@@ -47,7 +47,7 @@ Updating to the latest docker image (e.g. `coinalpha/hummingbot:latest`)
     docker rm hummingbot-instance
 
     # 2) Delete old hummingbot image
-    docker image rm coinalpha/hummingbot:latest
+    docker image rm hummingbot/hummingbot:latest
 
     # 3) Re-create instance with latest hummingbot release
     docker run -it \
@@ -56,9 +56,9 @@ Updating to the latest docker image (e.g. `coinalpha/hummingbot:latest`)
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_conf,destination=/conf/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
-    coinalpha/hummingbot:latest
+    hummingbot/hummingbot:latest
     ```
-A previous version (i.e. `version-0.30.0`) can be installed when creating a Hummingbot instance.
+A previous version (i.e. `version-1.4.0`) can be installed when creating a Hummingbot instance.
 
 ## Raspberry Pi
 
@@ -74,10 +74,10 @@ Instead, you need to run `./create.sh` to create a new instance with the latest 
 
     # 2) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version [ latest/development ] ( default = 'latest' )
-    >> version-0.44.0-arm_beta 
+    >> version-1.4.0-arm_beta 
     ```
 !!! Note
-    The latest ARM version of Hummingbot can be found here (filter list by "arm") - https://hub.docker.com/r/coinalpha/hummingbot/tags?page=1&ordering=last_updated&name=arm
+    The latest ARM version of Hummingbot can be found here (filter list by "arm") - [Hummingbot Dockerhub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
 
 
 ## Source
