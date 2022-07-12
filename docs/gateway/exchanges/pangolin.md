@@ -35,6 +35,6 @@ Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)
 2. Run `gateway config avalanche.nodeKey` and enter your [Moralis](https://moralis.io/) Speedy Node API key (i.e. `https://speedy-nodes-nyc.moralis.io/<API-KEY>/avalanche/mainnet`).
 3. Alternatively, run `gateway config avalanche.networks.avalanche.nodeURL` and add the RPC URL from any provider. You can use the default Avalanche RPC endpoint `https://api.avax.network/ext/bc/C/rpc`, but it may be slow.
 4. Now, run `gateway connect pangolin` and add your Avalanche wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-5. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between TraderJoe and a different exchange.
+5. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
 6. Run `start` to start the strategy, and you're trading!
 
