@@ -5,7 +5,7 @@ tags:
 
 # `okx`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okex)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx)
 
 ## ℹ️ Exchange Info
 
