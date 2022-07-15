@@ -43,7 +43,7 @@ To assist in the development of custom strategies, there are many overridable fu
 
 ## Market class
 
-The [`Market`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/market/market_base.pyx) class contains overridable functions that can help get basic information about an exchange that a strategy is operating on, which can include the balance, prices, and order books for any particular asset traded on the exchange. 
+The [`ExchangeBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange_base.pyx) class contains overridable functions that can help get basic information about an exchange that a strategy is operating on, which can include the balance, prices, and order books for any particular asset traded on the exchange. 
 
 * `c_buy()`: called when the user wants to place a buy order
 * `c_sell()`: called when the user wants to place a sell order
@@ -59,7 +59,7 @@ The [`Market`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/m
 * `c_quantize_order_amount()`: called to quantize the amount of an order
 * `c_get_fee()`: called to get the fee for exchange use
 
-Additionally, this strategy leverages the `Market` class’s `EventReporter` listener object, in order to check if buy/sell orders have been filled or completed, the user has enough balance to place certain orders, and if there are any order cancellations. The `EventLogger` object is also used to log the specific events when they occur. 
+Additionally, this strategy leverages the `OrderTracker` listener object, in order to check if buy/sell orders have been filled or completed, the user has enough balance to place certain orders, and if there are any order cancellations. The `HummingbotLogger` object is also used to log the specific events when they occur. 
 
 ## Configuration
 
@@ -70,7 +70,7 @@ Important commands on Hummingbot client:
 * `config` : Prompts users asking for details about strategy set up (e.g. token, market name, etc). Prompts can be modified in `{strategy name}_config_map.py`
 
 ### Exposing new strategy to Hummingbot client
-Make strategy name known to the client by adding name to [hummingbot/client/settings.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/client/settings.py) under `STRATEGIES` variable. There should also be a template file that contains config variables and its documentation in the [hummingbot/templates](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/templates) directory. The naming convention for this yml file is `conf_{strategy name}_TEMPLATE`. 
+The strategy name is made known to the client automatically in [hummingbot/client/settings.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/client/settings.py) under `STRATEGIES` variable. There should also be a template file that contains config variables and its documentation in the [hummingbot/templates](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/templates) directory. The naming convention for this yml file is `conf_{strategy name}_TEMPLATE`. 
 
 ### Setting question prompts for strategy parameters
 Strategy parameters can be set in the `config_map` file. Each parameter (represented as dictionary key) is mapped to a `ConfigVar` type where developer can specify the name of the parameter, prompts that will be provided to the user, and validator that will check the values entered. 

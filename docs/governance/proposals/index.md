@@ -18,10 +18,10 @@ Each proposal type has different Governance Parameters:
 
 After the Approval of [HGP-3](https://snapshot.org/#/hbot.eth/proposal/0x9a58b2136b5c20af9d4fd507cd8174e7f6e21425549bbe864e089154f76da415) the minimum Quorum needed for the approval of proposal is now a percentage of the circulating supply.
 
-*Last Update: 01/31/2022*
+*Last Update: 05/31/2022*
 
 |                       |                |
 |-----------------------|----------------|
 |**Total Supply**       | 1,000,000,000  |
-|**Circulating Supply** | 27,169,236     |
+|**Circulating Supply** | 49,057,369     |
 

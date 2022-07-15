@@ -14,7 +14,7 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
@@ -44,3 +44,17 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 | `max_order_age` | float | 3600 | False | What is the maximum life time of your orders (in seconds)? |
 
 ## 📓 Description
+
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/liquidity_mining/liquidity_mining.py)
+
+## ℹ️ More Resources
+
+:fontawesome-solid-globe: [Hummingbot Miner Help Center](https://support.hummingbot.io): Check out our latest announcements, campaigns, documentations, handy articles and much more.
+
+:fontawesome-solid-book: [Liquidty Mining related blog posts](https://hummingbot.io/en/blog/tag/liquidity-mining/)
+
+:fontawesome-solid-book: [Demystifying liquidity mining rewards](https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards)
+
+:fontawesome-brands-youtube: [Liquidity Mining Explained | For New Users](https://www.youtube.com/watch?v=ME5osB8sX_s): Learn about Liquidity Mining and how to set up a market-making bot to earn rewards in an exchange.
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

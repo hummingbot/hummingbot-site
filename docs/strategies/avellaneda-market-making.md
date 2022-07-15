@@ -14,7 +14,7 @@ This strategy implements a market making strategy described in the classic paper
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
@@ -115,19 +115,15 @@ The higher the value, the more aggressive the strategy will be to reach the `inv
 
 It's a unit-less parameter, that can be set to any non-zero value as necessary, depending on the inventory risk the user is willing to take. 
 
-> NOTE: The amount of decimal points used on the market price have a considerable influence on the how big the `risk_factor` must be to start having an effect of the **Reservation price** and on the **Optimal Spread**
-> As an example, on a market with 2 decimals (0.01), a `risk_factor = 1` can already have a noticeable effect, while on a market with 4 decimals (0.0001), the `risk_factor` must be at least around 1000 to have any noticeable effect.
+> NOTE: The `risk_factor` is defined relative to the instant volatility of the asset given in absolute price values. For all assets the values `risk_factor` can attain should be roughly within the same range, however there can be a few exceptions where the parameter would require a significantly different value to start having an effect on the **Reservation price** and on the **Optimal Spread**
+> As an example, for asset A, a `risk_factor = 1` can already have a noticeable effect, while for asset B, the `risk_factor` must be at least around 10 to have any noticeable effect.
 > The only way to find a value for the `risk_factor` is to experiment with different values and see it's effects on the **Reservation price** and the **Optimal spread**.
+> Based on our experience common values of this parameter are between 1 and 20, however it is unrestricted on the upper side, therefore if necessary its value can be even 100 or 1000, although it's not very common.
 
 Given the right market conditions and the right `risk_factor`, it's possible that the optimal spread will be wider than the absolute price of the asset, or that the reservation price will by far away from the mid price, in both cases resulting in the optimal bid price to be lower than or equal to 0. If this happens neiher buy or sell will be placed. To prevent it from happening, users can set the `risk_factor` to a lower value.
 
-The following examples can serve as a starting point in tuning the parameter. It's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
+In setting the `risk_factor` it's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
 
-| Asset price  | Example risk factor |
-|--------------|---------------------|
-| 2500         | 2                   |
-| 10           | 10                  |
-| 0.01         | 1000                |
 
 ![Figure 1: Risk factor adjustment flow chart ](/assets/img/avellaneda_risk_factor.svg)
 
@@ -191,3 +187,15 @@ The `minimum_spread` parameter is optional, it has no effect on the calculated r
 
 - [High-frequency Trading in a Limit Order Book - Avellaneda, Stoikov](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf)
 - [Optimal High-Frequency Market Making - Fushimi, Rojas, Herman](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf)
+
+## ℹ️ More Resources
+
+:fontawesome-solid-globe: [High-frequency trading in a limit order book](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf): The seminal 2008 paper on market making, published in *Quantitative Finance*, by Marco Avellaneda and Sasha Stoikov.
+
+:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://hummingbot.io/en/blog/2021-04-avellaneda-stoikov-market-making-strategy): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+
+:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](https://hummingbot.io/en/blog/2021-04-avellaneda-tech-deepdown): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
+
+:fontawesome-brands-youtube: [New Avellaneda Market Making Strategy Demo + AMA | Hummingbot Live](https://www.youtube.com/watch?v=ZbkkGvB-fis): Demo of the latest iteration of Avellaneda Market Making strategy
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

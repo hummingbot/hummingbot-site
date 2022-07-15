@@ -25,7 +25,7 @@ tags:
 
 ## 🔑 Connection
 
-Since this exchange is an Ethereum-based decentralized exchange (DEX), first run `connect ethereum` in order to connect your Ethereum wallet. See [Ethereum](/protocols/ethereum) for more information. Then, go to dYdX and create API keys for the same Ethereum wallet.
+Since this exchange is an Ethereum-based decentralized exchange (DEX), first run `connect ethereum` in order to connect your Ethereum wallet. See [Ethereum](https://hummingbot.org/gateway/) for more information. Then, go to dYdX and create API keys for the same Ethereum wallet.
 
 Next, `connect loopring` in Hummingbot in order to enter your API keys:
 

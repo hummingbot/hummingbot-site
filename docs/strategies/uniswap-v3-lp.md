@@ -17,7 +17,7 @@ This strategy creates and maintains Uniswap positions as the market price change
 
 ## 🏦 Exchanges supported
 
-[`uniswap-v3`](/exchanges/uniswap-v3)
+`uniswap-v3`
 
 ## 👷 Maintainer
 
@@ -95,3 +95,10 @@ Each tick, the bot monitors the pool mid price (`last_price`) and compare it to 
 
 - Currently, the strategy does not remove existing positions. The user should do it manually through the Uniswap interace (https://app.uniswap.org/#/pool).
 - The `status` command shows the current profitability of each position, using the `quote` asset as reference
+
+
+## ℹ️ More Resources
+
+:fontawesome-brands-youtube: [Uniswap V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI): Demo of the latest iteration of Uniswap V3 strategy
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

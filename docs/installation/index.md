@@ -17,6 +17,7 @@ You can initially try out `hummingbot` in your browser without installing anythi
 
 !!! warning
     Binary releases are no longer maintained. The last available version is 0.46.
+    We recommend enabling WSL on Windows 10/11 and running Hummingbot on the integrated Linux Virtual Machine. Instructions [here](/installation/docker/#install-wsl)
 
 Download and run the binary installer to install the last available binary release of Hummingbot:
 
@@ -24,7 +25,7 @@ Download and run the binary installer to install the last available binary relea
 
 ### 🐳 Docker
 
-The [Hummingbot DockerHub](https://hub.docker.com/r/coinalpha/hummingbot) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot, as well as past versions. 
+The [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot starting with version 1.5.0. For previous versions you may download the docker images from [CoinAlpha's Dockerhub](https://hub.docker.com/r/coinalpha/hummingbot) 
 
 We recommend this path for users who run Hummingbot on Linux, in the cloud, and/or multiple bots.
 
@@ -50,7 +51,7 @@ Hummingbot has been successfully tested with the following specifications:
 
 | Resource             | Requirement                                                                                                                  |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Operating System** | **Linux**: Ubuntu 16.04 or later (recommended) \*Other Linux installations: Debian GNU/Linux 9, CentOS 7, Amazon Linux 2 AMI |
+| **Operating System** | **Linux**: Ubuntu 18.04 or later (recommended) \*Other Linux installations: Debian GNU/Linux 9, CentOS 7, Amazon Linux 2 AMI |
 |                      | **MacOS**: macOS 10.12.6 (Sierra) or later                                                                                   |
 |                      | **Windows**: Windows 10 or later                                                                                             |
 | **Memory/RAM**       | 1 GB one instance _+250 MB per additional instance_                                                                          |

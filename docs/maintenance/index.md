@@ -43,7 +43,7 @@ The winning [`hedge`](/strategies/hedge/) strategy was merged in version [0.45.0
 
 ### Open DeFi Hackathon
 
-* **Sponsor**: [Open DeFi](https://opendefi.network/)
+* **Sponsor**: [Open DeFi](https://opendefi.finance/)
 * **Start date**: May 3, 2021
 * **End date**: May 23, 2021
 * **Total prize amount**: $5,000 (including tips)

@@ -13,7 +13,7 @@ This strategy monitor prices in two different trading pairs and executes offsett
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
@@ -105,3 +105,12 @@ The optimal arbitrage size calculation logic can be found in the functions `c_fi
 If the calculated arbitrage size is greater than 0, then the arbitrage strategy would send both the market buy and market sell orders to the two markets simultaneously. Arbitrage opportunities are usually rare and are quickly exploited by traders, and so it is important to send both orders out without any wait.
 
 The order execution logic can be found in the function `c_process_market_pair_inner()` inside [arbitrage.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx).
+
+
+## ℹ️ More Resources
+
+:fontawesome-solid-book: [What is Arbitrage?](https://hummingbot.io/en/blog/2020-09-what-is-arbitrage/): The concept of arbitrage is fairly simple: Arbitrage is the purchase and sale of an asset in order to benefit from a difference in the price of the asset between markets.
+
+:fontawesome-brands-youtube: [How to Spot Market Making and Arbitrage Opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU): Learn how to optimize the arbitrage strategy for different opportunities.
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

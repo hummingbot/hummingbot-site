@@ -18,8 +18,8 @@ With the position open, the bot will scan the prices on both connectors, and onc
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
-[`perp` exchanges](/exchanges/#perp)
+[`spot` exchanges](/exchanges/spot)
+[`perp` exchanges](/exchanges/perp)
 
 ## 👷 Maintainer
 
@@ -45,3 +45,13 @@ Open
 | `next_arbitrage_cycle_delay` | float | 120 | False | How long do you want the strategy to wait to cool off from an arbitrage cycle (in seconds) |
 
 ## 📓 Description
+=
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage.py)
+
+## ℹ️ More Resources
+
+:fontawesome-solid-book: [How to Use the New Spot-perpetual Arbitrage Strategy](https://hummingbot.io/blog/2021-03-spot-perpetual-protocol-guide): Learn how the spot-perpetual arbitrage strategy works and how you can make use of it.
+
+:fontawesome-brands-youtube: [Spot-Perpetual Arbitrage Strategy Demo | Hummingbot Live](https://www.youtube.com/watch?v=hJPmAy-Ellk): A live demo on how you can set parameters to run the spot-perpetual arbitrage strategy
+
+*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
