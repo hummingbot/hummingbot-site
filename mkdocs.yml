@@ -196,6 +196,7 @@ nav:
       - Pure Market Making: strategies/pure-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
+      - Uniswap v3 LP: strategies/uniswap-v3-lp.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
       - Spot Markets:
@@ -255,7 +256,6 @@ nav:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
       - Color Settings: global-configs/color-settings.md
-      - External Database: global-configs/external-db.md
       - Kill Switch: global-configs/kill-switch.md
       - Override Fees: global-configs/override-fees.md
       - Paper Trade: global-configs/paper-trade.md
@@ -315,6 +315,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.6.0: release-notes/1.6.0.md
     - 1.5.0: release-notes/1.5.0.md
     - 1.4.0: release-notes/1.4.0.md
     - 1.3.0: release-notes/1.3.0.md
