@@ -46,6 +46,7 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 | `use_oracle_conversion_rate` | bool        | True        | False       | Do you want to use rate oracle on unmatched trading pairs?|
 | `taker_to_maker_base_conversion_rate`| decimal | 1       | False       | What percentage of asset balance would you like to use for hedging trades on the taker market?|
 | `taker_to_maker_quote_conversion_rate`| decimal | 1      | False       | What percentage of asset balance would you like to use for hedging trades on the maker market?|
+| `slippage_buffer`            | decimal     | 5           | True        | How much buffer do you want to add to the price to account for slippage for taker orders?  |
 
 
 ## 📓 Description
