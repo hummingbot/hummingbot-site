@@ -33,7 +33,7 @@ The Foundation Github organization is located at https://github.com/hummingbot. 
 
 ### Docker
 
-The Hummingbot DockerHub is currently being hosted by CoinAlpha at: https://hub.docker.com/r/coinalpha/hummingbot and will move to Foundation ownership soon. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
+The Hummingbot DockerHub is at: https://hub.docker.com/repository/docker/hummingbot/hummingbot and will move to Foundation ownership soon. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
 
 ## 👪 Community Channels
 
