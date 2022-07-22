@@ -251,6 +251,7 @@ nav:
         - AMM DEXs: gateway/exchanges/amm/index.md
         - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
+        - Polygon: gateway/exchanges/quickswap.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
       - CLOB DEXs:
