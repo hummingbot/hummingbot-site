@@ -14,6 +14,8 @@ tags:
 * API docs: https://www.bitmex.com/api/explorer/
 * Transaction fees: https://www.bitmex.com/app/fees
 * Minimum order size: https://www.bitmex.com/app/faq#What-is-the-Minimum-Deposit-to-trade-on-BitMEX
+* Trading rules: https://www.bitmex.com/app/tradingRules
+* Leverage and margin: https://www.bitmex.com/app/perpetualContractsGuide#Leverage
 * Creating API keys: https://www.bitmex.com/app/apiKeysUsage
 
 ## 👷 Maintenance
