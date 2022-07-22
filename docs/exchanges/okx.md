@@ -7,16 +7,20 @@ tags:
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx)
 
+## 📝 Signup
+
+* Hummingbot referral link - <https://www.okx.com/join/1931920>
+* Sign up with OKEX using Hummingbot's referral link for a 10% discount!
+
 ## ℹ️ Exchange Info
 
-**OKEx** 
+**OKEx**
 [Website](https://www.okx.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/okx/) | [CoinGecko](https://www.coingecko.com/en/exchanges/okx)
 
-* API docs: https://www.okx.com/docs/en/
-* Transaction fees: https://www.okx.com/fees.html
-* Minimum order size: https://www.okex.com/support/hc/en-us/articles/360059776832-OKEx-to-adjust-minimum-order-amounts-for-some-spot-and-margin-trading-pairs
-* Creating API keys: https://www.okx.com/academy/en/complete-guide-to-okex-api-v5-upgrade/
-* Referral link: https://www.okx.com/join/1931920
+* API docs: <https://www.okx.com/docs/en/>
+* Transaction fees: <https://www.okx.com/fees.html>
+* Minimum order size: <https://www.okex.com/support/hc/en-us/articles/360059776832-OKEx-to-adjust-minimum-order-amounts-for-some-spot-and-margin-trading-pairs>
+* Creating API keys: <https://www.okx.com/academy/en/complete-guide-to-okex-api-v5-upgrade/>
 
 ## 👷 Maintenance
 
@@ -26,7 +30,7 @@ tags:
 ## 🔑 Connection
 
 Run `connect okex` in order to enter your API keys:
- 
+
 ```
 Enter your OKEx API key >>>
 Enter your OKEx secret key >>>
@@ -34,6 +38,7 @@ Enter your OKEx passphrase key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to okex.
 ```

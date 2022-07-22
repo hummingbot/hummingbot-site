@@ -17,9 +17,9 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 **TraderJoe**
 [Website](https://traderjoexyz.com/trade/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/traderjoe/) | [CoinGecko](https://www.coingecko.com/en/exchanges/traderjoe)
 
-* API docs: https://docs.traderjoexyz.com/en/security-and-contracts/api-beta
-* SDK: https://github.com/traderjoe-xyz/joe-sdk
-* FAQ: https://docs.traderjoexyz.com/en/welcome/faq-and-help
+* API docs: <https://docs.traderjoexyz.com/en/security-and-contracts/api-beta>
+* SDK: <https://github.com/traderjoe-xyz/joe-sdk>
+* FAQ: <https://docs.traderjoexyz.com/en/welcome/faq-and-help>
 
 ## 🔗 Supported Chains
 
@@ -27,7 +27,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 👷 Developer
 
-Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/) 
+Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 
 ## 🔑 Setup
 
@@ -36,3 +36,9 @@ Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 3. Now, run `gateway connect traderjoe` and add your Avalanche wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
 4. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
 5. Run `start` to start the strategy, and you're trading!
+
+## 📘 Additional Resources
+
+* We recommend using Infura for the RPC node link. Here's a quick guide on how to create the project and get the link - <https://blog.infura.io/post/getting-started-with-infura-28e41844cc89>
+* If for some reason you prefer to use a different provider instead of Infura here's a list of the top ones - <https://github.com/arddluma/awesome-list-rpc-nodes-providers#ethereum>
+* [RPC.Info](https://rpc.info/) has a list that users can use for testnets and other RPC nodes
