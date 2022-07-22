@@ -208,6 +208,7 @@ nav:
         - Binance US: exchanges/binance-us.md
         - Bitfinex: exchanges/bitfinex.md
         - BitMart: exchanges/bitmart.md
+        - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
         - Blocktane: exchanges/blocktane.md
         - Bybit: exchanges/bybit.md
@@ -223,6 +224,7 @@ nav:
         - Huobi Global: exchanges/huobi.md
         - KuCoin: exchanges/kucoin.md
         - Kraken: exchanges/kraken.md
+        - Latoken: exchanges/latoken.md
         - Liquid: exchanges/liquid.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
@@ -234,6 +236,7 @@ nav:
       - Perpetual Futures Markets:
         - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
+        - Bitmex Perpetual: exchanges/bitmex-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
