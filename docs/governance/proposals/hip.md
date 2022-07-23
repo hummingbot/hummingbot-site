@@ -17,7 +17,7 @@ Hummingbot Improvement Proposals (HIP) allow HBOT token holders to propose fixes
 !!! note "Improvement Proposals vs Governance Proposals"
     Improvement Proposals (HIP) are intended for smaller, specific chunks of work that a single developer can perform. Unlike governance proposals (HGP), developers can request HBOT in an HIP for specific work that they individually perform, as long as it is linked to an approved Dev Grant Budget.
 
-It is a good practice to discuss proposals with the community before opening it for voting. Proponents should create a thread in [Commonwealth](https://commonwealth.im/hummingbot-foundation) and share it in the **#governance-chat** channel in [Discord](https://discord.hummingbot.io) to encourage ample discussion.
+It is a good practice to discuss proposals with the community before opening it for voting. Proponents should create a thread in the [Hummingbot Forum](https://hummingbot.discourse.group) and share it in the **#governance** channel in [Discord](https://discord.hummingbot.io) to encourage ample discussion.
 
 Projects that require **more than one month** of estimated development work should be submitted as HGPs, then which can then be broken up into individual smaller tasks that enable participation by multiple community developers.
 

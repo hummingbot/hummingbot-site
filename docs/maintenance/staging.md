@@ -94,9 +94,7 @@ The rewards will be allocated of the following structure
 
 
 ## Participation Rules
-After all approved PRPs are merged and the `staging` branch is updated as the next Release Candidate, Hummingbot Foundation team will create a `Pinned Thread` on [Commonwealth](https://commonwealth.im/hummingbot-foundation), detailing what Pull Requests are going into the next release.
-
-**Example:** [Release v1.1 Thread](https://commonwealth.im/hummingbot-foundation/discussion/4000-march-release-candidate-12-staging-branch-review-now-active)
+After all approved PRPs are merged and the `staging` branch is updated as the next Release Candidate, Hummingbot Foundation team will create a thread in [Hummingbot Forum - Releases](https://hummingbot.discourse.group/c/releases/12), detailing what Pull Requests are going into the next release.
 
 Once the `Release Candidate Thread` is created, the Bug Hunt for that release will be active, until the new release deployment on the `main` branch is done. Then, the thread for that release candidate will be closed.
 
@@ -135,7 +133,7 @@ To report a bug and/or a bug fix on the release candidate `staging` branch, the 
 <br>
 
 ## Reward payment
-Rewards approved by the Hummingbot Foundation team will be sent to the address used to report on the respective **staging branch review** thread on Commonwealth, after every new release is deployed into the `master` branch.
+Rewards approved by the Hummingbot Foundation team will be sent to the address used to report on the respective **staging branch review** thread in the forum, after every new release is deployed into the `master` branch.
 
 ## Important Notes
 - Bug fixes aimed to the `staging` branch **do not need** to go through a PRP voting
