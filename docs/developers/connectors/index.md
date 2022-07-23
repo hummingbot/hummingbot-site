@@ -10,7 +10,7 @@ Note that each folder contained here marks different exchange connector types. T
 Building a new exchange connector requires conforming to the template code to the new exchange's APIs, identifying and handling any differences in functions/behaviors, and testing the new exchange connector on that exchange.
 
 !!! note "The Gold Standard"
-    We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance) and the [Binance Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual) connectors as the most up-to-date connector implementations in the codebase.
+    We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance) and the [Bybit Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual) connectors as the most up-to-date connector implementations in the codebase.
 
 ## Exchange connector requirements
 
