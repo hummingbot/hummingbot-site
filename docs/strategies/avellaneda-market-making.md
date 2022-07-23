@@ -46,11 +46,10 @@ This strategy implements a market making strategy described in the classic paper
 | `add_transaction_costs`      | decimal     |  False      | False       | Do you want to add transaction costs automatically to order prices? (Yes/No) |
 | `volatility_buffer_size`     | decimal     |  200        | False       | Enter amount of ticks that will be stored to calculate volatility |
 | `trading_intensity_buffer_size` | decimal     |  200        | False       | Enter amount of ticks that will be stored to estimate order book liquidity? |
-| `order_levels`               | int         |  1          | False       | How many orders do you want to place on both sides? |
+| `order_level_mode`               | int         |  1          | False       | How many orders do you want to place on both sides? |
 | `level_distances`            | decimal     |  0          | False       | How far apart in % of optimal spread should orders on one side be? |
 | `order_override`             | json        |             | False       |  |
-| `hanging_orders_enabled`     | bool        |  False      | False       | Do you want to enable hanging orders? (Yes/No) |
-| `hanging_orders_cancel_pct`  | decimal     |  10         | False       | At what spread percentage (from mid price) will hanging orders be canceled? |
+| `hanging_orders_mode  `     | bool        |  False      | False       | How do you want to handle hanging orders? (track_hanging_orders/ignore_hanging_orders) |
 | `should_wait_order_cancel_confirmation` |  bool |  True       | False       | Should the strategy wait to receive a confirmation for orders cancellation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
 
 ## 📓 Description

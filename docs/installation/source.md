@@ -3,7 +3,7 @@
 !!! note "Re-compiling files"
     If you make changes to the code, make sure to re-compile the code with `./compile` to ensure that any changes to Cython files are compiled before running Hummingbot
 
-You can install Docker and Hummingbot by selecting the following options below:
+You can install Source and Hummingbot by selecting the following options below:
 
 - **Scripts**: download and use automated install scripts
 - **Manual**: run install commands manually

@@ -20,6 +20,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * API docs: https://docs.uniswap.org/protocol/V2/introduction
 * SDK: https://docs.uniswap.org/sdk/introduction
 * Fees: https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees
+* RPC node providers: [Alchemy](https://www.alchemy.com/), [Infura](https://infura.io/), [Quicknode](https://www.quicknode.com/), and much more [here](https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/#popular-node-services)
 
 ## 🔗 Supported Chains
 
@@ -32,6 +33,9 @@ Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)
 ## 🔑 Setup
 
 1. Follow the instructions to install and run [Hummingbot Gateway V2](/gateway/).
-2. Run `gateway connect uniswap` and add your Ethereum wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
+2. Run `gateway connect uniswap` and choose your RPC node provider. 
 3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Uniswap and a different exchange.
 4. Run `start` to start the strategy, and you're trading!
+
+!!! warning
+    Run `gateway start` after connecting your RPC node URL of choice to run the gateway container again
