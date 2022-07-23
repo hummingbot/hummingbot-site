@@ -80,7 +80,7 @@ Currently, Hummingbot Foundation has 11 full-time staff who manage day-to-day op
 
 The first of these project DAOs are [Technical Review DAO](https://snapshot.org/#/hbot.eth/proposal/0x4480a6868355b8f4ad3dfcfa5d3e8bb043175bb8b250549433e5ba3360af536f), a 5-person collective that earns HBOT tokens for reviewing Github pull requests attached to Pull Request Proposals, and [ONE Liquidity DAO](https://talk.harmony.one/t/liquidity-dao-q1-2022-term-1-progress-report/15179), a 7-person collective that earns Harmony ONE and HBOT tokens for promoting and providing liquidity to the Harmony blockchain.
 
-The next project DAOs will likely be community-led initiatives that focus on building new areas of the Hummingbot codebase. We are currently gathering community interest in areas such as [options](https://commonwealth.im/hummingbot-foundation/discussion/4234-for-discussion-options-dao) and [NFT bots](https://commonwealth.im/hummingbot-foundation/discussion/3401-nft-bots). Please reply to the related forum threads if you are interested in participating.
+The next project DAOs will likely be community-led initiatives that focus on building new areas of the Hummingbot codebase. We are currently gathering community interest in areas such as options and NFT bots.
 
 - Continue supporting Technical Review DAO
 - Continue supporting ONE Liquidity DAO

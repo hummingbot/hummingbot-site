@@ -40,7 +40,7 @@ The PRP should contain the following information:
 * **Title**: Pull request number and title
 * **Description**: Description summary and a link to the pull request in Github
 
-* Proposal submitter may promote discussion of the pull request on Discord **#governance-chat** channels and the [Governance Forum](https://commonwealth.im/hummingbot-foundation/)
+* Proposal submitter may promote discussion of the pull request on Discord **#governance** channel and the [Hummingbot Forum](https://hummingbot.discourse.group).
 
 Here is an example of a PRP in Snapshot:
 

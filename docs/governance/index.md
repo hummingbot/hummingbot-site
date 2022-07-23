@@ -36,13 +36,13 @@ We use a number of platforms that enable community engagement in different ways.
 * Hummingbot technical support
 * Monthly community calls
 
-### Commonwealth
+### Hummingbot Forum
 
-Use [Commonwealth](https://commonwealth.im/hummingbot-foundation) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. Unlike Discord, so that they don't get lost in Discord. Commonwealth has a nice Snapshot integration, so this should be the easiest way to present an idea and mobilizing 💪🏻 votes for it!
+Use the official [Humminggbot Forum](https://hummingbot.discourse.group) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. The threads you create are persistent and categorized, so that don't get lost in Discord.
 
+* Starting point for new proposals
+* Community feedback
 * Exploratory research
-* Proposal feedback
-* Team project ideas
 
 ### Snapshot
 
