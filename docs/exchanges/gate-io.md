@@ -11,7 +11,7 @@ tags:
 ## 📝 Signup
 
 * Hummingbot referral link - <https://www.gate.io/signup/5868285>
-* Sign up with Gate.io using Hummingbot's referral link for a 10% discount!
+* Sign up with Gate.io using Hummingbot's referral link for a 10% discount off trading fees!
 
 ## ℹ️ Exchange Info
 

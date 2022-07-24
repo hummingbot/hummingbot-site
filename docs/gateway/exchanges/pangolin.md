@@ -39,6 +39,21 @@ Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)
 
 ## 📘 Additional Resources
 
-* We recommend using Infura for the RPC node link. Here's a quick guide on how to create the project and get the link - <https://blog.infura.io/post/getting-started-with-infura-28e41844cc89>
-* If for some reason you prefer to use a different provider instead of Infura here's a list of the top ones - <https://github.com/arddluma/awesome-list-rpc-nodes-providers#ethereum>
-* [RPC.Info](https://rpc.info/) has a list that users can use for testnets and other RPC nodes
+### Using the Public API nodes
+
+The public API server is at `api.avax.network` for **Avalanche Mainnet** and `api.avax-test.network` for **Avalanche Fuji Testnet**.
+Use the following end points for each chain respectively:
+
+### HTTP
+
+* For C-Chain API, the URL is <https://api.avax.network/ext/bc/C/rpc>.
+* For X-Chain API, the URL is <https://api.avax.network/ext/bc/X>.
+* For P-Chain API, the URL is <https://api.avax.network/ext/bc/P>.
+
+Note: on Fuji Testnet, use <https://api.avax-test.network/> instead of <https://api.avax.network/>.
+
+### WebSocket
+
+* For C-Chain API, the URL is wss://api.avax.network/ext/bc/C/ws.
+
+Note: on Fuji Testnet, the URL is wss://api.avax-test.network/ext/bc/C/ws.

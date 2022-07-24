@@ -10,7 +10,7 @@ tags:
 ## 📝 Signup
 
 * Hummingbot referral link - <https://www.okx.com/join/1931920>
-* Sign up with OKEX using Hummingbot's referral link for a 10% discount!
+* Sign up with OKX using Hummingbot's referral link for a 10% discount off trading fees!
 
 ## ℹ️ Exchange Info
 

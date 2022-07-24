@@ -249,11 +249,12 @@ nav:
         - Solana: gateway/chains/solana.md
       - AMM DEXs:
         - AMM DEXs: gateway/exchanges/amm/index.md
-        - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
         - Polygon: gateway/exchanges/quickswap.md
+        - Quickswap: gateway/exchanges/quickswap.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
+        - Uniswap: gateway/exchanges/uniswap.md
       - CLOB DEXs:
         - CLOB DEXs: gateway/exchanges/clob/index.md
     - Global Configs:

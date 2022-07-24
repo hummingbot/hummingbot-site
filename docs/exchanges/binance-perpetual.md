@@ -11,7 +11,7 @@ tags:
 ## 📝 Signup
 
 * Hummingbot referral link - <https://www.binance.com/en/futures/ref/hummingbot>
-* Sign up with Binance Futures using Hummingbot's referral link for a 10% discount!
+* Sign up with Binance Futures using Hummingbot's referral link for a 10% discount off trading fees!
 
 ## ℹ️ Exchange Info
 

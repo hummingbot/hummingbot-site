@@ -11,7 +11,7 @@ tags:
 ## 📝 Signup
 
 * Hummingbot referral link - <https://ascendex.com/register?inviteCode=UEIXNXKW>
-* Sign up with AscendEX using Hummingbot's referral link for a 10% discount!
+* Sign up with AscendEX using Hummingbot's referral link for a 10% discount off trading fees, for 365 days after registration!
 
 ## ℹ️ Exchange Info
 

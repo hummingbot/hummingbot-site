@@ -11,7 +11,6 @@ tags:
 ## 📝 Signup
 
 * Hummingbot referral link - <https://www.kucoin.com/ucenter/signup?rcode=272KvRf>
-* Sign up with Kucoin using Hummingbot's referral link for a 10% discount!
 
 ## ℹ️ Exchange Info
 

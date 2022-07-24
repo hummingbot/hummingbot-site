@@ -12,7 +12,7 @@ tags:
 ## 📝 Signup
 
 * Hummingbot referral link - <https://www.binance.com/en/register?ref=FQQNNGCD>
-* Sign up with Binance using Hummingbot's referral link for a 10% discount!
+* Sign up with Binance using Hummingbot's referral link for a 10% discount off trading fees!
 
 ## ℹ️ Exchange Info
 
