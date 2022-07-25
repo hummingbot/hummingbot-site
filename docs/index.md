@@ -33,7 +33,6 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 - [Whitepaper](/governance/whitepaper): Detailed description of how the governance system works
 - [Proposals](/governance/proposals): Different types of proposals
 - [Epochs](/governance/epochs): Fixed HBOT distribution cycles
-- [Developers Airdrop](https://commonwealth.im/hummingbot-foundation/discussion/4544-developers-airdrop-instructions-to-request-your-hbot-tokens)
 
 ## 💪 Contribute to Hummingbot
 

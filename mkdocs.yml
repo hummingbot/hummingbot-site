@@ -196,6 +196,7 @@ nav:
       - Pure Market Making: strategies/pure-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
+      - Uniswap v3 LP: strategies/uniswap-v3-lp.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
       - Spot Markets:
@@ -207,6 +208,7 @@ nav:
         - Binance US: exchanges/binance-us.md
         - Bitfinex: exchanges/bitfinex.md
         - BitMart: exchanges/bitmart.md
+        - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
         - Blocktane: exchanges/blocktane.md
         - Bybit: exchanges/bybit.md
@@ -222,6 +224,7 @@ nav:
         - Huobi Global: exchanges/huobi.md
         - KuCoin: exchanges/kucoin.md
         - Kraken: exchanges/kraken.md
+        - Latoken: exchanges/latoken.md
         - Liquid: exchanges/liquid.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
@@ -233,6 +236,7 @@ nav:
       - Perpetual Futures Markets:
         - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
+        - Bitmex Perpetual: exchanges/bitmex-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
@@ -247,6 +251,7 @@ nav:
         - AMM DEXs: gateway/exchanges/amm/index.md
         - Uniswap: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
+        - Polygon: gateway/exchanges/quickswap.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
       - CLOB DEXs:
@@ -255,7 +260,6 @@ nav:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
       - Color Settings: global-configs/color-settings.md
-      - External Database: global-configs/external-db.md
       - Kill Switch: global-configs/kill-switch.md
       - Override Fees: global-configs/override-fees.md
       - Paper Trade: global-configs/paper-trade.md
@@ -315,6 +319,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.6.0: release-notes/1.6.0.md
     - 1.5.0: release-notes/1.5.0.md
     - 1.4.0: release-notes/1.4.0.md
     - 1.3.0: release-notes/1.3.0.md
