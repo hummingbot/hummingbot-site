@@ -31,29 +31,11 @@ Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 
 ## 🔑 Setup
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container, but **DO NOT** run `gateway connect traderjoe` yet.
-2. Run `gateway config avalanche.networks.avalanche.nodeURL` and enter your desired Node RPC provider or use the default. If using fuji, run `gateway config avalanche.networks.fuji.nodeURL` and enter your desired Node RPC provider.
-3. Now, run `gateway connect traderjoe` and add your Avalanche wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-4. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
-5. Run `start` to start the strategy, and you're trading!
+1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
+2. Run `gateway connect traderjoe` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
+3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Trader Joe and a different exchange.
+4. Run `start` to start the strategy!
 
 ## 📘 Additional Resources
 
-### Using the Public API nodes
-
-The public API server is at `api.avax.network` for **Avalanche Mainnet** and `api.avax-test.network` for **Avalanche Fuji Testnet**.
-Use the following end points for each chain respectively:
-
-### HTTP
-
-* For C-Chain API, the URL is <https://api.avax.network/ext/bc/C/rpc>.
-* For X-Chain API, the URL is <https://api.avax.network/ext/bc/X>.
-* For P-Chain API, the URL is <https://api.avax.network/ext/bc/P>.
-
-Note: on Fuji Testnet, use <https://api.avax-test.network/> instead of <https://api.avax.network/>.
-
-### WebSocket
-
-* For C-Chain API, the URL is wss://api.avax.network/ext/bc/C/ws.
-
-Note: on Fuji Testnet, the URL is wss://api.avax-test.network/ext/bc/C/ws.
+See [Avalanche](/chains/ethereum/#avalanche) for more information about the default configuration settings and how to change them.

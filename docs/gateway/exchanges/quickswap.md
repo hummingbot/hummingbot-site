@@ -31,7 +31,11 @@ Added by james-hummingbot in [v1.6.0](/release-notes/1.6.0/)
 
 ## 🔑 Setup
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container.
-2. Now, run `gateway connect quickswap` and add your Polygon private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
+1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
+2. Run `gateway connect quickswap` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
 3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Quickswap and a different exchange.
-4. Run `start` to start the strategy, and you're trading!
+4. Run `start` to start the strategy!
+
+## 📘 Additional Resources
+
+See [Polygon](/gateway/chains/ethereum/#polygon) for more information about the default configuration settings and how to change them.
