@@ -17,12 +17,16 @@ This strategy creates and maintains Uniswap positions as the market price change
 
 ## 🏦 Exchanges supported
 
-`uniswap-v3`
+[`uniswap`](/gateway/exchanges/uniswap/)
+
+To use this connector, run:
+```
+gateway connect uniswapLP
+```
 
 ## 👷 Maintainer
 
-* Release added: [0.40.0](/release-notes/0.40.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* Release added: [1.6.0](/release-notes/1.6.0/) by CoinAlpha
 
 ## 🛠️ Strategy configs
 

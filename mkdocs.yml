@@ -236,7 +236,7 @@ nav:
       - Perpetual Futures Markets:
         - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
-        - Bitmex Perpetual: exchanges/bitmex-perpetual.md
+        - Bitmex: exchanges/bitmex-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
@@ -244,17 +244,16 @@ nav:
       - Gateway Connectors: gateway/index.md
       - Setting up Gateway: gateway/setup.md
       - History: gateway/history.md
-      - Supported Blockchains:
+      - Chains and Networks:
         - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
         - Solana: gateway/chains/solana.md
       - AMM DEXs:
         - AMM DEXs: gateway/exchanges/amm/index.md
         - Pangolin: gateway/exchanges/pangolin.md
-        - Polygon: gateway/exchanges/quickswap.md
         - Quickswap: gateway/exchanges/quickswap.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
-        - Uniswap: gateway/exchanges/uniswap.md
+        - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
       - CLOB DEXs:
         - CLOB DEXs: gateway/exchanges/clob/index.md
     - Global Configs:
