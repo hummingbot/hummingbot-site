@@ -25,7 +25,6 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 
 [Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making_config_map.py)
 
-
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
 | `maker_market`               | string      |             | True        | Enter your maker spot connector |
@@ -35,7 +34,7 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 | `min_profitability`          | string      |             | True        | What is the minimum profitability for you to make a trade?|
 | `order_amount`               | decimal     |             | True        | What is the amount of `base_asset` per order?|
 | `adjust_order_enabled`       | bool        | True        | True        | Do you want to enable adjust order?|
-| `active_order_canceling`     | bool        | True        | False       | Do you want to enable active order canceling?|
+| `order_refresh_mode`         | string      |             | True        | Select the order refresh mode (passive_order_refresh / active_order_refresh)? |
 | `cancel_order_threshold`     | decimal     | 5           | False       | Do you want to enable active order canceling?|
 | `limit_order_min_expiration` | decimal     | 130         | False       | How often do you want limit orders to expire (in seconds)?|
 | `top_depth_tolerance`        | decimal     | 0           | False       | What is your top depth tolerance? (in `base_asset`)|
@@ -47,7 +46,6 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 | `taker_to_maker_base_conversion_rate`| decimal | 1       | False       | What percentage of asset balance would you like to use for hedging trades on the taker market?|
 | `taker_to_maker_quote_conversion_rate`| decimal | 1      | False       | What percentage of asset balance would you like to use for hedging trades on the maker market?|
 | `slippage_buffer`            | decimal     | 5           | True        | How much buffer do you want to add to the price to account for slippage for taker orders?  |
-
 
 ## 📓 Description
 
@@ -67,7 +65,7 @@ The cross exchange market making strategy's code is divided into two major parts
  1. Order creation and adjustment
 
     Periodically creates and adjusts limit orders on the maker side.
- 
+
  2. Hedging order fills
 
     Performs the opposite, hedging trade on the taker side, whenever a maker order has been filled.

@@ -8,16 +8,20 @@ tags:
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
 
+## 📝 Signup
+
+* Hummingbot referral link - <https://www.binance.com/en/futures/ref/hummingbot>
+* Sign up with Binance Futures using Hummingbot's referral link for a 10% discount off trading fees!
+
 ## ℹ️ Exchange Info
 
 **Binance.com (Futures)** [Website](https://www.binance.com/en/futures) | [CoinMarketCap](https://coinmarketcap.com/exchanges/binance/) | [CoinGecko](https://www.coingecko.com/en/exchanges/binance)
 
-* API docs: https://binance-docs.github.io/apidocs/futures/en/#change-log
-* Transaction fees: https://www.binance.com/en/support/faq/360033544231
-* Creating API keys: https://www.binance.com/en/support/faq/360002502072
-* Trading rules: https://www.binance.com/en/futures/trading-rules/perpetual
-* Leverage and margin: https://www.binance.com/en/support/faq/360033162192
-* Referral link: https://www.binance.com/en/futures/ref/hummingbot
+* API docs: <https://binance-docs.github.io/apidocs/futures/en/#change-log>
+* Transaction fees: <https://www.binance.com/en/support/faq/360033544231>
+* Creating API keys: <https://www.binance.com/en/support/faq/360002502072>
+* Trading rules: <https://www.binance.com/en/futures/trading-rules/perpetual>
+* Leverage and margin: <https://www.binance.com/en/support/faq/360033162192>
 
 !!! note "Enable Futures"
     Ensure that the option **Enable Futures** is checked when you create your API key. If you don't see this option, you may need to open a Binance Futures account first.
@@ -25,18 +29,19 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [0.33.0](/release-notes/0.33.0/) by CoinAlpha
-* Maintainer: 
+* Maintainer:
 
 ## 🔑 Connection
 
 Run `connect binance_perpetual` in order to enter your API keys:
- 
+
 ```
 Enter your binance_perpetual API key >>>
 Enter your binance_perpetual secret key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to binance_perpetual.
 ```

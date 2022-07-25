@@ -17,9 +17,9 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 **TraderJoe**
 [Website](https://traderjoexyz.com/trade/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/traderjoe/) | [CoinGecko](https://www.coingecko.com/en/exchanges/traderjoe)
 
-* API docs: https://docs.traderjoexyz.com/en/security-and-contracts/api-beta
-* SDK: https://github.com/traderjoe-xyz/joe-sdk
-* FAQ: https://docs.traderjoexyz.com/en/welcome/faq-and-help
+* API docs: <https://docs.traderjoexyz.com/en/security-and-contracts/api-beta>
+* SDK: <https://github.com/traderjoe-xyz/joe-sdk>
+* FAQ: <https://docs.traderjoexyz.com/en/welcome/faq-and-help>
 
 ## 🔗 Supported Chains
 
@@ -27,7 +27,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 👷 Developer
 
-Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/) 
+Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 
 ## 🔑 Setup
 
@@ -36,3 +36,24 @@ Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 3. Now, run `gateway connect traderjoe` and add your Avalanche wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
 4. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
 5. Run `start` to start the strategy, and you're trading!
+
+## 📘 Additional Resources
+
+### Using the Public API nodes
+
+The public API server is at `api.avax.network` for **Avalanche Mainnet** and `api.avax-test.network` for **Avalanche Fuji Testnet**.
+Use the following end points for each chain respectively:
+
+### HTTP
+
+* For C-Chain API, the URL is <https://api.avax.network/ext/bc/C/rpc>.
+* For X-Chain API, the URL is <https://api.avax.network/ext/bc/X>.
+* For P-Chain API, the URL is <https://api.avax.network/ext/bc/P>.
+
+Note: on Fuji Testnet, use <https://api.avax-test.network/> instead of <https://api.avax.network/>.
+
+### WebSocket
+
+* For C-Chain API, the URL is wss://api.avax.network/ext/bc/C/ws.
+
+Note: on Fuji Testnet, the URL is wss://api.avax-test.network/ext/bc/C/ws.
