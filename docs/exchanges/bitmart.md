@@ -7,21 +7,25 @@ tags:
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bitmart)
 
+## 📝 Signup
+
+* Hummingbot referral link - <https://www.bitmart.com/en?r=UM6fQV>
+
 ## ℹ️ Exchange Info
 
 **BitMart**
 [Website](https://www.bitmart.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/bitmart/) | [CoinGecko](https://www.coingecko.com/en/exchanges/bitmart)
 
-- API docs: https://developer-pro.bitmart.com/en/
-- Transaction fees: https://support.bmx.fund/hc/en-us/articles/360002043633-Fees
-- Minimum order size: 
-- Creating API keys: https://support.bmx.fund/hc/en-us/articles/360016076854-How-to-Create-An-API
-- Referral link: https://www.bitmart.com/en?r=UM6fQV
+* API docs: <https://developer-pro.bitmart.com/en/>
+* Transaction fees: <https://support.bmx.fund/hc/en-us/articles/360002043633-Fees>
+* Minimum order size:
+* Creating API keys: <https://support.bmx.fund/hc/en-us/articles/360016076854-How-to-Create-An-API>
+* Referral link: <https://www.bitmart.com/en?r=UM6fQV>
 
 ## 👷 Maintenance
 
-- Release added: [0.44.0](/release-notes/0.44.0/) by CoinAlpha
-- Maintainer:
+* Release added: [0.44.0](/release-notes/0.44.0/) by CoinAlpha
+* Maintainer:
 
 ## 🔑 Connection
 
@@ -34,6 +38,7 @@ Enter your BitMart API Memo >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to bitmart.
 ```
