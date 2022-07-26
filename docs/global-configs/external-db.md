@@ -18,6 +18,9 @@ conda install psycopg2
 
 To configure RDBMS connection, we need to edit `conf_global.yml` in `/conf` directory.
 
+!!! Note
+    Starting with version 1.6.0 and above the `conf_global.yml` file has been renamed to `conf_client.yml`. If you just did a fresh install you may need to create a strategy first for the config file to be created.
+
 ```
 - Advanced database options, currently supports SQLAlchemy's included dialects
 - Reference: https://docs.sqlalchemy.org/en/13/dialects/
@@ -45,3 +48,6 @@ db_name: dbname
 
 It is also possible to connect with available SQLAlchemy's external dialects (e.g. Amazon Redshift). But the feature is not currently supported in Hummingbot due to its various DSN format, **use this at your own risk**.
 
+## 📘 Additional Resources
+
+In this [Youtube Video](https://www.youtube.com/watch?v=LU-4Ui-KCtY) the Foundation's lead developer **Fede**, shows you how you can use `Docker Compose` to launch multiple instances that all save to a single Postgres database.
