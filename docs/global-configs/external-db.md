@@ -16,7 +16,10 @@ These dialects requires separate DBAPI driver to be installed on Hummingbot's co
 conda install psycopg2
 ```
 
-To configure RDBMS connection, we need to edit `conf_global.yml` in `/conf` directory.
+To configure RDBMS connection, we need to edit `conf_client.yml` in the `/hummingbot_conf` directory.
+
+!!! Note
+    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
 ```
 - Advanced database options, currently supports SQLAlchemy's included dialects
@@ -45,3 +48,6 @@ db_name: dbname
 
 It is also possible to connect with available SQLAlchemy's external dialects (e.g. Amazon Redshift). But the feature is not currently supported in Hummingbot due to its various DSN format, **use this at your own risk**.
 
+## 📘 Additional Resources
+
+In this [Youtube Video](https://www.youtube.com/watch?v=LU-4Ui-KCtY) the Foundation's lead developer **Fede**, shows you how you can use `Docker Compose` to launch multiple instances that all save to a single Postgres database.

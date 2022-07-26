@@ -13,19 +13,25 @@ application can still function.
 
 ## Create your own PMMScript
 
-1. Create a new script file, you can see examples in the Examples section below, and save it into the [`/pmm-scripts` folder](https://github.com/hummingbot/hummingbot/tree/development/pmm_scripts)
+1. Create a new script file, you can see examples in the Examples section below, and save it into the [`/pmm_scripts` folder](https://github.com/hummingbot/hummingbot/tree/development/pmm_scripts)
 2. Configure your Hummingbot
-   1. Inside Hummingbot run command `config pmm_script_enabled` and/or `config pmm_script_file_path`.
-   2. Editing `conf_global.yml` file using a text editor.
-   ```json
-   pmm_script_enabled: true
-   pmm_script_file_path: spreads_adjusted_on_volatility_script.py
-   ```
+    * Inside Hummingbot run command `config pmm_script_mode` and/or `config pmm_script_mode.pmm_script_file_path`.
+    * Editing the `conf_client.yml` file located inside the `hummingbot_conf` folder using a text editor.
+
+        ```json
+        pmm_script_enabled: true
+        pmm_script_file_path: spreads_adjusted_on_volatility_script.py
+
+        ```
+
 3. Start running a strategy
+
+!!! Note
+    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
 ## Examples
 
-The following examples can be found in the [`/pmm-scripts` folder](https://github.com/hummingbot/hummingbot/tree/development/pmm_scripts):
+The following examples can be found in the [`/pmm_scripts` folder](https://github.com/hummingbot/hummingbot/tree/development/pmm_scripts):
 
 ### hello_world_script.py
 
@@ -67,19 +73,19 @@ Usage Example: `self.pmm_parameters.bid_spread = Decimal("0.03")` - to update bi
 
 These below are configurable parameters:
 
-- buy_levels (a number of buy orders to place, initially set to `order_levels` when the strategy starts)
-- sell_levels (a number of sell orders to place, initially set to `order_levels` when the strategy starts)
-- order_levels
-- bid_spread
-- ask_spread
-- order_amount
-- order_level_spread
-- order_level_amount
-- order_refresh_time
-- order_refresh_tolerance_pct
-- filled_order_delay
-- hanging_orders_enabled
-- hanging_orders_cancel_pct
+* buy_levels (a number of buy orders to place, initially set to `order_levels` when the strategy starts)
+* sell_levels (a number of sell orders to place, initially set to `order_levels` when the strategy starts)
+* order_levels
+* bid_spread
+* ask_spread
+* order_amount
+* order_level_spread
+* order_level_amount
+* order_refresh_time
+* order_refresh_tolerance_pct
+* filled_order_delay
+* hanging_orders_enabled
+* hanging_orders_cancel_pct
 
 ### Events
 

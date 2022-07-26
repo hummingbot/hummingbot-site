@@ -16,7 +16,7 @@ See [Proposals](proposals) for more information.
 
 ## Epochs
 
-In order to continually iterate and improve the governance process, we divide the next Hummingbot's future into **Epochs**. 
+In order to continually iterate and improve the governance process, we divide the next Hummingbot's future into **Epochs**.
 
 Epochs are a series of 5-month periods that allocate target HBOT distribution budgets across various HGP categories. Basically, epochs are long "sprints" that enable the Foundation to conduct a retrospective afterwards and improve the process for the next epoch.
 
@@ -38,7 +38,7 @@ We use a number of platforms that enable community engagement in different ways.
 
 ### Hummingbot Forum
 
-Use the official [Humminggbot Forum](https://hummingbot.discourse.group) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. The threads you create are persistent and categorized, so that don't get lost in Discord.
+Use the official [Hummingbot Forum](https://hummingbot.discourse.group) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. The threads you create are persistent and categorized, so that don't get lost in Discord.
 
 * Starting point for new proposals
 * Community feedback
@@ -50,9 +50,9 @@ All **proposal voting** occur on [Snapshot](https://snapshot.org/), which featur
 
 Each Proposal type has a different Snapshot space dedicated to it:
 
-* Pull Request Proposals (PRP): https://snapshot.org/#/hbot-prp.eth
-* Hummingbot Improvement Proposals (HIP): https://snapshot.org/#/hbot-ip.eth
-* Hummingbot Governance Proposals (HGP): https://snapshot.org/#/hbot.eth
+* Pull Request Proposals (PRP): <https://snapshot.org/#/hbot-prp.eth>
+* Hummingbot Improvement Proposals (HIP): <https://snapshot.org/#/hbot-ip.eth>
+* Hummingbot Governance Proposals (HGP): <https://snapshot.org/#/hbot.eth>
 
 ### Github
 

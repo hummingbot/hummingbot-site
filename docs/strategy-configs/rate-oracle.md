@@ -1,7 +1,7 @@
 This new feature provides real time, most up-to-date exchange rate on any given token or currency from a reliable and trustworthy data source.
 
 !!! note
-    Use rate oracle with the [cross exchange market making](/strategies/cross-exchange-market-making/) and [arbitrage](/strategies/arbitrage/) strategies.    
+    Use rate oracle with the [cross exchange market making](/strategies/cross-exchange-market-making/) and [arbitrage](/strategies/arbitrage/) strategies.
 
 ## Parameters
 
@@ -39,13 +39,16 @@ What is your default display token symbol? (e.g. $, €)
 
 ## How it works
 
-If you need to view the rate oracle conversion after the `balance`, `pnl`, `open_orders`, `trades`, and `status` command, set it manually in the `config_global.yml`.
+If you need to view the rate oracle conversion after the `balance`, `pnl`, `open_orders`, `trades`, and `status` command, set it manually in the `conf_client.yml`.
+
+!!! Note
+    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
 To set the parameters for `rate_oracle_source`, `global_token` and `global_token_symbol`, run the `config` command.
 
 Refer to the example below:
 
-Change the default setting in `conf_global.yml` to GBP (Great Britain Pound). The conversion will show up when you run `balance` command.
+Change the default setting in `conf_client.yml` to GBP (Great Britain Pound). The conversion will show up when you run `balance` command.
 
 ![](/assets/img/rate-oracle-global-config.png)
 
