@@ -17,9 +17,9 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 **TraderJoe**
 [Website](https://traderjoexyz.com/trade/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/traderjoe/) | [CoinGecko](https://www.coingecko.com/en/exchanges/traderjoe)
 
-* API docs: https://docs.traderjoexyz.com/en/security-and-contracts/api-beta
-* SDK: https://github.com/traderjoe-xyz/joe-sdk
-* FAQ: https://docs.traderjoexyz.com/en/welcome/faq-and-help
+* API docs: <https://docs.traderjoexyz.com/en/security-and-contracts/api-beta>
+* SDK: <https://github.com/traderjoe-xyz/joe-sdk>
+* FAQ: <https://docs.traderjoexyz.com/en/welcome/faq-and-help>
 
 ## 🔗 Supported Chains
 
@@ -27,12 +27,15 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 👷 Developer
 
-Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/) 
+Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 
 ## 🔑 Setup
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container, but **DO NOT** run `gateway connect traderjoe` yet.
-2. Run `gateway config avalanche.networks.avalanche.nodeURL` and enter your desired Node RPC provider or use the default. If using fuji, run `gateway config avalanche.networks.fuji.nodeURL` and enter your desired Node RPC provider.
-3. Now, run `gateway connect traderjoe` and add your Avalanche wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-4. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
-5. Run `start` to start the strategy, and you're trading!
+1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
+2. Run `gateway connect traderjoe` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
+3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Trader Joe and a different exchange.
+4. Run `start` to start the strategy!
+
+## 📘 Additional Resources
+
+See [Avalanche](/chains/ethereum/#avalanche) for more information about the default configuration settings and how to change them.
