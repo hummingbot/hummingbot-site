@@ -47,4 +47,3 @@ You can access Miner support via the following methods:
 
 - Email: Send us a message at [support@hummingbot.io](mailto:support@hummingbot.io)
 - Live chat: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io),
-- Discord: Post a message on the **#support** or **#liquidity-mining** channels on [Discord](https://discord.hummingbot.io)

@@ -30,7 +30,7 @@ Running this command will automatically create the following files in these fold
 
 | File                                    | Description                                                                                          |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `conf_global.yml`                       | Global configuration settings, e.g. Binance API keys and Ethereum node.                              |
+| `conf_client.yml`                       | Global configuration settings, e.g. Binance API keys and Ethereum node.                              |
 | `conf_pure_mm_[#].yml`                  | Settings for the [pure market making](/strategies/pure-market-making/) strategy.                     |
 | `conf_xemm_[#].yml`                     | Settings for the [cross-exchange market making](/strategies/cross-exchange-market-making/) strategy. |
 | `conf_liquidity_mining_[#].yml`         | Settings for the [liquidity mining](/strategies/liquidity-mining/) strategy.                         |
@@ -102,10 +102,12 @@ Enter "start" to start market making
 
 ```
 
-
 ## Create command shortcuts
 
-To use this feature, open and configure `conf_global.yml`.
+To use this feature, open and configure `conf_client.yml` located under the `hummingbot_conf` folder.
+
+!!! Note
+    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
 Import the lines of code to create a custom command shortcut.
 

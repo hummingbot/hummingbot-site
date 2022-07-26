@@ -16,10 +16,10 @@ These dialects requires separate DBAPI driver to be installed on Hummingbot's co
 conda install psycopg2
 ```
 
-To configure RDBMS connection, we need to edit `conf_global.yml` in `/conf` directory.
+To configure RDBMS connection, we need to edit `conf_client.yml` in the `/hummingbot_conf` directory.
 
 !!! Note
-    Starting with version 1.6.0 and above the `conf_global.yml` file has been renamed to `conf_client.yml`. If you just did a fresh install you may need to create a strategy first for the config file to be created.
+    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
 ```
 - Advanced database options, currently supports SQLAlchemy's included dialects

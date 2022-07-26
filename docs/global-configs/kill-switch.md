@@ -8,7 +8,10 @@ At what profit/loss rate would you like the bot to stop? (e.g. -5 equals 5 perce
 You can always reconfigure this feature in two ways:
 
 1. Inside Hummingbot run command `config kill_switch_enabled` and/or `config kill_switch_rate`.
-2. Edit `conf_global.yml` file using a text editor.
+2. Edit the `conf_client.yml` file located inside the `hummingbot_conf` folder using a text editor.
+
+!!! Note
+    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
 Note that when the market prices changes, so does the bot's performance and may trigger the kill switch. For example, we executed 13 trades and our performance are shown below.
 
