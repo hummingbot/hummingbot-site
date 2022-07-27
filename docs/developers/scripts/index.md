@@ -20,3 +20,7 @@ Since PMM Scripts run in separate process, they have limited access to variables
 
 * [Getting Started with PMM Scripts](pmm-scripts)
 * [📁 Examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts)
+
+## 📺 Videos and Guides
+
+:fontawesome-brands-youtube: [Scripts Demo | How to build custom trading scripts with Hummingbot](https://www.youtube.com/watch?v=R4i6MhLvXHY)

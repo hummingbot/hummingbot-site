@@ -81,3 +81,10 @@ Log back into the screen by using either `screen` or `screen -r $NAME` to open a
   Credits to discord user `@matha` for this question and `@pfj` for the
   solution.
 </small>
+
+## 📺 Videos and Guides
+
+:fontawesome-brands-youtube: [Using Docker Compose to launch multiple Hummingbots](https://www.youtube.com/watch?v=LU-4Ui-KCtY)
+
+:fontawesome-brands-youtube: [Managing Bot Cycles with Wojak](https://www.youtube.com/watch?v=eB_66K0JxgM&t=2s)
+

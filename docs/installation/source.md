@@ -115,3 +115,7 @@ bin/hummingbot.py
 As Hummingbot is optimized for UNIX-based environments, [install Windows Subsystem for Linux](/installation/docker#install-wsl) in order to deploy an Ubuntu environment in your Windows machine.
 
 Afterwards, follow the **Linux/Ubuntu** instructions above.
+
+## 📺 Videos and Guides
+
+:fontawesome-brands-youtube: [Install Hummingbot on source | MacOS](https://www.youtube.com/watch?v=_10M9uJan3U&list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO&index=1)

@@ -12,12 +12,11 @@ Hummingot Docker instances takes up around 500 MB of storage space and 4 GB for 
 
 These instances are pre-loaded with system files that takes up around 1.2 GB so we recommend having at least **8 GB of storage space** in your cloud server.
 
-## More Resources
+## 📺 Videos and Guides
 
-Read our blog post about running [Hummingbot on different cloud providers](https://www.hummingbot.io/blog/2019-06-cloud-providers/).
+:fontawesome-brands-youtube: [AWS Deployment for Hummingbot](https://www.youtube.com/watch?v=ppTxEngRDmU&list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO&index=9)
 
-Provider resources:
-
+- [Hummingbot on different cloud providers](https://www.hummingbot.io/blog/2019-06-cloud-providers/)
 - [AWS - Connect to Your Amazon EC2 Instance](https://aws.amazon.com/ec2/?nc2=h_ql_prod_fs_ec2&ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc)
 - [AWS - Connecting to your Linux instance from Windows using PuTTY](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 - [Azure - Connect to a Linux-based VM](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/create-azure-vm-technical-asset#connect-to-a-linux-based-vm)
