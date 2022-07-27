@@ -6,17 +6,23 @@ The Hummingbot community is comprised of its global user base of individual liqu
 
 Below are the primary channels used by the Hummingbot Foundation to release official versions of Hummingbot and to communicate news and updates to HBOT token holders.
 
-### Substack
+### Newsletter
 
 The Hummingbot Foundation newsletter is hosted at https://hummingbot.substack.com. Published with each monthly release, the newsletter also contains foundation news, upcoming events, and updates about contributions from the global Hummingbot community.
 
 ### Discord
 
-[Discord](https://discord.hummingbot.io) is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the 
+[Discord](https://discord.gg/hummingbot) is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the 
 **#announcements** channel.
 
 !!! danger "No DMs"
     Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
+
+
+### Forum
+
+The official [Discourse forum](https://hummingbot.discourse.group) is the best place for threaded discussions about governance, improvement proposals, and the long-term Hummingbot roadmap.
+
 
 ### Twitter
 
@@ -30,8 +36,11 @@ The Foundation Github organization is located at https://github.com/hummingbot. 
 
 * [`hummingbot`](https://github.com/hummingbot/hummingbot): monorepo that contains the code for the Hummingbot trading client and Hummingbot Gateway
 * [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot Foundation website and Hummingbot documentation site
+- [`pm`](https://github.com/hummingbot/pm): Agendas and recordings of regular Hummingbot developer and community calls
+- [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
+- [`streamlit-apps`](https://github.com/hummingbot/streamlit-apps): Hummingbot-related StreamLit data apps and dashboards
 
-### Docker
+### DockerHub
 
 The Hummingbot DockerHub is at: https://hub.docker.com/repository/docker/hummingbot/hummingbot and will move to Foundation ownership soon. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
 
@@ -58,14 +67,5 @@ The [Hummingbot YouTube channel](https://www.youtube.com/c/hummingbot), maintain
 ### 中文
 
 * **hummingbot_chinese repo**: Originally a community-created resource, CoinAlpha maintains a wiki that contains general information about Hummingbot in Mandarin: https://github.com/coinalpha/hummingbot_chinese
-* **WeChat**: CoinAlpha maintains a WeChat support group for users of Hummingbot and Hummingbot Miner. To join, add the group admin `amtf202004` to your WeChat.
-* **QQ group**: 714030802
-* **Discord #中文 channel**
-
-## Affiliated Groups
-
-We encourage members of the community to band together to use Hummingbot in novel and interesting ways. If you would like to list your resource here, please submit a pull request.
-
-| Resource          | Partner       | Description                             |
-|-------------------|----------------|----------------------------------------------|
-| [ONE Liquidity DAO](https://talk.harmony.one/c/governance/liquidity-dao/62) | Harmony | DAO that builds Hummingbot infrastructure to promote liquidity on Harmony |
+* **WeChat**: Community-maintaine WeChat support group for users of Hummingbot and Hummingbot Miner. To join, add the group admin `amtf202004` to your WeChat.
+* **Discord #中文 channel**: https://discord.gg/hummingbot
