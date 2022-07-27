@@ -252,3 +252,6 @@ exit
     hummingbot/hummingbot:latest
     ```
 
+## 📺 Videos and Guides
+
+:fontawesome-brands-youtube: [Using Docker Compose to launch multiple Hummingbots](https://www.youtube.com/watch?v=LU-4Ui-KCtY)

@@ -51,4 +51,7 @@ Hummingbot has been successfully tested with the following specifications:
 
 ## 📺 Videos and Guides
 
+
+:fontawesome-brands-youtube: [Test Drive walkthrough](https://www.youtube.com/watch?v=8j4T3HEAML8&t=20s)
+
 :fontawesome-brands-youtube: [Installation Guides playlist](https://www.youtube.com/playlist?list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO)
