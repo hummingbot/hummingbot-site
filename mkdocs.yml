@@ -128,7 +128,6 @@ nav:
     - Home: index.md
     - About: about.md
     - FAQ: faq.md
-    - Support Hummingbot!: support-hummingbot.md
     - HBOT: hbot.md
     - Community: community.md
     - Reporting: 
@@ -158,6 +157,7 @@ nav:
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
       - How does market making work?: news/market-making.md
+    - Support Hummingbot!: support-hummingbot.md
   - Documentation:
     - Documentation: docs.md
     - Support Hummingbot!: support-hummingbot.md
