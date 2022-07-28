@@ -128,6 +128,7 @@ nav:
     - Home: index.md
     - About: about.md
     - FAQ: faq.md
+    - Support Hummingbot!: support-hummingbot.md
     - HBOT: hbot.md
     - Community: community.md
     - Reporting: 
@@ -159,6 +160,7 @@ nav:
       - How does market making work?: news/market-making.md
   - Documentation:
     - Documentation: docs.md
+    - Support Hummingbot!: support-hummingbot.md
     - Installation:
       - Installation: installation/index.md
       - Docker: installation/docker.md
