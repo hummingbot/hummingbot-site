@@ -20,6 +20,7 @@ Help us **democratize high-frequency trading** and give sophisticated algorithms
 - [News](/news): Recent news and updates
 - [HBOT](/hbot): How to claim, vote, and earn Hummingbot Governance Tokens (HBOT)
 - [Community](/community): Participate in the global Hummingbot ecosystem
+- [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
 
 ## 📚 Read the docs
 

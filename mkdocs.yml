@@ -157,8 +157,10 @@ nav:
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
       - How does market making work?: news/market-making.md
+    - Support Hummingbot!: support-hummingbot.md
   - Documentation:
     - Documentation: docs.md
+    - Support Hummingbot!: support-hummingbot.md
     - Installation:
       - Installation: installation/index.md
       - Docker: installation/docker.md
