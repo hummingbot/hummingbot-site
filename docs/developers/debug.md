@@ -2,7 +2,7 @@ The debug console is a powerful tool for Hummingbot developers to inspect and mo
 
 ## Activating the Debug Console
 
-The debug console is disabled by default. You need to enable it by setting `debug_console: true` in `conf/conf_global.yml`.
+The debug console is disabled by default. You need to enable it by setting `debug_console: true` in the `hummingbot_conf/conf_client.yml` file.
 
 ![Enabling debug console in global config](/assets/img/debug1.png)
 

@@ -2,30 +2,19 @@ Hummingbot is a local software client that helps you run trading strategies that
 
 ## Releases
 
-Hummingbot's code is publicly hosted at https://github.com/hummingbot/hummingbot, and the `development` branch is continually updated. 
+Hummingbot's code is publicly hosted at https://github.com/hummingbot/hummingbot, and the `development` branch is continually updated.
 
 Approximately once a month, we publish an official release of Hummingbot onto the `master` branch. See [Releases](https://github.com/hummingbot/hummingbot/releases).
 
 ## Installation options
 
-### 🌎 Test-Drive (web)
+### 🌎 Test Drive
 
-You can initially try out `hummingbot` in your browser without installing anything by simply visiting the
-[Test-Drive](https://hummingbot.io/en/test-drive/) page.
-
-### 💻 Binary (Mac/Windows)
-
-!!! warning
-    Binary releases are no longer maintained. The last available version is 0.46.
-    We recommend enabling WSL on Windows 10/11 and running Hummingbot on the integrated Linux Virtual Machine. Instructions [here](/installation/docker/#install-wsl)
-
-Download and run the binary installer to install the last available binary release of Hummingbot:
-
-[Windows :fontawesome-brands-windows:](https://dist.hummingbot.io/hummingbot_v0.46.0_setup.exe){ .md-button } [MacOS :fontawesome-brands-apple:](https://dist.hummingbot.io/hummingbot_v0.46.0.dmg){ .md-button }
+Try out Hummingbot in your web browser without installing anything! Visit the [Test Drive](https://hummingbot.io/test-drive/) page on our website.
 
 ### 🐳 Docker
 
-The [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot starting with version 1.5.0. For previous versions you may download the docker images from [CoinAlpha's Dockerhub](https://hub.docker.com/r/coinalpha/hummingbot) 
+Our [DockerHub](https://hub.docker.com/r/hummingbot/hummingbot) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot starting with version 1.5.0. For previous versions you may download the docker images from [CoinAlpha's Dockerhub](https://hub.docker.com/r/coinalpha/hummingbot) 
 
 We recommend this path for users who run Hummingbot on Linux, in the cloud, and/or multiple bots.
 
@@ -58,3 +47,11 @@ Hummingbot has been successfully tested with the following specifications:
 | **Storage**          | **Install using Docker**: 5 GB per instance                                                                                  |
 |                      | **Install from source**: 3 GB per instance                                                                                   |
 | **Network**          | A reliable internet connection is critical to keeping Hummingbot connected to exchanges.                                     |
+
+
+## 📺 Videos and Guides
+
+
+:fontawesome-brands-youtube: [Test Drive walkthrough](https://www.youtube.com/watch?v=8j4T3HEAML8&t=20s)
+
+:fontawesome-brands-youtube: [Installation Guides playlist](https://www.youtube.com/playlist?list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO)

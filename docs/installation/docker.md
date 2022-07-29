@@ -7,9 +7,9 @@ You can install Docker and Hummingbot by selecting the following options below:
 - **Scripts**: download and use automated install scripts
 - **Manual**: run install commands manually
 
-## Linux/Ubuntu
+## Linux
 
-_Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
+*Supported versions: Ubuntu 16.04/18.04, Debian 10/11*
 
 ### Install Docker
 
@@ -252,3 +252,6 @@ exit
     hummingbot/hummingbot:latest
     ```
 
+## 📺 Videos and Guides
+
+:fontawesome-brands-youtube: [Using Docker Compose to launch multiple Hummingbots](https://www.youtube.com/watch?v=LU-4Ui-KCtY)

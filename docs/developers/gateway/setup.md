@@ -1,6 +1,6 @@
 # Setting up Gateway V2
 
-Hummingbot Gateway is middleware that allows Hummingbot to connect to decentralized exchanges like Uniswap. You can setup the gateway V2 by following these steps. 
+Hummingbot Gateway is middleware that allows Hummingbot to connect to decentralized exchanges like Uniswap. You can setup the gateway V2 by following these steps.
 
 The steps to set up Hummingbot to run with Gateway V2 are the same as setting up Hummingbot from source. The only additional thing to do is to check out the [development](https://github.com/hummingbot/hummingbot/tree/development) branch.
 
@@ -12,8 +12,7 @@ git checkout development
 ```
 
 !!! warning
-    There are small changes made in the Hummingbot client for it to work with gateway-v2 so it's very important to have both the client and the gateway running from the same branch. 
-
+    There are small changes made in the Hummingbot client for it to work with gateway-v2 so it's very important to have both the client and the gateway running from the same branch.
 
 ## Dependencies
 
@@ -42,6 +41,7 @@ sudo apt update && sudo apt install yarn
 ### MacOS
 
 If you’re using `homebrew` execute the following command to install `node` and other dependencies.
+
 ```bash
 # Using Homebrew installs node and yarn
 brew install node
@@ -64,13 +64,14 @@ brew link --force gettext
 There are bash scripts in `$PROJECT_HOME/gateway/setup` folder that can be used to generate the necessary configurations and certificates that will be used by both the Gateway Server and the Hummingbot Client.
 
 - **Generate Certificates using Hummingbot Client**
-    - Run the Hummingbot client.
-    - Run the `gateway generate-certs` command
-    - The passphrase must be the same as the hummingbot client password
-    - Take note of the directory in which the certs are being created. It will be used to configure ssl certifacte.
+  - Run the Hummingbot client.
+  - Run the `gateway generate-certs` command
+  - The passphrase must be the same as the hummingbot client password
+  - Take note of the directory in which the certs are being created. It will be used to configure ssl certifacte.
         ![Generate Certs](/assets/img/generate-certs.png)
 - **Generating the configuration**
     Execute the following commands:
+
     ```bash
     cd $PROJECT_HOME/gateway/setup
 
@@ -95,7 +96,8 @@ There are bash scripts in `$PROJECT_HOME/gateway/setup` folder that can be used 
 
 - **List of Environment Variables**
 
-    Below is an example of environment variables that are used by the aforementioned scripts and within the Hummingbot Client 
+    Below is an example of environment variables that are used by the aforementioned scripts and within the Hummingbot Client
+
     ```bash
     # Used within Hummingbot client to initialize GatewayHttpClient
     export GATEWAY_CONF_FOLDER="/Users/<username>/hummingbot/gateway/conf"
@@ -117,6 +119,7 @@ There are bash scripts in `$PROJECT_HOME/gateway/setup` folder that can be used 
     ```
 
 ## Starting Server
+
 Execute the following commands
 
 ```bash
@@ -140,11 +143,11 @@ yarn start --passphrase=$GATEWAY_PASSPHRASE
 ## Additional Configurations/Troubleshooting
 
 1. **Changing Gateway Port**
-    
+
     In certain cases, the default port, `5000`, might already be in use. As such you might need to change the port number accordingly. To do so modify the following yaml files accordingly:
-    
+
     - `$PROJECT_HOME/hummingbot/gateway/conf/server.yml`
-        
+
         ```yaml
         port: <NEW_PORT_NUMBER>
         ipWhitelist: []
@@ -152,9 +155,9 @@ yarn start --passphrase=$GATEWAY_PASSPHRASE
         GMTOffset: 800
         id: <ID>
         ```
-        
-    - `$PROJECT_HOME/hummingbot/conf/conf_global.yml`
-        
+
+    - `$PROJECT_HOME/hummingbot/conf/conf_client.yml`
+
         ```yaml
         ...
         
@@ -166,16 +169,16 @@ yarn start --passphrase=$GATEWAY_PASSPHRASE
         
         ...
         ```
-        
-        **NOTE:** The `NEW_PORT_NUMBER` in `conf_global.yml` should be in single-quotations
-        
+
+        **NOTE:** The `NEW_PORT_NUMBER` in `conf_client.yml` should be in single-quotations
+
 2. **Getting a `Error: could not detect network` error**
 Ensure that the `nodeAPIKey` of `ethereum.yml` and/or `avalanche.yml` is entered correctly.
     - If using Infura Node, the `nodeAPIKey` refers to your **PROJECT ID**
 
 ## Testing using `curl`
 
-Certain manual tests are defined in `$PROJECT_HOME/gateway/manual-tests/curl.sh` file. To run them, ensure that you have `curl` installed in your system. 
+Certain manual tests are defined in `$PROJECT_HOME/gateway/manual-tests/curl.sh` file. To run them, ensure that you have `curl` installed in your system.
 
 Copy and paste individual commands into your terminal to execute the tests accordingly
 i.e.

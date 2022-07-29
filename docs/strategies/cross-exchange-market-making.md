@@ -151,7 +151,9 @@ The logic of the hedging order fill flow can be found in the function `c_did_fil
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is cross exchange market making?](https://hummingbot.io/en/blog/2020-09-what-is-cross-exchange-market-making): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+:fontawesome-solid-book: [What is cross exchange market making?](https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making)
+
+:fontawesome-brands-youtube: [Cross Exchange Market Making with Jelle](https://www.youtube.com/watch?v=fEoEAbPoBGA)
 
 :fontawesome-solid-book: [Use cross-exchange market making (XEMM) strategy to lower risk](https://hummingbot.io/academy-level-2-d-beginner-strategy-2-use-cross-exchange-market-making-xemm): The XMM strategy effectively reduces inventory risk. This article talks about how to proceed with XEMM in place.
 
