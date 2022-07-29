@@ -3,7 +3,7 @@ See below for answers to frequently asked questions about:
 
 * [Hummingbot software](#hummingbot-software)
 * [Hummingbot Foundation](#hummingbot-foundation)
-* [HBOT token](#hummingbot-software)
+* [HBOT token](#hbot-token)
 
 ## Hummingbot software
 

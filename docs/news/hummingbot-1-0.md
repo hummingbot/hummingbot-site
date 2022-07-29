@@ -63,10 +63,10 @@ During the first epoch, the Foundation governance process is being applied for t
 
 During the first epoch, the Foundation goals are to:
 
-* Distribute HBOT tokens to users of the Hummingbot software
-* Partner with exchanges to enable community developers to build/maintain a connector and reward users for using the connector
-* Grow the number of users by making Hummingbot easier to use, more flexible, and more powerful
-* Diversify the number of maintainers that maintain individual components in the Hummingbot codebase
+- Distribute HBOT tokens to users of the Hummingbot software
+- Partner with exchanges to enable community developers to build/maintain a connector and reward users for using the connector
+- Grow the number of users by making Hummingbot easier to use, more flexible, and more powerful
+- Diversify the number of maintainers that maintain individual components in the Hummingbot codebase
 
 We divide the 30 million distribution target across three categories of [Hummingbot Governance Proposals (HGPs)](/governance/proposals/hgp) that HBOT token holders can submit. All governance-related proposals are voted on in the [main Snapshot space](https://snapshot.org/#/hbot.eth), which is reserved for HGPs.
 
@@ -76,19 +76,21 @@ We divide the 30 million distribution target across three categories of [Humming
 | [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg)               | 10,000,000                | 50 dev grants           |
 | [Initiative Budget](/governance/proposals/hgp/#initiative-budget-ib)     | 5,000,000                 | 5 initiatives           |
 
-## Join the first community call!
+## We successfully launched our first community call
 
 ![](/assets/img/hummingbot-1-discord.png)
 
-We will start an monthly open community call on the Hummingbot Discord to involve the community more. During the first call, we plan to:
+We now conduct monthly community calls on the Hummingbot Discord channel to involve the community more. In this recorded first call, we went over the following:
 
-* Explain the HBOT distribution process in more detail
-* Show examples of proposals in each category
-* Highlight ideas for upcoming community initiatives
-* Answer questions from developers and users
+- Explain the HBOT distribution process in more detail
+- Show examples of proposals in each category
+- Highlight ideas for upcoming community initiatives
+- Answer questions from developers and users
 
 Event details:
 
-* **Date**: Tuesday, February 1, 2022
-* **Time**: 9:00 EST / 14:00 GMT / 21:00 Asia
-* **Link**: [Discord event](https://discord.com/events/530578568154054663/935232760526823424)
+- **Date**: Tuesday, February 1, 2022
+- **Time**: 9:00 EST / 14:00 GMT / 21:00 Asia
+- **Recording**: [Youtube Video](https://youtu.be/fLN907zu4JU)
+
+To join the next community call check the `Events` section in [Discord](https://discord.gg/hummingbot)

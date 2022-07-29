@@ -7,23 +7,23 @@ This new feature provides real time, most up-to-date exchange rate on any given 
 
 ### `rate_oracle_source`
 
-The source where you want to pull data from, it can either be Binance or Coingecko. Please take note that using Coingecko will have a 30-second delay due to their API rate limit.
+The source where you want to pull data from, it can either be Binance, Coingecko, Kucoin or Ascendex. Please take note that using Coingecko will have a 30-second delay due to their API rate limit.
 
 ```
-What source do you want rate oracle to pull data from? (binance, coingecko)"
+What source do you want rate oracle to pull data from? (binance, coingecko, kucoin, ascend_ex)"
 >>>
 ```
 
-### `global_token`
+### `global_token.global_token_name`
 
-This is a token which you can display other tokens' value in. Set the `global_token` according to your preferred token value.
+This is a token which you can display other tokens' value in. Set the `global_token.global_token_name` according to your preferred token value.
 
 ```
 What is your default display token? (e.g. USDT,USD,EUR)
 >>>
 ```
 
-### `global_token_symbol`
+### `global_token.global_token.global_token_symbol`
 
 The symbol for the global token.
 
@@ -33,7 +33,7 @@ What is your default display token symbol? (e.g. $, €)
 ```
 
 !!! tip Changing oracle sources
-    If you happen to `start` the bot and produce the error `Oracle rate is not available`, or ff the `rate_oracle_source` fails to show any price reference on your pair, you may change the `oracle_source` by running `config rate_oracle_source` and switch between Binance or Coingecko.
+    If you happen to `start` the bot and produce the error `Oracle rate is not available`, or ff the `rate_oracle_source` fails to show any price reference on your pair, you may change the `oracle_source` by running `config rate_oracle_source` and switch between Binance, Coingecko, Kucoin or Ascendex.
 
 ![](/assets/img/oracle-error.png)
 
@@ -44,7 +44,7 @@ If you need to view the rate oracle conversion after the `balance`, `pnl`, `open
 !!! Note
     In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
 
-To set the parameters for `rate_oracle_source`, `global_token` and `global_token_symbol`, run the `config` command.
+To set the parameters for `rate_oracle_source`, `global_token.global_token_name` and `global_token.global_token_symbol`, run the `config` command.
 
 Refer to the example below:
 

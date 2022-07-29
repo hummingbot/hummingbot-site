@@ -9,7 +9,7 @@ hide:
 
 *Posted on December 17, 2021*
 
-As announced in [this October post](https://hummingbot.io/en/blog/hummingbot-foundation/), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots. 
+As announced in [this October post](https://hummingbot.io/en/blog/hummingbot-foundation/), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots.
 
 Like our spiritual predecessor the Linux Foundation, we believe that community maintenance is key to scaling Hummingbot to every exchange and blockchain and enabling traders to build any type of bot.
 
@@ -23,9 +23,9 @@ An initial interim Board of Directors has been appointed, comprised of five dire
 
 To retain independence, Foundation bylaws stipulate that no more than two officers or directors of an outside entity can be members of the Board of Directors. The Board oversees staff who handle the day-to-day operations of the Foundation. Initially, the Foundation will employ 8 staff members who handle: a COO, a CFO, an engineering lead, 1 product manager, 1 project manager, 2 community managers, and 1 quality assurance analyst.
 
-The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open source Hummingbot code repository. **CoinAlpha has transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: https://github.com/hummingbot/hummingbot**.
+The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open source Hummingbot code repository. **CoinAlpha has transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: <https://github.com/hummingbot/hummingbot>**.
 
-The official Foundation website, which also includes the Hummingbot documentation, is deployed at https://hummingbot.org. It is also a community-maintained open source repository: https://github.com/hummingbot/hummingbot-site.
+The official Foundation website, which also includes the Hummingbot documentation, is deployed at <https://hummingbot.org>. It is also a community-maintained open source repository: <https://github.com/hummingbot/hummingbot-site>.
 
 ## Sustainable Open Source Maintenance
 
@@ -61,7 +61,7 @@ The HBOT Token has no monetary or economic value. The sole use case for HBOT Tok
 * **Improvement Proposals (IP)**: a proposal linked to an issue in the Hummingbot Github repository that specifies a proposed improvement to a component of the Hummingbot codebase, and;
 * **Governance Proposals (GP)**: a proposal linked to an issue in the Hummingbot Github repository that specifies either a proposed modification to the Foundation governance system, or a proposed distribution of HBOT tokens from the treasury for a community activity such as a grant.
 
-All pull requests, or proposed code changes to the Github code repository, will need to be submitted as a Pull Request Proposal and be approved by HBOT holders in order to be merged into the codebase and included in an official release. 
+All pull requests, or proposed code changes to the Github code repository, will need to be submitted as a Pull Request Proposal and be approved by HBOT holders in order to be merged into the codebase and included in an official release.
 
 See the [Hummingbot Foundation Governance whitepaper](/governance/whitepaper) for more details.
 
@@ -97,9 +97,9 @@ The Hummingbot Foundation is allocating 4% of the total HBOT token supply (or 10
 
 Also included are 3 Github users who have made significant code contributions to the Hummingbot community:
 
-* https://github.com/supervik created a popular performance calculation CoLab notebook
-* https://github.com/syuukawa created the original hummingbot_chinese Github repo
-* https://github.com/jellebuth provided code improvements to the cross-exchange market making strategy
+* <https://github.com/supervik> created a popular performance calculation CoLab notebook
+* <https://github.com/syuukawa> created the original hummingbot_chinese Github repo
+* <https://github.com/jellebuth> provided code improvements to the cross-exchange market making strategy
 
 This distribution will give developers who have contributed to the Hummingbot code base in the past a voice in the future governance of the Hummingbot source code.
 
@@ -120,7 +120,7 @@ A total pool of 35,350,000 HBOT tokens will be allocated to users of Hummingbot 
 
 #### Future Community Activities (36%)
 
-36% of the total HBOT token supply (or 90% of the community pool) will be reserved by the Foundation for distribution to support future activities of the Hummingbot community. This distribution of HBOT tokens will be directed by Governance Proposals voted on by token holders through the Foundation. The community may choose to approve Governance Proposals to direct future distributions through the Hummingbot Miner platform or the launch of a grants program to allow future contributors to the Hummingbot code base a voice in Hummingbot governance, for example. 
+36% of the total HBOT token supply (or 90% of the community pool) will be reserved by the Foundation for distribution to support future activities of the Hummingbot community. This distribution of HBOT tokens will be directed by Governance Proposals voted on by token holders through the Foundation. The community may choose to approve Governance Proposals to direct future distributions through the Hummingbot Miner platform or the launch of a grants program to allow future contributors to the Hummingbot code base a voice in Hummingbot governance, for example.
 
 The Hummingbot Foundation’s initial plan is to release an equal amount of the community tokens over the course of four years (i.e., 9% of total HBOT token supply per year). No more than 9% of these tokens will be released in any given year.  However, any previously undistributed tokens (e.g. any unclaimed retroactive distribution tokens or unawarded development grant tokens) will be rolled over and may be distributed and re-allocated at any time as directed by token holders.
 
@@ -148,47 +148,16 @@ To ensure that Retroactive Distribution recipients securely receive their HBOT t
 
 The historical HBOT token distribution process will run for approximately two and a half months:
 
-* **Start date**:	December 17, 2021
-* **End date**:	February 28, 2022 11.59pm UTC
+* **Start date**: December 17, 2021
+* **End date**: February 28, 2022 11.59pm UTC
 
 Afterwards, any unclaimed tokens will revert to the Hummingbot Foundation and will be added to the Year 1 Reserve.
-
-### Claim Site
-
-The only official site where recipients can claim tokens is located at https://claim.hummingbot.org (the “Claim Site”). Please make sure that your browser is loading this URL before using the site. 
-
-After login, the Claim Site will display a user’s token allocation (if any), and users will be able to input an Ethereum wallet address where they would like to receive their HBOT tokens.
-
-![](/assets/img/hbot-claim-site.png)
-
-### How to Access the Claim Site
-
-#### Github code contributors
-
-Github users who are eligible to claim HBOT tokens will be added to the following private Hummingbot Foundation Github repository: https://github.com/hummingbot/claim-hbot-tokens. This private repository will provide eligible code contributors with instructions on how to confirm their email address or provide their Hummingbot Miner email address or alternative address that they would like to use for the claim process. Afterwards, users can login to the Claim Site with that address.
-
-#### Hummingbot Miner users
-
-Users of Hummingbot Miner who are eligible to claim tokens can visit the Claim Site and log in with their Miner credentials.
-
-### Weekly Distributions
-
-The Hummingbot Foundation expects to distribute tokens to Github code contributors and Hummingbot Miner users who have submitted valid Ethereum wallet addresses in weekly distributions. For administrative purposes, the HBOT token claim period will be divided into weekly periods. Users who have claimed tokens and inputted their Ethereum wallet addresses will receive the tokens during the subsequent week.
-
-For example:
-
-* **Initial weekly claim period**: December 17, 2021 00:00 UTC to December 24, 2021 00:00 UTC
-* **Initial distribution window**: Between December 24, 2021 00:00 UTC and December 31, 2021 00:00 UTC
-
-The first distributions of tokens will occur during the initial distribution window for users who claimed tokens in the initial weekly claim period. This process will repeat weekly throughout the entire claim period through the end of February 2022.
-
-The Hummingbot Foundation plans to maintain some flexibility on the precise timing for distributing tokens to account for, among other things, prevailing Ethereum gas prices.  Users will be notified by email when their respective HBOT tokens have been distributed to them.
 
 ## Governance Process
 
 ### Snapshot
 
-The Hummingbot Foundation plans to use [Snapshot](https://snapshot.org/) as the primary governance system for all proposals. Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. All proposals and voting can be found on the official Hummingbot Snapshot hosted at https://snapshot.org/#/hbot.eth.
+The Hummingbot Foundation plans to use [Snapshot](https://snapshot.org/) as the primary governance system for all proposals. Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. All proposals and voting can be found on the official Hummingbot Snapshot hosted at <https://snapshot.org/#/hbot.eth>.
 
 See the [Hummingbot Foundation Governance](/governance/whitepaper) whitepaper for additional details about the governance process, such as proposal types, minim token balance requirements, and quorum/approval thresholds.
 
