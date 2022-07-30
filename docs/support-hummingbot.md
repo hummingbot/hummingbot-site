@@ -2,11 +2,9 @@
 
 ## Intro
 
-**Get trading fee rebates when you support the Hummingbot Foundation!** 
-
 Thank you for your support for the Hummingbot codebase! We’d love to have you all support us by creating exchange accounts using our referral codes, or if you're a developer, adding our brokerID to your custom bots.  
 
-This supports our work at the not-for-profit Hummingbot Foundation and **provides you with increased fee share rebates as well!** Hummingbot Foundation makes money through exchange broker programs, in which we partner with exchanges such as through [Binance’s broker program](https://www.binance.com/en/broker) that share a portion of the trading fees you pay with us, at zero cost to you.
+This supports our work at the not-for-profit Hummingbot Foundation and **provides you with increased fee share rebates as well!** Our primary revenue stream are exchange broker programs, in which we partner with exchanges that share a portion of the trading fees you pay with us, at zero cost to you. For exchanges that allow it, we remit 25% of our total fee share with users.
 
 ## Why should you support us?
 
@@ -18,16 +16,15 @@ Hummingbot is different from other trading bots:
 
 ### Get increased fee rebates
 
-Certain exchanges such as [Gate.io](https://www.gate.io/) and [OKX](https://www.okx.com/) allow their broker partners to allocate a certain percentage of their fee share to users.  For exchanges that allow for this, we already allocate 10% (25% of our total fee share) to users as an additional incentive to add the Hummingbot brokerID. This means that any users who sign up using our referral link and/or use Hummingbot will get an additional 10% off their trading fees!
+Certain exchanges such as [Gate.io](https://www.gate.io/) and [OKX](https://www.okx.com/) allow their broker partners to allocate a certain percentage of their fee share to users.  For exchanges that allow for this, we already allocate 25% of our total fee share (typically 10%) to users as an additional incentive to add the Hummingbot brokerID. This means that any users who sign up using our referral link and/or use Hummingbot will get an additional 10% off their trading fees!
 
 [![](/assets/img/fee-discounts.jpg)](/assets/img/fee-discounts.jpg)
 
-Our revenues, which we report to the community every month (see [Reporting](https://hummingbot.org/reporting/)) lets us maintain a full-time, globally dstributed team of engineers, quality assurance analysts, community managers, and others who support the community. If
+Our revenues, which we report to the community every month (see [Reporting](https://hummingbot.org/reporting/)) lets us maintain a full-time, globally distributed team of engineers, quality assurance analysts, community managers, and others who support the global Hummingbot community of developers and traders.
 
 ### Dev grants in stablecoins, not HBOT
 
-Currently, all developer grants are in HBOT tokens since our reenuves not quite covering operational costs, but close to breakeven. After we are cashflow positive, we plan to 
-propose that a certain percentage of our fees be directed toward developer grants. This would allow developers to earn stablecoins rather than HBOT for:
+Currently, all developer grants are in HBOT tokens since our revenues are not quite covering operational costs. After we are cash flow positive, we will propose that a certain percentage of our fees be directed toward developer grants. This would allow developers to earn stablecoins rather than HBOT for:
 
 - Fixing bugs
 - Adding new exchange connectors
@@ -47,13 +44,13 @@ It just takes less then 10 minutes to set this up, and you’ll be able to suppo
 
 ## Supporting Hummingbot on Binance
 
-After using our referral code to sign up for Binance, we currently receive the following portion of trading fees you pay, at zero cost to you. We are discussing with Binance how to share a portion to users, as we already do for Gate.io, OKX, and other exchanges.
+Use our referral code to sign up for Binance, and we will receive the following portion of trading fees you pay, at zero cost to you. 
 
 | % Trading fee rebate  | Binance Spot | Binance Futures |
 |-----------------------|--------------|-----------------|
 | Hummingbot Foundation | 45%          | 30%             |
 
-Learn more about the [Binance Broker Program](https://www.binance.com/en/broker).
+Currently, we are discussing with Binance how to share a portion to users, as we already do for Gate.io, OKX, and other exchanges.
 
 ### For Hummingbot users
 
@@ -64,21 +61,17 @@ Below, we show you how to support us if you use the latest versions of Hummingbo
 In order for both you and us to get fee share rebates, you will need to sign up for a new account with these referral links:
 
 * **Binance.com**: https://www.binance.com/en/register?ref=FQQNNGCD
-*** Binance.com Futures**: https://www.binance.com/en/futures/ref/hummingbot
-
-In addition, if you sign up for Binance Futures using our referral code, you will receive an additional 10% off fees for the first month.
-
-[![](/assets/img/binance-futures-discount.png)](/assets/img/binance-futures-discount.png)
+* **Binance.com Futures**: https://www.binance.com/en/futures/ref/hummingbot
 
 #### 2. Create new API keys
 
 Afterwards, create an API key, following this [Binance guide](https://www.binance.com/en/support/faq/360002502072). 
 
-Make sure to select **Enable Spot & Margin Trading** if you are trading on spot markets, and **Enable Futures** if you are trading perpetual futures.
+When creating the API key, make sure to  **Enable Spot & Margin Trading** if you are trading on spot markets, as well as  **Enable Futures** if you are trading perpetual futures.
 
 #### 3. Add API keys to Hummingbot
 
-Inside Hummingbot, run the [`connect` command] to add your new API keys. Now, every trade you perform will share a portion of your trading fees with Hummingbot Foundation.
+Inside Hummingbot, run the [`connect` command](/operation/connect/) to add your new API keys. Now, every trade you perform will share a portion of your trading fees with Hummingbot Foundation.
 
 ### For Hummingbot forks and custom bots
 
@@ -119,8 +112,6 @@ Below, we provide instructions for how you can add the Hummingbot brokerID. For 
 !!! tip
     If you need help with this process, don't hesitate to reach out to us on the **#developer-chat** channel in [Discord](https://discord.gg/hummingbot) or send us an email to <federico@hummingbot.org>.
 
-Afterwards, a portion of any fees you pay will be shared with Hummingbot Foundation!
-
 ## Supporting Hummingbot on other exchanges
 
 Since most exchange share fees with Hummingbot Foundation based on the brokerID only, all you have to do to run the latest versions of Hummingbot.
@@ -129,9 +120,11 @@ For users running older versions of Hummingbot or forks, here is how you can sup
 
 Different exchanges have different ways of handling the BrokerID.
 
-1. Go to the [**Hummingbot BrokerIDs**](https://hummingbot-foundation.notion.site/04f67a05abe545bc9f076b99869cf7d1?v=4630a74538764b89a088b85518450061) table.
+1. Go to the **Hummingbot BrokerIDs** table below
 2. For each exchange, see **Constants File** for how the brokerID is defined in the Hummingbot codebase
 3. Check the **Reference Code Sample** column to how the brokerID is attached to orders in the Hummingbot codebase
+
+<a href="https://hummingbot-foundation.notion.site/04f67a05abe545bc9f076b99869cf7d1?v=4630a74538764b89a088b85518450061" target="_blank" class="md-button md-button--primary">:fontawesome-solid-table: Hummingbot BrokerIDs</a>
 
 !!! tip
     If you need help with this process, don't hesitate to reach out to us on the **#developer-chat** channel in [Discord](https://discord.gg/hummingbot) or send us an email to <federico@hummingbot.org>.
@@ -170,4 +163,8 @@ No. We are only updating the metadata of the HTTP request of which your bot is s
 
 ### What if I have a very old version of Hummingbot where the implementation code logic for the metadata tracking in the HTTP request does not exist?
 
-Follow the instructions in the [**Hummingbot BrokerIDs**](https://hummingbot-foundation.notion.site/04f67a05abe545bc9f076b99869cf7d1?v=4630a74538764b89a088b85518450061) table. If it doesn’t work, please do not hesitate to reach out to us on the #developer-chat channel in Discord or email federico@hummingbot.org.
+Follow the instructions in the **Hummingbot BrokerIDs** table. 
+
+<a href="https://hummingbot-foundation.notion.site/04f67a05abe545bc9f076b99869cf7d1?v=4630a74538764b89a088b85518450061" target="_blank" class="md-button md-button--primary">:fontawesome-solid-table: Hummingbot BrokerIDs</a>
+
+If it doesn’t work, reach out to us on the #developer-chat channel in Discord or email federico@hummingbot.org.
