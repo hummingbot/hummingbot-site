@@ -4,7 +4,7 @@ Since Hummingbot Foundation was incepted at the beginning of the year, we have b
 
 In this post, we want to inform the broader Hummingbot community about the milestones that the Foundation aims to accomplish and the initiatives we aim to start for the remainder of the year.
 
-As a recap, Hummingbot Foundation was established in December 2021 as an independent, not-for-profit Cayman Islands foundation company that controls write access over the official [Github code repository](https://github.com/hummingbot/hummingbot) for Hummingbot, the leading open source framework to build and run crypto trading bots. 
+As a recap, Hummingbot Foundation was established in December 2021 as an independent, not-for-profit Cayman Islands foundation company that controls write access over the official [Github code repository](https://github.com/hummingbot/hummingbot) for Hummingbot, the leading open source framework to build and run crypto trading bots.
 
 ## Mission
 
@@ -16,7 +16,7 @@ Since the Foundation is a decentralized autonomous organization (DAO) governed b
 
 ## Business Model
 
-Sustaining day-to-day operation are exchange partnerships that rebate fees based on the level of trading activity conducted through their respective connectors, tracked via custom headers at the API request level. 
+Sustaining day-to-day operation are exchange partnerships that rebate fees based on the level of trading activity conducted through their respective connectors, tracked via custom headers at the API request level.
 
 ![](/assets/img/foundation-biz-model.jpg)
 
@@ -42,9 +42,9 @@ Maintaining reliable, fast HFT-quality integrations across the exchange landscap
 
 ### 🔗 Expand DEX connectors
 
-Hummingbot’s new [Gateway-V2 module](/developers/gateway), which was recently merged to Hummingbot's public `development` branch, is a stateless middleware library, written primarily in Typescript, that maps various DEX smart contract methods, APIs, and SDKs on various blockchains into standardized REST trading endpoints that can be utilized by the Python-based Hummingbot trading client or any other trading system. It allows developers from different DEX communities to “plug in” their DEXs into the broader Hummingbot community of arbitrageurs and market makers by adding lightweight connectors to Gateway. 
+Hummingbot’s new [Gateway-V2 module](/developers/gateway), which was recently merged to Hummingbot's public `development` branch, is a stateless middleware library, written primarily in Typescript, that maps various DEX smart contract methods, APIs, and SDKs on various blockchains into standardized REST trading endpoints that can be utilized by the Python-based Hummingbot trading client or any other trading system. It allows developers from different DEX communities to “plug in” their DEXs into the broader Hummingbot community of arbitrageurs and market makers by adding lightweight connectors to Gateway.
 
-CoinAlpha has contributed the initial Ethereum and Avalanche DEX connectors, while separate teams from the Solana, Cosmos, Harmony, Near, and Polkadot ecosystems are building support for their respective chain families, as well as connectors for the DEXs on those chains. After Gateway is merged to Hummingbot’s `master` branch and included in the upcoming May release, we expect many more DEXs and chains to be supported. 
+CoinAlpha has contributed the initial Ethereum and Avalanche DEX connectors, while separate teams from the Solana, Cosmos, Harmony, Near, and Polkadot ecosystems are building support for their respective chain families, as well as connectors for the DEXs on those chains. After Gateway is merged to Hummingbot’s `master` branch and included in the upcoming May release, we expect many more DEXs and chains to be supported.
 
 - Ship Gateway in May release
 - Launch 20+ DEX connectors by end of 2022
@@ -67,7 +67,7 @@ To improve our documentation, we plan to begin versioning documentation by relea
 
 Hummingbot has a modular architecture that allows developers to independently maintain and improve different components, and we are continually refactoring the codebase in order to make it more accessible to new developers.
 
-For example, Hummingbot’s new [Scripts](https://hummingbot.notion.site/How-to-Create-a-Script-b789c9fe1f97492cbc4673ae0ed55632) component lets users create automated trading strategies that use the full power of Hummingbot exchange connectors in simple Python snippets without having to re-compile the code or add configuration templates. We believe that this new feature will unlock the creative potential within the Hummingbot user community, and we plan on organizing hackathons that reward the community for creating useful Script examples that can be added to the codebase.
+For example, Hummingbot’s new [Scripts](/developers/scripts/getting-started) component lets users create automated trading strategies that use the full power of Hummingbot exchange connectors in simple Python snippets without having to re-compile the code or add configuration templates. We believe that this new feature will unlock the creative potential within the Hummingbot user community, and we plan on organizing hackathons that reward the community for creating useful Script examples that can be added to the codebase.
 
 - Ship Scripts in May release
 - Run 2+ hackathons that reward users for creating Scripts

@@ -66,13 +66,13 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://hummingbot.substack.com
     - icon: fontawesome/brands/discord
-      link: https://discord.hummingbot.io
+      link: https://discord.gg/hummingbot
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/hummingbot_org
     - icon: fontawesome/brands/github
       link: https://github.com/hummingbot/hummingbot
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/coinalpha/hummingbot
+      link: https://hub.docker.com/r/hummingbot/hummingbot
 
 extra_css:
   - assets/css/custom.css
@@ -132,6 +132,7 @@ nav:
     - Community: community.md
     - Reporting: 
       - Reporting: reporting/index.md
+      - Hummingbot Reported Volumes: reporting/volumes.md
     - Maintenance:
       - Maintenance: maintenance/index.md
       - Active Agreements: maintenance/agreements.md
@@ -157,8 +158,10 @@ nav:
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
       - How does market making work?: news/market-making.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
   - Documentation:
     - Documentation: docs.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
     - Installation:
       - Installation: installation/index.md
       - Docker: installation/docker.md
@@ -169,13 +172,13 @@ nav:
       - Update and Restore Hummingbot: installation/update-hummingbot.md
     - Basic Operations:
       - Basic Operations: operation/index.md
-      - Commands and Shortcuts: operation/commands-shortcuts.md
       - User Interface Guide: operation/user-interface.md
+      - Commands and Shortcuts: operation/commands-shortcuts.md
       - Launch/Exit Hummingbot: operation/launch-exit.md
       - Create/Delete Password: operation/password.md
       - Connect Exchange API Keys: operation/connect.md
-      - Check Balances: operation/balance.md
       - Create/Import Config Files: operation/config-files.md
+      - Check Balances: operation/balance.md
       - Start/Stop Strategy: operation/start-stop.md
       - Pause/Resume Strategy: operation/pause-resume.md
       - Check Bot/Market Status: operation/status.md
