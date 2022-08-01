@@ -132,6 +132,7 @@ nav:
     - Community: community.md
     - Reporting: 
       - Reporting: reporting/index.md
+      - Hummingbot Reported Volumes: reporting/volumes.md
     - Maintenance:
       - Maintenance: maintenance/index.md
       - Active Agreements: maintenance/agreements.md
@@ -157,8 +158,10 @@ nav:
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
       - How does market making work?: news/market-making.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
   - Documentation:
     - Documentation: docs.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
     - Installation:
       - Installation: installation/index.md
       - Docker: installation/docker.md
