@@ -2,8 +2,8 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 
 * **Issuer**: Hummingbot Foundation
 * **Token Contract Addressess**:
-    * **Ethereum**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb))
-    * **Avalanche**: `0x38Dcf0532699b880E6a125F7d918380524CD60a6` ([Snowtrace](https://snowtrace.io/token/0x38Dcf0532699b880E6a125F7d918380524CD60a6))
+  * **Ethereum**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb))
+  * **Avalanche**: `0x38Dcf0532699b880E6a125F7d918380524CD60a6` ([Snowtrace](https://snowtrace.io/token/0x38Dcf0532699b880E6a125F7d918380524CD60a6))
 * **Name**: Hummingbot Governance Token
 * **Symbol**: HBOT
 * **Total Supply**: 1,000,000,000
@@ -72,4 +72,3 @@ HBOT token holders may delegate their votes to other members of the Hummingbot c
 In order to limit delegation to the HBOT tokens and Hummingbot Foundation matters (and exclude delegation for other owned tokens that also vote on snapshot), enter `hbot.eth` in the space field. Otherwise, leave blank to delegate all tokens.
 
 If a user has delegated their tokens, they can still override any delegation by directly voting their tokens. Voting outright always overrides any delegation. Note that, as the Hummingbot Foundation becomes firmly established and community participation increases, token holders in the future may choose to propose to disable voting by delegation, thereby allocating greater voting power toward community members who vote outright only.
-
