@@ -1,3 +1,6 @@
+## Reported Volumes
+
+See [Hummingbot Reported Volumes](./volumes) for a dashboard of the reported trade volumes received by the Hummingbot client, as well as what data points it collects.
 
 ## Monthly Reports
 
@@ -16,6 +19,9 @@ To give the Hummingbot community transparency into the operations of the Humming
 [April 2022](https://hummingbot-foundation.notion.site/April-2022-7725536be9f44d6e8d22c1b0a7d31818)
 
 [May 2022](https://hummingbot-foundation.notion.site/May-2022-ca1145e8b8e4431dbb55bcad69ac485e)
+
+[June 2022](https://hummingbot-foundation.notion.site/June-2022-0d6e7b3ac3724a7eb5a9c4f6b1901345)
+
 
 ## HBOT Allocation Report
 
