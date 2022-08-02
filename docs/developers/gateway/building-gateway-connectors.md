@@ -1,6 +1,6 @@
 # Building Gateway Connectors
 
-This page shows you how to add a decentralized exchange (DEX) connector to Hummingbot's Gateway module and configure which chains and networks it supports. 
+This page shows you how to add a decentralized exchange (DEX) connector to Hummingbot's Gateway module and configure which chains and networks it supports.
 
 We'll use the Uniswap and Pangolin connectors as examples to help guide you through the development process. Please note that there might be changes that you have to implement depending on the needs of your DEX.
 
@@ -23,7 +23,7 @@ Afterwards, follow the steps below to develop a Gateway connector:
 
 📁 **Folder** [`gateway/src/templates`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/templates)
 
-Create a template in the templates folder and name it `<exchange_name>.yml`. This file will include the configurations needed for connecting to the exchange. 
+Create a template in the templates folder and name it `<exchange_name>.yml`. This file will include the configurations needed for connecting to the exchange.
 
 Below are example configurations from Uniswap (Ethereum) and Pangolin (Avalanche). Configurations for other EVM-compatible exchanges should be similar.
 
@@ -73,7 +73,7 @@ contractAddresses:
       routerAddress: '0xE54Ca86531e17Ef3616d22Ca28b0D458b6C89106'
 ```
 
-This template will then be checked against the schema, in the next step, to generate the configuration under the `gateway/conf` directory. 
+This template will then be checked against the schema, in the next step, to generate the configuration under the `gateway/conf` directory.
 
 ## 2. Create configuration schema
 
@@ -118,8 +118,8 @@ Now, you can start creating the connector. Following the steps below:
 
 - Create a new directory inside the `connectors` directory and name it `<exchange_name>`.
 - Inside this new directory, create the following two files:
-    - `<exchange_name>.config.ts`: This file contains the connector configuration.
-    - `<exchange_name>.ts`: This file contains functions that interact with the DEX, such as fetching price and pair data, executing trades, and adding/removing liquidity.
+  - `<exchange_name>.config.ts`: This file contains the connector configuration.
+  - `<exchange_name>.ts`: This file contains functions that interact with the DEX, such as fetching price and pair data, executing trades, and adding/removing liquidity.
 - Add the DEX ABI (interface for the smart contract functions and variables) as a json file in the same folder, i.e. `uniswap_v2_router_abi.json`.
 - See [pangolin.config.ts](https://github.com/hummingbot/hummingbot/blob/development/gateway/src/connectors/pangolin/pangolin.config.ts) as an example for the `<exchange_name>.config.ts` file. Copy it and update the changes made in step 1 depending on the template configuration for your exchange.
 - The `<exchange_name>.ts` file contains three main functions: `estimateSellTrade()`, `estimateBuyTrade()` and `executeTrade()`. The implementation of these functions depends on the exchange SDK. For EVM-compatible exchanges, the implementation should be similar to [pangolin.ts](https://github.com/hummingbot/hummingbot/blob/development/gateway/src/connectors/pangolin/pangolin.ts).
@@ -128,7 +128,7 @@ Now, you can start creating the connector. Following the steps below:
 
 ## 4. Add connector routes
 
-📁 **File** [`gateway/src/connectors/connectors.routes.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/connector.routes.ts)
+📁 **File** [`gateway/src/connectors/connectors.routes.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/connectors.routes.ts)
 
 Add your new connector to the list of connectors available in Gateway. The step should be similar to the examples available in the file, and the new entry should look like this:
 
@@ -144,7 +144,7 @@ Add your new connector to the list of connectors available in Gateway. The step 
 
 📁 **File** [`gateway/src/services/common-interfaces.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/services/common-interfaces.ts)
 
-Under `gateway/src/services/common-interfaces.ts`, most of the EVM-compatible DEX connectors in the gateway v2 can make use of the Uniswapish interface. 
+Under `gateway/src/services/common-interfaces.ts`, most of the EVM-compatible DEX connectors in the gateway v2 can make use of the Uniswapish interface.
 
 To use this interface, you will need to make additions to the `Tokenish` type, `UniswapishTrade` type, and  `Fractionish` type with the relevant classes from your exchange SDK. An example of the changes needed can be found in `common-interfaces.ts` above.
 
@@ -154,7 +154,7 @@ To use this interface, you will need to make additions to the `Tokenish` type, `
 
 Add your exchange to the spender list for the chain where your exchange is located. The changes needed should be similar to those in `ethereum.ts` if the exchange is on an EVM-compatible chain.
 
-Below is an example of the changes required: 
+Below is an example of the changes required:
 
 ```tsx
 getSpender(reqSpender: string): string {
@@ -165,8 +165,8 @@ getSpender(reqSpender: string): string {
     else if (reqSpender === '<exchange_name>') {
       spender = Exchange_nameConfig.config.routerAddress(this._chain);
     }
-		
-		else {
+  
+  else {
       spender = reqSpender;
     }
     return spender;
@@ -193,7 +193,7 @@ gatewayApp.get(
       uniswap: UniswapConfig.config.availableNetworks,
       pangolin: PangolinConfig.config.availableNetworks,
       traderjoe: TraderjoeConfig.config.availableNetworks,
-	  <exchange_name>: Exchange_nameConfig.config.availableNetworks,
+   <exchange_name>: Exchange_nameConfig.config.availableNetworks,
     });
   })
 );
@@ -207,24 +207,24 @@ Under `gateway/test/chains/<chain>/<exchange_name>`
 
 Automated test coverage is a crucial step for maintaining high-quality connectors. The Hummingbot Foundation QA team runs these tests when reviewing connectors on an ongoing basis.
 
-Follow the [Pangolin tests](https://github.com/hummingbot/hummingbot/tree/master/gateway/test/chains/avalanche/pangolin) to create tests for the routes and functions of your connector. 
+Follow the [Pangolin tests](https://github.com/hummingbot/hummingbot/tree/master/gateway/test/chains/avalanche/pangolin) to create tests for the routes and functions of your connector.
 
 Before submitting a pull request for your connector, you should have a minimum testing coverage of **80%**. You can determine test coverage by running `yarn test:cov`.
 
 ## 9. Perform manual testing
 
-Make sure to perform extensive manual testing of your connector to ensure that users can use it when running various Hummingbot strategies. 
+Make sure to perform extensive manual testing of your connector to ensure that users can use it when running various Hummingbot strategies.
 
 Follow the guides below:
 
-* Manual testing under [Gateway V2](https://www.notion.so/Gateway-V2-e2db78775c9d45f18a1faac41e8633b2) 
-* Client testing and Postman: [Gateway V2 connector testing guide](https://www.notion.so/Gateway-V2-connector-testing-guide-78eebb22f6484159b321da4322c700ef)
+- Manual testing under [Gateway V2](https://www.notion.so/Gateway-V2-e2db78775c9d45f18a1faac41e8633b2)
+- Client testing and Postman: [Gateway V2 connector testing guide](https://www.notion.so/Gateway-V2-connector-testing-guide-78eebb22f6484159b321da4322c700ef)
 
 ## 10. Create connector documentation page
 
 📁 **Folder** [`hummingbot-site: docs/gateway/exchanges`](https://github.com/hummingbot/hummingbot-site/tree/main/docs/gateway/exchanges)
 
-As a last step, create a Markdown documentation page in the `hummingbot-site` Github repository that provides descriptive information about the new DEX connector for Hummingbot users. 
+As a last step, create a Markdown documentation page in the `hummingbot-site` Github repository that provides descriptive information about the new DEX connector for Hummingbot users.
 
 The format should be similar to those of other pages in the same directory, i.e. [`uniswap.md`](https://github.com/hummingbot/hummingbot-site/blob/main/docs/gateway/exchanges/uniswap.md) or [`pangolin.md`](https://github.com/hummingbot/hummingbot-site/blob/main/docs/gateway/exchanges/pangolin.md).
 

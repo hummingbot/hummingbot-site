@@ -44,4 +44,4 @@ Changing the parameter above to `anonymized_metrics_interval_min: 0.0` disables 
 
 ### How can I be sure that this is the only data Hummingbot collects?
 
-The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.ggg/hummingbot) or [official forum](https://hummingbot.discourse.group) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.
+The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) or [official forum](https://hummingbot.discourse.group) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.

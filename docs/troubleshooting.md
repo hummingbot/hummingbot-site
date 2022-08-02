@@ -1,22 +1,13 @@
 ## Installation
 
-### Binary: Why does my anti-virus software flag Hummingbot's binary installer?
+### System has not been booted with systemd as init system (PID 1). Can't operate
 
-This has been reported by some users starting from version 0.33 (see [GitHub issue #2680](https://github.com/hummingbot/hummingbot/issues/2680)).
-
-The two AV engines that give a positive reading are Gridinsoft and Cyren. They both have methods of submitting false positives:
-
-https://blog.gridinsoft.com/how-to-report-the-false-detection/ https://www.cyren.com/support/reporting-av-misclassifications
-
-We believe these are fairly generic designations that are probably triggered by the general crypto code in the `ethsnarks` module for the Loopring connector.
-
-### System has not been booted with systemd as init system (PID 1). Can't operate.
 ![systemd error](/docker-io.jpg)
 
-If you are trying to install Docker on a WSL system without Docker Desktop you'll get the above error after running the install script. 
+If you are trying to install Docker on a WSL system without Docker Desktop you'll get the above error after running the install script.
 To create a new Hummingbot instance open a WSL (Ubuntu) terminal and run `sudo dockerd` and leave the window running. Open a second terminal and run the following:
 
-``` 
+```
 # 1) Download Hummingbot install, start, and update script
 wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh
 wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
@@ -67,7 +58,7 @@ $ conda
 
 If you have just installed conda, close terminal and reopen a new terminal to update the command line's program registry.
 
-If you use `zshrc` or another shell other than `bash`, see install dependencies (https://docs.hummingbot.io/installation/source/#macos)
+If you use `zshrc` or another shell other than `bash`, see install dependencies (<https://hummingbot.org/installation/source/#xcode-command-line-tools>)
 
 ### Docker: Package 'docker.io' has no installation candidate
 
@@ -110,7 +101,6 @@ You need to run `docker ps -a` to get the list of containers available. Then you
 !!! note
     Please be advised this will force close the bot from running on Docker. This means that this does not stop the outstanding orders from the HB client. The commands `stop` and `exit` is the right way to cancel orders.
 
-
 ## Operation
 
 ### AMM Arbitrage strategy is not working
@@ -125,15 +115,15 @@ Some few important things to check:
 
 ### Why is my bot not creating orders on Perpetual Market-Making?
 
-Check if you have an open position on Binance, it'll stop creating a new set of orders until your current position is closed. To learn more about perpetual market making, click [here](https://docs.hummingbot.io/strategies/perpetual-market-making/#position_management).
+Check if you have an open position on Binance, it'll stop creating a new set of orders until your current position is closed. To learn more about perpetual market making, click [here](/strategies/perpetual-market-making).
 
 ### I have my own strategy, can I make the bot execute it?
 
 Hummingbot is an open-source application that you can create your own custom scripts and build strategy. Guidelines has been created so our community can have their way to improve or add features.
 
-You can check our Discord and check our Dev-Strategies where you can share your ideas about your strategy. This link would also help you more on Developing Strategies.
+You can check our [Discord](https://discord.gg/hummingbot) and discuss in our `#developer-chat` channel where you can share your ideas or ask questions about how to implement your strategy. This link would also help you more on [Developing Strategies](/developers/strategies/tutorial).
 
-We're planning to make strategy creation a lot easier this year - likely Q2/Q3
+You can also check out our **new** `scripts` feature which allows you to create a complete strategy using just a single Python file. Check it out [here](/developers/scripts/getting-started)
 
 ### Orders are not refreshing according to order refresh time
 
@@ -174,7 +164,6 @@ Copying encrypted Binance key file from Instance1 to Instance2 will result to th
 2. Restart Hummingbot and password 5678 remains unchanged
 3. Run `connect binance` and add the API keys - this will encrypt it with 5678 password and sync it with the rest of the API keys
 
-
 ### Timestamp for this request is outside of the recvWindow
 
 ```
@@ -186,6 +175,7 @@ Timestamp errors in logs happen when the Binance clock gets de-synced from time 
 ### Too much request weight used; IP banned
 
 **Sample log error message**:
+
 ```
 binance.exceptions.BinanceAPIException: APIError(code=-1003): Way too much request weight used; IP banned until 1573987680818. Please use the websocket for live updates to avoid bans
 ```
@@ -210,6 +200,12 @@ This error occurs when Kraken account currently has no funds on the exchange. Fu
 
 ## Gateway
 
+### TypeError: Password was given but private key is not encrypted
+
+![Gateway error](/gateway-01.png)
+
+Make sure to set at least one character as your Hummingbot login password. Having a blank password causes the Gateway error message. For instructions on how to reset your password check this [link](/operation/password)
+
 ### Error after running generate_certs command
 
 ![Hummingbot installed](/assets/img/running-log.png)
@@ -233,7 +229,7 @@ Hummingbot follows the same date/time and timezone on the machine where it is in
 
 While docker `$instance_name` is running in the background, type in the command line.
 
-Manual 
+Manual
 
 ```
 # 1) Run this command
