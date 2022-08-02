@@ -38,4 +38,4 @@ Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)
 
 ## 📘 Additional Resources
 
-See [Avalanche](/chains/ethereum/#avalanche) for more information about the default configuration settings and how to change them.
+See [Avalanche](/gateway/chains/ethereum/#avalanche) for more information about the default configuration settings and how to change them.
