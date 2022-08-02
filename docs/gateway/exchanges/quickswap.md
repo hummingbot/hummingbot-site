@@ -10,7 +10,7 @@ The Pangolin connector in [Gateway](/gateway) is responsible for all on-chain op
 
 It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/polygon)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
 
 ## ℹ️ Exchange Info
 
