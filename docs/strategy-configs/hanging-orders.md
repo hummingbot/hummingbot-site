@@ -15,6 +15,28 @@ Do you want to enable hanging orders? (Yes/No)
 >>> Yes
 ```
 
+## `hanging_buy_orders_enabled`
+
+When enabled, the orders on the BUY side opposite to the filled SELL orders remain active
+
+** Prompt: **
+
+```json
+Do you want to enable hanging BUY orders? (Yes/No)
+>>> Yes
+```
+
+## `hanging_sell_orders_enabled`
+
+When enabled, the orders on the SELL side opposite to the filled BUY orders remain active
+
+** Prompt: **
+
+```json
+Do you want to enable hanging SELL orders? (Yes/No)
+>>> Yes
+```
+
 ## `hanging_orders_cancel_pct`
 
 Cancels the hanging orders when their spread goes above this value. Note that no other parameter can cancel hanging orders other than `hanging_orders_cancel_pct`.
@@ -36,14 +58,15 @@ In the example above, the buy order for the first pair was filled. But since han
 
 The benefit of this strategy is that it creates the possibility of the pairings to be “completed” and balanced.
 
-Typically, orders are placed as pairs in single order mode (1 buy and 1 sell order), and when a buy or sell order is filled, the other order is cancelled. The parameter `hanging_orders_enabled` allows Hummingbot to leave the order on the other side hanging (not cancelled) whenever one side is filled.
+Typically, orders are placed as pairs in single order mode (1 buy and 1 sell order), and when a buy or sell order is filled, the other order is cancelled. The parameter `hanging_orders_enabled` allows Hummingbot to leave the order on the other side hanging (not cancelled) whenever one side is filled. The parameter `hanging_orders_asymmetry_enabled` allows Hummingbot to apply this mechanism differently on each side.
 
 The hanging order will be cancelled in the following conditions:
 
-1. The spread goes above the specified `hanging_orders_cancel_pct` value
+1. The spread goes above the specified `hanging_orders_cancel_pct` or `hanging_buy_orders_cancel_pct`/`hanging_sell_orders_cancel_pct` value
 2. Sending `stop` or `exit` command
 
 Type `config hanging_orders_enabled` and `config hanging_orders_cancel_pct` to set values for these parameters.
+For asymmetric feature, type `config hanging_orders_asymmetry_enabled`, `config hanging_buy_orders_cancel_pct` and `config hanging_sell_orders_cancel_pct` to set values for these parameters.
 
 ## Illustrative examples - when hanging orders are important
 
