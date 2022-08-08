@@ -146,6 +146,7 @@ nav:
         - Pull Request Proposals (PRP): governance/proposals/prp.md
         - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
         - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
+      - Bounties: governance/bounty.md
       - Active Governance Proposals: governance/active.md
       - Epochs:
         - Epochs: governance/epochs/index.md
