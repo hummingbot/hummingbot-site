@@ -147,6 +147,7 @@ nav:
         - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
         - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
       - Active Governance Proposals: governance/active.md
+      - Bounties: governance/bounty.md
       - Epochs:
         - Epochs: governance/epochs/index.md
         - Epoch 1: governance/epochs/epoch1.md
