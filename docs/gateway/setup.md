@@ -67,6 +67,8 @@ For example, to change the `nodeURL` for Ethereum mainnet, you can run `gateway 
 !!! warning "Why does Gateway continually emit disconnection messages?"
     Any time you change a Gateway config, it restarts in order to propagate that setting across other related settings. Therefore, you may see log messages about Gateway losing and re-establishing connection.
 
+Click [here](/operation/commands-shortcuts/#gateway-commands) to see the different gateway commands.
+
 ## No auto-wrapping
 
 Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
