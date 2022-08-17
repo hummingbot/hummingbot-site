@@ -40,6 +40,48 @@ Below are the available commands in the current Hummingbot release.
 | `stop`            | Stop gateway docker instance                                  |
 | `test-connection` | Ping gateway api server                                       |
 
+Users can also use `gateway -h` this will print out the different commands you can use with gateway.
+
+```
+>>> gateway -h
+usage: gateway [-h] {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection} ...
+
+positional arguments: {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection}
+create              Create gateway docker container instance
+config              View or update gateway configuration
+connect             Create/view connection info on gateway connector
+connector-tokens    Report token balances for gateway connectors
+generate-certs      Create ssl certificate for gateway
+start               Start gateway docker instance
+stop                Stop gateway docker instance
+test-connection     Ping gateway api server
+
+optional arguments:
+-h, --help          show this help message and exit
+
+```
+
+
+Gateway help command can also be used this way `gateway [command]-h`
+
+```
+>>> gateway create -h
+usage: gateway create [-h]
+
+```
+
+It can also be used with a different command:
+
+```
+>>> gateway connector-tokens -h
+usage: gateway connector-tokens [-h] [connector_chain_network] [new_tokens]
+
+positional arguements:
+connector_chain_network  Name of connector you want to edit reported tokens for
+new_tokens             Report balance of these tokens
+
+```
+
 ## Docker commands
 
 These are the commonly used docker commands when using Hummingbot.
