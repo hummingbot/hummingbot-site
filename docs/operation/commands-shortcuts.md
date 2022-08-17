@@ -14,17 +14,73 @@ Below are the available commands in the current Hummingbot release.
 | `config`          | Display the current bot's configuration                       |
 | `start`           | Start the current bot                                         |
 | `stop`            | Stop the current bot                                          |
-| `open_orders`     | Show all active open orders                                   |
-| `trades`          | Show trades                                                   |
-| `pnl`             | Show profit and losses                                        |
 | `status`          | Get the market status of the current bot                      |
 | `history`         | See the past performance of the current bot                   |
-| `generate_certs`  | Create SSL certifications for Gateway communication.          |
+| `gateway`         | Helper commands for Gateway server                            |
 | `exit`            | Exit and cancel all outstanding orders                        |
 | `export`          | Export your bot's trades or private keys                      |
-| `order_book`      | Displays the top 5 bid/ask prices and volume                  |
 | `ticker`          | Show market ticker of current order book                      |
-| `autofill_import` | Choose between `start` and `config` when importing a strategy |
+| `pmm_script`      | Send command to running PMM script instance                   |
+| `previous`        | Imports the last strategy used                                |
+| `rate`            | Show rate of a given trading pair                             |
+| `order_book`      | Displays the top 5 bid/ask prices and volume                  |
+| `tab_example`     | Display hello world                                           |
+
+## Gateway commands
+
+| Command           | Function                                                      |
+| ----------------- | ------------------------------------------------------------- |
+| `create`          | Create gateway docker container instance                      |
+| `config`          | View or update gateway configuration                          |
+| `connect`         | Start the current bot                                         |
+| `connector-tokens`| Report token balances for gateway connectors                  |
+| `generate-certs`  | Create ssl certificate for gateway                            |
+| `start`           | Start gateway docker instance                                 |
+| `status`          | Check status of gateway docker instance                       |
+| `stop`            | Stop gateway docker instance                                  |
+| `test-connection` | Ping gateway api server                                       |
+
+Users can also use `gateway -h` this will print out the different commands you can use with gateway.
+
+```
+>>> gateway -h
+usage: gateway [-h] {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection} ...
+
+positional arguments: {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection}
+create              Create gateway docker container instance
+config              View or update gateway configuration
+connect             Create/view connection info on gateway connector
+connector-tokens    Report token balances for gateway connectors
+generate-certs      Create ssl certificate for gateway
+start               Start gateway docker instance
+stop                Stop gateway docker instance
+test-connection     Ping gateway api server
+
+optional arguments:
+-h, --help          show this help message and exit
+
+```
+
+
+Gateway help command can also be used this way `gateway [command]-h`
+
+```
+>>> gateway create -h
+usage: gateway create [-h]
+
+```
+
+It can also be used with a different command:
+
+```
+>>> gateway connector-tokens -h
+usage: gateway connector-tokens [-h] [connector_chain_network] [new_tokens]
+
+positional arguements:
+connector_chain_network  Name of connector you want to edit reported tokens for
+new_tokens             Report balance of these tokens
+
+```
 
 ## Docker commands
 
@@ -34,7 +90,7 @@ These are the commonly used docker commands when using Hummingbot.
 | ----------------------------- | ----------------------------- |
 | `docker ps -a`                | List containers               |
 | `docker rm [container name]`  | Remove one or more containers |
-| `docker rmi [image name]`    | Remove one or more images     |
+| `docker rmi [image name]`     | Remove one or more images     |
 | `docker rm $(docker ps -a q)` | Remove all containers         |
 
 To view more docker commands, go to [Docker Command Line Reference](https://docs.docker.com/engine/reference/commandline/docker/).

@@ -12,7 +12,7 @@ repo_url: 'https://github.com/hummingbot/hummingbot'
 edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/docs/'
 
 # Copyright
-copyright: Copyright &copy; 2021 Hummingbot Foundation
+copyright: Copyright &copy; 2022 Hummingbot Foundation
 
 # Configuration
 theme:
@@ -66,13 +66,13 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://hummingbot.substack.com
     - icon: fontawesome/brands/discord
-      link: https://discord.hummingbot.io
+      link: https://discord.gg/hummingbot
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/hummingbot_org
     - icon: fontawesome/brands/github
       link: https://github.com/hummingbot/hummingbot
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/coinalpha/hummingbot
+      link: https://hub.docker.com/r/hummingbot/hummingbot
 
 extra_css:
   - assets/css/custom.css
@@ -132,6 +132,7 @@ nav:
     - Community: community.md
     - Reporting: 
       - Reporting: reporting/index.md
+      - Hummingbot Reported Volumes: reporting/volumes.md
     - Maintenance:
       - Maintenance: maintenance/index.md
       - Active Agreements: maintenance/agreements.md
@@ -157,8 +158,10 @@ nav:
       - Introducing HBOT: news/hbot.md
       - Introducing the Hummingbot Foundation: news/foundation.md
       - How does market making work?: news/market-making.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
   - Documentation:
     - Documentation: docs.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
     - Installation:
       - Installation: installation/index.md
       - Docker: installation/docker.md
@@ -169,13 +172,13 @@ nav:
       - Update and Restore Hummingbot: installation/update-hummingbot.md
     - Basic Operations:
       - Basic Operations: operation/index.md
-      - Commands and Shortcuts: operation/commands-shortcuts.md
       - User Interface Guide: operation/user-interface.md
+      - Commands and Shortcuts: operation/commands-shortcuts.md
       - Launch/Exit Hummingbot: operation/launch-exit.md
       - Create/Delete Password: operation/password.md
       - Connect Exchange API Keys: operation/connect.md
-      - Check Balances: operation/balance.md
       - Create/Import Config Files: operation/config-files.md
+      - Check Balances: operation/balance.md
       - Start/Stop Strategy: operation/start-stop.md
       - Pause/Resume Strategy: operation/pause-resume.md
       - Check Bot/Market Status: operation/status.md
@@ -188,29 +191,30 @@ nav:
       - Arbitrage: strategies/arbitrage.md
       - Aroon Oscillator: strategies/aroon-oscillator.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Celo Arbitrage: strategies/celo-arbitrage.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+      - Fixed Grid: strategies/fixed-grid.md
       - Hedge: strategies/hedge.md
       - Liquidity Mining: strategies/liquidity-mining.md
       - Perpetual Market Making: strategies/perpetual-market-making.md
       - Pure Market Making: strategies/pure-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - Uniswap-v3 LP: strategies/uniswap-v3-lp.md
       - TWAP: strategies/twap.md
+      - Uniswap v3 LP: strategies/uniswap-v3-lp.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
-      - Spot:
-        - Spot: exchanges/spot/index.md
+      - Spot Markets:
+        - Spot Markets: exchanges/spot/index.md
         - AltMarkets: exchanges/altmarkets.md
         - AscendEX: exchanges/ascend-ex.md
-        - Balancer: exchanges/balancer.md
         - Beaxy: exchanges/beaxy.md
         - Binance: exchanges/binance.md
         - Binance US: exchanges/binance-us.md
         - Bitfinex: exchanges/bitfinex.md
         - BitMart: exchanges/bitmart.md
+        - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
         - Blocktane: exchanges/blocktane.md
+        - Bybit: exchanges/bybit.md
         - Coinbase Pro: exchanges/coinbase.md
         - CoinFLEX: exchanges/coinflex.md
         - CoinZoom: exchanges/coinzoom.md
@@ -223,6 +227,7 @@ nav:
         - Huobi Global: exchanges/huobi.md
         - KuCoin: exchanges/kucoin.md
         - Kraken: exchanges/kraken.md
+        - Latoken: exchanges/latoken.md
         - Liquid: exchanges/liquid.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
@@ -231,27 +236,33 @@ nav:
         - ProBit Global: exchanges/probit.md
         - ProBit Korea: exchanges/probit-korea.md
         - WazirX: exchanges/wazirx.md
-      - Perp:
-        - Perp: exchanges/perp/index.md
+      - Perpetual Futures Markets:
+        - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
+        - Bitmex: exchanges/bitmex-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
+        - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
-      - AMM:
-        - AMM: exchanges/amm/index.md
-        - Uniswap: exchanges/uniswap.md
-        - Pangolin: exchanges/pangolin.md
-        - Openocean: exchanges/openocean.md
-    - Gateway:
-      - Gateway: gateway/index.md  
-      - Ethereum: gateway/ethereum.md
-      - Avalanche: gateway/avalanche.md
-      - Harmony: gateway/harmony.md
-      - Solana: gateway/solana.md
+    - Gateway Connectors:
+      - Gateway Connectors: gateway/index.md
+      - Setting up Gateway: gateway/setup.md
+      - History: gateway/history.md
+      - Chains and Networks:
+        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
+        - Solana: gateway/chains/solana.md
+      - AMM DEXs:
+        - AMM DEXs: gateway/exchanges/amm/index.md
+        - Pangolin: gateway/exchanges/pangolin.md
+        - Quickswap: gateway/exchanges/quickswap.md
+        - Sushiswap: gateway/exchanges/sushiswap.md
+        - TraderJoe: gateway/exchanges/traderjoe.md
+        - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
+      - CLOB DEXs:
+        - CLOB DEXs: gateway/exchanges/clob/index.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
       - Color Settings: global-configs/color-settings.md
-      - External Database: global-configs/external-db.md
       - Kill Switch: global-configs/kill-switch.md
       - Override Fees: global-configs/override-fees.md
       - Paper Trade: global-configs/paper-trade.md
@@ -281,8 +292,7 @@ nav:
       - Developers: developers/index.md
       - Contribution Guidelines: developers/contributions.md
       - Architecture: developers/architecture.md
-      - Gateway: developers/gateway.md
-      - Connectors:
+      - Exchange Connectors:
         - Developing Connectors: developers/connectors/index.md
         - Architecture:
           - Connector Architecture: developers/connectors/architecture/index.md
@@ -291,6 +301,12 @@ nav:
         - Build Process: developers/connectors/build.md
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
+      - Gateway Connectors:
+        - Gateway Connectors: developers/gateway/index.md
+        - Setting up Gateway for Developers: developers/gateway/setup.md
+        - Gateway API Interfaces: developers/gateway/api-interface.md
+        - Building Gateway Connectors: developers/gateway/building-gateway-connectors.md
+        - Running AMM-ARB with Gateway: developers/gateway/running-amm-arb.md
       - Strategies:
         - Developing Strategies: developers/strategies/index.md
         - Architecture: developers/strategies/architecture.md
@@ -300,10 +316,15 @@ nav:
         - Hanging Orders Tracker: developers/strategies/hanging-orders.md
       - Scripts:
         - Scripts: developers/scripts/index.md
-        - Script Base Class: developers/scripts/script-base.md
+        - Getting Started: developers/scripts/getting-started.md
+        - Examples: developers/scripts/examples.md
+        - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.6.0: release-notes/1.6.0.md
+    - 1.5.0: release-notes/1.5.0.md
+    - 1.4.0: release-notes/1.4.0.md
     - 1.3.0: release-notes/1.3.0.md
     - 1.2.0: release-notes/1.2.0.md
     - 1.1.1: release-notes/1.1.1.md

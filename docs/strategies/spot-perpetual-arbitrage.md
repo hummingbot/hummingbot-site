@@ -18,8 +18,8 @@ With the position open, the bot will scan the prices on both connectors, and onc
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
-[`perp` exchanges](/exchanges/#perp)
+[`spot` exchanges](/exchanges/spot)
+[`perp` exchanges](/exchanges/perp)
 
 ## 👷 Maintainer
 
@@ -39,14 +39,13 @@ Open
 | `perpetual_leverage` | int | 1 | True | How much leverage would you like to use on the derivative exchange? |
 | `min_opening_arbitrage_pct` | decimal | 1 | True | What is the minimum spread between the spot and derivative market price before starting an arbitrage? |
 | `min_closing_arbitrage_pct` | decimal | 0.1 | True | What is the minimum spread between the spot and derivative market price before closing an existing arbitrage? |
-| `maximize_funding_rate` | bool | False | True | Would you like to take advantage of the funding rate on the derivative exchange, even if min convergence is reached during funding time? |
 | `spot_market_slippage_buffer` | decimal | 0.05 | True | How much buffer do you want to add to the price to account for slippage for orders on the spot market |
 | `perpetual_market_slippage_buffer` | decimal | 0.05 | True | How much buffer do you want to add to the price to account for slippage for orders on the derivative market |
 | `next_arbitrage_cycle_delay` | float | 120 | False | How long do you want the strategy to wait to cool off from an arbitrage cycle (in seconds) |
 
 ## 📓 Description
-=
-[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/spot-perpetual-arbitragte/spot-perpetual-arbitrage.pyx)
+
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage.py)
 
 ## ℹ️ More Resources
 

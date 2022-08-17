@@ -20,7 +20,7 @@ In addition, the strategy contains a number of parameters to enable traders to c
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
@@ -37,36 +37,46 @@ In addition, the strategy contains a number of parameters to enable traders to c
 | `market`                     | string      |             | True        | Enter the token trading pair you would like to trade on [exchange] |
 | `bid_spread`                 | decimal     |             | True        | How far away from the mid price do you want to place the first bid order? |
 | `ask_spread`                 | decimal     |             | True        | How far away from the mid price do you want to place the first ask order? |
+| `minimum_spread`             | decimal     | -100        | False       | At what minimum spread should the bot automatically cancel orders? |
 | `order_refresh_time`         | float       |             | True        | How often do you want to cancel and replace bids and asks (in seconds)? |
+| `max_order_age`              | float       | 1800        | False       | How often do you want to cancel and replace bids and asks with the same price (in seconds)? |
+| `order_refresh_tolerance_pct`| decimal     | 0           | False       | Enter the percent change in price needed to refresh orders at each cycle |
 | `order_amount`               | decimal     |             | True        | What is the amount of [base_asset] per order? |
+| `price_ceiling`              | decimal     | -1          | False       | Enter the price point above which only sell orders will be placed |
+| `price_floor`                | decimal     | -1          | False       | Enter the price below which only buy orders will be placed |
+| `moving_price_band_enabled`  | bool        | False       | True        | Would you like to enable moving price floor and ceiling? (Yes/No)  |
+| `price_ceiling_pct`          | decimal     | 1           | True        | Enter a percentage to the current price that sets the price ceiling. Above this price, only sell orders will be placed  |
+| `price_band_refresh_time`    | float       | 86400       | True        | After this amount of time (in seconds), the price bands are reset based on the current price  |
 | `ping_pong_enabled`          | bool        | False       | True        | Would you like to use the ping pong feature and alternate between buy and sell orders after fills? |
 | `order_levels`               | int         | 1           | False       | How many orders do you want to place on both sides? |
 | `order_level_amount`         | decimal     | 0           | False       | How much do you want to increase or decrease the order size for each additional order? |
 | `order_level_spread`         | decimal     | 0           | False       | Enter the price increments (as percentage) for subsequent orders? |
-| `filled_order_delay`         | decimal     | 60          | False       | How long do you want to wait before placing the next order if your order gets filled (in seconds)? |
-| `max_order_age`              | float       | 1800        | False       | How often do you want to cancel and replace bids and asks with the same price (in seconds)? |
-| `order_refresh_tolerance_pct`| decimal     | 0           | False       | Enter the percent change in price needed to refresh orders at each cycle |
 | `inventory_skew_enabled`     | bool        | False       | False       | Would you like to enable inventory skew? |
 | `inventory_target_base_pct`  | decimal     | 50          | False       | What is your target base asset percentage? |
 | `inventory_range_multiplier` | decimal     | 50          | False       | What is your tolerable range of inventory around the target, expressed in multiples of your total order size? |
+| `inventory_price`            | decimal     | 1           | False       | What is the price of your base asset inventory? |
+| `filled_order_delay`         | decimal     | 60          | False       | How long do you want to wait before placing the next order if your order gets filled (in seconds)? |
 | `hanging_orders_enabled`     | bool        | False       | False       | Do you want to enable hanging orders? |
 | `hanging_orders_cancel_pct`  | decimal     | 10          | False       | At what spread percentage (from mid price) will hanging orders be canceled?|
 | `order_optimization_enabled` | bool        | False       | False       | Do you want to enable best bid ask jumping? |
 | `ask_order_optimization_depth`| decimal    | 0           | False       | How deep do you want to go into the order book for calculating the top ask, ignoring dust orders on the top (expressed in base asset amount)?|
 | `bid_order_optimization_depth`| decimal    | 0           | False       | How deep do you want to go into the order book for calculating the top bid, ignoring dust orders on the top (expressed in base asset amount)?|
-| `price_ceiling`              | decimal     | -1          | False       | Enter the price point above which only sell orders will be placed |
-| `price_floor`                | decimal     | -1          | False       | Enter the price below which only buy orders will be placed |
 | `price_source`               | string      | current_market| False     | Which price source to use? (current_market/external_market/custom_api) |
 | `price_type`                 | string      | mid_price   | False       | Which price type to use? (mid_price/last_price/last_own_trade_price/best_bid/best_ask/inventory_cost) |
 | `price_source_exchange`      | string      |             | False       | Enter external price source exchange name |
 | `price_source_market`        | string      |             | False       | Enter the token trading pair on [price_source_exchange] |
 | `price_source_custom_api`    | string      |             | False       | Enter pricing API URL |
 | `custom_api_update_interval` | float       | 5           | False       | Enter custom API update interval in second (default: 5.0, min: 0.5) |
-| `inventory_price`            | decimal     | 1           | False       | What is the price of your base asset inventory? |
 | `add_transaction_costs`      | bool        | False       | False       | Do you want to add transaction costs automatically to order prices? |
-| `minimum_spread`             | decimal     | -100        | False       | At what minimum spread should the bot automatically cancel orders? |
 | `take_if_crossed`            | bool        | False       | False       | Do you want to take the best order if orders cross the orderbook? |
 | `order_override`             | bool        | None        | False       |  |
+| `should_wait_order_cancel_confirmation` | bool | True    | False       | Should the strategy wait to receive a confirmation for orders cancelation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
+| `bid_order_level_spreads`    | decimal     | None        | True        | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
+| `ask_order_level_spreads`    | decimal     | None        | True        | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
+| `bid_order_level_amounts`    | decimal     | None        | True        | Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
+| `ask_order_level_amounts`    | decimal     | None        | True        |Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
+
+
 
 ## 📓 Description
 

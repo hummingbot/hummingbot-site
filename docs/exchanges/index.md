@@ -6,12 +6,9 @@ Hummingbot exchange connectors try to standardize trading logic and order types 
 
 * [Spot](spot): Connectors to central limit order book (CLOB) exchanges that trade **spot** markets
 * [Perp](perp): Connectors to central limit order book (CLOB) exchanges that trade **perpetual swap** markets
-* [AMM](amm): Connectors to automatic market maker (**AMM**) decentralized exchanges
 
-!!! note "Centralized vs decentralized exchanges"
-    Hummingbot connects to both centralized and decentralized exchanges. Centralized exchanges require users to enter API keys, while decentralized exchanges require users to connect their wallets to the underlying blockchain [protocols](/protocols).
-
-In the future, Hummingbot aims to extend support to other exchange and asset types. Developers interested in forking Hummingbot to support other types of exchanges can discuss with the community on the **#dev** channels in the Hummingbot Discord.
+!!! note "DEX support"
+    Hummingbot connects to both centralized and decentralized exchanges (DEX). Certain DEX connectors like dYdX and Loopring are in the primary Hummingbot codebase, while other DEX connectors like Uniswap are in Gateway. See [Gateway](/gateway) for a list of those exchanges.
 
 ## Status
 

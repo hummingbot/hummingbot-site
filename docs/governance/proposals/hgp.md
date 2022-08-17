@@ -12,14 +12,14 @@ Since this type of proposal has the biggest impact on Foundation and may allocat
 | Min HBOT Balance to create   | 50,000                    |
 | Quorum Percentage            | 3% of HBOT circulating supply   |
 | Approval Threshold           | >50% of tokens approved   |
-| Vote Duration                | 14 days                   |
+| Vote Duration                | 7 days                   |
 
 ## Before creating a HGP
 
 !!! note "Governance Proposals vs Improvement Proposals"
     Governance Proposals (HGP) are designed to allocate HBOT budget toward broad themes that benefit the overall Hummingbot user base, enabling any developer to request grants for it afterwards, or community initiatives that enable diverse teams to apply. Unlike improvement proposals (HIP), developers cannot request HBOT in a HGP for exclusive work that prevents contribution by other community developers.
 
-It is a good practice to discuss proposals with the community before opening it for voting. Proponents should create a thread in [Commonwealth](https://commonwealth.im/hummingbot-foundation) and share it in the **#governance-chat** channel in [Discord](https://discord.hummingbot.io) to encourage ample discussion.
+It is a good practice to discuss proposals with the community before opening it for voting. Proponents should create a thread in the [Hummingbot Forum](https://hummingbot.discourse.group) and share it in the **#governance** channel in [Discord](https://discord.hummingbot.io) to encourage ample discussion.
 
 ## Format
 
@@ -76,8 +76,7 @@ This category covers use of the Foundation treasury for initiatives that improve
 - Content creation contests
 - Team projects
 
-For approved Community Initiative with roles to be filled by community members, the first 
-post-approval step will be an announcement thread in Commonwealth, where community members can present their qualifications and apply for the roles.
+For approved Community Initiative with roles to be filled by community members, the first post-approval step will be an announcement thread in the [forum](https://hummingbot.discourse.group/), where community members can present their qualifications and apply for the roles.
 
 All proposals in this category should contain clear goals, define expected impact on the Hummingbot community, and outline the metrics that the community should use to gauge whether the initiative is successful.
 

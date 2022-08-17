@@ -16,7 +16,7 @@ We recommend this strategy as a starting point for developers looking to build t
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
@@ -101,8 +101,6 @@ TWAP processes orders when there is a remaining order quantity & the specified t
 <iframe width="733" height="474" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## ℹ️ More Resources
-
-:fontawesome-solid-book: [Advanced TWAP Strategy](https://hummingbot.io/blog/advanced-twap-strategy): The “twap_plus” strategy highly involves the Relative Strength Indicator (RSI) trend of a certain trading pair to execute trades. This way users can setup bots to match whenever the RSI levels are theoretically giving “Buy” signals or “Sell” signals and decide potential entry and exit points.
 
 :fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy 
 

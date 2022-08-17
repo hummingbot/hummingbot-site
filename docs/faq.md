@@ -3,17 +3,17 @@ See below for answers to frequently asked questions about:
 
 * [Hummingbot software](#hummingbot-software)
 * [Hummingbot Foundation](#hummingbot-foundation)
-* [HBOT token](#hummingbot-software)
+* [HBOT token](#hbot-token)
 
 ## Hummingbot software
 
 ### What type of software is Hummingbot?
 
-Hummingbot is software that helps you build and run crypto trading bots, freely available at https://github.com/hummingbot/hummingbot under the open source Apache 2.0 license.
+Hummingbot is software that helps you build and run crypto trading bots, freely available at <https://github.com/hummingbot/hummingbot> under the open source Apache 2.0 license.
 
 ### Is Hummingbot a protocol or an exchange?
 
-No, Hummingbot is open source client software that you install on a local machine that interacts with exchanges and protocols. 
+No, Hummingbot is open source client software that you install on a local machine that interacts with exchanges and protocols.
 
 With many connectors and strategies being added all the time, Hummingbot is a constantly evolving publicly available codebase with frequent external contributors seeking to merge their changes into the `master` branch, which is released once a month and widely used by tens of thousands of individual and professional bot-runners globally.
 
@@ -21,7 +21,7 @@ With many connectors and strategies being added all the time, Hummingbot is a co
 
 You can use Hummingbot to build any types of automated crypto trading bot, with the most common bot types being market making and arbitrage bots. Market making bots provide liquidity to a trading pair on an exchange, while arbitrage bots exploit price differences betweeen trading pairs on different exchanges.
 
-Typically, users install the Docker image version on AWS or another cloud provider. Afterwards, they can add their API key or private keys to it, which allows them to configure and run one of Hummingbot's pre-built strategies on many different exchanges. 
+Typically, users install the Docker image version on AWS or another cloud provider. Afterwards, they can add their API key or private keys to it, which allows them to configure and run one of Hummingbot's pre-built strategies on many different exchanges.
 
 Since Hummingbot is an open, modular codebase, many developers and professional firms fork the codebase and use it for their own purposes.
 
@@ -75,9 +75,9 @@ The Hummingbot Foundation is a not-for-profit organization established in the Ca
 
 Below are its main roles and responsibilities:
 
-- **Maintenance**: Appoint and compensate **maintainers** who maintain Hummingbot exchange connectors by fixing bugs, resolving API changes, and adding features.
-- **Bounties**: Enable the community to sponsor bounties that reward community contributors for building new connectors, features, and enhancements
-- **Governance:** Enable the community to steer the evolution of the codebase by prioritizing work on Github issues and pull requests
+* **Maintenance**: Appoint and compensate **maintainers** who maintain Hummingbot exchange connectors by fixing bugs, resolving API changes, and adding features.
+* **Bounties**: Enable the community to sponsor bounties that reward community contributors for building new connectors, features, and enhancements
+* **Governance:** Enable the community to steer the evolution of the codebase by prioritizing work on Github issues and pull requests
 
 Since Hummingbot is not a blockchain protocol, but rather open source client software run locally on individual client devices that interacts with protocols and exchanges, the Foundation governance system aims to fits into the existing Hummingbot open source software release process, which has been used to handle thousands of Github issues and pull requests created by the community over the past three years.
 
@@ -99,10 +99,10 @@ In addition, the Foundation has a Chief Operating Officer and Chief Finance Offi
 
 The Foundation also employs staff who administer the governance system, respond to users on Discord, and handle other day-to-day operations of maintaining Hummingbot, including:
 
-- Review pull requests and issues linked to proposals
-- Communicate and coordinate with sponsors, maintainers, and contributors
-- Package monthly releases into Docker containers for various environments
-- Maintain and update documentation
+* Review pull requests and issues linked to proposals
+* Communicate and coordinate with sponsors, maintainers, and contributors
+* Package monthly releases into Docker containers for various environments
+* Maintain and update documentation
 
 ### Why is the Hummingbot Foundation domiciled in the Cayman Islands?
 
@@ -124,11 +124,11 @@ The Hummingbot Governance Token (HBOT) is the medium of governance for the Hummi
 
 HBOT is a governance token that give holders control over the Hummingbot codebase, the HBOT community treasury, and the Hummingbot Foundation. For instance, holders can:
 
-- Approve all pull requests to the Hummingbot codebase
-- Propose architectural changes and steer the roadmap
-- Allocate the HBOT community treasury
-- Appoint maintainers for exchange connectors who share in fees rebated from that exchange
-- Elect Foundation board of directors
+* Approve all pull requests to the Hummingbot codebase
+* Propose architectural changes and steer the roadmap
+* Allocate the HBOT community treasury
+* Appoint maintainers for exchange connectors who share in fees rebated from that exchange
+* Elect Foundation board of directors
 
 HBOT token holders make these decisions by creating proposals and voting with their token balances. One HBOT equals one vote, and voting does not consume any tokens.
 
@@ -136,7 +136,7 @@ HBOT token holders make these decisions by creating proposals and voting with th
 
 No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#/), which lets HBOT holders vote by signing messages using their HBOT token balance to vote on issues without paying gas. Snapshots are recorded to IPFS to generate a permanent record.
 
-### How do I know that I'm using the correct HBOT token? 
+### How do I know that I'm using the correct HBOT token?
 
 To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from [Reputable Sources](/hbot/#reputable-information-sources). This does not constitute investment advice or a recommendation for any platform or market listed.
 
@@ -146,13 +146,13 @@ Please see [Reputable Sources](/hbot/#reputable-information-sources) for informa
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed[Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
 See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
 
 ### I was an early user of Hummingbot. Am I eligible to claim HBOT tokens?
 
-The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively. 
+The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively.
 
 Other than those listed in the [HBOT announcement](/news/hbot), there are no other eligible HBOT recipients.
 

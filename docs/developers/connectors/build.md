@@ -145,7 +145,7 @@ Examples for their use can be found in both Binance and Binance Perpetual connec
 
 **Binance connector tests:** https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/exchange/binance
 
-**Binance Perpetual connector tests:** https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/derivativ
+**Binance Perpetual connector tests:** https://github.com/hummingbot/hummingbot/tree/master/test/hummingbot/connector/derivative
 
 ## Special Considerations
 

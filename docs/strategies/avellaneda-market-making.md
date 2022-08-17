@@ -14,7 +14,7 @@ This strategy implements a market making strategy described in the classic paper
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/#spot)
+[`spot` exchanges](/exchanges/spot)
 
 ## 👷 Maintenance
 
@@ -46,11 +46,10 @@ This strategy implements a market making strategy described in the classic paper
 | `add_transaction_costs`      | decimal     |  False      | False       | Do you want to add transaction costs automatically to order prices? (Yes/No) |
 | `volatility_buffer_size`     | decimal     |  200        | False       | Enter amount of ticks that will be stored to calculate volatility |
 | `trading_intensity_buffer_size` | decimal     |  200        | False       | Enter amount of ticks that will be stored to estimate order book liquidity? |
-| `order_levels`               | int         |  1          | False       | How many orders do you want to place on both sides? |
+| `order_level_mode`               | int         |  1          | False       | How many orders do you want to place on both sides? |
 | `level_distances`            | decimal     |  0          | False       | How far apart in % of optimal spread should orders on one side be? |
 | `order_override`             | json        |             | False       |  |
-| `hanging_orders_enabled`     | bool        |  False      | False       | Do you want to enable hanging orders? (Yes/No) |
-| `hanging_orders_cancel_pct`  | decimal     |  10         | False       | At what spread percentage (from mid price) will hanging orders be canceled? |
+| `hanging_orders_mode  `     | bool        |  False      | False       | How do you want to handle hanging orders? (track_hanging_orders/ignore_hanging_orders) |
 | `should_wait_order_cancel_confirmation` |  bool |  True       | False       | Should the strategy wait to receive a confirmation for orders cancellation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
 
 ## 📓 Description
@@ -115,19 +114,15 @@ The higher the value, the more aggressive the strategy will be to reach the `inv
 
 It's a unit-less parameter, that can be set to any non-zero value as necessary, depending on the inventory risk the user is willing to take. 
 
-> NOTE: The amount of decimal points used on the market price have a considerable influence on the how big the `risk_factor` must be to start having an effect of the **Reservation price** and on the **Optimal Spread**
-> As an example, on a market with 2 decimals (0.01), a `risk_factor = 1` can already have a noticeable effect, while on a market with 4 decimals (0.0001), the `risk_factor` must be at least around 1000 to have any noticeable effect.
+> NOTE: The `risk_factor` is defined relative to the instant volatility of the asset given in absolute price values. For all assets the values `risk_factor` can attain should be roughly within the same range, however there can be a few exceptions where the parameter would require a significantly different value to start having an effect on the **Reservation price** and on the **Optimal Spread**
+> As an example, for asset A, a `risk_factor = 1` can already have a noticeable effect, while for asset B, the `risk_factor` must be at least around 10 to have any noticeable effect.
 > The only way to find a value for the `risk_factor` is to experiment with different values and see it's effects on the **Reservation price** and the **Optimal spread**.
+> Based on our experience common values of this parameter are between 1 and 20, however it is unrestricted on the upper side, therefore if necessary its value can be even 100 or 1000, although it's not very common.
 
 Given the right market conditions and the right `risk_factor`, it's possible that the optimal spread will be wider than the absolute price of the asset, or that the reservation price will by far away from the mid price, in both cases resulting in the optimal bid price to be lower than or equal to 0. If this happens neiher buy or sell will be placed. To prevent it from happening, users can set the `risk_factor` to a lower value.
 
-The following examples can serve as a starting point in tuning the parameter. It's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
+In setting the `risk_factor` it's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
 
-| Asset price  | Example risk factor |
-|--------------|---------------------|
-| 2500         | 2                   |
-| 10           | 10                  |
-| 0.01         | 1000                |
 
 ![Figure 1: Risk factor adjustment flow chart ](/assets/img/avellaneda_risk_factor.svg)
 

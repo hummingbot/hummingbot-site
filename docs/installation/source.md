@@ -3,7 +3,7 @@
 !!! note "Re-compiling files"
     If you make changes to the code, make sure to re-compile the code with `./compile` to ensure that any changes to Cython files are compiled before running Hummingbot
 
-You can install Docker and Hummingbot by selecting the following options below:
+You can install Source and Hummingbot by selecting the following options below:
 
 - **Scripts**: download and use automated install scripts
 - **Manual**: run install commands manually
@@ -12,9 +12,9 @@ You can install Docker and Hummingbot by selecting the following options below:
 
 _Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
 
-=== ""Scripts""
+=== "Scripts"
 
-```bash
+    ```bash
     # 1) Download install script
     wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/install-from-source/install-source-ubuntu.sh
 
@@ -23,9 +23,9 @@ _Supported versions: 16.04 LTS, 18.04 LTS, 19.04_
 
     # 3) Run installation
     ./install-source-ubuntu.sh
-```
+    ```
 
-=== ""Manual""
+=== "Manual"
 
     ```bash
     # 1) Install dependencies
@@ -112,70 +112,10 @@ bin/hummingbot.py
 
 ## Windows
 
-### Dependencies
+As Hummingbot is optimized for UNIX-based environments, [install Windows Subsystem for Linux](/installation/docker#install-wsl) in order to deploy an Ubuntu environment in your Windows machine.
 
-1. Install [Git for Windows](https://git-scm.com/download/win).
+Afterwards, follow the **Linux/Ubuntu** instructions above.
 
-- During the installation of Git Bash, make sure to tick the Enable experimental support for pseudo consoles.
+## 📺 Videos and Guides
 
-  ![anaconda-path](/assets/img/git-installation.png)
-
-2. Install [Python for Windows](https://www.python.org/downloads/windows/).
-3. Install [Anaconda or miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html).
-4. Install [Visual Studio Code](https://code.visualstudio.com/download), [Visual Studio BuildTools 2019, Core Features, C++](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) and [C++ redistributable 2019](https://aka.ms/vs/16/release/VC_redist.x64.exe).
-
-- During installation, make sure to add Anaconda or Miniconda to your PATH environmental variable by clicking the tick box as shown below, or you can add them [manually](https://www.geeksforgeeks.org/how-to-setup-anaconda-path-to-environment-variable/).
-  ![anaconda-path](/assets/img/anaconda-path.png)
-
-!!! note
-    Some prerequisites are large applications and may need to restart your computer.
-
-### Hummingbot
-
-1. Launch Git Bash App.
-2. Run the following commands:
-
-```
-# initialized conda
-conda init bash
-# exit git-bash to take effect
-exit
-# launch Git Bash App again
-```
-
-3. You can install Hummingbot by selecting **_either_** of the following options from the tabs below:
-
-- **Scripts**: download and use automated install scripts.
-- **Manual**: run install commands manually.
-
-=== ""Scripts""
-
-    ```bash
-    # 1) Navigate to the root folder
-    cd ~
-
-    # 2) Download install script
-    curl https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/install-from-source/install-source-windows.sh -o install-source-windows.sh
-
-    # 3) Enable script permissions
-    chmod a+x install-source-windows.sh
-
-    # 4) Run installation
-    ./install-source-windows.sh
-    ```
-
-=== ""Manual""
-
-    ```bash
-    cd ~
-    export CONDAPATH="$(pwd)/miniconda3"
-    export PYTHON="$(pwd)/miniconda3/envs/hummingbot/python3"
-    # Clone Hummingbot
-    git clone https://github.com/hummingbot/hummingbot.git
-    # Install Hummingbot
-    export hummingbotPath="$(pwd)/hummingbot" && cd $hummingbotPath && ./install
-    # Activate environment and compile code
-    conda activate hummingbot && ./compile
-    # Start Hummingbot
-    winpty python bin/hummingbot.py
-    ```
+:fontawesome-brands-youtube: [Install Hummingbot on source | MacOS](https://www.youtube.com/watch?v=_10M9uJan3U&list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO&index=1)

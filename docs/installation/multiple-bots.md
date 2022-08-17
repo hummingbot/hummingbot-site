@@ -24,14 +24,6 @@ curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installa
 chmod a+x *.sh
 ```
 
-**Windows (Docker Toolbox)**
-
-```
-cd ~
-curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/create.sh -o create.sh
-chmod a+x *.sh
-```
-
 ## Multiple bots from source
 
 !!! tip
@@ -59,7 +51,7 @@ conda activate hummingbot
 
 Press keys `Ctrl+P` then `Ctrl+Q` in sequence to detach from Docker, i.e., return to the command line. This exits out of Hummingbot without shutting down the container instance.
 
-Restart or connect to a running instance using the `./start.sh` script. Below commands download the start script and make it executable.
+Restart or connect to a running instance using the `./start.sh` script or use `docker attach [container_name]` to a already running bot in the background.
 
 ### From source
 
@@ -89,3 +81,10 @@ Log back into the screen by using either `screen` or `screen -r $NAME` to open a
   Credits to discord user `@matha` for this question and `@pfj` for the
   solution.
 </small>
+
+## 📺 Videos and Guides
+
+:fontawesome-brands-youtube: [Using Docker Compose to launch multiple Hummingbots](https://www.youtube.com/watch?v=LU-4Ui-KCtY)
+
+:fontawesome-brands-youtube: [Managing Bot Cycles with Wojak](https://www.youtube.com/watch?v=eB_66K0JxgM&t=2s)
+

@@ -21,7 +21,7 @@ See [Exchanges](/exchanges) for more information about how to create API keys fo
 1. Enter the websocket address starting with wss://
 
 !!! note "Connecting vs keyfile"
-    A more secure way to add your blockchain wallet credentials to Humminggbot is by [importing a keyfile](/protocols/ethereum/#keyfile).
+    A more secure way to add your blockchain wallet credentials to Humminggbot is by [importing a keyfile](https://hummingbot.org/gateway/#i-exchange-info).
 
 ## Checking connection status
 
