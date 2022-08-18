@@ -38,7 +38,7 @@ To be considered valid, a PRP should contain the following fields:
 - **Description**: Detailed explanation of the improvement requested or work proposed
 - **Github pull request**: Link to the Github pull request
 
-See [Maintenance - Process](/maintenance/process) for a full description of the process.
+See [Maintenance](/maintenance) for a more information.
 
 ## HIP
 
@@ -64,7 +64,7 @@ To be considered valid, a HIP should contain the following fields:
 - **Description**: Detailed explanation of the improvement requested or work proposed
 - **HBOT Allocation**: Proposed allocation and justification
 
-See [Maintenance - Process](/maintenance/process) for a full description of the process.
+See [Maintenance](/maintenance) for a more information.
 
 ## HGP
 
@@ -118,6 +118,3 @@ All proposals in this category should contain clear goals, define expected impac
 This category covers all changes related to the Hummingbot Foundation governance process permissible for HBOT token holders to to adjust under Foundation bylaws.
 
 All proposals in this category should contain an explicit description of what to change in the governance process, along with a clear explanation for why the change is needed.
-
-
-

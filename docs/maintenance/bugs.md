@@ -1,66 +1,78 @@
-# Release Candidate (staging branch) bug hunt
+## Bug Bounty Pool
 
-## Summary
+This [Snapshot](https://snapshot.org/#/hbot.eth/proposal/0x1fdb9a1ce7f3198c05711564dccad8dfbe9468078a77bc10647e80c30d49dd64) allocated **1,000,000 HBOT** to a community bug hunt.
 
-To improve the quality of each Hummingbot Client Release, we propose to allocate **1,000,000** HBOT tokens to reward the community for bug hunting and bug fixes, during the staging phase of each monthly Release.
+Starting in Epoch 2, the Foundation will assign these tokens as bounties to open Github bugs, prioritizing issues related to [Certified](/maintenance/certification) exchanges.
 
-## Details
-As detailed on the [Hummingbot Release cycle](https://hummingbot.org/governance/proposals/prp/#development-release-cycle), Release Candidates will be moved to the [staging branch](https://github.com/hummingbot/hummingbot/tree/staging) once all approved PRPs for that release are merged into `development`.
+## Bug Bounty Schedule
 
-During this phase, the Release Candidate still needs to be tested for bugs not found during the initial merge of Pull Requests into the `development` branch.
+The severity assigned by Hummingbot Foundation determines the amount for each bounty. Currently, the Foundation applies the following fixed bounty amounts per bug severity.
 
-As a way to improve the quality of each release, this proposal establish the Bug Hunt program, and allocate **1,000,000** HBOT tokens to be distributed as rewards to community members that find and/or fix bugs on the `staging` branch.
+| Bug Severity  | Bug Fix      |
+| -----------   | ------------ | 
+| P3 (Low)      | 10,000 HBOT |
+| P2 (High)      | 20,000 HBOT |
+| P1 (Critical)  |100,000 HBOT |
 
-## Severity Classification
-Each bug will be classified according to the following structure:
+Afterwards, the Foundation team member will add a comment to the Github issue stating that a bounty has been created for the issue ("Created 100,000 HBOT bounty for a fix resolving issue X") and add it to the [Bounties board](https://github.com/orgs/hummingbot/projects/7/views/1) under the **Open** column.
 
-### Low
+See [Bounties](/maintenance/bounties) for how developers can take up bounties.
+
+## Reporting
+
+To report a bug, anyone can submit an [Bug Report](https://github.com/hummingbot/hummingbot/issues/new?assignees=&labels=bug&template=bug_report.md&title=) to the Hummingbot Github. 
+
+The submitter should include as much description as possible for the issue reported, such as Steps to Reproduce, screenshots, etc. They should also add labels corresponding to the strategy name and exchange connector name as well.
+
+## Classification
+
+The Foundation will regularly assess all bugs, which entails determining whether it is in fact a real bug and applying a priority label to them. If the issue is a real bug, the Foundation will add the Github issue to the Bounty Board and assign a fixed HBOT amount according to the Bug Bounty Schedule above.
+
+### P3 (Low)
+
 * Bugs won’t result in any noticeable breakdown of the system
 
-* Related to : color, incorrect spacing, typo or all related to design or user interface 
+* Related to:
+    - Color, incorrect spacing, typo or all related to design or user interface 
+    - How parameter works when being called (Prompt)
+    - Strategy performance (setup, order create/cancellation, orderbook integrity..etc)
 
-* `Status:` The client still works as expected 
-
-### Medium 
+* `Status:` The client still works as expected with possible workarounds
 
 * Results in some unexpected or undesired behavior, but not enough to disrupt system function
 
-* Related to: 
-    * How parameter works when being called (Prompt)
-    * Strategy performance (setup, order create/cancellation, orderbook integrity..etc)
+* Example 1
+    * `Test case`: Executed command config order_refresh_time
+    * `Test expected result:` There should be prompt of how order_refresh time works and what user should input
 
-* Sample
-    * `Test case`: Executed command config order_refresh_time,
-`Test expected result:` There should be prompt of how order_refresh time works and what user should input
-
+* Example 2
     * `Test case:` Start pure market making
-`Test expected result:` The bot should create orders after 20s upon running start command
+    * `Test expected result:` The bot should create orders after 20s upon running start command
 
-* `Status:` The client still works as expected but with noticeable delays
-
-### High
+### P2 (High)
 
 * Bug capable of collapsing large parts of the system
 
 * Related to:
-    -  The data client provides to users (SQlite, CSV, trades files)
+    - The data client provides to users (SQlite, CSV, trades files)
     - Functionality of strategies
     - Connection between Client and Exchange 
     - Client performance when started
     - Compatibility on hardware and operating systems
     - Orders not created correctly
-   - Trade history does not match from client and connector
+    - Trade history does not match from client and connector
 
-* Sample:
+* Example 1:
     * `Test case:` History command, Trade PNL data
-`Test expected result:` After few trades, run history command and it should show all data the user needs on trade events 
+    * `Test expected result:` After few trades, run history command and it should show all data the user needs on trade events
 
+* Example 2: 
     * `Test case:` Binance connector
-`Test expected result:` Connecting API and balance should return no error when executed
+    * `Test expected result:` Connecting API and balance should return no error when executed
 
 * `Status:` the client works but some of the functionalities are not working as expected
 
-### Critical
+### P1 (Critical)
 
 * Bug capable of triggering complete system shutdown or can cause a leak of the user private information (i.e. API keys, wallet private keys)
 
@@ -74,72 +86,3 @@ Each bug will be classified according to the following structure:
    - etc..
 
 * `Status:` The client can be either usable or unusable due to functionality issues
-
-
-
-!!! NOTE: The list above are examples for reference. Once the bug is reported, Hummigbot Foundation team will evaluate the severity of the bug through internal testing.
-
-## Rewards allocation Structure
-Community members can request a reward as a ***Bug Finding*** and/or a ***Bug Fix***.
-
-The rewards will be allocated of the following structure
-
-| Bug Severity  | Bug Finding | Bug Fix    | Bug Find + Bug Fix |
-| -----------   | ----------- |---------   |--------------------|
-|Low            | 500 HBOT    | 1500 HBOT  | 2000 HBOT 
-|Medium         | 1000 HBOT   | 3000 HBOT  | 4000 HBOT
-|High           | 5000 HBOT   | 15000 HBOT | 20000 HBOT
-|Critical       | 20000 HBOT  | 80000 HBOT | 100000 HBOT     |
-
-
-
-## Participation Rules
-After all approved PRPs are merged and the `staging` branch is updated as the next Release Candidate, Hummingbot Foundation team will create a thread in [Hummingbot Forum - Releases](https://hummingbot.discourse.group/c/releases/12), detailing what Pull Requests are going into the next release.
-
-Once the `Release Candidate Thread` is created, the Bug Hunt for that release will be active, until the new release deployment on the `main` branch is done. Then, the thread for that release candidate will be closed.
-
-To report a bug and/or a bug fix on the release candidate `staging` branch, the community members must reply to the `“Client release candidate staging branch review active”` thread using the formats below.**
-
-<br>
-
-
-#### **Bug Finding Report**
-
-* **Type:** `Bug Found` 
-
-* **Severity:** <*Add the severity you think this bug should be classified as>*
-
-* **Bug Description:** <*Add a description of the bug*>
-
-* **How to reproduce:** <*Describe the steps to reproduce the bug, with as much details as possible*>
-
-
-***
-
-#### **Bug Fix Report** 
-
-* **Type:** `Bug Fix` <*Add `Bug Found` instead, if the bug wasn’t reported before*>
-
-* **Severity:** <*Add the severity you think this bug should be classified as>*
-
-   `Note: Hummingbot Foundation reserves the right to modify the severity`
-
-* **Bug Description:** <*Add a description of the bug*>
-
-* **Fix PR:**  <*Link to the Pull Request targeting the staging branch*>
-
-* **How to reproduce:** <*Describe the steps to reproduce the bug, with as much details as possible*>
-
-<br>
-
-## Reward payment
-Rewards approved by the Hummingbot Foundation team will be sent to the address used to report on the respective **staging branch review** thread in the forum, after every new release is deployed into the `master` branch.
-
-## Important Notes
-- Bug fixes aimed to the `staging` branch **do not need** to go through a PRP voting
-- Bug fixes reports will only be rewarded if the Foundation QA approves and merges the respective PR
-- Bug findings reports will only be rewarded if Foundation QA is able to reproduce the bug and confirm its existence
-- If a bug report/fix is related to a possible leak of users sensitive information we ask the community to `reach out to the Hummingbot Foundation team` directly before posting a report.
-
-## Budget Allocation
-Allocate **1,000,000** HBOT to reward bug findings and bug fixes for the release candidate
