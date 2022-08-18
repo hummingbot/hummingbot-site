@@ -1,3 +1,9 @@
+## Key Dashboards
+
+<a href="https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52" target="_blank" class="md-button md-button--primary">:fontawesome-solid-chart-line: Hummingbot Reported Volumes</a>
+
+<a href="https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing" target="_blank" class="md-button md-button--primary">:fontawesome-solid-coins: HBOT Tracker</a>
+
 ## Reported Volumes
 
 See [Hummingbot Reported Volumes](./volumes) for a dashboard of the reported trade volumes received by the Hummingbot client, as well as what data points it collects.
