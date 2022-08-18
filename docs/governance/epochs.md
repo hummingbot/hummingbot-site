@@ -13,20 +13,31 @@ The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/pro
 
 | Category                                                                      | Total HBOT Available      | Target Number of Grants |
 | ------------------------------------------------------------------------------| ------------------------- | ----------------------- |
-| [Liquidity Distributions](/governance/proposals/hgp/#liquidity-distributions-ld) | 15,000,000                | 10 platforms             |
-| [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg)               | 10,000,000                | 50 dev grants           |
-| [Initiative Budget](/governance/proposals/hgp/#initiative-budget-ib)     | 5,000,000                 | 5 initiatives           |
+| Liquidity Distributions | 15,000,000                | 10 platforms             |
+| Dev Grant Budget              | 10,000,000                | 50 dev grants           |
+| Initiative Budget     | 5,000,000                 | 5 initiatives           |
 
-### HBOT Guidance
+### Retrospective
 
-In requesting HBOT grants for Hummingbot Improvement Proposals (HIPs) related to a community-approved [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg), developers may need guidance in determining how much HBOT to request for unit of time/effort spent on a given task.
+After Epoch 1, the Foundation conducted a retrospective and recommended a number of improvements to the governance process to make it more community-oriented and efficient:
 
-For Epoch 1, the Hummingbot Foundation believes that **20,000 HBOT for one day of work** is a reasonable amount for an experienced developer to request for a valid HIP. However, developers are free to request more or less than this amount in their proposal.
+* [Epoch 2 proposed governance changes (Part 1)](https://hummingbot.discourse.group/t/epoch-2-proposed-governance-changes-part-1/45/1)
+* [Epoch 2 proposed governance changes (Part 2)](https://hummingbot.discourse.group/t/epoch-2-proposed-governance-changes-part-2/123)
+* [Epoch 2 proposed changes (master thread)](https://hummingbot.discourse.group/t/epoch-2-proposed-changes-master-thread/129)
+
+After discussing these changes with the community in weekly calls, the Foundation proceeded to implement these changes starting in Epoch 2.
 
 ## Epoch 2
 
 - **Start**: August 1, 2022
 - **End**: December 31, 2022
-- **Goal**: Distribute 60 million HBOT tokens
+- **Goal**: Distribute 30 million HBOT tokens
 
-We plan to conduct an open retrospective and strengthen Foundation processes after Epoch 1 before finalizing goals for Epoch 2.
+| Category          | HBOT Allocation |
+| ------------------|-----------------|
+| Dev Grant Budget  | 15,000,000      |
+| Liquidity Distributions | 5,000,000 |
+| Community Work    | 10,000,000      |
+
+Similar to Epoch 1, we plan to conduct an open retrospective and strengthen Foundation processes after Epoch 2.
+

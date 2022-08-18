@@ -1,6 +1,6 @@
 # Hummingbot Foundation Governance
 
-*Posted on December 17, 2021*
+*Originally posted on December 17, 2021, last modified on August 17, 2022*
 
 ## Overview
 The Hummingbot Foundation (the “Foundation”) is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository.
@@ -19,15 +19,15 @@ Below are the core principles that underpin Hummingbot’s development:
 
 ### Ecosystem
 
-The Foundation’s primary role is to coordinate the ongoing maintenance and improvement of the open source Hummingbot codebase via a decentralized set of actors: Sponsors, Contributors, Maintainers, and Users.
+The Hummingbot Foundation’s primary role is to coordinate the ongoing maintenance and improvement of the open source Hummingbot codebase via a decentralized set of actors: **Exchanges**, **Contributors**, and **Users**.
 
-![](/assets/img/foundation-flywheel.webp)
+![](../maintenance/flywheel.png)
 
-* **Sponsors** are crypto exchanges, blockchain protocols, or trading firms who fund bounties to build and maintain Hummingbot components, such as connectors or strategies. Usage of these components benefit sponsors by increasing user adoption, activity, and transaction volume on their respective exchanges and blockchains.
+* **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. See [Certification](./certification) for more information about the certification process.
 
-* **Contributors** and **Maintainers** are individual developers and firms that build Hummingbot components and submit their work as pull requests to the official Github repository. Maintainers, who typically start as contributors, have ongoing responsibilities to maintain the components they build, either for free or for ongoing support fees.
+* **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](./bounties) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
 
-* **Users** are individual and professional traders who install and use the Hummingbot open source software to run trading bots with their own capital. In the Hummingbot configuration, they may elect to report their aggregated, anonymized exchange-level trading volume, which the Foundation may publish.
+* **Users** are individual and professional traders who install and use the Hummingbot open source software, released every month, to run trading bots. The volume they generate on partner exchanges sustains the operations of Hummingbot Foundation.
 
 ### Governance
 
@@ -51,7 +51,7 @@ In order to enable decentralized maintenance and democratic governance of the Hu
 
 ### Sources of funds
 
-#### Connector maintenance agreements
+#### Exchange fee share agreements
 
 Hummingbot exchange connectors integrate with the API of a cryptocurrency exchange in order to expose standardized data format and endpoints to Hummingbot strategies (automated processes that interact with exchange APIs) that are created and configured by Users. Since exchange APIs vary widely, these connectors allow anyone to run bots across multiple exchanges without requiring engineering time on low-level exchange API integrations. 
 
@@ -100,9 +100,9 @@ There will initially be three types of proposals, and each type will have differ
 | Proposal Type           | Pull Request            | Improvement             | Governance              |
 | ----------------------- | ----------------------- | ----------------------- | ----------------------- |
 | Minimum HBOT Balance    | 1                       | 10,000                  | 50,000                  |
-| Quorum Percentage       | 1% of HBOT total supply | 3% of HBOT total supply | 10% of HBOT total supply |
+| Quorum Percentage       | 1% of HBOT circulating supply | 3% of HBOT circulating supply | 10% of HBOT circulating supply |
 | Approval Threshold      | >50% of tokens voted    | >50% of tokens voted    | >50% of tokens voted    |
-| Vote Duration           | 7 days                  | 14 days                 | 14 days                 |
+| Vote Duration           | 7 days                  | 7 days                 | 7 days                 |
 
 HBOT token holdings entitles the holder to an equivalent amount of votes, including any fractional token amounts. 
 
@@ -114,7 +114,7 @@ A Pull Request Proposal (PRP) will be a proposal linked to an open pull request 
 2. Any HBOT holder with at least 1 HBOT voting power creates a PRP in Snapshot linked to the pull request;
 3. The Foundation performs a preliminary review (e.g., for sufficient documentation, adequate unit tests, and the inclusion of developer contact information) and adds the results to the issue;
 4. The community has 7 days to discuss, review, and vote on the PRP;
-5. If at least 1% of total HBOT tokens have voted (either directly or via delegation) and at least 50% of votes approve, the Foundation labels the Github pull request as “approved”;
+5. If at least 1% of the total circulating supply of HBOT tokens have voted (either directly or via delegation) and at least 50% of votes approve, the Foundation labels the Github pull request as “approved”;
 6. The Foundation performs a final review and merges the pull request into the development branch; and
 7. If the pull request is linked to a bounty or grants program, the Foundation directs the sponsor to release funds to the developer and invoices the sponsor for administration fees.
 
@@ -128,8 +128,8 @@ Each IP will go through the process below:
 
 1. A Github issue is created by any community member; 
 2. Any HBOT holder with at least 10,000 HBOT voting power creates an IP in Snapshot linked to the issue;
-3. The community has 14 days to discuss, review, and vote on the IP;
-4. If at least 3% of total HBOT tokens have voted (either directly or via delegation) and at least 50% of votes approve, Foundation labels Github issue as “approved”;
+3. The community has 7 days to discuss, review, and vote on the IP;
+4. If at least 3% of the total circulating supply of HBOT tokens have voted (either directly or via delegation) and at least 50% of votes approve, Foundation labels Github issue as “approved”;
 5. The Foundation assigns the issue to the Maintainer of the affected component, or if there is no Maintainer for the affected component, assigns the issue to a Certified Maintainer or creates a bounty funded by HBOT tokens to incentivize Contributors; and
 6. After the Maintainer or Contributor completes the development work to resolve the IP, they submit a pull request that goes through the Pull Request Proposal process outlined above.
 
@@ -141,8 +141,8 @@ Each GP will go through the process below:
 
 1. A Github issue is created by any community member; 
 2. Any HBOT holder with at least 50,000 HBOT voting power creates a GP in Snapshot linked to the issue;
-The community has 14 days to discuss, review, and vote on the GP;
-3. If at least 10% of total HBOT tokens have voted (either directly or via delegation) and at least 66 2/3% of votes approve, the Foundation labels Github issue as “approved”; and
+The community has 7 days to discuss, review, and vote on the GP;
+3. If at least 10% of the total circulating supply of HBOT tokens have voted (either directly or via delegation) and at least 66 2/3% of votes approve, the Foundation labels Github issue as “approved”; and
 4. The Foundation implements the proposed change or initiative, after which, the Github issue is closed.
 
 Aspects of the Foundation governance system that Governance Proposals may modify will include approval thresholds, quorum thresholds, board of director elections, and Maintainer elections. GPs may not modify the Foundation bylaws, HBOT token distribution and issuance mechanics, or HBOT total supply.
