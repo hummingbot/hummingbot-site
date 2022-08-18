@@ -10,9 +10,9 @@ The severity assigned by Hummingbot Foundation determines the amount for each bo
 
 | Bug Severity  | Bug Fix      |
 | -----------   | ------------ | 
-| P3 (Low)      | 10,000 HBOT |
-| P2 (High)      | 20,000 HBOT |
-| P1 (Critical)  |100,000 HBOT |
+| P3 (Low)      |  10,000 HBOT |
+| P2 (High)      | 50,000 HBOT |
+| P1 (Critical)  | 100,000 HBOT |
 
 Afterwards, the Foundation team member will add a comment to the Github issue stating that a bounty has been created for the issue ("Created 100,000 HBOT bounty for a fix resolving issue X") and add it to the [Bounties board](https://github.com/orgs/hummingbot/projects/7/views/1) under the **Open** column.
 
