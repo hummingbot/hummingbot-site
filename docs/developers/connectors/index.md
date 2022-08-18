@@ -2,6 +2,10 @@
 
 Exchange connectors are packages of code that link Hummingbot's internal trading algorithms with live information from different cryptocurrency exchanges. They interact with a given exchange's API, such as by gathering order book data and sending and cancelling trades.
 
+## CEX Connector Development Checklist
+
+For spot exchanges, we have a **Notion template** available which you can use as a checklist for developing the connector and it should help you understand the main components and functionalities of each class. You can view the template [here](https://hummingbot-foundation.notion.site/CEX-Connector-Development-6506b85ea96a430b8448216b0429cb02)
+
 ## Templates
 
 You can find the existing connectors [here](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector).
