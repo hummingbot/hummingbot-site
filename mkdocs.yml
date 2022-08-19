@@ -135,9 +135,9 @@ nav:
       - Hummingbot Reported Volumes: reporting/volumes.md
     - Maintenance:
       - Maintenance: maintenance/index.md
-      - Releases: maintenance/releases.md
       - Bugs: maintenance/bugs.md
       - Bounties: maintenance/bounties.md
+      - Reviews and Releases: maintenance/releases.md
       - Hackathons: maintenance/hackathons.md
       - Exchange Certification: maintenance/certification.md
     - Governance:

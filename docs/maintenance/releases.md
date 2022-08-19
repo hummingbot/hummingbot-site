@@ -1,4 +1,28 @@
-After a [Pull Request Proposal](/governance/proposals) is approved, the pull request linked to it will go through the following development cycle, coordinated by the Hummingbot Foundation team:
+Changes to the Hummingbot codebase are made through [pull requests](https://github.com/hummingbot/hummingbot/pulls), which undergo a thorough engineering and QA review before they are merged into the codebase, coordinated by the Foundation.
+
+Only the following pull requests will be reviewed:
+
+* [Approved proposals](/governance/proposals): Approved PRPs and pull requests to claim bounties approved by HIPs
+* [Bug fixes](/maintenance/bugs): Fixes to outstanding bugs
+
+## Pull Request Status Board
+
+![](pull-request-board.png)
+
+Hummingbot Foundation maintains a [Github board](https://github.com/orgs/hummingbot/projects/1/views/4) in which you can see the status of all active pull requests, including ongoing PRPs, bug fixes, in review, etc.
+
+## Review Process
+
+While approval via HBOT voting signals that the community wants the fix or improvement to be added into the codebase, pull requests go through a series of automated and manual checks to ensure that the new code:
+* Does not conflict or cause problems with other parts of the codebase
+* Does not introduce security risks
+* Does not contain merge conflicts
+* Contains manual tests, documentation, and meets code quality guidelines
+* Passes automated testing
+
+The Foundation Quality Assurance (QA) and Engineering team members coordinate this process, assisted by members of the community, such as [Technical Review DAO](https://snapshot.org/#/hbot.eth/proposal/0x4480a6868355b8f4ad3dfcfa5d3e8bb043175bb8b250549433e5ba3360af536f).
+
+After a pull request has been approved, it will go through the following development cycle:
 
 ## Branches
 
@@ -17,19 +41,3 @@ All pull requests aiming to be included on the `master` branch must be targeted 
 ### `master`
 
 `master` is the main release branch and contains the latest stable version of the Hummingbot software client and is released once per month.
-
-### Release cadence
-
-Hummingbot ships a new release approximately every month. Each release is built, tested and released over a two-month cycle that overlaps with the next release.
-
-[![Release schedule](/assets/img/pull request proposal period.png)](/assets/img/pull request proposal period.png)
-
-#### Month 1: Review and approve
-
-During the first month, PRPs approved during this period will be scheduled to be added to the next release. Only PRPs approved before the cutoff date will be added.
-
-#### Month 2: Test and release
-
-During the second month, The Foundation team will merge all remaining PRPs that are approved but not yet merged, merge the `development` branch into the `staging` branch, and run all tests needed. 
-
-A new release can happen anytime during Month 2. There is no fixed date for, and it will happen as when all approved pull request are merge and the Foundation QA team signs off the new release.
