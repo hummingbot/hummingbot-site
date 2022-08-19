@@ -20,7 +20,34 @@ Per this [Snapshot poll](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764
 * [HitBTC](/exchanges/hitbtc/)
 * [Huobi](/exchanges/huobi/)
 
-## Process
+
+## Certification Benefits
+
+**Documentation**
+
+* Certified exchanges are featured in the Hummingbot Github code repository, DockerHub image repository, and documentation
+* Certified exchanges are featured within the Hummingbot client software, i.e. `connect` command
+* The Foundation will create and maintain dedicated landing pages and API integration guides for certified exchanges in the Hummingbot website
+* Foundation-created blog posts, YouTube videos, and other content will feature trading strategies on certified exchanges
+
+**Engineering**
+
+* The Foundation will assess and create [bounties](/maintenance/bounties) for bugs on certified exchange connectors
+* The Foundation will create and bounties for improvements, upgrades, and new features related to certified exchanges
+
+**Support & QA**
+
+* Foundation community managers and engineers will prioritize supporting users who need help trading or developing on certified exchanges
+
+* Foundation QA will perform in-depth testing on pull requests related to certified exchanges, versus basic testing on pull requests related to non-certified exchanges
+
+* Foundation QA will run long-term testing bots on certified exchange connectors to pro-actively spot issues
+
+**Partnership**
+
+* Foundation will partner with certified exchanges to promote trading competitions, referral programs, hackathons, developer bootcamps, and other mutually beneficial partnerships to the Hummingbot community.
+
+## Certification Process
 
 ### Requirements
 
@@ -51,28 +78,3 @@ At the beginning of each [Epoch](/governance/epochs), the Foundation will organi
 
 During the Epoch, any HBOT holder may submit an HGP to add or remove an exchange as Certified. If the proposal is approved, the Foundation will make the corresponding adjustments with the following two monthly releases.
 
-### Benefits
-
-**Documentation**
-
-* Certified exchanges are featured in the Hummingbot Github code repository, DockerHub image repository, and documentation
-* Certified exchanges are featured within the Hummingbot client software, i.e. `connect` command
-* The Foundation will create and maintain dedicated landing pages and API integration guides for certified exchanges in the Hummingbot website
-* Foundation-created blog posts, YouTube videos, and other content will feature trading strategies on certified exchanges
-
-**Engineering**
-
-* The Foundation will assess and create [bounties](/maintenance/bounties) for bugs on certified exchange connectors
-* The Foundation will create and bounties for improvements, upgrades, and new features related to certified exchanges
-
-**Support & QA**
-
-* Foundation community managers and engineers will prioritize supporting users who need help trading or developing on certified exchanges
-
-* Foundation QA will perform in-depth testing on pull requests related to certified exchanges, versus basic testing on pull requests related to non-certified exchanges
-
-* Foundation QA will run long-term testing bots on certified exchange connectors to pro-actively spot issues
-
-**Partnership**
-
-* Foundation will partner with certified exchanges to promote trading competitions, referral programs, hackathons, developer bootcamps, and other mutually beneficial partnerships to the Hummingbot community.
