@@ -11,6 +11,7 @@ This enables Hummingbot Foundation to focus its scarce engineering, QA, and supp
 Per this [Snapshot poll](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764d697a106e07fa5a7b6584a418cf5634aa94f4d9a8c5852455f4e) and [related forum topic](https://hummingbot.discourse.group/t/epoch-2-proposal-exchange-certification-program/127), the HBOT community selected the following exchanges to be certified for Epoch 2:
 
 * [Binance](/exchanges/binance/) and [Binance Perpetual](/exchanges/binance-perpetual/)
+* [Kucoin](/exchanges/kucoin/) 
 * [AscendEx](/exchanges/ascend-ex/)
 * [Gate.io](/exchanges/gate-io/)
 * [FTX](/exchanges/ftx/)
