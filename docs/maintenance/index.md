@@ -22,9 +22,9 @@ Hummingbot Foundation maintains a few public artifacts that show the community t
 
 Hummingbot employs a decentralized, community-driven maintenance process. Starting in Epoch 2, the Foundation has adopted a governance system aimed at incentivizing contributions by a decentralized network of community developers, rather than fixed component-specific maintainers.
 
-* [Releases](./releases): How Hummingbot reviews and includes pull requests into official releases
 * [Bugs](./bugs): How Hummingbot assesses bugs and creates bounties to fix them
 * [Bounties](./bounties): Create and earn developer bounties for making improvements to the Hummingbot codebase
+* [Reviews and Releases](./releases): How Hummingbot reviews and includes pull requests into official releases
 * [Hackathons](./hackathons): Hummingbot-related hackathons
 
 ## Exchange certification
