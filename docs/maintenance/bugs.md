@@ -2,7 +2,7 @@
 
 This [Snapshot](https://snapshot.org/#/hbot.eth/proposal/0x1fdb9a1ce7f3198c05711564dccad8dfbe9468078a77bc10647e80c30d49dd64) allocated **1,000,000 HBOT** to a community bug hunt.
 
-Starting in Epoch 2, the Foundation will assign these tokens as bounties to open Github bugs, prioritizing issues related to [Certified](/maintenance/certification) exchanges.
+Starting in Epoch 2, the Foundation will assign these tokens as bounties to open Github bugs, prioritizing issues related to [Certified](/maintenance/certification) exchanges. After the existing bug bounty pool is consumed, the Foundation will propose additional HGPs to allocate more HBOT tokens to replenish the pool.
 
 ## Bug Bounty Schedule
 

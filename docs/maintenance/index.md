@@ -12,19 +12,19 @@ The Hummingbot Foundation’s primary role is to coordinate the ongoing maintena
 
 Hummingbot Foundation maintains a few public artifacts that show the community the status of various bug issues, improvements, and fixes going through the maintenance process:
 
-* [Process Diagram](https://miro.com/app/board/uXjVOoEh6O0=/): A public set of flowcharts maintained by Hummingbot Foundation that explains how the governance and maintenance process works for various types of code contributions, as well as the role played by various stakeholders in the Hummingbot ecosystem.
-
 * [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1): A public Github board for bug fixes and proposed enhancements with development bounties attached to them.
 
 * [Pull Request Status Board](https://github.com/orgs/hummingbot/projects/1): A public Github board for active pull requests that are being voted on, reviewed, and merged.
+
+* [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet listing HBOT distributions related to approved governance and improvement proposals.
 
 ## Processes
 
 Hummingbot employs a decentralized, community-driven maintenance process. Starting in Epoch 2, the Foundation has adopted a governance system aimed at incentivizing contributions by a decentralized network of community developers, rather than fixed component-specific maintainers.
 
-* [Releases](./releases): Learn more about Hummingbot's monthly official releases
-* [Bugs](./bugs): Learn about how Hummingbot Foundation assesses bugs and creates bounties to fix them
+* [Bugs](./bugs): How Hummingbot assesses bugs and creates bounties to fix them
 * [Bounties](./bounties): Create and earn developer bounties for making improvements to the Hummingbot codebase
+* [Reviews and Releases](./releases): How Hummingbot reviews and includes pull requests into official releases
 * [Hackathons](./hackathons): Hummingbot-related hackathons
 
 ## Exchange certification
