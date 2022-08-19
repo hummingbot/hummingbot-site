@@ -135,22 +135,16 @@ nav:
       - Hummingbot Reported Volumes: reporting/volumes.md
     - Maintenance:
       - Maintenance: maintenance/index.md
-      - Active Agreements: maintenance/agreements.md
-      - Active Maintainers: maintenance/maintainers.md
-      - Staging Bug Hunt: maintenance/staging.md
+      - Releases: maintenance/releases.md
+      - Bugs: maintenance/bugs.md
+      - Bounties: maintenance/bounties.md
+      - Hackathons: maintenance/hackathons.md
+      - Exchange Certification: maintenance/certification.md
     - Governance:
       - Governance: governance/index.md
+      - Proposals: governance/proposals.md
+      - Epochs: governance/epochs.md
       - Whitepaper: governance/whitepaper.md
-      - Proposals: 
-        - Proposals: governance/proposals/index.md
-        - Pull Request Proposals (PRP): governance/proposals/prp.md
-        - Hummingbot Improvement Proposals (HIP): governance/proposals/hip.md
-        - Hummingbot Governance Proposals (HGP): governance/proposals/hgp.md
-      - Active Governance Proposals: governance/active.md
-      - Epochs:
-        - Epochs: governance/epochs/index.md
-        - Epoch 1: governance/epochs/epoch1.md
-        - Epoch 2: governance/epochs/epoch2.md
     - News & Updates:
       - News & Updates: news/index.md
       - Hummingbot Foundation Roadmap 2022: news/roadmap-2022.md
