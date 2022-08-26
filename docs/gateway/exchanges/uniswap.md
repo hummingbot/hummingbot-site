@@ -26,6 +26,20 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * [Ethereum](/gateway/chains/ethereum)
 * [Polygon](/gateway/chains/ethereum/#polygon)
 
+## 🕸️ Supported Networks
+
+* [mainnet](/gateway/chains/ethereum/#mainnet-mainnet)
+
+* [kovan](/gateway/chains/ethereum/#kovan-testnet)
+
+* [ropsten](/gateway/chains/ethereum/#ropsten-testnet)
+
+* [arbitrum_one](/gateway/chains/ethereum/#arbitrum)
+
+* [optimism](/gateway/chains/ethereum/#optimism-mainnet)
+
+* [mumbai](/gateway/chains/ethereum/#mumbai-testnet)
+
 ## 👷 Developer
 
 * The `uniswap` connector was added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)
