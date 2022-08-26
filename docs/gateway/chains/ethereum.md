@@ -26,7 +26,7 @@ Below are the Ethereum networks that Gateway currently supports.
 **Default configuration parameters**
 
 * `chainID`: 1
-* `nodeURL`: https://main-rpc.linkpool.io/
+* `nodeURL`: https://rpc.ankr.com/eth
 * `tokenListType`: URL
 * `tokenListSource`: https://wispy-bird-88a7.uniswap.workers.dev/?url=http://tokens.1inch.eth.link 
 * `nativeCurrencySymbol`: ETH
@@ -42,7 +42,7 @@ gateway config ethereum.networks.mainnet.<parameter>
 **Default configuration parameters**
 
 * `chainID`: 3
-* `nodeURL`: https://ropsten.infura.io/v3/ (adjust `nodeURL` to add the RPC URL that includes your Infura API key to use it)
+* `nodeURL`: https://rpc.ankr.com/eth_ropsten
 * `tokenListType`: FILE
 * `tokenListSource`: [Ropsten token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/ethereum/erc20_tokens_ropsten.json)
 * `nativeCurrencySymbol`: ETH
@@ -69,12 +69,44 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.kovan.<parameter>
 ```
 
+### `arbitrum_one` (mainnet)
+
+**Default configuration parameters**
+
+* `chainID`: 42161
+* `nodeURL`: https://rpc.ankr.com/arbitrum
+* `tokenListType`: URL
+* `tokenListSource`: https://bridge.arbitrum.io/token-list-42161.json
+* `nativeCurrencySymbol`: ETH
+* `gasPriceRefreshInterval`: 60
+
+You can adjust these parameters by running the Hummingbot command:
+```
+gateway config ethereum.networks.arbitrum_one.<parameter>
+```
+
+### `arbitrum_rinkeby` (testnet)
+
+**Default configuration parameters**
+
+* `chainID`: 421611
+* `nodeURL`: https://arbitrum-rinkeby.infura.io/v3/ (adjust `nodeURL` to add the RPC URL that includes your Infura API key to use it)
+* `tokenListType`: URL
+* `tokenListSource`: https://bridge.arbitrum.io/token-list-421611.json
+* `nativeCurrencySymbol`: ETH
+* `gasPriceRefreshInterval`: 60
+
+You can adjust these parameters by running the Hummingbot command:
+```
+gateway config ethereum.networks.arbitrum_rinkeby.<parameter>
+```
+
 ### `optimism` (mainnet)
 
 **Default configuration parameters**
 
 * `chainID`: 10
-* `nodeURL`: https://optimism-mainnet.infura.io/v3/ (adjust `nodeURL` to add the RPC URL that includes your Infura API key to use it)
+* `nodeURL`: https://rpc.ankr.com/optimism
 * `tokenListType`: URL
 * `tokenListSource`: https://raw.githubusercontent.com/ethereum-optimism/ethereum-optimism.github.io/master/optimism.tokenlist.json
 * `nativeCurrencySymbol`: ETH
@@ -100,7 +132,7 @@ Below are the Avalanche networks that Gateway currently supports.
 **Default configuration parameters**
 
 * `chainID`: 43114
-* `nodeURL`: https://api.avax.network/ext/bc/C/rpc
+* `nodeURL`: https://rpc.ankr.com/avalanche
 * `tokenListType`: URL
 * `tokenListSource`: https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json
 * `nativeCurrencySymbol`: AVAX
@@ -116,7 +148,7 @@ gateway config avalanche.networks.avalanche.<parameter>
 **Default configuration parameters**
 
 * `chainID`: 43113
-* `nodeURL`: https://api.avax-test.network/ext/bc/C/rpc
+* `nodeURL`: https://rpc.ankr.com/avalanche_fuji
 * `tokenListType`: FILE
 * `tokenListSource`: [Fuji token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/avalanche/avalanche_tokens_fuji.json)
 * `nativeCurrencySymbol`: AVAX
@@ -143,7 +175,7 @@ Below are the Polygon networks that Gateway currently supports.
 **Default configuration parameters**
 
 * `chainID`: 137
-* `nodeURL`: https://polygon-rpc.com
+* `nodeURL`: https://rpc.ankr.com/polygon
 * `tokenListType`: URL
 * `tokenListSource`: https://raw.githubusercontent.com/SetProtocol/uniswap-tokenlist/main/set.polygon.tokenlist.json
 * `nativeCurrencySymbol`: MATIC
@@ -159,7 +191,7 @@ gateway config polygon.networks.mainnet.<parameter>
 **Default configuration parameters**
 
 * `chainID`: 80001
-* `nodeURL`: https://matic-mumbai.chainstacklabs.com
+* `nodeURL`: https://rpc.ankr.com/polygon_mumbai
 * `tokenListType`: FILE
 * `tokenListSource`: [Mumbai token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/polygon/polygon_tokens_mumbai.json)
 * `nativeCurrencySymbol`: MATIC
@@ -174,10 +206,36 @@ gateway config polygon.networks.mumbai.<parameter>
 
 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/harmony)
 
-## Arbitrum
+Below are the Harmony networks that Gateway currently supports.
 
-Coming soon.
+### `mainnet` (mainnet)
 
-## BNB Chain
+**Default configuration parameters**
 
-Coming soon.
+* `chainID`: 1666600000
+* `nodeURL`: https://rpc.ankr.com/harmony
+* `tokenListType`: FILE
+* `tokenListSource`: 'src/chains/harmony/harmony_tokens_sushiswap.json'
+* `nativeCurrencySymbol`: ONE
+* `gasPriceRefreshInterval`: 60
+
+You can adjust these parameters by running the Hummingbot command:
+```
+gateway config harmony.networks.mainnet.<parameter>
+```
+
+### `testnet` (testnet)
+
+**Default configuration parameters**
+
+* `chainID`: 1666700000
+* `nodeURL`: https://api.s0.b.hmny.io
+* `tokenListType`: FILE
+* `tokenListSource`: 'src/chains/harmony/harmony_tokens_sushiswap_testnet.json'
+* `nativeCurrencySymbol`: ONE
+* `gasPriceRefreshInterval`: 60
+
+You can adjust these parameters by running the Hummingbot command:
+```
+gateway config harmony.networks.testnet.<parameter>
+```
