@@ -1,18 +1,21 @@
-# Setting up Gateway V2
+!!! tip
+    Use the [development](https://github.com/hummingbot/hummingbot/tree/development), since Gateway is still new and undergoing active work. Once you have cloned the Hummingbot repo, you can run `git checkout development` to switch to that branch.
 
-Hummingbot Gateway is middleware that allows Hummingbot to connect to decentralized exchanges like Uniswap. You can setup the gateway V2 by following these steps.
 
-The steps to set up Hummingbot to run with Gateway V2 are the same as setting up Hummingbot from source. The only additional thing to do is to check out the [development](https://github.com/hummingbot/hummingbot/tree/development) branch.
+For developers, we recommend installing Hummingbot from source, rather than Docker. This allows you to run Gateway as a standalone server and connect to it from the Hummingbot client. This setup has a few advantages:
+* Makes upgrading to new versions of Hummingbot/Gateway easier
+* Easier access to configuration files
+* Enables multiple client instances to connect to one Gateway instance
 
-Follow the instructions from [Source](https://hummingbot.org/installation/source/). The only additional step is to do:
+First, follow [these instructions](/installation/source/) to install Hummingbot from source on MacOS, Windows, or Linux-based systems. Then, follow the steps below to start a Gateway server and enable the Hummingbot client to communicate with it.
 
-```bash
-git checkout development
+## Generate certs
 
-```
+## Set up Gateway SSL
 
-!!! warning
-    There are small changes made in the Hummingbot client for it to work with gateway-v2 so it's very important to have both the client and the gateway running from the same branch.
+## Run Gateway server
+
+## Connect Hummingbot client
 
 ## Dependencies
 
