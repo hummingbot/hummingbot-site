@@ -1,57 +1,34 @@
-The Hummingbot Foundation’s primary role is to coordinate the ongoing maintenance and improvement of the open source Hummingbot codebase via a decentralized set of actors: Sponsors, Contributors, Maintainers, and Users.
+The Hummingbot Foundation’s primary role is to coordinate the ongoing maintenance and improvement of the open source Hummingbot codebase via a decentralized set of actors: **Exchanges**, **Contributors**, and **Users**.
 
-![](/assets/img/foundation-flywheel.webp)
+![](flywheel.png)
 
-* **Sponsors** are crypto exchanges, blockchain protocols, or trading firms who fund bounties to build and maintain Hummingbot components, such as connectors or strategies. Usage of these components benefit sponsors by increasing user adoption, activity, and transaction volume on their respective exchanges and blockchains.
+* **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. See [Certification](./certification) for more information about the certification process.
 
-* **Contributors** and **Maintainers** are individual developers and firms that build Hummingbot components and submit their work as pull requests to the official Github repository. Maintainers, who typically start as contributors, have ongoing responsibilities to maintain the components they build, either for free or for ongoing support fees.
+* **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](./bounties) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
 
-* **Users** are individual and professional traders who install and use the Hummingbot open source software to run trading bots with their own capital. In the Hummingbot configuration, they may elect to report their aggregated, anonymized exchange-level trading volume, which the Foundation may publish.
+* **Users** are individual and professional traders who install and use the Hummingbot open source software, released every month, to run trading bots. The volume they generate on partner exchanges sustains the operations of Hummingbot Foundation.
 
-## Monthly reporting
+## Key artifacts
 
-To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation will publish a monthly report that lists the sources and uses of funds, starting in February 2022.
+Hummingbot Foundation maintains a few public artifacts that show the community the status of various bug issues, improvements, and fixes going through the maintenance process:
 
-See [Monthly Reports](/reporting) for more information.
+* [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1): A public Github board for bug fixes and proposed enhancements with development bounties attached to them.
 
-## Connector maintenance agreements
+* [Pull Request Status Board](https://github.com/orgs/hummingbot/projects/1): A public Github board for active pull requests that are being voted on, reviewed, and merged.
 
-Hummingbot [exchange connectors](/exchanges) integrate with the API of a cryptocurrency exchange in order to expose standardized data format and endpoints to Hummingbot strategies (automated processes that interact with exchange APIs) that are created and configured by Users. Since exchange APIs vary widely, these connectors allow anyone to run bots across multiple exchanges without requiring engineering time on low-level exchange API integrations.
+* [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet listing HBOT distributions related to approved governance and improvement proposals.
 
-See [Agreements](/maintenance/agreements) for an active list of agreements.
+## Processes
 
-## Bounties, grants, and hackathons
+Hummingbot employs a decentralized, community-driven maintenance process. Starting in Epoch 2, the Foundation has adopted a governance system aimed at incentivizing contributions by a decentralized network of community developers, rather than fixed component-specific maintainers.
 
-The Foundation’s also work with Sponsors seeking to fund specific work items such as new connectors, new strategies, or enhancements or fixes to existing components (bounties), as well as others who want to fund more work in more general areas such as strategies for new assets or exchange types (grants and hackathons).
+* [Bugs](./bugs): How Hummingbot assesses bugs and creates bounties to fix them
+* [Bounties](./bounties): Create and earn developer bounties for making improvements to the Hummingbot codebase
+* [Reviews and Releases](./releases): How Hummingbot reviews and includes pull requests into official releases
+* [Hackathons](./hackathons): Hummingbot-related hackathons
 
-The Foundation will charge Sponsors a fee in order to administer the program and coordinate with developers, and to faciliate the review/merge of the resulting development work.
+## Exchange certification
 
-### dYdX + Hummingbot Bounty Hunt
+Hummingbot users around the world trade billions in volume every day using our open source software. Hummingbot Foundation partners with exchanges who enter into fee share agreements with us and attain certification.
 
-* **Sponsor**: [dYdX](https://dydx.exchange/)
-* **Start date**: Aug 9, 2021
-* **End date**: Oct 1, 2021
-* **Total prize amount**: $15,000 (including tips)
-* **Winners**: https://hummingbot.io/blog/dYdX-Bounty-Winner-Announcement
-
-| Contributor                                        | Contribution                                               | Bounty   | Amount     |
-|----------------------------------------------------|------------------------------------------------------------|--------- | ---------- |
-| [leastchaos](https://github.com/leastchaos)        | [#4121](https://github.com/hummingbot/hummingbot/pull/4121) | Strategy | $10,000    |
-| [cryptoulette](https://twitter.com/cryptoulette)   | [guide](https://docs.google.com/document/d/1CuMFk7DalTUUvpDkzI9-72nC8WFre3CW/edit?usp=sharing&ouid=106910946131072781869&rtpof=true&sd=true) + [video](https://www.youtube.com/watch?v=T1rsNcFD5Cw) | Content | $2,000 |
-
-The winning [`hedge`](/strategies/hedge/) strategy was merged in version [0.45.0](/release-notes/0.45.0/).
-
-### Open DeFi Hackathon
-
-* **Sponsor**: [Open DeFi](https://opendefi.finance/)
-* **Start date**: May 3, 2021
-* **End date**: May 23, 2021
-* **Total prize amount**: $5,000 (including tips)
-* **Winners**: https://hummingbot.io/blog/2021-05-opendefi-hackathon-hummingbot-bounty-winner/
-
-| Contributor                                        | Contribution                                               | Bounty   | Amount     |
-|----------------------------------------------------|------------------------------------------------------------|--------- | ---------- |
-| [squarelover](https://github.com/squarelover)      | [#3430](https://github.com/hummingbot/hummingbot/pull/3430) | Strategy | $2,000     |
-
-The winning [`aroon-oscillator`](/strategies/aroon-oscillator/) strategy was merged in version [0.45.0](/release-notes/0.45.0/).
-
+See [Certification](./certification) for more information about the certification process and its benefits for exchanges and for users.
