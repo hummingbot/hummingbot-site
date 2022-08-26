@@ -251,6 +251,7 @@ nav:
         - Sushiswap: gateway/exchanges/sushiswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
         - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
+        - Openocean: gateway/exchanges/openocean.md
       - CLOB DEXs:
         - CLOB DEXs: gateway/exchanges/clob/index.md
     - Global Configs:
