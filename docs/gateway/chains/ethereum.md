@@ -21,7 +21,7 @@ If you prefer to use a different provider, here are some lists of other provider
 
 Below are the Ethereum networks that Gateway currently supports.
 
-### `mainnet` (mainnet)
+### `mainnet` (mainet)
 
 **Default configuration parameters**
 
@@ -37,7 +37,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.mainnet.<parameter>
 ```
 
-### `ropsten` (testnet)
+### `ropsten` (mainet)
 
 **Default configuration parameters**
 
@@ -69,7 +69,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.kovan.<parameter>
 ```
 
-### `arbitrum_one` (mainnet)
+### `arbitrum_one` (mainet)
 
 **Default configuration parameters**
 
@@ -101,7 +101,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.arbitrum_rinkeby.<parameter>
 ```
 
-### `optimism` (mainnet)
+### `optimism` (mainet)
 
 **Default configuration parameters**
 
@@ -127,7 +127,7 @@ For more information on the public Avalanche RPC endpoints, visit https://docs.a
 
 Below are the Avalanche networks that Gateway currently supports.
 
-### `avalanche` (mainnet)
+### `avalanche` (mainet)
 
 **Default configuration parameters**
 
@@ -170,7 +170,7 @@ For more information on the public Polygon RPC endpoints, visit https://docs.pol
 
 Below are the Polygon networks that Gateway currently supports.
 
-### `mainnet` (mainnet)
+### `mainnet` (Polygon mainnet)
 
 **Default configuration parameters**
 
@@ -208,7 +208,7 @@ gateway config polygon.networks.mumbai.<parameter>
 
 Below are the Harmony networks that Gateway currently supports.
 
-### `mainnet` (mainnet)
+### `mainnet` (mainet)
 
 **Default configuration parameters**
 

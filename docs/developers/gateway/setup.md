@@ -35,9 +35,11 @@ Take note of this folder path, but **do not exit the Hummingbot client** since w
 
 ## 2. Set up Gateway SSL
 
-Next, we will ensure that the Gateway server can access these newly generated certs.
+Next, we will ensure that the Gateway server can access these newly generated certification files.
 
-Open a new Terminal/Bash window. In this window, from the Hummingbot root directory, run the following command to generate the Gateway `conf` folder and populate it with templates, which contains the default configuration parameters for each chain and network.
+Open a new Terminal/Bash window and go to the Hummingbot root directory.
+
+Then, run the following setup script to generate the Gateway `conf` folder and populate it with templates, which contains the default configuration parameters for each chain and network.
 
 ```bash
 
