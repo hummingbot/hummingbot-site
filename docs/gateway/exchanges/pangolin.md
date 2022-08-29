@@ -25,6 +25,12 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 * [Avalanche](/gateway/chains/ethereum/#avalanche)
 
+## 🕸️ Supported Networks
+
+* [fuji](/gateway/chains/ethereum/#fuji-testnet)
+
+* [avalanche](/gateway/chains/ethereum/#avalanche-mainnet)
+
 ## 👷 Developer
 
 Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)

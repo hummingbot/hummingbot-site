@@ -26,6 +26,14 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * [Ethereum](/gateway/chains/ethereum)
 * [Polygon](/gateway/chains/ethereum/#polygon)
 
+## 🕸️ Supported Networks
+
+* [mainnet](/gateway/chains/ethereum/#mainnet-mainnet)
+
+* [kovan](/gateway/chains/ethereum/#kovan-testnet)
+
+* [ropsten](/gateway/chains/ethereum/#ropsten-testnet)
+
 ## 👷 Developer
 
 Added by Faouzijedidi1 in [v1.5.0](/release-notes/1.5.0/)
