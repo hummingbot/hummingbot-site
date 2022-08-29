@@ -184,7 +184,7 @@ Copy and paste individual commands into your terminal to execute the tests accor
 i.e.
 
 ```bash
-curl -s -X GET -k --key $GATEWAY_KEY --cert $GATEWAY_CERT [https://localhost:5000/](https://localhost:500/) | jq
+curl -s -X GET -k --key $GATEWAY_KEY --cert $GATEWAY_CERT https://localhost:5000/ | jq
 ```
 
 Expected Output:
