@@ -246,12 +246,15 @@ nav:
         - Solana: gateway/chains/solana.md
       - AMM DEXs:
         - AMM DEXs: gateway/exchanges/amm/index.md
+        - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
+        - Defira: gateway/exchanges/defira.md
         - Pangolin: gateway/exchanges/pangolin.md
         - Quickswap: gateway/exchanges/quickswap.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
         - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
         - Openocean: gateway/exchanges/openocean.md
+        - Perpetual Protocol: gateway/exchanges/perp.md
       - CLOB DEXs:
         - CLOB DEXs: gateway/exchanges/clob/index.md
     - Global Configs:
