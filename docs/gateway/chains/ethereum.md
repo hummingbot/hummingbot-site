@@ -10,18 +10,9 @@ All chains on this page use the EVM class defined below.
 
 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/ethereum.yml)
 
-For Ethereum, we recommend using Infura for the RPC node provider. Here's a [guide](https://blog.infura.io/post/getting-started-with-infura-28e41844cc89) on using Infura.
-
-If you prefer to use a different provider, here are some lists of other providers. Many of these providers support other EVM-compatible blockchains as well.
-
-* https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/#popular-node-services
-* https://github.com/arddluma/awesome-list-rpc-nodes-providers#ethereum
-* https://ethereumnodes.com
-* https://rpc.info/
-
 Below are the Ethereum networks that Gateway currently supports.
 
-### `mainnet` (mainet)
+### `mainnet` (mainnet)
 
 **Default configuration parameters**
 
@@ -37,7 +28,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.mainnet.<parameter>
 ```
 
-### `ropsten` (mainet)
+### `ropsten` (testnet)
 
 **Default configuration parameters**
 
@@ -69,7 +60,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.kovan.<parameter>
 ```
 
-### `arbitrum_one` (mainet)
+### `arbitrum_one` (mainnet)
 
 **Default configuration parameters**
 
@@ -101,7 +92,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config ethereum.networks.arbitrum_rinkeby.<parameter>
 ```
 
-### `optimism` (mainet)
+### `optimism` (mainnet)
 
 **Default configuration parameters**
 
@@ -123,11 +114,9 @@ gateway config ethereum.networks.optimism.<parameter>
 
 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/avalanche.yml)
 
-For more information on the public Avalanche RPC endpoints, visit https://docs.avax.network/apis/avalanchego/public-api-server.
-
 Below are the Avalanche networks that Gateway currently supports.
 
-### `avalanche` (mainet)
+### `avalanche` (mainnet)
 
 **Default configuration parameters**
 
@@ -206,9 +195,11 @@ gateway config polygon.networks.mumbai.<parameter>
 
 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/harmony)
 
+📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/harmony.yml)
+
 Below are the Harmony networks that Gateway currently supports.
 
-### `mainnet` (mainet)
+### `mainnet` (mainnet)
 
 **Default configuration parameters**
 
