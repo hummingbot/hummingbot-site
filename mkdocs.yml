@@ -320,6 +320,7 @@ nav:
       - Debug Console: developers/debug.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.7.0: release-notes/1.7.0.md
     - 1.6.0: release-notes/1.6.0.md
     - 1.5.0: release-notes/1.5.0.md
     - 1.4.0: release-notes/1.4.0.md
