@@ -20,7 +20,7 @@
 | logo | name | docs (by connector type) | certified | signup code |
 |------|------|:------------------------:|:---------:|-------------|
 | [AltMarkets.io](https://altmarkets.io/) |  [spot](https://hummingbot.org/exchanges/altmarkets/) |
-| <img src="assets/ascendex-logo.jpg" alt="AscendEx" width="90" /> | [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW) | [spot](https://hummingbot.org/exchanges/ascend-ex/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange)
+| [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW) | [spot](https://hummingbot.org/exchanges/ascend-ex/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange)
 | [Beaxy](https://beaxy.com/) |  [spot](https://hummingbot.org/exchanges/beaxy/) | 
 | [Binance](https://www.binance.com/en/register?ref=FQQNNGCD) | [spot](https://hummingbot.org/exchanges/binance/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [FQQNNGCD](https://www.binance.com/en/register?ref=FQQNNGCD)|
 | [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [perps](https://hummingbot.org/exchanges/binance-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) |
@@ -29,7 +29,7 @@
 | [BitMart](https://www.bitmart.com/en?r=UM6fQV) | [spot](https://hummingbot.org/exchanges/bitmart/) | | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
 | [Bittrex Global](https://global.bittrex.com/) | [spot](https://hummingbot.org/exchanges/bittrex/)
 | [Bitmex](https://www.bitmex.com/) | [spot](https://hummingbot.org/exchanges/bitmex/) / [perps](https://hummingbot.org/exchanges/bitmex-perpetual/)
-| <img src="assets/blocktane-logo.jpg" alt="Blocktane" width="90" /> | [Blocktane](https://blocktane.io/) | [spot](https://hummingbot.org/exchanges/blocktane/)
+| [Blocktane](https://blocktane.io/) | [spot](https://hummingbot.org/exchanges/blocktane/)
 | [Bybit](https://www.bybit.com/) | [spot](https://hummingbot.org/exchanges/bybit/) / [perps](https://hummingbot.org/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/)|
 | [Coinbase Pro](https://pro.coinbase.com/) | [spot](https://hummingbot.org/exchanges/coinbase/)
 | [CoinFLEX](https://coinflex.com/) | [spot](https://hummingbot.org/exchanges/coinflex/) / [perps](https://hummingbot.org/exchanges/coinflex-perpetual/)
