@@ -19,7 +19,6 @@
 
 | name | docs (by connector type) | certified | signup code |
 |------|:------------------------:|:---------:|-------------|
-
 | [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [perps](https://hummingbot.org/exchanges/binance-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) ||
 | [Bitmex Perpetual](https://www.bitmex.com/) | [perps](https://hummingbot.org/exchanges/bitmex-perpetual/)
 | [Bybit](https://www.bybit.com/) | [perps](https://hummingbot.org/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/)|
