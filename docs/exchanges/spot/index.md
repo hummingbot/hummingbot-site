@@ -3,7 +3,7 @@
 [Hummingbot's Exchange Certification](https://hummingbot.org/maintenance/certification/) program is a community-driven process that selects certain exchanges in the Hummingbot codebase to be certified. Certified exchanges are clearly differentiated from non-certified exchanges in the Hummingbot client and documentation, get developer bounties to fund bug fixes and improvements, priority support, and other benefits.
 
 | name | docs (by connector type) | certified | signup code |
-|------|------|:------------------------:|:---------:|-------------|
+|------|:------------------------:|:---------:|-------------|
 | [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW) | [spot](https://hummingbot.org/exchanges/ascend-ex/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange)
 | [Binance](https://www.binance.com/en/register?ref=FQQNNGCD) | [spot](https://hummingbot.org/exchanges/binance/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [FQQNNGCD](https://www.binance.com/en/register?ref=FQQNNGCD)|
 | [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [perps](https://hummingbot.org/exchanges/binance-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](https://hummingbot.org/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) |
