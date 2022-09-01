@@ -61,25 +61,29 @@ For example, to change the `nodeURL` for Ethereum mainnet, you can run `gateway 
 
 Click [here](/operation/commands-shortcuts/#gateway-commands) to see the different gateway commands.
 
-## Connecting to a Node Provider
+## Connecting to a node provider
 
-Connecting to a node provider is necessary for Hummingbot to receive and send data to a blockchain network. Alternatively, you can also run your own node client and connect to its RPC URL. This is set by the `nodeURL` configuration parameters for each network.
+Connecting to a node provider is necessary for Hummingbot to receive and send data to a blockchain network. Alternatively, you can also run your own node client and connect to its RPC URL. This is set by the `nodeURL` configuration parameter for each network.
 
-To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported network and automatically connects to it when users connect to a DEX. See the [templates](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/templates) folder for the current defaults.
+To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. The default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account. 
 
-Currently, the default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to enter sign up for an account to use it. For certain networks that Ankr doesn't support, the default `nodeURL` may be an [Infura](https://infura.io/) endpoint, which users need to configure with their Infura key to use (see **Changing Gateway configuration**)
+For certain testnet or other networks that Ankr doesn't support, the default `nodeURL` may be an alternate public endpoint, or in certain cases, an [Infura](https://infura.io/) endpoint, which users need to configure with their Infura key to use (see **Changing Gateway configuration**).
 
-For a list of the default `nodeURL` for each chain/network and how to adjust them, visit [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
+For a list of the default parameters including `nodeURL` for each chain/network, see [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
 
 ## Working with Token Lists
 
-When trading across different blockchains, it's very important to understand how symbols map to addresses for each chain/network. In Hummingbot, each chain/network defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL), which uses the [Token Lists](https://tokenlists.org/) standard to define a token dictionary for each network. See the [templates](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/templates) folder for how each network specifies its token list. 
+When trading across different blockchains, it's very important to understand how symbols map to addresses for each chain/network. In Hummingbot, each chain/network defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL), which uses the [Token Lists](https://tokenlists.org/) standard to define a token dictionary for each network.
 
 You can edit the `tokenListType` and `tokenListSource` parameters for each network by running `gateway config` (see **Changing Gateway configuration**)
 
-## Adding Tokens to Gateway
+For a list of the default parameters including `tokenListType` and `tokenListSource` for each chain/network, see [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
 
-To have the `balances` command report balances for a specific token, you can run:
+## Adding tokens to `balance`
+
+To have the `balance` command report balances for a specific token symbol, use the `gateway connector-tokens` command.
+
+For instance, you can run the following command from the Hummingbot client:
 
 ```bash
 # format: gateway connector-tokens [connector_chain_network] [symbol]
@@ -93,3 +97,9 @@ The 'balance' command will now report token balances UNI for 'uniswap_ethereum_m
 Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
 
 Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
+
+## Auto-approval
+
+On Ethereum and EVM-compatible chains, wallets need to [approve](https://help.matcha.xyz/en/articles/4285134-why-do-i-need-to-approve-my-tokens-before-i-can-trade-them) other addresses such as DEXs before they can send tokens to them, creating an allowance.
+
+When you start a strategy that interacts with a DEX connector, Hummingbot will automatically send an `approve` transaction for the DEX from your wallet, if your wallet does not have an existing allowance with the DEX contract. Hummingbot will wait for the `allowance` to be created before starting the strategy.
