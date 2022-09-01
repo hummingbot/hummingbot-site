@@ -12,9 +12,12 @@ tags:
 
 Also referred to as **liquidity mirroring** or **exchange remarketing**, this strategy allows you to make a market (creates buy and sell orders) on the `maker` exchange, while hedging any filled trades on a second, `taker` exchange. The strategy attempts places maker orders at spreads that are wider than taker orders by a spread equal to `min_profitability`.
 
+Starting with the [1.7.0](/release-notes/1.7.0) release, this strategy now supports decentralized exchanges as the taker exchange. Follow the steps [here](/gateway/setup) to setup gateway and connect to a decentralized exchange. 
+
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
+* [`spot` exchanges](/exchanges/spot)
+* [`amm` exchanges](/gateway/exchanges/amm/)
 
 ## 👷 Maintenance
 
@@ -42,10 +45,12 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 | `order_size_taker_volume_factor`| decimal  | 25          | False       | What percentage of hedge-able volume would you like to be traded on the taker market?|
 | `order_size_taker_balance_factor`| decimal | 99.5        | False       | What percentage of asset balance would you like to use for hedging trades on the taker market?|
 | `order_size_portfolio_ratio_limit`| decimal| 16.67       | False       | What ratio of your total portfolio value would you like to trade on the maker and taker markets?|
-| `use_oracle_conversion_rate` | bool        | True        | False       | Do you want to use rate oracle on unmatched trading pairs?|
+| `conversion_rate_mode` | string        |         | True       | Select the conversion rate mode (rate_oracle_conversion_rate/fixed_conversion_rate)|
 | `taker_to_maker_base_conversion_rate`| decimal | 1       | False       | What percentage of asset balance would you like to use for hedging trades on the taker market?|
 | `taker_to_maker_quote_conversion_rate`| decimal | 1      | False       | What percentage of asset balance would you like to use for hedging trades on the maker market?|
 | `slippage_buffer`            | decimal     | 5           | True        | How much buffer do you want to add to the price to account for slippage for taker orders?  |
+| `debug_price_shim`            | bool     | False           | False        | Do you want to enable the debug price shim for integration tests? If you don't know what this does you should keep it disabled.  |
+| `gateway_transaction_cancel_interval`            | decimal     | 600           | True        | After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds)  |
 
 ## 📓 Description
 
