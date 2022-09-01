@@ -199,7 +199,7 @@ gateway config polygon.networks.mumbai.<parameter>
 
 Below are the Harmony networks that Gateway currently supports.
 
-### `mainnet` (mainnet)
+### `mainnet` (Harmony mainnet)
 
 **Default configuration parameters**
 
@@ -215,7 +215,7 @@ You can adjust these parameters by running the Hummingbot command:
 gateway config harmony.networks.mainnet.<parameter>
 ```
 
-### `testnet` (testnet)
+### `testnet` (Harmony testnet)
 
 **Default configuration parameters**
 

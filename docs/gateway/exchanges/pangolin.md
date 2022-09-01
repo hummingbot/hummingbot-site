@@ -23,7 +23,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: <https://github.com/pangolindex/sdk>
 * FAQ: <https://pangolin.exchange/faq/>
 
-## 🕸️ Supported Chains Networks
+## 🕸️ Supported Chains and Networks
 
 ### Avalanche
 * [avalanche](/gateway/chains/ethereum/#avalanche-mainnet)

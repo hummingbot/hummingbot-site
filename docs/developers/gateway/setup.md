@@ -154,32 +154,16 @@ This sets the wallet used for trades on that DEX for that specific chain/network
 
 Now, when you exit and restart Hummingbot, it should automatically detect whether Gateway is running and connect to it.
 
-
-## Additional tips
-
-### Configuring Gateway
+## Configuring Gateway
 
 The `gateway/conf` folder contains the configuration parameters for the various DEXs, chains, and networks. You can modify them either by changing each file, or by running the `gateway config` command from within Hummingbot.
 
-### Testing using `curl`
+## API Interfaces
 
-Certain manual tests are defined in the `gateway/manual-tests/curl.sh` file. To run them, ensure that you have `curl` installed in your system.
+Gateway automatically starts a Swagger API server running on [port 8080](http://127.0.0.1:8080). This shows you the routes available and their request parameter / response models.
 
-Initialize environment variables that use the certs folder path from Step 1 to define access to Gateway. Then, copy and paste individual commands into your Terminal to execute the tests accordingly:
+In addition, see [API Interfaces](/developers/gateway/api-interface) for a summary of the key routes that each DEX connector supports.
 
-```bash
-# Replace the path with the certs folder path from Step 1
-export GATEWAY_CERT="/Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8//certs/client_cert.pem"
-export GATEWAY_KEY="/Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8//certs/client_key.pem"
+## Testing Gateway
 
-curl -s -X GET -k --key $GATEWAY_KEY --cert $GATEWAY_CERT https://localhost:5000/ | jq
-```
-
-Expected Output:
-
-```json
->>>>>>> a5139afa185dab7e19e06b5b4bcb31b1a352ee02
-{
-  "status": "ok"
-}
-```
+See [Testing](/developers/gateway/testing) for more information about how to run tests for Gateway connectors.

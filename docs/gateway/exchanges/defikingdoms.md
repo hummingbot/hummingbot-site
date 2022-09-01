@@ -12,20 +12,21 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defikingdoms)
 
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/defikingdoms.yml)
+
 ## ℹ️ Exchange Info
 
 **Defi Kingdoms**
 [Website](https://defikingdoms.com/) | [CoinMarketCap](https://coinmarketcap.com/currencies/defi-kingdoms/) | [CoinGecko](https://www.coingecko.com/en/coins/defi-kingdoms)
 
-* API docs: <https://devs.defikingdoms.com/>
+* API docs: <https://docs.defikingdoms.com/>
 * SDK: <https://github.com/DefiKingdoms/sdk>
-* DOC: <https://docs.defikingdoms.com/>
 
 ## 🕸️ Supported Chains and Networks
 
 ### Harmony
 
-* [mainnet](/gateway/chains/ethereum/#mainnet-mainet_1)
+* [mainnet](/gateway/chains/ethereum/#mainnet-harmony-mainnet)
 
 ## 🔑 Setup
 

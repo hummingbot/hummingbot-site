@@ -1,7 +1,20 @@
-| Exchange                                         | Website                                      | Signup                          | Status                                               | Issues                           |
-| ------------------------------------------------ | -------------------------------------------- | --------------------------------- | ---------------------------------------------------- | -------------------------------- |
-| [Binance Futures](/exchanges/binance-perpetual)  | [binance.com/futures](https://www.binance.com/en/futures/ref/hummingbot)           | [![referral](https://img.shields.io/badge/referral-hummingbot-lightgrey)](https://www.binance.com/en/futures/ref/hummingbot)    | <span style="color:yellow; font-size:25px">⬤</span> | Connector has one or more reported issues. Search for [outstanding issues](https://github.com/hummingbot/hummingbot/labels/binance_perpetual) related to this exchange.  |
-| [Bitmex Perpetual](/exchanges/bitmex-perpetual)              | [bitmex.com](https://bitmex.com)    |                                   | <span style="color:yellow; font-size:25px">⬤</span> | Connector appears to be working properly.    |
-| [Bybit](/exchanges/bybit-perpetual)              | [bybit.com](https://www.bybit.com/en-US/)    |                                   | <span style="color:yellow; font-size:25px">⬤</span> | Connector appears to be working properly.    |
-| [CoinFLEX](/exchanges/coinflex-perpetual)              | [coinflex.com](https://coinflex.com/)    |                                   | <span style="color:yellow; font-size:25px">⬤</span> | Connector appears to be working properly.    |
-| [dYdX](/exchanges/dydx-perpetual)      | [dydx.exchange](https://dydx.exchange/)      |               | <span style="color:yellow; font-size:25px">⬤</span> | Connector has one or more reported issues. Search for [outstanding issues](https://github.com/hummingbot/hummingbot/labels/dydx_perpetual) related to this exchange.    |
+In Hummingbot, `perp` connectors integrate with central limit order book (CLOB) exchanges that trade perpetual futures markets.
+
+## Certified Perpetual Futures Exchanges
+
+[Hummingbot's Exchange Certification](/maintenance/certification/) program is a community-driven process that selects certain exchanges in the Hummingbot codebase to be certified. Certified exchanges are clearly differentiated from non-certified exchanges in the Hummingbot client and documentation, get developer bounties to fund bug fixes and improvements, priority support, and other benefits.
+
+| name | docs (by connector type) | certified | signup code |
+|------|:------------------------:|:---------:|-------------|
+| [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [spot](/exchanges/binance/) / [perp](/exchanges/binance-perpetual) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) |
+| [Bybit](https://www.bybit.com/) | [spot](/exchanges/bybit/) / [perp](/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)|
+
+## Supported Perpetual Futures Exchanges
+
+| name | docs (by connector type) | certified | signup code |
+|------|:------------------------:|:---------:|-------------|
+| [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [perp](/exchanges/binance-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) ||
+| [Bitmex](https://www.bitmex.com/) | [spot](/exchanges/bitmex) / [perp](/exchanges/bitmex-perpetual/)
+| [Bybit](https://www.bybit.com/) | [spot](/exchanges/bybit/) / [perp](/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)|
+| [CoinFLEX](https://coinflex.com/) | [spot](/exchanges/coinflex) / [perp](/exchanges/coinflex-perpetual/)
+| [dYdX Perpetual](https://dydx.exchange/) | [perp](/exchanges/dydx-perpetual/)

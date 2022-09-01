@@ -48,12 +48,10 @@ See [CLOB DEXs](./exchanges/clob) for a list of currently supported venues.
 * [Ethereum and EVM Chains](./chains/ethereum)
 * [Solana](./chains/solana) (In progress)
 
-## Adding Gateway Connectors
+## Building Gateway Connectors
 
-### Developer Tutorial
-
-See [Building Gateway Connectors](/developers/gateway/building-gateway-connectors/) for a step-by-step guide for adding a connector to a Uniswap-like AMM on an EVM-compatible chain).
-
-### API Interfaces
-
-See [Developers - Gateway API Interfaces](/developers/gateway/api-interface/) for the standard API endpoints that each DEX type supports.
+* [Setup](/developers/gateway/setup): Install and configure Gateway from a developer's standpoint
+* [Testing](/developers/gateway/testing): How to test Gateway connectors
+* [Gateway API Interfaces](/developers/gateway/api-interface): API interfaces for different DEX types supported by Gateway
+* [Building Gateway Connectors](/developers/gateway/building-gateway-connectors): Step-by-step guide to adding DEX connectors to Gateway
+* [Running AMM-ARB with Gateway](/developers/gateway/running-amm-arb): Developer-oriented tutorial that shows you how to test out the [`amm-arb`](/strategies/amm-arbitrage) strategy with Gateway

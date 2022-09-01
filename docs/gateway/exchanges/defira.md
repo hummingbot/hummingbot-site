@@ -6,27 +6,27 @@ tags:
 
 # `defira`
 
-The Defi Kingdoms connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+The Defira connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
 
 It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defira)
+
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/defira.yml)
 
 ## ℹ️ Exchange Info
 
 **Defira**
 [Website](https://defira.com/) | [CoinMarketCap](https://coinmarketcap.com/currencies/defira/) | [CoinGecko](https://www.coingecko.com/en/coins/fira)
 
-* API docs:
-* SDK:
-* DOC: <https://docs.defira.com/>
+* API docs: <https://docs.defira.com/>
 
 ## 🕸️ Supported Chains and Networks
 
 ### Harmony
 
-* [mainnet](/gateway/chains/ethereum/#mainnet-mainet_1)
-* [testnet](/gateway/chains/ethereum/#testnet-testnet)
+* [mainnet](/gateway/chains/ethereum/#mainnet-harmony-mainnet)
+* [testnet](/gateway/chains/ethereum/#testnet-harmony-testnet)
 
 ## 🔑 Setup
 

@@ -6,11 +6,13 @@ tags:
 
 # `Perpetual Protocol`
 
-The Defi Kingdoms connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+The Perpetual Protocol connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+It interfaces with the [`GatewayEVMPerpetual`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_Perpetual.py) class in the Hummingbot client, which is responsible for interfacing with EVM-based perpetual AMMs.
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/perp)
+
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/perp.yml)
 
 ## ℹ️ Exchange Info
 

@@ -10,17 +10,11 @@ Hummingbot exchange connectors try to standardize trading logic and order types 
 !!! note "DEX support"
     Hummingbot connects to both centralized and decentralized exchanges (DEX). Certain DEX connectors like dYdX and Loopring are in the primary Hummingbot codebase, while other DEX connectors like Uniswap are in Gateway. See [Gateway](/gateway) for a list of those exchanges.
 
-## Status
+## Connector certification
 
-Connectors may vary in quality. The Hummingbot Foundation QA team keeps a rough indicator of each connector's working status:
+Since Hummingbot is an open source codebase, connectors vary in quality and level of updates. To maintain a higher standard of quality for a subset of connectors, Hummingbot Foundation utilizes the [Exchange Certification](/maintenance/certification) program to allow the community to vote for which connectors the Foundation focuses its time/effort on maintaining.
 
-* <span style="color:green; font-size:20px">⬤</span> Connector appears to be working properly.
-* <span style="color:yellow; font-size:20px">⬤</span> Connector has one or more reported issues. Search for [outstanding issues](https://github.com/hummingbot/hummingbot/issues) related to this exchange.
-* <span style="color:red; font-size:20px">⬤</span> Connector does not seem to work.
-
-## Maintainer
-
-Connector maintainers are responsible for fixing bugs and updating the connector when the exchange API or the Hummingbot connector spec changes.
+In addition, the Foundation will prioritize creating [bug bounties](/maintenance/bounties) for bugs related to certified exchanges and work with each certified exchange on partnerships to promote usage of their connectors.
 
 ## Adding connectors
 
