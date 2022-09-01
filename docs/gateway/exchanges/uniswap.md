@@ -8,9 +8,13 @@ tags:
 
 The Uniswap connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with EVM-based AMMs.
+
+In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with liquidity provision-related functions in EVM-based AMMs.
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/uniswap)
+
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/uniswap.yml)
 
 ## ℹ️ Exchange Info
 
@@ -21,10 +25,18 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: <https://docs.uniswap.org/sdk/introduction>
 * Fees: <https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees>
 
-## 🔗 Supported Chains
+## 🕸️ Supported Chains and Networks
 
-* [Ethereum](/gateway/chains/ethereum)
-* [Polygon](/gateway/chains/ethereum/#polygon)
+### Ethereum
+* [mainnet](/gateway/chains/ethereum/#mainnet-mainnet)
+* [kovan](/gateway/chains/ethereum/#kovan-testnet)
+* [ropsten](/gateway/chains/ethereum/#ropsten-testnet)
+* [arbitrum_one](/gateway/chains/ethereum/#arbitrum)
+* [optimism](/gateway/chains/ethereum/#optimism-mainnet)
+
+### Polygon
+* [mainnet](/gateway/chains/ethereum/#mainnet-polygon-mainnet)
+* [mumbai](/gateway/chains/ethereum/#mumbai-testnet)
 
 ## 👷 Developer
 

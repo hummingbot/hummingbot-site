@@ -12,6 +12,9 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/sushiswap)
 
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/sushiswap.yml)
+
+
 ## ℹ️ Exchange Info
 
 **Sushiswap**
@@ -21,10 +24,12 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: <https://github.com/sushiswap/sdk>
 * FAQ: <https://docs.sushi.com/docs/FAQ/General%20FAQ>
 
-## 🔗 Supported Chains
+## 🕸️ Supported Chains and Networks
 
-* [Ethereum](/gateway/chains/ethereum)
-* [Polygon](/gateway/chains/ethereum/#polygon)
+### Ethereum
+* [mainnet](/gateway/chains/ethereum/#mainnet-mainnet)
+* [kovan](/gateway/chains/ethereum/#kovan-testnet)
+* [ropsten](/gateway/chains/ethereum/#ropsten-testnet)
 
 ## 👷 Developer
 

@@ -12,6 +12,8 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/pangolin)
 
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/pangolin.yml)
+
 ## ℹ️ Exchange Info
 
 **Pangolin**
@@ -21,9 +23,11 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: <https://github.com/pangolindex/sdk>
 * FAQ: <https://pangolin.exchange/faq/>
 
-## 🔗 Supported Chains
+## 🕸️ Supported Chains and Networks
 
-* [Avalanche](/gateway/chains/ethereum/#avalanche)
+### Avalanche
+* [avalanche](/gateway/chains/ethereum/#avalanche-mainnet)
+* [fuji](/gateway/chains/ethereum/#fuji-testnet)
 
 ## 👷 Developer
 

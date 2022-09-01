@@ -12,19 +12,21 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/openocean)
 
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/openocean.yml)
 
 ## ℹ️ Exchange Info
 
 **Openocean**
 [Website](https://openocean.finance/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/openocean/) | [CoinGecko](https://www.coingecko.com/en/exchanges/openocean_finance)
 
-* API docs: https://github.com/openocean-finance/openocean-api
-* SDK: https://github.com/openocean-finance/openocean-api-sdk
-* DOC: https://docs.openocean.finance/
+* API docs: <https://github.com/openocean-finance/openocean-api>
+* SDK: <https://github.com/openocean-finance/openocean-api-sdk>
+* DOC: <https://docs.openocean.finance/>
 
-## 🔗 Supported Chains
+## 🕸️ Supported Chains and Networks
 
-* [Avalanche](/gateway/chains/ethereum/#avalanche)
+### Avalanche
+* [avalanche](/gateway/chains/ethereum/#avalanche-mainnet)
 
 ## 🔑 Setup
 

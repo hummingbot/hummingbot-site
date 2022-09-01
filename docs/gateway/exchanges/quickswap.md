@@ -12,6 +12,8 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
 
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/quickswap.yml)
+
 ## ℹ️ Exchange Info
 
 **Quickswap**
@@ -21,9 +23,11 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: <https://docs.quickswap.exchange/guides/javascript-sdk/01-quick-start>
 * FAQ: <https://docs.quickswap.exchange/>
 
-## 🔗 Supported Chains
+## 🕸️ Supported Chains and Networks
 
-* [Polygon](/gateway/chains/ethereum/#polygon)
+### Polygon
+* [mainnet](/gateway/chains/ethereum/#mainnet-polygon-mainnet)
+* [mumbai](/gateway/chains/ethereum/#mumbai-testnet)
 
 ## 👷 Developer
 

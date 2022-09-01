@@ -12,6 +12,8 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/traderjoe)
 
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/traderjoe.yml)
+
 ## ℹ️ Exchange Info
 
 **TraderJoe**
@@ -21,9 +23,11 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: <https://github.com/traderjoe-xyz/joe-sdk>
 * FAQ: <https://docs.traderjoexyz.com/en/welcome/faq-and-help>
 
-## 🔗 Supported Chains
+## 🕸️ Supported Chains and Networks
 
-* [Avalanche](/gateway/chains/ethereum/#avalanche)
+### Avalanche
+* [avalanche](/gateway/chains/ethereum/#avalanche-mainnet)
+* [fuji](/gateway/chains/ethereum/#fuji-testnet)
 
 ## 👷 Developer
 
