@@ -12,9 +12,15 @@ You can click the **OK** button on the welcome screen or you can press **TAB** t
 
 ![](/assets/img/welcome.gif)
 
-## Deleting a password
+## Reset the Hummingbot password
 
-Passwords and private keys are saved as encrypted files in `hummingbot_conf` (via Docker and binary) or `/conf` directory (installed from source).
+Delete the `.password_verification` file located under the `hummingbot_conf` folder (for Docker) or `/conf` folder (for Source install). 
+
+The file is hidden by default so make sure you use the command `ls -a` in the terminal to show all files including hidden ones. 
+
+### For versions 1.6.0 and below
+
+In the older versions the passwords and private keys are saved as encrypted files in `hummingbot_conf` (via Docker and binary) or `/conf` directory (installed from source).
 
 To reset your password, delete all files starting with `encrypted_` prefix.
 
