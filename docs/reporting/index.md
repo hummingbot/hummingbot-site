@@ -16,6 +16,7 @@ To give the Hummingbot community transparency into the operations of the Humming
 * HBOT token distributions and treasury operations
 * Reported trade volume from Hummingbot clients by exchange
 
+[July 2022](https://hummingbot-foundation.notion.site/July-2022-05c6709e18a347f3abd7e50a18127b5e)
 
 [June 2022](https://hummingbot-foundation.notion.site/June-2022-0d6e7b3ac3724a7eb5a9c4f6b1901345)
 
