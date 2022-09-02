@@ -26,7 +26,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 ## 🕸️ Supported Chains and Networks
 
 ### Avalanche
-* [avalanche](/gateway/chains/ethereum.md#avalanche)
+* [avalanche](/gateway/chains/ethereum/#avalanche)
 
 ## 🔑 Setup
 
