@@ -1,7 +1,7 @@
 ---
 tags:
 - amm exchange connector
-- avalanche dex
+- dex aggregator
 ---
 
 # `openocean`
