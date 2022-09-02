@@ -20,7 +20,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 [Website](https://openocean.finance/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/openocean/) | [CoinGecko](https://www.coingecko.com/en/exchanges/openocean_finance)
 
 * API docs: <https://github.com/openocean-finance/openocean-api>
-* SDK: <https://github.com/openocean-finance/openocean-api-sdk>
+* SDK: <https://docs.openocean.finance/dev/openocean-sdk>
 * DOC: <https://docs.openocean.finance/>
 
 ## 🕸️ Supported Chains and Networks
