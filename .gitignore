@@ -132,3 +132,6 @@ dmypy.json
 
 # Netlify plugins
 node_modules
+
+#Jetbrains tools
+.idea/
