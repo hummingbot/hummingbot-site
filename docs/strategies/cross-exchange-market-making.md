@@ -66,6 +66,8 @@ The cross exchange market making strategy performs market making trades between 
 
 In Hummingbot code and documentation, we usually refer to the less liquid market as the "maker side" - since the cross exchange market making strategy is providing liquidity there. We then refer to the more liquid market as the "taker side" - since the strategy is taking liquidity there.
 
+The startegy currently supports centralized exchanges on the maker side and centralized and decentralized exchanges on the taker side. Decentralized exchanges are accessed through the hummingbot gateway.
+
 The cross exchange market making strategy's code is divided into two major parts:
 
  1. Order creation and adjustment
@@ -75,6 +77,10 @@ The cross exchange market making strategy's code is divided into two major parts
  2. Hedging order fills
 
     Performs the opposite, hedging trade on the taker side, whenever a maker order has been filled.
+
+# Live Configuration
+
+The strategy now supports live configuration. That means any changes in configuration by the user are immediately taken into account by the strategy without a need for it to be restarted.
 
 ### Order Creation and Adjustment
 
@@ -154,6 +160,14 @@ The cross exchange market making strategy would always immediately hedge any ord
 ![Figure 4: Hedging order fills flow chart](/assets/img/xemm-flowchart-4.svg)
 
 The logic of the hedging order fill flow can be found in the function `c_did_fill_order()` and `c_check_and_hedge_orders()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+
+### Decentralized Exchanges (Gateway)
+
+Decentralized exchanges have several peculiarities compared to centralized exchanges, which must be accounted for if selected on the taker side.
+For starters, in general interaction with them is less reliable. Unlike in case of centralized exchanges, for example obtaining an asset price from a DEX may occasionally fail. For this reason many operations on a DEX may have to be repeated until they're executed successfully.
+
+Another difference is dependence of transaction fees on currrent gas fees. Therefore taker transaction fees may vary and therefore also position profitability checks performed in the method `check_if_still_profitable()` may return different results at different times for the same maker positions.
+
 
 ## ℹ️ More Resources
 
