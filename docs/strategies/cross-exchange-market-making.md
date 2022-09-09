@@ -78,7 +78,7 @@ The cross exchange market making strategy's code is divided into two major parts
 
     Performs the opposite, hedging trade on the taker side, whenever a maker order has been filled.
 
-# Live Configuration
+### Live Configuration
 
 The strategy now supports live configuration. That means any changes in configuration by the user are immediately taken into account by the strategy without a need for it to be restarted.
 
