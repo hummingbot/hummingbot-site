@@ -8,13 +8,13 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 * **Symbol**: HBOT
 * **Total Supply**: 1,000,000,000
 
-For minimum quorum purposes (See [Proposals](/governance/proposals)), the HBOT circulating supply is updated at the end of every month. See [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for how the circulating supply is derived.
+For minimum quorum purposes (See [Proposals](/governance/proposals)), the HBOT circulating supply is updated monthly. See [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for how the circulating supply is derived.
 
-| Date Updated           | 2022-07-31     |
+| Date Updated           | 2022-09-09     |
 |------------------------|----------------|
-| Circulating Supply     | 51,147,370     |
-| Minimum Quorum (HGP)   | 5,114,737      |
-| Minimum Quorum (HIP)   | 1,534,421      |
+| Circulating Supply     | 64,468,803     |
+| Minimum Quorum (HGP)   | 6,446,880      |
+| Minimum Quorum (HIP)   | 1,934,064      |
 
 ## Purpose
 
