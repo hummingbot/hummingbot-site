@@ -23,9 +23,9 @@ The Hummingbot Foundation’s primary role is to coordinate the ongoing maintena
 
 ![](../maintenance/flywheel.png)
 
-* **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. See [Certification](/docs/maintenance/certification/) for more information about the certification process.
+* **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. See [Certification](/maintenance/certification/) for more information about the certification process.
 
-* **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](/docs/maintenance/bounties/) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
+* **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](/maintenance/bounties/) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
 
 * **Users** are individual and professional traders who install and use the Hummingbot open source software, released every month, to run trading bots. The volume they generate on partner exchanges sustains the operations of Hummingbot Foundation.
 
