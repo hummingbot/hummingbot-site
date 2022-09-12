@@ -1,15 +1,15 @@
-![StrategyBase class relations](/assets/img/strategy-uml.svg)
+[![StrategyBase class relations](/assets/img/strategy-uml.svg)](/assets/img/strategy-uml.svg)
 
-All strategy classes are derived from the [`StrategyBase`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class, which is derived from the [`TimeIterator`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class.
+All strategy classes are derived from the [`StrategyBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class, which is derived from the [`TimeIterator`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class.
 
 
-The concrete strategy classes included with Hummingbot, including [`ArbitrageStrategy`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx), [`CrossExchangeMarketMakingStrategy`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx), and [`PureMarketMakingStrategy`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx) - are all child classes of `StrategyBase`.
+The concrete strategy classes included with Hummingbot, including [`ArbitrageStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx), [`CrossExchangeMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx), and [`PureMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx) - are all child classes of `StrategyBase`.
 
-Each `StrategyBase` object may be managing multiple [`ConnectorBase`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector_base.pyx) and [`WalletBase`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/wallet/wallet_base.pyx) objects.
+Each `StrategyBase` object may be managing multiple [`ConnectorBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx) and [`WalletBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/wallet/wallet_base.pyx) objects.
 
 ## How It Works
 
-All strategy modules are child classes of [`TimeIterator`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/time_iterator.pyx), which is called via `c_tick()` every second.
+All strategy modules are child classes of [`TimeIterator`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/time_iterator.pyx), which is called via `c_tick()` every second.
 
 What this means is, a running strategy module is called every second via its `c_tick()` method to check on the markets and wallets, and decide whether it should perform any trades or not. One way to think about it is that a strategy module acts like it's watching a movie frame-by-frame via `c_tick()`, and reacts to what it sees in real time via trading actions.
 
@@ -39,35 +39,35 @@ The event interface functions are as follows:
 
 - `cdef c_did_create_buy_order(self, object order_created_event)`
 
-    A buy order has been created. Argument is a [`BuyOrderCreatedEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    A buy order has been created. Argument is a [`BuyOrderCreatedEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_create_sell_order(self, object order_created_event)`
 
-    A sell order has been created. Argument is a [`SellOrderCreatedEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    A sell order has been created. Argument is a [`SellOrderCreatedEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_fill_order(self, object order_filled_event)`
 
-    An order has been filled in the market. Argument is a [`OrderFilledEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    An order has been filled in the market. Argument is a [`OrderFilledEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_fail_order(self, object order_failed_event)`
 
-    An order has failed in the market. Argument is a [`MarketOrderFailureEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    An order has failed in the market. Argument is a [`MarketOrderFailureEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_cancel_order(self, object cancelled_event)`
 
-    An order has been cancelled. Argument is a [`OrderCancelledEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    An order has been cancelled. Argument is a [`OrderCancelledEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_expire_order(self, object expired_event)`
 
-    An order has expired. Argument is a [`OrderExpiredEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    An order has expired. Argument is a [`OrderExpiredEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_complete_buy_order(self, object order_completed_event)`
 
-    A buy order has been completely filled. Argument is a [`BuyOrderCompletedEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    A buy order has been completely filled. Argument is a [`BuyOrderCompletedEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 - `cdef c_did_complete_sell_order(self, object order_completed_event)`
 
-    A sell order has been completely filled. Argument is a [`SellOrderCompletedEvent`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) object.
+    A sell order has been completely filled. Argument is a [`SellOrderCompletedEvent`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) object.
 
 ## Creating and Cancelling Orders
 
@@ -97,9 +97,9 @@ Creates a buy or a sell order in the market specified by `market_trading_pair_tu
 
 **Arguments**
 
-- **market_trading_pair_tuple**: a [`MarketTradingPairTuple`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/strategy/market_trading_pair_tuple.py) object specifying the `ConnectorBase` object and trading pair to create the order for.
+- **market_trading_pair_tuple**: a [`MarketTradingPairTuple`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/market_trading_pair_tuple.py) object specifying the `ConnectorBase` object and trading pair to create the order for.
 - **amount**: a `Decimal` object, specifying the order size in terms of the base asset.
-- **order_type**: an optional [`OrderType`](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/event/events.py) enum specifying the order type. Default value is `OrderType.MARKET`.
+- **order_type**: an optional [`OrderType`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/event/events.py) enum specifying the order type. Default value is `OrderType.MARKET`.
 - **price**: an optional `Decimal` object, specifying the price for a limit order. This parameter is ignored if `order_type` is not `OrderType.LIMIT` or `OrderType.LIMIT_MAKER`.
 - **expiration_seconds**: an optional number, which specifies how long a limit should automatically expire. This is only used by Ethereum-based decentralized exchanges like Radar Relay where active order cancellation costs gas. By default, passive cancellation via expiration is used on these exchanges.
 
@@ -116,7 +116,7 @@ Cancels an active order from a market.
 
 ## Order Tracking
 
-Each `StrategyBase` object comes with an internal attribute `_sb_order_tracker`, which is an [`OrderTracker`](https://github.com/CoinAlpha/hummingbot/blob/development/hummingbot/strategy/order_tracker.pyx) object. The `OrderTracker` object is responsible for tracking all active and in-flight orders created by the `StrategyBase` object, and also all in-flight order cancels.
+Each `StrategyBase` object comes with an internal attribute `_sb_order_tracker`, which is an [`OrderTracker`](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/order_tracker.pyx) object. The `OrderTracker` object is responsible for tracking all active and in-flight orders created by the `StrategyBase` object, and also all in-flight order cancels.
 
 ![StrategyBase and order tracker](/assets/img/strategy-order-tracker.svg)
 
