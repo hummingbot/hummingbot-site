@@ -8,10 +8,10 @@ This enables Hummingbot Foundation to focus its scarce engineering, QA, and supp
 
 ### Epoch 2
 
-Per this [Snapshot poll](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764d697a106e07fa5a7b6584a418cf5634aa94f4d9a8c5852455f4e) and [related forum topic](https://hummingbot.discourse.group/t/epoch-2-proposal-exchange-certification-program/127), the HBOT community selected the following exchanges to be certified for Epoch 2:
+Per this [Snapshot poll](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764d697a106e07fa5a7b6584a418cf5634aa94f4d9a8c5852455f4e) and [related forum topic](https://forum.hummingbot.org//t/epoch-2-proposal-exchange-certification-program/127), the HBOT community selected the following exchanges to be certified for Epoch 2:
 
 * [Binance](/exchanges/binance/) and [Binance Perpetual](/exchanges/binance-perpetual/)
-* [Kucoin](/exchanges/kucoin/) 
+* [Kucoin](/exchanges/kucoin/)
 * [AscendEx](/exchanges/ascend-ex/)
 * [Gate.io](/exchanges/gate-io/)
 * [FTX](/exchanges/ftx/)
@@ -19,7 +19,6 @@ Per this [Snapshot poll](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764
 * [OKX](/exchanges/okx/)
 * [HitBTC](/exchanges/hitbtc/)
 * [Huobi](/exchanges/huobi/)
-
 
 ## Certification Benefits
 
@@ -77,4 +76,3 @@ At the beginning of each [Epoch](/governance/epochs), the Foundation will organi
 * Historical trading volume reported to the Foundation
 
 During the Epoch, any HBOT holder may submit an HGP to add or remove an exchange as Certified. If the proposal is approved, the Foundation will make the corresponding adjustments with the following two monthly releases.
-

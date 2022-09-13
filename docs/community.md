@@ -8,41 +8,40 @@ Below are the primary channels used by the Hummingbot Foundation to release offi
 
 ### Newsletter
 
-The Hummingbot Foundation newsletter is hosted at https://hummingbot.substack.com. Published with each monthly release, the newsletter also contains foundation news, upcoming events, and updates about contributions from the global Hummingbot community.
+The Hummingbot Foundation newsletter is hosted at <https://hummingbot.substack.com>. Published with each monthly release, the newsletter also contains foundation news, upcoming events, and updates about contributions from the global Hummingbot community.
 
 ### Discord
 
-[Discord](https://discord.gg/hummingbot) is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the 
+[Discord](https://discord.gg/hummingbot) is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the
 **#announcements** channel.
 
 !!! danger "No DMs"
     Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
 
-
 ### Forum
 
-The official [Discourse forum](https://hummingbot.discourse.group) is the best place for threaded discussions about governance, improvement proposals, and the long-term Hummingbot roadmap.
-
+The official [Discourse forum](https://forum.hummingbot.org/) is the best place for threaded discussions about governance, improvement proposals, and the long-term Hummingbot roadmap.
 
 ### Twitter
 
-The official Twitter account for the Hummingbot Foundation is https://twitter.com/hummingbot_org, where the Foundation will post news and updates.
+The official Twitter account for the Hummingbot Foundation is <https://twitter.com/hummingbot_org>, where the Foundation will post news and updates.
 
-Note that CoinAlpha maintains the Twitter account https://twitter.com/hummingbot_io, which posts news and updates about Hummingbot Miner and other Hummingbot-related products and services.
+Note that CoinAlpha maintains the Twitter account <https://twitter.com/hummingbot_io>, which posts news and updates about Hummingbot Miner and other Hummingbot-related products and services.
 
 ### Github
 
-The Foundation Github organization is located at https://github.com/hummingbot. It contains:
+The Foundation Github organization is located at <https://github.com/hummingbot>. It contains:
 
 * [`hummingbot`](https://github.com/hummingbot/hummingbot): monorepo that contains the code for the Hummingbot trading client and Hummingbot Gateway
 * [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot Foundation website and Hummingbot documentation site
+
 - [`pm`](https://github.com/hummingbot/pm): Agendas and recordings of regular Hummingbot developer and community calls
-- [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
-- [`streamlit-apps`](https://github.com/hummingbot/streamlit-apps): Hummingbot-related StreamLit data apps and dashboards
+* [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
+* [`streamlit-apps`](https://github.com/hummingbot/streamlit-apps): Hummingbot-related StreamLit data apps and dashboards
 
 ### DockerHub
 
-The Hummingbot DockerHub is at: https://hub.docker.com/repository/docker/hummingbot/hummingbot and will move to Foundation ownership soon. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
+The Hummingbot DockerHub is at: <https://hub.docker.com/repository/docker/hummingbot/hummingbot> and will move to Foundation ownership soon. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
 
 ## 👪 Community Channels
 
@@ -66,6 +65,6 @@ The [Hummingbot YouTube channel](https://www.youtube.com/c/hummingbot), maintain
 
 ### 中文
 
-* **hummingbot_chinese repo**: Originally a community-created resource, CoinAlpha maintains a wiki that contains general information about Hummingbot in Mandarin: https://github.com/coinalpha/hummingbot_chinese
+* **hummingbot_chinese repo**: Originally a community-created resource, CoinAlpha maintains a wiki that contains general information about Hummingbot in Mandarin: <https://github.com/coinalpha/hummingbot_chinese>
 * **WeChat**: Community-maintaine WeChat support group for users of Hummingbot and Hummingbot Miner. To join, add the group admin `amtf202004` to your WeChat.
-* **Discord #中文 channel**: https://discord.gg/hummingbot
+* **Discord #中文 channel**: <https://discord.gg/hummingbot>
