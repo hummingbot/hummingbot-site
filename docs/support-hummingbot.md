@@ -1,4 +1,4 @@
-# Support Hummingbot and Get Fee Rebates!
+# Support Hummingbot and Get Fee Rebates
 
 ## Intro
 
@@ -8,9 +8,9 @@ This supports our work at the not-for-profit Hummingbot Foundation and **provide
 
 ## Why should you support us?
 
-Hummingbot is different from other trading bots: 
+Hummingbot is different from other trading bots:
 
-1. **Open Source:** Our mission is democratize high-frequency trading (HFT) and make sophisticated trading tools and algorithms accessible to everyone in the world! In order to achieve this mission, we’ve decided to make our exchange connectors and strategies open source so that any one can benefit from and contribute to the codebase. 
+1. **Open Source:** Our mission is democratize high-frequency trading (HFT) and make sophisticated trading tools and algorithms accessible to everyone in the world! In order to achieve this mission, we’ve decided to make our exchange connectors and strategies open source so that any one can benefit from and contribute to the codebase.
 2. **Free:** To keep keep Hummingbot open source and free, we have fee share agreements with exchange partners, in which the exchanges share a portion of the trading fees, without bearing any additional fees from the user.
 3. **Community Owned:** Hummingbot Foundation is community owned, where the community can create proposals and vote through HBOT. Excess Funds are held in treasury and can be allocated via voting towards dev grants, token buybacks, or other initiatives that the community proposes. Feel free to learn more about how [Governance](/governance/) and [HBOT proposals & voting](/governance/proposals) works!
 
@@ -32,19 +32,19 @@ Currently, all developer grants are in HBOT tokens since our revenues are not qu
 
 ### Future community initiatives
 
-Hummingbot Foundation’s mission also includes **educating everyone on how to master high-frequency trading (HFT)** because we believe its the best way to help everyone achieve financial freedom! 
+Hummingbot Foundation’s mission also includes **educating everyone on how to master high-frequency trading (HFT)** because we believe its the best way to help everyone achieve financial freedom!
 
 For example, we are launching a free developer bootcamp ([Hummingbot Botcamp](http://www.hummingbot.thinkific.com)) to teach everyone how to create their own trading bots with Hummingbot.
 
 More resources means that we can create more program like this, as well as supporting the community in creating other tools and resources like [trader sharing sessions](https://www.youtube.com/watch?v=eB_66K0JxgM&t=351s), [TradingView integrations](https://www.youtube.com/watch?v=IZeCQNJmLy8), and [StreamLit dashboards](https://www.youtube.com/watch?v=l6PWbN2pDK8).
 
-Future initiatives may include a [user-generated strategies marketplace](https://hummingbot.discourse.group/t/idea-earning-hbot-with-user-generated-strategies/18/5), and [trading competitions](https://hummingbot.discourse.group/t/idea-featured-exchange-monthly-trading-competitions/17)!
+Future initiatives may include a [user-generated strategies marketplace](https://forum.hummingbot.org//t/idea-earning-hbot-with-user-generated-strategies/18/5), and [trading competitions](https://forum.hummingbot.org//t/idea-featured-exchange-monthly-trading-competitions/17)!
 
 It just takes less then 10 minutes to set this up, and you’ll be able to support us and our mission. The future of our roadmap depends on you all.
 
 ## Supporting Hummingbot on Binance
 
-Use our referral code to sign up for Binance, and we will receive the following portion of trading fees you pay, at zero cost to you. 
+Use our referral code to sign up for Binance, and we will receive the following portion of trading fees you pay, at zero cost to you.
 
 | % Trading fee rebate  | Binance Spot | Binance Futures |
 |-----------------------|--------------|-----------------|
@@ -60,12 +60,12 @@ Below, we show you how to support us if you use the latest versions of Hummingbo
 
 In order for both you and us to get fee share rebates, you will need to sign up for a new account with these referral links:
 
-* **Binance.com**: https://www.binance.com/en/register?ref=FQQNNGCD
-* **Binance.com Futures**: https://www.binance.com/en/futures/ref/hummingbot
+- **Binance.com**: <https://www.binance.com/en/register?ref=FQQNNGCD>
+- **Binance.com Futures**: <https://www.binance.com/en/futures/ref/hummingbot>
 
 #### 2. Create new API keys
 
-Afterwards, create an API key, following this [Binance guide](https://www.binance.com/en/support/faq/360002502072). 
+Afterwards, create an API key, following this [Binance guide](https://www.binance.com/en/support/faq/360002502072).
 
 When creating the API key, make sure to  **Enable Spot & Margin Trading** if you are trading on spot markets, as well as  **Enable Futures** if you are trading perpetual futures.
 
@@ -100,7 +100,7 @@ Below, we provide instructions for how you can add the Hummingbot brokerID. For 
 
 [Reference Code Sample](https://github.com/hummingbot/hummingbot/blob/ea84d2b959e795866f4105cc5206731c49ba8b20/hummingbot/connector/exchange/binance/binance_exchange.py#L91)
 
-**Binance Futures** 
+**Binance Futures**
 
 1. Go to the method or function of your code that is sending the orders to the exchange
 2. Find the param `newClientOrderId` in the body of the request
@@ -133,37 +133,37 @@ Different exchanges have different ways of handling the BrokerID.
 
 ### How can you add a Hummingbot brokerID?
 
-All you need to do is to add a snippet of code (as listed above) depending on the exchange that you are using for trading. This code snippet allows Hummingbot to add specific metadata to the HTTP requests so that the exchanges are able to identify that the order comes from a user using the Hummingbot codebase. 
+All you need to do is to add a snippet of code (as listed above) depending on the exchange that you are using for trading. This code snippet allows Hummingbot to add specific metadata to the HTTP requests so that the exchanges are able to identify that the order comes from a user using the Hummingbot codebase.
 
 ### How does the brokerID actually work for different exchanges?
 
-Every time you use Hummingbot to submits an order, it sends an HTTP request to the API of the exchange. The information of the order are placed in the body and the authentication in the headers of the HTTP request (exact implementation differs per exchange). 
+Every time you use Hummingbot to submits an order, it sends an HTTP request to the API of the exchange. The information of the order are placed in the body and the authentication in the headers of the HTTP request (exact implementation differs per exchange).
 
-In order for the exchange to identify that the HTTP request for the order is coming from a user who is using the Hummingbot codebase, it checks for the metadata in the HTTP request for a Hummingbot identifier. It works slightly differently for every exchange, the way they implemented the mechanism can be grouped into three major categories of metadata within an HTTP request: 
+In order for the exchange to identify that the HTTP request for the order is coming from a user who is using the Hummingbot codebase, it checks for the metadata in the HTTP request for a Hummingbot identifier. It works slightly differently for every exchange, the way they implemented the mechanism can be grouped into three major categories of metadata within an HTTP request:
 
-**Order ID** 
+**Order ID**
 
 - Hummingbot may need to create a specific order id that the exchange is able to recognize as a Hummingbot order that is sent in the body of an HTTP request.
 - Some exchanges ask to put a referral code as a prefix in this order ID
 - Example: Binance
 
-**Header** 
+**Header**
 
-- Some exchange may request a special Hummingbot header in the HTTP request 
-- Example: ByBit 
+- Some exchange may request a special Hummingbot header in the HTTP request
+- Example: ByBit
 
 **Custom parameter in body**
 
-- Some exchanges create their own custom parameters in the metadata to identify the order 
-- Example: FTX 
+- Some exchanges create their own custom parameters in the metadata to identify the order
+- Example: FTX
 
 ### After adding the brokerID, can Hummingbot get access to my account for other purposes?
 
-No. We are only updating the metadata of the HTTP request of which your bot is sending orders for Binance to check that the order comes from a user using the Hummingbot codebase. We are also only able to know your order volume for each exchange through the code implementation. 
+No. We are only updating the metadata of the HTTP request of which your bot is sending orders for Binance to check that the order comes from a user using the Hummingbot codebase. We are also only able to know your order volume for each exchange through the code implementation.
 
 ### What if I have a very old version of Hummingbot where the implementation code logic for the metadata tracking in the HTTP request does not exist?
 
-Follow the instructions in the **Hummingbot BrokerIDs** table. 
+Follow the instructions in the **Hummingbot BrokerIDs** table.
 
 <a href="https://hummingbot-foundation.notion.site/04f67a05abe545bc9f076b99869cf7d1?v=4630a74538764b89a088b85518450061" target="_blank" class="md-button md-button--primary">:fontawesome-solid-table: Hummingbot BrokerIDs</a>
 
