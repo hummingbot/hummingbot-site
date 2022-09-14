@@ -38,7 +38,7 @@ We use a number of platforms that enable community engagement in different ways.
 
 ### Hummingbot Forum
 
-Use the official [Hummingbot Forum](https://hummingbot.discourse.group) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. The threads you create are persistent and categorized, so that don't get lost in Discord.
+Use the official [Hummingbot Forum](https://forum.hummingbot.org/) for **long-form discussions** and to get feedback on exploratory ideas, proposals, and team projects. The threads you create are persistent and categorized, so that don't get lost in Discord.
 
 * Starting point for new proposals
 * Community feedback
