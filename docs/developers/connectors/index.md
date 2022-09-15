@@ -39,4 +39,4 @@ Only connectors
 
 ## Additional resources
 
-For questions, please visit the **#developer-chat** channel on our [Discord](https://discord.hummingbot.io) or post your question under the **Connectors** topic in the [official forum](https://hummingbot.discourse.group/).
+For questions, please visit the **#developer-chat** channel on our [Discord](https://discord.hummingbot.io) or post your question under the **Connectors** topic in the [official forum](https://forum.hummingbot.org//).

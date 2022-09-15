@@ -1,4 +1,4 @@
-The Hummingbot Foundation is an experiment in creating a self-sustainable open source ecosystem. [Distribution](/hbot/#community-distributions) of the remaining HBOT community reserves (36 million tokens or 36% of total HBOT supply) to the Hummingbot user base over the next 4 years is an important aspect of preserving Foundation self-sustainability. Therefore, the Foundation plans to iterate and improve on this distribution process via **Epochs**. 
+The Hummingbot Foundation is an experiment in creating a self-sustainable open source ecosystem. [Distribution](/hbot/#community-distributions) of the remaining HBOT community reserves (36 million tokens or 36% of total HBOT supply) to the Hummingbot user base over the next 4 years is an important aspect of preserving Foundation self-sustainability. Therefore, the Foundation plans to iterate and improve on this distribution process via **Epochs**.
 
 Each Epoch is a fixed, 5-month period with specific HBOT distribution-related goals across various categories. Epochs are basically long agile sprints, after which the Foundation will conduct an open retrospective and strengthen internal processes for the next Epoch.
 
@@ -21,9 +21,9 @@ The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/pro
 
 After Epoch 1, the Foundation conducted a retrospective and recommended a number of improvements to the governance process to make it more community-oriented and efficient:
 
-* [Epoch 2 proposed governance changes (Part 1)](https://hummingbot.discourse.group/t/epoch-2-proposed-governance-changes-part-1/45/1)
-* [Epoch 2 proposed governance changes (Part 2)](https://hummingbot.discourse.group/t/epoch-2-proposed-governance-changes-part-2/123)
-* [Epoch 2 proposed changes (master thread)](https://hummingbot.discourse.group/t/epoch-2-proposed-changes-master-thread/129)
+- [Epoch 2 proposed governance changes (Part 1)](https://forum.hummingbot.org//t/epoch-2-proposed-governance-changes-part-1/45/1)
+- [Epoch 2 proposed governance changes (Part 2)](https://forum.hummingbot.org//t/epoch-2-proposed-governance-changes-part-2/123)
+- [Epoch 2 proposed changes (master thread)](https://forum.hummingbot.org//t/epoch-2-proposed-changes-master-thread/129)
 
 After discussing these changes with the community in weekly calls, the Foundation proceeded to implement these changes starting in Epoch 2.
 
@@ -40,4 +40,3 @@ After discussing these changes with the community in weekly calls, the Foundatio
 | Community Work    | 10,000,000      |
 
 Similar to Epoch 1, we plan to conduct an open retrospective and strengthen Foundation processes after Epoch 2.
-
