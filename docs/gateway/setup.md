@@ -32,7 +32,7 @@ Let's say you want to connect to Uniswap:
 gateway connect uniswap
 ```
 
-You will then be asked about which instance of Uniswap you want to connect. You'll be asked to specify a Layer 1 blockchain (i.e. `ethereum`, `polygon`) and network (i.e. `mainnet`, `arbitrum_one`, `optimism`, etc), and then the private key of your wallet. See the [Uniswap documentation page](/exchanges/uniswap) for which chains and network it support.
+You will then be asked about which instance of Uniswap you want to connect. You'll be asked to specify a Layer 1 blockchain (i.e. `ethereum`, `polygon`) and network (i.e. `mainnet`, `arbitrum_one`, `optimism`, etc), and then the private key of your wallet. See the [Uniswap documentation page](/gateway/exchanges/uniswap) for which chains and network it support.
 
 Once your wallet has been connected to the gateway, you can the test the connection by running `balance`.
 
