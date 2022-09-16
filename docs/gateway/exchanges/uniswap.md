@@ -28,6 +28,7 @@ In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](h
 ## 🕸️ Supported Chains and Networks
 
 ### Ethereum
+
 * [mainnet](/gateway/chains/ethereum/#mainnet-mainnet)
 * [kovan](/gateway/chains/ethereum/#kovan-testnet)
 * [ropsten](/gateway/chains/ethereum/#ropsten-testnet)
@@ -35,6 +36,7 @@ In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](h
 * [optimism](/gateway/chains/ethereum/#optimism-mainnet)
 
 ### Polygon
+
 * [mainnet](/gateway/chains/ethereum/#mainnet-polygon-mainnet)
 * [mumbai](/gateway/chains/ethereum/#mumbai-testnet)
 
@@ -58,6 +60,10 @@ In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](h
 2. Run `gateway connect uniswapLP` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
 3. Afterwards, run `create` to create a [Uniswap-V3 LP](/strategies/uniswap-v3-lp/) strategy to create and dynamically adjust a Uniswap-V3 LP position factoring in market price and volatility.
 4. Run `start` to start the strategy!
+
+## No auto-wrapping
+
+Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
 
 ## 📘 Additional Resources
 
