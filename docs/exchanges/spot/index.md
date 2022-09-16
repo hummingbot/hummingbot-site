@@ -1,6 +1,6 @@
 In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) exchanges that trade spot markets.
 
-## Certified Spot Cryptocurrency Exchanges
+## Certified Spot Exchanges
 
 [Hummingbot's Exchange Certification](/maintenance/certification/) program is a community-driven process that selects certain exchanges in the Hummingbot codebase to be certified. Certified exchanges are clearly differentiated from non-certified exchanges in the Hummingbot client and documentation, get developer bounties to fund bug fixes and improvements, priority support, and other benefits.
 
@@ -16,7 +16,7 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 | [KuCoin](https://www.kucoin.com/ucenter/signup?rcode=272KvRf) | [spot](/exchanges/kucoin/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
 | [OKX](https://www.okx.com/join/1931920) | [spot](/exchanges/okx/)  | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [1931920](https://www.okx.com/join/1931920) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) |
 
-## Supported Spot Centralized Exchange Connectors
+## Supported Spot Exchanges
 
 | name | docs (by connector type) | certified | signup code |
 |------|:------------------------:|:---------:|-------------|

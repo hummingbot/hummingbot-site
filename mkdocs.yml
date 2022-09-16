@@ -210,22 +210,21 @@ nav:
       - Gateway Connectors: gateway/index.md
       - Setting up Gateway: gateway/setup.md
       - History: gateway/history.md
-      - Chains and Networks:
-        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
-        - Solana: gateway/chains/solana.md
-      - AMM DEXs:
-        - AMM DEXs: gateway/exchanges/amm/index.md
+      - Exchanges:
+        - Exchanges: gateway/exchanges/index.md
         - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
         - Quickswap: gateway/exchanges/quickswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
-        - OpenOcean: gateway/exchanges/openocean.md
         - Perpetual Protocol: gateway/exchanges/perp.md
+        - Serum: gateway/exchanges/serum.md
         - Sushiswap: gateway/exchanges/sushiswap.md
+        - OpenOcean: gateway/exchanges/openocean.md
         - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
         - Defira: gateway/exchanges/defira.md
-      - CLOB DEXs:
-        - CLOB DEXs: gateway/exchanges/clob/index.md
+      - Chains:
+        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
+        - Solana: gateway/chains/solana.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
@@ -257,8 +256,8 @@ nav:
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md
     - ❤️ Support Hummingbot!: support-hummingbot.md
-  - Developers:
-      - Developers: developers/index.md
+  - Developer Docs:
+      - Developer Docs: developers/index.md
       - Contribution Guidelines: developers/contributions.md
       - Architecture: developers/architecture.md
       - Exchange Connectors:

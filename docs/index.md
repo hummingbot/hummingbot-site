@@ -8,15 +8,6 @@ Hummingbot Foundation is a not-for-profit foundation that facilitates decentrali
 
 Help us **democratize high-frequency trading** and give sophisticated algorithms to everyone in the world!
 
-## 👨‍👩‍👧‍👧 About us
-
-- [About](/about): About Hummingbot and Hummingbot Foundation
-- [FAQ](/faq): Answers to common questions
-- [News](/news): Recent news and updates
-- [HBOT](/hbot): How to claim, vote, and earn Hummingbot Governance Tokens (HBOT)
-- [Community](/community): Participate in the global Hummingbot ecosystem
-- [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
-
 ## 🐤 Getting started
 
 New to Hummingbot? Start here!
@@ -46,6 +37,15 @@ Hummingbot is a general source framework for crypto algorithmic trading. We welc
 - [Creating Strategies](/developers/strategies/tutorial): Tutorial that shows you how to create a new Hummingbot strategy
 - [Scripts](/developers/scripts/): Lightweight, single-file strategies in pure Python
 
+## 👨‍👩‍👧‍👧 About us
+
+- [About the Foundation](/about): About Hummingbot Foundation
+- [FAQ](/faq): Answers to common questions
+- [News](/news): Recent news and updates
+- [HBOT](/hbot): How to claim, vote, and earn Hummingbot Governance Tokens (HBOT)
+- [Community](/community): Participate in the global Hummingbot ecosystem
+- [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
+
 ## ✅ Govern with HBOT
 
 - [Governance](/governance): All things related to Foundation governance
@@ -56,26 +56,28 @@ Hummingbot is a general source framework for crypto algorithmic trading. We welc
 ## 💪 Contribute to Hummingbot
 
 - [Contribution Guidelines](/developers/contributions/): Read this before submitting a pull request
-- [Maintenance](/maintenance): Get paid for building and maintaining Hummingbot components
+- [Bounties](/maintenance/bounties): Get paid for building and maintaining Hummingbot components
 
-## 🙋‍♂️ Getting help (general)
+## 🙋‍♂️ Getting help
+
+### General
 
 Hummingbot features an active, friendly community of users globally! Here are some ways to get help if you're encountering issues:
 
-- Check out the [Glossary](/glossary) to understand trading jargon and [Troubleshooting](/troubleshooting) for common questions about using Hummingbot
-- To report a bug or request a new feature, post a [new issue](https://github.com/hummingbot/hummingbot/issues/new/choose) in [GitHub](https://github.com/hummingbot/hummingbot). **Please follow the template and include detailed descriptions of the bug, steps to reproduction, supporting artifacts such as screenshots, logs, configuration settings, and suggested fixes, if any.**
-- Join the official [Discord](https://discord.gg/hummingbot) and post your question on **#general** or **#trader-chat**
+- Check out the [FAQ](/faq), [Troubleshooting](/troubleshooting), and [Glossary](/glossary) pages for answers to common questions about Hummingbot
+- To report a bug or request a new feature, post a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
+- Join the official [Discord](https://discord.gg/hummingbot) and post your question on **#support**
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
 
-## 🙋‍♂️ Getting help (Hummingbot Miner)
+### Hummingbot Miner
 
 For users using Hummingbot to earn rewards on [Hummingbot Miner](https://miner.hummingbot.io), the Miner team maintains 24/7 dedicated technical support for users. The support team helps users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues.
 
 You can access Miner support via the following methods:
 
-- Email: Send us a message at [support@hummingbot.io](mailto:support@hummingbot.io)
-- Live chat: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io).
+- **Email**: Send us a message at [support@hummingbot.io](mailto:support@hummingbot.io)
+- **Live chat**: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io).
 
 ## 📬 Newsletter
 

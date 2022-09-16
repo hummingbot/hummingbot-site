@@ -21,17 +21,16 @@ See [Setting up Gateway](./setup) for instructions on how to launch and use Gate
 
 See [Setting up Gateway - Developers](/developers/gateway/setup) for instructions on how to install Gateway from source so that you can add DEX connectors, configure custom tokens, and perform other developer-oriented tasks.
 
-## Supported DEXs
+## Supported Decentralized Exchanges
 
-### AMM
+Gateway supports the following types of Automatic Market Maker (AMM) Decentralized Exchanges (DEX):
 
-Gateway supports the following types of Automatic Market Maker (AMM) DEXs:
+- **AMM**: Automatic Market Maker (AMM) DEXs similar to [Uniswap V2](https://docs.uniswap.org/protocol/V2/introduction)
+- **Concentrated Liquidity AMM**: AMM DEXs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
+- **Perpetual AMM**: AMM DEXs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
+- **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
 
-- **AMM**: AMMs similar to [Uniswap V2](https://docs.uniswap.org/protocol/V2/introduction)
-- **Concentrated Liquidity AMM**: AMMs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
-- **Perpetual AMM**: AMMs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
-
-See [AMM DEXs](./exchanges/amm) for a list of currently supported venues.
+See [DEXs](./exchanges/amm) for a list of currently supported venues.
 
 ### CLOB
 

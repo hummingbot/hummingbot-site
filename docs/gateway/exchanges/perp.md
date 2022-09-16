@@ -4,7 +4,7 @@ tags:
 - perp amm dex
 ---
 
-# `Perpetual Protocol`
+# `perp`
 
 The Perpetual Protocol connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
 

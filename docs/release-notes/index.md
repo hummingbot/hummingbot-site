@@ -1,37 +1,53 @@
-We generally release a new version of Hummingbot every 4 weeks, along with periodic intermittent releases.
+We generally release a new version of Hummingbot **every month**. See below for information about each release.
 
-## Current release
-
-### [1.7.0](./1.7.0/)
+## [1.7.0](./1.7.0/)
 
 * **Released**: August 31, 2022
 * **Github**: [`v1.7.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.7.0)
 * **DockerHub**: [`version-1.7.0`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.7.0/images/sha256-adf16303dff6d662b8de08fe745d183e363fb53ec6eac6b929981ec2c2067684?context=explore) | [`version-1.7.0-arm_beta`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.7.0-arm_beta/images/sha256-d8998a814bdc3c264a2329d5d49b7fa8b7e9cd0edaf07a5e845ad2ae79278e34?context=explore)
 
 
-## Past releases
-
-### [1.6.0](./1.6.0/)
+## [1.6.0](./1.6.0/)
 
 * **Released**: July 26, 2022
 * **Github**: [`v1.6.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.6.0)
 * **DockerHub**: [`version-1.6.0`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.6.0/images/sha256-96d147e22d5fb25f702b44689298b84516e493c5e3ec60141cf036508e0f6850?context=explore) | [`version-1.6.0-arm_beta`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.6.0-arm_beta/images/sha256-5ab586dfebdac0f3269ef5dd77512567fd5d1263bf4b263e9d339b2e71738e36?context=explore)
 
-### [1.5.0](./1.5.0/)
+## [1.5.0](./1.5.0/)
 
-### [1.4.0](./1.4.0/)
+* **Released**: June 30, 2022
+* **Github**: [`v1.5.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.5.0)
+* **DockerHub**: [`version-1.5.0`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.5.0/images/sha256-cc34e5df65f2506195984be7a3e2000e729f6ae2f186296a6983f2c8dfb710bb?context=explore) | [`version-1.5.0-arm_beta`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.5.0-arm_beta/images/sha256-f421a563bdfe0e10d187f796ad60ebeca76823f6fc6fe725410d0b8f2dc2686d?context=explore)
 
-### [1.3.0](./1.3.0/)
+## [1.4.0](./1.4.0/)
 
-### [1.2.0](./1.2.0/)
+* **Released**: May 30, 2022
+* **Github**: [`v1.4.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.4.0)
 
-### [1.1.1](./1.1.1/)
+## [1.3.0](./1.3.0/)
 
-### [1.1.0](./1.1.0/)
+* **Released**: April 29, 2022
+* **Github**: [`v1.3.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.3.0)
 
-### [1.0.1](./1.0.1/)
+## [1.2.0](./1.2.0/)
 
-### [1.0.0](./1.0.0/)
+* **Released**: March 31, 2022
+* **Github**: [`v1.2.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.2.0)
+
+## [1.1.0](./1.1.0/)
+
+* **Released**: February 28, 2022
+* **Github**: [`v1.1.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.1.0)
+
+## [1.0.1](./1.0.1/)
+
+* **Released**: February 9, 2022
+* **Github**: [`v1.0.1`](https://github.com/hummingbot/hummingbot/releases/tag/v1.0.1)
+
+## [1.0.0](./1.0.0/)
+
+* **Released**: January 27, 2022
+* **Github**: [`v1.0.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.0.0)
 
 <!-- - 0.46.0: release-notes/0.46.0.md
 - 0.45.0: release-notes/0.45.0.md
