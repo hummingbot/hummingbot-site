@@ -1,15 +1,15 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 # Project info
-site_name: Hummingbot Foundation
-site_description: The official website and documentation site for the Hummingbot Foundation
+site_name: Hummingbot Docs
+site_description: The official documentation for Hummingbot
 site_author: Hummingbot Foundation
-site_url: https://hummingbot.org
+site_url: https://docs.hummingbot.org
 
 # Repository
 repo_name: 'hummingbot/hummingbot'
 repo_url: 'https://github.com/hummingbot/hummingbot'
-edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/docs/'
+edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
 
 # Copyright
 copyright: Copyright &copy; 2022 Hummingbot Foundation
@@ -42,14 +42,13 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
 
 plugins:
   - search
-  - tags
   - git-revision-date
   - social:
       cards_color:
@@ -57,7 +56,7 @@ plugins:
         text: white
 
 extra:
-  homepage: https://hummingbot.org
+  homepage: https://docs.hummingbot.org
   generator: false
   analytics:
     provider: google
@@ -124,38 +123,8 @@ markdown_extensions:
 
 # Navigation
 nav:
-  - Home:
-    - Home: index.md
-    - About: about.md
-    - FAQ: faq.md
-    - HBOT: hbot.md
-    - Community: community.md
-    - Reporting: 
-      - Reporting: reporting/index.md
-      - Hummingbot Reported Volumes: reporting/volumes.md
-    - Maintenance:
-      - Maintenance: maintenance/index.md
-      - Bugs: maintenance/bugs.md
-      - Bounties: maintenance/bounties.md
-      - Reviews and Releases: maintenance/releases.md
-      - Hackathons: maintenance/hackathons.md
-      - Exchange Certification: maintenance/certification.md
-    - Governance:
-      - Governance: governance/index.md
-      - Proposals: governance/proposals.md
-      - Epochs: governance/epochs.md
-      - Whitepaper: governance/whitepaper.md
-    - News & Updates:
-      - News & Updates: news/index.md
-      - Hummingbot Foundation Roadmap 2022: news/roadmap-2022.md
-      - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md
-      - Introducing HBOT: news/hbot.md
-      - Introducing the Hummingbot Foundation: news/foundation.md
-      - How does market making work?: news/market-making.md
-    - ❤️ Support Hummingbot!: support-hummingbot.md
-  - Documentation:
-    - Documentation: docs.md
-    - ❤️ Support Hummingbot!: support-hummingbot.md
+  - Docs:
+    - Docs: index.md
     - Installation:
       - Installation: installation/index.md
       - Docker: installation/docker.md
@@ -241,22 +210,21 @@ nav:
       - Gateway Connectors: gateway/index.md
       - Setting up Gateway: gateway/setup.md
       - History: gateway/history.md
-      - Chains and Networks:
-        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
-        - Solana: gateway/chains/solana.md
-      - AMM DEXs:
-        - AMM DEXs: gateway/exchanges/amm/index.md
+      - Exchanges:
+        - Exchanges: gateway/exchanges/index.md
         - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
         - Quickswap: gateway/exchanges/quickswap.md
         - TraderJoe: gateway/exchanges/traderjoe.md
-        - OpenOcean: gateway/exchanges/openocean.md
         - Perpetual Protocol: gateway/exchanges/perp.md
+        - Serum: gateway/exchanges/serum.md
         - Sushiswap: gateway/exchanges/sushiswap.md
+        - OpenOcean: gateway/exchanges/openocean.md
         - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
         - Defira: gateway/exchanges/defira.md
-      - CLOB DEXs:
-        - CLOB DEXs: gateway/exchanges/clob/index.md
+      - Chains:
+        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
+        - Solana: gateway/chains/solana.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
@@ -284,10 +252,12 @@ nav:
       - Price Source: strategy-configs/external-price-source.md
       - Ping Pong: strategy-configs/ping-pong.md
       - Rate Oracle: strategy-configs/rate-oracle.md
+    - FAQ: faq.md
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md
-  - Developers:
-      - Developers: developers/index.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
+  - Developer Docs:
+      - Developer Docs: developers/index.md
       - Contribution Guidelines: developers/contributions.md
       - Architecture: developers/architecture.md
       - Exchange Connectors:
@@ -319,78 +289,28 @@ nav:
         - Examples: developers/scripts/examples.md
         - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
-  - Releases:
-    - Releases: release-notes/index.md
-    - 1.7.0: release-notes/1.7.0.md
-    - 1.6.0: release-notes/1.6.0.md
-    - 1.5.0: release-notes/1.5.0.md
-    - 1.4.0: release-notes/1.4.0.md
-    - 1.3.0: release-notes/1.3.0.md
-    - 1.2.0: release-notes/1.2.0.md
-    - 1.1.1: release-notes/1.1.1.md
-    - 1.1.0: release-notes/1.1.0.md
-    - 1.0.1: release-notes/1.0.1.md
-    - 1.0.0: release-notes/1.0.0.md
-    - 0.46.0: release-notes/0.46.0.md
-    - 0.45.0: release-notes/0.45.0.md
-    - 0.44.0: release-notes/0.44.0.md
-    - 0.43.1: release-notes/0.43.1.md
-    - 0.43.0: release-notes/0.43.0.md
-    - 0.42.0: release-notes/0.42.0.md
-    - 0.41.0: release-notes/0.41.0.md
-    - 0.40.0: release-notes/0.40.0.md
-    - 0.39.1: release-notes/0.39.1.md
-    - 0.39.0: release-notes/0.39.0.md
-    - 0.38.1: release-notes/0.38.1.md
-    - 0.38.0: release-notes/0.38.0.md
-    - 0.37.1: release-notes/0.37.1.md
-    - 0.37.0: release-notes/0.37.0.md
-    - 0.36.0: release-notes/0.36.0.md
-    - 0.35.0: release-notes/0.35.0.md
-    - 0.34.0: release-notes/0.34.0.md
-    - 0.33.1: release-notes/0.33.1.md
-    - 0.33.0: release-notes/0.33.0.md
-    - 0.32.0: release-notes/0.32.0.md
-    - 0.31.0: release-notes/0.31.0.md
-    - 0.30.0: release-notes/0.30.0.md
-    - 0.29.0: release-notes/0.29.0.md
-    - 0.28.1: release-notes/0.28.1.md
-    - 0.28.0: release-notes/0.28.0.md
-    - 0.27.0: release-notes/0.27.0.md
-    - 0.26.1: release-notes/0.26.1.md
-    - 0.26.0: release-notes/0.26.0.md
-    - 0.25.0: release-notes/0.25.0.md
-    - 0.24.1: release-notes/0.24.1.md
-    - 0.24.0: release-notes/0.24.0.md
-    - 0.23.0: release-notes/0.23.0.md
-    - 0.22.0: release-notes/0.22.0.md
-    - 0.21.0: release-notes/0.21.0.md
-    - 0.20.0: release-notes/0.20.0.md
-    - 0.19.1: release-notes/0.19.1.md
-    - 0.19.0: release-notes/0.19.0.md
-    - 0.18.1: release-notes/0.18.1.md
-    - 0.18.0: release-notes/0.18.0.md
-    - 0.17.1: release-notes/0.17.1.md
-    - 0.17.0: release-notes/0.17.0.md
-    - 0.16.0: release-notes/0.16.0.md
-    - 0.15.0: release-notes/0.15.0.md
-    - 0.14.0: release-notes/0.14.0.md
-    - 0.13.0: release-notes/0.13.0.md
-    - 0.12.1: release-notes/0.12.1.md
-    - 0.12.0: release-notes/0.12.0.md
-    - 0.11.1: release-notes/0.11.1.md
-    - 0.11.0: release-notes/0.11.0.md
-    - 0.10.1: release-notes/0.10.1.md
-    - 0.10.0: release-notes/0.10.0.md
-    - 0.9.1: release-notes/0.9.1.md
-    - 0.9.0: release-notes/0.9.0.md
-    - 0.8.1: release-notes/0.8.1.md
-    - 0.8.0: release-notes/0.8.0.md
-    - 0.7.0: release-notes/0.7.0.md
-    - 0.6.0: release-notes/0.6.0.md
-    - 0.5.1: release-notes/0.5.1.md
-    - 0.5.0: release-notes/0.5.0.md
-    - 0.4.0: release-notes/0.4.0.md
-    - 0.3.1: release-notes/0.3.1.md
-    - 0.3.0: release-notes/0.3.0.md
-    - 0.2.0: release-notes/0.2.0.md
+  - About the Foundation:
+    - About the Foundation: about/index.md
+    - HBOT: hbot.md
+    - Community: community.md
+    - Reporting: reporting.md
+    - Maintenance:
+      - Maintenance: maintenance/index.md
+      - Bugs: maintenance/bugs.md
+      - Bounties: maintenance/bounties.md
+      - Reviews and Releases: maintenance/releases.md
+      - Hackathons: maintenance/hackathons.md
+      - Exchange Certification: maintenance/certification.md
+    - Governance:
+      - Governance: governance/index.md
+      - Proposals: governance/proposals.md
+      - Epochs: governance/epochs.md
+      - Whitepaper: governance/whitepaper.md
+    - News & Updates:
+      - News & Updates: news/index.md
+      - Hummingbot Foundation Roadmap 2022: news/roadmap-2022.md
+      - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md
+      - Introducing HBOT: news/hbot.md
+      - Introducing the Hummingbot Foundation: news/foundation.md
+      - How does market making work?: news/market-making.md
+  - Releases: release-notes/index.md
