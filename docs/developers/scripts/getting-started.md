@@ -11,7 +11,7 @@ All script examples are located in the [`/scripts`](https://github.com/hummingbo
 
 ## Running a script
 
-From the Hummingbot client interface, enter `start --scripts [filename]` to start a script. 
+From the Hummingbot client interface, enter `start --script [filename]` to start a script. 
 
 Run `stop` to stop a script.
 
