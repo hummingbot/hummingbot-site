@@ -20,7 +20,6 @@ Hummingbot不同于其他交易机器人:
 
 [![](/assets/img/fee-discounts.jpg)](/assets/img/fee-discounts.jpg)
 
-Our revenues, which we report to the community every month (see [Reporting](https://hummingbot.org/reporting/)) lets us maintain a full-time, globally distributed team of engineers, quality assurance analysts, community managers, and others who support the global Hummingbot community of developers and traders.
 我们的收入，每月都会向社区报告（见[报告](https://hummingbot.org/reporting/)），这让我们能够维持一支由工程师、质量保证分析师、社区经理和其他人员组成的全职团队，为全球Hummingbot社区的开发者和交易者提供支持。
 
 ### 用稳定币发放开发补助金，而不是HBOT
@@ -46,8 +45,7 @@ Hummingbot基金会的使命还包括**教育大家如何掌握高频交易（HF
 
 ## 在币安交易所支持Hummingbot
 
-Use our referral code to sign up for Binance, and we will receive the following portion of trading fees you pay, at zero cost to you.
-使用我们的推荐代码注册Binance，我们将收到您支付的以下部分交易费用，对您来说是零成本。
+使用我们的推荐代码注册币安，我们将收到您支付的以下部分交易费用，对您来说是零成本。
 
 | % 交易费返还            | 币安现货      | 币安期货         |
 |-----------------------|--------------|-----------------|
@@ -58,16 +56,14 @@ Use our referral code to sign up for Binance, and we will receive the following 
 
 ### 对于Hummingbot用户
 
-Below, we show you how to support us if you use the latest versions of Hummingbot to run bots on Binance:
-下面，我们向您介绍，如果您使用Hummingbot的最新版本在Binance上运行机器人，如何支持我们。
+下面，我们向您介绍，如果您使用Hummingbot的最新版本在币安上运行机器人，如何支持我们。
 
-#### 使用我们的推荐链接创建一个新的Binance账户
+#### 使用我们的推荐链接创建一个新的币安账户
 
-In order for both you and us to get fee share rebates, you will need to sign up for a new account with these referral links:
 为了使您和我们都能获得费用分享回扣，您需要用这些推荐链接注册一个新账户。
 
-- **Binance.com**: <https://www.binance.com/en/register?ref=FQQNNGCD>
-- **Binance.com 期货**: <https://www.binance.com/en/futures/ref/hummingbot>
+- **binance.com**: <https://www.binance.com/en/register?ref=FQQNNGCD>
+- **binance.com 期货**: <https://www.binance.com/en/futures/ref/hummingbot>
 
 #### 2. 创建新的API密钥
 
@@ -77,7 +73,7 @@ In order for both you and us to get fee share rebates, you will need to sign up 
 
 #### 3. 向Hummingbot添加API密钥
 
-Inside Hummingbot, run the [`connect` command](/operation/connect/) to add your new API keys. Now, every trade you perform will share a portion of your trading fees with Hummingbot Foundation.
+在Hummingbot内部，运行[`connect`命令](/operation/connect/)来添加你的新API密钥。现在，你进行的每一笔交易都会与Hummingbot基金会分享一部分交易费用。
 
 ### 用于Hummingbot的分叉和定制机器人
 
@@ -87,15 +83,15 @@ Inside Hummingbot, run the [`connect` command](/operation/connect/) to add your 
 
 然而，由于交易所费用分成协议维持了我们作为非营利性基金会的活动，我们请求使用Hummingbot分叉的开发者，以及社区中其他运行其自定义交易机器人的人在下单时考虑在其代码中加入Hummingbot 经纪商ID。
 
-以下是如何将我们的经纪商Id添加到您的Binance机器人代码中。
+以下是如何将我们的经纪商Id添加到您的币安机器人代码中。
 
 #### 1. (仅限币安）创建一个新账户和API密钥
 
-按照上述**针对Hummingbot用户**的步骤，创建一个新的Binance账户和API密钥，因为Binance只与我们分享使用我们的推荐链接创建的账户的费用。其他大多数交易所没有这个要求。
+按照上述**针对Hummingbot用户**的步骤，创建一个新的币安账户和API密钥，因为币安只与我们分享使用我们的推荐链接创建的账户的费用。其他大多数交易所没有这个要求。
 
 #### 2. 在您的代码库中加入我们的经纪人ID
 
-下面，我们提供如何添加Hummingbot 经纪商ID的说明。欲了解更多信息，请参考Binance文档中的[如何设置API 经纪商 ID](https://www.binance.com/en/support/faq/a78a065d0c4846aaa1af474d8e712ab9)。
+下面，我们提供如何添加Hummingbot 经纪商ID的说明。欲了解更多信息，请参考币安文档中的[如何设置API 经纪商 ID](https://www.binance.com/en/support/faq/a78a065d0c4846aaa1af474d8e712ab9)。
 
 **币安现货**
 
@@ -104,7 +100,7 @@ Inside Hummingbot, run the [`connect` command](/operation/connect/) to add your 
 3. 检查您发送的订单ID是否有这个前缀。**`x-XEKWYICX`**
 4. 确保`newClientOrderId`的长度最多为32个字符。
 
-[参考代码示例](https://github.com/hummingbot/hummingbot/blob/ea84d2b959e795866f4105cc5206731c49ba8b20/hummingbot/connector/exchange/binance/binance_exchange.py#L91)
+[参考代码示例](https://github.com/hummingbot/hummingbot/blob/ea84d2b959e795866f4105cc5206731c49ba8b20/hummingbot/connector/exchange/币安/币安_exchange.py#L91)
 
 **币安期货**
 
@@ -165,11 +161,10 @@ Inside Hummingbot, run the [`connect` command](/operation/connect/) to add your 
 
 ### 添加经纪商ID后，Hummingbot是否可以为其他目的进入我的账户？
 
-我们只是更新您的机器人为Binance发送订单的HTTP请求的元数据，以检查该订单是否来自使用Hummingbot代码库的用户。我们也只能通过代码实现了解您在每个交易所的订单量。
+我们只是更新您的机器人为币安发送订单的HTTP请求的元数据，以检查该订单是否来自使用Hummingbot代码库的用户。我们也只能通过代码实现了解您在每个交易所的订单量。
 
 ### 如果我有一个非常老的Hummingbot版本，HTTP请求中的元数据跟踪的实施代码逻辑不存在，怎么办？
 
-Follow the instructions in the **Hummingbot 经纪商IDs** table.
 遵循**Hummingbot 经纪商IDs**表中的说明。
 
 <a href="https://hummingbot-foundation.notion.site/04f67a05abe545bc9f076b99869cf7d1?v=4630a74538764b89a088b85518450061" target="_blank" class="md-button md-button--primary">:fontawesome-solid-table: Hummingbot 经纪商IDs</a>
