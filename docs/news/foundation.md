@@ -7,7 +7,7 @@ hide:
 
 ![](/assets/img/foundation-cover.webp)
 
-*Originally posted on the [hummingbot.io blog](https://hummingbot.io/en/blog/hummingbot-foundation/) on October 25, 2021*
+*Originally posted on the [hummingbot.io blog](https://blog.hummingbot.org/blog-hummingbot-foundation/) on October 25, 2021*
 
 ## Summary
 
@@ -113,7 +113,7 @@ The Foundation’s primary role is to coordinate the ongoing maintenance and imp
 
 * **Users** are individual and professional traders who install and use the Hummingbot open source software to run trading bots with their own capital. In the Hummingbot configuration, they may elect to report their aggregated, anonymized exchange-level trading volume, which the Foundation may publish.
 
->"Hummingbot’s open source, chain-agnostic approach fits well with Harmony’s vision to bridge every chain. We’re proud to support the Hummingbot Foundation in building open source liquidity infrastructure that powers a multi-chain world." - Stephen Tse, Harmony Protocol Founder & CEO 
+>"Hummingbot’s open source, chain-agnostic approach fits well with Harmony’s vision to bridge every chain. We’re proud to support the Hummingbot Foundation in building open source liquidity infrastructure that powers a multi-chain world." - Stephen Tse, Harmony Protocol Founder & CEO
 
 CoinAlpha will continue to maintain certain parts of the codebase, in addition to providing core maintenance services to the Foundation. However, our main focus will now shift to operating and developing Hummingbot Miner as well as other businesses that support the Hummingbot ecosystem.
 
@@ -135,23 +135,23 @@ CoinAlpha is launching the Foundation alongside a set of sponsors who are making
 
 ### Harmony
 
-Harmony (https://www.harmony.one) is an open and fast blockchain. Harmony's mainnet runs Ethereum applications with 2-second transaction finality and 100 times lower fees, and its secure bridges offer cross-chain transfers with Ethereum, Binance and 3 other chains.
+Harmony (<https://www.harmony.one>) is an open and fast blockchain. Harmony's mainnet runs Ethereum applications with 2-second transaction finality and 100 times lower fees, and its secure bridges offer cross-chain transfers with Ethereum, Binance and 3 other chains.
 
 ### Avalanche
 
-Avalanche (https://www.avax.network) is the fastest smart contracts platform in the blockchain industry, as measured by time-to-finality, and has the most validators securing its activity of any proof-of-stake protocol. Avalanche is blazingly fast, low cost, and green. Any smart contract-enabled application can outperform its competition by deploying on Avalanche.
+Avalanche (<https://www.avax.network>) is the fastest smart contracts platform in the blockchain industry, as measured by time-to-finality, and has the most validators securing its activity of any proof-of-stake protocol. Avalanche is blazingly fast, low cost, and green. Any smart contract-enabled application can outperform its competition by deploying on Avalanche.
 
 ### Terra
 
-Terra (https://www.terra.money) is an application-specific blockchain built on the Cosmos SDK and Tendermint consensus. The Terra protocol deploys a suite of algorithmic, fiat-pegged stablecoins underpinning a thriving DeFi ecosystem like Anchor, CHAI, and Mirror Protocol. LUNA, the native staking and governance asset of Terra, absorbs the short-term volatility of Terra’s stablecoins, with Terra’s stablecoin (e.g., UST) demand a function of demand for Terra’s DeFi ecosystem -- accruing value to LUNA via seigniorage.
+Terra (<https://www.terra.money>) is an application-specific blockchain built on the Cosmos SDK and Tendermint consensus. The Terra protocol deploys a suite of algorithmic, fiat-pegged stablecoins underpinning a thriving DeFi ecosystem like Anchor, CHAI, and Mirror Protocol. LUNA, the native staking and governance asset of Terra, absorbs the short-term volatility of Terra’s stablecoins, with Terra’s stablecoin (e.g., UST) demand a function of demand for Terra’s DeFi ecosystem -- accruing value to LUNA via seigniorage.
 
 ### Polygon
 
-Polygon (https://polygon.technology) is the first well-structured, easy-to-use platform for Ethereum scaling and infrastructure development. Its core component is Polygon SDK, a modular, flexible framework that supports building multiple types of applications.
+Polygon (<https://polygon.technology>) is the first well-structured, easy-to-use platform for Ethereum scaling and infrastructure development. Its core component is Polygon SDK, a modular, flexible framework that supports building multiple types of applications.
 
 ### Kava
 
-Kava (https://kava.io) is a secure, highly scalable Layer-1 network and ecosystem that aims to be a home for best-in-class DeFi services. Built using the Cosmos SDK and featuring institutional-grade security, Kava’s goal is to unlock the value of DeFi for mainstream users by providing a trusted, streamlined environment that is ready to meet global demand.
+Kava (<https://kava.io>) is a secure, highly scalable Layer-1 network and ecosystem that aims to be a home for best-in-class DeFi services. Built using the Cosmos SDK and featuring institutional-grade security, Kava’s goal is to unlock the value of DeFi for mainstream users by providing a trusted, streamlined environment that is ready to meet global demand.
 
 ## Launch Contributions
 
@@ -163,7 +163,7 @@ Triangular arbitrage is the act of exploiting an arbitrage opportunity resulting
 
 Linq will create a strategy for Hummingbot that performs triangular arbitrage on a single exchange using the quote asset of the user's choice.
 
-Linq (https://linq.network) is a Toronto-based firm that specializes in liquidity and market making services for institutional clients and exchanges.
+Linq (<https://linq.network>) is a Toronto-based firm that specializes in liquidity and market making services for institutional clients and exchanges.
 
 ### Hummingbot web GUI (Autonio Foundation)
 
@@ -173,7 +173,7 @@ An easy to use interface is essential to adoption and growth. We believe a Web G
 
 Autonio Foundation has agreed to create create this web application and contribute the code to Hummingbot’s open source repository. Furthermore, Autonio Foundation will host the Web GUI enabling users to access it directly from a browser, while advanced users can also build the Web GUI locally by cloning it from the repository.
 
-Autonio Foundation (https://www.autonio.foundation) is a decentralized autonomous organization (DAO) built around developing accessible, easy to use and affordable trading tools and services for the DeFi ecosystem.
+Autonio Foundation (<https://www.autonio.foundation>) is a decentralized autonomous organization (DAO) built around developing accessible, easy to use and affordable trading tools and services for the DeFi ecosystem.
 
 ### TradingView Webhooks (Individual Contributors)
 

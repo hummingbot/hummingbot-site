@@ -18,11 +18,11 @@ The Serum connector is managed by Gateway V2 - where the Gateway is now responsi
 ## ℹ️ Exchange Info
 
 **Serum**
-[Website](https://www.projectserum.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/serum/) | [CoinGecko](https://www.coingecko.com/en/exchanges/serum/)
+[Website](https://www.projectserum.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/serum-dex/) | [CoinGecko](https://www.coingecko.com/en/exchanges/serum_dex)
 
-* API docs: https://github.com/project-serum/serum-ts/tree/master/packages/serum
-* SDK: https://github.com/project-serum/serum-ts/tree/master/packages/serum
-* FAQ: https://docs.projectserum.com/serum-ecosystem/help
+* API docs: <https://github.com/project-serum/serum-ts/tree/master/packages/serum>
+* SDK: <https://github.com/project-serum/serum-ts/tree/master/packages/serum>
+* FAQ: <https://docs.projectserum.com/serum-ecosystem/help>
 
 ## 🔑 Setup
 
