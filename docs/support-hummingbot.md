@@ -38,7 +38,7 @@ For example, we are launching a free developer bootcamp ([Hummingbot Botcamp](ht
 
 More resources means that we can create more program like this, as well as supporting the community in creating other tools and resources like [trader sharing sessions](https://www.youtube.com/watch?v=eB_66K0JxgM&t=351s), [TradingView integrations](https://www.youtube.com/watch?v=IZeCQNJmLy8), and [StreamLit dashboards](https://www.youtube.com/watch?v=l6PWbN2pDK8).
 
-Future initiatives may include a [user-generated strategies marketplace](https://forum.hummingbot.org//t/idea-earning-hbot-with-user-generated-strategies/18/5), and [trading competitions](https://forum.hummingbot.org//t/idea-featured-exchange-monthly-trading-competitions/17)!
+Future initiatives may include a [user-generated strategies marketplace](https://forum.hummingbot.org/t/idea-earning-hbot-with-user-generated-strategies/18/5), and [trading competitions](https://forum.hummingbot.org/t/idea-featured-exchange-monthly-trading-competitions/17)!
 
 It just takes less then 10 minutes to set this up, and you’ll be able to support us and our mission. The future of our roadmap depends on you all.
 

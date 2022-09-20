@@ -1,4 +1,4 @@
-*Originally published in the Hummingbot blog: [part 1](https://hummingbot.io/blog/2021-03-hummingbot-architecture), [part 2](https://hummingbot.io/blog/2021-05-hummingbot-architecture-part2)*
+*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/blog-2021-03-hummingbot-architecture/), [part 2](https://blog.hummingbot.org/blog-2021-05-hummingbot-architecture-part2/)*
 
 ## Introduction
 
@@ -57,8 +57,8 @@ At every clock tick, which happens every second by default, the `Clock` would no
 The order of the notifications for every clock tick is the same as the order the `TimeIterator` objects were added to the `Clock` via `Clock.add_iterator()`. This allows data dependencies between `TimeIterator` objects to be realized. e.g. if a strategy object depends on the most up-to-date market information from a market connector, then calling `Clock.add_iterator()` with the exchange connector before the strategy object will guarantee the market connector is always updated before the strategy object.
 
 **References:**
-https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/clock.pyx
-https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/time_iterator.pyx
+<https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/clock.pyx>
+<https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/time_iterator.pyx>
 
 ## Connectors
 
@@ -109,7 +109,7 @@ Hummingbot market connectors are designed to use the lowest latency data source,
 
 Hummingbot is Python and Cython based, and that is generally good enough for interacting with centralized exchanges with web based APIs. Decentralized exchanges, however, often require (or are better supported with) the use of third party libraries for interacting with the exchange protocol. These libraries are not always available in Python.
 
-Hummingbot solves this problem via the Gateway middleware component, which can be used as a companion module to Hummingbot or as a standalone component. Gateway is typically a Docker container running on the same computer as Hummingbot, which hosts the external libraries and / or network nodes required for interfacing with decentralized exchanges. It then exposes an encrypted, authenticated HTTPS API endpoint to allow the corresponding Hummingbot market connectors to interface with the decentralized exchange protocols. 
+Hummingbot solves this problem via the Gateway middleware component, which can be used as a companion module to Hummingbot or as a standalone component. Gateway is typically a Docker container running on the same computer as Hummingbot, which hosts the external libraries and / or network nodes required for interfacing with decentralized exchanges. It then exposes an encrypted, authenticated HTTPS API endpoint to allow the corresponding Hummingbot market connectors to interface with the decentralized exchange protocols.
 
 Take the Balancer DEX connector for example. Almost all of the operations in the connector - whether it is getting market data like order prices, fetching the wallet balance or making orders - go through the `BalancerConnector._api_request()` method. When you look into the method, you'll find it's really just delegating all the work to a Gateway API endpoint.
 
@@ -121,11 +121,11 @@ For example, here is how the `balancer/sell` API endpoint is implemented in Gate
 
 **References:**
 
-* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx
-* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py
-* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py
-* https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py
-* https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.ts
+* <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx>
+* <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py>
+* <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py>
+* <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py>
+* <https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.ts>
 
 ## Strategies
 
@@ -135,7 +135,7 @@ We will use the Avellaneda & Stoikov market making strategy as an example for ou
 
 ### Watching the Market Like A Movie
 
-Every strategy class is a subclass of the `TimeIterator` class - which means, in normal live trading, its `c_tick() `function gets called once every second. Each time `c_tick()` is called, the strategy object should be making observations on the latest market information, and decide what it should do.
+Every strategy class is a subclass of the `TimeIterator` class - which means, in normal live trading, its `c_tick()`function gets called once every second. Each time `c_tick()` is called, the strategy object should be making observations on the latest market information, and decide what it should do.
 
 You can imagine strategy objects are watching the markets like a movie, where each second is one frame of the movie - and it's constantly trying to decide what to do about any new developments from the movie.
 
@@ -220,4 +220,3 @@ Here are some preview images of the kind of output you can get from Hummingbot P
 ![](/assets/img/architecture-ofc2.webp)
 
 Hummingbot Pro will be a paid service for professional traders and hedge funds, with launch planned for Q4 2021.
-

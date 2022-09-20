@@ -12,9 +12,9 @@ tags:
 
 ## How it works
 
-This strategy allows Hummingbot users to run a market making strategy on a single trading pair on a `spot` exchanges. 
+This strategy allows Hummingbot users to run a market making strategy on a single trading pair on a `spot` exchanges.
 
-It places limit buy (bid) and limit sell (ask) orders on the order book at prices relative to the mid-price with spreads equal to `bid_spread` and `ask_spread`. Every `order_refresh_time` seconds, the strategy replaces existing orders with new orders with refreshed spreads and order amounts. 
+It places limit buy (bid) and limit sell (ask) orders on the order book at prices relative to the mid-price with spreads equal to `bid_spread` and `ask_spread`. Every `order_refresh_time` seconds, the strategy replaces existing orders with new orders with refreshed spreads and order amounts.
 
 In addition, the strategy contains a number of parameters to enable traders to control how orders are placed relative to their inventory position, use prices from a different order book, etc.
 
@@ -76,8 +76,6 @@ In addition, the strategy contains a number of parameters to enable traders to c
 | `bid_order_level_amounts`    | decimal     | None        | True        | Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
 | `ask_order_level_amounts`    | decimal     | None        | True        |Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
 
-
-
 ## 📓 Description
 
 [Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx)
@@ -101,7 +99,7 @@ The process repeats over and over at each tick, causing limit orders to be perio
 
 ### Refreshing Orders
 
-For each limit order that was emitted by the pure market making strategy, an expiry timestamp would be generated for that order and the order will be tracked by the strategy. The time until expiry for new orders is configured via the `order_refresh_time` parameter. 
+For each limit order that was emitted by the pure market making strategy, an expiry timestamp would be generated for that order and the order will be tracked by the strategy. The time until expiry for new orders is configured via the `order_refresh_time` parameter.
 
 After an order's expiration time is reached, the pure market making strategy will create a cancel order proposal for that order.
 
@@ -251,16 +249,14 @@ Currently, only the following parameters can be reconfigured without stopping th
 !!! note
     Reconfiguring of `inventory_target_base_pct` for DEX connectors is not working at the moment. -->
 
-
-
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is market making?](https://hummingbot.io/blog/2020-09-what-is-market-making): A blog post that explains the basics of market making.
+:fontawesome-solid-book: [What is market making?](https://blog.hummingbot.org/blog-2020-09-what-is-market-making/): A blog post that explains the basics of market making.
 
 :fontawesome-brands-youtube: [How to set up a simple pure market making bot on Binance](https://www.youtube.com/watch?v=La7E6uudOYY): Learn how to create pure market making bot on Binance exchange.
 
 :fontawesome-brands-youtube: [Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw): Eagle Club member and top Hummingbot Miner earner `cgambit` shares his tips and insights on pure market making.
 
-:fontawesome-solid-book: [Pure Market Making (PMM) Strategy](https://hummingbot.io/academy-level-2-c-beginner-strategy-1-pure-market-making-pmm-strategy): Use Pure Market Making Strategy but set dynamic bid/ask orders based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders using inventory skew or spreads-adjusted.
+:fontawesome-solid-book: [Pure Market Making (PMM) Strategy](https://blog.hummingbot.org/academy-level-2-c-beginner-strategy-1-pure-market-making-pmm-strategy/): Use Pure Market Making Strategy but set dynamic bid/ask orders based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders using inventory skew or spreads-adjusted.
 
 *Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*

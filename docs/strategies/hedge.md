@@ -14,7 +14,7 @@ tags:
 
 This strategy allows you to hedge a market making strategy by automatically opening short positions on [`dydx_perpetual`](/exchanges/dydx-perpetual) or another `perp` exchange. Configs like `hedge_ratio` allow you to customize how much to hedge. Users are expected to run this strategy alongside another market making strategy.
 
-This strategy was the winning submission in the [dYdX hackathon](https://hummingbot.io/blog/dYdX-Bounty-Winner-Announcement). 
+This strategy was the winning submission in the [dYdX hackathon](https://blog.hummingbot.org/blog-dydx-bounty-winner-announcement/).
 
 ## 🏦 Exchanges supported
 
@@ -58,6 +58,7 @@ This strategy looks at the balance of the position on the spot(maker) exchange, 
 **Code Logic:**
 
 On every hedge_interval seconds,
+
 1. Look at balance of the for each asset defined under maker_asset on the maker markets
 2. Compares the balance of each asset on the maker markets with the positions on the taker markets
 3. If there is a difference more than the minimum trade, execute an order to balance the trade back to the target net position based on hedge ratio and maker asset balance.
@@ -67,29 +68,28 @@ it will then execute a sell order of (0.5BTC-0.2BTC) = 0.3BTC on the taker marke
 
 **Strategy Configuration:**
 
-- maker_exchange: Define the spot market
-- maker_asset: Define the list of markets to monitor on the maker exchange e.g LTC,BTC,ETH
-- taker_exchange: Define the perpetual market to hedge the spot market.
-- taker_markets: Define the list of markets to hedge on for each asset
-- e.g LTC-USD,BTC-USD,ETH-USD means LTC (from maker_asset first element) will be hedged on  LTC-USD (taker_market first element) and so on, BTC -> BTC-USD, ETH->ETH-USD
-- hedge_interval: set time interval for each loop in seconds. (Can be <1 to get a faster hedge but you may encounter issue such as rate limit. use at your own risk)
-- hedge_ratio: set ratio of assets to be hedged on taker exchange. e.g 1 -> 100% of balance will be hedged. 0.5 -> 50% of balance will be hedged , 2-> 200% of balance will be hedged.
-- leverage: set the leverage to be used at the taker exchange
-- max_order_age: maximum time in seconds for limit order of hedge to be active before retry
-- slippage: set the initial buy/sell price. For buys, the buy price will be placed at min ask on taker market * (1+slippage), for sells, the sell order price will be placed at max bid on taker market* (1-slippage)
-- minimum_trade: set the minimum difference required between taker and maker balance in order to submit an order for hedging. This need to higher than or equal to the minimum trade size of the taker exchange
+* maker_exchange: Define the spot market
+* maker_asset: Define the list of markets to monitor on the maker exchange e.g LTC,BTC,ETH
+* taker_exchange: Define the perpetual market to hedge the spot market.
+* taker_markets: Define the list of markets to hedge on for each asset
+* e.g LTC-USD,BTC-USD,ETH-USD means LTC (from maker_asset first element) will be hedged on  LTC-USD (taker_market first element) and so on, BTC -> BTC-USD, ETH->ETH-USD
+* hedge_interval: set time interval for each loop in seconds. (Can be <1 to get a faster hedge but you may encounter issue such as rate limit. use at your own risk)
+* hedge_ratio: set ratio of assets to be hedged on taker exchange. e.g 1 -> 100% of balance will be hedged. 0.5 -> 50% of balance will be hedged , 2-> 200% of balance will be hedged.
+* leverage: set the leverage to be used at the taker exchange
+* max_order_age: maximum time in seconds for limit order of hedge to be active before retry
+* slippage: set the initial buy/sell price. For buys, the buy price will be placed at min ask on taker market *(1+slippage), for sells, the sell order price will be placed at max bid on taker market* (1-slippage)
+* minimum_trade: set the minimum difference required between taker and maker balance in order to submit an order for hedging. This need to higher than or equal to the minimum trade size of the taker exchange
 
 **Sample Use Case Examples**
 
-- Can also use with humming bot standard strategy and personal custom strategy or trading bot other than hummingbot to trade on spot exchange and define hedge ratio to hedge a percentage of trade or even opposite trade made on spot exchange on the perpetual exchange
+* Can also use with humming bot standard strategy and personal custom strategy or trading bot other than hummingbot to trade on spot exchange and define hedge ratio to hedge a percentage of trade or even opposite trade made on spot exchange on the perpetual exchange
 
 **Notes from CoinAlpha QA**
 
-- `perp` exchanges: tested on `dydx_perpetual` and `binance_perpetual`
-- `spot` exchange: tested on `ascend_ex` and `binance`
-- On `dydx_perpetual`, `hedge_interval` <1 may cause issue such as unexpected clock tick error and rate limit
-- On `binance_perpetual`, `hedge_interval` has been tested to work with 0.01s
-
+* `perp` exchanges: tested on `dydx_perpetual` and `binance_perpetual`
+* `spot` exchange: tested on `ascend_ex` and `binance`
+* On `dydx_perpetual`, `hedge_interval` <1 may cause issue such as unexpected clock tick error and rate limit
+* On `binance_perpetual`, `hedge_interval` has been tested to work with 0.01s
 
 ## ℹ️ More Resources
 

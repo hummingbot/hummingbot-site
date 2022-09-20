@@ -55,7 +55,7 @@ Potential improvements can be divided into 2 categories:
 * Existing work: Creating a bounty for an existing developer to harder some existing work for merge into the Hummingbot codebase
 * New work: Creating a bounty to be assigned to a new developer for a new improvement to the Hummingbot codebase
 
-See [this forum thread](https://forum.hummingbot.org//t/epoch-2-proposed-governance-changes-part-2/123#improvements-foundation-bounty-5) for examples of potential improvements going through the process.
+See [this forum thread](https://forum.hummingbot.org/t/epoch-2-proposed-governance-changes-part-2/123#improvements-foundation-bounty-5) for examples of potential improvements going through the process.
 
 To be considered valid, a HIP should contain the following fields:
 
@@ -109,7 +109,7 @@ Initiatives that compensate community members for performing needed functions ne
 * Providing technical support to users on Discord
 * Writing documentation, guides, and other content that explain how to use Hummingbot
 
-For approved Community Work Initiative with roles to be filled by community members, the first post-approval step will be an announcement thread in the [forum](https://forum.hummingbot.org//), where community members can present their qualifications and apply for the roles.
+For approved Community Work Initiative with roles to be filled by community members, the first post-approval step will be an announcement thread in the [forum](https://forum.hummingbot.org/), where community members can present their qualifications and apply for the roles.
 
 All proposals in this category should contain clear goals, define expected impact on the Hummingbot community, and outline the metrics that the community should use to gauge whether the initiative is successful.
 

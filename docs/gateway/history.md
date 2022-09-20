@@ -1,8 +1,8 @@
-*Originally published in the Hummingbot blog: [part 1](https://hummingbot.io/blog/gateway-v2-code-architecture), [part 2](https://hummingbot.io/blog/gateway-architecture-part-2)*
+*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/blog-gateway-v2-code-architecture/), [part 2](https://blog.hummingbot.org/blog-gateway-architecture-part-2/)*
 
 ## Introduction
 
-Hummingbot Gateway is middleware that allows Hummingbot to connect to decentralized exchanges like Uniswap. Gateway V1 is currently in a separate Github repository (https://github.com/coinalpha/gateway-api), while Gateway V2 will be contained in a `gateway` directory in the Hummingbot repository.
+Hummingbot Gateway is middleware that allows Hummingbot to connect to decentralized exchanges like Uniswap. Gateway V1 is currently in a separate Github repository (<https://github.com/coinalpha/gateway-api>), while Gateway V2 will be contained in a `gateway` directory in the Hummingbot repository.
 
 Gateway is a separate piece of software apart from Hummingbot, because software libraries needed for accessing decentralized exchanges, e.g. the Uniswap Smart Order Router, are usually not written in Python. Gateway provides Hummingbot access to these decentralized exchanges with their differing software stacks, by exposing a secure and unified API interface to Hummingbot. This API interface can also be used by other potential gateway clients, such as proprietary trading software.
 

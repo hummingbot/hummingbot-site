@@ -9,7 +9,7 @@ tags:
 
 ## What is Gateway-V2?
 
-Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges (DEX) on various blockchain protocols. 
+Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges (DEX) on various blockchain protocols.
 
 Gateway lets you create a trading bot that can operate on both DEXs as well as centralized exchanges (CEXs), enabling users to access cross-exchange liquidity provision and arbitrage opportunities, as well as to create their own customized strategies and scripts.
 
@@ -38,19 +38,19 @@ Gateway plans to support the following types of Central Limit Order Book (CLOB) 
 
 - **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
 - **Margin CLOB**: CLOB DEXs that support margin accounts, similar to [Mango Markets](https://docs.mango.markets/)
-- **Perpetual CLOB**: CLOB DEXs that support trade perpetual futures 
+- **Perpetual CLOB**: CLOB DEXs that support trade perpetual futures
 
-See [CLOB DEXs](./exchanges/clob) for a list of currently supported venues.
+See [CLOB DEXs](/gateway/chains/solana) for a list of currently supported venues.
 
 ## Supported Blockchains
 
-* [Ethereum and EVM Chains](./chains/ethereum)
-* [Solana](./chains/solana) (In progress)
+- [Ethereum and EVM Chains](./chains/ethereum)
+- [Solana](./chains/solana) (In progress)
 
 ## Building Gateway Connectors
 
-* [Setup](/developers/gateway/setup): Install and configure Gateway from a developer's standpoint
-* [Testing](/developers/gateway/testing): How to test Gateway connectors
-* [Gateway API Interfaces](/developers/gateway/api-interface): API interfaces for different DEX types supported by Gateway
-* [Building Gateway Connectors](/developers/gateway/building-gateway-connectors): Step-by-step guide to adding DEX connectors to Gateway
-* [Running AMM-ARB with Gateway](/developers/gateway/running-amm-arb): Developer-oriented tutorial that shows you how to test out the [`amm-arb`](/strategies/amm-arbitrage) strategy with Gateway
+- [Setup](/developers/gateway/setup): Install and configure Gateway from a developer's standpoint
+- [Testing](/developers/gateway/testing): How to test Gateway connectors
+- [Gateway API Interfaces](/developers/gateway/api-interface): API interfaces for different DEX types supported by Gateway
+- [Building Gateway Connectors](/developers/gateway/building-gateway-connectors): Step-by-step guide to adding DEX connectors to Gateway
+- [Running AMM-ARB with Gateway](/developers/gateway/running-amm-arb): Developer-oriented tutorial that shows you how to test out the [`amm-arb`](/strategies/amm-arbitrage) strategy with Gateway
