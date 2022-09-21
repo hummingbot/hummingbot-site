@@ -1,4 +1,4 @@
-Bounties are rewards (denominated in HBOT or other tokens) given out by the Foundation by or community members to developers for fixing a bug or adding an improvement (enhancement, new connector, new strategy, etc) to the Hummingbot codebase.
+Bounties are rewards (denominated in HBOT or other tokens) given out by the Foundation or by community members to developers for fixing a bug or adding an improvement (enhancement, new connector, new strategy, etc) to the Hummingbot codebase.
 
 ## Bounties Board
 
