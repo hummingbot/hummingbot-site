@@ -74,9 +74,9 @@ This strategy was the winning submission in the Hummingbot track of the [Open De
 
 *By [squarelover](https://github.com/squarelover) - see original [pull request](https://github.com/hummingbot/hummingbot/pull/3430)*
 
-One of the major downsides to many of the Market-Making strategies in Hummingbot is that they don't understand trends. In my experience, I've often had my bots trade on the wrong side of a trend. This is what it frequently looks like: 
+One of the major downsides to many of the Market-Making strategies in Hummingbot is that they don't understand trends. In my experience, I've often had my bots trade on the wrong side of a trend. This is what it frequently looks like:
 ![Bad Bad Bot, No Good!](https://www.dropbox.com/temp_thumb_from_token/s/2q3j6mnnqup0bl4?preserve_transparency=False&size=1200x1200&size_mode=4)
-_Bad Bad Bot, No Good!_ ⬆️
+*Bad Bad Bot, No Good!* ⬆️
 
 My strategy attempts to take a well-known set of Market Indicators called Aroon Indicators. These indicators collect trade prices over a configurable set of periods of a given duration. The indicators represent how recent the highest highs and the lowest lows are. And the Oscillator indicator can strongly suggest a market trend. I've tried to distill what the indicators signify and use them to adjust spreads so traders are positioned at the hopefully the best point to execute at profitable positions. In other words, it tries to be better at buying low and selling high.
 
@@ -84,7 +84,7 @@ Here's a screenshot of the status screen:
 ![Aroon Indicators](https://www.dropbox.com/temp_thumb_from_token/s/2vjh58hkbscrvh6?preserve_transparency=False&size=1200x1200&size_mode=4)
 
 You can learn more about Aroon Indicators, here:
-https://www.investopedia.com/terms/a/aroon.asp
+<https://www.investopedia.com/terms/a/aroon.asp>
 
 The Aroon Oscillator strategy is a market-making strategy that uses Aroon Indicators to detect trends.
 A user will set up the number of periods in the Indicator and how long each period is in seconds.
@@ -102,7 +102,7 @@ The time duration of the period can be chosen to best suit your trade strategy. 
 `minimum_periods` can be set to have the indicator engage adjusting the spreads before the Indicator
 periods fill up. Set this to -1 to have only adjust spreads when the indicator is full.
 
-The strategy will adjust the `bid_spread` closer to `minimum_spread` the closer Aroon Down indicator gets to 100. It will adjust the `ask_spread` closer to the `minimum_spread` the closer Aroon Up gets to 100. 
+The strategy will adjust the `bid_spread` closer to `minimum_spread` the closer Aroon Down indicator gets to 100. It will adjust the `ask_spread` closer to the `minimum_spread` the closer Aroon Up gets to 100.
 
 The spread is further adjusted by the Aroon Oscillator indicator. If the indicator strongly
 suggests a trend, it will push the spread out further from `minimum_spread` in order to wait for a more optimal
@@ -119,4 +119,4 @@ well with the Indicator.
 
 :fontawesome-brands-youtube: [Aroon Indicator Strategy Hummingbot Live Followup](https://www.youtube.com/watch?v=5iOorb46aVw): Learn how to set up an `aroon-oscillator` bot.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

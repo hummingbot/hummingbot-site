@@ -57,7 +57,7 @@ Hummingbot’s main value proposition is enabling users to run high-frequency tr
 
 While Hummingbot is a general toolbox that can be used to build any type of trading bot, we focus on market making and arbitrage bots because usage of those strategies benefits our exchange and protocol partners.
 
-Supported by [0x](https://0x.org/), who gave us a developer grant, we [launched Hummingbot](https://hummingbot.io/en/blog/2019-04-announcing-hummingbot/) in April 2019 with connectors to two exchanges: Binance.com and Radar Relay, an early decentralized exchange.
+Supported by [0x](https://0x.org/), who gave us a developer grant, we [launched Hummingbot](https://hummingbot.io/blog/2019-04-announcing-hummingbot/) in April 2019 with connectors to two exchanges: Binance.com and Radar Relay, an early decentralized exchange.
 
 Today, [Hummingbot](https://github.com/hummingbot/hummingbot) has become the leading open source crypto trading bot with:
 
