@@ -30,17 +30,7 @@ Gateway supports the following types of Automatic Market Maker (AMM) Decentraliz
 - **Perpetual AMM**: AMM DEXs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
 - **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
 
-See [DEXs](./exchanges/amm) for a list of currently supported venues.
-
-### CLOB
-
-Gateway plans to support the following types of Central Limit Order Book (CLOB) DEXs:
-
-- **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
-- **Margin CLOB**: CLOB DEXs that support margin accounts, similar to [Mango Markets](https://docs.mango.markets/)
-- **Perpetual CLOB**: CLOB DEXs that support trade perpetual futures
-
-See [CLOB DEXs](/gateway/chains/solana) for a list of currently supported venues.
+See [Exchanges](./exchanges) for a list of currently supported venues.
 
 ## Supported Blockchains
 
