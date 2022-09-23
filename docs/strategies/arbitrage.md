@@ -64,13 +64,13 @@ Before the strategy looks at the two markets for profitable trades, it needs to 
 There are a few conditions that the strategy would check for at every tick, before proceeding to looking at the market order books:
 
  1. Are both markets connected and ready?
- 
+
     If any of the left or right markets is not ready, or is disconnected; then no arbitrage trade is possible.
- 
+
  2. Are there pending market orders on the markets that are still being processed?
 
     If there are outstanding market orders still being processed in the markets, then no further arbitrage trade is possible.
- 
+
  3. Has there been a recent arbitrage trade within the cooldown period?
 
     If an arbitrage trade has happened recently, within the cooldown period (the `next_trade_delay_interval` init argument in [arbitrage.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx)), then no arbitrage is possible for this tick. This wait is needed because asset balances on markets often need some delay before they are updated, after the last trade.
@@ -106,11 +106,10 @@ If the calculated arbitrage size is greater than 0, then the arbitrage strategy 
 
 The order execution logic can be found in the function `c_process_market_pair_inner()` inside [arbitrage.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx).
 
-
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is Arbitrage?](https://hummingbot.io/en/blog/2020-09-what-is-arbitrage/): The concept of arbitrage is fairly simple: Arbitrage is the purchase and sale of an asset in order to benefit from a difference in the price of the asset between markets.
+:fontawesome-solid-book: [What is Arbitrage?](https://hummingbot.io/blog/2020-09-what-is-arbitrage/): The concept of arbitrage is fairly simple: Arbitrage is the purchase and sale of an asset in order to benefit from a difference in the price of the asset between markets.
 
 :fontawesome-brands-youtube: [How to Spot Market Making and Arbitrage Opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU): Learn how to optimize the arbitrage strategy for different opportunities.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

@@ -178,4 +178,4 @@ Another difference is dependence of transaction fees on currrent gas fees. There
 
 :fontawesome-brands-youtube: [Cross Exchange Market Making Strategy in FTX | Hummingbot Live](https://www.youtube.com/watch?v=gwLjSe0t8K8): In this video, Paulo shows how to optimize a Cross Exchange Market-Making strategy in the FTX exchange connector using the Hummingbot app.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
