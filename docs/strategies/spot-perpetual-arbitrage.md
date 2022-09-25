@@ -53,4 +53,4 @@ Open
 
 :fontawesome-brands-youtube: [Spot-Perpetual Arbitrage Strategy Demo | Hummingbot Live](https://www.youtube.com/watch?v=hJPmAy-Ellk): A live demo on how you can set parameters to run the spot-perpetual arbitrage strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
