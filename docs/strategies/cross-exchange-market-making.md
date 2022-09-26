@@ -50,8 +50,8 @@ Also referred to as **liquidity mirroring** or **exchange remarketing**, this st
 | `taker_to_maker_quote_conversion_rate`| decimal | 1      | False       | What percentage of asset balance would you like to use for hedging trades on the maker market?|
 |                              |             |             |             |
 | `slippage_buffer`            | decimal     | 5           | True        | How much buffer do you want to add to the price to account for slippage for taker orders?  |
-| `debug_price_shim` | bool | False | False | Do you want to enable the debug price shim for integration tests? If you don't know what this does you should keep it disabled. | 
-| `gateway_transaction_cancel_interval` | decimal | 600 | True | After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds) | 
+| `debug_price_shim` | bool | False | False | Do you want to enable the debug price shim for integration tests? If you don't know what this does you should keep it disabled. |
+| `gateway_transaction_cancel_interval` | decimal | 600 | True | After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds) |
 
 ## 📓 Description
 
@@ -90,7 +90,7 @@ The cross exchange market making strategy regularly refreshes the limit orders i
 
 ![Figure 1: Order creation and adjustment flow chart](/assets/img/xemm-flowchart-1.svg)
 
-The entry point of this logic flow is the `c_process_market_pair()` function in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+The entry point of this logic flow is the `c_process_market_pair()` function in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
 ### Cancel Order Flow
 
@@ -168,15 +168,14 @@ For starters, in general interaction with them is less reliable. Unlike in case 
 
 Another difference is dependence of transaction fees on currrent gas fees. Therefore taker transaction fees may vary and therefore also position profitability checks performed in the method `check_if_still_profitable()` may return different results at different times for the same maker positions.
 
-
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is cross exchange market making?](https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making)
+:fontawesome-solid-book: [What is cross exchange market making?](https://blog.hummingbot.org/blog-2020-09-what-is-cross-exchange-market-making/)
 
 :fontawesome-brands-youtube: [Cross Exchange Market Making with Jelle](https://www.youtube.com/watch?v=fEoEAbPoBGA)
 
-:fontawesome-solid-book: [Use cross-exchange market making (XEMM) strategy to lower risk](https://hummingbot.io/academy-level-2-d-beginner-strategy-2-use-cross-exchange-market-making-xemm): The XMM strategy effectively reduces inventory risk. This article talks about how to proceed with XEMM in place.
+:fontawesome-solid-book: [Use cross-exchange market making (XEMM) strategy to lower risk](https://blog.hummingbot.org/academy-level-2-d-beginner-strategy-2-use-cross-exchange-market-making-xemm/): The XMM strategy effectively reduces inventory risk. This article talks about how to proceed with XEMM in place.
 
 :fontawesome-brands-youtube: [Cross Exchange Market Making Strategy in FTX | Hummingbot Live](https://www.youtube.com/watch?v=gwLjSe0t8K8): In this video, Paulo shows how to optimize a Cross Exchange Market-Making strategy in the FTX exchange connector using the Hummingbot app.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

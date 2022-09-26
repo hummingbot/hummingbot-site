@@ -25,12 +25,11 @@ This strategy implements a market making strategy described in the classic paper
 
 [Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making_config_map.py)
 
-
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
 | `exchange`                   | string      |             | True        | Enter your maker spot connector |
 | `market`                     | string      |             | True        | Enter the token trading pair you would like to trade on `exchange`|
-| `execution_timeframe`        | string      |             | True        | Choose execution timeframe ( `infinite` / `from_date_to_date` / `daily_between_times` ) | 
+| `execution_timeframe`        | string      |             | True        | Choose execution timeframe ( `infinite` / `from_date_to_date` / `daily_between_times` ) |
 | `start_time`                 | string      |             | Conditional | Please enter the start date and time (YYYY-MM-DD HH:MM:SS) OR Please enter the start time (HH:MM:SS) |
 | `end_time`                   | string      |             | Conditional | Please enter the end date and time (YYYY-MM-DD HH:MM:SS) OR Please enter the end time (HH:MM:SS) |
 | `order_amount`               | decimal     |             | True        | What is the amount of `base_asset` per order?|
@@ -49,7 +48,7 @@ This strategy implements a market making strategy described in the classic paper
 | `order_level_mode`               | int         |  1          | False       | How many orders do you want to place on both sides? |
 | `level_distances`            | decimal     |  0          | False       | How far apart in % of optimal spread should orders on one side be? |
 | `order_override`             | json        |             | False       |  |
-| `hanging_orders_mode  `     | bool        |  False      | False       | How do you want to handle hanging orders? (track_hanging_orders/ignore_hanging_orders) |
+| `hanging_orders_mode`     | bool        |  False      | False       | How do you want to handle hanging orders? (track_hanging_orders/ignore_hanging_orders) |
 | `should_wait_order_cancel_confirmation` |  bool |  True       | False       | Should the strategy wait to receive a confirmation for orders cancellation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
 
 ## 📓 Description
@@ -63,32 +62,32 @@ This strategy implements a market making strategy described in the classic paper
 
 The strategy continuously calculates optimal positioning of a market maker's buy and sell limit orders within an order book, based on the following information:
 
-- **Current order book liquidity**
-- **Asset price volatility**
-- **Desired portfolio allocation (target inventory)**
-- **Trading session timeframe**
-- **Risk factor (user choice)**
+* **Current order book liquidity**
+* **Asset price volatility**
+* **Desired portfolio allocation (target inventory)**
+* **Trading session timeframe**
+* **Risk factor (user choice)**
 
 There is two main values that are calculated by the model, based on the factors mentioned above:
 
-- **Reservation price**: A price different from the market mid price, that will be used as reference to create orders.
-- **Optimal spread**: The best possible spread from the *reservation price* where the orders will be created.
+* **Reservation price**: A price different from the market mid price, that will be used as reference to create orders.
+* **Optimal spread**: The best possible spread from the *reservation price* where the orders will be created.
 
 Compared to the previous version these parameters were removed:
 
-- `parameters_based_on_spread`
-- `max_spread`
-- `vol_to_spread_multiplier`
-- `volatility_sensibility`
-- `inventory_risk_aversion`
-- `order_book_depth_factor`
-- `closing_time`
+* `parameters_based_on_spread`
+* `max_spread`
+* `vol_to_spread_multiplier`
+* `volatility_sensibility`
+* `inventory_risk_aversion`
+* `order_book_depth_factor`
+* `closing_time`
 
 Parameter `min_spread` has a different meaning, parameter `risk_factor` is being used differently in the calculations and therefore attains a different range of values.
 
 #### Reservation Price
 
-The farther the current inventory is from the desired asset allocation (as defined by the `inventory_target_base_pct` parameter), the greater the distance between **reservation price** and the market mid price. The strategy skews the probability of either buy or sell orders being filled, depending on the difference between the current inventory and the `inventory_target_base_pct`. 
+The farther the current inventory is from the desired asset allocation (as defined by the `inventory_target_base_pct` parameter), the greater the distance between **reservation price** and the market mid price. The strategy skews the probability of either buy or sell orders being filled, depending on the difference between the current inventory and the `inventory_target_base_pct`.
 
 For example, If the strategy needs an asset to be sold to reach the `inventory_target_base_pct` value, sell orders will be placed closer to the mid price than buy orders.
 
@@ -96,9 +95,9 @@ For example, If the strategy needs an asset to be sold to reach the `inventory_t
 
 The **Optimal spread** values (which defines at what price each order will be created) is a function of the **order book liquidity**, **asset price volatility** and **trading session timeframe**. Each factor have an influence on the value calculated:
 
-- Low order book liquidity = Smaller optimal spread value
-- Low price volatility = Smaller optimal spread value
-- Time closer to the end of the trading session = Smaller optimal spread value
+* Low order book liquidity = Smaller optimal spread value
+* Low price volatility = Smaller optimal spread value
+* Time closer to the end of the trading session = Smaller optimal spread value
 
 #### Risk Factor
 
@@ -112,7 +111,7 @@ In that case, the user is taking more inventory risk, because there will be no s
 
 The higher the value, the more aggressive the strategy will be to reach the `inventory_target_base_pct`, increasing the distance between the **Reservation price** and the market mid price.
 
-It's a unit-less parameter, that can be set to any non-zero value as necessary, depending on the inventory risk the user is willing to take. 
+It's a unit-less parameter, that can be set to any non-zero value as necessary, depending on the inventory risk the user is willing to take.
 
 > NOTE: The `risk_factor` is defined relative to the instant volatility of the asset given in absolute price values. For all assets the values `risk_factor` can attain should be roughly within the same range, however there can be a few exceptions where the parameter would require a significantly different value to start having an effect on the **Reservation price** and on the **Optimal Spread**
 > As an example, for asset A, a `risk_factor = 1` can already have a noticeable effect, while for asset B, the `risk_factor` must be at least around 10 to have any noticeable effect.
@@ -123,9 +122,7 @@ Given the right market conditions and the right `risk_factor`, it's possible tha
 
 In setting the `risk_factor` it's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
 
-
 ![Figure 1: Risk factor adjustment flow chart ](/assets/img/avellaneda_risk_factor.svg)
-
 
 #### ETA (Order size adjustment)
 
@@ -149,7 +146,6 @@ Users have an option to layer orders on both sides. If more than 1 `order_levels
 | **Are multiple levels defined?**   | Is value of `order_levels` higher than 1?                                                                   |
 | **Is minimum spread defined?**     | Is value of `min_spread` higher than 0?                                                                     |
 
-
 ### Timeframes
 
 The original Avellaneda-Stoikov model was designed to be used for market making on stock markets, which have defined trading hours. The assumption was that the market maker wants to end the trading day with the same inventory he started.
@@ -160,41 +156,39 @@ Since cryptocurrency markets are open 24/7, there is no "closing time", and the 
 
 The strategy allows three possible timeframes to be used:
 
-- `infinite` - No closing time for the trading session is considered
-- `from_date_to_date` - The strategy will begin trading on the `start_time` (YYYY-MM-DD HH:MM:SS) and stop at the `end_time` (YYYY-MM-DD HH:MM:SS), as one single trading session.
-- `daily_between_times` - The strategy will run as multiple trading sessions, and every day will begin to trade at `start_time` (HH:MM:SS) and stop at `end_time` (HH:MM:SS)
+* `infinite` - No closing time for the trading session is considered
+* `from_date_to_date` - The strategy will begin trading on the `start_time` (YYYY-MM-DD HH:MM:SS) and stop at the `end_time` (YYYY-MM-DD HH:MM:SS), as one single trading session.
+* `daily_between_times` - The strategy will run as multiple trading sessions, and every day will begin to trade at `start_time` (HH:MM:SS) and stop at `end_time` (HH:MM:SS)
 
-For the `infinite` timeframe the equations used to calculate the reservation price and the optimal spread are slightly different, because the strategy doesn't have to take into account the time left until the end of a trading session. 
+For the `infinite` timeframe the equations used to calculate the reservation price and the optimal spread are slightly different, because the strategy doesn't have to take into account the time left until the end of a trading session.
 
 Both the `start_time` and the `end_time` parameters are defined to be in the local time of the computer on which the client is running. For the `infinite` timeframe these two parameters have no effect.
 
 ### Asset Characteristics Estimation
 
-The strategy calculates the reservation price and the optimal spread based on measurements of the current asset volatility and the order book liquidity. The asset volatility estimator is implemented as the `instant_volatility` indicator, the order book liquidity estimator is implemented as the `trading_intensity` indicator. 
+The strategy calculates the reservation price and the optimal spread based on measurements of the current asset volatility and the order book liquidity. The asset volatility estimator is implemented as the `instant_volatility` indicator, the order book liquidity estimator is implemented as the `trading_intensity` indicator.
 
 Before any estimates can be given, both estimators need to have their buffers filled. By default the lengths of these buffers are set to be 200 ticks. In case of the `trading_intensity` estimator only order book snapshots different from preceding snapshots count as valid ticks. Therefore the strategy may take longer than 200 seconds (in case of the default length of the buffer) to start placing orders.
 
 The `trading_intensity` estimator is designed to be consistent with ideas outlined in the Avellaneda-Stoikov paper. The `instant_volatility` estimator defines volatility as a deviation of prices from one tick to another in regards to a zero-change price action.
 
-
 ### Minimum Spread
 
 The `minimum_spread` parameter is optional, it has no effect on the calculated reservation price and the optimal spread. It serves as a hard limit below which orders won't be placed, if users  choose to ensure that buy and sell orders won't be placed too close to each other, which may be detrimental to the market maker's earned fees. The minimum spread is given by the `minimum_spread` parameter as a percentage of the mid price. By default its value is 0, therefore the strategy places orders at optimal bid and ask prices.
 
-
 ### References
 
-- [High-frequency Trading in a Limit Order Book - Avellaneda, Stoikov](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf)
-- [Optimal High-Frequency Market Making - Fushimi, Rojas, Herman](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf)
+* [High-frequency Trading in a Limit Order Book - Avellaneda, Stoikov](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf)
+* [Optimal High-Frequency Market Making - Fushimi, Rojas, Herman](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf)
 
 ## ℹ️ More Resources
 
 :fontawesome-solid-globe: [High-frequency trading in a limit order book](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf): The seminal 2008 paper on market making, published in *Quantitative Finance*, by Marco Avellaneda and Sasha Stoikov.
 
-:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://hummingbot.io/en/blog/2021-04-avellaneda-stoikov-market-making-strategy): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://blog.hummingbot.org/blog-2021-04-avellaneda-stoikov-market-making-strategy/): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
 
-:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](https://hummingbot.io/en/blog/2021-04-avellaneda-tech-deepdown): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
+:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](https://blog.hummingbot.org/blog-2021-04-avellaneda-tech-deepdown/): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
 
 :fontawesome-brands-youtube: [New Avellaneda Market Making Strategy Demo + AMA | Hummingbot Live](https://www.youtube.com/watch?v=ZbkkGvB-fis): Demo of the latest iteration of Avellaneda Market Making strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

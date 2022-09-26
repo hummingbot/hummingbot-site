@@ -37,4 +37,4 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📘 Additional Resources
 
-See [Avalanche](/gateway/chains/ethereum.md#avalanche) for more information about the default configuration settings and how to change them.
+See [Avalanche](/gateway/chains/ethereum#avalanche) for more information about the default configuration settings and how to change them.

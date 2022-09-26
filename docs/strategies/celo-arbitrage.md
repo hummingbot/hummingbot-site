@@ -7,12 +7,11 @@ tags:
 
 # `celo_arb`
 
-
 ## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/celo_arb)
 
 ## 📝 Summary
 
-This strategy is a predecessor to the `amm_arb` strategy built specifically to help [Celo Protocol](https://celo.org/) maintain price stability for its stablecoin pairs. Like `amm_arb`, this strategy monitors prices between AMM-based exchanges on the Celo blockchain versus another trading pair on another `spot` or `amm` exchange in order to identify arbitrage opportunities. 
+This strategy is a predecessor to the `amm_arb` strategy built specifically to help [Celo Protocol](https://celo.org/) maintain price stability for its stablecoin pairs. Like `amm_arb`, this strategy monitors prices between AMM-based exchanges on the Celo blockchain versus another trading pair on another `spot` or `amm` exchange in order to identify arbitrage opportunities.
 
 It executes offsetting buy and sell orders in both markets in order to capture arbitrage opportunities with profitability higher than `min_profitability`, net of transaction costs, which include both blockchain transaction fees (gas) and exchange fees.
 
@@ -47,10 +46,10 @@ It executes offsetting buy and sell orders in both markets in order to capture a
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [Quickstart Guide for celo-arb](https://hummingbot.io/en/academy/celo-arb/?_ga=2.247744654.866973443.1649059002-567388704.1647856298): We have created this guide to help users of the new celo-arb strategy install and run the strategy on a cloud instance.
+:fontawesome-solid-book: [Quickstart Guide for celo-arb](https://hummingbot.io/academy/celo-arb/?_ga=2.247744654.866973443.1649059002-567388704.1647856298): We have created this guide to help users of the new celo-arb strategy install and run the strategy on a cloud instance.
 
-:fontawesome-solid-book: [How celo-arb works](https://hummingbot.io/en/blog/2020-06-celo-arbitrage): This article guides you in running the `celo-arb` strategy.
+:fontawesome-solid-book: [How celo-arb works](https://blog.hummingbot.org/blog-2020-06-celo-arbitrage/): This article guides you in running the `celo-arb` strategy.
 
-:fontawesome-solid-book: [New arbitrage opportunity: Wrapped CELO](https://hummingbot.io/en/blog/2020-12-wrapped-celo-uniswap-arbitrage): This article introduces a new arbitration strategy known as Wrapped Celo arbitration.
+:fontawesome-solid-book: [New arbitrage opportunity: Wrapped CELO](https://blog.hummingbot.org/blog-2020-12-wrapped-celo-uniswap-arbitrage/): This article introduces a new arbitration strategy known as Wrapped Celo arbitration.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

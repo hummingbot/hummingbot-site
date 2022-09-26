@@ -68,13 +68,13 @@ During the first epoch, the Foundation goals are to:
 - Grow the number of users by making Hummingbot easier to use, more flexible, and more powerful
 - Diversify the number of maintainers that maintain individual components in the Hummingbot codebase
 
-We divide the 30 million distribution target across three categories of [Hummingbot Governance Proposals (HGPs)](/governance/proposals/hgp) that HBOT token holders can submit. All governance-related proposals are voted on in the [main Snapshot space](https://snapshot.org/#/hbot.eth), which is reserved for HGPs.
+We divide the 30 million distribution target across three categories of [Hummingbot Governance Proposals (HGPs)](/governance/proposals/#hgp) that HBOT token holders can submit. All governance-related proposals are voted on in the [main Snapshot space](https://snapshot.org/#/hbot.eth), which is reserved for HGPs.
 
 | Category                                                                      | Total HBOT Available      | Target Number of Grants |
 | ------------------------------------------------------------------------------| ------------------------- | ----------------------- |
-| [Liquidity Distributions](/governance/proposals/hgp/#liquidity-distributions-ld) | 15,000,000                | 10 platforms             |
-| [Dev Grant Budget](/governance/proposals/hgp/#dev-grant-budget-dg)               | 10,000,000                | 50 dev grants           |
-| [Initiative Budget](/governance/proposals/hgp/#initiative-budget-ib)     | 5,000,000                 | 5 initiatives           |
+| [Liquidity Distributions](/governance/proposals/#liquidity-distributions-ld) | 15,000,000                | 10 platforms             |
+| [Dev Grant Budget](/governance/proposals/#dev-grant-budget-dg)               | 10,000,000                | 50 dev grants           |
+| [Initiative Budget](/governance/proposals/#initiative-budget-ib)     | 5,000,000                 | 5 initiatives           |
 
 ## We successfully launched our first community call
 

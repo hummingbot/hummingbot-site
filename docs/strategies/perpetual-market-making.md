@@ -72,13 +72,13 @@ Similar to the `pure_market_making_strategy`, the `perpetual_market_making` stra
 
 The `perpetual_market_making` strategy works in a similar fashion as the `pure_market_making_strategy`, except adapted to trading perpetual swaps. Trading perpetual swaps creates positions, and doesn't just exchage assets like trading on spot markets.
 
-On every tick the strategy creates new opening orders and existing orders are being cancelled. If an outstanding order is filled, the strategy then has to manage the position. 
+On every tick the strategy creates new opening orders and existing orders are being cancelled. If an outstanding order is filled, the strategy then has to manage the position.
 
 ![Figure 1: General strategy flow chart](/assets/img/perp_mm-flowchart-1.svg)
 
 ### Order Placement
 
-The strategy places long and short orders to open perpetual swap positions at predefined distances from a mid price. These distances are given by the parameters `bid_spread` and `ask_spread`. 
+The strategy places long and short orders to open perpetual swap positions at predefined distances from a mid price. These distances are given by the parameters `bid_spread` and `ask_spread`.
 
 On every tick, outstanding open orders are being evaluated. If they're too far from the proposal orders, as defined by the `order_refresh_tolerance_pct` parameter, they will be cancelled and replaced by new orders.
 If an active order finds itself below a `min_spread` threshold from the mid price, it will also be cancelled.
@@ -99,4 +99,4 @@ New opening orders are not being placed if one or more of existing opening order
 
 :fontawesome-brands-youtube: [Perpetual Market Making Demo | Hummingbot Live](https://www.youtube.com/watch?v=IclhZWtKiSA): Demo of the Perpetual Market Making strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

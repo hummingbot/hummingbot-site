@@ -21,9 +21,9 @@ The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/pro
 
 After Epoch 1, the Foundation conducted a retrospective and recommended a number of improvements to the governance process to make it more community-oriented and efficient:
 
-- [Epoch 2 proposed governance changes (Part 1)](https://forum.hummingbot.org//t/epoch-2-proposed-governance-changes-part-1/45/1)
-- [Epoch 2 proposed governance changes (Part 2)](https://forum.hummingbot.org//t/epoch-2-proposed-governance-changes-part-2/123)
-- [Epoch 2 proposed changes (master thread)](https://forum.hummingbot.org//t/epoch-2-proposed-changes-master-thread/129)
+- [Epoch 2 proposed governance changes (Part 1)](https://forum.hummingbot.org/t/epoch-2-proposed-governance-changes-part-1/45/1)
+- [Epoch 2 proposed governance changes (Part 2)](https://forum.hummingbot.org/t/epoch-2-proposed-governance-changes-part-2/123)
+- [Epoch 2 proposed changes (master thread)](https://forum.hummingbot.org/t/epoch-2-proposed-changes-master-thread/129)
 
 After discussing these changes with the community in weekly calls, the Foundation proceeded to implement these changes starting in Epoch 2.
 

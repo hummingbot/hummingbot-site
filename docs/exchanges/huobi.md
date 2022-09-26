@@ -9,14 +9,14 @@ tags:
 
 ## ℹ️ Exchange Info
 
-**Huobi Global** 
+**Huobi Global**
 [Website](https://www.hbg.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/huobi-global/) | [CoinGecko](https://www.coingecko.com/en/exchanges/huobi)
 
-* API docs: https://huobiapi.github.io/docs/spot/v1/en/#change-log
-* Transaction fees: https://www.hbg.com/en-us/about/fee/
-* Minimum order size: https://huobiglobal.zendesk.com/hc/en-us/articles/900000210246-Announcement-on-Adjusting-Minimum-Order-Amount-for-Some-Trading-Pairs
-* Creating API keys: https://www.huobi.com/support/en-us/detail/360000203002
-* Referral link: https://www.huobi.com/en-us/topic/double-reward/?invite_code=en9k2223
+* API docs: <https://huobiapi.github.io/docs/spot/v1/en/#change-log>
+* Transaction fees: <https://www.hbg.com/en-us/about/fee/>
+* Minimum order size: <https://huobiglobal.zendesk.com/hc/en-us/articles/900000210246-Announcement-on-Adjusting-Minimum-Order-Amount-for-Some-Trading-Pairs>
+* Creating API keys: <https://www.huobi.com/support/en-us/detail/360000203002>
+* Referral link: <https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223>
 
 !!! note
     Special fee rate by registering through the link above.
@@ -30,13 +30,14 @@ tags:
 ## 🔑 Connection
 
 Run `connect huobi` in order to enter your API keys:
- 
+
 ```
 Enter your Huobi API key >>>
 Enter your Huobi secret key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to huobi.
 ```

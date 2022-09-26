@@ -9,7 +9,7 @@ hide:
 
 *Posted on December 17, 2021*
 
-As announced in [this October post](https://hummingbot.io/en/blog/hummingbot-foundation/), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots.
+As announced in [this October post](https://hummingbot.io/blog/hummingbot-foundation/), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots.
 
 Like our spiritual predecessor the Linux Foundation, we believe that community maintenance is key to scaling Hummingbot to every exchange and blockchain and enabling traders to build any type of bot.
 

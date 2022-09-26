@@ -20,6 +20,7 @@ This strategy creates and maintains Uniswap positions as the market price change
 [`uniswap`](/gateway/exchanges/uniswap/)
 
 To use this connector, run:
+
 ```
 gateway connect uniswapLP
 ```
@@ -41,7 +42,7 @@ gateway connect uniswapLP
 | `base_token_amount`          | decimal     |             | True        | How much of your base token do you want to use for the buy position? |
 | `quote_token_amount`         | decimal     |             | True        | How much of your quote token do you want to use for the sell position? |
 | `min_profitability`          | decimal     |             | True        | What is the minimum profitability for each position is be adjusted? (Enter 1 to indicate 1%)|
-| `use_volatility`             | bool        |  False      | False       | Do you want to use price volatility to adjust spreads? (Yes/No)| 
+| `use_volatility`             | bool        |  False      | False       | Do you want to use price volatility to adjust spreads? (Yes/No)|
 | `volatility_period`          | int         |  1          | False       | Enter how long (in hours) do you want to use for price volatility calculation |
 | `volatility_factor`          | decimal     |  1.00       | False       | Enter the multiplier applied to price volatility |
 
@@ -58,14 +59,14 @@ gateway connect uniswapLP
 3. Fetch the current mid price of the pool (`last_price`)
 3. If `use_volatility` is True, the bot will calculate the price volatility used to widen spreads
 4. If the pool is valid, the bot will create two starting positions:
-    - The SELL position with:
-        - Amount of tokens added to the position = `base_token_amount`
-        - `upper_price` = `(1 + sell_spread) * last_price` 
-        - `lower_price` = `last_price`
-    - The BUY position with:
-        - Amount of tokens added to the position = `quote_token_amount`
-        - `upper_price` = `last_price`
-        - `lower_price` = `(1 - buy_spread) * last_price`
+    * The SELL position with:
+        * Amount of tokens added to the position = `base_token_amount`
+        * `upper_price` = `(1 + sell_spread) * last_price`
+        * `lower_price` = `last_price`
+    * The BUY position with:
+        * Amount of tokens added to the position = `quote_token_amount`
+        * `upper_price` = `last_price`
+        * `lower_price` = `(1 - buy_spread) * last_price`
 
 ![image.png](/assets/img/uniswap-v3-1.png)
 
@@ -78,9 +79,9 @@ Each tick, the bot monitors the pool mid price (`last_price`) and compare it to 
 **`last_price` is higher than `upper_price` of `total_position_range`**
 
 1. Create a new SELL liquidity position, using the following values:
-    - Amount of tokens of the new position = `base_token_amount`
-    - Top price bound = `(1 + sell_spread) * last_price`
-    - Lower price bound = `last_price`
+    * Amount of tokens of the new position = `base_token_amount`
+    * Top price bound = `(1 + sell_spread) * last_price`
+    * Lower price bound = `last_price`
 2. Update `total_position_range`: `upper_price = (1 + sell_spread) * last_price`
 
 ![image.png](/assets/img/uniswap-v3-2.png)
@@ -88,21 +89,20 @@ Each tick, the bot monitors the pool mid price (`last_price`) and compare it to 
 **`last_price` is lower than `lower_price` of `total_position_range`**
 
 1. Create a new BUY liquidity position, using the following values:
-    - Amount of tokens of the new position = `quote_token_amount`
-    - New position upper price = `last_price`
-    - New position lower price = `(1 - buy_spread) * last_price`
+    * Amount of tokens of the new position = `quote_token_amount`
+    * New position upper price = `last_price`
+    * New position lower price = `(1 - buy_spread) * last_price`
 2. Update `total_position_range`: `lower_price = (1 - buy_spread) * last_price`
 
 ![image.png](/assets/img/uniswap-v3-3.png)
 
 ### Important Notes
 
-- Currently, the strategy does not remove existing positions. The user should do it manually through the Uniswap interace (https://app.uniswap.org/#/pool).
-- The `status` command shows the current profitability of each position, using the `quote` asset as reference
-
+* Currently, the strategy does not remove existing positions. The user should do it manually through the Uniswap interace (<https://app.uniswap.org/#/pool>).
+* The `status` command shows the current profitability of each position, using the `quote` asset as reference
 
 ## ℹ️ More Resources
 
 :fontawesome-brands-youtube: [Uniswap V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI): Demo of the latest iteration of Uniswap V3 strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
