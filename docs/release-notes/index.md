@@ -1,11 +1,16 @@
 We generally release a new version of Hummingbot **every month**. See below for information about each release.
 
+## [1.8.0](./1.8.0/)
+
+* **Released**: September 30, 2022
+* **Github**: [`v1.8.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.8.0)
+* **DockerHub**: [`version-1.8.0`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.8.0/images/sha256-adf16303dff6d662b8de08fe745d183e363fb53ec6eac6b929981ec2c2067684?context=explore) | [`version-1.8.0-arm_beta`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.8.0-arm_beta/images/sha256-d8998a814bdc3c264a2329d5d49b7fa8b7e9cd0edaf07a5e845ad2ae79278e34?context=explore)
+
 ## [1.7.0](./1.7.0/)
 
 * **Released**: August 31, 2022
 * **Github**: [`v1.7.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.7.0)
 * **DockerHub**: [`version-1.7.0`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.7.0/images/sha256-adf16303dff6d662b8de08fe745d183e363fb53ec6eac6b929981ec2c2067684?context=explore) | [`version-1.7.0-arm_beta`](https://hub.docker.com/layers/hummingbot/hummingbot/version-1.7.0-arm_beta/images/sha256-d8998a814bdc3c264a2329d5d49b7fa8b7e9cd0edaf07a5e845ad2ae79278e34?context=explore)
-
 
 ## [1.6.0](./1.6.0/)
 
