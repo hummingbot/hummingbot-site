@@ -10,7 +10,7 @@ tags:
 
 ## 📝 Summary
 
-This strategy is a simple bot that places a series of limit orders on an exchange, while allowing users to control order size, price, and duration. 
+This strategy is a simple bot that places a series of limit orders on an exchange, while allowing users to control order size, price, and duration.
 
 We recommend this strategy as a starting point for developers looking to build their own strategies, and it is used as reference for articles in [Developer Reference: Strategies](/developers/strategies).
 
@@ -26,7 +26,6 @@ We recommend this strategy as a starting point for developers looking to build t
 ## 🛠️ Strategy configs
 
 [Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/twap/twap_config_map.py)
-
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
@@ -102,6 +101,6 @@ TWAP processes orders when there is a remaining order quantity & the specified t
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy 
+:fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

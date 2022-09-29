@@ -101,4 +101,4 @@ In the 3-part series below, Paulo will discuss Hedge in Market Making, including
 
 :fontawesome-brands-youtube: [Hedge in Market Making using dYdX Perpetuals | Trader Strategies | Part 03](https://www.youtube.com/watch?v=E_M_SUAP3Zo&t=8s)
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

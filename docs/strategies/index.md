@@ -45,7 +45,7 @@ Market making strategies help you provide liquidity to an exchange while mitigat
 * [HBOT 101 : What Is Market Making?](https://blog.hummingbot.org/blog-2020-09-what-is-market-making/)
   * This article goes through the basic concepts of market making for beginners.
 
-* [Basic concepts of Crypto Trading](https://hummingbot.io/en/academy/basic-concepts-of-crypto-trading/#market-makers-and-market-takers)
+* [Basic concepts of Crypto Trading](https://hummingbot.io/academy/basic-concepts-of-crypto-trading/#market-makers-and-market-takers)
   * Basic 101 concepts of crypto trading and common terminologies.
 
 * [How does Market Making work?](https://hummingbot.org/news/market-making/)
@@ -92,4 +92,4 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 
 :fontawesome-brands-youtube: [Create a Custom Strategy | Hummingbot Live](https://www.youtube.com/watch?v=td-E3M0qRsA&list=PLDwlNkL_4MMfdo3Vax5HUwvaduSu33-Mk): Learn about creating custom strategies with Paulo. Hummingbot lets you customize your strategies by configuring your bots to optimize its maximum potential in liquidity providing.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/en/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

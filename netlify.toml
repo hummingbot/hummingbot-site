@@ -1,5 +1,5 @@
 [build]
-    command = "pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git mkdocs-git-revision-date-plugin p && mkdocs build"
+    command = "pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git mkdocs-git-revision-date-plugin pillow cairosvg p && mkdocs build"
     publish = "site"
 
 [[plugins]]
