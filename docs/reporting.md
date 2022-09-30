@@ -4,9 +4,11 @@ The Google Sheet below provides an overview of the HBOT allocations set by vario
 
 <a href="https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing" target="_blank" class="md-button md-button--primary">:fontawesome-solid-coins: HBOT Tracker</a>
 
-## Monthly Reports
+## Monthly Financials
 
-To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation publishes a monthly report that describes the sources and uses of funds over the course of the month, as well as the total treasury position at the end of the month.
+To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation publishes a monthly financial report that describes the sources and uses of funds over the course of the month, as well as the total treasury position at the end of the month.
+
+[August 2022](https://hummingbot-foundation.notion.site/August-2022-b4e0f466e06843c8b129608181d0d2a8)
 
 [July 2022](https://hummingbot-foundation.notion.site/July-2022-05c6709e18a347f3abd7e50a18127b5e)
 
