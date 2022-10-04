@@ -6,7 +6,7 @@ This feature allows users to test Hummingbot and simulate trading strategies wit
 
 ## Adding Exchanges
 
-Users can now add paper exchanges by adding the exchange of choice in `conf_client.yml`. Previously, it was only available for AscendEX, Binance, Gate io, and Kucoin. Users can find `conf_client.yml` in `hummingbot>conf>conf_client.yml`
+Users can now add paper exchanges by adding the exchange of choice in `conf_client.yml`. Previously, it was only available for AscendEX, Binance, Gate io, and Kucoin. Users can find `conf_client.yml` in `hummingbot/conf/conf_client.yml`
 
 ![paper-trade-exchanges](/assets/img/paper_trade_exchanges.png)
 
