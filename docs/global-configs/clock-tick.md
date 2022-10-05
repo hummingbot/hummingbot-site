@@ -12,10 +12,18 @@ There are two ways to configure the tick size
 
 1. From within Hummingbot run the command `config tick_size` and enter the desired tick size in decimal form.
 
-2. Edit the `conf_client.yml` file located inside the `hummingbot_conf` folder using a text editor. Look for `tick_size: 1.0` and change `1.0` to whatever tick size you want.
+![](tick_size_a.png)
+
+2. Stop and exit Hummingbot then edit the `conf_client.yml` file located inside the `hummingbot_conf` folder using a text editor. Look for `tick_size: 1.0` and change `1.0` to whatever tick size you want. Save the changes to the yml file then run Hummingbot again for the changes to take effect.
+
+![](tick_size_b.png)
 
 !!! Note
-    The tick size cannot be set lower than 0.1
+    Due to connector limitations, the tick size cannot be set lower than 0.1
+
+To check what the current `tick_size` is, you can run the `config` command and check the tick_size value under the **Global Configurations** section
+
+![](tick_size_c.png)
 
 ## More Resources
 
