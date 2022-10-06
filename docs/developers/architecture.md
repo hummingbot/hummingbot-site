@@ -1,4 +1,4 @@
-*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/blog-2021-03-hummingbot-architecture/), [part 2](https://blog.hummingbot.org/blog-2021-05-hummingbot-architecture-part2/)*
+*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/2021-03-hummingbot-architecture/), [part 2](https://blog.hummingbot.org/2021-05-hummingbot-architecture-part2/)*
 
 ## Introduction
 

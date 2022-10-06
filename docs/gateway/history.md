@@ -1,4 +1,4 @@
-*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/blog-gateway-v2-code-architecture/), [part 2](https://blog.hummingbot.org/blog-gateway-architecture-part-2/)*
+*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/gateway-v2-code-architecture/), [part 2](https://blog.hummingbot.org/gateway-architecture-part-2/)*
 
 ## Introduction
 
