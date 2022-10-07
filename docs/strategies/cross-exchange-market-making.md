@@ -170,7 +170,7 @@ Another difference is dependence of transaction fees on currrent gas fees. There
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is cross exchange market making?](https://blog.hummingbot.org/blog-2020-09-what-is-cross-exchange-market-making/)
+:fontawesome-solid-book: [What is cross exchange market making?](https://blog.hummingbot.org/2020-09-what-is-cross-exchange-market-making/)
 
 :fontawesome-brands-youtube: [Cross Exchange Market Making with Jelle](https://www.youtube.com/watch?v=fEoEAbPoBGA)
 

@@ -42,7 +42,7 @@ Market making strategies help you provide liquidity to an exchange while mitigat
 * 🎥&emsp;[What is Market Making? Interview with Hummingbot CEO Michael Feng](https://www.youtube.com/watch?v=HfHaQS-nWHw)
   * Hummingbot's CEO, Michael Feng, explains how the market-making and hedge fund business works. Michael talks about how Hummingbot started out as a quantitative hedge fund and turned to open source software to decentralize the market process with the Hummingbot miner liquidity mining platform.
 
-* [HBOT 101 : What Is Market Making?](https://blog.hummingbot.org/blog-2020-09-what-is-market-making/)
+* [HBOT 101 : What Is Market Making?](https://blog.hummingbot.org/2020-09-what-is-market-making/)
   * This article goes through the basic concepts of market making for beginners.
 
 * [Basic concepts of Crypto Trading](https://hummingbot.io/academy/basic-concepts-of-crypto-trading/#market-makers-and-market-takers)
@@ -51,10 +51,10 @@ Market making strategies help you provide liquidity to an exchange while mitigat
 * [How does Market Making work?](https://hummingbot.org/news/market-making/)
   * Basic walkthrough of how market making works
 
-* [Beginner’s Top misconceptions on market making](https://blog.hummingbot.org/blog-2022-03-02-beginners-top-misconceptions/)
+* [Beginner’s Top misconceptions on market making](https://blog.hummingbot.org/2022-03-02-beginners-top-misconceptions/)
   * Common misconceptions for beginners that can save you a lot of time from making mistakes
 
-* [Common hallmarks of successful miners](https://blog.hummingbot.org/blog-2022-03-04-common-hallmarks-of-successful-miners/)
+* [Common hallmarks of successful miners](https://blog.hummingbot.org/2022-03-04-common-hallmarks-of-successful-miners/)
   * You must be wondering, what are the top miners doing that is earning them thousands of dollars a week? This piece is a result of discussions with some of the miners who are in the Eagle Club, and we hope it unveils some of the things profitable miners do.
 
 * 🎥&emsp;[Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw)
@@ -74,8 +74,8 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 
 ## Useful Links
 
-* [What is Arbitrage?](https://blog.hummingbot.org/blog-2020-09-what-is-arbitrage/)
-* [Introducing the new Balancer connector and arbitrage strategy!](https://blog.hummingbot.org/blog-2020-11-balancer-arbitrage/)
+* [What is Arbitrage?](https://blog.hummingbot.org/2020-09-what-is-arbitrage/)
+* [Introducing the new Balancer connector and arbitrage strategy!](https://blog.hummingbot.org/2020-11-balancer-arbitrage/)
 * 🎥&emsp;[How to Spot Market Making and Arbitrage opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU)
 
 ### Utility
@@ -88,7 +88,7 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [Strategy coding for dummies](https://blog.hummingbot.org/blog-2022-03-26-strategy-coding-for-dummies/): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
+:fontawesome-solid-book: [Strategy coding for dummies](https://blog.hummingbot.org/2022-03-26-strategy-coding-for-dummies/): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
 
 :fontawesome-brands-youtube: [Create a Custom Strategy | Hummingbot Live](https://www.youtube.com/watch?v=td-E3M0qRsA&list=PLDwlNkL_4MMfdo3Vax5HUwvaduSu33-Mk): Learn about creating custom strategies with Paulo. Hummingbot lets you customize your strategies by configuring your bots to optimize its maximum potential in liquidity providing.
 

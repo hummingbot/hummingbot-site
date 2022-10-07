@@ -251,7 +251,7 @@ Currently, only the following parameters can be reconfigured without stopping th
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is market making?](https://blog.hummingbot.org/blog-2020-09-what-is-market-making/): A blog post that explains the basics of market making.
+:fontawesome-solid-book: [What is market making?](https://blog.hummingbot.org/2020-09-what-is-market-making/): A blog post that explains the basics of market making.
 
 :fontawesome-brands-youtube: [How to set up a simple pure market making bot on Binance](https://www.youtube.com/watch?v=La7E6uudOYY): Learn how to create pure market making bot on Binance exchange.
 

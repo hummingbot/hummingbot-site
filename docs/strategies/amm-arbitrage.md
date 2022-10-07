@@ -51,7 +51,7 @@ Hummingbot will be accessing `amm` exchanges via Gateway V2 from v1.4.0. If you 
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [How to arbitrage AMMs like Uniswap and Balancer](https://blog.hummingbot.org/blog-2020-12-amm-arbitrage-uniswap-balancer/): Learn how you can Arbitrage AMMs with our strategy
+:fontawesome-solid-book: [How to arbitrage AMMs like Uniswap and Balancer](https://blog.hummingbot.org/2020-12-amm-arbitrage-uniswap-balancer/): Learn how you can Arbitrage AMMs with our strategy
 
 :fontawesome-solid-book: [Quickstart Guide for amm_arb (deprecated)](https://hummingbot.io/academy/amm-arb): This guide will walk you through the installation and launch of the new `amm_arb` strategy
 

@@ -185,9 +185,9 @@ The `minimum_spread` parameter is optional, it has no effect on the calculated r
 
 :fontawesome-solid-globe: [High-frequency trading in a limit order book](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf): The seminal 2008 paper on market making, published in *Quantitative Finance*, by Marco Avellaneda and Sasha Stoikov.
 
-:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://blog.hummingbot.org/blog-2021-04-avellaneda-stoikov-market-making-strategy/): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](https://blog.hummingbot.org/2021-04-avellaneda-stoikov-market-making-strategy/): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
 
-:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](https://blog.hummingbot.org/blog-2021-04-avellaneda-tech-deepdown/): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
+:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](https://blog.hummingbot.org/2021-04-avellaneda-tech-deepdown/): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
 
 :fontawesome-brands-youtube: [New Avellaneda Market Making Strategy Demo + AMA | Hummingbot Live](https://www.youtube.com/watch?v=ZbkkGvB-fis): Demo of the latest iteration of Avellaneda Market Making strategy
 

@@ -25,11 +25,11 @@ Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com
 * [The Hummingbot origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-market-making-bot)
 * [7 common questions about Hummingbot](https://hummingbot.io/blog/2019-03-7-hummingbot-questions/)
 * [Hummingbot is live!](https://hummingbot.io/blog/2019-04-announcing-hummingbot)
-* [How to run Hummingbot in the cloud](https://blog.hummingbot.org/blog-2019-06-cloud-providers/)
-* [Price Source Configuration](https://blog.hummingbot.org/blog-2020-11-commands-and-config-price-source/)
-* [Commands and Configs - Part 1](https://blog.hummingbot.org/blog-2020-11-commands-and-configs-part1/)
-* [Commands and Configs - Part 2](https://blog.hummingbot.org/blog-2020-11-commands-and-configs-part2/)
-* [Using TradingView and webhooks to automate Hummingbot](https://blog.hummingbot.org/blog-2021-01-automate-tradingview-for-hummingbot/)
+* [How to run Hummingbot in the cloud](https://blog.hummingbot.org/2019-06-cloud-providers/)
+* [Price Source Configuration](https://blog.hummingbot.org/2020-11-commands-and-config-price-source/)
+* [Commands and Configs - Part 1](https://blog.hummingbot.org/2020-11-commands-and-configs-part1/)
+* [Commands and Configs - Part 2](https://blog.hummingbot.org/2020-11-commands-and-configs-part2/)
+* [Using TradingView and webhooks to automate Hummingbot](https://blog.hummingbot.org/2021-01-automate-tradingview-for-hummingbot/)
 
 ### Decentralized market making
 
@@ -38,4 +38,4 @@ Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com
 * [Demystifying liquidity mining rewards](https://hummingbot.io/blog/2019-12-liquidity-mining-rewards)
 * [Comparing liquidity mining options in DeFi vs. Hummingbot](https://hummingbot.io/blog/2020-08-liquidity-mining-hummingbot-vs-defi)
 * [The thin crust of liquidity: Why crypto needs more market makers](https://hummingbot.io/blog/2019-01-thin-crust-of-liquidity)
-* [Mapping the crypto market maker landscape](https://blog.hummingbot.org/blog-2020-02-crypto-market-marker-list/)
+* [Mapping the crypto market maker landscape](https://blog.hummingbot.org/2020-02-crypto-market-marker-list/)
