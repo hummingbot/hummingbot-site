@@ -1,24 +1,24 @@
 !!! tip
     Use the [development](https://github.com/hummingbot/hummingbot/tree/development), since Gateway is still new and undergoing active work. Once you have cloned the Hummingbot repo, you can run `git checkout development` to switch to that branch.
 
-
 For developers, we recommend installing Hummingbot from source, rather than Docker. This allows you to run Gateway as a standalone server and connect to it from the Hummingbot client. This setup has a few advantages:
 
 * Makes upgrading to new versions of Hummingbot/Gateway easier
 * Easier access to configuration files
 * Enables multiple client instances to connect to one Gateway instance
 
-First, follow [these instructions](/installation/source/) to **install Hummingbot from source** on MacOS, Windows, or Linux-based systems. 
+First, follow [these instructions](/installation/source/) to **install Hummingbot from source** on MacOS, Windows, or Linux-based systems.
 
 Then, follow the steps below to start a Gateway server and enable the Hummingbot client to communicate with it.
 
 ## 1. Generate certs
 
-After installing Hummingbot from source, run `bin/hummingboy.py` in order to start the Hummingbot client. You'll be promoted to enter a password.
+After installing Hummingbot from source, run `bin/hummingbot.py` in order to start the Hummingbot client. You'll be promoted to enter a password.
 
-In the first step, we generate encrypted certificates that the Gateway server will incorporate, which allows the client to authenticate the Gateway server with which it communicates. 
+In the first step, we generate encrypted certificates that the Gateway server will incorporate, which allows the client to authenticate the Gateway server with which it communicates.
 
-From the Hummingbot client, run the following command: 
+From the Hummingbot client, run the following command:
+
 ```
 >>> gateway generate-certs
 
@@ -73,6 +73,7 @@ keyPath: /usr/src/app/certs/server_key.pem
 ```
 
 Change the paths so that they matches the cert folder path from step 1, and save the file. This allows the Gateway server that you set up in step 3 to be able to decrypt messages from the Hummingbot client.
+
 ```yaml
 caCertificatePath: /Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs/ca_cert.pem
 certificatePath: /Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs/server_cert.pem
@@ -113,7 +114,6 @@ $ node dist/src/index.js --passphrase=XXXXXX
 ```
 
 When you run `yarn start`, make sure to use the same passphrase that you used in Step 1 to generate certs.
-
 
 ## 4. Connect wallet
 
