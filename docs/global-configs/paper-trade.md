@@ -8,10 +8,17 @@ This feature allows users to test Hummingbot and simulate trading strategies wit
 
 Users can now add paper exchanges by adding the exchange of choice in `conf_client.yml`. Previously, it was only available for AscendEX, Binance, Gate io, and Kucoin. Users can find `conf_client.yml` in `hummingbot/conf/conf_client.yml`
 
-![paper-trade-exchanges](/assets/img/paper_trade_exchanges.png)
+Add the paper trade exchange, for example ftx, to conf_client.yml:
 
-
-
+```
+paper_trade:
+  paper_trade_exchange:
+    - binance
+    - kucoin
+    - ascend_ex
+    - gate_io
+    - ftx
+```
 ## Enabling and Disabling
 
 Paper trading can be enabled when creating a strategy and choosing an exchange when prompted `Enter your maker spot connector` during the creation of the strategy.
