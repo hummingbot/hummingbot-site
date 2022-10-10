@@ -1,13 +1,13 @@
 Automatically stops the bot when it reaches a certain performance threshold, which can be either positive or negative. This feature uses the same performance calculation methodology as the [history](/operation/history/) command.
 
 ```
-Would you like to enable the kill switch? (Yes/No) >>>
+Select your kill-switch mode (kill_switch_enabled/kill_switch_disabled)  >>>
 At what profit/loss rate would you like the bot to stop? (e.g. -5 equals 5 percent loss) >>>
 ```
 
 You can always reconfigure this feature in two ways:
 
-1. Inside Hummingbot run command `config kill_switch_enabled` and/or `config kill_switch_rate`.
+1. Inside Hummingbot run command `config kill_switch_mode` and/or `config kill_switch_mode.kill_switch_rate`.
 2. Edit the `conf_client.yml` file located inside the `hummingbot_conf` folder using a text editor.
 
 !!! Note
@@ -16,8 +16,8 @@ You can always reconfigure this feature in two ways:
 Note that when the market prices changes, so does the bot's performance and may trigger the kill switch. For example, we executed 13 trades and our performance are shown below.
 
 ```json
-- kill_switch_enabled: True
-- kill_switch_rate: -0.3
+kill_switch_mode:
+  kill_switch_rate: -5.0
 ```
 
 ```

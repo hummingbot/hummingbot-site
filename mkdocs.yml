@@ -228,6 +228,7 @@ nav:
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
+      - Clock Tick Size: global-configs/clock-tick.md 
       - Color Settings: global-configs/color-settings.md
       - Kill Switch: global-configs/kill-switch.md
       - Override Fees: global-configs/override-fees.md

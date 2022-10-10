@@ -55,7 +55,7 @@ You can install Hummingbot with **_either_** of the following options:
 
     # 4) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version: [ latest/development ] ( default = 'latest' )
-    >> version-1.7.0-arm_beta
+    >> version-1.8.0-arm_beta
     ```
 
 === "Manual"
@@ -78,7 +78,7 @@ You can install Hummingbot with **_either_** of the following options:
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    hummingbot/hummingbot:version-1.7.0-arm_beta
+    hummingbot/hummingbot:version-1.8.0-arm_beta
     ```
 
 ## Install from source
@@ -89,7 +89,7 @@ Running Hummingbot on a Raspberry Pi has the same main benefit of running it on 
 
 ![rpi](/assets/img/rpi-hummingbot.jpg)
 
-Read through our full blog post about [Deploying Hummingbot on a Raspberry Pi](https://blog.hummingbot.org/blog-2020-07-deploying-hummingbot-on-a-raspberry-pi/).
+Read through our full blog post about [Deploying Hummingbot on a Raspberry Pi](https://blog.hummingbot.org/2020-07-deploying-hummingbot-on-a-raspberry-pi/).
 
 The only way to currently install Hummingbot on a Raspberry Pi is by downloading the source files from GitHub and compiling and running from source. This adds a few more steps than downloading binaries or running from Docker, but below we have provided a step-by-step guide to walk you through the process.
 

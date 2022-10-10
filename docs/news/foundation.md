@@ -7,7 +7,7 @@ hide:
 
 ![](/assets/img/foundation-cover.webp)
 
-*Originally posted on the [hummingbot.io blog](https://blog.hummingbot.org/blog-hummingbot-foundation/) on October 25, 2021*
+*Originally posted on the [hummingbot.io blog](https://blog.hummingbot.org/hummingbot-foundation/) on October 25, 2021*
 
 ## Summary
 
