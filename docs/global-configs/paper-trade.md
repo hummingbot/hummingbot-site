@@ -19,6 +19,11 @@ paper_trade:
     - gate_io
     - ftx
 ```
+
+In the Hummingbot client, ftx_paper_trade should now be available when you select an exchange:
+
+Enter your maker spot connector >>> ftx_paper_trade
+
 ## Enabling and Disabling
 
 Paper trading can be enabled when creating a strategy and choosing an exchange when prompted `Enter your maker spot connector` during the creation of the strategy.
