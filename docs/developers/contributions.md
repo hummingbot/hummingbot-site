@@ -3,6 +3,7 @@
 All contributors should adhere to the code conventions used in the Hummingbot repository. The guidelines are outlined below.
 
 ## **Workflow**
+
 ### **1. Fork the repository**
 
 Use GitHub's interface to make a fork of the repo and clone it to your local machine.
@@ -12,6 +13,7 @@ git clone https://github.com/{user_github_handle}/hummingbot.git
 ```
 
 ### **2. Add remote**
+
 Add the Hummingbot repo as an upstream remote, and fetch upstream data:
 
 ```
@@ -43,7 +45,6 @@ Make commits to your branch and make sure that you only make relevant changes. I
 - (refactor) ...
 - (cleanup) ...
 - (doc) ...
-
 
 Commit message guidelines:
 
@@ -79,7 +80,7 @@ Once you get back here, make a comment requesting a further review, and someone 
 
 ### **7. Create a pull request proposal in Snapshot ⚡️**
 
-Log in with your wallet in **https://snapshot.org/#/hbot-prp.eth** and create a new proposal using as a title the name of your pull request.
+Log in with your wallet in **<https://snapshot.org/#/hbot-prp.eth>** and create a new proposal using as a title the name of your pull request.
 Be sure that you have at least 1 HBOT to create the proposal.
 
 The voting period is 7 days and the HBOT holders will decide if your PR will be accepted or rejected.
@@ -95,12 +96,13 @@ Fix any changes requested by your reviewer, fix issues raised by a tester, and p
 Once the pull request has been reviewed and accepted; it will be merged by a member of the Hummingbot development team.
 
 ## Additional information
+
 ### Unit test coverage
 
 !!! note
       Tests are very important. Submit tests if your pull request contains new, testable behavior. See [Unit test coverage](#unit-test-coverage) for more information.
 
-It is required to present a minimum 75% unit test coverage of all the changes included in a pull request. Some components are, however, excluded from this validation (for example all UI components).
+It is required to present a minimum 80% unit test coverage of all the changes included in a pull request. Some components are, however, excluded from this validation (for example all UI components).
 
 To calculate the diff-coverage locally on your computer, run `make development-diff-cover` after running all tests.
 

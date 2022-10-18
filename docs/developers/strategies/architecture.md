@@ -2,10 +2,9 @@
 
 All strategy classes are derived from the [`StrategyBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class, which is derived from the [`TimeIterator`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class.
 
-
 The concrete strategy classes included with Hummingbot, including [`ArbitrageStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/arbitrage/arbitrage.pyx), [`CrossExchangeMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx), and [`PureMarketMakingStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making.pyx) - are all child classes of `StrategyBase`.
 
-Each `StrategyBase` object may be managing multiple [`ConnectorBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx) and [`WalletBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/wallet/wallet_base.pyx) objects.
+Each `StrategyBase` object may be managing multiple [`ConnectorBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx) and `WalletBase` objects.
 
 ## How It Works
 
@@ -76,6 +75,7 @@ The event interface functions are as follows:
 It is highly encouraged to use these functions to create and remove orders, rather than calling functions like `c_buy()` and `c_sell()` in `ConnectorBase` objects directly - since the functions from `StrategyBase` provides order tracking functionalities as well.
 
 ### Place order
+
 ```cython
 cdef str c_buy_with_specific_market(self, 
                                     object market_trading_pair_tuple,
@@ -93,6 +93,7 @@ cdef str c_sell_with_specific_market(self,
                                      double expiration_seconds = *
                                      )
 ```
+
 Creates a buy or a sell order in the market specified by `market_trading_pair_tuple`and returns the order ID string.
 
 **Arguments**
@@ -104,9 +105,11 @@ Creates a buy or a sell order in the market specified by `market_trading_pair_tu
 - **expiration_seconds**: an optional number, which specifies how long a limit should automatically expire. This is only used by Ethereum-based decentralized exchanges like Radar Relay where active order cancellation costs gas. By default, passive cancellation via expiration is used on these exchanges.
 
 ### Cancel order
+
 ```cython
  c_cancel_order(self, object market_pair, str order_id)
 ```
+
 Cancels an active order from a market.
 
 **Arguments**
@@ -159,15 +162,14 @@ Below are some of the user functions or properties under `OrderTracker` that you
     Returns a dictionary of order IDs that are being cancelled.
 
     Return type: `Dict[str, float]`
-    
-    
+
 ## Fee Accounting
 
 ### OrderCandidate
 
 An order proposal created by a strategy.
 
-A `BudgetChecker` takes an `OrderCandidate` and fills in fees to be paid for this particular order (in pre-defined tokens). Then checks if, after accounting for the fees, the account balances allow for a placement of this order, and if not, adjusts the order amount accordingly. 
+A `BudgetChecker` takes an `OrderCandidate` and fills in fees to be paid for this particular order (in pre-defined tokens). Then checks if, after accounting for the fees, the account balances allow for a placement of this order, and if not, adjusts the order amount accordingly.
 
 Fees can be payable in the base tokens, quote tokens, or 3rd party tokens.
 
@@ -183,7 +185,7 @@ Is intended to be a single universal solution for fee accounting and checking fe
 Provides utilities for strategies to check the potential impact of `OrderCandidates` on user account balances.
 Mainly used to determine if sufficient balances are available to place a set of strategy-proposed orders.
 
-It can work with a single `OrderCandidate` or a list of `OrderCandidates`. 
+It can work with a single `OrderCandidate` or a list of `OrderCandidates`.
 In case of multiple `OrderCandidates` the `BudgetChecker` verfies if the set of orders as a whole is feasible.
 
 The `BudgetChecker` also locks in collateral required for orders and adjusts collateral available for future `OrderCandidates`.
