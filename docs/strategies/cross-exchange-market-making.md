@@ -159,7 +159,7 @@ The cross exchange market making strategy would always immediately hedge any ord
 
 ![Figure 4: Hedging order fills flow chart](/assets/img/xemm-flowchart-4.svg)
 
-The logic of the hedging order fill flow can be found in the function `c_did_fill_order()` and `c_check_and_hedge_orders()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+The logic of the hedging order fill flow can be found in the function `c_did_fill_order()` and `c_check_and_hedge_orders()` in [`cross_exchange_market_making.py`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
 ### Decentralized Exchanges (Gateway)
 
