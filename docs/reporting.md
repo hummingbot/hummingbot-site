@@ -8,6 +8,8 @@ The Google Sheet below provides an overview of the HBOT allocations set by vario
 
 To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation publishes a monthly financial report that describes the sources and uses of funds over the course of the month, as well as the total treasury position at the end of the month.
 
+[September 2022](https://hummingbot-foundation.notion.site/September-2022-a8fd007f7d844c7cbabfe6224195a820)
+
 [August 2022](https://hummingbot-foundation.notion.site/August-2022-b4e0f466e06843c8b129608181d0d2a8)
 
 [July 2022](https://hummingbot-foundation.notion.site/July-2022-05c6709e18a347f3abd7e50a18127b5e)
