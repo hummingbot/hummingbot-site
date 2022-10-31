@@ -22,7 +22,7 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 |------|:------------------------:|:---------:|-------------|
 | [AltMarkets.io](https://altmarkets.io/) |  [spot](/exchanges/altmarkets/) |
 | [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW) | [spot](/exchanges/ascend-ex/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange)
-| [Beaxy](https://beaxy.com/) |  [spot](/exchanges/beaxy/) | 
+| [Beaxy](https://beaxy.com/) |  [spot](/exchanges/beaxy/) |
 | [Binance](https://www.binance.com/en/register?ref=FQQNNGCD) | [spot](/exchanges/binance/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [FQQNNGCD](https://www.binance.com/en/register?ref=FQQNNGCD)|
 | [Binance US](https://www.binance.com/) | [spot](/exchanges/binance-us/)
 | [Bitfinex](https://bitfinex.com/?refcode=dxCUrjvc) | [spot](/exchanges/bitfinex/) | | [dxCUrjvc](https://bitfinex.com/?refcode=dxCUrjvc)
@@ -36,6 +36,7 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 | [CoinZoom](https://trade.coinzoom.com) | [spot](/exchanges/coinzoom/)
 | [Crypto.com](https://crypto.com/exchange) | [spot](/exchanges/crypto-com/)
 | [Digifinex](https://www.digifinex.com/en-ww) | [spot](/exchanges/digifinex/)
+| [Eve Exchange](https://eve.exchange/) | [spot](/exchanges/eve-exchange/)
 | [FTX](https://ftx.com/en) | [spot](/exchanges/ftx/) |  [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)
 | [Gate.io](https://www.gate.io/signup/5868285)  | [spot](/exchanges/gate-io/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [5868285](https://www.gate.io/signup/5868285) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) |
 | [HitBTC](https://hitbtc.com/) |  [spot](/exchanges/hitbtc/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)|
@@ -43,7 +44,7 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 | [Kraken](https://www.kraken.com/) | [spot](/exchanges/kraken/)
 | [KuCoin](https://www.kucoin.com/ucenter/signup?rcode=272KvRf) | [spot](/exchanges/kucoin/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
 | [Latoken](https://latoken.com/) | [spot](/exchanges/latoken/)
-| [Liquid](https://www.liquid.com/) | [spot](/exchanges/liquid/) 
+| [Liquid](https://www.liquid.com/) | [spot](/exchanges/liquid/)
 | [Loopring](https://loopring.io/) | [spot](/exchanges/loopring/)
 | [MEXC Global](https://www.mexc.com/) | [spot](/exchanges/mexc/)
 | [NDAX](https://ndax.io/) | [spot](/exchanges/ndax/)
