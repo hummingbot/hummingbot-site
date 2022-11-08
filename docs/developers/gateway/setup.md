@@ -1,6 +1,3 @@
-!!! tip
-    Use the [development](https://github.com/hummingbot/hummingbot/tree/development), since Gateway is still new and undergoing active work. Once you have cloned the Hummingbot repo, you can run `git checkout development` to switch to that branch.
-
 For developers, we recommend installing Hummingbot from source, rather than Docker. This allows you to run Gateway as a standalone server and connect to it from the Hummingbot client. This setup has a few advantages:
 
 * Makes upgrading to new versions of Hummingbot/Gateway easier
@@ -11,31 +8,9 @@ First, follow [these instructions](/installation/source/) to **install Hummingbo
 
 Then, follow the steps below to start a Gateway server and enable the Hummingbot client to communicate with it.
 
-## 1. Generate certs
+## 1. Generate Gatway configuration files
 
-After installing Hummingbot from source, run `bin/hummingbot.py` in order to start the Hummingbot client. You'll be promoted to enter a password.
-
-In the first step, we generate encrypted certificates that the Gateway server will incorporate, which allows the client to authenticate the Gateway server with which it communicates.
-
-From the Hummingbot client, run the following command:
-
-```
->>> gateway generate-certs
-
-Enter pass phase to generate Gateway SSL certifications: 
->>> *****
-
-Gateway SSL certification files are created in 
-/Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs.
-```
-
-You will be prompted to enter the passphrase used to encrypt these certs. We recommend using the same password you set when you launched Hummingbot.
-
-Take note of this folder path, but **do not exit the Hummingbot client** since we will return to it in step 4.
-
-## 2. Set up Gateway SSL
-
-Next, we will ensure that the Gateway server can access these newly generated certification files.
+To run gateway, we need to generate the configurations. 
 
 Open a new Terminal/Bash window and go to the Hummingbot root directory.
 
@@ -49,7 +24,7 @@ Then, run the following setup script to generate the Gateway `conf` folder and p
 
 HOST_CONF_PATH=gateway/conf
 created gateway/conf/ethereum.yml
-created gateway/conf/ssl.yml ## edit this file afterwards ##
+created gateway/conf/ssl.yml
 created gateway/conf/ethereum-gas-station.yml
 created gateway/conf/avalanche.yml
 created gateway/conf/logging.yml
@@ -62,23 +37,28 @@ created gateway/conf/telemetry.yml
 
 ```
 
-Open the newly created file named `ssl.yml` with your text editor, so that we can modify it with the cert folder path from step 1.
+## 2. Generate certs
 
-Initially, `ssl.yml` contains the following entrries:
+After installing Hummingbot from source, run `bin/hummingbot.py` in order to start the Hummingbot client. You'll be promoted to enter a password.
 
-```yaml
-caCertificatePath: /usr/src/app/certs/ca_cert.pem
-certificatePath: /usr/src/app/certs/server_cert.pem
-keyPath: /usr/src/app/certs/server_key.pem
+In this step, we generate encrypted certificates that the Gateway server will incorporate, which allows the client to authenticate the Gateway server with which it communicates.
+
+From the Hummingbot client, run the following command:
+
+```
+>>> gateway generate-certs
+
+Enter pass phase to generate Gateway SSL certifications: 
+>>> *****
+
+Gateway SSL certification files are created in 
+/Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs.
 ```
 
-Change the paths so that they matches the cert folder path from step 1, and save the file. This allows the Gateway server that you set up in step 3 to be able to decrypt messages from the Hummingbot client.
+This will update the Gateway configuration files with the newly generated certification files. The updates can be found in the `gateway/conf/ssl.yml` file.
 
-```yaml
-caCertificatePath: /Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs/ca_cert.pem
-certificatePath: /Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs/server_cert.pem
-keyPath: /Users/myname/.hummingbot-gateway/hummingbot-gateway-1dd88a7e8/certs/server_key.pem
-```
+You will be prompted to enter the passphrase used to encrypt these certs. We recommend using the same password you set when you launched Hummingbot.
+
 
 ## 3. Run Gateway server
 
