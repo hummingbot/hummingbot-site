@@ -1,5 +1,7 @@
 # Support Hummingbot and Get Fee Rebates
 
+**English version | [中文版](/support-hummingbot-cn)**
+
 ## Intro
 
 Thank you for your support for the Hummingbot codebase! We’d love to have you all support us by creating exchange accounts using our referral codes, or if you're a developer, adding our brokerID to your custom bots.  
