@@ -21,7 +21,7 @@ Below are the core principles that underpin Hummingbot’s development:
 
 The Hummingbot Foundation’s primary role is to coordinate the ongoing maintenance and improvement of the open source Hummingbot codebase via a decentralized set of actors: **Exchanges**, **Contributors**, and **Users**.
 
-![](../maintenance/flywheel.png)
+![](./flywheel.png)
 
 * **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. See [Certification](/maintenance/certification/) for more information about the certification process.
 
