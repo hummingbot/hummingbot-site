@@ -1,3 +1,6 @@
+!!! note "Use development branch"
+    Use the [development](https://github.com/hummingbot/hummingbot/tree/development) branch, since Gateway is still new and undergoing active work. Once you have cloned the Hummingbot repo, you can run `git checkout development` to switch to that branch.
+
 For developers, we recommend installing Hummingbot from source, rather than Docker. This allows you to run Gateway as a standalone server and connect to it from the Hummingbot client. This setup has a few advantages:
 
 * Makes upgrading to new versions of Hummingbot/Gateway easier
