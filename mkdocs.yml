@@ -292,6 +292,7 @@ nav:
         - Examples: developers/scripts/examples.md
         - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
+      - Adding Commands: developers/commands.md
   - About the Foundation:
     - About the Foundation: about/index.md
     - HBOT: hbot.md
