@@ -29,6 +29,7 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 | [Bittrex Global](https://global.bittrex.com/) | [spot](/exchanges/bittrex/)
 | [Bitmex](https://www.bitmex.com/) | [spot](/exchanges/bitmex) / [perp](/exchanges/bitmex-perpetual/)
 | [Blocktane](https://blocktane.io/) | [spot](/exchanges/blocktane/)
+| [BTC Markets](https://www.btcmarkets.net/) | [spot](/exchanges/btc-markets/)
 | [Bybit](https://www.bybit.com/) | [spot](/exchanges/bybit/) / [perp](/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)|
 | [Coinbase Pro](https://pro.coinbase.com/) | [spot](/exchanges/coinbase/)
 | [CoinFLEX](https://coinflex.com/) | [spot](/exchanges/coinflex) / [perp](/exchanges/coinflex-perpetual/)

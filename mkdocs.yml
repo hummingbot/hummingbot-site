@@ -171,6 +171,7 @@ nav:
         - AscendEX: exchanges/ascend-ex.md
         - Binance: exchanges/binance.md
         - Bybit: exchanges/bybit.md
+        - BTC Markets: exchanges/btc-markets.md
         - Eve: exchanges/eve-exchange.md
         - Gate.io: exchanges/gate-io.md
         - HitBTC: exchanges/hitbtc.md
