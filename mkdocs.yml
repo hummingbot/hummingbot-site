@@ -171,8 +171,6 @@ nav:
         - AscendEX: exchanges/ascend-ex.md
         - Binance: exchanges/binance.md
         - Bybit: exchanges/bybit.md
-        - BTC Markets: exchanges/btc-markets.md
-        - Eve: exchanges/eve-exchange.md
         - Gate.io: exchanges/gate-io.md
         - HitBTC: exchanges/hitbtc.md
         - Huobi Global: exchanges/huobi.md
@@ -185,12 +183,14 @@ nav:
         - BitMart: exchanges/bitmart.md
         - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
+        - BTC Markets: exchanges/btc-markets.md
         - Blocktane: exchanges/blocktane.md
         - Coinbase Pro: exchanges/coinbase.md
         - CoinFLEX: exchanges/coinflex.md
         - CoinZoom: exchanges/coinzoom.md
         - Crypto.com : exchanges/crypto-com.md
         - Digifinex: exchanges/digifinex.md
+        - Eve: exchanges/eve-exchange.md
         - Himalaya: exchanges/himalaya.md
         - Kraken: exchanges/kraken.md
         - Latoken: exchanges/latoken.md
