@@ -14,11 +14,11 @@ Per this [Snapshot poll](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764
 * [Kucoin](/exchanges/kucoin/)
 * [AscendEx](/exchanges/ascend-ex/)
 * [Gate.io](/exchanges/gate-io/)
-* [FTX](/exchanges/ftx/)
 * [ByBit](/exchanges/bybit/) and [ByBit Perpetual](/exchanges/bybit-perpetual/)
 * [OKX](/exchanges/okx/)
 * [HitBTC](/exchanges/hitbtc/)
 * [Huobi](/exchanges/huobi/)
+* FTX (removed from codebase)
 
 ## Certification Benefits
 

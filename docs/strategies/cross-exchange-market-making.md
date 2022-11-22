@@ -176,6 +176,6 @@ Another difference is dependence of transaction fees on currrent gas fees. There
 
 :fontawesome-solid-book: [Use cross-exchange market making (XEMM) strategy to lower risk](https://blog.hummingbot.org/academy-level-2-d-beginner-strategy-2-use-cross-exchange-market-making-xemm/): The XMM strategy effectively reduces inventory risk. This article talks about how to proceed with XEMM in place.
 
-:fontawesome-brands-youtube: [Cross Exchange Market Making Strategy in FTX | Hummingbot Live](https://www.youtube.com/watch?v=gwLjSe0t8K8): In this video, Paulo shows how to optimize a Cross Exchange Market-Making strategy in the FTX exchange connector using the Hummingbot app.
+:fontawesome-brands-youtube: [Cross Exchange Market Making Strategy | Hummingbot Live](https://www.youtube.com/watch?v=gwLjSe0t8K8): In this video, Paulo shows how to optimize a Cross Exchange Market-Making strategy using the Hummingbot app.
 
 *Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*

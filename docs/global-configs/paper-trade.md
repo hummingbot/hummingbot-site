@@ -8,7 +8,7 @@ This feature allows users to test Hummingbot and simulate trading strategies wit
 
 Users can now add paper exchanges by adding the exchange of choice in `conf_client.yml`. Previously, it was only available for AscendEX, Binance, Gate io, and Kucoin. Users can find `conf_client.yml` in `hummingbot/conf/conf_client.yml`
 
-Add the paper trade exchange, for example ftx, to conf_client.yml:
+Add the paper trade exchange, for example kraken, to conf_client.yml:
 
 ```
 paper_trade:
@@ -17,12 +17,12 @@ paper_trade:
     - kucoin
     - ascend_ex
     - gate_io
-    - ftx
+    - kraken
 ```
 
-In the Hummingbot client, ftx_paper_trade should now be available when you select an exchange:
+In the Hummingbot client, kraken_paper_trade should now be available when you select an exchange:
 
-Enter your maker spot connector >>> ftx_paper_trade
+Enter your maker spot connector >>> kraken_paper_trade
 
 ## Enabling and Disabling
 

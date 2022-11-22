@@ -157,7 +157,6 @@ In order for the exchange to identify that the HTTP request for the order is com
 **Custom parameter in body**
 
 - Some exchanges create their own custom parameters in the metadata to identify the order
-- Example: FTX
 
 ### After adding the brokerID, can Hummingbot get access to my account for other purposes?
 
