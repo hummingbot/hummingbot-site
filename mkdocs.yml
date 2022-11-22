@@ -163,10 +163,11 @@ nav:
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
       - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+      - Strategy Doc Template: strategies/strategy-template.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
       - Spot Markets:
-        - Spot Markets: exchanges/spot/index.md
+        - Spot Markets: exchanges/spot/index.md        
         - AscendEX: exchanges/ascend-ex.md
         - Binance: exchanges/binance.md
         - Bybit: exchanges/bybit.md
@@ -206,6 +207,7 @@ nav:
         - Bitmex: exchanges/bitmex-perpetual.md
         - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
+      - Exchange Connector Doc Template: exchanges/connector-template.md
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
       - Setting up Gateway: gateway/setup.md
