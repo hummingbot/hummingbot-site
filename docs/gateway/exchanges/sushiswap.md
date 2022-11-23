@@ -14,7 +14,6 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/sushiswap.yml)
 
-
 ## ℹ️ Exchange Info
 
 **Sushiswap**
@@ -27,9 +26,12 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 ## 🕸️ Supported Chains and Networks
 
 ### Ethereum
+
 * [mainnet](/gateway/chains/ethereum/#mainnet-mainnet)
 * [kovan](/gateway/chains/ethereum/#kovan-testnet)
 * [ropsten](/gateway/chains/ethereum/#ropsten-testnet)
+
+### Binance Smart Chain
 
 ## 👷 Developer
 

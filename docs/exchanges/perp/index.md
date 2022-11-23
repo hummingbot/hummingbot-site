@@ -8,13 +8,16 @@ In Hummingbot, `perp` connectors integrate with central limit order book (CLOB) 
 |------|:------------------------:|:---------:|-------------|
 | [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [spot](/exchanges/binance/) / [perp](/exchanges/binance-perpetual) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) |
 | [Bybit](https://www.bybit.com/) | [spot](/exchanges/bybit/) / [perp](/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)|
+| [Gate.io Perpetual](https://www.gate.io/) | [spot](/exchanges/gate-io) / [perp](/exchanges/gate-io-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [hummingbot](https://www.gate.io/signup/5868285) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) ||
 
 ## Supported Perpetual Futures Exchanges
 
 | name | docs (by connector type) | certified | signup code |
 |------|:------------------------:|:---------:|-------------|
 | [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot) | [perp](/exchanges/binance-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) ||
+| [Bitget Perpetual](https://www.bitget.com/) | [perp](/exchanges/bitget-perpetual/)
 | [Bitmex](https://www.bitmex.com/) | [spot](/exchanges/bitmex) / [perp](/exchanges/bitmex-perpetual/)
 | [Bybit](https://www.bybit.com/) | [spot](/exchanges/bybit/) / [perp](/exchanges/bybit-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/)|
 | [CoinFLEX](https://coinflex.com/) | [spot](/exchanges/coinflex) / [perp](/exchanges/coinflex-perpetual/)
 | [dYdX Perpetual](https://dydx.exchange/) | [perp](/exchanges/dydx-perpetual/)
+| [Gate.io Perpetual](https://www.gate.io/) | [spot](/exchanges/gate-io) / [perp](/exchanges/gate-io-perpetual/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [hummingbot](https://www.gate.io/signup/5868285) ![](https://img.shields.io/static/v1?label=Fee&message=%2d10%25&color=orange) ||

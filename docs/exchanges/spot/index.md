@@ -43,6 +43,7 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 | [Kraken](https://www.kraken.com/) | [spot](/exchanges/kraken/)
 | [KuCoin](https://www.kucoin.com/ucenter/signup?rcode=272KvRf) | [spot](/exchanges/kucoin/) | [![Hummingbot Certified](https://img.shields.io/badge/Hummingbot-Certified-green.svg)](/maintenance/certification/) | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
 | [Latoken](https://latoken.com/) | [spot](/exchanges/latoken/)
+| [LBank](https://www.lbank.info/) | [spot](/exchanges/lbank/)
 | [Liquid](https://www.liquid.com/) | [spot](/exchanges/liquid/)
 | [Loopring](https://loopring.io/) | [spot](/exchanges/loopring/)
 | [MEXC Global](https://www.mexc.com/) | [spot](/exchanges/mexc/)
@@ -51,3 +52,4 @@ In Hummingbot, `spot` connectors integrate with central limit order book (CLOB) 
 | [Probit Global](https://www.probit.com/) | [spot](/exchanges/probit/)
 | [Probit Korea](https://www.probit.kr/en-us/) | [spot](/exchanges/probit-korea/) |
 | [WazirX](https://wazirx.com/) | [spot](/exchanges/wazirx/) |
+| [WhiteBIT](https://whitebit.com/) | [spot](/exchanges/whitebit/)
