@@ -195,15 +195,18 @@ nav:
         - Kraken: exchanges/kraken.md
         - Latoken: exchanges/latoken.md
         - Liquid: exchanges/liquid.md
+        - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
         - NDAX: exchanges/ndax.md
         - ProBit Global: exchanges/probit.md
         - ProBit Korea: exchanges/probit-korea.md
         - WazirX: exchanges/wazirx.md
+        - WhiteBit: exchanges/whitebit.md
       - Perpetual Futures Markets:
         - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
+        - Bitget Perpetual: exchanges/bitget-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - Bitmex: exchanges/bitmex-perpetual.md
         - CoinFLEX: exchanges/coinflex-perpetual.md
@@ -219,15 +222,22 @@ nav:
         - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
         - Pangolin: gateway/exchanges/pangolin.md
         - Quickswap: gateway/exchanges/quickswap.md
+        - MM Finance: gateway/exchanges/mm-finance.md
         - TraderJoe: gateway/exchanges/traderjoe.md
         - Perpetual Protocol: gateway/exchanges/perp.md
+        - Ref Finance: gateway/exchanges/ref-finance.md
         - Serum: gateway/exchanges/serum.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - OpenOcean: gateway/exchanges/openocean.md
+        - Pancakeswap: gateway/exchanges/pancakeswap.md
         - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
         - Defira: gateway/exchanges/defira.md
+        - VVS Finance: gateway/exchanges/vvs-finance.md
       - Chains:
+        - Binance Smart Chain: gateway/chains/binance-smart-chain.md
+        - Cronos: gateway/chains/cronos.md
         - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
+        - Near Protocol: gateway/chains/near.md
         - Solana: gateway/chains/solana.md
     - Global Configs:
       - Global Configs: global-configs/index.md
