@@ -31,7 +31,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 👷 Developer
 
-Added by CrimsonJacket in [v1.10.0](/release-notes/1.10.0/)
+Added by CoinAlpha in [v1.10.0](/release-notes/1.10.0/)
 
 ## 🔑 Setup
 
