@@ -226,7 +226,7 @@ nav:
         - TraderJoe: gateway/exchanges/traderjoe.md
         - Perpetual Protocol: gateway/exchanges/perp.md
         - Ref Finance: gateway/exchanges/ref-finance.md
-        - Serum: gateway/exchanges/serum.md
+        # - Serum: gateway/exchanges/serum.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - OpenOcean: gateway/exchanges/openocean.md
         - Pancakeswap: gateway/exchanges/pancakeswap.md
@@ -234,11 +234,14 @@ nav:
         - Defira: gateway/exchanges/defira.md
         - VVS Finance: gateway/exchanges/vvs-finance.md
       - Chains:
-        - Binance Smart Chain: gateway/chains/binance-smart-chain.md
+        - Avalanche: gateway/chains/avalanche.md
+        - BNB Chain: gateway/chains/bnb-chain.md
         - Cronos: gateway/chains/cronos.md
-        - Ethereum and EVM-Based Chains: gateway/chains/ethereum.md
-        - Near Protocol: gateway/chains/near.md
-        - Solana: gateway/chains/solana.md
+        - Ethereum: gateway/chains/ethereum.md
+        - Harmony: gateway/chains/harmony.md
+        - NEAR: gateway/chains/near.md
+        - Polygon: gateway/chains/polygon.md
+        # - Solana: gateway/chains/solana.md
     - Global Configs:
       - Global Configs: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
@@ -301,7 +304,7 @@ nav:
       - Scripts:
         - Scripts: developers/scripts/index.md
         - Getting Started: developers/scripts/getting-started.md
-        - Examples: developers/scripts/examples.md
+        - Script Examples: developers/scripts/examples.md
         - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
       - Adding Commands: developers/commands.md

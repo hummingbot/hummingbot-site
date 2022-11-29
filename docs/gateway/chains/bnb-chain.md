@@ -1,10 +1,14 @@
-This page contains notes about connecting Gateway to the Binance Smart Chain.
+## 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/binance-smart-chain)
 
-## Binance Smart Chain
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/binance-smart-chain.yml)
 
-📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/binance-smart-chain)
+## ℹ️ Chain Info
 
-📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/binance-smart-chain.yml)
+* Website: <https://www.bnbchain.org/>
+* CoinMarketCap: <https://coinmarketcap.com/currencies/bnb/>
+* CoinGecko: <https://www.coingecko.com/en/coins/bnb>
+
+## 🕸️ Supported Networks
 
 Below are the Binance Smart Chain networks that Gateway currently supports.
 

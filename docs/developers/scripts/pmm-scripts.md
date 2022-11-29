@@ -1,4 +1,4 @@
-# PMM Scripts
+# PMM Scripts (DEPRECATED)
 
 Snippets of Python code that let users customize the [Pure Market Making](/strategies/pure-market-making) strategy.
 
