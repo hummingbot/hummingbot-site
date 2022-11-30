@@ -155,6 +155,7 @@ nav:
       - Aroon Oscillator: strategies/aroon-oscillator.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
       - Fixed Grid: strategies/fixed-grid.md
       - Hedge: strategies/hedge.md
       - Liquidity Mining: strategies/liquidity-mining.md

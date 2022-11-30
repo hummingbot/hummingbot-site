@@ -10,7 +10,9 @@ tags:
 
 ## 📝 Summary
 
-The Cross Exchange Mining strategy creates buy or sell limit orders on a 'maker' exchange at a spread wider than that of the 'taker' exchange. Filling of the order on the maker exchange triggers a balancing of the portfolio on the taker exchange at an advantageuos spread (The difference between the two spreads being equal to the min profitability) thereby creating profit. The startegy tracks the amount of base asset across the taker and maker exchanges 'Order Amount' and continually seeks to rebalance and maintain assets thereby reducing any exposure risk whereby the user has too much quote or base asset in falling or rising market.  
+The Cross Exchange Mining strategy creates buy or sell limit orders on a maker exchange at a spread wider than that of the taker exchange. Filling of the order on the maker exchange triggers a balancing of the portfolio on the taker exchange at an advantageous spread (The difference between the two spreads being equal to the `min_profitability`) thereby creating profit.
+
+The strategy tracks the amount of base asset across the taker and maker exchanges for `order_amount` and continually seeks to rebalance and maintain assets, thereby reducing any exposure risk whereby the user has too much quote or base asset in falling or rising markets.
 
 ## 🏦 Exchanges supported
 
@@ -65,11 +67,12 @@ The strategy looks at the current volatility in the maker market to adjust the `
 
 The strategy looks at the previous trades completed and balancing trades in order to understand the success of the strategy at producing profit. The strategy will again adjust the 'min_profitability' figure by widening the spread if the user is losing money and tightening the spread if the trades are too profitable. This is due to the strategy aiming to essentially provide a break even portfolio to maximise mining rewards, hence the name `cross_exchange_mining`.
 
-The previous trades in the users hummingbot/data file are read by the strategy at intervals equal to the `min_prof_adj_timer` when this function is called it looks at trades recorded within the last 24 hours in the file and based on timestamp seeks to match the filled maker and taker orders that make up a full balanced trade. 
-The strategy uses the `trade_fee` variable in this calculation to take into account the amount of money paid to the both exchanges during these trades, the calculation returns the average profitability ofthe trades and balance pairs completed in the previous 24 hours. This figure is then converted into an adjustment. a 0% profitability (Based on order amount) would lead to 0 adjustment.
+The previous trades in the users `hummingbot/data` file are read by the strategy at intervals equal to the `min_prof_adj_timer` when this function is called it looks at trades recorded within the last 24 hours in the file and based on timestamp seeks to match the filled maker and taker orders that make up a full balanced trade. 
+
+The strategy uses the `trade_fee` variable in this calculation to take into account the amount of money paid to the both exchanges during these trades, the calculation returns the average profitability of the trades and balance pairs completed in the previous 24 hours. This figure is then converted into an adjustment. a 0% profitability (Based on order amount) would lead to 0 adjustment.
 
 Positive or negative percentages made are converted into an adjutsment using the relationship `(Percentage * rate_curve)**3 + min_profitability`. The cubed figure exponentially penalises large profit or loss percentages gained thereby greatly reducing the min_profitability (In case of large gains) or greatly increasing the min_profitability figure (In case of large losses). The `rate_curve` variable acts to provide a multiplier for this adjustment it is reccomended to keep this in the 0.5-1.5 range with the higher it is set the more the min_profitability adjustment is affected by previous trades.
 
-From a personal perspective I have used XEMM strategy for a number of years and my motivation for this strategy comes not from improving how effective the strategy is at making money but it is to increase the relibaility of the strategy in maintaining a hedged position of base assets even during wild market swings. The code is entirely rewritten from the XEMM strategy aimed at making a more logical progression and removing elements that I find add complexity, reducing reliability without benefitting the user.
+From a personal perspective I have used the [XEMM strategy](/strategies/cross-exchange-market-making) for a number of years and my motivation for this strategy comes not from improving how effective the strategy is at making money but it is to increase the reliability of the strategy in maintaining a hedged position of base assets even during wild market swings. The code is entirely rewritten from the XEMM strategy aimed at making a more logical progression and removing elements that I find add complexity, reducing reliability without benefitting the user.
 
 The strategy is intended for use with the same pairs on both taker and maker centralised exchanges. The strategy utilises market trades to fill on taker side.

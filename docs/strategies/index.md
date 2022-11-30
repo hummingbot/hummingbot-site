@@ -33,32 +33,20 @@ Market making strategies help you provide liquidity to an exchange while mitigat
 | [`avellaneda_market_making`](./avellaneda-market-making)        | `spot`              | CoinAlpha     | Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
 | [`aroon_oscillator`](./aroon-oscillator)                        | `spot`              |               | Modified version of Pure Market Making that uses Aroon technical indicator (Open DeFi hackathon winner) |
 | [`cross_exchange_market_making`](./cross-exchange-market-making)| `spot`              | CoinAlpha     | Provide liquidity while hedging filled orders on another exchange                |
+| [`cross_exchange_mining`](./cross-exchange-mining)              | `spot`              | bsmeaton      | Community-maintained mod of Cross Exchange Market Making strategy                |
 | [`liquidity_mining`](./liquidity-mining)                        | `spot`              | CoinAlpha     | Provide liquidity on multiple pairs using a single base or quote token            |
 | [`perpetual_market_making`](./perpetual-market-making)          | `perp`              | CoinAlpha     | Market-making strategy for perpetual swap markets                                 |
 | [`pure_market_making`](./pure-market-making)                    | `spot`              | CoinAlpha      | Our original single-pair market making strategy                                  |
 
 ## Useful Links
 
-* 🎥&emsp;[What is Market Making? Interview with Hummingbot CEO Michael Feng](https://www.youtube.com/watch?v=HfHaQS-nWHw)
-  * Hummingbot's CEO, Michael Feng, explains how the market-making and hedge fund business works. Michael talks about how Hummingbot started out as a quantitative hedge fund and turned to open source software to decentralize the market process with the Hummingbot miner liquidity mining platform.
-
+:fontawesome-brands-youtube: [What is Market Making? Interview with Hummingbot CEO Michael Feng](https://www.youtube.com/watch?v=HfHaQS-nWHw)
+:fontawesome-brands-youtube: [Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw)
 * [HBOT 101 : What Is Market Making?](https://blog.hummingbot.org/2020-09-what-is-market-making/)
-  * This article goes through the basic concepts of market making for beginners.
-
 * [Basic concepts of Crypto Trading](https://hummingbot.io/academy/basic-concepts-of-crypto-trading/#market-makers-and-market-takers)
-  * Basic 101 concepts of crypto trading and common terminologies.
-
 * [How does Market Making work?](https://hummingbot.org/news/market-making/)
-  * Basic walkthrough of how market making works
-
 * [Beginner’s Top misconceptions on market making](https://blog.hummingbot.org/2022-03-02-beginners-top-misconceptions/)
-  * Common misconceptions for beginners that can save you a lot of time from making mistakes
-
 * [Common hallmarks of successful miners](https://blog.hummingbot.org/2022-03-04-common-hallmarks-of-successful-miners/)
-  * You must be wondering, what are the top miners doing that is earning them thousands of dollars a week? This piece is a result of discussions with some of the miners who are in the Eagle Club, and we hope it unveils some of the things profitable miners do.
-
-* 🎥&emsp;[Trader Sharing: Pure Market Making with cgambit](https://www.youtube.com/watch?v=3RKMlCWzRhw)
-  * Eagle club member cgambit who ranks top on our leaderboard shares his tips and insights on pure market making
 
 ### Arbitrage
 
@@ -76,7 +64,7 @@ Arbitrage is the buying and selling of an asset in order to benefit from a diffe
 
 * [What is Arbitrage?](https://blog.hummingbot.org/2020-09-what-is-arbitrage/)
 * [Introducing the new Balancer connector and arbitrage strategy!](https://blog.hummingbot.org/2020-11-balancer-arbitrage/)
-* 🎥&emsp;[How to Spot Market Making and Arbitrage opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU)
+:fontawesome-brands-youtube: [How to Spot Market Making and Arbitrage opportunities?](https://www.youtube.com/watch?v=szAm_2ssXCU)
 
 ### Utility
 
