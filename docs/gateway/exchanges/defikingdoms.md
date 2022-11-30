@@ -26,7 +26,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ### Harmony
 
-* [mainnet](/gateway/chains/ethereum/#mainnet-harmony-mainnet)
+* [mainnet](/gateway/chains/harmony)
 
 ## 🔑 Setup
 

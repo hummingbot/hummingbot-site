@@ -26,8 +26,8 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ### Binance Smart Chain
 
-* [mainnet](/gateway/chains/binance-smart-chain)
-* [testnet](/gateway/chains/binance-smart-chain)
+* [mainnet](/gateway/chains/bnb-chain)
+* [testnet](/gateway/chains/bnb-chain)
 
 ## 👷 Developer
 
@@ -42,4 +42,4 @@ Added by CoinAlpha in [v1.10.0](/release-notes/1.10.0/)
 
 ## 📘 Additional Resources
 
-See [Binance Smart Chain](/gateway/chains/binance-smart-chain) for more information about the default configuration settings and how to change them.
+See [BNB Chain](/gateway/chains/bnb-chain) for more information about the default configuration settings and how to change them.

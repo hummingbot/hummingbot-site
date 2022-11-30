@@ -26,8 +26,9 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 ## 🕸️ Supported Chains and Networks
 
 ### Polygon
-* [mainnet](/gateway/chains/ethereum/#mainnet-polygon-mainnet)
-* [mumbai](/gateway/chains/ethereum/#mumbai-testnet)
+
+* [mainnet](/gateway/chains/polygon)
+* [mumbai](/gateway/chains/polygon)
 
 ## 👷 Developer
 

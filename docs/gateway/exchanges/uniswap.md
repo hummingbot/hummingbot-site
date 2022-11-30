@@ -37,8 +37,8 @@ In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](h
 
 ### Polygon
 
-* [mainnet](/gateway/chains/ethereum/#mainnet-polygon-mainnet)
-* [mumbai](/gateway/chains/ethereum/#mumbai-testnet)
+* [mainnet](/gateway/chains/polygon)
+* [mumbai](/gateway/chains/polygon)
 
 ## 👷 Developer
 

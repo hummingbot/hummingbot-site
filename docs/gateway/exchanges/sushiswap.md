@@ -33,8 +33,8 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ### Binance Smart Chain
 
-* [mainnet](/gateway/chains/binance-smart-chain)
-* [testnet](/gateway/chains/binance-smart-chain)
+* [mainnet](/gateway/chains/bnb-chain)
+* [testnet](/gateway/chains/bnb-chain)
 
 ## 👷 Developer
 
