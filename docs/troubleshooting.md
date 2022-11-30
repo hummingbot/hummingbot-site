@@ -123,7 +123,7 @@ Hummingbot is an open-source application that you can create your own custom scr
 
 You can check our [Discord](https://discord.gg/hummingbot) and discuss in our `#developer-chat` channel where you can share your ideas or ask questions about how to implement your strategy. This link would also help you more on [Developing Strategies](/developers/strategies/tutorial).
 
-You can also check out our **new** `scripts` feature which allows you to create a complete strategy using just a single Python file. Check it out [here](/developers/scripts/getting-started)
+You can also check out our **new** `scripts` feature which allows you to create a complete strategy using just a single Python file. Check it out [here](/scripts/getting-started)
 
 ### Orders are not refreshing according to order refresh time
 

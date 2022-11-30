@@ -1,2 +1,3 @@
 /maintenance/bugs   /governance/bounties            301
 /maintenance/*      /governance/:splat              301
+/developers/scripts /scripts/:splat                 301

@@ -8,7 +8,7 @@ This section is for developers looking to contribute to Hummingbot or extend its
 * [Exchange Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
 * [Gateway DEX Connectors](/developers/gateway): Build decentralized exchange (DEX) connectors
 * [Strategies](/developers/strategies): Create and customize your own Hummingbot strategies
-* [Scripts](/developers/scripts): Create lighter versions of strategies in just a few lines of Python
+* [Scripts](/scripts): Create lighter versions of strategies in just a few lines of Python
 * [Debug console](/developers/debug): Inspect and modify Hummingbot's state at runtime
 
 ## Contributing to Hummingbot

@@ -164,6 +164,11 @@ nav:
       - TWAP: strategies/twap.md
       - Uniswap v3 LP: strategies/uniswap-v3-lp.md
       - Strategy Doc Template: strategies/strategy-template.md
+    - Scripts:
+      - Scripts: scripts/index.md
+      - Getting Started: scripts/getting-started.md
+      - Script Examples: scripts/examples.md
+      - PMM Scripts: scripts/pmm-scripts.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
       - Spot Markets:
@@ -301,11 +306,6 @@ nav:
         - Key Concepts: developers/strategies/key-concepts.md
         - Define Configs: developers/strategies/config.md
         - Hanging Orders Tracker: developers/strategies/hanging-orders.md
-      - Scripts:
-        - Scripts: developers/scripts/index.md
-        - Getting Started: developers/scripts/getting-started.md
-        - Script Examples: developers/scripts/examples.md
-        - PMM Scripts: developers/scripts/pmm-scripts.md
       - Debug Console: developers/debug.md
       - Adding Commands: developers/commands.md
   - About the Foundation:

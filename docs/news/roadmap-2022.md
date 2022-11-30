@@ -67,7 +67,7 @@ To improve our documentation, we plan to begin versioning documentation by relea
 
 Hummingbot has a modular architecture that allows developers to independently maintain and improve different components, and we are continually refactoring the codebase in order to make it more accessible to new developers.
 
-For example, Hummingbot’s new [Scripts](/developers/scripts/getting-started) component lets users create automated trading strategies that use the full power of Hummingbot exchange connectors in simple Python snippets without having to re-compile the code or add configuration templates. We believe that this new feature will unlock the creative potential within the Hummingbot user community, and we plan on organizing hackathons that reward the community for creating useful Script examples that can be added to the codebase.
+For example, Hummingbot’s new [Scripts](/scripts/getting-started) component lets users create automated trading strategies that use the full power of Hummingbot exchange connectors in simple Python snippets without having to re-compile the code or add configuration templates. We believe that this new feature will unlock the creative potential within the Hummingbot user community, and we plan on organizing hackathons that reward the community for creating useful Script examples that can be added to the codebase.
 
 - Ship Scripts in May release
 - Run 2+ hackathons that reward users for creating Scripts

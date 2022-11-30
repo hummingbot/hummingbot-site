@@ -20,9 +20,10 @@ New to Hummingbot? Start here!
 
 Learn about the different components in Hummingbot:
 
-- [Strategies](/strategies): Various algorithmic trading strategies
+- [Strategies](/strategies): Configurable templates for various algorithmic trading strategies
+- [Scripts](/scripts): Lightweight, single-file strategies in pure Python
 - [Exchange Connectors](/exchanges): Supported centralized and decentralized exchanges
-- [Gateway](/gateway): Standalone middleware that connects to decentralized exchanges on various blockchain protocols
+- [Gateway Connectors](/gateway): Standalone middleware that connects to decentralized exchanges on various blockchain protocols
 - [Global Configs](/global-configs): Global configurable modules
 - [Strategy Configs](/strategy-configs): Strategy-specific configurable parameters
 
@@ -35,13 +36,13 @@ Hummingbot is a general source framework for crypto algorithmic trading. We welc
 - [Building CEX Connectors](/developers/connectors/): How to add CEX connectors
 - [Building DEX Connectors](/developers/gateway/): How to add DEX connectors to Hummingbot's Gateway module
 - [Creating Strategies](/developers/strategies/tutorial): Tutorial that shows you how to create a new Hummingbot strategy
-- [Scripts](/developers/scripts/): Lightweight, single-file strategies in pure Python
+- [Creating Scripts](/scripts/): Lightweight, single-file strategies in pure Python
 
 ## 👨‍👩‍👧‍👧 About us
 
 - [About the Foundation](/about): About Hummingbot Foundation
 - [FAQ](/faq): Answers to common questions
-- [News](/news): Recent news and updates
+- [Blog](https://blog.hummingbot.org): Recent news and updates
 - [HBOT](/hbot): How to claim, vote, and earn Hummingbot Governance Tokens (HBOT)
 - [Community](/community): Participate in the global Hummingbot ecosystem
 - [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
@@ -56,7 +57,7 @@ Hummingbot is a general source framework for crypto algorithmic trading. We welc
 ## 💪 Contribute to Hummingbot
 
 - [Contribution Guidelines](/developers/contributions/): Read this before submitting a pull request
-- [Bounties](/maintenance/bounties): Get paid for building and maintaining Hummingbot components
+- [Bounties](/governance/bounties): Get paid for building and maintaining Hummingbot components
 
 ## 🙋‍♂️ Getting help
 
