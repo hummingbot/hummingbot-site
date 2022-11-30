@@ -225,24 +225,24 @@ nav:
       - Exchanges:
         - Exchanges: gateway/exchanges/index.md
         - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
-        - Pangolin: gateway/exchanges/pangolin.md
-        - Quickswap: gateway/exchanges/quickswap.md
+        - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
+        - Defira: gateway/exchanges/defira.md
         - MM Finance: gateway/exchanges/mm-finance.md
-        - TraderJoe: gateway/exchanges/traderjoe.md
+        - PancakeSwap: gateway/exchanges/pancakeswap.md
+        - Pangolin: gateway/exchanges/pangolin.md
         - Perpetual Protocol: gateway/exchanges/perp.md
         - Ref Finance: gateway/exchanges/ref-finance.md
         # - Serum: gateway/exchanges/serum.md
+        - Quickswap: gateway/exchanges/quickswap.md
         - Sushiswap: gateway/exchanges/sushiswap.md
         - OpenOcean: gateway/exchanges/openocean.md
-        - Pancakeswap: gateway/exchanges/pancakeswap.md
-        - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
-        - Defira: gateway/exchanges/defira.md
+        - TraderJoe: gateway/exchanges/traderjoe.md
         - VVS Finance: gateway/exchanges/vvs-finance.md
       - Chains:
+        - Ethereum: gateway/chains/ethereum.md
         - Avalanche: gateway/chains/avalanche.md
         - BNB Chain: gateway/chains/bnb-chain.md
         - Cronos: gateway/chains/cronos.md
-        - Ethereum: gateway/chains/ethereum.md
         - Harmony: gateway/chains/harmony.md
         - NEAR: gateway/chains/near.md
         - Polygon: gateway/chains/polygon.md

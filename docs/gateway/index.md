@@ -23,19 +23,32 @@ See [Setting up Gateway - Developers](/developers/gateway/setup) for instruction
 
 ## Supported Decentralized Exchanges
 
-Gateway supports the following types of Automatic Market Maker (AMM) Decentralized Exchanges (DEX):
+Gateway supports the following types of decentralized exchanges (DEX):
 
 - **AMM**: Automatic Market Maker (AMM) DEXs similar to [Uniswap V2](https://docs.uniswap.org/protocol/V2/introduction)
 - **Concentrated Liquidity AMM**: AMM DEXs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
 - **Perpetual AMM**: AMM DEXs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
-- **CLOB**: CLOB DEXs similar to [Serum](https://docs.projectserum.com/)
 
 See [Exchanges](./exchanges) for a list of currently supported venues.
 
 ## Supported Blockchains
 
-- [Ethereum and EVM Chains](./chains/ethereum)
-- [Solana](./chains/solana) (In progress)
+**Ethereum and EVM Layer 2 networks**
+
+- [Ethereum](./chains/ethereum)
+- [Arbitrum](./chains/ethereum#arbitrum_one-mainnet)
+- [Optimism](./chains/ethereum#optimism-mainnet)
+
+**Other chains**
+
+- [Avalanche](./chains/avalanche)
+- [BNB Chain](./chains/bnb-chain)
+- [Cronos](./chains/cronos)
+- [Harmony](./chains/harmony)
+- [NEAR](./chains/near)
+- [Polygon](./chains/polygon)
+
+<!-- - [Solana](./chains/solana) (In progress) -->
 
 ## Building Gateway Connectors
 
