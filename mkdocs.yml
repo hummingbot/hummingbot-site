@@ -211,7 +211,7 @@ nav:
       - Perpetual Futures Markets:
         - Perpetual Futures Markets: exchanges/perp/index.md
         - Binance Futures: exchanges/binance-perpetual.md
-        - Bitget Perpetual: exchanges/bitget-perpetual.md
+        - Bitget: exchanges/bitget-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - Bitmex: exchanges/bitmex-perpetual.md
         - CoinFLEX: exchanges/coinflex-perpetual.md
