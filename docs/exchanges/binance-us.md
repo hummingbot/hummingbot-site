@@ -14,10 +14,10 @@ tags:
 
 **Binance.US** [Website](https://binance.us/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/binance-us/) | [CoinGecko](https://www.coingecko.com/en/exchanges/binance_us)
 
-* API docs: https://github.com/binance-us/binance-official-api-docs/blob/master/rest-api.md
-* Transaction fees: https://www.binance.us/en/fee/schedule
-* Minimum order size: https://www.binance.us/en/trade-rule
-* Creating API keys: https://www.binance.com/en/support/faq/360002502072
+* API docs: <https://github.com/binance-us/binance-official-api-docs/blob/master/rest-api.md>
+* Transaction fees: <https://www.binance.us/en/fee/schedule>
+* Minimum order size: <https://www.binance.us/en/trade-limits>
+* Creating API keys: <https://www.binance.com/en/support/faq/360002502072>
 
 ## 👷 Maintenance
 
@@ -27,13 +27,14 @@ tags:
 ## 🔑 Connection
 
 Run `connect binance_us` in order to enter your API keys:
- 
+
 ```
 Enter your Binance US API key >>>
 Enter your Binance US secret key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to binance_us.
 ```

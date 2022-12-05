@@ -23,7 +23,7 @@ In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](h
 
 * API docs: <https://docs.uniswap.org/protocol/V2/introduction>
 * SDK: <https://docs.uniswap.org/sdk/introduction>
-* Fees: <https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees>
+* Fees: <https://docs.uniswap.org/concepts/protocol/fees>
 
 ## 🕸️ Supported Chains and Networks
 

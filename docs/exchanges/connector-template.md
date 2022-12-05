@@ -15,7 +15,7 @@ tags:
 
 ## ℹ️ Exchange Info
 
-**Connector_Website.com** [Website](https://connector_website.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges//) | [CoinGecko](https://www.coingecko.com/en//binance) <!--- Add exchange website link as well as link to exchange page on CoinMarketCap and CoinGecko  -->
+**Connector_Website.com** [Website](https://connector_website.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges//) | [CoinGecko](https://www.coingecko.com/en/exchanges) <!--- Add exchange website link as well as link to exchange page on CoinMarketCap and CoinGecko  -->
 
 * API docs: <!--- Add link to API docs -->
 * Transaction fees: <!--- Add link to transaction fees for exchange -->

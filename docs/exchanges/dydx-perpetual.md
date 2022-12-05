@@ -37,7 +37,7 @@ You will need the following to connect Hummingbot to `dydx_perpetual`:
 
 API credentials and a stark private key can be obtained programmatically using their documentation:
 
-* [Recover Default API Credentials](https://docs.dydx.exchange/?python#recover-default-api-credentials)
+* [Recover Default API Credentials](https://dydxprotocol.github.io/v3-teacher/#recover-default-api-credentials)
 * [Derive StarkKey](https://docs.dydx.exchange/?python#derive-starkkey)
 
 Alternatively, you can follow these steps to get the required credentials:
