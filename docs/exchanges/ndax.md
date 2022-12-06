@@ -15,7 +15,7 @@ tags:
 * API docs: <https://ndaxlo.github.io/API/#introduction>
 * Transaction fees: <https://ndax.io/fees>
 * Minimum order size:
-* Creating API keys: <https://help.ndax.io/hc/en-us/articles/8749975550989-Where-can-I-find-credentials-to-access-NDAX-s-trading-API>-
+* Creating API keys: <https://help.ndax.io/en_us/where-can-i-find-credentials-to-access-ndax's-trading-api-SJ9DrhzBo>-
 
 ## 👷 Maintenance
 

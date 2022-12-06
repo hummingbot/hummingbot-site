@@ -25,7 +25,7 @@ See [Setting up Gateway - Developers](/developers/gateway/setup) for instruction
 
 Gateway supports the following types of decentralized exchanges (DEX):
 
-- **AMM**: Automatic Market Maker (AMM) DEXs similar to [Uniswap V2](https://docs.uniswap.org/protocol/V2/introduction)
+- **AMM**: Automatic Market Maker (AMM) DEXs similar to [Uniswap V2](https://docs.uniswap.org/concepts/uniswap-protocol)
 - **Concentrated Liquidity AMM**: AMM DEXs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
 - **Perpetual AMM**: AMM DEXs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
 

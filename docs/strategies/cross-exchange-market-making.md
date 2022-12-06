@@ -114,7 +114,7 @@ Assuming active order canceling is enabled, the first check the strategy does wi
 
 If the profit ratio calculated for the maker order is less than the [`min_profitability`](/strategies/cross-exchange-market-making/) setting, then the order is canceled.
 
-The logic of this check can be found in the function `c_check_if_still_profitable()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+The logic of this check can be found in the function `c_check_if_still_profitable()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
 Otherwise, the strategy will go onto the next check.
 
@@ -122,7 +122,7 @@ Otherwise, the strategy will go onto the next check.
 
 The next check afterwards checks whether there's enough asset balance left to satisfy the maker order. If there is not enough balance left on the exchange, the order would be cancelled.
 
-The logic of this check can be found in the function `c_check_if_sufficient_balance()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+The logic of this check can be found in the function `c_check_if_sufficient_balance()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
 Otherwise, the strategy will go onto the next check.
 
@@ -139,7 +139,7 @@ The cross exchange market making strategy calculates the optimal pricing from th
 
 If the price of the active order is different from the optimal price calculated, then the order would be cancelled. Otherwise, the strategy would allow the order to stay.
 
-The logic of this check can be found in the function `c_check_if_price_correct()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+The logic of this check can be found in the function `c_check_if_price_correct()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
 After all the active orders on make side have been checked, the strategy will proceed to the create order flow.
 
@@ -151,7 +151,7 @@ After going through the cancel order flow, the cross exchange market making stra
 
 The logic inside the create order flow is relatively straightforward. It checks whether there are existing bid and ask orders on the maker side. If any of the orders are missing, it will check whether it is profitable to create one at the moment. If it's profitable to create the missing orders, it will calculate the optimal pricing and size and create those orders.
 
-The logic of the create order flow can be found in the function `c_check_and_create_new_orders()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.pyx).
+The logic of the create order flow can be found in the function `c_check_and_create_new_orders()` in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
 ### Hedging Order Fills
 

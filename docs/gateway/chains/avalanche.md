@@ -5,8 +5,8 @@
 ## ℹ️ Chain Info
 
 * Website: <https://www.avax.network/>
-* CoinMarketCap: <https://coinmarketcap.com/currencies/avax/>
-* CoinGecko: <https://www.coingecko.com/en/coins/avax>
+* CoinMarketCap: <https://coinmarketcap.com/currencies/avalanche/>
+* CoinGecko: <https://www.coingecko.com/en/coins/avalanche>
 
 ## 🕸️ Supported Networks
 
@@ -15,13 +15,14 @@
 **Default configuration parameters**
 
 * `chainID`: 43114
-* `nodeURL`: https://rpc.ankr.com/avalanche
+* `nodeURL`: <https://rpc.ankr.com/avalanche>
 * `tokenListType`: URL
-* `tokenListSource`: https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json
+* `tokenListSource`: <https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json>
 * `nativeCurrencySymbol`: AVAX
 * `gasPriceRefreshInterval`: 60
 
 You can adjust these parameters by running the Hummingbot command:
+
 ```
 gateway config avalanche.networks.avalanche.<parameter>
 ```
@@ -31,14 +32,14 @@ gateway config avalanche.networks.avalanche.<parameter>
 **Default configuration parameters**
 
 * `chainID`: 43113
-* `nodeURL`: https://rpc.ankr.com/avalanche_fuji
+* `nodeURL`: <https://rpc.ankr.com/avalanche_fuji>
 * `tokenListType`: FILE
 * `tokenListSource`: [Fuji token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/avalanche/avalanche_tokens_fuji.json)
 * `nativeCurrencySymbol`: AVAX
 * `gasPriceRefreshInterval`: 60
 
 You can adjust these parameters by running the Hummingbot command:
+
 ```
 gateway config avalanche.networks.fuji.<parameter>
 ```
-

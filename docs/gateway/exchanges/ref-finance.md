@@ -10,17 +10,17 @@ The Ref Finance connector in [Gateway](/gateway) is responsible for all on-chain
 
 It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
 
-## 📁 [Connector folder](https://github.com/CoinAlpha/hummingbot/tree/master/gateway/src/connectors/ref)
+## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/ref)
 
-## 📁 [Config template](https://github.com/CoinAlpha/hummingbot/blob/master/gateway/src/templates/ref.yml)
+## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/ref.yml)
 
 ## ℹ️ Exchange Info
 
 **Ref Finance** [Website](https://www.ref.finance/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/ref-finance/) | [CoinGecko](https://www.coingecko.com/en/exchanges/ref_finance)
 
 * API docs:
-* SDK: https://github.com/ref-finance/ref-sdk
-* FAQ: https://guide.ref.finance/
+* SDK: <https://github.com/ref-finance/ref-sdk>
+* FAQ: <https://guide.ref.finance/>
 
 ## 🕸️ Supported Chains and Networks
 
