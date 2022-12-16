@@ -37,10 +37,11 @@ This strategy was the winning submission in the [dYdX hackathon](https://blog.hu
 | `hedge_interval`                 | decimal              | 60          | True        | Enter the interval in seconds to check for hedge |
 | `min_trade_size`                 | decimal              | 0           | True        | Enter the minimum trade size in quote asset |
 | `slippage`                       | decimal              | 0.02        | True        | Enter max slippage in decimal, e.g 0.1 -> 10% |
-| `hedge_leverage`                 | decimal              | 1           | True        | How much leverage do you want to use? |
 | `hedge_connector`                | Union[None, ExchangeEnum] | None   | True        | The name of the exchange connector.|
 | `hedge_markets`                  | List[str]            | None        | True        | The name of the trading pairs. (For Value Mode, only one market can be entered)|
 | `hedge_offsets`                  | List[Decimal]        | [0.0]       | True        | Enter the offsets to use to hedge the markets comma seperated|
+| `hedge_leverage`                 | decimal              | 1           | True        | Enter the leverage to use for the hedge market|
+| `hedge_position_mode`            | Literal["ONEWAY", "HEDGE"]| ONEWAY | True        | Enter the position mode to use for the hedge market. (Ensure that the perp connector position mode matches the position mode here)|
 | `connector_0`                    | MarketConfigMap      |             | True        | Do you want to monitor connector 0?|
 | `connector_1`                    | MarketConfigMap      |             | True        | Do you want to monitor connector 1?|
 | `connector_2`                    | MarketConfigMap      |             | True        | Do you want to monitor connector 2?|
