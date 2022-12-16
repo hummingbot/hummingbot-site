@@ -21,7 +21,7 @@ Then, run the following setup script to generate the Gateway `conf` folder and p
 
 ```bash
 
-(hummingbot) ➜ gateway/setup/generate_conf.sh gateway/conf
+(hummingbot) ➜ gateway/setup/generate_conf.sh
 
 ===============  GENERATE GATEWAY CONFIGURATION FILES ===============
 
