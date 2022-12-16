@@ -190,9 +190,7 @@ nav:
         - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
         - BTC Markets: exchanges/btc-markets.md
-        - Blocktane: exchanges/blocktane.md
         - Coinbase Pro: exchanges/coinbase.md
-        - CoinFLEX: exchanges/coinflex.md
         - CoinZoom: exchanges/coinzoom.md
         - Crypto.com : exchanges/crypto-com.md
         - Digifinex: exchanges/digifinex.md
@@ -215,7 +213,6 @@ nav:
         - Bitget: exchanges/bitget-perpetual.md
         - Bybit: exchanges/bybit-perpetual.md
         - Bitmex: exchanges/bitmex-perpetual.md
-        - CoinFLEX: exchanges/coinflex-perpetual.md
         - dYdX: exchanges/dydx-perpetual.md
         - Gate.io: exchanges/gate-io-perpetual.md
       - Exchange Connector Doc Template: exchanges/connector-template.md
