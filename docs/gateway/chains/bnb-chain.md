@@ -18,8 +18,8 @@ Below are the Binance Smart Chain networks that Gateway currently supports.
 
 * `chainID`: 56
 * `nodeURL`: https://bsc-dataseed1.binance.org/
-* `tokenListType`: URL
-* `tokenListSource`: https://gateway.pinata.cloud/ipfs/QmdKy1K5TMzSHncLzUXUJdvKi1tHRmJocDRfmCXxW5mshS
+* `tokenListType`: `FILE`
+* `tokenListSource`: src/chains/binance-smart-chain/bep20_tokens_mainnet.json
 * `nativeCurrencySymbol`: BNB
 * `gasPriceRefreshInterval`: 60
 
@@ -34,7 +34,7 @@ gateway config binance-smart-chain.networks.mainnet.<parameter>
 
 * `chainID`: 97
 * `nodeURL`: https://data-seed-prebsc-1-s1.binance.org:8545/
-* `tokenListType`: FILE
+* `tokenListType`: `FILE`
 * `tokenListSource`: src/chains/binance-smart-chain/bep20_tokens_testnet.json
 * `nativeCurrencySymbol`: BNB
 * `gasPriceRefreshInterval`: 60

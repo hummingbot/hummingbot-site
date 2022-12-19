@@ -20,8 +20,8 @@ Below are the Polygon networks that Gateway currently supports.
 
 * `chainID`: 137
 * `nodeURL`: <https://rpc.ankr.com/polygon>
-* `tokenListType`: URL
-* `tokenListSource`: <https://raw.githubusercontent.com/SetProtocol/uniswap-tokenlist/main/set.polygon.tokenlist.json>
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/polygon/polygon_tokens_mainnet.json`
 * `nativeCurrencySymbol`: MATIC
 * `gasPriceRefreshInterval`: 60
 
@@ -37,7 +37,7 @@ gateway config polygon.networks.mainnet.<parameter>
 
 * `chainID`: 80001
 * `nodeURL`: <https://rpc.ankr.com/polygon_mumbai>
-* `tokenListType`: FILE
+* `tokenListType`: `FILE`
 * `tokenListSource`: [Mumbai token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/polygon/polygon_tokens_mumbai.json)
 * `nativeCurrencySymbol`: MATIC
 * `gasPriceRefreshInterval`: 60

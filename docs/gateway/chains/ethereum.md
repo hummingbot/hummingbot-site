@@ -18,8 +18,8 @@ Below are the Ethereum networks that Gateway currently supports.
 
 * `chainID`: 1
 * `nodeURL`: https://rpc.ankr.com/eth
-* `tokenListType`: URL
-* `tokenListSource`: https://wispy-bird-88a7.uniswap.workers.dev/?url=http://tokens.1inch.eth.link 
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/ethereum/erc20_tokens_mainnet.json`
 * `nativeCurrencySymbol`: ETH
 * `gasPriceRefreshInterval`: 60
 
@@ -34,7 +34,7 @@ gateway config ethereum.networks.mainnet.<parameter>
 
 * `chainID`: 3
 * `nodeURL`: https://rpc.ankr.com/eth_ropsten
-* `tokenListType`: FILE
+* `tokenListType`: `FILE`
 * `tokenListSource`: [Ropsten token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/ethereum/erc20_tokens_ropsten.json)
 * `nativeCurrencySymbol`: ETH
 * `gasPriceRefreshInterval`: 60
@@ -66,8 +66,8 @@ gateway config ethereum.networks.kovan.<parameter>
 
 * `chainID`: 42161
 * `nodeURL`: https://rpc.ankr.com/arbitrum
-* `tokenListType`: URL
-* `tokenListSource`: https://bridge.arbitrum.io/token-list-42161.json
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/ethereum/arbitrum_one_tokens.json`
 * `nativeCurrencySymbol`: ETH
 * `gasPriceRefreshInterval`: 60
 
@@ -82,8 +82,8 @@ gateway config ethereum.networks.arbitrum_one.<parameter>
 
 * `chainID`: 421611
 * `nodeURL`: https://arbitrum-rinkeby.infura.io/v3/ (adjust `nodeURL` to add the RPC URL that includes your Infura API key to use it)
-* `tokenListType`: URL
-* `tokenListSource`: https://bridge.arbitrum.io/token-list-421611.json
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/ethereum/arbitrum_rinkeby_tokens.json`
 * `nativeCurrencySymbol`: ETH
 * `gasPriceRefreshInterval`: 60
 
@@ -98,8 +98,8 @@ gateway config ethereum.networks.arbitrum_rinkeby.<parameter>
 
 * `chainID`: 10
 * `nodeURL`: https://rpc.ankr.com/optimism
-* `tokenListType`: URL
-* `tokenListSource`: https://raw.githubusercontent.com/ethereum-optimism/ethereum-optimism.github.io/master/optimism.tokenlist.json
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/ethereum/optimism_tokens.json`
 * `nativeCurrencySymbol`: ETH
 * `gasPriceRefreshInterval`: 60
 

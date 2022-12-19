@@ -16,8 +16,8 @@
 
 * `chainID`: 43114
 * `nodeURL`: <https://rpc.ankr.com/avalanche>
-* `tokenListType`: URL
-* `tokenListSource`: <https://raw.githubusercontent.com/pangolindex/tokenlists/main/pangolin.tokenlist.json>
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/avalanche/avanlanche_tokens.json'
 * `nativeCurrencySymbol`: AVAX
 * `gasPriceRefreshInterval`: 60
 
@@ -33,7 +33,7 @@ gateway config avalanche.networks.avalanche.<parameter>
 
 * `chainID`: 43113
 * `nodeURL`: <https://rpc.ankr.com/avalanche_fuji>
-* `tokenListType`: FILE
+* `tokenListType`: `FILE`
 * `tokenListSource`: [Fuji token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/avalanche/avalanche_tokens_fuji.json)
 * `nativeCurrencySymbol`: AVAX
 * `gasPriceRefreshInterval`: 60

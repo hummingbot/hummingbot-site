@@ -14,8 +14,8 @@ Below are the Near Protocol networks that Gateway currently supports.
 
 * `chainID`: 0
 * `nodeURL`: https://rpc.mainnet.near.org
-* `tokenListType`: URL
-* `tokenListSource`: https://indexer.ref.finance/list-token
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/near/near_tokens.json`
 * `nativeCurrencySymbol`: NEAR
 * `gasPriceRefreshInterval`: 60
 
@@ -30,8 +30,8 @@ gateway config near.networks.mainnet.<parameter>
 
 * `chainID`: 0
 * `nodeURL`: https://rpc.testnet.near.org
-* `tokenListType`: URL
-* `tokenListSource`: https://testnet-indexer.ref-finance.com/list-token
+* `tokenListType`: `FILE`
+* `tokenListSource`: `src/chains/near/near_testnet_tokens.json`
 * `nativeCurrencySymbol`: NEAR
 * `gasPriceRefreshInterval`: 60
 
