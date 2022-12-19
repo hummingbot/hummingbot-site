@@ -2,7 +2,7 @@ We generally release a new version of Hummingbot **every month**. See below for 
 
 ## [1.11.0](./1.11.0/)
 
-* **Released**: December 19, 2022
+* **Released**: December 21, 2022
 * **Github**: [`v1.11.0`](https://github.com/hummingbot/hummingbot/releases/tag/1.11.0)
 * **DockerHub**: [`version-1.11.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=release-1.11.0) | [`version-1.11.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=version-1.11.0-arm)
 
