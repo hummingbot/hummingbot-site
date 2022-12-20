@@ -222,6 +222,7 @@ nav:
     - Gateway Connectors:
       - Gateway Connectors: gateway/index.md
       - Setting up Gateway: gateway/setup.md
+      - Tokenlists: gateway/tokenlist.md
       - History: gateway/history.md
       - Exchanges:
         - Exchanges: gateway/exchanges/index.md
