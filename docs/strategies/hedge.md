@@ -18,13 +18,14 @@ This strategy was the winning submission in the [dYdX hackathon](https://blog.hu
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-[`perp` exchanges](/exchanges/perp)
+* [`spot` exchanges](/exchanges/spot)
+* [`perp` exchanges](/exchanges/perp)
 
 ## 👷 Maintenance
 
-* Release added: [1.11.0](/release-notes/1.11.0/) by [leastchaos](https://github.com/leastchaos)
-* Maintainer: Open
+* Release added: [0.45.0](/release-notes/0.45.0/) by [leastchaos](https://github.com/leastchaos)
+* Last modified: [1.11.0](/release-notes/1.11.0/)
+* Maintainer: [leastchaos](https://github.com/leastchaos)
 
 ## 🛠️ Strategy configs
 
@@ -101,14 +102,13 @@ For E.g, there might be some correlation for some basket of tokens (FEAR, ODDZ, 
 You can set a fixed offset value/amount and the bot will maintain the amount of asset/position you hold at the offset level at every interval.
 
 
-## ℹ️ More Resources （0.45.0）
+## ℹ️ More Resources
 
-In the 3-part series below, Paulo will discuss Hedge in Market Making, including its basic concepts, risk management and hedging with DYDX Perpetuals.
+!!! note
+    The videos below may be obsolete since they are based on the v0.45.0 version of the strategy
 
 :fontawesome-brands-youtube: [Hedge in Market Making | Trader Strategies | Part 01](https://www.youtube.com/watch?v=vO79P7ROwtA)
 
 :fontawesome-brands-youtube: [Hedge & Risk Management | Trader Strategies | Part 02](https://www.youtube.com/watch?v=YQ6vwJOD1Go)
 
 :fontawesome-brands-youtube: [Hedge in Market Making using dYdX Perpetuals | Trader Strategies | Part 03](https://www.youtube.com/watch?v=E_M_SUAP3Zo&t=8s)
-
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
