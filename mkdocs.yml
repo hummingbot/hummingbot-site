@@ -307,20 +307,18 @@ nav:
         - Hanging Orders Tracker: developers/strategies/hanging-orders.md
       - Debug Console: developers/debug.md
       - Adding Commands: developers/commands.md
+  - Governance Docs:
+    - Governance Docs: governance/index.md
+    - Proposals: governance/proposals.md
+    - Polls: governance/polls.md
+    - Bounties: governance/bounties.md
+    - Releases: governance/releases.md
+    - Epochs: governance/epochs.md
   - About the Foundation:
     - About the Foundation: about/index.md
     - HBOT: hbot.md
     - Community: community.md
     - Reporting: reporting.md
-    - Governance:
-      - Governance: governance/index.md
-      - Whitepaper: governance/whitepaper.md
-      - Proposals: governance/proposals.md
-      - Bounties: governance/bounties.md
-      - Releases: governance/releases.md
-      - Epochs: governance/epochs.md
-      - Exchange Certification: governance/certification.md
-      - Hackathons: governance/hackathons.md
     - News & Updates:
       - News & Updates: news/index.md
       - Hummingbot Foundation Roadmap 2022: news/roadmap-2022.md
