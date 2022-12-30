@@ -6,7 +6,7 @@ The purpose of the Hummingbot Foundation is to empower the HBOT token holders to
 * Electing the foundation's Board of Directors
 * Allocating grants and other expenditures of the community treasury
 
-<a href="https://snapshot.org/#/hbot.eth" target="_blank" class="md-button md-button--primary">:fontawesome-solid-vote-yea: Vote with HBOT</a>
+<a href="https://snapshot.org/#/hbot.eth" target="_blank" class="md-button md-button--primary">Vote with HBOT</a>
 
 ## Key Artifacts
 
