@@ -53,10 +53,15 @@ Starting with Epoch 3, epochs are fixed periods that define how the Foundation a
 
 * Gold: 
 * Silver: 
+* Bronze:
 
 ### DEX Connectors
 
 * Gold: 
 * Silver: 
+* Bronze:
 
 ### Core Strategies
+
+* Core:
+* Community:
