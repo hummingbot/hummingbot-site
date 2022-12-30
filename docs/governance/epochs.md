@@ -34,18 +34,16 @@ After Epoch 1, the Foundation conducted a [retrospective](https://forum.hummingb
 | Liquidity Distributions | 5,000,000 |
 | Community Work    | 10,000,000      |
 
-After Epoch 2, the Foundation conducted a [retrospective] and decided to enact the following changes:
+After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbot.org/hummingbots-2023-governance-roadmap/) and decided to enact the following changes to improve the governance process:
 
 * Change epoch cadence to from bi-annually to quarterly
 * Start [Polls](/governance/polls/) to make HBOT governance easier
-* Cease defining per-epoch HBOT distribution targets
+* Cease setting per-epoch HBOT distribution targets
 
 ## Epoch 3
 
 - **Start**: January 1, 2023
 - **End**: March 31, 2023
-
-Starting with Epoch 3, epochs are fixed periods that define how the Foundation allocates bandwidth to the exchanges, strategies, and other components via quarterly [Polls](/governance/polls/).
 
 *Pending poll completion in January 2023*
 
