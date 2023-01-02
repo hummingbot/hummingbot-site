@@ -35,6 +35,7 @@ Run `connect ascend_ex` in order to enter your API keys:
 ```
 Enter your AscendEx API key >>>
 Enter your AscendEx secret API key >>>
+Enter your AscendEx group ID >>>
 ```
 
 If connection is successful:

@@ -69,7 +69,7 @@ You can think of exchange connectors as automated stock brokers running inside H
 At the time or writing this article, there are a total of 23 exchange connectors built into Hummingbot. You can find them under the `hummingbot.connector` module. For example:
 
 * `hummingbot.connector.exchange.binance.binance_exchange` is the market connector module for Binance;
-* `hummingbot.connector.connector.uniswap.uniswap_connector` is the market connector module for Uniswap.
+* `hummingbot.gateway.src.connectors.uniswap.uniswap` is the market connector module for Uniswap.
 
 The base interface for all connectors can be found as the class `ConnectorBase` in the module `hummingbot.connector.connector_base`. The base interface class contains a listing of the methods and properties that all market connectors must implement to make it usable to strategy objects in Hummingbot.
 
