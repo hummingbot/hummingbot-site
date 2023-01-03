@@ -314,18 +314,12 @@ nav:
     - Bounties: governance/bounties.md
     - Releases: governance/releases.md
     - Epochs: governance/epochs.md
-  - About the Foundation:
-    - About the Foundation: about/index.md
-    - HBOT: hbot.md
+  - About Us:
+    - About Us: about/index.md
+    - Board of Directors: governance/board.md
     - Community: community.md
     - Reporting: reporting.md
-    - News & Updates:
-      - News & Updates: news/index.md
-      - Hummingbot Foundation Roadmap 2022: news/roadmap-2022.md
-      - Hummingbot 1.0 and HBOT Distribution Plan: news/hummingbot-1-0.md
-      - Introducing HBOT: news/hbot.md
-      - Introducing the Hummingbot Foundation: news/foundation.md
-      - How does market making work?: news/market-making.md
+    - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
     - 1.11.0: release-notes/1.11.0.md

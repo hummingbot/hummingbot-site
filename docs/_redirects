@@ -1,3 +1,8 @@
 /maintenance/bugs   /governance/bounties            301
 /maintenance/*      /governance/:splat              301
 /developers/scripts /scripts/:splat                 301
+/hbot               https://hummingbot.org/hbot     301
+/news/hbot          https://blog.hummingbot.org/introducing-hbot/  301
+/news/foundation    https://blog.hummingbot.org/hummingbot-foundation  301
+/news/*             https://blog.hummingbot.org/*   301
+/news               https://blog.hummingbot.org     301

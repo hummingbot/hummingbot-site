@@ -1,12 +1,8 @@
-## HBOT Tracker
-
-The Google Sheet below provides an overview of the HBOT allocations set by various [Proposals](/governance/proposals), as well the HBOT token amounts distributed across each proposal to date.
-
-<a href="https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing" target="_blank" class="md-button md-button--primary">:fontawesome-solid-coins: HBOT Tracker</a>
-
 ## Monthly Financials
 
 To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation publishes a monthly financial report that describes the sources and uses of funds over the course of the month, as well as the total treasury position at the end of the month.
+
+[November 2022](https://hummingbot-foundation.notion.site/November-2022-0961231589a14a4d89715400ff74c8ae)
 
 [October 2022](https://hummingbot-foundation.notion.site/October-2022-29a08a3812da4a9dbdfea28046e1b919)
 
@@ -38,38 +34,10 @@ You can use the **exchange** and **version** toggles to filter the data. In addi
 
 [![](./toggles.png)](./toggles.png)
 
-## Reporting FAQ
+## HBOT Tracker
 
-### How does data reporting work?
+The Google Sheet below provides an overview of the HBOT allocations set by various [Proposals](/governance/proposals), as well the HBOT token amounts distributed across each proposal to date.
 
-Unless users turn it off, instances of the Hummingbot software send the following metrics to a Hummingbot Foundation server every 15 minutes:
+<a href="https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing" target="_blank" class="md-button md-button--primary">:fontawesome-solid-coins: HBOT Tracker</a>
 
-* Aggregated trade volume
-* Exchange where the trades occurred
-* Version of Hummingbot software used
-* Device and system information
-* InstanceID (an anonymous, randomly-generated unique identifier)
 
-All data collected will be used exclusively by Hummingbot Foundation for reporting purposes only, and we will never sell this data to any third party.
-
-### Why do you collect this data?
-
-To sustain development of the Hummingbot client, Hummingbot Foundation enters into fee share partnerships with exchanges. These partners need actionable data to convince their stakeholders and community members that a Hummingbot partnership is worthwhile. Their most common requests include total volume traded and number of users.
-
-After a partnership has been established, we rely upon the exchange to remit fees honestly back to us. In the past, we have entered into agreements that were not honored by the exchange, which diverts scarce resources away from the Hummingbot community. By openly publishing both reported volumes as well as fees shared for each exchange (see [Monthly Reports](./index.md#monthly-reports)), we hope to use the power of transparency to incentivize exchanges to honor their agreements.
-
-### How do I configure or turn off this feature?
-
-In `conf/conf_client.yml`, find the following section:
-
-```yaml
-# Whether to enable aggregated order and trade data collection
-anonymized_metrics_mode:
-  anonymized_metrics_interval_min: 15.0
-```
-
-Changing the parameter above to `anonymized_metrics_interval_min: 0.0` disables data reporting. You may also adjust the interval if you would rather send data on a slower or faster interval. 15 minutes was chosen and tested as a reasonable interval for an active trading Hummingbot instance.
-
-### How can I be sure that this is the only data Hummingbot collects?
-
-The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) or [official forum](https://forum.hummingbot.org/) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.
