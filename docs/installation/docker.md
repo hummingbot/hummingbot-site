@@ -77,9 +77,15 @@ You can install Docker and Hummingbot by selecting the following options below:
 
     # 2) Create folders for logs, config files and database file
     mkdir hummingbot_files/hummingbot_conf
+    mkdir hummingbot_files/hummingbot_conf/connectors
+    mkdir hummingbot_files/hummingbot_conf/strategies
+    mkdir hummingbot_files/hummingbot_certs
     mkdir hummingbot_files/hummingbot_logs
     mkdir hummingbot_files/hummingbot_data
     mkdir hummingbot_files/hummingbot_scripts
+    mkdir hummingbot_files/hummingbot_pmm_scripts
+    mkdir hummingbot_files/gateway_conf
+    mkdir hummingbot_files/gateway_logs
 
     # 3) Launch a new instance of hummingbot
     docker run -it \
@@ -88,7 +94,10 @@ You can install Docker and Hummingbot by selecting the following options below:
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_conf,destination=/conf/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
+    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_pmm_scripts,destination=/pmm_scripts/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
+    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_certs,destination=/home/hummingbot/.hummingbot-gateway/certs/" \
+    --mount "type=bind,source=$(pwd)/hummingbot_files/gateway_conf,destination=/gateway-conf/" \
     hummingbot/hummingbot:latest
     ```
 
@@ -164,7 +173,7 @@ Note that the first time WSL is executed, you will be asked to create a new defa
 
 **4. Install Ubuntu from Windows Store**
 
-Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Store and install it as an app in the Start menu. That way, you don't have to run Powershell every time you use Hummingbot. 
+Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Store and install it as an app in the Start menu. That way, you don't have to run Powershell every time you use Hummingbot.
 
 ![Powershell start](/assets/img/wsl-distros.png)
 
@@ -178,7 +187,7 @@ With WSL installed, you now have a Linux Virtual Machine running under Windows.
 
 Follow the instructions below to complete the Docker installation process.
 
-```bash 
+```bash
 # 1) Remove older / currently installed versions of Docker first 
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -205,12 +214,12 @@ sudo usermod -aG docker $USER
 
 # 9) Restart the terminal first before running the create.sh script (Important!)
 exit
-``` 
+```
 
 !!! warning
     Please restart terminal — close and restart your terminal window to enable the correct permissions for `docker` command before proceeding to next step.
 
-### Install Hummingbot 
+### Install Hummingbot
 
 **6. Download the scripts or use the manual method**
 
