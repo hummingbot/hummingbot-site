@@ -39,7 +39,7 @@ See [Reporting](/reporting) for more details.
 
 Launched in April 2019, Hummingbot began as a simple open source market making bot. Today, it has evolved into a extensible framework that lets you create custom trading strategies on any crypto exchange. 
 
-Read our [origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-market-making-bot) and see [History](/history) for more details.
+Read our [origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-market-making-bot) and see [History](./history) for more details.
 
 ## Bylaws
 
