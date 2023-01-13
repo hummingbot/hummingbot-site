@@ -40,10 +40,12 @@ To claim a bounty, the assigned developer must submit a pull request addressing 
 
 ### Payment
 
-Bounties are paid only after the pull request is merged into the `development` branch. Bounty payments are split into the following shares, which are governance parameters settable via HBOT voting:
+Bounties are paid only after the pull request is merged into the `development` branch. For HBOT-denominated bounties created by the Foundation, 100% of the bounty goes to the developer who submitted the pull request.
 
-* **Developer Share**: [80]% of bounty goes to the developer who submitted the pull request
-* **Reviewer Share**: [20]% of bounty goes to the reviewer who approves it
+For bounties funded by community members that are conducted via the Hummingbot Foundation Snapshot, bounty payments are split into the following shares:
+
+* **Developer Share**: [80]% of bounty goes to the developer who submitted the pull request that fulfills the bounty requirements
+* **Reviewer Share**: [20]% of bounty goes to the Foundation for reviewing and merging the pull request
 
 ## Bug Bounties
 

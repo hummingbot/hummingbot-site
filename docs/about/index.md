@@ -45,3 +45,4 @@ Read our [origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-ma
 
 The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
 
+<iframe src="https://fengtality.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
