@@ -151,12 +151,10 @@ nav:
     - Strategies:
       - Strategies: strategies/index.md
       - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Arbitrage: strategies/arbitrage.md
       - Aroon Oscillator: strategies/aroon-oscillator.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
       - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Fixed Grid: strategies/fixed-grid.md
       - Hedge: strategies/hedge.md
       - Liquidity Mining: strategies/liquidity-mining.md
       - Perpetual Market Making: strategies/perpetual-market-making.md
@@ -164,79 +162,65 @@ nav:
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
       - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-      - Strategy Doc Template: strategies/strategy-template.md
     - Scripts:
       - Scripts: scripts/index.md
       - Getting Started: scripts/getting-started.md
       - Script Examples: scripts/examples.md
       - PMM Scripts: scripts/pmm-scripts.md
-    - Exchange Connectors:
-      - Exchange Connectors: exchanges/index.md
-      - Spot Markets:
-        - Spot Markets: exchanges/spot/index.md        
-        - AscendEX: exchanges/ascend-ex.md
+    - CEX Connectors:
+      - CEX Connectors: exchanges/index.md
+      - Gold/Silver: 
         - Binance: exchanges/binance.md
-        - Bybit: exchanges/bybit.md
-        - Gate.io: exchanges/gate-io.md
-        - HitBTC: exchanges/hitbtc.md
-        - Huobi Global: exchanges/huobi.md
         - KuCoin: exchanges/kucoin.md
-        - OKX: exchanges/okx.md
+        - AscendEX: exchanges/ascend-ex.md
+        - HitBTC: exchanges/hitbtc.md
+      - Bronze:
         - AltMarkets: exchanges/altmarkets.md
-        - Beaxy: exchanges/beaxy.md
         - Binance US: exchanges/binance-us.md
+        - Bybit: exchanges/bybit.md
         - Bitfinex: exchanges/bitfinex.md
+        - Bitget: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart.md
         - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
-        - BTC Markets: exchanges/btc-markets.md
         - Coinbase Pro: exchanges/coinbase.md
-        - CoinZoom: exchanges/coinzoom.md
         - Crypto.com : exchanges/crypto-com.md
-        - Digifinex: exchanges/digifinex.md
-        - Eve: exchanges/eve-exchange.md
-        - Himalaya: exchanges/himalaya.md
+        - HitBTC: exchanges/hitbtc.md
+        - Huobi Global: exchanges/huobi.md
         - Kraken: exchanges/kraken.md
-        - Latoken: exchanges/latoken.md
-        - Liquid: exchanges/liquid.md
         - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
         - NDAX: exchanges/ndax.md
+        - OKX: exchanges/okx.md
         - ProBit Global: exchanges/probit.md
-        - ProBit Korea: exchanges/probit-korea.md
-        - WazirX: exchanges/wazirx.md
         - WhiteBit: exchanges/whitebit.md
-      - Perpetual Futures Markets:
-        - Perpetual Futures Markets: exchanges/perp/index.md
-        - Binance Futures: exchanges/binance-perpetual.md
-        - Bitget: exchanges/bitget-perpetual.md
-        - Bybit: exchanges/bybit-perpetual.md
-        - Bitmex: exchanges/bitmex-perpetual.md
-        - dYdX: exchanges/dydx-perpetual.md
         - Gate.io: exchanges/gate-io-perpetual.md
-      - Exchange Connector Doc Template: exchanges/connector-template.md
-    - Gateway Connectors:
-      - Gateway Connectors: gateway/index.md
+    - DEX Connectors:
+      - DEX Connectors: gateway/index.md
+      - Gold/Silver:
+        - Uniswap: gateway/exchanges/uniswap.md
+        - PancakeSwap: gateway/exchanges/pancakeswap.md
+        - Sushiswap: gateway/exchanges/sushiswap.md
+        - dYdX: exchanges/dydx-perpetual.md
+      - Bronze:
+        - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
+        - Defira: gateway/exchanges/defira.md
+        - MM Finance: gateway/exchanges/mm-finance.md
+        - Pangolin: gateway/exchanges/pangolin.md
+        - Perpetual Protocol: gateway/exchanges/perp.md
+        - Ref Finance: gateway/exchanges/ref-finance.md
+        - Quickswap: gateway/exchanges/quickswap.md
+        - OpenOcean: gateway/exchanges/openocean.md
+        - TraderJoe: gateway/exchanges/traderjoe.md
+        - VVS Finance: gateway/exchanges/vvs-finance.md
+    - Gateway:
+      - Gateway: gateway/index.md
       - Setting up Gateway: gateway/setup.md
       - Adding Tokens: gateway/tokens.md
       - History: gateway/history.md
       - Exchanges:
         - Exchanges: gateway/exchanges/index.md
-        - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
-        - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
-        - Defira: gateway/exchanges/defira.md
-        - MM Finance: gateway/exchanges/mm-finance.md
-        - PancakeSwap: gateway/exchanges/pancakeswap.md
-        - Pangolin: gateway/exchanges/pangolin.md
-        - Perpetual Protocol: gateway/exchanges/perp.md
-        - Ref Finance: gateway/exchanges/ref-finance.md
-        # - Serum: gateway/exchanges/serum.md
-        - Quickswap: gateway/exchanges/quickswap.md
-        - Sushiswap: gateway/exchanges/sushiswap.md
-        - OpenOcean: gateway/exchanges/openocean.md
-        - TraderJoe: gateway/exchanges/traderjoe.md
-        - VVS Finance: gateway/exchanges/vvs-finance.md
       - Chains:
         - Ethereum: gateway/chains/ethereum.md
         - Avalanche: gateway/chains/avalanche.md
@@ -245,9 +229,8 @@ nav:
         - Harmony: gateway/chains/harmony.md
         - NEAR: gateway/chains/near.md
         - Polygon: gateway/chains/polygon.md
-        # - Solana: gateway/chains/solana.md
-    - Global Configs:
-      - Global Configs: global-configs/index.md
+    - Advanced:
+      - Advanced: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
       - Clock Tick Size: global-configs/clock-tick.md 
       - Color Settings: global-configs/color-settings.md
@@ -258,22 +241,22 @@ nav:
       - Telegram Integration: global-configs/telegram.md
       - Strategy Autostart: global-configs/strategy-autostart.md
       - Connect External Database: global-configs/external-db.md
-    - Strategy Configs:
-      - Strategy Configs: strategy-configs/index.md
-      - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-      - Order Levels: strategy-configs/order-levels.md
-      - Filled Order Delay: strategy-configs/filled-order-delay.md
-      - Hanging Orders: strategy-configs/hanging-orders.md
-      - Minimum Spread: strategy-configs/minimum-spread.md
-      - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-      - Order Optimization: strategy-configs/order-optimization.md
-      - Inventory Skew: strategy-configs/inventory-skew.md
-      - Max Order Age: strategy-configs/max-order-age.md
-      - Order Override: strategy-configs/order-override.md
-      - Price Band: strategy-configs/price-band.md
-      - Price Source: strategy-configs/external-price-source.md
-      - Ping Pong: strategy-configs/ping-pong.md
       - Rate Oracle: strategy-configs/rate-oracle.md
+      - Strategy Configs:
+        - Strategy Configs: strategy-configs/index.md
+        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+        - Order Levels: strategy-configs/order-levels.md
+        - Filled Order Delay: strategy-configs/filled-order-delay.md
+        - Hanging Orders: strategy-configs/hanging-orders.md
+        - Minimum Spread: strategy-configs/minimum-spread.md
+        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+        - Order Optimization: strategy-configs/order-optimization.md
+        - Inventory Skew: strategy-configs/inventory-skew.md
+        - Max Order Age: strategy-configs/max-order-age.md
+        - Order Override: strategy-configs/order-override.md
+        - Price Band: strategy-configs/price-band.md
+        - Price Source: strategy-configs/external-price-source.md
+        - Ping Pong: strategy-configs/ping-pong.md
     - FAQ: faq.md
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md
