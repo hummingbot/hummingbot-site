@@ -169,17 +169,17 @@ nav:
       - PMM Scripts: scripts/pmm-scripts.md
     - CEX Connectors:
       - CEX Connectors: exchanges/index.md
-      - Gold/Silver: 
-        - Binance: exchanges/binance.md
+      - Binance (Gold): exchanges/binance.md
+      - Silver:
         - KuCoin: exchanges/kucoin.md
+        - Gate.io: exchanges/gate-io.md
         - AscendEX: exchanges/ascend-ex.md
-        - HitBTC: exchanges/hitbtc.md
       - Bronze:
         - AltMarkets: exchanges/altmarkets.md
         - Binance US: exchanges/binance-us.md
         - Bybit: exchanges/bybit.md
         - Bitfinex: exchanges/bitfinex.md
-        - Bitget: exchanges/bitget-perpetual.md
+        - BitGet: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart.md
         - Bitmex: exchanges/bitmex.md
         - Bittrex Global: exchanges/bittrex.md
@@ -198,10 +198,10 @@ nav:
         - Gate.io: exchanges/gate-io-perpetual.md
     - DEX Connectors:
       - DEX Connectors: gateway/index.md
-      - Gold/Silver:
-        - Uniswap: gateway/exchanges/uniswap.md
+      - Uniswap (Gold): gateway/exchanges/uniswap.md
+      - Silver:
         - PancakeSwap: gateway/exchanges/pancakeswap.md
-        - Sushiswap: gateway/exchanges/sushiswap.md
+        - SushiSwap: gateway/exchanges/sushiswap.md
         - dYdX: exchanges/dydx-perpetual.md
       - Bronze:
         - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
