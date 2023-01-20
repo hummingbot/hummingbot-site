@@ -226,6 +226,7 @@ nav:
         - Avalanche: gateway/chains/avalanche.md
         - BNB Chain: gateway/chains/bnb-chain.md
         - Cronos: gateway/chains/cronos.md
+        - Cosmos: gateway/chains/cosmos.md
         - Harmony: gateway/chains/harmony.md
         - NEAR: gateway/chains/near.md
         - Polygon: gateway/chains/polygon.md
@@ -305,6 +306,7 @@ nav:
     - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.12.0: release-notes/1.12.0.md
     - 1.11.0: release-notes/1.11.0.md
     - 1.10.0: release-notes/1.10.0.md
     - 1.9.0: release-notes/1.9.0.md

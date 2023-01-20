@@ -44,6 +44,7 @@ See [Exchanges](./exchanges) for a list of currently supported venues.
 - [Avalanche](./chains/avalanche)
 - [BNB Chain](./chains/bnb-chain)
 - [Cronos](./chains/cronos)
+- [Cosmos](./chains/cosmos)
 - [Harmony](./chains/harmony)
 - [NEAR](./chains/near)
 - [Polygon](./chains/polygon)
