@@ -13,6 +13,7 @@ Installing Gateway from the Hummingbot client requires Docker to be installed on
 ## Setting up Gateway
 
 Inside the main Hummingbot console, issue the command:
+
 ```
 gateway create
 ```
@@ -25,9 +26,10 @@ Once you see the message "Loaded new configs into Gateway container", and the "G
 
 ## Connecting to a DEX
 
-Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges. 
+Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges.
 
 Let's say you want to connect to Uniswap:
+
 ```
 gateway connect uniswap
 ```
@@ -42,14 +44,25 @@ And you should see your wallet balance on the native blockchain asset (i.e. ETH 
 
 [![Getting blockchain asset balances](/assets/img/gateway-balance.png)](/assets/img/gateway-balance.png)
 
+## Show all Gateway connectors
+
+Running the `gateway list` command will list all available Gateway connectors and their current tiers.
+
+[![Gateway List](gateway-list.jpg)](gateway-list.jpg)
+
+!!! note
+    The `gateway list` command only works when Gateway is already setup and running.
+
 ## Changing Gateway configuration
 
 Gateway supports a robust configuration management system for each supported chain, network and exchange. You can see all the current configuration by running:
+
 ```
 gateway config
 ```
 
 Afterwards, change a setting by running:
+
 ```
 gateway config <chain>.networks.<network>.<setting>
 ```
@@ -65,7 +78,7 @@ Click [here](/operation/commands-shortcuts/#gateway-commands) to see the differe
 
 Connecting to a node provider is necessary for Hummingbot to receive and send data to a blockchain network. Alternatively, you can also run your own node client and connect to its RPC URL. This is set by the `nodeURL` configuration parameter for each network.
 
-To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. The default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account. 
+To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. The default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account.
 
 For certain testnet or other networks that Ankr doesn't support, the default `nodeURL` may be an alternate public endpoint, or in certain cases, an [Infura](https://infura.io/) endpoint, which users need to configure with their Infura key to use (see **Changing Gateway configuration**).
 
