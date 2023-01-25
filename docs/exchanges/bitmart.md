@@ -25,7 +25,7 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [0.44.0](/release-notes/0.44.0/) by CoinAlpha
-* Maintainer:
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🔑 Connection
 

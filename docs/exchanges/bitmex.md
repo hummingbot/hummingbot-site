@@ -18,8 +18,8 @@ tags:
 
 ## 👷 Maintenance
 
-* Release added: [1.6.0](/release-notes/1.6.0/) by trkoneill18
-* Maintainer: Community
+* Release added: [1.6.0](/release-notes/1.6.0/) by [trkoneill18](https://github.com/trkoneill18)
+* Maintainer:
 
 ## 🔑 Connection
 

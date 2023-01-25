@@ -20,7 +20,7 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [1.12.0](/release-notes/1.12.0/) by CoinAlpha
-* Maintainer: 
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🔑 Connection
 

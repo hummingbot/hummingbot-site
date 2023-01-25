@@ -26,7 +26,7 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [0.41.0](/release-notes/0.41.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* Maintainer: Hummingbot Foundation
 
 ## 🔑 Connection
 

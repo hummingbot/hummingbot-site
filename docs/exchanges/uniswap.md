@@ -25,6 +25,10 @@ In addition, the `uniswapLP` connector interfaces with the [`GatewayEVMAMMLP`](h
 * SDK: <https://docs.uniswap.org/sdk/introduction>
 * Fees: <https://docs.uniswap.org/concepts/protocol/fees>
 
+## 👷 Maintenance
+
+* Maintainer: Hummingbot Foundation
+
 ## 🕸️ Supported Chains and Networks
 
 ### Ethereum

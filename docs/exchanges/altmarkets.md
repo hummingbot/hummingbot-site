@@ -21,8 +21,8 @@ tags:
 
 ## 👷 Maintenance
 
-* Release added: [1.1.0](/release-notes/1.1.0/) by TheHolyRoger
-* Maintainer: TheHolyRoger
+* Tier: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+* Maintainer: [TheHolyRoger](https://github.com/theholyroger)
 
 ## 🔑 Connection
 

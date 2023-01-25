@@ -25,7 +25,7 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [1.10.0](/release-notes/1.10.0/) by [yancong001](https://github.com/yancong001)
-* Maintainer:
+* Maintainer: Hummingbot Foundation
 
 ## 🔑 Connection
 

@@ -14,40 +14,28 @@ New to Hummingbot? Start here!
 
 - [Installation](/installation): Install Hummingbot on various platforms
 - [Basic Operations](/operation): Basic commands and actions in Hummingbot
-- [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
-
-## 📚 For traders
-
-Learn about the different components in Hummingbot:
-
 - [Strategies](/strategies): Configurable templates for various algorithmic trading strategies
 - [Scripts](/scripts): Lightweight, single-file strategies in pure Python
 - [Exchange Connectors](/exchanges): Supported centralized and decentralized exchanges
-- [Gateway Connectors](/gateway): Standalone middleware that connects to decentralized exchanges on various blockchain protocols
 
 ## 👩‍💻 For developers
 
 Hummingbot is a general source framework for crypto algorithmic trading. We welcome developers to fork the codebase for their own purposes and contribute to the community.
 
 - [Developers](/developers): Explanation of Hummingbot's architecture and detailed reference on how to build connectors and strategies
-- [Building CEX Connectors](/developers/connectors/): How to add CEX connectors
-- [Building DEX Connectors](/developers/gateway/): How to add DEX connectors
-- [Contribution Guidelines](/developers/contributions/): Read this before submitting a pull request
-
-## ✅ Govern with HBOT
-
-- [HBOT](/hbot): How to claim, vote, and earn Hummingbot Governance Tokens (HBOT)
-- [Governance](/governance): All things related to Foundation governance
-- [Polls](/governance/polls): Vote in regular monthly polls
 - [Bounties](/governance/bounties): Get paid for building and maintaining Hummingbot components
+connector middleware
+- [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
+- [Contribution Guidelines](/developers/contributions/): Read this before submitting a pull request
 
 ## 👨‍👩‍👧‍👧 About us
 
 - [About the Foundation](/about): About Hummingbot Foundation
+- [Governance](/governance): All things related to Foundation governance
 - [FAQ](/faq): Answers to common questions
-- [Blog](https://blog.hummingbot.org): Recent news and updates
 - [Community](/community): Participate in the global Hummingbot ecosystem
-- [Support Hummingbot!](/support-hummingbot): How you can support our mission to democratize HFT!
+- [Blog](https://blog.hummingbot.org): Recent news and updates
+- [Newsletter](https://hummingbot.substack.com/): Recent news and updates
 
 ## 🙋‍♂️ Getting help
 
@@ -61,11 +49,11 @@ Hummingbot features an active, friendly community of users globally! Here are so
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
 
-### Hummingbot Miner
+## Help with Miner
 
-For users using Hummingbot to earn rewards on [Hummingbot Miner](https://miner.hummingbot.io), the Miner team maintains 24/7 dedicated technical support for users. The support team helps users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues.
+For users using Hummingbot to earn rewards on [Miner](https://miner.hummingbot.io), the decentralized market making platform operated by our sister company CoinAlpha, the Miner team maintains 24/7 dedicated technical support for users on the **#miner-support** channel within the Hummingbot Discord server. They help users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues.
 
-You can access Miner support via the following methods:
+You can also access Miner support via the following methods:
 
 - **Email**: Send us a message at [support@hummingbot.io](mailto:support@hummingbot.io)
 - **Live chat**: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io).

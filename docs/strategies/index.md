@@ -12,24 +12,24 @@ Community Strategies may be maintained by individual community members or not ma
 
 ## Core Strategies
 
-  | Name                                                          | Valid Exchanges     | Maintainer    | Description                                                                       |
-|-----------------------------------------------------------------|---------------------|---------------|-----------------------------------------------------------------------------------|
-| [`pure_market_making`](./pure-market-making)                    | `spot`              | Hummingbot Foundation | Our original single-pair market making strategy                                  |
-| [`cross_exchange_market_making`](./cross-exchange-market-making)| `spot`              | Hummingbot Foundation | Provide liquidity while hedging filled orders on another exchange                |
-| [`amm_arb`](./amm-arbitrage)                                    | `spot`, `amm`       | Hummingbot Foundation | Exploits price differences between AMM and spot exchanges                                 |
+| Strategy                                                          | Maintainer    | Description                                                                       |
+|-----------------------------------------------------------------|---------------------|---------------|
+| [pure_market_making](./pure-market-making)                    | Hummingbot Foundation | Our original single-pair market making strategy                                  |
+| [cross_exchange_market_making](./cross-exchange-market-making)| Hummingbot Foundation | Provide liquidity while hedging filled orders on another exchange                |
+| [amm_arb](./amm-arbitrage)                                    | Hummingbot Foundation | Exploits price differences between AMM and spot exchanges                                 |
 
 ## Community Strategies
 
-  | Name                                                          | Valid Exchanges     | Maintainer    | Description                                                                       |
-|-----------------------------------------------------------------|---------------------|---------------|-----------------------------------------------------------------------------------|
-| [`avellaneda_market_making`](./avellaneda-market-making)        | `spot`              | None          | Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
-| [`aroon_oscillator`](./aroon-oscillator)                        | `spot`              | None          | Modified version of Pure Market Making that uses Aroon technical indicator |
-| [`cross_exchange_mining`](./cross-exchange-mining)              | `spot`              | [bsmeaton](https://github.com/bsmeaton)      | Community-maintained mod of Cross Exchange Market Making strategy                |
-| [`hedge`](./hedge)                                              | `perp`              | [leastchaos](https://github.com/leastchaos) | Hedges spot exchange inventory risk using perpetual swaps |
-| [`liquidity_mining`](./liquidity-mining)                        | `spot`              | None          | Provide liquidity on multiple pairs using a single base or quote token            |
-| [`perpetual_market_making`](./perpetual-market-making)          | `perp`              | None          | Market-making strategy for perpetual swap markets                                 |
-| [`spot_perpetual_arbitrage`](./spot-perpetual-arbitrage)        | `spot`, `perp`      | None          | Exploits price differences between spot and perpetual swap exchanges                      |
-| [`twap`](./twap)                                                | `spot`              | None          | Places a batch of limit orders over a period of time                                      |
+| Strategy                                                          | Maintainer    | Description                                                                       |
+|-----------------------------------------------------------------|---------------------|---------------|
+| [avellaneda_market_making](./avellaneda-market-making)        | None          | Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
+| [aroon_oscillator](./aroon-oscillator)                        | None          | Modified version of Pure Market Making that uses Aroon technical indicator |
+| [cross_exchange_mining](./cross-exchange-mining)              | [bsmeaton](https://github.com/bsmeaton)      | Community-maintained mod of Cross Exchange Market Making strategy                |
+| [hedge](./hedge)                                              | [leastchaos](https://github.com/leastchaos) | Hedges spot exchange inventory risk using perpetual swaps |
+| [liquidity_mining](./liquidity-mining)                        | None          | Provide liquidity on multiple pairs using a single base or quote token            |
+| [perpetual_market_making](./perpetual-market-making)          | None          | Market-making strategy for perpetual swap markets                                 |
+| [spot_perpetual_arbitrage](./spot-perpetual-arbitrage)        | None          | Exploits price differences between spot and perpetual swap exchanges                      |
+| [twap](./twap)                                                | None          | Places a batch of limit orders over a period of time                                      |
 
 ## Contributing Strategies
 

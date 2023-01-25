@@ -22,6 +22,11 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: 
 * FAQ: https://mmfinance.gitbook.io/docs/troubleshooting-errors
 
+## 👷 Maintenance
+
+* Release added:
+* Maintainer: CoinAlpha
+
 ## 🕸️ Supported Chains and Networks
 
 ### Cronos

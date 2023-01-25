@@ -20,8 +20,9 @@ tags:
 
 ## 👷 Maintenance
 
-* Release added: [0.39.0](/release-notes/0.39.0/) by [MerkleHedge](https://merklehedge.com/)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+* Release added: [0.39.0](/release-notes/0.39.0/)
+* Updated in release [1.10.0](/release-notes/0.10.0/) by [CoinAlpha](https://merklehedge.com/)
+* Maintainer: Hummingbot Foundation
 
 ## 🔑 Connection
 

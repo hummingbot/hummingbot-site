@@ -19,7 +19,7 @@ tags:
 ## 👷 Maintenance
 
 * Release added: [1.5.0](/release-notes/1.5.0/) by Hummingbot Foundation
-* Maintainer: Hummingbot Foundation
+* Maintainer:
 
 ## 🔑 Connection
 
