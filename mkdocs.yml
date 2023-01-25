@@ -167,44 +167,45 @@ nav:
       - Getting Started: scripts/getting-started.md
       - Script Examples: scripts/examples.md
       - PMM Scripts: scripts/pmm-scripts.md
-    - CEX Connectors:
-      - CEX Connectors: exchanges/index.md
-      - Binance (Gold): exchanges/binance.md
+    - Exchanges:
+      - Exchanges: exchanges/index.md
+      - Gold:
+        - Binance: exchanges/binance.md
+        - Binance (perp): exchanges/binance-perpetual.md
+        - Uniswap: gateway/exchanges/uniswap.md
       - Silver:
-        - KuCoin: exchanges/kucoin.md
+        - Kucoin: exchanges/kucoin.md
         - Gate.io: exchanges/gate-io.md
         - AscendEX: exchanges/ascend-ex.md
-      - Bronze:
+        - PancakeSwap: gateway/exchanges/pancakeswap.md
+        - SushiSwap: gateway/exchanges/sushiswap.md
+        - dYdX: exchanges/dydx-perpetual.md
+      - Bronze CEX:
         - AltMarkets: exchanges/altmarkets.md
         - Binance US: exchanges/binance-us.md
         - Bybit: exchanges/bybit.md
+        - Bybit (perp): exchanges/bybit-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
         - BitGet: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart.md
         - Bitmex: exchanges/bitmex.md
-        - Bittrex Global: exchanges/bittrex.md
+        - Bitmex (perp): exchanges/bitmex-perpetual.md
+        - Bittrex: exchanges/bittrex.md
         - CI-EX: exchanges/ci-ex.md
-        - Coinbase Pro: exchanges/coinbase.md
+        - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
         - HitBTC: exchanges/hitbtc.md
-        - Huobi Global: exchanges/huobi.md
+        - Huobi: exchanges/huobi.md
         - Kraken: exchanges/kraken.md
         - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
-        - ProBit Global: exchanges/probit.md
+        - ProBit: exchanges/probit.md
         - WhiteBit: exchanges/whitebit.md
         - Gate.io: exchanges/gate-io-perpetual.md
-    - DEX Connectors:
-      - DEX Connectors: gateway/index.md
-      - Uniswap (Gold): gateway/exchanges/uniswap.md
-      - Silver:
-        - PancakeSwap: gateway/exchanges/pancakeswap.md
-        - SushiSwap: gateway/exchanges/sushiswap.md
-        - dYdX: exchanges/dydx-perpetual.md
-      - Bronze:
+      - Bronze DEX:
         - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
         - Defira: gateway/exchanges/defira.md
         - MM Finance: gateway/exchanges/mm-finance.md

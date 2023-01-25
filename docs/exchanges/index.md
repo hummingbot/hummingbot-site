@@ -1,23 +1,26 @@
-An exchange connector integrates with the API of a crypto exchange to enable high-frequency, two-way communication between the Hummingbot client and the exchange.
+Hummingbot connectors standardize trading logic and order types across different exchange types. Exchanges may be centralized (**CEX**), or decentralized (**DEX**), in which case user assets are stored on the blockchain and trading is performed via wallet addresses.
 
-## Exchange types
+Currently, we support the following exchange types:
 
-Hummingbot exchange connectors try to standardize trading logic and order types across many different exchanges. Connectors are designed to handle specific exchange types:
+ * **SPOT**: Connectors to central limit order book (CLOB) exchanges that trade spot markets
+ * **PERP**: Connectors to central limit order book (CLOB) exchanges that trade perpetual swap markets
+ * **AMM**: Connectors to decentralized exchanges that use the Automatic Market Maker (AMM) methodology
 
-* [Spot](spot): Connectors to central limit order book (CLOB) exchanges that trade **spot** markets
-* [Perp](perp): Connectors to central limit order book (CLOB) exchanges that trade **perpetual swap** markets
 
-!!! note "DEX support"
-    Hummingbot connects to both centralized and decentralized exchanges (DEX). Certain DEX connectors like dYdX and Loopring are in the primary Hummingbot codebase, while other DEX connectors like Uniswap are in Gateway. See [Gateway](/gateway) for a list of those exchanges.
+| Tier | Exchange | Type | Signup code |
+|------|----------|------|-------------|
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow) | [Binance](./binance) | SPOT CEX | [FQQNNGCD](https://www.binance.com/en/register?ref=FQQNNGCD)
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow) | [Binance Futures](./binance-perpetual) | PERP CEX | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot)
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow) | [Uniswap](./uniswap) | AMM DEX |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=silver) | [KuCoin](./kucoin) | SPOT CEX | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=silver) | [Gate.io](https://www.gate.io/signup/5868285) | SPOT CEX | [5868285](https://www.gate.io/signup/5868285)
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=silver) | [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW) | SPOT CEX | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=silver) | [PancakeSwap](https://pancakeswap.finance/) | AMM DEX |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=silver) | [Sushiswap](https://sushi.com/) | AMM DEX |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=silver) | [dYdX](https://dydx.exchange/) | PERP DEX |
 
-## Connector certification
+## Adding and Removing Exchanges
 
-Since Hummingbot is an open source codebase, connectors vary in quality and level of updates. To maintain a higher standard of quality for a subset of connectors, Hummingbot Foundation utilizes the [Exchange Certification](/maintenance/certification) program to allow the community to vote for which connectors the Foundation focuses its time/effort on maintaining.
+Quarterly [Polls](https://hummingbot.org/maintenance/certification/) allow the Hummingbot community to vote using HBOT tokens to decide which exchanges should be certified GOLD or SILVER, which means that they are maintained and continually improved by Hummingbot Foundation.  In addition, the codebase includes BRONZE exchange connectors that are maintained by community members. 
 
-In addition, the Foundation will prioritize creating [bug bounties](/maintenance/bounties) for bugs related to certified exchanges and work with each certified exchange on partnerships to promote usage of their connectors.
-
-## Adding connectors
-
-Developers may submit connectors for review by the Hummingbot Foundation team. Please note the [Contribution Guidelines](/developers/contributions/).
-
-Exchanges and other institutions can visit the [official Hummingbot website](https://hummingbot.io), maintained by CoinAlpha, to discuss different ways to build and maintain connectors.
+Developers may submit connectors as pull requests. See [Contribution Guidelines](/developers/contributions/) for the process to get pull requests merged into the codebase.
