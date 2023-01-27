@@ -45,21 +45,49 @@ After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbo
 - **Start**: January 1, 2023
 - **End**: March 31, 2023
 
-*Pending poll completion in January 2023*
+See [Epoch 3 Polls Recap](https://blog.hummingbot.org/epoch-3-polls/) for more information.
 
 ### CEX Connectors
 
-* Gold: 
-* Silver: 
-* Bronze:
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+
+* Binance
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+* Kucoin
+* Gate.io
+* AscendEx
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Binance US, Bittrex, Huobi, AltMarkets, HitBTC, Bitmex, ProBit Global, OKX, WhiteBit, MEXC
 
 ### DEX Connectors
 
-* Gold: 
-* Silver: 
-* Bronze:
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+
+* Uniswap
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+* PancakeSwap
+* SushiSwap
+* dYdX
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+TraderJoe, QuickSwap, OpenOcean, Pangolin, Defira, Perpetual Protocol, MM Finance, Defi Kingdoms, Loopring, Ref Finance, VVS Finance
 
 ### Core Strategies
 
-* Core:
-* Community:
+![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
+
+* [Pure Market Making (PMM)](/strategies/pure-market-making/)
+* [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/)
+* [AMM Arbitrage](/strategies/amm-arbitrage/)
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Avellaneda Market Making, UniswapV3 LP, Hedge, Cross-Exchange Mining, Perpetual Market Making, Aroon Oscillator, Liquidity Mining, TWAP, Spot Perpetual Arbitrage
+
