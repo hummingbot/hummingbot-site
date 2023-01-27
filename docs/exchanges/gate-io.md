@@ -1,32 +1,25 @@
----
-tags:
-- spot exchange connector
-- ⛏️ Miner exchange
----
-
 # `gate_io`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/gate_io)
+## 📁 Connector Info
 
-## 📝 Signup
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/gate_io](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/gate_io)
+* Maintainer: Hummingbot Foundation
 
-* Hummingbot referral link - <https://www.gate.io/signup/5868285>
-* Sign up with Gate.io using Hummingbot's referral link for a 10% discount off trading fees!
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
 
 ## ℹ️ Exchange Info
 
-**gate_io**
-[Website](https://www.gate.io/en/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/gate-io/) | [CoinGecko](https://www.coingecko.com/en/exchanges/gate-io)
-
+* Website: https://www.gate.io
+* CoinMarketCap: https://coinmarketcap.com/exchanges/gate-io/
+* CoinGecko: https://www.coingecko.com/en/exchanges/gate-io
 * API docs: <https://www.gate.io/docs/apiv4/en/index.html>
-* Transaction fees: <https://www.gate.io/fee>
-* Minimum order size: <https://support.gate.io/hc/en-us/articles/360000808414-What-is-minimum-order-size>-
-* Creating API keys: <https://support.gate.io/hc/en-us/articles/900000114363-What-are-APIKey-and-APIV4keys-for>-
-
-## 👷 Maintenance
-
-* Release added: [0.41.0](/release-notes/0.41.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* Fees: <https://www.gate.io/fee>
+* **Hummingbot Referral Link**: <https://www.gate.io/signup/5868285>
 
 ## 🔑 Connection
 
@@ -40,11 +33,5 @@ Enter your gate_io secret key >>>
 If connection is successful:
 
 ```
-You are now connected to gate_io.
+You are now connected to gate_io
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/gate_io/gate_io_utils.py#L21)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

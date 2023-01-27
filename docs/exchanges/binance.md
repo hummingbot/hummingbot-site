@@ -1,40 +1,33 @@
----
-tags:
-- spot exchange connector
-- ⭐ reference connector
-- ⛏️ Miner exchange
----
-
 # `binance`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+## 📁 Connector Info
 
-## 📝 Signup
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/binance](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+* Maintainer: Hummingbot Foundation
 
-* Hummingbot referral link - <https://www.binance.com/en/register?ref=FQQNNGCD>
-* Sign up with Binance using Hummingbot's referral link for a 10% discount off trading fees!
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+
+The Gold exchange is the top CEX or DEX selected by HBOT voters in the latest Poll. Their connectors are maintained by Hummingbot Foundation and are continually improved, serving as the "gold standard" template for all other connectors of that type.
 
 ## ℹ️ Exchange Info
 
-**Binance.com** [Website](https://binance.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/binance/) | [CoinGecko](https://www.coingecko.com/en/exchanges/binance)
-
+* Website: https://binance.com/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/binance/
+* CoinGecko: https://www.coingecko.com/en/exchanges/binance
 * API docs: <https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md>
-* Transaction fees: <https://www.binance.com/en/fee/schedule>
-* Minimum order size: <https://www.binance.com/en/trade-rule>
-* Creating API keys: <https://www.binance.com/en/support/faq/360002502072>
-
-## 👷 Maintenance
-
-* Release added: [0.2.0](/release-notes/0.2.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* Fees: <https://www.binance.com/en/fee/schedule>
+* **Hummingbot Referral Link**: https://www.binance.com/en/register?ref=FQQNNGCD (100 USDT in fee rebates)
 
 ## 🔑 Connection
 
 Run `connect binance` in order to enter your API keys:
 
 ```
-Enter your Binance API key >>>
-Enter your Binance secret key >>>
+Enter your binance API key >>>
+Enter your binance secret key >>>
 ```
 
 If connection is successful:
@@ -42,9 +35,3 @@ If connection is successful:
 ```
 You are now connected to binance.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_utils.py#L10)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

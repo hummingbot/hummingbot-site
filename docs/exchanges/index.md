@@ -1,23 +1,82 @@
-An exchange connector integrates with the API of a crypto exchange to enable high-frequency, two-way communication between the Hummingbot client and the exchange.
+## Exchange Types
 
-## Exchange types
+Hummingbot connectors standardize trading logic and order types across different exchange types. All code related to each connector is housed in a folder located in the Hummingbot codebase.
 
-Hummingbot exchange connectors try to standardize trading logic and order types across many different exchanges. Connectors are designed to handle specific exchange types:
+We classify connectors using the following labels:
 
-* [Spot](spot): Connectors to central limit order book (CLOB) exchanges that trade **spot** markets
-* [Perp](perp): Connectors to central limit order book (CLOB) exchanges that trade **perpetual swap** markets
+* **SPOT**: An exchange that trades spot markets
+* **PERP**: An exchange that trades perpetual swap markets
+* **CEX**: A centralized exchange that takes custody of user assets
+* **DEX**: A decentralized exchange in which user assets are stored non-custodially in smart contracts
+* **CLOB**: An exchange that uses a Central Limit Order Book to match makers and takers
+* **AMM**: A DEX that uses Automatic Market Maker (AMM) smart contracts, popularized by Uniswap-V2
+* **AMM-RANGE**: A DEX that uses Automatic Market Maker (AMM) smart contracts that let liquidity providers specify a range, popularized by Uniswap-V3
 
-!!! note "DEX support"
-    Hummingbot connects to both centralized and decentralized exchanges (DEX). Certain DEX connectors like dYdX and Loopring are in the primary Hummingbot codebase, while other DEX connectors like Uniswap are in Gateway. See [Gateway](/gateway) for a list of those exchanges.
+## Connector Tiers
 
-## Connector certification
+Quarterly [Polls](/governance/polls) allow the Hummingbot community to vote using HBOT tokens to rank the exchanges in the codebase. This decides which connectors should be included going forward, and how they are maintained:
 
-Since Hummingbot is an open source codebase, connectors vary in quality and level of updates. To maintain a higher standard of quality for a subset of connectors, Hummingbot Foundation utilizes the [Exchange Certification](/maintenance/certification) program to allow the community to vote for which connectors the Foundation focuses its time/effort on maintaining.
+### Gold
 
-In addition, the Foundation will prioritize creating [bug bounties](/maintenance/bounties) for bugs related to certified exchanges and work with each certified exchange on partnerships to promote usage of their connectors.
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
 
-## Adding connectors
+The two Gold exchanges are the top CEX and DEX selected by HBOT voters in the latest Poll. Their connectors are maintained by Hummingbot Foundation and are continually improved, serving as the "gold standard" template for all other connectors of that type.
 
-Developers may submit connectors for review by the Hummingbot Foundation team. Please note the [Contribution Guidelines](/developers/contributions/).
+| Exchange | Type | Signup code |
+|----------|------|-------------|
+| [Binance](./binance) | SPOT CLOB CEX | [FQQNNGCD](https://www.binance.com/en/register?ref=FQQNNGCD)
+| [Binance (perp)](./binance-perpetual) | PERP CLOB CEX | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot)
+| [Uniswap](./uniswap) | SPOT AMM-RANGE DEX |
 
-Exchanges and other institutions can visit the [official Hummingbot website](https://hummingbot.io), maintained by CoinAlpha, to discuss different ways to build and maintain connectors.
+### Silver
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
+
+
+| Exchange | Type | Signup code |
+|----------|------|-------------|
+| [Kucoin](./kucoin) | SPOT CLOB CEX | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
+| [Gate.io](./gate-io) | SPOT CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
+| [Gate.io (perp)](./gate-io-perpetual) | PERP CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
+| [AscendEx](./ascendex) | SPOT CLOB CEX | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
+| [Pancakeswap](./pancakeswap) | SPOT AMM DEX |
+| [Sushiswap](./sushiswap) | SPOT AMM DEX |
+| [dYdX](./dydx-perpetual) | PERP CLOB DEX |
+
+### Bronze
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+
+## Connector Maintenance
+
+Exchange connectors may have a maintainer who is responsible for ongoing maintenance: fixing bugs, addressing user issues, and keeping up with exchange API and Hummingbot connector standard updates. Specifically, maintainer responsibilities include:
+
+* Addressing user Github issues and pull requests related to the connector
+* Keeping the connector updated for changes to the exchange API and Hummingbot connector standard for that exchange type
+* Keeping the connector's documentation page updated
+
+Hummingbot Foundation is the maintainer for the GOLD and SILVER exchange connectors.
+
+Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BRONZE connectors:
+
+| Exchange | Type | Signup code |
+|----------|------|-------------|
+| [Bitget](./bitget-perpetual) | PERP CLOB CEX |
+| [Bitmart](./bitmart) | SPOT CLOB CEX | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
+| [CI-EX](./ci-ex) | SPOT CLOB CEX |
+| [Himalaya](./Himalaya) | SPOT CLOB CEX |
+| [NDAX](./ndax) | SPOT CLOB CEX |
+| [LBank](./lbank) | SPOT CLOB CEX |
+| [MM Finance](./mm-finance) | SPOT AMM DEX |
+| [Pangolin](./pangolin) | SPOT AMM DEX |
+| [Ref Finance](./ref-finance) | SPOT AMM DEX |
+| [Trader Joe](./traderjoe) | SPOT AMM DEX |
+| [VVS Finance](./vvs-finance) | SPOT AMM DEX |
+
+## Contributing Connectors
+
+Developers may submit connectors as pull requests. See [Contribution Guidelines](/developers/contributions/) for the process to get pull requests merged into the codebase.

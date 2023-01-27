@@ -1,6 +1,4 @@
-Strategy configs are configurable variables that are defined by a [strategy](/strategies), and give you more control over how your trading bot behaves.
-
-Below, we list common configs that are found in various Hummingbot strategies.
+Below are configurable variables that are available in the [Pure Market Making strategy](/strategies/pure-market-making). They give you more control over how your market making bot behaves.
 
 ## How to configure
 

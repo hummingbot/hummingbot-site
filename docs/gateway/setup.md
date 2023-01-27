@@ -13,6 +13,7 @@ Installing Gateway from the Hummingbot client requires Docker to be installed on
 ## Setting up Gateway
 
 Inside the main Hummingbot console, issue the command:
+
 ```
 gateway create
 ```
@@ -25,9 +26,10 @@ Once you see the message "Loaded new configs into Gateway container", and the "G
 
 ## Connecting to a DEX
 
-Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges. 
+Once Gateway is up and running, you can then use `gateway connect` to add connections to decentralized exchanges.
 
 Let's say you want to connect to Uniswap:
+
 ```
 gateway connect uniswap
 ```
@@ -42,14 +44,25 @@ And you should see your wallet balance on the native blockchain asset (i.e. ETH 
 
 [![Getting blockchain asset balances](/assets/img/gateway-balance.png)](/assets/img/gateway-balance.png)
 
+## Show all Gateway connectors
+
+Running the `gateway list` command will list all available Gateway connectors and their current tiers.
+
+[![Gateway List](gateway-list.jpg)](gateway-list.jpg)
+
+!!! note
+    The `gateway list` command only works when Gateway is already setup and running.
+
 ## Changing Gateway configuration
 
 Gateway supports a robust configuration management system for each supported chain, network and exchange. You can see all the current configuration by running:
+
 ```
 gateway config
 ```
 
 Afterwards, change a setting by running:
+
 ```
 gateway config <chain>.networks.<network>.<setting>
 ```
@@ -65,7 +78,7 @@ Click [here](/operation/commands-shortcuts/#gateway-commands) to see the differe
 
 Connecting to a node provider is necessary for Hummingbot to receive and send data to a blockchain network. Alternatively, you can also run your own node client and connect to its RPC URL. This is set by the `nodeURL` configuration parameter for each network.
 
-To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. The default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account. 
+To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. The default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account.
 
 For certain testnet or other networks that Ankr doesn't support, the default `nodeURL` may be an alternate public endpoint, or in certain cases, an [Infura](https://infura.io/) endpoint, which users need to configure with their Infura key to use (see **Changing Gateway configuration**).
 
@@ -98,8 +111,61 @@ Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that ar
 
 Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
 
-## Auto-approval
+## Approve Tokens
 
 On Ethereum and EVM-compatible chains, wallets need to [approve](https://help.matcha.xyz/en/articles/4285134-why-do-i-need-to-approve-my-tokens-before-i-can-trade-them) other addresses such as DEXs before they can send tokens to them, creating an allowance.
 
-When you start a strategy that interacts with a DEX connector, Hummingbot will automatically send an `approve` transaction for the DEX from your wallet, if your wallet does not have an existing allowance with the DEX contract. Hummingbot will wait for the `allowance` to be created before starting the strategy.
+To approve the tokens for spending on gateway, there are multiple ways outlined below. 
+
+### 1. Use approve-token command. 
+
+Hummingbot has a command that allows you to approve tokens for spending on gateway one token at a time. 
+
+```bash
+
+gateway approve-tokens [connector_chain_network] [symbol]
+
+```
+
+Here is an example of the approve-tokens command:
+
+[![Approve tokens on dex using approve-tokens command.](/assets/img/approve-tokens-command.png)](/assets/img/approve-tokens-command.png)
+
+
+### 2. Approve manually using DEX interface
+
+You can use the Dex interface directly for approval. Once you approve a token, you will not have to to approve that token again on the Dex. Each token from a specific wallet you wish to trade requires a one-time approval.
+
+Please note that you don't have to do a full swap to approve a token or multiple tokens, however you will need to pay for transaction fee for approving the token. Here is an example of the approval on Uniswap.
+
+[![Approve tokens on dex using interface](/assets/img/dex-interface-approve.png)](/assets/img/dex-interface-approve.png)
+
+
+
+### 3. Approve manually using explorer (etherscan)
+
+Token approval can be done using the chain explorer such as etherscan in two ways:
+
+-   Search for the `token address`on etherscan.
+
+    a. if the contract is verified, go to `contract > Write contract > _approve`
+
+    b. connect your wallet using the `connect to Web3` button. 
+
+    c. Fill the details as displayed below. 
+
+    [![Approve tokens using etherscan](/assets/img/etherscan-approve.png)](/assets/img/etherscan-approve.png)
+
+    d. Approve the transaction and wait for it to be confirmed. 
+
+- Search for the `Dex router address` on etherscan.
+
+    a. if the contract is verified, go to `contract > Write contract > approveMax`
+
+    b. connect your wallet using the `connect to Web3` button. 
+
+    c. Fill the details as displayed below. 
+
+    [![Approve tokens on dex using etherscan](/assets/img/etherscan-dex-approve.png)](/assets/img/etherscan-dex-approve.png)
+
+    d. Approve the transaction and wait for it to be confirmed. 

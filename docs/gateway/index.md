@@ -1,9 +1,3 @@
----
-tags:
-- gateway
-- gateway-v2
----
-
 !!! note
     Gateway-V2 takes an exchange-first approach that makes building DEX connectors much easier for developers. There exists [an earlier version of Gateway](https://github.com/CoinAlpha/gateway-api) compatible with pre-1.0 Hummingbot releases that has been deprecated and is no longer supported.
 
@@ -21,33 +15,18 @@ See [Setting up Gateway](./setup) for instructions on how to launch and use Gate
 
 See [Setting up Gateway - Developers](/developers/gateway/setup) for instructions on how to install Gateway from source so that you can add DEX connectors, configure custom tokens, and perform other developer-oriented tasks.
 
-## Supported Decentralized Exchanges
-
-Gateway supports the following types of decentralized exchanges (DEX):
-
-- **AMM**: Automatic Market Maker (AMM) DEXs similar to [Uniswap V2](https://docs.uniswap.org/concepts/uniswap-protocol)
-- **Concentrated Liquidity AMM**: AMM DEXs that support concentrated liquidity ranges, similar to [Uniswap V3](https://docs.uniswap.org/protocol/introduction)
-- **Perpetual AMM**: AMM DEXs that trade perpetual futures, similar to [Perpetual Protocol](https://docs.perp.fi/)
-
-See [Exchanges](./exchanges) for a list of currently supported venues.
-
-## Supported Blockchains
-
-**Ethereum and EVM Layer 2 networks**
+## Supported Chains
 
 - [Ethereum](./chains/ethereum)
 - [Arbitrum](./chains/ethereum#arbitrum_one-mainnet)
 - [Optimism](./chains/ethereum#optimism-mainnet)
-
-**Other chains**
-
 - [Avalanche](./chains/avalanche)
 - [BNB Chain](./chains/bnb-chain)
+- [Polygon](./chains/polygon)
+- [Cosmos](./chains/cosmos)
+- [NEAR](./chains/near)
 - [Cronos](./chains/cronos)
 - [Harmony](./chains/harmony)
-- [NEAR](./chains/near)
-- [Polygon](./chains/polygon)
-
 <!-- - [Solana](./chains/solana) (In progress) -->
 
 ## Building Gateway Connectors

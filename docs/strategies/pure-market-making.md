@@ -1,16 +1,18 @@
----
-tags:
-- market making
-- ⛏️ Miner strategy
----
-
 # `pure_market_making`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/pure_market_making)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/pure_market_making](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/pure_market_making)
+* Configs: [pure_market_making_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making_config_map.py)
+* Maintainer: Hummingbot Foundation
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
+
+Core strategies are maintained and continually improved by Hummingbot Foundation. Foundation staff focuses on testing these strategies and rewards users who answer questions related to these strategies on Discord.
 
 ## 📝 Summary
-
-## How it works
 
 This strategy allows Hummingbot users to run a market making strategy on a single trading pair on a `spot` exchanges.
 
@@ -18,63 +20,56 @@ It places limit buy (bid) and limit sell (ask) orders on the order book at price
 
 In addition, the strategy contains a number of parameters to enable traders to control how orders are placed relative to their inventory position, use prices from a different order book, etc.
 
-## 🏦 Exchanges supported
+## 🏦 Supported Exchange Types
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [0.7.0](/release-notes/0.7.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* SPOT CLOB CEX
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making_config_map.py)
-
-| Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
-|------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
-| `exchange`                   | string      |             | True        | Enter your maker spot connector |
-| `market`                     | string      |             | True        | Enter the token trading pair you would like to trade on [exchange] |
-| `bid_spread`                 | decimal     |             | True        | How far away from the mid price do you want to place the first bid order? |
-| `ask_spread`                 | decimal     |             | True        | How far away from the mid price do you want to place the first ask order? |
-| `minimum_spread`             | decimal     | -100        | False       | At what minimum spread should the bot automatically cancel orders? |
-| `order_refresh_time`         | float       |             | True        | How often do you want to cancel and replace bids and asks (in seconds)? |
-| `max_order_age`              | float       | 1800        | False       | How often do you want to cancel and replace bids and asks with the same price (in seconds)? |
-| `order_refresh_tolerance_pct`| decimal     | 0           | False       | Enter the percent change in price needed to refresh orders at each cycle |
-| `order_amount`               | decimal     |             | True        | What is the amount of [base_asset] per order? |
-| `price_ceiling`              | decimal     | -1          | False       | Enter the price point above which only sell orders will be placed |
-| `price_floor`                | decimal     | -1          | False       | Enter the price below which only buy orders will be placed |
-| `moving_price_band_enabled`  | bool        | False       | True        | Would you like to enable moving price floor and ceiling? (Yes/No)  |
-| `price_ceiling_pct`          | decimal     | 1           | True        | Enter a percentage to the current price that sets the price ceiling. Above this price, only sell orders will be placed  |
-| `price_band_refresh_time`    | float       | 86400       | True        | After this amount of time (in seconds), the price bands are reset based on the current price  |
-| `ping_pong_enabled`          | bool        | False       | True        | Would you like to use the ping pong feature and alternate between buy and sell orders after fills? |
-| `order_levels`               | int         | 1           | False       | How many orders do you want to place on both sides? |
-| `order_level_amount`         | decimal     | 0           | False       | How much do you want to increase or decrease the order size for each additional order? |
-| `order_level_spread`         | decimal     | 0           | False       | Enter the price increments (as percentage) for subsequent orders? |
-| `inventory_skew_enabled`     | bool        | False       | False       | Would you like to enable inventory skew? |
-| `inventory_target_base_pct`  | decimal     | 50          | False       | What is your target base asset percentage? |
-| `inventory_range_multiplier` | decimal     | 50          | False       | What is your tolerable range of inventory around the target, expressed in multiples of your total order size? |
-| `inventory_price`            | decimal     | 1           | False       | What is the price of your base asset inventory? |
-| `filled_order_delay`         | decimal     | 60          | False       | How long do you want to wait before placing the next order if your order gets filled (in seconds)? |
-| `hanging_orders_enabled`     | bool        | False       | False       | Do you want to enable hanging orders? |
-| `hanging_orders_cancel_pct`  | decimal     | 10          | False       | At what spread percentage (from mid price) will hanging orders be canceled?|
-| `order_optimization_enabled` | bool        | False       | False       | Do you want to enable best bid ask jumping? |
-| `ask_order_optimization_depth`| decimal    | 0           | False       | How deep do you want to go into the order book for calculating the top ask, ignoring dust orders on the top (expressed in base asset amount)?|
-| `bid_order_optimization_depth`| decimal    | 0           | False       | How deep do you want to go into the order book for calculating the top bid, ignoring dust orders on the top (expressed in base asset amount)?|
-| `price_source`               | string      | current_market| False     | Which price source to use? (current_market/external_market/custom_api) |
-| `price_type`                 | string      | mid_price   | False       | Which price type to use? (mid_price/last_price/last_own_trade_price/best_bid/best_ask/inventory_cost) |
-| `price_source_exchange`      | string      |             | False       | Enter external price source exchange name |
-| `price_source_market`        | string      |             | False       | Enter the token trading pair on [price_source_exchange] |
-| `price_source_custom_api`    | string      |             | False       | Enter pricing API URL |
-| `custom_api_update_interval` | float       | 5           | False       | Enter custom API update interval in second (default: 5.0, min: 0.5) |
-| `add_transaction_costs`      | bool        | False       | False       | Do you want to add transaction costs automatically to order prices? |
-| `take_if_crossed`            | bool        | False       | False       | Do you want to take the best order if orders cross the orderbook? |
-| `order_override`             | bool        | None        | False       |  |
-| `should_wait_order_cancel_confirmation` | bool | True    | False       | Should the strategy wait to receive a confirmation for orders cancelation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
-| `bid_order_level_spreads`    | decimal     | None        | True        | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
-| `ask_order_level_spreads`    | decimal     | None        | True        | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
-| `bid_order_level_amounts`    | decimal     | None        | True        | Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
-| `ask_order_level_amounts`    | decimal     | None        | True        |Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
+| Parameter                    | Type        | Default     | Prompt      |
+|------------------------------|-------------|-------------|-------------|
+| `exchange`                   | string      |             | Enter your maker spot connector |
+| `market`                     | string      |             | Enter the token trading pair you would like to trade on [exchange] |
+| `bid_spread`                 | decimal     |             | How far away from the mid price do you want to place the first bid order? |
+| `ask_spread`                 | decimal     |             | How far away from the mid price do you want to place the first ask order? |
+| `minimum_spread`             | decimal     | -100        | At what minimum spread should the bot automatically cancel orders? |
+| `order_refresh_time`         | float       |             | How often do you want to cancel and replace bids and asks (in seconds)? |
+| `max_order_age`              | float       | 1800        | How often do you want to cancel and replace bids and asks with the same price (in seconds)? |
+| `order_refresh_tolerance_pct`| decimal     | 0           | Enter the percent change in price needed to refresh orders at each cycle |
+| `order_amount`               | decimal     |             | What is the amount of [base_asset] per order? |
+| `price_ceiling`              | decimal     | -1          | Enter the price point above which only sell orders will be placed |
+| `price_floor`                | decimal     | -1          | Enter the price below which only buy orders will be placed |
+| `moving_price_band_enabled`  | bool        | False       | Would you like to enable moving price floor and ceiling? (Yes/No)  |
+| `price_ceiling_pct`          | decimal     | 1           | Enter a percentage to the current price that sets the price ceiling. Above this price, only sell orders will be placed  |
+| `price_band_refresh_time`    | float       | 86400       | After this amount of time (in seconds), the price bands are reset based on the current price  |
+| `ping_pong_enabled`          | bool        | False       | Would you like to use the ping pong feature and alternate between buy and sell orders after fills? |
+| `order_levels`               | int         | 1           | How many orders do you want to place on both sides? |
+| `order_level_amount`         | decimal     | 0           | How much do you want to increase or decrease the order size for each additional order? |
+| `order_level_spread`         | decimal     | 0           | Enter the price increments (as percentage) for subsequent orders? |
+| `inventory_skew_enabled`     | bool        | False       | Would you like to enable inventory skew? |
+| `inventory_target_base_pct`  | decimal     | 50          | What is your target base asset percentage? |
+| `inventory_range_multiplier` | decimal     | 50          | What is your tolerable range of inventory around the target, expressed in multiples of your total order size? |
+| `inventory_price`            | decimal     | 1           | What is the price of your base asset inventory? |
+| `filled_order_delay`         | decimal     | 60          | How long do you want to wait before placing the next order if your order gets filled (in seconds)? |
+| `hanging_orders_enabled`     | bool        | False       | Do you want to enable hanging orders? |
+| `hanging_orders_cancel_pct`  | decimal     | 10          | At what spread percentage (from mid price) will hanging orders be canceled?|
+| `order_optimization_enabled` | bool        | False       | Do you want to enable best bid ask jumping? |
+| `ask_order_optimization_depth`| decimal    | 0           | How deep do you want to go into the order book for calculating the top ask, ignoring dust orders on the top (expressed in base asset amount)?|
+| `bid_order_optimization_depth`| decimal    | 0           | How deep do you want to go into the order book for calculating the top bid, ignoring dust orders on the top (expressed in base asset amount)?|
+| `price_source`               | string      | current_market| Which price source to use? (current_market/external_market/custom_api) |
+| `price_type`                 | string      | mid_price   | Which price type to use? (mid_price/last_price/last_own_trade_price/best_bid/best_ask/inventory_cost) |
+| `price_source_exchange`      | string      |             | Enter external price source exchange name |
+| `price_source_market`        | string      |             | Enter the token trading pair on [price_source_exchange] |
+| `price_source_custom_api`    | string      |             | Enter pricing API URL |
+| `custom_api_update_interval` | float       | 5           | Enter custom API update interval in second (default: 5.0, min: 0.5) |
+| `add_transaction_costs`      | bool        | False       | Do you want to add transaction costs automatically to order prices? |
+| `take_if_crossed`            | bool        | False       | Do you want to take the best order if orders cross the orderbook? |
+| `order_override`             | bool        |             |
+| `should_wait_order_cancel_confirmation` | bool |     | Should the strategy wait to receive a confirmation for orders cancelation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
+| `bid_order_level_spreads`    | decimal     |         | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
+| `ask_order_level_spreads`    | decimal     |         | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
+| `bid_order_level_amounts`    | decimal     |         | Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
+| `ask_order_level_amounts`    | decimal     |         |Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
 
 ## 📓 Description
 
@@ -116,138 +111,6 @@ Below is a hypothetical example of how the pure market making strategy works for
 * At clock tick `t+2`, the strategy loops through its trading logic and notices there's no longer an order at the bid side. So it'll propose a non-zero order size for a new bid order. Let's assume the existing ask order hasn't expired yet, so no cancellation proposals will be generated at this clock tick. At the execution phase, the strategy will simply create a bid order calculated from the current market mid-price. Thus the bid order is refreshed.
 
 This cycle of order creation and order cancellation will repeat again and again for as long as the strategy is running. If a limit order is completely filled by a market order, the strategy will simply refresh it at the next clock tick.
-
-<!-- ## Schematic
-
-The diagram below illustrates how market making works. Hummingbot makes a market by placing buy and sell orders on a single exchange, specifying prices and sizes.
-
-<small>
-  <center>**_Figure 1: Hummingbot makes a market on an exchange_**</center>
-</small>
-
-![Figure 1: Hummingbot makes a market on an exchange](/assets/img/pure-mm.png)
-
-## Prerequisites
-
-### Inventory
-
-- You will need to hold a sufficient inventory of quote and/or base currencies on the exchange to place orders of the exchange's minimum order size.
-- You will also need some ETH to pay gas for transactions on a decentralized exchange (if applicable).
-
-### Minimum order size
-
-When placing orders, if the size of the order determined by the order price and quantity is below the exchange's minimum order size, then the orders will not be created.
-
-**Example:**
-
-`bid order amount * bid price` < `exchange's minimum order size`<br/>
-`ask order amount * ask price` > `exchange's minimum order size`
-
-Only a sell order will be created, but no buy order.
-
-## Basic parameters
-
-We aim to teach new users the basics of market-making while enabling experienced users to exercise more control over how their bots behave. By default, when you run `create`, we ask you to enter the basic parameters needed for a market-making bot.
-
-See [Strategy Configs](/strategy-configs/) for more information about the advanced parameters and how to use them.
-
-The following parameters are fields in Hummingbot configuration files located in the `/conf` folder (e.g. `conf_pure_mm_[#].yml`).
-
-### `exchange`
-
-The exchange where the bot will place bid and ask orders.
-
-** Prompt: **
-
-```json
-Enter your maker spot connector
->>> binance
-```
-
-### `market`
-
-Token trading pair symbol you would like to trade on the exchange.
-
-** Prompt: **
-
-```json
-Enter the token trading pair you would like to trade on the exchange
->>> BTC-USDT
-```
-
-### `bid_spread`
-
-The strategy will place the buy (bid) order on a certain % away from the mid-price.
-
-** Prompt: **
-
-```json
-How far away from the mid price do you want to place the first bid order?
->>> 2
-```
-
-### `ask_spread`
-
-The strategy will place the sell (ask) order on a certain % away from the mid-price.
-
-** Prompt: **
-
-```json
-How far away from the mid price do you want to place the first ask order?
->>> 3
-```
-
-### `order_refresh_time`
-
-An amount in seconds, which is the duration for the placed limit orders. The limit bid and ask orders are canceled, and new orders are placed according to the current mid-price and spread at this interval.
-
-** Prompt: **
-
-```json
-How often do you want to cancel and replace bids and asks (in seconds)?
->>> 10
-```
-
-### `order_amount`
-
-The order amount for the limit bid and ask orders. Ensure you have enough quote and base tokens to place the bid and ask orders. The strategy will not place any orders if you do not have sufficient balance on either side of the order. <br/>
-
-** Prompt: **
-
-```json
-What is the amount of [base_asset] per order? (minimum [min_amount])
->>>
-```
-
-### `ping_pong_enabled`
-
-Whether to alternate between buys and sells, for more information on this parameter, click this [link](/strategy-configs/ping-pong/).
-
-** Prompt: **
-
-```json
-Would you like to use the ping pong feature and alternate between buy and sell orders after fills?
->>>
-```
-
-!!! tip
-    For autocomplete inputs during configuration, when going through the command line config process, pressing `<TAB>` at a prompt will display valid available inputs.
-
-## **Configure parameters on the fly**
-
-Currently, only the following parameters can be reconfigured without stopping the bot. The changes will take effect in the next order refresh.
-
-- bid_spread
-- ask_spread
-- order_amount
-- order_levels
-- order_level_spread
-- inventory_target_base_pct
-- inventory_range_multiplier
-- filled_order_delay
-
-!!! note
-    Reconfiguring of `inventory_target_base_pct` for DEX connectors is not working at the moment. -->
 
 ## ℹ️ More Resources
 

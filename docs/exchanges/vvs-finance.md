@@ -22,6 +22,11 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * SDK: https://github.com/vvs-finance/vvs-ui/tree/master/packages/vvs-swap-sdk
 * FAQ: https://docs.vvs.finance/support-and-help/faq
 
+## 👷 Maintenance
+
+* Exchange Tier: 
+* Maintainer: [CoinAlpha](https://coinalpha.com)
+
 ## 🕸️ Supported Chains and Networks
 
 ### Cronos

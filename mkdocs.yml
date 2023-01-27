@@ -150,21 +150,20 @@ nav:
       - Export Trades/Keys: operation/export.md
     - Strategies:
       - Strategies: strategies/index.md
-      - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Arbitrage: strategies/arbitrage.md
-      - Aroon Oscillator: strategies/aroon-oscillator.md
-      - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Fixed Grid: strategies/fixed-grid.md
-      - Hedge: strategies/hedge.md
-      - Liquidity Mining: strategies/liquidity-mining.md
-      - Perpetual Market Making: strategies/perpetual-market-making.md
-      - Pure Market Making: strategies/pure-market-making.md
-      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - TWAP: strategies/twap.md
-      - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-      - Strategy Doc Template: strategies/strategy-template.md
+      - Core:
+        - Pure Market Making: strategies/pure-market-making.md
+        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+      - Community:
+        - Aroon Oscillator: strategies/aroon-oscillator.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
+        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
     - Scripts:
       - Scripts: scripts/index.md
       - Getting Started: scripts/getting-started.md
@@ -172,82 +171,70 @@ nav:
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchange Connectors:
       - Exchange Connectors: exchanges/index.md
-      - Spot Markets:
-        - Spot Markets: exchanges/spot/index.md        
-        - AscendEX: exchanges/ascend-ex.md
+      - Gold:
         - Binance: exchanges/binance.md
-        - Bybit: exchanges/bybit.md
+        - Binance (perp): exchanges/binance-perpetual.md
+        - Uniswap: exchanges/uniswap.md
+      - Silver:
+        - Kucoin: exchanges/kucoin.md
         - Gate.io: exchanges/gate-io.md
-        - HitBTC: exchanges/hitbtc.md
-        - Huobi Global: exchanges/huobi.md
-        - KuCoin: exchanges/kucoin.md
-        - OKX: exchanges/okx.md
+        - Gate.io (perp): exchanges/gate-io-perpetual.md
+        - AscendEX: exchanges/ascend-ex.md
+        - Pancakeswap: exchanges/pancakeswap.md
+        - Sushiswap: exchanges/sushiswap.md
+        - dYdX: exchanges/dydx-perpetual.md
+      - Bronze CEX:
         - AltMarkets: exchanges/altmarkets.md
-        - Beaxy: exchanges/beaxy.md
         - Binance US: exchanges/binance-us.md
+        - Bybit: exchanges/bybit.md
+        - Bybit (perp): exchanges/bybit-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
+        - BitGet: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart.md
         - Bitmex: exchanges/bitmex.md
-        - Bittrex Global: exchanges/bittrex.md
-        - BTC Markets: exchanges/btc-markets.md
-        - Coinbase Pro: exchanges/coinbase.md
-        - CoinZoom: exchanges/coinzoom.md
+        - Bitmex (perp): exchanges/bitmex-perpetual.md
+        - Bittrex: exchanges/bittrex.md
+        - CI-EX: exchanges/ci-ex.md
+        - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
-        - Digifinex: exchanges/digifinex.md
-        - Eve: exchanges/eve-exchange.md
+        - HitBTC: exchanges/hitbtc.md
         - Himalaya: exchanges/himalaya.md
+        - Huobi: exchanges/huobi.md
         - Kraken: exchanges/kraken.md
-        - Latoken: exchanges/latoken.md
-        - Liquid: exchanges/liquid.md
         - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
         - MEXC: exchanges/mexc.md 
         - NDAX: exchanges/ndax.md
-        - ProBit Global: exchanges/probit.md
-        - ProBit Korea: exchanges/probit-korea.md
-        - WazirX: exchanges/wazirx.md
+        - OKX: exchanges/okx.md
+        - ProBit: exchanges/probit.md
         - WhiteBit: exchanges/whitebit.md
-      - Perpetual Futures Markets:
-        - Perpetual Futures Markets: exchanges/perp/index.md
-        - Binance Futures: exchanges/binance-perpetual.md
-        - Bitget: exchanges/bitget-perpetual.md
-        - Bybit: exchanges/bybit-perpetual.md
-        - Bitmex: exchanges/bitmex-perpetual.md
-        - dYdX: exchanges/dydx-perpetual.md
-        - Gate.io: exchanges/gate-io-perpetual.md
-      - Exchange Connector Doc Template: exchanges/connector-template.md
-    - Gateway Connectors:
-      - Gateway Connectors: gateway/index.md
+      - Bronze DEX:
+        - DeFi Kingdoms: exchanges/defikingdoms.md
+        - Defira: exchanges/defira.md
+        - MM Finance: exchanges/mm-finance.md
+        - OpenOcean: exchanges/openocean.md
+        - Pangolin: exchanges/pangolin.md
+        - Perpetual Protocol: exchanges/perp.md
+        - Quickswap: exchanges/quickswap.md
+        - Ref Finance: exchanges/ref-finance.md
+        - TraderJoe: exchanges/traderjoe.md
+        - VVS Finance: exchanges/vvs-finance.md
+    - Gateway:
+      - Gateway: gateway/index.md
       - Setting up Gateway: gateway/setup.md
       - Adding Tokens: gateway/tokens.md
       - History: gateway/history.md
-      - Exchanges:
-        - Exchanges: gateway/exchanges/index.md
-        - Uniswap and UniswapLP: gateway/exchanges/uniswap.md
-        - DeFi Kingdoms: gateway/exchanges/defikingdoms.md
-        - Defira: gateway/exchanges/defira.md
-        - MM Finance: gateway/exchanges/mm-finance.md
-        - PancakeSwap: gateway/exchanges/pancakeswap.md
-        - Pangolin: gateway/exchanges/pangolin.md
-        - Perpetual Protocol: gateway/exchanges/perp.md
-        - Ref Finance: gateway/exchanges/ref-finance.md
-        # - Serum: gateway/exchanges/serum.md
-        - Quickswap: gateway/exchanges/quickswap.md
-        - Sushiswap: gateway/exchanges/sushiswap.md
-        - OpenOcean: gateway/exchanges/openocean.md
-        - TraderJoe: gateway/exchanges/traderjoe.md
-        - VVS Finance: gateway/exchanges/vvs-finance.md
-      - Chains:
+      - Chains Supported:
         - Ethereum: gateway/chains/ethereum.md
         - Avalanche: gateway/chains/avalanche.md
         - BNB Chain: gateway/chains/bnb-chain.md
         - Cronos: gateway/chains/cronos.md
+        - Cosmos: gateway/chains/cosmos.md
         - Harmony: gateway/chains/harmony.md
         - NEAR: gateway/chains/near.md
         - Polygon: gateway/chains/polygon.md
-        # - Solana: gateway/chains/solana.md
-    - Global Configs:
-      - Global Configs: global-configs/index.md
+    - Advanced Features:
+      - Advanced: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
       - Clock Tick Size: global-configs/clock-tick.md 
       - Color Settings: global-configs/color-settings.md
@@ -258,22 +245,22 @@ nav:
       - Telegram Integration: global-configs/telegram.md
       - Strategy Autostart: global-configs/strategy-autostart.md
       - Connect External Database: global-configs/external-db.md
-    - Strategy Configs:
-      - Strategy Configs: strategy-configs/index.md
-      - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-      - Order Levels: strategy-configs/order-levels.md
-      - Filled Order Delay: strategy-configs/filled-order-delay.md
-      - Hanging Orders: strategy-configs/hanging-orders.md
-      - Minimum Spread: strategy-configs/minimum-spread.md
-      - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-      - Order Optimization: strategy-configs/order-optimization.md
-      - Inventory Skew: strategy-configs/inventory-skew.md
-      - Max Order Age: strategy-configs/max-order-age.md
-      - Order Override: strategy-configs/order-override.md
-      - Price Band: strategy-configs/price-band.md
-      - Price Source: strategy-configs/external-price-source.md
-      - Ping Pong: strategy-configs/ping-pong.md
       - Rate Oracle: strategy-configs/rate-oracle.md
+      - PMM Configs:
+        - PMM Configs: strategy-configs/index.md
+        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+        - Order Levels: strategy-configs/order-levels.md
+        - Filled Order Delay: strategy-configs/filled-order-delay.md
+        - Hanging Orders: strategy-configs/hanging-orders.md
+        - Minimum Spread: strategy-configs/minimum-spread.md
+        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+        - Order Optimization: strategy-configs/order-optimization.md
+        - Inventory Skew: strategy-configs/inventory-skew.md
+        - Max Order Age: strategy-configs/max-order-age.md
+        - Order Override: strategy-configs/order-override.md
+        - Price Band: strategy-configs/price-band.md
+        - Price Source: strategy-configs/external-price-source.md
+        - Ping Pong: strategy-configs/ping-pong.md
     - FAQ: faq.md
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md
@@ -322,6 +309,7 @@ nav:
     - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.12.0: release-notes/1.12.0.md
     - 1.11.0: release-notes/1.11.0.md
     - 1.10.0: release-notes/1.10.0.md
     - 1.9.0: release-notes/1.9.0.md

@@ -35,6 +35,7 @@ Below are the available commands in the current Hummingbot release.
 | `connect`         | Start the current bot                                         |
 | `connector-tokens`| Report token balances for gateway connectors                  |
 | `generate-certs`  | Create ssl certificate for gateway                            |
+| `list`            | Shows a list of all available gateway connectors and their tiers  |
 | `start`           | Start gateway docker instance                                 |
 | `status`          | Check status of gateway docker instance                       |
 | `stop`            | Stop gateway docker instance                                  |
@@ -60,7 +61,6 @@ optional arguments:
 -h, --help          show this help message and exit
 
 ```
-
 
 Gateway help command can also be used this way `gateway [command]-h`
 
@@ -110,7 +110,6 @@ These are the basic commands used to navigate Linux commonly used with Hummingbo
 | `htop`  | Monitor the system processes in real time            |
 
 For more information about basic Linux commands, check out [The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview).
-
 
 ## Keyboard shortcuts
 

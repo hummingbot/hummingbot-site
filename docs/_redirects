@@ -6,3 +6,6 @@
 /news/foundation    https://blog.hummingbot.org/hummingbot-foundation  301
 /news/*             https://blog.hummingbot.org/*   301
 /news               https://blog.hummingbot.org     301
+/exchanges/spot/*   /exchanges/*                    301
+/exchanges/perp/*   /exchanges/*                    301
+/gateway/exchanges/* /exchanges/*                   301

@@ -1,12 +1,16 @@
----
-tags:
-- market making
-- ⛏️ liquidity mining strategy
----
-
 # `avellaneda_market_making`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/avellaneda_market_making)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/avellaneda_market_making](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/avellaneda_market_making)
+* Configs: [avellaneda_market_making_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making_config_map_pydantic.py)
+* Maintainer: None
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -14,42 +18,35 @@ This strategy implements a market making strategy described in the classic paper
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [0.38.0](/release-notes/0.38.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* SPOT CLOB CEX
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making_config_map.py)
-
-| Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
-|------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
-| `exchange`                   | string      |             | True        | Enter your maker spot connector |
-| `market`                     | string      |             | True        | Enter the token trading pair you would like to trade on `exchange`|
-| `execution_timeframe`        | string      |             | True        | Choose execution timeframe ( `infinite` / `from_date_to_date` / `daily_between_times` ) |
-| `start_time`                 | string      |             | Conditional | Please enter the start date and time (YYYY-MM-DD HH:MM:SS) OR Please enter the start time (HH:MM:SS) |
-| `end_time`                   | string      |             | Conditional | Please enter the end date and time (YYYY-MM-DD HH:MM:SS) OR Please enter the end time (HH:MM:SS) |
-| `order_amount`               | decimal     |             | True        | What is the amount of `base_asset` per order?|
-| `order_optimization_enabled` | bool        |  True       | False       | Do you want to enable best bid ask jumping? |
-| `risk_factor`                | decimal     |  Computed   | False       | Enter risk factor (𝛾) |
-| `order_amount_shape_factor`  | decimal     |  Computed   | False       | Enter order amount shape factor (η) |
-| `min_spread`                 |             |  0          | True        | Enter minimum spread limit (as % of mid price) |
-| `order_refresh_time`         | decimal     |             | True        | How often do you want to cancel and replace bids and asks (in seconds)? |
-| `max_order_age`              | decimal     |  1800       | False       | How long do you want to cancel and replace bids and asks with the same price (in seconds)? |
-| `order_refresh_tolerance_pct`| decimal     |  0          | False       | Enter the percent change in price needed to refresh orders at each cycle |
-| `filled_order_delay`         | decimal     |  60         | False       | How long do you want to wait before placing the next order if your order gets filled (in seconds)? |
-| `inventory_target_base_pct`  | decimal     |  50         | True        | What is the inventory target for the base asset? |
-| `add_transaction_costs`      | decimal     |  False      | False       | Do you want to add transaction costs automatically to order prices? (Yes/No) |
-| `volatility_buffer_size`     | decimal     |  200        | False       | Enter amount of ticks that will be stored to calculate volatility |
-| `trading_intensity_buffer_size` | decimal     |  200        | False       | Enter amount of ticks that will be stored to estimate order book liquidity? |
-| `order_level_mode`               | int         |  1          | False       | How many orders do you want to place on both sides? |
-| `level_distances`            | decimal     |  0          | False       | How far apart in % of optimal spread should orders on one side be? |
-| `order_override`             | json        |             | False       |  |
-| `hanging_orders_mode`     | bool        |  False      | False       | How do you want to handle hanging orders? (track_hanging_orders/ignore_hanging_orders) |
-| `should_wait_order_cancel_confirmation` |  bool |  True       | False       | Should the strategy wait to receive a confirmation for orders cancellation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
+| Parameter                    | Type        | Default     | Prompt      |
+|------------------------------|-------------|-------------|-------------|
+| `exchange`                   | string      |             | Enter your maker spot connector |
+| `market`                     | string      |             | Enter the token trading pair you would like to trade on `exchange`|
+| `execution_timeframe`        | string      |             | Choose execution timeframe ( `infinite` / `from_date_to_date` / `daily_between_times` ) |
+| `start_time`                 | string      |             | Please enter the start date and time (YYYY-MM-DD HH:MM:SS) OR Please enter the start time (HH:MM:SS) |
+| `end_time`                   | string      |             | Please enter the end date and time (YYYY-MM-DD HH:MM:SS) OR Please enter the end time (HH:MM:SS) |
+| `order_amount`               | decimal     |             | What is the amount of `base_asset` per order?|
+| `order_optimization_enabled` | bool        |  True       | Do you want to enable best bid ask jumping? |
+| `risk_factor`                | decimal     |  Computed   | Enter risk factor (𝛾) |
+| `order_amount_shape_factor`  | decimal     |  Computed   | Enter order amount shape factor (η) |
+| `min_spread`                 |             |  0          | Enter minimum spread limit (as % of mid price) |
+| `order_refresh_time`         | decimal     |             | How often do you want to cancel and replace bids and asks (in seconds)? |
+| `max_order_age`              | decimal     |  1800       | How long do you want to cancel and replace bids and asks with the same price (in seconds)? |
+| `order_refresh_tolerance_pct`| decimal     |  0          | Enter the percent change in price needed to refresh orders at each cycle |
+| `filled_order_delay`         | decimal     |  60         | How long do you want to wait before placing the next order if your order gets filled (in seconds)? |
+| `inventory_target_base_pct`  | decimal     |  50         | What is the inventory target for the base asset? |
+| `add_transaction_costs`      | decimal     |  False      | Do you want to add transaction costs automatically to order prices? (Yes/No) |
+| `volatility_buffer_size`     | decimal     |  200        | Enter amount of ticks that will be stored to calculate volatility |
+| `trading_intensity_buffer_size` | decimal     |  200        | Enter amount of ticks that will be stored to estimate order book liquidity? |
+| `order_level_mode`               | int         |  1          | How many orders do you want to place on both sides? |
+| `level_distances`            | decimal     |  0          | How far apart in % of optimal spread should orders on one side be? |
+| `order_override`             | json        |             |  |
+| `hanging_orders_mode`     | bool        |  False      | How do you want to handle hanging orders? (track_hanging_orders/ignore_hanging_orders) |
+| `should_wait_order_cancel_confirmation` |  bool |  True       | Should the strategy wait to receive a confirmation for orders cancellation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
 
 ## 📓 Description
 

@@ -1,40 +1,34 @@
----
-tags:
-- spot exchange connector
-- ⛏️ Miner exchange
----
-
 # `kucoin`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin)
+## 📁 Connector Info
 
-## 📝 Signup
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/kucoin](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin)
+* Maintainer: Hummingbot Foundation
 
-* Hummingbot referral link - <https://www.kucoin.com/ucenter/signup?rcode=272KvRf>
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
 
 ## ℹ️ Exchange Info
 
-**KuCoin**
-[Website](https://www.kucoin.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/kucoin/) | [CoinGecko](https://www.coingecko.com/en/exchanges/kucoin)
-
+* Website: https://www.kucoin.com/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/kucoin/
+* CoinGecko: https://www.coingecko.com/en/exchanges/kucoin
 * API docs: <https://docs.kucoin.com/#general>
-* Transaction fees: <https://www.kucoin.com/vip/level>
-* Minimum order size: <https://api.kucoin.com/api/v1/symbols>
-* Creating API keys: <https://support.kucoin.plus/hc/en-us/articles/360015102174-How-to-Create-an-API>-
-
-## 👷 Maintenance
-
-* Release added: [0.23.0](/release-notes/0.23.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* Fees: <https://www.kucoin.com/vip/level>
+* **Hummingbot Referral Link**: <https://www.kucoin.com/ucenter/signup?rcode=272KvRf>
 
 ## 🔑 Connection
 
 Run `connect kucoin` in order to enter your API keys:
 
 ```
-Enter your KuCoin API key >>>
-Enter your KuCoin secret key >>>
-Enter your KuCoin passphrase >>>
+Enter your kucoin API key >>>
+Enter your kucoin secret key >>>
+Enter your kucoin passphrase >>>
 ```
 
 If connection is successful:
@@ -42,9 +36,3 @@ If connection is successful:
 ```
 You are now connected to kucoin.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/kucoin/kucoin_utils.py#L12)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

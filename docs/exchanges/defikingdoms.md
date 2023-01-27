@@ -22,6 +22,11 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 * API docs: <https://docs.defikingdoms.com/>
 * SDK: <https://github.com/DefiKingdoms/sdk>
 
+## 👷 Maintenance
+
+* Release added:
+* Maintainer: 
+
 ## 🕸️ Supported Chains and Networks
 
 ### Harmony
