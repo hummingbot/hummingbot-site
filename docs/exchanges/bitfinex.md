@@ -1,30 +1,25 @@
----
-tags:
-- spot exchange connector
----
-
 # `bitfinex`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitfinex)
+## 📁 Connector Info
 
-## 📝 Signup
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/bitfinex](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitfinex)
+* Maintainer: None
 
-* Hummingbot referral link - <https://bitfinex.com/?refcode=-dxCUrjvc>
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Bitfinex**
-[Website](https://www.bitfinex.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/bitfinex/) | [CoinGecko](https://www.coingecko.com/en/exchanges/bitfinex)
-
+* Website: https://www.bitfinex.com/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/bitfinex/
+* CoinGecko: https://www.coingecko.com/en/exchanges/bitfinex
 * API docs: <https://docs.bitfinex.com/docs/introduction>
-* Transaction fees: <https://www.bitfinex.com/fees/>
-* Minimum order size: <https://support.bitfinex.com/hc/en-us/articles/115003283709-What-is-the-minimum-order-size-on-Bitfinex>-
-* Creating API keys: <https://support.bitfinex.com/hc/en-us/articles/115003363429-How-to-create-and-revoke-a-Bitfinex-API-Key>-
-
-## 👷 Maintenance
-
-* Release added: [0.32.0](/release-notes/0.32.0/) by CoinAlpha
-* Maintainer:
+* Fees: <https://www.bitfinex.com/fees/>
+* **Hummingbot Referral Link**: <https://bitfinex.com/?refcode=-dxCUrjvc>
 
 ## 🔑 Connection
 
@@ -40,9 +35,3 @@ If connection is successful:
 ```
 You are now connected to bitfinex.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.1% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/bitfinex/bitfinex_utils.py#L20)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

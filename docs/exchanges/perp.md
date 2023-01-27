@@ -1,41 +1,41 @@
----
-tags:
-- amm exchange connector
-- perp amm dex
----
-
 # `perp`
 
-The Perpetual Protocol connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMPerpetual`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_Perpetual.py) class in the Hummingbot client, which is responsible for interfacing with EVM-based perpetual AMMs.
+* Type: PERP AMM DEX
+* Folder: [/gateway/src/connectors/perp](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/perp)
+* Configs: [/gateway/src/templates/perp.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/perp.yml)
+* Maintainer: None
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/perp)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/perp.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Perpetual Protocol**
-[Website](https://perp.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/perpetual-protocol/) | [CoinGecko](https://www.coingecko.com/en/exchanges/perpetual_protocol)
-
+* Website: https://perp.com/
+* CoinMarketCap](https://coinmarketcap.com/exchanges/perpetual-protocol/
+* CoinGecko: https://www.coingecko.com/en/exchanges/perpetual_protocol
 * API docs: <https://perp.com/developers>
 * SDK: <https://github.com/perpetual-protocol/sdk-curie>
-* DOC: <https://support.perp.com/hc/en-us>
 
 ## 🕸️ Supported Chains and Networks
 
-### Ethereum
+* Ethereum: `optimism`
 
-* [optimism](/gateway/chains/ethereum/#optimism-mainnet)
+## 🔑 Connection
 
-## 🔑 Setup
+```
+Which chain do you want uniswap to connect to? (ethereum, polygon) >>>
+Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>
+Enter your ethereum-mainnet private key >>>>
+```
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect perp` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Run `create` to create a [Spot-Perp Arbitrage](/strategies/spot-perpetual-arbitrage/) strategy between Perpetual Protocol and a spot exchange.
-4. Run `start` to start the strategy, and you're trading!
+If connection is successful:
+```
+The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
+```
 
-## 📘 Additional Resources
-
-See [Ethereum](/gateway/chains/ethereum/) for more information about the default configuration settings and how to change them.
+**Liquidity provision:** The  `uniswapLP` connector interfaces with liquidity provision-related functions. Run `gateway connect uniswapLP` in order to connect your wallet to perform LP functions.

@@ -174,13 +174,14 @@ nav:
       - Gold:
         - Binance: exchanges/binance.md
         - Binance (perp): exchanges/binance-perpetual.md
-        - Uniswap: gateway/exchanges/uniswap.md
+        - Uniswap: exchanges/uniswap.md
       - Silver:
         - Kucoin: exchanges/kucoin.md
         - Gate.io: exchanges/gate-io.md
+        - Gate.io (perp): exchanges/gate-io-perpetual.md
         - AscendEX: exchanges/ascend-ex.md
-        - PancakeSwap: gateway/exchanges/pancakeswap.md
-        - SushiSwap: gateway/exchanges/sushiswap.md
+        - Pancakeswap: exchanges/pancakeswap.md
+        - Sushiswap: exchanges/sushiswap.md
         - dYdX: exchanges/dydx-perpetual.md
       - Bronze CEX:
         - AltMarkets: exchanges/altmarkets.md
@@ -197,6 +198,7 @@ nav:
         - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
         - HitBTC: exchanges/hitbtc.md
+        - Himalaya: exchanges/himalaya.md
         - Huobi: exchanges/huobi.md
         - Kraken: exchanges/kraken.md
         - LBank: exchanges/lbank.md
@@ -206,16 +208,15 @@ nav:
         - OKX: exchanges/okx.md
         - ProBit: exchanges/probit.md
         - WhiteBit: exchanges/whitebit.md
-        - Gate.io: exchanges/gate-io-perpetual.md
       - Bronze DEX:
         - DeFi Kingdoms: exchanges/defikingdoms.md
         - Defira: exchanges/defira.md
         - MM Finance: exchanges/mm-finance.md
+        - OpenOcean: exchanges/openocean.md
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
-        - Ref Finance: exchanges/ref-finance.md
         - Quickswap: exchanges/quickswap.md
-        - OpenOcean: exchanges/openocean.md
+        - Ref Finance: exchanges/ref-finance.md
         - TraderJoe: exchanges/traderjoe.md
         - VVS Finance: exchanges/vvs-finance.md
     - Gateway:

@@ -1,38 +1,50 @@
----
-tags:
-- amm exchange connector
-- avalanche dex
----
-
 # `traderjoe`
 
-The TraderJoe connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/traderjoe](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/traderjoe)
+* Configs: [/gateway/src/templates/traderjoe.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/traderjoe.yml)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/traderjoe)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/traderjoe.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**TraderJoe**
-[Website](https://traderjoexyz.com/trade/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/traderjoe/) | [CoinGecko](https://www.coingecko.com/en/exchanges/traderjoe)
-
-* API docs: <https://docs.traderjoexyz.com/en/security-and-contracts/api-beta>
+* Website: https://traderjoexyz.com/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/traderjoe/
+* CoinGecko: https://www.coingecko.com/en/exchanges/traderjoe
+* API docs: <https://docs.traderjoexyz.com/>
 * SDK: <https://github.com/traderjoe-xyz/joe-sdk>
-* FAQ: <https://docs.traderjoexyz.com/en/welcome/faq-and-help>
 
 ## 🕸️ Supported Chains and Networks
 
-### Avalanche
-
-* [avalanche](/gateway/chains/avalanche)
-* [fuji](/gateway/chains/avalanche)
+* Avalanche: `avalanche`, `fuji`
 
 ## 👷 Developer
 
 Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
+
+## 🔑 Connection
+
+Run `gateway connect traderjoe` in order to connect your wallet:
+
+```
+Which chain do you want traderjoe to connect to? (avalanche) >>>
+Which network do you want uniswap to connect to? (avalanche, fuji) >>>
+Enter your avalanche-mainnet private key >>>>
+```
+
+If connection is successful:
+```
+The uniswap connector now uses wallet [pubKey] on avalanche-mainnet
+```
+
+
 
 ## 🔑 Setup
 

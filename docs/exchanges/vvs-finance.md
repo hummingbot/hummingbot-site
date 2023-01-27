@@ -24,6 +24,7 @@ It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbo
 
 ## 👷 Maintenance
 
+* Exchange Tier: 
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🕸️ Supported Chains and Networks

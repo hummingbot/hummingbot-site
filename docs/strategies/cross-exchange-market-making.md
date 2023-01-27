@@ -1,57 +1,55 @@
----
-tags:
-- market making
-- ⛏️ Miner strategy
----
-
 # `cross_exchange_market_making`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/cross_exchange_market_making)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/cross_exchange_market_making](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/cross_exchange_market_making)
+* Configs: [cross_exchange_market_making_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making_config_map_pydantic.py)
+* Maintainer: Hummingbot Foundation
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
+
+Core strategies are maintained and continually improved by Hummingbot Foundation. Foundation staff focuses on testing these strategies and rewards users who answer questions related to these strategies on Discord.
 
 ## 📝 Summary
 
 Also referred to as **liquidity mirroring** or **exchange remarketing**, this strategy allows you to make a market (creates buy and sell orders) on the `maker` exchange, while hedging any filled trades on a second, `taker` exchange. The strategy attempts places maker orders at spreads that are wider than taker orders by a spread equal to `min_profitability`.
 
-## 🏦 Exchanges supported
+## 🏦 Supported Exchange Types
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [0.2.0](/release-notes/0.2.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* SPOT CLOB CEX
+* SPOT AMM DEX
 
 ## 🛠️ Strategy configs
 
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making_config_map_pydantic.py)
-
-| Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
-|------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
-| `maker_market`               | string      |             | True        | Enter your maker spot connector (Exchange) |
-| `taker_market`               | string      |             | True        | Enter your taker connector (Exchange/AMM) |
-| `maker_market_trading_pair`  | string      |             | True        | Enter the token trading pair you would like to trade on `[maker_market]`|
-| `taker_market_trading_pair`  | string      |             | True        | Enter the token trading pair you would like to trade on `[taker_market]`|
-| `min_profitability`          | decimal     |             | True        | What is the minimum profitability for you to make a trade? (Enter 1 to indicate 1%)|
-| `order_amount`               | decimal     |             | True        | What is the amount of `base_asset` per order?|
-| `adjust_order_enabled`       | bool        | True        | True        | Do you want to enable adjust order? (Yes/No)|
-| `order_refresh_mode`         | string      | `active_order_refresh` | True        | Select the order refresh mode (`passive_order_refresh` / `active_order_refresh`)? |
-| passive_order_refresh:       |             |             |             |
-| `cancel_order_threshold`     | decimal     | 5           | False       | Do you want to enable active order canceling?|
-| `limit_order_min_expiration` | decimal     | 130         | False       | How often do you want limit orders to expire (in seconds)?|
-|                              |             |             |             |
-| `top_depth_tolerance`        | decimal     | 0           | False       | What is your top depth tolerance? (in `base_asset`)|
-| `anti_hysteresis_duration`   | decimal     | 60          | False       | What is the minimum time interval you want limit orders to be adjusted? (in seconds)|
-| `order_size_taker_volume_factor`| decimal  | 25          | False       | What percentage of hedge-able volume would you like to be traded on the taker market? (Enter 1 to indicate 1%)|
-| `order_size_taker_balance_factor`| decimal | 99.5        | False       | What percentage of asset balance would you like to use for hedging trades on the taker market? (Enter 1 to indicate 1%)|
-| `order_size_portfolio_ratio_limit`| decimal| 16.67       | False       | What ratio of your total portfolio value would you like to trade on the maker and taker markets? Enter 50 for 50%|
+| Parameter                    | Type        | Default     | Prompt      |
+|------------------------------|-------------|-------------|-------------|
+| `maker_market`               | string      |             | Enter your maker spot connector (Exchange) |
+| `taker_market`               | string      |             | Enter your taker connector (Exchange/AMM) |
+| `maker_market_trading_pair`  | string      |             | Enter the token trading pair you would like to trade on `[maker_market]`|
+| `taker_market_trading_pair`  | string      |             | Enter the token trading pair you would like to trade on `[taker_market]`|
+| `min_profitability`          | decimal     |             | What is the minimum profitability for you to make a trade? (Enter 1 to indicate 1%)|
+| `order_amount`               | decimal     |             | What is the amount of `base_asset` per order?|
+| `adjust_order_enabled`       | bool        | True        | Do you want to enable adjust order? (Yes/No)|
+| `order_refresh_mode`         | string      | `active_order_refresh` | Select the order refresh mode (`passive_order_refresh` / `active_order_refresh`)? |
+| passive_order_refresh:       |             |             |
+| `cancel_order_threshold`     | decimal     | 5           | Do you want to enable active order canceling?|
+| `limit_order_min_expiration` | decimal     | 130         | How often do you want limit orders to expire (in seconds)?|
+|                              |             |             |
+| `top_depth_tolerance`        | decimal     | 0           | What is your top depth tolerance? (in `base_asset`)|
+| `anti_hysteresis_duration`   | decimal     | 60          | What is the minimum time interval you want limit orders to be adjusted? (in seconds)|
+| `order_size_taker_volume_factor`| decimal  | 25          | What percentage of hedge-able volume would you like to be traded on the taker market? (Enter 1 to indicate 1%)|
+| `order_size_taker_balance_factor`| decimal | 99.5        | What percentage of asset balance would you like to use for hedging trades on the taker market? (Enter 1 to indicate 1%)|
+| `order_size_portfolio_ratio_limit`| decimal| 16.67       | What ratio of your total portfolio value would you like to trade on the maker and taker markets? Enter 50 for 50%|
 | `conversion_rate_mode` | string | `rate_oracle_conversion_rate` | True | Select the conversion rate mode (`rate_oracle_conversion_rate` / `fixed_conversion_rate`)|
-| fixed_conversion_rate:       |             |             |             |
-| `taker_to_maker_base_conversion_rate`| decimal | 1       | False       | What percentage of asset balance would you like to use for hedging trades on the taker market?|
-| `taker_to_maker_quote_conversion_rate`| decimal | 1      | False       | What percentage of asset balance would you like to use for hedging trades on the maker market?|
-|                              |             |             |             |
-| `slippage_buffer`            | decimal     | 5           | True        | How much buffer do you want to add to the price to account for slippage for taker orders?  |
-| `debug_price_shim` | bool | False | False | Do you want to enable the debug price shim for integration tests? If you don't know what this does you should keep it disabled. |
-| `gateway_transaction_cancel_interval` | decimal | 600 | True | After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds) |
+| fixed_conversion_rate:       |             |             |
+| `taker_to_maker_base_conversion_rate`| decimal | 1       | What percentage of asset balance would you like to use for hedging trades on the taker market?|
+| `taker_to_maker_quote_conversion_rate`| decimal | 1      | What percentage of asset balance would you like to use for hedging trades on the maker market?|
+|                              |             |             |
+| `slippage_buffer`            | decimal     | 5           | How much buffer do you want to add to the price to account for slippage for taker orders?  |
+| `debug_price_shim` | bool | False | Do you want to enable the debug price shim for integration tests? If you don't know what this does you should keep it disabled. |
+| `gateway_transaction_cancel_interval` | decimal | 600 |  After what time should blockchain transactions be cancelled if they are not included in a block? (this only affects decentralized exchanges) (Enter time in seconds) |
 
 ## 📓 Description
 

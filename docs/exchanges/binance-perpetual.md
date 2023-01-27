@@ -1,35 +1,28 @@
----
-tags:
-- perp exchange connector
-- ⭐ reference connector
----
-
 # `binance_perpetual`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+## 📁 Connector Info
 
-## 📝 Signup
+* Type: PERP CLOB CEX
+* Folder: [/hummingbot/connector/exchange/binance](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
+* Maintainer: Hummingbot Foundation
 
-* Hummingbot referral link - <https://www.binance.com/en/futures/ref/hummingbot>
-* Sign up with Binance Futures using Hummingbot's referral link for a 10% discount off trading fees!
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+
+The Gold exchange is the top CEX or DEX selected by HBOT voters in the latest Poll. Their connectors are maintained by Hummingbot Foundation and are continually improved, serving as the "gold standard" template for all other connectors of that type.
 
 ## ℹ️ Exchange Info
 
-**Binance.com (Futures)** [Website](https://www.binance.com/en/futures) | [CoinMarketCap](https://coinmarketcap.com/exchanges/binance/) | [CoinGecko](https://www.coingecko.com/en/exchanges/binance)
-
-* API docs: <https://binance-docs.github.io/apidocs/futures/en/#change-log>
-* Transaction fees: <https://www.binance.com/en/support/faq/360033544231>
-* Creating API keys: <https://www.binance.com/en/support/faq/360002502072>
-* Trading rules: <https://www.binance.com/en/futures/trading-rules/perpetual>
-* Leverage and margin: <https://www.binance.com/en/support/faq/360033162192>
+* Website: https://www.binance.com/en/futures
+* CoinMarketCap: https://coinmarketcap.com/exchanges/binance/
+* CoinGecko: https://www.coingecko.com/en/exchanges/binance
+* API docs: https://binance-docs.github.io/apidocs/futures/en/#change-log
+* Fees: https://www.binance.com/en/support/faq/360033544231
+* **Hummingbot Referral Link**: https://www.binance.com/en/futures/ref/hummingbot (10% off fees)
 
 !!! note "Enable Futures"
     Ensure that the option **Enable Futures** is checked when you create your API key. If you don't see this option, you may need to open a Binance Futures account first.
-
-## 👷 Maintenance
-
-* Release added: [0.33.0](/release-notes/0.33.0/) by CoinAlpha
-* Maintainer: Hummingbot Foundation
 
 ## 🔑 Connection
 
@@ -46,11 +39,6 @@ If connection is successful:
 You are now connected to binance_perpetual.
 ```
 
-!!! tip "Testnet available"
-    Hummingbot supports the testnet version of this exchange. To connect to the testnet exchange, run `connect binance_perpetual_testnet` instead.
+## 🛠 Testnet
 
-## 🪙 Fees
-
-Hummingbot assumes 0.02% maker fees and 0.04% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/binance_perpetual/binance_perpetual_utils.py#L18)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+This connector supports testnet trading. To connect to the testnet exchange, run `connect binance_perpetual_testnet` and enter your API keys.

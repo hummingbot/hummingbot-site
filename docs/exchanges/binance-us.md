@@ -1,6 +1,8 @@
 ---
 tags:
-- spot exchange connector
+- SPOT
+- CLOB
+- CEX
 ---
 
 # `binance_us`
@@ -12,17 +14,19 @@ tags:
 
 ## ℹ️ Exchange Info
 
-**Binance.US** [Website](https://binance.us/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/binance-us/) | [CoinGecko](https://www.coingecko.com/en/exchanges/binance_us)
-
+* Website: https://binance.us/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/binance-us/
+* CoinGecko: https://www.coingecko.com/en/exchanges/binance_us
 * API docs: <https://github.com/binance-us/binance-official-api-docs/blob/master/rest-api.md>
-* Transaction fees: <https://www.binance.us/en/fee/schedule>
-* Minimum order size: <https://www.binance.us/en/trade-limits>
-* Creating API keys: <https://www.binance.com/en/support/faq/360002502072>
+* Fees: <https://www.binance.us/en/fee/schedule>
 
 ## 👷 Maintenance
 
-* Release added: [0.33.0](/release-notes/0.33.0/) by CoinAlpha
-* Maintainer:
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Maintainer: None
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by community members.
 
 ## 🔑 Connection
 
@@ -38,9 +42,3 @@ If connection is successful:
 ```
 You are now connected to binance_us.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_utils.py#L63)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

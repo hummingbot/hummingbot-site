@@ -1,28 +1,24 @@
----
-tags:
-- perp exchange connector
-- ethereum dex
----
-
 # `dydx_perpetual`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
+## 📁 Connector Info
+
+* Type: PERP CLOB DEX
+* Folder: [/hummingbot/connector/derivative/dydx_perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
+* Maintainer: Hummingbot Foundation
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
 
 ## ℹ️ Exchange Info
 
-**dydx (perpetual)**
-[Website](https://dydx.exchange/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/dydx/) | [CoinGecko](https://www.coingecko.com/en/exchanges/dydx-margin)
-
-* API docs: <https://docs.dydx.exchange/#perpetual-contracts>
-* Transaction fees: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
-* Minimum order size: <https://help.dydx.exchange/en/articles/4800587-l2-perpetual-contract-specs>
-* Creating API keys: <https://docs.dydx.exchange/#get-api-keys>
-
-## 👷 Maintenance
-
-* Release added: [0.39.0](/release-notes/0.39.0/)
-* Updated in release [1.10.0](/release-notes/0.10.0/) by [CoinAlpha](https://merklehedge.com/)
-* Maintainer: Hummingbot Foundation
+* Website: https://dydx.exchange/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/dydx/
+* CoinGecko: https://www.coingecko.com/en/exchanges/dydx-margin
+* API docs: <https://docs.dydx.exchange>
+* Fees: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
 
 ## 🔑 Connection
 
@@ -48,14 +44,8 @@ Alternatively, you can follow these steps to get the required credentials:
 3. Select **STARK_KEY_PAIRS** and click the drop-down next to your wallet address to get the stark private key
 4. Select **API_KEY_PAIRS** and click the drop-down next to your wallet address to get the API key, secret key, and passphrase
 
-### Deposit assets
+**Depositing assets:**
 
 Follow the instructions below to deposit assets onto dYdX's Layer 2 side-chain:
 
 * [How to deposit USDC or any ERC-20 token into your L2 Perpetual account](https://help.dydx.exchange/en/articles/5108497-how-to-deposit-usdc-or-any-erc-20-token-into-your-l2-perpetual-account?utm_content=article_5108497)
-
-## 🪙 Fees
-
-Hummingbot assumes 0.05% maker fees and 0.20% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/dydx/dydx_utils.py#L11)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

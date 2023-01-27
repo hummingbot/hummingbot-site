@@ -4,13 +4,15 @@ Strategies separate **trading logic**, open source code that defines how the str
 
 Strategies utilize the standardized trading interfaces exposed by exchange and protocol connectors, enabling developers to write code that can be used across many exchanges. Each Hummingbot strategy is a sub-folder in the [`/hummingbot/strategy`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
 
-## Maintainer
+## Strategy Tiers
 
-The maintainer for a strategy is responsible for responding to user-submitted Github issues, keeping the strategy updated and well-documented, and may even push improvements. Hummingbot Foundation is the maintainer for the three (3) Core Strategies, which are selected by the community through quarterly [Polls](/governance/polls). 
+Quarterly [Polls](/governance/polls) allow the Hummingbot community to vote using HBOT tokens to decide which strategies in the codebase should be core strategies maintained by the Foundation:
 
-Community Strategies may be maintained by individual community members or not maintained at all. Community members interested in becoming the maintainer for unmaintained strategies should contact Hummingbot Foundation via Discord.
+### Core
 
-## Core Strategies
+![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
+
+Core strategies are maintained and continually improved by Hummingbot Foundation. Foundation staff focuses on testing these strategies and rewards users who answer questions related to these strategies on Discord.
 
 | Strategy                                                          | Maintainer    | Description                                                                       |
 |-----------------------------------------------------------------|---------------------|---------------|
@@ -18,7 +20,12 @@ Community Strategies may be maintained by individual community members or not ma
 | [cross_exchange_market_making](./cross-exchange-market-making)| Hummingbot Foundation | Provide liquidity while hedging filled orders on another exchange                |
 | [amm_arb](./amm-arbitrage)                                    | Hummingbot Foundation | Exploits price differences between AMM and spot exchanges                                 |
 
-## Community Strategies
+
+### Community
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 | Strategy                                                          | Maintainer    | Description                                                                       |
 |-----------------------------------------------------------------|---------------------|---------------|
@@ -30,6 +37,14 @@ Community Strategies may be maintained by individual community members or not ma
 | [perpetual_market_making](./perpetual-market-making)          | None          | Market-making strategy for perpetual swap markets                                 |
 | [spot_perpetual_arbitrage](./spot-perpetual-arbitrage)        | None          | Exploits price differences between spot and perpetual swap exchanges                      |
 | [twap](./twap)                                                | None          | Places a batch of limit orders over a period of time                                      |
+
+## Strategy Maintenance
+
+Strategies may have a maintainer who is responsible for ongoing maintenance: fixing bugs, addressing user issues, and keeping up with Hummingbot codebase updates. Specifically, maintainer responsibilities include:
+
+* Addressing user Github issues and pull requests related to the strategy
+* Keeping the strategy updated for changes to the connector changes for each exchange type supported by the strategy
+* Keeping the strategy's documentation page updated
 
 ## Contributing Strategies
 

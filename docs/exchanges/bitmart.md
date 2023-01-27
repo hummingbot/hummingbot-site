@@ -1,40 +1,33 @@
----
-tags:
-- spot exchange connector
----
-
 # `bitmart`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bitmart)
+## 📁 Connector Info
 
-## 📝 Signup
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/bitmart](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bitmart)
 
-* Hummingbot referral link - <https://www.bitmart.com/en?r=UM6fQV>
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**BitMart**
-[Website](https://www.bitmart.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/bitmart/) | [CoinGecko](https://www.coingecko.com/en/exchanges/bitmart)
-
+* Website: https://www.bitmart.com/
+* CoinMarketCap: https://coinmarketcap.com/exchanges/bitmart/
+* CoinGecko: https://www.coingecko.com/en/exchanges/bitmart
 * API docs: <https://developer-pro.bitmart.com/en/>
-* Transaction fees: <https://support.bmx.fund/hc/en-us/articles/360002043633-Fees>
-* Minimum order size:
-* Creating API keys: <https://support.bmx.fund/hc/en-us/articles/360016076854-How-to-Create-An-API>
-* Referral link: <https://www.bitmart.com/en?r=UM6fQV>
-
-## 👷 Maintenance
-
-* Release added: [0.44.0](/release-notes/0.44.0/) by CoinAlpha
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+* Fees: <https://support.bmx.fund/hc/en-us/articles/360002043633-Fees>
+* **Hummingbot Referral Link**: <https://www.bitmart.com/en?r=UM6fQV>
 
 ## 🔑 Connection
 
 Run `connect bitmart` in order to enter your API keys:
 
 ```
-Enter your BitMart API key >>>
-Enter your BitMart secret key >>>
-Enter your BitMart API Memo >>>
+Enter your bitmart API key >>>
+Enter your bitmart secret key >>>
+Enter your bitmart API Memo >>>
 ```
 
 If connection is successful:
@@ -42,9 +35,3 @@ If connection is successful:
 ```
 You are now connected to bitmart.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.25% maker fees and 0.25% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/connector/exchange/bitmart/bitmart_utils.py#L17)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

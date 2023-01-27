@@ -1,45 +1,41 @@
----
-tags:
-- amm exchange connector
-- ethereum dex
----
-
 # `pancakeswap`
 
-The PancakeSwap connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/pancakeswap](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/pancakeswap)
+* Configs: [/gateway/src/templates/pancakeswap.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/pancakeswap.yml)
+* Maintainer: Hummingbot Foundation
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/pancakeswap)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/pancakeswap.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
 
 ## ℹ️ Exchange Info
 
-**PancakeSwap** [Website](https://pancakeswap.finance/) | [CoinMarketCap](https://coinmarketcap.com/currencies/pancakeswap/) | [CoinGecko](https://www.coingecko.com/en/exchanges/pancakeswap)
-
+* Website: https://pancakeswap.finance/
+* CoinMarketCap: https://coinmarketcap.com/currencies/pancakeswap/
+* CoinGecko: https://www.coingecko.com/en/exchanges/pancakeswap
 * API docs: https://github.com/pancakeswap/pancake-info-api/blob/develop/v2-documentation.md
 * SDK: https://github.com/pancakeswap/pancake-frontend/tree/develop/packages/swap-sdk
-* FAQ: https://docs.pancakeswap.finance/help/faq
 
 ## 🕸️ Supported Chains and Networks
 
-### Binance Smart Chain
+* BNB Chain: `mainnet`, `testnet`
 
-* [mainnet](/gateway/chains/bnb-chain)
-* [testnet](/gateway/chains/bnb-chain)
+## 🔑 Connection
 
-## 👷 Developer
+Run `gateway connect pancakeswap` in order to connect your wallet:
 
-Added by CoinAlpha in [v1.10.0](/release-notes/1.10.0/)
+```
+Which chain do you want pancakeswap to connect to? (binance-smart-chain) >>>
+Which network do you want uniswap to connect to? (mainnet, testnet) >>>
+Enter your binance-smart-chain-mainnet private key >>>>
+```
 
-## 🔑 Setup
-
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect pancakeswap` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Sushiswap and a different exchange.
-4. Run `start` to start the strategy!
-
-## 📘 Additional Resources
-
-See [BNB Chain](/gateway/chains/bnb-chain) for more information about the default configuration settings and how to change them.
+If connection is successful:
+```
+The uniswap connector now uses wallet [pubKey] on binance-smart-chain-mainnet
+```
