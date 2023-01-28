@@ -34,13 +34,12 @@ The two Gold exchanges are the top CEX and DEX selected by HBOT voters in the la
 
 Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
 
-
 | Exchange | Type | Signup code |
 |----------|------|-------------|
 | [Kucoin](./kucoin) | SPOT CLOB CEX | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
 | [Gate.io](./gate-io) | SPOT CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
 | [Gate.io (perp)](./gate-io-perpetual) | PERP CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
-| [AscendEx](./ascendex) | SPOT CLOB CEX | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
+| [AscendEx](./ascend-ex) | SPOT CLOB CEX | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
 | [Pancakeswap](./pancakeswap) | SPOT AMM DEX |
 | [Sushiswap](./sushiswap) | SPOT AMM DEX |
 | [dYdX](./dydx-perpetual) | PERP CLOB DEX |

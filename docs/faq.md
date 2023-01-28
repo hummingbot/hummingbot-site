@@ -47,7 +47,7 @@ Market making is the act of simultaneously creating buy and sell orders for an a
 
 Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
 
-See [How does market making work?](/news/market-making/) for more information.
+See [How does market making work?](https://blog.hummingbot.org/2020-09-what-is-market-making/) for more information.
 
 ### How does Hummingbot store my private keys and API keys?
 
@@ -200,4 +200,3 @@ Changing the parameter above to `anonymized_metrics_interval_min: 0.0` disables 
 ### How can I be sure that this is the only data Hummingbot collects?
 
 The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) or [official forum](https://forum.hummingbot.org/) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.
-
