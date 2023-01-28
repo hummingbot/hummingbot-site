@@ -1,15 +1,16 @@
----
-hide:
-- toc
-tags:
-- 👨‍👩‍👧‍👦 community contribution
-- market making
-- ⛏️ liquidity mining strategy
----
-
 # `aroon_oscillator`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/aroon_oscillator)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/aroon_oscillator](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/aroon_oscillator)
+* Configs: [aroon_oscillator_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator_config_map.py)
+* Maintainer: None
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -19,16 +20,9 @@ This strategy was the winning submission in the Hummingbot track of the [Open De
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [0.45.0](/release-notes/0.45.0/) by [squarelover](https://github.com/squarelover)
-* Maintainer: Open
+* SPOT CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator_config_map.py)
 
 | Parameter                        | Type        | Default     | Prompt New? | Prompt                                                 |
 |----------------------------------|-------------|-------------|-------------|--------------------------------------------------------|

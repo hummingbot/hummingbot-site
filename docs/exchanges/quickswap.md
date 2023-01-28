@@ -1,38 +1,24 @@
----
-tags:
-- amm exchange connector
-- polygon dex
----
-
 # `quickswap`
 
-The Pangolin connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/chains/polygon](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
+* Maintainer:
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/quickswap.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Quickswap**
-[Website](https://quickswap.exchange/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/quickswap/) | [CoinGecko](https://www.coingecko.com/en/exchanges/quickswap)
-
+* Website: <https://quickswap.exchange/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/quickswap/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/quickswap>
 * API docs: <https://docs.quickswap.exchange/reference/>
-* SDK: <https://docs.quickswap.exchange/guides/javascript-sdk/01-quick-start>
-* FAQ: <https://docs.quickswap.exchange/>
-
-## 🕸️ Supported Chains and Networks
-
-### Polygon
-
-* [mainnet](/gateway/chains/polygon)
-* [mumbai](/gateway/chains/polygon)
-
-## 👷 Developer
-
-Added by james-hummingbot in [v1.6.0](/release-notes/1.6.0/)
+* Fees:  <https://docs.quickswap.exchange>
 
 ## 🔑 Setup
 

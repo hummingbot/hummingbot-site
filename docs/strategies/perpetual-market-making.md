@@ -1,12 +1,16 @@
----
-tags:
-- market making
-- perp strategy
----
-
 # `perpetual_market_making`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/perpetual_market_making](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making)
+* Configs: [perpetual_market_making_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making/perpetual_market_making_config_map.py)
+* Maintainer: CoinAlpha
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -16,16 +20,9 @@ Similar to the `pure_market_making_strategy`, the `perpetual_market_making` stra
 
 ## 🏦 Exchanges supported
 
-[`perp` exchanges](/exchanges/perp)
-
-## 👷 Maintenance
-
-* Release added: [0.36.0](/release-notes/0.36.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* PERP CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making/perpetual_market_making_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|

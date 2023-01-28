@@ -1,12 +1,16 @@
----
-tags:
-- utility strategy
-- developer tutorial
----
-
 # `twap`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/twap)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/twap](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/twap)
+* Configs: [twap_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/twap/twap_config_map.py)
+* Maintainer: None
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -16,16 +20,9 @@ We recommend this strategy as a starting point for developers looking to build t
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [0.41.0](/release-notes/0.41.0/) by CoinAlpha
-* Maintainer: Open
+* SPOT CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/twap/twap_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|

@@ -1,26 +1,24 @@
----
-tags:
-- spot exchange connector
----
-
 # `ndax`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
+## 📁 Connector Info
+
+* Type: SPOT CLOB DEX
+* Folder: [/gateway/src/connectors/ndax](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**NDAX**
-[Website](https://ndax.io/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/ndax/)
-
+* Website: <https://ndax.io/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/ndax/>
+* CoinGecko:
 * API docs: <https://ndaxlo.github.io/API/#introduction>
-* Transaction fees: <https://ndax.io/fees>
-* Minimum order size:
-* Creating API keys: <https://help.ndax.io/en_us/where-can-i-find-credentials-to-access-ndax's-trading-api-SJ9DrhzBo>-
-
-## 👷 Maintenance
-
-* Release added: [0.42.0](/release-notes/0.42.0/) by CoinAlpha
-* Maintainer:
+* SDK:
 
 ## 🔑 Connection
 

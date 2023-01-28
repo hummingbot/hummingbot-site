@@ -1,12 +1,16 @@
----
-tags:
-- market making
-- ⛏️ Miner strategy
----
-
 # `liquidity_mining`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/liquidity_mining](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining)
+* Configs: [liquidity_mining_config_map.py](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining/liquidity_mining_config_map.py)
+* Maintainer: CoinAlpha
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -14,16 +18,9 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [0.37.0](/release-notes/0.37.0/) by CoinAlpha
-* Maintainer: CoinAlpha
+* SPOT CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining/liquidity_mining_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
