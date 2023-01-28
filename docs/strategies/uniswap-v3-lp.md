@@ -1,37 +1,29 @@
----
-tags:
-- market making
-- dex strategy
----
-
 # `uniswap_v3_lp`
 
-!!! note
-    This is a proof-of-concept strategy that demonstrates how to dynamically maintain Uniswap-V3 positions as market prices changes. More features will be added over time based on community feedback.
+## 📁 Strategy Info
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/uniswap_v3_lp)
+* Folder: [/hummingbot/strategy/uniswap_v3_lp](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/uniswap_v3_lp)
+* Configs: [uniswap_v3_lp_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/uniswap_v3_lp/uniswap_v3_lp_config_map.py)
+* Maintainer: None
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
 This strategy creates and maintains Uniswap positions as the market price changes in order to continue providing liquidity. Currently, it does not remove or update positions.
 
+!!! note
+    This is a proof-of-concept strategy that demonstrates how to dynamically maintain Uniswap-V3 positions as market prices changes. More features will be added over time based on community feedback.
+
 ## 🏦 Exchanges supported
 
-[`uniswap`](/gateway/exchanges/uniswap/)
-
-To use this connector, run:
-
-```
-gateway connect uniswapLP
-```
-
-## 👷 Maintainer
-
-* Release added: [1.6.0](/release-notes/1.6.0/) by CoinAlpha
+* UNISWAP
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/uniswap_v3_lp/uniswap_v3_lp_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
