@@ -1,38 +1,24 @@
----
-tags:
-- amm exchange connector
-- avalanche dex
----
-
 # `pangolin`
 
-The Pangolin connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/pangolin](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/pangolin)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/pangolin)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/pangolin.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Pangolin**
-[Website](https://pangolin.exchange/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/pangolin/) | [CoinGecko](https://www.coingecko.com/en/exchanges/pangolin)
-
+* Website: <https://pangolin.exchange/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/pangolin/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/pangolin>
 * API docs: <https://github.com/pangolindex/pangolin-api>
 * SDK: <https://github.com/pangolindex/sdk>
-* FAQ: <https://pangolin.exchange/faq/>
-
-## 🕸️ Supported Chains and Networks
-
-### Avalanche
-
-* [avalanche](/gateway/chains/avalanche)
-* [fuji](/gateway/chains/avalanche)
-
-## 👷 Developer
-
-Added by CoinAlpha in [v1.4.0](/release-notes/1.4.0/)
 
 ## 🔑 Setup
 

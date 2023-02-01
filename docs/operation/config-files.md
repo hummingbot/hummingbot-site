@@ -35,15 +35,15 @@ Running this command will automatically create the following files in these fold
 | `conf_xemm_[#].yml`                     | Settings for the [cross-exchange market making](/strategies/cross-exchange-market-making/) strategy. |
 | `conf_liquidity_mining_[#].yml`         | Settings for the [liquidity mining](/strategies/liquidity-mining/) strategy.                         |
 | `conf_perpetual_market_making_#.yml`    | Settings for the [perpetual market making](/strategies/perpetual-market-making) strategy.            |
-| `conf_arb_[#].yml`                      | Settings for the [arbitrage](/strategies/arbitrage/) strategy.                                       |
-| `conf_celo_arb_[#].yml`                 | Settings for the [celo arbitrage](/strategies/celo-arbitrage/) strategy.                                   |
+| `conf_arb_[#].yml`                      | Settings for the arbitrage strategy.                                       |
+| `conf_celo_arb_[#].yml`                 | Settings for the celo arbitrage strategy.                                   |
 | `conf_amm_arb_[#].yml`                  | Settings for the [amm arbitrage](/strategies/amm-arbitrage/) strategy.                                     |
 | `conf_spot_perpetual_arbitrage_[#].yml` | Settings for the [spot perpetual arbitrage](/strategies/spot-perpetual-arbitrage/) strategy.         |
 | `conf_avellaneda_market_making_[#].yml` | Settings for the [avellaneda market making](/strategies/avellaneda-market-making/) strategy.         |
 | `conf_aroon_oscillator_[#].yml`         | Settings for the [aroon oscillator](/strategies/aroon-oscillator/) |
 | `conf_hedge_[#].yml`                    | Settings for the [hedge](/strategies/hedge/)                       |
 | `conf_twap_[#].yml`                     | Settings for the [TWAP](/strategies/twap/)                         |
-| `conf_fixed_grid_[#].yml`               | Settings for the [fixed grid](/strategies/fixed-grid/)             |
+| `conf_fixed_grid_[#].yml`               | Settings for the fixed grid strategy             |
 
 !!! tip
     For editing configuration files directly, once they are created, you may find it easier to edit the configuration files in the `conf/` folder. Simply open them with a text editor and make any desired modifications.
@@ -57,8 +57,8 @@ We have developed walkthroughs for each strategy:
 - [Pure market making](/strategies/pure-market-making)
 - [Cross-exchange market making](/strategies/cross-exchange-market-making)
 - [Perpetual Market Making](/strategies/perpetual-market-making)
-- [Arbitrage](/strategies/arbitrage)
-- [Celo Arbitrage](/strategies/celo-arbitrage/)
+- `Arbitrage`
+- `Celo Arbitrage`
 - [AMM Arbitrage](/strategies/amm-arbitrage/)
 - [Liquidity Mining](/strategies/liquidity-mining/)
 - [Spot Perpetual Arbitrage](/strategies/spot-perpetual-arbitrage/)
@@ -66,7 +66,7 @@ We have developed walkthroughs for each strategy:
 - [Aroon Oscillator](/strategies/aroon-oscillator/)
 - [Hedge](/strategies/hedge/)
 - [TWAP](/strategies/twap/)
-- [Fixed Grid](/strategies/fixed-grid/)
+- `Fixed Grid`
 
 !!! note
     When configuring your bot, make sure you are aware of your exchange's minimum order sizes and fees, and check that your trading pair has sufficient order book and trading volumes. You can find more info about specific exchanges in the [Connectors](/exchanges/) section.

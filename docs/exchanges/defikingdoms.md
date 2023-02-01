@@ -1,37 +1,24 @@
----
-tags:
-- amm exchange connector
-- harmony dex
----
-
 # `defi kingdoms`
 
-The Defi Kingdoms connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/defikingdoms](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defikingdoms)
+* Maintainer:
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defikingdoms)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/defikingdoms.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Defi Kingdoms**
-[Website](https://defikingdoms.com/) | [CoinMarketCap](https://coinmarketcap.com/currencies/defi-kingdoms/) | [CoinGecko](https://www.coingecko.com/en/coins/defi-kingdoms)
-
+* Website: <https://defikingdoms.com/>
+* CoinMarketCap: <https://coinmarketcap.com/currencies/defi-kingdoms/>
+* CoinGecko: <https://www.coingecko.com/en/coins/defi-kingdoms>
 * API docs: <https://docs.defikingdoms.com/>
 * SDK: <https://github.com/DefiKingdoms/sdk>
-
-## 👷 Maintenance
-
-* Release added:
-* Maintainer: 
-
-## 🕸️ Supported Chains and Networks
-
-### Harmony
-
-* [mainnet](/gateway/chains/harmony)
 
 ## 🔑 Setup
 

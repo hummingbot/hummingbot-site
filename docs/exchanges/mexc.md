@@ -1,26 +1,24 @@
----
-tags:
-- spot exchange connector
----
-
 # `mexc`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc)
+## 📁 Connector Info
+
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/mexc](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc)
+* Maintainer:
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**MEXC Global**
-[Website](https://www.mexc.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/mxc/) | [CoinGecko](https://www.coingecko.com/en/exchanges/mexcglobal)
-
-* API docs: https://mxcdevelop.github.io/APIDoc/
-* Transaction fees: https://www.mexc.com/fee
-* Minimum order size: https://www.mexc.com/fee
-* Creating API keys: https://support.mexc.com/hc/en-001/articles/360055933652
-
-## 👷 Maintenance
-
-* Release added: [0.46.0](/release-notes/0.46.0/) by CoinAlpha
-* Maintainer: 
+* Website: <https://www.mexc.com/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/mxc/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/mexcglobal>
+* API docs: <https://mxcdevelop.github.io/APIDoc/>
+* Transaction fees: <https://www.mexc.com/fee>
 
 ## 🔑 Connection
 
@@ -32,6 +30,7 @@ Enter your MEXC secret API key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to MEXC.
 ```

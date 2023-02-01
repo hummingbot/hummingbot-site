@@ -18,9 +18,9 @@ The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/pro
 
 After Epoch 1, the Foundation conducted a [retrospective](https://forum.hummingbot.org/t/epoch-2-proposed-governance-changes-part-1/45/1) and enacted a number of [changes](https://forum.hummingbot.org/t/epoch-2-proposed-changes-master-thread/129) to the governance process. Specifically, the Foundation decided to start the following initiatives:
 
-* Start the [Exchange Certification](/governance/certification/) initiative
-* Create more structure around the [Bounties](/governance/bounties/) process
-* Start a developer bootcamp [Botcamp](https://hummingbot.org/botcamp/)
+- Start the Exchange Certification initiative
+- Create more structure around the [Bounties](/governance/bounties/) process
+- Start a developer bootcamp [Botcamp](https://hummingbot.org/botcamp/)
 
 ## Epoch 2
 
@@ -36,9 +36,9 @@ After Epoch 1, the Foundation conducted a [retrospective](https://forum.hummingb
 
 After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbot.org/hummingbots-2023-governance-roadmap/) and decided to enact the following changes to improve the governance process:
 
-* Change epoch cadence to from bi-annually to quarterly
-* Start [Polls](/governance/polls/) to make HBOT governance easier
-* Cease setting per-epoch HBOT distribution targets
+- Change epoch cadence to from bi-annually to quarterly
+- Start [Polls](/governance/polls/) to make HBOT governance easier
+- Cease setting per-epoch HBOT distribution targets
 
 ## Epoch 3
 
@@ -51,13 +51,13 @@ See [Epoch 3 Polls Recap](https://blog.hummingbot.org/epoch-3-polls/) for more i
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
 
-* Binance
+- Binance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 
-* Kucoin
-* Gate.io
-* AscendEx
+- Kucoin
+- Gate.io
+- AscendEx
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
@@ -67,13 +67,13 @@ Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Bin
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
 
-* Uniswap
+- Uniswap
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 
-* PancakeSwap
-* SushiSwap
-* dYdX
+- PancakeSwap
+- SushiSwap
+- dYdX
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
@@ -83,11 +83,10 @@ TraderJoe, QuickSwap, OpenOcean, Pangolin, Defira, Perpetual Protocol, MM Financ
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
 
-* [Pure Market Making (PMM)](/strategies/pure-market-making/)
-* [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/)
-* [AMM Arbitrage](/strategies/amm-arbitrage/)
+- [Pure Market Making (PMM)](/strategies/pure-market-making/)
+- [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/)
+- [AMM Arbitrage](/strategies/amm-arbitrage/)
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
 
 Avellaneda Market Making, UniswapV3 LP, Hedge, Cross-Exchange Mining, Perpetual Market Making, Aroon Oscillator, Liquidity Mining, TWAP, Spot Perpetual Arbitrage
-

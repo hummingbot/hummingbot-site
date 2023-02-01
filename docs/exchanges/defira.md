@@ -1,37 +1,23 @@
----
-tags:
-- amm exchange connector
-- harmony dex
----
-
 # `defira`
 
-The Defira connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/defira](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defira)
+* Maintainer:
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defira)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/defira.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Defira**
-[Website](https://defira.com/) | [CoinMarketCap](https://coinmarketcap.com/currencies/defira/) | [CoinGecko](https://www.coingecko.com/en/coins/fira)
-
+* Website: <https://defira.com>
+* CoinMarketCap: <https://coinmarketcap.com/currencies/defira/>
+* CoinGecko: <https://www.coingecko.com/en/coins/fira>
 * API docs: <https://docs.defira.com/>
-
-## 👷 Maintenance
-
-* Release added:
-* Maintainer: 
-
-## 🕸️ Supported Chains and Networks
-
-### Harmony
-
-* [mainnet](/gateway/chains/harmony)
-* [testnet](/gateway/chains/harmony)
 
 ## 🔑 Setup
 

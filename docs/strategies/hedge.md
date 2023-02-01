@@ -1,14 +1,16 @@
----
-hide:
-- toc
-tags:
-- 👨‍👩‍👧‍👦 community contribution
-- utility strategy
----
-
 # `hedge`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/hedge)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/hedge](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/hedge)
+* Configs: [hedge_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hedge/hedge_config_map_pydantic.py)
+* Maintainer: [leastchaos](https://github.com/leastchaos)
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -18,18 +20,10 @@ This strategy was the winning submission in the [dYdX hackathon](https://blog.hu
 
 ## 🏦 Exchanges supported
 
-* [`spot` exchanges](/exchanges/spot)
-* [`perp` exchanges](/exchanges/perp)
-
-## 👷 Maintenance
-
-* Release added: [0.45.0](/release-notes/0.45.0/) by [leastchaos](https://github.com/leastchaos)
-* Last modified: [1.11.0](/release-notes/1.11.0/)
-* Maintainer: [leastchaos](https://github.com/leastchaos)
+* SPOT CLOB CEX
+* PERP CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hedge/hedge_config_map_pydantic.py)
 
 | Parameter                        | Type                 | Default     | Prompt New? | Prompt                                                 |
 |----------------------------------|----------------------|-------------|-------------|--------------------------------------------------------|
@@ -53,8 +47,6 @@ This strategy was the winning submission in the [dYdX hackathon](https://blog.hu
 | `markets`                        | List[str]           | None         | True        | The name of the trading pairs. |
 | `offsets`                        | List[Decimal]       | [0.0]        | True        | Enter the offsets to use to hedge the markets comma seperated|
 
-
-
 ## 📓 Description
 
 [Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hedge/hedge.py)
@@ -67,6 +59,7 @@ This strategy was the winning submission in the [dYdX hackathon](https://blog.hu
 **Summary**
 
 This strategy contains 2 mode of hedging.
+
 1. Hedge by amount
 
 The strategy will hedge by amount by calculating the amount to hedge by each asset.
@@ -100,7 +93,6 @@ For E.g, there might be some correlation for some basket of tokens (FEAR, ODDZ, 
 * Fixed amount of offset/ hedging of asset
 
 You can set a fixed offset value/amount and the bot will maintain the amount of asset/position you hold at the offset level at every interval.
-
 
 ## ℹ️ More Resources
 

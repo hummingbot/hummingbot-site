@@ -1,36 +1,36 @@
----
-tags:
-- spot exchange connector
----
-
 # `lbank`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/lbank)
+## 📁 Connector Info
+
+* Type: SPOT CLOB DEX
+* Folder: [/gateway/src/connectors/lbank](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/lbank)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**lbank.info** [Website](https://www.lbank.info/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/lbank/) | [CoinGecko](https://www.coingecko.com/en/exchanges/lbank)
-
-* API Docs: https://www.lbank.info/en-US/docs/index.html#introduction
-* Transaction fees: https://www.lbank.info/fees.html
-* Minimum order size: https://api.lbkex.com/v1/accuracy.do (Check via Postman)
-* Creating API keys: https://support.lbank.site/hc/en-gb/articles/360009402813-How-to-create-API-
-
-## 👷 Maintenance
-
-* Release added: [1.10.0](/release-notes/1.10.0/) by [CoinAlpha](https://coinalpha.com)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+* Website: <https://www.lbank.info/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/lbank/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/lbank>
+* API docs: <https://www.lbank.info/en-US/docs/index.html#introduction>
+* SDK:
 
 ## 🔑 Connection
 
 Run `connect lbank` in order to enter your API keys:
- 
+
 ```
 Enter your LBank API key >>>
 Enter your LBank secret key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to LBank.
 ```

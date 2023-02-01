@@ -21,8 +21,8 @@ See [HBOT](/hbot) for the current Quorum Percentage, which is based on the HBOT 
 ### Pull Request Proposals
 
 * Pull Request Proposals (PRP) let HBOT holders **approve pull requests** for merge and inclusion into the Hummingbot codebase.
-* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a PRP at the Snapshot sub-space: https://snapshot.org/#/hbot-prp.eth.
-* A PRP links to a valid pull request in the Hummingbot code repository. See [Contribution Guidelines](developers/contributions/) for more information about the process of creating a valid pull request.
+* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a PRP at the Snapshot sub-space: <https://snapshot.org/#/hbot-prp.eth>.
+* A PRP links to a valid pull request in the Hummingbot code repository. See [Contribution Guidelines](/developers/contributions/) for more information about the process of creating a valid pull request.
 * If the PRP is approved after the Vote Duration and the Quorum Percentage is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
 * During the review process, the Foundation will test the submitted pull request to ensure that it fulfills its stated intention, conduct a technical code review, check for conflicts with other parts of the Hummingbot codebase and security issues. If the review passes, the pull request is merged into the codebase.
 * If the PRP fails to meet the Approval Threshold, the Foundation will close the related pull request. However, the developer is free to create a new pull request and a new PRP at a subsequent date.
@@ -36,7 +36,7 @@ To be considered valid, a PRP should contain the following fields (otherwise the
 
 * Hummingbot Improvement Proposals (HIP) let HBOT holders **propose developer bounties** for improvements or fixes to the Hummingbot codebase
 * HIPs may name a specific developer, in which case the bounty is assigned to the developer if it is approved. If not, the Foundation will mark the bounty as Open and publicize it to the community.
-* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HIP at the Snapshot sub-space: https://snapshot.org/#/hbot-hip.eth
+* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HIP at the Snapshot sub-space: <https://snapshot.org/#/hbot-hip.eth>
 * Before creating an HIP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposal-discussions** channel to gauge whether the requested HBOT amount is appropriate.
 * If the HIP is approved after the Vote Duration and the Quorum Percentage is met, then the Foundation will create a [Bounty](/governance/bounties) and follow the assignation process.
 
@@ -53,9 +53,8 @@ To be considered valid, a HIP should contain the following fields (otherwise the
 * The Foundation also uses an HGP to elects its [Board of Directors](/about/#board-of-directors) every year.
 * In addition, HGPs are used to propose HBOT allocations for non-development purposes, such as community incentives and liquidity mining programs.
 
-
-* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HGP at the main Snapshot space: https://snapshot.org/#/hbot.eth.
-* Before creating an HGP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposal-discussions** channel to gauge whether the requested HBOT amount is appropriate. 
+* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HGP at the main Snapshot space: <https://snapshot.org/#/hbot.eth>.
+* Before creating an HGP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposal-discussions** channel to gauge whether the requested HBOT amount is appropriate.
 
 To be considered valid, an HGP should contain the following fields:
 

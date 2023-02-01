@@ -1,12 +1,16 @@
----
-tags:
-- arbitrage
-- perp strategy
----
-
 # `spot_perpetual_arbitrage`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/spot_perpetual_arbitrage](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage)
+* Configs: [spot_perpetual_arbitrage_config_map.py](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage_config_map.py)
+* Maintainer: None
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -18,16 +22,10 @@ With the position open, the bot will scan the prices on both connectors, and onc
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-[`perp` exchanges](/exchanges/perp)
-
-## 👷 Maintainer
-
-Open
+* SPOT CLOB CEX
+* PERP CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/spot_perpetual_arbitrage/spot_perpetual_arbitrage_config_map.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
