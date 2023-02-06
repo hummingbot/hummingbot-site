@@ -18,7 +18,7 @@ The Raspberry Pi has an easy to follow [guide](https://www.raspberrypi.org/docum
 
 Once the OS is installed and booted then you can follow the steps below to install Hummingbot using either Docker or Source
 
-## Install via Docker
+## **Install via Docker**
 
 Copy and paste each line of code one by one into the terminal
 
@@ -86,7 +86,7 @@ Once Docker is installed you can then launch a Hummingbot instance with **_eithe
     hummingbot/hummingbot:version-1.12.0-arm_beta
     ```
 
-## Install via Source
+## **Install via Source**
 
 Open a terminal (GUI) or SSH into the Raspberry Pi and copy / paste the following code line by line into the terminal
 
