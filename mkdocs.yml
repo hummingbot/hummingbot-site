@@ -129,7 +129,7 @@ nav:
       - Installation: installation/index.md
       - Docker: installation/docker.md
       - Source: installation/source.md
-      - Raspberry Pi: installation/raspberry-pi.md
+      - Raspberry Pi / ARM64: installation/raspberry-pi.md
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md
       - Update and Restore Hummingbot: installation/update-hummingbot.md

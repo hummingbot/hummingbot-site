@@ -1,20 +1,3 @@
-## Binary (Mac/Win)
-
-To update Hummingbot, uninstall Hummingbot locally from your computer, then download and install the latest version from the website https://docs.hummingbot.io/installation/
-
-Users can revert and update Hummingbot installed via Binary by following the steps below:
-
-To install a previous Hummingbot version via binary, download the installer from https://docs.hummingbot.io/installation/ in the previous client section
-
-![](/assets/img/installer.png)
-
-Users can also download an older version not listed on the website using the URL format `https://dist.hummingbot.io/[hummingbot_version]`
-
-For example:
-
-![](/assets/img/download.png)
-
-
 ## Docker
 
 Hummingbot is regularly updated each month (see [Release Notes](/release-notes/)) and recommends users to periodically update their installations to get the latest version of the software.
@@ -62,7 +45,7 @@ A previous version (i.e. `version-1.4.0`) can be installed when creating a Hummi
 
 ## Raspberry Pi
 
-Users have been experiencing problems with updating Hummingbot on a Docker build. The command `./update.sh` doesn't work on Raspberry Pi. 
+Users have been experiencing problems with updating Hummingbot on a Docker build. The command `./update.sh` doesn't work on Raspberry Pi.
 
 Instead, you need to run `./create.sh` to create a new instance with the latest version.
 
@@ -74,15 +57,14 @@ Instead, you need to run `./create.sh` to create a new instance with the latest 
 
     # 2) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version [ latest/development ] ( default = 'latest' )
-    >> version-1.4.0-arm_beta 
+    >> version-1.12.0-arm_beta 
     ```
 !!! Note
     The latest ARM version of Hummingbot can be found here (filter list by "arm") - [Hummingbot Dockerhub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
 
-
 ## Source
 
-The Hummingbot codebase is hosted at https://github.com/hummingbot/hummingbot.
+The Hummingbot codebase is hosted at <https://github.com/hummingbot/hummingbot>.
 
 === "Scripts"
 
@@ -112,4 +94,3 @@ The Hummingbot codebase is hosted at https://github.com/hummingbot/hummingbot.
     ./compile
     bin/hummingbot.py
     ```
-
