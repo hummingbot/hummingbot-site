@@ -4,23 +4,26 @@ This page contains information on launching and exiting the application, assumin
 
 ## Launch via Docker
 
-If you downloaded the helper script before, proceed to step 2.
+=== "Using Helper Scripts"
+    If you've already downloaded the helper scripts before, proceed to step 2.
 
-1. Download `start.sh` helper script from Github using the command below.
+    1. Download `start.sh` helper script from Github using the command below.
+    ```
+    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
+    chmod a+x start.sh
+    ```
+    2. Run the following command inside the directory where the helper script is located:
+    ```
+    ./start.sh
+    ```
 
-```Manual
-wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/start.sh
-chmod a+x start.sh
-```
+=== "Manual Docker commands"
+    1. Use the command `docker ps -a` to list all docker containers
+    2. If the status is showing "exited" next to the container you want to run then use `docker start [container_name]` to start the container, if the container is already running then skip this command and run the next one instead.
+    3. Next use `docker attach [container_name] to attach to the running container
 
 !!! tip
     Run `ls` command from the terminal to check if the file is in your current directory.
-
-2. Run the following command inside the directory where the helper script is located:
-
-```Manual
-./start.sh
-```
 
 ![](/assets/img/launch-via-docker.gif)
 
@@ -47,7 +50,5 @@ bin/hummingbot.py
 
 Running the `exit` command cancels all outstanding orders and exit the Hummingbot interface. In case of errors, the command `exit -f` will force the application to close.
 
-If you're running Hummingbot installed via binary, exiting Hummingbot by clicking the close window icon will leave your active orders open in the exchange.
-
 !!! tip
-    You can also press the keyboard shortcut `CTRL + C` twice to exit.
+    You can also press the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>C</kbd> twice to exit.
