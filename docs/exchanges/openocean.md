@@ -1,33 +1,24 @@
----
-tags:
-- amm exchange connector
-- dex aggregator
----
-
 # `openocean`
 
-The Openocean connector in [Gateway](https://github.com/hummingbot/hummingbot/tree/master/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT CLOB CEX
+* Folder: [/gateway/src/connectors/openocean](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/openocean)
+* Maintainer:
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/openocean)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/openocean.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Openocean**
-[Website](https://openocean.finance/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/openocean/) | [CoinGecko](https://www.coingecko.com/en/exchanges/openocean_finance)
-
+* Website: <https://openocean.finance/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/openocean/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/openocean_finance>
 * API docs: <https://github.com/openocean-finance/openocean-api>
 * SDK: <https://github.com/openocean-finance/OpenOcean-SDK-API>
-* DOC: <https://docs.openocean.finance/>
-
-## 🕸️ Supported Chains and Networks
-
-### Avalanche
-
-* [avalanche](/gateway/chains/avalanche)
 
 ## 🔑 Setup
 

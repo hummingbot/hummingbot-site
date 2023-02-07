@@ -23,7 +23,7 @@ The Foundation staff handles the day-to-day operations of maintaining the Hummin
 * Packaging monthly releases into Docker containers for various environments
 * Maintaining and updating the Hummingbot website and documentation site
 
-A 5-person Board of Directors provides oversight over the Foundation staff. See [Board](/about/board) for more details.
+A 5-person Board of Directors provides oversight over the Foundation staff. See [Board](/governance/board) for more details.
 
 ## Governance
 
@@ -39,7 +39,6 @@ See [Reporting](/reporting) for more details.
 
 ## History
 
-Launched in April 2019, Hummingbot began as a simple open source market making bot. Today, it has evolved into a extensible framework that lets you create custom trading strategies on any crypto exchange. 
+Launched in April 2019, Hummingbot began as a simple open source market making bot. Today, it has evolved into a extensible framework that lets you create custom trading strategies on any crypto exchange.
 
 Read our [origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-market-making-bot) and see [History](./history) for more details.
-

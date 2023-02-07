@@ -1,50 +1,32 @@
----
-tags:
-- 
----
-<!---  Add necessary connector tags above ie. "spot connector", "miner exchange" etc -->
+# `openocean`
 
-# `Connector Name` <!--- Replace this with the actual connector name -->
+## 📁 Connector Info
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/) <!--- Replace Github link to connector folder -->
+* Type: SPOT CLOB CEX
+* Folder: [/gateway/src/connectors/openocean](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/openocean)
+* Maintainer:
 
-## 📝 Signup
+## 🏆 Exchange Tier
 
-* Hummingbot referral link - <!--- Add referral link if applicable -->
-* Sign up with [connector_name] using Hummingbot's referral link for a [%_discount] discount off trading fees!
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Connector_Website.com** [Website](https://connector_website.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges//) | [CoinGecko](https://www.coingecko.com/en/exchanges) <!--- Add exchange website link as well as link to exchange page on CoinMarketCap and CoinGecko  -->
+* Website: <https://openocean.finance/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/openocean/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/openocean_finance>
+* API docs: <https://github.com/openocean-finance/openocean-api>
+* SDK: <https://github.com/openocean-finance/OpenOcean-SDK-API>
 
-* API docs: <!--- Add link to API docs -->
-* Transaction fees: <!--- Add link to transaction fees for exchange -->
-* Minimum order size: <!--- Add link to docs specifying trading rules or that state the minimum order size -->
-* Creating API keys: <!--- Add link to creating API docs -->
+## 🔑 Setup
 
-## 👷 Maintenance
+1. Follow the instructions on [Setting up Gateway](https://github.com/hummingbot/hummingbot/tree/master/gateway/setup) to install the Gateway Docker container
+2. Run `gateway connect openocean` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
+3. Run `create` to create an [AMM Arbitrage](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/amm_arb) strategy between Openocean and a different exchange.
+4. Run `start` to start the strategy, and you're trading!
 
-* Release added: <!--- Add release number here as well as link to release notes ex. "[1.9.0](/release-notes/1.9.0/) by CoinAlpha" -->
-* Maintainer: <!--- name of maintainer -->
+## 📘 Additional Resources
 
-## 🔑 Connection
-<!--- enter the prompts below shown when running the `connect` command -->
-
-Run `connect [exchange_name]` in order to enter your API keys:
-
-```
-Enter your  [exchange_name] API key >>>
-Enter your [exchange_name] secret key >>>
-```
-
-If connection is successful:
-
-```
-You are now connected to [exchange_name].
-```
-
-## 🪙 Fees
-
-Hummingbot assumes [%_fees] maker fees and [%_fees] taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/)). <!--- replace with maker / taker fees and add correct Github link to hardcoded fees -->
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+See [Avalanche](/gateway/chains/ethereum#avalanche) for more information about the default configuration settings and how to change them.

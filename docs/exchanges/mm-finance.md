@@ -1,42 +1,24 @@
----
-tags:
-- amm exchange connector
-- ethereum dex
----
-
 # `Mad Meerkat Finance`
 
-The Mad Meerkat Finance connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/mad_meerkat](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/mad_meerkat)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/mad_meerkat)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/mad_meerkat.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Mad Meerkat Finance** [Website](https://mm.finance) | [CoinMarketCap](https://coinmarketcap.com/exchanges/mm-finance/) | [CoinGecko](https://www.coingecko.com/en/exchanges/mm_finance)
-
-* API docs:
-* SDK: 
-* FAQ: https://mmfinance.gitbook.io/docs/troubleshooting-errors
-
-## 👷 Maintenance
-
-* Release added:
-* Maintainer: CoinAlpha
-
-## 🕸️ Supported Chains and Networks
-
-### Cronos
-
-* [mainnet](/gateway/chains/cronos)
-* [testnet](/gateway/chains/cronos)
-
-## 👷 Developer
-
-Added by CoinAlpha in [v1.10.0](/release-notes/1.10.0/)
+* Website: <https://mm.finance>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/mm-finance/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/mm_finance>
+* API docs: <https://mmfinance.gitbook.io/docs/troubleshooting-errors>
+* SDK:
 
 ## 🔑 Setup
 

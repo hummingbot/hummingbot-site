@@ -1,37 +1,36 @@
----
-tags:
-- spot exchange connector
----
-
 # `hitbtc`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc)
+## 📁 Connector Info
+
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/hitbtc](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc)
+* Maintainer:
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**HitBTC** 
-[Website](https://hitbtc.com/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/hitbtc/) | [CoinGecko](https://www.coingecko.com/en/exchanges/hitbtc)
-
-* API docs: https://api.hitbtc.com/
-* Transaction fees: https://hitbtc.com/fee-tier
-* Minimum order size: https://blog.hitbtc.com/system-updates-lot-size-changes/
-* Creating API keys: https://support.hitbtc.com/en/support/solutions/articles/63000225027-hitbtc-api-keys
-
-## 👷 Maintenance
-
-* Release added: [0.38.0](/release-notes/0.38.0/) by CoinAlpha
-* Maintainer: 
+* Website: <https://hitbtc.com/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/hitbtc/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/hitbtc>
+* API docs: <https://api.hitbtc.com/>
+* Transaction fees: <https://hitbtc.com/fee-tier>
 
 ## 🔑 Connection
 
 Run `connect hitbtc` in order to enter your API keys:
- 
+
 ```
 Enter your hitbtc API key >>>
 Enter your hitbtc secret API key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to hitbtc.
 ```

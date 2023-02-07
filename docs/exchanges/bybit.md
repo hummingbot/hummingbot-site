@@ -1,36 +1,36 @@
----
-tags:
-- spot exchange connector
----
-
 # `bybit`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bybit)
+## 📁 Connector Info
+
+* Type: SPOT CLOB CEX
+* Folder: [/hummingbot/connector/exchange/bybit](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bybit)
+* Maintainer:
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Bybit** [Website](https://www.bybit.com/en-US/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/bybit/) | [CoinGecko](https://www.coingecko.com/en/exchanges/bybit)
-
-* API docs: https://bybit-exchange.github.io/docs/inverse/#t-introduction
-* Transaction fees: https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation
-* Creating API keys: https://help.bybit.com/hc/en-us/articles/360039749613-How-to-create-a-new-API-key-
-* Trading rules: https://www.bybit.com/en-US/contract-rules
-
-## 👷 Maintenance
-
-* Release added: [1.5.0](/release-notes/1.5.0/) by Hummingbot Foundation
-* Maintainer:
+* Website: <https://www.bybit.com/en-US/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/bybit/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/bybit>
+* API docs: <https://bybit-exchange.github.io/docs/inverse/#t-introduction>
+* Transaction fees: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
 
 ## 🔑 Connection
 
 Run `connect bybit` in order to enter your API keys:
- 
+
 ```
 Enter your Bybit API key >>>
 Enter your Bybit secret key >>>
 ```
 
 If connection is successful:
+
 ```
 You are now connected to Bybit.
 ```

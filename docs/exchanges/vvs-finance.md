@@ -1,44 +1,26 @@
----
-tags:
-- amm exchange connector
-- ethereum dex
----
-
 # `VVS Finance`
 
-The VVS Finance connector in [Gateway](/gateway) is responsible for all on-chain operations (e.g. fetching prices and creating swap transactions).
+## 📁 Connector Info
 
-It interfaces with the [`GatewayEVMAMM`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/gateway_EVM_AMM.py) class in the Hummingbot client, which is responsible for interfacing with all EVM-based Gateway AMMs.
+* Type: SPOT AMM DEX
+* Folder: [/hummingbot/gateway/src/connectors/vvs](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/vvs)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/vvs)
+## 🏆 Exchange Tier
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/vvs.yml)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**VVS Finance** [Website](https://vvs.finance/) | [CoinMarketCap](https://coinmarketcap.com/currencies/vvs-finance/) | [CoinGecko](https://www.coingecko.com/en/exchanges/vvs_finance)
+* Website: <https://vvs.finance/>
+* CoinMarketCap: <https://coinmarketcap.com/currencies/vvs-finance/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/vvs_finance>
+* API docs: <https://github.com/vvs-finance/vvs-ui/tree/master/packages/vvs-swap-sdk>
+* Fees:
 
-* API docs:
-* SDK: https://github.com/vvs-finance/vvs-ui/tree/master/packages/vvs-swap-sdk
-* FAQ: https://docs.vvs.finance/support-and-help/faq
-
-## 👷 Maintenance
-
-* Exchange Tier: 
-* Maintainer: [CoinAlpha](https://coinalpha.com)
-
-## 🕸️ Supported Chains and Networks
-
-### Cronos
-
-* [mainnet](/gateway/chains/cronos)
-* [testnet](/gateway/chains/cronos)
-
-## 👷 Developer
-
-Added by CoinAlpha in [v1.10.0](/release-notes/1.10.0/)
-
-## 🔑 Setup
+## 🔑 Connection
 
 1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
 2. Run `gateway connect vvs` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.

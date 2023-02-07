@@ -4,7 +4,6 @@
 
 * Type: SPOT AMM DEX
 * Folder: [/gateway/src/connectors/traderjoe](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/traderjoe)
-* Configs: [/gateway/src/templates/traderjoe.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/traderjoe.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -15,19 +14,11 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## ℹ️ Exchange Info
 
-* Website: https://traderjoexyz.com/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/traderjoe/
-* CoinGecko: https://www.coingecko.com/en/exchanges/traderjoe
+* Website: <https://traderjoexyz.com/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/traderjoe/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/traderjoe>
 * API docs: <https://docs.traderjoexyz.com/>
 * SDK: <https://github.com/traderjoe-xyz/joe-sdk>
-
-## 🕸️ Supported Chains and Networks
-
-* Avalanche: `avalanche`, `fuji`
-
-## 👷 Developer
-
-Added by CoinAlpha in [v1.5.0](/release-notes/1.5.0/)
 
 ## 🔑 Connection
 
@@ -40,18 +31,9 @@ Enter your avalanche-mainnet private key >>>>
 ```
 
 If connection is successful:
+
 ```
 The uniswap connector now uses wallet [pubKey] on avalanche-mainnet
-```
-
-
-
-## 🔑 Setup
-
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect traderjoe` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Trader Joe and a different exchange.
-4. Run `start` to start the strategy!
 
 ## 📘 Additional Resources
 

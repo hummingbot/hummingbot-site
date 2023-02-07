@@ -4,7 +4,7 @@
 
 * Type: SPOT AMM DEX
 * Folder: [/gateway/src/connectors/sushiswap](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/sushiswap)
-* Configs: [/gateway/src/templates/sushiswap.yml](/gateway/src/templates/sushiswap.yml)
+* Configs: [/gateway/src/templates/sushiswap.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/sushiswap.yml)
 * Maintainer: Hummingbot Foundation
 
 ## 🏆 Exchange Tier
@@ -15,11 +15,11 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 
 ## ℹ️ Exchange Info
 
-* Website: https://sushi.com/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/sushiswap/
-* CoinGecko: https://www.coingecko.com/en/exchanges/sushiswap
+* Website: <https://sushi.com/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/sushiswap/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/sushiswap>
 * API docs: <https://docs.sushi.com/>
-* SDK: https://github.com/sushiswap/sdk
+* SDK: <https://github.com/sushiswap/sdk>
 
 ## 🕸️ Supported Chains and Networks
 
@@ -37,6 +37,7 @@ Enter your ethereum-mainnet private key >>>>
 ```
 
 If connection is successful:
+
 ```
 The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
 ```

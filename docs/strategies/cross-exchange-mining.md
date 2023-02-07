@@ -1,12 +1,16 @@
----
-tags:  
-- market making
-- ⛏️ Miner strategy
----
-
 # `cross-exchange-mining`
 
-## 📁 [Strategy folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/cross_exchange_mining)
+## 📁 Strategy Info
+
+* Folder: [/hummingbot/strategy/cross_exchange_mining](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/cross_exchange_mining)
+* Configs: [cross_exchange_mining_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_mining/cross_exchange_mining_config_map_pydantic.py)
+* Maintainer: [bsmeaton](https://github.com/bsmeaton)
+
+## 🏆 Strategy Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## 📝 Summary
 
@@ -16,16 +20,9 @@ The strategy tracks the amount of base asset across the taker and maker exchange
 
 ## 🏦 Exchanges supported
 
-[`spot` exchanges](/exchanges/spot)
-
-## 👷 Maintenance
-
-* Release added: [1.10.0](/release-notes/1.10.0/) by [bsmeaton](https://github.com/bsmeaton)
-* Maintainer: [bsmeaton](https://github.com/bsmeaton)
+* SPOT CLOB CEX
 
 ## 🛠️ Strategy configs
-
-[Config map](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_mining/cross_exchange_mining_config_map_pydantic.py)
 
 | Parameter                    | Type        | Default     | Prompt New? | Prompt                                                 |
 |------------------------------|-------------|-------------|-------------|--------------------------------------------------------|
@@ -67,7 +64,7 @@ The strategy looks at the current volatility in the maker market to adjust the `
 
 The strategy looks at the previous trades completed and balancing trades in order to understand the success of the strategy at producing profit. The strategy will again adjust the 'min_profitability' figure by widening the spread if the user is losing money and tightening the spread if the trades are too profitable. This is due to the strategy aiming to essentially provide a break even portfolio to maximise mining rewards, hence the name `cross_exchange_mining`.
 
-The previous trades in the users `hummingbot/data` file are read by the strategy at intervals equal to the `min_prof_adj_timer` when this function is called it looks at trades recorded within the last 24 hours in the file and based on timestamp seeks to match the filled maker and taker orders that make up a full balanced trade. 
+The previous trades in the users `hummingbot/data` file are read by the strategy at intervals equal to the `min_prof_adj_timer` when this function is called it looks at trades recorded within the last 24 hours in the file and based on timestamp seeks to match the filled maker and taker orders that make up a full balanced trade.
 
 The strategy uses the `trade_fee` variable in this calculation to take into account the amount of money paid to the both exchanges during these trades, the calculation returns the average profitability of the trades and balance pairs completed in the previous 24 hours. This figure is then converted into an adjustment. a 0% profitability (Based on order amount) would lead to 0 adjustment.
 

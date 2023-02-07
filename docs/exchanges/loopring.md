@@ -1,27 +1,24 @@
----
-tags:
-- spot exchange connector
-- ethereum dex
----
-
 # `loopring`
 
-## 📁 [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/loopring)
+## 📁 Connector Info
+
+* Type: SPOT CLOB DEX
+* Folder: [/hummingbot/connector/exchange/loopring](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/loopring)
+* Maintainer:
+
+## 🏆 Exchange Tier
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
-**Loopring**
-[Website](https://loopring.io/) | [CoinMarketCap](https://coinmarketcap.com/exchanges/loopring-exchange/) | [CoinGecko](https://www.coingecko.com/en/exchanges/loopring)
-
+* Website: <https://loopring.io/>
+* CoinMarketCap: <https://coinmarketcap.com/exchanges/loopring-exchange/>
+* CoinGecko: <https://www.coingecko.com/en/exchanges/loopring>
 * API docs: <https://docs.loopring.io/>
 * Transaction fees: <https://blogs.loopring.org/loopring-exchange-faq/>
-* Minimum order size: <https://docs.loopring.io/en/dex_apis/getOrderUserRateAmount.html?h=minimum%20amount>
-* Creating API keys: <https://blogs.loopring.org/loopring-exchange-faq/#how-do-i-register-an-account>
-
-## 👷 Maintenance
-
-* Release added: [0.32.0](/release-notes/0.32.0/) by CoinAlpha
-* Maintainer:
 
 ## 🔑 Connection
 
