@@ -1,5 +1,7 @@
 The Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the HBOT governance system.
 
+The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
+
 ## Principles
 
 Below are the core principles that underpin Hummingbot’s development:
@@ -40,9 +42,3 @@ See [Reporting](/reporting) for more details.
 Launched in April 2019, Hummingbot began as a simple open source market making bot. Today, it has evolved into a extensible framework that lets you create custom trading strategies on any crypto exchange.
 
 Read our [origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-market-making-bot) and see [History](./history) for more details.
-
-## Bylaws
-
-The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
-
-<iframe src="https://fengtality.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
