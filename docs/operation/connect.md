@@ -17,7 +17,7 @@ See [Exchanges](/exchanges) for more information about how to create API keys fo
 
 1. Run `connect [protocol_name]` command, e.g. `connect ethereum`
 1. Enter your wallet private key
-1. Enter the Ethereum node endpoint starting with https://
+1. Enter the Ethereum node endpoint starting with <https://>
 1. Enter the websocket address starting with wss://
 
 !!! note "Connecting vs keyfile"
@@ -33,4 +33,4 @@ Run the `connect` command to view the status of each connector. It also shows fa
 
 **Keys Confirmed** column shows the status if Hummingbot has successfully connected to the exchange or protocol.
 
-**Connector Status** column is an indicator of the connector working status as of the client release. See [Exchange Status](/exchanges/#status) for more information.
+**Tier** column shows the connector tier (Gold, Silver, Bronze). For more info on connector tiers see the [exchanges](/exchanges) documentation.

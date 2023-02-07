@@ -10,8 +10,8 @@ Updating to the latest docker image (e.g. `hummingbot/hummingbot:latest`)
 === "Scripts"
 
     ```bash
-    # 1) Remove old script
-    rm -rf update.sh
+    # 1) Remove old scripts
+    rm -rf *.sh
 
     # 2) Download update script
     wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/update.sh
@@ -21,6 +21,7 @@ Updating to the latest docker image (e.g. `hummingbot/hummingbot:latest`)
 
     # 4) Run script to update hummingbot
     ./update.sh
+    
     ```
 
 === "Manual"
@@ -41,7 +42,7 @@ Updating to the latest docker image (e.g. `hummingbot/hummingbot:latest`)
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
     hummingbot/hummingbot:latest
     ```
-A previous version (i.e. `version-1.4.0`) can be installed when creating a Hummingbot instance.
+A previous version (i.e. `version-1.11.0`) can be installed when creating a Hummingbot instance.
 
 ## Raspberry Pi
 
@@ -55,12 +56,12 @@ Instead, you need to run `./create.sh` to create a new instance with the latest 
     # 1) Create a new Hummingbot instance
     ./create.sh
 
-    # 2) Pull Hummingbot ARM image when asked what version to use
+    # 2) Pull the Hummingbot ARM image when asked what version to use
     Enter Hummingbot version [ latest/development ] ( default = 'latest' )
-    >> version-1.12.0-arm_beta 
+    >> version-1.12.0-arm_beta
     ```
 !!! Note
-    The latest ARM version of Hummingbot can be found here (filter list by "arm") - [Hummingbot Dockerhub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
+    The latest ARM version of Hummingbot can be found here - [Hummingbot Dockerhub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
 
 ## Source
 
@@ -77,6 +78,7 @@ The Hummingbot codebase is hosted at <https://github.com/hummingbot/hummingbot>.
 
     # 3) Run script to update hummingbot
     ./update.sh
+
     ```
 
 === "Manual"

@@ -5,42 +5,66 @@ This page contains information on launching and exiting the application, assumin
 ## Launch via Docker
 
 === "Using Helper Scripts"
-    If you've already downloaded the helper scripts before, proceed to step 2.
 
-    1. Download `start.sh` helper script from Github using the command below.
+    Download the `start.sh` helper script
+
     ```
     wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
+   
+    ```
+    Change permissions
+
+    ```
     chmod a+x start.sh
+
     ```
-    2. Run the following command inside the directory where the helper script is located:
+    Run the script
+
     ```
+    
     ./start.sh
+    
     ```
+
+=== "Using Docker Compose file"
+    Placeholder text
 
 === "Manual Docker commands"
-    1. Use the command `docker ps -a` to list all docker containers
-    2. If the status is showing "exited" next to the container you want to run then use `docker start [container_name]` to start the container, if the container is already running then skip this command and run the next one instead.
-    3. Next use `docker attach [container_name] to attach to the running container
 
-!!! tip
-    Run `ls` command from the terminal to check if the file is in your current directory.
+    List all docker containers
+        
+    ```
+    docker ps -a
 
-![](/assets/img/launch-via-docker.gif)
+    ```
+    
+    Start the docker container
 
-!!! tip
-    If no containers are running, follow the guide to creating a Hummingbot instance.
+    ```
+
+    docker start [container_name]
+     
+    ``` 
+    
+    Connect to the container
+
+    ```
+    
+    docker attach [container_name]
+
+    ```     
 
 ## Launch from source
 
-1. Make sure the hummingbot conda environment is enabled.
+Make sure the hummingbot conda environment is enabled.
 
-```Manual
+```
 conda activate hummingbot
 ```
 
-2. In the `hummingbot` parent directory, run this command to launch the application:
+In the `hummingbot` parent directory, run this command to launch the application:
 
-```Manual
+```
 bin/hummingbot.py
 ```
 
