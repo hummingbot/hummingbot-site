@@ -12,7 +12,6 @@ Currently, we split all the configuration variables into three different types.
 
 | Config type   | In-memory location | Saved to local yml | Description                 |
 |-------------- | ------------------ | ------------------ | --------------------------- |
-| `in_memory`   | `hummingbot/client/config/in_memory_config_map.py` | No | Configs that are never saved and prompted every time (currently, only the `strategy` and `strategy_config_path` are in this config map.
 | `global`      | `hummingbot/client/config/global_config_map.py` | Yes | Strategy-agnostic configs such as exchange API keys, wallet selection, etc.
 | `strategy`    | `hummingbot/strategy/{STRATEGY_NAME}/{STRATEGY_NAME}_strategy_config_map.py` | Yes | Strategy-specific configs.
 
