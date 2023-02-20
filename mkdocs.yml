@@ -42,8 +42,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
 
@@ -133,139 +133,139 @@ nav:
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md
       - Update and Restore Hummingbot: installation/update-hummingbot.md
-    - Basic Operations:
-      - Basic Operations: operation/index.md
-      - User Interface Guide: operation/user-interface.md
-      - Commands and Shortcuts: operation/commands-shortcuts.md
-      - Launch/Exit Hummingbot: operation/launch-exit.md
-      - Create/Delete Password: operation/password.md
-      - Connect Exchange API Keys: operation/connect.md
-      - Create/Import Config Files: operation/config-files.md
-      - Check Balances: operation/balance.md
-      - Start/Stop Strategy: operation/start-stop.md
-      - Pause/Resume Strategy: operation/pause-resume.md
-      - Check Bot/Market Status: operation/status.md
-      - Check Performance: operation/history.md
-      - Find Log Files: operation/log-files.md
-      - Export Trades/Keys: operation/export.md
-    - Strategies:
-      - Strategies: strategies/index.md
-      - Core:
-        - Pure Market Making: strategies/pure-market-making.md
-        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-        - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Community:
-        - Aroon Oscillator: strategies/aroon-oscillator.md
-        - Avellaneda Market Making: strategies/avellaneda-market-making.md
-        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-        - Hedge: strategies/hedge.md
-        - Liquidity Mining: strategies/liquidity-mining.md
-        - Perpetual Market Making: strategies/perpetual-market-making.md
-        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-        - TWAP: strategies/twap.md
-        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-    - Scripts:
-      - Scripts: scripts/index.md
-      - Getting Started: scripts/getting-started.md
-      - Script Examples: scripts/examples.md
-      - PMM Scripts: scripts/pmm-scripts.md
-    - Exchange Connectors:
-      - Exchange Connectors: exchanges/index.md
-      - Gold:
-        - Binance: exchanges/binance.md
-        - Binance (perp): exchanges/binance-perpetual.md
-        - Uniswap: exchanges/uniswap.md
-      - Silver:
-        - Kucoin: exchanges/kucoin.md
-        - Gate.io: exchanges/gate-io.md
-        - Gate.io (perp): exchanges/gate-io-perpetual.md
-        - AscendEX: exchanges/ascend-ex.md
-        - Pancakeswap: exchanges/pancakeswap.md
-        - Sushiswap: exchanges/sushiswap.md
-        - dYdX: exchanges/dydx-perpetual.md
-      - Bronze CEX:
-        - AltMarkets: exchanges/altmarkets.md
-        - Binance US: exchanges/binance-us.md
-        - Bybit: exchanges/bybit.md
-        - Bybit (perp): exchanges/bybit-perpetual.md
-        - Bitfinex: exchanges/bitfinex.md
-        - BitGet: exchanges/bitget-perpetual.md
-        - BitMart: exchanges/bitmart.md
-        - Bitmex: exchanges/bitmex.md
-        - Bitmex (perp): exchanges/bitmex-perpetual.md
-        - Bittrex: exchanges/bittrex.md
-        - CI-EX: exchanges/ci-ex.md
-        - Coinbase: exchanges/coinbase.md
-        - Crypto.com : exchanges/crypto-com.md
-        - HitBTC: exchanges/hitbtc.md
-        - Himalaya: exchanges/himalaya.md
-        - Huobi: exchanges/huobi.md
-        - Kraken: exchanges/kraken.md
-        - LBank: exchanges/lbank.md
-        - Loopring: exchanges/loopring.md
-        - MEXC: exchanges/mexc.md 
-        - NDAX: exchanges/ndax.md
-        - OKX: exchanges/okx.md
-        - ProBit: exchanges/probit.md
-        - WhiteBit: exchanges/whitebit.md
-      - Bronze DEX:
-        - DeFi Kingdoms: exchanges/defikingdoms.md
-        - Defira: exchanges/defira.md
-        - MM Finance: exchanges/mm-finance.md
-        - OpenOcean: exchanges/openocean.md
-        - Pangolin: exchanges/pangolin.md
-        - Perpetual Protocol: exchanges/perp.md
-        - Quickswap: exchanges/quickswap.md
-        - Ref Finance: exchanges/ref-finance.md
-        - TraderJoe: exchanges/traderjoe.md
-        - VVS Finance: exchanges/vvs-finance.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Setting up Gateway: gateway/setup.md
-      - Adding Tokens: gateway/tokens.md
-      - History: gateway/history.md
-      - Chains Supported:
-        - Ethereum: gateway/chains/ethereum.md
-        - Avalanche: gateway/chains/avalanche.md
-        - BNB Chain: gateway/chains/bnb-chain.md
-        - Cronos: gateway/chains/cronos.md
-        - Cosmos: gateway/chains/cosmos.md
-        - Harmony: gateway/chains/harmony.md
-        - NEAR: gateway/chains/near.md
-        - Polygon: gateway/chains/polygon.md
-    - Advanced Features:
-      - Advanced: global-configs/index.md
-      - Balance Limit: global-configs/balance-limit.md
-      - Clock Tick Size: global-configs/clock-tick.md 
-      - Color Settings: global-configs/color-settings.md
-      - Kill Switch: global-configs/kill-switch.md
-      - Override Fees: global-configs/override-fees.md
-      - Paper Trade: global-configs/paper-trade.md
-      - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
-      - Telegram Integration: global-configs/telegram.md
-      - Strategy Autostart: global-configs/strategy-autostart.md
-      - Connect External Database: global-configs/external-db.md
-      - Rate Oracle: strategy-configs/rate-oracle.md
-      - PMM Configs:
-        - PMM Configs: strategy-configs/index.md
-        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-        - Order Levels: strategy-configs/order-levels.md
-        - Filled Order Delay: strategy-configs/filled-order-delay.md
-        - Hanging Orders: strategy-configs/hanging-orders.md
-        - Minimum Spread: strategy-configs/minimum-spread.md
-        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-        - Order Optimization: strategy-configs/order-optimization.md
-        - Inventory Skew: strategy-configs/inventory-skew.md
-        - Max Order Age: strategy-configs/max-order-age.md
-        - Order Override: strategy-configs/order-override.md
-        - Price Band: strategy-configs/price-band.md
-        - Price Source: strategy-configs/external-price-source.md
-        - Ping Pong: strategy-configs/ping-pong.md
-    - FAQ: faq.md
-    - Troubleshooting: troubleshooting.md
-    - Glossary: glossary.md
-    - ❤️ Support Hummingbot!: support-hummingbot.md
-  - Developer Docs:
+      - Basic Operations:
+        - Basic Operations: operation/index.md
+        - User Interface Guide: operation/user-interface.md
+        - Commands and Shortcuts: operation/commands-shortcuts.md
+        - Launch/Exit Hummingbot: operation/launch-exit.md
+        - Create/Delete Password: operation/password.md
+        - Connect Exchange API Keys: operation/connect.md
+        - Create/Import Config Files: operation/config-files.md
+        - Check Balances: operation/balance.md
+        - Start/Stop Strategy: operation/start-stop.md
+        - Pause/Resume Strategy: operation/pause-resume.md
+        - Check Bot/Market Status: operation/status.md
+        - Check Performance: operation/history.md
+        - Find Log Files: operation/log-files.md
+        - Export Trades/Keys: operation/export.md
+      - Strategies:
+        - Strategies: strategies/index.md
+        - Core:
+          - Pure Market Making: strategies/pure-market-making.md
+          - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+          - AMM Arbitrage: strategies/amm-arbitrage.md
+        - Community:
+          - Aroon Oscillator: strategies/aroon-oscillator.md
+          - Avellaneda Market Making: strategies/avellaneda-market-making.md
+          - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+          - Hedge: strategies/hedge.md
+          - Liquidity Mining: strategies/liquidity-mining.md
+          - Perpetual Market Making: strategies/perpetual-market-making.md
+          - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+          - TWAP: strategies/twap.md
+          - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+      - Scripts:
+        - Scripts: scripts/index.md
+        - Getting Started: scripts/getting-started.md
+        - Script Examples: scripts/examples.md
+        - PMM Scripts: scripts/pmm-scripts.md
+      - Exchange Connectors:
+        - Exchange Connectors: exchanges/index.md
+        - Gold:
+          - Binance: exchanges/binance.md
+          - Binance (perp): exchanges/binance-perpetual.md
+          - Uniswap: exchanges/uniswap.md
+        - Silver:
+          - Kucoin: exchanges/kucoin.md
+          - Gate.io: exchanges/gate-io.md
+          - Gate.io (perp): exchanges/gate-io-perpetual.md
+          - AscendEX: exchanges/ascend-ex.md
+          - Pancakeswap: exchanges/pancakeswap.md
+          - Sushiswap: exchanges/sushiswap.md
+          - dYdX: exchanges/dydx-perpetual.md
+        - Bronze CEX:
+          - AltMarkets: exchanges/altmarkets.md
+          - Binance US: exchanges/binance-us.md
+          - Bybit: exchanges/bybit.md
+          - Bybit (perp): exchanges/bybit-perpetual.md
+          - Bitfinex: exchanges/bitfinex.md
+          - BitGet: exchanges/bitget-perpetual.md
+          - BitMart: exchanges/bitmart.md
+          - Bitmex: exchanges/bitmex.md
+          - Bitmex (perp): exchanges/bitmex-perpetual.md
+          - Bittrex: exchanges/bittrex.md
+          - CI-EX: exchanges/ci-ex.md
+          - Coinbase: exchanges/coinbase.md
+          - Crypto.com : exchanges/crypto-com.md
+          - HitBTC: exchanges/hitbtc.md
+          - Himalaya: exchanges/himalaya.md
+          - Huobi: exchanges/huobi.md
+          - Kraken: exchanges/kraken.md
+          - LBank: exchanges/lbank.md
+          - Loopring: exchanges/loopring.md
+          - MEXC: exchanges/mexc.md 
+          - NDAX: exchanges/ndax.md
+          - OKX: exchanges/okx.md
+          - ProBit: exchanges/probit.md
+          - WhiteBit: exchanges/whitebit.md
+        - Bronze DEX:
+          - DeFi Kingdoms: exchanges/defikingdoms.md
+          - Defira: exchanges/defira.md
+          - MM Finance: exchanges/mm-finance.md
+          - OpenOcean: exchanges/openocean.md
+          - Pangolin: exchanges/pangolin.md
+          - Perpetual Protocol: exchanges/perp.md
+          - Quickswap: exchanges/quickswap.md
+          - Ref Finance: exchanges/ref-finance.md
+          - TraderJoe: exchanges/traderjoe.md
+          - VVS Finance: exchanges/vvs-finance.md
+      - Gateway:
+        - Gateway: gateway/index.md
+        - Setting up Gateway: gateway/setup.md
+        - Adding Tokens: gateway/tokens.md
+        - History: gateway/history.md
+        - Chains Supported:
+          - Ethereum: gateway/chains/ethereum.md
+          - Avalanche: gateway/chains/avalanche.md
+          - BNB Chain: gateway/chains/bnb-chain.md
+          - Cronos: gateway/chains/cronos.md
+          - Cosmos: gateway/chains/cosmos.md
+          - Harmony: gateway/chains/harmony.md
+          - NEAR: gateway/chains/near.md
+          - Polygon: gateway/chains/polygon.md
+      - Advanced Features:
+        - Advanced: global-configs/index.md
+        - Balance Limit: global-configs/balance-limit.md
+        - Clock Tick Size: global-configs/clock-tick.md 
+        - Color Settings: global-configs/color-settings.md
+        - Kill Switch: global-configs/kill-switch.md
+        - Override Fees: global-configs/override-fees.md
+        - Paper Trade: global-configs/paper-trade.md
+        - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
+        - Telegram Integration: global-configs/telegram.md
+        - Strategy Autostart: global-configs/strategy-autostart.md
+        - Connect External Database: global-configs/external-db.md
+        - Rate Oracle: strategy-configs/rate-oracle.md
+        - PMM Configs:
+          - PMM Configs: strategy-configs/index.md
+          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+          - Order Levels: strategy-configs/order-levels.md
+          - Filled Order Delay: strategy-configs/filled-order-delay.md
+          - Hanging Orders: strategy-configs/hanging-orders.md
+          - Minimum Spread: strategy-configs/minimum-spread.md
+          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+          - Order Optimization: strategy-configs/order-optimization.md
+          - Inventory Skew: strategy-configs/inventory-skew.md
+          - Max Order Age: strategy-configs/max-order-age.md
+          - Order Override: strategy-configs/order-override.md
+          - Price Band: strategy-configs/price-band.md
+          - Price Source: strategy-configs/external-price-source.md
+          - Ping Pong: strategy-configs/ping-pong.md
+      - FAQ: faq.md
+      - Troubleshooting: troubleshooting.md
+      - Glossary: glossary.md
+      - ❤️ Support Hummingbot!: support-hummingbot.md
+    - Developer Docs:
       - Developer Docs: developers/index.md
       - Contribution Guidelines: developers/contributions.md
       - Architecture: developers/architecture.md
@@ -294,96 +294,133 @@ nav:
         - Hanging Orders Tracker: developers/strategies/hanging-orders.md
       - Debug Console: developers/debug.md
       - Adding Commands: developers/commands.md
-  - Governance Docs:
-    - Governance Docs: governance/index.md
-    - Proposals: governance/proposals.md
-    - Polls: governance/polls.md
-    - Bounties: governance/bounties.md
-    - Releases: governance/releases.md
-    - Epochs: governance/epochs.md
-  - About Us:
-    - About Us: about/index.md
-    - Board of Directors: governance/board.md
-    - Community: community.md
-    - Reporting: reporting.md
-    - History: about/history.md
-  - Releases:
-    - Releases: release-notes/index.md
-    - 1.12.0: release-notes/1.12.0.md
-    - 1.11.0: release-notes/1.11.0.md
-    - 1.10.0: release-notes/1.10.0.md
-    - 1.9.0: release-notes/1.9.0.md
-    - 1.8.0: release-notes/1.8.0.md
-    - 1.7.0: release-notes/1.7.0.md
-    - 1.6.0: release-notes/1.6.0.md
-    - 1.5.0: release-notes/1.5.0.md
-    - 1.4.0: release-notes/1.4.0.md
-    - 1.3.0: release-notes/1.3.0.md
-    - 1.2.0: release-notes/1.2.0.md
-    - 1.1.1: release-notes/1.1.1.md
-    - 1.1.0: release-notes/1.1.0.md
-    - 1.0.1: release-notes/1.0.1.md
-    - 1.0.0: release-notes/1.0.0.md
-    - 0.46.0: release-notes/0.46.0.md
-    - 0.45.0: release-notes/0.45.0.md
-    - 0.44.0: release-notes/0.44.0.md
-    - 0.43.1: release-notes/0.43.1.md
-    - 0.43.0: release-notes/0.43.0.md
-    - 0.42.0: release-notes/0.42.0.md
-    - 0.41.0: release-notes/0.41.0.md
-    - 0.40.0: release-notes/0.40.0.md
-    - 0.39.1: release-notes/0.39.1.md
-    - 0.39.0: release-notes/0.39.0.md
-    - 0.38.1: release-notes/0.38.1.md
-    - 0.38.0: release-notes/0.38.0.md
-    - 0.37.1: release-notes/0.37.1.md
-    - 0.37.0: release-notes/0.37.0.md
-    - 0.36.0: release-notes/0.36.0.md
-    - 0.35.0: release-notes/0.35.0.md
-    - 0.34.0: release-notes/0.34.0.md
-    - 0.33.1: release-notes/0.33.1.md
-    - 0.33.0: release-notes/0.33.0.md
-    - 0.32.0: release-notes/0.32.0.md
-    - 0.31.0: release-notes/0.31.0.md
-    - 0.30.0: release-notes/0.30.0.md
-    - 0.29.0: release-notes/0.29.0.md
-    - 0.28.1: release-notes/0.28.1.md
-    - 0.28.0: release-notes/0.28.0.md
-    - 0.27.0: release-notes/0.27.0.md
-    - 0.26.1: release-notes/0.26.1.md
-    - 0.26.0: release-notes/0.26.0.md
-    - 0.25.0: release-notes/0.25.0.md
-    - 0.24.1: release-notes/0.24.1.md
-    - 0.24.0: release-notes/0.24.0.md
-    - 0.23.0: release-notes/0.23.0.md
-    - 0.22.0: release-notes/0.22.0.md
-    - 0.21.0: release-notes/0.21.0.md
-    - 0.20.0: release-notes/0.20.0.md
-    - 0.19.1: release-notes/0.19.1.md
-    - 0.19.0: release-notes/0.19.0.md
-    - 0.18.1: release-notes/0.18.1.md
-    - 0.18.0: release-notes/0.18.0.md
-    - 0.17.1: release-notes/0.17.1.md
-    - 0.17.0: release-notes/0.17.0.md
-    - 0.16.0: release-notes/0.16.0.md
-    - 0.15.0: release-notes/0.15.0.md
-    - 0.14.0: release-notes/0.14.0.md
-    - 0.13.0: release-notes/0.13.0.md
-    - 0.12.1: release-notes/0.12.1.md
-    - 0.12.0: release-notes/0.12.0.md
-    - 0.11.1: release-notes/0.11.1.md
-    - 0.11.0: release-notes/0.11.0.md
-    - 0.10.1: release-notes/0.10.1.md
-    - 0.10.0: release-notes/0.10.0.md
-    - 0.9.1: release-notes/0.9.1.md
-    - 0.9.0: release-notes/0.9.0.md
-    - 0.8.1: release-notes/0.8.1.md
-    - 0.8.0: release-notes/0.8.0.md
-    - 0.7.0: release-notes/0.7.0.md
-    - 0.6.0: release-notes/0.6.0.md
-    - 0.5.1: release-notes/0.5.1.md
-    - 0.5.0: release-notes/0.5.0.md
-    - 0.4.0: release-notes/0.4.0.md
-    - 0.3.1: release-notes/0.3.1.md
-    - 0.3.0: release-notes/0.3.0.md
-    - 0.2.0: release-notes/0.2.0.md
+    - Governance Docs:
+      - Governance Docs: governance/index.md
+      - Proposals: governance/proposals.md
+      - Polls: governance/polls.md
+      - Bounties: governance/bounties.md
+      - Releases: governance/releases.md
+      - Epochs: governance/epochs.md
+    - About Us:
+      - About Us: about/index.md
+      - Board of Directors: governance/board.md
+      - Community: community.md
+      - Reporting: reporting.md
+      - History: about/history.md
+    - Releases:
+      - Releases: release-notes/index.md
+      - 1.12.0: release-notes/1.12.0.md
+      - 1.11.0: release-notes/1.11.0.md
+      - 1.10.0: release-notes/1.10.0.md
+      - 1.9.0: release-notes/1.9.0.md
+      - 1.8.0: release-notes/1.8.0.md
+      - 1.7.0: release-notes/1.7.0.md
+      - 1.6.0: release-notes/1.6.0.md
+      - 1.5.0: release-notes/1.5.0.md
+      - 1.4.0: release-notes/1.4.0.md
+      - 1.3.0: release-notes/1.3.0.md
+      - 1.2.0: release-notes/1.2.0.md
+      - 1.1.1: release-notes/1.1.1.md
+      - 1.1.0: release-notes/1.1.0.md
+      - 1.0.1: release-notes/1.0.1.md
+      - 1.0.0: release-notes/1.0.0.md
+      - 0.46.0: release-notes/0.46.0.md
+      - 0.45.0: release-notes/0.45.0.md
+      - 0.44.0: release-notes/0.44.0.md
+      - 0.43.1: release-notes/0.43.1.md
+      - 0.43.0: release-notes/0.43.0.md
+      - 0.42.0: release-notes/0.42.0.md
+      - 0.41.0: release-notes/0.41.0.md
+      - 0.40.0: release-notes/0.40.0.md
+      - 0.39.1: release-notes/0.39.1.md
+      - 0.39.0: release-notes/0.39.0.md
+      - 0.38.1: release-notes/0.38.1.md
+      - 0.38.0: release-notes/0.38.0.md
+      - 0.37.1: release-notes/0.37.1.md
+      - 0.37.0: release-notes/0.37.0.md
+      - 0.36.0: release-notes/0.36.0.md
+      - 0.35.0: release-notes/0.35.0.md
+      - 0.34.0: release-notes/0.34.0.md
+      - 0.33.1: release-notes/0.33.1.md
+      - 0.33.0: release-notes/0.33.0.md
+      - 0.32.0: release-notes/0.32.0.md
+      - 0.31.0: release-notes/0.31.0.md
+      - 0.30.0: release-notes/0.30.0.md
+      - 0.29.0: release-notes/0.29.0.md
+      - 0.28.1: release-notes/0.28.1.md
+      - 0.28.0: release-notes/0.28.0.md
+      - 0.27.0: release-notes/0.27.0.md
+      - 0.26.1: release-notes/0.26.1.md
+      - 0.26.0: release-notes/0.26.0.md
+      - 0.25.0: release-notes/0.25.0.md
+      - 0.24.1: release-notes/0.24.1.md
+      - 0.24.0: release-notes/0.24.0.md
+      - 0.23.0: release-notes/0.23.0.md
+      - 0.22.0: release-notes/0.22.0.md
+      - 0.21.0: release-notes/0.21.0.md
+      - 0.20.0: release-notes/0.20.0.md
+      - 0.19.1: release-notes/0.19.1.md
+      - 0.19.0: release-notes/0.19.0.md
+      - 0.18.1: release-notes/0.18.1.md
+      - 0.18.0: release-notes/0.18.0.md
+      - 0.17.1: release-notes/0.17.1.md
+      - 0.17.0: release-notes/0.17.0.md
+      - 0.16.0: release-notes/0.16.0.md
+      - 0.15.0: release-notes/0.15.0.md
+      - 0.14.0: release-notes/0.14.0.md
+      - 0.13.0: release-notes/0.13.0.md
+      - 0.12.1: release-notes/0.12.1.md
+      - 0.12.0: release-notes/0.12.0.md
+      - 0.11.1: release-notes/0.11.1.md
+      - 0.11.0: release-notes/0.11.0.md
+      - 0.10.1: release-notes/0.10.1.md
+      - 0.10.0: release-notes/0.10.0.md
+      - 0.9.1: release-notes/0.9.1.md
+      - 0.9.0: release-notes/0.9.0.md
+      - 0.8.1: release-notes/0.8.1.md
+      - 0.8.0: release-notes/0.8.0.md
+      - 0.7.0: release-notes/0.7.0.md
+      - 0.6.0: release-notes/0.6.0.md
+      - 0.5.1: release-notes/0.5.1.md
+      - 0.5.0: release-notes/0.5.0.md
+      - 0.4.0: release-notes/0.4.0.md
+      - 0.3.1: release-notes/0.3.1.md
+      - 0.3.0: release-notes/0.3.0.md
+      - 0.2.0: release-notes/0.2.0.md
+  - Docs (v2.0 - beta):
+    - Docs (v2.0 - beta): v2/index.md
+    - Introduction: v2/intro.md
+    - Installation:
+      - Installation: v2/install/index.md
+      - Installing via Docker on Linux: v2/install/docker-linux.md
+      - Installing via Docker on Mac: v2/install/docker-mac.md
+      - Installing via Docker on Windows: v2/install/docker-windows.md
+      - Installing from Source on Linux: v2/install/source-linux.md
+      - Installing from Source on Mac: v2/install/source-mac.md
+      - Installing from Source on Windows: v2/install/source-windows.md
+      - Installing Gateway from Source on Linux / Mac / Windows: v2/install/gateway-source.md
+      - Running multiple bots with Docker Compose: v2/install/docker-compose.md
+      - Running multiple bots with Orchestration module: v2/install/bot-orchestration.md
+    - Configuration:
+      - Configuration: v2/config/index.md
+      - Basic Configuration:
+        - Basic Configuration: v2/config/basic/index.md
+        - Launching and Exiting Hummingbot: v2/config/basic/launch-exit.md
+        - User Interface: v2/config/basic/user-interface.md
+        - Commands: v2/config/basic/commands.md
+        - Adding API Keys: v2/config/basic/api-keys.md
+        - Paper vs Live Trading: v2/config/basic/paper-trading.md
+        - Balances: v2/config/basic/balances.md
+        - Config Files: v2/config/basic/config-files.md
+        - Log Files: v2/config/basic/log-files.md
+      - Advanced Configs:
+        - Advanced Configs: v2/config/advanced/index.md
+        - The Clock: v2/config/advanced/clock.md
+        - Rate Oracle: v2/config/advanced/rate-oracle.md
+        - Rate Limits: v2/config/advanced/rate-limits.md
+        - Telegram Integration: v2/config/advanced/telegram.md
+        - Debug Console: v2/config/advanced/debug.md
+        - Gateway: v2/config/advanced/gateway.md
+    - Quick Start: v2/quick-start.md
+    - References: v2/references.md
+    - FAQ / Troubleshooting: v2/faq.md
