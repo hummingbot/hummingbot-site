@@ -392,12 +392,12 @@ nav:
     - Introduction: v2/intro.md
     - Installation:
       - Installation: v2/install/index.md
-      - Installing via Docker on Linux: v2/install/docker-linux.md
-      - Installing via Docker on Mac: v2/install/docker-mac.md
-      - Installing via Docker on Windows: v2/install/docker-windows.md
-      - Installing from Source on Linux: v2/install/source-linux.md
-      - Installing from Source on Mac: v2/install/source-mac.md
-      - Installing from Source on Windows: v2/install/source-windows.md
+      - Docker on  Linux: v2/install/docker-linux.md
+      - Docker on Mac: v2/install/docker-mac.md
+      - Docker on Windows: v2/install/docker-windows.md
+      - Source on Linux: v2/install/source-linux.md
+      - Source on Mac: v2/install/source-mac.md
+      - Source on Windows: v2/install/source-windows.md
       - Installing Gateway from Source on Linux / Mac / Windows: v2/install/gateway-source.md
       - Running multiple bots with Docker Compose: v2/install/docker-compose.md
       - Running multiple bots with Orchestration module: v2/install/bot-orchestration.md
