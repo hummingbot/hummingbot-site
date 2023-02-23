@@ -398,7 +398,7 @@ nav:
       - Source on Linux: v2/install/source-linux.md
       - Source on Mac: v2/install/source-mac.md
       - Source on Windows: v2/install/source-windows.md
-      - Installing Gateway from Source on Linux / Mac / Windows: v2/install/gateway-source.md
+      - Gateway: v2/install/gateway-source.md
       - Running multiple bots with Docker Compose: v2/install/docker-compose.md
       - Running multiple bots with Orchestration module: v2/install/bot-orchestration.md
     - Configuration:

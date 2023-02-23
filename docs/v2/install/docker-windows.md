@@ -1,10 +1,8 @@
-# Installation on Windows
+# Docker on Windows via WSL
 
 ## Prerequisites
 
 The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot in Windows Subsystem for Linux (WSL).
-
-WSL lets developers run a Linux environment directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup. With WSL, Windows 10/11 users are able to run a Linux Virtual Machine without performance loss, and without the need of dual boot. See here for more detail about WSL.
 
 - You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11
 
@@ -12,7 +10,7 @@ WSL lets developers run a Linux environment directly on Windows, unmodified, wit
 
 For troubleshooting WSL see this [link](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
-## Install WSL
+## 1. Install WSL
 
 Open a Powershell or Windows command prompt as administrator and run the command below to install WSL with Ubuntu 20.04
 
@@ -20,134 +18,134 @@ Open a Powershell or Windows command prompt as administrator and run the command
 wsl --install --distribution Ubuntu-20.04
 ```
 
-Restart your Computer
+![WSL Install](../assets/img/wsl-install.jpg)
 
-Open WSL Terminal in the Start Menu
+Restart your computer to finish the WSL installation
 
-WSL should finish installing then it will prompt you to enter a username / password for the Linux subsystem
+![Ubuntu](../assets/img/ubuntu.jpg)
 
-## Install Docker
+Open the Start Menu and look for `Ubuntu 20.04" and launch it to open a WSL terminal
 
-Launch the Ubuntu terminal and then enter the commands one by one below
+![Username prompt](../assets/img/wsl-username.jpg)
 
-1. Update the package index
+WSL should finish installing then it will prompt you to enter a username / password
+
+After adding a username / password, WSL should be completely installed. Continue on to the next steps to install Docker
+
+## 2. Install Docker
+
+In the Ubuntu terminal, enter the commands below one by one
 
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-2. Install necessary packages
-
 ```
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common gnupg lsb-release
 ```
-
-3. Add Docker's official GPG key
 
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-4. Setup the repository
-
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
 ```
-
-5. Install Docker
 
 ```
 sudo apt update && sudo apt-get install docker-ce
 ```
 
-6. Start the Docker service
-
 ```
 sudo service docker start 
 ```
-
-7. Allow docker commands without requiring sudo prefix. If you are running as root replace $USER with your username
 
 ```
 sudo usermod -aG docker $USER
 ```
 
-8. Restart the terminal first before running the create.sh script (Important!)
-
 ```
 exit
 ```
 
-## Install Hummingbot
+## 3. Install Hummingbot
 
-=== "Scripts"
+### Using Helper Scripts
 
-    1. Download Hummingbot install, start, and update script
+!!! note "Download Helper Scripts here"
 
-    Create Script
-    ```
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh
-    ```
+    === "Create Script"
 
-    Start Script
+        ``` markdown
+        wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh
+                
+        ```
 
-    ```
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
-    ```
+    === "Start Script"
 
-    Update Script
+        ``` markdown
+        wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
+        ```
 
-    ```
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/update.sh
-    ```
+    === "Update Script"
 
-   2. Enable script permissions
+        ``` markdown
+        wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/update.sh
+        ```
 
-    ```
-    chmod a+x *.sh
-    ```
+Enable script permissions
 
-    3. Create a hummingbot instance
-   
-    ```
-    ./create.sh
-    ```
+```
+chmod a+x *.sh
+```
 
-=== "Manual"
+Run the `create` script to launch a Hummingbot instance
 
-    1. Create folder for your new instance
-    
-    ```
-    mkdir hummingbot_files
-    ```
-     
-    2. Create folders for logs, config files and database file
+```
+./create.sh
+```
 
-    ```
-    mkdir hummingbot_files/hummingbot_conf
-    mkdir hummingbot_files/hummingbot_conf/connectors
-    mkdir hummingbot_files/hummingbot_conf/strategies
-    mkdir hummingbot_files/hummingbot_certs
-    mkdir hummingbot_files/hummingbot_logs
-    mkdir hummingbot_files/hummingbot_data
-    mkdir hummingbot_files/hummingbot_scripts
-    mkdir hummingbot_files/hummingbot_pmm_scripts
-    mkdir hummingbot_files/gateway_conf
-    mkdir hummingbot_files/gateway_logs
-    ```
+### Manual Method
 
-    3. Launch a new instance of hummingbot
+Create folder for your new instance
 
-    ```
-    docker run -it \
-    --network host \
-    --name hummingbot-instance \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_conf,destination=/conf/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_pmm_scripts,destination=/pmm_scripts/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_certs,destination=/home/hummingbot/.hummingbot-gateway/certs/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/gateway_conf,destination=/gateway-conf/" \
-    hummingbot/hummingbot:latest
-    ```
+```
+mkdir hummingbot_files
+```
+
+Create folders for logs, config files and database file
+
+```
+mkdir hummingbot_files/hummingbot_conf
+mkdir hummingbot_files/hummingbot_conf/connectors
+mkdir hummingbot_files/hummingbot_conf/strategies
+mkdir hummingbot_files/hummingbot_certs
+mkdir hummingbot_files/hummingbot_logs
+mkdir hummingbot_files/hummingbot_data
+mkdir hummingbot_files/hummingbot_scripts
+mkdir hummingbot_files/hummingbot_pmm_scripts
+mkdir hummingbot_files/gateway_conf
+mkdir hummingbot_files/gateway_logs
+```
+
+Launch a new instance of hummingbot
+
+```
+docker run -it \
+--network host \
+--name hummingbot-instance \
+--mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_conf,destination=/conf/" \
+--mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
+--mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
+--mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_pmm_scripts,destination=/pmm_scripts/" \
+--mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
+--mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_certs,destination=/home/hummingbot/.hummingbot-gateway/certs/" \
+--mount "type=bind,source=$(pwd)/hummingbot_files/gateway_conf,destination=/gateway-conf/" \
+hummingbot/hummingbot:latest
+```
+
+## Additional Resources
+
+The [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot starting with version 1.5.0. For previous versions you may download the docker images from [CoinAlpha's Dockerhub](https://hub.docker.com/r/coinalpha/hummingbot)
+
+:fontawesome-brands-youtube: [Using Docker Compose to launch multiple Hummingbots](https://www.youtube.com/watch?v=LU-4Ui-KCtY)
