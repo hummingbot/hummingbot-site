@@ -143,7 +143,6 @@ nav:
       - Create/Import Config Files: operation/config-files.md
       - Check Balances: operation/balance.md
       - Start/Stop Strategy: operation/start-stop.md
-      - Pause/Resume Strategy: operation/pause-resume.md
       - Check Bot/Market Status: operation/status.md
       - Check Performance: operation/history.md
       - Find Log Files: operation/log-files.md
@@ -222,17 +221,13 @@ nav:
     - Gateway:
       - Gateway: gateway/index.md
       - Installation: gateway/installation.md
-      - Setup and Configuration: gateway/setup.md
-      # - Setting up Gateway for Developers: developers/gateway/setup.md
-      # - Adding Tokens: gateway/tokens.md
-      - Testing with Postman: developers/gateway/testing.md
-      # - History: gateway/history.md
-      # - API Interfaces: developers/gateway/api-interface.md
-      # - Gateway for Developers: developers/gateway/index.md
-      - Running AMM-ARB Strategy: developers/gateway/running-amm-arb.md
-      - Running Sample Scripts: developers/gateway/running-amm-arb.md
-      - Adding Connectors: developers/gateway/building-gateway-connectors.md
-      - Chains Supported:
+      - Testing Gateway: gateway/testing.md
+      - Using Gateway with Hummingbot: gateway/setup.md
+      - Node Providers: gateway/node-providers.md
+      - Working with Tokens: gateway/tokens.md
+      - Running Strategies: gateway/running-strategies.md
+      - Adding Connectors: gateway/adding-connectors.md
+      - Chains:
         - Ethereum: gateway/chains/ethereum.md
         - Avalanche: gateway/chains/avalanche.md
         - BNB Chain: gateway/chains/bnb-chain.md
@@ -241,6 +236,11 @@ nav:
         - Harmony: gateway/chains/harmony.md
         - NEAR: gateway/chains/near.md
         - Polygon: gateway/chains/polygon.md
+      # - Setting up Gateway for Developers: developers/gateway/setup.md
+      # - Adding Tokens: gateway/tokens.md
+      # - History: gateway/history.md
+      # - API Interfaces: developers/gateway/api-interface.md
+      # - Gateway for Developers: developers/gateway/index.md
     - Advanced Features:
       - Advanced: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md

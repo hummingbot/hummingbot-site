@@ -84,8 +84,4 @@ Go back to your Hummingbot client or restart it if you have exited. In the upper
 
 [![](./gateway-status.png)](./gateway-status.png)
 
-## Viewing the Swagger Docs
-
-Once Gateway is running, open http://localhost:8080 in your browser to see the Swagger documentation for each available endpoint.
-
-[![](./documentation.png)](./documentation.png)
+After Gateway is running, see [Testing](./testing) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.

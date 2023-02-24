@@ -1,111 +1,171 @@
-Once you "GATEWAY: ONLINE" in the status bar, your Gateway is ready to use with Hummingbot.
+After you have [installed Gateway](./installation), you should be ready to interact with it. This page shows you various commands that help you configure Gateway from inside the Hummingbot client.
+
+### Checking Gateway status
+
+Once you see `GATEWAY: ONLINE` in the top status bar in the Hummingbot client, your Gateway is ready to use with Hummingbot.
 
 [![](./gateway-status.png)](./gateway-status.png)
 
-## Connecting to DEX
-
-Use `gateway connect [exchange-code]` to add connections to DEXs. See [Exchanges](/exchanges/) for all available connectors.
+You can also run the `gateway status` command, which prints a list of the connected chains/networks and their current block number.
 
 ```python
->>> gateway connect uniswap
+>>> gateway status
+
+    network     chainID     rpcURL                          currentBlockNumber  nativeCurrency
+    mainnet     1           https://rpc.ankr.com/eth        16699791            ETH
+    goerli      5           https://rpc.ankr.com/eth_goerli 8549282             ETH
 ```
+
+### Listing Gateway commands
+
+Run the command `gateway -h` to print out the different commands you can use with gateway.
+
+```python
+>>> gateway -h
+
+usage: gateway [-h] {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection} ...
+
+positional arguments: {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection}
+config              View or update gateway configuration
+connect             Create/view connection info on gateway connector
+connector-tokens    Report token balances for gateway connectors
+generate-certs      Create ssl certificate for gateway
+test-connection     Ping gateway api server
+
+optional arguments:
+-h, --help          show this help message and exit
+
+```
+
+## Getting help
+
+To get help before running a command, run `gateway [command] -h`.
+
+```python
+>>> gateway config -h
+usage: gateway config [-h] [key] [value]
+
+positional arguments:
+    key     Name of the parameter you want to change
+    value   New value for the parameter
+
+optional arguments:
+    -h, --help show this help message and exit
+```
+
+## Listing DEX connectors
+
+Running the `gateway list` command will list all available Gateway DEX connectors, the blockchains where they are supported, and their [Connector Tier](/exchanges/#connector-tiers), which determines the level of maintenance effort allocated to the connector.
+
+```python
+>>> gateway list
+    +----------+------------------------+---------+
+    | Exchange | Chains                 | Tier    |
+    |----------|------------------------|---------|
+    | uniswap  | ethereum, polygon      | GOLD    |
+```
+
+## Connecting to a DEX
+
+Use `gateway connect [exchange]` to add connections to DEXs. See [Exchanges](/exchanges/) for all available connectors.
 
 You will then be asked about which instance of Uniswap you want to connect. You'll be asked to specify `chain` (a Layer 1 blockchain architecture like `ethereum` or `polygon`), `network` (mainnet or testnet networks available for the chain like `mainnet`, `arbitrum_one`, `optimism`), and the private key of your wallet. 
 
-See the [Uniswap documentation page](/gateway/exchanges/uniswap) for which chains and network it supports.
-
-[![Connecting wallet to Gateway](./gateway-connect.png)](./gateway-connect.png)
-
-### Fetching wallet balances
-
-Once your wallet has been connected to the gateway, you can the test the connection by running `balance`. You should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap / Ethereum, AVAX for Pangolin / Avalanche) for your connected networks related to the decentralized exchanges. 
-
-[![Getting blockchain asset balances](./gateway-balance.png)](./gateway-balance.png)
-
-Use the `gateway connector-tokens` command to display additional tokens in `balance`
-
 ```python
->>> gateway connector-tokens [chain-network-wallet] [token1],[token2],[etc]
+>>> gateway connect uniswap
 
-# format: gateway connector-tokens [connector_chain_network] [symbol1] [sybbol2]
->>> gateway connector-tokens uniswap_ethereum_mainnet UNI
+Which chain do you want uniswap to connect to? (ethereum, polygon)
+>>> ethereum
 
-The 'balance' command will now report token balances UNI for 'uniswap_ethereum_mainnet'.
+Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one, optimism)?
+>>> mainnet
+
+Do you want to continue to use node url 'https://rpc.ankr.com/eth' for ethereum-mainnet? (Yes/No)
+>>> Yes
+
+Enter your ethereum-mainnet wallet private key
+>>> *****************************************
+
+The uniswap connector now uses wallet [public address] on ethereum-mainnet.
 ```
 
-## Listing Gateway connectors
+## Fetching wallet balances
 
-Running the `gateway list` command will list all available Gateway connectors and their current tiers.
+Once your wallet has been connected to a Gateway DEX, you can the test the connection by running the `balance` command. 
 
-[![Gateway List](./gateway-list.jpg)](./gateway-list.jpg)
+You should see your wallet balance on the native blockchain asset (i.e. ETH for Uniswap/Ethereum, BNB for PancakeSwap/BSC) for each connection.
 
-## Updating configs
+```python
+>>> balance
 
-Gateway supports a robust configuration management system for each supported chain, network and exchange. You can see all the current configuration by running:
+uniswap_ethereum_mainnet:
+    Asset   Total   Total($)    Allocated
+    ETH     0.0000         0
+
+uniswap_ethereum_goerli:
+    Asset   Total   Total($)    Allocated
+    ETH     0.0000         0
+```
+
+## Adding new symbols to `balance`
+
+Use the `gateway connector-tokens` command to display additional tokens in the `balance` command.
+
+```python
+>>> gateway connector-tokens uniswap_ethereum_mainnet WETH,DAI
+
+The 'balance' command will now report token balances WETH,DAI for 'uniswap_ethereum_mainnet'.
+
+>>> balance
+
+uniswap_ethereum_mainnet:
+    Asset   Total   Total($)    Allocated
+    ETH     0.0000         0
+    WETH    0.0000         0
+    DAI     0.0000         0
+```
+
+## Updating config parameters
+
+Gateway supports a robust configuration management system for each supported chain, network and exchange. You can see all the current configuration by running `gateway config`
 
 ```python
 >>> gateway config
+
+Gateway Configurations (localhost:15888):
+server:
+    certificatePath: ./certs/
+    logPath: ./logs
+    ...
 ```
 
-Afterwards, change a setting by running:
+You can filter and see a specific configuration parameter with `gateway config <chain>.networks.<network>.<param>`. 
+
+To change it, simply add an updated value after it: `gateway config <chain>.networks.<network>.<param> <new-value>`. Gateway will automatically restart to incorporate the new settings.
 
 ```python
->>> gateway config <chain>.networks.<network>.<setting>
+>>> gateway config ethereum.networks.mainnet.nodeURL
+
+Gateway Configurations (localhost:15888):
+ethereum:
+    mainnet:
+        nodeURL: https://rpc.ankr.com/eth
+
+>>> gateway config ethereum.networks.mainnet.nodeURL https://eth-mainnet.g.alchemy.com/v2/ALCHEMY-KEY
+
+The config has been updated.
 ```
 
-For example, to change the `nodeURL` for Ethereum mainnet, you can run `gateway config ethereum.networks.mainnet.nodeURL`. To change the `nodeURL` for the Ethereum testnets, run `gateway config ethereum.networks.kovan.nodeURL` and `gateway config ethereum.networks.ropsten.nodeURL`.
-
-!!! warning "Why does Gateway continually emit disconnection messages?"
-    Any time you change a Gateway config, it restarts in order to propagate that setting across other related settings. Therefore, you may see log messages about Gateway losing and re-establishing connection. If Gateway doesn't restart, you can force it to start by running `gateway start`.
-
-Click [here](/operation/commands-shortcuts/#gateway-commands) to see the different gateway commands.
-
-## Connecting to node provider
-
-Connecting to a node provider is necessary for Hummingbot to receive and send data to a blockchain network. Alternatively, you can also run your own node client and connect to its RPC URL. This is set by the `nodeURL` configuration parameter for each network.
-
-To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. The default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account.
-
-For certain testnet or other networks that Ankr doesn't support, the default `nodeURL` may be an alternate public endpoint, or in certain cases, an [Infura](https://infura.io/) endpoint, which users need to configure with their Infura key to use (see **Changing Gateway configuration**).
-
-For a list of the default parameters including `nodeURL` for each chain/network, see [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
+Alternatively, you may find it easier to edit the configuration files for each chain and connector directly. These are located in the `/conf` directory in your Gateway files. Make sure to stop and start the Gateway server after each change.
 
 ## Working with tokens
 
-When trading across different blockchains, it's very important to understand how symbols map to addresses for each chain/network. In Hummingbot, each chain/network defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL), which uses the [Token Lists](https://tokenlists.org/) standard to define a token dictionary for each network.
+Since token symbols are not unique and may have duplicates on each network, it's very important to understand how symbols map to addresses for each chain/network. Also, you may also need to approve tokens before you can trade them.
 
-You can edit the `tokenListType` and `tokenListSource` parameters for each network by running `gateway config` (see **Changing Gateway configuration**)
+See [Working with Tokens](./token-lists) for more details.
 
-For a list of the default parameters including `tokenListType` and `tokenListSource` for each chain/network, see [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
+## Configuring node providers
 
-## No auto-wrapping
+The node provider that you use to communicate with a blockchain network is critically important. The speed/latency of your node connection and its ability to read/write to the network may fluctuate greatly, especially in congested, volatile markets. This is set by the `nodeURL` configuration parameter for each network.
 
-Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
-
-Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
-
-## Approving tokens
-
-On Ethereum and EVM-compatible chains, wallets need to [approve](https://help.matcha.xyz/en/articles/4285134-why-do-i-need-to-approve-my-tokens-before-i-can-trade-them) other addresses such as DEXs before they can send tokens to them, creating an allowance.
-
-To approve the tokens for spending on gateway, there are multiple ways outlined below. 
-
-### Use `approve-token` command 
-
-Hummingbot has a command that allows you to approve tokens for spending on gateway one token at a time. 
-
-Here is an example of the approve-tokens command:
-```python
-# gateway approve-tokens [connector_chain_network] [symbol]
->>> gateway approve-tokens uniswap_ethereum_mainnet WETH
-```
-
-[![](/assets/img/approve-tokens-command.png)](/assets/img/approve-tokens-command.png)
-
-### Approve manually using DEX interface
-
-You can use the Dex interface directly for approval. Once you approve a token, you will not have to to approve that token again on the Dex. Each token from a specific wallet you wish to trade requires a one-time approval.
-
-Please note that you don't have to do a full swap to approve a token or multiple tokens, however you will need to pay for transaction fee for approving the token. Here is an example of the approval on Uniswap.
-
-[![Approve tokens on dex using interface](/assets/img/dex-interface-approve.png)](/assets/img/dex-interface-approve.png)
+See [Node Providers](./token-lists) for more details.
