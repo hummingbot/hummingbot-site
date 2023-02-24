@@ -70,11 +70,11 @@ Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BR
 | [Himalaya](./Himalaya) | SPOT CLOB CEX |
 | [NDAX](./ndax) | SPOT CLOB CEX |
 | [LBank](./lbank) | SPOT CLOB CEX |
-| [MM Finance](./mm-finance) | SPOT AMM DEX |
+| [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX |
 | [Pangolin](./pangolin) | SPOT AMM DEX |
-| [Ref Finance](./ref-finance) | SPOT AMM DEX |
+| [Ref](./ref) | SPOT AMM DEX |
 | [Trader Joe](./traderjoe) | SPOT AMM DEX |
-| [VVS Finance](./vvs-finance) | SPOT AMM DEX |
+| [VVS](./vvs) | SPOT AMM DEX |
 
 ## Contributing Connectors
 

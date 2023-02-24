@@ -211,19 +211,27 @@ nav:
       - Bronze DEX:
         - DeFi Kingdoms: exchanges/defikingdoms.md
         - Defira: exchanges/defira.md
-        - MM Finance: exchanges/mm-finance.md
+        - Mad Meerkat: exchanges/mad-meerkat.md
         - OpenOcean: exchanges/openocean.md
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
         - Quickswap: exchanges/quickswap.md
-        - Ref Finance: exchanges/ref-finance.md
+        - Ref: exchanges/ref.md
         - TraderJoe: exchanges/traderjoe.md
-        - VVS Finance: exchanges/vvs-finance.md
+        - VVS: exchanges/vvs.md
     - Gateway:
       - Gateway: gateway/index.md
-      - Setting up Gateway: gateway/setup.md
-      - Adding Tokens: gateway/tokens.md
-      - History: gateway/history.md
+      - Installation: gateway/installation.md
+      - Setup and Configuration: gateway/setup.md
+      # - Setting up Gateway for Developers: developers/gateway/setup.md
+      # - Adding Tokens: gateway/tokens.md
+      - Testing with Postman: developers/gateway/testing.md
+      # - History: gateway/history.md
+      # - API Interfaces: developers/gateway/api-interface.md
+      # - Gateway for Developers: developers/gateway/index.md
+      - Running AMM-ARB Strategy: developers/gateway/running-amm-arb.md
+      - Running Sample Scripts: developers/gateway/running-amm-arb.md
+      - Adding Connectors: developers/gateway/building-gateway-connectors.md
       - Chains Supported:
         - Ethereum: gateway/chains/ethereum.md
         - Avalanche: gateway/chains/avalanche.md
@@ -278,13 +286,6 @@ nav:
         - Build Process: developers/connectors/build.md
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
-      - Gateway Connectors:
-        - Gateway Connectors: developers/gateway/index.md
-        - Setting up Gateway for Developers: developers/gateway/setup.md
-        - Testing Gateway: developers/gateway/testing.md
-        - Gateway API Interfaces: developers/gateway/api-interface.md
-        - Building Gateway Connectors: developers/gateway/building-gateway-connectors.md
-        - Running AMM-ARB with Gateway: developers/gateway/running-amm-arb.md
       - Strategies:
         - Developing Strategies: developers/strategies/index.md
         - Architecture: developers/strategies/architecture.md

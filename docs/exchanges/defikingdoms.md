@@ -1,4 +1,4 @@
-# `defi kingdoms`
+# `defikingdoms`
 
 ## 📁 Connector Info
 
