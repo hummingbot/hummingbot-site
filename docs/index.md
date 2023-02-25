@@ -49,7 +49,7 @@ Hummingbot features an active, friendly community of users globally! Here are so
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
 
-## Help with Miner
+### Help with Miner
 
 For users using Hummingbot to earn rewards on [Miner](https://miner.hummingbot.io), the decentralized market making platform operated by our sister company CoinAlpha, the Miner team maintains 24/7 dedicated technical support for users on the **#miner-support** channel within the Hummingbot Discord server. They help users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues.
 

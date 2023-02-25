@@ -225,8 +225,8 @@ nav:
       - Using Gateway with Hummingbot: gateway/setup.md
       - Node Providers: gateway/node-providers.md
       - Working with Tokens: gateway/tokens.md
-      - Running Strategies: gateway/running-strategies.md
-      - Adding Connectors: gateway/adding-connectors.md
+      - Running DEX Bots: gateway/running-dex-bots.md
+      - Adding DEX Connectors: gateway/adding-dex-connectors.md
       - Chains:
         - Ethereum: gateway/chains/ethereum.md
         - Avalanche: gateway/chains/avalanche.md
