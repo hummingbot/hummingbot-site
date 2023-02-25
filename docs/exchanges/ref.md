@@ -4,6 +4,7 @@
 
 * Type: SPOT AMM DEX
 * Folder: [/gateway/src/connectors/ref](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/ref)
+* Configs: [/gateway/src/templates/ref.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/ref.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -20,13 +21,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://guide.ref.finance/>
 * SDK: <https://github.com/ref-finance/ref-sdk>
 
-## 🔑 Setup
+## 🕸️ Supported Chains and Networks
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect ref` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Sushiswap and a different exchange.
-4. Run `start` to start the strategy!
+* `near`: `mainnet`, `testnet`
 
-## 📘 Additional Resources
+## 🔑 Connection
 
-See [Near Protocol](/gateway/chains/near) for more information about the default configuration settings and how to change them.
+Run `gateway connect ref` in order to connect your wallet:
+
+```
+Which chain do you want ref to connect to? (near) >>>
+Which network do you want ref to connect to? (mainnet, testnet) >>>
+Enter your near-mainnet private key >>>>
+```
+
+If connection is successful:
+
+```
+The ref connector now uses wallet [pubKey] on near-mainnet
+```

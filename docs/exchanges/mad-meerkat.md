@@ -3,7 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/mad_meerkat](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/mad_meerkat)
+* Folder: [/gateway/src/connectors/mad_meerkat](https://github.com/hummingbot/gateway/tree/main/src/connectors/mad_meerkat)
+* Configs: [/hummingbot/gateway/src/templates/mad_meerkat.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/mad_meerkat.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -20,13 +21,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://mmfinance.gitbook.io/docs/troubleshooting-errors>
 * SDK:
 
-## 🔑 Setup
+## 🕸️ Supported Chains and Networks
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect mad-meerkat` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Sushiswap and a different exchange.
-4. Run `start` to start the strategy!
+* `cronos`: `mainnet`
 
-## 📘 Additional Resources
+## 🔑 Connection
 
-See [Cronos](/gateway/chains/cronos) for more information about the default configuration settings and how to change them.
+Run `gateway connect mad_meerkat` in order to connect your wallet:
+
+```
+Which chain do you want mad_meerkat to connect to? (cronos) >>>
+Which network do you want mad_meerkat to connect to? (mainnet) >>>
+Enter your cronos-mainnet private key >>>>
+```
+
+If connection is successful:
+
+```
+The mad_meerkat connector now uses wallet [pubKey] on cronos-mainnet
+```

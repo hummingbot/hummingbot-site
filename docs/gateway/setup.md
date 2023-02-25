@@ -162,10 +162,10 @@ Alternatively, you may find it easier to edit the configuration files for each c
 
 Since token symbols are not unique and may have duplicates on each network, it's very important to understand how symbols map to addresses for each chain/network. Also, you may also need to approve tokens before you can trade them.
 
-See [Working with Tokens](./token-lists) for more details.
+See [Working with Tokens](./tokens) for more details.
 
 ## Configuring node providers
 
 The node provider that you use to communicate with a blockchain network is critically important. The speed/latency of your node connection and its ability to read/write to the network may fluctuate greatly, especially in congested, volatile markets. This is set by the `nodeURL` configuration parameter for each network.
 
-See [Node Providers](./token-lists) for more details.
+See [Node Providers](./node-providers) for more details.

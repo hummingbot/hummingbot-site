@@ -2,9 +2,10 @@
 
 ## 📁 Connector Info
 
-* Type: SPOT CLOB CEX
-* Folder: [/gateway/src/connectors/openocean](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/openocean)
-* Maintainer:
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/openocean](https://github.com/hummingbot/gateway/tree/main/src/connectors/openocean)
+* Configs: [/gateway/src/templates/openocean.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/openocean.yml)
+* Maintainer: [kanghoulin](https://github.com/kanghoulin)
 
 ## 🏆 Exchange Tier
 
@@ -20,13 +21,25 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://github.com/openocean-finance/openocean-api>
 * SDK: <https://github.com/openocean-finance/OpenOcean-SDK-API>
 
+## 🕸️ Supported Chains and Networks
+
+* `avalanche`: `avalanche`
+* `ethereum`: `mainnet`
+* `polygon`: `mainnet`
+* `harmony`: `mainnet`
+
 ## 🔑 Setup
 
-1. Follow the instructions on [Setting up Gateway](https://github.com/hummingbot/hummingbot/tree/master/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect openocean` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Run `create` to create an [AMM Arbitrage](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/amm_arb) strategy between Openocean and a different exchange.
-4. Run `start` to start the strategy, and you're trading!
+Run `gateway connect openocean` in order to connect your wallet:
 
-## 📘 Additional Resources
+```
+Which chain do you want openocean to connect to? (avalanche, ethereum, polygon, harmony) >>>
+Which network do you want openocean to connect to? (mainnet) >>>
+Enter your polygon-mainnet private key >>>>
+```
 
-See [Avalanche](/gateway/chains/ethereum#avalanche) for more information about the default configuration settings and how to change them.
+If connection is successful:
+
+```
+The openocean connector now uses wallet [pubKey] on polygon-mainnet
+```

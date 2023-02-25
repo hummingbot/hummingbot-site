@@ -77,15 +77,17 @@ Please note that you don't have to do a full swap to approve a token or multiple
 
 [![Approve tokens on dex using interface](/assets/img/dex-interface-approve.png)](/assets/img/dex-interface-approve.png)
 
-## Obtaining Testnet Tokens
+## Testnet faucets
 
-If you’re testing on Kovan, go to [https://faucet.paradigm.xyz/](https://faucet.paradigm.xyz/). You’ll be provided with the following testnet tokens:
+Use faucets to get free testnet tokens:
 
-- 1 ETH
-- 1 WETH
-- 500 DAI
+### Ethereum - Goerli
 
-If you’re testing on Avalanche, go to [https://faucet.avax-test.network/](https://faucet.avax-test.network/). You’ll be provided with 2 testnet AVAX.
+- https://goerlifaucet.com/
+
+### Avalanche - Fuji
+
+- https://faucet.avax-test.network/
 
 ## Wrapped tokens
 
