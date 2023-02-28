@@ -1,45 +1,29 @@
-## 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/avalanche)
+# `avalanche`
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/avalanche.yml)
+`avalanche` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Avalanche blockchain.
+
+## 📁 Connector Info
+
+* Folder: [/gateway/src/chains/avalanche](https://github.com/hummingbot/gateway/tree/main/src/chains/avalanche)
+* Configs: [/gateway/src/templates/avalanche.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/avalanche.yml)
+* Maintainer:
 
 ## ℹ️ Chain Info
 
-* Website: <https://www.avax.network/>
-* CoinMarketCap: <https://coinmarketcap.com/currencies/avalanche/>
-* CoinGecko: <https://www.coingecko.com/en/coins/avalanche>
+* Website: https://www.avax.network/
+* Block Explorer: https://snowtrace.io/
+* CoinMarketCap: https://coinmarketcap.com/currencies/avalanche/
+* CoinGecko: https://www.coingecko.com/en/coins/avalanche
 
 ## 🕸️ Supported Networks
 
-### `avalanche` (mainnet)
+| Network | ChainId | Type |
+|---------|---------|------|
+| `avalanche` | 43113 | mainnet |
+| `fuji` | 43114 | testnet |
 
-**Default configuration parameters**
+## 🚰 Faucets
 
-* `chainID`: 43114
-* `nodeURL`: <https://rpc.ankr.com/avalanche>
-* `tokenListType`: `FILE`
-* `tokenListSource`: `src/chains/avalanche/avanlanche_tokens.json'
-* `nativeCurrencySymbol`: AVAX
-* `gasPriceRefreshInterval`: 60
+### `fuji`
 
-You can adjust these parameters by running the Hummingbot command:
-
-```
-gateway config avalanche.networks.avalanche.<parameter>
-```
-
-### `fuji` (testnet)
-
-**Default configuration parameters**
-
-* `chainID`: 43113
-* `nodeURL`: <https://rpc.ankr.com/avalanche_fuji>
-* `tokenListType`: `FILE`
-* `tokenListSource`: [Fuji token list](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/avalanche/avalanche_tokens_fuji.json)
-* `nativeCurrencySymbol`: AVAX
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-
-```
-gateway config avalanche.networks.fuji.<parameter>
-```
+* https://faucet.avax.network

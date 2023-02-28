@@ -14,9 +14,16 @@ New to Hummingbot? Start here!
 
 - [Installation](/installation): Install Hummingbot on various platforms
 - [Basic Operations](/operation): Basic commands and actions in Hummingbot
+
+⭐ If you'd like to learn how to get the most of our Humminbot, check out [Hummingbot Botcamp](https://hummingbot.org/botcamp), an intensive, small-batch bootcamp that teaches you **how to build your own custom trading bot in only 6 weeks**. Each cohort of Botcamp culminates in a Demo Day where students present their custom scripts and compete for HBOT rewards and the glory of victory!
+
+## 👩‍💻 Hummingbot components
+
 - [Strategies](/strategies): Configurable templates for various algorithmic trading strategies
-- [Scripts](/scripts): Lightweight, single-file strategies in pure Python
-- [Exchange Connectors](/exchanges): Supported centralized and decentralized exchanges
+- [Scripts](/scripts): Simplier, single-file versions of strategies in pure Python
+- [Exchanges](/exchanges): Connectors to various centralized exchanges (CEX) and decentralized exchanges (DEX)
+- [Chains](/exchanges): Connectors to various blockchain networks (for DEX connectors)
+- [Advanced Features](/global-configs)
 
 ## 👩‍💻 For developers
 

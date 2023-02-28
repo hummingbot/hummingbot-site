@@ -1,45 +1,29 @@
-## 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/binance-smart-chain)
+# `binance-smart-chain`
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/binance-smart-chain.yml)
+`binance-smart-chain` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the BNB Chain blockchain.
+
+## 📁 Connector Info
+
+* Folder: [/gateway/src/chains/binance-smart-chain](https://github.com/hummingbot/gateway/tree/main/src/chains/binance-smart-chain)
+* Configs: [/gateway/src/templates/binance-smart-chain.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/binance-smart-chain.yml)
+* Maintainer:
 
 ## ℹ️ Chain Info
 
 * Website: <https://www.bnbchain.org/>
+* Block Explorer: https://bscscan.com/
 * CoinMarketCap: <https://coinmarketcap.com/currencies/bnb/>
 * CoinGecko: <https://www.coingecko.com/en/coins/bnb>
 
 ## 🕸️ Supported Networks
 
-Below are the Binance Smart Chain networks that Gateway currently supports.
+| Network | ChainId | Type |
+|---------|---------|------|
+| `mainnet` | 56 | mainnet |
+| `testnet` | 97 | testnet |
 
-### `mainnet` (bsc mainnet)
+## 🚰 Faucets
 
-**Default configuration parameters**
+### `testnet`
 
-* `chainID`: 56
-* `nodeURL`: https://bsc-dataseed1.binance.org/
-* `tokenListType`: `FILE`
-* `tokenListSource`: src/chains/binance-smart-chain/bep20_tokens_mainnet.json
-* `nativeCurrencySymbol`: BNB
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-```
-gateway config binance-smart-chain.networks.mainnet.<parameter>
-```
-
-### `testnet` (bsc testnet)
-
-**Default configuration parameters**
-
-* `chainID`: 97
-* `nodeURL`: https://data-seed-prebsc-1-s1.binance.org:8545/
-* `tokenListType`: `FILE`
-* `tokenListSource`: src/chains/binance-smart-chain/bep20_tokens_testnet.json
-* `nativeCurrencySymbol`: BNB
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-```
-gateway config binance-smart-chain.networks.testnet.<parameter>
-```
+* https://testnet.bnbchain.org/faucet-smart

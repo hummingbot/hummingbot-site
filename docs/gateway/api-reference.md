@@ -4,33 +4,20 @@ Each DEX should implement the **NetworkBase** interface, as well as its chain/ne
 
 - **NetworkBase**: General endpoints for all chains
 - **EVM**: Endpoints for DEXs on EVM-specific chains (Mainnet, Avalanche, BNB Chain, Polygon, Harmony, etc)
-- **Solana**: Endpoints for Solana-based DEXs
 
-In addition, each DEX should implement the **ConnectorBase** interface, as well as the interface(s) for its exchange model:
+In addition, each DEX should implement the **ConnectorBase** interface, as well as the interface(s) for its exchange types:
 
 - **ConnectorBase**: Endpoints for all DEXs
-- **AMM**: Endpoints for spot AMM connectors needed to enable swapping assets (example: `uniswap`)
-- **Concentrated Liquidity AMM**: *Additional endpoints for spot AMM connectors that support concentrated liquidity ranges (example: `uniswap-v3`)
-- **Perpetual AMM**: Endpoints for perpetual futures AMMs (example: `perp`)
-- **CLOB**: Endpoints for central limit order book (CLOB) DEXs (example: `serum`)
-- **Margin CLOB**: Additional endpoints for CLOB DEXs that support margin accounts (example: `mango`)
-- **Perpetual CLOB**: Endpoints for perpetual futures CLOB DEXs
-
-!!! note
-    Please note the meaning of the following terms used below:
-
-    * `chain` refers to a Layer 1 or Layer 2 blockchain, e.g. `ethereum`, `avalanche`, `arbitrum`, `optimism`
-    * `network` refers to a mainnet or testnet network of a particular blockchain, e.g. `mainnet`, `kovan`
-    * `address` refers to a wallet address specific to a particular network
+- **AMM**: Endpoints for AMM connectors needed to enable swapping assets
+- **AMM-RANGE**: *Additional endpoints for spot AMM connectors that support concentrated liquidity ranges (example: `uniswap`)
+- **PERP AMM**: Endpoints for perpetual futures AMMs (example: `perp`)
 
 !!! tip "TypeScript interface naming conventions"
     TypeScript interfaces for the requests and responses below should be named according to their corresponding URL endpoints. For example, a request and a response interface for `/evm/allowances` should be named `EVMAllowancesRequest` and `EVMAllowancesResponse`.
 
-## Chain Interfaces
+## Network
 
-### NetworkBase
-
-*General endpoints for all chains*
+General endpoints for all chains.
 
 **GET `/network/status`**
 
@@ -62,9 +49,9 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 - Request: `{chain, network, txHash}`
 - Response: `{ currentBlock, txHash, txStatus, txBlock, txData, txReceipt }`
 
-### EVM
+## EVM
 
-*Endpoints for DEXs on EVM-specific chains (Mainnet, Avalanche, BNB Chain, Polygon, Harmony, etc)*
+Endpoints interacting with chains that use the Ethereum Virtual Machine.
 
 **GET `/evm/allowances`**
 
@@ -90,30 +77,9 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 - Request: `{ chain, network, address, spender, token, amount?, nonce? }`
 - Response: `{ spender, tokenAddress, amount, nonce, txHash }`
 
-### Solana
+## SPOT AMM
 
-*Endpoints for Solana-based DEXs*
-
-**POST `/solana/create-token`**
-
-- Description: Approve a token to be spent by a spender
-- Request: `{ chain, network, address, tokenSymbol, nonce? }`
-- Response: `{ txHash }`
-
-## DEX Interfaces
-
-### ConnectorBase
-
-*Endpoints for all DEXs*
-
-**GET `/connector/config`**
-- Description: Display the configuration options for a specific connector
-- Request: `{connector}`
-- Response: connector config map ([example](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/uniswap.yml))
-
-### AMM
-
-*Endpoints for spot AMM connectors needed to enable swapping assets*
+Endpoints for spot AMM connectors needed to enable swapping assets.
 
 **GET `/amm/price`**
 
@@ -127,9 +93,9 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 - Request: `{ chain, network, connector, address, quote, base, amount, side, limitPrice?, nonce?, maxFeePerGas?, maxPriorityFeePerGas? }`
 - Response: `{ base, quote, price, gasPrice, gasLimit, gasCost, nonce, txHash }`
 
-### Concentrated Liquidity AMM
+## SPOT AMM-RANGE
 
-*Additional endpoints for spot AMM connectors that support concentrated liquidity ranges*
+*Additional endpoints for AMM-RANGE connectors that support concentrated liquidity ranges*
 
 **POST `/amm/liquidity/add`**
 
@@ -161,61 +127,34 @@ In addition, each DEX should implement the **ConnectorBase** interface, as well 
 - Request: `{ chain, network, connector, tokenId }`
 - Response: `{ tokenId, token0, token1, fee, lowerPrice, upperPrice, amount0, amount1, unclaimedToken0, unclaimedToken1 }`
 
-### Perpetual AMM
+## PERP AMM
 
-*Endpoints for perpetual futures AMMs*
+Endpoints for perpetual futures AMM DEXs.
 
-**GET `/perpAMM/price`**
-
-- Description: Get price for opening a position
-- Request: `{chain, network, connector, quote, base, amount, side}`
-- Response: `{ quote, base, side, amount, price }`
-
-**GET `/perpAMM/position`**
+**GET `/perp/position`**
 
 - Description: Get info on a position
 - Request: `{chain, network, connector, wallet_address, quote, base}`
 - Response: `{ position }`
 
-**GET `/perpAMM/margin`**
-
-- Description: Get your current margin status
-- Request: `{chain, network, connector, wallet_address}`
-- Response: `{ margin }`
-
-**GET `/perpAMM/funding`**
-
-- Description: Get the current funding rate
-- Request: `{chain, network, connector, wallet_address}`
-- Response `{ funding }`
-
-**POST `/perpAMM/open`**
+**POST `/perp/open`**
 
 - Description: Open a position
 - Request: `{ chain, network, connector, address, quote, base, amount, side, margin, leverage, limitPrice?, nonce?, maxFeePerGas?, maxPriorityFeePerGas? }`
 - Response: `{ position, price, gasPrice, gasLimit, gasCost, nonce, txHash }`
 
-**POST `/perpAMM/close`**
+**POST `/perp/close`**
 
 - Description: Close a position
 - Request: `{ chain, network, connector, address, quote, base, limitPrice?, nonce?, maxFeePerGas?, maxPriorityFeePerGas? }`
 - Response: `{ gasPrice, gasLimit, gasCost, nonce, txHash }`
 
-### CLOB
+**GET `/perp/market-prices`**
 
-*Endpoints for central limit order book (CLOB) DEXs*
+**GET `/perp/market-status`**
 
-In progress - see https://github.com/yourtrading-ai/hummingbot/blob/feat/gateway-v2_clob-serum/gateway/src/clob/clob.routes.ts.
+**GET `/perp/pairs`**
 
-### Margin CLOB
+**GET `/perp/balance`**
 
-*Additional endpoints for CLOB DEXs that support margin accounts*
-
-Coming soon.
-
-### Perpetual CLOB
-
-*Endpoints for perpetual futures CLOB DEXs*
-
-Coming soon.
-
+**POST `/perp/estimateGas`**

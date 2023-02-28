@@ -147,6 +147,15 @@ nav:
       - Check Performance: operation/history.md
       - Find Log Files: operation/log-files.md
       - Export Trades/Keys: operation/export.md
+    - Gateway:
+      - Gateway: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Using Gateway with Hummingbot: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running DEX Bots: gateway/running-dex-bots.md
+      - Adding DEX Connectors: gateway/adding-dex-connectors.md
+      - API Reference: gateway/api-reference.md
     - Strategies:
       - Strategies: strategies/index.md
       - Core:
@@ -168,7 +177,7 @@ nav:
       - Getting Started: scripts/getting-started.md
       - Script Examples: scripts/examples.md
       - PMM Scripts: scripts/pmm-scripts.md
-    - Exchange Connectors:
+    - Exchanges:
       - Exchange Connectors: exchanges/index.md
       - Gold:
         - Binance: exchanges/binance.md
@@ -218,28 +227,16 @@ nav:
         - Ref: exchanges/ref.md
         - TraderJoe: exchanges/traderjoe.md
         - VVS: exchanges/vvs.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Using Gateway with Hummingbot: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running DEX Bots: gateway/running-dex-bots.md
-      - Adding DEX Connectors: gateway/adding-dex-connectors.md
-      - Chains:
-        - Ethereum: chains/ethereum.md
-        - Avalanche: chains/avalanche.md
-        - BNB Chain: chains/bnb-chain.md
-        - Cronos: chains/cronos.md
-        - Cosmos: chains/cosmos.md
-        - Harmony: chains/harmony.md
-        - NEAR: chains/near.md
-        - Polygon: chains/polygon.md
-      # - Setting up Gateway for Developers: developers/gateway/setup.md
-      # - Adding Tokens: gateway/tokens.md
-      # - History: gateway/history.md
-      # - API Interfaces: developers/gateway/api-interface.md
-      # - Gateway for Developers: developers/gateway/index.md
+    - Chains:
+      - Chains: chains/index.md
+      - Ethereum: chains/ethereum.md
+      - Avalanche: chains/avalanche.md
+      - BNB Chain: chains/bnb-chain.md
+      - Cronos: chains/cronos.md
+      - Cosmos: chains/cosmos.md
+      - Harmony: chains/harmony.md
+      - NEAR: chains/near.md
+      - Polygon: chains/polygon.md
     - Advanced Features:
       - Advanced: global-configs/index.md
       - Balance Limit: global-configs/balance-limit.md
@@ -296,6 +293,7 @@ nav:
       - Adding Commands: developers/commands.md
   - Governance Docs:
     - Governance Docs: governance/index.md
+    - Whitepaper: governance/whitepaper.md
     - Proposals: governance/proposals.md
     - Polls: governance/polls.md
     - Bounties: governance/bounties.md

@@ -75,13 +75,13 @@ An testnet faucet is a tool that allows developers and users to obtain testnet E
 
 Using an Ethereum testnet faucet is a simple process that involves the following steps:
 
-1. Visit a faucet website for your chain. For example, you can get free Goerli ETH at <https://goerlifaucet.com> or <https://testnetfaucet.io/>, and you can get free Fuji AVAX at <https://faucet.avax-test.network/>.
+1. Visit a faucet website for your [chain](/chains). For example, see [Ethereum](/chains/ethereum) for a list of testnet faucets.
 
-2. Enter your Ethereum address: On the testnet faucet website, you will be prompted to enter your Ethereum address.
+2. Enter your testnet wallet address where indicaated.
 
 3. Complete any additional verification steps: Depending on the testnet faucet you are using, you may be required to complete additional verification steps, such as solving a captcha or proving that you are not a robot.
 
-4. Receive your testnet Ether: After you have completed the verification steps, the testnet Ether will be sent to your Ethereum address. You can then use this Ether to test your dApps or experiment with the Ethereum network.
+4. Receive your testnet ETH: After you have completed the verification steps, the testnet ETH will be sent to your Ethereum testnet address. You can then use this ETH to experiment with the Ethereum testnet network.
 
 ## Wrapped tokens
 
