@@ -18,15 +18,15 @@ Open a Powershell or Windows command prompt as administrator and run the command
 wsl --install --distribution Ubuntu-20.04
 ```
 
-![WSL Install](../assets/img/wsl-install.jpg)
+![WSL Install](../assets/wsl-install.jpg)
 
 Restart your computer to finish the WSL installation
 
-![Ubuntu](../assets/img/ubuntu.jpg)
+![Ubuntu](../assets/ubuntu.jpg)
 
 Open the Start Menu and look for `Ubuntu 20.04" and launch it to open a WSL terminal
 
-![Username prompt](../assets/img/wsl-username.jpg)
+![Username prompt](../assets/wsl-username.jpg)
 
 WSL should finish installing then it will prompt you to enter a username / password
 

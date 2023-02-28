@@ -392,15 +392,18 @@ nav:
     - Introduction: v2/intro.md
     - Installation:
       - Installation: v2/install/index.md
-      - Docker on  Linux: v2/install/docker-linux.md
-      - Docker on Mac: v2/install/docker-mac.md
-      - Docker on Windows: v2/install/docker-windows.md
-      - Source on Linux: v2/install/source-linux.md
-      - Source on Mac: v2/install/source-mac.md
-      - Source on Windows: v2/install/source-windows.md
-      - Gateway: v2/install/gateway-source.md
-      - Running multiple bots with Docker Compose: v2/install/docker-compose.md
-      - Running multiple bots with Orchestration module: v2/install/bot-orchestration.md
+      - Docker:
+        - Linux: v2/install/docker-linux.md
+        - Mac: v2/install/docker-mac.md
+        - Windows: v2/install/docker-windows.md
+      - Source:
+        - Linux: v2/install/source-linux.md
+        - Mac: v2/install/source-mac.md
+        - Windows: v2/install/source-windows.md
+      - Other (Unsupported) Install Methods:
+        - Raspberry Pi / ARM SBC: v2/install/docker-compose.md
+        - Windows Gitbash: v2/install/docker-compose.md
+        - Docker Desktop (Windows): v2/install/docker-compose.md
     - Configuration:
       - Configuration: v2/config/index.md
       - Basic Configuration:
@@ -420,7 +423,24 @@ nav:
         - Rate Limits: v2/config/advanced/rate-limits.md
         - Telegram Integration: v2/config/advanced/telegram.md
         - Debug Console: v2/config/advanced/debug.md
-        - Gateway: v2/config/advanced/gateway.md
-    - Quick Start: v2/quick-start.md
+      - Running Multiple Bots: v2/config/multiple-bots.md
+      - Bot Orchestration: v2/config/bot-orchestration.md 
+    - Gateway:
+      - Gateway: v2/gateway/index.md
+      - Installation: v2/gateway/installation.md
+      - Testing Gateway: v2/gateway/testing.md
+      - Using Gateway with Hummingbot: v2/gateway/gateway-source.md
+      - Node Providers: v2/gateway/gateway-source.md
+      - Working with Tokens: v2/gateway/gateway-source.md
+      - Running DEX Bots: v2/gateway/gateway-source.md
+      - Adding DEX Connectors: v2/gateway/gateway-source.md
+    - Debugging: 
+      - Debugging: v2/debug/index.md
+      - VSCode: v2/debug/vscode.md
+      - Pycharm: v2/debug/pycharm.md
+    - Scripts Quickstart:
+      - Scripts Quickstart: v2/quick-start.md
+      - Exercise I - Hello World Script: v2/example-i.md
+      - Exercise II - Simple PMM: v2/example-ii.md
     - References: v2/references.md
     - FAQ / Troubleshooting: v2/faq.md
