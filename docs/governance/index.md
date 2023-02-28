@@ -25,7 +25,7 @@ Hummingbot Foundation maintains the resources below to make the governance proce
 Hummingbot employs a decentralized, community-driven maintenance process that relies upon contributions by a decentralized network of community developers.
 
 * [Whitepaper](whitepaper.md): Originally published in December 2021, this document that explains the Foundation's goals and how its governance system works.
-* [Proposals](proposals.ms): HBOT token holders can create and vote on various types of proposals to steer the evolution of the project. Each proposal type may have different guidelines, HBOT balance requirements, and approval/quorum thresholds.
+* [Proposals](proposals.md): HBOT token holders can create and vote on various types of proposals to steer the evolution of the project. Each proposal type may have different guidelines, HBOT balance requirements, and approval/quorum thresholds.
 * [Polls](polls.md): Different polls that the Foundation conducts each month to encourage HBOT governance
 * [Bounties](bounties.md): Process of creating and assigning developer bounties for making improvements to the Hummingbot codebase
 * [Releases](releases.md): Process of reviewing and merging pull requests into official monthly releases
