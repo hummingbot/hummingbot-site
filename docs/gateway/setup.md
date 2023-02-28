@@ -1,4 +1,4 @@
-After you have [installed Gateway](./installation), you should be ready to interact with it. This page shows you various commands that help you configure Gateway from inside the Hummingbot client.
+After you have [installed Gateway](installation.md), you should be ready to interact with it. This page shows you various commands that help you configure Gateway from inside the Hummingbot client.
 
 ### Checking Gateway status
 
@@ -139,9 +139,50 @@ server:
     ...
 ```
 
-You can filter and see a specific configuration parameter with `gateway config <chain>.networks.<network>.<param>`. 
+You can filter and see a specific configuration parameter with `gateway config <param>`:
 
-To change it, simply add an updated value after it: `gateway config <chain>.networks.<network>.<param> <new-value>`. Gateway will automatically restart to incorporate the new settings.
+```python
+>>> gateway config ethereum.gasLimitTransaction
+
+Gateway Configurations (localhost:15888):
+ethereum:
+    gasLimitTransaction: 3000000
+```
+
+To change it, simply add an updated value after it: `gateway config <param> <new-value>`:
+
+```python
+>>> gateway config ethereum.gasLimitTransaction 1000000
+
+The config has been updated.
+```
+
+Gateway will automatically restart to incorporate the new settings.
+
+Alternatively, you may find it easier to edit the configuration files for each chain and connector directly. These are located in the `/conf` directory in your Gateway files. Make sure to stop and start the Gateway server after each change.
+
+## Configuring node providers
+
+The node provider that you use to communicate with a blockchain network is critically important. The speed/latency of your node connection and its ability to read/write to the network may fluctuate greatly, especially in congested, volatile markets. 
+
+Whether you use a cloud node service like Alchemy or run your own node client, you will connect to the node via the **RPC URL**, defined for each chain/network combination. This is set by the `nodeURL` configuration parameter for each chain/network, defined in the configuration file for each chain.
+
+To help new users use Gateway, Hummingbot assumes a default `nodeURL` for each supported chain/network and automatically connects to it when users connect to a DEX. 
+
+Currently, the default `nodeURL` for each chain/network uses [Ankr RPC endpoints](https://www.ankr.com/rpc/) where available, since they do not require users to sign up for an account.
+
+For certain testnet or other networks that Ankr doesn't support, the default `nodeURL` may be an alternate public endpoint, or in certain cases, an [Infura](https://infura.io/) endpoint, which users need to configure with their Infura key to use.
+
+Here are the current default `nodeURL` settings for Ethereum mainnet and testnet networks, which are defined in the [default config file](https://github.com/hummingbot/gateway/blob/main/src/templates/ethereum.yml):
+
+```
+mainnet:
+    nodeURL: https://rpc.ankr.com/eth
+goerli:
+    nodeURL: https://rpc.ankr.com/eth_goerli
+```
+
+Here's how to change this setting from inside the Hummingbot client:
 
 ```python
 >>> gateway config ethereum.networks.mainnet.nodeURL
@@ -156,16 +197,8 @@ ethereum:
 The config has been updated.
 ```
 
-Alternatively, you may find it easier to edit the configuration files for each chain and connector directly. These are located in the `/conf` directory in your Gateway files. Make sure to stop and start the Gateway server after each change.
-
 ## Working with tokens
 
 Since token symbols are not unique and may have duplicates on each network, it's very important to understand how symbols map to addresses for each chain/network. Also, you may also need to approve tokens before you can trade them.
 
-See [Working with Tokens](./tokens) for more details.
-
-## Configuring node providers
-
-The node provider that you use to communicate with a blockchain network is critically important. The speed/latency of your node connection and its ability to read/write to the network may fluctuate greatly, especially in congested, volatile markets. This is set by the `nodeURL` configuration parameter for each network.
-
-See [Node Providers](./node-providers) for more details.
+See [Working with Tokens](tokens.md) for more details.

@@ -84,4 +84,4 @@ Go back to your Hummingbot client or restart it if you have exited. In the upper
 
 [![](./gateway-status.png)](./gateway-status.png)
 
-After Gateway is running, see [Testing](./testing) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
+After Gateway is running, see [Testing](testing.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.

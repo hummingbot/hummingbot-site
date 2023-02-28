@@ -223,19 +223,18 @@ nav:
       - Installation: gateway/installation.md
       - Testing Gateway: gateway/testing.md
       - Using Gateway with Hummingbot: gateway/setup.md
-      - Node Providers: gateway/node-providers.md
       - Working with Tokens: gateway/tokens.md
       - Running DEX Bots: gateway/running-dex-bots.md
       - Adding DEX Connectors: gateway/adding-dex-connectors.md
       - Chains:
-        - Ethereum: gateway/chains/ethereum.md
-        - Avalanche: gateway/chains/avalanche.md
-        - BNB Chain: gateway/chains/bnb-chain.md
-        - Cronos: gateway/chains/cronos.md
-        - Cosmos: gateway/chains/cosmos.md
-        - Harmony: gateway/chains/harmony.md
-        - NEAR: gateway/chains/near.md
-        - Polygon: gateway/chains/polygon.md
+        - Ethereum: chains/ethereum.md
+        - Avalanche: chains/avalanche.md
+        - BNB Chain: chains/bnb-chain.md
+        - Cronos: chains/cronos.md
+        - Cosmos: chains/cosmos.md
+        - Harmony: chains/harmony.md
+        - NEAR: chains/near.md
+        - Polygon: chains/polygon.md
       # - Setting up Gateway for Developers: developers/gateway/setup.md
       # - Adding Tokens: gateway/tokens.md
       # - History: gateway/history.md

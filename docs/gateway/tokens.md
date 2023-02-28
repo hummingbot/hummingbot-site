@@ -1,96 +1,92 @@
 
-## Working with Token Lists
+## What are Token Lists?
 
-When trading across different blockchains, it's very important to understand how symbols map to addresses for each chain/network. In Hummingbot, each chain/network defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL), which uses the [Token Lists](https://tokenlists.org/) standard to define a token dictionary for each network.
+When trading on DEXs, you should understand how symbols map to addresses for each chain/network. Token symbols are not unique and may have duplicates or scammy clones on each network, so it's very important to be aware of which token address you are actually trading.
 
-You can edit the `tokenListType` and `tokenListSource` parameters for each network by running `gateway config` (see **Changing Gateway configuration**)
+Hummingbot uses the [Token Lists](https://tokenlists.org/) standard to define a token dictionary for each network. For example, here are the DAI and HBOT entries from the default Token List for Ethereum Mainnet:
 
-For a list of the default parameters including `tokenListType` and `tokenListSource` for each chain/network, see [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
+```json
+{
+    "chainId": 1,
+    "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "name": "Dai",
+    "symbol": "DAI",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734"
+},
+{
+    "chainId": 1,
+    "address": "0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb",
+    "name": "Hummingbot",
+    "symbol": "HBOT",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/21717/thumb/PDPuf0tJ_400x400.jpg?1639863782"
+},
+```
 
+When you reference the symbols DAI and HBOT in a strategy, transactions on the `ethereum_mainnet` chain/network will use its Token List to 
+identify the corresponding address.
 
-Starting with the [v1.11.0 release](../release-notes/1.11.0.md) the `tokenlistType` by default is now currently set to `FILE` instead of `URL` where the list of tokens are now stored instead within a JSON file which users can now easily edit to add tokens they are currently trading but users can still switch between `URL` or `FILE` if needed.
+## Default lists
 
-You can edit the `tokenListType` and `tokenListSource` parameters for each network by running `gateway config`. Below are the instructions for adding tokens either through `FILE` or through `URL`
+In Gateway, each blockchain's config file defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL) for each network.
 
-### `FILE`
+Starting with the [v1.11.0 release](/release-notes/1.11.0.md) the `tokenlistType` by default is `FILE`, and there is a JSON file that contains the dictionary for each network - see [ethereum.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/ethereum.yml) as an example.
 
-Create a local JSON file and save it under ../gateway/src/chains/`[chain_folder]`/... and add the missing token you want to use by adding their token address.
-
-Open the Hummingbot client (make sure its connected to Gateway) and run `gateway config [chain].networks.[network].tokenListSource src/chains/[chain_folder]/name-of-file.json`
-
-For example if you created a JSON file named `arbitrum.json` for Arbitrum One you would run `gateway config ethereum.networks.arbitrum_one.tokenlistSource src/chains/ethereum/arbitrum.json` and press Enter. You should get a message below that the config has been updated and Gateway will automatically restart to update the config.
-
-You could also edit the existing JSON file directly. For example for the Ethereum Kovan testnet the existing JSON token list would be stored under [/chains/ethereum/erc20_tokens_kovan.json](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/chains/ethereum/erc20_tokens_kovan.json).
-
-Locate the file in Explorer and open the file in a notepad or your preferred text editor. See below for how the JSON file should look like in a text editor. From here, just modify the file and add the token address of the tokens you are trading.
-
-![gw_tokenlist](gw_json.jpg)
-
-### `URL`
-
-Go to [Token Lists](https://tokenlists.org/) and look for a list that contains the tokens you wish to trade and take note of that list URL
-
-Once you have the token list URL, open Hummingbot and make sure Gateway is running and then enter `gateway config [chain].networks.[network].tokenlistType URL`  
-
-For example to change the token list for Arbitrum One you would run `gateway config ethereum.networks.arbitrum_one.tokenlistType URL` and press Enter. You should get a message below that the config has been updated and Gateway will automatically restart to update the config.
-
-![gateway_url](gw_url.jpg)
-
-Next you'll need to specify the tokenlist URL that you took note of in step 1 by running `gateway config [chain].networks.[network].tokenlistSource [tokenlist URL]` (replace [tokenlistURL] with the actual URL)
-
-For example, to use the [1inch list](https://wispy-bird-88a7.uniswap.workers.dev/?url=http://tokens.1inch.eth.link) with Arbitrum one then the command would be `gateway config ethereum.networks.arbitrum_one.tokenlistSource https://wispy-bird-88a7.uniswap.workers.dev/?url=http://tokens.1inch.eth.link`
-
-![gateway_source](gw_source.jpg)
-
-!!! note
-
-    CTRL + V doesn't work from within Hummingbot. To paste, try `Shift + Insert` or `CTRL + Shift + V` or `CTRL + Shift + Right Click`
+This reduces latency compared to accessing the Token List via URL, but users are free to change this setting by configuring the `tokenListType` and `tokenListSource` parameters for each network - see [Updating config parameters](/gateway/setup/#updating-config-parameters)
 
 
-Alternatively if you installed through Source you can also edit the `JSON` file directly under the `/gateway/src/templates/` folder
+## Adding tokens to a list
 
-For a list of the default parameters including `tokenListType` and `tokenListSource` for each chain/network, see [Ethereum and EVM-Based Chains](/gateway/chains/ethereum/).
+Go to [Token Lists](https://tokenlists.org/) and look for a list that contains the tokens you wish to trade. You can download the list change `tokenListType` and `tokenListSource` to refer to it, or copy the token entries that you need into the default Token List.
 
 ## Approving tokens
 
-On Ethereum and EVM-compatible chains, wallets need to [approve](https://help.matcha.xyz/en/articles/4285134-why-do-i-need-to-approve-my-tokens-before-i-can-trade-them) other addresses such as DEXs before they can send tokens to them, creating an allowance.
+On Ethereum and EVM-compatible chains, wallets need to **approve** other addresses (such as DEXs) before transferring tokens to them. You can inspect the **allowance** for a spender address to see how much of a specific token you can tranfer to it.
 
-To approve the tokens for spending on gateway, there are multiple ways outlined below. 
+When you `start` a strategy or script, Gateway automatically checks whether both base and quote tokens are approved for the DEX that you are using. If they are not approved or if allowance is insufficient, you will see an log message like "Waiting for allowances.." and the strategy will not start.
+
+Here is how you can approve tokens:
 
 ### Use `approve-token` command 
 
-Hummingbot has a command that allows you to approve tokens for spending on gateway one token at a time. 
+Hummingbot has a command that allows you to approve tokens for spending on Gateway one token at a time. 
 
 Here is an example of the approve-tokens command:
 ```python
-# gateway approve-tokens [connector_chain_network] [symbol]
->>> gateway approve-tokens uniswap_ethereum_mainnet WETH
+>>> gateway approve-tokens uniswap_ethereum_goerli WETH
 ```
 
-[![](/assets/img/approve-tokens-command.png)](/assets/img/approve-tokens-command.png)
+[![](./approve-tokens-command.png)](./approve-tokens-command.png)
 
-### Approve manually using DEX interface
+### Use `/evm/approve` in Postman
 
-You can use the Dex interface directly for approval. Once you approve a token, you will not have to to approve that token again on the Dex. Each token from a specific wallet you wish to trade requires a one-time approval.
+Alternatively, you can call the `/evm/approve` endpoint directly from Postman. Afterwards, you can paste the `hash` value in the response in the `txHash` parameter in `network/poll` endpoint to check when the transaction is confirmed.
 
-Please note that you don't have to do a full swap to approve a token or multiple tokens, however you will need to pay for transaction fee for approving the token. Here is an example of the approval on Uniswap.
+[![](./postman-approve.png)](./postman-approve.png)
 
-[![Approve tokens on dex using interface](/assets/img/dex-interface-approve.png)](/assets/img/dex-interface-approve.png)
+After it's confirmed, you can use the `/evm/allowances` endpoint to check whether the approval was successful:
+
+[![](./postman-allowances.png)](./postman-allowances.png)
 
 ## Testnet faucets
 
-Use faucets to get free testnet tokens:
+An testnet faucet is a tool that allows developers and users to obtain testnet ETH or other test assets for free. Testnet ETH is a cryptocurrency that is used exclusively for testing purposes on the Ethereum network and has no real-world value.
 
-### Ethereum - Goerli
+Using an Ethereum testnet faucet is a simple process that involves the following steps:
 
-- https://goerlifaucet.com/
+1. Visit a faucet website for your chain. For example, you can get free Goerli ETH at <https://goerlifaucet.com> or <https://testnetfaucet.io/>, and you can get free Fuji AVAX at <https://faucet.avax-test.network/>.
 
-### Avalanche - Fuji
+2. Enter your Ethereum address: On the testnet faucet website, you will be prompted to enter your Ethereum address.
 
-- https://faucet.avax-test.network/
+3. Complete any additional verification steps: Depending on the testnet faucet you are using, you may be required to complete additional verification steps, such as solving a captcha or proving that you are not a robot.
+
+4. Receive your testnet Ether: After you have completed the verification steps, the testnet Ether will be sent to your Ethereum address. You can then use this Ether to test your dApps or experiment with the Ethereum network.
 
 ## Wrapped tokens
 
-Certain DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
+DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade native tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
 
-Gateway does not auto-wrap tokens by default, so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
+Gateway does not auto-wrap tokens by default,
+
+so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.

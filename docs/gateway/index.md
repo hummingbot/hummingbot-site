@@ -19,14 +19,14 @@ See the following blog posts from CoinAlpha CTO Martin Kou for more information 
 
 ## Supported Chains
 
-- [Ethereum](./chains/ethereum)
-- [Arbitrum](./chains/ethereum#arbitrum_one-mainnet)
-- [Optimism](./chains/ethereum#optimism-mainnet)
-- [Avalanche](./chains/avalanche)
-- [BNB Chain](./chains/bnb-chain)
-- [Polygon](./chains/polygon)
-- [Cosmos](./chains/cosmos)
-- [NEAR](./chains/near)
-- [Cronos](./chains/cronos)
-- [Harmony](./chains/harmony)
+- [Ethereum](/chains/ethereum)
+- [Arbitrum](/chains/ethereum#arbitrum_one-mainnet)
+- [Optimism](/chains/ethereum#optimism-mainnet)
+- [Avalanche](/chains/avalanche)
+- [BNB Chain](/chains/bnb-chain)
+- [Polygon](/chains/polygon)
+- [Cosmos](/chains/cosmos)
+- [NEAR](/chains/near)
+- [Cronos](/chains/cronos)
+- [Harmony](/chains/harmony)
 <!-- - [Solana](./chains/solana) (In progress) -->
