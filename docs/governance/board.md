@@ -3,23 +3,21 @@ The Board of Directors provides oversight over the Hummingbot Foundation and its
 
 ## Members
 
-Established at inception of Hummingbot Foundation , the initial Board comprised of the following individuals:
+Elected for a 12-month term in February 2023 in [HGP-35](https://snapshot.org/#/hbot.eth/proposal/0xce24cc92f5f0b95dd8f84a69fa9a5318a53a84b7118d2d3120a9656782ecba58), the Board is comprised of the following individuals:
 
-| Name              | Title                                   | 
-|-------------------|-----------------------------------------|
-| [Arthur Cheong](https://www.linkedin.com/in/arthur-cheong-8270a25b/) | CIO, DeFiance Capital |
-| [Brett Gibson](https://www.linkedin.com/in/brettdgibson/) | Managing Partner, Initialized Capital |
-| [Gene Cheon](https://www.linkedin.com/in/gene-cheon-b393b810/) | Asia Credit Trader, BNB Paribas |
-| [Howard Chu](https://www.linkedin.com/in/howardhcchu/) | Managing Director, JPMorgan |
-| [Michael Feng](https://www.linkedin.com/in/mifeng/)| Co-founder, CoinAlpha |
-
-In early 2023,Hummingbot Foundation will elect the new Board for a **one (1) year term**.
+| Name              | Title                                   | Address     |
+|-------------------|-----------------------------------------|-------------|
+| Brett Gibson      | Managing Partner, Initialized Capital   | [eth:0x64b..4C3](https://etherscan.io/address/0x64b8457C3977a2f8ca7D7C00b0435aED27CA34C3)
+| Gene Cheon        | COO, Hummingbot Foundation              | [eth:0xd50..27d](https://etherscan.io/address/0xd506d13498B19A2E9DC293876f498AFD021EA27d)
+| Hoang La          |                                         | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
+| Michael Feng      | Board member, CoinAlpha                 | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
+| Michael Timmons   |                                         | [eth:0x20a..721](https://etherscan.io/address/0x20aEDcC952Ccdb6d5F786B1977b964Ab3898c721)
 
 ## Role & Responsibilities
 
 The Board is a 5-person, independent committee that oversees the day-to-day administration of the Hummingbot Foundation and manages the multi-signature wallet of the HBOT treasury.
 
-The Board conducts a virtual board meeting at least once per quarter to discuss Foundation progress and strategy. In addition, the Board regularly corresponds over Telegram to handle multi-signature transactions related to HBOT distributions.
+The Board conducts quarterly virtual board meetings to discuss Foundation progress and strategy. In addition, the Board regularly corresponds over group chat to handle multi-signature transactions related to HBOT distributions.
 
 ## Requirements
 

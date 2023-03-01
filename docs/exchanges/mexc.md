@@ -25,18 +25,12 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 Run `connect mexc` in order to enter your API keys:
 
 ```
-Enter your MEXC API key >>>
-Enter your MEXC secret API key >>>
+Enter your mexc API key >>>
+Enter your mexc secret API key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to MEXC.
+You are now connected to mexc.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/mexc/mexc_utils.py#L15)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

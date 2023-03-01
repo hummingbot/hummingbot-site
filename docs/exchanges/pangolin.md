@@ -3,7 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/pangolin](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/pangolin)
+* Folder: [/gateway/src/connectors/pangolin](https://github.com/hummingbot/gateway/tree/main/src/connectors/pangolin)
+* Configs: [/gateway/src/templates/pangolin.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/pangolin.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -20,13 +21,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://github.com/pangolindex/pangolin-api>
 * SDK: <https://github.com/pangolindex/sdk>
 
-## 🔑 Setup
+## 🕸️ Supported Chains and Networks
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect pangolin` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Pangolin and a different exchange.
-4. Run `start` to start the strategy!
+* `avalanche`: `avalanche`, `fuji`
 
-## 📘 Additional Resources
+## 🔑 Connection
 
-See [Avalanche](/gateway/chains/ethereum/#avalanche) for more information about the default configuration settings and how to change them.
+Run `gateway connect pangolin` in order to connect your wallet:
+
+```
+Which chain do you want pangolin to connect to? (avalanche) >>>
+Which network do you want pangolin to connect to? (avalanche, fuji) >>>
+Enter your avalanche-avalanche private key >>>>
+```
+
+If connection is successful:
+
+```
+The pangolin connector now uses wallet [pubKey] on avalanche-avalanche
+```

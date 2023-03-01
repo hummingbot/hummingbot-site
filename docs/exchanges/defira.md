@@ -3,7 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/defira](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defira)
+* Folder: [/gateway/src/connectors/defira](https://github.com/hummingbot/gateway/tree/main/src/connectors/defira)
+* Configs: [/gateway/src/templates/defira.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/defira.yml)
 * Maintainer:
 
 ## 🏆 Exchange Tier
@@ -19,13 +20,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * CoinGecko: <https://www.coingecko.com/en/coins/fira>
 * API docs: <https://docs.defira.com/>
 
-## 🔑 Setup
+## 🕸️ Supported Chains and Networks
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect defira` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Defira and a different exchange.
-4. Run `start` to start the strategy, and you're trading!
+* `harmony`: `mainnet`, `testnet`
 
-## 📘 Additional Resources
+## 🔑 Connection
 
-See [Harmony](/gateway/chains/ethereum/#harmony) for more information about the default configuration settings and how to change them.
+Run `gateway connect defira` in order to connect your wallet:
+
+```
+Which chain do you want defira to connect to? (harmony) >>>
+Which network do you want defira to connect to? (mainnet, testnet) >>>
+Enter your harmony-mainnet private key >>>>
+```
+
+If connection is successful:
+
+```
+The defira connector now uses wallet [pubKey] on harmony-mainnet
+```

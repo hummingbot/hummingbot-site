@@ -30,15 +30,12 @@ Below are the available commands in the current Hummingbot release.
 
 | Command           | Function                                                      |
 | ----------------- | ------------------------------------------------------------- |
-| `create`          | Create gateway docker container instance                      |
 | `config`          | View or update gateway configuration                          |
 | `connect`         | Start the current bot                                         |
 | `connector-tokens`| Report token balances for gateway connectors                  |
 | `generate-certs`  | Create ssl certificate for gateway                            |
 | `list`            | Shows a list of all available gateway connectors and their tiers  |
-| `start`           | Start gateway docker instance                                 |
 | `status`          | Check status of gateway docker instance                       |
-| `stop`            | Stop gateway docker instance                                  |
 | `test-connection` | Ping gateway api server                                       |
 
 Users can also use `gateway -h` this will print out the different commands you can use with gateway.
@@ -48,13 +45,10 @@ Users can also use `gateway -h` this will print out the different commands you c
 usage: gateway [-h] {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection} ...
 
 positional arguments: {create,config,connect,connector-tokens,generate-certs,start,status,stop,test-connection}
-create              Create gateway docker container instance
 config              View or update gateway configuration
 connect             Create/view connection info on gateway connector
 connector-tokens    Report token balances for gateway connectors
 generate-certs      Create ssl certificate for gateway
-start               Start gateway docker instance
-stop                Stop gateway docker instance
 test-connection     Ping gateway api server
 
 optional arguments:

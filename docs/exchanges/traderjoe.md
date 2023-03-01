@@ -3,7 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/traderjoe](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/traderjoe)
+* Folder: [/gateway/src/connectors/traderjoe](https://github.com/hummingbot/gateway/tree/main/src/connectors/traderjoe)
+* Configs: [/gateway/src/templates/traderjoe.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/traderjoe.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -20,21 +21,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://docs.traderjoexyz.com/>
 * SDK: <https://github.com/traderjoe-xyz/joe-sdk>
 
+## 🕸️ Supported Chains and Networks
+
+* `avalanche`: `avalanche`, `fuji`
+
 ## 🔑 Connection
 
 Run `gateway connect traderjoe` in order to connect your wallet:
 
 ```
 Which chain do you want traderjoe to connect to? (avalanche) >>>
-Which network do you want uniswap to connect to? (avalanche, fuji) >>>
-Enter your avalanche-mainnet private key >>>>
+Which network do you want traderjoe to connect to? (avalanche, fuji) >>>
+Enter your avalanche-avalanche private key >>>>
 ```
 
 If connection is successful:
 
 ```
-The uniswap connector now uses wallet [pubKey] on avalanche-mainnet
-
-## 📘 Additional Resources
-
-See [Avalanche](/gateway/chains/ethereum/#avalanche) for more information about the default configuration settings and how to change them.
+The traderjoe connector now uses wallet [pubKey] on avalanche-avalanche
+```

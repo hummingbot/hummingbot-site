@@ -19,9 +19,9 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * CoinGecko: <https://www.coingecko.com/en/exchanges/huobi>
 * API docs: <https://huobiapi.github.io/docs/spot/v1/en/#change-log>
 * Transaction fees: <https://www.hbg.com/en-us/about/fee/>
-* Referral link: <https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223>
+* **Hummingbot Referral Link**: <https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223>
 
-!!! note
+!!! tip "Referral Link bonuses"
     Special fee rate by registering through the link above.
     Spot trading: Maker/taker 0.099%, 0.08% with HT deduction
 
@@ -39,9 +39,3 @@ If connection is successful:
 ```
 You are now connected to huobi.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.2% maker fees and 0.2% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/huobi/huobi_utils.py#L22)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

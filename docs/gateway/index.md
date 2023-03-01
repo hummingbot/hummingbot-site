@@ -1,38 +1,37 @@
-!!! note
-    Gateway-V2 takes an exchange-first approach that makes building DEX connectors much easier for developers. There exists [an earlier version of Gateway](https://github.com/CoinAlpha/gateway-api) compatible with pre-1.0 Hummingbot releases that has been deprecated and is no longer supported.
+## What is Gateway?
 
-## What is Gateway-V2?
+Hummingbot Gateway, sometimes called Gateway-V2, is standalone API middleware that helps Hummingbot and other trading clients to connect to decentralized exchanges (DEX) on various blockchain networks. 
 
-Hummingbot Gateway-V2, henceforth called **Gateway**, is API middleware that allows Hummingbot to connect to decentralized exchanges (DEX) on various blockchain protocols.
+Gateway manages interfacing with DEX connectors and exposes standard REST API endpoints for trading and liquidity-related functionality on these DEXs.
 
-Gateway lets you create a trading bot that can operate on both DEXs as well as centralized exchanges (CEXs), enabling users to access cross-exchange liquidity provision and arbitrage opportunities, as well as to create their own customized strategies and scripts.
+Essentially, Gateway is a light web server that enables Hummingbot to send and receive data from different blockchain protocols and provides an easier entry point for external devs to build connectors to other protocols.
 
-See [History](./history) for more information about Gateway's history, background, and intended developer experience.
+## How to use Gateway
 
-## Using Gateway
+Following the guides below to install, configure and use Gateway:
 
-See [Setting up Gateway](./setup) for instructions on how to launch and use Gateway from the Hummingbot client interface.
+- [Installation](installation.md): How to install Gateway from source or via Docker
+- [Testing with Postman](testing.md): How to test Gateway API endpoints on a standalone basis using Postman and other tools
+- [Using Gateway with Hummingbot ](setup.md): How to send commands to Gateway from Hummingbot
+- [Working with Tokens](tokens.md): Adding tokens, approving tokens and getting testnet tokens
+- [Running DEX Bots](running-dex-bots.md): How to run the `amm-arb` strategy and scripts that use Gateway DEX connectors
+- [Adding Connectors](adding-dex-connectors.md): Developer guide for contributing new DEX connectors into the open source Gateway codebase
+- [API Reference](api-reference.md): List of the API endpoints that each DEX type exposes
 
-See [Setting up Gateway - Developers](/developers/gateway/setup) for instructions on how to install Gateway from source so that you can add DEX connectors, configure custom tokens, and perform other developer-oriented tasks.
+## Supported DEXs
+
+See [Exchanges](/exchanges) for the DEXs that Gateway currently supports. All DEXs with either the **AMM** and **AMM-RANGE** labels are Gateway connectors, along with certain **CLOB** DEX connectors.
 
 ## Supported Chains
 
-- [Ethereum](./chains/ethereum)
-- [Arbitrum](./chains/ethereum#arbitrum_one-mainnet)
-- [Optimism](./chains/ethereum#optimism-mainnet)
-- [Avalanche](./chains/avalanche)
-- [BNB Chain](./chains/bnb-chain)
-- [Polygon](./chains/polygon)
-- [Cosmos](./chains/cosmos)
-- [NEAR](./chains/near)
-- [Cronos](./chains/cronos)
-- [Harmony](./chains/harmony)
-<!-- - [Solana](./chains/solana) (In progress) -->
+See [Chains](/chains) for a list of blockchains and their networks that Gateway currently supports.
 
-## Building Gateway Connectors
+## History
 
-- [Setup](/developers/gateway/setup): Install and configure Gateway from a developer's standpoint
-- [Testing](/developers/gateway/testing): How to test Gateway connectors
-- [Gateway API Interfaces](/developers/gateway/api-interface): API interfaces for different DEX types supported by Gateway
-- [Building Gateway Connectors](/developers/gateway/building-gateway-connectors): Step-by-step guide to adding DEX connectors to Gateway
-- [Running AMM-ARB with Gateway](/developers/gateway/running-amm-arb): Developer-oriented tutorial that shows you how to test out the [`amm-arb`](/strategies/amm-arbitrage) strategy with Gateway
+See the following blog posts from CoinAlpha CTO Martin Kou for more information about Gateway's history, background, and intended developer experience:
+
+* [Hummingbot Gateway V2 Architecture - Part 1](https://blog.hummingbot.org/gateway-v2-code-architecture/)
+* [Hummingbot Gateway V2 Architecture - Part 2](https://blog.hummingbot.org/gateway-architecture-part-2/)
+
+!!! note
+    [Gateway-V1](https://github.com/CoinAlpha/gateway-api) is a deprecated version of Gateway compatible with pre-1.0 Hummingbot releases that is no longer supported.

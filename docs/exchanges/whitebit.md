@@ -34,9 +34,3 @@ If connection is successful:
 ```
 You are now connected to WhiteBit.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/whitebit/whitebit_utils.py)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
