@@ -3,32 +3,40 @@ We generally release a new version of Hummingbot **every month**. See below for 
 ## [1.13.0](./1.13.0/)
 
 * **Released**: February 27, 2023
-* **Github**: [`v1.13.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.13.0)
-* **DockerHub**: [`version-1.13.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=release-1.13.0) | [`version-1.13.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=version-1.13.0-arm)
+
+**Hummingbot**
+
+* Github: [`v1.13.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.13.0)
+* DockerHub: [`version-1.13.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.13.0) | [`version-1.13.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.13.0-arm)
+
+**Hummingbot Gateway**
+
+* Github: [`v1.13.0`](https://github.com/hummingbot/gateway/releases/tag/v1.13.0)
+* DockerHub: [`version-1.13.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-1.13.0)
 
 ## [1.12.0](./1.12.0/)
 
 * **Released**: January 25, 2023
 * **Github**: [`v1.12.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.12.0)
-* **DockerHub**: [`version-1.12.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=release-1.12.0) | [`version-1.12.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=version-1.12.0-arm)
+* **DockerHub**: [`version-1.12.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.12.0) | [`version-1.12.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.12.0-arm)
 
 ## [1.11.0](./1.11.0/)
 
 * **Released**: December 21, 2022
 * **Github**: [`v1.11.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.11.0)
-* **DockerHub**: [`version-1.11.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=release-1.11.0) | [`version-1.11.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=version-1.11.0-arm)
+* **DockerHub**: [`version-1.11.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.11.0) | [`version-1.11.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.11.0-arm)
 
 ## [1.10.0](./1.10.0/)
 
 * **Released**: November 29, 2022
 * **Github**: [`v1.10.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.10.0)
-* **DockerHub**: [`version-1.10.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=release-1.10.0) | [`version-1.10.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=version-1.10.0-arm)
+* **DockerHub**: [`version-1.10.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.10.0) | [`version-1.10.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.10.0-arm)
 
 ## [1.9.0](./1.9.0/)
 
 * **Released**: October 28, 2022
 * **Github**: [`v1.9.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.9.0)
-* **DockerHub**: [`version-1.9.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=release-1.9.0) | [`version-1.9.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&name=version-1.9.0-arm)
+* **DockerHub**: [`version-1.9.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.9.0) | [`version-1.9.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.9.0-arm)
 
 ## [1.8.0](./1.8.0/)
 

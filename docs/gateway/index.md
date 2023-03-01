@@ -1,3 +1,5 @@
+# Hummingbot Gateway
+
 ## What is Gateway?
 
 Hummingbot Gateway, sometimes called Gateway-V2, is standalone API middleware that helps Hummingbot and other trading clients to connect to decentralized exchanges (DEX) on various blockchain networks. 
