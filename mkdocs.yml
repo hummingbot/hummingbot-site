@@ -401,9 +401,9 @@ nav:
         - Mac: v2/install/source-mac.md
         - Windows: v2/install/source-windows.md
       - Other (Unsupported) Install Methods:
-        - Raspberry Pi / ARM SBC: v2/install/docker-compose.md
-        - Windows Gitbash: v2/install/docker-compose.md
-        - Docker Desktop (Windows): v2/install/docker-compose.md
+        - Raspberry Pi / ARM SBC: v2/install/raspberry-pi.md
+        - Windows Gitbash: v2/install/gitbash.md
+        - Docker Desktop (Windows): v2/install/desktop-windows.md
     - Configuration:
       - Configuration: v2/config/index.md
       - Basic Configuration:

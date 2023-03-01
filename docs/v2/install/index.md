@@ -2,7 +2,7 @@ Hummingbot is a local software client that helps you run trading strategies that
 
 ## Releases
 
-Hummingbot's code is publicly hosted at <https://github.com/hummingbot/hummingbot>, and the `development` branch is continually updated.
+Hummingbot's code is publicly hosted at [Github](https://github.com/hummingbot/hummingbot), and the [`development`](https://github.com/hummingbot/hummingbot/tree/development) branch is continually updated.
 
 Approximately once a month, we publish an official release of Hummingbot onto the `master` branch. See [Releases](https://github.com/hummingbot/hummingbot/releases).
 
@@ -10,7 +10,7 @@ Approximately once a month, we publish an official release of Hummingbot onto th
 
 ### 🌎 Test Drive
 
-Try out Hummingbot in your web browser without installing anything! Visit the [Test Drive](https://hummingbot.io/test-drive/) page on our website.
+Try out Hummingbot in your web browser without installing anything! Visit the [Test Drive](https://hummingbot.org/test-drive/) page on our website.
 
 ### 🐳 Docker
 
@@ -18,7 +18,7 @@ Our [DockerHub](https://hub.docker.com/r/hummingbot/hummingbot) publishes Docker
 
 We recommend this path for users who run Hummingbot on Linux, in the cloud, and/or multiple bots.
 
-Read the Docker installation guide: [Install Hummingbot on Docker](./docker-windows.md)
+Read the Docker installation guide: [Linux](docker-linux.md), [Mac](docker-mac.md), [Windows](docker-windows.md)
 
 ### 🛠️ Source
 
@@ -26,7 +26,7 @@ Install Hummingbot from source, including all dependencies.
 
 We recommend this path for **developers** who want to customize Hummingbot's behavior or to build new connectors and strategies.
 
-Read the source installation guide: [Install Hummingbot from Source](./source-windows.md)
+Read the source installation guide: [Linux](source-linux.md), [Mac](source-mac.md), [Windows](source-windows.md)
 
 ### 🍓 Raspberry Pi
 

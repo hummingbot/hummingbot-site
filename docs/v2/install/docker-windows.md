@@ -10,6 +10,9 @@ The Hummingbot codebase is designed and optimized for UNIX-based systems such as
 
 For troubleshooting WSL see this [link](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
+!!! tip
+    Click the "Copy to clipboard" icon at the end of the code blocks to easily copy the commands
+
 ## 1. Install WSL
 
 Open a Powershell or Windows command prompt as administrator and run the command below to install WSL with Ubuntu 20.04

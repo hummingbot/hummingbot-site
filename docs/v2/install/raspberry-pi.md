@@ -60,7 +60,7 @@ Once Docker is installed you can then launch a Hummingbot instance with **_eithe
 
     # 4) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version: [ latest/development ] ( default = 'latest' )
-    >> version-1.12.0-arm_beta
+    >> version-1.13.0-arm_beta
     ```
 
 === "Manual"
@@ -83,7 +83,7 @@ Once Docker is installed you can then launch a Hummingbot instance with **_eithe
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    hummingbot/hummingbot:version-1.12.0-arm_beta
+    hummingbot/hummingbot:version-1.13.0-arm_beta
     ```
 
 ## **Install via Source**

@@ -20,11 +20,11 @@ The CLI is divided into five panes:
 
       * **Version:**
 
-          * Reference of Version Release (Currently at 1.12.0)
+          * Reference of Version Release (Currently at 1.13.0)
 
       * **Strategy:**
           
-          * Hummingbot has different strategy configurations that can be used for trading or liquidity mining. The strategy guide can be found [here](/strategies/). Currently we are moving away from strategy based config in favor of scripts. See documentation for scripts [here](/scripts)
+          * Hummingbot has different strategy configurations that can be used for trading or liquidity mining. Currently we are moving away from strategy based config in favor of scripts. See the quick start guide for scripts [here](../../quick-start.md)
           
       * **Strategy_file:**
           
