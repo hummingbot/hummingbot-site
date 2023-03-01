@@ -25,12 +25,12 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 Run `connect btc_markets` in order to enter your API keys:
 
 ```
-Enter your BTC MARKETS API key >>>
-Enter your BTC MARKETS secret key >>>
+Enter your btc_markets API key >>>
+Enter your btc_markets secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to BTC MARKETS.
+You are now connected to btc_markets.
 ```

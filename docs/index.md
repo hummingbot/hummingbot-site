@@ -51,6 +51,23 @@ Hummingbot Foundation is a not-for-profit foundation that facilitates decentrali
 - [Blog](https://blog.hummingbot.org): Recent news and updates
 - [Newsletter](https://hummingbot.substack.com/): Recent news and updates
 
+## ☎️ Community calls
+
+Each month, we livestream two monthly community calls on our [YouTube channel](https://youtube.com/c/hummingbot):
+
+* Community call (1st Wednesday of the month): Release highlights, community demos, AMA
+* Developer call (3rd Wednesday of the month): Mini-lessons, developer-focused AMA
+
+All calls take place on Wednesdays at 2pm GMT / 10am EST / 7am PST / 10pm SIN, with recordings posted on Youtube afterwards. 
+
+Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204&pvs=4) for the upcoming events and Youtube links.
+
+## 📬 Newsletter
+
+Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
+
+[Get the Hummingbot newsletter :fontawesome-solid-paper-plane:](https://hummingbot.substack.com/){ .md-button .md-button--primary }
+
 ## 🙋‍♂️ Getting help
 
 Hummingbot features an active, friendly community of users globally! Here are some ways to get help if you're encountering issues:
@@ -66,9 +83,3 @@ For users using Hummingbot to earn rewards on [Miner](https://miner.hummingbot.i
 - Live chat: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io).
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
-
-## 📬 Newsletter
-
-Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
-
-[Get the Hummingbot newsletter :fontawesome-solid-paper-plane:](https://hummingbot.substack.com/){ .md-button .md-button--primary }
