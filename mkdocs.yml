@@ -429,18 +429,20 @@ nav:
       - Gateway: v2/gateway/index.md
       - Installation: v2/gateway/installation.md
       - Testing Gateway: v2/gateway/testing.md
-      - Using Gateway with Hummingbot: v2/gateway/gateway-source.md
-      - Node Providers: v2/gateway/gateway-source.md
-      - Working with Tokens: v2/gateway/gateway-source.md
-      - Running DEX Bots: v2/gateway/gateway-source.md
-      - Adding DEX Connectors: v2/gateway/gateway-source.md
+      - Using Gateway with Hummingbot: v2/gateway/setup.md
+      - Working with Tokens: v2/gateway/tokens.md
+      - Running DEX Bots: v2/gateway/running-dex-bots.md
+      - Adding DEX Connectors: v2/gateway/adding-dex-connectors.md
+      - API Reference: v2/gateway/api-reference.md
     - Debugging: 
       - Debugging: v2/debug/index.md
       - VSCode: v2/debug/vscode.md
       - Pycharm: v2/debug/pycharm.md
     - Scripts Quickstart:
-      - Scripts Quickstart: v2/quick-start.md
-      - Exercise I - Hello World Script: v2/example-i.md
-      - Exercise II - Simple PMM: v2/example-ii.md
+      - Scripts Quickstart: v2/scripts/quick-start.md
+      - Exercise I - Hello World Script: v2/scripts/example-i.md
+      - Exercise II - Simple PMM: v2/scripts/example-ii.md
+      - Exercise III - Adding a custom format status: v2/scripts/example-iii.md
+      - Exercise IV - Adding a fixed price ceiling / floor feature: v2/scripts/example-iv.md
     - References: v2/references.md
     - FAQ / Troubleshooting: v2/faq.md
