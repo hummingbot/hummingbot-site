@@ -18,26 +18,20 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * CoinMarketCap: <https://coinmarketcap.com/exchanges/okx/>
 * CoinGecko: <https://www.coingecko.com/en/exchanges/okx>
 * API docs: <https://www.okx.com/docs/en/>
-* Hummingbot referral link - <https://www.okx.com/join/1931920>
+* **Hummingbot Referral Link**: <https://www.okx.com/join/1931920>
 
 ## 🔑 Connection
 
-Run `connect okex` in order to enter your API keys:
+Run `connect okx` in order to enter your API keys:
 
 ```
-Enter your OKEx API key >>>
-Enter your OKEx secret key >>>
-Enter your OKEx passphrase key >>>
+Enter your okx API key >>>
+Enter your okx secret key >>>
+Enter your okx passphrase key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to okex.
+You are now connected to okx.
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.1% maker fees and 0.15% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/okex/okex_utils.py#L12)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).

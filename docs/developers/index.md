@@ -1,15 +1,13 @@
----
-hide:
-- toc
----
-
 This section is for developers looking to contribute to Hummingbot or extend its capabilities:
 
-* [Exchange Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
-* [Gateway DEX Connectors](/developers/gateway): Build decentralized exchange (DEX) connectors
-* [Strategies](/developers/strategies): Create and customize your own Hummingbot strategies
-* [Scripts](/scripts): Create lighter versions of strategies in just a few lines of Python
 * [Debug console](/developers/debug): Inspect and modify Hummingbot's state at runtime
+* [Building DEX Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
+* [Building DEX Connectors](/gateway/adding-dex-connectors): Build decentralized exchange (DEX) connectors
+* [Building Strategies](/developers/strategies): Create and customize your own Hummingbot strategies
+* [Adding Commands](/developers/commands): Create your own Hummingbot commands
+
+!!! tip "Try Scripts instead of Strategies"
+    Check out [Scripts](/scripts) as a lighter alternative to building strategies. Scripts are single Python files that give you the same power of Strategies with easier access for developers.
 
 ## Contributing to Hummingbot
 

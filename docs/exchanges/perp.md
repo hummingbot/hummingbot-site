@@ -3,8 +3,8 @@
 ## 📁 Connector Info
 
 * Type: PERP AMM DEX
-* Folder: [/gateway/src/connectors/perp](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/perp)
-* Configs: [/gateway/src/templates/perp.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/perp.yml)
+* Folder: [/gateway/src/connectors/perp](https://github.com/hummingbot/gateway/tree/main/src/connectors/perp)
+* Configs: [/gateway/src/templates/perp.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/perp.yml)
 * Maintainer: None
 
 ## 🏆 Exchange Tier
@@ -23,19 +23,17 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* Ethereum: `optimism`
+* `ethereum`: `optimism`
 
 ## 🔑 Connection
 
 ```
-Which chain do you want uniswap to connect to? (ethereum, polygon) >>>
-Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>
-Enter your ethereum-mainnet private key >>>>
+Which chain do you want perp to connect to? (ethereum) >>>
+Which network do you want perp to connect to? (optimism) >>>
+Enter your ethereum-optimism private key >>>>
 ```
 
 If connection is successful:
 ```
-The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
+The perp connector now uses wallet [pubKey] on ethereum-optimism
 ```
-
-**Liquidity provision:** The  `uniswapLP` connector interfaces with liquidity provision-related functions. Run `gateway connect uniswapLP` in order to connect your wallet to perform LP functions.

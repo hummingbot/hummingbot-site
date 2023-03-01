@@ -1,9 +1,10 @@
-# `defi kingdoms`
+# `defikingdoms`
 
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/defikingdoms](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/defikingdoms)
+* Folder: [/gateway/src/connectors/defikingdoms](https://github.com/hummingbot/gateway/tree/main/src/connectors/defikingdoms)
+* Configs: [/gateway/src/templates/defikingdoms.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/defikingdoms.yml)
 * Maintainer:
 
 ## 🏆 Exchange Tier
@@ -20,13 +21,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://docs.defikingdoms.com/>
 * SDK: <https://github.com/DefiKingdoms/sdk>
 
-## 🔑 Setup
+## 🕸️ Supported Chains and Networks
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect defikingdoms` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Defi Kingdoms and a different exchange.
-4. Run `start` to start the strategy, and you're trading!
+* `harmony`: `mainnet`
 
-## 📘 Additional Resources
+## 🔑 Connection
 
-See [Harmony](/gateway/chains/ethereum/#harmony) for more information about the default configuration settings and how to change them.
+Run `gateway connect defikingdoms` in order to connect your wallet:
+
+```
+Which chain do you want defikingdoms to connect to? (harmony) >>>
+Which network do you want defikingdoms to connect to? (mainnet) >>>
+Enter your harmony-mainnet private key >>>>
+```
+
+If connection is successful:
+
+```
+The defikingdoms connector now uses wallet [pubKey] on harmony-mainnet
+```

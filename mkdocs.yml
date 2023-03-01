@@ -133,169 +133,167 @@ nav:
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md
       - Update and Restore Hummingbot: installation/update-hummingbot.md
-      - Basic Operations:
-        - Basic Operations: operation/index.md
-        - User Interface Guide: operation/user-interface.md
-        - Commands and Shortcuts: operation/commands-shortcuts.md
-        - Launch/Exit Hummingbot: operation/launch-exit.md
-        - Create/Delete Password: operation/password.md
-        - Connect Exchange API Keys: operation/connect.md
-        - Create/Import Config Files: operation/config-files.md
-        - Check Balances: operation/balance.md
-        - Start/Stop Strategy: operation/start-stop.md
-        - Pause/Resume Strategy: operation/pause-resume.md
-        - Check Bot/Market Status: operation/status.md
-        - Check Performance: operation/history.md
-        - Find Log Files: operation/log-files.md
-        - Export Trades/Keys: operation/export.md
-      - Strategies:
-        - Strategies: strategies/index.md
-        - Core:
-          - Pure Market Making: strategies/pure-market-making.md
-          - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-          - AMM Arbitrage: strategies/amm-arbitrage.md
-        - Community:
-          - Aroon Oscillator: strategies/aroon-oscillator.md
-          - Avellaneda Market Making: strategies/avellaneda-market-making.md
-          - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-          - Hedge: strategies/hedge.md
-          - Liquidity Mining: strategies/liquidity-mining.md
-          - Perpetual Market Making: strategies/perpetual-market-making.md
-          - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-          - TWAP: strategies/twap.md
-          - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-      - Scripts:
-        - Scripts: scripts/index.md
-        - Getting Started: scripts/getting-started.md
-        - Script Examples: scripts/examples.md
-        - PMM Scripts: scripts/pmm-scripts.md
-      - Exchange Connectors:
-        - Exchange Connectors: exchanges/index.md
-        - Gold:
-          - Binance: exchanges/binance.md
-          - Binance (perp): exchanges/binance-perpetual.md
-          - Uniswap: exchanges/uniswap.md
-        - Silver:
-          - Kucoin: exchanges/kucoin.md
-          - Gate.io: exchanges/gate-io.md
-          - Gate.io (perp): exchanges/gate-io-perpetual.md
-          - AscendEX: exchanges/ascend-ex.md
-          - Pancakeswap: exchanges/pancakeswap.md
-          - Sushiswap: exchanges/sushiswap.md
-          - dYdX: exchanges/dydx-perpetual.md
-        - Bronze CEX:
-          - AltMarkets: exchanges/altmarkets.md
-          - Binance US: exchanges/binance-us.md
-          - Bybit: exchanges/bybit.md
-          - Bybit (perp): exchanges/bybit-perpetual.md
-          - Bitfinex: exchanges/bitfinex.md
-          - BitGet: exchanges/bitget-perpetual.md
-          - BitMart: exchanges/bitmart.md
-          - Bitmex: exchanges/bitmex.md
-          - Bitmex (perp): exchanges/bitmex-perpetual.md
-          - Bittrex: exchanges/bittrex.md
-          - CI-EX: exchanges/ci-ex.md
-          - Coinbase: exchanges/coinbase.md
-          - Crypto.com : exchanges/crypto-com.md
-          - HitBTC: exchanges/hitbtc.md
-          - Himalaya: exchanges/himalaya.md
-          - Huobi: exchanges/huobi.md
-          - Kraken: exchanges/kraken.md
-          - LBank: exchanges/lbank.md
-          - Loopring: exchanges/loopring.md
-          - MEXC: exchanges/mexc.md 
-          - NDAX: exchanges/ndax.md
-          - OKX: exchanges/okx.md
-          - ProBit: exchanges/probit.md
-          - WhiteBit: exchanges/whitebit.md
-        - Bronze DEX:
-          - DeFi Kingdoms: exchanges/defikingdoms.md
-          - Defira: exchanges/defira.md
-          - MM Finance: exchanges/mm-finance.md
-          - OpenOcean: exchanges/openocean.md
-          - Pangolin: exchanges/pangolin.md
-          - Perpetual Protocol: exchanges/perp.md
-          - Quickswap: exchanges/quickswap.md
-          - Ref Finance: exchanges/ref-finance.md
-          - TraderJoe: exchanges/traderjoe.md
-          - VVS Finance: exchanges/vvs-finance.md
-      - Gateway:
-        - Gateway: gateway/index.md
-        - Setting up Gateway: gateway/setup.md
-        - Adding Tokens: gateway/tokens.md
-        - History: gateway/history.md
-        - Chains Supported:
-          - Ethereum: gateway/chains/ethereum.md
-          - Avalanche: gateway/chains/avalanche.md
-          - BNB Chain: gateway/chains/bnb-chain.md
-          - Cronos: gateway/chains/cronos.md
-          - Cosmos: gateway/chains/cosmos.md
-          - Harmony: gateway/chains/harmony.md
-          - NEAR: gateway/chains/near.md
-          - Polygon: gateway/chains/polygon.md
+    - Features:
+      - Features: operation/index.md
+      - User Interface Guide: operation/user-interface.md
+      - Commands and Shortcuts: operation/commands-shortcuts.md
+      - Launch/Exit Hummingbot: operation/launch-exit.md
+      - Create/Delete Password: operation/password.md
+      - Connect Exchange API Keys: operation/connect.md
+      - Create/Import Config Files: operation/config-files.md
+      - Check Balances: operation/balance.md
+      - Start/Stop Strategy: operation/start-stop.md
+      - Check Bot/Market Status: operation/status.md
+      - Check Performance: operation/history.md
+      - Find Log Files: operation/log-files.md
+      - Export Trades/Keys: operation/export.md
       - Advanced Features:
-        - Advanced: global-configs/index.md
+        - Advanced Features: global-configs/index.md
+        - Auto-start from Command Line: global-configs/strategy-autostart.md
         - Balance Limit: global-configs/balance-limit.md
         - Clock Tick Size: global-configs/clock-tick.md 
         - Color Settings: global-configs/color-settings.md
+        - Connect External Database: global-configs/external-db.md
         - Kill Switch: global-configs/kill-switch.md
         - Override Fees: global-configs/override-fees.md
         - Paper Trade: global-configs/paper-trade.md
+        - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-        - Strategy Autostart: global-configs/strategy-autostart.md
-        - Connect External Database: global-configs/external-db.md
-        - Rate Oracle: strategy-configs/rate-oracle.md
-        - PMM Configs:
-          - PMM Configs: strategy-configs/index.md
-          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-          - Order Levels: strategy-configs/order-levels.md
-          - Filled Order Delay: strategy-configs/filled-order-delay.md
-          - Hanging Orders: strategy-configs/hanging-orders.md
-          - Minimum Spread: strategy-configs/minimum-spread.md
-          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-          - Order Optimization: strategy-configs/order-optimization.md
-          - Inventory Skew: strategy-configs/inventory-skew.md
-          - Max Order Age: strategy-configs/max-order-age.md
-          - Order Override: strategy-configs/order-override.md
-          - Price Band: strategy-configs/price-band.md
-          - Price Source: strategy-configs/external-price-source.md
-          - Ping Pong: strategy-configs/ping-pong.md
-      - FAQ: faq.md
-      - Troubleshooting: troubleshooting.md
-      - Glossary: glossary.md
-      - ❤️ Support Hummingbot!: support-hummingbot.md
-    - Developer Docs:
-      - Developer Docs: developers/index.md
+      - PMM Configs:
+        - PMM Configs: strategy-configs/index.md
+        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+        - Order Levels: strategy-configs/order-levels.md
+        - Filled Order Delay: strategy-configs/filled-order-delay.md
+        - Hanging Orders: strategy-configs/hanging-orders.md
+        - Minimum Spread: strategy-configs/minimum-spread.md
+        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+        - Order Optimization: strategy-configs/order-optimization.md
+        - Inventory Skew: strategy-configs/inventory-skew.md
+        - Max Order Age: strategy-configs/max-order-age.md
+        - Order Override: strategy-configs/order-override.md
+        - Price Band: strategy-configs/price-band.md
+        - Price Source: strategy-configs/external-price-source.md
+        - Ping Pong: strategy-configs/ping-pong.md
+    - Gateway:
+      - Gateway: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Using Gateway with Hummingbot: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running DEX Bots: gateway/running-dex-bots.md
+      - Adding DEX Connectors: gateway/adding-dex-connectors.md
+      - API Reference: gateway/api-reference.md
+    - Strategies:
+      - Strategies: strategies/index.md
+      - Core:
+        - Pure Market Making: strategies/pure-market-making.md
+        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+      - Community:
+        - Aroon Oscillator: strategies/aroon-oscillator.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
+        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+    - Scripts:
+      - Scripts: scripts/index.md
+      - Getting Started: scripts/getting-started.md
+      - Script Examples: scripts/examples.md
+      - PMM Scripts: scripts/pmm-scripts.md
+    - Exchanges:
+      - Exchange Connectors: exchanges/index.md
+      - Gold:
+        - Binance: exchanges/binance.md
+        - Binance (perp): exchanges/binance-perpetual.md
+        - Uniswap: exchanges/uniswap.md
+      - Silver:
+        - Kucoin: exchanges/kucoin.md
+        - Gate.io: exchanges/gate-io.md
+        - Gate.io (perp): exchanges/gate-io-perpetual.md
+        - AscendEX: exchanges/ascend-ex.md
+        - Pancakeswap: exchanges/pancakeswap.md
+        - Sushiswap: exchanges/sushiswap.md
+        - dYdX: exchanges/dydx-perpetual.md
+      - Bronze CEX:
+        - AltMarkets: exchanges/altmarkets.md
+        - Binance US: exchanges/binance-us.md
+        - Bybit: exchanges/bybit.md
+        - Bybit (perp): exchanges/bybit-perpetual.md
+        - Bitfinex: exchanges/bitfinex.md
+        - BitGet: exchanges/bitget-perpetual.md
+        - BitMart: exchanges/bitmart.md
+        - Bitmex: exchanges/bitmex.md
+        - Bitmex (perp): exchanges/bitmex-perpetual.md
+        - Bittrex: exchanges/bittrex.md
+        - BTC-Markets: exchanges/btc-markets.md
+        - CI-EX: exchanges/ci-ex.md
+        - Coinbase: exchanges/coinbase.md
+        - Crypto.com : exchanges/crypto-com.md
+        - HitBTC: exchanges/hitbtc.md
+        - Himalaya: exchanges/himalaya.md
+        - Huobi: exchanges/huobi.md
+        - Kraken: exchanges/kraken.md
+        - LBank: exchanges/lbank.md
+        - Loopring: exchanges/loopring.md
+        - MEXC: exchanges/mexc.md 
+        - NDAX: exchanges/ndax.md
+        - OKX: exchanges/okx.md
+        - ProBit: exchanges/probit.md
+        - WhiteBit: exchanges/whitebit.md
+      - Bronze DEX:
+        - DeFi Kingdoms: exchanges/defikingdoms.md
+        - Defira: exchanges/defira.md
+        - Mad Meerkat: exchanges/mad-meerkat.md
+        - OpenOcean: exchanges/openocean.md
+        - Pangolin: exchanges/pangolin.md
+        - Perpetual Protocol: exchanges/perp.md
+        - Quickswap: exchanges/quickswap.md
+        - Ref: exchanges/ref.md
+        - TraderJoe: exchanges/traderjoe.md
+        - VVS: exchanges/vvs.md
+    - Chains:
+      - Chains: chains/index.md
+      - Ethereum: chains/ethereum.md
+      - Avalanche: chains/avalanche.md
+      - BNB Chain: chains/bnb-chain.md
+      - Cronos: chains/cronos.md
+      - Cosmos: chains/cosmos.md
+      - Harmony: chains/harmony.md
+      - NEAR: chains/near.md
+      - Polygon: chains/polygon.md
+    - FAQ: faq.md
+    - Troubleshooting: troubleshooting.md
+    - Glossary: glossary.md
+    - ❤️ Support Hummingbot!: support-hummingbot.md
+  - Developers:
+      - Developers: developers/index.md
       - Contribution Guidelines: developers/contributions.md
-      - Architecture: developers/architecture.md
-      - Exchange Connectors:
-        - Developing Connectors: developers/connectors/index.md
-        - Architecture:
-          - Connector Architecture: developers/connectors/architecture/index.md
-          - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-          - API Throttler: developers/connectors/architecture/api_throttler.md
+      - Debug Console: developers/debug.md
+      - Building CEX Connectors:
+        - Building CEX Connectors: developers/connectors/index.md
+        - Architecture: developers/connectors/architecture/index.md
+        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
+        - API Throttler: developers/connectors/architecture/api_throttler.md
         - Build Process: developers/connectors/build.md
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
-      - Gateway Connectors:
-        - Gateway Connectors: developers/gateway/index.md
-        - Setting up Gateway for Developers: developers/gateway/setup.md
-        - Testing Gateway: developers/gateway/testing.md
-        - Gateway API Interfaces: developers/gateway/api-interface.md
-        - Building Gateway Connectors: developers/gateway/building-gateway-connectors.md
-        - Running AMM-ARB with Gateway: developers/gateway/running-amm-arb.md
-      - Strategies:
-        - Developing Strategies: developers/strategies/index.md
+      - Building DEX Connectors: gateway/adding-dex-connectors.md
+      - Building Strategies:
+        - Building Strategies: developers/strategies/index.md
         - Architecture: developers/strategies/architecture.md
         - Tutorial: developers/strategies/tutorial.md
         - Key Concepts: developers/strategies/key-concepts.md
         - Define Configs: developers/strategies/config.md
         - Hanging Orders Tracker: developers/strategies/hanging-orders.md
-      - Debug Console: developers/debug.md
       - Adding Commands: developers/commands.md
-    - Governance Docs:
-      - Governance Docs: governance/index.md
+    - Governance:
+      - Governance: governance/index.md
+    - Whitepaper: governance/whitepaper.md
       - Proposals: governance/proposals.md
       - Polls: governance/polls.md
       - Bounties: governance/bounties.md
@@ -309,6 +307,7 @@ nav:
       - History: about/history.md
     - Releases:
       - Releases: release-notes/index.md
+    - 1.13.0: release-notes/1.13.0.md 
       - 1.12.0: release-notes/1.12.0.md
       - 1.11.0: release-notes/1.11.0.md
       - 1.10.0: release-notes/1.10.0.md
@@ -387,6 +386,7 @@ nav:
       - 0.3.1: release-notes/0.3.1.md
       - 0.3.0: release-notes/0.3.0.md
       - 0.2.0: release-notes/0.2.0.md
+
   - Docs (v2.0 - beta):
     - Docs (v2.0 - beta): v2/index.md
     - Introduction: v2/intro.md

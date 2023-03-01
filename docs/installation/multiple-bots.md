@@ -1,28 +1,10 @@
-# Running Multiple Bots
+## Orchestration module
 
-## Multiple bots via binary
-
-Users can run multiple bots of Hummingbot installed via binary by simply running a new instance to open a new window.
-
-![](/assets/img/multiplebotsbinary.gif)
+TBD.
 
 ## Multiple bots via Docker
 
-Create multiple instances using `./create.sh` script. Then, use the following commands to download the create script and make it executable.
-
-**Linux**
-
-```Linux
-wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/create.sh
-chmod a+x *.sh
-```
-
-**MacOS**
-
-```MacOS
-curl https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/create.sh -o create.sh
-chmod a+x *.sh
-```
+See the [Deploy Examples](https://github.com/hummingbot/deploy-examples) repo for examples of how to deploy Hummingbot in various configurations.
 
 ## Multiple bots from source
 

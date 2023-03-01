@@ -3,7 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/chains/polygon](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
+* Folder: [/gateway/src/connectors/quickswap](https://github.com/hummingbot/gateway/tree/main/src/connectors/quickswap)
+* Configs: [/gateway/src/templates/quickswap.yml](https://github.com/hummingbot/gateway/blob/development/src/templates/quickswap.yml)
 * Maintainer:
 
 ## 🏆 Exchange Tier
@@ -20,13 +21,22 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://docs.quickswap.exchange/reference/>
 * Fees:  <https://docs.quickswap.exchange>
 
+## 🕸️ Supported Chains and Networks
+
+* `polygon`: `mainnet`, `mumbai`
+
 ## 🔑 Setup
 
-1. Follow the instructions on [Setting up Gateway](/gateway/setup) to install the Gateway Docker container
-2. Run `gateway connect quickswap` and follow the prompts to add your wallet private key. Like all API and private keys in Hummingbot, this key is encrypted with your Hummingbot password.
-3. Afterwards, run `create` to create an [AMM Arbitrage](/strategies/amm-arbitrage/) strategy between Quickswap and a different exchange.
-4. Run `start` to start the strategy!
+Run `gateway connect quickswap` in order to connect your wallet:
 
-## 📘 Additional Resources
+```
+Which chain do you want quickswap to connect to? (polygon) >>>
+Which network do you want quickswap to connect to? (mainnet, mumbai) >>>
+Enter your polygon-mainnet private key >>>>
+```
 
-See [Polygon](/gateway/chains/ethereum/#polygon) for more information about the default configuration settings and how to change them.
+If connection is successful:
+
+```
+The quickswap connector now uses wallet [pubKey] on polygon-mainnet
+```

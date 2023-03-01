@@ -35,9 +35,6 @@ If connection is successful:
 You are now connected to bybit_perpetual.
 ```
 
-!!! tip "Testnet available"
-    Hummingbot supports the testnet version of this exchange. To connect to the testnet exchange, run `connect bybit_perpetual_testnet` instead.
+## 🧪 Testnet
 
-## 🪙 Fees
-
-Hummingbot assumes -0.025% maker fees and 0.075% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/connector/derivative/bybit_perpetual/bybit_perpetual_utils.py#L15)
+Hummingbot supports the testnet version of this exchange. To connect to the testnet exchange, run `connect bybit_perpetual_testnet` and enter your API keys.

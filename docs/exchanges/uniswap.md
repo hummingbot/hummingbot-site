@@ -3,8 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM-RANGE DEX
-* Folder: [/gateway/src/connectors/uniswap](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/uniswap)
-* Configs: [/gateway/src/templates/uniswap.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/uniswap.yml)
+* Folder: [/gateway/src/connectors/uniswap](https://github.com/hummingbot/gateway/blob/main/src/connectors/uniswap)
+* Configs: [/gateway/src/templates/uniswap.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml)
 * Maintainer: Hummingbot Foundation
 
 ## 🏆 Exchange Tier

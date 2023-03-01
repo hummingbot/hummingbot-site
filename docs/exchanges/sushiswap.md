@@ -3,8 +3,8 @@
 ## 📁 Connector info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/sushiswap](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/sushiswap)
-* Configs: [/gateway/src/templates/sushiswap.yml](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/sushiswap.yml)
+* Folder: [/gateway/src/connectors/sushiswap](https://github.com/hummingbot/gateway/tree/main/src/connectors/sushiswap)
+* Configs: [/gateway/src/templates/sushiswap.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/sushiswap.yml)
 * Maintainer: Hummingbot Foundation
 
 ## 🏆 Exchange Tier
@@ -23,21 +23,22 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 
 ## 🕸️ Supported Chains and Networks
 
-* Ethereum: `mainnet`
-* BNB Chain: `mainnet`, `testnet`
+* `ethereum`: `mainnet`, `goerli`
+* `binance-smart-chain`: `mainnet`, `testnet`
+* `polygon`: `mainnet`, `mumbai`
 
 ## 🔑 Connection
 
 Run `gateway connect sushiswap` in order to connect your wallet:
 
 ```
-Which chain do you want sushiswap to connect to? (ethereum, binance-smart-chain) >>>
-Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>
+Which chain do you want sushiswap to connect to? (ethereum, binance-smart-chain, polygon) >>>
+Which network do you want sushiswap to connect to? (mainnet, goerli) >>>
 Enter your ethereum-mainnet private key >>>>
 ```
 
 If connection is successful:
 
 ```
-The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
+The sushiswap connector now uses wallet [pubKey] on ethereum-mainnet
 ```

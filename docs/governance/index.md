@@ -14,6 +14,8 @@ Hummingbot Foundation maintains the resources below to make the governance proce
 
 * [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet maintained by the Foundation, this shows you the real-time HBOT circulating supply, approved proposals, active bounties, and HBOT distributions.
 
+* [Foundation Calendar](https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204): Upcoming release dates, monthly polls, community calls, and other events.
+
 * [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1): A public Github board for bug fixes and proposed enhancements with development bounties attached to them.
 
 * [Pull Request Status](https://github.com/orgs/hummingbot/projects/1): A public Github board for active pull requests that are being voted on, reviewed, and merged.
@@ -22,11 +24,12 @@ Hummingbot Foundation maintains the resources below to make the governance proce
 
 Hummingbot employs a decentralized, community-driven maintenance process that relies upon contributions by a decentralized network of community developers.
 
-* [Proposals](./proposals): HBOT token holders can create and vote on various types of proposals to steer the evolution of the project. Each proposal type may have different guidelines, HBOT balance requirements, and approval/quorum thresholds.
-* [Polls](./polls): Different polls that the Foundation conducts each month to encourage HBOT governance
-* [Bounties](./bounties): Process of creating and assigning developer bounties for making improvements to the Hummingbot codebase
-* [Releases](./releases): Process of reviewing and merging pull requests into official monthly releases
-* [Epochs](./epochs): Quarterly periods with fixed exchange and strategy tiers that are defined via polls
+* [Whitepaper](whitepaper.md): Originally published in December 2021, this document that explains the Foundation's goals and how its governance system works.
+* [Proposals](proposals.md): HBOT token holders can create and vote on various types of proposals to steer the evolution of the project. Each proposal type may have different guidelines, HBOT balance requirements, and approval/quorum thresholds.
+* [Polls](polls.md): Different polls that the Foundation conducts each month to encourage HBOT governance
+* [Bounties](bounties.md): Process of creating and assigning developer bounties for making improvements to the Hummingbot codebase
+* [Releases](releases.md): Process of reviewing and merging pull requests into official monthly releases
+* [Epochs](epochs.md): Quarterly periods with fixed exchange and strategy tiers that are defined via polls
 
 ## How to Participate
 

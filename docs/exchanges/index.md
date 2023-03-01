@@ -66,15 +66,16 @@ Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BR
 |----------|------|-------------|
 | [Bitget](./bitget-perpetual) | PERP CLOB CEX |
 | [Bitmart](./bitmart) | SPOT CLOB CEX | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
+| [BTC-Markets](./btc-markets) | SPOT CLOB CEX |
 | [CI-EX](./ci-ex) | SPOT CLOB CEX |
 | [Himalaya](./Himalaya) | SPOT CLOB CEX |
 | [NDAX](./ndax) | SPOT CLOB CEX |
 | [LBank](./lbank) | SPOT CLOB CEX |
-| [MM Finance](./mm-finance) | SPOT AMM DEX |
+| [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX |
 | [Pangolin](./pangolin) | SPOT AMM DEX |
-| [Ref Finance](./ref-finance) | SPOT AMM DEX |
+| [Ref](./ref) | SPOT AMM DEX |
 | [Trader Joe](./traderjoe) | SPOT AMM DEX |
-| [VVS Finance](./vvs-finance) | SPOT AMM DEX |
+| [VVS](./vvs) | SPOT AMM DEX |
 
 ## Contributing Connectors
 
