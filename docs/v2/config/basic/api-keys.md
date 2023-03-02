@@ -17,7 +17,7 @@ See [Exchanges](/exchanges) for more information about how to create API keys fo
 
 Run the `connect` command to view the status of each connector. It also shows failed connections due to connectivity issues, invalid API key permissions, etc.
 
-![](/assets/img/connection-status.png)
+![Alt text](../../assets/connection-status.png)
 
 **Keys Added** column indicates if API keys are added to Hummingbot.
 

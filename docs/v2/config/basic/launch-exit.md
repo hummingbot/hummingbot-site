@@ -95,11 +95,11 @@ You can click the **OK** button on the welcome screen or you can press **TAB** t
 
 ### Deleting a password
 
-Passwords and private keys are saved as encrypted files in `hummingbot_conf` (via Docker and binary) or `/conf` directory (installed from source).
+The password is stored as an encrypted `.password_verification` file in `hummingbot_conf` (via Docker and binary) or `/conf` directory (installed from source).
 
-To reset your password, delete all files starting with `encrypted_` prefix.
+Delete the `.password_verification` file under the `hummingbot_conf` folder to reset the password. Note that the .password_verification file is hidden so you won't be able to see it by default unless you set your system to show all hidden files. In the terminal use the `ls -a` command to list all files
 
-![](/assets/img/encrypted_files.png)
+![password](../../assets/password.png)
 
 !!! warning
     This will disconnect your API keys from Hummingbot. You will have to re-connect your API keys.
