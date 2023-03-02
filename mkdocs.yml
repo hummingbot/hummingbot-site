@@ -121,6 +121,129 @@ markdown_extensions:
   - toc:
       permalink: true
 
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+# Project info
+site_name: Hummingbot Docs
+site_description: The official documentation for Hummingbot
+site_author: Hummingbot Foundation
+site_url: https://docs.hummingbot.org
+
+# Repository
+repo_name: 'hummingbot/hummingbot'
+repo_url: 'https://github.com/hummingbot/hummingbot'
+edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
+
+# Copyright
+copyright: Copyright &copy; 2022 Hummingbot Foundation
+
+# Configuration
+theme:
+  name: material
+  logo: assets/img/logo.png
+  favicon: assets/img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+      text: Roboto
+      code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+
+plugins:
+  - search
+  - git-revision-date
+  - social:
+      cards_color:
+        fill: rgb(40, 47, 56)
+        text: white
+
+extra:
+  homepage: https://docs.hummingbot.org
+  generator: false
+  analytics:
+    provider: google
+    property: UA-119262087-3
+  social:
+    - icon: fontawesome/solid/envelope
+      link: https://hummingbot.substack.com
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/hummingbot
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/hummingbot_org
+    - icon: fontawesome/brands/github
+      link: https://github.com/hummingbot/hummingbot
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/hummingbot/hummingbot
+
+extra_css:
+  - assets/css/custom.css
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - assets/js/tables.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/config.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      user: hummingbot
+      repo: hummingbot
+      repo_url_shorthand: true
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
 # Navigation
 nav:
   - Docs:
@@ -270,7 +393,7 @@ nav:
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md
     - ❤️ Support Hummingbot!: support-hummingbot.md
-  - Developers:
+    - Developers:
       - Developers: developers/index.md
       - Contribution Guidelines: developers/contributions.md
       - Debug Console: developers/debug.md
@@ -293,7 +416,7 @@ nav:
       - Adding Commands: developers/commands.md
     - Governance:
       - Governance: governance/index.md
-    - Whitepaper: governance/whitepaper.md
+      - Whitepaper: governance/whitepaper.md
       - Proposals: governance/proposals.md
       - Polls: governance/polls.md
       - Bounties: governance/bounties.md
@@ -307,7 +430,7 @@ nav:
       - History: about/history.md
     - Releases:
       - Releases: release-notes/index.md
-    - 1.13.0: release-notes/1.13.0.md 
+      - 1.13.0: release-notes/1.13.0.md 
       - 1.12.0: release-notes/1.12.0.md
       - 1.11.0: release-notes/1.11.0.md
       - 1.10.0: release-notes/1.10.0.md
@@ -386,7 +509,6 @@ nav:
       - 0.3.1: release-notes/0.3.1.md
       - 0.3.0: release-notes/0.3.0.md
       - 0.2.0: release-notes/0.2.0.md
-
   - Docs (v2.0 - beta):
     - Docs (v2.0 - beta): v2/index.md
     - Introduction: v2/intro.md
