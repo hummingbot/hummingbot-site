@@ -22,10 +22,22 @@ Once the OS is installed and booted then you can follow the steps below to insta
 
 Copy and paste each line of code one by one into the terminal
 
+!!! tip
+    Click the "Copy to clipboard" icon at the end of the code blocks to easily copy the commands
+
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
+```
+
+```
 sudo sh get-docker.sh
+```
+
+```
 sudo usermod -a -G docker $USER
+```
+
+```
 sudo systemctl start docker && sudo systemctl enable docker
 ```
 
@@ -66,24 +78,38 @@ Once Docker is installed you can then launch a Hummingbot instance with **_eithe
 === "Manual"
 
     ```bash
-    # 1) Create folder for your new instance
-    mkdir hummingbot_files
+    Create folder for your new instance
 
-    # 2) Create folders for logs, config files and database file
+    ```
+    mkdir hummingbot_files
+    ```
+
+    Create folders for logs, config files and database file
+
+    ```
     mkdir hummingbot_files/hummingbot_conf
+    mkdir hummingbot_files/hummingbot_conf/connectors
+    mkdir hummingbot_files/hummingbot_conf/strategies
+    mkdir hummingbot_files/hummingbot_certs
     mkdir hummingbot_files/hummingbot_logs
     mkdir hummingbot_files/hummingbot_data
     mkdir hummingbot_files/hummingbot_scripts
+    mkdir hummingbot_files/hummingbot_pmm_scripts
 
-    # 3) Launch a new instance of hummingbot
+    ```
+
+    Launch a new instance of hummingbot
+
+    ```
     docker run -it \
     --network host \
     --name hummingbot-instance \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_conf,destination=/conf/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
+    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_pmm_scripts,destination=/pmm_scripts/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    hummingbot/hummingbot:version-1.13.0-arm_beta
+    hummingbot/hummingbot:latest
     ```
 
 ## **Install via Source**

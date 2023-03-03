@@ -70,8 +70,7 @@ mkdir hummingbot_files/hummingbot_logs
 mkdir hummingbot_files/hummingbot_data
 mkdir hummingbot_files/hummingbot_scripts
 mkdir hummingbot_files/hummingbot_pmm_scripts
-mkdir hummingbot_files/gateway_conf
-mkdir hummingbot_files/gateway_logs
+
 ```
 
 Launch a new instance of hummingbot
@@ -85,8 +84,6 @@ docker run -it \
 --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
 --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_pmm_scripts,destination=/pmm_scripts/" \
 --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
---mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_certs,destination=/home/hummingbot/.hummingbot-gateway/certs/" \
---mount "type=bind,source=$(pwd)/hummingbot_files/gateway_conf,destination=/gateway-conf/" \
 hummingbot/hummingbot:latest
 ```
 

@@ -558,8 +558,8 @@ nav:
       - API Reference: v2/gateway/api-reference.md
     - Debugging: 
       - Debugging: v2/debug/index.md
-      - VSCode: v2/debug/vscode.md
-      - Pycharm: v2/debug/pycharm.md
+      - VSCode: v2/debug/vscode-linux.md
+      - Pycharm: v2/debug/pycharm-linux.md
     - Scripts Quickstart:
       - Scripts Quickstart: v2/scripts/quick-start.md
       - Exercise I - Hello World Script: v2/scripts/example-i.md
