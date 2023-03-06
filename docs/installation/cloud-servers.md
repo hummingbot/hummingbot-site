@@ -6,8 +6,8 @@ Hummingot Docker instances takes up around 500 MB of storage space and 4 GB for 
 
 | Provider              | Instance Type   | Instance Details      |
 | --------------------- | --------------- | --------------------- |
-| Google Cloud Platform | g1-small        | 1 vCPU, 1.7 GB memory |
-| Amazon Web Services   | t2.small        | 1 vCPU, 2 GB memory   |
+| Google Cloud Platform | g1-small        | 2 vCPU, 4 GB memory |
+| Amazon Web Services   | t2.small        | 2 vCPU, 4 GB memory   |
 | Microsoft Azure       | Standard_D2s_v3 | 2 vCPU, 8 GB memory   |
 
 These instances are pre-loaded with system files that takes up around 1.2 GB so we recommend having at least **8 GB of storage space** in your cloud server.

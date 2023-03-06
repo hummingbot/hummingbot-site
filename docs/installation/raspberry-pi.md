@@ -1,43 +1,60 @@
-# Raspberry Pi
+# Raspberry Pi / ARM64
 
-## Install via Docker
+The following steps are for the Raspberry Pi but it should also work with any other device that uses the same ARM architecture.
 
-### Prerequisites
+Running Hummingbot on a Raspberry Pi or similar device has the same main benefit of running it on a cloud server: having a dedicated machine for Hummingbot. Raspberry Pi’s are relatively low cost, easy to set up, and, of course, don’t have the monthly charges associated with a cloud provider.
 
-!!! note
-    This installation method is currently under testing and awaiting feedback from users. Should you run into problems or have found a fix to solve errors along the way, feel free to reach out through our [Discord](https://discord.hummingbot.io/) support channel.
+## Prerequisites
 
-**Install Docker and change permissions**
+### Download 64-bit OS
+
+To run Hummingbot on a Raspberry Pi, a 64-bit OS is required as it won't work with 32-bit. You can download the 64-bit OS from the [Raspberry Pi website](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit) or from the [Ubuntu](https://ubuntu.com/download/raspberry-pi) website.
+
+You can also choose between CLI (command line) and Desktop GUI versions but you'll get more performance with just using the CLI version.
+
+### Load the image file to your Raspberry Pi’s SD card
+
+The Raspberry Pi has an easy to follow [guide](https://www.raspberrypi.org/documentation/installation/installing-images/) with alternatives on how to load the SD card with a Raspberry Pi OS from different operating systems.
+
+Once the OS is installed and booted then you can follow the steps below to install Hummingbot using either Docker or Source
+
+## **Install via Docker**
+
+Copy and paste each line of code one by one into the terminal
+
+!!! tip
+    Click the "Copy to clipboard" icon at the end of the code blocks to easily copy the commands
 
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -a -G docker $USER
 ```
 
-**Start and automate Docker**
+```
+sudo sh get-docker.sh
+```
+
+```
+sudo usermod -a -G docker $USER
+```
 
 ```
 sudo systemctl start docker && sudo systemctl enable docker
 ```
 
-**Exit terminal/shell to refresh shell**
-
-```
-Exit
-```
-
 !!! warning
-    Restart terminal — close and restart your terminal window to enable the correct permissions for `docker` command before proceeding.
+    This step is important — make sure to close and restart your terminal window to enable the correct permissions for `docker` command before proceeding.
 
-**Install Hummingbot**
+```
+exit
+```
 
-The Latest ARM version can be found here (filter list by "arm") - [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
+Once Docker is installed you can then launch a Hummingbot instance with **_either_** of the following options:
 
-You can install Hummingbot with **_either_** of the following options:
-
-- **Scripts**: download and use automated install scripts
+- **Scripts**: download and use automated Docker scripts
 - **Manual**: run install commands manually
+
+!!! note  
+    The Raspberry Pi uses a different processor architecture (ARM) which means you'll need to use a specific Docker image that was built for the ARM architecture. When running the `./create.sh` command or creating the Docker instance manually you'll have to specify the image to use which is usually in this format - `version-[version_number]-arm_beta` The latest ARM versions can be found here (filter list by "arm") - [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
 
 === "Scripts"
 
@@ -55,7 +72,7 @@ You can install Hummingbot with **_either_** of the following options:
 
     # 4) Pull Hummingbot ARM image when asked what version to use
     Enter Hummingbot version: [ latest/development ] ( default = 'latest' )
-    >> version-1.8.0-arm_beta
+    >> version-1.13.0-arm_beta
     ```
 
 === "Manual"
@@ -78,126 +95,89 @@ You can install Hummingbot with **_either_** of the following options:
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
     --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    hummingbot/hummingbot:version-1.8.0-arm_beta
+    hummingbot/hummingbot:version-1.13.0-arm_beta
     ```
 
-## Install from source
+## **Install via Source**
 
-This guide walks you through how to prepare your development environment and get started developing for Hummingbot.
+Open a terminal (GUI) or SSH into the Raspberry Pi and copy / paste the following code line by line into the terminal
 
-Running Hummingbot on a Raspberry Pi has the same main benefit of running it on a cloud server: having a dedicated machine for Hummingbot. Raspberry Pi’s are relatively low cost, easy to set up, and, of course, don’t have the monthly charges associated with a cloud provider.
-
-![rpi](/assets/img/rpi-hummingbot.jpg)
-
-Read through our full blog post about [Deploying Hummingbot on a Raspberry Pi](https://blog.hummingbot.org/2020-07-deploying-hummingbot-on-a-raspberry-pi/).
-
-The only way to currently install Hummingbot on a Raspberry Pi is by downloading the source files from GitHub and compiling and running from source. This adds a few more steps than downloading binaries or running from Docker, but below we have provided a step-by-step guide to walk you through the process.
-
-### Prerequisites
-
-**Install 64-bit Raspberry Pi OS**
-
-To run Hummingbot on a Raspberry Pi, a 64-bit OS is required. Raspberry Pi now has an official 64-bit version of the Raspberry Pi OS. You can download the 64-bit OS from the [Raspberry Pi website](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit).
-
-**Load the image file to your Raspberry Pi’s SD card**
-
-Raspberry Pi has an easy to follow [guide](https://www.raspberrypi.org/documentation/installation/installing-images/) with alternatives on how to load the SD card with a Raspberry Pi OS from different operating systems.
-
-**Boot your Raspberry Pi**
-
-Insert your SD card into the Raspberry Pi and plug in the power source.
-From there, the first launch options will be prompted.
-
-**Install Hummingbot dependencies**
-
-Open the Raspberry Pi terminal. In the top left corner of the desktop, there is a shortcut that opens the terminal.
+Update the repository and install important dependencies
 
 ```
-# Install Miniforge, Python and update alternatives
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
-sh Miniforge3-Linux-aarch64.sh
-sudo apt-get install python3.7
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
-
+sudo apt update
 ```
 
-Logout and login again to enable `conda`, this will make the `conda` command available in shell / terminal.
-
-**Clone project and install dependencies**
+```
+sudo apt upgrade -y
+```
 
 ```
-# Clone the Hummingbot repo from Github
+sudo apt-get install build-essential libssl-dev libffi-dev gcc python3-dev python-dev python3.7 -y
+```
+
+Install Miniforge
+
+```
+wget https://github.com/conda-forge/miniforge/releases/download/4.11.0-4/Miniforge3-4.11.0-4-Linux-aarch64.sh
+```
+
+```
+sh Miniforge3-4.11.0-4-Linux-aarch64.sh
+```
+
+Restart the terminal
+
+```
+exec bash
+```
+
+Install `conda-build`
+
+```
+conda install conda-build
+```
+
+Clone the Hummingbot repository
+
+```
 git clone https://github.com/hummingbot/hummingbot.git
+```
 
-# Install the pip dependencies
+!!! note
+    If you need to switch branches (ie. `development` branch) then after cloning the repository use the command `git checkout [branch_name]` to switch branches. For example, to switch to the development branch use `git checkout development`
+
+Change directory into the Hummingbot folder
+
+```
 cd hummingbot
+```
+
+!!! note
+    If you are using Ubuntu 22.04 you'll need to go into the `./setup` folder first and edit the `environment-linux-aarch64.yml` file and change "cryptography==2.8" to "cryptography==3.1.1" before running the `./install` command otherwise you'll get an error "could not build wheels for cryptography"
+
+Run the `install` command
+
+```
 ./install
+```
+
+Activate the `conda` environment
+
+```
 conda activate hummingbot
 ```
 
-**Compile and run Hummingbot**
+Clean your Hummingbot directory and then compile
 
 ```
-# Clean your Hummingbot directory and compile
 ./clean && ./compile
+```
 
-# Run Hummingbot
+Launch Hummingbot
+
+```
 bin/hummingbot.py
 ```
 
-## Create Hummingbot ARM image for Docker
-
-This guide would help you build your own Hummingbot ARM image when there is a new release. Please be advised that for every new release, you would need to [install from source](#install-from-source) first and follow the steps provided in order to create an image that you can use for your RaspberryPi docker.
-
-1. Go to your source directory and run the command below
-
-```
-# Set a name of your image on insert_name
-docker build -t coinalpha/hummingbot:insert_name -f Dockerfile.arm .
-```
-
-On this sample, we set `v036` for the name of the image. This is needed when you run `./create.sh` command
-![](/assets/img/rpi-docker-img.png)
-
-!!! warning
-    Building the Hummingbot ARM image from source would normally take 45 minutes or more
-
-## Controlling remotely using VNC Viewer
-
-SSH and VNC features are natively built into the Raspberry Pi and can easily be turned on in the Raspberry Pi configurations settings. By turning these on, you can access the Raspberry Pi from another computer by:
-
-1. Using terminal to SSH, similar to how you would access a cloud server
-2. Using VNC to enable remote desktop access to the Raspberry Pi GUI.
-
-This is very convenient; after initial setup of the Raspberry Pi, you can simply unplug the monitor, keyboard and mouse, and just set the Raspberry Pi itself aside and just access it remotely going forward.
-
-![rpi](/assets/img/rpi-ssh.jpg)
-
-### Enable SSH and VNC on your Raspberry Pi
-
-- Option 1: Terminal using raspi-config
-
-```
-sudo raspi-config
-```
-
-Under Interfacing Options, enable SSH and VNC.
-
-- Option 2: Access in Raspberry Pi Configuration
-
-Select the menu in the top left corner of the screen then go to **Preferences > Raspberry Pi configuration > Interfaces** from there you will see options to enable SSH and VNC.
-
-![rpi](/assets/img/rpi-config.jpg)
-
-!!! tip
-    Set a default screen resolution in `raspi-config` select: `7 Advanced Options` > `A5 Resolution` to enable VNC access to the GUI whenever you boot the Raspberry Pi without a connected monitor. For troubleshooting please visit this [link](https://www.raspberrypi.org/forums/viewtopic.php?t=216737).
-
-Setting a default resolution will avoid the following error:
-
-![rasp](/assets/img/rasp-no-monitor.png)
-
-### Get your Raspberry Pi’s IP address
-
-Type `ifconfig` to get the IP address of your Raspberry Pi to enter into your VNC Viewer. For SSH, you can run `ssh pi@[ipaddress]`. The IP address is the `inet` address which is not the localhost IP address 127.0.0.1:
-
-![rpi](/assets/img/rpi-private-address.jpg)
+## Additional Resources
