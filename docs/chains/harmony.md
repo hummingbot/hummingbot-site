@@ -1,7 +1,7 @@
 
-## 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/harmony)
+## 📁 [Chain folder](https://github.com/hummingbot/gateway/tree/main/src/chains/harmony)
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/harmony.yml)
+## 📁 [Config template](https://github.com/hummingbot/gateway/tree/main/src/templates/harmony.yml)
 
 ## ℹ️ Chain Info
 
