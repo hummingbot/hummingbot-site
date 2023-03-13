@@ -1,98 +1,82 @@
+# Installation and setup
 
-Scripts make it easier for Hummingbot users to prototype new strategies focusing only on the functionality and forgetting about configuration files and compilation
+Before we begin coding, let’s ensure that you are set up properly.
 
-Since scripts are in Python, you can modify the script's code and re-run it to apply the changes without exiting the Hummingbot interface or re-compiling the code.
+## Installation
 
-Scripts do not require configuration files, so the `create` and `import` commands do not apply when using them.
+Follow [this guide](https://docs.hummingbot.org/installation/) to install Hummingbot. You install it using Docker (easiest for new users) or from source (best for developers).
 
-## Adding scripts
+If you have questions or need help, join the [official Hummingbot Discord](https://discord.gg/hummingbot) and ask for help on the #support channel from our community.
 
-All script examples are located in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder. If you save your scripts there, they will be accessible from Hummingbot.
+## Folder structure
 
-## Running a script
+Note that Hummingbot is **local client software** that you run on your own machine, so you have full control over how it’s configured and where you save your files. No one else can access your data and secrets!
 
-From the Hummingbot client interface, enter `start --script [filename]` to start a script. 
+These are the most important folders for this guide.
 
-Run `stop` to stop a script.
+<div style="display:flex;">
+  <div style="flex:1;padding-right:10px;">
 
-## Creating your first script
+  Source Install <br>
 
-Let's get started with a "Hello World" example of a script:
+    ```
+    📦 hummingbot
+     ┣ 📂 assets
+     ┣ 📂 bin
+     ┣ 📂 build
+     ┣ 📂 conf
+     ┃ ┣ 📂 connectors
+     ┃ ┗ 📂 strategies
+     ┣ 📂 docker
+     ┣ 📂 hooks
+     ┣ 📂 hummingbot
+     ┣ 📂 installation
+     ┣ 📂 integration_test
+     ┣ 📂 logs
+     ┣ 📂 pmm_scripts
+     ┣ 📂 redist
+     ┣ 📂 scripts
+     ┣ 📂 setup
+     ┗ 📂 test
+    ```
 
-### 1. Create file
+  </div>
+  <div style="flex:1;padding-left:10px;">
+  
+  Docker install <br>
+    ```
+    📦hummingbot_files
+    ┣ 📂conf
+    ┃ ┣ 📂connectors
+    ┃ ┣ 📂strategies
+    ┃ ┣ 📜conf_client.yml
+    ┃ ┣ 📜conf_fee_overrides.yml
+    ┃ ┣ 📜hummingbot_logs.yml
+    ┃ ┣ 📜.password_verification
+    ┗ 📂logs
+    ┗ 📜logs_hummingbot.log
+    ┣ 📂data
+    ┣ 📂scripts
+    ┣ 📂certs
+    ┗ 📂pmm-scripts
+    ```
+  </div>
+</div>
 
-Create a new Python file `script1.py` in the `/scripts` folder. From the root Hummingbot directory, run:
-```
-touch scripts/script1.py
-```
+- **conf:** Here you will find the configuration files of api_keys, strategies, password, client, logs, and fees.
 
-Open the file in a text editor like Visual Studio Code, add the following code to it, and save the file:
+- **data:** Databases and CSV files of trades.
 
-```python
+- **logs:** Log files of your running scripts are stored here.
 
-from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
-class Script1(ScriptStrategyBase):
+- **hummingbot:** All the components that we are going to use are inside this folder. Read the API Reference guide to learn more about each component.
 
-  # It is best to first use a paper trade exchange connector 
-  # while coding your strategy, once you are happy with it
-  # then switch to real one.
+- **scripts:** This folder stores the code of the sample scripts, as well as new scripts that we create.
 
-  markets = {"binance_paper_trade": {"BTC-USDT"}}
+### Cheatsheet
 
-```
-
-### 2. Start and stop script
-
-Start the Hummingbot client, and run the command: `start --script script1.py`
-
-At this point, you should see Hummingbot loading up a connector (`binance_paper_trade`) and an order book (BTC-USDT) for your script, as well messages in the log pane about your script running.
-
-![](script-running.png)
-
-Run the `status` command to see the current status of your running script:
-
-![](script-status.png)
-
-Stop the script by running the `stop` command.
-
-### 3. Emit log messages
-
-Now, lets log the Bitcoin price every tick by adding the `on_tick` function to our `Script1` class. Add the following function to the `Script1` base class in the file above, and save the file:
-
-```python
-def on_tick(self):
-        price = self.connectors["binance_paper_trade"].get_mid_price("BTC-USDT")
-        msg = f"Bitcoin price: ${price}"
-        self.logger().info(msg)
-        self.notify_hb_app_with_timestamp(msg)
-```
-
-Restart the script with `start --script script1.py`. You should see log messages appearing in the left pane:
-
-![](script-log-btc-price.png)
-
-Here is what is happening:
-
-- `on_tick` runs for every tick the bot internal clock executes (by default a new tick is generated every 1 second).
-- `self.logger().info(msg)` logs the message to your Hummingbot app log panel and to `logs/log_script1.log` file
-- `self.notify_hb_app_with_timestamp(msg)` sends the message to your output panel (top left). If you have set up [Telegram bot integration](https://hummingbot.org/global-configs/telegram/), you will get the message on your Telegram chat as well.
-
-## Notes & Tips
-
-- You can define multiple connectors and multiple order books, e.g.
-
-```python
-markets = { "binance_paper_trade": {"BTC-USDT", "ETH-USDT"}, 
-            "kucoin": {"LUNA-USDT"}
-          }
-```
-
-- You will see a sqlite database (`/data/script1.sqlite`) and a log file (`/logs/log_script1.log`) created for your script
-- Your script is loaded up at runtime, so you don’t have to exit Hummingbot while you are updating your script code. You will just need to `stop` (to stop the current execution) and start it again with the command `start --script script.py` again.
-- If you want to use a real connector instead of a paper trade one, first you need to configure it using the `connect` command and provide all the required API credentials
-- Use arrow up key in the client to cycle through the list of previous commands
-- Use [DBeaver](https://dbeaver.io/) or another free database management tool) to open the sqlite database to see what the data that Hummingbot stores for you
-
+!!! abstract "Cheat Sheet"
+    We created this [cheat sheet](CheatSheet%20Hummingbot%20Scripts%20-%20White.pdf) highlighting the most commonly used methods available. While you may not need it in the future, keeping it open on a second screen, for now, would be helpful. There is also a black version available [here](CheatSheet%20Hummingbot%20Scripts%20-%20Black.pdf)
 
 ## Debugging scripts with PyCharm
 

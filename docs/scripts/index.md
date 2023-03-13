@@ -1,10 +1,13 @@
-Scripts enable Hummingbot users to build customized strategies and access the full power of Hummingbot exchange connectors in a few lines of Python code. 
+Scripts enable Hummingbot users to build customized strategies and access the full power of Hummingbot exchange connectors in a few lines of Python code.
 
-Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** offer users an easier alternative to creating a full-blown strategy. They are light Python files that can be run and modified without re-compilation, so users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. 
+Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** offer users an easier alternative to creating a full-blown strategy. They are light Python files that can be run and modified without re-compilation, so users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface.
 
 Unlike strategies, scripts can be created without configuration files, so only a single file is needed. However, scripts can access all the raw data, events, and methods in Hummingbot connectors, as well as other features such as the Rate Oracle.
 
 See [Getting Started](getting-started) to start running scripts.
+
+!!! abstract "Cheat Sheet"
+    We created this [cheat sheet](CheatSheet%20Hummingbot%20Scripts%20-%20White.pdf) highlighting the most commonly used methods available. While you may not need it in the future, keeping it open on a second screen, for now, would be helpful. There is also a black version available [here](CheatSheet%20Hummingbot%20Scripts%20-%20Black.pdf)
 
 See [Examples](examples) for a list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
 
@@ -20,8 +23,8 @@ Introduced in version [0.29.0](/release-notes/0.29.0), **PMM Scripts** are an ea
 
 Since PMM Scripts run in a separate process, they have limited access to variables and events in the main Hummingbot process. For this reason, Hummingbot Foundation advises the community to contribute to the generalized Scripts module rather than PMM Scripts going forward.
 
-* [Getting Started with PMM Scripts](pmm-scripts)
-* [📁 PMM Script Examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts)
+- [Getting Started with PMM Scripts](pmm-scripts)
+- [📁 PMM Script Examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts)
 
 ## 📺 Videos and Guides
 
