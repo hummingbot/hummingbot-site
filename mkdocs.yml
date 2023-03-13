@@ -202,7 +202,13 @@ nav:
         - Uniswap v3 LP: strategies/uniswap-v3-lp.md
     - Scripts:
       - Scripts: scripts/index.md
+      - Quickstart Guide: scripts/quickstart.md
       - Getting Started: scripts/getting-started.md
+      - Exercise 1: scripts/Exercise1.md
+      - Exercise 2: scripts/Exercise2.md
+      - Exercise 3: scripts/Exercise3.md
+      - Exercise 4: scripts/Exercise4.md
+      - Exercise 5: scripts/Exercise5.md
       - Script Examples: scripts/examples.md
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:

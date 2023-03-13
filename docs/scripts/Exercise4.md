@@ -39,7 +39,7 @@ We will extend the file used in the last example: `quickstart_script_2.py`
 
 Let’s quickly recap the structure of the `on_tick` method:
 
-```python
+```py hl_lines="5"
     def on_tick(self):
     if self.create_timestamp <= self.current_timestamp:
         self.cancel_all_orders()

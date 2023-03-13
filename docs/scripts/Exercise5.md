@@ -13,6 +13,8 @@ To do so, we will:
 
 Now, let’s implement the solution, extending the same file as the last example: `quickstart_script_2.py`.
 
+---
+
 ## Create candle instance
 
 First, we will create an candle instance:
@@ -51,11 +53,12 @@ class QuickstartScript2(ScriptStrategyBase):
     markets = {exchange: {trading_pair}}
 ```
 
-As shown above, we import the `CandlesFactory` class and call the `get_candle` method to create a candle instance in the variable `eth_1m_candles`.
+!!! Explanation
+    As shown above, we import the `CandlesFactory` class and call the `get_candle` method to create a candle instance in the variable `eth_1m_candles`.
 
-Note that we are importing `pandas_ta`, a library that we will use to generate technical indicators from the candle data.
+    Note that we are importing `pandas_ta`, a library that we will use to generate technical indicators from the candle data.
 
-While we still define initial values for `price_ceiling` and `price_floor`, we will override them later in the `on_tick` method.
+    While we still define initial values for `price_ceiling` and `price_floor`, we will override them later in the `on_tick` method.
 
 ---
 
@@ -109,9 +112,10 @@ def on_tick(self):
         self.create_timestamp = self.order_refresh_time + self.current_timestamp
 ```
 
-- We are adding a new condition that will block the execution if the candles are not ready.
-- Then we are adding the method `calculate_price_ceiling_floor` and the implementation is accessing to the dataframe of the Candles object by using the method `self.eth_1m_candles.candles_df`
-- Lastly, we are getting the last row and assigning the upper and lower bound to `price_ceiling` and `price_floor`
+!!! Explanation
+    - We are adding a new condition that will block the execution if the candles are not ready.
+    - Then we are adding the method `calculate_price_ceiling_floor` and the implementation is accessing to the dataframe of the Candles object by using the method `self.eth_1m_candles.candles_df`
+    - Lastly, we are getting the last row and assigning the upper and lower bound to `price_ceiling` and `price_floor`
 
 !!! tip
     💡 Check out the [pandas-ta documentation](https://github.com/twopirllc/pandas-ta) to learn how to generate other types of technical indicators.
@@ -150,10 +154,13 @@ def format_status(self) -> str:
     return "\n".join(lines)
 ```
 
-- We are using the list approach to add strings and then show all of them
-- First, we are adding to our original text the price ceiling and price floor
-- Then we are logging the information of the candles.
-- Check that when you run the code, the last candle is updated in real-time ;)
+!!! Explanation
+    - We are using the list approach to add strings and then show all of them
+    - First, we are adding to our original text the price ceiling and price floor
+    - Then we are logging the information of the candles.
+    - Check that when you run the code, the last candle is updated in real-time ;)
+
+---
 
 ## Running the script
 
