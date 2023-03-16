@@ -133,6 +133,14 @@ nav:
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md
       - Update and Restore Hummingbot: installation/update-hummingbot.md
+    - Quickstart:
+      - Quickstart: quickstart/index.md
+      - Getting Started: quickstart/custom-pmm-0.md
+      - Exercise 1: quickstart/custom-pmm-1.md
+      - Exercise 2: quickstart/custom-pmm-2.md
+      - Exercise 3: quickstart/custom-pmm-3.md
+      - Exercise 4: quickstart/custom-pmm-4.md
+      - Exercise 5: quickstart/custom-pmm-5.md
     - Features:
       - Features: operation/index.md
       - User Interface Guide: operation/user-interface.md
@@ -175,40 +183,8 @@ nav:
         - Price Band: strategy-configs/price-band.md
         - Price Source: strategy-configs/external-price-source.md
         - Ping Pong: strategy-configs/ping-pong.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Using Gateway with Hummingbot: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running DEX Bots: gateway/running-dex-bots.md
-      - Adding DEX Connectors: gateway/adding-dex-connectors.md
-      - API Reference: gateway/api-reference.md
-    - Strategies:
-      - Strategies: strategies/index.md
-      - Core:
-        - Pure Market Making: strategies/pure-market-making.md
-        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-        - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Community:
-        - Aroon Oscillator: strategies/aroon-oscillator.md
-        - Avellaneda Market Making: strategies/avellaneda-market-making.md
-        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-        - Hedge: strategies/hedge.md
-        - Liquidity Mining: strategies/liquidity-mining.md
-        - Perpetual Market Making: strategies/perpetual-market-making.md
-        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-        - TWAP: strategies/twap.md
-        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
     - Scripts:
       - Scripts: scripts/index.md
-      - Quickstart Guide: scripts/quickstart.md
-      - Getting Started: scripts/getting-started.md
-      - Exercise 1: scripts/Exercise1.md
-      - Exercise 2: scripts/Exercise2.md
-      - Exercise 3: scripts/Exercise3.md
-      - Exercise 4: scripts/Exercise4.md
-      - Exercise 5: scripts/Exercise5.md
       - Script Examples: scripts/examples.md
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:
@@ -262,16 +238,41 @@ nav:
         - Ref: exchanges/ref.md
         - TraderJoe: exchanges/traderjoe.md
         - VVS: exchanges/vvs.md
-    - Chains:
-      - Chains: chains/index.md
-      - Ethereum: chains/ethereum.md
-      - Avalanche: chains/avalanche.md
-      - BNB Chain: chains/bnb-chain.md
-      - Cronos: chains/cronos.md
-      - Cosmos: chains/cosmos.md
-      - Harmony: chains/harmony.md
-      - NEAR: chains/near.md
-      - Polygon: chains/polygon.md
+    - Strategies:
+      - Strategies: strategies/index.md
+      - Core:
+        - Pure Market Making: strategies/pure-market-making.md
+        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+      - Community:
+        - Aroon Oscillator: strategies/aroon-oscillator.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
+        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+    - Gateway:
+      - Gateway: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Using Gateway with Hummingbot: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running DEX Bots: gateway/running-dex-bots.md
+      - Adding DEX Connectors: gateway/adding-dex-connectors.md
+      - API Reference: gateway/api-reference.md
+      - Chains:
+        - Chains: chains/index.md
+        - Ethereum: chains/ethereum.md
+        - Avalanche: chains/avalanche.md
+        - BNB Chain: chains/bnb-chain.md
+        - Cronos: chains/cronos.md
+        - Cosmos: chains/cosmos.md
+        - Harmony: chains/harmony.md
+        - NEAR: chains/near.md
+        - Polygon: chains/polygon.md
     - FAQ: faq.md
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md

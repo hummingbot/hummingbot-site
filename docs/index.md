@@ -10,13 +10,13 @@ Help us **democratize high-frequency trading** and provide free access to sophis
 
 New to Hummingbot? Start here!
 
-- Quickstart: Coming soon!
 - [Installation](/installation): Install Hummingbot on various platforms
-- [Basic Operations](/operation): Basic commands and actions in Hummingbot
+- [Quickstart](/quickstart): Follow the new Quickstart guide to learn how to build a custom market making strategy with Hummingbot!
+- [Features](/operation): The main commands and configs in Hummingbot
 
 ## 🎓 Learn with Botcamp
 
-⭐ If you'd like to learn algo trading with Hummingbot, check out [Hummingbot Botcamp](https://hummingbot.org/botcamp), an intensive, small-batch bootcamp that teaches you **how to build your own custom trading bot in only 6 weeks**. Each cohort of Botcamp culminates in a Demo Day where students present their custom scripts and compete for HBOT rewards and the glory of victory!
+⭐ If you'd like to learn algo trading with Hummingbot, check out [Hummingbot Botcamp](https://hummingbot.org/botcamp), an intensive, small-batch bootcamp that teaches you **how to build your own custom algo trading strategy in only 6 weeks**. Each cohort of Botcamp culminates in a Demo Day where students present their custom scripts and compete for HBOT rewards and the glory of victory!
 
 Many of the sample scripts in the [`/scripts/`](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder were contributed by Botcamp students.
 
@@ -24,11 +24,10 @@ Many of the sample scripts in the [`/scripts/`](https://github.com/hummingbot/hu
 
 Hummingbot architecture features modular components that can be maintained and extended by individual community members:
 
-- [Strategies](/strategies): Configurable templates for various algorithmic trading strategies
-- [Scripts](/scripts): Simple, single-file versions of strategies in pure Python
+- [Scripts](/scripts): Python files that define various algorithmic trading strategies. Scripts are the recommended approach for new users to build strategies in Hummingbot.
 - [Exchanges](/exchanges): Connectors to various centralized exchanges (CEX) and decentralized exchanges (DEX)
 - [Chains](/exchanges): Connectors to various blockchain networks (for DEX connectors)
-- [Advanced Features](/global-configs)
+- [Strategies](/strategies): Configurable templates for various algorithmic trading strategies. These were Hummingbot's original method of defining strategies and have been superceded by Scripts.
 
 ## 👩‍💻 For developers
 
