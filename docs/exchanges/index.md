@@ -67,7 +67,6 @@ Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BR
 | [Bitget](./bitget-perpetual) | PERP CLOB CEX |
 | [Bitmart](./bitmart) | SPOT CLOB CEX | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
 | [CI-EX](./ci-ex) | SPOT CLOB CEX |
-| [Himalaya](./Himalaya) | SPOT CLOB CEX |
 | [NDAX](./ndax) | SPOT CLOB CEX |
 | [LBank](./lbank) | SPOT CLOB CEX |
 | [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX |
