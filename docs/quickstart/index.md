@@ -2,16 +2,55 @@
 
 ## Introduction
 
-Welcome to the new **Hummingbot Quickstart**! Hummingbot is an open-source software framework that help you to create and run your own trading bots. With Hummingbot, you can create trading high-frequency trading strategies that can run any crypto exchange, and customize them to fit your specific trading style!
+Welcome to the new **Hummingbot Quickstart**! With Hummingbot, you can create trading high-frequency trading strategies that can run any crypto exchange and customize them to fit your specific trading style!
 
 In this guide, we will start with a simple "Hello World" example of a Hummingbot script and gradually add more functionality to it with each example. By the end of this guide, you will gain a basic understanding of how to create a market making script and and use real-time order book data to customize its behavior.
 
 Whether you're a beginner or an experienced trader, this guide will help you get started with creating your own custom trading strategies using Hummingbot. So, let's dive in and start building!
 
-!!! Info
-    💡 Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** enable users to build customized strategies and access the full power of Hummingbot exchange connectors without creating a full-blown strategy. Scripts are light Python files that can be run and modified without re-compilation, which let users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. See [Examples](/scripts/examples) for a list of the current sample scripts in the Hummingbot codebase.
+!!! note
+    Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** enable users to build customized strategies and access the full power of Hummingbot exchange connectors without creating a full-blown strategy. Scripts are light Python files that can be run and modified without re-compilation, which let users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. See [Examples](/scripts/examples) for a list of the current sample scripts in the Hummingbot codebase.
 
-## **What will you learn?**
+## Installation and Setup
+
+Before we begin coding, let’s ensure that you are set up properly.
+
+### Installation
+
+First, check out the [Installation](/installation/) section to install Hummingbot. You may install it using Docker (easiest for new users) or from source (best for developers).
+
+If you have questions or need help, join the [official Hummingbot Discord](https://discord.gg/hummingbot) and ask for help on the **#support** channel from our community.
+
+### Folder structure
+
+Note that Hummingbot is **local client software** that you run on your own machine, so you have full control over how it’s configured and where you save your files. No one else can access your data and secrets!
+
+```
+hummingbot
+    ┣ conf
+    ┣ data
+    ┣ logs
+    ┣ hummingbot
+    ┣ scripts
+```
+
+- **conf:** Here you will find the configuration files of api_keys, strategies, password, client, logs, and fees.
+
+- **data:** Databases and CSV files of trades.
+
+- **logs:** Log files of your running scripts are stored here.
+
+- **hummingbot:** All the components that we are going to use are inside this folder. Read the API Reference guide to learn more about each component.
+
+- **scripts:** This folder stores the code of the sample scripts, as well as new scripts that we create.
+
+### Resources
+
+-  **Scripts Cheatsheet**: We created this [cheatsheet](/scripts/cheatsheet.pdf) highlighting the most commonly used methods available when writing scripts.
+
+- **Debugging Scripts with PyCharm**: Watch [this video](https://www.loom.com/share/6612ffd03199432c94338bcd18567831) to learn how you can debug Scripts at runtime with the PyCharm IDE.
+
+## Exercises
 
 ### [Exercise 1:](custom-pmm-1.md) Create Hello World Script
 

@@ -127,6 +127,7 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
+      - Deployment Options: installation/deploy.md
       - Docker: installation/docker.md
       - Source: installation/source.md
       - Raspberry Pi: installation/raspberry-pi.md
@@ -135,7 +136,6 @@ nav:
       - Update and Restore Hummingbot: installation/update-hummingbot.md
     - Quickstart:
       - Quickstart: quickstart/index.md
-      - Getting Started: quickstart/custom-pmm-0.md
       - Exercise 1: quickstart/custom-pmm-1.md
       - Exercise 2: quickstart/custom-pmm-2.md
       - Exercise 3: quickstart/custom-pmm-3.md

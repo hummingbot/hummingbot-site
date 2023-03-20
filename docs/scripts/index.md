@@ -7,7 +7,7 @@ Unlike strategies, scripts can be created without configuration files, so only a
 See [Getting Started](getting-started) to start running scripts.
 
 !!! abstract "Cheat Sheet"
-    We created this [cheat sheet](CheatSheet%20Hummingbot%20Scripts%20-%20White.pdf) highlighting the most commonly used methods available. While you may not need it in the future, keeping it open on a second screen, for now, would be helpful. There is also a black version available [here](CheatSheet%20Hummingbot%20Scripts%20-%20Black.pdf)
+    We created this [cheat sheet](/scripts/cheatsheet.pdf) highlighting the most commonly used methods available. While you may not need it in the future, keeping it open on a second screen, for now, would be helpful.
 
 See [Examples](examples) for a list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
 
