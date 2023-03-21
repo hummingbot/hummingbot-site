@@ -20,7 +20,7 @@ Delete the `.password_verification` file under the `hummingbot_conf` folder to r
 
 Use the command ```sudo rm -rf .password_verification``` to delete the file
 
-![password](../../assets/password.png)
+![password](../assets/img/password.png)
 
 !!! tip
     In older versions the passwords and private keys are saved as encrypted files in `hummingbot_conf` (via Docker and binary) or `/conf` directory (installed from source). To reset your password, delete all files starting with `encrypted_` prefix.

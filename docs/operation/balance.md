@@ -4,7 +4,7 @@
 
 Run the `balance` command to check the balances of all connected wallets and exchanges.
 
-![balance command](../../assets/balance-1.png)
+![balance command](../assets/img/balance-1.png)
 
 The **"Allocated"** column shows how much of your assets are being used when there are active orders.
 
@@ -12,7 +12,7 @@ The **"Allocated"** column shows how much of your assets are being used when the
 
 Run the `balance paper` command to check your paper trade account balance.
 
-![balance paper](../../assets/balance-2.png)
+![balance paper](../assets/img/balance-2.png)
 
 By default, these are the paper trade balances pre-loaded in Hummingbot. You can also enter additional assets and credits to use in paper trade mode.
 
@@ -77,18 +77,18 @@ Limit for USDT on bybit exchange set to 20.0
 
 Run the `balance limit` command to confirm if the changes are applied
 
-![Alt text](../../assets/balance-3.png)
+![Alt text](../assets/img/balance-3.png)
 
 ### Example Scenario
 
 Create a pure market making strategy, run the `config` command to view the whole configuration. The command `balance limit bybit USDT 20` is used as example
 
-![Alt text](../../assets/balance-4.png)
+![Alt text](../assets/img/balance-4.png)
 
 On this scenario we set a config with `order_levels 2` this way we can also see how the balance limit works. The strategy would only be able to create orders that will not be more than 20 USDT.  On the screenshot below, the client was trying to buy a XRP on a amount of 10.137 USDT and observed that the second buy order amount adjusted due to balance limit.
 
-![Alt text](../../assets/balance-5.png)
+![Alt text](../assets/img/balance-5.png)
 
 On the screenshot below, a buy order has been successfully filled and after order refresh time the client created orders again but observed that now it did not created another order level since it is beyond the set balance limit of 20 USDT.
 
-![Alt text](../../assets/balance-6.png)
+![Alt text](../assets/img/balance-6.png)
