@@ -127,6 +127,7 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
+      - Deployment Options: installation/deploy.md
       - Docker:
         - Linux: installation/docker-linux.md
         - Mac: installation/docker-mac.md
@@ -134,7 +135,7 @@ nav:
       - Source:
         - Linux: installation/source-linux.md
         - Mac: installation/source-mac.md
-        - Windows: installation/source-windows.md
+        - Windows: installation/source-windows.md        
       - Raspberry Pi: installation/raspberry-pi.md
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md
@@ -318,6 +319,7 @@ nav:
     - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.14.0: release-notes/1.14.0.md
     - 1.13.0: release-notes/1.13.0.md 
     - 1.12.0: release-notes/1.12.0.md
     - 1.11.0: release-notes/1.11.0.md

@@ -51,7 +51,7 @@ Run the command: `start --script quickstart_script.py`. You should have the fol
 
 Run the `status` command to see the current status of your running script:
 
-![Alt text](script-status.png)
+![Alt text](../scripts/script-status.png)
 
 ## Notes and Tips
 

@@ -26,7 +26,6 @@ chmod a+x *.sh
 
 Log out or exit out of the terminal and then open it back up for the changes to take effect
 
-
 ### Create an instance of Hummingbot
 
 The `hummingbot-create.sh` script will create the folders needed to run Hummingbot and then install Hummingbot.
@@ -130,7 +129,6 @@ services:
     The `tty` and `stdin_open` settings enable the service to be run in interactive mode, and the `network_mode` is set to "host" so that the container can access the host network.
 
     The `container_name` property sets the name of the container to "hummingbot_instance".
- 
 
 To run a single Hummingbot instance just open up a terminal in the folder where you have the `docker-compose.yml` file and then run the following code below:
 
@@ -214,8 +212,7 @@ The docker instance should now be running in the background and to attach to the
 docker attach hummingbot_instance
 ```
 
-Once you attach to the instance, the bot should already be running the strategy or script you specified. 
-
+Once you attach to the instance, the bot should already be running the strategy or script you specified.
 
 To exit the instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
 
@@ -224,7 +221,6 @@ To stop and remove the container run the command:
 ```
 docker compose down
 ```
-
 
 ---
 
@@ -356,7 +352,7 @@ To attach to the Gateway instance run:
 docker attach hummingbot_gateway
 ```
 
-It's not necessary to attach to the Gateway instance, although if you do connect to the Gateway instance there is no way to currently exit out unless you close the terminal.
+It's not necessary to attach to the Gateway instance though, although if you do connect to the Gateway instance there is no way to currently exit out unless you close the terminal.
 
 Once you're done just run the down command and it will remove both Hummingbot and the Gateway container
 
@@ -427,6 +423,7 @@ The docker instance should now be running in the background and to attach to the
 ```
 docker attach [instance_name]
 ```
+
 Replace `[instance_name]` with the name of the instance you want to attach to
 
 To exit the instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
@@ -436,7 +433,6 @@ To stop and remove all  the instances run the command:
 ```
 docker compose down
 ```
-
 
 ---
 
@@ -498,6 +494,7 @@ services:
     environment:
       - GATEWAY_PASSPHRASE=a
 ```
+
 **Do you already have the Gateway certificates?**
 
 ??? summary "I already have the certs for Gateway and Hummingbot in the correct folder "
@@ -544,7 +541,6 @@ services:
     
     You will see that inside the `hummingbot_files/certs` folder you have the certificates and we're now ready to deploy
 
-
 To deploy Hummingbot + Gateway run the following commands:
 
 ```
@@ -567,7 +563,7 @@ To attach to the Gateway instance run:
 docker attach hummingbot_gateway
 ```
 
-It's not necessary to attach to the Gateway instance, although if you do connect to the Gateway instance there is no way to currently exit out unless you close the terminal.
+It's not necessary to attach to the Gateway instance though, although if you do connect to the Gateway instance there is no way to currently exit out unless you close the terminal.
 
 Once you're done just run the down command and it will remove all Hummingbot instances and the Gateway container
 
@@ -578,5 +574,4 @@ docker compose down
 ---
 
 !!! tip "**Optional Exercise:**"
-    You are not limited to only the scenarios listed above. Try using Docker Compose for additional other scenarios like autostarting multiple Hummingbot instances or autostarting multiple Hummingbot instances with Gateway. 
-
+    You are not limited to only the scenarios listed above. Try using Docker Compose for additional other scenarios like autostarting multiple Hummingbot instances or autostarting multiple Hummingbot instances with Gateway.
