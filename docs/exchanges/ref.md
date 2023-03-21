@@ -3,8 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/ref](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/ref)
-* Configs: [/gateway/src/templates/ref.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/ref.yml)
+* Folder: [/gateway/src/connectors/ref](https://github.com/hummingbot/gateway/tree/main/src/connectors/ref)
+* Configs: [/gateway/src/templates/ref.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/ref.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier

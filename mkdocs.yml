@@ -127,9 +127,14 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Deployment Options: installation/deploy.md
-      - Docker: installation/docker.md
-      - Source: installation/source.md
+      - Docker:
+        - Linux: installation/docker-linux.md
+        - Mac: installation/docker-mac.md
+        - Windows: installation/docker-windows.md
+      - Source:
+        - Linux: installation/source-linux.md
+        - Mac: installation/source-mac.md
+        - Windows: installation/source-windows.md
       - Raspberry Pi: installation/raspberry-pi.md
       - Run in the Cloud: installation/cloud-servers.md
       - Run Multiple Bots: installation/multiple-bots.md

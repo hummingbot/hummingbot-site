@@ -1,6 +1,6 @@
-## 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/polygon)
+## 📁 [Chain folder](https://github.com/hummingbot/gateway/tree/main/src/chains/polygon)
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/polygon.yml)
+## 📁 [Config template](https://github.com/hummingbot/gateway/tree/main/src/templates/polygon.yml)
 
 ## ℹ️ Chain Info
 

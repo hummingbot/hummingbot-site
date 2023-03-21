@@ -19,7 +19,7 @@ Afterwards, follow the steps below to develop a Gateway connector:
 
 ## 1. Create configuration template
 
-📁 **Folder** [`gateway/src/templates`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/templates)
+📁 **Folder** [`gateway/src/templates`](https://github.com/hummingbot/gateway/tree/main/src/templates)
 
 Create a template in the templates folder and name it `<exchange_name>.yml`. This file will include the configurations needed for connecting to the exchange.
 
@@ -75,7 +75,7 @@ This template will then be checked against the schema, in the next step, to gene
 
 ## 2. Create configuration schema
 
-📁 **Folder** [`gateway/src/services/schema`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/services/schema)
+📁 **Folder** [`gateway/src/services/schema`](https://github.com/hummingbot/gateway/tree/main/src/services/schema)
 
 Create a schema in the directory above for the configuration that you set up. This tells Gateway how to validate and type the entries in the configuration template that you created earlier. The schema should be named `<exchange_name>-schema.json`.
 
@@ -110,7 +110,7 @@ Below is an example of the schema file for Pangolin:
 
 ## 3. Create connector
 
-📁 **Folder** [`gateway/src/connectors`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors)
+📁 **Folder** [`gateway/src/connectors`](https://github.com/hummingbot/gateway/tree/main/src/connectors)
 
 Now, you can start creating the connector. Following the steps below:
 
@@ -126,7 +126,7 @@ Now, you can start creating the connector. Following the steps below:
 
 ## 4. Add connector routes
 
-📁 **File** [`gateway/src/connectors/connectors.routes.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/connectors/connectors.routes.ts)
+📁 **File** [`gateway/src/connectors/connectors.routes.ts`](https://github.com/hummingbot/gateway/tree/main/src/connectors/connectors.routes.ts)
 
 Add your new connector to the list of connectors available in Gateway. The step should be similar to the examples available in the file, and the new entry should look like this:
 
@@ -140,7 +140,7 @@ Add your new connector to the list of connectors available in Gateway. The step 
 
 ## 5. Add SDK classes to Uniswapish interface
 
-📁 **File** [`gateway/src/services/common-interfaces.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/services/common-interfaces.ts)
+📁 **File** [`gateway/src/services/common-interfaces.ts`](https://github.com/hummingbot/gateway/tree/main/src/services/common-interfaces.ts)
 
 Under `gateway/src/services/common-interfaces.ts`, most of the EVM-compatible DEX connectors in the gateway v2 can make use of the Uniswapish interface.
 
@@ -148,7 +148,7 @@ To use this interface, you will need to make additions to the `Tokenish` type, `
 
 ## 6. Add connector to spender list
 
-📁 **File (Ethereum)** [``gateway/src/chains/ethereum/ethereum.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/ethereum/ethereum.ts)
+📁 **File (Ethereum)** [``gateway/src/chains/ethereum/ethereum.ts`](https://github.com/hummingbot/gateway/tree/main/src/chains/ethereum/ethereum.ts)
 
 Add your exchange to the spender list for the chain where your exchange is located. The changes needed should be similar to those in `ethereum.ts` if the exchange is on an EVM-compatible chain.
 
@@ -173,7 +173,7 @@ getSpender(reqSpender: string): string {
 
 ## 7. Add connector to Gateway list
 
-📁 **File** [`gateway/src/app.ts`](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/app.ts)
+📁 **File** [`gateway/src/app.ts`](https://github.com/hummingbot/gateway/tree/main/src/app.ts)
 
 Add your connector to the list of connectors to be accessible via Gateway. The changes needed for this step are simple and should be similar to the example below.
 
@@ -199,13 +199,13 @@ gatewayApp.get(
 
 ## 8. Add connector tests
 
-📁 **Folder** [`gateway/test/chains`](https://github.com/hummingbot/hummingbot/tree/master/gateway/test/chains)
+📁 **Folder** [`gateway/test/chains`](https://github.com/hummingbot/gateway/tree/main/test/chains)
 
 Under `gateway/test/chains/<chain>/<exchange_name>`
 
 Automated test coverage is a crucial step for maintaining high-quality connectors. The Hummingbot Foundation QA team runs these tests when reviewing connectors on an ongoing basis.
 
-Follow the [Pangolin tests](https://github.com/hummingbot/hummingbot/tree/master/gateway/test/chains/avalanche/pangolin) to create tests for the routes and functions of your connector.
+Follow the [Pangolin tests](https://github.com/hummingbot/gateway/tree/main/test/chains/avalanche/pangolin) to create tests for the routes and functions of your connector.
 
 Before submitting a pull request for your connector, you should have a minimum testing coverage of **80%**. You can determine test coverage by running `yarn test:cov`.
 

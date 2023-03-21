@@ -1,6 +1,6 @@
-## 📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/cosmos)
+## 📁 [Chain folder](https://github.com/hummingbot/gateway/tree/master/src/chains/cosmos)
 
-## 📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/cosmos.yml)
+## 📁 [Config template](https://github.com/hummingbot/gateway/tree/master/src/templates/cosmos.yml)
 
 ## ℹ️ Chain Info
 

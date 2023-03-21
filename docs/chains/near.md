@@ -2,9 +2,9 @@ This page contains notes about connecting Gateway to the Near Protocol.
 
 ## Near Protocol
 
-📁 [Chain folder](https://github.com/hummingbot/hummingbot/tree/master/gateway/src/chains/near)
+📁 [Chain folder](https://github.com/hummingbot/gateway/tree/main/src/chains/near)
 
-📁 [Config template](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/near.yml)
+📁 [Config template](https://github.com/hummingbot/gateway/tree/main/src/templates/near.yml)
 
 Below are the Near Protocol networks that Gateway currently supports.
 
@@ -13,13 +13,14 @@ Below are the Near Protocol networks that Gateway currently supports.
 **Default configuration parameters**
 
 * `chainID`: 0
-* `nodeURL`: https://rpc.mainnet.near.org
+* `nodeURL`: <https://rpc.mainnet.near.org>
 * `tokenListType`: `FILE`
 * `tokenListSource`: `src/chains/near/near_tokens.json`
 * `nativeCurrencySymbol`: NEAR
 * `gasPriceRefreshInterval`: 60
 
 You can adjust these parameters by running the Hummingbot command:
+
 ```
 gateway config near.networks.mainnet.<parameter>
 ```
@@ -29,13 +30,14 @@ gateway config near.networks.mainnet.<parameter>
 **Default configuration parameters**
 
 * `chainID`: 0
-* `nodeURL`: https://rpc.testnet.near.org
+* `nodeURL`: <https://rpc.testnet.near.org>
 * `tokenListType`: `FILE`
 * `tokenListSource`: `src/chains/near/near_testnet_tokens.json`
 * `nativeCurrencySymbol`: NEAR
 * `gasPriceRefreshInterval`: 60
 
 You can adjust these parameters by running the Hummingbot command:
+
 ```
 gateway config near.networks.testnet.<parameter>
 ```
