@@ -1,5 +1,7 @@
 # Exercise 4: Add Basic Price Ceiling/Floor
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/RhVSNjdgp2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 In this exercise, let’s extend our market making script by adding a Price Ceiling/Floor feature.
 
 But first, let’s gain some intuition for why this feature is important for market making strategies:

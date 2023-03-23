@@ -1,5 +1,7 @@
 # Exercise 3: Customize Status Command
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/86qPi9eycxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 In this exercise, let’s customize the output of the `status` command so that we can easily see what’s happening:
 
 - We will use the same file: `quickstart_script_2.py`

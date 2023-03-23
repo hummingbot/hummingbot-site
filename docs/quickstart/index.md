@@ -1,5 +1,7 @@
 # Hummingbot Quickstart
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/t3Su_F_SY_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Introduction
 
 Welcome to the new **Hummingbot Quickstart**! With Hummingbot, you can create trading high-frequency trading strategies that can run any crypto exchange and customize them to fit your specific trading style!
@@ -46,7 +48,7 @@ hummingbot
 
 ### Resources
 
--  **Scripts Cheatsheet**: We created this [cheatsheet](/scripts/cheatsheet.pdf) highlighting the most commonly used methods available when writing scripts.
+- **Scripts Cheatsheet**: We created this [cheatsheet](/scripts/cheatsheet.pdf) highlighting the most commonly used methods available when writing scripts.
 
 - **Debugging Scripts with PyCharm**: Watch [this video](https://www.loom.com/share/6612ffd03199432c94338bcd18567831) to learn how you can debug Scripts at runtime with the PyCharm IDE.
 

@@ -2,7 +2,7 @@
 
 ## Install via Docker
 
-You can install Docker by installing [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) or by [downloading an installer](https://docs.docker.com/docker-for-mac/install/) from the official page. 
+You can install Docker by installing [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) or by [downloading an installer](https://docs.docker.com/docker-for-mac/install/) from the official page.
 
 After you have downloaded and installed Docker, restart your system if necessary.
 
@@ -50,7 +50,7 @@ fi
 unset __conda_setup
 ```
 
-Exit out of `nano` and make sure to save the changes then close & relaunch the terminal. Once you have the terminal up run the `conda init` command.
+Exit out of `vim` and make sure to save the changes then close & relaunch the terminal. Once you have the terminal up run the `conda init` command.
 
 ```bash
 ➜ conda init zsh

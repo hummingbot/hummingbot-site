@@ -1,5 +1,7 @@
 # Exercise 5: Add Dynamic Price Ceiling/Floor
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/FlILjY8T8Fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Finally, let’s learn how to customize our script by utilizing order book data, leveraging Hummingbot’s ability to synchronously stream real-time Level 2 order book data from multiple exchanges simultaneously.
 
 We will improve the last exercise by adding a dynamic calculation of the price ceiling/floor feature based on the Bollinger Bands.

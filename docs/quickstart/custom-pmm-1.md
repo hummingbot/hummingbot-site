@@ -1,4 +1,6 @@
-# Exercise I: Hello World Script
+# Exercise 1: Hello World Script
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Bhf5spw785c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Let's code
 

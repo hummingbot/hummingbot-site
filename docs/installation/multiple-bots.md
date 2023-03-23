@@ -31,7 +31,7 @@ conda activate hummingbot
 
 ### Docker
 
-Press keys `Ctrl+P` then `Ctrl+Q` in sequence to detach from Docker, i.e., return to the command line. This exits out of Hummingbot without shutting down the container instance.
+Press keys <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd> in sequence to detach from Docker, i.e., return to the command line. This exits out of Hummingbot without shutting down the container instance.
 
 Restart or connect to a running instance using the `./start.sh` script or use `docker attach [container_name]` to a already running bot in the background.
 
@@ -51,7 +51,7 @@ conda activate hummingbot
 bin/hummingbot.py
 ```
 
-To exit the screen (detach), press `Ctrl+A` then `Ctrl+D` in sequence.
+To exit the screen (detach), press <kbd>Ctrl</kbd> + <kbd>A</kbd> then <kbd>Ctrl</kbd> + <kbd>D</kbd> in sequence.
 
 To list all running instances, use `screen -ls`.
 
@@ -64,4 +64,3 @@ Log back into the screen by using either `screen` or `screen -r $NAME` to open a
 ## Additional Resources
 
 - [Managing Bot Cycles with Wojak](https://www.youtube.com/watch?v=eB_66K0JxgM&t=2s)
-

@@ -1,10 +1,11 @@
 ## Repo
 
-The [deploy-examples](https://github.com/hummingbot/deploy-examples) repository provides various examples of how to deploy Hummingbot using Docker. 
+The [deploy-examples](https://github.com/hummingbot/deploy-examples) repository provides various examples of how to deploy Hummingbot using Docker.
 
 These examples are intended for developers and traders who want to deploy Hummingbot using Docker and explore its features and capabilities. Contributions are welcome, and users are encouraged to share their own examples and use cases for deploying Hummingbot with Docker.
 
 Clone the `deploy-examples` repository to your local machine:
+
 ```
 git clone https://github.com/hummingbot/deploy-examples
 ```
@@ -36,7 +37,7 @@ chmod a+x *.sh
 
 You can also use Docker Compose to install Hummingbot. If you are using Hummingbot Gateway or running multiple instances, this method is recommended.
 
-[Docker Compose](https://docs.docker.com/compose/) is a tool that allows you to define and run multiple Docker containers as a single application. With Docker Compose, you can define the settings for each container in a YAML file, like the image to use, the ports to expose, and any environment variables or volumes that should be attached. 
+[Docker Compose](https://docs.docker.com/compose/) is a tool that allows you to define and run multiple Docker containers as a single application. With Docker Compose, you can define the settings for each container in a YAML file, like the image to use, the ports to expose, and any environment variables or volumes that should be attached.
 Once you've defined your configuration file, you can use the `docker-compose up` command to start all of the containers in the application.
 
 ### Apple M1 and other ARM machines
@@ -51,10 +52,9 @@ docker build -f Dockerfile.arm -t hummingbot/hummingbot:arm .
 
 Once the image has been built, then replace `hummingbot/hummingbot:latest` with `hummingbot/hummingbot:arm` instead in the yml files
 
-
 ### Simple Hummingbot Compose
 
-<iframe style="width:100%; min-height:400px;" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Create a new file using your favorite text editor or IDE and name it `docker-compose.yml`
 
@@ -120,7 +120,7 @@ docker compose down
 
 ### Autostart Hummingbot Instance
 
-<iframe style="width:100%; min-height:400px;" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 To autostart Hummingbot we just need to add the following lines to our Docker compose file
 
@@ -193,7 +193,7 @@ docker compose down
 
 ### Hummingbot + Gateway
 
-<iframe style="width:100%; min-height:400px;" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Add the following code to create the gateway:
 
@@ -333,8 +333,7 @@ docker compose down
 
 ### Multiple Hummingbot Instances
 
-<iframe style="width:100%; min-height:400px;" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Duplicate lines 3 - 25 of the original docker compose file to create a new bot. Multiple bots can use the same folders but it's recommended to have separate folders for each bot so they have individual configs as well. You can add as many bots as needed. Change "bot" to "bot2" and the `container_name` to `hummingbot_instance2` or whatever name you prefer for the instance. If you want the bots to have separate folders then change `hummingbot_files` to `hummingbot_files2` under volumes. Repeat these steps depending on how many bots you need.
 
@@ -410,7 +409,7 @@ docker compose down
 
 ### Multiple Hummingbot Instances with Gateway
 
-<iframe style="width:100%; min-height:400px;" src="https://www.loom.com/embed/8b36e590272c479fa0ccf69b011433e1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Use the `docker-compose.yml` file in the previous example but we'll also use the code for the Gateway bot in `Scenario 3`. Like in the previous scenario you could use the same folder for each bot instance but we recommend you have one folder for each bot. However, the `certs` folder that you are sharing between the gateway and the bots should be the same.
 

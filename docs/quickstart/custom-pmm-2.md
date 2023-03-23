@@ -1,4 +1,6 @@
-# Exercise II: Simple PMM
+# Exercise 2: Simple PMM
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/wqGpTuEAukc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In this exercise, we will implement a simple version of Hummingbot’s [Pure Market Making](https://docs.hummingbot.org/strategies/pure-market-making/) strategy.
 

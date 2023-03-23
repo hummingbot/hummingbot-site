@@ -230,6 +230,8 @@ nav:
       - Bronze DEX:
         - DeFi Kingdoms: exchanges/defikingdoms.md
         - Defira: exchanges/defira.md
+        - Dexalot: exchanges/dexalot.md
+        - Injective: exchanges/injective.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - OpenOcean: exchanges/openocean.md
         - Pangolin: exchanges/pangolin.md
@@ -238,6 +240,7 @@ nav:
         - Ref: exchanges/ref.md
         - TraderJoe: exchanges/traderjoe.md
         - VVS: exchanges/vvs.md
+        - XSwap: exchanges/xswap.md
     - Strategies:
       - Strategies: strategies/index.md
       - Core:
@@ -273,6 +276,7 @@ nav:
         - Harmony: chains/harmony.md
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
+        - XDC Chain: chains/xdc-chain.md
     - FAQ: faq.md
     - Troubleshooting: troubleshooting.md
     - Glossary: glossary.md
