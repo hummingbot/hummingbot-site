@@ -127,26 +127,19 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Deployment Options: installation/deploy.md
-      - Docker:
-        - Linux: installation/docker-linux.md
-        - Mac: installation/docker-mac.md
-        - Windows: installation/docker-windows.md
-      - Source:
-        - Linux: installation/source-linux.md
-        - Mac: installation/source-mac.md
-        - Windows: installation/source-windows.md        
-      - Raspberry Pi: installation/raspberry-pi.md
-      - Run in the Cloud: installation/cloud-servers.md
-      - Run Multiple Bots: installation/multiple-bots.md
-      - Update and Restore Hummingbot: installation/update-hummingbot.md
+      - Deploying Hummingbot with Docker: installation/deploy.md
+      - Installing Hummingbot on Linux: installation/linux.md
+      - Installing Hummingbot on MacOS: installation/mac.md
+      - Installing Hummingbot on Windows: installation/windows.md        
+      - Installing Hummingbot on Raspberry Pi: installation/raspberry-pi.md
+      - Running Multiple Hummingbot Instances: installation/multiple-bots.md
     - Quickstart:
       - Quickstart: quickstart/index.md
-      - Exercise 1: quickstart/custom-pmm-1.md
-      - Exercise 2: quickstart/custom-pmm-2.md
-      - Exercise 3: quickstart/custom-pmm-3.md
-      - Exercise 4: quickstart/custom-pmm-4.md
-      - Exercise 5: quickstart/custom-pmm-5.md
+      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
+      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
+      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
+      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
+      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
     - Features:
       - Features: operation/index.md
       - User Interface Guide: operation/user-interface.md
@@ -192,6 +185,8 @@ nav:
     - Scripts:
       - Scripts: scripts/index.md
       - Script Examples: scripts/examples.md
+      - Cheatsheet: scripts/cheatsheet.md
+      - Candles Feed: scripts/candles-feed.md
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:
       - Exchange Connectors: exchanges/index.md

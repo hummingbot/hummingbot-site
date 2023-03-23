@@ -1,6 +1,6 @@
-# Raspberry Pi / ARM64
+# Installing Hummingbot on Raspberry Pi / ARM64
 
-The following steps are for the Raspberry Pi but it should also work with any other device that uses the same ARM architecture.
+Hummingbot doesn't require much power, so some users have run successfully run multiple instances on a single Raspberry Pi. The following steps are for the Raspberry Pi but it should also work with any other device that uses the same ARM architecture.
 
 Running Hummingbot on a Raspberry Pi or similar device has the same main benefit of running it on a cloud server: having a dedicated machine for Hummingbot. Raspberry Pi’s are relatively low cost, easy to set up, and, of course, don’t have the monthly charges associated with a cloud provider.
 
@@ -18,7 +18,7 @@ The Raspberry Pi has an easy to follow [guide](https://www.raspberrypi.org/docum
 
 Once the OS is installed and booted then you can follow the steps below to install Hummingbot using either Docker or Source
 
-## **Install via Docker**
+## Install via Docker
 
 Copy and paste each line of code one by one into the terminal
 
@@ -48,57 +48,9 @@ sudo systemctl start docker && sudo systemctl enable docker
 exit
 ```
 
-Once Docker is installed you can then launch a Hummingbot instance with **_either_** of the following options:
+Once Docker has been successfully installed, launch a Hummingbot instance following one of the [Deploy Examples](/installation/deploy/).
 
-- **Scripts**: download and use automated Docker scripts
-- **Manual**: run install commands manually
-
-!!! note  
-    The Raspberry Pi uses a different processor architecture (ARM) which means you'll need to use a specific Docker image that was built for the ARM architecture. When running the `./create.sh` command or creating the Docker instance manually you'll have to specify the image to use which is usually in this format - `version-[version_number]-arm_beta` The latest ARM versions can be found here (filter list by "arm") - [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot/tags?page=1&ordering=last_updated&name=arm)
-
-=== "Scripts"
-
-    ```bash
-    # 1) Download Hummingbot install, start, and update script
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/create.sh
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/start.sh
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/docker-commands/update.sh
-
-    # 2) Enable script permissions
-    chmod a+x *.sh
-
-    # 3) Create a hummingbot instance
-    ./create.sh
-
-    # 4) Pull Hummingbot ARM image when asked what version to use
-    Enter Hummingbot version: [ latest/development ] ( default = 'latest' )
-    >> version-1.13.0-arm_beta
-    ```
-
-=== "Manual"
-
-    ```bash
-    # 1) Create folder for your new instance
-    mkdir hummingbot_files
-
-    # 2) Create folders for logs, config files and database file
-    mkdir hummingbot_files/hummingbot_conf
-    mkdir hummingbot_files/hummingbot_logs
-    mkdir hummingbot_files/hummingbot_data
-    mkdir hummingbot_files/hummingbot_scripts
-
-    # 3) Launch a new instance of hummingbot
-    docker run -it \
-    --network host \
-    --name hummingbot-instance \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_conf,destination=/conf/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_logs,destination=/logs/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_data,destination=/data/" \
-    --mount "type=bind,source=$(pwd)/hummingbot_files/hummingbot_scripts,destination=/scripts/" \
-    hummingbot/hummingbot:version-1.13.0-arm_beta
-    ```
-
-## **Install via Source**
+## Install from Source
 
 Open a terminal (GUI) or SSH into the Raspberry Pi and copy / paste the following code line by line into the terminal
 
@@ -179,5 +131,3 @@ Launch Hummingbot
 ```
 bin/hummingbot.py
 ```
-
-## Additional Resources

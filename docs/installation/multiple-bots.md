@@ -27,7 +27,7 @@ conda activate hummingbot
 ./compile
 ```
 
-## Keep bots running in the background
+## Keeping bots running in the background
 
 ### Docker
 
@@ -59,14 +59,9 @@ To list all running instances, use `screen -ls`.
 
 Log back into the screen by using either `screen` or `screen -r $NAME` to open a specific instance.
 
-<small>
-  Credits to discord user `@matha` for this question and `@pfj` for the
-  solution.
-</small>
+**Thank you to Discord user `@matha` for this question and `@pfj` for the solution!**
 
-## 📺 Videos and Guides
+## Additional Resources
 
-:fontawesome-brands-youtube: [Using Docker Compose to launch multiple Hummingbots](https://www.youtube.com/watch?v=LU-4Ui-KCtY)
-
-:fontawesome-brands-youtube: [Managing Bot Cycles with Wojak](https://www.youtube.com/watch?v=eB_66K0JxgM&t=2s)
+- [Managing Bot Cycles with Wojak](https://www.youtube.com/watch?v=eB_66K0JxgM&t=2s)
 
