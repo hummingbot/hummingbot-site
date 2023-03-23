@@ -20,6 +20,8 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🔑 Connection
 
+NOTE: In order to get the API keys, please contact Dexalot team in their discord server <https://discord.gg/S4NP9w7Xwn>
+
 Run `connect dexalot` in order to enter your API keys:
 
 ```
