@@ -37,6 +37,7 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 | Exchange | Type | Signup code |
 |----------|------|-------------|
 | [Kucoin](./kucoin) | SPOT CLOB CEX | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
+| [Kucoin (perp)](./kucoin-perpetual) | PERP CLOB CEX | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
 | [Gate.io](./gate-io) | SPOT CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
 | [Gate.io (perp)](./gate-io-perpetual) | PERP CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
 | [AscendEx](./ascend-ex) | SPOT CLOB CEX | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
@@ -67,6 +68,7 @@ Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BR
 | [Bitget](./bitget-perpetual) | PERP CLOB CEX |
 | [Bitmart](./bitmart) | SPOT CLOB CEX | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
 | [CI-EX](./ci-ex) | SPOT CLOB CEX |
+| [Dexalot](./dexalot) | SPOT CLOB DEX |
 | [NDAX](./ndax) | SPOT CLOB CEX |
 | [LBank](./lbank) | SPOT CLOB CEX |
 | [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX |
@@ -74,6 +76,7 @@ Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BR
 | [Ref](./ref) | SPOT AMM DEX |
 | [Trader Joe](./traderjoe) | SPOT AMM DEX |
 | [VVS](./vvs) | SPOT AMM DEX |
+| [XSSwap](./xswap) | SPOT AMM DEX |
 
 ## Contributing Connectors
 

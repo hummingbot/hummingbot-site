@@ -196,6 +196,7 @@ nav:
         - Uniswap: exchanges/uniswap.md
       - Silver:
         - Kucoin: exchanges/kucoin.md
+        - Kucoin (perp): exchanges/kucoin-perpetual.md
         - Gate.io: exchanges/gate-io.md
         - Gate.io (perp): exchanges/gate-io-perpetual.md
         - AscendEX: exchanges/ascend-ex.md
