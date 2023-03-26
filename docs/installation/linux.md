@@ -2,10 +2,10 @@
 
 ## Prerequisites
 
-Supported versions: 
+Supported versions:
 
- * Ubuntu 18.04 / Ubuntu 20.04 (recommended)
- * Debian 10 / 11
+* Ubuntu 18.04 / Ubuntu 20.04 (recommended)
+* Debian 10 / 11
 
 ## Install via Docker
 
@@ -67,7 +67,7 @@ $ ./install
 $ conda activate hummingbot
 
 # Compile Hummmingbot
-$ ./install
+$ ./compile
 
 # Start Hummingbot
 (hummingbot) $ bin/hummingbot.py
@@ -76,11 +76,13 @@ $ ./install
 ### Launching Hummingbot
 
 Make sure that you activate the Hummingbot conda environment:
+
 ```
-$ conda activate hummingbot
+conda activate hummingbot
 ```
 
 From the Hummingbot root folder, run the following command:
+
 ```
 (hummingbot) $ bin/hummingbot.py
 ```

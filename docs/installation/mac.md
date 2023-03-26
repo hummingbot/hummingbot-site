@@ -80,7 +80,7 @@ Follow the steps below in Terminal:
 ➜ conda activate hummingbot
 
 # Compile Hummmingbot
-➜ ./compile Hummingbot
+➜ ./compile
 
 # Start Hummingbot
 (hummingbot) ➜ bin/hummingbot.py
