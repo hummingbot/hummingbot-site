@@ -4,7 +4,7 @@
 
 * Folder: [/hummingbot/strategy/perpetual_market_making](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making)
 * Configs: [perpetual_market_making_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/perpetual_market_making/perpetual_market_making_config_map.py)
-* Maintainer: CoinAlpha
+* Maintainer: 
 
 ## 🏆 Strategy Tier
 
