@@ -2,7 +2,7 @@ We generally release a new version of Hummingbot **every month**. See below for 
 
 ## [1.14.0](./1.14.0/)
 
-* **Released**: March 27, 2023
+* **Released**: March 30, 2023
 
 **Hummingbot**
 
