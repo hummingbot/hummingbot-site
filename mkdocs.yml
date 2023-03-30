@@ -187,6 +187,7 @@ nav:
       - Script Examples: scripts/examples.md
       - Cheatsheet: scripts/cheatsheet.md
       - Candles Feed: scripts/candles-feed.md
+      - Smart Components: scripts/smart-components.md
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:
       - Exchange Connectors: exchanges/index.md
