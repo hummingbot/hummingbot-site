@@ -8,30 +8,38 @@ Once Docker has been successfully installed, launch a Hummingbot instance follow
 
 ## Install from Source
 
-### Prerequisites
+Watch this video to learn how to install Hummingbot from source on MacOS:
 
-#### XCode Command Line Tools
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/_10M9uJan3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### XCode Command Line Tools
+
+[Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) are required.
+
+You can run the following command from Terminal to install them:
 
 ```
 ➜ xcode-select --install
 ```
 
-#### Anaconda
+### Anaconda / Miniconda
 
 Hummingbot requires Python 3 and other Python libraries. To manage these dependencies, Hummingbot uses Anaconda, an open-source environment, and package manager for Python that is the current industry standard for data scientists and data engineers.
 
 To install Anaconda, go to the [Anaconda site](https://www.anaconda.com/products/distribution#Downloads) and download and install the latest Python installer applicable for your architecture (M1 / x86-64). Both the graphical installer (.pkg) and the command line installer (.sh) will work.
 
-#### Edit the .zshrc file
+You can also install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) as a lighter alternative.
 
-!!! warning
-    If you use ZSH or another Unix shell, copy the code snippet below to your `.zshrc` or similar file. By default, Anaconda only adds it to your `.bash_profile` file. This makes the `conda` command available in your root path.
+!!! warning "Don't use Homebrew!"
+    We don't recommend installing `conda` through [Homebrew](https://brew.sh/) as this may cause issues during installation. Insteed, downloading the installer directly from the Anaconda website. 
 
-    We also do **NOT** recommend installing `conda` through `Homebrew` as this will cause issues during installation. Downloading directly from the Anaconda website should be sufficient. 
+---
 
-Open a terminal window and run `vim` or an IDE to edit the `.zshrc` file:
+If the `conda` command is not available in your root path, this may be because you are using ZSH or another Unix shell. 
 
-Copy and paste the following code to the bottom of the file:
+To fix this, copy the code snippet below to your `.zshrc` or similar file. By default, Anaconda only adds it to your `.bash_profile` file, which makes the `conda` command available in your root path.
+
+Open a terminal window and run `vim` or an IDE to edit the `.zshrc` file, and copy and paste the following code to the bottom of the file:
 
 ```bash
 __conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
@@ -56,11 +64,7 @@ Exit out of `vim` and make sure to save the changes then close & relaunch the te
 
 Afterward, you can also try the `conda` command in a terminal to verify if conda was installed correctly. If the command is valid, then Anaconda has been successfully installed. Proceed to the next step to install Hummingbot
 
-### Intel vs Apple Silicon
-
-Installing Hummingbot from source on Macs differs depending on if you have an Intel architecture or Apple M1/M2 for its chipset.
-
-#### Intel (x86)
+### Walkthrough
 
 Follow the steps below in Terminal:
 
@@ -84,22 +88,17 @@ Follow the steps below in Terminal:
 (hummingbot) ➜ bin/hummingbot.py
 ```
 
-#### Apple Silicon (M1/M2)
+## Macs with Apple M1/M2 chips
 
-Copy the first few steps of the process above:
+The instructions above work best if you are using a Mac with an Intel architecture chipset. If you are using a Mac with Apple Silicon(M1/M2) chipset, pay attention to the following important items to set up Hummingbot correctly.
 
-```bash
-# Clone the Hummingbot repo
-➜ git clone https://github.com/hummingbot/hummingbot.git
+### Anaconda / Miniconda version
 
-# Navigate into the Hummingbot folder
-➜ cd hummingbot
+Make sure that you download the M1 versions of the [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) distributions.
+ 
+### Custom `conda` environment
 
-# Run the install script
-➜ ./install
-```
-
-Then, ensure that you create the Hummingbot environment for Intel-based Macs:
+The code below helps you regenerate a Hummingbot conda environment optimized for Intel-based Macs:
 
 ```bash
 # Deactivate the environment if you're in it
@@ -119,6 +118,14 @@ Then, ensure that you create the Hummingbot environment for Intel-based Macs:
 
 # Start Hummingbot
 (hummingbot) ➜ bin/hummingbot.py
+```
+
+### Docker ARM build
+
+If you are using a machine with an ARM processor, like a Mac with an Apple M1 or M2 chip, we recommend that you build a local Hummingbot image instead by cloning the [repository](https://github.com/hummingbot/hummingbot) and running the command:
+
+```
+docker build -f Dockerfile.arm -t hummingbot/hummingbot:arm .
 ```
 
 ## Additional Resources

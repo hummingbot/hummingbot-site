@@ -1,3 +1,7 @@
+Watch this video to learn how to install Docker and Hummingbot on a Windows 11 machine:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/i2Qb8vTLHbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prerequisites
 
 The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot using [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) in Windows Subsystem for Linux 2 (WSL 2).

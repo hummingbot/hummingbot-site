@@ -20,7 +20,10 @@ You can install Hummingbot via Docker or from source (see the OS-specific guides
 
 Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. 
 
-Follow the instructions listed in the [Deploying Hummingbot with Docker](/installation/deploy/) page.
+
+Follow the instructions listed in the [Deploying Hummingbot with Docker](/installation/deploy/) page, or watch the video below:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## OS-Specific Guides
 
@@ -84,6 +87,7 @@ These instances are pre-loaded with system files that takes up around 1.2 GB so 
 
 Here are more resources that might be helpful:
 
+- [Installing Hummingbot on Digital Ocean](https://www.youtube.com/watch?v=XzQJbEJn9ag)
 - [AWS - Connect to Your Amazon EC2 Instance](https://aws.amazon.com/ec2/?nc2=h_ql_prod_fs_ec2&ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc)
 - [AWS - Connecting to your Linux instance from Windows using PuTTY](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 - [Azure - Connect to a Linux-based VM](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/create-azure-vm-technical-asset#connect-to-a-linux-based-vm)

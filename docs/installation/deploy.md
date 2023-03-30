@@ -1,7 +1,4 @@
-Watch the full video that accompanies this page, or the individual breakpoints that correspond to each section below.
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+Watch the [full video](https://www.youtube.com/watch?v=VzmJuJ0D0c8) that accompanies this page, or the individual breakpoints that correspond to each section below.
 
 ## `deploy-examples` repo
 
@@ -48,9 +45,10 @@ Docker Compose is a tool that allows you to define and run multiple Docker conta
 Once you've defined your configuration file, you can use the `docker-compose up` command to start all of the containers in the application.
 
 ### Apple M1 and other ARM machines
-  By default, the examples below use the `hummingbot/hummingbot:latest` and `hummingbot/gateway:latest` images to create the containers.
-  
-  If you are using a machine with an ARM processor, like a Mac with an Apple M1 or M2 chip, we recommend that you build a local Hummingbot image instead by cloning the [official repository](https://github.com/hummingbot/hummingbot) and running the command:
+
+By default, the examples below use the `hummingbot/hummingbot:latest` and `hummingbot/gateway:latest` images to create the containers.
+
+If you are using a machine with an ARM processor, like a Mac with an Apple M1 or M2 chip, we recommend that you build a local Hummingbot image instead by cloning the [official repository](https://github.com/hummingbot/hummingbot) and running the command:
 
 ```
 docker build -f Dockerfile.arm -t hummingbot/hummingbot:arm .
