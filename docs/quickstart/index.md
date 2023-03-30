@@ -77,8 +77,6 @@ We will start with a simple "Hello World" example of a Hummingbot script and gra
 
 ## Additional Resources
 
-- [Quickstart Guide](/quickstart) to learn how to create and customize a market making strategy using Scripts
-
 - [Scripts Cheatsheet](/scripts/cheatsheet): Check out the cheatsheet or the [PDF version](/scripts/cheatsheet.pdf) that highlights the most commonly used methods available when writing scripts
 
-- [Debugging Scripts with PyCharm](https://www.loom.com/share/6612ffd03199432c94338bcd18567831): This video shows you how to debug Scripts at runtime with the PyCharm IDE
+- [Debugging Scripts with PyCharm](https://www.youtube.com/watch?v=2O6Ge25rsLk): This video shows you how to debug Scripts at runtime with the PyCharm IDE
