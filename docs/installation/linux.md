@@ -1,5 +1,3 @@
-# Installing Hummingbot on Linux
-
 ## Prerequisites
 
 Supported versions:

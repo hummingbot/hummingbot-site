@@ -14,13 +14,13 @@ Hummingbot has been successfully tested with the following specifications:
 |                      | **Install from source**: 3 GB per instance                                                                                   |
 | **Network**          | A reliable internet connection is critical to keeping Hummingbot connected to exchanges.                                     |
 
-## Installing Hummingbot via Docker
+## Installing Hummingbot with Docker
 
-For most users, we recommend installing Hummingbot using [Docker](https://www.docker.com/), which lets you deploy Hummingbot in various configurations. 
+You can install Hummingbot via Docker or from source (see the OS-specific guides). For most users, we recommend installing Hummingbot using [Docker](https://www.docker.com/), which lets you deploy Hummingbot in various configurations. 
 
-Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot.
+Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. 
 
-Follow the instructions listed in the [Deploy Examples](/installation/deploy/) page to install Hummingbot with Docker.
+Follow the instructions listed in the [Deploying Hummingbot with Docker](/installation/deploy/) page.
 
 ## OS-Specific Guides
 
@@ -84,8 +84,6 @@ These instances are pre-loaded with system files that takes up around 1.2 GB so 
 
 Here are more resources that might be helpful:
 
-- [AWS Deployment for Hummingbot](https://www.youtube.com/watch?v=ppTxEngRDmU&list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO&index=9)
-- [Hummingbot on different cloud providers](https://blog.hummingbot.org/2019-06-cloud-providers/)
 - [AWS - Connect to Your Amazon EC2 Instance](https://aws.amazon.com/ec2/?nc2=h_ql_prod_fs_ec2&ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc)
 - [AWS - Connecting to your Linux instance from Windows using PuTTY](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 - [Azure - Connect to a Linux-based VM](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/create-azure-vm-technical-asset#connect-to-a-linux-based-vm)

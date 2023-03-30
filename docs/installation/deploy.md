@@ -1,8 +1,11 @@
-## Repo
+Watch the full video that accompanies this page, or the individual breakpoints that correspond to each section below.
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## `deploy-examples` repo
 
 The [deploy-examples](https://github.com/hummingbot/deploy-examples) repository provides various examples of how to deploy Hummingbot using Docker.
-
-These examples are intended for developers and traders who want to deploy Hummingbot using Docker and explore its features and capabilities. Contributions are welcome, and users are encouraged to share their own examples and use cases for deploying Hummingbot with Docker.
 
 Clone the `deploy-examples` repository to your local machine:
 
@@ -10,14 +13,17 @@ Clone the `deploy-examples` repository to your local machine:
 git clone https://github.com/hummingbot/deploy-examples
 ```
 
-!!! tip "Read the READMEs!"
-    Make sure to carefully go over the README files in each Deploy Examples folder, which contain instructions on how to use them.
+Make sure to carefully go over the README files in each sub-folder in the repo, which contain instructions on how to use them.
 
 ## Bash Scripts
 
-The scripts located in the [bash_scripts](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts) directory help you install Hummingbot and Hummingbot Gateway using Docker.
+The scripts located in the [/bash_scripts](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts) directory help you install Hummingbot and Hummingbot Gateway using Docker.
 
-Read the [instructions](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts) in the README to understand how to use each script:
+Here's the section in the video that shows you how to use them:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?start=142" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Read the [README](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts) to understand how to use each script:
 
 - `hummingbot-create.sh`: Create and start an instance of Hummingbot
 - `hummingbot-start.sh`: Connect to a previously-created instance of Hummingbot
@@ -33,18 +39,18 @@ sudo usermod -a -G docker $USER
 chmod a+x *.sh
 ```
 
-## Using Docker Compose
+## Docker Compose Deployments
 
-You can also use Docker Compose to install Hummingbot. If you are using Hummingbot Gateway or running multiple instances, this method is recommended.
+The examples below use [Docker Compose](https://docs.docker.com/compose/) to install Hummingbot.  Make sure you have it installed beforehand.
 
-[Docker Compose](https://docs.docker.com/compose/) is a tool that allows you to define and run multiple Docker containers as a single application. With Docker Compose, you can define the settings for each container in a YAML file, like the image to use, the ports to expose, and any environment variables or volumes that should be attached.
+Docker Compose is a tool that allows you to define and run multiple Docker containers as a single application. With Docker Compose, you can define the settings for each container in a YAML file, like the image to use, the ports to expose, and any environment variables or volumes that should be attached.
+
 Once you've defined your configuration file, you can use the `docker-compose up` command to start all of the containers in the application.
 
 ### Apple M1 and other ARM machines
-
-By default, the docker-compose files use the `hummingbot/hummingbot:latest` and `hummingbot/gateway:latest` images to create the containers.
-
-If you are using a machine with an ARM processor, like a Mac with an Apple M1 or M2 chip, we strongly recommend that you build a local Hummingbot image instead by cloning the [official repository](https://github.com/hummingbot/hummingbot) and running the command:
+  By default, the examples below use the `hummingbot/hummingbot:latest` and `hummingbot/gateway:latest` images to create the containers.
+  
+  If you are using a machine with an ARM processor, like a Mac with an Apple M1 or M2 chip, we recommend that you build a local Hummingbot image instead by cloning the [official repository](https://github.com/hummingbot/hummingbot) and running the command:
 
 ```
 docker build -f Dockerfile.arm -t hummingbot/hummingbot:arm .
@@ -54,11 +60,11 @@ Once the image has been built, then replace `hummingbot/hummingbot:latest` with 
 
 ### Simple Hummingbot Compose
 
+This configuration deploys a single instance of Hummingbot. Here's the relevant section in the video:
+
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?start=447" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Create a new file using your favorite text editor or IDE and name it `docker-compose.yml`
-
-Add the following code to the `docker-compose.yml` file:
+Here is the `docker-compose.yml` file used:
 
 ```yml linenums="1"
 version: "3.9"
@@ -84,25 +90,21 @@ services:
     network_mode: host
 ```
 
-!!! tip "docker-compose.yml"
-    The `docker-compose.yml` file defines a service named "bot" which will pull the "latest" Docker image of Hummingbot. You can change the tag to run the "development" version if needed.
+!!! note "How does the `docker-compose.yml file` work?"
+    By default, this will pull the `latest` Docker image of Hummingbot as an instance named `hummingbot_instance`. You can change the image to `hummingbot/hummingbot:development` or another tag if needed.
 
-    The service is configured to use the `hummingbot/hummingbot` Docker image and has several volumes mounted for storing configuration files, logs, data, scripts, and certificates. Docker will automatically create the volumes if they don't already exist. If you already have existing folders you would like to use then you can change the volumes path instead to the correct path to the folders that has the existing config files. 
+    The service then creates volumes mounted for storing configuration files, logs, data, scripts, and certificates. Docker will automatically create the volumes if they don't already exist. If you already have existing folders you would like to use then you can change the volumes path instead to the correct path to the folders that has the existing config files.
 
-    The `logging` section specifies that logs should be saved as JSON files with a maximum size of 10 megabytes and a maximum of 5 files.
+    The `logging` section specifies that logs should be saved as JSON files with a maximum size of 10 megabytes and a maximum of 5 files. The `tty` and `stdin_open` settings enable the service to be run in interactive mode, and the `network_mode` is set to "host" so that the container can access the host network. 
 
-    The `tty` and `stdin_open` settings enable the service to be run in interactive mode, and the `network_mode` is set to "host" so that the container can access the host network.
-
-    The `container_name` property sets the name of the container to "hummingbot_instance".
-
-To run a single Hummingbot instance just open up a Terminal in the folder where you have the `docker-compose.yml` file and then run the following code below:
+In Bash/Terminal, go to the folder where you have the `docker-compose.yml` file and then run the following command:
 
 ```
 docker compose up -d
 
 ```
 
-The docker instance should now be running in the background and to attach to the instance run:
+The Docker instance should now be running in the background. To attach to the instance, run:
 
 ```
 docker attach hummingbot_instance
@@ -110,34 +112,21 @@ docker attach hummingbot_instance
 
 To exit the instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
 
-To stop and remove the container run the command:
+To stop the instance, run the command:
 
 ```
 docker compose down
 ```
 
----
+See the [README](https://github.com/hummingbot/deploy-examples/tree/main/simple_hummingbot_compose) for more information.
 
-### Autostart Hummingbot Instance
+### Autostart Hummingbot Compose
+
+This configuration deploys a Hummingbot instance that automatically starts running a pre-configured script or strategy. Here's the relevant section in the video:
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?start=572" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-To autostart Hummingbot we just need to add the following lines to our Docker compose file
-
-```yml
-   environment:
-      - CONFIG_PASSWORD=a
-      - CONFIG_FILE_NAME=format_status.py
-
-```
-
-!!! note
-    Replace the `"a"` in the `CONFIG_PASSWORD` to whatever passphrase you had set (if you already configured Hummingbot previously)
-    For `CONFIG_FILE_NAME` this will be the name of the strategy or script you want to autostart.
-
-    If you are autostarting a strategy make sure you have the  strategy config `(.yml)` file in the proper folder `hummingbot_files/conf/strategies` and for a script make sure you have the `(.py)` file under the `hummingbot_files/scripts` folder
-
-The result should now be:
+This `docker-compose.yml` file adds the highlighted lines below:
 
 ```yml linenums="1" hl_lines="14 15 16"
 version: "3.9"
@@ -166,58 +155,20 @@ services:
     network_mode: host
 ```
 
-To deploy the instance run the following command:
+Replace the `CONFIG_PASSWORD` with your [Hummingbot password](/operation/password/), and replace `CONFIG_FILE_NAME` with either a strategy  config file (that ends in `.yml`) or a script file (that ends in `.py`).
 
-```
-docker compose up -d
+If you are auto-starting a strategy make sure you have the  strategy config `(.yml)` file in the proper folder `hummingbot_files/conf/strategies`. For a script, make sure you have the `(.py)` file under the `hummingbot_files/scripts` folder.
 
-```
+Read the [README](https://github.com/hummingbot/deploy-examples/tree/main/autostart_hummingbot_compose) in the folder  to learn how to use this configuration in more detail.
 
-The docker instance should now be running in the background and to attach to the instance run:
 
-```
-docker attach hummingbot_instance
-```
+### Hummingbot Gateway Compose
 
-Once you attach to the instance, the bot should already be running the strategy or script you specified.
-
-To exit the instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
-
-To stop and remove the container run the command:
-
-```
-docker compose down
-```
-
----
-
-### Hummingbot + Gateway
+This configuration deploys a Hummingbot instance linked to a Hummingbot Gateway instance that helps it connect to DEXs.Here's the relevant section in the video:
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?start=895" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Add the following code to create the gateway:
-
-```bash
-  gateway:
-    container_name: hummingbot_gateway
-    image: hummingbot/gateway:latest
-    ports:
-      - "15888:15888"
-      - "8080:8080"
-    volumes:
-      - "./gateway_files/conf:/usr/src/app/conf"
-      - "./gateway_files/logs:/usr/src/app/logs"
-      - "./hummingbot_files/certs:/usr/src/app/certs"
-    environment:
-      - GATEWAY_PASSPHRASE=a
-
-```
-
-!!! note
-    The `GATEWAY_PASSPHRASE` needs to match the Hummingbot passphrase
-    Also, under volumes, make sure the `./hummingbot_files/certs` folder is where the gateway certs are located. If not, then change it to the correct folder location path
-
-The result should now be:
+This `docker-compose.yml` file adds the highlighted lines below:
 
 ```yml linenums="1" hl_lines="22 23 24 25 26 27 28 29 30 31 32 33"
 version: "3.9"
@@ -255,65 +206,30 @@ services:
       - GATEWAY_PASSPHRASE=a
 ```
 
-**Do you already have the Gateway certificates?**
+Read the [README](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) in the folder  to learn how to use this configuration in more detail.
 
-??? summary "I already have the certs for Gateway and Hummingbot in the correct folder "
-    If you already have the Gateway certs generated and added under the `hummingbot_files/certs` folder and the Gateway passphrase set correctly in the `yml` file then we are ready to deploy the Gateway and Hummingbot. Run the steps below to deploy
+To link Gateway to Hummingbot, you need to generate certificate files in the Hummingbot instance with the following command:
+    
+```
+gateway generate-certs
+```
 
-??? summary "I don't have the Gateway certs generated yet"
-    If this is the first time you are running Gateway or you don't have the certs yet don't worry, you can generate them with the client by doing the following:
+Afterwards, ensure that the `GATEWAY_PASSPHRASE` and the certs file location under `volumes` match the passphrase you used to generate certs and the certs folder location, respectively.
 
-    ```
-    docker-compose up -d
-    ```
     
-    You will see that the gateway failed to start because you don't have the certificates
-    
-    Attach the instance of the bot by running:
-    
-    ```
-    docker attach hummingbot_instance
-    ```
-    
-    Create the password
-    
-    Run the following command in the client:
-    
-    ```
-    gateway generate-certs
-    ```
-    
-    If you run into a permissions error creating the certs then you may need to grant permissions to the Gateway conf and Hummingbot certs folder. You can use the following commands below to adjust the permissions
-    
-    ```
-    chmod a+rw hummingbot_files/certs
-    chmod a+rw gateway_files/conf
-    chmod a+rw gateway_files/logs
-    ```
-
-    When prompted enter the passphrase that you want. Is important that you change the `docker-compose.yml` on line 33 to the passphrase that you entered (the current passphrase is **"a"**).
-    
-    Exit the client and run the following command in the terminal:
-    
-    ```
-    docker compose down
-    ```
-    
-    You will see that inside the `hummingbot_files/certs` folder you have the certificates and we're now ready to deploy
-
-To deploy Hummingbot + Gateway run the following commands:
+If you run into a permissions error creating the certs then you may need to grant permissions to the Gateway conf and Hummingbot certs folder. You can use the following commands below to adjust the permissions
 
 ```
-docker compose up -d
+chmod a+rw hummingbot_files/certs
+chmod a+rw gateway_files/conf
+chmod a+rw gateway_files/logs
 ```
   
-Run the following command to attach to the Hummingbot instance - check if the Gateway status shows "ONLINE" as well:
+Run the following command to attach to the Hummingbot instance
 
 ```
 docker attach hummingbot_instance
 ```
-
-To exit any instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
 
 To attach to the Gateway instance run:
   
@@ -321,21 +237,11 @@ To attach to the Gateway instance run:
 docker attach hummingbot_gateway
 ```
 
-It's not necessary to attach to the Gateway instance though, although if you do connect to the Gateway instance there is no way to currently exit out unless you close the terminal.
-
-Once you're done just run the down command and it will remove both Hummingbot and the Gateway container
-
-```
-docker compose down
-```
-
----
-
 ### Multiple Hummingbot Instances
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?start=895" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+You can deploy multiple Hummingbot instances using Docker Compose. Simply duplicate lines 3-20 of the [Simple Hummingbot Compose](https://github.com/hummingbot/deploy-examples/tree/main/simple_hummingbot_compose) file to create a new bot. 
 
-Duplicate lines 3 - 25 of the original docker compose file to create a new bot. Multiple bots can use the same folders but it's recommended to have separate folders for each bot so they have individual configs as well. You can add as many bots as needed. Change "bot" to "bot2" and the `container_name` to `hummingbot_instance2` or whatever name you prefer for the instance. If you want the bots to have separate folders then change `hummingbot_files` to `hummingbot_files2` under volumes. Repeat these steps depending on how many bots you need.
+Multiple bots can use the same folders but it's recommended to have separate folders for each bot so they have individual configs as well. You can add as many bots as needed. Change "bot" to "bot2" and the `container_name` to `hummingbot_instance2` or whatever name you prefer for the instance. If you want the bots to have separate folders then change `hummingbot_files` to `hummingbot_files2` under volumes. Repeat these steps depending on how many bots you need.
 
 Your `docker-compose.yml` file should now look like this:
 
@@ -382,169 +288,15 @@ services:
     network_mode: host
 ```
 
-To deploy multiple Hummingbot instances run the following command:
-
-```
-docker compose up -d
-
-```
-
-The docker instance should now be running in the background and to attach to the instance run:
-
-```
-docker attach [instance_name]
-```
-
-Replace `[instance_name]` with the name of the instance you want to attach to
-
-To exit the instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
-
-To stop and remove all  the instances run the command:
-
-```
-docker compose down
-```
-
----
 
 ### Multiple Hummingbot Instances with Gateway
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?start=895" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This configuration deploys multiple Hummingbot instances linked to a single Hummingbot Gateway instance.
 
-Use the `docker-compose.yml` file in the previous example but we'll also use the code for the Gateway bot in `Scenario 3`. Like in the previous scenario you could use the same folder for each bot instance but we recommend you have one folder for each bot. However, the `certs` folder that you are sharing between the gateway and the bots should be the same.
+Read the [README](https://github.com/hummingbot/deploy-examples/tree/main/multiple_hummingbot_gateway_compose) in the folder  to learn how to use this configurationl.
 
-```yml linenums="1" hl_lines="41 42 43 44 45 46 47 48 49 50 51 52"
-version: "3.9"
-services:
-  bot:
-    container_name: hummingbot_instance
-    image: hummingbot/hummingbot:latest
-    volumes:
-      - "./hummingbot_files/conf:/conf"
-      - "./hummingbot_files/conf/connectors:/conf/connectors"
-      - "./hummingbot_files/conf/strategies:/conf/strategies"
-      - "./hummingbot_files/logs:/logs"
-      - "./hummingbot_files/data:/data"
-      - "./hummingbot_files/scripts:/scripts"
-      - "./hummingbot_files/certs:/certs"
-    logging:
-      driver: "json-file"
-      options:
-          max-size: "10m"
-          max-file: 5
-    tty: true
-    stdin_open: true
-    network_mode: host
-  bot2:
-    container_name: hummingbot_instance2
-    image: hummingbot/hummingbot:latest
-    volumes:
-      - "./hummingbot_files/conf:/conf"
-      - "./hummingbot_files/conf/connectors:/conf/connectors"
-      - "./hummingbot_files/conf/strategies:/conf/strategies"
-      - "./hummingbot_files/logs:/logs"
-      - "./hummingbot_files/data:/data"
-      - "./hummingbot_files/scripts:/scripts"
-      - "./hummingbot_files/certs:/certs"
-    logging:
-      driver: "json-file"
-      options:
-          max-size: "10m"
-          max-file: 5
-    tty: true
-    stdin_open: true
-    network_mode: host
-  gateway:
-    container_name: hummingbot_gateway
-    image: hummingbot/gateway:latest
-    ports:
-      - "15888:15888"
-      - "8080:8080"
-    volumes:
-      - "./gateway_files/conf:/usr/src/app/conf"
-      - "./gateway_files/logs:/usr/src/app/logs"
-      - "./hummingbot_files/certs:/usr/src/app/certs"
-    environment:
-      - GATEWAY_PASSPHRASE=a
-```
+### Hummingbot Gateway Broker Compose
 
-**Do you already have the Gateway certificates?**
+This configuration deploys Hummingbot and Gateway instances using the [Orchestration Module](/installation/multiple-bots/#orchestration-module).
 
-??? summary "I already have the certs for Gateway and Hummingbot in the correct folder "
-    If you already have the Gateway certs generated and added under the `hummingbot_files/certs` folder and the Gateway passphrase set correctly in the `yml` file then we are ready to deploy the Gateway and Hummingbot. Run the steps below to deploy
-
-??? summary "I don't have the Gateway certs generated yet"
-    If this is the first time you are running Gateway or you don't have the certs yet don't worry, you can generate them with the client by doing the following:
-
-    ```
-    docker compose up -d
-    ```
-    
-    You will see that the gateway failed to start because you don't have the certificates
-    
-    Attach the instance of the bot by running:
-    
-    ```
-    docker attach hummingbot_instance
-    ```
-    
-    Create the password
-    
-    Run the following command in the client:
-    
-    ```
-    gateway generate-certs
-    ```
-        
-    If you run into a permissions error creating the certs then you may need to grant permissions to the Gateway conf and Hummingbot certs folder. You can use the following commands below to adjust the permissions
-    
-    ```
-    chmod a+rw hummingbot_files/certs
-    chmod a+rw gateway_files/conf
-    chmod a+rw gateway_files/logs
-    ```
-
-    When prompted enter the passphrase that you want. Is important that you change the `docker-compose.yml` on line 33 to the passphrase that you entered (the current passphrase is **"a"**).
-    
-    Exit the client and run the following command in the terminal:
-    
-    ```
-    docker compose down
-    ```
-    
-    You will see that inside the `hummingbot_files/certs` folder you have the certificates and we're now ready to deploy
-
-To deploy Hummingbot + Gateway run the following commands:
-
-```
-docker compose up -d
-```
-  
-Run the following command to attach to the Hummingbot instance - check if the Gateway status shows "ONLINE" as well:
-
-```
-docker attach [instance_name]
-```
-
-Replace `[instance_name]` with the name of the instance you want to connect to
-
-To exit any instance but keep it running in the background press <kbd>CTRL</kbd> <kbd> P </kbd> + <kbd>CTRL</kbd> <kbd> Q </kbd>
-
-To attach to the Gateway instance run:
-  
-```
-docker attach hummingbot_gateway
-```
-
-It's not necessary to attach to the Gateway instance though, although if you do connect to the Gateway instance there is no way to currently exit out unless you close the terminal.
-
-Once you're done just run the down command and it will remove all Hummingbot instances and the Gateway container
-
-```
-docker compose down
-```
-
----
-
-!!! tip "**Optional Exercise:**"
-    You are not limited to only the scenarios listed above. Try using Docker Compose for additional other scenarios like autostarting multiple Hummingbot instances or autostarting multiple Hummingbot instances with Gateway.
+Read the [README](https://github.com/hummingbot/deploy-examples/tree/main/multiple_hummingbot_gateway_compose) in the folder  to learn how to use this configuration.

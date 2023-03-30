@@ -1,10 +1,35 @@
-## Orchestration module
+## Orchestration Module
 
-TBD.
+The Orchestration Module allows for remote control and monitoring of multi-bot environments in a distributed context , so that bots can "live" on different machines and infrastructures (e.g. having a bot local and another bot on AWS).
 
-## Multiple bots via Docker
+To achieve this approach, there is an MQTT layer for bots to connect remotely to message brokers, as a single point of reference, using asynchronous bidirectional communication channels (push/pull). In this architecture, bots can be considered as clients to the overall environment. Bot scaling is seamless and does not require any further setup, anyone can connect any number of bots the a message broker (e.g. RabbitMQ, EMQX etc) without any other dependencies.
 
-See the [Deploy Examples](https://github.com/hummingbot/deploy-examples) repo for examples of how to deploy Hummingbot in various configurations.
+See the following repos for more information:
+
+* [Brokers](https://github.com/hummingbot/brokers): Various deployment examples using Docker Compose
+* [Hummingbot remote client](https://github.com/hummingbot/hbot-remote-client-py): ackage that implements a remote client for hummingbot in Python.
+
+**Thanks to [klpanagi](https://github.com/klpanagi) and [TheHolyRoger](https://github.com/TheHolyRoger) for your work! 🙏**
+
+### Phase I (shipped)
+
+- Interface to execute remote commands: `Start` , `Stop` , `Import` , `Config strategy`, `Balance` , `Change balance limits`
+- All these commands can be called using an unified web application that also receives the following information from the bots - `Heartbeat - Status`, `PNL - History`
+- The configuration of the broker in the client should be in the `conf_client.yml` file
+
+### Phase II
+
+In this Phase, an event and data layer will be integrated into the Hummingbot codebase to support receiving and handling remote events via the message broker (MQTT), such as the case of TradingView signals.
+
+More specifically, an MQTT event listener will be developed and integrated into the hummingbot codebase, which will provide configuration for setting the URIs of the events to listen on. Upon receiving an event, a handling callback provided by the user/developer will be executed by the MQTTEventListener, so that users operate/develop their strategy based on the input event.
+
+In the context of Phase 2, the RogerThat TradingView implementation will be delivered as an individual module and will bridge TradingView signals to bots (TradingView -> MQTT broker -> Bots) for developers to be able to use them within their strategies. The aforementioned MQTTEventLlistener will provide means of consuming TradingView signals within strategies, in the form of external events and callback functions.
+
+See [this Notion doc](https://www.notion.so/hummingbot-foundation/Bot-Orchestration-fcac18bd90d74b0ebca9b260617522f0) for an overview of the project. This is an ongoing project funded by Proposal [HIP-20](https://snapshot.org/#/hbot-ip.eth/proposal/0x23e5e5ec459daea8bcb2228b2e18bc081d4b12cb5067d7a9f9efe157cc05ce16).
+
+## Running Multiple Bots via Docker
+
+See the [Deploy Examples](https://github.com/hummingbot/deploy-examples) repo for examples of how to deploy Hummingbot in various multi-bot configurations using Docker Compose.
 
 ## Multiple bots from source
 
@@ -18,7 +43,7 @@ cd ~
 git clone https://github.com/hummingbot/hummingbot.git $FOLDER_NAME
 ```
 
-Do another install in the new directory.
+Do another installation in the new directory.
 
 ```
 cd $FOLDER_NAME
@@ -27,7 +52,7 @@ conda activate hummingbot
 ./compile
 ```
 
-## Keeping bots running in the background
+## Keeping bots Running in Bckground
 
 ### Docker
 
@@ -35,7 +60,7 @@ Press keys <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd> in
 
 Restart or connect to a running instance using the `./start.sh` script or use `docker attach [container_name]` to a already running bot in the background.
 
-### From source
+### Source
 
 Use either `tmux` or `screen` to run multiple bots installed from source. Check out these external links how to use them.
 

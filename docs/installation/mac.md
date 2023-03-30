@@ -1,5 +1,3 @@
-# Installing Hummingbot on MacOS
-
 ## Install via Docker
 
 You can install Docker by installing [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) or by [downloading an installer](https://docs.docker.com/docker-for-mac/install/) from the official page.

@@ -20,31 +20,12 @@ Once the OS is installed and booted then you can follow the steps below to insta
 
 ## Install via Docker
 
-Copy and paste each line of code one by one into the terminal
-
-!!! tip
-    Click the "Copy to clipboard" icon at the end of the code blocks to easily copy the commands
-
+Install Docker and restart your terminal window to enable the correct permissions for `docker` command before proceeding:
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
-```
-
-```
 sudo sh get-docker.sh
-```
-
-```
 sudo usermod -a -G docker $USER
-```
-
-```
 sudo systemctl start docker && sudo systemctl enable docker
-```
-
-!!! warning
-    This step is important — make sure to close and restart your terminal window to enable the correct permissions for `docker` command before proceeding.
-
-```
 exit
 ```
 
@@ -52,46 +33,30 @@ Once Docker has been successfully installed, launch a Hummingbot instance follow
 
 ## Install from Source
 
-Open a terminal (GUI) or SSH into the Raspberry Pi and copy / paste the following code line by line into the terminal
-
-Update the repository and install important dependencies
-
+Update the repository and install important dependencies:
 ```
 sudo apt update
-```
-
-```
 sudo apt upgrade -y
-```
-
-```
 sudo apt-get install build-essential libssl-dev libffi-dev gcc python3-dev python-dev python3.7 -y
 ```
 
-Install Miniforge
-
+Install Miniforge:
 ```
 wget https://github.com/conda-forge/miniforge/releases/download/4.11.0-4/Miniforge3-4.11.0-4-Linux-aarch64.sh
-```
-
-```
 sh Miniforge3-4.11.0-4-Linux-aarch64.sh
 ```
 
-Restart the terminal
-
+Restart the terminal:
 ```
 exec bash
 ```
 
-Install `conda-build`
-
+Install `conda-build`:
 ```
 conda install conda-build
 ```
 
-Clone the Hummingbot repository
-
+Clone the Hummingbot repository:
 ```
 git clone https://github.com/hummingbot/hummingbot.git
 ```
@@ -99,8 +64,7 @@ git clone https://github.com/hummingbot/hummingbot.git
 !!! note
     If you need to switch branches (ie. `development` branch) then after cloning the repository use the command `git checkout [branch_name]` to switch branches. For example, to switch to the development branch use `git checkout development`
 
-Change directory into the Hummingbot folder
-
+Change directory into the Hummingbot folder:
 ```
 cd hummingbot
 ```
@@ -108,26 +72,23 @@ cd hummingbot
 !!! note
     If you are using Ubuntu 22.04 you'll need to go into the `./setup` folder first and edit the `environment-linux-aarch64.yml` file and change "cryptography==2.8" to "cryptography==3.1.1" before running the `./install` command otherwise you'll get an error "could not build wheels for cryptography"
 
-Run the `install` command
-
+Run the `install` command:
 ```
 ./install
 ```
 
-Activate the `conda` environment
-
+Activate the `conda` environment:
 ```
 conda activate hummingbot
 ```
 
-Clean your Hummingbot directory and then compile
+Clean your Hummingbot directory and then compile:
 
 ```
 ./clean && ./compile
 ```
 
-Launch Hummingbot
-
+Launch Hummingbot:
 ```
 bin/hummingbot.py
 ```

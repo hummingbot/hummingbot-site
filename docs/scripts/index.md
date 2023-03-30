@@ -1,13 +1,8 @@
 Scripts enable Hummingbot users to build customized strategies and access the full power of Hummingbot exchange connectors in a few lines of Python code.
 
-Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** offer users an easier alternative to creating a full-blown strategy. They are light Python files that can be run and modified without re-compilation, so users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface.
+Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** offer users an easier alternative to creating a full-blown [Strategy](/strategies). Scripts are light Python files that can be run and modified without re-compilation, so users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface.
 
 Unlike strategies, scripts can be created without configuration files, so only a single file is needed. However, scripts can access all the raw data, events, and methods in Hummingbot connectors, as well as other features such as the Rate Oracle.
-
-See [Getting Started](getting-started) to start running scripts.
-
-!!! abstract "Cheat Sheet"
-    We created this [cheat sheet](/scripts/cheatsheet.pdf) highlighting the most commonly used methods available. While you may not need it in the future, keeping it open on a second screen, for now, would be helpful.
 
 See [Examples](examples) for a list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
 
@@ -21,11 +16,15 @@ See [Examples](examples) for a list of the current sample scripts in the Humming
 
 Introduced in version [0.29.0](/release-notes/0.29.0), **PMM Scripts** are an earlier component that allows users customize the behavior of the [Pure Market Making](/strategies/pure-market-making) strategy with snippets of Python code.
 
-Since PMM Scripts run in a separate process, they have limited access to variables and events in the main Hummingbot process. For this reason, Hummingbot Foundation advises the community to contribute to the generalized Scripts module rather than PMM Scripts going forward.
+Since PMM Scripts run in a separate Python process, they have limited access to variables and events in the main Hummingbot process. For this reason, we advise the community to contribute to the generalized Scripts module rather than PMM Scripts going forward.
 
 - [Getting Started with PMM Scripts](pmm-scripts)
 - [📁 PMM Script Examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts)
 
-## 📺 Videos and Guides
+## Additional Resources
 
-:fontawesome-brands-youtube: [Scripts Demo | How to build custom trading scripts with Hummingbot](https://www.youtube.com/watch?v=R4i6MhLvXHY)
+- [Quickstart Guide](/quickstart) to learn how to create and customize a market making strategy using Scripts
+
+- [Scripts Cheatsheet](/scripts/cheatsheet): Check out the cheatsheet or the [PDF version](/scripts/cheatsheet.pdf) that highlights the most commonly used methods available when writing scripts
+
+- [Debugging Scripts with PyCharm](https://www.loom.com/share/6612ffd03199432c94338bcd18567831): This video shows you how to debug Scripts at runtime with the PyCharm IDE

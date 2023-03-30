@@ -4,11 +4,9 @@
 
 ## Introduction
 
-Welcome to the new **Hummingbot Quickstart**! With Hummingbot, you can create trading high-frequency trading strategies that can run any crypto exchange and customize them to fit your specific trading style!
+Welcome to the new **Hummingbot Quickstart Guide**! This will teach you how to build and customize market making strategy using Hummingbot over 5 exercises.
 
-In this guide, we will start with a simple "Hello World" example of a Hummingbot script and gradually add more functionality to it with each example. By the end of this guide, you will gain a basic understanding of how to create a market making script and and use real-time order book data to customize its behavior.
-
-Whether you're a beginner or an experienced trader, this guide will help you get started with creating your own custom trading strategies using Hummingbot. So, let's dive in and start building!
+Whether you're a beginner or an experienced trader, this guide should help you get started with creating your own custom trading strategies using Hummingbot. So, let's dive in and start building!
 
 !!! note
     Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** enable users to build customized strategies and access the full power of Hummingbot exchange connectors without creating a full-blown strategy. Scripts are light Python files that can be run and modified without re-compilation, which let users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. See [Examples](/scripts/examples) for a list of the current sample scripts in the Hummingbot codebase.
@@ -46,13 +44,9 @@ hummingbot
 
 - **scripts:** This folder stores the code of the sample scripts, as well as new scripts that we create.
 
-### Resources
-
-- **Scripts Cheatsheet**: We created this [cheatsheet](/scripts/cheatsheet.pdf) highlighting the most commonly used methods available when writing scripts.
-
-- **Debugging Scripts with PyCharm**: Watch [this video](https://www.loom.com/share/6612ffd03199432c94338bcd18567831) to learn how you can debug Scripts at runtime with the PyCharm IDE.
-
 ## Exercises
+
+We will start with a simple "Hello World" example of a Hummingbot script and gradually add more functionality to it with each exercise. By the end, you should gain a basic understanding of how to create a market making strategy and use market data to customize its behavior.
 
 ### [Exercise 1:](custom-pmm-1.md) Create Hello World Script
 
@@ -80,3 +74,11 @@ hummingbot
 
 - Creating custom OHLCV candles and technical indicators from order book data
 - Making the price ceiling/floor feature dynamic with Bollinger Bands
+
+## Additional Resources
+
+- [Quickstart Guide](/quickstart) to learn how to create and customize a market making strategy using Scripts
+
+- [Scripts Cheatsheet](/scripts/cheatsheet): Check out the cheatsheet or the [PDF version](/scripts/cheatsheet.pdf) that highlights the most commonly used methods available when writing scripts
+
+- [Debugging Scripts with PyCharm](https://www.loom.com/share/6612ffd03199432c94338bcd18567831): This video shows you how to debug Scripts at runtime with the PyCharm IDE
