@@ -1,34 +1,43 @@
-# Component: Candles
+The Candles Feed component, introduced in version [1.13.0](/release-notes/1.13.0/#custom-ohlcv-candles), helps users to generate custom OHLCV candles using both historical and live Websocket data, allowing traders to create real-time custom technical indicators using [pandas_ta](https://github.com/twopirllc/pandas-ta) that can be used in a variety of ways.
+
+You will likely want to add technical indicators to the candle data, and we recommend using [pandas_ta](https://github.com/twopirllc/pandas-ta).
+
+Watch a recent "How To" community call that explains how to customize a market making strategy using this component:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/xCEvYbdsbvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Description
 
-The `CandlesBase` class is a subclass of `NetworkBase` and serves as a base class for fetching and storing candle data from a cryptocurrency exchange. This class provides a common interface and uses Rest and WS Assistants for all IO operations, along with a double-ended queue to store candles. Additionally, it implements the Throttler module for API rate limiting, although it's not necessary since real-time data should primarily be updated via WebSockets.
+The [`CandlesBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/candles_feed/candles_base.py) class is a subclass of [`NetworkBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/network_base.py) and serves as a base class for fetching and storing candle data from a cryptocurrency exchange. 
 
-All the data sources for candles inherit CandlesBase to implement the specific endpoints, and the current sources available are:
+This class provides a common interface and uses Rest and WS Assistants for all IO operations, along with a double-ended queue to store candles. Additionally, it implements the Throttler module for API rate limiting, although it's not necessary since real-time data should primarily be updated via WebSockets.
 
-- `BinanceSpotCandles`
-- `BinancePerpetualCandles`
+## Data sources
+
+All the data sources for candles inherit CandlesBase to implement the specific endpoints. As of version 1.14, the available sources available are:
+
+- `binance`: See [`BinanceSpotCandles`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_spot_candles) for the implementation.
+- `binance_perpetual`: See [`BinancePerpetualCandles`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_perpetual_candles) for the implementation.
 
 To create a new instance of this component, it is recommended to use the `get_candle` method of the `CandlesFactory` (which will be demonstrated later in an example).
 
-## Use Cases
+## Relevant scripts
 
-If you want to include candle data in your strategies or scripts, you can use the candles component!
+ You can find examples of usage in the following scripts:
 
-You will likely want to add technical indicators to the candle data, and we recommend using **pandas_ta**. You can find examples of usage in the following scripts:
-
+- [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py)
 - [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_directional_strategy_example.py)
 - [advanced_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/advanced_directional_strategy_example.py)
 
 You can also initialize as many candles as you need. For each combination of `[connector_name, trading_pair, interval]`, you should create a new instance using the `CandlesFactory`.
 
-## Most important methods and properties
+## Key methods and properties
 
-- **`CandlesFactory.get_candle(connector_name: str, trading_pair: str, interval:str = "1m", max_records:int = 500)`**
-    - connector_name: name of the data source [`binance`, `binance_perpetual`]
-    - trading_pair: hb_trading_pair `BASE-QUOTE`
-    - interval: time interval between candles (check the intervals available for each source)
-    - max_records: the maximum size of the deque that will store the candles. When the component starts, it will collect the first WebSocket message and create a task to fill the deque via REST while the WebSocket messages continue arriving
+- `CandlesFactory.get_candle(connector_name: str, trading_pair: str, interval:str = "1m", max_records:int = 500)`
+    - `connector_name`: name of the data source, e.g. [`binance`, `binance_perpetual`]
+    - `trading_pair`: hb_trading_pair, e.g. `BASE-QUOTE`
+    - `interval`: time interval between candles (check the intervals available for each source)
+    - `max_records`: the maximum size of the dequeue that will store the candles. When the component starts, it will collect the first WebSocket message and create a task to fill the dequeue via REST while the WebSocket messages continue arriving
 
 - `start()`: it is essential to start this component after initialization as it will begin streaming and collecting the candles. It is recommended to call this method in the `init` of the strategy. An example will be provided later.
 
@@ -42,17 +51,17 @@ If you want to see it in action, run the [candles_example.py](https://github.com
 
 [![alt text](candles-a.jpg)](candles-a.jpg)
 
-That’s all that you need to know about the candles, just remember that you need to create an instance for each candle you want to use, start and stop them, and access information by using the `candles_df` property only when the candle `is_ready`.
+Remember that you need to create an instance for each candle you want to use, start and stop them, and access information by using the `candles_df` property only when the candle `is_ready` property is True.
 
 Also, it's best to access candle information when it's full because `max_records` should be determined based on the maximum number of records needed to compute technical indicators. For example, if the largest indicator is a moving average of the last 400 periods, then `max_records` should be greater than 400.
 
-## Code examples
+## Code samples
 
 The following code examples demonstrate how to use candles in Hummingbot to gather historical data and use it to inform trades.
 
 ### Initializing candles
 
-**One candle of `BTC-USDT` of `BinanceSpot`**
+This fetches a single candle of `BTC-USDT` of `BinanceSpot`:
 
 ```python
 from typing import Dict
@@ -82,8 +91,6 @@ Note that the candles are independent from the Hummingbot connector that is used
 [![alt text](candles-b.jpg)](candles-b.jpg)
 
 If you run the code example above in Hummingbot you won't see any output but in the next example we can see how we can output the data every tick
-
----
 
 ### Logging candles every tick
 
@@ -122,16 +129,13 @@ class InitializingCandlesExample(ScriptStrategyBase):
     self.logger().info(self.candles.candles_df)
 ```
 
-!!! Warning
-    This is probably not a good idea, because you are going to have a lot of logs, but this shows you how to access the information of the candles every tick.
+Note that this may not be a good idea because you are going to have a lot of logs, but this shows you how to access the information of the candles every tick.
 
-    If you want to see how to show the candles in the format status, check the script [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) of the codebase or the screenshot posted above.
+If you want to see how to show the candles in the `format_status` method, check the script [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) of the codebase or the screenshot posted above.
 
-In the screenshot below we can see the output in the log pane which is updated every tick.
+In the screenshot below we can see the output in the log pane which is updated every tick:
 
 [![alt text](candles-c.jpg)](candles-c.jpg)
-
----
 
 ### Multiple candles
 
@@ -166,5 +170,6 @@ class InitializingCandlesExample(ScriptStrategyBase):
 
 This code example shows how to initialize multiple candles for different trading pairs, intervals, and connectors. The `CandlesFactory` class is used again to create multiple instances of candles, which can be started and stopped using the `start` and `stop` methods. By storing the candles in a dictionary, it's possible to create strategies combining indicators of different sources. The [advanced_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/advanced_directional_strategy_example.py) script in the codebase demonstrates how to do this.
 
-!!! tip
-    You can also use Hummingbot to download historical candles. To do so, you can check the `download_candles` example that shows how to collect all the candles selected and store them in a CSV inside the data folder.
+### Downloading historical data
+
+You can also use Hummingbot to download historical candles. To do so, check out the `download_candles` (link TBC) example that shows how to collect all the candles selected and store them in a CSV inside the data folder.

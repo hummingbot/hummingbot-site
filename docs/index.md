@@ -20,13 +20,37 @@ New to Hummingbot? Start here!
 
 Many of the sample scripts in the [`/scripts/`](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder were contributed by Botcamp students.
 
+## 📺 Events
+
+Each month, we livestream two community calls on our [Discord](https://discord.gg/hummingbot) server. Afterwards, we post recordings on our [YouTube](https://youtube.com/c/hummingbot) channel.
+
+Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204&pvs=4) for links to these monthly calls and other upcoming events.
+
+### Community calls
+
+* 1st Wednesday of the month, 2pm GMT / 10am EST / 7am PST / 10pm SIN
+* Release highlights, community demos, AMA
+
+Watch the last call:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/B6xKM-Cao_w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### "How to" calls
+
+* 3rd Wednesday of the month, 2pm GMT / 10am EST / 7am PST / 10pm SIN
+* Developer-focused lessons that show you how to build or extend your  strategies with Hummingbot. 
+
+Watch the last call:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/xCEvYbdsbvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 👩‍💻 Hummingbot components
 
 Hummingbot architecture features modular components that can be maintained and extended by individual community members:
 
 - [Scripts](/scripts): Python files that define various algorithmic trading strategies. Scripts are the recommended approach for new users to build strategies in Hummingbot.
 - [Exchanges](/exchanges): Connectors to various centralized exchanges (CEX) and decentralized exchanges (DEX)
-- [Chains](/exchanges): Connectors to various blockchain networks (for DEX connectors)
+- [Chains](/chains): Connectors to various blockchain networks (for DEX connectors)
 - [Strategies](/strategies): Configurable templates for various algorithmic trading strategies. These were Hummingbot's original method of defining strategies and have been superceded by Scripts.
 
 ## 👩‍💻 For developers
@@ -49,17 +73,6 @@ Hummingbot Foundation is a not-for-profit foundation that facilitates decentrali
 - [Community](/community): Participate in the global Hummingbot ecosystem
 - [Blog](https://blog.hummingbot.org): Recent news and updates
 - [Newsletter](https://hummingbot.substack.com/): Recent news and updates
-
-## ☎️ Community calls
-
-Each month, we livestream two monthly community calls on our [YouTube channel](https://youtube.com/c/hummingbot):
-
-* Community call (1st Wednesday of the month): Release highlights, community demos, AMA
-* Developer call (3rd Wednesday of the month): Mini-lessons, developer-focused AMA
-
-All calls take place on Wednesdays at 2pm GMT / 10am EST / 7am PST / 10pm SIN, with recordings posted on Youtube afterwards. 
-
-Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204&pvs=4) for the upcoming events and Youtube links.
 
 ## 📬 Newsletter
 
