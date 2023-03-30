@@ -168,6 +168,12 @@ After it’s running, run `status --live` to see your dynamic price ceiling/floo
 
 You can display any variable you want here, so use it to analyze what is happening with your bot.
 
+## Debugging scripts
+
+Watch this video to learn how to debug Scripts at runtime with the PyCharm IDE:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/2O6Ge25rsLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 **Congratulations on successfully building your own custom market making script!**

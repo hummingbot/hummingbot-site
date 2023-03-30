@@ -25,24 +25,37 @@ If you have questions or need help, join the [official Hummingbot Discord](https
 
 Note that Hummingbot is **local client software** that you run on your own machine, so you have full control over how it’s configured and where you save your files. No one else can access your data and secrets!
 
+If you installed Hummingbot from source, note the following sub-folders in your root directory:
 ```
 hummingbot
     ┣ conf
-    ┣ data
     ┣ logs
-    ┣ hummingbot
+    ┣ data
     ┣ scripts
+    ┣ hummingbot
 ```
 
-- **conf:** Here you will find the configuration files of api_keys, strategies, password, client, logs, and fees.
+- `/conf`: Configuration files for your strategies, and encrypted API keys and private keys encrypted by your [password](/operation/password/)
 
-- **data:** Databases and CSV files of trades.
+- `/logs`: Log files of your scripts and strategies
 
-- **logs:** Log files of your running scripts are stored here.
+- `/data`: SQLite databases and CSV files for the trades executed by your scripts and strategies
 
-- **hummingbot:** All the components that we are going to use are inside this folder. Read the API Reference guide to learn more about each component.
+- `/scripts/`: This folder contains the sample scripts, and you can add new scripts here to make them available to the `start` command
 
-- **scripts:** This folder stores the code of the sample scripts, as well as new scripts that we create.
+- `/hummingbot/`: This folder contains the core Hummingbot classes, components, and connectors. Read the code and related documentation page to understand each module.
+
+If you installed Hummingbot via Docker, your `/hummingbot_files` folder contains the `/conf`, `/logs`, `/data`, and `/scripts` sub-folders above.
+
+### User Interface
+
+If you have installed Hummingbot successfully, you should see a welcome screen like the one below:
+
+![](/assets/img/welcome.png)
+
+The Hummingbot CLI helps you manage, configure, and run your bots. Get familiar with the [basic features](/operation/) in Hummingbot, especially the [User Interface](/operation/user-interface/).
+
+If you need assistance launching and exiting from the Hummingbot CLI, go to [this page](/operation/launch-exit/).
 
 ## Exercises
 
