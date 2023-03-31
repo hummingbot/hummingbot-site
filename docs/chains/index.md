@@ -12,3 +12,4 @@ Currently, Gateway supports the following blockchains:
 - [Harmony](/chains/harmony)
 - [Polygon](/chains/polygon)
 - [NEAR](/chains/near)
+- [XDC Chain](/chains/xdc-chain)

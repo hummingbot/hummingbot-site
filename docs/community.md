@@ -43,8 +43,9 @@ Below are the only code repositories used by the Hummingbot Foundation to releas
 
 The Foundation Github organization is located at <https://github.com/hummingbot>. It contains:
 
-* [`hummingbot`](https://github.com/hummingbot/hummingbot): monorepo that contains the code for the Hummingbot trading client and Hummingbot Gateway
-* [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot Foundation website and Hummingbot documentation site
+* [`hummingbot`](https://github.com/hummingbot/hummingbot): code for the Hummingbot trading client
+* [`gateway`](https://github.com/hummingbot/gateway): code for the Hummingbot Gateway DEX connector middleware
+* [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot documentation site
 - [`pm`](https://github.com/hummingbot/pm): Agendas and recordings of regular Hummingbot developer and community calls
 * [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
 * [`streamlit-apps`](https://github.com/hummingbot/streamlit-apps): Hummingbot-related StreamLit data apps and dashboards
@@ -52,4 +53,7 @@ The Foundation Github organization is located at <https://github.com/hummingbot>
 
 ### DockerHub
 
-The Hummingbot DockerHub is at: <https://hub.docker.com/repository/docker/hummingbot/hummingbot>. It contains images for the `latest` and `development` releases of Hummingbot for various environments, as well as historical releases.
+Our [DockerHub](https://hub.docker.com/r/hummingbot/) publishes Docker images for:
+
+  * `hummingbot`: `master` (latest) and `development` images of [Hummingbot](https://github.com/hummingbot/hummingbot) starting with version 1.5.0
+  * `gateway`: `main` (latest) and `development` images of [Gateway](https://github.com/hummingbot/gateway) starting with version 1.13.0

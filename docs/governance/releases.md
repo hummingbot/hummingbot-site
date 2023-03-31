@@ -1,4 +1,4 @@
-Changes to the Hummingbot codebase are made through [pull requests](https://github.com/hummingbot/hummingbot/pulls), which undergo a thorough engineering and QA review before they are merged into the codebase, coordinated by the Foundation.
+Changes to the Hummingbot and Hummingbot Gateway codebases are made through [pull requests](https://github.com/hummingbot/hummingbot/pulls), which undergo a thorough engineering and QA review before they are merged into the codebase, coordinated by the Foundation.
 
 Only the following pull requests will be reviewed:
 
@@ -36,8 +36,10 @@ All pull requests aiming to be included on the `master` branch must be targeted 
 
 ### `staging`
 
-`staging` is used by the Foundation QA team to conduct a thorough test all code changes before adding them to the `master` branch.
+`staging` is used by the Foundation QA team to conduct a thorough test all code changes before adding them to the `master` or `main` branch.
 
-### `master`
+### `master` or `main`
 
-`master` is the main release branch and contains the latest stable version of the Hummingbot software client and is released once per month.
+`master` is the main release branch and contains the latest stable version of the Hummingbot software client and is released once per month. 
+
+Hummingbot Gateway's `main` branch serves the same purpose.

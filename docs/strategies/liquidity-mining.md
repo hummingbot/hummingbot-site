@@ -4,7 +4,7 @@
 
 * Folder: [/hummingbot/strategy/liquidity_mining](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining)
 * Configs: [liquidity_mining_config_map.py](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining/liquidity_mining_config_map.py)
-* Maintainer: CoinAlpha
+* Maintainer: 
 
 ## 🏆 Strategy Tier
 

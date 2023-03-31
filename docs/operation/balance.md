@@ -1,55 +1,94 @@
-# Checking Balances
+# How to get Balances
 
 ## Exchange and wallet balance
 
-Run `balance` command to check the balances of all connected wallets and exchanges.
+Run the `balance` command to check the balances of all connected wallets and exchanges.
 
-![](/assets/img/balance-command.png)
+![balance command](../assets/img/balance-1.png)
 
-**Allocated** column shows how much of your assets are being used when there are active orders.
+The **"Allocated"** column shows how much of your assets are being used when there are active orders.
 
-## Paper trade balance
+## Paper Trade balance
 
-Run `balance paper` to check your paper trade account balance.
+Run the `balance paper` command to check your paper trade account balance.
 
-![](/assets/img/balance-paper.png)
+![balance paper](../assets/img/balance-2.png)
 
 By default, these are the paper trade balances pre-loaded in Hummingbot. You can also enter additional assets and credits to use in paper trade mode.
 
-- [Adding Paper Trade Balance](/global-configs/paper-trade/#adding-paper-trade-balance)
+## Adding Paper Trade Balance
 
-## Limit option
+By default, the paper trade account has the following tokens and balances which you can see when you run the `balance paper` command.
 
-Run `balance limit` to check your exchange specific limit that are set in global configs 
+```
+>>>  balance paper
+Paper account balances:
+    Asset    Balance
+      DAI  1000.0000
+      ETH    10.0000
+      ONE  1000.0000
+     TUSD  1000.0000
+     USDC  1000.0000
+     USDQ  1000.0000
+     USDT  1000.0000
+     WETH    10.0000
+      ZRX  1000.0000
 
-```yaml
-    # Balance Limit Configurations
-    # e.g. Setting USDT and BTC limits on Binance.
-    # balance_asset_limit:
-    #   binance:
-    #     BTC: 0.1
-    #     USDT: 1000
-    balance_asset_limit:
-    coinflex_test: {}
-    gate_io: {}
-    binance: {}
-    binance_us: {}
 ```
 
-## Rate Oracle
+When adding balances, specify the asset and balance you want by running this command `balance paper [asset] [amount]`.
 
-when running the `balance` command the rate oracle uses the global_token from [configuration](https://docs.hummingbot.org/strategy-configs/rate-oracle/#parameters) as the base token for calculating balances. The default values are as follows:
+For example, we want to add 0.5 BTC and check our paper account balance to confirm.
 
-```yaml
-    # A universal token which to display tokens values in, e.g. USD,EUR,BTC
-    global_token:
-    global_token_name: USD
-    global_token_symbol: $
+```
+>>>  balance paper BTC 0.5
+Paper balance for BTC token set to 0.5
+
+>>>  balance paper
+Paper account balances:
+    Asset    Balance
+      BTC     0.5000
+      DAI  1000.0000
+      ETH    10.0000
+      ONE  1000.0000
+     TUSD  1000.0000
+     USDC  1000.0000
+     USDQ  1000.0000
+     USDT  1000.0000
+     WETH    10.0000
+      ZRX  1000.0000
 ```
 
-The default value of the balance is calculated using the default USD as base. The reason some exchanges will show 0 as their total is not having USD based pairs. To change that, simply change the global_token to another token such as USDT, USDC, DAI…
+## Balance limits
 
-### How it works?
+Sets the amount limit on how much assets Hummingbot can use in an exchange or wallet. This can be useful when running multiple bots on different trading pairs with same tokens e.g. running a BTC-USDT pair and another bot on ETH-USDT using the same account.
 
-The rate oracle loops through all connected exchanges and check for the assets available under each exchange. Afterwards, it fetches the price of the pair of each asset with the global token and calculates the value of the assets to be displayed. The values are added together to display the Exchanges Total.
+### How it works
 
+You can set how much of a particular token the bot can use by running the command `balance limit [exchange] [asset] [amount]`. You can disable this feature by editing it in the global config file and set it to -1. While setting it to 0 will initially not place any order for a specific asset until a trade is executed to accumulate the said asset.
+
+For example:
+
+```
+>>>  balance limit binance USDT 20
+Limit for USDT on bybit exchange set to 20.0
+
+```
+
+Run the `balance limit` command to confirm if the changes are applied
+
+![Alt text](../assets/img/balance-3.png)
+
+### Example Scenario
+
+Create a pure market making strategy, run the `config` command to view the whole configuration. The command `balance limit bybit USDT 20` is used as example
+
+![Alt text](../assets/img/balance-4.png)
+
+On this scenario we set a config with `order_levels 2` this way we can also see how the balance limit works. The strategy would only be able to create orders that will not be more than 20 USDT.  On the screenshot below, the client was trying to buy a XRP on a amount of 10.137 USDT and observed that the second buy order amount adjusted due to balance limit.
+
+![Alt text](../assets/img/balance-5.png)
+
+On the screenshot below, a buy order has been successfully filled and after order refresh time the client created orders again but observed that now it did not created another order level since it is beyond the set balance limit of 20 USDT.
+
+![Alt text](../assets/img/balance-6.png)

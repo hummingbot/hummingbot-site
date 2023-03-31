@@ -13,24 +13,14 @@ See [Exchanges](/exchanges) for more information about how to create API keys fo
 !!! warning "Only enable Read and Trade access"
     For security reasons, Hummingbot does not support deposit and withdrawal functionality. Therefore, we recommend using only **read + trade** enabled API keys. It is not necessary to enable **withdraw**, **transfer**, or anything equivalent to retrieving assets from your wallet.
 
-## Connecting to protocols
-
-1. Run `connect [protocol_name]` command, e.g. `connect ethereum`
-1. Enter your wallet private key
-1. Enter the Ethereum node endpoint starting with https://
-1. Enter the websocket address starting with wss://
-
-!!! note "Connecting vs keyfile"
-    A more secure way to add your blockchain wallet credentials to Humminggbot is by [importing a keyfile](https://hummingbot.org/gateway/#i-exchange-info).
-
 ## Checking connection status
 
 Run the `connect` command to view the status of each connector. It also shows failed connections due to connectivity issues, invalid API key permissions, etc.
 
-![](/assets/img/connection-status.png)
+![Alt text](../assets/img/connection-status.png)
 
 **Keys Added** column indicates if API keys are added to Hummingbot.
 
 **Keys Confirmed** column shows the status if Hummingbot has successfully connected to the exchange or protocol.
 
-**Connector Status** column is an indicator of the connector working status as of the client release. See [Exchange Status](/exchanges/#status) for more information.
+**Tier** column shows the connector tier (Gold, Silver, Bronze). For more info on connector tiers see the [exchanges](/exchanges) documentation.

@@ -1,5 +1,7 @@
 # `kucoin`
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/8z7YSxcMrFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 📁 Connector Info
 
 * Type: SPOT CLOB CEX

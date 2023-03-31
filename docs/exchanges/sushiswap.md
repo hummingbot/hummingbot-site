@@ -23,8 +23,10 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 
 ## 🕸️ Supported Chains and Networks
 
-* `ethereum`: `mainnet`, `goerli`
+* `ethereum`: `mainnet`, `arbitrum_one`, `goerli`
+* `avalanche`: `avalanche`, `fuji`
 * `binance-smart-chain`: `mainnet`, `testnet`
+* `harmony`: `mainnet`
 * `polygon`: `mainnet`, `mumbai`
 
 ## 🔑 Connection
