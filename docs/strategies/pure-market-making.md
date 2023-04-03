@@ -66,10 +66,10 @@ In addition, the strategy contains a number of parameters to enable traders to c
 | `take_if_crossed`            | bool        | False       | Do you want to take the best order if orders cross the orderbook? |
 | `order_override`             | bool        |             |
 | `should_wait_order_cancel_confirmation` | bool |     | Should the strategy wait to receive a confirmation for orders cancelation before creating a new set of orders? (Not waiting requires enough available balance) (Yes/No) |
-| `bid_order_level_spreads`    | decimal     |         | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
-| `ask_order_level_spreads`    | decimal     |         | Enter the spreads (as percentage) for all bid spreads e.g 1,2,,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
+| `bid_order_level_spreads`    | decimal     |         | Enter the spreads (as percentage) for all bid spreads e.g 1,2,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of bid_order_level_spreads and bid_order_level_amounts   |
+| `ask_order_level_spreads`    | decimal     |         | Enter the spreads (as percentage) for all ask spreads e.g 1,2,3,4 to represent 1%,2%,3%,4%. The number of levels set will be equal to minimum lengths of ask_order_level_spreads and ask_order_level_amounts   |
 | `bid_order_level_amounts`    | decimal     |         | Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
-| `ask_order_level_amounts`    | decimal     |         |Enter the amount for all bid amounts. The number of levels set will be equal to the minimum length of bid_order_level_spreads and bid_order_level_amounts   |
+| `ask_order_level_amounts`    | decimal     |         |Enter the amount for all ask amounts. The number of levels set will be equal to the minimum length of ask_order_level_spreads and ask_order_level_amounts   |
 
 ## 📓 Description
 
