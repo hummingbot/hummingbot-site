@@ -19,7 +19,7 @@ Watch this video to learn how to install Hummingbot from source on MacOS:
 You can run the following command from Terminal to install them:
 
 ```
-➜ xcode-select --install
+xcode-select --install
 ```
 
 ### Anaconda / Miniconda
@@ -59,7 +59,7 @@ unset __conda_setup
 Exit out of `vim` and make sure to save the changes then close & relaunch the terminal. Once you have the terminal up run the `conda init` command.
 
 ```bash
-➜ conda init zsh
+conda init zsh
 ```
 
 Afterward, you can also try the `conda` command in a terminal to verify if conda was installed correctly. If the command is valid, then Anaconda has been successfully installed. Proceed to the next step to install Hummingbot
@@ -70,22 +70,22 @@ Follow the steps below in Terminal:
 
 ```bash
 # Clone the Hummingbot repo
-➜ git clone https://github.com/hummingbot/hummingbot.git
+git clone https://github.com/hummingbot/hummingbot.git
 
 # Navigate into the Hummingbot folder
-➜ cd hummingbot
+cd hummingbot
 
 # Run the install script
-➜ ./install
+./install
 
 # Activate the conda environment
-➜ conda activate hummingbot
+conda activate hummingbot
 
 # Compile Hummmingbot
-➜ ./compile
+./compile
 
 # Start Hummingbot
-(hummingbot) ➜ bin/hummingbot.py
+bin/hummingbot.py
 ```
 
 ## Macs with Apple M1/M2 chips
@@ -102,22 +102,22 @@ The code below helps you regenerate a Hummingbot conda environment optimized for
 
 ```bash
 # Deactivate the environment if you're in it
-(hummingbot) ➜ conda deactivate
+conda deactivate
 
 # Remove the envionment
-➜ conda env remove -n hummingbot
+conda env remove -n hummingbot
 
 # Creates the hummingbot environment and enforces python 3.8.2 and initialize a environment variable used to determine the processor packages to use
-➜ CONDA_SUBDIR=osx-64 conda create -n hummingbot python=3.8.2
+CONDA_SUBDIR=osx-64 conda create -n hummingbot python=3.8.2
 
 # Activate the new environment
-➜ conda activate hummingbot
+conda activate hummingbot
 
 # Configures environment to use intel-based packages
-➜ conda config --env --set subdir osx-64
+conda config --env --set subdir osx-64
 
 # Start Hummingbot
-(hummingbot) ➜ bin/hummingbot.py
+bin/hummingbot.py
 ```
 
 ### Docker ARM build
