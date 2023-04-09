@@ -127,7 +127,7 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Deploying Hummingbot with Docker: installation/deploy.md
+      - Docker: installation/deploy.md
       - Installing Hummingbot on Linux: installation/linux.md
       - Installing Hummingbot on MacOS: installation/mac.md
       - Installing Hummingbot on Windows: installation/windows.md        
