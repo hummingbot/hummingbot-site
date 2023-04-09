@@ -4,7 +4,7 @@ The [`deploy-examples`](https://github.com/hummingbot/deploy-examples) Github re
 
 ### Install Docker Compose
 
-The recommended way to get Docker Compose is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
+We recommended installing [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
 
 Docker Desktop is available on:
 
@@ -15,43 +15,42 @@ Docker Desktop is available on:
 
 ### Clone `deploy-examples` repo
 
-Clone the `deploy-examples` repo to your machine:
+Clone the repo to the machine where you want to deploy Hummingbot:
 ```
 git clone https://github.com/hummingbot/deploy-examples.git
 ```
 
-This repo contains folders that help you deploy different Hummingbot configurations, such as:
+It contains folders that help you deploy different Hummingbot configurations, such as:
 
 * A single Hummingbot instance
 * A single Hummingbot instance that auto-starts a strategy or script
 * Linked Hummingbot and Gateway instances
 * Multiple instances of Hummingbot
 
-The two important files in each folder are:
+Each folder contains two important files:
 
-* `docker-compose.yml`: A sample configuration file for that deployment type
-* `README.md`: A detailed README file that guides users through the steps required to deploy Hummingbot using Docker, including how to build and run the containers, how to configure the bot, and how to monitor its performance. 
+* `docker-compose.yml`: The sample configuration file for that deployment type
+* `README.md`: Detailed deployment instructions
 
-This folder is where your encrypted keys, scripts, trades, configs, logs, and other files related to your bots will be saved.
 
 ### Enabling read/write permissions
 
-You may need to grant read and write access to the `hummingbot_files` and `gateway_files` sub-folders created by Docker Compose that store your local files:
-```
-sudo chmod -R a+rw ./hummingbot_files
-```
+During the installation process, Docker Compose will create `hummingbot_files` and `gateway_files` folders where your encrypted keys, scripts, trades, configs, logs, and other files related to your bots will be saved.
 
+You may need to grant read and write access to the sub-folders created by Docker Compose that store your local files:
 ```
-sudo chmod -R a+rw ./gateway_files
+sudo chmod -R a+rw ./hummingbot_files ./gateway_files
 ```
 
 ### For Apple M1/M2 and other ARM machines
 
 If you have a recent Mac that uses Apple Silicon (M1/M2) chipset or another ARM-based machine, you need to change the image tags in the `docker-compose.yml` file to ensure that you pull a container that is optimized for your chip architecture.
 
-Use an IDE like VSCode to edit the `docker-compose.yml` file. Change the the image tag from `latest` to `latest-arm` to pull the image built for ARM-based machines. You can also comment out the line that contains latest and uncomment the line that contains `latest-arm`:
+Use an IDE like VSCode to edit the `docker-compose.yml` file. Change the the image tag from `latest` to `latest-arm` to pull the image built for ARM-based machines. 
 
-```
+You can also comment out the lines that contains `latest` and uncomment the lines that contains `latest-arm`, so that the file looks like this:
+
+```yaml
 # image: hummingbot/hummingbot:latest
 image: hummingbot/hummingbot:latest-arm
 
@@ -59,9 +58,9 @@ image: hummingbot/hummingbot:latest-arm
 image: hummingbot/gateway:latest-arm
 ```
 
-## Deployment types
+## Deployment Types
 
-### [Single Hummingbot instance](https://github.com/hummingbot/deploy-examples/tree/development/simple_hummingbot_compose)
+### [Single Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/development/simple_hummingbot_compose)
 
 This installs a single [Hummingbot](https://github.com/hummingbot/hummingbot) instance as a Docker container. Click the link above or follow the instructions below.
 
@@ -78,7 +77,7 @@ Usage:  docker compose [OPTIONS] COMMAND
 
 Run the following command to pull the image and start the instance:
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 After the images have been downloaded, you should see the following output:
@@ -140,17 +139,17 @@ Use the commands below or use the Docker Desktop application to manage your cont
 
 ### Create the Compose project
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Stop the Compose project
 ```
-docker-compose down
+docker compose down
 ```
 
 ### Update the Compose project for the latest images
 ```
-docker-compose up --force-recreate --build -d
+docker compose up --force-recreate --build -d
 ```
 
 ### Give all users read/write permissions to local files
@@ -166,12 +165,6 @@ docker attach <container-name>
 ### Detach from the container and return to command line
 
 Press keys <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd>
-
-
-### Update the container to the latest image
-```
-docker-compose up --force-recreate --build -d
-```
 
 ### List all containers
 ```
