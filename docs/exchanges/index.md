@@ -41,13 +41,50 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 | [Gate.io](./gate-io) | SPOT CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
 | [Gate.io (perp)](./gate-io-perpetual) | PERP CLOB CEX | [5868285](https://www.gate.io/signup/5868285)
 | [AscendEx](./ascend-ex) | SPOT CLOB CEX | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
-| [Pancakeswap](./pancakeswap) | SPOT AMM DEX |
-| [Sushiswap](./sushiswap) | SPOT AMM DEX |
+| [Quickswap](./quickswap) | SPOT AMM DEX |
+| [TraderJoe](./traderjoe) | SPOT AMM DEX |
 | [dYdX](./dydx-perpetual) | PERP CLOB DEX |
 
 ### Bronze
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+| Exchange | Type | Signup code |
+|----------|------|-------------|
+| [AltMarkets](./altmarkets) | SPOT CLOB CEX |
+| [BTC-Markets](./btc-markets) | SPOT CLOB CEX |
+| [Binance US](./binance-us) | SPOT CLOB CEX |
+| [BitGet](./bitget) | PERP CLOB CEX |
+| [BitMart](./bitmart) | SPOT CLOB CEX |
+| [Bitfinex](./bitfinex) | SPOT CLOB CEX |
+| [Bitmex](./bitmex) | SPOT CLOB CEX |
+| [Bitmex (perp](./bitmex) | PERP CLOB CEX |
+| [Bittrex](./bittrex) | SPOT CLOB CEX |
+| [Bybit](./bybit) | SPOT CLOB CEX |
+| [Bybit (perp)](./bybit) | PERP CLOB CEX |
+| [Coinbase](./coinbase) | SPOT CLOB CEX |
+| [Crypto.com](./crypto-com) | SPOT CLOB CEX |
+| [DeFi Kingdoms](./defikingdoms) | SPOT AMM DEX |
+| [Defira](./defira) | SPOT AMM DEX |
+| [Dexalot](./dexalot) | SPOT CLOB DEX |
+| [HitBTC](./hitbtc) | SPOT CLOB CEX |
+| [Huobi](./huobi) | SPOT CLOB CEX |
+| [Injective](./injective) | SPOT CLOB DEX |
+| [Kraken](./kraken) | SPOT CLOB CEX |
+| [LBank](./lbank) | SPOT CLOB DEX |
+| [Loopring](./loopring) | SPOT CLOB DEX |
+| [MEXC](./mexc) | SPOT CLOB CEX |
+| [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX |
+| [NDAX](./ndax) | SPOT CLOB DEX |
+| [OKX](./okx) | SPOT CLOB CEX |
+| [OpenOcean](./openocean) | SPOT AMM DEX |
+| [Pancakeswap](./pancakeswap) | SPOT AMM DEX |
+| [Pangolin](./pangolin) | SPOT AMM DEX |
+| [Perpetual Protocol](./perp) | PERP AMM DEX |
+| [ProBit](./probit) | SPOT CLOB CEX |
+| [Ref Finance](./ref) | SPOT AMM DEX |
+| [Sushiswap](./sushiswap) | SPOT AMM DEX |
+| [VVS Finance](./vvs) | SPOT AMM DEX |
+| [WhiteBit](./whitebit) | SPOT CLOB CEX |
+| [xswap](./xswap) | SPOT AMM DEX |
 
 Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 

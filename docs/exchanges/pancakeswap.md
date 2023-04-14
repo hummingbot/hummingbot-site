@@ -9,9 +9,9 @@
 
 ## 🏆 Exchange Tier
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## ℹ️ Exchange Info
 
