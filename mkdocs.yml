@@ -201,14 +201,15 @@ nav:
         - Gate.io: exchanges/gate-io.md
         - Gate.io (perp): exchanges/gate-io-perpetual.md
         - AscendEX: exchanges/ascend-ex.md
-        - Quickswap: exchanges/pancakeswap.md
-        - Traderjoe: exchanges/traderjoe.md
+        - Pancakeswap: exchanges/pancakeswap.md
+        - Sushiswap: exchanges/sushiswap.md
         - dYdX: exchanges/dydx-perpetual.md
       - Bronze CEX:
         - AltMarkets: exchanges/altmarkets.md
         - Binance US: exchanges/binance-us.md
         - Bybit: exchanges/bybit.md
         - Bybit (perp): exchanges/bybit-perpetual.md
+        - Bit.com: exchanges/bit-com.md
         - Bitfinex: exchanges/bitfinex.md
         - BitGet: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart.md
@@ -219,6 +220,7 @@ nav:
         - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
         - HitBTC: exchanges/hitbtc.md
+        - Hotbit: exchanges/hotbit.md
         - Huobi: exchanges/huobi.md
         - Kraken: exchanges/kraken.md
         - LBank: exchanges/lbank.md
@@ -237,9 +239,9 @@ nav:
         - OpenOcean: exchanges/openocean.md
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
-        - Pancakeswap: exchanges/quickswap.md
+        - Quickswap: exchanges/quickswap.md
         - Ref: exchanges/ref.md
-        - Sushiswap: exchanges/sushiswap.md
+        - TraderJoe: exchanges/traderjoe.md
         - VVS: exchanges/vvs.md
         - XSwap: exchanges/xswap.md
     - Strategies:

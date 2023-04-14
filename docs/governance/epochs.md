@@ -47,6 +47,13 @@ After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbo
 
 See [Epoch 3 Polls Recap](https://blog.hummingbot.org/epoch-3-polls/) for more information.
 
+## Epoch 4
+
+- **Start**: April 1, 2023
+- **End**: June 30, 2023
+
+See [Epoch 4 Polls Recap](https://blog.hummingbot.org/epoch-4-polls-recap/) for more information.
+
 ### CEX Connectors
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
@@ -61,7 +68,7 @@ See [Epoch 3 Polls Recap](https://blog.hummingbot.org/epoch-3-polls/) for more i
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Binance US, Bittrex, Huobi, AltMarkets, HitBTC, Bitmex, ProBit Global, OKX, WhiteBit, MEXC
+Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Binance US, Bittrex, Huobi, AltMarkets, HitBTC, Bitmex, ProBit Global, OKX, WhiteBit, MEXC, Bit.com, Hotbit
 
 ### DEX Connectors
 
@@ -71,13 +78,13 @@ Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Bin
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 
-- PancakeSwap
-- SushiSwap
+- Quickswap
+- Traderjoe
 - dYdX
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-TraderJoe, QuickSwap, OpenOcean, Pangolin, Defira, Perpetual Protocol, MM Finance, Defi Kingdoms, Loopring, Ref Finance, VVS Finance
+Pancakeswap, MM Finance, Ref Finance, VVS Finance, Sushiswap, Defi Kingdoms, Defira, Loopring, Perpetual Protocol, Pangolin, OpenOcean, Sushiswap
 
 ### Core Strategies
 
@@ -89,4 +96,4 @@ TraderJoe, QuickSwap, OpenOcean, Pangolin, Defira, Perpetual Protocol, MM Financ
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
 
-Avellaneda Market Making, UniswapV3 LP, Hedge, Cross-Exchange Mining, Perpetual Market Making, Aroon Oscillator, Liquidity Mining, TWAP, Spot Perpetual Arbitrage
+Perpetual Market Making, Spot Perpetual Arbitrage, Hedge, Avellaneda Market Making, Liquidity Mining, Cross-Exchange Mining, UniswapV3 LP

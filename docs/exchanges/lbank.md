@@ -4,7 +4,7 @@
 
 * Type: SPOT CLOB DEX
 * Folder: [/gateway/src/connectors/lbank](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/lbank)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+* Maintainer: 
 
 ## 🏆 Exchange Tier
 

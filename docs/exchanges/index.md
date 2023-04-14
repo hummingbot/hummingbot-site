@@ -55,6 +55,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [BTC-Markets](./btc-markets) | SPOT CLOB CEX |
 | [Binance US](./binance-us) | SPOT CLOB CEX |
 | [BitGet](./bitget) | PERP CLOB CEX |
+| [Bit.com](./bit-com) | SPOT CLOB CEX |
 | [BitMart](./bitmart) | SPOT CLOB CEX |
 | [Bitfinex](./bitfinex) | SPOT CLOB CEX |
 | [Bitmex](./bitmex) | SPOT CLOB CEX |
@@ -68,6 +69,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Defira](./defira) | SPOT AMM DEX |
 | [Dexalot](./dexalot) | SPOT CLOB DEX |
 | [HitBTC](./hitbtc) | SPOT CLOB CEX |
+| [HotBit](./hotbit) | SPOT CLOB CEX |
 | [Huobi](./huobi) | SPOT CLOB CEX |
 | [Injective](./injective) | SPOT CLOB DEX |
 | [Kraken](./kraken) | SPOT CLOB CEX |
@@ -105,10 +107,8 @@ Our sister company [CoinAlpha](https://coinalpha.com) maintains the following BR
 |----------|------|-------------|
 | [Bitget](./bitget-perpetual) | PERP CLOB CEX |
 | [Bitmart](./bitmart) | SPOT CLOB CEX | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
-| [CI-EX](./ci-ex) | SPOT CLOB CEX |
 | [Dexalot](./dexalot) | SPOT CLOB DEX |
 | [NDAX](./ndax) | SPOT CLOB CEX |
-| [LBank](./lbank) | SPOT CLOB CEX |
 | [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX |
 | [Pangolin](./pangolin) | SPOT AMM DEX |
 | [Ref](./ref) | SPOT AMM DEX |
