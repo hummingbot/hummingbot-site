@@ -47,6 +47,8 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 
 ### Bronze
 
+Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+
 | Exchange | Type | Signup code |
 |----------|------|-------------|
 | [AltMarkets](./altmarkets) | SPOT CLOB CEX |
@@ -86,7 +88,6 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 | [WhiteBit](./whitebit) | SPOT CLOB CEX |
 | [xswap](./xswap) | SPOT AMM DEX |
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 ## Connector Maintenance
 
