@@ -14,64 +14,45 @@ Hummingbot has been successfully tested with the following specifications:
 |                      | **Install from source**: 3 GB per instance                                                                                   |
 | **Network**          | A reliable internet connection is critical to keeping Hummingbot connected to exchanges.                                     |
 
-## Installing Hummingbot with Docker
+## Installation Methods
 
-You can install Hummingbot via Docker or from source (see the OS-specific guides). For most users, we recommend installing Hummingbot using [Docker](https://www.docker.com/), which lets you deploy Hummingbot in various configurations. 
+In each supported operating system, you can install Hummingbot either via Docker or from source.
 
-Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. 
+We recommend installing Hummingbot using Docker if:
+- You are just looking to test it out
+- You don't need to customize or extend the codebase
+- You are using Windows or another non-Linux environment
 
+See [Docker](./docker.md) for detailed instructions for various configurations.
 
-Follow the instructions listed in the [Deploying Hummingbot with Docker](/installation/deploy/) page, or watch the video below:
+We recommend installing Hummingbot from source if:
+- You are a developer seeking to understand, customize, or extend the codebase
+- You can building new components like connectors or strategies
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+For most users, we recommend installing Hummingbot using Docker, which lets you deploy Hummingbot in various configurations. Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. 
 
-## OS-Specific Guides
+See [Source](./source.md) for detailed instructions on this path.
 
-In addition, here are guides that walk you through the installation process for each operating system:
+## Guides by Environment
+
+In addition, here community-maintained resources about installation issues specific to various environments:
 
 * [Linux](./linux.md)
 * [MacOS](./mac.md)
 * [Windows](./windows.md)
 * [Raspberry Pi](./raspberry-pi.md)
 
-## Releases
+## Running and Updating Hummingbot
 
-Once a month, we publish an official [Release](/governance/releases) of Hummingbot and Hummingbot Gateway, marked by code publication on Github and DockerHub and the publication of the [release notes](/release-notes). 
+After you have successfully installed Hummingbot, you may need to update it, get help on issues, and contribute to the codebase.
 
-Subscribe to the [Hummingbot Newletter](https://hummingbot.substack.com/) to get notified when a new release ships.
+See [Updating Hummingbot](./updates.md) for detailed instructions on how to manage your installation.
 
-### Github
-
-The official Hummingbot Github is: <https://github.com/hummingbot>. The main repos are:
-
-* [Hummingbot](https://github.com/hummingbot/hummingbot)
-* [Hummingbot Gateway](https://github.com/hummingbot/gateway)
-
-### DockerHub
-
-The official Hummingbot DockerHub is: <https://hub.docker.com/r/hummingbot>. Here, we publish images that correspond to various Github branches:
-
-  * `hummingbot`: `master` (latest) and `development` images, starting with version 1.5.0
-  * `gateway`: `main` (latest) and `development` images, starting with version 1.13.0
-
-## Updating Hummingbot
-
-Hummingbot is regularly updated each month (see [Release Notes](/release-notes/)), we recommend that users periodically update their installations to get the latest version of the software.
-
-Users of the Docker version of Hummingbot can utilize the instructions and scripts found in the [Deploy Examples](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts) repo. Alternatively, they can update their instances to the latest image, which is updated with each release (e.g. `hummingbot/hummingbot:latest`).
-
-For users who have installed from source, they can update their Hummingbot branches to `master` (with every release) or `development` branch (updated continually):
-
-```
-git checkout [branch]
-git pull origin [branch]
-```
-
-## Running Multiple Bots
+## Multiple Bots
 
 See [Multiple Bots](./multiple-bots.md) for more information on ways to deploy multiple instances of Hummingbot and the new Orchestration Module.
 
-## Running Hummingbot in the Cloud
+## Hummingbot in the Cloud
 
 For experienced and technical users, we recommend setting up a cloud instance and installing the Docker version or from source. This enables Hummingbot to run 24/7.
 

@@ -43,14 +43,11 @@ Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Stor
 
 ## Install via Docker
 
-### Install Docker in WSL
-
-With WSL installed, you now have a Linux Virtual Machine running under Windows.
-
 ![Linux on Windows](/assets/img/wsl-running.png)
 
-Follow the instructions below to complete the Docker installation process.
+After you can access Ubuntu, we recommend installing [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) since it contains Docker CLI/Engine along with Docker Compose, which is used for Hummingbot Docker deployments.
 
+As an alternative, you can follow enter the commands below to install Docker in Ubuntu:
 ```bash
 # 1) Remove older / currently installed versions of Docker first 
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -80,7 +77,7 @@ $ sudo usermod -aG docker $USER
 $ exit
 ```
 
-Once Docker has been successfully installed, launch a Hummingbot instance following one of the [Deploy Examples](/installation/deploy/).
+After Docker has been successfully installed, follow one of the [Docker deployments](/installation/docker) to install Hummingbot.
 
 ## Install from Source
 

@@ -7,7 +7,9 @@ Supported versions:
 
 ## Install via Docker
 
-In the Ubuntu terminal, enter the commands below to install Docker:
+We recommend installing [Docker Desktop](https://docs.docker.com/desktop/install/linux-install/) since it contains Docker CLI/Engine along with Docker Compose, which is used for Hummingbot Docker deployments.
+
+As an alternative, you can follow enter the commands below to install Docker in Ubuntu:
 
 ```bash
 # 1) Remove older / currently installed versions of Docker first 
@@ -38,7 +40,7 @@ $ sudo usermod -aG docker $USER
 $ exit
 ```
 
-Once Docker has been successfully installed, launch a Hummingbot instance following one of the [Deploy Examples](/installation/deploy/).
+After Docker has been successfully installed, follow one of the [Docker deployments](/installation/docker) to install Hummingbot.
 
 ## Install from Source
 

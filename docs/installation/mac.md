@@ -1,10 +1,8 @@
 ## Install via Docker
 
-You can install Docker by installing [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) or by [downloading an installer](https://docs.docker.com/docker-for-mac/install/) from the official page.
+We recommend installing [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/) since it contains Docker CLI/Engine along with Docker Compose, which is used for Hummingbot Docker deployments.
 
-After you have downloaded and installed Docker, restart your system if necessary.
-
-Once Docker has been successfully installed, launch a Hummingbot instance following one of the [Deploy Examples](/installation/deploy/).
+After Docker has been successfully installed, follow one of the [Docker deployments](/installation/docker) to install Hummingbot.
 
 ## Install from Source
 
