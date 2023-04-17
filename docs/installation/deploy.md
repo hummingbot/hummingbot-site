@@ -12,6 +12,15 @@ Docker Desktop is available on:
 * [Mac](https://docs.docker.com/desktop/install/mac-install/)
 * [Windows](https://docs.docker.com/desktop/install/windows-install/)
  
+Afterwards, run the following command in Terminal/Bash to check that you have installed Docker Compose successfully:
+```
+docker compose
+```
+
+You should see a response that start with:
+```
+Usage:  docker compose [OPTIONS] COMMAND
+```
 
 ### Clone `deploy-examples` repo
 
@@ -64,16 +73,10 @@ image: hummingbot/gateway:latest-arm
 
 This installs a single [Hummingbot](https://github.com/hummingbot/hummingbot) instance as a Docker container. Click the link above or follow the instructions below.
 
-In Terminal/Bash, run the following command to check that you have installed Docker Compose successfully:
+From the `deploy_examples` root directory, go to the folder that contains this configuration:
 ```
-docker compose
+cd simple_hummingbot_compose
 ```
-
-You should see a response that start with:
-```
-Usage:  docker compose [OPTIONS] COMMAND
-```
-
 
 Run the following command to pull the image and start the instance:
 ```
@@ -94,11 +97,6 @@ docker attach hummingbot
 You should see the Hummingbot welcome screen:
 
 ![](/assets/img/welcome.png)
-
-Afterwards, run this command in root directory to grant read/write permission to the `hummingbot_files` folder:
-```
-sudo chmod -R a+rw ./hummingbot_files
-```
 
 ### [Autostart Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/development/autostart_hummingbot_compose)
 
