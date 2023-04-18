@@ -11,51 +11,17 @@ Whether you're a beginner or an experienced trader, this guide should help you g
 !!! note
     Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** enable users to build customized strategies and access the full power of Hummingbot exchange connectors without creating a full-blown strategy. Scripts are light Python files that can be run and modified without re-compilation, which let users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. See [Examples](/scripts/examples) for a list of the current sample scripts in the Hummingbot codebase.
 
-## Installation and Setup
-
-Before we begin coding, let’s ensure that you are set up properly.
-
-### Installation
+## Getting Started
 
 First, check out the [Installation](/installation/) section to install Hummingbot. You may install it using Docker (easiest for new users) or from source (best for developers).
 
 If you have questions or need help, join the [official Hummingbot Discord](https://discord.gg/hummingbot) and ask for help on the **#support** channel from our community.
 
-### Folder structure
-
-Note that Hummingbot is **local client software** that you run on your own machine, so you have full control over how it’s configured and where you save your files. No one else can access your data and secrets!
-
-If you installed Hummingbot from source, note the following sub-folders in your root directory:
-```
-hummingbot
-    ┣ conf
-    ┣ logs
-    ┣ data
-    ┣ scripts
-    ┣ hummingbot
-```
-
-- `/conf`: Configuration files for your strategies, and encrypted API keys and private keys encrypted by your [password](/operation/password/)
-
-- `/logs`: Log files of your scripts and strategies
-
-- `/data`: SQLite databases and CSV files for the trades executed by your scripts and strategies
-
-- `/scripts/`: This folder contains the sample scripts, and you can add new scripts here to make them available to the `start` command
-
-- `/hummingbot/`: This folder contains the core Hummingbot classes, components, and connectors. Read the code and related documentation page to understand each module.
-
-If you installed Hummingbot via Docker, your `/hummingbot_files` folder contains the `/conf`, `/logs`, `/data`, and `/scripts` sub-folders above.
-
-### User Interface
-
 If you have installed Hummingbot successfully, you should see a welcome screen like the one below:
 
 ![](/assets/img/welcome.png)
 
-The Hummingbot CLI helps you manage, configure, and run your bots. Get familiar with the [basic features](/operation/) in Hummingbot, especially the [User Interface](/operation/user-interface/).
-
-If you need assistance launching and exiting from the Hummingbot CLI, go to [this page](/operation/launch-exit/).
+The Hummingbot CLI helps you manage, configure, and run your bots. Familiarize yourself with the [basic features](/operation/) in Hummingbot, especially the [User Interface](/operation/user-interface/).
 
 ## Exercises
 

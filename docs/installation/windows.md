@@ -1,17 +1,13 @@
-Watch this video to learn how to install Docker and Hummingbot on a Windows 11 machine:
-
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/i2Qb8vTLHbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Prerequisites
+## Windows Subsystem for Linux 2 (WSL 2)
 
-The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot using [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) in Windows Subsystem for Linux 2 (WSL 2).
+The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot using [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 Note that:
 
 - You must be running Windows 10 version 2004 and higher (Build 19041 and higher) or Windows 11
 - Virtualization needs to be enabled under your BIOS setting.
-
-### Windows Subsystem for Linux 2 (WSL 2)
 
 To troubleshoot WSL issues, see this [link](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues)
 
@@ -39,49 +35,15 @@ Note that the first time WSL is executed, you will be asked to create a new defa
 
 Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Store and install it as an app in the Start menu. That way, you don't have to run Powershell every time you use Hummingbot.
 
-![Powershell start](/assets/img/wsl-distros.png)
+![Powershell distros](/assets/img/wsl-distros.png)
 
-## Install via Docker
+## Install via Docker on Windows
 
-![Linux on Windows](/assets/img/wsl-running.png)
+After installing WSL 2, you can follow the instructions on [Install via Docker](/installation/docker).
 
-After you can access Ubuntu, we recommend installing [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) since it contains Docker CLI/Engine along with Docker Compose, which is used for Hummingbot Docker deployments.
+## Install from Source on Windows
 
-As an alternative, you can follow enter the commands below to install Docker in Ubuntu:
-```bash
-# 1) Remove older / currently installed versions of Docker first 
-$ sudo apt-get remove docker docker-engine docker.io containerd runc
-
-# 2) Update the package index
-$ sudo apt-get update && sudo apt-get upgrade -y
-
-# 3) Install necessary packages
-$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common gnupg lsb-release
-
-# 4) Add Docker's official GPG key 
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-# 5) Setup the repository
-$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
-
-# 6) Install Docker
-$ sudo apt update && sudo apt-get install docker-ce
-
-# 7) Start the Docker service
-$ sudo service docker start 
-
-# 8) Allow docker commands without requiring sudo prefix. If you are running as root replace $USER with your username
-$ sudo usermod -aG docker $USER
-
-# 9) Important! Restart the terminal first before running the create scripts 
-$ exit
-```
-
-After Docker has been successfully installed, follow one of the [Docker deployments](/installation/docker) to install Hummingbot.
-
-## Install from Source
-
-Since WSL 2 creates a virtual Linux environment inside Windows, users should be able to install Hummingbot from source by following the [Linux instructions for installing from source](/installation/linux/#install-from-source).
+Since WSL 2 creates a virtual Linux environment inside Windows, users can install Hummingbot from source afterwards: [Install from Source](/installation/source).
 
 While some users have reported successfully being able to install and compile Hummingbot successfully on Windows machines natively, it is not officially supported.
 

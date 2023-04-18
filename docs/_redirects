@@ -12,3 +12,5 @@
 /news/*                 https://blog.hummingbot.org/:splat   301
 /news                   https://blog.hummingbot.org     301
 /installation/deploy    /installation/docker            301
+/installation/multiple-bots    /installation/orchestration     301
+/installation/linux    /installation/     301

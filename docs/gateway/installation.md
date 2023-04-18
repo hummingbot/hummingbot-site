@@ -1,10 +1,55 @@
 The official Github repository for Gateway is https://github.com/hummingbot/gateway. Gateway is released monthly  with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
 
-## Prerequisites
+## Install Hummingbot + Gateway
 
-These instructions assumes that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker. See [Installation](/installation/) for more information.
+For most users, we recommend installing Hummingbot and Gateway using Docker Compose.  See [Docker](/installation/docker/) for instructions for various configurations.
 
-## Generate certs
+We recommend that new users who want to run DEX trading bots deploy a single [Hummingbot + Gateway instance](https://github.com/hummingbot/deploy-examples/tree/development/hummingbot_gateway_compose).
+
+## Install Gateway (standalone)
+
+Install the following dependencies:
+
+- [NodeJS](https://nodejs.org/) (use 16.0.0 or higher)
+- [Yarn](https://yarnpkg.com/): run `npm install -g yarn` after installing NodeJS
+
+Then, follow the instructions below:
+
+1. Clone Gateway repo:
+```
+git clone https://github.com/hummingbot/gateway.git
+```
+
+2. Navigate into the Gateway folder:
+```
+cd gateway
+```
+
+3. Install Javascript dependencies:
+```
+yarn
+```
+
+4. Compile Typescript into Javascript:
+```
+yarn build
+```
+
+5. Set permissions:
+```
+chmod a+x gateway-setup.sh
+```
+
+6. Run Gateway setup script:
+```
+./gateway-setup.sh
+```
+
+## Link Gateway to Hummingbot
+
+These instructions assumes that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker. Note that you will be prompted to enter **passphrase** and **certs_path** during the installation process.
+
+## 1. Generate certs
 
 The first step is to generate self-signed certificates from the Hummingbot client. These certificates let your bots securely communicate with Gateway.
 
@@ -21,34 +66,9 @@ Take note of the **path** where they are stored. This is also stored as `certs_p
 !!! tip
     Make sure to save both **passphrase** and **certs_path** since you’ll need them later.
 
-## Install Gateway
+## 2. Run setup script
 
 Select only one of the methods below, since multiple Gateways on the same machine may result in conflicts.
-
-### From source
-
-Install the following dependencies:
-
-- [NodeJS](https://nodejs.org/) (use 16.0.0 or higher)
-- [Yarn](https://yarnpkg.com/): run `npm install -g yarn` after installing NodeJS
-
-Then, follow the instructions below:
-
-```bash
-# Clone repo and enter the created directory
-$ git clone https://github.com/hummingbot/gateway.git
-$ cd gateway
-
-# Install dependencies
-$ yarn
-
-# Complile Typescript into Javascript
-$ yarn build
-
-# Run Gateway setup script, which helps you set configs and certificates
-$ chmod a+x gateway-setup.sh
-$ ./gateway-setup.sh
-```
 
 The `gateway-setup` script configures Gateway by:
 
@@ -58,22 +78,16 @@ The `gateway-setup` script configures Gateway by:
 !!! note "Alternative to copying certs files"
     The `gateway-setup.sh` script creates a copy of the Hummingbot certificates in the Gateway folder. Alternatively, you can override the **certs_path** parameter in `conf/server.yml` and enter the path to the Hummingbot certificates.
 
+
+### 3. Start Gateway
+
 Afterwards, start Gateway using **passphrase**:
 
 ```
 $ yarn start --passphrase=<passphrase>
 ```
 
-### Using Docker
-
-See the [Deploy Examples](https://github.com/hummingbot/deploy-examples) repo for example for deploying various configurations of Hummingbot and Gateway using Docker. The `/bash_scripts` folder and the README file in that repo contains scripts that help you install the Docker version of Gateway.
-
-Note that you will be prompted to enter **passphrase** and **certs_path** during the installation process.
-
-## Running Gateway
-
-After a successful installation using via either method, you should see Gateway running on the default port 15888:
-
+You should see Gateway running on the default port 15888:
 ```
 2023-02-09 12:56:50 | info | 	⚡️ Starting Gateway API on port 15888...
 2023-02-09 12:56:50 | info | 	The gateway server is secured behind HTTPS.

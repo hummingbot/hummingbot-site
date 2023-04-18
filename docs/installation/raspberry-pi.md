@@ -1,4 +1,4 @@
-# Installing Hummingbot on Raspberry Pi / ARM64
+# Installing Hummingbot on Raspberry Pi
 
 Hummingbot doesn't require much power, so some users have run successfully run multiple instances on a single Raspberry Pi. The following steps are for the Raspberry Pi but it should also work with any other device that uses the same ARM architecture.
 

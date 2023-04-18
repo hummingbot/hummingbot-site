@@ -6,57 +6,63 @@ Hummingbot has been successfully tested with the following specifications:
 
 | Resource             | Requirement                                                                                                                  |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Operating System** | **Linux**: Ubuntu 18.04 or later Ubuntu 20.04 (recommended) \*Other Linux installations: Debian GNU/Linux 9, CentOS 7, Amazon Linux 2 AMI |
+| **Operating System** | **Linux**: Ubuntu 18.04 or later (recommended), Debian GNU/Linux 9, CentOS 7, Amazon Linux 2 AMI |
 |                      | **MacOS**: macOS 10.12.6 (Sierra) or later                                                                                   |
 |                      | **Windows**: Windows 10 or later                                                                                             |
-| **Memory/RAM**       | 4 GB one instance _+250 MB per additional instance_                                                                          |
+| **Memory/RAM**       | 4 GB for one instance + 250 MB per additional instance_                                                                          |
 | **Storage**          | **Install using Docker**: 5 GB per instance                                                                                  |
 |                      | **Install from source**: 3 GB per instance                                                                                   |
-| **Network**          | A reliable internet connection is critical to keeping Hummingbot connected to exchanges.                                     |
+| **Network**          | A reliable internet connection is critical to keeping Hummingbot connected to exchanges                                     |
 
 ## Installation Methods
 
-In each supported operating system, you can install Hummingbot either via Docker or from source.
+You can install Hummingbot either (1) [via Docker](./docker.md) or (2) [from source](./source.md).
+
+### Docker
 
 We recommend installing Hummingbot using Docker if:
-- You are just looking to test it out
-- You don't need to customize or extend the codebase
-- You are using Windows or another non-Linux environment
 
-See [Docker](./docker.md) for detailed instructions for various configurations.
-
-We recommend installing Hummingbot from source if:
-- You are a developer seeking to understand, customize, or extend the codebase
-- You can building new components like connectors or strategies
+- You want the simplest, easiest installation method
+- You want to run strategies without needing to inspect the underlying codebase
+- You want to deploying a multi-instance or more complex configuration of Hummingbot
 
 For most users, we recommend installing Hummingbot using Docker, which lets you deploy Hummingbot in various configurations. Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. 
 
-See [Source](./source.md) for detailed instructions on this path.
+See [Install Hummingbot via Docker](./docker.md) for more info.
+
+### Source
+
+We recommend installing Hummingbot from source if:
+
+- You want to customize or extend the Hummingbot codebase
+- You want to build new components like connectors or strategies
+- You want to learn how Hummingbot works at a deeper, technical level
+
+See [Install Hummingbot from Source](./source.md) for more info.
 
 ## Guides by Environment
 
-In addition, here community-maintained resources about installation issues specific to various environments:
+In addition, here are guides about installation issues specific to various environments:
 
-* [Linux](./linux.md)
-* [MacOS](./mac.md)
 * [Windows](./windows.md)
+* [MacOS](./mac.md)
 * [Raspberry Pi](./raspberry-pi.md)
 
-## Running and Updating Hummingbot
+## Post-Installation
 
-After you have successfully installed Hummingbot, you may need to update it, get help on issues, and contribute to the codebase.
+After you have successfully installed Hummingbot, See [Post-Installation](./post-installation.md) for how to manage the folder structure, launch/exit the client, update it, etc.
 
-See [Updating Hummingbot](./updates.md) for detailed instructions on how to manage your installation.
+Then, check out the [Quickstart Guide](/quickstart) to build and run a trading bot!
 
-## Multiple Bots
+## Orchestration Module
 
-See [Multiple Bots](./multiple-bots.md) for more information on ways to deploy multiple instances of Hummingbot and the new Orchestration Module.
+See [Orchestration](./orchestration.md) for more information on ways to deploy multiple instances of Hummingbot with the Orchestration Module.
 
 ## Hummingbot in the Cloud
 
-For experienced and technical users, we recommend setting up a cloud instance and installing the Docker version or from source. This enables Hummingbot to run 24/7.
+For experienced users, we recommend running Hummingbot in a cloud instance, which enables your bots to run continually with minimized downtime.
 
-Hummingot Docker instances takes up around 500 MB of storage space and 4 GB for Hummingbot Docker image. We have ested to install and run Hummingbot on the following machine types:
+Hummingot Docker instances takes up around 500 MB of storage space and 4 GB for Hummingbot Docker images. We have successfully installed and run Hummingbot on the following machine types:
 
 | Provider              | Instance Type   | Instance Details      |
 | --------------------- | --------------- | --------------------- |
