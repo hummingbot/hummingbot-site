@@ -1,23 +1,8 @@
-Note that the Hummingbot codebase is designed and optimized for Unix-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot using [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install).
+The instructions below assume that the user is in an Unix-based environment such as macOS and Linux.
 
-The instructions below assume that the user is in an Unix-based environment.
+For Windows users, we recommend running Hummingbot using [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 ## Install Dependencies
-
-### Build-essentials
-
-On new Ubuntu instances, you may need to install the build-essentials package:
-```
-sudo apt-get update
-sudo apt-get install -y build-essential
-```
-
-### XCode Command Line Tools
-
-On MacOS, [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) are required for installing Hummingbot from source. You can run the following command from Terminal to install them:
-```
-xcode-select --install
-```
 
 ### Miniconda
 
@@ -45,6 +30,21 @@ positional arguments:
   command
     clean        Remove unused packages and caches.
     compare      Compare packages between conda environments.
+```
+
+### Build-essentials
+
+On new Ubuntu instances, you may need to install the build-essentials package:
+```
+sudo apt-get update
+sudo apt-get install -y build-essential
+```
+
+### XCode Command Line Tools
+
+On MacOS, [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) are required for installing Hummingbot from source. You can run the following command from Terminal to install them:
+```
+xcode-select --install
 ```
 
 ### `conda` command and ZSH

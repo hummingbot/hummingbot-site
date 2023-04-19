@@ -47,6 +47,7 @@ After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbo
 
 See [Epoch 3 Polls Recap](https://blog.hummingbot.org/epoch-3-polls/) for more information.
 
+
 ### CEX Connectors
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
@@ -90,3 +91,54 @@ TraderJoe, QuickSwap, OpenOcean, Pangolin, Defira, Perpetual Protocol, MM Financ
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
 
 Avellaneda Market Making, UniswapV3 LP, Hedge, Cross-Exchange Mining, Perpetual Market Making, Aroon Oscillator, Liquidity Mining, TWAP, Spot Perpetual Arbitrage
+
+## Epoch 4
+
+- **Start**: April 1, 2023
+- **End**: June 30, 2023
+
+See [Epoch 4 Polls Recap](https://blog.hummingbot.org/epoch-4-polls-recap/) for more information.
+
+### CEX Connectors
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+
+- Binance
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+- Kucoin
+- Gate.io
+- AscendEx
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Bitget, MEXC, NDAX, OKX, Bybit, Bitmart, BTC-Markets, WhiteBit, Kraken, AltMarkets, Bittrex, Crypto.com, Bitmex,  LBank,  Huobi, Coinbase, Binance US,  Bitfinex, HitBTC, ProBit Global
+
+### DEX Connectors
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+
+- Uniswap
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+
+- Quickswap
+- Traderjoe
+- dYdX
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+
+Pancakeswap, MM Finance, Ref Finance, VVS Finance, Sushiswap, Defi Kingdoms, Defira, Loopring, Perpetual Protocol, Pangolin, OpenOcean
+
+### Core Strategies
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
+
+- [Pure Market Making (PMM)](/strategies/pure-market-making/)
+- [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/)
+- [AMM Arbitrage](/strategies/amm-arbitrage/)
+
+![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
+
+Perpetual Market Making, Spot Perpetual Arbitrage, Hedge, Avellaneda Market Making, Liquidity Mining, Cross-Exchange Mining, UniswapV3 LP

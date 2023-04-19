@@ -3,6 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/xswap](https://github.com/hummingbot/gateway/tree/main/src/connectors/xsswap)
+* Configs: [/gateway/src/templates/xswap.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/xsswap.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -21,20 +23,20 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `xinfin` : `mainnet`
+* `xdc` : `xinfin`, `apothem`
 
 ## 🔑 Connection
 
 Run `gateway connect xswap` in order to connect your wallet:
 
 ```
-Which chain do you want xswap to connect to? (xinfin) >>>
-Which network do you want xswap to connect to? (mainnet) >>>
-Enter your xinfin-mainnet private key >>>>
+Which chain do you want xswap to connect to? (xdc-chain) >>>
+Which network do you want xswap to connect to? (xinfin, apothem) >>>
+Enter your xdc-chain-xinfin private key >>>>
 ```
 
 If connection is successful:
 
 ```
-The xswap connector now uses wallet [pubKey] on xinfin-mainnet
+The xswap connector now uses wallet [pubKey] on xdc-chain-xinfin
 ```

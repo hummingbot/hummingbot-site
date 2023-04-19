@@ -56,25 +56,25 @@ Each sub-folder contains two important files:
 
 Please click the links below for the deployment instructions for each configuration.
 
-### [Single Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/development/simple_hummingbot_compose)
+### [Single Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/master/simple_hummingbot_compose)
 
 This installs a single Hummingbot instance as a Docker container.
 
 **⭐️⭐️⭐️ We recommend that new Hummingbot users follow this route ⭐️⭐️⭐️**
 
-### [Autostart Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/development/autostart_hummingbot_compose)
+### [Autostart Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/master/autostart_hummingbot_compose)
 
 This installs a single Hummingbot instance as a Docker container and automatically starts running a pre-configured script or strategy.
 
-### [Hummingbot + Gateway Instances](https://github.com/hummingbot/deploy-examples/tree/development/hummingbot_gateway_compose)
+### [Hummingbot + Gateway Instances](https://github.com/hummingbot/deploy-examples/tree/master/hummingbot_gateway_compose)
 
 This installs a Hummingbot instance linked to a Gateway instance.
 
-### [Multiple Hummingbot Instances + Gateway](https://github.com/hummingbot/deploy-examples/tree/development/multiple_hummingbot_gateway_compose)
+### [Multiple Hummingbot Instances + Gateway](https://github.com/hummingbot/deploy-examples/tree/master/multiple_hummingbot_gateway_compose)
 
 This installs two Hummingbot instances, linked to a single Gateway instance.
 
-### [Hummingbot + Gateway + EMQX Broker](https://github.com/hummingbot/deploy-examples/tree/development/hummingbot_gateway_broker_compose)
+### [Hummingbot + Gateway + EMQX Broker](https://github.com/hummingbot/deploy-examples/tree/master/hummingbot_gateway_broker_compose)
 
 This installs a Hummingbot instance linked to a Gateway instance, along with an EMQX Broker instance.
 

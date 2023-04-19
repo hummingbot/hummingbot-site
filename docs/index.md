@@ -31,11 +31,11 @@ Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/
 * 1st Wednesday of the month, 2pm GMT / 10am EST / 7am PST / 10pm SIN
 * Release highlights, community demos, AMA
 
-Join the next call: [Monthly Community Call](https://discord.com/events/530578568154054663/1082251015555911690)
+Join the next call: [Monthly Community Call](https://discord.gg/hummingbot)
 
 Watch the last call:
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/v7CnkWv6sdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/F6xP5-00uis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### "How to" calls
 

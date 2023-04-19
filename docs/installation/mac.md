@@ -33,19 +33,19 @@ You may need to regenerate a Hummingbot conda environment optimized for Intel-ba
 
 ```bash
 # Deactivate the environment if you're in it
-(hummingbot) ➜ conda deactivate
+conda deactivate
 
 # Remove the envionment
-➜ conda env remove -n hummingbot
+conda env remove -n hummingbot
 
 # Creates the hummingbot environment and enforces python 3.8.2 and initialize a environment variable used to determine the processor packages to use
-➜ CONDA_SUBDIR=osx-64 conda create -n hummingbot python=3.8.2
+CONDA_SUBDIR=osx-64 conda create -n hummingbot python=3.8.2
 
 # Activate the new environment
-➜ conda activate hummingbot
+conda activate hummingbot
 
 # Configures environment to use intel-based packages
-➜ conda config --env --set subdir osx-64
+conda config --env --set subdir osx-64
 
 # Start Hummingbot
 (hummingbot) ➜ bin/hummingbot.py

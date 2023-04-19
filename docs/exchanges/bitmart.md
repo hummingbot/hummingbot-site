@@ -4,6 +4,7 @@
 
 * Type: SPOT CLOB CEX
 * Folder: [/hummingbot/connector/exchange/bitmart](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bitmart)
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
 
