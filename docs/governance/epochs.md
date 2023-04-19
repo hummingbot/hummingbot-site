@@ -113,7 +113,7 @@ See [Epoch 4 Polls Recap](https://blog.hummingbot.org/epoch-4-polls-recap/) for 
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Binance US, Bittrex, Huobi, AltMarkets, HitBTC, Bitmex, ProBit Global, OKX, WhiteBit, MEXC, Bit.com, Hotbit
+Bitget, MEXC, NDAX, OKX, Bybit, Bitmart, BTC-Markets, WhiteBit, Kraken, AltMarkets, Bittrex, Crypto.com, Bitmex,  LBank,  Huobi, Coinbase, Binance US,  Bitfinex, HitBTC, ProBit Global
 
 ### DEX Connectors
 
@@ -129,7 +129,7 @@ Crypto.com, Kraken, LBank, Bitget, Bybit, NDAX, Coinbase, Bitmart, Bitfinex, Bin
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Pancakeswap, MM Finance, Ref Finance, VVS Finance, Sushiswap, Defi Kingdoms, Defira, Loopring, Perpetual Protocol, Pangolin, OpenOcean, Sushiswap
+Pancakeswap, MM Finance, Ref Finance, VVS Finance, Sushiswap, Defi Kingdoms, Defira, Loopring, Perpetual Protocol, Pangolin, OpenOcean
 
 ### Core Strategies
 
