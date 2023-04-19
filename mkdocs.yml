@@ -127,12 +127,14 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Deploying Hummingbot with Docker: installation/deploy.md
-      - Installing Hummingbot on Linux: installation/linux.md
-      - Installing Hummingbot on MacOS: installation/mac.md
-      - Installing Hummingbot on Windows: installation/windows.md        
-      - Installing Hummingbot on Raspberry Pi: installation/raspberry-pi.md
-      - Running Multiple Hummingbot Instances: installation/multiple-bots.md
+      - Install Hummingbot via Docker: installation/docker.md
+      - Install Hummingbot from Source: installation/source.md
+      - Post-Installation: installation/post-installation.md
+      - Orchestration Module: installation/orchestration.md
+      - Guides by Environment:
+        - Windows: installation/windows.md        
+        - MacOS: installation/mac.md
+        - Raspberry Pi: installation/raspberry-pi.md
     - Quickstart:
       - Quickstart: quickstart/index.md
       - Exercise 1 - Hello World: quickstart/custom-pmm-1.md

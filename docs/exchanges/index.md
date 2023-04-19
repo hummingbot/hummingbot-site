@@ -12,6 +12,16 @@ We classify connectors using the following labels:
 * **AMM**: A DEX that uses Automatic Market Maker (AMM) smart contracts, popularized by Uniswap-V2
 * **AMM-RANGE**: A DEX that uses Automatic Market Maker (AMM) smart contracts that let liquidity providers specify a range, popularized by Uniswap-V3
 
+## Connector Maintenance
+
+Exchange connectors may have a maintainer who is responsible for ongoing maintenance: fixing bugs, addressing user issues, and keeping up with exchange API and Hummingbot connector standard updates. Specifically, maintainer responsibilities include:
+
+* Addressing user Github issues and pull requests related to the connector
+* Keeping the connector updated for changes to the exchange API and Hummingbot connector standard for that exchange type
+* Keeping the connector's documentation page updated
+
+Hummingbot Foundation is the maintainer for the Gold and Silver exchange connectors, while community members may maintain other connectors. For instance, our sister company [CoinAlpha](https://coinalpha.com) maintains a number of Bronze connectors in the codebase. Individual developers and exchanges may register with us to be assigned the maintainer role for other Bronze connectors.
+
 ## Connector Tiers
 
 Quarterly [Polls](/governance/polls) allow the Hummingbot community to vote using HBOT tokens to rank the exchanges in the codebase. This decides which connectors should be included going forward, and how they are maintained:
@@ -89,18 +99,9 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Sushiswap](./sushiswap) | SPOT AMM DEX |
 | [VVS Finance](./vvs) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [WhiteBit](./whitebit) | SPOT CLOB CEX |
-| [xswap](./xswap) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
+| [XSwap](./xswap) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 
 
-## Connector Maintenance
-
-Exchange connectors may have a maintainer who is responsible for ongoing maintenance: fixing bugs, addressing user issues, and keeping up with exchange API and Hummingbot connector standard updates. Specifically, maintainer responsibilities include:
-
-* Addressing user Github issues and pull requests related to the connector
-* Keeping the connector updated for changes to the exchange API and Hummingbot connector standard for that exchange type
-* Keeping the connector's documentation page updated
-
-Hummingbot Foundation is the maintainer for the Gold and Silver exchange connectors, while community members may maintain other connectors. For instance, our sister company [CoinAlpha](https://coinalpha.com) maintains a number of Bronze exchanges in the codebase.
 
 ## Contributing Connectors
 

@@ -1,89 +1,61 @@
-# Install Hummingbot from Source
+The instructions below assume that the user is in an Unix-based environment such as macOS and Linux.
 
-!!! note "Re-compiling files"
-    If you make changes to the code, make sure to re-compile the code with `./compile` to ensure that any changes to Cython files are compiled before running Hummingbot
+For Windows users, we recommend running Hummingbot using [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-You can install Source and Hummingbot by selecting the following options below:
+## Install Dependencies
 
-- **Scripts**: download and use automated install scripts
-- **Manual**: run install commands manually
+### Miniconda
 
-## Linux/Ubuntu
+Hummingbot requires Python3 and other Python libraries. To manage these dependencies, Hummingbot uses `conda`, an open source environment manager for Python.
 
-_Supported versions: 18.04 LTS, 19.04 LTS, 20.04_
+!!! warning "Don't use Homebrew!"
+    We don't recommend installing `conda` through [Homebrew](https://brew.sh/) as this may cause issues during installation. Instead, downloading the installer directly from the Anaconda website. 
 
-=== "Scripts"
+Go to the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and use the installer link for your architecture.
 
-    ```bash
-    # 1) Download install script
-    wget https://raw.githubusercontent.com/hummingbot/hummingbot/development/installation/install-from-source/install-source-ubuntu.sh
+Afterwards, run the `conda` command from your path:
+```
+conda
+```
 
-    # 2) Enable script permissions
-    chmod a+x install-source-ubuntu.sh
+You should see a response similar to:
+```
+usage: conda [-h] [-V] command ...
 
-    # 3) Run installation
-    ./install-source-ubuntu.sh
-    ```
+conda is a tool for managing and deploying applications, environments and packages.
 
-=== "Manual"
+Options:
 
-    ```bash
-    # 1) Install dependencies
-    sudo apt-get update
-    sudo apt-get install -y build-essential
+positional arguments:
+  command
+    clean        Remove unused packages and caches.
+    compare      Compare packages between conda environments.
+```
 
-    # 2) Install Miniconda3
-    wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    sh Miniconda3-latest-Linux-x86_64.sh
+### Build-essentials
 
-    # 3) Reload .bashrc to register "conda" command
-    exec bash
+On new Ubuntu instances, you may need to install the build-essentials package:
+```
+sudo apt-get update
+sudo apt-get install -y build-essential
+```
 
-    # 4) Clone Hummingbot
-    git clone https://github.com/hummingbot/hummingbot.git
+### XCode Command Line Tools
 
-    # 5) Install Hummingbot
-    cd hummingbot && ./clean && ./install
-
-    # 6) Activate environment and compile code
-    conda activate hummingbot && ./compile
-
-    # 7) Start Hummingbot
-    bin/hummingbot.py
-    ```
-
-## MacOS
-
-### Prerequisites
-
-#### Xcode command line tools
-
-Running Hummingbot on **macOS** requires [Xcode](https://developer.apple.com/xcode/) and Xcode command line tools.
-
+On MacOS, [Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) are required for installing Hummingbot from source. You can run the following command from Terminal to install them:
 ```
 xcode-select --install
 ```
 
-#### Anaconda
+### `conda` command and ZSH
 
-Hummingbot requires Python 3 and other Python libraries. To manage these dependencies, Hummingbot uses Anaconda, an open-source environment, and package manager for Python that is the current industry standard for data scientists and data engineers.
+If the `conda` command is not available in your path, this may be because you are using ZSH or another Unix shell. 
 
-To install Anaconda, go to [the Anaconda site](https://www.anaconda.com/products/distribution#Downloads) and download and install the latest Python installer applicable for your architecture (M1 / x86-64). Both the graphical installer (.pkg) and the command line installer (.sh) will work.
+To fix this, copy the code snippet below to your `.zshrc` or similar file. By default, Anaconda only adds it to your `.bash_profile` file, which makes the `conda` command available in your root path.
 
-!!! warning
-    If you use ZSH or another Unix shell, copy the code snippet below to your `.zshrc` or similar file. By default, Anaconda only adds it to your `.bash_profile` file. This makes the `conda` command available in your root path.
+Use an IDE to edit the `.zshrc` file, and copy and paste the following code to the bottom of the file:
 
-    We also do **NOT** recommend installing `conda` through `Homebrew` as this will cause issues during installation. Downloading directly from the Anaconda website should be sufficient. 
-
-Open a terminal window and run `nano` to edit the `.zshrc` file
-
-```
-nano .zshrc
-```
-
-Copy and paste the following code below:
-
-```
+```bash
 __conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
 if [ $? -eq 0 ]; then
     \eval "$__conda_setup"
@@ -98,58 +70,74 @@ fi
 unset __conda_setup
 ```
 
-Exit out of `nano` and make sure to save the changes then close & relaunch the terminal. Once you have the terminal up run the `conda init` command.
-
-```
+Save the changes, and run the `conda init` command to initialize them:
+```bash
 conda init zsh
 ```
+Afterward, you should be able to access the `conda` command from your path.
 
-Afterward, you can also try the `conda` command in a terminal to verify if conda was installed correctly. If the command is valid, then Anaconda has been successfully installed. Proceed to the next step to install Hummingbot
+## Install Hummingbot
 
-#### Install Hummingbot
+After you have installed the dependencies, follow the steps below to install Hummingbot from source:
 
-Clone Hummingbot repo
-
+1. Clone Hummingbot repo:
 ```
 git clone https://github.com/hummingbot/hummingbot.git
 ```
 
-Navigate into the hummingbot folder
-
+2. Navigate into the hummingbot folder:
 ```
 cd hummingbot
 ```
 
-Run install script
-
+3. Install conda environment:
 ```
 ./install
 ```
 
-Activate the environment
-
+4. Activate the conda environment:
 ```
 conda activate hummingbot
 ```
 
-Compile
-
+5. Compile Hummingbot:
 ```
 ./compile
 ```
 
-Run Hummingbot
-
+6. Run Hummingbot:
 ```
 bin/hummingbot.py
 ```
 
-## Windows
+## Useful Commands
 
-As Hummingbot is optimized for UNIX-based environments, [install Windows Subsystem for Linux](/installation/docker#install-wsl) in order to deploy an Ubuntu environment in your Windows machine.
+### Clone the Hummingbot repo
+```
+git clone https://github.com/hummingbot/hummingbot.git
+```
 
-Afterwards, follow the **Linux/Ubuntu** instructions above.
+### Run the install script
+```
+./install
+```
 
-## 📺 Videos and Guides
+### Compile Hummmingbot
+```
+./compile
+```
 
-:fontawesome-brands-youtube: [Install Hummingbot on source | MacOS](https://www.youtube.com/watch?v=_10M9uJan3U&list=PLDwlNkL_4MMc1GxjWShinaX4FQCxgOkyO&index=1)
+### Start Hummingbot
+```
+bin/hummingbot.py
+```
+
+### Removed compiled files
+```
+./clean
+```
+
+### Remove hummingbot conda environment
+```
+./uninstall
+```
