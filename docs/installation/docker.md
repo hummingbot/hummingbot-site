@@ -56,30 +56,71 @@ Each sub-folder contains two important files:
 
 Please click the links below for the deployment instructions for each configuration.
 
-### [Single Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/master/simple_hummingbot_compose)
+### [Single Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/main/simple_hummingbot_compose)
 
 This installs a single Hummingbot instance as a Docker container.
 
 **⭐️⭐️⭐️ We recommend that new Hummingbot users follow this route ⭐️⭐️⭐️**
 
-### [Autostart Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/master/autostart_hummingbot_compose)
+### [Autostart Hummingbot Instance](https://github.com/hummingbot/deploy-examples/tree/main/autostart_hummingbot_compose)
 
 This installs a single Hummingbot instance as a Docker container and automatically starts running a pre-configured script or strategy.
 
-### [Hummingbot + Gateway Instances](https://github.com/hummingbot/deploy-examples/tree/master/hummingbot_gateway_compose)
+### [Hummingbot + Gateway Instances](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose)
 
 This installs a Hummingbot instance linked to a Gateway instance.
 
-### [Multiple Hummingbot Instances + Gateway](https://github.com/hummingbot/deploy-examples/tree/master/multiple_hummingbot_gateway_compose)
+### [Multiple Hummingbot Instances + Gateway](https://github.com/hummingbot/deploy-examples/tree/main/multiple_hummingbot_gateway_compose)
 
 This installs two Hummingbot instances, linked to a single Gateway instance.
 
-### [Hummingbot + Gateway + EMQX Broker](https://github.com/hummingbot/deploy-examples/tree/master/hummingbot_gateway_broker_compose)
+### [Hummingbot + Gateway + EMQX Broker](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_broker_compose)
 
 This installs a Hummingbot instance linked to a Gateway instance, along with an EMQX Broker instance.
 
 !!! note "Experimental deployment"
     This deployment is still undergoing testing, so we recommend using the standalone deployments for message brokers from the [hummingbot/brokers](https://github.com/hummingbot/brokers) repository.
+
+## Building Docker Image
+
+Here is how to build a multi-architecture Hummingbot Docker image using `docker buildx`:
+
+**1. Go to the Hummingbot folder**
+```
+cd hummingbot
+```
+
+**2. Check if buildx is installed**
+```
+docker buildx version
+```
+
+**3. Create Builder**
+```
+docker buildx create --name multiarch --platform linux/arm64,linux/amd64
+```
+
+**4. Switch to the new builder instance**
+```
+docker buildx use multiarch
+```
+
+**5. Inspect the builder instance**
+```
+docker buildx inspect --bootstrap
+```
+
+The output should show both arm64 and amd64 platforms in the `Platforms` field.
+
+**6. Build the image**
+```
+docker buildx build --platform linux/amd64,linux/arm64 --tag hummingbot/hummingbot:latest .
+```
+
+**7. Push to upstream repo**
+```
+docker push hummingbot/hummingbot:latest
+```
 
 ## Useful Docker Commands
 

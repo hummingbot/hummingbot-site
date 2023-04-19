@@ -1,5 +1,3 @@
-# Exercise 5: Add Dynamic Price Ceiling/Floor
-
 **Code:** <https://gist.github.com/cardosofede/4be977ad21a68de0b117387652b85626>
 
 **Video:**

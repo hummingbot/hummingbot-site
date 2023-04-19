@@ -1,5 +1,3 @@
-# Exercise 3: Customize Status Command
-
 **Code:** <https://gist.github.com/cardosofede/d85a9d5ed5b7414728bcf967b540b9cb>
 
 **Video:**

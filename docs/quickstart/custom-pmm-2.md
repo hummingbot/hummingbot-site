@@ -1,5 +1,3 @@
-# Exercise 2: Simple PMM
-
 **Code:** <https://gist.github.com/cardosofede/41826e41172ef64a86fbedadc4289708>
 
 **Video:**

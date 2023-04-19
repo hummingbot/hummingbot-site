@@ -1,5 +1,3 @@
-# Exercise 4: Add Basic Price Ceiling/Floor
-
 **Code:** <https://gist.github.com/cardosofede/b1c727c3645c5ba8622496fd87838598>
 
 **Video:**
