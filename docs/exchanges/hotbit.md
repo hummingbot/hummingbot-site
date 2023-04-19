@@ -3,7 +3,7 @@
 ## 📁 Connector Info
 
 - Type: SPOT CLOB CEX
-- Folder: [/hummingbot/connector/exchange/hotbit](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hotbit)
+- Folder: [/hummingbot/connector/exchange/hotbit](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/hotbit)
 - Maintainer:
 
 ## 🏆 Exchange Tier
