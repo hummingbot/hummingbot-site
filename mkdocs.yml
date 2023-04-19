@@ -201,10 +201,10 @@ nav:
         - Gate.io: exchanges/gate-io.md
         - Gate.io (perp): exchanges/gate-io-perpetual.md
         - AscendEX: exchanges/ascend-ex.md
-        - Pancakeswap: exchanges/pancakeswap.md
-        - Sushiswap: exchanges/sushiswap.md
+        - Quickswap: exchanges/quickswap.md
         - dYdX: exchanges/dydx-perpetual.md
-      - Bronze CEX:
+        - TraderJoe: exchanges/traderjoe.md
+      - Bronze:
         - AltMarkets: exchanges/altmarkets.md
         - Binance US: exchanges/binance-us.md
         - Bybit: exchanges/bybit.md
@@ -215,33 +215,31 @@ nav:
         - Bitmex: exchanges/bitmex.md
         - Bitmex (perp): exchanges/bitmex-perpetual.md
         - Bittrex: exchanges/bittrex.md
-        - BTC-Markets: exchanges/btc-markets.md
-        - CI-EX: exchanges/ci-ex.md
+        - BTC Markets: exchanges/btc-markets.md
         - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
+        - DeFi Kingdoms: exchanges/defikingdoms.md
+        - Defira: exchanges/defira.md
+        - Dexalot: exchanges/dexalot.md
         - HitBTC: exchanges/hitbtc.md
         - Huobi: exchanges/huobi.md
+        - Injective: exchanges/injective.md
         - Kraken: exchanges/kraken.md
         - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
+        - Mad Meerkat: exchanges/mad-meerkat.md
         - MEXC: exchanges/mexc.md 
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
         - ProBit: exchanges/probit.md
-        - WhiteBit: exchanges/whitebit.md
-      - Bronze DEX:
-        - DeFi Kingdoms: exchanges/defikingdoms.md
-        - Defira: exchanges/defira.md
-        - Dexalot: exchanges/dexalot.md
-        - Injective: exchanges/injective.md
-        - Mad Meerkat: exchanges/mad-meerkat.md
         - OpenOcean: exchanges/openocean.md
+        - Pancakeswap: exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
-        - Quickswap: exchanges/quickswap.md
         - Ref: exchanges/ref.md
-        - TraderJoe: exchanges/traderjoe.md
+        - Sushiswap: exchanges/sushiswap.md
         - VVS: exchanges/vvs.md
+        - WhiteBit: exchanges/whitebit.md
         - XSwap: exchanges/xswap.md
     - Strategies:
       - Strategies: strategies/index.md

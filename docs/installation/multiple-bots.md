@@ -7,7 +7,7 @@ To achieve this approach, there is an MQTT layer for bots to connect remotely to
 See the following repos for more information:
 
 * [Brokers](https://github.com/hummingbot/brokers): Various deployment examples using Docker Compose
-* [Hummingbot remote client](https://github.com/hummingbot/hbot-remote-client-py): ackage that implements a remote client for hummingbot in Python.
+* [Hummingbot remote client](https://github.com/hummingbot/hbot-remote-client-py): Package that implements a remote client for Hummingbot in Python.
 
 Watch the February 2023 [community call](/#community-calls) that contains a demo of this feature:
 
