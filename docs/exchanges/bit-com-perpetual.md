@@ -19,8 +19,8 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * CoinMarketCap: https://coinmarketcap.com/exchanges/bit-com
 * CoinGecko: https://www.coingecko.com/en/exchanges/bit_futures
 * API docs: <https://www.bit.com/docs/en-us/linear_futures.html>
-* Fees: <https://www.bit.com/zh-CN/trading-center/fees-struct>
-* **Hummingbot Referral Link**: <https://www.bit.com/inviteFriends/agentSign?code=DTAJEMHPGN&lang=zh-CN>
+* Fees: <https://www.bit.com/en-us/trading-center/fees-struct>
+* **Hummingbot Referral Link**: <https://www.bit.com/inviteFriends/agentSign?code=DTAJEMHPGN&lang=en-us>
 
 ## 🔑 Connection
 
