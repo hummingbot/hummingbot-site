@@ -225,9 +225,10 @@ nav:
         - Defira: exchanges/defira.md
         - Dexalot: exchanges/dexalot.md
         - HitBTC: exchanges/hitbtc.md
-        - Huobit: exchanges/hotbit.md
+        - Hotbit: exchanges/hotbit.md
         - Huobi: exchanges/huobi.md
         - Injective: exchanges/injective.md
+        - Injective (perp): exchanges/injective-perpetual.md
         - Kraken: exchanges/kraken.md
         - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
@@ -245,6 +246,7 @@ nav:
         - VVS: exchanges/vvs.md
         - WhiteBit: exchanges/whitebit.md
         - XSwap: exchanges/xswap.md
+        - Zigzag: exchanges/zigzag.md
     - Strategies:
       - Strategies: strategies/index.md
       - Core:
