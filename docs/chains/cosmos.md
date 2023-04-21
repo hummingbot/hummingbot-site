@@ -1,47 +1,31 @@
-## 📁 [Chain folder](https://github.com/hummingbot/gateway/tree/master/src/chains/cosmos)
+# `cosmos`
 
-## 📁 [Config template](https://github.com/hummingbot/gateway/tree/master/src/templates/cosmos.yml)
+`cosmos` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Cosmos blockchain.
+
+## 📁 Connector Info
+
+* Folder: [/gateway/src/chains/cosmos](https://github.com/hummingbot/gateway/tree/main/src/chains/cosmos)
+* Configs: [/gateway/src/templates/cosmos.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/cosmos.yml)
+* Maintainer: 
 
 ## ℹ️ Chain Info
 
-* Website: <https://cosmos.network/>
-* CoinMarketCap: <https://coinmarketcap.com/currencies/cosmos/>
-* CoinGecko: <https://www.coingecko.com/en/coins/cosmos-hub>
+* Website: https://cosmos.network/
+* Block Explorer: https://www.mintscan.io/
+* CoinMarketCap: https://coinmarketcap.com/currencies/cosmos/
+* CoinGecko: https://www.coingecko.com/en/coins/cosmos
 
 ## 🕸️ Supported Networks
 
-Below are the Cosmos networks that Gateway currently supports.
+| Network | ChainId | Type |
+|---------|---------|------|
+| `mainnet` | 56 | mainnet |
+| `testnet` | 97 | testnet |
 
-### `mainnet` (bsc mainnet)
+## 🚰 Faucets
 
-**Default configuration parameters**
+### `cosmoshub-testnet`
 
-* `chainID`: 56
-* `nodeURL`: <https://cosmos-mainnet-rpc.allthatnode.com:26657>
-* `tokenListType`: `URL`
-* `tokenListSource`: <https://cosmos-chain-registry-list.vercel.app/list.json>
-* `nativeCurrencySymbol`: ATOM
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-
-```
-gateway config cosmos.networks.mainnet.<parameter>
-```
-
-### `testnet`
-
-**Default configuration parameters**
-
-* `chainID`: 97
-* `nodeURL`: <https://cosmos-testnet-rpc.allthatnode.com:26657>
-* `tokenListType`: `URL`
-* `tokenListSource`:  <https://cosmos-chain-registry-list.vercel.app/list.json>
-* `nativeCurrencySymbol`: ATOM
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-
-```
-gateway config cosmos.networks.testnet.<parameter>
-```
+* https://faucet.cosmos.network/
+* https://testnet-faucet.com/cosmos
+* https://www.coinbase.com/faucets/cosmos-testnet-faucet
