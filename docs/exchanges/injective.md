@@ -18,6 +18,10 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://api.injective.exchange>
 * SDK: <https://github.com/InjectiveLabs/sdk-python>
 
+## 🕸️ Supported Chains and Networks
+
+* [Injective](/chains/injective): `mainnet` `testnet` `devnet`
+
 ## 🔑 Connection
 
 Run `connect injective` in order to enter your API keys:

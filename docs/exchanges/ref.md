@@ -23,7 +23,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `near`: `mainnet`, `testnet`
+* [Near](/chains/near): `mainnet`, `testnet`
 
 ## 🔑 Connection
 

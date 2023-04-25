@@ -10,7 +10,9 @@ Currently, Gateway supports the following Layer 1 blockchains:
 - [Cosmos](/chains/cosmos)
 - [Cronos](/chains/cronos)
 - [Harmony](/chains/harmony)
-- [Harmony](/chains/injective)
+- [Injective](/chains/injective)
 - [Polygon](/chains/polygon)
 - [NEAR](/chains/near)
 - [XDC Chain](/chains/xdc-chain)
+
+
