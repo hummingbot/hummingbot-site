@@ -31,22 +31,10 @@ Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/
 * 1st Wednesday of the month, 2pm GMT / 10am EST / 7am PST / 10pm SIN
 * Release highlights, community demos, AMA
 
-Join the next call: [Monthly Community Call](https://discord.gg/hummingbot)
-
-Watch the last call:
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/F6xP5-00uis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ### "How to" calls
 
 * 3rd Wednesday of the month, 2pm GMT / 10am EST / 7am PST / 10pm SIN
 * Developer-focused lessons that show you how to build or extend your  strategies with Hummingbot. 
-
-Join the next call: [How to Use Hummingbot StreamLit Apps](https://discord.com/events/530578568154054663/1091309109783035924)
-
-Watch the last call:
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/xCEvYbdsbvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 👩‍💻 Hummingbot components
 
