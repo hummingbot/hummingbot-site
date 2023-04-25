@@ -114,12 +114,7 @@ The output should show both arm64 and amd64 platforms in the `Platforms` field.
 
 **6. Build the image**
 ```
-docker buildx build --platform linux/amd64,linux/arm64 --tag hummingbot/hummingbot:latest .
-```
-
-**7. Push to upstream repo**
-```
-docker push hummingbot/hummingbot:latest
+docker buildx build --platform linux/amd64,linux/arm64 --tag hummingbot/hummingbot:latest --push .
 ```
 
 ## Useful Docker Commands
