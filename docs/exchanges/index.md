@@ -67,11 +67,11 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [BTC-Markets](./btc-markets) | SPOT CLOB CEX |
 | [Binance US](./binance-us) | SPOT CLOB CEX |
 | [BitGet](./bitget) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
-| [Bit.com](./bit-com) | SPOT CLOB CEX |
+| [Bit.com](./bit-com-perpetual) | PERP CLOB CEX |
 | [Bitmart](./bitmart) | SPOT CLOB CEX | [CoinAlpha](https://coinalpha.com) | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
 | [Bitfinex](./bitfinex) | SPOT CLOB CEX |
 | [Bitmex](./bitmex) | SPOT CLOB CEX |
-| [Bitmex (perp](./bitmex) | PERP CLOB CEX |
+| [Bitmex (perp)](./bitmex-perpetual) | PERP CLOB CEX |
 | [Bittrex](./bittrex) | SPOT CLOB CEX |
 | [Bybit](./bybit) | SPOT CLOB CEX |
 | [Bybit (perp)](./bybit) | PERP CLOB CEX |
@@ -81,8 +81,10 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Defira](./defira) | SPOT AMM DEX |
 | [Dexalot](./dexalot) | SPOT CLOB DEX | [CoinAlpha](https://coinalpha.com) |
 | [HitBTC](./hitbtc) | SPOT CLOB CEX |
+| [Hotbit](./hotbit) | SPOT CLOB CEX |
 | [Huobi](./huobi) | SPOT CLOB CEX | | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
 | [Injective](./injective) | SPOT CLOB DEX |
+| [Injective (perp)](./injective-perpetual) | PERP CLOB DEX |
 | [Kraken](./kraken) | SPOT CLOB CEX |
 | [LBank](./lbank) | SPOT CLOB DEX |
 | [Loopring](./loopring) | SPOT CLOB DEX |
@@ -100,6 +102,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [VVS Finance](./vvs) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [WhiteBit](./whitebit) | SPOT CLOB CEX |
 | [XSwap](./xswap) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
+| [ZigZag](./zigzag) | SPOT AMM DEX |
 
 
 

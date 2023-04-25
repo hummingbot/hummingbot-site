@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/ethereum](https://github.com/hummingbot/gateway/tree/main/src/chains/ethereum)
 * Configs: [/gateway/src/templates/ethereum.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/ethereum.yml)
-* Maintainer: Hummingbot Foundation
 
 ## ℹ️ Chain Info
 
@@ -26,8 +25,6 @@
 | `optimism` | 10 | mainnet |
 
 ## 🚰 Faucets
-
-### `goerli`
 
 * https://goerlifaucet.com
 * https://testnetfaucet.io

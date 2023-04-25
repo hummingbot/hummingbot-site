@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/cosmos](https://github.com/hummingbot/gateway/tree/main/src/chains/cosmos)
 * Configs: [/gateway/src/templates/cosmos.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/cosmos.yml)
-* Maintainer: 
 
 ## ℹ️ Chain Info
 
@@ -23,8 +22,6 @@
 | `testnet` | 97 | testnet |
 
 ## 🚰 Faucets
-
-### `cosmoshub-testnet`
 
 * https://faucet.cosmos.network/
 * https://testnet-faucet.com/cosmos

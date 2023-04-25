@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/polygon](https://github.com/hummingbot/gateway/tree/main/src/chains/polygon)
 * Configs: [/gateway/src/templates/polygon.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/polygon.yml)
-* Maintainer: 
 
 ## ℹ️ Chain Info
 
@@ -23,8 +22,6 @@
 | `mumbai` | 80001 | testnet |
 
 ## 🚰 Faucets
-
-### `mumbai`
 
 * https://faucet.matic.network/
 * https://testnet-faucet.com/polygon

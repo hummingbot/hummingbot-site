@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/cronos](https://github.com/hummingbot/gateway/tree/main/src/chains/cronos)
 * Configs: [/gateway/src/templates/cronos.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/cronos.yml)
-* Maintainer: 
 
 ## ℹ️ Chain Info
 
@@ -23,8 +22,6 @@
 | `testnet` | 338 | testnet |
 
 ## 🚰 Faucets
-
-### `testnet`
 
 * https://cronos.crypto.org/faucet
 

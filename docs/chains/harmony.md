@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/harmony](https://github.com/hummingbot/gateway/tree/main/src/chains/harmony)
 * Configs: [/gateway/src/templates/harmony.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/harmony.yml)
-* Maintainer: 
 
 ## ℹ️ Chain Info
 

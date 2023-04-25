@@ -280,6 +280,7 @@ nav:
         - Cronos: chains/cronos.md
         - Cosmos: chains/cosmos.md
         - Harmony: chains/harmony.md
+        - Injective: chains/injective.md
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md

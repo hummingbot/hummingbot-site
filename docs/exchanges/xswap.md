@@ -23,7 +23,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `xdc` : `xinfin`, `apothem`
+* [XDC Chain](/chains/xdc): `xinfin`, `apothem`
 
 ## 🔑 Connection
 

@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/xdc](https://github.com/hummingbot/gateway/tree/main/src/chains/xdc)
 * Configs: [/gateway/src/templates/xdc.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/xdc.yml)
-* Maintainer: 
 
 ## ℹ️ Chain Info
 
@@ -20,6 +19,7 @@
 | Network | ChainId | Type |
 |---------|---------|------|
 | `mainnet` | 50 | mainnet |
+| `apothem` | 51 | testnet |
 
 
 ## 🚰 Faucets

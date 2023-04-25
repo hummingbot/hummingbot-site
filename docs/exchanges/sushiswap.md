@@ -13,7 +13,6 @@
 
 Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
-
 ## ℹ️ Exchange Info
 
 * Website: <https://sushi.com/>
@@ -24,11 +23,11 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `ethereum`: `mainnet`, `arbitrum_one`, `goerli`
-* `avalanche`: `avalanche`, `fuji`
-* `binance-smart-chain`: `mainnet`, `testnet`
-* `harmony`: `mainnet`
-* `polygon`: `mainnet`, `mumbai`
+* [Ethereum](/chains/ethereum): `mainnet`, `arbitrum_one`, `goerli`
+* [Avalanche](/chains/avalanche): `avalanche`, `fuji`
+* [Binance Smart Chain](/chains/binance-smart-chain): `mainnet`, `testnet`
+* [Harmony](/chains/harmony): `mainnet`
+* [Polygon](/chains/polygon): `mainnet`, `mumbai`
 
 ## 🔑 Connection
 

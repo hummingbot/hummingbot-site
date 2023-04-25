@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/near](https://github.com/hummingbot/gateway/tree/main/src/chains/near)
 * Configs: [/gateway/src/templates/near.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/near.yml)
-* Maintainer: 
 
 ## ℹ️ Chain Info
 
@@ -23,8 +22,6 @@
 | `testnet` | 2 | testnet |
 
 ## 🚰 Faucets
-
-### `testnet`
 
 * https://faucet.near.org/
 * https://near-testnet-faucet.com/

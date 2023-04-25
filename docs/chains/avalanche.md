@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/avalanche](https://github.com/hummingbot/gateway/tree/main/src/chains/avalanche)
 * Configs: [/gateway/src/templates/avalanche.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/avalanche.yml)
-* Maintainer:
 
 ## ℹ️ Chain Info
 
@@ -23,7 +22,5 @@
 | `fuji` | 43114 | testnet |
 
 ## 🚰 Faucets
-
-### `fuji`
 
 * https://faucet.avax.network

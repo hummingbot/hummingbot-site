@@ -6,7 +6,6 @@
 
 * Folder: [/gateway/src/chains/binance-smart-chain](https://github.com/hummingbot/gateway/tree/main/src/chains/binance-smart-chain)
 * Configs: [/gateway/src/templates/binance-smart-chain.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/binance-smart-chain.yml)
-* Maintainer:
 
 ## ℹ️ Chain Info
 
