@@ -1,5 +1,19 @@
 We generally release a new version of Hummingbot **every month**. See below for information about each release.
 
+## [1.15.0](./1.15.0/)
+
+* **Released**: April 26, 2023
+
+**Hummingbot**
+
+* Github: [`v1.15.0`](https://github.com/hummingbot/hummingbot/releases/tag/v1.15.0)
+* DockerHub: [`version-1.15.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.15.0) | [`version-1.14.0-arm_beta`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-1.15.0-arm)
+
+**Hummingbot Gateway**
+
+* Github: [`v1.15.0`](https://github.com/hummingbot/gateway/releases/tag/v1.15.0)
+* DockerHub: [`version-1.15.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-1.15.0)
+
 ## [1.14.0](./1.14.0/)
 
 * **Released**: March 30, 2023

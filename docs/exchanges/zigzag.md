@@ -2,7 +2,7 @@
 
 ## 📁 Connector Info
 
-* Type: SPOT AMM DEX
+* Type: SPOT DEX
 
 ## 🏆 Exchange Tier
 
