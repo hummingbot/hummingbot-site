@@ -1,43 +1,27 @@
-This page contains notes about connecting Gateway to the Cronos Chain.
+# `cronos`
 
-## Cronos Chain
+`cronos` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Cronos blockchain.
 
-📁 [Chain folder](https://github.com/hummingbot/gateway/tree/main/src/chains/cronos)
+## 📁 Connector Info
 
-📁 [Config template](https://github.com/hummingbot/gateway/tree/main/src/templates/cronos.yml)
+* Folder: [/gateway/src/chains/cronos](https://github.com/hummingbot/gateway/tree/main/src/chains/cronos)
+* Configs: [/gateway/src/templates/cronos.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/cronos.yml)
 
-Below are the Cronos Chain networks that Gateway currently supports.
+## ℹ️ Chain Info
 
-### `mainnet` (cronos mainnet)
+* Website: https://cronos.crypto.com/
+* Block Explorer: https://cronscan.org/
+* CoinMarketCap: https://coinmarketcap.com/currencies/cronos/
+* CoinGecko: https://www.coingecko.com/en/coins/cronos
 
-**Default configuration parameters**
+## 🕸️ Supported Networks
 
-* `chainID`: 25
-* `nodeURL`: <https://evm.cronos.org/>
-* `tokenListType`: FILE
-* `tokenListSource`: src/chains/cronos/mainnet_beta.json
-* `nativeCurrencySymbol`: CRO
-* `gasPriceRefreshInterval`: 60
+| Network | ChainId | Type |
+|---------|---------|------|
+| `mainnet` | 25 | mainnet |
+| `testnet` | 338 | testnet |
 
-You can adjust these parameters by running the Hummingbot command:
+## 🚰 Faucets
 
-```
-gateway config cronos.networks.mainnet.<parameter>
-```
+* https://cronos.crypto.org/faucet
 
-### `testnet` (cronos testnet)
-
-**Default configuration parameters**
-
-* `chainID`: 338
-* `nodeURL`: <https://evm-t3.cronos.org/>
-* `tokenListType`: FILE
-* `tokenListSource`: src/chains/cronos/testnet.json
-* `nativeCurrencySymbol`: CRO
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-
-```
-gateway config cronos.networks.testnet.<parameter>
-```

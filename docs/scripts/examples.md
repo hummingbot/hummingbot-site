@@ -74,6 +74,13 @@ start --script [SCRIPT NAME]
 * **Release Added**: [1.4.0](/release-notes/1.4.0)
 * **Description**: This example shows how to set up a simple strategy to buy a token on fixed (dollar) amount on a regular basis
 
+## Download Candles
+
+* **Code**:  [download_candles](https://github.com/hummingbot/hummingbot/tree/master/scripts/download_candles.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.15.0](/release-notes/1.15.0)
+* **Description**: This script provides an example of how to use the Candles Feed to download and store historical data. It downloads 3-minute candles for 3 Binance trading pairs ["APE-USDT", "BTC-USDT", "BNB-USDT"] and stores them in CSV files in the /data directory. The script stops after it has downloaded 175,000 max_records records for each pair
+
 ## Format Status
 
 * **Code**: [format_status_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/format_status_example.py)
@@ -94,6 +101,13 @@ start --script [SCRIPT NAME]
 * **Author**: [ntnle](https://github.com/ntnle)
 * **Release Added**: [1.13.0](/release-notes/1.13.0)
 * **Description**: A script that can compute the microprice adjusted midprice of token pairs and display that midprice adjusted for the imbalance of the order book, and other information.
+
+## PMM with shifted mid dynamic spreads
+
+* **Code**:  [pmm_with_shifted_mid_dynamic_spreads](https://github.com/hummingbot/hummingbot/tree/master/scripts/pmm_with_shifted_mid_dynamic_spreads.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.15.0](/release-notes/1.15.0)
+* **Description**: This script will demonstrate how to extend the simple mmm example to shift the mid-price and make the spreads dynamic by using the candles component and applying technical indicators.
 
 ## Simple Directional strategy
 

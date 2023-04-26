@@ -23,10 +23,12 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `avalanche`: `avalanche`
-* `ethereum`: `mainnet`
-* `polygon`: `mainnet`
-* `harmony`: `mainnet`
+* [Avalanche](/chains/avalanche): `avalanche`
+* [Ethereum](/chains/ethereum): `mainnet`
+* [Polygon](/chains/polygon): `mainnet`
+* [Harmony](/chains/harmony): `mainnet`
+* [BNB Chain](/chains/bnb-chain): `mainnet`
+* [Cronos](/chains/cronos): `mainnet`
 
 ## 🔑 Setup
 

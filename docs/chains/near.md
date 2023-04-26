@@ -1,43 +1,28 @@
-This page contains notes about connecting Gateway to the Near Protocol.
+# `near`
 
-## Near Protocol
+`near` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the NEAR blockchain.
 
-📁 [Chain folder](https://github.com/hummingbot/gateway/tree/main/src/chains/near)
+## 📁 Connector Info
 
-📁 [Config template](https://github.com/hummingbot/gateway/tree/main/src/templates/near.yml)
+* Folder: [/gateway/src/chains/near](https://github.com/hummingbot/gateway/tree/main/src/chains/near)
+* Configs: [/gateway/src/templates/near.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/near.yml)
 
-Below are the Near Protocol networks that Gateway currently supports.
+## ℹ️ Chain Info
 
-### `mainnet` (near mainnet)
+* Website: https://near.org/
+* Block Explorer: https://explorer.near.org/
+* CoinMarketCap: https://coinmarketcap.com/currencies/near-protocol/
+* CoinGecko: https://www.coingecko.com/en/coins/near
 
-**Default configuration parameters**
+## 🕸️ Supported Networks
 
-* `chainID`: 0
-* `nodeURL`: <https://rpc.mainnet.near.org>
-* `tokenListType`: `FILE`
-* `tokenListSource`: `src/chains/near/near_tokens.json`
-* `nativeCurrencySymbol`: NEAR
-* `gasPriceRefreshInterval`: 60
+| Network | ChainId | Type |
+|---------|---------|------|
+| `mainnet` | 1 | mainnet |
+| `testnet` | 2 | testnet |
 
-You can adjust these parameters by running the Hummingbot command:
+## 🚰 Faucets
 
-```
-gateway config near.networks.mainnet.<parameter>
-```
-
-### `testnet` (near testnet)
-
-**Default configuration parameters**
-
-* `chainID`: 0
-* `nodeURL`: <https://rpc.testnet.near.org>
-* `tokenListType`: `FILE`
-* `tokenListSource`: `src/chains/near/near_testnet_tokens.json`
-* `nativeCurrencySymbol`: NEAR
-* `gasPriceRefreshInterval`: 60
-
-You can adjust these parameters by running the Hummingbot command:
-
-```
-gateway config near.networks.testnet.<parameter>
-```
+* https://faucet.near.org/
+* https://near-testnet-faucet.com/
+* https://www.coinbase.com/faucets/near-testnet-faucet

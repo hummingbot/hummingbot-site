@@ -23,7 +23,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `binance-smart-chain`: `mainnet`, `testnet`
+* [BNB Chain](/chains/bnb-chain): `mainnet`, `testnet`
 
 ## 🔑 Connection
 

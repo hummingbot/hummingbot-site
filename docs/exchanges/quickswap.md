@@ -23,7 +23,7 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 
 ## 🕸️ Supported Chains and Networks
 
-* `polygon`: `mainnet`, `mumbai`
+* [Polygon](/chains/polygon): `mainnet`, `mumbai`
 
 ## 🔑 Setup
 

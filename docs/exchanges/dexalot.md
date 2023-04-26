@@ -3,6 +3,8 @@
 ## 📁 Connector Info
 
 * Type: SPOT CLOB DEX
+* Folder: [/gateway/src/connectors/dexalot](https://github.com/hummingbot/gateway/blob/main/src/connectors/dexalot)
+* Configs: [/gateway/src/templates/dexalot.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/dexalot.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
@@ -17,6 +19,10 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * CoinMarketCap: <https://coinmarketcap.com/currencies/dexalot/markets/>
 * CoinGecko: <https://www.coingecko.com/en/exchanges/dexalot>
 * API docs: <https://docs.dexalot-test.com/apiv2>
+
+## 🕸️ Supported Chains and Networks
+
+* [Avalanche](/chains/avalanche): `avalanche`, `fuji`
 
 ## 🔑 Connection
 

@@ -13,11 +13,6 @@
 
 The Gold exchange is the top CEX or DEX selected by HBOT voters in the latest Poll. Their connectors are maintained by Hummingbot Foundation and are continually improved, serving as the "gold standard" template for all other connectors of that type.
 
-## 🕸️ Supported Chains and Networks
-
-* Ethereum: `mainnet`, `goerli`, `arbitrum_one`, `optimism`
-* Polygon: `mainnet`, `mumbai`
-
 ## ℹ️ Exchange Info
 
 * Website: https://uniswap.org/
@@ -25,6 +20,11 @@ The Gold exchange is the top CEX or DEX selected by HBOT voters in the latest Po
 * CoinGecko: https://www.coingecko.com/en/exchanges/uniswap_v2
 * API docs: https://docs.uniswap.org/
 * SDK: https://docs.uniswap.org/sdk/v3/overview
+
+## 🕸️ Supported Chains and Networks
+
+* [Ethereum](/chains/ethereum): `mainnet`, `goerli`, `arbitrum_one`, `optimism`
+* [Polygon](/chains/polygon): `mainnet`, `mumbai`
 
 ## 🔑 Connection
 

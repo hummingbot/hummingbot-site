@@ -217,6 +217,7 @@ nav:
         - Bitmex: exchanges/bitmex.md
         - Bitmex (perp): exchanges/bitmex-perpetual.md
         - Bittrex: exchanges/bittrex.md
+        - Bit.com (perp): exchanges/bit-com-perpetual.md
         - BTC Markets: exchanges/btc-markets.md
         - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
@@ -224,8 +225,10 @@ nav:
         - Defira: exchanges/defira.md
         - Dexalot: exchanges/dexalot.md
         - HitBTC: exchanges/hitbtc.md
+        - Hotbit: exchanges/hotbit.md
         - Huobi: exchanges/huobi.md
         - Injective: exchanges/injective.md
+        - Injective (perp): exchanges/injective-perpetual.md
         - Kraken: exchanges/kraken.md
         - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
@@ -243,6 +246,7 @@ nav:
         - VVS: exchanges/vvs.md
         - WhiteBit: exchanges/whitebit.md
         - XSwap: exchanges/xswap.md
+        - Zigzag: exchanges/zigzag.md
     - Strategies:
       - Strategies: strategies/index.md
       - Core:
@@ -276,6 +280,7 @@ nav:
         - Cronos: chains/cronos.md
         - Cosmos: chains/cosmos.md
         - Harmony: chains/harmony.md
+        - Injective: chains/injective.md
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md
@@ -320,6 +325,7 @@ nav:
     - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.15.0: release-notes/1.15.0.md
     - 1.14.0: release-notes/1.14.0.md
     - 1.13.0: release-notes/1.13.0.md 
     - 1.12.0: release-notes/1.12.0.md
