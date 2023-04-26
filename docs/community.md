@@ -12,7 +12,6 @@ Along with this documentation site, the only other official Hummingbot website i
 
 Key resources include:
 
-* [Test Drive](https://hummingbot.org/test-drive/): Try out Hummingbot directly from in the browser for free!
 * [Botcamp](https://hummingbot.org/botcamp): Our small-batch, hands-on developer bootcamp that teaches you how to create your own custom algo trading strategy using HUmmingbot
 * [Blog](https://blog.hummingbot.org/): The official Hummingbot blog with academy articles that teach you about market making along with advanced Hummingbot tips and tricks
 

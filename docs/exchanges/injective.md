@@ -24,21 +24,19 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🔑 Connection
 
-Run `connect injective` in order to enter your API keys:
+Run `gateway connect injective` in order to connect to your wallet:
 
 ```
-Enter your injective API key >>>
-Enter your injective secret key >>>
+Which chain do you want injective to connect to? (injective) >>>
+Which network do you want injective to connect to? (mainnet, testnet)
+
+Enter your injective-mainnet wallet private key >>>
+
+Enter your injective-mainnet sub account id wallet key (input 0 if unsure) >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to injective.
+The injective connector now uses wallet [pubKey] on injective-mainnet
 ```
-
-## 🪙 Fees
-
-Hummingbot assumes 0.75% maker fees and 0.75% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ciex/ciex_utils.py#L9)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
