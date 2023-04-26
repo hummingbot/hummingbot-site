@@ -18,6 +18,10 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * API docs: <https://api.injective.exchange/#derivatives>
 * SDK: <https://github.com/InjectiveLabs/sdk-python>
 
+## 🕸️ Supported Chains and Networks
+
+* [Injective](/chains/injective): `mainnet` `testnet` `devnet`
+
 ## 🔑 Connection
 
 Run `gateway connect injective_perpetual` in order to connect to your wallet:
