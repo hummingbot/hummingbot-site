@@ -34,5 +34,5 @@ Enter your BIT Perpetual API secret >>>
 If connection is successful:
 
 ```
-You are now connected to BIT_perpetual
+You are now connected to bit_com_perpetual
 ```
