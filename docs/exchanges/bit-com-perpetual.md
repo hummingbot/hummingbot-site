@@ -1,4 +1,4 @@
-# `BIT_COM perpetual`
+# `BIT perpetual`
 
 ## 📁 Connector Info
 
@@ -27,12 +27,12 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 Run `connect bit_com_perpetual` in order to enter your API keys:
 
 ```
-Enter your BITCOM Perpetual API key >>>
-Enter your BITCOM Perpetual API secret >>>
+Enter your BIT Perpetual API key >>>
+Enter your BIT Perpetual API secret >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to BIT_COM_perpetual
+You are now connected to BIT_perpetual
 ```

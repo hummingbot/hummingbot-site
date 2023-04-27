@@ -217,7 +217,7 @@ nav:
         - Bitmex: exchanges/bitmex.md
         - Bitmex (perp): exchanges/bitmex-perpetual.md
         - Bittrex: exchanges/bittrex.md
-        - BIT.COM (perp): exchanges/bit-com-perpetual.md
+        - BIT (perp): exchanges/bit-com-perpetual.md
         - BTC Markets: exchanges/btc-markets.md
         - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md
