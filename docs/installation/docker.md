@@ -84,42 +84,7 @@ This installs a Hummingbot instance linked to a Gateway instance, along with an 
 
 ### [Bash Scripts](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts)
 
-**Download the Scripts**
-
-* Create Script
-```
-wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/hummingbot-create.sh
-```
-* Start Script 
-
-```
-wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/hummingbot-start.sh
-```
-* Update Script
-```
-wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/hummingbot-update.sh
-```
-* Gateway Create
-```
-wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/gateway-create.sh
-```
-* Gateway Copy Certs
-```
-wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/gateway-copy-certs.sh
-```
-
-**Enable script permissions**
-
-```
-chmod a+x *.sh
-```
-
-**Run the script** 
-
-```
-./[scriptname].sh
-
-```
+This is the old method of installing Hummingbot. Download the scripts then open a terminal and navigate to the scripts folder and enable script permissions using `sudo chmod a+x *.sh` and then run the script you need. For example - `./hummingbot-create.sh`
 
 ## Building Docker Image using Build or Buildx
 
