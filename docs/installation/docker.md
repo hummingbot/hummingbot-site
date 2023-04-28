@@ -81,7 +81,79 @@ This installs a Hummingbot instance linked to a Gateway instance, along with an 
 !!! note "Experimental deployment"
     This deployment is still undergoing testing, so we recommend using the standalone deployments for message brokers from the [hummingbot/brokers](https://github.com/hummingbot/brokers) repository.
 
-## Building Docker Image
+
+### [Bash Scripts](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts)
+
+**Download the Scripts**
+
+* Create Script
+```
+wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/hummingbot-create.sh
+```
+* Start Script 
+
+```
+wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/hummingbot-start.sh
+```
+* Update Script
+```
+wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/hummingbot-update.sh
+```
+* Gateway Create
+```
+wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/gateway-create.sh
+```
+* Gateway Copy Certs
+```
+wget https://raw.githubusercontent.com/hummingbot/deploy-examples/main/bash_scripts/gateway-copy-certs.sh
+```
+
+**Enable script permissions**
+
+```
+chmod a+x *.sh
+```
+
+**Run the script** 
+
+```
+./[scriptname].sh
+
+```
+
+## Building Docker Image using Build or Buildx
+
+### When to Use Each Method
+
+When building an image for a **specific architecture**, use the `docker build` command with the --platform flag (optional). This is useful when you want to optimize the image for a specific architecture, or if you want to build an image for an architecture that is not supported by Buildx.
+
+When building a multiarch image, use the `Docker Buildx` tool. This is useful when you want to build an image that can run on **multiple architectures**, allowing you to distribute your image to a wider range of devices. Additionally, Docker Buildx allows you to easily build and test images for different architectures locally, and then push the multiarch image to a registry, simplifying the deployment process.
+
+### Docker Build
+
+**1. Go to the Hummingbot folder**
+```
+cd hummingbot
+```
+
+**2. Build the image**
+```
+docker build -t myimage:latest .
+```
+
+**3. Before pushing an image, you must first tag it with the appropriate name and version using the docker tag command**
+ 
+``` 
+docker tag myimage myusername/myimage:[tag]
+```
+
+**4. Push the image to DockerHub**
+
+```
+docker push myusername/myimage:[tag]
+```
+
+### Docker Buildx
 
 Here is how to build a multi-architecture Hummingbot Docker image using `docker buildx`:
 
@@ -112,9 +184,9 @@ docker buildx inspect --bootstrap
 
 The output should show both arm64 and amd64 platforms in the `Platforms` field.
 
-**6. Build the image**
+**6. Build the image and push to Dockerhub**
 ```
-docker buildx build --platform linux/amd64,linux/arm64 --tag hummingbot/hummingbot:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 --tag myusername/myimage:[tag] --push .
 ```
 
 ## Useful Docker Commands

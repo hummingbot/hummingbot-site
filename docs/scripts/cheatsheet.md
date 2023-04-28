@@ -111,8 +111,8 @@ For example, `self.connectors["binance"]` will return the Binance exchange class
 
 ### Connectors Methods
 
-- Best ask: `connector.get_price(trading_pair, is_buy: True)`
-- Best bid: `connector.get_price(trading_pair, is_buy: False)`
+- Best ask: `connector.get_price(trading_pair, is_buy=True)`
+- Best bid: `connector.get_price(trading_pair, is_buy=False)`
 - Mid-price: `connector.get_mid_price(trading_pair)`
 - Order book: `connector.get_order_book(trading_pair)`. Returns a `CompositeOrderBook` object, whose most common methods are:
     - `ask_entries()` --> Iterator of `OrderBookRow`
