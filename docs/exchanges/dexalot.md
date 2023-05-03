@@ -22,27 +22,28 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* [Avalanche](/chains/avalanche): `avalanche`, `fuji`
+* [Avalanche](/chains/avalanche): `dexalot` (subnet)
 
 ## 🔑 Connection
 
-NOTE: In order to get the API keys, please contact Dexalot team in their discord server <https://discord.gg/S4NP9w7Xwn>
-
-Run `connect dexalot` in order to enter your API keys:
+Run `gateway connect dexalot` in order to connect to your wallet:
 
 ```
-Enter your dexalot API key >>>
-Enter your dexalot secret key >>>
+Which chain do you want dexalot to connect to? (avalanche) >>>
+Which network do you want dexalot to connect to? (dexalot)
+
+Enter your dexalot-avalanche-dexalot wallet private key >>>
+
+Enter your Dexalot API Key (you can request one from the Dexalot team) >>> 
 ```
 
 If connection is successful:
-
 ```
-You are now connected to dexalot.
+The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 ```
 
-## 🪙 Fees
+!!! note "Getting Dexalot API Keys"
+    A Dexalot API key is not necessary to use the connector, but having an API key allows more bot instances per IP address. You can request an API key by contacting the Dexalot team at support@dexalot.com.
 
-Hummingbot assumes 0.75% maker fees and 0.75% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/ciex/ciex_utils.py#L9)).
-
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+!!! tip "Accessing Dexalot"
+    Since Dexalot is hosted on its own [Avalanche subnet](https://docs.avax.network/subnets), you need to deposit assets from the Avalanche C-Chain into the Dexalot subnet. Consult the [Dexalot blog](https://medium.com/dexalot) for articles and guides on how to use Dexalot.
