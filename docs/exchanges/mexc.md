@@ -17,7 +17,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * Website: <https://www.mexc.com/>
 * CoinMarketCap: <https://coinmarketcap.com/exchanges/mxc/>
 * CoinGecko: <https://www.coingecko.com/en/exchanges/mexcglobal>
-* API docs: <https://mxcdevelop.github.io/APIDoc/>
+* API docs: <https://mxcdevelop.github.io/apidocs/spot_v3_en/#introduction>
 * Transaction fees: <https://www.mexc.com/fee>
 
 ## 🔑 Connection

@@ -29,7 +29,7 @@ General endpoints for all chains.
 
 - Description: Display the configuration options for a chain
 - Request params: `{chain}`
-- Response: chain config map ([example](https://github.com/hummingbot/hummingbot/blob/master/gateway/src/templates/ethereum.yml))
+- Response: chain config map ([example](https://github.com/hummingbot/gateway/blob/main/src/templates/ethereum.yml))
 
 **GET `/network/tokens`**
 

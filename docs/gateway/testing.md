@@ -39,7 +39,7 @@ Import the GatewayAPI collection and the acccompanying Gateway environment into 
 
 ### Running tests
 
-After you have imported the collection and environment, test the various endpoints and change the request parameters to understand the their behavior. This will help you understand the speed/latency of each endpoint and configure important setting, especially your [node provider](./node-providers), to match your trading style.
+After you have imported the collection and environment, test the various endpoints and change the request parameters to understand the their behavior. This will help you understand the speed/latency of each endpoint and configure important setting, especially your node provider, to match your trading style.
 
 By convention, the POST requests have sample request payloads in the Body field, which allows you to run the same
 

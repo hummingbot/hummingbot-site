@@ -23,6 +23,3 @@
 
 ## 🚰 Faucets
 
-* https://faucet.cosmos.network/
-* https://testnet-faucet.com/cosmos
-* https://www.coinbase.com/faucets/cosmos-testnet-faucet

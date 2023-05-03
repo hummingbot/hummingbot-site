@@ -17,7 +17,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 * Website: <https://whitebit.com/>
 * CoinMarketCap: <https://coinmarketcap.com/exchanges/whitebit/>
 * CoinGecko: <https://www.coingecko.com/en/exchanges/whitebit>
-* API docs: <https://whitebit-exchange.github.io/api-docs/docs/category/public>
+* API docs: <https://whitebit-exchange.github.io/api-docs/>
 * Fees:  <https://whitebit.com/fees>
 
 ## 🔑 Connection

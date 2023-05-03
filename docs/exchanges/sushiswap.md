@@ -25,7 +25,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 * [Ethereum](/chains/ethereum): `mainnet`, `arbitrum_one`, `goerli`
 * [Avalanche](/chains/avalanche): `avalanche`, `fuji`
-* [Binance Smart Chain](/chains/binance-smart-chain): `mainnet`, `testnet`
+* [Binance Smart Chain](/chains/bnb-chain): `mainnet`, `testnet`
 * [Harmony](/chains/harmony): `mainnet`
 * [Polygon](/chains/polygon): `mainnet`, `mumbai`
 

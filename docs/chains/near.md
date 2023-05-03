@@ -23,6 +23,5 @@
 
 ## 🚰 Faucets
 
-* https://faucet.near.org/
-* https://near-testnet-faucet.com/
-* https://www.coinbase.com/faucets/near-testnet-faucet
+
+
