@@ -12,26 +12,24 @@ Docker Desktop is available on:
  
 Afterwards, run the following command in Terminal/Bash to check that you have installed Docker Compose successfully:
 ```
-docker compose
+docker compose version
 ```
 
 If you have installed Docker Compose successfully, you should see a response like:
 ```
-Usage:  docker compose [OPTIONS] COMMAND
-
-Docker Compose
-
-Options:
-      --ansi string                Control when to print ANSI control characters ("never"|"always"|"auto") (default "auto")
-      --compatibility              Run compose in backward compatibility mode
-      --env-file string            Specify an alternate environment file.
-  -f, --file stringArray           Compose configuration files
-      --parallel int               Control max parallelism, -1 for unlimited (default -1)
-      --profile stringArray        Specify a profile to enable
-      --project-directory string   Specify an alternate working directory
-                                   (default: the path of the, first specified, Compose file)
-  -p, --project-name string        Project name
+Docker Compose version v2.17.3
 ```
+
+## For AWS and other CLI based distros
+
+Docker Desktop is not compatible with command-line only Linux distributions, as it is a GUI-based application. Instead, you should install Docker Engine. To do so, follow the steps below using these commands:
+
+```
+ curl -fsSL https://get.docker.com -o get-docker.sh
+ sudo sh get-docker.sh
+ sudo usermod -aG docker $USER
+```
+Once you've executed the aforementioned commands, be sure to `exit` the terminal and log out, then log back in to ensure the changes are applied. After completing the installation, proceed with the `deployment examples` provided below.
 
 ## Deploy Examples
 

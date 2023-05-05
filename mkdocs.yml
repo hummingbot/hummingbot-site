@@ -127,7 +127,7 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Install Hummingbot via Docker: installation/docker.md
+      - Install Hummingbot via Docker Desktop: installation/docker.md
       - Install Hummingbot from Source: installation/source.md
       - Post-Installation: installation/post-installation.md
       - Orchestration Module: installation/orchestration.md
