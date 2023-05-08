@@ -9,8 +9,8 @@
 
 ## ℹ️ Chain Info
 
-* Website: https://cronos.crypto.com/
-* Block Explorer: https://cronscan.org/
+* Website: https://cronos.org/
+* Block Explorer: https://cronoscan.com/
 * CoinMarketCap: https://coinmarketcap.com/currencies/cronos/
 * CoinGecko: https://www.coingecko.com/en/coins/cronos
 

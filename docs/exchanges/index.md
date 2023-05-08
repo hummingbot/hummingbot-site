@@ -66,7 +66,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [AltMarkets](./altmarkets) | SPOT CLOB CEX |
 | [BTC-Markets](./btc-markets) | SPOT CLOB CEX |
 | [Binance US](./binance-us) | SPOT CLOB CEX |
-| [BitGet](./bitget) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
+| [BitGet](./bitget-perpetual) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
 | [Bit.com](./bit-com-perpetual) | PERP CLOB CEX |
 | [Bitmart](./bitmart) | SPOT CLOB CEX | [CoinAlpha](https://coinalpha.com) | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
 | [Bitfinex](./bitfinex) | SPOT CLOB CEX |

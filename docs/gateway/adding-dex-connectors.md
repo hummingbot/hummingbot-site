@@ -119,8 +119,8 @@ Now, you can start creating the connector. Following the steps below:
   - `<exchange_name>.config.ts`: This file contains the connector configuration.
   - `<exchange_name>.ts`: This file contains functions that interact with the DEX, such as fetching price and pair data, executing trades, and adding/removing liquidity.
 - Add the DEX ABI (interface for the smart contract functions and variables) as a json file in the same folder, i.e. `uniswap_v2_router_abi.json`.
-- See [pangolin.config.ts](https://github.com/hummingbot/hummingbot/blob/development/gateway/src/connectors/pangolin/pangolin.config.ts) as an example for the `<exchange_name>.config.ts` file. Copy it and update the changes made in step 1 depending on the template configuration for your exchange.
-- The `<exchange_name>.ts` file contains three main functions: `estimateSellTrade()`, `estimateBuyTrade()` and `executeTrade()`. The implementation of these functions depends on the exchange SDK. For EVM-compatible exchanges, the implementation should be similar to [pangolin.ts](https://github.com/hummingbot/hummingbot/blob/development/gateway/src/connectors/pangolin/pangolin.ts).
+- See [pangolin.config.ts](https://github.com/hummingbot/gateway/blob/main/src/connectors/pangolin/pangolin.config.ts) as an example for the `<exchange_name>.config.ts` file. Copy it and update the changes made in step 1 depending on the template configuration for your exchange.
+- The `<exchange_name>.ts` file contains three main functions: `estimateSellTrade()`, `estimateBuyTrade()` and `executeTrade()`. The implementation of these functions depends on the exchange SDK. For EVM-compatible exchanges, the implementation should be similar to [pangolin.ts](https://github.com/hummingbot/gateway/blob/main/src/connectors/pangolin/pangolin.ts).
 - The other functions in the `<exchange_name>.ts` should follow the examples available and not require many changes.
 - Keep in mind that this process is heavily dependent on the needs of your exchange and how the exchange SDK, if available, is implemented.
 
@@ -205,7 +205,7 @@ Under `gateway/test/chains/<chain>/<exchange_name>`
 
 Automated test coverage is a crucial step for maintaining high-quality connectors. The Hummingbot Foundation QA team runs these tests when reviewing connectors on an ongoing basis.
 
-Follow the [Pangolin tests](https://github.com/hummingbot/gateway/tree/main/test/chains/avalanche/pangolin) to create tests for the routes and functions of your connector.
+Follow the [Avalanche tests](https://github.com/hummingbot/gateway/tree/main/test/chains/avalanche) to create tests for the routes and functions of your connector.
 
 Before submitting a pull request for your connector, you should have a minimum testing coverage of **80%**. You can determine test coverage by running `yarn test:cov`.
 
@@ -220,7 +220,7 @@ Follow the guides below:
 
 ## 10. Create connector documentation page
 
-📁 **Folder** [`hummingbot-site: docs/gateway/exchanges`](https://github.com/hummingbot/hummingbot-site/tree/main/docs/gateway/exchanges)
+📁 **Folder** [`hummingbot-site: docs/gateway/exchanges`](https://github.com/hummingbot/hummingbot-site/tree/main/docs/exchanges)
 
 As a last step, create a Markdown documentation page in the `hummingbot-site` Github repository that provides descriptive information about the new DEX connector for Hummingbot users.
 

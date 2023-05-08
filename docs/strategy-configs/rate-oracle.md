@@ -1,7 +1,7 @@
 This new feature provides real time, most up-to-date exchange rate on any given token or currency from a reliable and trustworthy data source.
 
 !!! note
-    Use rate oracle with the [cross exchange market making](/strategies/cross-exchange-market-making/) and [arbitrage](/strategies/arbitrage/) strategies.
+    Use rate oracle with the [cross exchange market making](/strategies/cross-exchange-market-making/) and arbitrage strategies.
 
 ## Parameters
 

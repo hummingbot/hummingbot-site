@@ -12,26 +12,24 @@ Docker Desktop is available on:
  
 Afterwards, run the following command in Terminal/Bash to check that you have installed Docker Compose successfully:
 ```
-docker compose
+docker compose version
 ```
 
 If you have installed Docker Compose successfully, you should see a response like:
 ```
-Usage:  docker compose [OPTIONS] COMMAND
-
-Docker Compose
-
-Options:
-      --ansi string                Control when to print ANSI control characters ("never"|"always"|"auto") (default "auto")
-      --compatibility              Run compose in backward compatibility mode
-      --env-file string            Specify an alternate environment file.
-  -f, --file stringArray           Compose configuration files
-      --parallel int               Control max parallelism, -1 for unlimited (default -1)
-      --profile stringArray        Specify a profile to enable
-      --project-directory string   Specify an alternate working directory
-                                   (default: the path of the, first specified, Compose file)
-  -p, --project-name string        Project name
+Docker Compose version v2.17.3
 ```
+
+## For AWS and other CLI based distros
+
+Docker Desktop is not compatible with command-line only Linux distributions, as it is a GUI-based application. Instead, you should install Docker Engine. To do so, follow the steps below using these commands:
+
+```
+ curl -fsSL https://get.docker.com -o get-docker.sh
+ sudo sh get-docker.sh
+ sudo usermod -aG docker $USER
+```
+Once you've executed the aforementioned commands, be sure to `exit` the terminal and log out, then log back in to ensure the changes are applied. After completing the installation, proceed with the `deployment examples` provided below.
 
 ## Deploy Examples
 
@@ -81,7 +79,44 @@ This installs a Hummingbot instance linked to a Gateway instance, along with an 
 !!! note "Experimental deployment"
     This deployment is still undergoing testing, so we recommend using the standalone deployments for message brokers from the [hummingbot/brokers](https://github.com/hummingbot/brokers) repository.
 
-## Building Docker Image
+
+### [Bash Scripts](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts)
+
+This is the old method of installing Hummingbot. Download the scripts then open a terminal and navigate to the scripts folder and enable script permissions using `sudo chmod a+x *.sh` and then run the script you need. For example - `./hummingbot-create.sh`
+
+## Building Docker Image using Build or Buildx
+
+### When to Use Each Method
+
+When building an image for a **specific architecture**, use the `docker build` command with the --platform flag (optional). This is useful when you want to optimize the image for a specific architecture, or if you want to build an image for an architecture that is not supported by Buildx.
+
+When building a multiarch image, use the `Docker Buildx` tool. This is useful when you want to build an image that can run on **multiple architectures**, allowing you to distribute your image to a wider range of devices. Additionally, Docker Buildx allows you to easily build and test images for different architectures locally, and then push the multiarch image to a registry, simplifying the deployment process.
+
+### Docker Build
+
+**1. Go to the Hummingbot folder**
+```
+cd hummingbot
+```
+
+**2. Build the image**
+```
+docker build -t myimage:latest .
+```
+
+**3. Before pushing an image, you must first tag it with the appropriate name and version using the docker tag command**
+ 
+``` 
+docker tag myimage myusername/myimage:[tag]
+```
+
+**4. Push the image to DockerHub**
+
+```
+docker push myusername/myimage:[tag]
+```
+
+### Docker Buildx
 
 Here is how to build a multi-architecture Hummingbot Docker image using `docker buildx`:
 
@@ -112,9 +147,9 @@ docker buildx inspect --bootstrap
 
 The output should show both arm64 and amd64 platforms in the `Platforms` field.
 
-**6. Build the image**
+**6. Build the image and push to Dockerhub**
 ```
-docker buildx build --platform linux/amd64,linux/arm64 --tag hummingbot/hummingbot:latest --push .
+docker buildx build --platform linux/amd64,linux/arm64 --tag myusername/myimage:[tag] --push .
 ```
 
 ## Useful Docker Commands

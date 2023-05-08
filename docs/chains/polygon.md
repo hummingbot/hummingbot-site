@@ -24,5 +24,4 @@
 ## 🚰 Faucets
 
 * https://faucet.matic.network/
-* https://testnet-faucet.com/polygon
 * https://www.coinbase.com/faucets/polygon-mumbai-faucet

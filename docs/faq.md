@@ -112,7 +112,7 @@ See [What is a Cayman Foundation Company?](https://www.zedra.com/news-events/new
 
 ### How do I apply for a job with the Hummingbot Foundation?
 
-See [this page](https://angel.co/company/hummingbot/jobs), and apply for the ones marked **Hummingbot Foundation**. Alternatively, post a message with your CV to one of the Foundation staff on Discord.
+Post a message with your CV to one of the Foundation staff on [Discord](https://discord.gg/hummingbot).
 
 ## HBOT token
 

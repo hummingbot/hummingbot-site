@@ -127,7 +127,7 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Install Hummingbot via Docker: installation/docker.md
+      - Install Hummingbot via Docker Desktop: installation/docker.md
       - Install Hummingbot from Source: installation/source.md
       - Post-Installation: installation/post-installation.md
       - Orchestration Module: installation/orchestration.md
@@ -217,7 +217,7 @@ nav:
         - Bitmex: exchanges/bitmex.md
         - Bitmex (perp): exchanges/bitmex-perpetual.md
         - Bittrex: exchanges/bittrex.md
-        - Bit.com (perp): exchanges/bit-com-perpetual.md
+        - BIT (perp): exchanges/bit-com-perpetual.md
         - BTC Markets: exchanges/btc-markets.md
         - Coinbase: exchanges/coinbase.md
         - Crypto.com : exchanges/crypto-com.md

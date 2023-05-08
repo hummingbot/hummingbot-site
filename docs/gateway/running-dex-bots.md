@@ -23,10 +23,9 @@ The guide below shows you how to run this strategy using the `uniswap-ethereum-g
 
 5. Check your paper trading balances with `balance paper` and [add balances](/global-configs/paper-trade/#adding-paper-trade-balance) for ETH and USDT if needed.
 
-
 ### Create strategy
 
-Use `create` command to set up an [`amm_arb` strategy](/strategy/amm-arb/). Answer the question prompts presented so that you to generate the following configuration:
+Use `create` command to set up an [`amm_arb` strategy](../strategies/amm-arbitrage/). Answer the question prompts presented so that you to generate the following configuration:
 
 ```yaml
 template_version: 5
