@@ -1,6 +1,6 @@
 # Commands and Shortcuts
 
-## Hummingbot commands
+## Hummingbot Commands
 
 Below are the available commands in the current Hummingbot release.
 
@@ -26,7 +26,7 @@ Below are the available commands in the current Hummingbot release.
 | `order_book`      | Displays the top 5 bid/ask prices and volume                  |
 | `tab_example`     | Display hello world                                           |
 
-## Gateway commands
+## Gateway Commands
 
 | Command           | Function                                                      |
 | ----------------- | ------------------------------------------------------------- |
@@ -77,7 +77,7 @@ new_tokens             Report balance of these tokens
 
 ```
 
-## Docker commands
+## Docker Commands
 
 These are the commonly used docker commands when using Hummingbot.
 
@@ -90,7 +90,7 @@ These are the commonly used docker commands when using Hummingbot.
 
 To view more docker commands, go to [Docker Command Line Reference](https://docs.docker.com/engine/reference/commandline/docker/).
 
-## Linux commands
+## Linux Commands
 
 These are the basic commands used to navigate Linux commonly used with Hummingbot.
 
@@ -106,7 +106,7 @@ These are the basic commands used to navigate Linux commonly used with Hummingbo
 
 For more information about basic Linux commands, check out [The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview).
 
-## Keyboard shortcuts
+## Keyboard Shortcuts
 
 | Keyboard Combo                            | Command                      | Description                                  |
 | ----------------------------------------- | ---------------------------- | -------------------------------------------- |
@@ -122,12 +122,16 @@ For more information about basic Linux commands, check out [The Linux command li
 
 _\* Used for text edit in input pane only._
 
-**Note about search:**
+
+## Search
 
 1. Press <kbd>Ctrl</kbd> + <kbd>F</kbd> to trigger display the search field
 2. Enter your search keyword (not case sensitive)
 3. Hit `Enter` to jump to the next matching keyword (incremental search)
 4. When you are done, press <kbd>Ctrl</kbd> + <kbd>F</kbd> again to go back to reset
+
+
+## Copy and Paste   
 
 **Linux**
 

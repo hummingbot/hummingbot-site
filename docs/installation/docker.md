@@ -1,3 +1,9 @@
+We recommend installing Hummingbot using Docker if:
+
+* You want the simplest, easiest installation method
+* You don't need to modify the Hummingbot codebase
+* You want to deploy Hummingbot alongside with Dashboard, Orchestation Module, and other advanced configurations
+
 The instructions below help you install Hummingbot and its companion modules using Docker. Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot.
 
 ## Prequisites

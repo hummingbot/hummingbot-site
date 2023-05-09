@@ -1,7 +1,4 @@
-# Install Hummingbot from Source on Linux
-
-The instructions below help you install a standalone Hummingbot from source on Linux-based machines.
-
+The instructions below help you install a standalone Hummingbot instance from source on Linux-based machines.
 
 ## Prerequisites
 
@@ -29,12 +26,12 @@ Download the installer for your environment:
 
 Then, run the installer:
 
-Miniconda:
+Miniconda (Linux 64-bit):
 ```bash
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-Anaconda:
+Anaconda (Linux 64-bit):
 ```bash
 bash Anaconda-latest-Linux-x86_64.sh
 ```
@@ -66,35 +63,55 @@ positional arguments:
 
 After you have installed the dependencies, follow the steps below to install Hummingbot from source:
 
-1. Clone Hummingbot repo:
+### Clone repo
+
+Clone the repo or download the source code from Github and navigate to the folder:
 ```
 git clone https://github.com/hummingbot/hummingbot.git
-```
-
-2. Navigate into the hummingbot folder:
-```
 cd hummingbot
 ```
+### Install environment
 
-3. Install conda environment:
+Next, run the install script that installs a `hummingbot` conda environment with the Python dependencies:
 ```
 ./install
 ```
 
-4. Activate the conda environment:
+### Active environment
+
+Activate the conda environment:
 ```
 conda activate hummingbot
 ```
 
-5. Compile Hummingbot:
+This step should add a `(conda)` label in front of your command line, which lets you know that you are inside the conda environment.
+
+### Compile source code
+
+From inside the conda environment, run the script that compiles the Cython files in the Hummingbot codebase. Certain Hummingbot modules are written in Cython, which compiles down to lower-level C, to boost performance. 
 ```
 ./compile
 ```
 
-6. Run Hummingbot:
+### Launch Hummingbot
+
+From inside the conda environment, run the following command to launch Hummingbot:
 ```
 bin/hummingbot.py
 ```
+
+You should see the Hummingbot welcome screen:
+
+![welcome screen](/assets/img/welcome.png)
+
+To get started with Hummingbot, check out the following docs:
+
+* [Post Installation](./post-installation)
+* [Basic Features](/operation/)
+* [Quickstart Guide](/quickstart/)
+* [Hummingbot FAQ](/faq/)
+
+If you need to run DEX bots, install [Hummingbot Gateway](/gateway).
 
 ## Other Useful Commands
 
@@ -110,12 +127,26 @@ git clone https://github.com/hummingbot/hummingbot.git
 
 ### Compile Hummmingbot
 ```
+conda activate hummingbot
+
 ./compile
 ```
 
 ### Start Hummingbot
 ```
+conda activate hummingbot
+
 bin/hummingbot.py
+```
+
+### Update Hummingbot to latest `master` release
+```
+git pull origin master
+```
+
+### Update Hummingbot to `development` branch
+```
+git pull origin development
 ```
 
 ### Removed compiled files

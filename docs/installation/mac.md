@@ -1,15 +1,24 @@
+The instructions below help you install a standalone Hummingbot instance from source on Apple MacOS machines.
+
+Watch the video:
+
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/_10M9uJan3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisites
 
-!!! warning "Don't use Homebrew!"
-    We don't recommend installing `conda` through [Homebrew](https://brew.sh/) as this may cause issues during installation. Instead, downloading the installer directly from the Anaconda website. 
+Supported versions:
+
+* macOS 10 (Sierra) or later
+* Intel x86
+* Apple Silicon M1
+
+Unsupported:
+
+* Apple Silicon M2 / M2 Max
 
 ### XCode Command Line Tools
 
-[Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) are required for installing Hummingbot from source on Mac OS.
-
-You can run the following command from Terminal to install them:
+[Xcode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) are required. You can run the following command from Terminal to install them:
 
 ```
 ➜ xcode-select --install
@@ -17,23 +26,26 @@ You can run the following command from Terminal to install them:
 
 ### Miniconda / Anaconda
 
+!!! warning "Don't use Homebrew!"
+    We don't recommend installing `conda` through [Homebrew](https://brew.sh/) as this may cause issues during installation. Instead, downloading the installer directly from the Anaconda website. 
+
 Hummingbot requires Python 3 and other libraries. To manage these dependencies, Hummingbot uses `conda`, an open source environment manager for Python. You can install `conda` using either Miniconda or Anaconda. 
 
 Download the installer for your environment:
 
-* [Miniconda installer for Linux](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
-* [Anaconda installer for Linux](https://www.anaconda.com/download/)
+* [Miniconda installer for MacOS](https://docs.conda.io/en/latest/miniconda.html#macos-installers)
+* [Anaconda installer for MacOS](https://www.anaconda.com/download/)
 
 Then, run the installer:
 
 Miniconda:
 ```bash
-bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
 Anaconda:
 ```bash
-bash Anaconda-latest-Linux-x86_64.sh
+bash Anaconda-latest-MacOSX-x86_64.sh
 ```
 
 Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.
@@ -61,7 +73,7 @@ positional arguments:
 
 #### `conda` command and ZSH
 
-If the `conda` command is not available in your path, this may be because you are using ZSH or another shell. 
+If the `conda` command is not available in your path, this may be because you are using [ZSH](https://en.wikipedia.org/wiki/Z_shell) or another shell. 
 
 To fix this, copy the code snippet below to your `.zshrc` or similar file. By default, Anaconda only adds it to your `.bash_profile` file, which makes the `conda` command available in your root path.
 
@@ -90,10 +102,9 @@ Afterward, you should be able to access the `conda` command from your path.
 
 #### `conda` and Apple M1/M2 chips
 
-Make sure that you download the M1 versions of [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+If you are using Apple Silicon, make sure that you haved downloaded the M1 versions of Miniconda or Anaconda.
 
-You may need to regenerate a Hummingbot conda environment optimized for Intel-based Macs:
-
+If you encounter issues with the Hummingbot environemnt, you may need to regenerate a Hummingbot conda environment that is optimized for Intel-based Macs:
 ```bash
 # Deactivate the environment if you're in it
 conda deactivate
@@ -118,35 +129,55 @@ conda config --env --set subdir osx-64
 
 After you have installed the dependencies, follow the steps below to install Hummingbot from source:
 
-1. Clone Hummingbot repo:
+### Clone repo
+
+Clone the repo or download the source code from Github and navigate to the folder:
 ```
 git clone https://github.com/hummingbot/hummingbot.git
-```
-
-2. Navigate into the hummingbot folder:
-```
 cd hummingbot
 ```
+### Install environment
 
-3. Install conda environment:
+Next, run the install script that installs a `hummingbot` conda environment with the Python dependencies:
 ```
 ./install
 ```
 
-4. Activate the conda environment:
+### Active environment
+
+Activate the conda environment:
 ```
 conda activate hummingbot
 ```
 
-5. Compile Hummingbot:
+This step should add a `(conda)` label in front of your command line, which lets you know that you are inside the conda environment.
+
+### Compile source code
+
+From inside the conda environment, run the script that compiles the Cython files in the Hummingbot codebase. Certain Hummingbot modules are written in Cython, which compiles down to lower-level C, to boost performance. 
 ```
 ./compile
 ```
 
-6. Run Hummingbot:
+### Launch Hummingbot
+
+From inside the conda environment, run the following command to launch Hummingbot:
 ```
 bin/hummingbot.py
 ```
+
+You should see the Hummingbot welcome screen:
+
+![welcome screen](/assets/img/welcome.png)
+
+To get started with Hummingbot, check out the following docs:
+
+* [Post Installation](./post-installation)
+* [Basic Features](/operation/)
+* [Quickstart Guide](/quickstart/)
+* [Hummingbot FAQ](/faq/)
+
+If you need to run DEX bots, install [Hummingbot Gateway](/gateway).
 
 ## Other Useful Commands
 
@@ -162,12 +193,26 @@ git clone https://github.com/hummingbot/hummingbot.git
 
 ### Compile Hummmingbot
 ```
+conda activate hummingbot
+
 ./compile
 ```
 
 ### Start Hummingbot
 ```
+conda activate hummingbot
+
 bin/hummingbot.py
+```
+
+### Update Hummingbot to latest `master` release
+```
+git pull origin master
+```
+
+### Update Hummingbot to `development` branch
+```
+git pull origin development
 ```
 
 ### Removed compiled files

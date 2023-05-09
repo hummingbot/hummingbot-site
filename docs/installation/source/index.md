@@ -1,11 +1,15 @@
-Hummingbot is designed for Unix-based environment such as macOS or Linux.
+We recommend installing Hummingbot from source if:
 
-Windows users should first install [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install) before installing Hummingbot from source.
+* You want to customize or extend the Hummingbot codebase
+* You want to build new components like connectors or strategies
+* You want to learn how Hummingbot works at a deeper, technical level
 
-* [Linux](./linux.md)
-* [Windows](./windows.md)
-* [MacOS](./mac.md)
-* [Raspberry Pi](./raspberry-pi.md)
+Follow one of the guides below to install Hummingbot from source for your environment.
+
+* [Linux](../linux.md)
+* [Windows](../windows.md)
+* [MacOS](../mac.md)
+* [Raspberry Pi](../raspberry-pi.md)
 
 ## Useful Commands
 

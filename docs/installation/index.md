@@ -16,7 +16,7 @@ Hummingbot has been successfully tested with the following specifications:
 
 ## Installation Methods
 
-You can install Hummingbot either (1) [via Docker](./docker.md) or (2) [from source](./source.md).
+You can install Hummingbot either (1) [via Docker](./docker.md) or (2) [from source](./source/).
 
 ### Docker
 
@@ -38,7 +38,7 @@ We recommend installing Hummingbot from source if:
 - You want to build new components like connectors or strategies
 - You want to learn how Hummingbot works at a deeper, technical level
 
-We maintain guides that show you how to install Hummingbot from in various environments:
+See [Install from Source](./source/) or these guides for various environments:
 
 * [Linux](./linux.md)
 * [Windows](./windows.md)

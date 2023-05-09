@@ -129,7 +129,7 @@ nav:
       - Installation: installation/index.md
       - Install via Docker: installation/docker.md
       - Install from Source:
-        - Install from Source: installation/source.md
+        - Install from Source: installation/source/index.md
         - Linux: installation/linux.md
         - MacOS: installation/mac.md
         - Windows: installation/windows.md        
