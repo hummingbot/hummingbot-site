@@ -1,87 +1,95 @@
 The official Github repository for Gateway is https://github.com/hummingbot/gateway. Gateway is released monthly  with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
 
-## Install Hummingbot + Gateway
+## Install with Docker
 
-For most users, we recommend installing Hummingbot and Gateway using Docker Compose.  See [Docker](/installation/docker/) for instructions for various configurations.
+For most users, we recommend installing Hummingbot and Gateway using [Docker](/installation/docker/).
 
-We recommend that new users who want to run DEX trading bots deploy a single [Hummingbot + Gateway instance](https://github.com/hummingbot/deploy-examples/tree/development/hummingbot_gateway_compose).
+In particular, we recommend following the [Hummingbot Gateway Compose](https://github.com/hummingbot/deploy-examples/tree/development/hummingbot_gateway_compose) deployment path.
 
-## Install Gateway (standalone)
+## Install from Source
+
+You can also install Gateway on a standalone basis and then link it to Hummingbot manually. These instructions assumes that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker.
+
+### Prerequisites
 
 Install the following dependencies:
 
 - [NodeJS](https://nodejs.org/) (use 16.0.0 or higher)
 - [Yarn](https://yarnpkg.com/): run `npm install -g yarn` after installing NodeJS
 
-Then, follow the instructions below:
+### Installation
 
-1. Clone Gateway repo:
+Clone the Gateway repo and navigate into the folder:
 ```
 git clone https://github.com/hummingbot/gateway.git
-```
-
-2. Navigate into the Gateway folder:
-```
 cd gateway
 ```
 
-3. Install Javascript dependencies:
+Install Javascript dependencies:
 ```
 yarn
 ```
 
-4. Compile Typescript into Javascript:
+Compile Typescript into Javascript:
 ```
 yarn build
 ```
 
-5. Set permissions:
-```
-chmod a+x gateway-setup.sh
-```
+### Generate certs
 
-6. Run Gateway setup script:
-```
-./gateway-setup.sh
-```
-
-## Link Gateway to Hummingbot
-
-These instructions assumes that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker. Note that you will be prompted to enter **passphrase** and **certs_path** during the installation process.
-
-## 1. Generate certs
-
-The first step is to generate self-signed certificates from the Hummingbot client. These certificates let your bots securely communicate with Gateway.
+Next, generate self-signed certificates from the Hummingbot client. These certificates let your bots securely communicate with Gateway.
 
 Start Hummingbot. After entering your password, run `gateway generate-certs`:
 
 [![](./generate-certs.png)](./generate-certs.png)
 
-Enter a secure **passphrase**, and then Hummingbot will generate self-signed certificates that a server can use to authenticate its connection with this client.
+Enter a secure **passphrase**, and write it down. Hummingbot will generate self-signed certificates that a server can use to authenticate its connection with this client.
 
-Take note of the **path** where they are stored. This is also stored as `certs_path` in the Hummingbot's `conf_client.yml`, the global configuration file in the `/conf/` directory.
+Take note of the **certs_path** where they are stored. This is also stored as `certs_path` in the Hummingbot's `conf_client.yml`, the global configuration file in the `/conf/` directory.
 
 [![](./certs-path.png)](./certs-path.png)
 
-!!! tip
-    Make sure to save both **passphrase** and **certs_path** since you’ll need them later.
+Note that you will be prompted to enter both **passphrase** and **certs_path** later to complete the installation process.
 
-## 2. Run setup script
+### Run setup script
 
-Select only one of the methods below, since multiple Gateways on the same machine may result in conflicts.
+The `gateway-setup` script, located in the root Gateway directory, performs the following actions:
 
-The `gateway-setup` script configures Gateway by:
+* Copies the default Gateway configuration files from `/src/templates` to `/conf/` folder
+* Copies the Hummingbot certificates into the `/certs/` folder.
 
-* Copying the default configuration files from `/src/templates` to `/conf/` folder
-* Copying the Hummingbot self-signed certificates into the `/certs/` folder. Enter **certs_path** when prompted.
+Enable permissions on setup script:
+```
+chmod a+x gateway-setup.sh
+```
+
+Run setup script:
+```
+./gateway-setup.sh
+```
+
+When prompted, enter **certs_path** from the prior step:
+
+```
+ℹ️ Confirm if this is correct:
+
+            Copy configs FROM: [/folder]/gateway/src/templates
+              Copy configs TO: [/folder]/gateway/conf
+
+              Copy certs FROM: [/folder]/hummingbot/certs
+                Copy certs TO: [/folder]/gateway/certs
+
+Do you want to proceed? [Y/N] >>> 
+```
+
 
 !!! note "Alternative to copying certs files"
     The `gateway-setup.sh` script creates a copy of the Hummingbot certificates in the Gateway folder. Alternatively, you can override the **certs_path** parameter in `conf/server.yml` and enter the path to the Hummingbot certificates.
 
 
-### 3. Start Gateway
+### Start Gateway
 
-Afterwards, start Gateway using **passphrase**:
+Afterwards, start Gateway using the same **passphrase** that you used to generate the certs:
 
 ```
 $ yarn start --passphrase=<passphrase>

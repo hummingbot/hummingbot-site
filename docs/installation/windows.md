@@ -1,8 +1,19 @@
+The instructions below help you install a standalone Hummingbot instance from source on a Windows machine.
+
+Watch the video:
+
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/i2Qb8vTLHbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Windows Subsystem for Linux 2 (WSL 2)
+## Prerequisites
 
-The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot using [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install).
+Supported versions:
+
+* Windows 10 or later
+* WSL 2
+
+### Windows Subsystem for Linux 2 (WSL 2)
+
+Hummingbot is designed for Unix-based environment such as macOS or Linux, so Windows users should first install [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install) before installing Hummingbot from source.
 
 Note that:
 
@@ -37,13 +48,9 @@ Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Stor
 
 ![Powershell distros](/assets/img/wsl-distros.png)
 
-## Install via Docker on Windows
+## Install Hummingbot
 
-After installing WSL 2, you can follow the instructions on [Install via Docker](/installation/docker).
+Since you have an Ubuntu environment inside Windows, you can now install Hummingbot from source following the [Linux instructions](./linux.md).
 
-## Install from Source on Windows
-
-Since WSL 2 creates a virtual Linux environment inside Windows, users can install Hummingbot from source afterwards: [Install from Source](/installation/source).
-
-While some users have reported successfully being able to install and compile Hummingbot successfully on Windows machines natively, it is not officially supported.
+While some users have reported being able to install and compile Hummingbot on Windows machines natively, it is not officially supported.
 

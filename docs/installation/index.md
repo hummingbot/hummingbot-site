@@ -16,19 +16,19 @@ Hummingbot has been successfully tested with the following specifications:
 
 ## Installation Methods
 
-You can install Hummingbot either (1) [via Docker](./docker.md) or (2) [from source](./source.md).
+You can install Hummingbot either (1) [via Docker](./docker.md) or (2) [from source](./source/).
 
 ### Docker
 
 We recommend installing Hummingbot using Docker if:
 
 - You want the simplest, easiest installation method
-- You want to run strategies without needing to inspect the underlying codebase
-- You want to deploying a multi-instance or more complex configuration of Hummingbot
+- You don't need to modify the Hummingbot codebase
+- You want to deploy Hummingbot alongside with Dashboard, Orchestation Module, and other advanced configurations
 
-For most users, we recommend installing Hummingbot using Docker, which lets you deploy Hummingbot in various configurations. Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. 
+For most new users, we recommend installing Hummingbot using Docker.
 
-See [Install Hummingbot via Docker](./docker.md) for more info.
+See [Install via Docker](./docker.md) for more info.
 
 ### Source
 
@@ -38,12 +38,9 @@ We recommend installing Hummingbot from source if:
 - You want to build new components like connectors or strategies
 - You want to learn how Hummingbot works at a deeper, technical level
 
-See [Install Hummingbot from Source](./source.md) for more info.
+See [Install from Source](./source/) or these guides for various environments:
 
-## Guides by Environment
-
-In addition, here are guides about installation issues specific to various environments:
-
+* [Linux](./linux.md)
 * [Windows](./windows.md)
 * [MacOS](./mac.md)
 * [Raspberry Pi](./raspberry-pi.md)

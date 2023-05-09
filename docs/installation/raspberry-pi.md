@@ -1,5 +1,3 @@
-# Installing Hummingbot on Raspberry Pi
-
 Hummingbot doesn't require much power, so some users have run successfully run multiple instances on a single Raspberry Pi. The following steps are for the Raspberry Pi but it should also work with any other device that uses the same ARM architecture.
 
 Running Hummingbot on a Raspberry Pi or similar device has the same main benefit of running it on a cloud server: having a dedicated machine for Hummingbot. Raspberry Pi’s are relatively low cost, easy to set up, and, of course, don’t have the monthly charges associated with a cloud provider.
@@ -17,19 +15,6 @@ You can also choose between CLI (command line) and Desktop GUI versions but you'
 The Raspberry Pi has an easy to follow [guide](https://www.raspberrypi.org/documentation/installation/installing-images/) with alternatives on how to load the SD card with a Raspberry Pi OS from different operating systems.
 
 Once the OS is installed and booted then you can follow the steps below to install Hummingbot using either Docker or Source
-
-## Install via Docker
-
-Install Docker and restart your terminal window to enable the correct permissions for `docker` command before proceeding:
-```
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -a -G docker $USER
-sudo systemctl start docker && sudo systemctl enable docker
-exit
-```
-
-After Docker has been successfully installed, follow one of the [Docker deployments](/installation/docker) to install Hummingbot.
 
 ## Install from Source
 
