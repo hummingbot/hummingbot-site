@@ -19,21 +19,15 @@ sudo apt-get install -y build-essential
 
 Hummingbot requires Python 3 and other libraries. To manage these dependencies, Hummingbot uses `conda`, an open source environment manager for Python. You can install `conda` using either Miniconda or Anaconda. 
 
-Download the installer for your environment:
+Download the installer for your environment and run it:
 
-* [Miniconda installer for Linux](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+* [Miniconda installer for Linux](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links)
 * [Anaconda installer for Linux](https://www.anaconda.com/download/)
 
-Then, run the installer:
-
-Miniconda (Linux 64-bit):
-```bash
-bash Miniconda3-latest-Linux-x86_64.sh
+For example:
 ```
-
-Anaconda (Linux 64-bit):
-```bash
-bash Anaconda-latest-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.

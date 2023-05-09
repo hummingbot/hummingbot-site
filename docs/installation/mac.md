@@ -10,11 +10,11 @@ Supported versions:
 
 * macOS 10 (Sierra) or later
 * Intel x86
-* Apple Silicon M1
+* Apple M1
 
 Unsupported:
 
-* Apple Silicon M2 / M2 Max
+* Apple M2 / M2 Max
 
 ### XCode Command Line Tools
 
@@ -31,21 +31,23 @@ Unsupported:
 
 Hummingbot requires Python 3 and other libraries. To manage these dependencies, Hummingbot uses `conda`, an open source environment manager for Python. You can install `conda` using either Miniconda or Anaconda. 
 
-Download the installer for your environment:
+Download the installer for your environment and run it:
 
-* [Miniconda installer for MacOS](https://docs.conda.io/en/latest/miniconda.html#macos-installers)
+* [Miniconda installer for MacOS](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links)
 * [Anaconda installer for MacOS](https://www.anaconda.com/download/)
 
-Then, run the installer:
+https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 
-Miniconda:
-```bash
+MacOS with Intel x86:
+```
+curl -o Miniconda3-latest-MacOSX-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 bash Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
-Anaconda:
-```bash
-bash Anaconda-latest-MacOSX-x86_64.sh
+MacOS with Apple M1:
+```
+curl -o Miniconda3-latest-MacOSX-arm64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
 ```
 
 Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.

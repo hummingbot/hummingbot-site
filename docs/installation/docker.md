@@ -37,12 +37,6 @@ sudo apt-get update
 sudo apt-get install docker-compose-plugin
 ```
 
-**Mac (Homebrew)**
-
-```
-brew install docker-compose
-```
-
 --- 
 
 Afterwards, verify that Docker Compose is installed correctly by checking the version:
