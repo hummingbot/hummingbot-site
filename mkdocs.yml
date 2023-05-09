@@ -50,10 +50,10 @@ theme:
 plugins:
   - search
   - git-revision-date
-  - social:
-      cards_color:
-        fill: rgb(40, 47, 56)
-        text: white
+  # - social:
+  #     cards_color:
+  #       fill: rgb(40, 47, 56)
+  #       text: white
 
 extra:
   homepage: https://docs.hummingbot.org
