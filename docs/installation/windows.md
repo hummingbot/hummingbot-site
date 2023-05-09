@@ -1,6 +1,8 @@
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/i2Qb8vTLHbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Windows Subsystem for Linux 2 (WSL 2)
+## Prerequisites
+
+### Windows Subsystem for Linux 2 (WSL 2)
 
 The Hummingbot codebase is designed and optimized for UNIX-based systems such as macOS and Linux. For Windows users, we recommend running Hummingbot using [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install).
 
@@ -37,11 +39,7 @@ Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Stor
 
 ![Powershell distros](/assets/img/wsl-distros.png)
 
-## Install via Docker on Windows
-
-After installing WSL 2, you can follow the instructions on [Install via Docker](/installation/docker).
-
-## Install from Source on Windows
+## Install from Source
 
 Since WSL 2 creates a virtual Linux environment inside Windows, users can install Hummingbot from source afterwards: [Install from Source](/installation/source).
 

@@ -1,3 +1,8 @@
+# Install Hummingbot from Source on Linux
+
+The instructions below help you install a standalone Hummingbot from source on Linux-based machines.
+
+
 ## Prerequisites
 
 Supported versions:
@@ -5,82 +10,120 @@ Supported versions:
 * Ubuntu 18.04 / Ubuntu 20.04 (recommended)
 * Debian 10 / 11
 
-## Install via Docker
+### build-essentials
 
-In the Ubuntu terminal, enter the commands below to install Docker:
-
-```bash
-# 1) Remove older / currently installed versions of Docker first 
-sudo apt-get remove docker docker-engine docker.io containerd runc
-
-# 2) Update the package index
-sudo apt-get update && sudo apt-get upgrade -y
-
-# 3) Install necessary packages
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common gnupg lsb-release
-
-# 4) Add Docker's official GPG key 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-# 5) Setup the repository
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
-
-# 6) Install Docker
-sudo apt update && sudo apt-get install docker-ce
-
-# 7) Start the Docker service
-sudo service docker start 
-
-# 8) Allow docker commands without requiring sudo prefix. If you are running as root replace $USER with your username
-sudo usermod -aG docker $USER
-
-# 9) Important! Restart the terminal first before running the create scripts 
-exit
+On new Ubuntu instances, you may need to install the `build-essentials` package:
 ```
-
-Once Docker has been successfully installed, launch a Hummingbot instance following one of the [Deploy Examples](/installation/deploy/).
-
-## Install from Source
-
-```bash
-# install dependencies
 sudo apt-get update
 sudo apt-get install -y build-essential
+```
 
-# install miniconda
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-sh Miniconda3-latest-Linux-x86_64.sh
-exec bash
+### Miniconda / Anaconda
 
-# Clone the Hummingbot repo
+Hummingbot requires Python 3 and other libraries. To manage these dependencies, Hummingbot uses `conda`, an open source environment manager for Python. You can install `conda` using either Miniconda or Anaconda. 
+
+Download the installer for your environment:
+
+* [Miniconda installer for Linux](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+* [Anaconda installer for Linux](https://www.anaconda.com/download/)
+
+Then, run the installer:
+
+Miniconda:
+```bash
+bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+Anaconda:
+```bash
+bash Anaconda-latest-Linux-x86_64.sh
+```
+
+Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.
+
+To make the changes take effect, close and then re-open your terminal window.
+
+Afterwards, run the `conda` command from your path:
+```
+conda
+```
+
+You should see a response similar to:
+```
+usage: conda [-h] [-V] command ...
+
+conda is a tool for managing and deploying applications, environments and packages.
+
+Options:
+
+positional arguments:
+  command
+    clean        Remove unused packages and caches.
+    compare      Compare packages between conda environments.
+```
+
+## Install Hummingbot
+
+After you have installed the dependencies, follow the steps below to install Hummingbot from source:
+
+1. Clone Hummingbot repo:
+```
 git clone https://github.com/hummingbot/hummingbot.git
+```
 
-# Navigate into the Hummingbot folder
+2. Navigate into the hummingbot folder:
+```
 cd hummingbot
+```
 
-# Run the install script
+3. Install conda environment:
+```
 ./install
+```
 
-# Activate the conda environment
+4. Activate the conda environment:
+```
 conda activate hummingbot
+```
 
-# Compile Hummmingbot
+5. Compile Hummingbot:
+```
 ./compile
+```
 
-# Start Hummingbot
+6. Run Hummingbot:
+```
+bin/hummingbot.py
+```
+
+## Other Useful Commands
+
+### Clone the Hummingbot repo
+```
+git clone https://github.com/hummingbot/hummingbot.git
+```
+
+### Run the install script
+```
+./install
+```
+
+### Compile Hummmingbot
+```
+./compile
+```
+
+### Start Hummingbot
+```
 bin/hummingbot.py
 ```
 
-### Launching Hummingbot
-
-Make sure that you activate the Hummingbot conda environment:
-
+### Removed compiled files
 ```
-conda activate hummingbot
+./clean
 ```
 
-From the Hummingbot root folder, run the following command:
-
+### Remove hummingbot conda environment
 ```
-bin/hummingbot.py
+./uninstall
 ```

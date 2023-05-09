@@ -127,14 +127,15 @@ nav:
     - Docs: index.md
     - Installation:
       - Installation: installation/index.md
-      - Install Hummingbot via Docker Desktop: installation/docker.md
-      - Install Hummingbot from Source: installation/source.md
+      - Install via Docker: installation/docker.md
+      - Install from Source:
+        - Install from Source: installation/source.md
+        - Linux: installation/linux.md
+        - MacOS: installation/mac.md
+        - Windows: installation/windows.md        
+        - Raspberry Pi: installation/raspberry-pi.md
       - Post-Installation: installation/post-installation.md
       - Orchestration Module: installation/orchestration.md
-      - Guides by Environment:
-        - Windows: installation/windows.md        
-        - MacOS: installation/mac.md
-        - Raspberry Pi: installation/raspberry-pi.md
     - Quickstart:
       - Quickstart: quickstart/index.md
       - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
@@ -192,7 +193,7 @@ nav:
       - Smart Components: scripts/smart-components.md
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:
-      - Exchange Connectors: exchanges/index.md
+      - Exchanges: exchanges/index.md
       - Gold:
         - Binance: exchanges/binance.md
         - Binance (perp): exchanges/binance-perpetual.md

@@ -1,39 +1,56 @@
-## Docker Compose
+The instructions below help you install Hummingbot and its companion modules using Docker. Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot.
 
-Using Docker Compose for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot.
+## Prequisites
 
-The recommended way to get Docker Compose is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
+### Docker
 
-Docker Desktop is available on:
+The easiest way to install Docker is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites. Here are links to installers for each major OS:
 
 * [Linux](https://docs.docker.com/desktop/install/linux-install/)
 * [Mac](https://docs.docker.com/desktop/install/mac-install/)
 * [Windows](https://docs.docker.com/desktop/install/windows-install/)
- 
-Afterwards, run the following command in Terminal/Bash to check that you have installed Docker Compose successfully:
+
+For command-line Linux distributions, you can install Docker Engine following the steps below:
+
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+```
+
+Once you've executed the aforementioned commands, be sure to `exit` the terminal and log out, then log back in to ensure the changes are applied.
+
+### Docker Compose
+
+If you installed Docker Desktop, it already comes with Docker Compose. Alternatively, you can install Docker Compose on a standalone basis:
+
+**Linux (Ubuntu / Debian)**
+
+```bash
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+```
+
+**Mac (Homebrew)**
+
+```
+brew install docker-compose
+```
+
+--- 
+
+Afterwards, verify that Docker Compose is installed correctly by checking the version:
+
 ```
 docker compose version
 ```
 
-If you have installed Docker Compose successfully, you should see a response like:
-```
-Docker Compose version v2.17.3
-```
+The output should be: `Docker Compose version v2.17.2` or similar. Ensure that you are using Docker Compose V2, as V1 is deprecated.
 
-## For AWS and other CLI based distros
-
-Docker Desktop is not compatible with command-line only Linux distributions, as it is a GUI-based application. Instead, you should install Docker Engine. To do so, follow the steps below using these commands:
-
-```
- curl -fsSL https://get.docker.com -o get-docker.sh
- sudo sh get-docker.sh
- sudo usermod -aG docker $USER
-```
-Once you've executed the aforementioned commands, be sure to `exit` the terminal and log out, then log back in to ensure the changes are applied. After completing the installation, proceed with the `deployment examples` provided below.
 
 ## Deploy Examples
 
-The [`deploy-examples`](https://github.com/hummingbot/deploy-examples) Github repository provides various examples of how to deploy Hummingbot using Docker Compose. It aims to help users get started with deploying Hummingbot using Docker by providing different examples that demonstrate how to set up and customize the bot according to their needs.
+The [`deploy-examples`](https://github.com/hummingbot/deploy-examples) Github repository provides various examples of how to deploy Hummingbot using Docker Compose, a tool for defining and running multi-container Docker applications. 
 
 Clone the repo to the machine where you want to deploy Hummingbot:
 ```
@@ -50,7 +67,14 @@ This is where your encrypted keys, scripts, trades, configs, logs, and other fil
 Each sub-folder contains two important files:
 
 * `docker-compose.yml`: The sample configuration file for that deployment type
-* `README.md`: Detailed deployment instructions for that deployment type
+* `README.md`: A detailed README file that guides users through the steps required to deploy Hummingbot using Docker, including how to build and run the containers, how to configure the bot, and how to monitor its performance.
+
+After you have configured it properly, each deployment can be launched with the command:
+```
+docker compose up -d
+```
+
+## Deployment Types
 
 Please click the links below for the deployment instructions for each configuration.
 
@@ -79,20 +103,29 @@ This installs a Hummingbot instance linked to a Gateway instance, along with an 
 !!! note "Experimental deployment"
     This deployment is still undergoing testing, so we recommend using the standalone deployments for message brokers from the [hummingbot/brokers](https://github.com/hummingbot/brokers) repository.
 
+## Bash Scripts
 
-### [Bash Scripts](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts)
+This is the older method of installing Hummingbot using Docker. You can access the scripts from the [`/bash_scripts`](https://github.com/hummingbot/deploy-examples/tree/main/bash_scripts) folder in the Deploy Examples repo.
 
-This is the old method of installing Hummingbot. Download the scripts then open a terminal and navigate to the scripts folder and enable script permissions using `sudo chmod a+x *.sh` and then run the script you need. For example - `./hummingbot-create.sh`
+Afterwards, enable script permissions:
+```
+sudo chmod a+x *.sh
+``` 
 
-## Building Docker Image using Build or Buildx
+Then, run the script you need. For example, you can create a new Hummingbot instance by running:
+```
+./hummingbot-create.sh
+```
 
-### When to Use Each Method
+## Building Docker Images
 
-When building an image for a **specific architecture**, use the `docker build` command with the --platform flag (optional). This is useful when you want to optimize the image for a specific architecture, or if you want to build an image for an architecture that is not supported by Buildx.
+To build an image for a **specific architecture**, use the `docker build` command with the `--platform` flag.
 
-When building a multiarch image, use the `Docker Buildx` tool. This is useful when you want to build an image that can run on **multiple architectures**, allowing you to distribute your image to a wider range of devices. Additionally, Docker Buildx allows you to easily build and test images for different architectures locally, and then push the multiarch image to a registry, simplifying the deployment process.
+To build an image that is compatible with **multiple architectures**, use the `docker buildx` command. Additionally, Docker Buildx allows you to easily build and test images for different architectures locally, and then push the multiarch image to a registry, simplifying the deployment process.
 
-### Docker Build
+### docker build
+
+Here is how to build a Hummingbot Docker image using `docker build`:
 
 **1. Go to the Hummingbot folder**
 ```
@@ -116,7 +149,7 @@ docker tag myimage myusername/myimage:[tag]
 docker push myusername/myimage:[tag]
 ```
 
-### Docker Buildx
+### docker buildx
 
 Here is how to build a multi-architecture Hummingbot Docker image using `docker buildx`:
 
