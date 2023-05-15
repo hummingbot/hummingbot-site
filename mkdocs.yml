@@ -315,7 +315,10 @@ nav:
     - Whitepaper: governance/whitepaper.md
     - Proposals: governance/proposals.md
     - Polls: governance/polls.md
-    - Bounties: governance/bounties.md
+    - Bounties: 
+       - Bounties: governance/bounties.md
+       - Sponsors: governance/sponsors.md
+       - Developers: governance/devs.md
     - Releases: governance/releases.md
     - Epochs: governance/epochs.md
   - About Us:

@@ -1,69 +1,99 @@
-Bounties are rewards (denominated in HBOT or other tokens) given out by the Foundation or by community members to developers for fixing a bug or adding an improvement (enhancement, new connector, new strategy, etc) to the Hummingbot codebase.
+# Introducing Community Bounties #
 
-## Bounties Board
+Last year, we introduced the `Bounties` process, which has successfully addressed numerous issues and funded vital technical improvements in the Hummingbot codebase. Bounties have been $HBOT-denominated rewards provided by the Foundation to developers for resolving bugs or adding enhancements (such as new connectors, strategies, etc.) to the Hummingbot codebase. Given its significant impact and cost-effectiveness, we believe it's time to expand the Bounties program to the broader Hummingbot ecosystem.
+
+Here are the milestones that Bounties have achieved:
+
+- 68 bounties paid, resulting in 53 bug fixes and 15 new features and exchange connectors, including Kucoin Perpetual, PancakeSwap, and SushiSwap.
+
+- 32 unique developers have earned bounties.
+
+- Smallest bounty paid: 10,000 $HBOT ($50 currently) for Priority 3 bugs.
+
+- Largest bounty paid: 2,000,000 $HBOT ($10,000 currently) for the Orchestration Module.
+
+- Total funds spent: 13,337,000 $HBOT ($67,000 currently).
+
+Now, we believe it's time to open up these bounties to the broader Hummingbot ecosystem, so we are recasting them as **Community Bounties**.
+
+Community Bounties offer a platform for those seeking development work on exchange connectors, strategies, bug fixes, and more to connect with skilled developers capable of building these solutions. As with past bounties, Hummingbot Foundation will oversee the entire lifecycle of Community Bounties, including scoping, assignment, QA/engineering review, and code merge / payment.
+
+## Bounties Board ##
 
 ![bounty](/assets/img/bounty-board.jpg)
 
 Hummingbot Foundation maintains a [Github board](https://github.com/orgs/hummingbot/projects/7/views/1) in which you can see the status of all active bounties, including both bugs and improvements.
 
-* **Open**: Open bounties that developers can apply to work on
-* **Assigned**: Issue has been assigned to a developer, who is expected to submit a pull request resolving it
-* **Submitted**: A pull request resolving the issue has been submitted by the assigned developer
-* **Merged**: Pull request has been merged to the `development` branch
-* **Paid**: The community developer has been paid and the bounty is considered done.
+- **Open**: Open bounties that developers can apply to work on
+- **Assigned**: Issue has been assigned to a developer, who is expected to submit a pull request resolving it
+- **Submitted**: A pull request resolving the issue has been submitted by the assigned developer
+- **Merged**: Pull request has been merged to the `development` branch
+- **Paid**: The community developer has been paid and the bounty is considered done.
 
-### Creation
+The **Community Bounties** program is designed to streamline the process of funding enhancements, bug fixes, and new features for the official Hummingbot codebase, as well as private forks used by the community. The program consists of four key stages: **(1) Bounty Creation**, **(2) Bounty Assignment**, **(3) Pull Request Review**, and **(4) Code Merge and Payment**.
 
-There are three types of bounties:
+If you are a **sponsor** wishing to fund a bounty or if you are a **developer** who wants to work on a bounty see the links below for an outline of the exact steps you need to take.
 
-* **Bug bounty**: bounties for priority bugs assessed by Hummingbot Foundation
-* **Improvement bounty**: bounties for codebase improvements following an approved HIP
-* **Community bounty**: bounties submitted by community members (skips HIP process)
+- **[Sponsors](./sponsors.md)**
+- **[Developers](./devs.md)**
 
-For bugs related to core components, as well as for certified exchange connectors, Hummingbot Foundation will assess the bugs following the current schedule and create bounties for them on the **Bounties board**.
+## Bounty Creation ##
 
-For improvements such as new connectors and strategies, anyone can create [Hummingbot Improvement Proposals (HIP)](/governance/proposals) that, if approved, determines whether Foundation should add an HBOT bounty to the **Bounties board**.
+The first step in the process involves defining the bounty type, which can either be Open Source (to be merged into the official Hummingbot codebase) or Private (for a private Hummingbot fork and not included in open source codebase).
 
-In addition, community members can also fund bounties and get them to the **Bounties board** by sending tokens to a Foundation wallet, skipping the HIP voting process.  To fund a community bounty, please contact Hummingbot Foundation support team on Discord.
+Bounties should also be classified as `Bug Fix`, `Enhancement`, `New Connector`, `New Strategy`, or `New Script`. It is important to note that Open Source bounties (except for Bug Fixes) require community approval via the **Hummingbot Improvement Proposal** before acceptance, whereas Private bounties and Open Source bounties for Bug Fixes do not require voting.
 
-Afterwards, the Foundation team member will add a comment to the bounty's Github issue stating that a bounty has been created for the issue ("Created 100,000 HBOT bounty for a fix resolving issue X") and add it to the [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) under the **Open** column.
+The Sponsor, either the Hummingbot Foundation or a community member, should post a thread in the `#community-bounties` Discord channel describing the issue. Developers interested in working on the bounty can post in the thread to ask questions.
 
-### Assignation
+Foundation staff will then collaborate with the Sponsor to scope the bounty in a Github issue, providing a clear description of the work required, acceptance criteria, an an appropriate schedule/bounty amount given scope of work.
 
-After the bug has been added to Bounties Board, any developer from the community can apply to be assigned to fix the bug by commenting on the Github issue.
+If the Foundation approves the bounty, the Sponsor sends the bounty (which may be in $HBOT or other ERC-20 Ethereum tokens) to a designated Foundation Ethereum wallet, and the Foundation subsequently posts the bounty on the Bounties Board, a public Github project where you can see the status of all active bounties.
 
-Once there are one or more qualified developers who have applied to fix a bug, the Foundation will assign the issue to one of them, based on the developer’s past experience with Hummingbot. To mark the assignation, we will move the issue to **Assigned** in the Bounties board, and add a comment to the issue ("Assigned bounty to Developer X (with link to Github profile)").
+## Bounty Assignment ##
 
-### Submission
+After a bounty has been posted on the Bounties Board, developers from the community can apply to be assigned to the task by commenting on the associated Github issue. This allows for an open and transparent selection process, giving interested developers the opportunity to showcase their skills and commitment to the project.
 
-To claim a bounty, the assigned developer must submit a pull request addressing the bounty. Afterwards, Foundation will run tests to assess the fix and conduct an engineering review to ensure it can be merged into the codebase safely.
+Once one or more qualified developers have applied to work on a specific issue, the Foundation will evaluate the applicants based on their past experience with Hummingbot, as well as other relevant factors.
 
-### Payment
+The Foundation will then assign the issue to the most suitable candidate. To indicate the assignment, the issue will be moved to the "Assigned" column in the Bounties Board, and a comment will be added to the issue, such as "Assigned bounty to Developer X (with a link to their Github profile)." This ensures that the community is aware of the assignment and can monitor the progress of the task.
 
-Bounties are paid only after the pull request is merged into the `development` branch. For HBOT-denominated bounties created by the Foundation, 100% of the bounty goes to the developer who submitted the pull request.
+Afterwards, the developer is expected to deliver a pull request (PR) that fulfills the bounty. Note that the Foundation may re-assign the bounty if the assigned developer is unresponsive or inactive for 2+ weeks, or if the submitted PR doesn’t address the acceptance criteria.
 
-For bounties funded by community members that are conducted via the Hummingbot Foundation Snapshot, bounty payments are split into the following shares:
+## Pull Request Review ##
 
-* **Developer Share**: [80]% of bounty goes to the developer who submitted the pull request that fulfills the bounty requirements
-* **Reviewer Share**: [20]% of bounty goes to the Foundation for reviewing and merging the pull request
+In order to claim a bounty, the assigned developer must submit a Pull Request (PR) that addresses the specific issue outlined in the bounty. Once the PR is submitted, the Foundation will thoroughly assess the proposed solution to ensure it meets the established acceptance criteria.
 
-## Bug Bounties
+The Foundation will run various tests on the submission to evaluate its functionality, stability, and overall performance. Additionally, an engineering review will be conducted to ensure that the proposed changes can be safely and seamlessly integrated into the existing codebase without causing any conflicts or compromising system integrity.
 
-Starting in Epoch 2, the Foundation assigns bounties to open Github bugs, prioritizing issues related to Certified exchanges.
+The PR review process is a crucial step in maintaining the high quality and reliability of the Hummingbot ecosystem. By rigorously evaluating each submission, the Foundation can ensure that only the most effective and efficient solutions are implemented, ultimately resulting in a more robust and user-friendly platform for the entire community.
 
-### Bug Bounty Schedule
+## Code Merge and Payment ##
 
-The severity assigned by Hummingbot Foundation determines the amount for each bounty. Currently, the Foundation applies the following fixed bounty amounts per bug severity.
+Bounties are paid only after the Pull Request (PR) has been successfully merged into the development branch or private fork of Hummingbot. This ensures that the proposed solution has met the required standards and has been thoroughly reviewed by the Foundation.
 
-| Bug Severity  | Bug Fix      |
-| -----------   | ------------ |
-| P3 (Low)      |  10,000 HBOT |
-| P2 (High)      | 50,000 HBOT |
-| P1 (Critical)  | 100,000 HBOT |
+The bounty payments are divided as follows:
 
-Afterwards, the Foundation team member will add a comment to the Github issue stating that a bounty has been created for the issue ("Created 100,000 HBOT bounty for a fix resolving issue X") and add it to the [Bounties board](https://github.com/orgs/hummingbot/projects/7/views/1) under the **Open** column.
+- 75% of the bounty is awarded to the developer who submitted the PR that fulfills the bounty requirements.
 
-See [Bounties](/maintenance/bounties) for how developers can take up bounties.
+- 25% of the bounty is allocated to the Hummingbot Foundation for overseeing the process, reviewing, and merging the PR.
+
+In cases where the bounty is denominated in $HBOT, the payment structure is slightly different:
+
+- 95% of the bounty is awarded to the developer.
+
+- 5% of the bounty goes to the Hummingbot Foundation for their services.
+
+We believe that this payment structure ensures that both the developers and the Foundation are fairly compensated for their work, promoting a healthy and sustainable Hummingbot ecosystem.
+
+## First Community Bounties ##
+
+To test the process, the Foundation has created a couple of initial Community bounties:
+
+- Update Crypto.com exchange connector to latest API
+
+- Update Coinbase connector to latest API
+
+If you have questions about these issues or the Community Bounties process in general, please ask our community manager Carlito in [Discord(https://discord.gg/hummingbot)].
 
 ### Reporting
 
@@ -71,69 +101,8 @@ To report a bug, anyone can submit an [Bug Report](https://github.com/hummingbot
 
 The submitter should include as much description as possible for the issue reported, such as Steps to Reproduce, screenshots, etc. They should also add labels corresponding to the strategy name and exchange connector name as well.
 
-### Classification
+## The Future of Community Bounties ##
 
-The Foundation will regularly assess all bugs, which entails determining whether it is in fact a real bug and applying a priority label to them. If the issue is a real bug, the Foundation will add the Github issue to the Bounty Board and assign a fixed HBOT amount according to the Bug Bounty Schedule above.
+The Community Bounties program embodies our vision of fostering a collaborative and dynamic environment within the Hummingbot ecosystem. By actively involving developers and community members in the process of enhancing, fixing, and expanding the codebase, we aim to create a robust and user-centric platform that continuously evolves to meet the needs and expectations of its users.
 
-#### P3 (Low)
-
-* Bugs won’t result in any noticeable breakdown of the system
-
-* Related to:
-  * Color, incorrect spacing, typo or all related to design or user interface
-  * How parameter works when being called (Prompt)
-  * Strategy performance (setup, order create/cancellation, orderbook integrity..etc)
-
-* `Status:` The client still works as expected with possible workarounds
-
-* Results in some unexpected or undesired behavior, but not enough to disrupt system function
-
-* Example 1
-  * `Test case`: Executed command config order_refresh_time
-  * `Test expected result:` There should be prompt of how order_refresh time works and what user should input
-
-* Example 2
-  * `Test case:` Start pure market making
-  * `Test expected result:` The bot should create orders after 20s upon running start command
-
-#### P2 (High)
-
-* Bug capable of collapsing large parts of the system
-
-* Related to:
-  * The data client provides to users (SQlite, CSV, trades files)
-  * Functionality of strategies
-  * Connection between Client and Exchange
-  * Client performance when started
-  * Compatibility on hardware and operating systems
-  * Orders not created correctly
-  * Trade history does not match from client and connector
-
-* Example 1:
-  * `Test case:` History command, Trade PNL data
-  * `Test expected result:` After few trades, run history command and it should show all data the user needs on trade events
-
-* Example 2:
-  * `Test case:` Binance connector
-  * `Test expected result:` Connecting API and balance should return no error when executed
-
-* `Status:` the client works but some of the functionalities are not working as expected
-
-#### P1 (Critical)
-
-* Bug capable of triggering complete system shutdown or can cause a leak of the user private information (i.e. API keys, wallet private keys)
-
-* Related to:
-  * The client does not work, returning number of errors
-  * Unable to install/setup both source/docker build
-  * Connector unusable
-  * Client unstable
-  * Client  creates order but not on connector
-  * Client crashes upon start
-  * etc..
-
-* `Status:` The client can be either usable or unusable due to functionality issues
-
-## Improvement Bounties
-
-Improvement bounties are created when an [HIP or HGP](/governance/proposals) allocates HBOT tokens to fund a specific task, such as a new connector, strategy, or enhancement.
+As Hummingbot grows, the Community Bounties program will play a pivotal role in driving innovation and maintaining a high standard of quality across the platform. By offering incentives and support to talented developers, we can tap into a wealth of expertise and creativity that will ultimately benefit the entire ecosystem.
