@@ -1,7 +1,7 @@
 This section is for developers looking to contribute to Hummingbot or extend its capabilities:
 
 * [Debug console](/developers/debug): Inspect and modify Hummingbot's state at runtime
-* [Building DEX Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
+* [Building CEX Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
 * [Building DEX Connectors](/gateway/adding-dex-connectors): Build decentralized exchange (DEX) connectors
 * [Building Strategies](/developers/strategies): Create and customize your own Hummingbot strategies
 * [Adding Commands](/developers/commands): Create your own Hummingbot commands
@@ -15,4 +15,4 @@ Hummingbot is an open source project intended to provide a base layer infrastruc
 
 We welcome code contributions. See [Contribution Guidelines](/developers/contributions) for more information.
 
-For developer discussions and support, please visit the `#dev` channels on our discord server: https://discord.hummingbot.io.
+For developer discussions and support, please visit the `#dev` channels on our discord server: <https://discord.hummingbot.io>.
