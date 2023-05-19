@@ -43,7 +43,7 @@ The first step in the process involves defining the bounty type, which can eithe
 
 Bounties should also be classified as `Bug Fix`, `Enhancement`, `New Connector`, `New Strategy`, or `New Script`. It is important to note that Open Source bounties (except for Bug Fixes) require community approval via the **Hummingbot Improvement Proposal** before acceptance, whereas Private bounties and Open Source bounties for Bug Fixes do not require voting.
 
-The Sponsor, either the Hummingbot Foundation or a community member, should post a thread in the `#community-bounties` Discord channel describing the issue. Developers interested in working on the bounty can post in the thread to ask questions.
+The Sponsor, either the Hummingbot Foundation or a community member, should post a thread in the `#bounties` Discord channel describing the issue. Developers interested in working on the bounty can post in the thread to ask questions.
 
 Foundation staff will then collaborate with the Sponsor to scope the bounty in a Github issue, providing a clear description of the work required, acceptance criteria, an an appropriate schedule/bounty amount given scope of work.
 

@@ -6,7 +6,7 @@
 
 The first step to sponsor a bounty involves creating a thread on Discord. Hummingbot maintains an active community on Discord, where you can find a specific channel dedicated to community bounties (#community-bounties).
 
-To start, visit the Hummingbot Discord server using this link: <https://discord.gg/hummingbot>. Once there, navigate to the `#community-bounties` channel and create a new thread discussing the specific issue or enhancement you wish to sponsor.
+To start, visit the Hummingbot Discord server using this link: <https://discord.gg/hummingbot>. Once there, navigate to the `#bounties` channel and create a new thread discussing the specific issue or enhancement you wish to sponsor.
 
 Ensure your thread outlines the problem or improvement in detail, highlighting the reasons you believe it's important, and how the Hummingbot community could benefit from addressing it.
 
