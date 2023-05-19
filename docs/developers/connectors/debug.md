@@ -172,5 +172,8 @@ Similarly, for PyCharm, you want to set up the debug configurations, as seen in 
 
 ![PyCharmDebugConfiguration](/assets/img/pycharm-debug-configurations.png)
 
+For debugging it is neccessary that `Gevent compatible` in `Python Debugger` settings is enabled. See
+[Stackoverflow Q&A](https://stackoverflow.com/questions/39371676/debugger-times-out-at-collecting-data).
+
 !!! note
     As of this writing, there is no way to add breakpoints/log points to any of the Cython code in VSCode or PyCharm.
