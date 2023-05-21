@@ -50,10 +50,10 @@ theme:
 plugins:
   - search
   - git-revision-date
-  - social:
-      cards_color:
-        fill: rgb(40, 47, 56)
-        text: white
+  # - social:
+  #     cards_color:
+  #       fill: rgb(40, 47, 56)
+  #       text: white
 
 extra:
   homepage: https://docs.hummingbot.org
@@ -312,15 +312,15 @@ nav:
       - Adding Commands: developers/commands.md
   - Governance:
     - Governance: governance/index.md
-    - Whitepaper: governance/whitepaper.md
-    - Proposals: governance/proposals.md
+    - Bounties:
+       - Bounties: governance/bounties/index.md
+       - For Contributors: governance/bounties/contributors.md
+       - For Sponsors: governance/bounties/sponsors.md
     - Polls: governance/polls.md
-    - Bounties: 
-       - Bounties: governance/bounties.md
-       - Sponsors: governance/sponsors.md
-       - Developers: governance/devs.md
-    - Releases: governance/releases.md
+    - Proposals: governance/proposals.md
     - Epochs: governance/epochs.md
+    - Releases: governance/releases.md
+    - Whitepaper: governance/whitepaper.md
   - About Us:
     - About Us: about/index.md
     - Board of Directors: governance/board.md

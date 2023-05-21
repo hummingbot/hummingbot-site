@@ -15,4 +15,4 @@ Hummingbot is an open source project intended to provide a base layer infrastruc
 
 We welcome code contributions. See [Contribution Guidelines](/developers/contributions) for more information.
 
-For developer discussions and support, please visit the `#dev` channels on our discord server: <https://discord.hummingbot.io>.
+For developer discussions and support, please visit the **Developer* channels on our Discord server: <https://discord.gg/hummingbot>.
