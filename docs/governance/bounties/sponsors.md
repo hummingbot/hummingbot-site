@@ -38,8 +38,8 @@ Here are recent new connectors that the Hummingbot community have approved:
 
 | HGP               | Exchange Connector | Type   | Bounty Amount | Status |
 |-------------------|--------------------|--------|---------------|--------|
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Ripple DEX         | DEX         |    1.5M HBOT    |  Active     |
-| [HGP-25](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Gate Perpetual     | CEX         | 750 000 HBOT    |  Paid       |
+| [HIP-23](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Ripple DEX         | DEX         |    1.5M HBOT    |  Active     |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Gate Perpetual     | CEX         | 750 000 HBOT    |  Paid       |
 | [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Kucoin Perpetual   | CEX         | 750 000 HBOT    |  Paid       |
 | [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | LBank              | DEX         | 200 000 HBOT    |  Paid       |
 | [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | Cosmos             | Chain, DEX  | 1 000 000 HBOT  |  Paid      |
