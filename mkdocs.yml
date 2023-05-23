@@ -225,6 +225,7 @@ nav:
         - DeFi Kingdoms: exchanges/defikingdoms.md
         - Defira: exchanges/defira.md
         - Dexalot: exchanges/dexalot.md
+        - Foxbit: exchanges/foxbit.md
         - HitBTC: exchanges/hitbtc.md
         - Hotbit: exchanges/hotbit.md
         - Huobi: exchanges/huobi.md
@@ -242,8 +243,10 @@ nav:
         - Pancakeswap: exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
+        - Phemex Perpetual: exchanges/phemex-perpetual.md
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
+        - Tinyman: exchanges/tinyman.md
         - VVS: exchanges/vvs.md
         - WhiteBit: exchanges/whitebit.md
         - XSwap: exchanges/xswap.md
@@ -277,6 +280,7 @@ nav:
         - Chains: chains/index.md
         - Ethereum: chains/ethereum.md
         - Avalanche: chains/avalanche.md
+        - Algorand: chains/algorand.md
         - BNB Chain: chains/bnb-chain.md
         - Cronos: chains/cronos.md
         - Cosmos: chains/cosmos.md

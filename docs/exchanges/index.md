@@ -80,6 +80,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [DeFi Kingdoms](./defikingdoms) | SPOT AMM DEX |
 | [Defira](./defira) | SPOT AMM DEX |
 | [Dexalot](./dexalot) | SPOT CLOB DEX | [CoinAlpha](https://coinalpha.com) |
+| [Foxbit](./foxbit) | SPOT CLOB CEX |
 | [HitBTC](./hitbtc) | SPOT CLOB CEX |
 | [Hotbit](./hotbit) | SPOT CLOB CEX |
 | [Huobi](./huobi) | SPOT CLOB CEX | | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
@@ -96,9 +97,11 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Pancakeswap](./pancakeswap) | SPOT AMM DEX |
 | [Pangolin](./pangolin) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [Perpetual Protocol](./perp) | PERP AMM DEX |
+| [Phemex Perpetual](./phemex-perpetual) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
 | [ProBit](./probit) | SPOT CLOB CEX |
 | [Ref Finance](./ref) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [Sushiswap](./sushiswap) | SPOT AMM DEX |
+| [Tinyman](./tinyman) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [VVS Finance](./vvs) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [WhiteBit](./whitebit) | SPOT CLOB CEX |
 | [XSwap](./xswap) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
