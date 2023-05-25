@@ -4,17 +4,18 @@ Bounties may be either **Open Source** (merged into the official Hummingbot code
 
 Hummingbot Foundation oversees the entire Bounties process, from working with Sponsors to scope the bounty, finding and assigning the bounty to a qualified developer, performing engineering/QA review, and paying the developer. Since Bounties sprung out of an internal program that has rewarded 30+ unique contributors and fixed 70+ issues, the Foundation itself will continue to be an active Sponsor of bounties.
 
-See below for step-by-step guides for Contributors and Sponsors and :
+See below for step-by-step guides for Contributors and Sponsors:
+
 * [Contributors](./contributors.md)
 * [Sponsors](./sponsors.md)
 
 ## Bounties Board
 
-![bounty](/assets/img/bounty-board.jpg)
+![bounty](./bounty-board.png)
 
-The [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1), a public project in the Hummingbot Github, is the source of truth for the status of all bounties, including both Foundation and community-created bounties.
+[Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1), a Kanban-style public Github project, is the source of truth for the status of all Hummingbot bounties, including both Foundation and community-created bounties.
 
-The columns include:
+The columns in the board include:
 
 - **Open**: Open bounties that contributors can apply to work on
 - **Assigned**: Issue has been assigned to a contributor, who is expected to submit a pull request resolving it
@@ -22,9 +23,9 @@ The columns include:
 - **Merged**: Pull request has been merged to the `development` branch (or published publicly in the case of content)
 - **Paid**: Contributor has been paid and the bounty is considered done
 
-In addition, see the **Bounties** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for a record of the historical and current bounty amounts, assigned contributors, and payments.
+In addition, see the **Bounties** tab in the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) Google Sheet for a record of past bounty distributions.
 
-## Types of Bounties
+## Bounty Types
 
 Bounties can be classified into one of the following types:
 
@@ -32,19 +33,21 @@ Bounties can be classified into one of the following types:
 * 🚀 **Enhancement**: Update or improvement to a component in the Hummingbot codebase
 * 📺 **Content**: Documentation, videos, guides, and other content that explains how to use an aspect of Hummingbot
 * 📜 **New Script**: A new [script](/scripts/) in the Hummingbot codebase
-* 🏦 **New Connector**: A new [exchange](/exchanges/) or [blockchain](/gateway/chains/) connector in Hummingbot or Hummingbot Gateway. **Requires community voting.**
-* 📈 **New Strategy**: A new [strategy](/strategies/) in the Hummingbot codebase. **Requires community voting.**
+* 🏦 **New Connector**: A new [exchange](/exchanges/) or [blockchain](/gateway/chains/) connector in Hummingbot or Hummingbot Gateway
+* 📈 **New Strategy**: A new [strategy](/strategies/) in the Hummingbot codebase.
 
 In addition, bounties may be:
 
-* **Open Source**: merged into the official Hummingbot codebase or 
+* **Open Source**: merged into the official Hummingbot codebase, or 
 * **Private**: delivered as a private fork to the Sponsor
 
-## Community Voting for New Connectors and Strategies
+## Community Voting
 
-Open Source bounties with the New Connector and New Strategy types require community voting.
+Open Source bounties with the **New Connector** and **New Strategy** types require community voting, since they are included into the official Hummingbot codebase and actively maintained.
 
-Connectors and strategies require active maintenance, testing and documentation, so adding new ones to the codebase imposes a cost by everyone who uses Hummingbot. Therefore, prospective sponsors of these bounties should get a [proposal](/governance/proposals) approved before the Foundation can assign a bounty. Sponsors should also be aware of the quarterly [Polls](/governance/polls) process that applies a minimum voting power threshold to determine inclusion of connectors and strategies in the codebase.
+Connectors and strategies require maintenance, testing and documentation, so adding new ones to the codebase imposes a cost by everyone who uses Hummingbot. Therefore, prospective sponsors of these bounties should get a [proposal](/governance/proposals) approved before the Foundation can assign a bounty. 
+
+Sponsors should also be aware of the quarterly [Polls](/governance/polls) process that applies a minimum voting power threshold to determine inclusion of connectors and strategies in the codebase.
 
 Private bounties and other types of Open source bounties do not need to go through the proposal process.
 
@@ -54,9 +57,9 @@ The Bounties process consists of four key stages: **(1) Bounty Creation**, **(2)
 
 ### 1. Bounty Creation
 
-Sponsors may create a bounty as (1) an issue in one of the Hummingbot Github repositories or (2) a Discord thread in the #bounties channel of the Hummingbot Discord.
+Sponsors may create a bounty as (1) a Github issue in a Hummingbot code repository or (2) a Discord thread in the #bounties channel of the Hummingbot Discord server.
 
-We will collaborate with the Sponsor to scope the bounty in a Github issue, providing a clear description of the work required, acceptance criteria, an an appropriate schedule/bounty amount given scope of work.
+Afterwards, we will collaborate with the Sponsor to scope the bounty in a Github issue, providing a clear description of the work required, acceptance criteria, an an appropriate schedule/bounty amount given scope of work.
 
 After the Sponsor sends the bounty tokens to a Foundation wallet, we will post the bounty to the **Open** column on [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and create an entry for it in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
 

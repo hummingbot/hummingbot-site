@@ -10,16 +10,16 @@ Typically, bounty sponsors include:
 * DAOs for blockchain or DEX protocols who approve grants for Hummingbot integrations
 * Individuals or trading firms who want private Hummingbot connectors or strategies
 
-## Bounty Amounts
+## Bounty Sizing
 
-Below are general guidelines to help Sponsors determine how much capital to allocate for bounties.
+Below are general guidelines to help Sponsors determine how much budget to allocate for Hummingbot bounties.
 
 ### Bugs and Enhancements
 
 Hummingbot Foundation classifies bugs and enhancements into 3 tiers depending on level of effort and severity:
 
 * P3: Trivial / Fixable in 1-2 hours
-* P2: General / Fixable in 1-2 days∫
+* P2: General / Fixable in 1-2 days
 * P1: Critical / Fixable in 2-3 days
 
 Currently, here are the bounty amounts we give for each priority tier:
@@ -32,26 +32,39 @@ Currently, here are the bounty amounts we give for each priority tier:
 
 ### New Connectors
 
-Bounty amounts for new connectors may vary on the assessed level of effort entailed.
+Bounty amounts for new connectors vary depending on the level of effort entailed.
 
-Here are recent new connectors that the Hummingbot community have approved:
+Here are past bounties and grants for new connectors that the Hummingbot community have approved:
 
-| HGP               | Exchange Connector | Type   | Bounty Amount | Status |
+| Proposal          | Connector | Type   | Bounty Amount | Status |
 |-------------------|--------------------|--------|---------------|--------|
-| [HIP-23](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Ripple DEX         | DEX         |    1.5M HBOT    |  Active     |
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Gate Perpetual     | CEX         | 750 000 HBOT    |  Paid       |
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Kucoin Perpetual   | CEX         | 750 000 HBOT    |  Paid       |
-| [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | LBank              | DEX         | 200 000 HBOT    |  Paid       |
-| [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | Cosmos             | Chain, DEX  | 1 000 000 HBOT  |  Paid      |
+| [HIP-23](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Ripple         | Chain, DEX         |    1,500,000 HBOT    |  Active     |
+| [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | Cosmos             | Chain       | 1,000,000 HBOT  |  Paid      |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Gate Perpetual     | PERP CEX         | 750,000 HBOT    |  Paid       |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Kucoin Perpetual   | PERP CEX         | 750,000 HBOT    |  Paid       |
+| [HIP-25](https://snapshot.org/#/hbot-ip.eth/proposal/0x9f6a13e17917c688bac237fb311d652a787b46843598ec46050b36ae3780624d)   | dYdX (upgrade) | PERP DEX | 250,000 HBOT    |  Paid       |
+| [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | LBank              | SPOT CEX         | 200,000 HBOT    |  Paid       |
 
 
-## Service Fees
+### New Strategies
 
-Hummingbot Foundation charges a service fee for overseeing the entire process, from working with sponsors to scope the bounty, finding and assigning the bounty to a qualified contributor, performing engineering/QA review, and conducting payments, 
+Similar to connectors, bounty amounts for new strategies vary depending on level of effort.
 
-The standard Service Fee is 25%, which means that the contributor receives 75% of the total bounty amount submitted by Sponsors. In cases where the bounty is denominated in $HBOT, the Service Fee is 5% and the contributor Share is 95%.
+Here are past bounties and grants related to strategies and strategy improvements that the Hummingbot community have approved:
 
-No Service Fee is charged on Hummingbot Foundation-sponsored bounties, so contributors receives 100% of the bounty amount.
+| Proposal          | Strategy | Bounty Amount | Status |
+|-------------------|--------------------|--------|---------------|
+| [HIP-6](https://snapshot.org/#/hbot-ip.eth/proposal/0xaf21d826282fcc0a4d77ad0fb775c37b7a5935af1ce106686065b4336de2f83f)   | Fixed Grid   |    400,000 HBOT    |  Paid     |
+| [HIP-19](https://snapshot.org/#/hbot-ip.eth/proposal/0xfd073ba4c7b4297ba202f59ece151f0f646cf11cd2b96946a7b5e89905490354)   | Hedge   |    400,000 HBOT    |  Paid     |
+
+
+## Service Fee
+
+Hummingbot Foundation charges Sponsors a Service Fee for overseeing the entire lifecycle of a bounty: scoping the bounty, finding and assigning the bounty to a qualified contributor, performing engineering/QA review, and conducting payments. This saves you a lot of time and effort.
+
+The standard Service Fee is **20%**. If a Sponsor submits a 1000 USDT total bounty, the Service Fee is 200 USDT and the Contributor receives 800 USDT.
+
+If the bounty is denominated in [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb), the Service Fee is **5%**. If a Sponsor submits a 100,000 HBOT total bounty, the Service Fee is 5000 HBOT and the Contributor receives 95,000 HBOT.
 
 ## Guide for Sponsors
 
@@ -67,12 +80,12 @@ If you have questions about these issues or the Community Bounties process in ge
 
 ### Step 2: Fund bounty
 
-In order to fund the bounty, the sponsor should send the total bounty amount to a designated Foundation wallet.
+In order to fund the bounty, the Sponsor should send the total bounty amount to a designated Foundation wallet:
 
-* **Ethereum:** 0x60D581aEa0644e74df60c7555e5166d32665d6b6  
-* **Binance Smart Chain:** 0xE517b826a26B439eCE92f3220628eC007049d915
+* **Ethereum:** [0x60D581aEa0644e74df60c7555e5166d32665d6b6](https://etherscan.io/address/0x60d581aea0644e74df60c7555e5166d32665d6b6)  
+* **Binance Smart Chain:** [0xE517b826a26B439eCE92f3220628eC007049d915](https://bscscan.com/address/0xe517b826a26b439ece92f3220628c007049d915)
 
-Since HBOT is an Ethereum ERC-20 token, HBOT bounties must be sent to the Ethereum wallet.
+Since HBOT is an Ethereum ERC-20 token, all HBOT bounties must be sent to the Ethereum wallet.
 
 ### Step 3: Let us handle the rest!
 
