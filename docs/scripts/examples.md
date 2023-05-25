@@ -6,6 +6,13 @@ In the Hummingbot client, run a script with:
 start --script [SCRIPT NAME]
 ```
 
+## 1-N Portfolio
+
+* **Code**: [1overN_portfolio](https://github.com/hummingbot/hummingbot/blob/master/scripts/1overN_portfolio.py)
+* **Author**: [rolandkofler](https://github.com/rolandkofler)
+* **Release Added**: [1.16.0](/release-notes/1.16.0)
+* **Description**: This strategy aims to create a 1/N cryptocurrency portfolio, providing perfect diversification without parametrization and giving a reasonable baseline performance.
+
 ## Adjusted Mid Price
 
 * **Code**: [adjusted_mid_price](https://github.com/hummingbot/hummingbot/blob/master/scripts/adjusted_mid_price.py)
@@ -146,6 +153,13 @@ start --script [SCRIPT NAME]
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [1.10.0](/release-notes/1.10.0)
 * **Description**:  A simplified version of Hummingbot `cross-exchange market making` strategy, this bot makes a market on the maker pair and hedges any filled trades in the taker pair. If the spread (difference between maker order price and taker hedge price) dips below `min_spread`, the bot refreshes the order
+
+## Spot Perp Arbitrage
+
+* **Code**: [spot_perp_arb](https://github.com/hummingbot/hummingbot/blob/master/scripts/spot_perp_arb.py)
+* **Author**: [riven314](https://github.com/riven314)
+* **Release Added**: [1.16.0](/release-notes/1.16.0)
+* **Description**: This script improves upon and addresses problems with the current `spot perp arbitrage` strategy. It is designed to simultaneously initiate a long position in the spot market and a short position in the perpetual market when the opening signal is triggered. These positions are then closed upon receiving the closing signal. The profit is generated from the corrective motion between the spot price and the perpetual price.
 
 ## Triangular Arbitrage
 
