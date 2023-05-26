@@ -39,11 +39,11 @@ Here are past bounties and grants for new connectors that the Hummingbot communi
 | Proposal          | Connector | Type   | Bounty Amount | Status |
 |-------------------|--------------------|--------|---------------|--------|
 | [HIP-23](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Ripple         | Chain, DEX         |    1,500,000 HBOT    |  Active     |
-| [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | Cosmos             | Chain       | 1,000,000 HBOT  |  Paid      |
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Gate Perpetual     | PERP CEX         | 750,000 HBOT    |  Paid       |
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Kucoin Perpetual   | PERP CEX         | 750,000 HBOT    |  Paid       |
-| [HIP-25](https://snapshot.org/#/hbot-ip.eth/proposal/0x9f6a13e17917c688bac237fb311d652a787b46843598ec46050b36ae3780624d)   | dYdX (upgrade) | PERP DEX | 250,000 HBOT    |  Paid       |
-| [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | LBank              | SPOT CEX         | 200,000 HBOT    |  Paid       |
+| [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | [Cosmos](/chains/cosmos/)             | Chain       | 1,000,000 HBOT  |  Paid      |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | [Gate.io (perp)](/exchanges/gate-io-perpetual/)     | PERP CEX         | 750,000 HBOT    |  Paid       |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | [Kucoin (perp)](/exchanges/kucoin-perpetual/)  | PERP CEX         | 750,000 HBOT    |  Paid       |
+| [HIP-25](https://snapshot.org/#/hbot-ip.eth/proposal/0x9f6a13e17917c688bac237fb311d652a787b46843598ec46050b36ae3780624d)   | [dYdX](/exchanges/dydx-perpetual/) (upgrade) | PERP DEX | 250,000 HBOT    |  Paid       |
+| [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | [LBank](/exchanges/lbank/)              | SPOT CEX         | 200,000 HBOT    |  Paid       |
 
 
 ### New Strategies
@@ -55,7 +55,7 @@ Here are past bounties and grants related to strategies and strategy improvement
 | Proposal          | Strategy | Bounty Amount | Status |
 |-------------------|--------------------|--------|---------------|
 | [HIP-6](https://snapshot.org/#/hbot-ip.eth/proposal/0xaf21d826282fcc0a4d77ad0fb775c37b7a5935af1ce106686065b4336de2f83f)   | Fixed Grid   |    400,000 HBOT    |  Paid     |
-| [HIP-19](https://snapshot.org/#/hbot-ip.eth/proposal/0xfd073ba4c7b4297ba202f59ece151f0f646cf11cd2b96946a7b5e89905490354)   | Hedge   |    400,000 HBOT    |  Paid     |
+| [HIP-19](https://snapshot.org/#/hbot-ip.eth/proposal/0xfd073ba4c7b4297ba202f59ece151f0f646cf11cd2b96946a7b5e89905490354)   | [Hedge](/strategies/hedge/)   |    400,000 HBOT    |  Paid     |
 
 
 ## Service Fee
