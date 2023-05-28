@@ -4,8 +4,8 @@
 
 ## 📁 Connector Info
 
-* Folder: [/gateway/src/chains/algorand](https://github.com/hummingbot/gateway/tree/main/src/chains/algorand)
-* Configs: [/gateway/src/templates/algorand.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/algorand.yml)
+* Folder: [/gateway/src/chains/algorand](https://github.com/hummingbot/gateway/tree/development/src/chains/algorand)
+* Configs: [/gateway/src/templates/algorand.yml](https://github.com/hummingbot/gateway/tree/development/src/templates/algorand.yml)
 * Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## ℹ️ Chain Info
@@ -17,6 +17,11 @@
 
 ## 🕸️ Supported Networks
 
-| Network | Genesis ID | Type |
-|---------|---------|------|
-| `mainnet` | mainnet-v1.0 | mainnet |
+| Network | Type    |
+|---------|---------|
+| `mainnet` | mainnet |
+| `testnet` | testnet |
+
+## 🚰 Faucets
+
+* https://testnet.algoexplorer.io/dispenser

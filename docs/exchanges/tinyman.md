@@ -2,7 +2,10 @@
 
 ## 📁 Connector Info
 
-* Type: AMM DEX
+
+* Type: SPOT AMM DEX
+* Folder: [/gateway/src/connectors/tinyman](https://github.com/hummingbot/gateway/tree/development/src/connectors/tinyman)
+* Configs: [/gateway/src/templates/tinyman.yml](https://github.com/hummingbot/gateway/tree/development/src/templates/tinyman.yml)
 
 ## 🏆 Exchange Tier
 
@@ -19,15 +22,15 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 ## 🕸️ Supported Chains and Networks
 
-* `algorand` : `mainnet`
+* [Algorand](/chains/algorand) : `mainnet`, `testnet`
 
 ## 🔑 Connection
 
 Run `gateway connect tinyman` in order to connect your wallet:
 
 ```
-Which chain do you want zigzag to connect to? (algorand) >>> algorand
-Which network do you want zigzag to connect to? (mainnet, testnet) >>> mainnet
+Which chain do you want tinyman to connect to? (algorand) >>> algorand
+Which network do you want tinyman to connect to? (mainnet, testnet) >>> mainnet
 Enter your algorand-mainnet private key >>>>
 ```
 
