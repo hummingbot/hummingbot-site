@@ -6,6 +6,7 @@ Currently, Gateway supports the following Layer 1 blockchains:
 
 - [Ethereum](/chains/ethereum): Includes Layer 2 blockchains like Arbitrum and Optimism
 - [Avalanche](/chains/avalanche)
+- [Algorand](/chains/algorand)
 - [BNB Chain](/chains/bnb-chain)
 - [Cosmos](/chains/cosmos)
 - [Cronos](/chains/cronos)
