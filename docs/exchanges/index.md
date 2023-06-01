@@ -20,7 +20,7 @@ Exchange connectors may have a maintainer who is responsible for ongoing mainten
 * Keeping the connector updated for changes to the exchange API and Hummingbot connector standard for that exchange type
 * Keeping the connector's documentation page updated
 
-Hummingbot Foundation is the maintainer for the Gold and Silver exchange connectors, while community members may maintain other connectors. For instance, our sister company [CoinAlpha](https://coinalpha.com) maintains a number of Bronze connectors in the codebase. Individual developers and exchanges may register with us to be assigned the maintainer role for other Bronze connectors.
+Hummingbot Foundation is the maintainer for the Gold and Silver exchange connectors, while community members may maintain other connectors. For instance, [CoinAlpha](https://coinalpha.com) maintains a number of Bronze connectors in the codebase. Individual developers and exchanges may register with us to be assigned the maintainer role for other Bronze connectors.
 
 ## Connector Tiers
 
