@@ -80,7 +80,7 @@ Hummingbot features an active, friendly community of users globally! Here are so
 - To report a bug or request a new feature, post a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
 - Join the official [Discord](https://discord.gg/hummingbot) and post your question on **#support**
 
-For users using Hummingbot to earn rewards on [Miner](https://miner.hummingbot.io), the decentralized market making platform operated by our sister company CoinAlpha, you can also access Miner support via the following methods:
+For users using Hummingbot to earn rewards on [Miner](https://miner.hummingbot.io), the decentralized market making platform operated by CoinAlpha, you can also access Miner support via the following methods:
 
 - Discord: CoinAlpha maintains 24/7 dedicated technical support for users on the **#miner-support** channel within the Hummingbot Discord server. They help users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues. 
 - Email: Send CoinAlpha support a message at [support@hummingbot.io](mailto:support@hummingbot.io)
