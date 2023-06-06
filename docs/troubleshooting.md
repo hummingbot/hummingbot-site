@@ -1,26 +1,5 @@
 ## Installation
 
-### System has not been booted with systemd as init system (PID 1). Can't operate
-
-![systemd error](/docker-io.jpg)
-
-If you are trying to install Docker on a WSL system without Docker Desktop you'll get the above error after running the install script.
-To create a new Hummingbot instance open a WSL (Ubuntu) terminal and run `sudo dockerd` and leave the window running. Open a second terminal and run the following:
-
-```
-# 1) Download Hummingbot install, start, and update script
-wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/create.sh
-wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/start.sh
-wget https://raw.githubusercontent.com/hummingbot/hummingbot/master/installation/docker-commands/update.sh
-
-# 2) Enable script permissions
-chmod a+x *.sh
-
-# 3) Create a hummingbot instance
-./create.sh
-
-```
-
 ### Source: ModuleNotFoundError
 
 ```
@@ -199,6 +178,14 @@ Failed connections:                                                             
 This error occurs when Kraken account currently has no funds on the exchange. Fund your account to fix the error. For more info visit this [here](https://support.kraken.com/hc/en-us/articles/360001491786-API-Error-Codes).
 
 ## Gateway
+
+### async_utils - Unhandled error in background task: `chain_type`
+
+![Gateway error](/gateway-03.png)
+
+![Gateway error](/gateway-02.png)
+
+If you get the above errors after updating the Hummingbot client to v1.16.0, make sure to update the Gateway to the latest version as well. After updating, run the [gateway-setup](https://github.com/hummingbot/gateway/blob/main/gateway-setup.sh) script to regenerate your configs then re-run the `gateway connect ...` command in Hummingbot (ex. gateway connect uniswap)
 
 ### TypeError: Password was given but private key is not encrypted
 

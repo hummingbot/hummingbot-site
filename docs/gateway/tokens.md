@@ -85,8 +85,10 @@ Using an Ethereum testnet faucet is a simple process that involves the following
 
 ## Wrapped tokens
 
-DEXs like Uniswap and TraderJoe automatically wrap native tokens that are not ERC-20, so that users can trade native tokens such as `ETH` and `AVAX` through the interface. Behind the scenes, these exchanges automatically wrap these tokens into ERC-20 compliant `WETH` and `WAVAX` tokens.
+Decentralized exchanges (DEXs) such as Uniswap, Uniswap-Polygon, and TraderJoe have a built-in functionality that automatically converts, or "wraps", native tokens when used for swap trading. This wrapping process is hidden from the user and happens behind the scenes.
 
-Gateway does not auto-wrap tokens by default,
+Gateway does not auto-wrap tokens by default so users need to wrap native tokens before using them with Gateway. For Uniswap, `ETH` should be wrapped to `WETH` and for Uniswap-Polygon, `MATIC` should be wrapped for `WMATIC`. Similarly, for TraderJoe which is an Avalanche blockchain DEX, its native `AVAX` token should be wrapped to `WAVAX`. It's crucial for users to familiarize themselves with the specific token wrapping requirements of the DEX they are using.
 
-so users need to wrap native tokens into ERC-20 tokens before using them with Gateway. As of the `v1.4.0` release, there is no error message that lets you know if the token can't be used when it's not wrapped and instead will just display ``"Markets are not ready"`` but we are working on adding more informative messages within the next few releases.
+As of version `v1.4.0`, Gateway does not provide an error message if a user attempts to use a token that hasn't been wrapped. Instead, it will simply display the message "Markets are not ready." However, we are actively working on integrating more informative error messages in future releases to improve user experience.
+
+For reference check the Uniswap Docs [here](https://docs.uniswap.org/contracts/v3/reference/deployments)
