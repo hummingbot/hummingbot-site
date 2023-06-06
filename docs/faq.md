@@ -1,11 +1,12 @@
 
 See below for answers to frequently asked questions about:
 
-* [Hummingbot software](#hummingbot-software)
+* [Hummingbot client](#hummingbot-client)
+* [Gateway middleware](#gateway-middleware)
 * [Hummingbot Foundation](#hummingbot-foundation)
 * [HBOT token](#hbot-token)
 
-## Hummingbot software
+## Hummingbot client
 
 ### What type of software is Hummingbot?
 
@@ -13,7 +14,7 @@ Hummingbot is software that helps you build and run crypto trading bots, freely 
 
 ### Is Hummingbot a protocol or an exchange?
 
-No, Hummingbot is open source client software that you install on a local machine that interacts with exchanges and protocols.
+No, Hummingbot is open source **client** software that you install on a local machine that interacts with exchanges and protocols.
 
 With many connectors and strategies being added all the time, Hummingbot is a constantly evolving publicly available codebase with frequent external contributors seeking to merge their changes into the `master` branch, which is released once a month and widely used by tens of thousands of individual and professional bot-runners globally.
 
@@ -63,9 +64,87 @@ Transactions from Hummingbot are normal transactions conducted on exchanges; the
 
 There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](/exchanges/).
 
-### How do I use Hummingbot on a AMM decentralized exchange like Uniswap?
+## Gateway middleware
 
-On an Automatic Market Maker (AMM) decentralized exchange, users deposit tokens into a pool to provide liquidity and earn LP tokens. Since AMM pools depend on arbitrage to keep prices in line with other venues, Hummingbot's [`amm-arb`](/strategies/amm-arbitrage) strategy allows users to run an arbitrage bot that may earn profits from exploiting price differences between the AMM and other exchanges.
+!!! warning "💡 DEX / Blockchain Experience Needed"
+    Since Hummingbot Gateway is still nascent and DEX trading bots entails more specialized blockchain engineering than running CEX bots, we recommend Gateway for users with blockchain engineering or DEX trading experience.
+
+### What is Gateway?
+
+[Hummingbot Gateway](/gateway) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
+
+* Standardizes DEX API endpoints
+* Manages interactions with node providers, and
+* Utilizes Javascript-based DEX SDKs
+
+Similar to Hummingbot client, Gateway is open source under the Apache 2.0 license. Community developers can contribute DEX and blockchain connectors to the Gateway codebase via [Pull Request Proposals](/governance/proposals/#pull-request-proposals).
+
+### How do I use Gateway with Hummingbot?
+
+If you want to understand how Gateway works, install the standalone Gateway repository: <https://github.com/hummingbot/gateway>
+
+If you just want to get Gateway up and running alongside Hummingbot, following the [Hummingbot + Gateway Docker Compose](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) process is the easiest method.
+
+Afterwards, follow the instructions at [Using Gateway with Hummingbot](/gateway/setup/).
+
+### What kinds of DEX bots can you building with Gateway?
+
+Currently, Hummingbot Gateway is ideal for bots that:
+
+* Find and execute arbitrage opportunities on AMM DEXs on multiple blockchains or between AMM DEXs and CEXs (**cross-domain**)
+* Automate liquidity provision behavior on AMM-RANGE DEXs such as Uniswap-V3
+
+In the future, as Gateway should support additional use cases, but we are currently focused on enabling these only.
+
+### Can Gateway help me build MEV bots?
+
+Bots that compete with others for transactions on the same blockchain (**single-domain**) need to compete to get transactions confirmed and thus need to play at the [MEV](https://www.blocknative.com/blog/mev-and-creating-a-basic-arbitrage-bot-on-ethereum-mainnet) level.
+
+However, to improve latency, you may explore using [Flashbots Protect](https://docs.flashbots.net/flashbots-protect/rpc/quick-start) as the RPC endpoint, i.e. use it as `nodeUrl`.
+
+### What background information should I learn before building DEX bots with Gateway?
+
+Here are some helpful articles and videos:
+
+* [Getting started with Metamask](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask): Metamask is the current industry standard for wallets, which you use will interact with blockchains
+* [Intro to Ethereum](https://ethereum.org/en/developers/docs/intro-to-ethereum/): Great guide from OpenZeppelin that explains how Ethereum works today (aimed at developers)
+* [What Is Uniswap and How Does It Work?](https://academy.binance.com/en/articles/what-is-uniswap-and-how-does-it-work): Binance Academy article that explain Uniswap and AMMs in general.
+* [Comparing liquidity mining options in DeFi vs. Hummingbot](https://blog.hummingbot.org/2020-08-liquidity-mining-hummingbot-vs-defi/): This CoinAlpha blog post explains how liquidity mining is similar in DeFi and CeFi
+* [Uniswap V3 Explained](https://www.youtube.com/watch?v=ClWR1570UQw): Other DEXs like TraderJoe, SushiSwap, and PancakeSwap are starting to emulate Uniswap V3. Watch this video to understand how Uniswap V3 works.
+
+### How do node providers and mempool services work?
+
+Speed and latency in DEX trading is heavily dependent on your connection to the blockchain network. Your options are to:
+
+**1 - Use a node provider**
+
+This is the most common route. Gateway ships with [Ankr] as the default node provider, since theydon’t require API keys. See [default settings](https://github.com/hummingbot/gateway/tree/main/src/templates) for each chain.
+
+Providers include:
+
+* [Ankr](https://www.ankr.com/) **(current default)**
+* [Alchemy](https://www.alchemy.com/)
+* [Blockdaemon](https://www.blockdaemon.com/)
+* [Infura](https://www.infura.io/)
+* [Pocket Network](https://www.pokt.network/)
+
+**2 - Use a mempool service**
+
+For advanced or professional users, mempool services allow you to “skip the line” and send your transaction bundle to a miner for inclusion in a block.
+
+Providers include:
+
+* [Flashbots](https://docs.flashbots.net/flashbots-protect/rpc/quick-start)
+* [bloxRoute](https://bloxroute.com/)
+* [BlockNative](https://www.blocknative.com/)
+
+**3 - Run your own node**
+
+While this is infeasible on Solana or BNB Chain, this is possible on Ethereum and EVM-based chains. See [Run a Node](https://ethereum.org/en/run-a-node/) for more details.
+
+### How do I use Hummingbot on a AMM DEX like Uniswap?
+
+Check out the [`amm-arb`](/strategies/amm-arbitrage) or [`uniswap-v3-lp`](/strategies/uniswap-v3-lp) strategies.
 
 ## Hummingbot Foundation
 
@@ -179,11 +258,20 @@ Unless users turn it off, instances of the Hummingbot software send the followin
 
 All data collected will be used exclusively by Hummingbot Foundation for reporting purposes only, and we will never sell this data to any third party.
 
+
 ### Why do you collect this data?
 
-To sustain development of the Hummingbot client, Hummingbot Foundation enters into fee share partnerships with exchanges. These partners need actionable data to convince their stakeholders and community members that a Hummingbot partnership is worthwhile. Their most common requests include total volume traded and number of users.
+This data feeds the public [Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) dashboard, a real-time dashboard of the aggregated, anonymized trade volumes that Hummingbot clients.
 
-After a partnership has been established, we rely upon the exchange to remit fees honestly back to us. In the past, we have entered into agreements that were not honored by the exchange, which diverts scarce resources away from the Hummingbot community. By openly publishing both reported volumes as well as fees shared for each exchange (see [Monthly Reports](./index.md#monthly-reports)), we hope to use the power of transparency to incentivize exchanges to honor their agreements.
+<a href="https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52" target="_blank" class="md-button md-button--primary">:fontawesome-solid-chart-line: Hummingbot Reported Volumes</a>
+
+You can use the **exchange** and **version** toggles to filter the data. In addition, you can also change the timespan, as well as activate dark mode!
+
+[![](./toggles.png)](./toggles.png)
+
+### How does this dashboard help Hummingbot users?
+
+To sustain development of the Hummingbot client, Hummingbot Foundation enters into fee share partnerships with exchanges. These partners need actionable data to convince their stakeholders and community members that a Hummingbot partnership is worthwhile. Their most common requests include total volume traded and number of users, so this dashboard provides this data.
 
 ### How do I configure or turn off this feature?
 
@@ -199,4 +287,4 @@ Changing the parameter above to `anonymized_metrics_interval_min: 0.0` disables 
 
 ### How can I be sure that this is the only data Hummingbot collects?
 
-The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) or [official forum](https://forum.hummingbot.org/) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.
+The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.
