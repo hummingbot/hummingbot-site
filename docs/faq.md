@@ -197,7 +197,7 @@ Post a message with your CV to one of the Foundation staff on [Discord](https://
 
 ### What is the HBOT token?
 
-The Hummingbot Governance Token (HBOT) is the medium of governance for the Hummingbot open source ecosystem. It is a standard Ethereum ERC-20 token with a fixed total supply of 1,000,000 HBOT tokens.
+The Hummingbot Governance Token (HBOT) is the medium of governance for the Hummingbot open source ecosystem. It is a standard Ethereum ERC-20 token with a fixed total supply of 1,000,000,000 HBOT tokens.
 
 ### What can I do with the HBOT token?
 
