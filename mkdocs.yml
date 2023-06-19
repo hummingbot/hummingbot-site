@@ -244,6 +244,7 @@ nav:
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
         - Phemex (perp): exchanges/phemex-perpetual.md
+        - Polkadex: exchanges/polkadex.md
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
         - Tinyman: exchanges/tinyman.md
@@ -333,6 +334,7 @@ nav:
     - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.17.0: release-notes/1.17.0.md
     - 1.16.0: release-notes/1.16.0.md
     - 1.15.0: release-notes/1.15.0.md
     - 1.14.0: release-notes/1.14.0.md
