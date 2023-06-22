@@ -1,5 +1,8 @@
 # Hummingbot Gateway
 
+!!! warning "💡 DEX / Blockchain Experience Needed"
+    Since Hummingbot Gateway is still nascent and DEX trading bots entails more specialized blockchain engineering than running CEX bots, we recommend Gateway for users with blockchain engineering or DEX trading experience.
+
 ## What is Gateway?
 
 Hummingbot Gateway, sometimes called Gateway-V2, is standalone API middleware that helps Hummingbot and other trading clients to connect to decentralized exchanges (DEX) on various blockchain networks. 

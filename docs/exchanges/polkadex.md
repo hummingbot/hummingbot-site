@@ -4,7 +4,7 @@
 
 * Type: SPOT CLOB DEX
 * Folder: [/hummingbot/connector/exchange/polkadex](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/polkadex)
-* Maintainer:
+* Maintainer: [CoinAlpha](https://coinalpha.com)
 
 ## 🏆 Exchange Tier
 

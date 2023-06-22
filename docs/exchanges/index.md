@@ -99,7 +99,7 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Perpetual Protocol](./perp) | PERP AMM DEX |
 | [Phemex Perpetual](./phemex-perpetual) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
 | [ProBit](./probit) | SPOT CLOB CEX |
-| [Polkadex](./polkadex) | SPOT AMM DEX |
+| [Polkadex](./polkadex) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com)
 | [Ref Finance](./ref) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [Sushiswap](./sushiswap) | SPOT AMM DEX |
 | [Tinyman](./tinyman) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
