@@ -170,6 +170,7 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
+        - Data Collector: global-configs/data-collector.md
       - PMM Configs:
         - PMM Configs: strategy-configs/index.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md
