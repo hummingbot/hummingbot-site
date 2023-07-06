@@ -92,3 +92,7 @@ On this scenario we set a config with `order_levels 2` this way we can also see 
 On the screenshot below, a buy order has been successfully filled and after order refresh time the client created orders again but observed that now it did not created another order level since it is beyond the set balance limit of 20 USDT.
 
 ![Alt text](../assets/img/balance-6.png)
+
+## Displaying token symbols in `balance`
+
+You can use the `gateway connector-tokens` command to include tokens in the `balance` command. See [Working with Tokens](/gateway/tokens/#displaying-tokens-in-balance) for more information.
