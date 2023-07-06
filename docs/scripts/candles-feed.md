@@ -8,7 +8,7 @@ Watch a recent "How To" community call that explains how to customize a market m
 
 ## Description
 
-The [`CandlesBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/candles_feed/candles_base.py) class is a subclass of [`NetworkBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/network_base.py) and serves as a base class for fetching and storing candle data from a cryptocurrency exchange. 
+The [`CandlesBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/candles_feed/candles_base.py) class is a subclass of [`NetworkBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/network_base.py) and serves as a base class for fetching and storing candle data from a cryptocurrency exchange.
 
 This class provides a common interface and uses Rest and WS Assistants for all IO operations, along with a double-ended queue to store candles. Additionally, it implements the Throttler module for API rate limiting, although it's not necessary since real-time data should primarily be updated via WebSockets.
 
@@ -168,8 +168,8 @@ class InitializingCandlesExample(ScriptStrategyBase):
         self.candles_3.stop()
 ```
 
-This code example shows how to initialize multiple candles for different trading pairs, intervals, and connectors. The `CandlesFactory` class is used again to create multiple instances of candles, which can be started and stopped using the `start` and `stop` methods. By storing the candles in a dictionary, it's possible to create strategies combining indicators of different sources. The [advanced_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/advanced_directional_strategy_example.py) script in the codebase demonstrates how to do this.
+This code example shows how to initialize multiple candles for different trading pairs, intervals, and connectors. The `CandlesFactory` class is used again to create multiple instances of candles, which can be started and stopped using the `start` and `stop` methods. By storing the candles in a dictionary, it's possible to create strategies combining indicators of different sources. The [directional_strategy_bb_rsi_multi_timeframe](https://github.com/hummingbot/hummingbot/blob/master/scripts/directional_strategy_bb_rsi_multi_timeframe.py) script in the codebase demonstrates how to do this.
 
 ### Downloading historical data
 
-You can also use Hummingbot to download historical candles. To do so, check out the `download_candles` (link TBC) example that shows how to collect all the candles selected and store them in a CSV inside the data folder.
+You can also use Hummingbot to download historical candles. To do so, check out the [download_candles](https://github.com/hummingbot/hummingbot/blob/master/scripts/download_candles.py) example that shows how to collect all the candles selected and store them in a CSV inside the data folder.
