@@ -44,8 +44,10 @@ Log in or create a new account at https://www.gate.io/.
 
 2. Open the API Management page
 Hover over the profile icon on the top right corner and go to the [API Management](https://www.gate.io/myaccount/api_key_manage) page:
-
+   
 3. Click on the Create API Key button
+
+    ![API Trading](gate.io-api1.PNG)
 
 4. Name your API keys
 
@@ -55,21 +57,27 @@ If you don't want to whitelist your IP then select `Later` instead but the API k
 
 6. Choose API v4 Key and a Classic Account type
 
+    ![API Trading](gate.io-api4.PNG)
+
 7. Select Permissions
-Please select the following permissions:
+Please select the following permissions and then click on the Submit button.
 
 - [Spot/Margin Trade] -> [Read And Write] - it allows trading Spot and Margin
 - [Perpetual Contract] -> [Read And Write] - this will allow trading Futures. 
 - [Wallet ] -> [Read Only] -> this is necessary to display the balances correctly.
 
-And click on the Submit button.
 
-8. Carefully read the Risk Reminder, tick both paragraphs, and click I Accept
+8. Carefully read the **Risk Reminder**, tick both paragraphs, and click **I Accept**
 
-9. Enter Fund Password, choose 2FA Authentication method and enter its code
+    ![API Trading](gate.io-api2.PNG)
 
-10. Now, you have created API keys for your Gate.io exchange!
+9. Enter **Fund Password**, choose **2FA Authentication** method and enter its code
 
+    ![API Trading](gate.io-api3.PNG)
+
+10. Copy your API keys and store them somewhere safe. 
+
+11. Now, you have created API keys for your Gate.io exchange!
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
@@ -101,6 +109,8 @@ This connector supports the following `OrderType` constants:
 - `LIMIT`
 - `LIMIT_MAKER`
 - `MARKET`
+
+The following is an example script that buys & sells using `market orders`
 
 ```python
 from decimal import Decimal
@@ -156,6 +166,8 @@ class TestMarketOrders(ScriptStrategyBase):
 - `1d`
 - `7d`
 - `30d`
+
+To use Gate.io spot candles in scripts, users just need to replace the connector variable with `gate_io`
 
 ```python
 )
@@ -238,6 +250,8 @@ Candles Feed allows you to use custom OHLCV candles and indicators in your scrip
 - `1d`
 - `7d`
 - `30d`
+
+To use Gate.io Perpetual candles in scripts, users just need to replace the connector variable with `gate_io_perpetual`
 
 ```python
     candles = CandlesFactory.get_candle(connector="gate_io_perpetual",

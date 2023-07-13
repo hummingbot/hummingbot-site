@@ -39,31 +39,32 @@ Binance is supported on [Hummingbot Miner](https://miner.hummingbot.io/), a plat
 
 ## How to create API keys
 
-1. Log in to your Binance account and click [Profile] - [[API Management](https://www.binance.com/en/my/settings/api-management)].
+- Log in to your Binance account and click **Profile** - **[API Management](https://www.binance.com/en/my/settings/api-management)**
 
    ![Step 1](binance-api1.png)
 
-2. Click [Create API]. Please note that before creating an API Key, you need to:
+- Click **Create API**. Please note that before creating an API Key, you need to:
+
    - Enable [two-factor authentication (2FA)](https://www.binance.com/en/support/faq/account-functions?c=1&navId=1#11) on your account.
    - Make a deposit of any amount to activate your account.
 
    ![Step 2](binance-api2.png)
 
-3. Select **System generated** as your preferred API Key type. For more details on self-generated API Keys, please refer to [How to Generate an RSA Key Pair to Send API Requests on Binance](https://www.binance.com/en/support/faq/2b79728f331e43079b27440d9d15c5db).
+- Select **System generated** as your preferred API Key type. For more details on self-generated API Keys, please refer to [How to Generate an RSA Key Pair to Send API Requests on Binance](https://www.binance.com/en/support/faq/2b79728f331e43079b27440d9d15c5db).
 
    ![Step 3](binance-api3.png)
 
-4. Enter a label/name for your API Key.
+- Enter a label/name for your API Key.
 
    ![Step 4](binance-api4.png)
 
-5. Verify your request with 2FA devices.
+- Verify your request with 2FA devices.
 
    ![Step 5](binance-api5.png)
 
    [![Step 6](binance-api6.png)](binance-api6.png)
 
-6. Your API Key is now created. Do not disclose your API Key, Secret Key (HMAC), or Private Key (RSA) to anyone to avoid asset losses. If you forget your Secret Key, you'll need to delete the API and create a new one.
+- Your API Key is now created. Do not disclose your API Key, Secret Key (HMAC), or Private Key (RSA) to anyone to avoid asset losses. If you forget your Secret Key, you'll need to delete the API and create a new one.
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
@@ -96,8 +97,42 @@ This connector supports the following `OrderType` constants:
 - `LIMIT_MAKER`
 - `MARKET`
 
-```
-CODE EXAMPLE SHOWING USAGE IN A SCRIPT
+The following is an example script that buys & sells using `market orders`
+
+```python
+from decimal import Decimal
+
+from hummingbot.client.hummingbot_application import HummingbotApplication
+from hummingbot.core.data_type.common import OrderType
+from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
+
+
+class TestMarketOrders(ScriptStrategyBase):
+    
+    trading_pair = "ETH-USDT"
+    order_amount = Decimal("0.004")
+    markets = {"binance": {trading_pair}}
+    buy_order_id = None
+    sell_order_id = None
+
+    def on_tick(self):
+        if not self.buy_order_id:
+            self.buy_order_id = self.connectors["binance"].buy(
+                trading_pair=self.trading_pair,
+                amount=self.order_amount,
+                order_type=OrderType.MARKET)
+
+    def did_complete_buy_order(self, order_completed_event):
+        if order_completed_event.order_id == self.buy_order_id:
+            self.sell_order_id = self.connectors["binance"].sell(
+                trading_pair=self.trading_pair,
+                amount=self.order_amount,
+                order_type=OrderType.MARKET)
+
+    def did_complete_sell_order(self, order_completed_event):
+        if order_completed_event.order_id == self.sell_order_id:
+            self.logger().info("TestMarketOrders completed.")
+            HummingbotApplication.main_application().stop()
 ```
 
 ### Candles Feed
@@ -119,7 +154,7 @@ CODE EXAMPLE SHOWING USAGE IN A SCRIPT
 - `7d`
 - `30d`
 
-To use Binance spot candles in scripts, users just need to replace the connector variable with "binance"
+To use Binance spot candles in scripts, users just need to replace the connector variable with `binance`
 
 ```python
 )
@@ -202,7 +237,7 @@ Candles Feed allows you to use custom OHLCV candles and indicators in your scrip
 - `7d`
 - `30d`
 
-To use Binance Perpetual candles in scripts, users just need to replace the connector variable with "binance_perpetual"
+To use Binance Perpetual candles in scripts, users just need to replace the connector variable with `binance_perpetual`
 
 ```python
     candles = CandlesFactory.get_candle(connector="binance_perpetual",
