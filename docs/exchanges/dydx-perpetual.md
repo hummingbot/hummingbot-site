@@ -1,36 +1,54 @@
-# `dydx_perpetual`
+# dYdX
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://trade.dydx.exchange/r/2P8N)!** 🙏🙏🙏
 
-* Type: PERP CLOB DEX
-* Folder: [/hummingbot/connector/derivative/dydx_perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
-* Maintainer: Hummingbot Foundation
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://dydx.exchange/>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/dydx/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/dydx>
+- API docs: <https://docs.dydx.exchange/>
+- API version: 3
+- Fees: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
+- Supported countries: Global with some exceptions (Check [here](https://dydx.exchange/terms) for more details)
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 
-Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
+HBOT holders voted this exchange into the Silver tier for the current [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
 
-## ℹ️ Exchange Info
+**Maintainer:** Hummingbot Foundation
 
-* Website: https://dydx.exchange/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/dydx/
-* CoinGecko: https://www.coingecko.com/en/exchanges/dydx-margin
-* API docs: <https://docs.dydx.exchange>
-* Fees: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🔑 Connection
+**Current and Upcoming**
 
-Run `connect dydx_perpetual` in Hummingbot in order to add your API keys.
+dYdX is supported on [Hummingbot Miner](https://miner.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
 
-You will need the following to connect Hummingbot to `dydx_perpetual`:
+**Past**
 
-* API key
-* API secret key
-* Passphrase
-* Account number: set this value to `0`
-* Stark private key
+* [dYdX Bounty Hunt](https://blog.hummingbot.org/2021-07-dydx-perpetual-strategy-bounty-hunt/)
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T1rsNcFD5Cw" title="HOW TO BECOME A CRYPTO MARKET MAKER IN LESS THAN 30 MINUTES - on dYdX using Hummingbot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zkoxtnZ0KvE" title="dYdX + Hummingbot Development Bounty AMA w/ Corey Miller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E_M_SUAP3Zo" title="Hedge in Market Making using dYdX Perpetuals | Trader Strategies |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## 🔀 Perp Connector
+*Connector to perpetual futures markets*
+
+- Connection type: WebSocket
+- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
+
+
+## How to create API keys
 
 API credentials and a stark private key can be obtained programmatically using their documentation:
 
@@ -44,8 +62,33 @@ Alternatively, you can follow these steps to get the required credentials:
 3. Select **STARK_KEY_PAIRS** and click the drop-down next to your wallet address to get the stark private key
 4. Select **API_KEY_PAIRS** and click the drop-down next to your wallet address to get the API key, secret key, and passphrase
 
-**Depositing assets:**
 
-Follow the instructions below to deposit assets onto dYdX's Layer 2 side-chain:
+### How to Connect
 
-* [How to deposit USDC or any ERC-20 token into your L2 Perpetual account](https://help.dydx.exchange/en/articles/5108497-how-to-deposit-usdc-or-any-erc-20-token-into-your-l2-perpetual-account?utm_content=article_5108497)
+Run `connect dydx_perpetual` in Hummingbot in order to add your API keys.
+
+You will need the following to connect Hummingbot to `dydx_perpetual`:
+
+* API key
+* API secret key
+* Passphrase
+* Account number: set this value to `0`
+* Stark private key
+
+### Order Types
+
+### Candles Feed
+
+### Paper Trading
+
+
+### Position Modes
+
+This connector supports the following position modes:
+
+- One-way
+- Hedge
+
+### Candles Feed
+
+### Testnets

@@ -1,44 +1,116 @@
-# `uniswap`
+# Uniswap
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://uniswap.org/)!** 🙏🙏🙏
 
-* Type: SPOT AMM-RANGE DEX
-* Folder: [/gateway/src/connectors/uniswap](https://github.com/hummingbot/gateway/blob/main/src/connectors/uniswap)
-* Configs: [/gateway/src/templates/uniswap.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml)
-* Maintainer: Hummingbot Foundation
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://uniswap.org>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/uniswap/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/uniswap>
+- API docs: <https://uniswap.org/docs/v2/API/overview/>
+- API version: 2
+- Fees: <https://docs.uniswap.org/concepts/protocol/fees>
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
 
-The Gold exchange is the top CEX or DEX selected by HBOT voters in the latest Poll. Their connectors are maintained by Hummingbot Foundation and are continually improved, serving as the "gold standard" template for all other connectors of that type.
+HBOT holders voted this exchange into the Gold tier for the current [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
 
-## ℹ️ Exchange Info
+**Maintainer:** Hummingbot Foundation
 
-* Website: https://uniswap.org/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/uniswap-v2/
-* CoinGecko: https://www.coingecko.com/en/exchanges/uniswap_v2
-* API docs: https://docs.uniswap.org/
-* SDK: https://docs.uniswap.org/sdk/v3/overview
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🕸️ Supported Chains and Networks
+**Current and Upcoming**
 
-* [Ethereum](/chains/ethereum): `mainnet`, `goerli`, `arbitrum_one`, `optimism`
-* [Polygon](/chains/polygon): `mainnet`, `mumbai`
 
-## 🔑 Connection
+
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+* https://blog.hummingbot.org/2021-05-uniswap-v3-hummingbot-strategy/
+
+* https://blog.hummingbot.org/2020-12-amm-arbitrage-uniswap-balancer/
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D05kKp-f2vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+- Connection type: WebSocket
+- [Connector folder](https://github.com/hummingbot/gateway/blob/main/src/connectors/uniswap)
+
+### How to Connect
 
 The `uniswap` connector fetches prices and creates swaps. Run `gateway connect uniswap` in order to connect your wallet:
 
 ```
-Which chain do you want uniswap to connect to? (ethereum, polygon) >>>
+Which chain do you want uniswap to connect to? (ethereum, polygon) >>> 
 Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>
 Enter your ethereum-mainnet private key >>>>
 ```
 
-If connection is successful:
+If connection is successful (ethereum-mainnet):
 ```
 The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
 ```
 
-**Liquidity provision:** The  `uniswapLP` connector interfaces with liquidity provision-related functions. Run `gateway connect uniswapLP` in order to connect your wallet to perform LP functions.
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+
+[Ethereum:](/chains/ethereum) goerli
+
+Run `gateway connect uniswap` in order to connect your wallet to the goerli testnet:
+
+`Which chain do you want uniswap to connect to? (ethereum, polygon) >>>` ethereum
+`Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>> ` goerli
+`Enter your ethereum-mainnet private key >>>>` XXXXXX
+
+If connection is successful (ethereum-goerli):
+
+```
+The uniswap connector now uses wallet [pubKey] on ethereum-goerli
+```
+
+[Polygon:](/chains/polygon) mumbai
+
+Run `gateway connect uniswap` in order to connect your wallet to the goerli testnet:
+
+`Which chain do you want uniswap to connect to? (ethereum, polygon) >>>` polygon
+`Which network do you want uniswap to connect to? (mainnet, mumbai) >>> ` mumbai
+`Enter your ethereum-mainnet private key >>>>` XXXXXX
+
+If connection is successful (polygon-mumbai):
+
+```
+The uniswap connector now uses wallet [pubKey] on polygon-mumbai
+```
