@@ -298,6 +298,7 @@ nav:
   - Developers:
       - Developers: developers/index.md
       - Contribution Guidelines: developers/contributions.md
+      - Forking the HB repository: developers/forking.md
       - Debug Console: developers/debug.md
       - Building CEX Connectors:
         - Building CEX Connectors: developers/connectors/index.md
