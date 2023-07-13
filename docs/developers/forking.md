@@ -4,7 +4,7 @@ Forking a repository is a simple process that allows you to propose changes to t
 
 ## About Forks
 
-A fork is a new repository that shares code and visibility settings with the original "upstream" repository. Forks are often used to iterate on ideas or changes before they are proposed back to the upstream repository, such as in open source projects or when a user does not have write access to the upstream repository.
+A fork is a new repository that shares code and visibility settings with the original `upstream` repository. Forks are often used to iterate on ideas or changes before they are proposed back to the upstream repository, such as in open source projects or when a user does not have write access to the upstream repository.
 
 You can use forks to propose changes related to fixing a bug. Rather than logging an issue for a bug you have found, you can:
 
@@ -19,18 +19,18 @@ If you haven't yet, first set up Git and authentication with GitHub.com from Git
 ## Forking the Hummingbot Repository
 
 1. On GitHub.com, navigate to the [Hummingbot repository](https://github.com/hummingbot/hummingbot).
-2. In the top-right corner of the page, click Fork.
+2. In the top-right corner of the page, click **Fork**.
 
    ![Fork button](fork1.png)
 
-3. Under "Owner," select the dropdown menu and click an owner for the forked repository.
+3. Under **Owner**," select the dropdown menu and click an owner for the forked repository.
 
     ![Fork window](fork2.png)
 
-4. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
-5. Optionally, in the "Description" field, type a description of your fork.
-6. Optionally, select Copy the DEFAULT branch only. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. If you do not select this option, all branches will be copied into the new fork.
-7. Click Create fork.
+4. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the **Repository name** field, type a name.
+5. Optionally, in the **Description** field, type a description of your fork.
+6. Optionally, select **Copy the DEFAULT branch only**. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. If you do not select this option, all branches will be copied into the new fork.
+7. Click **Create fork**
 
 Note: If you want to copy additional branches from the upstream repository, you can do so from the Branches page. For more information, see "[Creating and deleting branches within your repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)."
 
@@ -56,7 +56,16 @@ Now, you have a fork of the Hummingbot repository, but you do not have the files
    git clone https://github.com/YOUR-USERNAME/hummingbot
    ```
 
-10. Press Enter. Your local clone will be created.
+8. Press Enter. Your local clone will be created.
+
+   ```
+   $ git clone https://github.com/YOUR-USERNAME/hummingbot
+   > Cloning into `hummingbot`...
+   > remote: Counting objects: 10, done.
+   > remote: Compressing objects: 100% (8/8), done.
+   > remote: Total 10 (delta 1), reused 10 (delta 1)
+   > Unpacking objects: 100% (10/10), done.
+   ```
 
 
 ## Making Changes to the Local Branch
@@ -74,9 +83,9 @@ Now, you have a fork of the Hummingbot repository, but you do not have the files
     git checkout BRANCH-NAME
     ```
 
-4. Make changes to the project using your preferred IDE editor (VSCode / Pycharm etc).
+4. Make changes to the project coe using your preferred IDE editor (**VSCode** / **Pycharm** etc).
 
-5. Stage your changes:
+5. After making changes to the code you'll need to stage your changes:
     
     ```
     git add .
@@ -87,6 +96,8 @@ Now, you have a fork of the Hummingbot repository, but you do not have the files
     ```
     git commit -m "a short description of the change"
 
+    ```
+
 7. Push your changes to your fork:
 
     ```
@@ -96,7 +107,7 @@ Now, you have a fork of the Hummingbot repository, but you do not have the files
 
 ## Opening a Pull Request
 
-1. Navigate to the original [Hummingbot repository](https://github.com/hummingbot/hummingbot) where you created your fork.
+1. Navigate to the Github link where you created your fork.
 2. Above the list of files, click **Compare & pull request** to create a pull request for the associated branch.
 
     ![Compare & pull request](https://docs.github.com/assets/cb-34106/images/help/pull_requests/pull-request-compare-pull-request.png)
