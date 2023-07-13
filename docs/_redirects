@@ -14,3 +14,4 @@
 /installation/deploy    /installation/docker            301
 /installation/multiple-bots    /installation/orchestration     301
 /installation/linux    /installation/     301
+/exchanges/gate_io_perpetual    /exchanges/gate_io      301
