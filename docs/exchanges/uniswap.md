@@ -91,9 +91,11 @@ The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
 
 Run `gateway connect uniswap` in order to connect your wallet to the goerli testnet:
 
-`Which chain do you want uniswap to connect to? (ethereum, polygon) >>>` ethereum
-`Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>> ` goerli
-`Enter your ethereum-mainnet private key >>>>` XXXXXX
+```
+Which chain do you want uniswap to connect to? (ethereum, polygon) >>> ethereum
+Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>  goerli
+Enter your ethereum-mainnet private key >>>>` XXXXXX
+```
 
 If connection is successful (ethereum-goerli):
 
@@ -105,9 +107,12 @@ The uniswap connector now uses wallet [pubKey] on ethereum-goerli
 
 Run `gateway connect uniswap` in order to connect your wallet to the goerli testnet:
 
-`Which chain do you want uniswap to connect to? (ethereum, polygon) >>>` polygon
-`Which network do you want uniswap to connect to? (mainnet, mumbai) >>> ` mumbai
-`Enter your ethereum-mainnet private key >>>>` XXXXXX
+```
+Which chain do you want uniswap to connect to? (ethereum, polygon) >>> polygon
+Which network do you want uniswap to connect to? (mainnet, mumbai) >>>  mumbai
+Enter your ethereum-mainnet private key >>>> XXXXXX
+```
+
 
 If connection is successful (polygon-mumbai):
 

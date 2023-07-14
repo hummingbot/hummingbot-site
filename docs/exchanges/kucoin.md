@@ -172,7 +172,7 @@ class TestMarketOrders(ScriptStrategyBase):
 - `1d`
 - `1w`
 
-To use Kucoin spot candles in scripts, users just need to replace the connector variable with "kucoin"
+To use Kucoin spot candles in scripts, users just need to replace the connector variable with `kucoin`
 
 ```python
 )

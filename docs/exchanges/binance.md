@@ -30,41 +30,42 @@ Binance is supported on [Hummingbot Miner](https://miner.hummingbot.io/), a plat
 
 **Past**
 
-- List any past Binance trading competitions here
+
 
 ## 📺 Content
 *Videos and guides that show how to use Hummingbot with this exchange*
 
-- List any Hummingbot-related blog posts or videos with content specific to this exchange, from us and 3rd parties
+<iframe width="560" height="315" src="https://www.youtube.com/embed/La7E6uudOYY" title="How to set up a simple pure market making bot on Binance
+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## How to create API keys
 
-- Log in to your Binance account and click **Profile** - **[API Management](https://www.binance.com/en/my/settings/api-management)**
+Log in to your Binance account and click **Profile** - **[API Management](https://www.binance.com/en/my/settings/api-management)**
 
    ![Step 1](binance-api1.png)
 
-- Click **Create API**. Please note that before creating an API Key, you need to:
+Click **Create API**. Please note that before creating an API Key, you need to:
 
    - Enable [two-factor authentication (2FA)](https://www.binance.com/en/support/faq/account-functions?c=1&navId=1#11) on your account.
    - Make a deposit of any amount to activate your account.
 
    ![Step 2](binance-api2.png)
 
-- Select **System generated** as your preferred API Key type. For more details on self-generated API Keys, please refer to [How to Generate an RSA Key Pair to Send API Requests on Binance](https://www.binance.com/en/support/faq/2b79728f331e43079b27440d9d15c5db).
+Select **System generated** as your preferred API Key type. For more details on self-generated API Keys, please refer to [How to Generate an RSA Key Pair to Send API Requests on Binance](https://www.binance.com/en/support/faq/2b79728f331e43079b27440d9d15c5db).
 
    ![Step 3](binance-api3.png)
 
-- Enter a label/name for your API Key.
+Enter a label/name for your API Key.
 
    ![Step 4](binance-api4.png)
 
-- Verify your request with 2FA devices.
+Verify your request with 2FA devices.
 
    ![Step 5](binance-api5.png)
 
    [![Step 6](binance-api6.png)](binance-api6.png)
 
-- Your API Key is now created. Do not disclose your API Key, Secret Key (HMAC), or Private Key (RSA) to anyone to avoid asset losses. If you forget your Secret Key, you'll need to delete the API and create a new one.
+Your API Key is now created. Do not disclose your API Key, Secret Key (HMAC), or Private Key (RSA) to anyone to avoid asset losses. If you forget your Secret Key, you'll need to delete the API and create a new one.
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
