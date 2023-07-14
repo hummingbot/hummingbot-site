@@ -51,13 +51,13 @@ A window will pop up where you can choose either **API Trading** or **Link Third
 
 For API trading, enter the API name and API passphrase.
 
-![API Trading](kucoin-api2.PNG)
+![API Trading](kucoin-api2.png)
 
 For linking to a third-party application, first select the name of the third-party app you wish to link. Then, enter the API name and API passphrase, and select API permissions.
 
 For account security purposes, withdrawals are not supported by linking a third-party application, and there is no need to link an IP address. During transactions, the platform will use the configured third-party IP addresses.
 
-![API Trading](kucoin-api3.PNG)
+![creation process](kucoin-api3.png)
 
 During the creation process, pay attention to the relevant prompts and rules on the API creation page. Here are some points for your special attention:
 
@@ -76,9 +76,9 @@ A security verification will pop up. Enter your trading password, email verifica
 
 Click the button to confirm and complete the creation.
 
-![API Trading](kucoin-api4.PNG)
+![confirm](kucoin-api4.png)
 
-![API Trading](kucoin-api5.PNG)
+![api complete](kucoin-api5.png)
 
 
 ## 🔀 Spot Connector

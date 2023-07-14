@@ -47,7 +47,7 @@ Hover over the profile icon on the top right corner and go to the [API Managemen
    
 3. Click on the Create API Key button
 
-    ![API Trading](gate.io-api1.PNG)
+    ![Create API](gate.io-api1.png)
 
 4. Name your API keys
 
@@ -57,7 +57,7 @@ If you don't want to whitelist your IP then select `Later` instead but the API k
 
 6. Choose API v4 Key and a Classic Account type
 
-    ![API Trading](gate.io-api4.PNG)
+    ![API Trading](gate.io-api4.png)
 
 7. Select Permissions
 Please select the following permissions and then click on the Submit button.
@@ -69,11 +69,11 @@ Please select the following permissions and then click on the Submit button.
 
 8. Carefully read the **Risk Reminder**, tick both paragraphs, and click **I Accept**
 
-    ![API Trading](gate.io-api2.PNG)
+    ![accept](gate.io-api2.png)
 
 9. Enter **Fund Password**, choose **2FA Authentication** method and enter its code
 
-    ![API Trading](gate.io-api3.PNG)
+    ![fund password](gate.io-api3.png)
 
 10. Copy your API keys and store them somewhere safe. 
 
