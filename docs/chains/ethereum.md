@@ -22,6 +22,7 @@
 | `goerli` | 5 | testnet |
 | `arbitrum_one` | 42161 | mainnet |
 | `arbitrum_rinkeby` | 421611 | testnet |
+| `arbitrum_goerli` | 421613 | testnet |
 | `optimism` | 10 | mainnet |
 
 ## 🚰 Faucets
