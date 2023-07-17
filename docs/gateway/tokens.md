@@ -12,7 +12,6 @@ Hummingbot uses the [Token Lists](https://tokenlists.org/) standard to define a 
     "name": "Dai",
     "symbol": "DAI",
     "decimals": 18,
-    "logoURI": "https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734"
 },
 {
     "chainId": 1,
@@ -20,25 +19,39 @@ Hummingbot uses the [Token Lists](https://tokenlists.org/) standard to define a 
     "name": "Hummingbot",
     "symbol": "HBOT",
     "decimals": 18,
-    "logoURI": "https://assets.coingecko.com/coins/images/21717/thumb/PDPuf0tJ_400x400.jpg?1639863782"
 },
 ```
 
 When you reference the symbols DAI and HBOT in a strategy, transactions on the `ethereum_mainnet` chain/network will use its Token List to 
 identify the corresponding address.
 
-## Default lists
+## Where are lists stored?
 
-In Gateway, each blockchain's config file defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL) for each network.
+Starting in [v1.17.0](/release-notes/1.17.0), Token Lists for each chain are stored in the `/conf/lists` directory of the root Gateway directory. 
 
-Starting with the [v1.11.0 release](/release-notes/1.11.0.md) the `tokenlistType` by default is `FILE`, and there is a JSON file that contains the dictionary for each network - see [ethereum.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/ethereum.yml) as an example.
+For the [default Docker installation]](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) below, the lists are located in the `lists` folder:
 
-This reduces latency compared to accessing the Token List via URL, but users are free to change this setting by configuring the `tokenListType` and `tokenListSource` parameters for each network - see [Updating config parameters](/gateway/setup/#updating-config-parameters)
+```
+hummingbot_gateway_compose
+    ┣ hummingbot_files
+    ┣ gateway_files
+        ┣ conf
+            ┣ lists
+            ┣ connectors
+        ┣ db
+        ┣ logs
+```
+
+The folder location and list file is defined in each blockchain's config file (i.e. `/conf/ethereum.yml`). It also defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL) for each network. Note that `URL`-based token lists may impact client latency, compared to accessing the Token List via `FILE`. 
+
+Users are free to change this setting by configuring the `tokenListType` and `tokenListSource` parameters for each network - see [Updating config parameters](/gateway/setup/#updating-config-parameters) for more information.
 
 
-## Adding tokens to a list
+## Adding tokens
 
-Go to [Token Lists](https://tokenlists.org/) and look for a list that contains the tokens you wish to trade. You can download the list change `tokenListType` and `tokenListSource` to refer to it, or copy the token entries that you need into the default Token List.
+You can replace any of the Token Lists in the `/conf/lists` folder with updated versions. Go to [Token Lists](https://tokenlists.org/) and look for a list that contains the tokens you wish to trade. You can download the list and change `tokenListType` and `tokenListSource` to refer to it, or copy the token entries that you need into the default Token List.
+
+Alternatively, you may add entries to the existing lists by following the convention above.
 
 ## Approving tokens
 
@@ -48,16 +61,20 @@ When you `start` a strategy or script, Gateway automatically checks whether both
 
 Here is how you can approve tokens:
 
-### Use `approve-token` command 
+### `approve-token` command
 
-Hummingbot has a command that allows you to approve tokens for spending on Gateway one token at a time. 
+Use this command to approve tokens to enable trading on DEXs:
 
-Here is an example of the approve-tokens command:
+Here is an example:
 ```python
 >>> gateway approve-tokens uniswap_ethereum_goerli WETH
 ```
 
 [![](./approve-tokens-command.png)](./approve-tokens-command.png)
+
+!!! tip
+    This command is a good way to test whether or not your network's Token List is resolving the symbol correctly. If so, the symbol should displayed in `balance` along with the correct balance.
+
 
 ### Use `/evm/approve` in Postman
 
@@ -68,6 +85,19 @@ Alternatively, you can call the `/evm/approve` endpoint directly from Postman. A
 After it's confirmed, you can use the `/evm/allowances` endpoint to check whether the approval was successful:
 
 [![](./postman-allowances.png)](./postman-allowances.png)
+
+
+## Displaying tokens in `balance`
+
+Use the `connector-tokens` command to display token balances for various networks. Afterwards, the tokens will be displayed when you run the `balance` command. Note that you may append multiple tokens with commas.
+
+Here is an example:
+```python
+>>> gateway connector-tokens uniswap_ethereum_goerli WETH,DAI
+```
+
+[![](./connector-tokens.png)](./connector-tokens.png)
+
 
 ## Testnet faucets
 
