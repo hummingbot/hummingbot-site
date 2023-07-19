@@ -76,18 +76,14 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Bybit](./bybit) | SPOT CLOB CEX |
 | [Bybit (perp)](./bybit) | PERP CLOB CEX |
 | [Coinbase](./coinbase) | SPOT CLOB CEX |
-| [Crypto.com](./crypto-com) | SPOT CLOB CEX |
-| [DeFi Kingdoms](./defikingdoms) | SPOT AMM DEX |
 | [Defira](./defira) | SPOT AMM DEX |
 | [Dexalot](./dexalot) | SPOT CLOB DEX | [CoinAlpha](https://coinalpha.com) |
-| [Foxbit](./foxbit) | SPOT CLOB CEX |
 | [HitBTC](./hitbtc) | SPOT CLOB CEX |
 | [Hotbit](./hotbit) | SPOT CLOB CEX |
 | [Huobi](./huobi) | SPOT CLOB CEX | | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
 | [Injective](./injective) | SPOT CLOB DEX |
 | [Injective (perp)](./injective-perpetual) | PERP CLOB DEX |
 | [Kraken](./kraken) | SPOT CLOB CEX |
-| [LBank](./lbank) | SPOT CLOB DEX |
 | [Loopring](./loopring) | SPOT CLOB DEX |
 | [MEXC](./mexc) | SPOT CLOB CEX |
 | [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
@@ -98,16 +94,12 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 | [Pangolin](./pangolin) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [Perpetual Protocol](./perp) | PERP AMM DEX |
 | [Phemex Perpetual](./phemex-perpetual) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
-| [ProBit](./probit) | SPOT CLOB CEX |
 | [Polkadex](./polkadex) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com)
 | [Ref Finance](./ref) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [Sushiswap](./sushiswap) | SPOT AMM DEX |
 | [Tinyman](./tinyman) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
 | [VVS Finance](./vvs) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
-| [WhiteBit](./whitebit) | SPOT CLOB CEX |
 | [XSwap](./xswap) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
-| [ZigZag](./zigzag) | SPOT AMM DEX |
-
 
 
 ## Contributing Connectors
