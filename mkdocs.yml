@@ -253,8 +253,7 @@ nav:
         - Pure Market Making: strategies/pure-market-making.md
         - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
         - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Community:
-        - Aroon Oscillator: strategies/aroon-oscillator.md
+      - Community:        
         - Avellaneda Market Making: strategies/avellaneda-market-making.md
         - Cross-Exchange Mining: strategies/cross-exchange-mining.md
         - Hedge: strategies/hedge.md
@@ -330,6 +329,7 @@ nav:
     - History: about/history.md
   - Releases:
     - Releases: release-notes/index.md
+    - 1.18.0: release-notes/1.18.0.md
     - 1.17.0: release-notes/1.17.0.md
     - 1.16.0: release-notes/1.16.0.md
     - 1.15.0: release-notes/1.15.0.md
