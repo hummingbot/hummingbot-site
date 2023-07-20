@@ -1,8 +1,6 @@
 To make it easier for HBOT holders to participate in governance, Hummingbot Foundation organizes regularly polls conducted on Snapshot. Polls allow HBOT holders decide how the Foundation allocates its engineering bandwidth and HBOT developer bounties across the various components in the Hummingbot codebase.
 
-There are four types of polls:
-
-* **Priority Issues**: A monthly poll that prioritizes the top Github [open issues](https://github.com/hummingbot/hummingbot/issues) and [pull requests](https://github.com/hummingbot/hummingbot/pulls) that the Foundation should address.
+There are three types of polls currently active:
 
 * **CEX Connectors**: A quarterly poll that define the level of maintenance that the Foundation spends on each [centralized exchange](/exchanges/) connector
 
@@ -12,30 +10,19 @@ There are four types of polls:
 
 ## Polls Process
 
-The first Polls begin in January 2023.
+During the first week of each quarter, the Foundation will create Hummingbot Governance Proposals in the [HBOT Snapshot sub-space](https://snapshot.org/#/hbot.eth) for each poll.
 
-During the first week of each month, the Foundation will create Hummingbot Governance Proposals in the [HBOT Snapshot space](https://snapshot.org/#/hbot.eth) for each poll. In the first month of each quarter, there will be 4 polls, while the second and third months only have one poll for Priority Issues.
+Each poll lasts for 7 days, and any Ethereum wallet holding HBOT tokens at poll creation may vote. 1 HBOT token equals 1 vote.
 
-Each poll uses the [Quadratic Voting](https://docs.snapshot.org/proposals/voting-types) voting type on Snapshot:
-
-> Each voter may spread voting power across any number of choices. The results are calculated [quadratically](https://en.wikipedia.org/wiki/Quadratic_voting), so the number of individual voters matters more than the voting power contributed. 
-
-Each poll lasts for one week. Afterwards, the Foundation will implement the changes to the exchange and strategy tiers in the subsequent monthly release.
+Afterwards, the Foundation will implement the approved changes in the subsequent monthly release.
 
 ## Minimum Voting Power
 
-In the quarterly Connectors and Core Strategies polls, each choice needs to garner a minimum amount of HBOT voting power to meet the Minimum Voting Power threshold. Otherwise, the exchange connector or strategy will be removed from the codebase in the following release.
+In each Poll, each choice needs to garner a minimum amount of HBOT voting power to meet the Minimum Voting Power threshold. Otherwise, the exchange connector or strategy will be removed from the codebase in the following release.
 
 Currently, the Minimum Voting Power is **100,000 HBOT**.
 
-## Types of Polls
-
-### Priority Issues
-
-* A monthly poll that selects the top **five (5)** open issues and pull requests that the Foundation prioritizes
-* One week before the poll start date, the Foundation will create a Discord thread to let the community nominate new open Github issues and pull requests. All open Github issue and pull request are open for nomination.
-* If an issue or pull request is not resolved by the end of the month, it is automatically nominated in the following month's poll
-* Prioritization means that the Foundation will focus on resolving these issues and pull requests chosen by the community, above any other non-bug issues, including Pull Request Proposals.
+## Active Polls
 
 ### CEX Connectors
 
@@ -66,3 +53,14 @@ Currently, the Minimum Voting Power is **100,000 HBOT**.
 * Any other strategy that meets the Minimum Voting Power threshold is a **Community** strategy. The Foundation does not maintain these strategies nor will we allocate bounties for them, but they may be maintained by a member of the community.
 * Note that HBOT holders can force the Foundation to fix a bug or review a pull request related to a Community strategy using the Priority Issues poll or Pull Request Proposal.
 * Strategies that don't meet the Minimum Voting Power threshold will be removed from the codebase.
+
+## Non-Active Polls
+
+### Priority Issues
+
+*Deprecated starting in Epoch 5 due to lack of community participation*
+
+* A monthly poll that selects the top **five (5)** open issues and pull requests that the Foundation prioritizes
+* One week before the poll start date, the Foundation will create a Discord thread to let the community nominate new open Github issues and pull requests. All open Github issue and pull request are open for nomination.
+* If an issue or pull request is not resolved by the end of the month, it is automatically nominated in the following month's poll
+* Prioritization means that the Foundation will focus on resolving these issues and pull requests chosen by the community, above any other non-bug issues, including Pull Request Proposals.

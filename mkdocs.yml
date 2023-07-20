@@ -221,24 +221,19 @@ nav:
         - BIT (perp): exchanges/bit-com-perpetual.md
         - BTC Markets: exchanges/btc-markets.md
         - Coinbase: exchanges/coinbase.md
-        - Crypto.com : exchanges/crypto-com.md
-        - DeFi Kingdoms: exchanges/defikingdoms.md
         - Defira: exchanges/defira.md
         - Dexalot: exchanges/dexalot.md
-        - Foxbit: exchanges/foxbit.md
         - HitBTC: exchanges/hitbtc.md
         - Hotbit: exchanges/hotbit.md
         - Huobi: exchanges/huobi.md
         - Injective: exchanges/injective.md
         - Injective (perp): exchanges/injective-perpetual.md
         - Kraken: exchanges/kraken.md
-        - LBank: exchanges/lbank.md
         - Loopring: exchanges/loopring.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - MEXC: exchanges/mexc.md 
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
-        - ProBit: exchanges/probit.md
         - OpenOcean: exchanges/openocean.md
         - Pancakeswap: exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
@@ -248,10 +243,9 @@ nav:
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
         - Tinyman: exchanges/tinyman.md
+        - Vertex: exchanges/vertex.md
         - VVS: exchanges/vvs.md
-        - WhiteBit: exchanges/whitebit.md
         - XSwap: exchanges/xswap.md
-        - Zigzag: exchanges/zigzag.md
     - Strategies:
       - Strategies: strategies/index.md
       - Core:
@@ -297,6 +291,7 @@ nav:
   - Developers:
       - Developers: developers/index.md
       - Contribution Guidelines: developers/contributions.md
+      - Forking the HB repository: developers/forking.md
       - Debug Console: developers/debug.md
       - Building CEX Connectors:
         - Building CEX Connectors: developers/connectors/index.md
