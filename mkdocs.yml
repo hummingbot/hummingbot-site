@@ -195,57 +195,52 @@ nav:
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:
       - Exchanges: exchanges/index.md
-      - Gold:
-        - Binance: exchanges/binance.md
-        - Binance (perp): exchanges/binance-perpetual.md
-        - Uniswap: exchanges/uniswap.md
-      - Silver:
-        - Kucoin: exchanges/kucoin.md
-        - Kucoin (perp): exchanges/kucoin-perpetual.md
-        - Gate.io: exchanges/gate-io.md
-        - AscendEX: exchanges/ascend-ex.md
-        - Quickswap: exchanges/quickswap.md
-        - dYdX: exchanges/dydx-perpetual.md
-        - TraderJoe: exchanges/traderjoe.md
-      - Bronze:
-        - AltMarkets: exchanges/altmarkets.md
-        - Binance US: exchanges/binance-us.md
-        - Bybit: exchanges/bybit.md
-        - Bybit (perp): exchanges/bybit-perpetual.md
-        - Bitfinex: exchanges/bitfinex.md
-        - BitGet: exchanges/bitget-perpetual.md
-        - BitMart: exchanges/bitmart.md
-        - Bitmex: exchanges/bitmex.md
-        - Bitmex (perp): exchanges/bitmex-perpetual.md
-        - Bittrex: exchanges/bittrex.md
-        - BIT (perp): exchanges/bit-com-perpetual.md
-        - BTC Markets: exchanges/btc-markets.md
-        - Coinbase: exchanges/coinbase.md
-        - Defira: exchanges/defira.md
-        - Dexalot: exchanges/dexalot.md
-        - HitBTC: exchanges/hitbtc.md
-        - Hotbit: exchanges/hotbit.md
-        - Huobi: exchanges/huobi.md
-        - Injective: exchanges/injective.md
-        - Injective (perp): exchanges/injective-perpetual.md
-        - Kraken: exchanges/kraken.md
-        - Loopring: exchanges/loopring.md
-        - Mad Meerkat: exchanges/mad-meerkat.md
-        - MEXC: exchanges/mexc.md 
-        - NDAX: exchanges/ndax.md
-        - OKX: exchanges/okx.md
-        - OpenOcean: exchanges/openocean.md
-        - Pancakeswap: exchanges/pancakeswap.md
-        - Pangolin: exchanges/pangolin.md
-        - Perpetual Protocol: exchanges/perp.md
-        - Phemex (perp): exchanges/phemex-perpetual.md
-        - Polkadex: exchanges/polkadex.md
-        - Ref: exchanges/ref.md
-        - Sushiswap: exchanges/sushiswap.md
-        - Tinyman: exchanges/tinyman.md
-        - Vertex: exchanges/vertex.md
-        - VVS: exchanges/vvs.md
-        - XSwap: exchanges/xswap.md
+      - Binance: exchanges/binance.md
+      - Uniswap: exchanges/uniswap.md
+      - Kucoin: exchanges/kucoin.md
+      - Gate.io: exchanges/gate-io.md
+      - AscendEX: exchanges/ascend-ex.md
+      - Quickswap: exchanges/quickswap.md
+      - dYdX: exchanges/dydx-perpetual.md
+      - TraderJoe: exchanges/traderjoe.md
+      - AltMarkets: exchanges/altmarkets.md
+      - Binance US: exchanges/binance-us.md
+      - Bybit: exchanges/bybit.md
+      - Bybit (perp): exchanges/bybit-perpetual.md
+      - Bitfinex: exchanges/bitfinex.md
+      - BitGet: exchanges/bitget-perpetual.md
+      - BitMart: exchanges/bitmart.md
+      - Bitmex: exchanges/bitmex.md
+      - Bitmex (perp): exchanges/bitmex-perpetual.md
+      - Bittrex: exchanges/bittrex.md
+      - BIT (perp): exchanges/bit-com-perpetual.md
+      - BTC Markets: exchanges/btc-markets.md
+      - Coinbase: exchanges/coinbase.md
+      - Defira: exchanges/defira.md
+      - Dexalot: exchanges/dexalot.md
+      - HitBTC: exchanges/hitbtc.md
+      - Hotbit: exchanges/hotbit.md
+      - Huobi: exchanges/huobi.md
+      - Injective: exchanges/injective.md
+      - Injective (perp): exchanges/injective-perpetual.md
+      - Kraken: exchanges/kraken.md
+      - Loopring: exchanges/loopring.md
+      - Mad Meerkat: exchanges/mad-meerkat.md
+      - MEXC: exchanges/mexc.md 
+      - NDAX: exchanges/ndax.md
+      - OKX: exchanges/okx.md
+      - OpenOcean: exchanges/openocean.md
+      - Pancakeswap: exchanges/pancakeswap.md
+      - Pangolin: exchanges/pangolin.md
+      - Perpetual Protocol: exchanges/perp.md
+      - Phemex (perp): exchanges/phemex-perpetual.md
+      - Polkadex: exchanges/polkadex.md
+      - Ref: exchanges/ref.md
+      - Sushiswap: exchanges/sushiswap.md
+      - Tinyman: exchanges/tinyman.md
+      - Vertex: exchanges/vertex.md
+      - VVS: exchanges/vvs.md
+      - XSwap: exchanges/xswap.md
     - Strategies:
       - Strategies: strategies/index.md
       - Core:
