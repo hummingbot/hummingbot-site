@@ -1,35 +1,104 @@
 # `bitget_perpetual`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://www.bitget.com/en/invite-register?invite_code=xxxxxx)!** 🙏🙏🙏
 
-* Type: PERP CLOB CEX
-* Folder: [/hummingbot/connector/derivative/bitget_perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitget_perpetual)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Centralized
+- Website: <https://www.bitget.com>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/bitget/>
+- CoinGecko: https://www.coingecko.com/en/exchanges/bitget
+- API docs: https://bitgetlimited.github.io/apidoc/en/spot/#welcome
+- Fees: https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget
+- Supported countries: 
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** [CoinAlpha](https://coinalpha.com)
 
-* Website: https://www.bitget.com/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/bitget/
-* CoinGecko: https://www.coingecko.com/en/exchanges/bitget
-* API docs: https://bitgetlimited.github.io/apidoc/en/spot/#welcome
-* Fees: https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🔑 Connection
+**Current and Upcoming**
 
-Run `connect bitget_perpetual` in order to enter your API keys:
- 
+
+
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+
+
+### Order Types
+
+
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+
+## 🔀 Perp Connector
+*Connector to perpetual futures markets*
+
+- Connection type: WebSocket
+- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitget_perpetual)
+
+### How to Connect
+
+From inside the Hummingbot client, run `connect bitget_perpetual`:
+
 ```
+>>> connect bitget_perpetual
+
 Enter your bitget_perpetual API key >>>
 Enter your bitget_perpetual secret key >>>
+Enter your bitget_perpetual user id >>>
 ```
 
 If connection is successful:
+
 ```
-You are now connected to bitget_perpetual.
+You are now connected to bitget_perpetual
 ```
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `MARKET`
+
+### Position Modes
+
+This connector supports the following position modes:
+
+- One-way
+- Hedge
+
+### Candles Feed
+
+
+
+### Testnets

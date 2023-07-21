@@ -1,32 +1,51 @@
 # `vvs`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://vvs.finance/)!** 🙏🙏🙏
 
-* Type: SPOT AMM DEX
-* Folder: [/hummingbot/gateway/src/connectors/vvs](https://github.com/hummingbot/gateway/tree/master/src/connectors/vvs)
-* Configs: [/hummingbot/gateway/src/templates/vvs.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/vvs.yml)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://vvs.finance>
+- CoinMarketCap: <https://coinmarketcap.com/currencies/vvs-finance/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/vvs-finance>
+- API docs: <https://github.com/vvs-finance/vvs-ui/tree/master/packages/vvs-swap-sdk>
+- API version: 1
+- Fees: https://docs.vvs.finance/product-guides/limit-order#is-there-any-transaction-fee
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** 
 
-* Website: <https://vvs.finance/>
-* CoinMarketCap: <https://coinmarketcap.com/currencies/vvs-finance/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/vvs_finance>
-* API docs: <https://github.com/vvs-finance/vvs-ui/tree/master/packages/vvs-swap-sdk>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🕸️ Supported Chains and Networks
+**Current and Upcoming**
 
-* [Cronos](/chains/cronos): `mainnet`
 
-## 🔑 Connection
 
-Run `gateway connect vvs` in order to connect your wallet:
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `vvs` connector fetches prices and creates swaps. Run `gateway connect vvs` in order to connect your wallet:
 
 ```
 Which chain do you want vvs to connect to? (cronos) >>>
@@ -39,3 +58,28 @@ If connection is successful:
 ```
 The vvs connector now uses wallet [pubKey] on cronos-mainnet
 ```
+
+
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+

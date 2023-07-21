@@ -1,38 +1,51 @@
 # `openocean`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://openocean.finance/)!** 🙏🙏🙏
 
-* Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/openocean](https://github.com/hummingbot/gateway/tree/main/src/connectors/openocean)
-* Configs: [/gateway/src/templates/openocean.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/openocean.yml)
-* Maintainer: [kanghoulin](https://github.com/kanghoulin)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://openocean.finance>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/openocean/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/openocean_finance>
+- API docs: <https://github.com/openocean-finance/openocean-api>
+- SDK: <https://github.com/openocean-finance/OpenOcean-SDK-API>
+- Fees: <https://docs.openocean.finance/concepts/advanced-topics/01-fees>
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** [kanghoulin](https://github.com/kanghoulin) 
 
-* Website: <https://openocean.finance/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/openocean/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/openocean_finance>
-* API docs: <https://github.com/openocean-finance/openocean-api>
-* SDK: <https://github.com/openocean-finance/OpenOcean-SDK-API>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🕸️ Supported Chains and Networks
+**Current and Upcoming**
 
-* [Avalanche](/chains/avalanche): `avalanche`
-* [Ethereum](/chains/ethereum): `mainnet`
-* [Polygon](/chains/polygon): `mainnet`
-* [Harmony](/chains/harmony): `mainnet`
-* [BNB Chain](/chains/bnb-chain): `mainnet`
-* [Cronos](/chains/cronos): `mainnet`
 
-## 🔑 Setup
 
-Run `gateway connect openocean` in order to connect your wallet:
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `openocean` connector fetches prices and creates swaps. Run `gateway connect openocean` in order to connect your wallet:
 
 ```
 Which chain do you want openocean to connect to? (avalanche, ethereum, polygon, harmony) >>>
@@ -45,3 +58,27 @@ If connection is successful:
 ```
 The openocean connector now uses wallet [pubKey] on polygon-mainnet
 ```
+
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+

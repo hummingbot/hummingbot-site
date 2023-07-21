@@ -1,28 +1,54 @@
-# `mexc`
+# MEXC
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://www.mexc.com/register)!** 🙏🙏🙏
 
-* Type: SPOT CLOB CEX
-* Folder: [/hummingbot/connector/exchange/mexc](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc)
-* Maintainer:
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Centralized
+- Website: [MEXC](https://www.mexc.com/)
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/mxc/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/mexcglobal>
+- API docs: <https://mxcdevelop.github.io/apidocs/spot_v3_en/#introduction>
+- API version: v3
+- Fees: <https://www.mexc.com/fee>
+- Supported countries: Information not available
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** 
 
-* Website: <https://www.mexc.com/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/mxc/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/mexcglobal>
-* API docs: <https://mxcdevelop.github.io/apidocs/spot_v3_en/#introduction>
-* Transaction fees: <https://www.mexc.com/fee>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🔑 Connection
+**Current and Upcoming**
 
-Run `connect mexc` in order to enter your API keys:
+
+
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+## How to create API keys
+
+
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+- Connection type: WebSocket
+- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc)
+
+### How to Connect
+
+From inside the Hummingbot client, run `connect mexc`:
 
 ```
 Enter your mexc API key >>>
@@ -34,3 +60,40 @@ If connection is successful:
 ```
 You are now connected to mexc.
 ```
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `MARKET`
+
+
+### Candles Feed
+
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect mexc_paper_trade` instead of `connect mexc`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+
+
+## 🔀 Perp Connector
+*Connector to perpetual futures markets*
+
+
+### How to Connect
+
+
+### Order Types
+
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets

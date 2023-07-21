@@ -1,33 +1,51 @@
 # `traderjoe`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://traderjoexyz.com/)!** 🙏🙏🙏
 
-* Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/traderjoe](https://github.com/hummingbot/gateway/tree/main/src/connectors/traderjoe)
-* Configs: [/gateway/src/templates/traderjoe.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/traderjoe.yml)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://traderjoexyz.com/>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/trader-joe/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/trader-joe>
+- API docs: <https://docs.traderjoexyz.com/reference/>
+- API version: 1
+- SDK: <https://github.com/traderjoe-xyz/joe-sdk>
+- Supported countries: Worldwide
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+## 🛠 Maintenance
 
-Silver exchanges are prioritized by HBOT holders in the latest Poll. Their connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
+![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-## ℹ️ Exchange Info
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-* Website: <https://traderjoexyz.com/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/traderjoe/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/traderjoe>
-* API docs: <https://docs.traderjoexyz.com/>
-* SDK: <https://github.com/traderjoe-xyz/joe-sdk>
+**Maintainer:** 
 
-## 🕸️ Supported Chains and Networks
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-* [Avalanche](/chains/avalanche): `avalanche`, `fuji`
+**Current and Upcoming**
 
-## 🔑 Connection
+Traderjoe is supported on [Hummingbot dMiner](https://dminer.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
 
-Run `gateway connect traderjoe` in order to connect your wallet:
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oC_8bIdDY2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `traderjoe` connector fetches prices and creates swaps. Run `gateway connect traderjoe` in order to connect your wallet:
 
 ```
 Which chain do you want traderjoe to connect to? (avalanche) >>>
@@ -40,3 +58,27 @@ If connection is successful:
 ```
 The traderjoe connector now uses wallet [pubKey] on avalanche-avalanche
 ```
+
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+

@@ -1,26 +1,63 @@
 # `phemex_perpetual`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://phemex.com/)!** 🙏🙏🙏
 
-* Type: PERP CLOB CEX
-* Folder: [/hummingbot/connector/derivative/phemex_perpetual](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/derivative/phemex_perpetual)
-* Maintainer:  [CoinAlpha](https://coinalpha.com)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Centralized
+- Website: <https://phemex.com/>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/phemex/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/phemex_futures>
+- API docs: <https://phemex-docs.github.io/>
+- API version: 1
+- Fees: <https://phemex.com/getting-started/trading-fee>
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** [CoinAlpha](https://coinalpha.com)
 
-* Website: <https://phemex.com/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/phemex/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/phemex_futures>
-* API docs: <https://phemex-docs.github.io/>
-* Transaction fees: <https://phemex.com/getting-started/trading-fee>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🔑 Connection
+**Current and Upcoming**
+
+
+
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+*Connector to perpetual futures markets*
+
+- Connection type: WebSocket
+- [Connector folder](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/derivative/phemex_perpetual)
+
+### How to Connect
 
 Run `connect phemex_perpetual` in order to enter your API keys:
 
@@ -34,3 +71,15 @@ If connection is successful:
 ```
 You are now connected to phemex_perpetual.
 ```
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+

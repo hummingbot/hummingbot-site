@@ -6,39 +6,48 @@
 
 `SmartComponentBase` is a base class you can use to build smart components that interact with the market in your own way. It helps manage trades and react to market events.
 
-Here's what you need to know about `SmartComponentBase`:
+Here are some key points about the `SmartComponentBase` class:
 
-- **Setup**: When you make a `SmartComponentBase` instance, it needs a strategy, a list of connectors, and an optional update frequency. The strategy guides the bot's trading, the connectors are the markets the bot works in, and the update frequency is how often the bot updates its status.
+- **Initialization**: When an instance of the class is created, it takes in a strategy, a list of connectors, and an optional update interval. The strategy is an instance of `ScriptStrategyBase` and it dictates the overall trading strategy of the bot. The connectors are names of the exchanges or markets the bot will operate in. The update interval is a float value that determines how often the control loop of the component updates (default is 0.5 seconds). 
 
-- **Event Handlers**: `SmartComponentBase` uses `SourceInfoEventForwarder` objects to handle different trading events.
+- **Event Forwarders**: The class uses `SourceInfoEventForwarder` objects to process various types of events related to trading, such as orders being created, filled, canceled, completed, or failed. These forwarders are used to handle events generated from the different markets the bot is operating in.
 
-- **Control Loop**: This is a loop that runs when you make a `SmartComponentBase` instance. It updates the bot's status at your set frequency and can start and stop methods.
+- **Control Loop**: The class contains a control loop (a coroutine named `control_loop`) that is started when an instance is created. This loop continues running until it's terminated and while it's running, it calls the `control_task` method at the update interval defined during initialization. The control loop changes the status of the component and calls `on_start` and `on_stop` methods when it starts and stops respectively.
 
-- **Market Interaction**: `SmartComponentBase` has methods for placing orders, checking prices, checking balances, and more.
+- **Market Interactions**: The class has methods to interact with the markets, such as placing an order (`place_order`), getting the price of a trading pair (`get_price`), retrieving the order book (`get_order_book`), checking the balance of an asset (`get_balance`), getting available balance (`get_available_balance`), and getting active orders (`get_active_orders`).
 
-- **Event Processing**: There are methods for handling different types of events. These methods aren't built into the base class, so you have to implement them in a subclass.
+- **Event Processing**: There are also methods to process different types of events that the forwarders handle. These are `process_order_completed_event`, `process_order_created_event`, `process_order_canceled_event`, `process_order_filled_event`, and `process_order_failed_event`. These methods are currently not implemented in the base class and are expected to be implemented in a subclass.
 
-`SmartComponentBase` is designed to be subclassed. It's a key part of the Hummingbot library and helps create automated trading strategies.
+This class is designed to be subclassed, with subclasses providing specific implementations for things like the `control_task` method and the event processing methods. It's a key component of the Hummingbot library, providing a foundation for creating sophisticated, automated trading strategies.
 
-### Introduction to Position Executor
+## Position Executor
 
-The first Smart Component is the [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/position_executor/position_executor.py). It's part of the Directional Framework that was introduced in version [1.13.0](/release-notes/1.13.0/#directional-framework). It works with [Candles Feed](./candles-feed.md) to help users create TA-based strategies.
+The first Smart Component is the [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/position_executor/position_executor.py), part of the Directional Framework introduced in version [1.13.0](/release-notes/1.13.0/#directional-framework) that combines this feature along with [Candles Feed](./candles-feed.md) to let users create TA-based strategies.
 
-The PositionExecutor uses a strategy and `PositionConfig` as input. `PositionConfig` is a new data type that has the information needed to start a directional position on an exchange. We plan to expand this to spot exchanges in the future.
+This component receives as input the strategy and `PositionConfig`, a new data type that includes the information needed to start a directional position on a perpetuals exchange that utilizes the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html) popularized in [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
 
-You can learn how to use this feature in a recent [community call](/#community-calls):
+In future releases, we aim to extend this component to spot exchanges.
+
+Watch this recording from a recent [community call](/#community-calls) to learn how to use this feature:
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/X63rACPjtUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Getting Started with PositionExecutor
+### Class Initializer
 
-`PositionExecutor` inherits from `SmartComponentBase` and uses its basic functions for exchange interactions. When you create an instance, it needs a strategy and a `PositionConfig`.
+The `PositionExecutor` class inherits from `SmartComponentBase`, which provides basic functionalities for interacting with exchanges.
 
-The `PositionExecutor` checks if at least one of the `take_profit`, `stop_loss`, or `time_limit` parameters in `PositionConfig` is set. If not, it gives an error. It also checks if `time_limit_order_type` and `stop_loss_order_type` are market orders, as it currently only supports market orders for these parameters.
+When an instance of `PositionExecutor` is created, it expects two arguments:
 
-#### Features of PositionExecutor
+- `strategy`: an instance of `ScriptStrategyBase` that defines the trading strategy.
+- `position_config`: an instance of `PositionConfig` that includes parameters such as trading pair, amount, entry price, etc.
 
-`PositionExecutor` has many properties that give information about the current trade, including:
+The class initializer checks if at least one of the `take_profit`, `stop_loss`, or `time_limit` parameters in `position_config` is set. If not, it raises an error. It also checks if `time_limit_order_type` and `stop_loss_order_type` are market orders, as it currently only supports market orders for these parameters.
+
+It also initializes several instance variables related to order tracking.
+
+### Class Properties
+
+The `PositionExecutor` class includes many properties that return important information about the current trade. Some of these properties include:
 
 - `executor_status`: The current status of the executor.
 - `is_closed`: Whether the executor is closed.
@@ -68,9 +77,9 @@ The `PositionExecutor` checks if at least one of the `take_profit`, `stop_loss`,
 - `close_order`: The close order.
 - `take_profit_order`: The take profit order.
 
-#### Using PositionExecutor
+### Instance Methods
 
-`PositionExecutor` has several methods to control and monitor the trading position:
+`PositionExecutor` class includes several instance methods to control and monitor the trading position:
 
 - `take_profit_condition`: Returns whether the take profit condition has been met.
 - `stop_loss_condition`: Returns whether the stop loss condition has been met.
@@ -102,5 +111,4 @@ The `PositionExecutor` checks if at least one of the `take_profit`, `stop_loss`,
 - `check_budget`: Checks the budget for opening a position.
 - `adjust_order_candidate`: Adjusts the order candidate.
 
-
-In summary, `PositionExecutor` is a complex class for managing trading positions in the Hummingbot library. It has many features for controlling and monitoring trades, making it a key part of automated trading strategies.
+Overall, `PositionExecutor` is a sophisticated class for managing trading positions in the Hummingbot library. It offers a wide range of features to control and monitor trades, making it a key component of automated trading strategies.

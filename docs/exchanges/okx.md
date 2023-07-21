@@ -1,28 +1,53 @@
 # `okx`
+**Support Hummingbot by creating an account using our [referral link](https://www.okx.com/join/1931920)!** 🙏🙏🙏
 
-## 📁 Connector Info
+## ℹ️ Info
 
-* Type: SPOT CLOB CEX
-* Folder: [/hummingbot/connector/exchange/okx](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx)
-* Maintainer:
+- Type: Centralized
+- Website: <https://www.okx.com/>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/okx/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/okx>
+- API docs: <https://www.okx.com/docs/en/>
+- API version: v5
+- Fees: https://www.okx.com/fees
+- Supported countries: Information not available
 
-## 🏆 Exchange Tier
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** 
 
-* Website: <https://www.okx.com/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/okx/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/okx>
-* API docs: <https://www.okx.com/docs/en/>
-* **Hummingbot Referral Link**: <https://www.okx.com/join/1931920>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🔑 Connection
+**Current and Upcoming**
 
-Run `connect okx` in order to enter your API keys:
+
+
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+## How to create API keys
+
+Information not available
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+- Connection type: WebSocket
+- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx)
+
+### How to Connect
+
+From inside the Hummingbot client, run `connect okx`:
 
 ```
 Enter your okx API key >>>
@@ -35,3 +60,42 @@ If connection is successful:
 ```
 You are now connected to okx.
 ```
+
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `MARKET`
+
+
+### Candles Feed
+
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect okx_paper_trade` instead of `connect okx`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+
+
+## 🔀 Perp Connector
+*Connector to perpetual futures markets*
+
+
+### How to Connect
+
+
+### Order Types
+
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+

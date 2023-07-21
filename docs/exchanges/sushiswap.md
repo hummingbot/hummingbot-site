@@ -1,46 +1,98 @@
 # `sushiswap`
 
-## 📁 Connector info
+**Support Hummingbot by creating an account using our [referral link](https://app.sushi.com/)!** 🙏🙏🙏
 
-* Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/sushiswap](https://github.com/hummingbot/gateway/tree/main/src/connectors/sushiswap)
-* Configs: [/gateway/src/templates/sushiswap.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/sushiswap.yml)
-* Maintainer: Hummingbot Foundation
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://app.sushi.com/>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/sushiswap/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/sushiswap>
+- API docs: <https://docs.sushi.com/>
+- SDK: <https://github.com/sushiswap/sdk>
+- Fees: <https://docs.sushi.com/faq#what-are-the-fees>
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** 
 
-* Website: <https://sushi.com/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/sushiswap/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/sushiswap>
-* API docs: <https://docs.sushi.com/>
-* SDK: <https://github.com/sushiswap/sdk>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🕸️ Supported Chains and Networks
+**Current and Upcoming**
 
-* [Ethereum](/chains/ethereum): `mainnet`, `arbitrum_one`, `goerli`
-* [Avalanche](/chains/avalanche): `avalanche`, `fuji`
-* [Binance Smart Chain](/chains/bnb-chain): `mainnet`, `testnet`
-* [Harmony](/chains/harmony): `mainnet`
+
+
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `sushiswap` connector fetches prices and creates swaps. Run `gateway connect sushiswap` in order to connect your wallet:
+
+```
+Which chain do you want sushiswap to connect to? (polygon) >>> 
+Which network do you want sushiswap to connect to? (mainnet, mumbai) >>>
+Enter your polygon-mainnet private key >>>>
+```
+
+If connection is successful (polygon-mainnet):
+```
+The sushiswap connector now uses wallet [pubKey] on polygon-mainnet
+```
+
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+
 * [Polygon](/chains/polygon): `mainnet`, `mumbai`
 
-## 🔑 Connection
-
-Run `gateway connect sushiswap` in order to connect your wallet:
+Run `gateway connect sushiswap` in order to connect your wallet to the mumbai testnet:
 
 ```
-Which chain do you want sushiswap to connect to? (ethereum, binance-smart-chain, polygon) >>>
-Which network do you want sushiswap to connect to? (mainnet, goerli) >>>
-Enter your ethereum-mainnet private key >>>>
+Which chain do you want sushiswap to connect to? (polygon) >>> polygon
+Which network do you want sushiswap to connect to? (mainnet, mumbai) >>> mumbai
+Enter your ethereum-mainnet private key >>>>` XXXXXX
 ```
 
-If connection is successful:
+If connection is successful (polygon-mumbai):
 
 ```
-The sushiswap connector now uses wallet [pubKey] on ethereum-mainnet
+The sushiswap connector now uses wallet [pubKey] on polygon-mumbai
 ```

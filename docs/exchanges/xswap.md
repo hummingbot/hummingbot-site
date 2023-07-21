@@ -1,33 +1,52 @@
 # `xswap`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://xswap.exchange/)!** 🙏🙏🙏
 
-* Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/xswap](https://github.com/hummingbot/gateway/tree/main/src/connectors/xsswap)
-* Configs: [/gateway/src/templates/xswap.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/xsswap.yml)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://xspswap.finance/>
+- CoinMarketCap: <https://coinmarketcap.com/currencies/xswap-protocol/>
+- CoinGecko: <https://www.coingecko.com/en/coins/xswap-protocol>
+- API docs: <https://docs.xspswap.finance/xswap-protocol/>
+- API version: 1
+- SDK: <https://github.com/Carry-So/xsswap-sdk>
+- Fees: 
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** 
 
-* Website: <https://xspswap.finance/>
-* CoinMarketCap: <https://coinmarketcap.com/currencies/xswap-protocol/>
-* CoinGecko: <https://www.coingecko.com/en/coins/xswap-protocol>
-* API docs: <https://docs.xspswap.finance/xswap-protocol/>
-* SDK: <https://github.com/Carry-So/xsswap-sdk>
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🕸️ Supported Chains and Networks
+**Current and Upcoming**
 
-* [XDC Chain](/chains/xdc-chain): `xinfin`, `apothem`
 
-## 🔑 Connection
 
-Run `gateway connect xswap` in order to connect your wallet:
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `xswap` connector fetches prices and creates swaps. Run `gateway connect xswap` in order to connect your wallet:
 
 ```
 Which chain do you want xswap to connect to? (xdc-chain) >>>
@@ -40,3 +59,26 @@ If connection is successful:
 ```
 The xswap connector now uses wallet [pubKey] on xdc-chain-xinfin
 ```
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+

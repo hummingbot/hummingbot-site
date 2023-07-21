@@ -26,7 +26,7 @@ HBOT holders voted this exchange into the Silver tier for the current [Epoch](/g
 
 **Current and Upcoming**
 
-dYdX is supported on [Hummingbot Miner](https://miner.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
+dYdX is supported on [Hummingbot Miner](https://dminer.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
 
 **Past**
 

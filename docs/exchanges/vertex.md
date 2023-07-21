@@ -1,41 +1,54 @@
 # `vertex`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://vertexprotocol.com)!** 🙏🙏🙏
 
-* Type: SPOT CLOB/AMM DEX
-* Folder: [/hummingbot/connector/exchange/vertex](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/vertex)
-* Maintainer: [Vertex](https://vertexprotocol.com/)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: https://vertexprotocol.com/
+- CoinMarketCap: https://coinmarketcap.com/exchanges/vertex-protocol/
+- DefiLlama: https://defillama.com/protocol/vertex-protocol
+- API docs: https://vertex-protocol.gitbook.io/docs/getting-started/overview
+- API version: 1
+- Fees: https://vertex-protocol.gitbook.io/docs/basics/fees
+- SDK: https://vertex-protocol.gitbook.io/docs/developer-resources/vertex-typescript-sdk
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** [Vertex](https://vertexprotocol.com/)
 
-* Website: https://vertexprotocol.com/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/vertex-protocol/
-* DefiLlama: https://defillama.com/protocol/vertex-protocol
-* API docs: https://vertex-protocol.gitbook.io/docs/getting-started/overview
-* Fees: https://vertex-protocol.gitbook.io/docs/basics/fees
-* SDK: https://vertex-protocol.gitbook.io/docs/developer-resources/vertex-typescript-sdk
-* Bug Bounty: https://hackenproof.com/vertex-protocol
-* Market Making Rewards: https://vertex-protocol.gitbook.io/docs/community-token-and-dao/trading-rewards
 
-## 👀 Social
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-* Twitter: https://twitter.com/vertex_protocol
-* Discord: https://discord.com/invite/vertexprotocol
+**Current and Upcoming**
 
-## 🕸️ Supported Chains and Networks
+[Market Making Rewards](https://vertex-protocol.gitbook.io/docs/community-token-and-dao/trading-rewards)
+[Bug Bounty:](https://hackenproof.com/vertex-protocol)
 
-* [Ethereum](/chains/ethereum): `arbitrum_one`
-* [Ethereum](/chains/ethereum): `arbitrum_goreli`
+**Past**
 
-## 🔑 Connection
 
-Run `connect vertex` in order to enter the private key and address:
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `vertex` connector fetches prices and creates swaps. Run `connect vertex` in order to enter the private key and address:
  
 ```
 Enter your Arbitrum private key >>>
@@ -47,6 +60,26 @@ If connection is successful:
 You are now connected to vertex.
 ```
 
-## 🧪 Testnet
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
 
 Hummingbot supports the testnet version of this exchange. To connect to the testnet exchange, run `connect vertex_testnet` and enter your private key and address.

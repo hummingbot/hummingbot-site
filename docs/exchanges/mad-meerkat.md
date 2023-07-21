@@ -1,33 +1,51 @@
 # `mad_meerkat`
 
-## 📁 Connector Info
+**Support Hummingbot by creating an account using our [referral link](https://mad-meerkat.exchange/)!** 🙏🙏🙏
 
-* Type: SPOT AMM DEX
-* Folder: [/gateway/src/connectors/mad_meerkat](https://github.com/hummingbot/gateway/tree/main/src/connectors/mad_meerkat)
-* Configs: [/hummingbot/gateway/src/templates/mad_meerkat.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/mad_meerkat.yml)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+## ℹ️ Info
 
-## 🏆 Exchange Tier
+- Type: Decentralized
+- Website: <https://mm.finance>
+- CoinMarketCap: <https://coinmarketcap.com/exchanges/mm-finance/>
+- CoinGecko: <https://www.coingecko.com/en/exchanges/mm_finance>
+- API docs: <https://mmfinance.gitbook.io/docs/troubleshooting-errors>
+- API version: 
+- Fees: 
+- Supported countries: Worldwide
+
+## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## ℹ️ Exchange Info
+**Maintainer:** [CoinAlpha](https://coinalpha.com)
 
-* Website: <https://mm.finance>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/mm-finance/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/mm_finance>
-* API docs: <https://mmfinance.gitbook.io/docs/troubleshooting-errors>
-* SDK:
+## 💰 Rewards
+*Competitions and other programs that incentivize Hummingbot users to use this exchange*
 
-## 🕸️ Supported Chains and Networks
+**Current and Upcoming**
 
-* [Cronos](/chains/cronos): `mainnet`
 
-## 🔑 Connection
 
-Run `gateway connect mad_meerkat` in order to connect your wallet:
+**Past**
+
+
+
+## 📺 Content
+*Videos and guides that show how to use Hummingbot with this exchange*
+
+
+
+## How to create API keys
+
+## 🔀 Spot Connector
+*Integration to exchange's spot markets API*
+
+
+### How to Connect
+
+The `mad-meerkat` connector fetches prices and creates swaps. Run `gateway connect mad_meerkat` in order to connect your wallet:
 
 ```
 Which chain do you want mad_meerkat to connect to? (cronos) >>>
@@ -40,3 +58,27 @@ If connection is successful:
 ```
 The mad_meerkat connector now uses wallet [pubKey] on cronos-mainnet
 ```
+
+
+### Order Types
+
+
+### Candles Feed
+
+### Paper Trading
+
+
+## 🔀 Perp Connector
+
+
+### Order Types
+
+
+### Position Modes
+
+
+### Candles Feed
+
+
+### Testnets
+
