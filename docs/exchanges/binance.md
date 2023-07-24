@@ -1,7 +1,7 @@
 # Binance
 
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a partnership with Binance that shares some of your fees when you trade on Binance using Hummingbot, at no cost to you. To support us, create an account using our [Binance referral link](https://www.binance.com/en/register?ref=FQQNNGCD) or [Binance Futures referral link](https://www.binance.com/en/futures/ref?code=hummingbot). Thanks you! 🙏
+    Hummingbot Foundation has a partnership with Binance that shares some of your fees when you trade on Binance using Hummingbot, at no cost to you. To support us, create an account using our [Binance referral link](https://www.binance.com/en/register?ref=FQQNNGCD) or [Binance Futures referral link](https://www.binance.com/en/futures/ref?code=hummingbot). Thank you! 🙏
 
 ## ℹ️ Exchange Info
 
