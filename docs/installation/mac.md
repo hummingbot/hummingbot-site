@@ -10,11 +10,7 @@ Supported versions:
 
 * macOS 10 (Sierra) or later
 * Intel x86
-* Apple M1
-
-Unsupported:
-
-* Apple M2 / M2 Max
+* Apple M1 / M2
 
 ### XCode Command Line Tools
 
