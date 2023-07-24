@@ -10,11 +10,7 @@ Supported versions:
 
 * macOS 10 (Sierra) or later
 * Intel x86
-* Apple M1
-
-Unsupported:
-
-* Apple M2 / M2 Max
+* Apple M1 / M2
 
 ### XCode Command Line Tools
 
@@ -152,7 +148,7 @@ Activate the conda environment:
 conda activate hummingbot
 ```
 
-This step should add a `(conda)` label in front of your command line, which lets you know that you are inside the conda environment.
+This step should add a `(hummingbot)` label in front of your command line, which lets you know that you are inside the conda environment.
 
 ### Compile source code
 
