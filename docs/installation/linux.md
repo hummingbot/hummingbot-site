@@ -78,7 +78,7 @@ Activate the conda environment:
 conda activate hummingbot
 ```
 
-This step should add a `(conda)` label in front of your command line, which lets you know that you are inside the conda environment.
+This step should add a `(hummingbot)` label in front of your command line, which lets you know that you are inside the conda environment.
 
 ### Compile source code
 

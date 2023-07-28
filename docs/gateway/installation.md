@@ -4,7 +4,7 @@ The official Github repository for Gateway is https://github.com/hummingbot/gate
 
 For most users, we recommend installing Hummingbot and Gateway using [Docker](/installation/docker/).
 
-In particular, we recommend following the [Hummingbot Gateway Compose](https://github.com/hummingbot/deploy-examples/tree/development/hummingbot_gateway_compose) deployment path.
+In particular, we recommend following the [Hummingbot Gateway Compose](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) deployment path.
 
 ## Install from Source
 

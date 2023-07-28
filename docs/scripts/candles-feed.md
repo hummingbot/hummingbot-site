@@ -14,10 +14,19 @@ This class provides a common interface and uses Rest and WS Assistants for all I
 
 ## Data sources
 
-All the data sources for candles inherit CandlesBase to implement the specific endpoints. As of version 1.14, the available sources available are:
+All the data sources for candles inherit CandlesBase to implement the specific endpoints. As of version 1.18.0, here are the available sources:
+
+### Spot
 
 - `binance`: See [`BinanceSpotCandles`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_spot_candles) for the implementation.
+- `kucoin`
+- `gate_io`
+- `ascendex`
+
+### Perp
 - `binance_perpetual`: See [`BinancePerpetualCandles`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_perpetual_candles) for the implementation.
+- `kucoin_perpetual`
+- `gate_io_perpetual`
 
 To create a new instance of this component, it is recommended to use the `get_candle` method of the `CandlesFactory` (which will be demonstrated later in an example).
 
