@@ -201,7 +201,7 @@ docker compose down
 
 ### Update the Compose project for the latest images
 ```
-docker compose up --force-recreate --build -d
+docker pull hummingbot/hummingbot
 ```
 
 ### Give all users read/write permissions to local files
@@ -221,7 +221,7 @@ Press keys <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd>
 
 ### Update the container to the latest image
 ```
-docker compose up --force-recreate --build -d
+docker pull hummingbot/hummingbot
 ```
 
 ### List all containers
