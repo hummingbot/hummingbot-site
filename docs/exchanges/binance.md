@@ -139,7 +139,7 @@ In a Hummingbot script, import `CandlesFactory` to create the candles that you w
 
 See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
 
-##x How to create API keys
+## How to create API keys
 
 Log in to your Binance account and click **Profile** - **[API Management](https://www.binance.com/en/my/settings/api-management)**
 

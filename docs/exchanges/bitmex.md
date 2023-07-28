@@ -1,52 +1,34 @@
-# `bitmex`
+# Bitmex
 
-**Support Hummingbot by creating an account using our [referral link](https://www.bitmex.com/register)!** 🙏🙏🙏
+!!! tip "Support Hummingbot"
+    Hummingbot Foundation has a partnership with Bitmex that shares some of your fees when you trade on Bitmex using Hummingbot, at no cost to you. To support us, create an account using our [Bitmex referral link](https://www.bitmex.com/register). Thank you! 🙏
 
-## ℹ️ Info
+## ℹ️ Exchange Info
 
-- Type: Centralized
-- Website: <https://www.bitmex.com>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/bitmex/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/bitmex>
-- API docs: https://www.bitmex.com/api/explorer/
-- Fees: https://www.bitmex.com/wallet/fees/spot
-- Supported countries: Please refer to BitMEX's terms of service or contact their support for information on supported countries.
+- **Type**: CLOB CEX
+- **Website**: https://www.bitmex.com/
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/bitmex/
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/bitmex
+- **API docs**: https://www.bitmex.com/api/explorer/
+- **Fees**: https://www.bitmex.com/wallet/fees/spot
+- **Supported countries**: Please refer to BitMEX's terms of service or contact their support for information on supported countries.
 
 ## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+- **Tier**: Bronze
+- **Maintainer**: 
 
-**Maintainer:** 
-
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
-
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
+HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
 
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitmex)
+- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitmex)
 
-### How to Connect
+### Usage
 
 From inside the Hummingbot client, run `connect bitmex`:
 
@@ -63,16 +45,13 @@ If connection is successful:
 You are now connected to bitmex
 ```
 
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
 
 - `LIMIT`
 - `MARKET`
-
-
-
-### Candles Feed
 
 ### Paper Trading
 
@@ -83,44 +62,39 @@ If this is not available by default, you can configure Hummingbot to add this pa
 ## 🔀 Perp Connector
 *Connector to perpetual futures markets*
 
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitmex_perpetual)
 
-### How to Connect
 
-From inside the Hummingbot client, run `connect bitmex_perpetual`:
+### Usage
 
-```
->>> connect bitmex_perpetual
-
-Enter your bitmex_perpetual API key >>>
-Enter your bitmex_perpetual secret key >>>
-Enter your bitmex_perpetual user id >>>
-```
-
-If connection is successful:
-
-```
-You are now connected to bitmex_perpetual
-```
 
 ### Order Types
 
-This connector supports the following `OrderType` constants:
-
-- `LIMIT`
-- `MARKET`
 
 ### Position Modes
 
-This connector supports the following position modes:
 
-- One-way
-- Hedge
 
-### Candles Feed
+### Testnet
 
 
 
-### Testnets
+## 🕯 Spot Candles Feed
+*Collect historical OHCLV data from this exchange's spot markets*
 
+
+
+### Usage
+
+
+
+
+
+## 🕯 Perp Candles Feed
+*Collect historical OHCLV data from this exchange's perp markets*
+
+
+### Usage
+
+
+
+## How to create API keys

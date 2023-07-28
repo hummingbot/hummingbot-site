@@ -1,52 +1,34 @@
-# `bybit`
+# Bybit
 
-**Support Hummingbot by creating an account using our [referral link](https://www.bybit.com/register)!** 🙏🙏🙏
+!!! tip "Support Hummingbot"
+    Hummingbot Foundation has a partnership with Bybit that shares some of your fees when you trade on Bybit using Hummingbot, at no cost to you. To support us, create an account using our [Bybit referral link](https://www.bybit.com/). Thank you! 🙏
 
-## ℹ️ Info
+## ℹ️ Exchange Info
 
-- Type: Centralized
-- Website: <https://www.bybit.com>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/bybit/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/bybit>
-- API docs: <https://bybit-exchange.github.io/docs/v5/intro>
-- Fees: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
-- Supported countries: 
+- **Type**: CLOB CEX
+- **Website**: https://www.bybit.com/
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/bybit/
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/bybit
+- **API docs**: https://bybit-exchange.github.io/docs/v5/intro
+- **Fees**: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
+- **Supported countries**: Available to customers worldwide, except for countries with service restrictions such as the U.S, Singapore, Cuba, Crimea, Sevastopol, Iran, Syria, North Korea, Sudan, Mainland China.
 
 ## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+- **Tier**: Bronze
+- **Maintainer**: 
 
-**Maintainer:** 
-
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
-
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
+HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
 
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bybit)
+- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bybit)
 
-### How to Connect
+### Usage
 
 From inside the Hummingbot client, run `connect bybit`:
 
@@ -63,16 +45,14 @@ If connection is successful:
 You are now connected to bybit
 ```
 
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
 
 - `LIMIT`
+- `LIMIT_MAKER`
 - `MARKET`
-
-
-
-### Candles Feed
 
 ### Paper Trading
 
@@ -86,7 +66,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 - Connection type: WebSocket
 - [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual)
 
-### How to Connect
+### Usage
 
 From inside the Hummingbot client, run `connect bybit_perpetual`:
 
@@ -104,22 +84,40 @@ If connection is successful:
 You are now connected to bybit_perpetual
 ```
 
-### Order Types
 
-This connector supports the following `OrderType` constants:
+### Order Types
 
 - `LIMIT`
 - `MARKET`
 
-### Position Modes
 
-This connector supports the following position modes:
+### Position Modes
 
 - One-way
 - Hedge
 
-### Candles Feed
+### Testnet
 
 
 
-### Testnets
+## 🕯 Spot Candles Feed
+*Collect historical OHCLV data from this exchange's spot markets*
+
+
+
+### Usage
+
+
+
+
+
+## 🕯 Perp Candles Feed
+*Collect historical OHCLV data from this exchange's perp markets*
+
+
+### Usage
+
+
+
+## How to create API keys
+

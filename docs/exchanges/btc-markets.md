@@ -1,50 +1,34 @@
-# `btc_markets`
+# BTC_Markets
 
-**Support Hummingbot by creating an account using our [referral link](https://www.btcmarkets.net)!** 🙏🙏🙏
+!!! tip "Support Hummingbot"
+    Hummingbot Foundation has a partnership with BTC_Markets that shares some of your fees when you trade on BTC_Markets using Hummingbot, at no cost to you. To support us, create an account using our [BTC_Markets referral link](https://btcmarkets.net/createaccount). Thank you! 🙏
 
-## ℹ️ Info
+## ℹ️ Exchange Info
 
-- Type: Centralized
-- Website: <https://www.btcmarkets.net/>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/btc-markets/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/btcmarkets>
-- API docs: <https://docs.btcmarkets.net/v3/>
-- Fees: <https://www.btcmarkets.net/fees>
-- Supported countries: Primarily Australia
+- **Type**: CLOB CEX
+- **Website**: https://www.btcmarkets.net/
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/btc-markets/
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/btc-markets
+- **API docs**: <https://docs.btcmarkets.net/v3/>
+- **Fees**: https://www.btcmarkets.net/fees
+- **Supported countries**: Primarily Australia
 
 ## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+- **Tier**: Bronze
+- **Maintainer**: 
 
-**Maintainer:** 
-
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
-
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-## How to create API keys
+HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
 
-- Connection type: WebSocket
-- [Connector folder:](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/btc_markets)
+- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/btc_markets)
 
-### How to Connect
+### Usage
 
 From inside the Hummingbot client, run `connect btc_markets`:
 
@@ -61,16 +45,14 @@ If connection is successful:
 You are now connected to btc_markets
 ```
 
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
 
 - `LIMIT`
+- `LIMIT_MAKER`
 - `MARKET`
-
-
-### Candles Feed
-
 
 ### Paper Trading
 
@@ -78,23 +60,42 @@ Access the [Paper Trade](/global-configs/paper-trade/) version of this connector
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 
-
 ## 🔀 Perp Connector
 *Connector to perpetual futures markets*
 
 
-### How to Connect
+
+### Usage
 
 
 ### Order Types
 
 
-
 ### Position Modes
 
 
-### Candles Feed
+
+### Testnet
 
 
-### Testnets
 
+## 🕯 Spot Candles Feed
+*Collect historical OHCLV data from this exchange's spot markets*
+
+
+
+### Usage
+
+
+
+
+
+## 🕯 Perp Candles Feed
+*Collect historical OHCLV data from this exchange's perp markets*
+
+
+### Usage
+
+
+
+## How to create API keys

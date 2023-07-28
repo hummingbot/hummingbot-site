@@ -1,55 +1,40 @@
-# `kraken`
-**Support Hummingbot by creating an account using our [referral link](https://r.kraken.com/c/2222222/687155/10583)!** 🙏🙏🙏
+# Kraken
 
-## ℹ️ Info
+!!! tip "Support Hummingbot"
+    Hummingbot Foundation has a partnership with Kraken that shares some of your fees when you trade on Kraken using Hummingbot, at no cost to you. To support us, create an account using our [Kraken referral link](https://r.kraken.com/c/1310646/687155/10583). Thank you! 🙏
 
-- Type: Centralized
-- Website: <https://www.kraken.com/>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/kraken/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/kraken>
-- API docs:  <https://docs.kraken.com/rest/>
-- API version: v1
-- Fees: https://www.kraken.com/en-us/features/fee-schedule
-- Supported countries: Information not available
+## ℹ️ Exchange Info
+
+- **Type**: CLOB CEX
+- **Website**: https://www.kraken.com/
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/kraken/
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/kraken
+- **API docs**: <https://docs.kraken.com/rest/>
+- **Fees**: <https://www.kraken.com/en-us/features/fee-schedule>
+- **Supported countries**: Worldwide
 
 ## 🛠 Maintenance
 
 ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+- **Tier**: Bronze
+- **Maintainer**: 
 
-**Maintainer:** 
+HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
-
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-## How to create API keys
-
-Information not available
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
 
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken)
+- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken)
 
-### How to Connect
+### Usage
 
 From inside the Hummingbot client, run `connect kraken`:
 
 ```
+>>> connect kraken
+
 Enter your kraken API key >>>
 Enter your kraken secret key >>>
 ```
@@ -57,7 +42,7 @@ Enter your kraken secret key >>>
 If connection is successful:
 
 ```
-You are now connected to kraken.
+You are now connected to kraken
 ```
 
 
@@ -66,11 +51,7 @@ You are now connected to kraken.
 This connector supports the following `OrderType` constants:
 
 - `LIMIT`
-- `MARKET`
-
-
-### Candles Feed
-
+- `LIMIT_MAKER`
 
 ### Paper Trading
 
@@ -78,22 +59,42 @@ Access the [Paper Trade](/global-configs/paper-trade/) version of this connector
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 
-
 ## 🔀 Perp Connector
 *Connector to perpetual futures markets*
 
 
-### How to Connect
+
+### Usage
 
 
 ### Order Types
 
 
-
 ### Position Modes
 
 
-### Candles Feed
+
+### Testnet
 
 
-### Testnets
+
+## 🕯 Spot Candles Feed
+*Collect historical OHCLV data from this exchange's spot markets*
+
+
+
+### Usage
+
+
+
+
+
+## 🕯 Perp Candles Feed
+*Collect historical OHCLV data from this exchange's perp markets*
+
+
+### Usage
+
+
+
+## How to create API keys

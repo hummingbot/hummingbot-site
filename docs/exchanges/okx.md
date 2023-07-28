@@ -37,7 +37,10 @@ HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/g
 
 ## How to create API keys
 
-Information not available
+1. Log into your OKX account and click the user icon
+2. Select API from the dropdown menu
+3. Choose the account you want to create API Keys for
+4. Click Create API Keys
 
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*

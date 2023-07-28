@@ -39,6 +39,18 @@ HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/g
 
 ## How to create API keys
 
+Log in to Phemex.com and hover over your Account name on the top right corner of the page.
+Click on API Management.
+Click the Create New API Key button on the top right side of the page.
+Choose either High Rate Limit API entry or Default API entry.
+Enter a Name and IP address.
+Select the desired level of Permission and click Confirm.
+Enter the Email Verification Code sent to you by Phemex.
+NOTE: The API Key will only display one time, please make sure to copy and save it carefully.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Mmm6kQ-Ifs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
 
