@@ -1,32 +1,37 @@
-# Kucoin
-
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a partnership with Kucoin that shares some of your fees when you trade on Kucoin using Hummingbot, at no cost to you. To support us, create an account using our [Kucoin referral link](https://www.kucoin.com/ucenter/signup?rcode=272KvRf). Thank you! 🙏
+    Hummingbot Foundation has a fee share partnership with Kucoin. When you use our software to trade on Kucoin, a custom API header tells Kucoin that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
+
+## 🛠 Connector Info
+
+- **Exchange Type**: Centralized Exchange (CEX)
+- **Market Type**: Central Limit Order Book (CLOB)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Maintainer**: Hummingbot Foundation
+
+Currently, Kucoin is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
+
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ | 
 
 ## ℹ️ Exchange Info
 
-- **Type**: CLOB CEX
 - **Website**: <https://www.kucoin.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/kucoin/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/kucoin>
-- **API docs**: <https://docs.kucoin.com>
+- **API Docs**: <https://docs.kucoin.com>
 - **Fees**: <https://www.kucoin.com/vip/level>
-- **Supported countries**: <https://www.kucoin.com/support/10247584234521> 
-
-## 🛠 Maintenance
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
-
-- **Tier**: Silver
-- **Maintainer**: Hummingbot Foundation
-
-Currently, Kucoin is a **Silver** exchange, as voted by HBOT holders in each [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
-
+- **Supported Countries**: <https://www.kucoin.com/support/10247584234521> 
 
 ## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
+*Integration to spot markets API endpoints*
 
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin)
+- **ID**: `kucoin`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin
 
 ### Usage
 
@@ -61,10 +66,11 @@ Access the [Paper Trade](/global-configs/paper-trade/) version of this connector
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
-*Connector to perpetual futures markets*
+*Integration to perpetual futures markets API endpoints*
 
-- **Connection type**: WebSocket
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/kucoin_perpetual)
+- **ID**: `kucoin_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/kucoin_perpetual
 
 ### Usage
 
@@ -99,14 +105,19 @@ This connector supports the following position modes:
 - One-way
 - Hedge
 
-### Testnet
+### Paper Trading
+
+This perp exchange offers a paper trading mode: <https://www.kucoin.com/support/7909075578521>
+
+Afer you create an account and create the API keys, you can enter them by using the `connect kucoin_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
 
 
 ## 🕯 Spot Candles Feed
 *Collect historical OHCLV data from this exchange's spot markets*
 
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_spot_candles)
-- Supported intervals: 1s | 1m | 3m | 5m | 15m | 30m | 1h | 2h | 4h | 6h | 8h | 12h | 1d | 3d | 1w | 1M
+- **ID**: `kucoin`
+- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_spot_candles
 
 ### Usage
 
@@ -123,8 +134,9 @@ See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/sc
 ## 🕯 Perp Candles Feed
 *Collect historical OHCLV data from this exchange's perp markets*
 
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles)
--  Supported Intervals: 1s | 1m | 3m | 5m | 15m | 30m | 1h | 2h | 4h | 6h | 8h | 12h | 1d | 3d | 1w | 1M
+- **ID**: `kucoin_perpetual`
+- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles
 
 ### Usage
 
@@ -138,15 +150,15 @@ In a Hummingbot script, import `CandlesFactory` to create the candles that you w
 
 See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
 
-## How to create API keys
+## 🔑 API Keys
 
-### Step 1
+**Step 1**
 
 Log in to [Kucoin](https://www.kucoin.com), click the avatar, in the drop-down menu, select **API Management** > **Create API**.
 
 ![API](kucoin-api1.png)
 
-### Step 2
+**Step 2**
 
 A window will pop up where you can choose either **API Trading** or **Link Third-Party Applications**. 
 
@@ -169,11 +181,11 @@ only have the General permissions.
 
 - To enable access to permissions, you must add your IP address to the whitelist.
 
-### Step 3
+**Step 3**
 
 A security verification will pop up. Enter your trading password, email verification code, and Google verification code.
 
-### Step 4
+**Step 4**
 
 Click the button to confirm and complete the creation.
 
