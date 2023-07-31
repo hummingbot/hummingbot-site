@@ -1,57 +1,35 @@
-# Uniswap
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://uniswap.org/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+- **Maintainer:** Hummingbot Foundation
 
-## ℹ️ Info
+Currently, Uniswap is a **Gold** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below and continually improves them to add more functionality. Gold connectors serve as the "gold standard" template for all other connectors of that type.
 
-- Type: Decentralized
-- Website: <https://uniswap.org>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/uniswap/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/uniswap>
-- API docs: <https://uniswap.org/docs/v2/API/overview/>
-- API version: 2
-- Fees: <https://docs.uniswap.org/concepts/protocol/fees>
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | ✅ |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
+- **Website**: <https://uniswap.org>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/uniswap/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/uniswap>
+- **Fees**: <https://docs.uniswap.org/concepts/protocol/fees>
 
-HBOT holders voted this exchange into the Gold tier for the current [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
+## 🔑 How to Connect
 
-**Maintainer:** Hummingbot Foundation
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `ethereum` | `mainnet`, `arbitrum_one`, `optimism`, `goerli`
+| `polygon` | `mainnet`, `mumbai`
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-* https://blog.hummingbot.org/2021-05-uniswap-v3-hummingbot-strategy/
-
-* https://blog.hummingbot.org/2020-12-amm-arbitrage-uniswap-balancer/
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D05kKp-f2vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/gateway/blob/main/src/connectors/uniswap)
-
-### How to Connect
-
-The `uniswap` connector fetches prices and creates swaps. Run `gateway connect uniswap` in order to connect your wallet:
+From inside the Hummingbot client, run `gateway connect uniswap` in order to connect your wallet:
 
 ```
 Which chain do you want uniswap to connect to? (ethereum, polygon) >>> 
@@ -64,58 +42,56 @@ If connection is successful (ethereum-mainnet):
 The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
 ```
 
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
 
-### Order Types
+- **ID**: `uniswap`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: <https://docs.uniswap.org/sdk/v2/overview>
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswap
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml
 
+### Endpoints
 
-### Candles Feed
+- `/amm/price`
+- `/amm/trade`
+- `/amm/estimateGas`
 
-### Paper Trading
+For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
 
+## 3️⃣ Range AMM Connector
+*Integration to this DEX's concentrated liquidity range provision endpoints*
 
-## 🔀 Perp Connector
+- **ID**: `uniswaplp`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: <https://docs.uniswap.org/sdk/v3/overview>
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswaplp
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml
 
+### Endpoints
 
-### Order Types
+- `/amm/liquidity/price`
+- `/amm/liquidity/add`
+- `/amm/liquidity/remove`
+- `/amm/liquidity/position`
+- `/amm/liquidity/collect_fees`
 
+For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
 
-### Position Modes
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
+- **ID**: `uniswap_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
-### Candles Feed
+### Usage
 
-
-### Testnets
-
-[Ethereum:](/chains/ethereum) goerli
-
-Run `gateway connect uniswap` in order to connect your wallet to the goerli testnet:
-
-```
-Which chain do you want uniswap to connect to? (ethereum, polygon) >>> ethereum
-Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>  goerli
-Enter your ethereum-mainnet private key >>>>` XXXXXX
-```
-
-If connection is successful (ethereum-goerli):
-
-```
-The uniswap connector now uses wallet [pubKey] on ethereum-goerli
-```
-
-[Polygon:](/chains/polygon) mumbai
-
-Run `gateway connect uniswap` in order to connect your wallet to the goerli testnet:
-
-```
-Which chain do you want uniswap to connect to? (ethereum, polygon) >>> polygon
-Which network do you want uniswap to connect to? (mainnet, mumbai) >>>  mumbai
-Enter your ethereum-mainnet private key >>>> XXXXXX
-```
-
-
-If connection is successful (polygon-mumbai):
-
-```
-The uniswap connector now uses wallet [pubKey] on polygon-mumbai
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="uniswap_polygon_mainnet",
+        trading_pairs={"WETH-USDC", "WETH-DAI"},
+        order_amount_in_base=Decimal("1"),
+    )
 ```

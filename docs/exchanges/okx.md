@@ -13,9 +13,9 @@ Currently, OKX is a **Bronze** exchange, as voted by HBOT holders in each quarte
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ |
-| [🔀 Perp Connector](#perp-connector) | N/A |
-| [🕯 Spot Candles Feed](#spot-candles-feed) | N/A | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | N/A | 
+| [🔀 Perp Connector](#perp-connector) | Not built |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
 ## ℹ️ Exchange Info
 
@@ -26,14 +26,16 @@ Currently, OKX is a **Bronze** exchange, as voted by HBOT holders in each quarte
 - **Fees**: https://www.okx.com/fees
 - **Supported Countries**: Not available
 
-## 🔀 Spot Connector
-*Integration to spot markets API endpoints*
+## 🔑 How to Connect
 
-- **ID**: `okx`
-- **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx
+### Generate API Keys
 
-### Usage
+1. Log into your OKX account and click the user icon
+2. Select API from the dropdown menu
+3. Choose the account you want to create API Keys for
+4. Click Create API Keys
+
+### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect okx`:
 
@@ -51,6 +53,13 @@ If connection is successful:
 You are now connected to okx.
 ```
 
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `okx`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
@@ -63,11 +72,3 @@ This connector supports the following `OrderType` constants:
 Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect okx_paper_trade` instead of `connect okx`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
-
-## 🔑 API Keys
-
-1. Log into your OKX account and click the user icon
-2. Select API from the dropdown menu
-3. Choose the account you want to create API Keys for
-4. Click Create API Keys
-

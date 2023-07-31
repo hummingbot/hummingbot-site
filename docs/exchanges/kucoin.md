@@ -26,131 +26,9 @@ Currently, Kucoin is a **Silver** exchange, as voted by HBOT holders in each qua
 - **Fees**: <https://www.kucoin.com/vip/level>
 - **Supported Countries**: <https://www.kucoin.com/support/10247584234521> 
 
-## 🔀 Spot Connector
-*Integration to spot markets API endpoints*
+## 🔑 How to Connect
 
-- **ID**: `kucoin`
-- **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin
-
-### Usage
-
-From inside the Hummingbot client, run `connect kucoin`:
-
-```
->>> connect kucoin
-
-Enter your kucoin API key >>>
-Enter your kucoin secret key >>>
-Enter your kucoin passphrase >>>
-```
-
-If connection is successful:
-
-```
-You are now connected to kucoin
-```
-
-### Order Types
-
-This connector supports the following `OrderType` constants:
-
-- `LIMIT`
-- `LIMIT_MAKER`
-- `MARKET`
-
-### Paper Trading
-
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect kucoin_paper_trade` instead of `connect kucoin`.
-
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
-
-## 🔀 Perp Connector
-*Integration to perpetual futures markets API endpoints*
-
-- **ID**: `kucoin_perpetual`
-- **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/kucoin_perpetual
-
-### Usage
-
-From inside the Hummingbot client, run `connect kucoin_perpetual`:
-
-```
->>> connect kucoin_perpetual
-
-Enter your kucoin_perpetual API key >>>
-Enter your kucoin_perpetual secret key >>>
-Enter your kucoin_perpetual passphrase >>>
-```
-
-If connection is successful:
-
-```
-You are now connected to kucoin_perpetual
-```
-
-### Order Types
-
-This connector supports the following `OrderType` constants:
-
-- `LIMIT`
-- `LIMIT_MAKER`
-- `MARKET`
-
-### Position Modes
-
-This connector supports the following position modes:
-
-- One-way
-- Hedge
-
-### Paper Trading
-
-This perp exchange offers a paper trading mode: <https://www.kucoin.com/support/7909075578521>
-
-Afer you create an account and create the API keys, you can enter them by using the `connect kucoin_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
-
-
-## 🕯 Spot Candles Feed
-*Collect historical OHCLV data from this exchange's spot markets*
-
-- **ID**: `kucoin`
-- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_spot_candles
-
-### Usage
-
-In a Hummingbot script, import `CandlesFactory` to create the candles that you want:
-```python
-    from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
-    candles = CandlesFactory.get_candle(connector="kucoin",
-                                        trading_pair="ETH-USDT",
-                                        interval="1m", max_records=50)
-```
-
-See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
-
-## 🕯 Perp Candles Feed
-*Collect historical OHCLV data from this exchange's perp markets*
-
-- **ID**: `kucoin_perpetual`
-- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles
-
-### Usage
-
-In a Hummingbot script, import `CandlesFactory` to create the candles that you want:
-```python
-    from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
-    candles = CandlesFactory.get_candle(connector="kucoin_perpetual",
-                                        trading_pair=trading_pair,
-                                        interval="3m", max_records=50)
-```
-
-See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
-
-## 🔑 API Keys
+### Generate API Keys
 
 **Step 1**
 
@@ -192,3 +70,108 @@ Click the button to confirm and complete the creation.
 ![confirm](kucoin-api4.png)
 
 ![api complete](kucoin-api5.png)
+
+### Add Keys to Hummingbot
+
+From inside the Hummingbot client, run `connect kucoin`:
+
+```
+>>> connect kucoin
+
+Enter your kucoin API key >>>
+Enter your kucoin secret key >>>
+Enter your kucoin passphrase >>>
+```
+
+If connection is successful:
+
+```
+You are now connected to kucoin
+```
+
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `kucoin`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect kucoin_paper_trade` instead of `connect kucoin`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+
+## 🔀 Perp Connector
+*Integration to perpetual futures markets API endpoints*
+
+- **ID**: `kucoin_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/kucoin_perpetual
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Position Modes
+
+This connector supports the following position modes:
+
+- One-way
+- Hedge
+
+### Paper Trading
+
+This perp exchange offers a paper trading mode: <https://www.kucoin.com/support/7909075578521>
+
+Afer you create an account and create the API keys, you can enter them by using the `connect kucoin_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
+
+## 🕯 Spot Candles Feed
+*Collect historical OHCLV data from this exchange's spot markets*
+
+- **ID**: `kucoin`
+- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_spot_candles
+
+### Usage
+
+In a Hummingbot script, import `CandlesFactory` to create the candles that you want:
+```python
+    from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
+    candles = CandlesFactory.get_candle(connector="kucoin",
+                                        trading_pair="ETH-USDT",
+                                        interval="1m", max_records=50)
+```
+
+See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
+
+## 🕯 Perp Candles Feed
+*Collect historical OHCLV data from this exchange's perp markets*
+
+- **ID**: `kucoin_perpetual`
+- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles
+
+### Usage
+
+In a Hummingbot script, import `CandlesFactory` to create the candles that you want:
+```python
+    from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
+    candles = CandlesFactory.get_candle(connector="kucoin_perpetual",
+                                        trading_pair=trading_pair,
+                                        interval="3m", max_records=50)
+```
+
+See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.

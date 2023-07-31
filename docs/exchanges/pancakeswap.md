@@ -1,99 +1,77 @@
-# PancakeSwap
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://pancakeswap.finance/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Maintainer:** Hummingbot Foundation
 
-## ℹ️ Info
+Currently, PancakeSwap is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
 
-- Type: Decentralized
-- Website: <https://pancakeswap.finance>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/pancakeswap/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/pancakeswap>
-- API docs: https://github.com/pancakeswap/pancake-info-api/blob/develop/v2-documentation.md
-- API version:
-- SDK: https://github.com/pancakeswap/pancake-frontend/tree/develop/packages/swap-sdk
-- Fees: Not specified
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Website**: <https://pancakeswap.finance>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/pancakeswap/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/pancakeswap>
+- **Fees**: <https://docs.pancakeswap.finance/products/pancakeswap-exchange/pancakeswap-pools>
 
-HBOT holders voted this exchange into the Silver tier for the current [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
+## 🔑 How to Connect
 
-**Maintainer:** Hummingbot Foundation
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `binance-smart-chain` | `mainnet`, `testnet`
 
-**Current and Upcoming**
-
-Pancakeswap is supported on [Hummingbot dMiner](https://dminer.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-* [PancakeSwap Blog](https://docs.pancakeswap.finance/)
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-The `pancakeswap` connector fetches prices and creates swaps. Run `gateway connect pancakeswap` in order to connect your wallet:
+From inside the Hummingbot client, run `gateway connect pancakeswap` in order to connect your wallet:
 
 ```
 Which chain do you want pancakeswap to connect to? (binance-smart-chain) >>> 
 Which network do you want pancakeswap to connect to? (mainnet, testnet) >>>
-Enter your BSC-mainnet private key >>>>
+Enter your binance-smart-chain-mainnet private key >>>>
 ```
 
-If connection is successful (BSC-mainnet):
+If connection is successful (binance-smart-chain-mainnet):
 ```
 The pancakeswap connector now uses wallet [pubKey] on binance-smart-chain-mainnet
 ```
 
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
 
-### Order Types
+- **ID**: `pancakeswap`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: <https://docs.pancakeswap.finance/>
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/pancakewwap
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/pancakewwap.yml
 
+### Endpoints
 
-### Candles Feed
+- `/amm/price`
+- `/amm/trade`
+- `/amm/estimateGas`
 
-### Paper Trading
+For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
 
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
-## 🔀 Perp Connector
+- **ID**: `pancakeswap_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
+### Usage
 
-### Order Types
-
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
-
-* [BSC](/chains/bsc): `mainnet`, `testnet`
-
-Run `gateway connect pancakeswap` in order to connect your wallet to the testnet:
-
-```
-Which chain do you want pancakeswap to connect to? (BSC) >>> binance-smart-chain
-Which network do you want pancakeswap to connect to? (mainnet, testnet) >>> testnet
-Enter your ethereum-mainnet private key >>>>` XXXXXX
-```
-
-If connection is successful (BSC-testnet):
-
-```
-The pancakeswap connector now uses wallet [pubKey] on binance-smart-chain-testnet
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="pancakeswap_binance_smart_chain_mainnet",
+        trading_pairs={"WBNB-USDT", "CAKE-USDT"},
+        order_amount_in_base=Decimal("1"),
+    )
 ```
