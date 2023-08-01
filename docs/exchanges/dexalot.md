@@ -1,7 +1,7 @@
 ## 🛠 Connector Info
 
 - **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Automatic Market Maker (AMM)
+- **Market Type**: Central Limit Order Book (CLOB)
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 - **Maintainer:** Hummingbot Foundation
 
@@ -56,9 +56,10 @@ The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 
 ### Endpoints
 
-- `/amm/price`
-- `/amm/trade`
-- `/amm/estimateGas`
+- `/clob/orders`
+- `/clob/batchOrders`
+- `/chain/balances`
+- `/chain/poll`
 
 For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
 
