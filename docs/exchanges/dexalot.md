@@ -1,55 +1,32 @@
-# Dexalot
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://dexalot.com/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Maintainer:** Hummingbot Foundation
 
-## ℹ️ Info
+Currently, Dexalot is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
 
-- Type: Decentralized
-- Website: <https://dexalot.com>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/dexalot/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/dexalot>
-- API docs: <https://docs.dexalot-test.com/apiv>
-- API version: 2
-- Fees: Information not available
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Website**: <https://dexalot.finance>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dexalot/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dexalot>
+- **Fees**: <https://docs.dexalot.finance/products/dexalot-exchange/dexalot-pools>
 
-HBOT holders voted this exchange into the Silver tier for the current [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
+## 🔑 How to Connect
 
-**Maintainer:** Hummingbot Foundation
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
-
-**Current and Upcoming**
-
-Dexalot is supported on [Hummingbot dMiner](https://dminer.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
-
-**Past**
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-* [Dexalot-Hummingbot Stepping Stones Part I](https://medium.com/dexalot/dexalot-hummingbot-stepping-stones-part-i-a47f60dd6228)
-* [Dexalot-Hummingbot Stepping Stones Part II](https://medium.com/dexalot/dexalot-hummingbot-stepping-stones-part-ii-623cefd8cca1)
-* [Dexalot-Hummingbot Stepping Stones Part III](https://medium.com/dexalot/dexalot-hummingbot-stepping-stones-part-iii-740db136c588)
-
-
-## How to create API keys
-
-!!! note "Getting Dexalot API Keys"
-    A Dexalot API key is not necessary to use the connector, but having an API key allows more bot instances per IP address. You can request an API key by contacting the Dexalot team at support@dexalot.com.
-
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
+| Chain | Networks | 
+| ----- | -------- |
+| `avalanche` | `dexalot`
 
 Run `gateway connect dexalot` in order to connect your wallet:
 
@@ -68,24 +45,37 @@ The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 ```
 
 
-### Order Types
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
 
+- **ID**: `dexalot`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: https://docs.dexalot-test.com/api
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/dexalot
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/dexalot.yml
 
-### Candles Feed
+### Endpoints
 
-### Paper Trading
+- `/amm/price`
+- `/amm/trade`
+- `/amm/estimateGas`
 
+For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
 
-## 🔀 Perp Connector
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
+- **ID**: `dexalot_avalanche_dexalot
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
-### Order Types
+### Usage
 
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="dexalot_avalanche_dexalot",
+        trading_pairs={"WBNB-USDT", "CAKE-USDT"},
+        order_amount_in_base=Decimal("1"),
+    )
+```

@@ -1,52 +1,42 @@
-# dYdX
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://trade.dydx.exchange/r/2P8N)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Maintainer:** Hummingbot Foundation
 
-## ℹ️ Info
+Currently, dYdX is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
 
-- Type: Decentralized
-- Website: <https://dydx.exchange/>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/dydx/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/dydx>
-- API docs: <https://docs.dydx.exchange/>
-- API version: 3
-- Fees: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
-- Supported countries: Global with some exceptions (Check [here](https://dydx.exchange/terms) for more details)
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ | 
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Website**: <https://dydx.exchange>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dydx/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx>
+- **Fees**: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
 
-HBOT holders voted this exchange into the Silver tier for the current [Epoch](/governance/epochs). Silver exchanges are maintained and updated by Hummingbot Foundation via [Bounties](/governance/polls), tracking improvements made to the Gold exchanges.
 
-**Maintainer:** Hummingbot Foundation
+## 🔑 How to Connect
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+Create a wallet on one of the supported networks below:
 
-**Current and Upcoming**
+| Chain | Networks | 
+| ----- | -------- |
+| `ethereum` | `mainnet`, `goerli test network`
 
-dYdX is supported on [Hummingbot Miner](https://dminer.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
+From inside the Hummingbot client, run `connect dydx_perpetual` in Hummingbot in order to connect your wallet:
 
-**Past**
+You will need the following to connect Hummingbot to `dydx_perpetual`:
 
-* [dYdX Bounty Hunt](https://blog.hummingbot.org/2021-07-dydx-perpetual-strategy-bounty-hunt/)
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T1rsNcFD5Cw" title="HOW TO BECOME A CRYPTO MARKET MAKER IN LESS THAN 30 MINUTES - on dYdX using Hummingbot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zkoxtnZ0KvE" title="dYdX + Hummingbot Development Bounty AMA w/ Corey Miller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E_M_SUAP3Zo" title="Hedge in Market Making using dYdX Perpetuals | Trader Strategies |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
-
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual)
-
+* API key
+* API secret key
+* Passphrase
+* Account number: set this value to `0`
+* Stark private key
 
 ## How to create API keys
 
@@ -62,33 +52,29 @@ Alternatively, you can follow these steps to get the required credentials:
 3. Select **STARK_KEY_PAIRS** and click the drop-down next to your wallet address to get the stark private key
 4. Select **API_KEY_PAIRS** and click the drop-down next to your wallet address to get the API key, secret key, and passphrase
 
+## 🔀 Perp Connector
+*Integration to perpetual futures markets API endpoints*
 
-### How to Connect
-
-Run `connect dydx_perpetual` in Hummingbot in order to add your API keys.
-
-You will need the following to connect Hummingbot to `dydx_perpetual`:
-
-* API key
-* API secret key
-* Passphrase
-* Account number: set this value to `0`
-* Stark private key
+- **ID**: `dydx_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual
 
 ### Order Types
 
-### Candles Feed
+This connector supports the following `OrderType` constants:
 
-### Paper Trading
-
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
 
 ### Position Modes
 
 This connector supports the following position modes:
 
 - One-way
-- Hedge
 
-### Candles Feed
+### Paper Trading
 
-### Testnets
+This perp exchange offers a paper trading mode: https://trade.stage.dydx.exchange/portfolio/overview
+
+Users can trade on the testnet using the link above, however the testnet is not compatible with Hummingbot
