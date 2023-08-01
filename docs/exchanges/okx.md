@@ -3,8 +3,8 @@
 
 ## 🛠 Connector Info
 
-- **Exchange Type**: Centralized Exchange (CEX)
-- **Market Type**: Central Limit Order Book (CLOB)
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 - **Maintainer**: None
 

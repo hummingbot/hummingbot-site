@@ -56,7 +56,7 @@ The pancakeswap connector now uses wallet [pubKey] on binance-smart-chain-mainne
 - `/amm/trade`
 - `/amm/estimateGas`
 
-For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
 ## 🕯 AMM Data Feed
 *Data feed of this exchange's real-time prices*

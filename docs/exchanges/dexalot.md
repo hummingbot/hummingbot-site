@@ -1,7 +1,7 @@
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Central Limit Order Book (CLOB)
+- **Exchange Type**: Decentralized Exchange (**DEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 - **Maintainer:** Hummingbot Foundation
 
@@ -9,8 +9,8 @@ Currently, Dexalot is a **Silver** exchange, as voted by HBOT holders in each qu
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
-| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | Not available
 | [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
 ## ℹ️ Exchange Info
@@ -18,6 +18,7 @@ Currently, Dexalot is a **Silver** exchange, as voted by HBOT holders in each qu
 - **Website**: <https://dexalot.finance>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dexalot/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/dexalot>
+- **API Docs**: <https://docs.dexalot.com/>
 - **Fees**: <https://docs.dexalot.finance/products/dexalot-exchange/dexalot-pools>
 
 ## 🔑 How to Connect
@@ -28,7 +29,7 @@ Create a wallet on one of the supported networks below:
 | ----- | -------- |
 | `avalanche` | `dexalot`
 
-Run `gateway connect dexalot` in order to connect your wallet:
+From inside the Hummingbot client, run `gateway connect dexalot` in order to connect your wallet:
 
 ```
 Which chain do you want dexalot to connect to? (avalanche) >>>
@@ -45,8 +46,8 @@ The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 ```
 
 
-## 2️⃣ AMM Connector
-*Integration to this DEX's swap pricing and execution endpoints*
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
 
 - **ID**: `dexalot`
 - **Connection Type**: REST via [Gateway](/gateway)
@@ -61,12 +62,12 @@ The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 - `/chain/balances`
 - `/chain/poll`
 
-For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
 ## 🕯 AMM Data Feed
 *Data feed of this exchange's real-time prices*
 
-- **ID**: `dexalot_avalanche_dexalot
+- **ID**: `dexalot_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
@@ -76,7 +77,7 @@ For more info, run Gateway and go to https:localhost:8080 in your browser to see
 from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
 prices = AmmGatewayDataFeed(
         connector_chain_network="dexalot_avalanche_dexalot",
-        trading_pairs={"WBNB-USDT", "CAKE-USDT"},
+        trading_pairs={"WAVAX-USDC", "ALOT-USDC"},
         order_amount_in_base=Decimal("1"),
     )
 ```

@@ -13,7 +13,9 @@ Currently, Ascendex is a **Silver** exchange, as voted by HBOT holders in each q
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
-| [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ | 
+| [🔀 Perp Connector](#perp-connector) | Not built | API only allows institutional accounts |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ |
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built |
 
 ## ℹ️ Exchange Info
 

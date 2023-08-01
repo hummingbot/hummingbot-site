@@ -20,7 +20,7 @@ Currently, Gate.io is a **Silver** exchange, as voted by HBOT holders in each qu
 ## ℹ️ Exchange Info
 
 - **Website**: <https://www.gate.io>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/gate-io/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/gate-io>
 - **API Docs**: <https://www.gate.io/docs/apiv4/en/index.html>
 - **Fees**: <https://www.gate.io/fee?>
@@ -143,7 +143,7 @@ Users can use the perpetual testnet by clicking on the link above - however the 
 *Collect historical OHCLV data from this exchange's spot markets*
 
 - **ID**: `gate_io`
-- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
+- **Supported Intervals**: `10s` | `1m` | `5m` | `15m` | `30m` | `1h` | `2h` | `4h` | `6h` | `8h` | `12h` |  `1d` | `7d` | `30d`
 - **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/gate_io_spot_candles
 
 ### Usage
@@ -162,7 +162,7 @@ See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/sc
 *Collect historical OHCLV data from this exchange's perp markets*
 
 - **ID**: `gate_io_perpetual`
-- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
+- **Supported Intervals**: `1m` | `5m` | `15m` | `30m` | `1h` | `2h` | `4h` | `6h` | `8h` | `12h` |  `1d` | `7d`
 - **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/gate_io_perpetual_candles
 
 ### Usage

@@ -195,13 +195,15 @@ nav:
       - PMM Scripts: scripts/pmm-scripts.md
     - Exchanges:
       - Exchanges: exchanges/index.md
-      - Binance: exchanges/binance.md
-      - Uniswap: exchanges/uniswap.md
-      - Kucoin: exchanges/kucoin.md
-      - Gate.io: exchanges/gate-io.md
-      - AscendEX: exchanges/ascend-ex.md
+      - Binance 🥇: exchanges/binance/index.md
+      - Uniswap 🥇: exchanges/uniswap.md
+      - Kucoin 🥈: exchanges/kucoin/index.md
+      - Gate.io 🥈: exchanges/gate-io/index.md
+      - AscendEX 🥈: exchanges/ascendex/index.md
+      - dYdX 🥈: exchanges/dydx.md
+      - Pancakeswap 🥈: exchanges/pancakeswap.md
+      - Dexalot 🥈: exchanges/dexalot.md
       - Quickswap: exchanges/quickswap.md
-      - dYdX: exchanges/dydx-perpetual.md
       - TraderJoe: exchanges/traderjoe.md
       - AltMarkets: exchanges/altmarkets.md
       - Binance US: exchanges/binance-us.md
@@ -217,9 +219,7 @@ nav:
       - BTC Markets: exchanges/btc-markets.md
       - Coinbase: exchanges/coinbase.md
       - Defira: exchanges/defira.md
-      - Dexalot: exchanges/dexalot.md
       - HitBTC: exchanges/hitbtc.md
-      - Hotbit: exchanges/hotbit.md
       - Huobi: exchanges/huobi.md
       - Injective: exchanges/injective.md
       - Injective (perp): exchanges/injective-perpetual.md
@@ -230,7 +230,6 @@ nav:
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx.md
       - OpenOcean: exchanges/openocean.md
-      - Pancakeswap: exchanges/pancakeswap.md
       - Pangolin: exchanges/pangolin.md
       - Perpetual Protocol: exchanges/perp.md
       - Phemex (perp): exchanges/phemex-perpetual.md
