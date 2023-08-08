@@ -95,7 +95,7 @@ Users of the Docker version of Hummingbot can update their instances to the late
 See [Useful Docker Commands](/installation/docker/#useful-docker-commands) for how to manage your containers. For example, you can update the Compose project for the latest images:
 
 ```
-docker compose up --force-recreate --build -d
+docker pull hummingbot/hummingbot
 ```
 
 ### Source

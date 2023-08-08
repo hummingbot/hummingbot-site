@@ -9,7 +9,7 @@ See the following repos for more information:
 
 Watch the February 2023 [community call](/#community-calls) that contains a demo of this feature:
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/O64Br_gMPhM&start=954" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O64Br_gMPhM" title="Bot Orchestration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **Thanks to [klpanagi](https://github.com/klpanagi) and [TheHolyRoger](https://github.com/TheHolyRoger) for your work! 🙏**
 
