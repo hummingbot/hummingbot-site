@@ -1,6 +1,3 @@
-!!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with MEXC. When you use our software to trade on MEXC, a custom API header tells MEXC that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
-
 ## 🛠 Connector Info
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
