@@ -1,40 +1,42 @@
-# HitBTC
-
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a partnership with HitBTC that shares some of your fees when you trade on HitBTC using Hummingbot, at no cost to you. To support us, create an account using our [HitBTC referral link](https://hitbtc.com/?ref_id=5a5b798c2035c). Thank you! 🙏
+    Hummingbot Foundation has a fee share partnership with HitBTC. When you use our software to trade on HitBTC, a custom API header tells HitBTC that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
+
+## 🛠 Connector Info
+
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: None
+
+Currently, HitBTC is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
+
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | Not available |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
 ## ℹ️ Exchange Info
 
-- **Type**: CLOB CEX
-- **Website**: https://hitbtc.com/
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/hitbtc/
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/hitbtc
-- **API docs**: https://api.hitbtc.com/
+- **Website**: <https://www.hitbtc.com/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/hitbtc/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/hitbtc>
+- **API Docs**: <https://api.hitbtc.com/>
 - **Fees**: <https://hitbtc.com/fee-tier>
-- **Supported countries**: Worldwide
+- **Supported Countries**: Not available
 
-## 🛠 Maintenance
+## 🔑 How to Connect
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-
-- **Tier**: Bronze
-- **Maintainer**: 
-
-HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+### Generate API Keys
 
 
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
 
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc)
-
-### Usage
+### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect hitbtc`:
 
 ```
->>> connect hitbtc
-
 Enter your hitbtc API key >>>
 Enter your hitbtc secret key >>>
 ```
@@ -46,6 +48,13 @@ You are now connected to hitbtc
 ```
 
 
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `hitbtc`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
@@ -53,49 +62,11 @@ This connector supports the following `OrderType` constants:
 - `LIMIT`
 - `LIMIT_MAKER`
 
+
 ### Paper Trading
 
 Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect hitbtc_paper_trade` instead of `connect hitbtc`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
-
-
-
-### Usage
-
-
-### Order Types
-
-
-### Position Modes
-
-
-
-### Testnet
-
-
-
-## 🕯 Spot Candles Feed
-*Collect historical OHCLV data from this exchange's spot markets*
-
-
-
-### Usage
-
-
-
-
-
-## 🕯 Perp Candles Feed
-*Collect historical OHCLV data from this exchange's perp markets*
-
-
-### Usage
-
-
-
-## How to create API keys
 

@@ -1,62 +1,35 @@
-# `perpetual_protocol_perpetual`
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://perp.fi/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (**DEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-## ℹ️ Info
+Currently, Perpetual Protocol is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Decentralized
-- Website: https://perp.com/
-- CoinMarketCap: https://coinmarketcap.com/exchanges/perpetual-protocol/
-- CoinGecko: https://www.coingecko.com/en/exchanges/perpetual_protocol
-- API docs: <https://perp.com/developers>
-- SDK: <https://github.com/perpetual-protocol/sdk-curie>
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | Not available |
+| [🔀 Perp Connector](#perp-connector) | ✅
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ | 
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: https://perp.com/
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/perpetual-protocol/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/perpetual_protocol>
+- **API Docs**: <https://perp.com/developers>
+- **Fees**: 
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** 
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `ethereum` | `optimism`
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### Order Types
-
-
-### Candles Feed
-
-### Paper Trading
-
-
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
-
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/gateway/tree/main/src/connectors/perp)
-
-### How to Connect
+From inside the Hummingbot client, run `gateway connect perpetual_protocol` in order to connect your wallet:
 
 ```
 Which chain do you want perp to connect to? (ethereum) >>>
@@ -70,13 +43,41 @@ The perp connector now uses wallet [pubKey] on ethereum-optimism
 ```
 
 
-### Order Types
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
 
+- **ID**: `perpetualprotocol`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: https://docs.perpetualprotocol-test.com/api
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/perp
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/perp.yml
 
-### Position Modes
+### Endpoints
 
+- `/amm/perp/market-prices`
+- `/amm/perp/market-status`
+- `/amm/perp/pairs`
+- `/amm/perp/position`
+- `/amm/perp/balance`
+- `/amm/perp/open`
+- `/amm/perp/close`
 
-### Candles Feed
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
-### Testnets
+- **ID**: `perpetualprotocol_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+
+### Usage
+
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="perp_ethereum_optimism",
+        trading_pairs={"WAVAX-USDC", "PERP-USDC"},
+        order_amount_in_base=Decimal("1"),
+    )
+```

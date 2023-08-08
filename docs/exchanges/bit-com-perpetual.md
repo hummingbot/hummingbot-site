@@ -1,77 +1,37 @@
-# `bit_com_perpetual`
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://www.bit.com/inviteFriends/agentSign?code=DTAJEMHPGN&lang=en-us)!** 🙏🙏🙏
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: [CoinAlpha](https://coinalpha.com)
 
-## ℹ️ Info
+Currently, Bit Perpetual is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Centralized
-- Website: <https://www.bit.com>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/bit-com/>
-- CoinGecko: https://www.coingecko.com/en/exchanges/bit_futures
-- API docs: https://www.bit.com/docs/en-us/linear_futures.html
-- Fees: https://helpcenter.bit.com/hc/en-us/articles/10740865746969-1-How-much-is-Spot-Trading-Fees-
-- Supported countries: 
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | Not available |
+| [🔀 Perp Connector](#perp-connector) | ✅ |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: <https://www.bit.com>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bit-com/>
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/bit_futures
+- **API Docs**: https://www.bit.com/docs/en-us/linear_futures.html
+- **Fees**: https://helpcenter.bit.com/hc/en-us/articles/10740865746969-1-How-much-is-Spot-Trading-Fees-
+- **Supported Countries**: Not available
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** 
+### Generate API Keys
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+### Add Keys to Hummingbot
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
-
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-
-
-### Order Types
-
-
-
-
-### Candles Feed
-
-### Paper Trading
-
-
-
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
-
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bit_com_perpetual)
-
-### How to Connect
-
-From inside the Hummingbot client, run `connect bit_com_perpetual`:
+From inside the Hummingbot client, run `connect bitcom_perpetual`:
 
 ```
->>> connect bit_com_perpetual
-
 Enter your bit_com_perpetual API key >>>
 Enter your bit_com_perpetual secret key >>>
 Enter your bit_com_perpetual user id >>>
@@ -82,6 +42,12 @@ If connection is successful:
 ```
 You are now connected to bit_com_perpetual
 ```
+## 🔀 Perp Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `bit_com_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bit_com_perpetual
 
 ### Order Types
 
@@ -90,15 +56,7 @@ This connector supports the following `OrderType` constants:
 - `LIMIT`
 - `MARKET`
 
-### Position Modes
+### Paper Trading
+```
 
-This connector supports the following position modes:
-
-- One-way
-- Hedge
-
-### Candles Feed
-
-
-
-### Testnets
+Note: I've replaced the URLs and other references to "Bitget" with "Bit-com". If there are specific URLs or other details for Bit-com that differ from the ones provided, you'll need to update them accordingly.

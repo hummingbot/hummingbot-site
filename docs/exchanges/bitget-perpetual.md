@@ -1,77 +1,40 @@
-# `bitget_perpetual`
+!!! tip "Support Hummingbot"
+    Hummingbot Foundation has a fee share partnership with Bitget Perpetual. When you use our software to trade on Bitget Perpetual, a custom API header tells Bitget Perpetual that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
-**Support Hummingbot by creating an account using our [referral link](https://www.bitget.com/en/invite-register?invite_code=xxxxxx)!** 🙏🙏🙏
+## 🛠 Connector Info
 
-## ℹ️ Info
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: [CoinAlpha](https://coinalpha.com)
 
-- Type: Centralized
-- Website: <https://www.bitget.com>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/bitget/>
-- CoinGecko: https://www.coingecko.com/en/exchanges/bitget
-- API docs: https://bitgetlimited.github.io/apidoc/en/spot/#welcome
-- Fees: https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget
-- Supported countries: 
+Currently, Bitget Perpetual is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-## 🛠 Maintenance
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | Not available |
+| [🔀 Perp Connector](#perp-connector) | ✅ |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+## ℹ️ Exchange Info
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+- **Website**: <https://www.bitget.com/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bitget/>
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/bitget
+- **API Docs**: https://bitgetlimited.github.io/apidoc/en/spot/#welcome
+- **Fees**: https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget
+- **Supported Countries**: Not available
 
-**Maintainer:** [CoinAlpha](https://coinalpha.com)
+## 🔑 How to Connect
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+### Generate API Keys
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
-
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-
-
-### Order Types
-
-
-
-
-### Candles Feed
-
-### Paper Trading
-
-
-
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
-
-- Connection type: WebSocket
-- [Connector folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitget_perpetual)
-
-### How to Connect
+### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect bitget_perpetual`:
 
 ```
->>> connect bitget_perpetual
-
 Enter your bitget_perpetual API key >>>
 Enter your bitget_perpetual secret key >>>
 Enter your bitget_perpetual user id >>>
@@ -83,11 +46,19 @@ If connection is successful:
 You are now connected to bitget_perpetual
 ```
 
+## 🔀 Perp Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `bitget_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitget_perpetual
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
 
 - `LIMIT`
+- `LIMIT_MAKER`
 - `MARKET`
 
 ### Position Modes
@@ -95,10 +66,7 @@ This connector supports the following `OrderType` constants:
 This connector supports the following position modes:
 
 - One-way
-- Hedge
 
-### Candles Feed
-
+### Paper Trading
 
 
-### Testnets

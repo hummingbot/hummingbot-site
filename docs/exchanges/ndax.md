@@ -1,36 +1,43 @@
-# NDAX
-
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a partnership with NDAX that shares some of your fees when you trade on NDAX using Hummingbot, at no cost to you. To support us, create an account using our [NDAX referral link](https://www.ndax.io/register?inviteCode=123456). Thank you! 🙏
+    Hummingbot Foundation has a fee share partnership with NDAX. When you use our software to trade on NDAX, a custom API header tells NDAX that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
+
+## 🛠 Connector Info
+
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: None
+
+Currently, NDAX is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
+
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | Not built |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
 ## ℹ️ Exchange Info
 
-- **Type**: CLOB CEX
-- **Website**: https://www.ndax.io/
+- **Website**: <https://www.ndax.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ndax/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/ndax>
-- **API docs**: https://apidoc.ndax.io/
+- **API Docs**: https://apidoc.ndax.io/
 - **Fees**: <https://ndax.io/fees>
-- **Supported countries**: Canada
+- **Supported Countries**: Not available
 
-## 🛠 Maintenance
+## 🔑 How to Connect
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+### Generate API Keys
 
-- **Tier**: Bronze
-- **Maintainer**: [CoinAlpha](https://coinalpha.com)
+1. Log into your NDAX account and click the user icon
+2. Select API from the dropdown menu
+3. Choose the account you want to create API Keys for
+4. Click Create API Keys
 
-HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+### Add Keys to Hummingbot
 
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
-
-### Usage
-
-Run `connect ndax` in order to enter your API keys:
+From inside the Hummingbot client, run `connect ndax`:
 
 ```
 Enter your ndax user ID (uid) >>>
@@ -46,6 +53,13 @@ You are now connected to ndax.
 ```
 
 
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `ndax`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
@@ -59,52 +73,4 @@ This connector supports the following `OrderType` constants:
 Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect ndax_paper_trade` instead of `connect ndax`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
-
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
-
-
-
-### Usage
-
-
-### Order Types
-
-
-### Position Modes
-
-
-
-### Testnet
-
-
-
-## 🕯 Spot Candles Feed
-*Collect historical OHCLV data from this exchange's spot markets*
-
-
-
-### Usage
-
-
-
-
-
-## 🕯 Perp Candles Feed
-*Collect historical OHCLV data from this exchange's perp markets*
-
-
-### Usage
-
-
-
-## How to create API keys
-
-To get started with NDAX's API, you need to have an NDAX account. Once you have an account, you can generate an API key from your account settings. To generate API keys, follow these steps:
-
-- Log in to your NDAX account.
-- Click on your username in the top right corner of the page and select "API Keys."
-- Click on "Generate new API key."
-- Name your API key, select the permissions you want to grant it, and click on "Generate API key."
-
-Once you've generated your API keys, you can use them to authenticate your API requests. 
+```

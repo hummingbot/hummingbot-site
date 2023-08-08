@@ -1,40 +1,40 @@
-# Kraken
-
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a partnership with Kraken that shares some of your fees when you trade on Kraken using Hummingbot, at no cost to you. To support us, create an account using our [Kraken referral link](https://r.kraken.com/c/1310646/687155/10583). Thank you! 🙏
+    Hummingbot Foundation has a fee share partnership with Kraken. When you use our software to trade on Kraken, a custom API header tells Kraken that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
+
+## 🛠 Connector Info
+
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: None
+
+Currently, Kraken is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
+
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | Not available |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
 ## ℹ️ Exchange Info
 
-- **Type**: CLOB CEX
-- **Website**: https://www.kraken.com/
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/kraken/
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/kraken
-- **API docs**: <https://docs.kraken.com/rest/>
+- **Website**: <https://www.kraken.com/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/kraken/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/kraken>
+- **API Docs**: <https://docs.kraken.com/rest/>
 - **Fees**: <https://www.kraken.com/en-us/features/fee-schedule>
-- **Supported countries**: Worldwide
+- **Supported Countries**: Not available
 
-## 🛠 Maintenance
+## 🔑 How to Connect
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+### Generate API Keys
 
-- **Tier**: Bronze
-- **Maintainer**: 
-
-HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
-
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken)
-
-### Usage
+### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect kraken`:
 
 ```
->>> connect kraken
-
 Enter your kraken API key >>>
 Enter your kraken secret key >>>
 ```
@@ -46,6 +46,13 @@ You are now connected to kraken
 ```
 
 
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `kraken`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
@@ -53,48 +60,11 @@ This connector supports the following `OrderType` constants:
 - `LIMIT`
 - `LIMIT_MAKER`
 
+
 ### Paper Trading
 
 Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect kraken_paper_trade` instead of `connect kraken`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 
-## 🔀 Perp Connector
-*Connector to perpetual futures markets*
 
-
-
-### Usage
-
-
-### Order Types
-
-
-### Position Modes
-
-
-
-### Testnet
-
-
-
-## 🕯 Spot Candles Feed
-*Collect historical OHCLV data from this exchange's spot markets*
-
-
-
-### Usage
-
-
-
-
-
-## 🕯 Perp Candles Feed
-*Collect historical OHCLV data from this exchange's perp markets*
-
-
-### Usage
-
-
-
-## How to create API keys

@@ -1,52 +1,35 @@
-# `traderjoe`
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://traderjoexyz.com/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-## ℹ️ Info
+Currently, TraderJoe is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Decentralized
-- Website: <https://traderjoexyz.com/>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/trader-joe/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/trader-joe>
-- API docs: <https://docs.traderjoexyz.com/reference/>
-- API version: 1
-- SDK: <https://github.com/traderjoe-xyz/joe-sdk>
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: <https://traderjoe.xyz>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/trader-joe/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/traderjoe>
+- **Fees**: https://docs.traderjoe.xyz/product-guides/limit-order#is-there-any-transaction-fee
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** 
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `avalanche` | `avalanche`, `fuji` 
 
-**Current and Upcoming**
-
-Traderjoe is supported on [Hummingbot dMiner](https://dminer.hummingbot.io/), a platform that rewards users for providing liquidity on specific trading pairs.
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oC_8bIdDY2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-The `traderjoe` connector fetches prices and creates swaps. Run `gateway connect traderjoe` in order to connect your wallet:
-
+From inside the Hummingbot client, run `gateway connect traderjoe` in order to connect your wallet:
+ 
 ```
 Which chain do you want traderjoe to connect to? (avalanche) >>>
 Which network do you want traderjoe to connect to? (avalanche, fuji) >>>
@@ -60,25 +43,37 @@ The traderjoe connector now uses wallet [pubKey] on avalanche-avalanche
 ```
 
 
-### Order Types
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
+
+- **ID**: `traderjoe`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: https://github.com/traderjoe-xyz/joe-sdk
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/traderjoe
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/traderjoe.yml
+
+### Endpoints
+
+- `/amm/price`
+- `/amm/trade`
 
 
-### Candles Feed
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
-### Paper Trading
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
+- **ID**: `traderjoe_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
-## 🔀 Perp Connector
+### Usage
 
-
-### Order Types
-
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
-
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="traderjoe_avalanche_avalanche",
+        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        order_amount_in_base=Decimal("1"),
+    )
+```

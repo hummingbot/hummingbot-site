@@ -1,52 +1,40 @@
-# `openocean`
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://openocean.finance/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-## ℹ️ Info
+Currently, OpenOcean is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Decentralized
-- Website: <https://openocean.finance>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/openocean/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/openocean_finance>
-- API docs: <https://github.com/openocean-finance/openocean-api>
-- SDK: <https://github.com/openocean-finance/OpenOcean-SDK-API>
-- Fees: <https://docs.openocean.finance/concepts/advanced-topics/01-fees>
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: <https://openocean.finance>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/openocean/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/openocean>
+- **Fees**: <https://docs.openocean.finance/concepts/advanced-topics/01-fees>
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** [kanghoulin](https://github.com/kanghoulin) 
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `avalanche` | `avalanche` 
+| `ethereum` | `mainnet` 
+| `polygon` | `mainnet` 
+| `harmony` | `mainnet` 
+| `binance smart chain` | `mainnet` 
+| `cronos` | `mainnet` 
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-The `openocean` connector fetches prices and creates swaps. Run `gateway connect openocean` in order to connect your wallet:
-
+From inside the Hummingbot client, run `gateway connect openocean` in order to connect your wallet:
+ 
 ```
 Which chain do you want openocean to connect to? (avalanche, ethereum, polygon, harmony) >>>
 Which network do you want openocean to connect to? (mainnet) >>>
@@ -60,25 +48,37 @@ The openocean connector now uses wallet [pubKey] on polygon-mainnet
 ```
 
 
-### Order Types
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
+
+- **ID**: `openocean`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: <https://github.com/openoceanexchange/openocean-api>
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/openocean
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/openocean.yml
+
+### Endpoints
+
+- `/amm/price`
+- `/amm/trade`
 
 
-### Candles Feed
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
-### Paper Trading
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
+- **ID**: `openocean_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
-## 🔀 Perp Connector
+### Usage
 
-
-### Order Types
-
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
-
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="openocean_avalanche_avalanche",
+        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        order_amount_in_base=Decimal("1"),
+    )
+```

@@ -1,52 +1,35 @@
-# Quickswap
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://quickswap.exchange/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-## ℹ️ Info
+Currently, QuickSwap is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Decentralized
-- Website: <https://quickswap.exchange>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/quickswap/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/quickswap>
-- API docs: <https://docs.quickswap.exchange/reference/>
-- API version: 1
-- Fees: <https://docs.quickswap.exchange/concepts/advanced-topics/01-fees>
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: <https://quickswap.exchange>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/quickswap/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/quickswap>
+- **Fees**: QuickSwap charges a 0.3% fee for swapping tokens, which is distributed among liquidity providers on a pro-rata basis.
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** 
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `polygon` | `mainnet`, `mumbai` 
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-* [Quickswap Blog](https://quickswap-layer2.medium.com/)
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-The `quickswap` connector fetches prices and creates swaps. Run `gateway connect quickswap` in order to connect your wallet:
-
+From inside the Hummingbot client, run `gateway connect quickswap` in order to connect your wallet:
+ 
 ```
 Which chain do you want quickswap to connect to? (polygon) >>> 
 Which network do you want quickswap to connect to? (mainnet, mumbai) >>>
@@ -59,40 +42,37 @@ The quickswap connector now uses wallet [pubKey] on polygon-mainnet
 ```
 
 
-### Order Types
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
+
+- **ID**: `quickswap`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: <https://docs.quickswap.exchange/>
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/quickswap
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/quickswap.yml
+
+### Endpoints
+
+- `/amm/price`
+- `/amm/trade`
 
 
-### Candles Feed
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
-### Paper Trading
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
+- **ID**: `quickswap_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
 
-## 🔀 Perp Connector
+### Usage
 
-
-### Order Types
-
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
-
-* [Polygon](/chains/polygon): `mainnet`, `mumbai`
-
-Run `gateway connect quickswap` in order to connect your wallet to the mumbai testnet:
-
-```
-Which chain do you want quickswap to connect to? (polygon) >>> polygon
-Which network do you want quickswap to connect to? (mainnet, mumbai) >>> mumbai
-Enter your ethereum-mainnet private key >>>>` XXXXXX
-```
-
-If connection is successful (polygon-mumbai):
-
-```
-The quickswap connector now uses wallet [pubKey] on polygon-mumbai
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="quickswap_polygon_mainnet",
+        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        order_amount_in_base=Decimal("1"),
+    )
 ```

@@ -1,52 +1,34 @@
-# `ref`
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://www.ref.finance/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (DEX)
+- **Market Type**: Automatic Market Maker (AMM)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-## ℹ️ Info
+Currently, Ref Finance is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Decentralized
-- Website: <https://www.ref.finance/>
-- CoinMarketCap: <https://coinmarketcap.com/exchanges/ref-finance/>
-- CoinGecko: <https://www.coingecko.com/en/exchanges/ref-finance>
-- API docs: <https://docs.ref.finance/reference/>
-- SDK: <https://github.com/ref-finance/ref-sdk>
-- Fees: <https://docs.ref.finance/concepts/advanced-topics/01-fees>
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: <https://ref.finance>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ref-finance/>
+- **Fees**: <https://docs.ref.finance/concepts/advanced-topics/01-fees>
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** 
+Create a wallet on one of the supported networks below:
 
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
+| Chain | Networks | 
+| ----- | -------- |
+| `near`| `mainnet`, `testnet`|
 
-**Current and Upcoming**
-
-
-
-**Past**
-
-
-
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
-
-The `ref-finance` connector fetches prices and creates swaps. Run `gateway connect ref-finance` in order to connect your wallet:
-
+From inside the Hummingbot client, run `gateway connect ref_finance` in order to connect your wallet:
+ 
 ```
 Which chain do you want ref-finance to connect to? (near) >>> 
 Which network do you want ref-finance to connect to? (mainnet, testnet) >>>
@@ -59,40 +41,36 @@ The ref-finance connector now uses wallet [pubKey] on near-mainnet
 ```
 
 
-### Order Types
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
 
+- **ID**: `ref_finance`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **API Docs**: <https://docs.ref.finance/reference/>
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/ref
+- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/ref.yml
 
-### Candles Feed
+### Endpoints
 
-### Paper Trading
+- `/amm/price`
+- `/amm/trade`
 
+For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
 
-## 🔀 Perp Connector
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*
 
+- **ID**: `ref_finance_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
+- **Folder**: Not specified
 
-### Order Types
+### Usage
 
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
-
-* [Near](/chains/near): `mainnet`, `testnet`
-
-Run `gateway connect ref-finance` in order to connect your wallet to the testnet:
-
-```
-Which chain do you want ref-finance to connect to? (near) >>> near
-Which network do you want ref-finance to connect to? (mainnet, testnet) >>> testnet
-Enter your ethereum-mainnet private key >>>>` XXXXXX
-```
-
-If connection is successful (near-testnet):
-
-```
-The ref-finance connector now uses wallet [pubKey] on near-testnet
+```python
+from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
+prices = AmmGatewayDataFeed(
+        connector_chain_network="ref_finance_near_mainnet",
+        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        order_amount_in_base=Decimal("1"),
+    )
 ```

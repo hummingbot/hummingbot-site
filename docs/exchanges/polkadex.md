@@ -1,49 +1,35 @@
-# `polkadex`
+## 🛠 Connector Info
 
-**Support Hummingbot by creating an account using our [referral link](https://polkadex.trade/)!** 🙏🙏🙏
+- **Exchange Type**: Decentralized Exchange (**DEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-## ℹ️ Info
+Currently, Polkadex is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-- Type: Decentralized
-- Website: <https://polkadex.trade/>
-- CoinMarketCap: <https://coinmarketcap.com/currencies/polkadex/>
-- CoinGecko: <https://www.coingecko.com/en/coins/polkadex>
-- API docs: <https://docs.polkadex.trade/>
-- API version: 
-- Fees: Information not available
-- Supported countries: Worldwide
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | Supports testnet
+| [🔀 Perp Connector](#perp-connector) | Not available | 
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
 
-## 🛠 Maintenance
+## ℹ️ Exchange Info
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Website**: <https://www.polkadex.trade>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/polkadex/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/polkadex>
+- **API Docs**: https://wiki.polkadot.network/docs/build-index
+- **Fees**: To be determined
+- **Supported Countries**: Global 
 
-HBOT holders voted this exchange into the Bronze tier for the current [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+## 🔑 How to Connect
 
-**Maintainer:** 
-
-## 💰 Rewards
-*Competitions and other programs that incentivize Hummingbot users to use this exchange*
-
-**Current and Upcoming**
-
-
-
-**Past**
+### Generate API Keys
 
 
 
-## 📺 Content
-*Videos and guides that show how to use Hummingbot with this exchange*
-
-
-
-## How to create API keys
-
-## 🔀 Spot Connector
-*Integration to exchange's spot markets API*
-
-
-### How to Connect
+### Add Keys to Hummingbot
 
 Run `connect polkadex` in order to enter your API keys:
 
@@ -57,27 +43,22 @@ If connection is successful:
 You are now connected to polkadex.
 ```
 
+## 🔀 Spot Connector
+*Integration to perpetual futures markets API endpoints*
 
+- **ID**: `polkadex`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/polkadex
 
 ### Order Types
 
+This connector supports the following `OrderType` constants:
 
-### Candles Feed
+- `LIMIT`
+- `MARKET`
 
 ### Paper Trading
 
+This exchange offers a staging (testnet) mode: https://testnet.polkadex.trade/
 
-## 🔀 Perp Connector
-
-
-### Order Types
-
-
-### Position Modes
-
-
-### Candles Feed
-
-
-### Testnets
-
+While users can trade on testnet using the link above, it is not currently supported in Hummingbot.
