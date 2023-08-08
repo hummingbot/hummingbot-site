@@ -3,7 +3,7 @@
 - **Exchange Type**: Decentralized Exchange (DEX)
 - **Market Type**: Automatic Market Maker (AMM)
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-- **Maintainer:** 
+- **Maintainer:** [CoinAlpha](https://coinalpha.com)
 
 Currently, Pangolin is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
