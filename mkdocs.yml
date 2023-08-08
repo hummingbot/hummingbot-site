@@ -206,27 +206,24 @@ nav:
       - Quickswap: exchanges/quickswap.md
       - TraderJoe: exchanges/traderjoe.md
       - AltMarkets: exchanges/altmarkets.md
-      - Binance US: exchanges/binance-us.md
+      - Binance US: exchanges/binance-us/index.md
       - Bybit: exchanges/bybit.md
-      - Bybit (perp): exchanges/bybit-perpetual.md
       - Bitfinex: exchanges/bitfinex.md
       - BitGet: exchanges/bitget-perpetual.md
-      - BitMart: exchanges/bitmart.md
+      - BitMart: exchanges/bitmart/index.md
       - Bitmex: exchanges/bitmex.md
-      - Bitmex (perp): exchanges/bitmex-perpetual.md
       - Bittrex: exchanges/bittrex.md
       - BIT (perp): exchanges/bit-com-perpetual.md
       - BTC Markets: exchanges/btc-markets.md
       - Coinbase: exchanges/coinbase.md
       - Defira: exchanges/defira.md
       - HitBTC: exchanges/hitbtc.md
-      - Huobi: exchanges/huobi.md
-      - Injective: exchanges/injective.md
-      - Injective (perp): exchanges/injective-perpetual.md
+      - Huobi: exchanges/huobi/index.md
+      - Injective: exchanges/injective.md      
       - Kraken: exchanges/kraken.md
-      - Loopring: exchanges/loopring.md
+      - Loopring: exchanges/loopring/index.md
       - Mad Meerkat: exchanges/mad-meerkat.md
-      - MEXC: exchanges/mexc.md 
+      - MEXC: exchanges/mexc/index.md 
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx.md
       - OpenOcean: exchanges/openocean.md
