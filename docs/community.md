@@ -2,37 +2,38 @@ Hummingbot is the leading open source crypto trading bot, used by thousands of i
 
 The Hummingbot community is comprised of its global user base of individual liquidity miners, as well as professional traders, market makers, and software developers. Like the Hummingbot codebase itself, our community is open, decentralized, and diverse.
 
-## Official Channels
+## 📺 Community Calls
 
-Below are the only primary channels used by the Hummingbot Foundation to release official versions of Hummingbot and to communicate news and updates to HBOT token holders.
+Each month, we livestream one or more community calls on our [Discord](https://discord.gg/hummingbot) server. Afterwards, we post recordings on our [YouTube](https://youtube.com/c/hummingbot) channel.
 
-### Website
+Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204&pvs=4) for links to these monthly calls and other upcoming events.
 
-Along with this documentation site, the only other official Hummingbot website is https://hummingbot.org. 
+## Public Resources
 
-Key resources include:
+We maintain and keep updated the following boards, sheets and other resources:
 
-* [Botcamp](https://hummingbot.org/botcamp): Our small-batch, hands-on developer bootcamp that teaches you how to create your own custom algo trading strategy using HUmmingbot
-* [Blog](https://blog.hummingbot.org/): The official Hummingbot blog with academy articles that teach you about market making along with advanced Hummingbot tips and tricks
+* [Reported Volumes](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report.
 
-### Newsletter
+* [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet maintained by the Foundation, this shows you the real-time HBOT circulating supply, approved proposals, active bounties, and HBOT distributions.
 
-The Hummingbot Foundation newsletter is hosted at <https://hummingbot.substack.com>. Published with each monthly release, the newsletter also contains foundation news, upcoming events, and updates about contributions from the global Hummingbot community.
+* [Foundation Calendar](https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204): Upcoming release dates, monthly polls, community calls, and other events.
 
-### Discord
+* [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1): A public Github board for bug fixes and proposed enhancements with development bounties attached to them.
 
-Our official Discord server is located at <https://discord.gg/hummingbot>. Discord is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the **#announcements** channel.
+* [Pull Request Status](https://github.com/orgs/hummingbot/projects/1): A public Github board for active pull requests that are being voted on, reviewed, and merged.
+
+## Foundation Channels
+
+For security purposes, ensure that you use only the official channels below to access Hummingbot content and code:
+
+* [Blog](https://blog.hummingbot.org/): Our blog contains announcements and content from us and our community
+* [Newsletter](https://hummingbot.substack.com): Our weekly newsletter contains news, upcoming events, and updates about contributions from the global Hummingbot community
+* [Twitter](https://twitter.com/_hummingbot)
+* [Youtube](https://www.youtube.com/c/hummingbot): Our YouTube account contains videos that teach you how to use Hummingbot, livestreams of community calls, and interviews with members of the Hummingbot community.
+* [Discord](https://discord.gg/hummingbot): Discord is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the **#announcements** channel.
 
 !!! danger "No DMs"
     Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
-
-### Twitter
-
-Our Twitter account is <https://twitter.com/_hummingbot>, where the Foundation will post news and updates.
-
-### YouTube
-
-Our YouTube account is <https://www.youtube.com/c/hummingbot>. This channel contains videos that teach you how to use Hummingbot, livestreams of community calls, and interviews with members of the Hummingbot community.
 
 ## Code Repositories
 
@@ -44,10 +45,11 @@ The Foundation Github organization is located at <https://github.com/hummingbot>
 
 * [`hummingbot`](https://github.com/hummingbot/hummingbot): code for the Hummingbot trading client
 * [`gateway`](https://github.com/hummingbot/gateway): code for the Hummingbot Gateway DEX connector middleware
+* [`dashboard`](https://github.com/hummingbot/dashboard): Hummingbot-related dashboard
+- [`deploy-examples`](https://github.com/hummingbot/deploy-examples): Deployment examples
 * [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot documentation site
-- [`pm`](https://github.com/hummingbot/pm): Agendas and recordings of regular Hummingbot developer and community calls
+community calls
 * [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
-* [`streamlit-apps`](https://github.com/hummingbot/streamlit-apps): Hummingbot-related StreamLit data apps and dashboards
 * [`community-tools`](https://github.com/hummingbot/community-tools): Tools and resources created by the Hummingbot community
 
 ### DockerHub
