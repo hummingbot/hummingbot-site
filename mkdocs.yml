@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 # Project info
-site_name: Hummingbot Docs
+site_name: Hummingbot
 site_description: The official documentation for Hummingbot
 site_author: Hummingbot Foundation
-site_url: https://docs.hummingbot.org
+site_url: https://hummingbot.org
 
 # Repository
 repo_name: 'hummingbot/hummingbot'
@@ -12,11 +12,12 @@ repo_url: 'https://github.com/hummingbot/hummingbot'
 edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
 
 # Copyright
-copyright: Copyright &copy; 2022 Hummingbot Foundation
+copyright: Copyright &copy; 2023 Hummingbot Foundation
 
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/img/logo.png
   favicon: assets/img/favicon.ico
   icon:
@@ -42,21 +43,18 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
 
 plugins:
   - search
   - git-revision-date
-  # - social:
-  #     cards_color:
-  #       fill: rgb(40, 47, 56)
-  #       text: white
+  - social:
 
 extra:
-  homepage: https://docs.hummingbot.org
+  homepage: https://hummingbot.org
   generator: false
   analytics:
     provider: google
@@ -67,7 +65,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/hummingbot
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/hummingbot_org
+      link: https://twitter.com/_hummingbot
     - icon: fontawesome/brands/github
       link: https://github.com/hummingbot/hummingbot
     - icon: fontawesome/brands/docker
@@ -123,8 +121,9 @@ markdown_extensions:
 
 # Navigation
 nav:
+  - Home: index.md
   - Docs:
-    - Docs: index.md
+    - Docs: docs/index.md
     - Installation:
       - Installation: installation/index.md
       - Install via Docker: installation/docker.md
@@ -136,13 +135,6 @@ nav:
         - Raspberry Pi: installation/raspberry-pi.md
       - Post-Installation: installation/post-installation.md
       - Orchestration Module: installation/orchestration.md
-    - Quickstart:
-      - Quickstart: quickstart/index.md
-      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
-      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
-      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
-      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
-      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
     - Features:
       - Features: operation/index.md
       - User Interface Guide: operation/user-interface.md
@@ -171,6 +163,8 @@ nav:
         - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
         - Data Collector: global-configs/data-collector.md
+        - Debug Console: developers/debug.md
+        - Adding Commands: developers/commands.md
       - PMM Configs:
         - PMM Configs: strategy-configs/index.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md
@@ -284,132 +278,138 @@ nav:
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md
-    - FAQ: faq.md
+    - Releases:
+      - Releases: release-notes/index.md
+      - 1.18.0: release-notes/1.18.0.md
+      - 1.17.0: release-notes/1.17.0.md
+      - 1.16.0: release-notes/1.16.0.md
+      - 1.15.0: release-notes/1.15.0.md
+      - 1.14.0: release-notes/1.14.0.md
+      - 1.13.0: release-notes/1.13.0.md 
+      - 1.12.0: release-notes/1.12.0.md
+      - 1.11.0: release-notes/1.11.0.md
+      - 1.10.0: release-notes/1.10.0.md
+      - 1.9.0: release-notes/1.9.0.md
+      - 1.8.0: release-notes/1.8.0.md
+      - 1.7.0: release-notes/1.7.0.md
+      - 1.6.0: release-notes/1.6.0.md
+      - 1.5.0: release-notes/1.5.0.md
+      - 1.4.0: release-notes/1.4.0.md
+      - 1.3.0: release-notes/1.3.0.md
+      - 1.2.0: release-notes/1.2.0.md
+      - 1.1.1: release-notes/1.1.1.md
+      - 1.1.0: release-notes/1.1.0.md
+      - 1.0.1: release-notes/1.0.1.md
+      - 1.0.0: release-notes/1.0.0.md
+      - 0.46.0: release-notes/0.46.0.md
+      - 0.45.0: release-notes/0.45.0.md
+      - 0.44.0: release-notes/0.44.0.md
+      - 0.43.1: release-notes/0.43.1.md
+      - 0.43.0: release-notes/0.43.0.md
+      - 0.42.0: release-notes/0.42.0.md
+      - 0.41.0: release-notes/0.41.0.md
+      - 0.40.0: release-notes/0.40.0.md
+      - 0.39.1: release-notes/0.39.1.md
+      - 0.39.0: release-notes/0.39.0.md
+      - 0.38.1: release-notes/0.38.1.md
+      - 0.38.0: release-notes/0.38.0.md
+      - 0.37.1: release-notes/0.37.1.md
+      - 0.37.0: release-notes/0.37.0.md
+      - 0.36.0: release-notes/0.36.0.md
+      - 0.35.0: release-notes/0.35.0.md
+      - 0.34.0: release-notes/0.34.0.md
+      - 0.33.1: release-notes/0.33.1.md
+      - 0.33.0: release-notes/0.33.0.md
+      - 0.32.0: release-notes/0.32.0.md
+      - 0.31.0: release-notes/0.31.0.md
+      - 0.30.0: release-notes/0.30.0.md
+      - 0.29.0: release-notes/0.29.0.md
+      - 0.28.1: release-notes/0.28.1.md
+      - 0.28.0: release-notes/0.28.0.md
+      - 0.27.0: release-notes/0.27.0.md
+      - 0.26.1: release-notes/0.26.1.md
+      - 0.26.0: release-notes/0.26.0.md
+      - 0.25.0: release-notes/0.25.0.md
+      - 0.24.1: release-notes/0.24.1.md
+      - 0.24.0: release-notes/0.24.0.md
+      - 0.23.0: release-notes/0.23.0.md
+      - 0.22.0: release-notes/0.22.0.md
+      - 0.21.0: release-notes/0.21.0.md
+      - 0.20.0: release-notes/0.20.0.md
+      - 0.19.1: release-notes/0.19.1.md
+      - 0.19.0: release-notes/0.19.0.md
+      - 0.18.1: release-notes/0.18.1.md
+      - 0.18.0: release-notes/0.18.0.md
+      - 0.17.1: release-notes/0.17.1.md
+      - 0.17.0: release-notes/0.17.0.md
+      - 0.16.0: release-notes/0.16.0.md
+      - 0.15.0: release-notes/0.15.0.md
+      - 0.14.0: release-notes/0.14.0.md
+      - 0.13.0: release-notes/0.13.0.md
+      - 0.12.1: release-notes/0.12.1.md
+      - 0.12.0: release-notes/0.12.0.md
+      - 0.11.1: release-notes/0.11.1.md
+      - 0.11.0: release-notes/0.11.0.md
+      - 0.10.1: release-notes/0.10.1.md
+      - 0.10.0: release-notes/0.10.0.md
+      - 0.9.1: release-notes/0.9.1.md
+      - 0.9.0: release-notes/0.9.0.md
+      - 0.8.1: release-notes/0.8.1.md
+      - 0.8.0: release-notes/0.8.0.md
+      - 0.7.0: release-notes/0.7.0.md
+      - 0.6.0: release-notes/0.6.0.md
+      - 0.5.1: release-notes/0.5.1.md
+      - 0.5.0: release-notes/0.5.0.md
+      - 0.4.0: release-notes/0.4.0.md
+      - 0.3.1: release-notes/0.3.1.md
+      - 0.3.0: release-notes/0.3.0.md
+      - 0.2.0: release-notes/0.2.0.md
     - Troubleshooting: troubleshooting.md
+  - Learn:
+    - Quickstart:
+      - Quickstart: quickstart/index.md
+      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
+      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
+      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
+      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
+      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    - 🎓 Botcamp: https://botcamp.hummingbot.org
+    - Building CEX Connectors:
+      - Building CEX Connectors: developers/connectors/index.md
+      - Architecture: developers/connectors/architecture/index.md
+      - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
+      - API Throttler: developers/connectors/architecture/api_throttler.md
+      - Build Process: developers/connectors/build.md
+      - QA Testing Process: developers/connectors/test.md
+      - Debugging: developers/connectors/debug.md
+    - Building DEX Connectors: gateway/adding-dex-connectors.md
+    - Building Strategies:
+      - Building Strategies: developers/strategies/index.md
+      - Architecture: developers/strategies/architecture.md
+      - Tutorial: developers/strategies/tutorial.md
+      - Key Concepts: developers/strategies/key-concepts.md
+      - Define Configs: developers/strategies/config.md
+      - Hanging Orders Tracker: developers/strategies/hanging-orders.md
     - Glossary: glossary.md
-    - ❤️ Support Hummingbot!: support-hummingbot.md
-  - Developers:
-      - Developers: developers/index.md
-      - Contribution Guidelines: developers/contributions.md
-      - Forking the HB repository: developers/forking.md
-      - Debug Console: developers/debug.md
-      - Building CEX Connectors:
-        - Building CEX Connectors: developers/connectors/index.md
-        - Architecture: developers/connectors/architecture/index.md
-        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-        - API Throttler: developers/connectors/architecture/api_throttler.md
-        - Build Process: developers/connectors/build.md
-        - QA Testing Process: developers/connectors/test.md
-        - Debugging: developers/connectors/debug.md
-      - Building DEX Connectors: gateway/adding-dex-connectors.md
-      - Building Strategies:
-        - Building Strategies: developers/strategies/index.md
-        - Architecture: developers/strategies/architecture.md
-        - Tutorial: developers/strategies/tutorial.md
-        - Key Concepts: developers/strategies/key-concepts.md
-        - Define Configs: developers/strategies/config.md
-        - Hanging Orders Tracker: developers/strategies/hanging-orders.md
-      - Adding Commands: developers/commands.md
+  - Community:
+    - Community: community.md
+    - Bounties: bounties/index.md
+    - For Contributors: bounties/contributors.md
+    - For Sponsors: bounties/sponsors.md
+    - Contribution Guidelines: developers/contributions.md
+    - Forking Repositories: developers/forking.md
   - Governance:
     - Governance: governance/index.md
-    - Bounties:
-       - Bounties: governance/bounties/index.md
-       - For Contributors: governance/bounties/contributors.md
-       - For Sponsors: governance/bounties/sponsors.md
     - Polls: governance/polls.md
     - Proposals: governance/proposals.md
     - Epochs: governance/epochs.md
-    - Releases: governance/releases.md
+    - Release Process: governance/releases.md
     - Whitepaper: governance/whitepaper.md
-  - About Us:
-    - About Us: about/index.md
+  - About:
+    - About: about/index.md
+    - FAQ: faq.md
     - Board of Directors: governance/board.md
-    - Community: community.md
     - Reporting: reporting.md
     - History: about/history.md
-  - Releases:
-    - Releases: release-notes/index.md
-    - 1.18.0: release-notes/1.18.0.md
-    - 1.17.0: release-notes/1.17.0.md
-    - 1.16.0: release-notes/1.16.0.md
-    - 1.15.0: release-notes/1.15.0.md
-    - 1.14.0: release-notes/1.14.0.md
-    - 1.13.0: release-notes/1.13.0.md 
-    - 1.12.0: release-notes/1.12.0.md
-    - 1.11.0: release-notes/1.11.0.md
-    - 1.10.0: release-notes/1.10.0.md
-    - 1.9.0: release-notes/1.9.0.md
-    - 1.8.0: release-notes/1.8.0.md
-    - 1.7.0: release-notes/1.7.0.md
-    - 1.6.0: release-notes/1.6.0.md
-    - 1.5.0: release-notes/1.5.0.md
-    - 1.4.0: release-notes/1.4.0.md
-    - 1.3.0: release-notes/1.3.0.md
-    - 1.2.0: release-notes/1.2.0.md
-    - 1.1.1: release-notes/1.1.1.md
-    - 1.1.0: release-notes/1.1.0.md
-    - 1.0.1: release-notes/1.0.1.md
-    - 1.0.0: release-notes/1.0.0.md
-    - 0.46.0: release-notes/0.46.0.md
-    - 0.45.0: release-notes/0.45.0.md
-    - 0.44.0: release-notes/0.44.0.md
-    - 0.43.1: release-notes/0.43.1.md
-    - 0.43.0: release-notes/0.43.0.md
-    - 0.42.0: release-notes/0.42.0.md
-    - 0.41.0: release-notes/0.41.0.md
-    - 0.40.0: release-notes/0.40.0.md
-    - 0.39.1: release-notes/0.39.1.md
-    - 0.39.0: release-notes/0.39.0.md
-    - 0.38.1: release-notes/0.38.1.md
-    - 0.38.0: release-notes/0.38.0.md
-    - 0.37.1: release-notes/0.37.1.md
-    - 0.37.0: release-notes/0.37.0.md
-    - 0.36.0: release-notes/0.36.0.md
-    - 0.35.0: release-notes/0.35.0.md
-    - 0.34.0: release-notes/0.34.0.md
-    - 0.33.1: release-notes/0.33.1.md
-    - 0.33.0: release-notes/0.33.0.md
-    - 0.32.0: release-notes/0.32.0.md
-    - 0.31.0: release-notes/0.31.0.md
-    - 0.30.0: release-notes/0.30.0.md
-    - 0.29.0: release-notes/0.29.0.md
-    - 0.28.1: release-notes/0.28.1.md
-    - 0.28.0: release-notes/0.28.0.md
-    - 0.27.0: release-notes/0.27.0.md
-    - 0.26.1: release-notes/0.26.1.md
-    - 0.26.0: release-notes/0.26.0.md
-    - 0.25.0: release-notes/0.25.0.md
-    - 0.24.1: release-notes/0.24.1.md
-    - 0.24.0: release-notes/0.24.0.md
-    - 0.23.0: release-notes/0.23.0.md
-    - 0.22.0: release-notes/0.22.0.md
-    - 0.21.0: release-notes/0.21.0.md
-    - 0.20.0: release-notes/0.20.0.md
-    - 0.19.1: release-notes/0.19.1.md
-    - 0.19.0: release-notes/0.19.0.md
-    - 0.18.1: release-notes/0.18.1.md
-    - 0.18.0: release-notes/0.18.0.md
-    - 0.17.1: release-notes/0.17.1.md
-    - 0.17.0: release-notes/0.17.0.md
-    - 0.16.0: release-notes/0.16.0.md
-    - 0.15.0: release-notes/0.15.0.md
-    - 0.14.0: release-notes/0.14.0.md
-    - 0.13.0: release-notes/0.13.0.md
-    - 0.12.1: release-notes/0.12.1.md
-    - 0.12.0: release-notes/0.12.0.md
-    - 0.11.1: release-notes/0.11.1.md
-    - 0.11.0: release-notes/0.11.0.md
-    - 0.10.1: release-notes/0.10.1.md
-    - 0.10.0: release-notes/0.10.0.md
-    - 0.9.1: release-notes/0.9.1.md
-    - 0.9.0: release-notes/0.9.0.md
-    - 0.8.1: release-notes/0.8.1.md
-    - 0.8.0: release-notes/0.8.0.md
-    - 0.7.0: release-notes/0.7.0.md
-    - 0.6.0: release-notes/0.6.0.md
-    - 0.5.1: release-notes/0.5.1.md
-    - 0.5.0: release-notes/0.5.0.md
-    - 0.4.0: release-notes/0.4.0.md
-    - 0.3.1: release-notes/0.3.1.md
-    - 0.3.0: release-notes/0.3.0.md
-    - 0.2.0: release-notes/0.2.0.md
+    - ❤️ Support Us: support-hummingbot.md
+  - Blog: https://blog.hummingbot.org
