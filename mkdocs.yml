@@ -51,7 +51,7 @@ theme:
 plugins:
   - search
   - git-revision-date
-  - social:
+  - social
 
 extra:
   homepage: https://hummingbot.org
@@ -373,7 +373,7 @@ nav:
       - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
       - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
       - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
-    - 🎓 Botcamp: https://botcamp.hummingbot.org
+    - 🎓 Join Botcamp: https://botcamp.hummingbot.org
     - Building CEX Connectors:
       - Building CEX Connectors: developers/connectors/index.md
       - Architecture: developers/connectors/architecture/index.md
@@ -393,7 +393,7 @@ nav:
     - Glossary: glossary.md
   - Community:
     - Community: community.md
-    - Bounties: bounties/index.md
+    - Bounties: bounties.md
     - For Contributors: bounties/contributors.md
     - For Sponsors: bounties/sponsors.md
     - Contribution Guidelines: developers/contributions.md
