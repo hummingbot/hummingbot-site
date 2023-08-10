@@ -75,8 +75,8 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 ```python
 from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
 prices = AmmGatewayDataFeed(
-        connector_chain_network="sushiswap_polygon_mainnet",
-        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        connector_chain_network="sushiswap_harmony_mainnet",
+        trading_pairs={"WETH-WONE", "WBTC-WONE"},
         order_amount_in_base=Decimal("1"),
     )
 ```

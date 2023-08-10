@@ -1,7 +1,7 @@
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Automatic Market Maker (AMM)
+- **Exchange Type**: Decentralized Exchange (**DEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 - **Maintainer:** 
 
@@ -9,16 +9,17 @@ Currently, Vertex is a **Bronze** exchange, as voted by HBOT holders in each qua
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
-| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
-| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
+| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | Not available
+| [🕯 AMM Data Feed](#amm-data-feed) |  | Not available
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://vertex.finance>
-- **CoinMarketCap**: <https://coinmarketcap.com/currencies/vertex-finance/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vertex-finance>
-- **Fees**: https://docs.vertex.finance/product-guides/limit-order#is-there-any-transaction-fee
+- **Website**: <https://vertexprotocol.finance>
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/vertex-protocol/
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vertexprotocol>
+- **API Docs**: https://vertex-protocol.gitbook.io/docs/getting-started/overview
+- **Fees**: <https://docs.vertexprotocol.finance/products/vertexprotocol-exchange/vertexprotocol-pools>
 
 ## 🔑 How to Connect
 
@@ -40,37 +41,25 @@ If connection is successful:
 You are now connected to vertex.
 ```
 
-## 2️⃣ AMM Connector
-*Integration to this DEX's swap pricing and execution endpoints*
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
 
 - **ID**: `vertex`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://github.com/Carry-So/vertexswap-sdk>
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/vertex
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/vertex.yml
+- **Connection Type**: REST
+- **API Docs**: https://docs.vertexprotocol-test.com/api
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/vertex
+- **Default Configs**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/vertex/vertex_constants.py
 
-### Endpoints
+### Order Types
 
-- `/amm/price`
-- `/amm/trade`
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect vertex_testnet` instead of `connect vertex`.
 
 
-For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
-
-## 🕯 AMM Data Feed
-*Data feed of this exchange's real-time prices*
-
-- **ID**: `vertex_[CHAIN]_[NETWORK]`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
-
-### Usage
-
-```python
-from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
-prices = AmmGatewayDataFeed(
-        connector_chain_network="vertex_ethereum_arbitrum_one",
-        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
-        order_amount_in_base=Decimal("1"),
-    )
-```

@@ -73,7 +73,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
 prices = AmmGatewayDataFeed(
         connector_chain_network="traderjoe_avalanche_avalanche",
-        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        trading_pairs={"BTC.B-USDC", "WAVAX-USDC"},
         order_amount_in_base=Decimal("1"),
     )
 ```

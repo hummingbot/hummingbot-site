@@ -44,7 +44,7 @@ The ref-finance connector now uses wallet [pubKey] on near-mainnet
 ## 2️⃣ AMM Connector
 *Integration to this DEX's swap pricing and execution endpoints*
 
-- **ID**: `ref_finance`
+- **ID**: `ref`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://docs.ref.finance/reference/>
 - **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/ref
@@ -60,7 +60,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 ## 🕯 AMM Data Feed
 *Data feed of this exchange's real-time prices*
 
-- **ID**: `ref_finance_[CHAIN]_[NETWORK]`
+- **ID**: `ref_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **Folder**: Not specified
 
@@ -69,8 +69,8 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 ```python
 from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
 prices = AmmGatewayDataFeed(
-        connector_chain_network="ref_finance_near_mainnet",
-        trading_pairs={"PAIR1-PAIR2", "PAIR3-PAIR4"},
+        connector_chain_network="ref_near_mainnet",
+        trading_pairs={"USDC.e-AURORA", "USDT.e-USDC.e"},
         order_amount_in_base=Decimal("1"),
     )
 ```
