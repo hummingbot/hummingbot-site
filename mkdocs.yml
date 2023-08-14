@@ -23,19 +23,23 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to system preference
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: cyan
-      accent: purple
+      primary: black
+      accent: green
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: purple
+      primary: black
+      accent: green
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode
   font:
       text: Roboto
