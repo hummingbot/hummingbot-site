@@ -14,15 +14,7 @@
   --md-primary-bg-color--light: rgba(0,0,0,.54);
   --md-accent-fg-color: #E549FF;
   --pg-light-border: rgb(229, 231, 235);
-  --pg-hero-color: rgb(45, 45, 45);
-  --pg-purple: #6200EE;
-  --pg-red: #EB5757;
-  --pg-orange: #F08727;
-  --pg-teal: #5FFFD7;
-  --pg-brown: #8d6e62;
-  --pg-blue: #318DFF;
-  --pg-green: #00C2CE;
-  --pg-blue-gray: #6200EE;
+  --hb-hero-color: rgb(45, 45, 45);
 }
 :root, [data-md-color-scheme="slate"] {
   --md-default-bg-color: rgb(26, 26, 27);
@@ -33,15 +25,7 @@
   --md-primary-bg-color--light: rgba(0,0,0,.54);
   --md-accent-fg-color: #E549FF;
   --pg-light-border: rgb(47, 47, 47);
-  --pg-hero-color: #5FFFD7;
-  --pg-purple: #6200EE;
-  --pg-red: #EB5757;
-  --pg-orange: #F08727;
-  --pg-teal: #5FFFD7;
-  --pg-brown: #b6988c;
-  --pg-blue: #318DFF;
-  --pg-green: #00C2CE;
-  --pg-blue-gray: #6200EE;
+  --hb-hero-color: #5FFFD7;
   --md-footer-bg-color--dark: var(--md-default-bg-color);
 }
 
@@ -317,22 +301,8 @@ details[class="downloads annotate"] > p .md-annotation span span::before {
   }
 }
 
-[data-md-color-scheme="default"] img[src$="#only-dark"] {
-  display: none !important;
-}
-
-[data-md-color-scheme="slate"] img[src$="#only-light"] {
-  display: none !important;
-}
-
 [data-md-color-scheme="slate"] .md-nav--primary .md-nav__title[for="__drawer"] {
   color: var(--md-typeset-a-color)
-}
-
-@media screen and (max-width: 59.9375em) { 
-  .md-nav__source {
-      display: none;
-  }
 }
 
 header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
@@ -385,9 +355,9 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 
 .md-tabs__link--active {
     background:
-        radial-gradient(farthest-side, var(--md-primary-fg-color--light) 98%,transparent 100%) bottom right/2px 2px,
-        radial-gradient(farthest-side, var(--md-primary-fg-color--light) 98%,transparent 100%) bottom left /2px 2px,
-        linear-gradient(var(--md-primary-fg-color--light),var(--md-primary-fg-color--light)) bottom/calc(100% - 2px) 2px;
+        radial-gradient(farthest-side, var(--md-accent-fg-color) 98%,transparent 100%) bottom right/2px 2px,
+        radial-gradient(farthest-side, var(--md-accent-fg-color) 98%,transparent 100%) bottom left /2px 2px,
+        linear-gradient(var(--md-accent-fg-color),var(--md-accent-fg-color)) bottom/calc(100% - 2px) 2px;
     background-repeat:no-repeat;
     background-origin: padding-box;
     padding-bottom: 2px;
