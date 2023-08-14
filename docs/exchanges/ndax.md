@@ -1,27 +1,40 @@
-# `ndax`
+## 🛠 Connector Info
 
-## 📁 Connector Info
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: [CoinAlpha](https://coinalpha.com)
 
-* Type: SPOT CLOB DEX
-* Folder: [/gateway/src/connectors/ndax](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax)
-* Maintainer: [CoinAlpha](https://coinalpha.com)
+Currently, NDAX is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-## 🏆 Exchange Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | Not built |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
 ## ℹ️ Exchange Info
 
-* Website: <https://ndax.io/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/ndax/>
-* CoinGecko:
-* API docs: <https://ndaxlo.github.io/API/#introduction>
+- **Website**: <https://www.ndax.com/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ndax/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/ndax>
+- **API Docs**: https://apidoc.ndax.io/
+- **Fees**: <https://ndax.io/fees>
+- **Supported Countries**: Not available
 
-## 🔑 Connection
+## 🔑 How to Connect
 
-Run `connect ndax` in order to enter your API keys:
+### Generate API Keys
+
+1. Log into your NDAX account and click the user icon
+2. Select API from the dropdown menu
+3. Choose the account you want to create API Keys for
+4. Click Create API Keys
+
+### Add Keys to Hummingbot
+
+From inside the Hummingbot client, run `connect ndax`:
 
 ```
 Enter your ndax user ID (uid) >>>
@@ -34,4 +47,27 @@ If connection is successful:
 
 ```
 You are now connected to ndax.
+```
+
+
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `ndax`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect ndax_paper_trade` instead of `connect ndax`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 ```

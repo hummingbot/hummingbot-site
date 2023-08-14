@@ -127,18 +127,15 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started:
-    - Getting Started: docs/index.md
-    - Installation:
-      - Installation: installation/index.md
-      - Install via Docker: installation/docker.md
-      - Install from Source:
-        - Install from Source: installation/source/index.md
-        - Linux: installation/linux.md
-        - MacOS: installation/mac.md
-        - Windows: installation/windows.md        
-        - Raspberry Pi: installation/raspberry-pi.md
-      - Post-Installation: installation/post-installation.md
-      - Orchestration Module: installation/orchestration.md
+    - Getting Started: installation/index.md
+    - Install via Docker: installation/docker.md
+    - Install from Source: 
+      - Install from Source: installation/source/index.md
+      - Linux: installation/linux.md
+      - MacOS: installation/mac.md
+      - Windows: installation/windows.md        
+      - Raspberry Pi: installation/raspberry-pi.md
+    - Post-Installation: installation/post-installation.md
     - Quickstart:
       - Quickstart: quickstart/index.md
       - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
@@ -148,9 +145,10 @@ nav:
       - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
-  - Reference:
-    - Features:
-      - Features: operation/index.md
+  - Docs:
+    - Docs: docs/index.md
+    - Client:
+      - Client: operation/index.md
       - User Interface Guide: operation/user-interface.md
       - Commands and Shortcuts: operation/commands-shortcuts.md
       - Launch/Exit Hummingbot: operation/launch-exit.md
@@ -177,14 +175,16 @@ nav:
       - Data Collector: global-configs/data-collector.md
       - Debug Console: developers/debug.md
       - Adding Commands: developers/commands.md
-    - Scripts and Composable Strategies:
+    - Scripts and V2 Strategies:
       - Scripts: scripts/index.md
-      - Cheatsheet: scripts/cheatsheet.md
-      - Candles Feed: scripts/candles-feed.md
-      - Smart Components: scripts/smart-components.md
-      - Script Examples: scripts/examples.md
-    - Strategies:
-      - Strategies: strategies/index.md
+      - Cheatsheat: scripts/cheatsheet.md
+      - Sample Scripts: scripts/examples.md
+      - Components:
+        - Candles Feed: scripts/candles-feed.md
+        - Smart Components: scripts/smart-components.md
+      - V2 Strategies: scripts/index.md
+    - V1 Strategies:
+      - V1 Strategies: strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
       - AMM Arbitrage: strategies/amm-arbitrage.md
@@ -196,8 +196,8 @@ nav:
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
       - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-      - Building Strategies:
-        - Building Strategies: developers/strategies/index.md
+      - Building V1 Strategies:
+        - Building V1 Strategies: developers/strategies/index.md
         - Architecture: developers/strategies/architecture.md
         - Tutorial: developers/strategies/tutorial.md
         - Key Concepts: developers/strategies/key-concepts.md
@@ -239,6 +239,7 @@ nav:
       - Running DEX Bots: gateway/running-dex-bots.md
       - Adding DEX Connectors: gateway/adding-dex-connectors.md
       - API Reference: gateway/api-reference.md
+    - Orchestration Module: installation/orchestration.md
   - Governance:
     - Governance: governance/index.md
     - Epochs: governance/epochs.md
@@ -247,46 +248,46 @@ nav:
     - Release Process: governance/releases.md
     # - Whitepaper: governance/whitepaper.md
     - CEX Connectors:
-      - Binance: exchanges/binance.md
-      - Kucoin: exchanges/kucoin.md
-      - Gate.io: exchanges/gate-io.md
-      - AscendEX: exchanges/ascend-ex.md
+      - Binance 🥇: exchanges/binance/index.md
+      - Kucoin 🥈: exchanges/kucoin/index.md
+      - Gate.io 🥈: exchanges/gate-io/index.md
+      - AscendEX 🥈: exchanges/ascendex/index.md
       - AltMarkets: exchanges/altmarkets.md
-      - Binance US: exchanges/binance-us.md
+      - Binance US: exchanges/binance-us/index.md
       - Bybit: exchanges/bybit.md
       - Bitfinex: exchanges/bitfinex.md
       - BitGet: exchanges/bitget-perpetual.md
-      - BitMart: exchanges/bitmart.md
+      - BitMart: exchanges/bitmart/index.md
       - Bitmex: exchanges/bitmex.md
       - Bittrex: exchanges/bittrex.md
       - BTC Markets: exchanges/btc-markets.md
       - Coinbase: exchanges/coinbase.md
-      - Defira: exchanges/defira.md
-      - Dexalot: exchanges/dexalot.md
       - HitBTC: exchanges/hitbtc.md
       - Hotbit: exchanges/hotbit.md
-      - Huobi: exchanges/huobi.md
-      - Kraken: exchanges/kraken.md
-      - MEXC: exchanges/mexc.md 
+      - Huobi: exchanges/huobi/index.md
+      - Kraken: exchanges/kraken/index.md
+      - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx.md
       - Phemex: exchanges/phemex-perpetual.md
     - DEX Connectors:
-      - Uniswap: exchanges/uniswap.md
-      - Quickswap: exchanges/quickswap.md
-      - dYdX: exchanges/dydx-perpetual.md
-      - TraderJoe: exchanges/traderjoe.md
+      - Uniswap 🥇: exchanges/uniswap.md
+      - dYdX 🥈: exchanges/dydx-perpetual.md
+      - Pancakeswap 🥈: exchanges/pancakeswap.md
+      - Dexalot 🥈: exchanges/dexalot.md
+      - Defira: exchanges/defira.md
       - Injective: exchanges/injective.md
-      - Loopring: exchanges/loopring.md
+      - Loopring: exchanges/loopring/index.md
       - Mad Meerkat: exchanges/mad-meerkat.md
       - OpenOcean: exchanges/openocean.md
-      - Pancakeswap: exchanges/pancakeswap.md
       - Pangolin: exchanges/pangolin.md
       - Perpetual Protocol: exchanges/perp.md
       - Polkadex: exchanges/polkadex.md
+      - Quickswap: exchanges/quickswap.md
       - Ref: exchanges/ref.md
       - Sushiswap: exchanges/sushiswap.md
       - Tinyman: exchanges/tinyman.md
+      - TraderJoe: exchanges/traderjoe.md
       - Vertex: exchanges/vertex.md
       - VVS: exchanges/vvs.md
       - XSwap: exchanges/xswap.md

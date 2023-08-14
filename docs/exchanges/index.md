@@ -1,16 +1,21 @@
-## Exchange Types
+## What are Connectors?
 
-Hummingbot connectors standardize trading logic and order types across different exchange types. All code related to each connector is housed in a folder located in the Hummingbot codebase.
+Hummingbot connectors standardize trading logic and order types across different types of exchanges and blockchain networks. Each connector's code is contained in modularized folders in the Hummingbot and/or Gateway codebases. We classify connectors using the following categories:
 
-We classify connectors using the following labels:
+### Exchange Type
 
-* **SPOT**: An exchange that trades spot markets
-* **PERP**: An exchange that trades perpetual swap markets
 * **CEX**: A centralized exchange that takes custody of user assets
 * **DEX**: A decentralized exchange in which user assets are stored non-custodially in smart contracts
-* **CLOB**: An exchange that uses a Central Limit Order Book to match makers and takers
-* **AMM**: A DEX that uses Automatic Market Maker (AMM) smart contracts, popularized by Uniswap-V2
-* **AMM-RANGE**: A DEX that uses Automatic Market Maker (AMM) smart contracts that let liquidity providers specify a range, popularized by Uniswap-V3
+
+### Market Type
+
+* **CLOB**: An exchange that uses a Central Limit Order Book (CLOB) model to match makers and takers
+* **AMM**: An exchange that uses Automatic Market Maker (AMM) model to match makers and takers, popularized by Uniswap
+
+### Connector Type
+
+* **Spot**: Connector to an exchange's spot markets
+* **Perp**: Connector to an exchange's perpetual swap markets
 
 ## Connector Maintenance
 
@@ -34,9 +39,8 @@ The two Gold exchanges are the top CEX and DEX selected by HBOT voters in the la
 
 | Exchange | Type | Maintainer | Signup code |
 |----------|------|------------|-------------|
-| [Binance](./binance) | SPOT CLOB CEX | Hummingbot Foundation | [FQQNNGCD](https://www.binance.com/en/register?ref=FQQNNGCD)
-| [Binance (perp)](./binance-perpetual) | PERP CLOB CEX |  Hummingbot Foundation | [hummingbot](https://www.binance.com/en/futures/ref?code=hummingbot)
-| [Uniswap](./uniswap) | SPOT AMM-RANGE DEX | Hummingbot Foundation |
+| [Binance](./binance) | CEX-CLOB | Hummingbot Foundation | [Spot Referral Link](https://www.binance.com/en/register?ref=FQQNNGCD) | [Futures Referral Link](https://www.binance.com/en/futures/ref?code=hummingbot)
+| [Uniswap](./uniswap) | DEX-AMM | Hummingbot Foundation |
 
 ### Silver
 
@@ -46,14 +50,12 @@ Silver exchanges are prioritized by HBOT holders in the latest Poll. Their conne
 
 | Exchange | Type | Maintainer | Signup code |
 |----------|------|------------|-------------|
-| [Kucoin](./kucoin) | SPOT CLOB CEX | Hummingbot Foundation | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
-| [Kucoin (perp)](./kucoin-perpetual) | PERP CLOB CEX | Hummingbot Foundation | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
-| [Gate.io](./gate-io) | SPOT CLOB CEX | Hummingbot Foundation | [5868285](https://www.gate.io/signup/5868285)
-| [Gate.io (perp)](./gate-io-perpetual) | PERP CLOB CEX | Hummingbot Foundation | [5868285](https://www.gate.io/signup/5868285)
-| [AscendEx](./ascend-ex) | SPOT CLOB CEX | Hummingbot Foundation | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
-| [Quickswap](./quickswap) | SPOT AMM DEX | Hummingbot Foundation | 
-| [TraderJoe](./traderjoe) | SPOT AMM DEX | Hummingbot Foundation | [CoinAlpha](https://coinalpha.com) | 
-| [dYdX](./dydx-perpetual) | PERP CLOB DEX | Hummingbot Foundation | 
+| [Kucoin](./kucoin) | CEX-CLOB | Hummingbot Foundation | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
+| [Gate.io](./gate-io) | CEX-CLOB | Hummingbot Foundation | [5868285](https://www.gate.io/signup/5868285)
+| [AscendEx](./ascend-ex) | CEX-CLOB | Hummingbot Foundation | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
+| [dYdX](./dydx) | DEX-CLOB | Hummingbot Foundation |
+| [Pancakeswap](./pancakeswap) | DEX-AMM | Hummingbot Foundation |
+| [Dexalot](./dexalot) | DEX-CLOB | Hummingbot Foundation |
 
 ### Bronze
 
@@ -63,43 +65,41 @@ Bronze exchange connectors have passed the Minimum Voting Power Threshold in the
 
 | Exchange | Type | Maintainer | Signup code |
 |----------|------|------------|-------------|
-| [AltMarkets](./altmarkets) | SPOT CLOB CEX |
-| [BTC-Markets](./btc-markets) | SPOT CLOB CEX |
-| [Binance US](./binance-us) | SPOT CLOB CEX |
-| [BitGet](./bitget-perpetual) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
-| [Bit.com](./bit-com-perpetual) | PERP CLOB CEX |
-| [Bitmart](./bitmart) | SPOT CLOB CEX | [CoinAlpha](https://coinalpha.com) | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
-| [Bitfinex](./bitfinex) | SPOT CLOB CEX |
-| [Bitmex](./bitmex) | SPOT CLOB CEX |
-| [Bitmex (perp)](./bitmex-perpetual) | PERP CLOB CEX |
-| [Bittrex](./bittrex) | SPOT CLOB CEX |
-| [Bybit](./bybit) | SPOT CLOB CEX |
-| [Bybit (perp)](./bybit) | PERP CLOB CEX |
-| [Coinbase](./coinbase) | SPOT CLOB CEX |
-| [Defira](./defira) | SPOT AMM DEX |
-| [Dexalot](./dexalot) | SPOT CLOB DEX | [CoinAlpha](https://coinalpha.com) |
-| [HitBTC](./hitbtc) | SPOT CLOB CEX |
-| [Hotbit](./hotbit) | SPOT CLOB CEX |
-| [Huobi](./huobi) | SPOT CLOB CEX | | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
-| [Injective](./injective) | SPOT CLOB DEX |
-| [Injective (perp)](./injective-perpetual) | PERP CLOB DEX |
-| [Kraken](./kraken) | SPOT CLOB CEX |
-| [Loopring](./loopring) | SPOT CLOB DEX |
-| [MEXC](./mexc) | SPOT CLOB CEX |
-| [Mad Meerkat](./mad-meerkat) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
-| [NDAX](./ndax) | SPOT CLOB DEX | [CoinAlpha](https://coinalpha.com) | 
-| [OKX](./okx) | SPOT CLOB CEX | | [1931920](https://www.okx.com/join/1931920)
-| [OpenOcean](./openocean) | SPOT AMM DEX |
-| [Pancakeswap](./pancakeswap) | SPOT AMM DEX |
-| [Pangolin](./pangolin) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
+| [AltMarkets](./altmarkets) | CEX-CLOB |
+| [BTC-Markets](./btc-markets) | CEX-CLOB |
+| [Binance US](./binance-us) | CEX-CLOB |
+| [BitGet](./bitget-perpetual) | CEX-CLOB | [CoinAlpha](https://coinalpha.com) | 
+| [Bit.com](./bit-com-perpetual) | CEX-CLOB |
+| [Bitmart](./bitmart) | CEX-CLOB | [CoinAlpha](https://coinalpha.com) | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
+| [Bitfinex](./bitfinex) | CEX-CLOB |
+| [Bitmex](./bitmex) | CEX-CLOB |
+| [Bittrex](./bittrex) | CEX-CLOB |
+| [Bybit](./bybit) | CEX-CLOB |
+| [Bybit (perp)](./bybit) | CEX-CLOB |
+| [Coinbase](./coinbase) | CEX-CLOB |
+| [Defira](./defira) | DEX-AMM |
+| [HitBTC](./hitbtc) | CEX-CLOB |
+| [Hotbit](./hotbit) | CEX-CLOB |
+| [Huobi](./huobi) | CEX-CLOB | | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
+| [Injective](./injective) | DEX-CLOB |
+| [Kraken](./kraken) | CEX-CLOB |
+| [Loopring](./loopring) | DEX-CLOB |
+| [MEXC](./mexc) | CEX-CLOB |
+| [Mad Meerkat](./mad-meerkat) | DEX-AMM | [CoinAlpha](https://coinalpha.com) | 
+| [NDAX](./ndax) | CEX-CLOB | [CoinAlpha](https://coinalpha.com) | 
+| [OKX](./okx) | CEX-CLOB | | [1931920](https://www.okx.com/join/1931920)
+| [OpenOcean](./openocean) | DEX-AMM |
+| [Quickswap](./quickswap) | DEX-AMM |
+| [Pangolin](./pangolin) | DEX-AMM | [CoinAlpha](https://coinalpha.com) | 
 | [Perpetual Protocol](./perp) | PERP AMM DEX |
 | [Phemex Perpetual](./phemex-perpetual) | PERP CLOB CEX | [CoinAlpha](https://coinalpha.com) | 
-| [Polkadex](./polkadex) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com)
-| [Ref Finance](./ref) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
-| [Sushiswap](./sushiswap) | SPOT AMM DEX |
-| [Tinyman](./tinyman) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
-| [VVS Finance](./vvs) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
-| [XSwap](./xswap) | SPOT AMM DEX | [CoinAlpha](https://coinalpha.com) | 
+| [Polkadex](./polkadex) | DEX-AMM | [CoinAlpha](https://coinalpha.com)
+| [Ref Finance](./ref) | DEX-AMM | [CoinAlpha](https://coinalpha.com) | 
+| [Sushiswap](./sushiswap) | DEX-AMM |
+| [Tinyman](./tinyman) | DEX-AMM | [CoinAlpha](https://coinalpha.com) | 
+| [TraderJoe](./traderjoe) | DEX-AMM | Hummingbot Foundation | [CoinAlpha](https://coinalpha.com) | 
+| [VVS Finance](./vvs) | DEX-AMM | [CoinAlpha](https://coinalpha.com) | 
+| [XSwap](./xswap) | DEX-AMM | [CoinAlpha](https://coinalpha.com) | 
 
 
 ## Contributing Connectors
