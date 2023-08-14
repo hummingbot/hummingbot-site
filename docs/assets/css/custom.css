@@ -12,7 +12,7 @@
   --md-primary-fg-color--dark:  #00C2CE;
   --md-primary-bg-color: rgba(0,0,0,.75);
   --md-primary-bg-color--light: rgba(0,0,0,.54);
-  --md-accent-fg-color: #E549FF;
+  --md-accent-fg-color: #00C2CE;
   --pg-light-border: rgb(229, 231, 235);
   --hb-hero-color: rgb(45, 45, 45);
 }
@@ -31,7 +31,7 @@
 
 /* Better contrast link colors */
 [data-md-color-scheme="default"] > * {
-  --md-typeset-a-color: #00C2CE;
+  --md-typeset-a-color: #E549FF;
 }
 [data-md-color-scheme="slate"] > * {
   --md-typeset-a-color: #5FFFD7;
@@ -95,9 +95,9 @@
   font-weight: 500;
 }
 
-h2, h3 {
+/* h2, h3 {
   color: var(--md-typeset-a-color);
-}
+} */
 
 /* Recommendation cards */
 .md-typeset .admonition.recommendation,
