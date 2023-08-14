@@ -11,7 +11,7 @@ Currently, Vertex is a **Bronze** exchange, as voted by HBOT holders in each qua
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
 | [🔀 Perp Connector](#perp-connector) | Not available
-| [🕯 AMM Data Feed](#amm-data-feed) |  | Not available
+| [🕯 AMM Data Feed](#amm-data-feed) | Not available
 
 ## ℹ️ Exchange Info
 

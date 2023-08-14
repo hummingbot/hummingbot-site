@@ -220,7 +220,7 @@ nav:
       - HitBTC: exchanges/hitbtc.md
       - Huobi: exchanges/huobi/index.md
       - Injective: exchanges/injective.md      
-      - Kraken: exchanges/kraken.md
+      - Kraken: exchanges/kraken/index.md
       - Loopring: exchanges/loopring/index.md
       - Mad Meerkat: exchanges/mad-meerkat.md
       - MEXC: exchanges/mexc/index.md 

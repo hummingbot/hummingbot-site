@@ -27,6 +27,23 @@ Currently, Kraken is a **Bronze** exchange, as voted by HBOT holders in each qua
 
 ### Generate API Keys
 
+   - Sign in to your Kraken account
+   - Open the account menu (click on your name in the upper-right corner of the page)
+   - Select the Security option
+   - Select the API option
+        
+        [![Create API](kraken-api1.png)](kraken-api1.png)
+
+   - Click the "Add Key" link (you will be able to configure the API in the next steps)
+
+        [![Create API](kraken-api2.png)](kraken-api2.png)
+
+   - Configure the API key by adding the name / description and selecting the necessary access permissions
+
+        [![Create API](kraken-api3.png)](kraken-api3.png)
+
+   - Once the API key settings have been configured appropriately, the new API key can be created by clicking on the Generate key button. Make sure to store the API keys in a safe place. 
+
 ### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect kraken`:

@@ -84,3 +84,4 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect injective` to `injective-testnet` instead of `injective-mainnet`.

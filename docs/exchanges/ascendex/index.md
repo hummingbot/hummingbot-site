@@ -98,8 +98,8 @@ If this is not available by default, you can configure Hummingbot to add this pa
 *Collect historical OHCLV data from this exchange's spot markets*
 
 - **ID**: `ascendex`
-- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/ascendex_spot_candles
+- **Supported Intervals**: 1min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 12hour |  1day | 1week | 1M
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/ascend_ex_spot_candles
 
 ### Usage
 
