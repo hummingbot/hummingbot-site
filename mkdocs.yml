@@ -18,40 +18,44 @@ copyright: Copyright &copy; 2023 Hummingbot Foundation
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/img/logo.png
-  favicon: assets/img/favicon.ico
+  logo: assets/brand/logo-color.png
+  favicon: assets/brand/favicon.ico
   icon:
     repo: fontawesome/brands/github
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: cyan
-      accent: purple
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: cyan
-      accent: purple
+      accent: amber
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/brightness-2
+        name: "Switch to light mode"
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: deep purple
+      toggle:
+        icon: material/brightness-5
+        name: "Switch to dark mode"
   font:
-      text: Roboto
+      text: Noto Sans
       code: Roboto Mono
   features:
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.top
     - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.path
     - navigation.indexes
-    - navigation.top
+    - navigation.prune
+    # - content.tabs.link
+    # - content.tooltips
+    # - search.highlight
 
 plugins:
   - search
   - git-revision-date
   - social
+  - optimize
 
 extra:
   homepage: https://hummingbot.org
@@ -86,6 +90,7 @@ markdown_extensions:
   - admonition
   - abbr
   - attr_list
+  - md_in_html
   - def_list
   - footnotes
   - meta
