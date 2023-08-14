@@ -55,7 +55,6 @@ plugins:
   - search
   - git-revision-date
   - social
-  - optimize
 
 extra:
   homepage: https://hummingbot.org
