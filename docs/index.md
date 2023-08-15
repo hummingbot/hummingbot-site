@@ -5,53 +5,64 @@ hide:
   - navigation
 ---
 
+# What can you do with Hummingbot?
+
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+-   :material-clock-fast:{ .lg .middle } __No-code strategies__
 
     ---
 
-    Install [`mkdocs-material`](#) with [`pip`](#) and get up
-    and running in minutes
+    Create sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
 
     [:octicons-arrow-right-24: Getting started](#)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+-   :fontawesome-brands-markdown:{ .lg .middle } __Deploy to any CEX or DEX__
 
     ---
 
-    Focus on your content and generate a responsive and searchable static site
+    Hummingbot connectors let you run the same strategies across many crypto exchanges, including DEXs.
 
     [:octicons-arrow-right-24: Reference](#)
 
--   :material-format-font:{ .lg .middle } __Made to measure__
+-   :material-format-font:{ .lg .middle } __Orchestrate a fleet of trading bots__
 
     ---
 
-    Change the colors, fonts, language, icons, logo and more with a few lines
+    Deploy, monitor, and control multiple bot instances using Hummingbot Dashboard, a new web-based user interface.
 
     [:octicons-arrow-right-24: Customization](#)
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :material-scale-balance:{ .lg .middle } __Built-in backtesting and optimization__
 
     ---
 
-    Material for MkDocs is licensed under MIT and available on [GitHub]
+    Backtest against historical data, optimize strategy hyper-parameters before deploying them live.
 
     [:octicons-arrow-right-24: License](#)
 
 </div>
 
-<!-- markdownlint-disable-next-line -->
-## Why should I care?
+---
 
-##### “I have nothing to hide. Why should I care about my privacy?”
+# Who runs Hummingbot?
+
+## Individual algo traders
+
+#### "I run Hummingbot to earn yield from liquidity mining rewards"
+
+##### Hoang La, Vietnam
 
 Much like the right to interracial marriage, woman's suffrage, freedom of speech, and many others, our right to privacy hasn't always been upheld. In several dictatorships, it still isn't. Generations before ours fought for our right to privacy. ==Privacy is a human right, inherent to all of us,== that we are entitled to (without discrimination).
 
 You shouldn't confuse privacy with secrecy. We know what happens in the bathroom, but you still close the door. That's because you want privacy, not secrecy. **Everyone** has something to protect. Privacy is something that makes us human.
 
 [:material-book-outline: Why Privacy Matters](basics/why-privacy-matters.md){ class="md-button md-button--primary" }
+
+## Trading firms and market makers
+
+## Token projects and exchanges
+
 
 ## What should I do?
 

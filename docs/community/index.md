@@ -12,7 +12,7 @@ Check out the [Foundation calendar](https://www.notion.so/hummingbot-foundation/
 
 We maintain and keep updated the following boards, sheets and other resources:
 
-* [Reported Volumes](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report.
+* [Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52): A public dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report.
 
 * [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet maintained by the Foundation, this shows you the real-time HBOT circulating supply, approved proposals, active bounties, and HBOT distributions.
 
