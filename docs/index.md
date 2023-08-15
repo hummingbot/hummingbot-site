@@ -3,6 +3,7 @@ template: home.html
 hide:
   - toc
   - navigation
+  - feedback
 ---
 
 # What can you do with Hummingbot?

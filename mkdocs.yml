@@ -55,9 +55,10 @@ theme:
 
 plugins:
   - search
-  - git-revision-date
+  # - git-revision-date
   - social
   - mkdocs-video
+  - blog
 
 extra:
   homepage: https://hummingbot.org
@@ -65,6 +66,20 @@ extra:
   analytics:
     provider: google
     property: UA-119262087-3
+    feedback:
+          title: Was this page helpful?
+          ratings:
+            - icon: material/thumb-up-outline
+              name: This page was helpful
+              data: 1
+              note: >-
+                Thanks for your feedback!
+            - icon: material/thumb-down-outline
+              name: This page could be improved
+              data: 0
+              note: >- 
+                Thanks for your feedback! Help us improve this page by
+                <a href="https://github.com/hummingbot/hummingbot-site/issues/new?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">filing an issue</a>.
   social:
     - icon: fontawesome/solid/envelope
       link: https://hummingbot.substack.com
@@ -407,4 +422,5 @@ nav:
     - Reporting: reporting.md
     - History: about/history.md
     - ❤️ Support Us: support-hummingbot.md
-  - Blog: https://blog.hummingbot.org
+  - Blog: 
+    - blog/index.md
