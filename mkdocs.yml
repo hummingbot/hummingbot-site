@@ -18,19 +18,19 @@ copyright: Copyright &copy; 2023 Hummingbot Foundation
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/brand/logo-color.png
+  logo: assets/brand/favicon.svg
   favicon: assets/brand/favicon.svg
   icon:
     repo: fontawesome/brands/github
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    # - media: "(prefers-color-scheme: dark)"
+    - scheme: slate
       accent: amber
       toggle:
         icon: material/brightness-2
         name: "Switch to light mode"
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # - media: "(prefers-color-scheme: light)"
+    - scheme: default
       accent: deep purple
       toggle:
         icon: material/brightness-5
