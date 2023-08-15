@@ -226,8 +226,17 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 }
 
 .md-footer {
+  margin-top: 1rem;
   border-top: 1px solid var(--pg-light-border);
-  /* background-color: var(--md-primary-fg-color);
-  color: var(--md-primary-fg-color--light); */
 }
 
+/* Wide card grids */
+.md-typeset .grid.wide {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .md-typeset .grid.wide {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}

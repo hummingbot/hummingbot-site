@@ -38,7 +38,7 @@ hide:
 
     ---
 
-    Analyze and tweak bots in real-time.
+    Get real-time performance updates and monitor all your bots with Telegram.
 
     [:octicons-arrow-right-24: Strategy Performance](#)
 
@@ -65,62 +65,67 @@ hide:
 
 ---
 
-# Who runs Hummingbot?
+# Who uses Hummingbot?
 
-## Individual traders
+## Individual Traders
 
-#### "Testimonial: I ❤️ Hummingbot because I earn liquidity mining rewards"
+#### "I run Hummingbot to earn side income on the Hummingbot Miner platform. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
-##### Hoang La, Vietnam
+##### Name, Location
 
-Much like the right to interracial marriage, woman's suffrage, freedom of speech, and many others, our right to privacy hasn't always been upheld. In several dictatorships, it still isn't. Generations before ours fought for our right to privacy. ==Privacy is a human right, inherent to all of us,== that we are entitled to (without discrimination).
+## Market Making Firms
 
-==This process of identifying threats and defining countermeasures is called **threat modeling**==, and it forms the basis of every good security and privacy plan.
+#### "Hummingbot is an essential component of our trading system. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## Trading firms
+##### Name, Company
 
-#### "Testimonial: I ❤️ Hummingbot because it gives my traders access to bot strategies without hiring engineers!"
+## Token Projects
 
-##### Evgeny Gokhberg, Re7 Capital
+#### "We use a customized Hummingbot Dashboard to monitor Dictum non consectetur a erat nam at lectus. Nec ullamcorper sit amet risus. Id aliquet risus feugiat in ante metus. Odio morbi quis commodo odio aenean sed adipiscing diam.
 
-You shouldn't confuse privacy with secrecy. We know what happens in the bathroom, but you still close the door. That's because you want privacy, not secrecy. **Everyone** has something to protect. Privacy is something that makes us human.
-
-<!-- [:material-book-outline: Why Privacy Matters](basics/why-privacy-matters.md){ class="md-button md-button--primary" } -->
-
-## Token projects
-
-#### "Testimonial: I ❤️ Hummingbot because their community powers liquidity for our ecosystem!"
-
-##### Stephen Tse, Harmony Protocol
-
-Trying to protect all your data from everyone all the time is impractical, expensive, and exhausting. But don't worry! Security is a process, and, by thinking ahead, you can put together a plan that's right for you. Security isn't just about the tools you use or the software you download. Rather, it begins by understanding the unique threats you face, and how you can mitigate them.
-
-## Exchanges
-
-#### "Testimonial from DEX founder"
-
-##### Name, Title
-
-Trying to protect all your data from everyone all the time is impractical, expensive, and exhausting. But don't worry! Security is a process, and, by thinking ahead, you can put together a plan that's right for you. Security isn't just about the tools you use or the software you download. Rather, it begins by understanding the unique threats you face, and how you can mitigate them.
-
+##### Name, Project 
 
 ---
 
-# Community-Owned and Operated
+# What strategies can you run with Hummingbot?
+
+<div class="grid cards wide" markdown>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+## Learn how to run strategies like these with [Botcamp](/community/botcamp), an online program that teaches you how to design and code algo trading strategies with Hummingbot.
+
+<br />
+
+[Join Botcamp](/community/botcamp){ .md-button .md-button--primary }
+
+---
+
+# Global community of algo traders and developers
 
 Hummingbot Foundation is a not-for-profit foundation that facilitates decentralized maintenance and governance of the Hummingbot codebase, powered by the Hummingbot Governance Token (HBOT).
 
 The Hummingbot codebase will always be free and publicly available under the Apache 2.0 open source license. Help us **democratize high-frequency trading**!
 
-- [About the Foundation](/about): About Hummingbot Foundation
+- [About Us](/about): About Hummingbot Foundation
+- [Community](/community): Participate in the global Hummingbot ecosystem
 - [Governance](/governance): All things related to Foundation governance
 - [FAQ](/faq): Answers to common questions
-- [Community](/community): Participate in the global Hummingbot ecosystem
 
 ---
 
-# Get the Newsletter
+# Get the Hummingbot newsletter
 
-Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
+Sign up for the official [Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
 
-[Get the Hummingbot newsletter :fontawesome-solid-paper-plane:](https://hummingbot.substack.com/){ .md-button .md-button--primary }
+<br />
+
+[Subscribe to Newsletter](https://hummingbot.substack.com/){ .md-button .md-button--primary }

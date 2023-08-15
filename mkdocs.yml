@@ -59,9 +59,9 @@ plugins:
         background_color: "#151819"
         color: "#5FFFD7"
   - search
-  - mkdocs-video
   - blog
   # - git-revision-date
+  # - mkdocs-video
 
 extra:
   homepage: https://hummingbot.org
@@ -341,7 +341,7 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Community:
     - Community: community/index.md
-    - Events: community/events.md
+    # - Events: community/events.md
     - Botcamp: community/botcamp.md 
     - Bounties: 
       - Bounties: bounties/index.md
