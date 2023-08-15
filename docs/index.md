@@ -16,7 +16,7 @@ hide:
 
     Design sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
 
-    [:octicons-arrow-right-24: Strategies](#)
+    [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
 -   :fontawesome-brands-markdown:{ .lg .middle } __Deploy to any CEX or DEX__
 
@@ -24,7 +24,7 @@ hide:
 
     Hummingbot connectors let you run the same strategies everywhere, including DEXs on various blockchain networks.
 
-    [:octicons-arrow-right-24: Reference](#)
+    [:octicons-arrow-right-24: Connector Docs](/exchanges/)
 
 -   :material-format-font:{ .lg .middle } __Orchestrate a fleet of trading bots__
 
@@ -32,15 +32,34 @@ hide:
 
     Deploy, monitor, and control multiple bot instances using Hummingbot Dashboard, a new web-based user interface.
 
-    [:octicons-arrow-right-24: Customization](#)
+    [:octicons-arrow-right-24: Dashboard Demo Video](#)
 
--   :material-scale-balance:{ .lg .middle } __Built-in backtesting and optimization__
+-   📊 __Analyze and tweak bots in real-time__
 
     ---
 
-    Backtest against historical data, optimize strategy hyper-parameters before deploying them live.
+    Analyze and tweak bots in real-time.
 
-    [:octicons-arrow-right-24: License](#)
+    [:octicons-arrow-right-24: Strategy Performance](#)
+
+-   :material-scale-balance:{ .lg .middle } __Backtest and optimize your bots__
+
+    ---
+
+    Backtest strategies against historical data and optimize parameters before deploying them live.
+
+    [:octicons-arrow-right-24: Backtest Demo Video](#)
+
+-   :material-scale-balance:{ .lg .middle } __Fork and extend the codebase__
+
+    ---
+
+    Hummingbot is free and publicly available under the Apache 2.0 open source license!
+
+    [:octicons-arrow-right-24: Github](https://github.com/hummingbot/hummingbot)
+
+    [:octicons-arrow-right-24: Contribute](#)
+
 
 </div>
 

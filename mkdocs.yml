@@ -19,7 +19,7 @@ theme:
   name: material
   custom_dir: overrides
   logo: assets/brand/logo-color.png
-  favicon: assets/brand/favicon.ico
+  favicon: assets/brand/favicon.svg
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -340,20 +340,22 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Community:
     - Community: community/index.md
-    - Bounties: bounties/index.md
-    - For Contributors: bounties/contributors.md
-    - Contribution Guidelines: developers/contributions.md
-    - Forking the Repository: developers/forking.md
-    # - Sponsors Guide: bounties/sponsors.md
-    - Governance:
+    - Events: community/events.md
+    - Botcamp: community/botcamp.md 
+    - Bounties: 
+      - Bounties: bounties/index.md
+      - For Contributors: bounties/contributors.md
+      - For Sponsors: bounties/sponsors.md
+      - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+    - Governance: 
       - Governance: governance/index.md
       - Epochs: governance/epochs.md
       - Polls: governance/polls.md
       - Proposals: governance/proposals.md
       - Whitepaper: governance/whitepaper.md
-    - Botcamp ↗️: https://botcamp.hummingbot.org
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-    - Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
+    - Contribution Guidelines: developers/contributions.md
+    - Forking the Repository: developers/forking.md
+    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
   - About:
     - About: about/index.md
     - FAQ: faq.md

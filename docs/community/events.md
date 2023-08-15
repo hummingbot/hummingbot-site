@@ -1,4 +1,4 @@
-The Foundation work with partners to host hackathons related to Hummingbot.
+## Past events
 
 ### ETHPortland Hackathon
 
