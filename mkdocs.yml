@@ -47,6 +47,8 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.prune
+    - content.code.copy
+    - toc.follow
     # - content.tabs.link
     # - content.tooltips
     # - search.highlight
@@ -67,6 +69,8 @@ extra:
       link: https://hummingbot.substack.com
     - icon: fontawesome/brands/discord
       link: https://discord.gg/hummingbot
+    - icon: fontawesome/brands/youtube
+      link: https://youtube/c/hummingbot
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/_hummingbot
     - icon: fontawesome/brands/github
@@ -77,12 +81,9 @@ extra:
 extra_css:
   - assets/css/custom.css
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-  - assets/js/tables.js
+  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - assets/js/config.js
-  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Extensions
 markdown_extensions:
@@ -92,36 +93,37 @@ markdown_extensions:
   - md_in_html
   - def_list
   - footnotes
-  - meta
-  - pymdownx.arithmatex:
-      generic: true
+  # - meta
   - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      user: hummingbot
-      repo: hummingbot
-      repo_url_shorthand: true
-  - pymdownx.mark
+  # - pymdownx.magiclink:
+  #     user: hummingbot
+  #     repo: hummingbot
+  #     repo_url_shorthand: true
   - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      check_paths: true
-      auto_append:
-        - includes/abbreviations.md
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
   - toc:
       permalink: true
+  - tables
 
 # Navigation
 nav:
