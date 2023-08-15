@@ -1,8 +1,9 @@
 # Hummingbot Quickstart
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/t3Su_F_SY_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![type:video](https://www.youtube.com/embed/t3Su_F_SY_0)
 
 ## Introduction
+
 
 Welcome to the new **Hummingbot Quickstart Guide**! This will teach you how to build and customize market making strategy using Hummingbot over 5 exercises.
 
