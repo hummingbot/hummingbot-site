@@ -126,21 +126,29 @@ markdown_extensions:
 # Navigation
 nav:
   - Home: index.md
+  - Getting Started:
+    - Getting Started: installation/index.md
+    - Install via Docker: installation/docker.md
+    - Install from Source: 
+      - Install from Source: installation/source/index.md
+      - Linux: installation/linux.md
+      - MacOS: installation/mac.md
+      - Windows: installation/windows.md        
+      - Raspberry Pi: installation/raspberry-pi.md
+    - Post-Installation: installation/post-installation.md
+    - Quickstart:
+      - Quickstart: quickstart/index.md
+      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
+      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
+      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
+      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
+      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    - Glossary: glossary.md
+    - Troubleshooting: troubleshooting.md
   - Docs:
     - Docs: docs/index.md
-    - Installation:
-      - Installation: installation/index.md
-      - Install via Docker: installation/docker.md
-      - Install from Source:
-        - Install from Source: installation/source/index.md
-        - Linux: installation/linux.md
-        - MacOS: installation/mac.md
-        - Windows: installation/windows.md        
-        - Raspberry Pi: installation/raspberry-pi.md
-      - Post-Installation: installation/post-installation.md
-      - Orchestration Module: installation/orchestration.md
-    - Features:
-      - Features: operation/index.md
+    - Client:
+      - Client: operation/index.md
       - User Interface Guide: operation/user-interface.md
       - Commands and Shortcuts: operation/commands-shortcuts.md
       - Launch/Exit Hummingbot: operation/launch-exit.md
@@ -153,24 +161,51 @@ nav:
       - Check Performance: operation/history.md
       - Find Log Files: operation/log-files.md
       - Export Trades/Keys: operation/export.md
-      - Advanced Features:
-        - Advanced Features: global-configs/index.md
-        - Auto-start from Command Line: global-configs/strategy-autostart.md
-        - Balance Limit: global-configs/balance-limit.md
-        - Clock Tick Size: global-configs/clock-tick.md 
-        - Color Settings: global-configs/color-settings.md
-        - Connect External Database: global-configs/external-db.md
-        - Kill Switch: global-configs/kill-switch.md
-        - Override Fees: global-configs/override-fees.md
-        - Paper Trade: global-configs/paper-trade.md
-        - Rate Oracle: strategy-configs/rate-oracle.md
-        - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
-        - Telegram Integration: global-configs/telegram.md
-        - Data Collector: global-configs/data-collector.md
-        - Debug Console: developers/debug.md
-        - Adding Commands: developers/commands.md
+      - Auto-start from Command Line: global-configs/strategy-autostart.md
+      - Balance Limit: global-configs/balance-limit.md
+      - Clock Tick Size: global-configs/clock-tick.md 
+      - Color Settings: global-configs/color-settings.md
+      - Connect External Database: global-configs/external-db.md
+      - Kill Switch: global-configs/kill-switch.md
+      - Override Fees: global-configs/override-fees.md
+      - Paper Trade: global-configs/paper-trade.md
+      - Rate Oracle: strategy-configs/rate-oracle.md
+      - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
+      - Telegram Integration: global-configs/telegram.md
+      - Data Collector: global-configs/data-collector.md
+      - Debug Console: developers/debug.md
+      - Adding Commands: developers/commands.md
+    - Scripts and V2 Strategies:
+      - Scripts: scripts/index.md
+      - Cheatsheat: scripts/cheatsheet.md
+      - Sample Scripts: scripts/examples.md
+      - Components:
+        - Candles Feed: scripts/candles-feed.md
+        - Smart Components: scripts/smart-components.md
+      - V2 Strategies: scripts/index.md
+    - V1 Strategies:
+      - V1 Strategies: strategies/index.md
+      - Pure Market Making: strategies/pure-market-making.md
+      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+      - AMM Arbitrage: strategies/amm-arbitrage.md
+      - Avellaneda Market Making: strategies/avellaneda-market-making.md
+      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+      - Hedge: strategies/hedge.md
+      - Liquidity Mining: strategies/liquidity-mining.md
+      - Perpetual Market Making: strategies/perpetual-market-making.md
+      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+      - TWAP: strategies/twap.md
+      - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+      - Building V1 Strategies:
+        - Building V1 Strategies: developers/strategies/index.md
+        - Architecture: developers/strategies/architecture.md
+        - Tutorial: developers/strategies/tutorial.md
+        - Key Concepts: developers/strategies/key-concepts.md
+        - Define Configs: developers/strategies/config.md
+        - Hanging Orders Tracker: developers/strategies/hanging-orders.md
       - PMM Configs:
         - PMM Configs: strategy-configs/index.md
+        - PMM Scripts: scripts/pmm-scripts.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md
         - Order Levels: strategy-configs/order-levels.md
         - Filled Order Delay: strategy-configs/filled-order-delay.md
@@ -184,82 +219,17 @@ nav:
         - Price Band: strategy-configs/price-band.md
         - Price Source: strategy-configs/external-price-source.md
         - Ping Pong: strategy-configs/ping-pong.md
-    - Scripts:
-      - Scripts: scripts/index.md
-      - Script Examples: scripts/examples.md
-      - Cheatsheet: scripts/cheatsheet.md
-      - Candles Feed: scripts/candles-feed.md
-      - Smart Components: scripts/smart-components.md
-      - PMM Scripts: scripts/pmm-scripts.md
-    - Exchanges:
-      - Exchanges: exchanges/index.md
-      - Gold:
-        - Binance: exchanges/binance.md
-        - Binance (perp): exchanges/binance-perpetual.md
-        - Uniswap: exchanges/uniswap.md
-      - Silver:
-        - Kucoin: exchanges/kucoin.md
-        - Kucoin (perp): exchanges/kucoin-perpetual.md
-        - Gate.io: exchanges/gate-io.md
-        - Gate.io (perp): exchanges/gate-io-perpetual.md
-        - AscendEX: exchanges/ascend-ex.md
-        - Quickswap: exchanges/quickswap.md
-        - dYdX: exchanges/dydx-perpetual.md
-        - TraderJoe: exchanges/traderjoe.md
-      - Bronze:
-        - AltMarkets: exchanges/altmarkets.md
-        - Binance US: exchanges/binance-us.md
-        - Bybit: exchanges/bybit.md
-        - Bybit (perp): exchanges/bybit-perpetual.md
-        - Bitfinex: exchanges/bitfinex.md
-        - BitGet: exchanges/bitget-perpetual.md
-        - BitMart: exchanges/bitmart.md
-        - Bitmex: exchanges/bitmex.md
-        - Bitmex (perp): exchanges/bitmex-perpetual.md
-        - Bittrex: exchanges/bittrex.md
-        - BIT (perp): exchanges/bit-com-perpetual.md
-        - BTC Markets: exchanges/btc-markets.md
-        - Coinbase: exchanges/coinbase.md
-        - Defira: exchanges/defira.md
-        - Dexalot: exchanges/dexalot.md
-        - HitBTC: exchanges/hitbtc.md
-        - Hotbit: exchanges/hotbit.md
-        - Huobi: exchanges/huobi.md
-        - Injective: exchanges/injective.md
-        - Injective (perp): exchanges/injective-perpetual.md
-        - Kraken: exchanges/kraken.md
-        - Loopring: exchanges/loopring.md
-        - Mad Meerkat: exchanges/mad-meerkat.md
-        - MEXC: exchanges/mexc.md 
-        - NDAX: exchanges/ndax.md
-        - OKX: exchanges/okx.md
-        - OpenOcean: exchanges/openocean.md
-        - Pancakeswap: exchanges/pancakeswap.md
-        - Pangolin: exchanges/pangolin.md
-        - Perpetual Protocol: exchanges/perp.md
-        - Phemex (perp): exchanges/phemex-perpetual.md
-        - Polkadex: exchanges/polkadex.md
-        - Ref: exchanges/ref.md
-        - Sushiswap: exchanges/sushiswap.md
-        - Tinyman: exchanges/tinyman.md
-        - Vertex: exchanges/vertex.md
-        - VVS: exchanges/vvs.md
-        - XSwap: exchanges/xswap.md
-    - Strategies:
-      - Strategies: strategies/index.md
-      - Core:
-        - Pure Market Making: strategies/pure-market-making.md
-        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-        - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Community:        
-        - Avellaneda Market Making: strategies/avellaneda-market-making.md
-        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-        - Hedge: strategies/hedge.md
-        - Liquidity Mining: strategies/liquidity-mining.md
-        - Perpetual Market Making: strategies/perpetual-market-making.md
-        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-        - TWAP: strategies/twap.md
-        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+    - Connectors:
+      - Connectors: exchanges/index.md
+      - Building CEX Connectors:
+        - Building CEX Connectors: developers/connectors/index.md
+        - Architecture: developers/connectors/architecture/index.md
+        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
+        - API Throttler: developers/connectors/architecture/api_throttler.md
+        - Build Process: developers/connectors/build.md
+        - QA Testing Process: developers/connectors/test.md
+        - Debugging: developers/connectors/debug.md
+      - Building DEX Connectors: gateway/adding-dex-connectors.md
     - Gateway:
       - Gateway: gateway/index.md
       - Installation: gateway/installation.md
@@ -269,146 +239,79 @@ nav:
       - Running DEX Bots: gateway/running-dex-bots.md
       - Adding DEX Connectors: gateway/adding-dex-connectors.md
       - API Reference: gateway/api-reference.md
-      - Chains:
-        - Chains: chains/index.md
-        - Ethereum: chains/ethereum.md
-        - Avalanche: chains/avalanche.md
-        - Algorand: chains/algorand.md
-        - BNB Chain: chains/bnb-chain.md
-        - Cronos: chains/cronos.md
-        - Cosmos: chains/cosmos.md
-        - Harmony: chains/harmony.md
-        - Injective: chains/injective.md
-        - NEAR: chains/near.md
-        - Polygon: chains/polygon.md
-        - XDC Chain: chains/xdc-chain.md
-    - Releases:
-      - Releases: release-notes/index.md
-      - 1.18.0: release-notes/1.18.0.md
-      - 1.17.0: release-notes/1.17.0.md
-      - 1.16.0: release-notes/1.16.0.md
-      - 1.15.0: release-notes/1.15.0.md
-      - 1.14.0: release-notes/1.14.0.md
-      - 1.13.0: release-notes/1.13.0.md 
-      - 1.12.0: release-notes/1.12.0.md
-      - 1.11.0: release-notes/1.11.0.md
-      - 1.10.0: release-notes/1.10.0.md
-      - 1.9.0: release-notes/1.9.0.md
-      - 1.8.0: release-notes/1.8.0.md
-      - 1.7.0: release-notes/1.7.0.md
-      - 1.6.0: release-notes/1.6.0.md
-      - 1.5.0: release-notes/1.5.0.md
-      - 1.4.0: release-notes/1.4.0.md
-      - 1.3.0: release-notes/1.3.0.md
-      - 1.2.0: release-notes/1.2.0.md
-      - 1.1.1: release-notes/1.1.1.md
-      - 1.1.0: release-notes/1.1.0.md
-      - 1.0.1: release-notes/1.0.1.md
-      - 1.0.0: release-notes/1.0.0.md
-      - 0.46.0: release-notes/0.46.0.md
-      - 0.45.0: release-notes/0.45.0.md
-      - 0.44.0: release-notes/0.44.0.md
-      - 0.43.1: release-notes/0.43.1.md
-      - 0.43.0: release-notes/0.43.0.md
-      - 0.42.0: release-notes/0.42.0.md
-      - 0.41.0: release-notes/0.41.0.md
-      - 0.40.0: release-notes/0.40.0.md
-      - 0.39.1: release-notes/0.39.1.md
-      - 0.39.0: release-notes/0.39.0.md
-      - 0.38.1: release-notes/0.38.1.md
-      - 0.38.0: release-notes/0.38.0.md
-      - 0.37.1: release-notes/0.37.1.md
-      - 0.37.0: release-notes/0.37.0.md
-      - 0.36.0: release-notes/0.36.0.md
-      - 0.35.0: release-notes/0.35.0.md
-      - 0.34.0: release-notes/0.34.0.md
-      - 0.33.1: release-notes/0.33.1.md
-      - 0.33.0: release-notes/0.33.0.md
-      - 0.32.0: release-notes/0.32.0.md
-      - 0.31.0: release-notes/0.31.0.md
-      - 0.30.0: release-notes/0.30.0.md
-      - 0.29.0: release-notes/0.29.0.md
-      - 0.28.1: release-notes/0.28.1.md
-      - 0.28.0: release-notes/0.28.0.md
-      - 0.27.0: release-notes/0.27.0.md
-      - 0.26.1: release-notes/0.26.1.md
-      - 0.26.0: release-notes/0.26.0.md
-      - 0.25.0: release-notes/0.25.0.md
-      - 0.24.1: release-notes/0.24.1.md
-      - 0.24.0: release-notes/0.24.0.md
-      - 0.23.0: release-notes/0.23.0.md
-      - 0.22.0: release-notes/0.22.0.md
-      - 0.21.0: release-notes/0.21.0.md
-      - 0.20.0: release-notes/0.20.0.md
-      - 0.19.1: release-notes/0.19.1.md
-      - 0.19.0: release-notes/0.19.0.md
-      - 0.18.1: release-notes/0.18.1.md
-      - 0.18.0: release-notes/0.18.0.md
-      - 0.17.1: release-notes/0.17.1.md
-      - 0.17.0: release-notes/0.17.0.md
-      - 0.16.0: release-notes/0.16.0.md
-      - 0.15.0: release-notes/0.15.0.md
-      - 0.14.0: release-notes/0.14.0.md
-      - 0.13.0: release-notes/0.13.0.md
-      - 0.12.1: release-notes/0.12.1.md
-      - 0.12.0: release-notes/0.12.0.md
-      - 0.11.1: release-notes/0.11.1.md
-      - 0.11.0: release-notes/0.11.0.md
-      - 0.10.1: release-notes/0.10.1.md
-      - 0.10.0: release-notes/0.10.0.md
-      - 0.9.1: release-notes/0.9.1.md
-      - 0.9.0: release-notes/0.9.0.md
-      - 0.8.1: release-notes/0.8.1.md
-      - 0.8.0: release-notes/0.8.0.md
-      - 0.7.0: release-notes/0.7.0.md
-      - 0.6.0: release-notes/0.6.0.md
-      - 0.5.1: release-notes/0.5.1.md
-      - 0.5.0: release-notes/0.5.0.md
-      - 0.4.0: release-notes/0.4.0.md
-      - 0.3.1: release-notes/0.3.1.md
-      - 0.3.0: release-notes/0.3.0.md
-      - 0.2.0: release-notes/0.2.0.md
-    - Troubleshooting: troubleshooting.md
-  - Learn:
-    - Quickstart:
-      - Quickstart: quickstart/index.md
-      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
-      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
-      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
-      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
-      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
-    - 🎓 Join Botcamp: https://botcamp.hummingbot.org
-    - Building CEX Connectors:
-      - Building CEX Connectors: developers/connectors/index.md
-      - Architecture: developers/connectors/architecture/index.md
-      - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-      - API Throttler: developers/connectors/architecture/api_throttler.md
-      - Build Process: developers/connectors/build.md
-      - QA Testing Process: developers/connectors/test.md
-      - Debugging: developers/connectors/debug.md
-    - Building DEX Connectors: gateway/adding-dex-connectors.md
-    - Building Strategies:
-      - Building Strategies: developers/strategies/index.md
-      - Architecture: developers/strategies/architecture.md
-      - Tutorial: developers/strategies/tutorial.md
-      - Key Concepts: developers/strategies/key-concepts.md
-      - Define Configs: developers/strategies/config.md
-      - Hanging Orders Tracker: developers/strategies/hanging-orders.md
-    - Glossary: glossary.md
+    - Orchestration Module: installation/orchestration.md
+  - Governance:
+    - Governance: governance/index.md
+    - Epochs: governance/epochs.md
+    - Polls: governance/polls.md
+    - Proposals: governance/proposals.md
+    - Release Process: governance/releases.md
+    # - Whitepaper: governance/whitepaper.md
+    - CEX Connectors:
+      - Binance 🥇: exchanges/binance/index.md
+      - Kucoin 🥈: exchanges/kucoin/index.md
+      - Gate.io 🥈: exchanges/gate-io/index.md
+      - AscendEX 🥈: exchanges/ascendex/index.md
+      - AltMarkets: exchanges/altmarkets.md
+      - Binance US: exchanges/binance-us/index.md
+      - Bybit: exchanges/bybit.md
+      - Bitfinex: exchanges/bitfinex.md
+      - BitGet: exchanges/bitget-perpetual.md
+      - BitMart: exchanges/bitmart/index.md
+      - Bitmex: exchanges/bitmex.md
+      - Bittrex: exchanges/bittrex.md
+      - BTC Markets: exchanges/btc-markets.md
+      - Coinbase: exchanges/coinbase.md
+      - HitBTC: exchanges/hitbtc.md
+      - Hotbit: exchanges/hotbit.md
+      - Huobi: exchanges/huobi/index.md
+      - Kraken: exchanges/kraken/index.md
+      - MEXC: exchanges/mexc/index.md
+      - NDAX: exchanges/ndax.md
+      - OKX: exchanges/okx.md
+      - Phemex: exchanges/phemex-perpetual.md
+    - DEX Connectors:
+      - Uniswap 🥇: exchanges/uniswap.md
+      - dYdX 🥈: exchanges/dydx-perpetual.md
+      - Pancakeswap 🥈: exchanges/pancakeswap.md
+      - Dexalot 🥈: exchanges/dexalot.md
+      - Defira: exchanges/defira.md
+      - Injective: exchanges/injective.md
+      - Loopring: exchanges/loopring/index.md
+      - Mad Meerkat: exchanges/mad-meerkat.md
+      - OpenOcean: exchanges/openocean.md
+      - Pangolin: exchanges/pangolin.md
+      - Perpetual Protocol: exchanges/perp.md
+      - Polkadex: exchanges/polkadex.md
+      - Quickswap: exchanges/quickswap.md
+      - Ref: exchanges/ref.md
+      - Sushiswap: exchanges/sushiswap.md
+      - Tinyman: exchanges/tinyman.md
+      - TraderJoe: exchanges/traderjoe.md
+      - Vertex: exchanges/vertex.md
+      - VVS: exchanges/vvs.md
+      - XSwap: exchanges/xswap.md
+    - Chain Connectors:
+      - Chains: chains/index.md
+      - Ethereum: chains/ethereum.md
+      - Avalanche: chains/avalanche.md
+      - Algorand: chains/algorand.md
+      - BNB Chain: chains/bnb-chain.md
+      - Cronos: chains/cronos.md
+      - Cosmos: chains/cosmos.md
+      - Harmony: chains/harmony.md
+      - Injective: chains/injective.md
+      - NEAR: chains/near.md
+      - Polygon: chains/polygon.md
+      - XDC Chain: chains/xdc-chain.md
   - Community:
     - Community: community.md
     - Bounties: bounties.md
     - For Contributors: bounties/contributors.md
     - For Sponsors: bounties/sponsors.md
+    - Join Botcamp: https://botcamp.hummingbot.org
     - Contribution Guidelines: developers/contributions.md
     - Forking Repositories: developers/forking.md
-  - Governance:
-    - Governance: governance/index.md
-    - Polls: governance/polls.md
-    - Proposals: governance/proposals.md
-    - Epochs: governance/epochs.md
-    - Release Process: governance/releases.md
-    - Whitepaper: governance/whitepaper.md
   - About:
     - About: about/index.md
     - FAQ: faq.md
@@ -417,3 +320,89 @@ nav:
     - History: about/history.md
     - ❤️ Support Us: support-hummingbot.md
   - Blog: https://blog.hummingbot.org
+  # - Releases:
+  #   - Releases: release-notes/index.md
+  #   - 1.18.0: release-notes/1.18.0.md
+  #   - 1.17.0: release-notes/1.17.0.md
+  #   - 1.16.0: release-notes/1.16.0.md
+  #   - 1.15.0: release-notes/1.15.0.md
+  #   - 1.14.0: release-notes/1.14.0.md
+  #   - 1.13.0: release-notes/1.13.0.md 
+  #   - 1.12.0: release-notes/1.12.0.md
+  #   - 1.11.0: release-notes/1.11.0.md
+  #   - 1.10.0: release-notes/1.10.0.md
+  #   - 1.9.0: release-notes/1.9.0.md
+  #   - 1.8.0: release-notes/1.8.0.md
+  #   - 1.7.0: release-notes/1.7.0.md
+  #   - 1.6.0: release-notes/1.6.0.md
+  #   - 1.5.0: release-notes/1.5.0.md
+  #   - 1.4.0: release-notes/1.4.0.md
+  #   - 1.3.0: release-notes/1.3.0.md
+  #   - 1.2.0: release-notes/1.2.0.md
+  #   - 1.1.1: release-notes/1.1.1.md
+  #   - 1.1.0: release-notes/1.1.0.md
+  #   - 1.0.1: release-notes/1.0.1.md
+  #   - 1.0.0: release-notes/1.0.0.md
+  #   - 0.46.0: release-notes/0.46.0.md
+  #   - 0.45.0: release-notes/0.45.0.md
+  #   - 0.44.0: release-notes/0.44.0.md
+  #   - 0.43.1: release-notes/0.43.1.md
+  #   - 0.43.0: release-notes/0.43.0.md
+  #   - 0.42.0: release-notes/0.42.0.md
+  #   - 0.41.0: release-notes/0.41.0.md
+  #   - 0.40.0: release-notes/0.40.0.md
+  #   - 0.39.1: release-notes/0.39.1.md
+  #   - 0.39.0: release-notes/0.39.0.md
+  #   - 0.38.1: release-notes/0.38.1.md
+  #   - 0.38.0: release-notes/0.38.0.md
+  #   - 0.37.1: release-notes/0.37.1.md
+  #   - 0.37.0: release-notes/0.37.0.md
+  #   - 0.36.0: release-notes/0.36.0.md
+  #   - 0.35.0: release-notes/0.35.0.md
+  #   - 0.34.0: release-notes/0.34.0.md
+  #   - 0.33.1: release-notes/0.33.1.md
+  #   - 0.33.0: release-notes/0.33.0.md
+  #   - 0.32.0: release-notes/0.32.0.md
+  #   - 0.31.0: release-notes/0.31.0.md
+  #   - 0.30.0: release-notes/0.30.0.md
+  #   - 0.29.0: release-notes/0.29.0.md
+  #   - 0.28.1: release-notes/0.28.1.md
+  #   - 0.28.0: release-notes/0.28.0.md
+  #   - 0.27.0: release-notes/0.27.0.md
+  #   - 0.26.1: release-notes/0.26.1.md
+  #   - 0.26.0: release-notes/0.26.0.md
+  #   - 0.25.0: release-notes/0.25.0.md
+  #   - 0.24.1: release-notes/0.24.1.md
+  #   - 0.24.0: release-notes/0.24.0.md
+  #   - 0.23.0: release-notes/0.23.0.md
+  #   - 0.22.0: release-notes/0.22.0.md
+  #   - 0.21.0: release-notes/0.21.0.md
+  #   - 0.20.0: release-notes/0.20.0.md
+  #   - 0.19.1: release-notes/0.19.1.md
+  #   - 0.19.0: release-notes/0.19.0.md
+  #   - 0.18.1: release-notes/0.18.1.md
+  #   - 0.18.0: release-notes/0.18.0.md
+  #   - 0.17.1: release-notes/0.17.1.md
+  #   - 0.17.0: release-notes/0.17.0.md
+  #   - 0.16.0: release-notes/0.16.0.md
+  #   - 0.15.0: release-notes/0.15.0.md
+  #   - 0.14.0: release-notes/0.14.0.md
+  #   - 0.13.0: release-notes/0.13.0.md
+  #   - 0.12.1: release-notes/0.12.1.md
+  #   - 0.12.0: release-notes/0.12.0.md
+  #   - 0.11.1: release-notes/0.11.1.md
+  #   - 0.11.0: release-notes/0.11.0.md
+  #   - 0.10.1: release-notes/0.10.1.md
+  #   - 0.10.0: release-notes/0.10.0.md
+  #   - 0.9.1: release-notes/0.9.1.md
+  #   - 0.9.0: release-notes/0.9.0.md
+  #   - 0.8.1: release-notes/0.8.1.md
+  #   - 0.8.0: release-notes/0.8.0.md
+  #   - 0.7.0: release-notes/0.7.0.md
+  #   - 0.6.0: release-notes/0.6.0.md
+  #   - 0.5.1: release-notes/0.5.1.md
+  #   - 0.5.0: release-notes/0.5.0.md
+  #   - 0.4.0: release-notes/0.4.0.md
+  #   - 0.3.1: release-notes/0.3.1.md
+  #   - 0.3.0: release-notes/0.3.0.md
+  #   - 0.2.0: release-notes/0.2.0.md

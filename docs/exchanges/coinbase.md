@@ -1,42 +1,65 @@
-# `coinbase_pro`
+## 🛠 Connector Info
 
-## 📁 Connector Info
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: None
 
-* Type: PERP CLOB CEX
-* Folder: [/hummingbot/connector/exchange/coinbase_pro](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinbase_pro)
-* Maintainer:
+Currently, Coinbase is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-## 🏆 Exchange Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | Not available |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 
 ## ℹ️ Exchange Info
 
-* Website: <https://pro.coinbase.com/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/coinbase-exchange/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/coinbase-exchange>
-* API docs: <https://docs.pro.coinbase.com/>
-* Transaction fees: <https://help.coinbase.com/en/pro/trading-and-funding/trading-rules-and-fees/fees>
+- **Website**: <https://www.coinbase.com/>
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/coinbase-exchange/
+- **CoinGecko**: https://www.coingecko.com/en/exchanges/coinbase_exchange
+- **API Docs**: <https://docs.pro.coinbase.com/>
+- **Fees**: <https://help.coinbase.com/en/pro/trading-and-funding/trading-rules-and-fees/fees>
+- **Supported Countries**: Available in 100+ countries
 
-## 🔑 Connection
+## 🔑 How to Connect
 
-Run `connect coinbase_pro` in order to enter your API keys:
+### Generate API Keys
+
+
+### Add Keys to Hummingbot
+
+From inside the Hummingbot client, run `connect coinbase`:
 
 ```
-Enter your Coinbase Pro API key >>>
-Enter your Coinbase Pro secret API key >>>
+Enter your coinbase API key >>>
+Enter your coinbase secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to coinbase_pro.
+You are now connected to coinbase
 ```
 
-## 🪙 Fees
 
-Hummingbot assumes 0.5% maker fees and 0.5% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/coinbase_pro/coinbase_pro_utils.py#L8)).
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
 
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+- **ID**: `coinbase_pro`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinbase_pro
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect coinbase_paper_trade` instead of `connect coinbase`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.

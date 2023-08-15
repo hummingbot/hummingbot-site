@@ -1,41 +1,35 @@
-# `vertex`
+## 🛠 Connector Info
 
-## 📁 Connector Info
+- **Exchange Type**: Decentralized Exchange (**DEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-* Type: SPOT CLOB/AMM DEX
-* Folder: [/hummingbot/connector/exchange/vertex](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/vertex)
-* Maintainer: [Vertex](https://vertexprotocol.com/)
+Currently, Vertex is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-## 🏆 Exchange Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | Not available
+| [🕯 AMM Data Feed](#amm-data-feed) | Not available
 
 ## ℹ️ Exchange Info
 
-* Website: https://vertexprotocol.com/
-* CoinMarketCap: https://coinmarketcap.com/exchanges/vertex-protocol/
-* DefiLlama: https://defillama.com/protocol/vertex-protocol
-* API docs: https://vertex-protocol.gitbook.io/docs/getting-started/overview
-* Fees: https://vertex-protocol.gitbook.io/docs/basics/fees
-* SDK: https://vertex-protocol.gitbook.io/docs/developer-resources/vertex-typescript-sdk
-* Bug Bounty: https://hackenproof.com/vertex-protocol
-* Market Making Rewards: https://vertex-protocol.gitbook.io/docs/community-token-and-dao/trading-rewards
+- **Website**: <https://vertexprotocol.finance>
+- **CoinMarketCap**: https://coinmarketcap.com/exchanges/vertex-protocol/
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vertexprotocol>
+- **API Docs**: https://vertex-protocol.gitbook.io/docs/getting-started/overview
+- **Fees**: <https://docs.vertexprotocol.finance/products/vertexprotocol-exchange/vertexprotocol-pools>
 
-## 👀 Social
+## 🔑 How to Connect
 
-* Twitter: https://twitter.com/vertex_protocol
-* Discord: https://discord.com/invite/vertexprotocol
+Create a wallet on one of the supported networks below:
 
-## 🕸️ Supported Chains and Networks
+| Chain | Networks | 
+| ----- | -------- |
+| `ethereum` | `arbitrum_one`, `arbitrum_goerli` 
 
-* [Ethereum](/chains/ethereum): `arbitrum_one`
-* [Ethereum](/chains/ethereum): `arbitrum_goreli`
-
-## 🔑 Connection
-
-Run `connect vertex` in order to enter the private key and address:
+From inside the Hummingbot client, run `gateway connect vertex` in order to connect your wallet:
  
 ```
 Enter your Arbitrum private key >>>
@@ -47,6 +41,25 @@ If connection is successful:
 You are now connected to vertex.
 ```
 
-## 🧪 Testnet
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
 
-Hummingbot supports the testnet version of this exchange. To connect to the testnet exchange, run `connect vertex_testnet` and enter your private key and address.
+- **ID**: `vertex`
+- **Connection Type**: REST
+- **API Docs**: https://docs.vertexprotocol-test.com/api
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/vertex
+- **Default Configs**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/vertex/vertex_constants.py
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect vertex_testnet` instead of `connect vertex`.
+
+
