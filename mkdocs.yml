@@ -54,11 +54,14 @@ theme:
     # - search.highlight
 
 plugins:
+  - social:
+      cards_layout_options:
+        background_color: "#151819"
+        color: "#5FFFD7"
   - search
-  # - git-revision-date
-  - social
   - mkdocs-video
   - blog
+  # - git-revision-date
 
 extra:
   homepage: https://hummingbot.org
