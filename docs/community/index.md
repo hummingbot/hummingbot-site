@@ -22,33 +22,31 @@ We maintain and keep updated the following boards, sheets and other resources:
 
 * [Pull Request Status](https://github.com/orgs/hummingbot/projects/1): A public Github board for active pull requests that are being voted on, reviewed, and merged.
 
-## Foundation Channels
+## Official Channels
 
 For security purposes, ensure that you use only the official channels below to access Hummingbot content and code:
 
-* [Blog](https://blog.hummingbot.org/): Our blog contains announcements and content from us and our community
 * [Newsletter](https://hummingbot.substack.com): Our weekly newsletter contains news, upcoming events, and updates about contributions from the global Hummingbot community
-* [Twitter](https://twitter.com/_hummingbot)
-* [Youtube](https://www.youtube.com/c/hummingbot): Our YouTube account contains videos that teach you how to use Hummingbot, livestreams of community calls, and interviews with members of the Hummingbot community.
 * [Discord](https://discord.gg/hummingbot): Discord is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the **#announcements** channel.
+* [Youtube](https://www.youtube.com/c/hummingbot): Our YouTube account contains videos that teach you how to use Hummingbot, livestreams of community calls, and interviews with members of the Hummingbot community.
+* [Twitter](https://twitter.com/_hummingbot): We post regular news and updates on our Twitter account.
 
 !!! danger "No DMs"
     Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
 
 ## Code Repositories
 
-Below are the only code repositories used by the Hummingbot Foundation to release official versions of Hummingbot and to communicate news and updates to HBOT token holders. Please download Hummingbot and Hummingbot-related software from only these official sources.
+All Hummingbot Foundation code is located in the official Github and DockerHub accounts. Below are the only code repositories used to release official versions of Hummingbot and to communicate news and updates to HBOT token holders. Please download Hummingbot and Hummingbot-related software from only these official sources.
 
 ### Github
 
-The Foundation Github organization is located at <https://github.com/hummingbot>. It contains:
+The Foundation Github organization is located at <https://github.com/hummingbot>. Its repositories include:
 
-* [`hummingbot`](https://github.com/hummingbot/hummingbot): code for the Hummingbot trading client
-* [`gateway`](https://github.com/hummingbot/gateway): code for the Hummingbot Gateway DEX connector middleware
-* [`dashboard`](https://github.com/hummingbot/dashboard): Hummingbot-related dashboard
+* [`hummingbot`](https://github.com/hummingbot/hummingbot): Hummingbot core client and CEX connectors
+* [`gateway`](https://github.com/hummingbot/gateway): DEX connector middleware
+* [`dashboard`](https://github.com/hummingbot/dashboard): Hummingbot Dashboard control center app
 - [`deploy-examples`](https://github.com/hummingbot/deploy-examples): Deployment examples
-* [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot documentation site
-community calls
+* [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot website and documentation site
 * [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
 * [`community-tools`](https://github.com/hummingbot/community-tools): Tools and resources created by the Hummingbot community
 

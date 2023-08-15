@@ -10,7 +10,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Create algo strategies__
+-   :material-clock-fast:{ .lg .middle } __Create professional-grade strategies__
 
     ---
 
@@ -22,7 +22,7 @@ hide:
 
     ---
 
-    Hummingbot connectors let you run the same strategies across many crypto exchanges, including DEXs.
+    Hummingbot connectors let you run the same strategies everywhere, including DEXs on various blockchain networks.
 
     [:octicons-arrow-right-24: Reference](#)
 
@@ -48,33 +48,42 @@ hide:
 
 # Who runs Hummingbot?
 
-## Individual algo traders
+## Individual traders
 
-#### "Testimonial from liquidity miner"
+#### "Testimonial: I ❤️ Hummingbot because I earn liquidity mining rewards"
 
-##### Name, Location
+##### Hoang La, Vietnam
 
 Much like the right to interracial marriage, woman's suffrage, freedom of speech, and many others, our right to privacy hasn't always been upheld. In several dictatorships, it still isn't. Generations before ours fought for our right to privacy. ==Privacy is a human right, inherent to all of us,== that we are entitled to (without discrimination).
 
 ==This process of identifying threats and defining countermeasures is called **threat modeling**==, and it forms the basis of every good security and privacy plan.
 
-## Trading firms and market makers
+## Trading firms
 
-#### "Testimonial from fund manager"
+#### "Testimonial: I ❤️ Hummingbot because it gives my traders access to bot strategies without hiring engineers!"
 
-##### Name, Title
+##### Evgeny Gokhberg, Re7 Capital
 
 You shouldn't confuse privacy with secrecy. We know what happens in the bathroom, but you still close the door. That's because you want privacy, not secrecy. **Everyone** has something to protect. Privacy is something that makes us human.
 
 <!-- [:material-book-outline: Why Privacy Matters](basics/why-privacy-matters.md){ class="md-button md-button--primary" } -->
 
-## Token projects and exchanges
+## Token projects
 
-#### "Testimonial from project founder"
+#### "Testimonial: I ❤️ Hummingbot because their community powers liquidity for our ecosystem!"
+
+##### Stephen Tse, Harmony Protocol
+
+Trying to protect all your data from everyone all the time is impractical, expensive, and exhausting. But don't worry! Security is a process, and, by thinking ahead, you can put together a plan that's right for you. Security isn't just about the tools you use or the software you download. Rather, it begins by understanding the unique threats you face, and how you can mitigate them.
+
+## Exchanges
+
+#### "Testimonial from DEX founder"
 
 ##### Name, Title
 
 Trying to protect all your data from everyone all the time is impractical, expensive, and exhausting. But don't worry! Security is a process, and, by thinking ahead, you can put together a plan that's right for you. Security isn't just about the tools you use or the software you download. Rather, it begins by understanding the unique threats you face, and how you can mitigate them.
+
 
 ---
 
