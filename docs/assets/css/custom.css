@@ -1,8 +1,8 @@
-/* @font-face {
+@font-face {
   font-family: 'Satoshi';
-  src: url("assets/brand/Satoshi-Variable.ttf") format("ttf");
+  src: url("/assets/brand/Satoshi-Variable.ttf") format("truetype");
   font-display: swap;
-} */
+}
 
 /* Define brand */
 :root, [data-md-color-scheme="default"] {
@@ -87,17 +87,19 @@
 /* header font */
 
 .md-header__topic:first-child {
-  font-weight: 500;
+  font-family: 'Satoshi';
+  font-weight: 700;
 }
 
 .md-typeset h1 {
+  font-family: 'Satoshi';
+  font-weight: 700;
   color: var(--md-typeset-a-color);
-  font-weight: 500;
 }
 
-/* h2, h3 {
-  color: var(--md-typeset-a-color);
-} */
+h2, h3 {
+  font-family: 'Satoshi';
+}
 
 /* Recommendation cards */
 .md-typeset .admonition.recommendation,
@@ -355,9 +357,9 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 
 .md-tabs__link--active {
     background:
-        radial-gradient(farthest-side, var(--md-accent-fg-color) 98%,transparent 100%) bottom right/2px 2px,
-        radial-gradient(farthest-side, var(--md-accent-fg-color) 98%,transparent 100%) bottom left /2px 2px,
-        linear-gradient(var(--md-accent-fg-color),var(--md-accent-fg-color)) bottom/calc(100% - 2px) 2px;
+        radial-gradient(farthest-side, var(--md-typeset-a-color) 98%,transparent 100%) bottom right/2px 2px,
+        radial-gradient(farthest-side, var(--md-typeset-a-color) 98%,transparent 100%) bottom left /2px 2px,
+        linear-gradient(var(--md-typeset-a-color),var(--md-typeset-a-color)) bottom/calc(100% - 2px) 2px;
     background-repeat:no-repeat;
     background-origin: padding-box;
     padding-bottom: 2px;
