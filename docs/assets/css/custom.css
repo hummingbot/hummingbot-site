@@ -26,7 +26,7 @@
   --md-accent-fg-color: #E549FF;
   --pg-light-border: rgb(47, 47, 47);
   --hb-hero-color: #5FFFD7;
-  --md-footer-bg-color--dark: var(--md-default-bg-color);
+  /* --md-footer-bg-color--dark: var(--md-default-bg-color); */
 }
 
 /* Better contrast link colors */
@@ -223,5 +223,11 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
     background-repeat:no-repeat;
     background-origin: padding-box;
     padding-bottom: 2px;
+}
+
+.md-footer {
+  border-top: 1px solid var(--pg-light-border);
+  /* background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color--light); */
 }
 

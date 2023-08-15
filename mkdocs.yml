@@ -2,7 +2,7 @@
 
 # Project info
 site_name: Hummingbot
-site_description: The official documentation for Hummingbot
+site_description: The official Hummingbot website and documentation
 site_author: Hummingbot Foundation
 site_url: https://hummingbot.org
 
@@ -65,7 +65,7 @@ plugins:
 
 extra:
   homepage: https://hummingbot.org
-  generator: false
+  generator: true
   analytics:
     provider: google
     property: UA-119262087-3
@@ -84,18 +84,16 @@ extra:
                 Thanks for your feedback! Help us improve this page by
                 <a href="https://github.com/hummingbot/hummingbot-site/issues/new?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">filing an issue</a>.
   social:
-    - icon: fontawesome/solid/envelope
-      link: https://hummingbot.substack.com
     - icon: fontawesome/brands/discord
       link: https://discord.gg/hummingbot
+    - icon: fontawesome/brands/github
+      link: https://github.com/hummingbot/hummingbot
     - icon: fontawesome/brands/youtube
       link: https://youtube/c/hummingbot
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/_hummingbot
-    - icon: fontawesome/brands/github
-      link: https://github.com/hummingbot/hummingbot
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/hummingbot/hummingbot
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/hummingbot-foundation
 
 extra_css:
   - assets/css/custom.css
