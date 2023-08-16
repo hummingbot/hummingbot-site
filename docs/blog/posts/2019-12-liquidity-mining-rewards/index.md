@@ -1,8 +1,9 @@
 ---
-draft: false 
 date: 2019-12-03
+authors:
+  - carlo
 categories:
-  - Featured
+  - Liquidity mining
 ---
 
 # Demystifying liquidity mining rewards
@@ -12,6 +13,8 @@ by Carlo P. Las Marias, CoinAlpha
 We explain in more detail the methodology and mechanics of liquidity mining, a data-driven, objective methodology for quantifying market maker performance
 
 In our liquidity mining announcement, we introduced a data-driven, objective methodology for quantifying market maker performance. This serves as the basis for determining fair and open compensation for market makers. So how does it all work? In this post, we explain in more detail the methodology and mechanics of the platform.
+
+<!-- more -->
 
 !!! tip
     For reference, please review this [sample liquidity mining rewards spreadsheet](http://bit.ly/liquidityminingcalc) which illustrates the calculations described in this blog.
@@ -45,7 +48,7 @@ This methodology also inherently rewards market makers who continue to make orde
 
 ### Rewarding market makers for better pricing
 
-In our liquidity mining whitepaper, we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
+In our [liquidity mining whitepaper](https://coinalpha.com/liquidity-mining.pdf), we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
 
 ![](./spread-density-function-graph.png)
 *Figure 2: Spread density function: weighting spreads for reward allocation*
