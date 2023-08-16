@@ -1,17 +1,20 @@
 ---
-draft: false 
 date: 2023-08-01
+authors:
+  - foundation
 categories:
   - Governance
 ---
 
 # Proposed Epoch 6 Governance Changes
 
-![](./img/hummingbirds.png)
+![](./hummingbirds.png)
 
 Since inception in early 2022, Hummingbot Foundation has continually improved and iterated on its governance system. Each [quarterly Epoch](/governance/epochs) has introduced voting format changes that are designed to align the choices and decisions that HBOT holders make with changes to the Hummingbot codebase that users want.
 
 Since the end of the Epoch 5 polls, we have engaged in comprehensive internal discussions aimed at enhancing the governance process for the next epoch. Please see below for the proposed improvements. We cordially extend an invitation to our community to thoroughly examine these proposed changes below and provide feedback!
+
+<!-- more -->
 
 ## Summary
 

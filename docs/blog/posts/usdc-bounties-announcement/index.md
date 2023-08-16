@@ -1,22 +1,23 @@
 ---
-draft: false 
 date: 2023-07-23
+authors:
+  - foundation
 categories:
   - Announcements
   - Bounties
 ---
 
-# USDC Bounties Announcement
+# Hummingbot Launches USDC Payouts for Bounty Recipients
 
-![](./img/USDC-Bounties-Announcement.png)
-
-## Hummingbot Launches USDC Payouts for Bounty Recipients
+![](./USDC-Bounties-Announcement.png)
 
 Since the inception of the Hummingbot Foundation, we have paid out **282 bounties to 92 unique developer wallets**. Bounties have been an unqualified success in leveraging the global developer community to maintain the Hummingbot codebase by fixing bugs and adding key components.
 
 To continue on this path, we are excited to announce a new change to the Bounties process. Now, bounty recipients can choose whether to receive their payments in HBOT, our native governance token, or the USDC equivalent amount.
 
 By allowing recipients to receive bounties in stablecoin if they wish, we aim to lower transaction fees while still enabling long-term supporters to accrue HBOT.
+
+<!-- more -->
 
 ## Why USDC?
 
@@ -30,7 +31,7 @@ As part of this transition, we are making it easy for you to choose how you'd li
 
 In the [AML Policy form](https://forms.gle/ZDKtkSLF7VSGYMBo9) that you fill out to earn HBOT bounties, there is now an option to receive your bounties in either HBOT or USDC:
 
-![](./img/Preferred-Bounty-Denomination.png)
+![](./Preferred-Bounty-Denomination.png)
 
 Please ensure you complete this form accurately, as this will determine how your bounty rewards are processed and distributed.
 
@@ -42,11 +43,12 @@ We will apply the changes to your bounty denomination preference to future weekl
 
 On each weekly Friday bounty distribution, we will use the [HBOT/USD price on CoinGecko](https://www.coingecko.com/en/coins/hummingbot) and average each price over the 7 prior calendar days to determine the HBOT Conversion Rate:
 
-![](./img/HBOT-Price-Chart-at-Coingecko-1.png)
+![](./HBOT-Price-Chart-at-Coingecko-1.png)
 
 For bounty recipients who choose to receive in USDC, we will apply the HBOT Conversion Rate to their total HBOT payout to calculate the USDC equivalent payout amount. For bounty recipients who choose to receive in HBOT or have not updated their bounty denomination preference, we will still continue to make payouts in HBOT.
 
-Starting Week
+## Starting Week
+
 We will start this process with the payouts on next **Friday, July 28, 2023**.
 
 Please post your questions and tag Carlito at Discord’s `#support` channel.

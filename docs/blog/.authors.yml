@@ -1,0 +1,24 @@
+foundation:
+  name: Hummingbot
+  description: Foundation
+  avatar: /assets/brand/logo-color.png
+  
+carlo:
+  name: Carlo Las Marias
+  description: CEO, CoinAlpha
+  avatar: /assets/authors/carlo-las-marias.jpg
+
+mike:
+  name: Michael Feng
+  description: COO, Hummingbot Foundation
+  avatar: /assets/authors/carlo-las-marias.jpg
+
+martin:
+  name: Carlo Las Marias
+  description: CTO, CoinAlpha
+  avatar: /assets/authors/carlo-las-marias.jpg
+
+fede:
+  name: Carlo Las Marias
+  description: CTO, Hummingbot Foundation
+  avatar: /assets/authors/carlo-las-marias.jpg

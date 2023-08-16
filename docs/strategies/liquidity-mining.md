@@ -48,8 +48,6 @@ This strategy allows market making across multiple pairs on an exchange on a sin
 
 :fontawesome-solid-globe: [Hummingbot Miner Help Center](https://support.hummingbot.io): Check out our latest announcements, campaigns, documentations, handy articles and much more.
 
-:fontawesome-solid-book: [Demystifying liquidity mining rewards](https://hummingbot.io/blog/2019-12-liquidity-mining-rewards)
+:fontawesome-solid-book: [Demystifying liquidity mining rewards](/blog/2019/12/03/demystifying-liquidity-mining-rewards/)
 
 :fontawesome-brands-youtube: [Liquidity Mining Explained | For New Users](https://www.youtube.com/watch?v=ME5osB8sX_s): Learn about Liquidity Mining and how to set up a market-making bot to earn rewards in an exchange.
-
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
