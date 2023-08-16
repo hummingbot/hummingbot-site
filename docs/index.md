@@ -1,38 +1,129 @@
 ---
 template: home.html
+hide:
+  - toc
+  - navigation
+  - feedback
 ---
 
-Welcome to the official website and documentation for Hummingbot, an open source platform that helps you create, deploy, and manage **automated trading bots**! Hummingbot has connectors to the major exchanges and blockchains, enabling you to build powerful cross-chain and cross-exchange strategies like market making, arbitrage, directional strategies and more!
+# What can you do with Hummingbot?
 
-The Hummingbot codebase will always be free and publicly available under the Apache 2.0 open source license. Help us **democratize high-frequency trading**!
+<div class="grid cards" markdown>
 
-## 🐤 Getting started
+-   :material-format-paint:{ .lg .middle } __Create professional-grade strategies__
 
-New to Hummingbot? Start here!
+    ---
 
-- [Installation](/installation): Install Hummingbot on various platforms
-- [Quickstart](/quickstart): Follow the new Quickstart guide to learn how to build a custom market making strategy with Hummingbot!
-- [Features](/operation): The main commands and configs in Hummingbot
+    Design sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
 
-## 🎓 Learn with Botcamp
+    [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
-⭐ If you'd like to learn algo trading with Hummingbot, check out [Hummingbot Botcamp](https://hummingbot.org/botcamp), an intensive, small-batch bootcamp that teaches you **how to build your own custom algo trading strategy in only 6 weeks**. Each cohort of Botcamp culminates in a Demo Day where students present their custom scripts and compete for HBOT rewards and the glory of victory!
+-   :fontawesome-brands-markdown:{ .lg .middle } __Connect directly to any exchange__
 
-Many of the sample scripts in the [`/scripts/`](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder were contributed by Botcamp students.
+    ---
 
-## 👨‍👩‍👧‍👧 About us
+    Hummingbot establishes a direct WebSocket connection with many exchanges, including DEXs on L1/L2 blockchain networks.
+
+    [:octicons-arrow-right-24: Connector Docs](/exchanges/)
+
+-   :material-chart-line:{ .lg .middle } __Monitor and adjust bots in real-time__
+
+    ---
+
+    Monitor all your bots and get real-time performance updates from anywhere with our Telegram integration.
+
+    [:octicons-arrow-right-24: Telegram Integration Docs](/global-configs/telegram/)
+
+-   :material-satellite-uplink:{ .lg .middle } __Deploy a fleet of trading bots__
+
+    ---
+
+    Deploy, monitor, and control multiple bot instances using Dashboard, a new web-based user interface and control center.
+
+    [:octicons-arrow-right-24: Demo: Hummingbot Dashboard](https://www.youtube.com/watch?v=3WqNV543goI)
+
+-   :material-scale-balance:{ .lg .middle } __Backtest and optimize your strategies__
+
+    ---
+
+    We are adding backtesting and optimization support into Dashboard, helping you fine-tune your bots before deploying them live.
+
+    :material-star-face: Coming soon!
+
+-   :material-scale-balance:{ .lg .middle } __Fork and extend our codebase__
+
+    ---
+
+    Hummingbot is free and publicly available under the Apache 2.0 open source license, so you can use the code however you like!
+
+    [:octicons-arrow-right-24: How to Fork the Repo](/developers/forking/)
+
+
+</div>
+
+---
+
+# Who uses Hummingbot?
+
+## Individual Traders
+
+#### "I run Hummingbot to earn side income on the Hummingbot Miner platform. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+##### Name, Location
+
+## Market Making Firms
+
+#### "Hummingbot is an essential component of our trading system. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+##### Name, Company
+
+## Token Projects
+
+#### "We use a customized version of Hummingbot Dashboard to monitor Dictum non consectetur a erat nam at lectus. Nec ullamcorper sit amet risus. Id aliquet risus feugiat in ante metus. Odio morbi quis commodo odio aenean sed adipiscing diam.
+
+##### Name, Project 
+
+---
+
+# What strategies can you build with Hummingbot?
+
+<div class="grid cards wide" markdown>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+## Learn how to design and code strategies like these in [Botcamp](/community/botcamp), the official training and membership program for the Hummingbot community.
+
+<br />
+
+[Join Botcamp](/community/botcamp){ .md-button .md-button--primary }
+
+---
+
+# Global community of algo traders and developers
 
 Hummingbot Foundation is a not-for-profit foundation that facilitates decentralized maintenance and governance of the Hummingbot codebase, powered by the Hummingbot Governance Token (HBOT).
 
-- [About the Foundation](/about): About Hummingbot Foundation
+The Hummingbot codebase will always be free and publicly available under the Apache 2.0 open source license. Help us **democratize high-frequency trading**!
+
+- [About Us](/about): About Hummingbot Foundation
+- [Community](/community): Participate in the global Hummingbot ecosystem
 - [Governance](/governance): All things related to Foundation governance
 - [FAQ](/faq): Answers to common questions
-- [Community](/community): Participate in the global Hummingbot ecosystem
-- [Blog](https://blog.hummingbot.org): Recent news and updates
-- [Newsletter](https://hummingbot.substack.com/): Recent news and updates
 
-## 📬 Newsletter
+---
 
-Sign up for the [official Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
+# Get the Hummingbot newsletter
 
-[Get the Hummingbot newsletter :fontawesome-solid-paper-plane:](https://hummingbot.substack.com/){ .md-button .md-button--primary }
+Sign up for the official [Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
+
+<br />
+
+[Subscribe to Newsletter](https://hummingbot.substack.com/){ .md-button .md-button--primary }

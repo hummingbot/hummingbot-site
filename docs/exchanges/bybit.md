@@ -1,42 +1,112 @@
-# `bybit`
+!!! tip "Support Hummingbot"
+    Hummingbot Foundation has a fee share partnership with Bybit. When you use our software to trade on Bybit, a custom API header tells Bybit that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
-## 📁 Connector Info
+## 🛠 Connector Info
 
-* Type: SPOT CLOB CEX
-* Folder: [/hummingbot/connector/exchange/bybit](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/connector/exchange/bybit)
-* Maintainer:
+- **Exchange Type**: Centralized Exchange (**CEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer**: 
 
-## 🏆 Exchange Tier
+Currently, Bybit is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
 
 ## ℹ️ Exchange Info
 
-* Website: <https://www.bybit.com/en-US/>
-* CoinMarketCap: <https://coinmarketcap.com/exchanges/bybit/>
-* CoinGecko: <https://www.coingecko.com/en/exchanges/bybit>
-* API docs: <https://bybit-exchange.github.io/docs/v5/intro>
-* Transaction fees: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
+- **Website**: <https://www.bybit.com>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bybit/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/bybit>
+- **API Docs**: https://bybit-exchange.github.io/docs/v5/intro
+- **Fees**: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
+- **Supported Countries**: Available to customers worldwide, except for countries with service restrictions such as the U.S, Singapore, Cuba, Crimea, Sevastopol, Iran, Syria, North Korea, Sudan, Mainland China.
 
-## 🔑 Connection
+## 🔑 How to Connect
 
-Run `connect bybit` in order to enter your API keys:
+### Generate API Keys
+
+- Log in to your Bybit account or Sign Up for a Bybit account.
+
+- Click on your account icon at the top right corner of the screen, and select API from the drop-down menu.
+
+- Navigate to the API Management tab and click on Create New Key.
+
+- Select either System-generated API Keys or Self-generated API Keys.
+
+- Select Connect to Third-Party Applications, select the third-party application from the drop-down menu, and name the API key.
+
+- Set the permissions for the API key (e.g., account information, order placement, position information) and click on Submit
+
+- Copy the API key and secret, and save them somewhere safe.
+
+- Log in to the third-party application and link the saved API. 
+
+### Add Keys to Hummingbot
+
+From inside the Hummingbot client, run `connect bybit`:
 
 ```
-Enter your Bybit API key >>>
-Enter your Bybit secret key >>>
+Enter your bybit API key >>>
+Enter your bybit secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to Bybit.
+You are now connected to bybit
 ```
 
-## 🪙 Fees
 
-Hummingbot assumes -0.1% maker fees and 0.1% taker fees ([source](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/connector/exchange/bybit/bybit_utils.py#L10)).
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
 
-Users can override these assumptions with [Override Fees](/global-configs/override-fees/).
+- **ID**: `bybit`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bybit
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect bybit_paper_trade` instead of `connect bybit`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+
+## 🔀 Perp Connector
+*Integration to perpetual futures markets API endpoints*
+
+- **ID**: `bybit_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `MARKET`
+
+### Position Modes
+
+This connector supports the following position modes:
+
+- One-way
+- Hedge
+
+### Paper Trading
+
+This perp exchange offers a paper trading mode: https://testnet.bybit.com/en-US/trade/spot/BTC/USDT
+
+Afer you create an account and create the API keys, you can enter them by using the `connect bybit_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
+

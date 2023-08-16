@@ -170,7 +170,7 @@ You should see the Hummingbot welcome screen:
 
 To get started with Hummingbot, check out the following docs:
 
-* [Post Installation](./post-installation)
+* [Post Installation](./post-installation.md)
 * [Basic Features](/operation/)
 * [Quickstart Guide](/quickstart/)
 * [Hummingbot FAQ](/faq/)

@@ -1,30 +1,37 @@
-# `injective`
+## 🛠 Connector Info
 
-## 📁 Connector Info
+- **Exchange Type**: Decentralized Exchange (**DEX**)
+- **Market Type**: Central Limit Order Book (**CLOB**)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+- **Maintainer:** 
 
-* Type: SPOT CLOB DEX
+Currently, Injective is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-## 🏆 Exchange Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-
-Bronze exchange connectors have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
 
 ## ℹ️ Exchange Info
 
-* Website: <https://helixapp.com/markets?type=spot>
-* CoinMarketCap: <https://coinmarketcap.com/currencies/injective>
-* CoinGecko: <https://www.coingecko.com/en/coins/injective>
-* API docs: <https://api.injective.exchange>
-* SDK: <https://github.com/InjectiveLabs/sdk-python>
+- **Website**: https://helixapp.com/markets?type=spot
+- **CoinMarketCap**: <https://coinmarketcap.com/currencies/injective>
+- **CoinGecko**: <https://www.coingecko.com/en/coins/injective>
+- **API Docs**: <https://api.injective.exchange>
+- **Fees**: <https://help.injective.exchange/en/articles/4800191-are-there-fees-to-using-injective>
+- **Supported Countries**: <https://help.injective.exchange/en/articles/4798063-location-restrictions> 
 
-## 🕸️ Supported Chains and Networks
+## 🔑 How to Connect
 
-* [Injective](/chains/injective): `mainnet` `testnet` `devnet`
+Create a wallet on one of the supported networks below:
 
-## 🔑 Connection
+| Chain | Networks | 
+| ----- | -------- |
+| `injective` | `mainnet`, `testnet`, `devnet`
 
-Run `gateway connect injective` in order to connect to your wallet:
+From inside the Hummingbot client, run `gateway connect injective` in order to connect your wallet:
 
 ```
 Which chain do you want injective to connect to? (injective) >>>
@@ -40,3 +47,41 @@ If connection is successful:
 ```
 The injective connector now uses wallet [pubKey] on injective-mainnet
 ```
+
+## 🔀 Spot Connector
+*Integration to spot markets API endpoints*
+
+- **ID**: `injective`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/injective
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `MARKET`
+
+## 🔀 Perp Connector
+*Integration to perpetual futures markets API endpoints*
+
+- **ID**: `injective_perpetual`
+- **Connection Type**: WebSocket
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/injective_perpetual
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
+
+### Position Modes
+
+This connector supports the following position modes:
+
+- One-way
+
+### Paper Trading
+
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect injective` to `injective-testnet` instead of `injective-mainnet`.
