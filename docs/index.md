@@ -1,5 +1,6 @@
 ---
 template: home.html
+title: Hummingbot - the open source OS for crypto algo traders
 hide:
   - toc
   - navigation

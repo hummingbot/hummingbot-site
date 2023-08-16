@@ -9,10 +9,10 @@
   --md-default-bg-color: rgb(250, 250, 250);
   --md-primary-fg-color: rgb(255, 255, 255);
   --md-primary-fg-color--light: #5FFFD7;
-  --md-primary-fg-color--dark:  #00C2CE;
+  --md-primary-fg-color--dark:  #E549FF;
   --md-primary-bg-color: rgba(0,0,0,.75);
   --md-primary-bg-color--light: rgba(0,0,0,.54);
-  --md-accent-fg-color: #00C2CE;
+  --md-accent-fg-color: #E549FF;
   --pg-light-border: rgb(229, 231, 235);
   --hb-hero-color: rgb(45, 45, 45);
 }
@@ -20,10 +20,10 @@
   --md-default-bg-color: rgb(26, 26, 27);
   --md-primary-fg-color: rgb(15, 15, 15);
   --md-primary-fg-color--light: #5FFFD7;
-  --md-primary-fg-color--dark:  #00C2CE;
+  --md-primary-fg-color--dark:  #FCDB17;
   --md-primary-bg-color: rgba(0,0,0,.75);
   --md-primary-bg-color--light: rgba(0,0,0,.54);
-  --md-accent-fg-color: #E549FF;
+  --md-accent-fg-color: #FCDB17;
   --pg-light-border: rgb(47, 47, 47);
   --hb-hero-color: #5FFFD7;
   /* --md-footer-bg-color--dark: var(--md-default-bg-color); */
@@ -31,7 +31,7 @@
 
 /* Better contrast link colors */
 [data-md-color-scheme="default"] > * {
-  --md-typeset-a-color: #E549FF;
+  --md-typeset-a-color: #00B1BB;
 }
 [data-md-color-scheme="slate"] > * {
   --md-typeset-a-color: #5FFFD7;
