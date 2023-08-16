@@ -10,7 +10,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Create professional-grade strategies__
+-   :material-format-paint:{ .lg .middle } __Create professional-grade strategies__
 
     ---
 
@@ -18,47 +18,45 @@ hide:
 
     [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __Deploy to any CEX or DEX__
+-   :fontawesome-brands-markdown:{ .lg .middle } __Connect directly to any exchange__
 
     ---
 
-    Hummingbot connectors let you run the same strategies everywhere, including DEXs on various blockchain networks.
+    Hummingbot establishes a direct WebSocket connection with many exchanges, including DEXs on L1/L2 blockchain networks.
 
     [:octicons-arrow-right-24: Connector Docs](/exchanges/)
 
--   :material-format-font:{ .lg .middle } __Orchestrate a fleet of trading bots__
+-   :material-chart-line:{ .lg .middle } __Monitor and adjust bots in real-time__
 
     ---
 
-    Deploy, monitor, and control multiple bot instances using Hummingbot Dashboard, a new web-based user interface.
+    Monitor all your bots and get real-time performance updates from anywhere with our Telegram integration.
 
-    [:octicons-arrow-right-24: Dashboard Demo Video](#)
+    [:octicons-arrow-right-24: Telegram Integration Docs](/global-configs/telegram/)
 
--   📊 __Analyze and tweak bots in real-time__
-
-    ---
-
-    Get real-time performance updates and monitor all your bots with Telegram.
-
-    [:octicons-arrow-right-24: Strategy Performance](#)
-
--   :material-scale-balance:{ .lg .middle } __Backtest and optimize your bots__
+-   :material-satellite-uplink:{ .lg .middle } __Deploy a fleet of trading bots__
 
     ---
 
-    Backtest strategies against historical data and optimize parameters before deploying them live.
+    Deploy, monitor, and control multiple bot instances using Dashboard, a new web-based user interface and control center.
 
-    [:octicons-arrow-right-24: Backtest Demo Video](#)
+    [:octicons-arrow-right-24: Demo: Hummingbot Dashboard](https://www.youtube.com/watch?v=3WqNV543goI)
 
--   :material-scale-balance:{ .lg .middle } __Fork and extend the codebase__
+-   :material-scale-balance:{ .lg .middle } __Backtest and optimize your strategies__
 
     ---
 
-    Hummingbot is free and publicly available under the Apache 2.0 open source license!
+    We are adding backtesting and optimization support into Dashboard, helping you fine-tune your bots before deploying them live.
 
-    [:octicons-arrow-right-24: Github](https://github.com/hummingbot/hummingbot)
+    :material-star-face: Coming soon!
 
-    [:octicons-arrow-right-24: Contribute](#)
+-   :material-scale-balance:{ .lg .middle } __Fork and extend our codebase__
+
+    ---
+
+    Hummingbot is free and publicly available under the Apache 2.0 open source license, so you can use the code however you like!
+
+    [:octicons-arrow-right-24: How to Fork the Repo](/developers/forking/)
 
 
 </div>
@@ -81,27 +79,27 @@ hide:
 
 ## Token Projects
 
-#### "We use a customized Hummingbot Dashboard to monitor Dictum non consectetur a erat nam at lectus. Nec ullamcorper sit amet risus. Id aliquet risus feugiat in ante metus. Odio morbi quis commodo odio aenean sed adipiscing diam.
+#### "We use a customized version of Hummingbot Dashboard to monitor Dictum non consectetur a erat nam at lectus. Nec ullamcorper sit amet risus. Id aliquet risus feugiat in ante metus. Odio morbi quis commodo odio aenean sed adipiscing diam.
 
 ##### Name, Project 
 
 ---
 
-# What strategies can you run with Hummingbot?
+# What strategies can you build with Hummingbot?
 
 <div class="grid cards wide" markdown>
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </div>
 
-## Learn how to run strategies like these with [Botcamp](/community/botcamp), an online program that teaches you how to design and code algo trading strategies with Hummingbot.
+## Learn how to design and code strategies like these in [Botcamp](/community/botcamp), the official training and membership program for the Hummingbot community.
 
 <br />
 
