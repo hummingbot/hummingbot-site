@@ -18,7 +18,7 @@ copyright: Copyright &copy; 2023 Hummingbot Foundation
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/brand/favicon.svg
+  logo: assets/brand/logo.svg
   favicon: assets/brand/logo-color.png
   icon:
     repo: fontawesome/brands/github
@@ -148,7 +148,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started:
-    - Getting Started: installation/index.md
+    - Getting Started: getting-started/index.md
+    - Installation: installation/index.md
     - Install via Docker: installation/docker.md
     - Install from Source: 
       - Install from Source: installation/source/index.md
@@ -347,7 +348,7 @@ nav:
   - Community:
     - Community: community/index.md
     # - Events: community/events.md
-    - Botcamp: community/botcamp.md 
+    - Botcamp: botcamp/index.md 
     - Bounties: 
       - Bounties: bounties/index.md
       - For Contributors: bounties/contributors.md
