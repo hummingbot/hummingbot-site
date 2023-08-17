@@ -1,7 +1,7 @@
 ---
-date: May 2, 2019
+date: 2019-05-02
 authors:
-  - Yingdan Liang
+  - coinalpha
 categories:
   - Trader Tips
 ---
