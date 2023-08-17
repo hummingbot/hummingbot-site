@@ -27,6 +27,8 @@ Now, we believe it's time to open up these bounties to the broader Hummingbot ec
 
 Community Bounties offer a platform for those seeking development work on exchange connectors, strategies, bug fixes, and more to connect with skilled developers capable of building these solutions. As with past bounties, Hummingbot Foundation will oversee the entire lifecycle of Community Bounties, including scoping, assignment, QA/engineering review, and code merge / payment.
 
+<!-- more -->
+
 The Community Bounties program is designed to streamline the process of funding enhancements, bug fixes, and new features for the official Hummingbot codebase, as well as private forks used by the community. The program consists of four key stages: (1) Bounty Creation, (2) Bounty Assignment, (3) Pull Request Review, and (4) Code Merge and Payment.
 
 ## 1. Bounty Creation
