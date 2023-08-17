@@ -1,35 +1,39 @@
 ---
 date: Mar 25, 2022
 authors:
-  - by Ben Smeaton
-
-Hi! I’ve been using hummingbot for about a year on and off and wanted to give an overview on how to actually go about defining your own strategies. I got into market making because of a hobbyist interest in python coding and I was at that
+  - Ben Smeaton
 categories:
   - Trader Tips
 ---
 
 # Strategy Coding for Dummies
 
+![cover](image_2.jpg)
 
 *by Ben Smeaton*
 
-![](https://blog.hummingbot.org/content/images/2022/09/makeameme.webp)Hi! I’ve been using hummingbot for about a year on and off and wanted to give an overview on how to actually go about defining your own strategies. I got into market making because of a hobbyist interest in python coding and I was at that time tinkering with buying and selling shares automatically on the stock market which was incredibly unsuccessful.
+![](https://blog.hummingbot.org/content/images/2022/09/makeameme.webp)
 
-Humming Bot is very accessible for hobby coders due to its mainly python-based code base and the fact that its all open source (Meaning you can play around with the code). It's pretty easy to scrape together your own strategies although it’s taken quite a lot of trial and error to get there myself! I wanted to give a basic idea of how you can go about doing this in the simplest way possible.
+Hi! I've been using hummingbot for about a year on and off and wanted to give an overview on how to actually go about defining your own strategies. I got into market making because of a hobbyist interest in python coding and I was at that time tinkering with buying and selling shares automatically on the stock market which was incredibly unsuccessful.
 
-The best way to get started is to get an idea of the strategies already present in hummingbot, this can be done through diving into the program and getting an idea of how it works. I would recommend starting off with an existing strategy and tweaking it yourself. If it all goes wrong (and it probably will) you can just pull it again from github and overwrite your changes. Also, if you use windows you’re probably going to want to develop your code on a source installation for windows, this can be done quite easily as per: [Source - Hummingbot Foundation](https://hummingbot.org/installation/source/?ref=blog.hummingbot.org#hummingbot). Obviously, when you have a working code you can then quite easily transfer the strategy file to your AWS server or RPI and compile it there.
+Humming Bot is very accessible for hobby coders due to its mainly python-based code base and the fact that its all open source (Meaning you can play around with the code). It's pretty easy to scrape together your own strategies although itï¿½s taken quite a lot of trial and error to get there myself! I wanted to give a basic idea of how you can go about doing this in the simplest way possible.
 
-When you’ve installed the software from source you need to head to strategy folder in hummingbot/hummingbot/strategy. Then pick the strategy you want to edit. I'm going to use cross exchange market making for this.
+The best way to get started is to get an idea of the strategies already present in hummingbot, this can be done through diving into the program and getting an idea of how it works. I would recommend starting off with an existing strategy and tweaking it yourself. If it all goes wrong (and it probably will) you can just pull it again from Github and overwrite your changes. Also, if you use Windows you're probably going to want to develop your code on a source installation for windows, this can be done quite easily as per: [Source - Hummingbot Foundation](../../../installation/source/index.md). Obviously, when you have a working code you can then quite easily transfer the strategy file to your AWS server or RPI and compile it there.
+
+When you've installed the software from source you need to head to strategy folder in hummingbot/hummingbot/strategy. Then pick the strategy you want to edit. I'm going to use cross exchange market making for this.
+
+
+<!-- more -->
 
 The strategy folders are all laid out in a similar way. The most important file is the one ending in .pyx, this is the main strategy file that contains all of the instructions for how your strategy works. For the other files in this folder:
 
-·        The `config_map.py`file contains the parameters that you can configure in the program, they can be added in this file along with prompts and default values.
+- The `config_map.py`file contains the parameters that you can configure in the program, they can be added in this file along with prompts and default values.
 
-·        The start file initializes these parameters for the main strategy (needs to be kept updated with any new variables you are adding in the config file)
+- The start file initializes these parameters for the main strategy (needs to be kept updated with any new variables you are adding in the config file)
 
-·        The `.pdx` file contains a list of the variables used in the `.pyx`file and needs to be updated if new ones are added (No idea why but I’m sure there’s a good reason for it).
+- The `.pdx` file contains a list of the variables used in the `.pyx`file and needs to be updated if new ones are added (No idea why but Iï¿½m sure thereï¿½s a good reason for it).
 
-Forgetting about the other files open the `.pyx`file. This file is full of different functions which make the strategy operate. The most important thing to understand about this file is that the `c_tick()`function found about half way down the page is called each second by hummingbot and all other functions in this file are in some way called from this one. By the way don’t be too concerned by the “`c_`” superscripts and “`cdef`” littered through this strategy it just shows the use of cython rather than python but for any additions you make you can just use plain old python notation and it will work just as well.
+Forgetting about the other files open the `.pyx`file. This file is full of different functions which make the strategy operate. The most important thing to understand about this file is that the `c_tick()`function found about half way down the page is called each second by hummingbot and all other functions in this file are in some way called from this one. By the way don't be too concerned by the `c_` superscripts and `cdef` littered through this strategy it just shows the use of cython rather than python but for any additions you make you can just use plain old python notation and it will work just as well.
 
 In general the strategy works by calling `c_tick()`then progressing through a series of functions that check how profitable your trade would be. If the trade is profitable then it makes it through all the checks and the order will actually be placed on the exchange. If there are already buy and sell orders present then the strategy will check whether these are still profitable and decide to remove or keep them.
 
@@ -37,11 +41,11 @@ Looking at the `c_tick()` function this firstly checks a few standard things lik
 
 Firstly the function checks through the active orders to understand if they are still profitable or not, and will cancel and adjust if needed, if there are no active bid or if there are no active ask orders and no taker orders waiting to complete, the program will get to the bottom of the function and finally call `c_check_and_create_new_orders`.
 
-`c_check_and_create_new_orders`is right at the bottom of the strategy file and checks if there’s a current active bid or ask on the exchange > finds the order amount based on your input and the current order book distribution > finds the price to set the order at (by making sure you achieve your required profitability from the current taker price) and finally places the order using `c_place_order`function.
+`c_check_and_create_new_orders`is right at the bottom of the strategy file and checks if there's a current active bid or ask on the exchange > finds the order amount based on your input and the current order book distribution > finds the price to set the order at (by making sure you achieve your required profitability from the current taker price) and finally places the order using `c_place_order`function.
 
-And that’s it.
+And that's it.
 
-I’m going to show how to add a simple change to this strategy to change its function slightly. I will go through the different files we need to change to do this. The change is a very minor one which is to create a minimum order size in the strategy so that the strategy will not create an order if the order amount is less than this figure.
+I'm going to show how to add a simple change to this strategy to change its function slightly. I will go through the different files we need to change to do this. The change is a very minor one which is to create a minimum order size in the strategy so that the strategy will not create an order if the order amount is less than this figure.
 
 1. We are first going to create a new parameter that we can access from within the program, this will set the minimum order size. For this, open up the `config_map.py`file and scroll down to the section where the `config_map`dictionary variables are defined, we can then just insert a new variable like the below.
 
@@ -81,7 +85,7 @@ A. The .pxd file needs opening and our new variable added to the variable list s
 
 B. We need to update the template file for the strategy in`hummingbot/hummingbot/Templates`
 
-5. We’ve finally got the variable into our strategy to use! It's going to be a very simple change to the strategy, I'm going to use the variable in the `c_check_and_create_orders` function we looked at earlier and change this code:
+5. We've finally got the variable into our strategy to use! It's going to be a very simple change to the strategy, I'm going to use the variable in the `c_check_and_create_orders` function we looked at earlier and change this code:
 
 if `not has_active_bid:`
 
@@ -113,6 +117,6 @@ For example
 
 There is probably a hummingbot function or attribute that can get you any information required for market making already in the strategy, it's just a matter of exploring the code and finding them. The `strategy_base.py` and `market_base.py`files in the hummingbot folder are worth exploring for these.
 
-*If you’d like to learn more, feel free to reach out to me on Discord: bsmeat#7510*
+*If you'd like to learn more, feel free to reach out to me on Discord: bsmeat#7510*
 
 

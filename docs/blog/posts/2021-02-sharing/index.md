@@ -1,9 +1,7 @@
 ---
 date: Feb 14, 2021
 authors:
-  - by Thomas Yit
-
-Until now, the majority of the articles are about learning and optimizing Hummingbot. Let’s take this to the next level. Is it possible to profit from market making, and does liquidity rewards help mitigate directional risks? I share the following three markets(live) and performance in
+  - Thomas Yit
 categories:
   - Trader Tips
 ---
@@ -13,7 +11,7 @@ categories:
 
 *by Thomas Yit*
 
-Until now, the majority of the articles are about learning and optimizing Hummingbot. Let’s take this to the next level. Is it possible to profit from market making, and does liquidity rewards help mitigate directional risks? I share the following three markets(live) and performance in an attempt to address these concerns.
+Until now, the majority of the articles are about learning and optimizing Hummingbot. Letï¿½s take this to the next level. Is it possible to profit from market making, and does liquidity rewards help mitigate directional risks? I share the following three markets(live) and performance in an attempt to address these concerns.
 
 *****Disclaimer: The content of this article is provided by our blog contributor Thomas Yit and does not represent the views of CoinAlpha Inc./Hummingbot. The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service.*****
 
@@ -34,20 +32,20 @@ So why did I pick this pair in BTC? Now take a look at the Ethereum Coinmarketca
 
 ![USD-index](https://images.ctfassets.net/h07e7qaokuyy/7mOonIXpcd7xH5g6LTICqs/79ac30948a867c503b0eac7385391982/USD-index.png?w=1120&h=652&q=100&fm=png)The USD dollar index(basket of currencies) has been on the downtrend since March 2020, in other words, USD is weakening and other currencies are strengthening. You would prefer markets moving in range for market making. Now, back to the configuration of the trading pair.
 
-![firstpair-config](https://images.ctfassets.net/h07e7qaokuyy/1OwP0ZA9TvSCy0eszJDeVu/f6d470c3724903f4a9104563e169bcf7/firstpair-config.png?w=602&h=904&q=100&fm=png)I set very simple pure market making parameters but the bid/ask orders are dynamic based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders, for more information, see [here](https://hummingbot.io/blog/2021-01-automate-tradingview-for-hummingbot/?ref=blog.hummingbot.org). If you don’t have a TradingView subscription, you can use Hummingbot scripts to adjust accordingly, see [here](https://github.com/CoinAlpha/hummingbot/tree/master/scripts?ref=blog.hummingbot.org), either using `inventory_skew` or the `spreads_adjusted` to your preference.
+![firstpair-config](https://images.ctfassets.net/h07e7qaokuyy/1OwP0ZA9TvSCy0eszJDeVu/f6d470c3724903f4a9104563e169bcf7/firstpair-config.png?w=602&h=904&q=100&fm=png)I set very simple pure market making parameters but the bid/ask orders are dynamic based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders, for more information, see [here](https://hummingbot.io/blog/2021-01-automate-tradingview-for-hummingbot/?ref=blog.hummingbot.org). If you donï¿½t have a TradingView subscription, you can use Hummingbot scripts to adjust accordingly, see [here](https://github.com/CoinAlpha/hummingbot/tree/master/scripts?ref=blog.hummingbot.org), either using `inventory_skew` or the `spreads_adjusted` to your preference.
 
 **My choice of a liquidity mining trading pair**
 ------------------------------------------------
 
-Since the previous trading pair was a market making and low in trading frequency, let’s take a look at RLC/USDT results, a liquidity mining trading pair from 13-01-2021 to 19-01-2021.
+Since the previous trading pair was a market making and low in trading frequency, letï¿½s take a look at RLC/USDT results, a liquidity mining trading pair from 13-01-2021 to 19-01-2021.
 
 ![RLCUSDT](https://images.ctfassets.net/h07e7qaokuyy/38On0rhGSdxhImtYn1bxPw/fb8ee50f5a6af718fe12f10ad7ca70fd/RLCUSDT.png?w=1130&h=1054&q=100&fm=png)![liquidity-mining-rewards](https://images.ctfassets.net/h07e7qaokuyy/6GBzj1ctJ9QkmTm3F7dZib/004b2137858e4d8b9d2baa32a317501d/liquidity-mining-rewards.png?w=1106&h=388&q=100&fm=png)Over 7 days, 1185 trades are executed, an average of 169 trades per day with a PnL of 60.49. Add the liquidity mining rewards of 12.39, the total Pnl is abt $72.88 and the gain is ****7.1%****. Not too shabby for 7 days of work.
 
 This pair does not have much of a USDT movement as compared to BTC; thus, a good pair for mining, see the following screenshot. Note line in green for USDT.
 
-![RLCUSDT-cmchart](https://images.ctfassets.net/h07e7qaokuyy/76sWRSTSuYZfS3n4zMp3aH/22562b69b8e6d6889ff8d5f654d26fb9/RLCUSDT-cmchart.png?w=1136&h=642&q=100&fm=png)Let’s look into the RLC/USDT chart.
+![RLCUSDT-cmchart](https://images.ctfassets.net/h07e7qaokuyy/76sWRSTSuYZfS3n4zMp3aH/22562b69b8e6d6889ff8d5f654d26fb9/RLCUSDT-cmchart.png?w=1136&h=642&q=100&fm=png)Letï¿½s look into the RLC/USDT chart.
 
-![RLCUSDT-tvchart](https://images.ctfassets.net/h07e7qaokuyy/5vpkkWluk8ZKKWEkKZcJaO/94117379f1de412a2f9e8c7f2c5b0ff5/RLCUSDT-tvchart.png?w=1124&h=362&q=100&fm=png)Similar to the first market-making pair, RLC/USDT has a nice gradual ascent. The Hummingbot configuration is similar to the first pair with dynamic bid/ask orders configured from 0.25 - 1%. During the uptrend, the bid spread was configured to be much tighter in order to fill in faster; thus, the buy orders are much more than the sell orders. “Everyone’s a genius in a bull market” let's take a look at a market that is in a downtrend.
+![RLCUSDT-tvchart](https://images.ctfassets.net/h07e7qaokuyy/5vpkkWluk8ZKKWEkKZcJaO/94117379f1de412a2f9e8c7f2c5b0ff5/RLCUSDT-tvchart.png?w=1124&h=362&q=100&fm=png)Similar to the first market-making pair, RLC/USDT has a nice gradual ascent. The Hummingbot configuration is similar to the first pair with dynamic bid/ask orders configured from 0.25 - 1%. During the uptrend, the bid spread was configured to be much tighter in order to fill in faster; thus, the buy orders are much more than the sell orders. ï¿½Everyoneï¿½s a genius in a bull marketï¿½ let's take a look at a market that is in a downtrend.
 
 **A liquidity mining trading pair that is trending down?**
 ----------------------------------------------------------
@@ -63,7 +61,7 @@ XEM/ETH has been on a downward trend direction since 13-1-2021, see the followin
 **Conclusion**
 --------------
 
-Market making is a fine balancing act between the bulls and the bears and a constant flexing of Hummingbot’s parameters to adjust your inventory, directional, currency risks. I’m sure there are more successful examples than the ones depicted above and hope more community members will share their examples and experience.
+Market making is a fine balancing act between the bulls and the bears and a constant flexing of Hummingbotï¿½s parameters to adjust your inventory, directional, currency risks. Iï¿½m sure there are more successful examples than the ones depicted above and hope more community members will share their examples and experience.
 
 
 

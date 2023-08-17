@@ -1,13 +1,7 @@
 ---
 date: Mar 28, 2022
 authors:
-  - by L„ Minh Ho‡ng
-
-Hey guys, Wojak here!
-
-I hope you guys have a good day! Today let's dive into the topic of how to get good at market making on the Hummingbot Miner platform.
-
-So a little bit of introduction first! I am Wojak, an active member of Hummingbot
+  - Wojak
 categories:
   - Trader Tips
 ---
@@ -15,9 +9,9 @@ categories:
 # How To Get Good At Market Making On Hummingbot Miner Platform
 
 
-*by L„ Minh Ho‡ng*
+*by L√£ Minh Ho√†ng*
 
-Hey guys, ****Wojak**** here!
+Hey guys, **Wojak** here!
 
 I hope you guys have a good day! Today let's dive into the topic of how to get good at market making on the Hummingbot Miner platform.
 
@@ -27,10 +21,14 @@ As we all know, market making is not simple. It is even harder to compete on the
 
 Therefore, It would be great if a beginner could begin their market making journey with a bag full of tips and tricks! Say no more; I'm here to help!
 
+<!-- more -->
+
 **The Five Pillars Of Success**
 ===============================
 
-![image 2022-03-29 212320](https://images.ctfassets.net/h07e7qaokuyy/7aDNnRwRPxQGcy2XkNGxIz/f1c963295e497d3edb85aef80e39db00/image_2022-03-29_212320.png?w=512&h=341&q=100&fm=png)So what is the "secret sauce" for success? Of course, you will need a magic glass ball to foresee the market.
+![image 2022-03-29 212320](image_1.jpg)
+
+So what is the "secret sauce" for success? Of course, you will need a magic glass ball to foresee the market.
 
 Nope, that is just a fantasy! In my experience, the best way for a beginner to be successful is a system of routines that can help you to improve your performance over time.
 
@@ -38,14 +36,14 @@ I call it "The Five Pillars of Success"; sounds good, right? Each pillar is a ro
 
 Those pillars are Learning, Watching, Coding, Tracking, and Community.
 
-
-
 ---
 
 **Learning**
 ============
 
-![image 2022-03-29 212439](https://images.ctfassets.net/h07e7qaokuyy/3ArUZlhpYQChPiT4Pr1k6A/380a649db1cba0c723e61b0058d6c906/image_2022-03-29_212439.png?w=512&h=341&q=100&fm=png)It is crucial to arm yourself with knowledge. The more you understand, the better you are at figuring out the solution for every situation.
+![image 2022-03-29 212439](image_2.jpg)
+
+It is crucial to arm yourself with knowledge. The more you understand, the better you are at figuring out the solution for every situation.
 
 Like, what should I do with this parameter? Should I set the spread big or small for this market condition? What strategy should I use, Pure Market, Making, or Cross Exchange Market Making?
 
@@ -62,10 +60,10 @@ For a quick rundown of market making and how to configure the Hummingbot client,
 
 For more advanced traders, scientific papers and books would be the places to dig out the nature of market making. Here are some of my favorites:
 
-* "[High-frequency trading in a limit order book](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf?ref=blog.hummingbot.org)" by ****Marco Avellaneda**** and ****Sasha Stoikov****.
-* "[Optimal High-Frequency Market Making](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf?ref=blog.hummingbot.org)" by ****Takahiro Fushimi, Christian Gonz'alez Rojas,**** and ****Molly Herman****.
+* "[High-frequency trading in a limit order book](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf?ref=blog.hummingbot.org)" by **Marco Avellaneda** and **Sasha Stoikov**.
+* "[Optimal High-Frequency Market Making](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf?ref=blog.hummingbot.org)" by **Takahiro Fushimi, Christian Gonz'alez Rojas,** and **Molly Herman**.
 * Any papers from [Sanmay Das](https://cs.gmu.edu/~sanmay/?ref=blog.hummingbot.org).
-* Not related to crypto but also a good source on market making in general: "[High-frequency trading: a practical guide to algorithmic strategies and trading systems](https://ahmetbeyefendi.com/wp-content/uploads/2020/07/High-Frequency-Trading-Irene-Aldridge.pdf?ref=blog.hummingbot.org)" by ****Irene Aldridge****.
+* Not related to crypto but also a good source on market making in general: "[High-frequency trading: a practical guide to algorithmic strategies and trading systems](https://ahmetbeyefendi.com/wp-content/uploads/2020/07/High-Frequency-Trading-Irene-Aldridge.pdf?ref=blog.hummingbot.org)" by **Irene Aldridge**.
 
 Hummingbot client source code is mainly in Python, so learning Python is always recommended for understanding the bot logic and customization. Here are some excellent sources for learning Python:
 
@@ -73,14 +71,14 @@ Hummingbot client source code is mainly in Python, so learning Python is always 
 * Another Python crash course: [https://www.youtube.com/watch?v=rfscVS0vtbw](https://www.youtube.com/watch?v=rfscVS0vtbw&ref=blog.hummingbot.org)
 * Another other Python crash course: [https://www.youtube.com/watch?v=\_uQrJ0TkZlc](https://www.youtube.com/watch?v=_uQrJ0TkZlc&ref=blog.hummingbot.org)
 
-
-
 ---
 
 **Watching**
 ============
 
-![image 2022-03-29 212605](https://images.ctfassets.net/h07e7qaokuyy/2ljXUkNxziOJX77uW0WeMz/da3541dc800f705078b29d1201e60519/image_2022-03-29_212605.png?w=512&h=339&q=100&fm=png)Watching the news and looking out for market crashes is what you should do daily to protect your funds.
+![image 2022-03-29 212605](image_3.jpg)
+
+Watching the news and looking out for market crashes is what you should do daily to protect your funds.
 
 Crypto markets by nature are very volatile; a small Bitcoin dump in the magnitude of 1% to 5% could translate into a significant drop on other altcoins, especially the one with low liquidity.
 
@@ -97,9 +95,9 @@ Also, I would look for any price alert that got triggered overnight to see if th
 
 Those are usually enough signals to assess if today is a green day or a red day.
 
-****Green day**** means that the price is slightly uptrend or sideways, few to no price alert, and most of the news is bullish.
+**Green day** means that the price is slightly uptrend or sideways, few to no price alert, and most of the news is bullish.
 
-****Red day**** means that the price is in a strong downtrend, there is a lot of price alert, and most news is bearish.
+**Red day** means that the price is in a strong downtrend, there is a lot of price alert, and most news is bearish.
 
 For a green day, I am confident that market making will make a good profit, and I could leave my bots running all day long without worrying that my funds could get rekt.
 
@@ -111,14 +109,14 @@ However, if it is a red day, then I would limit my exposure to the market:
 * Turn off the bots
 * Sell off all inventory to recover funds
 
-
-
 ---
 
 **Coding**
 ==========
 
-![image 2022-03-29 212739](https://images.ctfassets.net/h07e7qaokuyy/51STsM17bYBFrc96Th6o9M/44b30ba7701d7a29a362eb83211ee34d/image_2022-03-29_212739.png?w=512&h=341&q=100&fm=png)Hummingbot client is in Python and open source. Tinkering the source code and making customizations are always the better ways to have an edge on your trades.
+![image 2022-03-29 212739](image_4.jpg)
+
+Hummingbot client is in Python and open source. Tinkering the source code and making customizations are always the better ways to have an edge on your trades.
 
 You can find the source code of the Hummingbot client here:
 
@@ -141,14 +139,14 @@ Keep trying until you get there!
 
 However, make sure that you use as minimal funds as possible when trying new ideas because it is a risky endeavor that promises no return.
 
-
-
 ---
 
 **Tracking**
 ============
 
-![image 2022-03-29 212854](https://images.ctfassets.net/h07e7qaokuyy/5DdrG01F0MHvJxKxDefqpp/0c8703971d88885dd24f2e4be0893efa/image_2022-03-29_212854.png?w=512&h=342&q=100&fm=png)Don't go making money without knowing how much you already lose. Keep a spreadsheet under your bed to have a good sleep every night!
+![image 2022-03-29 212854](image_5.jpg)
+
+Don't go making money without knowing how much you already lose. Keep a spreadsheet under your bed to have a good sleep every night!
 
 Tracking my bot performance is one of my favorite routines of the day. It gives you insight into how good or bad your bot is doing and probably will give you ideas on how to improve them.
 
@@ -173,14 +171,14 @@ The spreadsheet has been a big help in developing my script and strategy to win 
 
 So, it is dangerous to go alone, take the spreadsheet and make some money!
 
-
-
 ---
 
 **Community**
 =============
 
-![image 2022-03-29 213031](https://images.ctfassets.net/h07e7qaokuyy/5YbEO6QLSfvjkWL47rVXQy/a2fa4f25557030872046cd1dc8204f50/image_2022-03-29_213031.png?w=512&h=342&q=100&fm=png)Hummingbot has one of a kind community where everyone is competitively making money but is also very open with their "secret sauce".
+![image 2022-03-29 213031](image_6.jpg)
+
+Hummingbot has one of a kind community where everyone is competitively making money but is also very open with their "secret sauce".
 
 Taking part in the community is the most rewarding routine that I can do all day. Making discussion, asking questions, clearing people's doubts, helping those in need of guidance could get you a lot of perks; some notable ones are:
 
@@ -194,8 +192,6 @@ Also, many decentralized exchanges and centralized exchanges are looking for dev
 
 All in all, the Hummingbot community is unique, open, friendly, and has a lot of opportunities to take! So don't hesitate to join!
 
-
-
 ---
 
 **Conclusion**
@@ -208,5 +204,3 @@ Also, a little disclaimer, all of the content I wrote is just for educational pu
 Have a nice day and happy market making!
 
 Wojak out!
-
-

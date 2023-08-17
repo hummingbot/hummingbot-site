@@ -1,17 +1,14 @@
 ---
 date: Mar 26, 2022
 authors:
-  - by Dalskie
-
-I am glad of this opportunity to share our insights that enable us to grow our fund, while also providing a consistent monthly income stream for our families. My sincere gratitude goes to Hummingbot Foundation & CoinAlpha!
-
-A short personal intro & back story may be appropriate as only 3
+  - Dalskie
 categories:
   - Trader Tips
 ---
 
 # Capital Deployment for Hummingbot
 
+![Alt text](image_1.jpg)
 
 *by Dalskie*
 
@@ -23,9 +20,13 @@ A short personal intro & back story may be appropriate as only 3 persons in disc
 
 In April of 2021, my husband has excitedly shared about his discovery of Hummingbot software that he used to mine rewards by simply providing liquidity. I was ecstatic to know another great potential for us to venture into, reminiscing the days of his discovery of ETH mining via graphic cards. Unfortunately, I was not able yet to get involved at this early stage. He was still experimenting with different strategies for the next 2-3 months. I remembered the 2021 mid-year market crash has dampened our enthusiasm & doubted whether this new liquidity mining venture would be worth of our time, effort, & capital to continue with.
 
+
+<!-- more -->
+
+
 Well, we are so grateful we did persevere throughout those hard times. In August, my husband mentioned about the huge weekly earning rewards of the top 3 in the leaderboard. That was the moment that really got my interest sparkly burning, to attain such weekly earnings someday. I kept asking him almost daily to figure out how much capital we need to reach that ambitious goal. He finally replied one day, maybe hoping I would back out of the goal, that we need 100K USDT. It was really an absurd amount.
 
-Let’s just end my back story there, and get back to business.
+Let's just end my back story there, and get back to business.
 
 Before that, please remember these are not intended as financial advice nor I am guaranteeing profitable results. I am not liable for any losses that you may have in future as a result of this sharing.
 
@@ -45,13 +46,13 @@ The remaining 20-30% of USDT in the capital fund is reserved for inevitable exce
 
 We still preferred to run our bots during bearish markets, as rewards became lucrative, and allowed us to recover losses rather swiftly. Bots are able to incrementally buy at small amounts near bottom of crash. Further, we can easily increase allocation whenever the market stabilizes within next few hours from strongest crash.
 
-[****Managing these many bots****](https://1drv.ms/x/s!AtqW4_9PjvHQddBrajcKypkxWEM?e=t12oBY&ref=blog.hummingbot.org) are no easy feats especially when volatility comes around. There is no one button to press to stop or adjust all the bots at once. We have to go thru each one of them. Further, we do not have sophisticated automation system yet. We are still figuring out patterns & timing so that one day we will be able to systematize the process.
+[**Managing these many bots**](https://1drv.ms/x/s!AtqW4_9PjvHQddBrajcKypkxWEM?e=t12oBY&ref=blog.hummingbot.org) are no easy feats especially when volatility comes around. There is no one button to press to stop or adjust all the bots at once. We have to go thru each one of them. Further, we do not have sophisticated automation system yet. We are still figuring out patterns & timing so that one day we will be able to systematize the process.
 
-There is one app that has helped us tremendously in managing these bots. Thanks to ****winter#6467**** for sharing this in discord. The app is called Termius. Though this is a paid app, its monthly cost is still relatively small compared to the benefits it provides. You can install it on Apple & Android devices. This enables you to access all the bots on-the-go. There is also a team feature whereby you can group the pairs however you like, & this will be shared & synced to your partners’ devices. There is a built-in SFTP so you can access & transfer files within Hummingbot folders.
+There is one app that has helped us tremendously in managing these bots. Thanks to ****winter#6467**** for sharing this in discord. The app is called Termius. Though this is a paid app, its monthly cost is still relatively small compared to the benefits it provides. You can install it on Apple & Android devices. This enables you to access all the bots on-the-go. There is also a team feature whereby you can group the pairs however you like, & this will be shared & synced to your partnersï¿½ devices. There is a built-in SFTP so you can access & transfer files within Hummingbot folders.
 
 Another thing I do recently, that may not be directly related yet to liquidity mining but still valuable to share, is allocating 5-8% of our profits for HBOT tokens. We have missed accumulating many crypto gems before like ETH, SOL, etc. This time I am making certain that I would not have any regret in the near future.
 
-The project teams, partnerships, & operations are highly credible & rock-solid. Full of hard work, and no hype-based promises or marketing gimmicks. And on top of all that, is the Hummingbot software itself, I need not say much more, I’m in awe. I have heard enough of these similar underrated projects & teams, that I have vowed to myself to pay close attention & be bold whenever I be given the opportunities to know them at early stage. I am very grateful to the Universe I have met one in here. And I sincerely wished that the beloved community, collectively, be able to value HBOT as well.
+The project teams, partnerships, & operations are highly credible & rock-solid. Full of hard work, and no hype-based promises or marketing gimmicks. And on top of all that, is the Hummingbot software itself, I need not say much more, Iï¿½m in awe. I have heard enough of these similar underrated projects & teams, that I have vowed to myself to pay close attention & be bold whenever I be given the opportunities to know them at early stage. I am very grateful to the Universe I have met one in here. And I sincerely wished that the beloved community, collectively, be able to value HBOT as well.
 
 Finally, I desire that instead of fearing the slicing of the pizza into ever smaller pieces as more members and capital will come in, I envision that the pizza will actually become exponentially larger so each miner will eventually have larger piece than each currently has or could ever imagine. I do not consider any of you as a competitor. Instead, I consider you as valuable part that makes our pizza bigger.
 

@@ -1,9 +1,7 @@
 ---
 date: Jan 6, 2021
 authors:
-  - by Thomas Yit
-
-Some users may want to run Hummingbot for extended periods of time. Having a bot running for long periods of time has its advantages and disadvantages. The longer you have a bot running the more opportunities you have for a trade to occur. But this is not
+  - Thomas Yit
 categories:
   - Trader Tips
 ---
@@ -31,12 +29,12 @@ In order to maximize profits and mitigate risk using Hummingbot, users utilize a
 
 TradingView has a feature that allows users to create alerts that notify the user when certain conditions are met by the market. For example: an alert can be made when the price of Apple stocks goes up by $10. When Apple's stock increases the user will be immediately alerted. Available to pro TradingView members is the ability to export alerts to Webhooks. This feature allows TradingView triggers to be sent to thousands of different apps including Hummingbot. More information on the types of alerts that can be create can be found [here](https://www.tradingview.com/blog/en/webhooks-for-alerts-now-available-14054/?ref=blog.hummingbot.org).
 
-Using TradingView alerts we can mitigate our bot’s market risk by having a bot running in trending or sideways markets while also shutting down the bot in downwards trending markets. Running a bot on a downwards trending market has many risks that are all mitigated if there is no bot running. Another benefit of using TradingView alerts is the synergy that it has with running Hummingbot on the cloud. With the TradingView alerts controlling your bot through telegram, your computer will continue to create and execute trades even if the computer is off. This will allow you to always have a bot running at optimal times without hardware limitations.TradingView alerts are highly customizable meaning there are an infinite amount of unique strategies that can be created.
+Using TradingView alerts we can mitigate our botï¿½s market risk by having a bot running in trending or sideways markets while also shutting down the bot in downwards trending markets. Running a bot on a downwards trending market has many risks that are all mitigated if there is no bot running. Another benefit of using TradingView alerts is the synergy that it has with running Hummingbot on the cloud. With the TradingView alerts controlling your bot through telegram, your computer will continue to create and execute trades even if the computer is off. This will allow you to always have a bot running at optimal times without hardware limitations.TradingView alerts are highly customizable meaning there are an infinite amount of unique strategies that can be created.
 
 **How do TradingView alerts connect to Hummingbot?**
 ----------------------------------------------------
 
-Using Hummingbot’s telegram feature users can control their bots from telegram messages. In addition to that TradingView’s webhook feature allows alerts to be sent to other platforms.
+Using Hummingbotï¿½s telegram feature users can control their bots from telegram messages. In addition to that TradingViewï¿½s webhook feature allows alerts to be sent to other platforms.
 
 In order to use these alerts to control Hummingbot, we use ConfluxBot, a telegram bot (costs $15/mth)that serves as the bridge between TradingView and Hummingbot.
 
@@ -99,7 +97,7 @@ ConfluxBot is a webhook and a place that forwards TradingViews alerts to Humming
 * inventory\_range\_multiplier
 * filled\_order\_delay
 
-For example, enter “config bid\_spread 3”
+For example, enter ï¿½config bid\_spread 3ï¿½
 
 ****Note:**** There are some issues with concurrent telegram connections, do test and limit the alerts to 2 per time interval.
 

@@ -8,6 +8,8 @@ categories:
 
 # Systematic approach to Liquidity Mining -  ROI based analytics and simple experiments
 
+![cover](image_1.jpg)
+
 
 *by Diego C*
 
@@ -19,7 +21,7 @@ categories:
 
 The end goal for Liquidity Mining strategies would be to beat traditional staking and farming yields in DEFI/CEFI using your crypto assets.
 
-So if you HODL crypto assets in Exchanges like Binance, Kucoin, [gate.io](http://gate.io/?ref=blog.hummingbot.org) or Ascendex and you are not using it for trading, staking or yield farming on these platforms, then you are missing on potential passive income from these assets.
+So if you HODL crypto assets in Exchanges like Binance, Kucoin, Gate.io or Ascendex and you are not using it for trading, staking or yield farming on these platforms, then you are missing on potential passive income from these assets.
 
 That is when Liquidity Mining comes in place:
 
@@ -34,6 +36,9 @@ That is when Liquidity Mining comes in place:
 * You need a trading bot
 
 For this, Hummingbot have already create a ready to use trading bot for the special proposes of liquidity mining, pure market making, arbitrage, etc.
+
+<!-- more -->
+
 
 Alternatively, you can still run liquidity mining using any other trading bot.
 
@@ -87,39 +92,37 @@ Run Liquidity mining bot, as many pairs as possible, same invested amount in USD
 * Fees paid
 * PnL generated from filled orders �(+/-)
 
-#### ***Day 2**
+#### **Day 2**
 
-* Run �exactly the same method but now at spread 0.75% and compute ALL same data again
+* Run exactly the same method but now at spread 0.75% and compute ALL same data again
 
 #### **Day 3**
 
-* Run �exactly the same method but now at spread 1% and compute ALL same data again
+* Run exactly the same method but now at spread 1% and compute ALL same data again
 
-****Stage 2 - Working out the invested amount****
+**Stage 2 - Working out the invested amount**
 
-#### ******Day 4******
+#### **Day 4**
 
 Run exactly the same method but now double the invested amount to $200, at a spread 0.5% and. Compute ALL the same data again.
 
-#### ******Day 5******
+#### **Day 5**
 
 Run exactly the same method but now double the invested amount to $200, at a spread 0.75% and. compute ALL the same data again.
 
-#### ******Day 6******
+#### **Day 6**
 
 Run exactly the same method but now double the invested amount to $200, at spread 1% and compute ALL the same data again.
 
-#### ******Day 7******
+#### **Day 7**
 
 Sit back and enjoy your glory.
 
-
-
 ---
 
-### ******DATA ANALYTICS******
+### **DATA ANALYTICS**
 
-#### ******Compare performance******
+#### **Compare performance**
 
 In theory, tighter spreads will lead to bigger rewards, but more filled orders and trading fees, which affect your final PnL and ROI
 
@@ -131,17 +134,17 @@ So create a spreadsheet with the data for each day and then reorder it by ROI.
 
 The method that achieves the highest ROI should be your final selection to move to the last step which is to scale up the process to bigger investment amounts.
 
-****Note 1:**** The reason to test different invested amounts is pretty obvious. There is a �Spread Density Function" described in the liquidity mining whitepaper [https://hummingbot.io/en/liquidity-mining-whitepaper/](https://hummingbot.io/en/liquidity-mining-whitepaper/?ref=blog.hummingbot.org) that exponentially favor miners with tighter spread
+**Note 1:** The reason to test different invested amounts is pretty obvious. There is a �Spread Density Function" described in the liquidity mining whitepaper [https://hummingbot.io/en/liquidity-mining-whitepaper/](https://hummingbot.io/en/liquidity-mining-whitepaper/?ref=blog.hummingbot.org) that exponentially favor miners with tighter spread
 
-****Note 2:**** The reason to test different spreads is not so obvious. But encoded in the reward allocation mechanism, the invested amount from the miner affects the rewards calculation as it is considered proportional to the total liquidity amount provided by ALL other miners [https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards](https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards?ref=blog.hummingbot.org)
+**Note 2:** The reason to test different spreads is not so obvious. But encoded in the reward allocation mechanism, the invested amount from the miner affects the rewards calculation as it is considered proportional to the total liquidity amount provided by ALL other miners [https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards](https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards?ref=blog.hummingbot.org)
 
 Miner reward allocation % = miner order weight / Total snapshot order weight
 
-#### ******Optimization process******
+#### **Optimization process**
 
 Select better spreads per coin based on ROI and or PnL
 
-#### ******Scale Up******
+#### **Scale Up**
 
 Then, scale up investment
 
@@ -149,11 +152,11 @@ Then, scale up investment
 
 ---
 
-### ******TRADING STRATEGIES******
+### **TRADING STRATEGIES**
 
 Here are some popular trading strategies:
 
-****1- D-CALM (Dollar Cost Averaging Liquidity Mining):**** Only send orders for BUY (bid side) at a spread of 0.5%. If the order is filled, wait 1 hour and check the current price. If the price is above the last filled price then send a SELL (ask side) to lock into profits and restart the liquidity mining bot.
+**1- D-CALM (Dollar Cost Averaging Liquidity Mining):** Only send orders for BUY (bid side) at a spread of 0.5%. If the order is filled, wait 1 hour and check the current price. If the price is above the last filled price then send a SELL (ask side) to lock into profits and restart the liquidity mining bot.
 
 If after 1 hour the price goes down more than 1% then reduce the spread to 0% to force the limit order to be taken again and so start the DCA process.
 
@@ -163,15 +166,15 @@ While you take care of filled orders, your Hummingbot bot keeps generating liqui
 
 Note 1: working on Python code for this one :)
 
-****2- Pure Market Making Bot****
+**2- Pure Market Making Bot**
 
-****3- Liquidity Mining****
+**3- Liquidity Mining**
 
-****4- Hedge Mode****
+**4- Hedge Mode**
 
 Note 2: Strategies 2, 3 and 4 currently available in Hummingbot
 
-****BONUS - Crypto Loans:****
+**BONUS - Crypto Loans:**
 
 If you are a HODLER of BTC, ETH, BNB or any of the major cryptos, do not sell it to run liquidity mining�. Instead get a Crypto Loan, like those available in Binance for 0.04% per day (no referral incentives from my side) so if you can get even better rates in any other platform then do it.
 

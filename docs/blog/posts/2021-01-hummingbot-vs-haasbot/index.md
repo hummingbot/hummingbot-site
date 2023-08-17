@@ -1,11 +1,7 @@
 ---
 date: Jan 31, 2021
 authors:
-  - by Thomas Yit
-
-In the previous comparison blog, we compared Cryptohopper and Hummingbot, and this time, we will continue to compare Haasbot and Hummingbot.
-
-The goal of this article is to test out both bots and help you make better decisions on which software to use for liquidity mining (Remember,
+  - Thomas Yit
 categories:
   - Trader Tips
 ---
