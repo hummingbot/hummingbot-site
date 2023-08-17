@@ -19,8 +19,8 @@ Currently, Bitmart is a **Bronze** exchange, as voted by HBOT holders in each qu
 - **Website**: <https://www.bitmart.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bitmart/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bitmart>
-- **API Docs**: https://www.bitmart.com/api-docs
-- **Fees**: https://www.bitmart.com/fee/en
+- **API Docs**: <https://www.bitmart.com/api-docs>
+- **Fees**: <https://www.bitmart.com/fee/en>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
@@ -70,7 +70,7 @@ You are now connected to bitmart
 
 - **ID**: `bitmart`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitmart
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitmart>
 
 ### Order Types
 

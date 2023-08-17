@@ -62,7 +62,7 @@ Enter your dydx_perpetual passphrase >>>
 
 - **ID**: `dydx_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual>
 
 ### Order Types
 
@@ -80,6 +80,6 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-This exchange offers a staging (testnet) mode: https://trade.stage.dydx.exchange/portfolio/overview. 
+This exchange offers a staging (testnet) mode: <https://trade.stage.dydx.exchange/portfolio/overview>
 
 While users can trade on testnet using the link above, it is not currently supported in Hummingbot.

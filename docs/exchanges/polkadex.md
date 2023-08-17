@@ -19,7 +19,7 @@ Currently, Polkadex is a **Bronze** exchange, as voted by HBOT holders in each q
 - **Website**: <https://www.polkadex.trade>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/polkadex/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/polkadex>
-- **API Docs**: https://wiki.polkadot.network/docs/build-index
+- **API Docs**: <https://wiki.polkadot.network/docs/build-index>
 - **Fees**: To be determined
 - **Supported Countries**: Global 
 
@@ -48,7 +48,7 @@ You are now connected to polkadex.
 
 - **ID**: `polkadex`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/polkadex
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/polkadex>
 
 ### Order Types
 
@@ -59,6 +59,6 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-This exchange offers a staging (testnet) mode: https://testnet.polkadex.trade/
+This exchange offers a staging (testnet) mode: <https://testnet.polkadex.trade/>
 
 While users can trade on testnet using the link above, it is not currently supported in Hummingbot.

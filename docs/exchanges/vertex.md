@@ -16,9 +16,9 @@ Currently, Vertex is a **Bronze** exchange, as voted by HBOT holders in each qua
 ## ℹ️ Exchange Info
 
 - **Website**: <https://vertexprotocol.finance>
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/vertex-protocol/
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/vertex-protocol/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/vertexprotocol>
-- **API Docs**: https://vertex-protocol.gitbook.io/docs/getting-started/overview
+- **API Docs**: <https://vertex-protocol.gitbook.io/docs/getting-started/overview>
 - **Fees**: <https://docs.vertexprotocol.finance/products/vertexprotocol-exchange/vertexprotocol-pools>
 
 ## 🔑 How to Connect
@@ -46,9 +46,9 @@ You are now connected to vertex.
 
 - **ID**: `vertex`
 - **Connection Type**: REST
-- **API Docs**: https://docs.vertexprotocol-test.com/api
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/vertex
-- **Default Configs**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/vertex/vertex_constants.py
+- **API Docs**: <https://docs.vertexprotocol-test.com/api>
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/vertex>
+- **Default Configs**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/vertex/vertex_constants.py>
 
 ### Order Types
 

@@ -19,7 +19,7 @@ Currently, NDAX is a **Bronze** exchange, as voted by HBOT holders in each quart
 - **Website**: <https://www.ndax.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ndax/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/ndax>
-- **API Docs**: https://apidoc.ndax.io/
+- **API Docs**: <https://apidoc.ndax.io/>
 - **Fees**: <https://ndax.io/fees>
 - **Supported Countries**: Not available
 
@@ -55,7 +55,7 @@ You are now connected to ndax.
 
 - **ID**: `ndax`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ndax>
 
 ### Order Types
 

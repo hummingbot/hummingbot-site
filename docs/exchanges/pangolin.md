@@ -18,7 +18,7 @@ Currently, Pangolin is a **Bronze** exchange, as voted by HBOT holders in each q
 - **Website**: <https://app.pangolin.exchange>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/pangolin/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/pangolin>
-- **Fees**: https://docs.pangolin.xyz/product-guides/limit-order#is-there-any-transaction-fee
+- **Fees**: <https://docs.pangolin.xyz/product-guides/limit-order#is-there-any-transaction-fee>
 
 ## 🔑 How to Connect
 
@@ -49,8 +49,8 @@ The pangolin connector now uses wallet [pubKey] on avalanche-avalanche
 - **ID**: `pangolin`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://github.com/pangolindex/pangolin-api>
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/pangolin
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/pangolin.yml
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/pangolin>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/pangolin.yml>
 
 ### Endpoints
 
@@ -65,7 +65,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `pangolin_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

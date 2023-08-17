@@ -53,7 +53,7 @@ You are now connected to bitfinex
 
 - **ID**: `bitfinex`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitfinex
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitfinex>
 
 ### Order Types
 

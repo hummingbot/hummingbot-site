@@ -18,9 +18,9 @@ Currently, Bit Perpetual is a **Bronze** exchange, as voted by HBOT holders in e
 
 - **Website**: <https://www.bit.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bit-com/>
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/bit_futures
-- **API Docs**: https://www.bit.com/docs/en-us/linear_futures.html
-- **Fees**: https://helpcenter.bit.com/hc/en-us/articles/10740865746969-1-How-much-is-Spot-Trading-Fees-
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/bit_futures>
+- **API Docs**: <https://www.bit.com/docs/en-us/linear_futures.html>
+- **Fees**: <https://helpcenter.bit.com/hc/en-us/articles/10740865746969-1-How-much-is-Spot-Trading-Fees->
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
@@ -47,7 +47,7 @@ You are now connected to bit_com_perpetual
 
 - **ID**: `bit_com_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bit_com_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bit_com_perpetual>
 
 ### Order Types
 

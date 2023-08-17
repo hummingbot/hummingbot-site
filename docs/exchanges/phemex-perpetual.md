@@ -66,7 +66,7 @@ You are now connected to phemex_perpetual.
 
 - **ID**: `phemex_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/phemex_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/phemex_perpetual>
 
 ### Order Types
 
@@ -85,6 +85,6 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-This exchange offers a staging (testnet) mode: https://testnet.phemex.com/. 
+This exchange offers a staging (testnet) mode: <https://testnet.phemex.com/>
 
 While users can trade on testnet using the link above, it is not currently supported in Hummingbot.

@@ -15,7 +15,7 @@ Currently, Perpetual Protocol is a **Bronze** exchange, as voted by HBOT holders
 
 ## ℹ️ Exchange Info
 
-- **Website**: https://perp.com/
+- **Website**: <https://perp.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/perpetual-protocol/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/perpetual_protocol>
 - **API Docs**: <https://perp.com/developers>
@@ -48,9 +48,9 @@ The perp connector now uses wallet [pubKey] on ethereum-optimism
 
 - **ID**: `perpetualprotocol`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: https://docs.perpetualprotocol-test.com/api
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/perp
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/perp.yml
+- **API Docs**: <https://docs.perpetualprotocol-test.com/api>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/perp>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/perp.yml>
 
 ### Endpoints
 
@@ -69,7 +69,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `perpetualprotocol_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 
