@@ -14,6 +14,8 @@ by Michael Feng
 
 At Hummingbot, our mission is to make algorithmic trading accessible to anyone in the world. That’s why we built an open source framework that allows anyone to run trading bots on any exchange. This prevents both individual traders and funds from having to build and maintain low-level exchanges integrations from scratch, so that they can focus on more enjoyable aspects of algo trading: building good trading strategies and profiting from them!
 
+<!-- more -->
+
 From the beginning, we’ve always thought of Hummingbot as a shared public framework to which everyone can contribute by creating connectors for the exchanges where they want to trade. Since there are thousands of exchanges with different architectures and products (and even more added every day), a community-led model is the only way that Hummingbot can truly scale and serve the long tail.
 
 Today, Hummingbot supports [11 official exchanges](https://hummingbot.org/exchanges/), but we are also aware of a number of community-built forks for exchanges such as [Loopring](https://loopring.org/?ref=blog.hummingbot.org#/), [Bitpanda](https://www.bitpanda.com/en?ref=blog.hummingbot.org&utm_referrer=https://blog.hummingbot.org/2020-08-exchange-connector-governance/), and [Beaxy](https://www.beaxy.com/?ref=blog.hummingbot.org). We’re incredibly grateful for these contributions.
