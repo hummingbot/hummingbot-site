@@ -12,10 +12,11 @@ Today, Hummingbot is a bazaar-style open source project with many contributors a
 * [Garry Tan - Hummingbot video intro](https://www.youtube.com/watch?v=S2sSf2EBeOM)
 * [The Defiant - Team Behind Hummingbot Gives Away Its Code Via Foundation](https://thedefiant.io/coin-alpha-hummingbot-foundation/)
 * [Crunchbase News - Cryptocurrency Trading Bot Platform Hummingbot Buzzes With $8M Series A](https://news.crunchbase.com/fintech-ecommerce/cryptocurrency-trading-bot-platform-hummingbot-buzzes-with-8m-series-a/)
-* [The Hummingbot origin story](https://hummingbot.io/blog/2019-03-from-hedge-fund-to-market-making-bot)
-* [Introducing liquidity mining](https://hummingbot.io/blog/2019-11-liquidity-mining)
-* [Demystifying liquidity mining rewards](https://hummingbot.io/blog/2019-12-liquidity-mining-rewards)
-* [Comparing liquidity mining options in DeFi vs. Hummingbot](https://hummingbot.io/blog/2020-08-liquidity-mining-hummingbot-vs-defi)
+* [The Hummingbot origin story](/blog/2019/03/08/the-hummingbot-origin-story-why-build-an-open-source-market-making-bot/)
+* [Announcing Hummingbot](/blog/2019/04/04/hummingbot-is-live/)
+* [Introducing liquidity mining](/blog/2019/11/01/introducing-liquidity-mining-a-marketplace-based-approach-to-market-making/)
+* [Demystifying liquidity mining rewards](/blog/2019/12/03/demystifying-liquidity-mining-rewards/)
+* [Comparing liquidity mining options in DeFi vs. Hummingbot](/blog/2020/08/03/comparing-liquidity-mining-options-in-defi-vs-hummingbot/)
 * [Introducing the Hummingbot Foundation](https://blog.hummingbot.org/hummingbot-foundation/)
 * [Introducing the Hummingbot Governance Token: HBOT](https://blog.hummingbot.org/introducing-hbot/)
 
@@ -23,13 +24,13 @@ Today, Hummingbot is a bazaar-style open source project with many contributors a
 
 See the following blog posts from CoinAlpha CTO Martin Kou for more information about Hummingbot and Hummingbot Gateway's history, background, and intended developer experience:
 
-* [Hummingbot Architecture - Part 1](https://blog.hummingbot.org/2021-03-hummingbot-architecture/)
-* [Hummingbot Architecture - Part 2](https://blog.hummingbot.org/2021-05-hummingbot-architecture-part2/)
+* [Hummingbot Architecture - Part 1](/blog/2021/03/05/hummingbot-architecture-part-1/)
+* [Hummingbot Architecture - Part 2](/blog/2021/05/03/hummingbot-architecture-part-2/)
 * [Hummingbot Gateway Architecture - Part 1](https://blog.hummingbot.org/gateway-v2-code-architecture/)
 * [Hummingbot Gateway Architecture - Part 2](https://blog.hummingbot.org/gateway-architecture-part-2/)
 
 ## Whitepapers
 
-* [Hummingbot: Decentralized Market Making](https://hummingbot.io/hummingbot.pdf)
-* [Liquidity Mining: A marketplace-based approach to market maker compensation](https://hummingbot.io/liquidity-mining.pdf)
-* [Hummingbot Foundation Governance](/governance/whitepaper/)
+* [Hummingbot: Decentralized Market Making](/hummingbot.pdf)
+* [Liquidity Mining: A marketplace-based approach to market maker compensation](/liquidity-mining.pdf)
+* [Hummingbot Foundation Governance](/governance/)
