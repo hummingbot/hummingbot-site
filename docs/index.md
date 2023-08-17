@@ -100,11 +100,11 @@ hide:
 
 </div>
 
-## Learn how to design and code strategies like these in [Botcamp](/community/botcamp), the official training and membership program for the Hummingbot community.
+## Learn how to design and code strategies like these in [Botcamp](/botcamp), the official training and membership program for the Hummingbot community.
 
 <br />
 
-[Join Botcamp](/community/botcamp){ .md-button .md-button--primary }
+[Join Botcamp](/botcamp){ .md-button .md-button--primary }
 
 ---
 
