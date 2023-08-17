@@ -11,14 +11,13 @@ carlo:
 mike:
   name: Michael Feng
   description: COO, Hummingbot Foundation
-  avatar: /assets/authors/carlo-las-marias.jpg
+  avatar: /assets/authors/michael-feng.jpg
 
 martin:
-  name: Carlo Las Marias
+  name: Martin Kou
   description: CTO, CoinAlpha
-  avatar: /assets/authors/carlo-las-marias.jpg
-
+  avatar: /assets/authors/martin-kou.jpg
 fede:
-  name: Carlo Las Marias
+  name: Fede Cardoso
   description: CTO, Hummingbot Foundation
-  avatar: /assets/authors/carlo-las-marias.jpg
+  avatar: /assets/authors/fede-cardoso.jpg
