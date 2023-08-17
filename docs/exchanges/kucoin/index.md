@@ -94,7 +94,7 @@ You are now connected to kucoin
 
 - **ID**: `kucoin`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kucoin)** 
 
 ### Order Types
 
@@ -115,7 +115,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 - **ID**: `kucoin_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/kucoin_perpetual
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/kucoin_perpetual)** 
 
 ### Order Types
 
@@ -143,7 +143,7 @@ Afer you create an account and create the API keys, you can enter them by using 
 
 - **ID**: `kucoin`
 - **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_spot_candles
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_spot_candles)** 
 
 ### Usage
 
@@ -162,7 +162,7 @@ See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/sc
 
 - **ID**: `kucoin_perpetual`
 - **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles)** 
 
 ### Usage
 

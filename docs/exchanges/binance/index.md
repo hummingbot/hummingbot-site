@@ -88,7 +88,7 @@ You are now connected to binance
 - **ID**: `binance`
 - **Connection Type**: WebSocket
 - **API Docs**: <https://binance-docs.github.io/apidocs/spot/en/>
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)** 
 
 ### Order Types
 
@@ -109,7 +109,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 - **ID**: `binance_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/binance_perpetual)** 
 
 ### Usage
 
@@ -155,7 +155,7 @@ Afer you create an account and create the API keys, you can enter them by using 
 - **ID**: `binance`
 - **Supported Intervals**: 1s | 1m | 3m | 5m | 15m | 30m | 1h | 2h | 4h | 6h | 8h | 12h | 1d | 3d | 1w | 1M
 - **API Docs**: <https://binance-docs.github.io/apidocs/futures/en/>
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_spot_candles
+- **[Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_spot_candles)** 
 
 ### Usage
 
@@ -174,7 +174,7 @@ See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/sc
 
 - **ID**: `binance_perpetual`
 - **Supported Intervals**: 1s | 1m | 3m | 5m | 15m | 30m | 1h | 2h | 4h | 6h | 8h | 12h | 1d | 3d | 1w | 1M
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_perpetual_candles
+- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/binance_perpetual_candles)** 
 
 ### Usage
 

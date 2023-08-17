@@ -9,7 +9,7 @@ Welcome to the new **Hummingbot Quickstart Guide**! This will teach you how to b
 Whether you're a beginner or an experienced trader, this guide should help you get started with creating your own custom trading strategies using Hummingbot. So, let's dive in and start building!
 
 !!! note
-    Introduced in version [1.4.0](/release-notes/1.4.0), **Scripts** enable users to build customized strategies and access the full power of Hummingbot exchange connectors without creating a full-blown strategy. Scripts are light Python files that can be run and modified without re-compilation, which let users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. See [Examples](/scripts/examples) for a list of the current sample scripts in the Hummingbot codebase.
+    Introduced in version [1.4.0](../release-notes/1.4.0), **Scripts** enable users to build customized strategies and access the full power of Hummingbot exchange connectors without creating a full-blown strategy. Scripts are light Python files that can be run and modified without re-compilation, which let users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface. See [Examples](/scripts/examples) for a list of the current sample scripts in the Hummingbot codebase.
 
 ## Getting Started
 
