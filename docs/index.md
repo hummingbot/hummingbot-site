@@ -19,7 +19,7 @@ hide:
 
     [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __Connect directly to any exchange__
+-   :material-upload-network:{ .lg .middle } __Connect directly to any exchange__
 
     ---
 
@@ -51,7 +51,7 @@ hide:
 
     :material-star-face: Coming soon!
 
--   :material-scale-balance:{ .lg .middle } __Fork and extend our codebase__
+-   :material-directions-fork:{ .lg .middle } __Fork and extend our codebase__
 
     ---
 
@@ -66,23 +66,25 @@ hide:
 
 # Who uses Hummingbot?
 
-## Individual Traders
+<div class="grid cards wide" markdown>
 
-#### "I run Hummingbot to earn side income on the Hummingbot Miner platform. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+-   :material-account-hard-hat:{ .lg .middle } __Liquidity Miners__
 
-##### Name, Location
+    Individual traders run market making strategies to earn rewards on [Hummingbot Miner](https://miner.hummingbot.io) and other liquidity mining platforms.
 
-## Market Making Firms
+-   :material-sword-cross:{ .lg .middle } __DEX Arbitrageurs__
 
-#### "Hummingbot is an essential component of our trading system. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Arbitrage opportunities between long-tail AMM DEXs and CEXs remain plentiful, which Hummingbot's [AMM Arbitrage strategy](/strategies/amm-arbitrage/) helps users capture.
 
-##### Name, Company
+-   :octicons-arrow-switch-24:{ .lg .middle } __Market Making Firms__
 
-## Token Projects
+    For market makers who want to serve multiple clients across many CEXs and DEXs, the open source Hummingbot platform provides an ideal starting point. Many of the top crypto market making firms, such as [CoinAlpha](https://coinalpha.com), [System9](https://system9.io/) and [3Jane Capital](https://3jane.com/), run Hummingbot.
 
-#### "We use a customized version of Hummingbot Dashboard to monitor Dictum non consectetur a erat nam at lectus. Nec ullamcorper sit amet risus. Id aliquet risus feugiat in ante metus. Odio morbi quis commodo odio aenean sed adipiscing diam.
+-   :material-ethereum:{ .lg .middle } __Token Projects__
 
-##### Name, Project 
+    The free and open source Hummingbot software has allowed many token projects own their liquidity and skip hiring market makers. [Dashboard](https://github.com/hummingbot/dashboard) extends these capabilities and lets you deploy an end-to-end liquidity management solution.
+
+</div>
 
 ---
 
