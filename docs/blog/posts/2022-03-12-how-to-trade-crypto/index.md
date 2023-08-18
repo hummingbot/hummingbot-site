@@ -1,5 +1,5 @@
 ---
-date: Mar 11, 2022
+date: 2022-03-12
 authors:
   - Apostolos Tsalkitzis
 categories:

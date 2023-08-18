@@ -1,5 +1,5 @@
 ---
-date: Mar 26, 2022
+date: 2022-03-26
 authors:
   - Dalskie
 categories:

@@ -1,5 +1,5 @@
 ---
-date: Mar 3, 2022
+date: 2022-03-04
 authors:
   - Kyle Mizui
 categories:

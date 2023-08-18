@@ -1,5 +1,5 @@
 ---
-date: Mar 1, 2022
+date: 2022-03-02
 authors:
   - Owen Hobbs
 categories:
