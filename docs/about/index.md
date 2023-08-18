@@ -10,11 +10,7 @@ Currently, Hummingbot is evolving from a simple market making bot into a powerfu
 
 ## Sponsorships
 
-<div class="grid cards" markdown>
-- <iframe src="https://github.com/sponsors/hummingbot/card" title="Sponsor hummingbot" height="225" width="600" style="border: 0;"></iframe>
-</div>
-
-We believe there's a singular opportunity to scale Hummingbot into an **open source operating system for crypto algo traders**, an indispensable, community-maintained, and free tool that levels the playing field against the biggest players!
+We believe Hummingbot can become a true **open source operating system for crypto algo traders**, an indispensable, community-maintained, and free tool that levels the playing field against the biggest players!
 
 Sponsorships support the Hummingbot Foundation core team, keeping these new tools free and open source and allowing us to adhere to the core principles that underpin Hummingbot’s development:
 
@@ -23,7 +19,9 @@ Sponsorships support the Hummingbot Foundation core team, keeping these new tool
 * **Extensible**: Users can use Hummingbot to create any trading strategy on any exchange and blockchain
 * **All Levels**: Hummingbot is designed for use by individuals and professionals alike
 
-Consider helping us **democratize high-frequency trading** by [sponsoring Hummingbot Foundation](https://github.com/sponsors/hummingbot)!
+Consider helping us **democratize high-frequency trading** by [sponsoring Hummingbot Foundation on Github](https://github.com/sponsors/hummingbot)!
+
+[:simple-github: Sponsor Hummingbot](https://github.com/sponsors/hummingbot){ .md-button .md-button--primary }
 
 
 ## Staff

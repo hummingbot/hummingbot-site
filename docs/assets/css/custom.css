@@ -240,3 +240,14 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
       grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.md-main .md-button--primary {
+  color: var(--md-primary-fg-color);
+  background-color: var(--hb-hero-color);
+  border-color: transparent;
+}
+
+.md-typeset hr {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
