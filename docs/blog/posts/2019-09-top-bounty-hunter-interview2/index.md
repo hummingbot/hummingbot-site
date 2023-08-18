@@ -1,6 +1,6 @@
 ---
 title: "Top liquidity bounty hunter interview featuring Dominator008"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2019-09-03"
 image: "./cover.png"

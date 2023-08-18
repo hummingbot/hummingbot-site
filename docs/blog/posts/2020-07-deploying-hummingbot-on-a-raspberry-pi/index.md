@@ -1,6 +1,6 @@
 ---
 title: "Deploying Hummingbot on a Raspberry Pi"
-author: "Ethan Moraleda, Carlo P. Las Marias"
+author: "Carlo P. Las Marias"
 description: "A better way to run Hummingbot?"
 date: "2020-07-23"
 image: "./cover.png"

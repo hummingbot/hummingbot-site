@@ -1,6 +1,6 @@
 ---
 title: "New arbitrage opportunity: Wrapped CELO"
-author: "Paulo Henrique B. Rebouças"
+author: "coinalpha"
 description: "A guide on how to arbitrage the new Wrapped Celo tokens on Uniswap"
 date: "2020-12-22"
 image: "./Cover.png"

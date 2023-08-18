@@ -1,6 +1,6 @@
 ---
 title: "Open-DeFi Hackathon | Join the hunt for Hummingbot bounties"
-author: "Paulo Henrique B. Rebouças"
+author: "coinalpha"
 description: ""
 date: "2021-04-21"
 image: "./cover.png"

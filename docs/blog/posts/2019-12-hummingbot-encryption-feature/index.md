@@ -1,6 +1,6 @@
 ---
 title: "Introducing Hummingbot's new key encryption feature"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: "Hummingbot is now more more secure than ever!"
 date: "2019-12-19"
 image: "./cover.png"

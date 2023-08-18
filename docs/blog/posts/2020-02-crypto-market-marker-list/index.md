@@ -1,6 +1,6 @@
 ---
 title: "Mapping the crypto market maker landscape: list of 34 market makers"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-02-10"
 image: "./market-makers.jpg"

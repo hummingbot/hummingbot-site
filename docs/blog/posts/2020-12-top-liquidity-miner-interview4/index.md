@@ -1,6 +1,6 @@
 ---
 title: "Top liquidity miner interview featuring MrBig1964"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-12-18"
 image: "./Cover.png"

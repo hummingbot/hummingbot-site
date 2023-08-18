@@ -1,6 +1,6 @@
 ---
 title: "Top trader interview with Harry Yeh of Binary Fintech Group"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-07-01"
 image: "./cover.png"

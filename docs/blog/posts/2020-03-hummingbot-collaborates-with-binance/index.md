@@ -1,6 +1,6 @@
 ---
 title: "Hummingbot announces two major strategic initiatives with Binance"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-03-24"
 image: "./cover.png"

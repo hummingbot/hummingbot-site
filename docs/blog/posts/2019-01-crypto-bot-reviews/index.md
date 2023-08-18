@@ -2,7 +2,7 @@
 type: "blog"
 title: "Crypto trading bots in 2019: How easy are they to use?"
 description: ""
-author: "Yingdan Liang"
+author: "coinalpha"
 date: "2019-01-10"
 image: "./cover.jpg"
 tags: ["bot reviews"]

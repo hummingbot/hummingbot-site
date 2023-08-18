@@ -1,6 +1,6 @@
 ---
 title: "Vote for the next governance proposal: Altmarkets.io, IDEX & Binance Cloud"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2021-01-22"
 image: "./cover.png"

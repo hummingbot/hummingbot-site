@@ -1,6 +1,6 @@
 ---
 title: "How to arbitrage AMMs like Uniswap and Balancer"
-author: "Paulo Henrique B. Rebouças"
+author: "coinalpha"
 description: "Deep dive into the new `amm-arb`strategy"
 date: "2020-12-15"
 image: "./amm-arb.jpg"

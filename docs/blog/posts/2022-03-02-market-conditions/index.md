@@ -1,7 +1,7 @@
 ---
 date: 2022-03-02
 authors:
-  - Owen Hobbs
+  - foundation
 categories:
   - Trader Tips
 ---

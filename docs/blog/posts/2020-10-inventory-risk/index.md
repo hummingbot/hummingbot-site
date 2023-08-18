@@ -1,6 +1,6 @@
 ---
 title: "What is inventory risk?"
-author: "Paulo Henrique"
+author: "coinalpha"
 description: "Learn more about inventory risk, the main risk of market making, and the Hummingbot features designed to mitigate it."
 date: "2020-10-14"
 image: "./cover.jpg"

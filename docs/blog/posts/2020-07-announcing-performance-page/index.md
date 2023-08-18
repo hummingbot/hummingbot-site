@@ -1,6 +1,6 @@
 ---
 title: "New feature announcement: performance dashboard"
-author: "Yvonne Zhang"
+author: "coinalpha"
 description: ""
 date: "2020-07-08"
 image: "./cover.jpg"

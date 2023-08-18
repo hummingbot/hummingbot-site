@@ -1,6 +1,6 @@
 ---
 title: "Hummingbot vs Haasbot"
-author: "Thomas Yit"
+author: "coinalpha"
 description: "Basic market making comparison between Hummingbot and Haasbot"
 date: "2021-01-31"
 image: "./hassbot-vs-hummingbot.png"

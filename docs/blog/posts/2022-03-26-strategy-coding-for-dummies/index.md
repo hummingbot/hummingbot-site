@@ -1,7 +1,7 @@
 ---
 date: 2022-03-26
 authors:
-  - Ben Smeaton
+  - foundation
 categories:
   - Trader Tips
 ---

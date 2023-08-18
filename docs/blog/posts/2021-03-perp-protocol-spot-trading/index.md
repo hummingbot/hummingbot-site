@@ -1,6 +1,6 @@
 ---
 title: "Introducing the new Perpetual Protocol connector and the perpetual-to-spot arb strategy"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2021-03-04"
 image: "./cover-photo.png"

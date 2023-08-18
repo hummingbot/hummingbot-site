@@ -2,7 +2,7 @@
 type: "blog"
 title: "How to measure performance in crypto trading"
 description: ""
-author: "Anish Neervannan"
+author: "coinalpha"
 date: "2019-07-02"
 image: "./cover.jpg"
 level: "Beginner"

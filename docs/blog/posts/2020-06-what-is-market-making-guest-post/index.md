@@ -1,6 +1,6 @@
 ---
 title: "Guest post: my take on market making and inventory risk"
-author: "phgnomo"
+author: "coinalpha"
 description: ""
 date: "2020-06-18"
 image: "./cover.png"

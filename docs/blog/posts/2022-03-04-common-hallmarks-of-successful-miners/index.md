@@ -1,7 +1,7 @@
 ---
 date: 2022-03-04
 authors:
-  - Kyle Mizui
+  - foundation
 categories:
   - Trader Tips
 ---

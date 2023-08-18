@@ -1,6 +1,6 @@
 ---
 title: "Launching new Binance.US and Binance futures connectors"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-11-02"
 image: "./binance-us-and-binance-perpetual.jpg"

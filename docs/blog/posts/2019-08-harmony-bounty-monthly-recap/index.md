@@ -1,6 +1,6 @@
 ---
 title: "$ONE Makers July recap & August reward schedule"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: "Community-based market making programs"
 date: "2019-08-01"
 image: "./cover.png"

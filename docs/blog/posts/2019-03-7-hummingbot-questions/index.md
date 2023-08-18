@@ -2,7 +2,7 @@
 type: "blog"
 title: "Deep dive: we answer 7 common questions about Hummingbot"
 description: ""
-author: "Yingdan Liang"
+author: "coinalpha"
 date: "2019-03-22"
 image: "./cover.jpg"
 tags: ["hummingbot"]

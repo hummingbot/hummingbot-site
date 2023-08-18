@@ -1,6 +1,6 @@
 ---
 title: "Extracting the best value from your Hummingbot - Price Source Configurations"
-author: "Paulo Henrique"
+author: "coinalpha"
 description: ""
 date: "2020-11-25"
 image: "./pricesource.jpg"

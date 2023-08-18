@@ -1,7 +1,7 @@
 ---
 date: 2022-03-29
 authors:
-  - Diego C
+  - foundation
 categories:
   - Trader Tips
 ---

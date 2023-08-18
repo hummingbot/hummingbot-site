@@ -1,6 +1,6 @@
 ---
 title: "Top liquidity miner interview featuring Lorenzo Boyice"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-05-07"
 image: "./cover.png"

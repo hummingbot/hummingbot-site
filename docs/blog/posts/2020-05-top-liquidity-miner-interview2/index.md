@@ -1,6 +1,6 @@
 ---
 title: "Top liquidity miner interview featuring Neohowie"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-05-27"
 image: "./cover.png"

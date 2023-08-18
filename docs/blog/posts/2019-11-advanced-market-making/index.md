@@ -1,6 +1,6 @@
 ---
 title: "How to use advanced market making features"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: "Paper trading, inventory skew, and penny jumping - oh my!"
 date: "2019-11-27"
 image: "./cover.jpeg"

@@ -1,6 +1,6 @@
 ---
 title: "Avellaneda strategy: A technical deep dive"
-author: "Nicolas Baum"
+author: "coinalpha"
 description: ""
 date: "2021-04-22"
 image: "./cover.png"

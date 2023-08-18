@@ -1,6 +1,6 @@
 ---
 title: "NEM Liquidity Mining Case Study"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: "With liquidity mining, NEM is able to introduce the project to a broader trader community and motivate individual traders to promote its token liquidity. So far, 142 distinct individuals have participated and earned rewards as of December 15th, 2020. They accounted for as much as 11% of total XEM trading volume on Binance."
 date: "2020-12-17"
 image: "./case-study.png"

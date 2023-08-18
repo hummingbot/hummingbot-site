@@ -1,6 +1,6 @@
 ---
 title: "Liquidity mining launch update"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: "Liquidity mining goes live in mid-January 2020!"
 date: "2019-12-02"
 image: "./cover.png"

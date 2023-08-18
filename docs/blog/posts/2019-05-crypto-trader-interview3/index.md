@@ -2,7 +2,7 @@
 type: "blog"
 title: "How I started crypto trading | Interview #3"
 description: ""
-author: "Yingdan Liang"
+author: "coinalpha"
 date: "2019-05-02"
 image: "./cover.png"
 tags: ["trader interviews", "market making", "risk management"]

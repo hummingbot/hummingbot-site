@@ -1,6 +1,6 @@
 ---
 title: "Introducing the Eagle Club"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-04-06"
 image: "./cover.png"

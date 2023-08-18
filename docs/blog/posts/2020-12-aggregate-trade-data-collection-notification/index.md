@@ -1,6 +1,6 @@
 ---
 title: "Aggregate trade data collection notification"
-author: "Jason Tomlinson"
+author: "coinalpha"
 description: ""
 date: "2020-12-14"
 image: "./aggregate-data.png"

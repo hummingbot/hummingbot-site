@@ -1,6 +1,6 @@
 ---
 title: "Hummingbot's Year in Review 2020"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: "What have we achieved during this unforgettable year?"
 date: "2020-12-31"
 image: "./Cover.png"

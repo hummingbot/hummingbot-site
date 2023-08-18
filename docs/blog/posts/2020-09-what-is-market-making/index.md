@@ -1,6 +1,6 @@
 ---
 title: "What is market making?"
-author: "Paulo Henrique"
+author: "coinalpha"
 description: "The importance of market making is to create and maintain a healthy market environment."
 date: "2020-09-03"
 image: "./cover.png"

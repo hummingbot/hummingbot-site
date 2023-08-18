@@ -1,6 +1,6 @@
 ---
 title: "What is cross exchange market making?"
-author: "Paulo Henrique"
+author: "coinalpha"
 description: ""
 date: "2020-09-23"
 image: "./xemm.jpg"

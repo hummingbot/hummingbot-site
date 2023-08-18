@@ -1,6 +1,6 @@
 ---
 title: "Extracting the best value from your Hummingbot - Order Management configurations"
-author: "Paulo Henrique B. Rebouças"
+author: "coinalpha"
 description: "How to manage your orders"
 date: "2021-02-18"
 image: "./Cover.png"

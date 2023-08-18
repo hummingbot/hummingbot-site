@@ -1,7 +1,7 @@
 ---
-date: 2022-03-25
+date: 2022-03-22
 authors:
-  - Mohammed Badran
+  - foundation
 categories:
   - Trader Tips
 ---

@@ -1,6 +1,6 @@
 ---
 title: "New liquidity mining campaign for Mainframe (MFT) going live on June 16, 2020!"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2020-06-08"
 image: "./cover.jpeg"

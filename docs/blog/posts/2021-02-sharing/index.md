@@ -1,6 +1,6 @@
 ---
 title: "Sharing is caring: 3 trading pairs I picked"
-author: "Thomas Yit"
+author: "coinalpha"
 description: ""
 date: "2021-02-14"
 image: "./cover.png"

@@ -1,6 +1,6 @@
 ---
 title: "New order tracking feature"
-author: "Carlo P. Las Marias, Michael Liu"
+author: "Carlo P. Las Marias"
 description: "We are excited to present the new dashboard order tracking feature!"
 date: "2021-01-12"
 image: "./Cover.png"

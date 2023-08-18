@@ -1,6 +1,6 @@
 ---
 title: "Extracting the best value from your Hummingbot - Commands part 2 and Global Configurations"
-author: "Paulo Henrique"
+author: "coinalpha"
 description: ""
 date: "2020-11-12"
 image: "./commands-and-configs-2.jpg"

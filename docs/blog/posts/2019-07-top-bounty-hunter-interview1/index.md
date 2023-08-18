@@ -1,6 +1,6 @@
 ---
 title: "Top liquidity bounty hunter interview featuring David Salter"
-author: "Yingdan Liang"
+author: "coinalpha"
 description: ""
 date: "2019-07-25"
 image: "./cover.png"

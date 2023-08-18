@@ -2,7 +2,7 @@
 type: "blog"
 title: "A non-technical crypto trader's guide to python and algo trading"
 description: ""
-author: "Yingdan Liang"
+author: "coinalpha"
 date: "2019-01-29"
 image: "./cover.jpeg"
 tags: ["trading concepts", "market making", "arbitrage"]
