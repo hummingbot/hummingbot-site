@@ -4,6 +4,7 @@
   top: 100%;
   z-index: 2;
   color: var(--md-default-fg-color--light);
+  font-weight: 700;
   text-transform: uppercase;
   padding: 6px 9px;
   background-color: var(--md-default-bg-color);
@@ -27,10 +28,10 @@
 }
 
 .glide__arrow--left {
-  left: 2em;
+  left: 1em;
 }
 .glide__arrow--right {
-  right: 2em;
+  right: 1em;
 }
 .glide__arrow--disabled {
   opacity: 0.33;
@@ -84,6 +85,6 @@
   list-style-type: none !important;
 }
 
-/* .md-typeset ol:not([hidden]), .md-typeset ul:not([hidden]) {
-  display: flex;
-} */
+.glide__bullet {
+  border-radius: 2px;
+}

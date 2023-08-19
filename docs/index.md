@@ -94,16 +94,24 @@ hide:
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
       <li class="glide__slide">
-        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </li>
       <li class="glide__slide">
-        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </li>
       <li class="glide__slide">
-        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </li>
       <li class="glide__slide">
-        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </li>
     </ul>
   </div>
