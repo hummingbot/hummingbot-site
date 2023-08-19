@@ -90,16 +90,35 @@ hide:
 
 # What strategies can you build with Hummingbot?
 
-<div class="grid cards wide" markdown>
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </li>
+      <li class="glide__slide">
+        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </li>
+      <li class="glide__slide">
+        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </li>
+      <li class="glide__slide">
+        <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </li>
+    </ul>
+  </div>
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+  </div>
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
+  </div>
 </div>
 
 ## Learn how to design and code strategies like these in [Botcamp](/botcamp), the official training and membership program for the Hummingbot community.
