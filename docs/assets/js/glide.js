@@ -3,9 +3,10 @@ const glide = new Glide('.glide', {
   startAt: 0,
   perView: 3,
   peek: {
-    before: -20,
-    after: 20
+    before: -25,
+    after: 25
   },
+  // gap: 10,
   breakpoints: {
     800: {
       perView: 1
