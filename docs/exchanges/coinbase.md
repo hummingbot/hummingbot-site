@@ -17,8 +17,8 @@ Currently, Coinbase is a **Bronze** exchange, as voted by HBOT holders in each q
 ## ℹ️ Exchange Info
 
 - **Website**: <https://www.coinbase.com/>
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/coinbase-exchange/
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/coinbase_exchange
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/coinbase-exchange/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/coinbase_exchange>
 - **API Docs**: <https://docs.pro.coinbase.com/>
 - **Fees**: <https://help.coinbase.com/en/pro/trading-and-funding/trading-rules-and-fees/fees>
 - **Supported Countries**: Available in 100+ countries
@@ -49,7 +49,7 @@ You are now connected to coinbase
 
 - **ID**: `coinbase_pro`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinbase_pro
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinbase_pro>
 
 ### Order Types
 

@@ -22,8 +22,8 @@ Currently, Huobi is a **Bronze** exchange, as voted by HBOT holders in each quar
 - **Website**: <https://www.huobi.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/huobi/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/huobi>
-- **API Docs**: https://www.huobi.com/en-in/opend/newApiPages/
-- **Fees**: https://www.huobi.com/fees
+- **API Docs**: <https://www.huobi.com/en-in/opend/newApiPages/>
+- **Fees**: <https://www.huobi.com/fees>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
@@ -82,7 +82,7 @@ You are now connected to huobi
 
 - **ID**: `huobi`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/huobi
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/huobi>
 
 ### Order Types
 

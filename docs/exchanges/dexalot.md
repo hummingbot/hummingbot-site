@@ -51,9 +51,9 @@ The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 
 - **ID**: `dexalot`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: https://docs.dexalot-test.com/api
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/dexalot
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/dexalot.yml
+- **API Docs**: <https://docs.dexalot-test.com/api>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/dexalot>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/dexalot.yml>
 
 ### Endpoints
 
@@ -69,7 +69,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `dexalot_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

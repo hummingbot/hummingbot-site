@@ -16,7 +16,7 @@ Currently, Injective is a **Bronze** exchange, as voted by HBOT holders in each 
 
 ## ℹ️ Exchange Info
 
-- **Website**: https://helixapp.com/markets?type=spot
+- **Website**: <https://helixapp.com/markets?type=spot>
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/injective>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/injective>
 - **API Docs**: <https://api.injective.exchange>
@@ -53,7 +53,8 @@ The injective connector now uses wallet [pubKey] on injective-mainnet
 
 - **ID**: `injective`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/injective
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/injective>
+
 ### Order Types
 
 This connector supports the following `OrderType` constants:
@@ -66,7 +67,7 @@ This connector supports the following `OrderType` constants:
 
 - **ID**: `injective_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/injective_perpetual
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/injective_perpetual>
 
 ### Order Types
 

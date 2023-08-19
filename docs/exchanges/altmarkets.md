@@ -16,11 +16,11 @@ Currently, Altmarkets is a **Bronze** exchange, as voted by HBOT holders in each
 
 ## ℹ️ Exchange Info
 
-- **Website**: https://v2.altmarkets.io/
+- **Website**: <https://v2.altmarkets.io/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/altmarkets/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/altmarkets>
-- **API Docs**: https://app.swaggerhub.com/apis-docs/Altmarkets/PublicApi/2.3.12
-- **Fees**: https://v2.altmarkets.io/fees
+- **API Docs**: <https://app.swaggerhub.com/apis-docs/Altmarkets/PublicApi/2.3.12>
+- **Fees**: <https://v2.altmarkets.io/fees>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
@@ -49,7 +49,7 @@ You are now connected to altmarkets
 
 - **ID**: `altmarkets`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/altmarkets
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/altmarkets>
 
 ### Order Types
 

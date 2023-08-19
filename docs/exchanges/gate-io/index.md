@@ -95,7 +95,7 @@ You are now connected to gate_io
 
 - **ID**: `gate_io`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/gate_io
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/gate_io>
 
 ### Order Types
 
@@ -116,7 +116,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 - **ID**: `gate_io_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/gate_io_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/gate_io_perpetual>
 
 ### Order Types
 
@@ -144,7 +144,7 @@ Users can use the perpetual testnet by clicking on the link above - however the 
 
 - **ID**: `gate_io`
 - **Supported Intervals**: `10s` | `1m` | `5m` | `15m` | `30m` | `1h` | `2h` | `4h` | `6h` | `8h` | `12h` |  `1d` | `7d` | `30d`
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/gate_io_spot_candles
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/gate_io_spot_candles>
 
 ### Usage
 
@@ -163,7 +163,7 @@ See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/sc
 
 - **ID**: `gate_io_perpetual`
 - **Supported Intervals**: `1m` | `5m` | `15m` | `30m` | `1h` | `2h` | `4h` | `6h` | `8h` | `12h` |  `1d` | `7d`
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/gate_io_perpetual_candles
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/gate_io_perpetual_candles>
 
 ### Usage
 

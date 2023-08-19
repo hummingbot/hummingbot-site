@@ -22,7 +22,7 @@ Currently, Bybit is a **Bronze** exchange, as voted by HBOT holders in each quar
 - **Website**: <https://www.bybit.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bybit/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bybit>
-- **API Docs**: https://bybit-exchange.github.io/docs/v5/intro
+- **API Docs**: <https://bybit-exchange.github.io/docs/v5/intro>
 - **Fees**: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
 - **Supported Countries**: Available to customers worldwide, except for countries with service restrictions such as the U.S, Singapore, Cuba, Crimea, Sevastopol, Iran, Syria, North Korea, Sudan, Mainland China.
 
@@ -67,7 +67,7 @@ You are now connected to bybit
 
 - **ID**: `bybit`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bybit
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bybit>
 
 ### Order Types
 
@@ -88,7 +88,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 - **ID**: `bybit_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual>
 
 ### Order Types
 
@@ -106,7 +106,7 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-This perp exchange offers a paper trading mode: https://testnet.bybit.com/en-US/trade/spot/BTC/USDT
+This perp exchange offers a paper trading mode: <https://testnet.bybit.com/en-US/trade/spot/BTC/USDT>
 
 Afer you create an account and create the API keys, you can enter them by using the `connect bybit_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
 

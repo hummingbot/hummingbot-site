@@ -51,9 +51,9 @@ The sushiswap connector now uses wallet [pubKey] on polygon-mainnet
 
 - **ID**: `sushiswap`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: https://docs.sushi.com/
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/sushiswap
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/sushiswap.yml
+- **API Docs**: <https://docs.sushi.com/>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/sushiswap>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/sushiswap.yml>
 
 ### Endpoints
 
@@ -68,7 +68,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `sushiswap_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

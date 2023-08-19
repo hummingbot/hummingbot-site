@@ -18,9 +18,9 @@ Currently, Bitget Perpetual is a **Bronze** exchange, as voted by HBOT holders i
 
 - **Website**: <https://www.bitget.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bitget/>
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/bitget
-- **API Docs**: https://bitgetlimited.github.io/apidoc/en/spot/#welcome
-- **Fees**: https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/bitget>
+- **API Docs**: <https://bitgetlimited.github.io/apidoc/en/spot/#welcome>
+- **Fees**: <https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
@@ -48,7 +48,7 @@ You are now connected to bitget_perpetual
 
 - **ID**: `bitget_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitget_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitget_perpetual>
 
 ### Order Types
 

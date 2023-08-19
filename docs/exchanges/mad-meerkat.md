@@ -18,7 +18,7 @@ Currently, Mad Meerkat is a **Bronze** exchange, as voted by HBOT holders in eac
 - **Website**: <https://mm.finance>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/mm-finance/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/mm_finance>
-- **Fees**: https://docs.madmeerkat.xyz/product-guides/limit-order#is-there-any-transaction-fee
+- **Fees**: <https://docs.madmeerkat.xyz/product-guides/limit-order#is-there-any-transaction-fee>
 
 ## 🔑 How to Connect
 
@@ -49,8 +49,8 @@ The mad_meerkat connector now uses wallet [pubKey] on cronos-mainnet
 - **ID**: `mad_meerkat`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://github.com/madmeerkat/madmeerkat-api>
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/mad_meerkat
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/mad_meerkat.yml
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/mad_meerkat>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/mad_meerkat.yml>
 
 ### Endpoints
 
@@ -64,7 +64,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `mad_meerkat_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

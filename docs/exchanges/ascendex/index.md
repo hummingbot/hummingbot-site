@@ -78,7 +78,7 @@ You are now connected to ascendex
 
 - **ID**: `ascendex`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ascendex
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ascendex>
 
 ### Order Types
 
@@ -99,7 +99,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 - **ID**: `ascendex`
 - **Supported Intervals**: 1min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 12hour |  1day | 1week | 1M
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/ascend_ex_spot_candles
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/ascend_ex_spot_candles>
 
 ### Usage
 

@@ -18,7 +18,7 @@ Currently, TraderJoe is a **Bronze** exchange, as voted by HBOT holders in each 
 - **Website**: <https://traderjoe.xyz>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/trader-joe/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/traderjoe>
-- **Fees**: https://docs.traderjoe.xyz/product-guides/limit-order#is-there-any-transaction-fee
+- **Fees**: <https://docs.traderjoe.xyz/product-guides/limit-order#is-there-any-transaction-fee>
 
 ## 🔑 How to Connect
 
@@ -48,9 +48,9 @@ The traderjoe connector now uses wallet [pubKey] on avalanche-avalanche
 
 - **ID**: `traderjoe`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: https://github.com/traderjoe-xyz/joe-sdk
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/traderjoe
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/traderjoe.yml
+- **API Docs**: <https://github.com/traderjoe-xyz/joe-sdk>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/traderjoe>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/traderjoe.yml>
 
 ### Endpoints
 
@@ -65,7 +65,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `traderjoe_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

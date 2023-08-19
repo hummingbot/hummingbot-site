@@ -53,7 +53,7 @@ You are now connected to hitbtc
 
 - **ID**: `hitbtc`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/hitbtc>
 
 ### Order Types
 

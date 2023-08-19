@@ -16,11 +16,11 @@ Currently, BTC-Markets is a **Bronze** exchange, as voted by HBOT holders in eac
 
 ## ℹ️ Exchange Info
 
-- **Website**: https://www.btcmarkets.net/
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/btc-markets/
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/btc-markets
+- **Website**: <https://www.btcmarkets.net/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/btc-markets/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/btc-markets>
 - **API Docs**: <https://docs.btcmarkets.net/v3/>
-- **Fees**: https://www.btcmarkets.net/fees
+- **Fees**: <https://www.btcmarkets.net/fees>
 - **Supported Countries**: Primarily Australia
 
 ## 🔑 How to Connect
@@ -48,7 +48,7 @@ You are now connected to btc_markets
 
 - **ID**: `btc_markets`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/btc_markets
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/btc_markets>
 
 ### Order Types
 
