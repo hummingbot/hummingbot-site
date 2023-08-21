@@ -47,8 +47,8 @@ The ref-finance connector now uses wallet [pubKey] on near-mainnet
 - **ID**: `ref`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://docs.ref.finance/reference/>
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/ref
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/ref.yml
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/ref>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/ref.yml>
 
 ### Endpoints
 

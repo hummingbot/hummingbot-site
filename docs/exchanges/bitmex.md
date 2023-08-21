@@ -16,11 +16,11 @@ HBOT holders voted BitMEX into the **Bronze** tier for the current [Epoch](/gove
 
 ## ℹ️ Exchange Info
 
-- **Website**: https://www.bitmex.com/
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/bitmex/
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/bitmex
-- **API Docs**: https://www.bitmex.com/api/explorer/
-- **Fees**: https://www.bitmex.com/wallet/fees/spot
+- **Website**: <https://www.bitmex.com/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bitmex/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/bitmex>
+- **API Docs**: <https://www.bitmex.com/api/explorer/>
+- **Fees**: <https://www.bitmex.com/wallet/fees/spot>
 - **Supported Countries**: 
 
 ## 🔑 How to Connect
@@ -49,7 +49,7 @@ You are now connected to bitmex
 
 - **ID**: `bitmex`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitmex
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bitmex>
 
 ### Order Types
 
@@ -71,7 +71,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 - **ID**: `bitmex_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitmex_perpetual
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bitmex_perpetual>
 
 ### Usage
 
@@ -101,6 +101,6 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-This perp exchange offers a paper trading mode: https://testnet.bitmex.com/app/trade/XBTUSD
+This perp exchange offers a paper trading mode: <https://testnet.bitmex.com/app/trade/XBTUSD>
 
-Afer you create an account and create the API keys, you can enter them by using the `connect bitmex_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
+Afer you create an account and create the API keys, you can enter them by using the `connect bitmex_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts.

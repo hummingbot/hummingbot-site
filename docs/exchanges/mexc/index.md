@@ -68,7 +68,7 @@ You are now connected to mexc
 
 - **ID**: `mexc`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/mexc>
 
 ### Order Types
 

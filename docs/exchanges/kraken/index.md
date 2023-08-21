@@ -65,7 +65,7 @@ You are now connected to kraken
 
 - **ID**: `kraken`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/kraken>
 
 ### Order Types
 

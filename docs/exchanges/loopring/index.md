@@ -74,7 +74,7 @@ You are now connected to loopring.
 
 - **ID**: `loopring`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/loopring
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/loopring>
 
 ### Order Types
 

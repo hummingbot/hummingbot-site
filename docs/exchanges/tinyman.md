@@ -18,7 +18,7 @@ Currently, Tinyman is a **Bronze** exchange, as voted by HBOT holders in each qu
 - **Website**: <https://tinyman.org>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/tinyman/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/tinyman>
-- **Fees**: https://docs.tinyman.org/product-guides/limit-order#is-there-any-transaction-fee
+- **Fees**: <https://docs.tinyman.org/product-guides/limit-order#is-there-any-transaction-fee>
 
 ## 🔑 How to Connect
 
@@ -49,8 +49,8 @@ The tinyman connector now uses wallet [pubKey] on algorand-mainnet
 - **ID**: `tinyman`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://docs.tinyman.org/reference/>
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/tinyman
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/tinyman.yml
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/tinyman>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/tinyman.yml>
 
 ### Endpoints
 
@@ -65,7 +65,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `tinyman_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

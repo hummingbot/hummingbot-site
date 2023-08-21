@@ -23,7 +23,7 @@ Currently, OKX is a **Bronze** exchange, as voted by HBOT holders in each quarte
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/okx/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/okx>
 - **API Docs**: <https://www.okx.com/docs/en/>
-- **Fees**: https://www.okx.com/fees
+- **Fees**: <https://www.okx.com/fees>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
@@ -58,7 +58,7 @@ You are now connected to okx.
 
 - **ID**: `okx`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/okx>
 
 ### Order Types
 

@@ -49,8 +49,8 @@ The xswap connector now uses wallet [pubKey] on xdc-chain-xinfin
 - **ID**: `xswap`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://github.com/Carry-So/xsswap-sdk>
-- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/xswap
-- **Default Configs**: https://github.com/hummingbot/gateway/blob/main/src/templates/xswap.yml
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/xswap>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/xswap.yml>
 
 ### Endpoints
 
@@ -66,7 +66,7 @@ For more info, run Gateway and go to <https:localhost:8080> in your browser to s
 
 - **ID**: `xswap_[CHAIN]_[NETWORK]`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py
+- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
 
 ### Usage
 

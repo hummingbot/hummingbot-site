@@ -6,11 +6,11 @@
 ## ℹ️ Exchange Info
 
 - **Type**: CLOB CEX
-- **Website**: https://www.binance.us/
-- **CoinMarketCap**: https://coinmarketcap.com/exchanges/binance-us/
-- **CoinGecko**: https://www.coingecko.com/en/exchanges/binance_us
+- **Website**: <https://www.binance.us/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/binance-us/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/binance_us>
 - **API docs**: <https://github.com/binance-us/binance-official-api-docs/blob/master/rest-api.md>
-- **Fees**: https://www.binance.us/en/fee/schedule
+- **Fees**: <https://www.binance.us/en/fee/schedule>
 - **Supported countries**: Primarily United States
 
 ## 🛠 Maintenance

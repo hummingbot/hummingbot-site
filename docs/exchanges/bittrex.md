@@ -19,7 +19,7 @@ Currently, Bittrex is a **Bronze** exchange, as voted by HBOT holders in each qu
 - **Website**: <https://www.bittrex.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bittrex/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bittrex>
-- **API Docs**: https://bittrex.github.io/api/v3
+- **API Docs**: <https://bittrex.github.io/api/v3>
 - **Fees**: <https://www.bittrex.com/fees>
 - **Supported Countries**: Not available
 
@@ -47,7 +47,7 @@ You are now connected to bittrex
 
 - **ID**: `bittrex`
 - **Connection Type**: WebSocket
-- **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bittrex
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/bittrex>
 
 ### Order Types
 
