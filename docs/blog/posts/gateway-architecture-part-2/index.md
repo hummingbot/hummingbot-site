@@ -25,6 +25,8 @@ User Experience
 
 ![gateway-user-experience](https://images.ctfassets.net/h07e7qaokuyy/3C4cZzXV5hyhbYrXiVjRL4/f737e39d5ae420358541e3174c8f8d63/photo-1623043453741-11aef9cb59b5?w=750&h=1125&fl=progressive&q=100&fm=jpg)Hummingbot Gateway is a backend system, where the ideal user experience is it's easy to set up, and then it runs reliably in the background and let the user focus on trading. In occasion the user needs to reconfigure or upgrade the gateway, the documentations and instructions should be clear, and the configuration steps should be easy to carry out.
 
+<!-- more -->
+
 Gateway v2 is going to come with a series of improvements to bring its user experience more in-line with major production server software like Apache or MySQL. We will be focusing our efforts in the following major areas:
 
 * Setting up Gateway (using Hummingbot)

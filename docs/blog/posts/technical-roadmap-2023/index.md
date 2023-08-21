@@ -18,6 +18,8 @@ Since it was launched in 2019, the open source [Hummingbot](https://github.com/h
 
 Originally a simple market making bot that only supported a few exchanges, today Hummingbot is a now a powerful, complex codebase with connectors to 40+ centralized and decentralized exchanges, 13+ strategies, and helper modules such as the Rate Oracle, Telegram integration, and other components.
 
+<!-- more -->
+
 ![](image_1.jpg)
 
 With hundreds of daily active users who [generate millions in volume](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52?ref=blog.hummingbot.org) and [provide liquidity to many tokens](https://miners.hummingbot.io/?ref=blog.hummingbot.org), the Hummingbot community is a small but powerful global army of quant traders and developers who use and maintain this shared community-owned codebase.

@@ -22,6 +22,8 @@ The Hummingbot Gateway is a separate piece of software apart from Hummingbot, be
 
 In this series of Hummingbot Gateway v2 Architecture blog posts, we will outline the architectural changes we will be making to Gateway v2 to bring it up to production quality - and why changes are needed.
 
+<!-- more -->
+
 ### **History**
 
 ![gate-img1](https://images.ctfassets.net/h07e7qaokuyy/4utYNpq89nETXDme9z7LNG/f358007f79d373ee71341ad6250dea7f/photo-1568315128481-99b456a7cf86.jfif?w=750&h=533&fl=progressive&q=100&fm=jpg)Hummingbot Gateway was originally conceived as an interface for Hummingbot to interact with Celo, Balancer and Terra around mid 2020. While the concept of decentralized exchanges were already well known at the time, trading activity was relatively nascent compared to now.
