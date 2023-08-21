@@ -1,7 +1,7 @@
 ---
 date: 2022-12-13
 authors:
-  - hummingbot
+  - foundation
 categories:
   - Engineering
 ---
