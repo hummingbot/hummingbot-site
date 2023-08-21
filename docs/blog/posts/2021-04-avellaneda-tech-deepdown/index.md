@@ -40,6 +40,8 @@ Where:
 - $\delta^{a}, \delta^{b}$ [quote asset]= Bid/Ask spread (they are symmetrical to reservation price → $\delta^{a}=\delta^{b}$
 - $\kappa$ [1/quote asset]= Order book *liquidity* parameter
 
+<!-- more -->
+
 ## Proposed extensions
 
 The paper's model is built under the following assumptions:

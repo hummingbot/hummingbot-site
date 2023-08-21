@@ -25,6 +25,8 @@ What you will learn:
 
 - Why use the price information from a different source.
 
+<!-- more -->
+
 #### Price is information and information is money
 
 Before exploring the next set of configurations, we have to talk a bit about price.

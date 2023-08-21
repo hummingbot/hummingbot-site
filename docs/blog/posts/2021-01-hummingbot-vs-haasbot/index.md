@@ -20,6 +20,7 @@ For more information on the plan features, see [Haasbot](https://www.haasonline.
 
 Overall, Haasbot has more features, strategies, and exchanges supported. Haasbot allows users to run unlimited bots at the cost of 0.05BTC for 12 months (and the cost has not factored in the currency price appreciation, for example, BTC has been trending up for the past 3 months since Oct 2020), whereas Hummingbot is completely free to use as long as you run it on a local machine. You might want to use a cloud server to run the Humminingbot, which usually needs an extra cost of US$5-10 per month for one bot on average. Though backtesting is highly-requested for any algo trading strategy, it's not available for both bots for market making. Haasbot has its own charts to check the trades and a quick summary of where the market making orders are. Let’s compare other aspects of these two bots.
 
+<!-- more -->
 
 # Privacy & Security
 

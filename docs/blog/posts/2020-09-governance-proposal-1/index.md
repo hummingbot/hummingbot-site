@@ -12,6 +12,9 @@ As Hummingbot’s community and usage have grown, we have seen increasing partic
 
 We have started to think about and explore what this new type of role means to us and to our community.  As a first step, we wanted to test the waters to see if there would actually even be any interest from the community to weigh in on the direction of Hummingbot.
 
+<!-- more -->
+
+
 We completed the [first Hummingbot connector governance trial](https://hummingbot.io/blog/2020-08-exchange-connector-governance/) earlier this month, where we asked the community to vote on which exchange connector to integrate next into Hummingbot.  We had developers submit and propose exchange connectors for [Beaxy](https://beaxy.com/), [Loopring](https://loopring.org/#/), and [OKEx](https://www.okex.com/).
 
 We had overwhelming and unexpected support for the proposals, garnering over 3,700 votes:

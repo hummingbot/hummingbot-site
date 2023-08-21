@@ -20,6 +20,8 @@ As discussed in [our previous post](https://www.hummingbot.io/blog/2019-01-begin
 
 Due to its low barrier to entry from easily accessible exchange APIs, sufficient supplies of free tutorials and documents, reasonable hardware requirements, and an around-the-clock market, algo trading in crypto is attracting more people than ever who are interested in and curious about how this all works.
 
+<!-- more -->
+
 #### What are the advantages of algo trading?
 One of the major advantages of algo trading is that it can execute orders 24/7, non-stop. Bots won’t get tired, and the crypto market never closes. That being said, it doesn’t mean you can let your bot run completely without human intervention.  If you have a bug in the program or setup your rules incorrectly, the computer program will not know and it will continue to obediently and tirelessly trade away your assets in accordance with the flawed instructions while you sleep.  You need to constantly monitor and re-adjust your parameters from time to time.
 

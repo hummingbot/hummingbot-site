@@ -23,6 +23,8 @@ Votes for this current proposal will be based on Hummingbot Miner rewards, givin
 
 Similar to our previous governance votes, the Hummingbot core team will review, test, and incorporate the exchange connector for the winning exchange into our core code base, which will become an officially supported connector. 
 
+<!-- more -->
+
 ## Voting Methodology
 
 - **Votes per miner**: the total votes each miner has is based on the total amount of mining rewards they have earned in the most recent weekly reward period. For example, a miner who earned $100 in the rewards period will have 100 votes.

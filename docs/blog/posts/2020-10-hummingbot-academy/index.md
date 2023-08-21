@@ -23,6 +23,9 @@ Hi, my name is Paulo Henrique Rebouças.
 
 I am Brazilian, 38 years old, and have been a Civil Engineer and Project Manager for 11 years. Even though I like this profession, over the last years I have developed a passion for financial markets, with a special place in my heart reserved for cryptocurrencies.
 
+
+<!-- more -->
+
 While I always had an interest in finance, I started to get hyped about this topic around 6 years ago when I began researching everything related to investments, be it long-term, short-term, bonds, stock markets, economic laws and principles, day trading, indicators, strategies, etc. 
 
 The more knowledge I acquired along the way, the more I wanted (and still want) to learn, and eventually, I started a blog to write about everything I was learning (if you are curious, you can check my older writings [here](https://financialjourney.dblog.org/)).

@@ -20,6 +20,8 @@ Please see below for a detailed breakdown of what we plan to ship on a quarter-b
 
 ### Q1 2020
 
+<!-- more -->
+
 #### Launch liquidity mining
 
 In early 2020, we will launch the first liquidity mining campaigns alongside our 8 launch partners:

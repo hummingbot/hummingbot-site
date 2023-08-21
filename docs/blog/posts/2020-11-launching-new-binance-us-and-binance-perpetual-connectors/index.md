@@ -16,6 +16,8 @@ The Binance.us connector is one of the most highly requested connectors within t
 
 In addition to the Binance.us connector, the v0.33.0 release will also contain a Binance.com USDT-M Futures connector that allows users to trade [perpetual contracts](https://academy.binance.com/en/articles/what-are-perpetual-futures-contracts) using Hummingbot.  Trading in crypto derivatives has been a rapidly growing market which has been the main focus of most major derivatives exchanges over the past year.  Consequently, support for derivatives has been one of the most anticipated and asked for capabilities from the Hummingbot community.  Adding support for Binance perpetual futures is the first of our future initiatives and forays into this space.
 
+<!-- more -->
+
 A perpetual contract is a special derivative product, which is an agreement to buy or sell an asset at a predetermined price in the future. However, unlike the traditional futures, it doesn’t have an expiry date, which means traders can keep the position open for as long as they like. Another difference between the traditional futures and the perpetual contracts is that the latter is priced based on an underlying Index Price of the spot market. Therefore, the perpetual contracts are often traded at a price that is equal or close to the spot price. This new connector is an initial beta version and our first connector that enables for derivatives.  **We encourage our community to test it out and provide us with [feedback](mailto:team@hummingbot.io)**. 
 
 ### What’s next

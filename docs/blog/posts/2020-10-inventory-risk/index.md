@@ -26,6 +26,9 @@ All kinds of financial operations have varying degrees of risk, and market makin
 
 While it seems more exciting to imagine and project future gains and fantasize about being the next Warren Buffet, the reality and less glamorous part of investing, and arguably the most important part, is trying to figure out what can go wrong and how to mitigate losses that can result.
 
+<!-- more -->
+
+
 There is a lot to cover about risk and risk management, but today we will focus on one major risk related to market making: **inventory risk.**
 
 Here is what we’ll cover in today's article:

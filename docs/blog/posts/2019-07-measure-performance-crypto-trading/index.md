@@ -29,6 +29,8 @@ Hummingbot calculates profitability by determining the portfolio value of the st
 - [How does Hummingbot measure performance?](#how-measure)
 - [Other considerations](#considerations) 
 
+<!-- more -->
+
 ---
 
 

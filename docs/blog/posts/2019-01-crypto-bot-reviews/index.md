@@ -18,6 +18,8 @@ Because cryptocurrency exchanges offer **direct market access** by making APIs a
 
 Due to the differences between these bots, assessing their relative trading performance would be an apples-to-oranges comparison. Instead, we decided to compare their relative ease of use of installation, configuration, and operation.
 
+<!-- more -->
+
 So far, we have tested the following bots:
 * [3commas](#3commas)
 * [BitMex sample market maker](#bitmex)

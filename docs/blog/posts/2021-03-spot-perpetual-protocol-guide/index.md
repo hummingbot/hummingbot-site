@@ -32,6 +32,8 @@ Although future contracts are one of the main instruments used by traders lookin
 For example, a rice farmer that just started his cultivation for the next season (fun fact: rice takes around 130 days to be ready for harvest) could sell a future rice contract at the current price if he isn’t sure what the price will be at harvest.
 
 
+<!-- more -->
+
 ![Rice plantation](./rice-plantation1.jpg)
 _Rice plantation at Itigi Tanzania. Source: [Wikimedia commons](https://commons.wikimedia.org/wiki/File:Rice_at_plantation_at_Itigi_Tanzania.jpg)_
 

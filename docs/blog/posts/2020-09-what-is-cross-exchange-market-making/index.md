@@ -25,6 +25,9 @@ If you already understand how [arbitrage](https://hummingbot.io/blog/2020-09-wha
 
 ![](./guitars.jpg)
 
+<!-- more -->
+
+
 ### So what is cross-exchange market making?
 
 Here's a simple explanation of the concept of cross-exchange market making:

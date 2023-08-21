@@ -16,6 +16,8 @@ In this blog, we wanted to introduce the Solana project to our community and als
 
 [Solana](https://solana.com/) is a high-performance blockchain based out of San Francisco. The project was founded with the mission to support all high-growth and high-frequency blockchain applications, and to democratize the world’s financial systems. As of today, Solana can support up to 50,000 transactions per second, with 400ms block times and transaction fees estimated to be $0.00001 each. Which will continue to scale further as it’s network architecture was designed from the ground up to leverage improvements in hardware and bandwidth.    
 
+<!-- more -->
+
 ### Campaign Terms
 
 The Solana campaign will be starting on May 26, 2020 12.00am UTC and offer total rewards of USDC 7,500 over 12 weeks.  The eligible token pairs will be SOL/BTC, SOL/BUSD, and SOL/BNB.  For full terms of the campaign, please see [liquidity mining campaign terms](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-campaign-terms).

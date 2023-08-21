@@ -15,6 +15,8 @@ The Balancer connector is included with the [v0.33 release](https://docs.humming
 
 This new strategy allows allows users to arbitrage price differences between automatic market maker (AMM) protocols like Balancer and other Hummingbot supported exchanges such as Binance, Coinbase Pro, and Huobi.
 
+<!-- more -->
+
 ## How it works
 
 ![Sample arbitage trade between Balancer and Binance](./2.jpg)

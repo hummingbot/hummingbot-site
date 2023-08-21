@@ -32,6 +32,8 @@ During July, $ONE Makers bounty hunters:
 
 > #### On average, each person performed 1,429 trades and generated $41,000 of filled order volume during the month.
 
+<!-- more -->
+
 ---
 ### July leaderboard
 

@@ -18,6 +18,9 @@ Since launch in March 2020, Hummingbot Miner has paid out $640k+ in rewards to 2
 
 **Since inception, Hummingbot liquidity miners have filled over $1.4 billion in trade volume.**
 
+<!-- more -->
+
+
 # What's next in 2Q
 
 Despite this progress, the Hummingbot ecosystem still has a long road ahead to accomplish our mission of democratizing finance with open source software. We plan to scale the number of exchanges supported, improve support for custom strategies, and enhance our offerings for professional Hummingbot users. In addition, as a truly decentralized open source project that relies on external contributors, we plan to make the Hummingbot roadmap more transparent and give our community more influence in shaping it.

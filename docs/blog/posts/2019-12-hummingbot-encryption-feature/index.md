@@ -19,6 +19,8 @@ The new Hummingbot client will prompt ```Enter your new password``` when you sta
 
 This password you set will be used to encrypt both your Ethereum wallet private key and your exchange API keys. Now, every time you start the Hummingbot client, you have to enter this password in the client. Please note that for security reasons, the system **does not store this password anywhere**. That means in case of forgotten or lost password, there is no way to recover it. 
 
+<!-- more -->
+
 Now once you set the password, you'll be able to see a few encrypted files in your ```conf``` folder, and the global config file will not contain your private key and exchange API information anymore. 
 
 ![](/image2.png)

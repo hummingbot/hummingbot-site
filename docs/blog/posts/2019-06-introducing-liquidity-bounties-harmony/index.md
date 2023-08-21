@@ -17,6 +17,8 @@ Liquidity is necessary for any publicly traded asset. Buyers and sellers want to
 
 We've written before about the ["small-cap liquidity crisis"](/blog/2019-01-thin-crust-of-liquidity/) in equities, in which smaller stocks can't attract liquidity because the large trading firms focus on market making for the largest stocks on the most liquid trading venues.
 
+<!-- more -->
+
 Liquidity is an even bigger problem in the fragmented world of crypto. There are relatively few quantitative trading firms with the technical sophistication to do algorithmic market making, so they can charge issuers up to \$50,000 per month and require them to put up millions in inventory. This is unaffordable for the vast majority of token issuers.
 
 In addition, the large amount of assets that issuers provide to market makers, coupled with lack of transparency and industry standards, creates perverse incentives for certain market makers to act maliciously via wash trading and market manipulation. Not only does this bad behavior reflect badly on token projects when discovered, but it also causes "pump-and-dumps" which allow malicious market makers to profit at the expense of the ordinary traders in the issuer's community.

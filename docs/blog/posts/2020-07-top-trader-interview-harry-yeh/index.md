@@ -15,6 +15,9 @@ Binary started as an OTC trading desk serving an exclusive set of crypto traders
 
 Below, we highlight a few excerpts from [the video interview](https://www.youtube.com/watch?v=PqKkfe9ZV6g), where Harry shared a bunch of important insights in crypto algo trading and market making. 
 
+
+<!-- more -->
+
 ### What made you get into high frequency market making?
 
 Humans are limited by time. For us, we can only think in terms of hours or minutes, but computers can handle seconds, microseconds or even milliseconds, so we are able to compress time and have computers execute trades. This is one of the reasons why we got into electronic market making.

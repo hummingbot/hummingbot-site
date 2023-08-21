@@ -23,6 +23,8 @@ We're building a web application called Hummingbot Miners that helps you sign up
 Here's a screenshot of the Markets view:
 ![](ux.png)
 
+<!-- more -->
+
 To be fully transparent and to involve our community, we worked with our friends at [Deep Work Studio](https://deepwork.studio/) to livestream the entire design process, from research to storyboarding to user testing. Click the links below to watch the replays:
 
 1. [Session 1 - Research](https://youtu.be/N46nOYcdKEw)

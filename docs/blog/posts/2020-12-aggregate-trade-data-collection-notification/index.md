@@ -13,6 +13,9 @@ The open-source Hummingbot client is fulfilling its mission of democratizing mar
 
 To sustain development of the Hummingbot client, we partner with exchanges and protocols to build connectors and/or strategies. These partners need actionable data to convince their stakeholders and community members that a Hummingbot integration is worth the investment. The most common requests include total volume traded, total number users, and which trading pairs. Since the Hummingbot client doesn’t currently collect any data, we currently can't answer these questions well and rely on guesstimates based on volume measured on the Hummingbot Miner platform. However, we know from conversations with many community members that the volume activity on Hummingbot Miner is a small subset of the overall volume facilitated each week by the Hummingbot client. For these reasons, beginning with Hummingbot version 0.34, a “heartbeat” data collection mechanism will be implemented.
 
+
+<!-- more -->
+
 ***Here are the key points of the heartbeat mechanism:***
 
 - Heartbeat will send aggregate trade volume data to Hummingbot servers every 15 minutes

@@ -27,6 +27,8 @@ That way, for every one wCUSD you have on your Ethereum wallet, there is one cUS
 
 To allow users to acquire and trade the CELO wrapped tokens, new liquidity pools were created on the Uniswap protocol.
 
+<!-- more -->
+
 That creates two different trading opportunities:
 
 *   Become a liquidity provider on the Uniswap pools and earn trading fees while holding both assets;

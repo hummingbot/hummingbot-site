@@ -23,6 +23,9 @@ Let’s meet Manuel!
 
 I first started to trade crypto in 2017. The funny thing is that crypto is actually the first thing I've ever traded. I haven’t traded any stocks before. I have a tech background because blockchain is also tech-heavy. I started trading classic arbitrage between EtherDelta and centralized exchanges in 2017, and then the boom happened. In 2018, I did some market making on centralized and decentralized exchanges.
 
+<!-- more -->
+
+
 ### How did you get started in market making?
 
 I had this gut feeling that there are some arbitrage opportunities between the centralized exchanges and DEXes such as IDEX. So I programmed a data scraping tool that used APIs to request prices every minute. Then I found out that there is a lot of what I would call “spread arbitrage” opportunities. So I started doing this “spread arbitrage”. I would quote on IDEX and counter fill (the order) on a centralized exchange. During this process, I realized what I was actually doing was kind of market making. I didn’t even know that this was market making.

@@ -14,6 +14,9 @@ In this post, we answer some frequently asked questions about Hummingbot that we
 ### Why is liquidity beneficial for exchanges and token projects?
 One of the major benefits of liquidity is **price discovery**: knowing that the market price is fair. When you buy shares of a liquid asset like Apple shares from Robinhood or E*TRADE, you know that if you change your mind, you can sell it back without incurring a lot of losses. On the other hand, when the market is very illiquid such as in long-tail crypto markets, you often see situations where the buy price is 20% higher than the sell price, where the gap is called the bid-ask spread.
 
+
+<!-- more -->
+
 This hurts issuers in different ways:
 1. It’s hard for issuers to raise new capital if there is a gigantic big-ask spread in the secondary market.
 2. If their users need to buy the asset in order to use it, it raises the price they need to pay because there is not much supply.

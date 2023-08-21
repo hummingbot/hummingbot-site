@@ -21,6 +21,9 @@ The goal of a market making strategy is to fill both opposing orders as soon as 
 The majority of the profit of market making comes when the price is bouncing on a range. To take advantage of that, the market maker must find the optimal spread value, where the price will bounce from the lowest point to the highest point like in this case - 
 ![](https://www.tradingview.com/x/6lb6ZcHq/)
 
+
+<!-- more -->
+
 Here's what happens with small and large spreads respectively. With a large spread, you will do fewer trades, but each trade will have a bigger profit. With small spreads, you do more trades, with a smaller profit margin. However, large spreads might end up increasing the inventory risk for one main reason - the time it will take for the opposing order to be filled.
 ![](https://www.tradingview.com/x/ZmkdRRum/)
 

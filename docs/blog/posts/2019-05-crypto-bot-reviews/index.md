@@ -22,6 +22,8 @@ Like the previous article, we focus on each platform’s **ease of use**. Howeve
 
 *Note that we will continue to assess these and other trading bots, so we plan on updating this post often.*
 
+<!-- more -->
+
 <h3 id="kelp">Kelp</h3>
 
 <a href="https://github.com/stellar/kelp" target="_blank">Kelp</a> is a lightweight, well-documented open source project. Its main goal is to help developers create market making bots between <a href="https://www.stellarx.com/" target="_blank">StellarX</a> and a centralized exchange.

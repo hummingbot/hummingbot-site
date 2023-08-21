@@ -23,6 +23,9 @@ With two new connectors arriving with our latest release (0.34), you can now arb
 *   [Terra]()
 *   [Celo](https://hummingbot.io/blog/2020-06-celo-arbitrage/)
 
+
+<!-- more -->
+
 While arbitraging between two centralized exchanges with centralized order book (COB) is pretty simple to execute (choose exchanges, add API keys, choose minimum profitability, ready to go), decentralized exchange trading operations work a bit differently. Executing a profitable arbitrage strategy requires a better understanding of these mechanisms.
 
 This article will help you understand these fundamental differences and help you build your arbitrage strategy, and we will go through the following topics.

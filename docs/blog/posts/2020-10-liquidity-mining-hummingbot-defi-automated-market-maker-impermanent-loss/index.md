@@ -17,6 +17,8 @@ Our version of liquidity mining and that of DeFi share the same objective: <i>**
 
 One important way in which they enable this is by creating frameworks for compensating a decentralized group of market makers.
 
+<!-- more -->
+
 Most of the readers reading this will probably already be aware of the promise of tens to even hundreds of percentages of yields offered by liquidity mining protocols as well as on Hummingbot Miners.  **But are they real? What’s the catch?**
 
 In this post, we discuss the considerations in participating in liquidity mining through DeFi AMM versus Hummingbot Miners: what are the advantages, disadvantages, and the risks of the two different approaches.

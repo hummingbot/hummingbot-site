@@ -17,6 +17,8 @@ MrBig1964 is one of our Eagle Club members, who has been trading cryptocurrency 
 
 ***Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.***
 
+<!-- more -->
+
 ### Can you tell us a little bit about your background?
 
 I’m Portuguese, 56 years old. I'm a chemical engineer, working daily at a ceramic tiles factory for the last 32 years. I’ve been involved with computers and programming since I was at a very young age. My first computer was a Sinclair ZX80. That was many many years ago… So I always kept a lot of interest in everything related to information systems, computers, programming and so on.

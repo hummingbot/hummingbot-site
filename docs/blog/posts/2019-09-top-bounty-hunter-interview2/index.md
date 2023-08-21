@@ -18,6 +18,9 @@ In this post, we introduce you to Dominator008, who finished **#1** in the Augus
 
 I heard about hummingbot from Harmony. I learned that they were trying to partner with hummingbot for the community to be able to market make themselves. Besides hiring professional market makers, they decided to have hobby market makers and test it out how it works in production, so that’s when I learned about hummingbot and started using it. 
 
+<!-- more -->
+
+
 ### How has your experience been so far using hummingbot?
 
 It’s been very positive. From 1-10, I would rate it 9. I enjoy the experience, very nice UI and very nice intuitive set-up guide, very detailed documentation, and also awesome support team. Your founder Mike and all the team are very supportive. If I have any questions, I just ping them and get answers very quickly. 

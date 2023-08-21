@@ -23,6 +23,9 @@ Then you are on the right place!
 
 Here at [Hummingbot](https://hummingbot.io/) Academy, our goal is to help you learn more about market making and how to use our [free open-source robot](https://hummingbot.io/download/) to implement your own strategy.
 
+
+<!-- more -->
+
 ### But what is a Market Maker?
 
 > A market maker (MM) is a firm or individual who actively quotes two-sided markets in a security, providing bids and offers (known as asks) along with the market size of each. ([source](https://www.investopedia.com/terms/m/marketmaker.asp))

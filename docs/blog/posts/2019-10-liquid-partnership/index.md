@@ -16,6 +16,9 @@ What makes us so excited about this partnership is the alignment of our companie
 
 Working together, we are one step closer to achieving our mission of increasing market efficiency and democratizing finance; **efficient trading and liquidity should be available to all, not just the largest digital assets or projects with the deepest pockets**.
 
+<!-- more -->
+
+
 ### Security Review by Liquid’s CISO
 
 Liquid is a regulated exchange in Japan and Liquid ex-Japan is registered in Singapore. Liquid ex-Japan will also be looking at licensing under the upcoming Payment Services Act. Consequently, Liquid abides to the highest levels of regulatory standards which include AML and security practices.

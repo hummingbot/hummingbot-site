@@ -14,6 +14,8 @@ From the beginning, we’ve always thought of Hummingbot as a shared public fram
 
 Today, Hummingbot supports [11 official exchanges](https://docs.hummingbot.io/exchange-connectors/overview/), but we are also aware of a number of community-built forks for exchanges such as [Loopring](https://loopring.org), [Bitpanda](https://www.bitpanda.com), and [Beaxy](https://beaxy.com). We’re incredibly grateful for these contributions.
 
+<!-- more -->
+
 In order to ensure a high level of quality and consistency for the Hummingbot codebase, we painstakingly review all of our connectors before every release. Since exchange APIs often change and we are continually adding features to Hummingbot, this review process is essential to maintaining a good experience for Hummingbot users. Most importantly, we have to ensure that new connectors do not introduce usability or security issues for general users of the open source codebase.
 
 In order to enable Hummingbot forks to be merged into the main codebase while maintaining a high level of quality, we will let the community vote for the next exchange connector that we integrate into Hummingbot. This is an initial, experimental step toward making Hummingbot a community-owned and operated open source framework.

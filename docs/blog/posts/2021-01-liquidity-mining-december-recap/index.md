@@ -15,6 +15,8 @@ To date, we have seen 1,179 unique miners participate in providing liquidity on 
 
 Since the platform’s launch, we have run campaigns on Binance.com for 15 different token issuers for 46 different trading pairs. In December, we launched three new campaigns, for [Ava Lab’s Avalanche](https://hummingbot.io/blog/2020-12-ava-labs-avalanche-hummingbot-liquidity-mining/) (AVAX) tokens, [Phoenix Global](https://hummingbot.io/blog/2020-12-phoenix-global-hummingbot-liquidity-mining/) (PHB), and [Frontier](https://hummingbot.io/blog/2020-12-frontier-hummingbot-liquidity-mining-campaign/) (FRONT).  We have proven that our system and concept of liquidity mining is able to serve token issuers’ needs efficiently and effectively.
 
+<!-- more -->
+
 As we kick off 2021, we hope to carry the momentum of strong activity in December to the new year! We are already working on announcing new campaigns shortly as well as looking to expand liquidity mining capabilities to additional exchanges.  After launching the platform, our focus in 2020 had mainly been on system stability and scalability.  This allowed us to lay the groundwork for efficient expansion to additional exchanges, which is our key initiative for 2021. So stay tuned!
  
 ***Through December 31, 2020***

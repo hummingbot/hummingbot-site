@@ -17,6 +17,9 @@ Sure, this is Mike, CEO of Hummingbot. I started my career on Wall Street before
 
 Hummingbot is an open source tool that helps you configure and run algorithmic trading bots. It's a bit like Bitcoin mining software: it's a software client that you run locally or in the cloud. It uses your exchange API keys to automate trading for you.
 
+
+<!-- more -->
+
 ##### So what would you say has been liquidity state of crypto?
 
 Liquidity is one of the most important qualities for a token project. First, let me define what liquidity is. Liquidity is the ability to buy and sell something in large size without moving the market. Liquidity can be measured by hard, quantifiable metrics like bid-ask spread, depth, and volume.

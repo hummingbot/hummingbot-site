@@ -14,6 +14,8 @@ The Perp connector is included with the [v0.37.0](https://docs.hummingbot.io/rel
 
 Since we launched the perpetual market making strategy, a new strategy to exploit arbitrage profits between perpetual and spot markets has been highly requested by our community. This new strategy allows users to arbitrage price differences between the perpetual contracts exchanges, such as [perp.exchange](https://perp.exchange/) powered by Perpetual Protocol and Binance Futures, and other Hummingbot supported spot exchanges such as Binance, Coinbase Pro, and Huobi.
 
+<!-- more -->
+
 The price differences of countless pairs create numerous arbitrage opportunities that can bring small profits for individual traders or smaller trading firms like most Hummingbot users. A bonus point: these opportunities can be fun and rewarding to catch! Let Hummingbot do the hard work for you (You could constantly refresh your browser and manually catch these opportunities but that requires a lot of effort). This new strategy will automatically check for arbitrage opportunities and execute trades, saving you time and energy.
 
 ## About Perpetual Protocol

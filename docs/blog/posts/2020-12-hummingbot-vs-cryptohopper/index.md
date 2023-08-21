@@ -21,6 +21,8 @@ In addition to making an apple-to-apples comparison of features, we will also te
 
 > We selected Cryptohopper's Hero tier since only that version supports their market making features.
 
+<!-- more -->
+
 # Features Compared
 
 Overall, Cryptohopper has more features and strategies, but the number of exchanges supported is fewer. 

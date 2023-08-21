@@ -18,6 +18,8 @@ The Eagle Club is invite-only. It’s not only a VIP program that Team Hummingbo
 
 At the first month of launch, we will invite top 10 miners of each past week to the Club. Members who are qualified for the Club will be receiving an invitation email. Anyone who gets in will stay in the Club permanently. In the long term, we plan to invite approximately 10% of our total user base to the Club. 
 
+<!-- more -->
+
 ### Perks
 
 The Eagle Club members will be eligible to enjoy the following benefits: 

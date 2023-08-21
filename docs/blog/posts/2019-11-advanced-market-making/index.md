@@ -25,6 +25,9 @@ Paper trading mode is a simulated market environment in which users make buying 
 
 This feature allows users to test Hummingbot and simulate trading strategies without incurring any financial risks. It uses dummy balances that you can set in your `conf_global.yml` file using a text editor. An exchange account, Ethereum wallet and Ethereum address are also not required when doing paper trading. As of November 20, 2019, this feature has supported Binance, Coinbase Pro, Huobi, DDEX, Bamboo Relay, and Radar Relay.
 
+<!-- more -->
+
+
 The paper trading mode can be enabled/disabled inside Hummingbot with the `paper_trade` command. The top bar of the Hummingbot client should say `paper_trade_mode: ON` when it is activated. To adjust the dummy token balances used in paper trading mode, edit your `conf_global.yml` file, located in your client's `conf` directory.
 
 Paper trading is a good way to see how well a certain strategy will behave in the market over a period of time. It gives you a rough benchmark of the performance.

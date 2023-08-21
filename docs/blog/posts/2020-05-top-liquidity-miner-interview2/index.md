@@ -21,6 +21,8 @@ I first learned about crypto in 2015. At that time, I was a non-believer. It loo
 
 I’m from the traditional finance industry. What crypto trading allows is a much more sophisticated trading environment. In some sense, it has outmatched traditional finance.  
 
+<!-- more -->
+
 In crypto, you have near instant settlement. You can potentially get rid of a lot of middlemen that are ever-present in the traditional finance world. And also with exchange APIs, now a lot of people can make markets on their own. In traditional equity markets for instance, you cannot make markets on your own. You have no access to the order book, you have to pay for it, but only the big brokers do. But crypto markets are more open, which allows for a lot of new possibilities in terms of trading. That’s how I started to get into learning about the trading aspect of crypto.
 
 ![](journey.jpeg)

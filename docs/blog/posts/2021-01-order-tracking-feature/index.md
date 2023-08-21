@@ -17,6 +17,8 @@ This long feedback loop is not ideal, since miners have to wait 30 minutes to kn
 
 With the new **Order Tracking** feature we just launched, miners will now be able to confirm that their orders have been picked up by our systems within minutes or even seconds.  As soon as orders are created by a miner, they will be picked up and displayed in the new **Order Tracking** tab on the miner dashboard.   While getting the full rewards data will still require the full 30 minutes to process, users will now at least be able to confirm that their orders are being captured in the system and are being processed for rewards.
 
+<!-- more -->
+
 
 ---
 

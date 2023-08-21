@@ -18,6 +18,8 @@ Through our user interviews, we found one obstacle for developers to step their 
 
 If you are completely new to this arena, the following two tutorials will lay a good foundation for you:
 
+<!-- more -->
+
 * [Coursera: Princeton University course on Cryptocurrencies](https://www.coursera.org/learn/cryptocurrency):
 This course provides good overviews and explanations of blockchain technology and cryptocurrencies. Each week, it will upload around an hour of lecture content. You can control your own pace of learning and have a deeper dive into the topics that are most relevant to you.
 

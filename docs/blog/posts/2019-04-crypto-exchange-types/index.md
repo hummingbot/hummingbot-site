@@ -23,6 +23,8 @@ Exchanges perform the fundamental role in free markets of bringing together and 
 | [**Request for Quotation (RFQ)**](#request-for-quotation-rfq-exchanges)<br/><br/><small>Pricing on demand: A taker initiates a transaction by querying a known set of market makers with a specific demand (e.g. “buy 10 ETH”)</small><br/><br/><small>Taker receives a quote from each, and decides which (if any) to accept</small><br/><br/> | <small>Airswap, Kyber</small> |
 | [**Automated Exchange**](#automated-exchange)<br/><br/><small>A form of exchange enabled by blockchain technology where an exchange smart contract calculates prices using a predetermined formula referencing the contract’s inventory of assets</small><br/><br/><small>This requires third party actors (arbitrageurs) to keep asset prices in-line with other markets</small><br/><br/> | <small>Bancor, Uniswap</small> |
 
+<!-- more -->
+
 We also discuss the degrees of decentralization of each methodology.  CLOB exchanges, as the name suggests, are centralized (even "decentralized exchanges" using CLOB have some degree of centralization) since exchange operators can control the flow of order information and access, whereas RFQ and automated exchanges allow for more or nearly full decentralization.
 
 ---

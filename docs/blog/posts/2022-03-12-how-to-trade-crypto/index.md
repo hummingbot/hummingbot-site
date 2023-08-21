@@ -29,6 +29,8 @@ In this topic we will elaborate each of the steps mentioned above presenting the
 
 ---
 
+<!-- more -->
+
 ### **Step 1: Create an account in a crypto exchange**
 
 Picking the right crypto exchange to open an account is a crucial factor for your crypto investment. Of course, the term “right” doesn’t apply to this choice as there is arguably no exchange that excels all others in all aspects to be considered.

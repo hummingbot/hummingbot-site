@@ -21,6 +21,9 @@ In this post, we compare the offerings of major cloud computing services relativ
 
 In the last decade, cloud computing has exploded in popularity, leading to the development of dozens of different providers each with their own specializations and niches. And given the difficulty in traversing the wealth of options for a newcomer, many have [scored and ranked](https://www.zdnet.com/article/top-cloud-providers-2018-how-aws-microsoft-google-ibm-oracle-alibaba-stack-up/) cloud service platforms on a [number of metrics](https://www.techradar.com/news/best-cloud-computing-service). 
 
+
+<!-- more -->
+
 Here, we measure different cloud service systems specifically with regards to use for Hummingbot. We decided to compare platforms based on key factors which primarily include **ease of use**, **free trial flexibility**, **post-trial price**, and **overall quality**.
 
 The four cloud-hosting companies we cover are some of the larger players in the field: 

@@ -12,7 +12,11 @@ featured: false
 
 We view our collaboration with Crypto.com Exchange as an important strategic partnership, due to our shared commitment to trading efficiency, liquidity, and deep order books.  Crypto.com has initiatives to promote trading competitions and includes liquidity mining as an important part of boosting liquidity on its platform.  Crypto.com has committed to sponsoring Hummingbot’s Liquidity Mining campaigns to reward users and communities providing market making and liquidity to its exchange.
 
+<!-- more -->
+
+
 #### Open-source, high-frequency trading for Crypto.com users
+
 
 We have just released the latest version of Hummingbot [v0.31.0](https://docs.hummingbot.io/release-notes/0.31.0/) which includes an integration to Crypto.com Exchange.  This integration enables Crypto.com’s account holders to deploy Hummingbot’s quantitative and algorithmic strategies to engage in high frequency, automated trading.  Strategies currently available include market making, arbitrage, liquidity mirroring, as well as trade execution strategies such as TWAP and VWAP execution.  Hummingbot also allows users to create their own custom strategies.  Hummingbot has been battle-tested by thousands of users from its vibrant and engaged open-source community. 
 

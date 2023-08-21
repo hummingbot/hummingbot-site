@@ -19,6 +19,9 @@ In this post, we introduce you to Lorenzo Boyice, fairly new to our community bu
 
 I received my bachelor’s degree of computer science from the University of Missouri, Columbia where I developed a pretty solid foundation. After I graduated, I started to work in the (tech) industry in Kansas City at a company called Garmin. It was really interesting because when I first started working there, I was working in their aviation department. I had no idea that Garmin developed software for pilots in planes. I got some industry experience, after a while, I came across a great job opportunity at Google. So I have been a software developer at Google for about 3 years now. 
 
+<!-- more -->
+
+
 ### Did you hear about hummingbot first or liquidity mining first? How did you hear about it?
 
 It was Hummingbot first. I was already a big fan of crypto and really behind the ideology. Basically I started investing and (I’m) just sitting on this collection of crypto assets. Besides HODLing, I just wanted to find a way to maximize my profit. How can I make my money work for me? I started to dig into staking, arbitrage, automated trading, and bots. After a while, when I was just doing some internet searches, I think I came across Hummingbot. Originally, I was looking for arbitrage opportunities. As I read through the documentation, I came across this liquidity mining idea. I think that really got me involved with you. 

@@ -21,6 +21,8 @@ We will pay bug reporters 0.1 ETH for any bug reported that meets the following 
 - Reporter follows the submission guidelines below (see Submission)
 - We decide to fix the bug
 
+<!-- more -->
+
 In addition, we may add a discretionary bonus to bugs that entail security vulnerabilities, depending on the severity of the vulnerability.
 
 ### Bounty Rules and Guidelines

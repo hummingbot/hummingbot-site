@@ -16,6 +16,9 @@ To that end, we and Harmony are announcing an additional reward for September, a
 
 Now that we are in the third and final month of the program, filled volume currently stands at $7.1 million (as of September 10, 2019).  We are within striking distance of $10 million, so let’s all work together to hit that milestone!  
 
+<!-- more -->
+
+
 The terms of the community bounty rewards are as follows:
 
 ![](reward-table.png)

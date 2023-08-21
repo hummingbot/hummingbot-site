@@ -16,6 +16,8 @@ Mitigating risk is a core concept for effective market making. Market-makers loo
 
 In this post, we explain the advantages of using TradingView alerts and the steps required to create and connect them to your Hummingbot to help streamline and automate your trading experience.
 
+<!-- more -->
+
 ## What is TradingView?
 
 TradingView is a popular website that many market-makers use to get real-time information and insights on markets. Using TradingView, you can view specific markets and their trends over time which are constantly updated. This information is crucial when making decisions as a market-maker. In addition to having information, TradingView has many tools to help users determine when trading conditions are favorable. 

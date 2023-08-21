@@ -23,6 +23,8 @@ In this post, we provide information that may help projects and exchanges who ar
 
 Market makers, also known as liquidity providers, play a fundamental role in asset markets by simultaneously quoting bid (buy) and ask (sell) prices for assets on an exchange. By quoting prices at which they stand ready to buy and sell assets, they facilitate price discovery and liquid trading by other market participants. In addition, by quoting prices on different trading venues and arbitraging away inter-market dislocations across different markets, market makers increase overall market efficiency. 
 
+<!-- more -->
+
 ### Market makers in traditional asset markets
 
 In traditional securities markets such as equities, regulatory barriers prevent individuals and small firms from filling the market maker role. In addition, competitive barriers also prevent small participants from acting as market makers. In a practice known as co-location, high frequency trading (”HFT”) firms pay exchanges to place servers in close physical proximity to the exchange’s own servers, providing lower latency access to data feeds and trade execution. HFT firms have collectively spent massive sums building networks of wireless towers, fiber optic lines and submarine cables designed to provide millisecond-scale time advantages versus other market participants. Furthermore, fiat exchanges like NYSE and Nasdaq charge as much as $22,000 per month for access to market data feeds. Since HFT firms earn profits by performing a high volume of trades, they also tend to focus on making markets in large-capitalization stocks. 

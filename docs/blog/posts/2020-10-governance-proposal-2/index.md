@@ -25,6 +25,8 @@ As mentioned in our previous [governance post](https://hummingbot.io/blog/2020-0
 
 Similar to [our first governance vote](https://www.reddit.com/r/Hummingbot/comments/ig3d3e/launching_hummingbot_connector_governance_the/), the Hummingbot core team will review, test, and incorporate the exchange connector for the winning exchange into our core code base, which will become an officially supported connector. 
 
+<!-- more -->
+
 ## Voting Methodology
 
 - **Votes per miner**: the total votes each miner has is based on the total amount of mining rewards they have earned in the most recent weekly reward period. For example, a miner who earned $100 in the rewards period will have 100 votes.

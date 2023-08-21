@@ -14,6 +14,9 @@ featured: false
 
 The next stage of Hummingbot liquidity mining is here!  We are thrilled to announce that we will be rolling out open beta liquidity mining campaigns on KuCoin on October 6, 12.00am UTC!  The Hummingbot team is in the final stages of integrating and testing the Hummingbot Miners infrastructure for KuCoin.
 
+<!-- more -->
+
+
 Liquidity mining on KuCoin offers issuers whose tokens are listed on KuCoin with a cost efficient, data-driven, and decentralized/community-based way of promoting liquidity for their tokens.  Benefits of a campaign for token issuers  include:
 
 - promoting liquidity, order book depth, and trading efficiency for tokens

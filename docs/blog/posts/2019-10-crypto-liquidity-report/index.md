@@ -23,6 +23,9 @@ We believe slippage is a more robust indicator of liquidity than trading volume.
 - Only less than 20% crypto assets have <0.5% slippage.
 - Volatility and liquidity are slightly correlated in an inverse way.
 
+<!-- more -->
+
+
 ### Motivation
 
 In our post [The thin crust of liquidity]( https://hummingbot.io/blog/2019-01-thin-crust-of-liquidity/) we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 

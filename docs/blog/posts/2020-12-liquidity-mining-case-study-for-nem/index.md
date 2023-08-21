@@ -14,6 +14,8 @@ Over the past few weeks, we have seen great participation from NEM liquidity min
 
 This result has demonstrated Hummingbot liquidity mining’s ability to not only help long-tail token projects graduate from its league but also well serve and add great value to Top 20 projects like NEM. Both the Hummingbot and NEM communities feel excited about the result, and will continue working hard on the ongoing success of the campaign. 
 
+<!-- more -->
+
 ![](price-for-xem.png)
 
 > **“I like the idea of paying a community rather than paying a market maker. I like the decentralized nature of it.” -- Nicholas Pelecanos, Head of Trading at NEM**

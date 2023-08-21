@@ -18,6 +18,9 @@ Avalanche is an open-source platform for launching decentralized finance applica
 
 Led by Professor Emin Gün Sirer, creator of the first coin minted through proof-of-work in 2003, and supported by pioneering researchers from Cornell University, Avalanche is built on the third major breakthrough in distributed systems, and first since the Bitcoin whitepaper in 2008.
 
+
+<!-- more -->
+
 AVAX is the native token of Avalanche. It is a hard-capped, scarce asset that is used to pay for fees, secure the network through staking, and provide a basic unit of account between the multiple subnetworks created on the Avalanche platform.
 
 Since launching mainnet on September 21, Avalanche has over 630 full, block-producing validators participating in-network consensus, and an additional 2,500 delegators participating in staking. Collectively, they account for over $1B in AVAX staked to secure the network.

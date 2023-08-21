@@ -18,6 +18,8 @@ The Mainframe Lending Protocol allows anyone to borrow against their crypto by l
 
 Since late 2017, Mainframe has had one of the largest communities supporting its mission of economic freedom and financial access. Mainframe is backed by the top names in VC and Crypto, including ArringtonXRP, NEO Global Capital, FBG, Shapeshift's Erik Voorhees, ICON's Min Kim, Ethereum's Gavin Wood, Zilliqa's Xinshu Dong, and many many more.
 
+<!-- more -->
+
 ### Liquidity Mining Campaign for Mainframe (MFT) Tokens
 
 Traditionally, projects have engaged professional market makers to maintain liquidity for their tokens. However, professional market makers typically charge very high fees, require up to millions in assets for trading, and operate as a black box, with limited visibility into their strategies and trading activity.

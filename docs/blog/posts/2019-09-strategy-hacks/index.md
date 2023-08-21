@@ -25,6 +25,8 @@ Rationale
 - Trade a large block of assets by splitting into smaller trades that are spread out over a period of time.
 - Trade by placing limit orders, which is typically lower on most exchanges, instead of market orders.
 
+<!-- more -->
+
 A common need that arises for investors is to buy or sell a large block of an asset.  While an investor could do this all in one go, it may be more efficient to spread out trades over time to reduce slippage.  This particularly becomes more important for markets with thin order books, where order book depth may not allow for trading the entire size or would result in doing so at weighted average price multiple percentage points away from mid-market.
 
 As an alternative, the amount of asset to be traded can be broken up into smaller trades which can be placed at different points in time.

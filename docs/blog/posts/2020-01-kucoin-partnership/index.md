@@ -17,6 +17,8 @@ Integrating Hummingbot to KuCoin will enable KuCoin's account holders to deploy 
 
 Development of the KuCoin exchange connector is already underway.  The connector is currently undergoing testing and we expect to release the integration by the end of January 2020.  
 
+<!-- more -->
+
 #### KuCoin Support of Hummingbot
 
 As part of the partnership, KuCoin will be contributing a portion of the trading fees generated from Hummingbot users to the ongoing development of Hummingbot.  Hummingbot users can help support our project by using Hummingbot to trade on KuCoin.

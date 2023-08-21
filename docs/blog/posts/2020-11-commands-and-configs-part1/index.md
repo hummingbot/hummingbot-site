@@ -26,6 +26,8 @@ Starting to use **Hummingbot** can be daunting at first, and you might feel a bi
 
 We do have a great [documentation](https://docs.hummingbot.io/) center that can help you to understand what you can do with Hummingbot, but if you still feel it is a lot of information to digest, allow me to guide you through everything you need to know to successfully run your market making bot.
 
+<!-- more -->
+
 #### Understanding the Hummingbot screen
 
 But before we start, we have to talk a bit about the **Hummingbot** screen:

@@ -22,6 +22,8 @@ After running the bot for a while, you probably want to know how good and profit
 
 For that, you will need the commands below to evaluate the performance of your Hummingbot.
 
+<!-- more -->
+
 #### history
 
 With `history` you will be able to see the last 100 trades executed by your Hummingbot and the performance of the current session.

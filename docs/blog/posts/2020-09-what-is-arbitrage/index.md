@@ -22,6 +22,9 @@ Last week we published the [first article](https://hummingbot.io/blog/2020-09-wh
 
 Here at **[Hummingbot Academy](https://hummingbot.io/academy/),** our goal is to help you learn more about **market making** and **arbitrage**, and how to use our [free open-source robot](https://hummingbot.io/download/) to implement your own strategy.
 
+<!-- more -->
+
+
 ### But what is arbitrage?
 
 The concept of **arbitrage** is pretty simple:

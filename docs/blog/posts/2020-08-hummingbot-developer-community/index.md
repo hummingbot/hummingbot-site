@@ -14,6 +14,9 @@ We knew that we would have to create the first few exchange integrations, but we
 
 Since we launched last year, [58 unique developers](https://github.com/coinalpha/hummingbot) have contributed to the open source Hummingbot codebase. But we’re also aware we should be doing more to support the many developers, both professional and individuals, who want to customize Hummingbot for their own needs and contribute to the open source codebase.
 
+
+<!-- more -->
+
 In spite of our relatively incomplete documentation and constantly evolving codebase, many developers have forked Hummingbot and built their own exchange connectors, which is why we recently announced a [community governance initiative](https://hummingbot.io/blog/2020-08-exchange-connector-governance/) to vote on which forks we support and merge into the official codebase. In addition, many developers want to learn how to use our new Scripts feature that lets you use market data to fine-tune bot behavior and even create their own Hummingbot strategies.
 
 To better support the burgeoning Hummingbot developer community, I’m excited to announce the following initiatives:

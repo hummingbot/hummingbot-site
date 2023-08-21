@@ -15,6 +15,8 @@ In this post, we will introduce Tom aka Channaholic, an engineering student and 
 Let’s meet Tom!
 ![](./image-1.png)
 
+<!-- more -->
+
 <hr />
 
 ### How did you become interested in crypto trading?

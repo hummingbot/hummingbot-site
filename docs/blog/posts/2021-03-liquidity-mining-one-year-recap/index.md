@@ -29,6 +29,9 @@ We are thrilled that over the past year, the platform has provided liquidity for
 
 - Top ranked miner has earned **$66,092** equivalent in rewards, while the #2 miner has earned **$21,941** equivalent 
 
+
+<!-- more -->
+
 ### February 2021 highlights:
 - **Launch of liquidity mining on KuCoin!** We launched campaigns for **Algorand**, **Harmony (ONE)**, and our promotional campaign for **Bitcoin** and **Ethereum**
 

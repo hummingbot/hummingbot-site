@@ -20,6 +20,8 @@ These initial campaigns will reward participants for trading in eligible tokens 
 
 Rewards will be paid out weekly based on weekly periods beginning on Tuesdays 12.00am GMT through the following Tuesday.
 
+<!-- more -->
+
 ### What is liquidity mining?
 
 **Decentralized, community-based market making.** Liquidity mining allows anyone (communities, the general market) to participate in market making for a token and contribute to its liquidity and improve the tradability of that token.  By participating, users are not only helping to support the token and the project, but through liquidity mining, they are able to earn token rewards based on their trading activity.

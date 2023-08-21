@@ -17,6 +17,8 @@ The token has materially outperformed even against the backdrop of the bullish o
 
 With liquidity mining, Zilliqa was able to solely rely on the group of individual liquidity miners to promote liquidity without spending large amounts (fees and token inventory) on professional services provided by market making firms. So far during the 3-month liquidity mining campaign period, **307 distinct liquidity miners participated and earned rewards**. **They were accounting for as much as 10-20% of total ZIL trading volume on Binance from March to April**, and as much as 30-60% for the less liquid trading pairs (ZILETH and ZILBNB). This result was considered successful by both of the Hummingbot and Zilliqa communities. 
 
+<!-- more -->
+
 ### Trading community engagement: an important component of community engagement
 
 A fundamental reason for this strong token performance we’ve witnessed is due to the quality of the project and its demonstrated progress on its platform and technology.  But also important is increased public awareness, community engagement and adoption.  Case in point, here is a post from June 2019 discussing ZIL price - [Why has Zilliqa’s token underperformed, despite the successful mainnet launch?](https://medium.com/swlh/why-has-zilliqas-token-underperformed-despite-the-successful-mainnet-launch-8ba1c48143d7). In contrast to the ZIL token performance seen in recent weeks, Zilliqa’s project development in 2019 (even something as substantial as a successful and stable mainnet launch!) did little to move ZIL token price and increase trading activity.

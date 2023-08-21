@@ -21,6 +21,9 @@ Vik bought her first Bitcoin at the top of the market in December 2017, but she 
 
 I am a microelectronic engineer by education. But after graduation, I changed my area of expertise to 3D computer graphics and started my own project within which we made 3D models and extensions for Autodesk 3Ds Max software. I’ve also always been passionate about code, data, and trading so even though I’ve been on the project for over 10 years, I’ve found myself really happy when I do development and trading. So now I’m changing my path again and I’m at a crossroad because I am eager to go for everything from cryptocurrencies and algorithmic trading to Machine Learning and AI.
 
+<!-- more -->
+
+
 ### When did you start investing in crypto?
 
 I bought my first Bitcoin almost at the top in December 2017 with the money that I made in forex trading. I didn’t like the commission I paid so I exchanged everything for different altcoins that I thought had potential. Of course I lost almost everything the next year. **But I saw it mostly as a game where I lost the first round just by dipping my toe in it. Afterwards, I was captured by the crypto world and made much more profit than what I lost due to various distributions, contests and trading.**

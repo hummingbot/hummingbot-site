@@ -18,6 +18,8 @@ Hummingbot is an open-source crypto trading software client that allows users to
 
 Binance is a global cryptocurrency exchange that provides a platform for trading more than 100 cryptocurrencies. Since early 2018, Binance has been considered as the biggest cryptocurrency exchange in the world in terms of trading volume.
 
+<!-- more -->
+
 In early March, Hummingbot launched the inaugural liquidity mining campaigns, a series of community-driven liquidity programs for four token projects listed on Binance. Within the first two weeks, 155 individual traders participated in the campaigns, earning as much as $200 in weekly rewards and collectively generating over [$7 million of filled order volume](https://www.reddit.com/r/Hummingbot/comments/fkxlsl/daily_update_march_18_2020_two_week_recap/).
 
 To turbocharge the growth, we are working closely with Binance to expand the usage of Hummingbot on the exchange as well as participation in liquidity mining. Hummingbot provides all users easy-to-use infrastructure for automated trading of their favorite tokens on Binance. We believe that working with Binance will allow us to combine the strengths of both Binance’s state-of-the-art platform and our innovative high frequency trading infrastructure.

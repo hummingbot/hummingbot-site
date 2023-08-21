@@ -20,6 +20,8 @@ In addition, this strategy bridges the disparate worlds of centralized order boo
 
 Celo is a new Layer 1 blockchain that is building a new global financial system centered around an algorithmic stablecoin called cUSD. We are huge fans of Celo because they share the ultimate mission as Hummingbot: giving financial superpowers to everyone, no matter where they live or how much money they have. 
 
+<!-- more -->
+
 To ensure that the cUSD stablecoin trades at or near $1.00, Celo maintains an automatic market maker (AMM) DEX on their blockchain that allows users to exchange the price-stable cUSD for cGLD, the price-fluctuating, volatile asset in the Celo system. Similar to Ethereum-based AMMs such as [Uniswap](https://uniswap.exchange/) and [Balancer](https://balancer.finance/), the Celo AMM uses a constant product market making algorithm, backed by cUSD and cGLD reserves, for liquidity.
 
 At the same time, cGLD and cUSD also trades on Bittrex and other centralized exchanges, across many different trading pairs, such as cGLD-USD, cGLD-USDT, and BTC-cUSD. Each of these trading pairs is an order book comprising hundreds of individual bids and offers at different amounts and price points.

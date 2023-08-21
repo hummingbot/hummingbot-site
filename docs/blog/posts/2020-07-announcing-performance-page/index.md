@@ -26,6 +26,8 @@ We did the hard work of data collection and analysis, so you don't have to!
 3. Select the market you are trading in, as well as the a period (defaults to last hour).
 4. Click Calculate.
 
+<!-- more -->
+
 You should see a time series graph for your past P&L, as well as a breakdown summary of your total earnings over the past period.
 
 There will also be a time series trade volume chart that details your traded volume over the past period.

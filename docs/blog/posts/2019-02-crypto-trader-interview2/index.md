@@ -21,6 +21,8 @@ Let’s meet Soham!
 
 Crypto was something I wasn't necessarily looking out for. Trading wise, I’ve been trading stocks for a while. In early 2017, no one really knew what was happening [in crypto]. I was like, “oh, this is interesting”. And I kind of came back to bitcoin that I had in my life. I was like “oh, it's growing a lot like this is an interesting asset class”.
 
+<!-- more -->
+
 You know once you kind of go down the rabbit hole, it's tough to get out. And then as you start learning more and more, obviously you need to know about the technology as well. I was in a market where you have so much volatility.
 
 It's funny that I had a lot of trust in the person who made me aware of crypto. I guess I had a lot of trust in doing this, so it wasn’t exactly a trust-less indie game. Obviously you have to learn to take the initiative yourself. You know, read the white paper, talk to other intelligent people, watch some youtube videos.

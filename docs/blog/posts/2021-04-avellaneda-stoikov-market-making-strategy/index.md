@@ -25,6 +25,8 @@ Today we will be discussing:
 *   How the strategy was implemented in Hummingbot
 
 
+<!-- more -->
+
 ## A brief explanation about the model proposal
 
 In their introduction, Avellaneda & Stoikov talk about a market maker's two main concerns:

@@ -27,6 +27,8 @@ Crypto exchanges and token projects spend an estimated $3 billion annually on [m
 
 This crypto-native industry stems from an supply and demand imbalance caused by a structural feature of crypto: **anyone can create a token, and anyone can create an exchange where tokens are traded**. Today, there are over 5,000 tokens and 300 exchanges, leading to over 35,000 unique markets (trading pairs) across a highly fragmented exchange landscape. These markets compete with one another based on liquidity, which measures how easily people can buy and sell something without losing money due to the bid-ask spread.
 
+<!-- more -->
+
 Despite a huge increase in the demand for liquidity, there hasn't been a commensurate increase in supply. Liquidity is supplied by market makers, a job that requires both inventory of capital dedicated to a particular market, as well as trading software that can rapidly and automatically create and cancel orders in response to fast-moving crypto markets.
 
 Due to these financial and technical requirements, crypto market makers are typically quantitative hedge funds who charge hefty fees and may require millions worth of inventory. These costs can be prohibitive for even the largest projects and exchanges, while the long tail of smaller projects and new exchanges can't afford them at all.

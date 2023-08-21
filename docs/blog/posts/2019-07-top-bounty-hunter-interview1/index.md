@@ -26,6 +26,9 @@ Very good. As a project, the community is great. The developers are very good. Y
 
 (Laughing) Some, not much. Given where hummingbot is, I wasn’t expecting to make money. I’ve used various trading bots previously. When [it comes to] software developing, you are going to expect a bumpy ride especially early days. So I don’t have much expectation, it’s more about learning. Just wanted to see if it’s going to be a good product for the future. Does it fit what I want to do for the future?
 
+<!-- more -->
+
+
 ### So you didn’t lose money by running hummingbot, right?
 
 No. I’m fairly cautious. I’ve got the kill switch. Also from inventory point of view, I haven’t put a lot of money in. I've been keeping the inventory small deliberately just so I can learn and understand how it works.

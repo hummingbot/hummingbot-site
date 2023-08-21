@@ -23,6 +23,7 @@ As an open-source project, our team is always happy to see community contributio
 
 To those ends, we will be sponsoring two bounties for the [Open Defi Hackathon](https://gitcoin.co/hackathon/open-defi/onboard), each of them with a **1500 USDT prize for the winner** and 500 USDT in tips distributed to meaningful submissions.
 
+<!-- more -->
 
 ### Bounty #1
 

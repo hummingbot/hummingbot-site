@@ -17,6 +17,9 @@ For campaigns paying out in native tokens, participating liquidity miners will e
 The inaugural campaign paying out rewards in native tokens is the iExec liquidity mining campaign. For the period starting Tuesday, August 18 12.00am UTC, liquidity miners participating in iExec’s campaign will start earning rewards in RLC. The weekly rewards available for the RLC campaign will be as follows:
 ![](./rlc-table.png)
 
+
+<!-- more -->
+
 When you click on a market in the miner’s app, you will now see the following:
 
 ![](./payout-asset.png)
