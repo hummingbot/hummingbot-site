@@ -3,7 +3,7 @@ type: "blog"
 title: "A developer's guide to crypto algo trading"
 description: ""
 author: "coinalpha"
-date: "2019-01-18"
+date: 2019-01-18
 image: "./cover.jpeg"
 tags: ["trading concepts"]
 level: "Developer"
