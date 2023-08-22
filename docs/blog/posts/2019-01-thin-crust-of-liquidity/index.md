@@ -1,6 +1,7 @@
 ---
 date: 2019-01-30
-authors: "coinalpha"
+authors:
+ - coinalpha
 categories:
  - Market making
 ---
