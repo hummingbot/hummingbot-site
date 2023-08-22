@@ -3,10 +3,11 @@ date: 2022-01-01
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 2
 ---
 
-# [Level 2] Set up your Hummingbot
+# Set up your Hummingbot
 
 ### Welcome to **Level 2**!
 In this level, we will teach you how to set up Hummingbot client and a Hummingbot miner account to start earning liquidity mining rewards. We will walk you through different common strategies and teach you two basic strategies (pure market making and cross exchange-market making) to get you started with your bot. We will also provide tips on selecting markets, dealing with different market situations, and beginner level tips to reduce inventory risk.

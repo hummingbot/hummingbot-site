@@ -1,9 +1,10 @@
 ---
-date: 2022-01-01
+date: 2022-01-03
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Liquidity mining
 ---
 
 # [Level 3] Advanced strategies and tips

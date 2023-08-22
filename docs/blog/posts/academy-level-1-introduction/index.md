@@ -3,10 +3,11 @@ date: 2022-01-01
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 1
 ---
 
-# [Level 1] Hummingbot Introduction
+# Hummingbot Academy
 
 
 Welcome to **Level 1** of Hummingbot Academy!

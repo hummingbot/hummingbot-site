@@ -1,18 +1,16 @@
 ---
-date: 2022-01-01
+date: 2022-01-02
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 2
+  - Market making
 ---
 
-# [Level 2] Strategy #1: Pure Market Making (PMM) Strategy
+# Strategy #1: Pure Market Making (PMM) Strategy
 
-Here's the content formatted in Markdown:
-
----
-
-## **Tips for choosing the right spread**
+## Tips for choosing the right spread
 
 It is important to choose the right spread that balances liquidity mining rewards and having fewer filled trades (hence reducing transaction fees). Too small spread will increase the risk of fill orders, and as a result, the rewards cannot cover the loss due to transaction fees. Excessive spreads will lead to a drop in yield or even the inability to get rewards (each token has an agreed-upon maximum spread for mining rewards).
 

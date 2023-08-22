@@ -1,12 +1,14 @@
 ---
-date: 2022-01-01
+date: 2022-01-03
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 3
+  - Deployment
 ---
 
-# [Level 3] Build the right setup: game up your Hummingbot liquidity mining
+# Build the right setup: game up your Hummingbot liquidity mining
 
 
 ## Running Hummingbot 24/7 in the cloud

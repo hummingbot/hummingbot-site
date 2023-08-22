@@ -3,10 +3,11 @@ date: 2022-01-01
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 3
 ---
 
-# [Level 3] Improve your Hummingbot Performance
+# Improve your Hummingbot Performance
 
 
 ### Welcome to **Level 3**!

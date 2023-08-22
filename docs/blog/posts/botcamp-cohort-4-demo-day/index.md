@@ -3,22 +3,14 @@ date: 2023-05-25
 authors:
   - foundation
 categories:
-  - Academy
+  - Botcamp
 ---
 
 # Botcamp Cohort #4 Demo Day Recap
 
-
 We recently finished our **fourth cohort** of [Hummingbot Botcamp](https://hummingbot.org/botcamp?ref=blog.hummingbot.org) with Demo Day, where participants showcased the custom trading scripts they developed over the course of the Botcamp intensive 6-week online core course!
 
-Watch the highlights or see below for each script presented:
-
-At Hummingbot Foundation, our mission is to **democratize quantitative trading**. Botcamp provides hand-on training that helps students learn to create sophisticated trading strategies using Hummingbot, while at the same time creating **open source examples** for future Hummingbot users!
-
 The Botcamp participants in this cohort were a dynamic mix of enthusiastic software developers, enterprising startup founders, and adept quant traders, all keen on honing their own unique trading strategies and skills. Botcamp is a professional community with regular events, and numerous participants have forged strong bonds well beyond the program's duration.
-
-Demo Day #4 Scripts
--------------------
 
 Let's take a look at what Botcamp participants presented for Demo Day #4!
 
@@ -27,6 +19,8 @@ Let's take a look at what Botcamp participants presented for Demo Day #4!
 ![](image_1.jpg)
 
 Roland wrote a script that creates a self-rebalancing portfolio based on a 1/N strategy, ensuring ideal diversification without the need for specific parameters, thus offering a satisfactory baseline performance.
+
+<!-- more -->
 
 Specifically, the strategy allocates equally across N different assets. This approach promotes a broad diversification that can effectively mitigate risks associated with individual investments. By adopting this straightforward strategy, investors can sidestep the often complex task of predicting future asset performance or understanding intricate asset correlations. Moreover, it provides a reasonable baseline performance, making it an excellent choice for those new to investing or for those preferring simplicity over more complex, possibly riskier strategies.
 
@@ -79,4 +73,4 @@ Learn how to create custom trading strategies like these by joining our next coh
 
 We cap the number of students in order to deliver a high quality experience to all participants, so [reserve your spot](https://botcamp.hummingbot.org/?ref=blog.hummingbot.org) today before they are all gone!
 
-
+At Hummingbot Foundation, our mission is to **democratize quantitative trading**. Botcamp provides hand-on training that helps students learn to create sophisticated trading strategies using Hummingbot, while at the same time creating **open source examples** for future Hummingbot users!

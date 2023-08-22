@@ -1,14 +1,15 @@
 ---
-title: "Extracting the best value from your Hummingbot - Order Management configurations"
-author: "coinalpha"
-description: "How to manage your orders"
 date: 2021-02-18
-image: "./Cover.png"
-level: "Beginner"
-tags: ["configuration", "trading concepts"]
-featured: false
-rank: 4
+authors:
+  - coinalpha
+categories:
+  - Guides
+  - Level 2
 ---
+
+# How to Manage Your Orders
+
+![](./Cover.png)
 
 Welcome to another piece of this series where we go through all possible configurations you can use on Hummingbot and explore the concepts behind them!
 

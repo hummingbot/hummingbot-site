@@ -1,9 +1,10 @@
 ---
-date: 2022-01-01
+date: 2022-01-02
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 2
 ---
 
 # Exploring strategies and configurations

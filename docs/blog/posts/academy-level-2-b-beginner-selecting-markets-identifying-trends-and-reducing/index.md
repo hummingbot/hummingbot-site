@@ -1,12 +1,13 @@
 ---
-date: 2022-01-01
+date: 2022-01-02
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 2
 ---
 
-# [Level 2] Selecting markets, identifying trends, and reducing inventory risk
+# Selecting markets, identifying trends, and reducing inventory risk
 
 ## Tips for Selecting Markets
 Choosing the right market is the key to liquidity mining success. Here are some tips for selecting markets:

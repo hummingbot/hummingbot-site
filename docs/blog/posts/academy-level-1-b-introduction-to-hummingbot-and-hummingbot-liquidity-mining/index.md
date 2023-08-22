@@ -3,10 +3,12 @@ date: 2022-01-01
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 1
+  - Liquidity mining
 ---
 
-# [Level 1] Introduction to Hummingbot and Liquidity Mining Campaigns
+# Introduction to Hummingbot and Liquidity Mining Campaigns
 
 # What is Hummingbot?
 

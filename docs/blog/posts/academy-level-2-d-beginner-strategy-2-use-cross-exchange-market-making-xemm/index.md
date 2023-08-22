@@ -1,16 +1,16 @@
 ---
-date: 2022-01-01
+date: 2022-01-02
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 2
+  - Market making
 ---
 
 # [Level 2] Use Cross-Exchange Market Making (XEMM) Strategy to Lower Risk
 
 ### What is cross exchange market making?
-
----
 
 Cross exchange is a **maker-taker** strategy. Read more through the docs link and blog below:
 
@@ -32,8 +32,6 @@ This article explains:
 
 ### Cross exchange market making reduces inventory risk
 
----
-
 Arbitrage and cross-exchange market making are often considered and described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: inventory risk. The main risk that remains is execution risk. To learn more, please read the following blog post:
 
 [![What is cross exchange market making?](https://blog.hummingbot.org/content/images/2022/09/What_is_Cross_Exchange_Market_Making.webp)](https://blog.hummingbot.org/blog-2020-09-what-is-cross-exchange-market-making/)
@@ -42,11 +40,9 @@ Arbitrage and cross-exchange market making are often considered and described as
 
 ### The concept behind cross exchange market making strategy
 
----
-
 Our video is outdated in terms of Hummingbot UI but explains the idea of cross exchange market making strategy.
 
-[![Hummingbot School] Lesson 1 - Cross-exchange market making strategy | Crypto high frequency trading](https://www.youtube.com/embed/jVIagFbQnmo)](https://www.youtube.com/embed/jVIagFbQnmo)
+[Cross-exchange market making strategy](https://www.youtube.com/embed/jVIagFbQnmo)
 
 Basically, you want to make a market on a less liquid exchange or pair and take from the more liquid market. Your order prices are based on how much you can buy or sell the asset from the other market.
 
@@ -64,8 +60,6 @@ As an example, let's say you decided to put up a store in your remote area where
 
 ### Creating sell order in maker, executing a buy order from taker market
 
----
-
 You're thinking of selling an item and want to make a 20% profit from it. So you checked the price at STORE B and saw that you can buy the exact same item for $100 (tax not yet included).
 
 Initially, you were thinking of selling it at $120 but you also have to consider taxes (fees) in making those trades. Taxes are at 0.1% and since you're making two trades (sell and buy), you have to pay for it twice. So you want to sell it for $120.22 because:
@@ -78,30 +72,21 @@ You've put it in display waiting for someone to drop by your store and buy the i
 
 ### Creating buy order in maker, executing a sell order from taker market
 
----
-
 It works the same as the example above, but in reverse. In this case, you want to buy items at the price of how much you can profit from selling it at the more liquid market.
 
-### Setting price source configurations
+### Cross-exchange market making in action
 
----
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/gwLjSe0t8K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[![Extracting the best value from your Hummingbot - Price Source Configurations](https://blog.hummingbot.org/content/images/2022/09/Extracting_the_best_value_from_your_Hummingbot_-_Price_Source_Configurations.webp)](https://blog.hummingbot.org/blog-2020-11-commands-and-config-price-source/)
-> **Extracting the best value from your Hummingbot - Price Source Configurations**  
-> by Paulo Henrique Welcome back to the series of articles where you will learn how to make the best use of your Hummingbot configurations. In the two latest articles (Commands part 1 and Commands part 2), we went through all the commands you can use on your client terminal.
+### Advanced: Setting price source configurations
 
 The inefficiencies caused by the highly fragmented cryptocurrency market create a lot of opportunities for arbitrageurs and market makers, who can take advantage of the price discrepancies between all the markets. One helpful way is to make use of our price source configurations to navigate these price discrepancies.
 
-In this blog, you
+In this blog, you will learn:
 
- will learn:
 1. The configurations you can use on Hummingbot to set price sources
 2. The various price sources Hummingbot can use as a reference
 3. How the information about price moves around different markets
 4. Why we should use the price information from a different source
 
-**Cross-exchange market making in action**
-
-[![Cross Exchange Market Making Strategy in FTX  | Hummingbot Live](https://www.youtube.com/embed/gwLjSe0t8K8)](https://www.youtube.com/embed/gwLjSe0t8K8)
-
-Understand how you can apply cross-exchange market making in action.
+[Extracting the best value from your Hummingbot - Price Source Configurations](/2020/11/blog-2020-11-commands-and-config-price-source/)

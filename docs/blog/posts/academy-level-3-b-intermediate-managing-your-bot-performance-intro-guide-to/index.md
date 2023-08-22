@@ -1,12 +1,13 @@
 ---
-date: 2022-01-01
+date: 2022-01-03
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 3
 ---
 
-# [Level 3] Managing your bot performance: Intro guide to managing P&L
+# Managing your bot performance: Intro guide to managing P&L
 
 
 ## How does Hummingbot measure PnL ?

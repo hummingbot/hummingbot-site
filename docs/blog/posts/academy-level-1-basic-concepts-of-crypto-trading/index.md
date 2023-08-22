@@ -3,10 +3,11 @@ date: 2022-01-01
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 1
 ---
 
-# [Level 1] Basic Concepts of Crypto Trading
+# Basic Concepts of Crypto Trading
 
 
 ### Order Book

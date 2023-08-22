@@ -1,15 +1,14 @@
 ---
-date: 2022-01-01
+date: 2022-01-02
 authors:
   - foundation
 categories:
-  - Academy
+  - Guides
+  - Level 2
 ---
 
-# [Level 2] Fundamental philosophies for success, tips, hacks, and advice
+# Top misconceptions and tips for success with Hummingbot
 
-# Top misconceptions
----
 Trading is a rewarding and risky activity. If you’re new to Hummingbot, you’re in the midst of a mature community that has found market making to be both exciting and profitable in the long term. That might be you, but before you go all-in and mortgage your house in crypto trading, here are the top seven pitfalls and misconceptions that all Hummingbot beginners face. This article works best if you’ve at least spent some time taking Hummingbot on a test drive, but it’s by no means a requirement.
 
 <!-- more -->
