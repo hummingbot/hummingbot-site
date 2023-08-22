@@ -24,9 +24,7 @@ So why PMM strategy? Hmm, well it works, & simple. I have learned to use it even
 
 I am now about to share the favorite parameters that I set for all bots. Roll up your sleeves, guys, lets get officially started.
 
-
 <!-- more -->
-
 
 First, I highly recommend to use **price_ceiling** and **price_floor** parameters for all bots, no exception. I usually set it at **3-5%** from mid-price. You can use this [excel file](https://dcventuresxyz-my.sharepoint.com/:x:/g/personal/carl_dcventuresxyz_onmicrosoft_com/EaQErjt_IllKqMCNEVhDPsEBgKuR4ILkUd0QUJTM3ivk7g?e=DXEewv&ref=blog.hummingbot.org) for easier calculation. These parameters are extremely important so bots will not be tricked to buy at high price, and then sell at low price. You know, those candle wicks. Those will not be scary anymore to us. Yes, this is extra work, but this is extra money saved, well worth it if you ask me. Alternatively, you can use the price band script. I don�t know how. You can ask community via discord. I heard you�ve got kind members, & supports always willing to help.
 
@@ -49,5 +47,3 @@ I am surprised to have the lucky no 7 above. There is an Eight item, about using
 I have to insert this another extremely important concept. I have given ranges of values for different parameters above, these are the actual values that we are using. This also means that we do not have template parameters for all bots. Each pair is treated individually & respectfully to warrant a unique set of parameters. No, guys, don't copy & paste. Try your best to understand the parameters & the pairs, then you too will succeed. And last, parameters are not set-and-forget things. You need to keep adjusting based on chart movements. I usually change spreads and order amount throughout the day, or whenever chart becomes volatile.
 
 Putting experiences into words are no easy tasks. Please pardon language & grammar. I have re-read & changed many times. I did my best. I hope it is clear & useful, especially for beginners, as I made it to be practical as possible. Thank you for reading!
-
-
