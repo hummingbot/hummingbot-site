@@ -2,7 +2,7 @@
 title: "Top liquidity miner interview featuring Neohowie"
 author: "coinalpha"
 description: ""
-date: "2020-05-27"
+date: 2020-05-27
 image: "./cover.png"
 level: "Beginner"
 tags: ["liquidity mining", "trader interviews"]

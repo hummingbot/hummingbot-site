@@ -2,7 +2,7 @@
 title: "Hummingbot roadmap for 2020"
 author: "Michael Feng"
 description: "What we plan to ship in 2020"
-date: "2020-01-02"
+date: 2020-01-02
 image: "./roadmap.jpg"
 tags: ["announcement"]
 featured: false

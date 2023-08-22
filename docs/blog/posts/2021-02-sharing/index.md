@@ -2,7 +2,7 @@
 title: "Sharing is caring: 3 trading pairs I picked"
 author: "coinalpha"
 description: ""
-date: "2021-02-14"
+date: 2021-02-14
 image: "./cover.png"
 level: "Beginner"
 tags: ["strategy","configuration","risk management","liquidity mining"]

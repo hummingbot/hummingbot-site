@@ -2,7 +2,7 @@
 title: "Hummingbot announces partnership with and gitcoin bounty for Liquid.com"
 author: "Carlo P. Las Marias"
 description: ""
-date: "2019-10-17"
+date: 2019-10-17
 image: "./cover.png"
 tags: ["announcement", "hummingbot", "community"]
 featured: false

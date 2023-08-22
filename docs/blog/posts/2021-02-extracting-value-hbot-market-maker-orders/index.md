@@ -2,7 +2,7 @@
 title: "Extracting the best value from your Hummingbot - Order Management configurations"
 author: "coinalpha"
 description: "How to manage your orders"
-date: "2021-02-18"
+date: 2021-02-18
 image: "./Cover.png"
 level: "Beginner"
 tags: ["configuration", "trading concepts"]

@@ -2,7 +2,7 @@
 title: "Hummingbot vs Uniswap: two approaches to liquidity" 
 author: "Michael Feng"
 description: "How do they compare?"
-date: "2019-04-12"
+date: 2019-04-12
 image: "./cover.png"
 tags: ["market making", "liquidity mining", "hummingbot"]
 level: "Beginner"

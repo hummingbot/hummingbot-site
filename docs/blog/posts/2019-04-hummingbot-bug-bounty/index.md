@@ -3,7 +3,7 @@ title: "Introducing the Hummingbot bug bounty program"
 subtitle: "Welcome to the Hummingbot bug bounty program!"
 description: "All your bugs belong to us!"
 author: "coinalpha"
-date: "2019-04-16"
+date: 2019-04-16
 image: "./cover.png"
 tags: ["announcement"]
 ---

@@ -2,7 +2,7 @@
 title: "Launching new Binance.US and Binance futures connectors"
 author: "coinalpha"
 description: ""
-date: "2020-11-02"
+date: 2020-11-02
 image: "./binance-us-and-binance-perpetual.jpg"
 tags: ["announcement"]
 featured: false

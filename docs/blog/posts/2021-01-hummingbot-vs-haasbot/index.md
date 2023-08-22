@@ -2,7 +2,7 @@
 title: "Hummingbot vs Haasbot"
 author: "coinalpha"
 description: "Basic market making comparison between Hummingbot and Haasbot"
-date: "2021-01-31"
+date: 2021-01-31
 image: "./hassbot-vs-hummingbot.png"
 tags: ["liquidity mining", "market making"]
 ---

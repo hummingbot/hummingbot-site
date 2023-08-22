@@ -2,7 +2,7 @@
 title: "Open-DeFi Hackathon | Join the hunt for Hummingbot bounties"
 author: "coinalpha"
 description: ""
-date: "2021-04-21"
+date: 2021-04-21
 image: "./cover.png"
 tags: ["announcement", "hummingbot"]
 featured: false

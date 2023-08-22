@@ -2,7 +2,7 @@
 title: "Hummingbot's Year in Review 2020"
 author: "coinalpha"
 description: "What have we achieved during this unforgettable year?"
-date: "2020-12-31"
+date: 2020-12-31
 image: "./Cover.png"
 tags: ["hummingbot"]
 featured: false

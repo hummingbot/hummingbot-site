@@ -2,7 +2,7 @@
 title: "Extracting the best value from your Hummingbot - Commands part 2 and Global Configurations"
 author: "coinalpha"
 description: ""
-date: "2020-11-12"
+date: 2020-11-12
 image: "./commands-and-configs-2.jpg"
 level: "Beginner"
 tags: ["configuration", "risk management", "hummingbot"]

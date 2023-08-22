@@ -3,7 +3,7 @@ type: "blog"
 title: "Deep dive: we answer 7 common questions about Hummingbot"
 description: ""
 author: "coinalpha"
-date: "2019-03-22"
+date: 2019-03-22
 image: "./cover.jpg"
 tags: ["hummingbot"]
 level: "Beginner"

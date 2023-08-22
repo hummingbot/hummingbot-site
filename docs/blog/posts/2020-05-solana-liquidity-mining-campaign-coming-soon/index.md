@@ -2,7 +2,7 @@
 title: "Solana liquidity mining campaign going live on May 26, 2020!"
 author: "Carlo P. Las Marias"
 description: ""
-date: "2020-05-13"
+date: 2020-05-13
 image: "./cover.png"
 tags: ["liquidity mining", "announcement"]
 featured: false

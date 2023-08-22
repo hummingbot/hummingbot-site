@@ -3,7 +3,7 @@ type: "blog"
 title: "Crypto trading bots in 2019: How easy are they to use? | Batch #2"
 description: ""
 author: "coinalpha"
-date: "2019-05-17"
+date: 2019-05-17
 image: "./cover.jpg"
 tags: ["bot reviews"]
 level: "Beginner"

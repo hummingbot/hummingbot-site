@@ -3,7 +3,7 @@ type: "blog"
 title: "Exchange types explained: CLOB, RFQ, and Automated, oh my!"
 description: ""
 author: "carlo"
-date: "2019-04-24"
+date: 2019-04-24
 image: "./cbot-trading-pit.png"
 tags: ["trading concepts"]
 level: "Beginner"

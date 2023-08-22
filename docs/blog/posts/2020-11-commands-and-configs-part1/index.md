@@ -2,7 +2,7 @@
 title: "Extracting the best value from Hummingbot - Commands part 1"
 author: "coinalpha"
 description: ""
-date: "2020-11-11"
+date: 2020-11-11
 image: "./commands-and-configs-1.jpg"
 level: "Beginner"
 tags: ["configuration", "risk management", "hummingbot"]

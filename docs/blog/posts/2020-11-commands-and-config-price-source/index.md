@@ -2,7 +2,7 @@
 title: "Extracting the best value from your Hummingbot - Price Source Configurations"
 author: "coinalpha"
 description: ""
-date: "2020-11-25"
+date: 2020-11-25
 image: "./pricesource.jpg"
 level: "Experienced"
 tags: ["hummingbot", "configuration", "trading concepts"]

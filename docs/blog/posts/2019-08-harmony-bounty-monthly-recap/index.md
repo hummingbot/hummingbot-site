@@ -2,7 +2,7 @@
 title: "$ONE Makers July recap & August reward schedule"
 author: "coinalpha"
 description: "Community-based market making programs"
-date: "2019-08-01"
+date: 2019-08-01
 image: "./cover.png"
 tags: ["announcement", "liquidity mining"]
 featured: false

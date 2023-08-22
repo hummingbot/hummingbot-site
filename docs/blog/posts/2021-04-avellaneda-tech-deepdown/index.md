@@ -2,7 +2,7 @@
 title: "Avellaneda strategy: A technical deep dive"
 author: "coinalpha"
 description: ""
-date: "2021-04-22"
+date: 2021-04-22
 image: "./cover.png"
 level: "Developer"
 tags: ["strategy", "market making", "hummingbot engineering"]

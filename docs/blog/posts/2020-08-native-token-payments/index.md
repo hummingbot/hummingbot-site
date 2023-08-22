@@ -2,7 +2,7 @@
 title: "Introducing native token liquidity mining rewards!"
 author: "Carlo P. Las Marias"
 description: "iExec will now be paying out rewards in RLC tokens, ERC20 rewards now supported, non-Ethereum rewards coming soon"
-date: "2020-08-15"
+date: 2020-08-15
 image: "./cover.png"
 tags: ["liquidity mining", "announcement"]
 featured: false

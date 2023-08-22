@@ -2,7 +2,7 @@
 title: "🌊⛏ Liquidity Mining Launch!"
 author: "Carlo P. Las Marias"
 description: "The liquidity mining platform is now live with four inaugural campaigns on Binance!"
-date: "2020-03-03"
+date: 2020-03-03
 image: "./cover.png"
 tags: ["liquidity mining", "announcement"]
 featured: false

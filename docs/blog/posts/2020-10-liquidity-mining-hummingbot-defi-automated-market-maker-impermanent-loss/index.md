@@ -2,7 +2,7 @@
 title: "Hummingbot Miner vs. DeFi Liquidity Mining Part 2: Considerations for Market Makers/Liquidity Providers"
 author: "Carlo P. Las Marias"
 description: "Comparing Hummingbot Miner and AMM liquidity mining for market makers/liquidity providers"
-date: "2020-10-16"
+date: 2020-10-16
 image: "./hummingbot-vs-defi-2.jpg"
 level: "Beginner"
 tags: ["liquidity mining", "risk management"]

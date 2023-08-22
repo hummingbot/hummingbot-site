@@ -2,7 +2,7 @@
 title: "Celo + Hummingbot"
 author: "Michael Feng"
 description: "A new arbitrage strategy that helps the stability of the Celo protocol"
-date: "2020-06-03"
+date: 2020-06-03
 image: "./cover.jpg"
 tags: ["strategy", "hummingbot", "arbitrage"]
 featured: false

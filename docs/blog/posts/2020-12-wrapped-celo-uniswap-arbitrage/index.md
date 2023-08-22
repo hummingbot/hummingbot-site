@@ -2,7 +2,7 @@
 title: "New arbitrage opportunity: Wrapped CELO"
 author: "coinalpha"
 description: "A guide on how to arbitrage the new Wrapped Celo tokens on Uniswap"
-date: "2020-12-22"
+date: 2020-12-22
 image: "./Cover.png"
 level: "Beginner"
 tags: ["arbitrage", "strategy"]

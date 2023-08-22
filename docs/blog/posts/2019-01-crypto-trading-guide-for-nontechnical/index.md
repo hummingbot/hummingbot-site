@@ -3,7 +3,7 @@ type: "blog"
 title: "A non-technical crypto trader's guide to python and algo trading"
 description: ""
 author: "coinalpha"
-date: "2019-01-29"
+date: 2019-01-29
 image: "./cover.jpeg"
 tags: ["trading concepts", "market making", "arbitrage"]
 level: "Beginner"

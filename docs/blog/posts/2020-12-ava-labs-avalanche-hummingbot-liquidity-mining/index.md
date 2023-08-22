@@ -2,7 +2,7 @@
 title: "Launching Ava Labs’s Avalanche liquidity mining campaign"
 author: "coinalpha"
 description: "Launching liquidity mining campaign for AVAX/USDT, AVAX/BTC, AVAX/TRY, and AVAX/BNB on December 8, 2020 12.00am UTC"
-date: "2020-12-03"
+date: 2020-12-03
 image: "./ava-labs.png"
 tags: ["liquidity mining", "announcement"]
 featured: false

@@ -2,7 +2,7 @@
 title: "New feature announcement: performance dashboard"
 author: "coinalpha"
 description: ""
-date: "2020-07-08"
+date: 2020-07-08
 image: "./cover.jpg"
 tags: ["announcement", "hummingbot"]
 featured: false

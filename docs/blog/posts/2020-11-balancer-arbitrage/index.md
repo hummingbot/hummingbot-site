@@ -2,7 +2,7 @@
 title: "Introducing the new Balancer connector and arbitrage strategy!"
 author: "Michael Feng"
 description: ""
-date: "2020-11-11"
+date: 2020-11-11
 image: "./cover.jpg"
 tags: ["announcement", "arbitrage"]
 featured: false

@@ -2,7 +2,7 @@
 title: "Liquidity mining is coming to KuCoin!"
 author: "Carlo P. Las Marias"
 description: "Launching open beta liquidity mining campaigns on KuCoin for ONE and SUKU with VIP fee promotion!"
-date: "2020-09-22"
+date: 2020-09-22
 image: "./kucoin-liquidity-mining.jpg"
 tags: ["liquidity mining", "announcement"]
 featured: false

@@ -2,7 +2,7 @@
 title: "Top trader interview with Harry Yeh of Binary Fintech Group"
 author: "coinalpha"
 description: ""
-date: "2020-07-01"
+date: 2020-07-01
 image: "./cover.png"
 level: "Beginner"
 tags: ["market making", "trader interviews"]

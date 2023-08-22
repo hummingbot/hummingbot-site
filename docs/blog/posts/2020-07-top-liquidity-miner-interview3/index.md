@@ -2,7 +2,7 @@
 title: "Top liquidity miner interview featuring Vik"
 author: "coinalpha"
 description: ""
-date: "2020-07-27"
+date: 2020-07-27
 image: "./cover.png"
 level: "Beginner"
 tags: ["trader interviews", "liquidity mining"]

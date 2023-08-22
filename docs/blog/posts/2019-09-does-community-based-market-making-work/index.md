@@ -2,7 +2,7 @@
 title: "Does community-based market making work? Analyzing 2 months of data from $ONE Makers"
 description: ""
 author: "Michael Feng"
-date: "2019-09-09"
+date: 2019-09-09
 image: "./one-makers.jpg"
 tags: ["liquidity mining"]
 ---

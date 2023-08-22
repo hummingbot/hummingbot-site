@@ -2,7 +2,7 @@
 title: "Introducing Hummingbot Academy"
 author: "Paulo Henrique"
 description: "Overview of Hummingbot Academy and our plans for this project"
-date: "2020-10-05"
+date: 2020-10-05
 image: "./HB-Academy.jpg"
 level: "Beginner"
 tags: ["announcement"]

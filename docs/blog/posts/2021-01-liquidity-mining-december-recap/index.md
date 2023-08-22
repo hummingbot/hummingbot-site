@@ -2,7 +2,7 @@
 title: "Liquidity mining: December recap"
 author: "Carlo P. Las Marias"
 description: ""
-date: "2021-01-04"
+date: 2021-01-04
 image: "./december-2020-recap.png"
 tags: ["announcement"]
 featured: false

@@ -2,7 +2,7 @@
 title: "Hummingbot Miner: year 1 platform recap!"
 author: "Carlo P. Las Marias"
 description: "A review of the platform over the past year since our March 2, 2020 launch"
-date: "2021-03-02"
+date: 2021-03-02
 image: "./february-2021-recap.png"
 tags: ["announcement"]
 featured: false

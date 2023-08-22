@@ -2,7 +2,7 @@
 title: "Aggregate trade data collection notification"
 author: "coinalpha"
 description: ""
-date: "2020-12-14"
+date: 2020-12-14
 image: "./aggregate-data.png"
 level: "Beginner"
 tags: ["announcement"]

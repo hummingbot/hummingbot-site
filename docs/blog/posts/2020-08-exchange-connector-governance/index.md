@@ -2,7 +2,7 @@
 title: "Hummingbot connector governance"
 author: "Michael Feng"
 description: "Vote for the next exchange that we integrate into the open source Hummingbot codebase!"
-date: "2020-08-17"
+date: 2020-08-17
 image: "./cover.webp"
 tags: [ "hummingbot", "announcement", "governance" ]
 featured: false

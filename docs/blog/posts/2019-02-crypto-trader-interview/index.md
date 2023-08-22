@@ -3,7 +3,7 @@ type: "blog"
 title: "How I started crypto trading | Interview #1"
 description: ""
 author: "coinalpha"
-date: "2019-02-14"
+date: 2019-02-14
 image: "./cover.png"
 tags: ["trader interviews"]
 level: "Beginner"

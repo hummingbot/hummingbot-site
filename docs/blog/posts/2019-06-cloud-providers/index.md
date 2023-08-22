@@ -3,7 +3,7 @@ type: "blog"
 title: "How to run Hummingbot in the cloud: comparing different cloud providers"
 description: ""
 author: "coinalpha"
-date: "2019-06-13"
+date: 2019-06-13
 image: "./clouds.png"
 level: "Beginner"
 tags: ["hummingbot", "installation"]

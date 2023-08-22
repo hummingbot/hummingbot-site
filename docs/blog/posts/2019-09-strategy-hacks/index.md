@@ -2,7 +2,7 @@
 title: "Hummingbot Strategy Hacks 101"
 author: "Carlo P. Las Marias"
 description: "Creating new strategies from base strategies"
-date: "2019-09-17"
+date: 2019-09-17
 image: "./cover.png"
 level: "Experienced"
 tags: ["strategy"]

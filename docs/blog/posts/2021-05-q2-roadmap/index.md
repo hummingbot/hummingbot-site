@@ -2,7 +2,7 @@
 title: "Hummingbot Roadmap - Q2 2021"
 author: "Michael Feng"
 description: "With integrations to 20+ exchanges and an expanding list of protocols, Hummingbot helps both individual and professional quant traders all over the world skip the low-level drudgery of building and maintaining integrations to centralized and decentralized exchanges alike. Here are some initiatives we plan to ship over the rest of 2Q 2021 for both Hummingbot and Hummingbot Miner."
-date: "2021-05-06"
+date: 2021-05-06
 image: "./Q2_Roadmap.png"
 tags: ["hummingbot", "announcement"]
 featured: true

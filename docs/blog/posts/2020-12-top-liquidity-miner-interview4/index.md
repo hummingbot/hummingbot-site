@@ -2,7 +2,7 @@
 title: "Top liquidity miner interview featuring MrBig1964"
 author: "coinalpha"
 description: ""
-date: "2020-12-18"
+date: 2020-12-18
 image: "./Cover.png"
 level: "Beginner"
 tags: ["trader interviews", "liquidity mining"]

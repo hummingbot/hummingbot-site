@@ -2,7 +2,7 @@
 title: "Guest post: my take on market making and inventory risk"
 author: "coinalpha"
 description: ""
-date: "2020-06-18"
+date: 2020-06-18
 image: "./cover.png"
 level: "Experienced"
 tags: ["market making", "trading concepts", "risk management"]

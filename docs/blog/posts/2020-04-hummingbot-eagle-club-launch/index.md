@@ -2,7 +2,7 @@
 title: "Introducing the Eagle Club"
 author: "coinalpha"
 description: ""
-date: "2020-04-06"
+date: 2020-04-06
 image: "./cover.png"
 tags: ["liquidity mining", "announcement"]
 featured: false

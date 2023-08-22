@@ -2,7 +2,7 @@
 title: "Hummingbot partners with Crypto.com exchange for high frequency trading and liquidity mining"
 author: "Carlo P. Las Marias"
 description: ""
-date: "2020-09-09"
+date: 2020-09-09
 image: "./hummingbot-crypto_com.png"
 tags: ["announcement", "liquidity mining"]
 featured: false

@@ -2,7 +2,7 @@
 title: "Using TradingView and webhooks to automate Hummingbot"
 author: "coinalpha"
 description: ""
-date: "2021-01-06"
+date: 2021-01-06
 image: "./tradingview.png"
 level: "Experienced"
 tags: ["strategy","configuration", "risk management", "hummingbot"]

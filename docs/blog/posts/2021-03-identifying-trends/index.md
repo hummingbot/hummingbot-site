@@ -2,7 +2,7 @@
 title: "Identifying trends"
 author: "Thomas Yit"
 description: ""
-date: "2021-03-18"
+date: 2021-03-18
 image: "./cover.png"
 level: "Beginner"
 tags: ["strategy","liquidity mining"]

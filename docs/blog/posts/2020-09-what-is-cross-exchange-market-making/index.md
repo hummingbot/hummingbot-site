@@ -2,7 +2,7 @@
 title: "What is cross exchange market making?"
 author: "coinalpha"
 description: ""
-date: "2020-09-23"
+date: 2020-09-23
 image: "./xemm.jpg"
 level: "Beginner"
 tags: ["market making", "trading concepts"]

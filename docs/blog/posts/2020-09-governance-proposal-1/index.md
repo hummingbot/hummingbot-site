@@ -2,7 +2,7 @@
 title: "Governance proposal #1"
 author: "Carlo P. Las Marias"
 description: "The results are in!  We also discuss the next steps for Hummingbot governance."
-date: "2020-09-22"
+date: 2020-09-22
 image: "./governance-cover.jpg"
 tags: ["announcement", "hummingbot", "governance"]
 featured: false

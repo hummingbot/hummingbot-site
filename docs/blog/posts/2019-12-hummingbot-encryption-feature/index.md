@@ -2,7 +2,7 @@
 title: "Introducing Hummingbot's new key encryption feature"
 author: "coinalpha"
 description: "Hummingbot is now more more secure than ever!"
-date: "2019-12-19"
+date: 2019-12-19
 image: "./cover.png"
 tags: ["announcement"]
 featured: false

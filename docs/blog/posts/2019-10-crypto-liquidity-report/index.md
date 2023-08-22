@@ -2,7 +2,7 @@
 title: "Crypto liquidity report - August 2019"
 author: "coinalpha"
 description: "Measuring crypto liquidity using high-resolution order book data"
-date: "2019-10-14"
+date: 2019-10-14
 image: "./cover.png"
 tags: ["market making", "announcement"]
 featured: false

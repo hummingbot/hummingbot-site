@@ -3,7 +3,7 @@ type: "blog"
 title: "How to measure performance in crypto trading"
 description: ""
 author: "coinalpha"
-date: "2019-07-02"
+date: 2019-07-02
 image: "./cover.jpg"
 level: "Beginner"
 tags: ["trading concepts"]

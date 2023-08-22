@@ -2,7 +2,7 @@
 title: "What is market making?"
 author: "coinalpha"
 description: "The importance of market making is to create and maintain a healthy market environment."
-date: "2020-09-03"
+date: 2020-09-03
 image: "./cover.png"
 level: "Beginner"
 tags: ["market making", "trading concepts"]

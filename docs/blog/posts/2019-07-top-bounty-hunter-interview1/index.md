@@ -2,7 +2,7 @@
 title: "Top liquidity bounty hunter interview featuring David Salter"
 author: "coinalpha"
 description: ""
-date: "2019-07-25"
+date: 2019-07-25
 image: "./cover.png"
 tags: ["trader interviews", "liquidity mining"]
 level: "Beginner"

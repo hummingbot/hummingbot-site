@@ -2,7 +2,7 @@
 title: "Announcing the $ONE Makers community bounty reward"
 author: "Carlo P. Las Marias"
 description: ""
-date: "2019-09-11"
+date: 2019-09-11
 image: "./cover.jpg"
 tags: ["liquidity mining", "announcement"]
 featured: false

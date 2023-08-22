@@ -2,7 +2,7 @@
 title: "Governance proposal #2"
 author: "Carlo P. Las Marias"
 description: "New governance vote for the next exchange connector: Altmarkets.io, Bitstamp, dy/dx, or IDEX"
-date: "2020-10-27"
+date: 2020-10-27
 image: "./governance-proposal2.png"
 tags: ["announcement", "governance"]
 featured: false

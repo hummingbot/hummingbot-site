@@ -2,7 +2,7 @@
 title: "Introducing Liquidity Bounties"
 author: "Michael Feng"
 description: "Community-based market making programs"
-date: "2019-06-03"
+date: 2019-06-03
 image: "./cover.jpeg"
 tags: ["announcement", "liquidity mining"]
 ---

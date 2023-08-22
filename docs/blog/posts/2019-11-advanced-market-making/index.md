@@ -2,7 +2,7 @@
 title: "How to use advanced market making features"
 author: "coinalpha"
 description: "Paper trading, inventory skew, and penny jumping - oh my!"
-date: "2019-11-27"
+date: 2019-11-27
 image: "./cover.jpeg"
 level: "Experienced"
 tags: ["market making", "strategy", "configuration"]

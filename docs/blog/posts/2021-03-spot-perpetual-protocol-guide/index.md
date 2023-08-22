@@ -2,7 +2,7 @@
 title: "How to Use the New Spot-perpetual Arbitrage Strategy"
 author: "coinalpha"
 description: "Learn about perpetual markets and how to use the new arbitrage strategy"
-date: "2021-03-12"
+date: 2021-03-12
 image: "./cover.png"
 tags: ["arbitrage", "strategy"]
 featured: false

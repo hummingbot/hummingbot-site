@@ -2,7 +2,7 @@
 title: "Hummingbot vs Cryptohopper"
 author: "coinalpha"
 description: "Basic market making comparison between Hummingbot and Cryptohopper"
-date: "2020-12-22"
+date: 2020-12-22
 image: "./cryptohopper-vs-hummingbot.png"
 tags: ["liquidity mining", "market making"]
 ---

@@ -2,7 +2,7 @@
 title: "Scaling the Hummingbot developer community"
 author: "Michael Feng"
 description: "More resources and support for Hummingbot developers!"
-date: "2020-08-20"
+date: 2020-08-20
 image: "./cover.png"
 tags: ["announcement", "hummingbot"]
 featured: false

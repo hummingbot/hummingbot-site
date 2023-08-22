@@ -2,7 +2,7 @@
 title: "Ask Me Anything: Harmony $ONE Makers"
 author: "Michael Feng"
 description: "AMA about the Harmony liquidity bounty"
-date: "2019-06-21"
+date: 2019-06-21
 image: "./ama.png"
 tags: ["liquidity mining"]
 ---

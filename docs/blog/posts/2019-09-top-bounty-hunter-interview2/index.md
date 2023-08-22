@@ -2,7 +2,7 @@
 title: "Top liquidity bounty hunter interview featuring Dominator008"
 author: "coinalpha"
 description: ""
-date: "2019-09-03"
+date: 2019-09-03
 image: "./cover.png"
 tags: ["trader interviews", "liquidity mining"]
 featured: false

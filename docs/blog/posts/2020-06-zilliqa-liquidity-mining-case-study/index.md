@@ -2,7 +2,7 @@
 title: "Case study: Zilliqa liquidity mining campaign"
 author: "Carlo P. Las Marias"
 description: "With liquidity mining, Zilliqa was able to solely rely on the group of individual liquidity miners to promote liquidity."
-date: "2020-06-26"
+date: 2020-06-26
 image: "./cover.png"
 tags: ["case study", "liquidity mining"]
 featured: false

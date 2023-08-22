@@ -2,7 +2,7 @@
 title: "Hummingbot partners with KuCoin for high frequency trading"
 author: "Carlo P. Las Marias"
 description: ""
-date: "2020-01-13"
+date: 2020-01-13
 image: "./hummingbot-kucoin.png"
 tags: ["announcement"]
 featured: false

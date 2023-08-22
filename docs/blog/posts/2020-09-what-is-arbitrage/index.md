@@ -2,7 +2,7 @@
 title: "What is Arbitrage?"
 author: "coinalpha"
 description: "The importance of arbitrage, specially on the fragmented crypto market landscape (CEX and DEX)"
-date: "2020-09-11"
+date: 2020-09-11
 image: "./cover.png"
 level: "Beginner"
 tags: ["arbitrage", "trading concepts"]

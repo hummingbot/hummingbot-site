@@ -2,7 +2,7 @@
 title: "A comprehensive guide to Avellaneda & Stoikov’s market-making strategy"
 author: "coinalpha"
 description: "Learn how to use this classic market making strategy on hummingbot"
-date: "2021-04-13"
+date: 2021-04-13
 image: "./cover.png"
 tags: ["market making", "strategy"]
 featured: false

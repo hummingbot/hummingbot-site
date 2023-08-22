@@ -2,7 +2,7 @@
 title: "How to arbitrage AMMs like Uniswap and Balancer"
 author: "coinalpha"
 description: "Deep dive into the new `amm-arb`strategy"
-date: "2020-12-15"
+date: 2020-12-15
 image: "./amm-arb.jpg"
 level: "Beginner"
 tags: ["arbitrage", "trading concepts", "strategy"]
