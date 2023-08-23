@@ -17,5 +17,6 @@ Here are the current chain connectors in the codebase, as of Q3 2023:
 | [Polygon](/chains/polygon) | EVM |
 | [NEAR](/chains/near) | Non-EVM |
 | [XDC Chain](/chains/xdc-chain) | Non-EVM |
+| [Tezos](/chains/tezos) | Non-EVM |
 
 

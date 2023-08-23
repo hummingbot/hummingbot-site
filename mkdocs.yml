@@ -306,6 +306,7 @@ nav:
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md
+        - Tezos: chains/tezos.md
       - Building CEX Connectors:
         - Building CEX Connectors: developers/connectors/index.md
         - Architecture: developers/connectors/architecture/index.md
