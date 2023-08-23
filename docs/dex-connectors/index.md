@@ -28,3 +28,4 @@ Here are the current DEX connectors in the codebase, as of Q3 2023:
 | [Vertex](./vertex) | AMM | 🥉 Bronze
 | [VVS Finance](./vvs) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
 | [XSwap](./xswap) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [Plenty](./plenty) | AMM | 🥉 Bronze
