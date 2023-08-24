@@ -1,22 +1,21 @@
 ---
-type: "blog"
-title: "A non-technical crypto trader's guide to python and algo trading"
-description: ""
-author: "coinalpha"
 date: 2019-01-29
-image: "./cover.jpeg"
-tags: ["trading concepts", "market making", "arbitrage"]
-level: "Beginner"
-rank: 10
+authors:
+  - coinalpha
+categories:
+  - Market making
+  - Guides
 ---
+
 
 In our previous post, we put together some helpful trading and finance-related resources for **developers** who want to dip their toes into crypto algo trading. On the flip side, this post aims to be a good resource for **traders** who have trading experience but little to no programming skills.
 
 This post is also intended to be a "live" document, that we will update regularly with thoughtfully-selected readings and learning resources that we come across.
 
 ### Manual trading vs. algo trading
+
 #### What is algo trading?
-As discussed in [our previous post](https://www.hummingbot.io/blog/2019-01-beginner-crypto-trader/), algo trading is the process of using computer programs to automatically execute trades based on a predefined set of rules, called algorithms, with the goal to generate profits at high speed and high frequency.
+As discussed in [our previous post](../2019-01-beginner-crypto-trader/index.md), algo trading is the process of using computer programs to automatically execute trades based on a predefined set of rules, called algorithms, with the goal to generate profits at high speed and high frequency.
 
 Due to its low barrier to entry from easily accessible exchange APIs, sufficient supplies of free tutorials and documents, reasonable hardware requirements, and an around-the-clock market, algo trading in crypto is attracting more people than ever who are interested in and curious about how this all works.
 
@@ -32,7 +31,8 @@ In addition, backtesting ability is also one of the unique benefits that algo tr
 More important, computers lack emotions, which is typically a source of weakness and leads to irrational investments from their human counterparts.
 
 #### What are the disadvantages of algo trading?
-***Crypto algo trading is NOT for everyone.***
+
+**Crypto algo trading is NOT for everyone.**
 
 One of the biggest disadvantages of crypto algo trading is its relatively high technical barriers, which might not be beginner-friendly. It requires programming skills (or at least an understanding of certain programming languages) and a deep understanding of trading strategies and financial concepts. Thus, an ideal algo trading beginner would be someone who has either strong programming skills, or trading experience as well as finance knowledge, or both.
 
@@ -41,9 +41,11 @@ Another disadvantage of algo trading is that users cannot avoid risks introduced
 And last but not least, algo trading might incur higher costs than manual trading. Increased trade frequency leads to increased trading fees and costs.  You will also need to invest in infrastructure: high-quality hardware as well as fast and stable internet connection are part of the minimal requirement. For increased reliability and to avoid your computer taking on a side hustle of acting as an oven in your house, you may eventually want to host your trading on the cloud, leading to additional recurring costs.  In addition, you may want to purchase data feeds at some point in order to improve your strategies and backtesting. In algorithmic trading, data is gold, and it’s not free.
 
 ### Can I do algo trading without learning programming?
-A handful of platforms and bots currently available allow individuals with any level of experience to run pre-set strategies on a user-friendly graphic user interface. With the help of these bots, technically anyone, especially those who already have manual trading experience, can begin algo trading with a few clicks of the mouse. If you trade for fun and have no time to acquire a new skill, you might want to check out these bots (a few were mentioned in [our previous post](https://www.hummingbot.io/blog/2019-01-crypto-bot-reviews/)).
+
+A handful of platforms and bots currently available allow individuals with any level of experience to run pre-set strategies on a user-friendly graphic user interface. With the help of these bots, technically anyone, especially those who already have manual trading experience, can begin algo trading with a few clicks of the mouse. If you trade for fun and have no time to acquire a new skill, you might want to check out these bots (a few were mentioned in [our previous post](../2019-01-crypto-bot-reviews/index.md)).
 
 At some point down the road, you may want to take a closer look at the logic behind the strategies, test and validate them against historical or real data, figure out your way to improve them, or even create your own strategies or bots. Here is where programming comes into play. While learning programming doesn’t guarantee you to make 10X more money, it does provide 10X more options regarding testing, strategy formulation, debugging and so on. However, whether you’ll need to learn programming ultimately boils down to your goal and motivation for trading.
+
 ![](./image1.jpeg)
 
 ### Which programming language should I learn?
@@ -67,9 +69,7 @@ This course offered by MIT covers simple algorithms and all the basic Python syn
 
 If time is your key constraint, this crash course takes you less than 3 hours:
 
-<iframe title="YouTube video player" class="youtube-player" type="text/html"
-width="640" height="390" src="https://www.youtube.com/embed/yE9v9rt6ziw"
-frameborder="0" allowFullScreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/yE9v9rt6ziw"" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 After going through these materials, you should be confident with reading code and building simple algorithms yourselves. If so, congrats! You’ll now be able to get started with Hummingbot’s upcoming command line interface, and customize the strategies.
 

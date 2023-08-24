@@ -8,26 +8,18 @@ categories:
 
 # How to trade crypto: an introduction
 
-Here is the content you provided converted to Markdown format:
-
----
-
-*by Apostolos Tsalkitzis*
-
-### **Introduction**
+![cover](image_0.jpg)
 
 Crypto trading has been in a frenzy lately and many investors are looking for ways to participate in the crypto market. There are several ways to gain profit from cryptocurrency and various methods to do so. If you exclude crypto mining from the equation, which is a whole different method of crypto-acquiring process, the steps that one would need to follow to enter the crypto market are the following:
 
-##### **Make an account in a crypto exchange.**
-##### **Determine your trading method.**
-##### **Fund your account.**
-##### **Pick a token to invest in.**
-##### **Analyze marketing trends and indicators.**
-##### **Choose your strategy.**
+- Make an account in a crypto exchange
+- Determine your trading method
+- Fund your account
+- Pick a token to invest in
+- Analyze marketing trends and indicators
+- Choose your strategy
 
 In this topic we will elaborate each of the steps mentioned above presenting the main aspects that a new trader should take into consideration before making a decision.
-
----
 
 <!-- more -->
 
@@ -37,12 +29,12 @@ Picking the right crypto exchange to open an account is a crucial factor for you
 
 When picking a crypto exchange you need to compare the following essential factors:
 
-###### **Transparency.**
-###### **Trading fees (taker and maker, altcoins and stablecoins).**
-###### **Funding and withdrawal fees.**
-###### **Volume and exchange token discounts.**
-###### **Total trading volume & liquidity.**
-###### **Total crypto assets.**
+- Transparency
+- Trading fees (taker and maker, altcoins and stablecoins)
+- Funding and withdrawal fees
+- Volume and exchange token discounts
+- Total trading volume & liquidity
+- Total crypto assets
 
 When picking a crypto exchange it is important to pick a widely known exchange or at least a transparent one. Don’t pick an exchange due to its low fees. Make sure there is efficient support (not just chat bots), a way to communicate, a valid address mentioned in its site and do look it up for comments or reviews. Cryptocurrency attracts many scammers as well and you should be able to distinguish a possible one.
 
@@ -70,7 +62,6 @@ As we live in the Age of Information I strongly recommend you do a deep research
 
 [Forbes – Cryptocurrency Taxes Advisor](https://www.forbes.com/advisor/taxes/cryptocurrency-taxes/?ref=blog.hummingbot.org)
 
----
 
 ### **Step 2: Determine your trading method**
 
@@ -94,15 +85,13 @@ On the contrary, a trader may enter the market with as low as 100 USD. As alread
 
 To sum up, if you plan to invest in crypto , better use a high amount to enter the market. If your aim is to trade on a daily basis, you may consider entering with a low amount.
 
----
 
----
 ### Step 3: Fund your account
 After you decide what your trading method will be, you will have to fund your account. The most straightforward method to do so is to connect your bank account. But this may not always be the wisest method to do so as they are alternative methods (wire transfers, funding wallets) that the exchange may support and they usually have lower transaction fees.
 
 Inspect the funding methods carefully and choose the one that will be the most beneficial for you. Watch out for fixed fees apart from percentage fees for every available funding method.
 
----
+
 
 ### Step 4: Pick a token to invest in
 The first step before starting to make some profit is to pick a crypto asset to invest in. Not every crypto asset is suitable for every trader and strategy and no crypto asset is a golden ticket to guaranteed profit.
@@ -139,7 +128,7 @@ The trader speculates the price changes in shorter periods of time (often less t
 
 ![Trader's Trend Analysis](image_3.jpg)
 
----
+
 
 ### Step 5: Analyze market trends and indicators
 
@@ -181,7 +170,7 @@ Market makers are the ones to provide liquidity in the market whereas market tak
 
 Many traders out there are both market makers and takers. When they see a trading opportunity they seize it right away, thus being takers, and when they are awaiting for volatility to occur or expect the price to reach certain levels they place a limit order, thus making them market makers.
 
----
+
 
 ### Step 6: Choose your strategy
 So, you have picked your trading pair, you have evaluated the indicators and assessed the trend analysis. The last step before you begin making or taking orders is to choose the strategy you plan to follow. Your strategy will vary based on the indicators of a certain period of time and change throughout your trading journey depending on market volatility and trends. But you should have a strategy structure made up in your mind and impose it when the circumstances are met. You don’t want to be that trader who doesn’t know what to do when a [flash crash](https://www.investopedia.com/terms/f/flash-crash.asp?ref=blog.hummingbot.org) occurs.
@@ -208,7 +197,7 @@ Arbitrage refers to the strategy under which a trader buys an asset in one marke
 
 - **High-Frequency Trading (HFT) and trading bots**
 
-[HFT](https://www.investopedia.com/terms/h/high-frequency-trading.asp?ref=blog.hummingbot.org) is a kind of algorithmic trading strategy used by [quant traders](https://www.investopedia.com/articles/active-trading/112614/steps-becoming-quant-trader.asp?ref=blog.hummingbot.org). The strategy involves developing algorithms that usually result in the creation of trading bots that help quickly enter, trade, and exit a crypto asset. Developing such bots needs an understanding of complex market concepts and a strong knowledge of mathematics behind market indicators and economics, as well as a certain level of coding skills. If you don’t qualify, though, to build a trading bot you may use a built one. There are many trading bots out there, free and paid, that do a decent job trading on your behalf. These bots are usually customizable to accommodate the user’s strategy. Once the user has completed the bot’s configuration he can use it to trade automatically, monitoring periodically its performance. [Hummingbot](https://www.hummingbot.io/) is also an open source trading bot that runs on any crypto exchange, centralized or decentralized, offering the user the option to automatically trade using a large variety of strategies or the capability to build his own.
+[HFT](https://www.investopedia.com/terms/h/high-frequency-trading.asp?ref=blog.hummingbot.org) is a kind of algorithmic trading strategy used by [quant traders](https://www.investopedia.com/articles/active-trading/112614/steps-becoming-quant-trader.asp?ref=blog.hummingbot.org). The strategy involves developing algorithms that usually result in the creation of trading bots that help quickly enter, trade, and exit a crypto asset. Developing such bots needs an understanding of complex market concepts and a strong knowledge of mathematics behind market indicators and economics, as well as a certain level of coding skills. If you don’t qualify, though, to build a trading bot you may use a built one. There are many trading bots out there, free and paid, that do a decent job trading on your behalf. These bots are usually customizable to accommodate the user’s strategy. Once the user has completed the bot’s configuration he can use it to trade automatically, monitoring periodically its performance. [Hummingbot](https://docs.hummingbot.org/) is also an open source trading bot that runs on any crypto exchange, centralized or decentralized, offering the user the option to automatically trade using a large variety of strategies or the capability to build his own.
 
 ![Trading Bots](image_11.jpg)
 

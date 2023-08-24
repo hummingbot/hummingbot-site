@@ -8,13 +8,17 @@ tags: ["market making", "announcement"]
 featured: false
 ---
 
+# Crypto liquidity report - August 2019
+
+![cover](cover.png)
+
 Recently, we conducted a first-of-its-kind analysis to measure the liquidity of crypto assets using high-resolution Binance order book data. In this report, we assess and rank the 159 cryptocurrencies on Binance based on their liquidity in August 2019.
 
 To measure liquidity, we use **slippage**, which measures the price impact of a buy or sell order. Slippage refers to the difference between the expected price of a trade and the price at which the trade is actually executed. Deep, liquid order books have low slippage, while thin, illiquid order books have high slippage. 
 
 We believe slippage is a more robust indicator of liquidity than trading volume. As an ex-ante metric, slippage measures information used by traders *before they trade* to decide whether to execute the trade and in which venue to execute it. In contrast, volume is an ex-post metric and can be [easily manipulated](https://www.theblockcrypto.com/daily/24941/bitwise-report-bitcoin-is-a-significantly-more-efficient-market-despite-95-fake-volume).
 
-**Please see [this link](/crypto-liquidity-report-2019-8.pdf) for the full report.**
+<!-- more -->
 
 ### Key findings
 
@@ -23,14 +27,11 @@ We believe slippage is a more robust indicator of liquidity than trading volume.
 - Only less than 20% crypto assets have <0.5% slippage.
 - Volatility and liquidity are slightly correlated in an inverse way.
 
-<!-- more -->
-
-
 ### Motivation
 
-In our post [The thin crust of liquidity]( https://hummingbot.io/blog/2019-01-thin-crust-of-liquidity/) we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 
+In our post [The thin crust of liquidity](../2019-01-thin-crust-of-liquidity/index.md) we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 
 
-As mentioned in [Does community-based market making work?](https://hummingbot.io/blog/2019-09-does-community-based-market-making-work/), crypto exchanges and token projects spend an estimated $3 billion annually on [market making](https://hackernoon.com/a-guide-to-market-making-for-crypto-startups-jydr387v), in the form of rebates, fees, and cost of inventory.
+As mentioned in [Does community-based market making work?](../2019-09-does-community-based-market-making-work/index.md), crypto exchanges and token projects spend an estimated $3 billion annually on [market making](https://hackernoon.com/a-guide-to-market-making-for-crypto-startups-jydr387v), in the form of rebates, fees, and cost of inventory.
 
 The goal of this Liquidity Report is to measure the actual liquidity of different digital assets on the market, and demonstrate how the liquidity resource is highly concentrated on top market cap assets and very scarce for long-tail assets.  
 
@@ -58,7 +59,6 @@ That said, outliers exist. Assets such as MATIC, ONE and DUSK have higher liquid
 
 ![](marketcap.png)
 
-**Please see [this link](/crypto-liquidity-report-2019-8.pdf) for the full report.**
 
 ### Next steps
 We plan to publish this liquidity report on a monthly basis to provide crypto projects, digital asset exchanges and crypto enthusiasts with a reliable indicator for crypto liquidity. Through collective efforts, we hope to see improved numbers and more fairly distributed liquidity resources for all the crypto projects in the foreseeable future. 

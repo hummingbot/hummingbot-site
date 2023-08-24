@@ -16,13 +16,14 @@ An **order book** is the list of orders that an exchange uses to record the inte
 
 Example of an order book on AscendEx where the prices in red indicate sell orders and the prices in blue indicate buy orders.
 
+<!-- more -->
+
 ![Order book image](image_1.jpg)
 
 ### Liquidity
 
 The order book is **very liquid** when a great amount of orders is stored in each buy and sell side of the order book. In such a situation a market order produces only a small price adjustment. On the contrary, if the order book is **not liquid**, there are only a few orders on the buy and sell side and there is a very large average gap in price between adjacent orders. In this case, even a market order with a small volume can produce a dramatic price fluctuation of several ticks. Markets perform better when they are more liquid.
 
-<!-- more -->
 
 ### Limit and market orders
 

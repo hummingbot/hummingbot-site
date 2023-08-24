@@ -1,21 +1,25 @@
 ---
-type: "blog"
-title: "How I started crypto trading | Interview #3"
-description: ""
-author: "coinalpha"
 date: 2019-05-02
-image: "./cover.png"
-tags: ["trader interviews", "market making", "risk management"]
-level: "Beginner"
+authors:
+  - coinalpha
+categories:
+  - Market making
+  - Trader Tips 
 ---
 
-Welcome to the 3rd interview of this series! In this post, we will introduce Manuel Zeiler who is an experienced crypto trader and a co-founder of DApp discovery platform <a href="https://www.tokenvalley.com/" target="_blank"> Token Valley </a>.
+
+# How I started crypto trading | Interview #3
+
+![cover](cover.png)
+
+
+Welcome to the 3rd interview of this series! In this post, we will introduce Manuel Zeiler who is an experienced crypto trader and a co-founder of DApp discovery platform [Token Valley](https://www.tokenvalley.com/).
 
 Manuel once created a crypto market making bot that ran on IDEX, Bittrex and HitBTC, and he was able to pocket **10% profit per month**! He is now working on his master's thesis in blockchain at the Munich School of Management.
 
 Let’s meet Manuel!
 
-![](./image1.png)
+![Manuel Zeiler](./image1.png)
 
 *Disclaimer: All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io.*
 
@@ -25,12 +29,11 @@ I first started to trade crypto in 2017. The funny thing is that crypto is actua
 
 <!-- more -->
 
-
 ### How did you get started in market making?
 
 I had this gut feeling that there are some arbitrage opportunities between the centralized exchanges and DEXes such as IDEX. So I programmed a data scraping tool that used APIs to request prices every minute. Then I found out that there is a lot of what I would call “spread arbitrage” opportunities. So I started doing this “spread arbitrage”. I would quote on IDEX and counter fill (the order) on a centralized exchange. During this process, I realized what I was actually doing was kind of market making. I didn’t even know that this was market making.
 
-Hummingbot’s <a href="https://docs.hummingbot.io/strategies/cross-exchange-market-making/" target="_blank">cross-exchange market making</a> is exactly what I did. I was really happy that somebody with more resources is trying to solve the problem. I was self-funded, and also to be honest, APIs of DEXes are just very immature. There are also some bugs. For example, the API would give me “sell”, but (it) was actually “buy”. So I had to tweak my code.
+Hummingbot’s [cross-exchange market making](../../../strategies/cross-exchange-market-making.md) is exactly what I did. I was really happy that somebody with more resources is trying to solve the problem. I was self-funded, and also to be honest, APIs of DEXes are just very immature. There are also some bugs. For example, the API would give me “sell”, but (it) was actually “buy”. So I had to tweak my code.
 
 It’s a really fun journey and I was able to make some money. I did a lot of iterations on my bot (to make it work). When the code was finished, I just let it run automatically on AWS and maintained it from there.
 
@@ -50,7 +53,7 @@ Overall, I was making money. I made around 10% a month. Don’t think I made too
 
 I measured my profit in USD because I paid for AWS in USD.
 
-![](./image2.jpeg)
+![Image](./image2.jpeg)
 
 ### What are the three most important trading lessons you've learnt from your experience?
 
@@ -72,4 +75,6 @@ Frankly, it’s just my own code, NodeJS, and MySQL. Sometimes I play with Googl
 
 Yes, I get most of my information from Telegram, Reddit and Twitter. I’m in one of Crypto Valley’s telegram groups. I’ve been to their conference in Switzerland. It was really good!
 
-On Twitter, I like <a href="https://twitter.com/zhusu" target="_blank">Zhu Su</a> from Three Arrows Capital, and I think he has some really good insights. I also follow <a href="https://twitter.com/kylesamani" target="_blank">Kyle</a> from Multicoin Capital.
+On Twitter, I like [Zhu Su](https://twitter.com/zhusu) from Three Arrows Capital, and I think he has some really good insights. I also follow [Kyle](https://twitter.com/kylesamani) from Multicoin Capital.
+
+---

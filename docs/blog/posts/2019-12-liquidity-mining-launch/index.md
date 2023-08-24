@@ -1,18 +1,22 @@
 ---
-title: "Liquidity mining launch update"
-author: "coinalpha"
-description: "Liquidity mining goes live in mid-January 2020!"
 date: 2019-12-02
-image: "./cover.png"
-tags: ["announcement", "liquidity mining"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Announcement
 ---
 
-A few weeks ago, we announced [Liquidity Mining](https://hummingbot.io/blog/2019-11-liquidity-mining/), a new way for you to earn yield on crypto assets you own by running Hummingbot and providing liquidity to our exchange and project partners.
+
+# Liquidity mining launch update
+
+![cover](cover.png)
+
+A few weeks ago, we announced [Liquidity Mining](../2019-11-liquidity-mining/index.md), a new way for you to earn yield on crypto assets you own by running Hummingbot and providing liquidity to our exchange and project partners.
 
 Since then, we have been working hard on the infrastructure that will power liquidity mining. Before the holiday season kicks off, we are excited to share the launch plan with you.
 
----
+<!-- more -->
 
 ### Technical Progress Update
 
@@ -23,7 +27,6 @@ We're building a web application called Hummingbot Miners that helps you sign up
 Here's a screenshot of the Markets view:
 ![](ux.png)
 
-<!-- more -->
 
 To be fully transparent and to involve our community, we worked with our friends at [Deep Work Studio](https://deepwork.studio/) to livestream the entire design process, from research to storyboarding to user testing. Click the links below to watch the replays:
 
@@ -31,7 +34,6 @@ To be fully transparent and to involve our community, we worked with our friends
 2. [Session 2 - User Story Map](https://youtu.be/d64aQHvmPYY)
 3. [Session 3 - User Testing](https://youtu.be/OmS8BkKSQMo)
 
-<br /><br />
 
 ##### Exchange data infrastructure
 
@@ -77,11 +79,10 @@ Our community has been growing rapidly and organically. Currently, we have appro
 
 In addition, we have about 500 members in our Bay Area [meetup](https://www.meetup.com/BayCrypto/) group and 370 subscribers on our [YouTube](https://www.youtube.com/channel/UCxzzdEnDRbylLMWmaMjywOA) channel.
 
----
 
 ### For more information
-- [Liquidity mining whitepaper](https://hummingbot.io/liquidity-mining-whitepaper)
-- [Download Hummingbot](https://hummingbot.io/download/)
-- [Hummingbot whitepaper](https://hummingbot.io/whitepaper.pdf)
+- [Liquidity mining whitepaper](../../../liquidity-mining.pdf)
+- [Download Hummingbot](https://github.com/hummingbot/hummingbot)
+- [Hummingbot whitepaper](../../../hummingbot.pdf)
 
 For exchanges and projects that would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

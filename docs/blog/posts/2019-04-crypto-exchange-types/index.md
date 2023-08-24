@@ -1,33 +1,37 @@
 ---
-type: "blog"
-title: "Exchange types explained: CLOB, RFQ, and Automated, oh my!"
-description: ""
-author: "carlo"
 date: 2019-04-24
-image: "./cbot-trading-pit.png"
-tags: ["trading concepts"]
-level: "Beginner"
+authors:
+  - carlo
+categories:
+  - Level 1
+  - Trader Tips
 ---
+
+# Exchange types explained: CLOB, RFQ, and Automated, oh my!
+
+![cover](cbot-trading-pit.png)
 
 Since Hummingbot is an open source bot platform that connects to many different exchanges, we have developed a deep understanding of the nuances between various exchange types.
 
 In this post, we discuss the three main methodologies that digital asset exchanges use to facilitate asset transactions. We hope that this post helps crypto traders and developers choose the right exchange for their needs.
 
-### TL;DR
+### TLDR
 
 Exchanges perform the fundamental role in free markets of bringing together and coordinating buyers and sellers. Exchanges provide a venue for these parties to discover one another, negotiate and agree terms, and ultimately transact. Exchanges have adopted multiple methodologies to achieve this:
 
-| Exchange Types | Examples
+<!-- more -->
+
+
+| Exchange Types | Examples |
 |---|---|
 | [**Central Limit Order Book (CLOB)**](#central-limit-order-book-clob)<br/><br/><small>Most commonly used exchange methodology</small><br/><br/><small>Exchange collects orders from market makers and then publishes an aggregate order book</small><br/><br/><small>Orders are made available for other parties (“takers”) to accept the terms and transact</small><br/><br/> | <small>NYSE, CBOT, Coinbase, Binance, EtherDelta, DDEX, Radar Relay</small> |
 | [**Request for Quotation (RFQ)**](#request-for-quotation-rfq-exchanges)<br/><br/><small>Pricing on demand: A taker initiates a transaction by querying a known set of market makers with a specific demand (e.g. “buy 10 ETH”)</small><br/><br/><small>Taker receives a quote from each, and decides which (if any) to accept</small><br/><br/> | <small>Airswap, Kyber</small> |
 | [**Automated Exchange**](#automated-exchange)<br/><br/><small>A form of exchange enabled by blockchain technology where an exchange smart contract calculates prices using a predetermined formula referencing the contract’s inventory of assets</small><br/><br/><small>This requires third party actors (arbitrageurs) to keep asset prices in-line with other markets</small><br/><br/> | <small>Bancor, Uniswap</small> |
 
-<!-- more -->
+
 
 We also discuss the degrees of decentralization of each methodology.  CLOB exchanges, as the name suggests, are centralized (even "decentralized exchanges" using CLOB have some degree of centralization) since exchange operators can control the flow of order information and access, whereas RFQ and automated exchanges allow for more or nearly full decentralization.
 
----
 
 ### Central Limit Order Book (CLOB) Exchanges
 
@@ -39,7 +43,7 @@ Central limit order books are the most widely used exchange methodology.  If you
 
 #### Coordinating buyers and sellers on a CLOB exchange
 
-1. Market makers submit their intent to transact assets to the exchange, specifying basic information such as prices, quantities, and direction of their intent (buy or sell)[<sup>[1]</sup>](#footnotes).
+1. Market makers submit their intent to transact assets to the exchange, specifying basic information such as prices, quantities, and direction of their intent (buy or sell).
 2. The exchange collects all of these intents (**orders**) into a database (the **order book**).
 3. The exchange then organizes and publishes the order book to all of its users.
 4. In order to consummate a transaction, another party (a **taker**) must accept the prices and quantities available on the order book. The exchange operator matches the taker's acceptance (its **market order**) with the corresponding orders in the order book that fulfill the taker’s order at the currently available best prices.
@@ -74,7 +78,7 @@ Most DEXs operate CLOB exchanges, such as EtherDelta, 0x Relayers, and DDEX. The
 
 However, these exchanges still control the information of the order book, maintaining the ability to censor and front run, and are susceptible to service disruptions.  Also, some DEXs control access to their exchange.  Some DEXs are adopting or have already adopted some degree of KYC/AML procedures, while some restrict user access through geofencing (e.g. DDEX prevents access to the U.S.).
 
----
+
 
 ### Request for Quotation (RFQ) Exchanges
 
@@ -92,13 +96,13 @@ This practice is already used in cryptocurrency trading as well as in traditiona
 
 > The relatively new development is the use of blockchain technology to automate and bring the RFQ form of exchange to more users as an alternative form of everyday asset exchange.
 
-One distinction of an RFQ type of business process is that you will typically know who the counterparty is; after all, you deliberately chose and asked that party for a quote[<sup>[2]</sup>](#footnotes).  This contrasts with a CLOB exchange, where the only party that knows who all the actors are is the exchange operator, so a taker may not know who the maker on the other side of a trade is[<sup>[3]</sup>](#footnotes).
+One distinction of an RFQ type of business process is that you will typically know who the counterparty is; after all, you deliberately chose and asked that party for a quote. This contrasts with a CLOB exchange, where the only party that knows who all the actors are is the exchange operator, so a taker may not know who the maker on the other side of a trade is.
 
 In RFQs, the role of the exchange operator (or smart contract) is to organize and keep track of quotation providers for a taker, assist in the coordination of requesting and receiving quotes, and finally provide a method for effecting (settling) the transaction once agreed.
 
 #### RFQ explained in pictures
 
-![(Open the image in a new tab to expand it)](./rfq-exchange.png)
+![(RFQ)](./rfq-exchange.png)
 
 #### RFQ and decentralization
 
@@ -108,21 +112,20 @@ In practice, technical complexities must be overcome to fully enable more widesp
 
 > At Hummingbot, we are planning to add integrations to RFQ exchanges in the future, to obfuscate the technical complexity and make the role of market maker accessible to more users.
 
----
 
 ### Automated Exchange
 
 ![Automated Exchanges](./bancor-uniswap.png)
 
-A relatively new form of exchange that has emerged in the cryptocurrency markets is the automated exchange such as Bancor and Uniswap. These exchanges do away with order books altogether and instead use a smart contract and its inventory to determine prices for exchange. We discuss how Uniswap works in a previous [blog post](/blog/2019-04-hummingbot-vs-uniswap/).
+A relatively new form of exchange that has emerged in the cryptocurrency markets is the automated exchange such as Bancor and Uniswap. These exchanges do away with order books altogether and instead use a smart contract and its inventory to determine prices for exchange. We discuss how Uniswap works in a previous [blog post](../2019-04-hummingbot-vs-uniswap/index.md).
 
 #### Automated exchange explained in pictures
 
 ![Determining purchase price on a constant product market maker](./automated-mm.png)
 
-To understand numerically how automated market maker pricing works, this <a href="http://bit.ly/2VhceZT" target="_blank">spreadsheet</a> may be helpful.
+To understand numerically how automated market maker pricing works, this [spreadsheet](http://bit.ly/2VhceZT) may be helpful.
 
-![Example: Constant Product Market Maker pricing assuming initial supplies of { A: 1000, B: 2000 }](./constant-product-mm.png)
+![Example](./constant-product-mm.png)
 
 #### Automated exchanges and decentralization
 
@@ -130,9 +133,8 @@ The elegance of the Automated Exchange is its simplicity: a simple contract, usi
 
 Since it's simply a smart contract, once deployed, the exchange can be accessed by anyone at any time, and not even the original creator of the exchange may be able to influence the exchange's behavior.
 
-> As mentioned in our [previous blog](/blog/2019-04-hummingbot-vs-uniswap/), we are working to integrate Automated Exchanges into Hummingbot, allowing Hummingbot users to act as arbitrageurs to generate profits but also help the exchanges keep pricing in-line with the market; it's a win-win.
+> As mentioned in our [previous blog](../2019-04-hummingbot-vs-uniswap/index.md), we are working to integrate Automated Exchanges into Hummingbot, allowing Hummingbot users to act as arbitrageurs to generate profits but also help the exchanges keep pricing in-line with the market; it's a win-win.
 
----
 
 #### Footnotes
 

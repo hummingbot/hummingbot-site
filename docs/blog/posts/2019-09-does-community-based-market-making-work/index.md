@@ -1,16 +1,19 @@
 ---
-title: "Does community-based market making work? Analyzing 2 months of data from $ONE Makers"
-description: ""
-author: "Michael Feng"
 date: 2019-09-09
-image: "./one-makers.jpg"
-tags: ["liquidity mining"]
+authors:
+  - mike
+categories:
+  - Liquidity mining
 ---
+
+
+# Does community-based market making work? Analyzing 2 months of data from $ONE Makers
+
+![cover](one-makers.jpg)
 
 ### Summary
 
-Two months ago, in conjunction with our friends from Harmony Protocol, we started an [experimental program](/blog/2019-06-introducing-liquidity-bounties-harmony/) called 
-**$ONE Makers** to see if ordinary individuals using Hummingbot to run market making bots could effectively provide the same level of liquidity as professional market makers.
+Two months ago, in conjunction with our friends from Harmony Protocol, we started an [experimental program](../2019-06-introducing-liquidity-bounties-harmony/index.md) called **$ONE Makers** to see if ordinary individuals using Hummingbot to run market making bots could effectively provide the same level of liquidity as professional market makers.
 
 Both we and Harmony viewed $ONE Makers as an experiment. In particular, we wanted to answer the following questions:
 
@@ -19,7 +22,7 @@ Both we and Harmony viewed $ONE Makers as an experiment. In particular, we wante
 
 Read on and find out!
 
----
+<!-- more -->
 
 ### Motivation
 
@@ -27,7 +30,7 @@ Crypto exchanges and token projects spend an estimated $3 billion annually on [m
 
 This crypto-native industry stems from an supply and demand imbalance caused by a structural feature of crypto: **anyone can create a token, and anyone can create an exchange where tokens are traded**. Today, there are over 5,000 tokens and 300 exchanges, leading to over 35,000 unique markets (trading pairs) across a highly fragmented exchange landscape. These markets compete with one another based on liquidity, which measures how easily people can buy and sell something without losing money due to the bid-ask spread.
 
-<!-- more -->
+
 
 Despite a huge increase in the demand for liquidity, there hasn't been a commensurate increase in supply. Liquidity is supplied by market makers, a job that requires both inventory of capital dedicated to a particular market, as well as trading software that can rapidly and automatically create and cancel orders in response to fast-moving crypto markets.
 
@@ -35,7 +38,6 @@ Due to these financial and technical requirements, crypto market makers are typi
 
 If a set of individuals could do the same thing, projects and exchanges would finally have another option for liquidity. Instead of hiring a hedge fund, they could incentivize their community to run market making bots using their own capital. By rewarding liquidity providers per-trade based on hard, quantifiable metrics, the impact of each dollar spent can be measured.
 
----
 
 ### Overall Statistics
 Below are the total metrics for $ONE Makers from July 1 through September 4:
@@ -46,7 +48,6 @@ We were  surprised to find that only 68 participants accounted for 143,000+ fill
 
 There was also a power law distribution in the volume per user; the top 10 participants accounted for 88% of the total filled order volume.
 
----
 
 ### Can people make money running market making bots?
 
@@ -70,9 +71,8 @@ The vast majority of volume came from the initial weekly cohort, and this cohort
 
 Since Hummingbot carries a steep learning curve and we conducted limited marketing for $ONE Makers, it's not surprising that the number of users didn't increase much, but the retention and engagement data gives us confidence that ordinary people can successfully run market making bots.
 
-Finally, we also conducted two interviews ([Interview 1](/blog/2019-07-top-bounty-hunter-interview1/) | [Interview 2](/blog/2019-09-top-bounty-hunter-interview2/)) with $ONE Makers participants, in which they reported making profits.
+Finally, we also conducted two interviews ([Interview 1](../2019-07-top-bounty-hunter-interview1/index.md) | [Interview 2](../2019-09-top-bounty-hunter-interview2/index.md)) with $ONE Makers participants, in which they reported making profits.
 
----
 
 ### Can a set of individuals replace a professional market maker?
 
@@ -86,14 +86,14 @@ During a two month span during which $ONE price dropped by 60%, Hummingbot users
 
 Professional market makers typically generate 20% of a token's trading volume on larger exchanges. While we're not there yet, it gives us confidence that a set of individuals can replace a professional market maker as our user base grows.
 
----
+
 ### Next steps
 
 While the data is promising, there's a lot that we can do to improve the experience for both individual participants and our project partners. 
 
 ##### Real-time leaderboard
 
-We have launched a real-time [leaderboard](/liquidity-mining/harmony) so that any participant can see how much rewards they have earned and where they rank versus others.
+We have launched a real-time `leaderboard` so that any participant can see how much rewards they have earned and where they rank versus others.
 
 ![](leaderboard.png)
 
@@ -101,7 +101,7 @@ We have launched a real-time [leaderboard](/liquidity-mining/harmony) so that an
 
 In addition, more strategies and market connectors increases the number of exchanges and projects we can support, and it also gives users more ways to make money. 
 
-We have launched a [developer forum](https://forum.hummingbot.io) where Hummingbot users can discuss how to hack on Hummingbot and request new features.
+We have launched a `developer forum` where Hummingbot users can discuss how to hack on Hummingbot and request new features.
 
 ##### Gitcoin bounties
 
@@ -111,10 +111,9 @@ We have partnered with Market Protocol to sponsor a 1,250 DAI [Gitcoin bounty](h
 
 ![](gitcoin.png)
 
----
 
 The most scarce and precious resource in crypto is **liquidity**, and projects and exchanges spend billions today paying hedge funds for it. Hummingbot is building a different liquidity solution, powered by a decentralized army of individuals running our open source software.
 
 For smaller projects who can't afford to hire a hedge fund for market making, Hummingbot levels the playing field and provides the liquidity they need to build their business. For larger projects that already utilize market makers, Hummingbot provides a more economical, transparent, and community-driven alternative.
 
-To learn more about Hummingbot, check out [how Liquidity Mining work](/liquidity-mining) or start earning rewards with our [Quickstart guide](https://hummingbot.io/academy/liquidity-mining/).
+To learn more about Hummingbot, check out [how Liquidity Mining work](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md) or start earning rewards with our [Quickstart guide](../2022-01-level-1-introduction/index.md).

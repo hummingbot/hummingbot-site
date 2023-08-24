@@ -15,8 +15,6 @@ categories:
 
 ### **Why do we need to set up cloud servers?**
 
----
-
 When running Hummingbot locally on your computer, closing the application or shutting down your machine also stops the bot from trading. Also, running locally relies on your computer's resources and internet connection.
 
 It is important to get a proper set up for Hummingbot for long term success. By setting up Hummingbot on a cloud server, you’ll be able to run Hummingbot 24/7 and not miss out on any rewards. Some advanced users use cloud servers running on Linux to keep Hummingbot in the background.
@@ -25,16 +23,12 @@ It is important to get a proper set up for Hummingbot for long term success. By 
 
 <!-- more -->
 
-
 ### **What are cloud servers?**
 
----
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/1ERdeg8Sfv4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Cloud Services Explained - tutorial for beginners"></iframe>
 
 ### ***Picking the right cloud server***
-
----
 
 **Comparing different cloud servers**
 
@@ -49,17 +43,16 @@ This blog post examines the pros and cons of four major cloud hosting companies 
 3. Microsoft Azure
 4. Digital Ocean
 
-[How to run Hummingbot in the cloud: comparing different cloud providers](https://hummingbot.io/en/blog/2019-06-cloud-providers?ref=blog.hummingbot.org)
+[How to run Hummingbot in the cloud: comparing different cloud providers](../2019-06-cloud-providers/index.md)
 
-[Home - Hummingbot Foundation](https://docs.hummingbot.io/installation/overview/?ref=blog.hummingbot.org#for-cloud)
+[Home - Hummingbot Foundation](../../../installation/index.md)
 
 If you qualify to be a [Hummingbot Eagle Club member](https://hummingbot.io/en/blog/2020-04-hummingbot-eagle-club-launch?ref=blog.hummingbot.org) , you will be able to get US$5K free AWS credits as a start.
 
 ## Getting the right set up
 
-### ***Basic Linux commands***
+### **Basic Linux commands**
 
----
 
 If you are not familiar with Linux, it is important to get familiarized with the terminal commands starting from navigating the directories and making changes to a file.
 
@@ -67,9 +60,8 @@ You can practice in your Linux cloud server or in this web-based terminal.
 
 [JSLinux](https://bellard.org/jslinux/vm.html?cpu=riscv64&url=buildroot-riscv64.cfg&mem=256&ref=blog.hummingbot.org)
 
-### ***SSH Keys***
+### **SSH Keys**
 
----
 
 Your SSH keys are required to gain access to the server. Follow the steps in the links below based on your operating system.
 
@@ -79,11 +71,9 @@ Your SSH keys are required to gain access to the server. Follow the steps in the
 
 [Ssh-keygen is a tool for creating new authentication key pairs for SSH. This is a tutorial on its use, and covers several special use cases.](https://www.ssh.com/ssh/keygen/?ref=blog.hummingbot.org)
 
-### ***Installing via Docker***
+### **Installing via Docker**
 
----
-
-The [Hummingbot DockerHub](https://hub.docker.com/r/coinalpha/hummingbot?ref=blog.hummingbot.org) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot, as well as past versions. Some advanced users prefer using Docker instead of installing from source. They find it easier and more convenient because of the following :
+The [Hummingbot DockerHub](https://hub.docker.com/r/hummingbot/hummingbot?ref=blog.hummingbot.org) publishes Docker images for the `master` (latest) and `development` builds of Hummingbot, as well as past versions. Some advanced users prefer using Docker instead of installing from source. They find it easier and more convenient because of the following :
 
 - You don't have to install locally all the dependencies e.g. anaconda/miniconda
 - You don't have to compile it locally
@@ -94,25 +84,23 @@ We recommend this path for users who run Hummingbot on Linux, in the cloud, and/
 
 <iframe width="200" height="113" src="https://www.youtube.com/embed/_dfLOzuIg2o?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="What is Docker in 5 minutes"></iframe>
 
-### ***Hummingbot Documentation: Install via Docker:***
+### **Hummingbot Documentation: Install via Docker:**
 
----
 
 Linux:
 
-[Home - Hummingbot Foundation](https://docs.hummingbot.io/installation/linux/?ref=blog.hummingbot.org#install-via-docker)
+[Docker Documentation](https://docs.docker.com/desktop/install/linux-install/)
 
 macOS
 
-[Home - Hummingbot Foundation](https://docs.hummingbot.io/installation/mac/?ref=blog.hummingbot.org#install-via-docker)
+[Docker Documentation](https://docs.docker.com/desktop/install/mac-install/)
 
 Windows
 
-[Home - Hummingbot Foundation](https://docs.hummingbot.io/installation/windows/?ref=blog.hummingbot.org#install-via-docker)
+[Docker Documentation](https://docs.docker.com/desktop/install/windows-install/)
 
-### ***Basic Docker commands***
+### **Basic Docker commands**
 
----
 
 Here are some important Docker commands you will be using more as support and if not, you need to understand how they work and what each commands does. Look them up and see what each command does, better if you can test to see it in actual.
 
@@ -132,21 +120,17 @@ If you want to learn more about it you can visit their documentation.
 
 [Docker run reference](https://docs.docker.com/engine/reference/run/?ref=blog.hummingbot.org)
 
-### ***Installing from source***
+### **Installing from source**
 
----
 
-This installation type is more for developers, both internal and external, who wants to contribute to the code base. It's just cloning from GitHub repo [https://github.com/CoinAlpha/hummingbot?ref=blog.hummingbot.org](https://github.com/CoinAlpha/hummingbot?ref=blog.hummingbot.org) → install → compile → run Hummingbot. You can also use the helper scripts and follow the instructions in the documentation.
+This installation type is more for developers, both internal and external, who wants to contribute to the code base. It's just cloning from GitHub repo [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot) → install → compile → run Hummingbot. You can also use the helper scripts and follow the instructions in the documentation.
 
-- [Linux](https://docs.hummingbot.io/install
+- [Linux](../../../installation/linux.md)
+- [macOS](../../../installation/mac.md)
+- [Windows](../../../installation/windows.md)
 
-ation/linux/?ref=blog.hummingbot.org#install-from-source)
-- [macOS](https://docs.hummingbot.io/installation/mac/?ref=blog.hummingbot.org#install-from-source)
-- [Windows](https://docs.hummingbot.io/installation/windows/?ref=blog.hummingbot.org#install-from-source)
+### **Switching to development branch**
 
-### ***Switching to development branch***
-
----
 
 **Docker**
 
@@ -168,15 +152,14 @@ Hummingbot running in development branch has a prefix dev- in the version number
 
 ## Managing multiple bots
 
-### ***Useful app: Termius***
+### **Useful app: Termius**
 
----
 
 Some users like to use Terminus to manage multiple bots:
 
 [https://termius.com](https://termius.com/?ref=blog.hummingbot.org)
 
-### ***Tips: setting balance limit***
+### **Tips: setting balance limit**
 
 ---
 
@@ -186,4 +169,4 @@ As mentioned in the beginner level, if you want to run multiple bots and they ar
 
 Sets the amount limit on how many assets Hummingbot can use in an exchange or wallet. This can be useful when running multiple bots on different trading pairs with same tokens e.g. running a BTC-USDT pair and another bot on ETH-USDT using the same account.
 
-[Home - Hummingbot Foundation](https://docs.hummingbot.io/features/balance-limit/?ref=blog.hummingbot.org)
+[Home - Hummingbot Foundation](https://docs.hummingbot.org/global-configs/balance-limit/)

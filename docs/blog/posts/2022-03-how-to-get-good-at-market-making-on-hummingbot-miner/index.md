@@ -36,7 +36,6 @@ I call it "The Five Pillars of Success"; sounds good, right? Each pillar is a ro
 
 Those pillars are Learning, Watching, Coding, Tracking, and Community.
 
----
 
 **Learning**
 ============
@@ -71,7 +70,6 @@ Hummingbot client source code is mainly in Python, so learning Python is always 
 * Another Python crash course: [https://www.youtube.com/watch?v=rfscVS0vtbw](https://www.youtube.com/watch?v=rfscVS0vtbw&ref=blog.hummingbot.org)
 * Another other Python crash course: [https://www.youtube.com/watch?v=\_uQrJ0TkZlc](https://www.youtube.com/watch?v=_uQrJ0TkZlc&ref=blog.hummingbot.org)
 
----
 
 **Watching**
 ============
@@ -109,7 +107,7 @@ However, if it is a red day, then I would limit my exposure to the market:
 * Turn off the bots
 * Sell off all inventory to recover funds
 
----
+
 
 **Coding**
 ==========
@@ -139,7 +137,6 @@ Keep trying until you get there!
 
 However, make sure that you use as minimal funds as possible when trying new ideas because it is a risky endeavor that promises no return.
 
----
 
 **Tracking**
 ============
@@ -171,7 +168,6 @@ The spreadsheet has been a big help in developing my script and strategy to win 
 
 So, it is dangerous to go alone, take the spreadsheet and make some money!
 
----
 
 **Community**
 =============
@@ -192,7 +188,6 @@ Also, many decentralized exchanges and centralized exchanges are looking for dev
 
 All in all, the Hummingbot community is unique, open, friendly, and has a lot of opportunities to take! So don't hesitate to join!
 
----
 
 **Conclusion**
 ==============

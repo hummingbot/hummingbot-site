@@ -1,14 +1,16 @@
 ---
-type: "blog"
-title: "A developer's guide to crypto algo trading"
-description: ""
-author: "coinalpha"
 date: 2019-01-18
-image: "./cover.jpeg"
-tags: ["trading concepts"]
-level: "Developer"
-rank: 10
+authors:
+  - coinalpha
+categories:
+  - Engineering
+  - Trader Tips
+  - Guides
 ---
+
+# A developer's guide to crypto algo trading
+
+![](./image0.jpg)
 
 Algorithmic trading is the process of using computers programmed to follow a pre-defined set of rules for automatically placing trades in order to generate profits at high speed and high frequency. The pre-defined sets of rules, called an algorithm, can range from quantitative strategies to machine learning models that can reference any data or combination thereof, e.g. prices, volume, or tweets/news feeds for sentiment analysis. Algo trading makes markets more liquid by introducing a large volume of trades and orders; unlike human traders, computers don't need to rest or sleep, are much faster at calculating and sending instructions, and don't suffer from emotions ([at least, not yet??](https://www.psychologytoday.com/us/blog/hot-thought/201712/will-robots-ever-have-emotions)).
 
@@ -79,7 +81,7 @@ Algo trading that employs market making strategies will automatically and contin
 
 This blog post demonstrates [a basic method of market making](https://medium.com/@CryptoKong123/market-making-strategy-example-staggered-orders-a8cd098889ee).
 
-For more information on different market making strategies, please refer to [our whitepaper](https://hummingbot.io/hummingbot.pdf).
+For more information on different market making strategies, please refer to [our whitepaper](../../../hummingbot.pdf).
 
 
 ### How to choose which pairs to trade?
@@ -93,7 +95,7 @@ However, writing a bot is time-consuming and not easy. While creating the strate
 
 Here is a list of useful resources to get you started with bot building:
 
-* [Let’s write a cryptocurrency bot](https://hummingbot.io/blog/2020-09-what-is-market-making/): This is a detailed walkthrough of how the author built his crypto trading bot.
+* [Let’s write a cryptocurrency bot](../2020-09-what-is-market-making/index.md): This is a detailed walkthrough of how the author built his crypto trading bot.
 
 * [How to build a bot in R?](https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1): Be careful that the strategy demonstrated in this article using RSI might not be working due to oversimplification.
 
@@ -104,7 +106,7 @@ Here is a list of useful resources to get you started with bot building:
 
 An existing bot, especially an open-source one, can be a great alternative for developers who want to try algo trading. It definitely saves developer time and provides a base from which developers can tweak and customize.
 
-That being said, it doesn't mean every bot is created equal. We recently posted [a crypto trading bot review about their ease of use](https://www.hummingbot.io/blog/2019-01-crypto-bot-reviews/). In that post, we shared with you what we found out after trying out 7 crypto trading bots available in the market.
+That being said, it doesn't mean every bot is created equal. We recently posted [a crypto trading bot review about their ease of use](../2019-05-crypto-bot-reviews/index.md). In that post, we shared with you what we found out after trying out 7 crypto trading bots available in the market.
 
 In addition to user experience considerations, using existing bots entails various risks. You might easily lose money if you make a wrong bet, set wrong parameters, or even do not truly understand the algorithms employed by the bot.
 

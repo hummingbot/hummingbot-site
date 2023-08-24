@@ -1,13 +1,12 @@
 ---
-type: "blog"
-title: "Crypto trading bots in 2019: How easy are they to use?"
-description: ""
-author: "coinalpha"
 date: 2019-01-10
-image: "./cover.jpg"
-tags: ["bot reviews"]
-level: "Beginner"
+authors:
+  - coinalpha
+categories:
+  - Guides
+  - Trader Tips
 ---
+
 
 A great **user experience (UX)** is important for any product, but especially for one that automatically trades your hard-earned money, like a trading bot.  If a bot is hard to install, contains bugs, or stops working often, traders won't use it.
 
@@ -31,7 +30,7 @@ So far, we have tested the following bots:
 
 *Note that we will continue to assess these and other trading bots, so we plan on updating this post often.*
 
-<h3 id="3commas">3Commas</h3>
+### 3Commas
 
 [3commas](https://3commas.io/) is a popular web-based, closed-source trading bot that supports multiple exchanges and trading pairs. The bot allows users to set various parameters including stop-loss and target profit, base trader size, etc.
 
@@ -50,7 +49,7 @@ Since it offers a free trial, we tested it out for a few days. While we didn't l
 
 One limitation of 3Commas is that its trading bot only supports Binance and Huobi. However, its smart trading tool, which allows users to set stop-loss and take-profit targets for their trades, supports more exchanges, including Coinbase Pro and Bitmex.
 
-<h3 id="bitmex">Bitmex Sample Market Maker</h3>
+### Bitmex Sample Market Maker
 
 The [Bitmex sample market maker bot](https://github.com/BitMEX/sample-market-maker) is open-source software maintained by Bitmex to help users act as market makers on their exchange. The installation was fairly straightforward. However, we did encounter Python version issues since we initially installed it locally on a Mac using the local version of Python 2 before realizing that the bot requires Python 3.5+. Afterwards, we used [Anaconda](https://www.anaconda.com/) to create a dedicated Python 3 environment for the bot, which allowed us to operate it alongside other applications that require Python 2.
 
@@ -69,7 +68,7 @@ We did, however, encounter an issue in which we set certain parameters with too 
 
 Finally, it's important to note that this bot is likely to lose money if users run it out of the box, a fact explicitly emphasized in the Github documentation. Users are encouraged to add custom trading
 
-<h3 id="gekko">Gekko</h3>
+### Gekko
 
 With 3000 downloads per month, [Gekko](https://github.com/askmike/gekko) is a popular, open source crypto trading bot.
 
@@ -79,40 +78,33 @@ For an open source product, it has many of the key features needed for automated
 
 On the downside, Gekko had to **warm up** for 10 hours before being able to trade. Also, it is limited to technical indicator-based trading strategies.
 
-<h3 id="tribeca">Tribeca</h3>
+### Tribeca
 
 [Tribeca](https://github.com/michaelgrosner/tribeca) is an open source market making bot for centralized crypto exchanges. It allows users to configure, backtest and run a bot that automatically sets and adjusts buy/sell orders, potentially profiting from the bid-ask spread.
 
 Tribeca has a well-documented installation process. Using `docker-compose`, we were able to get the bot running within a few minutes. However, there were a number of warnings about discontinued or outdated `npm` package dependencies. This is natural since the project doesn't appear to be actively maintained o Github, with the last comments approximately one year ago.
 
-However, configuring and successfully running the bot proved more challenging. While the [Tribeca wiki](https://github.com/michaelgrosner/tribeca/wiki) is extensive and detailed, the web-based user interface contains many parameters that users need to input in order to run the bot. Lacking default settings and/or explanation of what the parameters mean, the user interface is confusing for
-inexperienced traders.
+However, configuring and successfully running the bot proved more challenging. While the [Tribeca wiki](https://github.com/michaelgrosner/tribeca/wiki) is extensive and detailed, the web-based user interface contains many parameters that users need to input in order to run the bot. Lacking default settings and/or explanation of what the parameters mean, the user interface is confusing for inexperienced traders.
 
 ![](./tribeca.png)
 
 The bot support Coinbase Pro, Bitfinex, OKCoin, and HitBTC. We tested the Coinbase Pro integration, which appears to work, but given the Github repo inactivity, we would not be surprised if there are issues with other exchanges.
 
-<h3 id="makerdao">MakerDAO Market Maker Keeper</h3>
+### MakerDAO Market Maker Keeper
 
 The DAI Stablecoin System incentivizes external agents, called keepers, to automate certain operations around the Ethereum blockchain. [Market Maker Keeper](https://github.com/makerdao/market-maker-keeper) is a set of keepers that currently facilitate market making on 13 exchanges that trade the MakerDAO-sponsored DAI stablecoin.
 
 The initial setup requires familiarity with Python application execution and run environments. Note that we were not able to get the bot fully running since we got an error that we couldn’t figure out.
-
-1. Installed Python3 and virtualenv
 
 ```
 $ brew install python
 pip install --upgrade virtualenv
 ```
 
-2. Installed [Nix-OS](https://nixos.org/nix/download.html), which is required for installing setzer for etherdelta link:
-
 ```
 $ curl https://nixos.org/nix/install | sh
 source $HOME/.nix-profile/etc/profile.d/nix.sh
 ```
-
-3. Installed [setzer](https://github.com/makerdao/setzer)
 
 ```
 $ nix-channel --add https://nix.dapphub.com/pkgs/dapphub
@@ -120,8 +112,6 @@ $ nix-channel --update # => error: unable to download 'https://nix.dapphub.com/p
 $ nix-env -iA dapphub.{seth,jshon}
 ```
 *Note: setzer install is currently failing*
-
-4. Requires an ethereum node running with an unlocked account
 
 ```
 # Parity command line
@@ -135,8 +125,6 @@ unlock = ["0xADDRESS"]
 password = ["/path/to/password.txt"]
 ```
 *Note: security risk; anyone who can access this node can send transactions from the unlocked account*
-
-5. Sample run command:
 
 ```
 bin/oasis-market-maker-keeper \
@@ -154,8 +142,6 @@ bin/oasis-market-maker-keeper \
     --min-eth-balance 0.2
 ```
 
-Unfortunately, we got stuck at the following error:
-
 ```
 2018-11-21 17:31:59,443 INFO     Approving OasisDEX (0x14FBCA95be7e99C15Cc2996c6C9d841e54B79425) to access our 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2 directly
 2018-11-21 17:31:59,461 WARNING  Failed to send transaction ERC20Token('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2').approve(address,uint256)(['0x14FBCA95be7e99C15Cc2996c6C9d841e54B79425', <_big number_>]) with nonce=None, gas=147176, gas_price=8800000000
@@ -165,11 +151,10 @@ Traceback (most recent call last):
     raise ValueError(response["error"])
 ValueError: {'code': -32601, 'message': 'Method not found'}
 ```
-<br />
 
 From discussions with the folks at MakerDAO, they know that the market maker bot works because they use it internally to make markets in DAI. However, for their internal usage, they also utilize proprietary inventory and risk management modules not included in the open sourced code. They decided to open sourced the core market making engine in order to assist others who wanted to develop their own market making bots for the DAI ecosystem, but it seems like the code isn't optimized for simple, external use.
 
-<h3 id="dexbot">BitShares DEXBot</h3>
+### BitShares DEXBot
 
 [DEXBot](https://github.com/Codaone/DEXBot) is designed to provide liquidity on 15+ exchanges only on the BitShares blockchain.
 
@@ -180,7 +165,7 @@ From discussions with the folks at MakerDAO, they know that the market maker bot
 ![](./image5.png)
 ![](./image1.png)
 
-<h3 id="haasbot">HaasBot</h3>
+### HaasBot
 
 Created by a Dutch company, [HaasBot](https://www.haasonline.com/) is a closed-source trading client that has been active since 2014. HaasBot supports all currency pairs on 10+ major exchanges, and users can choose from a plethora of trading strategies, including technical signals, market making, and cross-exchange arbitrage. It also boasts an informative and well-documented [wiki](https://wiki.haasonline.com/Main_Page).
 
@@ -202,8 +187,10 @@ User experience (the process of installing, configuring, and running the bot) pl
 * Transaction logs
 * Graceful shutdown
 
-Trading bots can increase your peace of mind by saving your time and eliminating emotional trading. They provide convenience by helping to automate the execution of rules-based trading and can enable strategies optimized for risk/reward. However, there are substantial differences in ease of use between the bots available in the market today.
+Trading bots can increase your peace of mind by saving your time and eliminating emotional trading. They provide convenience by helping to automate the execution of rules-based trading and can enable strategies optimized for risk/reward. However, there are substantial differences in ease of
+
+ use between the bots available in the market today.
 
 Since we're designing Hummingbot to enable anyone to run a market making bot, a simple, intuitive user interface is one of core goals.
 
-In addition, by focusing on a relatively low-risk strategy called **cross-exchange market making** (see <a href="/hummingbot.pdf" class="heap-whitepaper" target="_blank">Hummingbot whitepaper</a> for more details), we believe that our bot will be suitable even for novice traders.
+In addition, by focusing on a relatively low-risk strategy called **cross-exchange market making** (see [Hummingbot whitepaper](../../../hummingbot.pdf) for more details), we believe that our bot will be suitable even for novice traders.

@@ -1,13 +1,18 @@
 ---
-type: "blog"
-title: "Deep dive: we answer 7 common questions about Hummingbot"
-description: ""
-author: "coinalpha"
 date: 2019-03-22
-image: "./cover.jpg"
-tags: ["hummingbot"]
-level: "Beginner"
+authors:
+  - coinalpha
+categories:
+  - Hummingbot
+  - Guides
+  - Trader Tips
 ---
+
+
+# Deep dive: we answer 7 common questions about Hummingbot
+
+![Alt text](../2019-02-crypto-trader-interview2/cover.png)
+
 
 In this post, we answer some frequently asked questions about Hummingbot that we haven't addressed in other blog posts. This post is adapted from [The BlockCrunch](https://letstalkbitcoin.com/blog/post/the-blockcrunch-liquidity-in-crypto-markets-michael-feng-hummingbot)'s recent podcast with Michael Feng, CEO and Co-Founder of Hummingbot.
 
@@ -24,7 +29,7 @@ This hurts issuers in different ways:
 These benefits of liquidity apply to every market. For newly listed tokens, it’s especially difficult because a lot of people are looking to transact; existing investors are looking to sell and new investors are looking to buy. If the market is illiquid, it reduces market confidence that the current price is fair. Furthermore, with a 20% bid-ask spread, it means that immediately after you buy an asset, you're already down 20% because your sell price is 20% lower. These factors discourage market participants from trading the asset.
 
 ### What are the negative effects of illiquidity?
-When you list an asset but you don't set up the market making infrastructure needed to make it liquid, it creates a non-functioning market and depresses the asset price. I experienced this firsthand when I worked in finance and wrote about it in a prior [blog post](/blog/2019-01-thin-crust-of-liquidity/#what-happens-when-you-list-an-illiquid-asset).
+When you list an asset but you don't set up the market making infrastructure needed to make it liquid, it creates a non-functioning market and depresses the asset price. I experienced this firsthand when I worked in finance and wrote about it in a prior [blog post](../2019-01-thin-crust-of-liquidity/index.md#what-happens-when-you-list-an-illiquid-asset).
 
 Markets can get liquid on their own once there are established fundamental frameworks for evaluating new assets, like valuing stocks based on price-to-earnings ratio. However, in today’s crypto landscape where assets trade based on technical factors (supply and demand) rather than fundamental ones, having market makers is very helpful for narrowing bid-ask spreads and enabling efficient price discovery.
 

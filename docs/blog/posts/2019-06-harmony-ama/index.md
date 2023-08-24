@@ -1,11 +1,14 @@
 ---
-title: "Ask Me Anything: Harmony $ONE Makers"
-author: "Michael Feng"
-description: "AMA about the Harmony liquidity bounty"
 date: 2019-06-21
-image: "./ama.png"
-tags: ["liquidity mining"]
+authors:
+  - mike
+categories:
+  - Liquidity mining
 ---
+
+# Ask Me Anything: Harmony $ONE Makers
+
+![cover](ama.png)
 
 Michael Feng, co-founder and CEO of hummingbot, answered a bunch of questions from the community at our first AMA with Harmony team on June 20th. For some of you who didn’t make it, we put together the questions and answers here so that you won’t actually miss anything.  
 
@@ -44,7 +47,7 @@ You're right - every market needs liquidity. That's why we think a decentralized
 
 ##### A member of the community has asked for clarification on 'liquidity is correlated with price'?
 
-Sure, there have been a number of academic studies that show that more liquid stocks tend to have a higher price than less liquid stocks, all other things being equal. For example, [here](/value-dmm-paper.pdf) is one academic paper on this subject.
+Sure, there have been a number of academic studies that show that more liquid stocks tend to have a higher price than less liquid stocks, all other things being equal. 
 
 You can also see this effect if you try to buy/sell a token in a very illiquid market. If the bid/ask spread is very high, it means that you lose money with every trade. In trading parlance, this is called slippage: the difference between the market price before a trade is executed versus the actual execution price of that trade.
 
@@ -68,7 +71,7 @@ The idea behind liquidity mining is that liquidity is a scarce resource in crypt
 
 ###### Who can use hummingbot, I mean how easy is it to set up?
 
-Since it's open source, Hummingbot is free and available to anyone. We have prepared [a guide](https://docs.hummingbot.io/miner/liquidity-mining/overview/) for Liquidity Bounty participants that should make the setup process less than 10 minutes.
+Since it's open source, Hummingbot is free and available to anyone. We have prepared [a guide](https://support.hummingbot.io/hc/en-us/articles/4415753047065-Getting-Started) for Liquidity Bounty participants that should make the setup process less than 10 minutes.
 
 ##### How long does this one maker bounty program last? Is there a lock up period? Do we need to give up a certain amount of $ONE tokens?
 
@@ -88,7 +91,7 @@ Yes, we have a number of projects in our community using Hummingbot to run marke
 
 ##### Do you provide bots available and configured for some choice of standard market making strategies? Or is the bot development and configuration is up to the community?
 
-Great question - we provide templates for the strategies, but users need to input their own configuration parameters, such as spread, trade size, and how often to refresh orders. Also, all of our strategies are open source, so users can customize or create their own strategies. For more details on our strategies, please see this [page](https://docs.hummingbot.io/strategies/overview/) in our documentation.
+Great question - we provide templates for the strategies, but users need to input their own configuration parameters, such as spread, trade size, and how often to refresh orders. Also, all of our strategies are open source, so users can customize or create their own strategies. For more details on our strategies, please see this [page](../../../strategies/index.md) in our documentation.
 
 ##### So how many coins is the minimum requirement to run Hummingbot?
 
@@ -104,10 +107,10 @@ Our team has been a true believer of decentralization - our launch on the Binanc
 
 **So Mike, as a final question, do you have any follow-up links or points to share with the community?**
 
-Yes, we have created [a guide exclusively for Liquidity Bounty participants](https://docs.hummingbot.io/miner/liquidity-mining/overview/). 
+Yes, we have created [a guide exclusively for Liquidity Bounty participants](https://miner.hummingbot.io/markets). 
 
-The program will commence in early July, so please [sign up here](https://www.hummingbot.io/liquidity-mining/harmony) to get notified as soon as it launches. 
+The program will commence in early July, so please [sign up here](https://miner.hummingbot.io/markets) to get notified as soon as it launches. 
 
-Finally, here are the [reward tiers](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-reward-period) for $ONE Makers. 
+Finally, here are the [reward tiers](https://miner.hummingbot.io/markets) for $ONE Makers. 
 
 

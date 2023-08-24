@@ -1,13 +1,15 @@
 ---
-title: "Hummingbot Strategy Hacks 101"
-author: "Carlo P. Las Marias"
-description: "Creating new strategies from base strategies"
 date: 2019-09-17
-image: "./cover.png"
-level: "Experienced"
-tags: ["strategy"]
-featured: false
+authors:
+  - carlo
+categories:
+  - Hummingbot
+  - Guides
 ---
+
+# Hummingbot Strategy Hacks 101
+
+![cover](cover.png)
 
 Hummingbot currently comes with three main built-in trading strategies.  A quick recap, these are:
 
@@ -17,6 +19,8 @@ Hummingbot currently comes with three main built-in trading strategies.  A quick
 
 But did you know that you could use these strategies as building blocks to create other trading strategies?  As the Hummingbot team continues to build out the capabilities of Hummingbot, particularly additional exchange connectors and strategies, there are other strategies users can already derive from the existing three strategies above.
 
+<!-- more -->
+
 ### Pure market making
 
 #### EMS Strategy 1: Time-Weighted Average Price (TWAP) Trade Execution
@@ -25,7 +29,6 @@ Rationale
 - Trade a large block of assets by splitting into smaller trades that are spread out over a period of time.
 - Trade by placing limit orders, which is typically lower on most exchanges, instead of market orders.
 
-<!-- more -->
 
 A common need that arises for investors is to buy or sell a large block of an asset.  While an investor could do this all in one go, it may be more efficient to spread out trades over time to reduce slippage.  This particularly becomes more important for markets with thin order books, where order book depth may not allow for trading the entire size or would result in doing so at weighted average price multiple percentage points away from mid-market.
 
@@ -42,7 +45,6 @@ Depending on whether or not you want to buy or sell (example: ETH):
 
 By configuring the strategy this way, it will effectively execute a series of buys or sells over time.  The strategy will still continue to place buy and sell orders (given sufficient inventory), but by placing an order for the desired action (buy or sell) at a low spread (which may even be zero), this makes it more likely that this order will be filled, while placing the opposite order at a large spread makes that very unlikely to be filled.
 
----
 
 #### EMS Strategy 2: Rebalance Your Portfolio for a Target Quote/Base Asset Ratio
 
@@ -50,7 +52,6 @@ You can use the **inventory skew** function to rebalance your portfolio to achie
 
 Again, the strategy will continue to create bid and ask orders, but adjust sizes to try to eventually achieve the target inventory ratio.
 
----
 
 ### Cross Exchange Market Making
 
@@ -72,9 +73,8 @@ Hummingbot’s cross exchange market making strategy would execute legs 1 and 2.
 
 ![](xemm-triangular-arb.png)
 
----
+[Title](../../../strategies/index.md)
+To learn more about Hummingbot’s strategies, you can visit the [strategies documentation site](../../../strategies/index.md).
 
-To learn more about Hummingbot’s strategies, you can visit the [strategies documentation site](https://docs.hummingbot.io/strategies/overview/).
-
-Are there any strategies you would like to see implemented in Hummingbot?  Please visit the [developer forum](https://forum.humminbot.io) to suggest and discuss with the Hummingbot community.
+Are there any strategies you would like to see implemented in Hummingbot?  Please visit the [Discord channels](https://discord.humminbot.io) to suggest and discuss with the Hummingbot community.
 

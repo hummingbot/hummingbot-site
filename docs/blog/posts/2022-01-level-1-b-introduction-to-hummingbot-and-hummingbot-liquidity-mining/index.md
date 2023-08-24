@@ -10,7 +10,7 @@ categories:
 
 # Introduction to Hummingbot and Liquidity Mining Campaigns
 
-# What is Hummingbot?
+## What is Hummingbot?
 
 Hummingbot is a high-frequency algorithmic trading bot written in Python and Cython that allows users to run market making bots on its supported exchanges.
 
@@ -18,11 +18,12 @@ Everything you learned during the previous lessons such as creating an order, ca
 
 To use Hummingbot, you can try out our [online Test Drive](https://hummingbot.io/en/test-drive/?ref=blog.hummingbot.org) or desktop [client app](https://hummingbot.org/installation/?_ga=2.130023116.1350614256.1645412188-569987294.1641179028&ref=blog.hummingbot.org). We will go through the set up in Stage 2: Beginner level.
 
-# Hummingbot Liquidity Mining Campaigns
+<!-- more -->
+
+## Hummingbot Liquidity Mining Campaigns
 
 The Hummingbot miner campaigns is a platform for market makers to earn extra rewards by providing liquidity to the markets listed in the platform. You **do not have** to use Hummingbot software to be able earn liquidity mining rewards.
 
-<!-- more -->
 
 ## What is liquidity mining?
 
@@ -30,7 +31,7 @@ Liquidity mining is the action of providing liquidity by users through creating 
 
 Liquidity mining **rewards** are earned by users for creating maker orders for specific tokens and trading pairs
 
-![Youtube Video](https://www.youtube.com/embed/ME5osB8sX_s?list=PLDwlNkL_4MMcocIaFMsnddm-T7nFV_zZM)
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/ME5osB8sX_s?list=PLDwlNkL_4MMcocIaFMsnddm-T7nFV_zZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Hummingbot Liquidity mining vs AMMs and other liquidity mining options
 
