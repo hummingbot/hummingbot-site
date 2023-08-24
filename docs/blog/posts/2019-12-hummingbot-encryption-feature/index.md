@@ -4,7 +4,7 @@ authors:
   - coinalpha
 categories:
   - Hummingbot
-  - Announcement
+  - Announcements
 ---
 
 # Introducing Hummingbot's new key encryption feature
