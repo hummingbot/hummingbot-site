@@ -66,7 +66,7 @@ hide:
 
 # Who uses Hummingbot?
 
-<div class="grid cards wide" markdown>
+<!-- <div class="grid cards wide" markdown>
 
 -   :material-account-hard-hat:{ .lg .middle } __Liquidity Miners__
 
@@ -76,15 +76,76 @@ hide:
 
     Arbitrage opportunities between long-tail AMM DEXs and CEXs remain plentiful, which Hummingbot's [AMM Arbitrage strategy](/strategies/amm-arbitrage/) helps users capture.
 
--   :octicons-arrow-switch-24:{ .lg .middle } __Market Making Firms__
+-   :octicons-arrow-switch-24:{ .lg .middle } __Market Makers__
 
-    For market makers who want to serve multiple clients across many CEXs and DEXs, the open source Hummingbot platform provides an ideal starting point. Many of the top crypto market making firms, such as [CoinAlpha](https://coinalpha.com), [System9](https://system9.io/) and [3Jane Capital](https://3jane.com/), run Hummingbot.
+    For market makers who want to serve multiple clients across many CEXs and DEXs, the open source Hummingbot platform provides an ideal starting point. Many top crypto market making firms started by building on top of Hummingbot, like the ones below.
 
--   :material-ethereum:{ .lg .middle } __Token Projects__
+-   :material-ethereum:{ .lg .middle } __Token Issuers__
 
-    The free and open source Hummingbot software has allowed many token projects own their liquidity and skip hiring market makers. [Dashboard](https://github.com/hummingbot/dashboard) extends these capabilities and lets you deploy an end-to-end liquidity management solution.
+    The free and open source Hummingbot software has allowed many tokens to own their liquidity and skip hiring market makers. [Dashboard](https://github.com/hummingbot/dashboard) extends these capabilities and lets them deploy an end-to-end liquidity management solution.
 
 </div>
+
+<br /> -->
+
+## Market makers build on top of Hummingbot
+
+### For market makers who want to serve multiple clients across many CEXs and DEXs, the open source Hummingbot platform provides an ideal starting point. Many of today's top crypto market making firms started by building on top of Hummingbot.
+
+<div class="grid" markdown>
+
+<span class="quote">
+:material-format-quote-open:
+We started with Hummingbot as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. It allowed us to go-to-market quickly and start making profits. Nowadays, we still use it from time to time and enjoy their great documentation.
+:material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="/assets/authors/carlo-las-marias.jpg" class="headshot" />
+<br/>
+<a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author">Carlo Las Marias</a>
+<br/>
+<a href="https://coinalpha.com/" target="_blank"><img src="/assets/brand/coinalpha.png" class="logo"></a>
+{ .testimonial }
+
+<span class="quote">
+:material-format-quote-open:
+We started with Hummingbot as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. It allowed us to go-to-market quickly and start making profits. Nowadays, we still use it from time to time and enjoy their great documentation.
+:material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="/assets/brand/3jane-eugene.jpg" class="headshot" />
+<br/>
+<a href="https://www.linkedin.com/in/etartakovsky/" target="_blank" class="author">Eugene Tartakovsky</a>
+<br/>
+<a href="https://3jane.com/" target="_blank"><img src="/assets/brand/3jane-2.jpg" class="logo"></a>
+{ .testimonial }
+
+<span class="quote">
+:material-format-quote-open:
+Hummingbot has served as a reliable base for us to build custom tools and strategies. It has many quality connectors and all components are well thought out, allowing us to flexibly modify the open source code. This enables us to run a reliable market making as a service operation on both DEX and CEX.
+:material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="/assets/brand/enclave-jelle-buth.jpg" class="headshot" />
+<br/>
+<a href="https://www.linkedin.com/in/jelle-buth/" target="_blank" class="author">Jelle Buth</a>
+<br/>
+<a href="https://www.enflux.io/" target="_blank"><img src="/assets/brand/enclave.jpg" class="logo"></a>
+{ .testimonial }
+
+
+</div>
+
+---
+
+## Trader run Hummingbot to earn rewards and generate side income
+
+---
+
+## Protocols partner with Hummingbot to catalyze DeFi
+
+
+
 
 ---
 

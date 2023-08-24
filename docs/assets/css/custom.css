@@ -270,3 +270,42 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   width: 100%;
   height: 100%;
 }
+
+
+/* Testimonial Cards */
+.testimonial {
+  padding: 40px 20px;
+  border: 1px solid var(--pg-light-border);
+  border-radius: 6px;
+  background-color: var(--md-primary-fg-color);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s; */
+
+  .quote {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }  
+
+  .headshot {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image keeps its aspect ratio */
+    margin-bottom: 0.5rem;
+  }
+
+  .author {
+    font-weight: bold;
+  }
+
+  .logo {
+    margin-top: 0.5rem;
+    width: 7rem; /* You can adjust this based on the size you want */
+    object-fit: contain; /* Ensures the logo keeps its aspect ratio */
+    transition: opacity 0.3s;
+  }
+
+  .logo:hover {
+    opacity: 0.8;
+  }
+}
