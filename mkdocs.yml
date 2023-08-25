@@ -329,6 +329,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.19.0: release-notes/1.19.0.md
     - 1.18.0: release-notes/1.18.0.md
     - 1.17.0: release-notes/1.17.0.md
     - 1.16.0: release-notes/1.16.0.md
