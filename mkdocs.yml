@@ -218,13 +218,14 @@ nav:
         - Ping Pong: strategy-configs/ping-pong.md
     - Strategies:
       - Strategies: strategies/index.md
-      - V2 Strategies:
+      - V2 Strategies 🔥:
         - V2 Strategies: v2-strategies/index.md
+        - Candles: v2-strategies/candles.md
         - Smart Components: v2-strategies/smart-components.md
-        - Candles Feed: v2-strategies/candles-feed.md
-        - Broker Module: installation/orchestration.md
+        - Executors: v2-strategies/executors.md
+        - Controllers: v2-strategies/controllers.md
       - V1 Strategies:
-        - V1 Strategies: strategies/v1-strategies.md
+        - V1 Strategies: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
         - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
         - AMM Arbitrage: strategies/amm-arbitrage.md
@@ -320,6 +321,9 @@ nav:
       - Working with Tokens: gateway/tokens.md
       - Running DEX Bots: gateway/running-dex-bots.md
       - API Reference: gateway/api-reference.md
+    - Dashboard 🔥:
+      - Dashboard: dashboard/index.md
+      - Broker: installation/orchestration.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md

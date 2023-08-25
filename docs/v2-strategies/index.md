@@ -1,8 +1,6 @@
-
 * Smart Components
-* Candles Feed
-* Executor
+* Candles
+* Controllers
+* Executors
+* Executor Handlers
 * Broker
-* Controller
-* Executor Handler
-
