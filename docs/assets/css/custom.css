@@ -241,6 +241,8 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   }
 }
 
+
+/* Primary buttons */
 .md-main .md-button--primary {
   color: var(--md-primary-fg-color);
   background-color: var(--hb-hero-color);
@@ -253,20 +255,54 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 }
 
 
-/* Videos: Padding Bottom Hack */
+/* Testimonial cards */
+.testimonial {
+  padding: 40px 20px;
+  border: 1px solid var(--pg-light-border);
+  border-radius: 6px;
+  background-color: var(--md-primary-fg-color);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s; */
 
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  min-height: 200px;
+  .quote {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }  
+
+  .headshot {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image keeps its aspect ratio */
+  }
+
+  .author {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 7rem; /* You can adjust this based on the size you want */
+    object-fit: contain; /* Ensures the logo keeps its aspect ratio */
+    transition: opacity 0.3s;
+  }
+
+  .logo:hover {
+    opacity: 0.8;
+  }
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Accent color */
+.accent {
+  color: var(--md-typeset-a-color);
+}
+.accent a {
+  font-weight: 500;
+}
+
+/* Centered item */
+.centered {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
