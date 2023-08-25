@@ -1,7 +1,7 @@
 ---
 date: 2019-01-30
 authors:
- - carlo
+ - mike
 categories:
  - Market making
 ---
