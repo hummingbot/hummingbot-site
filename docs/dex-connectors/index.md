@@ -8,24 +8,24 @@ Here are the current DEX connectors in the codebase, as of Q3 2023:
 
 | Exchange | Type | Tier | Maintainer |
 |----------|------|------|------------|
-| [Uniswap](./uniswap) | AMM | 🥇 Gold | Hummingbot Foundation |
-| [dYdX](./dydx) | CLOB | 🥈 Silver | Hummingbot Foundation |
-| [Pancakeswap](./pancakeswap) | AMM | 🥈 Silver | Hummingbot Foundation |
-| [Dexalot](./dexalot) | CLOB | 🥈 Silver | Hummingbot Foundation |
-| [Defira](./defira) | AMM | 🥉 Bronze
-| [Injective](./injective) | CLOB | 🥉 Bronze
-| [Loopring](./loopring) | CLOB | 🥉 Bronze
-| [Mad Meerkat](./mad-meerkat) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
-| [OpenOcean](./openocean) | AMM | 🥉 Bronze
-| [Pangolin](./pangolin) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
-| [Perpetual Protocol](./perp) | AMM | 🥉 Bronze
-| [Polkadex](./polkadex) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [Quickswap](./quickswap) | AMM | 🥉 Bronze
-| [Ref Finance](./ref) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [Sushiswap](./sushiswap) | AMM | 🥉 Bronze
-| [Tinyman](./tinyman) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [TraderJoe](./traderjoe) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [Vertex](./vertex) | AMM | 🥉 Bronze
-| [VVS Finance](./vvs) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [XSwap](./xswap) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [Plenty](./plenty) | AMM | 🥉 Bronze
+| [Uniswap](../exchanges/uniswap.md) | AMM | 🥇 Gold | Hummingbot Foundation |
+| [dYdX](../exchanges/dydx.md) | CLOB | 🥈 Silver | Hummingbot Foundation |
+| [Pancakeswap](../exchanges/pancakeswap.md) | AMM | 🥈 Silver | Hummingbot Foundation |
+| [Dexalot](../exchanges/dexalot.md) | CLOB | 🥈 Silver | Hummingbot Foundation |
+| [Defira](../exchanges/defira.md) | AMM | 🥉 Bronze
+| [Injective](../exchanges/injective.md) | CLOB | 🥉 Bronze
+| [Loopring](../exchanges/loopring/index.md) | CLOB | 🥉 Bronze
+| [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
+| [OpenOcean](../exchanges/openocean.md) | AMM | 🥉 Bronze
+| [Pangolin](../exchanges/pangolin.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
+| [Perpetual Protocol](../exchanges/perp.md) | AMM | 🥉 Bronze
+| [Polkadex](../exchanges/polkadex.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [Quickswap](../exchanges/quickswap.md) | AMM | 🥉 Bronze
+| [Ref Finance](../exchanges/ref.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [Sushiswap](../exchanges/sushiswap.md) | AMM | 🥉 Bronze
+| [Tinyman](../exchanges/tinyman.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [TraderJoe](../exchanges/traderjoe.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [Vertex](../exchanges/vertex.md) | AMM | 🥉 Bronze
+| [VVS Finance](../exchanges/vvs.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [XSwap](../exchanges/xswap.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [Plenty](../exchanges/plenty.md) | AMM | 🥉 Bronze
