@@ -1,20 +1,26 @@
 ---
-title: "Hummingbot Miner: year 1 platform recap!"
-author: "Carlo P. Las Marias"
-description: "A review of the platform over the past year since our March 2, 2020 launch"
 date: 2021-03-02
-image: "./february-2021-recap.png"
-tags: ["announcement"]
-featured: false
+authors:
+  - carlo
+categories:
+  - Announcements
 ---
+
+
+# Hummingbot Miner: year 1 platform recap!
+
+![cover](february-2021-recap.png)
 
 ### Hummingbot Miner turns 1 year old!
 
-The Hummingbot Miner platform has been live for one year!  When we launched Hummingbot Miner on March 3, 2020, we kicked off a new and sustainable way for issuers to source liquidity for their tokens.  It was a data-driven approach for rewarding a decentralized group of market makers for providing liquidity and harnessing the collective trading power of communities.
+The Hummingbot Miner platform has been live for one year!  When we launched Hummingbot Miner on March 3, 2020, we kicked off a new and sustainable way for issuers to source liquidity for their tokens. It was a data-driven approach for rewarding a decentralized group of market makers for providing liquidity and harnessing the collective trading power of communities.
 
 We are thrilled that over the past year, the platform has provided liquidity for 18 different token issuers, with 1,622 unique miners participating and earning rewards.  Our decentralized market making community created order book depth and liquidity that resulted in $837mm of traded volume across the various liquidity mining campaigns!
 
+<!-- more -->
+
 ### Year one summary stats
+
 ***March 3, 2020 to February 28, 2021***
 
 - Liquidity campaigns for **18** token issuers:
@@ -29,8 +35,6 @@ We are thrilled that over the past year, the platform has provided liquidity for
 
 - Top ranked miner has earned **$66,092** equivalent in rewards, while the #2 miner has earned **$21,941** equivalent 
 
-
-<!-- more -->
 
 ### February 2021 highlights:
 - **Launch of liquidity mining on KuCoin!** We launched campaigns for **Algorand**, **Harmony (ONE)**, and our promotional campaign for **Bitcoin** and **Ethereum**
@@ -47,7 +51,6 @@ We are thrilled that over the past year, the platform has provided liquidity for
 
 - Weekly volume of **$91m** in the last week of February 2021
 
----
 
 ### KuCoin liquidity mining launch
 
@@ -69,7 +72,6 @@ Bring on the new campaigns!!  Issuers with token listings on KuCoin, please cont
 
 New campaigns announcing and launching soon, stay tuned!
 
----
 
 ### Hummingbot Miner app updates
 
@@ -115,15 +117,13 @@ We have a number of improvements currently in the works:
 
 - Public API: several of our users have commented that they would like access to campaign stats and rewards data, to enable them to integrate this data to their trading bots.  We are also integrating the Hummingbot client to interact with this data, to have a seamless integration for Hummingbot miners and bot users.  We already have the initial version of this deployed and will be releasing publicly in the near future!
 
-***Do you have any suggested features or improvements?  Let us know!  Email our [Hummingbot miner team](mailto:miner@hummingbot.io) or chat with us on [discord](https://discord.hummingbot.io).***
+**Do you have any suggested features or improvements?  Let us know!  Email our [Hummingbot miner team](mailto:miner@hummingbot.io) or chat with us on [discord](https://discord.hummingbot.io).**
 
----
 
 ### Platform stats
 
 And now, on to our usual platform stats updates.
 
-For a discussion and explanation of some of the metrics we are tracking, please see our blog post - [Liquidity mining: April recap.](https://hummingbot.io/blog/2020-05-liquidity-mining-2nd-month-recap/)
 
 #### 24h traded volume per $1 open order volume
 
@@ -175,7 +175,7 @@ On average, for each issuer campaign, there are between 40-50 active bots partic
 
 ### Open order volume
 
-***“Total value locked”***
+**“Total value locked”**
  
 Average daily open order volume reached an all-time high of $560k this past month, and is currently $445k:
 
@@ -231,7 +231,6 @@ There was a range across campaigns, which can be seen in the following charts:
 
 *(Note: last data point is partial week data as of February 28, 2021 - 6 days)*
 
----
 
 🏛 **Token issuers**: contact the team at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io) to learn more about running liquidity mining campaigns on Kucoin, Binance.com, or to suggest the next exchange for us to integrate with!
 

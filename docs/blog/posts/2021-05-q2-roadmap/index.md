@@ -1,25 +1,27 @@
 ---
-title: "Hummingbot Roadmap - Q2 2021"
-author: "Michael Feng"
-description: "With integrations to 20+ exchanges and an expanding list of protocols, Hummingbot helps both individual and professional quant traders all over the world skip the low-level drudgery of building and maintaining integrations to centralized and decentralized exchanges alike. Here are some initiatives we plan to ship over the rest of 2Q 2021 for both Hummingbot and Hummingbot Miner."
 date: 2021-05-06
-image: "./Q2_Roadmap.png"
-tags: ["hummingbot", "announcement"]
-featured: true
+authors:
+  - mike
+categories:
+  - Announcements
+  - Hummingbot
 ---
+
+# Hummingbot Roadmap - Q2 2021 
+
+![cover](Q2_Roadmap.png)
 
 Two years ago, we decided to open source the technology stack that powered our quant hedge fund and launch Hummingbot. Back then, everyone thought we were crazy, stupid, or both.
 
-Today, [Hummingbot](https://github.com/coinalpha/hummingbot) has become the leading open source trading bot project in crypto, with 12,000+ Discord community members, 1,700+ stars, 700+ forks, and 80 contributors. With integrations to [20+ exchanges](https://docs.hummingbot.io/exchange-connectors/overview/) and an expanding list of [protocols](https://docs.hummingbot.io/protocol-connectors/overview/), Hummingbot helps both individual and professional quant traders all over the world skip the low-level drudgery of building and maintaining integrations to centralized and decentralized exchanges alike.
+Today, [Hummingbot](https://github.com/hummingbot/hummingbot) has become the leading open source trading bot project in crypto, with 12,000+ Discord community members, 1,700+ stars, 700+ forks, and 80 contributors. With integrations to [20+ exchanges](../../../exchanges/index.md) and an expanding list of [protocols](../../../dex-connectors/index.md), Hummingbot helps both individual and professional quant traders all over the world skip the low-level drudgery of building and maintaining integrations to centralized and decentralized exchanges alike.
+
+<!-- more -->
 
 However, this is possible only because of [Hummingbot Miner](https://miner.hummingbot.io), the liquidity mining platform where Hummingbot users can run market making bots to earn token rewards. For token projects, Miner provides a more efficient, transparent, and community-based liquidity solution compared to hiring a market maker. For Hummingbot users, Miner allows them to earn higher yields than anywhere else in crypto. For us as a company, the fees earned from exchanges and projects who utilize the Miner platform sustain the development and maintenance of the Hummingbot open source project.
 
 Since launch in March 2020, Hummingbot Miner has paid out $640k+ in rewards to 2000+ users. These users, which include both individual and professional market makers, earned these rewards by providing liquidity to top tokens like Avalanche (AVAX), NEM (XEM), Algorand (ALGO), and Solana (SOL).
 
 **Since inception, Hummingbot liquidity miners have filled over $1.4 billion in trade volume.**
-
-<!-- more -->
-
 
 # What's next in 2Q
 
@@ -51,7 +53,7 @@ We expect AscendEx liquidity mining campaigns on Hummingbot Miner to start in Ju
 
 ## Other Hummingbot initiatives in Q2
 
-**Avellaneda market making**: We recently released [a new market making strategy](/blog/2021-04-avellaneda-stoikov-market-making-strategy/) based on the classic [Avellaneda-Stoikov market making paper](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf). Because this strategy has a more theoretically sound and academically rigorous foundation, we aim to make this strategy the initial strategy used by new Hummingbot market makers.
+**Avellaneda market making**: We recently released [a new market making strategy](../2021-04-avellaneda-stoikov-market-making-strategy/index.md) based on the classic [Avellaneda-Stoikov market making paper](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf). Because this strategy has a more theoretically sound and academically rigorous foundation, we aim to make this strategy the initial strategy used by new Hummingbot market makers.
 
 In the next few releases, we plan to port commonly used features from `pure_market_making` to `avellenada_market_making`, as well as move Avellaneda's inventory risk model into the `liquidity_mining` strategy.
 
@@ -59,7 +61,7 @@ In the next few releases, we plan to port commonly used features from `pure_mark
 
 In order to continue adding exchanges, we need to refactor the existing connectors and improve their unit tests so that our QA and engineering teams can maintain the growing number of connectors supported by Hummingbot.
 
-**Create your own Hummingbot strategy!**: We are placing a greater emphasis on creating documentation and guides that teach users how to create their own Hummingbot strategies. We have updated the [strategy creation documentation](https://docs.hummingbot.io/developer/strategies-overview/), and we will be covering strategy creation in this Friday's edition of [Hummingbot Live](https://rebrand.ly/hummingbotlive).
+**Create your own Hummingbot strategy!**: We are placing a greater emphasis on creating documentation and guides that teach users how to create their own Hummingbot strategies. We have updated the [strategy creation documentation](../../../strategies/index.md), and we will be covering strategy creation in this Friday's edition of [Hummingbot Live](https://rebrand.ly/hummingbotlive).
 
 We have partnered with Gitcoin to support the [OpenDeFi hackathon](https://gitcoin.co/hackathon/open-defi/onboard) going on now, so you can win bounties for creating Hummingbot strategies!
 
@@ -80,5 +82,3 @@ Some of these API endpoints are already being used by the `liquidity_mining` str
 Below is an early design of the new Market view:
 
 ![](./redesign.png)
-
-

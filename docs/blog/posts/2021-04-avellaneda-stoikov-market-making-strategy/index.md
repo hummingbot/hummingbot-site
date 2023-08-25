@@ -1,13 +1,16 @@
 ---
-title: "A comprehensive guide to Avellaneda & Stoikov’s market-making strategy"
-author: "coinalpha"
-description: "Learn how to use this classic market making strategy on hummingbot"
 date: 2021-04-13
-image: "./cover.png"
-tags: ["market making", "strategy"]
-featured: false
-rank: 3
+authors:
+  - coinalpha
+categories:
+  - Market making
+  - Guides
 ---
+
+
+# A comprehensive guide to Avellaneda & Stoikov’s market-making strategy
+
+![cover](cover.png)
 
 Welcome back to the Hummingbot Academy!
 
@@ -17,6 +20,8 @@ This article will explain the idea behind the classic paper released by Marco Av
 
 But suppose you have fun reading intricate scientific papers (I do!). In that case, the original article is easy to find on a quick internet search, or you can find the original publication [here](https://www.researchgate.net/publication/24086205_High_Frequency_Trading_in_a_Limit_Order_Book).
 
+<!-- more -->
+
 Today we will be discussing:
 
 *   What is the Avellaneda & Stoikov market-making model
@@ -24,8 +29,6 @@ Today we will be discussing:
 *   What is the proposed optimal bid & ask spreads
 *   How the strategy was implemented in Hummingbot
 
-
-<!-- more -->
 
 ## A brief explanation about the model proposal
 

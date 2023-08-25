@@ -1,12 +1,15 @@
 ---
-title: "Vote for the next governance proposal: Altmarkets.io, IDEX & Binance Cloud"
-author: "coinalpha"
-description: ""
 date: 2021-01-22
-image: "./cover.png"
-tags: ["announcement", "governance"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Announcements
+  - Governance
 ---
+
+# Vote for the next governance proposal: Altmarkets.io, IDEX & Binance Cloud
+
+![cover](cover.png)
 
 We are excited to launch the 4th Hummingbot governance proposal!
 
@@ -88,5 +91,4 @@ Established in late 2017, Tokocrypto recently joined hands with Binance, the wor
 
 The Tokocrypto team has developed a Hummingbot connector, which is ready to be merged into our core code base. 
 
----
 🏦 Contact partnerships@hummingbot.io if you’d like to bring Hummingbot and liquidity mining to your exchange!

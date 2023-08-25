@@ -7,11 +7,11 @@ categories:
 ---
 
 # Hummingbot Gateway v2 Architecture - Part 1
-
+![cover](cover.jpg)
 
 *by Martin Kou*
 
-**Update (February 2023):**Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
+**Update (February 2023):** Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
 
 Introduction
 ------------
@@ -20,9 +20,11 @@ Hummingbot Gateway is a software that allows Hummingbot to connect to decentrali
 
 The Hummingbot Gateway is a separate piece of software apart from Hummingbot, because software libraries needed for accessing decentralized exchanges, e.g. the Uniswap Smart Order Router, are usually not written in Python. The gateway provides Hummingbot access to these decentralized exchanges with their differing software stacks, by exposing a secure and unified API interface to Hummingbot. This API interface can also be used by other potential gateway clients, such as proprietary trading software.
 
+<!-- more -->
+
 In this series of Hummingbot Gateway v2 Architecture blog posts, we will outline the architectural changes we will be making to Gateway v2 to bring it up to production quality - and why changes are needed.
 
-<!-- more -->
+
 
 ### **History**
 

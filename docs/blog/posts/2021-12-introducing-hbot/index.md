@@ -8,11 +8,13 @@ categories:
 
 # Introducing the Hummingbot Governance Token: HBOT
 
+![cover](HB_Token_Featured_Banner.webp)
+
 HBOT Tokens empower holders to decide how the Hummingbot codebase changes over time through voting on proposals.
 
 ![](./HB_Token_Featured_Banner.webp)
 
-As announced in [this October post](/blog/2021/10/25/introducing-the-hummingbot-foundation/), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots.
+As announced in [this October post](../2021-10-hummingbot-foundation/index.md), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots.
 
 <!-- more -->
 
@@ -28,7 +30,7 @@ An initial interim Board of Directors has been appointed, comprised of five dire
 
 To retain independence, Foundation bylaws stipulate that no more than two officers or directors of an outside entity can be members of the Board of Directors. The Board oversees staff who handle the day-to-day operations of the Foundation. Initially, the Foundation will employ 8 staff members: a COO, a CFO, an engineering lead, 1 product manager, 1 project manager, 2 community managers, and 1 quality assurance analyst.
 
-The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository. C**oinAlpha has transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot).**
+The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository. CoinAlpha has transferred control over the official Hummingbot code repository to a Foundation-owned Github organization, and the new repo URL is: [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot).
 
 The official Foundation website, which also includes Hummingbot documentation, is deployed at [https://hummingbot.org](https://hummingbot.org). It is also a community-maintained open source repository: [https://github.com/hummingbot/hummingbot-site](https://github.com/hummingbot/hummingbot-site).
 

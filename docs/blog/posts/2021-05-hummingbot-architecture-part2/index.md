@@ -18,6 +18,7 @@ In the last article of this series, we've discussed the design motivations behin
 <!-- more -->
 
 ## Strategies
+
 ![](./chess.jpg)
 If market connectors are the hands and eyes of Hummingbot, then strategy is the brain of Hummingbot. Strategy objects process market signals, and decide when and what orders to create or remove on markets.
 
@@ -106,7 +107,7 @@ The Hummingbot debug console is disabled by default. It needs to be enabled by e
 Once that has been set, you will be able to telnet to `localhost:8211` to access an interactive Python console that has access to the same memory space as the live Hummingbot instance. You can, for example, examine the live properties from the currently running strategy object and look at the active orders it has made and is tracking.
 ![](./debug5.png)
 
-You can read more about the debug console from [Hummingbot documentation](https://docs.hummingbot.io/features/debug/).
+You can read more about the debug console from [Hummingbot documentation](../../../developers/debug.md).
 
 ### Discord Channels
 
@@ -115,7 +116,7 @@ Our Discord server is a good place you can find other Hummingbot developers, who
 
 ### Contributing
 
-Finally, if you would like to report issues in Hummingbot, or contribute code - our Github page can be found at [https://github.com/CoinAlpha/hummingbot](https://github.com/CoinAlpha/hummingbot).
+Finally, if you would like to report issues in Hummingbot, or contribute code - our Github page can be found at [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot).
 
 ## Conclusion
 
@@ -126,8 +127,4 @@ We then discussed the high performance aspect of Hummingbot and gave a preview f
 Finally, we discussed some tricks you can use to diagnose the behavior of a live Hummingbot instance via the debug console, and how you can get help from the Hummingbot community.
 
 This concludes part 2, and the overall Hummingbot Architecture series. If you have any further questions, feel free to drop by our Discord server at [https://discord.hummingbot.io](https://discord.hummingbot.io/).
-
-
-
-
 

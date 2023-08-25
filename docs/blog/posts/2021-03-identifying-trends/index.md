@@ -1,38 +1,32 @@
 ---
-title: "Identifying trends"
-author: "Thomas Yit"
-description: ""
 date: 2021-03-18
-image: "./cover.png"
-level: "Beginner"
-tags: ["strategy","liquidity mining"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Trader Tips
 ---
 
 
-***Disclaimer:
-The content of this article is provided by our blog contributor Thomas Yit and does not represent the views of CoinAlpha Inc./Hummingbot. 
-The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute 
-a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to 
-provide any investment advice or service. ***
+# Identifying trends
 
-Understanding and detecting market trends (or lack thereof) is an important skill for any trader, especially market-makers. 
-As mentioned in the past  two articles, like this one that talks about [inventory risk](https://hummingbot.io/blog/2020-10-inventory-risk/), a market without a clear directional trend 
-(aka moving sideways) is the market-maker’s best friend.
+![cover](cover.png)
 
-There are many ways to identify trends, either using fundamental analysis or technical analysis. In the following sections, 
-I will further breakdown Fundamental and Technical Analysis and share some tools that hopefully will assist in building your 
-framework for identifying trends.
+**Disclaimer:** *The content of this article is provided by our blog contributor Thomas Yit and does not represent the views of CoinAlpha Inc./Hummingbot. The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service.*
+
+Understanding and detecting market trends (or lack thereof) is an important skill for any trader, especially market-makers. As mentioned in the past  two articles, like this one that talks about [inventory risk](../2020-10-inventory-risk/index.md), a market without a clear directional trend (aka moving sideways) is the market-maker’s best friend.
+
+There are many ways to identify trends, either using fundamental analysis or technical analysis. In the following sections, I will further breakdown Fundamental and Technical Analysis and share some tools that hopefully will assist in building your framework for identifying trends.
+
+<!-- more -->
 
 Here is what you will find below:
 
-What are Fundamental Analysis and Technical Analysis?
-What is On-Chain Analysis?
-How are they used on cryptocurrency markets?
-How to use Technical Indicators to find the current market trend
+- What are Fundamental Analysis and Technical Analysis?
+- What is On-Chain Analysis?
+- How are they used on cryptocurrency markets?
+- How to use Technical Indicators to find the current market trend
 
-
-<!-- more -->
 
 ## Fundamental Analysis
 
@@ -72,7 +66,7 @@ The current NVT ratio (Feb 16 2021) is 78.46 and considered normal, the recommen
 
 ## Intermarket Analysis 
 
-Previously in the [Sharing is Caring article](https://hummingbot.io/blog/2021-02-sharing/), we brought up the subject of currency risk. In this article, I will expand on the topic a bit further. Again, this is not financial advice. 
+Previously in the [Sharing is Caring article](../2021-02-sharing/index.md), we brought up the subject of currency risk. In this article, I will expand on the topic a bit further. Again, this is not financial advice. 
 
 In the following chart, the first row consists of treasuries from 2yr, 5yr, 10yr, and TLT ETF, while the second consists of  BTCUSDT, the dollar index, S&P500, and VIX.
 
@@ -87,7 +81,7 @@ When the dollar index starts to decrease, the dollar is devaluing, causing other
 Technical Analysis involves studying historical prices to find patterns such as head & shoulders, double top/bottom, triangle, harmonics, etc., or oscillators such as ADX, ATR, MACD to find trends or overbought/oversold conditions. What technical indicators can be used for identifying trends? There are usually three stages in a direction, uptrend, sideways, and downtrend.
 
 There are dozens of TradingView indicators that you can use for trend following. For example, the article
-[article](https://hummingbot.io/blog/2021-01-automate-tradingview-for-hummingbot/) uses moving averages to identify an uptrend/downtrend, 
+[article](../2021-01-automate-tradingview-for-hummingbot/index.md) uses moving averages to identify an uptrend/downtrend, 
 or you can  draw simple trendlines using price action. TradingView has a free crypto scanner to check the trend strength based on customized filters, such as AO, ATR, Stoch, etc. 
 
 ![](./cryptoscreener.png) 
@@ -152,7 +146,7 @@ At 8:00 am (yellow vertical line), everyday, Volume Profile will recalculate and
 
 If you have more or less a framework built up to identify trends and want to code it, Hummingbot does have scripts for you to 
 tinker with and test out your trend detection strategy and adjust the spreads accordingly. 
-The script language is Python and currently there are a few scripts to get started, see [Hummingbot repo](https://github.com/CoinAlpha/hummingbot/tree/master/scripts) 
+The script language is Python and currently there are a few scripts to get started, see [Hummingbot repo](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
 to get you started. 
 
 ## Conclusion 
@@ -163,7 +157,6 @@ Have a more holistic approach (whether in FA, TA, on-chain analytics, sentiment,
 
 Last but not least, John Maynard Keynes said, “the markets can remain irrational longer than you can remain solvent.” So be cautious and flexible as market conditions evolve  
 
----
 
 ### Important notes and disclaimers
 

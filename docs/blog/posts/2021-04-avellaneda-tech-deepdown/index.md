@@ -1,15 +1,19 @@
 ---
-title: "Avellaneda strategy: A technical deep dive"
-author: "coinalpha"
-description: ""
 date: 2021-04-22
-image: "./cover.png"
-level: "Developer"
-tags: ["strategy", "market making", "hummingbot engineering"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Market making
+  - Hummingbot
+  - Engineering
 ---
 
-Following our [initial blog post](/blog/2021-04-avellaneda-stoikov-market-making-strategy/) on the new `avellaneda_market_making` strategy, we are back with deeper, more mathematical dive into ths strategy! Today we will explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, along with how we simplified the calculation of key parameters (greeks). 
+
+# Avellaneda strategy: A technical deep dive
+
+![cover](cover.png)
+
+Following our [initial blog post](../2021-04-avellaneda-stoikov-market-making-strategy/index.md) on the new `avellaneda_market_making` strategy, we are back with deeper, more mathematical dive into ths strategy! Today we will explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, along with how we simplified the calculation of key parameters (greeks). 
 
 The purpose of this article is to mathematically back assumptions and calculations that helped translate the authors' model into one more suitable for Hummingbot traders.
 
@@ -197,7 +201,7 @@ Recall that `order_amount_shape_factor` ($\eta$) is a modifier to order amount, 
 
 ![](./eta_usage.png)
 
-Basically from both orders submitted in the strategy proposal, the one going against reaching the target inventory will be decreased in size exponentially based on how far bot is from reaching target _q_. This is similar to the [inventory skew](https://docs.hummingbot.io/strategies/inventory-skew/) approach in Hummingbot's pure market making strategy.
+Basically from both orders submitted in the strategy proposal, the one going against reaching the target inventory will be decreased in size exponentially based on how far bot is from reaching target _q_. This is similar to the [inventory skew](../../../strategy-configs/inventory-skew.md) approach in Hummingbot's pure market making strategy.
 
 Leveraging the `inventory_risk_aversion` (IRA) parameter defined earlier, the amount of decay in the exponential decay function will be controlled by IRA:
 

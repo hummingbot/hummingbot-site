@@ -1,15 +1,22 @@
 ---
-title: "Hummingbot vs Haasbot"
-author: "coinalpha"
-description: "Basic market making comparison between Hummingbot and Haasbot"
 date: 2021-01-31
-image: "./hassbot-vs-hummingbot.png"
-tags: ["liquidity mining", "market making"]
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Market making
 ---
+
+
+# Hummingbot vs Haasbot
+
+![cover](hassbot-vs-hummingbot.png)
 
 In the previous comparison blog, we compared Cryptohopper and Hummingbot, and  this time, we will continue to compare Haasbot and Hummingbot. 
 
 The goal of this article is to test out both bots and help you make better decisions on which software to use for liquidity mining (Remember, you do not need to use Hummingbot to earn liquidity mining rewards). We will make a comparison of their features and run these two bots for liquidity mining to test out the performance.
+
+<!-- more -->
 
 # General Feature Comparison 
 
@@ -20,7 +27,6 @@ For more information on the plan features, see [Haasbot](https://www.haasonline.
 
 Overall, Haasbot has more features, strategies, and exchanges supported. Haasbot allows users to run unlimited bots at the cost of 0.05BTC for 12 months (and the cost has not factored in the currency price appreciation, for example, BTC has been trending up for the past 3 months since Oct 2020), whereas Hummingbot is completely free to use as long as you run it on a local machine. You might want to use a cloud server to run the Humminingbot, which usually needs an extra cost of US$5-10 per month for one bot on average. Though backtesting is highly-requested for any algo trading strategy, it's not available for both bots for market making. Haasbot has its own charts to check the trades and a quick summary of where the market making orders are. Let’s compare other aspects of these two bots.
 
-<!-- more -->
 
 # Privacy & Security
 
@@ -30,8 +36,8 @@ usual username/password settings. Although the trade-enabled exchange API keys a
 a risk since Haasbot code is proprietary and not publicly available. 
 
 If you run Hummingbot, your private keys and exchange API keys are secure unless your computer/server 
-is compromised (see [FAQ](https://docs.hummingbot.io/resources/faq/#are-my-private-keys-and-api-keys-secure) for details). Hummingbot Miner only uses the read-only API keys to extract and calculate 
-the mining rewards (see [Privacy](https://docs.hummingbot.io/miner/faq/accounts&privacy/) for details). So rest assured.
+is compromised (see [FAQ](../../../faq.md) for details). Hummingbot Miner only uses the read-only API keys to extract and calculate 
+the mining rewards (see [Privacy](https://support.hummingbot.io/hc/en-us/sections/900001100046-Frequently-Asked-Questions) for details). So rest assured.
 
 # Usability & Support
 
@@ -52,7 +58,7 @@ for newbies who do not have any experience in algorithm trading.
 Similarly, Hummingbot allows you to customize any strategy via custom scripts or code strategy yourself. 
 However, Hummingbot has anticipated that users might have problems building their first ever custom scripts so 
 that it prepares a repo for a bunch of readily usable scripts for your reference. You can explore the Hummingbot’s 
-custom scripts library in the following [repo](https://github.com/CoinAlpha/hummingbot/tree/master/scripts ). 
+custom scripts library in the following [repo](https://github.com/hummingbot/hummingbot/tree/master/scripts ). 
 
 # Market Making Feature Comparison
 
@@ -68,7 +74,7 @@ for `COTI-BNB`, users need to meet a minimum of 1 BNB equivalent of COTI for the
 ![](./minimum.png)
 
 Haasbot offers basic market making features without advanced market features as compared to Hummingbot. 
-You can read more about these advanced features in [the following blog](https://hummingbot.io/blog/2020-10-inventory-risk/). In sum, both bots have similar basic market making features but Hummingbot has more advanced features in market making.
+You can read more about these advanced features in [the following blog](../2020-10-inventory-risk/index.md). In sum, both bots have similar basic market making features but Hummingbot has more advanced features in market making.
 
 
 # We ran both for liquidity mining for 12 hours, here’s what we learned!

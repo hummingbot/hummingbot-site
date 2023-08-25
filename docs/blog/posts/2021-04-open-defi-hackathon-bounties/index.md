@@ -1,12 +1,16 @@
 ---
-title: "Open-DeFi Hackathon | Join the hunt for Hummingbot bounties"
-author: "coinalpha"
-description: ""
 date: 2021-04-21
-image: "./cover.png"
-tags: ["announcement", "hummingbot"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Announcements
+  - Hummingbot
 ---
+
+
+# Open-DeFi Hackathon | Join the hunt for Hummingbot bounties
+
+![cover](cover.png)
 
 Hello Hummingbot Community Developers!
 
@@ -17,13 +21,14 @@ Today we are happy to announce that we will be part of the upcoming [Open Defi H
 
 The [Open Defi Network](https://opendefi.network/) is _“a global initiative to develop the decentralized financial ecosystem and advance the collaboration of DeFi projects across borders and blockchains.”_
 
-As a part of the cryptocurrency space, we strongly believe in the power of **decentralization **and **community-driven** projects. 
+As a part of the cryptocurrency space, we strongly believe in the power of **decentralization** and **community-driven** projects. 
+
+<!-- more -->
 
 As an open-source project, our team is always happy to see community contributions to our Github repository, and we are constantly improving our integration of community feedback.
 
 To those ends, we will be sponsoring two bounties for the [Open Defi Hackathon](https://gitcoin.co/hackathon/open-defi/onboard), each of them with a **1500 USDT prize for the winner** and 500 USDT in tips distributed to meaningful submissions.
 
-<!-- more -->
 
 ### Bounty #1
 
@@ -31,9 +36,9 @@ The first bounty will be offered for creating a new strategy.
 
 Developers are free to create any type of strategy, so get creative and surprise our community with an innovative way to use Hummingbot.
 
-To prepare for this bounty, take a look at the [strategy folder of our source code](https://github.com/CoinAlpha/hummingbot/tree/master/hummingbot/strategy) and the [documentation page related to new strategies](https://docs.hummingbot.io/developer/strategies-overview/).
+To prepare for this bounty, take a look at the [strategy folder of our source code](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) and the [documentation page related to new strategies](../../../strategies/index.md).
 
-For inspiration, take a look around the [open issues on Hummingbot Repository](https://github.com/CoinAlpha/hummingbot/issues). There are some interesting ideas there.
+For inspiration, take a look around the [open issues on Hummingbot Repository](https://github.com/hummingbot/hummingbot/issues). There are some interesting ideas there.
 
 The only restriction for this bounty is that this new strategy must not have the same functionality as the strategies released with version 0.38 of Hummingbot.
 

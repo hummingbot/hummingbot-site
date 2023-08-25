@@ -1,27 +1,23 @@
 ---
-title: "Sharing is caring: 3 trading pairs I picked"
-author: "coinalpha"
-description: ""
 date: 2021-02-14
-image: "./cover.png"
-level: "Beginner"
-tags: ["strategy","configuration","risk management","liquidity mining"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Trader Tips
 ---
+
+# Sharing is caring: 3 trading pairs I picked
+
+![cover](cover.png)
 
 Until now, the majority of the articles are about learning and optimizing Hummingbot. Let’s take this to the next level. 
 Is it possible to profit from market making, and does liquidity rewards help mitigate directional risks? I share the following three 
 markets(live) and performance in an attempt to address these concerns. 
 
-***Disclaimer:
-The content of this article is provided by our blog contributor Thomas Yit and does not represent the views of CoinAlpha Inc./Hummingbot. 
-The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute 
-a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to 
-provide any investment advice or service. ***
+**Disclaimer:** *The content of this article is provided by our blog contributor Thomas Yit and does not represent the views of CoinAlpha Inc./Hummingbot. The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service*
 
-A little bit of intro about myself, been a retail trading in forex for a couple of year till i stumbled on Bitcoin back in 2015 which a buyer accept only BTC as payment back then, bought some
-using localbitcoins and forget about Bitcoin till 2017 ICO crazy period. Over the next few years start to move into crypto trading space and found Hummingbot in May 2020. Ever since,
-have been running 4-6 instances but not every instance is performing liquidity mining.
+A little bit of intro about myself, been a retail trading in forex for a couple of year till i stumbled on Bitcoin back in 2015 which a buyer accept only BTC as payment back then, bought some using localbitcoins and forget about Bitcoin till 2017 ICO crazy period. Over the next few years start to move into crypto trading space and found Hummingbot in May 2020. Ever since, have been running 4-6 instances but not every instance is performing liquidity mining.
 
 <!-- more -->
 
@@ -54,9 +50,9 @@ strengthening. You would prefer markets moving in range for market making. Now, 
 ![](./firstpair-config.png) 
 
 I set very simple pure market making parameters but the bid/ask orders are dynamic based on TradingView indicators which trigger alerts to Telegram and 
-change the bid/ask orders, for more information, see [here](https://hummingbot.io/blog/2021-01-automate-tradingview-for-hummingbot/). 
+change the bid/ask orders, for more information, see [here](../2021-01-automate-tradingview-for-hummingbot/index.md). 
 If you don’t have a TradingView subscription, you can use Hummingbot scripts to adjust accordingly, see 
-[here](https://github.com/CoinAlpha/hummingbot/tree/master/scripts), either using the `inventory_skew` or the `spreads_adjusted` to your preference. 
+[here](https://github.com/hummingbot/hummingbot/tree/master/scripts), either using the `inventory_skew` or the `spreads_adjusted` to your preference. 
 
 ## My choice of a liquidity mining trading pair 
 
@@ -110,7 +106,6 @@ the bid was configured to a maximum of 0.4%. Should have increased this bid orde
 Market making is a fine balancing act between the bulls and the bears and a constant flexing of Hummingbot’s parameters to adjust your inventory,
 directional, currency risks. I’m sure there are more successful examples than the ones depicted above and hope more community members will share their examples and experience.
 
----
 
 ### Important notes and disclaimers
 

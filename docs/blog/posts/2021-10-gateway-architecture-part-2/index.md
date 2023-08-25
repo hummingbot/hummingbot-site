@@ -8,15 +8,18 @@ categories:
 
 # Hummingbot Gateway v2 Architecture - Part 2
 
+![cover](cover.jpg)
 
 *by Martin Kou*
 
-**Update (February 2023):**Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
+**Update (February 2023):** Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
 
 Introduction
 ------------
 
-In [Part 1](https://blog.hummingbot.org/gateway-v2-code-architecture/) of this series, we have discussed the architectural changes we are making to Hummingbot Gateway v2 to improve its robustness and reliability, to bring it up to the service quality level expected of production trading systems.
+In [Part 1](../2021-10-gateway-v2-code-architecture/index.md) of this series, we have discussed the architectural changes we are making to Hummingbot Gateway v2 to improve its robustness and reliability, to bring it up to the service quality level expected of production trading systems.
+
+<!-- more -->
 
 In part 2 of this blog series, we will be talking about architectural changes that concerns Gateway v2 interacts with you. In particular, we will be discussion improvements we're going to make to first-time user experience, and also improvements to community developer experience.
 
@@ -25,7 +28,7 @@ User Experience
 
 ![gateway-user-experience](https://images.ctfassets.net/h07e7qaokuyy/3C4cZzXV5hyhbYrXiVjRL4/f737e39d5ae420358541e3174c8f8d63/photo-1623043453741-11aef9cb59b5?w=750&h=1125&fl=progressive&q=100&fm=jpg)Hummingbot Gateway is a backend system, where the ideal user experience is it's easy to set up, and then it runs reliably in the background and let the user focus on trading. In occasion the user needs to reconfigure or upgrade the gateway, the documentations and instructions should be clear, and the configuration steps should be easy to carry out.
 
-<!-- more -->
+
 
 Gateway v2 is going to come with a series of improvements to bring its user experience more in-line with major production server software like Apache or MySQL. We will be focusing our efforts in the following major areas:
 
@@ -176,7 +179,7 @@ At the time this blog post is written, Gateway v2 is prototype, pre-alpha softwa
 
 We are putting the architectural proposals detailed in this blog series into code as fast as possible. We expect the initial public release of Gateway v2 to be ready in Q1 2022, and we will start accepting pull requests from the community once the initial public release is ready.
 
-In the meantime, we welcome feedback from the developer community. If you have any suggestions for Hummingbot Gateway v2, feel free to drop us a message in the ****#dev**eloper-chat** channel in our Discord server. 
+In the meantime, we welcome feedback from the developer community. If you have any suggestions for Hummingbot Gateway v2, feel free to drop us a message in the **#developer-chat** channel in our Discord server. 
 
 For projects and exchanges seeking to integrate with Gateway, please contact us to get access to a private ****#**gateway** channel for technical support from our developers.
 

@@ -1,14 +1,16 @@
 ---
-title: "Using TradingView and webhooks to automate Hummingbot"
-author: "coinalpha"
-description: ""
 date: 2021-01-06
-image: "./tradingview.png"
-level: "Experienced"
-tags: ["strategy","configuration", "risk management", "hummingbot"]
-featured: false
-rank: 8
+authors:
+  - coinalpha
+categories:
+  - Hummingbot
+  - Guides
 ---
+
+
+# Using TradingView and webhooks to automate Hummingbot
+
+![cover](tradingview.png)
 
 Some users may want to run [Hummingbot](https://bitcourier.co.uk/blog/hummingbot) for extended periods of time. Having a bot running for long periods of time has its advantages and disadvantages. The longer you have a bot running the more opportunities you have for a trade to occur. But this is not without the risk of shifts in the overall market leading to unfavorable trades. 
 
@@ -46,7 +48,7 @@ ConfluxBot is a webhook and a place that forwards TradingViews alerts to Humming
 
 ###  Step 1 Setting up ConfluxBot
 
-1.  Follow the steps below to found [here](https://docs.hummingbot.io/features/telegram/) to set up your Hummingbot telegram
+1.  Follow the steps below to found [here](../../../global-configs/telegram.md) to set up your Hummingbot telegram
 2.  Add ConfluxBot on [telegram](https://t.me/ConfluxBot) or searching @ConfluxBot
 3.  Create a telegram channel. This channel is the receiver for TradingView triggers that are forwarded to the Hummingbot telegram bot. Make sure to add ConfluxBot to the channel and make them admin.
 4.  **Tip:** Pin your created channel and your Hummingbot telegram number to make further steps easier

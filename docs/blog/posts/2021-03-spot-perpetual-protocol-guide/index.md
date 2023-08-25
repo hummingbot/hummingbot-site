@@ -1,13 +1,14 @@
 ---
-title: "How to Use the New Spot-perpetual Arbitrage Strategy"
-author: "coinalpha"
-description: "Learn about perpetual markets and how to use the new arbitrage strategy"
 date: 2021-03-12
-image: "./cover.png"
-tags: ["arbitrage", "strategy"]
-featured: false
-rank: 5
+authors:
+  - coinalpha
+categories:
+  - Guides
 ---
+
+# How to Use the New Spot-perpetual Arbitrage Strategy
+
+![cover](cover.png)
 
 Welcome back to the Hummingbot Academy!
 
@@ -21,6 +22,8 @@ There are two significant improvements to our favorite algorithm trading robot i
 In today’s article, we will explore what is behind the new spot-perpetual arbitrage strategy, help you understand the logic behind it, and discuss how to find good trading opportunities.
 
 
+<!-- more -->
+
 ## What Exactly is a Futures Market?
 
 Spot markets are pretty simple: you set a price at which you want to buy or sell an asset, and when the deal happens, buyers and sellers settle the exchange.
@@ -31,8 +34,6 @@ Although future contracts are one of the main instruments used by traders lookin
 
 For example, a rice farmer that just started his cultivation for the next season (fun fact: rice takes around 130 days to be ready for harvest) could sell a future rice contract at the current price if he isn’t sure what the price will be at harvest.
 
-
-<!-- more -->
 
 ![Rice plantation](./rice-plantation1.jpg)
 _Rice plantation at Itigi Tanzania. Source: [Wikimedia commons](https://commons.wikimedia.org/wiki/File:Rice_at_plantation_at_Itigi_Tanzania.jpg)_

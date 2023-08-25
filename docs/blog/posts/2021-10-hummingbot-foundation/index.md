@@ -47,7 +47,7 @@ Most open source projects start as a single developer who shares some useful cod
 
 ## What is Hummingbot?
 
-At CoinAlpha, the company behind the [Hummingbot open source project](https://github.com/coinalpha/hummingbot?ref=blog.hummingbot.org), scaling an open source community is a problem with which we're intimately familiar.
+At CoinAlpha, the company behind the [Hummingbot open source project](https://github.com/hummingbot/hummingbot?ref=blog.hummingbot.org), scaling an open source community is a problem with which we're intimately familiar.
 
 In December 2018, we published a [whitepaper](https://hummingbot.org/about/history/#whitepapers) describing plans to build an open source tool called Hummingbot to "decentralize market making" and make available to everyone professional-grade algorithms and tooling previously available only to Wall Street hedge funds.
 
@@ -61,7 +61,7 @@ While Hummingbot is a general toolbox that can be used to build any type of trad
 
 Supported by [0x](https://0x.org/?ref=blog.hummingbot.org), who gave us a developer grant, we [launched Hummingbot]() in April 2019 with connectors to two exchanges: [Binance.com](https://www.binance.com/en) and Radar Relay, an early decentralized exchange.
 
-Today, [Hummingbot](https://github.com/coinalpha/hummingbot) has become the leading open source crypto trading bot with:
+Today, [Hummingbot](https://github.com/hummingbot/hummingbot) has become the leading open source crypto trading bot with:
 
 - 200k lines of code across 11k commits
 - 16k developers and traders in our Discord community

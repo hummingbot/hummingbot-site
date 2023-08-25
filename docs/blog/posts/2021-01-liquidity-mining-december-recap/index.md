@@ -8,6 +8,10 @@ tags: ["announcement"]
 featured: false
 ---
 
+# Liquidity mining: December recap
+
+![cover](december-2020-recap.png)
+
 ### 10-month Summary Statistics
 For a discussion and explanation of some of the metrics we are tracking, please see our blog post - [Liquidity mining: April recap](https://hummingbot.io/blog/2020-05-liquidity-mining-2nd-month-recap/).
 
