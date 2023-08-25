@@ -10,7 +10,7 @@ categories:
 
 ![](./fengtality_Uncle_Sam_I_want_you_poster_with_a_bird_as_his_face__13881000-425c-4d91-a8e6-0dfef73c0a11-2.png)
 
-Hummingbot Foundation's quarterly [Polls](https://docs.hummingbot.org/governance/polls/?ref=blog.hummingbot.org) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
+Hummingbot Foundation's quarterly [Polls](https://hummingbot.org/governance/polls/) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
 
 But more importantly, polls have also allowed our community to decide which exchange connectors should be included in the Hummingbot codebase and how they should be prioritized. There are now 44 CEX and DEX connectors in the Hummingbot codebase, and each new connector requires maintenance, testing, and documentation time that imposes a cost on the overall Hummingbot user base.
 

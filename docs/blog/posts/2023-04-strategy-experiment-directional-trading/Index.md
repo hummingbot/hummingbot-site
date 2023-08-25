@@ -65,7 +65,7 @@ These components make it easier to create custom indicators and self-executing p
 
 We defined a dynamic Take Profit and Stop Loss based on the standard deviation of the last 100 periods, multiplied by a factor of 1.5 for TP and 0.75 for SL. This approach adapts to market conditions, and the time limit was set to 55 minutes.
 
-You can access the [code of this strategy]() to fine-tune it!
+You can access the [code of this strategy](https://gist.github.com/cardosofede/54d31cae1d9bb0e6d70ead6191ca05d6?ref=blog.hummingbot.org) to fine-tune it!
 
 ## Picking the Right Market
 
@@ -73,7 +73,7 @@ An essential aspect of running a successful trading bot is choosing the right ex
 
 To minimize fees, we selected a BUSD-quoted pair on Binance Futures, and we chose to pay the fees with BNB for an extra discount.
 
-Binance Futures is a Gold connector in Hummingbot, which means that we maintain the WebSocket integration using the highest standards and continually add support for new API endpoints and capabilities. Sign up for Binance Futures using the [Hummingbot referral code]() and **get a 10% fee rebate**!
+Binance Futures is a Gold connector in Hummingbot, which means that we maintain the WebSocket integration using the highest standards and continually add support for new API endpoints and capabilities. Sign up for Binance Futures using the [Hummingbot referral code](https://www.binance.com/en/futures/ref?code=hummingbot) and **get a 10% fee rebate**!
 
 - Exchange: Binance Perpetual
 - Trading Pair: APE-BUSD

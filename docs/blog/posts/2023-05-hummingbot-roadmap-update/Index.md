@@ -10,7 +10,7 @@ categories:
 
 ![](./fengtality_cover_image_fora_roadmap_blog_post_for_a_crypto_trad_6fdedfbf-d2a0-43cb-9ecf-dd668d432bd2.png)
 
-In December, we shared our ambitious [technical roadmap](https://hummingbot.org/blog/2022/12/13/technical-roadmap-2023/) for 2023, detailing the features and improvements we planned to introduce throughout the year. Today, we are excited to provide an update on the progress we've made, the milestones we've reached, and the exciting plans we have for the remainder of the year.
+In December, we shared our ambitious [technical roadmap](/blog/2022/12/13/hummingbots-2023-technical-roadmap/) for 2023, detailing the features and improvements we planned to introduce throughout the year. Today, we are excited to provide an update on the progress we've made, the milestones we've reached, and the exciting plans we have for the remainder of the year.
 
 ## What's Been Shipped
 

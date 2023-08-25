@@ -10,7 +10,7 @@ categories:
 
 ![](./1.jpg)
 
-Every quarter, Hummingbot Foundation organizes [Polls](https://docs.hummingbot.org/governance/polls/?ref=blog.hummingbot.org), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
+Every quarter, Hummingbot Foundation organizes [Polls](https://hummingbot.org/governance/polls/), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
 
 This week, we completed the Epoch 4 polls, which prioritizes exchanges and strategies, and issues in the Hummingbot codebase for the April, May, and June releases.
 
@@ -27,7 +27,7 @@ Below, we summarize the results of the Epoch 4 Polls and outline the changes we'
 
 ![](2.jpg)
 
-The CEX Connectors poll places [centralized exchange connectors](https://docs.hummingbot.org/exchanges/?ref=blog.hummingbot.org) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the April-June 2023 release cycles.
+The CEX Connectors poll places [centralized exchange connectors](https://hummingbot.org/cex-connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the April-June 2023 release cycles.
 
 The poll received 31 distinct votes, for a total of 22 million HBOT voting power spent
 
@@ -51,7 +51,7 @@ Bronze CEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](3.jpg)
 
-The DEX Connectors poll places [decentralized exchange connectors](https://docs.hummingbot.org/gateway/?ref=blog.hummingbot.org) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the April-June 2023 release cycles. The poll received 24 distinct votes, for a total of 24 million HBOT voting power spent.
+The DEX Connectors poll places [decentralized exchange connectors](https://hummingbot.org/dex-connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the April-June 2023 release cycles. The poll received 24 distinct votes, for a total of 24 million HBOT voting power spent.
 
 :bulb: [Dex Connector Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0xb4ad7e28f398ff028fa02d5ba15c7eccddd54e4b418877aeab5b3a82f7214e5d)
 
@@ -73,15 +73,15 @@ Bronze DEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](./4.jpg)
 
-The Core Strategies poll defines which [strategies](https://docs.hummingbot.org/strategies/?ref=blog.hummingbot.org) should be Core (officially maintained by the Foundation) versus Community (maintained by community members or not maintained). There were 27 unique votes in the poll, and the total number of HBOT voting power tallied was 18 million.
+The Core Strategies poll defines which [strategies](https://hummingbot.org/strategies/) should be Core (officially maintained by the Foundation) versus Community (maintained by community members or not maintained). There were 27 unique votes in the poll, and the total number of HBOT voting power tallied was 18 million.
 
 :bulb: [Core Strategies Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x2f7646e3ad8db1746fc3158cbad8c1b46ee5736465becc5449a4341b2254b2c3)
 
 Core:
 
-- [Pure Market Making (PMM)](https://docs.hummingbot.org/strategies/pure-market-making/?ref=blog.hummingbot.org)
-- [AMM Arbitrage](https://docs.hummingbot.org/strategies/amm-arbitrage/?ref=blog.hummingbot.org)
-- [Cross Exchange Market Making (XEMM)](https://docs.hummingbot.org/strategies/cross-exchange-mining/?ref=blog.hummingbot.org)
+- [Pure Market Making (PMM)](https://hummingbot.org/strategies/pure-market-making/)
+- [AMM Arbitrage](https://hummingbot.org/strategies/amm-arbitrage/)
+- [Cross Exchange Market Making (XEMM)](https://hummingbot.org/strategies/cross-exchange-market-making/)
 
 Hummingbot Foundation will be the official maintainer for these strategies, prioritize updates and fixes to them, and maintain their documentation pages. The Foundation also supports Core strategies by running long-term testing bots for them and providing HBOT rewards to users who answer community questions related to them.
 
