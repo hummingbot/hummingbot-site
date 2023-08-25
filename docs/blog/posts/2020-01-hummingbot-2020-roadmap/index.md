@@ -1,18 +1,23 @@
 ---
-title: "Hummingbot roadmap for 2020"
-author: "Michael Feng"
-description: "What we plan to ship in 2020"
 date: 2020-01-02
-image: "./roadmap.jpg"
-tags: ["announcement"]
-featured: false
+authors:
+  - mike
+categories:
+   - Announcements
 ---
+
+# Hummingbot roadmap for 2020
+
+![cover](cover.jpg)
+
 ### 2019 recap
 **At Hummingbot, our mission is to democratize high-frequency trading (HFT).**
 
-Before, only hedge funds had the technology to run lucrative HFT strategies like market making and arbitrage. After we [launched Hummingbot](/blog/2019-04-announcing-hummingbot/) in April 2019, ten thousand people around the world have installed our open source HFT software. Currently, Hummingbot's weekly install rate is growing at an 18% clip.
+Before, only hedge funds had the technology to run lucrative HFT strategies like market making and arbitrage. After we [launched Hummingbot](../2019-04-announcing-hummingbot/index.md) in April 2019, ten thousand people around the world have installed our open source HFT software. Currently, Hummingbot's weekly install rate is growing at an 18% clip.
 
-Before, crypto projects and exchanges were held hostage by hedge funds who charged ludicrous fees and required millions in token inventory for market making services. We [announced liquidity mining](/blog/2019-11-liquidity-mining/) in November 2019, which gives projects and exchanges the ability to source liquidity from a decentralized network of both individual and professional liquidity miners, resulting in significant cost savings and transparency gains. Moreover, we project that liquidity miners can [earn 10%+ per year](/blog/2019-12-liquidity-mining-rewards/) from running Hummingbot and providing liquidity.
+<!-- more -->
+
+Before, crypto projects and exchanges were held hostage by hedge funds who charged ludicrous fees and required millions in token inventory for market making services. We [announced liquidity mining](../2019-11-liquidity-mining/index.md) in November 2019, which gives projects and exchanges the ability to source liquidity from a decentralized network of both individual and professional liquidity miners, resulting in significant cost savings and transparency gains. Moreover, we project that liquidity miners can [earn 10%+ per year](../2019-12-liquidity-mining-rewards/index.md) from running Hummingbot and providing liquidity.
 
 In 2020, our main focus is to prove that liquidity mining offers a better liquidity solution for projects and exchanges while enabling anyone to earn a healthy yield on their crypto holdings. In addition, we plan to make Hummingbot easier to use for our non-technical users and more customizable and extensible for our technical users.
 
@@ -20,7 +25,6 @@ Please see below for a detailed breakdown of what we plan to ship on a quarter-b
 
 ### Q1 2020
 
-<!-- more -->
 
 #### Launch liquidity mining
 
@@ -37,7 +41,7 @@ Concurrently, we will launch the new Hummingbot Miners web app, which helps liqu
 
 Starting in mid-January, we will conduct 4 weeks of testing. The first 2 weeks will be an internal alpha for us and our partners, and the second 2 weeks will be an open beta in which anyone can participate and earn testnet ETH or DAI. We will use this testing period to iron out kinks and ensure that liquidity mining launches smoothly for our launch partners as well as participating miners. 
 
-After this 4-week test period, we expect to go live with the first wave of liquidity mining campaigns. Since liquidity mining requires custom data infrastructure that collects, stores and transforms real-time order book data for each supported exchange, we plan to expand exchange coverage in waves, starting with Binance and 0x in Wave 1 along with Liquid and other exchanges in Wave 2. Please see this [blog post](/blog/2019-12-liquidity-mining-launch/) for more details.
+After this 4-week test period, we expect to go live with the first wave of liquidity mining campaigns. Since liquidity mining requires custom data infrastructure that collects, stores and transforms real-time order book data for each supported exchange, we plan to expand exchange coverage in waves, starting with Binance and 0x in Wave 1 along with Liquid and other exchanges in Wave 2. Please see this [blog post](../2019-12-liquidity-mining-launch/index.md) for more details.
 
 #### Improve maintenance of exchange connectors
 
@@ -79,7 +83,7 @@ Recently, crypto data providers have built the necessary data infrastructure to 
 
 Because we have to collect and publish order book data in order to power liquidity mining anyway, we plan to do our part to educate the market about using order book data instead of traded volume to measure liquidity. Initially, we will publish real-time liquidity dashboards for our liquidity mining campaigns. After we work with them to determine how we should present and visualize the data, we plan to create a public website with free, real-time liquidity metrics derived from order book data for all of our supported markets. 
 
-We believe that measuring liquidity based on order book data is vital to solving the fake volume problem and to create orderly, fair markets in crypto, so we plan to help other data providers like CoinMarketCap and Kaiko educate the market on how to measure liquidity. This will be an extension of the [Crypto Liquidity Report](/crypto-liquidity-report-2019-8.pdf) that we released in October.
+We believe that measuring liquidity based on order book data is vital to solving the fake volume problem and to create orderly, fair markets in crypto, so we plan to help other data providers like CoinMarketCap and Kaiko educate the market on how to measure liquidity. This will be an extension of the Crypto Liquidity Report that we released in October.
 
 #### Make Hummingbot more configurable and powerful
 
@@ -119,7 +123,7 @@ In the first half of 2020, we will conduct user research to determine the best f
 
 One of Hummingbot's design goals is to be **market-agnostic**: a single client that can support algorithmic trading on all types of financial markets. Thus far, we have concentrated on integrating with order book-based spot exchanges, both centralized and decentralized.
 
-In 2020, we plan to add more diverse market types. As we wrote in this [blog post](/blog/2019-04-crypto-exchange-types/), there are other exchange models such as RFQ and AMM markets. In addition, we plan to integrate with exchanges that offer margin trading, futures, and perpetual swap products.
+In 2020, we plan to add more diverse market types. As we wrote in this [blog post](../2019-04-crypto-exchange-types/index.md), there are other exchange models such as RFQ and AMM markets. In addition, we plan to integrate with exchanges that offer margin trading, futures, and perpetual swap products.
 
 #### Support data science workflows
 

@@ -1,12 +1,15 @@
 ---
-title: "Introducing the Eagle Club"
-author: "coinalpha"
-description: ""
 date: 2020-04-06
-image: "./cover.png"
-tags: ["liquidity mining", "announcement"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Announcements
+   - Liquidity mining
 ---
+
+# Introducing the Eagle Club
+
+![cover](cover.png)
 
 We are excited to announce that we are launching the Eagle Club, a VIP program for top liquidity miners today. The goal of the Club is to enhance the user experience of top performing miners and to provide dedicated support to help them trade more confidently and perform better. 
 
@@ -40,14 +43,14 @@ The Eagle Club members will be eligible to enjoy the following benefits:
 
 As mentioned above, we have also launched a real-time leaderboard. We hope the leaderboard can add a fun element to the liquidity mining program, motivate more miners to join this competition and provide transparency to all participants. 
 
-To access the leaderboard, visit [here](https://miners.hummingbot.io/leaderboard). 
+To access the leaderboard, visit [here](https://miner.hummingbot.io/leaderboard). 
  
 ### Learn More
 
-- [Hummingbot Miner app](https://miners.hummingbot.io)
+- [Hummingbot Miner app](https://miner.hummingbot.io)
 - [Liquidity mining live training sessions](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
-- [Active campaigns](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-campaign-terms)
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
+- [Active campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns)
+- [Hummingbot Help Center](https://support.hummingbot.io)
 ---
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

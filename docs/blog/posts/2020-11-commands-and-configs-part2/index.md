@@ -1,14 +1,16 @@
 ---
-title: "Extracting the best value from your Hummingbot - Commands part 2 and Global Configurations"
-author: "coinalpha"
-description: ""
 date: 2020-11-12
-image: "./commands-and-configs-2.jpg"
-level: "Beginner"
-tags: ["configuration", "risk management", "hummingbot"]
-featured: false
-rank: 4
+authors:
+  - coinalpha
+categories:
+  - Hummingbot
+  - Guides
 ---
+
+
+# Extracting the best value from your Hummingbot - Commands part 2 and Global Configurations
+
+![cover](commands-and-configs-2.jpg)
 
 Welcome back to the Hummingbot Academy and the second part of the series of articles that will help you make the best use of your Hummingbot.
 
@@ -16,13 +18,14 @@ Last article we went through some of the commands that you can use to operate yo
 
 We have a few more of these commands to talk about, and we will also start to show how to customize your strategy.
 
+<!-- more -->
+
 ### Performance commands
 
 After running the bot for a while, you probably want to know how good and profitable your strategy is.
 
 For that, you will need the commands below to evaluate the performance of your Hummingbot.
 
-<!-- more -->
 
 #### history
 
@@ -44,7 +47,7 @@ Trades executed manually on your exchange, be it a taker or maker order, won’t
 
 Here you can see what is the total value of the inventory of the assets that are being traded.
 
-Inventory value is the main performance indicator for a market maker and is also the main source of risk. Understanding this type of risk is key to being a successful market maker, and you can learn more about it reading the article [What is Inventory Risk?](https://hummingbot.io/blog/2020-10-inventory-risk/).
+Inventory value is the main performance indicator for a market maker and is also the main source of risk. Understanding this type of risk is key to being a successful market maker, and you can learn more about it reading the article [What is Inventory Risk?](../2020-10-inventory-risk/index.md).
 
 On this part of the `history`, you can see what is the **Starting** and **Current** inventory, and how it changed for the time your bot has been running.
 
@@ -62,7 +65,7 @@ Here is where you can check how your bot is performing.
 
 If you are new to market making, you might notice that how the trading performance is measured is a bit different from traditional trading.
 
-What matters most for a market maker is how much the total inventory value has changed since he started his operations. You can learn more details about what is the logic behind the performance calculation reading the article [How to measure performance on crypto trading](https://hummingbot.io/blog/2019-07-measure-performance-crypto-trading/).
+What matters most for a market maker is how much the total inventory value has changed since he started his operations. You can learn more details about what is the logic behind the performance calculation reading the article [How to measure performance on crypto trading](../2019-07-measure-performance-crypto-trading/index.md).
 
 But as a TL;DR, the performance you see is a comparison between trading with the bot vs not trading at all (HODLing the starting assets).
 
@@ -136,7 +139,7 @@ If you are running an automated bot it’s reasonable to assume that you won’t
 
 These settings allow you to configure a telegram account to **receive messages from the bot**, and to **send commands to the bot** from the telegram account. 
 
-If you want to use this functionality, just [follow this guide](https://docs.hummingbot.io/features/telegram/) for a complete explanation.
+If you want to use this functionality, just [follow this guide](../../../global-configs/telegram.md) for a complete explanation.
 
 #### 0x_active_cancels
 
@@ -150,13 +153,13 @@ Be mindful that these active cancelations will incur in transaction gas fees.
 
 One of the best things about hummingbot is that it is a flexible tool, with a lot of configuration options to implement the strategy you want.
 
-[Scripts](https://docs.hummingbot.io/scripts/overview/) play a big part in this customization, and these two parameters are how you add a script to complement your strategy.
+[Scripts](../../../scripts/index.md) play a big part in this customization, and these two parameters are how you add a script to complement your strategy.
 
 When `script_enabled` is active, whenever you `start` your bot, it will look for the file name you added to `script_file_path`.
 
 > Scripts are created on python (.py files) and are stored by default on the /hummingbot/scripts/ paste. Hummingbot comes with a few example scripts to help you create your own.
 
-If you have an idea for a script but have no coding knowledge, you can always create an issue on our [Github page](https://github.com/CoinAlpha/hummingbot/issues) with the scripts tag, and any other member of our community might work on it. 
+If you have an idea for a script but have no coding knowledge, you can always create an issue on our [Github page](https://github.com/hummingbot/hummingbot/issues) with the scripts tag, and any other member of our community might work on it. 
 
 ### Join our community!
 

@@ -1,14 +1,15 @@
 ---
-title: "New arbitrage opportunity: Wrapped CELO"
-author: "coinalpha"
-description: "A guide on how to arbitrage the new Wrapped Celo tokens on Uniswap"
 date: 2020-12-22
-image: "./Cover.png"
-level: "Beginner"
-tags: ["arbitrage", "strategy"]
-featured: false
-rank: 5
+authors:
+  - coinalpha
+categories:
+  - Guides
 ---
+
+
+# New arbitrage opportunity: Wrapped CELO
+
+![cover](Cover.png)
 
 Hello arbitrageurs and market makers!
 
@@ -16,6 +17,8 @@ Today I am bringing you some exciting news: CELO tokens have arrived on the Ethe
 
 Last week, Anchorage and Tokensoft [announced](https://medium.com/wrapped/anchorage-and-tokensoft-bring-wrapped-celo-wcelo-cusd-wcusd-to-defi-d3dfc2975779) that they brought both CELO and cUSD to Ethereum through [Wrapped](https://www.wrapped.com/), connecting both layer one blockchains.
 
+
+<!-- more -->
 
 ### What is a wrapped token?
 
@@ -27,7 +30,7 @@ That way, for every one wCUSD you have on your Ethereum wallet, there is one cUS
 
 To allow users to acquire and trade the CELO wrapped tokens, new liquidity pools were created on the Uniswap protocol.
 
-<!-- more -->
+
 
 That creates two different trading opportunities:
 
@@ -49,9 +52,9 @@ You can look at [CoinGecko](https://www.coingecko.com/en/coins/celo#markets) or 
 
 Our development team is continuously working on creating connectors to more exchanges. Still, on the latest release (0.34), you can connect to the following exchanges that have Celo tokens on their trading list:
 
-*   [Bittrex](https://docs.hummingbot.io/exchange-connectors/bittrex/)
-*   [Coinbase Pro](https://docs.hummingbot.io/exchange-connectors/coinbase/) (listed as CGLD)
-*   [OKEx](https://docs.hummingbot.io/exchange-connectors/okex/)
+*   [Bittrex](../../../exchanges/bittrex.md)
+*   [Coinbase Pro](../../../exchanges/coinbase.md) (listed as CGLD)
+*   [OKEx](../../../exchanges/okx.md)
 
 On the AMM side, at the time of writing, you will find two liquidity pools available on **Uniswap**:
 
@@ -75,7 +78,7 @@ Therefore, if you execute many trades with unwrapped ETH, you add extra cost to 
 
 For Humminbot to communicate with the Ethereum blockchain, you'll need to install our Gateway instance to work as a bridge between the bot orders and the blockchain transactions.
 
-Check out our [amm-arb strategy guide](/academy/amm-arb/) that explains how to set up Hummingbot to trade on Uniswap. Return here after finishing the installation process and before you define your strategy in step 4.
+Check out our [amm-arb strategy guide](../../../strategies/amm-arbitrage.md) that explains how to set up Hummingbot to trade on Uniswap. Return here after finishing the installation process and before you define your strategy in step 4.
 
 > Important: Ensure that the gateway instance is running before starting the strategy, or Hummingbot won’t be able to communicate with the Ethereum blockchain.  
 
@@ -106,7 +109,7 @@ To do that, follow these steps:
 
 After installing and starting Hummingbot (if you haven’t done that already), it’s time to connect to the exchange you will be arbitraging.
 
-You can check [here](https://docs.hummingbot.io/exchange-connectors/overview/) for an updated list of connectors available on Hummingbot and their status, along with instructions on connecting with each of them.
+You can check [here](../../../exchanges/index.md) for an updated list of connectors available on Hummingbot and their status, along with instructions on connecting with each of them.
 
 ### Creating the `amm-arb` strategy
 

@@ -1,18 +1,20 @@
 ---
-title: "What is cross exchange market making?"
-author: "coinalpha"
-description: ""
 date: 2020-09-23
-image: "./xemm.jpg"
-level: "Beginner"
-tags: ["market making", "trading concepts"]
-featured: false
-rank: 4
+authors:
+  - coinalpha
+categories:
+  - Market making
+  - Trader Tips
+  - Guides
 ---
 
-Welcome back to our Educational Center, where we aim to help you to learn more about [market making](https://hummingbot.io/blog/2020-09-what-is-market-making/), [arbitrage](https://hummingbot.io/blog/2020-09-what-is-arbitrage/), and everything related to algorithmic trading.
+# What is cross exchange market making?
 
-Today we will talk about one of the core strategies that can be used with [hummingbot](https://hummingbot.io/): **cross-exchange market making**.
+![cover](xemm.jpg)
+
+Welcome back to our Educational Center, where we aim to help you to learn more about [market making](../2020-09-what-is-market-making/index.md), [arbitrage](../2020-09-what-is-arbitrage/index.md), and everything related to algorithmic trading.
+
+Today we will talk about one of the core strategies that can be used with [hummingbot](https://hummingbot.org): **cross-exchange market making**.
 
 The objective of this article is to help you understand:
 
@@ -21,11 +23,11 @@ The objective of this article is to help you understand:
 - **How is cross-exchange market making different from pure market making?**
 - **Why and when should I use this strategy?**
 
-If you already understand how [arbitrage](https://hummingbot.io/blog/2020-09-what-is-arbitrage/) and [pure market making](https://hummingbot.io/blog/2020-09-what-is-market-making/) work, cross-exchange market making ("XEMM") becomes really simple: it's simply a hybrid of the two.
+<!-- more -->
+
+If you already understand how [arbitrage](../2020-09-what-is-arbitrage/index.md) and [pure market making](../2020-09-what-is-market-making/index.md) work, cross-exchange market making ("XEMM") becomes really simple: it's simply a hybrid of the two.
 
 ![](./guitars.jpg)
-
-<!-- more -->
 
 
 ### So what is cross-exchange market making?
@@ -33,12 +35,12 @@ If you already understand how [arbitrage](https://hummingbot.io/blog/2020-09-wha
 Here's a simple explanation of the concept of cross-exchange market making:
 
 1. My friend Alice wants to sell her guitar and she's offering it for $100.
-2. I go around to all of my other friends and tell them that **I am selling** a guitar for <u>*$110*</u>.
+2. I go around to all of my other friends and tell them that **I am selling** a guitar for *$110*
 3. If one of my friends, say Bob, agrees, I immediately buy the guitar from Alice for $100 and sell it to Bob for $110.
 
 Pretty neat right?  I made $10 of profit selling something I didn't own by simply doing a back-to-back, simultaneous buy and sell of the guitar.
 
-***Wait... that sounds a lot like arbitrage, so what's the difference?***
+**Wait... that sounds a lot like arbitrage, so what's the difference?**
 
 OK, here's how this situation would be for arbitrage:
 
@@ -56,7 +58,7 @@ In my transaction with Alice in both scenarios, I was a taker: I accepted her of
 
 ### What does this have to do with market making?
 
-In our previous article on [pure market making](https://hummingbot.io/blog/2020-09-what-is-market-making/), we explained that a market maker is someone who places both bid and ask orders in order to facilitate trading.  You can see that in the cross-exchange market making example above, I am acting as a **maker**, offering a guitar to sell and specifying a price.  So that's one half of what a market maker does.
+In our previous article on [pure market making](../2020-09-what-is-market-making/index.md), we explained that a market maker is someone who places both bid and ask orders in order to facilitate trading.  You can see that in the cross-exchange market making example above, I am acting as a **maker**, offering a guitar to sell and specifying a price.  So that's one half of what a market maker does.
 
 But I can also do the same transaction for the buy side.  I have another friend, Dave, who wants to buy a guitar, but he is only willing to pay $95.  At this price, he and Alice can't trade, because his budget of $95 is below Alice's asking price of $100.  Since I know that I can sell a guitar to Dave, at the same time I'm going around trying to sell Alice's guitar, I can go around offering *to buy* another guitar that I can sell to Dave.
 
@@ -153,7 +155,7 @@ A cross-exchange market maker needs to account for trading and asset transfer fe
 
 > ⚠️**Arbitrage** and **cross-exchange market making** are often considered and described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: **inventory risk**.  The main risk that remains is execution risk.
 
-***Execution risk***
+**Execution risk**
 
 The markets move pretty fast.  As with what happens on arbitrage operations, the trader has to consider the speed and reliability of executing his trade orders.  In the example above, as soon as his trade is filled and Exchange B, he needs to immediately perform the offsetting trade on Exchange A before someone else takes that order or before that market maker adjusts his or her price.
 
@@ -165,7 +167,7 @@ This risk can be mitigated by using better infrastructure (e.g. cloud with relia
 
 As explained above, we need to deploy an inventory equilibrium model in order to have assets available on exchanges in order to take action on trading opportunities.  This introduces some amount of market risk because a cross-exchange market maker does have to have some amount of inventory.
 
-However, the main difference in cross-exchange market making, vs. pure market making strategy, is that ***the inventory exposure will stay constant over time***.  In the example above, the market maker keeps a constant amount of Token A balance (20 tokens) but uses this balance as a tool to try to grow the market maker's USD balance.
+However, the main difference in cross-exchange market making, vs. pure market making strategy, is that **the inventory exposure will stay constant over time**.  In the example above, the market maker keeps a constant amount of Token A balance (20 tokens) but uses this balance as a tool to try to grow the market maker's USD balance.
 
 > 💡 Because deploying a cross-exchange market making strategy in the real-world requires some *fixed amount* of inventory, it does expose the market maker to some amount of market risk.  However, since the inventory amount is fixed and finite, cross-exchange market making has a similar risk profile as a buy-and-hold strategy; but unlike buy-and-hold, the inventory is deployed to try to generate incremental, additive returns without a fundamental change in risk profile.
 
@@ -196,7 +198,7 @@ If another participant takes the market maker ask offer on Binance DEX (selling 
 
 ### Comparing strategies
 
-With today's article, we presented all three strategies that can be implemented with Hummingbot ([pure_market_making](https://hummingbot.io/blog/2020-09-what-is-market-making/), [arbitrage](https://hummingbot.io/blog/2020-09-what-is-arbitrage/), cross_exchange_market_making), and each one has its own characteristics, advantages, and disadvantages.
+With today's article, we presented all three strategies that can be implemented with Hummingbot ([pure_market_making](../2020-09-what-is-market-making/index.md), [arbitrage](../2020-09-what-is-arbitrage/index.md), cross_exchange_market_making), and each one has its own characteristics, advantages, and disadvantages.
 
 Here is a comparison between these strategies:
 

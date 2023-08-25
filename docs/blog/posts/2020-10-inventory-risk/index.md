@@ -1,16 +1,18 @@
 ---
-title: "What is inventory risk?"
-author: "coinalpha"
-description: "Learn more about inventory risk, the main risk of market making, and the Hummingbot features designed to mitigate it."
 date: 2020-10-14
-image: "./cover.jpg"
-level: "Beginner"
-tags: ["market making", "trading concepts", "risk management"]
-featured: false
-rank: 4
+authors:
+  - carlo
+categories:
+  - Market making
+  - Trader Tips
+  - Guides
 ---
 
-### What is Inventory Risk?
+# What is inventory Risk?
+![cover](cover.jpg)
+
+
+## What is inventory Risk?
 
 Hello again Hummingbot community!
 
@@ -20,13 +22,13 @@ As one of the biggest investors of our time once said:
 
 "Risk comes from not knowing what you're doing." ~ Warren Buffett
 
+<!-- more -->
+
 ![Source: https://www.azquotes.com/quote/40644](./image3.png)
 
 All kinds of financial operations have varying degrees of risk, and market making is no different.
 
 While it seems more exciting to imagine and project future gains and fantasize about being the next Warren Buffet, the reality and less glamorous part of investing, and arguably the most important part, is trying to figure out what can go wrong and how to mitigate losses that can result.
-
-<!-- more -->
 
 
 There is a lot to cover about risk and risk management, but today we will focus on one major risk related to market making: **inventory risk.**
@@ -63,7 +65,7 @@ For example, let’s assume that you currently own 0.46820424 BTC and 14.6426 ET
 
 On the first day, the current value of your assets is $10,000. Even though you don't actually own any USD and only own BTC and ETH, you have the ability to convert your BTC and ETH to $10,000 at current market prices.
 
-***Inventory value can fluctuate due to changes in market prices because the value of the assets relative to the benchmark asset can change. ***
+**Inventory value can fluctuate due to changes in market prices because the value of the assets relative to the benchmark asset can change**
 
 If you haven’t traded (HODL!), on day 2 you would still have the same amount of BTC and ETH from the starting portfolio.
 
@@ -73,9 +75,7 @@ If you haven’t traded (HODL!), on day 2 you would still have the same amount o
 
 However, since the USD prices for these assets changed, the **inventory value** has gone down to $9,761.38. The BTC value went up, while the ETH value went down.
 
-<table style="border: 1.5px solid black; width: 100% ; align:center; padding:10px">
 Inventory value is the current value of all assets held in a portfolio, quantified to some chosen benchmark or reference asset (e.g. USD).
-</table>
 
 Choosing the benchmark reference asset for determining value varies by investor.  For example, investors from the U.S. may use USD, whereas an investor in Europe may choose Euro.  This is because, at least currently, most of their costs (food, rent) are still denominated in USD (or Euro), and fiat is still the benchmark for their assets and buying power.
 
@@ -85,7 +85,7 @@ The main objective of a market maker is to increase his total inventory value ov
 
 In contrast, a market maker tries to increase portfolio value over time by capturing incremental bid-ask spreads and accumulating them over time. The market maker continually offers to simultaneously buy and sell assets, offering to be at a slightly lower price than he is offering to sell. If the market maker is able to complete a buy and sell, they are able to capture some of this difference, the “bid-ask spread”. The more times a market-maker can complete this cycle of buy and sell, the more profits they are able to accumulate.
 
-As I mentioned in the [first academy article](https://hummingbot.io/blog/2020-09-what-is-market-making/), the ideal situation for a market maker is when the price is moving without a trend:
+As I mentioned in the [first academy article](../2020-09-what-is-market-making/index.md), the ideal situation for a market maker is when the price is moving without a trend:
 
 ![](./image6.png)
 
@@ -97,9 +97,9 @@ For example, if the price starts to trend downward, his buy orders will start to
 
 ![](./image8.png)
 
-Source: Our community member @Christian Feldmann
+_Source: Our community member @Christian Feldmann_
 
-The consequence of this situation is that the market maker will begin to increase the inventory of the asset that is losing value, resulting in total **inventory value** will decrease over time.
+The consequence of this situation is that the market maker will begin to increase the inventory of the asset that is losing value, resulting in total **inventory value** decreasing over time.
 
 Eventually, the price could come back to a profitable level and the market maker would be able to sell his inventory at a profitable price. But the problem is that, if this situation persists and the price keeps dropping, all the market maker inventory will be locked on one side.
 
@@ -109,9 +109,7 @@ This similar to a retail store manager started to increase his inventory, buying
 
 Even though the market maker creates both buy and sell orders, there’s no guarantee that both sides will be filled. In the example above, the bids keep getting filled but the sells never get filled. This also exposes the market maker to the risk of swings in the amount of inventory held. For example, the market maker might accumulate assets losing value; conversely, the market maker might end up selling off assets that are appreciating in value.
 
-<table style="border: 1.5px solid black; width: 100% ; align:center; padding:10px"> 
-<b>Inventory risk</b> is the probability a market maker can't find buyers for his inventory, resulting in the risk of holding more of an asset at exactly the wrong time, e.g. accumulating assets when prices are falling or selling too early when prices are rising.
-</table>
+> **Inventory risk** is the probability a market maker can't find buyers for his inventory, resulting in the risk of holding more of an asset at exactly the wrong time, e.g. accumulating assets when prices are falling or selling too early when prices are rising.
 
 ### Inventory risk management with hummingbot
 
@@ -133,7 +131,7 @@ Using `config inventory_skew_enabled` the bot will change the `order_amount` on 
 
 The target proportion of each asset on the inventory can be defined through the command `config inventory_target_base_pct` and how much the inventory can deviate from this proportion using `config inventory_range_multiplier`.
 
-![](./image4.png)
+![Inventory Image](./image4.png)
 
 As can be seen above, there is more BTC than USDT on the inventory, and the bot is selling more than buying.
 
@@ -141,11 +139,9 @@ This parameter can be used as inventory protection, for example, if the market m
 
 Also, it is particularly useful, if you are trading a non-USD pair, (ETH-BTC for example), where the trader can evaluate the value of each asset paired with USD, and adjust the inventory skewness, if you think one of the assets will have a higher value in the future.
 
-![](./image9.png)
+![Inventory Image](./image9.png)
 
-<table style="border: 1.5px solid black; width: 100% ; background-color:#D6EAF8; align:center; padding:10px">
-Inventory skew is like an ongoing pendulum balancing act; once a trader accumulates more of one asset, Hummingbot adjusts order sizes (smaller buys, larger sells) to try to get back to the target holding amount, and vice versa.
-</table>
+> Inventory skew is like an ongoing pendulum balancing act; once a trader accumulates more of one asset, Hummingbot adjusts order sizes (smaller buys, larger sells) to try to get back to the target holding amount, and vice versa.
 
 Inventory skew aims to minimize the risk of inventory amounts swinging around too much.  Trying to maintain a target ratio such as 50% helps to ensure that the market maker can continue to quote both bid and ask sides and capture bid-ask spreads.
 
@@ -157,13 +153,13 @@ For example, with a filled_order_delay = 300 when an order created by the bot is
 
 This helps to manage periods when prices are trending. For example, in the diagram below, in a case when prices are trending down, bid orders keep getting filled once orders are refreshed.
 
-![](./image10.png)
+![Inventory Image](./image10.png)
 
 If this is repeated and continues to go on, the market maker could quickly end up accumulating large amounts of the asset within a matter of just a few order refresh cycles. In the example above, the trader has bought assets 5 times.
 
 By introducing a delay between filled orders and placing new orders, this spaces out orders and dampens the potential accumulation of assets, allowing for some time for price trends to stabilize.
 
-![](./image1.png)
+![Inventory Image](./image1.png)
 
 You can see above, since the bid order in period 1 was filled, the bot didn’t place orders in periods 2, 3, and 4.  So in this downward price trend, the bot only bought twice (periods 1 and 5) whereas when filled order delay was not enabled, the bot would have bought in all five periods.
 
@@ -171,17 +167,17 @@ You can see above, since the bid order in period 1 was filled, the bot didn’t 
 
 Hanging orders is a function that instructs Hummingbot to treat buys and corresponding sell orders created at the same time as a pairing.  If one side gets filled, the bot keeps the other side of the pairing outstanding, creating the opportunity and possibility for that side to eventually get filled:
 
-![](./image7.png)
+![Inventory Image](./image7.png)
 
 In the example above, the buy order for period 1 was filled. But since hanging orders mode was enabled, the original sell order from period 1 is not canceled during the refresh cycle (period 2) and remains outstanding. Meanwhile, the bot continues its operation of creating new orders (see periods 2 through 5). In the example, prices changed direction, and eventually at some point in the time, the hanging sell order was filled, around period 5.
 
-The benefit of this strategy is that it creates the possibility of the pairings to be “completed” and balanced. In the example above, hanging orders allow the trader to match the buy and sell ***eventually***, while locking in the bid-ask spread.
+The benefit of this strategy is that it creates the possibility of the pairings to be “completed” and balanced. In the example above, hanging orders allow the trader to match the buy and sell **eventually**, while locking in the bid-ask spread.
 
 **Ping Pong**
 
 The ping pong strategy is another strategy that tries to keep buys and sells balanced. It does so by creating orders only on the opposite side of an order that has been filled. For example:
 
-![](./image5.png)
+![Inventory Image](./image5.png)
 
 Because the buy order from period 1 was filled, the bot stops placing buy orders and only places sell orders (periods 2-4).  Only when a sell order is eventually filled (period 4) will the bot resume creating both buy and sell orders (period 5).
 
@@ -203,7 +199,7 @@ That way, his total spread is still the same (1%), but his buy offers now have a
 
 Hummingbot has a built-in script function, where you can create your own custom strategy, and the bot will adjust the parameters based on any strategy you want.
 
-All you need is know how to code on Python, create a .py file integrated with Humminbot code base, and activate the script through config script_enabled command (you can find more information about scripts [here](https://docs.hummingbot.io/scripts/overview/)).
+All you need is know how to code on Python, create a .py file integrated with Humminbot code base, and activate the script through config script_enabled command (you can find more information about scripts [here](../../../scripts/index.md).
 
 You could even create a script that replicates an Automated Market Making logic, as [this reddit user asked](https://www.reddit.com/r/Hummingbot/comments/j6u8x0/amm_on_hummingbot/).
 

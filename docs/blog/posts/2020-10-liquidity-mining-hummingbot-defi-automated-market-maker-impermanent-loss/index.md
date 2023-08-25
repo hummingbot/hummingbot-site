@@ -1,17 +1,20 @@
 ---
-title: "Hummingbot Miner vs. DeFi Liquidity Mining Part 2: Considerations for Market Makers/Liquidity Providers"
-author: "Carlo P. Las Marias"
-description: "Comparing Hummingbot Miner and AMM liquidity mining for market makers/liquidity providers"
 date: 2020-10-16
-image: "./hummingbot-vs-defi-2.jpg"
-level: "Beginner"
-tags: ["liquidity mining", "risk management"]
-featured: false
+authors:
+  - carlo
+categories:
+  - Liquidity mining
+  - Trader Tips
+  - Guides
 ---
 
-While we wrote the [original whitepaper](https://hummingbot.io/liquidity-mining.pdf) and coined the term “<i>**liquidity mining**</i>”, the concept recently became popularized in DeFi with the emergence of [Balancer](https://balancer.finance/), [Curve.Fi](https://www.curve.fi/), and, despite being late to the game, [Uniswap](https://uniswap.org/), who recently introduced token distributions to the original Automated Market Maker (AMM) concept.
+# Hummingbot Miner vs. DeFi Liquidity Mining Part 2: Considerations for Market Makers/Liquidity Providers
 
-Our version of liquidity mining and that of DeFi share the same objective: <i>**finding an efficient way for token issuers and protocols to provide liquidity for digital assets**</i>.  Token liquidity has long been a problem in the cryptocurrency market due to the large and growing number of token assets, exchanges, and exchange protocols, meanwhile there has only been a limited number of sophisticated (and expensive) hedge funds and market makers that could serve the markets.
+![cover](hummingbot-vs-defi-2.jpg)
+
+While we wrote the [original whitepaper](https://coinalpha.com/liquidity-mining-policy) and coined the term “_**liquidity mining**_”, the concept recently became popularized in DeFi with the emergence of [Balancer](https://balancer.finance/), [Curve.Fi](https://www.curve.fi/), and, despite being late to the game, [Uniswap](https://uniswap.org/), who recently introduced token distributions to the original Automated Market Maker (AMM) concept.
+
+Our version of liquidity mining and that of DeFi share the same objective: _**finding an efficient way for token issuers and protocols to provide liquidity for digital assets**_.  Token liquidity has long been a problem in the cryptocurrency market due to the large and growing number of token assets, exchanges, and exchange protocols, meanwhile there has only been a limited number of sophisticated (and expensive) hedge funds and market makers that could serve the markets.
 
 > **Hummingbot Miners and AMM liquidity mining both take a decentralized, crowd-sourced approach to market making. They allow the general public, not just the professional market makers, to participate in providing liquidity for digital assets.**
 
@@ -27,11 +30,11 @@ In this post, we discuss the considerations in participating in liquidity mining
 
 Automated Market Makers (AMMs) are a recent innovation in DeFi that introduced a new, simplistic form of market making enabled by smart contracts. Automated market makers are smart contracts that hold assets (collectively, the "liquidity pool") and allow for exchange between those assets.
 
-The prices at which assets are exchanged on an AMM are determined by a simple equation that references how much of each asset is contained in the liquidity pool. The simplest model is the "Constant Product Market Maker model" (XYK) introduced by Vitalik Buterin and popularized by [Uniswap](http://uniswap.org).  *To learn more about the specifics and more details of how AMMs work, here are some great articles*: [What Explains the Rise of AMMs](https://medium.com/dragonfly-research/what-explains-the-rise-of-amms-7d008af1c399).
+The prices at which assets are exchanged on an AMM are determined by a simple equation that references how much of each asset is contained in the liquidity pool. The simplest model is the "Constant Product Market Maker model" (XYK) introduced by Vitalik Buterin and popularized by [Uniswap](http://uniswap.org).  _To learn more about the specifics and more details of how AMMs work, here are some great articles_: [What Explains the Rise of AMMs](https://medium.com/dragonfly-research/what-explains-the-rise-of-amms-7d008af1c399).
 
 Specifically for this post, what's important to note is that **for AMMs, the traditional concept of market making is split into two functions: (1) supplying assets/inventory, and (2) determining pricing for trades**. In traditional market making, the market maker performs both of these functions.
 
-For AMMs, *would-be* market makers are relegated to only performing #1: they merely deposit and provide assets to the smart contracts that are to be used for trading. As mentioned above, the determination of price (#2) and facilitation of trade is actually done by the smart contract itself, using the pre-programmed equation. In fact, the actors supplying assets in the context of an AMM are designated "*__liquidity providers__*" rather than *market makers*, reflecting the more limited scope of their involvement.
+For AMMs, _would-be_ market makers are relegated to only performing #1: they merely deposit and provide assets to the smart contracts that are to be used for trading. As mentioned above, the determination of price (#2) and facilitation of trade is actually done by the smart contract itself, using the pre-programmed equation. In fact, the actors supplying assets in the context of an AMM are designated "_**liquidity providers**_" rather than _market makers_, reflecting the more limited scope of their involvement.
 
 Since the smart contract is only a set of rules and instructions that doesn't actually do anything on its own, it relies on an external third party, the arbitrageur. Because the AMM is passive, it requires arbitrageurs to trade with it in order to change the composition of the liquidity pool, which, if you recall, is what determines the exchange prices of the AMM and how they should eventually move in-line with market prices.
 
@@ -39,7 +42,7 @@ Liquidity providers deposit assets into an AMM and share a proportional stake of
 
 Even without any trading, the value of the assets in the pool can go down (relative to some benchmark asset, e.g. USD). And since the composition of the liquidity pool changes over time based on trades, there's also the risk of holding or accumulating an asset that's falling in value (e.g., arbitrageurs trading in the devaluing "bad" asset into the AMM while taking out the (relatively) appreciating "good" asset).
 
-Also, because AMMs require arbitrageurs in order to function, they inherently and by definition are "*leaving money on the table*". Arbitrage is a zero sum game; if an arbitrageur is capturing profits by trading with an AMM, that profit needs to come from somewhere. If you're a liquidity provider, surprise!... that profit is coming from ***you***.
+Also, because AMMs require arbitrageurs in order to function, they inherently and by definition are "_leaving money on the table_". Arbitrage is a zero sum game; if an arbitrageur is capturing profits by trading with an AMM, that profit needs to come from somewhere. If you're a liquidity provider, surprise!... that profit is coming from **you**.
 
 > 🦹‍♂️  **If the other side of your trade is an arbitrageur, you're probably losing money...**
 
@@ -55,7 +58,7 @@ What this graph shows is that at the moment a liquidity provider deposits assets
 
 Once trading occurs resulting in prices moving up or down (movement along the x-axis), the total value of locked tokens will go down, no matter the price direction, following the path of the curve. Only if price eventually reverts to the original price when tokens were deposited will the liquidity provider return to breakeven.
 
-🤔 ***Wait… what?  So if price moves either up or down, I lose money, and at best I can break even if price reverts to the starting price?  Why would anyone do this?***
+🤔 **Wait… what?  So if price moves either up or down, I lose money, and at best I can break even if price reverts to the starting price?  Why would anyone do this?**
 
 **Protocol fees**: to compensate for this risk, the AMM charges fees to traders using the protocol that are accumulated and shared among the liquidity providers. Uniswap started out by charging a 0.3% spread. However, as shown in the cited study above, the 0.3% fee is simply not enough to compensate for the impermanent loss risk.
 
@@ -82,35 +85,36 @@ AMMs really blew up when protocols like [Balancer](https://balancer.finance/) an
 
 ![](./image2.jpg)
 
-[Hummingbot Miner](https://miners.hummingbot.io) is our platform where we enable token issuers and exchanges to fund rewards pools that can be earned by market makers and traders for providing liquidity and order book depth for specific tokens. Unlike the AMMs, our platform is not a smart contract protocol; it is trading data infrastructure that enables <i>**liquidity mining on centralized exchanges.**</i>
+[Hummingbot Miner](https://miners.hummingbot.io) is our platform where we enable token issuers and exchanges to fund rewards pools that can be earned by market makers and traders for providing liquidity and order book depth for specific tokens. Unlike the AMMs, our platform is not a smart contract protocol; it is trading data infrastructure that enables _**liquidity mining on centralized exchanges.**_
 
-> Hummingbot Miners brings liquidity mining to many more issuers, exchanges, and trading pairs; the tokens do not have to be ERC20 tokens, we can run liquidity mining campaigns for any token pair listed on a centralized exchange.  <i>**Hummingbot Miner can cover a lot more of the market.**</i>
+> Hummingbot Miners brings liquidity mining to many more issuers, exchanges, and trading pairs; the tokens do not have to be ERC20 tokens, we can run liquidity mining campaigns for any token pair listed on a centralized exchange.  _**Hummingbot Miner can cover a lot more of the market.**_
 
-<small><i>Score card: Hummingbot Miner 1, AMMs 0</i></small>
+Score card: Hummingbot Miner 1, AMMs 0
 
 That being said, because of the ease of setting up AMMs and liquidity mining programs on AMMs, there have been many more liquidity mining programs set up on AMMs at the moment.  We are working on bringing new campaigns and expanding to more exchanges, which is still currently ongoing.
 
 > **There currently exist more liquidity mining programs on AMMs than Hummingbot Miner.**
 
-<small><i>Score card: Hummingbot Miner 1, AMMs 1</i></small>
+Score card: Hummingbot Miner 1, AMMs 1
 
 Because our platform is for centralized exchanges, market makers and traders who participate must place orders on centralized exchange order books, in the traditional way trading is conducted. To facilitate this, users can use Hummingbot (or any other trading bot) to automate their trading in order to continually refresh orders in the order books as well as manage their inventory of trading assets.
 
-> While liquidity mining in AMMs is passive and hands-off (deposits assets and then sit backt), liquidity mining for centralized exchanges is more complex and requires a more hands-on approach. Traders need to set up trading bots, monitor trading, and tweak their strategies over time.  <i>**Participating in a liquidity pool is a lot easier than participating in Hummingbot miner.**</i>
+> While liquidity mining in AMMs is passive and hands-off (deposits assets and then sit backt), liquidity mining for centralized exchanges is more complex and requires a more hands-on approach. Traders need to set up trading bots, monitor trading, and tweak their strategies over time.  _**Participating in a liquidity pool is a lot easier than participating in Hummingbot miner.**_
 
-<small><i>Score card: Hummingbot Miner 1, AMMs 2</i></small>
+Score card: Hummingbot Miner 1, AMMs 2
 
 ##### Inventory risk vs. AMM impermanent loss
 
-The main risk of market making is inventory risk.  We recently wrote a post about this on our blog: [What Is Inventory Risk?](/blog/2020-10-inventory-risk/)  In our blog, we explained that there is a risk that value of a market maker’s assets could drop in value even without trading (“market risk”) and that there’s also inventory risk; due to trading (and orders being filled), there’s a risk that a market maker may accumulate more of asset at exactly the wrong time, when values are falling.  <i>**Just like liquidity providers, market makers, too, are susceptible to arbitrageurs.**</i>  
+The main risk of market making is inventory risk.  We recently wrote a post about this on our blog: [What Is Inventory Risk?](../2020-10-inventory-risk/index.md)  In our blog, we explained that there is a risk that value of a market maker’s assets could drop in value even without trading (“market risk”) and that there’s also inventory risk; due to trading (and orders being filled), there’s a risk that a market maker may accumulate more of asset at exactly the wrong time, when values are falling.  _**Just like liquidity providers, market makers, too, are susceptible to arbitrageurs.**_  
 
 But a big difference is that traders participating in Hummingbot Miners are not just passively relying on a rigid smart contract without any risk management measures whatsoever; Hummingbot miners can customize their strategies, embed their trading views into the bots, and implement risk management measures. In trader speak, they can "*add alpha*".
 
-For example, if prices are trending down, AMMs would just continue to accept unfavorable trades.  On the other hand, with Hummingbot, we have a number of risk management features, such as the ability to adjust bid/ask spreads, order pricing, order sizes (bid vs. ask), and adding in order delays or stopping orders on one side (e.g. stop placing bids when prices continually drop).  *Read more about some of these features in our [blog](/blog/2020-10-inventory-risk/)*.
+For example, if prices are trending down, AMMs would just continue to accept unfavorable trades.  On the other hand, with Hummingbot, we have a number of risk management features, such as the ability to adjust bid/ask spreads, order pricing, order sizes (bid vs. ask), and adding in order delays or stopping orders on one side (e.g. stop placing bids when prices continually drop). *Read more about some of these features in our [blog](../2020-10-inventory-risk/index.md)*.
+
 
 > While market making on centralized exchanges (Hummingbot Miners) does entail more complexity, the trade-off is that **traders have much more power and control over their trading. Hummingbot allows for risk management!**
 
-<small><i>Score card: Hummingbot Miner 2, AMMs 2</i></small>
+Score card: Hummingbot Miner 2, AMMs 2
 
 ##### Yields
 
@@ -118,7 +122,7 @@ Hummingbot Miner is still relatively new and a more complex system for users to 
 
 > **Yields for Hummingbot Miner currently exceed the yields available in AMM liquidity mining.**
 
-<small><i>Score card: Hummingbot Miner 3, AMMs 2</i></small>
+Score card: Hummingbot Miner 3, AMMs 2
 
 ##### Risk-based rewards = customizable risk tolerance
 
@@ -128,7 +132,7 @@ For example, new or more conservative users can use safer trading settings by cr
 
 > **Hummingbot Miner rewards allows miners to participate at their desired risk levels**
 
-<small><i>Score card: Hummingbot Miner 4, AMMs 2</i></small>
+Score card: Hummingbot Miner 4, AMMs 2
 
 #### Conclusion
 
@@ -138,14 +142,13 @@ If you’re willing to roll up your sleeves, Hummingbot Miner may be a better wa
 
 We are continually adding new exchanges and new token issuers to our platform, so over time, Hummingbot miners will also be able to participate in campaigns for an increasingly diverse group of trading pairs and tokens.
 
----
 
 ##### Useful resources
 
 To learn more about liquidity mining, see below:
 
 - [Hummingbot discord community and 24/7 support](https://discord.hummingbot.io)
-- [Hummingbot Miner’s app: current liquidity mining campaigns](https://miners.hummingbot.io)
-- [Hummingbot quick start](/academy/quickstart)
-- [Liquidity mining quick start](/academy/liquidity-mining)
+- [Hummingbot Miner’s app: current liquidity mining campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns)
+- [Hummingbot quick start](../2020-10-hummingbot-academy/index.md)
+- [Liquidity mining quick start](../2019-11-liquidity-mining/index.md)
 - Follow [@hummingbot_io](https://twitter.com/hummingbot_io) on Twitter and sign-up for our [our newsletter](https://hummingbot.substack.com/) to stay up to date on new campaigns and product developments

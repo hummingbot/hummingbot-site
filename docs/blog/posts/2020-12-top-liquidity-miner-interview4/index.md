@@ -1,13 +1,17 @@
 ---
-title: "Top liquidity miner interview featuring MrBig1964"
-author: "coinalpha"
-description: ""
 date: 2020-12-18
-image: "./Cover.png"
-level: "Beginner"
-tags: ["trader interviews", "liquidity mining"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Trader Tips
 ---
+
+
+# Top liquidity miner interview featuring MrBig1964
+
+![cover](Cover.png)
+
 
 During the past nine months since we launched liquidity mining, we witnessed great participation from our ever-increasing miner community. Together, we’ve reached one milestone after another. In this post, we introduce one of our top liquidity miners, MrBig1964, to you. Hope you can learn something from him!
 
@@ -15,7 +19,7 @@ During the past nine months since we launched liquidity mining, we witnessed gre
 
 MrBig1964 is one of our Eagle Club members, who has been trading cryptocurrency and Forex for years. In his interview, he emphasizes the compounding effect of daily small profits (0.6-0.7% in his case) and suggests fellow traders do stay calm and do not be greedy. 
 
-***Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.***
+**Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.**
 
 <!-- more -->
 
@@ -79,8 +83,8 @@ Don’t be greedy...
 ### Learn More
 
 - [Hummingbot Miner app](https://miners.hummingbot.io)
-- [Active campaigns](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/)
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
----
+- [Active campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns)
+- [Hummingbot Help Center](https://support.hummingbot.io/)
+
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

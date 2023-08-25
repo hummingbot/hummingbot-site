@@ -1,14 +1,16 @@
 ---
-title: "How to arbitrage AMMs like Uniswap and Balancer"
-author: "coinalpha"
-description: "Deep dive into the new `amm-arb`strategy"
 date: 2020-12-15
-image: "./amm-arb.jpg"
-level: "Beginner"
-tags: ["arbitrage", "trading concepts", "strategy"]
-featured: false
-rank: 6
+authors:
+  - coinalpha
+categories:
+  - Guides
+  - Trader Tips
 ---
+
+
+# How to arbitrage AMMs like Uniswap and Balancer
+
+![cover](amm-arb.jpg)
 
 Welcome back to the Hummingbot Academy!
 
@@ -18,11 +20,10 @@ But with the release of version 0.33, we added a new **decentralized exchange co
 
 With two new connectors arriving with our latest release (0.34), you can now arbitrage on the following **Automated Market Maker** protocols:
 
-*   [Balancer](https://hummingbot.io/blog/2020-11-balancer-arbitrage/)
+*   [Balancer](../2020-11-balancer-arbitrage/index.md)
 *   [Uniswap]()
 *   [Terra]()
-*   [Celo](https://hummingbot.io/blog/2020-06-celo-arbitrage/)
-
+*   [Celo](../2020-06-celo-arbitrage/index.md)
 
 <!-- more -->
 

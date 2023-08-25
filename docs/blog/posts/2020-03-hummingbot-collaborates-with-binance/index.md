@@ -1,18 +1,19 @@
 ---
-title: "Hummingbot announces two major strategic initiatives with Binance"
-author: "coinalpha"
-description: ""
 date: 2020-03-24
-image: "./cover.png"
-tags: ["announcement"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Announcements
 ---
+
+# Hummingbot announces two major strategic initiatives with Binance
+
+![cover](cover.png)
+
 
 **Hummingbot is excited to announce that it is working with [Binance](https://www.binance.com/en) on two strategic initiatives:
 (1) to bring new algorithmic traders to Binance using Hummingbot and
 (2) expand liquidity mining with an issuer referral program.**
-
----
 
 Hummingbot is an open-source crypto trading software client that allows users to trade cryptocurrency with high-frequency trading strategies such as market making and arbitrage. Hummingbot currently supports nine exchanges, both centralized and decentralized. Binance was among the first exchanges that Hummingbot supported at launch.
 
@@ -28,14 +29,12 @@ Binance will be contributing a portion of the trading fees generated from new Bi
 
 In addition, Binance will be working with the Hummingbot team to support liquidity mining by referring token issuers who want to support liquidity for their tokens to run liquidity mining campaigns as an alternative to hiring traditional crypto market makers / quant hedge funds. Compared to traditional market makers, liquidity mining provides a lower cost, data-driven way to generate liquidity. It gives issuers a way to diversify sources of liquidity, reward their own communities for contributing to market making, and encourage Hummingbot’s community of quant/algo traders to trade in the issuer’s tokens.
 
----
-
 #### Additional Information
 
 🏛 Token issuers: if your token is listed on Binance or on any of the exchanges that Hummingbot is integrated with, please contact the team at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io) to learn more about our liquidity mining campaigns.
 
 🌊⛏️ Liquidity miners: If you are interested in joining liquidity mining, please refer to below resources:
 
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
+- [Hummingbot Help Center](https://discord.gg/hummingbot)
 - [Hummingbot Quickstart Guide](https://hummingbot.io/academy/quickstart/)
 - [Hummingbot Miners web app](https://miners.hummingbot.io)

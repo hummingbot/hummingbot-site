@@ -1,17 +1,18 @@
 ---
-title: "Introducing the new Balancer connector and arbitrage strategy!"
-author: "Michael Feng"
-description: ""
 date: 2020-11-11
-image: "./cover.jpg"
-tags: ["announcement", "arbitrage"]
-featured: false
-rank: 6
+authors:
+  - mike
+categories:
+  - Announcements
 ---
+
+# Introducing the new Balancer connector and arbitrage strategy!
+
+![cover](cover.jpg)
 
 We're incredibly excited to announce a new partnership with [Balancer](https://balancer.finance/), a leading Ethereum decentralized exchange, that allows Hummingbot users to earn arbitage profits from reconciling differences between Balancer and other exchanges.
 
-The Balancer connector is included with the [v0.33 release](https://docs.hummingbot.io/release-notes/0.33.0/) of Hummingbot that ships today, along with a new `amm-arb` strategy.
+The Balancer connector is included with the [v0.33 release](https://docs.hummingbot.org/release-notes) of Hummingbot that ships today, along with a new `amm-arb` strategy.
 
 This new strategy allows allows users to arbitrage price differences between automatic market maker (AMM) protocols like Balancer and other Hummingbot supported exchanges such as Binance, Coinbase Pro, and Huobi.
 
@@ -21,7 +22,7 @@ This new strategy allows allows users to arbitrage price differences between aut
 
 ![Sample arbitage trade between Balancer and Binance](./2.jpg)
 
-The new `amm-arb` strategy lets you exploit the differences between AMMs like Balancer and order book exchanges like Binance. Extending the `celo-arb` strategy [released](/blog/2020-06-celo-arbitrage/) a few months ago, `amm-arb` uses a new, simpler design that works with any AMM protocol, on both Ethereum and non-Ethereum chains!
+The new `amm-arb` strategy lets you exploit the differences between AMMs like Balancer and order book exchanges like Binance. Extending the `celo-arb` strategy [released](../2020-06-celo-arbitrage/index.md) a few months ago, `amm-arb` uses a new, simpler design that works with any AMM protocol, on both Ethereum and non-Ethereum chains!
 
 In the example above (with screenshots taken at the same time), there appears to be an arbitrage opportunity between the ETH/DAI pair on Balancer and the ETH/USDT pair on Binance, assuming DAI-USDT equivalence and no transaction costs (unrealistic). To execute the arbitrage trade, you could buy 1 ETH for about 448 DAI on Balancer and sell 1 ETH for 451 USDT on Binance. In this case, transaction costs may make this trade unprofitable, but it's easy to see how a profitable arbitrage opportunity may arise throughout the day as the market moves around.
 
@@ -49,7 +50,7 @@ Like a superset of Uniswap, Balancer allows liquidity providers to deposit a **p
 
 ![](gateway.jpg)
 
-To build the connector to Balancer, we created a separate open source repository called [Hummingbot Gateway](https://github.com/coinalpha/gateway-api) that helps the Hummingbot client interact with protocols that utilize Javascript-based SDKs, which are common for blockchain protocols. This provides a simpler entry point for external developers who may want to add connectors for their own protocols or extend the functionality of an existing connector.
+To build the connector to Balancer, we created a separate open source repository called [Hummingbot Gateway](https://github.com/hummingbot/gateway) that helps the Hummingbot client interact with protocols that utilize Javascript-based SDKs, which are common for blockchain protocols. This provides a simpler entry point for external developers who may want to add connectors for their own protocols or extend the functionality of an existing connector.
 
 Essentially, Gateway is a light web server that integrates with various protocols and exposes standardized API endpoints to the Hummingbot client. To mitigate potential security risks, all communications between the Hummingbot client and Gateway uses HTTPS, secured by a self-signed certificate that you create during the installation process.
 
@@ -65,10 +66,8 @@ We're only scratching the surface of what's possible with Hummingbot and Balance
 
 Since most of the protocol-specific logic resides in Hummingbot Gateway and it can incorporate `npm` modules, it should be relatively simple for developers to add connectors for their own protocols!
 
----
-
 ## Check out the quickstart guide!
 
-We have created a [Quickstart guide](/academy/amm-arb) for the `amm-arb` strategy that shows you how to install Hummingbot along with Hummingbot Gateway. Afterward, you'll be guided through the process of configuring and running an arbitrage bot between Balancer and another exchange.
+We have created a [Quickstart guide](../2020-12-amm-arbitrage-uniswap-balancer/index.md) for the `amm-arb` strategy that shows you how to install Hummingbot along with Hummingbot Gateway. Afterward, you'll be guided through the process of configuring and running an arbitrage bot between Balancer and another exchange.
 
 > **Note**: Since you have to install Hummingbot Gateway as a separate Docker container, you can only run `amm-arb` if you install Hummingbot via Docker or from source. The Windows and macOS binary installers will not work.

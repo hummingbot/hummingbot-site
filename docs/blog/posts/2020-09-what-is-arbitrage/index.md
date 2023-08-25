@@ -1,28 +1,29 @@
 ---
-title: "What is Arbitrage?"
-author: "coinalpha"
-description: "The importance of arbitrage, specially on the fragmented crypto market landscape (CEX and DEX)"
 date: 2020-09-11
-image: "./cover.png"
-level: "Beginner"
-tags: ["arbitrage", "trading concepts"]
-featured: false
-rank: 4
+authors:
+  - coinalpha
+categories:
+   - Trader Tips
+   - Guides
+   - Level 1
 ---
 
+# What is Arbitrage?
+
+![cover](cover.png)
 
 ## Welcome to Hummingbot Academy!
 
-Last week we published the [first article](https://hummingbot.io/blog/2020-09-what-is-market-making/) of the **Hummingbot Academy**, covering an introduction to **what is** **Market Making**, and today we discuss Arbitrage in order to answer the following questions:
+Last week we published the [first article](../2020-09-what-is-market-making/index.md) of the **Hummingbot Academy**, covering an introduction to **what is** **Market Making**, and today we discuss Arbitrage in order to answer the following questions:
 
 - **What is arbitrage?**
 - **What do arbitrageurs do?**
 - **How to run arbitrage operations?**
 - **How do I create my arbitrage robot?**
 
-Here at **[Hummingbot Academy](https://hummingbot.io/academy/),** our goal is to help you learn more about **market making** and **arbitrage**, and how to use our [free open-source robot](https://hummingbot.io/download/) to implement your own strategy.
-
 <!-- more -->
+
+Here at **Hummingbot Academy** our goal is to help you learn more about **market making** and **arbitrage**, and how to use our [free open-source robot](https://docs.hummingbot.org) to implement your own strategy.
 
 
 ### But what is arbitrage?
@@ -51,7 +52,7 @@ The merchant (arbitrageur) in this case is doing an arbitrage operation: buying 
 
 Although the basic concept of both operations is pretty similar (buy low and sell high with a small profit margin), the key difference is the 'where' the market maker and the arbitrageur look for deals.
 
-> 💡 The market maker [like a pawnshop owner](https://hummingbot.io/blog/2020-09-what-is-market-making) operates on a single place, **making** buy and sell offers on the same market.<br /> The arbitrageur (like a merchant transporting goods between towns), operates on more than one place, **taking** buy and sell **offers** from two (or more) different markets.
+> 💡 The market maker [like a pawnshop owner](../2020-09-what-is-market-making/index.md) operates on a single place, **making** buy and sell offers on the same market. The arbitrageur (like a merchant transporting goods between towns), operates on more than one place, **taking** buy and sell **offers** from two (or more) different markets.
 
 The way each one affects the markets is also different because while a market maker is providing liquidity, reducing **bid-ask spread** and **slippage**, while the **arbitrageur** is removing liquidity from two markets (usually from a high-liquidity market and a low-liquidity market), but pushing the prices to **converge** on the same level on both places.
 
@@ -104,7 +105,7 @@ This opens up a wide array of opportunities for profitable arbitrage.
 
 So, if you are looking for these opportunities, be sure to check the of the decentralized exchanges that are operational today.
 
-> 💡 Usually, all exchanges charge a fee on each trade operation, so be sure to consider the cost of executing the trade when planning your arbitrage strategy. <br />
+> 💡 Usually, all exchanges charge a fee on each trade operation, so be sure to consider the cost of executing the trade when planning your arbitrage strategy. 
 DEXes also present an extra layer of cost to be considered, because depending on how the transactions are processed, there might be some added cost like blockchain transaction fees.
 
 ### Automated trade and arbitrage

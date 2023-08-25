@@ -1,13 +1,17 @@
 ---
-title: "Hummingbot vs Cryptohopper"
-author: "coinalpha"
-description: "Basic market making comparison between Hummingbot and Cryptohopper"
 date: 2020-12-22
-image: "./cryptohopper-vs-hummingbot.png"
-tags: ["liquidity mining", "market making"]
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Market making 
 ---
 
-Back in 2019, we investigated 12 bots based on their relative ease of use of installation, configuration, and operation in two blog posts, [Bot reviews, part 1](https://hummingbot.io/blog/2019-01-crypto-bot-reviews/) and [Bot reviews, part 2](https://hummingbot.io/blog/2019-05-crypto-bot-reviews/).
+# Hummingbot vs Cryptohopper
+
+![cover](cryptohopper-vs-hummingbot.png)
+
+Back in 2019, we investigated 12 bots based on their relative ease of use of installation, configuration, and operation in two blog posts, [Bot reviews, part 1](../2019-01-crypto-bot-reviews/index.md) and [Bot reviews, part 2](../2019-05-crypto-bot-reviews/index.md).
 
 This time, we decided to do an more in-depth comparison of [Cryptohopper](https://www.cryptohopper.com/) against Hummingbot in terms of general features and market making parameters. Cryptohopper is a commercial web-based application while Hummingbot is a free and open source command line application.
 
@@ -15,13 +19,13 @@ We selected Cryptohopper because it also has a market making feature that's not 
 
 In addition to making an apple-to-apples comparison of features, we will also test out running the bots to earn rewards on Hummingbot Miner with both trading bots, so that you can make better decisions on which software to use for liquidity mining. 
 
+<!-- more -->
+
 # General Feature Comparison 
 
 ![](./general-features.png)
 
 > We selected Cryptohopper's Hero tier since only that version supports their market making features.
-
-<!-- more -->
 
 # Features Compared
 
@@ -33,12 +37,12 @@ where the price action is, and also allows to set alerts for triggering trades. 
 
 # Open-source vs. Closed-source
 
-Hummingbot is open-source software so that the code is available to anyone. You can inspect and audit the code, help fix bugs, add features, and improve performance(see Hummingbot’s [Github](https://github.com/CoinAlpha/hummingbot)). 
+Hummingbot is open-source software so that the code is available to anyone. You can inspect and audit the code, help fix bugs, add features, and improve performance(see Hummingbot’s [Github](https://github.com/hummingbot/hummingbot)). 
 However, Cryptohopper is closed-source software where the code is proprietary and not publicly available. Like operating through a black box, 
 you will never know their private and trade-enabled exchange API keys are kept and how trades are executed. 
 
-If you run Hummingbot, your private keys and exchange API keys are secure unless your computer/server is compromised (see [FAQ](https://docs.hummingbot.io/resources/faq/#are-my-private-keys-and-api-keys-secure) for details). 
-Hummingbot Miner only uses the read-only API keys to extract and calculate the mining rewards [Privacy](https://docs.hummingbot.io/miner/faq/accounts&privacy/). So rest assured. 
+If you run Hummingbot, your private keys and exchange API keys are secure unless your computer/server is compromised (see [FAQ](https://docs.hummingbot.org/faq/) for details). 
+Hummingbot Miner only uses the read-only API keys to extract and calculate the mining rewards [Privacy](https://coinalpha.com/privacy-policy). So rest assured. 
 
 
 # Usability
@@ -48,7 +52,7 @@ You may now wonder how easy to use these two bots. Cryptohopper, with its graphi
 In contrast, Hummingbot requires a bit of work to set up and use, since users have to navigate a command line interface (CLI). At the very beginning, the learning curve might be steep for non-technical users. 
 
 To help users get started, Hummingbot offers 24/7/365 support through Discord and an extensive list of resources such as 
-[Hummingbot Academy](https://hummingbot.io/academy/), [Hummingbot Docs](https://docs.hummingbot.io/), [Hummingbot Youtube channel](https://www.youtube.com/watch?v=jmq9TkoXN_o&list=PLDwlNkL_4MMekihXq7C-Nzx9YkivaZZ6r), and [Blog](https://hummingbot.io/blog/) to educate users and help you onboard your market making journey.
+`Hummingbot Academy`, [Hummingbot Docs](https://docs.hummingbot.org/), [Hummingbot Youtube channel](https://www.youtube.com/watch?v=jmq9TkoXN_o&list=PLDwlNkL_4MMekihXq7C-Nzx9YkivaZZ6r), and [Blog](https://hummingbot.org/blog/) to educate users and help you onboard your market making journey.
 
 ![](./cryptohopper-dashboard.png)
 
@@ -67,15 +71,15 @@ In addition to the basic parameters, Cryptohopper has some interesting advanced 
 
 The revert/retry feature of Cryptohopper is similar to Hummingbot’s hanging order feature. 
 Autocancel orders and cancel on-depth features are basically options to control your cancellation orders whereas Hummingbot uses inventory 
-and hanging orders, which also enable you to better manage your inventory. You can read more about these advanced features in [the following blog](https://hummingbot.io/blog/2020-10-inventory-risk/). 
+and hanging orders, which also enable you to better manage your inventory. You can read more about these advanced features in [the following blog](../2020-10-inventory-risk/index.md). 
 
 One advanced parameter Hummingbot offers but Cryptohopper doesn’t have is the price source, which allows you to 
 define where you can reference price from a source different from the exchange the bot is trading on. This enables you to 
 trade on a slower market but based your price source on a faster market in which the price of the slower market will catch up in due time. 
-You can read more over [here](https://hummingbot.io/blog/2020-11-commands-and-config-price-source/).
+You can read more over [here](../2020-11-commands-and-config-price-source/index.md).
 
 As Hummingbot is catered to a more trader-developer type of audience, you can customize such features via custom scripts 
-or contribute to the strategy in the codebase. One of the popular scripts to control sudden spread movements is [spreads_adjusted_on_volatility_script](https://github.com/CoinAlpha/hummingbot/blob/master/scripts/spreads_adjusted_on_volatility_script.py)  and the integration of external signals is on the product roadmap. 
+or contribute to the strategy in the codebase. One of the popular scripts to control sudden spread movements is [spreads_adjusted_on_volatility_script](https://github.com/hummingbot/hummingbot/blob/master/scripts/spreads_adjusted_on_volatility_script.py)  and the integration of external signals is on the product roadmap. 
 
 In sum, both bots have similar basic market making features but the more advanced features vary. Cryptohopper’s 
 more advanced features are catered to traders who tend to trade based on technical analysis and market trends and want to 
@@ -83,7 +87,6 @@ integrate these signals into trading, while Hummingbot’s advanced features ena
 outside price source easily. 
 
 Next, we are going to run both bots for liquidity mining.
-
 
 # We ran both for liquidity mining for 12 hours, here’s what we learned!
 
@@ -137,7 +140,7 @@ For newbie users who want to understand market making, Cryptohopper is an easy o
 ![](./tsla-vs-sportscar.png)
 
 
-On the other hand, Hummingbot is not a car but a twin-turbo 6L V12 engine that enables you to customize with any car parts (advanced market making features, custom scripts, etc.) you desire to build that car; of course, it depends on your skill level to get the best out of the engine. You can read more on how to fine-tune the engine in [Hummingbot Academy](https://hummingbot.io/academy/). And more importantly, it’s all FREE. 
+On the other hand, Hummingbot is not a car but a twin-turbo 6L V12 engine that enables you to customize with any car parts (advanced market making features, custom scripts, etc.) you desire to build that car; of course, it depends on your skill level to get the best out of the engine. You can read more on how to fine-tune the engine in `Hummingbot Academy`. And more importantly, it’s all FREE. 
 
 If you want to join liquidity mining and earn rewards, performance-wise, these two bots tend to get you similar results if you set them up with just basic market making configurations. We believe, if you try to set up your bots using more advanced features, the results will be largely divergent. 
 

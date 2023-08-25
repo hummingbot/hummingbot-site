@@ -1,20 +1,24 @@
 ---
-title: "Top trader interview with Harry Yeh of Binary Fintech Group"
-author: "coinalpha"
-description: ""
 date: 2020-07-01
-image: "./cover.png"
-level: "Beginner"
-tags: ["market making", "trader interviews"]
-featured: false
+authors:
+  - coinalpha
+categories:
+   - Market making
+   - Trader Tips
+   - Hummingbot
 ---
+
+# Top trader interview with Harry Yeh of Binary Fintech Group
+
+![cover](cover.png)
 
 We recently interviewed Harry Yeh, Managing Partner of Binary Fintech Group, who has been working in the crypto trading industry for the past 7 years. *Disclosure: Harry is an advisor to and investor in Hummingbot.*
 
 Binary started as an OTC trading desk serving an exclusive set of crypto traders. Recently, using Hummingbot, they have started to run high frequency market making strategies. 
 
-Below, we highlight a few excerpts from [the video interview](https://www.youtube.com/watch?v=PqKkfe9ZV6g), where Harry shared a bunch of important insights in crypto algo trading and market making. 
+Below, we highlight a few excerpts from the video interview, where Harry shared a bunch of important insights in crypto algo trading and market making. 
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/PqKkfe9ZV6g?si=hNkB6_Lqc_3BEV4u" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- more -->
 
@@ -62,6 +66,10 @@ For example, Bitcoin was trading in the range of $9200-9300 for about 36 hours, 
 
 By the same token, if you think the market is going to go up, and you don’t want to have your market makers execute all the sells for you, stop your market maker and wait for the price to go up, and do some math. If it is going up, set very clearly defined exits. Don’t be greedy. 
 
----
-- Check out the [full interview video](https://www.youtube.com/watch?v=PqKkfe9ZV6g)
-- For more trading advice from Harry, check out his [keynote speech at the 2018 North American Bitcoin Conference](https://www.youtube.com/watch?v=HVbKe_778-8)
+Check out the full interview video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PqKkfe9ZV6g?si=80z81RwkQMb6hkgl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+For more trading advice from Harry, check out his keynote speech at the 2018 North American Bitcoin Conference:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HVbKe_778-8?si=rNrYuMfjtvTyqau2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -1,12 +1,14 @@
 ---
-title: "Mapping the crypto market maker landscape: list of 34 market makers"
-author: "coinalpha"
-description: ""
 date: 2020-02-10
-image: "./market-makers.jpg"
-tags: ["market making"]
-featured: false
+authors:
+  - coinalpha
+categories:
+   - Market making
 ---
+
+# Mapping the crypto market maker landscape: list of 34 market makers
+
+![cover](market-makers.jpg)
 
 ## Summary
 
@@ -14,16 +16,17 @@ Market making is an indispensable but misunderstood sector of the crypto industr
 
 In this post, we provide information that may help projects and exchanges who are considering hiring a professional market maker:
 
-* [Part 1](#part1) lists questions that prospective clients of market makers may wish to ask
-* [Part 2](#part2) provides a directory of crypto market makers around the world
+- [Part 1](#part1) lists questions that prospective clients of market makers may wish to ask
+- [Part 2](#part2) provides a directory of crypto market makers around the world
 
-<h2 id="part1">Part 1: Evaluating Market Makers</h2>
+<!-- more -->
+
+## Part 1: Evaluating Market Makers
 
 ### What do market makers do?
 
 Market makers, also known as liquidity providers, play a fundamental role in asset markets by simultaneously quoting bid (buy) and ask (sell) prices for assets on an exchange. By quoting prices at which they stand ready to buy and sell assets, they facilitate price discovery and liquid trading by other market participants. In addition, by quoting prices on different trading venues and arbitraging away inter-market dislocations across different markets, market makers increase overall market efficiency. 
 
-<!-- more -->
 
 ### Market makers in traditional asset markets
 
@@ -65,24 +68,24 @@ Also, market makers should not be representing that they can achieve price targe
 
 We believe that **slippage** is a more robust indicator of liquidity than trading volume, and that a market maker’s performance should be measured on their impact on slippage. Slippage refers to the difference between the mid-market price of an asset and the price at which the trade is actually executed; the difference occurs because actual trade execution depends on depth or order book and the required amount of orders to fill the trade order size.  **The smaller the slippage, the better the liquidity**. Deep, liquid order books tend to have low slippage, while thin, illiquid order books have high slippage. Using slippage as the key performance metric can also prevent market makers’ attempts to put their own profit-seeking interest before token issuer’s liquidity-maximizing objectives. By setting wider bid-ask spread which results in higher slippage and lower volume, some market makers might seek to make more profit from trading rather than maximize the liquidity for their clients. 
 
-<h2 id="part2">Part 2: Market Maker Directory</h2>
+## Part 2: Market Maker Directory
 
 Due to the ever-increasing demand for liquidity in the crypto markets, a number of market making firms have emerged. Below, we provide a directory of 34 professional crypto market makers, in alphabetic order. **Please note that this directory does not constitute a recommendation for any of these firms, and this is not financial nor hiring advice**.
 
 > **For market making firms:** Please email us at partnerships@hummingbot.io if you would like us to add or edit your listing.
 
 ##### Altonomy
-https://www.altonomy.com/#/
+[https://www.altonomy.com/#/](https://www.altonomy.com/#/)
 
 According to the firm, it has direct partnerships with more than 80 token issuers, among which 40-plus are ranked top-200 by market capitalization, as well as top global and regional investment funds. Headquartered in Singapore, Altonomy closed a $7 million round funded by Polychain Capital last year. 
 
 ##### Amber Group
-https://www.amberaigroup.com/
+[https://www.amberaigroup.com/](https://www.amberaigroup.com/)
 
 Based in Asia, Amber Group focuses on electronic market making and systematic trading in digital currencies - covering spot, futures, swaps, options and other derivatives. It provides liquidity for miners and mining pools, exchanges, hedge funds and token issuers. According to the firm, it has executed over $100 billion of trades across all products and categories since inception.
 
 ##### Alameda Research
-https://www.alameda-research.com/
+[https://www.alameda-research.com/](https://www.alameda-research.com/)
 
 Alameda Research is a quantitative cryptocurrency trading firm and liquidity provider. According to the firm, it manages over $100 million in digital assets and trades $600 million to $1.5 billion daily across thousands of products: major coins and altcoins, as well as their derivatives.
 
@@ -91,22 +94,22 @@ Alameda Research is a quantitative cryptocurrency trading firm and liquidity pro
 The mission of AlphaTheta is to create solutions for enhancing token marketability and building stability in the token ecosystem. 
 
 ##### Atomic Fund
-https://atomic.fund/
+[https://atomic.fund/](https://atomic.fund/)
 
 According to its website, Atomic Fund quotes both ask and bid orders in a given order book for a financial instrument to provide liquidity, increase trading volumes and reduce market volatility. Clients can populate their own charts based on the data Atomic Fund collects.
 
 ##### B2C2
-https://www.b2c2.com/
+[https://www.b2c2.com/](https://www.b2c2.com/)
 
 According to the firm, B2C2 is one of the largest cryptocurrency liquidity providers. Headquartered in the UK, with offices in London, Brussels and Tokyo, the firm was founded in 2015. 
 
 ##### Binary Financial
-http://binaryfin.com/
+[http://binaryfin.com/](http://binaryfin.com/)
 
 Founded in 2014, Binary Financial is a crypto hedge fund focusing on brokering and facilitating large block Bitcoin trades for high net worth clients and institutions, proprietary trading and electronic market making.
 
 ##### Citizen Hex
-https://www.citizenhex.com/
+[https://www.citizenhex.com/](https://www.citizenhex.com/)
 
 According to the firm, Citizen Hex is purpose-built for the Ethereum era: a corporation centred around acquiring, securing, and trading ERC-20 tokens. Citizen Hex is building market-making tools to provide token liquidity on decentralized exchanges.
 
@@ -115,27 +118,27 @@ According to the firm, Citizen Hex is purpose-built for the Ethereum era: a corp
 Coin Flow is a crypto market maker based in Hong Kong, and it provides designated market making, exchange market making, and ICO Advisory services. It currently is offering market making services for top 100 coins. 
 
 ##### BlockVC
-https://www.blockvc.com/
+[https://www.blockvc.com/](https://www.blockvc.com/)
 
 BlockVC is a blockchain investment firm, which also provides life-cycle solutions including incubating, asset management and market making for its portfolio companies. 
 
 ##### Bluesky Capital
-https://www.blueskycapitalmanagement.com/
+[https://www.blueskycapitalmanagement.com/](https://www.blueskycapitalmanagement.com/)
 
 Bluesky Capital is a quantitative alternative investment manager, which provides market making services to ICOs and exchanges. 
 
 ##### Cumberland DRW
-https://cumberland.io/
+[https://cumberland.io/](https://cumberland.io/)
 
 Cumberland provides liquidity support to over 40 cryptocurrencies. The company operates within a diversified principal trading firm known as DRW, which has more than 25 years of experience in markets around the world.
 
 ##### Efficient Frontier
-https://www.efrontier.io/
+[https://www.efrontier.io/](https://www.efrontier.io/)
 
 Efficient Frontier is a crypto algorithmic trading firm and market maker with over 13 years of experience in traditional markets and 3 years in crypto. They trade over $100M a day in spot and derivatives markets.  
 
 ##### Fractal Wealth
-http://www.fractalwealth.com/
+[http://www.fractalwealth.com/](http://www.fractalwealth.com/)
 
 Fractal is a cryptocurrency trading and technology firm that provides liquidity to decentralized exchanges.
 
@@ -144,7 +147,7 @@ Fractal is a cryptocurrency trading and technology firm that provides liquidity 
 FBG is a digital asset management firm in blockchain-based capital market.
 
 ##### Galois Capital
-https://galois.capital/
+[https://galois.capital/](https://galois.capital/)
 
 Based in San Francisco, Galois Capital primarily focuses on algorithmic market making and OTC trading.
 
@@ -153,47 +156,47 @@ Based in San Francisco, Galois Capital primarily focuses on algorithmic market m
 Grasshopper Capital is an investment manager who works closely with founders helping them commercialise products quickly and effectively as well as opening doors for distribution.
 
 ##### Grapefruit Trading
-https://gfru.it/
+[https://gfru.it/](https://gfru.it/)
 
 Based in Chicago, Grapefruit Trading specializes in providing liquidity in cryptos. It is a subsidiary of 4170 Trading. According to the firm, its team members have been actively involved in the crypto space since 2010.
 
 ##### GSR
-https://www.gsr.io/
+[https://www.gsr.io/](https://www.gsr.io/)
 
 Founded in 2013, GSR is a Hong Kong-based algorithmic digital asset trading. According to its website, GSR has traded billions of dollars of digital assets utilizing its proprietary software suite, capable of satisfying all liquidity needs, from basic execution services to highly complex solutions. 
 
 ##### HedgeTech
-https://www.hedgetech.io/
+[https://www.hedgetech.io/](https://www.hedgetech.io/)
 
 HedgeTech is an algorithmic market maker that services issuers, exchanges and other market makers worldwide via two separate entities in the USA and Singapore. The firm has been recognized as a leading market maker by top institutions and world-renowned universities for the stability, security and scalability of its systems. 
 
 ##### Hiro Trading
-https://www.hirotrading.io/
+[https://www.hirotrading.io/](https://www.hirotrading.io/)
 
 Headquartered in London, Hiro Trading is a digital asset market making firm – covering both spot and derivative products. Comprising an experienced team of quantitative traders and data scientists, Hiro works closely with crypto exchanges and token issuers to provide their projects with institutional grade liquidity.
 
 ##### Jump Trading
-https://www.jumptrading.com/
+[https://www.jumptrading.com/](https://www.jumptrading.com/)
 
 Jump Trading is a global, quantitative-based trading firm. Jump has more than 700 employees across offices in Chicago, New York, London, Amsterdam, Shanghai, Singapore, and Gurgaon, India.
 
 ##### Kairon Labs
-https://www.kaironlabs.com/
+[https://www.kaironlabs.com/](https://www.kaironlabs.com/)
 
 Founded in late 2018, Kairon Labs is based in Belgium and the Netherlands and offers market making for all utility tokens using proprietary trading software.
 
 ##### Keyrock
-https://keyrock.eu/
+[https://keyrock.eu/](https://keyrock.eu/)
 
 Founded in Belgium in 2017, Keyrock is a cryptocurrency market maker building scalable, self-adaptive algorithmic technologies to support efficient digital asset markets. 
 
 ##### Koinbros
-http://www.koinbros.com
+[http://www.koinbros.com](http://www.koinbros.com)
 
 Koinbros specialises in market-making services and over-the-counter trading on post-ICO utility tokens. We are a privately-owned multi-strategy trading firm. We are focused on seeking out trading and investment opportunities to grow our capital in the utility token markets. We bring together high caliber people, innovative and quantitative modeling, and cutting edge technology to seek out opportunities around cryptocurrency exchanges.
 
 ##### Octagon Strategy
-https://trade.octfinancial.com/
+[https://trade.octfinancial.com/](https://trade.octfinancial.com/)
 
 According to the firm, Octagon Strategy is the largest digital asset brokerage in the Asia-Pacific region. The desk facilitates institutions and individuals for the buying and selling of major cryptocurrencies. The team envisions drawing on its deep pools of liquidity to support high volume block trades of cryptocurrencies while ensuring a competitive pricing.
 
@@ -202,37 +205,37 @@ According to the firm, Octagon Strategy is the largest digital asset brokerage i
 Founded in 2018 in Hong Kong, Origin X Capital (OXC) is a consulting firm and an international digital asset fund. 
 
 ##### Prycto
-https://prycto.com/
+[https://prycto.com/](https://prycto.com/)
 
 Prycto is a quantitative market maker based in Gibraltar, providing automatic and constant liquidity for your digital asset. According to the firm, it provides liquidity for clients at scale. 
 
 ##### Pulsar Trading
-https://www.pulsartradingcap.com/
+[https://www.pulsartradingcap.com/](https://www.pulsartradingcap.com/)
 
 Based in Hong Kong, Pulsar Trading Capital is a proprietary trading firm, specialized in quantitative and high frequency trading. According to the firm, it has become a leading liquidity provider in the digital asset market since 2014.
 
 ##### QCP Capital
-https://qcp.capital/
+[https://qcp.capital/](https://qcp.capital/)
 
 QCP Capital is a digital asset trading firm based in Singapore. QCP runs an OTC trading desk and provides digital asset trading services such as treasury management and market-making operations. QCP has a strategic focus on Southeast Asia but also operates in the UK, Japan and Australia.
 
 ##### Snap innovations
-https://snapinnovations.com/
+[https://snapinnovations.com/](https://snapinnovations.com/)
 
 SNAP Innovations is an Artificial Intelligence, Blockchain and Financial Trading & Technology Solutions company. According to the firm, it provides programmatic liquidity for dozens of digital assets across 30 venues and hundreds of crosses.
 
 ##### Trade Terminal
-http://www.tradeterminal.io/
+[http://www.tradeterminal.io/](http://www.tradeterminal.io/)
 
 San Jose-based Trade Terminal is a digital asset hedge fund, using data-driven algorithmic trading with its own data and research. 
 
 ##### Three Arrows Capital
-https://www.threearrowscap.com/
+[https://www.threearrowscap.com/](https://www.threearrowscap.com/)
 
 Three Arrows Capital is a Singapore-based fund manager specialising in emerging markets.
 
 ##### Wintermute
-https://www.wintermute.com/
+[https://www.wintermute.com/](https://www.wintermute.com/)
 
 Founded in July 2017 by three senior Optiver traders and developers with the mission to professionalise crypto market making, Wintermute Trading is one of the top global algorithmic market makers in crypto. They trade over 500 trading pairs on over 40 vetted exchanges, in both spot and derivatives.
 
@@ -245,4 +248,3 @@ Ideally, market makers should consistently place orders with tight spreads and l
 ---
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).
-

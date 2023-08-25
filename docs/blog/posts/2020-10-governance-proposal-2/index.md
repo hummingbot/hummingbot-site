@@ -1,16 +1,21 @@
 ---
-title: "Governance proposal #2"
-author: "Carlo P. Las Marias"
-description: "New governance vote for the next exchange connector: Altmarkets.io, Bitstamp, dy/dx, or IDEX"
 date: 2020-10-27
-image: "./governance-proposal2.png"
-tags: ["announcement", "governance"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Announcements
+   - Governance
 ---
+
+# Governance proposal #2
+
+![cover](governance-proposal2.png)
 
 We are launching the 2nd Hummingbot governance proposal as well as the new voting portal on our [Hummingbot Miner](https://miner.hummingbot.io) app!
 
-As mentioned in our previous [governance post](https://hummingbot.io/blog/2020-09-governance-proposal-1/), votes for this current proposal will be based on Hummingbot Miner rewards, giving the ability to vote to members of the community who have been participating in and supporting currently active Hummingbot liquidity mining campaigns.  We welcome any suggestions and discussion on our discord channel [#governance-chat](https://discord.hummingbot.io) as we continue to evaluate and iterate on how best we can get the community involved in deciding the direction of Hummingbot.
+As mentioned in our previous [governance post](../2020-09-governance-proposal-1/index.md), votes for this current proposal will be based on Hummingbot Miner rewards, giving the ability to vote to members of the community who have been participating in and supporting currently active Hummingbot liquidity mining campaigns.  We welcome any suggestions and discussion on our discord channel [#governance-chat](https://discord.hummingbot.io) as we continue to evaluate and iterate on how best we can get the community involved in deciding the direction of Hummingbot.
+
+<!-- more -->
 
 > ## Proposal #2
  > Which of the following community-developed exchange connectors should be included into the core Hummingbot code base in the next release (0.34.0)?
@@ -25,13 +30,12 @@ As mentioned in our previous [governance post](https://hummingbot.io/blog/2020-0
 
 Similar to [our first governance vote](https://www.reddit.com/r/Hummingbot/comments/ig3d3e/launching_hummingbot_connector_governance_the/), the Hummingbot core team will review, test, and incorporate the exchange connector for the winning exchange into our core code base, which will become an officially supported connector. 
 
-<!-- more -->
 
 ## Voting Methodology
 
 - **Votes per miner**: the total votes each miner has is based on the total amount of mining rewards they have earned in the most recent weekly reward period. For example, a miner who earned $100 in the rewards period will have 100 votes.
 
-- **Miner reward period**: for the current proposal, the rewards period used to calculate total miner votes will be the most recently completed period: ***Tuesday October 20, 2020 12.00am UTC to Monday October 26, 2020 11.59pm UTC***
+- **Miner reward period**: for the current proposal, the rewards period used to calculate total miner votes will be the most recently completed period: **Tuesday October 20, 2020 12.00am UTC to Monday October 26, 2020 11.59pm UTC**
 
 - **Reward amounts will be rounded up to the nearest whole vote**: a miner who earned $0.01 of rewards is still entitled to 1 full vote, while a miner who earned $1.01 will have 2 votes, and so on. This allows for any miner who has earned any amount of rewards to have a minimum of 1 vote.  
 
@@ -47,7 +51,7 @@ Similar to [our first governance vote](https://www.reddit.com/r/Hummingbot/comme
 
 ## How to vote
 
-We have enabled a new [VOTE](https://miners.hummingbot.io/polls) tab on https://miner.hummingbot.io which shows all proposals:
+We have enabled a new [VOTE](https://miner.hummingbot.io/polls) tab on https://miner.hummingbot.io which shows all proposals:
 
 ![](./image2.png)
 
@@ -69,7 +73,7 @@ Below are the four exchange connectors that you can vote for:
 
 https://github.com/CoinAlpha/hummingbot/pull/2442
 
-The Altmarkets.io connector was developed by one of our active community members, ***[TheHoliestRoger](https://github.com/TheHolyRoger)***, who has been an active contributor to the Hummingbot codebase.
+The Altmarkets.io connector was developed by one of our active community members, **[TheHoliestRoger](https://github.com/TheHolyRoger)**, who has been an active contributor to the Hummingbot codebase.
 
 ## Bitstamp
 

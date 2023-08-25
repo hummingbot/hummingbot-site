@@ -1,26 +1,32 @@
 ---
-title: "Celo + Hummingbot"
-author: "Michael Feng"
-description: "A new arbitrage strategy that helps the stability of the Celo protocol"
 date: 2020-06-03
-image: "./cover.jpg"
-tags: ["strategy", "hummingbot", "arbitrage"]
-featured: false
+authors:
+  - mike
+categories:
+   - Hummingbot
+   - Announcements
 ---
 
+
+# Celo + Hummingbot
+
+![cover](cover.jpg)
+
+
 ### TL;DR
-In the next [release](https://hummingbot.io/download/) of Hummingbot (ETA 2 weeks), we will be officially supporting the [Celo](https://celo.org/) blockchain protocol and releasing a new algorithmic trading strategy called `celo-arb`. 
+In the next `release` of Hummingbot (ETA 2 weeks), we will be officially supporting the [Celo](https://celo.org/) blockchain protocol and releasing a new algorithmic trading strategy called `celo-arb`. 
 
 This strategy will allow anyone with cGLD or cUSD, the two native tokens of the Celo ecosystem, to earn arbitrage profits while contributing to the stability of the Celo protocol. 
 
 In addition, this strategy bridges the disparate worlds of centralized order book exchanges and decentralized automated market makers (AMMs), improving efficiency and price discovery for both.
 
+<!-- more -->
+
 ### How celo-arb works
+
 ![](./celo-arb.png)
 
 Celo is a new Layer 1 blockchain that is building a new global financial system centered around an algorithmic stablecoin called cUSD. We are huge fans of Celo because they share the ultimate mission as Hummingbot: giving financial superpowers to everyone, no matter where they live or how much money they have. 
-
-<!-- more -->
 
 To ensure that the cUSD stablecoin trades at or near $1.00, Celo maintains an automatic market maker (AMM) DEX on their blockchain that allows users to exchange the price-stable cUSD for cGLD, the price-fluctuating, volatile asset in the Celo system. Similar to Ethereum-based AMMs such as [Uniswap](https://uniswap.exchange/) and [Balancer](https://balancer.finance/), the Celo AMM uses a constant product market making algorithm, backed by cUSD and cGLD reserves, for liquidity.
 
@@ -32,7 +38,7 @@ Similar to the role that [Keepers](https://developer.makerdao.com/keepers/) play
 
 ### No-code arbitrage bots
 
-As shown in this [video](https://youtu.be/HfPiB2d47yY), Hummingbot’s upcoming `celo-arb` strategy allows anyone with cGLD or cUSD to build and run an arbitrage just by answering a few configuration questions. Users can create a bot that continually scans for arbitrage opportunities 24/7 and capitalizes on them. 
+As shown in this `video`, Hummingbot’s upcoming `celo-arb` strategy allows anyone with cGLD or cUSD to build and run an arbitrage just by answering a few configuration questions. Users can create a bot that continually scans for arbitrage opportunities 24/7 and capitalizes on them. 
 
 As Celo expands to other exchanges and more cGLD and cUSD pairs are listed, there will be many combinations of crosses, creating more potential arbitrage opportunities for bots to capture. The more bots there are, the more anti-fragile Celo’s stability mechanism becomes.
 
@@ -42,7 +48,7 @@ Not only will `celo-arb`, bring greater stability to Celo’s stablecoins, but w
 
 The `celo-arb` strategy also provides a template for bridging the AMM-dominated decentralized exchange (DEX) landscape and the order-book based world of centralized exchanges. Since the strategy captures arbitrage opportunities between an order book versus an AMM, it can be easily modified to suit to fit Uniswap, Balancer, and other AMMs. 
 
-We invite anyone interested in working on such a strategy to submit an issue to our [public roadmap](https://github.com/CoinAlpha/hummingbot/projects/2).
+We invite anyone interested in working on such a strategy to submit an issue to our [public roadmap](https://github.com/orgs/hummingbot/projects/1).
 
 ### Try it out
 

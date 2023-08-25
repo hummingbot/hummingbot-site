@@ -1,23 +1,28 @@
 ---
-title: "Scaling the Hummingbot developer community"
-author: "Michael Feng"
-description: "More resources and support for Hummingbot developers!"
 date: 2020-08-20
-image: "./cover.png"
-tags: ["announcement", "hummingbot"]
-featured: false
+authors:
+  - mike
+categories:
+   - Announcements
+   - Hummingbot
 ---
+
+
+# Scaling the Hummingbot developer community 
+
+![cover](cover.png)
+
 
 From the beginning, we conceived of Hummingbot as a **shared public utility**: an open source project that helps you create trading bots on any crypto exchange without having to write low-level integrations to exchange APIs. 
 
 We knew that we would have to create the first few exchange integrations, but we hoped that over time, the open source nature of the Hummingbot codebase would allow others to contribute their own exchange connectors and strategies. 
 
-Since we launched last year, [58 unique developers](https://github.com/coinalpha/hummingbot) have contributed to the open source Hummingbot codebase. But we’re also aware we should be doing more to support the many developers, both professional and individuals, who want to customize Hummingbot for their own needs and contribute to the open source codebase.
+Since we launched last year, [58 unique developers](https://github.com/hummingbot/hummingbot) have contributed to the open source Hummingbot codebase. But we’re also aware we should be doing more to support the many developers, both professional and individuals, who want to customize Hummingbot for their own needs and contribute to the open source codebase.
 
 
 <!-- more -->
 
-In spite of our relatively incomplete documentation and constantly evolving codebase, many developers have forked Hummingbot and built their own exchange connectors, which is why we recently announced a [community governance initiative](https://hummingbot.io/blog/2020-08-exchange-connector-governance/) to vote on which forks we support and merge into the official codebase. In addition, many developers want to learn how to use our new Scripts feature that lets you use market data to fine-tune bot behavior and even create their own Hummingbot strategies.
+In spite of our relatively incomplete documentation and constantly evolving codebase, many developers have forked Hummingbot and built their own exchange connectors, which is why we recently announced a [community governance initiative](../2020-08-exchange-connector-governance/index.md) to vote on which forks we support and merge into the official codebase. In addition, many developers want to learn how to use our new Scripts feature that lets you use market data to fine-tune bot behavior and even create their own Hummingbot strategies.
 
 To better support the burgeoning Hummingbot developer community, I’m excited to announce the following initiatives:
 
@@ -41,7 +46,7 @@ We have created a [public calendar](https://calendar.google.com/calendar/embed?s
 
 ### Important changes by release
 
-We release a new version of Hummingbot every 4 weeks, and we are constantly improving and refactoring the codebase. Starting with the [v0.30.0 release notes](https://docs.hummingbot.io/release-notes/0.30.0/), we now include sections that communicate relevant information for developers.
+We release a new version of Hummingbot every 4 weeks, and we are constantly improving and refactoring the codebase. Starting with the [v0.30.0 release notes](https://docs.hummingbot.org/release-notes/), we now include sections that communicate relevant information for developers.
 
 In addition, we have created a [Important Changes](https://www.notion.so/hummingbot/a26c8bcf30284535b0e5689d45a4fe88?v=869e73f78f0b426288476a2abda20f2c) document that summarizes the important changes by release. We’ll add this document and other resources to the upcoming Developer Hub (see below).
 
@@ -53,5 +58,5 @@ We have created a new Developers section on our [Discord chat server](https://di
 
 ### Developer Hub (coming soon!)
 
-We are working on a developer hub, an expanded version of the [Developer Manual](https://docs.hummingbot.io/developer/contributing/) and other resources for developers on the Hummingbot website. We hope that this hub will provide a one-stop shop for any developer looking to build on top of Hummingbot.
+We are working on a developer hub, an expanded version of the [Developer Manual](../../../developers/index.md) and other resources for developers on the Hummingbot website. We hope that this hub will provide a one-stop shop for any developer looking to build on top of Hummingbot.
 

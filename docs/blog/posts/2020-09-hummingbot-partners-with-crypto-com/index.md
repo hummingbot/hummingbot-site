@@ -1,12 +1,16 @@
 ---
-title: "Hummingbot partners with Crypto.com exchange for high frequency trading and liquidity mining"
-author: "Carlo P. Las Marias"
-description: ""
 date: 2020-09-09
-image: "./hummingbot-crypto_com.png"
-tags: ["announcement", "liquidity mining"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Announcements
+   - Liquidity mining
 ---
+
+
+# Hummingbot partners with Crypto.com exchange for high frequency trading and liquidity mining
+
+![cover](hummingbot-crypto_com.png)
 
 **Hummingbot is thrilled to announce that it has partnered with leading crypto exchange [Crypto.com Exchange](https://crypto.com/exchange) to integrate Hummingbot’s trading capabilities and bring [liquidity mining](https://miners.hummingbot.io/) to the exchange.**
 
@@ -18,7 +22,7 @@ We view our collaboration with Crypto.com Exchange as an important strategic par
 #### Open-source, high-frequency trading for Crypto.com users
 
 
-We have just released the latest version of Hummingbot [v0.31.0](https://docs.hummingbot.io/release-notes/0.31.0/) which includes an integration to Crypto.com Exchange.  This integration enables Crypto.com’s account holders to deploy Hummingbot’s quantitative and algorithmic strategies to engage in high frequency, automated trading.  Strategies currently available include market making, arbitrage, liquidity mirroring, as well as trade execution strategies such as TWAP and VWAP execution.  Hummingbot also allows users to create their own custom strategies.  Hummingbot has been battle-tested by thousands of users from its vibrant and engaged open-source community. 
+We have just released the latest version of Hummingbot [v0.31.0](https://docs.hummingbot.org/release-notes) which includes an integration to Crypto.com Exchange.  This integration enables Crypto.com’s account holders to deploy Hummingbot’s quantitative and algorithmic strategies to engage in high frequency, automated trading.  Strategies currently available include market making, arbitrage, liquidity mirroring, as well as trade execution strategies such as TWAP and VWAP execution.  Hummingbot also allows users to create their own custom strategies.  Hummingbot has been battle-tested by thousands of users from its vibrant and engaged open-source community. 
 
 #### Liquidity Mining Infrastructure
 
@@ -49,8 +53,8 @@ For additional information, please navigate to the following pages:
 - [Crypto.com Exchange](https://www.crypto.com/exchange)
 - [Blog](https://blog.crypto.com/) | [Twitter](https://twitter.com/cryptocom) | [Discord](https://discord.gg/B6cZahJ) | [Telegram](https://t.me/CryptoComOfficial)
 
-> 🏛 **Token issuers**: *if your token is listed on Crypto.com or on [any of the exchanges](https://docs.hummingbot.io/exchange-connectors/overview/) that Hummingbot is integrated with, please contact the team at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io) to learn more about our liquidity mining campaigns.*
+> 🏛 **Token issuers**: *if your token is listed on Crypto.com or on [any of the exchanges](../../../exchanges/index.md) that Hummingbot is integrated with, please contact the team at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io) to learn more about our liquidity mining campaigns.*
 
-<em>*CRO received as a deposit bonus during our ‘2% deposit bonus’ promotion does not count towards this staking requirement.</em><br/>
+CRO received as a deposit bonus during our ‘2% deposit bonus’ promotion does not count towards this staking requirement
 
-<em>**Sign-up Bonus is based on your first CRO stake amount.</em>
+**Sign-up Bonus is based on your first CRO stake amount.

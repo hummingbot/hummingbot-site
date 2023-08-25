@@ -1,19 +1,25 @@
 ---
-title: "Introducing Hummingbot Academy"
-author: "Paulo Henrique"
-description: "Overview of Hummingbot Academy and our plans for this project"
 date: 2020-10-05
-image: "./HB-Academy.jpg"
-level: "Beginner"
-tags: ["announcement"]
-featured: false
+authors:
+  - carlo
+categories:
+  - Announcements
+  - Level 1
+  - Guides
 ---
+
+
+# Introducing Hummingbot Academy
+
+![cover](HB-Academy.jpg)
 
 Good day Hummingbot community!
 
-A month has passed since I published the first article on our blog, and after covering the three main strategies [pure market making](https://hummingbot.io/blog/2020-09-what-is-market-making/), [arbitrage](https://hummingbot.io/blog/2020-09-what-is-arbitrage/), [cross-exchange market making](https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/)) you can implement using Hummingbot, it's time to talk a bit about what the **Hummingbot Academy** is and what to expect from this project.
+A month has passed since I published the first article on our blog, and after covering the three main strategies [pure market making](../2020-09-what-is-market-making/index.md), [arbitrage](../2020-09-what-is-arbitrage/index.md), [cross-exchange market making](../2020-09-what-is-cross-exchange-market-making/index.md) you can implement using Hummingbot, it's time to talk a bit about what the **Hummingbot Academy** is and what to expect from this project.
 
 This is also a great opportunity to introduce myself to the community.
+
+<!-- more -->
 
 ## A few satoshis about me
 
@@ -22,9 +28,6 @@ This is also a great opportunity to introduce myself to the community.
 Hi, my name is Paulo Henrique Rebouças.
 
 I am Brazilian, 38 years old, and have been a Civil Engineer and Project Manager for 11 years. Even though I like this profession, over the last years I have developed a passion for financial markets, with a special place in my heart reserved for cryptocurrencies.
-
-
-<!-- more -->
 
 While I always had an interest in finance, I started to get hyped about this topic around 6 years ago when I began researching everything related to investments, be it long-term, short-term, bonds, stock markets, economic laws and principles, day trading, indicators, strategies, etc. 
 
@@ -38,7 +41,7 @@ But more important than the profit I missed by selling those bitcoins too early,
 
 Cryptocurrencies and blockchain technology have a huge potential to democratize access to financial instruments previously only available to big investment institutions and accredited investors. 
 
-I fully believe that Hummingbot is filling a big role in realizing this potential, by giving access to small investors the possibility to diversify their trading strategies through our [free and open-source market making/arbitrage robot](https://hummingbot.io/) as well as receiving financial incentives to provide liquidity to blockchain projects through liquidity mining campaigns.
+I fully believe that Hummingbot is filling a big role in realizing this potential, by giving access to small investors the possibility to diversify their trading strategies through our [free and open-source market making/arbitrage robot](https://hummingbot.org/) as well as receiving financial incentives to provide liquidity to blockchain projects through liquidity mining campaigns.
 
 ## Knowledge is Power
 
@@ -64,11 +67,11 @@ The same situation applies if you are a seasoned trader dipping your toes for th
 
 While the fundamental concepts are the same, the way each type of operation applies these concepts are different.
 
-This is why we created the **Hummingbot Academy**: we want our users to become better market makers/arbitrageurs by acquiring fundamental, as well as practical, knowledge behind everything that is possible to do with [Hummingbot](https://hummingbot.io/).
+This is why we created the **Hummingbot Academy**: we want our users to become better market makers/arbitrageurs by acquiring fundamental, as well as practical, knowledge behind everything that is possible to do with [Hummingbot](https://hummingbot.org/).
 
 Our objective is to create a **knowledge hub** about everything related to market making, arbitrage, and algorithmic trading, and how to apply this knowledge to help you create and/or improve your trading strategy.
 
-The first articles of the Hummingbot academy have already been published and are an introduction to the basic strategies that can be implemented with Humminbot: [Pure Market Making](https://hummingbot.io/blog/2020-09-what-is-market-making/), [Arbitrage](https://hummingbot.io/blog/2020-09-what-is-arbitrage/), and [Cross-Exchange Market Making](https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/). Be sure to check them out, if you haven't already.
+The first articles of the Hummingbot academy have already been published and are an introduction to the basic strategies that can be implemented with Humminbot: [Pure Market Making](../2020-09-what-is-market-making/index.md), [Arbitrage](../2020-09-what-is-arbitrage/index.md), and [Cross-Exchange Market Making](../2020-09-what-is-cross-exchange-market-making/index.md). Be sure to check them out, if you haven't already.
 
 And this is just the beginning...
 
@@ -101,14 +104,14 @@ These are still the early days of the Academy, and there is a long road ahead of
 
 Meanwhile, here is the all the educational content we have already published for you to revisit:
 
-- [A developer's guide to crypto algo trading](https://hummingbot.io/blog/2019-01-beginner-crypto-trader/)
-- [A non-technical crypto trader's guide to python and algo trading](https://hummingbot.io/blog/2019-01-crypto-trading-guide-for-nontechnical/)
-- [How to measure performance in crypto trading](https://hummingbot.io/blog/2019-07-measure-performance-crypto-trading/)
-- [Hummingbot Strategy Hacks 101](https://hummingbot.io/blog/2019-09-strategy-hacks/)
-- [How to use advanced market making features](https://hummingbot.io/blog/2019-11-advanced-market-making/)
-- [Guest post: my take on market making and inventory risk](https://hummingbot.io/blog/2020-06-what-is-market-making-guest-post/)
-- [What is market making?](https://hummingbot.io/blog/2020-09-what-is-market-making/)
-- [What is Arbitrage?](https://hummingbot.io/blog/2020-09-what-is-arbitrage/)
-- [What is cross exchange market making?](https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/)
+- [A developer's guide to crypto algo trading](../2019-01-beginner-crypto-trader/index.md)
+- [A non-technical crypto trader's guide to python and algo trading](../2019-01-crypto-trading-guide-for-nontechnical/index.md)
+- [How to measure performance in crypto trading](../2019-07-measure-performance-crypto-trading/index.md)
+- [Hummingbot Strategy Hacks 101](../2019-09-strategy-hacks/index.md)
+- [How to use advanced market making features](../2019-11-advanced-market-making/index.md)
+- [Guest post: my take on market making and inventory risk](../2020-06-what-is-market-making-guest-post/index.md)
+- [What is market making?](../2020-09-what-is-market-making/index.md)
+- [What is Arbitrage?](../2020-09-what-is-arbitrage/index.md)
+- [What is cross exchange market making?](../2020-09-what-is-cross-exchange-market-making/index.md)
 
 See you soon!

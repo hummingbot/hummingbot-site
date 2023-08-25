@@ -1,12 +1,17 @@
 ---
-title: "Governance proposal #1"
-author: "Carlo P. Las Marias"
-description: "The results are in!  We also discuss the next steps for Hummingbot governance."
 date: 2020-09-22
-image: "./governance-cover.jpg"
-tags: ["announcement", "hummingbot", "governance"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Announcements
+   - Hummingbot
+   - Governance
 ---
+
+
+# Governance proposal #1
+
+![cover](governance-cover.jpg)
 
 As Hummingbot’s community and usage have grown, we have seen increasing participation from community members in the form of code contributions, requests for features, strategies, and exchange connectors from users, bug reports, and generally increased engagement and discussions on our forums.  As the community has grown, it has become clear to us that there are many more stakeholders involved.  Previously, the decisions on the direction of Hummingbot were solely made by us, based on our discussions with users, feedback from some members of our community, and discussions with exchanges who’ve reached out to us about partnerships.  However, in order to better serve the broader community, we need to find a better way to democratize the direction of Hummingbot.  This means that our role would have to evolve into one that serves as more of an open-source project steward.
 
@@ -15,7 +20,7 @@ We have started to think about and explore what this new type of role means to u
 <!-- more -->
 
 
-We completed the [first Hummingbot connector governance trial](https://hummingbot.io/blog/2020-08-exchange-connector-governance/) earlier this month, where we asked the community to vote on which exchange connector to integrate next into Hummingbot.  We had developers submit and propose exchange connectors for [Beaxy](https://beaxy.com/), [Loopring](https://loopring.org/#/), and [OKEx](https://www.okex.com/).
+We completed the [first Hummingbot connector governance trial](../2020-08-exchange-connector-governance/index.md) earlier this month, where we asked the community to vote on which exchange connector to integrate next into Hummingbot.  We had developers submit and propose exchange connectors for [Beaxy](https://beaxy.com/), [Loopring](https://loopring.org/#/), and [OKEx](https://www.okex.com/).
 
 We had overwhelming and unexpected support for the proposals, garnering over 3,700 votes:
 
@@ -45,7 +50,7 @@ Each miner will be able to allocate their votes across the available choices for
 
 #### The next governance vote
 
-In our [previous governance blog](https://hummingbot.io/blog/2020-08-exchange-connector-governance/), we outlined the plan to host a governance vote for each release.  However, as we currently are working to integrate all of the exchanges from governance proposal #1, we will have to postpone the next governance proposal for a later release, after the first 3 have been integrated.
+In our [previous governance blog](../2020-08-exchange-connector-governance/index.md), we outlined the plan to host a governance vote for each release.  However, as we currently are working to integrate all of the exchanges from governance proposal #1, we will have to postpone the next governance proposal for a later release, after the first 3 have been integrated.
 
 In the meantime, if you have developed an exchange that you would like included in a future governance vote, we encourage you to submit a pull request to the Hummingbot codebase and reach out to us at [governance@hummingbot.io](mailto:governance@hummingbot.io) to discuss.
 

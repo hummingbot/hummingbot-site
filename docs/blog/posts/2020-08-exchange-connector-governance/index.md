@@ -1,18 +1,22 @@
 ---
-title: "Hummingbot connector governance"
-author: "Michael Feng"
-description: "Vote for the next exchange that we integrate into the open source Hummingbot codebase!"
 date: 2020-08-17
-image: "./cover.webp"
-tags: [ "hummingbot", "announcement", "governance" ]
-featured: false
+authors:
+  - mike
+categories:
+   - Announcements
+   - Governance
+   - Hummingbot
 ---
+
+# Exchange Connector Governance
+
+![cover](cover.webp)
 
 At Hummingbot, our mission is to make algorithmic trading accessible to anyone in the world. That’s why we built an open source framework that allows anyone to run trading bots on any exchange. This prevents both individual traders and funds from having to build and maintain low-level exchanges integrations from scratch, so that they can focus on the more enjoyable aspects of algo trading: building good trading strategies and profiting from them!
 
 From the beginning, we’ve always thought of Hummingbot as a shared public framework to which everyone can contribute by creating connectors for the exchanges where they want to trade. Since there are thousands of exchanges with different architectures and products (and even more added every day), a community-led model is the only way that Hummingbot can truly scale and serve the long tail.
 
-Today, Hummingbot supports [11 official exchanges](https://docs.hummingbot.io/exchange-connectors/overview/), but we are also aware of a number of community-built forks for exchanges such as [Loopring](https://loopring.org), [Bitpanda](https://www.bitpanda.com), and [Beaxy](https://beaxy.com). We’re incredibly grateful for these contributions.
+Today, Hummingbot supports [11 official exchanges](../../../exchanges/index.md), but we are also aware of a number of community-built forks for exchanges such as [Loopring](https://loopring.org), [Bitpanda](https://www.bitpanda.com), and [Beaxy](https://beaxy.com). We’re incredibly grateful for these contributions.
 
 <!-- more -->
 
@@ -40,6 +44,5 @@ In order to enable Hummingbot forks to be merged into the main codebase while ma
 * Developers who wish to submit a connector for consideration in the first round of voting should email a Github repository link to dev[at]hummingbot.io by Wednesday August 19.
 * Note that we will make the connector available to the community for testing during the voting process, so build quality may be an important factor in driving votes.
 
----
 
 This is an important first step in letting the community to decide how the Hummingbot codebase evolves. In the future, we’ll announce even more ways that you can get involved!

@@ -1,27 +1,30 @@
 ---
-title: "Top liquidity miner interview featuring Neohowie"
-author: "coinalpha"
-description: ""
 date: 2020-05-27
-image: "./cover.png"
-level: "Beginner"
-tags: ["liquidity mining", "trader interviews"]
-featured: false
+authors:
+  - coinalpha
+categories:
+   - Trader Tips
+   - Liquidity mining
 ---
+
+
+# Top liquidity miner interview featuring Neohowie
+
+![cover](cover.png)
 
 It has been almost three months since we launched Liquidity Mining. We are glad to see many miners join liquidity mining and compete with each other fiercely.  
 
 In this post, we introduce you to Neohowie, who ranked into Weekly Top 10 a few times in the past. He started to dip his toe in crypto in 2015, and has learned a bunch about market making from participating in our liquidity mining program. Let’s dive into his journey! 
 
-***Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.***
+<!-- more -->
+
+**Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.**
 
 ### Can you tell us how you got into crypto trading? 
 
 I first learned about crypto in 2015. At that time, I was a non-believer. It looked like a cyberpunk trading instrument. Then between 2015 and 2017, when I started to look into this a little bit more, I was like “WOW the technology makes a lot of sense”! The decentralization aspect of it and the need for it all make a lot of sense. I think that’s the time more funds are dedicated for Bitcoin trading. 
 
 I’m from the traditional finance industry. What crypto trading allows is a much more sophisticated trading environment. In some sense, it has outmatched traditional finance.  
-
-<!-- more -->
 
 In crypto, you have near instant settlement. You can potentially get rid of a lot of middlemen that are ever-present in the traditional finance world. And also with exchange APIs, now a lot of people can make markets on their own. In traditional equity markets for instance, you cannot make markets on your own. You have no access to the order book, you have to pay for it, but only the big brokers do. But crypto markets are more open, which allows for a lot of new possibilities in terms of trading. That’s how I started to get into learning about the trading aspect of crypto.
 
@@ -113,10 +116,10 @@ For the more seasoned traders, share more insight and trading strategy. Let’s 
 
 ### Learn More
 
-- [Hummingbot Miner app](https://miners.hummingbot.io)
-- [Liquidity mining live training sessions](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
-- [Active campaigns](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-campaign-terms)
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
----
+- [Hummingbot Miner’s app](https://miners.hummingbot.io): current liquidity mining campaigns
+- [Hummingbot Help Center](https://support.hummingbot.io/)
+- [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
+- [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
+- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

@@ -8,9 +8,9 @@ categories:
 
 # Comparing liquidity mining options in DeFi vs. Hummingbot
 
-![](./hummingbot-vs-defi-1.jpg)
+![cover](hummingbot-vs-defi-1.jpg)
 
-The need for liquidity is as constant a theme in the cryptocurrency market as are death and taxes.  However, as we have previously written in other blogs (such as [this one](/blog/2019-11-liquidity-mining/)), the way in which token issuers and exchanges procure market making in the crypto market is broken.  The reliance on high cost, price gouging crypto market makers is just not sustainable or scalable. This led us to propose the [concept of liquidity mining](http://bit.ly/liquiditymining) and launch the [Hummingbot Miners](https://miners.hummingbot.io) platform for decentralized and crowd-sourced market making.
+The need for liquidity is as constant a theme in the cryptocurrency market as are death and taxes.  However, as we have previously written in other blogs (such as [this one](../2019-11-liquidity-mining/index.md), the way in which token issuers and exchanges procure market making in the crypto market is broken.  The reliance on high cost, price gouging crypto market makers is just not sustainable or scalable. This led us to propose the [concept of liquidity mining](http://bit.ly/liquiditymining) and launch the [Hummingbot Miners](https://miners.hummingbot.io) platform for decentralized and crowd-sourced market making.
 
 We have been encouraged to see other projects experiment with community-based liquidity provision, most notably in DeFi with automated market makers (AMM).  Whether it’s called “liquidity mining” or “yield farming”, there has been a surge in activity in DeFi as protocols such as Compound, Synthetix, Balancer, Ampleforth, and Loopring aim to propel wider market adoption by rewarding their communities for providing liquidity.
 
@@ -50,7 +50,7 @@ _**Lack of liquidity can lead to exchange delistings**_: exchanges typically req
 
 In the example above, “providing liquidity” means creating maker / limit orders that add to order book depth.  By adding maker orders to populate an order book, liquidity providers perform the vital function of absorbing taker orders and facilitating trading for other market participants.  Traditionally, providing liquidity, or market making, was predominantly or entirely done by specialized actors: professional market makers, crypto funds, and, in some cases, exchanges themselves.
 
-In our whitepaper [Liquidity Mining](https://hummingbot.io/liquidity-mining.pdf), we coined the term “liquidity mining”, which refers to a crowd-sourced, decentralized alternative to providing liquidity.  Rather than relying on specialized traders, liquidity mining sources liquidity from a network of actors, which may include a token issuer’s own community, other groups of traders such as the Hummingbot community, or, more broadly, members of the general trading/token-holding public.  Since market making is risky and requires the deployment/tying up of assets, liquidity mining needs to provide an incentive mechanism in order to solicit participation.
+In our whitepaper [Liquidity Mining](../../../liquidity-mining.pdf), we coined the term “liquidity mining”, which refers to a crowd-sourced, decentralized alternative to providing liquidity.  Rather than relying on specialized traders, liquidity mining sources liquidity from a network of actors, which may include a token issuer’s own community, other groups of traders such as the Hummingbot community, or, more broadly, members of the general trading/token-holding public.  Since market making is risky and requires the deployment/tying up of assets, liquidity mining needs to provide an incentive mechanism in order to solicit participation.
 
 While Hummingbot liquidity mining focuses on getting decentralized market makers to make markets on central limit order books (i.e., centralized and decentralized exchanges), protocols such as [Uniswap](https://uniswap.exchange), [Balancer](https://balancer.finance), and [Curve](https://curve.fi) also get decentralized liquidity providers to facilitate liquidity by contributing assets for use by automated market makers.
 
@@ -66,12 +66,12 @@ Liquidity mining provides a number of benefits for issuers:
 
 ### History of liquidity mining
 
-Hummingbot coined the term “liquidity mining” in a [whitepaper](https://hummingbot.io/liquidity-mining-whitepaper) that we released in October 2019; similar to the concept of mining for proof of work or proof of stake, in liquidity mining, decentralized actors use their own resources (computing for running market-making bots, token inventory) for market making.  In aggregate, all participants are providing liquidity for specific token issuers and exchanges offering rewards.
+Hummingbot coined the term “liquidity mining” in a [whitepaper](../../../liquidity-mining.pdf) that we released in October 2019; similar to the concept of mining for proof of work or proof of stake, in liquidity mining, decentralized actors use their own resources (computing for running market-making bots, token inventory) for market making.  In aggregate, all participants are providing liquidity for specific token issuers and exchanges offering rewards.
 
 However, prior to this, there had been other experiments with incentivizing communities to provide liquidity:
 * Trading competitions on centralized exchanges like Binance, Huobi, and HitBTC were the predecessor to these.  The competitions typically rewarded users based on volume traded.
 * Synthetic’s Uniswap liquidity incentive campaign in spring 2019
-* Hummingbot’s [ONE Makers liquidity bounty program](https://hummingbot.io/blog/2019-09-does-community-based-market-making-work/) for Harmony Protocol in summer 2019, our "liquidity bounties" pilot for liquidity mining.
+* Hummingbot’s [ONE Makers liquidity bounty program](../2019-09-does-community-based-market-making-work/index.md) for Harmony Protocol in summer 2019, our "liquidity bounties" pilot for liquidity mining.
 
 Subsequently in March 2020, we launched our new Hummingbot Miners platform, our implementation of liquidity mining as we outlined in our whitepaper for which we have already ran campaigns for 8 token issuers.
 
@@ -90,9 +90,11 @@ In this blog, we focus solely on the form of liquidity mining that refers to the
 Uniswap was the first widely adopted automated market maker, though there were other protocols (e.g. Bancor) which had proposed and were working on similar concepts beforehand.  AMMs are simple smart contracts that hold two (in the case of Uniswap) or more (in the case of Balancer) different assets with varying amounts of each.  Anyone can trade with an AMM by sending it some amount of one asset and receiving a certain amount of some other asset.
 
 The mechanics of an AMM is actually quite simple; below is a numerical example of a Uniswap-style contract (for reference, see this [AMM spreadsheet](https://bit.ly/amm-calc)).  We start out with a contract to trade two assets, Asset A and Asset B.  A liquidity provider (or group of liquidity miners in aggregate) have deposited 100 tokens of Asset A and 200 tokens of Asset B.  Uniswap is a “constant product market maker”, which means that the exchange rate used in trading is determined such that the product of the quantities of Asset A and Asset B should be equal before and after any trade.  In this example, the starting product is 20,000:
+
 ![](./amm-1.jpg)
 
 The following table illustrates the impact of a trader that trades Asset B (deposits 1 unit of Asset B into the contract) in exchange for receiving (withdrawing from the contract) some amount of Asset A:
+
 ![](./amm-2.jpg)
 
 The amount of Asset A that the trader receives is simply determined by a mathematical formula:
@@ -127,6 +129,7 @@ Our liquidity mining platform [Hummingbot Miners](https://miners.hummingbot.io) 
 In order to enable this form of liquidity mining, we have developed two main components to our system:
 
 1. **the Hummingbot software client**: an open-source trading bot with tools and trading strategies that allows anyone to act as a market maker.
+
 ![](./Hummingbot.JPG)	
 	
 2. **Liquidity mining infrastructure**: data collection and analysis infrastructure that allows us to track and analyze orders created by liquidity miners in order to administer incentive and rewards mechanisms.

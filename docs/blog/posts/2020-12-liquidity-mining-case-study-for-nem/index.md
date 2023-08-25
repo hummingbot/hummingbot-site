@@ -1,12 +1,14 @@
 ---
-title: "NEM Liquidity Mining Case Study"
-author: "coinalpha"
-description: "With liquidity mining, NEM is able to introduce the project to a broader trader community and motivate individual traders to promote its token liquidity. So far, 142 distinct individuals have participated and earned rewards as of December 15th, 2020. They accounted for as much as 11% of total XEM trading volume on Binance."
 date: 2020-12-17
-image: "./case-study.png"
-tags: ["liquidity mining", "case study"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
 ---
+
+# NEM Liquidity Mining Case Study
+
+![cover](case-study.png)
 
 ## Summary
 
@@ -44,30 +46,28 @@ Below are some of the key metrics of the past one month:
 
 Detailed statistics (November 3th, 2020 to December 15th, 2020) are presented below:
 
-![](/miner-distinct.png)
+![](miner-distinct.png)
 
 
-![](/stacked-oov.png)
+![](stacked-oov.png)
 
 
-![](/stacked-fov.png)
+![](stacked-fov.png)
 
 
-![](/order-volume-filled.png)
+![](order-volume-filled.png)
 
 ## About NEM
 NEM Group supports the development of Symbol from NEM, a trusted and secure enterprise blockchain that smooths business friction, increasing the flow of data and innovation to supercharge the creation, exchange and protection of assets.
 NEM Group comprises three separate entities: NEM Software, NEM Trading, and NEM Ventures. NEM Group shapes the future of blockchain by nurturing a strong and healthy ecosystem that will contribute to the development of blockchain technology for generations to come.
 
 
----
-
 For more information:
 * [Hummingbot Miner’s app](https://miner.hummingbot.io/): current liquidity mining campaigns
 * [NEM liquidity mining quick start guide](https://www.youtube.com/watch?v=7Hc1IciDM7w)
 * [NEM liquidity mining demo](https://www.youtube.com/watch?v=YKt42GOIX_Q)
-* [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
-* [Liquidity mining whitepaper](https://hummingbot.io/liquidity-mining.pdf)
+* [Hummingbot Help Center](https://support.hummingbot.io/)
+* [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
 * [Join the discussion](https://discord.hummingbot.io)
 
 For exchanges and projects that would like to learn more about liquidity mining, please contact us at partnerships@hummingbot.io.

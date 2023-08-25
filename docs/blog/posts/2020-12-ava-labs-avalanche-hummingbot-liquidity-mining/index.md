@@ -1,12 +1,16 @@
 ---
-title: "Launching Ava Labs’s Avalanche liquidity mining campaign"
-author: "coinalpha"
-description: "Launching liquidity mining campaign for AVAX/USDT, AVAX/BTC, AVAX/TRY, and AVAX/BNB on December 8, 2020 12.00am UTC"
 date: 2020-12-03
-image: "./ava-labs.png"
-tags: ["liquidity mining", "announcement"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Liquidity mining
+  - Announcements
 ---
+
+
+# Launching Ava Labs’s Avalanche liquidity mining campaign
+
+![cover](ava-labs.png)
 
 We are thrilled to announce a new 6-month liquidity mining campaign for [Ava Labs’s Avalanche platform](https://www.avalabs.org/) that will start on **December 8, 2020, 12:00 am UTC**. The Avalanche liquidity mining campaign will initially be distributing USDT rewards and will transition to the AVAX token.
 
@@ -17,7 +21,6 @@ In this post, we are going to introduce Avalanche to the Hummingbot community an
 Avalanche is an open-source platform for launching decentralized finance applications and enterprise blockchain deployments in one interoperable, highly scalable ecosystem. It is the first smart contracts platform that confirms transactions in under one second, supports the entirety of the Ethereum development toolkit, and enables millions of independent validators to participate as full block producers.
 
 Led by Professor Emin Gün Sirer, creator of the first coin minted through proof-of-work in 2003, and supported by pioneering researchers from Cornell University, Avalanche is built on the third major breakthrough in distributed systems, and first since the Bitcoin whitepaper in 2008.
-
 
 <!-- more -->
 
@@ -65,27 +68,22 @@ The Avalanche liquidity mining campaign rewards participants for placing maker o
 
 - Exchange: binance.com
 
----
 
-*For full terms of the campaign, please see [liquidity mining campaign terms](https://docs.hummingbot.io/intro/liquidity-mining/).
+For full terms of the campaign, please see [liquidity mining campaign terms](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns).
 
 To learn more about liquidity mining, see below:
 
 - [Hummingbot Miner’s app](https://miner.hummingbot.io): current liquidity mining campaigns
 
-- [Hummingbot Academy](https://hummingbot.io/academy/)
-
 - [Liquidity mining basic training video](https://www.youtube.com/watch?v=QksultmszQM)
 
 - [Liquidity mining advanced training video](https://www.youtube.com/watch?v=0I-M_k0mVf8)
 
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
+- [Hummingbot Help Center](https://support.hummingbot.io/)
 
-- [Getting started](https://hummingbot.io/academy/quickstart/) with Hummingbot
+- [Getting started](../../../quickstart/index.md) with Hummingbot
 
 - [Hummingbot discord community](https://discord.hummingbot.io/)
-
----
 
 ### Important notes and disclaimers
 

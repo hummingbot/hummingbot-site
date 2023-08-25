@@ -1,12 +1,16 @@
 ---
-title: "Solana liquidity mining campaign going live on May 26, 2020!"
-author: "Carlo P. Las Marias"
-description: ""
 date: 2020-05-13
-image: "./cover.png"
-tags: ["liquidity mining", "announcement"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Announcements
+   - Liquidity mining
 ---
+
+# Solana liquidity mining campaign going live on May 26, 2020!
+
+![cover](cover.png)
+
 
 The Hummingbot and Solana teams have been preparing for the launch of a liquidity mining campaign, in which our communities will be able to participate in contributing liquidity for the SOL tokens and earn token rewards.
 
@@ -20,7 +24,7 @@ In this blog, we wanted to introduce the Solana project to our community and als
 
 ### Campaign Terms
 
-The Solana campaign will be starting on May 26, 2020 12.00am UTC and offer total rewards of USDC 7,500 over 12 weeks.  The eligible token pairs will be SOL/BTC, SOL/BUSD, and SOL/BNB.  For full terms of the campaign, please see [liquidity mining campaign terms](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-campaign-terms).
+The Solana campaign will be starting on May 26, 2020 12.00am UTC and offer total rewards of USDC 7,500 over 12 weeks.  The eligible token pairs will be SOL/BTC, SOL/BUSD, and SOL/BNB.  For full terms of the campaign, please see [liquidity mining campaign terms](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns).
 
 ### Hummingbot and Solana Partnership
 
@@ -42,27 +46,23 @@ Liquidity mining also creates the opportunity for users interested in learning m
 
 For more about liquidity mining, see below:
 - [Hummingbot Miner’s app](https://miners.hummingbot.io): current liquidity mining campaigns
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
+- [Hummingbot Help Center](https://support.hummingbot.io/)
 - [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
-- [Liquidity mining whitepaper](https://bit.ly/liquiditymining)
-- [Getting started](https://hummingbot.io/academy/quickstart/)
+- [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
+- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
 
 
 #### Liquidity mining is open to everyone¹
 
 Even novice traders or non-technical users can simply download Hummingbot, which is free and easy to use market making software, configure trading parameters to begin market-making and earn liquidity mining rewards within a few minutes.  Hummingbot is the first open-source, algorithmic trading bot that was designed to be easy enough to allow anyone to become a market maker or quant trader; no programming required.
 
-- [Learn more about Hummingbot](https://hummingbot.io)
-
-
-
----
+- [Learn more about Hummingbot](https://docs.hummingbot.org)
 
 ### Important notes and disclaimers
 
-Please review the [Liquidity Mining Policy](/liquidity-mining-policy/) for the full disclaimer, including policies related to the use of Hummingbot.
+Please review the [Liquidity Mining Policy](https://coinalpha.com/liquidity-mining-policy) for the full disclaimer, including policies related to the use of Hummingbot.
 
 The content of this Site does not constitute investment, financial, legal, or tax advice: none of the information contained on this Site constitutes a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service.
 
-1. **Eligibility requirements**: participation in liquidity mining is subject to eligibility requirements as specified in the [liquidity mining policy](https://hummingbot.io/liquidity-mining-policy/).
+1. **Eligibility requirements**: participation in liquidity mining is subject to eligibility requirements as specified in the [liquidity mining policy](https://coinalpha.com/liquidity-mining-policy).
 2. **No guarantee of profit**: CoinAlpha does not claim that liquidity mining and participation in liquidity mining campaigns will be profitable, however measured, for the user.  Liquidity mining returns are a measure of rewards compared to assets used for liquidity mining, excluding any gains or losses incurred from the underlying trading strategy.

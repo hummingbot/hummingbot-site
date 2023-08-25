@@ -1,23 +1,26 @@
 ---
-title: "Case study: Zilliqa liquidity mining campaign"
-author: "Carlo P. Las Marias"
-description: "With liquidity mining, Zilliqa was able to solely rely on the group of individual liquidity miners to promote liquidity."
 date: 2020-06-26
-image: "./cover.png"
-tags: ["case study", "liquidity mining"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Liquidity mining
 ---
+
+# Case study: Zilliqa liquidity mining campaign
+
+![cover](cover.png)
 
 ### Summary
 
 Over the past few weeks, we have seen remarkable outperformance in Zilliqa tokens as the company has delivered on several platform initiatives (see the recent [Zilliqa May 2020 newsletter](https://blog.zilliqa.com/zilliqa-monthly-newsletter-may-2020-83a694add9ae)) and has continued to grow its global community.  In addition, Zilliqa has recently announced that it has entered into [staking partnerships](https://blog.zilliqa.com/zilliqa-set-to-introduce-staking-on-the-mainnet-soon-promises-added-value-and-efficiency-to-its-f2f80e38eacb) with KuCoin and Binance, and Binance is now supporting margin trading for ZIL tokens.
 
 The token has materially outperformed even against the backdrop of the bullish overall crypto market. We've also seen resurgent interest in the trading of ZIL tokens, with daily traded volume consistently reaching tens of millions over the past few weeks:
+
+<!-- more -->
+
 ![](price.png)
 
 With liquidity mining, Zilliqa was able to solely rely on the group of individual liquidity miners to promote liquidity without spending large amounts (fees and token inventory) on professional services provided by market making firms. So far during the 3-month liquidity mining campaign period, **307 distinct liquidity miners participated and earned rewards**. **They were accounting for as much as 10-20% of total ZIL trading volume on Binance from March to April**, and as much as 30-60% for the less liquid trading pairs (ZILETH and ZILBNB). This result was considered successful by both of the Hummingbot and Zilliqa communities. 
-
-<!-- more -->
 
 ### Trading community engagement: an important component of community engagement
 
@@ -49,6 +52,7 @@ Below are some of the key metrics throughout the course of the Zilliqa campaign:
 - Estimated capital deployed: approximately $5,000 - 10,000 of inventory
 - Traded volume over 3 months: $4.7 million
 - Number of trades: 66,425
+
 ![](topminer.jpeg)
 
 *More detailed statistics presented at the end of this post.*
@@ -80,8 +84,9 @@ While it’s bittersweet for us that their campaign will be ending, we are very 
 ---
 For more information:
 - [Hummingbot Miner’s app](https://miners.hummingbot.io): current liquidity mining campaigns
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
-- [Liquidity mining whitepaper](https://bit.ly/liquiditymining)
-- [Join the discussion](https://discord.hummingbot.io)
+- [Hummingbot Help Center](https://support.hummingbot.io/)
+- [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
+- [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
+- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
 
 For exchanges and projects that would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

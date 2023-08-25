@@ -1,28 +1,31 @@
 ---
-title: "Top liquidity miner interview featuring Vik"
-author: "coinalpha"
-description: ""
 date: 2020-07-27
-image: "./cover.png"
-level: "Beginner"
-tags: ["trader interviews", "liquidity mining"]
-featured: false
+authors:
+  - coinalpha
+categories:
+   - Trader Tips
+   - Liquidity mining
+   - Hummingbot
 ---
+
+
+# Top liquidity miner interview featuring Vik
+
+![cover](cover.png)
 
 It has been over four months since we launched Liquidity Mining. As we bring more token projects to the platform, we saw more and more miners join liquidity mining and compete for rewards. In this post, we introduce one of our top liquidity miners, Vik, to you. Hope you can learn something from her!
 
-![](./User_profile.png)
+![](User_profile.png)
 
 Vik bought her first Bitcoin at the top of the market in December 2017, but she lost almost everything in the next year. However, she learned from this experience and kept experimenting with different trading strategies until she found liquidity mining. **With liquidity mining, her current monthly return is around 5-7%.**
 
-***Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.***
+<!-- more -->
+
+**Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.**
 
 ### Can you tell us a little bit about your background?
 
 I am a microelectronic engineer by education. But after graduation, I changed my area of expertise to 3D computer graphics and started my own project within which we made 3D models and extensions for Autodesk 3Ds Max software. I’ve also always been passionate about code, data, and trading so even though I’ve been on the project for over 10 years, I’ve found myself really happy when I do development and trading. So now I’m changing my path again and I’m at a crossroad because I am eager to go for everything from cryptocurrencies and algorithmic trading to Machine Learning and AI.
-
-<!-- more -->
-
 
 ### When did you start investing in crypto?
 
@@ -82,25 +85,20 @@ Evaluation of results is one of the most important things in many areas. I need 
 
 Learn how to code. Python is fairly easy to start and has a huge library of modules. The code I have shared is very simple, just a few lines but it gives you great help in your daily trading. You can always delegate heavy development, but if you can write simple scripts to extend Hummingbot, or understand and edit someone's code you have a lot more power.
 
----
-
 ### Vik's Trade Performance Analyzer
 
 Vik created this [Google CoLab notebook](https://colab.research.google.com/drive/1dwIXHirrgodGLoR5pcNJXvXxiyfKVu5W?usp=sharing) to help other users in the Hummingbot comunity evaluate trading performance.
 
 #### How to use: 
 
-<p>
-<code>
-1. Open the Colab file <br />
-2. Save a copy to your account (login to your google account if needed): File -> Save a copy in Drive <br />
-3. Make changes to your saved copy only (To avoid mistakes close the tab with the shared version) <br />
-4. Check that your notebook is not visible to anyone: Find Share button at the top right -> Restricted (Only people added can open with this link) <br />
-5. Change API_key, API_secret to yours. Use read-only keys <br />
-6. Change market and dates to the one you need <br />
+1. Open the Colab file 
+2. Save a copy to your account (login to your google account if needed): File -> Save a copy in Drive 
+3. Make changes to your saved copy only (To avoid mistakes close the tab with the shared version) 
+4. Check that your notebook is not visible to anyone: Find Share button at the top right -> Restricted (Only people added can open with this link) 
+5. Change API_key, API_secret to yours. Use read-only keys 
+6. Change market and dates to the one you need 
 7. Run the code: Runtime -> Run all (or Ctrl + F9) 
-</code>    
-</p>
+
 
 #### Benefit
 
@@ -112,9 +110,10 @@ The performance greatly depends on the end period prices, and in the crypto spac
 
 ### Learn More
 
-- [Hummingbot Miner app](https://miners.hummingbot.io)
-- [Active campaigns](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-campaign-terms)
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
----
+- [Hummingbot Miner’s app](https://miners.hummingbot.io): current liquidity mining campaigns
+- [Hummingbot Help Center](https://support.hummingbot.io/)
+- [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
+- [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
+- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

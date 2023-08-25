@@ -1,17 +1,20 @@
 ---
-title: "Extracting the best value from your Hummingbot - Price Source Configurations"
-author: "coinalpha"
-description: ""
 date: 2020-11-25
-image: "./pricesource.jpg"
-level: "Experienced"
-tags: ["hummingbot", "configuration", "trading concepts"]
-featured: false
+authors:
+  - coinalpha
+categories:
+  - Hummingbot
+  - Guides
 ---
+
+
+# Extracting the best value from your Hummingbot - Price Source Configurations
+
+![cover](pricesource.jpg)
 
 Welcome back to the series of articles where you will learn how to make the best use of your Hummingbot configurations.
 
-In the two latest articles ([Commands part 1](https://hummingbot.io/blog/2020-11-commands-and-configs-part1/) and [Commands part 2](https://hummingbot.io/blog/2020-11-commands-and-configs-part2/)), we went through all the commands you can use on your client terminal and the global configurations.
+In the two latest articles ([Commands part 1](../2020-11-commands-and-configs-part1/index.md) and [Commands part 2](../2020-11-commands-and-configs-part2/index.md)), we went through all the commands you can use on your client terminal and the global configurations.
 
 Today we will talk about the configuration settings related to the markets and the price information, and how you can use them for your benefit.
 
@@ -55,7 +58,8 @@ It is like a big sea, where each exchange is an island with its own population, 
 
 #### Price information travels, and arbitrageurs are the ships
 
-As we already know, the inefficiencies caused by the highly fragmented cryptocurrency market create a lot of opportunities for arbitrageurs, who can take advantage of the price discrepancies between all the markets. (You can set up your own arbitrage bot with Hummingbot too, and learn more about how arbitrage works:  [What is arbitrage?](https://hummingbot.io/blog/2020-09-what-is-arbitrage/))
+As we already know, the inefficiencies caused by the highly fragmented cryptocurrency market create a lot of opportunities for arbitrageurs, who can take advantage of the price discrepancies between all the markets. You can set up your own arbitrage bot with Hummingbot too, and learn more about how arbitrage works:  [What is arbitrage?](../2020-09-what-is-arbitrage/index.md)
+
 
 But what makes the arbitrage operations interesting regarding this current discussion is that they are the main actors that reconcile the price differences between all these different markets.
 
@@ -95,7 +99,6 @@ The configuration instructions below guide you on how to set a different price s
 
 With `config price_type` you can set the reference price that will be used to calculate your bid and ask offer.
 
----
 
 The price value of the bid and ask offer created by Hummingbot uses the following formula: 
 
@@ -103,7 +106,6 @@ Bid price = (price_reference - price_reference * bid_spread)
 
 Ask price = (price_reference + price_reference * ask_spread)
 
----
 
 There are 5 options to choose:
 
@@ -176,7 +178,6 @@ But these exchanges are way more connected via the accessibility that this assor
 
 Because of that (and how advanced the information technology is), the information will propagate between them, and all we have to do is to know what to look for and where to look at...
 
----
 
 ### Join our community!
 

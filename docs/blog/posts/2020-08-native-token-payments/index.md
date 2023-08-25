@@ -1,12 +1,15 @@
 ---
-title: "Introducing native token liquidity mining rewards!"
-author: "Carlo P. Las Marias"
-description: "iExec will now be paying out rewards in RLC tokens, ERC20 rewards now supported, non-Ethereum rewards coming soon"
 date: 2020-08-15
-image: "./cover.png"
-tags: ["liquidity mining", "announcement"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Announcements
+   - Liquidity mining
 ---
+
+# Introducing native token liquidity mining rewards!
+
+![cover](cover.png)
 
 **Announcing a new milestone for the Hummingbot Liquidity Mining platform: the ability to pay out liquidity mining rewards in native tokens!**
 
@@ -15,10 +18,11 @@ We have implemented, tested, and are now rolling out this new feature for liquid
 For campaigns paying out in native tokens, participating liquidity miners will earn rewards in the same way as they were previously (i.e.  rewards earned for each minute snapshot, weighted by their spread and order sizes); however, instead of USDC, rewards allocations will be denominated in and paid out in the native token.  Reward pools will be based on a fixed amount of native tokens for each reward period.
 
 The inaugural campaign paying out rewards in native tokens is the iExec liquidity mining campaign. For the period starting Tuesday, August 18 12.00am UTC, liquidity miners participating in iExec’s campaign will start earning rewards in RLC. The weekly rewards available for the RLC campaign will be as follows:
-![](./rlc-table.png)
-
 
 <!-- more -->
+
+![](./rlc-table.png)
+
 
 When you click on a market in the miner’s app, you will now see the following:
 
@@ -55,7 +59,6 @@ Development is currently underway and we are in the process of testing out our r
 
 Stay tuned, announcement coming soon!
 
----
 
 #### Additional Information
 

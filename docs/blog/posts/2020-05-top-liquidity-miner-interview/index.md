@@ -1,25 +1,28 @@
 ---
-title: "Top liquidity miner interview featuring Lorenzo Boyice"
-author: "coinalpha"
-description: ""
 date: 2020-05-07
-image: "./cover.png"
-level: "Beginner"
-tags: ["liquidity mining", "trader interviews"]
-featured: false
+authors:
+  - carlo
+categories:
+   - Trader Tips
+   - Liquidity mining
 ---
+
+
+# Top liquidity miner interview featuring Lorenzo Boyice
+
+![cover](cover.png)
 
 It has been just over two months since we launched Liquidity Mining. With heated competition, miners have been working very hard to rank higher on our leaderboard! And we saw more miners join this game and invest larger quantities of assets. 
 
 In this post, we introduce you to Lorenzo Boyice, fairly new to our community but already ranked into Weekly Top 10 for the past few weeks consecutively. In 2010, he once paid 21 Bitcoin ransom to hackers who locked down his computer files. Now he is a software engineer by trade and started investing in crypto in late 2018/early 2019. With liquidity mining, his current monthly return is around 3-5%.
 
-***Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.***
+<!-- more -->
+
+**Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.**
 
 ### Can you tell us a little bit about your background?
 
 I received my bachelor’s degree of computer science from the University of Missouri, Columbia where I developed a pretty solid foundation. After I graduated, I started to work in the (tech) industry in Kansas City at a company called Garmin. It was really interesting because when I first started working there, I was working in their aviation department. I had no idea that Garmin developed software for pilots in planes. I got some industry experience, after a while, I came across a great job opportunity at Google. So I have been a software developer at Google for about 3 years now. 
-
-<!-- more -->
 
 
 ### Did you hear about hummingbot first or liquidity mining first? How did you hear about it?
@@ -33,6 +36,7 @@ As far as a timeline, I didn’t actually hear about this until a month ago. Hum
 I’ll tell you a quick little story. It was quite interesting. This was 2011, I was in high school. I got this virus on my computer. All my files were locked down. At the time I produced music and this brought everything to a halt. Basically this was a scam, extortion type of scenario. In order to unlock my music, they asked me to pay 21 Bitcoin (that's worth about USD188K today). I was like… what the f@!$ is a Bitcoin. I started to research it in 2011 but just couldn’t understand it so I paid the ransom and they gave me my files back. I didn’t really think about it after that.
 
 ![](bitcoin.jpeg)
+
 But then as I grew older, my interest in the technology grew, and I revisited this idea again in early 2018. The topic came up and some told me “...but don’t start mining Bitcoin”. What did I do? A year later I ended up buying a few ASICs. Very stubborn. But after that conversation I started to dig into Bitcoin and cryptocurrency, and read a lot of articles. I wanted to be a part of the ecosystem end to end. My first introduction was getting into ASIC mining. I mined BTC, Bytom, Dash and a few other altcoins. And that’s when I really started to understand how exchanges work and I began trying to trade crypto on a few of them.
 
 ### How has your experience been so far with hummingbot?
@@ -97,10 +101,10 @@ I don’t if it can apply to everyone, but for one, something that has been hold
 
 ### Learn More
 
-- [Hummingbot Miner app](https://miners.hummingbot.io)
-- [Liquidity mining live training sessions](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
-- [Active campaigns](https://docs.hummingbot.io/miner/liquidity-mining/current-rewards&terms/#current-campaign-terms)
-- [Hummingbot Help Center](https://hummingbot.zendesk.com/hc/en-us)
----
+- [Hummingbot Miner’s app](https://miners.hummingbot.io): current liquidity mining campaigns
+- [Hummingbot Help Center](https://support.hummingbot.io/)
+- [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
+- [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
+- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

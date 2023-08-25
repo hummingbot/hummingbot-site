@@ -1,14 +1,15 @@
 ---
-title: "What is market making?"
-author: "coinalpha"
-description: "The importance of market making is to create and maintain a healthy market environment."
 date: 2020-09-03
-image: "./cover.png"
-level: "Beginner"
-tags: ["market making", "trading concepts"]
-featured: false
-rank: 4
+authors:
+  - coinalpha
+categories:
+   - Market making
+   - Trader Tips
 ---
+
+# What is market making?
+
+![cover](cover.png)
 
 ## Welcome to Hummingbot Academy!
 
@@ -21,8 +22,7 @@ If you reached this page, there is a high probability that you have been asking 
 
 Then you are on the right place!
 
-Here at [Hummingbot](https://hummingbot.io/) Academy, our goal is to help you learn more about market making and how to use our [free open-source robot](https://hummingbot.io/download/) to implement your own strategy.
-
+Here at [Hummingbot](https://hummingbot.org/) Academy, our goal is to help you learn more about market making and how to use our free open-source robot to implement your own strategy.
 
 <!-- more -->
 
@@ -136,18 +136,18 @@ A good **market making strategy** is nothing more than planning ahead on how you
 
 But before you get scared with all of these questions and give up on market making, here is a tip: 
 
-> 💡 **Start Small.**<br /> Don't try to have all the answers to your strategy beforehand, but focus on one parameter at a time, testing and watching what happens in different market situations.
+> 💡 **Start Small.** Don't try to have all the answers to your strategy beforehand, but focus on one parameter at a time, testing and watching what happens in different market situations.
 Over time, add another parameter and do more testing and watch how all the pieces are working together.
 
 You are not going to find a cookie cutter, ready-to-use, one-size-fits-all and always profitable strategy/parameters just simply lying around, but after some time, you will start to understand the good and the bad of each **strategy**, and after experimenting with some of them will find one that fits your goals.
 
-> 🐦 On Hummingbot, you can combine different settings in different ways using the `config` command to build a wide variety of strategies. Check out the [pure market making reference guide](https://docs.hummingbot.io/strategies/pure-market-making/) to see what each parameter is used for.
+> 🐦 On Hummingbot, you can combine different settings in different ways using the `config` command to build a wide variety of strategies. Check out the [pure market making reference guide](https://docs.hummingbot.org/strategies/pure-market-making/) to see what each parameter is used for.
 
 ### Automated trading and market making
 
 So, trading robots... That is probably another reason why you are reading this article; you are not just looking to become a **market maker**, you are looking to setup a **market making robot** to do all of the hard work.
 
-After all, [Hummingbot](https://hummingbot.io/) is an **open-source trading robot**, available for **free** to anyone who wants to start an **automated trading strategy**.
+After all, [Hummingbot](https://hummingbot.org/) is an **open-source trading robot**, available for **free** to anyone who wants to start an **automated trading strategy**.
 
 While it is possible to do **market making** operations manually, a **trading robot** allows your strategy to be executed in a precise way, remove the emotional factor (greed and fear), and even create safety measures for better risk control.
 
@@ -155,7 +155,7 @@ But not all robots are made equal, and depending on what kind of strategy you ar
 
 After all, a trading robot is a tool and we must use the right tool for the job.
 
-[Hummingbot](https://hummingbot.io/) is a great choice for algorithmic **market making** for the **cryptocurrency** markets because it is **focused** on this kind of trading operation.
+[Hummingbot](https://hummingbot.org/) is a great choice for algorithmic **market making** for the **cryptocurrency** markets because it is **focused** on this kind of trading operation.
 
 But no matter what robot you choose to use, it's always important to remember:
 

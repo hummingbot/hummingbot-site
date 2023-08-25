@@ -1,26 +1,26 @@
 ---
-title: "Extracting the best value from Hummingbot - Commands part 1"
-author: "coinalpha"
-description: ""
 date: 2020-11-11
-image: "./commands-and-configs-1.jpg"
-level: "Beginner"
-tags: ["configuration", "risk management", "hummingbot"]
-featured: false
-rank: 4
+authors:
+  - coinalpha
+categories:
+  - Hummingbot
+  - Guides
 ---
+
+
+# Extracting the best value from Hummingbot - Commands part 1
+
+![cover](commands-and-configs-1.jpg)
 
 ### Welcome back to the Hummingbot Academy!
 
 Through the resources available here on the Academy, you have already learned:
 
-- [What is market making](https://hummingbot.io/blog/2020-09-what-is-market-making/)
+- [What is market making](../2020-09-what-is-market-making/index.md)
 
-- [How to install Humminbot](https://hummingbot.io/academy/quickstart/install)
+- [How to install Humminbot](../../../quickstart/index.md)
 
-- [How to configure a market making bot](https://hummingbot.io/academy/quickstart/configure/)
-
-- [How to run your bot in live or paper trading mode](https://hummingbot.io/academy/quickstart/run-bot/)
+<!-- more -->
 
 Starting to use **Hummingbot** can be daunting at first, and you might feel a bit overwhelmed by the CLI interface or by the amount of information options available to you.
 
@@ -84,7 +84,7 @@ To create a connection to an exchange (if you haven’t already), you can type `
 
 After that, Hummingbot will ask you to input your **exchange API keys**.
 
-Each exchange will have its own way to create these keys. If you don’t know how to create them, we have [a guide for each supported exchange on our documentation page](https://docs.hummingbot.io/exchange-connectors/overview/).
+Each exchange will have its own way to create these keys. If you don’t know how to create them, we have [a guide for each supported exchange on our documentation page](../../../exchanges/index.md).
 
 If you are using a decentralized exchange on the Ethereum blockchain, the `connect ethereum` command will allow you to add your wallet private keys, so the bot will be able to interact with the protocol.
 
@@ -98,11 +98,11 @@ Exchanges connections are handled by the part of the Hummingbot code that we cal
 
 But Hummingbot is constantly evolving, and our team is continually working on adding more **connectors** to our official release.
 
-As an [open-source project](https://github.com/CoinAlpha/hummingbot), anyone in our community can contribute to building new **connectors**. Our team is always willing to help any developer who wants to help improve Hummingbot. You can always find us on our [Discord server](https://discord.com/invite/2MN3UWg).
+As an [open-source project](https://github.com/hummingbot/hummingbot), anyone in our community can contribute to building new **connectors**. Our team is always willing to help any developer who wants to help improve Hummingbot. You can always find us on our [Discord server](https://discord.com/invite/2MN3UWg).
 
-But if you aren’t a developer, you can instead [create a request on our Github repo](https://github.com/CoinAlpha/hummingbot/issues?q=is%3Aopen+is%3Aissue+label%3Aconnector), asking for your favorite exchange to be added- or look for help from our community developers also on our [Discord server](https://discord.com/invite/2MN3UWg).
+But if you aren’t a developer, you can instead [create a request on our Github repo](https://github.com/hummingbot/hummingbot/issues?q=is%3Aopen+is%3Aissue+label%3Aconnector), asking for your favorite exchange to be added- or look for help from our community developers also on our [Discord server](https://discord.com/invite/2MN3UWg).
 
-We are also working on giving more power to our community.  We recently completed our [second governance vote](https://hummingbot.io/blog/2020-10-governance-proposal-2/), which allowed our liquidity miners to vote for the next connector to be officially supported and included in the next release.
+We are also working on giving more power to our community.  We recently completed our [second governance vote](../2020-10-governance-proposal-2/index.md), which allowed our liquidity miners to vote for the next connector to be officially supported and included in the next release.
 
 **create & import**
 
@@ -112,13 +112,12 @@ Entering the `create` command to initiate, then you will be asked to specify wha
 
 ![](./img4.png)
 
----
 
 `arbitrage`
 
 This strategy is about connecting two exchanges and taking advantage of the different prices of an asset between them.
 
-You can learn more about it reading the article [What is arbitrage?](https://hummingbot.io/blog/2020-09-what-is-arbitrage/)
+You can learn more about it reading the article [What is arbitrage?](../2020-09-what-is-arbitrage/index.md)
 
 `celo_arb`
 
@@ -126,13 +125,13 @@ With this strategy you can execute arbitrage operations between the [Celo blockc
 
 Besides the profit opportunity from the arbitrage, using this strategy also functions as a way to help keep the cUSD price close to 1 USD.
 
-You can learn more about how this strategy works on the [blog announcement](https://hummingbot.io/blog/2020-06-celo-arbitrage/) and on the [quickstart guide](https://hummingbot.io/academy/celo-arb/).
+You can learn more about how this strategy works on the [blog announcement](../2020-06-celo-arbitrage/index.md) and on the [quickstart guide](../2020-06-celo-arbitrage/index.md).
 
 `cross_exchange_market_making`
 
 This strategy is a combination of market making and arbitrage, where make markets on an exchange with typically lower liquidity and hedge with corresponding trades at better prices on another higher liquidity exchange.  This strategy is also known as “liquidity mirroring”.
 
-You can learn more about how this strategy works by reading the What is [Cross-exchange market making?](https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/) article.
+You can learn more about how this strategy works by reading the What is [Cross-exchange market making?](../2020-09-what-is-cross-exchange-market-making/index.md) article.
 
 `pure_market_making`
 
@@ -140,9 +139,7 @@ With this strategy, you will execute market making operations using only one exc
 
 This is the standard market making strategy, and Hummingbot offers a lot of ways for you to customize how you want your bot to operate.
 
-But if you still have some questions about market making and how it works, you can learn more about the it’s fundamentals by reading [What is market making?](https://hummingbot.io/blog/2020-09-what-is-market-making/) Article.
-
----
+But if you still have some questions about market making and how it works, you can learn more about the it’s fundamentals by reading [What is market making?](../2020-09-what-is-market-making/index.md) Article.
 
 After choosing your strategy, you will be asked to enter some basic parameters for your bot. 
 
@@ -214,7 +211,7 @@ For example, if you have 1 BTC on binance, but want to use only 0.5 BTC to marke
 
 The limit configuration will be saved on the `global_conf.yml` file, therefore any bot instance using the same global configuration file will share the limit.
 
-If you installed Hummingbot on [Windows](https://docs.hummingbot.io/installation/windows/#install-from-binary) or [Mac](https://docs.hummingbot.io/installation/mac/#install-from-binary) using the binary installation, running two instances will use the same `global_conf.yml` file. A way to work around this is to install a second copy of Hummingbot in a different directory.
+If you installed Hummingbot on [Windows](../../../installation/windows.md) or [Mac](../../../installation/mac.md) using the binary installation, running two instances will use the same `global_conf.yml` file. A way to work around this is to install a second copy of Hummingbot in a different directory.
 
 Installing via Docker on Windows, Mac or Linux presents the opposite situation, since each docker instance will have its own configuration files, and if you want to use the same global configuration, you will have to copy the files from one paste to another.
 
