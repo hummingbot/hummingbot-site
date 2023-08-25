@@ -220,10 +220,11 @@ nav:
       - Strategies: strategies/index.md
       - V2 Strategies 🔥:
         - V2 Strategies: v2-strategies/index.md
-        - Candles: v2-strategies/candles.md
-        - Smart Components: v2-strategies/smart-components.md
+        - Candles: v2-strategies/candles-feed.md
         - Executors: v2-strategies/executors.md
         - Controllers: v2-strategies/controllers.md
+        - Executor Handlers: v2-strategies/executor-handler.md
+        - Backtesting Engine: v2-strategies/backtest.md
       - V1 Strategies:
         - V1 Strategies: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
@@ -323,7 +324,10 @@ nav:
       - API Reference: gateway/api-reference.md
     - Dashboard 🔥:
       - Dashboard: dashboard/index.md
-      - Broker: installation/orchestration.md
+      - Bot Orchestration: dashboard/orchestration.md
+      - Backtest Manager: dashboard/backtest.md
+      - Broker Module: installation/orchestration.md
+      - Community Pages: dashboard/community.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md

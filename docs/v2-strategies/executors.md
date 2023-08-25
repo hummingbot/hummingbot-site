@@ -1,28 +1,10 @@
-## Introduction to Smart Components
+## What are Executors?
 
-[Smart Components](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/smart_components) are tools you can use to create automatic, standalone logic for any Script.
+Coming soon.
 
-### The Basics of SmartComponentBase
+## Executor Types
 
-`SmartComponentBase` is a base class you can use to build smart components that interact with the market in your own way. It helps manage trades and react to market events.
-
-Here are some key points about the `SmartComponentBase` class:
-
-- **Initialization**: When an instance of the class is created, it takes in a strategy, a list of connectors, and an optional update interval. The strategy is an instance of `ScriptStrategyBase` and it dictates the overall trading strategy of the bot. The connectors are names of the exchanges or markets the bot will operate in. The update interval is a float value that determines how often the control loop of the component updates (default is 0.5 seconds). 
-
-- **Event Forwarders**: The class uses `SourceInfoEventForwarder` objects to process various types of events related to trading, such as orders being created, filled, canceled, completed, or failed. These forwarders are used to handle events generated from the different markets the bot is operating in.
-
-- **Control Loop**: The class contains a control loop (a coroutine named `control_loop`) that is started when an instance is created. This loop continues running until it's terminated and while it's running, it calls the `control_task` method at the update interval defined during initialization. The control loop changes the status of the component and calls `on_start` and `on_stop` methods when it starts and stops respectively.
-
-- **Market Interactions**: The class has methods to interact with the markets, such as placing an order (`place_order`), getting the price of a trading pair (`get_price`), retrieving the order book (`get_order_book`), checking the balance of an asset (`get_balance`), getting available balance (`get_available_balance`), and getting active orders (`get_active_orders`).
-
-- **Event Processing**: There are also methods to process different types of events that the forwarders handle. These are `process_order_completed_event`, `process_order_created_event`, `process_order_canceled_event`, `process_order_filled_event`, and `process_order_failed_event`. These methods are currently not implemented in the base class and are expected to be implemented in a subclass.
-
-This class is designed to be subclassed, with subclasses providing specific implementations for things like the `control_task` method and the event processing methods. It's a key component of the Hummingbot library, providing a foundation for creating sophisticated, automated trading strategies.
-
-## Position Executor
-
-The first Smart Component is the [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/position_executor/position_executor.py), part of the Directional Framework introduced in version [1.13.0](/release-notes/1.13.0/#directional-framework) that combines this feature along with [Candles Feed](./candles-feed.md) to let users create TA-based strategies.
+### Position Executor
 
 This component receives as input the strategy and `PositionConfig`, a new data type that includes the information needed to start a directional position on a perpetuals exchange that utilizes the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html) popularized in [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
 
@@ -32,7 +14,7 @@ Watch this recording from a recent [community call](/#community-calls) to learn 
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/X63rACPjtUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Class Initializer
+#### Class Initializer
 
 The `PositionExecutor` class inherits from `SmartComponentBase`, which provides basic functionalities for interacting with exchanges.
 
@@ -45,7 +27,7 @@ The class initializer checks if at least one of the `take_profit`, `stop_loss`, 
 
 It also initializes several instance variables related to order tracking.
 
-### Class Properties
+#### Class Properties
 
 The `PositionExecutor` class includes many properties that return important information about the current trade. Some of these properties include:
 
@@ -77,7 +59,7 @@ The `PositionExecutor` class includes many properties that return important info
 - `close_order`: The close order.
 - `take_profit_order`: The take profit order.
 
-### Instance Methods
+#### Instance Methods
 
 `PositionExecutor` class includes several instance methods to control and monitor the trading position:
 
@@ -112,3 +94,31 @@ The `PositionExecutor` class includes many properties that return important info
 - `adjust_order_candidate`: Adjusts the order candidate.
 
 Overall, `PositionExecutor` is a sophisticated class for managing trading positions in the Hummingbot library. It offers a wide range of features to control and monitor trades, making it a key component of automated trading strategies.
+
+### Arbitrage Executors
+
+Coming soon.
+
+## Smart Components?
+
+[Smart Components](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/smart_components) are tools you can use to create automatic, standalone logic for any Script.
+
+The first Smart Component is the [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/position_executor/position_executor.py), part of the Directional Framework introduced in version [1.13.0](/release-notes/1.13.0/#directional-framework) that combines this feature along with [Candles Feed](./candles-feed.md) to let users create TA-based strategies.
+
+### Base Class
+
+`SmartComponentBase` is a base class you can use to build smart components that interact with the market in your own way. It helps manage trades and react to market events.
+
+Here are some key points about the `SmartComponentBase` class:
+
+- **Initialization**: When an instance of the class is created, it takes in a strategy, a list of connectors, and an optional update interval. The strategy is an instance of `ScriptStrategyBase` and it dictates the overall trading strategy of the bot. The connectors are names of the exchanges or markets the bot will operate in. The update interval is a float value that determines how often the control loop of the component updates (default is 0.5 seconds). 
+
+- **Event Forwarders**: The class uses `SourceInfoEventForwarder` objects to process various types of events related to trading, such as orders being created, filled, canceled, completed, or failed. These forwarders are used to handle events generated from the different markets the bot is operating in.
+
+- **Control Loop**: The class contains a control loop (a coroutine named `control_loop`) that is started when an instance is created. This loop continues running until it's terminated and while it's running, it calls the `control_task` method at the update interval defined during initialization. The control loop changes the status of the component and calls `on_start` and `on_stop` methods when it starts and stops respectively.
+
+- **Market Interactions**: The class has methods to interact with the markets, such as placing an order (`place_order`), getting the price of a trading pair (`get_price`), retrieving the order book (`get_order_book`), checking the balance of an asset (`get_balance`), getting available balance (`get_available_balance`), and getting active orders (`get_active_orders`).
+
+- **Event Processing**: There are also methods to process different types of events that the forwarders handle. These are `process_order_completed_event`, `process_order_created_event`, `process_order_canceled_event`, `process_order_filled_event`, and `process_order_failed_event`. These methods are currently not implemented in the base class and are expected to be implemented in a subclass.
+
+This class is designed to be subclassed, with subclasses providing specific implementations for things like the `control_task` method and the event processing methods. It's a key component of the Hummingbot library, providing a foundation for creating sophisticated, automated trading strategies.

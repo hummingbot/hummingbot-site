@@ -1,11 +1,11 @@
-The Orchestration Module allows for remote control and monitoring of multi-bot environments in a distributed context , so that bots can "live" on different machines and infrastructures (e.g. having a bot local and another bot on AWS).
+Hummingbot's `brokers` module allows for remote control and monitoring of multi-bot environments in a distributed context , so that bots can "live" on different machines and infrastructures (e.g. having a bot local and another bot on AWS).
 
 To achieve this approach, there is an MQTT layer for bots to connect remotely to message brokers, as a single point of reference, using asynchronous bidirectional communication channels (push/pull). In this architecture, bots can be considered as clients to the overall environment. Bot scaling is seamless and does not require any further setup, anyone can connect any number of bots the a message broker (e.g. RabbitMQ, EMQX etc) without any other dependencies.
 
 See the following repos for more information:
 
 * [Brokers](https://github.com/hummingbot/brokers): Various deployment examples using Docker Compose
-* [Hummingbot remote client](https://github.com/hummingbot/hbot-remote-client-py): Package that implements a remote client for Hummingbot in Python.
+* [Remote client](https://github.com/hummingbot/hbot-remote-client-py): Package that implements a remote client for Hummingbot in Python.
 
 Watch the February 2023 [community call](/#community-calls) that contains a demo of this feature:
 
