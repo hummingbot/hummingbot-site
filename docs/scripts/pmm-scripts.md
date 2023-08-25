@@ -1,9 +1,14 @@
-# PMM Scripts (DEPRECATED)
+!!! warning
+    PMM Scripts were an early experiment to let users customize Hummingbot, but it can only be used with the PMM strategy. In the 1.4.0 release, we introduced a generalized form of [Scripts](./index.md)
+
+## What are PMM Scripts?
 
 Snippets of Python code that let users customize the [Pure Market Making](/strategies/pure-market-making) strategy.
 
-!!! warning
-    PMM Scripts were an early experiment to let users customize Hummingbot, but it can only be used with the PMM strategy. In the 1.4.0 release, we introduced a generalized form of [Scripts](./index.md)
+Introduced in version `0.29.0`, **PMM Scripts** are an earlier component that allows users customize the behavior of the [Pure Market Making](/strategies/pure-market-making) strategy with snippets of Python code. Since PMM Scripts run in a separate Python process, they have limited access to variables and events in the main Hummingbot process. For this reason, we advise the community to contribute to the generalized Scripts module rather than PMM Scripts going forward.
+
+- [Getting Started with PMM Scripts](pmm-scripts)
+- [📁 PMM Script Examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts)
 
 ## How it works
 

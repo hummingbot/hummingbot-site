@@ -26,7 +26,7 @@ Since the end of the Epoch 5 polls, we have engaged in comprehensive internal di
 
 Our community is the heart of our ecosystem, and we recognize the substantial interest in voting on connector inclusion and support. We have analyzed activities from Epochs 1-5 and concluded that our members prioritize voting on **connectors** – standardized integrations to exchanges and blockchain networks.
 
-Connectors are dynamic, reflecting the constantly evolving nature of exchanges and blockchains, and maintaining robust, high-quality connectors require dedicated upgrades and fixes. Recently, we have expanded the functionality of the top connectors by adding support for additional order types and [historical data collection](/scripts/candles-feed/).
+Connectors are dynamic, reflecting the constantly evolving nature of exchanges and blockchains, and maintaining robust, high-quality connectors require dedicated upgrades and fixes. Recently, we have expanded the functionality of the top connectors by adding support for additional order types and [historical data collection](/v2-strategies/candles/).
 
 To prioritized and allocate maintenance bandwidth efficiently, we propose the changes below:
 
