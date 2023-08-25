@@ -6,6 +6,8 @@ categories:
   - Governance
 ---
 
+# Epoch 3 Polls Recap
+
 Epoch 3 polls prioritizes maintenance of exchanges, strategies, and issues in the Hummingbot codebase
 
 ![](Epoch-3-Polls-Recap.png)
