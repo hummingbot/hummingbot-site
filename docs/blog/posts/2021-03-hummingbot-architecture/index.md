@@ -76,9 +76,9 @@ The order of the notifications for every clock tick is the same as the order the
 
 References:
 
-[https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/clock.pyx](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/clock.pyx)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/clock.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/clock.pyx)
 
-[https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/time_iterator.pyx](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/core/time_iterator.pyx)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/time_iterator.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/core/time_iterator.pyx)
 
 
 ## Market connectors
@@ -141,21 +141,21 @@ Take the Balancer DEX connector for example. Almost all of the operations in the
 
 ![](./gateway-api.png)
 
-The Gateway API source code can be found in our gateway-api repository (https://github.com/CoinAlpha/gateway-api). For example, here is how the balancer/sell API endpoint is implemented on the Gateway API side.
+The Gateway API source code can be found in our gateway-api repository (https://github.com/hummingbot/gateway). For example, here is how the balancer/sell API endpoint is implemented on the Gateway API side.
 
 ![](./gateway-api2.png)
 
 References:
 
-[https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector_base.pyx](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector_base.pyx)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx)
 
-[https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx)
 
-[https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py)
 
-[https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py](https://github.com/CoinAlpha/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector/balancer/balancer_connector.py)
 
-[https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.js](https://github.com/CoinAlpha/gateway-api/blob/master/src/routes/balancer.route.js)
+[https://github.com/hummingbot/gateway-api/blob/master/src/routes/balancer.route.js](https://github.com/hummingbot/gateway-api/blob/master/src/routes/balancer.route.js)
 
 ## Conclusions
 

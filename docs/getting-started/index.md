@@ -10,7 +10,7 @@ New to Hummingbot? Start here!
 
 - [Installation](/installation): Install Hummingbot on various platforms
 - [Quickstart](/quickstart): Follow the new Quickstart guide to learn how to build a custom market making strategy with Hummingbot!
-- [Features](/operation): The main commands and configs in Hummingbot
+- [Features](/client): The main commands and configs in Hummingbot
 
 ## 👩‍💻 For developers
 

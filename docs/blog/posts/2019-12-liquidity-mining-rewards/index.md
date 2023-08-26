@@ -24,6 +24,7 @@ Liquidity mining's objective is to align the interests of market makers (the liq
 In order to align risk and reward, there are three main parameters that we use in liquidity mining to determine market maker compensation: (1) time: placing orders in the order book consistently over time, (2) spreads, and (3) order sizes. Our rewards methodology rewards market makers more for placing orders consistently over time in the order book, placing orders with tighter spreads and with larger sizes:
 
 ![](./rewards-allocation-chart.png)
+
 *Figure 1: Rewards allocation based on time, spreads, and order size*
 
 ## Step 1: Order Book Snapshots
@@ -48,9 +49,10 @@ This methodology also inherently rewards market makers who continue to make orde
 
 ### Rewarding market makers for better pricing
 
-In our [liquidity mining whitepaper](https://coinalpha.com/liquidity-mining.pdf), we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
+In our [liquidity mining whitepaper](/liquidity-mining.pdf), we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
 
 ![](./spread-density-function-graph.png)
+
 *Figure 2: Spread density function: weighting spreads for reward allocation*
 
 This allows us to create a corresponding relationship between spreads and market maker compensation. This factor is applied to a market maker’s order size when calculating the reward allocations in order to scale the rewards to the spread.
@@ -98,7 +100,7 @@ Specifically for one minute snapshots, the annualized return would be:
 
 ![](./8-annualized-return.png)
 
-This annualized return can then be used to directly compare the economics of liquidity mining vs. HOLDing (0% return), staking, and lending. In the simulation-based analysis in the [liquidity mining whitepaper](https://coinalpha.com/liquidity-mining.pdf), we showed that users could potentially earn 10-50% from liquidity mining.
+This annualized return can then be used to directly compare the economics of liquidity mining vs. HOLDing (0% return), staking, and lending. In the simulation-based analysis in the [liquidity mining whitepaper](/liquidity-mining.pdf), we showed that users could potentially earn 10-50% from liquidity mining.
 
 Ultimately the market and levels of participation will determine the equilibrium rates, but our Hummingbot Miners web app will show users real-time rates of return available from running Hummingbot in various markets so that they can decide to participate when rates are attractive vis-a-vis alternative uses of inventory.
 

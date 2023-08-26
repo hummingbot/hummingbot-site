@@ -73,7 +73,7 @@ Run the `status` command to see the current status of your running script:
 !!! tip
     💡 If you have already run the script and the file name is in the top status bar, then you can run it again with just the `start` command instead of adding the script name.
 
-- If you want to use a real connector instead of a paper trade one, first you need to configure it using the `connect` command and provide all the required API credentials. See <https://docs.hummingbot.org/operation/connect/> for more details.
+- If you want to use a real connector instead of a paper trade one, first you need to configure it using the `connect` command and provide all the required API credentials. See <https://docs.hummingbot.org/client/connect/> for more details.
 
 - Use the <kbd>↑</kbd> key in the client to cycle through the list of previous commands
 

@@ -12,7 +12,7 @@ categories:
 ![](./cover.png)
 
 - Market making is a huge but inefficient industry in crypto. Exchanges and token issuers pay quantitative hedge funds millions of dollars per year to provide liquidity.
-- We introduce **liquidity mining**, a digital marketplace for liquidity, powered by the Hummingbot open source software that lets anyone run a market making bot ([read the whitepaper](/liquidity-mining-whitepaper)).
+- We introduce **liquidity mining**, a digital marketplace for liquidity, powered by the Hummingbot open source software that lets anyone run a market making bot ([read the whitepaper](/liquidity-mining.pdf)).
 - Simulations show that users can earn **10-50% annually** while providing the same level of liquidity as a hedge fund. This results in **5-10x cost savings** for exchanges and token issuers.
 - We are excited to announce our **8 launch partners** that represent a broad cross-section of the crypto market (centralized exchanges, DEX protocols, and token issuers) who will create liquidity mining campaigns that reward their communities for market making.
 
@@ -52,7 +52,7 @@ Similar to how digital marketplaces such as Google Ads and Uber revolutionized i
 
 In this marketplace for liquidity, buyers can create campaigns that reward sellers for making markets in designated tokens and exchanges.  Reward payments can be mapped to objective, observed actions of liquidity sellers.
 
-We call this **Liquidity Mining** because the concept is similar to proof-of-work mining. Rather than setting up a mining rig and using electricity, users utilize computational power and token inventory to run the Hummingbot market making client. By competing with other participants to earn economic incentives, their combined efforts can achieve a common goal, providing liquidity for a specific token and exchange. In return, they are compensated proportional to their work, according to an algorithmically defined model. For more details, please see the [Liquidity Mining whitepaper](/liquidity-mining-whitepaper).
+We call this **Liquidity Mining** because the concept is similar to proof-of-work mining. Rather than setting up a mining rig and using electricity, users utilize computational power and token inventory to run the Hummingbot market making client. By competing with other participants to earn economic incentives, their combined efforts can achieve a common goal, providing liquidity for a specific token and exchange. In return, they are compensated proportional to their work, according to an algorithmically defined model. For more details, please see the [Liquidity Mining whitepaper](/liquidity-mining.pdf).
 
 ![](liquidity-mining-platform.png)
 
@@ -77,7 +77,6 @@ In liquidity mining, we split the monthly fee into small fixed blocks through th
 
 In normal market conditions when liquidity is high, all market makers split the same fixed reward and earn a lower rate. But in volatile, illiquid markets when only a few market makers are willing to place orders, they also get the same reward. Like surge pricing in Uber, this mechanism incentivizes market makers to participate by increasing their compensation when their services are most needed.
 
----
 
 This model allows the equilibrium "price" of liquidity to be set by natural market forces. The size of the reward pool and the spread distribution curve are levers that buyers can adjust to tailor how they want to pay for liquidity. Meanwhile, the snapshot block rewards incentivize market makers to earn higher rates of return for providing liquidity in volatile markets.
 
@@ -89,28 +88,28 @@ Since market making requires the deployment of inventory, the economics for enga
 
 In the Liquidity Mining whitepaper, we presented the results of simulations that assess the effects of how this model works across different liquidity regimes.
 
-We assumed a total monthly budget of less than $5,000, a tiny fraction of how much exchanges and token issuers pay market makers today. We then ran simulations with 40, 60, and 80 market makers, representing periods of low, normal, and high liquidity, respectively. Incoming market orders are modeled as a Poisson process with random arrival rates and sizes. For more information, see *§3.5.2 Simulation-Based Analysis: Results*, [Liquidity Mining Whitepaper](https://hummingbot.io/liquidity-mining-whitepaper)).
+We assumed a total monthly budget of less than $5,000, a tiny fraction of how much exchanges and token issuers pay market makers today. We then ran simulations with 40, 60, and 80 market makers, representing periods of low, normal, and high liquidity, respectively. Incoming market orders are modeled as a Poisson process with random arrival rates and sizes. For more information, see *§3.5.2 Simulation-Based Analysis: Results*, [Liquidity Mining Whitepaper](/liquidity-mining.pdf).
 
 
-<center><b>Annual rate of return vs. spread</b></center>
+**Annual rate of return vs. spread**
 
 ![](01-return-vs-spread.png)
 
 Market makers earnings are a function of (1) spread and (2) competition. What's noteworthy is that these annualized rates of return compare favorably with other return strategies available to crypto holders, such as staking and lending. While running a market making bot undoubtedly requires more time and effort that those alternatives, users are compensated for that extra work via higher returns.
 
-<center><b>Annual rate of return vs. traded volume</b></center>
+**Annual rate of return vs. traded volume**
 
 ![](03-size-vs-slippage.png)
 
 Even though the liquidity mining model does not explicitly reward market makers for traded volume, returns are positively correlated with volume: market makers who earn the most also fill the most trades.
 
-<center><b>Trade size vs. slippage</b></center>
+**Trade size vs. slippage**
 
 ![](02-return-vs-volume.png)
 
 Finally, the simulations show that as little as a $5000 per month budget may be able to generate a liquid market, even for larger trades. Slippage for a $10,000 order is 0.08%, 0.15%, and 0.19% for the low, normal, and high liquidity regimes, respectively.
 
-As we wrote in our recent [Crypto Liquidity Report](/crypto-liquidity-report-2019-8.pdf), over 80% of the tokens trading on Binance have at least 0.5% slippage for a $10,000 order, and slippage has a strong inverse correlation with market capitalization.
+As we wrote in our recent `Crypto Liquidity Report`, over 80% of the tokens trading on Binance have at least 0.5% slippage for a $10,000 order, and slippage has a strong inverse correlation with market capitalization.
 
 ### Launch partners
 
@@ -135,8 +134,8 @@ But until now, the long tail of crypto assets has faced an unfair disadvantage. 
 >**Liquidity mining levels the playing field by allowing any project or exchange to get liquidity on a self-serve, pay-as-you-go basis.**
 
 ### For more information
-- [Liquidity mining whitepaper](https://hummingbot.io/liquidity-mining-whitepaper)
-- [Download Hummingbot](https://hummingbot.io/download/)
-- [Hummingbot whitepaper](https://hummingbot.io/whitepaper.pdf)
+- [Liquidity mining whitepaper](/liquidity-mining.pdf)
+- [Download Hummingbot](https://github.com/hummingbot/hummingbot)
+- [Hummingbot whitepaper](/hummingbot.pdf)
 
 For exchanges and token issuers interested to learn more about liquidity mining campaigns, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

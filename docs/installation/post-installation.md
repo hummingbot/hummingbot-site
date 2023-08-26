@@ -29,7 +29,7 @@ Here is what each folder contains:
 
 - `/conf`: General folder for configuration files
 
-- `/conf/connectors`: Exchange API keys encrypted by your [password](/operation/password/)
+- `/conf/connectors`: Exchange API keys encrypted by your [password](/client/password/)
 
 - `/conf/strategies`: Strategy config files that you can `create` and `import`
 

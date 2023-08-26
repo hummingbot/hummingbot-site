@@ -4,6 +4,11 @@ authors:
     description: Foundation
     avatar: /assets/brand/logo-color.png
     
+  coinalpha:
+    name: CoinAlpha
+    description: Inc.
+    avatar: /assets/brand/CA-only.png
+
   carlo:
     name: Carlo Las Marias
     description: CEO, CoinAlpha

@@ -168,68 +168,42 @@ nav:
       - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
       - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
       - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    - Broker: installation/broker.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
   - Docs:
     - Docs: docs/index.md
-    - Client Interface:
-      - Client: operation/index.md
-      - User Interface Guide: operation/user-interface.md
-      - Commands and Shortcuts: operation/commands-shortcuts.md
-      - Launch/Exit Hummingbot: operation/launch-exit.md
-      - Create/Delete Password: operation/password.md
-      - Connect Exchange API Keys: operation/connect.md
-      - Create/Import Config Files: operation/config-files.md
-      - Check Balances: operation/balance.md
-      - Start/Stop Strategy: operation/start-stop.md
-      - Check Bot/Market Status: operation/status.md
-      - Check Performance: operation/history.md
-      - Find Log Files: operation/log-files.md
-      - Export Trades/Keys: operation/export.md
-    - Client Utilities:
+    - Client:
+      - Client: client/index.md
+      - User Interface Guide: client/user-interface.md
+      - Commands and Shortcuts: client/commands-shortcuts.md
+      - Launch/Exit Hummingbot: client/launch-exit.md
+      - Create/Delete Password: client/password.md
+      - Connect Exchange API Keys: client/connect.md
+      - Create/Import Config Files: client/config-files.md
+      - Check Balances: client/balance.md
+      - Start/Stop Strategy: client/start-stop.md
+      - Check Bot/Market Status: client/status.md
+      - Check Performance: client/history.md
+      - Find Log Files: client/log-files.md
+      - Export Trades/Keys: client/export.md
       - Paper Trade: global-configs/paper-trade.md
-      - Balance Limit: global-configs/balance-limit.md
-      - Kill Switch: global-configs/kill-switch.md
-      - Rate Oracle: strategy-configs/rate-oracle.md
-      - Rate Limits Share Pct: global-configs/rate-limits-share-pct.md
-      - Telegram Integration: global-configs/telegram.md
-      - Data Collector: global-configs/data-collector.md
-      - Auto-start from Command Line: global-configs/strategy-autostart.md
-    - Customizing the Client:
-      - Override Fees: global-configs/override-fees.md
-      - Clock Tick Size: global-configs/clock-tick.md 
-      - Color Settings: global-configs/color-settings.md
-      - Connect External Database: global-configs/external-db.md
-      - Debug Console: developers/debug.md
-      - Adding Commands: developers/commands.md
-    - Scripts and Smart Components:
-      - Scripts: scripts/index.md
-      - Cheatsheat: scripts/cheatsheet.md
-      - Sample Scripts: scripts/examples.md
-      - Candles Feed: scripts/candles-feed.md
-      - Smart Components: scripts/smart-components.md
-    - Strategies:
-      - Strategies: strategies/index.md
-      - Pure Market Making: strategies/pure-market-making.md
-      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-      - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Hedge: strategies/hedge.md
-      - Liquidity Mining: strategies/liquidity-mining.md
-      - Perpetual Market Making: strategies/perpetual-market-making.md
-      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - TWAP: strategies/twap.md
-      - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-      - Building Strategies:
-        - Building Strategies: developers/strategies/index.md
-        - Architecture: developers/strategies/architecture.md
-        - Tutorial: developers/strategies/tutorial.md
-        - Key Concepts: developers/strategies/key-concepts.md
-        - Define Configs: developers/strategies/config.md
-        - Hanging Orders Tracker: developers/strategies/hanging-orders.md
-      - PMM Configs:
-        - PMM Configs: strategy-configs/index.md
+      - Advanced Features:
+        - Adding Commands: developers/commands.md
+        - Balance Limit: global-configs/balance-limit.md
+        - Clock Tick Size: global-configs/clock-tick.md 
+        - Command Line Autostart: global-configs/strategy-autostart.md
+        - Color Settings: global-configs/color-settings.md
+        - Connect External Database: global-configs/external-db.md
+        - Override Fees: global-configs/override-fees.md
+        - Debug Console: developers/debug.md
+        - Kill Switch: global-configs/kill-switch.md
+        - Market Data Collector: global-configs/data-collector.md
+        - Rate Oracle: strategy-configs/rate-oracle.md
+        - Rate Limits: global-configs/rate-limits-share-pct.md
+        - Telegram Integration: global-configs/telegram.md
+      - Strategy Configs:
+        - Strategy Configs: strategy-configs/index.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md
         - Order Levels: strategy-configs/order-levels.md
         - Filled Order Delay: strategy-configs/filled-order-delay.md
@@ -243,6 +217,30 @@ nav:
         - Price Band: strategy-configs/price-band.md
         - Price Source: strategy-configs/external-price-source.md
         - Ping Pong: strategy-configs/ping-pong.md
+    - Strategies:
+      - Strategies: strategies/index.md
+      - V2 Strategies 🔥:
+        - V2 Strategies: v2-strategies/index.md
+        - Candles: v2-strategies/candles-feed.md
+        - Controllers: v2-strategies/controllers.md
+        - Executors: v2-strategies/executors.md
+      - V1 Strategies:
+        - V1 Strategies: v1-strategies/index.md
+        - Pure Market Making: strategies/pure-market-making.md
+        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
+        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
+      - Scripts:
+        - Scripts: scripts/index.md
+        - Cheatsheat: scripts/cheatsheet.md
+        - Sample Scripts: scripts/examples.md
       - PMM Scripts: scripts/pmm-scripts.md
     - Connectors:
       - Connectors: exchanges/index.md
@@ -323,7 +321,8 @@ nav:
       - Working with Tokens: gateway/tokens.md
       - Running DEX Bots: gateway/running-dex-bots.md
       - API Reference: gateway/api-reference.md
-    - Broker Module: installation/orchestration.md
+    - Dashboard 🔥:
+      - Dashboard: dashboard/index.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md

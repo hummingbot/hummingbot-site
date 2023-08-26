@@ -21,7 +21,7 @@ If you have installed Hummingbot successfully, you should see a welcome screen l
 
 ![](/assets/img/welcome.png)
 
-The Hummingbot CLI helps you manage, configure, and run your bots. Familiarize yourself with the [basic features](/operation/) in Hummingbot, especially the [User Interface](/operation/user-interface/).
+The Hummingbot CLI helps you manage, configure, and run your bots. Familiarize yourself with the [basic features](/client/) in Hummingbot, especially the [User Interface](/client/user-interface/).
 
 ## Exercises
 
