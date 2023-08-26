@@ -16,3 +16,4 @@
 /installation/linux    /installation/     301
 /exchanges/gate_io_perpetual    /exchanges/gate_io      301
 /operation             /client                          301
+/installation/orchestration   /installation/broker      301

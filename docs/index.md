@@ -41,7 +41,7 @@ hide:
 
     Deploy, monitor, and control multiple bot instances using Dashboard, a new web-based user interface and control center.
 
-    [:octicons-arrow-right-24: Demo: Hummingbot Dashboard](https://www.youtube.com/watch?v=3WqNV543goI)
+    [:octicons-arrow-right-24: Dashboard Docs](/dashboard)
 
 -   :material-scale-balance:{ .lg .middle } __Backtest and optimize your strategies__
 

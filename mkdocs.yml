@@ -168,6 +168,7 @@ nav:
       - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
       - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
       - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    - Broker: installation/broker.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
   - Docs:

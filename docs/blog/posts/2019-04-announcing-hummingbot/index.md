@@ -15,7 +15,7 @@ categories:
 
 Hummingbot is now public and open-source, and we’re beyond excited to bring this high-frequency market making trading bot to the masses.
 
-The software is currently available on our [github](https://github.com/coinalpha/hummingbot) and [docker](https://hub.docker.com/r/coinalpha/hummingbot).
+The software is currently available on our [Github](https://github.com/hummingbot/hummingbot) and [Docker](https://hub.docker.com/r/hummingbot/hummingbot).
 
 <!-- more -->
 
@@ -25,7 +25,7 @@ Hummingbot is an open-source software client that allows users to create and cus
 
 Now, anyone can be a high-frequency trader and earn profits from market making, a trading strategy that was previously accessible only to algorithmic hedge funds. For our exchange partners, Hummingbot solves their liquidity challenges by turning their community into a decentralized army of market makers.
 
-While Hummingbot is not the first publicly-available trading bot (in fact, we reviewed several here: [crypto trading bots](/blog/2019-01-crypto-bot-reviews)), it was designed be to the simplest and easiest to use bot of its kind, enabling out-of-the-box high-frequency market making to users with limited technical expertise.
+While Hummingbot is not the first publicly-available trading bot (in fact, we reviewed several here: [crypto trading bots](../2019-01-crypto-bot-reviews/index.md)), it was designed be to the simplest and easiest to use bot of its kind, enabling out-of-the-box high-frequency market making to users with limited technical expertise.
 
 Like its hummingbird namesake, the elegant facade is only part of a highly-optimized machine.  Hummingbot was designed for institutional grade performance and reliability. Built on technologies such as Cython (Python compiled into C), Hummingbot utilizes low-level programming to optimize the speed and memory efficiency crucial for executing high frequency trading algorithms.
 
@@ -41,13 +41,13 @@ Users operate Hummingbot through an interactive command line interface:
 
 ![Hummingbot command line interface](./hummingbot-cli.png)
 
-For an explanation of the CLI and a summary of commands, visit the [Hummingbot documentation](https://docs.hummingbot.io/client/client/#user-interface).
+For an explanation of the CLI and a summary of commands, visit the [Hummingbot documentation](/client/client/#user-interface).
 
 #### Initializing and configuring Hummingbot
 
 ![Configuring Hummingbot](./hummingbot-config.gif)
 
-Hummingbot is initialized and configured through a step-by-step command line interface (see [documentation: configuring](https://docs.hummingbot.io/client/client/) for a full example).
+Hummingbot is initialized and configured through a step-by-step command line interface (see [Client](/client/) for a full example).
 
 #### Automatically posting and adjusting orders
 
@@ -63,7 +63,6 @@ Hummingbot has formed strategic alliances with several well-known decentralized 
 
 >“We share 0x’s vision of a tokenized world, and we believe that solving the liquidity problem faced by decentralized exchanges will help make that vision a reality.” said Michael Feng, CEO and Co-Founder of CoinAlpha Inc, the company behind Hummingbot.
 
-<br />
 
 > “The 0x Core Team is very excited about the launch of Hummingbot. We believe it will lower the barriers to providing liquidity on the 0x network. Hummingbot has assembled a great team and we are thrilled to be working with them through our Ecosystem Acceleration Program.” said Will Warren, CEO and Co-founder of 0x.
 
@@ -83,5 +82,5 @@ If this is you and you’d like to work with us, please contact: [partnerships@h
 ### More Information
 
 #### Get started
-- [Install Hummingbot](https://docs.hummingbot.io/installation/overview/)
+- [Install Hummingbot](/installation/index.md)
 - [Join our official Discord server](https://discord.hummingbot.io)

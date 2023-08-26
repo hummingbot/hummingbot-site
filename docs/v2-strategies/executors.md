@@ -1,6 +1,6 @@
 ## What are Executors?
 
-Coming soon.
+Executors are a self-encapsulated pieces of logic that can be created and controlled by [Controllers](./controllers.md). They are part of the [V2 Strategy](/v2-strategies/) framework.
 
 ## Executor Types
 
@@ -10,7 +10,7 @@ This component receives as input the strategy and `PositionConfig`, a new data t
 
 In future releases, we aim to extend this component to spot exchanges.
 
-Watch this recording from a recent [community call](/#community-calls) to learn how to use this feature:
+Watch this recording from a recent [community calls](/community) to learn how to use this feature:
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/X63rACPjtUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
