@@ -173,19 +173,19 @@ nav:
   - Docs:
     - Docs: docs/index.md
     - Client:
-      - Client: operation/index.md
-      - User Interface Guide: operation/user-interface.md
-      - Commands and Shortcuts: operation/commands-shortcuts.md
-      - Launch/Exit Hummingbot: operation/launch-exit.md
-      - Create/Delete Password: operation/password.md
-      - Connect Exchange API Keys: operation/connect.md
-      - Create/Import Config Files: operation/config-files.md
-      - Check Balances: operation/balance.md
-      - Start/Stop Strategy: operation/start-stop.md
-      - Check Bot/Market Status: operation/status.md
-      - Check Performance: operation/history.md
-      - Find Log Files: operation/log-files.md
-      - Export Trades/Keys: operation/export.md
+      - Client: client/index.md
+      - User Interface Guide: client/user-interface.md
+      - Commands and Shortcuts: client/commands-shortcuts.md
+      - Launch/Exit Hummingbot: client/launch-exit.md
+      - Create/Delete Password: client/password.md
+      - Connect Exchange API Keys: client/connect.md
+      - Create/Import Config Files: client/config-files.md
+      - Check Balances: client/balance.md
+      - Start/Stop Strategy: client/start-stop.md
+      - Check Bot/Market Status: client/status.md
+      - Check Performance: client/history.md
+      - Find Log Files: client/log-files.md
+      - Export Trades/Keys: client/export.md
       - Paper Trade: global-configs/paper-trade.md
       - Advanced Features:
         - Adding Commands: developers/commands.md
@@ -221,10 +221,8 @@ nav:
       - V2 Strategies 🔥:
         - V2 Strategies: v2-strategies/index.md
         - Candles: v2-strategies/candles-feed.md
-        - Executors: v2-strategies/executors.md
         - Controllers: v2-strategies/controllers.md
-        - Executor Handlers: v2-strategies/executor-handler.md
-        - Backtesting Engine: v2-strategies/backtest.md
+        - Executors: v2-strategies/executors.md
       - V1 Strategies:
         - V1 Strategies: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
@@ -324,10 +322,6 @@ nav:
       - API Reference: gateway/api-reference.md
     - Dashboard 🔥:
       - Dashboard: dashboard/index.md
-      - Bot Orchestration: dashboard/orchestration.md
-      - Backtest Manager: dashboard/backtest.md
-      - Broker Module: installation/orchestration.md
-      - Community Pages: dashboard/community.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md

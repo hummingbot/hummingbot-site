@@ -191,7 +191,7 @@ If you get the above errors after updating the Hummingbot client to v1.16.0, mak
 
 ![Gateway error](/gateway-01.png)
 
-Make sure to set at least one character as your Hummingbot login password. Having a blank password causes the Gateway error message. For instructions on how to reset your password check this [link](/operation/password)
+Make sure to set at least one character as your Hummingbot login password. Having a blank password causes the Gateway error message. For instructions on how to reset your password check this [link](/client/password)
 
 ### Error after running generate_certs command
 

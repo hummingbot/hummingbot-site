@@ -1,1 +1,0 @@
-Info about how V2 strategies support backtesting.

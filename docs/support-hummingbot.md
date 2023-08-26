@@ -73,7 +73,7 @@ When creating the API key, make sure to  **Enable Spot & Margin Trading** if you
 
 #### 3. Add API keys to Hummingbot
 
-Inside Hummingbot, run the [`connect` command](/operation/connect/) to add your new API keys. Now, every trade you perform will share a portion of your trading fees with Hummingbot Foundation.
+Inside Hummingbot, run the [`connect` command](/client/connect/) to add your new API keys. Now, every trade you perform will share a portion of your trading fees with Hummingbot Foundation.
 
 ### For Hummingbot forks and custom bots
 

@@ -1,5 +1,5 @@
 !!! warning
-    PMM Scripts were an early experiment to let users customize Hummingbot, but it can only be used with the PMM strategy. In the 1.4.0 release, we introduced a generalized form of [Scripts](./index.md)
+    PMM Scripts were an early experiment to let users customize Hummingbot, but they can only be used with the PMM strategy. In the 1.4.0 release, we introduced a generalized form of [Scripts](./index.md)
 
 ## What are PMM Scripts?
 

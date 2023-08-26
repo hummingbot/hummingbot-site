@@ -99,15 +99,13 @@ Overall, `PositionExecutor` is a sophisticated class for managing trading positi
 
 Coming soon.
 
-## Smart Components?
+## Executor Handlers
 
-[Smart Components](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/smart_components) are tools you can use to create automatic, standalone logic for any Script.
+Executor handlers are the bridge between Controllers and Executors.
 
-The first Smart Component is the [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/position_executor/position_executor.py), part of the Directional Framework introduced in version [1.13.0](/release-notes/1.13.0/#directional-framework) that combines this feature along with [Candles Feed](./candles-feed.md) to let users create TA-based strategies.
+## Smart Components
 
-### Base Class
-
-`SmartComponentBase` is a base class you can use to build smart components that interact with the market in your own way. It helps manage trades and react to market events.
+`SmartComponentBase` is a base class that executors utilize to create self-encapsulated logic that reacts to market events. You can use it to build other smart components.
 
 Here are some key points about the `SmartComponentBase` class:
 

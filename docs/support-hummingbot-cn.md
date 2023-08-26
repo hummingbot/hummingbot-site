@@ -75,7 +75,7 @@ Hummingbot基金会的使命还包括**教育大家如何掌握高频交易（HF
 
 #### 3. 向Hummingbot添加API密钥
 
-在Hummingbot内部，运行[`connect`命令](/operation/connect/)来添加你的新API密钥。现在，你进行的每一笔交易都会与Hummingbot基金会分享一部分交易费用。
+在Hummingbot内部，运行[`connect`命令](/client/connect/)来添加你的新API密钥。现在，你进行的每一笔交易都会与Hummingbot基金会分享一部分交易费用。
 
 ### 用于Hummingbot的分叉和定制机器人
 
