@@ -21,10 +21,6 @@ When running Hummingbot locally on your computer, closing the application or shu
 
 It is important to get a proper set up for Hummingbot for long term success. By setting up Hummingbot on a cloud server, you’ll be able to run Hummingbot 24/7 and not miss out on any rewards. Some advanced users use cloud servers running on Linux to keep Hummingbot in the background.
 
-![cloud server hbot](cloud_server_hbot.gif)
-
-
-
 ### **What are cloud servers?**
 
 
