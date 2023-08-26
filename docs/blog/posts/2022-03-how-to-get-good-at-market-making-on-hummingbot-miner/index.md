@@ -7,7 +7,7 @@ categories:
 ---
 
 # How To Get Good At Market Making On Hummingbot Miner Platform
-
+![cover](cover.webp)
 
 *by Lã Minh Hoàng*
 
@@ -17,14 +17,16 @@ I hope you guys have a good day! Today let's dive into the topic of how to get g
 
 So a little bit of introduction first! I am Wojak, an active member of Hummingbot miner's community, and I have been competitive market making on the platform for the past year.
 
+<!-- more -->
+
 As we all know, market making is not simple. It is even harder to compete on the Hummingbot Miner platform. Getting good at market making requires the knowledge of market dynamics and technical skills to scale up the business. In addition, your funds could be in grave danger if you don't have a good strategy that can counter adverse market conditions.
 
 Therefore, It would be great if a beginner could begin their market making journey with a bag full of tips and tricks! Say no more; I'm here to help!
 
-<!-- more -->
+
 
 **The Five Pillars Of Success**
-===============================
+
 
 ![image 2022-03-29 212320](image_1.jpg)
 
@@ -38,7 +40,7 @@ Those pillars are Learning, Watching, Coding, Tracking, and Community.
 
 
 **Learning**
-============
+
 
 ![image 2022-03-29 212439](image_2.jpg)
 
@@ -72,7 +74,7 @@ Hummingbot client source code is mainly in Python, so learning Python is always 
 
 
 **Watching**
-============
+
 
 ![image 2022-03-29 212605](image_3.jpg)
 
@@ -110,7 +112,7 @@ However, if it is a red day, then I would limit my exposure to the market:
 
 
 **Coding**
-==========
+
 
 ![image 2022-03-29 212739](image_4.jpg)
 
@@ -139,7 +141,7 @@ However, make sure that you use as minimal funds as possible when trying new ide
 
 
 **Tracking**
-============
+
 
 ![image 2022-03-29 212854](image_5.jpg)
 
@@ -170,7 +172,7 @@ So, it is dangerous to go alone, take the spreadsheet and make some money!
 
 
 **Community**
-=============
+
 
 ![image 2022-03-29 213031](image_6.jpg)
 
@@ -190,7 +192,7 @@ All in all, the Hummingbot community is unique, open, friendly, and has a lot of
 
 
 **Conclusion**
-==============
+
 
 There are many opportunities in the cryptocurrency world, but Hummingbot is the most legit and rewarding way to find financial independence. So I hope that the routines that I shared would be useful to anyone who would like to participate in the awesome and exciting Hummingbot community and market making in general.
 

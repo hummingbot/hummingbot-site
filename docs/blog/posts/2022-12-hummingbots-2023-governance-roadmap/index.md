@@ -12,7 +12,7 @@ Specifics on our governance roadmap for 2023, Epoch 2 retrospective, and Epoch 3
 
 ![](./thom-holmes-P17jU-pnTBY-unsplash.jpg)
 
-In our last [governance post](/blog/2022/12/12/changes-to-hummingbot-maintenance-and-governance/), we summarized Hummingbot Foundation's progress since we launched the HBOT governance token one year ago, as well as the lessons that we've learned about how to structure the governance process. In particular, the Foundations plans to start regular monthly Polls to allow HBOT users to decide how the scarce maintenance bandwidth would be allocated across various exchanges, strategies, and issues in the Hummingbot codebase.
+In our last [governance post](../2022-12-changes-to-hummingbot-maintenance-and-governance-processes/index.md), we summarized Hummingbot Foundation's progress since we launched the HBOT governance token one year ago, as well as the lessons that we've learned about how to structure the governance process. In particular, the Foundations plans to start regular monthly Polls to allow HBOT users to decide how the scarce maintenance bandwidth would be allocated across various exchanges, strategies, and issues in the Hummingbot codebase.
 
 As a follow-up, this post provides more specifics on our governance roadmap for 2023. This post also serves as the retrospective for Epoch 2 and outlines changes for Epoch 3.
 

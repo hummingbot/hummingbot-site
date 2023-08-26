@@ -16,13 +16,12 @@ From the moment we open sourced Hummingbot as a CLI-based market making bot back
 
 While we knew that a graphical user interface would make Hummingbot more user-friendly, we chose to spend our limited resources on improving Hummingbot's exchange connectors and strategy template library.
 
-Fast forward to 2023, and today Hummingbot has grown into a larger open source ecosystem with diverse types of users globally who use it in a variety of ways. Thousands of individual users run Hummingbot out-of-the-box to earn rewards on the [Hummingbot Miner platform](https://miner.hummingbot.io/), while many institutional trading firms deploy dozens of heavily-customized Hummingbot instances.  In addition, the success of [Community Bounties](/blog/2023/05/03/introducing-community-bounties/) in fixing bugs and adding features have proven that a community development model can sustainably maintain Hummingbot operationally.
+<!-- more -->
+
+Fast forward to 2023, and today Hummingbot has grown into a larger open source ecosystem with diverse types of users globally who use it in a variety of ways. Thousands of individual users run Hummingbot out-of-the-box to earn rewards on the [Hummingbot Miner platform](https://miner.hummingbot.io/), while many institutional trading firms deploy dozens of heavily-customized Hummingbot instances.  In addition, the success of [Community Bounties](../2023-05-introducing-community-bounties/index.md) in fixing bugs and adding features have proven that a community development model can sustainably maintain Hummingbot operationally.
 
 Today, we are excited to official launch [Hummingbot Dashboard](https://github.com/hummingbot/dashboard), an open source graphical control center that helps you launch and deploy a fleet of Hummingbot instances. You'll also be able to analyze the performance of each instance and adjust its settings in real-time!
 
-<!-- more -->
-
----
 
 Dashboard is the one of the final pieces in the Hummingbot landscape. Hummingbot Foundation now maintain five open source code repositories, each serving a different technical role in the ecosystem:
 

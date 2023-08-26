@@ -9,6 +9,8 @@ categories:
 ---
 
 # Introduction to Hummingbot and Liquidity Mining Campaigns
+![cover](cover.jpg)
+
 
 ## What is Hummingbot?
 
@@ -16,7 +18,7 @@ Hummingbot is a high-frequency algorithmic trading bot written in Python and Cyt
 
 Everything you learned during the previous lessons such as creating an order, cancelling an order, and executing trades can be done with Hummingbot - but a lot of times faster even while you're doing other things.
 
-To use Hummingbot, you can try out our [online Test Drive](https://hummingbot.io/en/test-drive/?ref=blog.hummingbot.org) or desktop [client app](https://hummingbot.org/installation/?_ga=2.130023116.1350614256.1645412188-569987294.1641179028&ref=blog.hummingbot.org). We will go through the set up in Stage 2: Beginner level.
+To use Hummingbot, you can try out our online Test Drive (deprecated) or desktop [client app](../../../installation/index.md). We will go through the set up in Stage 2: Beginner level.
 
 <!-- more -->
 
@@ -39,11 +41,12 @@ Unlike AMM (automated market maker) platforms like Uniswap, Hummingbot focuses o
 
 ### Hummingbot vs Uniswap
 
-[https://hummingbot.io/en/blog/2019-04-hummingbot-vs-uniswap/?ref=blog.hummingbot.org](https://hummingbot.io/en/blog/2019-04-hummingbot-vs-uniswap/?ref=blog.hummingbot.org)
+[https://hummingbot.io/en/blog/2019-04-hummingbot-vs-uniswap/?ref=blog.hummingbot.org](../2019-04-hummingbot-vs-uniswap/index.md)
+
 
 ### Hummingbot vs other liquidity mining options
 
-[https://hummingbot.io/en/blog/2020-08-liquidity-mining-hummingbot-vs-defi/?ref=blog.hummingbot.org](https://hummingbot.io/en/blog/2020-08-liquidity-mining-hummingbot-vs-defi/?ref=blog.hummingbot.org)
+[https://hummingbot.io/en/blog/2020-08-liquidity-mining-hummingbot-vs-defi/?ref=blog.hummingbot.org](../2020-08-liquidity-mining-hummingbot-vs-defi/index.md)
 
 ## How do Hummingbot liquidity mining campaigns work
 
@@ -55,9 +58,9 @@ In our market campaigns like, you will be able to see the market (token pairs) i
 
 To learn more about how liquidity mining works on Hummingbot you can read the Liquidity mining whitepaper.
 
-[https://hummingbot.io/en/liquidity-mining-whitepaper/_ga=2.107014466.1503332767.1636699963-730910935.1636514223?ref=blog.hummingbot.org](https://hummingbot.io/en/liquidity-mining-whitepaper/_ga=2.107014466.1503332767.1636699963-730910935.1636514223)
+[Whitepaper](https://coinalpha.com/liquidity-mining.pdf)
 
-To provide a brief overview: [https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards/?ref=blog.hummingbot.org](https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards/)
+To provide a brief overview: [Rewards](../2019-12-liquidity-mining-rewards/index.md)
 
 Rewards are allocated according to three main factors **1) time, 2) spread, 3) order sizes.**
 

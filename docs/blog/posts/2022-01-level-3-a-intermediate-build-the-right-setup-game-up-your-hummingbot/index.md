@@ -9,7 +9,7 @@ categories:
 ---
 
 # Build the right setup: game up your Hummingbot liquidity mining
-
+![cover](cover.jpg)
 
 ## Running Hummingbot 24/7 in the cloud
 
@@ -17,11 +17,13 @@ categories:
 
 When running Hummingbot locally on your computer, closing the application or shutting down your machine also stops the bot from trading. Also, running locally relies on your computer's resources and internet connection.
 
+<!-- more -->
+
 It is important to get a proper set up for Hummingbot for long term success. By setting up Hummingbot on a cloud server, you’ll be able to run Hummingbot 24/7 and not miss out on any rewards. Some advanced users use cloud servers running on Linux to keep Hummingbot in the background.
 
 ![cloud server hbot](cloud_server_hbot.gif)
 
-<!-- more -->
+
 
 ### **What are cloud servers?**
 
@@ -47,7 +49,7 @@ This blog post examines the pros and cons of four major cloud hosting companies 
 
 [Home - Hummingbot Foundation](../../../installation/index.md)
 
-If you qualify to be a [Hummingbot Eagle Club member](https://hummingbot.io/en/blog/2020-04-hummingbot-eagle-club-launch?ref=blog.hummingbot.org) , you will be able to get US$5K free AWS credits as a start.
+If you qualify to be a [Hummingbot Eagle Club member](../2020-04-hummingbot-eagle-club-launch/index.md) , you will be able to get US$5K free AWS credits as a start.
 
 ## Getting the right set up
 
@@ -161,7 +163,6 @@ Some users like to use Terminus to manage multiple bots:
 
 ### **Tips: setting balance limit**
 
----
 
 As mentioned in the beginner level, if you want to run multiple bots and they are all using up the same asset (eg. USDT), you can use the balance limit feature.
 
@@ -169,4 +170,4 @@ As mentioned in the beginner level, if you want to run multiple bots and they ar
 
 Sets the amount limit on how many assets Hummingbot can use in an exchange or wallet. This can be useful when running multiple bots on different trading pairs with same tokens e.g. running a BTC-USDT pair and another bot on ETH-USDT using the same account.
 
-[Home - Hummingbot Foundation](https://docs.hummingbot.org/global-configs/balance-limit/)
+[Home - Hummingbot Foundation](../../../global-configs/balance-limit.md)

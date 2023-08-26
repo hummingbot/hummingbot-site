@@ -10,11 +10,13 @@ categories:
 
 ![](./fengtality_cover_image_fora_roadmap_blog_post_for_a_crypto_trad_6fdedfbf-d2a0-43cb-9ecf-dd668d432bd2.png)
 
-In December, we shared our ambitious [technical roadmap](/blog/2022/12/13/hummingbots-2023-technical-roadmap/) for 2023, detailing the features and improvements we planned to introduce throughout the year. Today, we are excited to provide an update on the progress we've made, the milestones we've reached, and the exciting plans we have for the remainder of the year.
+In December, we shared our ambitious [technical roadmap](../2022-12-technical-roadmap-2023/index.md) for 2023, detailing the features and improvements we planned to introduce throughout the year. Today, we are excited to provide an update on the progress we've made, the milestones we've reached, and the exciting plans we have for the remainder of the year.
 
 ## What's Been Shipped
 
 We are proud to have completed several key items from our roadmap:
+
+<!-- more -->
 
 1. Expanded Hummingbot to directional strategies by introducing the [Candles Feed](https://hummingbot.org/scripts/candles-feed/) OHLCV generator and the [PositionExecutor Smart Component](https://hummingbot.org/scripts/smart-components/), enhancing the efficiency and flexibility of our trading algorithms
 2. Introduced the [Orchestration Module](https://hummingbot.org/installation/orchestration/) to simplify the management of multiple trading bots and strategies, which is being developed by a community team
@@ -26,7 +28,6 @@ We are proud to have completed several key items from our roadmap:
 
 To ensure transparency and keep our community informed, we have created a public GitHub project called [Hummingbot Roadmap](https://github.com/orgs/hummingbot/projects/12).
 
-<!-- more -->
 
 ![](./Screen-Shot-2023-05-02-at-3.00.20-PM.png)
 

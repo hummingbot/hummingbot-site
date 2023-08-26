@@ -8,6 +8,7 @@ categories:
 ---
 
 # Selecting markets, identifying trends, and reducing inventory risk
+![cover](cover.jpg)
 
 ## Tips for Selecting Markets
 Choosing the right market is the key to liquidity mining success. Here are some tips for selecting markets:
@@ -27,7 +28,7 @@ Choosing the right market is the key to liquidity mining success. Here are some 
 
 ![Screenshot 2022-03-09 at 5.31.52 PM](image_1.jpg)
 
-**To learn more:** [https://youtu.be/AU7h7tQpbaM?list=PLDwlNkL_4MMekihXq7C-Nzx9YkivaZZ6r](https://youtu.be/AU7h7tQpbaM?list=PLDwlNkL_4MMekihXq7C-Nzx9YkivaZZ6r) [https://hummingbot.io/en/blog/2021-02-sharing/](https://hummingbot.io/en/blog/2021-02-sharing/?ref=blog.hummingbot.org)
+**To learn more:** [https://youtu.be/AU7h7tQpbaM?list=PLDwlNkL_4MMekihXq7C-Nzx9YkivaZZ6r](https://youtu.be/AU7h7tQpbaM?list=PLDwlNkL_4MMekihXq7C-Nzx9YkivaZZ6r) [https://hummingbot.io/en/blog/2021-02-sharing/](../2021-02-sharing/index.md)
 
 ## Volatility Risk Factor Score
 The Factor Score is a score created by Hummingbot to convey the risk faced by liquidity providers for a given token. It is important for miners to understand the risk involved in different pairs, not only the yields provided, before selecting them for market making.
@@ -41,7 +42,7 @@ You can use the volatility risk factor to select markets in **Core**, or **Growt
 ![Screenshot 2022-03-07 at 2.52.01 PM](image_2.jpg)
 
 ## Identifying Trends
-[https://hummingbot.io/en/blog/2021-03-identifying-trends/](https://hummingbot.io/en/blog/2021-03-identifying-trends/?ref=blog.hummingbot.org)
+[https://hummingbot.io/en/blog/2021-03-identifying-trends/](../2021-03-identifying-trends/index.md)
 
 In-depth tips on how you can identify crypto trends using:
 1. **Fundamental Analysis** - researching on intrinsic value of the assets such as using On-chain analysis, NVT
@@ -53,10 +54,10 @@ You can also run custom scripts on Hummingbot using these indicators.
 ## What is inventory risk?
 Inventory risk is the risk of holding the assets that you market make on, which may fluctuate in value. It is one of the biggest risks market makers hold.
 
-[https://hummingbot.io/en/blog/2020-10-inventory-risk/](https://hummingbot.io/en/blog/2020-10-inventory-risk/?ref=blog.hummingbot.org)
+[https://hummingbot.io/en/blog/2020-10-inventory-risk/](../2020-10-inventory-risk/index.md)
 
 This article explains the concepts of inventory risk and shows us how we can lower inventory risk using inventory skew, filled order delay, hanging orders, and ping pong.
 
-[https://hummingbot.io/en/blog/2020-06-what-is-market-making-guest-post/](https://hummingbot.io/en/blog/2020-06-what-is-market-making-guest-post/?ref=blog.hummingbot.org)
+[https://hummingbot.io/en/blog/2020-06-what-is-market-making-guest-post/](../2020-06-what-is-market-making-guest-post/index.md)
 
 Explains mainly how spreads are related to inventory risk.

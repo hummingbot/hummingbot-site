@@ -14,13 +14,15 @@ categories:
 
 Algorithmic trading is the process of using computers programmed to follow a pre-defined set of rules for automatically placing trades in order to generate profits at high speed and high frequency. The pre-defined sets of rules, called an algorithm, can range from quantitative strategies to machine learning models that can reference any data or combination thereof, e.g. prices, volume, or tweets/news feeds for sentiment analysis. Algo trading makes markets more liquid by introducing a large volume of trades and orders; unlike human traders, computers don't need to rest or sleep, are much faster at calculating and sending instructions, and don't suffer from emotions ([at least, not yet??](https://www.psychologytoday.com/us/blog/hot-thought/201712/will-robots-ever-have-emotions)).
 
+<!-- more -->
+
 In established markets such as equities and commodities, algorithmic trading has been dominated by highly sophisticated institutions that have invested heavily in developing proprietary strategies and infrastructure.  However, in the nascent cryptocurrency markets, algorithmic trading is becoming more accessible to individual traders and retail investors.  Exponential growth in the number of cryptocurrency exchanges has far outpaced the growth in market participants and trading activity.  As a result, a unique dynamic has arisen: (1) opportunities to capture profits using even comparatively primitive algorithmic strategies are possible, (2) the lack of a market close coupled with high market volatility makes automation and the ability to trade 24/7 essential, (3) some bots have been make open source or available to the public to encourage adoption and market participation.
 
 Through our user interviews, we found one obstacle for developers to step their foot in crypto algo trading is a lack of understanding of trading strategies and financial concepts. This article will leverage useful external resources to answer the questions that might be lingering on your mind.  This post is intended to be a "live" document, that we will regularly update regularly with thoughtfully-selected readings and learning resources that we come across.
 
 If you are completely new to this arena, the following two tutorials will lay a good foundation for you:
 
-<!-- more -->
+
 
 * [Coursera: Princeton University course on Cryptocurrencies](https://www.coursera.org/learn/cryptocurrency):
 This course provides good overviews and explanations of blockchain technology and cryptocurrencies. Each week, it will upload around an hour of lecture content. You can control your own pace of learning and have a deeper dive into the topics that are most relevant to you.

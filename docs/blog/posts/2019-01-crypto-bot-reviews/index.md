@@ -7,6 +7,9 @@ categories:
   - Trader Tips
 ---
 
+# Crypto bot reviews
+
+![cover](cover.jpg)
 
 A great **user experience (UX)** is important for any product, but especially for one that automatically trades your hard-earned money, like a trading bot.  If a bot is hard to install, contains bugs, or stops working often, traders won't use it.
 

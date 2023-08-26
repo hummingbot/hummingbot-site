@@ -7,6 +7,9 @@ categories:
   - Guides
 ---
 
+# Crypto trading guide for nontechnical users
+
+![cover](cover.jpeg)
 
 In our previous post, we put together some helpful trading and finance-related resources for **developers** who want to dip their toes into crypto algo trading. On the flip side, this post aims to be a good resource for **traders** who have trading experience but little to no programming skills.
 

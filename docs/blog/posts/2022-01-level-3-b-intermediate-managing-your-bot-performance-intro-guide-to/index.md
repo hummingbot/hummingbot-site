@@ -8,7 +8,7 @@ categories:
 ---
 
 # Managing your bot performance: Intro guide to managing P&L
-
+![cover](cover.jpg)
 
 ## How does Hummingbot measure PnL ?
 
@@ -18,7 +18,7 @@ Hummingbot calculates profitability by determining the portfolio value of the st
 
 To learn more about how and why we calculate PnL:
 
-[How to measure performance in crypto trading](https://hummingbot.io/en/blog/2019-07-measure-performance-crypto-trading?ref=blog.hummingbot.org)
+[How to measure performance in crypto trading](../2019-07-measure-performance-crypto-trading/index.md)
 
 
 <!-- more -->
@@ -49,4 +49,3 @@ PnL Analysis Jupyter Notebook created by one of our community members
 
 [PNL analysis notebook tutorial](https://support.hummingbot.io/hc/en-us/articles/4407436182553-PNL-analysis-notebook-tutorial?ref=blog.hummingbot.org)
 
----

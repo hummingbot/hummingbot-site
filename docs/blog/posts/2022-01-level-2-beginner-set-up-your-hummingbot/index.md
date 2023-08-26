@@ -8,11 +8,15 @@ categories:
 ---
 
 # Set up your Hummingbot
+![cover](cover.jpg)
+
 
 ### Welcome to **Level 2**!
 In this level, we will teach you how to set up Hummingbot client and a Hummingbot miner account to start earning liquidity mining rewards. We will walk you through different common strategies and teach you two basic strategies (pure market making and cross exchange-market making) to get you started with your bot. We will also provide tips on selecting markets, dealing with different market situations, and beginner level tips to reduce inventory risk.
 
 The goal of this level is to help you earn your first $10 in Miner rewards!
+
+<!-- more -->
 
 ### **Set up Hummingbot**
 
@@ -24,8 +28,6 @@ The online Test Drive and the Client app are essentially the same product. The T
 
 **Client (Desktop App)**
 
-
-<!-- more -->
 
 [Running Hummingbot](https://hummingbot.io/en/academy/quickstart/?ref=blog.hummingbot.org)
 
@@ -76,7 +78,7 @@ To qualify for liquidity mining rewards in the [Hummingbot miner platform](https
 - Market is uptrend
 - Market is downtrend
 - Understanding volatility to help us pick the right spread
-- [Helpful tips for setting basic parameters](https://hummingbot.io/en/blog/2022-03-25-favorite-hummingbot-parameters?ref=blog.hummingbot.org)
+- [Helpful tips for setting basic parameters](../2022-03-favorite-hummingbot-parameters-from-trader-jazzy/index.md)
 
 [Academy Level 2] D. Beginner — Strategy #2: Use cross-exchange market making (XEMM) strategy to lower risk
 
@@ -99,11 +101,11 @@ To qualify for liquidity mining rewards in the [Hummingbot miner platform](https
 - Performance History
 - Kill Switch
 - Integrate Telegram
-- [How to ensure that you are capturing liquidity mining rewards](https://hummingbot.io/en/blog/2022-03-25-orders-must-flow?ref=blog.hummingbot.org)
-- [Systematic approach to running simple experiments](https://hummingbot.io/en/blog/2022-03-29-systematic-approach-to-liquidity-mining?_ga=2.233172445.2122209667.1648539970-1021863183.1645879609&ref=blog.hummingbot.org)
+- [How to ensure that you are capturing liquidity mining rewards](../2022-03-orders-must-flow/index.md)
+- [Systematic approach to running simple experiments](../2022-03-systematic-approach-to-liquidity-mining/index.md)
 - Strategy hacks & tips from traders
 - Strategy Hacks 101
-- [A beginner’s guide](https://hummingbot.io/en/blog/2022-03-29-how-to-get-good-at-market-making-on-hummingbot-miner?_ga=2.93136734.2122209667.1648539970-1021863183.1645879609&ref=blog.hummingbot.org)
+- [A beginner’s guide](../2022-03-how-to-get-good-at-market-making-on-hummingbot-miner/index.md)
 - Tips from Traders
 
 ### **Missions**
@@ -132,7 +134,7 @@ To qualify for liquidity mining rewards in the [Hummingbot miner platform](https
 - **Mission 2.4**: Run a cross-exchange market making bot on a pair and experiment with different pairs, different exchanges, and different price sources. **Rate Oracle
 
 ** is also a very helpful feature to experiment with when working on the price source:
-- [Home - Hummingbot Foundation](https://docs.hummingbot.io/features/rate-oracle/?ref=blog.hummingbot.org)
+- [Home - Hummingbot Foundation](../../../strategy-configs/rate-oracle.md)
 
 **Earn $10 rewards**
 
@@ -142,5 +144,3 @@ To qualify for liquidity mining rewards in the [Hummingbot miner platform](https
 **Post more questions!**
 
 - **Mission 2.6**: read Discord channels #trader-chat and #liquidity-mining. Now that you’ve tried more strategies, post a question related to the strategies in the group. Reach out to #miner-support if you have any issues with the set up.
-
-

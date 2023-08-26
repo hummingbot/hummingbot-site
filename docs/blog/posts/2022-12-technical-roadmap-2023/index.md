@@ -7,18 +7,18 @@ categories:
 ---
 
 # Hummingbot's 2023 Technical Roadmap
-
+![cover](cover.jpg)
 
 *This post provides a description of the technical changes that the Hummingbot Foundation plans to implement over the course of the next year. Note that these changes will be subject to HBOT governance and the approval of the Hummingbot community.*
 
-From bot to framework
----------------------
+## From bot to framework
 
 Since it was launched in 2019, the open source [Hummingbot](https://github.com/hummingbot/hummingbot?ref=blog.hummingbot.org) software client has grown and evolved considerably. 
 
+<!-- more -->
+
 Originally a simple market making bot that only supported a few exchanges, today Hummingbot is a now a powerful, complex codebase with connectors to 40+ centralized and decentralized exchanges, 13+ strategies, and helper modules such as the Rate Oracle, Telegram integration, and other components.
 
-<!-- more -->
 
 ![](image_1.jpg)
 
@@ -31,7 +31,7 @@ We've been amazed at what our community has been able to build with Hummingbot. 
 Therefore, our overall goal at Hummingbot Foundation next year is to grow the population of technical Hummingbot users who can customize and create their own strategies via [Scripts](https://docs.hummingbot.org/scripts?ref=blog.hummingbot.org), instead of just running the off-the-shelf strategy templates. 
 
 2023 technical priorities
--------------------------
+
 
 ![](image_2.jpg)
 
@@ -39,7 +39,7 @@ Source: [Andy Holmes](https://unsplash.com/photos/rCbdp8VCYhQ?ref=blog.hummingbo
 
 ### 1. Expand functionality of top exchange connectors
 
-As mentioned in [our recent post](https://blog.hummingbot.org/changes-to-hummingbot-maintenance-and-governance-processes/), we plan to leverage HBOT governance to let the community decide on the top 1 (Gold) and 2-4 (Silver) exchanges of each type, CEX and DEX.
+As mentioned in [our recent post](../2022-12-changes-to-hummingbot-maintenance-and-governance-processes/index.md), we plan to leverage HBOT governance to let the community decide on the top 1 (Gold) and 2-4 (Silver) exchanges of each type, CEX and DEX.
 
 After the first poll in January, we will begin to focus maintenance effort on the Gold exchanges, bringing them up to a gold standard technically, as well as adding support for all major endpoints supported in the exchange API, such as:
 
@@ -111,7 +111,7 @@ The team has submitted a [draft pull request](https://github.com/hummingbot/humm
 We plan to keep the core Hummingbot codebase lightweight and work with community teams to support external modules like orchestration. If there are teams that want to design and maintain similar external components that work with Hummingbot, please let us know.
 
 The road to Hummingbot 2.0
---------------------------
+
 
 ![](image_3.jpg)
 

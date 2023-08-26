@@ -9,6 +9,7 @@ categories:
 ---
 
 # Strategy #1: Pure Market Making (PMM) Strategy
+![cover](cover.jpg)
 
 ## Tips for choosing the right spread
 
@@ -56,7 +57,7 @@ if name == 'main':
 
 Every market works differently, but we highly recommend that you check out some tips from successful traders on how they set up their Hummingbot Parameters:
 
-[Trader tips] Favorite Hummingbot Parameters from Trader Jazzy](https://www.notion.so/Trader-tips-Favorite-Hummingbot-Parameters-from-Trader-Jazzy-feeac3c2937d450b8a04855d1e83d18b?ref=blog.hummingbot.org)
+[Trader tips - Favorite Hummingbot Parameters from Trader Jazzy](https://www.notion.so/Trader-tips-Favorite-Hummingbot-Parameters-from-Trader-Jazzy-feeac3c2937d450b8a04855d1e83d18b?ref=blog.hummingbot.org)
 
 - Tips on setting up the following parameters
 - price ceiling and price floor
@@ -79,6 +80,4 @@ Only take these tips as reference as different traders operate differently for v
 
 - A kill switch is one of the simplest ways to give you some sort of guardrail when markets become too volatile. It automatically stops the bot when it reaches a certain performance threshold, which can be either positive or negative. To learn more:
 
-[https://hummingbot.org/global-configs/kill-switch/](https://hummingbot.org/global-configs/kill-switch/?ref=blog.hummingbot.org)
-
----
+[https://hummingbot.org/global-configs/kill-switch/](../../../global-configs/kill-switch.md)

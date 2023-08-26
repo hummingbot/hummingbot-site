@@ -9,12 +9,14 @@ categories:
 ---
 
 # [Level 2] Use Cross-Exchange Market Making (XEMM) Strategy to Lower Risk
+![cover](image_2.jpg)
+
 
 ### What is cross exchange market making?
 
 Cross exchange is a **maker-taker** strategy. Read more through the docs link and blog below:
 
-[![What is cross exchange market making?](https://blog.hummingbot.org/content/images/2022/09/What_is_Cross_Exchange_Market_Making.webp)](https://blog.hummingbot.org/blog-2020-09-what-is-cross-exchange-market-making/)
+[![What is cross exchange market making?](image_2.jpg)](../2020-09-what-is-cross-exchange-market-making/index.md)
 
 > **What is cross exchange market making?**  
 > by Paulo Henrique Welcome back to our Educational Center, where we aim to help you to learn more about market making, arbitrage, and everything related to algorithmic trading. Today we will talk about one of the core strategies that can be used with hummingbot: cross-exchange market making.
@@ -34,7 +36,7 @@ This article explains:
 
 Arbitrage and cross-exchange market making are often considered and described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: inventory risk. The main risk that remains is execution risk. To learn more, please read the following blog post:
 
-[![What is cross exchange market making?](https://blog.hummingbot.org/content/images/2022/09/What_is_Cross_Exchange_Market_Making.webp)](https://blog.hummingbot.org/blog-2020-09-what-is-cross-exchange-market-making/)
+[![What is cross exchange market making?](image_2.jpg)](../2020-09-what-is-cross-exchange-market-making/index.md)
 > **What is cross exchange market making?**  
 > by Paulo Henrique Welcome back to our Educational Center, where we aim to help you to learn more about market making, arbitrage, and everything related to algorithmic trading. Today we will talk about one of the core strategies that can be used with hummingbot: cross-exchange market making.
 
@@ -89,4 +91,4 @@ In this blog, you will learn:
 3. How the information about price moves around different markets
 4. Why we should use the price information from a different source
 
-[Extracting the best value from your Hummingbot - Price Source Configurations](/2020/11/blog-2020-11-commands-and-config-price-source/)
+[Extracting the best value from your Hummingbot - Price Source Configurations](../2020-11-commands-and-config-price-source/index.md)

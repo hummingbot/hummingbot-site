@@ -21,6 +21,8 @@ Liquidity mining on KuCoin offers issuers whose tokens are listed on KuCoin with
 - Engaging hundreds of quant/algo traders from the Hummingbot community to trade issuer’s tokens
 - Distributing token rewards to the communities contributing to liquidity
 
+<!-- more -->
+
 For liquidity miners, the additional exchange integration allows us to serve more token issuers and increase the total rewards pools available to miners!
 
 ## KuCoin liquidity mining launch

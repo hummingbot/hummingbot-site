@@ -18,12 +18,12 @@ Hi! I've been using hummingbot for about a year on and off and wanted to give an
 
 Humming Bot is very accessible for hobby coders due to its mainly python-based code base and the fact that its all open source (Meaning you can play around with the code). It's pretty easy to scrape together your own strategies although it�s taken quite a lot of trial and error to get there myself! I wanted to give a basic idea of how you can go about doing this in the simplest way possible.
 
+<!-- more -->
+
 The best way to get started is to get an idea of the strategies already present in hummingbot, this can be done through diving into the program and getting an idea of how it works. I would recommend starting off with an existing strategy and tweaking it yourself. If it all goes wrong (and it probably will) you can just pull it again from Github and overwrite your changes. Also, if you use Windows you're probably going to want to develop your code on a source installation for windows, this can be done quite easily as per: [Source - Hummingbot Foundation](../../../installation/source/index.md). Obviously, when you have a working code you can then quite easily transfer the strategy file to your AWS server or RPI and compile it there.
 
 When you've installed the software from source you need to head to strategy folder in hummingbot/hummingbot/strategy. Then pick the strategy you want to edit. I'm going to use cross exchange market making for this.
 
-
-<!-- more -->
 
 The strategy folders are all laid out in a similar way. The most important file is the one ending in .pyx, this is the main strategy file that contains all of the instructions for how your strategy works. For the other files in this folder:
 

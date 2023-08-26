@@ -8,7 +8,7 @@ categories:
 ---
 
 # Hummingbot Academy
-
+![cover](cover.jpg)
 
 Welcome to **Level 1** of Hummingbot Academy!
 

@@ -9,6 +9,7 @@ categories:
 
 # Basic Concepts of Crypto Trading
 
+![cover](cover.jpg)
 
 ### Order Book
 
@@ -86,7 +87,7 @@ Slippage is financial loss during trading as a result of market inefficiencies a
 
 [Learn more about slippage](https://river.com/learn/terms/s/slippage/?ref=blog.hummingbot.org)
 
----
+
 
 ## What is Market Making?
 
@@ -127,8 +128,8 @@ A **market taker** is any are accepting the prices offered on the order book is 
 
 To learn more about the difference between Market Making and Arbitrage:
 
-[What is Arbitrage?](https://hummingbot.io/en/blog/2020-09-what-is-arbitrage/?ref=blog.hummingbot.org)
-[A developer's guide to crypto algo trading](https://hummingbot.io/en/blog/2019-01-beginner-crypto-trader?_ga=2.248520581.32517802.1633936292-1486649827.1628237708&ref=blog.hummingbot.org)
+[What is Arbitrage?](../2020-09-what-is-arbitrage/index.md)
+[A developer's guide to crypto algo trading](../2019-01-beginner-crypto-trader/index.md)
 
 ### Market Making vs Bitcoin Mining vs Liquidity Pools
 
@@ -142,7 +143,6 @@ How is market making different from bitcoin mining and liquidity pools?
 
 That is where the **Hummingbot software** comes in. The software acts as a layer to automatically execute an algorithm that you set for trading. It sounds complicated but it can be as easy as “set buy orders at 1% below the current price and sell orders 1% above”. There are far more options, but this is just the jist.
 
----
 
 ## Trading terminologies 101
 
@@ -174,8 +174,8 @@ Hummingbot's minimum order size is denominated in base asset. If a certain excha
 
 Some exchanges have no web pages where you can view the minimum order size. For example in KuCoin, you have to use an application like Postman to get REST API data. See doc below :
 
-[KuCoin - hummingbot docs](https://docs.hummingbot.io/connectors/kucoin/?ref=blog.hummingbot.org#minimum-order-sizes)
-[https://hummingbot.org/exchanges/kucoin/](https://hummingbot.org/exchanges/kucoin/?ref=blog.hummingbot.org)
+[KuCoin - hummingbot docs](../../../exchanges/kucoin/index.md)
+[https://hummingbot.org/exchanges/kucoin/](../../../exchanges/kucoin/index.md)
 
 [![Postman API tutorial for beginners](https://img.youtube.com/vi/FjgYtQK_zLE/0.jpg)](https://www.youtube.com/embed/FjgYtQK_zLE)
 
