@@ -62,7 +62,7 @@ Hummingbot is a free software, so you can download, install, and run it for free
 
 Transactions from Hummingbot are normal transactions conducted on exchanges; therefore when operating Hummingbot, you would be subject to each exchange’s fees (e.g. maker, taker, and withdrawal fees), as you would if you were trading on that exchange normally (i.e. without Hummingbot).
 
-There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](/exchanges/).
+There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](exchanges/index.md).
 
 ## Gateway middleware
 
@@ -71,7 +71,7 @@ There is no minimum amount of assets to use Hummingbot, but users should pay hee
 
 ### What is Gateway?
 
-[Hummingbot Gateway](/gateway) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
+[Hummingbot Gateway](gateway/index.md) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
 
 * Standardizes DEX API endpoints
 * Manages interactions with node providers, and
@@ -221,7 +221,7 @@ To prevent HBOT token holders from being scammed by fraudulent versions of the t
 
 ### Does the Foundation plan to list HBOT on (any crypto exchange)?
 
-Please see [Reputable Sources](/hbot/#reputable-information-sources) for information about venues where HBOT may be traded.
+Please see Reputable Sources for information about venues where HBOT may be traded.
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
