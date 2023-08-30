@@ -353,7 +353,6 @@ nav:
   - Community:
     - Community: community/index.md
     # - Events: community/events.md
-    - Botcamp: botcamp/index.md 
     - Bounties: 
       - Bounties: bounties/index.md
       - For Contributors: bounties/contributors.md
@@ -368,6 +367,7 @@ nav:
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
     - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
+  - Botcamp: botcamp/index.md 
   - About:
     - About: about/index.md
     - FAQ: faq.md

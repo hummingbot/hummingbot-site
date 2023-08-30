@@ -1,3 +1,11 @@
+---
+template: botcamp.html
+hide:
+  - toc
+  - navigation
+  - feedback
+---
+
 Botcamp is the official training and membership program for the Hummingbot community. It is a paid online course offered by Hummingbot Foundation that teaches you both the **theory and practice of algo trading**.
 
 Members learn how to design and run strategies such as market making, arbitrage, and directional strategies. Afterwards, they can create their own custom trading strategy as a Hummingbot script. Many of the [sample scripts](/scripts/examples) were built by Botcamp members.
@@ -10,4 +18,4 @@ Each quarterly, we organize a Demo Day for Botcamp members to showcase the custo
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/kjavBd9vvWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-For more information, visit the Botcamp site: <https://botcamp.hummingbot.org>
+Enroll now: <https://botcamp.hummingbot.org/p/membership>
