@@ -3,11 +3,11 @@ Now that you have properly installed, tested, and configured Gateway, it's time 
 You can either run the AMM-Arbitrage Strategy, or the sample Scripts that utilize Gateway if you want more fine-grained control.
 
 !!! note "Approval needed!"
-    Currently, if any tokens do not have sufficient **allowance**, both strategies and scripts will not start and the logs will show messages like `[connector] is not ready. Please wait...` continually. See [Approving tokens](/gateway/tokens/#approving-tokens) for information on how to approve tokens.
+    Currently, if any tokens do not have sufficient **allowance**, both strategies and scripts will not start and the logs will show messages like `[connector] is not ready. Please wait...` continually. See [Approving tokens](tokens.md) for information on how to approve tokens.
 
 ## AMM-Arbitrage Strategy
 
-A good way to safely test Gateway is to run the [AMM-Arbitrage](/strategies/amm-arbitrage) strategy between a testnet DEX connector and a CEX connector in paper trading mode.
+A good way to safely test Gateway is to run the [AMM-Arbitrage](../strategies/amm-arbitrage.md) strategy between a testnet DEX connector and a CEX connector in paper trading mode.
 
 The guide below shows you how to run this strategy using the `uniswap-ethereum-goerli` connector versus the `binance-paper-trade` connector.
 

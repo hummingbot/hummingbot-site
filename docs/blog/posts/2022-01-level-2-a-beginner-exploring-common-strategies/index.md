@@ -15,10 +15,10 @@ The following pages will help you to explore how you can set up your bot with di
 
 1. **Strategies:**
    - To explore all the different strategies provided by Hummingbot, you can visit Hummingbot Foundation’s documentation site:
-     [https://hummingbot.org/strategies/](/strategies/index.md)
+     [https://hummingbot.org/strategies/](../../../strategies/index.md)
 2. **Global Configurations:**
    - There are global configurations that apply to most strategies. Learn more about them here:
-     [https://hummingbot.org/global-configs/](/global-configs/index.md)
+     [https://hummingbot.org/global-configs/](../../../global-configs/index.md)
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ This is the most commonly used strategy by Hummingbot users. The prompts in the 
 
 This is the simplest of all the strategies. Like in normal trading, you buy and sell assets at a certain price by placing maker orders in the order book.
 
-[https://hummingbot.org/strategies/pure-market-making/](/strategies/pure-market-making.md)
+[https://hummingbot.org/strategies/pure-market-making/](../../../strategies/pure-market-making.md)
 
 ## Advanced market making
 
@@ -45,8 +45,8 @@ Over time, we found out that users who put more time and effort into learning th
 
 Please make sure to fully understand how each advanced parameter works, which parameters don't work well together, their use cases, etc.
 
-[https://hummingbot.org/strategy-configs/](/strategy-configs/index.md)
-[https://hummingbot.org/global-configs/](/global-configs/index.md)
+[https://hummingbot.org/strategy-configs/](../../../strategy-configs/index.mdd)
+[https://hummingbot.org/global-configs/](../../../global-configs/index.md)
 
 ## Cross-exchange market making
 
@@ -55,7 +55,7 @@ This is another strategy available to use with Hummingbot. You will need to hold
 Cross exchange is a **maker-taker** strategy. Read more through the docs link and blog below :
 
 [https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/](../2020-09-what-is-cross-exchange-market-making/index.md)
-[https://hummingbot.org/strategies/cross-exchange-market-making/](/strategies/cross-exchange-market-making.md)
+[https://hummingbot.org/strategies/cross-exchange-market-making/](../../../strategies/cross-exchange-market-making.md)
 
 Our video is outdated in terms of Hummingbot UI but explains the idea of cross exchange market making strategy.
 
@@ -68,7 +68,7 @@ Similar to pure market making strategy, Hummingbot continually posts limit bid a
 
 You can click the link below on how it works and to know more.
 
-[https://hummingbot.org/strategies/perpetual-market-making/](/strategies/perpetual-market-making.md)
+[https://hummingbot.org/strategies/perpetual-market-making/](../../../strategies/perpetual-market-making.md)
 
 ## Arbitrage
 
@@ -99,7 +99,7 @@ ov. It allows users to directly adjust the risk_factor  (gamma) parameter descri
 
 This strategies dynamically changes the bid and ask spreads based on the market volatility and is great for people who do not have that much time to manage their bots. However, if you are participating in liquidity mining campaigns, it provides less control over the spreads so the rewards earned may be less consistent.
 
-[https://hummingbot.org/strategies/avellaneda-market-making/](/strategies/avellaneda-market-making.md)
+[https://hummingbot.org/strategies/avellaneda-market-making/](../../../strategies/avellaneda-market-making.md)
 
 ## Celo Arbitrage
 
@@ -110,14 +110,14 @@ The celo_arb strategy is a special case of the normal arbitrage strategy. User c
 
 The amm_arb strategy is another special case of the normal arbitrage strategy. In which you can arbitrage with Protocol connectors through gateway and a spot connector.
 
-[https://hummingbot.org/strategies/amm-arbitrage/](/strategies/amm-arbitrage.md)
+[https://hummingbot.org/strategies/amm-arbitrage/](../../../strategies/amm-arbitrage.md)
 [https://hummingbot.io/en/blog/2021-01-terra-amm-arbitrage-trade](https://hummingbot.io/en/blog/2021-01-terra-amm-arbitrage-trade?ref=blog.hummingbot.org)
 
 ## Spot Perpetual Arbitrage
 
 The Spot Perpetual Arbitrage strategy, arbitrages through a futures connector like Binance Futures and a spot connector. You can also simulate trading here by using binance_perpetual_testnet and paper_trade for spot connectors.
 
-[https://hummingbot.org/strategies/spot-perpetual-arbitrage/](/strategies/spot-perpetual-arbitrage.md)
+[https://hummingbot.org/strategies/spot-perpetual-arbitrage/](../../../strategies/spot-perpetual-arbitrage.md)
 [https://hummingbot.io/en/blog/2021-03-spot-perpetual-protocol-guide](../2021-03-spot-perpetual-protocol-guide/index.md)
 [https://www.youtube.com/watch?v=hJPmAy-Ellk](https://www.youtube.com/watch?v=hJPmAy-Ellk&ref=blog.hummingbot.org)
 
@@ -125,17 +125,17 @@ The Spot Perpetual Arbitrage strategy, arbitrages through a futures connector li
 
 This strategy's focus is on users who want to do liquidity mining on different pairs, the pairs have to be on the same base or quote. For example FIRO-USDT, AVAX-USDT. It also can adjust the spreads based on the volatility of that certain market.
 
-[https://hummingbot.org/strategies/liquidity-mining/](/strategies/liquidity-mining.md)
+[https://hummingbot.org/strategies/liquidity-mining/](../../../strategies/liquidity-mining.md)
 [https://www.youtube.com/watch?v=7LQxaE3NtLA](https://www.youtube.com/watch?v=7LQxaE3NtLA&ref=blog.hummingbot.org)
 
 # The two most common strategies for beginners
 
 The most common strategies for beginners include the following. We will explain each of the strategies in the coming sections.
 
-## [Pure Market Making Strategy](/strategies/pure-market-making.md)
+## [Pure Market Making Strategy](../../../strategies/pure-market-making.md)
 
 Pure Market Making Strategy gives you most control over the bot’s certain configurations such as bid and ask spreads and is simple to understand. It is one of the most popular strategies.
 
-## [Cross exchange market making strategy](/strategies/cross-exchange-mining.md)
+## [Cross exchange market making strategy](../../../strategies/cross-exchange-market-making.md)
 
 Cross exchange market making strategy is a strategy that we recommend to beginners because it significantly reduces the risk of market making by greatly reducing miners’ [inventory risk](../2020-10-inventory-risk/index.md), giving users more protection when the tokens drop in value significantly.
