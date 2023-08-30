@@ -6,16 +6,111 @@ hide:
   - feedback
 ---
 
-Botcamp is the official training and membership program for the Hummingbot community. It is a paid online course offered by Hummingbot Foundation that teaches you both the **theory and practice of algo trading**.
+# Dive into Botcamp
 
-Members learn how to design and run strategies such as market making, arbitrage, and directional strategies. Afterwards, they can create their own custom trading strategy as a Hummingbot script. Many of the [sample scripts](/scripts/examples) were built by Botcamp members.
+Botcamp, Hummingbot's official training course, teaches you how to create, fine-tune, and master sophisticated algo trading strategies. Whether you're an individual or professional trader, immerse yourself in:
 
-Members get access to the full library of Botcamp content modules along with a monthly live session teaches you how to use the newest features in Hummingbot. In addition, you get individualized 1-on-1 coaching from mentors, hands-on support from our staff in installing and using Hummingbot, and private channels to network with other members.
+<div class="grid cards wide" markdown>
 
-Each quarterly, we organize a Demo Day for Botcamp members to showcase the custom strategies that they have built. Here are two recent examples:
+-   :material-format-paint:{ .lg .middle } __Exclusive Content__
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/DyHA8KPheMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    ---
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/kjavBd9vvWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    Delve into a curated video library with over 30+ hours of live instruction.
 
-Enroll now: <https://botcamp.hummingbot.org/p/membership>
+-   :material-upload-network:{ .lg .middle } __Monthly Bot Battles__
+
+    ---
+
+    Hone your skills and win token rewards in monthly bot trading competitions
+
+-   :material-chart-line:{ .lg .middle } __Personalized Coaching__
+
+    ---
+
+    Hands-on guidance from the trading masters.
+
+-   :material-satellite-uplink:{ .lg .middle } __Exclusive Community__
+
+    ---
+
+    Collaborate with like-minded traders.
+
+</div>
+
+---
+
+# Is Botcamp for You?
+
+Join over 120 lifelong learners who mastering algo trading with Botcamp.
+
+<div class="grid cards" markdown>
+
+-   :material-format-paint:{ .lg .middle } __Algo Traders__
+
+    ---
+
+    ![](/botcamp/who-botcamp-for-1.png)
+
+    Automate your trading strategies and discover techniques used by the pros
+
+-   :material-upload-network:{ .lg .middle } __Token Projects__
+
+    ---
+
+    ![](/botcamp/who-botcamp-for-2.png)
+
+    Learn how to run market making and DEX arbitrage bots to power your token's liquidity
+
+-   :material-chart-line:{ .lg .middle } __Industry Professionals__
+
+    ---
+
+    ![](/botcamp/who-botcamp-for-3.png)
+
+    Grow your professional network via the Botcamp community.
+
+</div>
+
+---
+
+# Learn to Create Cutting Edge Strategies
+
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/kjavBd9vvWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/DyHA8KPheMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/mjeTm9MQz9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/h8-TyANqam0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+  </div>
+
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
+  </div>
+</div>
