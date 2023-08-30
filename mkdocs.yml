@@ -291,6 +291,7 @@ nav:
         - Vertex: exchanges/vertex.md
         - VVS: exchanges/vvs.md
         - XSwap: exchanges/xswap.md
+        - Plenty: exchanges/plenty.md
       - Chain Connectors:
         - Chain Connectors: chains/index.md
         - Ethereum: chains/ethereum.md
@@ -304,6 +305,7 @@ nav:
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md
+        - Tezos: chains/tezos.md
       - Building CEX Connectors:
         - Building CEX Connectors: developers/connectors/index.md
         - Architecture: developers/connectors/architecture/index.md
@@ -326,6 +328,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.19.0: release-notes/1.19.0.md
     - 1.18.0: release-notes/1.18.0.md
     - 1.17.0: release-notes/1.17.0.md
     - 1.16.0: release-notes/1.16.0.md
@@ -350,7 +353,6 @@ nav:
   - Community:
     - Community: community/index.md
     # - Events: community/events.md
-    - Botcamp: botcamp/index.md 
     - Bounties: 
       - Bounties: bounties/index.md
       - For Contributors: bounties/contributors.md
@@ -365,6 +367,7 @@ nav:
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
     - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
+  - Botcamp: botcamp/index.md 
   - About:
     - About: about/index.md
     - FAQ: faq.md
