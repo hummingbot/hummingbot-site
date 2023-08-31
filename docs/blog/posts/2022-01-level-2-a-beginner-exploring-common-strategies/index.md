@@ -84,7 +84,7 @@ Arbitrage is a taker-taker strategy because it sits around waiting for an opport
 
 ## Missing some trades
 
-You will sometimes encounter scenarios where you might "miss" a trade. In our [example](https://www.notion.so/Hummingbot-Strategies-f6be3f0fd69846939edff76ff900ee8c?ref=blog.hummingbot.org) in cross exchange strategy, you may have sold the item but can no longer buy the same one because:
+You will sometimes encounter scenarios where you might "miss" a trade. In our example, in cross exchange strategy, you may have sold the item but can no longer buy the same one because:
 
 1. Someone else took the order from STORE B and
 2. The price went up and is no longer profitable
@@ -111,7 +111,7 @@ The celo_arb strategy is a special case of the normal arbitrage strategy. User c
 The amm_arb strategy is another special case of the normal arbitrage strategy. In which you can arbitrage with Protocol connectors through gateway and a spot connector.
 
 [https://hummingbot.org/strategies/amm-arbitrage/](../../../strategies/amm-arbitrage.md)
-[https://hummingbot.io/en/blog/2021-01-terra-amm-arbitrage-trade](https://hummingbot.io/en/blog/2021-01-terra-amm-arbitrage-trade?ref=blog.hummingbot.org)
+[https://hummingbot.io/en/blog/2021-01-terra-amm-arbitrage-trade](../2020-12-amm-arbitrage-uniswap-balancer/index.md)
 
 ## Spot Perpetual Arbitrage
 

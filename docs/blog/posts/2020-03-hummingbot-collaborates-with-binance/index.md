@@ -36,5 +36,5 @@ In addition, Binance will be working with the Hummingbot team to support liquidi
 🌊⛏️ Liquidity miners: If you are interested in joining liquidity mining, please refer to below resources:
 
 - [Hummingbot Help Center](https://discord.gg/hummingbot)
-- [Hummingbot Quickstart Guide](https://hummingbot.io/academy/quickstart/)
+- [Hummingbot Quickstart Guide](../../../quickstart/index.md)
 - [Hummingbot Miners web app](https://miners.hummingbot.io)

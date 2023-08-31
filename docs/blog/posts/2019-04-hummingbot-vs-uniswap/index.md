@@ -27,7 +27,7 @@ Funded by an Ethereum Foundation grant, Uniswap is truly decentralized with no t
 
 ![ETH locked in Uniswap: https://mikemcdonald.github.io/eth-defi/](./uniswap-chart.png)
 
-Many great articles already [describe Uniswap](https://medium.com/scalar-capital/uniswap-a-unique-exchange-f4ef44f807bf), [analyze its profitability](https://www.tokendaily.co/blog/pnl-analysis-of-uniswap-market-making), and [explain the theory behind automated market makers](https://vitalik.ca/general/2017/06/22/marketmakers.html). 
+Many great articles already [describe Uniswap](https://medium.com/scalar-capital/uniswap-a-unique-exchange-f4ef44f807bf), analyze its profitability, and [explain the theory behind automated market makers](https://vitalik.ca/general/2017/06/22/marketmakers.html). 
 
 
 While rehashing those articles is outside the scope of this post, we note that there are three types of users in the Uniswap ecosystem:

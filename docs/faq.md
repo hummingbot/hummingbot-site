@@ -217,7 +217,7 @@ No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#
 
 ### How do I know that I'm using the correct HBOT token?
 
-To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from [Reputable Sources](/hbot/#reputable-information-sources). This does not constitute investment advice or a recommendation for any platform or market listed.
+To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from Reputable Sources. This does not constitute investment advice or a recommendation for any platform or market listed.
 
 ### Does the Foundation plan to list HBOT on (any crypto exchange)?
 
@@ -225,7 +225,7 @@ Please see Reputable Sources for information about venues where HBOT may be trad
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](governance/epochs.md). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
 See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
 

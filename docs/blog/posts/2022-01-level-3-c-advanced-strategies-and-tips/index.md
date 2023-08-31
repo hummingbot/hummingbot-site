@@ -66,5 +66,5 @@ In fact, many professional hedge funds use token loans when they provide market 
 
 Token loans are available on exchanges such as [Gate.io](http://gate.io/?ref=blog.hummingbot.org). Make sure you have enough collateral when you make the token loans. You can look for markets on [miner.hummingbot.io](http://miner.hummingbot.io/?ref=blog.hummingbot.org) where token loans are available on Gate.io and market make with the loaned tokens. The required market on miner.hummingbot.io does not have to be Gate.io as you can transfer the loaned tokens from Gate to other exchanges, do market making, and then transfer them back to Gate to return the tokens during expiration.
 
-[Gate.io | Official Website of Gate.io | Bitcoin Exchange | Bitcoin Price | Crypto Exchange | Cryptocurrency Exchange](https://www.gate.io/cryptoloan/USDT?ch=ann210&ref=blog.hummingbot.org)
+[Gate.io | Official Website of Gate.io | Bitcoin Exchange | Bitcoin Price | Crypto Exchange | Cryptocurrency Exchange](https://www.gate.io/)
 

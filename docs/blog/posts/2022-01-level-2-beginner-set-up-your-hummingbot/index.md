@@ -22,20 +22,16 @@ The goal of this level is to help you earn your first $10 in Miner rewards!
 
 The online Test Drive and the Client app are essentially the same product. The Test Drive allows you to try out our product online without installing anything on your laptop but there is a time quota per instance. You can also download our Client desktop app directly so that your bots can run on your computer with no time restrictions.
 
-**Test Drive**
-
-[Running Hummingbot](https://hummingbot.io/en/academy/quickstart/?ref=blog.hummingbot.org)
 
 **Client (Desktop App)**
 
 
-[Running Hummingbot](https://hummingbot.io/en/academy/quickstart/?ref=blog.hummingbot.org)
+[Running Hummingbot](../../../installation/index.md)
 
 ### **Set up a Miner account for liquidity mining rewards**
 
 To qualify for liquidity mining rewards in the [Hummingbot miner platform](https://miner.hummingbot.io/?ref=blog.hummingbot.org), you will have to set up a miner account. Here’s a quick start guide:
 
-[Quickstart | Configure Hummingbot Miner](https://hummingbot.io/en/academy/quickstart/2-configure-miner/?ref=blog.hummingbot.org)
 
 ### **Reading for Level 2: Exploring Strategies**
 

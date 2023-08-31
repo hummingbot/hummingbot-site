@@ -18,7 +18,7 @@ Currently, XSWAP is a **Bronze** exchange, as voted by HBOT holders in each quar
 - **Website**: <https://xswap.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/xswap-protocol/>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/xswap-protocol>
-- **Fees**: <https://docs.xswap.com/products/xswap-exchange/xswap-pools>
+- **Fees**: 
 
 ## 🔑 How to Connect
 
@@ -49,8 +49,8 @@ The xswap connector now uses wallet [pubKey] on xdc-chain-xinfin
 - **ID**: `xswap`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://github.com/Carry-So/xsswap-sdk>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/xswap>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/xswap.yml>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/xsswap>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/xsswap.yml>
 
 ### Endpoints
 

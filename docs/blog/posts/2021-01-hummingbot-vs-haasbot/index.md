@@ -45,7 +45,8 @@ Similar to Cryptohopper, Haasbot with its graphical user interface, is easier to
 and the bot navigation is quite self-explanatory. However, the technical side of Haasbot will be difficult for 
 newbies as they will need more time to understand the Haasbot configurations and process. 
 Haasbot does have 24/7/365 support but quite slow in response, and the documentation on its market making 
-features is very basic and limited, see [here](https://help.haasonline.com/docs/custom-trade-bots/market-making-bot). 
+features is very basic and limited
+. 
 Although Hummingbot is technical as well, we have extensive documentation and tutorial videos for users to test it 
 out and what’s more, you can get instant 24/7/365 support through [Discord](https://discord.hummingbot.io). 
 

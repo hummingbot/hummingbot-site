@@ -27,7 +27,7 @@ The winning [`hedge`](/strategies/hedge/) strategy was merged in version [0.45.0
 * **Start date**: May 3, 2021
 * **End date**: May 23, 2021
 * **Total prize amount**: $5,000 (including tips)
-* **Winners**: https://hummingbot.io/blog/2021-05-opendefi-hackathon-hummingbot-bounty-winner/
+* **Winners**: 
 
 | Contributor                                        | Contribution                                               | Bounty   | Amount     |
 |----------------------------------------------------|------------------------------------------------------------|--------- | ---------- |

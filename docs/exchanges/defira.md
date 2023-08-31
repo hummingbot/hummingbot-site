@@ -47,7 +47,7 @@ The defira connector now uses wallet [pubKey] on harmony-mainnet
 
 - **ID**: `defira`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.defira.exchange/>
+- **API Docs**: <https://docs.defira.com/>
 - **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/defira>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/defira.yml>
 

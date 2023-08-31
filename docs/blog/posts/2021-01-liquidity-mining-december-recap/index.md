@@ -13,11 +13,10 @@ featured: false
 ![cover](december-2020-recap.png)
 
 ### 10-month Summary Statistics
-For a discussion and explanation of some of the metrics we are tracking, please see our blog post - [Liquidity mining: April recap](https://hummingbot.io/blog/2020-05-liquidity-mining-2nd-month-recap/).
 
 To date, we have seen 1,179 unique miners participate in providing liquidity on Hummingbot Miner. From March 2020 to December 2020, order book depth created by liquidity miners resulted in $303.6 million of traded volume. Meanwhile, the rewards paid out to miners has totaled USD 215,362 equivalent, resulting in cost-effective market making for token issuers.
 
-Since the platform’s launch, we have run campaigns on Binance.com for 15 different token issuers for 46 different trading pairs. In December, we launched three new campaigns, for [Ava Lab’s Avalanche](https://hummingbot.io/blog/2020-12-ava-labs-avalanche-hummingbot-liquidity-mining/) (AVAX) tokens, [Phoenix Global](https://hummingbot.io/blog/2020-12-phoenix-global-hummingbot-liquidity-mining/) (PHB), and [Frontier](https://hummingbot.io/blog/2020-12-frontier-hummingbot-liquidity-mining-campaign/) (FRONT).  We have proven that our system and concept of liquidity mining is able to serve token issuers’ needs efficiently and effectively.
+Since the platform’s launch, we have run campaigns on Binance.com for 15 different token issuers for 46 different trading pairs. In December, we launched three new campaigns, for [Ava Lab’s Avalanche](../2020-12-ava-labs-avalanche-hummingbot-liquidity-mining/index.md) (AVAX) tokens, Phoenix Global(PHB), and Frontier (FRONT). We have proven that our system and concept of liquidity mining is able to serve token issuers’ needs efficiently and effectively.
 
 <!-- more -->
 
