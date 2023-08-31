@@ -25,7 +25,7 @@ The guide below shows you how to run this strategy using the `uniswap-ethereum-g
 
 ### Create strategy
 
-Use `create` command to set up an [`amm_arb` strategy](../strategies/amm-arbitrage/). Answer the question prompts presented so that you to generate the following configuration:
+Use `create` command to set up an [`amm_arb` strategy](../strategies/amm-arbitrage.md). Answer the question prompts presented so that you to generate the following configuration:
 
 ```yaml
 template_version: 5

@@ -193,6 +193,5 @@ The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/pro
 After Epoch 1, the Foundation conducted a [retrospective](https://forum.hummingbot.org/t/epoch-2-proposed-governance-changes-part-1/45/1) and enacted a number of [changes](https://forum.hummingbot.org/t/epoch-2-proposed-changes-master-thread/129) to the governance process. Specifically, the Foundation decided to start the following initiatives:
 
 - Start the Exchange Certification initiative
-- Create more structure around the [Bounties](/governance/bounties/) process
+- Create more structure around the [Bounties](../bounties/index.md) process
 - Start a developer bootcamp [Botcamp](https://hummingbot.org/botcamp/)
-
