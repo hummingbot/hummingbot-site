@@ -14,10 +14,11 @@ The following steps will allow you **track orders** your bot has placed, **see r
 
 To get to your liquidity miner dashboard, first navigate to [miner.hummingbot.io](https://miner.hummingbot.io) and log into your account, as you did in [step 2](https://hummingbot.io/academy/2-add-read-api).
 
-![log in to miner][log-in]
+![](5-a-login.png)
 
 From [miner.hummingbot.io](https://miner.hummingbot.io), go to **Dashboard** from the main menu.
-![go to dashboard][dashboard]
+
+![](5-b-dboard.png)
 
 ### Track Orders
 
@@ -25,7 +26,7 @@ In your dashboard, go to the `Order Tracking` tab.
 
 Here you can see the orders you have placed in the past hour. You can display the order history by market pair, and view by the amount of the orders or the price at which they were placed.
 
-![order tracking][order-tracking]
+![](<5-c-track orders.png>)
 
 You can also watch your orders being placed and cancelled on the exchanges themselves.
 
@@ -33,7 +34,7 @@ You can also watch your orders being placed and cancelled on the exchanges thems
 
 After some processing time, your earned rewards will be visible in the **Rewards** tab of the Hummingbot Miner page. The Rewards tab contains a chart that displays the rewards earned by your bot over time. You can click on each per-minute order book snapshot to drill down into the orders placed and rewards earned by your bot.
 
-![see rewards][see-rewards]
+![](<5-d-see rewards.png>)
 
 ### Monitor Payouts
 
@@ -45,13 +46,13 @@ For miners who earn less than the required payout amount for this week, their re
 
 Some campaigns also pay out in native tokens so make sure to add the appropriate wallet in Settings to receive the rewards. 
 
-![payouts](5-e-payouts.png)
+![](5-e-payouts.png)
 
 ### Track Performance
 
 Finally, you can visit the Performance tab in your Miner Dashboard. The Performance tab breaks down your total Profit & Loss (P&L) from trades filled, fees paid, and rewards earned across market pairs. See how your bots performed over the past hour, day, or week. Use this data to hone your strategies, and watch as your knowledge and profits grow!
 
-![perf](5-f-performance.png)
+![](5-f-performance.png)
 
 ## Next Steps
 
