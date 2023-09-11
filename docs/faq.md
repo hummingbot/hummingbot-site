@@ -62,7 +62,7 @@ Hummingbot is a free software, so you can download, install, and run it for free
 
 Transactions from Hummingbot are normal transactions conducted on exchanges; therefore when operating Hummingbot, you would be subject to each exchange’s fees (e.g. maker, taker, and withdrawal fees), as you would if you were trading on that exchange normally (i.e. without Hummingbot).
 
-There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](/exchanges/).
+There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](exchanges/index.md).
 
 ## Gateway middleware
 
@@ -71,7 +71,7 @@ There is no minimum amount of assets to use Hummingbot, but users should pay hee
 
 ### What is Gateway?
 
-[Hummingbot Gateway](/gateway) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
+[Hummingbot Gateway](gateway/index.md) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
 
 * Standardizes DEX API endpoints
 * Manages interactions with node providers, and
@@ -217,15 +217,15 @@ No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#
 
 ### How do I know that I'm using the correct HBOT token?
 
-To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from [Reputable Sources](/hbot/#reputable-information-sources). This does not constitute investment advice or a recommendation for any platform or market listed.
+To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, we maintain a compilation of verified HBOT-related pages from Reputable Sources. This does not constitute investment advice or a recommendation for any platform or market listed.
 
 ### Does the Foundation plan to list HBOT on (any crypto exchange)?
 
-Please see [Reputable Sources](/hbot/#reputable-information-sources) for information about venues where HBOT may be traded.
+Please see Reputable Sources for information about venues where HBOT may be traded.
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](governance/epochs.md). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
 See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
 

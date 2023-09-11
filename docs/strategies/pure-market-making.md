@@ -122,4 +122,4 @@ This cycle of order creation and order cancellation will repeat again and again 
 
 :fontawesome-solid-book: [Pure Market Making (PMM) Strategy](https://blog.hummingbot.org/academy-level-2-c-beginner-strategy-1-pure-market-making-pmm-strategy/): Use Pure Market Making Strategy but set dynamic bid/ask orders based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders using inventory skew or spreads-adjusted.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*

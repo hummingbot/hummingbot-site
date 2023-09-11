@@ -18,7 +18,7 @@ Currently, Tinyman is a **Bronze** exchange, as voted by HBOT holders in each qu
 - **Website**: <https://tinyman.org>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/tinyman/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/tinyman>
-- **Fees**: <https://docs.tinyman.org/product-guides/limit-order#is-there-any-transaction-fee>
+- **Fees**: <https://docs.tinyman.org/fees>
 
 ## 🔑 How to Connect
 
@@ -48,7 +48,7 @@ The tinyman connector now uses wallet [pubKey] on algorand-mainnet
 
 - **ID**: `tinyman`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.tinyman.org/reference/>
+- **API Docs**: <https://docs.tinyman.org/>
 - **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/tinyman>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/tinyman.yml>
 

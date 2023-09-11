@@ -104,7 +104,7 @@ A tracker class has to be created for the connector (subclass of `UserStreamTrac
 
 ### Connector
 
-Subclass of `ExchangeBase` (for exchange connectors) or `ConnectorBase` (for [Gateway](/developers/gateway) connectors).
+Subclass of `ExchangeBase` (for exchange connectors) or `ConnectorBase` (for [Gateway](../../gateway/adding-dex-connectors.md) connectors).
 
 It should include:
 
@@ -117,7 +117,7 @@ It should include:
 - Logic to regularly check for order updates using the REST API (this is the backup for the updates received through the websocket)
 - Functionality to process correctly the private channel events received through the user stream
 
-**Example**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py
+**Example**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py>
 
 **Dependencies**: 
 
@@ -133,7 +133,7 @@ In the case of a perpetuals exchange connector, the connector component should s
 - Method to get the current funding information and logic to regularly update it
 - Logic to keep positions status updated
 
-**Example**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/binance_perpetual/binance_perpetual_derivative.py
+**Example**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/binance_perpetual/binance_perpetual_derivative.py>
 
 ## Unit testing
 

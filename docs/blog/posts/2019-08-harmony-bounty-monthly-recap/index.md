@@ -63,7 +63,6 @@ We believe that these changes will drive more participation and increase benefit
 - [What is $ONE Makers, and how to participate?](https://github.com/orgs/hummingbot/projects/7/views/1) 
 - [$ONE Makers Webinar](https://youtu.be/m2LFEr9CVX8)
 - [Hummingbot installation tutorials](https://www.youtube.com/watch?v=LX57Q26LZcw&list=PLDwlNkL_4MMczSzZiomX5wFFuF40z-KLl)
-- [Hummingbot Chinese resources repo](https://github.com/hummingbot/hummingbot_chinese/tree/master/Harmony)
 - [Have questions? Join the convo.](https://discord.hummingbot.io)
 
 [![](btn.png)](https://github.com/hummingbot/hummingbot)

@@ -47,8 +47,8 @@ The pancakeswap connector now uses wallet [pubKey] on binance-smart-chain-mainne
 - **ID**: `pancakeswap`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://docs.pancakeswap.finance/>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/pancakewwap>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/pancakewwap.yml>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/pancakeswap>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/pancakeswap.yml>
 
 ### Endpoints
 

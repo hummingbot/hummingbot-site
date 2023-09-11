@@ -16,9 +16,9 @@ Currently, NDAX is a **Bronze** exchange, as voted by HBOT holders in each quart
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://www.ndax.com/>
+- **Website**: <https://ndax.io/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ndax/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/ndax>
+- **CoinGecko**: 
 - **API Docs**: <https://apidoc.ndax.io/>
 - **Fees**: <https://ndax.io/fees>
 - **Supported Countries**: Not available

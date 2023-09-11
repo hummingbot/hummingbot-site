@@ -65,7 +65,7 @@ The IDEX team has developed a connector, which is ready to be merged into our co
 
 ### Binance Cloud
 
-[Binance Cloud](https://cloud.binance.com/) is an all-in-one solution for partners to launch digital asset exchanges quickly. Leveraging Binance’s technology, security and liquidity, Binance Cloud provides the exchange infrastructure, while enabling partners to focus on business development and operations.
+Binance Cloud is an all-in-one solution for partners to launch digital asset exchanges quickly. Leveraging Binance’s technology, security and liquidity, Binance Cloud provides the exchange infrastructure, while enabling partners to focus on business development and operations.
 
 Currently, we have below two community-built Binance Cloud-powered exchange connectors that are ready to be included in the next release - 
 
@@ -81,7 +81,7 @@ The Mandala team has developed a Hummingbot connector, which is ready to be merg
 
 #### Tokocrypto (powered by Binance Cloud)
 
-[Tokocrypto](https://www.tokocrypto.com/) is Indonesia's no. 1 most trusted crypto-assets digital exchange and is the first entity in Indonesia to be registered under the Trade and Futures Exchange Ministry (BAPPEBTI).
+Tokocrypto is Indonesia's no. 1 most trusted crypto-assets digital exchange and is the first entity in Indonesia to be registered under the Trade and Futures Exchange Ministry (BAPPEBTI).
 
 Formed by a group of crypto enthusiasts who are strong advocates of the benefits of blockchain technology, Tokocrypto's goal is to bring a much needed change to the financial system in Indonesia through the widespread adoption of blockchain technology.
  

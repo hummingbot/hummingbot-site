@@ -15,11 +15,11 @@ Currently, Dexalot is a **Silver** exchange, as voted by HBOT holders in each qu
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://dexalot.finance>
+- **Website**: <https://dexalot.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dexalot/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/dexalot>
 - **API Docs**: <https://docs.dexalot.com/>
-- **Fees**: <https://docs.dexalot.finance/products/dexalot-exchange/dexalot-pools>
+- **Fees**: 
 
 ## 🔑 How to Connect
 

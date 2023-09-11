@@ -21,7 +21,7 @@ Currently, Loopring is a **Bronze** exchange, as voted by HBOT holders in each q
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/loopring>
 - **API Docs**: <https://docs.loopring.io/>
 - **Fees**: <https://blogs.loopring.org/loopring-exchange-faq/>
-- **Supported Countries**: <https://help.loopring.org/en/articles/location-restrictions> 
+- **Supported Countries**: 
 
 ## 🔑 How to Connect
 

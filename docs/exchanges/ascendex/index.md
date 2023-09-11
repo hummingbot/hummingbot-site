@@ -22,8 +22,8 @@ Currently, Ascendex is a **Silver** exchange, as voted by HBOT holders in each q
 - **Website**: <https://www.ascendex.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ascendex/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/ascendex>
-- **API Docs**: <https://docs.ascendex.com>
-- **Fees**: <https://www.ascendex.com/vip/level>
+- **API Docs**: <https://ascendex.github.io/ascendex-pro-api/>
+- **Fees**: <https://ascendex.com/en/support>
 - **Supported Countries**: <https://www.ascendex.com/support/10247584234521> 
 
 ## 🔑 How to Connect
@@ -78,7 +78,7 @@ You are now connected to ascendex
 
 - **ID**: `ascendex`
 - **Connection Type**: WebSocket
-- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ascendex>
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/ascend_ex>
 
 ### Order Types
 

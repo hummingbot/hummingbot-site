@@ -76,5 +76,5 @@ Hummingbot’s cross exchange market making strategy would execute legs 1 and 2.
 [Title](/strategies/index.md)
 To learn more about Hummingbot’s strategies, you can visit the [strategies documentation site](/strategies/index.md).
 
-Are there any strategies you would like to see implemented in Hummingbot?  Please visit the [Discord channels](https://discord.humminbot.io) to suggest and discuss with the Hummingbot community.
+Are there any strategies you would like to see implemented in Hummingbot?  Please visit the [Discord channels](https://discord.gg/hummingbot) to suggest and discuss with the Hummingbot community.
 

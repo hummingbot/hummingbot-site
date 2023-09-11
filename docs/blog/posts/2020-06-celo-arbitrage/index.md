@@ -52,7 +52,7 @@ We invite anyone interested in working on such a strategy to submit an issue to 
 
 ### Try it out
 
-Since Hummingbot is open source, you can already check out the Github [feature branch](https://github.com/CoinAlpha/hummingbot/tree/celo) and test it against ETH-USD pairs on the Baklava Celo testnet. We expect the production strategy to go live closer to when the Celo stability mechanism is activated.
+Since Hummingbot is open source, you can already check out the Github [feature branch](https://github.com/hummingbot/hummingbot/tree/development) and test it against ETH-USD pairs on the Baklava Celo testnet. We expect the production strategy to go live closer to when the Celo stability mechanism is activated.
 
 ### About Celo
 

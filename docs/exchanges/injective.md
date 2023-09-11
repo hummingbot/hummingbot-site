@@ -20,8 +20,8 @@ Currently, Injective is a **Bronze** exchange, as voted by HBOT holders in each 
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/injective>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/injective>
 - **API Docs**: <https://api.injective.exchange>
-- **Fees**: <https://help.injective.exchange/en/articles/4800191-are-there-fees-to-using-injective>
-- **Supported Countries**: <https://help.injective.exchange/en/articles/4798063-location-restrictions> 
+- **Fees**: <https://docs.injective.network/learn/basic-concepts/gas_and_fees/>
+- **Supported Countries**: 
 
 ## 🔑 How to Connect
 

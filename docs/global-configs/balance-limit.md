@@ -1,4 +1,4 @@
-**Updated on version [0.35.0](/release-notes/0.35.0)**
+**Updated on version [0.35.0](../release-notes/index.md)**
 
 Sets the amount limit on how much assets Hummingbot can use in an exchange or wallet. This can be useful when running multiple bots on different trading pairs with same tokens e.g. running a BTC-USDT pair and another bot on ETH-USDT using the same account.
 

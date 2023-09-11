@@ -141,7 +141,7 @@ The aggregated order book that appears on the exchanges showing the total volume
 
 
 ![Oder Book Priority](./orderbookline.png)
-*Source: [Bookmap wiki](https://bookmap.com/wiki/Market_Mechanics)*
+*Source: Bookmap wiki*
 
 If you (or your bot) cancel an order and recreate it at the same price, this new order will go to the end of the line on that price.
 

@@ -17,7 +17,7 @@ Currently, VVS is a **Bronze** exchange, as voted by HBOT holders in each quarte
 
 - **Website**: <https://vvs.finance>
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/vvs-finance/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vvs-finance>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vvs_finance>
 - **Fees**: <https://docs.vvs.finance/product-guides/limit-order#is-there-any-transaction-fee>
 
 ## 🔑 How to Connect
@@ -48,7 +48,7 @@ The vvs connector now uses wallet [pubKey] on cronos-mainnet
 
 - **ID**: `vvs`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://github.com/Carry-So/vvsswap-sdk>
+- **API Docs**: <https://docs.vvs.finance/>
 - **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/vvs>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/vvs.yml>
 

@@ -10,17 +10,17 @@ Strategies have passed the Minimum Voting Power Threshold in the latest Poll and
 
 | Strategy                                                      | Type | Description |
 |---------------------------------------------------------------|------|-------------|
-| [pure_market_making](./pure-market-making)                    | Core | Hummingbot's original single-pair market making strategy |
-| [cross_exchange_market_making](./cross-exchange-market-making)| Core | Market making strategy that mitigates inventory risk by hedging on another exchange |
-| [amm_arb](./amm-arbitrage)                                    | Core | Arbitrage strategy that exploits price differences between AMM DEXs and other exchanges |
-| [avellaneda_market_making](./avellaneda-market-making)        | Community| Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
-| [cross_exchange_mining](./cross-exchange-mining)              | Community | Community-maintained mod of Cross Exchange Market Making strategy |
-| [hedge](./hedge)                                              | Community | Hedges spot exchange inventory risk using perpetual swaps |
-| [liquidity_mining](./liquidity-mining)                        | Community | Provide liquidity on multiple pairs using a single base or quote token |
-| [perpetual_market_making](./perpetual-market-making)          | Community| Market-making strategy for perpetual swap markets |
-| [spot_perpetual_arbitrage](./spot-perpetual-arbitrage)        | Community | Exploits price differences between spot and perpetual swap exchanges |
-| [twap](./twap)                                                | Community | Places a batch of limit orders over a period of time |
-| [uniswap-v3-lp](./uniswap-v3-lp)                              | Community | Dynamically maintains a ranged liquidity position in a Uniswap V3-style AMM DEX |
+| [pure_market_making](../strategies/pure-market-making.md)                    | Core | Hummingbot's original single-pair market making strategy |
+| [cross_exchange_market_making](../strategies/cross-exchange-market-making)| Core | Market making strategy that mitigates inventory risk by hedging on another exchange |
+| [amm_arb](../strategies/amm-arbitrage)                                    | Core | Arbitrage strategy that exploits price differences between AMM DEXs and other exchanges |
+| [avellaneda_market_making](../strategies/avellaneda-market-making)        | Community| Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
+| [cross_exchange_mining](../strategies/cross-exchange-mining)              | Community | Community-maintained mod of Cross Exchange Market Making strategy |
+| [hedge](../strategies/hedge)                                              | Community | Hedges spot exchange inventory risk using perpetual swaps |
+| [liquidity_mining](../strategies/liquidity-mining)                        | Community | Provide liquidity on multiple pairs using a single base or quote token |
+| [perpetual_market_making](../strategies/perpetual-market-making)          | Community| Market-making strategy for perpetual swap markets |
+| [spot_perpetual_arbitrage](../strategies/spot-perpetual-arbitrage)        | Community | Exploits price differences between spot and perpetual swap exchanges |
+| [twap](../strategies/twap)                                                | Community | Places a batch of limit orders over a period of time |
+| [uniswap-v3-lp](../strategies/uniswap-v3-lp)                              | Community | Dynamically maintains a ranged liquidity position in a Uniswap V3-style AMM DEX |
 
 ## Core vs Community Strategies
 
@@ -32,4 +32,4 @@ Community strategies are included in the codebase as a reference for users. They
 
 We encourage users to create and extend strategies for their own purposes, and if they so desire, share them with the community.
 
-Developers may submit strategies for review. Please note the [Contribution Guidelines](/developers/contributions/). For developers interested to create or customize their own strategies, please see [Building V1 Strategies](/developers/strategies).
+Developers may submit strategies for review. Please note the [Contribution Guidelines](../developers/contributions.md). For developers interested to create or customize their own strategies, please see [Building V1 Strategies](../developers/strategies/index.md).
