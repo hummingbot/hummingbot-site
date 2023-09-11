@@ -2,8 +2,8 @@
 
 ## 📁 Strategy Info
 
-* Folder: [/hummingbot/strategy/aroon_oscillator](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/aroon_oscillator)
-* Configs: [aroon_oscillator_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator_config_map.py)
+* Folder: [/hummingbot/strategy/aroon_oscillator](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/)
+* Configs: [aroon_oscillator_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/)
 * Maintainer: None
 
 ## 🏆 Strategy Tier
@@ -16,7 +16,7 @@ Community strategies have passed the Minimum Voting Power Threshold in the lates
 
 This strategy is a modified version of the Pure Market Making strategy that uses the [Aroon technical indicator](https://www.investopedia.com/terms/a/aroon.asp#:~:text=The%20Aroon%20indicator%20is%20a,lows%20over%20a%20time%20period) to adjust order spreads based on the uptrend or downtrend signified by the indicator.
 
-This strategy was the winning submission in the Hummingbot track of the [Open DeFi hackathon](https://hummingbot.io/blog/2021-05-opendefi-hackathon-hummingbot-bounty-winner).
+This strategy was the winning submission in the Hummingbot track of the [Open DeFi hackathon](../blog/posts/2021-04-open-defi-hackathon-bounties/index.md).
 
 ## 🏦 Exchanges supported
 
@@ -61,7 +61,7 @@ This strategy was the winning submission in the Hummingbot track of the [Open De
 
 ## 📓 Description
 
-[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/aroon_oscillator/aroon_oscillator.pyx)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
@@ -113,4 +113,4 @@ well with the Indicator.
 
 :fontawesome-brands-youtube: [Aroon Indicator Strategy Hummingbot Live Followup](https://www.youtube.com/watch?v=5iOorb46aVw): Learn how to set up an `aroon-oscillator` bot.
 
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*

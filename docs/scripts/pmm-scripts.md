@@ -7,7 +7,7 @@ Snippets of Python code that let users customize the [Pure Market Making](/strat
 
 Introduced in version `0.29.0`, **PMM Scripts** are an earlier component that allows users customize the behavior of the [Pure Market Making](/strategies/pure-market-making) strategy with snippets of Python code. Since PMM Scripts run in a separate Python process, they have limited access to variables and events in the main Hummingbot process. For this reason, we advise the community to contribute to the generalized Scripts module rather than PMM Scripts going forward.
 
-- [Getting Started with PMM Scripts](pmm-scripts)
+- [Getting Started with PMM Scripts](pmm-scripts.md)
 - [📁 PMM Script Examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts)
 
 ## How it works

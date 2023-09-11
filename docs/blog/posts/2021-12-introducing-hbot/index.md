@@ -154,7 +154,7 @@ Afterwards, any unclaimed tokens will revert to the Hummingbot Foundation and wi
 
 ## Claim Site
 
-The only official site where recipients can claim tokens is located at [https://claim.hummingbot.org](https://claim.hummingbot.org) (the “Claim Site”). Please make sure that your browser is loading this URL before using the site.
+The only official site where recipients can claim tokens is located at https://claim.hummingbot.org (the “Claim Site”). Please make sure that your browser is loading this URL before using the site.
 
 After login, the Claim Site will display a user’s token allocation (if any), and users will be able to input an Ethereum wallet address where they would like to receive their HBOT tokens.
 
@@ -164,7 +164,7 @@ After login, the Claim Site will display a user’s token allocation (if any), a
 
 ### Github code contributors
 
-Github users who are eligible to claim HBOT tokens will be added to the following private Hummingbot Foundation Github repository: [https://github.com/hummingbot/claim-hbot-tokens.](https://github.com/hummingbot/claim-hbot-tokens.) This private repository will provide eligible code contributors with instructions on how to confirm their email address or provide their Hummingbot Miner email address or alternative address that they would like to use for the claim process. Afterwards, users can login to the Claim Site with that address.
+Github users who are eligible to claim HBOT tokens will be added to the following private Hummingbot Foundation Github repository: https://github.com/hummingbot/claim-hbot-tokens This private repository will provide eligible code contributors with instructions on how to confirm their email address or provide their Hummingbot Miner email address or alternative address that they would like to use for the claim process. Afterwards, users can login to the Claim Site with that address.
 
 ### Hummingbot Miner users
 

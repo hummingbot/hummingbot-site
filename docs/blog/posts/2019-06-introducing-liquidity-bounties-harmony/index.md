@@ -87,7 +87,7 @@ When sharing data from Hummingbot, you are solely responsible for configuring wh
 
 For additional terms related to the sharing and use of your data, please review the following:
 
-- [CoinAlpha’s Privacy Policy](https://www.iubenda.com/privacy-policy/29320743)
+- CoinAlpha’s Privacy Policy 
 - [Hummingbot Apache License 2.0](https://github.com/CoinAlpha/hummingbot/blob/master/LICENSE)
 - [Hummingbot Website Terms of Use](https://www.hummingbot.io/terms.pdf)
 - Each Token Issuer’s respective Privacy Policy that relates to your use of Hummingbot

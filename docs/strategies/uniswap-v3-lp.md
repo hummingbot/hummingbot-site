@@ -97,4 +97,4 @@ Each tick, the bot monitors the pool mid price (`last_price`) and compare it to 
 
 :fontawesome-brands-youtube: [Uniswap V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI): Demo of the latest iteration of Uniswap V3 strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*

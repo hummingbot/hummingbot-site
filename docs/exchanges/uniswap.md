@@ -65,7 +65,7 @@ For more info, run Gateway and go to https:localhost:8080 in your browser to see
 - **ID**: `uniswaplp`
 - **Connection Type**: REST via [Gateway](/gateway)
 - **API Docs**: <https://docs.uniswap.org/sdk/v3/overview>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswaplp>
+- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswap>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml>
 
 ### Endpoints

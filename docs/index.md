@@ -145,7 +145,7 @@ Hummingbot has served as a reliable base for us to build custom tools and strate
 
 <div class="accent" markdown>
 
-### Both individual and professional algorithmic traders use Hummingbot. Use cases include capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](/strategies/amm-arb) and earning liquidity mining rewards on [Hummingbot Miner](https://miner.hummingbot.io).
+### Both individual and professional algorithmic traders use Hummingbot. Use cases include capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](strategies/amm-arbitrage.md) and earning liquidity mining rewards on [Hummingbot Miner](https://miner.hummingbot.io).
 
 </div>
 

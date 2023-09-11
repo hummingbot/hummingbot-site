@@ -1,6 +1,6 @@
 # Max Order Age
 
-**Released on version [0.34.0](/release-notes/0.34.0)**
+**Released on version [0.34.0](../release-notes/index.md)**
 
 ## How it works
 

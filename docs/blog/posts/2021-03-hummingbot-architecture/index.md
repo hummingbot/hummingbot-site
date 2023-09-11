@@ -149,7 +149,7 @@ References:
 
 [https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx)
 
-[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.pyx)
+[https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py)
 
 [https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_api_order_book_data_source.py)
 

@@ -22,7 +22,6 @@ Here are the current CEX connectors in the codebase, as of Q3 2023:
 | [Bybit](../exchanges/bybit) | CLOB | 🥉 Bronze
 | [Coinbase](../exchanges/coinbase) | CLOB | 🥉 Bronze
 | [HitBTC](../exchanges/hitbtc) | CLOB | 🥉 Bronze
-| [Hotbit](../exchanges/hotbit) | CLOB | 🥉 Bronze
 | [Huobi](../exchanges/huobi) | CLOB | 🥉 Bronze | | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
 | [Kraken](../exchanges/kraken) | CLOB | 🥉 Bronze
 | [MEXC](../exchanges/mexc) | CLOB | 🥉 Bronze

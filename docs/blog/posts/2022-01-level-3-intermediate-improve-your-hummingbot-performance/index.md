@@ -68,7 +68,7 @@ The goal of this level is to help you get breakeven PnL!
 - **Mission 3.3:** Build your own processes to manage your P&L. You can take our suggestions as reference here:
 
 **Use token loans to reduce inventory risk**
-- **Mission 3.4:** One way to reduce inventory risk is to use token loans. Some exchanges such as [Gate.io](http://gate.io/?ref=blog.hummingbot.org) allow you to loan tokens: [https://www.gate.io/cryptoloan/USDT?ch=ann210](https://www.gate.io/cryptoloan/USDT?ch=ann210&ref=blog.hummingbot.org)
+- **Mission 3.4:** One way to reduce inventory risk is to use token loans. Some exchanges such as [Gate.io](http://gate.io/?ref=blog.hummingbot.org) allow you to loan tokens: [https://www.gate.io/](https://www.gate.io/)
 - If your main source of income is through miner rewards from Hummingbot miner, having token loans allow you to not own any of the asset traded and return the same assets to the exchange (eg. Gate.io) without being affected if the assets dropped in value.
 
 **Get breakeven PnL through cross-exchange market making**

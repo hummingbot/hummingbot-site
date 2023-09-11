@@ -49,7 +49,7 @@ This bounty is an additional initiative to promote and encourage developers from
 
 Upon completion of the Liquid exchange connector, Hummingbot and Liquid will be launching a market maker rewards program on the Liquid platform, to reward users of Hummingbot for providing liquidity on the Liquid exchange.
 
-This new program follows on the success of the [Harmony ONE Makers program](https://hummingbot.io/liquidity-mining/harmony/), which was a big step in proving that community-based, decentralized market making can work.
+This new program follows on the success of the Harmony ONE Makers program, which was a big step in proving that community-based, decentralized market making can work.
 
 We are excited to be able to offer similar programs in the near future for token issuers who have listed on Liquid as an alternative way to promote liquidity and trading efficiency in their tokens.
 

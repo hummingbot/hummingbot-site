@@ -109,7 +109,7 @@ According to the firm, B2C2 is one of the largest cryptocurrency liquidity provi
 Founded in 2014, Binary Financial is a crypto hedge fund focusing on brokering and facilitating large block Bitcoin trades for high net worth clients and institutions, proprietary trading and electronic market making.
 
 ##### Citizen Hex
-[https://www.citizenhex.com/](https://www.citizenhex.com/)
+https://www.citizenhex.com/
 
 According to the firm, Citizen Hex is purpose-built for the Ethereum era: a corporation centred around acquiring, securing, and trading ERC-20 tokens. Citizen Hex is building market-making tools to provide token liquidity on decentralized exchanges.
 
@@ -118,7 +118,7 @@ According to the firm, Citizen Hex is purpose-built for the Ethereum era: a corp
 Coin Flow is a crypto market maker based in Hong Kong, and it provides designated market making, exchange market making, and ICO Advisory services. It currently is offering market making services for top 100 coins. 
 
 ##### BlockVC
-[https://www.blockvc.com/](https://www.blockvc.com/)
+https://www.blockvc.com
 
 BlockVC is a blockchain investment firm, which also provides life-cycle solutions including incubating, asset management and market making for its portfolio companies. 
 
@@ -138,7 +138,7 @@ Cumberland provides liquidity support to over 40 cryptocurrencies. The company o
 Efficient Frontier is a crypto algorithmic trading firm and market maker with over 13 years of experience in traditional markets and 3 years in crypto. They trade over $100M a day in spot and derivatives markets.  
 
 ##### Fractal Wealth
-[http://www.fractalwealth.com/](http://www.fractalwealth.com/)
+http://www.fractalwealth.com
 
 Fractal is a cryptocurrency trading and technology firm that provides liquidity to decentralized exchanges.
 
@@ -156,7 +156,7 @@ Based in San Francisco, Galois Capital primarily focuses on algorithmic market m
 Grasshopper Capital is an investment manager who works closely with founders helping them commercialise products quickly and effectively as well as opening doors for distribution.
 
 ##### Grapefruit Trading
-[https://gfru.it/](https://gfru.it/)
+https://gfru.it
 
 Based in Chicago, Grapefruit Trading specializes in providing liquidity in cryptos. It is a subsidiary of 4170 Trading. According to the firm, its team members have been actively involved in the crypto space since 2010.
 
@@ -171,7 +171,7 @@ Founded in 2013, GSR is a Hong Kong-based algorithmic digital asset trading. Acc
 HedgeTech is an algorithmic market maker that services issuers, exchanges and other market makers worldwide via two separate entities in the USA and Singapore. The firm has been recognized as a leading market maker by top institutions and world-renowned universities for the stability, security and scalability of its systems. 
 
 ##### Hiro Trading
-[https://www.hirotrading.io/](https://www.hirotrading.io/)
+https://www.hirotrading.io
 
 Headquartered in London, Hiro Trading is a digital asset market making firm – covering both spot and derivative products. Comprising an experienced team of quantitative traders and data scientists, Hiro works closely with crypto exchanges and token issuers to provide their projects with institutional grade liquidity.
 
@@ -196,7 +196,7 @@ Founded in Belgium in 2017, Keyrock is a cryptocurrency market maker building sc
 Koinbros specialises in market-making services and over-the-counter trading on post-ICO utility tokens. We are a privately-owned multi-strategy trading firm. We are focused on seeking out trading and investment opportunities to grow our capital in the utility token markets. We bring together high caliber people, innovative and quantitative modeling, and cutting edge technology to seek out opportunities around cryptocurrency exchanges.
 
 ##### Octagon Strategy
-[https://trade.octfinancial.com/](https://trade.octfinancial.com/)
+https://trade.octfinancial.com
 
 According to the firm, Octagon Strategy is the largest digital asset brokerage in the Asia-Pacific region. The desk facilitates institutions and individuals for the buying and selling of major cryptocurrencies. The team envisions drawing on its deep pools of liquidity to support high volume block trades of cryptocurrencies while ensuring a competitive pricing.
 
