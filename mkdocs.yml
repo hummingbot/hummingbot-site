@@ -152,23 +152,34 @@ nav:
   - Home: index.md
   - Getting Started:
     - Getting Started: getting-started/index.md
-    - Installation: installation/index.md
-    - Install via Docker: installation/docker.md
-    - Install from Source: 
-      - Install from Source: installation/source/index.md
-      - Linux: installation/linux.md
-      - MacOS: installation/mac.md
-      - Windows: installation/windows.md        
-      - Raspberry Pi: installation/raspberry-pi.md
-    - Post-Installation: installation/post-installation.md
     - Quickstart:
-      - Quickstart: quickstart/index.md
+      - Quickstart: getting-started/quickstart/index.md
+      - 1 - Prerequisites: getting-started/quickstart/1-prerequisites.md
+      - 2 - Launch Dashboard: getting-started/quickstart/2-launch-dashboard.md
+      - 3 - Manage Credentials: getting-started/quickstart/3-manage-credentials.md
+      - 4 - Adding Exchange API Keys: getting-started/quickstart/4-adding-exchange-api-keys.md
+      - 5 - Launching Your First Bot: getting-started/quickstart/5-launching-your-first-bot.md
+      - 6 - Analyzing Your Bot's Performance: getting-started/quickstart/6-analyzing-bot-performance.md
+      - 7 - Monitoring Bots using Telegram: getting-started/quickstart/7-monitoring-bots-using-telegram.md
+      - 8 - Next Steps - Mastering Hummingbot: getting-started/quickstart/8-next-steps-mastering-hummingbot.md
+    - Installation:
+      - Installation: installation/index.md
+      - Install via Docker: installation/docker.md
+      - Install from Source: 
+        - Install from Source: installation/source/index.md
+        - Linux: installation/linux.md
+        - MacOS: installation/mac.md
+        - Windows: installation/windows.md        
+        - Raspberry Pi: installation/raspberry-pi.md
+      - Post-Installation: installation/post-installation.md
+    - Developer Quickstart:
+      - Developer Quickstart: quickstart/index.md
       - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
       - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
       - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
       - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
       - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
-    - Broker: installation/broker.md
+    - Deployment Examples ↗️: https://github.com/hummingbot/deploy-examples
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
   - Docs:
@@ -202,6 +213,7 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
+        - Broker: installation/broker.md
       - Strategy Configs:
         - Strategy Configs: strategy-configs/index.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md

@@ -4,18 +4,22 @@ Hummingbot is an open source framework that helps you build **crypto trading bot
 
 Our codebase is free and publicly available on Github under the Apache 2.0 open source license. Help us **democratize high-frequency trading** and provide free access to sophisticated algorithms and tooling to everyone!!
 
-## 🐤 Getting started
+Welcome to the Hummingbot Getting Started guide. This guide will give you an introduction to how to run a bot!
 
 New to Hummingbot? Start here!
 
+[Take the Quickstart Guide](/getting-started/quickstart/){ .md-button .md-button--primary }
+
 - [Installation](/installation): Install Hummingbot on various platforms
-- [Quickstart](/quickstart): Follow the new Quickstart guide to learn how to build a custom market making strategy with Hummingbot!
 - [Features](/client): The main commands and configs in Hummingbot
 
 ## 👩‍💻 For developers
 
 Hummingbot is a general source framework for crypto algorithmic trading. We welcome developers to fork the codebase for their own purposes and contribute to the community.
 
+[Developer Quickstart](/getting-started/quickstart/){ .md-button }
+
+- [Developer Quickstart](/quickstart): Learn how to code and a custom market making script
 - [Developers](/developers): Explanation of Hummingbot's architecture and detailed reference on how to build connectors and strategies
 - [Bounties](/governance/bounties): Get paid for building and maintaining Hummingbot components
 connector middleware
