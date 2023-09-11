@@ -168,6 +168,13 @@ nav:
       - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
       - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
       - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    # - Quickstart - Liquidity Mining:
+    #   - Quickstart - Liquidity Mining: quickstart-liquidity-mining/index.md
+    #   - 1 - Create Keys: quickstart-liquidity-mining/1-create-keys.md
+    #   - 2 - Configure Miner: quickstart-liquidity-mining/2-configure-miner.md
+    #   - 3 - Install Hummingbot: quickstart-liquidity-mining/3-install-hummingbot.md
+    #   - 4 - Create Bot: quickstart-liquidity-mining/4-create-bot.md
+    #   - 5 - Earn Rewards: quickstart-liquidity-mining/5-earn-rewards.md
     - Broker: installation/broker.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
