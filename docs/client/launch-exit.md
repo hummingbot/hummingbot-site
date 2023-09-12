@@ -43,6 +43,9 @@ bin/hummingbot.py
 
 ![](/assets/img/launch-from-source.gif)
 
+!!! tip
+    As of version [1.19.0](/release-notes/1.19.0/), use `./start` command to launch hummingbot from source. [Read more](https://github.com/hummingbot/hummingbot/issues/6513)
+
 ## Exit Hummingbot
 
 Running the `exit` command cancels all outstanding orders and exit the Hummingbot interface. In case of errors, the command `exit -f` will force the application to close.
