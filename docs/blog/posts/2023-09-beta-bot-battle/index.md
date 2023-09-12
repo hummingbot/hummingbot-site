@@ -89,7 +89,7 @@ Collect the following information from your Hummingbot instance:
 2. Trades CSV file from your bot's `data` folder
 3. Strategy Logs from your bot's `logs` folder
 
-Submit this info along with the optional restrospective in the [Battle Submission Form](#) before the deadline: **Wednesday September 27, 2023**.
+Submit this info along with the optional restrospective in the [Battle Submission Form](https://forms.gle/xnsmuCz2YVjKg3xM8) before the deadline: **Wednesday September 27, 2023**.
 
 ## ❓ FAQ
 
