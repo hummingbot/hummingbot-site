@@ -18,6 +18,8 @@ Whether you're a seasoned quant trader or just dipping your toes into the world 
 
 This Beta Bot Battle is a test run for the monthly bot trading competitions that will be a major component of [Botcamp](/botcamp) starting in October. While the Botcamp competitions will be reserved exclusively for Botcamp members, we are opening up this beta competition to any Hummingbot user!
 
+<!-- more -->
+
 ## 🕒 Competition Overview
 
 Run a strategy or script using Hummingbot on Binance Spot OR Binance Futures using a starting balance of 100 USDT during the following time period:
