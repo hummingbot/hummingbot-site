@@ -306,3 +306,8 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   margin: 0 auto;
   width: fit-content;
 }
+
+/* Announcement Bar */
+/* .md-banner {
+  background-color: var(--md-typeset-a-color);
+} */
