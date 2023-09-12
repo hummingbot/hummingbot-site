@@ -6,7 +6,7 @@ categories:
   - Competitions
 ---
 
-# 🚀 Join the Beta Bot Battle!
+# ⚔️ Join the Beta Bot Battle!
 
 ![](./bird-battle.jpg)
 
@@ -89,7 +89,7 @@ Collect the following information from your Hummingbot instance:
 2. Trades CSV file from your bot's `data` folder
 3. Strategy Logs from your bot's `logs` folder
 
-Submit this info along with the optional restrospectiv in the [Battle Submission Form] before the following deadline: **Wednesday September 27, 2023**.
+Submit this info along with the optional restrospective in the [Battle Submission Form](#) before the deadline: **Wednesday September 27, 2023**.
 
 ## ❓ FAQ
 
@@ -102,7 +102,7 @@ Any Hummingbot strategy that trades in a single exchange is eligible:
 - Directional scripts
 - V2 Market Making strategy
 
-You may also run your own custom strategies
+You may also run your own custom strategies as they only place trades on a single venue.
 
 ### How many trading pairs can I use?
 
