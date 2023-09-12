@@ -27,7 +27,7 @@ If you'd like to learn how to build custom quant trading using Scripts, check ou
 ## Candles Feed
 Introduced in version [1.13.0](/release-notes/1.13.0/#custom-ohlcv-candles), the Candles Feed helps users to generate custom OHLCV candles using both historical and live Websocket data, allowing traders to create real-time custom technical indicators using [pandas_ta](https://github.com/twopirllc/pandas-ta) that can be used in a variety of ways.
 
-See [Candles Feed](./candles-feed.md) for docs on this feature.
+See [Candles Feed](https://hummingbot.org/v2-strategies/candles-feed/) for docs on this feature.
 
 ## Additional Resources
 
