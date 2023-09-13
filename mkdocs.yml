@@ -269,6 +269,7 @@ nav:
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
         - Phemex: exchanges/phemex-perpetual.md
+        - Woo X: exchanges/woo-x.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
         - Uniswap 🥇: exchanges/uniswap.md
