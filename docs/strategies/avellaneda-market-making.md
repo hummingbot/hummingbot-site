@@ -188,4 +188,4 @@ The `minimum_spread` parameter is optional, it has no effect on the calculated r
 
 :fontawesome-brands-youtube: [New Avellaneda Market Making Strategy Demo + AMA | Hummingbot Live](https://www.youtube.com/watch?v=ZbkkGvB-fis): Demo of the latest iteration of Avellaneda Market Making strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*

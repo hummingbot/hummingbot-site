@@ -17,7 +17,7 @@ Currently, Ref Finance is a **Bronze** exchange, as voted by HBOT holders in eac
 
 - **Website**: <https://ref.finance>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/ref-finance/>
-- **Fees**: <https://docs.ref.finance/concepts/advanced-topics/01-fees>
+- **Fees**: <https://guide.ref.finance/products/concepts/pooling#trading-fees>
 
 ## 🔑 How to Connect
 
@@ -46,7 +46,7 @@ The ref-finance connector now uses wallet [pubKey] on near-mainnet
 
 - **ID**: `ref`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.ref.finance/reference/>
+- **API Docs**: <https://guide.ref.finance/>
 - **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/ref>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/ref.yml>
 

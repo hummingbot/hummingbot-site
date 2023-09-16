@@ -18,7 +18,7 @@ Currently, BTC-Markets is a **Bronze** exchange, as voted by HBOT holders in eac
 
 - **Website**: <https://www.btcmarkets.net/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/btc-markets/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/btc-markets>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/btcmarkets>
 - **API Docs**: <https://docs.btcmarkets.net/v3/>
 - **Fees**: <https://www.btcmarkets.net/fees>
 - **Supported Countries**: Primarily Australia

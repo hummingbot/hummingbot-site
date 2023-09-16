@@ -101,7 +101,7 @@ By decreasing the range multiplier to 0.5, the target range tightens (29.4% to 7
 
 ### Inventory skew with balance limit
 
-Starting with version **0.30.0**, a [limit](/release-notes/0.30.0/#-new-command-balance-limit) can be applied to the total balance to allocate how much the bot can access in an exchange or wallet. With inventory skew, Hummingbot will maintain a target balance with respect to the allowable asset.
+Starting with version **0.30.0**, a [limit](../release-notes/index.md) can be applied to the total balance to allocate how much the bot can access in an exchange or wallet. With inventory skew, Hummingbot will maintain a target balance with respect to the allowable asset.
 
 ```json
 - inventory_skew_enabled: True

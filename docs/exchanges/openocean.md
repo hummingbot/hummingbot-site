@@ -17,8 +17,8 @@ Currently, OpenOcean is a **Bronze** exchange, as voted by HBOT holders in each 
 
 - **Website**: <https://openocean.finance>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/openocean/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/openocean>
-- **Fees**: <https://docs.openocean.finance/concepts/advanced-topics/01-fees>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/openocean_finance>
+- **Fees**: <https://docs.openocean.finance/protocol/introduction/fees-overview>
 
 ## 🔑 How to Connect
 
@@ -53,7 +53,7 @@ The openocean connector now uses wallet [pubKey] on polygon-mainnet
 
 - **ID**: `openocean`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://github.com/openoceanexchange/openocean-api>
+- **API Docs**: <https://openocean.finance/api/api-sdk/>
 - **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/openocean>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/openocean.yml>
 

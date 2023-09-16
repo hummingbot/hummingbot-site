@@ -23,7 +23,7 @@ Currently, Huobi is a **Bronze** exchange, as voted by HBOT holders in each quar
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/huobi/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/huobi>
 - **API Docs**: <https://www.huobi.com/en-in/opend/newApiPages/>
-- **Fees**: <https://www.huobi.com/fees>
+- **Fees**: <https://www.huobi.com/support/en-us/detail/360000312282>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect

@@ -15,7 +15,7 @@ Currently, SushiSwap is a **Bronze** exchange, as voted by HBOT holders in each 
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://sushiswap.fi>
+- **Website**: <https://www.sushi.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/sushiswap/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/sushiswap>
 - **Fees**: https://docs.sushiswap.fi/products/limit-order#is-there-any-transaction-fee

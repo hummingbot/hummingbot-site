@@ -18,7 +18,7 @@ Currently, Pangolin is a **Bronze** exchange, as voted by HBOT holders in each q
 - **Website**: <https://app.pangolin.exchange>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/pangolin/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/pangolin>
-- **Fees**: <https://docs.pangolin.xyz/product-guides/limit-order#is-there-any-transaction-fee>
+- **Fees**: 
 
 ## 🔑 How to Connect
 

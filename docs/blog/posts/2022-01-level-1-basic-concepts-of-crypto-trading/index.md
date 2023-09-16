@@ -198,7 +198,6 @@ Examples:
 - USD Coin / USDC
 - Binance USD / BUSD
 
-[What Are Stablecoins? | Binance Academy](https://academy.binance.com/economics/what-are-stablecoins?ref=blog.hummingbot.org)
 
 #### Fiat currencies
 

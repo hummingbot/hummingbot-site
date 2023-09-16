@@ -158,20 +158,5 @@ In a Hummingbot script, import `CandlesFactory` to create the candles that you w
 See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
 
 ## 🕯 Perp Candles Feed
-*Collect historical OHCLV data from this exchange's perp markets*
 
-- **ID**: `kucoin_perpetual`
-- **Supported Intervals**: 1min | 3min | 5min | 15min | 30min | 1hour | 2hour | 4hour | 6hour | 8hour | 12hour |  1day | 1week
-- **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed/candles_feed/kucoin_perpetual_candles)** 
-
-### Usage
-
-In a Hummingbot script, import `CandlesFactory` to create the candles that you want:
-```python
-    from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
-    candles = CandlesFactory.get_candle(connector="kucoin_perpetual",
-                                        trading_pair=trading_pair,
-                                        interval="3m", max_records=50)
-```
-
-See [candles_example.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py) for more details.
+Candles Feed not available for Perpetual

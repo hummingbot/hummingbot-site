@@ -81,7 +81,7 @@ If you set your gas price too low, you will save on transaction costs, but you r
 
 Because of that, the arbitrageurs must always be looking for the best blockchain transaction price, balancing cost x speed.
 
-For the **Ethereum** blockchain, a site like [ETH Gas Station](https://ethgasstation.info/index.php) can help you estimate the ideal gas price you should use for your transactions, based on the average speed of past blockchain interactions.
+For the **Ethereum** blockchain, a site like ETH Gas Station can help you estimate the ideal gas price you should use for your transactions, based on the average speed of past blockchain interactions.
 
 With Hummingbot, you have two config options to define how the bot will handle the gas price:
 

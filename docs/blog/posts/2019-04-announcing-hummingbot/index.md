@@ -41,13 +41,13 @@ Users operate Hummingbot through an interactive command line interface:
 
 ![Hummingbot command line interface](./hummingbot-cli.png)
 
-For an explanation of the CLI and a summary of commands, visit the [Hummingbot documentation](/client/client/#user-interface).
+For an explanation of the CLI and a summary of commands, visit the [Hummingbot documentation](../../../client/user-interface.md).
 
 #### Initializing and configuring Hummingbot
 
 ![Configuring Hummingbot](./hummingbot-config.gif)
 
-Hummingbot is initialized and configured through a step-by-step command line interface (see [Client](/client/) for a full example).
+Hummingbot is initialized and configured through a step-by-step command line interface (see [Client](../../../client/index.md) for a full example).
 
 #### Automatically posting and adjusting orders
 
@@ -82,5 +82,5 @@ If this is you and you’d like to work with us, please contact: [partnerships@h
 ### More Information
 
 #### Get started
-- [Install Hummingbot](/installation/index.md)
+- [Install Hummingbot](../../../installation/index.md)
 - [Join our official Discord server](https://discord.hummingbot.io)

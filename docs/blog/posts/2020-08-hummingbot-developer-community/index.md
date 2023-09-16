@@ -48,7 +48,6 @@ We have created a [public calendar](https://calendar.google.com/calendar/embed?s
 
 We release a new version of Hummingbot every 4 weeks, and we are constantly improving and refactoring the codebase. Starting with the [v0.30.0 release notes](https://docs.hummingbot.org/release-notes/), we now include sections that communicate relevant information for developers.
 
-In addition, we have created a [Important Changes](https://www.notion.so/hummingbot/a26c8bcf30284535b0e5689d45a4fe88?v=869e73f78f0b426288476a2abda20f2c) document that summarizes the important changes by release. We’ll add this document and other resources to the upcoming Developer Hub (see below).
 
 ### New dev channels in Discord
 

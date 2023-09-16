@@ -54,7 +54,7 @@ If this is your first time using Hummingbot, those questions usually are very to
 
 For a quick rundown of market making and how to configure the Hummingbot client, Hummingbot's academy articles, documentation, Youtube videos, and GitHub repository are good places to study:
 
-* Hummingbot Academy articles: [https://hummingbot.io/en/academy](https://hummingbot.io/en/academy?ref=blog.hummingbot.org)
+* Hummingbot Academy articles: [https://hummingbot.io/en/academy](https://docs.hummingbot.org/blog/category/level-1/)
 * Hummingbot client documentation: [https://hummingbot.org/docs/](https://hummingbot.org/docs/?ref=blog.hummingbot.org)
 * Hummingbot Youtube channel: [https://www.youtube.com/c/Hummingbot](https://www.youtube.com/c/Hummingbot?ref=blog.hummingbot.org)
 * Hummingbot GitHub: [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot?ref=blog.hummingbot.org)

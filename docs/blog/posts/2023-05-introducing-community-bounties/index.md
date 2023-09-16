@@ -20,7 +20,7 @@ Here are the milestones that Bounties have achieved:
 - 68 bounties paid, resulting in 53 bug fixes and 15 new features and exchange connectors, including Kucoin Perpetual, PancakeSwap, and SushiSwap.
 - 32 unique developers have earned bounties.
 - Smallest bounty paid: 10,000 $HBOT ($50 currently) for Priority 3 bugs.
-- Largest bounty paid: 2,000,000 $HBOT ($10,000 currently) for the [Orchestration Module](https://hummingbot.org/installation/orchestration/).
+- Largest bounty paid: 2,000,000 $HBOT ($10,000 currently) for the [Orchestration Module](../../../installation/broker.md).
 - Total funds spent: 13,337,000 $HBOT ($67,000 currently).
 
 Now, we believe it's time to open up these bounties to the broader Hummingbot ecosystem, so we are recasting them as Community Bounties.

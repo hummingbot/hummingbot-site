@@ -39,11 +39,11 @@ Here are past bounties and grants for new connectors that the Hummingbot communi
 | Proposal          | Connector | Type   | Bounty Amount | Status |
 |-------------------|--------------------|--------|---------------|--------|
 | [HIP-23](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | Ripple         | Chain, DEX         |    1,500,000 HBOT    |  Active     |
-| [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | [Cosmos](/chains/cosmos/)             | Chain       | 1,000,000 HBOT  |  Paid      |
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | [Gate.io (perp)](/exchanges/gate-io-perpetual/)     | PERP CEX         | 750,000 HBOT    |  Paid       |
-| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | [Kucoin (perp)](/exchanges/kucoin-perpetual/)  | PERP CEX         | 750,000 HBOT    |  Paid       |
-| [HIP-25](https://snapshot.org/#/hbot-ip.eth/proposal/0x9f6a13e17917c688bac237fb311d652a787b46843598ec46050b36ae3780624d)   | [dYdX](/exchanges/dydx/) (upgrade) | PERP DEX | 250,000 HBOT    |  Paid       |
-| [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | [LBank](/exchanges/lbank/)              | SPOT CEX         | 200,000 HBOT    |  Paid       |
+| [HIP-26](https://snapshot.org/#/hbot.eth/proposal/0xba85dc0b0cb184bf376ee609e506639d449af38c4408d642633a13839138c5b0)   | [Cosmos](../chains/cosmos.md)             | Chain       | 1,000,000 HBOT  |  Paid      |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | [Gate.io (perp)](../exchanges/gate-io/index.md)     | PERP CEX         | 750,000 HBOT    |  Paid       |
+| [HGP-26](https://snapshot.org/#/hbot.eth/proposal/0x7a02f532e0452d3ce7f8b64a8a52e6bed285cc65461a1523fa0f91f2024f8c01)   | [Kucoin (perp)](../exchanges/kucoin/index.md)  | PERP CEX         | 750,000 HBOT    |  Paid       |
+| [HIP-25](https://snapshot.org/#/hbot-ip.eth/proposal/0x9f6a13e17917c688bac237fb311d652a787b46843598ec46050b36ae3780624d)   | [dYdX](../exchanges/dydx.md) (upgrade) | PERP DEX | 250,000 HBOT    |  Paid       |
+| [HGP-19](https://snapshot.org/#/hbot.eth/proposal/0x855cd611151ef9e44d4507d133bcc64c5119a25425720dcb83f2850098647cc0)   | LBank             | SPOT CEX         | 200,000 HBOT    |  Paid       |
 
 
 ### New Strategies

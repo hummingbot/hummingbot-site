@@ -81,7 +81,7 @@ At many exchanges, you'll find takers and makers pay different transaction fees.
 
 Algo trading that employs market making strategies will automatically and continuously place both buy and sell limit orders with the goal of trying to profit from the difference between the bid and ask prices (the "*bid-ask spread*") over time.
 
-This blog post demonstrates [a basic method of market making](https://medium.com/@CryptoKong123/market-making-strategy-example-staggered-orders-a8cd098889ee).
+This blog post demonstrates a basic method of market making
 
 For more information on different market making strategies, please refer to [our whitepaper](/hummingbot.pdf).
 

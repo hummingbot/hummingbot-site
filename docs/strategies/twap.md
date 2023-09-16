@@ -98,6 +98,6 @@ TWAP processes orders when there is a remaining order quantity & the specified t
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [Strategy coding for dummies](https://hummingbot.io/blog/2022-03-26-strategy-coding-for-dummies): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
+:fontawesome-solid-book: [Strategy coding for dummies](../blog/posts/2022-03-strategy-coding-for-dummies/index.md): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
 
-*Check out [Hummingbot Academy](https://hummingbot.io/academy) for more resources related to this strategy and others!*
+*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*

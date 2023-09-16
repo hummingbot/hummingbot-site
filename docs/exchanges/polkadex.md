@@ -17,8 +17,8 @@ Currently, Polkadex is a **Bronze** exchange, as voted by HBOT holders in each q
 ## ℹ️ Exchange Info
 
 - **Website**: <https://www.polkadex.trade>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/polkadex/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/polkadex>
+- **CoinMarketCap**: <https://coinmarketcap.com/currencies/polkadex/>
+- **CoinGecko**: <https://www.coingecko.com/en/coins/polkadex>
 - **API Docs**: <https://wiki.polkadot.network/docs/build-index>
 - **Fees**: To be determined
 - **Supported Countries**: Global 

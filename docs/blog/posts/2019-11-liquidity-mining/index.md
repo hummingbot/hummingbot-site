@@ -20,7 +20,7 @@ categories:
 
 ### Market making is broken
 
-The need for liquidity is persistent in crypto. Crypto markets are highly fragmented, caused by regulations that force exchanges to silo order books, competition between stablecoins, and technologies like [0x Launch Kit](https://0x.org/launch-kit) that allow anyone to create a decentralized exchange. Per [CoinMarketCap](https://coinmarketcap.com), there are now 21,000+ unique markets (trading pairs), all of whom compete with one another for a scarce pool of liquidity.
+The need for liquidity is persistent in crypto. Crypto markets are highly fragmented, caused by regulations that force exchanges to silo order books, competition between stablecoins, and technologies like `0x Launch Kit` that allow anyone to create a decentralized exchange. Per [CoinMarketCap](https://coinmarketcap.com), there are now 21,000+ unique markets (trading pairs), all of whom compete with one another for a scarce pool of liquidity.
 
 > **We estimate that exchanges and token issuers spend $1.2 billion per year on market making, in the form of fees, rebates, and cost of lent inventory.**
 

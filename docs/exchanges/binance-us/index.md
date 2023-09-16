@@ -26,7 +26,7 @@ HBOT holders voted this exchange into the **Bronze** tier for the current [Epoch
 ## 🔀 Spot Connector
 *Integration to exchange's spot markets API*
 
-- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance_us)
+- [📁 Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance)
 
 ### Usage
 

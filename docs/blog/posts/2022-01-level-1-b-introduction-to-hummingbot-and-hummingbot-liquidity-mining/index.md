@@ -93,8 +93,6 @@ Price takers will place market orders to buy or sell an asset, and in doing so t
 
  the best bid or best ask determined by the market maker.
 
-If unclear, review Creating orders in an exchange, Maker and Taker Orders in [Basic Crypto Trading](https://www.notion.so/Basic-Crypto-Trading-90d150479ea34bddad07d68250b9fb70?ref=blog.hummingbot.org).
-
 In Hummingbot, the `bid_spread` is the % how far from the mid price you want your buy orders are placed. While `ask_spread` is for your sell orders.
 
 Mid price is **NOT** the price that you see in the middle of the orderbook - that's the last trade price.

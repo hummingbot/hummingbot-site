@@ -26,7 +26,7 @@ Each proposal type has its Snapshot sub-space:
 
 ## Getting Started
 
-* [Bounties](/bounties): Earn bounties for making improvements to the Hummingbot codebase and creating content. Check out the guides for [Contributors](/bounties/contributors) and [Sponsors](/bounties/sponsors).
+* [Bounties](../bounties/index.md): Earn bounties for making improvements to the Hummingbot codebase and creating content. Check out the guides for [Contributors](/bounties/contributors) and [Sponsors](/bounties/sponsors).
 
 * [Polls](polls.md): Vote in monthly polls that determine which exchanges, strategies, and issues receive bounties and other improvements.
 

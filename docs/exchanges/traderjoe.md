@@ -16,9 +16,9 @@ Currently, TraderJoe is a **Bronze** exchange, as voted by HBOT holders in each 
 ## ℹ️ Exchange Info
 
 - **Website**: <https://traderjoe.xyz>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/trader-joe/>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/traderjoe/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/traderjoe>
-- **Fees**: <https://docs.traderjoe.xyz/product-guides/limit-order#is-there-any-transaction-fee>
+- **Fees**: <https://docs.traderjoexyz.com/>
 
 ## 🔑 How to Connect
 
