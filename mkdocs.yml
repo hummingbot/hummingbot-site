@@ -161,16 +161,26 @@ nav:
       - Windows: installation/windows.md        
       - Raspberry Pi: installation/raspberry-pi.md
     - Post-Installation: installation/post-installation.md
-    - Quickstart:
-      - Quickstart: quickstart/index.md
-      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
-      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
-      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
-      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
-      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    - Quickstart - Liquidity Mining:
+      - Quickstart - Liquidity Mining: getting-started/liquidity-mining/index.md
+      - 1 - Create Keys: quickstart-liquidity-mining/1-create-keys.md
+      - 2 - Configure Miner: quickstart-liquidity-mining/2-configure-miner.md
+      - 3 - Install Hummingbot: quickstart-liquidity-mining/3-install-hummingbot.md
+      - 4 - Create Bot: quickstart-liquidity-mining/4-create-bot.md
+      - 5 - Earn Rewards: quickstart-liquidity-mining/5-earn-rewards.md
+    - Quickstart - Custom Script:
+      - Quickstart - Custom Script: getting-started/custom-script/index.md
+      - 1 - Hello World: getting-started/custom-script/custom-pmm-1.md
+      - 2 - Simple PMM: getting-started/custom-script/custom-pmm-2.md
+      - 3 - Customize Status: getting-started/custom-script/custom-pmm-3.md
+      - 4 - Basic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-4.md
+      - 5 - Dynamic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-5.md
+    - Join the Community: community/index.md
+    # - Events: community/events.md
     - Broker: installation/broker.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
+    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
   - Docs:
     - Docs: docs/index.md
     - Client:
@@ -351,23 +361,19 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
-  - Community:
-    - Community: community/index.md
-    # - Events: community/events.md
+  - Governance:
+    - Governance: governance/index.md
+    - Polls: governance/polls.md
+    - Proposals: governance/proposals.md
     - Bounties: 
       - Bounties: bounties/index.md
       - For Contributors: bounties/contributors.md
+      - Contribution Guidelines: developers/contributions.md
+      - Forking the Repository: developers/forking.md
       - For Sponsors: bounties/sponsors.md
       - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-    - Governance: 
-      - Governance: governance/index.md
-      - Epochs: governance/epochs.md
-      - Polls: governance/polls.md
-      - Proposals: governance/proposals.md
-      - Whitepaper: governance/whitepaper.md
-    - Contribution Guidelines: developers/contributions.md
-    - Forking the Repository: developers/forking.md
-    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
+    - Epochs: governance/epochs.md
+    - Whitepaper: governance/whitepaper.md
   - Botcamp: botcamp/index.md 
   - About:
     - About: about/index.md

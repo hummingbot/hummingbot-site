@@ -3,6 +3,7 @@ date: 2021-12-16
 authors:
   - foundation
 categories:
+  - Announcements
   - Governance
 ---
 
@@ -11,8 +12,6 @@ categories:
 ![cover](HB_Token_Featured_Banner.webp)
 
 HBOT Tokens empower holders to decide how the Hummingbot codebase changes over time through voting on proposals.
-
-![](./HB_Token_Featured_Banner.webp)
 
 As announced in [this October post](../2021-10-hummingbot-foundation/index.md), CoinAlpha has established the Hummingbot Foundation (the "Foundation"), a new, independent open source foundation that will enable a decentralized, community-led software development model for Hummingbot, an open source toolbox for building crypto trading bots.
 
