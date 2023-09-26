@@ -32,9 +32,9 @@ Bounties can be classified into one of the following types:
 * 🐞 **Bug Fix**: Fix to a bug in the Hummingbot codebase
 * 🚀 **Enhancement**: Update or improvement to a component in the Hummingbot codebase
 * 📺 **Content**: Documentation, videos, guides, and other content that explains how to use an aspect of Hummingbot
-* 📜 **New Script**: A new [script](/scripts/) in the Hummingbot codebase
-* 🏦 **New Connector**: A new [exchange](/exchanges/) or [blockchain](/gateway/chains/) connector in Hummingbot or Hummingbot Gateway
-* 📈 **New Strategy**: A new [strategy](/strategies/) in the Hummingbot codebase.
+* 🔬 **Research**: Investigation into possible work and recommendation on how to proceed
+* 🏦 **New Connector**: A new [connector](/exchanges/) in the Hummingbot or the Hummingbot Gateway codebases
+* 📈 **New Strategy/Script**: A new [strategy](/strategies/) or [script](/scripts/) in the Hummingbot codebase.
 
 In addition, bounties may be:
 

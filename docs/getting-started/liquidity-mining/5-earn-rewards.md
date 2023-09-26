@@ -1,7 +1,7 @@
 This is **part 5** of the Hummingbot Liquidity Mining Quickstart Guide:
 
 1. [Create API Keys]
-2. [Configure Hummingbot Miner]
+2. [Configure Miner]
 3. [Install Hummingbot]
 4. [Create Bot]
 5. **Earn Rewards**
@@ -31,7 +31,7 @@ You can also watch your orders being placed and cancelled on the exchanges thems
 
 ### See Rewards Earned
 
-After some processing time, your earned rewards will be visible in the **Rewards** tab of the Hummingbot Miner page. The Rewards tab contains a chart that displays the rewards earned by your bot over time. You can click on each per-minute order book snapshot to drill down into the orders placed and rewards earned by your bot.
+After some processing time, your earned rewards will be visible in the **Rewards** tab of the Miner page. The Rewards tab contains a chart that displays the rewards earned by your bot over time. You can click on each per-minute order book snapshot to drill down into the orders placed and rewards earned by your bot.
 
 ![see rewards][see-rewards]
 
@@ -57,8 +57,8 @@ For more information on Liquidity Mining, please read the [strategy guide](https
 [order-tracking]: ./5-c-track-orders.png "Track Orders"
 [see-rewards]: ./5-d-see-rewards.png "See Rewards"
 
-[Create API Keys]: ../1-create-keys
-[Configure Hummingbot Miner]: ../2-configure-miner
-[Install Hummingbot]: ../3-install-hummingbot
-[Create Bot]: ../4-create-bot
-[Earn Rewards]: ../5-earn-rewards
+[Create API Keys]: ./1-create-keys
+[Configure Miner]: ./2-configure-miner
+[Install Hummingbot]: ./3-install-hummingbot
+[Create Bot]: ./4-create-bot
+[Earn Rewards]: ./5-earn-rewards
