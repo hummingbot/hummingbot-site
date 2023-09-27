@@ -14,6 +14,7 @@ Here are the current chain connectors in the codebase, as of Q3 2023:
 | [Cronos](/chains/cronos) | Non-EVM |
 | [Harmony](/chains/harmony) | EVM |
 | [Injective](/chains/injective) | Non-EVM |
+| [Kujira](/chains/kujira) | Non-EVM |
 | [Polygon](/chains/polygon) | EVM |
 | [NEAR](/chains/near) | Non-EVM |
 | [XDC Chain](/chains/xdc-chain) | Non-EVM |

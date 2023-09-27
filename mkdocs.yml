@@ -288,6 +288,7 @@ nav:
         - Dexalot 🥈: exchanges/dexalot.md
         - Defira: exchanges/defira.md
         - Injective: exchanges/injective.md
+        - Kujira: exchanges/kujira.md
         - Loopring: exchanges/loopring/index.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - OpenOcean: exchanges/openocean.md
@@ -313,6 +314,7 @@ nav:
         - Cosmos: chains/cosmos.md
         - Harmony: chains/harmony.md
         - Injective: chains/injective.md
+        - Kujira: chains/kujira.md
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md
