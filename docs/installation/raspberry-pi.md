@@ -75,5 +75,5 @@ Clean your Hummingbot directory and then compile:
 
 Launch Hummingbot:
 ```
-bin/hummingbot.py
+./start
 ```

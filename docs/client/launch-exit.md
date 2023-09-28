@@ -38,7 +38,7 @@ conda activate hummingbot
 2. In the `hummingbot` parent directory, run this command to launch the application:
 
 ```Manual
-bin/hummingbot.py
+./start
 ```
 
 ![](/assets/img/launch-from-source.gif)

@@ -127,7 +127,7 @@ git clone https://github.com/CoinAlpha/hummingbot.git
 cd hummingbot && ./clean && ./compile 
 
 # 3) Run Hummingbot
-bin/hummingbot.py
+./start
 ```
 
 And that’s it! Hummingbot should be up and running.

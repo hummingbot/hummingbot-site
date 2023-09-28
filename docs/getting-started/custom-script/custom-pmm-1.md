@@ -43,7 +43,7 @@ Add the following code to the `quickstart_script.py` file:
 
 Start Hummingbot:
 
-- If you installed Hummingbot from source, you should open Terminal/Bash and run the client with `./bin/hummingbot.py` (make sure to run `conda activate hummingbot` first).
+- If you installed Hummingbot from source, you should open Terminal/Bash and run the client with `./start` (make sure to run `conda activate hummingbot` first).
 
 - If you don’t have Hummingbot running already and you are using Docker, start and attach the container by following these instructions: [https://docs.hummingbot.org/installation/docker/](https://docs.hummingbot.org/installation/docker/)
 
