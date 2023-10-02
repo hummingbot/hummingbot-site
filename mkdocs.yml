@@ -287,8 +287,8 @@ nav:
         - Pancakeswap 🥈: exchanges/pancakeswap.md
         - Dexalot 🥈: exchanges/dexalot.md
         - Defira: exchanges/defira.md
-        - Injective: exchanges/injective.md
-        - Kujira: exchanges/kujira.md
+        - Injective Helix: exchanges/injective.md
+        - Kujira Fin: exchanges/kujira.md
         - Loopring: exchanges/loopring/index.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - OpenOcean: exchanges/openocean.md
@@ -364,17 +364,17 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
+  - Bounties: 
+    - Bounties: bounties/index.md
+    - For Sponsors: bounties/sponsors.md
+    - For Contributors: bounties/contributors.md
+    - Contribution Guidelines: developers/contributions.md
+    - Forking the Repository: developers/forking.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Governance:
     - Governance: governance/index.md
     - Polls: governance/polls.md
     - Proposals: governance/proposals.md
-    - Bounties: 
-      - Bounties: bounties/index.md
-      - For Contributors: bounties/contributors.md
-      - Contribution Guidelines: developers/contributions.md
-      - Forking the Repository: developers/forking.md
-      - For Sponsors: bounties/sponsors.md
-      - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
     - Epochs: governance/epochs.md
     - Whitepaper: governance/whitepaper.md
   - Botcamp: botcamp/index.md 
