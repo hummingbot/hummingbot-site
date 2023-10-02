@@ -69,7 +69,7 @@ If you have made any changes,  make sure to re-compile the code with `./compile`
 
 Afterwards, from the root directory, run this command:
 ```
-bin/hummingbot.py
+./start
 ```
 
 ![](/assets/img/launch-from-source.gif)
@@ -128,7 +128,7 @@ Navigate to the folder where your separate Hummingbot is installed, then start t
 
 ```
 conda activate hummingbot
-bin/hummingbot.py
+./start
 ```
 
 To exit the screen (detach), press <kbd>Ctrl</kbd> + <kbd>A</kbd> then <kbd>Ctrl</kbd> + <kbd>D</kbd> in sequence.

@@ -12,9 +12,21 @@ Read about Dashboard in the introductory [blog post](../blog/posts/2023-06-hummi
 * **Docker**: Each bot instance is a [Docker](https://docker.io/) container that Dashboard manages using the [broker module](../installation/broker.md)
 * **V2 Strategies**: Dashboard helps users create and optimize [V2 Strategies](../v2-strategies/index.md)
 
+## Featured Pages
+
+**Bot Orchestration** enables you to effortlessly deploy and manage multiple instances of Hummingbot.
+
+**Backtest Manager** is designed to help you fine-tune your trading strategies using historical data. This month, we started to add the initial components, including integration with the Optuna optimization framework and minimal versions of the initial pages.
+
+**Strategy Performance** helps you analyze the performance of a Hummingbot script or strategy configuration using its SQLite database file.
+
 ## Getting Started
 
 To get started, check out these videos as a preview:
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3WqNV543goI?si=-3GT8hfAw0OuL7XK" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br />
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3WqNV543goI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

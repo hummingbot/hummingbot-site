@@ -105,7 +105,7 @@ And the same on the ask side too!
 
 The current function checks if the current bid size is greater than 0 to progress with placing the order, the change makes this greater than your min order amount variable to place the order.
 
-Now all that's left is to recompile the code, this is usually pretty quick just open git bash and cd to the hummingbot folder. Then activate the `hummingbot conda` environment and type ./compile. That's it! Open up hummingbot (`bin/hummingbot.py`) and test the new parameter.
+Now all that's left is to recompile the code, this is usually pretty quick just open git bash and cd to the hummingbot folder. Then activate the `hummingbot conda` environment and type ./compile. That's it! Open up hummingbot (`./start`) and test the new parameter.
 
 This was a pretty simple change but it gives the basic idea that literally anything can be changed and configured. It's worth saying that there are a number of tricks and sources of information that can be used within your strategy. In the cross exchange market making file the market\_pair variable has a lot of information associated with it that can be used in your strategy, it has many attributes that can be used.
 

@@ -179,7 +179,7 @@ Here, we are looping over the list of order candidates, and then we are executin
 
 ![Alt text](Untitled%202.png)
 
-As before, open a terminal and run the client with **./bin/hummingbot.py.** (Make sure that the conda environment is activated)
+As before, open a terminal and run the client with **./start** (Make sure that the conda environment is activated)
 
 Start the script with the command: `start --script quickstart_script_2.py`.
 
