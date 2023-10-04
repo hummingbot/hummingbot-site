@@ -8,7 +8,7 @@ In this exercise, let’s customize the output of the `status` command so that w
 - We will use the same file: `quickstart_script_2.py`
 - We’ll add a function that overrides the `format_status` method
 
-## Let's code!
+## Let's code
 
 Let’s look at the default `format_status` method first, which is in the ScriptStrategyBase class that each script inherits from:
 
@@ -83,4 +83,4 @@ def format_status(self) -> str:
 
 ## Next steps
 
-Next, we'll start to [customize the market making script](/quickstart/custom-pmm-4/)!
+Next, we'll start to [customize the market making script](custom-pmm-4.md)!

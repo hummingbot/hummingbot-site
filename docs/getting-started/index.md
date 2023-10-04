@@ -1,6 +1,6 @@
 Welcome to Hummingbot!
 
-Hummingbot is an open source framework that helps you build **crypto trading bots** that run on both centralized exchanges (CEX), as well as decentralized exchanges (DEX) on various blockchain networks. 
+Hummingbot is an open source framework that helps you build **crypto trading bots** that run on both centralized exchanges (CEX), as well as decentralized exchanges (DEX) on various blockchain networks.
 
 Our codebase is free and publicly available on Github under the Apache 2.0 open source license. Help us **democratize high-frequency trading** and provide free access to sophisticated algorithms and tooling to everyone!!
 
@@ -10,7 +10,7 @@ New to Hummingbot? Start here!
 
 - [Installation](../installation/index.md): Install Hummingbot on various platforms
 - [Features](../client/index.md): The main commands and configs in Hummingbot
-- [Quickstart - Liquidity Mining](./custom-script/index.md): Follow this guide to learn how to earn liquidity mining rewards by running Hummingbot on the Miner platform
+- [Quickstart - Liquidity Mining](liquidity-mining/index.md): Follow this guide to learn how to earn liquidity mining rewards by running Hummingbot on the Miner platform
 
 ## 👩‍💻 For developers
 

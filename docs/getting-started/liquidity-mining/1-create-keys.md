@@ -46,11 +46,7 @@ Afterwards, you should have two keys, a read-only key and a trade-enabled key:
 Next, [add a read-only API key to Miner][Configure Miner]
 
 [kucoin-home]: ./1-a-kucoin-home.png
-[kucoin-create-api]: ./1-b-kucoin-create-api.png
-[kucoin-api-management]: ./1-c-kucoin-api-management.png
-
-[Create API Keys]: ./1-create-keys
-[Configure Miner]: ./2-configure-miner
-[Install Hummingbot]: ./3-install-hummingbot
-[Create Bot]: ./4-create-bot
-[Earn Rewards]: ./5-earn-rewards
+[Configure Miner]: 2-configure-miner.md
+[Install Hummingbot]: 3-install-hummingbot.md
+[Create Bot]: 4-create-bot.md
+[Earn Rewards]: 5-earn-rewards.md
