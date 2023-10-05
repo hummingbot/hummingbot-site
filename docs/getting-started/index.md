@@ -8,25 +8,23 @@ Welcome to the Hummingbot Getting Started guide. This guide will give you an int
 
 New to Hummingbot? Start here!
 
-
 [Take the Quickstart Guide](/getting-started/quickstart/){ .md-button .md-button--primary }
 
-- [Installation](/installation): Install Hummingbot on various platforms
-- [Features](/client): The main commands and configs in Hummingbot
-
+- [Installation](../installation/index.md): Install Hummingbot on various platforms
+- [Features](../client/index.md): The main commands and configs in Hummingbot
+- [Quickstart - Liquidity Mining](./custom-script/index.md): Follow this guide to learn how to earn liquidity mining rewards by running Hummingbot on the Miner platform
 
 
 ## 👩‍💻 For developers
 
 Hummingbot is a general source framework for crypto algorithmic trading. We welcome developers to fork the codebase for their own purposes and contribute to the community.
 
-
 [Developer Quickstart](/getting-started/quickstart/){ .md-button }
 
-- [Developer Quickstart](/quickstart): Learn how to code and a custom market making script
-- [Developers](/developers): Explanation of Hummingbot's architecture and detailed reference on how to build connectors and strategies
-- [Bounties](/governance/bounties): Get paid for building and maintaining Hummingbot components
-- [Support Hummingbot!](../support-hummingbot.md): How you can support our mission to democratize HFT!
+- [Quickstart - Custom Script](./custom-script/index.md): Follow this guide to learn how to build a custom market making strategy with Hummingbot!
+- [Developers](../developers/index.md): Explanation of Hummingbot's architecture and detailed reference on how to build connectors and strategies
+- [Bounties](../bounties/index.md): Get paid for building and maintaining Hummingbot components
+connector middleware
 - [Contribution Guidelines](../developers/contributions.m): Read this before submitting a pull request
 
 ## 🙋‍♂️ Getting help
@@ -36,11 +34,5 @@ Hummingbot features an active, friendly community of users globally! Here are so
 - Check out the [FAQ](../faq.md), [Troubleshooting](../troubleshooting.md)), and [Glossary](../glossary.md) pages for answers to common questions about Hummingbot
 - To report a bug or request a new feature, post a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
 - Join the official [Discord](https://discord.gg/hummingbot) and post your question on **#support**
-
-For users using Hummingbot to earn rewards on [Miner](https://miner.hummingbot.io), the decentralized market making platform operated by CoinAlpha, you can also access Miner support via the following methods:
-
-- Discord: CoinAlpha maintains 24/7 dedicated technical support for users on the **#miner-support** channel within the Hummingbot Discord server. They help users install Hummingbot and configure API keys for use with the Miner platform, investigates reports related to missing or duplicate rewards, and other issues. 
-- Email: Send CoinAlpha support a message at [support@hummingbot.io](mailto:support@hummingbot.io)
-- Live chat: Click the chat widget in the lower right hand corner of the [Miner website](https://miner.hummingbot.io).
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.

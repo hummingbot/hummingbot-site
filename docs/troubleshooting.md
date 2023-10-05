@@ -14,7 +14,7 @@ Solution 1: exit Hummingbot to compile and restart using these commands:
 ```
 conda activate hummingbot
 ./compile
-bin/hummingbot.py
+./start
 ```
 
 Solution 2: make sure you have conda section in ~/.bashrc. Run conda init if it is not there. Explanation: if you have custom PATH defined in ~/.bashrc, supplied scripts (./compile etc) may pick wrong python binary, causing different errors.

@@ -14,6 +14,7 @@ Here are the current DEX connectors in the codebase, as of Q3 2023:
 | [Dexalot](../exchanges/dexalot.md) | CLOB | 🥈 Silver | Hummingbot Foundation |
 | [Defira](../exchanges/defira.md) | AMM | 🥉 Bronze
 | [Injective](../exchanges/injective.md) | CLOB | 🥉 Bronze
+| [Kujira](../exchanges/kujira.md) | CLOB | 🥉 Bronze
 | [Loopring](../exchanges/loopring/index.md) | CLOB | 🥉 Bronze
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
 | [OpenOcean](../exchanges/openocean.md) | AMM | 🥉 Bronze

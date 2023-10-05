@@ -11,11 +11,10 @@ Elected for a 12-month term in February 2023 in [HGP-35](https://snapshot.org/#/
 | Gene Cheon        | COO, Hummingbot Foundation              | [eth:0xd50..27d](https://etherscan.io/address/0xd506d13498B19A2E9DC293876f498AFD021EA27d)
 | Hoang La          |                                         | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
 | Michael Feng      | Board member, CoinAlpha                 | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
-| Michael Timmons   |                                         | [eth:0x20a..721](https://etherscan.io/address/0x20aEDcC952Ccdb6d5F786B1977b964Ab3898c721)
 
 ## Role & Responsibilities
 
-The Board is a 5-person, independent committee that oversees the day-to-day administration of the Hummingbot Foundation and manages the multi-signature wallet of the HBOT treasury.
+The Board is an independent committee that oversees the day-to-day administration of the Hummingbot Foundation and manages the multi-signature wallet of the HBOT treasury.
 
 The Board conducts quarterly virtual board meetings to discuss Foundation progress and strategy. In addition, the Board regularly corresponds over group chat to handle multi-signature transactions related to HBOT distributions.
 

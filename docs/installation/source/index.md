@@ -37,7 +37,7 @@ conda activate hummingbot
 
 Launch Hummingbot:
 ```
-bin/hummingbot.py
+./start
 ```
 
 ### Removed compiled files

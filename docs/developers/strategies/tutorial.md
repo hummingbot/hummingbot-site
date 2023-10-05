@@ -224,7 +224,7 @@ cd ~/hummingbot-instance
 ```
 Now, start Hummingbot:
 ```
-bin/hummingbot.py
+./start
 ```
 
 ### The Hummingbot UI

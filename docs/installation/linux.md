@@ -91,7 +91,7 @@ From inside the conda environment, run the script that compiles the Cython files
 
 From inside the conda environment, run the following command to launch Hummingbot:
 ```
-bin/hummingbot.py
+./start
 ```
 
 You should see the Hummingbot welcome screen:
@@ -130,7 +130,7 @@ conda activate hummingbot
 ```
 conda activate hummingbot
 
-bin/hummingbot.py
+./start
 ```
 
 ### Update Hummingbot to latest `master` release

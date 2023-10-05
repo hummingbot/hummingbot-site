@@ -6,11 +6,8 @@
 /exchanges/perp/*       /exchanges/:splat               301
 /gateway/exchanges/*    /exchanges/:splat               301
 /gateway/chains/*       /chains/:splat                  301
-/hbot                   https://hummingbot.org/hbot     301
-/news/hbot              https://blog.hummingbot.org/introducing-hbot/  301
-/news/foundation        https://blog.hummingbot.org/hummingbot-foundation  301
-/news/*                 https://blog.hummingbot.org/:splat   301
-/news                   https://blog.hummingbot.org     301
+/hbot                   /governance/hbot                301
+/news                   /blog                           301
 /installation/deploy    /installation/docker            301
 /installation/multiple-bots    /installation/orchestration     301
 /installation/linux    /installation/     301

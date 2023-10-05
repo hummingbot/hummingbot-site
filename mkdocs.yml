@@ -162,26 +162,36 @@ nav:
       - 6 - Analyzing Your Bot's Performance: getting-started/quickstart/6-analyzing-bot-performance.md
       - 7 - Monitoring Bots using Telegram: getting-started/quickstart/7-monitoring-bots-using-telegram.md
       - 8 - Next Steps - Mastering Hummingbot: getting-started/quickstart/8-next-steps-mastering-hummingbot.md
-    - Installation:
-      - Installation: installation/index.md
-      - Install via Docker: installation/docker.md
-      - Install from Source: 
-        - Install from Source: installation/source/index.md
-        - Linux: installation/linux.md
-        - MacOS: installation/mac.md
-        - Windows: installation/windows.md        
-        - Raspberry Pi: installation/raspberry-pi.md
-      - Post-Installation: installation/post-installation.md
-    - Developer Quickstart:
-      - Developer Quickstart: quickstart/index.md
-      - Exercise 1 - Hello World: quickstart/custom-pmm-1.md
-      - Exercise 2 - Simple PMM: quickstart/custom-pmm-2.md
-      - Exercise 3 - Customize Status: quickstart/custom-pmm-3.md
-      - Exercise 4 - Basic Price Ceiling/Floor: quickstart/custom-pmm-4.md
-      - Exercise 5 - Dynamic Price Ceiling/Floor: quickstart/custom-pmm-5.md
+    - Installation: installation/index.md
+    - Install via Docker: installation/docker.md
+    - Install from Source: 
+      - Install from Source: installation/source/index.md
+      - Linux: installation/linux.md
+      - MacOS: installation/mac.md
+      - Windows: installation/windows.md        
+      - Raspberry Pi: installation/raspberry-pi.md
+    - Post-Installation: installation/post-installation.md
+    - Quickstart - Liquidity Mining:
+      - Quickstart - Liquidity Mining: getting-started/liquidity-mining/index.md
+      - 1 - Create Keys: quickstart-liquidity-mining/1-create-keys.md
+      - 2 - Configure Miner: quickstart-liquidity-mining/2-configure-miner.md
+      - 3 - Install Hummingbot: quickstart-liquidity-mining/3-install-hummingbot.md
+      - 4 - Create Bot: quickstart-liquidity-mining/4-create-bot.md
+      - 5 - Earn Rewards: quickstart-liquidity-mining/5-earn-rewards.md
+    - Quickstart - Custom Script:
+      - Quickstart - Custom Script: getting-started/custom-script/index.md
+      - 1 - Hello World: getting-started/custom-script/custom-pmm-1.md
+      - 2 - Simple PMM: getting-started/custom-script/custom-pmm-2.md
+      - 3 - Customize Status: getting-started/custom-script/custom-pmm-3.md
+      - 4 - Basic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-4.md
+      - 5 - Dynamic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-5.md
     - Deployment Examples ↗️: https://github.com/hummingbot/deploy-examples
+    - Join the Community: community/index.md
+    # - Events: community/events.md
+    - Broker: installation/broker.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
+    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
   - Docs:
     - Docs: docs/index.md
     - Client:
@@ -281,6 +291,7 @@ nav:
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
         - Phemex: exchanges/phemex-perpetual.md
+        - Woo X: exchanges/woo-x.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
         - Uniswap 🥇: exchanges/uniswap.md
@@ -288,7 +299,8 @@ nav:
         - Pancakeswap 🥈: exchanges/pancakeswap.md
         - Dexalot 🥈: exchanges/dexalot.md
         - Defira: exchanges/defira.md
-        - Injective: exchanges/injective.md
+        - Injective Helix: exchanges/injective.md
+        - Kujira Fin: exchanges/kujira.md
         - Loopring: exchanges/loopring/index.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - OpenOcean: exchanges/openocean.md
@@ -314,6 +326,7 @@ nav:
         - Cosmos: chains/cosmos.md
         - Harmony: chains/harmony.md
         - Injective: chains/injective.md
+        - Kujira: chains/kujira.md
         - NEAR: chains/near.md
         - Polygon: chains/polygon.md
         - XDC Chain: chains/xdc-chain.md
@@ -340,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.20.0: release-notes/1.20.0.md
     - 1.19.0: release-notes/1.19.0.md
     - 1.18.0: release-notes/1.18.0.md
     - 1.17.0: release-notes/1.17.0.md
@@ -362,23 +376,19 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
-  - Community:
-    - Community: community/index.md
-    # - Events: community/events.md
-    - Bounties: 
-      - Bounties: bounties/index.md
-      - For Contributors: bounties/contributors.md
-      - For Sponsors: bounties/sponsors.md
-      - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-    - Governance: 
-      - Governance: governance/index.md
-      - Epochs: governance/epochs.md
-      - Polls: governance/polls.md
-      - Proposals: governance/proposals.md
-      - Whitepaper: governance/whitepaper.md
+  - Bounties: 
+    - Bounties: bounties/index.md
+    - For Sponsors: bounties/sponsors.md
+    - For Contributors: bounties/contributors.md
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
-    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+  - Governance:
+    - Governance: governance/index.md
+    - Polls: governance/polls.md
+    - Proposals: governance/proposals.md
+    - Epochs: governance/epochs.md
+    - Whitepaper: governance/whitepaper.md
   - Botcamp: botcamp/index.md 
   - About:
     - About: about/index.md

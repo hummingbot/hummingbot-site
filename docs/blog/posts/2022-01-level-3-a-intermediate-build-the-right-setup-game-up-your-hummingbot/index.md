@@ -143,7 +143,7 @@ git fetch origin
 git checkout development
 ./uninstall && ./cleanimpo
 ./install && conda activate hummingbot && ./compile
-bin/hummingbot.py
+./start
 ```
 
 Hummingbot running in development branch has a prefix dev- in the version number.
