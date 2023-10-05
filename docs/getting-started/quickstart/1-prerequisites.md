@@ -17,7 +17,7 @@ The instructions below help you install Hummingbot and its companion modules usi
 
 ## What is Docker?
 
-[Add intro video]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YFl2mCHdv24?si=fCLbxE6VPCZlj0wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The easiest way to install Docker is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites. Here are links to installers for each major OS:
 
@@ -31,31 +31,32 @@ Using Docker for Hummingbot deployment offers several benefits, such as simplify
 
 ## What is Attaching?
 
+Imagine a Docker container as a little sealed room where a small part of a computer program is running. When you "attach" to this container, it's like you're opening a door to this room and stepping inside while it's buzzing along. Now, from inside, you can see what the program is doing, talk to it or give it new instructions. It's a way to directly interact with this small part of the program in its own isolated space, almost like visiting a tiny, self-contained workshop to see what's happening and maybe give a helping hand.
+
 ## Basic Docker Commands
 
 Use the commands below or use the Docker Desktop application to manage your containers:
 
 ### Create the Compose project
+
 ```
 docker compose up -d
 ```
 
 ### Stop the Compose project
+
 ```
 docker compose down
 ```
 
-### Update the Compose project for the latest images
-```
-docker compose up --force-recreate --build -d
-```
+### Pull the latest Dashboard Docker image
 
-### Give all users read/write permissions to local files
 ```
-sudo chmod -R a+rw <files/folders>
+docker pull hummingbot/dashboard:latest
 ```
 
 ### Attach to the container
+
 ```
 docker attach <container-name>
 ```
@@ -64,24 +65,20 @@ docker attach <container-name>
 
 Press keys <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd>
 
-
-### Update the container to the latest image
-```
-docker compose up --force-recreate --build -d
-```
-
 ### List all containers
+
 ```
 docker ps -a
 ```
 
 ### Stop a container
+
 ```
 docker stop <container-name>
 ```
 
 ### Remove a container
+
 ```
 docker rm <container-name>
 ```
-
