@@ -42,8 +42,7 @@ Add the read-only API key, Secret key, and Passphrase generated in [step one][Cr
 
 Next, you'll need to [install hummingbot][Install Hummingbot]
 
-[Create API Keys]: ./1-create-keys
-[Configure Miner]: ./2-configure-miner
-[Install Hummingbot]: ./3-install-hummingbot
-[Create Bot]: ./4-create-bot
-[Earn Rewards]: ./5-earn-rewards
+[Create API Keys]: 1-create-keys.md
+[Install Hummingbot]: 3-install-hummingbot.md
+[Create Bot]: 4-create-bot.md
+[Earn Rewards]: 5-earn-rewards.md

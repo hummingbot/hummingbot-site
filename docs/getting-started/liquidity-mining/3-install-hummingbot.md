@@ -19,8 +19,7 @@ After successful installing Hummingbot, you should see the Hummingbot interface:
 
 Proceed to the next part of the Hummingbot quickstart guide: [Create Bot][Create Bot]
 
-[Create API Keys]: ./1-create-keys
-[Configure Miner]: ./2-configure-miner
-[Install Hummingbot]: ./3-install-hummingbot
-[Create Bot]: ./4-create-bot
-[Earn Rewards]: ./5-earn-rewards
+[Create API Keys]: 1-create-keys.md
+[Configure Miner]: 2-configure-miner.md
+[Create Bot]: 4-create-bot.md
+[Earn Rewards]: 5-earn-rewards.md

@@ -12,7 +12,7 @@ The following steps will allow you **track orders** your bot has placed, **see r
 
 ## Dashboard
 
-To get to your liquidity miner dashboard, first navigate to [miner.hummingbot.io](https://miner.hummingbot.io) and log into your account, as you did in [step 2](https://hummingbot.io/academy/2-add-read-api).
+To get to your liquidity miner dashboard, first navigate to [miner.hummingbot.io](https://miner.hummingbot.io) and log into your account, as you did in [step 2](2-configure-miner.md).
 
 ![log in to miner][log-in]
 
@@ -45,7 +45,6 @@ Congratulations on completing the Hummingbot quickstart guide! You have successf
 
 Hummingbot hopes you enjoy monitoring your progress as you hone your strategies and continue to learn about algorithmic trading! We welcome any feedback and suggestions on our [Discord server](https://discord.hummingbot.io).
 
-
 ## Useful Resources
 
 For more information on Liquidity Mining, please read the [strategy guide](https://docs.hummingbot.io/intro/liquidity-mining/)
@@ -57,8 +56,7 @@ For more information on Liquidity Mining, please read the [strategy guide](https
 [order-tracking]: ./5-c-track-orders.png "Track Orders"
 [see-rewards]: ./5-d-see-rewards.png "See Rewards"
 
-[Create API Keys]: ./1-create-keys
-[Configure Miner]: ./2-configure-miner
-[Install Hummingbot]: ./3-install-hummingbot
-[Create Bot]: ./4-create-bot
-[Earn Rewards]: ./5-earn-rewards
+[Create API Keys]: 1-create-keys.md
+[Configure Miner]: 2-configure-miner.md
+[Install Hummingbot]: 3-install-hummingbot.md
+[Create Bot]: 4-create-bot.md
