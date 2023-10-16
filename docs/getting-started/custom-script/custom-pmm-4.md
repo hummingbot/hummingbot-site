@@ -28,15 +28,15 @@ So how do we define these limits?
 
 - We can fix the floor and ceiling thresholds based on recent minimum and maximum price values.
 - Let’s select the following thresholds for this example:
-  - `price_ceiling`: 0.0327
-  - `price_floor`: 0.02736
+    - `price_ceiling`: 0.0327
+    - `price_floor`: 0.02736
 
 ![Alt text](Untitled%206.png)
 
 - As shown above, the bot is protected when the price goes above 0.0327 because is not going to buy more tokens. Also, if the price goes below 0.02736 the bot is not going to sell the tokens.
 - In the next example, we’ll use a statistical approach to create dynamic price ceiling/floor parameters that adjust based on market conditions.
 
-## Let's code!
+## Let's code
 
 We will extend the file used in the last example: `quickstart_script_2.py`
 
@@ -146,4 +146,4 @@ The bot only places SELL orders:
 
 ## Next steps
 
-In the final part of this guide, let's [make this feature more dynamic based on market data](/quickstart/custom-pmm-5/)!
+In the final part of this guide, let's [make this feature more dynamic based on market data](custom-pmm-5.md)!

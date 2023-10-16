@@ -3,7 +3,7 @@
 **Video:**
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Bhf5spw785c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Let's code!
+## Let's code
 
 Open the codebase in your favorite IDE such as [VSCode](https://code.visualstudio.com/) or [PyCharm](https://www.jetbrains.com/pycharm/) and follow the steps below:
 
@@ -12,22 +12,17 @@ Create a new file inside the scripts folder and name it `quickstart_script.py`
 Add the following code to the `quickstart_script.py` file:
 
 ```Python
-   from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
-
-
-  class QuickstartScript(ScriptStrategyBase):
-
-    # It is recommended to first use a paper trade exchange connector 
-    # while coding your strategy, and then switch to a real one once you're happy with it.
-    markets = {"binance_paper_trade": {"BTC-USDT"}}
-
-    # Next, let's code the logic that will be executed every tick_size (default=1sec)
-
-    def on_tick(self):
-        price = self.connectors["binance_paper_trade"].get_mid_price("BTC-USDT")
-        msg = f"Bitcoin price: ${price}"
-        self.logger().info(msg)
-        self.notify_hb_app_with_timestamp(msg)
+from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
+class QuickstartScript(ScriptStrategyBase):
+  # It is recommended to first use a paper trade exchange connector 
+  # while coding your strategy, and then switch to a real one once you're happy with it.
+  markets = {"binance_paper_trade": {"BTC-USDT"}}
+  # Next, let's code the logic that will be executed every tick_size (default=1sec)
+  def on_tick(self):
+      price = self.connectors["binance_paper_trade"].get_mid_price("BTC-USDT")
+      msg = f"Bitcoin price: ${price}"
+      self.logger().info(msg)
+      self.notify_hb_app_with_timestamp(msg)
 ```
 
 - The `on_tick` method runs for every tick that the bot internal clock executes. By default, the `tick_size` is 1 second, and you can adjust this parameter in the global `conf_client.yml` config file.
@@ -48,6 +43,7 @@ Start Hummingbot:
 - If you don’t have Hummingbot running already and you are using Docker, start and attach the container by following these instructions: [https://docs.hummingbot.org/installation/docker/](https://docs.hummingbot.org/installation/docker/)
 
 Once you are inside Hummingbot, run this command to start your script:
+
 ```
 start --script quickstart_script.py
 ```
@@ -81,4 +77,4 @@ Run the `status` command to see the current status of your running script:
 
 ## Next steps
 
-Now that you understand how a Hummingbot script works, let's [implement a basic market making script](/quickstart/custom-pmm-2/)!
+Now that you understand how a Hummingbot script works, let's [implement a basic market making script](custom-pmm-2.md)!

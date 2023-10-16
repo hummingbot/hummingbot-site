@@ -173,11 +173,11 @@ nav:
     - Post-Installation: installation/post-installation.md
     - Quickstart - Liquidity Mining:
       - Quickstart - Liquidity Mining: getting-started/liquidity-mining/index.md
-      - 1 - Create Keys: quickstart-liquidity-mining/1-create-keys.md
-      - 2 - Configure Miner: quickstart-liquidity-mining/2-configure-miner.md
-      - 3 - Install Hummingbot: quickstart-liquidity-mining/3-install-hummingbot.md
-      - 4 - Create Bot: quickstart-liquidity-mining/4-create-bot.md
-      - 5 - Earn Rewards: quickstart-liquidity-mining/5-earn-rewards.md
+      - 1 - Create Keys: getting-started/liquidity-mining/1-create-keys.md
+      - 2 - Configure Miner: getting-started/liquidity-mining/2-configure-miner.md
+      - 3 - Install Hummingbot: getting-started/liquidity-mining/3-install-hummingbot.md
+      - 4 - Create Bot: getting-started/liquidity-mining/4-create-bot.md
+      - 5 - Earn Rewards: getting-started/liquidity-mining/5-earn-rewards.md
     - Quickstart - Custom Script:
       - Quickstart - Custom Script: getting-started/custom-script/index.md
       - 1 - Hello World: getting-started/custom-script/custom-pmm-1.md

@@ -36,7 +36,6 @@ Note that each exchange has a different format for API keys.
 > **Tip:**
   Some users have reported not being able to copy and paste their API keys on some platforms. Our help articles such as [Other ways to copy and paste](https://docs.hummingbot.io/intro/support/#i-cant-copy-and-paste-my-api-keys) and [Paste items from clipboard in PuTTY](https://docs.hummingbot.io/intro/support/#paste-items-from-clipboard-in-putty) may help.
 
-
 ### Check balances
 
 Typing the `connect` command alone will display enabled market connections in the output pane.
@@ -56,6 +55,7 @@ Enter the command `create` to begin creating a strategy config file. This config
 What is your market making strategy?
 >>> liquidity_mining
 ```
+
 Liquidity Mining is a preferred strategy for beginners. Running a liquidity mining strategy, hummingbot will automatically place bid and ask orders, using assets available on linked exchanges. The spread will be adjusted based on market volatility.
 
 ## Select bot markets and assets
@@ -66,6 +66,7 @@ First, let's define where to run the bot and the assets the bot will be using.
 Enter the spot connector to use for liquidity mining?
 >>>
 ```
+
 This questions asks you to select the **exchange** where the bot will be running. Hummingbot supports over 20 exchanges. Since you will be running this bot to earn liquidity rewards, select an exchange supported by Hummingbot Miner, such as `binance` or `kucoin`.
 
 ```
@@ -89,6 +90,7 @@ Hummingbot strategies are not intended to be black boxes, but rather open templa
 What asset (base or quote) do you want to use to provide liquidity?
 >>>
 ```
+
 Select the **token** that you will use to provide liquidity. Make sure that you have some balance of your token in the exchange wallet. This will be the unit in which profits and loss will be measured.
 
 The selected token will also be used to place the initial orders. In order to earn liquidity mining rewards, the chosen market pairs should be included in an active campaign.
@@ -97,12 +99,14 @@ The selected token will also be used to place the initial orders. In order to ea
 What is the size of each order (in [token] amount)?
 >>>
 ```
+
 This is the **order amount**, denominated in units of the **token**, that will be placed on each side of the order book. Note that if you have insufficient base or quote assets, orders on that side of the book will not be placed.
 
 ```
 How far away from the mid price do you want to place bid and ask orders? (Enter 1 to indicate 1%)
 >>>
 ```
+
 Here, you set the **spread** of your orders. Your Hummingbot Miner rewards increase if you place smaller spreads (since your orders are closer to the market price and more likely to be filled). Too close of a spread may result in high fees or disadvantageous trades. Too large, and the spread may not result in filling many orders, and lowering rewards earned.
 
 > **What spreads should I set?** Order spread is one of the most important levers that market makers can control. Tighter spreads cause your orders to be filled more often, resulting in more trades, bigger changes in asset balance, and potentially more risk. We recommend that new users start with **wider spreads**, such as 1.00% for each side of the order book or higher.
@@ -111,6 +115,7 @@ Here, you set the **spread** of your orders. Your Hummingbot Miner rewards incre
 For each pair, what is your target base asset percentage? (Enter 20 to indicate 20%)
 >>>
 ```
+
 To complete the configuration process, enter the target base asset percentage (**target_base_pct**) that you want reach for each market. Your bot will adjust the size and spread of its orders to attempt to reach this target inventory level. Since the main risk that you take as a market maker is **inventory risk** that arises from market volatility, keeping a consistent inventory level helps mitigate losses.
 
 To complete the configuration process, save the strategy configuration file. After you exit Hummingbot, you can run the `import` command later to load it.
@@ -122,6 +127,7 @@ The `config` command can be used to view and further customize your bot's parame
 A useful global parameter that we recommend setting is the [kill switch](https://docs.hummingbot.io/features/kill-switch/), which automatically stops the bot if losses exceed a certain threshold.
 
 To activate the kill switch, run `config kill_switch_enabled`:
+
 ```
 >>> config kill_switch_enabled
 
@@ -133,6 +139,7 @@ kill_switch_enabled: True
 ```
 
 Afterwards, run `config kill-switch-rate` to set the loss threshold:
+
 ```
 >>> config kill_switch_rate
 
@@ -151,8 +158,7 @@ Type `start` and watch your bot in action! You can see the placed orders on the 
 
 Proceed to the final part of the Hummingbot quickstart guide: [Earn Rewards][Earn Rewards]
 
-[Create API Keys]: ./1-create-keys
-[Configure Miner]: ./2-configure-miner
-[Install Hummingbot]: ./3-install-hummingbot
-[Create Bot]: ./4-create-bot
-[Earn Rewards]: ./5-earn-rewards
+[Create API Keys]: 1-create-keys.md
+[Configure Miner]: 2-configure-miner.md
+[Install Hummingbot]: 3-install-hummingbot.md
+[Earn Rewards]: 5-earn-rewards.md

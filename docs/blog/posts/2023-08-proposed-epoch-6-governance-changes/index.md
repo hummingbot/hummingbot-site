@@ -57,8 +57,8 @@ To make the governance process more transparent, we propose the concept of Bount
 
 Following the voting that kicks off each Epoch, we propose to add the following allocation amounts for Gold/Silver connectors:
 
-* Gold: Add 1,000,000 HBOT to connector's Bounty Allocation (1 per Poll)
-* Silver: Add 250,000 HBOT to connector's Bounty Allocation (3 per Poll)
+* Gold: Add 400,000 HBOT to connector's Bounty Allocation (1 per Poll)
+* Silver: Add 100,000 HBOT to connector's Bounty Allocation (3 per Poll)
 * Bronze: None
 
 Any HBOT holder may propose bounties for connector via Improvement Proposals, provided there is an existing Bounty Allocation. In addition, the Foundation will actively create bounties for Gold and Silver connectors that utilize these allocations. Allocations are considered permanent, but we reserve the right to modify them if they are not being utilized.
