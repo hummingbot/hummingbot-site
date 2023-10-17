@@ -1,4 +1,4 @@
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/t3Su_F_SY_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/a-kenMqRB00?si=FpLyyDzJ4Fl4JfZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We recommend installing Hummingbot using Docker if:
 
@@ -10,14 +10,13 @@ The instructions below help you install Hummingbot and its companion modules usi
 
 ## What Machine Do I Need?
 
-* You don't need a huge machine
-* What OS are supported
-* Basic memory and storage requirements
-* Link to system requirements
+When considering the machine specifications for running Hummingbot on Docker, there's no need for a high-end machine. The supported operating systems include `Linux` (with Ubuntu 18.04 or later being recommended), `Debian GNU/Linux 9`, `CentOS 7`, `Amazon Linux 2 AMI`, `macOS 10.12.6` (Sierra) or later, and `Windows 10` or later. 
+
+For memory and storage, the basic requirements are a least `4 GB` of RAM for a single instance with an additional 250 MB for each subsequent instance, and `5 GB` of storage per instance when installing using Docker. For further details, you can refer to the [system requirements](../../installation/index.md) page.
 
 ## What is Docker?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YFl2mCHdv24?si=fCLbxE6VPCZlj0wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/YFl2mCHdv24?si=fCLbxE6VPCZlj0wE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The easiest way to install Docker is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites. Here are links to installers for each major OS:
 
@@ -31,7 +30,7 @@ Using Docker for Hummingbot deployment offers several benefits, such as simplify
 
 ## What is Attaching?
 
-Imagine a Docker container as a little sealed room where a small part of a computer program is running. When you "attach" to this container, it's like you're opening a door to this room and stepping inside while it's buzzing along. Now, from inside, you can see what the program is doing, talk to it or give it new instructions. It's a way to directly interact with this small part of the program in its own isolated space, almost like visiting a tiny, self-contained workshop to see what's happening and maybe give a helping hand.
+Think of a Docker container as a small, sealed room where a piece of a computer program is running all on its own. When you "attach" to this container, it's like you're opening a door to this room and stepping inside while everything's still running. Now you can see what's going on, talk to the program, or give it new instructions. Attaching is like visiting a mini, self-running workshop to check on things or help out. To do this, you use the command `docker attach [container_name]`, swapping out `[container_name]` with the actual name of the room you want to visit.
 
 ## Basic Docker Commands
 
