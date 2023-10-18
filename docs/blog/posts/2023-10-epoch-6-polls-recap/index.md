@@ -10,7 +10,7 @@ categories:
 
 ![](./1.png)
 
-Every quarter, Hummingbot Foundation organizes [Polls](https://hummingbot.org/governance/polls/), a quarterly process that lets HBOT holders vote on how the Foundation distributes its maintenance resources and bounty budgets across the 50+ CEX, DEX, and blockchain network connectors in the Hummingbot codebase.
+Every quarter, Hummingbot Foundation organizes [Polls](../../../governance/polls.md), a quarterly process that lets HBOT holders vote on how the Foundation distributes its maintenance resources and bounty budgets across the 50+ CEX, DEX, and blockchain network connectors in the Hummingbot codebase.
 
 This week, we completed the Epoch 6 polls which decide which connectors will be included in the Hummingbot codebase for the October, November, and December 2023 releases.
 
@@ -32,19 +32,19 @@ Below, we summarize the results of the Epoch 6 Polls and outline the changes we'
 
 ![](./2.png)
 
-The CEX Connectors poll places [centralized exchange connectors](/cex-connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles.
+The CEX Connectors poll places [centralized exchange connectors](../../../cex-connectors/index.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles.
 
 The poll received 24 distinct votes, for a total of 49 million HBOT voting power spent: [CEX Connectors Poll](https://snapshot.org/#/hbot.eth/proposal/0xb830acb389380f447a996ade4dd39120f5139256a6fa55448ff8d78ef9193de4)
 
 Here are the results by tier:
 
-**🥇 Gold:** [Binance](/exchanges/binance/)
+**🥇 Gold:** [Binance](../../../exchanges/binance/index.md)
 
 As the #1 vote-getting CEX, Binance will serve as the reference CEX connector for Q4 2023, which means that the we will seek to improve and upgrade its integration with Hummingbot over the quarter. In addition, this connector is awarded a 400K HBOT bounty budget, which we will use to supplement our own efforts with bug, improvement, and content bounties that allow the community to help maintain and upgrade it over the next quarter.
 
 The Binance connector code serves as the reference template for other CEX connectors of the same type.
 
-**🥈 Silver:**  [Gate.io,](/exchanges/gate-io/), [Kucoin](/exchanges/kucoin/), [Huobi](/exchanges/huobi/)
+**🥈 Silver:**  [Gate.io](../../../exchanges/gate-io/index.md), [Kucoin](../../../exchanges/kucoin/index.md), [Huobi](../../../exchanges/huobi/index.md)
 
 The #2, #3, and #4 vote-getting CEX connectors are each awarded a 100K HBOT bounty budget, which we will use to fund, bug, improvement, and content bounties that allow the community to help maintain and upgrade these connectors over the next quarter.
 
@@ -56,19 +56,19 @@ Bronze CEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](./3.png)
 
-The DEX Connectors poll places [decentralized exchange connectors](/dex-connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. 
+The DEX Connectors poll places [decentralized exchange connectors](../../../dex-connectors/index.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. 
 
 The poll received 18 distinct votes, for a total of 46 million HBOT voting power spent: [DEX Connectors Poll](https://snapshot.org/#/hbot.eth/proposal/0x5fe34c66cefc6438070332d2ab0d807447a9c175eb5e975e5a9a7023cb3c5c83)
 
 Here are the results by tier:
 
-**🥇 Gold:** [dYdX](https://dydx.exchange/)
+**🥇 Gold:** [dYdX](../../../exchanges/dydx.md)
 
 As the #1 vote-getting DEX, dYdX will serve as the reference DEX connector for Q4 2023, which means that the we will seek to improve and upgrade its integration with Hummingbot over the quarter. In addition, the connector is awarded a 400K HBOT bounty budget, which we will use to supplement our own efforts with bug, improvement, and content bounties that allow the community to help maintain and upgrade it over the next quarter.
 
 The dYdX connector code serves as the reference template for other CLOB DEX connectors.
 
-**🥈 Silver:**  [Dexalot](https://app.dexalot.com/trade/?ref=blog.hummingbot.org), [Polkadex](https://polkadex.trade/), [Injective Helix](https://helixapp.com/markets/)
+**🥈 Silver:**  [Dexalot](../../../exchanges/dexalot.md), [Polkadex](../../../exchanges/polkadex.md), [Injective Helix](../../../exchanges/injective.md)
 
 The #2, #3, and #4 vote-getting DEX connectors are each awarded a 100K HBOT bounty budget, which we will use to fund, bug, improvement, and content bounties that allow the community to help maintain and upgrade these connectors over the next quarter.
 
@@ -80,19 +80,19 @@ Bronze DEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](./4.png)
 
-New for Epoch 6, the Chain Connectors poll places [Layer 1 blockchains](/chains) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. There were 16 unique votes in the poll, and the total number of HBOT voting power tallied was 46 million.
+New for Epoch 6, the Chain Connectors poll places [Layer 1 blockchains](../../../chains/index.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. There were 16 unique votes in the poll, and the total number of HBOT voting power tallied was 46 million.
 
 [Chain Connectors Poll](https://snapshot.org/#/hbot.eth/proposal/0x46a1f7d13701d18a4382665631b90fcf52762c030547f643ff45548403bb96ca)
 
 Here are the results by tier:
 
-**🥇 Gold:** [Ethereum](https://ethereum.org/en/)
+**🥇 Gold:** [Ethereum](../../../chains/ethereum.md)
 
 As the #1 vote-getting Chain, Ethereum will serve as the reference Chain connector for Q4 2023, which means that the we will seek to improve and upgrade its integration with Hummingbot Gateway over the quarter. In addition, the connector is awarded a 400K HBOT bounty budget, which we will use to supplement our own efforts with bug, improvement, and content bounties that allow the community to help maintain and upgrade it over the next quarter.
 
 The Ethereum connector code serves as the reference template for other Chain connectors.
 
-**🥈 Silver:** [Avalanche](https://www.avax.network/), [Binance Smart Chain](https://www.bnbchain.org/en), [Polygon](https://polygon.technology/)
+**🥈 Silver:** [Avalanche](../../../chains/avalanche.md), [Binance Smart Chain](../../../chains/bnb-chain.md), [Polygon](../../../chains/polygon.md)
 
 The #2, #3, and #4 vote-getting Chain connectors are each awarded a 100K HBOT bounty budget, which we will use to fund, bug, improvement, and content bounties that allow the community to help maintain and upgrade these connectors over the next quarter.
 
