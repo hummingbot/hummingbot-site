@@ -2,18 +2,18 @@ Chain connectors integrate a Layer 1 blockchain and their networks into [Gateway
 
 Here are the current chain connectors in the codebase:
 
-| Chain   | Type | Maintainer |
-|---------|------|------------|
-| [Ethereum](/chains/ethereum) | EVM | Hummingbot Foundation
-| [Avalanche](/chains/avalanche) | EVM | [CoinAlpha](https://coinalpha.com)
-| [Algorand](/chains/algorand) | Non-EVM |
-| [BNB Chain](/chains/bnb-chain) | EVM |
-| [Cosmos](/chains/cosmos) | Non-EVM |
-| [Cronos](/chains/cronos) | Non-EVM | [CoinAlpha](https://coinalpha.com)
-| [Harmony](/chains/harmony) | EVM |
-| [Injective](/chains/injective) | Non-EVM |
-| [Kujira](/chains/kujira) | Non-EVM |
-| [Polygon](/chains/polygon) | EVM |
-| [NEAR](/chains/near) | Non-EVM |
-| [Tezos](/chains/tezos) | Non-EVM |
-| [XDC Chain](/chains/xdc-chain) | Non-EVM |
+| Exchange | Type | Tier | Maintainer |
+|----------|------|------|------------|
+| [Ethereum](/chains/ethereum) | EVM | 🥇 Gold | Hummingbot Foundation
+| [Avalanche](/chains/avalanche) | EVM | 🥈 Silver | Hummingbot Foundation
+| [BNB Chain](/chains/bnb-chain) | EVM | 🥈 Silver | Hummingbot Foundation
+| [Polygon](/chains/polygon) | EVM | 🥈 Silver | Hummingbot Foundation
+| [Injective](/chains/injective) | Non-EVM | 🥉 Bronze |
+| [Harmony](/chains/harmony) | EVM | 🥉 Bronze |
+| [Tezos](/chains/tezos) | Non-EVM | 🥉 Bronze |
+| [XDC Chain](/chains/xdc-chain) | Non-EVM | 🥉 Bronze |
+| [Algorand](/chains/algorand) | Non-EVM | 🥉 Bronze |
+| [Cosmos](/chains/cosmos) | Non-EVM | 🥉 Bronze |
+| [Cronos](/chains/cronos) | Non-EVM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com)
+| [NEAR](/chains/near) | Non-EVM |🥉 Bronze |
+
