@@ -155,13 +155,13 @@ nav:
     - Quickstart:
       - Quickstart: getting-started/quickstart/index.md
       - 1 - Prerequisites: getting-started/quickstart/1-prerequisites.md
-      - 2 - Launch Dashboard: getting-started/quickstart/2-launch-dashboard.md
-      - 3 - Manage Credentials: getting-started/quickstart/3-manage-credentials.md
-      - 4 - Adding Exchange API Keys: getting-started/quickstart/4-adding-exchange-api-keys.md
-      - 5 - Launching Your First Bot: getting-started/quickstart/5-launching-your-first-bot.md
-      - 6 - Analyzing Your Bot's Performance: getting-started/quickstart/6-analyzing-bot-performance.md
-      - 7 - Monitoring Bots using Telegram: getting-started/quickstart/7-monitoring-bots-using-telegram.md
-      - 8 - Next Steps - Mastering Hummingbot: getting-started/quickstart/8-next-steps-mastering-hummingbot.md
+      - 2 - Manage Credentials: getting-started/quickstart/2-manage-credentials.md
+      - 3 - Using the Master Bot Profile: getting-started/quickstart/3-master-bot-profile.md
+      - 4 - Managing Bots: getting-started/quickstart/4-managing-bots.md
+      - 5 - Analyzing Bot Performance: getting-started/quickstart/5-analyzing-bot-performance.md
+      - 6 - Backtesting and Optimization: getting-started/quickstart/6-backtesting-and-optimization.md
+      - 7 - Deploying Strategies: getting-started/quickstart/7-deploying-strategies.md
+      - 8 - Conclusion and Next Steps: getting-started/quickstart/8-conclusion-and-next-steps.md
     - Installation: installation/index.md
     - Install via Docker: installation/docker.md
     - Install from Source: 

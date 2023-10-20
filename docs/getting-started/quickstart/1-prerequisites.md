@@ -1,83 +1,65 @@
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/a-kenMqRB00?si=FpLyyDzJ4Fl4JfZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Setting Up the Hummingbot Dashboard
 
-We recommend installing Hummingbot using Docker if:
+## Introduction
 
-* You want the simplest, easiest installation method
-* You don't need to modify the Hummingbot codebase
-* You want to deploy Hummingbot alongside with Dashboard, Orchestation Module, and other advanced configurations
+Welcome to the second part of the Hummingbot Dashboard tutorial. In this section, we'll guide you through the essential steps to set up the project and get your dashboard up and running.
 
-The instructions below help you install Hummingbot and its companion modules using Docker. Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot.
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VmlD_WQVe4M?si=esn1bc-d2Up-wase" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## What Machine Do I Need?
+## Prerequisites
 
-When considering the machine specifications for running Hummingbot on Docker, there's no need for a high-end machine. The supported operating systems include `Linux` (with Ubuntu 18.04 or later being recommended), `Debian GNU/Linux 9`, `CentOS 7`, `Amazon Linux 2 AMI`, `macOS 10.12.6` (Sierra) or later, and `Windows 10` or later. 
+Before diving in, there are a couple of essential tools you'll need:
 
-For memory and storage, the basic requirements are a least `4 GB` of RAM for a single instance with an additional 250 MB for each subsequent instance, and `5 GB` of storage per instance when installing using Docker. For further details, you can refer to the [system requirements](../../installation/index.md) page.
+1. **Anaconda**: Anaconda is a powerful distribution of Python and R for scientific computing and data science. It's vital for managing different environments for your projects. If you haven't already installed Anaconda, [click here](#anaconda-link-placeholder) to follow the installation guide.
+2. **Docker**: Docker is a platform that allows you to develop, ship, and run applications inside containers. It's necessary for ensuring that the dashboard runs in a consistent environment. If Docker isn't installed on your system, [click here](#docker-link-placeholder) to follow the installation guide.
 
-## What is Docker?
+## Setting Up the Project
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/YFl2mCHdv24?si=fCLbxE6VPCZlj0wE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### 1. Access the Dashboard Source Code
 
-The easiest way to install Docker is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites. Here are links to installers for each major OS:
+The Hummingbot Dashboard is open-source, allowing anyone to access, modify, and contribute to its codebase. To get started, visit the project repository on GitHub at the following link: `hummingbot/dashboard`.
 
-* [Linux](https://docs.docker.com/desktop/install/linux-install/)
-* [Mac](https://docs.docker.com/desktop/install/mac-install/)
-* [Windows](https://docs.docker.com/desktop/install/windows-install/)
+### 2. Clone the Repository
 
-## What is Docker Compose?
+To get a local copy of the project, clone the repository by running the command:
 
-Using Docker for Hummingbot deployment offers several benefits, such as simplifying the installation process, enabling easy versioning and scaling, and ensuring a consistent and isolated environment for running the bot. This repository aims to help users get started with deploying Hummingbot using Docker by providing different examples that demonstrate how to set up and customize the bot according to their needs.
-
-## What is Attaching?
-
-Think of a Docker container as a small, sealed room where a piece of a computer program is running all on its own. When you "attach" to this container, it's like you're opening a door to this room and stepping inside while everything's still running. Now you can see what's going on, talk to the program, or give it new instructions. Attaching is like visiting a mini, self-running workshop to check on things or help out. To do this, you use the command `docker attach [container_name]`, swapping out `[container_name]` with the actual name of the room you want to visit.
-
-## Basic Docker Commands
-
-Use the commands below or use the Docker Desktop application to manage your containers:
-
-### Create the Compose project
-
-```
-docker compose up -d
+```bash
+git clone https://github.com/hummingbot/dashboard
 ```
 
-### Stop the Compose project
+### 3. Set Up the Conda Environment
 
-```
-docker compose down
-```
+Once you've cloned the repository and navigated into its root directory, it's time to create a Conda environment. This environment ensures that all the required dependencies for the dashboard are installed and isolated from other projects. Run the following commands:
 
-### Pull the latest Dashboard Docker image
-
-```
-docker pull hummingbot/dashboard:latest
+```bash
+cd dashboard
+make env create
 ```
 
-### Attach to the container
+### 4. Activate the Environment
 
-```
-docker attach <container-name>
-```
+After creating the environment, you'll need to activate it:
 
-### Detach from the container and return to command line
-
-Press keys <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd>
-
-### List all containers
-
-```
-docker ps -a
+```bash
+conda activate dashboard
 ```
 
-### Stop a container
+### 5. Launch the Dashboard
 
-```
-docker stop <container-name>
+With the environment activated, initiate the dashboard with:
+
+```bash
+make run
 ```
 
-### Remove a container
+It might take a while to load the dashboard for the first time. Subsequent launches will typically be faster. Once the dashboard is up, open a web browser and navigate to `localhost` to view it.
 
-```
-docker rm <container-name>
-```
+
+## Conclusion
+
+Congratulations! You've successfully set up the Hummingbot Dashboard. In the next tutorial, we'll delve into managing your credentials and understanding the registration process. 
+
+Stay tuned, and thank you for following along. We hope you find this guide helpful as you embark on your journey with Hummingbot.
+
+
+**Note**: Ensure to refer to the video for visual guidance, especially if you encounter any hitches. Each step has been demonstrated to help you set up seamlessly.
