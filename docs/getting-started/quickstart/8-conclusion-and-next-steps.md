@@ -18,7 +18,7 @@ Throughout this series, we covered a range of topics, including:
 
 If you're serious about delving deeper and enhancing your trading bot capabilities:
 
-- **Bot Camp**: I highly recommend enrolling in Bot Camp. This comprehensive program offers pre-recorded content to help you understand the intricacies of the market. You'll learn about market-making strategies, arbitrage, cross-exchange market making, directional trading, and our new strategy framework, B2. Most importantly, you'll gain hands-on experience with optimization.
+- [**Bot Camp**](https://docs.hummingbot.org/botcamp/): I highly recommend enrolling in Bot Camp. This comprehensive program offers pre-recorded content to help you understand the intricacies of the market. You'll learn about market-making strategies, arbitrage, cross-exchange market making, directional trading, and our new strategy framework. Most importantly, you'll gain hands-on experience with optimization.
 
 - **Community Engagement**: Being a part of the BotCamp community allows you to interact with fellow students, collaborate on bot creation, and share insights.
 
