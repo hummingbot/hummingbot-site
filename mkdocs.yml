@@ -152,25 +152,16 @@ nav:
   - Home: index.md
   - Getting Started:
     - Getting Started: getting-started/index.md
-    - Quickstart:
-      - Quickstart: getting-started/quickstart/index.md
-      - 1 - Prerequisites: getting-started/quickstart/1-prerequisites.md
-      - 2 - Manage Credentials: getting-started/quickstart/2-manage-credentials.md
-      - 3 - Using the Master Bot Profile: getting-started/quickstart/3-master-bot-profile.md
-      - 4 - Managing Bots: getting-started/quickstart/4-managing-bots.md
-      - 5 - Analyzing Bot Performance: getting-started/quickstart/5-analyzing-bot-performance.md
-      - 6 - Backtesting and Optimization: getting-started/quickstart/6-backtesting-and-optimization.md
-      - 7 - Deploying Strategies: getting-started/quickstart/7-deploying-strategies.md
-      - 8 - Conclusion and Next Steps: getting-started/quickstart/8-conclusion-and-next-steps.md
-    - Installation: installation/index.md
-    - Install via Docker: installation/docker.md
-    - Install from Source: 
-      - Install from Source: installation/source/index.md
-      - Linux: installation/linux.md
-      - MacOS: installation/mac.md
-      - Windows: installation/windows.md        
-      - Raspberry Pi: installation/raspberry-pi.md
-    - Post-Installation: installation/post-installation.md
+    - Quickstart - Dashboard:
+      - Quickstart - Dashboard: getting-started/dashboard/index.md
+      - 1 - Prerequisites: getting-started/dashboard/1-prerequisites.md
+      - 2 - Setting up Dashboard: getting-started/dashboard/2-manage-credentials.md
+      - 3 - Using the Master Bot Profile: getting-started/dashboard/3-master-bot-profile.md
+      - 4 - Managing Bots: getting-started/dashboard/4-managing-bots.md
+      - 5 - Analyzing Bot Performance: getting-started/dashboard/5-analyzing-bot-performance.md
+      - 6 - Backtesting and Optimization: getting-started/dashboard/6-backtesting-and-optimization.md
+      - 7 - Deploying Strategies: getting-started/dashboard/7-deploying-strategies.md
+      - 8 - Conclusion and Next Steps: getting-started/dashboard/8-conclusion-and-next-steps.md
     - Quickstart - Liquidity Mining:
       - Quickstart - Liquidity Mining: getting-started/liquidity-mining/index.md
       - 1 - Create Keys: getting-started/liquidity-mining/1-create-keys.md
@@ -186,14 +177,21 @@ nav:
       - 4 - Basic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-4.md
       - 5 - Dynamic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-5.md
     - Deployment Examples ↗️: https://github.com/hummingbot/deploy-examples
-    - Join the Community: community/index.md
-    # - Events: community/events.md
-    - Broker: installation/broker.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
-    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
   - Docs:
     - Docs: docs/index.md
+    - Installation:
+      - Installation: installation/index.md
+      - Install via Docker: installation/docker.md
+      - Install from Source: 
+        - Install from Source: installation/source/index.md
+        - Linux: installation/linux.md
+        - MacOS: installation/mac.md
+        - Windows: installation/windows.md        
+        - Raspberry Pi: installation/raspberry-pi.md
+      - Post-Installation: installation/post-installation.md
+      - Brokers: installation/broker.md
     - Client:
       - Client: client/index.md
       - User Interface Guide: client/user-interface.md
@@ -223,7 +221,6 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-        - Broker: installation/broker.md
       - Strategy Configs:
         - Strategy Configs: strategy-configs/index.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md
@@ -386,6 +383,8 @@ nav:
   - Botcamp: botcamp/index.md 
   - About:
     - About: about/index.md
+    - Join the Community: community/index.md
+    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
     - FAQ: faq.md
     - Board of Directors: governance/board.md
     - Reporting: reporting.md

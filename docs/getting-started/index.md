@@ -1,28 +1,47 @@
-Welcome to Hummingbot!
-
 Hummingbot is an open source framework that helps you build **crypto trading bots** that run on both centralized exchanges (CEX), as well as decentralized exchanges (DEX) on various blockchain networks.
+
+![](repos.png)
+
+The main Hummingbot code repositories are:
+
+* [`hummingbot/hummingbot`](https://github.com/hummingbot/hummingbot): The Hummingbot client that contains the core trading engine and connectors
+* [`hummingbot/gateway`](https://github.com/hummingbot/gateway): Middleware that standardizes DEX API endpoints on different blockchain networks
+* [`hummingbot/dashboard`](https://github.com/hummingbot/dashboard): Application that helps you create, backtest, deploy, and manage Hummingbot instances
+* [`hummingbot/deploy-examples`](https://github.com/hummingbot/deploy-examples): Examples of how to deploy Hummingbot using Docker Compose
+* [`hummingbot/hummingbot-site`](https://github.com/hummingbot/hummingbot-site): The official website for Hummingbot Foundation and documentation site for Hummingbot
 
 Our codebase is free and publicly available on Github under the Apache 2.0 open source license. Help us **democratize high-frequency trading** and provide free access to sophisticated algorithms and tooling to everyone!!
 
-Welcome to the Hummingbot Getting Started guide. This guide will give you an introduction to how to run a bot!
 
-New to Hummingbot? Start here!
+## 📓 Quickstart Guides
 
-[Take the Quickstart Guide](/getting-started/quickstart/){ .md-button .md-button--primary }
+New to Hummingbot? Start here with various guides for various use cases:
 
-- [Installation](../installation/index.md): Install Hummingbot on various platforms
-- [Features](../client/index.md): The main commands and configs in Hummingbot
-- [Quickstart - Liquidity Mining](liquidity-mining/index.md): Follow this guide to learn how to earn liquidity mining rewards by running Hummingbot on the Miner platform
+- [Quickstart - Dashboard](/getting-started/dashboard/): Use the new Dashboard application to create and backtest a trading strategy
+- [Quickstart - Liquidity Mining](liquidity-mining/index.md): Earn liquidity mining rewards by running Hummingbot on our sister company CoinAlpha's Miner platform
+- [Quickstart - Custom Script](./custom-script/index.md): Learn how to develop a custom market making script using Hummingbot!
 
+
+## ❓ Install Hummingbot client
+
+You can install the Hummingbot client either (1) [via Docker](./docker.md) or (2) [from source](./source/).
+
+We recommend installing Hummingbot using Docker if:
+
+- You want the simplest, easiest installation method
+- You don't need to modify the Hummingbot codebase
+- You want to deploy Hummingbot alongside with Dashboard, Orchestation Module, and other advanced configurations
+
+Alternatively, install Hummingbot from source if:
+
+- You want to customize or extend the Hummingbot codebase
+- You want to build new components like connectors or strategies
+- You want to learn how Hummingbot works at a deeper, technical level
 
 ## 👩‍💻 For developers
 
 Hummingbot is a general source framework for crypto algorithmic trading. We welcome developers to fork the codebase for their own purposes and contribute to the community.
 
-[Developer Quickstart](/getting-started/quickstart/){ .md-button }
-
-- [Quickstart - Custom Script](./custom-script/index.md): Follow this guide to learn how to build a custom market making strategy with Hummingbot!
-- [Developers](../developers/index.md): Explanation of Hummingbot's architecture and detailed reference on how to build connectors and strategies
 - [Bounties](../bounties/index.md): Get paid for building and maintaining Hummingbot components
 connector middleware
 - [Contribution Guidelines](../developers/contributions.m): Read this before submitting a pull request

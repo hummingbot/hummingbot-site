@@ -47,13 +47,11 @@ See [Install from Source](./source/) or these guides for various environments:
 
 ## Post-Installation
 
-After you have successfully installed Hummingbot, See [Post-Installation](./post-installation.md) for how to manage the folder structure, launch/exit the client, update it, etc.
+After you have successfully installed Hummingbot, See [Post-Installation](./post-installation.md) for how to manage the folder structure, launch/exit the client, update it, etc. Then, check out the [Getting Started] guides(/getting-started) to build and run a trading bot!
 
-Then, check out the [Quickstart Guide](/quickstart) to build and run a trading bot!
+## MQTT Brokers Repo
 
-## Orchestration Module
-
-See [Orchestration](./orchestration.md) for more information on ways to deploy multiple instances of Hummingbot with the Orchestration Module.
+See [Brokers](./broker.md) for more information orchestrating multiple instances of Hummingbot using MQTT message brokers.
 
 ## Hummingbot in the Cloud
 

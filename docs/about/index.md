@@ -4,9 +4,11 @@ Since we open sourced Hummingbot in 2019, it has become the **leading open sourc
 
 Currently, Hummingbot is evolving from a simple market making bot into a powerful open source platform that helps you **create, backtest, deploy, and manage a fleet of bots** running any algo trading strategy. Our main repos now include:
 
-* [hummingbot](https://github.com/hummingbot/hummingbot): Python-based core trading engine and exchange connectors
-* [gateway](https://github.com/hummingbot/gateway): Typescript-based middleware that helps Hummingbot connect to DEXs and blockchain networks
-* [dashboard](https://github.com/hummingbot/dashboard): Streamlit-based dashboard for backtesting, deploying, and managing Hummingbot instances
+* [`hummingbot/hummingbot`](https://github.com/hummingbot/hummingbot): The Hummingbot client that contains the core trading engine and connectors
+* [`hummingbot/gateway`](https://github.com/hummingbot/gateway): Middleware that standardizes DEX API endpoints on different blockchain networks
+* [`hummingbot/dashboard`](https://github.com/hummingbot/dashboard): Application that helps you create, backtest, deploy, and manage Hummingbot instances
+* [`hummingbot/deploy-examples`](https://github.com/hummingbot/deploy-examples): Examples of how to deploy Hummingbot using Docker Compose
+* [`hummingbot/hummingbot-site`](https://github.com/hummingbot/hummingbot-site): The official website for Hummingbot Foundation and documentation site for Hummingbot
 
 ## Sponsorships
 
