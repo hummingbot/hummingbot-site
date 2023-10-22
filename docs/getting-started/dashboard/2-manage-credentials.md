@@ -9,14 +9,16 @@ In this section, we'll dive into the importance of securely managing credentials
 
 If you plan to expose Dashboard externally or enable multiple users, managing credentials securely is paramount.
 
-To add authentication layer to Dashboard, modify the `AUTH_SYSTEM_ENABLED` variable in the [CONFIG.py](https://github.com/hummingbot/dashboard/blob/main/CONFIG.py) file.
+To add authentication layer to Dashboard, modify the `AUTH_SYSTEM_ENABLED` variable in the [CONFIG.py](https://github.com/hummingbot/dashboard/blob/main/CONFIG.py) file. By default, it is set to `False`. 
 
-By default, it is set to `False`. Change it to `True`:
+Change it to `True` and save the file:
 ```
 AUTH_SYSTEM_ENABLED = True
 ```
 
-Afterwards, users will be asked to log in when accessing Dashboard at <https://localhost:8501>.
+Afterwards, stop Dashboard and restart it with `make run`. Users will now be asked to log in when accessing Dashboard at <https://localhost:8501>.
+
+![](login.png)
 
 ## Setting User Credentials
 
@@ -26,7 +28,7 @@ We present two methods for setting user credentials for Dashboard:
 
 In this method, we manually declare the users and their corresponding passwords in the [`credentials.yml`](https://github.com/hummingbot/dashboard/blob/main/credentials.yml) file.
 
-```
+```yaml
 credentials:
   usernames:
     admin:
@@ -44,7 +46,7 @@ To generate a hashed password for a given string, follow these instructions:
   python
   ```
 3. Import the auth library and hash the password:
-  ```
+  ```python
   import streamlit_authenticator as st_auth
   hashed_password = st_auth.hasher_generate("YOUR_PASSWORD")
   hashed_password
@@ -72,12 +74,11 @@ Instead, you can edit the `preauthorized` section in `credentials.yml`. This met
 4. Upon registration, Dashboard will hash and store their credentials automatically in this file.
 
 
-## Navigating the Dashboard
+## Logging Out
 
 Once logged in, you have the freedom to navigate through the various sections of the dashboard. However, to log out securely, ensure you return to the main Hummingbot Dashboard page and click the logout button. This ensures optimal security for your credentials and the dashboard's functionality.
 
 ---
-
 Next, learn how to use the master bot profile to manage the keys you store in Dashboard.
 
 [Using the Master Bot Profile](3-master-bot-profile.md){ .md-button .md-button--primary }
