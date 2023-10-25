@@ -6,9 +6,7 @@ hide:
   - feedback
 ---
 
-# Dive into Botcamp
-
-Botcamp, Hummingbot's official training course, teaches you how to create, fine-tune, and master sophisticated algo trading strategies. Whether you're an individual or professional trader, immerse yourself in:
+Botcamp is a training program for market makers. We teach you the theory and practice of market making using the Hummingbot open source software.
 
 <div class="grid cards wide" markdown>
 
