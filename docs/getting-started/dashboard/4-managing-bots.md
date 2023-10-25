@@ -1,8 +1,6 @@
-# Running and Managing Bots in Hummingbot Dashboard
-
 ## Introduction
 
-In this tutorial, we'll dive into the process of spawning new bots, examining available strategies, making modifications, and deploying them for a set duration. The subsequent chapter will focus on analyzing the results of our deployed strategies.
+In this tutorial, we'll dive into the process of spawning new bots, starting a strategy, making modifications, and running one for a set duration. Let's get started!
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/915E-C2LWdg?si=Kp2ZzUYiFi2Ysi_G" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -41,6 +39,8 @@ To provide a comprehensive example:
 5. Use the file explorer to customize the chosen strategy as needed.
 6. Execute the strategy, monitor its performance, and make necessary adjustments or stop it as required.
 
-## Conclusion
+## Next Steps
 
-The ability to spawn, customize, and manage bots offers traders a flexible and dynamic way to optimize their trading strategies with Hummingbot. In our next chapter, we'll delve into analyzing the results and performance of the deployed strategies.
+The subsequent chapter will focus on analyzing the results of our deployed strategies.
+
+[Analyze Bot Performance](5-analyzing-bot-performance.md){ .md-button .md-button--primary }

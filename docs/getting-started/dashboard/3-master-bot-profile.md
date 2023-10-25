@@ -48,10 +48,10 @@ The process of integrating credentials and leveraging available scripts is strea
 
 If you make modifications in the dashboard's editor, use **Apply** button to apply changes, and then **Ctrl + S** to save.
 
----
+## Next Steps
 
 The Master Bot Profile ensures the secure handling of credentials and offers users flexibility in creating bots. Next, learn how to create and manage new instances:
 
-[Using the Master Bot Profile](3-master-bot-profile.md){ .md-button .md-button--primary }
+[Managing Bots](4-managing-bots.md){ .md-button .md-button--primary }
 
 

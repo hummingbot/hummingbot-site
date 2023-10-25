@@ -1,30 +1,18 @@
-Hummingbot is an open source framework that helps you build **crypto trading bots** that run on both centralized exchanges (CEX), as well as decentralized exchanges (DEX) on various blockchain networks.
-
-![](repos.png)
-
-The main Hummingbot code repositories are:
-
-* [`hummingbot/hummingbot`](https://github.com/hummingbot/hummingbot): The Hummingbot client that contains the core trading engine and connectors
-* [`hummingbot/gateway`](https://github.com/hummingbot/gateway): Middleware that standardizes DEX API endpoints on different blockchain networks
-* [`hummingbot/dashboard`](https://github.com/hummingbot/dashboard): Application that helps you create, backtest, deploy, and manage Hummingbot instances
-* [`hummingbot/deploy-examples`](https://github.com/hummingbot/deploy-examples): Examples of how to deploy Hummingbot using Docker Compose
-* [`hummingbot/hummingbot-site`](https://github.com/hummingbot/hummingbot-site): The official website for Hummingbot Foundation and documentation site for Hummingbot
-
-Our codebase is free and publicly available on Github under the Apache 2.0 open source license. Help us **democratize high-frequency trading** and provide free access to sophisticated algorithms and tooling to everyone!!
-
+Hummingbot is an open source framework that helps you create, backtest, and deploy automated trading bots that can run on any crypto exchange. Our codebase is free and publicly available on Github under the Apache 2.0 open source license.
 
 ## 📓 Quickstart Guides
 
-New to Hummingbot? Start here with various guides for various use cases:
+New to Hummingbot? Start here with step-by-step guides for various use cases:
 
-- [Quickstart - Dashboard](/getting-started/dashboard/): Use the new Dashboard application to create and backtest a trading strategy
-- [Quickstart - Liquidity Mining](liquidity-mining/index.md): Earn liquidity mining rewards by running Hummingbot on our sister company CoinAlpha's Miner platform
-- [Quickstart - Custom Script](./custom-script/index.md): Learn how to develop a custom market making script using Hummingbot!
+- [Intro to Dashboard](/getting-started/dashboard/): Learn how to use Dashboard to create, backtest and deploy sophisticated market making and directional strategies
 
+- [Custom Script](./custom-script/index.md): Develop a custom market making script using Hummingbot
+
+- [Liquidity Mining](liquidity-mining/index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
 
 ## ❓ Install Hummingbot client
 
-You can install the Hummingbot client either (1) [via Docker](./docker.md) or (2) [from source](./source/).
+You can install the core Hummingbot client directly. We provide instructions for (1) [via Docker](./docker.md) or (2) [from source](./source/) pathways.
 
 We recommend installing Hummingbot using Docker if:
 
@@ -40,11 +28,12 @@ Alternatively, install Hummingbot from source if:
 
 ## 👩‍💻 For developers
 
-Hummingbot is a general source framework for crypto algorithmic trading. We welcome developers to fork the codebase for their own purposes and contribute to the community.
+Hummingbot is a general source framework for crypto algorithmic trading, and we welcome developers to fork the codebase for their own purposes and contribute to the community.
 
 - [Bounties](../bounties/index.md): Get paid for building and maintaining Hummingbot components
 connector middleware
 - [Contribution Guidelines](../developers/contributions.m): Read this before submitting a pull request
+- [Quickstart - Custom Script](./custom-script/index.md): Learn how to customize Hummingbot scripts
 
 ## 🙋‍♂️ Getting help
 
@@ -53,5 +42,6 @@ Hummingbot features an active, friendly community of users globally! Here are so
 - Check out the [FAQ](../faq.md), [Troubleshooting](../troubleshooting.md)), and [Glossary](../glossary.md) pages for answers to common questions about Hummingbot
 - To report a bug or request a new feature, post a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
 - Join the official [Discord](https://discord.gg/hummingbot) and post your question on **#support**
+- Take [Botcamp](/botcamp) to learn professional-grade market making and algo trading!
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.

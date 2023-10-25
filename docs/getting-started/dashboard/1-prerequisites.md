@@ -100,7 +100,8 @@ make run
 
 It might take a while to load the dashboard for the first time. Subsequent launches will typically be faster. Once the dashboard is up, open a web browser and navigate to <https://localhost:8501> to view it.
 
----
+## Next Steps
+
 Congratulations - you've successfully set up the Hummingbot Dashboard. In the next tutorial, we'll delve into managing your credentials and understanding the registration process.
 
 [Manage Credentials](2-manage-credentials.md){ .md-button .md-button--primary }

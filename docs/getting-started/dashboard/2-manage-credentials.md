@@ -78,7 +78,8 @@ Instead, you can edit the `preauthorized` section in `credentials.yml`. This met
 
 Once logged in, you have the freedom to navigate through the various sections of the dashboard. However, to log out securely, ensure you return to the main Hummingbot Dashboard page and click the logout button. This ensures optimal security for your credentials and the dashboard's functionality.
 
----
+## Next Steps
+
 Next, learn how to use the master bot profile to manage the keys you store in Dashboard.
 
 [Using the Master Bot Profile](3-master-bot-profile.md){ .md-button .md-button--primary }
