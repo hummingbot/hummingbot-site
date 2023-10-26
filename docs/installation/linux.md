@@ -10,9 +10,9 @@ Supported versions:
 ### build-essentials
 
 On new Ubuntu instances, you may need to install the `build-essentials` package:
+
 ```
-sudo apt-get update
-sudo apt-get install -y build-essential
+sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
 ```
 
 ### Miniconda / Anaconda

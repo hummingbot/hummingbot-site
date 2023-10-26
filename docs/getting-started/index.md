@@ -39,7 +39,7 @@ connector middleware
 
 Hummingbot features an active, friendly community of users globally! Here are some ways to get help if you're encountering issues:
 
-- Check out the [FAQ](../faq.md), [Troubleshooting](../troubleshooting.md)), and [Glossary](../glossary.md) pages for answers to common questions about Hummingbot
+- Check out the [FAQ](../faq.md), [Troubleshooting](../troubleshooting.md), and [Glossary](../glossary.md) pages for answers to common questions about Hummingbot
 - To report a bug or request a new feature, post a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
 - Join the official [Discord](https://discord.gg/hummingbot) and post your question on **#support**
 - Take [Botcamp](/botcamp) to learn professional-grade market making and algo trading!
