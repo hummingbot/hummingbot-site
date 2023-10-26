@@ -152,22 +152,28 @@ nav:
   - Home: index.md
   - Getting Started:
     - Getting Started: getting-started/index.md
-    - Installation: installation/index.md
-    - Install via Docker: installation/docker.md
-    - Install from Source: 
-      - Install from Source: installation/source/index.md
-      - Linux: installation/linux.md
-      - MacOS: installation/mac.md
-      - Windows: installation/windows.md        
-      - Raspberry Pi: installation/raspberry-pi.md
-    - Post-Installation: installation/post-installation.md
-    - Quickstart - Liquidity Mining:
-      - Quickstart - Liquidity Mining: getting-started/liquidity-mining/index.md
-      - 1 - Create Keys: getting-started/liquidity-mining/1-create-keys.md
-      - 2 - Configure Miner: getting-started/liquidity-mining/2-configure-miner.md
-      - 3 - Install Hummingbot: getting-started/liquidity-mining/3-install-hummingbot.md
-      - 4 - Create Bot: getting-started/liquidity-mining/4-create-bot.md
-      - 5 - Earn Rewards: getting-started/liquidity-mining/5-earn-rewards.md
+    - Installation:
+      - Installation: installation/index.md
+      - Install via Docker: installation/docker.md
+      - Install from Source: 
+        - Install from Source: installation/source/index.md
+        - Linux: installation/linux.md
+        - MacOS: installation/mac.md
+        - Windows: installation/windows.md        
+        - Raspberry Pi: installation/raspberry-pi.md
+      - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
+      - Post-Installation: installation/post-installation.md
+      - Brokers: installation/broker.md
+    - Quickstart - Dashboard:
+      - Quickstart - Dashboard: getting-started/dashboard/index.md
+      - 1 - Prerequisites: getting-started/dashboard/1-prerequisites.md
+      - 2 - Setting up Dashboard: getting-started/dashboard/2-manage-credentials.md
+      - 3 - Using the Master Bot Profile: getting-started/dashboard/3-master-bot-profile.md
+      - 4 - Managing Bots: getting-started/dashboard/4-managing-bots.md
+      - 5 - Analyzing Bot Performance: getting-started/dashboard/5-analyzing-bot-performance.md
+      - 6 - Backtesting and Optimization: getting-started/dashboard/6-backtesting-and-optimization.md
+      - 7 - Deploying Backtested Strategies: getting-started/dashboard/7-deploying-strategies.md
+      - 8 - Conclusion and Next Steps: getting-started/dashboard/8-conclusion-and-next-steps.md
     - Quickstart - Custom Script:
       - Quickstart - Custom Script: getting-started/custom-script/index.md
       - 1 - Hello World: getting-started/custom-script/custom-pmm-1.md
@@ -175,16 +181,19 @@ nav:
       - 3 - Customize Status: getting-started/custom-script/custom-pmm-3.md
       - 4 - Basic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-4.md
       - 5 - Dynamic Price Ceiling/Floor: getting-started/custom-script/custom-pmm-5.md
-    - Join the Community: community/index.md
-    # - Events: community/events.md
-    - Broker: installation/broker.md
+    - Quickstart - Liquidity Mining:
+      - Quickstart - Liquidity Mining: getting-started/liquidity-mining/index.md
+      - 1 - Create Keys: getting-started/liquidity-mining/1-create-keys.md
+      - 2 - Configure Miner: getting-started/liquidity-mining/2-configure-miner.md
+      - 3 - Install Hummingbot: getting-started/liquidity-mining/3-install-hummingbot.md
+      - 4 - Create Bot: getting-started/liquidity-mining/4-create-bot.md
+      - 5 - Earn Rewards: getting-started/liquidity-mining/5-earn-rewards.md
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
-    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
   - Docs:
     - Docs: docs/index.md
-    - Client:
-      - Client: client/index.md
+    - Hummingbot Client:
+      - Hummingbot Client: client/index.md
       - User Interface Guide: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
       - Launch/Exit Hummingbot: client/launch-exit.md
@@ -227,6 +236,16 @@ nav:
         - Price Band: strategy-configs/price-band.md
         - Price Source: strategy-configs/external-price-source.md
         - Ping Pong: strategy-configs/ping-pong.md
+    - Gateway:
+      - Gateway: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Using Gateway with Hummingbot: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running DEX Bots: gateway/running-dex-bots.md
+      - API Reference: gateway/api-reference.md
+    - Dashboard 🔥:
+      - Dashboard: dashboard/index.md
     - Strategies:
       - Strategies: strategies/index.md
       - V2 Strategies 🔥:
@@ -322,16 +341,6 @@ nav:
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
       - Building DEX Connectors: gateway/adding-dex-connectors.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Using Gateway with Hummingbot: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running DEX Bots: gateway/running-dex-bots.md
-      - API Reference: gateway/api-reference.md
-    - Dashboard 🔥:
-      - Dashboard: dashboard/index.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
@@ -374,6 +383,7 @@ nav:
   - Botcamp: botcamp/index.md 
   - About:
     - About: about/index.md
+    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
     - FAQ: faq.md
     - Board of Directors: governance/board.md
     - Reporting: reporting.md
