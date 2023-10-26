@@ -298,3 +298,5 @@ Sign up for the official [Hummingbot newsletter](https://hummingbot.substack.com
 <br />
 
 [Subscribe to Newsletter](https://hummingbot.substack.com/){ .md-button .md-button--primary }
+
+# Pricing

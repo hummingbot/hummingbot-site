@@ -11,6 +11,8 @@
             linear-gradient(to bottom, rgb(255 255 255/.8), #00C2CE 99%, var(--md-default-bg-color) 99%);
         background-size: contain;
         padding-top: 1rem;
+        display: flex;
+        justify-content: center;
     }
     [data-md-color-scheme="slate"] .mdx-container {
         background: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' viewBox='0 0 1123 258' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'><g transform='matrix(-1.01432,0,0,0.388868,1134.41,161.501)'><path d='M1124,2L1124,258L-1,258L-1,210C-1,210 15,215 54,215C170,215 251,123 379,123C500,123 493,169 633,169C773,169 847,2 1205,3L1124,2Z' style='fill:rgb(26, 26, 27);fill-rule:nonzero;'/></g></svg>")
@@ -20,7 +22,7 @@
 
     .mdx-hero {
         color: var(--hb-hero-color);
-        margin: 0 0.8rem;
+        margin: 0 0.8rem 10rem;
     }
     .mdx-hero h1 {
         color: currentcolor;
@@ -32,9 +34,9 @@
             font-size: 1.4rem;
         }
     }
-    .mdx-hero__content {
+    /* .mdx-hero__content {
         padding-bottom: 6rem;
-    }
+    } */
     @media screen and (min-width: 60em) {
         .mdx-hero {
             align-items: stretch;
@@ -42,18 +44,9 @@
         }
         .mdx-hero__content {
             margin-top: 3.5rem;
-            max-width: 38rem;
+            /* max-width: 80%; */
             padding-bottom: 14vw;
-        }
-        .mdx-hero__image {
-            order: 1;
-            transform: translateX(4rem);
-            width: 38rem;
-        }
-    }
-    @media screen and (min-width: 76.25em) {
-        .mdx-hero__image {
-            transform: translateX(8rem);
+            flex: 1;
         }
     }
     .mdx-hero .md-button {
@@ -87,13 +80,14 @@
     <div class="md-grid md-typeset">
       <div class="mdx-hero">
         <div class="mdx-hero__content">
-          <h1>Unleash your algo trading potential</h1>
-          <p>Dive deep into algorithmic trading with seasoned experts and a dedicated community. Learn, backtest, and deploy game-changing strategies.</p>
-          <a href="https://botcamp.hummingbot.org/p/membership" title="Enroll now" class="md-button md-button--primary">
-            Enroll now
+          <h1>Learn the dark arts of market making</h1>
+          <iframe style="width:100%; height:100%; min-height:400px;" src="https://www.youtube.com/embed/ZhjR0-_ljgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Botcamp is a training program for market makers and algo traders, based on the open source Hummingbot platform.</h3>
+          <a href="#pricing" class="md-button md-button--primary">
+            See Plans & Pricing
           </a>
         </div>
-      </div>
+    </div>
     </div>
   </section>
 {% endblock %}
