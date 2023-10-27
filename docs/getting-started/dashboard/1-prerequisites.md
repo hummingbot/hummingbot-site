@@ -8,6 +8,17 @@ Welcome to the second part of the Hummingbot Dashboard quickstart. In this secti
 
 Before diving in, there are a couple of essential tools you'll need:
 
+### Update Linux Packages
+
+It's a good practice to ensure your Linux system is up-to-date. Updating your system ensures that you have the latest security patches, bug fixes, and system improvements, reducing potential conflicts or issues during installation.
+
+Run the following command: 
+
+```
+sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
+
+```
+
 ### Anaconda
 
 Anaconda is a powerful distribution of Python and R for scientific computing and data science. It's vital for managing different environments for your projects. Download the installer for your environment from the [Anaconda](https://www.anaconda.com/download/) website and then run it.
