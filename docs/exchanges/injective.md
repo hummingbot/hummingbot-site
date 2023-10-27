@@ -5,7 +5,7 @@
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 - **Maintainer**: [InjectiveLabs](https://injectivelabs.org) 
 
-Currently, Injective is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
+Currently, Kucoin is a Silver exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/bounties/index.md), tracking improvements made to the Gold exchange connectors of that type.
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
