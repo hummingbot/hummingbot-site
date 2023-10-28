@@ -311,3 +311,50 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 /* .md-banner {
   background-color: var(--md-typeset-a-color);
 } */
+
+/* Botcamp Logos */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  flex-basis: calc(25% - 10px);  /* adjust this value for different screen sizes */
+  margin: 5px;
+}
+
+.flex-item img {
+  padding: 1rem 3rem;
+  width: 100%;
+  height: auto;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .flex-item {
+    flex-basis: calc(50% - 10px);
+  }
+  .flex-item img {
+    padding: 3rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .flex-item {
+    flex-basis: calc(25% - 10px);
+  }
+}
+
+[data-md-color-scheme="default"] .dark-logo {
+  display: none;
+}
+
+[data-md-color-scheme="slate"] .light-logo {
+  display: none;
+}

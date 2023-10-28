@@ -4,6 +4,7 @@ hide:
   - toc
   - navigation
   - feedback
+  - path
 ---
 
 # Your Botcamp Membership Includes
@@ -14,11 +15,15 @@ hide:
 
     ---
 
+    ![](live-session.png)
+
     Learn market making with live sessions and new content every month
 
 -   ### ⚔️ __Bot Battles__
 
     ---
+
+    ![](bot-battle.png)
 
     Test your skills against other members in bot trading competitions
 
@@ -26,11 +31,15 @@ hide:
 
     ---
 
+    ![](module-4.jpg)
+
     6+ modules that teach you how to code different trading strategies
 
 -   ### 🕒 __Office Hours__
 
     ---
+
+    ![](office-hours.png)
 
     Get individualized help from experts during monthly office hours
 
@@ -70,17 +79,61 @@ hide:
 
 ---
 
+<div class="centered">
+  <h2>
+    <strong>Join a Professional Trader Community from Top Institutions</strong>
+  </h2>
+</div>
+
+<br />
+
+<div class="flex-container">
+  <div class="flex-item">
+    <img src="logos/binance.png" />
+  </div>
+  <div class="flex-item">
+    <img src="logos/ripple-dark.png" class="dark-logo"/>
+    <img src="logos/ripple-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="logos/salesforce.png"/>
+  </div>
+  <div class="flex-item">
+    <img src="logos/apple-dark.png" class="dark-logo"/>
+    <img src="logos/apple-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="logos/harvard-dark.png" class="dark-logo"/>
+    <img src="logos/harvard-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="logos/outlier-dark.png" class="dark-logo"/>
+    <img src="logos/outlier-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="logos/decrypt-dark.png" class="dark-logo"/>
+    <img src="logos/decrypt-light.png" class="light-logo" />
+  </div>
+  <div class="flex-item">
+    <img src="logos/avantgarde-dark.png" class="dark-logo" />
+    <img src="logos/avantgarde-light.png" class="light-logo" />
+  </div>
+</div>
+
+
+---
+
 # Hear from Botcamp Members
 
 <div class="grid" markdown>
 
 <span class="quote">
-:material-format-quote-open:
-Coding was just a hobby, but then I found that I can make money from it. Now, I run Hummingbot to support my family's needs and serve as a Botcamp mentor!
-:material-format-quote-close:
+  :material-format-quote-open:
+  Botcamp helped me utilize Hummingbot to its fullest, and I finally grasped the nuances of the cross-exchange market making strategy!
+  :material-format-quote-close:
 </span>
 <br/><br/><br/>
-<img src="toby.png" class="headshot centered" />
+<img src="headshots/toby.png" class="headshot centered" />
 <br/>
 <span class="author centered">Toby</span>
 <br/>
@@ -88,12 +141,12 @@ Coding was just a hobby, but then I found that I can make money from it. Now, I 
 { .testimonial }
 
 <span class="quote">
-:material-format-quote-open:
-I'm not a full-time coder, yet I was able to build a trading strategy that I'm proud of. Thanks to Botcamp, I'm now starting a crypto trading startup with my friend!
-:material-format-quote-close:
+  :material-format-quote-open:
+  I'm a software engineer, so learning the trader mindset, hedging, and how to navigate the DeFi jungle were important to help me grow as an algo trader!
+  :material-format-quote-close:
 </span>
 <br/><br/><br/>
-<img src="alex.png" class="headshot centered" />
+<img src="headshots/alex.png" class="headshot centered" />
 <br/>
 <span class="author centered">Alex</span>
 <br/>
@@ -101,38 +154,12 @@ I'm not a full-time coder, yet I was able to build a trading strategy that I'm p
 { .testimonial }
 
 <span class="quote">
-:material-format-quote-open:
-If you’re new to crypto trading, Botcamp can be a great starting point - it covers everything from fetching order book data to coding strategies!
-:material-format-quote-close:
+  :material-format-quote-open:
+  Coding was just a hobby, but then I found that I can make money from it. Now, I run Hummingbot to support my family's needs and serve as a Botcamp mentor!
+  :material-format-quote-close:
 </span>
 <br/><br/><br/>
-<img src="calum.png" class="headshot centered" />
-<br/>
-<span class="author centered">Calum</span>
-<br/>
-<a href="https://www.youtube.com/watch?v=_KvVs8SkdAg&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=5" target="_blank" class="centered">Watch Testimonial ↗️</a>
-{ .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-I'm not a full-time coder, yet I was able to build a trading strategy that I'm proud of. Thanks to Botcamp, I'm now starting a crypto trading startup with my friend!
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="alkalifah.png" class="headshot centered" />
-<br/>
-<span class="author centered">Alkalifah</span>
-<br/>
-<a href="https://www.youtube.com/watch?v=lamJjaHcRSs&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=7" target="_blank" class="centered">Watch Testimonial ↗️</a>
-{ .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-Coding was just a hobby, but then I found that I can make money from it. Now, I run Hummingbot to support my family's needs and serve as a Botcamp mentor!
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="viktoria.png" class="headshot centered" />
+<img src="headshots/viktoria.png" class="headshot centered" />
 <br/>
 <span class="author centered">Viktoria</span>
 <br/>
@@ -140,16 +167,42 @@ Coding was just a hobby, but then I found that I can make money from it. Now, I 
 { .testimonial }
 
 <span class="quote">
-:material-format-quote-open:
-If you’re new to crypto trading, Botcamp can be a great starting point - it covers everything from fetching order book data to coding strategies!
-:material-format-quote-close:
+  :material-format-quote-open:
+  You come away from Botcamp having built your own script, and that's much more relevant and useful that just going through content and doing homework.
+  :material-format-quote-close:
 </span>
 <br/><br/><br/>
-<img src="makir.png" class="headshot centered" />
+<img src="headshots/calum.png" class="headshot centered" />
+<br/>
+<span class="author centered">Calum</span>
+<br/>
+<a href="https://www.youtube.com/watch?v=bOGIpYqo3H4&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=4" target="_blank" class="centered">Watch Testimonial ↗️</a>
+{ .testimonial }
+
+<span class="quote">
+  :material-format-quote-open:
+  If you’re new to crypto trading, Botcamp can be a great starting point - it covers everything from fetching order book data to coding strategies!
+  :material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="headshots/makir.png" class="headshot centered" />
 <br/>
 <span class="author centered">Makir</span>
 <br/>
 <a href="https://www.youtube.com/watch?v=_KvVs8SkdAg&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=5" target="_blank" class="centered">Watch Testimonial ↗️</a>
+{ .testimonial }
+
+<span class="quote">
+  :material-format-quote-open:
+  I'm not a full-time coder, yet I was able to build a trading strategy that I'm proud of. Thanks to Botcamp, I'm now starting a crypto trading startup with my friend!
+  :material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="headshots/alkalifah.png" class="headshot centered" />
+<br/>
+<span class="author centered">Alkalifah</span>
+<br/>
+<a href="https://www.youtube.com/watch?v=lamJjaHcRSs&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=7" target="_blank" class="centered">Watch Testimonial ↗️</a>
 { .testimonial }
 
 </div>
@@ -220,60 +273,102 @@ If you’re new to crypto trading, Botcamp can be a great starting point - it co
 
 ---
 
-# Monthly Live Sessions and Continual Support
+# Meet Your Instructors
 
-### Each month of Botcamp features **three live events** that teach you the theory and application of quantitative market making. After each event, the recording and recaps are made available to Botcamp members in the **Botcamp Event Recordings** module.
+<div class="grid wide" markdown>
 
-<br />
+<img src="headshots/mike.jpg" class="headshot centered" />
+<br/>
+<span class="author centered">Michael Feng</span>
+<br/>
+<span class="quote">
+  Michael co-founded CoinAlpha, the company behind Hummingbot, and wrote the Hummingbot whitepaper in 2019. Previously, he spent 7 years in credit derivatives at JPMorgan and Citigroup, where he structured some of the CDOs featured in <a href="https://www.youtube.com/watch?v=mdOctJI2UMg" target="_blank">The Big Short</a>. Michael lives in California, USA.
+</span>
+<br/><br/>
+<span class="quote">
+  In Botcamp, Michael teaches the theory modules and answers questions from members during monthly Office Hours.
+</span>
+<br/></br>
+<span class="centered">
+  <a href="https://www.linkedin.com/in/mifeng/" target="_blank">LinkedIn↗️</a> | <a href="https://twitter.com/fengtality" target="_blank">Twitter↗️</a> | <a href="https://github.com/fengtality" target="_blank">Github↗️</a>
+</span>
+{ .testimonial }
 
-<div class="grid cards wide" markdown>
 
+<img src="headshots/fede.jpg" class="headshot centered" />
+<br/>
+<span class="author centered">Federico Cardoso</span>
+<br/>
+<span class="quote">
+  Federico is the CTO of Hummingbot Foundation. In addition, he teaches Machine Learning and Big Data at the University of Buenos Aires. Previously, he was a quant trader at CTF Capital, a hedge fund that specialized in high-frequency market making. Federico lives in Mar del Plata, Argentina.
+</span>
+<br/><br/>
+<span class="quote">
+  In Botcamp, Fede teaches the coding and modules and shows members how to use Hummingbot to customize their strategies.
+</span>
+<br/></br>
+<span class="centered">
+  <a href="https://www.linkedin.com/in/federico-cardoso-977ba13a/" target="_blank">LinkedIn↗️</a> | <a href="https://twitter.com/cardosofede" target="_blank">Twitter↗️</a> | <a href="https://github.com/cardosofede" target="_blank">Github↗️</a>
+</span>
+{ .testimonial }
 
--   ### 📺 __Live Session__
-
-    ---
-
-    ![](who-botcamp-for-1.png)
-
-    The first week of the month features a live instructional session on a new topic.
-
--   ### 🕒 __Office Hours__
-
-    ---
-
-    ![](who-botcamp-for-2.png)
-
-    Mid-month, we hold a public office hours to answer questions from members.
-
--   ### ⚔️ __Bot Battle__
-
-    ---
-
-    ![](who-botcamp-for-3.png)
-
-    Each month ends with an exclusive bot trading competition for the Botcamp community
-
--   ### ⚔️ __Discord Support__
-
-    ---
-
-    ![](who-botcamp-for-3.png)
-
-    Discord, Botcamp staff help members install Hummingbot and answer their questions.
 
 </div>
-
----
-
-
-# Meet Your Instructors
 
 
 ---
 
 # Plans & Pricing
 
+### All plans include full Botcamp access. Your membership includes all the courses in the Content Library, Live Sessions, Office Hours, Bot Battles, and private Discord channels.
+
+<div class="grid cards" markdown>
+
+-   ## 👨‍🌾 __Monthly Membership__
+
+    ---
+
+    <br/>
+    # $200/month
+
+    - **Most Flexible**
+    - $200 monthly subscription
+    - Pay via credit card
+
+-   ## 👩‍💻 __3-Month Pass__
+
+    ---
+
+    <br/>
+    # $167/month
+
+    - **Most Popular**
+    - $500 one-time payment
+    - Pay via credit card or crypto
+
+-   ## 👨‍💼 __12-Month Pass__
+
+    ---
+
+    <br/>
+    # $99/month
+
+    - **Best Value**
+    - $1188 one-time payment
+    - Pay via credit card or crypto
+
+</div>
+
+<br />
+
+<div class="centered" markdown>
+
+[Enroll Now](https://botcamp.hummingbot.org/p/membership){ .md-button .md-button--primary .centered }
+
+</div>
+
 ---
 
-# FAQ
+# Frequently Asked Questions
 
+### See the [Botcamp FAQ](faq.md) for more information.
