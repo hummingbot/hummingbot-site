@@ -381,7 +381,9 @@ nav:
     - Proposals: governance/proposals.md
     - Epochs: governance/epochs.md
     - Whitepaper: governance/whitepaper.md
-  - Botcamp: botcamp/index.md 
+  - Botcamp:
+    - Botcamp: botcamp/index.md
+    - Botcamp FAQ: botcamp/faq.md
   - About:
     - About: about/index.md
     - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
