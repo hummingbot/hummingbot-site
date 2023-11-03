@@ -26,7 +26,7 @@ A Hummingbot strategy is an ongoing process that executes an algorithmic trading
 - [V1 Strategies](/v1-strategies): Templatized programs templates for various algorithmic trading strategies that expose a set of user-defined parameters, allowing you to customize the strategy's behavior. These were Hummingbot's original method of defining strategies and have been superceded by V2 Strategies and Scripts.
 
 
-## [Connectors](/connectors)
+## [Connectors](../exchanges/index.md)
 
 Hummingbot connectors standardize trading logic and order types across different types of exchanges and blockchain networks, so that strategies can access standardized methods that work across all connectors of that type.
 

@@ -23,7 +23,7 @@ Currently, Bybit is a **Bronze** exchange, as voted by HBOT holders in each quar
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bybit/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bybit>
 - **API Docs**: <https://bybit-exchange.github.io/docs/v5/intro>
-- **Fees**: <https://help.bybit.com/hc/en-us/articles/360039261154-Taker-s-Fee-and-Maker-s-Rebate-Calculation>
+- **Fees**: <https://learn.bybit.com/en/bybit-guide/bybit-trading-fees/>
 - **Supported Countries**: Available to customers worldwide, except for countries with service restrictions such as the U.S, Singapore, Cuba, Crimea, Sevastopol, Iran, Syria, North Korea, Sudan, Mainland China.
 
 ## 🔑 How to Connect

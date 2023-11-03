@@ -37,7 +37,7 @@ a risk since Haasbot code is proprietary and not publicly available.
 
 If you run Hummingbot, your private keys and exchange API keys are secure unless your computer/server 
 is compromised (see [FAQ](/faq.md) for details). Hummingbot Miner only uses the read-only API keys to extract and calculate 
-the mining rewards (see [Privacy](https://support.hummingbot.io/hc/en-us/sections/900001100046-Frequently-Asked-Questions) for details). So rest assured.
+the mining rewards (see [Privacy](https://support.hummingbot.io/miner/frequently-asked-questions) for details). So rest assured.
 
 # Usability & Support
 

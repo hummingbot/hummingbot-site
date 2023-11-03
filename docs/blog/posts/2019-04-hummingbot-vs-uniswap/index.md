@@ -54,7 +54,7 @@ From a side-by-side comparison of the user interfaces, it's clear that Hummingbo
 * Hummingbot is for **power users** (developers, quants, and active traders) who value configurability, flexibility, and control
 * Uniswap is for **mainstream users** who want convenience, ease of use, and simplicity
 
-Since Uniswap uses a pre-determined, immutable formula to calculate its buy and sell offer prices, its liquidity providers just need to deposit tokens in order to start earning fees. While it's dead simple to use, liquidity providers cannot alter the formula and may incur losses [depending on how prices change](https://www.tokendaily.co/blog/pnl-analysis-of-uniswap-market-making).
+Since Uniswap uses a pre-determined, immutable formula to calculate its buy and sell offer prices, its liquidity providers just need to deposit tokens in order to start earning fees. While it's dead simple to use, liquidity providers cannot alter the formula and may incur losses `depending on how prices change`.
 
 On the other hand, Hummingbot is a highly configurable, open source algo trading platform that supports different strategies and exchanges, both centralized and decentralized. Because trading is a competitive sport, we encourage users to create and customize our strategy templates. In return for a steeper learning curve and a longer installation and configuration process, Hummingbot grants users the power to experiment with various strategies on different markets.
 
