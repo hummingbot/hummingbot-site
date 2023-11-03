@@ -50,7 +50,7 @@ By combining these two indicators, we aim to identify potential mean reversion p
 
 ## Directional Framework
 
-This strategy leverages the Directional Framework, a combination of two new features in Hummingbot: [CandlesFeed](https://hummingbot.org/scripts/candles-feed/) and [PositionExecutor](https://hummingbot.org/scripts/smart-components/).
+This strategy leverages the Directional Framework, a combination of two new features in Hummingbot: [Candles Feed](../../../v2-strategies/candles-feed.md) and [PositionExecutor](../../../v2-strategies/executors.md).
 
 ![](./Screen-Shot-2023-04-21-at-3.04.45-PM.png)
 

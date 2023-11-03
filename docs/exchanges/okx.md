@@ -22,7 +22,7 @@ Currently, OKX is a **Bronze** exchange, as voted by HBOT holders in each quarte
 - **Website**: <https://www.okx.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/okx/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/okx>
-- **API Docs**: <https://www.okx.com/docs/en/>
+- **API Docs**: <https://www.okx.com/docs-v5/en/#overview>
 - **Fees**: <https://www.okx.com/fees>
 - **Supported Countries**: Not available
 

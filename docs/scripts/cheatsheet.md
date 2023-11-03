@@ -98,7 +98,7 @@ self.notify_hb_app_with_timestamp(msg)
 ### Status
 
 - When you run the `status` command in the app, you will receive the information that is coded under the method `format_status`
-- You can override this method in your script to show any information that you want. Check out [Quickstart - Exercise 3](/quickstart/custom-pmm-3) for an example.
+- You can override this method in your script to show any information that you want. Check out [Quickstart - Exercise 3](../getting-started/custom-script/custom-pmm-3.md) for an example.
 - By default, the format status shows the balances and active orders. Check the implementation in [`ScriptStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/script_strategy_base.py).
 
 ## Connectors

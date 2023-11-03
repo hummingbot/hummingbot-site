@@ -102,7 +102,7 @@ To get started with Hummingbot, check out the following docs:
 
 * [Post Installation](./post-installation.md)
 * [Basic Features](/client/)
-* [Quickstart Guide](/quickstart/)
+* [Quickstart Guide](../getting-started/custom-script/index.md)
 * [Hummingbot FAQ](/faq/)
 
 If you need to run DEX bots, install [Hummingbot Gateway](/gateway).

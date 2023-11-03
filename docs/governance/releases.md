@@ -3,7 +3,7 @@ Changes to the Hummingbot and Hummingbot Gateway codebases are made through [pul
 Only the following pull requests will be reviewed:
 
 * [Approved proposals](/governance/proposals): Approved PRPs and pull requests to claim bounties approved by HIPs
-* [Bug fixes](/maintenance/bugs): Fixes to outstanding bugs
+* [Bug fixes](../bounties/index.md): Fixes to outstanding bugs
 
 ## Pull Request Status Board
 
