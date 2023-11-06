@@ -40,7 +40,7 @@ Hummingbot Foundation charges Sponsors a Handling Fee for overseeing the entire 
 
 The standard Handling Fee is **20%**. If a Sponsor submits a 1000 USDT total bounty, the Handling Fee is 200 USDT and the Contributor receives 800 USDT.
 
-If the bounty is denominated in [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb), the Handling Fee is **10%**. If a Sponsor submits a 100,000 HBOT total bounty, the Handling Fee is 5000 HBOT and the Contributor receives 90,000 HBOT.
+If the bounty is denominated in [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb), the Handling Fee is **10%**. If a Sponsor submits a 100,000 HBOT total bounty, the Handling Fee is 10,000 HBOT and the Contributor receives 90,000 HBOT.
 
 ## Foundation Bounty Wallets
 
