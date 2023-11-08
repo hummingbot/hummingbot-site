@@ -48,7 +48,7 @@ To generate a hashed password for a given string, follow these instructions:
 3. Import the auth library and hash the password:
   ```python
   import streamlit_authenticator as st_auth
-  hashed_password = st_auth.hasher_generate("YOUR_PASSWORD")
+  hashed_password = st_auth.Hasher("YOUR_PASSWORD")
   hashed_password
   ```
 4. In the `credentials.yml` file, Replace the `admin` user's password with this `hashed_password`.
