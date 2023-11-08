@@ -70,7 +70,7 @@ extra:
   generator: true
   analytics:
     provider: google
-    property: UA-119262087-3
+    property: G-DVHHGW7W9R
     feedback:
           title: Was this page helpful?
           ratings:
