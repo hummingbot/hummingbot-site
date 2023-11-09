@@ -205,7 +205,7 @@ Under `gateway/test/chains/<chain>/<exchange_name>`
 
 Automated test coverage is a crucial step for maintaining high-quality connectors. The Hummingbot Foundation QA team runs these tests when reviewing connectors on an ongoing basis.
 
-Follow the [Avalanche tests](https://github.com/hummingbot/gateway/tree/main/test/chains/avalanche) to create tests for the routes and functions of your connector.
+Follow the [Avalanche tests](https://github.com/hummingbot/gateway/tree/main/test/chains/) to create tests for the routes and functions of your connector.
 
 Before submitting a pull request for your connector, you should have a minimum testing coverage of **80%**. You can determine test coverage by running `yarn test:cov`.
 

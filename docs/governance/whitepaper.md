@@ -25,7 +25,7 @@ The Hummingbot Foundation’s primary role is to coordinate the ongoing maintena
 
 * **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. See [Polls](polls.md) for more information about the Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector.
 
-* **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](/maintenance/bounties/) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
+* **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](../bounties/index.md) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
 
 * **Users** are individual and professional traders who install and use the Hummingbot open source software, released every month, to run trading bots. The volume they generate on partner exchanges sustains the operations of Hummingbot Foundation.
 
@@ -186,7 +186,7 @@ Pull requests linked to bounties and hackathons will go through the same Pull Re
 
 ### Grants
 
-One of the primary ways that Foundation will distribute tokens to Hummingbot Users is through grant programs that reward developers to make contributions to the codebase. These grant programs will aim to incentivize contributions similar to the launch contributions described in the [Hummingbot Foundation announcement](/news/foundation), which include a new strategy template that enables Users to run triangular arbitrage, a web-based graphical interface for the Hummingbot client, and webhooks that enable TradingView integration.
+One of the primary ways that Foundation will distribute tokens to Hummingbot Users is through grant programs that reward developers to make contributions to the codebase. These grant programs will aim to incentivize contributions similar to the launch contributions described in the `Hummingbot Foundation announcement`, which include a new strategy template that enables Users to run triangular arbitrage, a web-based graphical interface for the Hummingbot client, and webhooks that enable TradingView integration.
 
 The Foundation expects that a significant portion of the HBOT tokens that will be allocated over the next 4 years (36% of total tokens) will be allocated toward grants to facilitate similar contributions. In 2022, the Foundation will begin accepting applications for HBOT token grants. Once accepted, developers will need to issue a pull request and have it merged via the governance system in order to receive grant funds.
 

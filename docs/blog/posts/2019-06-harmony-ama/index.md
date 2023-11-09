@@ -71,7 +71,7 @@ The idea behind liquidity mining is that liquidity is a scarce resource in crypt
 
 ###### Who can use hummingbot, I mean how easy is it to set up?
 
-Since it's open source, Hummingbot is free and available to anyone. We have prepared [a guide](https://support.hummingbot.io/hc/en-us/articles/4415753047065-Getting-Started) for Liquidity Bounty participants that should make the setup process less than 10 minutes.
+Since it's open source, Hummingbot is free and available to anyone. We have prepared [a guide](https://support.hummingbot.io/miner/getting-started) for Liquidity Bounty participants that should make the setup process less than 10 minutes.
 
 ##### How long does this one maker bounty program last? Is there a lock up period? Do we need to give up a certain amount of $ONE tokens?
 

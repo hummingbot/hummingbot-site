@@ -17,7 +17,7 @@ Currently, Vertex is a **Bronze** exchange, as voted by HBOT holders in each qua
 
 - **Website**: <https://vertexprotocol.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/vertex-protocol/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vertexprotocol>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/vertex-protocol-spot>
 - **API Docs**: <https://vertex-protocol.gitbook.io/docs/getting-started/overview>
 - **Fees**: <https://vertex-protocol.gitbook.io/docs/basics/fees>
 

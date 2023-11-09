@@ -35,7 +35,7 @@ The Factor Score is a score created by Hummingbot to convey the risk faced by li
 
 The score is calculated based on publicly verifiable data points such as market capitalization rank and number of days since first publicly listed. To learn more:
 
-[https://support.hummingbot.io/hc/en-us/articles/4412298958617](https://support.hummingbot.io/hc/en-us/articles/4412298958617?ref=blog.hummingbot.org)
+[https://support.hummingbot.io/miner/factor-score-what-is-it-and-how-should-i-use-it](https://support.hummingbot.io/miner/factor-score-what-is-it-and-how-should-i-use-it)
 
 You can use the volatility risk factor to select markets in **Core**, or **Growth** to start your market making strategies. Those markets are relatively more liquid.
 

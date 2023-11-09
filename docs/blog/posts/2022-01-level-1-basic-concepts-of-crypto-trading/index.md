@@ -213,11 +213,11 @@ Examples :
 - Russian Rubble / RUB
 - Turkish Lira / TRY
 
-[What Is Fiat Currency? | Binance Academy](https://academy.binance.com/economics/what-is-fiat-currency?ref=blog.hummingbot.org)
+[What Is Fiat Currency? | Binance Academy](https://academy.binance.com/en/articles/what-is-fiat-currency)
 
 #### ERC20 Tokens
 
-[An Introduction to ERC-20 Tokens | Binance Academy](https://academy.binance.com/blockchain/an-introduction-to-erc-20-tokens?ref=blog.hummingbot.org)
+[An Introduction to ERC-20 Tokens | Binance Academy](https://academy.binance.com/en/articles/an-introduction-to-erc-20-tokens)
 
 ![ERC20 Tokens image](image_5.jpg)
 

@@ -45,7 +45,7 @@ Over time, we found out that users who put more time and effort into learning th
 
 Please make sure to fully understand how each advanced parameter works, which parameters don't work well together, their use cases, etc.
 
-[https://hummingbot.org/strategy-configs/](../../../strategy-configs/index.mdd)
+[https://hummingbot.org/strategy-configs/](../../../strategy-configs/index.md)
 [https://hummingbot.org/global-configs/](../../../global-configs/index.md)
 
 ## Cross-exchange market making
@@ -80,7 +80,6 @@ Read more in our blog post below.
 
 Arbitrage is a taker-taker strategy because it sits around waiting for an opportunity to "take" orders from both exchanges based on the specified min_profitability value.
 
-[https://hummingbot.org/strategies/arbitrage/](https://hummingbot.org/strategies/arbitrage/?ref=blog.hummingbot.org)
 
 ## Missing some trades
 

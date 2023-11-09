@@ -233,7 +233,7 @@ See [Hummingbot Governance Proposals](/governance/proposals) for more informatio
 
 The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively.
 
-Other than those listed in the [HBOT announcement](/news/hbot), there are no other eligible HBOT recipients.
+Other than those listed in the [HBOT announcement](governance/hbot.md), there are no other eligible HBOT recipients.
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 

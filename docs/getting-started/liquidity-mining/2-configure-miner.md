@@ -17,7 +17,7 @@ Miner is a liquidity mining platform where you can run market making bots to ear
 
 2. Select `Sign up`
 
-3. Enter your email address, read and agree to the [Terms of Service](https://hummingbot.io/terms/), then click on `Create account`
+3. Enter your email address, read and agree to the [Terms of Service](https://coinalpha.com/terms-of-use/), then click on `Create account`
 ![](./2-b-sign-up.png)
 
 4. Check your email to confirm your account

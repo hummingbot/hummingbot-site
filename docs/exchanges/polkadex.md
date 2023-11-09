@@ -59,6 +59,3 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-This exchange offers a staging (testnet) mode: <https://testnet.polkadex.trade/>
-
-While users can trade on testnet using the link above, it is not currently supported in Hummingbot.
