@@ -3,9 +3,7 @@ date: 2019-03-22
 authors:
   - coinalpha
 categories:
-  - Hummingbot
-  - Guides
-  - Trader Tips
+  - Interviews
 ---
 
 
@@ -14,7 +12,7 @@ categories:
 ![Alt text](../2019-02-crypto-trader-interview2/cover.png)
 
 
-In this post, we answer some frequently asked questions about Hummingbot that we haven't addressed in other blog posts. This post is adapted from [The BlockCrunch](https://letstalkbitcoin.com/blog/post/the-blockcrunch-liquidity-in-crypto-markets-michael-feng-hummingbot)'s recent podcast with Michael Feng, CEO and Co-Founder of Hummingbot.
+In this post, we answer some frequently asked questions about Hummingbot that we haven't addressed in other blog posts. This post is adapted from a [BlockCrunch podcast](https://blockcrunch.libsyn.com/dissecting-liquidity-market-making-in-crypto-michael-feng-hummingbot) with Michael Feng, CEO and Co-Founder of Hummingbot.
 
 ### Why is liquidity beneficial for exchanges and token projects?
 One of the major benefits of liquidity is **price discovery**: knowing that the market price is fair. When you buy shares of a liquid asset like Apple shares from Robinhood or E*TRADE, you know that if you change your mind, you can sell it back without incurring a lot of losses. On the other hand, when the market is very illiquid such as in long-tail crypto markets, you often see situations where the buy price is 20% higher than the sell price, where the gap is called the bid-ask spread.

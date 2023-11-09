@@ -3,8 +3,7 @@ date: 2020-05-07
 authors:
   - carlo
 categories:
-   - Trader Tips
-   - Liquidity mining
+   - Interviews
 ---
 
 

@@ -3,8 +3,7 @@ date: 2019-09-17
 authors:
   - carlo
 categories:
-  - Hummingbot
-  - Guides
+  - Engineering
 ---
 
 # Hummingbot Strategy Hacks 101

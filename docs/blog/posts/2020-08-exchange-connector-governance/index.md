@@ -3,9 +3,7 @@ date: 2020-08-17
 authors:
   - mike
 categories:
-   - Announcements
    - Governance
-   - Hummingbot
 ---
 
 # Exchange Connector Governance

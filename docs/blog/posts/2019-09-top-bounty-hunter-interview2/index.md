@@ -3,8 +3,8 @@ date: 2019-09-03
 authors:
   - coinalpha
 categories:
-  - Trader Tips
   - Liquidity mining
+  - Interviews
 ---
 
 

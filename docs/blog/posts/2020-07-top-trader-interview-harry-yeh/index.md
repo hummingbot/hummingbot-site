@@ -4,8 +4,7 @@ authors:
   - coinalpha
 categories:
    - Market making
-   - Trader Tips
-   - Hummingbot
+   - Interviews
 ---
 
 # Top trader interview with Harry Yeh of Binary Fintech Group

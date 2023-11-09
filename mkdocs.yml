@@ -60,8 +60,11 @@ plugins:
         background_color: "#151819"
         color: "#5FFFD7"
   - blog:
+      blog_toc: true
       post_url_max_categories: 2
-      # post_url_format: "{date}/{slug}"
+      post_url_format: "{date}/{slug}"
+  - tags:
+      tags_file: academy/tags.md
   # - git-revision-date
   # - mkdocs-video
 
@@ -341,6 +344,12 @@ nav:
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
       - Building DEX Connectors: gateway/adding-dex-connectors.md
+  - Academy:
+    - Academy: academy/index.md
+    - Articles Index: academy/tags.md
+  - Botcamp:
+    - Botcamp: botcamp/index.md
+    - Botcamp FAQ: botcamp/faq.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
@@ -381,9 +390,6 @@ nav:
     - Proposals: governance/proposals.md
     - Epochs: governance/epochs.md
     - Whitepaper: governance/whitepaper.md
-  - Botcamp:
-    - Botcamp: botcamp/index.md
-    - Botcamp FAQ: botcamp/faq.md
   - About:
     - About: about/index.md
     - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204

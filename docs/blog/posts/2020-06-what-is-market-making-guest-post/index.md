@@ -1,21 +1,17 @@
 ---
-title: "Guest post: my take on market making and inventory risk"
-author: "coinalpha"
-description: ""
 date: 2020-06-18
-image: "./cover.png"
-level: "Experienced"
-tags: ["market making", "trading concepts", "risk management"]
-featured: false
+authors:
+  - coinalpha
+categories:
+   - Market Making
+   - Trader Tips
 ---
 
-# Guest post: my take on market making and inventory risk
+# My take on market making and inventory risk
 
 ![cover](cover.png)
 
-> This below article is adapted from community member (Discord ID: phgnomo#1429)'s comment in our [Discord](https://discordapp.com/channels/530578568154054663/573897735510425645/718587117919404113) group. Our blog will provide a space for our community members who produce quality content on market making, crypto algo trading, trading strategies, and insights. In the future, we are going to feature more high quality guest posts. 
-
-**All views expressed in this article belong to the original poster and shall NOT be considered as financial or investment advice.**
+> This below article is adapted from community member (Discord ID: phgnomo#1429)'s comment in our Discord server. Our blog will provide a space for our community members who produce quality content on market making, crypto algo trading, trading strategies, and insights. In the future, we are going to feature more high quality guest posts. 
 
 The goal of a market making strategy is to fill both opposing orders as soon as possible. So the usual movement of the price of an asset is:
 

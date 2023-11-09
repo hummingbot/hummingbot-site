@@ -3,7 +3,6 @@ date: 2020-10-27
 authors:
   - carlo
 categories:
-   - Announcements
    - Governance
 ---
 

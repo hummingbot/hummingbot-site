@@ -3,7 +3,7 @@ date: 2019-05-17
 authors:
   - coinalpha
 categories:
-  - Hummingbot
+  - Trader Tips
 ---
 
 

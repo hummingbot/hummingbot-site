@@ -4,7 +4,7 @@ authors:
   - mike
 categories:
   - Announcements
-  - Hummingbot
+  - Roadmap
 ---
 
 # Hummingbot Roadmap - Q2 2021 

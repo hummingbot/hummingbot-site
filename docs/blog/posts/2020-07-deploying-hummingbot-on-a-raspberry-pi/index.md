@@ -4,8 +4,6 @@ authors:
   - carlo
 categories:
    - Deployment
-   - Guides
-   - Hummingbot
 ---
 
 # Deploying Hummingbot on a Raspberry Pi 

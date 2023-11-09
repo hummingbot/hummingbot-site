@@ -4,6 +4,7 @@ authors:
   - foundation
 categories:
   - Governance
+  - Roadmap
 ---
 
 # Hummingbot's 2023 Governance Roadmap

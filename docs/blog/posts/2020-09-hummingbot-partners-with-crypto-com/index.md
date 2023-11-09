@@ -4,7 +4,6 @@ authors:
   - carlo
 categories:
    - Announcements
-   - Liquidity mining
 ---
 
 

@@ -4,7 +4,7 @@ authors:
   - mike
 categories:
   - Liquidity mining
-  - Bounties
+  - Announcements
 ---
 
 # Introducing Liquidity Bounties

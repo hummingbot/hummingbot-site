@@ -3,8 +3,8 @@ date: 2021-04-21
 authors:
   - coinalpha
 categories:
-  - Announcements
-  - Hummingbot
+  - Competitions
+  - Bounties
 ---
 
 

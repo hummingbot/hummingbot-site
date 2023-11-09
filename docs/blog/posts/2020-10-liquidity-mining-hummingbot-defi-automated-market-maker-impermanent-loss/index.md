@@ -4,8 +4,7 @@ authors:
   - carlo
 categories:
   - Liquidity mining
-  - Trader Tips
-  - Guides
+  - Market making
 ---
 
 # Hummingbot Miner vs. DeFi Liquidity Mining Part 2: Considerations for Market Makers/Liquidity Providers

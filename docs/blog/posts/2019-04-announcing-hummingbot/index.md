@@ -83,4 +83,4 @@ If this is you and you’d like to work with us, please contact: [partnerships@h
 
 #### Get started
 - [Install Hummingbot](../../../installation/index.md)
-- [Join our official Discord server](https://discord.hummingbot.io)
+- [Join our official Discord server](https://discord.gg/hummingbot)

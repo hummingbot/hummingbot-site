@@ -3,8 +3,7 @@ date: 2021-01-31
 authors:
   - coinalpha
 categories:
-  - Liquidity mining
-  - Market making
+  - Bots
 ---
 
 

@@ -3,8 +3,7 @@ date: 2020-05-27
 authors:
   - coinalpha
 categories:
-   - Trader Tips
-   - Liquidity mining
+   - Interviews
 ---
 
 

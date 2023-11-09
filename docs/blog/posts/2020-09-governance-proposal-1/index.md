@@ -3,8 +3,6 @@ date: 2020-09-22
 authors:
   - carlo
 categories:
-   - Announcements
-   - Hummingbot
    - Governance
 ---
 

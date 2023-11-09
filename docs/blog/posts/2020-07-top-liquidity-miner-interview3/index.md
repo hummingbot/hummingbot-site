@@ -3,9 +3,9 @@ date: 2020-07-27
 authors:
   - coinalpha
 categories:
-   - Trader Tips
    - Liquidity mining
-   - Hummingbot
+   - Interviews
+
 ---
 
 

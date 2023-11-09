@@ -4,6 +4,7 @@ authors:
   - foundation
 categories:
   - Engineering
+  - Roadmap
 ---
 
 # Hummingbot's 2023 Technical Roadmap

@@ -3,8 +3,7 @@ date: 2020-12-22
 authors:
   - coinalpha
 categories:
-  - Liquidity mining
-  - Market making 
+  - Bots
 ---
 
 # Hummingbot vs Cryptohopper

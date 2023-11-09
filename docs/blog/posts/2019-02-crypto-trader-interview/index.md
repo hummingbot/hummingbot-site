@@ -3,7 +3,7 @@ date: 2019-02-14
 authors:
   - coinalpha
 categories:
-  - Trader Tips
+  - Interviews
 ---
 
 

@@ -3,7 +3,7 @@ date: 2020-02-10
 authors:
   - coinalpha
 categories:
-   - Market making
+   - Research
 ---
 
 # Mapping the crypto market maker landscape: list of 34 market makers

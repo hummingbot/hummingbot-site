@@ -3,7 +3,6 @@ date: 2019-06-13
 authors:
   - coinalpha
 categories:
-  - Hummingbot
   - Deployment
 ---
 

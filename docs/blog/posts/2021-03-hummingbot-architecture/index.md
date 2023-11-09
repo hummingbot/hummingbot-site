@@ -3,7 +3,6 @@ date: 2021-03-05
 authors:
  - martin
 categories:
- - Hummingbot
  - Engineering
 ---
 

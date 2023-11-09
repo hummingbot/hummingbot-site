@@ -4,7 +4,7 @@ authors:
   - coinalpha
 categories:
   - Liquidity mining
-  - Trader Tips
+  - Interviews
 ---
 
 

@@ -4,7 +4,7 @@ authors:
  - mike
 categories:
  - Market making
- - Hummingbot
+ - Interviews
 ---
 
 # The Hummingbot origin story: Why build an open source market making bot?

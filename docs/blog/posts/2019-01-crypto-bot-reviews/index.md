@@ -3,8 +3,7 @@ date: 2019-01-10
 authors:
   - coinalpha
 categories:
-  - Guides
-  - Trader Tips
+  - Bots
 ---
 
 # Crypto bot reviews

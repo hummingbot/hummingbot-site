@@ -4,6 +4,7 @@ authors:
   - mike
 categories:
    - Announcements
+   - Roadmap
 ---
 
 # Hummingbot roadmap for 2020

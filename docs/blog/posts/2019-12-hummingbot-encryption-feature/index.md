@@ -3,7 +3,6 @@ date: 2019-12-19
 authors:
   - coinalpha
 categories:
-  - Hummingbot
   - Announcements
 ---
 

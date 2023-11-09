@@ -3,8 +3,6 @@ date: 2019-11-27
 authors:
   - coinalpha
 categories:
-  - Liquidity mining
-  - Hummingbot
   - Market making
 ---
 

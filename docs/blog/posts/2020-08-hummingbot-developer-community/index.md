@@ -3,8 +3,7 @@ date: 2020-08-20
 authors:
   - mike
 categories:
-   - Announcements
-   - Hummingbot
+   - Engineering
 ---
 
 

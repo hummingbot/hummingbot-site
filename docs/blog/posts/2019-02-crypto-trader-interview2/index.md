@@ -3,7 +3,7 @@ date: 2019-02-25
 authors:
   - coinalpha
 categories:
-  - Trader Tips
+  - Interviews
 ---
 
 # How I started crypto trading | Interview #2

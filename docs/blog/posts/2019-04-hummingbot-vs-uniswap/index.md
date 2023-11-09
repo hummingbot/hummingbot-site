@@ -4,8 +4,6 @@ authors:
   - mike
 categories:
   - Market making
-  - Liquidity mining
-  - Hummingbot
 ---
 
 

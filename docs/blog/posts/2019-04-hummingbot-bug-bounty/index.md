@@ -3,7 +3,6 @@ date: 2019-04-16
 authors:
   - coinalpha
 categories:
-  - Hummingbot
   - Bounties
 ---
 

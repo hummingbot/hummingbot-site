@@ -4,7 +4,6 @@ authors:
   - carlo
 categories:
   - Announcements
-  - Hummingbot
 ---
 
 # Hummingbot announces partnership with and gitcoin bounty for Liquid.com
