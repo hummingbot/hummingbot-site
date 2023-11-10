@@ -371,3 +371,12 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 .card:hover {
   border-color: var(--md-accent-fg-color);
 }
+
+/* Buttons */
+.button-row {
+  display: flex;
+}
+
+.button-row button {
+  margin: 0 10px;
+}
