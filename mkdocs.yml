@@ -61,8 +61,6 @@ plugins:
         color: "#5FFFD7"
   - blog:
       blog_toc: true
-      post_url_max_categories: 2
-      post_url_format: "{date}/{slug}"
   - tags:
       tags_file: academy/tags.md
   # - git-revision-date

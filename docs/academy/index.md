@@ -6,77 +6,111 @@ hide:
 
 # Hummingbot Academy
 
-## [Articles Index](tags.md)
+### Free resources that help you understand the basics of algo trading and market making.
 
-## Level 1
+<br />
 
+[See Index of All Articles](tags.md){ .md-button .md-button--primary }
+
+---
 
 ## Core Strategies
 
-Learn the basics about the three core market making strategies
+<div class="glide glide1">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/2023/01/01/what-is-market-making/">
+            <img class="card-image" src="/blog/academy-what-is-market-making/cover.png">
+          </a>
+          <span class="card-info">📜 9 min read</span>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/2023/01/01/what-is-arbitrage/">
+            <img class="card-image" src="/blog/academy-what-is-arbitrage/cover.png">
+          </a>
+          <span class="card-info">📜 9 min read</span>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/2023/01/01/what-is-cross-exchange-market-making/">
+            <img class="card-image" src="/blog/academy-what-is-cross-exchange-market-making/xemm.jpg">
+          </a>
+          <span class="card-info">📜 13 min read</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-<div class="grid cards" markdown>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+  </div>
 
--   :fontawesome-brands-markdown:{ .lg .middle } __What is Market Making?__
-
-    ---
-
-    Provide liquidity to a market and capture the bid-ask spread
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/what-is-market-making/)
-
--   :material-clock-fast:{ .lg .middle } __What is Arbitrage?__
-
-    ---
-
-    Exploit price differences between two distinct markets
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/what-is-arbitrage/)
-
-
--   :material-format-font:{ .lg .middle } __What is Cross Exchange Market Making?__
-
-    ---
-
-    Provide liquidity while hedging your risk on another market
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/what-is-cross-exchange-market-making/)
-
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+  </div>
 </div>
+
+---
 
 ## Advanced Strategies
 
-<div class="grid cards" markdown>
+<div class="glide glide2">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/2023/01/01/a-comprehensive-guide-to-avellaneda-stoikovs-market-making-strategy/">
+            <img class="card-image" src="/blog/academy-avellaneda-stoikov-market-making-strategy/cover.png">
+          </a>
+          <span class="card-info">📜 12 min read</span>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/2023/01/01/avellaneda-strategy-a-technical-deep-dive/">
+            <img class="card-image" src="/blog/academy-avellaneda-tech-deepdown/cover.png">
+          </a>
+          <span class="card-info">📜 9 min read</span>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/academy-amm-arbitrage-uniswap-balancer/">
+            <img class="card-image" src="/blog/academy-amm-arbitrage-uniswap-balancer/amm-arb.jpg">
+          </a>
+          <span class="card-info">📜 12 min read</span>
+        </div>
+      </li>
+      <li class="glide__slide">
+        <div class="card">
+          <a href="/blog/2023/01/01/how-to-use-the-new-spot-perpetual-arbitrage-strategy/">
+            <img class="card-image" src="/blog/academy-spot-perpetual-protocol-guide/cover.png">
+          </a>
+          <span class="card-info">📜 12 min read</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 
--   :fontawesome-brands-markdown:{ .lg .middle } __A Comprehensive Guide to the Avellaneda Stoikov Market Making Strategy__
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+  </div>
 
-    ---
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/a-comprehensive-guide-to-avellaneda-stoikovs-market-making-strategy/)
-
--   :material-clock-fast:{ .lg .middle } __Avellaneda Stoikov Strategy: A Technical Deep Dive__
-
-    ---
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/avellaneda-strategy-a-technical-deep-dive/)
-
-
--   :material-format-font:{ .lg .middle } __How to Use the New Spot Perpetual Arbitrage Strategy__
-
-    ---
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/how-to-use-the-new-spot-perpetual-arbitrage-strategy/)
-
--   :material-format-font:{ .lg .middle } __How to Arbitrage AMMs like Uniswap__
-
-    ---
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/how-to-arbitrage-amms-like-uniswap/)
-
--   :material-format-font:{ .lg .middle } __How to Use the New Spot Perpetual Arbitrage Strategy__
-
-    ---
-
-    [:octicons-arrow-right-24: Read More](/blog/2023/01/01/how-to-use-the-new-spot-perpetual-arbitrage-strategy/)
-
+  <div class="glide__bullets" data-glide-el="controls[nav]">
+    <button class="glide__bullet" data-glide-dir="=0"></button>
+    <button class="glide__bullet" data-glide-dir="=1"></button>
+    <button class="glide__bullet" data-glide-dir="=2"></button>
+    <button class="glide__bullet" data-glide-dir="=3"></button>
+  </div>
 </div>
+
+---

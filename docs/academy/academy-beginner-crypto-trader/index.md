@@ -1,10 +1,9 @@
 ---
-date: 2019-01-18
+date: 2023-01-01
 authors:
-  - coinalpha
+  - foundation
 categories:
-  - Engineering
-  - Trader Tips
+  - Academy
 ---
 
 # A developer's guide to crypto algo trading

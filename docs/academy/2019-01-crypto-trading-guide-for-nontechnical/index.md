@@ -1,18 +1,20 @@
 ---
 date: 2019-01-29
 authors:
-  - coinalpha
+  - foundation
 categories:
-  - Market making
+  - Academy
+tags:
+  - Level 1
 ---
 
-# Crypto trading guide for nontechnical users
+# Intro to Algo Trading - Part 2
 
 ![cover](cover.jpeg)
 
 In our previous post, we put together some helpful trading and finance-related resources for **developers** who want to dip their toes into crypto algo trading. On the flip side, this post aims to be a good resource for **traders** who have trading experience but little to no programming skills.
 
-This post is also intended to be a "live" document, that we will update regularly with thoughtfully-selected readings and learning resources that we come across.
+<!-- more -->
 
 ### Manual trading vs. algo trading
 

@@ -26,6 +26,10 @@ Alternatively, install Hummingbot from source if:
 - You want to build new components like connectors or strategies
 - You want to learn how Hummingbot works at a deeper, technical level
 
+## 🎓 Hummingbot Academy
+
+See [Academy](/academy) for a collection of free resources that help you understand the basics of algo trading and market making.
+
 ## 👩‍💻 For developers
 
 Hummingbot is a general source framework for crypto algorithmic trading, and we welcome developers to fork the codebase for their own purposes and contribute to the community.
