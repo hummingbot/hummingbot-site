@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Advice from Market Makers
+  - Trader Tips
 ---
 
 # How To Get Good At Market Making

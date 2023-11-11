@@ -1,15 +1,16 @@
 ---
-date: 2023-01-01
+date: 2021-04-13
 authors:
-  - foundation
+  - coinalpha
 categories:
+  - Engineering
   - Academy
 tags:
-  - Advanced Market Making Strategies
+  - V1 Strategies
 ---
 
 
-# A comprehensive guide to Avellaneda & Stoikov’s market-making strategy
+# Guide to the Avellaneda & Stoikov Strategy
 
 ![cover](cover.png)
 

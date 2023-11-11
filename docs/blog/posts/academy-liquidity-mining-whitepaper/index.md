@@ -8,7 +8,7 @@ categories:
   - Academy
   - Liquidity Mining
 tags:
-  - Liquidity Mining and Incentiving Market Makers
+  - Liquidity Mining 
 ---
 
 # Liquidity Mining Whitepaper

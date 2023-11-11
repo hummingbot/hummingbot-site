@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Market Making and Algo Trading Basics
+  - Algo Trading Basics
 ---
 
 # FAQ for New Crypto Algo Traders
@@ -42,45 +42,6 @@ Another disadvantage of algo trading is that users cannot avoid risks introduced
 
 And last but not least, algo trading might incur higher costs than manual trading. Increased trade frequency leads to increased trading fees and costs.  You will also need to invest in infrastructure: high-quality hardware as well as fast and stable internet connection are part of the minimal requirement. For increased reliability and to avoid your computer taking on a side hustle of acting as an oven in your house, you may eventually want to host your trading on the cloud, leading to additional recurring costs.  In addition, you may want to purchase data feeds at some point in order to improve your strategies and backtesting. In algorithmic trading, data is gold, and it’s not free.
 
-### Can I do algo trading without learning programming?
-
-A handful of platforms and bots currently available allow individuals with any level of experience to run pre-set strategies on a user-friendly graphic user interface. With the help of these bots, technically anyone, especially those who already have manual trading experience, can begin algo trading with a few clicks of the mouse. If you trade for fun and have no time to acquire a new skill, you might want to check out these bots (a few were mentioned in [our previous post](../2019-01-crypto-bot-reviews/index.md)).
-
-At some point down the road, you may want to take a closer look at the logic behind the strategies, test and validate them against historical or real data, figure out your way to improve them, or even create your own strategies or bots. Here is where programming comes into play. While learning programming doesn’t guarantee you to make 10X more money, it does provide 10X more options regarding testing, strategy formulation, debugging and so on. However, whether you’ll need to learn programming ultimately boils down to your goal and motivation for trading.
-
-![](./image1.jpeg)
-
-### Which programming language should I learn?
-
-You can start crypto algo trading with different programming languages such as Python, C++, JAVA, R, etc. There are pros and cons that come with each language.
-
-We will mainly share basic learning resources for Python. As someone who’s completely new to coding, you may wonder, why Python?
-
-Python is one of the most popular languages used by today’s algo traders and developers. It is relatively easy to grasp, widely used, and capable of doing almost anything from backend web development to data analytics. 
-
-Here are two articles providing practical insights into “Why Python”:
-
-* [Advantages and Disadvantages of Python Programming Language](https://medium.com/@mindfiresolutions.usa/advantages-and-disadvantages-of-python-programming-language-fd0b394f2121)
-* [Why Python Algorithmic Trading is Preferred Choice Among Traders?](https://www.quantinsti.com/blog/python-trading)
-
-#### Python for beginners
-
-This course offered by MIT covers simple algorithms and all the basic Python syntax you’ll need to know, as well as broader computer science concept that will help get you started on your journey:
-[Introduction to Computer Science and Programming Using Python](https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-0).
-
-If time is your key constraint, this crash course takes you less than 3 hours:
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/yE9v9rt6ziw"" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-After going through these materials, you should be confident with reading code and building simple algorithms yourselves. If so, congrats! You’ll now be able to get started with Hummingbot’s upcoming command line interface, and customize the strategies.
-
-#### Python for trading
-
-Once you crack the Python fundamentals, it’s time to get into the meat of programming for algo trading. [Datacamp](https://www.datacamp.com) provides plenty of courses on this subject matter. This article - [Python For Finance: Algorithmic Trading](https://www.datacamp.com/community/tutorials/finance-python-trading) provides a comprehensive walkthrough from data analysis to strategy building using Python.
-
-When it comes to data analysis, you can always refer to this [cheat sheet](https://www.codementor.io/codementorteam/cheat-sheet-python-for-data-science-xe3m6wy4q) for basic syntax. To tame massive data, Pandas, a Python library for data manipulation and analysis, will come in handy. Here is a [Pandas Tutorial: DataFrames in Python](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python#gs.meCZt7M) that would be worth learning.
-
-To create more complex AI-powered strategies, sufficient knowledge on machine learning is necessary. Machine learning is a method of data analysis that automates pattern recognition and analytical model building, and enables decision making with little human intervention. You can take [a Tour of Machine Learning Algorithms](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/), and spend some good amount of time learning this free [Machine Learning for Trading](https://www.udacity.com/course/machine-learning-for-trading--ud501) online course offered by Georgia Tech, which lays the groundwork for a more advanced algo trading adventure.
 
 ### How to choose which pairs to trade?
 
@@ -116,9 +77,3 @@ Since we're designing Hummingbot to enable anyone to run a crypto market making 
 Given the current market environment, the barrier to entry is particularly low for new crypto traders. If you are not comfortable investing a load of hard-earned money at first, starting with $100 will work.
 
 Having said that, transaction and withdrawal fees may eat into profits (as %) and might materially impact results given smaller and smaller trading amounts.
-
-### Closing remarks
-
-For those new to algo trading, this field might seem intimidating and be a curious black box that’s interesting but seemingly unapproachable.  However, the crypto market makes it more accessible and it’s a lot easier to get started than you may think!  We hope we’ve provided you some resources here to help you get started.
-
-Programming is an art; there is no right or wrong way to approach it and there is no single way of achieving a single task.  Ultimately, your choice of technology depends on your experience, background, preference, but we hope we’ve laid out some alternatives for those new to algo trading.  Feel free to leave comments here or join [Discord](https://discord.gg/hummingbot) if you want to share your own insights, comments, or have any questions.

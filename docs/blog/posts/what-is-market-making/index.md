@@ -5,10 +5,10 @@ authors:
 categories:
   - Academy
 tags:
-  - Market Making and Algo Trading Basics
+  - Algo Trading Basics
 ---
 
-# What is market making?
+# What is Market Making?
 
 ![cover](cover.png)
 

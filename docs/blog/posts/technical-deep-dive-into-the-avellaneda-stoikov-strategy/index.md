@@ -1,19 +1,20 @@
 ---
-date: 2023-01-01
+date: 2021-04-22
 authors:
-  - foundation
+  - coinalpha
 categories:
+  - Engineering
   - Academy
 tags:
-  - Advanced Market Making Strategies
+  - V1 Strategies
 ---
 
 
-# Avellaneda strategy: A technical deep dive
+# Technical Deep Dive into the Avellaneda & Stoikov Strategy
 
 ![cover](cover.png)
 
-Following our [initial blog post](../2021-04-avellaneda-stoikov-market-making-strategy/index.md) on the new `avellaneda_market_making` strategy, we are back with deeper, more mathematical dive into ths strategy! Today we will explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, along with how we simplified the calculation of key parameters (greeks). 
+Following our initial blog post on the new `avellaneda_market_making` strategy, we are back with deeper, more mathematical dive into ths strategy! Today we will explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, along with how we simplified the calculation of key parameters (greeks). 
 
 The purpose of this article is to mathematically back assumptions and calculations that helped translate the authors' model into one more suitable for Hummingbot traders.
 

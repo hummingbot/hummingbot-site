@@ -61,9 +61,9 @@ plugins:
         color: "#5FFFD7"
   - blog:
       blog_toc: true
-      post_url_format: "{date}/{slug}"
+      post_url_format: "{slug}"
   - tags:
-      tags_file: academy/tags.md
+      tags_file: academy/all.md
   # - git-revision-date
   # - mkdocs-video
 
@@ -345,7 +345,7 @@ nav:
       - Building DEX Connectors: gateway/adding-dex-connectors.md
   - Academy:
     - Academy: academy/index.md
-    - Articles Index: academy/tags.md
+    - All Articles: academy/all.md
   - Botcamp:
     - Botcamp: botcamp/index.md
     - Botcamp FAQ: botcamp/faq.md

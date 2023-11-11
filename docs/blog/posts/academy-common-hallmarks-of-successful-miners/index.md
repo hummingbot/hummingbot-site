@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Advice from Market Makers
+  - Trader Tips
 ---
 
 # Common Hallmarks of Successful Miners

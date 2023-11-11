@@ -6,7 +6,7 @@ categories:
   - Liquidity mining
   - Academy
 tags:
-  - Liquidity Mining and Incentiving Market Makers
+  - Liquidity Mining 
 ---
 
 # Liquidity Mining in DeFi vs CeFi

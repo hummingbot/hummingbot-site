@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Market Making and Algo Trading Basics
+  - Algo Trading Basics
 ---
 
 # Exploring Common Strategies
