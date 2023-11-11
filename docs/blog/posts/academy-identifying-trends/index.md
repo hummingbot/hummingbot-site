@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Theory
+  - Advice from Market Makers
 ---
 
 
@@ -145,10 +145,10 @@ At 8:00 am (yellow vertical line), everyday, Volume Profile will recalculate and
 
 ## Hummingbot Scripts
 
-If you have more or less a framework built up to identify trends and want to code it, Hummingbot does have scripts for you to 
+If you have more or less a framework built up to identify trends and want to code it, Hummingbot has scripts for you to 
 tinker with and test out your trend detection strategy and adjust the spreads accordingly. 
-The script language is Python and currently there are a few scripts to get started, see [Hummingbot repo](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
-to get you started. 
+
+The script language is Python and currently there are a few scripts for you to get started. See [Hummingbot repo](https://github.com/hummingbot/hummingbot/) for more info.
 
 ## Conclusion 
 
@@ -157,16 +157,3 @@ Do not solely rely on indicators in charts; the indicators/trend lines can be a 
 Have a more holistic approach (whether in FA, TA, on-chain analytics, sentiment, WSB) in determining your trading strategies, be it in market-making or other trading types (Volatility, momentum, mean-reversion, etc) before picking the market pairs. After deciding the market pair, determine your risk management strategies to control your position sizing, leverage, etc.  
 
 Last but not least, John Maynard Keynes said, “the markets can remain irrational longer than you can remain solvent.” So be cautious and flexible as market conditions evolve  
-
-
-### Important notes and disclaimers
-
-Please review the Liquidity Mining Policy for the full disclaimer, including policies related to the use of Hummingbot.
-
-The content of this Site does not constitute investment, financial, legal, or tax advice: none of the information contained on this Site constitutes a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service.
-
-**No guarantee of profit**: CoinAlpha does not claim that liquidity mining and participation in liquidity mining campaigns will be profitable, however measured, for the user. Liquidity mining yields are a measure of rewards compared to assets used for liquidity mining, excluding any gains or losses incurred from the underlying trading strategy.
-
-**Eligibility requirements**: participation in liquidity mining is subject to eligibility requirements as specified in the liquidity mining policy.
-
-**Campaign terms subject to change**: terms may be modified over the course of the campaign. We will announce any changes, if any, on our discord and reddit; the most up to date terms will also be posted on the liquidity mining campaign terms and the miners app.

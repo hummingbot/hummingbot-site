@@ -5,30 +5,27 @@ authors:
 categories:
   - Academy
 tags:
-  - Level 2
+  - Market Making and Algo Trading Basics
 ---
 
-# Exploring strategies and configurations
+# Exploring Common Strategies
 
 ![cover](cover.jpg)
 
-The following pages will help you to explore how you can set up your bot with different strategies and configurations:
+The following sections will help you to explore how you can set up your bot with different strategies and configurations:
 
 1. **Strategies:**
-   - To explore all the different strategies provided by Hummingbot, you can visit Hummingbot Foundation’s documentation site:
-     [https://hummingbot.org/strategies/](../../../strategies/index.md)
+
+To explore all the different strategies provided by Hummingbot, you can visit Hummingbot Foundation’s documentation site: [https://hummingbot.org/strategies/](../../../strategies/index.md)
 2. **Global Configurations:**
-   - There are global configurations that apply to most strategies. Learn more about them here:
-     [https://hummingbot.org/global-configs/](../../../global-configs/index.md)
+
+There are global configurations that apply to most strategies. Learn more about them here: [https://hummingbot.org/global-configs/](../../../global-configs/index.md)
 
 <!-- more -->
 
-# Overview of all common strategies
+## Live vs Paper Trading
 
-We recommend that you use small amounts of real crypto instead of paper trade to try out the strategies. It is better to run tests this way than paper trade so you get to look at Hummingbot and the exchange side-by-side, understanding better how the strategy and your configuration works. Paper trade is also like another "market" in our codebase, so you may run into errors or problems when paper trading but not when using a live connector.
-
-To save time, only focus on the top three strategies in ** (pure market making, advanced market making, cross-exchange market making)
-
+We recommend that you use small amounts of real crypto instead of paper trade to try out the strategies. It is better to run tests this way than paper trade so you get to look at Hummingbot and the exchange side-by-side, understanding better how the strategy and your configuration works. In addition, paper trading acts like a virtual "connector" in our codebase, so you may run into errors or problems when paper trading but not when using a live connector.
 
 ## Pure Market Making
 
@@ -37,10 +34,6 @@ This is the most commonly used strategy by Hummingbot users. The prompts in the 
 This is the simplest of all the strategies. Like in normal trading, you buy and sell assets at a certain price by placing maker orders in the order book.
 
 [https://hummingbot.org/strategies/pure-market-making/](../../../strategies/pure-market-making.md)
-
-## Advanced market making
-
-This is still `pure_market_making` strategy but we call it advanced market making because of the list of advanced strategies Hummingbot users can utilize and play around with.
 
 Over time, we found out that users who put more time and effort into learning the parameters, adjusting their settings from time to time are more profitable compared to when using it out of the box.
 
@@ -71,7 +64,7 @@ You can click the link below on how it works and to know more.
 
 [https://hummingbot.org/strategies/perpetual-market-making/](../../../strategies/perpetual-market-making.md)
 
-## Avellaneda market making
+## Avellaneda Market Making
 
 [https://hummingbot.io/en/blog/2021-04-avellaneda-stoikov-market-making-strategy/](../2021-04-avellaneda-stoikov-market-making-strategy/index.md)
 

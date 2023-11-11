@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Strategies
+  - Advanced Strategies
 ---
 
 

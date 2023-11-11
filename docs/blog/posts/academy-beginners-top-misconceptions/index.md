@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Level 1
+  - Advice from Market Makers
 ---
 
 # Top Beginner Misconceptions about Market Making

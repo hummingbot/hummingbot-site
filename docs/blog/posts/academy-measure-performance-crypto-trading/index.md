@@ -5,13 +5,12 @@ authors:
 categories:
   - Academy
 tags:
-  - Misc
+  - Running Hummingbot
 ---
 
-# How to measure performance in crypto trading
+# Managing performance in crypto trading
 
 ![cover](cover.jpg)
-
 
 Tracking your crypto trading profit or loss (P&L) is crucial in evaluating the effectiveness of your trading strategies, investment decisions, and portfolio management strategy. In traditional financial markets, determining profits and losses is a relatively straightforward task as conventions and regulations are well-established. However, tracking P&L when trading crypto can be much more challenging because of:
 
@@ -21,18 +20,20 @@ Tracking your crypto trading profit or loss (P&L) is crucial in evaluating the e
 
 In this post, we’ll cover the following issues and share some useful tips about determining the profitability of your crypto trading strategies.
 
-### TLDR
+## TLDR
 
 Hummingbot calculates profitability by determining the portfolio value of the starting balance and the current balance in terms of the **current exchange rate**.
 
 ![equation](equation.jpg)
 
-### Table of Contents
+<!-- more -->
+
+## Summary
+
 - [Which asset should you use to benchmark your profit or loss - fiat, Ether, or Bitcoin?](#which-asset)
 - [How does Hummingbot measure performance?](#how-measure)
 - [Other considerations](#considerations) 
 
-<!-- more -->
 
 ### Which asset should you use to benchmark your profit or loss - fiat, Ether, or Bitcoin?
 
@@ -157,7 +158,9 @@ When a Hummingbot user calls the ‘history’ command, this value gets printed 
 
 > This method also extends well to multiple exchanges. For example, if we are trading WETH/DAI on DDEX and ETH/USDC on Coinbase, the starting and current values of ETH and USDC will be converted to WETH and DAI, respectively, using the current conversion rates. Then the starting and current balances will computed in terms of the current WETH/DAI exchange rate.
 
-### Other considerations
+## Other considerations
+
+![screen](screen.jpg)
 
 Currently, Hummingbot’s performance analysis calculation only considers base token quantity and quote token quantity. For most exchanges, fees are taken as a percentage of the quantity of the quote token traded; however, some may take fees from a third token. For example, Binance has a 25% discount rate for users that pay fees using the BNB coin. Hummingbot’s performance analysis tool does not currently account for this scenario.
 

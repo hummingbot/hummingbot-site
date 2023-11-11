@@ -377,6 +377,6 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   display: flex;
 }
 
-.button-row button {
-  margin: 0 10px;
+.button-row p {
+  margin: 0 1em;
 }

@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Level 1
+  - Market Making and Algo Trading Basics
 ---
 
 # Basic Concepts of Crypto Trading

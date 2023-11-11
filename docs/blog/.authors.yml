@@ -11,7 +11,7 @@ authors:
 
   carlo:
     name: Carlo Las Marias
-    description: CEO, CoinAlpha
+    description: Co-founder, Hummingbot
     avatar: /assets/authors/carlo-las-marias.jpg
 
   mike:
@@ -21,10 +21,15 @@ authors:
 
   martin:
     name: Martin Kou
-    description: CTO, CoinAlpha
+    description: Co-founder, Hummingbot
     avatar: /assets/authors/martin-kou.jpg
 
   fede:
     name: Federico Cardoso
     description: CTO, Hummingbot
     avatar: /assets/authors/fede-cardoso.jpg
+
+  community:
+    name: Community
+    description: Contributor
+    avatar: /assets/authors/community-2.webp

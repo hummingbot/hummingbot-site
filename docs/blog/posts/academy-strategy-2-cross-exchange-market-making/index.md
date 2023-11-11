@@ -5,35 +5,25 @@ authors:
 categories:
   - Academy
 tags:
-  - Level 2
+  - Arbitrage and Cross-Exchange Market Making Strategies
 ---
 
-# Use the Cross-Exchange Market Making (XEMM) Strategy to Lower Risk
+# How to Use the Cross-Exchange Market Making Strategy to Lower Risk
 
 ![cover](image_2.jpg)
 
+Cross exchange is a **maker-taker** strategy that performs market making trades between two markets: it emits limit orders to a less liquid, larger spread market; and emits market orders on a more liquid, smaller spread market whenever the limit orders were hit.
 
-### What is cross exchange market making?
+**Arbitrage** and **cross-exchange market making** are often described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: inventory risk. This makes this strategy more beginner friendly. The main risk that remains is execution risk.
 
-Cross exchange is a **maker-taker** strategy. Read more through the docs link and blog below:
-
-[![What is cross exchange market making?](image_2.jpg)](../2020-09-what-is-cross-exchange-market-making/index.md)
-
-> **What is cross exchange market making?**  
-> by Paulo Henrique Welcome back to our Educational Center, where we aim to help you to learn more about market making, arbitrage, and everything related to algorithmic trading. Today we will talk about one of the core strategies that can be used with hummingbot: cross-exchange market making.
+This article explains:
+1. The basic concept of cross-exchange market making
+2. The difference between cross-exchange market making, arbitrage, and pure market making strategies
+3. Why and when to use this strategy
 
 <!-- more -->
 
-**The cross exchange market making strategy** performs market making trades between two markets: it emits limit orders to a less liquid, larger spread market; and emits market orders on a more liquid, smaller spread market whenever the limit orders were hit.
-
-**Arbitrage** and **cross-exchange market making** are often considered and described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: inventory risk. This makes this strategy more beginner friendly. The main risk that remains is execution risk.
-
-This article explains:
-1. the basic concepts cross-exchange market making
-2. the difference between cross-exchange market making and arbitrage and pure market making strategies
-3. why and when we can use this strategy
-
-### Cross exchange market making reduces inventory risk
+## Cross exchange market making reduces inventory risk
 
 Arbitrage and cross-exchange market making are often considered and described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: inventory risk. The main risk that remains is execution risk. To learn more, please read the following blog post:
 
@@ -41,7 +31,7 @@ Arbitrage and cross-exchange market making are often considered and described as
 > **What is cross exchange market making?**  
 > by Paulo Henrique Welcome back to our Educational Center, where we aim to help you to learn more about market making, arbitrage, and everything related to algorithmic trading. Today we will talk about one of the core strategies that can be used with hummingbot: cross-exchange market making.
 
-### The concept behind cross exchange market making strategy
+## The concept behind cross exchange market making strategy
 
 Our video is outdated in terms of Hummingbot UI but explains the idea of cross exchange market making strategy.
 
@@ -67,8 +57,9 @@ You're thinking of selling an item and want to make a 20% profit from it. So you
 
 Initially, you were thinking of selling it at $120 but you also have to consider taxes (fees) in making those trades. Taxes are at 0.1% and since you're making two trades (sell and buy), you have to pay for it twice. So you want to sell it for $120.22 because:
 
-
+```
 $120 + $0.12 tax ( 0.1% for selling at $120 ) + $0.1 tax ( 0.1% for buying at $100 )
+```
 
 
 You've put it in display waiting for someone to drop by your store and buy the item. When the item was sold you went to STORE B, bought the exact same item for $100.1 including tax and profited $20 from those trades.
@@ -77,19 +68,6 @@ You've put it in display waiting for someone to drop by your store and buy the i
 
 It works the same as the example above, but in reverse. In this case, you want to buy items at the price of how much you can profit from selling it at the more liquid market.
 
-### Cross-exchange market making in action
+## Cross-exchange market making in action
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/gwLjSe0t8K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Advanced: Setting price source configurations
-
-The inefficiencies caused by the highly fragmented cryptocurrency market create a lot of opportunities for arbitrageurs and market makers, who can take advantage of the price discrepancies between all the markets. One helpful way is to make use of our price source configurations to navigate these price discrepancies.
-
-In this blog, you will learn:
-
-1. The configurations you can use on Hummingbot to set price sources
-2. The various price sources Hummingbot can use as a reference
-3. How the information about price moves around different markets
-4. Why we should use the price information from a different source
-
-[Extracting the best value from your Hummingbot - Price Source Configurations](../2020-11-commands-and-config-price-source/index.md)

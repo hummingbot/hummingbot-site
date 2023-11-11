@@ -1,12 +1,15 @@
 ---
 date: 2019-01-30
 authors:
-  - coinalpha
+  - mike
 categories:
   - Market making
+  - Academy
+tags:
+  - Understanding the Crypto Market Making Landscape
 ---
 
-# The Thin Crust of Liquidity: Why Crypto Needs More Market Makers
+# The Role of Market Makers and Importance of Liquidity
 
 ![](./cover.jpeg)
 

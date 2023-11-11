@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Level 3
+  - Advice from Market Makers
 ---
 
 # Tips for Handling Different Market Conditions

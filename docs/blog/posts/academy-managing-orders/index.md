@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Theory
+  - Running Hummingbot
 ---
 
 # How to Manage Your Orders

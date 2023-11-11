@@ -4,6 +4,9 @@ authors:
   - coinalpha
 categories:
   - Research
+  - Academy
+tags:
+  - Understanding the Crypto Market Making Landscape
 ---
 
 # Crypto Liquidity Report: Measuring crypto liquidity using high-resolution order book data
@@ -27,9 +30,9 @@ We believe slippage is a more robust indicator of liquidity than trading volume.
 
 ### Motivation
 
-In our post [The thin crust of liquidity](../2019-01-thin-crust-of-liquidity/index.md) we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 
+In our post [The Role of Market Makers and Importance of Liquidity](/blog/2019/01/30/the-role-of-market-makers-and-importance-of-liquidity/) we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 
 
-As mentioned in [Does community-based market making work?](../2019-09-does-community-based-market-making-work/index.md), crypto exchanges and token projects spend an estimated $3 billion annually on [market making](https://hackernoon.com/a-guide-to-market-making-for-crypto-startups-jydr387v), in the form of rebates, fees, and cost of inventory.
+Crypto exchanges and token projects spend an estimated $3 billion annually on [market making](https://hackernoon.com/a-guide-to-market-making-for-crypto-startups-jydr387v), in the form of rebates, fees, and cost of inventory.
 
 The goal of this Liquidity Report is to measure the actual liquidity of different digital assets on the market, and demonstrate how the liquidity resource is highly concentrated on top market cap assets and very scarce for long-tail assets.  
 
@@ -59,6 +62,7 @@ That said, outliers exist. Assets such as MATIC, ONE and DUSK have higher liquid
 
 
 ### Next steps
+
 We plan to publish this liquidity report on a monthly basis to provide crypto projects, digital asset exchanges and crypto enthusiasts with a reliable indicator for crypto liquidity. Through collective efforts, we hope to see improved numbers and more fairly distributed liquidity resources for all the crypto projects in the foreseeable future. 
 
 Additionally, we’re discussing with multiple projects and exchanges about the concept of empowering the community members to earn rewards from market making, and a few have been on board. We're now in the process of finalizing the structure and mechanics of a more scalable platform for community-driven liquidity bounties. We are going to make a formal announcement about that around the end of October! 

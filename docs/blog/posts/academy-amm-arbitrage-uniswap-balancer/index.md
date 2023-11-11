@@ -1,11 +1,11 @@
 ---
 date: 2023-01-01
 authors:
-  - coinalpha
+  - foundation
 categories:
   - Academy
 tags:
-  - Strategies
+  - Arbitrage and Cross-Exchange Market Making Strategies
 ---
 
 

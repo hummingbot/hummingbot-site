@@ -6,10 +6,10 @@ categories:
   - Academy
   - Research
 tags:
-  - Fundamentals
+  - Understanding the Crypto Market Making Landscape
 ---
 
-# Exchange types explained: CLOB, RFQ, and Automated, oh my!
+# Exchange Types Explained: CLOB, RFQ, and AMM
 
 ![cover](cbot-trading-pit.png)
 
@@ -28,7 +28,7 @@ Exchanges perform the fundamental role in free markets of bringing together and 
 |---|---|
 | [**Central Limit Order Book (CLOB)**](#central-limit-order-book-clob)<br/><br/><small>Most commonly used exchange methodology</small><br/><br/><small>Exchange collects orders from market makers and then publishes an aggregate order book</small><br/><br/><small>Orders are made available for other parties (“takers”) to accept the terms and transact</small><br/><br/> | <small>NYSE, CBOT, Coinbase, Binance, EtherDelta, DDEX, Radar Relay</small> |
 | [**Request for Quotation (RFQ)**](#request-for-quotation-rfq-exchanges)<br/><br/><small>Pricing on demand: A taker initiates a transaction by querying a known set of market makers with a specific demand (e.g. “buy 10 ETH”)</small><br/><br/><small>Taker receives a quote from each, and decides which (if any) to accept</small><br/><br/> | <small>Airswap, Kyber</small> |
-| [**Automated Exchange**](#automated-exchange)<br/><br/><small>A form of exchange enabled by blockchain technology where an exchange smart contract calculates prices using a predetermined formula referencing the contract’s inventory of assets</small><br/><br/><small>This requires third party actors (arbitrageurs) to keep asset prices in-line with other markets</small><br/><br/> | <small>Bancor, Uniswap</small> |
+| [**AMM**](#automated-exchange)<br/><br/><small>A form of exchange enabled by blockchain technology where an exchange smart contract calculates prices using a predetermined formula referencing the contract’s inventory of assets</small><br/><br/><small>This requires third party actors (arbitrageurs) to keep asset prices in-line with other markets</small><br/><br/> | <small>Bancor, Uniswap</small> |
 
 
 
@@ -102,11 +102,9 @@ One distinction of an RFQ type of business process is that you will typically kn
 
 In RFQs, the role of the exchange operator (or smart contract) is to organize and keep track of quotation providers for a taker, assist in the coordination of requesting and receiving quotes, and finally provide a method for effecting (settling) the transaction once agreed.
 
-#### RFQ explained in pictures
-
 ![(RFQ)](./rfq-exchange.png)
 
-#### RFQ and decentralization
+### RFQ and decentralization
 
 RFQ exchanges clearly offer a higher degree of decentralization and enable true "peer-to-peer" transactions.  Once established, the direct access between takers and makers eliminates the control and influence of a central exchange operator.
 
@@ -115,13 +113,11 @@ In practice, technical complexities must be overcome to fully enable more widesp
 > At Hummingbot, we are planning to add integrations to RFQ exchanges in the future, to obfuscate the technical complexity and make the role of market maker accessible to more users.
 
 
-### Automated Exchange
+## Automated Market Makers (AMM)
 
-![Automated Exchanges](./bancor-uniswap.png)
+![AMMs](./bancor-uniswap.png)
 
-A relatively new form of exchange that has emerged in the cryptocurrency markets is the automated exchange such as Bancor and Uniswap. These exchanges do away with order books altogether and instead use a smart contract and its inventory to determine prices for exchange. We discuss how Uniswap works in a previous [blog post](../2019-04-hummingbot-vs-uniswap/index.md).
-
-#### Automated exchange explained in pictures
+A relatively new form of exchange that has emerged in the cryptocurrency markets is the automated exchange such as Bancor and Uniswap. These exchanges do away with order books altogether and instead use a smart contract and its inventory to determine prices for exchange. 
 
 ![Determining purchase price on a constant product market maker](./automated-mm.png)
 
@@ -129,16 +125,15 @@ To understand numerically how automated market maker pricing works, this [spread
 
 ![Example](./constant-product-mm.png)
 
-#### Automated exchanges and decentralization
+### AMMs and decentralization
 
-The elegance of the Automated Exchange is its simplicity: a simple contract, using basic arithmetic, that is free of control from any party.  Automated exchanges rely on natural market forces to establish pricing.
+The elegance of the AMM is its simplicity: a simple contract, using basic arithmetic, that is free of control from any party.  Automated exchanges rely on natural market forces to establish pricing.
 
 Since it's simply a smart contract, once deployed, the exchange can be accessed by anyone at any time, and not even the original creator of the exchange may be able to influence the exchange's behavior.
 
-> As mentioned in our [previous blog](../2019-04-hummingbot-vs-uniswap/index.md), we are working to integrate Automated Exchanges into Hummingbot, allowing Hummingbot users to act as arbitrageurs to generate profits but also help the exchanges keep pricing in-line with the market; it's a win-win.
+Hummingbot users can act as arbitrageurs to generate profits but also help the exchanges keep pricing in-line with the market; it's a win-win.
 
-
-#### Footnotes
+## Footnotes
 
 1. Exchanges may also allow for the specification of additional parameters for additional complexity and customization, such as order duration/expiration or other conditions (stop, limit).
 2. Unlike other market places, when applied to digital assets, the counterparty in an RFQ transaction facilitated by an RFQ protocol may only be *known* by their wallet address.

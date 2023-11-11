@@ -4,10 +4,12 @@ authors:
   - carlo
 categories:
   - Liquidity mining
-  - Market making
+  - Academy
+tags:
+  - Liquidity Mining and Market Maker Incentives
 ---
 
-# Hummingbot Miner vs. DeFi Liquidity Mining Part 2: Considerations for Market Makers/Liquidity Providers
+# Liquidity Mining in DeFi vs CeFi
 
 ![cover](hummingbot-vs-defi-2.jpg)
 

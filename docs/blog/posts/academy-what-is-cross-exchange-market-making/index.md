@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:  
-  - Strategies
+  - Arbitrage and Cross-Exchange Market Making Strategies
 ---
 
 # What is cross exchange market making?

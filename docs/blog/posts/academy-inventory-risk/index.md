@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Theory
+  - Market Making and Algo Trading Basics
 ---
 
 # What is inventory Risk?

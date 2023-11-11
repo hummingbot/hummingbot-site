@@ -1,11 +1,11 @@
 ---
 date: 2023-01-01
 authors:
-  - foundation
+  - community
 categories:
   - Academy
 tags:
-  - Level 3
+  - Advice from Market Makers
 ---
 
 # Common Hallmarks of Successful Miners
@@ -14,19 +14,15 @@ tags:
 
 *by Kyle Mizui*
 
-**Disclaimer:** The content of this article is provided by our blog contributor Kyle Mizui and does not represent the views of CoinAlpha Inc./Hummingbot. The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service.
+Hummingbot Miner has a [leaderboard](https://miner.hummingbot.io/leaderboard) that tracks the highest-paid miners on the platform. You must be wondering, what are the top miners doing that is earning them thousands of dollars a week? This piece is a result of discussions with some of the miners who are in the Eagle Club, and we hope it unveils some of the things profitable miners do.
 
-Hummingbot has a [leaderboard](https://miner.hummingbot.io/leaderboard?ref=blog.hummingbot.org) that tracks the highest-paid miners on the platform. You must be wondering, what are the top miners doing that is earning them thousands of dollars a week? This piece is a result of discussions with some of the miners who are in the Eagle Club, and we hope it unveils some of the things profitable miners do.
+**1.* Picking Pairs**
+**2. Managing Inventory Risks**
+**3. Setting up guardrails**
+**4. Constant experimentation**
+**5. Joining a community**
 
 <!-- more -->
-
-### **1. Picking Pairs**
-### **2. Managing Inventory Risks**
-### **3. Setting up guardrails**
-### **4. Constant experimentation**
-### **5. Joining a community**
-
-
 
 ### **1. Picking Pairs**
 
@@ -116,3 +112,5 @@ You might be shy, I understand. One thing I'll definitely recommend first is ope
 The first thing to get started is to join the Discord community. Trading discussions occur in #trader-chat or #liquidity-mining. Hummingbot’s support team from Discord is very responsive as well and they can help you with any setup issues with your strategies. Start by asking questions in the [Discord](https://discord.com/invite/hummingbot?ref=blog.hummingbot.org) channels!
 
 ---
+
+**Disclaimer:** The content of this article is provided by a community contributor and does not represent the views of Hummingbot Foundation. The content above does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service.

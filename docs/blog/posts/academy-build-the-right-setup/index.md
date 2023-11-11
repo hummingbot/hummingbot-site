@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Level 3
+  - Running Hummingbot
 ---
 
 # Build the right algo trading setup
