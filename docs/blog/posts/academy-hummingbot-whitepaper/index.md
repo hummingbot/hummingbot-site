@@ -7,7 +7,7 @@ categories:
   - Academy
   - Hummingbot
 tags:
-  - Understanding the Crypto Market Making Landscape
+  - Crypto Market Making Landscape
 ---
 
 # Hummingbot Whitepaper

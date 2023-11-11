@@ -6,7 +6,7 @@ categories:
   - Research
   - Academy
 tags:
-  - Understanding the Crypto Market Making Landscape
+  - Crypto Market Making Landscape
 ---
 
 # Mapping the Crypto Market Maker Landscape

@@ -6,7 +6,7 @@ categories:
   - Market making
   - Academy
 tags:
-  - Understanding the Crypto Market Making Landscape
+  - Crypto Market Making Landscape
 ---
 
 # The Role of Market Makers and Importance of Liquidity

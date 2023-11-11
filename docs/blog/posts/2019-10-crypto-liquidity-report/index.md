@@ -6,7 +6,7 @@ categories:
   - Research
   - Academy
 tags:
-  - Understanding the Crypto Market Making Landscape
+  - Crypto Market Making Landscape
 ---
 
 # Crypto Liquidity Report: Measuring crypto liquidity using high-resolution order book data

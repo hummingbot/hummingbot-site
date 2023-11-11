@@ -44,7 +44,7 @@ hide:
 
 ---
 
-## [Understanding the Crypto Market Making Landscape](/academy/tags/#understanding-the-crypto-market-making-landscape)
+## [Crypto Market Making Landscape](/academy/tags/#understanding-the-crypto-market-making-landscape)
 
 <div class="grid cards" markdown>
 
@@ -58,13 +58,13 @@ hide:
 
 ---
 
-## [Liquidity Mining and Market Maker Incentives](/academy/tags/#liquidity-mining-and-market-maker-incentives)
+## [Liquidity Mining and Incentiving Market Makers](/academy/tags/#liquidity-mining-and-market-maker-incentives)
 
 <div class="grid cards" markdown>
 
 -   [![](/assets/brand/liquidity-mining.png)](/blog/2019/10/31/liquidity-mining-whitepaper/)
 -   [![](/blog/2020-08-liquidity-mining-hummingbot-vs-defi/hummingbot-vs-defi-1.jpg)](/blog/2020/08/03/understanding-liquidity-mining/)
--   [![](/blog/2020-08-liquidity-mining-hummingbot-vs-defi/hummingbot-vs-defi-1.jpg)](/blog/2020/08/03/understanding-liquidity-mining/)
+-   [![](/blog/2020-10-liquidity-mining-hummingbot-defi-automated-market-maker-impermanent-loss/hummingbot-vs-defi-2.jpg)](/blog/2020/10/16/liquidity-mining-in-defi-vs-cefi/)
 
 
 </div>

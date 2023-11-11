@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Advanced Strategies
+  - Arbitrage and Cross-Exchange Market Making Strategies
 ---
 
 # How to Use the New Spot-perpetual Arbitrage Strategy

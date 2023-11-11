@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Advanced Strategies
+  - Advanced Market Making Strategies
 ---
 
 

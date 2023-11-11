@@ -6,7 +6,7 @@ categories:
   - Liquidity mining
   - Academy
 tags:
-  - Liquidity Mining and Market Maker Incentives
+  - Liquidity Mining and Incentiving Market Makers
 ---
 
 # Understanding Liquidity Mining

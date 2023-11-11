@@ -6,7 +6,7 @@ categories:
   - Academy
   - Research
 tags:
-  - Understanding the Crypto Market Making Landscape
+  - Crypto Market Making Landscape
 ---
 
 # Exchange Types Explained: CLOB, RFQ, and AMM
