@@ -3,7 +3,9 @@ date: 2020-07-23
 authors:
   - carlo
 categories:
-   - Deployment
+  - Academy
+tags:
+  - Running Hummingbot
 ---
 
 # Deploying Hummingbot on a Raspberry Pi 

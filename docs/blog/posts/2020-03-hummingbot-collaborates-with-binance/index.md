@@ -4,6 +4,7 @@ authors:
   - coinalpha
 categories:
   - Announcements
+  - Partnerships
 ---
 
 # Hummingbot announces two major strategic initiatives with Binance

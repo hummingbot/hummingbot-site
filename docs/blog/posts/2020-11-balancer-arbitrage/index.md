@@ -1,9 +1,10 @@
 ---
 date: 2020-11-11
 authors:
-  - mike
+  - coinalpha
 categories:
   - Announcements
+  - Partnerships
 ---
 
 # Introducing the new Balancer connector and arbitrage strategy!

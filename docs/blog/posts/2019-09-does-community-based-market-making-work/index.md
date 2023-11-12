@@ -61,7 +61,7 @@ However, we can infer whether people are making money from looking at [retention
 
 As with most products, there is a usage dropoff in usage after the first week, but the fact that almost 40% of new users are still running bots after one month indicates a high likelihood that these users are making money.
 
-**Engagement over time** is another criticial factor: are people risking more capital as their proficiency grows, or are they decreasing usage?
+**Engagement over time** is another critical factor: are people risking more capital as their proficiency grows, or are they decreasing usage?
 
 To measure engagement over time, we tracked filled order volume for each weekly cohort of users that participated in $ONE Makers:
 

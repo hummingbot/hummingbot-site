@@ -10,33 +10,35 @@ hide:
 
 <br />
 
+<div class="grid two-thirds cards" markdown>
 
-<div class="grid cards" markdown>
+-   #### Featured
+    
+    [![](/assets/thumbnails/composable-mm.jpg)](/blog/introducing-v2-strategies)
 
-- [:thinking: Algo Trading Basics](#algo-trading-basics)
-- [:map: Crypto Exchange Landscape](#crypto-exchange-landscape)
-- [:pick: Liquidity Mining](#liquidity-mining)
-- [:bulb: Trader Tips](#trader-tips)
-- [:man_mage: Market Maker Interviews](#market-maker-interviews)
-- [:robot: Running Hummingbot](#running-hummingbot)
-- [:one: V1 Strategies](#v1-strategies)
-- [:books: All Articles](all.md)
+    ## [Introducing V2 Strategies](/blog/introducing-v2-strategies)
+
+-   #### Popular
+
+    ---
+
+    ### [Getting Started with Algo Trading](/blog/getting-started-with-algo-trading/)
+
+    ### [FAQ for New Algo Traders](/blog/faq-for-new-crypto-algo-traders/)
+
+    ### [What is Market Making?](/blog/what-is-market-making/)
+
+    ### [What is Arbitrage?](/blog/what-is-arbitrage/)
+
+    ### [What is Cross Exchange Market Making?](/blog/what-is-cross-exchange-market-making/)
+
+    <br />
+
+    [See all articles :fontawesome-solid-chevron-right:](all.md){ .md-button }
 
 </div>
 
 ### Once you've mastered the basics, sign up for **[Botcamp](/botcamp)**, our hands-on training course that teaches you how to build sophisticated quantitative market making strategies.
-
----
-
-## :star_struck: Featured
-
-<div class="grid cards" markdown>
-
--   [![](/assets/thumbnails/composable-mm.jpg)](/blog/introducing-v2-strategies)
-
-    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
-
-</div>
 
 ---
 
@@ -58,7 +60,7 @@ hide:
 
 </div>
 
-[See more in Algo Trading Basics :material-chevron-right:](/academy/all/#algo-trading-basics){ .md-button }
+[See more in Algo Trading Basics :fontawesome-solid-chevron-right:](/academy/all/#algo-trading-basics){ .md-button }
 
 ---
 
@@ -72,7 +74,7 @@ hide:
 
 </div>
 
-[See more in Crypto Exchange Landscape :material-chevron-right:](/academy/all/#crypto-industry-landscape){ .md-button }
+[See more in Crypto Exchange Landscape :fontawesome-solid-chevron-right:](/academy/all/#crypto-industry-landscape){ .md-button }
 
 ---
 
@@ -86,7 +88,7 @@ hide:
 
 </div>
 
-[See more in Liquidity Mining :material-chevron-right:](/academy/all/#liquidity-mining-and-market-maker-incentives){ .md-button }
+[See more in Liquidity Mining :fontawesome-solid-chevron-right:](/academy/all/#liquidity-mining-and-market-maker-incentives){ .md-button }
 
 ---
 
@@ -97,7 +99,7 @@ hide:
 
 </div>
 
-[See more in Trader Tips :material-chevron-right:](#){ .md-button }
+[See more in Trader Tips :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---
 
@@ -108,7 +110,7 @@ hide:
 
 </div>
 
-[See more in Market Maker Interviews :material-chevron-right:](#){ .md-button }
+[See more in Market Maker Interviews :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---
 
@@ -122,7 +124,7 @@ hide:
 
 </div>
 
-[See more in Running Hummingbot :material-chevron-right:](#){ .md-button }
+[See more in Running Hummingbot :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---
 
@@ -136,6 +138,6 @@ hide:
 
 </div>
 
-[See more in V1 Strategies  :material-chevron-right:](#){ .md-button }
+[See more in V1 Strategies  :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---

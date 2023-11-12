@@ -4,7 +4,7 @@ authors:
   - carlo
 categories:
    - Announcements
-   - Liquidity mining
+   - Partnerships
 ---
 
 # Solana liquidity mining campaign going live on May 26, 2020!

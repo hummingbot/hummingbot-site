@@ -391,10 +391,10 @@ nav:
     - Whitepaper: governance/whitepaper.md
   - About:
     - About: about/index.md
-    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
     - FAQ: faq.md
     - Board of Directors: governance/board.md
-    - Reporting: reporting.md
+    - Reported Volumes: reporting.md
     - History: about/history.md
+    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
   - Blog: 
     - blog/index.md

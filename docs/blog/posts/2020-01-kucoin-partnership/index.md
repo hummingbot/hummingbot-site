@@ -4,6 +4,7 @@ authors:
   - carlo
 categories:
    - Announcements
+   - Partnerships
 ---
 
 

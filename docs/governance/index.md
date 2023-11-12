@@ -5,6 +5,13 @@ Hummingbot Foundation's purpose is to empower Hummingbot Governance Token (HBOT)
 * Allocate HBOT bounty budget toward the top connectors of each type 
 * Re-elect the foundation's Board of Directors each year
 
+Pages in this section include:
+
+* [Polls](polls.md): Polls that let HBOT holders determine which connectors are included for the next Epoch
+* [Proposals](proposals.md): Proposals are used to add new connectors and allocate HBOT bounties
+* [Epochs](epochs.md): Quarterly periods of codebase maintenance defined via Polls
+* [Whitepaper](whitepaper.md): Published in December 2021, this document explains the Foundation's principles and organizational structure
+
 ## HBOT Token
 
 The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that lets holders to decide how the Hummingbot codebase changesthrough voting.
@@ -22,7 +29,7 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 * **Decimals**: 18
 * **Total Supply**: 1,000,000,000
 
-Read about HBOT in the [launch post](/blog/2021/12/16/introducing-the-hummingbot-governance-token-hbot/).
+Read about HBOT in the [launch post](/blog/introducing-hbot/).
 
 ## HBOT Tracker
 
@@ -60,14 +67,6 @@ Below are the respective Snapshots for each proposal type:
 
 <a href="https://snapshot.org/#/hbot.eth" target="_blank" class="md-button md-button--primary">Vote with HBOT</a>
 
-## More Info
-
-* [Polls](polls.md): Vote in monthly polls that determine which exchanges, strategies, and issues receive bounties and other improvements.
-* [Bounties](../bounties/index.md): Earn bounties for making improvements to the Hummingbot codebase and creating content. Check out the guides for [Contributors](/bounties/contributors) and [Sponsors](/bounties/sponsors).
-* [Proposals](proposals.md): Create and vote on proposals to steer the evolution of Hummingbot.
-* [Releases](releases.md): Process of reviewing and merging pull requests into official monthly releases
-* [Epochs](epochs.md): Quarterly periods with fixed exchange and strategy tiers that are defined via polls
-* [Whitepaper](whitepaper.md): Originally published in December 2021, this document that explains the Foundation's goals and how its governance system works
 
 ## Governance Forums
 

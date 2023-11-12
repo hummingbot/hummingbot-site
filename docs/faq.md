@@ -36,7 +36,7 @@ Since Hummingbot is an open, modular codebase, many developers and professional 
 
 ### Why did you make Hummingbot available to the general public?
 
-As we wrote in the original [Hummingbot whitepaper](https://hummingbot.io/hummingbot.pdf), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
+As we wrote in the original [Hummingbot whitepaper](/blog/hummingbot-whitepaper), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
 
 Later, we pioneered the concept of **decentralized market making** by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform: [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
 
@@ -48,7 +48,7 @@ Market making is the act of simultaneously creating buy and sell orders for an a
 
 Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
 
-See [How does market making work?](https://blog.hummingbot.org/2020-09-what-is-market-making/) for more information.
+See [What is market making?](/blog/what-is-market-making/) for more information.
 
 ### How does Hummingbot store my private keys and API keys?
 
@@ -213,7 +213,7 @@ HBOT token holders make these decisions by creating proposals and voting with th
 
 ### Will voting with HBOT cost gas or incur other transaction fees?
 
-No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#/), which lets HBOT holders vote by signing messages using their HBOT token balance to vote on issues without paying gas. Snapshots are recorded to IPFS to generate a permanent record.
+No. All Hummingbot Foundation proposals are on [Snapshot](https://snapshot.org/#/hbot.eth), which lets HBOT holders vote by signing messages using their HBOT token balance to vote on issues without paying gas. Snapshots are recorded to IPFS to generate a permanent record.
 
 ### How do I know that I'm using the correct HBOT token?
 
@@ -225,7 +225,7 @@ Please see Reputable Sources for information about venues where HBOT may be trad
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](governance/epochs.md). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
 See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
 
@@ -233,7 +233,7 @@ See [Hummingbot Governance Proposals](/governance/proposals) for more informatio
 
 The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively.
 
-Other than those listed in the [HBOT announcement](governance/hbot.md), there are no other eligible HBOT recipients.
+Other than those listed in the [HBOT announcement](/blog/introducing-hbot/), there are no other eligible HBOT recipients.
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 
@@ -243,46 +243,3 @@ If you accidentally entered a Binance.com deposit address to claim your tokens, 
 * In the Wallet section -> Deposit Crypto, there is a "deposit hasn't arrived?" section
 * Select "Search" and "Deposited an Unlisted coin"
 * Select "Submit Appeal" and enter the transaction details
-
-## Reporting
-
-### How does data reporting work?
-
-Unless users turn it off, instances of the Hummingbot software send the following metrics to a Hummingbot Foundation server every 15 minutes:
-
-* Aggregated trade volume
-* Exchange where the trades occurred
-* Version of Hummingbot software used
-* Device and system information
-* InstanceID (an anonymous, randomly-generated unique identifier)
-
-All data collected will be used exclusively by Hummingbot Foundation for reporting purposes only, and we will never sell this data to any third party.
-
-
-### Why do you collect this data?
-
-This data feeds the public [Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) dashboard, a real-time dashboard of the aggregated, anonymized trade volumes that Hummingbot clients.
-
-<a href="https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52" target="_blank" class="md-button md-button--primary">:fontawesome-solid-chart-line: Hummingbot Reported Volumes</a>
-
-You can use the **exchange** and **version** toggles to filter the data. In addition, you can also change the timespan, as well as activate dark mode!
-
-[![](./toggles.png)](./toggles.png)
-
-### How does this dashboard help Hummingbot users?
-
-To sustain development of the Hummingbot client, Hummingbot Foundation enters into fee share partnerships with exchanges. These partners need actionable data to convince their stakeholders and community members that a Hummingbot partnership is worthwhile. Their most common requests include total volume traded and number of users, so this dashboard provides this data.
-
-### How do I configure or turn off this feature?
-
-In the Hummingbot client, run the following command:
-
-```
-config anonymized_metrics_mode
-```
-
-Change the parameter above to `anonymized_metrics_enabled` to enable or `anonymized_metrics_disabled` to disable for data reporting. 
-
-### How can I be sure that this is the only data Hummingbot collects?
-
-The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.

@@ -4,7 +4,7 @@ authors:
   - carlo
 categories:
    - Announcements
-   - Liquidity mining
+   - Miner
 ---
 
 # 🌊⛏ Liquidity Mining Launch!

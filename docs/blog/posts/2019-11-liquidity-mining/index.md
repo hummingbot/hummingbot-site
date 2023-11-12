@@ -4,7 +4,9 @@ authors:
  - carlo
 categories:
  - Announcements
- - Liquidity mining
+ - Academy
+tags:
+ - Liquidity Mining
 ---
 
 # Introducing Liquidity Mining: A Marketplace-Based Approach to Market Making

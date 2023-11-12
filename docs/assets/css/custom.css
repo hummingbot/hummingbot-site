@@ -359,24 +359,12 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   display: none;
 }
 
-/* Glide cards */
-.card {
-  color: var(--md-typeset-color);
-  background: var(--md-primary-fg-color);
-  border: 1px solid var(--pg-light-border);
-  border-radius: 6px;
-  transition: none;
-  padding: 0.8rem;
+/* Two Thirds Grids */
+.grid.two-thirds {
+  grid-template-columns: 2fr 1fr; /* Default to 2/3 and 1/3 width columns */
 }
-.card:hover {
-  border-color: var(--md-accent-fg-color);
-}
-
-/* Buttons */
-.button-row {
-  display: flex;
-}
-
-.button-row p {
-  margin: 0 1em;
+@media (max-width: 768px) {
+  .grid.two-thirds {
+    grid-template-columns: 1fr; /* All items will stack on top of each other */
+  }
 }

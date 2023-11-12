@@ -3,7 +3,9 @@ date: 2019-11-27
 authors:
   - coinalpha
 categories:
-  - Market making
+  - Academy
+tags:
+  - Running Hummingbot
 ---
 
 # How to use advanced market making features
