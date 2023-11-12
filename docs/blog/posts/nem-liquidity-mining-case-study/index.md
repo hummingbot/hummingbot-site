@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Liquidity mining
+  - Liquidity Mining
 ---
 
 # NEM Liquidity Mining Case Study

@@ -5,7 +5,8 @@ authors:
 categories:
   - Academy
 tags:
-  - Algo Trading Basics
+  - Market Making Basics
+  - Community Posts
 ---
 
 # How to Trade Crypto

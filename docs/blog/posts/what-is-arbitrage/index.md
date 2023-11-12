@@ -1,11 +1,11 @@
 ---
-date: 2023-01-01
+date: 2020-09-11
 authors:
-  - foundation
+  - coinalpha
 categories:
   - Academy
 tags:
-  - Algo Trading Basics
+  - Market Making Basics
 ---
 
 # What is Arbitrage?

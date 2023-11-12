@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Trader Tips
+  - Community Posts
 ---
 
 # Tips for Handling Different Market Conditions

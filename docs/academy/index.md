@@ -42,7 +42,7 @@ hide:
 
 ---
 
-## :thinking: Algo Trading Basics
+## :thinking: Market Making Basics
 
 <div class="grid cards" markdown>
 
@@ -60,7 +60,7 @@ hide:
 
 </div>
 
-[See more in Algo Trading Basics :fontawesome-solid-chevron-right:](/academy/all/#algo-trading-basics){ .md-button }
+[See more in Market Making Basics :fontawesome-solid-chevron-right:](/academy/all/#algo-trading-basics){ .md-button }
 
 ---
 
@@ -92,25 +92,25 @@ hide:
 
 ---
 
-## :bulb: Trader Tips
+## :bulb: Community Posts
 
 <div class="grid cards" markdown>
 
 
 </div>
 
-[See more in Trader Tips :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in Community Posts :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---
 
-## :man_mage: Market Maker Interviews
+## :man_mage: Interviews with Hummingbot Users
 
 <div class="grid cards" markdown>
 
 
 </div>
 
-[See more in Market Maker Interviews :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in Interviews with Hummingbot Users :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---
 

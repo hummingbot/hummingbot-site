@@ -1,18 +1,16 @@
 ---
-date: 2023-01-01
+date: 2020-10-14
 authors:
-  - foundation
+  - coinalpha
 categories:
   - Academy
 tags:
-  - Algo Trading Basics
+  - Market Making Basics
 ---
 
-# What is inventory Risk?
+# What is Inventory Risk?
 ![cover](cover.jpg)
 
-
-## What is inventory Risk?
 
 Hello again Hummingbot community!
 
@@ -21,8 +19,6 @@ Today we will start to talk about what I consider the most important factor that
 As one of the biggest investors of our time once said:
 
 "Risk comes from not knowing what you're doing." ~ Warren Buffett
-
-<!-- more -->
 
 ![Source: https://www.azquotes.com/quote/40644](./image3.png)
 
@@ -40,6 +36,9 @@ Here is what we’ll cover in today's article:
 - **What is inventory risk?**
 
 - **How to mitigate inventory risk with Hummingbot**
+
+<!-- more -->
+
 
 And as always, you are welcome to join the #trader-chat on our [Discord](https://discord.com/invite/2MN3UWg) to discuss with the community how to improve your market making strategy.
 

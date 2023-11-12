@@ -3,7 +3,6 @@ date: 2021-05-06
 authors:
   - coinalpha
 categories:
-  - Announcements
   - Roadmap
 ---
 

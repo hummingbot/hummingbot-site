@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Market Maker Interviews
+  - Interviews with Hummingbot Users
 ---
 
 # Interview with Market Maker Harry Yeh
