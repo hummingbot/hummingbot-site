@@ -1,9 +1,8 @@
 ---
-date: 2023-01-01
+date: 2020-02-10
 authors:
   - foundation
 categories:
-  - Research
   - Academy
 tags:
   - Crypto Exchange Landscape

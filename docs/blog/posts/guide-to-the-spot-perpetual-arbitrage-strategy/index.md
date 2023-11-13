@@ -1,14 +1,14 @@
 ---
-date: 2023-01-01
+date: 2021-03-12
 authors:
-  - foundation
+  - coinalpha
 categories:
   - Academy
 tags:
   - V1 Strategies
 ---
 
-# How to Use the New Spot-perpetual Arbitrage Strategy
+# Guide to the Spot-Perpetual Arbitrage Strategy
 
 ![cover](cover.png)
 

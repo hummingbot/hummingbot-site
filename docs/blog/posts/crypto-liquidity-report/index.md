@@ -3,7 +3,6 @@ date: 2019-10-14
 authors:
   - coinalpha
 categories:
-  - Research
   - Academy
 tags:
   - Crypto Exchange Landscape

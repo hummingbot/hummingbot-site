@@ -12,11 +12,11 @@ tags:
 
 ![cover](cover.png)
 
-Until now, the majority of the articles are about learning and optimizing Hummingbot. Let’s take this to the next level. 
-Is it possible to profit from market making, and does liquidity rewards help mitigate directional risks? I share the following three 
-markets(live) and performance in an attempt to address these concerns. 
+*by Thomas Yit*
 
-**Disclaimer:** *The content of this article is provided by our blog contributor Thomas Yit and does not represent the views of CoinAlpha Inc./Hummingbot. The content below does NOT constitute investment, financial, legal, or tax advice, nor does any of the information contained on this article constitute a recommendation, solicitation, or offer to buy or sell any digital assets, securities, options, or other financial instruments or other assets, or to provide any investment advice or service*
+Until now, the majority of the articles are about learning and optimizing Hummingbot. Let’s take this to the next level. 
+
+Is it possible to profit from market making, and does liquidity rewards help mitigate directional risks? I share the following three markets(live) and performance in an attempt to address these concerns. 
 
 A little bit of intro about myself, been a retail trading in forex for a couple of year till i stumbled on Bitcoin back in 2015 which a buyer accept only BTC as payment back then, bought some using localbitcoins and forget about Bitcoin till 2017 ICO crazy period. Over the next few years start to move into crypto trading space and found Hummingbot in May 2020. Ever since, have been running 4-6 instances but not every instance is performing liquidity mining.
 

@@ -1,7 +1,7 @@
 ---
-date: 2023-01-01
+date: 2020-12-15
 authors:
-  - foundation
+  - coinalpha
 categories:
   - Academy
 tags:

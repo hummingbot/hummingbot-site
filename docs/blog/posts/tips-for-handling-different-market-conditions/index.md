@@ -1,7 +1,7 @@
 ---
-date: 2023-01-01
+date: 2022-03-02
 authors:
-  - foundation
+  - community
 categories:
   - Academy
 tags:
@@ -13,21 +13,18 @@ tags:
 
 *by Owen Hobbs*
 
-**Tips for Handling Different Market Conditions**
-
-
 In numerous ways, markets can resemble the waves of the ocean. Both have peaks, bottoms, and ultimately return to a midpoint or sea level. The approach one takes to navigate the waves is largely dependent on the weather or market conditions affecting them. In this article, we are going to discuss a few of the ways someone using Hummingbot could navigate the various market conditions such as ranging, uptrend, and downtrend.
 
 <!-- more -->
 
-### **Range Bound Markets**
+## **Range Bound Markets**
 
 A rangebound, or often referred to as a 'sideways' market, is when the price moves back and forth between a higher and lower price. This constant movement between the lower and higher prices creates a prime opportunity for market makers to come in and capture the spread between the two. A range bound market increases the probability that a market maker�s bid and ask orders are filled, and done so repeatedly. The more often a market maker completes a buy and sell �cycle� (buy low, sell high), the more spread and profits a market maker is able to capture.
 
 ![range-bound-markets](image_1.jpg)
 
 
-### **Calculating Spread**
+## **Calculating Spread**
 
 As an example of how someone may generate their bid and ask spreads in a rangebound market, one may simply measure the difference from the bottom range to the top range that they are trying to capture. By default, hummingbot places its orders as an offset of the mid_price on each side, therefore we will need to divide this number in half to get an average bid\_spread and ask\_spread.
 
@@ -35,7 +32,7 @@ For example, let's imagine that we determined the market was ranging between 0.9
 
 ![calculating-spread](image_2.jpg)
 
-### **Order Levels**
+## **Order Levels**
 
 By incorporating more advanced features such as [order_levels](/strategy-configs/order-levels.md) and [order_level_spread](/strategy-configs/order-levels.md), one could place additional orders at wider spreads in an attempt to capture more volatile moments that exceed the first order level. The [order_level_amount](/strategy-configs/order-levels.md) parameter can either increase or decrease the subsequent order size after the first level. This can be used according to one's risk appetite. For example, one may be willing to purchase 100 assets at a tighter spread, but is willing to purchase an additional 150 assets at a wider spread as this is less risky.
 
@@ -43,11 +40,11 @@ On the other hand, by reducing the original spreads and setting 2 additional ord
 
 ![order-levels](image_3.jpg)
 
-### **Trending Markets**
+## **Trending Markets**
 
 Similar to range bound markets, trending markets typically fluctuate between highs and lows. The outlier in trending markets is that the price action is either making higher highs or lower lows over a period of time. This places them in one of two categories of either an uptrend or downtrend market.
 
-### **Offsetting Spreads**
+## **Offsetting Spreads**
 
 Since trending markets are no longer testing the same highs and lows, establishing hummingbot spreads tends to be more complex. For example, if we took the same strategy of evenly spaced spreads in a trending market, one side would likely be filled more often than the other. The result of this could limit the effectiveness of capturing spread, offset inventory risk, and overall cost money.
 
@@ -57,7 +54,7 @@ Therefore, if someone is attempting to capture spread in a trending market, one 
 
 ![offsetting-spreads](image_4.jpg)
 
-### **Order Delay**
+## **Order Delay**
 
 By default, after an order is filled, Hummingbot immediately replaces the orders on the book. This can be useful in certain situations, however, in times of volatility, this could quickly lead to inventory shifting too far to one side or the other.
 

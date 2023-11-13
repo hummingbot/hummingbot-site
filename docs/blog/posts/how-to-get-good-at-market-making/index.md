@@ -1,5 +1,5 @@
 ---
-date: 2023-01-01
+date: 2022-03-29
 authors:
   - community
 categories:
@@ -9,6 +9,7 @@ tags:
 ---
 
 # How To Get Good At Market Making
+
 ![cover](cover.webp)
 
 *by Lã Minh Hoàng*

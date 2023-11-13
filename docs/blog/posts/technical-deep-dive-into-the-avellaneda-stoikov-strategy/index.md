@@ -18,16 +18,24 @@ Following our initial blog post on the new `avellaneda_market_making` strategy, 
 
 The purpose of this article is to mathematically back assumptions and calculations that helped translate the authors' model into one more suitable for Hummingbot traders.
 
-# Original model and our proposed extensions
+## Original model and our proposed extensions
+
 First, let's briefly recap the core equations from the [Avellaneda-Stoikov paper](https://www.math.nyu.edu/faculty/avellane/HighFrequencyTrading.pdf):
 
-## Original model
+<!-- more -->
+
+### Original model
 
 Reservation price (market price, adjusted toward your target inventory level):
 
 $$
 r(s,q,t,\sigma)=s-q\gamma\sigma^{2}(T-t)
 $$
+
+$$
+\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+$$
+
 
 Optimal spread around reservation price:
 
@@ -36,38 +44,47 @@ $$
 $$
 
 Where:
-- s [quote asset] = current mid price
-- q [no unit] = quantity of stocks in inventory of base asset (could be positive/negative for long/short positions)
-- $\gamma$ [1/quote asset] = inventory risk aversion parameter
-- $\sigma$ [quote asset] = volatility
-- T [no unit] = closing time (conveniently normalized to 1)
-- t [no unit] = current time (T is normalized = 1, so t is a time fraction)
-- $\delta^{a}, \delta^{b}$ [quote asset]= Bid/Ask spread (they are symmetrical to reservation price → $\delta^{a}=\delta^{b}$
-- $\kappa$ [1/quote asset]= Order book *liquidity* parameter
 
-<!-- more -->
+s [quote asset] = current mid price
 
-## Proposed extensions
+q [no unit] = quantity of stocks in inventory of base asset (could be positive/negative for long/short positions)
+
+$\gamma$ [1/quote asset] = inventory risk aversion parameter
+
+$\sigma$ [quote asset] = volatility
+
+T [no unit] = closing time (conveniently normalized to 1)
+
+t [no unit] = current time (T is normalized = 1, so t is a time fraction)
+
+$\delta^{a}, \delta^{b}$ [quote asset]= Bid/Ask spread (they are symmetrical to reservation price 
+→ $\delta^{a}=\delta^{b}$
+
+$\kappa$ [1/quote asset]= Order book *liquidity* parameter
+
+### Proposed extensions
 
 The paper's model is built under the following assumptions:
+
 1. Order amount is not defined
 2. Volatility is constant
 3. Order book statistical characterization is constant
 4. The market maker intends to maximize profit using a total inventory _q_ during a limited _T_ time horizon
 
 Since these assumptions may not be suitable for crypto trader, we propose the following changes:
+
 1. Since Hummingbot enables traders to specify the order amount, we introduce an an additional parameter `order_amount_shape_factor` ($\eta$) that adjusts order amount given inventory position, as described in the 2018 [Optimal High-Frequency Market Making](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf) paper.
 2. To account for the rapidly changing volatility that exists in crypto, we propose a volatility diff threshold which, if surpassed, will trigger recalculation of the strategy parameters `vol_to_spread_multiplier`.
 3. Recalculation as in point 2.
 4. Since running bot may have infinite time horizon, our solution is to have a finite `closing_time` (_T_) but with recycle of remaining time fraction _t_ together with parameter recalculation every time t=T.
 
-# Calculation of $\gamma$, $\kappa$ and $\eta$
+## Calculation of $\gamma$, $\kappa$ and $\eta$
 
-## Intro
+### Intro
 
 With the original Avellaneda equations, we are faced with multiple degrees of freedom. We can pick any value for these parameters, so some constraints are needed. Since bid/ask spread to mid-price is one of the most important values for our bots, that should be a reasonable choice to build our criteria. Also, as the paper states, $\gamma$ acts like a risk aversion parameter to inventory risk. We want a *knob* parameter to control that factor while meeting the spread parameters set by the user.
 
-## Calculation of $\gamma$
+### Calculation of $\gamma$
 
 We will work under the assumption that user has set both `min_spread` and `max_spread` parameters when configuring the strategy. For the calculation of the maximum possible risk factor ($\gamma$), the author works with the initial spreads optimal bid/ask to mid-price ($\delta^{a}$ and $\delta^{b}$), which should not be smaller than min spread nor bigger than max spread (in relationship to the mid-price).
 
@@ -78,7 +95,7 @@ The image below shows the distribution of price levels and spreads when there is
 ![](./all_spreads_and_prices.png)
 
 
-### q&gt;0 (inventory needed to be decreased)
+#### Case where q&gt;0 (inventory ratio should be decreased)
 
 First,
 
@@ -145,7 +162,7 @@ $$
 $$
 
 ---
-### q&lt;0 (inventory needed to be increased)
+#### Case where q&lt;0 (inventory ratio should be increased)
 
 In the same way, for the opposite case, if q&lt;0 the final expression reached is:
 
@@ -167,7 +184,7 @@ $$
 \gamma=\gamma_{max}*IRA=\frac{Max\ Spread-Min\ Spread}{2\|q\|\sigma^{2}}*IRA
 $$
 
-## Calculation of $\kappa((\delta_{a}+\delta_{b})_{max})$
+### Calculation of $\kappa
 
 `order_book_depth_factor` ($\kappa$) will selected so that the algorithm starts with the maximum possible spread at t=0. This decision appears arbitrary, but the argument behind it is to go through a wider range of spreads so as to maximize strategy profitability. So to start with the calculation, we will first determine the maximum possible spread at t=0.
 
@@ -196,7 +213,7 @@ $$
 \kappa\bigg((\delta_{a}+\delta_{b})_{t=0}\bigg)=\frac{\gamma}{exp\{\frac{(\delta_{a}+\delta_{b})_{t=0}\gamma-\sigma^{2}\gamma^{2}}{2}\}-1}
 $$
 
-## Calculation of $\eta$
+### Calculation of $\eta$
 
 Recall that `order_amount_shape_factor` ($\eta$) is a modifier to order amount, borrowed from the 2018 Fushimi paper (see References).
 
@@ -210,7 +227,7 @@ $$
 q_{decay}=\frac{Total\,inventory\,in\,base\_asset}{IRA}\newline\\[0.1in]\eta=\frac{1}{q_{decay}}
 $$
 
-## What happens if $IRA \to 0 \implies \gamma \to 0$
+### $IRA \to 0 \implies \gamma \to 0$
 
 We have seen what happens to reservation price and optimal spread when $\gamma=\gamma_{max}$. But what happens if $\gamma=0$?
 
@@ -244,8 +261,8 @@ $$
 
 So in the case $\gamma \to 0$ this is the same as a regular pure market making strategy with symmetrical spread = Max Spread around mid-price. **In this way, pure market making strategy becomes a special case of Avellaneda market making strategy.**
 
-# References
+## References
 
-[*High-frequency trading in a limit order book (Avellaneda and Stoikov, 2006)*](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf)
+[High-frequency trading in a limit order book (Avellaneda and Stoikov, 2006)](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf)
 
-[*Optimal High-Frequency Market Making (Fushimi, Gonzalez Rojas and Herman, 2018)*](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf)
+[Optimal High-Frequency Market Making (Fushimi, Gonzalez Rojas and Herman, 2018)](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf)

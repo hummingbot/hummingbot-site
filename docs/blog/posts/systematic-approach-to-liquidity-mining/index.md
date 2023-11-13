@@ -8,28 +8,19 @@ tags:
   - Community Posts
 ---
 
-# A Systematic approach to Liquidity Mining
+# A Systematic Approach to Liquidity Mining
 
-### ROI based analytics and simple experiments
-
-![cover](cover.jpg)
-
+### ROI based Analytics and Simple Experiments
 
 *by Diego C*
 
-## How to make 10% monthly passive income from your crypto Assets 
-
-### Systematic approach to Liquidity Mining - �ROI based analytics
-
-**INTRODUCTION** (Skip it if you are a pro and go to data collection & strategies below):
+![cover](cover.jpg)
 
 The end goal for Liquidity Mining strategies would be to beat traditional staking and farming yields in DEFI/CEFI using your crypto assets.
 
 So if you HODL crypto assets in Exchanges like Binance, Kucoin, Gate.io or Ascendex and you are not using it for trading, staking or yield farming on these platforms, then you are missing on potential passive income from these assets.
 
 That is when Liquidity Mining comes in place:
-
-<!-- more -->
 
 **Advantages:**
 
@@ -44,7 +35,6 @@ That is when Liquidity Mining comes in place:
 For this, Hummingbot have already create a ready to use trading bot for the special proposes of liquidity mining, pure market making, arbitrage, etc.
 
 <!-- more -->
-
 
 Alternatively, you can still run liquidity mining using any other trading bot.
 

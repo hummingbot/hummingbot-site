@@ -1,5 +1,5 @@
 ---
-date: 2023-01-01
+date: 2019-07-02
 authors:
   - foundation
 categories:
@@ -8,7 +8,7 @@ tags:
   - Running Hummingbot
 ---
 
-# Managing performance in crypto trading
+# Managing Your Bot Performance
 
 ![cover](cover.jpg)
 

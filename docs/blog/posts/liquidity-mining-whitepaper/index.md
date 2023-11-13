@@ -4,9 +4,7 @@ authors:
   - mike
   - carlo
 categories:
-  - Research
   - Academy
-  - Liquidity Mining
 tags:
   - Liquidity Mining 
 ---

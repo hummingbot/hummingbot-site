@@ -4,7 +4,6 @@ authors:
   - carlo
 categories:
   - Academy
-  - Research
 tags:
   - Crypto Exchange Landscape
 ---

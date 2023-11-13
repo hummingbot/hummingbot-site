@@ -7,7 +7,7 @@ categories:
   - Roadmap
 ---
 
-# Hummingbot's 2023 Technical Roadmap
+# Hummingbot 2023 Technical Roadmap
 ![cover](cover.jpg)
 
 *This post provides a description of the technical changes that the Hummingbot Foundation plans to implement over the course of the next year. Note that these changes will be subject to HBOT governance and the approval of the Hummingbot community.*
