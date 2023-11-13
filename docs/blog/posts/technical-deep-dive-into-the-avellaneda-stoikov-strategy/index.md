@@ -6,7 +6,7 @@ categories:
   - Engineering
   - Academy
 tags:
-  - V1 Strategies
+  - Strategy Guides
 ---
 
 

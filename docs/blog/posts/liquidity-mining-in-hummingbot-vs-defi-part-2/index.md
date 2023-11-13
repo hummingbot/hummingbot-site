@@ -8,7 +8,7 @@ tags:
   - Liquidity Mining 
 ---
 
-# Liquidity Mining in DeFi vs CeFi
+# Liquidity Mining in Hummingbot vs DeFi - Part 2
 
 ![cover](cover.jpg)
 

@@ -8,7 +8,7 @@ tags:
   - Crypto Exchange Landscape
 ---
 
-# Exchange Types Explained: CLOB, RFQ, and AMM
+# Exchange Types Explained: CLOB, RFQ, AMM
 
 ![cover](cover.png)
 

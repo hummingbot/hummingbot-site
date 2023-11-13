@@ -22,15 +22,15 @@ hide:
 
     ---
 
-    ### [Getting Started with Algo Trading](/blog/getting-started-with-algo-trading/)
+    ### [How To Get Good At Market Making](/blog/how-to-get-good-at-market-making/)
 
-    ### [FAQ for New Algo Traders](/blog/faq-for-new-crypto-algo-traders/)
+    ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
 
-    ### [What is Market Making?](/blog/what-is-market-making/)
+    ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
 
-    ### [What is Arbitrage?](/blog/what-is-arbitrage/)
+    ### [Interview with Community Member Vik](/blog/interview-with-community-member-vik/)
 
-    ### [What is Cross Exchange Market Making?](/blog/what-is-cross-exchange-market-making/)
+    ### [Introducing Liquidity Mining: A Marketplace For Market Makers](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
     <br />
 
@@ -46,21 +46,21 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/getting-started-with-algo-trading/image0.jpg)](/blog/getting-started-with-algo-trading/)
+-   [![](/blog/how-to-trade-crypto/cover.jpg)](/blog/how-to-trade-crypto/)
 
-    ### [Getting Started with Algo Trading](/blog/getting-started-with-algo-trading/)
-
--   [![](/blog/faq-for-new-crypto-algo-traders/cover.jpeg)](/blog/faq-for-new-crypto-algo-traders/)
-
-    ### [FAQ for New Algo Traders](/blog/faq-for-new-crypto-algo-traders/)
+    ### [How to Trade Crypto](/blog/how-to-trade-crypto/)
 
 -   [![](/blog/what-is-market-making/cover.png)](/blog/what-is-market-making/)
 
     ### [What is Market Making?](/blog/what-is-market-making/)
 
+-   [![](/blog/what-is-inventory-risk/cover.jpg)](/blog/what-is-inventory-risk/)
+
+    ### [What is Inventory Risk?](/blog/what-is-inventory-risk/)
+
 </div>
 
-[See more in Market Making Basics :fontawesome-solid-chevron-right:](/academy/all/#algo-trading-basics){ .md-button }
+[See more in Market Making Basics :fontawesome-solid-chevron-right:](/academy/all/#market-making-basics){ .md-button }
 
 ---
 
@@ -68,13 +68,21 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/assets/brand/hummingbot.png)](/blog/2018/12/24/hummingbot-whitepaper/)
--   [![](/blog/2019-04-crypto-exchange-types/cbot-trading-pit.png)](/blog/2019/04/24/exchange-types-explained-clob-rfq-and-amm/)
--   [![](/blog/2020-02-crypto-market-marker-list/market-makers.jpg)](/blog/2023/01/01/mapping-the-crypto-market-maker-landscape/)
+-   [![](/blog/exchange-types-explained-clob-rfq-amm/cover.png)](/blog/exchange-types-explained-clob-rfq-amm/)
+
+    ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
+
+-   [![](/blog/mapping-the-crypto-market-maker-landscape/market-makers.jpg)](/blog/mapping-the-crypto-market-maker-landscape/)
+
+    ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
+
+-   [![](/assets/brand/hummingbot.png)](/blog/hummingbot-whitepaper/)
+
+    ### [Hummingbot Whitepaper](/blog/hummingbot-whitepaper/)
 
 </div>
 
-[See more in Crypto Exchange Landscape :fontawesome-solid-chevron-right:](/academy/all/#crypto-industry-landscape){ .md-button }
+[See more in Crypto Exchange Landscape :fontawesome-solid-chevron-right:](/academy/all/#crypto-exchange-landscape){ .md-button }
 
 ---
 
@@ -82,13 +90,21 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/assets/brand/liquidity-mining.png)](/blog/2019/10/31/liquidity-mining-whitepaper/)
--   [![](/blog/2020-08-liquidity-mining-hummingbot-vs-defi/hummingbot-vs-defi-1.jpg)](/blog/2020/08/03/understanding-liquidity-mining/)
--   [![](/blog/2020-10-liquidity-mining-hummingbot-defi-automated-market-maker-impermanent-loss/hummingbot-vs-defi-2.jpg)](/blog/2020/10/16/liquidity-mining-in-defi-vs-cefi/)
+-   [![](/blog/liquidity-mining-in-hummingbot-vs-defi/cover.jpg)](/blog/liquidity-mining-in-hummingbot-vs-defi)
+
+    ### [Liquidity Mining in Hummingbot vs DeFi](/blog/liquidity-mining-in-hummingbot-vs-defi)
+
+-   [![](/blog/demystifying-liquidity-mining-rewards/cover.webp)](/blog/demystifying-liquidity-mining-rewards/)
+
+    ### [Demystifying Liquidity Mining Rewards](/blog/demystifying-liquidity-mining-rewards/)
+
+-   [![](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/partners.png)](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
+
+    ### [Introducing Liquidity Mining: A Marketplace For Market Makers](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
 </div>
 
-[See more in Liquidity Mining :fontawesome-solid-chevron-right:](/academy/all/#liquidity-mining-and-market-maker-incentives){ .md-button }
+[See more in Liquidity Mining :fontawesome-solid-chevron-right:](/academy/all/#liquidity-mining){ .md-button }
 
 ---
 
@@ -96,10 +112,21 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   [![](/blog/how-to-get-good-at-market-making/cover.webp)](/blog/how-to-get-good-at-market-making/)
+
+    ### [How To Get Good At Market Making](/blog/how-to-get-good-at-market-making/)
+
+-   [![](/blog/tips-for-handling-different-market-conditions/cover.webp)](/blog/tips-for-handling-different-market-conditions/)
+
+    ### [Tips for Handling Different Market Conditions](/blog/tips-for-handling-different-market-conditions/)
+
+-   [![](/blog/top-beginners-top-misconceptions-about-market-making/cover.jpg)](/blog/top-beginner-misconceptions-about-market-making/)
+
+    ### [Top Beginner Misconceptions about Market Making](/blog/top-beginner-misconceptions-about-market-making/)
 
 </div>
 
-[See more in Community Posts :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in Community Posts :fontawesome-solid-chevron-right:](/academy/all/#community-posts){ .md-button }
 
 ---
 
@@ -107,10 +134,21 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   [![](/blog/interview-with-community-member-vik/cover.png)](/blog/interview-with-community-member-vik/)
+
+    ### [Interview with Community Member Vik](/blog/interview-with-community-member-vik/)
+
+-   [![](/blog/interview-with-market-maker-harry-yeh/cover.png)](/blog/interview-with-market-maker-harry-yeh/)
+
+    ### [Interview with Market Maker Harry Yeh](/blog/interview-with-market-maker-harry-yeh/)
+
+-   [![](/blog/interview-with-liquidity-miner-mrbig/Cover.png)](/blog/interview-with-liquidity-miner-mrbig/)
+
+    ### [Interview with Liquidity Miner MrBig](/blog/interview-with-liquidity-miner-mrbig/)
 
 </div>
 
-[See more in User Interviews :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in User Interviews :fontawesome-solid-chevron-right:](/academy/all/#user-interviews){ .md-button }
 
 ---
 
@@ -118,26 +156,42 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/academy-measure-performance-crypto-trading/cover.jpg)](/blog/2023/01/01/managing-performance-in-crypto-trading/)
--   [![](/blog/academy-managing-orders/Cover.png)](/blog/2023/01/01/how-to-manage-your-orders/)
--   [![](/blog/academy-commands-and-config-price-source/pricesource.jpg)](/blog/2023/01/01/configuring-the-price-source-feature-in-hummingbot/)
+-   [![](/blog/managing-your-bot-performance/cover.jpg)](/blog/managing-your-bot-performance/)
+
+    ### [Managing Your Bot Performance](/blog/managing-your-bot-performance/)
+
+-   [![](/blog/order-management-configurations/Cover.png)](/blog/order-management-configurations/)
+
+    ### [Order Management Configurations](/blog/order-management-configurations/)
+
+-   [![](/blog/commands-and-configs-price-source/pricesource.jpg)](/blog/commands-and-configs-price-source/)
+
+    ### [Commands and Configs - Price Source](/blog/commands-and-configs-price-source/)
 
 </div>
 
-[See more in Running Hummingbot :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in Running Hummingbot :fontawesome-solid-chevron-right:](/academy/all/#running-hummingbot){ .md-button }
 
 ---
 
-## :one: V1 Strategies
+## :books: Strategy Guides
 
 <div class="grid cards" markdown>
 
--   [![](/blog/academy-strategy-2-cross-exchange-market-making/image_2.jpg)](/blog/2023/01/01/use-the-cross-exchange-market-making-xemm-strategy-to-lower-risk/)
--   [![](/blog/academy-avellaneda-stoikov-market-making-strategy/cover.png)](/blog/2023/01/01/a-comprehensive-guide-to-avellaneda-stoikovs-market-making-strategy/)
--   [![](/blog/academy-spot-perpetual-protocol-guide/cover.png)](/blog/2023/01/01/how-to-use-the-new-spot-perpetual-arbitrage-strategy/)
+-   [![](/assets/thumbnails/composable-mm.jpg)](blog/introducing-v2-strategies/)
+
+    ### [Introducing V2 Strategies](blog/introducing-v2-strategies/)
+
+-   [![](/blog/directional-trading-with-macd-and-bollinger-bands/cover.png)](/blog/directional-trading-with-macd-and-bollinger-bands/)
+
+    ### [Directional Trading with MACD and Bollinger Bands](/blog/directional-trading-with-macd-and-bollinger-bands/)
+
+-   [![](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.png)](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
 </div>
 
-[See more in V1 Strategies  :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in Strategy Guides  :fontawesome-solid-chevron-right:](/academy/all/#strategy-guides){ .md-button }
 
 ---

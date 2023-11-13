@@ -6,7 +6,7 @@ categories:
   - Academy
   - Announcements
 tags:
-  - V2 Strategies
+  - Strategy Guides
 draft: true
 ---
 

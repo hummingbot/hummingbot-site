@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - V1 Strategies
+  - Strategy Guides
 ---
 
 # Guide to the Spot-Perpetual Arbitrage Strategy

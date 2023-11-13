@@ -5,14 +5,14 @@ authors:
 categories:
   - Academy
 tags:
-  - Strategy Experiments
+  - Strategy Guides
 ---
 
 # Directional Trading with MACD and Bollinger Bands
 
 Welcome to the first post in our new series of Strategy Experiments that publishes hypothesis, code and performance of a running bot strategy.
 
-![](./Untitled-2.png)
+![](./cover.png)
 
 Welcome back to the Hummingbot blog! Today, we're excited to share our recent experiment using the open source Hummingbot platform to build a crypto trading bot that applies an **indicator-based directional strategy** on the Binance Futures exchange using MACD and Bollinger Bands.
 
@@ -37,8 +37,6 @@ We've designed a trading strategy using the [MACD](https://www.investopedia.com/
 ## Custom Indicator
 
 In this experiment, we combined MACD and Bollinger Bands indicators to design a custom indicator that may signal a potential mean reversion point in the market. The goal was to identify moments when the market is overextended, either in the overbought or oversold territories, and capitalize on the potential price reversals.
-
-![](./Bollinger-bands-and-macd_body_BreakoutstrategyusingbollingerbandsandMACD.png.full-1.png)
 
 Here's a brief overview of how the combination works:
 

@@ -5,15 +5,14 @@ authors:
 categories:
  - Announcements
  - Academy
+ - Miner
 tags:
  - Liquidity Mining
 ---
 
-# Introducing Liquidity Mining
+# Introducing Liquidity Mining: A Marketplace For Market Makers
 
-### A Marketplace-Based Approach to Market Making
-
-![](./cover.png)
+![](./partners.png)
 
 - Market making is a huge but inefficient industry in crypto. Exchanges and token issuers pay quantitative hedge funds millions of dollars per year to provide liquidity.
 - We introduce **liquidity mining**, a digital marketplace for liquidity, powered by the Hummingbot open source software that lets anyone run a market making bot ([read the whitepaper](/liquidity-mining.pdf)).
@@ -116,8 +115,6 @@ Finally, the simulations show that as little as a $5000 per month budget may be 
 As we wrote in our recent `Crypto Liquidity Report`, over 80% of the tokens trading on Binance have at least 0.5% slippage for a $10,000 order, and slippage has a strong inverse correlation with market capitalization.
 
 ### Launch partners
-
-![](partners.png)
 
 To launch the liquidity mining platform, we are excited to announce that we have partnered with a number of companies that represent a broad cross-section of the crypto market:
 

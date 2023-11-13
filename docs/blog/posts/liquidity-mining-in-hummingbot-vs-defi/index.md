@@ -8,7 +8,7 @@ tags:
   - Liquidity Mining 
 ---
 
-# Understanding Liquidity Mining
+# Liquidity Mining in Hummingbot vs DeFi
 
 ![cover](cover.jpg)
 

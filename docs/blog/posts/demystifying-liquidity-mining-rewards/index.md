@@ -8,9 +8,11 @@ tags:
   - Liquidity Mining
 ---
 
-# Demystifying liquidity mining rewards
+# Demystifying Liquidity Mining Rewards
 
-We explain in more detail the methodology and mechanics of liquidity mining, a data-driven, objective methodology for quantifying market maker performance
+![](cover.webp)
+
+We explain in more detail the methodology and mechanics of **liquidity mining**, a data-driven, objective methodology for quantifying market maker performance.
 
 In our liquidity mining announcement, we introduced a data-driven, objective methodology for quantifying market maker performance. This serves as the basis for determining fair and open compensation for market makers. So how does it all work? In this post, we explain in more detail the methodology and mechanics of the platform.
 

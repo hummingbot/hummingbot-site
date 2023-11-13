@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - V1 Strategies
+  - Strategy Guides
 ---
 
 # How to Use the Cross-Exchange Market Making Strategy
