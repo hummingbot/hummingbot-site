@@ -9,7 +9,7 @@ tags:
 ---
 
 
-# BlockCrunch Podcast - March 2019
+# How to Think about Liquidity - BlockCrunch
 
 ![Alt text](cover.jpg)
 

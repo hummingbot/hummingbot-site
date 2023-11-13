@@ -1,7 +1,7 @@
 ---
 date: 2019-07-02
 authors:
-  - foundation
+  - coinalpha
 categories:
   - Academy
 tags:

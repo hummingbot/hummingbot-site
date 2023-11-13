@@ -5,11 +5,11 @@ authors:
 categories:
   - Academy
 tags:
-  - Interviews with Hummingbot Users
+  - User Interviews
 ---
 
 
-# Interview with Top Liquidity Miner MrBig
+# Interview with Liquidity Miner MrBig
 
 ![cover](Cover.png)
 

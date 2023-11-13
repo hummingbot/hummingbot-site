@@ -5,11 +5,11 @@ authors:
 categories:
   - Academy
 tags:
-  - Interviews with Hummingbot Users
+  - User Interviews
 ---
 
 
-# Interview with Top Liquidity Miner Neohowie
+# Interview with Liquidity Miner Neohowie
 
 ![cover](cover.png)
 

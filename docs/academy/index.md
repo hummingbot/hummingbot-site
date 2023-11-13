@@ -103,14 +103,14 @@ hide:
 
 ---
 
-## :man_mage: Interviews with Hummingbot Users
+## :man_mage: User Interviews
 
 <div class="grid cards" markdown>
 
 
 </div>
 
-[See more in Interviews with Hummingbot Users :fontawesome-solid-chevron-right:](#){ .md-button }
+[See more in User Interviews :fontawesome-solid-chevron-right:](#){ .md-button }
 
 ---
 

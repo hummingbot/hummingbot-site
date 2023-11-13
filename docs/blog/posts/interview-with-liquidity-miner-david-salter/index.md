@@ -5,7 +5,7 @@ authors:
 categories:
   - Academy
 tags:
-  - Interviews with Hummingbot Users
+  - User Interviews
 ---
 
 # Interview with Liquidity Miner David Salter

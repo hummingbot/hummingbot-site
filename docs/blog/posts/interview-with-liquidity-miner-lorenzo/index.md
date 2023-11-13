@@ -5,11 +5,11 @@ authors:
 categories:
   - Academy
 tags:
-  - Interviews with Hummingbot Users
+  - User Interviews
 ---
 
 
-# Tnterview with Top Liquidity Miner Lorenzo
+# Interview with Liquidity Miner Lorenzo
 
 ![cover](cover.png)
 

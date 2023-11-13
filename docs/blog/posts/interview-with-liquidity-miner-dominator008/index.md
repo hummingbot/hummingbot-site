@@ -5,10 +5,10 @@ authors:
 categories:
   - Academy
 tags:
-  - Interviews with Hummingbot Users
+  - User Interviews
 ---
 
-# Interview with Top Liquidity Bounty Hunter Dominator008
+# Interview with Liquidity Miner Dominator008
 
 ![cover](cover.png)
 
