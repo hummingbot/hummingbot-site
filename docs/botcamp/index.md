@@ -329,11 +329,13 @@ hide:
     ---
 
     <br/>
-    # $200/month
+    # $199/month
 
     - **Most Flexible**
-    - $200 monthly subscription
+    - $199 monthly subscription
     - Pay via credit card
+
+    [Enroll Now](https://botcamp.hummingbot.org/purchase?product_id=5180822){ .md-button .md-button--primary .centered }
 
 -   ## 👩‍💻 __3-Month Pass__
 
@@ -346,6 +348,8 @@ hide:
     - $500 one-time payment
     - Pay via credit card or crypto
 
+    [Enroll Now](https://botcamp.hummingbot.org/purchase?product_id=5115670){ .md-button .md-button--primary .centered }
+
 -   ## 👨‍💼 __12-Month Pass__
 
     ---
@@ -357,13 +361,7 @@ hide:
     - $1188 one-time payment
     - Pay via credit card or crypto
 
-</div>
-
-<br />
-
-<div class="centered" markdown>
-
-[Enroll Now](https://botcamp.hummingbot.org/p/membership){ .md-button .md-button--primary .centered }
+    [Enroll Now](https://botcamp.hummingbot.org/purchase?product_id=5180823){ .md-button .md-button--primary .centered }
 
 </div>
 
