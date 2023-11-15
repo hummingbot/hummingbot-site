@@ -358,3 +358,13 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 [data-md-color-scheme="slate"] .light-logo {
   display: none;
 }
+
+/* Highlights text to link color */
+.text-highlight {
+  color: var(--md-typeset-a-color);
+}
+
+/* Highlights 2nd card in a card grid to the hover state */
+.highlight-second-card > ul > li:nth-child(2) {
+  border-color: var(--md-accent-fg-color) !important;
+}
