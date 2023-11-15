@@ -79,13 +79,7 @@ hide:
 
 ---
 
-<div class="centered">
-  <h2>
-    <strong>Join a Professional Trader Community from Top Institutions</strong>
-  </h2>
-</div>
-
-<br />
+# Join Traders and Engineers from Top Institutions
 
 <div class="flex-container">
   <div class="flex-item">
@@ -120,10 +114,7 @@ hide:
   </div>
 </div>
 
-
----
-
-# Hear from Botcamp Members
+<br />
 
 <div class="grid" markdown>
 
@@ -166,64 +157,13 @@ hide:
 <a href="https://www.youtube.com/watch?v=rFq0Add0qJ0&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=3" target="_blank" class="centered">Watch Testimonial ↗️</a>
 { .testimonial }
 
-<span class="quote">
-  :material-format-quote-open:
-  You come away from Botcamp having built your own script, and that's much more relevant and useful that just going through content and doing homework.
-  :material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="headshots/calum.png" class="headshot centered" />
-<br/>
-<span class="author centered">Calum</span>
-<br/>
-<a href="https://www.youtube.com/watch?v=bOGIpYqo3H4&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=4" target="_blank" class="centered">Watch Testimonial ↗️</a>
-{ .testimonial }
-
-<span class="quote">
-  :material-format-quote-open:
-  If you’re new to crypto trading, Botcamp can be a great starting point - it covers everything from fetching order book data to coding strategies!
-  :material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="headshots/makir.png" class="headshot centered" />
-<br/>
-<span class="author centered">Makir</span>
-<br/>
-<a href="https://www.youtube.com/watch?v=_KvVs8SkdAg&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=5" target="_blank" class="centered">Watch Testimonial ↗️</a>
-{ .testimonial }
-
-<span class="quote">
-  :material-format-quote-open:
-  I'm not a full-time coder, yet I was able to build a trading strategy that I'm proud of. Thanks to Botcamp, I'm now starting a crypto trading startup with my friend!
-  :material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="headshots/alkalifah.png" class="headshot centered" />
-<br/>
-<span class="author centered">Alkalifah</span>
-<br/>
-<a href="https://www.youtube.com/watch?v=lamJjaHcRSs&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=7" target="_blank" class="centered">Watch Testimonial ↗️</a>
-{ .testimonial }
-
-</div>
-
-<br />
-
-<div class="centered" markdown>
-
-[More Testimonials](https://www.youtube.com/watch?v=m_PNTacb3Ks&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=6){ .md-button .md-button--primary .centered }
-
 </div>
 
 ---
 
 # Access a Growing Content Library
 
-### You get access to 6 core modules, each containing hours of videos, code examples, and quizzes. We continually add advanced content that build upon the core modules.
-
-<br />
-
-## Core Modules
+### Each module contains hours of videos, code examples, and quizzes. We continually add new content.
 
 <div class="grid cards" markdown>
 
@@ -247,27 +187,21 @@ hide:
 
     <a href="https://botcamp.hummingbot.org/p/5-directional-strategies" target="_blank" class="centered">Preview Content ↗️</a>
 
--   ![](event-recordings.jpg)
-
-    <a href="https://botcamp.hummingbot.org/p/botcamp-event-recordings" target="_blank" class="centered">Preview Content ↗️</a>
-
-</div>
-
-## In Progress and Upcoming Modules
-
-<div class="grid cards" markdown>
-
 -   ![](module-6.jpg)
 
-    <span class="centered">In Progress</span>
+    <a href="https://botcamp.hummingbot.org/p/module-6-backtesting-strategies" target="_blank" class="centered">Preview Content ↗️</a>
 
 -   ![](module-7.jpg)
 
-    <span class="centered">Q1 2024</span>
+    <span class="centered">Coming Q1 2024</span>
 
 -   ![](module-8.jpg)
 
-    <span class="centered">Q2 2024</span>
+    <span class="centered">Coming Q2 2024</span>
+
+-   ![](event-recordings.jpg)
+
+    <a href="https://botcamp.hummingbot.org/p/botcamp-event-recordings" target="_blank" class="centered">Preview Content ↗️</a>
 
 </div>
 
@@ -320,31 +254,49 @@ hide:
 
 # Plans & Pricing
 
-### All plans include full Botcamp access. Your membership includes all the courses in the Content Library, Live Sessions, Office Hours, Bot Battles, and private Discord channels.
-
 <div class="grid cards" markdown>
+
+-   ## All Plans Include
+
+    ---
+
+    - :books: **Content Library**: Hours of videos, code examples, quizzes, with regular updates.
+    - :calendar_spiral: **Monthly Events**: Live Session, Office Hours, and a Bot Battle, totaling over 5 hours of interactive learning and competition each month.
+    - :key: **Exclusive Access**: Private Botcamp repository and Discord channels for member-only strategies, challenges, and recaps.
+
+</div>
+
+<div class="grid cards highlight-second-card" markdown>
 
 -   ## 👨‍🌾 __Monthly Membership__
 
     ---
 
     <br/>
-    # $200/month
+    # $199/month
 
-    - **Most Flexible**
-    - $200 monthly subscription
-    - Pay via credit card
+    - **Most Flexible (Cancel anytime)**{ .text-highlight }
+    - $199 monthly subscription
+    - :material-credit-card: Pay via credit card
 
--   ## 👩‍💻 __3-Month Pass__
+    <br />
+
+    [Enroll Now](https://botcamp.hummingbot.org/purchase?product_id=5180822){ .md-button }
+
+-   ## 👩‍💻 __3-Month Pass__{ .card-highlight }
 
     ---
 
     <br/>
     # $167/month
 
-    - **Most Popular**
-    - $500 one-time payment
-    - Pay via credit card or crypto
+    - **Most Popular (Save $100 vs monthly)**{ .text-highlight }
+    - Billed as one payment of $500
+    - :material-credit-card: :simple-bitcoin: Pay via credit card or crypto
+
+    <br />
+
+    [Enroll Now](https://botcamp.hummingbot.org/purchase?product_id=5115670){ .md-button }
 
 -   ## 👨‍💼 __12-Month Pass__
 
@@ -353,9 +305,62 @@ hide:
     <br/>
     # $99/month
 
-    - **Best Value**
-    - $1188 one-time payment
-    - Pay via credit card or crypto
+    - **Best Value (Save 50% vs monthly)**{ .text-highlight }
+    - $1188 annually
+    - :material-credit-card: :simple-bitcoin: Pay via credit card or crypto
+
+    <br />
+
+    [Enroll Now](https://botcamp.hummingbot.org/purchase?product_id=5180823){ .md-button }
+
+</div>
+
+### If you want to pay in crypto, ask about team discounts, or have any other questions, email us at <a href="mailto:operations@hummingbot.org" target="_blank">operations@hummingbot.org</a>.
+
+---
+
+# Hear from More Botcamp Members
+
+<div class="grid" markdown>
+
+<span class="quote">
+  :material-format-quote-open:
+  You come away from Botcamp having built your own script, and that's much more relevant and useful that just going through content and doing homework.
+  :material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="headshots/calum.png" class="headshot centered" />
+<br/>
+<span class="author centered">Calum</span>
+<br/>
+<a href="https://www.youtube.com/watch?v=bOGIpYqo3H4&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=4" target="_blank" class="centered">Watch Testimonial ↗️</a>
+{ .testimonial }
+
+<span class="quote">
+  :material-format-quote-open:
+  If you’re new to crypto trading, Botcamp can be a great starting point - it covers everything from fetching order book data to coding strategies!
+  :material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="headshots/makir.png" class="headshot centered" />
+<br/>
+<span class="author centered">Makir</span>
+<br/>
+<a href="https://www.youtube.com/watch?v=_KvVs8SkdAg&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=5" target="_blank" class="centered">Watch Testimonial ↗️</a>
+{ .testimonial }
+
+<span class="quote">
+  :material-format-quote-open:
+  I'm not a full-time coder, yet I was able to build a trading strategy that I'm proud of. Thanks to Botcamp, I'm now starting a crypto trading startup with my friend!
+  :material-format-quote-close:
+</span>
+<br/><br/><br/>
+<img src="headshots/alkalifah.png" class="headshot centered" />
+<br/>
+<span class="author centered">Alkalifah</span>
+<br/>
+<a href="https://www.youtube.com/watch?v=lamJjaHcRSs&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=7" target="_blank" class="centered">Watch Testimonial ↗️</a>
+{ .testimonial }
 
 </div>
 
@@ -363,7 +368,7 @@ hide:
 
 <div class="centered" markdown>
 
-[Enroll Now](https://botcamp.hummingbot.org/p/membership){ .md-button .md-button--primary .centered }
+[More Testimonials](https://www.youtube.com/watch?v=m_PNTacb3Ks&list=PLDwlNkL_4MMeI3oyeACxbn-PZsobcEWJn&index=6){ .md-button .md-button--primary .centered }
 
 </div>
 
