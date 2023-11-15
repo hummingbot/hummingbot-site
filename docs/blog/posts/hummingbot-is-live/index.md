@@ -8,7 +8,7 @@ categories:
 
 # Hummingbot is Live!
 
-![](./hummingbot-announcement.png)
+![](cover.png)
 
 **Welcome to decentralized market making.**
 
@@ -24,7 +24,7 @@ Hummingbot is an open-source software client that allows users to create and cus
 
 Now, anyone can be a high-frequency trader and earn profits from market making, a trading strategy that was previously accessible only to algorithmic hedge funds. For our exchange partners, Hummingbot solves their liquidity challenges by turning their community into a decentralized army of market makers.
 
-While Hummingbot is not the first publicly-available trading bot (in fact, we reviewed several here: [crypto trading bots](../2019-01-crypto-bot-reviews/index.md)), it was designed be to the simplest and easiest to use bot of its kind, enabling out-of-the-box high-frequency market making to users with limited technical expertise.
+While Hummingbot is not the first publicly-available trading bot (in fact, we reviewed several), it was designed be to the simplest and easiest to use bot of its kind, enabling out-of-the-box high-frequency market making to users with limited technical expertise.
 
 Like its hummingbird namesake, the elegant facade is only part of a highly-optimized machine.  Hummingbot was designed for institutional grade performance and reliability. Built on technologies such as Cython (Python compiled into C), Hummingbot utilizes low-level programming to optimize the speed and memory efficiency crucial for executing high frequency trading algorithms.
 

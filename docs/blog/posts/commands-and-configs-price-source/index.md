@@ -11,7 +11,7 @@ tags:
 
 # Commands and Configs - Price Source
 
-![cover](pricesource.jpg)
+![cover](cover.jpg)
 
 Welcome back to the series of articles where you will learn how to make the best use of your Hummingbot configurations.
 

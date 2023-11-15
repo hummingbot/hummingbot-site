@@ -31,7 +31,7 @@ We believe slippage is a more robust indicator of liquidity than trading volume.
 
 ### Motivation
 
-In our post [The Role of Market Makers and Importance of Liquidity](/blog/2019/01/30/the-role-of-market-makers-and-importance-of-liquidity/) we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 
+In our post `The Role of Market Makers and Importance of Liquidity` we published earlier this year, we discussed how liquidity is the lifeline of an asset, and argued how the resource is not equally distributed in the crypto industry because market making as a service requires an exorbitant amount of capital, and professional market makers are only interested in more liquid digital assets. 
 
 Crypto exchanges and token projects spend an estimated $3 billion annually on [market making](https://hackernoon.com/a-guide-to-market-making-for-crypto-startups-jydr387v), in the form of rebates, fees, and cost of inventory.
 

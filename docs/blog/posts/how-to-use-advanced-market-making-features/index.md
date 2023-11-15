@@ -42,7 +42,7 @@ Therefore, paper trading is more useful on a relative basis. For example, you ma
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/live/Zxq6S317pfw?si=Fdt9S3hiB7ncCLPL&t=388" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Read the documentation on paper trading mode [here](/global-configs/paper-trade.md).
+- Read the documentation on paper trading mode [here](../../../global-configs/paper-trade.md).
 
 ### Inventory skew
 
@@ -53,7 +53,7 @@ The inventory skew parameter is designed to adjust your order sizes as your inve
 To turn it on, set the `inventory_skew_enabled` parameter to true, and set your `inventory_target_base_percent`.
 
 #### More resources about inventory skew
-- Read the documentation on inventory skew [here](/strategies/pure-market-making.md).
+- Read the documentation on inventory skew [here](../../../strategies/pure-market-making.md).
 - See the inventory skew calculator [here](https://docs.google.com/spreadsheets/d/16oCExZyM8Wo8d0aRPmT_j7oXCzea3knQ5mmm0LlPGbU/edit#gid=690135600).
 
 ### Best bid-ask jumping (formerly penny jumping)
@@ -79,7 +79,7 @@ When `jump_orders_enabled` is enabled, Hummingbot places orders (highlighted in 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/live/7fnAUXRLF4g?si=P_Eq2T_9lxeiZBaX&t=1496" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-- Read the documentation [here](/strategies/pure-market-making.md).
+- Read the documentation [here](../../../strategies/pure-market-making.md).
 
 ### Other features
 

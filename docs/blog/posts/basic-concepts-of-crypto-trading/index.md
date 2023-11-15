@@ -10,7 +10,7 @@ tags:
 
 # Basic Concepts of Crypto Trading
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 ### Order Book
 
@@ -129,8 +129,7 @@ A **market taker** is any are accepting the prices offered on the order book is 
 
 To learn more about the difference between Market Making and Arbitrage:
 
-[What is Arbitrage?](../2020-09-what-is-arbitrage/index.md)
-[A developer's guide to crypto algo trading](../2019-01-beginner-crypto-trader/index.md)
+[What is Arbitrage?](../what-is-arbitrage/index.md)
 
 ### Market Making vs Bitcoin Mining vs Liquidity Pools
 

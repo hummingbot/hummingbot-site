@@ -179,6 +179,6 @@ This concludes Part 1 of the Hummingbot Gateway v2 Architecture blog series, whe
 
 In the next part of the blog series, we will talk about the improvements we have planned on the user experience and developer experience aspects of Gateway v2. 
 
-See [Part 2](https://blog.hummingbot.org/gateway-architecture-part-2/) of this post.
+See [Part 2](../hummingbot-gateway-architecture-part-2/index.md) of this post.
 
 

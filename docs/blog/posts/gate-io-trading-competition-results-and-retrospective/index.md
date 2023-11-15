@@ -42,7 +42,7 @@ This cumulative prize pool amount turned out to be **$1,279.20** during the comp
 
 As a not-for-profit open source foundation, earning and keeping the trust of the community is one of our top objectives. Therefore, we are concerned that  some participants in the trading competition may have done so under the impression that the actual prize pool would actually be $16,000, rather than "up to $16,000" as described in the Gate.io materials.
 
-Therefore, Hummingbot Foundation has decided to supplement the prize pool by providing all 12 winners with a free voucher ($1000 value each, $12,000 value total) to attend [Hummingbot Botcamp](/botcamp), our new developer bootcamp.
+Therefore, Hummingbot Foundation has decided to supplement the prize pool by providing all 12 winners with a free voucher ($1000 value each, $12,000 value total) to attend [Hummingbot Botcamp](../../../botcamp/index.md), our new developer bootcamp.
 
 Botcamp is a 4-week intensive course that aims to teach a small cohort of students practical, hands-on quant market making. The first cohort is already full and the waiting list is already filling up for future cohorts, so providing this additional compensation to the Gate.io competitions winners comes with substantial cost to us. However, we believe that it's the right thing to do.
 

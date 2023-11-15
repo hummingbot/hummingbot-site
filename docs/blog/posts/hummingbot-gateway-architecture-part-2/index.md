@@ -20,7 +20,7 @@ tags:
 Introduction
 ------------
 
-In [Part 1](../2021-10-gateway-v2-code-architecture/index.md) of this series, we have discussed the architectural changes we are making to Hummingbot Gateway v2 to improve its robustness and reliability, to bring it up to the service quality level expected of production trading systems.
+In [Part 1](../hummingbot-gateway-architecture-part-1/index.md) of this series, we have discussed the architectural changes we are making to Hummingbot Gateway v2 to improve its robustness and reliability, to bring it up to the service quality level expected of production trading systems.
 
 <!-- more -->
 

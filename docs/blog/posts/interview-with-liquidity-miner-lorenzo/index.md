@@ -105,7 +105,7 @@ I don’t if it can apply to everyone, but for one, something that has been hold
 - [Hummingbot Miner’s app](https://miners.hummingbot.io): current liquidity mining campaigns
 - [Hummingbot Help Center](https://support.hummingbot.io/)
 - [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
-- [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
-- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
+- [Liquidity mining whitepaper](../../../liquidity-mining.pdf)
+- [Getting started](https://support.hummingbot.io/miner/getting-started)
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

@@ -8,7 +8,7 @@ categories:
 
 # Epoch 5 Polls Recap
 
-![](./1.png)
+![](cover.png)
 
 Every quarter, Hummingbot Foundation organizes [Polls](https://hummingbot.org/governance/polls/), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
 

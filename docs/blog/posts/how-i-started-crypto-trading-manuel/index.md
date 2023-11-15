@@ -34,7 +34,7 @@ I first started to trade crypto in 2017. The funny thing is that crypto is actua
 
 I had this gut feeling that there are some arbitrage opportunities between the centralized exchanges and DEXes such as IDEX. So I programmed a data scraping tool that used APIs to request prices every minute. Then I found out that there is a lot of what I would call “spread arbitrage” opportunities. So I started doing this “spread arbitrage”. I would quote on IDEX and counter fill (the order) on a centralized exchange. During this process, I realized what I was actually doing was kind of market making. I didn’t even know that this was market making.
 
-Hummingbot’s [cross-exchange market making](/strategies/cross-exchange-market-making.md) is exactly what I did. I was really happy that somebody with more resources is trying to solve the problem. I was self-funded, and also to be honest, APIs of DEXes are just very immature. There are also some bugs. For example, the API would give me “sell”, but (it) was actually “buy”. So I had to tweak my code.
+Hummingbot’s [cross-exchange market making](../../../strategies/cross-exchange-market-making.md) is exactly what I did. I was really happy that somebody with more resources is trying to solve the problem. I was self-funded, and also to be honest, APIs of DEXes are just very immature. There are also some bugs. For example, the API would give me “sell”, but (it) was actually “buy”. So I had to tweak my code.
 
 It’s a really fun journey and I was able to make some money. I did a lot of iterations on my bot (to make it work). When the code was finished, I just let it run automatically on AWS and maintained it from there.
 

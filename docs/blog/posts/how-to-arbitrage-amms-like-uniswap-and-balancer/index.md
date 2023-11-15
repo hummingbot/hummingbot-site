@@ -11,7 +11,7 @@ tags:
 
 # How to arbitrage AMMs like Uniswap and Balancer
 
-![cover](amm-arb.jpg)
+![cover](cover.jpg)
 
 Welcome back to the Hummingbot Academy!
 

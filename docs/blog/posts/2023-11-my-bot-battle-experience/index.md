@@ -7,7 +7,7 @@ categories:
   - Botcamp
 ---
 
-# Retrspective on the October 2023 Bot Battle
+# Retrospective on the October 2023 Bot Battle
 
 ![cover](cover.webp)
 
@@ -21,7 +21,7 @@ Commencing on October 27th and running through to October 30th, I, alongside my 
 
 ## Beta Battle Recap
 
-In the [Beta Bot Battle](/blog/2023/10/12/beta-bot-battle-results-and-roundup/), I used a modified version of the [PMM with Shifted Dynamic Mid Spreads script](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/pmm_with_shifted_mid_dynamic_spreads.py), a strategy designed to provide liquidity to a trading pair in a single market. 
+In the [Beta Bot Battle](../beta-bot-battle-results-and-roundup/index.md), I used a modified version of the [PMM with Shifted Dynamic Mid Spreads script](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/pmm_with_shifted_mid_dynamic_spreads.py), a strategy designed to provide liquidity to a trading pair in a single market. 
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/3cWoS3Yk6EE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -38,7 +38,7 @@ Mostly due to fees, the result was total P&L of -4.84 USDT. While not the outcom
 
 ## What Changed in October: Using a V2 Strategy
 
-Fast forward to October, and I wanted to test out the new V2 strategy framework, notable for creating [Executors](/v2-strategies/executors/) instead of orders. This innovative approach is based on the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html), a concept from [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
+Fast forward to October, and I wanted to test out the new V2 strategy framework, notable for creating [Executors](../../../v2-strategies/executors.md) instead of orders. This innovative approach is based on the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html), a concept from [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
 
 V2 Strategies differ from their predecessors in several key ways:
 

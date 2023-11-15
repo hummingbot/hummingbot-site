@@ -9,7 +9,7 @@ categories:
 
 # Introducing the Hummingbot Governance Token: HBOT
 
-![cover](HB_Token_Featured_Banner.webp)
+![cover](cover.webp)
 
 HBOT Tokens empower holders to decide how the Hummingbot codebase changes over time through voting on proposals.
 

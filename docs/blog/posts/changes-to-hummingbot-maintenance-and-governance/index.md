@@ -7,9 +7,9 @@ categories:
 ---
 # Changes to Hummingbot Maintenance and Governance
 
-![](./cover.jpg)
+![cover](cover.jpg))
 
-Almost exactly one year ago, Hummingbot Foundation [launched the HBOT token](/blog/2021-12-introducing-hbot/) as an experiment in decentralized governance over a publicly shared, community maintained open source project.
+Almost exactly one year ago, Hummingbot Foundation [launched the HBOT token](../introducing-the-hummingbot-foundation/index.md) as an experiment in decentralized governance over a publicly shared, community maintained open source project.
 
 <!-- more -->
 

@@ -8,7 +8,7 @@ categories:
 
 # Epoch 5 HBOT Voter's Guide
 
-![](./fengtality_Uncle_Sam_I_want_you_poster_with_a_bird_as_his_face__13881000-425c-4d91-a8e6-0dfef73c0a11-2.png)
+![](cover.png)
 
 Hummingbot Foundation's quarterly [Polls](https://hummingbot.org/governance/polls/) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
 

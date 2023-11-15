@@ -10,7 +10,7 @@ tags:
 
 # How to Use the Cross-Exchange Market Making Strategy
 
-![cover](image_2.jpg)
+![cover](cover.jpg)
 
 Cross exchange is a **maker-taker** strategy that performs market making trades between two markets: it emits limit orders to a less liquid, larger spread market; and emits market orders on a more liquid, smaller spread market whenever the limit orders were hit.
 
@@ -27,7 +27,7 @@ This article explains:
 
 Arbitrage and cross-exchange market making are often considered and described as "risk-free" because these strategies *largely* mitigate the main risk associated with market making: inventory risk. The main risk that remains is execution risk. To learn more, please read the following blog post:
 
-[![What is cross exchange market making?](image_2.jpg)](../2020-09-what-is-cross-exchange-market-making/index.md)
+[![What is cross exchange market making?](image_2.jpg)](../what-is-cross-exchange-market-making/index.md)
 > **What is cross exchange market making?**  
 > by Paulo Henrique Welcome back to our Educational Center, where we aim to help you to learn more about market making, arbitrage, and everything related to algorithmic trading. Today we will talk about one of the core strategies that can be used with hummingbot: cross-exchange market making.
 

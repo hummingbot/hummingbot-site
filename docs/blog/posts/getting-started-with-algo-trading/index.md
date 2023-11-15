@@ -46,7 +46,7 @@ If you already have some experience with crypto trading, please skip the above s
 
 ### Can I do algo trading without learning programming?
 
-A handful of platforms and bots currently available allow individuals with any level of experience to run pre-set strategies on a user-friendly graphic user interface. With the help of these bots, technically anyone, especially those who already have manual trading experience, can begin algo trading with a few clicks of the mouse. If you trade for fun and have no time to acquire a new skill, you might want to check out these bots (a few were mentioned in [our previous post](../2019-01-crypto-bot-reviews/index.md)).
+A handful of platforms and bots currently available allow individuals with any level of experience to run pre-set strategies on a user-friendly graphic user interface. With the help of these bots, technically anyone, especially those who already have manual trading experience, can begin algo trading with a few clicks of the mouse. 
 
 At some point down the road, you may want to take a closer look at the logic behind the strategies, test and validate them against historical or real data, figure out your way to improve them, or even create your own strategies or bots. Here is where programming comes into play. While learning programming doesn’t guarantee you to make 10X more money, it does provide 10X more options regarding testing, strategy formulation, debugging and so on. However, whether you’ll need to learn programming ultimately boils down to your goal and motivation for trading.
 
@@ -134,7 +134,7 @@ At many exchanges, you'll find takers and makers pay different transaction fees.
 
 Algo trading that employs market making strategies will automatically and continuously place both buy and sell limit orders with the goal of trying to profit from the difference between the bid and ask prices (the "*bid-ask spread*") over time.
 
-For more information on different market making strategies, please refer to the [Humminbot whitepaper](/hummingbot.pdf).
+For more information on different market making strategies, please refer to the [Humminbot whitepaper](/../../../hummingbot.pdf).
 
 ### Closing remarks
 

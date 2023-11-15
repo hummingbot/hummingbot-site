@@ -11,11 +11,11 @@ tags:
 
 # Commands and Configs - Part 1
 
-![cover](commands-and-configs-1.jpg)
+![cover](cover.jpg)
 
 Starting to use **Hummingbot** can be daunting at first, and you might feel a bit overwhelmed by the CLI interface or by the amount of information options available to you.
 
-We do have [documentation](https://hummingbot.org/docs) that can help you to understand what you can do with Hummingbot, but if you still feel it is a lot of information to digest, allow me to guide you through everything you need to know to successfully run your market making bot.
+We do have [documentation](https://docs.hummingbot.org) that can help you to understand what you can do with Hummingbot, but if you still feel it is a lot of information to digest, allow me to guide you through everything you need to know to successfully run your market making bot.
 
 <!-- more -->
 
@@ -108,7 +108,7 @@ Entering the `create` command to initiate, then you will be asked to specify wha
 
 This strategy is about connecting two exchanges and taking advantage of the different prices of an asset between them.
 
-You can learn more about it reading the article [What is arbitrage?](../2020-09-what-is-arbitrage/index.md)
+You can learn more about it reading the article [What is arbitrage?](../what-is-arbitrage/index.md)
 
 `celo_arb`
 
@@ -116,13 +116,13 @@ With this strategy you can execute arbitrage operations between the [Celo blockc
 
 Besides the profit opportunity from the arbitrage, using this strategy also functions as a way to help keep the cUSD price close to 1 USD.
 
-You can learn more about how this strategy works on the [blog announcement](../2020-06-celo-arbitrage/index.md) and on the [quickstart guide](../2020-06-celo-arbitrage/index.md).
+You can learn more about how this strategy works on the [blog announcement](../introducing-the-celo-arbitrage-bot/index.md).
 
 `cross_exchange_market_making`
 
 This strategy is a combination of market making and arbitrage, where make markets on an exchange with typically lower liquidity and hedge with corresponding trades at better prices on another higher liquidity exchange.  This strategy is also known as “liquidity mirroring”.
 
-You can learn more about how this strategy works by reading the What is [Cross-exchange market making?](../2020-09-what-is-cross-exchange-market-making/index.md) article.
+You can learn more about how this strategy works by reading the What is [Cross-exchange market making?](../what-is-cross-exchange-market-making/index.md) article.
 
 `pure_market_making`
 
@@ -130,7 +130,7 @@ With this strategy, you will execute market making operations using only one exc
 
 This is the standard market making strategy, and Hummingbot offers a lot of ways for you to customize how you want your bot to operate.
 
-But if you still have some questions about market making and how it works, you can learn more about the it’s fundamentals by reading [What is market making?](../2020-09-what-is-market-making/index.md) Article.
+But if you still have some questions about market making and how it works, you can learn more about the it’s fundamentals by reading [What is market making?](../what-is-market-making/index.md) Article.
 
 After choosing your strategy, you will be asked to enter some basic parameters for your bot. 
 
@@ -202,7 +202,7 @@ For example, if you have 1 BTC on binance, but want to use only 0.5 BTC to marke
 
 The limit configuration will be saved on the `global_conf.yml` file, therefore any bot instance using the same global configuration file will share the limit.
 
-If you installed Hummingbot on [Windows](/installation/windows.md) or [Mac](/installation/mac.md) using the binary installation, running two instances will use the same `global_conf.yml` file. A way to work around this is to install a second copy of Hummingbot in a different directory.
+If you installed Hummingbot on [Windows](../../../installation/windows.md) or [Mac](../../../installation/mac.md) using the binary installation, running two instances will use the same `global_conf.yml` file. A way to work around this is to install a second copy of Hummingbot in a different directory.
 
 Installing via Docker on Windows, Mac or Linux presents the opposite situation, since each docker instance will have its own configuration files, and if you want to use the same global configuration, you will have to copy the files from one paste to another.
 

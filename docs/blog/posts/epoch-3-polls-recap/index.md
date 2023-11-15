@@ -10,7 +10,7 @@ categories:
 
 Epoch 3 polls prioritizes maintenance of exchanges, strategies, and issues in the Hummingbot codebase
 
-![](Epoch-3-Polls-Recap.png)
+![](cover.png)
 
 Recently, we finished the first set of Polls, a new initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase. We believe regular Polls will ensure that we can continually improve the aspects of Hummingbot that are the most important to the community.
 

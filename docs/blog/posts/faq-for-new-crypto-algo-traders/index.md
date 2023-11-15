@@ -56,7 +56,7 @@ However, writing a bot is time-consuming and not easy. While creating the strate
 
 Here is a list of useful resources to get you started with bot building:
 
-* [Let’s write a cryptocurrency bot](../2020-09-what-is-market-making/index.md): This is a detailed walkthrough of how the author built his crypto trading bot.
+* [Let’s write a cryptocurrency bot](../what-is-market-making/index.md): This is a detailed walkthrough of how the author built his crypto trading bot.
 
 * [How to build a bot in R?](https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1): Be careful that the strategy demonstrated in this article using RSI might not be working due to oversimplification.
 
@@ -65,8 +65,6 @@ Here is a list of useful resources to get you started with bot building:
 ### Should I use an existing bot?
 
 An existing bot, especially an open-source one, can be a great alternative for developers who want to try algo trading. It definitely saves developer time and provides a base from which developers can tweak and customize.
-
-That being said, it doesn't mean every bot is created equal. We recently posted [a crypto trading bot review about their ease of use](../2019-05-crypto-bot-reviews/index.md). In that post, we shared with you what we found out after trying out 7 crypto trading bots available in the market.
 
 In addition to user experience considerations, using existing bots entails various risks. You might easily lose money if you make a wrong bet, set wrong parameters, or even do not truly understand the algorithms employed by the bot.
 

@@ -11,7 +11,7 @@ tags:
 
 # Capital Deployment with Hummingbot
 
-![Alt text](image_1.jpg)
+![Alt text](cover.jpg)
 
 *by Dalskie*
 

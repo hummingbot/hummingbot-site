@@ -8,7 +8,7 @@ categories:
 
 # FAQ on HBOT and Hummingbot Governance
 
-![](./token-governance.jpg)
+![](cover.jpg)
 
 Ever since the birth of the Hummingbot ecosystem, we've strived to ensure a decentralized approach to governance and maintenance of the Hummingbot codebase. Let's take a brief journey through some key milestones:
 
@@ -31,7 +31,7 @@ The sole use case of the HBOT token is **governance**. HBOT tokens empower holde
 
 The total supply of HBOT was fixed at genesis at 1,000,000,000 tokens, and the entire supply is designed to be distributed to stakeholders for contributing meaningful work to the Hummingbot ecosystem.
 
-At [inception](/blog/2021/12/16/introducing-the-hummingbot-governance-token-hbot/), 64.0% of the total HBOT supply was distributed to Github code contributors, Hummingbot users that provided liquidity to the Miner platform, and investors and team members from CoinAlpha, the company that originally open-sourced Hummingbot.
+At [inception](../introducing-the-hummingbot-governance-token-hbot/index.md), 64.0% of the total HBOT supply was distributed to Github code contributors, Hummingbot users that provided liquidity to the Miner platform, and investors and team members from CoinAlpha, the company that originally open-sourced Hummingbot.
 
 From January 2022 through August 2023, 4.2% of the total HBOT supply was distributed across 468 transactions to 102 unique wallets for bug fixes, new connectors, content bounties and other uses approved via Polls and Proposals.
 
@@ -53,7 +53,7 @@ In essence, acquiring HBOT tokens is an investment in the future trajectory of t
 
 **Voting on Polls and Proposals:**
 
-* **Connector Voting**: One of the primary utilities of the HBOT token is the ability to vote in quarterly [Polls](/governance/polls) on which Centralized Exchanges (CEX), Decentralized Exchanges (DEX), and Chain Connectors are integrated and supported within the Hummingbot codebase. As the crypto landscape evolves, it's essential to keep the Hummingbot platform updated with the most demanded and relevant connectors. HBOT token holders can weigh in on this.
+* **Connector Voting**: One of the primary utilities of the HBOT token is the ability to vote in quarterly [Polls](../../../governance/polls.md) on which Centralized Exchanges (CEX), Decentralized Exchanges (DEX), and Chain Connectors are integrated and supported within the Hummingbot codebase. As the crypto landscape evolves, it's essential to keep the Hummingbot platform updated with the most demanded and relevant connectors. HBOT token holders can weigh in on this.
 
 * **Governance System Parameters**: Apart from connectors, there are several other governance decisions to be made, such as bounty allocations for specific connectors and adjusting the connector inclusion thresholds. By holding HBOT, you can voice your opinions on these matters and help steer the ecosystem in a direction that best aligns with your preferences.
 
@@ -71,7 +71,7 @@ In summary, HBOT tokens are not just a means of investment or holding; they're a
 
 ## How can I earn HBOT tokens?
 
-Those involved with Hummingbot, whether as developers or users, primarily earn HBOT tokens through [Bounties](/governance/bounties). These rewards are a token of appreciation given to those who actively contribute to refining the Hummingbot platform. Whether it's bug fixes, connector enhancements, formulation of new trading strategies, or crafting educational content, each task can be a gateway to earning HBOT tokens.
+Those involved with Hummingbot, whether as developers or users, primarily earn HBOT tokens through [Bounties](../../../bounties/index.md). These rewards are a token of appreciation given to those who actively contribute to refining the Hummingbot platform. Whether it's bug fixes, connector enhancements, formulation of new trading strategies, or crafting educational content, each task can be a gateway to earning HBOT tokens.
 
 Furthermore, our Bounties Board is a testament to the community-driven ethos of our ecosystem. It's an arena where every connector, including those categorized as Bronze, can tap into the rich pool of expertise that our community offers. This interactive platform connects connectors in need of upgrades with seasoned Hummingbot developers. The result is a dynamic system where tasks find swift resolutions by experts, ensuring the consistent growth and improvement of the Hummingbot platform.
 

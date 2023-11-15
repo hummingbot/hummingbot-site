@@ -8,7 +8,7 @@ categories:
 
 # Epoch 6 Polls Recap
 
-![](./1.png)
+![](cover.png)
 
 Every quarter, Hummingbot Foundation organizes [Polls](../../../governance/polls.md), a quarterly process that lets HBOT holders vote on how the Foundation distributes its maintenance resources and bounty budgets across the 50+ CEX, DEX, and blockchain network connectors in the Hummingbot codebase.
 

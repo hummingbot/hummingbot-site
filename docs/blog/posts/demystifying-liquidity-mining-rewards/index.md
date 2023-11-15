@@ -51,7 +51,7 @@ This methodology also inherently rewards market makers who continue to make orde
 
 ### Rewarding market makers for better pricing
 
-In our [liquidity mining whitepaper](/liquidity-mining.pdf), we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
+In our [liquidity mining whitepaper](../../../liquidity-mining.pdf), we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
 
 ![](./spread-density-function-graph.png)
 
@@ -102,7 +102,7 @@ Specifically for one minute snapshots, the annualized return would be:
 
 ![](./8-annualized-return.png)
 
-This annualized return can then be used to directly compare the economics of liquidity mining vs. HOLDing (0% return), staking, and lending. In the simulation-based analysis in the [liquidity mining whitepaper](/liquidity-mining.pdf), we showed that users could potentially earn 10-50% from liquidity mining.
+This annualized return can then be used to directly compare the economics of liquidity mining vs. HOLDing (0% return), staking, and lending. In the simulation-based analysis in the [liquidity mining whitepaper](../../../liquidity-mining.pdf), we showed that users could potentially earn 10-50% from liquidity mining.
 
 Ultimately the market and levels of participation will determine the equilibrium rates, but our Hummingbot Miners web app will show users real-time rates of return available from running Hummingbot in various markets so that they can decide to participate when rates are attractive vis-a-vis alternative uses of inventory.
 

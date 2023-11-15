@@ -40,7 +40,7 @@ Source: [Andy Holmes](https://unsplash.com/photos/rCbdp8VCYhQ?ref=blog.hummingbo
 
 ### 1. Expand functionality of top exchange connectors
 
-As mentioned in [our recent post](../2022-12-changes-to-hummingbot-maintenance-and-governance-processes/index.md), we plan to leverage HBOT governance to let the community decide on the top 1 (Gold) and 2-4 (Silver) exchanges of each type, CEX and DEX.
+As mentioned in [our recent post](../changes-to-hummingbot-maintenance-and-governance/index.md), we plan to leverage HBOT governance to let the community decide on the top 1 (Gold) and 2-4 (Silver) exchanges of each type, CEX and DEX.
 
 After the first poll in January, we will begin to focus maintenance effort on the Gold exchanges, bringing them up to a gold standard technically, as well as adding support for all major endpoints supported in the exchange API, such as:
 

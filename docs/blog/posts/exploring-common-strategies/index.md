@@ -48,7 +48,7 @@ This is another strategy available to use with Hummingbot. You will need to hold
 
 Cross exchange is a **maker-taker** strategy. Read more through the docs link and blog below :
 
-[https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/](../2020-09-what-is-cross-exchange-market-making/index.md)
+[https://hummingbot.io/blog/2020-09-what-is-cross-exchange-market-making/](../what-is-cross-exchange-market-making/index.md)
 [https://hummingbot.org/strategies/cross-exchange-market-making/](../../../strategies/cross-exchange-market-making.md)
 
 Our video is outdated in terms of Hummingbot UI but explains the idea of cross exchange market making strategy.
@@ -66,7 +66,7 @@ You can click the link below on how it works and to know more.
 
 ## Avellaneda Market Making
 
-[https://hummingbot.io/en/blog/2021-04-avellaneda-stoikov-market-making-strategy/](../2021-04-avellaneda-stoikov-market-making-strategy/index.md)
+[https://hummingbot.org/blog/guide-to-the-avellaneda-stoikov-strategy/](../guide-to-the-avellaneda-stoikov-strategy/index.md)
 
 This strategy implements a market making strategy described in the classic paper High-frequency Trading in a Limit Order Book  written by Marco Avellaneda and Sasha Stoik
 
@@ -82,14 +82,14 @@ This strategies dynamically changes the bid and ask spreads based on the market 
 The amm_arb strategy is another special case of the normal arbitrage strategy. In which you can arbitrage with Protocol connectors through gateway and a spot connector.
 
 [https://hummingbot.org/strategies/amm-arbitrage/](../../../strategies/amm-arbitrage.md)
-[https://hummingbot.io/en/blog/2021-01-terra-amm-arbitrage-trade](../2020-12-amm-arbitrage-uniswap-balancer/index.md)
+[https://hummingbot.io/en/bloghow-to-arbitrage-amms-like-uniswap-and-balancer](../how-to-arbitrage-amms-like-uniswap-and-balancer/index.md)
 
 ## Spot Perpetual Arbitrage
 
 The Spot Perpetual Arbitrage strategy, arbitrages through a futures connector like Binance Futures and a spot connector. You can also simulate trading here by using binance_perpetual_testnet and paper_trade for spot connectors.
 
 [https://hummingbot.org/strategies/spot-perpetual-arbitrage/](../../../strategies/spot-perpetual-arbitrage.md)
-[https://hummingbot.io/en/blog/2021-03-spot-perpetual-protocol-guide](../2021-03-spot-perpetual-protocol-guide/index.md)
+[https://hummingbot.io/en/blog/2021-03-spot-perpetual-protocol-guide](../guide-to-the-spot-perpetual-arbitrage-strategy/index.md)
 [https://www.youtube.com/watch?v=hJPmAy-Ellk](https://www.youtube.com/watch?v=hJPmAy-Ellk&ref=blog.hummingbot.org)
 
 ## Liquidity Mining Strategy

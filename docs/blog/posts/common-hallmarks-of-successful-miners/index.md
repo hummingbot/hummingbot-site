@@ -10,7 +10,7 @@ tags:
 
 # Common Hallmarks of Successful Miners
 
-![cover](image_0.jpg)
+![cover](cover.jpg)
 
 *by Kyle Mizui*
 
@@ -43,7 +43,7 @@ If you've traded the conservative way safely, have understood most of how the pa
 In essence, in regards to higher risk pairs, you should:
 
 1. **Try them out in paper mode**
-   - Before going all-in on your capital believing it’s a limited time goldrush. Try out your intended strategy in [paper mode](../2019-11-advanced-market-making/index.md). Try to have it run for a few days - or a few hours at the least - to make sure it’s operating profitably
+   - Before going all-in on your capital believing it’s a limited time goldrush. Try out your intended strategy in [paper mode](../how-to-use-advanced-market-making-features/index.md). Try to have it run for a few days - or a few hours at the least - to make sure it’s operating profitably
 2. **Use real but lower capital**
    - Paper markets and real markets don’t function the same way. For example, slippage issues and latency aren’t as well simulated in paper markets. And of course, your trades *do* affect the market, which cannot be captured in paper trading mode. Try out your strategy now in the real markets, but with smaller capital to make sure it runs the same.
 3. **Grow your bot's capital**
@@ -54,7 +54,7 @@ In essence, in regards to higher risk pairs, you should:
 
 ### **2. Managing Inventory Risks**
 
-Inventory risk is when the assets you are holding in the course of market-making, or another trading/investment strategy decrease in value. For example, being a market maker for BTC-USDT would require you to hold some BTC and USDT initially. Due to how a market maker operates, your bot may buy BTC when prices dip, and may sell BTC when prices go up (which is the opposite of what a standard trading strategy of buying low selling high is since now you’re buying high, selling low). Here's a scenario, you set BTC bids at $10 around a mid price of $11. But a sudden dip to $9 hits your bids and stays there. This would mean you now have a temporary loss of $1 for each BTC you bought. This loss is only realized if you sell your BTC at any price below $10. It might recover or it might get worse. This is the risk that market makers bear, and is also how a market maker profits in horizontal markets. But if prices move directionally up or down for a long period of time, you might end up holding a lot of tokens that are worth less. Here’s a more elaborate article on [inventory risks.](../2020-10-inventory-risk/index.md)
+Inventory risk is when the assets you are holding in the course of market-making, or another trading/investment strategy decrease in value. For example, being a market maker for BTC-USDT would require you to hold some BTC and USDT initially. Due to how a market maker operates, your bot may buy BTC when prices dip, and may sell BTC when prices go up (which is the opposite of what a standard trading strategy of buying low selling high is since now you’re buying high, selling low). Here's a scenario, you set BTC bids at $10 around a mid price of $11. But a sudden dip to $9 hits your bids and stays there. This would mean you now have a temporary loss of $1 for each BTC you bought. This loss is only realized if you sell your BTC at any price below $10. It might recover or it might get worse. This is the risk that market makers bear, and is also how a market maker profits in horizontal markets. But if prices move directionally up or down for a long period of time, you might end up holding a lot of tokens that are worth less. Here’s a more elaborate article on [inventory risks.](../what-is-inventory-risk/index.md)
 
 There are two ways to manage inventory risks:
 
@@ -63,16 +63,16 @@ There are two ways to manage inventory risks:
 
  then hedging is a good strategy.
 2. **Run arbitrage or cross-exchange market making**
-   - These strategies tend to maintain a constant inventory over time, unlike pure market making or liquidity mining. You can also hedge the inventory on the perpetuals market. Furthermore, if you set the maker market of the [cross exchange market making strategy](/strategies/cross-exchange-market-making.md) in accordance with the pair that is listed on Hummingbot rewards. Your limit orders that are on the books would earn you rewards as well.
+   - These strategies tend to maintain a constant inventory over time, unlike pure market making or liquidity mining. You can also hedge the inventory on the perpetuals market. Furthermore, if you set the maker market of the [cross exchange market making strategy](../../../strategies/cross-exchange-market-making.md) in accordance with the pair that is listed on Hummingbot rewards. Your limit orders that are on the books would earn you rewards as well.
 
 
 ### **3. Setting up guardrails**
 
 As with all things crypto, the market can tend to be quite volatile - arch-nemesis of market makers - and it might cause you to lose money. There are certain ways to set up safety nets or guardrails to minimize your losses during volatile events. This mostly consists of the kill switch and setting price floors and price ceilings in pure market making.
 
-#### **a. [Kill Switch](/global-configs/kill-switch.md)**
+#### **a. [Kill Switch](../../../global-configs/kill-switch.md)**
 
-This is great for when you’re beginning and trying to understand the impacts of tweaking each parameter. Setting a killswitch rate of -10% while you leave your bot running overnight, would help prevent you from losing too much. However, you don’t want to set your killswitch rate too low, sometimes a coin might just have a roller coaster dip and rise, and if you have killswitch on too low, it’ll just shut down after the losses and not recover the gains on the way up. So be careful. It’s a good training wheel for when you’re still learning to bike, but after you become good with it, the training wheels might do more harm than good. To learn more about the kill switch, visit here: [https://hummingbot.org/global-configs/kill-switch/](/global-configs/kill-switch.md)
+This is great for when you’re beginning and trying to understand the impacts of tweaking each parameter. Setting a killswitch rate of -10% while you leave your bot running overnight, would help prevent you from losing too much. However, you don’t want to set your killswitch rate too low, sometimes a coin might just have a roller coaster dip and rise, and if you have killswitch on too low, it’ll just shut down after the losses and not recover the gains on the way up. So be careful. It’s a good training wheel for when you’re still learning to bike, but after you become good with it, the training wheels might do more harm than good. To learn more about the kill switch, visit here: [https://hummingbot.org/global-configs/kill-switch/](../../../global-configs/kill-switch.md)
 
 #### **b. Price Floors and Ceiling**
 

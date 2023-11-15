@@ -14,9 +14,9 @@ tags:
 
 ### Analyzing 2 months of data from $ONE Makers
 
-![cover](one-makers.jpg)
+![cover](cover.jpg)
 
-Two months ago, in conjunction with our friends from Harmony Protocol, we started an [experimental program](/blog/introducing-harmony-liquidity-bounties) called **$ONE Makers** to see if ordinary individuals using Hummingbot to run market making bots could effectively provide the same level of liquidity as professional market makers.
+Two months ago, in conjunction with our friends from Harmony Protocol, we started an [experimental program](../introducing-harmony-liquidity-bounties/index.md) called **$ONE Makers** to see if ordinary individuals using Hummingbot to run market making bots could effectively provide the same level of liquidity as professional market makers.
 
 Both we and Harmony viewed $ONE Makers as an experiment. In particular, we wanted to answer the following questions:
 
@@ -75,7 +75,7 @@ The vast majority of volume came from the initial weekly cohort, and this cohort
 
 Since Hummingbot carries a steep learning curve and we conducted limited marketing for $ONE Makers, it's not surprising that the number of users didn't increase much, but the retention and engagement data gives us confidence that ordinary people can successfully run market making bots.
 
-Finally, we also conducted two interviews ([Interview 1](../2019-07-top-bounty-hunter-interview1/index.md) | [Interview 2](../2019-09-top-bounty-hunter-interview2/index.md)) with $ONE Makers participants, in which they reported making profits.
+Finally, we also conducted two interviews ( [Interview 1](../interview-with-liquidity-miner-david-salter/index.md) | [Interview 2](../interview-with-liquidity-miner-dominator008/index.md) ) with $ONE Makers participants, in which they reported making profits.
 
 
 ## Can a set of individuals replace a professional market maker?

@@ -8,7 +8,7 @@ categories:
 
 # FAQ on Hummingbot Polls for Exchanges
 
-![](./1-1.png)
+![](cover.png)
 
 ## What are Polls?
 Hummingbot Foundation started conducting quarterly Polls to give HBOT holders a say in the allocation of the Foundation's engineering bandwidth and HBOT developer bounties across the various components of the Hummingbot codebase especially, **which exchanges are included in the codebase, and how much maintenance effort we apply to each exchange.**

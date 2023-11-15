@@ -10,11 +10,11 @@ tags:
 
 # Favorite Hummingbot Parameters from Trader Jazzy
 
-![Alt text](image_0.jpg)
+![Alt text](cover.jpg)
 
 *by Jemz Obmaz*
 
-Hey guys, Jazzy here. I am officially helping my sister [Dalskie](../capital-deployment-with-hummingbot/) on operating the Hummingbot bots.
+Hey guys, Jazzy here. I am officially helping my sister [Dalskie](../capital-deployment-with-hummingbot/index.md) on operating the Hummingbot bots.
 
 I am not well versed yet on crypto & trading stuff, but really find it intriguing & unbelievable world to be living in. I am happy to have made my long-time dream to be working from home, and be my own boss so to speak. What a wonderful, life-changing this opportunity gives my family, especially financially. Thank you so much, Hummingbot!
 

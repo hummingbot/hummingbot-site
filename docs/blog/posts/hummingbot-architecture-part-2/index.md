@@ -109,7 +109,7 @@ The Hummingbot debug console is disabled by default. It needs to be enabled by e
 Once that has been set, you will be able to telnet to `localhost:8211` to access an interactive Python console that has access to the same memory space as the live Hummingbot instance. You can, for example, examine the live properties from the currently running strategy object and look at the active orders it has made and is tracking.
 ![](./debug5.png)
 
-You can read more about the debug console from [Hummingbot documentation](/developers/debug.md).
+You can read more about the debug console from [Hummingbot documentation](../../../developers/debug.md).
 
 ### Discord Channels
 

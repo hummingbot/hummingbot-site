@@ -11,7 +11,7 @@ tags:
 
 # Commands and Configs - Part 2
 
-![cover](commands-and-configs-2.jpg)
+![cover](cover.jpg)
 
 Welcome back to the Hummingbot Academy and the second part of the series of articles that will help you make the best use of your Hummingbot.
 
@@ -48,7 +48,7 @@ Trades executed manually on your exchange, be it a taker or maker order, won’t
 
 Here you can see what is the total value of the inventory of the assets that are being traded.
 
-Inventory value is the main performance indicator for a market maker and is also the main source of risk. Understanding this type of risk is key to being a successful market maker, and you can learn more about it reading the article [What is Inventory Risk?](../2020-10-inventory-risk/index.md).
+Inventory value is the main performance indicator for a market maker and is also the main source of risk. Understanding this type of risk is key to being a successful market maker, and you can learn more about it reading the article [What is Inventory Risk?](../what-is-inventory-risk/index.md).
 
 On this part of the `history`, you can see what is the **Starting** and **Current** inventory, and how it changed for the time your bot has been running.
 
@@ -66,7 +66,7 @@ Here is where you can check how your bot is performing.
 
 If you are new to market making, you might notice that how the trading performance is measured is a bit different from traditional trading.
 
-What matters most for a market maker is how much the total inventory value has changed since he started his operations. You can learn more details about what is the logic behind the performance calculation reading the article [How to measure performance on crypto trading](../2019-07-measure-performance-crypto-trading/index.md).
+What matters most for a market maker is how much the total inventory value has changed since he started his operations. You can learn more details about what is the logic behind the performance calculation reading the article [Managing Your Bot Performance](../managing-your-bot-performance/index.md).
 
 But as a TL;DR, the performance you see is a comparison between trading with the bot vs not trading at all (HODLing the starting assets).
 
@@ -140,7 +140,7 @@ If you are running an automated bot it’s reasonable to assume that you won’t
 
 These settings allow you to configure a telegram account to **receive messages from the bot**, and to **send commands to the bot** from the telegram account. 
 
-If you want to use this functionality, just [follow this guide](/global-configs/telegram.md) for a complete explanation.
+If you want to use this functionality, just [follow this guide](../../../global-configs/telegram.md) for a complete explanation.
 
 #### 0x_active_cancels
 
@@ -154,7 +154,7 @@ Be mindful that these active cancelations will incur in transaction gas fees.
 
 One of the best things about hummingbot is that it is a flexible tool, with a lot of configuration options to implement the strategy you want.
 
-[Scripts](/scripts/index.md) play a big part in this customization, and these two parameters are how you add a script to complement your strategy.
+[Scripts](../../../scripts/index.md) play a big part in this customization, and these two parameters are how you add a script to complement your strategy.
 
 When `script_enabled` is active, whenever you `start` your bot, it will look for the file name you added to `script_file_path`.
 

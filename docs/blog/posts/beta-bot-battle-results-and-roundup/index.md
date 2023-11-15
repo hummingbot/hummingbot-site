@@ -8,7 +8,7 @@ categories:
 
 # ⚔️ Beta Bot Battle Results and Roundup!
 
-[![](beta-bot-battle.jpg)](beta-bot-battle.jpg)
+[![](cover.webp)](cover.webp)
 
 The [Beta Bot Battle](/blog/2023/09/12/join-the-beta-bot-battle/) has concluded, and we're thrilled to present the outcomes to the broader Hummingbot community!
 

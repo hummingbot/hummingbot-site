@@ -10,7 +10,7 @@ categories:
 
 Per HGP-24, we have ended the HBOT delegation system
 
-![](./fengtality_flock_of_hummingbirds_set_free_and_not_chained_to_th_0c6e2279-813e-4fc8-af4d-379798677c9a-1-1.png)
+![](cover.png)
 
 In Hummingbot Governance proposal [HGP-24](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0xbc73a6b7c04751c9296adfd9ec8bf0377f093bbe6d2ce617c5460b890690851b), Hummingbot Foundation proposed to terminate the HBOT delegation system that was initially created to allow locked-up token holders to be able to vote their tokens. Since the lockup period has expired and these token holders are able to release the tokens into their wallets, the delegation system is no longer needed to enable voting participation.
 
