@@ -9,7 +9,7 @@ categories:
 
 # Hummingbot Partners with KuCoin
 
-![cover](hummingbot-kucoin.png)
+![cover](cover.png)
 
 **Hummingbot is thrilled to announce that it has partnered with leading crypto exchange [KuCoin](https://www.kucoin.com/) to bring Hummingbot’s trading capabilities to the exchange.**
 
@@ -38,5 +38,5 @@ For additional information, please navigate to the following pages:
 - [KuCoin](https://www.kucoin.com)
 - [KuCoin’s telegram](https://t.me/KuCoin_Exchange)
 
-> 🏛 **Token issuers**: if your token is listed on KuCoin or on [any of the exchanges](/exchanges/index.md) that Hummingbot is integrated with, please contact the team at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io) to learn more about our liquidity mining campaigns.
+> 🏛 **Token issuers**: if your token is listed on KuCoin or on [any of the exchanges](../../../exchanges/index.md) that Hummingbot is integrated with, please contact the team at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io) to learn more about our liquidity mining campaigns.
 

@@ -12,7 +12,7 @@ categories:
 
 We're incredibly excited to announce a new partnership with [Balancer](https://balancer.finance/), a leading Ethereum decentralized exchange, that allows Hummingbot users to earn arbitage profits from reconciling differences between Balancer and other exchanges.
 
-The Balancer connector is included with the [v0.33 release](/release-notes) of Hummingbot that ships today, along with a new `amm-arb` strategy.
+The Balancer connector is included with the v0.33 release of Hummingbot that ships today, along with a new `amm-arb` strategy.
 
 This new strategy allows allows users to arbitrage price differences between automatic market maker (AMM) protocols like Balancer and other Hummingbot supported exchanges such as Binance, Coinbase Pro, and Huobi.
 
@@ -22,7 +22,7 @@ This new strategy allows allows users to arbitrage price differences between aut
 
 ![Sample arbitage trade between Balancer and Binance](./2.jpg)
 
-The new `amm-arb` strategy lets you exploit the differences between AMMs like Balancer and order book exchanges like Binance. Extending the `celo-arb` strategy [released](../2020-06-celo-arbitrage/index.md) a few months ago, `amm-arb` uses a new, simpler design that works with any AMM protocol, on both Ethereum and non-Ethereum chains!
+The new `amm-arb` strategy lets you exploit the differences between AMMs like Balancer and order book exchanges like Binance. Extending the `celo-arb` strategy [released](../introducing-the-celo-arbitrage-bot/index.md) a few months ago, `amm-arb` uses a new, simpler design that works with any AMM protocol, on both Ethereum and non-Ethereum chains!
 
 In the example above (with screenshots taken at the same time), there appears to be an arbitrage opportunity between the ETH/DAI pair on Balancer and the ETH/USDT pair on Binance, assuming DAI-USDT equivalence and no transaction costs (unrealistic). To execute the arbitrage trade, you could buy 1 ETH for about 448 DAI on Balancer and sell 1 ETH for 451 USDT on Binance. In this case, transaction costs may make this trade unprofitable, but it's easy to see how a profitable arbitrage opportunity may arise throughout the day as the market moves around.
 

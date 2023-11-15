@@ -11,7 +11,7 @@ categories:
 
 A new experimental organization that will coordinate the ongoing maintenance and improvement of Hummingbot via a decentralized set of actors
 
-![](./HB_foundation_banner_with_CA_logo-min.webp)
+![](cover.webp)
 
 <!-- more -->
 
@@ -48,11 +48,11 @@ Most open source projects start as a single developer who shares some useful cod
 
 At CoinAlpha, the company behind the [Hummingbot open source project](https://github.com/hummingbot/hummingbot), scaling an open source community is a problem with which we're intimately familiar.
 
-In December 2018, we published a [whitepaper](/blog/hummingbot-whitepaper) describing plans to build an open source tool called Hummingbot to "decentralize market making" and make available to everyone professional-grade algorithms and tooling previously available only to Wall Street hedge funds.
+In December 2018, we published a [whitepaper](../hummingbot-whitepaper/index.md) describing plans to build an open source tool called Hummingbot to "decentralize market making" and make available to everyone professional-grade algorithms and tooling previously available only to Wall Street hedge funds.
 
 ![](./Screen_Shot_2021-10-01_at_1.38.58_PM.png)
 
-How market making works (source: [Hummingbot whitepaper](/blog/hummingbot-whitepaper))
+How market making works (source: [Hummingbot whitepaper](../hummingbot-whitepaper/index.md))
 
 Hummingbot’s main value proposition is enabling users to run high-frequency trading bots on various cryptocurrency exchanges without having to build and maintain low-level API integrations. **Connectors** maintain persistent WebSocket or REST API connections to exchanges, which allow users to run automated trading **strategies** (or bots) that execute in a fast, performant, and reliable manner.
 

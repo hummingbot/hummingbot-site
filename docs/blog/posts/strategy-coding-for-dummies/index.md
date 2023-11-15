@@ -11,7 +11,7 @@ tags:
 
 # Strategy Coding for Dummies
 
-![cover](image_2.jpg)
+![cover](cover.jpg)
 
 *by Ben Smeaton*
 
@@ -23,7 +23,7 @@ Humming Bot is very accessible for hobby coders due to its mainly python-based c
 
 <!-- more -->
 
-The best way to get started is to get an idea of the strategies already present in hummingbot, this can be done through diving into the program and getting an idea of how it works. I would recommend starting off with an existing strategy and tweaking it yourself. If it all goes wrong (and it probably will) you can just pull it again from Github and overwrite your changes. Also, if you use Windows you're probably going to want to develop your code on a source installation for windows, this can be done quite easily as per: [Source - Hummingbot Foundation](/installation/source/index.md). Obviously, when you have a working code you can then quite easily transfer the strategy file to your AWS server or RPI and compile it there.
+The best way to get started is to get an idea of the strategies already present in hummingbot, this can be done through diving into the program and getting an idea of how it works. I would recommend starting off with an existing strategy and tweaking it yourself. If it all goes wrong (and it probably will) you can just pull it again from Github and overwrite your changes. Also, if you use Windows you're probably going to want to develop your code on a source installation for windows, this can be done quite easily as per: [Source - Hummingbot Foundation](../../../installation/source/index.md). Obviously, when you have a working code you can then quite easily transfer the strategy file to your AWS server or RPI and compile it there.
 
 When you've installed the software from source you need to head to strategy folder in hummingbot/hummingbot/strategy. Then pick the strategy you want to edit. I'm going to use cross exchange market making for this.
 

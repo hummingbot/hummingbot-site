@@ -15,7 +15,7 @@ tags:
 
 *by Thomas Yit*
 
-Understanding and detecting market trends (or lack thereof) is an important skill for any trader, especially market-makers. As mentioned in the past  two articles, like this one that talks about [inventory risk](/blog/what-isinventory-risk/), a market without a clear directional trend (aka moving sideways) is the market-maker’s best friend.
+Understanding and detecting market trends (or lack thereof) is an important skill for any trader, especially market-makers. As mentioned in the past  two articles, like this one that talks about [inventory risk](../what-is-inventory-risk/index.md), a market without a clear directional trend (aka moving sideways) is the market-maker’s best friend.
 
 There are many ways to identify trends, either using fundamental analysis or technical analysis. In the following sections, I will further breakdown Fundamental and Technical Analysis and share some tools that hopefully will assist in building your framework for identifying trends.
 
@@ -66,7 +66,7 @@ The current NVT ratio (Feb 16 2021) is 78.46 and considered normal, the recommen
 
 ## Intermarket Analysis 
 
-Previously in the [Sharing is Caring article](/blog/sharing-is-caring-3-trading-pairs-i-picked), we brought up the subject of currency risk. In this article, I will expand on the topic a bit further. Again, this is not financial advice. 
+Previously in the [Sharing is Caring article](../sharing-is-caring-3-trading-pairs-i-picked/index.md), we brought up the subject of currency risk. In this article, I will expand on the topic a bit further. Again, this is not financial advice. 
 
 In the following chart, the first row consists of treasuries from 2yr, 5yr, 10yr, and TLT ETF, while the second consists of  BTCUSDT, the dollar index, S&P500, and VIX.
 

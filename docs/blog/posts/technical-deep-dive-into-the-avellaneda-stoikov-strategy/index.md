@@ -219,7 +219,7 @@ Recall that `order_amount_shape_factor` ($\eta$) is a modifier to order amount, 
 
 ![](./eta_usage.png)
 
-Basically from both orders submitted in the strategy proposal, the one going against reaching the target inventory will be decreased in size exponentially based on how far bot is from reaching target _q_. This is similar to the [inventory skew](/strategy-configs/inventory-skew.md) approach in Hummingbot's pure market making strategy.
+Basically from both orders submitted in the strategy proposal, the one going against reaching the target inventory will be decreased in size exponentially based on how far bot is from reaching target _q_. This is similar to the [inventory skew](../../../strategy-configs/inventory-skew.md) approach in Hummingbot's pure market making strategy.
 
 Leveraging the `inventory_risk_aversion` (IRA) parameter defined earlier, the amount of decay in the exponential decay function will be controlled by IRA:
 

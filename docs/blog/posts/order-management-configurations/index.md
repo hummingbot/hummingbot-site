@@ -27,11 +27,11 @@ If you missed the previous articles of this series, here is what we have already
 
 <!-- more -->
 
-[Title](../2020-11-commands-and-configs-part1/index.md)
+[Title](../commands-and-configs-part-1/index.md)
 
-*   [Hummingbot Commands - Part 1](../2020-11-commands-and-configs-part1/index.md)
-*   [Hummingbot Commands and Configurations - Part 2](../2020-11-commands-and-configs-part2/index.md)
-*   [Price Sources and Price Types](../2020-11-commands-and-config-price-source/index.md)
+*   [Hummingbot Commands - Part 1](../commands-and-configs-part-1/index.md)
+*   [Hummingbot Commands and Configurations - Part 2](../commands-and-configs-part-2/index.md)
+*   [Price Sources and Price Types](../commands-and-configs-price-source/index.md)
 
 ## Order management is the market maker survival toolkit
 
@@ -39,7 +39,7 @@ So you installed Hummingbot, created a `pure_market_making` strategy, hit `start
 
 While this would be the ideal situation (and there are some ways to make this happen), it isn’t a good idea to just start your bot and never think about it again.
 
-As mentioned in our [introduction article](../2020-09-what-is-market-making/index.md), market-making profits come from capturing the market spread, and the ideal situation is when the market is moving sideways.
+As mentioned in our [introduction article](../what-is-market-making/index.md), market-making profits come from capturing the market spread, and the ideal situation is when the market is moving sideways.
 
 
 ![Market Sideways](./sideway.png)
@@ -69,7 +69,7 @@ If the only players on the market were **uninformed traders**, all the **market 
 
 But the moment the **informed traders** enter the game, it is a clear indication a directional change will happen at any moment.
 
-And this is terrible news for the market makers because, as we talked on the [inventory risk article](../2020-10-inventory-risk/index.md), they are now exposed to the risk of increasing the inventory on only one side of the trade, leading to unprofitable trades.
+And this is terrible news for the market makers because, as we talked on the [inventory risk article](../what-is-inventory-risk/index.md), they are now exposed to the risk of increasing the inventory on only one side of the trade, leading to unprofitable trades.
 
 A quick and straightforward adaptation for that situation is that if a trend direction is detected, the Market Maker will shorten the spread on one side and widen it on the other. 
 
@@ -91,7 +91,7 @@ Below is a list of the strategy parameters that are related to order management.
 
 Changing the bid and ask spread is the bread & butter of a market-making strategy.
 
-With this parameter, you will define the % from the `price_type` your orders will be created (read [this article](../2020-11-commands-and-config-price-source/index.md) if you want more information about price configurations).
+With this parameter, you will define the % from the `price_type` your orders will be created (read [this article](../commands-and-configs-price-source/index.md) if you want more information about price configurations).
 
 This is the parameter that you usually want to change when looking to adapt to changing market conditions.
 
@@ -163,7 +163,7 @@ Another possible situation is if you want to keep your orders at a minimum sprea
 
 Adding a positive value (in percentage) to the `minimum_spread` setting will cancel the current order every time the spread of your bid or ask offers goes below that percentage value.
 
-As described on our [documentation site](/strategy-configs/minimum-spread.md):
+As described on our [documentation site](../../../strategy-configs/minimum-spread.md):
 
 ## Sample Configuration
 

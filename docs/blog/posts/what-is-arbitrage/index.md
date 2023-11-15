@@ -14,7 +14,7 @@ tags:
 
 ## Welcome to Hummingbot Academy!
 
-Last week we published the [first article](../2020-09-what-is-market-making/index.md) of the **Hummingbot Academy**, covering an introduction to **what is** **Market Making**, and today we discuss Arbitrage in order to answer the following questions:
+Last week we published the [first article](../what-is-market-making/index.md) of the **Hummingbot Academy**, covering an introduction to **what is** **Market Making**, and today we discuss Arbitrage in order to answer the following questions:
 
 - **What is arbitrage?**
 - **What do arbitrageurs do?**
@@ -52,7 +52,7 @@ The merchant (arbitrageur) in this case is doing an arbitrage operation: buying 
 
 Although the basic concept of both operations is pretty similar (buy low and sell high with a small profit margin), the key difference is the 'where' the market maker and the arbitrageur look for deals.
 
-> 💡 The market maker [like a pawnshop owner](../2020-09-what-is-market-making/index.md) operates on a single place, **making** buy and sell offers on the same market. The arbitrageur (like a merchant transporting goods between towns), operates on more than one place, **taking** buy and sell **offers** from two (or more) different markets.
+> 💡 The market maker [like a pawnshop owner](../what-is-market-making/index.md) operates on a single place, **making** buy and sell offers on the same market. The arbitrageur (like a merchant transporting goods between towns), operates on more than one place, **taking** buy and sell **offers** from two (or more) different markets.
 
 The way each one affects the markets is also different because while a market maker is providing liquidity, reducing **bid-ask spread** and **slippage**, while the **arbitrageur** is removing liquidity from two markets (usually from a high-liquidity market and a low-liquidity market), but pushing the prices to **converge** on the same level on both places.
 

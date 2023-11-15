@@ -10,7 +10,7 @@ tags:
 
 # NEM Liquidity Mining Case Study
 
-![cover](case-study.png)
+![cover](cover.png)
 
 ## Summary
 

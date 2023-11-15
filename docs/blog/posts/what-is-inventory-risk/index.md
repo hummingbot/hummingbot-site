@@ -84,7 +84,7 @@ The main objective of a market maker is to increase his total inventory value ov
 
 In contrast, a market maker tries to increase portfolio value over time by capturing incremental bid-ask spreads and accumulating them over time. The market maker continually offers to simultaneously buy and sell assets, offering to be at a slightly lower price than he is offering to sell. If the market maker is able to complete a buy and sell, they are able to capture some of this difference, the “bid-ask spread”. The more times a market-maker can complete this cycle of buy and sell, the more profits they are able to accumulate.
 
-As I mentioned in the [first academy article](../2020-09-what-is-market-making/index.md), the ideal situation for a market maker is when the price is moving without a trend:
+As I mentioned in the [first academy article](../what-is-market-making/index.md), the ideal situation for a market maker is when the price is moving without a trend:
 
 ![](./image6.png)
 
@@ -198,7 +198,7 @@ That way, his total spread is still the same (1%), but his buy offers now have a
 
 Hummingbot has a built-in script function, where you can create your own custom strategy, and the bot will adjust the parameters based on any strategy you want.
 
-All you need is know how to code on Python, create a .py file integrated with Humminbot code base, and activate the script through config script_enabled command (you can find more information about scripts [here](/scripts/index.md).
+All you need is know how to code on Python, create a .py file integrated with Humminbot code base, and activate the script through config script_enabled command (you can find more information about scripts [here](../../../scripts/index.md).
 
 You could even create a script that replicates an Automated Market Making logic, as [this reddit user asked](https://www.reddit.com/r/Hummingbot/comments/j6u8x0/amm_on_hummingbot/).
 

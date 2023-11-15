@@ -22,7 +22,7 @@ Since we launched last year, [58 unique developers](https://github.com/hummingbo
 
 <!-- more -->
 
-In spite of our relatively incomplete documentation and constantly evolving codebase, many developers have forked Hummingbot and built their own exchange connectors, which is why we recently announced a [community governance initiative](../2020-08-exchange-connector-governance/index.md) to vote on which forks we support and merge into the official codebase. In addition, many developers want to learn how to use our new Scripts feature that lets you use market data to fine-tune bot behavior and even create their own Hummingbot strategies.
+In spite of our relatively incomplete documentation and constantly evolving codebase, many developers have forked Hummingbot and built their own exchange connectors, which is why we recently announced a [community governance initiative](../proposed-epoch-6-governance-changes/index.md) to vote on which forks we support and merge into the official codebase. In addition, many developers want to learn how to use our new Scripts feature that lets you use market data to fine-tune bot behavior and even create their own Hummingbot strategies.
 
 To better support the burgeoning Hummingbot developer community, I’m excited to announce the following initiatives:
 
@@ -57,5 +57,5 @@ We have created a new Developers section on our [Discord chat server](https://di
 
 ### Developer Hub (coming soon!)
 
-We are working on a developer hub, an expanded version of the [Developer Manual](/developers/index.md) and other resources for developers on the Hummingbot website. We hope that this hub will provide a one-stop shop for any developer looking to build on top of Hummingbot.
+We are working on a developer hub, an expanded version of the [Developer Manual](../../../developers/index.md) and other resources for developers on the Hummingbot website. We hope that this hub will provide a one-stop shop for any developer looking to build on top of Hummingbot.
 

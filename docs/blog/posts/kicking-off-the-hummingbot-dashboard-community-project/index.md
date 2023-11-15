@@ -8,7 +8,7 @@ categories:
 
 # Kicking Off the Hummingbot Dashboard Community Project
 
-![](./Screen-Shot-2023-06-14-at-4.39.35-PM-1.png)
+![](cover.png)
 
 by Hummingbot Foundation
 

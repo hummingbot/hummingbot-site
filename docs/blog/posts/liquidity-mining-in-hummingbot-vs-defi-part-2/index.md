@@ -105,11 +105,11 @@ Score card: Hummingbot Miner 1, AMMs 2
 
 ##### Inventory risk vs. AMM impermanent loss
 
-The main risk of market making is inventory risk.  We recently wrote a post about this on our blog: [What Is Inventory Risk?](../2020-10-inventory-risk/index.md)  In our blog, we explained that there is a risk that value of a market maker’s assets could drop in value even without trading (“market risk”) and that there’s also inventory risk; due to trading (and orders being filled), there’s a risk that a market maker may accumulate more of asset at exactly the wrong time, when values are falling.  _**Just like liquidity providers, market makers, too, are susceptible to arbitrageurs.**_  
+The main risk of market making is inventory risk.  We recently wrote a post about this on our blog: [What Is Inventory Risk?](../what-is-inventory-risk/index.md)  In our blog, we explained that there is a risk that value of a market maker’s assets could drop in value even without trading (“market risk”) and that there’s also inventory risk; due to trading (and orders being filled), there’s a risk that a market maker may accumulate more of asset at exactly the wrong time, when values are falling.  _**Just like liquidity providers, market makers, too, are susceptible to arbitrageurs.**_  
 
 But a big difference is that traders participating in Hummingbot Miners are not just passively relying on a rigid smart contract without any risk management measures whatsoever; Hummingbot miners can customize their strategies, embed their trading views into the bots, and implement risk management measures. In trader speak, they can "*add alpha*".
 
-For example, if prices are trending down, AMMs would just continue to accept unfavorable trades.  On the other hand, with Hummingbot, we have a number of risk management features, such as the ability to adjust bid/ask spreads, order pricing, order sizes (bid vs. ask), and adding in order delays or stopping orders on one side (e.g. stop placing bids when prices continually drop). *Read more about some of these features in our [blog](../2020-10-inventory-risk/index.md)*.
+For example, if prices are trending down, AMMs would just continue to accept unfavorable trades.  On the other hand, with Hummingbot, we have a number of risk management features, such as the ability to adjust bid/ask spreads, order pricing, order sizes (bid vs. ask), and adding in order delays or stopping orders on one side (e.g. stop placing bids when prices continually drop). *Read more about some of these features in our [blog](../what-is-inventory-risk/index.md)*.
 
 
 > While market making on centralized exchanges (Hummingbot Miners) does entail more complexity, the trade-off is that **traders have much more power and control over their trading. Hummingbot allows for risk management!**
@@ -149,6 +149,6 @@ To learn more about liquidity mining, see below:
 
 - [Hummingbot discord community and 24/7 support](https://discord.hummingbot.io)
 - [Hummingbot Miner’s app: current liquidity mining campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns)
-- [Hummingbot quick start](../2020-10-hummingbot-academy/index.md)
-- [Liquidity mining quick start](../2019-11-liquidity-mining/index.md)
+- [Hummingbot quick start](../../../getting-started/dashboard/index.md)
+- [Liquidity mining quick start](../../../getting-started/liquidity-mining/index.md)
 - Follow [@hummingbot_io](https://twitter.com/hummingbot_io) on Twitter and sign-up for our [our newsletter](https://hummingbot.substack.com/) to stay up to date on new campaigns and product developments

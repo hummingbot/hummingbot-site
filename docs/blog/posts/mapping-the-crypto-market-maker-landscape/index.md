@@ -10,7 +10,7 @@ tags:
 
 # Mapping the Crypto Market Maker Landscape
 
-![cover](market-makers.jpg)
+![cover](cover.jpg)
 
 ## Summary
 

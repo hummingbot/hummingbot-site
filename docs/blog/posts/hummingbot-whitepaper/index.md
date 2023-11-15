@@ -12,7 +12,7 @@ tags:
 
 ![](/assets/brand/hummingbot.png)
 
-This summary encapsulates the foundational whitepaper for Hummingbot, authored by CoinAlpha Inc. in 2018, prior to the project's launch. The whitepaper is a seminal document that lays out the theoretical and practical frameworks for an open-source market making bot designed to enhance liquidity in the burgeoning field of digital assets. For an in-depth exploration of the concepts, strategies, and architectural design of Hummingbot, the [original whitepaper](/hummingbot.pdf) is available for review on the official Hummingbot website.
+This summary encapsulates the foundational whitepaper for Hummingbot, authored by CoinAlpha Inc. in 2018, prior to the project's launch. The whitepaper is a seminal document that lays out the theoretical and practical frameworks for an open-source market making bot designed to enhance liquidity in the burgeoning field of digital assets. For an in-depth exploration of the concepts, strategies, and architectural design of Hummingbot, the [original whitepaper](../../../liquidity-mining.pdf) is available for review on the official Hummingbot website.
 
 <!-- more -->
 

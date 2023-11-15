@@ -11,7 +11,7 @@ categories:
 
 Launching a new process that connects skilled community developers with stakeholders seeking dev work
 
-![](./fengtality_blog_post_cover_image_of_a_man_and_a_woman_shaking_h_a96b58c8-97df-41f3-b02f-78d6f9100f3e.png)
+![](cover.png)
 
 Last year, we introduced the [Bounties](https://hummingbot.org/bounties/) process, which has successfully addressed numerous issues and funded vital technical improvements in the Hummingbot codebase. Bounties have been $HBOT-denominated rewards provided by the Foundation to developers for resolving bugs or adding enhancements (such as new connectors, strategies, etc.) to the Hummingbot codebase. Given its significant impact and cost-effectiveness, we believe it's time to expand the Bounties program to the broader Hummingbot ecosystem.
 

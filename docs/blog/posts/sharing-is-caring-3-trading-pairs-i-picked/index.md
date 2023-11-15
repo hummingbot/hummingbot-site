@@ -50,8 +50,8 @@ strengthening. You would prefer markets moving in range for market making. Now, 
 
 ![](./firstpair-config.png) 
 
-I set very simple pure market making parameters but the bid/ask orders are dynamic based on TradingView indicators which trigger alerts to Telegram and 
-change the bid/ask orders, for more information, see [here](../2021-01-automate-tradingview-for-hummingbot/index.md). 
+I set very simple pure market making parameters but the bid/ask orders are dynamic based on TradingView indicators which trigger alerts to Telegram and change the bid/ask orders.
+ 
 If you don’t have a TradingView subscription, you can use Hummingbot scripts to adjust accordingly, see 
 [here](https://github.com/hummingbot/hummingbot/tree/master/scripts), either using the `inventory_skew` or the `spreads_adjusted` to your preference. 
 

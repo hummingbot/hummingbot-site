@@ -9,7 +9,7 @@ categories:
 
 # Introducing Discord Support Bounties
 
-![](./community-word-cloud.jpg)
+![](cover.jpg)
 
 The Discord Support Program program was launched on December 12, 2022 with the aim to foster active participation and problem-solving among members in Discord channels. During its 7-week trial period, it was exhilarating to observe a significant number of users earning HBOT rewards for providing valuable responses to community questions.
 

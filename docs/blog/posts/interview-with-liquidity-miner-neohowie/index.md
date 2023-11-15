@@ -121,6 +121,6 @@ For the more seasoned traders, share more insight and trading strategy. Let’s 
 - [Hummingbot Help Center](https://support.hummingbot.io/)
 - [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
 - [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
-- [Getting started](../2022-01-level-1-b-introduction-to-hummingbot-and-hummingbot-liquidity-mining/index.md)
+- [Getting started](../../../getting-started/liquidity-mining/index.md)
 
 For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

@@ -127,7 +127,7 @@ The method that achieves the highest ROI should be your final selection to move 
 
 **Note 1:** The reason to test different invested amounts is pretty obvious. There is a �Spread Density Function" described in the liquidity mining whitepaper [https://coinalpha.com/liquidity-mining.pdf](https://coinalpha.com/liquidity-mining.pdf) that exponentially favor miners with tighter spread
 
-**Note 2:** The reason to test different spreads is not so obvious. But encoded in the reward allocation mechanism, the invested amount from the miner affects the rewards calculation as it is considered proportional to the total liquidity amount provided by ALL other miners [https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards](../2019-12-liquidity-mining-rewards/index.md)
+**Note 2:** The reason to test different spreads is not so obvious. But encoded in the reward allocation mechanism, the invested amount from the miner affects the rewards calculation as it is considered proportional to the total liquidity amount provided by ALL other miners [https://hummingbot.io/en/blog/2019-12-liquidity-mining-rewards](../demystifying-liquidity-mining-rewards/index.md)
 
 Miner reward allocation % = miner order weight / Total snapshot order weight
 

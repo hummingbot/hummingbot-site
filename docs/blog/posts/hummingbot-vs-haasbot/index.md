@@ -11,7 +11,7 @@ tags:
 
 # Hummingbot vs Haasbot
 
-![cover](hassbot-vs-hummingbot.png)
+![cover](cover.png)
 
 In the previous comparison blog, we compared Cryptohopper and Hummingbot, and  this time, we will continue to compare Haasbot and Hummingbot. 
 
@@ -37,7 +37,7 @@ usual username/password settings. Although the trade-enabled exchange API keys a
 a risk since Haasbot code is proprietary and not publicly available. 
 
 If you run Hummingbot, your private keys and exchange API keys are secure unless your computer/server 
-is compromised (see [FAQ](/faq.md) for details). Hummingbot Miner only uses the read-only API keys to extract and calculate 
+is compromised (see [FAQ](../../../faq.md) for details). Hummingbot Miner only uses the read-only API keys to extract and calculate 
 the mining rewards (see [Privacy](https://support.hummingbot.io/miner/frequently-asked-questions) for details). So rest assured.
 
 # Usability & Support
@@ -76,7 +76,7 @@ for `COTI-BNB`, users need to meet a minimum of 1 BNB equivalent of COTI for the
 ![](./minimum.png)
 
 Haasbot offers basic market making features without advanced market features as compared to Hummingbot. 
-You can read more about these advanced features in [the following blog](../2020-10-inventory-risk/index.md). In sum, both bots have similar basic market making features but Hummingbot has more advanced features in market making.
+You can read more about these advanced features in [the following blog](../what-is-inventory-risk/index.md). In sum, both bots have similar basic market making features but Hummingbot has more advanced features in market making.
 
 
 # We ran both for liquidity mining for 12 hours, here’s what we learned!

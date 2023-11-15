@@ -34,7 +34,7 @@ The four cloud-hosting companies we cover are some of the larger players in the 
 - [Microsoft Azure](#microsoft-azure)
 - [Digital Ocean](#digital-ocean)
 
-> If you are interested in setting up Hummingbot on any of these providers, we have [installation guides](/installation/index.md) published on our documentation site. At the request of many users, we have also posted [useful tricks](/installation/index.md#hummingbot-in-the-cloud) for running the client in the background on a cloud server.
+> If you are interested in setting up Hummingbot on any of these providers, we have [installation guides](../../../installation/index.md) published on our documentation site. At the request of many users, we have also posted [useful tricks](../../../installation/index.md#hummingbot-in-the-cloud) for running the client in the background on a cloud server.
 
 ## Google Cloud Platform
 

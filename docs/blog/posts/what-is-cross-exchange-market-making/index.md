@@ -12,7 +12,7 @@ tags:
 
 ![cover](cover.jpg)
 
-Welcome back to our Educational Center, where we aim to help you to learn more about [market making](../2020-09-what-is-market-making/index.md), [arbitrage](../2020-09-what-is-arbitrage/index.md), and everything related to algorithmic trading.
+Welcome back to our Educational Center, where we aim to help you to learn more about [market making](../what-is-market-making/index.md), [arbitrage](../what-is-arbitrage/index.md), and everything related to algorithmic trading.
 
 Today we will talk about one of the core strategies that can be used with [hummingbot](https://hummingbot.org): **cross-exchange market making**.
 
@@ -25,7 +25,7 @@ The objective of this article is to help you understand:
 
 <!-- more -->
 
-If you already understand how [arbitrage](../2020-09-what-is-arbitrage/index.md) and [pure market making](../2020-09-what-is-market-making/index.md) work, cross-exchange market making ("XEMM") becomes really simple: it's simply a hybrid of the two.
+If you already understand how [arbitrage](../what-is-arbitrage/index.md) and [pure market making](../what-is-inventory-risk/index.md) work, cross-exchange market making ("XEMM") becomes really simple: it's simply a hybrid of the two.
 
 ![](./guitars.jpg)
 
@@ -58,7 +58,7 @@ In my transaction with Alice in both scenarios, I was a taker: I accepted her of
 
 ### What does this have to do with market making?
 
-In our previous article on [pure market making](../2020-09-what-is-market-making/index.md), we explained that a market maker is someone who places both bid and ask orders in order to facilitate trading.  You can see that in the cross-exchange market making example above, I am acting as a **maker**, offering a guitar to sell and specifying a price.  So that's one half of what a market maker does.
+In our previous article on [pure market making](../what-is-market-making/index.md), we explained that a market maker is someone who places both bid and ask orders in order to facilitate trading.  You can see that in the cross-exchange market making example above, I am acting as a **maker**, offering a guitar to sell and specifying a price.  So that's one half of what a market maker does.
 
 But I can also do the same transaction for the buy side.  I have another friend, Dave, who wants to buy a guitar, but he is only willing to pay $95.  At this price, he and Alice can't trade, because his budget of $95 is below Alice's asking price of $100.  Since I know that I can sell a guitar to Dave, at the same time I'm going around trying to sell Alice's guitar, I can go around offering *to buy* another guitar that I can sell to Dave.
 
@@ -198,7 +198,7 @@ If another participant takes the market maker ask offer on Binance DEX (selling 
 
 ### Comparing strategies
 
-With today's article, we presented all three strategies that can be implemented with Hummingbot ([pure_market_making](../2020-09-what-is-market-making/index.md), [arbitrage](../2020-09-what-is-arbitrage/index.md), cross_exchange_market_making), and each one has its own characteristics, advantages, and disadvantages.
+With today's article, we presented all three strategies that can be implemented with Hummingbot ([pure_market_making](../what-is-market-making/index.md), [arbitrage](../what-is-arbitrage/index.md), cross_exchange_market_making), and each one has its own characteristics, advantages, and disadvantages.
 
 Here is a comparison between these strategies:
 

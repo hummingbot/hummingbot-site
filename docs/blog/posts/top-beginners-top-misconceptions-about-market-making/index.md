@@ -41,7 +41,7 @@ Market makers earn the spread from the difference in the bid (other’s offer to
 
 ![graph_example](image_1.jpg)
 
-There’s [an article on hummingbot](../2020-09-what-is-market-making/index.md) that describes the mechanisms of market-making more, and in essence, it is most wise to search for markets that are operating like those above and be able to make a lot of small profits through small volumes.
+There’s [an article on hummingbot](../what-is-market-making/index.md) that describes the mechanisms of market-making more, and in essence, it is most wise to search for markets that are operating like those above and be able to make a lot of small profits through small volumes.
 
 #### **❌ “There exists a configuration that is perfect for making money in all market conditions.”**
 
@@ -49,7 +49,7 @@ Far more often than not, you’ll find beginners come into the hummingbot commun
 
 #### **❌ “1000% APY yield, well, let’s mine those before everyone else figures out.”**
 
-The yield displayed on Hummingbot miner reflects the rewards over risk you get for mining on that pair. Far likelier than not, a higher yield correlates with increased risk when trading the pair. These risks often come in the form of sudden price movements of more than 5-10% in a few seconds, thus taking out all the market makers who were buying or selling. Another risk is [inventory risk](../2020-10-inventory-risk/index.md), which all market makers have to bear. High yield pairs tend to be newer ICOs that haven’t gotten the community’s trust yet, thus a reluctance of market makers to hold inventory of those coins. But of course, the rewards just might overcome the risk, and it’s up to your risk appetite.
+The yield displayed on Hummingbot miner reflects the rewards over risk you get for mining on that pair. Far likelier than not, a higher yield correlates with increased risk when trading the pair. These risks often come in the form of sudden price movements of more than 5-10% in a few seconds, thus taking out all the market makers who were buying or selling. Another risk is [inventory risk](../what-is-inventory-risk/index.md), which all market makers have to bear. High yield pairs tend to be newer ICOs that haven’t gotten the community’s trust yet, thus a reluctance of market makers to hold inventory of those coins. But of course, the rewards just might overcome the risk, and it’s up to your risk appetite.
 
 #### **❌ “0.02% fees? That’s $0.02 for my $100 order sizes, no big deal.”**
 

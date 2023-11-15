@@ -12,7 +12,7 @@ tags:
 
 ![cover](cover.png)
 
-Back in 2019, we investigated 12 bots based on their relative ease of use of installation, configuration, and operation in two blog posts, [Bot reviews, part 1](../2019-01-crypto-bot-reviews/index.md) and [Bot reviews, part 2](../2019-05-crypto-bot-reviews/index.md).
+Back in 2019, we investigated 12 bots based on their relative ease of use of installation, configuration, and operation in two blog posts, Bot reviews, part 1, and Bot reviews, part 2.
 
 This time, we decided to do an more in-depth comparison of [Cryptohopper](https://www.cryptohopper.com/) against Hummingbot in terms of general features and market making parameters. Cryptohopper is a commercial web-based application while Hummingbot is a free and open source command line application.
 
@@ -72,12 +72,12 @@ In addition to the basic parameters, Cryptohopper has some interesting advanced 
 
 The revert/retry feature of Cryptohopper is similar to Hummingbot’s hanging order feature. 
 Autocancel orders and cancel on-depth features are basically options to control your cancellation orders whereas Hummingbot uses inventory 
-and hanging orders, which also enable you to better manage your inventory. You can read more about these advanced features in [the following blog](../2020-10-inventory-risk/index.md). 
+and hanging orders, which also enable you to better manage your inventory. You can read more about these advanced features in [the following blog](../what-is-inventory-risk/index.md). 
 
 One advanced parameter Hummingbot offers but Cryptohopper doesn’t have is the price source, which allows you to 
 define where you can reference price from a source different from the exchange the bot is trading on. This enables you to 
 trade on a slower market but based your price source on a faster market in which the price of the slower market will catch up in due time. 
-You can read more over [here](../2020-11-commands-and-config-price-source/index.md).
+You can read more over [here](../commands-and-configs-price-source/index.md).
 
 As Hummingbot is catered to a more trader-developer type of audience, you can customize such features via custom scripts 
 or contribute to the strategy in the codebase. One of the popular scripts to control sudden spread movements is [spreads_adjusted_on_volatility_script](https://github.com/hummingbot/hummingbot/blob/master/scripts/spreads_adjusted_on_volatility_script.py)  and the integration of external signals is on the product roadmap. 
