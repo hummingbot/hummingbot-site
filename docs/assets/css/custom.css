@@ -367,4 +367,13 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   .grid.two-thirds {
     grid-template-columns: 1fr; /* All items will stack on top of each other */
   }
+
+/* Highlights text to link color */
+.text-highlight {
+  color: var(--md-typeset-a-color);
+}
+
+/* Highlights 2nd card in a card grid to the hover state */
+.highlight-second-card > ul > li:nth-child(2) {
+  border-color: var(--md-accent-fg-color) !important;
 }
