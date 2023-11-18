@@ -11,7 +11,7 @@ tags:
 
 # Interview with Liquidity Miner MrBig
 
-![cover](Cover.png)
+![cover](cover.webp)
 
 
 During the past nine months since we launched liquidity mining, we witnessed great participation from our ever-increasing miner community. Together, we’ve reached one milestone after another. In this post, we introduce one of our top liquidity miners, MrBig1964, to you. Hope you can learn something from him!

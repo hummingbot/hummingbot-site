@@ -8,74 +8,66 @@ tags:
   - User Interviews
 ---
 
-
 # How I Started Crypto Trading - Manuel
 
-![cover](cover.png)
+![cover](cover.webp)
 
+Welcome to the third interview in our series! Today, we're excited to introduce Manuel Zeiler, an experienced crypto trader and co-founder of the DApp discovery platform, [Token Valley](https://www.tokenvalley.com/).
 
-Welcome to the 3rd interview of this series! In this post, we will introduce Manuel Zeiler who is an experienced crypto trader and a co-founder of DApp discovery platform [Token Valley](https://www.tokenvalley.com/).
+Manuel once developed a crypto market-making bot that operated on IDEX, Bittrex, and HitBTC, achieving an impressive 10% monthly profit! He is currently pursuing his master's thesis in blockchain at the Munich School of Management.
 
-Manuel once created a crypto market making bot that ran on IDEX, Bittrex and HitBTC, and he was able to pocket **10% profit per month**! He is now working on his master's thesis in blockchain at the Munich School of Management.
-
-Let’s meet Manuel!
+Let's get to know Manuel!
 
 ![Manuel Zeiler](./image1.png)
 
-*Disclaimer: All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io.*
+*Disclaimer: All views expressed in this interview are solely those of the interviewee and do not represent the opinions of hummingbot.io.*
 
-### How did you get into crypto trading? Have you been trading other assets before crypto?
+### How did you get into crypto trading? Have you traded other assets before?
 
-I first started to trade crypto in 2017. The funny thing is that crypto is actually the first thing I've ever traded. I haven’t traded any stocks before. I have a tech background because blockchain is also tech-heavy. I started trading classic arbitrage between EtherDelta and centralized exchanges in 2017, and then the boom happened. In 2018, I did some market making on centralized and decentralized exchanges.
+I began trading cryptocurrencies in 2017, and interestingly, it was my first foray into trading of any kind. I hadn't dealt in stocks prior to this. My background in technology, particularly in blockchain, led me to explore trading. I started with classic arbitrage between EtherDelta and centralized exchanges in 2017, followed by market-making on both centralized and decentralized exchanges in 2018.
 
 <!-- more -->
 
-### How did you get started in market making?
+### How did you start in market making?
 
-I had this gut feeling that there are some arbitrage opportunities between the centralized exchanges and DEXes such as IDEX. So I programmed a data scraping tool that used APIs to request prices every minute. Then I found out that there is a lot of what I would call “spread arbitrage” opportunities. So I started doing this “spread arbitrage”. I would quote on IDEX and counter fill (the order) on a centralized exchange. During this process, I realized what I was actually doing was kind of market making. I didn’t even know that this was market making.
+My intuition told me there were arbitrage opportunities between centralized exchanges and DEXs like IDEX. I developed a data scraping tool that used APIs to fetch prices every minute, discovering numerous "spread arbitrage" opportunities. My strategy involved quoting on IDEX and completing the counterfill on a centralized exchange. Initially, I didn't realize this was essentially market making.
 
-Hummingbot’s [cross-exchange market making](../../../strategies/cross-exchange-market-making.md) is exactly what I did. I was really happy that somebody with more resources is trying to solve the problem. I was self-funded, and also to be honest, APIs of DEXes are just very immature. There are also some bugs. For example, the API would give me “sell”, but (it) was actually “buy”. So I had to tweak my code.
+The [cross-exchange market making strategy](../../../strategies/cross-exchange-market-making.md) used by Hummingbot mirrors what I did. I was thrilled to see a team with more resources tackling this challenge. My efforts were self-funded, and I encountered issues with the immature APIs of DEXs, including mislabeled buy and sell signals, which required code adjustments.
 
-It’s a really fun journey and I was able to make some money. I did a lot of iterations on my bot (to make it work). When the code was finished, I just let it run automatically on AWS and maintained it from there.
+It was an exciting journey, and I did make a profit. Once my bot was operational, I let it run on AWS and maintained it remotely.
 
-> Ideally you have quite legit coins, good spreads and little competition, then you are good to go!
+> The ideal scenario involves legitimate coins, good spreads, and minimal competition!
 
-Unfortunately, Ethererum price dropped pretty significantly (in late 2018). The bot became unprofitable because I didn’t get enough fills to make up the big drop of ETH. So I eventually had to pause it.
+Unfortunately, a significant drop in Ethereum's price in late 2018 rendered the bot unprofitable due to insufficient fills to offset the ETH price drop, leading me to pause its operation.
 
 ### How did you manage your inventory?
 
-At the beginning, I was having both altcoins and ETH inventories on both (CEX and DEX). Obviously, You do a bid on IDEX and it gets filled, so you need to do the counter fill on a CEX. For CEXes, I used Bittrex and HitBTC. You know I was doing long tail, there were highest match of markets between IDEX and these ones. I was trying to automate rebalancing but I was struggling because I had to automate Ethereum transactions but I found the APIs of centralized exchanges have some bugs.
+Initially, I maintained inventories of altcoins and ETH on both CEX and DEX. As you execute a bid on IDEX and it fills, you need to counterfill on a CEX. I mainly used Bittrex and HitBTC. Over time, I noticed high spreads on IDEX, which allowed me to focus solely on market making there without needing a CEX inventory.
 
-After a while, I found the spreads were so high on IDEX, so I didn't have to do the counter fill on the CEX. I was also mitigating the inventory risk because there is no need for the inventory on the CEX (anymore). It became just classic market making on IDEX.
+### Were you able to capture profits? How did you benchmark your success?
 
-### Were you able to capture profit? How did you benchmark your profit?
-
-Overall, I was making money. I made around 10% a month. Don’t think I made too much. There wasn’t a lot of volume because I was on a long-tail market. Many altcoins have tiny volume.
-
-I measured my profit in USD because I paid for AWS in USD.
+Overall, I was profitable, earning about 10% per month. However, the volume was limited as I focused on long-tail markets with minimal altcoin volume. I measured my profits in USD, as my AWS costs were in this currency.
 
 ![Image](./image2.jpeg)
 
-### What are the three most important trading lessons you've learnt from your experience?
+### What are the three most important lessons from your trading experience?
 
-A big lesson is managing inventory risk because I’m not in the game to go long, I’m in the game of market making.
+First, managing inventory risk is crucial, as my goal was market making rather than going long on assets.
 
-The second one is that when you analyze it, in theory the number looks really good, but when actually doing it, you’ll figure out that there are competitions, bidding wars, etc. It’s actually not that easy to jump into the market.
+Second, theoretical analysis can be deceptive. Real-world trading reveals challenges like competition and bidding wars, making market entry difficult.
 
-Also as you can tell, those DEXes are still in their infancy. Code errors and stuff can be a problem. You need to be prepared for that.
+Lastly, the immaturity of DEXs, including code errors, presents significant challenges. It's important to be prepared for these issues.
 
-### You mentioned that the No.1 thing is managing the inventory risk, how did you manage it?
+### How did you tackle inventory risk?
 
-Just not to have too much inventory in altcoins. To be really honest, you don’t need a lot of those altcoins because the average trade size is really really small, ~0.2 ETH per trade. Maybe you need a bit more (than 0.2 ETH). Depends on how many orders you have on each side. But I mean **I would only do 1 or 2 ETH**. When you make profit, get it out and make it ETH or DAI. Don’t accumulate those altcoins. I was making this mistake by accumulating a lot of altcoins at the very beginning.
+The key was to limit my altcoin inventory. Given the small average trade size, approximately 0.2 ETH, there wasn't a need for substantial holdings. I quickly learned to convert profits into ETH or DAI rather than accumulating altcoins.
 
-### Are there any tools that you think are helpful for crypto trading?
+### What tools did you find useful for crypto trading?
 
-Frankly, it’s just my own code, NodeJS, and MySQL. Sometimes I play with Google Sheets when I make the calculations. I don’t do charting on TradingView. I just have the order book in my head, since that's how the prices are determined. At the end of the day, it all comes down to the order book and trade history.
+I primarily relied on my own coding skills, using NodeJS and MySQL. For calculations, I sometimes used Google Sheets. I didn't use TradingView for charting, preferring to visualize the order book and trade history in my mind.
 
-### Do you follow crypto Twitter or subscribe to any crypto media, and which ones do you recommend?
+### Do you follow any crypto media, and which ones would you recommend?
 
-Yes, I get most of my information from Telegram, Reddit and Twitter. I’m in one of Crypto Valley’s telegram groups. I’ve been to their conference in Switzerland. It was really good!
-
-On Twitter, I like [Zhu Su](https://twitter.com/zhusu) from Three Arrows Capital, and I think he has some really good insights. I also follow [Kyle](https://twitter.com/kylesamani) from Multicoin Capital.
+Most of my information comes from Telegram, Reddit, and Twitter. I'm active in one of Crypto Valley's telegram groups and have attended their conference in Switzerland, which was excellent. On Twitter, I follow [Zhu Su](https://twitter.com/zhusu) from Three Arrows Capital and [Kyle](https://twitter.com/kylesamani) from Multicoin Capital for insightful perspectives.
 
 ---

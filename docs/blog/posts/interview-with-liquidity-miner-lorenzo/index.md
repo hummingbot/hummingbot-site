@@ -8,97 +8,79 @@ tags:
   - User Interviews
 ---
 
-
 # Interview with Liquidity Miner Lorenzo
 
-![cover](cover.png)
+![cover](cover.webp)
 
-It has been just over two months since we launched Liquidity Mining. With heated competition, miners have been working very hard to rank higher on our leaderboard! And we saw more miners join this game and invest larger quantities of assets. 
+It's been just over two months since the launch of our Liquidity Mining program. With intense competition, miners have been diligently striving to ascend our leaderboard. We've witnessed an increase in miners joining the program and investing substantial asset amounts.
 
-In this post, we introduce you to Lorenzo Boyice, fairly new to our community but already ranked into Weekly Top 10 for the past few weeks consecutively. In 2010, he once paid 21 Bitcoin ransom to hackers who locked down his computer files. Now he is a software engineer by trade and started investing in crypto in late 2018/early 2019. With liquidity mining, his current monthly return is around 3-5%.
+In this post, we introduce Lorenzo Boyice, a relatively new member of our community who has consistently ranked in the Weekly Top 10 for the past few weeks. In 2010, he faced a dilemma when hackers demanded a 21 Bitcoin ransom to unlock his computer files. Now, as a software engineer, he began investing in cryptocurrencies in late 2018/early 2019. Through liquidity mining, his current monthly return ranges between 3-5%.
 
 <!-- more -->
 
-**Disclaimer: Not financial advice. All views expressed in this interview are the interviewee’s and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.**
+**Disclaimer: The views expressed in this interview are solely those of the interviewee and do not represent the opinions of hummingbot.io. Hummingbot does not guarantee nor claim to guarantee profits.**
 
-### Can you tell us a little bit about your background?
+### Could you share a bit about your background?
 
-I received my bachelor’s degree of computer science from the University of Missouri, Columbia where I developed a pretty solid foundation. After I graduated, I started to work in the (tech) industry in Kansas City at a company called Garmin. It was really interesting because when I first started working there, I was working in their aviation department. I had no idea that Garmin developed software for pilots in planes. I got some industry experience, after a while, I came across a great job opportunity at Google. So I have been a software developer at Google for about 3 years now. 
+I earned my Bachelor's degree in Computer Science from the University of Missouri, Columbia, where I built a robust foundation in the field. Post-graduation, I started my career in the tech industry in Kansas City at Garmin. Initially, I worked in their aviation department, developing software for pilots, which was a revelation to me. After gaining substantial industry experience, I seized an excellent opportunity at Google, where I have been a software developer for around three years.
 
+### Did you discover Hummingbot or liquidity mining first? How?
 
-### Did you hear about hummingbot first or liquidity mining first? How did you hear about it?
+I encountered Hummingbot first. As an avid crypto enthusiast, I was exploring ways to maximize profits from my crypto assets beyond simply holding them. My research into staking, arbitrage, automated trading, and bots led me to Hummingbot, initially for arbitrage opportunities. However, upon delving into its documentation, I discovered liquidity mining and became deeply involved with your platform. I've been using Hummingbot for about a month now and am thoroughly impressed with its capabilities.
 
-It was Hummingbot first. I was already a big fan of crypto and really behind the ideology. Basically I started investing and (I’m) just sitting on this collection of crypto assets. Besides HODLing, I just wanted to find a way to maximize my profit. How can I make my money work for me? I started to dig into staking, arbitrage, automated trading, and bots. After a while, when I was just doing some internet searches, I think I came across Hummingbot. Originally, I was looking for arbitrage opportunities. As I read through the documentation, I came across this liquidity mining idea. I think that really got me involved with you. 
+### When did you begin investing in crypto?
 
-As far as a timeline, I didn’t actually hear about this until a month ago. Hummingbot is a really new thing to me. I kind of fell in love with the product right away. I remember comparing your software with bots and others in the industry, and realizing you're ahead of the game! 
+My crypto journey began in 2011 during high school when a virus locked my computer files, halting my music production. The hackers demanded a 21 Bitcoin ransom, which was my first encounter with Bitcoin. Although I paid the ransom, I didn’t delve deeper into Bitcoin until 2018. That's when I began mining Bitcoin and other altcoins, leading to a deeper understanding of cryptocurrency and trading on exchanges.
 
-### When did you start investing in crypto?
+### How has your experience with Hummingbot been?
 
-I’ll tell you a quick little story. It was quite interesting. This was 2011, I was in high school. I got this virus on my computer. All my files were locked down. At the time I produced music and this brought everything to a halt. Basically this was a scam, extortion type of scenario. In order to unlock my music, they asked me to pay 21 Bitcoin (that's worth about USD188K today). I was like… what the f@!$ is a Bitcoin. I started to research it in 2011 but just couldn’t understand it so I paid the ransom and they gave me my files back. I didn’t really think about it after that.
+Hummingbot has been fantastic, offering an ideal blend of modularity and decentralization. Its open-source nature is particularly appealing. The setup process took less than an hour, thanks to my technical background. However, the guides and videos are extremely helpful for those without such experience. I'm eagerly looking forward to the upcoming training sessions to enhance my financial trading skills.
 
-![](bitcoin.jpeg)
+### As a top liquidity miner, how has your experience been with liquidity mining?
 
-But then as I grew older, my interest in the technology grew, and I revisited this idea again in early 2018. The topic came up and some told me “...but don’t start mining Bitcoin”. What did I do? A year later I ended up buying a few ASICs. Very stubborn. But after that conversation I started to dig into Bitcoin and cryptocurrency, and read a lot of articles. I wanted to be a part of the ecosystem end to end. My first introduction was getting into ASIC mining. I mined BTC, Bytom, Dash and a few other altcoins. And that’s when I really started to understand how exchanges work and I began trying to trade crypto on a few of them.
+It's been a positive experience. The concept of passive income through liquidity mining, as explained in your whitepaper, resonated with me. I'm drawn to the decentralized nature of the platform, which empowers individual investors and fosters a community supporting various tokens and projects.
 
-### How has your experience been so far with hummingbot?
+### Did you already own the tokens used in liquidity mining campaigns?
 
-It’s been great. Compared to the other services I’m using, it’s a great marriage of modularity and decentralization that I’m looking for. I kind of wanted something that’s a little bit more granular, software with an out of the box strategy that can be refined. And another thing that really appeals to me is it’s free and open source. You really can’t beat that. 
+Before joining the program, my portfolio primarily consisted of Bitcoin, Ethereum, and a few Binance coins. The program introduced me to numerous altcoins, presenting new investment opportunities.
 
-### How long did you spend to figure out Hummingbot? How much effort did you put into it?
+### Have you been profitable so far?
 
-I would say that was under an hour. If you have the technical background and experience developing and deploying applications, you can get set up quick. But if you don’t, I think the guides and the videos are super helpful. The more advanced configuration videos are more helpful for me. I’m still trying to learn more about it. One thing I'm excited about is the training you provide. So I signed up for training in May. I know the technical aspect of the project but I’m not really well versed with the financial/trading aspect of it. I’m trying to build my skills there so that I can make my bot a little bit more efficient. 
+Yes, I've been profitable, although determining the direct profitability can be challenging. My returns from liquidity mining have been significant, contributing to an estimated annual return of 40-50%. Initially, I earned about 3-5% monthly.
 
-### You are one of our top liquidity miners. How has your experience been so far with liquidity mining?
+![ocean.jpeg]
 
-Positive. Go eagle club! (haha) But the whole idea is what puts you ahead of the game. I kind of like this passive income idea. You know? This opportunity was really attractive to me once I read through your whitepaper on it. The thing that really drew me to the project is the fact that it's decentralized and really focused on empowering individuals and building a community of investors who get to support tokens and projects they like. Its idea is fairly new in the industry.
+### What strategies do you employ in liquidity mining?
 
-### You mentioned that you HODL some tokens, did you already own the tokens in the liquidity mining campaigns? 
+I began with pure market making and have experimented with multiple order strategies, settling on using three orders for optimal performance.
 
-I didn’t have a lot of altcoins. I had Bitcoin, Ethereum and a few Binance coins. I would say this program definitely introduced me to a lot of coins that I didn’t know they existed. A great opportunity to explore and invest in those projects. 
+### Have you set up multiple bot instances?
 
-### Have you been able to make money so far? 
+Yes, I initially tested Hummingbot on an old computer before transitioning to cloud-based instances on Google Cloud. I've experimented with running up to eight bots simultaneously, eventually focusing on 2-3 for specific token pairs.
 
-Long story short, yes. Determining direct profitability, it’s a bit difficult. So I’m using Binance as my exchange where I also do manual trades. I’m not an experienced trader, so I know some of the manual trades I've made were not profitable. I think most of my profits come from liquidity mining. I’m now on track for a 40-50% annual return. I think for the first month I’ve been trading, I made about 3-5% return. 
+### Do you find the current strategies user-friendly for new miners?
 
-![](ocean.jpeg)
+The strategies are accessible for beginners. However, more emphasis on educating traders about advanced features like inventory skew and setting spreads would be beneficial. This is why I'm enrolled in the advanced training.
 
-### What strategies do you use to participate in liquidity mining?
+### How often do you adjust your bot settings based on market trends?
 
-I started with pure market making. I think that’s the ideal setup I’m kind of looking for. 
+Initially, I frequently tweaked settings to understand the market. Now, I adopt a weekly approach to analyze markets and adjust positions.
 
-### Have you tried multiple orders for pure market making? 
+### What pairs are you currently trading, and why?
 
-Yeah, I played around with the settings. I started with a single order. As I understood what market making was, I started to see some advantages of doing the multiple orders. I read through your documentations, then I upgraded to using multiple orders. I normally use 3. I think that’s my magic number. 
+I trade ZIL/BNB, ZIL/USDT, and RLC/ETH. My selection is based on both my belief in the potential of these projects and the rewards for providing market liquidity.
 
-### Have you tried to set up different instances of the bot?
+### Besides Hummingbot, what tools do you use for trading?
 
-My first instance just to try it out was set up on an old computer. I first downloaded it on there and had it running for about a week, and got the payout. I thought this seems legit. I then saw you had some documents on how to set up cloud instances. I started using Google Cloud and created a virtual machine there. That has been wonderful. I have been running a couple of bots.
+I occasionally use CoinGecko, CoinMarketcap, and primarily TradingView, focusing on signals like EMA, MACD, and volume.
 
-For the longest, I was running 8 bots for all the markets. I was just curious to see which one has the best return, performance, things like that. Now I narrowed it down to 2-3 for the tokens that I want to be involved with. 
+### Any key insights from using Hummingbot?
 
-### Do you think our current strategies are simple enough for miners to get started?
+It's crucial to rely on multiple sources or signals for trading decisions, especially in volatile markets. Combining different signals allows for more accurate and effective trading strategies with Hummingbot.
 
-I think it’s good for someone who doesn’t know a whole lot just like me to get started. So I think your strategies are good, we have nothing to worry about there. But you have things like inventory skew, dust jumping, or tips on setting spreads, if you can bring these out to the front a little bit more, and educate traders a little bit more, I think that can really empower users. That’s why I signed up for the advanced training. 
+### Any trading tips for fellow miners?
 
-### Did you change your bots’ settings often based on the trends and signals, and how often did you change them?
-
-Most certainly, especially during my first few weeks. I didn’t really know what I was doing at first so I would tweak things, wait a couple days and tweak things again. But as of lately I've been on about a weekly cadence. At the start of the week I like to sit down, analyze the markets, adjust my positions accordingly then come back next week to review.
- 
-### You mentioned that you are now running 2-3 bots. What pairs are you trading currently? Why did you choose these pairs? 
-
-I’m currently trading ZIL/BNB, ZIL/USDT and RLC/ETH. I did some research on the tokens, and formed my opinion as far as the overall projects that I can really get behind and believe the things really have a future from a year from now. Also at the same time, I looked at the rewards I’d get from providing market liquidity to these tokens. I think combining these two aspects is how I was able to narrow down to these pairs. 
-
-### What other tools beside hummingbot do you use to help you trade?
-
-Sometimes I use CoinGecko, CoinMarketcap but mostly TradingView. I look for basic signals in the EMA, MACD and volume.
-
-### What important lessons or insights have you learned while trading using hummingbot?
-
-I would say, definitely have multiple sources or multiple signals that you use to trade or to make your decisions especially with volatile markets. I think it’s about finding the combination of different things you should be looking at. Based on these signals, you can set your positions more accurately and more defined with Hummingbot. For example, if you see it’s going to be a really strong bull market, you can set your spreads to account for it so that you don’t exit the position too early. 
-
-### Lastly, do you have any recommendations or trading tips for fellow miners?
-
-I don’t if it can apply to everyone, but for one, something that has been holding true is investing in my gut decision. One thing I learned is just make a decision, stick by it, and adjust afterwards. 
+Trust your instincts and make decisive choices. It's important to commit to a decision and be prepared to adjust as needed.
 
 ### Learn More
 
@@ -108,4 +90,4 @@ I don’t if it can apply to everyone, but for one, something that has been hold
 - [Liquidity mining whitepaper](../../../liquidity-mining.pdf)
 - [Getting started](https://support.hummingbot.io/miner/getting-started)
 
-For exchanges and projects who would like to learn more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).
+For exchanges and projects interested in liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).
