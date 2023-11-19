@@ -72,7 +72,7 @@ hide:
 
     ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
 
--   [![](/blog/mapping-the-crypto-market-maker-landscape/market-makers.jpg)](/blog/mapping-the-crypto-market-maker-landscape/)
+-   [![](/blog/mapping-the-crypto-market-maker-landscape/cover.jpg)](/blog/mapping-the-crypto-market-maker-landscape/)
 
     ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
 
@@ -98,7 +98,7 @@ hide:
 
     ### [Demystifying Liquidity Mining Rewards](/blog/demystifying-liquidity-mining-rewards/)
 
--   [![](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/partners.png)](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
+-   [![](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/cover1.jpg)](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
     ### [Introducing Liquidity Mining: A Marketplace For Market Makers](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
@@ -134,15 +134,15 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/interview-with-community-member-vik/cover.png)](/blog/interview-with-community-member-vik/)
+-   [![](/blog/interview-with-community-member-vik/cover.webp)](/blog/interview-with-community-member-vik/)
 
     ### [Interview with Community Member Vik](/blog/interview-with-community-member-vik/)
 
--   [![](/blog/interview-with-market-maker-harry-yeh/cover.png)](/blog/interview-with-market-maker-harry-yeh/)
+-   [![](/blog/interview-with-market-maker-harry-yeh/cover.webp)](/blog/interview-with-market-maker-harry-yeh/)
 
     ### [Interview with Market Maker Harry Yeh](/blog/interview-with-market-maker-harry-yeh/)
 
--   [![](/blog/interview-with-liquidity-miner-mrbig/Cover.png)](/blog/interview-with-liquidity-miner-mrbig/)
+-   [![](/blog/interview-with-liquidity-miner-mrbig/cover.webp)](/blog/interview-with-liquidity-miner-mrbig/)
 
     ### [Interview with Liquidity Miner MrBig](/blog/interview-with-liquidity-miner-mrbig/)
 
@@ -164,7 +164,7 @@ hide:
 
     ### [Order Management Configurations](/blog/order-management-configurations/)
 
--   [![](/blog/commands-and-configs-price-source/pricesource.jpg)](/blog/commands-and-configs-price-source/)
+-   [![](/blog/commands-and-configs-price-source/cover.jpg)](/blog/commands-and-configs-price-source/)
 
     ### [Commands and Configs - Price Source](/blog/commands-and-configs-price-source/)
 
@@ -182,11 +182,11 @@ hide:
 
     ### [Introducing V2 Strategies](blog/introducing-v2-strategies/)
 
--   [![](/blog/directional-trading-with-macd-and-bollinger-bands/cover.png)](/blog/directional-trading-with-macd-and-bollinger-bands/)
+-   [![](/blog/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/blog/directional-trading-with-macd-and-bollinger-bands/)
 
     ### [Directional Trading with MACD and Bollinger Bands](/blog/directional-trading-with-macd-and-bollinger-bands/)
 
--   [![](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.png)](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+-   [![](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
     ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 

@@ -10,146 +10,137 @@ tags:
 
 # Running Hummingbot in the Cloud
 
-![cover](cover.png)
+![cover](cover.webp)
 
-For users who are looking to run Hummingbot for prolonged periods of time, especially multiple bots simultaneously, local installation can be limiting. Currently, each bot requires its own docker image, which can use up local computing power, memory, and storage. Further, your bots can only be running for as long as your computer is in use. 
+Users aiming to operate Hummingbot for extended periods or to run multiple bots simultaneously may find local installation limiting. Each bot requires its docker image, consuming significant local computing power, memory, and storage. Additionally, the bots can only function while your computer is active.
 
-Even if these are not concerns for you, running Hummingbot in the cloud presents several advantages. For instance, Hummingbot relies on a stable connection to continuously fetch order book data and place orders. Using virtual machines can not only help ensure a seamless connection, but also increase the speed of transactions by operating on servers that are geographically closer to the exchanges. And while cloud computing was expensive and complicated in the past, modern instances are much cheaper and easier to use which has made it very feasible for individual users to operate cloud servers of their own. 
+Despite these constraints, leveraging cloud-based Hummingbot offers numerous benefits. It ensures a stable connection, critical for continuous order book data fetching and order placement. Virtual machines enhance connection stability and transaction speed, particularly when servers are geographically closer to exchanges. Moreover, the affordability and simplicity of modern cloud computing instances have made it viable for individual users to maintain their own cloud servers.
 
-In this post, we compare the offerings of major cloud computing services relative to the needs of Hummingbot users. With the right provider and setup documentation, running a remote instance of Hummingbot has never been easier.
+This post evaluates major cloud computing services, focusing on features pertinent to Hummingbot users. Selecting the right provider and setup is now easier than ever with appropriate guidance and documentation.
 
 <!-- more -->
 
-### Examining the playing field
+### Examining the Landscape
 
-In the last decade, cloud computing has exploded in popularity, leading to the development of dozens of different providers each with their own specializations and niches. And given the difficulty in traversing the wealth of options for a newcomer, many have [scored and ranked](https://www.zdnet.com/article/top-cloud-providers-2018-how-aws-microsoft-google-ibm-oracle-alibaba-stack-up/) cloud service platforms on a [number of metrics](https://www.techradar.com/news/best-cloud-computing-service). 
+Cloud computing has seen immense growth over the past decade, leading to numerous providers with various specializations. For newcomers, navigating these options can be challenging. Many sources have [evaluated and ranked](https://www.zdnet.com/article/top-cloud-providers-2018-how-aws-microsoft-google-ibm-oracle-alibaba-stack-up/) these platforms based on various metrics.
 
+Here, we assess cloud services specifically for Hummingbot use, considering **ease of use**, **free trial flexibility**, **post-trial pricing**, and **overall quality**.
 
-Here, we measure different cloud service systems specifically with regards to use for Hummingbot. We decided to compare platforms based on key factors which primarily include **ease of use**, **free trial flexibility**, **post-trial price**, and **overall quality**.
-
-The four cloud-hosting companies we cover are some of the larger players in the field:
+We focus on four major cloud-hosting companies:
 
 - [Google Cloud Platform](#google-cloud-platform)
 - [Amazon Web Services](#amazon-web-services)
 - [Microsoft Azure](#microsoft-azure)
 - [Digital Ocean](#digital-ocean)
 
-> If you are interested in setting up Hummingbot on any of these providers, we have [installation guides](../../../installation/index.md) published on our documentation site. At the request of many users, we have also posted [useful tricks](../../../installation/index.md#hummingbot-in-the-cloud) for running the client in the background on a cloud server.
+For Hummingbot setup guides on these platforms, visit our [installation documentation](../../../installation/index.md). We also offer [helpful tips](../../../installation/index.md#hummingbot-in-the-cloud) for running the client in the cloud.
 
 ## Google Cloud Platform
 
-The Google Cloud Platform began in 2008 with App Engine, a web-based framework for hosting and running applications on Google’s infrastructure. Their platform has since grown to over 90 products in services such as storage, computation, data analytics, networking, security, and big data. For the purposes of Hummingbot users, we will specifically review the **Compute Engine** product, which lets users deploy virtual machines on demand.
+Google Cloud Platform (GCP) launched in 2008 with its App Engine. Now, it offers over 90 services in areas like storage, computation, and security. We focus on the **Compute Engine** for Hummingbot users, which allows on-demand virtual machine deployment.
 
-The setup process for users to create their own instance is very simple and intuitive. Beginning at the [GCP Free Tier Getting Started Page](https://cloud.google.com/free/) we were able to enable our free trial of GCP and launch our first instance in under 10 minutes. GCP’s web portal interface is very easy-to-follow and even lets users SSH into the virtual machine directly from the console. This is a huge benefit for users across all operating systems as there is minimal setup to be performed on the local machine.
+The setup process is user-friendly and intuitive. Starting at the [GCP Free Tier Getting Started Page](https://cloud.google.com/free/), we activated our trial and launched our first instance in under 10 minutes. The web portal is straightforward, even allowing direct SSH access from the console, a significant benefit for all operating systems.
 
 ![SSH directly from the web interface on GCP](./gcp-ssh.png)
 
-GCP’s Free Tier comes with a 12-month free trial and $300 in credit to use across any of the available services. However, the only instance that can be set up for free is the f1-micro, which comes with 0.60 GB memory. This is probably sufficient to run one instance of Hummingbot and to test out the actual server. However, we recommend that users upgrade to an instance with at least 1 vCPU, 2 GB of RAM, and sufficient storage to run multiple bots for extended periods of time. After the free trial, the cost for each instance with the aforementioned specifications is $21.50/month.
+GCP’s Free Tier includes a 12-month trial and $300 in credits. The only free instance is the f1-micro, with 0.60 GB memory, adequate for a single Hummingbot instance. We recommend upgrading to at least 1 vCPU and 2 GB of RAM for multiple bots. Post-trial, this setup costs approximately $21.50/month.
 
----
 
 **Advantages**:
-- Simple, easy-to-follow interface
-- Reliability and robustness of service
+- User-friendly interface
+- Reliable service
 
 **Disadvantages**:
-- Monthly cost for running instances is higher than other providers
-- Free trial is restrictive for VM specs
+- Higher monthly costs
+- Restrictive free trial
 
-> This cost is steeper than other cloud providers’ offerings for instances with the same specifications. In addition, the free trial is slightly restrictive as users can only use the lowest-tier instance. However, GCP makes up for this with its easy-to-follow interface and simplicity in connecting to the instance. Overall, GCP offers a very reliable and solid service that users won’t go wrong with.
+> While more expensive, GCP compensates with its simplicity and robust service, making it a reliable choice.
 
 ## Amazon Web Services
 
-Amazon Web Services began in 2002 as a service for developers to build XML-based interfaces for their product catalog and grew into an infrastructure service business when Amazon realized that they held a strong core competency in that area. In 2006, AWS launched two of their biggest services to date: Elastic Cloud Compute (EC2) and Simple Storage Service (S3). For Hummingbot users, we will be specifically looking at the EC2 service.
+Amazon Web Services (AWS) evolved from a 2002 developer service into a major infrastructure service provider. We focus on the EC2 service for Hummingbot.
 
-Just like GCP, AWS has a very intuitive web interface set up process. In just a short period of time, we were able to create an AWS Free Tier account and launch our first instance. Instructions on the AWS documentation were very clear and easy-to-follow. The process to connect to the actual instance was slightly more involved than that in GCP, as there was no web interface. Even though there were additional steps to connect after setting up the instance, the instructions were clearly presented and straightforward.
+AWS features an intuitive setup process. We quickly created an account and launched an instance. The connection process, while more involved than GCP’s, is well-documented and straightforward.
 
 ![Connecting to AWS Instance](./aws-ssh.png)
 
-AWS’s free trial comes with 12 months of EC2 usage capped at 750 hours/month. However, users on the Free Tier are only allowed to use the t2.micro instance, which provides only 1 GiB of memory. As with the Free Tier on GCP, this is not sufficient to run multiple instances of Hummingbot simultaneously. After testing out the instance, however, we recommend that users upgrade to the t2.small instance, which has 2 GiB and sufficient storage to run multiple bots simultaneously. The cost for a t2.small instance after the free trial is $16.84/month.
+AWS’s free trial offers 12 months of EC2 with a 750-hour monthly cap. The free t2.micro instance provides 1 GiB of memory. For running multiple Hummingbot instances, we suggest upgrading to the t2.small instance with 2 GiB of memory, costing $16.84/month post-trial.
 
----
 
 **Advantages**:
-- Setup is relatively straightforward
-- Lowest-cost paid services
+- Straightforward setup
+- Competitive pricing
 
 **Disadvantages**:
-- Free trial has limited hours per month and VM options
-- Requires (free) additional software for Windows
+- Limited free trial
+- Additional software required for Windows
 
-> Like GCP, AWS’s EC2 service is robust, reliable, and mostly intuitive. From a free trial perspective, AWS has the same limitations as GCP in not being able to run instances with greater memory; however, it has a significantly lower monthly cost for running an instance with equal specifications after the trial. For users that are planning on opening multiple instances or running Hummingbot over several months, the marginal cost savings on each instance each month can add up very quickly. Taken together, AWS EC2 is a strong choice to run Hummingbot on.
+> AWS EC2 is robust and intuitive. Its low long-term cost makes it ideal for intensive Hummingbot use.
 
 ## Microsoft Azure
 
-Microsoft Azure, formerly known as Windows Azure, was released in 2010 as a cloud computing service for building, testing, and deploying various types of applications and services via data centers managed by Microsoft. Since its release it makes up the forefront of the Microsoft Commercial Cloud, which spans from Azure to Office 365 Enterprise to new AI and Internet of Things initiatives. For Hummingbot users, the relevant offering we reviewed is the Azure Virtual Machine.
+Microsoft Azure, a comprehensive cloud service, offers Azure Virtual Machines for Hummingbot users.
 
-Setting up a [cloud server on Azure](https://azure.microsoft.com/en-us/free/) was a little more complicated than for other options. Several steps did not have valid defaults and advanced settings were displayed alongside required choices. This made the configuration process slightly unintuitive and led us into a key error, not creating the proper inbound ports, that prevented us from accessing the server during our first attempt. For Windows, it also requires the use of a third-party SSH software ([PuTTY is recommended](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)) in order to access the virtual machine, which adds additional access steps for some users.
+Setting up an [Azure server](https://azure.microsoft.com/en-us/free/) was more complex, with advanced settings alongside essential options. The setup requires third-party SSH software, like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), for Windows users.
 
 ![Connect to VM Instance Using PuTTY](./azure-ssh.png)
 
-Azure’s free trial, however, is the best among all four cloud providers surveyed. It comes with a 12-month, $200 free trial that improve upon its competitors in two ways: first, it does not require a card on file for the first month, and, second, it allows free trial users to select any specifications for its virtual machines. For the recommended 1 vCPU, 2 GB RAM, and sufficient temporary storage to operate multiple bots over longer time periods, Azure’s B1MS server is priced at
+Azure’s 12-month, $200 trial excels in terms, offering unrestricted virtual machine specifications without needing a card for the first month. For recommended specifications, the B1MS server costs $18.10/month.
 
- a highly competitive $18.10/month.
-
----
 
 **Advantages**:
-- Best free trial terms
-- Lower end of price range
+- Excellent trial terms
+- Competitive pricing
 
 **Disadvantages**:
-- More complicated setup
-- Requires (free) additional software for Windows
+- Complex setup
+- Additional software for Windows
 
-> With the combination of its free trial flexibility and affordable price point, Azure is one of the best in the game when it comes to total cost. Unfortunately, some of the setup isn’t as intuitive as other providers, and useful documentation is outside the main portal in Microsoft docs that users have to look for. However, with the Hummingbot installation guide recently updated to include detailed instructions, it checks in a strong option for users planning to run bots intensively.
+> Azure’s flexible trial and affordability, despite setup complexities, make it a strong choice for intensive bot operations.
 
 ## Digital Ocean
 
-Digital Ocean began in 2011 as a cloud infrastructure provider primarily focusing on developing multi-computer scaling applications. Starting in 2013, they became one of the first cloud-service providers to offer SSD-based virtual machines, and are now one of the world’s largest web-facing hosting companies. They also have a strong developer network that provides community resources, and is generally popular among more tech-savvy users. We examined Digital Ocean’s Virtual Engine for the purposes of operating Hummingbot.
+Digital Ocean, established in 2011, specializes in SSD-based virtual machines and is popular among tech-savvy users. We reviewed its Virtual Engine for Hummingbot operations.
 
-Using Digital Ocean to [create a cloud server](https://m.do.co/c/8e0adb75eb3f) was relatively simple and immediately offered optionality to run docker images in addition to Linux systems, providing multiple methods of accessing Hummingbot. It was simple to connect to the server from the listings page, and did not require any additional software for any operating systems.
-
-Disappointingly, Digital Ocean’s free trial is the least expansive of all competitors by far. Its default credit is only $10 for a free trial, which lasts only a month even for the low specifications needed to run Hummingbot. Even with the extended free trial link, Digital Ocean only provides $50, or less than half the duration of all its rivals. It does make up for it with the lowest price point in the long-run, at just $10/month in order to run a 1 vCPU, 2 GB RAM virtual machine.
+Setting up a [Digital Ocean server](https://m.do.co/c/8e0adb75eb3f) was straightforward, offering Docker and Linux system options. However, its free trial is limited, providing only $10 in credit for a month or $50 with an extended link.
 
 ![Create a VM, Choose the Specs](./digitalocean_setup.png)
 
-However, we also ran into a number of issues when running low-power Digital Ocean servers. The specifications which worked with other cloud hosts produced laggy and unstable VMs on Digital Ocean, whether using Docker images or a Linux machine, and the problems seemed to be inherent as they appeared before even downloading Hummingbot. We had to upgrade to the $20/month version in order to get the server stable enough to run bot instances, and even then the experience was less smooth than other options.
+We encountered performance issues with low-specification servers. For stable operations, upgrading to a $20/month plan was necessary.
 
----
 
 **Advantages**:
-- Easy to setup and use
-- Lower end price for paid services
+- Simple setup
+- Competitive long-term pricing
 
 **Disadvantages**:
-- Worst free trial terms
-- Prone to lag and errors
+- Limited trial
+- Performance issues at low specs
 
-> Although Digital Ocean has a simple setup system and the best pricing of any cloud service provider, it has a significantly shorter free trial, albeit with more flexibility than GCP or AWS. Unfortunately, Digital Ocean servers appear to have trouble running at low specs, which is a major drawback considering the minimal system requirements of Hummingbot. Because of this, we find it difficult to recommend for Hummingbot users without a previous preference for this particular platform.
+> Digital Ocean is user-friendly with the best long-term pricing. However, its limited trial and performance issues at low specifications make it less ideal for Hummingbot.
 
 ## Final Takeaways
 
-Below is a summary of our overall rankings for each of the four providers, as well as a comparison of their free trial offerings.
+Here's a summary of our rankings and a comparison of free trial offerings.
 
-### Key attribute rankings
+### Key Attribute Rankings
 
 | | GCP | AWS | MS Azure | Digital Ocean |
 |---|---|---|---|---|
-| **Ease of setting up instances** | Quick and easy to use | A few extra steps involved | Requires use of a guide | Fairly straightforward |
-| **Cost of recommended instance** | $21.50/month | $16.84/month | $18.10/month | $20.00/month |
-| **Free trial terms** | Long duration but limited | Long duration but limited | Slightly shorter but unrestricted | Much shorter but unrestricted |
+| **Ease of Setting Up Instances** | Quick and user-friendly | A few extra steps | Guide required | Straightforward |
+| **Cost of Recommended Instance** | $21.50/month | $16.84/month | $18.10/month | $20.00/month |
+| **Free Trial Terms** | Long but limited | Long but limited | Shorter but unrestricted | Shortest but flexible |
 
-### Free trial comparison
+### Free Trial Comparison
 
 | | GCP | AWS | MS Azure | Digital Ocean |
 |---|---|---|---|---|
 | **Duration** | 12 months | 12 months | 12 months | ~3 months |
 | **Credits** | $300 | N/A | $200 | $50 |
-| **Limitations** | Only 0.6 GB RAM | Only 1 GB RAM, max usage of 750 hours/month | Access to all resources | Access to all resources |
+| **Limitations** | Only 0.6 GB RAM | Only 1 GB RAM, 750 hours/month | All resources accessible | All resources accessible |
 
-Given that each cloud service provider has its own strengths and weaknesses, we find that different platforms are better for different types of users. For Hummingbot operators with minimal technological background who don’t plan to use bots heavily, GCP seems the optimal choice. On the other hand, Azure offers the best free trial experience at a lower long-term price point for more tech-savvy users. AWS is the optimal choice for those planning to use Hummingbot intensely given its lowest long-term price point.
+Each provider has unique strengths, catering to different user needs. GCP is suitable for less tech-savvy users with minimal bot use, Azure for tech-savvy users with its great trial terms, and AWS for those planning intensive Hummingbot operations due to its cost-effectiveness.
 
-Regardless of choice, however, running bots in the cloud is a great way to keep Hummingbot running for longer and in more diverse ways. We hope readers who are interested but looking to avoid the hassle of installing and running Hummingbot locally will consider cloud servers as another option for algo-trading on the individual level.
+Cloud-based bot operations offer enhanced Hummingbot functionality, providing a viable alternative to local installations for individual algo-trading.
 
 ---
