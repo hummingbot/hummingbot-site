@@ -10,7 +10,7 @@ tags:
 
 # Top Beginner Misconceptions about Market Making
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 **by Kyle Mizui**
 

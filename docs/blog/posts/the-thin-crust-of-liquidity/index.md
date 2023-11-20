@@ -12,7 +12,7 @@ tags:
 
 ### The role of market makers and importance of liquidity in the crypto industry
 
-![](./cover.jpeg)
+![](./cover.webp)
 
 
 **Eric Noll** was getting frustrated. It was November 2011, and the senior Nasdaq executive was struggling to explain to a mostly disinterested House of Representatives panel why the changing stock exchange landscape was wreaking havoc for smaller public companies:

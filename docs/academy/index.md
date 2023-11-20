@@ -68,7 +68,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/exchange-types-explained-clob-rfq-amm/cover.png)](/blog/exchange-types-explained-clob-rfq-amm/)
+-   [![](/blog/exchange-types-explained-clob-rfq-amm/cover.webp)](/blog/exchange-types-explained-clob-rfq-amm/)
 
     ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
 
@@ -76,7 +76,7 @@ hide:
 
     ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
 
--   [![](/assets/brand/hummingbot.png)](/blog/hummingbot-whitepaper/)
+-   [![](/blog/hummingbot-whitepaper/cover.webp)](/blog/hummingbot-whitepaper/)
 
     ### [Hummingbot Whitepaper](/blog/hummingbot-whitepaper/)
 
@@ -98,7 +98,7 @@ hide:
 
     ### [Demystifying Liquidity Mining Rewards](/blog/demystifying-liquidity-mining-rewards/)
 
--   [![](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/cover1.jpg)](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
+-   [![](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/cover1.png)](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
     ### [Introducing Liquidity Mining: A Marketplace For Market Makers](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
@@ -120,7 +120,7 @@ hide:
 
     ### [Tips for Handling Different Market Conditions](/blog/tips-for-handling-different-market-conditions/)
 
--   [![](/blog/top-beginners-top-misconceptions-about-market-making/cover.jpg)](/blog/top-beginner-misconceptions-about-market-making/)
+-   [![](/blog/top-beginners-top-misconceptions-about-market-making/cover.webp)](/blog/top-beginner-misconceptions-about-market-making/)
 
     ### [Top Beginner Misconceptions about Market Making](/blog/top-beginner-misconceptions-about-market-making/)
 

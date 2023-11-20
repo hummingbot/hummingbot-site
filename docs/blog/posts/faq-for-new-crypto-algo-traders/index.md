@@ -10,68 +10,58 @@ tags:
 
 # FAQ for New Crypto Algo Traders
 
-![cover](cover.jpeg)
+![cover](cover.webp)
 
-In this post, we put together some helpful Q&A resources for **developers** who want to dip their toes into crypto algo trading, as well as **traders** who have trading experience but little to no programming skills.
+In this post, we've compiled helpful Q&A resources for **developers** interested in exploring crypto algo trading and **traders** with experience in trading but limited programming knowledge.
 
 <!-- more -->
 
-### What is algo trading?
+### What is Algo Trading?
 
-Algo trading is the process of using computer programs to automatically execute trades based on a predefined set of rules, called algorithms, with the goal to generate profits at high speed and high frequency.
+Algo trading involves using computer programs to automatically execute trades based on predefined rules, or algorithms. Its objective is to generate profits at a high speed and frequency. The low barriers to entry, including accessible exchange APIs, abundant free tutorials and documents, modest hardware requirements, and a 24/7 market, make algo trading in the crypto realm increasingly popular.
 
-Due to its low barrier to entry from easily accessible exchange APIs, sufficient supplies of free tutorials and documents, reasonable hardware requirements, and an around-the-clock market, algo trading in crypto is attracting more people than ever who are interested in and curious about how this all works.
+### Advantages of Algo Trading
 
-### What are the advantages of algo trading?
+The primary advantage of algo trading is its ability to operate continuously, 24/7. Automated bots don’t tire, and the crypto market never closes. However, this doesn’t mean you can leave your bot unattended indefinitely. Bugs or incorrect rule setups need regular monitoring and adjustments.
 
-One of the major advantages of algo trading is that it can execute orders 24/7, non-stop. Bots won’t get tired, and the crypto market never closes. That being said, it doesn’t mean you can let your bot run completely without human intervention.  If you have a bug in the program or setup your rules incorrectly, the computer program will not know and it will continue to obediently and tirelessly trade away your assets in accordance with the flawed instructions while you sleep.  You need to constantly monitor and re-adjust your parameters from time to time.
+Speed is another significant advantage. While crypto trading bots may not match the ultra-fast speed of stock algo trading systems, they can still capitalize on fleeting profit opportunities faster than humans.
 
-Another advantage is high speed. Stock algo trading systems used by today’s institutions are able to place orders at a speed that’s more than 20 times faster than a blink of the eye (FYI, human eyeblink normally takes 300-400 milliseconds). Although not as fast as its BIG brother used for stock trading, crypto trading bots can still capture short-lived profit-making opportunities at a speed that humans can’t achieve without technological assistance.
+Algo trading also offers robust backtesting capabilities. Since trading strategies are predefined, users can test them with historical data simulations before investing real money.
 
-In addition, backtesting ability is also one of the unique benefits that algo trading can provide. Since rules are predefined, users can validate their strategies through simulations based on historical data before they invest a single cent.
+Importantly, computers operate without emotions, avoiding the irrational investment decisions often made by humans.
 
-More important, computers lack emotions, which is typically a source of weakness and leads to irrational investments from their human counterparts.
+### Disadvantages of Algo Trading
 
-### What are the disadvantages of algo trading?
+**Algo trading isn't suitable for everyone.**
 
-**Crypto algo trading is NOT for everyone.**
+One major hurdle is its technical complexity, requiring programming skills and a deep understanding of trading strategies and financial concepts. Ideally, a beginner in algo trading should have strong programming skills, trading experience, and financial knowledge.
 
-One of the biggest disadvantages of crypto algo trading is its relatively high technical barriers, which might not be beginner-friendly. It requires programming skills (or at least an understanding of certain programming languages) and a deep understanding of trading strategies and financial concepts. Thus, an ideal algo trading beginner would be someone who has either strong programming skills, or trading experience as well as finance knowledge, or both.
+Algo trading is also susceptible to risks like mechanical failures, system glitches, and bugs. Starting small and proceeding with caution is advisable.
 
-Another disadvantage of algo trading is that users cannot avoid risks introduced by mechanical failures, system glitches or bugs. Your bots may contain bugs that have not been previously identified. Your computer may crash and miss important orders. Your neighborhood may experience a sudden blackout, and you cannot even turn on the computer. So it’s generally a good idea to start small and be super careful.
+Additionally, algo trading can be more expensive than manual trading. Increased trading frequency leads to higher transaction fees, and there's also the need for quality hardware, stable internet, and potentially, cloud hosting and data feeds.
 
-And last but not least, algo trading might incur higher costs than manual trading. Increased trade frequency leads to increased trading fees and costs.  You will also need to invest in infrastructure: high-quality hardware as well as fast and stable internet connection are part of the minimal requirement. For increased reliability and to avoid your computer taking on a side hustle of acting as an oven in your house, you may eventually want to host your trading on the cloud, leading to additional recurring costs.  In addition, you may want to purchase data feeds at some point in order to improve your strategies and backtesting. In algorithmic trading, data is gold, and it’s not free.
+### Choosing Trading Pairs
 
+Choosing cryptocurrency pairs for trading is subjective. It can involve trading favorite coins to increase holdings, observing price movements for opportunities, or even trading less favored coins for shorting. Patience, along with trial and error, is key, always keeping specific goals and strategies in mind.
 
-### How to choose which pairs to trade?
+### Creating Your Own Bots
 
-Less experienced traders may also wonder how to pick cryptocurrency pairs to trade. This is very subjective. You can trade your favorite coins with a goal to gain more of your favorite coins, you can observe price movements at a few different exchanges and try to spot opportunities, and you can also trade the coins you dislike in order to profit from shorting. It involves a lot of patience, and trials and errors. The key is to always have a goal and certain strategies in mind.
+Developers with a strong grasp of their preferred trading strategies can consider building their own trading bots. However, this task is time-consuming and challenging, especially in a sector with unstable infrastructure. Deciding whether to build or use an existing bot requires a cost-benefit analysis.
 
+Here are some useful resources for bot building:
 
-### Should I create my own bots?
-
-Equipped with an in-depth understanding of their favorite trading strategies, developers can build their own trading bots in their favorite languages.
-
-However, writing a bot is time-consuming and not easy. While creating the strategy itself may be straight forward, the challenge may come in creating reliability when the sector's infrastructure is unstable (exchange feeds/APIs go down all the time, trading on DEXs is subject to creating and handling blockchain transactions).  A lot of developers have told us that they were trying to create a bot themselves but couldn't make it work. Therefore, whether to write your own bot or try an existing one involves a cost-benefit analysis.
-
-Here is a list of useful resources to get you started with bot building:
-
-* [Let’s write a cryptocurrency bot](../what-is-market-making/index.md): This is a detailed walkthrough of how the author built his crypto trading bot.
-
-* [How to build a bot in R?](https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1): Be careful that the strategy demonstrated in this article using RSI might not be working due to oversimplification.
-
+* [Let’s write a cryptocurrency bot](../what-is-market-making/index.md): A detailed walkthrough of building a crypto trading bot.
+* [How to build a bot in R?](https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1): An article demonstrating a strategy using RSI, though it may be oversimplified.
 * [Get historical data from coinmarketcap](https://github.com/Alescontrela/coinmarketcap-history)
 
-### Should I use an existing bot?
+### Using Existing Bots
 
-An existing bot, especially an open-source one, can be a great alternative for developers who want to try algo trading. It definitely saves developer time and provides a base from which developers can tweak and customize.
+Using an existing, especially open-source, bot can be a good alternative. It saves time and serves as a customizable base.
 
-In addition to user experience considerations, using existing bots entails various risks. You might easily lose money if you make a wrong bet, set wrong parameters, or even do not truly understand the algorithms employed by the bot.
+However, there are risks, such as losing money due to incorrect settings or a lack of understanding of the bot's algorithms.
 
-Since we're designing Hummingbot to enable anyone to run a crypto market making bot, a simple, intuitive user experience is one of our core goals. More important, by focusing on a relatively low-risk strategy called **cross-exchange market making**, we believe that Hummingbot will be an easy start even for novice traders.
+At Hummingbot, we aim to enable anyone to run a crypto market making bot with a focus on a low-risk strategy called **cross-exchange market making**. This approach offers a more accessible start for novice traders.
 
-### How much do I need to get started?
+### Starting Capital
 
-Given the current market environment, the barrier to entry is particularly low for new crypto traders. If you are not comfortable investing a load of hard-earned money at first, starting with $100 will work.
-
-Having said that, transaction and withdrawal fees may eat into profits (as %) and might materially impact results given smaller and smaller trading amounts.
+The current market environment allows for a low entry barrier for new traders. Starting with as little as $100 is feasible, though transaction and withdrawal fees can significantly impact profits on smaller amounts.

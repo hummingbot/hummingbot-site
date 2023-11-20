@@ -11,7 +11,7 @@ tags:
 
 # Liquidity Mining Whitepaper
 
-![](cover.png)
+![](cover.webp)
 
 This summary provides an overview of the [Liquidity Mining whitepaper](../../../liquidity-mining.pdf), which introduced a novel approach to liquidity provision in digital asset markets. 
 

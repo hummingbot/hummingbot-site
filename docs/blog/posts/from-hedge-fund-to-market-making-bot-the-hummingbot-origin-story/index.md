@@ -10,7 +10,7 @@ tags:
 
 # From Hedge Fund To Market Making Bot: The Hummingbot Origin Story
 
-![](./cover.jpg)
+![](cover.webp)
 
 
 Here's the story of how we created one of the first tokenized hedge funds, shut it down after reaching an SEC settlement, and are now building an open source market making bot!

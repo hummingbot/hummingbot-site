@@ -8,7 +8,7 @@ categories:
 
 # Epoch 5 HBOT Voter's Guide
 
-![](cover.png)
+![](cover.webp)
 
 Hummingbot Foundation's quarterly [Polls](https://hummingbot.org/governance/polls/) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
 

@@ -11,7 +11,7 @@ tags:
 
 # Commands and Configs - Part 1
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 Starting to use **Hummingbot** can be daunting at first, and you might feel a bit overwhelmed by the CLI interface or by the amount of information options available to you.
 

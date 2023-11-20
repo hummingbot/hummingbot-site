@@ -16,24 +16,23 @@ tags:
 
 In the fictional world of Dune, the most precious substance in the universe is the spice. The spice extends life, expands consciousness, and is vital to space travel.
 
-Likewise, but in the very real world of liquidity mining, the most precious substance in the market is the order. The order allows trading, enables market making, and is vital to liquidity rewards.
+Likewise, in the very real world of liquidity mining, the most precious substance in the market is the order. The order allows trading, enables market making, and is vital to liquidity rewards.
 
 <!-- more -->
 
 *Liquidity rewards are what market makers earn for providing liquidity to trading pairs at a certain depth on an order book.*
 
-In Dune, it is an absolute truth that *the spice must flow*. This happens to be a useful analogy for liquidity mining. If you want meaningful rewards, then *the orders must flow*. Continuously. Let’s call this *order flow*.
+In Dune, it is an absolute truth that *the spice must flow*. This serves as a useful analogy for liquidity mining. If you want meaningful rewards, then *the orders must flow* continuously. Let’s call this *order flow*.
 
-And we’re not just talking about any orders. The orders must meet the criteria for earning liquidity rewards. Let’s call these *mining orders*.
+And we're not just talking about any orders. The orders must meet the criteria for earning liquidity rewards. Let’s call these *mining orders*.
 
-This brings us to our challenge: it is surprisingly difficult to keep these orders flowing. As you may have realised, it takes practice and persistence to maintain a healthy order flow. Many obstacles can get in the way, and when they do, they *will* disrupt your rewards. But there is hope!
+This brings us to our challenge: it is surprisingly difficult to keep these orders flowing. As you may have realized, it takes practice and persistence to maintain a healthy order flow. Many obstacles can get in the way, and when they do, they *will* disrupt your rewards. But there is hope!
 
+Let's examine some of these obstacles through the eyes of Marvin Miner. Marvin has some experience with market making but is relatively new to liquidity mining. He has prepared the groundwork, deployed a couple of Hummingbot instances, and configured them to trade on markets with active campaigns.
 
-Let us examine some of these obstacles through the eyes of Marvin Miner. Marvin has some experience with market making, but is relatively new to liquidity mining. He has prepared the groundwork, deployed a couple of Hummingbot instances, and configured them to trade on markets with active campaigns.
+Marvin is attacking liquidity mining with vigor, but little does he know that the world is conspiring against him. From bot misconfiguration to market volatility to API errors — it seems like every day, Marvin encounters issues that disrupt his rewards. And he is not happy about this *at all*.
 
-Marvin is attacking liquidity mining with vigor, but little does he know that the world is conspiring against him. From bot misconfiguration, to market volatility, to API errors — it seems like every day, Marvin encounters issues that disrupt his rewards. And he is not happy about this *at all*.
-
-So does Marvin manage to overcome these problems?
+So, how does Marvin manage to overcome these problems?
 
 **Spoiler**: it all works out in the end. Marvin discovers three steps to increasing his order flow:
 
@@ -43,14 +42,14 @@ So does Marvin manage to overcome these problems?
 
 It’s as simple as it sounds, but the devil is in the detail.
 
-## Step 1: Ensure mining orders are valid
+## Step 1: Ensure Mining Orders are Valid
 
 Marvin understands that mining orders must meet certain criteria to be eligible for rewards.
 
 As a quick summary, liquidity rewards are weighted on three factors:
 
 1. **Time** — The age and frequency of the order.
-2. **Spread** — The order depth, i.e. the distance of the order from the mid-price.
+2. **Spread** — The order depth, i.e., the distance of the order from the mid-price.
 3. **Size** — The amount of the order.
 
 The higher the weighting, the higher the rewards earned per minute. The precise formula is explained in the guide to [demystifying liquidity mining rewards](../demystifying-liquidity-mining-rewards/index.md), a highly recommended read.
@@ -59,11 +58,11 @@ Marvin configured his bots to meet the above criteria, but despite this, his ord
 
 ### Time
 
-Marvin studied Hummingbot’s [strategy config docs](../../../strategies/pure-market-making.md) and carefully configured his bots. He had decided to keep [max_order_age](../../../strategy-configs/max-order-age.md) at the default 1800 (seconds, i.e. 30 minutes). This happens to be the maximum age allowed for mining orders; anything older than that is considered ‘stale’ and ignored by Hummingbot Miner’s Rewards Engine.
+Marvin studied Hummingbot’s [strategy config docs](../../../strategies/pure-market-making.md) and carefully configured his bots. He had decided to keep [max_order_age](../../../strategy-configs/max-order-age.md) at the default 1800 (seconds, i.e., 30 minutes). This happens to be the maximum age allowed for mining orders; anything older than that is considered ‘stale’ and ignored by Hummingbot Miner’s Rewards Engine.
 
 Marvin had also configured [order_refresh_time](../../../strategies/pure-market-making.md) to 1800 (seconds), and had left [order_refresh_tolerance](../../../strategy-configs/order-refresh-tolerance.md) at the default 0 (%). Marvin understood that this combination of parameters would only refresh his orders if the asset’s price changed or if the order age reached 30 minutes, whichever occurred first. This meant that his orders were not being needlessly refreshed, which seemed optimal.
 
-The problem was that this combination resulted in a delay when an order remained for 30 minutes and was only recreated afterwards. If Rewards Engine happened to be taking a snapshot during this window, it would find a slightly stale or missing order. This happened often enough to impact his order flow.
+The problem was that this combination resulted in a delay when an order remained for 30 minutes and was only recreated afterward. If the Rewards Engine happened to be taking a snapshot during this window, it would find a slightly stale or missing order. This occurred often enough to impact his order flow.
 
 #### Solution
 
@@ -71,7 +70,7 @@ Marvin configured [order_refresh_time](../../../strategies/pure-market-making.md
 
 As a failsafe, Marvin configured [max_order_age](../../../strategy-configs/max-order-age.md) to 300 (seconds) as well, in case his orders were not refreshed for any reason (for example, the asset price staying the same).
 
-This new combination ensured Marvin’s orders were refreshing well before the 30 minute age limit, which prevented them from going stale and missing out on rewards (unless an error occurred, which we’ll address later).
+This new combination ensured Marvin’s orders were refreshing well before the 30-minute age limit, which prevented them from going stale and missing out on rewards (unless an error occurred, which we’ll address later).
 
 ### Spread
 
@@ -99,9 +98,9 @@ The last weighting factor for liquidity rewards is order size, or order amount. 
 
 Marvin regularly placed small mining orders, but that did not make his orders invalid. It did, however, often yield negligible rewards, which did not impact his order flow, in itself. In other words, Marvin was able to maintain a steady stream of valid mining orders, regardless of their order size.
 
-### Order tracking
+### Order Tracking
 
-To ensure sure that his mining orders were valid at all times, Marvin kept regular watch of Hummingbot’s [Rewards](https://miner.hummingbot.io/dashboard/rewards?ref=blog.hummingbot.org) page. This showed his active campaigns and the rewards he had earned for the previous snapshots (with a 30-minute delay). Marvin regularly drilled down to individual reward snapshots on the Markets page to study his earnings in detail.
+To ensure that his mining orders were valid at all times, Marvin kept regular watch of Hummingbot’s [Rewards](https://miner.hummingbot.io/dashboard/rewards?ref=blog.hummingbot.org) page. This showed his active campaigns and the rewards he had earned for the previous snapshots (with a 30-minute delay). Marvin regularly drilled down to individual reward snapshots on the Markets page to study his earnings in detail.
 
 ![orders](image_2.jpg)
 
@@ -109,7 +108,7 @@ If a bot was not showing on the Rewards page, Marvin would check Hummingbot’s 
 
 To confirm that his orders were actually placed on the exchange, Marvin would often log into his exchange’s website or app and browse to the trading console for his campaigns. This would show his orders on the order book, in real-time.
 
-If, after all of this, anything looked amiss — for example, new bots placing orders on the exchange, but not appearing on the order tracker — then Marvin knew something was wrong. When Marvin couldn’t figure it out the problem, he knew to contact the [Hummingbot Support Team](https://support.hummingbot.io/?ref=blog.hummingbot.org) to help him investigate.
+If, after all of this, anything looked amiss — for example, new bots placing orders on the exchange, but not appearing on the order tracker — then Marvin knew something was wrong. When Marvin couldn’t figure out the problem, he knew to contact the [Hummingbot Support Team](https://support.hummingbot.io/?ref=blog.hummingbot.org) to help him investigate.
 
 ## Step 2: Create as many mining orders as possible
 
@@ -125,7 +124,7 @@ More painfully, as a way of [managing inventory risk](../what-is-inventory-risk/
 
 #### Solution
 
-Marvin learned that maximising mining orders is more challenging than it seems. He went back to [first principles](https://en.wikipedia.org/wiki/First_principle?ref=blog.hummingbot.org),  reviewed several trading scenarios, and considered:
+Marvin learned that maximizing mining orders is more challenging than it seems. He went back to [first principles](https://en.wikipedia.org/wiki/First_principle?ref=blog.hummingbot.org), reviewed several trading scenarios, and considered:
 
 1. Should he have mining orders for that scenario?
 2. If the answer was yes, did he have those orders in place?
@@ -139,7 +138,7 @@ He reasoned that the rewards he earned would compensate for any losses he incurr
 
 Armed with this new focus, Marvin configured [filled_order_delay](../../../strategy-configs/filled-order-delay.md) to a more conservative 300 (seconds), thereby decreasing the delay to five minutes.
 
- Along the same lines, he disabled [ping_pong](../../../strategy-configs/ping-pong.md) so as to simultaneously place orders on both sides of the order book. He then said a short prayer to the market gods, because there is no Hummingbot configuration for that.
+Along the same lines, he disabled [ping_pong](../../../strategy-configs/ping-pong.md) so as to simultaneously place orders on both sides of the order book. He then said a short prayer to the market gods, because there is no Hummingbot configuration for that.
 
 Lastly, Marvin reviewed his campaign budgets, then instructed his bots to stick to the budgeted amounts. Specifically, he configured [inventory_skew](../../../strategy-configs/inventory-skew.md) and [balance_limit](../../../global-configs/balance-limit.md) to buy and sell his desired inventory percentages, maintain a buffer of funds, and adhere to global balance limits. This took a fair bit of trial and error, but when it all came together, it bumped up his order flow, and, as a bonus, helped him [manage inventory risk](../what-is-inventory-risk/index.md).
 
@@ -147,9 +146,9 @@ Lastly, Marvin reviewed his campaign budgets, then instructed his bots to stick 
 
 In the previous steps, Marvin reviewed his liquidity mining setup and refactored it to ensure that:
 
-1. His mining orders were always usually valid, and
+1. His mining orders were always valid, and
 2. He was creating as many mining orders as possible.
 
 As a result, Marvin significantly increased his order flow, which ultimately earned him more rewards.
 
-In the next instalment, we’ll look at the third and final step: preventing mining blockers. We’ll discover new obstacles that Marvin encounters, and find out what he does to overcome them. Stay tuned!
+In the next installment, we’ll look at the third and final step: preventing mining blockers. We’ll discover new obstacles that Marvin encounters, and find out what he does to overcome them. Stay tuned!

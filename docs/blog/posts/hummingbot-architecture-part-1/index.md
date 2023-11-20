@@ -11,7 +11,7 @@ tags:
 
 # Hummingbot Architecture - Part 1
 
-![](cover.png)
+![](cover.webp)
 
 ## Introduction
 

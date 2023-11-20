@@ -90,7 +90,7 @@ Once you've cloned the repository and navigated into its root directory, it's ti
 
 ```bash
 cd dashboard
-make env create
+make env_create
 ```
 
 ### 4. Activate the Environment

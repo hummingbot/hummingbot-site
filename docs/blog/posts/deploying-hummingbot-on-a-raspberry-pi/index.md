@@ -8,125 +8,123 @@ tags:
   - Running Hummingbot
 ---
 
-# Deploying Hummingbot on a Raspberry Pi 
+# Deploying Hummingbot on a Raspberry Pi
 
-![cover](cover.png)
+![cover](cover.webp)
 
-*First of all, we owe much of the content of this blog post to one of our community members (@Punkhead) on our discord, who experimented with running Hummingbot on a Raspberry Pi and managed to successfully get it working!  He also published a post on Reddit ([Hummingbot on RPI4, how-to
-](https://www.reddit.com/r/Hummingbot/comments/h83lhv/hummingbot_on_rpi4_howto/)) discussing how he did it.*
- 
+*Firstly, we owe much of this blog post's content to one of our community members, @Punkhead, on our Discord. He experimented with running Hummingbot on a Raspberry Pi and achieved success! He also shared his experience in a Reddit post: [Hummingbot on RPI4, how-to](https://www.reddit.com/r/Hummingbot/comments/h83lhv/hummingbot_on_rpi4_howto/).*
 
 <!-- more -->
 
-### Why run Hummingbot on a Raspberry Pi?
- 
-For users who want to run Hummingbot on a long-term basis, we generally recommend deploying Hummingbot on a cloud server.  Since Hummingbot is an automated trading bot trading on a market that is always open, you would typically want to run it 24/7, uninterrupted.  A cloud server works well because you can create a small server instance to discreetly run Hummingbot.  The downside of running Hummingbot on your local computer is that there are risks of interruption: it may have to compete for resources with other applications, any other application that crashes your system would also effectively crash Hummingbot, and you may simply forget that you’re running Hummingbot and accidentally close terminal or turn off your computer (e.g. folding your laptop closed).  By running Hummingbot on a cloud server, you have a dedicated machine that is only interrupted if you deliberately command it.
- 
+### Why Run Hummingbot on a Raspberry Pi?
 
-But now that we (@Punkhead) figured out a way to run Hummingbot on a Raspberry Pi, this might have to be the new go to way of operation!  Running Hummingbot on a Raspberry Pi has the same main benefit of running it on a cloud server: having a dedicated machine for Hummingbot.  Raspberry Pi’s are relatively low cost, easy to set up, energy-efficient since Pi uses about 4W which is 75 times less than desktop PC, and, of course, don’t have the monthly charges associated with a cloud provider.  These small but mighty pieces of hardware are more than sufficient to run even multiple instances of Hummingbot.
+While we generally recommend deploying Hummingbot on a cloud server for long-term usage, running it on a Raspberry Pi presents a compelling alternative. Cloud servers are ideal for 24/7 operation in a market that never sleeps. They offer dedicated resources and reduced risks of system crashes. However, they come with monthly costs and might not be ideal for everyone.
 
-Of course, there are instances where a cloud server would still be better, e.g. if your internet connection or power may not be reliable.  However, for a majority of folks, this may not be a problem so a Raspberry Pi may be preferred versus a cloud server.
+Running Hummingbot on a Raspberry Pi offers similar benefits to a cloud server, such as having a dedicated machine. Raspberry Pis are cost-effective, easy to set up, energy-efficient, and incur no recurring fees. These devices can reliably run multiple Hummingbot instances. Of course, if you have an unreliable internet connection or power supply, a cloud server might still be preferable.
 
-
-### Required equipment
+### Required Equipment
 
 ![](requirement.JPG)
- 
-To build a Raspberry Pi, you need the following:
-* **Raspberry Pi board**: for our testing, we used a Raspberry Pi 4 with 8 GB RAM
-* **SD card**: the Raspberry Pi’s data store.  A reader/USB adapter may be required to connect to your computer, to load the OS if you haven’t purchased a preloaded SD card
-* **USB-C power supply**
-* **Mini-HDMI display cable**: just for setup
-* **Case**: optional, but recommended
- 
-Not having ever built a Raspberry Pi before, it sounded like a cool idea to timelapse video to document the build process.  However, it turned out to be disappointingly “not so cool”; the “build” itself was so easy that the video ended up being mostly just unwrapping parts.  Nonetheless, here’s that video: https://vimeo.com/440892396.
-You can easily find parts on Amazon.com or shops referenced on [Raspberry Pi’s](https://www.raspberrypi.org/) site.  There are all-in-one kits, such as [this one](https://www.amazon.com/gp/product/B08956P7LC/).  But it’s just as easy to buy individual components, which also gives you more flexibility on customizing (e.g. choosing a different case).
+
+Building a Raspberry Pi requires:
+
+- **Raspberry Pi Board**: We used a Raspberry Pi 4 with 8 GB RAM for testing.
+- **SD Card**: Acts as the data store for the Raspberry Pi. A reader/USB adapter is needed if the SD card isn't preloaded with an OS.
+- **USB-C Power Supply**
+- **Mini-HDMI Display Cable**: Necessary only for setup.
+- **Case**: Optional, but recommended.
+
+Purchasing components is straightforward on Amazon.com or through retailers listed on [Raspberry Pi’s website](https://www.raspberrypi.org/). While all-in-one kits are available, buying individual components allows for greater customization.
 
 ![](component.JPG)
 
+### System Requirements
 
-### System requirements
+Our tests showed that each Hummingbot instance requires approximately 200 MB of RAM and 600-650 MB of hard drive space. Thus, even Raspberry Pis with less than 8 GB RAM are suitable. Punkhead successfully runs 17 instances on his Raspberry Pi!
 
-In our testing, we found that each Hummingbot instance requires approximately 200mb of RAM per instance and approximately 600-650mb of hard drive space.  Therefore, the operation should be possible even on Raspberry Pi’s with less RAM than the 8 GB we used for testing.
- 
-Punkhead is actually running 17 instances on his Raspberry Pi!
-
-The most resource intensive part of running Hummingbot is compiling from source, which ties up the CPU at 100% for a few minutes.  But since you only do this on installation and when updating Hummingbot versions, this is not really an issue.
-
+The most resource-intensive part is compiling from source, which utilizes 100% CPU for a few minutes during installation or updates.
 
 ### Installing Hummingbot
-The only way to currently install Hummingbot on a Raspberry Pi is by downloading the source files from github and compiling and running from source.  This adds a few more steps than downloading binaries or running from Docker, but below we have provided a step-by-step guide to walk you through the process.
 
-We plan on creating a Docker image version of Hummingbot in the future that will make operation much easier, but for the time being, you can install from source.
+Currently, Hummingbot installation on a Raspberry Pi is only possible by compiling from source. Although this process is more complex than using binaries or Docker, the following guide will assist you.
 
-### Preparing the Raspberry Pi for installation
-** Step 1. Install 64-bit Raspberry Pi OS **
+### Preparing the Raspberry Pi for Installation
 
-To run Hummingbot on a Raspberry Pi, a 64-bit OS is required. Raspberry Pi has a beta 64-bit version of the Raspberry Pi OS. You can download [here](https://www.raspberrypi.org/forums/viewtopic.php?t=275370).
- 
-** Step 2. Load the image file to your Raspberry Pi’s SD card **
+#### Step 1: Install 64-bit Raspberry Pi OS
 
-Raspberry Pi has an easy to follow [guide](https://www.raspberrypi.org/documentation/installation/installing-images/) with alternatives on how to load the SD card with a Raspberry Pi OS from different operating systems.  In my case, I [loaded the OS using Mac OS](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md) using the built in command line tool `diskutil`.
+A 64-bit OS is required to run Hummingbot. Raspberry Pi offers a beta 64-bit version of their OS, available for download [here](https://www.raspberrypi.org/forums/viewtopic.php?t=275370).
 
-** Step 3. Boot your Raspberry Pi **
+#### Step 2: Load the Image File to Your SD Card
 
-Insert your SD card into the Raspberry Pi and plug in the power source. From there, the first launch options will be prompted. 
-Sure, here's the formatted markdown:
+Follow Raspberry Pi's [installation guide](https://www.raspberrypi.org/documentation/installation/installing-images/) for detailed instructions. For Mac OS users, [this guide](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md) explains how to load the OS using the `diskutil` command line tool.
 
+#### Step 3: Boot Your Raspberry Pi
+
+Insert the SD card and connect the power source to boot. Follow the prompts for initial setup.
 
 #### Install Hummingbot Dependencies
 
-**Step 1. Open the Raspberry Pi terminal**
+##### Step 1: Open the Terminal
 
-In the top left corner of the desktop, there is a shortcut that opens the terminal.
+Access the terminal via the shortcut in the top left corner of the desktop.
 
-**Step 2. Install Miniforge**
-- Download Miniforge from GitHub
+##### Step 2: Install from Source
 
-```bash
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
-sh Miniforge3-Linux-aarch64.sh
+Update the repository and install important dependencies:
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt-get install build-essential libssl-dev libffi-dev gcc python3-dev python-dev python3.7 -y
 ```
 
-- Install Python 3.7 
-
-```bash
-sudo apt-get install python3.7
+Install Miniforge:
+```
+wget https://github.com/conda-forge/miniforge/releases/download/4.11.0-4/Miniforge3-4.11.0-4-Linux-aarch64.sh
+sh Miniforge3-4.11.0-4-Linux-aarch64.sh
 ```
 
-- Update the alternatives 
-
-```bash
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+Restart the terminal:
+```
+exec bash
 ```
 
-**Step 3. Log out and Log back in to enable `conda`**
+Install `conda-build`:
+```
+conda install conda-build
+```
 
-This will make the `conda` command available in shell / terminal.
+Clone the Hummingbot repository:
+```
+git clone https://github.com/hummingbot/hummingbot.git
+```
 
-#### Install pip dependencies
+!!! note
+    If you need to switch branches (ie. `development` branch) then after cloning the repository use the command `git checkout [branch_name]` to switch branches. For example, to switch to the development branch use `git checkout development`
 
-```bash
-# 1) Create a conda environment for Hummingbot
-conda create --name hummingbot
+Change directory into the Hummingbot folder:
+```
+cd hummingbot
+```
 
-# 2) Activate your conda environment 
+Run the `install` command:
+```
+./install
+```
+
+Activate the `conda` environment:
+```
 conda activate hummingbot
-
-# 3) Install the pip dependencies
-pip install pandas cython cachetools aiohttp ruamel.yaml eth_account aiokafka sqlalchemy binance python-binance ujson websockets signalr-client-aio web3 prompt_toolkit 0x-order-utils 0x-contract-wrappers eth_bloom pyperclip telegram python-telegram-bot jwt numpy mypy_extensions 
 ```
 
-#### Install, compile, and Run Hummingbot
+Clean your Hummingbot directory and then compile:
 
-```bash
-# 1) Clone the Hummingbot repo from Github
-git clone https://github.com/CoinAlpha/hummingbot.git
+```
+./clean && ./compile
+```
 
-# 2) Compile and clean your Hummingbot directory
-cd hummingbot && ./clean && ./compile 
+Launch Hummingbot:
 
-# 3) Run Hummingbot
+```
 ./start
 ```
 
@@ -136,15 +134,15 @@ And that’s it! Hummingbot should be up and running.
 
 ![Multiple Bots](multiple-bot.JPG)
 
-Similar to how you would run multiple bots when installing from source, you can just clone the Hummingbot repo to two different file folders, or just copy your clone to another folder. You then need to compile each instance separately, and you can launch each of them as separate processes.
+To run multiple bots, clone the Hummingbot repository into separate folders and compile each instance independently.
 
 **Running Multiple bot with tmux**
 
-Tmux is a terminal multiplexer, it means that you can open multiple sessions of Hummingbot from one installation. With Tmux you can easily switch between multiple Hummingbot instances by detaching them and reattaching them. Checkout this link for details on how to [Get started with Tmux.](https://linuxize.com/post/getting-started-with-tmux/)
+Tmux, a terminal multiplexer, allows the management of multiple Hummingbot instances from a single installation. Learn more about Tmux [here](https://linuxize.com/post/getting-started-with-tmux/)
 
-### Controlling Remotely using VNC Viewer
+### Remote Control with VNC Viewer
 
-SSH and VNC features are natively built into the Raspberry Pi and can easily be turned on in the Raspberry Pi configurations settings. By turning these on, you can access the Raspberry Pi from another computer by (1) using terminal to SSH, similar to how you would access a cloud server, or (2) using VNC to enable remote desktop access to the Raspberry Pi GUI. This is very convenient; after initial setup of the Raspberry Pi, you can simply unplug the monitor, keyboard and mouse, and just set the Raspberry Pi itself aside and just access it remotely going forward.
+The Raspberry Pi supports SSH and VNC, allowing remote control from other devices.
 
 ![SSH Pi](SSH-pi.JPG)
 
@@ -166,6 +164,6 @@ Select the menu in the top left corner of the screen then go to **Preferences** 
 
 **Step 2. Get your Raspberry Pi’s private IP address**
 
-Type `ifconfig` to get the IP address of your Raspberry Pi to enter into your VNC Viewer. For SSH, you can run `ssh pi@[ipaddress]`. The IP address is the `inet` address which is not the localhost IP address 127.0.0.1:
+Use`ifconfig` to find the IP address for VNC Viewer. For SSH, use `ssh pi@[ipaddress]`. The IP address is listed under `inet`, excluding localhost (127.0.0.1):
 
 ![Pi Private Address](pi-private-address.JPG)

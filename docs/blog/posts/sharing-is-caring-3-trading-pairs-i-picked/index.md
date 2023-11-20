@@ -10,7 +10,7 @@ tags:
 
 # Sharing is Caring: 3 Trading Pairs I Picked
 
-![cover](cover.png)
+![cover](cover.webp)
 
 *by Thomas Yit*
 

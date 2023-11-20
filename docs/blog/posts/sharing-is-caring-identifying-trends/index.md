@@ -11,7 +11,7 @@ tags:
 
 # Sharing is Caring: Identifying Trends
 
-![cover](cover.png)
+![cover](cover.webp)
 
 *by Thomas Yit*
 

@@ -11,7 +11,7 @@ tags:
 
 # Hummingbot vs Uniswap: Two Approaches to Liquidity
 
-![cover](cover.png)
+![cover](cover.webp)
 
 Since both Hummingbot and Uniswap are both open source projects that allow users to make money by providing liquidity, many people have asked how they compare to each other. 
 

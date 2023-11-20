@@ -12,7 +12,7 @@ tags:
 
 # Introducing the Celo Arbitrage Bot
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 
 ### TL;DR

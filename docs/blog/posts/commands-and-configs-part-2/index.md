@@ -11,7 +11,7 @@ tags:
 
 # Commands and Configs - Part 2
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 Welcome back to the Hummingbot Academy and the second part of the series of articles that will help you make the best use of your Hummingbot.
 

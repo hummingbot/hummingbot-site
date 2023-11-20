@@ -9,7 +9,7 @@ categories:
 
 # Launching USDC Payouts for Bounty Recipients
 
-![](cover.png)
+![](cover.webp)
 
 Since the inception of the Hummingbot Foundation, we have paid out **282 bounties to 92 unique developer wallets**. Bounties have been an unqualified success in leveraging the global developer community to maintain the Hummingbot codebase by fixing bugs and adding key components.
 

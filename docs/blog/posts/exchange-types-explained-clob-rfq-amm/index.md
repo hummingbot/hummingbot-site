@@ -10,7 +10,7 @@ tags:
 
 # Exchange Types Explained: CLOB, RFQ, AMM
 
-![cover](cover.png)
+![cover](cover.webp)
 
 Since Hummingbot is an open source bot platform that connects to many different exchanges, we have developed a deep understanding of the nuances between various exchange types.
 

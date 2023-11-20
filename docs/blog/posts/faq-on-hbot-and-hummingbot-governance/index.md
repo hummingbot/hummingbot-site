@@ -8,7 +8,7 @@ categories:
 
 # FAQ on HBOT and Hummingbot Governance
 
-![](cover.jpg)
+![](cover.webp)
 
 Ever since the birth of the Hummingbot ecosystem, we've strived to ensure a decentralized approach to governance and maintenance of the Hummingbot codebase. Let's take a brief journey through some key milestones:
 

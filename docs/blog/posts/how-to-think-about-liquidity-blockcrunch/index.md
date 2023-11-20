@@ -8,68 +8,59 @@ tags:
   - Podcast Appearances
 ---
 
-
 # How to Think about Liquidity - BlockCrunch
 
-![Alt text](cover.jpg)
+![Alt text](cover.webp)
 
-This post is adapted from a [BlockCrunch podcast](https://blockcrunch.libsyn.com/dissecting-liquidity-market-making-in-crypto-michael-feng-hummingbot) with Michael Feng, co-founder of Hummingbot.
+This post is adapted from a [BlockCrunch podcast](https://blockcrunch.libsyn.com/dissecting-liquidity-market-making-in-crypto-michael-feng-hummingbot) featuring Michael Feng, co-founder of Hummingbot.
 
-### Why is liquidity beneficial for exchanges and token projects?
-One of the major benefits of liquidity is **price discovery**: knowing that the market price is fair. When you buy shares of a liquid asset like Apple shares from Robinhood or E*TRADE, you know that if you change your mind, you can sell it back without incurring a lot of losses. On the other hand, when the market is very illiquid such as in long-tail crypto markets, you often see situations where the buy price is 20% higher than the sell price, where the gap is called the bid-ask spread.
-
+### Why is Liquidity Beneficial for Exchanges and Token Projects?
+Liquidity offers a major benefit of **price discovery**: ensuring market prices are fair. When purchasing liquid assets like Apple shares from platforms like Robinhood or E*TRADE, you're assured that reselling them won't lead to significant losses. Conversely, in less liquid markets, such as certain crypto markets, you might encounter a situation where the buying price is 20% higher than the selling price, a phenomenon known as the bid-ask spread.
 
 <!-- more -->
 
-This hurts issuers in different ways:
-1. It’s hard for issuers to raise new capital if there is a gigantic big-ask spread in the secondary market.
-2. If their users need to buy the asset in order to use it, it raises the price they need to pay because there is not much supply.
+This discrepancy impacts issuers in various ways:
+1. Raising new capital becomes challenging due to the vast bid-ask spread in secondary markets.
+2. If users require the asset for usage, they face higher costs due to limited supply.
 
-These benefits of liquidity apply to every market. For newly listed tokens, it’s especially difficult because a lot of people are looking to transact; existing investors are looking to sell and new investors are looking to buy. If the market is illiquid, it reduces market confidence that the current price is fair. Furthermore, with a 20% bid-ask spread, it means that immediately after you buy an asset, you're already down 20% because your sell price is 20% lower. These factors discourage market participants from trading the asset.
+Liquidity's advantages are universal. For new tokens, liquidity is crucial as investors seek to buy or sell. Illiquidity undermines market confidence in fair pricing. A 20% bid-ask spread, for instance, means a loss of 20% in value immediately upon purchase. This situation deters trading activity.
 
-### What are the negative effects of illiquidity?
-When you list an asset but you don't set up the market making infrastructure needed to make it liquid, it creates a non-functioning market and depresses the asset price. I experienced this firsthand when I worked in finance and wrote about it in a prior [blog post](../the-thin-crust-of-liquidity/index.md).
+### What are the Negative Effects of Illiquidity?
+Launching an asset without sufficient market-making infrastructure leads to a dysfunctional market and depressed asset prices. My experience in finance, which I detailed in a previous [blog post](../the-thin-crust-of-liquidity/index.md), supports this view.
 
-Markets can get liquid on their own once there are established fundamental frameworks for evaluating new assets, like valuing stocks based on price-to-earnings ratio. However, in today’s crypto landscape where assets trade based on technical factors (supply and demand) rather than fundamental ones, having market makers is very helpful for narrowing bid-ask spreads and enabling efficient price discovery.
+While markets can become liquid independently, especially when fundamental frameworks for asset evaluation exist, today’s crypto market, driven by technical factors like supply and demand, benefits significantly from market makers. They play a vital role in reducing bid-ask spreads and facilitating efficient price discovery.
 
-### How much money can you earn with Hummingbot?
-Hummingbot's market making and arbitrage strategies are a lot like fishing. If you're in the right markets at the right time, you can make a lot of money, but you have to constantly look for new spots.
+### How Much Money Can You Earn with Hummingbot?
+Earning through Hummingbot, via market making and arbitrage strategies, is akin to fishing: success depends on being in the right markets at the right time. Like a popular fishing spot, crowded trades eventually lose their profitability. Nevertheless, adept traders continually seek fresh opportunities.
 
-After a while, other people find out about it and the trade gets crowded, just like a good fishing hole that gets over-fished. However, good traders, just like good fishermen, are always on the lookout for new opportunities.
+For instance, the significant arbitrage opportunities seen in the Korea to non-Korea exchange arbitrage towards the end of 2017 are unlikely to recur, as infrastructures have evolved to eliminate such discrepancies.
 
-For example, huge arbitrage opportunities like the Korea to non-Korea exchange arbitrage that was present at the end of 2017 are unlikely to appear again because people have developed infrastructure to close that gap.
+However, the burgeoning **#DeFi** (decentralized finance) space, with new instruments like stablecoins and decentralized loans, presents market inefficiencies ripe for exploitation through programmatic trading strategies. For example, there was a time when you could borrow DAI at 2% from MakerDAO and lend it on Compound for around 10%.
 
-But in today's market where the explosion of **#DeFi** (decentralized finance) has led to the creation of all types of new instruments such as stablecoins and decentralized loans, market inefficiencies appear that are begging to be exploited via programmatic trading strategies. Not too long ago, you could borrow DAI for 2% from MakerDAO and then lend it on Compound for about 10%.
-
-As long as we have more and more decentralized financial assets and a fragmented exchange landscape, that will give rise to a lot of inefficiencies and arbitrage opportunities.
+The continuous emergence of decentralized financial assets and a fragmented exchange landscape will perpetuate inefficiencies and arbitrage opportunities.
 
 ![](./image1.jpg)
 
-### What types of markets are best for Hummingbot users?
-There are some large market makers in crypto, like Jump Trading and DRW Cumberland. However, these large firm are really concentrated on the most liquid trading pairs on the largest exchanges, like the BTC/USDT pair on Binance or the ETH/USD pair on Coinbase.
+### What Types of Markets are Best for Hummingbot Users?
+Major market makers in crypto, such as Jump Trading and DRW Cumberland, focus on highly liquid pairs on large exchanges, like BTC/USDT on Binance or ETH/USD on Coinbase. Conversely, **long tail markets**, like WETH/DAI on Radar Relay, remain underserved due to a lack of smaller market makers. These markets present ideal opportunities for Hummingbot users for two reasons:
 
-On the other hand, there is the **long tail of markets**, such as the WETH/DAI trading pair on Radar Relay, that is currently underserved because there's a dearth of smaller market makers. Right now, long tail markets are ideal for Hummingbot users, because we see a congruence of two factors:
+1. Direct Market Access: Crypto markets uniquely allow individuals to trade without intermediaries like brokers, opening up strategies like market making and arbitrage that are less accessible in equity markets.
 
-1. Individuals can actually trade on these markets because they don’t have to go through intermediaries like brokers. In crypto, we have something unique called **direct market access**: all exchanges offer APIs that allow anyone to trade directly on the exchange. This opens up strategies like market making and arbitrage that are harder in equities markets because you have to go through brokers and other intermediaries that snap up those opportunities before the average trader sees them.
+2. Global Competition: Unlike fiat exchanges that largely compete within national boundaries, crypto exchanges and protocols operate in a global competitive landscape. This competition necessitates liquidity to be effective, making tools like Hummingbot invaluable for smaller markets seeking to achieve critical liquidity levels.
 
-2. Crypto exchanges and protocols need to compete globally. Fiat exchanges have something akin to an oligopoly because they only compete with other exchanges in the same country. But anyone, no matter where you're based, can create a crypto-to-crypto exchange and start competing with Binance. Similarly, anyone can create a decentralized lending protocol and start competing with Maker and Compound.
+### Does Integrating with Both Centralized and Decentralized Exchanges Make Hummingbot Difficult to Use?
+Integrating with both centralized and decentralized exchanges complicates initial setup, requiring users to manage wallets, Ethereum nodes, and API keys. However, these complexities create market inefficiencies that can be exploited.
 
-You have this **unfettered competitive landscape** where new entrants have the ability to challenge incumbents, but they still need to generate liquidity to compete effectively. That’s why we think a tool that can be used by almost anyone to provide liquidity is the best way for smaller markets to reach a critical mass of liquidity.
+Trading on centralized exchanges differs markedly from decentralized exchanges (DEXs). Effective trading on a DEX requires considering factors like gas costs, node reliability, blockchain congestion, and front-running risks.
 
-### Does integrating with both centralized and decentralized exchanges make Hummingbot hard to use?
+We aim to simplify these complexities for users, providing an open infrastructure that enables experimentation with various exchanges and strategies to discover effective trading methods.
 
-It certainly adds to the upfront setup because our users need a wallet, an Ethereum node, as well as API keys on centralized exchanges.
+### As More People Use Hummingbot, Will That Lead to Diminishing Returns for Users?
+Saturation remains a concern, but we mitigate this risk by continually supporting new exchanges and protocols and facilitating user-configured strategies. The scope of opportunities is limited only by the creativity and resourcefulness of our users.
 
-However, that's precisely why there are market inefficiencies to exploit. From a technical perspective, trading on centralized exchanges is very different from trading on a DEX. To run a trading bot effectively on a DEX, you have to take into account gas costs, node reliability and speed, the impact of blockchain congestion, as well as the risk of being front-run.
+While future versions of Hummingbot aim for simplicity, the current design caters to users eager to explore untapped opportunities rather than those easily accessible to all.
 
-We try to abstract as much of that as possible for users, but ultimately we hope that by providing open infrastructure that users can customize and build on top of, they can experiment with various combinations of exchanges and strategies and eventually figure out something that works.
+### What is Hummingbot’s Business Model?
+Our monetization strategy aligns with common practices in open-source projects. We use an **open core** model, where the base software is free and open source, supplemented by premium modules for institutional use.
 
-### As more people use Hummingbot, will that lead to diminishing returns for users?
-Saturation is definitely a risk that we are actively watching out for. However, we believe that if we continually add support for new exchanges and new protocols, and if we make it easy for users to configure strategies and create their own, the number of opportunities will be limited only by the imagination and creativity of our users.
-
-While we intend on making it trivially simple to use in the future, Hummingbot is currently designed for users who want to discover the best opportunities out there, not the ones that everyone else is looking at.
-
-### What is Hummingbot’s business model?
-We’ll monetize Hummingbot in a very similar way to other open-source projects. We utilize an **open core** model, in which the base software is open source and free for individuals, and we create premium modules that are suited for institutions.
-
-These premium modules, targeted at crypto funds, market makers, and projects, will address needs such as security, and OMS/EMS (order management system/execution management system) integrations. In addition, we have fine-grained, sub-second order book data and a proprietary Cython-based backtesting framework, which is much faster than off-the-shelf backtesting suites. This combination allows us to develop more sophisticated, machine learning-based strategies.
+These premium modules, tailored for crypto funds, market makers, and projects, focus on aspects like security and OMS/EMS (order management system/execution management system) integrations. Our advanced, Cython-based backtesting framework and sub-second order book data allow us to develop sophisticated, machine learning-based strategies.

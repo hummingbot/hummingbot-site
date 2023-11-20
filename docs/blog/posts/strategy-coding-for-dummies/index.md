@@ -11,15 +11,15 @@ tags:
 
 # Strategy Coding for Dummies
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 *by Ben Smeaton*
 
 ![](https://blog.hummingbot.org/content/images/2022/09/makeameme.webp)
 
-Hi! I've been using hummingbot for about a year on and off and wanted to give an overview on how to actually go about defining your own strategies. I got into market making because of a hobbyist interest in python coding and I was at that time tinkering with buying and selling shares automatically on the stock market which was incredibly unsuccessful.
+Hi! I've been using Hummingbot for about a year on and off and wanted to give an overview on how to actually go about defining your own strategies. I got into market making because of a hobbyist interest in python coding and I was at that time tinkering with buying and selling shares automatically on the stock market which was incredibly unsuccessful.
 
-Humming Bot is very accessible for hobby coders due to its mainly python-based code base and the fact that its all open source (Meaning you can play around with the code). It's pretty easy to scrape together your own strategies although it�s taken quite a lot of trial and error to get there myself! I wanted to give a basic idea of how you can go about doing this in the simplest way possible.
+Hummingbot is very accessible for hobby coders due to its mainly python-based code base and the fact that its all open source (Meaning you can play around with the code). It's pretty easy to scrape together your own strategies although it�s taken quite a lot of trial and error to get there myself! I wanted to give a basic idea of how you can go about doing this in the simplest way possible.
 
 <!-- more -->
 
