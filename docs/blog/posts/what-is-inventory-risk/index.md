@@ -9,7 +9,7 @@ tags:
 ---
 
 # What is Inventory Risk?
-![cover](cover.jpg)
+![cover](cover.webp)
 
 
 Hello again Hummingbot community!

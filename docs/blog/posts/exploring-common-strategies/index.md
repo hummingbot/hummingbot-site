@@ -10,7 +10,7 @@ tags:
 
 # Exploring Common Strategies
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 In this guide, we will delve into various strategies and configurations you can employ using Hummingbot:
 

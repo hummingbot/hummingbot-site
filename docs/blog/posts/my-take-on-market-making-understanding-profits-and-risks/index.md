@@ -11,7 +11,7 @@ tags:
 
 # My Take on Market Making: Understanding Profits and Risks
 
-![cover](cover.png)
+![cover](cover.webp)
 
 *By phgnomo*
 

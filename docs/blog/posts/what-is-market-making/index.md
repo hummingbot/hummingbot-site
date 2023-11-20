@@ -10,7 +10,7 @@ tags:
 
 # What is Market Making?
 
-![cover](cover.png)
+![cover](cover.webp)
 
 ## Welcome to Hummingbot Academy!
 

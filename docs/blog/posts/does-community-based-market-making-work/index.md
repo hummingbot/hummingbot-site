@@ -14,7 +14,7 @@ tags:
 
 ### Analyzing 2 months of data from $ONE Makers
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 Two months ago, in conjunction with our friends from Harmony Protocol, we started an [experimental program](../introducing-harmony-liquidity-bounties/index.md) called **$ONE Makers** to see if ordinary individuals using Hummingbot to run market making bots could effectively provide the same level of liquidity as professional market makers.
 

@@ -10,7 +10,7 @@ tags:
 
 # What is Cross Exchange Market Making?
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 Welcome back to our Educational Center, where we aim to help you to learn more about [market making](../what-is-market-making/index.md), [arbitrage](../what-is-arbitrage/index.md), and everything related to algorithmic trading.
 

@@ -10,7 +10,7 @@ tags:
 
 # Managing Your Bot's Performance
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 Tracking your cryptocurrency trading profits and losses (P&L) is essential for evaluating the effectiveness of your trading strategies, investment decisions, and portfolio management approach. In traditional financial markets, calculating P&L is straightforward, thanks to established conventions and regulations. However, in the cryptocurrency realm, this task becomes more complex due to:
 

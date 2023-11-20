@@ -46,15 +46,15 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/how-to-trade-crypto/cover.jpg)](/blog/how-to-trade-crypto/)
+-   [![](/blog/how-to-trade-crypto/cover.webp)](/blog/how-to-trade-crypto/)
 
     ### [How to Trade Crypto](/blog/how-to-trade-crypto/)
 
--   [![](/blog/what-is-market-making/cover.png)](/blog/what-is-market-making/)
+-   [![](/blog/what-is-market-making/cover.webp)](/blog/what-is-market-making/)
 
     ### [What is Market Making?](/blog/what-is-market-making/)
 
--   [![](/blog/what-is-inventory-risk/cover.jpg)](/blog/what-is-inventory-risk/)
+-   [![](/blog/what-is-inventory-risk/cover.webp)](/blog/what-is-inventory-risk/)
 
     ### [What is Inventory Risk?](/blog/what-is-inventory-risk/)
 
@@ -72,7 +72,7 @@ hide:
 
     ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
 
--   [![](/blog/mapping-the-crypto-market-maker-landscape/cover.jpg)](/blog/mapping-the-crypto-market-maker-landscape/)
+-   [![](/blog/mapping-the-crypto-market-maker-landscape/cover.webp)](/blog/mapping-the-crypto-market-maker-landscape/)
 
     ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
 
@@ -156,15 +156,15 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/managing-your-bot-performance/cover.jpg)](/blog/managing-your-bot-performance/)
+-   [![](/blog/managing-your-bot-performance/cover.webp)](/blog/managing-your-bot-performance/)
 
     ### [Managing Your Bot Performance](/blog/managing-your-bot-performance/)
 
--   [![](/blog/order-management-configurations/Cover.png)](/blog/order-management-configurations/)
+-   [![](/blog/order-management-configurations/cover.webp)](/blog/order-management-configurations/)
 
     ### [Order Management Configurations](/blog/order-management-configurations/)
 
--   [![](/blog/commands-and-configs-price-source/cover.jpg)](/blog/commands-and-configs-price-source/)
+-   [![](/blog/commands-and-configs-price-source/cover.webp)](/blog/commands-and-configs-price-source/)
 
     ### [Commands and Configs - Price Source](/blog/commands-and-configs-price-source/)
 

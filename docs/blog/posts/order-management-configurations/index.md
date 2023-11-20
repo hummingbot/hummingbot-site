@@ -10,7 +10,7 @@ tags:
 
 # Order Management Configurations
 
-![](./Cover.png)
+![](cover.webp)
 
 Welcome to our series where we delve into all possible configurations of Hummingbot, exploring the underlying concepts. In this installment, we focus on Order Management, covering:
 

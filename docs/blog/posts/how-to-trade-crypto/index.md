@@ -11,7 +11,7 @@ tags:
 
 # How to Trade Crypto
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 *by Tsalkapone*
 

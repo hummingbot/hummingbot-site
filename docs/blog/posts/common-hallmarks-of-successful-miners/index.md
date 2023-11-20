@@ -10,7 +10,7 @@ tags:
 
 # Common Hallmarks of Successful Miners
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 *by Kyle Mizui*
 

@@ -10,7 +10,7 @@ tags:
 
 # Getting Started with Algo Trading
 
-![](./image0.jpg)
+![](cover.webp)
 
 Algorithmic trading is the process of using computers programmed to follow a pre-defined set of rules for automatically placing trades in order to generate profits at high speed and high frequency. These are called **bots**.
 

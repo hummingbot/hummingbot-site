@@ -10,7 +10,7 @@ tags:
 
 # The Orders Must Flow from Trader Mobiwan
 
-![Alt text](cover.jpg)
+![Alt text](cover.webp)
 
 *by Mohammed Badran*
 

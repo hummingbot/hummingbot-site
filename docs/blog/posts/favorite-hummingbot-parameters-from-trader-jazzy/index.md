@@ -10,7 +10,7 @@ tags:
 
 # Favorite Hummingbot Parameters from Trader Jazzy
 
-![Alt text](cover.jpg)
+![Alt text](cover.webp)
 
 *By Jazzy Obmaz*
 

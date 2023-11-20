@@ -10,7 +10,7 @@ tags:
 
 # What is Arbitrage?
 
-![cover](cover.png)
+![cover](cover.webp)
 
 ## Welcome to Hummingbot Academy!
 

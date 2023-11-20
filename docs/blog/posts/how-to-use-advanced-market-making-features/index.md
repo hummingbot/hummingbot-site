@@ -10,7 +10,7 @@ tags:
 
 # How to use advanced market making features
 
-![cover](cover.jpeg)
+![cover](cover.webp)
 
 
 During the past two months, we have added a number of advanced features to the **pure market making** strategy to help users run Hummingbot with less risk and more profit! This post describes how these new features work:

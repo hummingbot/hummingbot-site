@@ -10,7 +10,7 @@ tags:
 
 # Hummingbot Strategy Hacks 101
 
-![cover](cover.png)
+![cover](cover.webp)
 
 Hummingbot currently comes with three main built-in trading strategies.  A quick recap, these are:
 

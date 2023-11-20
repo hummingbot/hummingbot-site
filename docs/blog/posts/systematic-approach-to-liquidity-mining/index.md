@@ -14,7 +14,7 @@ tags:
 
 *by Diego C*
 
-![cover](cover.jpg)
+![cover](cover.webp)
 
 The end goal of Liquidity Mining strategies is to outperform traditional staking and farming yields in DEFI/CEFI using your crypto assets.
 

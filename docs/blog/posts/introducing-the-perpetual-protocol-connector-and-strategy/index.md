@@ -11,7 +11,7 @@ tags:
 
 # Introducing the Perpetual Protocol Connector and Strategy
 
-![cover](cover.png)
+![cover](cover.webp)
 
 
 We're thrilled to announce a new partnership with [Perpetual Protocol](https://perp.com/), an Ethereum-based decentralized exchange of perpetual contracts for any asset. With this partnership, Hummingbot users will be able to earn arbitrage profits from reconciling price differences between Perpetual markets and spot markets.
