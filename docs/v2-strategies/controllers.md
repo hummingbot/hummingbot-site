@@ -103,9 +103,9 @@ As with the previous versions, DManV3 is designed for market making, but it now 
 
 ### **Order Conditions:**
 
-  -  Refresh Order Condition: The logic for refreshing orders remains similar to the previous versions, focusing on time-based conditions.
+-  Refresh Order Condition: The logic for refreshing orders remains similar to the previous versions, focusing on time-based conditions.
 
-  -  Early Stop and Cooldown Conditions: These also follow the same approach as DManV1 and DManV2, with early stop condition always returning False and a cooldown period enforced after order execution.
+-  Early Stop and Cooldown Conditions: These also follow the same approach as DManV1 and DManV2, with early stop condition always returning False and a cooldown period enforced after order execution.
 
 ### **Position Configuration:** 
 
