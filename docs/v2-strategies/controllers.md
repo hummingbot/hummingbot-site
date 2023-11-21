@@ -35,11 +35,11 @@ It uses the NATR indicator to adjust spreads. NATR is calculated from the last c
 
 ### **Order Conditions and Execution:**
 
-  - Refresh Order Condition: It decides whether to refresh an order based on a time condition related to the order's refresh time.
+- Refresh Order Condition: It decides whether to refresh an order based on a time condition related to the order's refresh time.
 
-  - Early Stop Condition: It includes a method to determine if an active position should be closed early, although the default implementation always returns False.
+- Early Stop Condition: It includes a method to determine if an active position should be closed early, although the default implementation always returns False.
 
-  - Cooldown Condition: After completing an order, the controller enforces a cooldown period to prevent immediate creation of a new order.
+- Cooldown Condition: After completing an order, the controller enforces a cooldown period to prevent immediate creation of a new order.
 
 ### **Position Configuration:** 
 
@@ -67,9 +67,9 @@ Like DManV1, DManV2 is a market-making strategy. However, it incorporates both t
 
 ### **Use of NATR and MACD Indicators:**
 
-  - NATR: Similar to DManV1, it calculates the NATR (Normalized Average True Range) to determine the `spread_multiplier`.
+- NATR: Similar to DManV1, it calculates the NATR (Normalized Average True Range) to determine the `spread_multiplier`.
 
-  - MACD: DManV2 uses the MACD indicator to generate a price_multiplier. It calculates the MACD value, the MACD histogram (MACDh), and signals based on these to influence the price adjustment.
+- MACD: DManV2 uses the MACD indicator to generate a price_multiplier. It calculates the MACD value, the MACD histogram (MACDh), and signals based on these to influence the price adjustment.
 
 ### **Order Conditions:** 
 
