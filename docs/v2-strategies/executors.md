@@ -10,7 +10,7 @@ Utilizing these Executors within Hummingbot scripts allows traders to implement 
 
 ### ArbitrageExecutor:
 
- The ArbitrageExecutor is designed to automate the process of identifying and executing profitable arbitrage opportunities between different exchanges or markets, handling the complexity of order management, price calculations, and profitability analysis.
+ The `ArbitrageExecutor` is designed to automate the process of identifying and executing profitable arbitrage opportunities between different exchanges or markets, handling the complexity of order management, price calculations, and profitability analysis.
 
 **Purpose:** Designed to identify and execute arbitrage opportunities between two markets for the same trading pair.
 
@@ -32,18 +32,24 @@ Utilizing these Executors within Hummingbot scripts allows traders to implement 
 
 ### PositionExecutor:
 
- In comparison to the ArbitrageExecutor, the PositionExecutor is more focused on managing a single trading position with various exit strategies, whereas the ArbitrageExecutor is designed for executing arbitrage opportunities between two different markets. The PositionExecutor includes more complex risk management features like trailing stop loss and handles a wider range of market conditions and order types.
+ In comparison to the `ArbitrageExecutor`, the `PositionExecutor` is more focused on managing a single trading position with various exit strategies, whereas the `ArbitrageExecutor` is designed for executing arbitrage opportunities between two different markets. The `PositionExecutor` includes more complex risk management features like trailing stop loss and handles a wider range of market conditions and order types.
 
 **Purpose:** 
 
 Manages a single trading position with comprehensive rules for opening, closing, and risk management.
 
 **Key Features:**
+
 - Supports stop loss, take profit, and time limit for position management.
+
 - Includes trailing stop loss functionality.
+
 - Manages market and limit orders under various conditions.
+
 - Provides detailed profit and loss calculation.
+
 - Handles budget checking for position opening.
+
 
 **Advantages:**
 

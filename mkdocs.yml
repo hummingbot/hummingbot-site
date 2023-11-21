@@ -255,6 +255,7 @@ nav:
         - Candles: v2-strategies/candles-feed.md
         - Controllers: v2-strategies/controllers.md
         - Executors: v2-strategies/executors.md
+        - Strategy Config Example: v2-strategies/config.md
       - V1 Strategies:
         - V1 Strategies: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
