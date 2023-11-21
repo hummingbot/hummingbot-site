@@ -8,6 +8,8 @@ Utilizing these Executors within Hummingbot scripts allows traders to implement 
 - Embedding the executors within Hummingbot's trading logic.
 - Leveraging the executors’ capabilities to enhance trading effectiveness and efficiency.
 
+---
+
 ### ArbitrageExecutor:
 
  The `ArbitrageExecutor` is designed to automate the process of identifying and executing profitable arbitrage opportunities between different exchanges or markets, handling the complexity of order management, price calculations, and profitability analysis.
