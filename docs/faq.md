@@ -233,7 +233,7 @@ See [Hummingbot Governance Proposals](/governance/proposals) for more informatio
 
 The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively.
 
-Other than those listed in the [HBOT announcement](/news/hbot), there are no other eligible HBOT recipients.
+Other than those listed in the [HBOT announcement](governance/hbot.md), there are no other eligible HBOT recipients.
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 
@@ -275,15 +275,13 @@ To sustain development of the Hummingbot client, Hummingbot Foundation enters in
 
 ### How do I configure or turn off this feature?
 
-In `conf/conf_client.yml`, find the following section:
+In the Hummingbot client, run the following command:
 
-```yaml
-# Whether to enable aggregated order and trade data collection
-anonymized_metrics_mode:
-  anonymized_metrics_interval_min: 15.0
+```
+config anonymized_metrics_mode
 ```
 
-Changing the parameter above to `anonymized_metrics_interval_min: 0.0` disables data reporting. You may also adjust the interval if you would rather send data on a slower or faster interval. 15 minutes was chosen and tested as a reasonable interval for an active trading Hummingbot instance.
+Change the parameter above to `anonymized_metrics_enabled` to enable or `anonymized_metrics_disabled` to disable for data reporting. 
 
 ### How can I be sure that this is the only data Hummingbot collects?
 

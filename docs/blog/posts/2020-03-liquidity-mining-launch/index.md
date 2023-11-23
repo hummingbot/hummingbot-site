@@ -19,7 +19,7 @@ The first four campaigns go live at 12.00am UTC March 3, 2020 for a subset of ou
 - Zcoin
 - Zilliqa
 
-These initial campaigns will reward participants for trading in eligible tokens on [Binance.com](https://binance.com).  For up-to-date campaign terms and participation details, please go to the [Hummingbot Miner's app](https://miners.hummingbot.io) or [Documentation Site: Active Campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns).
+These initial campaigns will reward participants for trading in eligible tokens on [Binance.com](https://binance.com).  For up-to-date campaign terms and participation details, please go to the [Hummingbot Miner's app](https://miners.hummingbot.io) or [Documentation Site: Active Campaigns](https://miner.hummingbot.io/markets).
 
 Rewards will be paid out weekly based on weekly periods beginning on Tuesdays 12.00am GMT through the following Tuesday.
 
@@ -108,7 +108,7 @@ The homepage shows the currently live campaigns and current activity for each ca
 
 - [Hummingbot Miner app](https://miners.hummingbot.io)
 - [Active campaigns](https://miner.hummingbot.io/markets)
-- [Hummingbot Help Center](https://support.hummingbot.io/hc/en-us)
+- [Hummingbot Help Center](https://support.hummingbot.io/miner/)
 
 
 ### Important notes and disclaimers

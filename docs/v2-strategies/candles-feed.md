@@ -34,9 +34,9 @@ To create a new instance of this component, it is recommended to use the `get_ca
 
  You can find examples of usage in the following scripts:
 
-- [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/candles_example.py)
-- [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_directional_strategy_example.py)
-- [advanced_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/advanced_directional_strategy_example.py)
+- [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_data_feeds/candles_example.py)
+- [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/directional_strategy_rsi_spot.py)
+- [advanced_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/directional_strategy_trend_follower.py)
 
 You can also initialize as many candles as you need. For each combination of `[connector_name, trading_pair, interval]`, you should create a new instance using the `CandlesFactory`.
 
