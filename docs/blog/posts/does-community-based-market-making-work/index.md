@@ -3,10 +3,7 @@ date: 2019-09-09
 authors:
   - coinalpha
 categories:
-  - Academy
   - Miner
-tags:
-  - Liquidity Mining
 ---
 
 

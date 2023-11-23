@@ -3,9 +3,7 @@ date: 2018-12-24
 authors:
   - coinalpha
 categories:
-  - Academy
-tags:
-  - Crypto Exchange Landscape
+  - Whitepapers
 ---
 
 # Hummingbot Whitepaper

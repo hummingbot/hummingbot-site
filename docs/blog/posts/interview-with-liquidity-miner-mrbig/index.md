@@ -3,7 +3,7 @@ date: 2020-12-18
 authors:
   - coinalpha
 categories:
-  - Academy
+  - User Interviews
 tags:
   - User Interviews
 ---

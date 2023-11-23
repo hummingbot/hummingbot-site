@@ -11,8 +11,6 @@ categories:
 
 Almost exactly one year ago, Hummingbot Foundation [launched the HBOT token](../introducing-the-hummingbot-foundation/index.md) as an experiment in decentralized governance over a publicly shared, community maintained open source project.
 
-<!-- more -->
-
 Inspired by [Linux](https://www.linuxfoundation.org/), we believe that a bazaar-style, distributed model of software development, powered by a decentralized, community-owned governance token, would allow us to maintain and grow a large, complex, open source codebase like Hummingbot.
 
 ## Highlights
@@ -26,13 +24,15 @@ Here are some of our proudest achievements over the past 12 months:
 
 ![](./Screen-Shot-2022-12-12-at-1.47.37-PM.png)
 
+<!-- more -->
+
 In addition, we have shipped [11 Hummingbot releases](https://docs.hummingbot.org/release-notes/) thus far this year (12 after December), which have introduced:
 
 - The new [Gateway module](https://docs.hummingbot.org/gateway/) that provides standardized middleware for connecting to DEXs on various blockchains
 - The new [Scripts module](https://docs.hummingbot.org/scripts/) that allows you to create customizable, lightweight strategies that utilize the full power of Hummingbot
 - Upgrades, fixes, and improvements to many exchange connectors in Hummingbot.
 
-Finally, we're incredibly excited about [BotCamp](https://hummingbot.org/botcamp/), our new developer bootcamp that teaches participants how to design and create their own custom algo trading strategies using Scripts. We're currently in the midst of the first official, sold-our cohort and plan to offer more capacity next year.
+Finally, we're incredibly excited about [Botcamp](https://hummingbot.org/botcamp/), our new developer bootcamp that teaches participants how to design and create their own custom algo trading strategies using Scripts. We're currently in the midst of the first official, sold-out cohort and plan to offer more capacity next year.
 
 ## Lessons learned
 

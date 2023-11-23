@@ -4,9 +4,6 @@ authors:
   - coinalpha
 categories:
   - Partnerships
-  - Academy
-tags:
-  - DEX Strategies
 ---
 
 # Introducing the Perpetual Protocol Connector and Strategy

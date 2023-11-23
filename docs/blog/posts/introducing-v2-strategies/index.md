@@ -3,10 +3,7 @@ date: 2023-11-29
 authors:
   - foundation
 categories:
-  - Academy
   - Announcements
-tags:
-  - Strategy Guides
 draft: true
 ---
 

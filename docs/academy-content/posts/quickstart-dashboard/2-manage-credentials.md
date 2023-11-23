@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 2
+
 ## Introduction
 
 In this section, we'll dive into the importance of securely managing credentials in the Hummingbot Dashboard, ensuring that your information remains private and under your control.

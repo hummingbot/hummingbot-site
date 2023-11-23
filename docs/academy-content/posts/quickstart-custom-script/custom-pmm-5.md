@@ -1,3 +1,13 @@
+---
+date: 2023-03-30
+authors:
+  - fede
+tags:
+  - Quickstart - Creating a Custom Market Making Strategy
+---
+
+# Creating a Custom Market Making Strategy - Part 5
+
 **Code:** <https://gist.github.com/cardosofede/4be977ad21a68de0b117387652b85626>
 
 **Video:**

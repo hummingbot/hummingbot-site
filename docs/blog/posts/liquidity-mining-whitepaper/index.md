@@ -4,9 +4,7 @@ authors:
   - mike
   - carlo
 categories:
-  - Academy
-tags:
-  - Liquidity Mining 
+  - Whitepapers
 ---
 
 # Liquidity Mining Whitepaper

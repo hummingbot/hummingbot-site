@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 1
+
 ## Introduction
 
 Welcome to the second part of the Hummingbot Dashboard quickstart. In this section, we'll guide you through the essential steps to set up the project and get Dashboard up and running.

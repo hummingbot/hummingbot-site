@@ -3,9 +3,7 @@ date: 2019-03-22
 authors:
   - mike
 categories:
-  - Academy
-tags:
-  - Podcast Appearances
+  - Podcasts
 ---
 
 # How to Think about Liquidity - BlockCrunch

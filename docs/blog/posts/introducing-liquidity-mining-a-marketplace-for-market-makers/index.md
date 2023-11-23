@@ -4,10 +4,7 @@ authors:
  - carlo
 categories:
  - Announcements
- - Academy
  - Miner
-tags:
- - Liquidity Mining
 ---
 
 # Introducing Liquidity Mining: A Marketplace For Market Makers

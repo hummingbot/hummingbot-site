@@ -3,9 +3,7 @@ date: 2019-03-08
 authors:
   - mike
 categories:
-  - Academy
-tags:
-  - Podcast Appearances
+  - Podcasts
 ---
 
 # From Hedge Fund To Market Making Bot: The Hummingbot Origin Story

@@ -1,3 +1,15 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+categories:
+  - Quickstart Guides
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies
+
 ## Introduction
 
 Welcome to the Hummingbot Dashboard Quickstart Guide! 

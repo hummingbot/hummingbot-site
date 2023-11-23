@@ -1,4 +1,14 @@
-This is **part 3** of the Hummingbot Liquidity Mining Quickstart Guide:
+---
+date: 2021-01-01
+authors:
+  - coinalpha
+tags:
+  - Quickstart - Liquidity Mining with Hummingbot
+---
+
+# Liquidity Mining with Hummingbot - Part 3: Create Bot
+
+This is **part 3** of the Liquidity Mining Quickstart Guide:
 
 1. [Create API Keys]
 2. [Configure Miner]

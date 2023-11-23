@@ -1,3 +1,15 @@
+---
+date: 2021-01-01
+authors:
+  - coinalpha
+categories:
+  - Quickstart Guides
+tags:
+  - Quickstart - Liquidity Mining with Hummingbot
+---
+
+# Liquidity Mining with Hummingbot
+
 In this guide, you'll learn how to set up a market making bot using Hummingbot that earns liquidity rewards on [Miner](https://miner.hummingbot.io), a **liquidity mining** platform that provides a decentralized, community-powered approach to market making across various exchanges.
 
 First, you'll create API keys and add them to Miner. Next, you will install the open source Hummingbot algorithmic trading software and run the `liquidity_mining` strategy in Hummingbot, which we recommend for new users. Finally, we'll show you how to collect your rewards and assess your bot's performance in the Miner app.

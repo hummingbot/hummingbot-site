@@ -3,9 +3,7 @@ date: 2020-12-17
 authors:
   - coinalpha
 categories:
-  - Academy
-tags:
-  - Liquidity Mining
+  - Miner
 ---
 
 # NEM Liquidity Mining Case Study

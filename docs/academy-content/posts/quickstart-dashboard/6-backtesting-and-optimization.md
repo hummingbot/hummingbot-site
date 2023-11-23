@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 6
+
 ## Introduction
 
 In this chapter, we delve deep into one of the most critical aspects of bot trading: **backtesting strategies using historical data**. Dashboard provides a comprehensive framework that helps you do everything from downloading historical data to backtesting strategies and optimizing hyperparameters.

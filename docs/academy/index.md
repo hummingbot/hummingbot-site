@@ -12,29 +12,36 @@ hide:
 
 <div class="grid two-thirds cards" markdown>
 
--   #### Featured
+-   #### :star: Featured
     
     [![](/assets/thumbnails/composable-mm.jpg)](/blog/introducing-v2-strategies)
 
     ## [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
--   #### Popular
+-   #### :rocket: Quickstart Guides
 
     ---
 
-    ### [How To Get Good At Market Making](/blog/how-to-get-good-at-market-making/)
+    ### [Using Dashboard to Deploy and Backtest Strategies](/academy-content/using-dashboard-to-deploy-and-backtest-strategies/)
 
-    ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
+    Learn how to use the new Dashboard app!
 
-    ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
+    ### [Liquidity Mining with Hummingbot](/academy-content/introducing-v2-strategies)
 
-    ### [Interview with Community Member Vik](/blog/interview-with-community-member-vik/)
+    Earn rewards by running bots on the Miner platform.
 
-    ### [Introducing Liquidity Mining: A Marketplace For Market Makers](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
+    ### [Creating a Custom Market Making Strategy](/academy-content/creating-a-custom-market-making-strategy/)
+
+    A developer's guide to writing a custom Hummingbot script.
 
     <br />
 
-    [See all articles :fontawesome-solid-chevron-right:](all.md){ .md-button }
+</div>
+
+<div class="grid cards" markdown>
+
+- [:calendar: __Latest__](/academy-content/){.centered}
+- [:books: __All Articles__](./all.md){.centered}
 
 </div>
 
@@ -46,17 +53,17 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/how-to-trade-crypto/cover.webp)](/blog/how-to-trade-crypto/)
+-   [![](/academy-content/how-to-trade-crypto/cover.webp)](/academy-content/how-to-trade-crypto/)
 
-    ### [How to Trade Crypto](/blog/how-to-trade-crypto/)
+    ### [How to Trade Crypto](/academy-content/how-to-trade-crypto/)
 
--   [![](/blog/what-is-market-making/cover.webp)](/blog/what-is-market-making/)
+-   [![](/academy-content/what-is-market-making/cover.webp)](/academy-content/what-is-market-making/)
 
-    ### [What is Market Making?](/blog/what-is-market-making/)
+    ### [What is Market Making?](/academy-content/what-is-market-making/)
 
--   [![](/blog/what-is-inventory-risk/cover.webp)](/blog/what-is-inventory-risk/)
+-   [![](/academy-content/what-is-inventory-risk/cover.webp)](/academy-content/what-is-inventory-risk/)
 
-    ### [What is Inventory Risk?](/blog/what-is-inventory-risk/)
+    ### [What is Inventory Risk?](/academy-content/what-is-inventory-risk/)
 
 </div>
 
@@ -68,13 +75,13 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/exchange-types-explained-clob-rfq-amm/cover.webp)](/blog/exchange-types-explained-clob-rfq-amm/)
+-   [![](/academy-content/exchange-types-explained-clob-rfq-amm/cover.webp)](/academy-content/exchange-types-explained-clob-rfq-amm/)
 
-    ### [Exchange Types Explained: CLOB, RFQ, AMM](/blog/exchange-types-explained-clob-rfq-amm/)
+    ### [Exchange Types Explained: CLOB, RFQ, AMM](/academy-content/exchange-types-explained-clob-rfq-amm/)
 
--   [![](/blog/mapping-the-crypto-market-maker-landscape/cover.webp)](/blog/mapping-the-crypto-market-maker-landscape/)
+-   [![](/academy-content/mapping-the-crypto-market-maker-landscape/cover.webp)](/academy-content/mapping-the-crypto-market-maker-landscape/)
 
-    ### [Mapping the Crypto Market Maker Landscape](/blog/mapping-the-crypto-market-maker-landscape/)
+    ### [Mapping the Crypto Market Maker Landscape](/academy-content/mapping-the-crypto-market-maker-landscape/)
 
 -   [![](/blog/hummingbot-whitepaper/cover.webp)](/blog/hummingbot-whitepaper/)
 
@@ -90,13 +97,13 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/liquidity-mining-in-hummingbot-vs-defi/cover.jpg)](/blog/liquidity-mining-in-hummingbot-vs-defi)
+-   [![](/academy-content/liquidity-mining-in-hummingbot-vs-defi/cover.jpg)](/academy-content/liquidity-mining-in-hummingbot-vs-defi)
 
-    ### [Liquidity Mining in Hummingbot vs DeFi](/blog/liquidity-mining-in-hummingbot-vs-defi)
+    ### [Liquidity Mining in Hummingbot vs DeFi](/academy-content/liquidity-mining-in-hummingbot-vs-defi)
 
--   [![](/blog/demystifying-liquidity-mining-rewards/cover.webp)](/blog/demystifying-liquidity-mining-rewards/)
+-   [![](/academy-content/demystifying-liquidity-mining-rewards/cover.webp)](/academy-content/demystifying-liquidity-mining-rewards/)
 
-    ### [Demystifying Liquidity Mining Rewards](/blog/demystifying-liquidity-mining-rewards/)
+    ### [Demystifying Liquidity Mining Rewards](/academy-content/demystifying-liquidity-mining-rewards/)
 
 -   [![](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/cover1.png)](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/)
 
@@ -112,17 +119,17 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/how-to-get-good-at-market-making/cover.webp)](/blog/how-to-get-good-at-market-making/)
+-   [![](/academy-content/how-to-get-good-at-market-making/cover.webp)](/academy-content/how-to-get-good-at-market-making/)
 
-    ### [How To Get Good At Market Making](/blog/how-to-get-good-at-market-making/)
+    ### [How To Get Good At Market Making](/academy-content/how-to-get-good-at-market-making/)
 
--   [![](/blog/tips-for-handling-different-market-conditions/cover.webp)](/blog/tips-for-handling-different-market-conditions/)
+-   [![](/academy-content/tips-for-handling-different-market-conditions/cover.webp)](/academy-content/tips-for-handling-different-market-conditions/)
 
-    ### [Tips for Handling Different Market Conditions](/blog/tips-for-handling-different-market-conditions/)
+    ### [Tips for Handling Different Market Conditions](/academy-content/tips-for-handling-different-market-conditions/)
 
--   [![](/blog/top-beginners-top-misconceptions-about-market-making/cover.webp)](/blog/top-beginner-misconceptions-about-market-making/)
+-   [![](/academy-content/top-beginners-top-misconceptions-about-market-making/cover.webp)](/academy-content/top-beginner-misconceptions-about-market-making/)
 
-    ### [Top Beginner Misconceptions about Market Making](/blog/top-beginner-misconceptions-about-market-making/)
+    ### [Top Beginner Misconceptions about Market Making](/academy-content/top-beginner-misconceptions-about-market-making/)
 
 </div>
 
@@ -156,17 +163,17 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/blog/managing-your-bot-performance/cover.webp)](/blog/managing-your-bot-performance/)
+-   [![](/academy-content/managing-your-bot-performance/cover.webp)](/academy-content/managing-your-bot-performance/)
 
-    ### [Managing Your Bot Performance](/blog/managing-your-bot-performance/)
+    ### [Managing Your Bot Performance](/academy-content/managing-your-bot-performance/)
 
--   [![](/blog/order-management-configurations/cover.webp)](/blog/order-management-configurations/)
+-   [![](/academy-content/order-management-configurations/cover.webp)](/academy-content/order-management-configurations/)
 
-    ### [Order Management Configurations](/blog/order-management-configurations/)
+    ### [Order Management Configurations](/academy-content/order-management-configurations/)
 
--   [![](/blog/commands-and-configs-price-source/cover.webp)](/blog/commands-and-configs-price-source/)
+-   [![](/academy-content/commands-and-configs-price-source/cover.webp)](/academy-content/commands-and-configs-price-source/)
 
-    ### [Commands and Configs - Price Source](/blog/commands-and-configs-price-source/)
+    ### [Commands and Configs - Price Source](/academy-content/commands-and-configs-price-source/)
 
 </div>
 
@@ -182,13 +189,13 @@ hide:
 
     ### [Introducing V2 Strategies](blog/introducing-v2-strategies/)
 
--   [![](/blog/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/blog/directional-trading-with-macd-and-bollinger-bands/)
+-   [![](/academy-content/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
 
-    ### [Directional Trading with MACD and Bollinger Bands](/blog/directional-trading-with-macd-and-bollinger-bands/)
+    ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
 
--   [![](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+-   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/blog/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
 </div>
 

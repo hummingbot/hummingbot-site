@@ -3,7 +3,7 @@ date: 2020-05-07
 authors:
   - carlo
 categories:
-  - Academy
+  - User Interviews
 tags:
   - User Interviews
 ---

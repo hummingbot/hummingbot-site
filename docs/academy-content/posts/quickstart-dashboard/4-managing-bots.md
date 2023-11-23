@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 4
+
 ## Introduction
 
 In this tutorial, we'll dive into the process of spawning new bots, starting a strategy, making modifications, and running one for a set duration. Let's get started!

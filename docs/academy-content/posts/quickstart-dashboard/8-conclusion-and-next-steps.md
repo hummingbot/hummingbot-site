@@ -1,4 +1,12 @@
-# Conclusion and Next Steps
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Intro to Dashboard
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Conclusion
 
 Thank you for following along with this series. Your dedication and time spent learning about Dashboard and its various functionalities are greatly appreciated!
 

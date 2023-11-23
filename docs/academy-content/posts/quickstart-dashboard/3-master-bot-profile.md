@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 3
+
 ## Introduction
 
 In this installment, we show how to utilize the Master Bot Profiles to create and store API keys, along with exploring available scripts in the Hummingbot Dashboard. Let's break down the essentials!

@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 5
+
 ## Introduction
 
 You can use the Strategy Performance page in Dashboard to analyze the performance of your Hummingbot strategies and scripts.

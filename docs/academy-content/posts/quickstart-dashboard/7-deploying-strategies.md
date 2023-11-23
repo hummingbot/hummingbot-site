@@ -1,3 +1,13 @@
+---
+date: 2023-10-30
+authors:
+  - foundation
+tags:
+  - Quickstart - Using Dashboard to Deploy and Backtest Strategies
+---
+
+# Using Dashboard to Deploy and Backtest Strategies - Part 7
+
 ## Introduction
 
 Now, let's dive into the process of evaluating the optimization results and subsequently deploying the selected strategies.

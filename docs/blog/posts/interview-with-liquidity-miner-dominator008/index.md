@@ -3,7 +3,7 @@ date: 2019-09-03
 authors:
   - coinalpha
 categories:
-  - Academy
+  - User Interviews
 tags:
   - User Interviews
 ---
