@@ -1,50 +1,32 @@
 # Using and Customizing v2 Scripts in Hummingbot
 
-1. Getting Familiar with the Scripts
-Script Overview: Briefly explain the structure of the scripts, mentioning the main parts like trading pairs, order levels, and risk management settings.
 
-2. Customization Areas
+### Market Making Strategies
 
-- Trading Pairs:
-Explain how to change the trading pairs in the script (e.g., from "LOOM-USDT" to another pair).
-Mention where this change is made in the script.
+These templates will allow users to create composable market making strategies. Watch this video for an introduction on how it works:
 
-- Order Levels:
-Manual Order Levels or use Order Builder
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/GhvTaIWHqrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-`Linear`
-spreads = Distributions.linear(n_levels=15, start=0.4, end=2.5)
+### Directional Strategies
 
-`Arithmetic Distribution`
-spreads = Distributions.arithmetic(n_levels=15, start=0.4, step=0.2)
+These templates will allow users to strategies that use technical indicators to trigger the creation of long and short [Position Executors](executors.md).
 
-`Geometric Distribution`
-spreads = Distributions.geometric(n_levels=15, start=0.4, ratio=1.2)
+Watch this video from a [Botcamp](../botcamp/index.md) Cohort 4 student who used an early version of the directional executors: 
 
-`Logarithmic Distribution`
-spreads = Distributions.logarithmic(n_levels=10, base=10, scaling_factor=1.0, start=0.4)
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/DyHA8KPheMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Grid Strategies
 
-- Risk Management (Triple Barrier Configuration):
-Explain the purpose of stop loss, take profit, and time limit settings.
-Point out where these parameters can be adjusted in the script.
+Slated for future release is the Grid strategy template, conceived for traders specializing in grid trading strategies. This framework will facilitate the placement of diversified orders across a spectrum of price points, ensuring gains amidst market volatilities.
 
-- Market Data (Candles Configuration):
-Clarify the role of candle data and how its interval impacts trading decisions.
-Indicate where to change the candle interval settings.
+Watch this video about the Fixed Grid script that is the predecessor for this template:
 
-3. Running the Script
-Starting Hummingbot: Instructions on how to start Hummingbot and load the script.
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-4. Monitoring and Adjustments:
-Guide on monitoring the bot’s performance.
+### Arbitrage Strategies
 
-To effectively monitor the activity of your Hummingbot script, especially in the context of Binance, you would want to set up a view that aligns with the key parameters and indicators used in your script. Here's a breakdown of the indicators and settings you should consider:
+A more powerful version of Hummingbot's V1 arbitrage strategies, this template will separate identificatin of arbitrage opportunities from execution, allowing users to generate customized trading signals and run multiple Arbitrage Executors.
 
-  - a. Bollinger Bands
-    Length: Set the Bollinger Band length to 200 as per your script.
-    Standard Deviation: Set the standard deviation to 3.0 as specified in your bollinger_band_std.
-    Trading Pair: Ensure this pair is selected on Binance.
+Watch this video for a preview:
 
-  - b. Candlestick Chart
-    Interval: Set the interval to 1h (1 hour) to match your script's candles_interval.
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VqJxpWZzCG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

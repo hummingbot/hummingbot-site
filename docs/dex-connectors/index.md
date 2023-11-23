@@ -13,6 +13,7 @@ Here are the current DEX connectors in the codebase, as of the latest release:
 | [Polkadex](../exchanges/polkadex.md) | CLOB | Client | 🥈 Silver | Hummingbot Foundation |
 | [Injective Helix](../exchanges/injective.md) | CLOB | Client | 🥈 Silver | Hummingbot Foundation |
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
+| [Curve](../exchanges/curve.md) | AMM | Gateway | 🥉 Bronze
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway | 🥉 Bronze
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway | 🥉 Bronze |  |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 

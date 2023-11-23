@@ -255,7 +255,8 @@ nav:
         - Candles: v2-strategies/candles-feed.md
         - Controllers: v2-strategies/controllers.md
         - Executors: v2-strategies/executors.md
-        - Strategy Config Example: v2-strategies/config.md
+        - Order Levels: v2-strategies/order-levels.md
+        - DMan Strategies: v2-strategies/config.md
       - V1 Strategies:
         - V1 Strategies: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
@@ -291,6 +292,7 @@ nav:
         - BTC Markets: exchanges/btc-markets.md
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
+        - Foxbit: exchanges/foxbit.md
         - HitBTC: exchanges/hitbtc.md
         - Hotbit: exchanges/hotbit.md
         - Kraken: exchanges/kraken/index.md
@@ -306,6 +308,7 @@ nav:
         - Polkadex 🥈: exchanges/polkadex.md
         - Injective Helix 🥈: exchanges/injective.md
         - Mad Meerkat: exchanges/mad-meerkat.md
+        - Curve: exchanges/curve.md
         - OpenOcean: exchanges/openocean.md
         - Pancakeswap : exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
