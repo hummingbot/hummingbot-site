@@ -22,7 +22,7 @@ Currently, MEXC is a **Bronze** exchange, as voted by HBOT holders in each quart
 - **Website**: <https://www.mexc.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/mexc/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/mexcglobal>
-- **API Docs**: <https://mxcdevelop.github.io/apidocs/spot_v3_en/#introduction>
+- **API Docs**: <https://www.mexc.com/mexc-api>
 - **Fees**: <https://www.mexc.com/fee>
 - **Supported Countries**: Worldwide
 

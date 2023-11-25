@@ -1,22 +1,22 @@
 HBOT holders can vote on four types of proposals:
 
-* [**Pull Request Proposal (PRP)**](#pull-request-proposals): To review and merge a non-connector pull request to the Hummingbot codebase
-* [**New Connector Proposal (NCP)**](#new-connector-proposals): To review and merge a pull request to add a new CEX, DEX, or L1/L2 blockchain network connector to the Hummingbot codebase
-* [**Hummingbot Improvement Proposal (HIP)**](#hummingbot-improvement-proposals): To fund an bounty to fix a bug or add an enhancement to the Hummingbot codebase
-* [**Hummingbot Governance Proposal (HGP)**](#hummingbot-governance-proposals): To conduct Polls and non-code related treasusry expenditures
-
-!!! tip
-    Vote in the main [hbot.eth](https://snapshot.org/#/hbot.eth) space and use the various sub-spaces to propose new connectors, bounties, and pull requests!
+* [**Pull Request Proposal (PRP)**](#pull-request-proposals): To merge a non-Connector pull request into the Hummingbot codebase
+* [**New Connector Proposal (NCP)**](#new-connector-proposals): To add a new [Connector](/exchanges/) to the Hummingbot codebase
+* [**Hummingbot Improvement Proposal (HIP)**](#hummingbot-improvement-proposals): To propose a [Bounty](/bounties)
+* [**Hummingbot Governance Proposal (HGP)**](#hummingbot-governance-proposals): To conduct [Polls](/governance/polls), elect Board of Directors, and implement other governance system changes
 
 Each proposal type has different parameters:
 
-| Type                | Pull Request              | New Connector           |Improvement             | Governance (MAIN) |
+| Type                | Pull Request              | New Connector           |Improvement             | Governance |
 | ---------------------------- | ------------------------- | ----------------------- | ---------------------- | ------------------------ |
 | Snapshot Space               | [hbot-prp.eth](https://snapshot.org/#/hbot-prp.eth) | [hbot-ncp.eth](https://snapshot.org/#/hbot-ncp.eth) | [hbot-ip.eth](https://snapshot.org/#/hbot-ip.eth) | [hbot.eth](https://snapshot.org/#/hbot.eth) |
 | Vote Duration                | 7 days                    | 7 days                 | 7 days                  | 7 days                    |
 | Minimum HBOT Balance         | 1                         | 200,000                |10,000                  | 50,000                   |
 | Quorum (% Circulating Supply)            | 0.1% | 1% | 3% | 10% |
 | Approval Threshold           | >50%   | >50% | >50%  | >50% |
+
+!!! tip
+    You can see all proposals from the main [hbot.eth](https://snapshot.org/#/hbot.eth) Snapshot space.
 
 !!! note
     See the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current Quorum Percentage, which is based on the HBOT circulating supply.
@@ -40,7 +40,7 @@ To be considered valid, a PRP should contain the following fields (otherwise the
 ### New Connector Proposals
 
 * New Connector Proposals (NCP) let HBOT holders **approve new connectors** for merge and inclusion into the Hummingbot codebase.
-* Connectors are integrations to centralized exchanges (CEX), decentralized exchanges (DEX), and L1/L2 blokchain networks
+* [Connectors](/exchanges) are integrations to centralized exchanges (CEX), decentralized exchanges (DEX), and L1/L2 blockchain networks
 * Since reviewing, merging, and maintaining connectors requires more effort than normal pull requests, this proposal type 
 * Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a NCP at the Snapshot sub-space: <https://snapshot.org/#/hbot-ncp.eth>.
 * Similar to PRPs, the proposal should include a link to a valid pull request in the Hummingbot code repository. See [Contribution Guidelines](/developers/contributions/) for more information about the process of creating a valid pull request.
@@ -54,10 +54,10 @@ To be considered valid, a NCP should contain the following fields (otherwise the
 
 ### Hummingbot Improvement Proposals
 
-* Hummingbot Improvement Proposals (HIP) let HBOT holders **propose developer bounties** for improvements or fixes to the Hummingbot codebase
+* Hummingbot Improvement Proposals (HIP) let HBOT holders propose [Bounties](/bounties) for improvements to the Hummingbot codebase, content that educates the user base, and/or other programs that benefit the Hummingbot community.
 * HIPs may name a specific developer, in which case the bounty is assigned to the developer if it is approved. If not, the Foundation will mark the bounty as Open and publicize it to the community.
 * Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HIP at the Snapshot sub-space: <https://snapshot.org/#/hbot-hip.eth>
-* Before creating an HIP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposal-discussions** channel to gauge whether the requested HBOT amount is appropriate.
+* Before creating an HIP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposals** channel to gauge whether the requested HBOT amount is appropriate.
 * If the HIP is approved after the Vote Duration and the Quorum Percentage is met, then the Foundation will create a [Bounty](/governance/bounties) and follow the assignation process.
 
 To be considered valid, a HIP should contain the following fields (otherwise the Foundation may close it):
@@ -69,12 +69,11 @@ To be considered valid, a HIP should contain the following fields (otherwise the
 
 ### Hummingbot Governance Proposals
 
-* Hummingbot Governance Proposals (HGP) are generally used by the Foundation to **conduct regular polls** that allow HBOT holders to decide how engineering bandwidth should be allocated across the exchanges, strategies, and issues in the codebase.
-* The Foundation also uses an HGP to elects its [Board of Directors](/about/#board-of-directors) every year.
-* In addition, HGPs are used to propose HBOT allocations for non-development purposes, such as community incentives and liquidity mining programs.
-
+* Hummingbot Governance Proposals (HGP) are generally used by the Foundation to **conduct regular polls** that allow HBOT holders to decide which [Connectors](/exchanges) should be retained and prioritized in future Hummingbot releases.
+* The Foundation also uses HGP to elects its [Board of Directors](/about/#board-of-directors) every year.
+* HGPs can also be used to propose changes to the Foundation governance system
 * Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HGP at the main Snapshot space: <https://snapshot.org/#/hbot.eth>.
-* Before creating an HGP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposal-discussions** channel to gauge whether the requested HBOT amount is appropriate.
+* Before creating an HGP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposals** channel to gauge whether the requested HBOT amount is appropriate.
 
 To be considered valid, an HGP should contain the following fields:
 

@@ -47,5 +47,5 @@ Github repo:
 
 PnL Analysis Jupyter Notebook created by one of our community members
 
-[PNL analysis notebook tutorial](https://support.hummingbot.io/hc/en-us/articles/4407436182553-PNL-analysis-notebook-tutorial?ref=blog.hummingbot.org)
+[PNL analysis notebook tutorial](https://support.hummingbot.io/miner/how-to-use-pnl-analysis-notebook)
 

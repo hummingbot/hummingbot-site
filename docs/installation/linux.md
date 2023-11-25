@@ -10,9 +10,9 @@ Supported versions:
 ### build-essentials
 
 On new Ubuntu instances, you may need to install the `build-essentials` package:
+
 ```
-sudo apt-get update
-sudo apt-get install -y build-essential
+sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
 ```
 
 ### Miniconda / Anaconda
@@ -102,7 +102,7 @@ To get started with Hummingbot, check out the following docs:
 
 * [Post Installation](./post-installation.md)
 * [Basic Features](/client/)
-* [Quickstart Guide](/quickstart/)
+* [Quickstart Guide](../getting-started/custom-script/index.md)
 * [Hummingbot FAQ](/faq/)
 
 If you need to run DEX bots, install [Hummingbot Gateway](/gateway).

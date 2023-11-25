@@ -2,6 +2,10 @@ Hummingbot is an open source framework for building high-frequency trading bots 
 
 Launched in April 2019, Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies. Hummingbot was originally built and open sourced by [CoinAlpha](https://coinalpha.com), a software startup and liquidity provider backed by Initialized Capital, Bain Capital Ventures, and other leading investors.
 
+Read the original [Hummingbot whitepaper](/hummingbot.pdf) and the [origin story](/blog/2019/03/08/the-hummingbot-origin-story-why-build-an-open-source-market-making-bot/) blog post for more details.
+
+Later, the Hummingbot team wrote the [Liquidity Mining whitepaper](/liquidity-mining.pdf) that described an economic model for decentralized market making and subsequently [launched the Miner liquidity mining platform](/blog/2020/03/03/liquidity-mining-launch/).
+
 In December 2021, CoinAlpha spun off the Hummingbot Foundation as a new open source entity that maintains the Hummingbot Github repository and administers a decentralized, community-driven system of software development.
 
 Today, Hummingbot is a bazaar-style open source project with many contributors and users around the world, both individual and professional.

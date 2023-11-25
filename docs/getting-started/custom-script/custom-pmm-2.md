@@ -189,4 +189,4 @@ Run the `history` command to see all the trades that you have performed and the 
 
 ## Next steps
 
-Scripts also let you customize Hummingbot's `status` command so that you can see the metrics that matter to you! Let's learn how in [the next exercise](/quickstart/custom-pmm-3/)!
+Scripts also let you customize Hummingbot's `status` command so that you can see the metrics that matter to you! Let's learn how in [the next exercise](custom-pmm-3.md)!
