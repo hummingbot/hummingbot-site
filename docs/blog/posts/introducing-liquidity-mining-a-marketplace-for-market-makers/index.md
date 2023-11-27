@@ -52,7 +52,7 @@ Similar to how digital marketplaces such as Google Ads and Uber revolutionized i
 
 In this marketplace for liquidity, buyers can create campaigns that reward sellers for making markets in designated tokens and exchanges.  Reward payments can be mapped to objective, observed actions of liquidity sellers.
 
-We call this **Liquidity Mining** because the concept is similar to proof-of-work mining. Rather than setting up a mining rig and using electricity, users utilize computational power and token inventory to run the Hummingbot market making client. By competing with other participants to earn economic incentives, their combined efforts can achieve a common goal, providing liquidity for a specific token and exchange. In return, they are compensated proportional to their work, according to an algorithmically defined model. For more details, please see the [Liquidity Mining whitepaper](/liquidity-mining.pdf).
+We call this **Liquidity Mining** because the concept is similar to proof-of-work mining. Rather than setting up a mining rig and using electricity, users utilize computational power and token inventory to run the Hummingbot market making client. By competing with other participants to earn economic incentives, their combined efforts can achieve a common goal, providing liquidity for a specific token and exchange. In return, they are compensated proportional to their work, according to an algorithmically defined model. For more details, please see the [Liquidity Mining whitepaper](../liquidity-mining-whitepaper/index.md).
 
 ![](liquidity-mining-platform.png)
 

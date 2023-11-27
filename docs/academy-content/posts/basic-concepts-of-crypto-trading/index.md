@@ -174,8 +174,8 @@ Hummingbot's minimum order size is denominated in base asset. If a certain excha
 
 Some exchanges have no web pages where you can view the minimum order size. For example in KuCoin, you have to use an application like Postman to get REST API data. See doc below :
 
-[KuCoin - hummingbot docs](/exchanges/kucoin/index.md)
-[https://hummingbot.org/exchanges/kucoin/](/exchanges/kucoin/index.md)
+[KuCoin - hummingbot docs](../../../exchanges/kucoin/index.md)
+[https://hummingbot.org/exchanges/kucoin/](../../../exchanges/kucoin/index.md)
 
 [![Postman API tutorial for beginners](https://img.youtube.com/vi/FjgYtQK_zLE/0.jpg)](https://www.youtube.com/embed/FjgYtQK_zLE)
 

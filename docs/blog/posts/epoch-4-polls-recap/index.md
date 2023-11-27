@@ -19,7 +19,7 @@ This week, we completed the Epoch 4 polls, which prioritizes exchanges and strat
 There were two changes for this quarterly poll to improve transparency and decentralization:
 
 - Weighted voting type on Snapshot: Change from Quadratic to Weighted allows the community to determine the 100K minimum inclusion threshold  for connectors and strategies more clearly.
-- Delegation system was terminated: More voting power is now distributed among community members since [the delegation system has ended](../2023-03-end-delegation/index.md) on 28 February 2023.
+- Delegation system was terminated: More voting power is now distributed among community members since [the delegation system has ended](../end-of-hbot-delegation/index.md) on 28 February 2023.
 
 Below, we summarize the results of the Epoch 4 Polls and outline the changes we'll make over the next quarter.
 

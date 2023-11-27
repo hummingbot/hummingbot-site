@@ -52,7 +52,7 @@ We expect AscendEx liquidity mining campaigns on Hummingbot Miner to start in Ju
 
 ## Other Hummingbot initiatives in Q2
 
-**Avellaneda market making**: We recently released [a new market making strategy](../guide-to-the-avellaneda-stoikov-strategy/index.md) based on the classic [Avellaneda-Stoikov market making paper](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf). Because this strategy has a more theoretically sound and academically rigorous foundation, we aim to make this strategy the initial strategy used by new Hummingbot market makers.
+**Avellaneda market making**: We recently released [a new market making strategy](../../../academy-content/posts/guide-to-the-avellaneda-stoikov-strategy/index.md) based on the classic [Avellaneda-Stoikov market making paper](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf). Because this strategy has a more theoretically sound and academically rigorous foundation, we aim to make this strategy the initial strategy used by new Hummingbot market makers.
 
 In the next few releases, we plan to port commonly used features from `pure_market_making` to `avellenada_market_making`, as well as move Avellaneda's inventory risk model into the `liquidity_mining` strategy.
 

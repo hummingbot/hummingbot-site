@@ -80,7 +80,7 @@ trade on a slower market but based your price source on a faster market in which
 You can read more over [here](../commands-and-configs-price-source/index.md).
 
 As Hummingbot is catered to a more trader-developer type of audience, you can customize such features via custom scripts 
-or contribute to the strategy in the codebase. One of the popular scripts to control sudden spread movements is [spreads_adjusted_on_volatility_script](https://github.com/hummingbot/hummingbot/blob/master/scripts/spreads_adjusted_on_volatility_script.py)  and the integration of external signals is on the product roadmap. 
+or contribute to the strategy in the codebase. One of the popular scripts to control sudden spread movements is [spreads_adjusted_on_volatility_script](https://github.com/hummingbot/hummingbot/blob/master/scripts/)  and the integration of external signals is on the product roadmap. 
 
 In sum, both bots have similar basic market making features but the more advanced features vary. Cryptohopper’s 
 more advanced features are catered to traders who tend to trade based on technical analysis and market trends and want to 

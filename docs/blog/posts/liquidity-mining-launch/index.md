@@ -71,7 +71,7 @@ To find out more about how annual returns are calculated, please see this [sampl
 - **Liquidity Mining Dashboard** tab: sample of how the returns on the [Hummingbot Miner](https://miners.hummingbot.io) are calculated
 - **Liquidity Mining Rewards** tab: sample order book and how individual rewards for miners are calculated, showing the impact of order spreads as well as relative order sizes
 
-You can also read more about calculation methodology in the blog [Demystifying Liquidity Mining Rewards](../demystifying-liquidity-mining-rewards/index.md).
+You can also read more about calculation methodology in the blog [Demystifying Liquidity Mining Rewards](../../../academy-content/posts/demystifying-liquidity-mining-rewards/index.md).
 
 
 ### Quick start for liquidity mining

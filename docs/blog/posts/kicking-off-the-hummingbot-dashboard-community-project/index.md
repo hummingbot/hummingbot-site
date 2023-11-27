@@ -18,7 +18,7 @@ While we knew that a graphical user interface would make Hummingbot more user-fr
 
 <!-- more -->
 
-Fast forward to 2023, and today Hummingbot has grown into a larger open source ecosystem with diverse types of users globally who use it in a variety of ways. Thousands of individual users run Hummingbot out-of-the-box to earn rewards on the [Hummingbot Miner platform](https://miner.hummingbot.io/), while many institutional trading firms deploy dozens of heavily-customized Hummingbot instances.  In addition, the success of [Community Bounties](../2023-05-introducing-community-bounties/index.md) in fixing bugs and adding features have proven that a community development model can sustainably maintain Hummingbot operationally.
+Fast forward to 2023, and today Hummingbot has grown into a larger open source ecosystem with diverse types of users globally who use it in a variety of ways. Thousands of individual users run Hummingbot out-of-the-box to earn rewards on the [Hummingbot Miner platform](https://miner.hummingbot.io/), while many institutional trading firms deploy dozens of heavily-customized Hummingbot instances.  In addition, the success of [Community Bounties](../introducing-community-bounties/index.md) in fixing bugs and adding features have proven that a community development model can sustainably maintain Hummingbot operationally.
 
 Today, we are excited to official launch [Hummingbot Dashboard](https://github.com/hummingbot/dashboard), an open source graphical control center that helps you launch and deploy a fleet of Hummingbot instances. You'll also be able to analyze the performance of each instance and adjust its settings in real-time!
 

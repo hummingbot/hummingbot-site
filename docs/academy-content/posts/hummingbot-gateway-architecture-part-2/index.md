@@ -184,6 +184,6 @@ We are putting the architectural proposals detailed in this blog series into cod
 
 In the meantime, we welcome feedback from the developer community. If you have any suggestions for Hummingbot Gateway v2, feel free to drop us a message in the **#developer-chat** channel in our Discord server. 
 
-For projects and exchanges seeking to integrate with Gateway, please contact us to get access to a private ****#**gateway** channel for technical support from our developers.
+For projects and exchanges seeking to integrate with Gateway, please contact us to get access to a private **#gateway** channel for technical support from our developers.
 
 

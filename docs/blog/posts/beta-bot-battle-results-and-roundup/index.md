@@ -10,7 +10,7 @@ categories:
 
 [![](cover.webp)](cover.webp)
 
-The [Beta Bot Battle](/blog/2023/09/12/join-the-beta-bot-battle/) has concluded, and we're thrilled to present the outcomes to the broader Hummingbot community!
+The [Beta Bot Battle](../join-the-beta-bot-battle/index.md) has concluded, and we're thrilled to present the outcomes to the broader Hummingbot community!
 
 Over a 48-hour period in September, Hummingbot users competed to see whose bots could earn the most profits and trade the highest volume, starting with an 100 USDT initial balance on Binance.
 

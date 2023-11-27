@@ -75,7 +75,7 @@ To create a connection to an exchange (if you haven’t already), you can type `
 
 After that, Hummingbot will ask you to input your **exchange API keys**.
 
-Each exchange will have its own way to create these keys. If you don’t know how to create them, we have [a guide for each supported exchange on our documentation page](/exchanges/index.md).
+Each exchange will have its own way to create these keys. If you don’t know how to create them, we have [a guide for each supported exchange on our documentation page](../../../exchanges/index.md).
 
 If you are using a decentralized exchange on the Ethereum blockchain, the `connect ethereum` command will allow you to add your wallet private keys, so the bot will be able to interact with the protocol.
 
@@ -93,7 +93,7 @@ As an [open-source project](https://github.com/hummingbot/hummingbot), anyone in
 
 But if you aren’t a developer, you can instead [create a request on our Github repo](https://github.com/hummingbot/hummingbot/issues?q=is%3Aopen+is%3Aissue+label%3Aconnector), asking for your favorite exchange to be added- or look for help from our community developers also on our [Discord server](https://discord.com/invite/2MN3UWg).
 
-We are also working on giving more power to our community.  We recently completed our [second governance vote](../2020-10-governance-proposal-2/index.md), which allowed our liquidity miners to vote for the next connector to be officially supported and included in the next release.
+We are also working on giving more power to our community.  We recently completed our [second governance vote](../../../blog/posts/changes-to-hummingbot-maintenance-and-governance/index.md), which allowed our liquidity miners to vote for the next connector to be officially supported and included in the next release.
 
 **create & import**
 
@@ -116,7 +116,7 @@ With this strategy you can execute arbitrage operations between the [Celo blockc
 
 Besides the profit opportunity from the arbitrage, using this strategy also functions as a way to help keep the cUSD price close to 1 USD.
 
-You can learn more about how this strategy works on the [blog announcement](../introducing-the-celo-arbitrage-bot/index.md).
+You can learn more about how this strategy works on the [blog announcement](../../../blog/posts/introducing-the-celo-arbitrage-bot/index.md).
 
 `cross_exchange_market_making`
 

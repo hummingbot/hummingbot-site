@@ -17,7 +17,7 @@ Hummingbot Foundation started conducting quarterly Polls to give HBOT holders a 
 
 The first set of polls began in January 2023 and will occur during the first week of each month going forward. Votes are calculated using Quadratic Voting, in order to give more power to individual voters. The polls run for one week each, after which the Foundation will put into effect the changes to the exchange and strategy tiers in the following monthly release.
 
-See the [Polls](/governance/polls.md) documentation to learn more about them.
+See the [Polls](../../../governance/polls.md) documentation to learn more about them.
 
 ## After a Poll, how are exchange ranked?
 

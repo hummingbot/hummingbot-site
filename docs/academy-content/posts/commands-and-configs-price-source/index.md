@@ -15,7 +15,7 @@ tags:
 
 Welcome back to the series of articles where you will learn how to make the best use of your Hummingbot configurations.
 
-In the two latest articles ([Part 1](../commands-and-configs-part-1/) and [Part 2](../commands-and-configs-part-1/)), we went through all the commands you can use on your client terminal and the global configurations.
+In the two latest articles ([Part 1](../commands-and-configs-part-1/) and [Part 2](../commands-and-configs-part-2/)), we went through all the commands you can use on your client terminal and the global configurations.
 
 Today we will talk about the configuration settings related to the markets and the price information, and how you can use them for your benefit.
 
@@ -59,7 +59,7 @@ It is like a big sea, where each exchange is an island with its own population, 
 
 #### Price information travels, and arbitrageurs are the ships
 
-As we already know, the inefficiencies caused by the highly fragmented cryptocurrency market create a lot of opportunities for arbitrageurs, who can take advantage of the price discrepancies between all the markets. You can set up your own arbitrage bot with Hummingbot too, and learn more about how arbitrage works:  [What is arbitrage?](../2020-09-what-is-arbitrage/index.md)
+As we already know, the inefficiencies caused by the highly fragmented cryptocurrency market create a lot of opportunities for arbitrageurs, who can take advantage of the price discrepancies between all the markets. You can set up your own arbitrage bot with Hummingbot too, and learn more about how arbitrage works:  [What is arbitrage?](../what-is-arbitrage/index.md)
 
 
 But what makes the arbitrage operations interesting regarding this current discussion is that they are the main actors that reconcile the price differences between all these different markets.

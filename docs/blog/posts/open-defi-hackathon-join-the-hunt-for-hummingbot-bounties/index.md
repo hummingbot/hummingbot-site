@@ -36,7 +36,7 @@ The first bounty will be offered for creating a new strategy.
 
 Developers are free to create any type of strategy, so get creative and surprise our community with an innovative way to use Hummingbot.
 
-To prepare for this bounty, take a look at the [strategy folder of our source code](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) and the [documentation page related to new strategies](/strategies/index.md).
+To prepare for this bounty, take a look at the [strategy folder of our source code](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) and the [documentation page related to new strategies](../../../strategies/index.md).
 
 For inspiration, take a look around the [open issues on Hummingbot Repository](https://github.com/hummingbot/hummingbot/issues). There are some interesting ideas there.
 

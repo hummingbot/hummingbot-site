@@ -40,7 +40,7 @@ While rehashing those articles is outside the scope of this post, we note that t
 
 ### How are Hummingbot and Uniswap similar?
 
-Both Hummingbot and Uniswap enable users to profit from providing **liquidity**, a huge problem for many crypto projects. In past blog posts, we've written about [why liquidity is beneficial](../how-to-think-about-liquidity-blockcrunch/index.md) and [what happens when liquidity is missing](../the-thin-crust-of-liquidity/index.md). 
+Both Hummingbot and Uniswap enable users to profit from providing **liquidity**, a huge problem for many crypto projects. In past blog posts, we've written about [why liquidity is beneficial](../../../blog/posts/how-to-think-about-liquidity-blockcrunch/index.md) and [what happens when liquidity is missing](../the-thin-crust-of-liquidity/index.md). 
 
 Moreover, both Hummingbot and Uniswap users can provide liquidity for **decentralized, non-custodial trading venues**. Lack of liquidity currently prevents decentralized, non-custodial exchanges (DEX) from being a compelling alternative to centralized exchanges. As Hummingbot, Uniswap, and other projects improve liquidity for DEXs, we believe that more and more users will choose them over centralized exchanges that carry the risk of [hacks](https://www.coindesk.com/bithumb-exchanges-31-million-hack-know-dont-know) and [outright frauds](https://www.cbc.ca/news/canada/nova-scotia/quadrigacx-cryptocurrency-exchange-bankruptcy-1.5089539).
 

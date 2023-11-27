@@ -76,7 +76,7 @@ Despite being a small startup, CoinAlpha was able to devote these resources to H
 
 ![](./Screen_Shot_2021-10-01_at_1.54.19_PM.png)
 
-Liquidity mining creates a 2-sided marketplace for liquidity (source: [liquidity mining whitepaper]())
+Liquidity mining creates a 2-sided marketplace for liquidity (source: [liquidity mining whitepaper](../liquidity-mining-whitepaper/index.md))
 
 When we wrote the original liquidity mining whitepaper, the crypto liquidity industry was dominated by market makers who were able to charge small token issuers and exchanges exorbitant fees because there was no option for liquidity.
 
