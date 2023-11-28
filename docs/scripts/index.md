@@ -1,6 +1,6 @@
 Scripts enable Hummingbot users to build customized strategies and access the full power of Hummingbot exchange connectors in a few lines of Python code.
 
-Introduced in version [1.4.0](../release-notes/1.4.0.md), **Scripts** offer users an easier alternative to creating a full-blown [Strategy](/strategies). Scripts are light Python files that can be run and modified without re-compilation, so users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface**.
+Introduced in version [1.4.0](../release-notes/1.4.0.md), **Scripts** offer users an easier alternative to creating a full-blown [Strategy](../strategies/index.md). Scripts are light Python files that can be run and modified without re-compilation, so users can `stop` a script, adjust the code, and `start` it without leaving the Hummingbot client interface**.
 
 !!! note Restart Hummingbot
      Should your script run into an error, it's crucial that you exit Hummingbot entirely, correct or debug the faulty script, and then restart Hummingbot. The stop command won't rectify the issue in case of an error. To get back on track, a complete shutdown and subsequent relaunch of Hummingbot is required.
@@ -9,7 +9,7 @@ Unlike strategies, scripts can be created without configuration files, so only a
 
 ## Script Examples
 
-See [Script Examples](examples) for a list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
+See [Script Examples](examples.md) for a list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
 
 - Place orders
 - Listen to order book events
@@ -18,21 +18,21 @@ See [Script Examples](examples) for a list of the current sample scripts in the 
 - Process the events produced by the connectors related to the orders lifecycle
 - And much more!
 
-We regularly add new sample scripts developed by Botcamp students and Hummingbot Foundation staff, and we also welcome new sample script contributions from users! To do so, follow the [Contribution Guidelines](/developers/contributions).
+We regularly add new sample scripts developed by Botcamp students and Hummingbot Foundation staff, and we also welcome new sample script contributions from users! To do so, follow the [Contribution Guidelines](../developers/contributions.md).
 
 ## Learning Scripts
 
 If you'd like to learn how to build custom quant trading using Scripts, check out [Hummingbot Botcamp](https://hummingbot.org/botcamp), an intensive, small-batch bootcamp that teaches you **how to build your own custom algo trading strategy in only 6 weeks**. Each cohort of Botcamp culminates in a Demo Day where students present their custom scripts and compete for HBOT rewards and the glory of victory!
 
 ## Candles Feed
-Introduced in version [1.13.0](/release-notes/1.13.0/#custom-ohlcv-candles), the Candles Feed helps users to generate custom OHLCV candles using both historical and live Websocket data, allowing traders to create real-time custom technical indicators using [pandas_ta](https://github.com/twopirllc/pandas-ta) that can be used in a variety of ways.
+Introduced in version [1.13.0](../release-notes/1.13.0.md), the Candles Feed helps users to generate custom OHLCV candles using both historical and live Websocket data, allowing traders to create real-time custom technical indicators using [pandas_ta](https://github.com/twopirllc/pandas-ta) that can be used in a variety of ways.
 
-See [Candles Feed](https://hummingbot.org/v2-strategies/candles-feed/) for docs on this feature.
+See [Candles Feed](../v2-strategies/candles-feed.md) for docs on this feature.
 
 ## Additional Resources
 
-- [Quickstart Guide](/quickstart) to learn how to create and customize a market making strategy using Scripts
+- [Quickstart Guide](../academy-content/posts/quickstart-custom-script/custom-pmm-0.md) to learn how to create and customize a market making strategy using Scripts
 
-- [Scripts Cheatsheet](/scripts/cheatsheet): Check out the cheatsheet or the [PDF version](/scripts/cheatsheet.pdf) that highlights the most commonly used methods available when writing scripts
+- [Scripts Cheatsheet](cheatsheet.md): Check out the cheatsheet or the [PDF version](cheatsheet.pdf) that highlights the most commonly used methods available when writing scripts
 
 - [Debugging Scripts with PyCharm](https://www.youtube.com/watch?v=2O6Ge25rsLk): This video shows you how to debug Scripts at runtime with the PyCharm IDE
