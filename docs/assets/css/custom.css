@@ -314,35 +314,29 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   font-weight: 700;
 }
 
-/* Botcamp Logos */
+/* Logo Grids */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.flex-item {
+.botcamp > .flex-item {
   flex-basis: calc(25% - 10px);  /* adjust this value for different screen sizes */
   margin: 5px;
 }
 
-.flex-item img {
+.botcamp > .flex-item img {
   padding: 1rem 3rem;
   width: 100%;
   height: auto;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .flex-item {
-    flex-basis: 100%;
-  }
-} */
-
 @media (max-width: 768px) {
-  .flex-item {
+  .botcamp > .flex-item {
     flex-basis: calc(50% - 10px);
   }
-  .flex-item img {
+  .botcamp > .flex-item img {
     padding: 3rem 1rem;
   }
 }

@@ -81,36 +81,36 @@ hide:
 
 # Join Traders and Engineers from Top Institutions
 
-<div class="flex-container">
+<div class="flex-container botcamp">
   <div class="flex-item">
-    <img src="logos/binance.png" />
+    <img src="/assets/logos/binance.png" />
   </div>
   <div class="flex-item">
-    <img src="logos/ripple-dark.png" class="dark-logo"/>
-    <img src="logos/ripple-light.png" class="light-logo"/>
+    <img src="/assets/logos/ripple-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/ripple-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="logos/salesforce.png"/>
+    <img src="/assets/logos/salesforce.png"/>
   </div>
   <div class="flex-item">
-    <img src="logos/apple-dark.png" class="dark-logo"/>
-    <img src="logos/apple-light.png" class="light-logo"/>
+    <img src="/assets/logos/apple-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/apple-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="logos/harvard-dark.png" class="dark-logo"/>
-    <img src="logos/harvard-light.png" class="light-logo"/>
+    <img src="/assets/logos/harvard-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/harvard-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="logos/outlier-dark.png" class="dark-logo"/>
-    <img src="logos/outlier-light.png" class="light-logo"/>
+    <img src="/assets/logos/outlier-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/outlier-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="logos/decrypt-dark.png" class="dark-logo"/>
-    <img src="logos/decrypt-light.png" class="light-logo" />
+    <img src="/assets/logos/decrypt-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/decrypt-light.png" class="light-logo" />
   </div>
   <div class="flex-item">
-    <img src="logos/avantgarde-dark.png" class="dark-logo" />
-    <img src="logos/avantgarde-light.png" class="light-logo" />
+    <img src="/assets/logos/avantgarde-dark.png" class="dark-logo" />
+    <img src="/assets/logos/avantgarde-light.png" class="light-logo" />
   </div>
 </div>
 

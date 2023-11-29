@@ -368,8 +368,8 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
     - Bounties: bounties/index.md
-    - For Sponsors: bounties/sponsors.md
-    - For Contributors: bounties/contributors.md
+    - Bounty Sponsors: bounties/sponsors.md
+    - Bounty Contributors: bounties/contributors.md
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
@@ -382,6 +382,7 @@ nav:
   - About:
     - About: about/index.md
     - FAQ: faq.md
+    - Sponsors: about/sponsors.md
     - Board of Directors: governance/board.md
     - Reported Volumes: reporting.md
     - History: about/history.md

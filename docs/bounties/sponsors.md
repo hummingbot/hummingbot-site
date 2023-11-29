@@ -31,7 +31,7 @@ There are two paths that bounty sponsors can take:
 
 * **Managed Bounties Wallet**: Sponsor Hummingbot Foundation and we manage a multi-sig Bounties Wallet to build, maintain, and promote your connectors. For more information, see the presentation below:
 
-[Hummingbot Partners Deck](/assets/hummingbot_partners_deck.pdf){ .md-button .md-button--primary}
+[:fontawesome-solid-handshake-simple: Hummingbot Partnership Deck](/assets/hummingbot_partners_deck.pdf){ .md-button .md-button--primary}
 
 
 ## Handling Fee
