@@ -4,16 +4,13 @@ authors:
   - coinalpha
 categories:
   - Announcements
-  - Governance
 ---
 
 # Introducing the Hummingbot Foundation
 
-A new experimental organization that will coordinate the ongoing maintenance and improvement of Hummingbot via a decentralized set of actors
-
 ![](cover.webp)
 
-<!-- more -->
+Hummingbot Foundation is a new experimental organization that will coordinate the ongoing maintenance and improvement of Hummingbot via a decentralized set of actors.
 
 ## Summary
 
@@ -24,6 +21,8 @@ A new experimental organization that will coordinate the ongoing maintenance and
 - Launch contributions from long-time community members include a new triangular arbitrage strategy, TradingView webhooks, and a web GUI for Hummingbot
 - Because Foundation will earn income from existing exchange fee share agreements and administering bounties, it is expected to be **self-sustainable at inception**
 - The Foundation is intended to represent a new experiment in decentralized governance that will set a template for other open source projects to follow
+
+<!-- more -->
 
 ## The problem with open source
 
@@ -133,19 +132,19 @@ Based on the income generated from these sources, the Foundation expects to be s
 
 CoinAlpha is launching the Foundation alongside a set of sponsors who are making long-term commitment to support the Foundation by funding bounties and grants that incentivize contributors to the Hummingbot codebase.
 
-## Harmony
+### Harmony
 
 Harmony ([https://www.harmony.one](https://www.harmony.one)) is an open and fast blockchain. Harmony's mainnet runs Ethereum applications with 2-second transaction finality and 100 times lower fees, and its secure bridges offer cross-chain transfers with Ethereum, Binance and 3 other chains.
 
-## Avalanche
+### Avalanche
 
 Avalanche ([https://www.avax.network](https://www.avax.network)) is the fastest smart contracts platform in the blockchain industry, as measured by time-to-finality, and has the most validators securing its activity of any proof-of-stake protocol. Avalanche is blazingly fast, low cost, and green. Any smart contract-enabled application can outperform its competition by deploying on Avalanche.
 
-## Polygon
+### Polygon
 
 Polygon ([https://polygon.technology](https://polygon.technology)) is the first well-structured, easy-to-use platform for Ethereum scaling and infrastructure development. Its core component is Polygon SDK, a modular, flexible framework that supports building multiple types of applications.
 
-## Kava
+### Kava
 
 Kava ([https://kava.io](https://kava.io)) is a secure, highly scalable Layer-1 network and ecosystem that aims to be a home for best-in-class DeFi services. Built using the Cosmos SDK and featuring institutional-grade security, Kava’s goal is to unlock the value of DeFi for mainstream users by providing a trusted, streamlined environment that is ready to meet global demand.
 
@@ -153,7 +152,7 @@ Kava ([https://kava.io](https://kava.io)) is a secure, highly scalable Layer-1 n
 
 In addition to sponsors, certain long-term Hummingbot community members are making significant contributions to the codebase to celebrate the launch of the Foundation:
 
-## Triangular arbitrage strategy (Linq)
+### Triangular arbitrage strategy (Linq)
 
 Triangular arbitrage is the act of exploiting an arbitrage opportunity resulting from a pricing discrepancy among three different assets in a cryptocurrency market. A triangular arbitrage strategy involves three trades, exchanging the initial currency for a second, the second currency for a third, and the third currency for the initial. During the second trade, the arbitrageur locks in a near zero-risk profit from the discrepancy that exists when the market cross exchange rate is not aligned with the implicit cross exchange rate. A profitable trade is only possible if there exist market imperfections.
 
@@ -161,7 +160,7 @@ Linq will create a strategy for Hummingbot that performs triangular arbitrage on
 
 Linq ([https://linq.network](https://linq.network)) is a Toronto-based firm that specializes in liquidity and market making services for institutional clients and exchanges.
 
-## Hummingbot web GUI (Autonio Foundation)
+### Hummingbot web GUI (Autonio Foundation)
 
 Autonio Foundation will build a web application with a graphical interface (GUI) for the Hummingbot terminal (the "Web GUI"), which will offer users an easy way to create a trading bot by selecting their preferred exchange, trading pair, trading strategy and its parameters. Once a strategy is created the user can download a strategy configuration file that will then deploy an instance of Hummingbot with the selected strategy parameters.
 
@@ -171,7 +170,7 @@ Autonio Foundation has agreed to create create this web application and contribu
 
 Autonio Foundation ([https://www.autonio.foundation](https://www.autonio.foundation)) is a decentralized autonomous organization (DAO) built around developing accessible, easy to use and affordable trading tools and services for the DeFi ecosystem.
 
-## TradingView Webhooks (Individual Contributors)
+### TradingView Webhooks (Individual Contributors)
 
 TradingView is a popular web-based charting and scripting tool. This feature allows users to control Hummingbot strategies using TradingView PineScript.
 

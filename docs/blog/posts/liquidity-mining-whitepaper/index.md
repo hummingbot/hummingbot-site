@@ -9,9 +9,9 @@ categories:
 
 # Liquidity Mining Whitepaper
 
-![](cover.webp)
+![](cover.png)
 
-This summary provides an overview of the [Liquidity Mining whitepaper](../../../liquidity-mining.pdf), which introduced a novel approach to liquidity provision in digital asset markets. 
+This summary provides an overview of the [Liquidity Mining whitepaper](/liquidity-mining.pdf), which introduced a novel approach to liquidity provision in digital asset markets. 
 
 The document explores the historical context behind market making, the state of crypto market making in 2019, compensation models, and proposing an innovative liquidity mining model aimed at optimizing the market making process.
 

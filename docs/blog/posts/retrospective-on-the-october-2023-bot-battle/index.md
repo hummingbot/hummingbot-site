@@ -9,7 +9,7 @@ categories:
 
 # Retrospective on the October 2023 Bot Battle
 
-![cover](cover.webp)
+![cover](/v2-strategies/)
 
 October 2023 was a particularly notable month since it marked the official Bot Battle, an exclusive monthly bot trading competition for Botcamp members. With eyes set on the prize and minds focused on performance, we embarked on a journey that tested both our strategic prowess and our bots' capabilities.
 

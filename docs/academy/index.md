@@ -14,7 +14,7 @@ hide:
 
 -   #### :star: Featured
     
-    [![](/assets/thumbnails/composable-mm.jpg)](/blog/introducing-v2-strategies)
+    [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
 
     ## [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
@@ -26,7 +26,7 @@ hide:
 
     Learn how to use the new Dashboard app!
 
-    ### [Liquidity Mining with Hummingbot](/academy-content/introducing-v2-strategies)
+    ### [Liquidity Mining with Hummingbot](/academy-content/liquidity-mining-with-hummingbot/)
 
     Earn rewards by running bots on the Miner platform.
 
@@ -83,7 +83,7 @@ hide:
 
     ### [Mapping the Crypto Market Maker Landscape](/academy-content/mapping-the-crypto-market-maker-landscape/)
 
--   [![](/blog/hummingbot-whitepaper/cover.webp)](/blog/hummingbot-whitepaper/)
+-   [![](/blog/hummingbot-whitepaper/cover.png)](/blog/hummingbot-whitepaper/)
 
     ### [Hummingbot Whitepaper](/blog/hummingbot-whitepaper/)
 
@@ -185,9 +185,9 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/assets/thumbnails/composable-mm.jpg)](blog/introducing-v2-strategies/)
+-   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
 
-    ### [Introducing V2 Strategies](blog/introducing-v2-strategies/)
+    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
 -   [![](/academy-content/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
 
