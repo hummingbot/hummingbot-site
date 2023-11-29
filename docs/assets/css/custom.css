@@ -308,9 +308,11 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 }
 
 /* Announcement Bar */
-/* .md-banner {
+.md-banner {
   background-color: var(--md-typeset-a-color);
-} */
+  color: var(--md-default-bg-color);
+  font-weight: 700;
+}
 
 /* Botcamp Logos */
 .flex-container {

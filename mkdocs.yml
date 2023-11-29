@@ -49,6 +49,7 @@ theme:
     - navigation.prune
     - content.code.copy
     - toc.follow
+    - announce.dismiss
     # - content.tabs.link
     # - content.tooltips
     # - search.highlight
