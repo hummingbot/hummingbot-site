@@ -1,20 +1,25 @@
-## What is a strategy?
+![](./strategy-1.png)
 
-In the world of algorithmic trading, a strategy refers to a pre-defined set of rules and processes that define what an automated trading bot does.
+## Understanding Strategies in Algorithmic Trading
 
-A Hummingbot strategy is a program that executes a set of instructions every **clock tick**: fetching data, constructing signals, and deciding what orders/transactions to execute on various exchanges and blockchains:
+A strategy in algorithmic trading is a set of rules and processes that drive an automated trading bot, covering:
 
-* **Data Collection**: At the beginning of each clock tick, the strategy collects data from various sources. This could be market data, past trading data, or any other relevant information.
-* **Data Processing**: Once the data is collected, the strategy processes it. This involves analyzing the data, identifying patterns, and making decisions based on pre-defined rules or algorithms.
-* **Order Execution**: Based on the processed data, the strategy then executes orders. This could involve buying, selling, or holding assets.
+- **Data Collection**: Gathering various data types each tick.
+- **Data Processing**: Analyzing data to identify patterns and make decisions.
+- **Order Execution**: Making trading moves based on processed data.
 
-Since Hummingbot [connectors](../exchanges/index.md) standarize how orders and trades are created for each CEX and DEX, strategies can be designed to be exchange-agnostic. However, there may be advantages to customizing a strategy for a particular venue's idiosyncrasies.
+Leveraging Hummingbot [connectors](../exchanges/index.md), these strategies can function across different exchanges and blockchains, adaptable to the unique features of each trading venue.
 
-## Creating strategies with Hummingbot
+## Elevate Your Trading with Hummingbot's V2 Strategies
 
-Hummingbot offers its users several methods to create and customize strategies. These are:
+Hummingbot offers various strategy creation methods, with our [V2 Strategies](../v2-strategies/index.md) leading the pack. They represent the latest innovation in trading strategy development, designed for composability, access to real-time market data, and backtestability.
 
-* [V1 Strategies](../v1-strategies/index.md): These are templatized programs that provide a structured environment for your trading strategy. They expose a set of user-defined parameters, allowing you to customize the strategy's behavior without needing to dive deep into the code.
-* [V2 Strategies](../v2-strategies/index.md): Representing the latest and most advanced way to create strategies in Hummingbot, V2 strategies are built using composable elements known as "controllers" and "executors". These elements can be mixed and matched, offering a modular approach to strategy creation. This means you can easily reuse parts of your strategies in different configurations, making the development process faster and more efficient.
-* [Scripts](../scripts/index.md): For those who are looking for a lightweight solution, Hummingbot provides scripting support. These are single-file strategies that are quick to implement and can be an excellent starting point for those new to algorithmic trading.
-* [PMM Scripts (deprecated)](../scripts/pmm-scripts.md): PMM Scripts were an early experiment to let users customize Hummingbot, but they can only be used with the PMM strategy.
+**[Explore V2 Strategies](../v2-strategies/)** to harness the full potential of Hummingbot!
+
+## Other Strategy Creation Methods
+
+### [V1 Strategies](../v1-strategies/index.md)
+The original Hummingbot V1 strategies offer a structured, template-based environment with user-friendly parameters, but they are less customizable than V2 strategies.
+
+### [Scripts](../scripts/index.md)
+Ideal for beginners and those seeking a quick, straightforward approach, a script provides a lightweight solution in a single Python file.

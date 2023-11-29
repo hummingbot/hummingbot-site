@@ -175,21 +175,20 @@ nav:
       - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
       - Post-Installation: installation/post-installation.md
       - Brokers: installation/broker.md
-    - Hummingbot Client:
-      - Hummingbot Client: client/index.md
-      - User Interface Guide: client/user-interface.md
+    - Client:
+      - Client: client/index.md
+      - User Interface: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
       - Launch/Exit Hummingbot: client/launch-exit.md
       - Create/Delete Password: client/password.md
       - Connect Exchange API Keys: client/connect.md
-      - Create/Import Config Files: client/config-files.md
+      - Config Files: client/config-files.md
       - Check Balances: client/balance.md
-      - Start/Stop Strategy: client/start-stop.md
+      - Start Strategies and Scripts: client/start-stop.md
       - Check Bot/Market Status: client/status.md
       - Check Performance: client/history.md
       - Find Log Files: client/log-files.md
       - Export Trades/Keys: client/export.md
-      - Paper Trade: global-configs/paper-trade.md
       - Advanced Features:
         - Adding Commands: developers/commands.md
         - Balance Limit: global-configs/balance-limit.md
@@ -197,47 +196,34 @@ nav:
         - Command Line Autostart: global-configs/strategy-autostart.md
         - Color Settings: global-configs/color-settings.md
         - Connect External Database: global-configs/external-db.md
-        - Override Fees: global-configs/override-fees.md
         - Debug Console: developers/debug.md
         - Kill Switch: global-configs/kill-switch.md
         - Market Data Collector: global-configs/data-collector.md
+        - Override Fees: global-configs/override-fees.md
+        - Paper Trade: global-configs/paper-trade.md
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-      - Strategy Configs:
-        - Strategy Configs: strategy-configs/index.md
-        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-        - Order Levels: strategy-configs/order-levels.md
-        - Filled Order Delay: strategy-configs/filled-order-delay.md
-        - Hanging Orders: strategy-configs/hanging-orders.md
-        - Minimum Spread: strategy-configs/minimum-spread.md
-        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-        - Order Optimization: strategy-configs/order-optimization.md
-        - Inventory Skew: strategy-configs/inventory-skew.md
-        - Max Order Age: strategy-configs/max-order-age.md
-        - Order Override: strategy-configs/order-override.md
-        - Price Band: strategy-configs/price-band.md
-        - Price Source: strategy-configs/external-price-source.md
-        - Ping Pong: strategy-configs/ping-pong.md
     - Gateway:
       - Gateway: gateway/index.md
       - Installation: gateway/installation.md
       - Testing Gateway: gateway/testing.md
-      - Using Gateway with Hummingbot: gateway/setup.md
+      - Setting up Gateway: gateway/setup.md
       - Working with Tokens: gateway/tokens.md
       - Running DEX Bots: gateway/running-dex-bots.md
       - API Reference: gateway/api-reference.md
-    - Dashboard 🔥:
+    - Dashboard:
       - Dashboard: dashboard/index.md
     - Strategies:
       - Strategies: strategies/index.md
-      - V2 Strategies 🔥:
+      - V2 Strategies:
         - V2 Strategies: v2-strategies/index.md
-        - Candles: v2-strategies/candles-feed.md
-        - Controllers: v2-strategies/controllers.md
-        - Executors: v2-strategies/executors.md
-        - Order Levels: v2-strategies/order-levels.md
-        - DMan Strategies: v2-strategies/config.md
+        - V2 Scripts: v2-strategies/v2-scripts/index.md
+        - Controllers: v2-strategies/controllers/index.md
+        - Candles: v2-strategies/candles/index.md
+        - Executors: v2-strategies/executors/index.md
+        - Executor Handlers: v2-strategies/executor-handlers/index.md
+        - Order Levels: v2-strategies/order-levels/index.md
       - V1 Strategies:
         - V1 Strategies: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
@@ -251,11 +237,25 @@ nav:
         - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
         - TWAP: strategies/twap.md
         - Uniswap v3 LP: strategies/uniswap-v3-lp.md
-      - Scripts:
-        - Scripts: scripts/index.md
-        - Cheatsheat: scripts/cheatsheet.md
-        - Sample Scripts: scripts/examples.md
-      - PMM Scripts: scripts/pmm-scripts.md
+        - PMM Strategy Configs:
+          - PMM Strategy Configs: strategy-configs/index.md
+          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+          - Order Levels: strategy-configs/order-levels.md
+          - Filled Order Delay: strategy-configs/filled-order-delay.md
+          - Hanging Orders: strategy-configs/hanging-orders.md
+          - Minimum Spread: strategy-configs/minimum-spread.md
+          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+          - Order Optimization: strategy-configs/order-optimization.md
+          - Inventory Skew: strategy-configs/inventory-skew.md
+          - Max Order Age: strategy-configs/max-order-age.md
+          - Order Override: strategy-configs/order-override.md
+          - Price Band: strategy-configs/price-band.md
+          - Price Source: strategy-configs/external-price-source.md
+          - Ping Pong: strategy-configs/ping-pong.md
+    - Scripts:
+      - Scripts: scripts/index.md
+      - Sample Scripts: scripts/examples.md
+      - Cheatsheat: scripts/cheatsheet.md
     - Connectors:
       - Connectors: exchanges/index.md
       - CEX Connectors:

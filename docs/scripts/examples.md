@@ -6,44 +6,14 @@ In the Hummingbot client, run a script with:
 start --script [SCRIPT NAME]
 ```
 
-## Official Scripts
+## Simple Strategies
 
-### Directional strategy
+### Simple PMM
 
-* **Code**: [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_directional_strategy_example.py)
-* **Author**: [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.13.0](../release-notes/1.13.0.md)
-* **Description**: A simple trading strategy that uses RSI in one timeframe to determine whether to go long or short.
-
-### Download Candles
-
-* **Code**:  [download_candles](https://github.com/hummingbot/hummingbot/tree/master/scripts/download_candles.py)
-* **Author**: [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.15.0](../release-notes/1.15.0.md)
-* **Description**: This script provides an example of how to use the Candles Feed to download and store historical data. It downloads 3-minute candles for 3 Binance trading pairs ["APE-USDT", "BTC-USDT", "BNB-USDT"] and stores them in CSV files in the /data directory. The script stops after it has downloaded 175,000 max_records records for each pair
-
-
-### Download Order Book and Trades
-
-* **Code**:  [download_order_book_and_trades](https://github.com/hummingbot/hummingbot/tree/master/scripts/download_order_book_and_trades.py)
-* **Author**: [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.15.0](../release-notes/1.15.0.md)
-* **Description**: This script provides an example of how to download trades and order book snapshots for specified trading pairs from an exchange into a text file in the `data` folder. 
-
-### Fixed Grid
-
-* **Code**:  [fixed_grid](https://github.com/hummingbot/hummingbot/tree/master/scripts/fixed_grid.py)
-* **Author**: [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.15.0](../release-notes/1.15.0.md)
-* **Description**: The script implements a fixed grid trading strategy, placing buy and sell orders at predetermined price levels, rebalancing assets if required, and providing status updates on trades and balances.
-
-
-### Simple Arbitrage Example
-
-* **Code**: [simple_arbitrage_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_arbitrage_example.py)
-* **Author**: [fengtality](https://github.com/fengtality)
-* **Release Added**: [1.20.0](../release-notes/1.20.0.md)
-* **Description**:  A simplified version of Hummingbot arbitrage strategy, this bot checks the Volume Weighted Average Price for bid and ask in two exchanges and if it finds a profitable opportunity, it will trade the tokens.
+* **Code**: [simple_pmm_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_pmm_example.py)
+* **Author**:  [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.9.0](../release-notes/1.9.0.md)
+* **Description**: The bot will place two orders around the `price_source` (mid price or last traded price) in a `trading_pair` on exchange, with a distance defined by the `ask_spread` and `bid_spread`. Every `order_refresh_time` in seconds, the bot will cancel and replace the orders.
 
 ### Simple XEMM
 
@@ -51,6 +21,20 @@ start --script [SCRIPT NAME]
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [1.10.0](../release-notes/1.10.0.md)
 * **Description**:  A simplified version of Hummingbot `cross-exchange market making` strategy, this bot makes a market on the maker pair and hedges any filled trades in the taker pair. If the spread (difference between maker order price and taker hedge price) dips below `min_spread`, the bot refreshes the order
+
+### Simple Arbitrage
+
+* **Code**: [simple_arbitrage_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_arbitrage_example.py)
+* **Author**: [fengtality](https://github.com/fengtality)
+* **Release Added**: [1.20.0](../release-notes/1.20.0.md)
+* **Description**:  A simplified version of Hummingbot arbitrage strategy, this bot checks the Volume Weighted Average Price for bid and ask in two exchanges and if it finds a profitable opportunity, it will trade the tokens.
+
+### Simple Directional
+
+* **Code**: [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_directional_strategy_example.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.13.0](../release-notes/1.13.0.md)
+* **Description**: A simple trading strategy that uses RSI in one timeframe to determine whether to go long or short.
 
 ### Simple VWAP
 
@@ -62,49 +46,65 @@ start --script [SCRIPT NAME]
       - How to get the bids and asks of a market
       - How to code a "utility" strategy
 
-### Simple PMM
+### Fixed Grid
 
-* **Code**: [simple_pmm_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_pmm_example.py)
-* **Author**:  [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.9.0](../release-notes/1.9.0.md)
-* **Description**: The bot will place two orders around the `price_source` (mid price or last traded price) in a `trading_pair` on exchange, with a distance defined by the `ask_spread` and `bid_spread`. Every `order_refresh_time` in seconds, the bot will cancel and replace the orders.
+* **Code**:  [fixed_grid](https://github.com/hummingbot/hummingbot/tree/master/scripts/fixed_grid.py)
+* **Author**: [rkc2000](https://github.com/rkc2000)
+* **Release Added**: [1.15.0](../release-notes/1.15.0.md)
+* **Description**: The script implements a fixed grid trading strategy, placing buy and sell orders at predetermined price levels, rebalancing assets if required, and providing status updates on trades and balances.
 
+## V2 Strategies
 
-### V2 Directional Trading Macd BB v1
+### Directional-MACD-BB
 
 * **Code**: [v2_directional-trading_macd_bb_v1](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_directional-trading_macd_bb_v1.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.20.0](../release-notes/1.20.0.md)
 * **Description**: This script is a customized market-making script which operates using multiple trading pairs and uses a combination of MACD and Bollinger Bands indicators for each trading pair. 
 
-### V2 Market Making DMAN Composed
+### DMan-Composed
 
 * **Code**: [v2_market-making_dman_composed](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_market-making_dman_composed.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.20.0](../release-notes/1.20.0.md)
 * **Description**: This script is an advanced market-making strategy, designed to execute trades on a single trading pair, with a sophisticated setup that includes two different market-making controllers: DManV1 and DManV2. Each controller has its own configuration and set of rules for trade execution.
 
-### V2 Market Making DMAN v1 multiple pairs
+### DMan-V1
 
 * **Code**: [v2_market-making_dman_v1_multiple_pairs](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_market-making_dman_v1_multiple_pairs.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.20.0](../release-notes/1.20.0.md)
 * **Description**: This script is an example of a customized market-making script which operates using multiple trading pairs and uses the DMAN v1 controller
 
-### V2 Market Making DMAN v2 multiple pairs
+### DMan-V2
 
 * **Code**: [v2_market-making_dman_v2_multiple_pairs](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_market-making_dman_v2_multiple_pairs.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.20.0](../release-notes/1.20.0.md)
 * **Description**: This script is an example of a customized market-making script which operates using multiple trading pairs and uses the DMAN v2 controller
 
-### V2 Market Making DMAN v3 multiple pairs
+### DMan-V3
 
 * **Code**: [v2_market-making_dman_v3_multiple_pairs](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_market-making_dman_v3_multiple_pairs.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.20.0](../release-notes/1.20.0.md)
 * **Description**: This script is an example of a customized market-making script which operates using multiple trading pairs and uses the DMAN v3 controller
 
+## Download Data
+
+### Download Candles
+
+* **Code**:  [download_candles](https://github.com/hummingbot/hummingbot/tree/master/scripts/download_candles.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.15.0](../release-notes/1.15.0.md)
+* **Description**: This script provides an example of how to use the Candles Feed to download and store historical data. It downloads 3-minute candles for 3 Binance trading pairs ["APE-USDT", "BTC-USDT", "BNB-USDT"] and stores them in CSV files in the /data directory. The script stops after it has downloaded 175,000 max_records records for each pair
+
+### Download Order Book and Trades
+
+* **Code**:  [download_order_book_and_trades](https://github.com/hummingbot/hummingbot/tree/master/scripts/download_order_book_and_trades.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.15.0](../release-notes/1.15.0.md)
+* **Description**: This script provides an example of how to download trades and order book snapshots for specified trading pairs from an exchange into a text file in the `data` folder. 
 
 ## Archived Scripts
 
