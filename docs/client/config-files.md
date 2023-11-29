@@ -69,7 +69,7 @@ We have developed walkthroughs for each strategy:
 - `Fixed Grid`
 
 !!! note
-    When configuring your bot, make sure you are aware of your exchange's minimum order sizes and fees, and check that your trading pair has sufficient order book and trading volumes. You can find more info about specific exchanges in the [Connectors](/exchanges/) section.
+    When Running Hummingbot, make sure you are aware of your exchange's minimum order sizes and fees, and check that your trading pair has sufficient order book and trading volumes. You can find more info about specific exchanges in the [Connectors](/exchanges/) section.
 
 ## Import an existing strategy file
 

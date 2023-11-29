@@ -10,6 +10,10 @@ New to Hummingbot? Start here with step-by-step guides for various use cases:
 
 - [Liquidity Mining](liquidity-mining/index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
 
+## 🎓 Hummingbot Academy
+
+See [Academy](/academy) for a collection of free resources that help you understand the basics of algo trading and market making.
+
 ## ❓ Install Hummingbot client
 
 You can install the core Hummingbot client directly. We provide instructions for (1) [via Docker](../installation/docker.md) or (2) [from source](../installation/source/index.md) pathways.

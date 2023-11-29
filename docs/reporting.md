@@ -1,32 +1,3 @@
-## Financials
-
-To give the Hummingbot community transparency into the operations of the Hummingbot Foundation, the Foundation publishes a periodic financial report that describes the sources and uses of funds over the period, as well as the total treasury position at the end of the period.
-
-[December 2022](https://hummingbot-foundation.notion.site/December-2022-4cadfc18e9c845dd9ae0b95ac58abb5e)
-
-[November 2022](https://hummingbot-foundation.notion.site/November-2022-0961231589a14a4d89715400ff74c8ae)
-
-[October 2022](https://hummingbot-foundation.notion.site/October-2022-29a08a3812da4a9dbdfea28046e1b919)
-
-[September 2022](https://hummingbot-foundation.notion.site/September-2022-a8fd007f7d844c7cbabfe6224195a820)
-
-[August 2022](https://hummingbot-foundation.notion.site/August-2022-b4e0f466e06843c8b129608181d0d2a8)
-
-[July 2022](https://hummingbot-foundation.notion.site/July-2022-05c6709e18a347f3abd7e50a18127b5e)
-
-[June 2022](https://hummingbot-foundation.notion.site/June-2022-0d6e7b3ac3724a7eb5a9c4f6b1901345)
-
-[May 2022](https://hummingbot-foundation.notion.site/May-2022-ca1145e8b8e4431dbb55bcad69ac485e)
-
-[April 2022](https://hummingbot-foundation.notion.site/April-2022-7725536be9f44d6e8d22c1b0a7d31818)
-
-[March 2022](https://hummingbot-foundation.notion.site/March-2022-463b9f78a6384899b25cfc9bf6aef9ba)
-
-[February 2022](https://hummingbot-foundation.notion.site/February-2022-db69152413fa43ff96910e5e0a88d2de)
-
-[January 2022](https://hummingbot-foundation.notion.site/January-2022-b1ff8547495b4818b1ad843779498f65)
-
-## Reported Volumes
 
 See below for a real-time dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report:
 
@@ -36,8 +7,34 @@ You can use the **exchange** and **version** toggles to filter the data. In addi
 
 [![](./toggles.png)](./toggles.png)
 
-## HBOT Tracker
+## FAQ
 
-The Google Sheet below provides an overview of the HBOT allocations set by various [Proposals](/governance/proposals), as well the HBOT token amounts distributed across each proposal to date.
+### How does data reporting work?
 
-<a href="https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing" target="_blank" class="md-button md-button--primary">:fontawesome-solid-coins: HBOT Tracker</a>
+Unless users turn it off, instances of the Hummingbot software send the following metrics to a Hummingbot Foundation server every 15 minutes:
+
+* Aggregated trade volume
+* Exchange where the trades occurred
+* Version of Hummingbot software used
+* Device and system information
+* InstanceID (an anonymous, randomly-generated unique identifier)
+
+All data collected will be used exclusively by Hummingbot Foundation for reporting purposes only, and we will never sell this data to any third party.
+
+### How do I configure or turn off this feature?
+
+In the Hummingbot client, run the following command:
+
+```
+config anonymized_metrics_mode
+```
+
+Change the parameter above to `anonymized_metrics_enabled` to enable or `anonymized_metrics_disabled` to disable for data reporting. 
+
+### How does this dashboard help Hummingbot users?
+
+To sustain development of the Hummingbot client, Hummingbot Foundation enters into fee share partnerships with exchanges. These partners need actionable data to convince their stakeholders and community members that a Hummingbot partnership is worthwhile. Their most common requests include total volume traded and number of users, so this dashboard provides this data.
+
+### How can I be sure that this is the only data Hummingbot collects?
+
+The Hummingbot codebase is 100% open source and publicly auditable on Github. Feel free to review the code for yourself and post publicly on our [Discord](https://discord.gg/hummingbot) what you found. We’ve always been open and honest with our community members and you’ll find that this case is no different.

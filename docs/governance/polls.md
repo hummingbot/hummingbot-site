@@ -1,14 +1,14 @@
-The Hummingbot open source codebase contains [connectors](/exchanges) to various CEXs, DEXs and blockchain networks where users can execute automated trading strategies. The connected exchanges and networks are constantly changing and upgrading. In order to accommodate API changes, new product and order types, and other changes, each connector requires ongoing maintenance and engineering work.
+The Hummingbot open source codebase contains [connectors](../exchanges/index.md) to various CEXs, DEXs and blockchain networks where users can execute automated trading strategies. The connected exchanges and networks are constantly changing and upgrading. In order to accommodate API changes, new product and order types, and other changes, each connector requires ongoing maintenance and engineering work.
 
 Polls allow HBOT holders decide how maintenance bandwidth and development bounties are allocated toward the connectors in the codebase.
 
 ## Poll Types
 
-Each quarterly [epoch](/governance/epochs), HBOT voters vote on three types of Polls:
+Each quarterly [epoch](epochs.md), HBOT voters vote on three types of Polls:
 
-* [CEX Connectors](/cex-connectors/): Centralized exchanges like Binance, Gate.io, Kucoin, etc.
-* [DEX Connectors](/dex-connectors): Decentralized exchanges like dYdX, Uniswap, etc
-* [Chain Connectors](/chains): L1 and L2 blockchain networks such as Ethereum, Polygon, Arbitrum, etc.
+* [CEX Connectors](../cex-connectors/index.md): Centralized exchanges like Binance, Gate.io, Kucoin, etc.
+* [DEX Connectors](../dex-connectors/index.md): Decentralized exchanges like dYdX, Uniswap, etc
+* [Chain Connectors](../chains/index.md): L1 and L2 blockchain networks such as Ethereum, Polygon, Arbitrum, etc.
 
 ## What Polls Decide
 

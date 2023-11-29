@@ -2,10 +2,10 @@
 
 - **Exchange Type**: Decentralized Exchange (**DEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
+- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
 - **Maintainer:** Hummingbot Foundation
 
-Currently, dYdX is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
+Currently, dYdX is a **Gold** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |

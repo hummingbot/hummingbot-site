@@ -1,6 +1,6 @@
 # Hummingbot Foundation Governance
 
-*Originally posted on December 17, 2021, last modified on August 17, 2022*
+*Originally posted on December 17, 2021*
 
 ## Overview
 The Hummingbot Foundation (the “Foundation”) is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository.
@@ -146,36 +146,6 @@ The community has 7 days to discuss, review, and vote on the GP;
 4. The Foundation implements the proposed change or initiative, after which, the Github issue is closed.
 
 Aspects of the Foundation governance system that Governance Proposals may modify will include approval thresholds, quorum thresholds, board of director elections, and Maintainer elections. GPs may not modify the Foundation bylaws, HBOT token distribution and issuance mechanics, or HBOT total supply.
-
-## Maintainers
-
-Hummingbot is a constantly evolving codebase that is continually improved to accommodate new exchanges, assets, and strategies, as well as to improve performance and reliability. To ensure that different components in the codebase can be properly maintained, the Foundation plans to enter into agreements with third-party individuals and firms to act as Maintainers for specific components. 
-
-While Maintainer agreements will likely differ based on component type, the responsibilities of each Maintainer will be similar. Maintainers will be responsible for proactively fixing bugs, updating their component for any API changes, and implementing approved Improvement Proposals related to their component. For each connector and strategy, the Maintainer and their contact information will be published in the Hummingbot documentation.
-
-Maintainers initially will be set by the Foundation for specified terms and will be re-elected by HBOT voting afterwards. In addition, HBOT holders will be able to submit Governance Proposals at any time to direct the Foundation to re-assign or remove a Maintainer.
-
-#### Connectors
-
-Exchange connectors are packages of code that link Hummingbot's trading engine with live information from different cryptocurrency exchanges. They interact with a given exchange's API, such as by gathering order book data and sending and cancelling trades. 
-
-Similarly, blockchain connectors link Hummingbot to a given blockchain protocol and expose standardized endpoints that enable Users’ strategies to interact with wallets, nodes, and smart contracts on that protocol.
-
-Each connector has an assigned Maintainer listed on its respective Hummingbot documentation page, and all newly added connectors will have an assigned Maintainer. Certain connectors will have maintenance agreements that rebate a portion of fees incurred or fixed maintenance payments to the Foundation, and the Foundation may share these fees with the Maintainer. 
-
-#### Strategies
-
-Strategies are miniature computer programs that execute orders and trade on one or more exchanges. Strategies use the standard functions exposed by each connector so that strategy developers can focus on trading logic rather than data connectivity.
-
-Certain strategies will have a Maintainer responsible for fixing bugs and implementing Improvement Proposals related to the strategy. These strategy Maintainers will be listed on a strategy’s respective Hummingbot documentation page. Strategy Maintainers will generally not be compensated, either because the strategy will be community-submitted or because the Maintainer will derive other benefits from performing maintenance. For instance, CoinAlpha may be the Maintainer for certain Hummingbot strategies because Users use them to earn rewards on CoinAlpha’s Miner platform.
-
-#### Certified Maintainers
-
-To ensure maintenance and upkeep of the entire codebase, the Foundation may enter into master services agreements (MSA) with certain third-party individuals and firms that will be known as “Certified Maintainers.” Each MSA will set a fixed hourly rate for two labor categories: Development (DEV) and Quality Assurance (QA). The Foundation expects to publish a list of Certified Maintainers on its website along with these hourly rates. 
-
-Certified Maintainers will provide engineering services to the Foundation on an as-needed basis. For approved Improvement Proposals for components that do not have a dedicated Maintainer, the Foundation may elect to assign the related Github issue to a Certified Maintainer. 
-
-In order to be compensated for their work on an Improvement Proposal, Certified Maintainers will need to submit a pull request that is approved via the PRP process. For transparency, the Foundation will require that Certified Maintainers specify in the pull request the number of DEV and QA hours worked along with their total compensation requested from the Foundation.
 
 ## Bounties, hackathons and grants
 

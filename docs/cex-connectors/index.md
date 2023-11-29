@@ -16,6 +16,7 @@ Here are the current CEX connectors in the codebase, as of Q3 2023:
 | [Kraken](../exchanges/kraken) | CLOB | 🥉 Bronze
 | [BTC Markets](../exchanges/btc-markets.md) | CLOB | 🥉 Bronze
 | [Phemex](../exchanges/phemex-perpetual) | CLOB | 🥉 Bronze |
+| [FoxBit](../exchanges/foxbit) | CLOB | 🥉 Bronze
 | [HitBTC](../exchanges/hitbtc) | CLOB | 🥉 Bronze
 | [Bitfinex](../exchanges/bitfinex.md) | CLOB | 🥉 Bronze
 | [Bitget](../exchanges/bitget-perpetual.md) | CLOB | 🥉 Bronze
