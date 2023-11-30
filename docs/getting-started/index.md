@@ -1,45 +1,42 @@
-Hummingbot is an open source framework that helps you create, backtest, and deploy automated trading bots that can run on any crypto exchange. Our codebase is free and publicly available on Github under the Apache 2.0 open source license.
+[![header](header.svg)](header.svg)
 
-## 📓 Quickstart Guides
+
+##  Quickstart Guides
 
 New to Hummingbot? Start here with step-by-step guides for various use cases:
 
-- [Intro to Dashboard](/getting-started/dashboard/): Learn how to use Dashboard to create, backtest and deploy sophisticated market making and directional strategies
 
-- [Custom Script](./custom-script/index.md): Develop a custom market making script using Hummingbot
+## 🐋 [Docker](../installation/docker.md)
 
+- [Quickstart Guide to Deploy-Examples](../academy-content/posts/quickstart-deploy-examples/0-index.md): Guide on how to use the `deploy-examples` repo
+- [Deploy Examples](https://github.com/hummingbot/deploy-examples): Github repo with Docker Compose examples and bash scripts for deployment
 - [Liquidity Mining](liquidity-mining/index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
 
-## 🎓 Hummingbot Academy
+## 💻 [Source](../installation/source/index.md)
 
-See [Academy](/academy) for a collection of free resources that help you understand the basics of algo trading and market making.
-
-## ❓ Install Hummingbot client
-
-You can install the core Hummingbot client directly. We provide instructions for (1) [via Docker](../installation/docker.md) or (2) [from source](../installation/source/index.md) pathways.
-
-We recommend installing Hummingbot using Docker if:
-
-- You want the simplest, easiest installation method
-- You don't need to modify the Hummingbot codebase
-- You want to deploy Hummingbot alongside with Dashboard, Orchestation Module, and other advanced configurations
-
-Alternatively, install Hummingbot from source if:
-
-- You want to customize or extend the Hummingbot codebase
-- You want to build new components like connectors or strategies
-- You want to learn how Hummingbot works at a deeper, technical level
-
-## 👩‍💻 For developers
-
-Hummingbot is a general source framework for crypto algorithmic trading, and we welcome developers to fork the codebase for their own purposes and contribute to the community.
-
+- [Quickstart - Custom Script](./custom-script/index.md): Develop a custom market making script using Hummingbot
+- [Building CEX Connectors](../developers/connectors/index.md): Guide on how to create CEX connectors for Hummingbot
+- [Building DEX Connectors](../gateway/adding-dex-connectors.md): Guide on how to create DEX connectors for Hummingbot 
 - [Bounties](../bounties/index.md): Get paid for building and maintaining Hummingbot components
 connector middleware
 - [Contribution Guidelines](../developers/contributions.m): Read this before submitting a pull request
-- [Quickstart - Custom Script](./custom-script/index.md): Learn how to customize Hummingbot scripts
 
-## 🙋‍♂️ Getting help
+
+## 📓 Dashboard
+
+- [Using Dashboard](../academy-content/posts/quickstart-dashboard/0-index.md): Learn how to use Dashboard to create, backtest and deploy sophisticated market making and directional strategies
+- [Youtube Playlist](https://youtube.com/playlist?list=PLDwlNkL_4MMf0Ifvj-HLuQ_Jtf7OV6uzW&si=i-V1oBvCYy8a1025): Youtube playlist of Dashboard videos
+- [Github Repo](https://github.com/hummingbot/dashboard): Dashboard Github repo
+- [Discord Channel](https://discord.gg/hummingbot): If you are interested in contributing to the Dashboard project, please join the #dashboard channel in Discord
+
+## Additional Resources
+
+### 🎓 Hummingbot Academy
+
+- See [Academy](../academy/index.md) for a collection of free resources that help you understand the basics of algo trading and market making.
+
+
+### 🙋‍♂️ Getting help
 
 Hummingbot features an active, friendly community of users globally! Here are some ways to get help if you're encountering issues:
 
@@ -49,3 +46,4 @@ Hummingbot features an active, friendly community of users globally! Here are so
 - Take [Botcamp](/botcamp) to learn professional-grade market making and algo trading!
 
 We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
+

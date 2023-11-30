@@ -173,6 +173,7 @@ nav:
         - MacOS: installation/mac.md
         - Windows: installation/windows.md        
         - Raspberry Pi: installation/raspberry-pi.md
+      - Dashboard: dashboard/index.md
       - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
       - Post-Installation: installation/post-installation.md
       - Brokers: installation/broker.md
@@ -213,8 +214,6 @@ nav:
       - Working with Tokens: gateway/tokens.md
       - Running DEX Bots: gateway/running-dex-bots.md
       - API Reference: gateway/api-reference.md
-    - Dashboard:
-      - Dashboard: dashboard/index.md
     - Strategies:
       - Strategies: strategies/index.md
       - V2 Strategies:
