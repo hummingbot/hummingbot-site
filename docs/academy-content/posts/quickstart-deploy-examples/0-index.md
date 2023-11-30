@@ -32,11 +32,11 @@ To use Docker, it must first be installed on your system. Follow the instruction
 - Download and install the Docker Desktop application:
   - [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop)
 
-Once Docker is installed, we can proceed with the next steps!
+Once Docker is installed on your system, you're ready to move on to using it with the **deploy-examples** repository.
 
-## Download the `deploy-examples` Repository
+## Download the [deploy-examples](https://github.com/hummingbot/deploy-examples) repository
 
-Run the following command in the terminal:
+In your terminal, clone the deploy-examples repository:
 
 ```bash
 git clone https://github.com/hummingbot/deploy-examples
@@ -50,7 +50,9 @@ curl -LO https://github.com/hummingbot/deploy-examples/raw/main/simple_hummingbo
 
 ## Switch to the **simple_hummingbot_compose** folder
 
-The **deploy-examples** repository contains several folders, each with different compose files for various scenarios (e.g., using autostart, Hummingbot with Gateway, etc.). For now, we will focus on the **simple_hummingbot_compose** example. Use the following command to switch to the **simple_hummingbot_compose** folder:
+The **deploy-examples** repository contains several folders, each with different compose files for various scenarios (e.g., using autostart, Hummingbot with Gateway, etc.). For now, we will focus on the **simple_hummingbot_compose** example. 
+
+Use the following command to change your current working directory to the correct folder:
 
 ```bash
 cd deploy-examples/simple_hummingbot_compose

@@ -10,13 +10,13 @@ tags:
 
 # Connecting your API Keys
 
-In the previous examples we were using paper trading which does not require any API keys to be connected. In order to do live trading with Hummingbot we'll need to connect API keys for the exchanges we want to trade on. 
+While paper trading in Hummingbot doesn't require API keys, live trading does. This guide will help you connect your exchange API keys to Hummingbot for real-time trading.
 
 ## Generate API Keys
  
-The first step is to generate API keys for the exchanges we want to connect to Hummingbot. The instructions for setting up API keys for each exchange may differ. 
+First, you need to generate API keys from the exchange you wish to connect. Each exchange has its own setup process.
 
-In this example, we'll connect Binance API keys. Check [here](https://docs.hummingbot.org/exchanges/binance/#generate-api-keys) for instructions on how to generate API keys for Binance.
+In this example, we'll connect **Binance API** keys. Head over to the [Binance Connector Docs](https://docs.hummingbot.org/exchanges/binance/#generate-api-keys) for instructions on how to generate API keys for [Binance](../../../exchanges/binance/index.md).
 
 Check the [Connectors list](../../../exchanges/index.md) for a list of exchanges that are currently integrated with Hummingbot
 
@@ -33,7 +33,7 @@ connect binance
 
 ![Alt text](connect.png)
 
-You should get a prompt to enter in your API keys - you can use the following commands below to paste them into the Hummingbot terminal. Note that `CTRL + V` doesn't work and you'll get a `Pyperclip error` if you try to use it. 
+You should get a prompt to enter in your API keys - you can use the following commands below to paste them into the Hummingbot terminal. Note that `CTRL + V` doesn't work and you'll get a `Pyperclip error` in the log panel if you try to use it. 
 
   - <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>V</kbd>
 
@@ -48,6 +48,6 @@ After entering your API keys you should get a success message if everything went
 ![Alt text](connected.png)
 
 
-You now have Binance API keys connected. If you need to connect API keys for other exchanges just follow the same steps. In the next section we'll learn how to run a script on live trading using the connected API keys.
+Now your Binance API keys are connected to Hummingbot. Repeat these steps for other exchanges as needed.
 
 [Running a V2 Script](4-run-v2.md){ .md-button .md-button--primary }

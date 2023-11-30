@@ -10,8 +10,7 @@ tags:
 
 # Understanding the Hummingbot Interface
 
-Hummingbot is a **Command Line Interface (CLI)** system, designed to facilitate automated, algorithmic trading on cryptocurrency exchanges. A CLI, or Command Line Interface, is a text-based user interface used to interact with software. Unlike graphical user interfaces (GUIs) which rely on graphical elements such as windows, icons, and buttons, a CLI requires users to input text commands to execute specific functions or tasks. 
-
+Hummingbot operates through a **Command Line Interface (CLI)**, a text-based system ideal for automated cryptocurrency trading. Unlike graphical interfaces, CLIs rely on text commands to function. Let's dive into how to use it effectively.
 
 ## Create a Password
 
@@ -28,29 +27,19 @@ After you set a password you should now be in the main Hummingbot screen
 
 ![Alt text](interface.png)
 
-The CLI is divided into five panes:
+The CLI is organized into several key areas:
 
-* **Input pane (lower left)**: Where users enter commands
+- **Input Pane (Lower Left)**: Here, you input your commands.
 
-* **Output pane (upper left)**: Prints the output of the user's commands
+- **Output Pane (Upper Left)**: This displays the results of your commands.
 
-* **Log pane (right)**: Log messages
+- **Log Pane (Right)**: Here, you can view log messages.
 
-* **Top navigation bar**: Displays the status of the following items:
-    
-    - Version 
-    - Strategy
-    - Strategy File 
+- **Top Navigation Bar**: Shows the version, current strategy, and strategy file.
 
-* **Bottom navigation bar**: 
+- **Bottom Navigation Bar**: Displays trades, CPU usage, memory, threads, and duration.
 
-    - Trades
-    - CPU
-    - MEM
-    - Threads
-    - Duration
-
-For more detailed information on the interface see [User Interface](../../../client/user-interface.md)
+For a more in-depth look, visit [User Interface](../../../client/user-interface.md)
 
 ## Useful shortcuts    
       
@@ -69,6 +58,6 @@ For more detailed information on the interface see [User Interface](../../../cli
     - <kbd>SHIFT</kbd> + <kbd>INS</kbd>
 
 
-In the next section we'll learn how to run a simple pmm script
+Next, let's learn about running a simple PMM script in Hummingbot
 
 [Running a Script](2-run-script.md){ .md-button .md-button--primary }
