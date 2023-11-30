@@ -1,8 +1,6 @@
-![](./cover.webp)
+The Hummingbot Foundation, supported by its sponsors, partners and backers, is dedicated to fostering a robust, community-driven ecosystem for algorithmic crypto trading. By partnering with pioneering protocols and companies in the crypto space, the Foundation ensures the continuous development, enhancement, and dissemination of Hummingbot as a leading open-source trading platform.
 
-The Hummingbot Foundation, supported by its sponsors and partners, is dedicated to fostering a robust, community-driven ecosystem for algorithmic crypto trading. By partnering with pioneering protocols and companies in the crypto space, the Foundation ensures the continuous development, enhancement, and dissemination of Hummingbot as a leading open-source trading platform.
-
-## Our Sponsors and Partners
+## Sponsors
 
 <div class="flex-container">
   <div class="flex-item">
@@ -18,6 +16,31 @@ The Hummingbot Foundation, supported by its sponsors and partners, is dedicated 
 - [**Vega Protocol**](https://vega.xyz/): Vega Protocol's partnership with Hummingbot Foundation underscores the the symbiotic combination of a cutting-edge decentralized exchange protocol with a global market maker community. This collaboration is aimed at enabling both individual and professional market makers to successfully provide liquidity and execute strategies on Vega markets using Hummingbot. [See Announcement](https://blog.vega.xyz/announcing-the-hummingbot-vega-protocol-partnership-5eb75a9b5644).
 
 - [**CoinAlpha**](https://coinalpha.com/): As the original creator of Hummingbot, CoinAlpha played a pivotal role in the establishment of the Hummingbot Foundation. CoinAlpha not only initiated the transition of Hummingbot to a community-driven model but also provided essential startup funding to jumpstart the Foundation's endeavor to build a Linux-like ecosystem. [See Announcement](https://thedefiant.io/coin-alpha-hummingbot-foundation).
+
+## Backers
+
+The Hummingbot journey began with the visionary support of our initial investors at CoinAlpha. These early believers funded the foundational development of Hummingbot and laid the groundwork for the innovative software that countless traders rely on today. As holders of HBOT tokens, these investors continue to play a crucial role, actively participating in Hummingbot governance. We extend our deepest gratitude to these investors for their trust and commitment, which have been pivotal in shaping Hummingbot's success.
+
+* [Initialized Capital](https://initialized.com/) (Lead)
+* [1kx](https://1kx.network/)
+* [Ava Labs](https://www.avalabs.org/)
+* [Arrington Capital](https://www.arringtoncapital.com/)
+* [Bain Capital Ventures](https://baincapitalventures.com/)
+* [DeFiance Capital](https://defiance.capital/)
+* [Robot Ventures](https://robvc.com/)
+* [Slow Ventures](https://slow.co)
+
+## Exchange Partners
+
+We're thrilled to partner with leading industry exchanges to champion decentralized, community-driven market making through strategic fee-share agreements. Our exchange partners share a portion of user-generated fees with the Foundation, at zero cost to users. We are grateful for their support of open source algorithmic trading, where innovation, community, and opportunity collide.
+
+* [Binance Spot](https://www.binance.com/en/register?ref=FQQNNGCD) | [Binance Futures](https://www.binance.com/en/futures/ref?code=hummingbot)
+* [Kucoin](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
+* [Gate.io](https://www.gate.io/signup/5868285)
+* [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW)
+* [Huobi](https://www.htx.com/)
+* [OKX](https://www.okx.com/)
+
 
 ## Support Hummingbot Foundation
 

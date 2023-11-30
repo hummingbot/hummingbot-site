@@ -1,7 +1,26 @@
+[Established](/blog/introducing-the-hummingbot-foundation/) in October 2021, Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the [HBOT governance system](/blog/faq-on-hbot-and-hummingbot-governance/).
+
+## Bylaws
+
+The primary purpose of Hummingbot Foundation is to enable a decentralized, bazaar-style model of software development for the Hummingbot codebase. The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
+
+## Staff
+
+The Foundation maintain a lean, globally-distributed team who handle the day-to-day operations of maintaining the Hummingbot codebase and the Foundation governance system, such as:
+
+* Reviewing and merging pull requests
+* Administering monthly polls and elections
+* Maintaining the Snapshot voting system
+* Managing the Discord server
+* Assigning and managing developer bounties
+* Packaging monthly releases into Docker containers for various environments
+* Maintaining and updating the Hummingbot website and documentation site
+
+## Board of Directors
 
 The Board of Directors provides oversight over the Hummingbot Foundation and its day-to-day activities, along with managing the HBOT treasury.
 
-## Members
+### Current Members
 
 Elected for a 12-month term in February 2023 in [HGP-35](https://snapshot.org/#/hbot.eth/proposal/0xce24cc92f5f0b95dd8f84a69fa9a5318a53a84b7118d2d3120a9656782ecba58), the Board is comprised of the following individuals:
 
@@ -12,13 +31,13 @@ Elected for a 12-month term in February 2023 in [HGP-35](https://snapshot.org/#/
 | Hoang La          |                                         | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
 | Michael Feng      | Board member, CoinAlpha                 | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
 
-## Role & Responsibilities
+### Role & Responsibilities
 
 The Board is an independent committee that oversees the day-to-day administration of the Hummingbot Foundation and manages the multi-signature wallet of the HBOT treasury.
 
 The Board conducts quarterly virtual board meetings to discuss Foundation progress and strategy. In addition, the Board regularly corresponds over group chat to handle multi-signature transactions related to HBOT distributions.
 
-## Requirements
+### Requirements
 
 Serving on the Board is open to anyone in the Hummingbot community. As board members are elected by HBOT holders, board candidates should have some past experience with Hummingbot and its community.
 
@@ -26,7 +45,7 @@ Since all transactions from the Foundation HBOT treasury require 3 out of 5 boar
 
 Per the Foundation bylaws, there is no salary for serving on the Board of Directors.
 
-## Election Process
+### Election Process
 
 Hummingbot Foundation re-elects its Board of Directors every 12 months via Governance Proposal, following a process similar to that of other [Polls](/governance/polls):
 

@@ -9,17 +9,17 @@ hide:
 
 # What can you do with Hummingbot?
 
-<div class="grid cards" markdown>
+<div class="grid cards wide" markdown>
 
--   :material-format-paint:{ .lg .middle } __Create professional-grade strategies__
+-   :material-format-paint:{ .lg .middle } __Craft Cutting-Edge Strategies__
 
     ---
 
     Design sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
 
-    [:octicons-arrow-right-24: Strategy Docs](/strategies/)
+    [:octicons-arrow-right-24: V2 Strategy Docs](/v2-strategies/)
 
--   :material-upload-network:{ .lg .middle } __Connect directly to any exchange__
+-   :material-upload-network:{ .lg .middle } __Seamless Exchange Integration__
 
     ---
 
@@ -27,31 +27,15 @@ hide:
 
     [:octicons-arrow-right-24: Connector Docs](/exchanges/)
 
--   :material-chart-line:{ .lg .middle } __Monitor and adjust bots in real-time__
+-   :material-satellite-uplink:{ .lg .middle } __Backtest and Deploy with Ease__
 
     ---
 
-    Monitor all your bots and get real-time performance updates from anywhere with our Telegram integration.
-
-    [:octicons-arrow-right-24: Telegram Integration Docs](/global-configs/telegram/)
-
--   :material-satellite-uplink:{ .lg .middle } __Deploy a fleet of trading bots__
-
-    ---
-
-    Deploy, monitor, and control multiple bot instances using Dashboard, a new web-based user interface and control center.
+    Backtest your strategies against historical data and deploy multiple instances with Dashboard, a new web-based user interface and control center.
 
     [:octicons-arrow-right-24: Dashboard Docs](/dashboard)
 
--   :material-scale-balance:{ .lg .middle } __Backtest and optimize your strategies__
-
-    ---
-
-    We are adding backtesting and optimization support into Dashboard, helping you fine-tune your bots before deploying them live.
-
-    :material-star-face: Coming soon!
-
--   :material-directions-fork:{ .lg .middle } __Fork and extend our codebase__
+-   :material-directions-fork:{ .lg .middle } __Fork, Customize, Innovate__
 
     ---
 
@@ -66,33 +50,11 @@ hide:
 
 # Who uses Hummingbot?
 
-<!-- <div class="grid cards wide" markdown>
-
--   :material-account-hard-hat:{ .lg .middle } __Liquidity Miners__
-
-    Individual traders run market making strategies to earn rewards on [Hummingbot Miner](https://miner.hummingbot.io) and other liquidity mining platforms.
-
--   :material-sword-cross:{ .lg .middle } __DEX Arbitrageurs__
-
-    Arbitrage opportunities between long-tail AMM DEXs and CEXs remain plentiful, which Hummingbot's [AMM Arbitrage strategy](/strategies/amm-arbitrage/) helps users capture.
-
--   :octicons-arrow-switch-24:{ .lg .middle } __Market Makers__
-
-    For market makers who want to serve multiple clients across many CEXs and DEXs, the open source Hummingbot platform provides an ideal starting point. Many top crypto market making firms started by building on top of Hummingbot, like the ones below.
-
--   :material-ethereum:{ .lg .middle } __Token Issuers__
-
-    The free and open source Hummingbot software has allowed many tokens to own their liquidity and skip hiring market makers. [Dashboard](https://github.com/hummingbot/dashboard) extends these capabilities and lets them deploy an end-to-end liquidity management solution.
-
-</div>
-
-<br /> -->
-
 ## :fontawesome-solid-arrows-turn-to-dots: Market Makers
 
 <div class="accent" markdown>
 
-### For market making firms who serve multiple clients across many exchanges, the open source Hummingbot platform provides an ideal starting point. Many of today's top crypto market making firms started their businesses by building on top of Hummingbot.
+### For many crypto market making firms, Hummingbot is the trusted starting point for creating secure, scalable algo trading solutions.
 
 </div>
 
@@ -100,7 +62,7 @@ hide:
 
 <span class="quote">
 :material-format-quote-open:
-As the company that open-sourced Hummingbot, we're incredibly proud of how the community has embraced and evolved it. Today, we run custom versions of Hummingbot for our institutional clients and consistently contribute back to the open-source initiative, ensuring its growth and relevance.
+As the company that open-sourced Hummingbot, we're incredibly proud of how the community has embraced it. Today, we run bespoke strategies for our institutional clients using many custom Hummingbot instances.
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
@@ -108,12 +70,12 @@ As the company that open-sourced Hummingbot, we're incredibly proud of how the c
 <br/>
 <a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author centered">Carlo Las Marias</a>
 <br/>
-<a href="https://coinalpha.com/" target="_blank"><img src="/assets/brand/coinalpha.png" class="logo centered"></a>
+<a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.png" class="logo centered"></a>
 { .testimonial }
 
 <span class="quote">
 :material-format-quote-open:
-We started with Hummingbot as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. It allowed us to go-to-market quickly and start making profits. Nowadays, we still use it from time to time and enjoy their great documentation.
+We started with Hummingbot as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. We still use it from time to time and enjoy their great documentation.
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
@@ -126,7 +88,7 @@ We started with Hummingbot as the foundation for our market-making business. The
 
 <span class="quote">
 :material-format-quote-open:
-Hummingbot has served as a reliable base for us to build custom tools and strategies. It has many quality connectors and all components are well thought out, allowing us to flexibly modify the open source code. This enables us to run a reliable market making as a service operation on both DEX and CEX.
+Hummingbot has served as a reliable base for us to build custom tools and strategies. It has many quality connectors and all components are well thought out, allowing us to flexibly modify the open source code.
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
@@ -145,7 +107,7 @@ Hummingbot has served as a reliable base for us to build custom tools and strate
 
 <div class="accent" markdown>
 
-### Both individual and professional algorithmic traders use Hummingbot. Use cases include capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](strategies/amm-arbitrage.md) and earning liquidity mining rewards on [Hummingbot Miner](https://miner.hummingbot.io).
+### Algorithmic traders and boutique firms leverage Hummingbot for capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](strategies/amm-arbitrage.md) and earning liquidity mining rewards on [Hummingbot Miner](https://miner.hummingbot.io).
 
 </div>
 
@@ -153,7 +115,7 @@ Hummingbot has served as a reliable base for us to build custom tools and strate
 
 <span class="quote">
 :material-format-quote-open:
-Hummingbot allowed me to launch a successful suite of trading strategies managing over $2 billion in trade volume. From the outset, the design of Hummingbot made it easy to access data and execute orders reliably and with low latency, allowing me to place my attention on the strategy and have the heavy lifting done on the backend. I can't recommend Hummingbot enough for any algo trader seeking a 0 to 1 platform.
+Hummingbot allowed me to launch a successful suite of trading strategies managing over $2 billion in trade volume. I can't recommend Hummingbot enough for any algo trader seeking a 0 to 1 platform.
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
@@ -164,7 +126,7 @@ Hummingbot allowed me to launch a successful suite of trading strategies managin
 
 <span class="quote">
 :material-format-quote-open:
-Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pure market making strategy. Based on my profitable strategies, I started an algo-trading startup in Saudi Arabia with a colleague from Tower Research. Our combined expertise is now channeled towards crafting custom strategies, and we're proudly doing so on top of the robust foundation of the Hummingbot open-source software.
+Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pure market making strategy. Based on my profitable strategies, I started an algo-trading startup in Saudi Arabia!
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
@@ -175,7 +137,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 <span class="quote">
 :material-format-quote-open:
-Hummingbot revolutionized my crypto trading. Using advanced strategies, I developed my own successful trading style and consistently ranked at the top of Hummingbot Miner's leaderboard for months. Beyond profits, I've learned so much about finance and crypto trading – a world that seemed overwhelming at first. Huge kudos to Hummingbot for making trading profitable and giving me this learning journey!”
+Hummingbot revolutionized my crypto trading. Using advanced strategies, I developed my own successful trading style and consistently ranked at the top of Hummingbot Miner's leaderboard for months.
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
@@ -192,7 +154,7 @@ Hummingbot revolutionized my crypto trading. Using advanced strategies, I develo
 
 <div class="accent" markdown>
 
-The open source Hummingbot has allowed many projects to skip hiring market makers and manage their liquidity on both CEX and DEX. For blockchain protocols, adding Hummingbot connectivity and strategies can help catalyze their DeFi ecosystems.
+### Blockchain protocols harness Hummingbot to foster liquidity, catalyzing their ecosystems without the overhead of external market makers.
 
 </div>
 
@@ -231,70 +193,76 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 # What strategies can you build with Hummingbot?
 
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      <li class="glide__slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/fEoEAbPoBGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li class="glide__slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/3RKMlCWzRhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li class="glide__slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/1j81gP2ToCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </li>
-      <li class="glide__slide">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/UX0ChdWV7uc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </li>
-    </ul>
-  </div>
+### Learn how to design and code strategies like these in [Botcamp](/botcamp), the official training and membership program for the Hummingbot community.
 
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
-  </div>
+<div class="grid cards" markdown>
 
-  <div class="glide__bullets" data-glide-el="controls[nav]">
-    <button class="glide__bullet" data-glide-dir="=0"></button>
-    <button class="glide__bullet" data-glide-dir="=1"></button>
-    <button class="glide__bullet" data-glide-dir="=2"></button>
-    <button class="glide__bullet" data-glide-dir="=3"></button>
-  </div>
+-   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
+
+    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
+
+-   [![](/academy-content/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
+
+    ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
+
+-   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+
 </div>
-
-## Learn how to design and code strategies like these in [Botcamp](/botcamp), the official training and membership program for the Hummingbot community.
 
 <br />
 
-[Join Botcamp](/botcamp){ .md-button .md-button--primary }
+[Join Botcamp](/botcamp){ .md-button .md-button--primary .centered }
 
 ---
 
-# Global community of algo traders and developers
+# A Global Nexus for Algo Traders
 
-Hummingbot Foundation is a not-for-profit foundation that facilitates decentralized maintenance and governance of the Hummingbot codebase, powered by the Hummingbot Governance Token (HBOT).
+### The Hummingbot Foundation, a not-for-profit beacon, ensures the codebase's decentralized evolution, guided by the Hummingbot community and Governance Token (HBOT).
 
-The Hummingbot codebase will always be free and publicly available under the Apache 2.0 open source license. Help us **democratize high-frequency trading**!
-
-- [About Us](/about): About Hummingbot Foundation
-- [Community](/community): Participate in the global Hummingbot ecosystem
-- [Governance](/governance): All things related to Foundation governance
+- [About Us](/about): About the Foundation and our mission
+- [Governance](/governance): Decide how Hummingbot evolves
 - [FAQ](/faq): Answers to common questions
 
 ---
 
-# Get the Hummingbot newsletter
+# Sponsors & Backers
 
-Sign up for the official [Hummingbot newsletter](https://hummingbot.substack.com/), which is published when each monthly release drops. The newsletter also contains Foundation news, upcoming events, and updates about contributions from the global Hummingbot community!
+### We are grateful to the exchanges, protocols, and companies who support our quest to **democratize high-frequency trading**!
+
+<div class="flex-container home">
+  <div class="flex-item">
+    <img src="/assets/logos/initialized-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/initialized-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/defiance-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/defiance-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/bain-capital-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/bain-capital-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/vega-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/vega-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/coinalpha-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/1kx-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/1kx-light.png" class="light-logo"/>
+  </div>
+</div>
+
+---
+# Stay Ahead with the Hummingbot newsletter
+
+### Published when each monthly release drops, our official newsletter has all the Hummingbot news, upcoming events, and contributions from the global Hummingbot community!
 
 <br />
 
-[Subscribe to Newsletter](https://hummingbot.substack.com/){ .md-button .md-button--primary }
+[:octicons-download-16: Get the Newsletter](https://hummingbot.substack.com/){ .md-button .md-button--primary }

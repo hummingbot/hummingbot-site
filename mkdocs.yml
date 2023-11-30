@@ -382,8 +382,8 @@ nav:
   - About:
     - About: about/index.md
     - FAQ: faq.md
-    - Sponsors: about/sponsors.md
-    - Board of Directors: governance/board.md
+    - Foundation: about/foundation.md
+    - Sponsors & Backers: about/sponsors.md
     - Reported Volumes: reporting.md
     - History: about/history.md
     - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204

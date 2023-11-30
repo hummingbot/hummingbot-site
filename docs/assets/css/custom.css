@@ -320,20 +320,31 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.flex-item {
+  flex-basis: calc(50% - 10px);
+}
+.flex-item img {
+  padding: 3rem 1rem;
+}
+
+/* Botcamp - 4 col grid */
 
 .botcamp > .flex-item {
   flex-basis: calc(25% - 10px);  /* adjust this value for different screen sizes */
   margin: 5px;
 }
-
 .botcamp > .flex-item img {
   padding: 1rem 3rem;
   width: 100%;
   height: auto;
 }
-
-@media (max-width: 768px) {
+@media only screen and (min-width: 769px) {
   .botcamp > .flex-item {
+    flex-basis: calc(25% - 10px);
+  }
+}
+@media (max-width: 768px) {
+  .flex-item {
     flex-basis: calc(50% - 10px);
   }
   .botcamp > .flex-item img {
@@ -341,11 +352,31 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   }
 }
 
+/* Home - 3 col grid */
+
+.home > .flex-item {
+  flex-basis: calc(33% - 10px);  /* adjust this value for different screen sizes */
+  margin: 5px;
+}
+.home > .flex-item img {
+  padding: 1rem 3rem;
+  width: 100%;
+  height: auto;
+}
 @media only screen and (min-width: 769px) {
-  .flex-item {
-    flex-basis: calc(25% - 10px);
+  .home > .flex-item {
+    flex-basis: calc(33% - 10px);
   }
 }
+@media (max-width: 768px) {
+  .home > .flex-item {
+    flex-basis: calc(50% - 10px);
+  }
+  .home > .flex-item img {
+    padding: 3rem 1rem;
+  }
+}
+
 
 [data-md-color-scheme="default"] .dark-logo {
   display: none;
