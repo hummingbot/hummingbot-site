@@ -1,14 +1,14 @@
 ---
-date: 2023-03-30
+date: 2023-12-11
 authors:
-  - fede
+  - foundation
 categories:
   - Quickstart Guides
 tags:
-  - Quickstart - Using Deploy-Examples
+  - Docker Installation Guide
 ---
 
-# Connecting your API Keys
+# Docker Installation Guide - Part 3 - Add API Keys
 
 While paper trading in Hummingbot doesn't require API keys, live trading does. This guide will help you connect your exchange API keys to Hummingbot for real-time trading.
 

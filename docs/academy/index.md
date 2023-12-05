@@ -22,13 +22,13 @@ hide:
 
     ---
 
+    ### [Docker Installation Guide](/academy-content/docker-installation-guide/)
+
+    Get started with Hummingbot in 5 minutes
+
     ### [Using Dashboard to Deploy and Backtest Strategies](/academy-content/using-dashboard-to-deploy-and-backtest-strategies/)
 
     Learn how to use the new Dashboard app!
-
-    ### [Liquidity Mining with Hummingbot](/academy-content/liquidity-mining-with-hummingbot/)
-
-    Earn rewards by running bots on the Miner platform.
 
     ### [Creating a Custom Market Making Strategy](/academy-content/creating-a-custom-market-making-strategy/)
 

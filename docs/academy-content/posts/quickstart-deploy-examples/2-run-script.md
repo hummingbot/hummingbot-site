@@ -1,14 +1,14 @@
 ---
-date: 2023-03-30
+date: 2023-12-11
 authors:
-  - fede
+  - foundation
 categories:
   - Quickstart Guides
 tags:
-  - Quickstart - Using Deploy-Examples
+  - Docker Installation Guide
 ---
 
-# Running a Script
+# Docker Installation Guide - Part 2 - Run Script
 
 ## Simple PMM Example
 

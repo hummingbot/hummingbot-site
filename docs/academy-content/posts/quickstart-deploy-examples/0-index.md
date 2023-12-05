@@ -1,11 +1,11 @@
 ---
-date: 2023-03-30
+date: 2023-12-11
 authors:
-  - fede
+  - foundation
 categories:
   - Quickstart Guides
 tags:
-  - Quickstart - Using Deploy-Examples
+  - Docker Installation Guide
 ---
 
 # Docker Installation Guide
