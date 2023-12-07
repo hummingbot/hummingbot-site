@@ -220,6 +220,7 @@ nav:
       - V2 Strategies:
         - V2 Strategies: v2-strategies/index.md
         - V2 Scripts: v2-strategies/v2-scripts/index.md
+        - Cheatsheet: v2-strategies/cheatsheet/index.md
         - Controllers: v2-strategies/controllers/index.md
         - Candles: v2-strategies/candles/index.md
         - Executors: v2-strategies/executors/index.md
