@@ -51,4 +51,4 @@ Upon completion of optimization, you'll be presented with the results, showing w
 
 As we conclude this chapter, we set the stage for the next one, where we will analyze the results in-depth using the Hummingbot dashboard and deploy the most promising strategies for real-time trading.
 
-[Deploying Backtested Strategies](6-backtesting-and-optimization.md){ .md-button .md-button--primary }
+[Deploying Backtested Strategies](7-deploying-strategies.md){ .md-button .md-button--primary }

@@ -1,0 +1,10 @@
+name: hummingbot-site
+channels:
+  - conda-forge
+dependencies:
+  # - mkdocs-material
+  - pillow
+  - cairosvg
+  - pip
+  - pip:
+    - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders

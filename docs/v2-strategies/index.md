@@ -14,15 +14,15 @@ V2 strategies are:
 
 The V2 Strategies framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. The most important components to understand are:
 
-* [**V2 Script**](./v2-scripts/): This is where users define the strategy's configuration. It acts as the starting point and interfaces with other components.
-* [**Controller**](./controllers): The central hub of the strategy, the Controller receives input from the V2 Script and orchestrates the overall strategy, including the management and coordination of Executors.
-* [**Candles**](./candles): Candles provide a structured form of historical and real-time market data, represented as OHLCV bars, which are essential for generating market analysis indicators.
-* [**Executors**](./executors): V2 strategies place self-managing Executors and manage orders and positions. They encapsulate the order management logic, ensuring that orders are placed, modified, or canceled according to the strategy's instructions. Similarly, they manage position created when trading on perpetual exchanges.
+* [**V2 Script**](./v2-scripts/index.md): This is where users define the strategy's configuration. It acts as the starting point and interfaces with other components.
+* [**Controller**](./controllers/index.md): The central hub of the strategy, the Controller receives input from the V2 Script and orchestrates the overall strategy, including the management and coordination of Executors.
+* [**Candles**](./candles/index.md): Candles provide a structured form of historical and real-time market data, represented as OHLCV bars, which are essential for generating market analysis indicators.
+* [**Executors**](./executors/index.md): V2 strategies place self-managing Executors and manage orders and positions. They encapsulate the order management logic, ensuring that orders are placed, modified, or canceled according to the strategy's instructions. Similarly, they manage position created when trading on perpetual exchanges.
 
 These helper components stitch the framework together:
 
-* [**Executor Handler**](./executor-handlers): This component acts as a bridge between the Controller and Executors, relaying commands and ensuring that actions are executed in accordance with the strategy's logic.
-* [**Order Level Builder**](./order-levels/): A utility within the V2 Script that facilitates the construction of order levels, which dictate how Executors are distributed and behave.
+* [**Executor Handler**](./executor-handlers/index.md): This component acts as a bridge between the Controller and Executors, relaying commands and ensuring that actions are executed in accordance with the strategy's logic.
+* [**Order Level Builder**](./order-levels/index.md): A utility within the V2 Script that facilitates the construction of order levels, which dictate how Executors are distributed and behave.
 
 ## Botcamp
 
