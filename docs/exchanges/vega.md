@@ -1,23 +1,29 @@
-# `vega_perpetual`
-
 ## 📁 Connector Info
 
-* Exchange Type: Decentralized Exchange (DEX)
-* Market Type: Central Limit Order Book (CLOB)
-* Maintenance Tier: Bronze
-* Maintainer: Vega Protocol
+* **Exchange Type**: Decentralized Exchange (**DEX**)
+* **Market Type**: Central Limit Order Book (**CLOB**)
+* **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
+* Maintainer: Hummingbot Foundation
 
-Currently, Vega Protocol is a Bronze exchange, as voted by HBOT holders in each quarterly Epoch. This means Hummingbot Foundation does not maintain the components below, but community members may submit Proposals to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
+Currently, Vega is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs).
+
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | Not available |
+| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+
 
 ## ℹ️ Exchange Info
 
-* Website: https://vega.xyz
-* DefiLama: https://defillama.com/protocol/vega-protocol
-* API Docs: https://docs.vega.xyz/testnet/api/overview
-* Fees: https://docs.vega.xyz/testnet/concepts/trading-on-vega/fees-rewards
-* Supported Countries: Not available
+* **Website**: <https://vega.xyz>
+* **DefiLLama**: <https://defillama.com/protocol/vega-protocol>
+* **API Docs**: <https://docs.vega.xyz/testnet/api/overview>
+* **Fees**: <https://docs.vega.xyz/testnet/concepts/trading-on-vega/fees-rewards>
 
 ## 🔑 How to Connect
+
 ### Generate your public key in Vega Wallet
 You can download the browser extension wallet (for use in the UI) by visiting https://vega.xyz/wallet/#overview. You can also get to the wallet by clicking connect on through the dAPP interface. Which will offer a pop up which has an option which will take you to download and install the Vega Wallet extension.
 
@@ -60,11 +66,10 @@ You are now connected to vega_perpetual.
 
 Integration to perpetual markets API endpoints
 
-* ID: vega_perpetual
-* Connection Type: WebSocket, REST, gRPC
-* API Docs:  https://docs.vega.xyz/testnet/api/overview
-* Folder: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/vega_perpetual
-* Default Configs: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/vega_perpetual/vega_perpetual_constants.py
+* **ID**: vega_perpetual
+* **Connection Type**: WebSocket, REST, gRPC
+* **Folder**: https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/vega_perpetual
+* **Default Configs**: https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/vega_perpetual/vega_perpetual_constants.py
 
 ### Order Types
 This connector supports the following OrderType constants:
@@ -73,9 +78,6 @@ This connector supports the following OrderType constants:
 - `LIMIT_MAKER`
 - `MARKET`
 
-### Paper Trading
-Access the Paper Trade version of this connector by running connect vega_perpetual_testnet instead of connect vega_perpetual.
-
-## 🛠 Testnet
+### 🛠 Testnet
 
 This connector supports testnet trading. To connect to the testnet exchange, run `connect vega_perpetual_testnet` and enter your API keys.

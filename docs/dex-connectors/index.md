@@ -14,6 +14,7 @@ Here are the current DEX connectors in the codebase, as of the latest release:
 | [Injective Helix](../exchanges/injective.md) | CLOB | Client | 🥈 Silver | Hummingbot Foundation |
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
 | [Curve](../exchanges/curve.md) | AMM | Gateway | 🥉 Bronze
+| [Hyperliquid](../exchanges/hyperliquid.md) | CLOB | Client | 🥉 Bronze | Hummingbot Foundation |
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway | 🥉 Bronze
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway | 🥉 Bronze |  |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
@@ -26,10 +27,6 @@ Here are the current DEX connectors in the codebase, as of the latest release:
 | [TraderJoe](../exchanges/traderjoe.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
 | [Uniswap](../exchanges/uniswap.md) | AMM | Gateway | 🥉 Bronze |  |
 | [VVS Finance](../exchanges/vvs.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+| [Vega](../exchanges/vega.md) | CLOB | Client | 🥉 Bronze | Hummingbot Foundation |
 | [Vertex](../exchanges/vertex.md) | CLOB | Client | 🥉 Bronze
 | [XSwap](../exchanges/xswap.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-
-
-
-
-
