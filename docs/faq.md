@@ -144,7 +144,7 @@ While this is infeasible on Solana or BNB Chain, this is possible on Ethereum an
 
 ### How do I use Hummingbot on a AMM DEX like Uniswap?
 
-Check out the [`amm-arb`](/strategies/amm-arbitrage) or [`uniswap-v3-lp`](/strategies/uniswap-v3-lp) strategies.
+Check out the [`amm-arb`](/strategies/amm-arbitrage) or [`amm-v3-lp`](/strategies/amm-v3-lp) strategies.
 
 ## Hummingbot Foundation
 

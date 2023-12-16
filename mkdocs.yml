@@ -230,6 +230,7 @@ nav:
         - Pure Market Making: strategies/pure-market-making.md
         - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
         - AMM Arbitrage: strategies/amm-arbitrage.md
+        - AMM-V3 LP: strategies/amm-v3-lp.md
         - Avellaneda Market Making: strategies/avellaneda-market-making.md
         - Cross-Exchange Mining: strategies/cross-exchange-mining.md
         - Hedge: strategies/hedge.md
@@ -237,7 +238,6 @@ nav:
         - Perpetual Market Making: strategies/perpetual-market-making.md
         - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
         - TWAP: strategies/twap.md
-        - Uniswap v3 LP: strategies/uniswap-v3-lp.md
         - PMM Strategy Configs:
           - PMM Strategy Configs: strategy-configs/index.md
           - Add Transaction Costs: strategy-configs/add-transaction-costs.md
