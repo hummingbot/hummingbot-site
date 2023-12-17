@@ -304,6 +304,7 @@ nav:
         - Uniswap : exchanges/uniswap.md
         - Vertex: exchanges/vertex.md
         - VVS: exchanges/vvs.md
+        - XRP Ledger: exchanges/xrpl.md
         - XSwap: exchanges/xswap.md
       - Chain Connectors:
         - Chain Connectors: chains/index.md
@@ -320,6 +321,7 @@ nav:
         - NEAR: chains/near.md
         - XDC Chain: chains/xdc-chain.md
         - Tezos: chains/tezos.md
+        - XRP Ledger: chains/xrpl.md
       - Building CEX Connectors:
         - Building CEX Connectors: developers/connectors/index.md
         - Architecture: developers/connectors/architecture/index.md
