@@ -35,9 +35,9 @@ From inside the Hummingbot client, run `gateway connect xrpl` in order to connec
 In the private key field you have to put your seed key.
 
 ```  
-Which chain do you want kujira to connect to? (xrpl) >>> xrpl
+Which chain do you want xrpl to connect to? (xrpl) >>> xrpl
 
-Which network do you want kujira to connect to? (mainnet, testnet) >>> mainnet
+Which network do you want xrpl to connect to? (mainnet, testnet) >>> mainnet
 
 Do you want to continue to use node url 'None' for xrpl-mainnet? (Yes/No) >>> Yes
 
