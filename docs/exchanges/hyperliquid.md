@@ -5,7 +5,7 @@
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
 - **Maintainer:**  Hummingbot Foundation
 
-Currently, Hyperliquid is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
+Currently, Hyperliquid is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs).
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
