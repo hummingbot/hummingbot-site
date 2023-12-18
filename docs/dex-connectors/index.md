@@ -15,6 +15,7 @@ Here are the current DEX connectors in the codebase, as of the latest release:
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
 | [Curve](../exchanges/curve.md) | AMM | Gateway | 🥉 Bronze
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway | 🥉 Bronze
+| [Osmosis](../exchanges/osmosis.md) | AMM | Gateway | 🥉 Bronze | [Pecunia.Finance](https://pecuniafinance.com) | 
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway | 🥉 Bronze |  |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway | 🥉 Bronze
