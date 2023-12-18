@@ -16,4 +16,5 @@ Here are the current chain connectors in the codebase:
 | [Cosmos](/chains/cosmos) | Non-EVM | 🥉 Bronze |
 | [Cronos](/chains/cronos) | Non-EVM | 🥉 Bronze | [CoinAlpha](https://coinalpha.com)
 | [NEAR](/chains/near) | Non-EVM |🥉 Bronze |
+| [XRP Ledger](/chains/xrpl) | Non-EVM |🥉 Bronze | [wojak](https://github.com/mlguys)
 
