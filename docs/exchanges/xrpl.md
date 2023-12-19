@@ -18,7 +18,7 @@ Currently, XRPL is a **Bronze** exchange, as voted by HBOT holders in each quart
 ## ℹ️ Exchange Info
 - **Website**: <https://xrpl.org/>
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/xrp/>
-- **CoinGecko**: https://www.coingecko.com/en/coins/xrp>
+- **CoinGecko**: <https://www.coingecko.com/en/coins/xrp>
 - **API Docs**: <https://xrpl.org/docs.html>
 - **Fees**: <https://xrpl.org/transfer-fees.html>
 
