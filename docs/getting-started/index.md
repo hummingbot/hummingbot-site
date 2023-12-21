@@ -10,16 +10,16 @@ New to Hummingbot? Start here with step-by-step guides for various use cases:
 
 - [Quickstart Guide to Deploy-Examples](../academy-content/posts/quickstart-deploy-examples/0-index.md): Guide on how to use the `deploy-examples` repo
 - [Deploy Examples](https://github.com/hummingbot/deploy-examples): Github repo with Docker Compose examples and bash scripts for deployment
-- [Liquidity Mining](liquidity-mining/index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
+- [Liquidity Mining](../academy-content/posts/quickstart-liquidity-mining/0-index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
 
 ## 💻 [Source](../installation/source/index.md)
 
-- [Quickstart - Custom Script](./custom-script/index.md): Develop a custom market making script using Hummingbot
+- [Quickstart - Custom Script](../academy-content/posts/quickstart-custom-script/custom-pmm-0.md): Develop a custom market making script using Hummingbot
 - [Building CEX Connectors](../developers/connectors/index.md): Guide on how to create CEX connectors for Hummingbot
 - [Building DEX Connectors](../gateway/adding-dex-connectors.md): Guide on how to create DEX connectors for Hummingbot 
 - [Bounties](../bounties/index.md): Get paid for building and maintaining Hummingbot components
 connector middleware
-- [Contribution Guidelines](../developers/contributions.m): Read this before submitting a pull request
+- [Contribution Guidelines](../developers/contributions.md): Read this before submitting a pull request
 
 
 ## 📓 Dashboard

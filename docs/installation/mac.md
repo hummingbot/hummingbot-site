@@ -171,11 +171,11 @@ You should see the Hummingbot welcome screen:
 To get started with Hummingbot, check out the following docs:
 
 * [Post Installation](./post-installation.md)
-* [Basic Features](/client/)
-* [Quickstart Guide](/quickstart/)
-* [Hummingbot FAQ](/faq/)
+* [Basic Features](../client/index.md)
+* [Quickstart Guide](../academy-content/posts/quickstart-deploy-examples/0-index.md)
+* [Hummingbot FAQ](../faq.md)
 
-If you need to run DEX bots, install [Hummingbot Gateway](/gateway).
+If you need to run DEX bots, install [Hummingbot Gateway](../gateway/index.md).
 
 ## Other Useful Commands
 
