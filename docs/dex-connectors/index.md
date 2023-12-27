@@ -27,7 +27,8 @@ Here are the current DEX connectors in the codebase, as of the latest release:
 | [TraderJoe](../exchanges/traderjoe.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
 | [Uniswap](../exchanges/uniswap.md) | AMM | Gateway | 🥉 Bronze |  |
 | [VVS Finance](../exchanges/vvs.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
-| [Vega](../exchanges/vega.md) | CLOB | Client | 🥉 Bronze | Hummingbot Foundation |
-| [Vertex](../exchanges/vertex.md) | CLOB | Client | 🥉 Bronze
-| [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway | 🥉 Bronze | [wojak](https://github.com/mlguys) |
+| [Vertex](../exchanges/vertex.md) | CLOB | Client | 🥉 Bronze | |
+| [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway | 🥉 Bronze | [mlguys](https://github.com/mlguys) |
 | [XSwap](../exchanges/xswap.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
+
+<!-- | [Vega](../exchanges/vega.md) | CLOB | Client | 🥉 Bronze | Hummingbot Foundation | -->

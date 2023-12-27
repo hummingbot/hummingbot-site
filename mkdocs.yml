@@ -303,7 +303,7 @@ nav:
         - Tinyman: exchanges/tinyman.md
         - TraderJoe: exchanges/traderjoe.md
         - Uniswap : exchanges/uniswap.md
-        - Vega: exchanges/vega.md
+        # - Vega: exchanges/vega.md
         - Vertex: exchanges/vertex.md
         - VVS: exchanges/vvs.md
         - XRP Ledger: exchanges/xrpl.md
