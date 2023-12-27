@@ -19,8 +19,8 @@ First, you'll create API keys and add them to Miner. Next, you will install the 
 
 ## Sections
 
-1. [Create API Keys](./1-create-keys)
-2. [Configure Miner](./2-configure-miner)
-3. [Install Hummingbot](./3-install-hummingbot)
-4. [Create Bot](./4-create-bot)
-5. [Earn Rewards](./5-earn-rewards)
+1. [Create API Keys](1-create-keys.md)
+2. [Configure Miner](2-configure-miner.md)
+3. [Install Hummingbot](3-install-hummingbot.md)
+4. [Create Bot](4-create-bot.md)
+5. [Earn Rewards](5-earn-rewards.md)

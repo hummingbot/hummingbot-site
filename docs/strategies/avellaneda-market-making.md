@@ -180,6 +180,6 @@ The `minimum_spread` parameter is optional, it has no effect on the calculated r
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](/blog/2021/04/13/a-comprehensive-guide-to-avellaneda-stoikovs-market-making-strategy/): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
+:fontawesome-solid-book: [A comprehensive guide to Avellaneda & Stoikov’s market-making strategy](../academy-content/posts/guide-to-the-avellaneda-stoikov-strategy/index.md): A comprehensive walkthrough of the classic avellaneda market making strategy that is based on a famous classic academic paper.
 
-:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](/blog/2021/04/22/avellaneda-strategy-a-technical-deep-dive/): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).
+:fontawesome-solid-book: [Avellaneda strategy: A technical deep dive](../academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md): We explain how we modified the original Avellaneda-Stoikov model for the cryptocurrency industry, as well as how we simplified the calculation of key parameters (Greeks).

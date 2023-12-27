@@ -1,9 +1,9 @@
-# `uniswap_v3_lp`
+# `aamm_v3_lp`
 
 ## 📁 Strategy Info
 
-* Folder: [/hummingbot/strategy/uniswap_v3_lp](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/uniswap_v3_lp)
-* Configs: [uniswap_v3_lp_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/uniswap_v3_lp/uniswap_v3_lp_config_map.py)
+* Folder: [/hummingbot/strategy/amm_v3_lp](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/amm_v3_lp)
+* Configs: [amm_v3_lp_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_v3_lp/amm_v3_lp_config_map.py)
 * Maintainer: None
 
 ## 🏆 Strategy Tier
@@ -14,14 +14,15 @@ Community strategies have passed the Minimum Voting Power Threshold in the lates
 
 ## 📝 Summary
 
-This strategy creates and maintains Uniswap positions as the market price changes in order to continue providing liquidity. Currently, it does not remove or update positions.
+This strategy creates and maintains positions on AMMs that support liquidity ranges, such as Uniswap V3, as the market price changes in order to continue providing liquidity. Currently, it does not remove or update positions.
 
 !!! note
     This is a proof-of-concept strategy that demonstrates how to dynamically maintain Uniswap-V3 positions as market prices changes. More features will be added over time based on community feedback.
 
 ## 🏦 Exchanges supported
 
-* UNISWAP
+* [Uniswap](/exchanges/uniswap)
+* [PancakeSwap](/exchanges/pancakeswap)
 
 ## 🛠️ Strategy configs
 
@@ -40,7 +41,7 @@ This strategy creates and maintains Uniswap positions as the market price change
 
 ## 📓 Description
 
-[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/uniswap_v3_lp/uniswap_v3_lp.py)
+[Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_v3_lp/amm_v3_lp.py)
 
 !!! note "Approximation only"
     The description below is a general approximation of this strategy. Please inspect the strategy code in **Trading Logic** above to understand exactly how it works.
@@ -95,6 +96,4 @@ Each tick, the bot monitors the pool mid price (`last_price`) and compare it to 
 
 ## ℹ️ More Resources
 
-:fontawesome-brands-youtube: [Uniswap V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI): Demo of the latest iteration of Uniswap V3 strategy
-
-*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*
+:fontawesome-brands-youtube: [AMM V3 strategy preview | Hummingbot Live](https://www.youtube.com/watch?v=6cI3ftwBiUI): Demo of the latest iteration of the AMM V3 strategy

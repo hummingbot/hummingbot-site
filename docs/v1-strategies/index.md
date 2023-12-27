@@ -20,7 +20,7 @@ Strategies have passed the Minimum Voting Power Threshold in the latest Poll and
 | [perpetual_market_making](../strategies/perpetual-market-making)          | Community| Market-making strategy for perpetual swap markets |
 | [spot_perpetual_arbitrage](../strategies/spot-perpetual-arbitrage)        | Community | Exploits price differences between spot and perpetual swap exchanges |
 | [twap](../strategies/twap)                                                | Community | Places a batch of limit orders over a period of time |
-| [uniswap-v3-lp](../strategies/uniswap-v3-lp)                              | Community | Dynamically maintains a ranged liquidity position in a Uniswap V3-style AMM DEX |
+| [amm-v3-lp](../strategies/amm-v3-lp)                              | Community | Dynamically maintains a ranged liquidity position in an AMM DEX |
 
 ## Core vs Community Strategies
 
