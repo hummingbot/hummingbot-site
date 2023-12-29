@@ -23,18 +23,18 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
-    # - media: "(prefers-color-scheme: dark)"
-    - scheme: slate
-      accent: amber
-      toggle:
-        icon: material/brightness-2
-        name: "Switch to light mode"
     # - media: "(prefers-color-scheme: light)"
     - scheme: default
       accent: deep purple
       toggle:
         icon: material/brightness-5
         name: "Switch to dark mode"
+    # - media: "(prefers-color-scheme: dark)"
+    - scheme: slate
+      accent: amber
+      toggle:
+        icon: material/brightness-2
+        name: "Switch to light mode"
   font:
       text: Noto Sans
       code: Roboto Mono
@@ -70,9 +70,22 @@ plugins:
       archive_toc: true
       categories_toc: true
       post_url_format: "{slug}"
-
   - tags:
       tags_file: academy/all.md
+  - exporter
+  - exporter-pdf:
+      explicit: true
+  - exporter-extras:
+      buttons:
+        - title: Download as PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.plugins.pdf.button.enabled
+          attributes:
+            href: !!python/name:mkdocs_exporter.plugins.pdf.button.href
+            download: !!python/name:mkdocs_exporter.plugins.pdf.button.download
+
+
+
   # - git-revision-date
   # - mkdocs-video
 

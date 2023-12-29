@@ -41,6 +41,12 @@ If connection is successful (binance-smart-chain-mainnet):
 The pancakeswap connector now uses wallet [pubKey] on binance-smart-chain-mainnet
 ```
 
+![](./pancakeswap-connect.png)
+
+Run `gateway connector-tokens` to add tokens to the `gateway balance` command:
+
+![](./pancakeswap-connector-tokens.png)
+
 ## 2️⃣ AMM Connector
 *Integration to this DEX's swap pricing and execution endpoints*
 
