@@ -83,12 +83,13 @@ In response, the Foundation has reduced headcount and made operations more effic
 
 Originally, the Foundation depends on its original parent company CoinAlpha for financial backing, but this arrangement was terminated in September 2023. To cover expenses, the Foundation entered into a loan agreement with Botcamp Inc, a separate for-profit company that operates the [Botcamp](/botcamp) educational platform. 
 
-While the Foundation still maintains outstanding loan agreements with both CoinAlpha and Botcamp Inc, the Foundation ends 2023 on a strong financial position, with a cashflow-positive Q4 2023 and new partners Vega and Hyperliquid. In 2024, we project Net Income to be positive, based on increased partnership and sponsorship revenue along with lowered expenses compared to 2022 and 2023.
+While the Foundation still currently maintains outstanding loans to both CoinAlpha and Botcamp Inc along with other liabilities, we project Net Income to be positive in 2024, based on increased partnership and sponsorship revenue along with lowered expenses compared to 2022 and 2023, and we aim to reduce outstanding liabilities over the course of the year.
 
 | Foundation Account | 2023 Ending Value (USD) |
 |--------------|-----------|
 | Total Assets | 2,235,600 |
 | Total Assets (ex-HBOT) | 82,061 |
+| Total Liabilities | 203,678 |
 
 For more information, see the **2023 Financials** and **2022 Financials** tabs, respectively, in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
 
