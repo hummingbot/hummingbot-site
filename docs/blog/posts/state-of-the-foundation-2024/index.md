@@ -5,6 +5,7 @@ authors:
 categories:
   - Announcements
   - Governance
+  - Roadmap
 ---
 
 # State of the Foundation 2024
