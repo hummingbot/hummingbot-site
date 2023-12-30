@@ -180,8 +180,8 @@ If approved, this would result in the following HBOT budget allocations for 2024
 
 | Budget | Allocation | Description |
 |--------|------------|-------------|
-|Maintenance|12,000,0000|3 polls/quarter; 1M/poll|
-|Support|5,200,0000|100K/week|
-|**Total**|**17,200,0000**|
+|Maintenance|12,000,0000|3 polls/quarter; 1M/poll |
+|Support|5,200,0000|100K/week |
+|**Total**|**17,200,0000**| **6% of total HBOT supply** |
 
 These allocations should be sufficient to fund ongoing maintenance and upkeep of the Hummingbot codebase. We invite the community to propose other HBOT bounty allocations, such as for research & development, liquidity, and other initiatives.
