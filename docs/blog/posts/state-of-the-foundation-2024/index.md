@@ -27,11 +27,11 @@ Since it has been two eventful years have passed since the inception of the Humm
 
 Hummingbot is open source software that helps users build automated, algorithmic trading and market making strategies (bots). [Open sourced](https://github.com/hummingbot/hummingbot) by parent company [CoinAlpha](https://coinalpha.com) in 2019, Hummingbot helps users run high-frequency trading bots on various cryptocurrency exchanges without having to build and maintain low-level API integrations. 
 
-In October 2021, CoinAlpha [established the Hummingbot Foundation](https://hummingbot.org/blog/introducing-the-hummingbot-foundation/) as a decentralized autonomous organization (DAO) utilizing a [Cayman Foundation Company](https://www.notion.so/State-of-the-Foundation-2024-518124200f9e4f788f1d067bfe3ab196?pvs=21) corporate structure, and granted ownership over the Hummingbot open source software codebase to the newly formed entity. 
+In October 2021, CoinAlpha [established the Hummingbot Foundation](/blog/introducing-the-hummingbot-foundation/) as a decentralized autonomous organization (DAO) utilizing a [Cayman Foundation Company](https://www.zedra.com/insights/what-is-a-cayman-foundation-company/) corporate structure, and granted ownership over the Hummingbot open source software codebase to the newly formed entity. 
 
 Subsequently, the Foundation [issued the Hummingbot Governance Token (HBOT) token](https://www.notion.so/State-of-the-Foundation-2024-518124200f9e4f788f1d067bfe3ab196?pvs=21) and formally incepted a dedicated team in December 2021.
 
-Starting from the [v1.0.0 release](https://hummingbot.org/release-notes/1.0.0/), the Foundation team has assumed the responsibility of maintaining Hummingbot code repositories and websites, reviewing pull requests, and shipping official monthly releases.
+Starting from the [v1.0.0 release](/release-notes/1.0.0/), the Foundation team has assumed the responsibility of maintaining Hummingbot code repositories and websites, reviewing pull requests, and shipping official monthly releases.
 
 ## Inspiration: Linux
 
