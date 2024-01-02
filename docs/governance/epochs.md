@@ -166,7 +166,7 @@ After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbo
 
 The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/proposals/#hip) requesting a share of Dev Grant Budgets is May 31, 2022, and the last day to submit [Pull Request Proposals (PRPs)](/governance/proposals/#prp) linked to approved HIPs is June 30, 2022.
 
-After Epoch 1, the Foundation conducted a [retrospective](https://forum.hummingbot.org/t/epoch-2-proposed-governance-changes-part-1/45/1) and enacted a number of [changes](https://forum.hummingbot.org/t/epoch-2-proposed-changes-master-thread/129) to the governance process. Specifically, the Foundation decided to start the following initiatives:
+After Epoch 1, the Foundation conducted a retrospective and enacted a number of changes to the governance process. Specifically, the Foundation decided to start the following initiatives:
 - Start the Exchange Certification initiative
 - Create more structure around the [Bounties](../bounties/index.md) process
 - Start a developer bootcamp [Botcamp](https://hummingbot.org/botcamp/)

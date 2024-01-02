@@ -18,7 +18,7 @@ Currently, dYdX is a **Gold** exchange, as voted by HBOT holders in each quarter
 
 - **Website**: <https://dydx.exchange>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dydx/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx_perpetual>
 - **API Docs**: <https://dydxprotocol.github.io/v3-teacher/>
 - **Fees**: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
 - **Supported Countries**: <https://help.dydx.exchange/en/articles/4798063-location-restrictions> 

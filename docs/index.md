@@ -207,7 +207,7 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 -   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md))
 
 </div>
 

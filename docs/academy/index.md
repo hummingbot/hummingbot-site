@@ -165,7 +165,7 @@ hide:
 
 -   [![](/academy-content/managing-your-bot-performance/cover.webp)](/academy-content/managing-your-bot-performance/)
 
-    ### [Managing Your Bot Performance](/academy-content/managing-your-bot-performance/)
+    ### [Managing Your Bot Performance](../academy-content/posts/managing-your-bot-performance/index.md)
 
 -   [![](/academy-content/order-management-configurations/cover.webp)](/academy-content/order-management-configurations/)
 
@@ -173,7 +173,7 @@ hide:
 
 -   [![](/academy-content/commands-and-configs-price-source/cover.webp)](/academy-content/commands-and-configs-price-source/)
 
-    ### [Commands and Configs - Price Source](/academy-content/commands-and-configs-price-source/)
+    ### [Commands and Configs - Price Source](../academy-content/posts/commands-and-configs-price-source/index.md)
 
 </div>
 
