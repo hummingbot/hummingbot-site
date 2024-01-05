@@ -101,7 +101,7 @@ The Hummingbot governance system allows HBOT holders to decide which CEX, DEX, a
 Over the past two years, the Hummingbot governance system has evolved to make HBOT voting more efficient, decentralized, and impactful. Some notable changes include:
 
 * Termination of [Delegation](/blog/end-of-hbot-delegation/) to foster greater decentralization of participation
-* Introduction of quarterly [Polls](/polls) to allow HBOT holders decide which connectors should be included and how maintenance bounties should be allocated toward them
+* Introduction of quarterly [Polls](../../../governance/polls.md) to allow HBOT holders decide which connectors should be included and how maintenance bounties should be allocated toward them
 * Addition of fixed [Bounty Allocations](/bounties) to the top vote-getting connectors
 
 Based on the current level of activity on [Bounties Board](https://github.com/orgs/hummingbot/projects/7), developer demand for bounties remains strong, and the bottleneck lies more with assigning and managing bounties by the Foundation team than with developers picking them up.

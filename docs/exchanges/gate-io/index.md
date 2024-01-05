@@ -8,7 +8,7 @@
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
 - **Maintainer**: Hummingbot Foundation
 
-Currently, Gate.io is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
+Currently, Gate.io is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](../../bounties/index.md), tracking improvements made to the Gold exchange connectors of that type.
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
