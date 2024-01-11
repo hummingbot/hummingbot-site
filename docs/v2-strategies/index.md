@@ -23,7 +23,3 @@ These helper components stitch the framework together:
 
 * [**Executor Handler**](./executor-handlers/index.md): This component acts as a bridge between the Controller and Executors, relaying commands and ensuring that actions are executed in accordance with the strategy's logic.
 * [**Order Level Builder**](./order-levels/index.md): A utility within the V2 Script that facilitates the construction of order levels, which dictate how Executors are distributed and behave.
-
-## Botcamp
-
-To gain a deeper understanding of V2 Strategies and to access the latest framework updates, sign up for [Botcamp](/botcamp), which teaches you how to design, backtest and run these types of strategies.

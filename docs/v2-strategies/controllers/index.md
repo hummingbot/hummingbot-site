@@ -2,17 +2,40 @@
 
 The **Controller** is a pivotal component in Hummingbot's V2 strategy framework, orchestrating the overall strategy behavior. It is responsible for fetching and processing data from [Candles](../candles), computing signals, and instructing [Executors](../executors/) to respond to these signals appropriately.
 
-## Sample Controllers
+## Base Classes
 
-The sample controllers in the codebase, which are paired with scripts that define how they are used, allow users to create directional and market making strategies:
+### ControllerBase
 
-- [`MACD_BB V1`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/macd_bb_v1.py) introduces a simple directional strategy that uses MACD and Bollinger Bands indicators
-- [`DMan-V1`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v1.py) introduces a market making strategy that utilizes Candles indicators to dynamically set spreads
-- [`DMan-V2`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v2.py) utilizes additional indicators to dynamically shift the mid price
-- [`DMan-V3`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v3.py) utilizes Bollinger Band-based indicators and introduces new parameters like `side_filter` and `smart_activation`, allowing it be used in more flexible ways
+All Controller base classes inherit from the [ControllerBase](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/controller_base.py) class. The `ControllerConfigBase` defines the basic parameters that each controller should expose.
 
+```python
+class ControllerConfigBase(BaseModel):
+    exchange: str
+    trading_pair: str
+    strategy_name: str
+    candles_config: List[CandlesConfig]
+    order_levels: List[OrderLevel]
+    close_price_trading_pair: Optional[str]
+```
 
-## Controller in Detail
+- `exchange`: exchange you are trading on
+- `trading_pair`: execution trading pair in 'BASE-QUOTE' format, e.g., `BTC-USDT`
+- `strategy_name`: identifier for the strategy
+- `candles_config`: list of candlesticks used for generating signals
+- `order_levels` defines the structure and conditions of orders
+- `close_price_trading_pair`: price calculation trading pair in 'BASE-QUOTE' format, e.g., `BTC-USDT`
+
+### Strategy Base Classes
+
+Strategy base classes define additional parameters and methods specific to those strategies. They also define additional parameters such as:
+
+- `leverage`: leverage ratio utilized (only used for perpetual connectors)
+- `position_mode`: Hedge or One-way mode
+- `is_perpetual()`: returns `True` if trading on a perpetual futures connector
+
+See [Sample Strategies](../examples/) for the current strategy base classes.
+
+## A Controller in Detail
 
 Below, we walk through the [`DMan-V3 controller`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v3.py) in greater detail.
 

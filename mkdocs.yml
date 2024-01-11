@@ -173,10 +173,7 @@ nav:
         - MacOS: installation/mac.md
         - Windows: installation/windows.md        
         - Raspberry Pi: installation/raspberry-pi.md
-      - Dashboard: dashboard/index.md
-      - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
       - Post-Installation: installation/post-installation.md
-      - Brokers: installation/broker.md
     - Client:
       - Client: client/index.md
       - User Interface: client/user-interface.md
@@ -206,57 +203,51 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running DEX Bots: gateway/running-dex-bots.md
-      - API Reference: gateway/api-reference.md
     - Strategies:
       - Strategies: strategies/index.md
-      - V2 Strategies:
-        - V2 Strategies: v2-strategies/index.md
+      - Sample V2 Strategies: v2-strategies/examples/index.md
+      - V2 Strategies Cheatsheet: v2-strategies/cheatsheet/index.md
+      - V2 Strategy Architecture:
+        - V2 Strategy Architecture: v2-strategies/index.md
         - V2 Scripts: v2-strategies/v2-scripts/index.md
-        - Cheatsheet: v2-strategies/cheatsheet/index.md
         - Controllers: v2-strategies/controllers/index.md
         - Candles: v2-strategies/candles/index.md
         - Executors: v2-strategies/executors/index.md
         - Executor Handlers: v2-strategies/executor-handlers/index.md
         - Order Levels: v2-strategies/order-levels/index.md
-      - V1 Strategies:
-        - V1 Strategies: v1-strategies/index.md
-        - Pure Market Making: strategies/pure-market-making.md
-        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-        - AMM Arbitrage: strategies/amm-arbitrage.md
-        - AMM-V3 LP: strategies/amm-v3-lp.md
-        - Avellaneda Market Making: strategies/avellaneda-market-making.md
-        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-        - Hedge: strategies/hedge.md
-        - Liquidity Mining: strategies/liquidity-mining.md
-        - Perpetual Market Making: strategies/perpetual-market-making.md
-        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-        - TWAP: strategies/twap.md
-        - PMM Strategy Configs:
-          - PMM Strategy Configs: strategy-configs/index.md
-          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-          - Order Levels: strategy-configs/order-levels.md
-          - Filled Order Delay: strategy-configs/filled-order-delay.md
-          - Hanging Orders: strategy-configs/hanging-orders.md
-          - Minimum Spread: strategy-configs/minimum-spread.md
-          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-          - Order Optimization: strategy-configs/order-optimization.md
-          - Inventory Skew: strategy-configs/inventory-skew.md
-          - Max Order Age: strategy-configs/max-order-age.md
-          - Order Override: strategy-configs/order-override.md
-          - Price Band: strategy-configs/price-band.md
-          - Price Source: strategy-configs/external-price-source.md
-          - Ping Pong: strategy-configs/ping-pong.md
+        - Controller Examples: v2-strategies/controller-examples.md
+    - V1 Strategies:
+      - V1 Strategies: v1-strategies/index.md
+      - Pure Market Making: strategies/pure-market-making.md
+      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+      - AMM Arbitrage: strategies/amm-arbitrage.md
+      - AMM-V3 LP: strategies/amm-v3-lp.md
+      - Avellaneda Market Making: strategies/avellaneda-market-making.md
+      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+      - Hedge: strategies/hedge.md
+      - Liquidity Mining: strategies/liquidity-mining.md
+      - Perpetual Market Making: strategies/perpetual-market-making.md
+      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+      - TWAP: strategies/twap.md
+      - PMM Strategy Configs:
+        - PMM Strategy Configs: strategy-configs/index.md
+        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+        - Order Levels: strategy-configs/order-levels.md
+        - Filled Order Delay: strategy-configs/filled-order-delay.md
+        - Hanging Orders: strategy-configs/hanging-orders.md
+        - Minimum Spread: strategy-configs/minimum-spread.md
+        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+        - Order Optimization: strategy-configs/order-optimization.md
+        - Inventory Skew: strategy-configs/inventory-skew.md
+        - Max Order Age: strategy-configs/max-order-age.md
+        - Order Override: strategy-configs/order-override.md
+        - Price Band: strategy-configs/price-band.md
+        - Price Source: strategy-configs/external-price-source.md
+        - Ping Pong: strategy-configs/ping-pong.md
     - Scripts:
       - Scripts: scripts/index.md
       - Sample Scripts: scripts/examples.md
-      - Cheatsheat: scripts/cheatsheet.md
+      - Scripts Cheatsheat: scripts/cheatsheet.md
     - Connectors:
       - Connectors: exchanges/index.md
       - CEX Connectors:
@@ -323,15 +314,27 @@ nav:
         - XDC Chain: chains/xdc-chain.md
         - Tezos: chains/tezos.md
         - XRP Ledger: chains/xrpl.md
-      - Building CEX Connectors:
-        - Building CEX Connectors: developers/connectors/index.md
+      - Building Connectors:
+        - Building Connectors: developers/connectors/index.md
         - Architecture: developers/connectors/architecture/index.md
         - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
         - API Throttler: developers/connectors/architecture/api_throttler.md
         - Build Process: developers/connectors/build.md
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
-      - Building DEX Connectors: gateway/adding-dex-connectors.md
+    - Other Repos:
+      - Other Repos: repos.md
+      - Gateway:
+        - Gateway: gateway/index.md
+        - Installation: gateway/installation.md
+        - Testing Gateway: gateway/testing.md
+        - Setting up Gateway: gateway/setup.md
+        - Working with Tokens: gateway/tokens.md
+        - Running Strategies and Scripts: gateway/running-dex-bots.md
+        - Building Gateway Connectors: gateway/adding-dex-connectors.md
+      - Brokers: installation/broker.md
+      - Dashboard: dashboard/index.md
+      - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting.md
   - Academy:
