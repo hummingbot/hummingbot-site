@@ -216,34 +216,34 @@ nav:
         - Executor Handlers: v2-strategies/executor-handlers/index.md
         - Order Levels: v2-strategies/order-levels/index.md
         - Controller Examples: v2-strategies/controller-examples.md
-    - V1 Strategies:
-      - V1 Strategies: v1-strategies/index.md
-      - Pure Market Making: strategies/pure-market-making.md
-      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-      - AMM Arbitrage: strategies/amm-arbitrage.md
-      - AMM-V3 LP: strategies/amm-v3-lp.md
-      - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Hedge: strategies/hedge.md
-      - Liquidity Mining: strategies/liquidity-mining.md
-      - Perpetual Market Making: strategies/perpetual-market-making.md
-      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - TWAP: strategies/twap.md
-      - PMM Strategy Configs:
-        - PMM Strategy Configs: strategy-configs/index.md
-        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-        - Order Levels: strategy-configs/order-levels.md
-        - Filled Order Delay: strategy-configs/filled-order-delay.md
-        - Hanging Orders: strategy-configs/hanging-orders.md
-        - Minimum Spread: strategy-configs/minimum-spread.md
-        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-        - Order Optimization: strategy-configs/order-optimization.md
-        - Inventory Skew: strategy-configs/inventory-skew.md
-        - Max Order Age: strategy-configs/max-order-age.md
-        - Order Override: strategy-configs/order-override.md
-        - Price Band: strategy-configs/price-band.md
-        - Price Source: strategy-configs/external-price-source.md
-        - Ping Pong: strategy-configs/ping-pong.md
+      - V1 Strategies:
+        - V1 Strategies: v1-strategies/index.md
+        - Pure Market Making: strategies/pure-market-making.md
+        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+        - AMM-V3 LP: strategies/amm-v3-lp.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
+        - PMM Strategy Configs:
+          - PMM Strategy Configs: strategy-configs/index.md
+          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+          - Order Levels: strategy-configs/order-levels.md
+          - Filled Order Delay: strategy-configs/filled-order-delay.md
+          - Hanging Orders: strategy-configs/hanging-orders.md
+          - Minimum Spread: strategy-configs/minimum-spread.md
+          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+          - Order Optimization: strategy-configs/order-optimization.md
+          - Inventory Skew: strategy-configs/inventory-skew.md
+          - Max Order Age: strategy-configs/max-order-age.md
+          - Order Override: strategy-configs/order-override.md
+          - Price Band: strategy-configs/price-band.md
+          - Price Source: strategy-configs/external-price-source.md
+          - Ping Pong: strategy-configs/ping-pong.md
     - Scripts:
       - Scripts: scripts/index.md
       - Sample Scripts: scripts/examples.md
@@ -323,7 +323,7 @@ nav:
         - QA Testing Process: developers/connectors/test.md
         - Debugging: developers/connectors/debug.md
     - Other Repos:
-      - Other Repos: repos.md
+      - Other Repos: repos/index.md
       - Gateway:
         - Gateway: gateway/index.md
         - Installation: gateway/installation.md
