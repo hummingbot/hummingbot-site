@@ -35,6 +35,32 @@ Strategy base classes define additional parameters and methods specific to those
 
 See [Sample Strategies](../examples/) for the current strategy base classes.
 
+## Passing Configs to Controller
+
+The example below from the [DManV3 sample script](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_market-making_dman_v3_multiple_pairs.py) shows how a script passes the user-defined configs to the controller:
+
+```python
+for trading_pair in trading_pairs: 
+	config = DManV3Config(           
+            exchange=exchange,
+            trading_pair=trading_pair,
+            order_levels=ORDER_LEVELS,
+            candles_config=CANDLES, 
+            ...
+            # other controller-specific configs
+		       )
+    controller = DManV3(config=config)
+    markets = controller.update_strategy_markets_dict(markets)
+    controllers[trading_pair] = controller
+    # The controllers are passed into the executor handlers
+```
+
+- The script iterates over a list of trading pairs (e.g., ["ETH-USDT", "BTC-USDT"]). This allows the strategy to be applied to multiple trading pairs, rather than just a single pair.
+- For each trading pair, a `DManV3Config`object is created. This object holds the configuration specific to that pair, including the exchange, order levels, candle configurations, and various strategy-specific parameters like Bollinger Bands settings, side filter, dynamic spread factors, and activation thresholds.
+- A new instance of **`DManV3`** (market making controller class) is created for each trading pair, using the specific configuration set up in the previous steps
+- The **`markets`** dictionary is updated with data relevant to the strategy for the current trading pair.
+- The **`controller`** for each trading pair is stored in the **`controllers`** dictionary. This allows for easy access and management of different strategies for each trading pair.
+
 ## A Controller in Detail
 
 Below, we walk through the [`DMan-V3 controller`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v3.py) in greater detail.
