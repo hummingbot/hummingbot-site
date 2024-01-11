@@ -4,29 +4,29 @@ Connectors may be added by community members via [New Connector Proposals](/gove
 
 Here are the current CEX connectors in the codebase, as of Q3 2023:
 
-| Exchange | Type | Tier | Maintainer | Signup code |
+| Exchange | Type | Tier | Connector version | V2 Strategies Compatible |
 |----------|------|------|------------|-------------|
-| [Binance](../exchanges/binance/index.md) | CLOB | 🥇 Gold | Hummingbot Foundation | [spot](https://www.binance.com/en/register?ref=FQQNNGCD) / [futures](https://www.binance.com/en/futures/ref?code=hummingbot)
-| [Gate.io](../exchanges/gate-io/index.md) | CLOB | 🥈 Silver | Hummingbot Foundation | [5868285](https://www.gate.io/signup/5868285)
-| [Kucoin](../exchanges/kucoin/index.md) | CLOB | 🥈 Silver | Hummingbot Foundation | [272KvRf](https://www.kucoin.com/ucenter/signup?rcode=272KvRf)
-| [Huobi](../exchanges/huobi) | CLOB | 🥈 Silver | Hummingbot Foundation | [en9k2223](https://www.huobi.com/en-us/v/register/double-invite/?inviter_id=25530615&invite_code=en9k2223)
-| [AscendEx](../exchanges/ascendex/index.md) | CLOB | 🥉 Bronze |  | [UEIXNXKW](https://ascendex.com/register?inviteCode=UEIXNXKW)
-| [OKX](../exchanges/okx) | CLOB | 🥉 Bronze | | [1931920](https://www.okx.com/join/1931920)
-| [Coinbase](../exchanges/coinbase) | CLOB | 🥉 Bronze
-| [Kraken](../exchanges/kraken) | CLOB | 🥉 Bronze
-| [BTC Markets](../exchanges/btc-markets.md) | CLOB | 🥉 Bronze
-| [Phemex](../exchanges/phemex-perpetual) | CLOB | 🥉 Bronze |
-| [FoxBit](../exchanges/foxbit) | CLOB | 🥉 Bronze
-| [HitBTC](../exchanges/hitbtc) | CLOB | 🥉 Bronze
-| [Bitfinex](../exchanges/bitfinex.md) | CLOB | 🥉 Bronze
-| [Bitget](../exchanges/bitget-perpetual.md) | CLOB | 🥉 Bronze
-| [Bitmex](../exchanges/bitmex.md) | CLOB | 🥉 Bronze
-| [Bit.com](../exchanges/bit-com-perpetual.md) | CLOB | 🥉 Bronze
-| [MEXC](../exchanges/mexc) | CLOB | 🥉 Bronze
-| [Bybit](../exchanges/bybit) | CLOB | 🥉 Bronze
-| [Bitmart](../exchanges/bitmart/index.md) | CLOB | 🥉 Bronze | | [UM6fQV](https://www.bitmart.com/en?r=UM6fQV)
-| [NDAX](../exchanges/ndax) | CLOB | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) | 
-
+| [Binance](../exchanges/binance/index.md) | CLOB | 🥇 Gold | v2.1 | Yes
+| [Gate.io](../exchanges/gate-io/index.md) | CLOB | 🥈 Silver | v2.1 | Yes
+| [Kucoin](../exchanges/kucoin/index.md) | CLOB | 🥈 Silver | v2.1 | Yes
+| [Huobi](../exchanges/huobi) | CLOB | 🥈 Silver | v2.0 | No - market order type not supported
+| [AscendEx](../exchanges/ascendex/index.md) | CLOB | 🥉 Bronze | v2.0 | Yes - spot only
+| [OKX](../exchanges/okx) | CLOB | 🥉 Bronze | v2.1 | Yes - spot only
+| [Coinbase](../exchanges/coinbase) | CLOB | 🥉 Bronze | v1.0 | No
+| [Kraken](../exchanges/kraken) | CLOB | 🥉 Bronze | v1.0 | No
+| [BTC Markets](../exchanges/btc-markets.md) | CLOB | 🥉 Bronze | v2.0 | Yes - spot only
+| [Phemex](../exchanges/phemex-perpetual) | CLOB | 🥉 Bronze | v2.0 | Yes - perp only
+| [FoxBit](../exchanges/foxbit) | CLOB | 🥉 Bronze | v2.0 | Yes - spot only
+| [HitBTC](../exchanges/hitbtc) | CLOB | 🥉 Bronze | v1.0 | No
+| [Bitfinex](../exchanges/bitfinex.md) | CLOB | 🥉 Bronze | v1.0 | no
+| [Bitget](../exchanges/bitget-perpetual.md) | CLOB | 🥉 Bronze | v2.0 | Yes - perp only
+| [Bitmex](../exchanges/bitmex.md) | CLOB | 🥉 Bronze | v1.0 | No
+| [Bit.com](../exchanges/bit-com-perpetual.md) | CLOB | 🥉 Bronze | v2.0 | Yes - perp only
+| [MEXC](../exchanges/mexc) | CLOB | 🥉 Bronze | v2.0 | Yes - spot only |
+| [Bybit](../exchanges/bybit) | CLOB | 🥉 Bronze | v2.0 | Yes - but API needs update to v5
+| [Bitmart](../exchanges/bitmart/index.md) | CLOB | 🥉 Bronze | v2.1 | Yes - spot only 
+| [NDAX](../exchanges/ndax) | CLOB | 🥉 Bronze | v1.0 | No
+| [Woo X](../exchanges/woo-x.md) | CLOB | 🥉 Bronze | v2.0 | Yes - spot only
 
 
 
