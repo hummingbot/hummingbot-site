@@ -7,10 +7,10 @@
 
 Currently, Bit Perpetual is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | Not available |
-| [🔀 Perp Connector](#perp-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | ✅ | v2.0 | Yes | |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
 

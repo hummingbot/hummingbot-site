@@ -10,9 +10,9 @@ means Hummingbot Foundation does not maintain the components below, but communit
 submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add
 enhancements to them.
 
-| Component                                  | Status        | Notes                        | 
-|--------------------------------------------|---------------|------------------------------|
-| [🔀 Spot Connector](#spot-connector)       | ✅             | Supports `MARKET` order type 
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector)       | ✅    | v2.0 | Yes         | Supports `MARKET` order type 
 | [🔀 Perp Connector](#perp-connector)       | Not available |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not available |
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not available |

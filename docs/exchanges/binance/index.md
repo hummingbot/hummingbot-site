@@ -10,10 +10,10 @@
 
 Currently, Binance is a **Gold** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below and continually improves them to add more functionality. Gold connectors serve as the "gold standard" template for all other connectors of that type.
 
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ | 
 

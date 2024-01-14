@@ -7,10 +7,10 @@
 
 HBOT holders voted BitMEX into the **Bronze** tier for the current [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | v1.0 | No | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | ✅ | v1.0 | No | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not built | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not built | 
 

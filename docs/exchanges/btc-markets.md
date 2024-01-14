@@ -7,9 +7,9 @@
 
 Currently, BTC-Markets is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ |
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | v2.0 | Yes | |
 | [🔀 Perp Connector](#perp-connector) | Not available |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
