@@ -2,6 +2,8 @@
 
 ## Prerequisites
 
+Before proceeding with the setup of the Spot Connector, ensure that you have the Hummingbot source version installed on your system. Follow the detailed installation instructions provided at [Hummingbot Installation Guide](https://hummingbot.org/installation/source/). 
+
 ## API Checklist
 
 | Endpoint                                | Required | Type            | Description |
