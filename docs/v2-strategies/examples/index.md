@@ -3,29 +3,56 @@
 - [`DMan-V2`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v2.py) utilizes additional indicators to dynamically shift the mid price
 - [`DMan-V3`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v3.py) utilizes Bollinger Band-based indicators and introduces new parameters like `side_filter` and `smart_activation`, allowing it be used in more flexible ways -->
 
-The sample controllers in the codebase are paired with scripts that show how they can be configured and run:
+## Running V2 Strategies
+
+The main logic in a V2 strategy is contained in the [Controller](../controllers), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles) and [Executors](../executors/) to implement the strategy logic.
+
+For users, their primary interface is the [V2 Script](../v2-scripts/), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
+
+To generate a configuration file for a V2 script, run:
+```
+create --script-config [SCRIPT_FILE]
+```
+
+You will be prompted to define the strategy parameters, which are saved in a YAML file in the `conf/scripts` directory. Afterwards, you can run the script by specifying this config file:
+```
+start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]`
+```
 
 ## Directional Strategies
 
-Directional strategies create [Position Executors](/v2-strategies/executors/#positionexecutor) based on long/short signals generated from [Candles](/v2-strategies/candles/) indicators. They inherit from the [DirectionalTrading](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/directional_trading/directional_trading_controller_base.py) strategy base class.
+Directional strategies inherit from the [DirectionalTrading](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/directional_trading/directional_trading_controller_base.py) strategy base class.
+
+In their controller's `get_processed_data` function, a directional strategy uses technical indicators derived from [Candles](/v2-strategies/candles/) to define thresholds which trigger long and short conditions using the `signal` parameter:
+
+* `1`: Long [Position Executor](/v2-strategies/executors/#positionexecutor) is created
+* `-1`: Short [Position Executor](/v2-strategies/executors/#positionexecutor) is created
 
 Here are the current V2 directional strategies:
 
-### Bollinger
+### Bollinger V1
 
-A simple directional strategy that uses Bollinger Bands to construct long/short signals.
+A simple directional strategy that uses [Bollinger Bands](/indicators/#bollinger-bands) to construct long/short signals. BBP measures an asset's price relative to its upper and lower Bollinger Bands.
 
 **Code:**
 
-- [Controller](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/bollinger_v1.py)
-- [Script Example - configurable](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_bollinger_v1.py)
+* Controller: [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/bollinger_v1.py)
+* Script: [v2_directional-trading_bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_bollinger_v1.py)
 
-**Configs:**
+**Creating a Config**:
+```
+create --script-config bollinger_v1.py
+```
 
-- `bb_length`: number of candle intervals used to calculate Bollinger Band length
-- `bb_std`: number of standard deviations used to set Bollinger Band width
-- `bb_long_threshold`: threshold for long positions in relation to the Bollinger Band
-- `bb_short_threshold`: threshold for short positions in relation to the Bollinger Band
+**Starting the Script**:
+```
+start --script bollinger_v1.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+**Parameters**
+
+
+**Logic:**
 
 ```python
 class BollingerV1Config(DirectionalTradingControllerConfigBase):
@@ -34,29 +61,35 @@ class BollingerV1Config(DirectionalTradingControllerConfigBase):
     bb_std: float = Field(default=2.0, ge=2.0, le=3.0)
     bb_long_threshold: float = Field(default=0.0, ge=-1.0, le=0.2)
     bb_short_threshold: float = Field(default=1.0, ge=0.8, le=2.0)
+
+class BollingerV1(DirectionalTradingControllerBase):
+    def get_processed_data(self) -> pd.DataFrame:
+        df = self.candles[0].candles_df
+
+        # Add indicators
+        df.ta.bbands(length=self.config.bb_length, std=self.config.bb_std, append=True)
+
+        # Generate signal
+        long_condition = df[f"BBP_{self.config.bb_length}_{self.config.bb_std}"] < self.config.bb_long_threshold
+        short_condition = df[f"BBP_{self.config.bb_length}_{self.config.bb_std}"] > self.config.bb_short_threshold
 ```
+
+**Status**
+
+![](./status-bollinger.png)
 
 ### MACD-BB
 
-A simple directional strategy that uses Mean Average Convergence Divergence (MACD) and Bollinger Bands to construct long/short signals.
+A directional strategy that uses both [MACD](/indicators/#macd) and Bollinger Bands to construct long/short signals.
 
 **Code:**
 
-- [Controller](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/macd_bb_v1.py)
-- [Script Example - configurable](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_macd_bb_v1.py)
-- [Script Example - perp](https://gist.github.com/david-hummingbot/40c295109d19933fd8336335e057a433)
-- [Script Example - spot](https://gist.github.com/david-hummingbot/f9332923faac2fb5485eb7a80eb0d08d)
+* Controller: [macd_bb_v1.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/macd_bb_v1.py)
+* Script: [v2_directional-trading_macd_bb_v1.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_macd_bb_v1.py)
 
-**Configs:**
+**Logic:**
 
-- `bb_length`: number of candle intervals used to calculate Bollinger Band length
-- `bb_std`: number of standard deviations used to set Bollinger Band width
-- `bb_long_threshold`: threshold for long positions in relation to the Bollinger Band
-- `bb_short_threshold`: threshold for short positions in relation to the Bollinger Band
-- `macd_fast`: indicates the fast period in the MACD indicator
-- `macd_slow`: indicates the slow period in the MACD indicator
-- `macd_signal`: signal period in the MACD indicator
-- `std_span`: standard deviation over a specified span of candle intervals
+Long positions are created when the BBP exceeds the long threshold and the MACD histogram is positive, while short positions are created when the BBP is lower than the short threshold and the MACD histogram is negative.
 
 ```python
 class MACDBBV1Config(DirectionalTradingControllerConfigBase):
@@ -69,6 +102,21 @@ class MACDBBV1Config(DirectionalTradingControllerConfigBase):
     macd_slow: int = Field(default=42, ge=30, le=1000)
     macd_signal: int = Field(default=9, ge=2, le=100)
     std_span: Optional[int] = None
+
+class MACDBBV1(DirectionalTradingControllerBase):
+    def get_processed_data(self) -> pd.DataFrame:
+        df = self.candles[0].candles_df
+
+        # Add indicators
+        df.ta.bbands(length=self.config.bb_length, std=self.config.bb_std, append=True)
+        df.ta.macd(fast=self.config.macd_fast, slow=self.config.macd_slow, signal=self.config.macd_signal, append=True)
+        bbp = df[f"BBP_{self.config.bb_length}_{self.config.bb_std}"]
+        macdh = df[f"MACDh_{self.config.macd_fast}_{self.config.macd_slow}_{self.config.macd_signal}"]
+        macd = df[f"MACD_{self.config.macd_fast}_{self.config.macd_slow}_{self.config.macd_signal}"]
+
+        # Generate signal
+        long_condition = (bbp < self.config.bb_long_threshold) & (macdh > 0) & (macd < 0)
+        short_condition = (bbp > self.config.bb_short_threshold) & (macdh < 0) & (macd > 0)
 ```
 
 ### Trend Follower
@@ -80,13 +128,7 @@ A simple trend-following strategy that uses Simple Moving Average (SMA) and Boll
 - [Controller](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/trend_follower_v1.py)
 - [Script Example - configurable](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_trend_follower_v1.py)
 
-**Configs:**
-
-- `sma_fast`: number of candle intervals used to calculate the fast SMA
-- `sma_slow`: number of candle intervals used to calculate the slow SMA
-- `bb_length`: number of candle intervals used to calculate Bollinger Band length
-- `bb_std`: number of standard deviations used to set Bollinger Band width
-- `bb_threshold`: threshold for creating positions in relation to the Bollinger Band
+**Logic:**
 
 ```python
 class TrendFollowerV1Config(DirectionalTradingControllerConfigBase):

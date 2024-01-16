@@ -1,77 +1,60 @@
-# Create or Import Config Files
+A config file allows you to define the parameters used in a YAML file. Later, you can modify the values of this file, share it with others, and and import it into your strategy.
 
-## Creating a new strategy file
+## Where config files are stored
 
-Run `create` command and answer the prompts to configure your bot's behavior depending on the strategy you want to use.
+These configuration files created and used by Hummingbot are saved in the [`/conf`](https://github.com/hummingbot/hummingbot/tree/master/conf) directory of your instance, which you can edit directly with a standard text editor.
+
+* `conf/scripts`: config files for V2 strategies and scripts
+* `conf/strategies`: config files for V1 strategies
+
+## Script config files
+
+Starting in v1.24.0, [Scripts](/scripts) can define a `ScriptConfig` class that defines configuration parameters that users can store in a YAML file.
+
+Both [V2 Scripts](/v2-strategies/v2-scripts) used to control V2 Strategies as well as more basic scripts can add this class. For example, here are the first few lines in the [sample script](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v3_with_config.py) which runs the DManV3 strategy:
+
+```python
+class DManV3ScriptConfig(BaseClientModel):
+    script_file_name: str = Field(default_factory=lambda: os.path.basename(__file__))
+
+    # Account configuration
+    exchange: str = Field("binance_perpetual", client_data=ClientFieldData(prompt_on_new=True, prompt=lambda mi: "Enter the name of the exchange where the bot will operate (e.g., binance_perpetual):"))
+    trading_pairs: str = Field("DOGE-USDT,INJ-USDT", client_data=ClientFieldData(prompt_on_new=True, prompt=lambda mi: "List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT):"))
+    leverage: int = Field(20, client_data=ClientFieldData(prompt_on_new=True, prompt=lambda mi: "Set the leverage to use for trading (e.g., 20 for 20x leverage):"))
+```
+
+### Creating script config files
+
+To create a V2 configuration file for a script, run `create` and add the `--script-config` flag. In the auto-complete dropdown, only the configurable scripts located in the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
+folder will be shown.
+
+![](./create-script-config-autocomplete.png)
+
+Afterwards, you will be presented with prompts and default values defined in the config class above.
+
+![](./create-script-config.png)
+
+The last prompt will ask you to enter a name for the config file, which is saved in `conf/scripts`.
+
+### Starting configurable scripts
+
+Run `start` with both `--script` and `--conf` flags to run a script with a configuration file.
+
+![](./start-script-config.png)
+
+## V1 Strategy config files
+
+### Creating V1 config files
+
+Run `create` command without the `--script-config` flag to create a [V1 Strategy](/v1-strategies) config file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
+
+Next, answer the prompts to configure your bot's behavior depending on the strategy you want to use.
 
 The last prompt will ask you to enter a name for the config file. You can also specify the name of your file at the beginning by running `create [file_name]` command.
 
 ![](/assets/img/create-file-name.png)
 
-## Config file templates
-
-These configuration files created and used by Hummingbot are saved in the `conf/` directory of your instance, which you can edit directly with a standard text editor.
-
-- Installed from source: `hummingbot/conf`
-- Installed via Docker: `hummingbot_files/hummingbot_conf`
-  - `hummingbot_files` is the default name of the parent directory. This can be different depending on the setup
-    when the instance was created.
-
-The template configuration files can be found here: [Config Templates](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/templates).
-
-!!! warning
-    Exit Hummingbot and ensure it is not running when you modify the config files. Changes will take effect the next time Hummingbot is started.
-
-## Strategy-specific files
-
-Running `create` command initializes the configuration of global and strategy-specific settings necessary to run the bot.
-
-Running this command will automatically create the following files in these folders:
-
-| File                                    | Description                                                                                          |
-| --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `conf_client.yml`                       | Global configuration settings, e.g. Binance API keys and Ethereum node.                              |
-| `conf_pure_mm_[#].yml`                  | Settings for the [pure market making](/strategies/pure-market-making/) strategy.                     |
-| `conf_xemm_[#].yml`                     | Settings for the [cross-exchange market making](/strategies/cross-exchange-market-making/) strategy. |
-| `conf_liquidity_mining_[#].yml`         | Settings for the [liquidity mining](/strategies/liquidity-mining/) strategy.                         |
-| `conf_perpetual_market_making_#.yml`    | Settings for the [perpetual market making](/strategies/perpetual-market-making) strategy.            |
-| `conf_arb_[#].yml`                      | Settings for the arbitrage strategy.                                       |
-| `conf_celo_arb_[#].yml`                 | Settings for the celo arbitrage strategy.                                   |
-| `conf_amm_arb_[#].yml`                  | Settings for the [amm arbitrage](/strategies/amm-arbitrage/) strategy.                                     |
-| `conf_spot_perpetual_arbitrage_[#].yml` | Settings for the [spot perpetual arbitrage](/strategies/spot-perpetual-arbitrage/) strategy.         |
-| `conf_avellaneda_market_making_[#].yml` | Settings for the [avellaneda market making](/strategies/avellaneda-market-making/) strategy.         |
-| `conf_aroon_oscillator_[#].yml`         | Settings for the [aroon oscillator](/strategies/aroon-oscillator/) |
-| `conf_hedge_[#].yml`                    | Settings for the [hedge](/strategies/hedge/)                       |
-| `conf_twap_[#].yml`                     | Settings for the [TWAP](/strategies/twap/)                         |
-| `conf_fixed_grid_[#].yml`               | Settings for the fixed grid strategy             |
-
-!!! tip
-    For editing configuration files directly, once they are created, you may find it easier to edit the configuration files in the `conf/` folder. Simply open them with a text editor and make any desired modifications.
-
-## Setup walkthrough
-
-After running `create` command, you need to setup a strategy along with its parameters.
-
-We have developed walkthroughs for each strategy:
-
-- [Pure market making](/strategies/pure-market-making)
-- [Cross-exchange market making](/strategies/cross-exchange-market-making)
-- [Perpetual Market Making](/strategies/perpetual-market-making)
-- `Arbitrage`
-- `Celo Arbitrage`
-- [AMM Arbitrage](/strategies/amm-arbitrage/)
-- [Liquidity Mining](/strategies/liquidity-mining/)
-- [Spot Perpetual Arbitrage](/strategies/spot-perpetual-arbitrage/)
-- [Avellaneda Market Making](/strategies/avellaneda-market-making/)
-- [Aroon Oscillator](/strategies/aroon-oscillator/)
-- [Hedge](/strategies/hedge/)
-- [TWAP](/strategies/twap/)
-- `Fixed Grid`
-
-!!! note
-    When Running Hummingbot, make sure you are aware of your exchange's minimum order sizes and fees, and check that your trading pair has sufficient order book and trading volumes. You can find more info about specific exchanges in the [Connectors](/exchanges/) section.
-
-## Import an existing strategy file
+### Import an existing config file
 
 1. Run `import` command
 2. Enter the name of your strategy config file
@@ -81,9 +64,6 @@ We have developed walkthroughs for each strategy:
 You can also skip the prompt by running `import [file_name]` command.
 
 ![](/assets/img/import-file-name.png)
-
-!!! tip
-    Press **TAB** to scroll through the auto-complete selections.
 
 **Sample usage**
 
@@ -102,35 +82,9 @@ Enter "start" to start market making
 
 ```
 
-## Create command shortcuts
+### Config file templates
 
-To use this feature, open and configure `conf_client.yml` located under the `hummingbot_conf` folder.
+While Scripts are single files that contain the types and messages for their parameters, V1 Strategies have a separate pre-defined template configuration file defined by the strategy author. 
 
-!!! Note
-    In past versions of Hummingbot (1.5.0 and below), the `conf_client.yml` file is named `conf_global.yml`
+Each V1 strategy template can be found here: [Config Templates](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/templates).
 
-Import the lines of code to create a custom command shortcut.
-
-```
-# Command Shortcuts
-# Define abbreviations for often used commands
-# or batch grouped commands together
-
-command_shortcuts:
-  # Assign shortcut command
-  command: spreads_refresh
-
-  # Reference
-  help: Set bid spread, ask spread, and order refresh time
-
-  # Argument Label
-  arguments: [Bid Spread, Ask Spread, Order Refresh Time]
-
-  # Original config output with value
-  output: [config bid_spread $1, config ask_spread $2, config order_refresh_time $3]
-```
-
-!!! note
-    Custom made commands can only be used once a strategy has been imported.
-
-![Custom Script Instructions](/assets/img/script-command.gif)

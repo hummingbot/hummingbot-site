@@ -16,25 +16,13 @@ To run a strategy, a user selects a [base strategy](../v2-strategies/examples/),
 
 We encourage users to create their own custom strategies and/or extend the existing examples.
 
-
-<div class="grid cards" markdown>
-
--   ## 🎓 Learn Strategy Development in Botcamp
-
-    ---
-
-    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](/botcamp), which teaches you how to design, backtest and deploy advanced algo trading and market making strategies using Hummingbot.
-
-</div>
-
-
 ## Types of Hummingbot Strategies
 
-### [V2 Strategies](../v2-strategies/index.md)
+### V2 Strategies
 
 Hummingbot's V2 strategies represent the latest innovation in trading strategy development, designed for composability, access to real-time market data, and backtestability. Compared to the rigid V1 Strategies, V2 Strategies are modular and composable, allowing non-technical users to build powerful strategies using Lego-like components.
 
-* [Sample V2 Strategies](../v2-strategies/examples/): Various V2 strategy templates
+* [Sample V2 Strategies](../v2-strategies/examples/): Various V2 strategies and how to use them
 * [V2 Strategies Cheatsheat](../v2-strategies/cheatsheet/): One-pager that helps you use and extend V2 strategies
 * [V2 Strategy Architecture](../v2-strategies/): Learn about each component in the V2 framework
 
@@ -45,3 +33,13 @@ The original Hummingbot V1 strategies offer a structured, template-based environ
 ### [Scripts](../scripts/index.md)
 
 Ideal for beginners and those seeking a quick, straightforward approach, a script provides a lightweight solution in a single Python file.
+
+<div class="grid cards" markdown>
+
+-   ## 🎓 Learn Strategy Development in Botcamp
+
+    ---
+
+    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](/botcamp), which teaches you how to design, backtest and deploy advanced algo trading and market making strategies using Hummingbot.
+
+</div>
