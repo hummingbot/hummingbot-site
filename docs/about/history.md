@@ -17,7 +17,7 @@ Today, Hummingbot is a bazaar-style open source project with many contributors a
 * [The Defiant - Team Behind Hummingbot Gives Away Its Code Via Foundation](https://thedefiant.io/coin-alpha-hummingbot-foundation/)
 * [Crunchbase News - Cryptocurrency Trading Bot Platform Hummingbot Buzzes With $8M Series A](https://news.crunchbase.com/fintech-ecommerce/cryptocurrency-trading-bot-platform-hummingbot-buzzes-with-8m-series-a/)
 * [The Hummingbot origin story](../blog/posts/hummingbot-is-live/index.md)
-* [Announcing Hummingbot](/blog/2019/04/04/hummingbot-is-live/)
+* [Announcing Hummingbot](../blog/posts/hummingbot-is-live/index.md)
 * [Introducing liquidity mining](../blog/posts/liquidity-mining-launch/index.md)
 * [Demystifying liquidity mining rewards](../academy-content/posts/demystifying-liquidity-mining-rewards/index.md)
 * [Comparing liquidity mining options in DeFi vs. Hummingbot](../academy-content/posts/liquidity-mining-in-hummingbot-vs-defi/index.md)

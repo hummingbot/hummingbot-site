@@ -4,7 +4,7 @@ Exchange connectors are packages of code that link Hummingbot's internal trading
 
 ## CEX Connector Development Checklist
 
-For spot exchanges, we have a **Notion template** available which you can use as a checklist for developing the connector and it should help you understand the main components and functionalities of each class. You can view the template [here](https://hummingbot-foundation.notion.site/CEX-Connector-Development-6506b85ea96a430b8448216b0429cb02)
+For spot exchanges, we have a [**Notion template**](https://hummingbot-foundation.notion.site/CEX-Connector-Development-6506b85ea96a430b8448216b0429cb02) available which you can use as a checklist for developing the connector and it should help you understand the main components and functionalities of each class. 
 
 ## Templates
 
@@ -29,11 +29,11 @@ We encourage and welcome contributions from the community, subject to the guidel
 
 ### Process overview
 
-1. Build a spot or perp connector that fulfills the requirements listed in the [Build process](./build) and the [QA Testing process](./test).
+1. Build a spot or perp connector that fulfills the requirements listed in the [API Checklist](spot-connector-checklist.md) and the [QA Testing process](test.md).
 
-2. Submit a pull request with the connector to the `development` branch in Github, following the [Contribution Guidelines](/developers/contributions/).
+2. Submit a pull request with the connector to the `development` branch in Github, following the [Contribution Guidelines](../contributions.md).
 
-3. Submit a Pull Request Proposal (PRP) in the [Hummingbot PRP Snapshot](https://snapshot.org/#/hbot-prp.eth). In particular, the PRP should identify a dedicated maintainer who will be responsible for fixing bugs and applying updates.
+3. Submit a New Connector Proposal (NCP) in the [Hummingbot NCP Snapshot](https://snapshot.org/#/hbot-ncp.eth). In particular, the PRP should identify a dedicated maintainer who will be responsible for fixing bugs and applying updates.
 
 Only connectors
 
