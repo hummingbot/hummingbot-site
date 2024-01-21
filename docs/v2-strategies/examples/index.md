@@ -9,15 +9,20 @@ The main logic in a V2 strategy is contained in the [Controller](../controllers)
 
 For users, their primary interface is the [V2 Script](../v2-scripts/), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
 
-To generate a configuration file for a V2 script, run:
+To generate a configuration file for a script, run:
 ```
 create --script-config [SCRIPT_FILE]
 ```
+
+The auto-complete for `[SCRIPT_FILE]` will only display the scripts in the local `/scripts` directory that are configurable.
 
 You will be prompted to define the strategy parameters, which are saved in a YAML file in the `conf/scripts` directory. Afterwards, you can run the script by specifying this config file:
 ```
 start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]`
 ```
+
+The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the local `/conf/scripts` directory.
+
 
 ## Directional Strategies
 
@@ -32,49 +37,52 @@ Here are the current V2 directional strategies:
 
 ### Bollinger V1
 
-A simple directional strategy that uses [Bollinger Bands](/indicators/#bollinger-bands) to construct long/short signals. BBP measures an asset's price relative to its upper and lower Bollinger Bands.
+A simple directional strategy using [Bollinger Band Percent (BBP)](/glossary/#bollinger-bands). BBP measures an asset's price relative to its upper and lower Bollinger Bands, and this strategy uses the current BBP to construct long/short signals.
 
 **Code:**
 
 * Controller: [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/bollinger_v1.py)
-* Script: [v2_directional-trading_bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_bollinger_v1.py)
+* Script: [v2_bollinger_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_bollinger_v1_config.py)
 
-**Creating a Config**:
+**Creating a Config File**:
 ```
-create --script-config bollinger_v1.py
+create --script-config v2_bollinger_v1
 ```
+
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run: 
+
+| Parameter      | Prompt |
+|----------------|--------|
+| exchange       | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs  | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage       | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| stop_loss      | Set the stop loss percentage (e.g., 0.01 for 1% loss): |
+| take_profit    | Enter the take profit percentage (e.g., 0.03 for 3% gain): |
+| time_limit    | Set the time limit in seconds for the triple barrier (e.g., 21600 for 6 hours): |
+| trailing_stop_activation_price_delta    | Enter the activation price delta for the trailing stop (e.g., 0.008 for 0.8%): |
+| trailing_stop_trailing_delta    | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%): |
+| order_amount_usd    | Enter the order amount in USD (e.g., 15): |
+| cooldown_time    | Specify the cooldown time in seconds between order placements (e.g., 15): |
+| candles_exchange    | Enter the exchange name to fetch candle data from (e.g., binance_perpetual): |
+| candles_interval    | Set the time interval for candles (e.g., 1m, 5m, 1h): |
+| bb_length    | Enter the Bollinger Bands length (e.g., 100): |
+| bb_std    | Set the standard deviation for the Bollinger Bands (e.g., 2.0): |
+| bb_long_threshold    | Specify the long threshold for Bollinger Bands (e.g., 0.3): |
+| bb_short_threshold    | Define the short threshold for Bollinger Bands (e.g., 0.7): |
+
+In addition, the script may define other parameters that don't have the `prompt_on_new` flag.
 
 **Starting the Script**:
 ```
 start --script bollinger_v1.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
-**Parameters**
-
-
-**Logic:**
-
-```python
-class BollingerV1Config(DirectionalTradingControllerConfigBase):
-    strategy_name = "bollinger_v1"
-    bb_length: int = Field(default=100, ge=20, le=400)
-    bb_std: float = Field(default=2.0, ge=2.0, le=3.0)
-    bb_long_threshold: float = Field(default=0.0, ge=-1.0, le=0.2)
-    bb_short_threshold: float = Field(default=1.0, ge=0.8, le=2.0)
-
-class BollingerV1(DirectionalTradingControllerBase):
-    def get_processed_data(self) -> pd.DataFrame:
-        df = self.candles[0].candles_df
-
-        # Add indicators
-        df.ta.bbands(length=self.config.bb_length, std=self.config.bb_std, append=True)
-
-        # Generate signal
-        long_condition = df[f"BBP_{self.config.bb_length}_{self.config.bb_std}"] < self.config.bb_long_threshold
-        short_condition = df[f"BBP_{self.config.bb_length}_{self.config.bb_std}"] > self.config.bb_short_threshold
-```
 
 **Status**
+
+The screenshot below show what is displayed when the `status` command is run:
 
 ![](./status-bollinger.png)
 

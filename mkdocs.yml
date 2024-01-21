@@ -205,10 +205,10 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - V2 Strategies:
       - V2 Strategies: strategies/index.md
-      - Sample V2 Strategies: v2-strategies/examples/index.md
-      - V2 Strategies Cheatsheet: v2-strategies/cheatsheet/index.md
-      - V2 Strategy Architecture:
-        - V2 Strategy Architecture: v2-strategies/index.md
+      - Sample Strategies: v2-strategies/examples/index.md
+      - V2 Cheatsheet: v2-strategies/cheatsheet/index.md
+      - Architecture:
+        - Architecture: v2-strategies/index.md
         - V2 Scripts: v2-strategies/v2-scripts/index.md
         - Controllers: v2-strategies/controllers/index.md
         - Candles: v2-strategies/candles/index.md
@@ -336,8 +336,7 @@ nav:
       - Brokers: installation/broker.md
       - Dashboard: dashboard/index.md
       - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
-    - Glossary: glossary.md
-    - Indicators: indicators/index.md
+    - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
   - Academy:
     - Academy: academy/index.md
