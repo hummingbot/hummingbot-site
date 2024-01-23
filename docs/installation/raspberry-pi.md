@@ -5,7 +5,7 @@
 ### Prerequisites
 
 !!! note
-    This installation method is currently under testing and awaiting feedback from users. Should you run into problems or have found a fix to solve errors along the way, feel free to reach out through our [Discord](https://discord.com/invite/2MN3UWg) support channel.
+    This installation method is currently under testing and awaiting feedback from users. Should you run into problems or have found a fix to solve errors along the way, feel free to reach out through our [Discord](https://discord.com/invite/hummingbot) support channel.
 
 **Install Docker and change permissions**
 
