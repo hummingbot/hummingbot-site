@@ -275,7 +275,7 @@ It is important to notice that the trading concept is still the same, no matter 
 
 # **Join our community!**
 
-You can be part of our community by joining us on our [ Discord channel](https://discord.com/invite/2MN3UWg) to talk about the hummingbot, strategies, liquidity mining, and anything else related to the cryptocurrency world, and receive direct support from our team.
+You can be part of our community by joining us on our [ Discord channel](https://discord.com/invite/hummingbot) to talk about the hummingbot, strategies, liquidity mining, and anything else related to the cryptocurrency world, and receive direct support from our team.
 
 To keep up with the news and updates, make sure to follow us on [ Twitter](https://twitter.com/hummingbot_io) and our Community on [ Reddit](https://www.reddit.com/r/Hummingbot/).
 
