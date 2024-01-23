@@ -89,9 +89,9 @@ Exchanges connections are handled by the part of the Hummingbot code that we cal
 
 But Hummingbot is constantly evolving, and our team is continually working on adding more **connectors** to our official release.
 
-As an [open-source project](https://github.com/hummingbot/hummingbot), anyone in our community can contribute to building new **connectors**. Our team is always willing to help any developer who wants to help improve Hummingbot. You can always find us on our [Discord server](https://discord.com/invite/2MN3UWg).
+As an [open-source project](https://github.com/hummingbot/hummingbot), anyone in our community can contribute to building new **connectors**. Our team is always willing to help any developer who wants to help improve Hummingbot. You can always find us on our [Discord server](https://discord.com/invite/hummingbot).
 
-But if you aren’t a developer, you can instead [create a request on our Github repo](https://github.com/hummingbot/hummingbot/issues?q=is%3Aopen+is%3Aissue+label%3Aconnector), asking for your favorite exchange to be added- or look for help from our community developers also on our [Discord server](https://discord.com/invite/2MN3UWg).
+But if you aren’t a developer, you can instead [create a request on our Github repo](https://github.com/hummingbot/hummingbot/issues?q=is%3Aopen+is%3Aissue+label%3Aconnector), asking for your favorite exchange to be added- or look for help from our community developers also on our [Discord server](https://discord.com/invite/hummingbot).
 
 We are also working on giving more power to our community.  We recently completed our [second governance vote](../../../blog/posts/changes-to-hummingbot-maintenance-and-governance/index.md), which allowed our liquidity miners to vote for the next connector to be officially supported and included in the next release.
 
@@ -230,7 +230,7 @@ Using `ticker`, the bot will show an update of what are the current prices on th
 
 That’s all for today, but there is still a lot more to cover. There are still a few more commands left to talk about, and we will go back to them in the next article. Meanwhile, if you haven’t already, feel free to join our ever growing community.
 
-We already have an established (and growing) community full of people using Hummingbot, and you can join us on our [Discord channel](https://discord.com/invite/2MN3UWg) to talk about the bot, strategies, liquidity mining and anything else related to the cryptocurrency world, and receive direct support from our team.
+We already have an established (and growing) community full of people using Hummingbot, and you can join us on our [Discord channel](https://discord.com/invite/hummingbot) to talk about the bot, strategies, liquidity mining and anything else related to the cryptocurrency world, and receive direct support from our team.
 
 To keep up with the news and updates, make sure to follow us on [Twitter](https://twitter.com/hummingbot_io), and our community on [Reddit](https://www.reddit.com/r/Hummingbot/).
 
