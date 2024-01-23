@@ -177,4 +177,4 @@ Optimal market-making strategies have been a focus of academic research for deca
 
 ## Join Our Community
 
-Join our [Discord channel](https://discord.com/invite/2MN3UWg) to engage with fellow market makers and arbitrageurs. Follow us on [Twitter](https://twitter.com/hummingbot_io) and [Reddit](https://www.reddit.com/r/Hummingbot/) for updates and news. Don't miss our content on market making, including interviews with professional traders, on our [Youtube Channel](https://www.youtube.com/channel/UCxzzdEnDRbylLMWmaMjywOA?sub_confirmation=1).
+Join our [Discord channel](https://discord.com/invite/hummingbot) to engage with fellow market makers and arbitrageurs. Follow us on [Twitter](https://twitter.com/hummingbot_io) and [Reddit](https://www.reddit.com/r/Hummingbot/) for updates and news. Don't miss our content on market making, including interviews with professional traders, on our [Youtube Channel](https://www.youtube.com/channel/UCxzzdEnDRbylLMWmaMjywOA?sub_confirmation=1).

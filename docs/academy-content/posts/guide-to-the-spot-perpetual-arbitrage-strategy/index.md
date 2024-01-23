@@ -150,7 +150,7 @@ After configuration, simply enter `start` and monitor the bot for arbitrage oppo
 
 ## Join Our Community
 
-Our community, comprising market makers and arbitrageurs, actively supports each other in maximizing Hummingbot's potential. Join our [Discord channel](https://discord.com/invite/2MN3UWg) for discussions on Hummingbot, strategies, liquidity mining, and more. Our team provides direct support here.
+Our community, comprising market makers and arbitrageurs, actively supports each other in maximizing Hummingbot's potential. Join our [Discord channel](https://discord.com/invite/hummingbot) for discussions on Hummingbot, strategies, liquidity mining, and more. Our team provides direct support here.
 
 Stay informed about updates by following us on [Twitter](https://twitter.com/hummingbot_io) and joining our [Reddit Community](https://www.reddit.com/r/Hummingbot/).
 
