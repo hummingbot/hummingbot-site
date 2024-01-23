@@ -10,6 +10,7 @@ The main logic in a V2 strategy is contained in the [Controller](../controllers)
 For users, their primary interface is the [V2 Script](../v2-scripts/), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
 
 To generate a configuration file for a script, run:
+
 ```
 create --script-config [SCRIPT_FILE]
 ```
@@ -17,8 +18,9 @@ create --script-config [SCRIPT_FILE]
 The auto-complete for `[SCRIPT_FILE]` will only display the scripts in the local `/scripts` directory that are configurable.
 
 You will be prompted to define the strategy parameters, which are saved in a YAML file in the `conf/scripts` directory. Afterwards, you can run the script by specifying this config file:
+
 ```
-start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]`
+start --script [SCRIPT_FILE-conf [SCRIPT_CONFIG_FILE]`
 ```
 
 The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the local `/conf/scripts` directory.
@@ -45,8 +47,9 @@ A simple directional strategy using [Bollinger Band Percent (BBP)](/glossary/#bo
 * Script: [v2_bollinger_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_bollinger_v1_config.py)
 
 **Creating a Config File**:
+
 ```
-create --script-config v2_bollinger_v1
+create --script-config v2_bollinger_v1_config
 ```
 
 **User Defined Parameters**
@@ -75,8 +78,9 @@ Below are the user-defined parameters when the `create` command is run:
 In addition, the script may define other parameters that don't have the `prompt_on_new` flag.
 
 **Starting the Script**:
+
 ```
-start --script bollinger_v1.py --conf [SCRIPT_CONFIG_FILE]
+start --script v2_bollinger_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
 
@@ -86,46 +90,61 @@ The screenshot below show what is displayed when the `status` command is run:
 
 ![](./status-bollinger.png)
 
+
 ### MACD-BB
 
-A directional strategy that uses both [MACD](/indicators/#macd) and Bollinger Bands to construct long/short signals.
+A directional strategy that combines [MACD](/indicators/#macd) and Bollinger Bands to generate long/short signals. This strategy uses MACD for trend identification and Bollinger Bands for volatility and price level analysis.
 
 **Code:**
 
 * Controller: [macd_bb_v1.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/macd_bb_v1.py)
-* Script: [v2_directional-trading_macd_bb_v1.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_macd_bb_v1.py)
+* Script: [v2_macd_bb_v1_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_macd_bb_v1_config.py)
 
-**Logic:**
+**Creating a Config File**:
 
-Long positions are created when the BBP exceeds the long threshold and the MACD histogram is positive, while short positions are created when the BBP is lower than the short threshold and the MACD histogram is negative.
-
-```python
-class MACDBBV1Config(DirectionalTradingControllerConfigBase):
-    strategy_name: str = "macd_bb_v1"
-    bb_length: int = Field(default=100, ge=20, le=1000)
-    bb_std: float = Field(default=2.0, ge=0.5, le=4.0)
-    bb_long_threshold: float = Field(default=0.0, ge=-3.0, le=0.5)
-    bb_short_threshold: float = Field(default=1.0, ge=0.5, le=3.0)
-    macd_fast: int = Field(default=21, ge=2, le=100)
-    macd_slow: int = Field(default=42, ge=30, le=1000)
-    macd_signal: int = Field(default=9, ge=2, le=100)
-    std_span: Optional[int] = None
-
-class MACDBBV1(DirectionalTradingControllerBase):
-    def get_processed_data(self) -> pd.DataFrame:
-        df = self.candles[0].candles_df
-
-        # Add indicators
-        df.ta.bbands(length=self.config.bb_length, std=self.config.bb_std, append=True)
-        df.ta.macd(fast=self.config.macd_fast, slow=self.config.macd_slow, signal=self.config.macd_signal, append=True)
-        bbp = df[f"BBP_{self.config.bb_length}_{self.config.bb_std}"]
-        macdh = df[f"MACDh_{self.config.macd_fast}_{self.config.macd_slow}_{self.config.macd_signal}"]
-        macd = df[f"MACD_{self.config.macd_fast}_{self.config.macd_slow}_{self.config.macd_signal}"]
-
-        # Generate signal
-        long_condition = (bbp < self.config.bb_long_threshold) & (macdh > 0) & (macd < 0)
-        short_condition = (bbp > self.config.bb_short_threshold) & (macdh < 0) & (macd > 0)
 ```
+create --script-config v2_macd_bb_v1_config
+```
+
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run: 
+
+| Parameter      | Prompt |
+|----------------|--------|
+| exchange       | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs  | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage       | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| stop_loss      | Set the stop loss percentage (e.g., 0.01 for 1% loss) |
+| take_profit    | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit     | Set the time limit in seconds for the triple barrier (e.g., 86400 for 24 hours) |
+| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
+| trailing_stop_trailing_delta | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%) |
+| order_amount_usd | Enter the order amount in USD (e.g., 15) |
+| cooldown_time | Specify the cooldown time in seconds between order placements (e.g., 15) |
+| candles_exchange | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval | Set the time interval for candles (e.g., 3m) |
+| macd_fast | Set the MACD fast length (e.g., 21) |
+| macd_slow | Specify the MACD slow length (e.g., 42) |
+| macd_signal | Define the MACD signal length (e.g., 9) |
+| bb_length | Enter the Bollinger Bands length (e.g., 100) |
+| bb_std | Set the standard deviation for the Bollinger Bands (e.g., 2.0) |
+| bb_long_threshold | Specify the long threshold for Bollinger Bands (e.g., 0.3) |
+| bb_short_threshold | Define the short threshold for Bollinger Bands (e.g., 0.7) |
+
+In addition, the script may define other parameters that don't have the `prompt_on_new` flag.
+
+**Starting the Script**:
+
+```
+start --script v2_macd_bb_v1_config.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+**Status**
+
+The screenshot below show what is displayed when the `status` command is run:
+
+![](./status-macdbb.png)
 
 ### Trend Follower
 
@@ -133,21 +152,48 @@ A simple trend-following strategy that uses Simple Moving Average (SMA) and Boll
 
 **Code:**
 
-- [Controller](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/trend_follower_v1.py)
-- [Script Example - configurable](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional-trading_trend_follower_v1.py)
+* Controller: [trend_follower_v1.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/trend_follower_v1.py)
+* Script: [v2_trend_follower_v1_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_trend_follower_v1_config.py)
 
-**Logic:**
+**Creating a Config File**:
 
-```python
-class TrendFollowerV1Config(DirectionalTradingControllerConfigBase):
-    strategy_name: str = "trend_follower_v1"
-    sma_fast: int = Field(default=20, ge=10, le=150)
-    sma_slow: int = Field(default=100, ge=50, le=400)
-    bb_length: int = Field(default=100, ge=20, le=200)
-    bb_std: float = Field(default=2.0, ge=2.0, le=3.0)
-    bb_threshold: float = Field(default=0.2, ge=0.1, le=0.5)
+```
+create --script-config v2_trend_follower_v1_config
 ```
 
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run:
+
+| Parameter                            | Prompt |
+|--------------------------------------|--------|
+| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| stop_loss                            | Set the stop loss percentage (e.g., 0.01 for 1% loss) |
+| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 86400 for 24 hours) |
+| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
+| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%) |
+| order_amount_usd                     | Enter the order amount in USD (e.g., 15) |
+| cooldown_time                        | Specify the cooldown time in seconds between order placements (e.g., 15) |
+| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | Set the time interval for candles (e.g., 3m) |
+| sma_fast                             | Enter the SMA fast length (range 10-150, e.g., 20) |
+| sma_slow                             | Set the SMA slow length (range 50-400, e.g., 100) |
+| bb_length                            | Enter the Bollinger Bands length (range 50-200, e.g., 100) |
+| bb_std                               | Set the standard deviation for the Bollinger Bands (range 2.0-3.0, e.g., 2.0) |
+| bb_threshold                         | Specify the threshold for the Bollinger Bands (range 0.1-0.5, e.g., 0.2) |
+
+**Starting the Script**:
+
+```
+start --script v2_trend_follower_v1_config.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+#### Status
+
+![](./status-trend-follower.png)
 
 ## Market Making Strategies
 
@@ -155,6 +201,52 @@ Market making strategies create and manage a set of [Position Executors](/v2-str
 
 ### DmanV1
 
+Customized market-making script which uses the DMAN v1 controller
+
+**Code:**
+
+* Controller: [dman_v1.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/dman_v1.py)
+* Script: [v2_dman_v1_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v1_config.py)
+
+**Creating a Config File**:
+
+```
+create --script-config v2_dman_v1_config
+```
+
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run:
+
+| Parameter                            | Prompt |
+|--------------------------------------|--------|
+| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | Set the time interval for candles (e.g., 3m) |
+| order_amount                         | Enter the base order amount in quote asset (e.g., 25 USDT) |
+| n_levels                             | Specify the number of order levels (e.g., 5) |
+| start_spread                         | Set the start spread as a multiple of the NATR (e.g., 1.0 for 1x NATR) |
+| step_between_orders                  | Define the step between orders as a multiple of the NATR (e.g., 0.8 for 0.8x NATR) |
+| order_refresh_time                   | Enter the refresh time in seconds for orders (e.g., 900 for 15 minutes) |
+| cooldown_time                        | Specify the cooldown time in seconds between order placements (e.g., 5) |
+| stop_loss                            | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
+| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 43200 for 12 hours) |
+| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.0045 for 0.45%) |
+| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+| natr_length                          | Enter the NATR (Normalized Average True Range) length (e.g., 100) |
+
+**Starting the Script**:
+
+```
+start --script dman_v1_config.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+#### Status
+
+![](./status-dmanv1.png)
 
 ### DmanV2
 
@@ -162,84 +254,151 @@ A simple market making strategy that uses Natural Average True Range (NATR) to s
 
 **Code:**
 
-- [Controller](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/dman_v1.py)
-- [Script Example - configurable](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v1_with_config.py)
-- [Script Example - spot](https://gist.github.com/david-hummingbot/6d7348d062a009645f3761dc704e7e85)
-- [Script Example - perp](https://gist.github.com/david-hummingbot/e113fc4e0dcdf101507f875467040040)
+* Controller: [dman_v2.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/dman_v2.py)
+* Script: [v2_dman_v2_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v2_config.py)
 
-**Configs:**
+**Creating a Config File**:
 
-- `macd_fast`: indicates the fast period in the MACD indicator
-- `macd_slow`: indicates the slow period in the MACD indicator
-- `macd_signal`: signal period in the MACD indicator
-- `natr_length`: sets the length for the NATR indicator
-- `candles_config`: list of candlesticks used for generating signals
-
-```python
-	  strategy_name: str = "dman_v2"
-    macd_fast: int = 12
-    macd_slow: int = 26
-    macd_signal: int = 9
-    natr_length: int = 14
-    candles_config: List[CandlesConfig]
 ```
+create --script-config v2_dman_v2_config
+```
+
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run:
+
+| Parameter                            | Prompt |
+|--------------------------------------|--------|
+| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | Set the time interval for candles (e.g., 3m) |
+| order_amount                         | Enter the base order amount in quote asset (e.g., 25 USDT) |
+| n_levels                             | Specify the number of order levels (e.g., 5) |
+| start_spread                         | Set the start spread as a multiple of the NATR (e.g., 1.0 for 1x NATR) |
+| step_between_orders                  | Define the step between orders as a multiple of the NATR (e.g., 0.8 for 0.8x NATR) |
+| cooldown_time                        | Specify the cooldown time in seconds between order placements (e.g., 5) |
+| order_refresh_time                   | How often to cancel or replace orders (in seconds) |
+| stop_loss                            | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
+| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 43200 for 12 hours) |
+| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.0045 for 0.45%) |
+| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+| natr_length                          | Enter the NATR (Normalized Average True Range) length (e.g., 100) |
+| macd_fast                            | Set the MACD fast length (e.g., 12) |
+| macd_slow                            | Specify the MACD slow length (e.g., 26) |
+| macd_signal                          | Define the MACD signal length (e.g., 9) |
+
+**Starting the Script**:
+
+```
+start --script dman_v2_config.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+
+#### Status
+
+![](./status-dmanv2.png)
+
 
 ### DmanV3
 
-- Description:  Mean reversion strategy with Grid execution using Bollinger Bands indicator to make spreads dynamic and shift the mid-price.
-- **Key Configs**
-    - `bb_length`: number of periods used for Bollinger Bands calculation
-    - `bb_std`: number of standard deviations used to set Bollinger Band width
-    - `side_filter`: restricts order placement to only one side of the order book
-    - `smart_activation`: allows the controller to place orders conditionally rather than immediately, based on specific market conditions
-    - `activation_threshold`: sets the threshold for smart activation
-    - `dynamic_spread_factor`: enables dynamic adjustment of the spread factor
-    - `dynamic_target_spread`: allows dynamic targeting of spreads
-- Sample Setting
-    - Not backtestable yet
+Mean reversion strategy with Grid execution using Bollinger Bands indicator to make spreads dynamic and shift the mid-price.
 
-```python
-    strategy_name: str = "dman_v3"
-    bb_length: int = 100
-    bb_std: float = 2.0
-    side_filter: bool = False
-    smart_activation: bool = False
-    activation_threshold: Decimal = Decimal("0.001")
-    dynamic_spread_factor: bool = True
-    dynamic_target_spread: bool = False
+**Code:**
+
+* Controller: [dman_v3.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/dman_v3.py)
+* Script: [v2_dman_v3_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v3_config.py)
+
+
+**Creating a Config File**:
+
+```
+create --script-config v2_dman_v3_config
 ```
 
-- Spot Script Example - v2_market-making_dman_v3_multiple_pairs.py
-    - https://gist.github.com/david-hummingbot/357ed947bd5e8e15473026d74727a9f5
-- Perp Script Example - v2_market-making_dman_v3_multiple_pairs.py
-    - https://gist.github.com/david-hummingbot/3653664a4d27e82177d27e34b26d7e91
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run:
+
+| Parameter                            | Prompt |
+|--------------------------------------|--------|
+| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | Set the time interval for candles (e.g., 30m) |
+| bollinger_band_length                | Enter the length of the Bollinger Bands (e.g., 200) |
+| bollinger_band_std                   | Set the standard deviation for the Bollinger Bands (e.g., 3.0) |
+| order_amount                         | Enter the base order amount in quote asset (e.g., 20 USDT) |
+| n_levels                             | Specify the number of order levels (e.g., 5) |
+| start_spread                         | Set the spread of the first order as a ratio of the Bollinger Band value (e.g., 1.0) |
+| step_between_orders                  | Define the step between orders as a ratio of the Bollinger Band value (e.g., 0.2) |
+| stop_loss                            | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
+| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 259200 for 3 days) |
+| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
+| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+
+In addition, the script may define other advanced parameters that don't have the `prompt_on_new` flag.
+
+**Starting the Script**:
+
+```
+start --script dman_v3.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+#### Status
+
+![](./status-dmanv3.png)
+
 
 ### DmanV4
 
-- Description: Directional Market Making Strategy making use of NATR indicator to make spreads dynamic and shift the mid-price.
-- **Key Configs**
-    - `bb_length:` number of periods used for Bollinger Bands calculation
-    - `bb_std:` number of standard deviations used to set Bollinger Band width
-    - `smart_activation:` allows the controller to place orders conditionally rather than immediately, based on specific market conditions
-    - `activation_threshold:` sets the threshold for smart activation
-    - `price_band:` enables or disables the price band functionality.
-    - `price_band_long_filter:` sets the multiplier for the upper limit of the price band for long (buy) positions
-    - `price_band_short_filter:` sets the multiplier for the lower limit of the price band for short (sell) positions
-    - `dynamic_target_spread:` allows dynamic targeting of spreads
-    - `dynamic_spread_factor:` enables dynamic adjustment of the spread factor
-- Sample Setting
-    - Backtesting development in progress
+Directional Market Making Strategy utilizing the NATR indicator to dynamically set spreads and shift the mid-price, enhanced with various advanced configurations for more nuanced control.
 
-```python
-  	strategy_name: str = "dman_v4"
-    bb_length: int = 100
-    bb_std: float = 2.0
-    smart_activation: bool = False
-    activation_threshold: Decimal = Decimal("0.001")
-    price_band: bool = False
-    price_band_long_filter: Decimal = Decimal("0.8")
-    price_band_short_filter: Decimal = Decimal("0.8")
-    dynamic_target_spread: bool = False
-    dynamic_spread_factor: bool = True
+
+**Code:**
+
+* Controller: [dman_v4.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/dman_v4.py)
+* Script: [v2_dman_v4_config.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v4_config.py)
+
+**Creating a Config File**:
+
+```
+create --script-config v2_dman_v4_config
 ```
 
+**User Defined Parameters**
+
+Below are the user-defined parameters when the `create` command is run:
+
+| Parameter                            | Prompt |
+|--------------------------------------|--------|
+| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | Set the time interval for candles (e.g., 3m) |
+| bollinger_band_length                | Enter the length of the Bollinger Bands (e.g., 200) |
+| order_amount                         | Enter the base order amount in quote asset (e.g., 10 USDT) |
+| amount_ratio_increase                | Set the ratio to increase the amount for each subsequent level (e.g., 1.5) |
+| n_levels                             | Specify the number of order levels (e.g., 5) |
+| start_spread                         | Enter the starting spread for orders (e.g., 0.03) |
+| spread_ratio_increase                | Define the ratio to increase the spread for each subsequent level (e.g., 2.0) |
+| stop_loss                            | Set the stop loss percentage (e.g., 0.5) |
+| global_trailing_stop_activation_price_delta | Enter the activation price delta for the global trailing stop (e.g., 0.025) |
+| global_trailing_stop_trailing_delta  | Set the trailing delta for the global trailing stop (e.g., 0.005) |
+
+In addition, the script may define other advanced parameters that don't have the `prompt_on_new` flag.
+
+**Starting the Script**:
+
+```
+start --script dman_v4_config.py --conf [SCRIPT_CONFIG_FILE]
+```
+
+#### Status
+
+![](./status-dmanv4.png)
