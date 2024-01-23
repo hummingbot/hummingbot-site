@@ -110,27 +110,27 @@ create --script-config v2_macd_bb_v1_config
 
 Below are the user-defined parameters when the `create` command is run: 
 
-| Parameter      | Prompt |
-|----------------|--------|
-| exchange       | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs  | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage       | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| stop_loss      | Set the stop loss percentage (e.g., 0.01 for 1% loss) |
-| take_profit    | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
-| time_limit     | Set the time limit in seconds for the triple barrier (e.g., 86400 for 24 hours) |
-| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
-| trailing_stop_trailing_delta | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%) |
-| order_amount_usd | Enter the order amount in USD (e.g., 15) |
-| cooldown_time | Specify the cooldown time in seconds between order placements (e.g., 15) |
-| candles_exchange | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
-| candles_interval | Set the time interval for candles (e.g., 3m) |
-| macd_fast | Set the MACD fast length (e.g., 21) |
-| macd_slow | Specify the MACD slow length (e.g., 42) |
-| macd_signal | Define the MACD signal length (e.g., 9) |
-| bb_length | Enter the Bollinger Bands length (e.g., 100) |
-| bb_std | Set the standard deviation for the Bollinger Bands (e.g., 2.0) |
-| bb_long_threshold | Specify the long threshold for Bollinger Bands (e.g., 0.3) |
-| bb_short_threshold | Define the short threshold for Bollinger Bands (e.g., 0.7) |
+| Parameter      | Type  | Prompt |
+|----------------|-------|--------|
+| exchange       | trading | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs  |  trading | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage       |  trading | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| stop_loss      | PositionExecutor | Set the stop loss percentage (e.g., 0.01 for 1% loss) |
+| take_profit    | PositionExecutor| Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit     | PositionExecutor| Set the time limit in seconds for the triple barrier (e.g., 86400 for 24 hours) |
+| trailing_stop_activation_price_delta | PositionExecutor| Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
+| trailing_stop_trailing_delta | PositionExecutor | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%) |
+| order_amount_usd | orders | Enter the order amount in USD (e.g., 15) |
+| cooldown_time | orders | Specify the cooldown time in seconds between order placements (e.g., 15) |
+| candles_exchange | candles | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval | candles | Set the time interval for candles (e.g., 3m) |
+| macd_fast | strategy | Set the MACD fast length (e.g., 21) |
+| macd_slow | strategy | Specify the MACD slow length (e.g., 42) |
+| macd_signal | strategy | Define the MACD signal length (e.g., 9) |
+| bb_length | strategy | Enter the Bollinger Bands length (e.g., 100) |
+| bb_std | strategy | Set the standard deviation for the Bollinger Bands (e.g., 2.0) |
+| bb_long_threshold | strategy | Specify the long threshold for Bollinger Bands (e.g., 0.3) |
+| bb_short_threshold | strategy | Define the short threshold for Bollinger Bands (e.g., 0.7) |
 
 In addition, the script may define other parameters that don't have the `prompt_on_new` flag.
 
@@ -144,7 +144,7 @@ start --script v2_macd_bb_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 
 The screenshot below show what is displayed when the `status` command is run:
 
-![](./status-macdbb.png)
+[![](./status-macdbb.png)](./status-macdbb.png)
 
 ### Trend Follower
 
@@ -191,7 +191,7 @@ Below are the user-defined parameters when the `create` command is run:
 start --script v2_trend_follower_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
-#### Status
+**Status:**
 
 ![](./status-trend-follower.png)
 
@@ -244,7 +244,7 @@ Below are the user-defined parameters when the `create` command is run:
 start --script dman_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
-#### Status
+**Status:**
 
 ![](./status-dmanv1.png)
 
@@ -297,7 +297,7 @@ start --script dman_v2_config.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
 
-#### Status
+**Status:**
 
 ![](./status-dmanv2.png)
 
@@ -349,7 +349,7 @@ In addition, the script may define other advanced parameters that don't have the
 start --script dman_v3.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
-#### Status
+**Status:**
 
 ![](./status-dmanv3.png)
 
@@ -399,6 +399,6 @@ In addition, the script may define other advanced parameters that don't have the
 start --script dman_v4_config.py --conf [SCRIPT_CONFIG_FILE]
 ```
 
-#### Status
+**Status:**
 
 ![](./status-dmanv4.png)
