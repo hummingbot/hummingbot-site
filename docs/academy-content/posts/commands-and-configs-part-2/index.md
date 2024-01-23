@@ -166,7 +166,7 @@ If you have an idea for a script but have no coding knowledge, you can always cr
 
 This is only a fraction of what can be done with your Hummingbot. Be ready to learn even more about market making bot customization on the next articles.
 
-And remember that you can be part of our community by joining us on our [Discord channel](https://discord.com/invite/2MN3UWg) to talk about the bot, strategies, liquidity mining and anything else related to the cryptocurrency world, and receive direct support from our team.
+And remember that you can be part of our community by joining us on our [Discord channel](https://discord.com/invite/hummingbot) to talk about the bot, strategies, liquidity mining and anything else related to the cryptocurrency world, and receive direct support from our team.
 
 To keep up with the news and updates make sure to follow us on [Twitter](https://twitter.com/hummingbot_io), and our Community on [Reddit](https://www.reddit.com/r/Hummingbot/).
 
