@@ -8,12 +8,18 @@ The Hummingbot Foundation, supported by its sponsors, partners and backers, is d
     <img src="/assets/logos/vega-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
+    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
     <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>
     <img src="/assets/logos/coinalpha-light.png" class="light-logo"/>
   </div>
 </div>
 
-- [**Vega Protocol**](https://vega.xyz/): Vega Protocol's partnership with Hummingbot Foundation underscores the the symbiotic combination of a cutting-edge decentralized exchange protocol with a global market maker community. This collaboration is aimed at enabling both individual and professional market makers to successfully provide liquidity and execute strategies on Vega markets using Hummingbot. [See Announcement](https://blog.vega.xyz/announcing-the-hummingbot-vega-protocol-partnership-5eb75a9b5644).
+- [**Vega Protocol**](https://vega.xyz/): Vega Protocol's partnership with Hummingbot Foundation underscores the symbiotic combination of a cutting-edge decentralized exchange protocol with a global market maker community. This collaboration is aimed at enabling both individual and professional market makers to successfully provide liquidity and execute strategies on Vega markets using Hummingbot. [See Announcement](https://blog.vega.xyz/announcing-the-hummingbot-vega-protocol-partnership-5eb75a9b5644).
+
+- [**Hyperliquid**](https://hyperliquid.xyz/): Hyperliquid has partnered with Hummingbot Foundation to show the power of democratized, algorithmic access to markets. Hyperliquid is an order book perpetual futures DEX that aims to do everything the best CEXs do, but on-chain. Their unique [Vaults]((https://app.hyperliquid.xyz/vaults)) allow users to run stake-able liquidity provision strategies. Vaults are highly transparent (all trades and orders are displayed in real-time) and should be a good fit for Hummingbot users who want to run various types of strategies, display their trading performance publicly, and attract stakers.
 
 - [**CoinAlpha**](https://coinalpha.com/): As the original creator of Hummingbot, CoinAlpha played a pivotal role in the establishment of the Hummingbot Foundation. CoinAlpha not only initiated the transition of Hummingbot to a community-driven model but also provided essential startup funding to jumpstart the Foundation's endeavor to build a Linux-like ecosystem. [See Announcement](https://thedefiant.io/coin-alpha-hummingbot-foundation).
 
