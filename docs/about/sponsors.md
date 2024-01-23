@@ -8,8 +8,8 @@ The Hummingbot Foundation, supported by its sponsors, partners and backers, is d
     <img src="/assets/logos/vega-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-light.png" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-dark.png" class="light-logo"/>
+    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>

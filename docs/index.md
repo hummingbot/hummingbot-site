@@ -249,8 +249,8 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
     <img src="/assets/logos/vega-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-light.png" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-dark.png" class="light-logo"/>
+    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/1kx-dark.png" class="dark-logo"/>
