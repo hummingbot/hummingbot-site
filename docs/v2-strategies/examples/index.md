@@ -56,24 +56,25 @@ create --script-config v2_bollinger_v1_config
 
 Below are the user-defined parameters when the `create` command is run: 
 
-| Parameter      | Prompt |
-|----------------|--------|
-| exchange       | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs  | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage       | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| stop_loss      | Set the stop loss percentage (e.g., 0.01 for 1% loss): |
-| take_profit    | Enter the take profit percentage (e.g., 0.03 for 3% gain): |
-| time_limit    | Set the time limit in seconds for the triple barrier (e.g., 21600 for 6 hours): |
-| trailing_stop_activation_price_delta    | Enter the activation price delta for the trailing stop (e.g., 0.008 for 0.8%): |
-| trailing_stop_trailing_delta    | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%): |
-| order_amount_usd    | Enter the order amount in USD (e.g., 15): |
-| cooldown_time    | Specify the cooldown time in seconds between order placements (e.g., 15): |
-| candles_exchange    | Enter the exchange name to fetch candle data from (e.g., binance_perpetual): |
-| candles_interval    | Set the time interval for candles (e.g., 1m, 5m, 1h): |
-| bb_length    | Enter the Bollinger Bands length (e.g., 100): |
-| bb_std    | Set the standard deviation for the Bollinger Bands (e.g., 2.0): |
-| bb_long_threshold    | Specify the long threshold for Bollinger Bands (e.g., 0.3): |
-| bb_short_threshold    | Define the short threshold for Bollinger Bands (e.g., 0.7): |
+| Parameter      | Type | Prompt |
+|----------------|------|--------|
+| exchange       | trading     | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs  | trading     | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage       | trading     | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| stop_loss      | PositionExecutor     | Set the stop loss percentage (e.g., 0.01 for 1% loss): |
+| take_profit    | PositionExecutor     | Enter the take profit percentage (e.g., 0.03 for 3% gain): |
+| time_limit     | PositionExecutor     | Set the time limit in seconds for the triple barrier (e.g., 21600 for 6 hours): |
+| trailing_stop_activation_price_delta | PositionExecutor     | Enter the activation price delta for the trailing stop (e.g., 0.008 for 0.8%): |
+| trailing_stop_trailing_delta | PositionExecutor     | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%): |
+| order_amount_usd | orders     | Enter the order amount in USD (e.g., 15): |
+| cooldown_time  |   orders   | Specify the cooldown time in seconds between order placements (e.g., 15): |
+| candles_exchange | candles     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual): |
+| candles_interval | candles     | Set the time interval for candles (e.g., 1m, 5m, 1h): |
+| bb_length      | strategy     | Enter the Bollinger Bands length (e.g., 100): |
+| bb_std         | strategy     | Set the standard deviation for the Bollinger Bands (e.g., 2.0): |
+| bb_long_threshold | strategy     | Specify the long threshold for Bollinger Bands (e.g., 0.3): |
+| bb_short_threshold | strategy     | Define the short threshold for Bollinger Bands (e.g., 0.7): |
+
 
 In addition, the script may define other parameters that don't have the `prompt_on_new` flag.
 
@@ -88,7 +89,7 @@ start --script v2_bollinger_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 
 The screenshot below show what is displayed when the `status` command is run:
 
-![](./status-bollinger.png)
+[![](./status-bollinger.png)](./status-bollinger.png)
 
 
 ### MACD-BB
@@ -146,6 +147,8 @@ The screenshot below show what is displayed when the `status` command is run:
 
 [![](./status-macdbb.png)](./status-macdbb.png)
 
+
+
 ### Trend Follower
 
 A simple trend-following strategy that uses Simple Moving Average (SMA) and Bollinger Bands to construct long/short signals.
@@ -165,25 +168,26 @@ create --script-config v2_trend_follower_v1_config
 
 Below are the user-defined parameters when the `create` command is run:
 
-| Parameter                            | Prompt |
-|--------------------------------------|--------|
-| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| stop_loss                            | Set the stop loss percentage (e.g., 0.01 for 1% loss) |
-| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
-| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 86400 for 24 hours) |
-| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
-| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%) |
-| order_amount_usd                     | Enter the order amount in USD (e.g., 15) |
-| cooldown_time                        | Specify the cooldown time in seconds between order placements (e.g., 15) |
-| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
-| candles_interval                     | Set the time interval for candles (e.g., 3m) |
-| sma_fast                             | Enter the SMA fast length (range 10-150, e.g., 20) |
-| sma_slow                             | Set the SMA slow length (range 50-400, e.g., 100) |
-| bb_length                            | Enter the Bollinger Bands length (range 50-200, e.g., 100) |
-| bb_std                               | Set the standard deviation for the Bollinger Bands (range 2.0-3.0, e.g., 2.0) |
-| bb_threshold                         | Specify the threshold for the Bollinger Bands (range 0.1-0.5, e.g., 0.2) |
+| Parameter                            | Type | Prompt |
+|--------------------------------------|------|--------|
+| exchange                             | trading     | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | trading     | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | trading     | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| stop_loss                            | PositionExecutor     | Set the stop loss percentage (e.g., 0.01 for 1% loss) |
+| take_profit                          | PositionExecutor     | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | PositionExecutor     | Set the time limit in seconds for the triple barrier (e.g., 86400 for 24 hours) |
+| trailing_stop_activation_price_delta | PositionExecutor     | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
+| trailing_stop_trailing_delta         | PositionExecutor     | Set the trailing delta for the trailing stop (e.g., 0.004 for 0.4%) |
+| order_amount_usd                     | orders     | Enter the order amount in USD (e.g., 15) |
+| cooldown_time                        | orders     | Specify the cooldown time in seconds between order placements (e.g., 15) |
+| candles_exchange                     | candles     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | candles     | Set the time interval for candles (e.g., 3m) |
+| sma_fast                             | strategy     | Enter the SMA fast length (range 10-150, e.g., 20) |
+| sma_slow                             | strategy     | Set the SMA slow length (range 50-400, e.g., 100) |
+| bb_length                            | strategy     | Enter the Bollinger Bands length (range 50-200, e.g., 100) |
+| bb_std                               | strategy     | Set the standard deviation for the Bollinger Bands (range 2.0-3.0, e.g., 2.0) |
+| bb_threshold                         | strategy     | Specify the threshold for the Bollinger Bands (range 0.1-0.5, e.g., 0.2) |
+
 
 **Starting the Script**:
 
@@ -193,7 +197,8 @@ start --script v2_trend_follower_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 
 **Status:**
 
-![](./status-trend-follower.png)
+[![](./status-trend-follower.png)](./status-trend-follower.png)
+
 
 ## Market Making Strategies
 
@@ -218,25 +223,26 @@ create --script-config v2_dman_v1_config
 
 Below are the user-defined parameters when the `create` command is run:
 
-| Parameter                            | Prompt |
-|--------------------------------------|--------|
-| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
-| candles_interval                     | Set the time interval for candles (e.g., 3m) |
-| order_amount                         | Enter the base order amount in quote asset (e.g., 25 USDT) |
-| n_levels                             | Specify the number of order levels (e.g., 5) |
-| start_spread                         | Set the start spread as a multiple of the NATR (e.g., 1.0 for 1x NATR) |
-| step_between_orders                  | Define the step between orders as a multiple of the NATR (e.g., 0.8 for 0.8x NATR) |
-| order_refresh_time                   | Enter the refresh time in seconds for orders (e.g., 900 for 15 minutes) |
-| cooldown_time                        | Specify the cooldown time in seconds between order placements (e.g., 5) |
-| stop_loss                            | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
-| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
-| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 43200 for 12 hours) |
-| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.0045 for 0.45%) |
-| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
-| natr_length                          | Enter the NATR (Normalized Average True Range) length (e.g., 100) |
+| Parameter                            | Type | Prompt |
+|--------------------------------------|------|--------|
+| exchange                             | trading     | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        |  trading    | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | trading     | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | candles     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | candles     | Set the time interval for candles (e.g., 3m) |
+| order_amount                         | orders     | Enter the base order amount in quote asset (e.g., 25 USDT) |
+| n_levels                             | orders     | Specify the number of order levels (e.g., 5) |
+| start_spread                         | orders     | Set the start spread as a multiple of the NATR (e.g., 1.0 for 1x NATR) |
+| step_between_orders                  | orders     | Define the step between orders as a multiple of the NATR (e.g., 0.8 for 0.8x NATR) |
+| order_refresh_time                   | orders     | Enter the refresh time in seconds for orders (e.g., 900 for 15 minutes) |
+| cooldown_time                        | orders     | Specify the cooldown time in seconds between order placements (e.g., 5) |
+| stop_loss                            | PositionExecutor     | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
+| take_profit                          | PositionExecutor     | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | PositionExecutor     | Set the time limit in seconds for the triple barrier (e.g., 43200 for 12 hours) |
+| trailing_stop_activation_price_delta | PositionExecutor     | Enter the activation price delta for the trailing stop (e.g., 0.0045 for 0.45%) |
+| trailing_stop_trailing_delta         | PositionExecutor     | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+| natr_length                          | strategy     | Enter the NATR (Normalized Average True Range) length (e.g., 100) |
+
 
 **Starting the Script**:
 
@@ -246,7 +252,9 @@ start --script dman_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 
 **Status:**
 
-![](./status-dmanv1.png)
+[![](./status-dmanv1.png)](./status-dmanv1.png)
+
+
 
 ### DmanV2
 
@@ -267,28 +275,28 @@ create --script-config v2_dman_v2_config
 
 Below are the user-defined parameters when the `create` command is run:
 
-| Parameter                            | Prompt |
-|--------------------------------------|--------|
-| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
-| candles_interval                     | Set the time interval for candles (e.g., 3m) |
-| order_amount                         | Enter the base order amount in quote asset (e.g., 25 USDT) |
-| n_levels                             | Specify the number of order levels (e.g., 5) |
-| start_spread                         | Set the start spread as a multiple of the NATR (e.g., 1.0 for 1x NATR) |
-| step_between_orders                  | Define the step between orders as a multiple of the NATR (e.g., 0.8 for 0.8x NATR) |
-| cooldown_time                        | Specify the cooldown time in seconds between order placements (e.g., 5) |
-| order_refresh_time                   | How often to cancel or replace orders (in seconds) |
-| stop_loss                            | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
-| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
-| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 43200 for 12 hours) |
-| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.0045 for 0.45%) |
-| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
-| natr_length                          | Enter the NATR (Normalized Average True Range) length (e.g., 100) |
-| macd_fast                            | Set the MACD fast length (e.g., 12) |
-| macd_slow                            | Specify the MACD slow length (e.g., 26) |
-| macd_signal                          | Define the MACD signal length (e.g., 9) |
+| Parameter                            | Type | Prompt |
+|--------------------------------------|------|--------|
+| exchange                             | trading     | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | trading     | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | trading     | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | candles     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | candles     | Set the time interval for candles (e.g., 3m) |
+| order_amount                         | orders    | Enter the base order amount in quote asset (e.g., 25 USDT) |
+| n_levels                             | orders    | Specify the number of order levels (e.g., 5) |
+| start_spread                         | orders     | Set the start spread as a multiple of the NATR (e.g., 1.0 for 1x NATR) |
+| step_between_orders                  | orders     | Define the step between orders as a multiple of the NATR (e.g., 0.8 for 0.8x NATR) |
+| cooldown_time                        | orders     | Specify the cooldown time in seconds between order placements (e.g., 5) |
+| order_refresh_time                   | orders     | How often to cancel or replace orders (in seconds) |
+| stop_loss                            | PositionExecutor     | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
+| take_profit                          | PositionExecutor     | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | PositionExecutor     | Set the time limit in seconds for the triple barrier (e.g., 43200 for 12 hours) |
+| trailing_stop_activation_price_delta | PositionExecutor     | Enter the activation price delta for the trailing stop (e.g., 0.0045 for 0.45%) |
+| trailing_stop_trailing_delta         | PositionExecutor     | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+| natr_length                          | strategy     | Enter the NATR (Normalized Average True Range) length (e.g., 100) |
+| macd_fast                            | strategy     | Set the MACD fast length (e.g., 12) |
+| macd_slow                            | strategy     | Specify the MACD slow length (e.g., 26) |
+| macd_signal                          | strategy     | Define the MACD signal length (e.g., 9) |
 
 **Starting the Script**:
 
@@ -299,7 +307,8 @@ start --script dman_v2_config.py --conf [SCRIPT_CONFIG_FILE]
 
 **Status:**
 
-![](./status-dmanv2.png)
+[![](./status-dmanv2.png)](./status-dmanv2.png)
+
 
 
 ### DmanV3
@@ -322,24 +331,25 @@ create --script-config v2_dman_v3_config
 
 Below are the user-defined parameters when the `create` command is run:
 
-| Parameter                            | Prompt |
-|--------------------------------------|--------|
-| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
-| candles_interval                     | Set the time interval for candles (e.g., 30m) |
-| bollinger_band_length                | Enter the length of the Bollinger Bands (e.g., 200) |
-| bollinger_band_std                   | Set the standard deviation for the Bollinger Bands (e.g., 3.0) |
-| order_amount                         | Enter the base order amount in quote asset (e.g., 20 USDT) |
-| n_levels                             | Specify the number of order levels (e.g., 5) |
-| start_spread                         | Set the spread of the first order as a ratio of the Bollinger Band value (e.g., 1.0) |
-| step_between_orders                  | Define the step between orders as a ratio of the Bollinger Band value (e.g., 0.2) |
-| stop_loss                            | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
-| take_profit                          | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
-| time_limit                           | Set the time limit in seconds for the triple barrier (e.g., 259200 for 3 days) |
-| trailing_stop_activation_price_delta | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
-| trailing_stop_trailing_delta         | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+| Parameter                            | Type | Prompt |
+|--------------------------------------|------|--------|
+| exchange                             | trading     | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | trading     | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | trading     | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | candles     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | candles     | Set the time interval for candles (e.g., 30m) |
+| bollinger_band_length                | strategy     | Enter the length of the Bollinger Bands (e.g., 200) |
+| bollinger_band_std                   | strategy     | Set the standard deviation for the Bollinger Bands (e.g., 3.0) |
+| order_amount                         | orders     | Enter the base order amount in quote asset (e.g., 20 USDT) |
+| n_levels                             | orders     | Specify the number of order levels (e.g., 5) |
+| start_spread                         | orders     | Set the spread of the first order as a ratio of the Bollinger Band value (e.g., 1.0) |
+| step_between_orders                  | orders     | Define the step between orders as a ratio of the Bollinger Band value (e.g., 0.2) |
+| stop_loss                            | PositionExecutor     | Set the stop loss percentage (e.g., 0.2 for 20% loss) |
+| take_profit                          | PositionExecutor     | Enter the take profit percentage (e.g., 0.06 for 6% gain) |
+| time_limit                           | PositionExecutor     | Set the time limit in seconds for the triple barrier (e.g., 259200 for 3 days) |
+| trailing_stop_activation_price_delta | PositionExecutor     | Enter the activation price delta for the trailing stop (e.g., 0.01 for 1%) |
+| trailing_stop_trailing_delta         | PositionExecutor     | Set the trailing delta for the trailing stop (e.g., 0.003 for 0.3%) |
+
 
 In addition, the script may define other advanced parameters that don't have the `prompt_on_new` flag.
 
@@ -351,7 +361,7 @@ start --script dman_v3.py --conf [SCRIPT_CONFIG_FILE]
 
 **Status:**
 
-![](./status-dmanv3.png)
+[![](./status-dmanv3.png)](./status-dmanv3.png)
 
 
 ### DmanV4
@@ -374,22 +384,23 @@ create --script-config v2_dman_v4_config
 
 Below are the user-defined parameters when the `create` command is run:
 
-| Parameter                            | Prompt |
-|--------------------------------------|--------|
-| exchange                             | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
-| trading_pairs                        | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
-| leverage                             | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
-| candles_exchange                     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
-| candles_interval                     | Set the time interval for candles (e.g., 3m) |
-| bollinger_band_length                | Enter the length of the Bollinger Bands (e.g., 200) |
-| order_amount                         | Enter the base order amount in quote asset (e.g., 10 USDT) |
-| amount_ratio_increase                | Set the ratio to increase the amount for each subsequent level (e.g., 1.5) |
-| n_levels                             | Specify the number of order levels (e.g., 5) |
-| start_spread                         | Enter the starting spread for orders (e.g., 0.03) |
-| spread_ratio_increase                | Define the ratio to increase the spread for each subsequent level (e.g., 2.0) |
-| stop_loss                            | Set the stop loss percentage (e.g., 0.5) |
-| global_trailing_stop_activation_price_delta | Enter the activation price delta for the global trailing stop (e.g., 0.025) |
-| global_trailing_stop_trailing_delta  | Set the trailing delta for the global trailing stop (e.g., 0.005) |
+| Parameter                            | Type | Prompt |
+|--------------------------------------|------|--------|
+| exchange                             | trading     | Enter the name of the exchange where the bot will operate (e.g., binance_perpetual) |
+| trading_pairs                        | trading     | List the trading pairs for the bot to trade on, separated by commas (e.g., BTC-USDT,ETH-USDT) |
+| leverage                             | trading     | Set the leverage to use for trading (e.g., 20 for 20x leverage) |
+| candles_exchange                     | candles     | Enter the exchange name to fetch candle data from (e.g., binance_perpetual) |
+| candles_interval                     | candles     | Set the time interval for candles (e.g., 3m) |
+| bollinger_band_length                | candles     | Enter the length of the Bollinger Bands (e.g., 200) |
+| order_amount                         | orders     | Enter the base order amount in quote asset (e.g., 10 USDT) |
+| amount_ratio_increase                | orders     | Set the ratio to increase the amount for each subsequent level (e.g., 1.5) |
+| n_levels                             | orders     | Specify the number of order levels (e.g., 5) |
+| start_spread                         | orders     | Enter the starting spread for orders (e.g., 0.03) |
+| spread_ratio_increase                | orders     | Define the ratio to increase the spread for each subsequent level (e.g., 2.0) |
+| stop_loss                            | PositionExecutor     | Set the stop loss percentage (e.g., 0.5) |
+| global_trailing_stop_activation_price_delta | PositionExecutor     | Enter the activation price delta for the global trailing stop (e.g., 0.025) |
+| global_trailing_stop_trailing_delta  | PositionExecutor     | Set the trailing delta for the global trailing stop (e.g., 0.005) |
+
 
 In addition, the script may define other advanced parameters that don't have the `prompt_on_new` flag.
 
@@ -401,4 +412,4 @@ start --script dman_v4_config.py --conf [SCRIPT_CONFIG_FILE]
 
 **Status:**
 
-![](./status-dmanv4.png)
+[![](./status-dmanv4.png)](./status-dmanv4.png)
