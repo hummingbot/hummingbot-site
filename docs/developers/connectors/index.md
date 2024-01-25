@@ -1,6 +1,18 @@
-## What are exchange connectors?
+## What are connectors?
 
-Exchange connectors are packages of code that link Hummingbot's internal trading algorithms with live information from different cryptocurrency exchanges. They interact with a given exchange's API, such as by gathering order book data and sending and cancelling trades.
+Connectors are packages of code that link Hummingbot's internal trading engine with real-time and historical dat from different cryptocurrency exchanges and blockchains, via both WebSocket and REST API. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book or blockdhain data and sending and cancelling trades. 
+
+Connectors enables users to create [strategies](/strategies) that can operate on different exchanges and blockchains without modification.
+
+## Types of Connectors
+
+Currently, Hummingbot supports three types of connectors, each one standardizing a specific type of market:
+
+* `spot`: Connectors to spot order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/exchange`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder. 
+
+* `perpetual`: Connectors to perpetual futures order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/derivative`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative) folder. By convention, these connectors end in `_perpetual`.
+
+* `gateway`: Connectors to blockchain networks and their automated market maker (AMM) and CLOB DEXs. The [`hummingbot/connector/gateway`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder contains the sub-types of markets that are supported. Each Gateway connector is a folder in the [Gateway](/gateway) repository, either in [connectors](https://github.com/hummingbot/gateway/tree/main/src/connectors) or [chains](https://github.com/hummingbot/gateway/tree/main/src/chains).
 
 ## CEX Connector Development Checklist
 

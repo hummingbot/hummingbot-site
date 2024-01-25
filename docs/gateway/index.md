@@ -1,15 +1,23 @@
 # Hummingbot Gateway
 
-!!! warning "💡 DEX / Blockchain Experience Needed"
-    Since Hummingbot Gateway is still nascent and DEX trading bots entails more specialized blockchain engineering than running CEX bots, we recommend Gateway for users with blockchain engineering or DEX trading experience.
+!!! warning "DEX / Blockchain Experience Needed"
+    Since running DEX trading bots successfully is more complex and entails more specialized blockchain engineering than running CEX bots, we recommend Gateway for users with prior blockchain engineering or DEX trading experience.
 
 ## What is Gateway?
 
-Hummingbot Gateway, sometimes called Gateway-V2, is standalone API middleware that helps Hummingbot and other trading clients to connect to decentralized exchanges (DEX) on various blockchain networks. 
+Hummingbot Gateway is open source API middleware that helps the Hummingbot client to connect to decentralized exchanges (DEX) on various blockchain networks. 
 
 Gateway manages interfacing with DEX connectors and exposes standard REST API endpoints for trading and liquidity-related functionality on these DEXs.
 
 Essentially, Gateway is a light web server that enables Hummingbot to send and receive data from different blockchain protocols and provides an easier entry point for external devs to build connectors to other protocols.
+
+## Gateway Connectors
+
+Each Gateway connector is a folder in the [Gateway](/gateway) repository, either in [connectors](https://github.com/hummingbot/gateway/tree/main/src/connectors) or [chains](https://github.com/hummingbot/gateway/tree/main/src/chains).
+
+See [DEX Connectors](/dex-connectors) for the DEXs that Gateway currently supports, which are listed in the **Connection** column.
+
+See [Chains](/chains) for a list of blockchains and their networks that Gateway currently supports.
 
 ## How to use Gateway
 
@@ -21,15 +29,11 @@ Following the guides below to install, configure and use Gateway:
 - [Working with Tokens](tokens.md): Adding tokens, approving tokens and getting testnet tokens
 - [Running DEX Bots](running-dex-bots.md): How to run the `amm-arb` strategy and scripts that use Gateway DEX connectors
 - [Adding Connectors](adding-dex-connectors.md): Developer guide for contributing new DEX connectors into the open source Gateway codebase
-- [API Reference](api-reference.md): List of the API endpoints that each DEX type exposes
 
-## Supported DEXs
+## API Endpoints
 
-See [Exchanges](/exchanges) for the DEXs that Gateway currently supports. All DEXs with either the **AMM** and **AMM-RANGE** labels are Gateway connectors, along with certain **CLOB** DEX connectors.
+Gateway included a Swagger-based API documentation server that is provided at <http://localhost:8080> when Gateway is started. The documentation provides a list of the Gateway API endpoints and examples on how to use them.
 
-## Supported Chains
-
-See [Chains](/chains) for a list of blockchains and their networks that Gateway currently supports.
 
 ## History
 
@@ -37,6 +41,3 @@ See the following blog posts from CoinAlpha CTO Martin Kou for more information 
 
 * [Hummingbot Gateway V2 Architecture - Part 1](https://blog.hummingbot.org/gateway-v2-code-architecture/)
 * [Hummingbot Gateway V2 Architecture - Part 2](https://blog.hummingbot.org/gateway-architecture-part-2/)
-
-!!! note
-    [Gateway-V1](https://github.com/CoinAlpha/gateway-api) is a deprecated version of Gateway compatible with pre-1.0 Hummingbot releases that is no longer supported.

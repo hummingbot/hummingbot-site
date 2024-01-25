@@ -203,6 +203,14 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
+    - Gateway:
+      - Gateway: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Setting up Gateway: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running Strategies and Scripts: gateway/running-dex-bots.md
+      - Building Gateway Connectors: gateway/adding-dex-connectors.md
     - V2 Strategies:
       - V2 Strategies: strategies/index.md
       - Sample Strategies: v2-strategies/examples/index.md
@@ -325,14 +333,6 @@ nav:
         - Debugging: developers/connectors/debug.md
     - Other Repos:
       - Other Repos: repos/index.md
-      - Gateway:
-        - Gateway: gateway/index.md
-        - Installation: gateway/installation.md
-        - Testing Gateway: gateway/testing.md
-        - Setting up Gateway: gateway/setup.md
-        - Working with Tokens: gateway/tokens.md
-        - Running Strategies and Scripts: gateway/running-dex-bots.md
-        - Building Gateway Connectors: gateway/adding-dex-connectors.md
       - Brokers: installation/broker.md
       - Dashboard: dashboard/index.md
       - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
