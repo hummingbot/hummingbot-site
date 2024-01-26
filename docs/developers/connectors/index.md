@@ -1,5 +1,5 @@
 !!! note
-    The information below are for developers building `spot` and `perpetual` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
 
 ## Exchange API Requirements
 

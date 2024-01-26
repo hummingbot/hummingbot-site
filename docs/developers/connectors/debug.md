@@ -1,3 +1,6 @@
+!!! note
+    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+    
 This section will break down some ways to debug and test the code. You are not required to use these options during your development process, but they will greatly help you in it.
 
 As part of the QA process, you are **required to include unit test cases** for the code review process to begin. Refer to [Option 1: Unit Test Cases](#option-1-unit-test-cases) to build your unit tests.
