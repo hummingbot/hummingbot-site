@@ -1,4 +1,4 @@
-This page shows you how to add a decentralized exchange (DEX) connector to Hummingbot's Gateway module and configure which chains and networks it supports.
+This page shows you how to add a UniswapV2-style decentralized exchange (DEX) connector to Hummingbot's Gateway module and configure which chains and networks it supports.
 
 We'll use the Uniswap and Pangolin connectors as examples to help guide you through the development process. Please note that there might be changes that you have to implement depending on the needs of your DEX.
 

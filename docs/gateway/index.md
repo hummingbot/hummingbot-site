@@ -19,6 +19,14 @@ See [DEX Connectors](/dex-connectors) for the DEXs that Gateway currently suppor
 
 See [Chains](/chains) for a list of blockchains and their networks that Gateway currently supports.
 
+The [`hummingbot/connector/gateway`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/gateway) folder contains the sub-standards that are currently supported:
+
+  * amm
+  * amm_lp
+  * amm_perpetual
+  * clob_perp
+  * clob_spot
+
 ## How to use Gateway
 
 Following the guides below to install, configure and use Gateway:

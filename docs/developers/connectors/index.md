@@ -1,54 +1,58 @@
-## What are connectors?
+!!! note
+    The information below are for developers building `spot` and `perpetual` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
 
-Connectors are packages of code that link Hummingbot's internal trading engine with real-time and historical dat from different cryptocurrency exchanges and blockchains, via both WebSocket and REST API. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book or blockdhain data and sending and cancelling trades. 
+## Exchange API Requirements
 
-Connectors enables users to create [strategies](/strategies) that can operate on different exchanges and blockchains without modification.
+See [Exchange API Requirements](/developers/connectors/build) for what the exchange API requirements needed to support the latest Hummingbot spot and perp connector standards.
 
-## Types of Connectors
+## Building Connectors
 
-Currently, Hummingbot supports three types of connectors, each one standardizing a specific type of market:
+To gain a deeper understanding for how Hummingbot connectors work, we recommend reading the following engineering posts from Hummingbot's original technical founder:
 
-* `spot`: Connectors to spot order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/exchange`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder. 
+- [Hummingbot Architecture - Part 1](/academy-content/hummingbot-architecture---part-1/)
+- [Hummingbot Architecture - Part 2](/academy-content/hummingbot-architecture---part-2/)
 
-* `perpetual`: Connectors to perpetual futures order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/derivative`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative) folder. By convention, these connectors end in `_perpetual`.
+The following pages offer more details on various components and classes of a connector:
 
-* `gateway`: Connectors to blockchain networks and their automated market maker (AMM) and CLOB DEXs. The [`hummingbot/connector/gateway`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder contains the sub-types of markets that are supported. Each Gateway connector is a folder in the [Gateway](/gateway) repository, either in [connectors](https://github.com/hummingbot/gateway/tree/main/src/connectors) or [chains](https://github.com/hummingbot/gateway/tree/main/src/chains).
+- [Connector Architecture](/developers/connectors/architecture/): Overview of how a connector works
+- [Order Lifecycle and Market Events](/developers/connectors/architecture/order_lifecycle): How a connector handles the lifecycle of an order
+- [Handling Rate Limits with API Throttler](/developers/connectors/api_throttler): Using the `AsyncThrottler` class to handle exchange rate limits
+- [Debug and Testing Connectors](/developers/connectors/debug): Various ways to test and debug a connector
 
-## CEX Connector Development Checklist
+## Spot Connectors
 
-For spot exchanges, we have a [**Notion template**](https://hummingbot-foundation.notion.site/CEX-Connector-Development-6506b85ea96a430b8448216b0429cb02) available which you can use as a checklist for developing the connector and it should help you understand the main components and functionalities of each class. 
+Spot connectors provide WebSocket and REST-based integrations to spot order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/exchange`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder.
 
-## Templates
+* [Spot Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Spot-Connector-v2-1-1cc43830938445c9974f43ef861d59f1): Use this template to build `spot` connectors that conform to the latest standard, which allows the connector to be used with [V2 Strategies](/strategies). 
+* [Spot Connector Developer Checklist](/developers/connectors/spot-connector-checklist/): Similar to the Notion Template, this page provides a checklist of the key steps and the main components and functionalities of each class
+* [Spot Connector QA Checklist](/developers/connectors/test/): Our QA team will conducts these tests before approving `spot` connectors
 
-You can find the existing connectors [here](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector).
-Note that each folder contained here marks different exchange connector types. These should serve as a template for creating a new exchange connector.
+## Perp Connectors
 
-Building a new exchange connector requires conforming to the template code to the new exchange's APIs, identifying and handling any differences in functions/behaviors, and testing the new exchange connector on that exchange.
+Perp connectors provide WebSocket and REST-based integrations to perpetual futures order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/derivative`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative) folder. By convention, these connector names end in `_perpetual`.
 
-!!! note "The Gold Standard"
-    We recommend referring to the [Binance Spot](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/binance) and the [Bybit Perpetual](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/bybit_perpetual) connectors as the most up-to-date connector implementations in the codebase.
+* [Perp Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Perp-Connector-v2-1-57d8391eb54c40929f77067355fd551e): Use this template to build `perp` connectors that conform to the latest standard, which allows the connector to be used with [V2 Strategies](/strategies).
+* [Perp Connector Developer Checklist](/developers/connectors/perp-connector-checklist/): Similar to the Notion Template, this page provides a checklist of the key steps and the main components and functionalities of each class
+* [Perp Connector QA Checklist](/developers/connectors/test-perp/): Our QA team will conducts these tests before approving `perp` connectors
 
-## Exchange connector requirements
+## Contributing Connectors
 
-Introducing an exchange connector into the Hummingbot code base requires a mutual commitment from the Hummingbot team and community developers to maintaining a high standard of code quality and software reliability.
+Introducing an exchange connector into the Hummingbot code base requires a mutual commitment from both the Hummingbot Foundation team and the contributing developers to maintaining a high standard of code quality and software reliability.
 
-We encourage and welcome contributions from the community, subject to the guidelines and expectations outlined below.
+We encourage and welcome new connector contributions from the community, subject to the guidelines and expectations outlined below.
 
-1. **Connector folder**: A folder that contains a complete set of connector files based off of the examples above.
-2. **Unit tests:** Tests that cover at least 80% of the new code — see the tests in the connectors above.
-3. **Inline code comments** (particularly for any code that is materially different from the templates)
-4. **Documentation**: Documentation that contains useful information about the exchange for bot users
+- [x] **Connector folder**: A folder that contains a complete set of connector files based off of the examples above.
+- [x] **Adherence to standard**: Connector should pass both the Developer and QA Checklist for its type
+- [x] **Unit tests:** The pull request should pass code coverage checks
+- [x] **Documentation**: Accompanying documentation pull request to [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site) repo
+- [x] **Inline code comments** Particularly for any code that is materially different from the templates
 
-### Process overview
+Here is an overview of the process to get a new connector merged into the codebase:
 
-1. Build a spot or perp connector that fulfills the requirements listed in the [API Checklist](spot-connector-checklist.md) and the [QA Testing process](test.md).
-
+1. Fork the [Hummingbot](https://github.com/hummingbot/hummingbot) or [Gateway](https://github.com/hummingbot/gateway) repositories and add a `spot` or `perp` connector that fulfills the respective requirements above.
 2. Submit a pull request with the connector to the `development` branch in Github, following the [Contribution Guidelines](../contributions.md).
+3. Submit a [New Connector Proposal](/governance/proposals) in the [Hummingbot NCP Snapshot](https://snapshot.org/#/hbot-ncp.eth)
 
-3. Submit a New Connector Proposal (NCP) in the [Hummingbot NCP Snapshot](https://snapshot.org/#/hbot-ncp.eth). In particular, the PRP should identify a dedicated maintainer who will be responsible for fixing bugs and applying updates.
+## Additional Resources
 
-Only connectors
-
-## Additional resources
-
-For questions, please visit the **#developer-chat** channel on our [Discord](https://discord.hummingbot.io) 
+For questions, please visit the **#developer-chat** channel on our [Discord](https://discord.gg/hummingbot).

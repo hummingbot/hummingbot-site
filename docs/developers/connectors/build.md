@@ -1,4 +1,4 @@
-## Exchange API requirements
+## API requirements
 
 Exchanges with REST APIs must provide:
 
@@ -26,7 +26,7 @@ It would be useful if the Websocket API also provides the following, but a conne
 - Private balance events channel (if not present the connector has to be configured to estimate balance based on the connector activity) [(example)](https://binance-docs.github.io/apidocs/spot/en/#payload-account-update)
 - The trade events include details about the fees charged for each trade (if not present the connector will have to operate estimating fees).
 
-### Perp connector additional requirements
+### Additional requirements for perp connectors
 
 - REST API endpoint to check positions [(example)](https://binance-docs.github.io/apidocs/futures/en/#position-information-v2-user_data)
 - REST API endpoint to configure the leverage [(example)](https://binance-docs.github.io/apidocs/futures/en/#change-initial-leverage-trade)
@@ -124,7 +124,7 @@ It should include:
 - Order Book Data Source
 - User Stream Data Source
 
-### Perp connector additional requirements
+### Additional requirements for perp connectors
 
 In the case of a perpetuals exchange connector, the connector component should subclass also `PerpetualTrading`, and has to include the following functionality:
 
