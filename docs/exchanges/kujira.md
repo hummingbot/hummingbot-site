@@ -3,17 +3,12 @@
 
 - **Exchange Type**: Decentralized Exchange (**DEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green	)
-- **Maintainer:**   
 
-Currently, Kujira is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
-
-| Component                                  | Status        | Notes            |
-|--------------------------------------------|---------------|------------------|
-| [🔀 Spot Connector](#spot-connector)       | ✅             | Supports testnet |
-| [🔀 Perp Connector](#perp-connector)       | Not available |                  |
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available |                  |
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available |                  |
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
+| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not built |
+| [🕯 AMM Data Feed](#amm-data-feed) |  |
 
 ## ℹ️ Exchange Info
 
@@ -54,16 +49,13 @@ If connection is successful:
 The kujira connector now uses wallet [pubKey] on kujira-mainnet  
 ```  
 
-## 🔀 Spot Connector
-*Integration to spot markets API endpoints*
 
-- **ID**: `kujira`
-- **Connection Type**: REST API
+## 2️⃣ AMM Connector
+*Integration to this DEX's swap pricing and execution endpoints*
+
+- **ID**: `kujira_[CHAIN]_[NETWORK]`
+- **Connection Type**: REST via [Gateway](/gateway)
 - **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/kujira>
 
-### Order Types
-
-This connector supports the following `OrderType` constants:
-
-- `LIMIT`
-- `MARKET`
+## 🕯 AMM Data Feed
+*Data feed of this exchange's real-time prices*

@@ -1,17 +1,68 @@
-The Hummingbot Foundation is an experiment in creating a self-sustainable open source ecosystem. We plan to iterate and improve on this distribution process via **Epochs**.
+The Hummingbot Foundation is an experiment in creating a self-sustainable open source ecosystem by distributing HBOT tokens to community developers who maintain the codebase.
 
-Each Epoch is a fixed period that are basically long agile sprints, after which the Foundation will conduct an open retrospective and strengthen internal processes for the next Epoch.
+We iterate to improve upon this distribution process via **Epochs**. Each Epoch is a quarterly period that are basically long agile sprints, after which the Foundation and the community may propose changes for the next Epoch.
 
----
+## Epoch 7 (Q4 2023)
 
-## Epoch 6
+**Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)
 
-| **Detail** | **Date**          |
-|------------|-------------------|
-| **Start**  | October 1, 2023   |
-| **End**    | December 31, 2023 |
+Starting after epoch 7, Polls divide a fixed pool of HBOT between the connectors based on their pro-rata voting share. The Foundation assigns maintenance bounties to community developers for each connector using these amounts.
 
-[Epoch 6 Polls Recap](../blog/posts/2023-10-epoch-6-polls-recap/index.md) • [HGP-45 Governance Changes](https://snapshot.org/#/hbot.eth/proposal/0x7807da661f09096db6aadb277051ed6defd580259fd8e503c2a77a83779a3fd5)
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange and chain.
+
+### CEX Connectors
+
+**Poll**: [HGP-51](https://snapshot.org/#/hbot.eth/proposal/0x09028cd5ebc076f1ae9a55921345a8c1cca1cbb1200cc77c798c66013aabef5d)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | OKX             | 315,126             |
+| 2    | Kraken          | 273,109             |
+| 3    | Coinbase        | 231,092             |
+| 4    | Kucoin          | 180,672             |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | OKX, Kraken, Coinbase, Kucoin, AscendEx, Bybit, Bitmart, MEXC, Phemex, Foxbit, Huobi, Bit.com, BTC Markets, NDAX, Bitfinex, Bitget, HitBTC |
+| ❌ | Bitmex, Woo X |
+
+### DEX Connectors
+
+**Poll**: [HGP-52](https://snapshot.org/#/hbot.eth/proposal/0xaad1c6b8541ed056adcae62a8170d0a4ceb17beb963ef017022eef10f2eddcb4)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | dYdX            | 400,000             |
+| 2    | Uniswap         | 410,423             |
+| 3    | XRP Ledger      | 103,582             |
+| 4    | Pancakeswap     | 85,993              |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | dYdX, Uniswap, XRP Ledger, Pancakeswap, Uniswap, Dexalot, TraderJoe, Polkadex, Mad Meerkat, Perpetual Protocol, Sushiswap, Tinyman, Injective Helix, Quickswap, Vertex, Pangolin, Ref, XSwap, Hyperliquid, OpenOcean, Curve, Plenty |
+| ❌ | |
+
+### Chain Connectors
+
+**Poll**: [HGP-53](https://snapshot.org/#/hbot.eth/proposal/0x14c4822c380ba8d1e68e4dcb11f0b47dc4a9c40831bb36eaab8471d4edf99352)
+
+| Rank | Chain           | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Ethereum        | 400,000             |
+| 2    | XRP Ledger      | 278,261             |
+| 3    | BNB Chain       | 191,304             |
+| 4    | Avalanche       | 130,435             |
+
+| Inclusion Threshold Pass/Fail  | Chain Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Ethereum, XRP Ledger, BNB Chain, Avalanche, XDC Chain, Cronos, Algorand, NEAR, Polygon, Injective, Tezos, Kujira, Cosmos, Harmony |
+| ❌ | |
+
+## Epoch 6 (Q3 2023)
+
+**Recap**: [Epoch 6 Polls Recap](../blog/epoch-6-polls-recap/)
+
+**Approved Governance Changes**: [HGP-45](https://snapshot.org/#/hbot.eth/proposal/0x7807da661f09096db6aadb277051ed6defd580259fd8e503c2a77a83779a3fd5)
 
 ### CEX Connectors
 
@@ -36,14 +87,11 @@ Each Epoch is a fixed period that are basically long agile sprints, after which 
 
 ---
 
-## Epoch 5
+## Epoch 5 (Q2 2023)
 
-| **Detail** | **Date**          |
-|------------|-------------------|
-| **Start**  | July 1, 2023      |
-| **End**    | September 30, 2023|
+**Recap**: [Epoch 5 Polls Recap](../blog/epoch-5-polls-recap/)
 
-[Epoch 5 Polls Recap](https://blog.hummingbot.org/epoch-5-polls-recap/) • [HGP-43 Governance Changes](https://snapshot.org/#/hbot.eth/proposal/0x63958a27907ef6efa072fc92566f91bcf5df7491523ffcc64ecb47f270df9bcd)
+**Approved Governance Changes**: [HGP-43](https://snapshot.org/#/hbot.eth/proposal/0x63958a27907ef6efa072fc92566f91bcf5df7491523ffcc64ecb47f270df9bcd)
 
 ### CEX Connectors
 
@@ -67,14 +115,9 @@ Each Epoch is a fixed period that are basically long agile sprints, after which 
 
 ---
 
-## Epoch 4
+## Epoch 4 (Q2 2023)
 
-| **Detail** | **Date**        |
-|------------|-----------------|
-| **Start**  | April 1, 2023   |
-| **End**    | June 30, 2023   |
-
-[Epoch 4 Polls Recap](https://blog.hummingbot.org/epoch-4-polls-recap/)
+**Recap**: [Epoch 4 Polls Recap](../blog/epoch-4-polls-recap/)
 
 ### CEX Connectors
 
@@ -98,14 +141,9 @@ Each Epoch is a fixed period that are basically long agile sprints, after which 
 
 ---
 
-## Epoch 3
+## Epoch 3 (Q1 2023)
 
-| **Detail** | **Date**           |
-|------------|--------------------|
-| **Start**  | January 1, 2023    |
-| **End**    | March 31, 2023     |
-
-[Epoch 3 Polls Recap](https://blog.hummingbot.org/epoch-3-polls/)
+**Recap**: [Epoch 3 Polls Recap](../blog/epoch-3-polls-recap/)
 
 ### CEX Connectors
 
@@ -129,47 +167,25 @@ Each Epoch is a fixed period that are basically long agile sprints, after which 
 
 ---
 
-## Epoch 2
+## Epoch 2 (Q3-Q4 2022)
 
-| **Detail** | **Date/Info**           |
-|------------|-------------------------|
-| **Start**  | August 1, 2022          |
-| **End**    | December 31, 2022       |
-| **Goal**   | Distribute 30 million HBOT tokens |
-
-| Category                | HBOT Allocation |
-| ------------------------|-----------------|
-| Dev Grant Budget        | 15,000,000      |
-| Liquidity Distributions | 5,000,000       |
-| Community Work          | 10,000,000      |
+**Approved Governance Changes**: [HGP-22](https://snapshot.org/#/hbot.eth/proposal/0x1f84875fb764d697a106e07fa5a7b6584a418cf5634aa94f4d9a8c5852455f4e), [HGP-24](https://snapshot.org/#/hbot.eth/proposal/0xbc73a6b7c04751c9296adfd9ec8bf0377f093bbe6d2ce617c5460b890690851b)
 
 After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbot.org/hummingbots-2023-governance-roadmap/) and decided to enact the following changes to improve the governance process:
+
 - Change epoch cadence to from bi-annually to quarterly
 - Start [Polls](/governance/polls/) to make HBOT governance easier
 - Cease setting per-epoch HBOT distribution targets
 
 ---
 
-## Epoch 1
+## Epoch 1 (Q1-Q2 2022)
 
-| **Detail** | **Date/Info**           |
-|------------|-------------------------|
-| **Start**  | Feb 1, 2022             |
-| **End**    | June 30, 2022           |
-| **Goal**   | Distribute 30 million HBOT tokens |
+**Approved Governance Changes**: [HGP-10](https://snapshot.org/#/hbot.eth/proposal/0x63958a27907ef6efa072fc92566f91bcf5df7491523ffcc64ecb47f270df9bcd), [HGP-12](https://snapshot.org/#/hbot.eth/proposal/0x3518fdbd6b5793908698fb1fc6a38dccf4ca2e9923f3510dac1878c9081acc6d), [HGP-17](https://snapshot.org/#/hbot.eth/proposal/0xfc1e42adb4f1e867102c6a5d9f4e0f91cb44107e433bcb27fc7dc95068dc22a9)
 
-| Category                           | Total HBOT Available | Target Number of Grants |
-| -----------------------------------| ---------------------|------------------------ |
-| Liquidity Distributions             | 15,000,000           | 10 platforms            |
-| Dev Grant Budget                   | 10,000,000           | 50 dev grants           |
-| Initiative Budget                  | 5,000,000            | 5 initiatives           |
-
-The last day to submit [Hummingbot Improvement Proposals (HIPs)](/governance/proposals/#hip) requesting a share of Dev Grant Budgets is May 31, 2022, and the last day to submit [Pull Request Proposals (PRPs)](/governance/proposals/#prp) linked to approved HIPs is June 30, 2022.
 
 After Epoch 1, the Foundation conducted a retrospective and enacted a number of changes to the governance process. Specifically, the Foundation decided to start the following initiatives:
+
 - Start the Exchange Certification initiative
 - Create more structure around the [Bounties](../bounties/index.md) process
-- Start a developer bootcamp [Botcamp](https://hummingbot.org/botcamp/)
-
-
-
+- Start a developer bootcamp

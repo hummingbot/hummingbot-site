@@ -260,16 +260,15 @@ nav:
       - Connectors: exchanges/index.md
       - CEX Connectors:
         - CEX Connectors: cex-connectors/index.md
-        - Binance 🥇: exchanges/binance/index.md
-        - Gate.io 🥈: exchanges/gate-io/index.md
-        - Kucoin 🥈: exchanges/kucoin/index.md
-        - Huobi 🥈: exchanges/huobi/index.md
+        - Binance: exchanges/binance/index.md
+        - Gate.io: exchanges/gate-io/index.md
+        - Kucoin: exchanges/kucoin/index.md
+        - Huobi: exchanges/huobi/index.md
         - AscendEx : exchanges/ascendex/index.md
         - Bit.com: exchanges/bit-com-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
         - Bitget: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart/index.md
-        - Bitmex: exchanges/bitmex.md
         - BTC Markets: exchanges/btc-markets.md
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
@@ -280,13 +279,12 @@ nav:
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
         - Phemex: exchanges/phemex-perpetual.md
-        - Woo X: exchanges/woo-x.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
-        - dYdX 🥇: exchanges/dydx.md
-        - Dexalot 🥈: exchanges/dexalot.md
-        - Polkadex 🥈: exchanges/polkadex.md
-        - Injective Helix 🥈: exchanges/injective.md
+        - dYdX: exchanges/dydx.md
+        - Dexalot: exchanges/dexalot.md
+        - Polkadex: exchanges/polkadex.md
+        - Injective Helix: exchanges/injective.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - Curve: exchanges/curve.md
         - Hyperliquid: exchanges/hyperliquid.md
@@ -301,17 +299,17 @@ nav:
         - Tinyman: exchanges/tinyman.md
         - TraderJoe: exchanges/traderjoe.md
         - Uniswap : exchanges/uniswap.md
-        # - Vega: exchanges/vega.md
+        - Vega: exchanges/vega.md
         - Vertex: exchanges/vertex.md
         - VVS: exchanges/vvs.md
         - XRP Ledger: exchanges/xrpl.md
         - XSwap: exchanges/xswap.md
       - Chain Connectors:
         - Chain Connectors: chains/index.md
-        - Ethereum 🥇: chains/ethereum.md
-        - Avalanche 🥈: chains/avalanche.md
-        - Polygon 🥈: chains/polygon.md
-        - BNB Chain 🥈: chains/bnb-chain.md
+        - Ethereum: chains/ethereum.md
+        - Avalanche: chains/avalanche.md
+        - Polygon: chains/polygon.md
+        - BNB Chain: chains/bnb-chain.md
         - Algorand: chains/algorand.md
         - Cronos: chains/cronos.md
         - Cosmos: chains/cosmos.md

@@ -2,10 +2,6 @@
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-- **Maintainer:** 
-
-Currently, Phemex is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). They are not maintained by the Hummingbot Foundation but may be maintained by a community member.
 
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
