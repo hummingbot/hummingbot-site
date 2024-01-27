@@ -8,14 +8,14 @@ tags:
   - Docker Installation Guide
 ---
 
-# Docker Installation Guide - Part 2 - Run Script
+# Docker Installation Guide - Running a Script
 
 ## Simple PMM Example
 
-Let's run the `simple_pmm_example.py` script. This script creates orders for the **ETH-USDT** pair in paper trading mode. Here’s how to start the script in the Hummingbot terminal:
+Let's run the `simple_pmm_example_config.py` script. This script creates orders for the **ETH-USDT** pair in paper trading mode. Here’s how to start the script in the Hummingbot terminal:
 
 ```
-start --script simple_pmm_example.py
+start --script simple_pmm_example_config.py
 ```
 
 When you use the `--script` command and press <kbd>SPACE</kbd> Hummingbot will display available scripts in the scripts folder, as shown below. 
@@ -71,4 +71,4 @@ Back in the Hummingbot terminal, if the log pane still shows `binance is not rea
 
 Congratulations! You've successfully run your first two scripts. Next, we'll learn how to connect API keys for live trading.
 
-[Connecting your API Keys](3-api-keys.md){ .md-button .md-button--primary }
+[Connecting your API Keys](4-api-keys.md){ .md-button .md-button--primary }

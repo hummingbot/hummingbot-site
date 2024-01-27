@@ -22,7 +22,7 @@ hide:
 
     ---
 
-    ### [Docker Installation Guide](/academy-content/docker-installation-guide/)
+    ### [Docker Installation Guide](/academy-content/quickstart-deploy-examples/)
 
     Get started with Hummingbot in 5 minutes
 

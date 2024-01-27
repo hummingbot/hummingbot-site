@@ -8,7 +8,7 @@ tags:
   - Docker Installation Guide
 ---
 
-# Docker Installation Guide - Part 1 - Installation
+# Docker Installation Guide - User Interface
 
 Hummingbot operates through a **Command Line Interface (CLI)**, a text-based system ideal for automated cryptocurrency trading. Unlike graphical interfaces, CLIs rely on text commands to function. Let's dive into how to use it effectively.
 
@@ -60,4 +60,4 @@ For a more in-depth look, visit [User Interface](../../../client/user-interface.
 
 Next, let's learn about running a simple PMM script in Hummingbot
 
-[Running a Script](2-run-script.md){ .md-button .md-button--primary }
+[Running a Script](3-run-script.md){ .md-button .md-button--primary }
