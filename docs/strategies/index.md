@@ -26,6 +26,26 @@ Hummingbot's V2 strategies represent the latest innovation in trading strategy d
 * [V2 Strategies Cheatsheat](../v2-strategies/cheatsheet/): One-pager that helps you use and extend V2 strategies
 * [V2 Strategy Architecture](../v2-strategies/): Learn about each component in the V2 framework
 
+The main logic in a V2 strategy is contained in the [Controller](../controllers), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles) and [Executors](../executors/) to implement the strategy logic.
+
+For users, their primary interface is the [V2 Script](../v2-scripts/), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
+
+To generate a configuration file for a script, run:
+
+```
+create --script-config [SCRIPT_FILE]
+```
+
+The auto-complete for `[SCRIPT_FILE]` will only display the scripts in the local `/scripts` directory that are configurable.
+
+You will be prompted to define the strategy parameters, which are saved in a YAML file in the `conf/scripts` directory. Afterwards, you can run the script by specifying this config file:
+
+```
+start --script [SCRIPT_FILE-conf [SCRIPT_CONFIG_FILE]`
+```
+
+The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the local `/conf/scripts` directory.
+
 ### [V1 Strategies](../v1-strategies/index.md)
 
 The original Hummingbot V1 strategies offer a structured, template-based environment with user-friendly parameters, but they are less customizable than V2 strategies.
