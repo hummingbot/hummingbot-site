@@ -8,7 +8,9 @@ tags:
   - Docker Installation Guide
 ---
 
-# Introduction
+# Docker Installation Guide
+
+## Introduction
 
 Welcome to the **Hummingbot Docker Installation Quickstart Guide**
 

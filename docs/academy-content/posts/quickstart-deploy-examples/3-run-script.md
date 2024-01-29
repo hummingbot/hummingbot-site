@@ -8,33 +8,57 @@ tags:
   - Docker Installation Guide
 ---
 
-# Docker Installation Guide - Running a Script
+# Docker Installation Guide - Running a Configurable Script
 
-## Simple PMM Example
+## Simple PMM (config) Example
 
-Let's run the `simple_pmm_example_config.py` script. This script creates orders for the **ETH-USDT** pair in paper trading mode. Here’s how to start the script in the Hummingbot terminal:
+Let's use the `simple_pmm_example_config.py` script. This is a configurable script which will create orders for a token pair in paper trading mode. For configurable scripts, the first step is to create a config file. Here's how to create one:
 
 ```
-start --script simple_pmm_example_config.py
+create --script-config simple_pmm_example_config.py
+
 ```
 
-When you use the `--script` command and press <kbd>SPACE</kbd> Hummingbot will display available scripts in the scripts folder, as shown below. 
+When you use the `create --script-config` and press <kbd>SPACE</kbd> Hummingbot will display available scripts in the scripts folder, as shown below.
 
-![Alt text](script.png)
+[![Alt text](create-script-config.png)](create-script-config.png)
 
-If you don't see any scripts under the `/scripts` folder run these commands in the terminal to make them appear: 
+If you don't see any scripts under the `/scripts` folder, run these commands in the terminal to make them appear: 
 
 ```bash
 sudo chmod -R a+rw ./hummingbot_files
 docker cp hummingbot:/home/hummingbot/scripts-copy/. ./hummingbot_files/scripts/
 ```
 
-Once the script starts, you'll see activity in the log pane. Use the `status` command for more details. It should resemble the screen below.
+Select the `simple_pmm_example_config.py` script and press <kbd>ENTER</kbd>. 
 
-![Alt text](simple-pmm.png)
+[![Alt text](config-script.png)](config-script.png)
+
+You will then be guided to configure the settings. At this stage, you may modify the options or simply hit <kbd>ENTER</kbd> to accept the default values. After finalizing the configuration, name the config file and press <kbd>ENTER</kbd> to save it.
+
+[![Alt text](save-config.png)](save-config.png)
 
 
-To stop the script from running, type the **stop** command in the Hummingbot terminal
+Once the config is saved we can now launch the script. Enter the command below to launch the script!
+
+```
+start --script simple_pmm_example_config.py --conf conf_simple_pmm_example_config_1.yml
+```
+
+Note that the autocomplete will popup after pressing <kbd>SPACE</kbd> after both the `--script` and `--conf` parameters so you can just select the correct script / config file from the list and then press <kbd>ENTER</kbd>
+
+[![Alt text](load-config-script.png)](load-config-script.png)
+
+After pressing <kbd>ENTER</kbd> you should be able to see activity in the log pane. Use the `status` command for more details or press <kbd>CTRL</kbd> + <kbd>S</kbd>. It should resemble the screen below.
+
+```
+status
+```
+
+
+[![Alt text](script-status.png)](script-status.png)
+
+To stop the script from running, type the `stop` command in the Hummingbot terminal
 
 ```
 stop

@@ -8,7 +8,7 @@ tags:
   - Docker Installation Guide
 ---
 
-# Docker Installation Guide
+# Docker Installation Guide - Installation
 
 ## Prerequisites
 
