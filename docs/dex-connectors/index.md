@@ -2,8 +2,8 @@ Decentralized exchange (DEX) connectors integrate into a decentralized or non-cu
 
 There are two types of DEX connectors in Hummingbot:
 
-* Client: Connectors that integrate to a DEX's WebSocket/REST API directly from the Hummingbot client
-* Gateway: Connectors that integrateto a DEX's smart contract or Javascript/Typescript SDK the [Gateway](/gateway) module (REST)
+* **Client**: Connectors that integrate to a DEX's WebSocket/REST API directly from the Hummingbot client
+* **Gateway**: Connectors that integrateto a DEX's smart contract or Javascript/Typescript SDK the [Gateway](/gateway) module (REST)
 
 We recommend that Central Limit Order Book (CLOB) exchanges utilize direct client connectors for improved speed and simplicity, while Automated Market Maker (AMM) exchanges should use Gateway as it is designed to interface with smart contracts.
 
@@ -35,25 +35,26 @@ Here are the current DEX connectors in the codebase:
 |----------|------|------------|
 | [dYdX](../exchanges/dydx.md) | CLOB | Client |
 | [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway |
-| [Polkadex](../exchanges/polkadex.md) | CLOB | Client |
-| [Injective Helix](../exchanges/injective.md) | CLOB | Client |
-| [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |
-| [Curve](../exchanges/curve.md) | AMM | Gateway |
 | [Hyperliquid](../exchanges/hyperliquid.md) | CLOB | Client |
+| [Injective Helix](../exchanges/injective.md) | CLOB | Client |
+| [Polkadex](../exchanges/polkadex.md) | CLOB | Client |
+| [Vega](../exchanges/vega.md) | CLOB | Client |
+| [Vertex](../exchanges/vertex.md) | CLOB | Client |
+| [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |
+| [Curve](../exchanges/curve.md) | AMM | Gateway |
+| [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway |
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway |
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway |
 | [Perpetual Protocol](../exchanges/perp.md) | AMM | Gateway |
 | [Quickswap](../exchanges/quickswap.md) | AMM | Gateway |
+| [Quipuswap](../exchanges/quipuswap.md) | AMM | Gateway
 | [Ref Finance](../exchanges/ref.md) | AMM | Gateway |
 | [Sushiswap](../exchanges/sushiswap.md) | AMM | Gateway |
 | [Tinyman](../exchanges/tinyman.md) | AMM | Gateway |
 | [TraderJoe](../exchanges/traderjoe.md) | AMM | Gateway |
 | [Uniswap](../exchanges/uniswap.md) | AMM | Gateway |
-| [Vega](../exchanges/vega.md) | CLOB | Client |
-| [Vertex](../exchanges/vertex.md) | CLOB | Client |
 | [VVS Finance](../exchanges/vvs.md) | AMM | Gateway |
-| [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |
 | [XSwap](../exchanges/xswap.md) | AMM | Gateway |
 
