@@ -21,6 +21,7 @@ Here are the current DEX connectors in the codebase, as of the latest release:
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway | 🥉 Bronze
 | [Perpetual Protocol](../exchanges/perp.md) | AMM | Gateway | 🥉 Bronze
 | [Quickswap](../exchanges/quickswap.md) | AMM | Gateway | 🥉 Bronze
+| [Quipuswap](../exchanges/quipuswap.md) | AMM | Gateway | 🥉 Bronze
 | [Ref Finance](../exchanges/ref.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
 | [Sushiswap](../exchanges/sushiswap.md) | AMM | Gateway | 🥉 Bronze
 | [Tinyman](../exchanges/tinyman.md) | AMM | Gateway | 🥉 Bronze | [CoinAlpha](https://coinalpha.com) |
