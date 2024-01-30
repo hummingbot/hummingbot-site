@@ -214,7 +214,7 @@ nav:
     - V2 Strategies:
       - V2 Strategies: strategies/index.md
       - Sample Strategies: v2-strategies/examples/index.md
-      - V2 Cheatsheet: v2-strategies/cheatsheet/index.md
+      # - V2 Cheatsheet: v2-strategies/cheatsheet/index.md
       - Architecture:
         - Architecture: v2-strategies/index.md
         - V2 Scripts: v2-strategies/v2-scripts/index.md
@@ -223,7 +223,7 @@ nav:
         - Executors: v2-strategies/executors/index.md
         - Executor Handlers: v2-strategies/executor-handlers/index.md
         - Order Levels: v2-strategies/order-levels/index.md
-        - Controller Examples: v2-strategies/controller-examples.md
+        # - Controller Examples: v2-strategies/controller-examples.md
     - V1 Strategies:
       - V1 Strategies: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
@@ -294,6 +294,7 @@ nav:
         - Perpetual Protocol: exchanges/perp.md
         - Plenty: exchanges/plenty.md
         - Quickswap: exchanges/quickswap.md
+        - Quipuswap: exchanges/quipuswap.md
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
         - Tinyman: exchanges/tinyman.md
