@@ -1,5 +1,3 @@
-# **Contribution Guidelines**
-
 All contributors should adhere to the code conventions used in the Hummingbot repository. The guidelines are outlined below.
 
 ## **Workflow**
@@ -78,12 +76,11 @@ If the development team requests changes, you should make more commits to your b
 
 Once you get back here, make a comment requesting a further review, and someone will look at your code again. If it addresses the requests, it will get merged. Else, repeat the process.
 
-### **7. Create a pull request proposal in Snapshot ⚡️**
+### **7. Create a proposal in Snapshot ⚡️**
 
-Log in with your wallet in **<https://snapshot.org/#/hbot-prp.eth>** and create a new proposal using as a title the name of your pull request.
-Be sure that you have at least 1 HBOT to create the proposal.
+If you want your contribution to be reviewed, merged into the official Hummingbot codebase and included in ongoing monthly releases, you need to get a [Proposal](/governance/proposals) approved.
 
-The voting period is 7 days and the HBOT holders will decide if your PR will be accepted or rejected.
+Create a new proposal in the appropriate Snapshot sub-space following the instructions on the Proposals page. Make sure that you have at least 200,000 HBOT to create a New Connector Proposal, or 1 HBOT for a Pull Request Proposal. The voting period is 7 days and the HBOT holders will decide if your proposal will be accepted or rejected.
 
 ### **8. Code review**
 

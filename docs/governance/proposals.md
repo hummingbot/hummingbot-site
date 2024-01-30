@@ -12,7 +12,7 @@ Each proposal type has different parameters:
 | Snapshot Space               | [hbot-prp.eth](https://snapshot.org/#/hbot-prp.eth) | [hbot-ncp.eth](https://snapshot.org/#/hbot-ncp.eth) | [hbot-ip.eth](https://snapshot.org/#/hbot-ip.eth) | [hbot.eth](https://snapshot.org/#/hbot.eth) |
 | Vote Duration                | 7 days                    | 7 days                 | 7 days                  | 7 days                    |
 | Minimum HBOT Balance         | 1                         | 200,000                |10,000                  | 50,000                   |
-| Quorum (% Circulating Supply)            | 0.1% | 1% | 3% | 10% |
+| Quorum (HBOT)           | 500,000 | 5,000,000 | 15,000,000 | 50,000,000 |
 | Approval Threshold           | >50%   | >50% | >50%  | >50% |
 
 !!! tip
@@ -28,7 +28,7 @@ Each proposal type has different parameters:
 * Pull Request Proposals (PRP) let HBOT holders **approve pull requests** for merge and inclusion into the Hummingbot codebase.
 * Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a PRP at the Snapshot sub-space: <https://snapshot.org/#/hbot-prp.eth>.
 * A PRP links to a valid pull request in the Hummingbot code repository. See [Contribution Guidelines](../developers/contributions.md) for more information about the process of creating a valid pull request.
-* If the PRP is approved after the Vote Duration and the Quorum Percentage is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
+* If the PRP is approved after the Vote Duration and the Quorum is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
 * During the review process, the Foundation will test the submitted pull request to ensure that it fulfills its stated intention, conduct a technical code review, check for conflicts with other parts of the Hummingbot codebase and security issues. If the review passes, the pull request is merged into the codebase.
 * If the PRP fails to meet the Approval Threshold, the Foundation will close the related pull request. However, the developer is free to create a new pull request and a new PRP at a subsequent date.
 
@@ -44,7 +44,7 @@ To be considered valid, a PRP should contain the following fields (otherwise the
 * Since reviewing, merging, and maintaining connectors requires more effort than normal pull requests, this proposal type 
 * Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a NCP at the Snapshot sub-space: <https://snapshot.org/#/hbot-ncp.eth>.
 * Similar to PRPs, the proposal should include a link to a valid pull request in the Hummingbot code repository. See [Contribution Guideline](../developers/contributions.md) for more information about the process of creating a valid pull request.
-* If the NCP is approved after the Vote Duration and the Quorum Percentage is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
+* If the NCP is approved after the Vote Duration and the Quorum is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
 * During the review process, the Foundation will test the submitted pull request to ensure that it fulfills its stated intention, conduct a technical code review, check for conflicts with other parts of the Hummingbot codebase and security issues. If the review passes, the pull request is merged into the codebase.
 * If the NCP fails to meet the Approval Threshold, the Foundation will close the related pull request. However, the developer is free to create a new pull request and a new NCP at a subsequent date.
 To be considered valid, a NCP should contain the following fields (otherwise the Foundation may close it):

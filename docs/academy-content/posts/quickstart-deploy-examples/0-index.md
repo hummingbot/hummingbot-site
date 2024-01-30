@@ -10,69 +10,33 @@ tags:
 
 # Docker Installation Guide
 
-## Prerequisites
+## Introduction
 
-### Installing Docker
+Welcome to the **Hummingbot Docker Installation Quickstart Guide**
 
-To use Docker, it must first be installed on your system. Follow the instructions below according to your operating system.
+This guide is tailored to introduce you to the process of installing and deploying Hummingbot using the [deploy-examples](https://github.com/hummingbot/deploy-examples) repository, which leverages Docker Compose for deployment. You will learn step-by-step how to set up and run Hummingbot in a Docker environment, enabling you to efficiently manage and scale your trading strategies. 
 
-#### For Linux and Windows Users
 
-- **Note for Windows Users:** Ensure that WSL2 is installed to access an Ubuntu terminal.
-- Execute the following commands in your terminal:
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/VzmJuJ0D0c8?si=lOSIAbwhiDO53R36&amp;start=449" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  ```bash
-  curl -fsSL https://get.docker.com -o get-docker.sh
-  sudo sh get-docker.sh
-  sudo usermod -aG docker $USER
-  ```
+In the above video, Fede goes through the different ways to deploy Hummingbot using the **deploy-examples** repo, but in this tutorial we will focus on using the **simple_hummingbot_compose** example which is a good starting point for beginners. Once you are familiar with the basics then you can explore using the other deploy examples and choose one which meets your needs.
 
-#### For Mac Users (Both Intel and Apple Silicon)
+## What You Will Learn
 
-- Download and install the Docker Desktop application:
-  - [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop)
+1. [**Install Docker**](1-installation.md): This guide provides a straightforward approach to installing Docker, offering step-by-step instructions to ensure a successful setup for both beginners and experienced users.
 
-Once Docker is installed on your system, you're ready to move on to using it with the **deploy-examples** repository.
 
-## Download the [deploy-examples](https://github.com/hummingbot/deploy-examples) repository
+2. [**Hummingbot Interface**](2-hb-interface.md): Uncover the essentials of the Hummingbot interface, including layout and navigation, to efficiently manage your trading bots.
 
-In your terminal, clone the deploy-examples repository:
 
-```bash
-git clone https://github.com/hummingbot/deploy-examples
-```
+3. [**Running a Script**](3-run-script.md): Learn how to effectively launch and orchestrate multiple trading bots, with insights into running scripts for optimal performance.
 
-Alternatively, you can download just the `docker-compose.yml` file without the entire `deploy-examples` repo using this command:
 
-```bash
-curl -LO https://github.com/hummingbot/deploy-examples/raw/main/simple_hummingbot_compose/docker-compose.yml
-```
+4. [**Connecting API Keys**](4-api-keys.md): Master the crucial process of integrating API keys with Hummingbot, setting the stage for seamless live trading across various exchanges. This guide provides essential insights and step-by-step instructions to ensure secure and efficient API key setup for enhanced trading experiences.
 
-## Switch to the **simple_hummingbot_compose** folder
 
-The **deploy-examples** repository contains several folders, each with different compose files for various scenarios (e.g., using autostart, Hummingbot with Gateway, etc.). For now, we will focus on the **simple_hummingbot_compose** example. 
+## Let's Begin!
 
-Use the following command to change your current working directory to the correct folder:
+With all the groundwork in place, it's time to unlock the full capabilities of your trading tools. Let's dive in!
 
-```bash
-cd deploy-examples/simple_hummingbot_compose
-```
-
-## Start the Docker Compose File
-
-Use the following command to create the **simple_hummingbot_compose** Docker container:
-
-```bash
-docker compose up -d
-```
-
-This will start the container in the background and we'll need to `attach` to it to be able to send commands to it. Run the following command below:
-
-```bash
-docker attach hummingbot
-```
-
-We should now have Hummingbot running and in the next section we'll go over the Hummingbot Interface 
-
-[Hummingbot Interface](1-hb-interface.md){ .md-button .md-button--primary }
-
+[Set up Docker](1-installation.md){ .md-button .md-button--primary }

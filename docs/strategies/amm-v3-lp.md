@@ -1,4 +1,4 @@
-# `aamm_v3_lp`
+# `amm_v3_lp`
 
 ## 📁 Strategy Info
 

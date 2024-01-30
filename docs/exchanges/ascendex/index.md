@@ -5,15 +5,11 @@
 
 - **Exchange Type**: Centralized Exchange (CEX)
 - **Market Type**: Central Limit Order Book (CLOB)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
-- **Maintainer**: Hummingbot Foundation
 
-Currently, Ascendex is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
-
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | Not built | API only allows institutional accounts |
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | v2.0 | Yes | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | Not built | | |API only allows institutional accounts |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ |
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not built |
 

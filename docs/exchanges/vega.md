@@ -2,10 +2,6 @@
 
 * **Exchange Type**: Decentralized Exchange (**DEX**)
 * **Market Type**: Central Limit Order Book (**CLOB**)
-* **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green)
-* Maintainer: Hummingbot Foundation
-
-Currently, Vega is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs).
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |

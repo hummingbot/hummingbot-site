@@ -205,9 +205,9 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
     ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
 
--   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+-   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md))
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
 
 </div>
 

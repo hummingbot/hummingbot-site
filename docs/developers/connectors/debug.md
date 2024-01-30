@@ -1,31 +1,29 @@
-# Debugging & Testing
-
+!!! note
+    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+    
 This section will break down some ways to debug and test the code. You are not required to use these options during your development process, but they will greatly help you in it.
 
-!!! warning
-    As part of the QA process, you are **required** to include the unit test cases for the code review process to begin. Refer to [Option 1: Unit Test Cases](#option-1-unit-test-cases) to build your unit tests.
+As part of the QA process, you are **required to include unit test cases** for the code review process to begin. Refer to [Option 1: Unit Test Cases](#option-1-unit-test-cases) to build your unit tests.
     
 ## Option 1. Unit Test Cases
 
 You are required to provide at least 80% of unit-test code coverage to have your contribution accepted in the `hummingbot` repository.
 Examples of unit-tests can be found in the [test/integration](https://github.com/hummingbot/hummingbot/tree/master/test/) folder.
 
+Unit-tests submitted for merging in the code base must not access any external servers directly. All server API communications must be mocked — refer to existing examples provided by the exchange you are basing your implementation on for guidance.
+
 !!! warning
     When writing unit-tests for submission with your PR, take extra care not to include any API authentication credentials.
 
-!!! warning
-    Unit-tests submitted for merging in the code base must not access any external servers directly. All server API
-    communications must be mocked — refer to existing examples provided by the exchange you are basing your implementation on for guidance.
-
 ## Option 2. aiopython console
-This option is mainly used to test for specific functions. Considering that many of the functions are asynchronous functions, 
-it would be easier to test for these in the aiopython console. Click [here](https://aioconsole.readthedocs.io/en/latest/) for some documentation on how to use aiopython.
+
+This option is mainly used to test for specific functions. Considering that many of the functions are asynchronous functions, it would be easier to test for these in the aiopython console. Click [here](https://aioconsole.readthedocs.io/en/latest/) for some documentation on how to use aiopython.
 
 Writing short code snippets to examine API responses and/or how certain functions in the code base work would help you understand the expected side-effects of these functions and the overall logic of the Hummingbot client.
 
 ### Issue a API Request
-Below is just a short example on how to write a short asynchronous function to mimic a API request to place an order and displaying the response received.
 
+Below is just a short example on how to write a short asynchronous function to mimic a API request to place an order and displaying the response received.
 
 ```python3
 # Prints the response of a sample LIMIT-BUY Order
@@ -49,11 +47,12 @@ Below is just a short example on how to write a short asynchronous function to m
 ```
 
 ### Calling a Class Method
-i.e. Printing the output from `get_active_exchange_markets()` function in `OrderBookTrackerDataSource`.
+
+Printing the output from `get_active_exchange_markets()` function in `OrderBookTrackerDataSource`.
+
+In this example, we will be using BittrexAPIOrderBookDataSource:
 
 ```python3
-# In this example, we will be using BittrexAPIOrderBookDataSource
-
 >>> from hummingbot.market.bittrex.BittrexAPIOrderBookDataSource import BittrexAPIOrderBookDataSource as b
 >>> await b.get_active_exchange_markets() 
 
@@ -69,6 +68,7 @@ BTC-USDT   9346.88236735       BTC   538306.04864142  ...        57.59973765  5.
 ```
 
 ## Option 3. Custom Scripts
+
 This option, like in Option 2, is mainly used to test specific functions. This is mainly useful when debugging how various functions/classes interact with one another.
 
 e.g. Initializing a simple websocket connection to listen and output all captured messages to examine the user stream message when placing/cancelling an order. 
@@ -140,7 +140,7 @@ loop.close()
 
 ```
 
-## Option 4: Using Debugger tools.
+## Option 4: Using Debugger Tools
 
 This section will detail the necessary configurations/setup required to run the debugger tool from your IDE of choice.
 

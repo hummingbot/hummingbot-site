@@ -22,7 +22,7 @@ hide:
 
     ---
 
-    ### [Docker Installation Guide](/academy-content/docker-installation-guide/)
+    ### [Docker Installation Guide](/academy-content/docker-installation-guide)
 
     Get started with Hummingbot in 5 minutes
 
@@ -163,7 +163,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/academy-content/managing-your-bot-performance/cover.webp)](/academy-content/managing-your-bot-performance/)
+-   [![](/academy-content/managing-your-bot-performance/cover.webp)](../academy-content/posts/managing-your-bot-performance/index.md)
 
     ### [Managing Your Bot Performance](../academy-content/posts/managing-your-bot-performance/index.md)
 
@@ -171,7 +171,7 @@ hide:
 
     ### [Order Management Configurations](/academy-content/order-management-configurations/)
 
--   [![](/academy-content/commands-and-configs-price-source/cover.webp)](/academy-content/commands-and-configs-price-source/)
+-   [![](/academy-content/commands-and-configs-price-source/cover.webp)](../academy-content/posts/commands-and-configs-price-source/index.md)
 
     ### [Commands and Configs - Price Source](../academy-content/posts/commands-and-configs-price-source/index.md)
 

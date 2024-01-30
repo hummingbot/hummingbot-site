@@ -59,10 +59,10 @@ Running the `gateway list` command will list all available Gateway DEX connector
 
 ```python
 >>> gateway list
-    +----------+------------------------+---------+
-    | Exchange | Chains                 | Tier    |
-    |----------|------------------------|---------|
-    | uniswap  | ethereum, polygon      | GOLD    |
+    +----------+------------------------+
+    | Exchange | Chains                 |
+    |----------|------------------------|
+    | uniswap  | ethereum, polygon      |
 ```
 
 ## Connecting to a DEX
