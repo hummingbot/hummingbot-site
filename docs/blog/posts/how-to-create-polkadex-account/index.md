@@ -8,6 +8,8 @@ categories:
 
 # Creating Your Polkadex Wallet - A Hummingbot User Guide
 
+![cover](image0.webp)
+
 Here's a step-by-step guide on how to create your Polkadex wallet and start your journey using Hummingbot!
 
 <!-- more -->
