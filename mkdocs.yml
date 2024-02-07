@@ -343,8 +343,8 @@ nav:
     - Academy: academy/index.md
     - Latest: academy-content/index.md
     - All Articles: academy/all.md
-  - Botcamp:
-    - Botcamp: botcamp/index.md
+  - Botcamp ↗️:
+    - Botcamp: https://www.botcamp.xyz
     - Botcamp FAQ: botcamp/faq.md
   - Releases:
     - Releases: release-notes/index.md
