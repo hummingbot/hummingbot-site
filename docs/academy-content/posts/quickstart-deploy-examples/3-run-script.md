@@ -15,7 +15,7 @@ tags:
 Let's use the `simple_pmm_example_config.py` script. This is a configurable script which will create orders for a token pair in paper trading mode. For configurable scripts, the first step is to create a config file. Here's how to create one:
 
 ```
-create --script-config simple_pmm_example_config.py
+create --script-config simple_pmm_example_config
 
 ```
 

@@ -58,7 +58,7 @@ Metamask will open a series of requests pop-ups, review them and then click "Con
 
 [![image](image1.png)](image1.png)
 
-Once this is done, click on "Connect" again or if you still have the popup open then select "Connect via Metamask Snap" one more time. You should get a prompt on the screen and click "I Agree" to continue
+Once this is done, click on "Connect" again or if you still have the previous popup open then select "Connect via Metamask Snap" one more time. You should get a prompt on the screen and click "I Agree" to continue
 
 [![image](image3.png)](image3.png)
 
@@ -91,7 +91,6 @@ Once this is done, you'll just need to wait for the transaction to be confirmed.
 
 [![image](image9.png)](image9.png)
 
-Once connected to Hummingbot, you should then be able to view your balance by running the `balance` command
 
 ## Install Hummingbot
 
@@ -136,12 +135,23 @@ Next, enter in the wallet seed phrase and if both credentials are valid you shou
 
 [![image](image4.png)](image4.png)
 
+Once connected to Hummingbot, you should then be able to confirm it's connected by running the `balance` command
+
 ## Starting Your First Trade
 
-- Step-by-step guide to starting your first trade.
-- Monitoring trades and understanding Hummingbot logs.
-- Analyzing market conditions and choosing a trading pair.
+`v2_dman_v3_multiple_exchanges.py`
 
+Due to the unconventional method that Vega displays the tokens (instead of BASE-QUOTE), the existing scripts will need to be modified  
+
+**How to modify the script**
+
+Open the `v2_dman_v3_multiple_exchanges.py` using your preferred text editor or IDE like VSCode and make changes to the script. For example you can change the trading pair below or change the source exchange for the Candles Feed. 
+
+[![image](image10.png)](image10.png)
+
+
+!!! Note
+    When using a public node, you may encounter issues with the node getting disconnected from time to time which may prompt some errors in the log pane. Hummingbot normally recovers from these issues but for best performance we recommend running a private node instead. 
 
 ## Additional Resources
 
