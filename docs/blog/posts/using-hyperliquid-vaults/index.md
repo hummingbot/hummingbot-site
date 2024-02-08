@@ -8,15 +8,19 @@ categories:
 
 # User Guide: Hyperliquid Vaults
 
+![cover](cover.webp)
+
+<!-- more -->
+
 ## What are Vaults
 
-Hyperliquid Vaults serves as an exchange wallet where the funds are used by a individual trader or automated market maker (Vault Leader). Anyone can deposit (Vault Depositors) in the vault and earn a share of profits.
+**Hyperliquid Vaults** serves as an exchange wallet where the funds are used by a individual trader or automated market maker (`Vault Leader`). Anyone can deposit (`Vault Depositors`) in the vault and earn a share of profits.
 
 The Hyperliquidity Provider (HLP) vault runs market making strategies on Hyperliquid. Anyone can provide liquidity for HLP and share in the PnL. HLP doesn’t collect any fees, and PnL is shared proportionally based on each depositor’s share of the vault. HLP is community owned.
 
 Minimum deposit is 0.01 USDC with a locked period of 4 days
 
-### What are the benefits of using vaults?
+## Vault Benefits
 
 - Earn a share of the profits, or losses, of the vault.
 
