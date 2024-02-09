@@ -25,21 +25,6 @@ Whether you're new to automated trading or looking to leverage Vega Protocol's d
 
 A Vega Wallet is essential for interacting with Vega, whether it's for staking or trading. The Vega Wallet apps allow you to manage wallets and key pairs, deposit and withdraw assets, stake and sign transactions. There are several options to create a Vega Wallet app including Chrome / Firefox browser extensions, or a desktop / CLI app. Or if you have an existing Metamask account you can setup a Vega Key through Metamask Snaps which we recommend below. 
 
-
-**Browser Extension**
-
-- [Chrome extension:](https://chrome.google.com/webstore/detail/vega-wallet-mainnet/codfcglpplgmmlokgilfkpcjnmkbfiel)
-
-- [Firefox extension:](https://addons.mozilla.org/en-GB/firefox/addon/vega-wallet-mainnet/)
-
-
-**Desktop Wallet**
-
-- [Download the app:](https://github.com/vegaprotocol/vegawallet-desktop/releases) On GitHub, download the desktop app for your operating system.
-
-- [Get started:](https://docs.vega.xyz/mainnet/tools/vega-wallet/desktop-app/getting-started) Read a guide on using the desktop app to connect an existing Vega wallet, create or restore a wallet and start interacting with your keys.
-
-
 **Metamask Snap** (recommended)
 
 If you're already a MetaMask user, you won't need to create a Vega Wallet to create and use a Vega key.
@@ -65,6 +50,20 @@ Once this is done, click on "Connect" again or if you still have the previous po
 Once installed and connected to the site, you will see your `SNAP KEY` in the top right with the option, when clicked, to copy the address, this is your `Vega Party ID` which will be used within the system when configuring Hummingbot.
 
 You're now ready to deposit or transfer assets and use your new Vega keypair.
+
+**Browser Extension**
+
+- [Chrome extension:](https://chrome.google.com/webstore/detail/vega-wallet-mainnet/codfcglpplgmmlokgilfkpcjnmkbfiel)
+
+- [Firefox extension:](https://addons.mozilla.org/en-GB/firefox/addon/vega-wallet-mainnet/)
+
+
+**Desktop Wallet**
+
+- [Download the app:](https://github.com/vegaprotocol/vegawallet-desktop/releases) On GitHub, download the desktop app for your operating system.
+
+- [Get started:](https://docs.vega.xyz/mainnet/tools/vega-wallet/desktop-app/getting-started) Read a guide on using the desktop app to connect an existing Vega wallet, create or restore a wallet and start interacting with your keys.
+
 
 ### Deposit Funds
 
@@ -111,6 +110,7 @@ We recommend installing Hummingbot from source if you meet any of the following 
 - You want to learn how Hummingbot works at a deeper, technical level.
 
 Guides for various environments:
+
   - [Linux](../../../installation/linux.md)
   - [Windows](../../../installation/windows.md)
   - [MacOS](../../../installation/mac.md)
@@ -122,11 +122,17 @@ In order to connect your Vega Wallet to Hummingbot you'll need your `SNAP KEY` (
 
 Launch Hummingbot and then enter the command below in the Hummingbot terminal
 
-`connect vega_perpetual`
+```
+connect vega_perpetual
+
+```
 
 or if you are connecting to the testnet
 
-`connect vega_perpetual_testnet`
+```
+connect vega_perpetual_testnet
+
+```
 
 You'll be prompted to enter in your Vega public key (party ID) - this can be found in the top right of the screen where it says "SNAP KEY". 
 
@@ -139,19 +145,9 @@ Once connected to Hummingbot, you should then be able to confirm it's connected 
 
 ## Starting Your First Trade
 
-`v2_dman_v3_multiple_exchanges.py`
-
-Due to the unconventional method that Vega displays the tokens (instead of BASE-QUOTE), the existing scripts will need to be modified  
-
-**How to modify the script**
-
-Open the `v2_dman_v3_multiple_exchanges.py` using your preferred text editor or IDE like VSCode and make changes to the script. For example you can change the trading pair below or change the source exchange for the Candles Feed. 
-
-[![image](image10.png)](image10.png)
+[WIP]
 
 
-!!! Note
-    When using a public node, you may encounter issues with the node getting disconnected from time to time which may prompt some errors in the log pane. Hummingbot normally recovers from these issues but for best performance we recommend running a private node instead. 
 
 ## Additional Resources
 
