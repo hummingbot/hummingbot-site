@@ -3,16 +3,20 @@ date: 2024-02-02
 authors:
   - foundation
 categories:
-  - Governance
+  - Guides
 ---
 
-# Creating Your Polkadex Wallet - A Hummingbot User Guide
+# User Guide: Using Polkadex with Hummingbot
 
 ![cover](image0.webp)
+
+## Introduction
 
 Here's a step-by-step guide on how to create your Polkadex wallet and start your journey using Hummingbot!
 
 <!-- more -->
+
+## Prerequisites
 
 ## Install the Polkadex Extension
 
@@ -66,11 +70,24 @@ You're almost there! Now, let's add some balances:
 - Navigate to the "Balances" tab on [orderbook.polkadex.trade/.](https://orderbook.polkadex.trade/)
 - Deposit your preferred tokens and get started with Hummingbot!
 
-### Open your Hummingbot client
+
+
+## Install Hummingbot
+
+
+
+
+### Connect your Polkadex Wallet to Hummingbot
 
 ![](image8.png)
 
-- Execute "connect polkadex" command to add your Polkadex trading seed phrase
+- Execute the following command to connect Hummingbot and add your Polkadex trading seed phrase
+
+```
+connect polkadex
+
+```
+
 - Execute "balance" command to check your assets 
 - Launch your preferred trading strategy!
 
