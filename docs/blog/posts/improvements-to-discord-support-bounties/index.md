@@ -37,7 +37,8 @@ These changes are designed to incentive community members who offer practical an
   - 2 points for answers concerning V2 Strategies, Dashboard, and other new/advanced Hummingbot features
   - 3 points for going the extra mile in assisting users and hand-holding them through their issues
 
-* How are points allocated each week?
+!!! warning
+    How are points allocated each week?
 
 ### Discord `support-evaluator` Role
 
@@ -66,7 +67,12 @@ Becoming a part of this exciting and rewarding program is simple:
 ## Evaluation Process
 Discord users with the `support-evaluator` role may add a 1️⃣, 2️⃣ or 3️⃣ emoji to answers and threads.
 
-* How to prevent users without this role from doing this?
+!!! warning
+    How to prevent users without this role from doing this?
+
+
+!!! warning
+    Add more details to the section below
 
 Each month, Hummingbot Foundation runs an automated process to calculate earnings per user
 
