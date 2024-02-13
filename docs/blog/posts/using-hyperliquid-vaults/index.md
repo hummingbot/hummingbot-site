@@ -107,9 +107,15 @@ Launch Hummingbot and in the terminal run the `connect` command to connect Hummi
 connect hyperliquid_perpetual
 ```
 
-You should get a prompt to enable Vault (default is no) and once enabled you can select your strategy and start trading 
+[![image](image7.png)](image7.png)
 
-Your bot trades should match the trades shown under the Vault
+You should get a prompt to enable Vault - enter Yes here 
+
+Next, you'll be prompted to enter in your `Vault address`. If you don't know what the Vault address is go to your Vault page and the address would be at the top left under the Vault name. You can click the copy icon to copy the address to the clipboard and paste it in Hummingbot
+
+[![image](image8.png)](image8.png)
+
+Start a trading strategy in Hummingbot and your bot trades should match the trades shown under the Vault
 
 [![image](image11.png)](image11.png)
 
