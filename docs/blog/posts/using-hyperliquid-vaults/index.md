@@ -37,6 +37,7 @@ Minimum deposit is 0.01 USDC with a locked period of 4 days
 
 **Let's get started!**
 
+---
 
 ## For Vault Leaders
 
@@ -124,11 +125,14 @@ On your vault’s dedicated page, click the Leader Actions dropdown and select �
     - If there is enough initial margin to keep the open positions, withdrawal does not affect the open position
     - If there is not enough initial margin for the open position, a proportional amount of the withdrawal is closed for all open positions. For example, if a user comprised 10% of the vault’s total deposits, 10% of all open positions would be closed when they withdraw.
 
+
+---
+
 ## For Vault Depositors
 
 **Choose a Vault**
 
-- Users just need to go to the `Vault` page and select Vaults they want to invest in the list
+- Users just need to go to the [Vault](https://app.hyperliquid.xyz/vaults) page and select Vaults they want to invest in the list
 
 [![image](image6.png)](image6.png)
 
