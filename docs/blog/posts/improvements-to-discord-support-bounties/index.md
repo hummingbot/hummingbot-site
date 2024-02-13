@@ -37,9 +37,6 @@ These changes are designed to incentive community members who offer practical an
   - 2 points for answers concerning V2 Strategies, Dashboard, and other new/advanced Hummingbot features
   - 3 points for going the extra mile in assisting users and hand-holding them through their issues
 
-!!! warning
-    How are points allocated each week?
-
 ### Discord `support-evaluator` Role
 
 Previously, only Foundation staff members could grant points for answers, with the caveat that they could not grant points for their own answers. Going forward, we will formalize this process so that only users with the `support-evaluator` role can grant points, which will enable both designated community members and Foundation team members to award points for quality answers.
@@ -52,32 +49,25 @@ We plan to add a `Discord Support Leaderboard` sheet to the [HBOT Tracker Sheet]
 
 This will not only motivate new members to join but also recognize and appreciate the contributions of our helpful community members.
 
----
-
-We believe these updates will greatly contribute to achieving a more transparent, decentralized, and fair system for distributing incentives among our Discord community members. If community members have feedback and suggestions to further improve this system, please let us know!
-
 ## How to Participate
 
 Becoming a part of this exciting and rewarding program is simple:
 
 1. Complete the [New Hummingbot Contributor](https://forms.gle/9jcm45HvU2XsBsm49) to agree to the terms and conditions and provide your Ethereum address
-2. Foundation staff awards accepted users a `contributor` badge
+2. Foundation staff awards accepted users a `bounty-contributor` badge
 3. Start assisting others in the Hummingbot Discord server across any public channels or threads on the [Hummingbot Discord](https://discord.gg/hummingbot) by answer their questions or helping them with installation.
 
 ## Evaluation Process
-Discord users with the `support-evaluator` role may add a 1️⃣, 2️⃣ or 3️⃣ emoji to answers and threads.
 
-!!! warning
-    How to prevent users without this role from doing this?
+Discord users with the `support-evaluator` role may add a 1️⃣, 2️⃣ or 3️⃣ emoji to answers and threads provided by users who have the `bounty-contributor` badge. Each thread or conversation is scored, so a long conversation with a user would be treated as a 3-point answer. 
 
+Currently, the Foundation team manually tracks evaluated responses in the [Discord Support Program Tracker](https://docs.google.com/spreadsheets/d/1mI1evL-_BNbQtLL_gvblPJoYmnOm4zV0prSgo-7Klz8/edit?usp=sharing) and computes the weekly rewards earned by each support provider. We plan to automate this process in the future.
 
-!!! warning
-    Add more details to the section below
+At the end of the month, users will receive their total bounties earned, [either in USDC or HBOT](blog/launching-usdc-payouts-for-bounty-recipients/) based on the current preference they indicated in the onboarding form.
 
-Each month, Hummingbot Foundation runs an automated process to calculate earnings per user
+---
 
-* Point allocation logic
-* We update Leaderboard
+We believe these updates will greatly contribute to achieving a more transparent, decentralized, and fair system for distributing incentives among our Discord community members. If community members have feedback and suggestions to further improve this system, please let us know!
+
+* Link to New Contributor Form
 * Link to Leaderboard
-
-We eagerly invite members who are passionate and helpful to join us in this journey!
