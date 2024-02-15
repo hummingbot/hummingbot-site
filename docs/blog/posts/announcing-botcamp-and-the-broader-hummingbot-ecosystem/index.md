@@ -27,64 +27,54 @@ In the future, we plan to organize hackathons and other events that mobilize the
 
 ## New Botcamp Cohorts
 
-Botcamp will be reverting back to the original cohort-based model that we used for five cohorts from 2022-2023. The current subscription experiment will end at the end of February, and all current Botcamp subscribers will have **lifetime access** to their course content.
+Botcamp is a professional training program designed specifically for algo traders and market makers. Through structured courses and intensive cohorts, participants how to design and develop sophisticated algorithmic trading and market-making strategies from the ground up using Hummingbot.
+
+ While we experimented with subscriptions, we believe that the original cohort-based model that we used for five Botcamp cohorts offers more value to students, so all current Botcamp subscribers will have **lifetime access** to their course content.
 
 We are making this change because our experience is that intensive cohorts along with 1:1 mentorship deliver successful outcomes for students. Starting in April, we will resume Botcamp cohorts, 5-week intensive bootcamps that teach students how to design and code a custom algo trading strategy. To improve the student experience, we have launched a new website for Botcamp, which should be its permanent home:
 
-- **New Botcamp Website**: https://www.botcamp.xyz
-- **Register for Info Session**: https://www.botcamp.xyz/event
+- [New Botcamp Website](https://www.botcamp.xyz) 
+- [Register for Info Session](https://www.botcamp.xyz/event/botcamp-info-session-4/register)
 
 ## The Growing Hummingbot Ecosystem
 
 Since the codebase was initially open sourced in 2019, Hummingbot’s goal has always to build a high-quality, well-maintained open source ecosystem that lets the community contribute modular components like connectors and strategies.
 
-We have made substantial progress toward that vision. Today, the Hummingbot ecosystem is comprised of a decentralized constellation of entities large and small:
-
-### Hummingbot Foundation
-
-An independent, not-for-profit organization established in the Cayman Islands, the Foundation’s mission democratize high-frequency trading by maintaining the open-source [Hummingbot code repositories](https://github.com/hummingbot).
-
-### Botcamp
-
-Botcamp provides education and training programs for market makers and algorithmic traders using the open source Hummingbot software framework, such as [Hummingbot Botcamp](https://botcamp.hummingbot.org/).
+In addition to Hummingbot Foundation and Botcamp, the Hummingbot ecosystem is comprised of a decentralized constellation of entities large and small:
 
 ### CoinAlpha
 
-For-profit company that runs the Hummingbot Miner liquidity mining platform and provides other liquidity solutions and services using a custom version of Hummingbot
+[CoinAlpha](https://coinalpha.com), Hummingbot's original creator, is a software startup and liquidity provider backed by Initialized Capital, Bain Capital Ventures, and other leading investors. CoinAlpha operates the Hummingbot Miner liquidity mining platform and provides other liquidity solutions and services using the Hummingbot stack.
+
+### Enflux
+
+[Enflux](https://www.enflux.io/) is restoring trust in crypto market making by providing transparent and collaborative market making services to tokenized projects.
+
+### Funttastic
+
+[Funttastic Labs](https://www.funttastic.com) leads the blockchain innovation wave, mastering High-Frequency Trading (HFT), Market Making (MMing) via Hummingbot, and advancing in Machine Learning (ML) and Reinforcement Learning (RL). 
+
+Our core strengths lie in developing Smart Contracts, leveraging Web3 technologies, and integrating GPT for financial analysis, offering a competitive edge in the cryptocurrency realm. With a profound command over blockchain, our team is adept at crafting strategic solutions that not only embrace the future of finance but also unlock unique investment opportunities.
 
 ### Pecunia Finance
 
-https://pecuniafinance.com/
-
-Pecunia.Finance is a Web3 Project Management DAO that provides pseudo-anonymous, automated labor infrastructure in a fair and transparent way, which enables organizations and the builders within communities to successfully deliver projects.
+[Pecunia.Finance](https://pecuniafinance.com/) is a Web3 Project Management DAO that provides pseudo-anonymous, automated labor infrastructure in a fair and transparent way, which enables organizations and the builders within communities to successfully deliver projects.
 
 Since incorporating as a Non-Profit DAO LLC in 2023, Pecunia.Finance has gained over a dozen skilled contributors worldwide and received 3 separate grants working with organizations such as Hummingbot Foundation, Osmosis, and Sifchain to make high-frequency crypto-trading more accessible to the common user. 
 
 ### Robotter
 
-Robotter.ai is decentralizing Financial ML & Trading Bot pipelines with the help of Hummingbot, Solana & Aleph.im. We believe in a firmly rooted, transparent, DeFi-centric market. We aim to produce a bleeding-edge, self-sustaining ecosystem for data, compute and capital to fuel a rising class of quantitative traders, AI enthusiasts and web3 developers establishing themselves as the new paragons of liquidity on markets where no institutional player dares to tread.
+[Robotter.AI](https://robotter.ai) is decentralizing Financial ML & Trading Bot pipelines with the help of Hummingbot, Solana & Aleph.im. We believe in a firmly rooted, transparent, DeFi-centric market. We aim to produce a bleeding-edge, self-sustaining ecosystem for data, compute and capital to fuel a rising class of quantitative traders, AI enthusiasts and web3 developers establishing themselves as the new paragons of liquidity on markets where no institutional player dares to tread.
 
 ### QuantAlpha
 
-Created by the founders of CoinAlpha and Hummingbot, QuantAlpha is a trading and technology firm building “Quant Finance 2.0 for Digital Assets”. QuantAlpha creates investment and trading strategies based on quant methodologies that generate alpha by uncovering trading signals and market patterns, and works with investment managers and hedge funds to create custom investment products and trading solutions, including AMM liquidity staking management and CEX-DEX arbitrage.
+Created by the founders of CoinAlpha and Hummingbot, [QuantAlpha](https://quantalpha.ai) is a trading and technology firm building “Quant Finance 2.0 for Digital Assets”. QuantAlpha creates investment and trading strategies based on quant methodologies that generate alpha by uncovering trading signals and market patterns, and works with investment managers and hedge funds to create custom investment products and trading solutions, including AMM liquidity staking management and CEX-DEX arbitrage.
 
 QuantAlpha has built its trading execution stack on top of Hummingbot.
 
-### Enclave
-
-Restoring trust in crypto market making by providing transparent and collaborative market making services to tokenized projects
-
-### Funttastic Labs
-
-https://www.funttastic.com
-
-Funttastic leads the blockchain innovation wave, mastering High-Frequency Trading (HFT), Market Making (MMing) via Hummingbot, and advancing in Machine Learning (ML) and Reinforcement Learning (RL). Our core strengths lie in developing Smart Contracts, leveraging Web3 technologies, and integrating GPT for financial analysis, offering a competitive edge in the cryptocurrency realm. With a profound command over blockchain, our team is adept at crafting strategic solutions that not only embrace the future of finance but also unlock unique investment opportunities. Embrace the future with Funttastic, where our top-tier expertise in blockchain and finance drives your success in the dynamic digital asset market.
-
 ### Summit Operations
 
-https://summitoperations.co/
-
-Offers market making services for CEX and DEX opportunities. Hummingbot is an integral system for our capacity to easily integrate and deploy across markets and platforms. To date we’ve traded over 2.2B in total volume through Hummingbot.
+[Summit Operations](https://summitoperations.co/) offers market making services for CEX and DEX opportunities. Hummingbot is an integral system for our capacity to easily integrate and deploy across markets and platforms. To date we’ve traded over 2.2B in total volume through Hummingbot.
 
 
 ## Toward a Community-Owned Codebase
