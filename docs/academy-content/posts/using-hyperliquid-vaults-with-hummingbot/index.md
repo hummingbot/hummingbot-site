@@ -1,14 +1,16 @@
 ---
-date: 2024-02-12
+date: 2024-02-15
 authors:
   - foundation
 categories:
-  - Guides
+  - Connector Guides
+tags:
+  - Connector Guides
 ---
 
-# User Guide: Hyperliquid Vaults
+# Using Hyperliquid Vaults with Hummingbot
 
-![cover](cover.webp)
+![cover](cover.png)
 
 ## Introduction
 

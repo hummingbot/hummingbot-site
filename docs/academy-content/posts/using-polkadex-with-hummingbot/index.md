@@ -1,14 +1,16 @@
 ---
-date: 2024-02-02
+date: 2024-02-15
 authors:
   - foundation
 categories:
-  - Guides
+  - Connector Guides
+tags:
+  - Connector Guides
 ---
 
-# User Guide: Using Polkadex with Hummingbot
+# Using Polkadex with Hummingbot
 
-![cover](image0.webp)
+![cover](cover.png)
 
 ## Introduction
 

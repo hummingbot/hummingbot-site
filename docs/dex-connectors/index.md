@@ -31,15 +31,15 @@ For Gateway DEX connectors to be compatible with Hummingbot strategies, they nee
 
 Here are the current DEX connectors in the codebase:
 
-| Exchange | Type | Connection |
-|----------|------|------------|
+| Exchange | Type | Connection | Connector Guide |
+|----------|------|------------|---|
 | [dYdX](../exchanges/dydx.md) | CLOB | Client |
-| [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway |
-| [Hyperliquid](../exchanges/hyperliquid.md) | CLOB | Client |
+| [Hyperliquid](../exchanges/hyperliquid.md) | CLOB | Client | [Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot)
 | [Injective Helix](../exchanges/injective.md) | CLOB | Client |
-| [Polkadex](../exchanges/polkadex.md) | CLOB | Client |
+| [Polkadex](../exchanges/polkadex.md) | CLOB | Client | [Guide](/academy-content/using-polkadex-with-hummingbot)
 | [Vega](../exchanges/vega.md) | CLOB | Client |
 | [Vertex](../exchanges/vertex.md) | CLOB | Client |
+| [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway |
 | [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |
 | [Curve](../exchanges/curve.md) | AMM | Gateway |
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |

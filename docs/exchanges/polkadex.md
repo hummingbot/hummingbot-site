@@ -8,7 +8,8 @@
 | [🔀 Spot Connector](#spot-connector) | ✅ | Supports testnet
 | [🔀 Perp Connector](#perp-connector) | Not available | 
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available |
+| [📓 Connector Guide](/academy-content/using-polkadex-with-hummingbot/) | ✅ |
 
 ## ℹ️ Exchange Info
 
@@ -21,9 +22,7 @@
 
 ## 🔑 How to Connect
 
-### Generate API Keys
-
-
+See the [Polkadex Connector Guide](/academy-content/using-polkadex-with-hummingbot/) for more details.
 
 ### Add Keys to Hummingbot
 

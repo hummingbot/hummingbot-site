@@ -9,6 +9,7 @@
 | [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| [📓 Connector Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot/) | ✅ |
 
 ## ℹ️ Exchange Info
 
@@ -20,6 +21,10 @@
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
+
+### Vault Guide
+
+See the [Hyperliquid Vault Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot/) for more details on how to use Hyperliquid VauLts.
 
 ### Add Keys to Hummingbot
 
