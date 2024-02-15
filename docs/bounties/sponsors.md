@@ -4,17 +4,6 @@ By sponsoring a bounty, you're making a significant contribution to the Hummingb
 
 If you are interested in sponsoring a bounty, here's how you can get started.
 
-## Types of Bounties
-
-Here are various types of bounties that you can sponsor:
-
-* 🐞 **Bug Fix**: Fix to a bug in the Hummingbot codebase
-* 🚀 **Enhancement**: Update or improvement to a component in the Hummingbot codebase
-* 📺 **Content**: Documentation, videos, guides, and other content that explains how to use an aspect of Hummingbot
-* 🔬 **Research**: Investigation into possible work and recommendation on how to proceed
-* 🏦 **New Connector**: A new Hummingbot [connector](/exchanges/). May be public and included in official releases (requires proposal) or delivered as private fork.
-* 📈 **New Strategy/Script**: A new Hummingbot [strategy](/strategies/) or [script](/scripts/). May be public or private fork.
-
 ## Getting Started
 
 Typically, bounty sponsors include:
@@ -33,14 +22,6 @@ There are two paths that bounty sponsors can take:
 
 [:fontawesome-solid-handshake-simple: Hummingbot Partnership Deck](/assets/hummingbot_partners_deck.pdf){ .md-button .md-button--primary}
 
-
-## Handling Fee
-
-Hummingbot Foundation charges Sponsors a Handling Fee for overseeing the entire lifecycle of a bounty: scoping the bounty, finding and assigning the bounty to a qualified contributor, performing engineering/QA review, and conducting payments. This saves you a lot of time and effort.
-
-The standard Handling Fee is **20%**. If a Sponsor submits a 1000 USDT total bounty, the Handling Fee is 200 USDT and the Contributor receives 800 USDT.
-
-If the bounty is denominated in [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb), the Handling Fee is **10%**. If a Sponsor submits a 100,000 HBOT total bounty, the Handling Fee is 10,000 HBOT and the Contributor receives 90,000 HBOT.
 
 ## Foundation Bounty Wallets
 

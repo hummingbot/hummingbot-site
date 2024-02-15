@@ -380,6 +380,8 @@ nav:
     - Bounties: bounties/index.md
     - Bounty Sponsors: bounties/sponsors.md
     - Bounty Contributors: bounties/contributors.md
+    - Lifecyle of a Bounty: bounties/lifecycle.md
+    - Bounty Price List: bounties/prices.md
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
