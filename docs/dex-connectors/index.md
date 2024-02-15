@@ -37,7 +37,7 @@ Here are the current DEX connectors in the codebase:
 | [Hyperliquid](../exchanges/hyperliquid.md) | CLOB | Client | [Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot)
 | [Injective Helix](../exchanges/injective.md) | CLOB | Client |
 | [Polkadex](../exchanges/polkadex.md) | CLOB | Client | [Guide](/academy-content/using-polkadex-with-hummingbot)
-| [Vega](../exchanges/vega.md) | CLOB | Client |
+| [Vega](../exchanges/vega.md) | CLOB | Client | [Guide](/academy-content/using-vega-protocol-with-hummingbot)
 | [Vertex](../exchanges/vertex.md) | CLOB | Client |
 | [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway |
 | [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |

@@ -22,7 +22,8 @@
 
 ## 🔑 How to Connect
 
-See the [Polkadex Connector Guide](/academy-content/using-polkadex-with-hummingbot/) for more details.
+!!! tip
+    See the [Polkadex Connector Guide](/academy-content/using-polkadex-with-hummingbot/) for more details.
 
 ### Add Keys to Hummingbot
 

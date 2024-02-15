@@ -1,14 +1,16 @@
 ---
-date: 2024-02-09
+date: 2024-02-15
 authors:
   - foundation
 categories:
-  - Guides
+  - Connector Guides
+tags:
+  - Connector Guides
 ---
 
-# User Guide: Using Vega Protocol with Hummingbot
+# Using Vega Protocol with Hummingbot
 
-![cover](cover.webp)
+![cover](cover.png)
 
 
 ## Introduction

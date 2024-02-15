@@ -9,6 +9,7 @@
 | [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| [📓 Connector Guide](/academy-content/using-vega-protocol-with-hummingbot/) | ✅ |
 
 
 ## ℹ️ Exchange Info
@@ -19,6 +20,9 @@
 * **Fees**: <https://docs.vega.xyz/testnet/concepts/trading-on-vega/fees-rewards>
 
 ## 🔑 How to Connect
+
+!!! tip
+    See the [Vega Connector Guide](/academy-content/using-vega-protocol-with-hummingbot/) for a detailed guide.
 
 ### Generate your public key in Vega Wallet
 You can download the browser extension wallet (for use in the UI) by visiting https://vega.xyz/wallet/#overview. You can also get to the wallet by clicking connect on through the dAPP interface. Which will offer a pop up which has an option which will take you to download and install the Vega Wallet extension.

@@ -83,9 +83,9 @@ hide:
 
     ### [Using Hyperliquid Vaults](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
 
--   [![](/academy-content/using-polkadex-with-hummingbot/cover.png)](/academy-content/using-polkadex-with-hummingbot/)
+-   [![](/academy-content/using-vega-protocol-with-hummingbot/cover.png)](/academy-content/using-vega-protocol-with-hummingbot/)
 
-    ### [Using Polkadex with Hummingbot](/academy-content/using-polkadex-with-hummingbot/)
+    ### [Using Vega Protocol with Hummingbot](/academy-content/using-vega-protocol-with-hummingbot/)
 
 </div>
 

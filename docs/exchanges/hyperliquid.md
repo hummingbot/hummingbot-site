@@ -22,9 +22,8 @@
 
 ## 🔑 How to Connect
 
-### Vault Guide
-
-See the [Hyperliquid Vault Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot/) for more details on how to use Hyperliquid VauLts.
+!!! tip
+    See the [Hyperliquid Vault Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot/) for more details on how to use Hyperliquid VauLts.
 
 ### Add Keys to Hummingbot
 

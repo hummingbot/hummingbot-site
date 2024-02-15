@@ -24,7 +24,8 @@
 
 ## 🔑 How to Connect
 
-See the [Binance Connector Guide](/academy-content/using-binance-with-hummingbot/) for details on create API keys on Binance.
+!!! tip
+    See the [Binance Connector Guide](/academy-content/using-binance-with-hummingbot/) for details on create API keys on Binance.
 
 From inside the Hummingbot client, run `connect binance`:
 
