@@ -153,64 +153,147 @@ Here's how to get your **wallet seed phrase** from Metamask
 
 <br>
 
-## Launch Hummingbot
+### Hummingbot **connect** command
 
-To get started, run the Hummingbot client and then enter the **connect** command in the Hummingbot terminal to connect to the Vega Wallet
+The **connect** command lets you add your user credentials in order to connect to an exchange or protocol. For centralized exchanges, this command asks you for your API key, while blockchain protocols asks you for your private key.
+
+Hummingbot stores both API keys and private keys on the local machine in encrypted form, with the Hummingbot client password as the key.
+
+[![image](connect_vega.gif)](connect_vega.gif)
+
+**Connect Vega Wallet**
+
+- To connect to **Vega mainnet** run the command below 
 
 ```
 connect vega_perpetual
-
 ```
 
-or if you are connecting to the Vega testnet
+- To connect to the **Vega testnet** or fairground run the command below
 
 ```
 connect vega_perpetual_testnet
-
 ```
 
-[![image](image4.png)](image4.png)
+- You will be prompted to enter your **Vega public key** first (Snap Key), followed by your **wallet seed phrase**. If both credentials are valid, you should get a message saying **You are now connected to vega_perpetual / testnet**
 
-Once connected, you can verify the connection by checking if your Vega Wallet's balance is visible in Hummingbot by running the **balance** command. This confirms the integration is successful and your wallet is ready for use.
+- To confirm the connection, you can run the balance command below to see if Hummingbot is able to pull the available balance from the exchange
 
 ```
 balance
 ```
 
 
-[![image](image12.png)](image12.png)
 
 ## Starting Your first script
+
+To run your first script, in the Hummingbot terminal, enter the command below to start the [v2_dman_v3_multiple_exchanges.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_dman_v3_multiple_exchanges.py) script
 
 ```
 start --script v2_dman_v3_multiple_exchanges.py
 ```
 
+[![image](image14.png)](image14.png)
+
+If you have connected your wallet successfully to Hummingbot and have sufficient funds in your mainnet trading wallet, the bot will then start to place orders on **mainnet** with the following trading pairs: 
+
+- **BTCUSDPERP-USDT** 
+
+- **ETHUSDPERP-USDT** 
+
+You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status
+
+```
+status
+```
+
 ## Modifying the Script
 
-Locate the **/scripts** folder and open the **v2_dman_v3_multiple_exchanges.py** file using a text editor or and IDE like [Visual Studio Code](https://code.visualstudio.com/)
+The **v2_dman_v3_multiple_exchanges.py** script has the following default values for exchange, trading pair and candles. 
 
-When entering trading pairs into Hummingbot, you'll just need to remove the "/" from the trading pair names. See screenshot or refer to the table below which shows the available trading pairs on Vega and how they should be entered in Hummingbot. 
+[![image](image1.png)](image1.png)
+
+If you want to make changes to the above as well as the **indicators**, **orders config**, **triple barrier** and other **advanced script configs**, follow the steps below. 
+
+[![image](script_config.gif)](script_config.gif)
+
+**Scripts Config**
+
+- Locate your **hummingbot/scripts** folder and open the **v2_dman_v3_multiple_exchanges.py** file using any text editor or an IDE like [Visual Studio Code](https://code.visualstudio.com/). For the above example, we're using **nano** - which is a text editor available in Linux to make the changes from the command-line. 
+
+- Make the changes you want, then make sure to save once you're done. In the above example we're switching from **mainnet** to **testnet** and changing one of the trading pairs from **ETHUSDPERP-USDT** to **INJUSDTPERP-USDT**.
+
+- Restart Hummingbot and run the command below to start the script again
+
+```
+start --script v2_dman_v3_multiple_exchanges.py
+```
+
+For reference, here's a link to the [modified script](https://gist.github.com/david-hummingbot/e3a21aa802362b672560f62841660508)
+
+<br>
+
+**Trading Pairs**
+
+See screenshot below for an example or refer to the following table which shows the available trading pairs on Vega and how they should be entered in Hummingbot strategies or scripts. 
+
+[![image](image2.png)](image2.png)
+
+| Mainnet Trading Pairs | Hummingbot          | | Fairground Trading Pairs | Hummingbot                     |
+|---------------------- |---------------------|-|--------------------------|--------------------------------|
+| ETH/USD-PERP          | ETHUSDPERP-USDT     | | BTC/USD-PERP             | BTCUSDPERP-USDT                |
+| LDO/USD-PERP          | LDOUSDTPERP-USDT    | | BTCUSD.PYTH.PERP         | BTCUSDTPYTHPERPTEAMWORK-USDTW  |
+| BTC/USD-PERP          | BTCUSDPERP-USDT     | | ETH/USD-PERP             | ETHUSDPERP-USDT                |
+| INJ/USDT-PERP         | INJUSDTPERP-USDT    | | JUPUSDT.PYTH.PERP        | JUPUSDTPYTHPERPTEAMWORK-USDTW  |
+| SNX/USDT-PERP         | SNXUSDTPERP-USDT    | | INJ/USDT-PERP            | INJUSDTPERP-USDT               |
+|                       |                     | | LDO/USD-PERP             | LDOUSDTPERP-USDT               |
+|                       |                     | | SNX/USDT-PERP            | SNXUSDTPERP-USDT               |
 
 
-
-
-| Vega Trading Pairs | Hummingbot      |
-|--------------------|-----------------|
-| ETH/USD-PERP       | ETHUSD-PERP     |
-| LDO/USD-PERP       | LDOUSD-PERP     |
-| BTC/USD-PERP       | BTCUSD-PERP     |
-| INJ/USDT-PERP      | INJUSDT-PERP    |
-| SNX/USDT-PERP      | SNXUSDT-PERP    |
 
 
 ## Known Issues
 
-When using a public node, there may be instances where the bot attempts to create orders but fails. This failure could be attributed to losing connection with the node. The bot is designed to automatically attempt reconnection. However, if reconnection efforts fail, consider stopping the bot and restarting it.
+??? info "vega_perpetual not ready"
+    ```
+    2024-02-14 09:59:38,522 - 1423 - hummingbot.client.hummingbot_application - INFO - Creating the clock with tick size: 1.0
+    2024-02-14 09:59:38,525 - 1423 - hummingbot.client.hummingbot_application - INFO - start command initiated.
+    2024-02-14 09:59:39,001 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:40,001 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:41,001 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:42,000 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:42,954 - 1423 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+    2024-02-14 09:59:43,001 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:44,000 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:45,001 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:46,000 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:47,000 - 1423 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 09:59:47,671 - 1423 - hummingbot.client.hummingbot_application - INFO - stop command initiated.
+    2024-02-14 09:59:49,273 - 1423 - hummingbot.core.rate_oracle.rate_oracle - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+    2024-02-14 09:59:53,933 - 1423 - hummingbot.client.hummingbot_application - ERROR - MQTT is already stopped!
+    2024-02-14 23:45:21,966 - 684 - hummingbot.client.hummingbot_application - INFO - Creating the clock with tick size: 1.0
+    2024-02-14 23:45:21,969 - 684 - hummingbot.client.hummingbot_application - INFO - start command initiated.
+    2024-02-14 23:45:22,000 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:23,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:24,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:24,159 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - INFO - Network status has changed to NetworkStatus.CONNECTED. Starting networking...
+    2024-02-14 23:45:25,000 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:26,000 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:27,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:28,000 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:29,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:30,000 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:31,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:32,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:33,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:34,001 - 684 - hummingbot.strategy.script_strategy_base - WARNING - vega_perpetual is not ready. Please wait...
+    2024-02-14 23:45:34,460 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - INFO - Connected to Vega Protocol endpoint: https://darling.network/
+    ```
 
-Below is an example of an error message you might receive if the bot loses connection to the node:
+- The first time you start the script the log pane might spam the message shown above, this is normal as the bot is trying to connect to the node. Just give the bot a minute or so as it tries to connect. 
 
-??? info "Sample Error Message"
+
+??? info "Failed to submit buy order"
     ```   
     Traceback (most recent call last):
       File "/home/hummingbot/hummingbot/connector/exchange_py_base.py", line 452, in _create_order
@@ -237,11 +320,44 @@ Below is an example of an error message you might receive if the bot loses conne
     Github Issue Link - [https://github.com/hummingbot/hummingbot/issues/6835](https://github.com/hummingbot/hummingbot/issues/6835)
 
 
-<br>
+- When using a public node, there may be instances where the bot attempts to create orders but fails. This failure could be attributed to losing connection with the node. The bot is designed to automatically attempt reconnection. However, if reconnection efforts fail, consider stopping the bot and restarting it.
+
+??? info "Buy order amount is less than the minimum order size"
+    ```
+    2024-02-14 23:46:21,686 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - WARNING - Buy order amount 0 is lower than the minimum order size 0.001. The order will not be created, increase the amount to be higher than the minimum order size.
+    2024-02-14 23:46:21,690 - 684 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1707925581.0, "order_id": "VGHBBEPUT611596998f17a44a669251c", "order_type": "OrderType.MARKET", "event_name": "MarketOrderFailureEvent", "event_source": "vega_perpetual"}
+    2024-02-14 23:46:21,690 - 684 - hummingbot.strategy.script_strategy_base - INFO - Creating ETHUSDPERP-USDT buy order: price: NaN amount: 0.
+    2024-02-14 23:46:21,690 - 684 - hummingbot.smart_components.executors.position_executor.position_executor - INFO - Placing close order --> Filled amount: 0 | TP Partial execution: 0
+    2024-02-14 23:46:21,692 - 684 - hummingbot.connector.client_order_tracker - INFO - Order VGHBBEPUT611596998f17a44a669251c has failed. Order Update: OrderUpdate(trading_pair='ETHUSDPERP-USDT', update_timestamp=1707925581.0, new_state=<OrderState.FAILED: 6>, client_order_id='VGHBBEPUT611596998f17a44a669251c', exchange_order_id=None, misc_updates=None)
+    2024-02-14 23:46:21,692 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - WARNING - Buy order amount 0 is lower than the minimum order size 0.001. The order will not be created, increase the amount to be higher than the minimum order size.
+    2024-02-14 23:46:21,763 - 684 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1707925581.0, "order_id": "VGHBBEPUT61159699976cc44a669251c", "order_type": "OrderType.MARKET", "event_name": "MarketOrderFailureEvent", "event_source": "vega_perpetual"}
+    2024-02-14 23:46:21,764 - 684 - hummingbot.strategy.script_strategy_base - INFO - Creating ETHUSDPERP-USDT buy order: price: NaN amount: 0.
+    2024-02-14 23:46:21,764 - 684 - hummingbot.smart_components.executors.position_executor.position_executor - INFO - Placing close order --> Filled amount: 0 | TP Partial execution: 0
+    2024-02-14 23:46:21,766 - 684 - hummingbot.connector.client_order_tracker - INFO - Order VGHBBEPUT61159699976cc44a669251c has failed. Order Update: OrderUpdate(trading_pair='ETHUSDPERP-USDT', update_timestamp=1707925581.0, new_state=<OrderState.FAILED: 6>, client_order_id='VGHBBEPUT61159699976cc44a669251c', exchange_order_id=None, misc_updates=None)
+    2024-02-14 23:46:21,766 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - WARNING - Buy order amount 0 is lower than the minimum order size 0.001. The order will not be created, increase the amount to be higher than the minimum order size.
+    2024-02-14 23:46:21,771 - 684 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1707925581.0, "order_id": "VGHBBEPUT61159699a97aa44a669251c", "order_type": "OrderType.MARKET", "event_name": "MarketOrderFailureEvent", "event_source": "vega_perpetual"}
+    2024-02-14 23:46:21,771 - 684 - hummingbot.strategy.script_strategy_base - INFO - Creating ETHUSDPERP-USDT buy order: price: NaN amount: 0.
+    2024-02-14 23:46:21,772 - 684 - hummingbot.smart_components.executors.position_executor.position_executor - INFO - Placing close order --> Filled amount: 0 | TP Partial execution: 0
+    2024-02-14 23:46:21,773 - 684 - hummingbot.connector.client_order_tracker - INFO - Order VGHBBEPUT61159699a97aa44a669251c has failed. Order Update: OrderUpdate(trading_pair='ETHUSDPERP-USDT', update_timestamp=1707925581.0, new_state=<OrderState.FAILED: 6>, client_order_id='VGHBBEPUT61159699a97aa44a669251c', exchange_order_id=None, misc_updates=None)
+    2024-02-14 23:46:21,806 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - WARNING - Buy order amount 0 is lower than the minimum order size 0.001. The order will not be created, increase the amount to be higher than the minimum order size.
+    2024-02-14 23:46:21,813 - 684 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1707925581.0, "order_id": "VGHBBEPUT61159699ab4c344a669251c", "order_type": "OrderType.MARKET", "event_name": "MarketOrderFailureEvent", "event_source": "vega_perpetual"}
+    2024-02-14 23:46:21,814 - 684 - hummingbot.strategy.script_strategy_base - INFO - Creating ETHUSDPERP-USDT buy order: price: NaN amount: 0.
+    2024-02-14 23:46:21,814 - 684 - hummingbot.smart_components.executors.position_executor.position_executor - INFO - Placing close order --> Filled amount: 0 | TP Partial execution: 0
+    2024-02-14 23:46:21,816 - 684 - hummingbot.connector.client_order_tracker - INFO - Order VGHBBEPUT61159699ab4c344a669251c has failed. Order Update: OrderUpdate(trading_pair='ETHUSDPERP-USDT', update_timestamp=1707925581.0, new_state=<OrderState.FAILED: 6>, client_order_id='VGHBBEPUT61159699ab4c344a669251c', exchange_order_id=None, misc_updates=None)
+    2024-02-14 23:46:21,817 - 684 - hummingbot.connector.derivative.vega_perpetual.vega_perpetual_derivative.VegaPerpetualDerivative - WARNING - Buy order amount 0 is lower than the minimum order size 0.001. The order will not be created, increase the amount to be higher than the minimum order size.
+    2024-02-14 23:46:21,862 - 684 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1707925581.0, "order_id": "VGHBBEPUT61159699b5bdf44a669251c", "order_type": "OrderType.MARKET", "event_name": "MarketOrderFailureEvent", "event_source": "vega_perpetual"}
+    2024-02-14 23:46:21,862 - 684 - hummingbot.strategy.script_strategy_base - INFO - Creating ETHUSDPERP-USDT buy order: price: NaN amount: 0.
+    2024-02-14 23:46:21,863 - 684 - hummingbot.smart_components.executors.position_executor.position_executor - INFO - Placing close order --> Filled amount: 0 | TP Partial execution: 0
+    ```
+
+- This is a known issue where the bot tries to close the position but is unable to capture the order amount - there should be a fix implemented soon. 
+
+
+---
 
 **[Placeholder for additional Vega info]**
 
-<br>
+---
 
 ## Additional Resources
 
