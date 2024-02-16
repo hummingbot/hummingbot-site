@@ -27,9 +27,9 @@ In the future, we plan to organize hackathons and other events that mobilize the
 
 ## New Botcamp Cohorts
 
-Botcamp is a professional training program designed specifically for algo traders and market makers. Through structured courses and intensive cohorts, participants how to design and develop sophisticated algorithmic trading and market-making strategies from the ground up using Hummingbot.
+Botcamp is a professional training program designed specifically for algo traders and market makers. Through structured courses and intensive cohorts, participants learn how to design and develop sophisticated algorithmic trading and market-making strategies from the ground up using Hummingbot.
 
- While we experimented with subscriptions, we believe that the original cohort-based model that we used for five Botcamp cohorts offers more value to students, so all current Botcamp subscribers will have **lifetime access** to their course content.
+While we experimented with subscriptions, we believe that the original cohort-based model that we used for five Botcamp cohorts offers more value to students, so all current Botcamp subscribers will have **lifetime access** to their course content.
 
 We are making this change because our experience is that intensive cohorts along with 1:1 mentorship deliver successful outcomes for students. Starting in April, we will resume Botcamp cohorts, 5-week intensive bootcamps that teach students how to design and code a custom algo trading strategy. To improve the student experience, we have launched a new website for Botcamp, which should be its permanent home:
 
@@ -38,7 +38,7 @@ We are making this change because our experience is that intensive cohorts along
 
 ## The Growing Hummingbot Ecosystem
 
-Since the codebase was initially open sourced in 2019, Hummingbot’s goal has always to build a high-quality, well-maintained open source ecosystem that lets the community contribute modular components like connectors and strategies.
+Since the codebase was initially open sourced in 2019, Hummingbot’s goal has always been to build a high-quality, well-maintained open source ecosystem that lets the community contribute modular components like connectors and strategies.
 
 In addition to Hummingbot Foundation and Botcamp, the Hummingbot ecosystem is comprised of a decentralized constellation of entities large and small:
 
