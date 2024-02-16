@@ -1,41 +1,45 @@
 ## What are Connectors?
 
-Hummingbot connectors standardize trading logic and order types across different types of exchanges and blockchain networks. Each connector's code is contained in modularized folders in the Hummingbot and/or Gateway codebases.
+Connectors are packages of code that link Hummingbot's internal trading engine with real-time and historical data from different cryptocurrency exchanges and blockchains, via WebSocket and/or REST API. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book and blockchain data, as well as sending and cancelling transactions and orders.
 
-### Connector Types
+Connectors allow users to create [Strategies](/strategies) and [Scripts](/scripts) that can operate on different exchanges and blockchains without modification.
+
+## Supported Exchanges and Blockchains
+
+Hummingbot maintains connectors to the following types of platforms:
 
 * [**CEX**](/cex-connectors/): Centralized exchanges take custody of user assets, i.e. Binance, Gate.io, Kucoin, etc.
 * [**DEX**](/dex-connectors/): Decentralized exchanges are platforms in which user assets are stored non-custodially in smart contracts, i.e. Uniswap, dYdX, PancakeSwap, etc.
 * [**Chain**](/chains/): L1/L2 blockchain networks such as Ethereum, Polygon, Arbitrum, etc.
 
+Quarterly [Polls](/governance/polls) allow the Hummingbot community to rank the supported CEXs, DEXs and Chains in the codebase. This process allocates HBOT tokens toward connector maintenance, which are listed in the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing). The Foundation uses these allocations to assign developer [Bounties](/bounties) to address Github issues reported by users.
+
+Polls also decide which connectors should be included in the codebase for the next quarterly [Epoch](/goverance/epochs).
+
+## Connector Standards
+
+Currently, Hummingbot supports three connector standards, each which define how the code encapsulated in a connector folder should offer standardized API endpoints and hook into the Hummingbot client.
+
+* `spot`: WebSocket-based connectors to spot order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/exchange`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder.
+
+* `perp`: WebSocket-based connectors to perpetual futures order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/derivative`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative) folder. By convention, these connector names end in `_perpetual`.
+
+* `gateway`: REST-based Connectors to blockchain networks and their automated market maker (AMM) and CLOB DEXs, intermediated by the [Gateway](/gateway) middleware.  Each Gateway connector is a folder in the Gateway repository, either in [connectors](https://github.com/hummingbot/gateway/tree/main/src/connectors) or [chains](https://github.com/hummingbot/gateway/tree/main/src/chains).
+
 ## Connector Maintenance
 
-Exchange connectors may have a maintainer who is responsible for ongoing maintenance: fixing bugs, addressing user issues, and keeping up with exchange API and Hummingbot connector standard updates. Specifically, maintainer responsibilities include:
+Connectors requires ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as wel as improvements to the Hummingbot connector standard.
 
-* Addressing user Github issues and pull requests related to the connector
-* Keeping the connector updated for changes to the exchange API and Hummingbot connector standard for that exchange type
-* Keeping the connector's documentation page updated
+Hummingbot Foundation maintains each reference connector standard and utilizes a community-based maintenance process. We assign [Bounties](/bounties) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
 
-Hummingbot Foundation is the maintainer for the Gold and Silver connectors, while community members may maintain other connectors. For instance, [CoinAlpha](https://coinalpha.com) maintains a number of Bronze connectors in the codebase. Individual developers and exchanges may register with us to be assigned the maintainer role for other Bronze connectors.
+## Building and Contributing Connectors
 
-## Connector Tiers
+For developers building and contributing connectors, see the pages below for each connector standard:
 
-Quarterly [Polls](/governance/polls) allow the Hummingbot community to vote using HBOT tokens to rank the connectors for each type into **Gold, Silver, and Bronze tiers**. This decides which connectors should be included in the codebase for the next quarter, and whether they are maintained by Hummingbot Foundation.
+* [Building Spot Connectors](/developers/connectors/spot-connector-checklist)
+* [Building Perp Connectors](/developers/connectors/perp-connector-checklist)
+* [Building Gateway Connectors](/gateway/adding-dex-connectors)
 
-### Gold
+Developers may submit connectors for inclusion into the Hummingbot codebase via a [New Connector Proposal](/governance/proposals) that contains the link to a valid Github pull request. If the proposal is approved by HBOT holders, Hummingbot Foundation will review and merge the pull request into the codebase.
 
-The Gold connector is the top vote-getting connector in the Poll. This connector is maintained by Hummingbot Foundation and are continually improved, serving as the "gold standard" template for all other connectors of that type.
-
-### Silver
-
-The next three vote-getting connectors form the Silver tier. These connectors are maintained by Hummingbot Foundation via community developer bounties, tracking improvements made to the Gold connectors.
-
-### Bronze
-
-Bronze connectors are those which have received votes that exceed the Connector Inclusion Threshold (currently 100,000 HBOT Tokens) in the prior quarter's Poll. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
-
-## Contributing Connectors
-
-Developers may submit connectors via a [New Connector Proposals](/governance/proposals) that contains the link to the pull request. If the proposal is approved, Hummingbot Foundation will review and merge the pull request into the codebase.
-
-See [Contribution Guidelines](/developers/contributions/) for the process to get pull requests merged into the codebase.
+See [Contribution Guidelines](/developers/contributions/) for the process to get connectors and other pull requests merged into the codebase.

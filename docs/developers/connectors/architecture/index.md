@@ -1,13 +1,13 @@
-# Connector Architecture
+!!! note
+    The information below are for developers building `spot` and `perpetual` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+
+Here is the high-level design of a connector:
 
 [![Connector Architecture Diagram](/assets/img/connector-architecture-diagram.svg)](/assets/img/connector-architecture-diagram.svg)
 
-The **_Architecture Diagram_**, given above, depicts the high-level design of a Connector. 
+Note that for Derivative (`perp`) connectors, we have a multiple inheritance to `ExchangeBase` and `PerpetualTrading`.
 
-!!! tip
-    Notice that for `Derivative` connectors, we have a multiple inheritance to `ExchangeBase` and `PerpetualTrading`.
-
-## Connector Component Overview
+## Component Overview
 
 [![Connector Architecture Diagram](/assets/img/high-level-connector-architecture-diagram.svg)](/assets/img/high-level-connector-architecture-diagram.svg)
 
@@ -16,7 +16,7 @@ Below are the detailed descriptions of tasks for each component and its correspo
 
 ### Exchange/Derivative.py
 
-**File:** `*_exchange/derivative.py` — REQUIRED
+**File:** `*_exchange/derivative.py` — **REQUIRED**
 
 Connector modules are centered around an `Exchange/Derivative` class, which are ultimately children of [`ConnectorBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/connector_base.pyx).
 Each `Exchange/Derivative` class contains an `OrderBookTracker` and `UserStreamTracker,` and they are responsible for maintaining order books and user account information.
@@ -29,7 +29,7 @@ See the [`PerpetualTrading`](https://github.com/hummingbot/hummingbot/blob/maste
 
 ### ConnectorAuth.py
 
-**File:** `*_auth.py` — OPTIONAL
+**File:** `*_auth.py` — *OPTIONAL*
 
 This class generates the appropriate authentication headers for the restricted REST endpoints to be used by the `Exchange/Derivative` and `UserStreamTrackerDataSource` classes.
 Generally, this would mean constructing the appropriate HTTP headers and authentication payload(as specified by the exchange's API documentation)
@@ -51,7 +51,7 @@ Depending on the specific exchange, different information may be needed for auth
 
 ### OrderBookTracker
 
-**File:** `*_order_book_tracker.py` — REQUIRED
+**File:** `*_order_book_tracker.py` — **REQUIRED**
 
 Each `Exchange/Derivative` class contains an `OrderBookTracker` to maintain a real-time order book of one/multiple trading pairs and is responsible for applying the order book snapshots and diff messages to the corresponding `OrderBook`.
 
@@ -61,7 +61,7 @@ Each `Exchange/Derivative` class contains an `OrderBookTracker` to maintain a re
 
 ### UserStreamTracker
 
-**File:** `*_user_stream_tracker.py` — OPTIONAL
+**File:** `*_user_stream_tracker.py` — *OPTIONAL*
 
 Each `Exchange/Derivative` class contains a `UserStreamTracker`, to maintain the current state of the user's account, orders and positions.
 
@@ -70,7 +70,7 @@ Each `Exchange/Derivative` class contains a `UserStreamTracker`, to maintain the
 
 ### OrderBookTrackerDataSource
 
-**File:** `*_order_book_data_source.py` — REQUIRED
+**File:** `*_order_book_data_source.py` — **REQUIRED**
 
 The `OrderBookTrackerDataSource` class is responsible for order book data retrieval. It simply collects, parses, and queues the data stream to be processed by `OrderBookTracker`. Generally, this would mean pulling data from the exchange's API/WebSocket servers. For **Perpetual** connectors, the `OrderBookTrackerDataSource` is also tasked with maintaining the funding information of the active market.
 
@@ -86,7 +86,7 @@ It is necessary to track the timestamp/nonce of each message received from the e
 
 ### UserStreamTrackerDataSource
 
-**File:** `*_user_stream_data_source.py` — OPTIONAL
+**File:** `*_user_stream_data_source.py` — *OPTIONAL*
 
 The `UserStreamTrackerDataSource` class deals with user data retrieval. It simply collects, parses and queues the data stream to be processed by `UserStreamTracker`.
 
@@ -109,24 +109,32 @@ An instance of `ClientOrderTracker` holds and manages `InFlightOrders` by callin
 Provides utilities for connectors to update in-flight orders and to handle order errors.
 
 
-
-For more details on how to begin implementing the components, please refer to the [Connector Tutorial](/developers/contributions/)
-
-## Protocol Connector Components Overview\ [TBD\]
-
-Coming soon.
-
 ## Fee Accounting
+
 The `BudgetChecker` uses the information from a `TradeFeeSchema` to generate a specific instance of `TradeFeeBase` that is then applied to an `OrderCandidate` in order to asses the order's effects on account balances.
 
 ### TradeFee
 
 The `TradeFee` object contains the necessary information to account for fees when estimating an order's impact on account balances.
 
-#### TradeFeeSchema
+**Example: `TradeFee`**
+```python
+from hummingbot.client.settings import AllConnectorSettings
+
+trade_fee_schema = AllConnectorSettings.get_connector_settings()[exchange].trade_fee_schema
+
+percent = trade_fee_schema.maker_percent_fee_decimal if is_maker else trade_fee_schema.taker_percent_fee_decimal
+fixed_fees = trade_fee_schema.maker_fixed_fees if is_maker else trade_fee_schema.taker_fixed_fees
+
+trade_fee = AddedToCostTradeFee(percent, trade_fee_schema.percent_fee_token, fixed_fees)
+```
+
+### TradeFeeSchema
 
 Contains the necessary information to build the `TradeFee` object.
+
 For both makers and takers specifies percent and fixed fees, and tokens in which the fees are paid.
+
 Exchanges must specify their respective default schemas inside their `[exchange]_utils.py` files:
 ```python
 DEFAULT_FEES = TradeFeeSchema(
@@ -143,26 +151,7 @@ DEFAULT_FEES = TradeFeeSchema(
 - `taker_fixed_fees: List`
 
 
-#### TradeFeeBase
-
-A specific instance of the `TradeFeeBase` class defines the fees to be applied to an order - their types, amounts and assets.
-
-- `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
-- `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
-- `get_fee_impact_on_order_returns()`: returns order returns for a particular position closing `OrderCandidate` with fees accounted for
-
-#### AddedToCostTradeFee
-
-Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
-Fees of this class are applied on top of the cost of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90.9 USDT and added 10 COINX — this is most exchanges' approach to fees).
-
-#### DeductedFromReturnsTradeFee
-
-Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
-Fees of this class are deducted from the returns of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90 USDT and added 9.9 COINX — this is Binance's approach to fees).
-
-#### Example - `TradeFeeSchema`
-
+**Example: `TradeFeeSchema`**
 ```python
 trade_fee_schema = TradeFeeSchema(
     maker_percent_fee_decimal=Decimal("1.0"),
@@ -170,16 +159,24 @@ trade_fee_schema = TradeFeeSchema(
 )
 ```
 
-#### Example - `TradeFee`
+### TradeFeeBase
 
-```python
-from hummingbot.client.settings import AllConnectorSettings
+A specific instance of the `TradeFeeBase` class defines the fees to be applied to an order - their types, amounts and assets.
 
-trade_fee_schema = AllConnectorSettings.get_connector_settings()[exchange].trade_fee_schema
+- `fee_amount_in_quote()`: calculates a total fee in quote asset units as a combination of a percentage fee and fixed fees
+- `get_fee_impact_on_order_cost()`: returns order cost for a particular position opening `OrderCandidate` with fees accounted for
+- `get_fee_impact_on_order_returns()`: returns order returns for a particular position closing `OrderCandidate` with fees accounted for
 
-percent = trade_fee_schema.maker_percent_fee_decimal if is_maker else trade_fee_schema.taker_percent_fee_decimal
-fixed_fees = trade_fee_schema.maker_fixed_fees if is_maker else trade_fee_schema.taker_fixed_fees
+### AddedToCostTradeFee
 
-trade_fee = AddedToCostTradeFee(percent, trade_fee_schema.percent_fee_token, fixed_fees)
-```
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
+
+Fees of this class are applied on top of the cost of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90.9 USDT and added 10 COINX — this is most exchanges' approach to fees).
+
+### DeductedFromReturnsTradeFee
+
+Extends `TradeFeeBase`, implements `get_fee_impact_on_order_cost()`, `get_fee_impact_on_order_returns()`.
+
+Fees of this class are deducted from the returns of a buy order (e.g. a buy order of 10 COINX at 9 USDT with a fee of 1% means that the user's account will be deducted 90 USDT and added 9.9 COINX — this is Binance's approach to fees).
+
 

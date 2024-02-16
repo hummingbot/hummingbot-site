@@ -124,7 +124,7 @@ Here are the Core Strategies nominees for Epoch 5:
 - [Pure Market Making](https://hummingbot.org/strategies/pure-market-making/) (Epoch 4 Core)
 - [Spot Perpetual Arbitrage](https://hummingbot.org/strategies/spot-perpetual-arbitrage/)
 - [TWAP](https://hummingbot.org/strategies/twap/)
-- [Uniswap-V3-LP](https://hummingbot.org/strategies/uniswap-v3-lp/)
+- [AMM-V3 LP](https://hummingbot.org/strategies/amm-v3-lp/)
 
 ---
 

@@ -5,15 +5,11 @@
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
-- **Maintainer**: Hummingbot Foundation
 
-Currently, Kucoin is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
-
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | Supports `MARKET` order type
+| [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ | 
 

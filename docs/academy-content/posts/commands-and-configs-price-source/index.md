@@ -15,7 +15,7 @@ tags:
 
 Welcome back to the series of articles where you will learn how to make the best use of your Hummingbot configurations.
 
-In the two latest articles ([Part 1](../commands-and-configs-part-1/) and [Part 2](../commands-and-configs-part-2/)), we went through all the commands you can use on your client terminal and the global configurations.
+In the two latest articles ([Part 1](../commands-and-configs-part-1/index.md) and [Part 2](../commands-and-configs-part-2/index.md)), we went through all the commands you can use on your client terminal and the global configurations.
 
 Today we will talk about the configuration settings related to the markets and the price information, and how you can use them for your benefit.
 

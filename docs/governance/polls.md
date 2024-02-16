@@ -1,43 +1,53 @@
-The Hummingbot open source codebase contains [connectors](../exchanges/index.md) to various CEXs, DEXs and blockchain networks where users can execute automated trading strategies. The connected exchanges and networks are constantly changing and upgrading. In order to accommodate API changes, new product and order types, and other changes, each connector requires ongoing maintenance and engineering work.
+The Hummingbot open source codebase contains [Connectors](../exchanges/index.md) to various CEXs, DEXs and blockchain networks where users can execute automated trading strategies. The connected exchanges and networks are constantly changing and upgrading. 
 
-Polls allow HBOT holders decide how maintenance bandwidth and development bounties are allocated toward the connectors in the codebase.
+Each connector in the codebase requires ongoing maintenance, documentation and testing. The Foundation regularly reviews both new and existing connectors for security issues and breaking changes to ensure that they do not cause issues for other users. Without a way to maintain a high level of connector quality, the Hummingbot codebase may descend into an unusable spaghetti codebase.
 
-## Poll Types
+Therefore, Polls allow HBOT holders to allocate maintenance bandwidth in the form of HBOT bounties toward the connectors in the codebase, as well as decide which connectors should be included going forward.
 
-Each quarterly [epoch](epochs.md), HBOT voters vote on three types of Polls:
+!!! note
+    Prior to [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738), polls ranked connectors into Gold, Silver, and Bronze tiers. Afterwards, Polls allocate HBOT bounties among the connectors based on their pro-rata voting share, subject tor with a maximum allocation cap.
 
-* [CEX Connectors](../cex-connectors/index.md): Centralized exchanges like Binance, Gate.io, Kucoin, etc.
+## Current Poll Parameters
+
+| Parameter                                       | Value              |
+|-------------------------------------------------|--------------------|
+| Connector Polls per Epoch                       | 3 (CEX, DEX, Chain)|
+| Bounty Allocation per Poll                      | 1,000,000 HBOT     |
+| Connectors Receiving Allocation                 | 4                  |
+| Bounty Allocation Cap                           | 800,000 HBOT       |
+| Connector Inclusion Threshold                   | 200,000 HBOT       |
+
+
+### Connector Polls per Epoch
+
+Each quarterly [epoch](epochs.md), HBOT voters vote on **three (3)** types of Polls:
+
+* [CEX Connectors](../cex-connectors/index.md): Centralized exchanges like Binance, Kucoin, etc
 * [DEX Connectors](../dex-connectors/index.md): Decentralized exchanges like dYdX, Uniswap, etc
-* [Chain Connectors](../chains/index.md): L1 and L2 blockchain networks such as Ethereum, Polygon, Arbitrum, etc.
+* [Chain Connectors](../chains/index.md): Layer 1 blockchains such as Ethereum, BNB Chain, etc
 
-## What Polls Decide
+### Bounty Allocation per Poll
 
-Each Connector Poll decides for the upcoming each epoch:
+Polls allocate a fixed pool of **1,000,000 HBOT** among the top exchanges for each Poll based on their pro-rata voting share. This per-exchange amount would be a public HBOT maintenance bounty allocation which the Foundation uses to fund bounties assigned to community developers for bug fixes and upgrades related to that exchange's Hummingbot connectors. 
 
-### Reference Connector
+### Connectors Receiving Allocation
 
-The #1 vote-getting connector is **Gold**, which serves as the reference template for all other connectors of that type for architectural improvements. The Foundation maintains for this connector and attempts improve them by keeping up with exchange/chain upgrades and adding new functionalities.
+For each poll, the top **four (4)** exchanges, ranked by number of HBOT votes, receive bounty allocations, based on their pro-rata voting share.
 
-### Bounties Budget
+### Bounty Allocation Cap
 
-The #2, #3, and #4 vote-getting choices are the **Silver** connectors, which along with Gold connectors are allocated bounties that incentivize community members to fix bugs and create content for them.
+The maximum allocation per exchange or chain is **800,000 HBOT**. 
 
-Each epoch, the Foundation allocates a quarterly Bounties Budget to Gold and Silver connectors to fund maintenance and improvements. 400K HBOT are allocated to each Gold connector, and 100K HBOT is allocated to each Silver connector. Bug bounties and Improvement Proposals for these connectors draw upon this budget. If a connector's Bounties Budget is not fully used during the epoch, it does not carry over to the following epoch.
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
-Unit tests for Gold and Silver connectors are run with each merge, which ensures that the connectors work. In addition, the Foundation by running long-term testing bots for their connectors and providing HBOT rewards to users who answer community questions related to them.
+### Connector Inclusion Threshold
 
-### Inclusion Threshold
-
-Each connector in the codebase requires ongoing maintenance, documentation and testing. The Foundation regularly reviews new and existing connectors for security issues and breaking changes to ensure that they do not cause issues for other users. Without a way to maintain a high level of connector quality, the Hummingbot codebase may descend into an unusable spaghetti codebase.
-
-In each Poll, a connector needs to garner a minimum amount of HBOT voting power to meet the **Connector Inclusion Threshold**. Otherwise, the connector will be removed from the codebase in the following monhthly release.
-
-Currently, the Connector Inclusion Threshold is **200,000 HBOT**.
+In each Poll, a connector needs to receive at least **200,000 HBOT** in aggregate votes. Otherwise, the exchange's connectors will be removed from the Hummingbot codebase in the following monthly release.
 
 ## Polls Process
 
 During the first week of each quarter, the Foundation will create Hummingbot Governance Proposals in the [HBOT Snapshot sub-space](https://snapshot.org/#/hbot.eth) for each poll.
 
-Each poll lasts for 7 days, and any Ethereum wallet holding HBOT tokens at poll creation may vote. 1 HBOT token equals 1 vote.
+Each poll lasts for 14 days, and any Ethereum wallet holding HBOT tokens at poll creation may vote. 1 HBOT token equals 1 vote.
 
 Afterwards, the Foundation will implement the approved changes in the subsequent monthly release.

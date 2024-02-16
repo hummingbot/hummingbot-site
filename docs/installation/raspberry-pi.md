@@ -22,13 +22,13 @@ Update the repository and install important dependencies:
 ```
 sudo apt update
 sudo apt upgrade -y
-sudo apt-get install build-essential libssl-dev libffi-dev gcc python3-dev python-dev python3.7 -y
+sudo apt-get install build-essential libssl-dev libffi-dev gcc python3-dev -y
 ```
 
 Install Miniforge:
 ```
-wget https://github.com/conda-forge/miniforge/releases/download/4.11.0-4/Miniforge3-4.11.0-4-Linux-aarch64.sh
-sh Miniforge3-4.11.0-4-Linux-aarch64.sh
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
+sh Miniforge3-Linux-aarch64.sh
 ```
 
 Restart the terminal:
@@ -55,7 +55,7 @@ cd hummingbot
 ```
 
 !!! note
-    If you are using Ubuntu 22.04 you'll need to go into the `./setup` folder first and edit the `environment-linux-aarch64.yml` file and change "cryptography==2.8" to "cryptography==3.1.1" before running the `./install` command otherwise you'll get an error "could not build wheels for cryptography"
+    If you are using Ubuntu 22.04 you'll need to go into the `./setup` folder first and edit the `environment.yml` file and change "cryptography==2.8" to "cryptography==3.1.1" before running the `./install` command otherwise you'll get an error "could not build wheels for cryptography"
 
 Run the `install` command:
 ```

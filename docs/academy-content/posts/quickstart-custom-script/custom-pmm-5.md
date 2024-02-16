@@ -8,7 +8,7 @@ tags:
 
 # Creating a Custom Market Making Strategy - Part 5
 
-**Code:** <https://gist.github.com/cardosofede/4be977ad21a68de0b117387652b85626>
+**Code:** <https://gist.github.com/david-hummingbot/f9332923faac2fb5485eb7a80eb0d08d>
 
 **Video:**
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/FlILjY8T8Fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ import pandas_ta as ta  # noqa: F401
 from hummingbot.core.data_type.common import OrderType, PriceType, TradeType
 from hummingbot.core.data_type.order_candidate import OrderCandidate
 from hummingbot.core.event.events import OrderFilledEvent
-from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
+from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory, CandlesConfig
 from hummingbot.strategy.script_strategy_base import ScriptStrategyBase
 
 class QuickstartScript2(ScriptStrategyBase):
@@ -59,14 +59,17 @@ class QuickstartScript2(ScriptStrategyBase):
     price_ceiling = 1700
     price_floor = 1600
 
-    eth_1m_candles = CandlesFactory.get_candle(connector="binance",
-                                               trading_pair="ETH-USDT",
-                                               interval="1m")
+    candles_config = CandlesConfig(connector="binance",
+                                    trading_pair="ETH-USDT",
+                                    interval="1m",
+                                    max_records=500)
+
+    eth_1m_candles = CandlesFactory.get_candle(candles_config)
 
     markets = {exchange: {trading_pair}}
 ```
 
-- We import the `CandlesFactory` class and call the `get_candle` method to create a candle instance in the variable `eth_1m_candles`.
+- We import the `CandlesFactory` & `CandlesConfig` class and call the `get_candle` method to create a candle instance in the variable `eth_1m_candles`.
 - Note that we are importing `pandas_ta`, a library that we will use to generate technical indicators from the candle data.
 - While we still define initial values for `price_ceiling` and `price_floor`, we will override them later in the `on_tick` method.
 

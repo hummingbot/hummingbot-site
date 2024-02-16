@@ -2,10 +2,6 @@
 
 - **Exchange Type**: Decentralized Exchange (DEX)
 - **Market Type**: Automatic Market Maker (AMM)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
-- **Maintainer:** Hummingbot Foundation
-
-Currently, Uniswap is a **Gold** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below and continually improves them to add more functionality. Gold connectors serve as the "gold standard" template for all other connectors of that type.
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
