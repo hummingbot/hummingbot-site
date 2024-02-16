@@ -62,7 +62,9 @@ As mentioned above, [Botcamp](https://www.botcamp.xyz) is an education company t
 
 ### Miner and CoinAlpha
 
-[Miner](https://miner.hummingbot.io) is a liquidity mining platform where Hummingbot users can earn rewards by running market making strategies. It is run by [CoinAlpha](https://coinalpha.com), the company that originally created Hummingbot. In addition to operating Miner, CoinAlpha provides bespoke liquidity solutions and services fir clients using tailored versions of Hummingbot.
+[Miner](https://miner.hummingbot.io) is a liquidity mining platform where Hummingbot users can earn rewards by running market making strategies. It is run by [CoinAlpha](https://coinalpha.com), the company that originally created Hummingbot. 
+
+In addition to operating Miner, CoinAlpha provides bespoke liquidity solutions and services for top exchanges and token issuers on top of Hummingbot.
 
 ### Enflux
 
