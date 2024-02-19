@@ -26,7 +26,7 @@ This guide is designed to walk users through the process of utilizing **Hummingb
 
 The Hyperliquidity Provider (HLP) vault, operated by Hyperliquid, runs market-making strategies on each trading pair. Anyone can provide liquidity for HLP and share in the P&L of the vault. HLP doesn’t collect any fees directly, and its P&L is shared proportionally based on each depositor’s share of the vault. HLP is community-owned.
 
-The minimum deposit to create a vault is 100 USDC with a locked period of four days.
+The minimum deposit to create a vault is 100 USDC.
 
 ## How Vaults Work
 
@@ -142,6 +142,6 @@ Users just need to go to the [Vault](https://app.hyperliquid.xyz/vaults) page an
 
 [![HLP](hlp.png)](hlp.png)
 
-Click deposit and specify an amount. Afterwards, funds will be deducted from your trading account and into vault. Note that each vault may have different lockup periods.
+Click "Deposit" and specify an amount. Afterwards, funds will be deducted from your trading account and transferred into the vault. There is a 24-hour lockup period for  deposits on user vaults and 4 days for HLP vaults.
 
 Afterwards, you will share in the performance of the vault. Check the **Vault Performance** and **Your Performance** tabs for details.
