@@ -36,42 +36,58 @@ Ensure the security of your wallet by keeping a copy of the mnemonic seed in a s
 Now, let's get you registered on Polkadex:
 
 - Visit [https://orderbook.polkadex.trade](https://orderbook.polkadex.trade/)
-- Create an account by providing the necessary details.
+- Create an account by connecting to your Polkadex JS wallet
 
 ![](image3.png)
 
+![](image3a.png)
+
+![](!image3b.png)
+
 ## Register Your Funding Account
 
-Your Polkadex extension accounts will serve as your funding accounts. Here's how to set it up:
+Your Polkadex extension accounts will serve as your funding accounts. To start you have to deposit a minimum of 2 PDEX, here's how to set it up:
 
-- Select your preferred account on the Polkadex extension.
+![](image4.png)
 
-  ![](image4.png)
+- The exchange will provide you a link to [Kucoin](https://www.kucoin.com/trade/PDEX-USDT) where you can transfer PDEX to your Polkadex wallet address
 
-  ![](image5.png)
+![](image4a.png)
 
-- Your accounts will be visible on the Polkadex exchange. Click "Use in Orderbook" for the account you wish to select.
+- After successfully transferred PDEX to your funding account, you would need to create a trading account for the exchange
+- There are two recommended by Polkadex, on this guide we will be using the browser
+- When creating trading account, you will be prompted to enter the funding account password
+
+![](image4b.png)
+
+![](image4c.png)
+
+![](image4d.png)
+
+You have to make sure you have copied the mnemonic password since it will be needed later when importing trading account or connecting to hummingbot client
 
 ## Import Your Trading Account
 
-Let's generate your trading account seed:
+![](image5.png)
 
-- Visit [https://orderbook-internal.polkadex.trade/](https://orderbook-internal.polkadex.trade/)
-- Create a new trading account, select the funding account, and provide a name.
+Another way to add your trading account is by importing to the funding account. To do this you have to select from:
 
-  ![](image6.png)
-
-- Once created, you'll receive a mnemonic passphrase. Go back to [orderbook.polkadex.trade](https://orderbook.polkadex.trade/), import the account using the mnemonic phrase.
-
-  ![](image7.png)
-
+- Google Drive
+- Import from my PC, then using a exported json file 
+- Import with Mnemonic passphrase
 
 ## Add Balances and Start Trading
 
 You're almost there! Now, let's add some balances:
 
+![](image6.png)
+
 - Navigate to the "Balances" tab on [orderbook.polkadex.trade](https://orderbook.polkadex.trade/)
-- Deposit your preferred tokens and get started with Hummingbot!
+- Go to "Transfer" and select a token from your funding account to trading account
+
+![](image7.png)
+
+- Once successfully transferred, go back to "Balance" tab to confirm
 
 
 
