@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-**Hyperliquid** is a cutting-edge trading exchange that has revolutionized the way individuals and automated market makers (AMMs) engage with digital assets. This exchange is renowned for its introduction of Hyperliquid Vaults, a novel concept that allows both individual traders and AMMs to optimize their trading strategies and earn profits from their investments.
+**Hyperliquid** is a cutting-edge trading exchange that has revolutionized the way individuals engage with digital assets. This exchange is renowned for its introduction of Hyperliquid Vaults, a novel concept that allows both individual traders to optimize their trading strategies and earn profits from their investments.
 
 This guide is designed to walk users through the process of utilizing **Hummingbot**, an automated trading bot, to trade on Hyperliquid Vaults, thereby automating their trading activities. By integrating Hummingbot into your trading routine, you can take advantage of its sophisticated algorithms to automate trade execution, manage risk, and potentially increase your profitability without the constant need for manual oversight. Whether you're aiming to optimize your trading strategy or simply wish to diversify your investment approach, this guide will provide you with the necessary steps and insights to effectively use Hummingbot on the Hyperliquid platform.
 
