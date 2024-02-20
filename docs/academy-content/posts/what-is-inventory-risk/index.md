@@ -40,7 +40,7 @@ Here is what we’ll cover in today's article:
 <!-- more -->
 
 
-And as always, you are welcome to join the #trader-chat on our [Discord](https://discord.com/invite/2MN3UWg) to discuss with the community how to improve your market making strategy.
+And as always, you are welcome to join the #trader-chat on our [Discord](https://discord.com/invite/hummingbot) to discuss with the community how to improve your market making strategy.
 
 ### What is Inventory risk?
 

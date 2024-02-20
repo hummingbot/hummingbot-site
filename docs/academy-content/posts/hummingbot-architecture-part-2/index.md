@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-In the last article of this series, we've discussed the design motivations behind Hummingbot, the clock and the market connectors. Today, we'll be discussing the architecture behind trading strategies - the very component that decides Hummingbot trades with your money. We will also discuss how you can diagnose problems and debug Hummingbot in live trading.
+In the last article - [Hummingbot Architecture - Part 1](/academy-content/hummingbot-architecture---part-1/) - of this series, we've discussed the design motivations behind Hummingbot, the clock and the market connectors. Today, we'll be discussing the architecture behind trading strategies - the very component that decides Hummingbot trades with your money. We will also discuss how you can diagnose problems and debug Hummingbot in live trading.
 
 <!-- more -->
 
@@ -78,25 +78,9 @@ When you look into the relevant code for calculating the values of the trailing 
 
 If you want to write your own custom indicators, you can do so by inheriting from ``BaseTrailingIndicator`` just like the above, and writing your own sampling and calculation logic.
 
-### High Performance Backtesting / Hummingbot Pro Preview
-
-If you have looked behind the hood of the `Clock` class in Hummingbot, you'll find that it has two modes: real time and back testing.
-![](./clockmode.png)
-
-We are going to release an enhanced version of Hummingbot, Hummingbot Pro, that allows for high performance back testing with high resolution historical order book data. It gives you the ability to plug in any strategy written for Hummingbot, run historical order book data traces with it, and give you the output on the trading performance for that strategy. It is capable of simulating days of high frequency trading within seconds. It also allows you to test a wide range of parameters with the strategy to search for the optimal parameters for trading.
-
-A big reason for using Cython within Hummingbot is high performance backtesting. While there are other Python open source quant frameworks that allow live trading and backtesting - most of them only work with low resolution data (e.g. daily OHLCV candles) and are not designed with high frequency trading simulations in mind. Having performance-critical code written in Cython allows Hummingbot strategies to be simulated with high-resolution order book data.
-
-Here are some preview images of the kind of output you can get from Hummingbot Pro backtesting simulations.
-
-![](./ofc1.png)
-![](./ofc2.png)
-
-Hummingbot Pro will be a paid service for professional traders and hedge funds. It is coming in Q4 2021.
-
 ## Community and Developer Friendliness
 ![](./pc.jpg)
-Hummingbot is designed from the ground up with developers in mind. Crypto markets are constantly changing. Whether it is the services and APIs offered by exchanges, the participants and the way the markets move - it's constantly in flux. Developer are uniquely suited to take advantage of this kind of environment, because they are able to modify and tune their strategy and connector code as the market evolves.
+Hummingbot is designed from the ground up with developers in mind. Crypto markets are constantly changing. Whether it is the services and APIs offered by exchanges, the participants and the way the markets move - it's constantly in flux. Developers are uniquely suited to take advantage of this kind of environment, because they are able to modify and tune their strategy and connector code as the market evolves.
 
 ### Debug Console
 
@@ -113,20 +97,9 @@ You can read more about the debug console from [Hummingbot documentation](../../
 
 ### Discord Channels
 
-Our Discord server is a good place you can find other Hummingbot developers, who, like you, may be creating their own strategies, indicators and market connectors. We have several developer oriented channels, where you can get community support on how to create your own modifications to Hummingbot.
+Our [Discord server](https://discord.gg/hummingbot) is a good place you can find other Hummingbot developers, who, like you, may be creating their own strategies, indicators and market connectors. We have several developer oriented channels, where you can get community support on how to create your own modifications to Hummingbot.
 ![](./discord.png)
 
 ### Contributing
 
 Finally, if you would like to report issues in Hummingbot, or contribute code - our Github page can be found at [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot).
-
-## Conclusion
-
-Using the Avellaneda & Stoikov market making strategy as an example, we have discussed how Hummingbot strategies work, how strategies observe the markets, and how trailing indicators can be created in Hummingbot.
-
-We then discussed the high performance aspect of Hummingbot and gave a preview for the upcoming Hummingbot Pro service.
-
-Finally, we discussed some tricks you can use to diagnose the behavior of a live Hummingbot instance via the debug console, and how you can get help from the Hummingbot community.
-
-This concludes part 2, and the overall Hummingbot Architecture series. If you have any further questions, feel free to drop by our Discord server at [https://discord.hummingbot.io](https://discord.hummingbot.io/).
-

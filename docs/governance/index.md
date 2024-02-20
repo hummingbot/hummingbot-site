@@ -29,7 +29,7 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 * **Decimals**: 18
 * **Total Supply**: 1,000,000,000
 
-Read about HBOT in the [launch post](/blog/introducing-hbot/).
+Read about HBOT in the [launch post](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md)
 
 ## HBOT Tracker
 

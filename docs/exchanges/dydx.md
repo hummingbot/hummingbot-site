@@ -2,10 +2,6 @@
 
 - **Exchange Type**: Decentralized Exchange (**DEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)
-- **Maintainer:** Hummingbot Foundation
-
-Currently, dYdX is a **Gold** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means that Hummingbot Foundation maintains the components below via [Bounties](/governance/bounties), tracking improvements made to the Gold exchange connectors of that type.
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
@@ -18,7 +14,7 @@ Currently, dYdX is a **Gold** exchange, as voted by HBOT holders in each quarter
 
 - **Website**: <https://dydx.exchange>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dydx/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx_perpetual>
 - **API Docs**: <https://dydxprotocol.github.io/v3-teacher/>
 - **Fees**: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
 - **Supported Countries**: <https://help.dydx.exchange/en/articles/4798063-location-restrictions> 

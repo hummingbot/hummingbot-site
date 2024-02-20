@@ -22,13 +22,13 @@ hide:
 
     ---
 
+    ### [Docker Installation Guide](/academy-content/docker-installation-guide)
+
+    Get started with Hummingbot in 5 minutes
+
     ### [Using Dashboard to Deploy and Backtest Strategies](/academy-content/using-dashboard-to-deploy-and-backtest-strategies/)
 
     Learn how to use the new Dashboard app!
-
-    ### [Liquidity Mining with Hummingbot](/academy-content/liquidity-mining-with-hummingbot/)
-
-    Earn rewards by running bots on the Miner platform.
 
     ### [Creating a Custom Market Making Strategy](/academy-content/creating-a-custom-market-making-strategy/)
 
@@ -163,17 +163,17 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/academy-content/managing-your-bot-performance/cover.webp)](/academy-content/managing-your-bot-performance/)
+-   [![](/academy-content/managing-your-bot-performance/cover.webp)](../academy-content/posts/managing-your-bot-performance/index.md)
 
-    ### [Managing Your Bot Performance](/academy-content/managing-your-bot-performance/)
+    ### [Managing Your Bot Performance](../academy-content/posts/managing-your-bot-performance/index.md)
 
 -   [![](/academy-content/order-management-configurations/cover.webp)](/academy-content/order-management-configurations/)
 
     ### [Order Management Configurations](/academy-content/order-management-configurations/)
 
--   [![](/academy-content/commands-and-configs-price-source/cover.webp)](/academy-content/commands-and-configs-price-source/)
+-   [![](/academy-content/commands-and-configs-price-source/cover.webp)](../academy-content/posts/commands-and-configs-price-source/index.md)
 
-    ### [Commands and Configs - Price Source](/academy-content/commands-and-configs-price-source/)
+    ### [Commands and Configs - Price Source](../academy-content/posts/commands-and-configs-price-source/index.md)
 
 </div>
 

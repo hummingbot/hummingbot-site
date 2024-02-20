@@ -5,14 +5,10 @@
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white)
-- **Maintainer**: None
 
-Currently, Huobi is a **Silver** exchange, as voted by HBOT holders in each quarterly [Epoch](/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
-
-| Component | Status | Notes | 
-| --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ |
+| Component | Status | Connector Version | V2 Strategies | Notes | 
+| --------- | ------ | ----------------- |  ------------ | ----- |
+| [🔀 Spot Connector](#spot-connector) | ✅ | v2.0 | No | market order type not supported |
 | [🔀 Perp Connector](#perp-connector) | Not built |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 

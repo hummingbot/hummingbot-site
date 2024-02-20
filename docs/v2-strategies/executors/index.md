@@ -14,6 +14,35 @@ Currently, there are two examples in the codebase: **PositionExecutor** and **Ar
 
 ## PositionExecutor
 
+Creates a `TripleBarrierConf` to manage an order after it is placed, following the [Triple Barrier Method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html). This class sets pre-defined stop loss, take profit, and trailing stop.
+
+All Configs:
+
+```python
+class TripleBarrierConf(BaseModel):
+    # Configure the parameters for the position
+    stop_loss: Optional[Decimal]
+    take_profit: Optional[Decimal]
+    time_limit: Optional[int]
+    trailing_stop_activation_price_delta: Optional[Decimal]
+    trailing_stop_trailing_delta: Optional[Decimal]
+    # Configure the parameters for the order
+    open_order_type: OrderType = OrderType.LIMIT
+    take_profit_order_type: OrderType = OrderType.MARKET
+    stop_loss_order_type: OrderType = OrderType.MARKET
+    time_limit_order_type: OrderType = OrderType.MARKET
+```
+
+Key Configs:
+
+- `stop_loss`: Determines the stop-loss percentage
+- `take_profit`: Sets the take-profit percentage.
+- `time_limit`:  Establishes a time limit for the trade.
+- `trailing_stop_activation_price_delta`: Specifies the delta for activating a trailing stop.
+- `trailing_stop_trailing_delta`: Sets the trailing delta for the trailing stop.
+
+Example:
+
 ![](./triple_barrier.png)
 
 The [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/13aab912ea297a70e52f560cc7239400a1204aa6/hummingbot/smart_components/executors/position_executor/position_executor.py) class implements the [Triple Barrier Method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html) popularized in Martin Prado's famous book [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086).

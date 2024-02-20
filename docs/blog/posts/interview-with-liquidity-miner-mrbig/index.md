@@ -84,7 +84,7 @@ Don’t be greedy...
 ### Learn More
 
 - [Hummingbot Miner app](https://miners.hummingbot.io)
-- [Active campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns)
+- [Active campaigns](https://miner.hummingbot.io/markets)
 - [Hummingbot Help Center](https://support.hummingbot.io/)
 
 

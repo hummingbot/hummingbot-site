@@ -48,7 +48,7 @@ Market making is the act of simultaneously creating buy and sell orders for an a
 
 Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
 
-See [What is market making?](/blog/what-is-market-making/) for more information.
+See [What is market making?](academy-content/posts/what-is-market-making/index.md) for more information.
 
 ### How does Hummingbot store my private keys and API keys?
 
@@ -85,7 +85,7 @@ If you want to understand how Gateway works, install the standalone Gateway repo
 
 If you just want to get Gateway up and running alongside Hummingbot, following the [Hummingbot + Gateway Docker Compose](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) process is the easiest method.
 
-Afterwards, follow the instructions at [Using Gateway with Hummingbot](/gateway/setup/).
+Afterwards, follow the instructions at [Using Gateway with Hummingbot](gateway/setup.md).
 
 ### What kinds of DEX bots can you building with Gateway?
 
@@ -144,7 +144,7 @@ While this is infeasible on Solana or BNB Chain, this is possible on Ethereum an
 
 ### How do I use Hummingbot on a AMM DEX like Uniswap?
 
-Check out the [`amm-arb`](/strategies/amm-arbitrage) or [`uniswap-v3-lp`](/strategies/uniswap-v3-lp) strategies.
+Check out the [`amm-arb`](/strategies/amm-arbitrage) or [`amm-v3-lp`](/strategies/amm-v3-lp) strategies.
 
 ## Hummingbot Foundation
 
@@ -233,7 +233,7 @@ See [Hummingbot Governance Proposals](/governance/proposals) for more informatio
 
 The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively.
 
-Other than those listed in the [HBOT announcement](/blog/introducing-hbot/), there are no other eligible HBOT recipients.
+Other than those listed in the [HBOT announcement](blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md), there are no other eligible HBOT recipients.
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 

@@ -103,7 +103,7 @@ Currently, the only ways to interact with the bot right now are using the CLI or
 * If using the CLI, the user has to access to each bot instance and change the parameters there.
 * If using the Telegram integration, the user has to create API keys for each bot and add those keys to the conf file of each bot.
 
-A few months ago, the community awarded a 2M HBOT bounty to two community developers, klpanagi and TheHolyRoger, to build an orchestration module, as described in [this forum post](https://forum.hummingbot.org/t/hip-bot-orchestration/186?ref=blog.hummingbot.org).
+A few months ago, the community awarded a 2M HBOT bounty to two community developers, klpanagi and TheHolyRoger, to build an orchestration module.
 
 The proposed solution includes a web interface where the user can see all the bots that are running, the performance of each one and also will be able to execute all the supported commands that the client has right now (start, stop, change strategy, etc). The implementation includes a Broker like (MQTT, Kafka, RabitMQ, etc) that will allow the communications between this Web Application and each client.
 

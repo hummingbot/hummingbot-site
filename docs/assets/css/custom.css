@@ -404,3 +404,11 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 .highlight-second-card > ul > li:nth-child(2) {
   border-color: var(--md-accent-fg-color) !important;
 }
+
+/* Fix mobile search with blurred header 
+   Causes a delay when opening search, not optimal */
+   [data-md-scrolllock] .md-header,
+   [data-md-scrolllock] .md-tabs {
+       -webkit-backdrop-filter: none !important;
+       backdrop-filter: none !important;
+   }

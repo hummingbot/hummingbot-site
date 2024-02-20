@@ -205,9 +205,9 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
     ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
 
--   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+-   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
 
 </div>
 
@@ -249,12 +249,16 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
     <img src="/assets/logos/vega-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/coinalpha-light.png" class="light-logo"/>
+    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/1kx-dark.png" class="dark-logo"/>
     <img src="/assets/logos/1kx-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/coinalpha-light.png" class="light-logo"/>
   </div>
 </div>
 

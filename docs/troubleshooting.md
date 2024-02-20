@@ -1,32 +1,24 @@
 ## Installation
 
-### Source: ModuleNotFoundError
+### Docker: Permission denied error
+
+```plaintext
+docker: Got permission denied while trying to connect to the Docker daemon socket at
+unix:///var/run/docker.sock...
 
 ```
-ModuleNotFoundError: No module named 'hummingbot.market.market_base'
-root - ERROR - No module named
-‘hummingbot.strategy.pure_market_making.inventory_skew_single_size_sizing_delegate’
-(See log file for stack trace dump)
-```
 
-Solution 1: exit Hummingbot to compile and restart using these commands:
+The error message above indicates a permission issue while trying to access the Docker daemon socket. This is a common problem when trying to run Docker commands as a non-root user. To add your user to the docker group, use the following command:
 
-```
-conda activate hummingbot
-./compile
-./start
-```
+```bash
+sudo usermod -aG docker $USER
 
-Solution 2: make sure you have conda section in ~/.bashrc. Run conda init if it is not there. Explanation: if you have custom PATH defined in ~/.bashrc, supplied scripts (./compile etc) may pick wrong python binary, causing different errors.
+# Restart the terminal after running the command above, if it still doesn't work try the command below
 
-### Source: SyntaxError invalid SyntaxError
+sudo chmod 666 /var/run/docker.sock
 
 ```
-File "bin/hummingbot.py", line 40
-  def detect_available_port(starting_port: int) -> int:
-                                           ^
-SyntaxError: invalid syntax
-```
+
 
 ### Source: conda command not found
 
@@ -35,216 +27,151 @@ $ conda
 -bash: conda: command not found
 ```
 
-If you have just installed conda, close terminal and reopen a new terminal to update the command line's program registry.
+Ensure Anaconda, Miniconda, or Miniforge (for arm64 systems) is installed. If you've just installed it, restart your terminal to refresh the command line environment.
 
-If you use `zshrc` or another shell other than `bash`, see install dependencies (<https://hummingbot.org/installation/source/#xcode-command-line-tools>)
+### Source: ./install: line 40 ... Killed
 
-### Docker: Package 'docker.io' has no installation candidate
-
-![Hummingbot installed](/assets/img/package-docker-io.png)
-
-Install Docker using get.docker.com script as an alternative. Install curl tool then download and run get.docker.com script.
+```plaintext
+Collecting package metadata (repodata.json): / ./install: line 40: 14981 Killed...
 
 ```
-apt-get install curl
-curl -sSL https://get.docker.com/ | sh
+This error shows up during installation, typically on systems with 2GB RAM or less. Increase your system's RAM to at least 4GB, or consider adding a swap file if upgrading hardware is not feasible.
+
+### Source: Could not find conda environment: hummingbot
+
+![Alt text](troubleshooting/conda.png)
+
+This is related to the issue above. Check if there are any errors after running the `./install` script. If there are, you'll need to solve those first otherwise creating the hummingbot conda environment will fail. 
+
+### Source: unable to execute `gcc`: No such file or directory
+
+![Alt text](troubleshooting/gcc.png)
+
+If getting this error you'll need to install the `build-essential` package. Run the command below to install - 
+
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
+```
+
+## Dashboard
+
+### Failed to connect MQTT Bridge:
+
+```bash
+00:21:16 - hummingbot_application - Failed to connect MQTT Bridge: 
+[Errno 111] Connection refused. Retrying in 10.0 seconds.
+```
+
+If you get this error, this usually means the Hummingbot Broker is not running, start the Broker from the Instances page and then restart all Hummingbot client instances. 
+
+
+### Docker is not running. Please start Docker and refresh the page.
+
+![Alt text](troubleshooting/instances.png)
+
+Make sure you have Docker installed. On Windows and MacOS machines make sure you have Docker Desktop running in the background. 
+
+### No module named hummingbot
+
+![Alt text](troubleshooting/wheel.png)
+
+Note: The name of the missing module could be something else like `st_pages` etc. If you get this message this means the environment wasn't installed properly. Run the following steps in a terminal to reinstall - 
+
+```bash
+conda deactivate
+make env_remove
+make env_create
+conda activate dashboard
+make run
+```
+
+### Authentication page is not showing in Dashboard
+
+By default the authentication system is disabled. 
+
+Find the variable `AUTH_SYSTEM_ENABLED` in the `CONFIG.py` file and set it to `True` to enable the authentication page.
+
+## V1 Strategies
+
+## V2 Strategies
+
+### AttributeError: 'hummingbot.connector.exchange.kraken.kraken_exchan' object has no attribute '_order_tracker'
+
+```plaintext
+Traceback (most recent call last):
+  File "hummingbot/core/pubsub.pyx", line 165, in hummingbot.core.pubsub.PubSub.c_trigger_event
+    typed_listener.c_call(arg)
+  File "hummingbot/core/event/event_listener.pyx", line 25, in hummingbot.core.event.event_listener.EventListener.c_call
+    self(arg)
+  File "/home/hummingbot/hummingbot/core/event/event_forwarder.py", line 24, in __call__
+    self._to_function(self.current_event_tag, self.current_event_caller, arg)
+  File "/home/hummingbot/hummingbot/smart_components/executors/position_executor/position_executor.py", line 338, in process_order_created_event
+    self.open_order.order = self.get_in_flight_order(self.exchange, event.order_id)
+  File "/home/hummingbot/hummingbot/smart_components/smart_component_base.py", line 65, in get_in_flight_order
+    order = connector._order_tracker.fetch_order(client_order_id=order_id)
+AttributeError: 'hummingbot.connector.exchange.kraken.kraken_exchan' object has no attribute '_order_tracker'
+2023-12-02 12:56:07,012 - 15 - hummingbot.core.event.event_reporter - EVENT_LOG - {"timestamp": 1701521767.0, "type": "OrderType.LIMIT", "trading_pair": "ETH-USDT", "amount": "0.01192817", "price": "2095.87", "order_id": "buy-ETH-USDT-1701521766935688", "creation_timestamp": 1701521766.0, "exchange_order_id": null, "leverage": 1, "position": "NIL", "event_name": "BuyOrderCreatedEvent", "event_source": "kraken"}
 
 ```
 
-Allow docker commands without requiring sudo prefix (optional).
+If you are getting this error on Kraken, or a similar error on a different exchange this is because the exchange connector doesn't currently support market orders which the PositionExecutor needs to close the position. 
 
-```
-sudo usermod -a -G docker $USER
-```
-
-### Docker: Permission denied after Docker installation
-
-```
-docker: Got permission denied while trying to connect to the Docker daemon socket at
-unix:///var/run/docker.sock: Post
-http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/create?name=hummingbot_instance:
-dial unix /var/run/docker.sock: connect: permission denied.
-```
-
-Exit from your virtual machine and restart.
-
-### Docker: How to stop active container?
-
-You need to run `docker ps -a` to get the list of containers available. Then you can do the following,
-
-1. Locate the container id of the bot you want to stop
-2. Run `docker container stop [container-id]`
-
-![Docker Container Stop](/assets/img/docker-container-stop.PNG)
-
-!!! note
-    Please be advised this will force close the bot from running on Docker. This means that this does not stop the outstanding orders from the HB client. The commands `stop` and `exit` is the right way to cancel orders.
-
-## Operation
-
-### AMM Arbitrage strategy is not working
-
-Some few important things to check:
-
-- Assets in both base and quote
-- Make sure gateway is running
-- Some ETH for gas
-- Installed Hummingbot-gateway and configured it to mainnet/testnet depending on where you are using it.
-- Connected Ethereum wallet and put in the right ethereum node corresponding to what you have put in installing your gateway.
-
-### Why is my bot not creating orders on Perpetual Market-Making?
-
-Check if you have an open position on Binance, it'll stop creating a new set of orders until your current position is closed. To learn more about perpetual market making, click [here](/strategies/perpetual-market-making).
-
-### I have my own strategy, can I make the bot execute it?
-
-Hummingbot is an open-source application that you can create your own custom scripts and build strategy. Guidelines has been created so our community can have their way to improve or add features.
-
-You can check our [Discord](https://discord.gg/hummingbot) and discuss in our `#developer-chat` channel where you can share your ideas or ask questions about how to implement your strategy. This link would also help you more on [Developing Strategies](/developers/strategies/tutorial).
-
-You can also check out our **new** `scripts` feature which allows you to create a complete strategy using just a single Python file. Check it out [here](/scripts/index)
-
-### Orders are not refreshing according to order refresh time
-
-Make sure to set your `order_refresh_tolerance_pct` to -1 if you are not using the parameter.
-
-When using the parameter `order_refresh_tolerance`, orders do not refresh according to order refresh time if it doesn't exceed the percentage (%) threshold you set under `order_refresh_tolerance_pct`.
-
-### MAC Mismatch error
-
-```
-Hummingbot.core.utils.async_utils - ERROR - Unhandled error in background task: MAC mismatch Traceback (most recent call last):
-File "/home/ubuntu/hummingbot/hummingbot/core/utils/async_utils.py", line 9, in safe_wrapper return await c
-File "/home/ubuntu/hummingbot/hummingbot/core/utils/async_call_scheduler.py", line 128, in call_async return await self.schedule_async_call coro, timeout_seconds, app_warning_msg=app_warning_msg)
-File "/home/ubuntu/hummingbot/hummingbot/core/utils/async_call_scheduler.py", line 117, in schedule_async_call return await fut
-File "/home/ubuntu/hummingbot/hummingbot/core/utils/async_call_scheduler.py", line 80, in _coro_scheduler fut.set_result(await coro)
-File "/home/ubuntu/miniconda3/envs/hummingbot/lib/python3.8/concurrent/futures/thread.py", line 57, in run result = self.fn(*self.args, **self.kwargs)
-File "/home/ubuntu/hummingbot/hummingbot/client/config/security.py", line 88, in decrypt_all cls.decrypt_file(file)
-File "/home/ubuntu/hummingbot/hummingbot/client/config/security.py", line 73, in decrypt_file cls._secure_configs[key_name] = decrypt_file(file_path, Security.password)
-File "/home/ubuntu/hummingbot/hummingbot/client/config/config_crypt.py", line 67, in decrypt_file secured_value = Account.decrypt(encrypted, password)
-File "/home/ubuntu/miniconda3/envs/hummingbot/lib/python3.8/site-packages/eth_account/account.py", line 134, in decrypt return HexBytes(decode_keyfile_json(keyfile, password_bytes))
-File "/home/ubuntu/miniconda3/envs/hummingbot/lib/python3.8/site-packages/eth_keyfile/keyfile.py", line 49, in decode_keyfile_json return _decode_keyfile_json_v3(keyfile_json, password)
-File "/home/ubuntu/miniconda3/envs/hummingbot/lib/python3.8/site-packages/eth_keyfile/keyfile.py", line 170, in _decode_keyfile_json_v3 raise ValueError("MAC mismatch")
-ValueError: MAC mismatch
-```
-
-This error is usually caused by having multiple encrypted keys with different passwords in the same config folder. For example:
-
-```
-Instance1                       Instance2
-Password  : 1234                Password  : 5678
-API key/s : Binance             API key/s : Bittrex, Coinbase Pro,
-                                            Eterbase, Kraken, Huobi
-```
-
-Copying encrypted Binance key file from Instance1 to Instance2 will result to this error. To fix this:
-
-1. Delete just the `encrypted_binance_api/secret_key.json` from Instance2's conf folder
-2. Restart Hummingbot and password 5678 remains unchanged
-3. Run `connect binance` and add the API keys - this will encrypt it with 5678 password and sync it with the rest of the API keys
-
-### Timestamp for this request is outside of the recvWindow
-
-```
-binance.exceptions.BinanceAPIException: APIError(code=-1021): Timestamp for this request is outside of the recvWindow.
-```
-
-Timestamp errors in logs happen when the Binance clock gets de-synced from time to time as they can drift apart for a number of reasons. Hummingbot should safely recover from this and continue running normally.
-
-### Too much request weight used; IP banned
-
-**Sample log error message**:
-
-```
-binance.exceptions.BinanceAPIException: APIError(code=-1003): Way too much request weight used; IP banned until 1573987680818. Please use the websocket for live updates to avoid bans
-```
-
-This error occurs when the Binance API rate limit is reached. Causes include:
-
-Using multiple order mode with 3+ orders per side
-High order refresh rate
-Running multiple instances of Hummingbot
-Weight/Request error in logs happens when it encounters a warning or error and Hummingbot repeatedly sends the request (fetching status updates, placing/canceling orders, etc.) which resulted in getting banned. This should be lifted after a couple of hours or up to a maximum of 24 hours.
-
-## Kraken 0 Balance error
-
-```
-Failed connections:                                                                                      |
-    kraken: {'error': {'error': []}}
-
-10:12:24 - kraken_market - Error received from https://api.kraken.com/0/private/Balance. Response is {'error': []}.
-```
-
-This error occurs when Kraken account currently has no funds on the exchange. Fund your account to fix the error. For more info visit this [here](https://support.kraken.com/hc/en-us/articles/360001491786-API-Error-Codes).
+## Connectors
 
 ## Gateway
 
-### async_utils - Unhandled error in background task: `chain_type`
+### Client is stuck on `"script_strategy_base - uniswap_ethereum_mainnet is not ready. Please wait..."`
 
-![Gateway error](/gateway-03.png)
+You'll need to approve tokens that you are trading. See below for an example if you are trading WETH on Ethereum mainnet
 
-![Gateway error](/gateway-02.png)
-
-If you get the above errors after updating the Hummingbot client to v1.16.0, make sure to update the Gateway to the latest version as well. After updating, run the [gateway-setup](https://github.com/hummingbot/gateway/blob/main/gateway-setup.sh) script to regenerate your configs then re-run the `gateway connect ...` command in Hummingbot (ex. gateway connect uniswap)
-
-### TypeError: Password was given but private key is not encrypted
-
-![Gateway error](/gateway-01.png)
-
-Make sure to set at least one character as your Hummingbot login password. Having a blank password causes the Gateway error message. For instructions on how to reset your password check this [link](/client/password)
-
-### Error after running generate_certs command
-
-![Hummingbot installed](/assets/img/running-log.png)
-
-Add permission to the cert folder or to your hummingbot instance folder: `sudo chmod a+rw <[instance_folder]` or `[certs_folder]>/\*`
-
-### Why is my bot not placing orders?
-
-Fetch your bot status by running `status` or `[Ctrl + S]`:
-
-- Are there any warnings that may prevent the bot from starting?
-- Is your `order_amount` parameter larger than the exchange minimum order size requirement?
-- If the user doesn't have enough balance to meet the set order amount, the bot will still try to create an order with a smaller order amount size provided that it still meets the exchange minimum requirement.
-- Is your `inventory_skew_enabled` parameter enabled? Since this parameter adjusts order sizes, one side may be too low or too high.
-
-### Change the time or timezone of Hummingbot
-
-Hummingbot follows the same date/time and timezone on the machine where it is intalled. Below are some steps you can follow to change the timezone depending on the operating system and installation type.
-
-**Docker**
-
-While docker `$instance_name` is running in the background, type in the command line.
-
-Manual
-
-```
-# 1) Run this command
-docker exec -u 0 -it instance_name bash
-
-# 2) Install tzdata for the instance/container
-apt-get update && apt-get install -y tzdata
-
-# 3) Run this command to change the docker timezone
-dpkg-reconfigure tzdata
+```bash
+gateway approve-tokens uniswap_ethereum_mainnet WETH
 ```
 
-Configure geographic location and timezone by inputting the corresponding number, see example below:
+!!! note
+    When approving tokens, if you get a "Token not Supported" error, please make sure to add the token address in the tokenlist manually. The token list can be found in the `./conf/list` folder
 
-![](/assets/img/time-zone.PNG)
+### Tokens not showing in `balance` command
 
-Restart your docker and start your Hummingbot again to apply changes.
+![Alt text](troubleshooting/tokens.png)
 
-**Windows**
+Use the following command to display token balances for different networks. 
 
-You can change the timezone on a Windows computer by doing the following:
+```bash
+>>> gateway connector-tokens uniswap_ethereum_goerli WETH,DAI
+```
 
-1. Press **Win + R** shortcut to open the Run dialog box
 
-2. Enter **timedate.cpl** to open Date and Time settings
+## Misc
 
-3. Click **Change time zone**
 
-![](/assets/img/win-time.PNG)
+### Unable to paste, getting an error message
 
-You can also follow these steps in the Windows Support article: [How to set your time and timezone](https://support.microsoft.com/en-us/windows/how-to-set-your-time-and-time-zone-dfaa7122-479f-5b98-2a7b-fa0b6e01b261)
+```bash
+ Pyperclip could not find a copy/paste mechanism for your system.
+    For more information, please visit https://pyperclip.readthedocs.io/en/latest/introduction.html#not-implemented-error
+```
+
+This error comes up because <kbd>CTRL</kbd> + <kbd>V</kbd> doesn't work in Hummingbot. Try any of the following shortcuts below to paste. 
+
+```
+Shift + Insert 
+CTRL + SHIFT + Right Click  
+CTRL + SHIFT + V
+```
+
+### How to exit a config
+
+![Alt text](troubleshooting/config.png)
+
+Press <kbd>CTRL</kbd> + <kbd>X</kbd> if you want to cancel out of the configuration 
+
+### Balance showing but it's not showing Total in ($)
+
+![Alt text](troubleshooting/balance.png)
+
+If one or more tokens is showing 0 `Total in ($)`, use the command below to change your rate oracle source. By default, the `rate_oracle_source` is set to `Binance` and if the token is not available in Binance then the `Total in ($)` will show 0. 
+
+```bash
+config rate_oracle_source
+```

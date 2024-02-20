@@ -22,5 +22,3 @@ Run the `connect` command to view the status of each connector. It also shows fa
 **Keys Added** column indicates if API keys are added to Hummingbot.
 
 **Keys Confirmed** column shows the status if Hummingbot has successfully connected to the exchange or protocol.
-
-**Tier** column shows the connector tier (Gold, Silver, Bronze). For more info on connector tiers see the [exchanges](/exchanges) documentation.
