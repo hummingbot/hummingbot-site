@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with OKX. When you use our software to trade on Binance, a custom API header tells OKX that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [OKX referral link](https://www.okx.com/join/1931920) and enter that account's API keys into Hummingbot! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with OKX. When you use our software to trade on OKX, a custom API header tells OKX that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [OKX referral link](https://www.okx.com/join/1931920) and enter that account's API keys into Hummingbot! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
