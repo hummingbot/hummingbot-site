@@ -263,7 +263,7 @@ nav:
         - Binance: exchanges/binance/index.md
         - Gate.io: exchanges/gate-io/index.md
         - Kucoin: exchanges/kucoin/index.md
-        - Huobi: exchanges/huobi/index.md
+        - HTX: exchanges/huobi/index.md
         - AscendEx : exchanges/ascendex/index.md
         - Bit.com: exchanges/bit-com-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
@@ -349,6 +349,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.25.0: release-notes/1.25.0.md
     - 1.24.0: release-notes/1.24.0.md
     - 1.23.0: release-notes/1.23.0.md
     - 1.22.0: release-notes/1.22.0.md
