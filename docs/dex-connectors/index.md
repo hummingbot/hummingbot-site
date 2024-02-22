@@ -57,4 +57,5 @@ Here are the current DEX connectors in the codebase:
 | [Uniswap](../exchanges/uniswap.md) | AMM | Gateway |
 | [VVS Finance](../exchanges/vvs.md) | AMM | Gateway |
 | [XSwap](../exchanges/xswap.md) | AMM | Gateway |
+| [Carbon](../exchanges/carbon.md) | AMM | Gateway |
 
