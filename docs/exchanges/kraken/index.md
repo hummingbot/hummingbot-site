@@ -31,8 +31,7 @@
 [![Create API](kraken-api3.png)](kraken-api3.png)
 
 !!! important
-     Ensure the **Access Websockets API** box is checked. This step is necessary to obtain an authentication token for the WebSocket APIs through the GetWebSocketsToken endpoint. Without this, the Kraken connector will be unable to reconstruct the order book and place trades. See [troubleshooting](../../troubleshooting.md#valueerror-no-order-book-exists-for-btc-usd) for an example of an error message in Hummingbot when this box is left unchecked
-
+     Ensure the **Access Websockets API** box is checked. This step is necessary to obtain an authentication token for the WebSocket APIs through the GetWebSocketsToken endpoint. Without this, the Kraken connector will be unable to reconstruct the order book and place trades. See [Troubleshooting](../../troubleshooting.md#valueerror-no-order-book-exists-for-btc-usd) for an example of an error message in Hummingbot when this box is left unchecked
 
 - Once the API key settings have been configured appropriately, the new API key can be created by clicking on the Generate key button. Make sure to store the API keys in a safe place. 
 
@@ -72,5 +71,3 @@ This connector supports the following `OrderType` constants:
 Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect kraken_paper_trade` instead of `connect kraken`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
-
-

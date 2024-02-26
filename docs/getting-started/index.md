@@ -5,16 +5,25 @@
 
 New to Hummingbot? Start here with step-by-step guides for various use cases:
 
-
-## 🐋 [Docker](../installation/docker.md)
-
 - [Quickstart Guide to Deploy-Examples](../academy-content/posts/quickstart-deploy-examples/0-index.md): Guide on how to use the `deploy-examples` repo
-- [Deploy Examples](https://github.com/hummingbot/deploy-examples): Github repo with Docker Compose examples and bash scripts for deployment
-- [Liquidity Mining](../academy-content/posts/quickstart-liquidity-mining/0-index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
-
-## 💻 [Source](../installation/source/index.md)
 
 - [Quickstart - Custom Script](../academy-content/posts/quickstart-custom-script/custom-pmm-0.md): Develop a custom market making script using Hummingbot
+
+- [Quickstart - Liquidity Mining](../academy-content/posts/quickstart-liquidity-mining/0-index.md): Earn liquidity mining rewards by running Hummingbot on the Miner platform
+
+- [Quickstart Guide to Using Dashboard](../academy-content/posts/quickstart-dashboard/0-index.md): Learn how to use Dashboard to create, backtest and deploy sophisticated market making and directional strategies
+
+
+## Install Methods
+
+- 🐋 [Docker](../installation/docker.md)
+
+- 💻 [Source](../installation/source/index.md)
+
+
+## Developer Guides
+
+- [Deploy Examples](https://github.com/hummingbot/deploy-examples): Github repo with Docker Compose examples and bash scripts for deployment
 - [Building CEX Connectors](../developers/connectors/index.md): Guide on how to create CEX connectors for Hummingbot
 - [Building DEX Connectors](../gateway/adding-dex-connectors.md): Guide on how to create DEX connectors for Hummingbot 
 - [Bounties](../bounties/index.md): Get paid for building and maintaining Hummingbot components
@@ -24,7 +33,6 @@ connector middleware
 
 ## 📓 Dashboard
 
-- [Using Dashboard](../academy-content/posts/quickstart-dashboard/0-index.md): Learn how to use Dashboard to create, backtest and deploy sophisticated market making and directional strategies
 - [Youtube Playlist](https://youtube.com/playlist?list=PLDwlNkL_4MMf0Ifvj-HLuQ_Jtf7OV6uzW&si=i-V1oBvCYy8a1025): Youtube playlist of Dashboard videos
 - [Github Repo](https://github.com/hummingbot/dashboard): Dashboard Github repo
 - [Discord Channel](https://discord.gg/hummingbot): If you are interested in contributing to the Dashboard project, please join the #dashboard channel in Discord
