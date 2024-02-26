@@ -14,7 +14,7 @@ Typically, bounty sponsors include:
 
 There are two paths that bounty sponsors can take:
 
-* **Post a Bounty**: Post a single bounty on [Bounties Board](https://github.com/orgs/hummingbot/projects/7) and let us handle the rest, from assigning a dev to testing and delivering the code. To get started, identify or create a Github issue, and fill out the following form:
+* **Post a Bounty**: Create a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose), There left a comment that you want to fund bounty for it to be added on [Bounties Board](https://github.com/orgs/hummingbot/projects/7) and let us handle the rest, from assigning a dev to testing and delivering the code. To get started, identify or create a Github issue, and fill out the following form below:
 
 [New Hummingbot Bounty](https://forms.gle/sZr86AzP26JyL2fZA){ .md-button .md-button--primary}
 
