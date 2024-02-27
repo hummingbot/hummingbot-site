@@ -1,15 +1,14 @@
-Bounties are rewards (denominated in HBOT or other tokens) given out to community member for work that improves Hummingbot. They offer a platform for **Sponsors** seeking development work on exchange connectors, trading strategies, bug fixes, and related content/guides to connect with **Contributors**, experienced Hummingbot developers and traders capable of creating these solutions or content.
+Bounties are rewards (denominated in HBOT or USDC) given out to community members for work that improves Hummingbot, such as supporting users on Discord and fulfilling devlopment bounties. They are the primary mechanism used by Hummingbot Foundation to maintain the Hummingbot codebase and support the community.
 
-The bounty process creates a win-win situation where the community benefits from the expertise of diverse contributors, while individuals have the opportunity to earn rewards for their contributions. The goal is to help the Foundation and users to improve Hummingbot with help of Bounty Sponsors and allocate HBOT bounties across the connectors that users vote for.
+## External Bounties
 
-Hummingbot Foundation oversees the entire Bounties process, from working with Sponsors to scope the bounty, finding and assigning the bounty to a qualified developer, performing engineering/QA review, and paying the developer. Since Bounties sprung out of an internal program that has rewarded 100+ unique contributors, the Foundation itself will continue to be an active Sponsor of bounties.
+Hummingbot Foundation can also facilitate and manage external bounties for external sponsors for a fee using the same process. This offers a platform for exchanges, trading firms, and others seeking development work on exchange connectors, trading strategies, bug fixes, and related content/guides.
 
-See below for step-by-step guides for Contributors and Sponsors:
+The bounty process creates a win-win situation where the community benefits from the expertise of diverse contributors, while individuals have the opportunity to earn rewards for their contributions. The goal is to help the Foundation and users to improve Hummingbot with help of bounty sponsors and allocate HBOT bounties across the connectors that users vote for.
 
-* [Contributors](./contributors.md)
-* [Sponsors](./sponsors.md)
+See the [Bounty Sponsors Guide](./contributors.md) for more information.
 
-## Bounties Board
+## For Contributors
 
 ![bounty](./bounty-board.png)
 
@@ -24,15 +23,20 @@ The columns in the board include:
 - **Merged**: Pull request has been merged to the `development` branch (or published publicly in the case of content)
 - **Paid**: Contributor has been paid and the bounty is considered done
 
+See the [Bounty Contributors Guide](./contributors.md) to get started.
+
+## Bounties Process
+
+Hummingbot Foundation oversees the entire Bounties process, from working with sponsors to scope the bounty, finding and assigning the bounty to a qualified developer, performing engineering/QA review, and paying the developer. Since Bounties sprung out of an internal program that has rewarded 100+ unique contributors, the Foundation itself will continue to be an active sponsor of bounties.
+
+* [Lifecycle of a Bounty](./lifecycle.md)
+* [Bounty Pricing Guidance](./prices.md)
+* [Discord Support Program](./discord.md)
+
 ## HBOT Tracker
 
 [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) is a Google Sheet that contains a record of HBOT bounty allocations and distributions. Relevant tabs include:
 
+* **Discord Leaderboard**: Leaderboard of users who earn HBOT for supporting the Discord community. See [Improvements to the Discord Support Program](/blog/improvements-to-the-discord-support-program) for more information.
 * **Connector Pots**: Lists available HBOT allocations for each CEX, DEX and Chain connector, determined by voting in [Polls](../governance/polls.md).
 * **Bounty Tracker**: Lists the status of in-progress and completed bounties
-
-## Governance for New Connectors
-
-[Connectors](/exchanges/) require maintenance, testing and documentation, so adding new ones to the codebase imposes a cost by everyone who uses Hummingbot. Therefore, new connectors that are merged into the `master` branch and included into official monthly releases require community voting.
-
-In addition to building the connector, sponsors should note that connectors need to be proposed and voted on via a [New Connector Proposal](../governance/proposals.md) and voted each quarter in [Polls](../governance/polls.md). All voting takes place using HBOT tokens on [Snapshot](https://snapshot.org/#/hbot.eth).

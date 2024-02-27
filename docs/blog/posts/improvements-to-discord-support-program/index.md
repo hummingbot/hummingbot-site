@@ -7,7 +7,7 @@ categories:
   - Bounties
 ---
 
-# Improvements to the Discord Support Bounties Program
+# Improvements to the Discord Support Program
 
 ![](cover.webp)
 

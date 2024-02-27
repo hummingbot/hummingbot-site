@@ -1,3 +1,6 @@
+!!! warning
+    The V2 Strategies framework is ongoing significant refactoring improvements that will make it easier for developers to use. To track the latest changes, refer to the **#v2-strategies-framework** channel in Discord.
+
 ## Introduction
 
  Whereas V1 strategies were robust yet rigid, the Hummingbot V2 Strategies framework introduces modularity and flexibility, making it more accessible for users to adapt strategies according to their needs, even without extensive Python knowledge.

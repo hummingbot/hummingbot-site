@@ -3,28 +3,33 @@
 Bounties can be classified into one of the following types:
 
 * 🐞 **Bug Fix**: Fix to a bug in the Hummingbot codebase
-* 🚀 **Enhancement**: Update or improvement to a component in the Hummingbot codebase
-* 📺 **Content**: Documentation, videos, guides, and other content that explains how to use an aspect of Hummingbot
-* 🔬 **Research**: Investigation into possible work and recommendation on how to proceed
-* 🏦 **New Connector**: A new [connector](/exchanges/) in the Hummingbot or the Hummingbot Gateway codebases
+* 🏦 **New Connector**: A new [connector](/exchanges/) in the Hummingbot or the Hummingbot Gateway codebase
 * 📈 **New Strategy/Script**: A new Hummingbot [strategy](/strategies/) or [script](/scripts/)
+* 🚀 **Upgrade**: Update or improvement to an exchange connector in the Hummingbot codebase
+* 📺 **Connector Guides**: Guides that explain how to use an exchange connector
 
-In addition, bounties may be:
+## Suggested Bounty Pricing
 
-* **Open Source**: merged into the official Hummingbot codebase, or 
-* **Closed Source**: delivered as a private fork to the Sponsor
+| Task | Price Guidance (inclusive of 20% fee) |
+| --- | --- |
+| Add [Candles Feed](v2-strategies/candles/) | 625 USDC |
+| Add Custom [Data Feed](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed) | 750 USDC |
+| Add Spot [CEX Connector](/cex-connectors) | 3750 USDC |
+| Add Perp [CEX Connector](/cex-connectors) | 5000 USDC |
+| Add Spot [DEX Connector](/dex-connectors) | 3750 USDC |
+| Add Perp [DEX Connector](/dex-connectors) | 5000 USDC |
+| Add AMM-V2 [DEX Connector](/dex-connectors) | 3750 USDC |
+| Add AMM-V3 [DEX Connector]((/dex-connectors)) | 5000 USDC |
+| Upgrade DEX CLOB | 1250-3000 USDC |
+| Update Connector for API Change | 1250 USDC |
+| Add Custom Script | 625- 3125 USDC |
+| Add Custom V2 Controller | 625- 3125 USDC |
+| Add Custom Screener | 375 - 750 USDC |
+| Fix Bug | 125- 625 USDC |
+| Add Connector Guide | 625 USDC |
 
-## Suggested Bounty Amounts
-
-- Candles Feed: 500 USDC (625 USDC - 20% HB Foundation Fee)
-- Custom Data Feed: 600 USDC (750 USDC - 20% HB Foundation Fee)
-- Spot Connector: 3000 USDC (3750 USDC - 20% HB Foundation Fee)
-- Perp Connector: 4000 USDC (5000 USDC - 20% HB Foundation Fee)
-- Upgrade Existing connector: 1000 USDC (1250 USDC - 20% HB Foundation Fee)
-- Custom Script: 500 - 2500 USDC (625- 3125 USDC - 20% HB Foundation Fee)
-- Custom Controller: 500 - 2500 USDC (625- 3125 USDC - 20% HB Foundation Fee)
-- Custom Screener: 300 - 600 USDC (375 - 750 USDC - 20% HB Foundation Fee)
-- Fix bug: 100 - 500 USDC (125- 625 USDC - 20% HB Foundation Fee)
+!!! tip "Pay in HBOT for a 1/2 fees!"
+    Sponsors may fund bounties in HBOT to receive a 50% reduction in the handling fee (10%).
 
 ## Bounty Handling Fee
 
@@ -36,6 +41,6 @@ If the bounty is denominated in [HBOT](https://etherscan.io/token/0xe5097d9baeaf
 
 ## Payment Process
 
-After the bounty fix has been verified and published, we schedule the bounty for payment, and the Foundation will include the bounty payment in its monthly bounty payout process. 
+Contributors are paid only after the bounty fix has been verified and published. Afterwards, Foundation will include the bounty payment in its monthly bounty payout process and mark the bounty as Paid in both [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
 
-Afterwards, we will mark the bounty as Paid in both [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
+See [Lifecyle of a Bounty](./lifecycle.md) for more information.

@@ -12,7 +12,7 @@ As another option, you can also create a new post in the Hummingbot Discord **#b
 
 ### 3. Scope Bounty
 
-We work with the sponsor to define bounty scope, acceptance criteria and amount needed. See [Bounty Prices](prices.md) for more information.
+We work with the sponsor to define bounty scope, acceptance criteria and amount needed. See [Bounty Pricing Guidance](prices.md) for more information.
 
 ### 4. Fund Bounty
 

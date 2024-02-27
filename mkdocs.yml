@@ -380,14 +380,14 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
     - Bounties: bounties/index.md
-    - Bounty Sponsors: bounties/sponsors.md
-    - Bounty Contributors: bounties/contributors.md
+    - Bounty Sponsors Guide: bounties/sponsors.md
+    - Bounty Contributors Guide: bounties/contributors.md
     - Lifecyle of a Bounty: bounties/lifecycle.md
-    - Bounty Price List: bounties/prices.md
+    - Bounty Pricing Guidance: bounties/prices.md
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
     - Discord Support Program: bounties/discord.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Governance:
     - Governance: governance/index.md
     - Polls: governance/polls.md

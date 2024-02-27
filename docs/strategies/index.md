@@ -20,10 +20,12 @@ We encourage users to create their own custom strategies and/or extend the exist
 
 ### V2 Strategies
 
+!!! warning
+    The V2 Strategies framework is ongoing significant refactoring improvements that will make it easier for developers to use. To track the latest changes, refer to the **#v2-strategies-framework** channel in Discord.
+
 Hummingbot's V2 strategies represent the latest innovation in trading strategy development, designed for composability, access to real-time market data, and backtestability. Compared to the rigid V1 Strategies, V2 Strategies are modular and composable, allowing non-technical users to build powerful strategies using Lego-like components.
 
 * [Sample V2 Strategies](../v2-strategies/examples/): Various V2 strategies and how to use them
-* [V2 Strategies Cheatsheat](../v2-strategies/cheatsheet/): One-pager that helps you use and extend V2 strategies
 * [V2 Strategy Architecture](../v2-strategies/): Learn about each component in the V2 framework
 
 The main logic in a V2 strategy is contained in the [Controller](../controllers), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles) and [Executors](../executors/) to implement the strategy logic.
