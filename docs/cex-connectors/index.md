@@ -21,12 +21,12 @@ See [Building Connectors](/developers/connectors) for more information.
 
 Here are the current CEX connectors in the codebase:
 
-| Exchange | Type | Spot Connector Standard | Perp Connector Standard | V2 Strategies Compatible |
-|----------|------|------|------------|-------------|
-| [Binance](../exchanges/binance/index.md) | CLOB | v2.1 | v2.1 | Yes
+| Exchange | Type | Spot Connector Standard | Perp Connector Standard | V2 Strategies Compatible | Connector Guide
+|----------|------|------|------------|-------------|---|
+| [Binance](../exchanges/binance/index.md) | CLOB | v2.1 | v2.1 | Yes | [Guide](/academy-content/using-binance-with-hummingbot)
 | [Gate.io](../exchanges/gate-io/index.md) | CLOB | v2.1 | v2.1 | Yes
 | [Kucoin](../exchanges/kucoin/index.md) | CLOB | v2.1 | v2.1 | Yes
-| [Huobi](../exchanges/huobi) | CLOB | v2.0 |  | No - market order type not supported
+| [HTX](../exchanges/huobi) | CLOB | v2.0 |  | No - market order type not supported
 | [AscendEx](../exchanges/ascendex/index.md) | CLOB | v2.0 |  | Yes - spot only
 | [OKX](../exchanges/okx) | CLOB | v2.1 |  | Yes - spot only
 | [Coinbase](../exchanges/coinbase) | CLOB | v1.0 | | No

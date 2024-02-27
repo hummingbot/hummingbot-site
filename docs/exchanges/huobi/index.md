@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Huobi. When you use our software to trade on Huobi, a custom API header tells Huobi that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with HTX. When you use our software to trade on HTX, a custom API header tells Huobi that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -15,18 +15,18 @@
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://www.huobi.com/>
+- **Website**: <https://www.htx.com/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/huobi/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/huobi>
-- **API Docs**: <https://www.huobi.com/en-in/opend/newApiPages/>
-- **Fees**: <https://www.huobi.com/support/en-us/detail/360000312282>
+- **API Docs**: <https://www.htx.com/en-in/opend/newApiPages/>
+- **Fees**: <https://www.htx.com/support/en-us/detail/360000312282>
 - **Supported Countries**: Not available
 
 ## 🔑 How to Connect
 
 ### Generate API Keys
 
-- Go to https://www.huobi.com/en-us
+- Go to https://www.htx.com/en-us
 
 - Click “Account Icon” for a drop-down menu, select “API Management”
 
@@ -59,26 +59,26 @@
 
 ### Add Keys to Hummingbot
 
-From inside the Hummingbot client, run `connect huobi`:
+From inside the Hummingbot client, run `connect htx`:
 
 ```
-Enter your huobi API key >>>
-Enter your huobi secret key >>>
+Enter your htx API key >>>
+Enter your htx secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to huobi
+You are now connected to HTX
 ```
 
 
 ## 🔀 Spot Connector
 *Integration to spot markets API endpoints*
 
-- **ID**: `huobi`
+- **ID**: `htx`
 - **Connection Type**: WebSocket
-- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/huobi>
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/htx>
 
 ### Order Types
 
@@ -89,8 +89,7 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect huobi_paper_trade` instead of `connect huobi`.
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect htx_paper_trade` instead of `connect htx`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
 ```
-
