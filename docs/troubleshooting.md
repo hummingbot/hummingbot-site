@@ -97,7 +97,7 @@ Find the variable `AUTH_SYSTEM_ENABLED` in the `CONFIG.py` file and set it to `T
 
 ### AttributeError: 'hummingbot.connector.exchange.kraken.kraken_exchan' object has no attribute '_order_tracker'
 
-```plaintext
+```bash
 Traceback (most recent call last):
   File "hummingbot/core/pubsub.pyx", line 165, in hummingbot.core.pubsub.PubSub.c_trigger_event
     typed_listener.c_call(arg)
@@ -117,6 +117,29 @@ AttributeError: 'hummingbot.connector.exchange.kraken.kraken_exchan' object has 
 If you are getting this error on Kraken, or a similar error on a different exchange this is because the exchange connector doesn't currently support market orders which the PositionExecutor needs to close the position. 
 
 ## Connectors
+
+### ValueError: No order book exists for 'BTC-USD'.
+
+```
+     2024-01-25 21:19:12,916 - 111864 - hummingbot.connector.exchange.kraken.kraken_api_user_stream_data_source - ERROR - Unexpected error with Kraken WebSocket connection. Retrying after 30 seconds...
+Traceback (most recent call last):
+  File "/home/martin_kou/Development/hummingbot/hummingbot/connector/exchange/kraken/kraken_api_user_stream_data_source.py", line 100, in listen_for_user_stream
+    self._current_auth_token = await self.get_auth_token()
+  File "/home/martin_kou/Development/hummingbot/hummingbot/connector/exchange/kraken/kraken_api_user_stream_data_source.py", line 89, in get_auth_token
+    return response_json["result"]["token"]
+KeyError: 'result'
+
+  File "hummingbot/connector/exchange_base.pyx", line 158, in hummingbot.connector.exchange_base.ExchangeBase.c_get_price
+    OrderBook order_book = self.c_get_order_book(trading_pair)
+  File "hummingbot/connector/exchange/kraken/kraken_exchange.pyx", line 1050, in hummingbot.connector.exchange.kraken.kraken_exchange.KrakenExchange.c_get_order_book
+    raise ValueError(f"No order book exists for '{trading_pair}'.")
+ValueError: No order book exists for 'BTC-USD'.
+
+
+```
+
+If you get this error make sure that when you created the API keys you also checked the **Access Websockets API** option.
+
 
 ## Gateway
 

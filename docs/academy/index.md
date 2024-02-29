@@ -71,6 +71,26 @@ hide:
 
 ---
 
+## :book: Connector Guides
+
+<div class="grid cards" markdown>
+
+-   [![](/academy-content/using-binance-with-hummingbot/cover.png)](/academy/content/using-binance-with-hummingbot/)
+
+    ### [Using Binance with Hummingbot](/academy-content/using-binance-with-hummingbot/)
+
+-   [![](/academy-content/using-hyperliquid-vaults-with-hummingbot/cover.png)](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
+
+    ### [Using Hyperliquid Vaults](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
+
+-   [![](/academy-content/using-vega-protocol-with-hummingbot/cover.png)](/academy-content/using-vega-protocol-with-hummingbot/)
+
+    ### [Using Vega Protocol with Hummingbot](/academy-content/using-vega-protocol-with-hummingbot/)
+
+</div>
+
+---
+
 ## :map: Crypto Exchange Landscape
 
 <div class="grid cards" markdown>

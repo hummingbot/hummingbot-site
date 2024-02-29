@@ -263,7 +263,7 @@ nav:
         - Binance: exchanges/binance/index.md
         - Gate.io: exchanges/gate-io/index.md
         - Kucoin: exchanges/kucoin/index.md
-        - Huobi: exchanges/huobi/index.md
+        - HTX: exchanges/huobi/index.md
         - AscendEx : exchanges/ascendex/index.md
         - Bit.com: exchanges/bit-com-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
@@ -287,6 +287,7 @@ nav:
         - Injective Helix: exchanges/injective.md
         - Mad Meerkat: exchanges/mad-meerkat.md
         - Curve: exchanges/curve.md
+        - Carbon: exchanges/carbon.md
         - Hyperliquid: exchanges/hyperliquid.md
         - OpenOcean: exchanges/openocean.md
         - Osmosis: exchanges/osmosis.md
@@ -342,7 +343,7 @@ nav:
     - Troubleshooting: troubleshooting.md
   - Academy:
     - Academy: academy/index.md
-    - Latest: academy-content/index.md
+    - Latest Articles: academy-content/index.md
     - All Articles: academy/all.md
   - Botcamp ↗️:
     - Botcamp: https://www.botcamp.xyz
@@ -350,6 +351,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.25.0: release-notes/1.25.0.md
     - 1.24.0: release-notes/1.24.0.md
     - 1.23.0: release-notes/1.23.0.md
     - 1.22.0: release-notes/1.22.0.md
@@ -379,10 +381,13 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
     - Bounties: bounties/index.md
-    - Bounty Sponsors: bounties/sponsors.md
-    - Bounty Contributors: bounties/contributors.md
+    - Bounty Sponsors Guide: bounties/sponsors.md
+    - Bounty Contributors Guide: bounties/contributors.md
+    - Lifecyle of a Bounty: bounties/lifecycle.md
+    - Bounty Pricing Guidance: bounties/prices.md
     - Contribution Guidelines: developers/contributions.md
     - Forking the Repository: developers/forking.md
+    - Discord Support Program: bounties/discord.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Governance:
     - Governance: governance/index.md

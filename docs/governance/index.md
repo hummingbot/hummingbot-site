@@ -1,3 +1,5 @@
+![](./cover.webp)
+
 Hummingbot Foundation's purpose is to empower Hummingbot Governance Token (HBOT) token holders to govern how the Hummingbot open source codebase evolves over time. HBOT holders can vote on Proposals and Polls that:
 
 * Approve pull requests to the Hummingbot codebase

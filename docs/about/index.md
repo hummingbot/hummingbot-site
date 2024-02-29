@@ -1,4 +1,4 @@
-![](./cover.webp)
+[![org_structure](org_structure.png)](org_structure.png)
 
 Hummingbot is an open source framework for building high-frequency market making and algorithmic trading bots, maintained by [Hummingbot Foundation](./foundation.md) and supported by key [sponsors and backers](./sponsors.md).
 

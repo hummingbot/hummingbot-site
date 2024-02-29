@@ -14,9 +14,13 @@ You can click the **OK** button on the welcome screen or you can press **TAB** t
 
 ## Deleting a password
 
-The password is stored as an encrypted `.password_verification` file in `hummingbot_conf` (via Docker and binary) or `/conf` directory (installed from source).
+The password is stored as an encrypted `.password_verification` file in the `/conf` directory within the `hummingbot` folder.
 
 Delete the `.password_verification` file under the `hummingbot_conf` folder to reset the password. Note that the .password_verification file is hidden so you won't be able to see it by default unless you set your system to show all hidden files. In the terminal use the `ls -a` command to list all files
+
+Note that if you do remove the `.password_verification` file you'll also need to remove the existing `connector.yml` files under the `conf/connector` folder otherwise you'll run into an issue where the bot throws an error message and doesn't start. 
+
+This is because Hummingbot encrypts the connector files with the same password you use to login. Resetting the password by deleting the password verification file will prevent the existing connector files from being decrypted which means you'll also need to reconnect your API keys. 
 
 Use the command ```sudo rm -rf .password_verification``` to delete the file
 
