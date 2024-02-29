@@ -62,7 +62,7 @@ To get around this, you can:
 3. Export the private key from the newly restored wallet.
 
 !!! note "💡 An Osmosis Private Key has 64 characters"
-Be aware an exported private key may have an `0x` at the start, which may need to be **removed** to fit the private key format check. - Before: `0x1234567890...` - After: `1234567890...`
+    Be aware an exported private key may have an `0x` at the start, which may need to be **removed** to fit the private key format check. - Before: `0x1234567890...` - After: `1234567890...`
 
 ### 🔌 Connect with Gateway
 
@@ -73,14 +73,12 @@ Which chain do you want osmosis to connect to? (osmosis) >>> osmosis
 Which network do you want osmosis to connect to? (mainnet, testnet) >>> mainnet
 Do you want to continue to use node url 'https://rpc.osmosis.zone/' for osmosis-mainnet? (Yes/No) [default: Yes]
 Enter your osmosis-mainnet private key >>>> ****************************************************************
-
 ```
 
 If connection is successful (osmosis-mainnet):
 
 ```
 The osmosis connector now uses wallet [Wallet Public Adress] on osmosis-mainnet
-
 ```
 
 ## 2️⃣ AMM Connector
@@ -134,7 +132,7 @@ From inside the Hummingbot client, run `create --script-config amm_v3_lp` in ord
 To select Osmosis DEX, enter `osmosis_osmosis_mainnet` as the name of the LP connector.
 
 !!! warning "💡 Only LOW/MEDIUM/HIGH fee tiers available"
-Inputting 'LOWEST' as the fee tier may result in an error.
+    Inputting 'LOWEST' as the fee tier may result in an error.
 
 ```
 Enter name of LP connector >>> osmosis_osmosis_mainnet
@@ -143,7 +141,6 @@ On which fee tier do you want to provide liquidity on? (LOWEST/LOW/MEDIUM/HIGH) 
 How wide around current pool price and/or last created positions do you want new positions to span? (Enter 1 to indicate 1%) >>> [DYOR]
 Enter the maximum value (in terms of base asset) to use for providing liquidity. >>> [DYOR]
 Enter a new file name for your configuration >>> [default is 'conf_amm_v3_lp_[#].yml' or input custom name]
-
 ```
 
 ## 🕯 AMM Data Feed
