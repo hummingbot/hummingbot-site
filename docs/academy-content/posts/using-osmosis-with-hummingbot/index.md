@@ -1,7 +1,7 @@
 ---
 date: 2024-00-00
 authors:
-  - pecunia.finance
+  - pecuniafinance
 categories:
   - Connector Guides
 tags:
@@ -15,43 +15,32 @@ tags:
 
 ## Introduction
 
-Welcome to our user tutorial on integrating the power of **Vega Protocol** with **Hummingbot** for your trading journey. In this guide, we'll walk you through the detailed steps required to seamlessly set up a Vega Wallet, link it with Hummingbot, and embark on your trading adventures. 
-
-Whether you're new to automated trading or looking to leverage Vega Protocol's decentralized trading capabilities, this guide is designed to provide you with all the information you need to get started. Let's dive into the world of blockchain-based trading with **Vega Protocol** and **Hummingbot**, and unlock new possibilities in your trading strategy.
+These instructions help users navigate the installation, configuration, and operation of (OSS) Hummingbot high-frequency trading bot running Automated Market Making Arbitrage or Range Automated Market Making strategies on **Osmosis DEX** over the Hummingbot Gateway.
 
 ## Prerequisites
 
-### Create a Cosmos Wallet
+### Create an Osmosis (Cosmos) Wallet
+The Cosmos ecosystem is powered by the Inter-Blockchain Communication protocol ([IBC](https://cosmos.network/ibc/)) which functions like an internet of blockchains. Most Cosmos wallets support all IBC chains natively, including Osmosis - though _specific networks may need to be manually added_.
 
-#### Leap (recommended)
+Stay up to date with Osmosis-specific wallet information on the Osmosis website and/or Docs:
 
-**Browser Extension**
+- [Osmosis Website - Supported Wallets](https://osmosis.zone/ecosystem)
+- [Osmosis Docs](https://docs.osmosis.zone/https://docs.osmosis.zone/overview/educate/getting-started#set-up-a-wallet)
 
-- [Chrome extension:]()
+#### Leap Wallet (recommended)
 
-- [Firefox extension:]()
+To ensure the ability to easily export the wallet private key, use [Leap](https://linktr.ee/leap_wallet). Remember that the private key exported from Leap will include a ‘0x’ prefix which must be removed.
 
-#### Keplr
+### Fund the Wallet
 
-**Browser Extension**
+There are multiple bridges to Cosmos available, but the easiest way is to directly deposit to Osmosis using the Osmosis DEX front end.
 
-- [Chrome extension:]()
-
-- [Firefox extension:]()
-
-
-
-### Deposit Funds
-
-Follow these steps to deposit and fund your wallet for trading on Osmosis:
+- [Connecting to Osmosis](https://docs.osmosis.zone/overview/educate/getting-started/#set-up-a-wallet)
+- [How to Deposit Funds](https://docs.osmosis.zone/overview/educate/getting-started#deposit-funds)
+- [Osmosis Interface](https://app.osmosis.zone/assets)
 
 !!! Note
     Please ensure your wallet has sufficient balance, including OSMO for gas fees 
-
-[![image](metamask_deposit.gif)](metamask_deposit.gif)
-
-**Steps:**
-
 
 <br>
 
@@ -77,46 +66,69 @@ Guides for various environments:
 
 <br>
 
-## Add Wallet to Hummingbot
+<!-- Configure Osmosis Wallet for Hummingbot Gateway -->
 
-To connect your Vega Wallet to Hummingbot and unlock full trading capabilities, you need two important pieces of information: your **Snap Key** (also known as Vega Party ID) and your **wallet seed phrase**. Here's how you can find and use them:
+## Add Osmosis Wallet to Hummingbot
+You will need to export the private key for your designated trading wallet. It is highly advised to have a dedicated account for this purpose. 
 
-### Export Private Key
+!!! Warning An Osmosis Private Key has 64 characters
+    Be aware an exported private key may have an 0x at the start, which may need to be removed to fit the private key format check. 
+    → Before: 0x1234567890... 
+    → After: 1234567890...
 
-Your **wallet seed phrase** is a separate piece of information, typically a series of words provided when you initially set up your wallet. This phrase acts as a backup to access your wallet and should be kept secure and private. 
+### Export Private Key from Keplr
+Keplr is the most popular Cosmos-based wallet. However, when creating a Keplr wallet, **only users who link a Google Account are able to export their private key** directly from Keplr.
 
-When connecting your Vega Wallet to Hummingbot, you will be prompted to enter this seed phrase as part of the authentication and setup process.
+!!! Note
+    For a linked Keplr-Google wallet, find instructions to export the private key [here](https://help.keplr.app/articles/how-to-view-your-private-key).
 
-Here's how to get your **wallet seed phrase** from Metamask
+To get around this, export the seed instead and then restore with a different Osmosis wallet which allows exporting private key.
 
-![image](metamask-01.gif){: style="height:497px;width:296px"} &nbsp;&nbsp;&nbsp;&nbsp; ![image](metamask-02.gif){: style="height:497px;width:296px"}
+To get a Keplr private key without a linked Google Account:
+1. Export Keplr seed phrase.
+   ![image](view-keplr-seed.png)
 
-**Retrieving your wallet seed phrase from Metamask:**
+2. Restore the wallet using the seed phrase, in a different Cosmos-based wallet (such as Leap wallet) which allows exporting the private key.
+   ![image](import-seed-leap.png)
 
-- Navigate to the three-dot menu at the top right and select **Settings** > **Security & Privacy**.
-- Choose **Reveal Secret Recovery Phrase**.
-- Confirm your identity by answering two security questions, then enter your Metamask password and click **Next**.
-- Press the **Hold to Reveal SRP** button to view your wallet seed phrase.
+3. Export the private key from the newly restored wallet.
 
-
-**Security Notice:** Your wallet seed phrase is extremely sensitive. Keep it confidential and never share it online or with anyone you don't trust. Always ensure you're in a secure and private environment when handling your seed phrase.
+!!! Warning
+    Your wallet seed phrase is extremely sensitive. Keep it confidential and never share it online or with anyone you don't trust. Always ensure you're in a secure and private environment when handling your seed phrase.
 
 <br>
 
-### Hummingbot **connect** command
+### Export Private Key from Leap
+To export a private key from Leap wallet:
 
-The **connect** command lets you add your user credentials in order to connect to an exchange or protocol. For centralized exchanges, this command asks you for your API key, while blockchain protocols asks you for your private key.
+1. Open Leap wallet and then open the wallet menu.
 
-Hummingbot stores both API keys and private keys on the local machine in encrypted form, with the Hummingbot client password as the key.
+2. Scroll down to the ‘Security’ section and select ‘Export Private Key’.
+   ![image](export-private-key-leap-1.png)
 
-[![image](connect_vega.gif)](connect_vega.gif)
+3. Enter the wallet password and proceed to view the private key by hovering the cursor over the blurred area.
 
-**Connect Vega Wallet**
+4. Copy down the private key and _be sure to discard_ the ‘0x’ at the beginning of the displayed key.
+   ![image](export-private-key-leap-2.png)
+
+!!! Note
+    Images made with Leap version 0.10.7 and Keplr version 0.12.70; in Chrome.
+
+### Add Private Key to Hummingbot
+
+Run `gateway connect osmosis` and follow the prompts to add a trading wallet to the Osmosis DEX connector.
+
+!!! Note
+    Hummingbot stores both API keys and private keys on the local machine in encrypted form, with the Hummingbot client password as the key.
+
+![image](gateway-connect-osmosis.png)
+
+#### Gateway Connect
 
 - To connect to **Osmosis mainnet** run the command below 
 
 ```
-gateway connect osmosis
+>>> gateway connect osmosis
 ```
 
 - To connect to the **Osmosis testnet**, select _'testnet'_ instead of 'mainnet' when prompted.
@@ -127,66 +139,143 @@ gateway connect osmosis
 - To confirm the connection, you can run the balance command below to see if Hummingbot is able to pull the available balance from the exchange
 
 ```
-gateway balance
+>>> gateway balance
 ```
 
+<!-- Creating a Strategy and Executing -->
+
+## Run a Strategy
+
+To begin trading, a strategy must be configured. The two strategies supported natively by the Osmosis connector are [**amm_arb**](https://hummingbot.org/strategies/amm-arbitrage/) and [**amm_v3_lp**](https://hummingbot.org/strategies/amm-v3-lp/).
+
+### Prepare
+
+1. If you haven’t already, connect a wallet to Osmosis Mainnet with `gateway connect osmosis`. Afterwards, you should be able to see your `osmosis_osmosis_mainnet` wallet when you run `gateway balance`. 
+
+2. To display the balance of specific tokens in the trading wallet balance, run `gateway approve-tokens osmosis_osmosis_mainnet <TOKEN_SYMBOL_HERE>`. The token balance will be displayed the next time `gateway balance` is run.
+
+3. Ensure the added trading wallet has at least **1 OSMO** to cover trading gas costs.
+
+### Create New Strategy
+
+Use the `create` command to set up an **amm_arb** or **amm_v3_lp** strategy. Answer the question prompts presented so that you to generate your own version of the following example configurations.
+
+````
+>>> create
+````
+
+#### Example AMM_ARB Config
+
+````
+template_version: 5
+strategy: amm_arb
+connector_1: osmosis_osmosis_mainnet
+market_1: OSMO-USDC
+connector_2: uniswap_polygon_mainnet
+market_2: USDC-WOSMO
+min_profitability: 1.0
+market_1_slippage_buffer: 1.0
+market_2_slippage_buffer: 1.0
+concurrent_orders_submission: false
+debug_price_shim: false
+gateway_transaction_cancel_interval: 600
+````
+
+#### Example AMM_V3_LP Config
+
+````
+template_version: 5
+strategy: range_amm
+connector: osmosis_osmosis_mainnet
+market: OSMO-USDC
+fee_tier: MEDIUM
+price_spread: 1.0
+amount: 1.0
+min_profitability: 1.0
+````
+
+![image](create-amm-v3-lp-osmosis.png)
 
 
-<!-- ## Starting Your first script
+### Import a Strategy
 
-To run your first script, in the Hummingbot terminal, enter the command below to start the [v2_dman_v3_multiple_exchanges.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_dman_v3_multiple_exchanges.py) script
+Run `import` to get a list of locally stored files, use the arrow keys or tab to scroll and select one. Or, you can also skip the prompt by running `import <file_name.yml>` directly.
+
+````
+>>> import
+````
+
+![image](import-list.png)
+
+If successful, you will see:
+
+![image](imported.png)
+
+### Start a Strategy
+
+To run a trading strategy:
+1. Ensure a strategy is loaded and Preliminary checks are confirmed.
+
+2. Run `start`.
+
+!!! Note
+    The `amm_arb` strategy will first request confirmation of selected wallets.
+
+![image](run-strat.png)
+
+
+### Use a Script
+
+Scripts can be created similar to strategies, by using the `create --script` command.
+
+````
+>>> create --script
+````
+
+### Modify Strategy or Script Config
+
+Modifications can be made to strategies and scripts by manually editing the file:
+
+1. Locate the `hummingbot/scripts` folder and open the relevant file using any text editor or an IDE like [Visual Studio Code](https://code.visualstudio.com/).
+
+2. Make the desired changes and save.
+
+3. Restart Hummingbot and run the command below to start the bot again:
 
 ```
-start --script v2_dman_v3_multiple_exchanges.py
+>>> start <strategy_name.yml>
 ```
 
-[![image](image14.png)](image14.png)
+Or, if using scripts:
 
-If you have connected your wallet successfully to Hummingbot and have sufficient funds in your mainnet trading wallet, the bot will then start to place orders on **mainnet** with the following trading pairs: 
+```
+start --script <script_name.py>
+```
 
-- **BTCUSDPERP-USDT** 
+<br>
 
-- **ETHUSDPERP-USDT** 
 
-You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status
+## Useful Commands
+
+You can run the `status` command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status:
 
 ```
 status
 ```
 
-## Modifying the Script
-
-The **v2_dman_v3_multiple_exchanges.py** script has the following default values for exchange, trading pair and candles. 
-
-[![image](image1.png)](image1.png)
-
-If you want to make changes to the above as well as the **indicators**, **orders config**, **triple barrier** and other **advanced script configs**, follow the steps below. 
-
-[![image](script_config.gif)](script_config.gif)
-
-**Scripts Config**
-
-- Locate your **hummingbot/scripts** folder and open the **v2_dman_v3_multiple_exchanges.py** file using any text editor or an IDE like [Visual Studio Code](https://code.visualstudio.com/). For the above example, we're using **nano** - which is a text editor available in Linux to make the changes from the command-line. 
-
-- Make the changes you want, then make sure to save once you're done. In the above example we're switching from **mainnet** to **testnet** and changing one of the trading pairs from **ETHUSDPERP-USDT** to **INJUSDTPERP-USDT**.
-
-- Restart Hummingbot and run the command below to start the script again
-
-```
-start --script v2_dman_v3_multiple_exchanges.py
-```
-
-For reference, here's a link to the [modified script](https://gist.github.com/david-hummingbot/e3a21aa802362b672560f62841660508)
-
-<br> -->
-
-
 
 ## Known Issues
 
-- alphabetical order of token pair
-- fee tier (no lowest)
-- poolprice rpc times out intermittantly
+- The fee tier ‘LOWEST’ is not supported and will result in an error.
+- In some cases, the token pair must be in alphabetical order.
+- PoolPrice rpc host may time out intermittently which results in an error 500.
+
+## Potential Improvements
+
+If you are interested in contributing or funding a bounty for development of additional features or improvements for this connector or related strategies, please feel free to contact [Pecunia.Finance](mailto:pecuniafinancedao@protonmail.com).
+
+- Custom CLMM range input (strategy development - amm_lp_v3 or new)
+- Future Osmosis Development (https://forum.osmosis.zone/c/site-feedback/2)
 
 ---
 
