@@ -1,60 +1,60 @@
-![](./strategy-process.png)
+# Introduction to Hummingbot Strategies V2 
 
-## What is a Strategy?
+![](../v2-strategies/diagrams/8.png)
 
-Like a computer program, an algorithmic trading strategy is a set of automated processes that executes repeatedly:
+Hummingbot is an open-source project that enables users to build and deploy automated trading strategies. The **Strategies V2** framework represents a significant advancement in trading strategy development, offering flexibility, real-time market data access, and the ability to test strategies with historical data.
 
-- **Data Collection**: Gathering real-time data from various sources
-- **Data Processing**: Analyzing data to identify patterns and make decisions
-- **Order Execution**: Placing and cancelling orders based on processed data
-
-A Hummingbot strategy loads a set of [connectors](../exchanges/index.md) that integrate into different centralized and decentralized exchanges, adaptable to the unique features of each trading venue's WebSocket/REST APIs and nodes.
-
-Each [clock tick](/global-configs/clock-tick/), a strategy loads real-time order book snapshots, user balances, order status and other real-time data from trading pairs on these venues and executes the logic defined in the strategy, parametrized by a pre-defined user configuration.
-
-To run a strategy, a user selects a [base strategy](../v2-strategies/examples/), defines its input parameters in a [config file](/client/config-files/), and uses the `start` command in the Hummingbot client to run it. 
-
-We encourage users to create their own custom strategies and/or extend the existing examples.
-
-## Types of Hummingbot Strategies
-
-### V2 Strategies
+## Strategies V2
 
 !!! warning
-    The V2 Strategies framework is ongoing significant refactoring improvements that will make it easier for developers to use. To track the latest changes, refer to the **#v2-strategies-framework** channel in Discord.
+    The Strategies V2 framework is undergoing significant refactoring improvements to enhance usability for developers. Stay updated with the latest changes by following the **#v2-strategies-framework** channel on Discord.
 
-Hummingbot's V2 strategies represent the latest innovation in trading strategy development, designed for composability, access to real-time market data, and backtestability. Compared to the rigid V1 Strategies, V2 Strategies are modular and composable, allowing non-technical users to build powerful strategies using Lego-like components.
+### Why Strategies V2?
 
-* [Sample V2 Strategies](../v2-strategies/examples/): Various V2 strategies and how to use them
-* [V2 Strategy Architecture](../v2-strategies/): Learn about each component in the V2 framework
+The development of the Strategies V2 framework was motivated by the need to overcome several challenges and limitations of the previous strategy implementation:
 
-The main logic in a V2 strategy is contained in the [Controller](../controllers), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles) and [Executors](../executors/) to implement the strategy logic.
+- **Scalability Issues:** Initially, each trading strategy was limited to a single bot, complicating management and scalability across various strategies and scenarios.
 
-For users, their primary interface is the [V2 Script](../v2-scripts/), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
+- **Lack of Historical Data Support:** Earlier strategies couldn't leverage historical market data, requiring traders to wait for real-time data accumulation before trading.
 
-To generate a configuration file for a script, run:
+- **Complex Order and Event Tracking:** Managing multiple orders across different pairs and exchanges was cumbersome, especially when adjusting strategies in response to market changes.
 
-```
+- **Explainability and Improvement Challenges:** The lack of clear action-outcome correlations made it difficult to analyze and improve strategy performance.
+
+- **Repetitive Behavior Implementation:** Common behaviors, like order refreshing in market making, were often redundantly implemented, leading to inefficiencies.
+
+- **Technical Barriers to Market Data Access:** The necessity for a deep understanding of foundational classes and the use of Cython obscured type hints and steepened the learning curve.
+
+- **Limited Backtesting Capabilities:** The original framework's lack of comprehensive backtesting tools restricted strategy evaluation against historical data.
+
+[Learn more about V2 Strategy Architecture](../v2-strategies/)
+
+---
+
+### How to Get Started
+
+For newcomers, the journey begins with the [V2 Script](../scripts/index.md), a Python file that outlines configuration parameters and connects users with their strategies. For more advanced users who want to run multiple strategies in a single bot or use different trading pairs / configs, check out the Advanced Strategies walkthrough below. 
+
+**Generating a Configuration File**
+
+To create a configuration file for your script, execute:
+
+```shell
 create --script-config [SCRIPT_FILE]
 ```
 
-The auto-complete for `[SCRIPT_FILE]` will only display the scripts in the local `/scripts` directory that are configurable.
+This command auto-completes with scripts from the local `/scripts` directory that are configurable. You'll be prompted to specify strategy parameters, which are then saved in a YAML file within the `conf/scripts` directory. To run the script, use:
 
-You will be prompted to define the strategy parameters, which are saved in a YAML file in the `conf/scripts` directory. Afterwards, you can run the script by specifying this config file:
-
-```
-start --script [SCRIPT_FILE-conf [SCRIPT_CONFIG_FILE]`
+```shell
+start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]
 ```
 
-The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the local `/conf/scripts` directory.
+Auto-complete will suggest config files from the local `/conf/scripts` directory.
 
-### [V1 Strategies](../v1-strategies/index.md)
 
-The original Hummingbot V1 strategies offer a structured, template-based environment with user-friendly parameters, but they are less customizable than V2 strategies.
+[Strategies V2 Walkthrough: Running Simple vs. Advanced Strategies](../v2-strategies/walkthrough.md)
 
-### [Scripts](../scripts/index.md)
-
-Ideal for beginners and those seeking a quick, straightforward approach, a script provides a lightweight solution in a single Python file.
+---
 
 <div class="grid cards" markdown>
 

@@ -1,9 +1,9 @@
 !!! warning
-    The V2 Strategies framework is ongoing significant refactoring improvements that will make it easier for developers to use. To track the latest changes, refer to the **#v2-strategies-framework** channel in Discord.
+    The Strategies V2 framework is ongoing significant refactoring improvements that will make it easier for developers to use. To track the latest changes, refer to the **#v2-strategies-framework** channel in Discord.
 
 ## Introduction
 
- Whereas V1 strategies were robust yet rigid, the Hummingbot V2 Strategies framework introduces modularity and flexibility, making it more accessible for users to adapt strategies according to their needs, even without extensive Python knowledge.
+ Whereas V1 strategies were robust yet rigid, the Hummingbot Strategies V2 framework introduces modularity and flexibility, making it more accessible for users to adapt strategies according to their needs, even without extensive Python knowledge.
 
 V2 strategies are:
 
@@ -15,14 +15,10 @@ V2 strategies are:
 
 ![](diagrams/1.png)
 
-The V2 Strategies framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. The most important components to understand are:
+The Strategies V2 framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. The most important components to understand are:
 
 * [**V2 Script**](./v2-scripts/index.md): This is where users define the strategy's configuration. It acts as the starting point and interfaces with other components.
-* [**Controller**](./controllers/index.md): The central hub of the strategy, the Controller receives input from the V2 Script and orchestrates the overall strategy, including the management and coordination of Executors.
-* [**Candles**](./candles/index.md): Candles provide a structured form of historical and real-time market data, represented as OHLCV bars, which are essential for generating market analysis indicators.
+* [**Controllers**](./controllers/index.md): The Controllers now have access to the MarketDataProvider and works like a sub-strategy which means users can now run a script using multiple controllers.  
+* [**MarketDataProvider**](./candles/market-data.md): Simplifies access to market data which includes `Candles`, `OrderBook data` and `Trades`
 * [**Executors**](./executors/index.md): V2 strategies place self-managing Executors and manage orders and positions. They encapsulate the order management logic, ensuring that orders are placed, modified, or canceled according to the strategy's instructions. Similarly, they manage position created when trading on perpetual exchanges.
-
-These helper components stitch the framework together:
-
-* [**Executor Handler**](./executor-handlers/index.md): This component acts as a bridge between the Controller and Executors, relaying commands and ensuring that actions are executed in accordance with the strategy's logic.
-* [**Order Level Builder**](./order-levels/index.md): A utility within the V2 Script that facilitates the construction of order levels, which dictate how Executors are distributed and behave.
+* [**ExecutorOrchestrator**](./executor-handlers/index.md): This component simplifies creating, stopping, storing and reporting status of the executors for each controller.

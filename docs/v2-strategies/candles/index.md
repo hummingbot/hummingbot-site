@@ -1,12 +1,17 @@
-![](../diagrams/4.png)
 
-## Overview
+![market-data](../diagrams/14.png)
+
+## Order Book
+
+## Trades
+
+## Candles
 
 The Candles component in Hummingbot is crucial for traders to generate and utilize OHLCV (Open, High, Low, Close, Volume) data. It combines historical and real-time data to create custom technical indicators, leveraging [pandas_ta](https://github.com/twopirllc/pandas-ta).
 
-## Configuration and Usage Examples
+**Configuration and Usage Examples**
 
-### Instantiating Candles
+**Instantiating Candles**
 
 To use the Candles component, instantiate it in your script. Here's how to set it up for a single market:
 
@@ -20,14 +25,14 @@ conf = CandlesConfig(connector="binance", trading_pair="BTC-USDT", interval="5m"
 config = DManV3Config(candles_config=[conf])
 ```
 
-#### Key Configuration Parameters:
+**Key Configuration Parameters:**
 
 - `connector`: The data source (e.g., `binance` or `binance_perpetual`).
 - `trading_pair`: The trading pair (e.g., `BTC-USDT`).
 - `interval`: Time interval between candles (e.g., `5m` for 5 minutes).
 - `max_records`: Maximum number of candles to store.
 
-### Using Multiple Candles
+**Using Multiple Candles**
 
 For strategies requiring multiple candle intervals or trading pairs, initialize separate instances:
 
@@ -44,9 +49,9 @@ class InitializingCandlesExample(ScriptStrategyBase):
     candles_2 = CandlesFactory.get_candle(candles_config_2)
 ```
 
-## Accessing Indicators and Displaying Status
+**Accessing Indicators and Displaying Status**
 
-### Adding Technical Indicators
+**Adding Technical Indicators**
 
 Incorporate technical indicators to candle data for enhanced strategy insights:
 
@@ -73,7 +78,7 @@ def format_status(self) -> str:
     return "\n".join(lines)
 ```
 
-### Displaying Candles in `status` Command
+**Displaying Candles in `status` Command**
 
 Modify the `format_status` method to display candlestick data:
 
@@ -99,7 +104,7 @@ def format_status(self) -> str:
     return "\n".join(lines)
 ```
 
-### Logging Candles Periodically
+**Logging Candles Periodically**
 
 To log candle data in the `on_tick` method:
 
@@ -108,7 +113,7 @@ def on_tick(self):
     self.logger().info(self.candles.candles_df)
 ```
 
-### Relevant Scripts
+**Relevant Scripts**
 
 Find practical examples of the Candles component in these Hummingbot scripts:
 
@@ -117,17 +122,17 @@ Find practical examples of the Candles component in these Hummingbot scripts:
 - [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/directional_strategy_rsi_spot.py)
 
 
-## Additional Key Methods and Properties
+**Additional Key Methods and Properties**
 
-### `start` and `stop` Methods
+`start` and `stop` Methods
 
 Control the initiation and termination of the candle data stream.
 
-### `is_ready` Property
+`is_ready` Property
 
 Check if the candle data is complete and ready for use.
 
-### `candles_df` Property
+`candles_df` Property
 
 Access the DataFrame containing the latest candle data.
 

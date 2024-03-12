@@ -174,6 +174,7 @@ nav:
         - Windows: installation/windows.md        
         - Raspberry Pi: installation/raspberry-pi.md
       - Post-Installation: installation/post-installation.md
+      - Using Debugger Tools: installation/debug.md
     - Client:
       - Client: client/index.md
       - User Interface: client/user-interface.md
@@ -211,19 +212,20 @@ nav:
       - Working with Tokens: gateway/tokens.md
       - Running Strategies and Scripts: gateway/running-dex-bots.md
       - Building Gateway Connectors: gateway/adding-dex-connectors.md
-    - V2 Strategies:
-      - V2 Strategies: strategies/index.md
-      - Sample Strategies: v2-strategies/examples/index.md
-      # - V2 Cheatsheet: v2-strategies/cheatsheet/index.md
-      - Architecture:
-        - Architecture: v2-strategies/index.md
-        - V2 Scripts: v2-strategies/v2-scripts/index.md
-        - Controllers: v2-strategies/controllers/index.md
-        - Candles: v2-strategies/candles/index.md
-        - Executors: v2-strategies/executors/index.md
-        - Executor Handlers: v2-strategies/executor-handlers/index.md
-        - Order Levels: v2-strategies/order-levels/index.md
-        # - Controller Examples: v2-strategies/controller-examples.md
+    - Strategies V2:
+      - Strategies V2: strategies/index.md
+      - Architecture: v2-strategies/index.md
+      - Executors: 
+        - Executors: v2-strategies/executors/index.md   
+        - PositionExecutor: v2-strategies/executors/positionexecutor.md
+        - DCAExecutor: v2-strategies/executors/dcaexecutor.md
+        - ArbitrageExecutor: v2-strategies/executors/arbitrage-executor.md
+        - TWAPExecutor: v2-strategies/executors/twapexecutor.md
+        - Executor Orchestrator: v2-strategies/executors/orchestrator.md
+      - Market Data Provider: v2-strategies/candles/index.md
+      - Controllers: v2-strategies/controllers/index.md
+      - Strategy V2 Walkthrough: v2-strategies/walkthrough.md 
+      - Controller Base Classes: v2-strategies/base-classes.md        
     - V1 Strategies:
       - V1 Strategies: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
