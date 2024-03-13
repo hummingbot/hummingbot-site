@@ -1,190 +1,110 @@
+# Base Classes
 
-## **Directional Trading Controller Base**
+Both the **DirectionalTradingControllerBase** and **MarketMakingControllerBase** classes serve as base classes for specific trading strategies within a larger trading system. However, they cater to fundamentally different trading strategies and have distinct operational focuses. 
 
-```python
+While both controllers are designed to manage trades within a trading system, they cater to different strategies and offer distinct points of customization to suit various trading objectives and market conditions.
 
-class DirectionalTradingControllerConfigBase(ControllerConfigBase):
-    """
-    This class represents the configuration required to run a Directional Strategy.
-    """
-    controller_type = "directional_trading"
-    connector_name: str = Field(
-        default="binance_perpetual",
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the name of the exchange to trade on (e.g., binance_perpetual):"))
-    trading_pair: str = Field(
-        default="WLD-USDT",
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the trading pair to trade on (e.g., WLD-USDT):"))
+### Strategy Focus
 
-    executor_amount_quote: Decimal = Field(
-        default=100.0,
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the amount of quote asset to use per executor (e.g., 100):"))
+- **Directional Trading**: Aims to profit from predicting the market's direction (up or down). It involves taking positions based on signals indicating the future price movement.
 
-    max_executors_per_side: int = Field(
-        default=2,
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the maximum number of executors per side (e.g., 2):"))
+- **Market Making**: Focuses on providing liquidity by placing both buy and sell orders near the current market price, aiming to profit from the spread between these orders.
 
-    cooldown_time: int = Field(
-        default=60 * 5, gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=False,
-            prompt=lambda mi: "Specify the cooldown time in seconds after executing a signal (e.g., 300 for 5 minutes):"))
+### Core Operations
 
-    leverage: int = Field(
-        default=20,
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Set the leverage to use for trading (e.g., 20 for 20x leverage). Set it to 1 for spot trading:"))
-    position_mode: PositionMode = Field(
-        default="HEDGE",
-        client_data=ClientFieldData(
-            prompt=lambda mi: "Enter the position mode (HEDGE/ONEWAY): ",
-            prompt_on_new=False
-        )
-    )
-    # Triple Barrier Configuration
-    stop_loss: Optional[Decimal] = Field(
-        default=Decimal("0.03"), gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt=lambda mi: "Enter the stop loss (as a decimal, e.g., 0.03 for 3%): ",
-            prompt_on_new=True))
-    take_profit: Optional[Decimal] = Field(
-        default=Decimal("0.02"), gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt=lambda mi: "Enter the take profit (as a decimal, e.g., 0.01 for 1%): ",
-            prompt_on_new=True))
-    time_limit: Optional[int] = Field(
-        default=60 * 45, gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt=lambda mi: "Enter the time limit in seconds (e.g., 2700 for 45 minutes): ",
-            prompt_on_new=True))
-    take_profit_order_type: OrderType = Field(
-        default="LIMIT",
-        client_data=ClientFieldData(
-            prompt=lambda mi: "Enter the order type for taking profit (LIMIT/MARKET): ",
-            prompt_on_new=True))
-    trailing_stop: Optional[TrailingStop] = Field(
-        default="0.015,0.003",
-        client_data=ClientFieldData(
-            prompt=lambda mi: "Enter the trailing stop as activation_price,trailing_delta (e.g., 0.015,0.003): ",
-            prompt_on_new=True))
+- **Directional Trading Controller**: Decides on buying or selling based on signals, with a focus on timing and direction.
+
+- **Market Making Controller**: Manages multiple buy and sell orders at different price levels, focusing on spread and order management.
+
+### Customization Points
+
+- **Directional Trading Controller**: Customization mainly revolves around signal generation (`get_signal`) and determining the conditions under which trades should be executed or stopped.
+
+- **Market Making Controller**: Customization involves defining how price levels are selected (`get_levels_to_execute`), how orders are priced and sized (`get_price_and_amount`), and when orders should be refreshed or stopped early.
+
+### Use Scenario Customization
+
+- **Directional Trading**: Suitable for strategies that rely on market trends, momentum, or other indicators predicting price movements. Customization allows for the implementation of various analytical models to generate trade signals.
+
+- **Market Making**: Best for scenarios where the goal is to profit from the bid-ask spread while providing liquidity. Customization can include adjusting the strategy based on market depth, volatility, and other market conditions to optimize spread and order placement.
 
 
-```
+---
+
+## Directional Trading Controller Base Class
+
+- **DirectionalTradingControllerBase**: Inherits from `ControllerBase`, indicating it is a specialized form of a more generic controller. This base class is designed to be extended by more specific directional trading strategies.
+
+### Constructor
+
+- **`__init__`**: Initializes the controller with a configuration object (`DirectionalTradingControllerConfigBase`) and any additional arguments. It stores the configuration in an instance variable for later use.
+
+### Core Methods
+
+- **`determine_executor_actions`**: This method determines the actions to be taken by the executor, which are operations to execute trades. It combines proposals from two separate methods: one for creating new actions and another for stopping actions, returning a list of actions to be executed.
+
+- **`update_processed_data`**: An asynchronous method that updates the processed data based on the current state of the strategy. It involves getting a signal (directional prediction) and updating the processed data accordingly.
+
+- **`get_signal`**: This is an abstract method meant to be implemented by subclasses. It should return a signal indicating the direction of the trade: positive for buy, negative for sell, and zero for no action.
+
+- **`create_actions_proposal`**: Proposes actions to create new trades based on the current market signal and conditions. It checks if a new executor (trade executor) can be created based on the signal, active executors, and cooldown conditions. If conditions are met, it constructs a `CreateExecutorAction` with the necessary trade parameters.
+
+- **`can_create_executor`**: Determines whether a new executor can be created based on the current signal, the number of active executors, and a cooldown period to prevent too frequent trading.
+
+- **`stop_actions_proposal`**: Proposes actions to stop existing trades. In the provided code, this method does not implement any logic and returns an empty list, indicating no stop actions are proposed by default.
+
+- **`get_executor_config`**: Constructs and returns a configuration for the executor based on the trade type, price, and amount. This method can be overridden in subclasses to customize the executor configuration.
 
 
-## **Market Making Controller Base**
+### Key Concepts and Customization Points
 
-```python
-class MarketMakingControllerConfigBase(ControllerConfigBase):
-    """
-    This class represents the base configuration for a market making controller.
-    """
-    controller_type: str = "market_making"
-    connector_name: str = Field(
-        default="binance_perpetual",
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the name of the exchange to trade on (e.g., binance_perpetual):"))
-    trading_pair: str = Field(
-        default="WLD-USDT",
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the trading pair to trade on (e.g., WLD-USDT):"))
-    total_amount_quote: float = Field(
-        default=100,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the total amount in quote asset to use for trading (e.g., 1000):"))
-    buy_spreads: List[float] = Field(
-        default="0.01,0.02",
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter a comma-separated list of buy spreads (e.g., '0.01, 0.02'):"))
-    sell_spreads: List[float] = Field(
-        default="0.01,0.02",
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter a comma-separated list of sell spreads (e.g., '0.01, 0.02'):"))
-    buy_amounts_pct: Union[List[float], None] = Field(
-        default=None,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=False,
-            prompt=lambda mi: "Enter a comma-separated list of buy amounts as percentages (e.g., '50, 50'), or leave blank to distribute equally:"))
-    sell_amounts_pct: Union[List[float], None] = Field(
-        default=None,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=False,
-            prompt=lambda mi: "Enter a comma-separated list of sell amounts as percentages (e.g., '50, 50'), or leave blank to distribute equally:"))
-    executor_refresh_time: int = Field(
-        default=60 * 5,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=True,
-            prompt=lambda mi: "Enter the refresh time in seconds for executors (e.g., 300 for 5 minutes):"))
-    cooldown_time: int = Field(
-        default=15,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt_on_new=False,
-            prompt=lambda mi: "Specify the cooldown time in seconds between after replacing an executor that traded (e.g., 15):"))
-    leverage: int = Field(
-        default=20,
-        client_data=ClientFieldData(
-            prompt_on_new=True,
-            prompt=lambda mi: "Set the leverage to use for trading (e.g., 20 for 20x leverage). Set it to 1 for spot trading:"))
-    position_mode: PositionMode = Field(
-        default="HEDGE",
-        client_data=ClientFieldData(
-            prompt=lambda mi: "Enter the position mode (HEDGE/ONEWAY): ",
-            prompt_on_new=False
-        )
-    )
-    # Triple Barrier Configuration
-    stop_loss: Optional[Decimal] = Field(
-        default=Decimal("0.03"), gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt=lambda mi: "Enter the stop loss (as a decimal, e.g., 0.03 for 3%): ",
-            prompt_on_new=True))
-    take_profit: Optional[Decimal] = Field(
-        default=Decimal("0.02"), gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt=lambda mi: "Enter the take profit (as a decimal, e.g., 0.01 for 1%): ",
-            prompt_on_new=True))
-    time_limit: Optional[int] = Field(
-        default=60 * 45, gt=0,
-        client_data=ClientFieldData(
-            is_updatable=True,
-            prompt=lambda mi: "Enter the time limit in seconds (e.g., 2700 for 45 minutes): ",
-            prompt_on_new=True))
-    take_profit_order_type: Optional[OrderType] = Field(
-        default="LIMIT",
-        client_data=ClientFieldData(
-            prompt=lambda mi: "Enter the order type for taking profit (LIMIT/MARKET): ",
-            prompt_on_new=True))
-    trailing_stop: Optional[TrailingStop] = Field(
-        default="0.015,0.003",
-        client_data=ClientFieldData(
-            prompt=lambda mi: "Enter the trailing stop as activation_price,trailing_delta (e.g., 0.015,0.003): ",
-            prompt_on_new=True))
+- **Signal-Based Trading**: The core of the directional trading strategy is signal generation (`get_signal`), which must be implemented by subclasses. The signal dictates whether to buy, sell, or hold.
 
-```
+- **Executor Actions**: The class decides on creating or stopping trades based on signals and conditions. This involves calculating the amount to trade and determining the trade type (buy or sell).
+
+- **Configurability and Extensibility**: The class is designed to be extended, allowing for customization of signal generation, action proposals, and executor configuration. Subclasses can override methods to implement specific trading logic.
+
+- **Cooldown and Execution Limits**: The controller includes mechanisms to limit trading frequency (`cooldown_time`) and the number of concurrent trades (`max_executors_per_side`), which are important for risk management.
+
+
+
+---
+
+
+## Market Making Controller Base Class 
+
+The `MarketMakingControllerBase` class is designed as a foundational component for implementing market making strategies. Market making involves providing liquidity to the market by placing buy and sell orders simultaneously in an attempt to profit from the spread between the buy and sell prices.
+
+It defines the structure for creating and managing orders but leaves specific strategy details, such as the calculation of price levels and amounts, to be implemented by subclasses.
+
+#### Class Definition
+
+- **MarketMakingControllerBase**: Inherits from `ControllerBase`, indicating it is a type of controller but specialized for market making strategies.
+
+#### Constructor
+
+- **`__init__`**: Initializes the controller with a specific configuration object (`MarketMakingControllerConfigBase`) and any additional arguments, storing the configuration for later use.
+
+#### Core Methods
+
+- **`determine_executor_actions`**: Determines the actions to be executed by the market maker, combining proposals for creating new actions and stopping existing ones.
+
+- **`create_actions_proposal`**: Proposes actions to create new orders based on the current state of the market and the controller's strategy. It involves determining which levels (price points) to execute trades at and generating the appropriate `CreateExecutorAction` for each.
+
+- **`get_levels_to_execute`**: Identifies which levels are currently active or need to be executed based on the controller's logic, including cooldown considerations.
+
+- **`stop_actions_proposal`**: Proposes actions to stop or refresh existing orders based on certain conditions, such as order refresh times and early stop criteria.
+
+- **`executors_to_refresh`**: Identifies which executors (orders) need to be refreshed based on their age and trading status.
+
+- **`executors_to_early_stop`**: Identifies executors that should be stopped early, potentially based on market conditions or other strategy-specific criteria. This method is designed to be overridden with custom behavior.
+
+- **`update_processed_data`**: Asynchronously updates the processed data for the controller, such as reference prices and spread multipliers, based on market data.
+
+- **`get_executor_config`**: Abstract method intended to be implemented by subclasses to define the configuration for executors based on level ID.
+
+- **`get_price_and_amount`**: Calculates the price and amount for orders at a given level ID, adjusting for spreads and market conditions.
+
+
+
 
