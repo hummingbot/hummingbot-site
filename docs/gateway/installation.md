@@ -14,7 +14,7 @@ You can also install Gateway on a standalone basis and then link it to Hummingbo
 
 Install the following dependencies:
 
-- [NodeJS](https://nodejs.org/) (use 16.0.0 or higher)
+- [NodeJS](https://nodejs.org/) (use 18.0.0 or higher)
 - [Yarn](https://yarnpkg.com/): run `npm install -g yarn` after installing NodeJS
 
 ### Installation
