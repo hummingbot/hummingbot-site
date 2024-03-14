@@ -21,8 +21,7 @@ Include the following debug configurations into the `launch.json` configuration 
 }
 ```
 
-By executing the `Start Debugging` command, the debugger will automatically attach itself to the Hummingbot process.
-The Hummingbot app will appear in the `integratedTerminal`. You may change this as desired.
+By executing the **Start Debugging** command which can be found under the **Run** menu at the top or pressing the <kbd>F5</kbd> key, the debugger will automatically attach itself to the Hummingbot process. The Hummingbot app will appear in the `integratedTerminal`. You may change this as desired.
 
 ## PyCharm
 

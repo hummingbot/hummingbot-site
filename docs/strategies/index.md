@@ -2,7 +2,21 @@
 
 ![](../v2-strategies/diagrams/8.png)
 
-Hummingbot is an open-source project that enables users to build and deploy automated trading strategies. The **Strategies V2** framework represents a significant advancement in trading strategy development, offering flexibility, real-time market data access, and the ability to test strategies with historical data.
+## What is a Strategy?
+
+Like a computer program, an algorithmic trading strategy is a set of automated processes that executes repeatedly:
+
+- **Data Collection**: Gathering real-time data from various sources
+- **Data Processing**: Analyzing data to identify patterns and make decisions
+- **Order Execution**: Placing and cancelling orders based on processed data
+
+A Hummingbot strategy loads a set of [connectors](../exchanges/index.md) that integrate into different centralized and decentralized exchanges, adaptable to the unique features of each trading venue's WebSocket/REST APIs and nodes.
+
+Each [clock tick](../global-configs/clock-tick.md), a strategy loads real-time order book snapshots, user balances, order status and other real-time data from trading pairs on these venues and executes the logic defined in the strategy, parametrized by a pre-defined user configuration.
+
+To run a strategy, a user selects a **base strategy**, defines its input parameters in a [config file](../client/config-files.md), and uses the `start` command in the Hummingbot client to run it. 
+
+We encourage users to create their own custom strategies and / or extend the existing examples.
 
 ## Strategies V2
 

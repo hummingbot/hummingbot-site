@@ -27,6 +27,7 @@ To create a script configuration file for the **v2_simple_directional_rsi.py** s
 
 [![script config](../diagrams/21.png)](../diagrams/21.png)
 
+Execute the command below to generate your script configuration:
 
 ```shell
 create --script-config v2_simple_directional_rsi
@@ -54,6 +55,8 @@ This command auto-completes with scripts from the local `/scripts` directory tha
 
 [![controller](../diagrams/22.png)](../diagrams/22.png)
 
+Execute the command below to start the script:
+
 ```shell
 start --script v2_simple_directional_rsi.py --conf conf_v2_simple_directional_rsi_1.yml
 ```
@@ -77,6 +80,8 @@ In this scenario, let's say we want to create a single bot that manages two dist
 ### Create the controller configs
 
 [![controller](../diagrams/15.png)](../diagrams/15.png)
+
+Execute the command below to generate the controller config:
 
 ```shell
 create --controller-config market.making.pmm_simple
@@ -106,7 +111,7 @@ Repeat the steps to create a new controller config, but this time, use **MYRO-US
 
 Also, adjust the buy and sell spreads to **0.02, 0.05**, and **0.02, 0.05**, respectively. Save this modified configuration under the file name **conf_market_making.pmm_simple_2.yml**
 
-You should now have two controller config files: 
+You should now have two controller config files under the **/conf/controllers/** folder:
 
 ```shell
 conf_market_making.pmm_simple_1.yml
@@ -117,10 +122,16 @@ conf_market_making.pmm_simple_2.yml
 
 [![script-config](../diagrams/16.png)](../diagrams/16.png)
 
+
+Execute the command below to generate the script config:
+
 ```
 create --script-config v2_generic_with_controllers
 
 ```
+
+!!! tip 
+    Once you create the initial controller config, it might be easier to edit this file and replace it with new controller configs rather than having to re-generate each time. 
 
 
 
@@ -133,6 +144,8 @@ Enter a new file name for your configuration >>> conf_v2_generic_with_controller
 ### Start the script 
 
 [![script-config](../diagrams/17.png)](../diagrams/17.png)
+
+Execute the command below to start the script:
 
 ```
 start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml

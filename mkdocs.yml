@@ -221,7 +221,6 @@ nav:
         - DCAExecutor: v2-strategies/executors/dcaexecutor.md
         - ArbitrageExecutor: v2-strategies/executors/arbitrage-executor.md
         - TWAPExecutor: v2-strategies/executors/twapexecutor.md
-        - Executor Orchestrator: v2-strategies/executors/orchestrator.md
       - Market Data Provider: v2-strategies/candles/index.md
       - Controllers: v2-strategies/controllers/index.md
       - Strategy V2 Walkthrough: v2-strategies/walkthrough.md 
