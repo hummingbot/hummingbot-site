@@ -64,8 +64,11 @@ start --script v2_simple_directional_rsi.py --conf conf_v2_simple_directional_rs
 The bot should now be running and start placing orders for both pairs. Run the **status** command to see the bot status.
 
 ```
-status --live
+status
 ```
+
+[![status](../diagrams/23.png)](../diagrams/23.png)
+
 
 ---
 
