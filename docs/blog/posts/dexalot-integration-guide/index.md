@@ -1,3 +1,12 @@
+---
+date: 2024-01-11
+authors:
+  - community
+categories:
+  - Guides
+---
+
+
 # Dexalot - Hummingbot Integration Guide
 
 ## Introduction
@@ -10,7 +19,7 @@ Welcome to our user guide which will embark you on a decentralized trading journ
 
 1. Visit the Dexalot App: <https://app.dexalot.com/trade/>
 2. At upper right, click **Connect Wallet**. Then, click on the **Checkboxes** and **Accept** button.
-
+ 
 ![images](02.png)
 
 Select your preferred wallet. In this guide, we will use Metamask.
