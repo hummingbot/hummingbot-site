@@ -35,7 +35,7 @@ An ecosystem of interconnected components let users customize their V2 Strategie
 
 * [V2 Script](/v2-strategies): This serves as the strategy's blueprint, outlining its configuration and interacting seamlessly with other components.
 * [Controller](/v2-strategies/controllers): Acting as the strategy's command center, the Controller interprets input from the V2 Script and steers the overall strategy. It manages Executors, which are crucial for order and position management.
-* [Candles](/v2-strategies/candles/): Providing a structured snapshot of market data, Candles are pivotal in generating analytical indicators for market analysis.
+* [Candles](/v2-strategies/data/): Providing a structured snapshot of market data, Candles are pivotal in generating analytical indicators for market analysis.
 * [Executors](/v2-strategies/executors/): These components autonomously manage orders and positions, ensuring alignment with the strategy's directives.
 
 

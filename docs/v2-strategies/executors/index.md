@@ -1,8 +1,13 @@
 
 ![executors](../diagrams/13.png)
 
-**Executors** in Hummingbot are integral components that handle the execution of orders according to predefined conditions set by **Controllers**, which, in turn, utilize data from the **MarketDataProvider** (Candles, Orderbook, Trades). Specifically, Executors are tasked with managing the state of orders—this involves initiating, refreshing, and canceling orders, as well as halting their own operation when certain conditions are met.
+**Executors** in Hummingbot are self-managing components that handle the execution of orders according to predefined conditions set by **Controllers**, which, in turn, utilize data from the **MarketDataProvider** (Candles, Orderbook, Trades). Executors are tasked with managing the state of orders — initiating, refreshing, and canceling orders, as well as halting their own operation when certain conditions are met.
 
+## **Types of Executors**
+
+* [**PositionExecutor**](positionexecutor.md)
+* [**DCAExecutor**](dcaexecutor.md)
+* [**ArbitrageExecutor**](arbitrage-executor.md)
 
 ## **Benefits of Executors**
 
@@ -10,20 +15,10 @@
 * Simplicity: They simplify strategy code, enabling users to create powerful strategies with ease.
 * Flexibility: By dynamically adjusting to market data, Executors can set spreads and shift prices, offering greater strategy adaptability.
 
-## **Types of Executors**
-
-Currently, there are three examples in the codebase: 
-
-[**PositionExecutor**](positionexecutor.md)
-
-[**DCAExecutor**](dcaexecutor.md)
-
-[**ArbitrageExecutor**](arbitrage-executor.md)
-
 
 ## **Executor Orchestrator**
 
-The **ExecutorOrchestrator** is a central component within the v2 trading strategies framework of Hummingbot, designed to facilitate the management and operation of various executor types. It serves as a utility class that enables trading strategies to dynamically create, stop, and manage executors, which are specialized units responsible for executing trading activities such as placing and managing orders. 
+The **ExecutorOrchestrator** serves as a utility class that enables trading strategies to dynamically create, stop, and manage executors, which are specialized units responsible for executing trading activities such as placing and managing orders. 
 
 ### Key Features and Operations
 
@@ -40,4 +35,3 @@ The **ExecutorOrchestrator** is a central component within the v2 trading strate
     * **Storing Executors**: The `StoreExecutorAction` enables the orchestrator to store executor data, facilitating persistence and analysis of executor performance over time.
 
 - **Performance Reporting**: The orchestrator can generate detailed performance reports for individual controllers or globally across all controllers. These reports include metrics such as realized and unrealized P&L (Profit and Loss), trading volume, and the distribution of close types, providing insights into the effectiveness of the trading strategy and its executors.
-

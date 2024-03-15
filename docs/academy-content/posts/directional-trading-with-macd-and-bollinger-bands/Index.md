@@ -50,7 +50,7 @@ By merging these indicators, we seek to pinpoint potential mean reversion points
 
 ## Directional Framework
 
-Our strategy employs the Directional Framework, which combines two novel features in Hummingbot: [Candles Feed](../../../v2-strategies/candles-feed.md) and [PositionExecutor](../../../v2-strategies/executors.md).
+Our strategy employs the Directional Framework, which combines two novel features in Hummingbot: [Candles Feed](../../../v2-strategies/data) and [PositionExecutor](../../../v2-strategies/executors.md).
 
 ![](./Screen-Shot-2023-04-21-at-3.04.45-PM.png)
 

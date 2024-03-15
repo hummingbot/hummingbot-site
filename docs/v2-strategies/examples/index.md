@@ -30,7 +30,7 @@ The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the lo
 
 Directional strategies inherit from the [DirectionalTrading](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/directional_trading/directional_trading_controller_base.py) strategy base class.
 
-In their controller's `get_processed_data` function, a directional strategy uses technical indicators derived from [Candles](/v2-strategies/candles/) to define thresholds which trigger long and short conditions using the `signal` parameter:
+In their controller's `get_processed_data` function, a directional strategy uses technical indicators derived from [Candles](/v2-strategies/data/) to define thresholds which trigger long and short conditions using the `signal` parameter:
 
 * `1`: Long [Position Executor](/v2-strategies/executors/#positionexecutor) is created
 * `-1`: Short [Position Executor](/v2-strategies/executors/#positionexecutor) is created

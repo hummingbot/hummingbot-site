@@ -1,7 +1,7 @@
-# Strategies V2 Use Cases
 
+We present two example below to guide users in selecting a Strategy V2 base template:
 
-| **Strategies V2 Simple**                                                                 | **Strategies V2 + Controller**                                                                 |
+| Simple Strategy V2                                                                 | Strategy V2 with Controller                                                                 |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | The strategy is relatively simple                                                    | You want to manage the risk and diversify your portfolio in different controllers           |
 | The logic is very standard across different trading pairs                             | The strategy is complex and you want to isolate the decision making                         |
@@ -10,28 +10,32 @@
 | Prototype a strategy                                                                  | You are familiar with the Strategy V2 and how the controllers interact with it              |
 
 
-
-
-## Simple Strategy V2 
+## Simple Strategy V2
 
 ![simple](diagrams/9.png)
 
-In this example, we'll show you how to create a script config and run the [**v2_simple_directional_rsi.py**](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_simple_directional_rsi.py) strategy. This strategy executes trades based on the RSI indicator's signals, creating buy actions when the RSI is below a low threshold (indicating oversold conditions) and sell actions when the RSI is above a high threshold (indicating overbought conditions). 
+In this example, we'll show you how to create a script config and run the [**v2_simple_directional_rsi.py**](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_simple_directional_rsi.py) strategy. 
 
-It also includes logic to stop actions based on the opposite signals. It also incorporates a risk management approach using a **triple barrier configuration**, which includes stop loss, take profit, and a time limit for each trade.
+This strategy executes trades on a spot or perpetual exchange based on the RSI signals from the [Market Data Provider](/v2-strategies/data/), creating buy actions when the RSI is below a low threshold (indicating oversold conditions) and sell actions when the RSI is above a high threshold (indicating overbought conditions).  
+
+It utilizes the [Position Executor](/v2-strategies/executors/positionexecutor/) component, which uses a triple barrier configuration that applies user-defined stop loss, take profit, and time limit levels for each trade.
 
 
 ### Create script config
 
-To create a script configuration file for the **v2_simple_directional_rsi.py** script, launch Hummingbot and execute:
-
 [![script config](../diagrams/21.png)](../diagrams/21.png)
 
-Execute the command below to generate your script configuration:
+First, let's create a script config file that defines the key strategy parameters.
+
+Launch Hummingbot and execute the command below to generate your script configuration:
 
 ```shell
 create --script-config v2_simple_directional_rsi
 ```
+
+This command auto-completes with the subset of configurable scripts from the local `/scripts` directory.
+
+You'll be prompted to specify the strategy parameters, which are then saved in a YAML file within the `conf/scripts` directory:
 
 ```shell
 Enter markets in format exchange1.tp1,tp2:exchange2.tp1,tp2 >> binance_perpetual.JASMY-USDT,RLC-USDT
@@ -48,9 +52,6 @@ Enter the time limit in seconds >> 2700
 Enter a new file name for your configuration >> conf_v2_simple_directional_rsi_1.yml
 ```
 
-This command auto-completes with scripts from the local `/scripts` directory that are configurable. You'll be prompted to specify strategy parameters, which are then saved in a YAML file within the `conf/scripts` directory. 
-
-
 ### Run the script 
 
 [![controller](../diagrams/22.png)](../diagrams/22.png)
@@ -61,18 +62,13 @@ Execute the command below to start the script:
 start --script v2_simple_directional_rsi.py --conf conf_v2_simple_directional_rsi_1.yml
 ```
 
-The bot should now be running and start placing orders for both pairs. Run the **status** command to see the bot status.
+The strategy makes a series of market checks and initializes the market data provider. Afterwards, it should start placing orders for both pairs. 
 
-```
-status
-```
+Run the `status` command to see the status of the running strategy:
 
 [![status](../diagrams/23.png)](../diagrams/23.png)
 
-
----
-
-## Strategies V2 + Controller(s)
+## Strategies V2 with Controller
 
 ![advanced](diagrams/11.png)
 

@@ -56,10 +56,10 @@ theme:
 
 plugins:
   - search
-  - social:
-      cards_layout_options:
-        background_color: "#151819"
-        color: "#5FFFD7"
+  # - social:
+  #     cards_layout_options:
+  #       background_color: "#151819"
+  #       color: "#5FFFD7"
   - blog:
       blog_dir: blog
       blog_toc: true
@@ -214,19 +214,20 @@ nav:
       - Building Gateway Connectors: gateway/adding-dex-connectors.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
+      - Walkthrough: v2-strategies/walkthrough.md 
       - Architecture: v2-strategies/index.md
+      - Scripts: v2-strategies/v2-scripts/index.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - PositionExecutor: v2-strategies/executors/positionexecutor.md
         - DCAExecutor: v2-strategies/executors/dcaexecutor.md
         - ArbitrageExecutor: v2-strategies/executors/arbitrage-executor.md
         - TWAPExecutor: v2-strategies/executors/twapexecutor.md
-      - Market Data Provider: v2-strategies/candles/index.md
+      - Market Data Provider: v2-strategies/data/index.md
       - Controllers: v2-strategies/controllers/index.md
-      - Strategy V2 Walkthrough: v2-strategies/walkthrough.md 
       - Controller Base Classes: v2-strategies/base-classes.md        
-    - V1 Strategies:
-      - V1 Strategies: v1-strategies/index.md
+    - Strategies V1:
+      - Strategies V1: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
       - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
       - AMM Arbitrage: strategies/amm-arbitrage.md
