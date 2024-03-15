@@ -30,16 +30,23 @@ Customization involves defining how price levels are selected (`get_levels_to_ex
 
 User may also adjust the strategy based on market depth, volatility, and other market conditions to optimize spread and order placement.
 
-- [dman_maker](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/dman_maker.py)
-- [pmm_dynamic](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_dynamic.py)
 - [pmm_simple](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py)
+- [pmm_dynamic](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_dynamic.py)
+- [dman_maker](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/dman_maker.py)
 
 
 ## Base Classes
 
-### Directional Trading
+Controllers inherit from base classes that define the general behavior of a type of trading strategy, which are designed to be extended by more specific strategies. These base classes all inherit from the [ControllerBase](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/controller_base.py) generic controller. 
 
-- **DirectionalTradingControllerBase**: Inherits from `ControllerBase`, indicating it is a specialized form of a more generic controller. This base class is designed to be extended by more specific directional trading strategies.
+Currently, the controller base classes available are:
+
+* Directional Trading
+* Market Making
+
+### Directional Trading Controller
+
+- Base class: [directional_trading_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/directional_trading_controller_base.py)
 
 #### Constructor
 
@@ -61,7 +68,6 @@ User may also adjust the strategy based on market depth, volatility, and other m
 
 - **`get_executor_config`**: Constructs and returns a configuration for the executor based on the trade type, price, and amount. This method can be overridden in subclasses to customize the executor configuration.
 
-
 #### Key Concepts and Customization Points
 
 - **Signal-Based Trading**: The core of the directional trading strategy is signal generation (`get_signal`), which must be implemented by subclasses. The signal dictates whether to buy, sell, or hold.
@@ -73,15 +79,9 @@ User may also adjust the strategy based on market depth, volatility, and other m
 - **Cooldown and Execution Limits**: The controller includes mechanisms to limit trading frequency (`cooldown_time`) and the number of concurrent trades (`max_executors_per_side`), which are important for risk management.
 
 
-### Market Making
+### Market Making Controller
 
-The `MarketMakingControllerBase` class is designed as a foundational component for implementing market making strategies. Market making involves providing liquidity to the market by placing buy and sell orders simultaneously in an attempt to profit from the spread between the buy and sell prices.
-
-It defines the structure for creating and managing orders but leaves specific strategy details, such as the calculation of price levels and amounts, to be implemented by subclasses.
-
-#### Class Definition
-
-- **MarketMakingControllerBase**: Inherits from `ControllerBase`, indicating it is a type of controller but specialized for market making strategies.
+- Base class: [market_making_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/market_making_controller_base.py)
 
 #### Constructor
 

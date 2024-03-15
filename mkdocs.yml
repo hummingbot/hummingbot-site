@@ -216,7 +216,6 @@ nav:
       - Strategies V2: strategies/index.md
       - Walkthrough: v2-strategies/walkthrough.md 
       - Architecture: v2-strategies/index.md
-      - Scripts: v2-strategies/v2-scripts/index.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - PositionExecutor: v2-strategies/executors/positionexecutor.md
@@ -225,7 +224,10 @@ nav:
         - TWAPExecutor: v2-strategies/executors/twapexecutor.md
       - Market Data Provider: v2-strategies/data/index.md
       - Controllers: v2-strategies/controllers/index.md
-      - Controller Base Classes: v2-strategies/base-classes.md        
+    - Scripts:
+      - Scripts: scripts/index.md
+      - Sample Scripts: scripts/examples.md
+      - Scripts Cheatsheat: scripts/cheatsheet.md
     - Strategies V1:
       - Strategies V1: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
@@ -254,10 +256,6 @@ nav:
         - Price Band: strategy-configs/price-band.md
         - Price Source: strategy-configs/external-price-source.md
         - Ping Pong: strategy-configs/ping-pong.md
-    - Scripts:
-      - Scripts: scripts/index.md
-      - Sample Scripts: scripts/examples.md
-      - Scripts Cheatsheat: scripts/cheatsheet.md
     - Connectors:
       - Connectors: exchanges/index.md
       - CEX Connectors:

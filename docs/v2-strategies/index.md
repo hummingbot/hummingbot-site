@@ -2,11 +2,9 @@
 
 The Strategies V2 framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. The most important components to understand are:
 
-* [**Scripts**](./v2-scripts/index.md): Entry point for a strategy
 * [**Executors**](./executors/index.md): Components that manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
 * [**Market Data Provider**](./data/index.md): Provides access to exchange market data such as historical OHCLV candles, order book data, and trades.
-* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a base class
-* [**Controller Base Classes**](./base-classes.md): Introduction of the `DirectionalTradingControllerBase` and `MarketMakingControllerBase` classes
+* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a controller base class
 
 !!! tip
     Controllers now have access to the MarketDataProvider and works like a sub-strategy,  which means users can now run a script using multiple controllers.  

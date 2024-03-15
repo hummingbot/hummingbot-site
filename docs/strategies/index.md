@@ -16,31 +16,17 @@ To run a strategy, a user selects a base strategy template, defines its input pa
 
 We encourage users to create their own custom strategies and/or extend the existing examples.
 
-## Hummingbot Strategy Frameworks
+## Strategy V2
 
-### Strategy V2
+Hummingbot's new Strategy V2 framework allows you to build powerful, dynamic strategies using Lego-like components.
 
-Hummingbot's Strategy V2 Framework represent the latest innovation in trading strategy development. These strategies are dynamic and composable, allowing non-technical users to build powerful strategies using Lego-like components.
-
-* [Walkthrough](../v2-strategies/walkthrough.md)
-* [Architecture](../v2-strategies/index.md)
+* [Walkthrough](../v2-strategies/walkthrough.md): Detailed walkthroughs of simple and advanced Strategy V2 examples
+* [Architecture](../v2-strategies/index.md): Learn how to use key components like Executors and Controllers
+* [Sample Scripts](../scripts/examples.md): Sample Strategy V2 scripts
 
 ### Strategy V1
 
-The [original Hummingbot V1 strategies](../v1-strategies/index.md) offer a structured, template-based environment with user-friendly parameters, but they are less customizable than V2 strategies.
+The original Hummingbot [strategies](../v1-strategies/index.md) offer a structured, template-based environment with user-friendly parameters, but they are less customizable than those built using the Strategy V2 framework.
 
-### Scripts
-
-[Scripts](../scripts/index.md) provide a way to compose a lightweight, simple strategy in a single Python file.
-
----
-
-<div class="grid cards" markdown>
-
--   ## 🎓 Learn Strategy Development in Botcamp
-
-    ---
-
-    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](/botcamp), which teaches you how to design, backtest and deploy advanced algo trading and market making strategies using Hummingbot.
-
-</div>
+!!! tip Learn to Develop Algo Trading Strategies
+    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](https://www.botcamp.xyz), which teaches you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.
