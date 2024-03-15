@@ -214,8 +214,8 @@ nav:
       - Building Gateway Connectors: gateway/adding-dex-connectors.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
-      - Walkthrough: v2-strategies/walkthrough.md 
       - Architecture: v2-strategies/index.md
+      - Walkthrough: v2-strategies/walkthrough.md 
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - PositionExecutor: v2-strategies/executors/positionexecutor.md

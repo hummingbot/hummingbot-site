@@ -1,12 +1,11 @@
-
-We present two example below to guide users in selecting a Strategy V2 base template:
+The Strategy V2 framework can be used to build strategies with or without separate Controllers. Below, we present two examples below to show you how to build both types:
 
 | Simple Strategy V2                                                                 | Strategy V2 with Controller                                                                 |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | The strategy is relatively simple                                                    | You want to manage the risk and diversify your portfolio in different controllers           |
 | The logic is very standard across different trading pairs                             | The strategy is complex and you want to isolate the decision making                         |
 | The strategy only trades on one trading pair                                          | You want to try multiple configs in the same bot                                            |
-| You are getting started with executors and you want a simple way to code your strategy | The strategy trades on multiple trading pairs                                               |
+| You are getting started with Executors and you want a simple way to code your strategy | The strategy trades on multiple trading pairs                                               |
 | Prototype a strategy                                                                  | You are familiar with the Strategy V2 and how the controllers interact with it              |
 
 
@@ -14,12 +13,11 @@ We present two example below to guide users in selecting a Strategy V2 base temp
 
 ![simple](diagrams/9.png)
 
-In this example, we'll show you how to create a script config and run the [**v2_simple_directional_rsi.py**](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_simple_directional_rsi.py) strategy. 
+In this example, we'll show you how to configure and run a simple directional trading strategy, which is defined in the [v2_simple_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_simple_directional_rsi.py) script.
 
 This strategy executes trades on a spot or perpetual exchange based on the RSI signals from the [Market Data Provider](/v2-strategies/data/), creating buy actions when the RSI is below a low threshold (indicating oversold conditions) and sell actions when the RSI is above a high threshold (indicating overbought conditions).  
 
-It utilizes the [Position Executor](/v2-strategies/executors/positionexecutor/) component, which uses a triple barrier configuration that applies user-defined stop loss, take profit, and time limit levels for each trade.
-
+After each trade, the strategy utilizes the [Position Executor](/v2-strategies/executors/positionexecutor/) component, which uses a triple barrier configuration to manage the P&L of the position or filled order.
 
 ### Create script config
 
@@ -64,19 +62,28 @@ start --script v2_simple_directional_rsi.py --conf conf_v2_simple_directional_rs
 
 The strategy makes a series of market checks and initializes the market data provider. Afterwards, it should start placing orders for both pairs. 
 
-Run the `status` command to see the status of the running strategy:
+Run the `status` command to see the status (asset balances, active orders and positions) of the running strategy:
 
 [![status](../diagrams/23.png)](../diagrams/23.png)
 
 ## Strategies V2 with Controller
 
+In a more complex example, the strategy logic is housed in a [Controller](./controllers/index.md), and the user generates a controller configuration that is run with a generic script, which acts as a controller loader.
+
+This allows users to run multiple configurations, as well as multiple controllers, in a single script.
+
 ![advanced](diagrams/11.png)
 
+Let's say we want to create a single bot that provides liquidity to two distinct trading pairs on Binance Futures, each configured with unique buy and sell spreads, order amounts, and other pair-specific parameters. In the past, users had to run separate Hummingbot instances for each configuration, each running a separate strategy or script. 
 
-In this scenario, let's say we want to create a single bot that manages two distinct trading pairs on **Binance Perpetual**, each configured with unique buy and sell spreads. To achieve this, we can utilize the [**v2_generic_with_controllers.py**](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_generic_with_controllers.py) script alongside the [**pmm_simple.py**](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py) controller. The initial step involves generating a separate controller configuration for each trading pair.
+Now, this can be handled in a single strategy using the [pmm_simple.py](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py) controller. 
+
+First, we will generate pair-specific configurations. Then, we can run these configurations all at once with the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_generic_with_controllers.py) generic script.
 
 
 ### Create the controller configs
+
+The initial step involves generating a separate controller configuration for each trading pair.
 
 [![controller](../diagrams/15.png)](../diagrams/15.png)
 
@@ -104,13 +111,15 @@ Enter a file name for your configuration >> conf_market_making.pmm_simple_1.yml
 
 ```
 
-This will create the **conf_market_making.pmm_simple_1.yml** controller config file under the **conf/controllers** folder 
+This will create the `conf_market_making.pmm_simple_1.yml` controller config file under the `/conf/controllers` folder 
 
-Repeat the steps to create a new controller config, but this time, use **MYRO-USDT** as the trading pair. 
+---
 
-Also, adjust the buy and sell spreads to **0.02, 0.05**, and **0.02, 0.05**, respectively. Save this modified configuration under the file name **conf_market_making.pmm_simple_2.yml**
+Now, repeat the steps above to create a new controller config. 
 
-You should now have two controller config files under the **/conf/controllers/** folder:
+This time, use a different trading pair, and different buy and sell spreads. Save this modified configuration under the file name `conf_market_making.pmm_simple_2.yml`.
+
+Afterwards, you should now have two controller config files under the `/conf/controllers/` folder:
 
 ```shell
 conf_market_making.pmm_simple_1.yml
@@ -122,23 +131,24 @@ conf_market_making.pmm_simple_2.yml
 [![script-config](../diagrams/16.png)](../diagrams/16.png)
 
 
-Execute the command below to generate the script config:
+Execute the command below to generate the script config file:
 
 ```
 create --script-config v2_generic_with_controllers
 
 ```
 
-!!! tip 
-    Once you create the initial controller config, it might be easier to edit this file and replace it with new controller configs rather than having to re-generate each time. 
-
-
+Enter the file names of your controller configs, separated by commas:
 
 ```python
 Enter controller configurations >>> conf_market_making.pmm_simple_1.yml, conf_market_making.pmm_simple_2.yml
 Enter a new file name for your configuration >>> conf_v2_generic_with_controllers_1.yml
 
 ```
+
+!!! tip 
+    Once you create the initial generic script config, it might be easier to edit this file and replace it with new controller names rather than having to re-generate it each time. 
+
 
 ### Start the script 
 
@@ -150,7 +160,7 @@ Execute the command below to start the script:
 start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
 ```
 
-The bot should now be running and start placing orders for both pairs. Run the **status** command to see the bot status.
+The bot should now be running and start placing orders for both pairs. Run the `status` command to see the bot status.
 
 ```
 status --live
@@ -158,40 +168,18 @@ status --live
 
 [![status](../diagrams/20.png)](../diagrams/20.png)
 
-### Changing Configs
+### Changing configs
 
-Let's say we want to modify the script config and add a third controller config that we created using the **dman_v3** directional controller. 
+Users often need to modify the strategy configuration as it is running. In the Strategies V2 framework, the configs are **dynamic**, so you just need to save changes to the config files
 
-Open a terminal and make sure you are inside the Hummingbot folder and then enter the command below: 
+Let's say we want to adjust the order spreads or refresh time for the first pair above.
 
-```
-nano conf/scripts/conf_v2_generic_with_controllers_1.yml
-```
-
-[![script-config](../diagrams/18.png)](../diagrams/18.png)
-
-```shell
-markets: {}
-candles_config: []
-controllers_config:
-- conf_market_making.pmm_simple_1.yml
-- conf_market_making.pmm_simple_2.yml
-config_update_interval: 60
-script_file_name: v2_generic_with_controllers.py
-```
-
-This will open up nano - a Linux text editor.  Add **-conf_directional_trading.dman_v3_1.yml** or whatever you named your controller config file to the list of controller configs then press <kbd>CTRL</kbd> + <kbd>O</kbd> to save, then <kbd>CTRL</kbd> + <kbd>X</kbd> to exit.
-
-If you don't have or are not familiar with **nano** you can also use **VSCode** or any other text / IDE editor you are familiar with. Just browse to the **/conf/scripts** folder to edit the script config file. 
-
-
-Let's say we want to modify the controller configs to increase / decrease the spreads or adjust the refresh time. The controller config files are under the **conf/controllers** folder within Hummingbot so if using nano again as our text editor we can open a terminal, browse to the Hummingbot folder then enter the command below:
-
+The controller config files are under the `/conf/controllers/` folder within your instance. Browse to the Hummingbot folder then enter the command below:
 ```
 nano conf/controllers/conf_market_making.pmm_simple_1.yml
 ```
 
-[![script-config](../diagrams/19.png)](../diagrams/19.png)
+This will open up Nano - a Linux text editor. You can also use Visual Studio Code or any other text editor you prefer.
 
 ```shell
 id: EsRCab7Lw3CwqtBe524QvzG5i7ZDWJzoX787ZncknFoy
@@ -225,6 +213,7 @@ trailing_stop:
 ```
 
 
-Just replace the **conf_market_making.pmm_simple_1.yml** with the actual controller config name you want to modify. Make the necessary changes you want here then press <kbd>CTRL</kbd> + <kbd>O</kbd> to save, then <kbd>CTRL</kbd> + <kbd>X</kbd> to exit.
+Make the necessary changes you want here then press <kbd>CTRL</kbd> + <kbd>O</kbd> to save, then <kbd>CTRL</kbd> + <kbd>X</kbd> to exit. 
 
-One cool feature of the new Strategies V2 framework is that the configs are **dynamic** so let's say you made changes to the buy / ask spreads, once you save the changes you'll see the spreads change on the next refresh. 
+If you edit and save changes to the controller config file, you'll see the spreads change on the next refresh, which is set by the `config_update_interval` parameter (default: 60 seconds).
+

@@ -1,28 +1,74 @@
 [![](./architecture.png)](./architecture.png)
 
-The Strategies V2 framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. The most important components to understand are:
+The Strategy V2 framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. 
 
+The most important components to understand are:
+
+* Script: Defines the strategy logic using the components below
 * [**Executors**](./executors/index.md): Components that manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
 * [**Market Data Provider**](./data/index.md): Provides access to exchange market data such as historical OHCLV candles, order book data, and trades.
-* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a controller base class
+* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a controller base class.
 
-!!! tip
-    Controllers now have access to the MarketDataProvider and works like a sub-strategy,  which means users can now run a script using multiple controllers.  
+## StrategyV2 Script
 
-## Why Strategies V2?
+The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class.
 
-The development of the Strategies V2 framework was motivated by the need to overcome several challenges and limitations of the previous strategy implementation:
+See [Sample Scripts](/v2-strategies/examples) for examples.
 
-- **Scalability Issues:** Initially, each trading strategy was limited to a single bot, complicating management and scalability across various strategies and scenarios.
+### Script Config Parameters
 
-- **Lack of Historical Data Support:** Earlier strategies couldn't leverage historical market data, requiring traders to wait for real-time data accumulation before trading.
+To add parameters to your script, extend the `StrategyV2ConfigBase` class to defines a set of configuration parameters that are stored in a config file. Questions marked `prompt_on_new` are displayed wben the config file is created from the client.
 
-- **Complex Order and Event Tracking:** Managing multiple orders across different pairs and exchanges was cumbersome, especially when adjusting strategies in response to market changes.
+```python
+    markets: Dict[str, Set[str]] = Field(
+        default="binance_perpetual.JASMY-USDT,RLC-USDT",
+        client_data=ClientFieldData(
+            prompt_on_new=True,
+            prompt=lambda mi: (
+                "Enter markets in format 'exchange1.tp1,tp2:exchange2.tp1,tp2':"
+            )
+        )
+    )
+    candles_config: List[CandlesConfig] = Field(
+        default="binance_perpetual.JASMY-USDT.1m.500:binance_perpetual.RLC-USDT.1m.500",
+        client_data=ClientFieldData(
+            prompt_on_new=True,
+            prompt=lambda mi: (
+                "Enter candle configs in format 'exchange1.tp1.interval1.max_records:"
+                "exchange2.tp2.interval2.max_records':"
+            )
+        )
+    )
+```
 
-- **Explainability and Improvement Challenges:** The lack of clear action-outcome correlations made it difficult to analyze and improve strategy performance.
+### `on_tick` method
 
-- **Repetitive Behavior Implementation:** Common behaviors, like order refreshing in market making, were often redundantly implemented, leading to inefficiencies.
+This method acts as the strategy's heartbeat, is called regularly, and allows the strategy to adapt to new market conditions in real time.
 
-- **Technical Barriers to Market Data Access:** The necessity for a deep understanding of foundational classes and the use of Cython obscured type hints and steepened the learning curve.
+```python
+def on_tick(self):
+    for executor_handler in self.executor_handlers.values():
+        if executor_handler.status == ExecutorHandlerStatus.NOT_STARTED:
+            executor_handler.start()
+```
 
-- **Limited Backtesting Capabilities:** The original framework's lack of comprehensive backtesting tools restricted strategy evaluation against historical data.
+### `format_status` method
+
+This overrides the standard `status` function and provides a formatted string representing the current status of the strategy, including the name, trading pair, and status of each executor.
+
+Users can customize this function to display their custom strategy variables.
+
+```python
+def format_status(self) -> str:
+        if not self.ready_to_trade:
+            return "Market connectors are not ready."
+        lines = []
+        for trading_pair, executor_handler in self.executor_handlers.items():
+            lines.extend(
+                [f"Strategy: {executor_handler.controller.config.strategy_name} | Trading Pair: {trading_pair}",
+                 executor_handler.to_format_status()])
+        return "\n".join(lines)
+```
+
+!!! tip Learn to Develop Algo Trading Strategies
+    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](https://www.botcamp.xyz), which teaches you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.
