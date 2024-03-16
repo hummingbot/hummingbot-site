@@ -218,12 +218,13 @@ nav:
       - Walkthrough: v2-strategies/walkthrough.md 
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
-        - PositionExecutor: v2-strategies/executors/positionexecutor.md
-        - DCAExecutor: v2-strategies/executors/dcaexecutor.md
-        - ArbitrageExecutor: v2-strategies/executors/arbitrage-executor.md
-        - TWAPExecutor: v2-strategies/executors/twapexecutor.md
-      - Market Data Provider: v2-strategies/data/index.md
+        - Position Executor: v2-strategies/executors/positionexecutor.md
+        - DCA Executor: v2-strategies/executors/dcaexecutor.md
+        - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
+        - TWAP Executor: v2-strategies/executors/twapexecutor.md
       - Controllers: v2-strategies/controllers/index.md
+      - Market Data Provider: v2-strategies/data/index.md
+      - Candles: v2-strategies/candles/index.md
     - Scripts:
       - Scripts: scripts/index.md
       - Sample Scripts: scripts/examples.md

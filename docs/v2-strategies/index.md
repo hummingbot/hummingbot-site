@@ -1,23 +1,21 @@
-[![](./architecture.png)](./architecture.png)
-
 The Strategy V2 framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. 
 
 The most important components to understand are:
 
-* Script: Defines the strategy logic using the components below
+* **Script**: Defines the strategy logic using the components below
 * [**Executors**](./executors/index.md): Components that manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
-* [**Market Data Provider**](./data/index.md): Provides access to exchange market data such as historical OHCLV candles, order book data, and trades.
 * [**Controllers**](./controllers/index.md): Defines a trading strategy based on a controller base class.
+* [**Market Data Provider**](./data/index.md): Provides access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
 
 ## StrategyV2 Script
 
-The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class.
+[![](./diagrams/14.png)](./diagrams/14.png)
 
-See [Sample Scripts](/v2-strategies/examples) for examples.
+The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class. See [Sample Scripts](/v2-strategies/examples) for examples.
 
-### Script Config Parameters
+### Script Configs
 
-To add parameters to your script, extend the `StrategyV2ConfigBase` class to defines a set of configuration parameters that are stored in a config file. Questions marked `prompt_on_new` are displayed wben the config file is created from the client.
+To add user-defined parameters to your script, extend the `StrategyV2ConfigBase` class to defines a set of configuration parameters that are stored in a config file. Questions marked `prompt_on_new` are displayed wben the config file is created from the client.
 
 ```python
     markets: Dict[str, Set[str]] = Field(

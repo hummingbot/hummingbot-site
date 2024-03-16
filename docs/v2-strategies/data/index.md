@@ -1,138 +1,131 @@
 
-![market-data](../diagrams/14.png)
+The [Market Data Provider](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/data_feed/market_data_provider.py) service simplifies access to real-time market data with the following methods. 
+
+Any scripts can instantiate the Market Data Provider:
+
+```python
+from hummingbot.data_feed.market_data_provider import MarketDataProvider
+```
+
+Below are a some methods that it contains. Each method receives the connector name, trading pair, and other arguments that can be defined as config parameters.
+
+
+## Price
+
+```python
+    def get_price_by_type(self, connector_name: str, trading_pair: str, price_type: PriceType):
+        """
+        Retrieves the price for a trading pair from the specified connector.
+        :param connector_name: str
+        :param trading_pair: str
+        :param price_type: str
+        :return: Price instance.
+        """
+        connector = self.get_connector(connector_name)
+        return connector.get_price_by_type(trading_pair, price_type)
+```
+
+**Example:**
+
+```python
+price = self.market_data_provider.get_price_by_type('binance', 'BTC-USDT', PriceType.MidPrice)
+```
+
+---
+
+```python
+    def get_price_for_volume(self, connector_name: str, trading_pair: str, volume: float,
+                             is_buy: bool) -> OrderBookQueryResult:
+        """
+        Gets the price for a specified volume on the order book.
+
+        :param connector_name: The name of the connector.
+        :param trading_pair: The trading pair for which to retrieve the data.
+        :param volume: The volume for which to find the price.
+        :param is_buy: True if buying, False if selling.
+        :return: OrderBookQueryResult containing the result of the query.
+        """
+
+        order_book = self.get_order_book(connector_name, trading_pair)
+        return order_book.get_price_for_volume(is_buy, volume)
+```
+
+**Example:**
+
+```python
+price = self.market_data_provider.get_price_by_volume('binance', 'BTC-USDT', volume: 10000, True)
+```
+
+
+## Volume
+
+```python
+    def get_volume_for_price(self, connector_name: str, trading_pair: str, price: float, is_buy: bool) -> OrderBookQueryResult:
+        """
+        Gets the volume for a specified price on the order book.
+
+        :param connector_name: The name of the connector.
+        :param trading_pair: The trading pair for which to retrieve the data.
+        :param price: The price for which to find the volume.
+        :param is_buy: True if buying, False if selling.
+        :return: OrderBookQueryResult containing the result of the query.
+        """
+        order_book = self.get_order_book(connector_name, trading_pair)
+        return order_book.get_volume_for_price(is_buy, price)
+```
+
+**Example:**
+
+```python
+price = self.market_data_provider.get_volume_for_price('binance', 'BTC-USDT', 70000, True)
+```
 
 ## Order Book
 
-## Trades
+```python
+    def get_order_book_snapshot(self, connector_name, trading_pair) -> Tuple[pd.DataFrame, pd.DataFrame]:
+        """
+        Retrieves the order book snapshot for a trading pair from the specified connector, as a tuple of bid and ask in
+        DataFrame format.
+        :param connector_name: str
+        :param trading_pair: str
+        :return: Tuple of bid and ask in DataFrame format.
+        """
+        order_book = self.get_order_book(connector_name, trading_pair)
+        return order_book.snapshot
+```
+
+**Example:**
+
+```python
+price = self.market_data_provider.get_order_book_snapshot('binance', 'BTC-USDT')
+```
 
 ## Candles
 
-The Candles component in Hummingbot is crucial for traders to generate and utilize OHLCV (Open, High, Low, Close, Volume) data. It combines historical and real-time data to create custom technical indicators, leveraging [pandas_ta](https://github.com/twopirllc/pandas-ta).
-
-**Configuration and Usage Examples**
-
-**Instantiating Candles**
-
-To use the Candles component, instantiate it in your script. Here's how to set it up for a single market:
+[Candles](../candles/index.md) are trailing intervals of OHCLV data that can be used to generate custom indicators.
 
 ```python
-from hummingbot.data_feed.candles_feed.candles_factory import CandlesConfig
-
-# Configure the candles
-conf = CandlesConfig(connector="binance", trading_pair="BTC-USDT", interval="5m", max_records=100)
-
-# Example of using this configuration in a strategy
-config = DManV3Config(candles_config=[conf])
+    def get_candles_df(self, connector_name: str, trading_pair: str, interval: str, max_records: int = 500):
+        """
+        Retrieves the candles for a trading pair from the specified connector.
+        :param connector_name: str
+        :param trading_pair: str
+        :param interval: str
+        :param max_records: int
+        :return: Candles dataframe.
+        """
+        candles = self.get_candles_feed(CandlesConfig(
+            connector=connector_name,
+            trading_pair=trading_pair,
+            interval=interval,
+            max_records=max_records,
+        ))
+        return candles.candles_df.iloc[-max_records:]
 ```
 
-**Key Configuration Parameters:**
-
-- `connector`: The data source (e.g., `binance` or `binance_perpetual`).
-- `trading_pair`: The trading pair (e.g., `BTC-USDT`).
-- `interval`: Time interval between candles (e.g., `5m` for 5 minutes).
-- `max_records`: Maximum number of candles to store.
-
-**Using Multiple Candles**
-
-For strategies requiring multiple candle intervals or trading pairs, initialize separate instances:
+**Example:**
 
 ```python
-from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory, CandlesConfig
-
-class InitializingCandlesExample(ScriptStrategyBase):
-    # Configure two different sets of candles
-    candles_config_1 = CandlesConfig(connector="binance", trading_pair="BTC-USDT", interval="3m")
-    candles_config_2 = CandlesConfig(connector="binance_perpetual", trading_pair="ETH-USDT", interval="1m")
-
-    # Initialize candles using the configurations
-    candles_1 = CandlesFactory.get_candle(candles_config_1)
-    candles_2 = CandlesFactory.get_candle(candles_config_2)
+price = self.market_data_provider.get_candles_df('binance', 'BTC-USDT', '3m', 1000)
 ```
-
-**Accessing Indicators and Displaying Status**
-
-**Adding Technical Indicators**
-
-Incorporate technical indicators to candle data for enhanced strategy insights:
-
-```python
-def format_status(self) -> str:
-    # Ensure market connectors are ready
-    if not self.ready_to_trade:
-        return "Market connectors are not ready."
-    lines = []
-    if self.all_candles_ready:
-        # Loop through each candle set
-        for candles in [self.eth_1w_candles, self.eth_1m_candles, self.eth_1h_candles]:
-            candles_df = candles.candles_df
-            # Add RSI, BBANDS, and EMA indicators
-            candles_df.ta.rsi(length=14, append=True)
-            candles_df.ta.bbands(length=20, std=2, append=True)
-            candles_df.ta.ema(length=14, offset=None, append=True)
-            # Format and display candle data
-            lines.extend([f"Candles: {candles.name} | Interval: {candles.interval}"])
-            lines.extend(["    " + line for line in candles_df.tail().to_string(index=False).split("\n")])
-    else:
-        lines.append("  No data collected.")
-
-    return "\n".join(lines)
-```
-
-**Displaying Candles in `status` Command**
-
-Modify the `format_status` method to display candlestick data:
-
-```python
-def format_status(self) -> str:
-    # Check if trading is ready
-    if not self.ready_to_trade:
-        return "Market connectors are not ready."
-
-    lines = ["\n############################################ Market Data ############################################\n"]
-    # Check if the candle data is ready
-    if self.eth_1h_candles.is_ready:
-        # Format and display the last few candle records
-        candles_df = self.eth_1h_candles.candles_df
-        candles_df["timestamp"] = pd.to_datetime(candles_df["timestamp"], unit="ms").dt.strftime('%Y-%m-%d %H:%M:%S')
-        display_columns = ["timestamp", "open", "high", "low", "close"]
-        formatted_df = candles_df[display_columns].tail()
-        lines.append("One-hour Candles for ETH-USDT:")
-        lines.append(formatted_df.to_string(index=False))
-    else:
-        lines.append("  One-hour candle data is not ready.")
-
-    return "\n".join(lines)
-```
-
-**Logging Candles Periodically**
-
-To log candle data in the `on_tick` method:
-
-```python
-def on_tick(self):
-    self.logger().info(self.candles.candles_df)
-```
-
-**Relevant Scripts**
-
-Find practical examples of the Candles component in these Hummingbot scripts:
-
-- [download_candles.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/download_candles.py)
-- [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_data_feeds/candles_example.py)
-- [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/directional_strategy_rsi_spot.py)
-
-
-**Additional Key Methods and Properties**
-
-`start` and `stop` Methods
-
-Control the initiation and termination of the candle data stream.
-
-`is_ready` Property
-
-Check if the candle data is complete and ready for use.
-
-`candles_df` Property
-
-Access the DataFrame containing the latest candle data.
-

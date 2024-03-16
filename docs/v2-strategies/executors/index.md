@@ -5,9 +5,10 @@
 
 ## **Types of Executors**
 
-* [**PositionExecutor**](positionexecutor.md)
-* [**DCAExecutor**](dcaexecutor.md)
-* [**ArbitrageExecutor**](arbitrage-executor.md)
+* [Position Executor](positionexecutor.md)
+* [DCA Executor](dcaexecutor.md)
+* [Arbitrage Executor](arbitrage-executor.md)
+* [TWAP Executor](twapexecutor.md)
 
 ## **Benefits of Executors**
 
