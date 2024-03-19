@@ -17,4 +17,3 @@
 /community             /about                           301
 /governance/board      /about/foundation                301
 /botcamp/*             https://www.botcamp.xyz          301
-/v2-strategies/candles/* /v2-strategies/data/:splat     301
