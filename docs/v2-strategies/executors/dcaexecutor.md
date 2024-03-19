@@ -1,21 +1,27 @@
 **DCAExecutor:** Manages the execution of Dollar Cost Averaging (DCA) strategies, allowing users to spread their investment across multiple orders over time to reduce the impact of volatility. It's designed for use in both spot and perpetual markets.
 
-Creates a `DCAOrderConf` to manage orders according to the DCA strategy, which involves executing a series of orders at predetermined intervals to average out the buying or selling price of an asset.
 
-All Configs:
+### Initialization
 
 ```python
-class DCAOrderConf(BaseModel):
-    # Configure the parameters for the DCA strategy
-    order_amount: Decimal
-    order_interval_seconds: int
-    total_orders: int
-    # Configure the parameters for the order
-    order_type: OrderType = OrderType.LIMIT
+    def create_dca_order(self, level: int):
+        """
+        This method is responsible for creating a new DCA order
+        """
+        price = self.config.prices[level]
+        amount = self.config.amounts_quote[level] / price
+        order_id = self.place_order(connector_name=self.config.exchange,
+                                    trading_pair=self.config.trading_pair, order_type=self.open_order_type,
+                                    side=self.config.side, amount=amount, price=price,
+                                    position_action=PositionAction.OPEN)
+        if order_id:
+            self._open_orders.append(TrackedOrder(order_id=order_id))
 ```
 
 Key Configs:
 
+- `connector_name`: The exchange the user is currently trading on
+- `trading_pair`: Specifies the trading pair
 - `order_amount`: Specifies the amount for each DCA order.
 - `order_interval_seconds`: Sets the time interval between orders.
 - `total_orders`: Determines the total number of orders to be executed.
