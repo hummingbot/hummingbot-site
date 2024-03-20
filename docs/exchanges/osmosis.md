@@ -5,7 +5,7 @@
 - **Exchange Type**: Decentralized Exchange (DEX)
 - **Market Type**: Automatic Market Maker (AMM)
 - **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Osmosis&message=BRONZE&color=green)
-- **Maintainer:** [Pecunia.Finance](http://Pecunia.Finance)
+- **Maintainer:** [Pecunia.Finance](https://pecuniafinance.com)
 
 Currently, Osmosis is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](notion://www.notion.so/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
 
@@ -127,7 +127,7 @@ Multiple interfaces within `gateway/src/amm/amm.requests.ts` include additions i
 
 ### 🧪 Create CLMM Strategy
 
-From inside the Hummingbot client, run `create --script-config amm_v3_lp` in order to create a custom CLMM strategy.
+From inside the Hummingbot client, run `create` and then select `amm_v3_lp` in order to create a custom CLMM strategy.
 
 To select Osmosis DEX, enter `osmosis_osmosis_mainnet` as the name of the LP connector.
 
@@ -136,11 +136,11 @@ To select Osmosis DEX, enter `osmosis_osmosis_mainnet` as the name of the LP con
 
 ```
 Enter name of LP connector >>> osmosis_osmosis_mainnet
-Enter the trading pair you would like to provide liquidity on (e.g. WETH-USDC) >>> [Your desired pool pair; e.g. OSMO-ATOM]
+Enter the trading pair you would like to provide liquidity on (e.g. WETH-USDC) >>> [Your desired pool pair; e.g. OSMO-USDC]
 On which fee tier do you want to provide liquidity on? (LOWEST/LOW/MEDIUM/HIGH) >>> [LOW/MEDIUM/HIGH]
 How wide around current pool price and/or last created positions do you want new positions to span? (Enter 1 to indicate 1%) >>> [DYOR]
 Enter the maximum value (in terms of base asset) to use for providing liquidity. >>> [DYOR]
-Enter a new file name for your configuration >>> [default is 'conf_amm_v3_lp_[#].yml' or input custom name]
+Enter a new file name for your configuration >>> [default is 'conf_amm_v3_lp_[#].yml' or 'input custom_name.yml']
 ```
 
 ## 🕯 AMM Data Feed
@@ -148,4 +148,4 @@ Enter a new file name for your configuration >>> [default is 'conf_amm_v3_lp_[#]
 _Data feed of this exchange's real-time prices_
 
 - Not currently supported
-- Contact [Pecunia.Finance](http://Pecunia.Finance) for collaboration
+- Contact [Pecunia.Finance](https://pecuniafinance.com) for collaboration
