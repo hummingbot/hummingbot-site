@@ -19,6 +19,13 @@ Welcome to our user guide which will embark you on a decentralized trading journ
 
 <!-- more -->
 
+For a comprehensive understanding and step-by-step visual instructions, we recommend starting with our video guide below. It covers everything you need to know to get Hummingbot up and running on Dexalot, from setup to execution.
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/PC3BPRwjgRI?si=3k6djtq0pkwng1vt" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+After watching the video, you can follow along with our detailed written guide below. It complements the video and provides the commands needed to run which you can copy - paste into the terminal. 
+
 ## Setting Up a Wallet on Dexalot
 
 Visit the Dexalot App: <https://app.dexalot.com/trade/>
