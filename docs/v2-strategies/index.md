@@ -1,28 +1,100 @@
-!!! warning
-    The V2 Strategies framework is ongoing significant refactoring improvements that will make it easier for developers to use. To track the latest changes, refer to the **#v2-strategies-framework** channel in Discord.
+The Strategy V2 framework contains a set of interlocking components that can be combined to create powerful, customized algo trading strategies.
 
-## Introduction
+[![](diagrams/9.png)](diagrams/9.png)
 
- Whereas V1 strategies were robust yet rigid, the Hummingbot V2 Strategies framework introduces modularity and flexibility, making it more accessible for users to adapt strategies according to their needs, even without extensive Python knowledge.
+The most important components to understand are:
 
-V2 strategies are:
+* [**Main Strategy**](#strategyv2-script): Orchestrates the overall strategy logic. This is a standard [script](/scripts) that inherits from the `StrategyV2Base` class. 
+* [**Executors**](./executors/index.md): Manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
+* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a strategy controller base class, i.e. Directional or Market Making.
+* [**Market Data Provider**](./data/index.md): Single point of access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
 
-* **Composable**: Designed with modularity at their core, V2 strategies empower users to create powerful, customized strategies with minimal changes to the provided templates.
-* **Real-Time**: V2 strategies leverage real-time market data to dynamically adjust spreads and shift prices, resulting in strategies that are not only powerful but also highly adaptable. This means they can respond swiftly to market changes, optimizing for profitability and risk in ways that were not possible with the more static V1 strategies.
-* **Backtestability**: An essential aspect of any trading strategy is the ability to test hypotheses. V2 strategies provide robust backtesting capabilities, allowing for extensive simulations with market data through the [Dashboard](../dashboard/index.md).
+## Main Strategy
+[![](./diagrams/14.png)](./diagrams/14.png)
 
-## Architecture
+The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class. 
 
-![](diagrams/1.png)
+This script fetches data from the Market Data Provider and manages how each Executor behaves. Optionally, it can load a Controller to manage the stategy logic instead of defining it in within the script. Go through the [Walkthrough](./walkthrough.md) to learn how it works. 
 
-The V2 Strategies framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. The most important components to understand are:
+See [Sample Scripts](/v2-strategies/examples) for more examples of StrategyV2-compatible scripts.
 
-* [**V2 Script**](./v2-scripts/index.md): This is where users define the strategy's configuration. It acts as the starting point and interfaces with other components.
-* [**Controller**](./controllers/index.md): The central hub of the strategy, the Controller receives input from the V2 Script and orchestrates the overall strategy, including the management and coordination of Executors.
-* [**Candles**](./candles/index.md): Candles provide a structured form of historical and real-time market data, represented as OHLCV bars, which are essential for generating market analysis indicators.
-* [**Executors**](./executors/index.md): V2 strategies place self-managing Executors and manage orders and positions. They encapsulate the order management logic, ensuring that orders are placed, modified, or canceled according to the strategy's instructions. Similarly, they manage position created when trading on perpetual exchanges.
+### Adding Config Parameters
 
-These helper components stitch the framework together:
+To add user-defined parameters to a StategyV2 script, add a configuration class that extends the `StrategyV2ConfigBase` class in [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class.  
 
-* [**Executor Handler**](./executor-handlers/index.md): This component acts as a bridge between the Controller and Executors, relaying commands and ensuring that actions are executed in accordance with the strategy's logic.
-* [**Order Level Builder**](./order-levels/index.md): A utility within the V2 Script that facilitates the construction of order levels, which dictate how Executors are distributed and behave.
+This defines a set of configuration parameters that are prompted to the user when they run `create` to generate the config file. Only questions marked `prompt_on_new` are displayed.
+
+Afterwards, these parameters are stored in a config file. The script checks this config file every `config_update_interval` (default: 60 seconds) and updates the parameters that it uses in-flight.
+
+```python
+class StrategyV2ConfigBase(BaseClientModel):
+    """
+    Base class for version 2 strategy configurations.
+    """
+    markets: Dict[str, Set[str]] = Field(
+        default="binance_perpetual.JASMY-USDT,RLC-USDT",
+        client_data=ClientFieldData(
+            prompt_on_new=True,
+            prompt=lambda mi: (
+                "Enter markets in format 'exchange1.tp1,tp2:exchange2.tp1,tp2':"
+            )
+        )
+    )
+    candles_config: List[CandlesConfig] = Field(
+        default="binance_perpetual.JASMY-USDT.1m.500:binance_perpetual.RLC-USDT.1m.500",
+        client_data=ClientFieldData(
+            prompt_on_new=True,
+            prompt=lambda mi: (
+                "Enter candle configs in format 'exchange1.tp1.interval1.max_records:"
+                "exchange2.tp2.interval2.max_records':"
+            )
+        )
+    )
+    controllers_config: List[str] = Field(
+        default=None,
+        client_data=ClientFieldData(
+            is_updatable=True,
+            prompt_on_new=True,
+            prompt=lambda mi: "Enter controller configurations (comma-separated file paths), leave it empty if none: "
+        ))
+    config_update_interval: int = Field(
+        default=60,
+        gt=0,
+        client_data=ClientFieldData(
+            prompt_on_new=False,
+            prompt=lambda mi: "Enter the config update interval in seconds (e.g. 60): ",
+        )
+    )
+```
+
+### `on_tick` Method
+
+This method acts as the strategy's heartbeat, is called regularly, and allows the strategy to adapt to new market conditions in real time.
+
+```python
+def on_tick(self):
+    for executor_handler in self.executor_handlers.values():
+        if executor_handler.status == ExecutorHandlerStatus.NOT_STARTED:
+            executor_handler.start()
+```
+
+### `format_status` Method
+
+This overrides the standard `status` function and provides a formatted string representing the current status of the strategy, including the name, trading pair, and status of each executor.
+
+Users can customize this function to display their custom strategy variables.
+
+```python
+def format_status(self) -> str:
+        if not self.ready_to_trade:
+            return "Market connectors are not ready."
+        lines = []
+        for trading_pair, executor_handler in self.executor_handlers.items():
+            lines.extend(
+                [f"Strategy: {executor_handler.controller.config.strategy_name} | Trading Pair: {trading_pair}",
+                 executor_handler.to_format_status()])
+        return "\n".join(lines)
+```
+
+!!! tip Learn to Develop Algo Trading Strategies
+    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](https://www.botcamp.xyz), which teaches you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.

@@ -1,175 +1,108 @@
-![](../diagrams/3.png)
+![](../diagrams/10.png)
 
-The **Controller** is a pivotal component in Hummingbot's V2 strategy framework, orchestrating the overall strategy behavior. It is responsible for fetching and processing data from [Candles](../candles), computing signals, and instructing [Executors](../executors/) to respond to these signals appropriately.
+The **Controller** plays a crucial role within Hummingbot's Strategy V2 framework, serving as the orchestrator of the strategy's overall behavior. It interfaces with the `MarketDataProvider`, which includes OrderBook, Trades, and Candles, and forwards a series of `ExecutorActions` to the main strategy. The strategy then evaluates these actions, deciding to execute them based on its overarching rules and guidelines.
+
+Users can now use controllers as sub-strategies allowing them to use multiple controllers in a single script or trade multiple pairs / configs in a single bot. 
+
+## Controller Examples
+
+Below are various controllers based on the **DirectionalTradingControllerBase** and **MarketMakingControllerBase** base classes.
+
+### Directional Trading
+
+These strategies aim to profit from predicting the market's direction (up or down) and takes positions based on signals indicating the future price movement.
+
+Suitable for strategies that rely on market trends, momentum, or other indicators predicting price movements. 
+
+Customizing signal generation (`get_signal`) allows users to change various analytical models to generate trade signals and determine the conditions under which trades should be executed or stopped.
+
+- [bollinger_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/bollinger_v1.py)
+- [dman_v3](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/dman_v3.py)
+- [macd_bb_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/macd_bb_v1.py)
+- [trend_follower_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/trend_follower_v1.py)
+
+
+### Market Making 
+
+These strategies provide liquidity by placing buy and sell orders near the current market price, aiming to profit from the spread between these orders.
+
+Customization involves defining how price levels are selected (`get_levels_to_execute`), how orders are priced and sized (`get_price_and_amount`), and when orders should be refreshed or stopped early.
+
+User may also adjust the strategy based on market depth, volatility, and other market conditions to optimize spread and order placement.
+
+- [pmm_simple](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py)
+- [pmm_dynamic](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_dynamic.py)
+- [dman_maker](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/dman_maker.py)
+
 
 ## Base Classes
 
-### ControllerBase
+Controllers inherit from base classes that define the general behavior of a type of trading strategy, which are designed to be extended by more specific strategies. These base classes all inherit from the [ControllerBase](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/controller_base.py) generic controller. 
 
-All Controller base classes inherit from the [ControllerBase](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/controller_base.py) class. The `ControllerConfigBase` defines the basic parameters that each controller should expose.
+Currently, the controller base classes available are:
 
-```python
-class ControllerConfigBase(BaseModel):
-    exchange: str
-    trading_pair: str
-    strategy_name: str
-    candles_config: List[CandlesConfig]
-    order_levels: List[OrderLevel]
-    close_price_trading_pair: Optional[str]
-```
+* Directional Trading
+* Market Making
 
-- `exchange`: exchange you are trading on
-- `trading_pair`: execution trading pair in 'BASE-QUOTE' format, e.g., `BTC-USDT`
-- `strategy_name`: identifier for the strategy
-- `candles_config`: list of candlesticks used for generating signals
-- `order_levels` defines the structure and conditions of orders
-- `close_price_trading_pair`: price calculation trading pair in 'BASE-QUOTE' format, e.g., `BTC-USDT`
+### Directional Trading Controller
 
-### Strategy Base Classes
+- Base class: [directional_trading_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/directional_trading_controller_base.py)
 
-Strategy base classes define additional parameters and methods specific to those strategies. They also define additional parameters such as:
+#### Constructor
 
-- `leverage`: leverage ratio utilized (only used for perpetual connectors)
-- `position_mode`: Hedge or One-way mode
-- `is_perpetual()`: returns `True` if trading on a perpetual futures connector
+- **`__init__`**: Initializes the controller with a configuration object (`DirectionalTradingControllerConfigBase`) and any additional arguments. It stores the configuration in an instance variable for later use.
 
-See [Sample Strategies](../examples/) for the current strategy base classes.
+#### Core Methods
 
-## Passing Configs to Controller
+- **`determine_executor_actions`**: This method determines the actions to be taken by the executor, which are operations to execute trades. It combines proposals from two separate methods: one for creating new actions and another for stopping actions, returning a list of actions to be executed.
 
-The example below from the [DManV3 sample script](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_market-making_dman_v3_multiple_pairs.py) shows how a script passes the user-defined configs to the controller:
+- **`update_processed_data`**: An asynchronous method that updates the processed data based on the current state of the strategy. It involves getting a signal (directional prediction) and updating the processed data accordingly.
 
-```python
-for trading_pair in trading_pairs: 
-	config = DManV3Config(           
-            exchange=exchange,
-            trading_pair=trading_pair,
-            order_levels=ORDER_LEVELS,
-            candles_config=CANDLES, 
-            ...
-            # other controller-specific configs
-		       )
-    controller = DManV3(config=config)
-    markets = controller.update_strategy_markets_dict(markets)
-    controllers[trading_pair] = controller
-    # The controllers are passed into the executor handlers
-```
+- **`get_signal`**: This is an abstract method meant to be implemented by subclasses. It should return a signal indicating the direction of the trade: positive for buy, negative for sell, and zero for no action.
 
-- The script iterates over a list of trading pairs (e.g., ["ETH-USDT", "BTC-USDT"]). This allows the strategy to be applied to multiple trading pairs, rather than just a single pair.
-- For each trading pair, a `DManV3Config`object is created. This object holds the configuration specific to that pair, including the exchange, order levels, candle configurations, and various strategy-specific parameters like Bollinger Bands settings, side filter, dynamic spread factors, and activation thresholds.
-- A new instance of **`DManV3`** (market making controller class) is created for each trading pair, using the specific configuration set up in the previous steps
-- The **`markets`** dictionary is updated with data relevant to the strategy for the current trading pair.
-- The **`controller`** for each trading pair is stored in the **`controllers`** dictionary. This allows for easy access and management of different strategies for each trading pair.
+- **`create_actions_proposal`**: Proposes actions to create new trades based on the current market signal and conditions. It checks if a new executor (trade executor) can be created based on the signal, active executors, and cooldown conditions. If conditions are met, it constructs a `CreateExecutorAction` with the necessary trade parameters.
 
-## A Controller in Detail
+- **`can_create_executor`**: Determines whether a new executor can be created based on the current signal, the number of active executors, and a cooldown period to prevent too frequent trading.
 
-Below, we walk through the [`DMan-V3 controller`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/dman_v3.py) in greater detail.
+- **`stop_actions_proposal`**: Proposes actions to stop existing trades. In the provided code, this method does not implement any logic and returns an empty list, indicating no stop actions are proposed by default.
 
-The DManV3 controller implements a mean reversion-style market making strategy that utilizes Bollinger Bands to dynamically set spreads and prices, enabling you to trade on multiple pairs with the same configuration.
+- **`get_executor_config`**: Constructs and returns a configuration for the executor based on the trade type, price, and amount. This method can be overridden in subclasses to customize the executor configuration.
 
-![](./bolinger-bands.png)
+#### Key Concepts and Customization Points
 
-Bollinger Bands consist of three lines: a simple moving average (SMA) line, an upper band, and a lower band. The upper and lower bands are calculated by adding and subtracting a multiple of the standard deviation of the asset's price from the SMA line.
+- **Signal-Based Trading**: The core of the directional trading strategy is signal generation (`get_signal`), which must be implemented by subclasses. The signal dictates whether to buy, sell, or hold.
 
-### Configuration
+- **Executor Actions**: The class decides on creating or stopping trades based on signals and conditions. This involves calculating the amount to trade and determining the trade type (buy or sell).
 
-The key variables are the assumptions used to set the bands:
+- **Configurability and Extensibility**: The class is designed to be extended, allowing for customization of signal generation, action proposals, and executor configuration. Subclasses can override methods to implement specific trading logic.
 
-- `strategy_name`: Identifier for the strategy.
-- `bb_length`: Number of periods used for Bollinger Bands calculation.
-- `bb_std`: Number of standard deviations away from the moving average.
-
-Here, `bb_length` is the number of Candle intervals used to calculate the SMA, or the Bollinger Band midline, while `bb_std` is the number of standard deviations defined by the upper and lower bands.
-
-```python
-class DManV3Config(MarketMakingControllerConfigBase):
-    strategy_name: str = "dman_v3"
-    bb_length: int = 100
-    bb_std: float = 2.0
-    ...
-```
-
-### `get_processed_data` Method
-
-The `get_processed_data` method is central to a Controller's functionality, since it defines how the data collected from Candles is used. 
-
-Below, the DmanV3 implementation fetches the latest candlestick data and calculates price and spread multipliers using Bollinger Bands which dynamically adjust the mid price and order spreads utilized by Executors.
-
-```python
-def get_processed_data(self):
-    candles_df = self.candles[0].candles_df
-    bbp = ta.bbands(candles_df["close"], length=self.config.bb_length, std=self.config.bb_std)
-
-    candles_df["price_multiplier"] = bbp[f"BBM_{self.config.bb_length}_{self.config.bb_std}"]
-    candles_df["spread_multiplier"] = bbp[f"BBB_{self.config.bb_length}_{self.config.bb_std}"] / 200
-    return candles_df
-```
-
-For each pair defined in the [V2 Script](../v2-scripts/), `spread_multiplier` is used to determine spreads for a particular [Order Level](../order-levels/). Thus, each set of orders are based on the Bollinger Band data generated from the Candles for that particular pair.
-
-### `side_filter` Feature
-
-The `side_filter` is a configuration setting in the DmanV3 controller that, when enabled (`true`), restricts order placement to only one side of the order book. This feature is particularly useful in strategies where the trader has a directional bias or wishes to avoid taking positions that contradict a predicted market movement.
-
-Here's how the `side_filter` works within the `get_position_config` method:
-
-```python
-# Avoid placing the order from the opposite side
-side_filter_condition = self.config.side_filter and (
-    (bollinger_mid_price > close_price and side_multiplier == 1) or
-    (bollinger_mid_price < close_price and side_multiplier == -1))
-if side_filter_condition:
-    return
-```
-
-When `side_filter` is active, and the condition is met—either the mid-price from Bollinger Bands is greater than the close price for buys, or less for sells—the method returns without creating a `PositionConfig`. This behavior ensures that orders are only placed in alignment with the prevailing market trend or strategy's directional bias.
+- **Cooldown and Execution Limits**: The controller includes mechanisms to limit trading frequency (`cooldown_time`) and the number of concurrent trades (`max_executors_per_side`), which are important for risk management.
 
 
-### `smart_activation` Feature
+### Market Making Controller
 
-The `smart_activation` setting allows the DmanV3 controller to place orders conditionally rather than immediately, based on specific market conditions. This feature enables a strategy to be more responsive to market movements, avoiding premature or undesired entry.
+- Base class: [market_making_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/market_making_controller_base.py)
 
-In the `get_position_config` method, `smart_activation` works as follows:
+#### Constructor
 
-```python
-# Smart activation of orders
-smart_activation_condition = self.config.smart_activation and (
-    side_multiplier == 1 and (close_price < order_price * (1 + self.config.activation_threshold)) or
-    (side_multiplier == -1 and (close_price > order_price * (1 - self.config.activation_threshold))))
-if smart_activation_condition:
-    return
-```
+- **`__init__`**: Initializes the controller with a specific configuration object (`MarketMakingControllerConfigBase`) and any additional arguments, storing the configuration for later use.
 
-With `smart_activation` enabled, the method checks if the market price is within a threshold relative to the desired order price—adjusted for the activation threshold. If the price is outside this range, indicating that the market conditions are not favorable for order placement, the method exits without creating a `PositionConfig`. This ensures that orders are only activated when the market price meets the strategy's specific conditions, thus implementing a form of conditional execution.
+#### Core Methods
 
+- **`determine_executor_actions`**: Determines the actions to be executed by the market maker, combining proposals for creating new actions and stopping existing ones.
 
-### Conditional Methods
+- **`create_actions_proposal`**: Proposes actions to create new orders based on the current state of the market and the controller's strategy. It involves determining which levels (price points) to execute trades at and generating the appropriate `CreateExecutorAction` for each.
 
-These methods allow users to control the set of deployed Executors based on Candles data:
+- **`get_levels_to_execute`**: Identifies which levels are currently active or need to be executed based on the controller's logic, including cooldown considerations.
 
-```python
-def refresh_order_condition(self, executor: PositionExecutor, order_level: OrderLevel) -> bool:
-        """
-        Checks if the order needs to be refreshed.
-        You can reimplement this method to add more conditions.
-        """
-        if executor.position_config.timestamp + order_level.order_refresh_time > time.time():
-            return False
-        return True
+- **`stop_actions_proposal`**: Proposes actions to stop or refresh existing orders based on certain conditions, such as order refresh times and early stop criteria.
 
-def early_stop_condition(self, executor: PositionExecutor, order_level: OrderLevel) -> bool:
-    """
-    If an executor has an active position, should we close it based on a condition.
-    """
-    return False
+- **`executors_to_refresh`**: Identifies which executors (orders) need to be refreshed based on their age and trading status.
 
-def cooldown_condition(self, executor: PositionExecutor, order_level: OrderLevel) -> bool:
-    """
-    After finishing an order, the executor will be in cooldown for a certain amount of time.
-    This prevents the executor from creating a new order immediately after finishing one and execute a lot
-    of orders in a short period of time from the same side.
-    """
-    if executor.close_timestamp and executor.close_timestamp + order_level.cooldown_time > time.time():
-        return True
-    return False
-```
+- **`executors_to_early_stop`**: Identifies executors that should be stopped early, potentially based on market conditions or other strategy-specific criteria. This method is designed to be overridden with custom behavior.
+
+- **`update_processed_data`**: Asynchronously updates the processed data for the controller, such as reference prices and spread multipliers, based on market data.
+
+- **`get_executor_config`**: Abstract method intended to be implemented by subclasses to define the configuration for executors based on level ID.
+
+- **`get_price_and_amount`**: Calculates the price and amount for orders at a given level ID, adjusting for spreads and market conditions.
