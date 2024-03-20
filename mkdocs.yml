@@ -56,10 +56,10 @@ theme:
 
 plugins:
   - search
-  # - social:
-  #     cards_layout_options:
-  #       background_color: "#151819"
-  #       color: "#5FFFD7"
+  - social:
+      cards_layout_options:
+        background_color: "#151819"
+        color: "#5FFFD7"
   - blog:
       blog_dir: blog
       blog_toc: true
