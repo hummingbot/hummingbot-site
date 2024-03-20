@@ -1,4 +1,4 @@
-The Strategy V2 framework is built on a foundation of interlocking components that can be combined with one another to create powerful trading strategies. 
+The Strategy V2 framework contains a set of interlocking components that can be combined to create powerful, customized algo trading strategies.
 
 [![](diagrams/9.png)](diagrams/9.png)
 
@@ -6,21 +6,31 @@ The most important components to understand are:
 
 * [**Main Strategy**](#strategyv2-script): Orchestrates the overall strategy logic. This is a standard [script](/scripts) that inherits from the `StrategyV2Base` class. 
 * [**Executors**](./executors/index.md): Manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
-* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a controller base class.
-* [**Market Data Provider**](./data/index.md): Provides access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
+* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a strategy controller base class, i.e. Directional or Market Making.
+* [**Market Data Provider**](./data/index.md): Single point of access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
 
 ## Main Strategy
 [![](./diagrams/14.png)](./diagrams/14.png)
 
 The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class. 
 
-Go through the [Walkthrough](./walkthrough.md) to learn how it works. See [Sample Scripts](/v2-strategies/examples) for more examples.
+This script fetches data from the Market Data Provider and manages how each Executor behaves. Optionally, it can load a Controller to manage the stategy logic instead of defining it in within the script. Go through the [Walkthrough](./walkthrough.md) to learn how it works. 
 
-### Config Parameters
+See [Sample Scripts](/v2-strategies/examples) for more examples of StrategyV2-compatible scripts.
 
-To add user-defined parameters to a StategyV2 script, extend the `StrategyV2ConfigBase` class to defines a set of configuration parameters that are stored in a config file. Questions marked `prompt_on_new` are displayed wben the config file is created from the client.
+### Adding Config Parameters
+
+To add user-defined parameters to a StategyV2 script, add a configuration class that extends the `StrategyV2ConfigBase` class in [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class.  
+
+This defines a set of configuration parameters that are prompted to the user when they run `create` to generate the config file. Only questions marked `prompt_on_new` are displayed.
+
+Afterwards, these parameters are stored in a config file. The script checks this config file every `config_update_interval` (default: 60 seconds) and updates the parameters that it uses in-flight.
 
 ```python
+class StrategyV2ConfigBase(BaseClientModel):
+    """
+    Base class for version 2 strategy configurations.
+    """
     markets: Dict[str, Set[str]] = Field(
         default="binance_perpetual.JASMY-USDT,RLC-USDT",
         client_data=ClientFieldData(
@@ -38,6 +48,21 @@ To add user-defined parameters to a StategyV2 script, extend the `StrategyV2Conf
                 "Enter candle configs in format 'exchange1.tp1.interval1.max_records:"
                 "exchange2.tp2.interval2.max_records':"
             )
+        )
+    )
+    controllers_config: List[str] = Field(
+        default=None,
+        client_data=ClientFieldData(
+            is_updatable=True,
+            prompt_on_new=True,
+            prompt=lambda mi: "Enter controller configurations (comma-separated file paths), leave it empty if none: "
+        ))
+    config_update_interval: int = Field(
+        default=60,
+        gt=0,
+        client_data=ClientFieldData(
+            prompt_on_new=False,
+            prompt=lambda mi: "Enter the config update interval in seconds (e.g. 60): ",
         )
     )
 ```
