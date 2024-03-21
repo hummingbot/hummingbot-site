@@ -6,7 +6,7 @@ Hummingbot has been successfully tested with the following specifications:
 
 | Resource             | Requirement                                                                                                                  |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| **Operating System** | **Linux**: Ubuntu 18.04 or later (recommended), Debian GNU/Linux 9, CentOS 7, Amazon Linux 2 AMI |
+| **Operating System** | **Linux**: Ubuntu 20.04 or later (recommended), Debian GNU/Linux 9, CentOS 7, Amazon Linux 2 AMI |
 |                      | **MacOS**: macOS 10.12.6 (Sierra) or later                                                                                   |
 |                      | **Windows**: Windows 10 or later                                                                                             |
 | **Memory/RAM**       | 4 GB for one instance + 250 MB per additional instance_                                                                          |

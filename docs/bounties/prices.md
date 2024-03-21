@@ -12,7 +12,7 @@ Bounties can be classified into one of the following types:
 
 | Task | Price Guidance (inclusive of 20% fee) |
 | --- | --- |
-| Add [Candles Feed](v2-strategies/candles/) | 625 USDC |
+| Add [Candles Feed](v2-strategies/data/) | 625 USDC |
 | Add Custom [Data Feed](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed) | 750 USDC |
 | Add Spot [CEX Connector](/cex-connectors) | 3750 USDC |
 | Add Perp [CEX Connector](/cex-connectors) | 5000 USDC |

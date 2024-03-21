@@ -1,52 +1,27 @@
-![](../diagrams/4.png)
+![](./candles-a.jpg)
 
-## Overview
+Candles allow user to compose a trailing window of real-time market data in OHLCV (Open, High, Low, Close, Volume) form from certain supported exchanges.
 
-The Candles component in Hummingbot is crucial for traders to generate and utilize OHLCV (Open, High, Low, Close, Volume) data. It combines historical and real-time data to create custom technical indicators, leveraging [pandas_ta](https://github.com/twopirllc/pandas-ta).
+It combines historical and real-time data to generate and maintain this window, allowing users to create custom technical indicators, leveraging [pandas_ta](https://github.com/twopirllc/pandas-ta).
 
-## Configuration and Usage Examples
+## Supported Exchanges
 
-### Instantiating Candles
+See [Candles Feed](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/data_feed/candles_feed) for a list of the currently supported exchanges.
 
-To use the Candles component, instantiate it in your script. Here's how to set it up for a single market:
+A common practice is to execute bots on decentralized exchanges or smaller exchanges using candles data from other exchanges.
 
-```python
-from hummingbot.data_feed.candles_feed.candles_factory import CandlesConfig
-
-# Configure the candles
-conf = CandlesConfig(connector="binance", trading_pair="BTC-USDT", interval="5m", max_records=100)
-
-# Example of using this configuration in a strategy
-config = DManV3Config(candles_config=[conf])
-```
-
-#### Key Configuration Parameters:
+## Key Configuration Parameters
 
 - `connector`: The data source (e.g., `binance` or `binance_perpetual`).
 - `trading_pair`: The trading pair (e.g., `BTC-USDT`).
 - `interval`: Time interval between candles (e.g., `5m` for 5 minutes).
 - `max_records`: Maximum number of candles to store.
 
-### Using Multiple Candles
+## Downloading Candles
 
-For strategies requiring multiple candle intervals or trading pairs, initialize separate instances:
+Candles provide a concise way to access historical exchange data. See the [download_candles](https://github.com/hummingbot/hummingbot/blob/development/scripts/download_candles.py) script.
 
-```python
-from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory, CandlesConfig
-
-class InitializingCandlesExample(ScriptStrategyBase):
-    # Configure two different sets of candles
-    candles_config_1 = CandlesConfig(connector="binance", trading_pair="BTC-USDT", interval="3m")
-    candles_config_2 = CandlesConfig(connector="binance_perpetual", trading_pair="ETH-USDT", interval="1m")
-
-    # Initialize candles using the configurations
-    candles_1 = CandlesFactory.get_candle(candles_config_1)
-    candles_2 = CandlesFactory.get_candle(candles_config_2)
-```
-
-## Accessing Indicators and Displaying Status
-
-### Adding Technical Indicators
+## Adding Technical Indicators
 
 Incorporate technical indicators to candle data for enhanced strategy insights:
 
@@ -73,7 +48,24 @@ def format_status(self) -> str:
     return "\n".join(lines)
 ```
 
-### Displaying Candles in `status` Command
+## Multiple Candles
+
+For strategies requiring multiple candle intervals or trading pairs, initialize separate instances:
+
+```python
+from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory, CandlesConfig
+
+class InitializingCandlesExample(ScriptStrategyBase):
+    # Configure two different sets of candles
+    candles_config_1 = CandlesConfig(connector="binance", trading_pair="BTC-USDT", interval="3m")
+    candles_config_2 = CandlesConfig(connector="binance_perpetual", trading_pair="ETH-USDT", interval="1m")
+
+    # Initialize candles using the configurations
+    candles_1 = CandlesFactory.get_candle(candles_config_1)
+    candles_2 = CandlesFactory.get_candle(candles_config_2)
+```
+
+## Displaying Candles in `status`
 
 Modify the `format_status` method to display candlestick data:
 
@@ -99,7 +91,7 @@ def format_status(self) -> str:
     return "\n".join(lines)
 ```
 
-### Logging Candles Periodically
+## Logging Candles Periodically
 
 To log candle data in the `on_tick` method:
 
@@ -108,26 +100,9 @@ def on_tick(self):
     self.logger().info(self.candles.candles_df)
 ```
 
-### Relevant Scripts
+### Additional Key Methods and Properties
 
-Find practical examples of the Candles component in these Hummingbot scripts:
-
-- [download_candles.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/download_candles.py)
-- [candles_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_data_feeds/candles_example.py)
-- [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_using_smart_components/directional_strategy_rsi_spot.py)
-
-
-## Additional Key Methods and Properties
-
-### `start` and `stop` Methods
-
-Control the initiation and termination of the candle data stream.
-
-### `is_ready` Property
-
-Check if the candle data is complete and ready for use.
-
-### `candles_df` Property
-
-Access the DataFrame containing the latest candle data.
+* `start` and `stop` Methods: Control the initiation and termination of the candle data stream.
+* `is_ready` Property: Check if the candle data is complete and ready for use.
+* `candles_df` Property: Access the DataFrame containing the latest candle data.
 
