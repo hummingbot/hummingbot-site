@@ -351,6 +351,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.26.0: release-notes/1.26.0.md
     - 1.25.0: release-notes/1.25.0.md
     - 1.24.0: release-notes/1.24.0.md
     - 1.23.0: release-notes/1.23.0.md
