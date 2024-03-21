@@ -44,6 +44,7 @@ Here are the current DEX connectors in the codebase:
 | [Curve](../exchanges/curve.md) | AMM | Gateway |
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway |
+| [Osmosis](../exchanges/osmosis.md) | AMM | Gateway |
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway |
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway |

@@ -291,6 +291,7 @@ nav:
         - Carbon: exchanges/carbon.md
         - Hyperliquid: exchanges/hyperliquid.md
         - OpenOcean: exchanges/openocean.md
+        - Osmosis: exchanges/osmosis.md
         - Pancakeswap : exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
         - Perpetual Protocol: exchanges/perp.md
