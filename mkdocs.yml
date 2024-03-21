@@ -278,7 +278,7 @@ nav:
         - Kraken: exchanges/kraken/index.md
         - MEXC: exchanges/mexc/index.md
         - NDAX: exchanges/ndax.md
-        - OKX: exchanges/okx.md
+        - OKX: exchanges/okx/okx.md
         - Phemex: exchanges/phemex-perpetual.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md

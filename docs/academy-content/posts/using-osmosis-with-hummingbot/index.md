@@ -1,7 +1,7 @@
 ---
-date: 2024-00-00
+date: 2024-03-21
 authors:
-  - pecuniafinance
+  - community
 categories:
   - Connector Guides
 tags:
@@ -15,6 +15,8 @@ tags:
 ## Introduction
 
 These instructions help users navigate the installation, configuration, and operation of (OSS) Hummingbot high-frequency trading bot running Automated Market Making Arbitrage or Range Automated Market Making strategies on **Osmosis DEX** over the Hummingbot Gateway.
+
+<!-- more -->
 
 ## Prerequisites
 
