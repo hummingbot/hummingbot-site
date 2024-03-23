@@ -1,15 +1,8 @@
-# osmosis.md
-
-# 🛠 Connector Info
+## 🛠 Connector Info
 
 - **Exchange Type**: Decentralized Exchange (DEX)
 - **Market Type**: Automatic Market Maker (AMM)
-- **Maintenance Tier**: ![](https://img.shields.io/static/v1?label=Osmosis&message=BRONZE&color=green)
-- **Maintainer:** [Pecunia.Finance](https://pecuniafinance.com)
 
-Currently, Osmosis is a **Bronze** exchange, as voted by HBOT holders in each quarterly [Epoch](notion://www.notion.so/governance/epochs). This means Hummingbot Foundation does not maintain the components below, but community members may submit [Proposals](/governance/proposals) to fund development bounties and approve pull requests to fix bugs and add enhancements to them.
-
-The maintainers, Pecunia.Finance DAO, are also open to proposals and fund development bounties to maintain and improve the Osmosis Connector and/or Chain.
 
 | Component                                        | Status    | Notes |
 | ------------------------------------------------ | --------- | ----- |

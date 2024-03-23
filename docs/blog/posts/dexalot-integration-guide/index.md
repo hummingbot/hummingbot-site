@@ -6,18 +6,19 @@ categories:
   - Guides
 ---
 
-
 # Dexalot - Hummingbot Integration Guide
-
-## Introduction
 
 ![cover](cover.webp) 
 
+## Introduction
+
 Welcome to our user guide which will embark you on a decentralized trading journey that combines Dexalot's cutting-edge technology built on Avalanche blockchain and Hummingbot's advanced trading capabilities.
+
+<!-- more -->
 
 **Dexalot** offers a familiar centralized exchange experience within a secure, transparent, and efficient on-chain environment. Linking **Dexalot** with **Hummingbot** unlocks automated trading possibilities. Whether a seasoned trader or a newcomer, this tutorial equips you to navigate the exciting intersection of decentralized finance and automated trading seamlessly.
 
-<!-- more -->
+
 
 For a comprehensive understanding and step-by-step visual instructions, we recommend starting with our video guide below. It covers everything you need to know to get Hummingbot up and running on Dexalot, from setup to execution.
 
