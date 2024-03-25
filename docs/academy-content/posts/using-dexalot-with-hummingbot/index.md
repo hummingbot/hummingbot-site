@@ -3,12 +3,14 @@ date: 2024-03-14
 authors:
   - community
 categories:
-  - Guides
+  - Connector Guides
+tags:
+  - Connector Guides
 ---
 
-# Dexalot - Hummingbot Integration Guide
+# Using Dexalot with Hummingbot
 
-![cover](cover.webp) 
+![cover](cover.png) 
 
 ## Introduction
 

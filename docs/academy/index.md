@@ -1,6 +1,5 @@
 ---
 hide:
- - navigation
  - toc
 ---
 
@@ -49,6 +48,30 @@ hide:
 
 ---
 
+## :book: Connector Guides
+
+<div class="grid cards" markdown>
+
+-   [![](/academy-content/using-binance-with-hummingbot/cover.png)](/academy/content/using-binance-with-hummingbot/)
+
+    ### [Using Binance with Hummingbot](/academy-content/using-binance-with-hummingbot/)
+
+-   [![](/academy-content/using-hyperliquid-vaults-with-hummingbot/cover.png)](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
+
+    ### [Using Hyperliquid Vaults](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
+
+-   [![](/academy-content/using-vega-protocol-with-hummingbot/cover.png)](/academy-content/using-vega-protocol-with-hummingbot/)
+
+    ### [Using Vega Protocol with Hummingbot](/academy-content/using-vega-protocol-with-hummingbot/)
+
+-   [![](/academy-content/using-dexalot-with-hummingbot/cover.png)](/academy-content/using-dexalot-with-hummingbot/)
+
+    ### [Using Dexalot with Hummingbot](/academy-content/using-dexalot-with-hummingbot/)
+
+</div>
+
+---
+
 ## :thinking: Market Making Basics
 
 <div class="grid cards" markdown>
@@ -68,26 +91,6 @@ hide:
 </div>
 
 [See more in Market Making Basics :fontawesome-solid-chevron-right:](/academy/all/#market-making-basics){ .md-button }
-
----
-
-## :book: Connector Guides
-
-<div class="grid cards" markdown>
-
--   [![](/academy-content/using-binance-with-hummingbot/cover.png)](/academy/content/using-binance-with-hummingbot/)
-
-    ### [Using Binance with Hummingbot](/academy-content/using-binance-with-hummingbot/)
-
--   [![](/academy-content/using-hyperliquid-vaults-with-hummingbot/cover.png)](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
-
-    ### [Using Hyperliquid Vaults](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
-
--   [![](/academy-content/using-vega-protocol-with-hummingbot/cover.png)](/academy-content/using-vega-protocol-with-hummingbot/)
-
-    ### [Using Vega Protocol with Hummingbot](/academy-content/using-vega-protocol-with-hummingbot/)
-
-</div>
 
 ---
 

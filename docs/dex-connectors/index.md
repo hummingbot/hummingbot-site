@@ -39,12 +39,12 @@ Here are the current DEX connectors in the codebase:
 | [Polkadex](../exchanges/polkadex.md) | CLOB | Client | [Guide](/academy-content/using-polkadex-with-hummingbot)
 | [Vega](../exchanges/vega.md) | CLOB | Client | [Guide](/academy-content/using-vega-protocol-with-hummingbot)
 | [Vertex](../exchanges/vertex.md) | CLOB | Client |
-| [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway |
+| [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway | [Guide](/academy-content/using-dexalot-with-hummingbot)
 | [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |
 | [Curve](../exchanges/curve.md) | AMM | Gateway |
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway |
-| [Osmosis](../exchanges/osmosis.md) | AMM | Gateway |
+| [Osmosis](../exchanges/osmosis.md) | AMM | Gateway | [Guide](/academy-content/using-osmosis-with-hummingbot)
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway |
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway |

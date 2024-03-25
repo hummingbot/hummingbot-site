@@ -9,6 +9,7 @@
 | [2️⃣ AMM Connector](#2-amm-connector)             | ✅        |
 | [3️⃣ Range AMM Connector](#3-range-amm-connector) | ✅        |
 | [🕯 AMM Data Feed](#amm-data-feed)                | Not built |
+| [📓 Connector Guide](/academy-content/using-osmosis-with-hummingbot/) | ✅ |
 
 !!! note "There is a single connector for both AMM types."
 The Osmosis connector determines which routes to take based on the input strategy. In either case, the name of the connector is `osmosis_osmosis_mainnet`.
@@ -23,6 +24,9 @@ The Osmosis connector determines which routes to take based on the input strateg
 - **Concentrated Liquidity (range-amm):** [https://docs.osmosis.zone/osmosis-core/modules/concentrated-liquidity](https://docs.osmosis.zone/osmosis-core/modules/concentrated-liquidity)
 
 ## 🔑 How to Connect
+
+!!! tip
+    See the [Osmosis Connector Guide](/academy-content/using-osmosis-with-hummingbot/) for step-by-step instructions.
 
 Create an Osmosis wallet or use and existing Cosmos wallet on one of the supported networks below:
 

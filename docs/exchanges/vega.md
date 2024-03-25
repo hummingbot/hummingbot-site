@@ -25,7 +25,7 @@
     See the [Vega Connector Guide](/academy-content/using-vega-protocol-with-hummingbot/) for a detailed guide.
 
 ### Generate your public key in Vega Wallet
-You can download the browser extension wallet (for use in the UI) by visiting https://vega.xyz/wallet/#overview. You can also get to the wallet by clicking connect on through the dAPP interface. Which will offer a pop up which has an option which will take you to download and install the Vega Wallet extension.
+You can download the browser extension wallet (for use in the UI) by visiting <https://vega.xyz/wallet/#overview>. You can also get to the wallet by clicking connect on through the dAPP interface. Which will offer a pop up which has an option which will take you to download and install the Vega Wallet extension.
 
 From there you will set up the wallet, you’ll need your seed phrase generated here for use within the connector.
 
@@ -45,11 +45,11 @@ Create a wallet on one of the supported networks below:
 
 | Chain | Networks | 
 | ----- | -------- |
-| `ethereum` | `mainnet`, `sepolia`
-| `cosmos` | `vega_alpha_mainnet`, `vega_fairground`
+| `ethereum` | `mainnet`, `sepolia` |
+| `cosmos` | `vega_alpha_mainnet`, `vega_fairground` |
 
 
-From inside the Hummingbot client, run gateway connect vega_perpetual in order to connect your wallet:
+From inside the Hummingbot client, run `gateway connect vega_perpetual` in order to connect your wallet:
 
 ```
 Enter your Vega public key (party id), NOTE: This is not your ETH public key! >>>
