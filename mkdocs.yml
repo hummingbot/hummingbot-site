@@ -280,6 +280,7 @@ nav:
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx.md
         - Phemex: exchanges/phemex-perpetual.md
+        - Cube Exchange: exchanges/cube/index.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
         - dYdX: exchanges/dydx.md
