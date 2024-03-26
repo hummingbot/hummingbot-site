@@ -42,3 +42,4 @@ Here are the current CEX connectors in the codebase:
 | [Bybit](../exchanges/bybit) | CLOB | v2.1 | v2.1 | Yes - but API needs update to v5
 | [Bitmart](../exchanges/bitmart/index.md) | CLOB | v2.1 |  | Yes - spot only 
 | [NDAX](../exchanges/ndax) | CLOB | v1.0 |  | No
+| [Cube](../exchanges/cube/index.md) | CLOB | v2.1 |  | Yes

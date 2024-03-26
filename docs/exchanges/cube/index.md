@@ -12,7 +12,7 @@
 
 - **Website**: <https://www.cube.exchange>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/cube>
-- **API Docs**: Not available
+- **API Docs**: Not available for public yet
 - **Fees**: <https://www.cube.exchange/fees>
 - **Unsupported Countries**:
   - Cube does not engage in business with: Afghanistan, Algeria, Angola, Belarus, Bosnia & Herzegovina, Burundi, Cambodia, Central African Republic, China, Crimea (Ukraine), Cuba, North Korea, Donetsk and Luhansk (Ukraine), Egypt, Guyana, Haiti, Iran, Iraq, Laos, Lebanon, Libya, Mali, Macao, Myanmar, Pakistan, Qatar, Russia, Somalia, Sudan, South Sudan, Yemen.
