@@ -15,7 +15,7 @@
 - **API Docs**: Not available for public yet
 - **Fees**: <https://www.cube.exchange/fees>
 - **Unsupported Countries**:
-  - Cube does not engage in business with: Afghanistan, Algeria, Angola, Belarus, Bosnia & Herzegovina, Burundi, Cambodia, Central African Republic, China, Crimea (Ukraine), Cuba, North Korea, Donetsk and Luhansk (Ukraine), Egypt, Guyana, Haiti, Iran, Iraq, Laos, Lebanon, Libya, Mali, Macao, Myanmar, Pakistan, Qatar, Russia, Somalia, Sudan, South Sudan, Yemen.
+  - Cube does not engage in business with: Afghanistan, Algeria, Angola, Belarus, Bosnia & Herzegovina, Burundi, Cambodia, Central African Republic, China, Crimea (Ukraine), Cuba, North Korea, Donetsk and Luhansk (Ukraine), Egypt, Guyana, Haiti, Iran, Iraq, Laos, Lebanon, Libya, Mali, Macao, Myanmar, Pakistan, Qatar, Russia, Somalia, Sudan, South Sudan, United States of America, Yemen.
   - Sanctioned countries include: Central African Republic, Democratic Republic of the Congo, North Korea, Iran, Iraq, Lebanon, Libya, Mali, Myanmar, Russia, Somalia, Sudan, South Sudan, Syria, Yemen, Zimbabwe.
 
 ## 🔑 How to Connect
