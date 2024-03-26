@@ -78,3 +78,16 @@ This connector supports the following `OrderType` constants:
 - `LIMIT`
 - `LIMIT_MAKER`
 - `MARKET`
+
+## 🔮 Rate Orcale
+The connector comes with its own rate oracle implementation. You can use it by using the folllowing command:
+
+```
+config rate_oracle_source cube
+```
+
+Make sure to set global token name to `USDC` as `USDC` is the main quote token for trading on Cube Exchange
+
+```
+config global_token.global_token_name USDC
+```
