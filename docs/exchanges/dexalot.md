@@ -8,6 +8,7 @@
 | [🔀 Spot Connector](#spot-connector) | ✅ |
 | [🔀 Perp Connector](#perp-connector) | Not available
 | [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
+| [📓 Connector Guide](/academy-content/using-dexalot-with-hummingbot/) | ✅ |
 
 ## ℹ️ Exchange Info
 
@@ -18,6 +19,9 @@
 - **Fees**: 
 
 ## 🔑 How to Connect
+
+!!! tip
+    See the [Dexalot Connector Guide](/academy-content/using-dexalot-with-hummingbot/) for step-by-step instructions.
 
 Create a wallet on one of the supported networks below:
 
