@@ -7,11 +7,11 @@
 - **Market Type**: Central Limit Order Book (**CLOB**)
 
 | Component | Status | Connector Version | V2 Strategies | Notes | 
-| --------- | ------ | ----------------- |  ------------ | ----- |
+| --------- | ------ | ---------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | |
-| [🔀 Perp Connector](#perp-connector) | Not built |
+| [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | ✅  | 
 
 ## ℹ️ Exchange Info
 
@@ -68,3 +68,26 @@ This connector supports the following `OrderType` constants:
 Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect okx_paper_trade` instead of `connect okx`.
 
 If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+
+## 🔀 Perp Connector
+*Integration to perpetual markets API endpoints*
+
+- **ID**: `okx_perpetual`
+- **Connection Type**: WebSocket
+- **API Docs**: <https://www.okx.com/docs-v5/en/>
+- **[Github Folder](<https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/okx_perpetual>)**
+
+### Order Types
+
+This connector supports the following `OrderType` constants:
+
+- `LIMIT`
+- `MARKET`
+
+### Usage
+
+- Before connecting, be sure to switch to **Single-currency margin** mode in your OKX account settings. Here is a screenshot from the OKX website default:
+
+![Account mode](okx-account-mode-setting.png)
+
+- As position mode (one-way or hedge) is set every time Hummingbot starts, if you want to restart hummingbot you need to check if there are any open positions. If so, you'll need to close them before.
