@@ -10,7 +10,7 @@ categories:
 
 ![](cover.png)
 
-With the release of a new [connector guide](/academy-content/using-vega-protocol-with-hummingbot) for the Vega [DEX connector](/exchanges/vega), we are thriled to officially welcome [Vega Protocol](https://vega.xyz) as an sponsor and partner of Hummingbot Foundation! 
+With the release of a new [connector guide](/academy-content/using-vega-protocol-with-hummingbot) for the Vega [DEX connector](/exchanges/vega), we are thrilled to officially welcome [Vega Protocol](https://vega.xyz) as an sponsor and partner of Hummingbot Foundation!
 
 As an open source foundation dedicated to democratizing algo trading, Hummingbot Foundation seeks to align with like-minded  organizations. We've known the Vega founding team since 2019 (an eternity in crypto!) and share their commitment to decentralized, permissionless trading. Built on a Layer 1 blockchain designed for derivatives trading, Vega Protocol stands out with its permissionless market creation feature, which enables any participant to launch a new market (trading pair) through governance.
 
