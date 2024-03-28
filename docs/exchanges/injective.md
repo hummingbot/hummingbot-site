@@ -24,8 +24,8 @@
 Create a wallet on one of the supported networks below:
 
 | Chain       | Networks                       |
-| ----------- | ------------------------------ |
-| `injective` | `mainnet`, `testnet`, `devnet` |
+| ----------- |--------------------------------|
+| `injective` | `mainnet`, `testnet`, `custom` |
 
 The connector supports two different account modes:
 - Trading with delegate accounts
@@ -68,6 +68,8 @@ Injective connectors support two different modes to calculate the gas fee when b
 - Gas estimation based on the transaction messages (without simulation)
 
 The gas estimation without simulation is more efficient because it does not require requesting the node to run the simulation (an action that could take around 200 milliseconds when using public nodes). But the gas estimation is not as accurate as the gas cost determined by the simulation. Using the gas estimation mode could result in spending a little bit more INJ on gas fee compared to the gas amount spent when using the fee calculator using simulation. 
+
+The gas estimation with transaction simulation uses a multiplier to estimate the gas fee. The default multiplier is 1.3, but users can change this value with the global variable `GAS_LIMIT_ADJUSTMENT_MULTIPLIER` in the constants module (hummingbot/connector/exchange/injective_v2/injective_constants.py).
 
 ## 🔀 Spot Connector
 *Integration to spot markets API endpoints*
