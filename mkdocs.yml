@@ -313,6 +313,7 @@ nav:
         - Chain Connectors: chains/index.md
         - Ethereum: chains/ethereum.md
         - Avalanche: chains/avalanche.md
+        - Osmosis: chains/osmosis-chain.md
         - Polygon: chains/polygon.md
         - BNB Chain: chains/bnb-chain.md
         - Algorand: chains/algorand.md
