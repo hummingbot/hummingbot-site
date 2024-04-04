@@ -32,12 +32,14 @@ Edit or add the section that defines the `CONFIG_PASSWORD` and `CONFIG_FILE_NAME
       # - CONFIG_PASSWORD=[password]
       # - CONFIG_FILE_NAME=simple_pmm_example.py
       # - CONFIG_FILE_NAME=conf_pure_mm_1.yml
+      # - SCRIPT_CONFIG=conf_simple_pmm_example_config_1.yml
 ```
 
 Uncomment out:
  * The `environment:` line
  * The `CONFIG_PASSWORD` line: add the password you set earlier,
  * One of `CONFIG_FILE_NAME` lines: add your script OR strategy config file
+ * If using a configurable script uncomment and add your `SCRIPT_CONFIG` file
  
  The final `environment` section of the YAML file should look something like this:
 
