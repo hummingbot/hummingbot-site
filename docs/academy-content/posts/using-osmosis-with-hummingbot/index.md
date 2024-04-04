@@ -284,7 +284,7 @@ If you are interested in contributing or funding a bounty for development of add
 - V2 strategy development
 - Data Feed
 - Custom CLMM range input (strategy development - amm_lp_v3 or new)
-- Future Osmosis Development <https://forum.osmosis.zone/c/site-feedback/2>
+- Future Osmosis Development - <https://forum.osmosis.zone/c/site-feedback/2>
 
 ---
 
