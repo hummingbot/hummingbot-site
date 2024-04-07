@@ -26,20 +26,15 @@ docker compose down
 
 Use an IDE like [VSCode](https://code.visualstudio.com/) to edit the `docker-compose.yml` file.
 
-Edit or add the section that defines the `CONFIG_PASSWORD` and `CONFIG_FILE_NAME` environment variables:
-```yaml
-    # environment:
-      # - CONFIG_PASSWORD=[password]
-      # - CONFIG_FILE_NAME=simple_pmm_example.py
-      # - CONFIG_FILE_NAME=conf_pure_mm_1.yml
-      # - SCRIPT_CONFIG=conf_simple_pmm_example_config_1.yml
-```
+Edit or add the section that defines the environment variables:
 
-Uncomment out:
  * The `environment:` line
- * The `CONFIG_PASSWORD` line: add the password you set earlier,
+
+ * The `CONFIG_PASSWORD` line: add the Hummingbot password to login
+
  * One of `CONFIG_FILE_NAME` lines: add your script OR strategy config file
- * If using a configurable script uncomment and add your `SCRIPT_CONFIG` file
+
+ * Add your `SCRIPT_CONFIG` file if using a configurable script
  
  The final `environment` section of the YAML file should look something like this:
 
@@ -54,9 +49,9 @@ Afterwards, save the file.
 
 You can auto-start either a Script or a Strategy:
 
-* [Scripts](https://docs.hummingbot.org/scripts/) are Python files that contain all strategy logic. If you define a `.py` file as `CONFIG_FILE_NAME`, Hummingbot assumes it's a script file and looks for the `.py` file in the `hummingbot_files/scripts` directory. See [`simple_pmm_example.py`](./hummingbot_files/scripts/simple_pmm_example.py) for an example.
+* [Scripts](https://docs.hummingbot.org/scripts/) are Python files that contain all strategy logic. If you define a `.py` file as `CONFIG_FILE_NAME`, Hummingbot assumes it's a script file and looks for the `.py` file in the `hummingbot_files/scripts` directory. 
 
-* [Strategies](https://docs.hummingbot.org/strategies/) are configurable strategy templates. If you define a `.yml` file as `CONFIG_FILE_NAME`, Hummingbot assumes it's a strategy config file and looks for the `.yml` file in the `hummingbot_files/conf/strategies` directory. See [`conf_pure_mm_1.yml`](./hummingbot_files/conf/strategies/conf_pure_mm_1.yml) for an example.
+* [Strategies](https://docs.hummingbot.org/strategies/) are configurable strategy templates. If you define a `.yml` file as `CONFIG_FILE_NAME`, Hummingbot assumes it's a strategy config file and looks for the `.yml` file in the `hummingbot_files/conf/strategies` directory. 
 
 **Relaunch Hummingbot**
 
@@ -104,11 +99,18 @@ Let's say you configured your Hummingbot password as a single letter **a** and y
 bin/hummingbot_quickstart.py -p a -f simple_pmm_example_config.py -c conf_simple_pmm_example_config_1.yml
 ```
 
-Where  
-`a` is the config password
-`simple_pmm_example_config.py` is the script / strategy file name  
-`conf_simple_pmm_example_config_1.yml` is the script / strategy config file name
+Where: 
 
-- More information on strategy can be found in [Strategy](/strategies/).
-- More information on configuration file name can be found in [Configuring Hummingbot](/client/config-files).
-- More information on password can be found in [Create a secure password](/client/password).
+- `a` is the config password
+
+- `simple_pmm_example_config.py` is the script / strategy file name  
+
+- `conf_simple_pmm_example_config_1.yml` is the script / strategy config file name
+
+
+
+More information on strategy can be found in [Strategy](/strategies/).
+
+More information on configuration file name can be found in [Configuring Hummingbot](/client/config-files).
+
+More information on password can be found in [Create a secure password](/client/password).
