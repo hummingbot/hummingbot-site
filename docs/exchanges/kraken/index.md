@@ -25,13 +25,14 @@
 
 - Open the account menu (click the profile icon in the top right corner of the page)
 - Select the Settings option
-- Select the API tab
-- Click the Create API key button (you will be able to configure your API key in the next steps)
+- Select the Security tab
+- Scroll down and look for Create API Key, you will be prompted to go to Kraken-Pro
+- Select Create API key (you will be able to configure your API key in the next steps)
 
-[![Create API](kraken-api3.png)](kraken-api3.png)
+[![Create API](1.png)](1.png)
 
 !!! important
-     Ensure the **Access Websockets API** box is checked. This step is necessary to obtain an authentication token for the WebSocket APIs through the GetWebSocketsToken endpoint. Without this, the Kraken connector will be unable to reconstruct the order book and place trades. See [Troubleshooting](../../troubleshooting.md#valueerror-no-order-book-exists-for-btc-usd) for an example of an error message in Hummingbot when this box is left unchecked
+     Ensure the **Access Websockets connection box is on**. This step is necessary to obtain an authentication token for the WebSocket APIs through the GetWebSocketsToken endpoint. Without this, the Kraken connector will be unable to reconstruct the order book and place trades. See [Troubleshooting](../../troubleshooting.md#valueerror-no-order-book-exists-for-btc-usd) for an example of an error message in Hummingbot when this box is left unchecked
 
 - Once the API key settings have been configured appropriately, the new API key can be created by clicking on the Generate key button. Make sure to store the API keys in a safe place. 
 
@@ -40,8 +41,9 @@
 From inside the Hummingbot client, run `connect kraken`:
 
 ```
-Enter your kraken API key >>>
-Enter your kraken secret key >>>
+Enter your Kraken API key >>>
+Enter your Kraken secret key >>>
+Enter your Kraken API Tier (Starter/intermediate/Pro) >>> 
 ```
 
 If connection is successful:
@@ -64,6 +66,7 @@ This connector supports the following `OrderType` constants:
 
 - `LIMIT`
 - `LIMIT_MAKER`
+- `MARKET`
 
 
 ### Paper Trading
