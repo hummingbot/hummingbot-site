@@ -303,7 +303,7 @@ controller_type: directional_trading
 manual_kill_switch: null
 candles_config: []
 connector_name: vega_perpetual
-trading_pair: SNX-USDT
+trading_pair: SNXUSDT-USDT
 executor_amount_quote: 100.0
 max_executors_per_side: 2
 cooldown_time: 300
@@ -316,7 +316,7 @@ take_profit_order_type: 2
 trailing_stop:
   activation_price: 0.015
   trailing_delta: 0.003
-candles_connector: vega_perpetual
+candles_connector: binance_perpetual
 candles_trading_pair: SNX-USDT
 interval: 30m
 bb_length: 100
