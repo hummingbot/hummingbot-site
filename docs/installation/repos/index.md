@@ -1,8 +1,3 @@
-## Post-Installation
-
-After you have successfully installed Hummingbot, See [Post-Installation](./post-installation.md) for how to manage the folder structure, launch/exit the client, update it, etc. Then, check out the [Getting Started] guides(/getting-started) to build and run a trading bot!
-
-## Other Repos
 The main Hummingbot code repository is:
 
 <div class="grid cards" markdown>
