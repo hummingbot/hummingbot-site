@@ -42,7 +42,7 @@ There are multiple bridges to Cosmos available, but the easiest way is to direct
 - [Osmosis Interface](https://app.osmosis.zone/assets)
 
 !!! Note
-Please ensure your wallet has sufficient balance, including OSMO for gas fees
+      Please ensure your wallet has sufficient balance, including OSMO for gas fees
 
 <br>
 
@@ -76,7 +76,9 @@ You will need to export the private key for your designated trading wallet. It i
 
 !!! Warning An Osmosis Private Key has 64 characters
     Be aware an exported private key may have an 0x at the start, which may need to be removed to fit the private key format check.
+
     → Before: 0x1234567890...
+    
     → After: 1234567890...
 
 ### Export Private Key from Keplr
@@ -282,7 +284,7 @@ If you are interested in contributing or funding a bounty for development of add
 - V2 strategy development
 - Data Feed
 - Custom CLMM range input (strategy development - amm_lp_v3 or new)
-- Future Osmosis Development (https://forum.osmosis.zone/c/site-feedback/2)
+- Future Osmosis Development - <https://forum.osmosis.zone/c/site-feedback/2>
 
 ---
 

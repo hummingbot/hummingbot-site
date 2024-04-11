@@ -4,22 +4,38 @@ This section will detail the necessary configuration / setup required to run the
 
 ## VS Code
 
-Include the following debug configurations into the `launch.json` configuration file
+[![vscode](vscode.gif)](vscode.gif)
 
-```json
-{
-  "version": "0.2.0",
-  "configurations": [
+- In VSCode, open the Hummingbot folder as your current workspace.
+
+- Click on the **Run and Debug** icon in the left-hand pane or press <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>.
+
+- Click on the blue link for **create a launch.json file**
+
+- Select "**Python Debugger**" and then "**Python File**"
+
+- A window will open up containing the initial `launch.json` code. Replace this code with the one provided below:
+
+    ```json
     {
-      "name": "Python: Hummingbot Application",
-      "type": "python",
-      "request": "launch",
-      "program": "${workspaceRoot}/bin/hummingbot.py",
-      "console": "integratedTerminal"
+      "version": "0.2.0",
+      "configurations": [
+        {
+          "name": "Python: Hummingbot Application",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceRoot}/bin/hummingbot.py",
+          "console": "integratedTerminal"
+        }
+      ]
     }
-  ]
-}
-```
+    ```
+
+- Save the changes.
+
+- Press <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and select "Python Interpreter."
+
+- Make sure to select the Hummingbot conda environment.
 
 By executing the **Start Debugging** command which can be found under the **Run** menu at the top or pressing the <kbd>F5</kbd> key, the debugger will automatically attach itself to the Hummingbot process. The Hummingbot app will appear in the `integratedTerminal`. You may change this as desired.
 
