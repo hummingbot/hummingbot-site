@@ -50,26 +50,67 @@ Follow the prompts on the installer screens. If you are unsure about any setting
 
 To make the changes take effect, close and then re-open your terminal window.
 
-Afterwards, run the `conda` command from your path:
+## Install Hummingbot
+
+After you have installed the dependencies, follow the steps below to install Hummingbot from source:
+
+
 ```
-conda
-```
-
-You should see a response similar to:
-```
-usage: conda [-h] [-V] command ...
-
-conda is a tool for managing and deploying applications, environments and packages.
-
-Options:
-
-positional arguments:
-  command
-    clean        Remove unused packages and caches.
-    compare      Compare packages between conda environments.
+git clone https://github.com/hummingbot/hummingbot.git
+cd hummingbot
+./install
+conda activate hummingbot
+./compile
 ```
 
-#### `conda` command and ZSH
+!!! note
+     The `conda activate hummingbot` command should add a `(hummingbot)` label in front of your command line, which lets you know that you are inside the conda environment. If not, check if conda was installed correctly and reinstall if necessary. 
+
+
+## Launch Hummingbot
+
+From inside the conda environment, run the following command to launch Hummingbot:
+```
+./start
+```
+
+You should see the Hummingbot welcome screen:
+
+![welcome screen](/assets/img/welcome.png)
+
+To get started with Hummingbot, check out the following docs:
+
+* [Post Installation](./post-installation.md)
+* [Basic Features](../client/index.md)
+* [Quickstart Guide](../academy-content/posts/quickstart-deploy-examples/0-index.md)
+* [Hummingbot FAQ](../faq.md)
+
+If you need to run DEX bots, install [Hummingbot Gateway](../gateway/index.md).
+
+## Other Useful Commands
+
+
+### Update Hummingbot to latest `master` release
+```
+git pull origin master
+```
+
+### Update Hummingbot to `development` branch
+```
+git pull origin development
+```
+
+### Removed compiled files
+```
+./clean
+```
+
+### Remove hummingbot conda environment
+```
+./uninstall
+```
+
+### `conda` command and ZSH
 
 If the `conda` command is not available in your path, this may be because you are using [ZSH](https://en.wikipedia.org/wiki/Z_shell) or another shell. 
 
@@ -97,128 +138,3 @@ Save the changes, and run the `conda init` command to initialize them:
 conda init zsh
 ```
 Afterward, you should be able to access the `conda` command from your path.
-
-#### `conda` and Apple M1/M2 chips
-
-If you are using Apple Silicon, make sure that you haved downloaded the M1 versions of Miniconda or Anaconda.
-
-If you encounter issues with the Hummingbot environemnt, you may need to regenerate a Hummingbot conda environment that is optimized for Intel-based Macs:
-```bash
-# Deactivate the environment if you're in it
-conda deactivate
-
-# Remove the envionment
-conda env remove -n hummingbot
-
-# Creates the hummingbot environment and enforces python 3.8.2 and initialize a environment variable used to determine the processor packages to use
-CONDA_SUBDIR=osx-64 conda create -n hummingbot python=3.8.2
-
-# Activate the new environment
-conda activate hummingbot
-
-# Configures environment to use intel-based packages
-conda config --env --set subdir osx-64
-
-# Start Hummingbot
-(hummingbot) ➜ ./start
-```
-
-## Install Hummingbot
-
-After you have installed the dependencies, follow the steps below to install Hummingbot from source:
-
-### Clone repo
-
-Clone the repo or download the source code from Github and navigate to the folder:
-```
-git clone https://github.com/hummingbot/hummingbot.git
-cd hummingbot
-```
-### Install environment
-
-Next, run the install script that installs a `hummingbot` conda environment with the Python dependencies:
-```
-./install
-```
-
-### Active environment
-
-Activate the conda environment:
-```
-conda activate hummingbot
-```
-
-This step should add a `(hummingbot)` label in front of your command line, which lets you know that you are inside the conda environment.
-
-### Compile source code
-
-From inside the conda environment, run the script that compiles the Cython files in the Hummingbot codebase. Certain Hummingbot modules are written in Cython, which compiles down to lower-level C, to boost performance. 
-```
-./compile
-```
-
-### Launch Hummingbot
-
-From inside the conda environment, run the following command to launch Hummingbot:
-```
-./start
-```
-
-You should see the Hummingbot welcome screen:
-
-![welcome screen](/assets/img/welcome.png)
-
-To get started with Hummingbot, check out the following docs:
-
-* [Post Installation](./post-installation.md)
-* [Basic Features](../client/index.md)
-* [Quickstart Guide](../academy-content/posts/quickstart-deploy-examples/0-index.md)
-* [Hummingbot FAQ](../faq.md)
-
-If you need to run DEX bots, install [Hummingbot Gateway](../gateway/index.md).
-
-## Other Useful Commands
-
-### Clone the Hummingbot repo
-```
-git clone https://github.com/hummingbot/hummingbot.git
-```
-
-### Run the install script
-```
-./install
-```
-
-### Compile Hummmingbot
-```
-conda activate hummingbot
-
-./compile
-```
-
-### Start Hummingbot
-```
-conda activate hummingbot
-
-./start
-```
-
-### Update Hummingbot to latest `master` release
-```
-git pull origin master
-```
-
-### Update Hummingbot to `development` branch
-```
-git pull origin development
-```
-
-### Removed compiled files
-```
-./clean
-```
-
-### Remove hummingbot conda environment
-```
-./uninstall
-```
