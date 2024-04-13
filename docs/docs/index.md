@@ -1,32 +1,26 @@
-Hummingbot architecture features modular components that can be maintained and extended by individual community members.
+Hummingbot is a local software client that helps you run trading strategies that automate the execution of orders and trades on various cryptocurrency exchanges and protocols. The Hummingbot architecture features modular components that can be maintained and extended by individual community members.
 
-## Core Repos
+## Installation
 
-![](repos.png)
+We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase.
 
-The main Hummingbot code repositories are:
+Check out [Install via Docker](/installation/docker) for more information, or follow the [Docker Installation Guide](/academy-content/docker-installation-guide/) for a comprehensive, step-by-step walkthrough.
 
-<div class="grid cards" markdown>
-
-- [__Hummingbot__](/client) Core trading client, strategies, and connectors
-- [__Gateway__](/gateway) API middleware for DEX connectors
-- [__Dashboard__](/dashboard) helps you create, backtest, deploy, and manage Hummingbot instances
-- [__Deploy Examples__](https://github.com/hummingbot/deploy-examples) of various Hummingbot configurations using Docker Compose
-
-</div>
+!!! note
+    If you're a developer looking to customize the software, consider installing Hummingbot from source. You can find detailed instructions for various operating systems here: [Linux](../installation/linux.md) | [Windows](../installation/windows.md) | [MacOS](../installation/mac.md)
+    
 
 ## [Strategies](/strategies)
 
-A Hummingbot strategy is an ongoing process that executes an algorithmic trading strategy. It is constructed as a user-defined program that uses an underlying framework to abstracts low-level operations:
+The new Hummingbot StrategyV2 framework allows you to mix and match components, offering a modular approach to strategy creation and making the development process faster and more efficient.
 
-- [V2 Strategies](/v2-strategies): The latest and most advanced way to create strategies in Hummingbot, V2 strategies are built using composable elements known as `Controllers` and `PositionExecutors`. These elements can be mixed and matched, offering a modular approach to strategy creation and making the development process faster and more efficient.
+- [Architecture](../v2-strategies/index.md): Learn how to use key components like Executors and Controllers
 
-- [Scripts](/scripts): For those who are looking for a lightweight solution, Hummingbot provides scripting support. These are single-file strategies that are quick to implement and can be an excellent starting point for those new to algorithmic trading.
+- [Walkthrough](../v2-strategies/walkthrough.md): Detailed walkthroughs of simple and advanced Strategy V2 examples
 
-- [V1 Strategies](/v1-strategies): Templatized programs templates for various algorithmic trading strategies that expose a set of user-defined parameters, allowing you to customize the strategy's behavior. These were Hummingbot's original method of defining strategies and have been superceded by V2 Strategies and Scripts.
+- [Sample Scripts](../scripts/examples.md): Sample Strategy V2 scripts
 
-
-## [Connectors](../exchanges/index.md)
+## [Connectors](/exchanges/)
 
 Hummingbot connectors standardize trading logic and order types across different types of exchanges and blockchain networks, so that strategies can access standardized methods that work across all connectors of that type.
 
@@ -37,3 +31,22 @@ Each connector's code is contained in modularized folders in the Hummingbot and/
 - [DEX](/dex-connectors): Connectors to decentralized exchanges (DEX)
 
 - [Chains](/chains): Connectors to Layer 1 blockchain networks
+
+## Getting Help
+
+If you encounter issues or have questions, here’s how you can get assistance:
+
+- Consult our [FAQ](../faq.md), [Troubleshooting Guide](../troubleshooting.md), or [Glossary](../glossary.md).
+
+- Explore our [Academy](../academy/index.md) for free resources on algorithmic trading and market making.
+
+- To report bugs or suggest features, submit a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
+
+- Join our [Discord community](https://discord.gg/hummingbot) and ask questions in the **#support** channel.
+
+We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
+
+## Advanced Learning
+
+Enhance your trading skills with [Botcamp](https://www.botcamp.xyz/), where you can learn professional-grade market making and algorithmic trading strategies.
+

@@ -163,7 +163,6 @@ nav:
   - Home: index.md
   - Docs:
     - Docs: docs/index.md
-    - Getting Started: getting-started/index.md
     - Installation:
       - Install via Docker: installation/docker.md
       - Install from Source:
