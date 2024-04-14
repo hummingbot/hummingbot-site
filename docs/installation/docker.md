@@ -1,45 +1,103 @@
-We recommend installing Hummingbot using Docker if:
-
-* You want the simplest, easiest installation method
-* You don't need to modify the Hummingbot codebase
-* You want to deploy Hummingbot alongside with Dashboard, Orchestation Module, and other advanced configurations
+We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase.
 
 ## Prerequisites
+
+### System
+
+Hummingbot runs on commodity hardware and does not require much memory or storage.
 
 * MacOS 10.12.6+ / Linux (Ubuntu 20.04+, Debian 10+) / Windows 10+
 * Memory: 4 GB RAM per instance
 * Storage: 5 GB HDD space per instance
-* Install [Docker Compose](https://docs.docker.com/compose/)
+
+### Docker Compose
+
+Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for defining and running multi-container Docker applications. The recommended way to get Docker Compose is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
+
+See [this page](https://github.com/hummingbot/deploy-examples/blob/main/DOCKER.md) for information about how to install and use Docker Compose, as well as helpful commands.
+
+Afterwards, verify that Docker Compose is installed correctly by checking the version:
+
+```bash
+docker compose version
+```
+
+The output should be: `Docker Compose version v2.17.2` or similar. Ensure that you are using Docker Compose V2, as V1 is deprecated.
 
 ## Installation Process
 
-```
-git clone https://github.com/hummingbot/hummingbot
+### 1. Clone Repo
+
+Enter the following commands in Bash/Terminal to clone the Hummingbot Github repo and enter the root folder:
+```bash
+git clone https://github.com/hummingbot/hummingbot.git
 cd hummingbot
+```
+
+### 2. Pull Image
+
+The `docker-compose.yml` file in the root folder provides a basic configuration for launching an instance.
+
+```yaml
+version: "3.9"
+services:
+  hummingbot:
+    container_name: hummingbot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./conf:/home/hummingbot/conf
+      - ./conf/connectors:/home/hummingbot/conf/connectors
+      - ./conf/strategies:/home/hummingbot/conf/strategies
+      - ./conf/controllers:/home/hummingbot/conf/controllers
+      - ./conf/scripts:/home/hummingbot/conf/scripts
+      - ./logs:/home/hummingbot/logs
+      - ./data:/home/hummingbot/data
+      - ./certs:/home/hummingbot/certs
+      - ./scripts:/home/hummingbot/scripts
+      - ./controllers:/home/hummingbot/controllers
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    tty: true
+    stdin_open: true
+    network_mode: host
+    #  environment:
+    #    - CONFIG_PASSWORD=a
+    #    - CONFIG_FILE_NAME=simple_pmm_example.py
+    #    - SCRIPT_CONFIG=conf_simple_pmm_example.yaml
+```
+
+You will be able to modify this file and uncomment lines in order to automatically enter your pasword and start strategies. For now, we can use it as-is. Run the following command to follow the instructions contained in this file to start the instance:
+
+```bash
 docker compose up -d
+```
+
+After the images have been downloaded, you should see the following output:
+
+```bash
+[+] Running 1/1
+ ⠿ Container hummingbot  Started 
+```
+
+### 3. Attach to Instance
+
+The `-d` flag runs Hummingbot in detached mode. Attach to it by running the command:
+
+```bash
 docker attach hummingbot
 ```
 
-Follow the [Docker Installation Guide](/academy-content/docker-installation-guide/) for a detailed walkthrough.
+You should now see the Hummingbot welcome screen:
 
-## Deploy Examples Repo
+![welcome screen](/assets/img/welcome.png)
 
-The [`deploy-examples`](https://github.com/hummingbot/deploy-examples) Github repository provides various examples of how to deploy Hummingbot using Docker Compose, a tool for defining and running multi-container Docker applications. 
+To get started with Hummingbot, check out the following pages and guides:
 
-Clone the repo to the machine where you want to deploy Hummingbot:
-```
-git clone https://github.com/hummingbot/deploy-examples.git
-```
-
-Each sub-folder contains two important files:
-
-* `docker-compose.yml`: The sample configuration file for that deployment type
-* `README.md`: A detailed README file that guides users through the steps required to deploy Hummingbot using Docker, including how to build and run the containers, how to configure the bot, and how to monitor its performance.
-
-After you have configured it properly, each deployment can be launched with the command:
-```
-docker compose up -d
-```
-
-
-Check out the [Deploy Examples Guide](../academy-content/posts/quickstart-deploy-examples/0-index.md): Guide on how to use the `deploy-examples` repo
+* [Basic Features](/client/)
+* [V2 Strategy Walkthough](/v2-strategies/walkthrough/)
+* [Hummingbot FAQ](/faq/)

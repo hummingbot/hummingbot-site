@@ -2,10 +2,10 @@ The instructions below help you install a standalone Hummingbot instance from so
 
 ## Prerequisites
 
-Supported versions:
-
 * Ubuntu 20.04 / Ubuntu 22.04 (recommended)
 * Debian 10 / 11
+* Memory: 4 GB RAM per instance
+* Storage: 3 GB HDD space per instance
 
 ### build-essentials
 

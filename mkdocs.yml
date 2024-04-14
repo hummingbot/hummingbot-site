@@ -168,8 +168,7 @@ nav:
       - Install from Source:
         - Linux: installation/linux.md
         - MacOS: installation/mac.md
-        - Windows: installation/windows.md        
-        - Raspberry Pi: installation/raspberry-pi.md
+        - Windows: installation/windows.md
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
       - Other Repos:

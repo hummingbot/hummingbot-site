@@ -6,11 +6,11 @@ Watch the video:
 
 ## Prerequisites
 
-Supported versions:
-
-* macOS 10 (Sierra) or later
+* MacOS 10.12.6+
 * Intel x86
-* Apple M1 / M2
+* Apple M1 / M2 / M3
+* Memory: 4 GB RAM per instance
+* Storage: 3 GB HDD space per instance
 
 ### XCode Command Line Tools
 
