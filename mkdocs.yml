@@ -173,11 +173,19 @@ nav:
       - Using Debugger Tools: installation/debug.md
       - Other Repos:
         - Other Repos: installation/repos/index.md
-        - Brokers: installation/broker.md
+        - Gateway:
+          - Gateway: gateway/index.md
+          - Installation: gateway/installation.md
+          - Testing Gateway: gateway/testing.md
+          - Setting up Gateway: gateway/setup.md
+          - Working with Tokens: gateway/tokens.md
+          - Running Strategies and Scripts: gateway/running-dex-bots.md
+          - Building Gateway Connectors: gateway/adding-dex-connectors.md
         - Dashboard: dashboard/index.md
+        - Brokers: installation/broker.md
         - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
-    - Client:
-      - Client: client/index.md
+    - Using the Client:
+      - Using the Client: client/index.md
       - User Interface: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
       - Launch/Exit Hummingbot: client/launch-exit.md
@@ -205,14 +213,6 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running Strategies and Scripts: gateway/running-dex-bots.md
-      - Building Gateway Connectors: gateway/adding-dex-connectors.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
       - Architecture: v2-strategies/index.md

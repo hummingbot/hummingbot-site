@@ -14,21 +14,24 @@ Hummingbot runs on commodity hardware and does not require much memory or storag
 
 Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for defining and running multi-container Docker applications. 
 
+!!! note "For Windows users"
+    To install Docker on Windows, [Windows Subsystem for Linux 2](https://learn.microsoft.com/en-us/windows/wsl/about) is needed. Follow [this link](https://learn.microsoft.com/en-us/windows/wsl/install) to install WSL2 on your Windows system. Afterwards, proceed to the instructions above to install Docker Compose.
+
 The recommended way to get Docker Compose is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
 
 For command line instructions and other helpful commands, see [this page](https://github.com/hummingbot/deploy-examples/blob/main/DOCKER.md) in our Deploy-Examples repo.
 
-!!! note "For Windows users"
-    To install Docker on Windows, [Windows Subsystem for Linux 2](https://learn.microsoft.com/en-us/windows/wsl/about) is needed. Follow this link to install WLS2 on your Windows system: https://learn.microsoft.com/en-us/windows/wsl/install.
 
-
-Afterwards, verify that Docker Compose is installed correctly by checking the version:
+After installing Docker Desktop, verify that Docker Compose is installed correctly by checking the version:
 
 ```bash
 docker compose version
 ```
 
-The output should be: `Docker Compose version v2.17.2` or similar. Ensure that you are using Docker Compose V2, as V1 is deprecated.
+The output should be: `Docker Compose version v2.17.2` or similar. 
+
+!!! warning
+    Ensure that you are using Docker Compose V2, since Compose V1 is deprecated and the examples assume that you are using Compose V2.
 
 ### 2. Clone Repo
 

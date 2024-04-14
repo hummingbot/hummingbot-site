@@ -17,9 +17,9 @@ hide:
 
     ## [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
-    Learn how to compose powerful strategies using Hummingbot's new framework
+    Learn how to compose powerful algo strategies of any kind using Hummingbot's new strategy framework
 
--   #### :rocket: Popular
+-   #### :rocket: Most Popular
 
     ---
 
