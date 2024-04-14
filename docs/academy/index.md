@@ -17,17 +17,19 @@ hide:
 
     ## [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
--   #### :rocket: Quickstart Guides
+    Learn how to compose powerful strategies using Hummingbot's new framework
+
+-   #### :rocket: Popular
 
     ---
 
-    ### [Docker Installation Guide](/academy-content/docker-installation-guide)
+    ### [Using Hyperliquid Vaults](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
 
-    Get started with Hummingbot in 5 minutes
+    Create investable vaults with Hummingbot on Hyperliquid!
 
-    ### [Using Dashboard to Deploy and Backtest Strategies](/academy-content/using-dashboard-to-deploy-and-backtest-strategies/)
+    ### [Liquidity Mining in Hummingbot vs DeFi](/academy-content/liquidity-mining-in-hummingbot-vs-defi)
 
-    Learn how to use the new Dashboard app!
+    How to earn market making rewards using Hummingbot!
 
     ### [Creating a Custom Market Making Strategy](/academy-content/creating-a-custom-market-making-strategy/)
 

@@ -4,17 +4,14 @@ Hummingbot is a local software client that helps you run trading strategies that
 
 We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase. Check out [Install via Docker](/installation/docker) for the basic process.
 
-If you're a developer looking to customize the software, consider installing Hummingbot from source. Here are detailed instructions for each operating system:
-
-* [Linux](../installation/linux.md)
-* [Windows](../installation/windows.md)
-* [MacOS](../installation/mac.md)
+!!! note
+    If you're a developer looking to customize the software, consider installing Hummingbot from source. Here are detailed instructions for each operating system: [Linux](/installation/linux) | [Windows](/installation/windows) | [MacOS](/installation/mac)
 
 ## [Strategies](/strategies)
 
-The new Hummingbot StrategyV2 framework allows you to mix and match components, offering a modular approach to strategy creation and making the development process faster and more efficient.
+The new Hummingbot **Strategy V2** framework allows you to mix and match components, offering a modular approach to strategy creation and making the development process faster and more efficient.
 
-- [Architecture](../v2-strategies/index.md): Learn how to use key components like Executors and Controllers
+- [Architecture](../v2-strategies/index.md): Learn how to use key V2 components like Executors and Controllers
 
 - [Walkthrough](../v2-strategies/walkthrough.md): Detailed walkthroughs of simple and advanced Strategy V2 examples
 

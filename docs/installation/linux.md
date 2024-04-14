@@ -52,7 +52,7 @@ conda activate hummingbot
 
 
 
-### Launch Hummingbot
+## Launch Hummingbot
 
 From inside the conda environment, run the following command to launch Hummingbot:
 
