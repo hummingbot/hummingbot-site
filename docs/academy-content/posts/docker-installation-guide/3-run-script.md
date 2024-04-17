@@ -8,7 +8,7 @@ tags:
   - Docker Installation Guide
 ---
 
-# Docker Installation Guide - Running a Configurable Script
+# Docker Installation Guide - 3 - Running a Script
 
 ## Simple PMM (config) Example
 

@@ -22,14 +22,15 @@ The Board of Directors provides oversight over the Hummingbot Foundation and its
 
 ### Current Members
 
-Elected for a 12-month term in February 2023 in [HGP-35](https://snapshot.org/#/hbot.eth/proposal/0xce24cc92f5f0b95dd8f84a69fa9a5318a53a84b7118d2d3120a9656782ecba58), the Board is comprised of the following individuals:
+Elected for a 12-month term in February 2024 in [HGP-54](https://snapshot.org/#/hbot.eth/proposal/0x2fc72475c6aef6f8a6261f197833d5a80f6ee3b2971455a17a2223a5ebfedf06), the Board is comprised of the following individuals:
 
-| Name              | Title                                   | Address     |
+| Name              | Hummingbot Discord Handle  | Ethereum Address |
 |-------------------|-----------------------------------------|-------------|
-| Brett Gibson      | Managing Partner, Initialized Capital   | [eth:0x64b..4C3](https://etherscan.io/address/0x64b8457C3977a2f8ca7D7C00b0435aED27CA34C3)
-| Gene Cheon        | COO, Hummingbot Foundation              | [eth:0xd50..27d](https://etherscan.io/address/0xd506d13498B19A2E9DC293876f498AFD021EA27d)
-| Hoang La          |                                         | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
-| Michael Feng      | Board member, CoinAlpha                 | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
+| Brett Gibson      | brettdg | [eth:0x64b..4C3](https://etherscan.io/address/0x64b8457C3977a2f8ca7D7C00b0435aED27CA34C3)
+| Carlo Las Marias      | carlolm | [eth:0x03a..C79](https://etherscan.io/address/0x03aD70b7F9E577AE73a533470C2c65d537007C79)
+| Hoang La          | w0jak | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
+| Maxime Fages      | engineeredjoy | [eth:0xD58..527](https://etherscan.io/address/0xD582C19D593897aF38aa263dFFae151BfD42D527)
+| Michael Feng      | fengtality | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
 
 ### Role & Responsibilities
 

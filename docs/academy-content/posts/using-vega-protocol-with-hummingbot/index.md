@@ -185,53 +185,164 @@ connect vega_perpetual_testnet
 balance
 ```
 
-
-
 ## Starting Your first script
 
-To run your first script, in the Hummingbot terminal, enter the command below to start the [v2_dman_v3_multiple_exchanges.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_dman_v3_multiple_exchanges.py) script
+In this example we'll show you how to use Vega with the newer Strategy V2 script with a directional trading controller. We'll be using the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) script and the [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v1.py) controller
+
+
+First let's configure our controller. Run the command below to create the controller config:
 
 ```
-start --script v2_dman_v3_multiple_exchanges.py
+create --controller-config directional_trading.bollinger_v1
 ```
 
 [![image](image14.png)](image14.png)
 
-If you have connected your wallet successfully to Hummingbot and have sufficient funds in your mainnet trading wallet, the bot will then start to place orders on **mainnet** with the following trading pairs: 
+Follow the prompts and enter in the values for the controller config. You can always make changes to the config later. One important change you'll need to make is the **candles_connector** config since Vega does not currently support candles feed yet. 
 
-- **BTCUSDPERP-USDT** 
+We'll use the candles feed from Binance Perpetual for example and since we're trading on the **ETHUSDT-USDT** pair we'll use the **ETH-USDT** trading pair on Binance Perpetual. 
 
-- **ETHUSDPERP-USDT** 
+For reference here's an example controller config below: 
 
-You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status
+!!! Note
+    **Disclaimer**: The values shown below are provided as generic defaults and serve as a basic starting point for configuring your Hummingbot instance. Due to the highly dynamic and personal nature of trading, these settings may not be optimal for every user or market condition. It is crucial for users to perform their own research, consider their unique trading goals, risk tolerance, and market analysis to adjust these configurations accordingly. Always remember that trading involves risk, and it's important to experiment and optimize settings on a simulation or with small amounts before applying them to live markets. The following configurations are examples only and should be customized based on individual requirements and circumstances.
+
+
+```bash
+id: 64GRtyHULWapPbm9i6fGM923Wk8zuQrGxTYjQwZtsJfr
+controller_name: bollinger_v1
+controller_type: directional_trading
+manual_kill_switch: null
+candles_config: []
+connector_name: vega_perpetual
+trading_pair: ETHUSDT-USDT
+executor_amount_quote: 20
+max_executors_per_side: 1
+cooldown_time: 300
+leverage: 100
+position_mode: HEDGE
+stop_loss: 0.03
+take_profit: 0.02
+time_limit: 2700
+take_profit_order_type: 2
+trailing_stop:
+  activation_price: 0.015
+  trailing_delta: 0.003
+candles_connector: binance_perpetual
+candles_trading_pair: ETH-USDT
+interval: 3m
+bb_length: 100
+bb_std: 2.0
+bb_long_threshold: 0.5
+bb_short_threshold: 0.5
+
+```
+
+The controller config YAML file is located under the **/conf/controllers** folder inside your Hummingbot folder. You can use any text editor or IDE like VSCode to open the YAML file and make changes. Any changes made to this file will apply to the running bot during the next refresh cycle. 
+
+
+Next, we'll need to create the script config using the following command: 
+
+```
+create --script-config v2_generic_with_controllers
+```
+
+You'll be prompted to enter the controller configuration, make sure to select the controller config we created earlier. 
+
+
+[![image](image3.png)](image3.png)
+
+
+Once this is done, we can now start the bot using the below command: 
+
+
+```
+start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
+
+```
+
+Your bot should now be running and start placing orders. You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status
 
 ```
 status
 ```
 
-## Modifying the Script
+[![image](image5.png)](image5.png)
 
-The **v2_dman_v3_multiple_exchanges.py** script has the following default values for exchange, trading pair and candles. 
+You can click on the log pane at the top right corner of the screen to hide it and see more status info
 
-[![image](image1.png)](image1.png)
+[![image](image6.png)](image6.png)
 
-If you want to make changes to the above as well as the **indicators**, **orders config**, **triple barrier** and other **advanced script configs**, follow the steps below. 
 
-[![image](script_config.gif)](script_config.gif)
+## Modifying the Script / Controller
 
-**Scripts Config**
+As mentioned above, you can edit the controller YAML file under the **conf/controllers** folder to make changes on-the-fly to the config values. You can also make changes to the script config file and add another controller for a different pair or perhaps use another controller like the **dman_v3** controller running a different pair. Here's how you would make changes: 
 
-- Locate your **hummingbot/scripts** folder and open the **v2_dman_v3_multiple_exchanges.py** file using any text editor or an IDE like [Visual Studio Code](https://code.visualstudio.com/). For the above example, we're using **nano** - which is a text editor available in Linux to make the changes from the command-line. 
+- Create your controller config first using the **create --controller-config** command, in the example below there is a new controller config named **conf_directional_trading.dman_v3_1.yml** based on the **dman_v3** controller and trading on the **SNX-USDT** pair
 
-- Make the changes you want, then make sure to save once you're done. In the above example we're switching from **mainnet** to **testnet** and changing one of the trading pairs from **ETHUSDPERP-USDT** to **INJUSDTPERP-USDT**.
+- Edit the script config using a text editor (located under **/conf/scripts**) and add your new controller config to the script config file - 
 
-- Restart Hummingbot and run the command below to start the script again
+**Script Config File**
+
+```bash 
+markets: {}
+candles_config: []
+controllers_config:
+- conf_directional_trading.bollinger_v1_1.yml
+- conf_directional_trading.dman_v3_1.yml
+config_update_interval: 60
+script_file_name: v2_generic_with_controllers.py
+```
+
+**Controller Config File**
+
+```bash
+id: 8RsgZ4hdw2JjvLiz6ivVLWYRjh1vrJN8bTtv9fs4DWAV
+controller_name: dman_v3
+controller_type: directional_trading
+manual_kill_switch: null
+candles_config: []
+connector_name: vega_perpetual
+trading_pair: SNXUSDT-USDT
+executor_amount_quote: 100.0
+max_executors_per_side: 2
+cooldown_time: 300
+leverage: 20
+position_mode: HEDGE
+stop_loss: 0.03
+take_profit: 0.02
+time_limit: 2700
+take_profit_order_type: 2
+trailing_stop:
+  activation_price: 0.015
+  trailing_delta: 0.003
+candles_connector: binance_perpetual
+candles_trading_pair: SNX-USDT
+interval: 30m
+bb_length: 100
+bb_std: 2.0
+bb_long_threshold: 0.0
+bb_short_threshold: 1.0
+dca_spreads:
+- 0.001
+- 0.018
+- 0.15
+- 0.25
+dca_amounts_pct:
+- 0.25
+- 0.25
+- 0.25
+- 0.25
+dynamic_order_spread: false
+dynamic_target: false
+activation_bounds:
+- 1
+
 
 ```
-start --script v2_dman_v3_multiple_exchanges.py
-```
 
-For reference, here's a link to the [modified script](https://gist.github.com/david-hummingbot/e3a21aa802362b672560f62841660508)
+For more info on the **Strategy V2 Framework** check out the docs [here](../../../v2-strategies/index.md)
+
 
 <br>
 
@@ -241,17 +352,18 @@ See screenshot below for an example or refer to the following table which shows 
 
 [![image](image2.png)](image2.png)
 
+!!! Note 
+    The trading pairs listed below may change over time, the information below is valid as of 4/10/2024
+   
 | Mainnet Trading Pairs | Hummingbot          | | Fairground Trading Pairs | Hummingbot                     |
 |---------------------- |---------------------|-|--------------------------|--------------------------------|
-| ETH/USD-PERP          | ETHUSDPERP-USDT     | | BTC/USD-PERP             | BTCUSDPERP-USDT                |
-| LDO/USD-PERP          | LDOUSDTPERP-USDT    | | BTCUSD.PYTH.PERP         | BTCUSDTPYTHPERPTEAMWORK-USDTW  |
-| BTC/USD-PERP          | BTCUSDPERP-USDT     | | ETH/USD-PERP             | ETHUSDPERP-USDT                |
-| INJ/USDT-PERP         | INJUSDTPERP-USDT    | | JUPUSDT.PYTH.PERP        | JUPUSDTPYTHPERPTEAMWORK-USDTW  |
-| SNX/USDT-PERP         | SNXUSDTPERP-USDT    | | INJ/USDT-PERP            | INJUSDTPERP-USDT               |
-|                       |                     | | LDO/USD-PERP             | LDOUSDTPERP-USDT               |
-|                       |                     | | SNX/USDT-PERP            | SNXUSDTPERP-USDT               |
-
-
+| ETH/USDT-PERP         | ETHUSDT-USDT        | | BTC/USDT-PERP            | BTCUSDT-USDT                   |
+| LDO/USDT-PERP         | LDOUSDT-USDT        | | BTCUSD.PYTH.PERP         | BTCUSDTPYTHPERPNOI-USDNOI      |
+| BTC/USDT-PERP         | BTCUSDT-USDT        | | ETH/USDT-PERP            | ETHUSDT-USDT                   |
+| INJ/USDT-PERP         | INJUSDT-USDT        | | JUPUSDT.PYTH.PERP        | JUPUSDTPYTHPERPNOI-USDNOI      |
+| SNX/USDT-PERP         | SNXUSDT-USDT        | | INJ/USDT-PERP            | INJUSDT-USDT                   |
+| SOL/USDT-PERP         | SOLUSDT-USDT        | | LDO/USDT-PERP            | LDOUSDT-USDT                   |
+|                       |                     | | SNX/USDT-PERP            | SNXUSDT-USDT                   |
 
 
 ## Known Issues

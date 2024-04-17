@@ -50,7 +50,20 @@ Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Stor
 
 ## Install Hummingbot
 
-Since you have an Ubuntu environment inside Windows, you can now install Hummingbot from source following the [Linux instructions](./linux.md).
+Open the Ubuntu terminal and install Hummingbot from source following the [Linux instructions](./linux.md) or run the commands below:
 
-While some users have reported being able to install and compile Hummingbot on Windows machines natively, it is not officially supported.
+```
+git clone https://github.com/hummingbot/hummingbot
+cd hummingbot
+./install
+conda activate hummingbot
+./compile
+```
+
+## Launch Hummingbot
+
+```
+./start
+```
+
 
