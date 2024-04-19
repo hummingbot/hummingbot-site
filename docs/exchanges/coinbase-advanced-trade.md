@@ -28,17 +28,17 @@
 
 ### Add Keys to Hummingbot
 
-From inside the Hummingbot client, run `connect coinbase`:
+From inside the Hummingbot client, run `connect coinbase_advanced_trade`:
 
 ```
-Enter your coinbase API key >>>
-Enter your coinbase secret key >>>
+Enter your coinbase_advanced_trade API key >>>
+Enter your coinbase_advanced_trade secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to coinbase
+You are now connected to coinbase_advanced_trade
 ```
 
 
