@@ -4,7 +4,139 @@ The official Github repository for Gateway is https://github.com/hummingbot/gate
 
 For most users, we recommend installing Hummingbot and Gateway using [Docker](/installation/docker/).
 
-In particular, we recommend following the [Hummingbot Gateway Compose](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) deployment path.
+Modify the `docker-compose.yml` file in the `hummingbot` root folder using a text editor or IDE like [VSCode](https://code.visualstudio.com/) and replace it with the contents below. 
+
+```bash
+version: "3.9"
+services:
+  hummingbot:
+    container_name: "hummingbot"
+    image: hummingbot/hummingbot:latest
+    volumes:
+      - "./hummingbot_files/conf:/home/hummingbot/conf"
+      - "./hummingbot_files/conf/connectors:/home/hummingbot/conf/connectors"
+      - "./hummingbot_files/conf/strategies:/home/hummingbot/conf/strategies"
+      - "./hummingbot_files/conf/controllers:/home/hummingbot/conf/controllers"
+      - "./hummingbot_files/conf/scripts:/home/hummingbot/conf/scripts"
+      - "./hummingbot_files/logs:/home/hummingbot/logs"
+      - "./hummingbot_files/data:/home/hummingbot/data"
+      - "./hummingbot_files/scripts:/home/hummingbot/scripts"
+      - "./hummingbot_files/certs:/home/hummingbot/certs"
+    # environment:
+    #   - CONFIG_PASSWORD=[password]      
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "10m"
+          max-file: 5
+    tty: true
+    stdin_open: true
+    network_mode: host
+
+  gateway:
+    container_name: "gateway"
+    image: hummingbot/gateway:latest    
+    ports:
+      - "15888:15888"
+      - "8080:8080"
+    volumes:
+      - "./gateway_files/conf:/usr/src/app/conf"
+      - "./gateway_files/logs:/usr/src/app/logs"
+      - "./hummingbot_files/certs:/home/gateway/certs"
+    environment:
+      - GATEWAY_PASSPHRASE=a
+```
+
+### Set Permissions 
+
+Run this command from the Hummingbot root folder to grant read/write permission to the `hummingbot_files` and `gateway_files` sub-folders:
+
+```
+sudo chmod -R a+rw ./hummingbot_files ./gateway_files
+```
+
+### Start the instance 
+
+From the root folder, run the following command to pull the image and start the instance:
+
+```
+docker compose up -d
+```
+
+Attach to the `hummingbot` instance. 
+
+```
+docker attach hummingbot
+```
+
+Once Hummingbot starts up, run the following command within the Hummingbot terminal to generate the Gateway certificates:
+
+```
+gateway generate-certs
+```
+
+Afterwards, run `exit` to exit Hummingbot. 
+
+### Stop the running containers
+
+```
+docker compose down
+```
+
+### Modify YAML file
+
+Now, use a text editor or an IDE like [VSCode](https://code.visualstudio.com/) to edit the `docker-compose.yml` file again.
+
+Edit the section that defines the `CONFIG_PASSWORD` and `CONFIG_FILE_NAME` environment variables:
+
+```yaml
+  hummingbot:
+    # environment:
+      #  - CONFIG_PASSWORD=a
+  gateway:
+    # environment:
+      #  - GATEWAY_PASSPHRASE=a
+```
+
+Uncomment out:
+ * The `environment:` lines
+ * The `CONFIG_PASSWORD` lines: add your Hummingbot password
+ * The `GATEWAY_PASSPHRASE` line: add the passphrase you used to generate the certificates
+
+The final `environment` section of the YAML file should look like this:
+```yaml
+  bot:
+    environment:
+      - CONFIG_PASSWORD=a
+  gateway:
+    environment:
+      - GATEWAY_PASSPHRASE=a
+```
+
+Afterwards, save the file.
+
+### Restart and attach to containers
+
+Now, recreate the Compose project:
+```
+docker compose up -d
+```
+
+Attach to the `hummingbot` instance. If you have defined `CONFIG_PASSWORD` in the YAML file, you don't need to enter it again:
+
+```
+docker attach hummingbot
+```
+
+After you enter your password, you should now see `GATEWAY:ONLINE` in the upper-right hand corner.
+
+Open a new Terminal/Bash window. In it, attach to the Gateway `gateway` instance to see its logs:
+
+```
+docker attach gateway
+```
+
+See [Gateway](https://docs.hummingbot.org/gateway/) for more details on how to configure it for use with Hummingbot.
 
 ## Install from Source
 
