@@ -17,3 +17,4 @@
 /community             /about                           301
 /governance/board      /about/foundation                301
 /botcamp/*             https://www.botcamp.xyz          301
+/getting-started       /docs                            301

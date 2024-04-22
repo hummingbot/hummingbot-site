@@ -59,7 +59,11 @@ To get around this, you can:
 3. Export the private key from the newly restored wallet.
 
 !!! note "💡 An Osmosis Private Key has 64 characters"
-    Be aware an exported private key may have an `0x` at the start, which may need to be **removed** to fit the private key format check. - Before: `0x1234567890...` - After: `1234567890...`
+    Be aware an exported private key may have an `0x` at the start, which may need to be **removed** to fit the private key format check. 
+    
+    - Before: `0x1234567890...` 
+    
+    - After: `1234567890...`
 
 ### 🔌 Connect with Gateway
 

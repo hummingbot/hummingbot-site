@@ -163,20 +163,29 @@ nav:
   - Home: index.md
   - Docs:
     - Docs: docs/index.md
-    - Getting Started: getting-started/index.md
     - Installation:
-      - Installation: installation/index.md
       - Install via Docker: installation/docker.md
-      - Install from Source: 
-        - Install from Source: installation/source/index.md
+      - Install from Source:
         - Linux: installation/linux.md
         - MacOS: installation/mac.md
-        - Windows: installation/windows.md        
-        - Raspberry Pi: installation/raspberry-pi.md
+        - Windows: installation/windows.md
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
-    - Client:
-      - Client: client/index.md
+      - Other Repos:
+        - Other Repos: installation/repos/index.md
+        - Gateway:
+          - Gateway: gateway/index.md
+          - Installation: gateway/installation.md
+          - Testing Gateway: gateway/testing.md
+          - Setting up Gateway: gateway/setup.md
+          - Working with Tokens: gateway/tokens.md
+          - Running Strategies and Scripts: gateway/running-dex-bots.md
+          - Building Gateway Connectors: gateway/adding-dex-connectors.md
+        - Dashboard: dashboard/index.md
+        - Brokers: installation/broker.md
+        - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
+    - Using the Client:
+      - Using the Client: client/index.md
       - User Interface: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
       - Launch/Exit Hummingbot: client/launch-exit.md
@@ -204,14 +213,6 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running Strategies and Scripts: gateway/running-dex-bots.md
-      - Building Gateway Connectors: gateway/adding-dex-connectors.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
       - Architecture: v2-strategies/index.md
@@ -314,6 +315,7 @@ nav:
         - Chain Connectors: chains/index.md
         - Ethereum: chains/ethereum.md
         - Avalanche: chains/avalanche.md
+        - Osmosis: chains/osmosis-chain.md
         - Polygon: chains/polygon.md
         - BNB Chain: chains/bnb-chain.md
         - Algorand: chains/algorand.md
@@ -337,11 +339,6 @@ nav:
         - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
         - Perp Connector QA Checklist:  developers/connectors/test-perp.md
         - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Other Repos:
-      - Other Repos: repos/index.md
-      - Brokers: installation/broker.md
-      - Dashboard: dashboard/index.md
-      - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
     - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
   - Academy:

@@ -16,6 +16,7 @@ Here are the current chain connectors in the codebase:
 |----------|------|
 | [Ethereum](/chains/ethereum) | EVM |
 | [Avalanche](/chains/avalanche) | EVM |
+| [Osmosis](/chains/osmosis-chain) | Non-EVM
 | [BNB Chain](/chains/bnb-chain) | EVM |
 | [Polygon](/chains/polygon) | EVM |
 | [Algorand](/chains/algorand) | Non-EVM |
