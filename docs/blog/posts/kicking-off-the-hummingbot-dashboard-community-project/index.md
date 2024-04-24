@@ -31,7 +31,7 @@ Dashboard is the one of the final pieces in the Hummingbot landscape. Hummingbot
  - [Gateway](https://github.com/hummingbot/gateway): Typescript middleware that helps bots connect to DEXs and blockchains
  - [Brokers](https://github.com/hummingbot/brokers): MQTT broker module that enables 2-way bot communication
  - [Dashboard](https://github.com/hummingbot/dashboard): StreamLit control center that deploys and manages bots
- - [Deploy-Examples](https://github.com/hummingbot/deploy-examples): Docker Compose-based deployment examples that provide a single entry point for all bot configurations
+ - [Deploy-Examples](https://github.com/hummingbot/deploy-examples): Docker Compose-based deployment for multiple bots
 
  These five repos work together to let users deploy and use Hummingbot however they like. For example, an individual user may just run a single market making bot instance alongside the stock dashboard that analyzes its performance. Meanwhile, a trading firm can use the same stack to deploy multiple bots, each running its own custom strategy, and analyze their aggregate performance with a custom dashboard.
 
@@ -44,7 +44,7 @@ Early prototype of the Bot Orchestration dashboard
 
 By the end of this year, a user setting up Hummingbot for the first time should be able to:
 
-1. Download [deploy-examples](https://github.com/hummingbot/deploy-examples) and go to the folder with their desired configuration
+1. Download [deploy-examples](https://github.com/hummingbot/deploy-examples) 
 2. Run `docker compose up -d`
 3. See Dashboard app running at [https://localhost:8501]() in the browser
 4. Click “Launch bot” in the Bot Orchestration dashboard

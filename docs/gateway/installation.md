@@ -4,10 +4,16 @@ The official Github repository for Gateway is https://github.com/hummingbot/gate
 
 For most users, we recommend installing Hummingbot and Gateway using [Docker](/installation/docker/).
 
+Navigate to the hummingbot root folder in your terminal of if you haven't cloned the Hummingbot repo yet run the command below
+
+```bash
+git clone https://github.com/hummingbot/hummingbot
+cd hummingbot
+```
+
 Modify the `docker-compose.yml` file in the `hummingbot` root folder using a text editor or IDE like [VSCode](https://code.visualstudio.com/) and replace it with the contents below. 
 
 ```bash
-version: "3.9"
 services:
   hummingbot:
     container_name: "hummingbot"
@@ -47,17 +53,10 @@ services:
       - GATEWAY_PASSPHRASE=a
 ```
 
-### Set Permissions 
-
-Run this command from the Hummingbot root folder to grant read/write permission to the `hummingbot_files` and `gateway_files` sub-folders:
-
-```
-sudo chmod -R a+rw ./hummingbot_files ./gateway_files
-```
 
 ### Start the instance 
 
-From the root folder, run the following command to pull the image and start the instance:
+From the hummingbot root folder, run the following command in a terminal to pull the image and start the instance:
 
 ```
 docker compose up -d
@@ -75,7 +74,9 @@ Once Hummingbot starts up, run the following command within the Hummingbot termi
 gateway generate-certs
 ```
 
-Afterwards, run `exit` to exit Hummingbot. 
+You'll be prompted to add a passphrase to encrypt the gateway certificates. This can be different from your Hummingbot login password. 
+
+Take note of this gateway passphrase and afterwards, run `exit` to exit Hummingbot and return to the terminal. 
 
 ### Stop the running containers
 
@@ -87,42 +88,26 @@ docker compose down
 
 Now, use a text editor or an IDE like [VSCode](https://code.visualstudio.com/) to edit the `docker-compose.yml` file again.
 
-Edit the section that defines the `CONFIG_PASSWORD` and `CONFIG_FILE_NAME` environment variables:
+Edit the section that defines the `GATEWAY_PASSPHRASE` environment variable, the default value is "a"
 
 ```yaml
-  hummingbot:
-    # environment:
-      #  - CONFIG_PASSWORD=a
-  gateway:
-    # environment:
-      #  - GATEWAY_PASSPHRASE=a
-```
-
-Uncomment out:
- * The `environment:` lines
- * The `CONFIG_PASSWORD` lines: add your Hummingbot password
- * The `GATEWAY_PASSPHRASE` line: add the passphrase you used to generate the certificates
-
-The final `environment` section of the YAML file should look like this:
-```yaml
-  bot:
-    environment:
-      - CONFIG_PASSWORD=a
   gateway:
     environment:
       - GATEWAY_PASSPHRASE=a
 ```
 
+* For `GATEWAY_PASSPHRASE` : replace "a" with the gateway passphrase you used earlier to generate the certificates
+
 Afterwards, save the file.
 
 ### Restart and attach to containers
 
-Now, recreate the Compose project:
+Now, recreate the containers:
 ```
 docker compose up -d
 ```
 
-Attach to the `hummingbot` instance. If you have defined `CONFIG_PASSWORD` in the YAML file, you don't need to enter it again:
+Attach to the `hummingbot` instance. 
 
 ```
 docker attach hummingbot
@@ -130,13 +115,14 @@ docker attach hummingbot
 
 After you enter your password, you should now see `GATEWAY:ONLINE` in the upper-right hand corner.
 
-Open a new Terminal/Bash window. In it, attach to the Gateway `gateway` instance to see its logs:
+If you need to attach to the `gateway` instance to see its logs:
 
 ```
 docker attach gateway
 ```
 
 See [Gateway](https://docs.hummingbot.org/gateway/) for more details on how to configure it for use with Hummingbot.
+
 
 ## Install from Source
 

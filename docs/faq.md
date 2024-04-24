@@ -83,7 +83,7 @@ Similar to Hummingbot client, Gateway is open source under the Apache 2.0 licens
 
 If you want to understand how Gateway works, install the standalone Gateway repository: <https://github.com/hummingbot/gateway>
 
-If you just want to get Gateway up and running alongside Hummingbot, following the [Hummingbot + Gateway Docker Compose](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) process is the easiest method.
+If you just want to get Gateway up and running alongside Hummingbot, following the [Install with Docker](gateway/installation.md#install-with-docker) process is the easiest method.
 
 Afterwards, follow the instructions at [Using Gateway with Hummingbot](gateway/setup.md).
 

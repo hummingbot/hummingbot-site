@@ -29,7 +29,7 @@ identify the corresponding address.
 
 Starting in [v1.17.0](../release-notes/1.17.0.md), Token Lists for each chain are stored in the `/conf/lists` directory of the root Gateway directory. 
 
-For the [default Docker installation]](https://github.com/hummingbot/deploy-examples/tree/main/hummingbot_gateway_compose) below, the lists are located in the `lists` folder:
+For the default Docker installation below, the lists are located in the `lists` folder:
 
 ```
 hummingbot_gateway_compose

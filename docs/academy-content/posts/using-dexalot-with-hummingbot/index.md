@@ -104,10 +104,10 @@ sudo apt-get install docker-compose-plugin
 docker compose version
 ```
 ```
-git clone https://github.com/hummingbot/deploy-examples.git
+git clone https://github.com/hummingbot/hummingbot.git
 ```
 ```
-cd deploy-examples/hummingbot_gateway_compose/
+cd hummingbot
 ```
 ```
 docker compose up -d

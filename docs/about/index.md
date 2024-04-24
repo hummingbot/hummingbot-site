@@ -62,7 +62,7 @@ The Foundation Github organization is located at <https://github.com/hummingbot>
 * [`hummingbot`](https://github.com/hummingbot/hummingbot): Hummingbot core client and CEX connectors
 * [`gateway`](https://github.com/hummingbot/gateway): DEX connector middleware
 * [`dashboard`](https://github.com/hummingbot/dashboard): Hummingbot Dashboard control center app
-- [`deploy-examples`](https://github.com/hummingbot/deploy-examples): Deployment examples
+- [`deploy-examples`](https://github.com/hummingbot/deploy-examples): Deployment example for multiple bots
 * [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot website and documentation site
 * [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
 * [`community-tools`](https://github.com/hummingbot/community-tools): Tools and resources created by the Hummingbot community

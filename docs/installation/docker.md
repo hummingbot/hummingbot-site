@@ -19,8 +19,6 @@ Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for d
 
 The recommended way to get Docker Compose is to install [Docker Desktop](https://www.docker.com/products/docker-desktop/), which includes Docker Compose along with Docker Engine and Docker CLI which are Compose prerequisites.
 
-For command line instructions and other helpful commands, see [this page](https://github.com/hummingbot/deploy-examples/blob/main/DOCKER.md) in our Deploy-Examples repo.
-
 
 After installing Docker Desktop, verify that Docker Compose is installed correctly by checking the version:
 
@@ -46,7 +44,6 @@ cd hummingbot
 The `docker-compose.yml` file in the root folder provides a basic configuration for launching an instance.
 
 ```yaml
-version: "3.9"
 services:
   hummingbot:
     container_name: hummingbot
@@ -150,11 +147,11 @@ Locate the **docker-compose.yml** file within the Hummingbot folder and using an
 
 Replace environment variables:
 
-  - CONFIG_PASSWORD=[password] - replace "[password]" with your Hummingbot password
+  - `CONFIG_PASSWORD=[password]` - replace "[password]" with your Hummingbot password
 
-  - CONFIG_FILE_NAME=simple_pmm_example.py - replace "simple_pmm_example.py" with your script file
+  - `CONFIG_FILE_NAME=simple_pmm_example.py` - replace "simple_pmm_example.py" with your script file
 
-  - SCRIPT_CONFIG_FILE_NAME=conf_pure_mm_1.yml - if using a configurable script, replace "conf_pure_mm_1.yml" with your script file else leave the line commented
+  - `SCRIPT_CONFIG_FILE_NAME=conf_pure_mm_1.yml` - if using a configurable script, replace "conf_pure_mm_1.yml" with your script file else leave the line commented
 
 
 ### Multiple Hummingbot Instances
@@ -223,10 +220,9 @@ To attach to bot #2 use
 docker attach hummingbot-2
 ```
 
-## Hummingbot + Gateway + Broker Compose Example
+### Hummingbot + Gateway + Broker Compose Example
 
 ```bash
-version: "3.9"
 services:
   hummingbot:
     container_name: "hummingbot"
@@ -259,7 +255,7 @@ services:
     volumes:
       - "./gateway_files/conf:/usr/src/app/conf"
       - "./gateway_files/logs:/usr/src/app/logs"
-      - "./hummingbot_files/certs:/usr/src/app/certs"
+      - "./hummingbot_files/certs:/home/gateway/certs"
     # environment:
     #   - GATEWAY_PASSPHRASE=[passphrase]
 

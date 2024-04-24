@@ -53,8 +53,6 @@ Then, attach to it (typically, the container name is `hummingbot`):
 docker attach <container-name>
 ```
 
-If you are using the older helper script method, use the `hummingbot-start.sh` script from the [Bash Scripts](https://github.com/hummingbot/deploy-examples/tree/development/bash_scripts) repo.
-
 ### Source
 
 If you installed Hummingbot from source, make sure that the hummingbot conda environment has been activated before you run Hummingbot:
