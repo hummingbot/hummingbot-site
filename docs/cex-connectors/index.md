@@ -30,6 +30,7 @@ Here are the current CEX connectors in the codebase:
 | [AscendEx](../exchanges/ascendex/index.md) | CLOB | v2.0 |  | Yes - spot only
 | [OKX](../exchanges/okx) | CLOB | v2.1 |  | Yes - spot only
 | [Coinbase](../exchanges/coinbase) | CLOB | v1.0 | | No
+| [Coinbase Advanced Trade](../exchanges/coinbase-advanced-trade) | CLOB | v2.1 | | Yes
 | [Kraken](../exchanges/kraken) | CLOB | v1.0 |  | No
 | [BTC Markets](../exchanges/btc-markets.md) | CLOB | v2.0 |  | Yes - spot only
 | [Phemex](../exchanges/phemex-perpetual) | CLOB |  | v2.0 | Yes - perp only

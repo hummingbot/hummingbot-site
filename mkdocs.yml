@@ -222,6 +222,7 @@ nav:
         - Position Executor: v2-strategies/executors/positionexecutor.md
         - DCA Executor: v2-strategies/executors/dcaexecutor.md
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
+        - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
       - Controllers: v2-strategies/controllers/index.md
       - Market Data Provider: v2-strategies/data/index.md
@@ -275,6 +276,7 @@ nav:
         - BTC Markets: exchanges/btc-markets.md
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
+        - Coinbase Advanced Trade: exchanges/coinbase-advanced-trade.md
         - Foxbit: exchanges/foxbit.md
         - HitBTC: exchanges/hitbtc.md
         - Kraken: exchanges/kraken/index.md
