@@ -110,51 +110,26 @@ To get started with Hummingbot, check out the following pages and guides:
 
 ## Advanced Configurations
 
-Below are some compose examples of different configurations which might be useful depending on your specific use case 
+### Autostart Strategy
 
-### Autostart Compose Example 
+This configures a Hummingbot instance to automatically start a script or strategy when the Docker instance is instantiated.
 
-```bash
-services:
-hummingbot:
-  container_name: hummingbot
-  image: hummingbot/hummingbot:latest
-  volumes:
-    - "./hummingbot_files/conf:/home/hummingbot/conf"
-    - "./hummingbot_files/conf/connectors:/home/hummingbot/conf/connectors"
-    - "./hummingbot_files/conf/strategies:/home/hummingbot/conf/strategies"
-    - "./hummingbot_files/conf/controllers:/home/hummingbot/conf/controllers"
-    - "./hummingbot_files/conf/scripts:/home/hummingbot/conf/scripts"
-    - "./hummingbot_files/logs:/home/hummingbot/logs"
-    - "./hummingbot_files/data:/home/hummingbot/data"
-    - "./hummingbot_files/scripts:/home/hummingbot/scripts"
-    - "./hummingbot_files/certs:/home/hummingbot/certs"
-   environment:
-     - CONFIG_PASSWORD=[password]
-     - CONFIG_FILE_NAME=simple_pmm_example.py
-     - SCRIPT_CONFIG_FILE_NAME=conf_pure_mm_1.yml
-  logging:
-    driver: "json-file"
-    options:
-        max-size: "10m"
-        max-file: "5"
-  tty: true
-  stdin_open: true
-  network_mode: host
+Uncomment the following lines in the [Docker Compose YML file](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml#L27C5-L30C54):
+
+```yaml
+  environment:
+    - CONFIG_PASSWORD=a       # Replace "a" with your Hummingbot password
+    - CONFIG_FILE_NAME=simple_pmm_example.py    # Replace with your script filename
+    - SCRIPT_CONFIG=conf_simple_pmm_example.yaml   # Replace with your script config file (or leave commented)
 ```
 
-Locate the **docker-compose.yml** file within the Hummingbot folder and using any text editor or IDE like VSCode, replace all with the code above. 
-
-Replace environment variables:
-
-  - `CONFIG_PASSWORD=[password]` - replace "[password]" with your Hummingbot password
-
-  - `CONFIG_FILE_NAME=simple_pmm_example.py` - replace "simple_pmm_example.py" with your script file
-
-  - `SCRIPT_CONFIG_FILE_NAME=conf_pure_mm_1.yml` - if using a configurable script, replace "conf_pure_mm_1.yml" with your script file else leave the line commented
-
+Afterwards, stop the instance with `docker compose down` and re-launch it with `docker compose up -d`. When you attach to the instance, your strategy should already be running.
 
 ### Multiple Hummingbot Instances
+
+This configuration launches two Hummingbot Docker instances with the container names `hummingbot-1` and `hummingbot-2`. To use it, replace the content of the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
+
+If you add more instances, make sure to set `container_name` to something unique.
 
 ```bash
 services:
@@ -203,24 +178,23 @@ services:
     network_mode: host
 ```
 
-This will create two Hummingbot client instances, and this can be increased if necessary. Just make sure to set each **container_name** to something unique. 
+Note that the above configuration has both bots sharing the **hummingbot_files** folder, which is where configs, logs, and databases are stored. If you want to set a different folder for `hummingbot-2`, set `volumes` to a different folder path, such as **hummingbot_files_2**. 
 
- The above configuration has both bots sharing the **hummingbot_files** folder. If you want to set a different folder for **hummingbot-2** then you can set the volumes to **hummingbot_files_2** for example. 
-
-You can also set both bots to autostart by uncommenting the **#environment** and **#CONFIG_PASSWORD** fields and replace them with your Hummingbot password
-
-When initially starting the compose file using `docker compose up -d` it will run the instances in detached mode. See below command to attach: 
-
+Attach to instance 1:
 ```bash
 docker attach hummingbot-1
 ``` 
-To attach to bot #2 use 
+
+Attach to instance 2:
 
 ```bash
 docker attach hummingbot-2
 ```
 
 ### Hummingbot + Gateway + Broker Compose Example
+
+This configuration starts instances of Hummingbot, [Gateway](/gateway/), and [EMQX Broker](/installation/broker/). To use it, replace the content of the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
+
 
 ```bash
 services:
@@ -290,22 +264,27 @@ volumes:
   emqx-etc: {}
 ```
 
-This installs a Hummingbot instance linked to a Hummingbot Gateway instance, along with an EMQX Broker.
+After starting the instance, follow the [Gateway instructions](/gateway/installation/#start-the-instance) to generate certificates and set your Gateway passphrase. Then, uncomment the lines below to add the passphrase, and then re-launch the instance:
 
-Gateway setup is similar to the steps listed here - [Install Gateway](../gateway/installation.md)
+```yaml
+  environment:
+    - GATEWAY_PASSPHRASE=[passphrase] # Replace with 'gateway generate-certs' passphrase
+```
 
 To configure the broker, attach to the EMQX Broker emqx instance:
 
 ```
 docker attach emqx
 ```
-Navigate to the EMQX dashboard to configure authentication and available ports at <http://localhost:18083/> 
 
-The default credentials for connecting to the dashboards are **admin:public**
+Navigate to the EMQX dashboard to configure authentication and available ports at <http://localhost:18083/>. The default credentials for connecting to the EMQX dashboard are: `admin:public`. 
 
-For connecting your bots via MQTT, just leave the mqtt_username and mqtt_password parameters of the bot empty.
+To connect to your bots via MQTT, leave the `mqtt_username` and `mqtt_password` parameters of the bot empty.
 
 ### Hummingbot with Dashboard
+
+This configuration starts a single Hummingbot alongside a [Dashboard](/dashboard/) instance that can be used to control and analyze it.. To use it, replace the content of the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
+
 
 ```bash
 services:
@@ -339,6 +318,4 @@ services:
       - "8501:8501"
 ```
 
-This installs a single Hummingbot bot instance alongside a Hummingbot Dashboard that can be used to control and analyze it.
-
-Go to <http://localhost:8501> in your browser to see the Dashboard.
+Afterwards, go to <http://localhost:8501> in your browser to see the Dashboard.
