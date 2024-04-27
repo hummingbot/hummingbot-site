@@ -216,6 +216,7 @@ nav:
       - Strategies V2: strategies/index.md
       - Architecture: v2-strategies/index.md
       - Walkthrough: v2-strategies/walkthrough.md 
+      - Walkthrough with Controller: v2-strategies/walkthrough-controller.md 
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md

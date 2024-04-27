@@ -2,14 +2,28 @@ The Strategy V2 framework contains a set of interlocking components that can be 
 
 [![](diagrams/9.png)](diagrams/9.png)
 
+There are two ways to create strategies using the framework: 1 - simple strategies that use Executors, and 2 - more complex versions that use both Controllers and Executors for greater abstraction.
+
+| Strategy V2 - Simple                                                                | Strategy V2 with Controller                                                                 |
+|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| The strategy is relatively simple                                                    | You want to manage the risk and diversify your portfolio in different controllers           |
+| The logic is very standard across different trading pairs                             | The strategy is complex and you want to isolate the decision making                         |
+| The strategy only trades on one trading pair                                          | You want to try multiple configs in the same bot                                            |
+| You are getting started with Executors and you want a simple way to code your strategy | The strategy trades on multiple trading pairs                                               |
+| Prototype a strategy                                                                  | You are familiar with the Strategy V2 and how the controllers interact with it              |
+
+Check out [Walkthrough](./walkthrough.md) and [Walkthrough - Controller](./walkthrough-controller.md) to learn how to use them.
+
+## Components
+
 The most important components to understand are:
 
-* [**Main Strategy**](#strategyv2-script): Orchestrates the overall strategy logic. This is a standard [script](/scripts) that inherits from the `StrategyV2Base` class. 
-* [**Executors**](./executors/index.md): Manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
-* [**Controllers**](./controllers/index.md): Defines a trading strategy based on a strategy controller base class, i.e. Directional or Market Making.
+* [**Script**](#strategyv2-script): Orchestrates the overall strategy logic. This is a standard [script](/scripts) that inherits from the `StrategyV2Base` class. 
+* [**Executor**](./executors/index.md): Manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
+* [**Controller**](./controllers/index.md): Defines a trading strategy based on a strategy controller base class, i.e. Directional or Market Making.
 * [**Market Data Provider**](./data/index.md): Single point of access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
 
-## Main Strategy
+## Script
 [![](./diagrams/14.png)](./diagrams/14.png)
 
 The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class. 
