@@ -1,4 +1,4 @@
-The official Github repository for Gateway is https://github.com/hummingbot/gateway. Gateway is released monthly  with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
+The official Github repository for Gateway is <https://github.com/hummingbot/gateway>. Gateway is released monthly  with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
 
 ## Install with Docker
 
@@ -11,34 +11,10 @@ git clone https://github.com/hummingbot/hummingbot
 cd hummingbot
 ```
 
-Modify the `docker-compose.yml` file in the `hummingbot` root folder using a text editor or IDE like [VSCode](https://code.visualstudio.com/) and replace it with the contents below. 
+Modify [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in the root folder using a text editor or IDE like [VSCode](https://code.visualstudio.com/).
 
-```bash
-services:
-  hummingbot:
-    container_name: "hummingbot"
-    image: hummingbot/hummingbot:latest
-    volumes:
-      - "./hummingbot_files/conf:/home/hummingbot/conf"
-      - "./hummingbot_files/conf/connectors:/home/hummingbot/conf/connectors"
-      - "./hummingbot_files/conf/strategies:/home/hummingbot/conf/strategies"
-      - "./hummingbot_files/conf/controllers:/home/hummingbot/conf/controllers"
-      - "./hummingbot_files/conf/scripts:/home/hummingbot/conf/scripts"
-      - "./hummingbot_files/logs:/home/hummingbot/logs"
-      - "./hummingbot_files/data:/home/hummingbot/data"
-      - "./hummingbot_files/scripts:/home/hummingbot/scripts"
-      - "./hummingbot_files/certs:/home/hummingbot/certs"
-    # environment:
-    #   - CONFIG_PASSWORD=[password]      
-    logging:
-      driver: "json-file"
-      options:
-          max-size: "10m"
-          max-file: 5
-    tty: true
-    stdin_open: true
-    network_mode: host
-
+Uncomment the Gateway-related lines, except for the `environment` section:
+```yaml
   gateway:
     container_name: "gateway"
     image: hummingbot/gateway:latest    
@@ -49,18 +25,20 @@ services:
       - "./gateway_files/conf:/usr/src/app/conf"
       - "./gateway_files/logs:/usr/src/app/logs"
       - "./hummingbot_files/certs:/home/gateway/certs"
-    environment:
-      - GATEWAY_PASSPHRASE=a
+  #  environment:
+  #    - GATEWAY_PASSPHRASE=a
 ```
 
-
-### Start the instance 
+### Start instance 
 
 From the hummingbot root folder, run the following command in a terminal to pull the image and start the instance:
 
 ```
 docker compose up -d
 ```
+
+### Generate certs
+
 
 Attach to the `hummingbot` instance. 
 
@@ -74,55 +52,44 @@ Once Hummingbot starts up, run the following command within the Hummingbot termi
 gateway generate-certs
 ```
 
-You'll be prompted to add a passphrase to encrypt the gateway certificates. This can be different from your Hummingbot login password. 
+[![](./generate-certs.png)](./generate-certs.png)
 
-Take note of this gateway passphrase and afterwards, run `exit` to exit Hummingbot and return to the terminal. 
+You'll be prompted to add a passphrase to encrypt the gateway certificates. This can be different from your Hummingbot login password. Take note of this gateway passphrase.
 
-### Stop the running containers
+Afterwards, run `exit` to exit Hummingbot.
 
-```
-docker compose down
-```
-
-### Modify YAML file
+### Add passphrase to YAML file
 
 Now, use a text editor or an IDE like [VSCode](https://code.visualstudio.com/) to edit the `docker-compose.yml` file again.
 
-Edit the section that defines the `GATEWAY_PASSPHRASE` environment variable, the default value is "a"
+Add the passphrase that you just defined as the `GATEWAY_PASSPHRASE` environment variable, and save the file.
 
 ```yaml
-  gateway:
-    environment:
-      - GATEWAY_PASSPHRASE=a
+  environment:
+    - GATEWAY_PASSPHRASE=a
 ```
 
-* For `GATEWAY_PASSPHRASE` : replace "a" with the gateway passphrase you used earlier to generate the certificates
+### Restart instance
 
-Afterwards, save the file.
-
-### Restart and attach to containers
-
-Now, recreate the containers:
+Now, restart the instance and attach to it:
 ```
 docker compose up -d
-```
-
-Attach to the `hummingbot` instance. 
-
-```
 docker attach hummingbot
 ```
 
-After you enter your password, you should now see `GATEWAY:ONLINE` in the upper-right hand corner.
+You should now see `GATEWAY:ONLINE` in the upper-right hand corner.
 
-If you need to attach to the `gateway` instance to see its logs:
+[![](./gateway-status.png)](./gateway-status.png)
+
+After Gateway is running, see [Testing](testing.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
+
+### Seeing Gateway logs
+
+To attach to the `gateway` instance to see its logs, run:
 
 ```
 docker attach gateway
 ```
-
-See [Gateway](https://docs.hummingbot.org/gateway/) for more details on how to configure it for use with Hummingbot.
-
 
 ## Install from Source
 
@@ -214,7 +181,7 @@ $ yarn start --passphrase=<passphrase>
 ```
 
 You should see Gateway running on the default port 15888:
-```
+```bash
 2023-02-09 12:56:50 | info | 	⚡️ Starting Gateway API on port 15888...
 2023-02-09 12:56:50 | info | 	The gateway server is secured behind HTTPS.
 2023-02-09 12:56:50 | info | 	⚡️ Swagger listening on port 8080. Read the Gateway API documentation at 127.0.0.1:8080

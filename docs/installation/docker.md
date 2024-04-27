@@ -114,7 +114,7 @@ To get started with Hummingbot, check out the following pages and guides:
 
 This configures a Hummingbot instance to automatically start a script or strategy when the Docker instance is instantiated.
 
-Uncomment the following lines in the [Docker Compose YML file](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml#L27C5-L30C54):
+Uncomment the following lines in the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml#L27C5-L30C54):
 
 ```yaml
   environment:
@@ -125,9 +125,31 @@ Uncomment the following lines in the [Docker Compose YML file](https://github.co
 
 Afterwards, stop the instance with `docker compose down` and re-launch it with `docker compose up -d`. When you attach to the instance, your strategy should already be running.
 
+
+### Hummingbot + Gateway
+
+[Gateway](/gateway) is API middleware that helps Hummingbot connect to DEXs on various blockchains. To launch Hummingbot with Gateway, uncomment the Gateway section of [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml#L33), except for the `environment` lines:
+
+```yaml
+  gateway:
+    container_name: "gateway"
+    image: hummingbot/gateway:latest    
+    ports:
+      - "15888:15888"
+      - "8080:8080"
+    volumes:
+      - "./gateway_files/conf:/usr/src/app/conf"
+      - "./gateway_files/logs:/usr/src/app/logs"
+      - "./hummingbot_files/certs:/home/gateway/certs"
+    # environment:
+    #  - GATEWAY_PASSPHRASE=a
+```
+
+Afterwards, follow the instructions in [Gateway - Installation](/gateway/installation) to generate certificates and connect Gateway to Hummingbot.
+
 ### Multiple Hummingbot Instances
 
-This configuration launches two Hummingbot Docker instances with the container names `hummingbot-1` and `hummingbot-2`. To use it, replace the content of the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
+This configuration launches two Hummingbot Docker instances with the container names `hummingbot-1` and `hummingbot-2`. To use it, replace the content of [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
 
 If you add more instances, make sure to set `container_name` to something unique.
 
@@ -145,7 +167,7 @@ services:
       - "./hummingbot_files/scripts:/home/hummingbot/scripts"
       - "./hummingbot_files/certs:/home/hummingbot/certs"
     # environment:
-    #   - CONFIG_PASSWORD=[password]
+    #   - CONFIG_PASSWORD=a
     logging:
       driver: "json-file"
       options:
@@ -167,7 +189,7 @@ services:
       - "./hummingbot_files/scripts:/home/hummingbot/scripts"
       - "./hummingbot_files/certs:/home/hummingbot/certs"
     # environment:
-    #   - CONFIG_PASSWORD=[password]
+    #   - CONFIG_PASSWORD=a
     logging:
       driver: "json-file"
       options:
@@ -191,7 +213,9 @@ Attach to instance 2:
 docker attach hummingbot-2
 ```
 
-### Hummingbot + Gateway + Broker Compose Example
+See [Deploy Examples](https://github.com/hummingbot/deploy-examples) for more information about running multiple instances of Hummingbot with different credentials.
+
+### Hummingbot + Gateway + Broker
 
 This configuration starts instances of Hummingbot, [Gateway](/gateway/), and [EMQX Broker](/installation/broker/). To use it, replace the content of the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
 
@@ -210,7 +234,7 @@ services:
       - "./hummingbot_files/scripts:/scripts"
       - "./hummingbot_files/certs:/certs"
     # environment:
-    #   - CONFIG_PASSWORD=[password]
+    #   - CONFIG_PASSWORD=a
     logging:
       driver: "json-file"
       options:
@@ -231,7 +255,7 @@ services:
       - "./gateway_files/logs:/usr/src/app/logs"
       - "./hummingbot_files/certs:/home/gateway/certs"
     # environment:
-    #   - GATEWAY_PASSPHRASE=[passphrase]
+    #   - GATEWAY_PASSPHRASE=a
 
   emqx:
     container_name: "emqx"
@@ -264,58 +288,13 @@ volumes:
   emqx-etc: {}
 ```
 
-After starting the instance, follow the [Gateway instructions](/gateway/installation/#start-the-instance) to generate certificates and set your Gateway passphrase. Then, uncomment the lines below to add the passphrase, and then re-launch the instance:
+After starting the instance, follow the [Gateway instructions](/gateway/installation/) to generate certificates and set your Gateway passphrase
 
-```yaml
-  environment:
-    - GATEWAY_PASSPHRASE=[passphrase] # Replace with 'gateway generate-certs' passphrase
-```
-
-To configure the broker, attach to the EMQX Broker emqx instance:
-
+To configure the EMQX Broker, attach to the `emqx` instance:
 ```
 docker attach emqx
 ```
 
-Navigate to the EMQX dashboard to configure authentication and available ports at <http://localhost:18083/>. The default credentials for connecting to the EMQX dashboard are: `admin:public`. 
+To configure authentication and available ports, navigate to the EMQX dashboard at <http://localhost:18083/>. The default credentials are: `admin:public`. 
 
 To connect to your bots via MQTT, leave the `mqtt_username` and `mqtt_password` parameters of the bot empty.
-
-### Hummingbot with Dashboard
-
-This configuration starts a single Hummingbot alongside a [Dashboard](/dashboard/) instance that can be used to control and analyze it.. To use it, replace the content of the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in your Hummingbot root folder with the code below.
-
-
-```bash
-services:
-  hummingbot:
-    container_name: hummingbot
-    image: hummingbot/hummingbot:latest
-    volumes:
-      - "./hummingbot_files/conf:/home/hummingbot/conf"
-      - "./hummingbot_files/conf/connectors:/home/hummingbot/conf/connectors"
-      - "./hummingbot_files/conf/strategies:/home/hummingbot/conf/strategies"
-      - "./hummingbot_files/conf/scripts:/home/hummingbot/conf/scripts"
-      - "./hummingbot_files/logs:/home/hummingbot/logs"
-      - "./hummingbot_files/data:/home/hummingbot/data"
-      - "./hummingbot_files/scripts:/home/hummingbot/scripts"
-      - "./hummingbot_files/certs:/home/hummingbot/certs"
-    logging:
-      driver: "json-file"
-      options:
-          max-size: "10m"
-          max-file: "5"
-    tty: true
-    stdin_open: true
-    network_mode: host
-  dashboard:
-    container_name: dashboard
-    image: hummingbot/dashboard:latest
-    volumes:
-      - ./hummingbot_files/data:/home/dashboard/data
-      - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - "8501:8501"
-```
-
-Afterwards, go to <http://localhost:8501> in your browser to see the Dashboard.
