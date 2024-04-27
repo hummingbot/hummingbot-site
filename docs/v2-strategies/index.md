@@ -1,10 +1,15 @@
-The Strategy V2 framework contains a set of interlocking components that can be combined to create powerful, customized algo trading strategies.
+The StrategyV2 framework contains a set of interlocking components that can be combined to create powerful, customized algo trading strategies.
 
 [![](diagrams/9.png)](diagrams/9.png)
 
-There are two ways to create strategies using the framework: 1 - simple strategies that use Executors, and 2 - more complex versions that use both Controllers and Executors for greater abstraction.
+There are two ways to create strategies using the StrategyV2 framework:
 
-| Strategy V2 - Simple                                                                | Strategy V2 with Controller                                                                 |
+* Scripts that use StrategyV2 components like the Market Data Provider and Executors
+* Controllers that house the strategy logic. This allows a single loader script to manage multiple Controller configurations.
+
+See the table below to decide which type to use:
+
+| StrategyV2 Script                                                                | StrategyV2 Controller                                                                 |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | The strategy is relatively simple                                                    | You want to manage the risk and diversify your portfolio in different controllers           |
 | The logic is very standard across different trading pairs                             | The strategy is complex and you want to isolate the decision making                         |

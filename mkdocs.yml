@@ -214,9 +214,13 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
-      - Architecture: v2-strategies/index.md
-      - Walkthrough: v2-strategies/walkthrough.md 
-      - Walkthrough with Controller: v2-strategies/walkthrough-controller.md 
+      - Walkthrough - StrategyV2 Script: v2-strategies/walkthrough.md 
+      - Walkthrough - StrategyV2 Controller: v2-strategies/walkthrough-controller.md 
+      - StrategyV2 Architecture: v2-strategies/index.md
+      - Scripts:
+        - Scripts: scripts/index.md
+        - Sample Scripts: scripts/examples.md
+        - Scripts Cheatsheat: scripts/cheatsheet.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
@@ -227,10 +231,6 @@ nav:
       - Controllers: v2-strategies/controllers/index.md
       - Market Data Provider: v2-strategies/data/index.md
       - Candles: v2-strategies/candles/index.md
-    - Scripts:
-      - Scripts: scripts/index.md
-      - Sample Scripts: scripts/examples.md
-      - Scripts Cheatsheat: scripts/cheatsheet.md
     - Strategies V1:
       - Strategies V1: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md

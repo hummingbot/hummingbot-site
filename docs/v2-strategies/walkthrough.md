@@ -2,19 +2,7 @@ Below, we provide a walkthrough to illustrate the StrategyV2 framework, which we
 
 ![simple](diagrams/9.png)
 
-## Simple StrategyV2 Script Examples
-
-Here are the current Simple StrategyV2 starter scripts in the Hummingbot repo:
-
-| Script | Description |
-|--------|-------------|
-| [v2_simple_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_simple_directional_rsi.py) | Directional strategy using the RSI indicator |
-| [v2_pmm_single_level.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_pmm_single_level.py) | Simple pure market making strategy using PositionExecutors |
-| [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
-| [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
-| [funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/funding_rate_arb.py) | Script that arbitrages funding rates across perpetual excahnges |
-
-## Walkthrough
+## What we'll cover
 
 In this example, we'll show you how to configure and run a simple directional trading strategy using the [v2_simple_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_simple_directional_rsi.py) starter script.
 
@@ -22,8 +10,7 @@ This strategy executes trades on a spot or perpetual exchange based on the RSI s
 
 After each trade, the strategy utilizes the [Position Executor](/v2-strategies/executors/positionexecutor/) component, which uses a triple barrier configuration to manage the P&L of the position or filled order.
 
-
-### Create script config
+## Create script config
 
 [![script config](../diagrams/21.png)](../diagrams/21.png)
 
@@ -54,7 +41,7 @@ Enter the time limit in seconds >> 2700
 Enter a new file name for your configuration >> conf_v2_simple_directional_rsi_1.yml
 ```
 
-### Run the script 
+## Run the script 
 
 [![controller](../diagrams/22.png)](../diagrams/22.png)
 

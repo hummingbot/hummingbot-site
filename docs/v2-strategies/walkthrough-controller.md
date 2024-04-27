@@ -4,26 +4,7 @@ This allows users to run multiple configurations, as well as multiple controller
 
 ![advanced](diagrams/11.png)
 
-
-
-## Controller Examples
-
-Here are the current StrategyV2 Controllers in the Hummingbot repo:
-
-| Script | Description |
-|--------|-------------|
-| [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v1.py) | Directional strategy using Bollinger Bands |
-| [macd_bb_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/macd_bb_v1.py) | Directional strategy using MACD and Bollinger Bands as indicators |
-| [trend_follower_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/trend_follower_v1.py) |
-| [pmm_simple.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/pmm_simple.py) |
-| [pmm_dynamic.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/pmm_dynamic.py) |
-| [xemm_multiple_levels.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/xemm_multiple_levels.py) |
-| [dman_v3.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/dman_v3.py) |
-| [dman_maker.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/dman_maker.py) |
-| [dman_maker_v2.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/dman_maker_v2.py) |
-
-
-## Walkthrough
+## What we'll cover
 
 Let's say we want to create a single bot that provides liquidity to two distinct trading pairs on Binance Futures, each configured with unique buy and sell spreads, order amounts, and other pair-specific parameters. In the past, users had to run separate Hummingbot instances for each configuration, each running a separate strategy or script. 
 
@@ -32,7 +13,7 @@ Now, this can be handled in a single strategy using the [pmm_simple.py](https://
 First, we will generate pair-specific configurations. Then, we can run these configurations all at once with the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_generic_with_controllers.py) generic script.
 
 
-### Create the controller configs
+## Create the controller configs
 
 The initial step involves generating a separate controller configuration for each trading pair.
 
@@ -77,7 +58,7 @@ conf_market_making.pmm_simple_1.yml
 conf_market_making.pmm_simple_2.yml
 ```
 
-### Create the generic script config
+## Create the generic script config
 
 [![script-config](../diagrams/16.png)](../diagrams/16.png)
 
@@ -101,7 +82,7 @@ Enter a new file name for your configuration >>> conf_v2_generic_with_controller
     Once you create the initial generic script config, it might be easier to edit this file and replace it with new controller names rather than having to re-generate it each time. 
 
 
-### Start the script 
+## Start the script 
 
 [![script-config](../diagrams/17.png)](../diagrams/17.png)
 
@@ -119,7 +100,7 @@ status --live
 
 [![status](../diagrams/20.png)](../diagrams/20.png)
 
-### Changing configs
+## Changing configs
 
 Users often need to modify the strategy configuration as it is running. In the Strategies V2 framework, the configs are **dynamic**, so you just need to save changes to the config files
 
