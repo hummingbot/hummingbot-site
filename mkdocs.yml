@@ -183,7 +183,6 @@ nav:
           - Building Gateway Connectors: gateway/adding-dex-connectors.md
         - Dashboard: dashboard/index.md
         - Brokers: installation/broker.md
-        - Deploy Examples ↗️: https://github.com/hummingbot/deploy-examples
     - Using the Client:
       - Using the Client: client/index.md
       - User Interface: client/user-interface.md
@@ -215,21 +214,23 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
-      - Architecture: v2-strategies/index.md
-      - Walkthrough: v2-strategies/walkthrough.md 
+      - Walkthrough - StrategyV2 Script: v2-strategies/walkthrough.md 
+      - Walkthrough - StrategyV2 Controller: v2-strategies/walkthrough-controller.md 
+      - StrategyV2 Architecture: v2-strategies/index.md
+      - Scripts:
+        - Scripts: scripts/index.md
+        - Sample Scripts: scripts/examples.md
+        - Scripts Cheatsheat: scripts/cheatsheet.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
         - DCA Executor: v2-strategies/executors/dcaexecutor.md
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
+        - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
       - Controllers: v2-strategies/controllers/index.md
       - Market Data Provider: v2-strategies/data/index.md
       - Candles: v2-strategies/candles/index.md
-    - Scripts:
-      - Scripts: scripts/index.md
-      - Sample Scripts: scripts/examples.md
-      - Scripts Cheatsheat: scripts/cheatsheet.md
     - Strategies V1:
       - Strategies V1: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
@@ -275,6 +276,7 @@ nav:
         - BTC Markets: exchanges/btc-markets.md
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
+        - Coinbase Advanced Trade: exchanges/coinbase-advanced-trade.md
         - Foxbit: exchanges/foxbit.md
         - HitBTC: exchanges/hitbtc.md
         - Kraken: exchanges/kraken/index.md
@@ -282,6 +284,7 @@ nav:
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx/okx.md
         - Phemex: exchanges/phemex-perpetual.md
+        - Cube Exchange: exchanges/cube/index.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
         - dYdX: exchanges/dydx.md
@@ -350,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.27.0: release-notes/1.27.0.md
     - 1.26.0: release-notes/1.26.0.md
     - 1.25.0: release-notes/1.25.0.md
     - 1.24.0: release-notes/1.24.0.md

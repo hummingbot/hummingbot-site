@@ -1,6 +1,6 @@
-![](../v2-strategies/diagrams/8.png)
-
 ## What is a Hummingbot Strategy?
+
+![](../v2-strategies/diagrams/8.png)
 
 Like a computer program, an algorithmic trading strategy is a set of automated processes that executes repeatedly:
 
@@ -12,35 +12,70 @@ A Hummingbot strategy loads market data directly from centralized and decentrali
 
 Each [clock tick](../global-configs/clock-tick.md), a strategy loads real-time order book snapshots, user balances, order status and other real-time data from trading pairs on these venues and executes the logic defined in the strategy, parametrized by a pre-defined user configuration.
 
-To run a strategy, a user selects a base strategy template, defines its input parameters in a [config file](../client/config-files.md), and uses the `start` command in the Hummingbot client to run it. 
+To run a strategy, a user selects a strategy template, defines its input parameters in a [Config File](../client/config-files.md), and starts it with the `start` command in the Hummingbot client or via the command line with [Strategy Autostart](/global-configs/strategy-autostart/).
 
 We encourage users to create their own custom strategies and/or extend the existing examples.
 
-## Strategy V2
+## Flavors of Hummingbot Strategies
 
-Hummingbot's new Strategy V2 framework allows you to build powerful, dynamic strategies using Lego-like components.
+There are a variety of ways that Hummingbot strategies can be defined:
 
-* [Architecture](../v2-strategies/index.md): Learn how to use key components like Executors and Controllers
-* [Walkthrough](../v2-strategies/walkthrough.md): Detailed walkthroughs of simple and advanced Strategy V2 examples
-* [Sample Scripts](../scripts/examples.md): Sample Strategy V2 scripts
+* [Script](#script): A simple Python file that contains all strategy logic
+* [StrategyV2 Script](#strategyv2-script): A script that uses StrategyV2 components like Candles and Executors
+* [StrategyV2 Controller](#strategyv2-controller): Strategy logic is abstracted into a Controller, allowing a loader script to deploy and manage multiple Controller configurations
+* [Strategy V1](#strategy-v1): Legacy strategy templates that not customizable
+
+### Script
+
+[Scripts](/scripts) are the entry point for Hummingbot strategies. They can range in complexity from a simple script that perform a single automated action to a script that loads multiple StrategyV2 controller configurations. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
+
+See [Sample Scripts](/scripts/examples) for a full list of the current scripts in the Hummingbot codebase. These examples show you how to:
+
+- Execute V2 strategies
+- Download order book data
+- Download historical candles data
+- Place orders
+- Use the rate oracle
+- Call exchange APIs
+- And much more!
+
+Check out this [quickstart guide](/academy-content/creating-a-custom-market-making-strategy/) to learn how to code a custom market making script.
+
+### StrategyV2 Script
+
+Scripts that use StrategyV2 components such as the Market Data Providers and Executors. Stores parameters in a script config file.
+
+Here are the StrategyV2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder:
+
+| Script | Description |
+|--------|-------------|
+| [v2_simple_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_simple_directional_rsi.py) | Directional strategy using the RSI indicator |
+| [v2_pmm_single_level.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_pmm_single_level.py) | Simple pure market making strategy using PositionExecutors |
+| [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
+| [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
+| [funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/funding_rate_arb.py) | Script that arbitrages funding rates across perpetual exchanges |
+
+For more info, see [Walkthrough - StrategyV2 Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
+
+### StrategyV2 Controller
+
+Strategy logic is abstracted into a [Controller](../v2-strategies/controllers/index.md), allowing a loader script to deploy and manage multiple Controller configurations.
+
+For more info,, see [Walkthrough - StrategyV2 Controller](../v2-strategies/walkthrough-controller.md). This shows you how to run the pure market making strategy using a StrategyV2 Controller, which lets you scale your operation more easily.
+
+### Strategy V1
+
+The original Hummingbot strategies offer structured templates for various strategies like pure market making and cross-exchange market making that let users configure parameters, but they are more rigid and less customizable than those built using the StrategyV2 framework.
+
+See [Strategy V1](../v1-strategies/index.md) for a list of these strategy templates.
+
+## Motivation for the StrategyV2 Framework
+
+When it launched in 2019, Hummingbot pioneered the concept of configurable templates for algo trading strategies, such as market making strategies based on the Avellaneda & Stoikov paper.
+
+However, the original strategy framework design had a number of limitations. Initially, strategies were confined to individual bots, complicating the management and scaling across various scenarios, and they lacked the capability to use historical market data, which forced traders to rely solely on real-time data. Furthermore, technical barriers, such as a deep prerequisite knowledge of foundational classes and Cython, hindered easy access to market data, while limited backtesting tools restricted evaluations against historical data.
+
+In response, starting in 2023, Hummingbot Foundation began to iteratively introduce a new framework, called StrategyV2. The new framework allows you to build powerful, dynamic strategies using Lego-like components. To learn more, check out [Architecture](../v2-strategies/index.md).
 
 !!! tip "Learn to Develop Algo Trading Strategies"
-    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](https://www.botcamp.xyz), which teaches you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.
-
-## Strategy V1
-
-The original Hummingbot [strategies](../v1-strategies/index.md) offer a structured, template-based environment with user-friendly parameters, but they are less customizable than those built using the Strategy V2 framework, whose development was motivated by the need to overcome several challenges and limitations of the previous strategy implementation:
-
-- **Scalability Issues:** Initially, each trading strategy was limited to a single bot, complicating management and scalability across various strategies and scenarios.
-
-- **Lack of Historical Data Support:** Earlier strategies couldn't leverage historical market data, requiring traders to wait for real-time data accumulation before trading.
-
-- **Complex Order and Event Tracking:** Managing multiple orders across different pairs and exchanges was cumbersome, especially when adjusting strategies in response to market changes.
-
-- **Explainability and Improvement Challenges:** The lack of clear action-outcome correlations made it difficult to analyze and improve strategy performance.
-
-- **Repetitive Behavior Implementation:** Common behaviors, like order refreshing in market making, were often redundantly implemented, leading to inefficiencies.
-
-- **Technical Barriers to Market Data Access:** The necessity for a deep understanding of foundational classes and the use of Cython obscured type hints and steepened the learning curve.
-
-- **Limited Backtesting Capabilities:** The original framework's lack of comprehensive backtesting tools restricted strategy evaluation against historical data.
+    To gain a deeper understanding of how to build and deploy algo trading and market making strategies using Hummingbot's StrategyV2 framework, sign up for [Botcamp](https://www.botcamp.xyz), which offers courses and hands-on cohort-based professional training by the core Hummingbot maintainers.

@@ -4,14 +4,13 @@ A config file allows you to define the parameters used in a YAML file. Later, yo
 
 These configuration files created and used by Hummingbot are saved in the [`/conf`](https://github.com/hummingbot/hummingbot/tree/master/conf) directory of your instance, which you can edit directly with a standard text editor.
 
-* `conf/scripts`: config files for V2 strategies and scripts
-* `conf/strategies`: config files for V1 strategies
+* `conf/scripts`: config files for scripts
+* `conf/controllers`: config files for StrategyV2 controllers
+* `conf/strategies`: config files for the original "V1" strategies
 
 ## Script config files
 
 Starting in v1.24.0, [Scripts](/scripts) can define a `ScriptConfig` class that defines configuration parameters that users can store in a YAML file.
-
-Both [V2 Scripts](/v2-strategies/v2-scripts) used to control V2 Strategies as well as more basic scripts can add this class. For example, here are the first few lines in the [sample script](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_dman_v3_with_config.py) which runs the DManV3 strategy:
 
 ```python
 class DManV3ScriptConfig(BaseClientModel):
@@ -23,9 +22,13 @@ class DManV3ScriptConfig(BaseClientModel):
     leverage: int = Field(20, client_data=ClientFieldData(prompt_on_new=True, prompt=lambda mi: "Set the leverage to use for trading (e.g., 20 for 20x leverage):"))
 ```
 
+This is an optional feature, and more basic scripts may elect to hardcode their parameters in the script file.
+
 ### Creating script config files
 
-To create a V2 configuration file for a script, run `create` and add the `--script-config` flag. In the auto-complete dropdown, only the configurable scripts located in the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
+To create a configuration file for a compatible, run the `create` command and add the `--script-config` flag. 
+
+In the auto-complete dropdown, only the configurable scripts located in the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
 folder will be shown.
 
 ![](./create-script-config-autocomplete.png)
@@ -42,11 +45,42 @@ Run `start` with both `--script` and `--conf` flags to run a script with a confi
 
 ![](./start-script-config.png)
 
-## V1 Strategy config files
+## Controller config files
 
-### Creating V1 config files
+The StrategyV2 framework abstracts strategy logic into [Controllers](/v2-strategies/controllers/). Each controller defines the config parameters that it accepts.
 
-Run `create` command without the `--script-config` flag to create a [V1 Strategy](/v1-strategies) config file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
+### Creating controller config files
+
+To create a controller configuration file, run the `create` command and add the `-controller-config` flag. 
+
+In the auto-complete dropdown, the controllers in each sub-folder in the [/controllers](https://github.com/hummingbot/hummingbot/tree/master/controllers) 
+folder will be shown.
+
+Similar to the script config, you will be presented with prompts and default values defined in the controller. 
+
+The last prompt will ask you to enter a name for the config file, which is saved in `conf/controllers`.
+
+### Starting controller configs
+
+To start a controller configuration, define the configuration file of the [`v2_generic_with_controllers.py`](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) loader script:
+
+```
+create --script-config v2_generic_with_controllers
+```
+
+Afterwards, start the loader script by running:
+```
+start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
+```
+
+
+## Strategy V1 config files
+
+The original Hummingbot [V1 strategies](/v1-strategies) also allowed users to define config files.
+
+### Creating Strategy V1 config files
+
+Run `create` command without the `--script-config` flag to create a [Strategy V1](/v1-strategies) config file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
 
 Next, answer the prompts to configure your bot's behavior depending on the strategy you want to use.
 
