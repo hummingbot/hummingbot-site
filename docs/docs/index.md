@@ -9,13 +9,16 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 
 ## [Strategies](/strategies)
 
-The new Hummingbot **Strategy V2** framework allows you to mix and match components, offering a modular approach to strategy creation and making the development process faster and more efficient.
+A Hummingbot strategy loads market data directly from centralized and decentralized exchanges, adaptable to the unique features of each trading venue's WebSocket/REST APIs and nodes, and executes logic defined by the strategy creator.
 
-- [Architecture](../v2-strategies/index.md): Learn how to use key V2 components like Executors and Controllers
+To run a strategy, a user selects a script or strategy template, defines its input parameters in a [Config File](../client/config-files.md), and starts it with the `start` command in the Hummingbot client or via the command line.
 
-- [Walkthrough](../v2-strategies/walkthrough.md): Detailed walkthroughs of simple and advanced Strategy V2 examples
+- [Sample Scripts](../scripts/examples.md): Examples of basic and advanced strategy templates in the official codebase
 
-- [Sample Scripts](../scripts/examples.md): Sample Strategy V2 scripts
+- [Walkthrough](../v2-strategies/walkthrough.md): Learn how to run a simple directional strategy using Hummingbot
+
+The new Hummingbot **StrategyV2** framework allows you to mix and match components, offering a modular approach to strategy creation and making the development process faster and more efficient.
+See [StrategyV2 Architecture](../v2-strategies/index.md) to learn how V2 components like Executors and Controllers work together.
 
 ## [Connectors](/exchanges/)
 

@@ -4,11 +4,15 @@ The **Controller** plays a crucial role within Hummingbot's Strategy V2 framewor
 
 Users can now use controllers as sub-strategies allowing them to use multiple controllers in a single script or trade multiple pairs / configs in a single bot. 
 
-## Controller Examples
+## Base Classes
 
-Below are various controllers based on the **DirectionalTradingControllerBase** and **MarketMakingControllerBase** base classes.
+Currently, the controller base classes available are:
 
-### Directional Trading
+* [controller_base.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/controller_base.py): Defines `ControllerBase`
+* [directional_trading_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/directional_trading_controller_base.py): Designed for indicator-based directional strategies, inherits from `ControllerBase`
+* [market_making_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/market_making_controller_base.py): Designed for two-side market making strategies, inherits from `ControllerBase`
+
+## Directional Trading Controllers
 
 These strategies aim to profit from predicting the market's direction (up or down) and takes positions based on signals indicating the future price movement.
 
@@ -17,12 +21,11 @@ Suitable for strategies that rely on market trends, momentum, or other indicator
 Customizing signal generation (`get_signal`) allows users to change various analytical models to generate trade signals and determine the conditions under which trades should be executed or stopped.
 
 - [bollinger_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/bollinger_v1.py)
-- [dman_v3](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/dman_v3.py)
 - [macd_bb_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/macd_bb_v1.py)
 - [trend_follower_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/trend_follower_v1.py)
+- [dman_v3](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/dman_v3.py)
 
-
-### Market Making 
+## Market Making Controllers
 
 These strategies provide liquidity by placing buy and sell orders near the current market price, aiming to profit from the spread between these orders.
 
@@ -33,76 +36,9 @@ User may also adjust the strategy based on market depth, volatility, and other m
 - [pmm_simple](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py)
 - [pmm_dynamic](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_dynamic.py)
 - [dman_maker](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/dman_maker.py)
+- [dman_maker_v2](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/dman_maker_v2.py)
 
 
-## Base Classes
+## Other Controllers
 
-Controllers inherit from base classes that define the general behavior of a type of trading strategy, which are designed to be extended by more specific strategies. These base classes all inherit from the [ControllerBase](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/controller_base.py) generic controller. 
-
-Currently, the controller base classes available are:
-
-* Directional Trading
-* Market Making
-
-### Directional Trading Controller
-
-- Base class: [directional_trading_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/directional_trading_controller_base.py)
-
-#### Constructor
-
-- **`__init__`**: Initializes the controller with a configuration object (`DirectionalTradingControllerConfigBase`) and any additional arguments. It stores the configuration in an instance variable for later use.
-
-#### Core Methods
-
-- **`determine_executor_actions`**: This method determines the actions to be taken by the executor, which are operations to execute trades. It combines proposals from two separate methods: one for creating new actions and another for stopping actions, returning a list of actions to be executed.
-
-- **`update_processed_data`**: An asynchronous method that updates the processed data based on the current state of the strategy. It involves getting a signal (directional prediction) and updating the processed data accordingly.
-
-- **`get_signal`**: This is an abstract method meant to be implemented by subclasses. It should return a signal indicating the direction of the trade: positive for buy, negative for sell, and zero for no action.
-
-- **`create_actions_proposal`**: Proposes actions to create new trades based on the current market signal and conditions. It checks if a new executor (trade executor) can be created based on the signal, active executors, and cooldown conditions. If conditions are met, it constructs a `CreateExecutorAction` with the necessary trade parameters.
-
-- **`can_create_executor`**: Determines whether a new executor can be created based on the current signal, the number of active executors, and a cooldown period to prevent too frequent trading.
-
-- **`stop_actions_proposal`**: Proposes actions to stop existing trades. In the provided code, this method does not implement any logic and returns an empty list, indicating no stop actions are proposed by default.
-
-- **`get_executor_config`**: Constructs and returns a configuration for the executor based on the trade type, price, and amount. This method can be overridden in subclasses to customize the executor configuration.
-
-#### Key Concepts and Customization Points
-
-- **Signal-Based Trading**: The core of the directional trading strategy is signal generation (`get_signal`), which must be implemented by subclasses. The signal dictates whether to buy, sell, or hold.
-
-- **Executor Actions**: The class decides on creating or stopping trades based on signals and conditions. This involves calculating the amount to trade and determining the trade type (buy or sell).
-
-- **Configurability and Extensibility**: The class is designed to be extended, allowing for customization of signal generation, action proposals, and executor configuration. Subclasses can override methods to implement specific trading logic.
-
-- **Cooldown and Execution Limits**: The controller includes mechanisms to limit trading frequency (`cooldown_time`) and the number of concurrent trades (`max_executors_per_side`), which are important for risk management.
-
-
-### Market Making Controller
-
-- Base class: [market_making_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/market_making_controller_base.py)
-
-#### Constructor
-
-- **`__init__`**: Initializes the controller with a specific configuration object (`MarketMakingControllerConfigBase`) and any additional arguments, storing the configuration for later use.
-
-#### Core Methods
-
-- **`determine_executor_actions`**: Determines the actions to be executed by the market maker, combining proposals for creating new actions and stopping existing ones.
-
-- **`create_actions_proposal`**: Proposes actions to create new orders based on the current state of the market and the controller's strategy. It involves determining which levels (price points) to execute trades at and generating the appropriate `CreateExecutorAction` for each.
-
-- **`get_levels_to_execute`**: Identifies which levels are currently active or need to be executed based on the controller's logic, including cooldown considerations.
-
-- **`stop_actions_proposal`**: Proposes actions to stop or refresh existing orders based on certain conditions, such as order refresh times and early stop criteria.
-
-- **`executors_to_refresh`**: Identifies which executors (orders) need to be refreshed based on their age and trading status.
-
-- **`executors_to_early_stop`**: Identifies executors that should be stopped early, potentially based on market conditions or other strategy-specific criteria. This method is designed to be overridden with custom behavior.
-
-- **`update_processed_data`**: Asynchronously updates the processed data for the controller, such as reference prices and spread multipliers, based on market data.
-
-- **`get_executor_config`**: Abstract method intended to be implemented by subclasses to define the configuration for executors based on level ID.
-
-- **`get_price_and_amount`**: Calculates the price and amount for orders at a given level ID, adjusting for spreads and market conditions.
+- [xemm_multiple_levels](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/xemm_multiple_levels.py)

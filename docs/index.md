@@ -17,7 +17,7 @@ hide:
 
     Design sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
 
-    [:octicons-arrow-right-24: V2 Strategy Docs](/v2-strategies/)
+    [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
 -   :material-upload-network:{ .lg .middle } __Seamless Exchange Integration__
 

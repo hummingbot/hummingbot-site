@@ -27,9 +27,9 @@ There are a variety of ways that Hummingbot strategies can be defined:
 
 ### Script
 
-A [Script](/scripts) are the entry point for Hummingbot strategies. They can range in complexity from a simple script that perform a single automated action to a script that loads multiple StrategyV2 controller configurations. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
+[Scripts](/scripts) are the entry point for Hummingbot strategies. They can range in complexity from a simple script that perform a single automated action to a script that loads multiple StrategyV2 controller configurations. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
 
-See [Script Examples](/scripts/examples) for a full list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
+See [Sample Scripts](/scripts/examples) for a full list of the current scripts in the Hummingbot codebase. These examples show you how to:
 
 - Execute V2 strategies
 - Download order book data
@@ -38,6 +38,8 @@ See [Script Examples](/scripts/examples) for a full list of the current sample s
 - Use the rate oracle
 - Call exchange APIs
 - And much more!
+
+Check out this [quickstart guide](/academy-content/creating-a-custom-market-making-strategy/) to learn how to code a custom market making script.
 
 ### StrategyV2 Script
 
@@ -51,7 +53,7 @@ Here are the StrategyV2 scripts in the [`/scripts`](https://github.com/hummingbo
 | [v2_pmm_single_level.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_pmm_single_level.py) | Simple pure market making strategy using PositionExecutors |
 | [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
 | [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
-| [funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/funding_rate_arb.py) | Script that arbitrages funding rates across perpetual excahnges |
+| [funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/funding_rate_arb.py) | Script that arbitrages funding rates across perpetual exchanges |
 
 For more info, see [Walkthrough - StrategyV2 Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
 
@@ -63,7 +65,9 @@ For more info,, see [Walkthrough - StrategyV2 Controller](../v2-strategies/walkt
 
 ### Strategy V1
 
-The [original Hummingbot strategies](../v1-strategies/index.md) offer structured templates for various strategies like pure market making and cross-exchange market making that accepts configure parameters, but they are more rigid and less customizable than those built using the StrategyV2 framework, 
+The original Hummingbot strategies offer structured templates for various strategies like pure market making and cross-exchange market making that let users configure parameters, but they are more rigid and less customizable than those built using the StrategyV2 framework.
+
+See [Strategy V1](../v1-strategies/index.md) for a list of these strategy templates.
 
 ## Motivation for the StrategyV2 Framework
 

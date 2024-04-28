@@ -49,9 +49,10 @@ The scripts below can be found in the root [/scripts](https://github.com/humming
 
 #### Simple PMM
 
-* **Code**: [simple_pmm_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_pmm_example.py)
+* **Code (configurable)**: [simple_pmm_example_config](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_pmm_example_config.py)
+* **Code: **: [simple_pmm_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_pmm_example.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.9.0](../release-notes/1.9.0.md)
+* **Release Added**: Configurable [1.25.0](../release-notes/1.9.0.md) | [1.9.0](../release-notes/1.9.0.md)
 * **Description**: The bot will place two orders around the `price_source` (mid price or last traded price) in a `trading_pair` on exchange, with a distance defined by the `ask_spread` and `bid_spread`. Every `order_refresh_time` in seconds, the bot will cancel and replace the orders.
 
 #### Simple XEMM
@@ -68,9 +69,9 @@ The scripts below can be found in the root [/scripts](https://github.com/humming
 * **Release Added**: [1.20.0](../release-notes/1.20.0.md)
 * **Description**:  A simplified version of Hummingbot arbitrage strategy, this bot checks the Volume Weighted Average Price for bid and ask in two exchanges and if it finds a profitable opportunity, it will trade the tokens.
 
-#### Simple Directional
+#### Simple Directional RSI
 
-* **Code**: [simple_directional_strategy_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_directional_strategy_example.py)
+* **Code**: [simple_rsi_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_rsi_example.py)
 * **Author**: [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.13.0](../release-notes/1.13.0.md)
 * **Description**: A simple trading strategy that uses RSI in one timeframe to determine whether to go long or short.
@@ -85,30 +86,58 @@ The scripts below can be found in the root [/scripts](https://github.com/humming
       - How to get the bids and asks of a market
       - How to code a "utility" strategy
 
-### Advanced Strategies
+### V2 Strategies
 
 #### V2 Simple Directional RSI
 
-* **Code**:  [v2_simple_directional_rsi](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_simple_directional_rsi.py)
-* **Author**:  [cardosofede](https://github.com/cardosofede)
+* **Code**: [v2_simple_directional_rsi](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_simple_directional_rsi.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
-* **Description**: This Strategy V2 script utilizes RSI indicators to generate buy or sell signals based on predefined RSI thresholds.  It utilizes PositionExecutor to manage positions with stop-loss and take-profit levels defined by a triple barrier logic.
+* **Description**: This utilizes RSI indicators to generate buy or sell signals based on predefined RSI thresholds. It utilizes PositionExecutor to manage positions with stop-loss and take-profit levels defined by a triple barrier logic.
 
 #### V2 PMM Single Level
 
-* **Code**:  [v2_pmm_single_level](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_pmm_single_level.py)
-* **Author**:  [cardosofede](https://github.com/cardosofede)
+* **Code**: [v2_pmm_single_level](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_pmm_single_level.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
-* **Description**: This Strategy V2 script maintain liquidity by placing buy and sell orders based on predefined spread and order amount and utilizes PositionExecutor triple barrier logic for risk management, allowing setting stop-loss and take-profit levels.
+* **Description**: This maintains liquidity by placing buy and sell orders based on predefined spread and order amount and utilizes PositionExecutor triple barrier logic for risk management, allowing setting stop-loss and take-profit levels.
+
+#### V2 TWAP
+
+* **Code**: [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_twap_multiple_pairs.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.26.0](../release-notes/1.26.0.md)
+* **Description**: This script utilizes [TWAPExecutors](/v2-strategies/executors/twapexecutor/) to buy/sell a block of assets.
+
+#### V2 Funding Rate Arbitrage
+
+* **Code**: [funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/funding_rate_arb.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.27.0](../release-notes/1.27.0.md)
+* **Description**: This script arbitrages funding rates across perpetual exchanges
+
+#### V2 XEMM with Executors
+
+* **Code**: [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_xemm.py)
+* **Author**:  [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.27.0](../release-notes/1.27.0.md)
+* **Description**: This script utilizes [XEMMExecutors](/v2-strategies/executors/xemm-executor/) to implement a cross-exchange market making (XEMM) strategy
 
 ### Controller Loaders
 
-#### V2 Generic with Controllers
+#### V2 Generic
 
 * **Code**:  [v2_generic_with_controllers](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_generic_with_controllers.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
 * **Description**: This script provides a template for launching Strategy V2 controllers that implement specific sub-strategies. This strategy is flexible and can be adapted to various trading scenarios by implementing custom controllers.
+
+#### V2 Generic with Cashout
+
+* **Code**:  [v2_generic_with_cash_out](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_cash_out.py)
+* **Author**:  [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [1.27.0](../release-notes/1.27.0.md)
+* **Description**: This script provides an advanced template for launching Strategy V2 controller configurations to include a cash out feature when controllers are stopped. In addition, it will also check if the controllers configs have been updated and apply the new settings. 
 
 ## Archived Scripts
 
@@ -118,7 +147,7 @@ To make a script available to run inside Hummingbog, move the file into the root
 
 ### Simple Tasks
 
-#### Buy Three times
+#### Buy Three Times
 
 * **Code**: [buy_only_three_times_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/archived_scripts/examples_simple_tasks/buy_only_three_times_example.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
@@ -138,6 +167,13 @@ To make a script available to run inside Hummingbog, move the file into the root
 * **Author**: [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.7.0](../release-notes/1.7.0.md)
 * **Description**: This example shows how to get the ask and bid of a market and log it to the console.
+
+#### Simple Order Example
+
+* **Code**: [simple_order_example](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_order_example.py)
+* **Author**:  [fengtality](https://github.com/fengtality)
+* **Release Added**: [1.23.0](../release-notes/1.23.0.md)
+* **Description**: This example script places an order on a Hummingbot exchange connector. The user can select the order type (market or limit), side (buy or sell) and the spread (for limit orders only).
 
 
 ### Using Data Feeds
