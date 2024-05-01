@@ -301,9 +301,8 @@ To connect to your bots via MQTT, leave the `mqtt_username` and `mqtt_password` 
 
 ### Multiple Bots + subaccounts (multiple credentials)
 
-<https://github.com/hummingbot/deploy-examples>
-
 This configuration allows you to create multiple bots and configure the bots to use either a `master_account` or `sub_accounts` for credentials and API keys. This feature is particularly useful if you manage multiple API keys or have set up subaccounts on exchanges and wish for an easy method to switch between them.
 
-For more detailed instructions on setting up and running multiple bots with `master_account` or `sub_accounts`, please refer to the [deploy-examples](https://github.com/hummingbot/deploy-examples) repository on GitHub. This new setup not only simplifies the management of multiple bots but also facilitates easy switching between different accounts, allowing seamless transitions in terms of credentials, API keys, and more.
+For more detailed instructions on setting up and running multiple bots with `master_account` or `sub_accounts`, please refer to the readme in the [deploy-examples](https://github.com/hummingbot/deploy-examples) repository on GitHub. 
 
+<https://github.com/hummingbot/deploy-examples>
