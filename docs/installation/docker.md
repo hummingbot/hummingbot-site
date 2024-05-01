@@ -298,3 +298,11 @@ docker attach emqx
 To configure authentication and available ports, navigate to the EMQX dashboard at <http://localhost:18083/>. The default credentials are: `admin:public`. 
 
 To connect to your bots via MQTT, leave the `mqtt_username` and `mqtt_password` parameters of the bot empty.
+
+### Multiple Bots + subaccounts (multiple credentials)
+
+This configuration allows you to create multiple bots and configure the bots to use either a `master_account` or `sub_accounts` for credentials and API keys. This feature is particularly useful if you manage multiple API keys or have set up subaccounts on exchanges and wish for an easy method to switch between them.
+
+For more detailed instructions on setting up and running multiple bots with `master_account` or `sub_accounts`, please refer to the readme in the [deploy-examples](https://github.com/hummingbot/deploy-examples) repository on GitHub. 
+
+<https://github.com/hummingbot/deploy-examples>
