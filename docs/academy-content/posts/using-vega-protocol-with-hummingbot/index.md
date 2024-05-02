@@ -15,201 +15,121 @@ tags:
 
 ## Introduction
 
-Welcome to our user tutorial on integrating the power of **Vega Protocol** with **Hummingbot** for your trading journey. In this guide, we'll walk you through the detailed steps required to seamlessly set up a Vega Wallet, link it with Hummingbot, and embark on your trading adventures. 
-
-Whether you're new to automated trading or looking to leverage Vega Protocol's decentralized trading capabilities, this guide is designed to provide you with all the information you need to get started. Let's dive into the world of blockchain-based trading with **Vega Protocol** and **Hummingbot**, and unlock new possibilities in your trading strategy.
+In this guide, we'll walk you through the detailed steps required to seamlessly set up a Vega Wallet, link it with Hummingbot, and start running powerful algo trading strategies on the Vega decentralized exchange. Let's get started!
 
 <!-- more -->
 
-## Prerequisites
+## Create Vega Wallet
 
-### Create a Vega Wallet
+A **Vega Wallet** is essential for interacting with Vega, whether it's for staking or trading. The Vega Wallet apps allow you to manage wallets and key pairs, deposit and withdraw assets, stake, and sign transactions. 
 
-A **Vega Wallet** is essential for interacting with Vega, whether it's for staking or trading. The Vega Wallet apps allow you to manage wallets and key pairs, deposit and withdraw assets, stake, and sign transactions. There are several options for creating a Vega Wallet, including **Chrome/Firefox** browser extensions, or a **desktop/CLI** app. 
+### Connect MetaMask Snap
 
-If you have an existing Metamask account, you can set up a Vega Key through **Metamask Snaps**, which we recommend below.
+To get started, visit [Vega Console](https://console.vega.xyz/) and click **Connect to Vega**. Afterwards, you will be presented with several options for creating a Vega wallet:
 
-<br>
+[![image](vega-console.png)](vega-console.png)
 
-**Metamask Snap** (recommended)
+Below, we show you how to use **MetaMask Snap**, our recommended approach for Hummingbot users.
 
-For those using the MetaMask extension on **Chrome** or **Firefox**, there's no need to set up a separate Vega Wallet to generate and utilize a Vega key. Simply launch Chrome or Firefox and visit the [Vega Console](https://console.vega.xyz/).
+Select **MetaMask Snap** in the menu above and connect with your preferred Ethereum address in [Metamask](https://metamask.io/).
 
-**Let's Begin!**
+You should get a pop-up informing you of the permissions needed - click **Install**. 
 
-[![image](metamask_snap_01.gif)](metamask_snap_01.gif)
+[![image](vega-install-snap.png)](vega-install-snap.png)
 
-
-**Steps:**
-
-- Click on **Getting Started** in the top right corner or **Connect Wallet** at the bottom right corner.
-
-- You should get a popup on the screen, select the second option **Install Vega Metamask Snap**
-
-- Metamask will open a series of requests pop-ups, review them and Approve
-
-- Once this is done, go back to the previous popup and click on **Connect via Metamask Snap** 
-
-- You should get a popup saying **Successfully Connected** and you're now ready to deposit or transfer assets and use your new Vega keypair.
-
-<br>
-
-**Alternate Vega Wallet Setup Methods**
-
-**Browser Extension**
-
-- [Chrome extension:](https://chrome.google.com/webstore/detail/vega-wallet-mainnet/codfcglpplgmmlokgilfkpcjnmkbfiel)
-
-- [Firefox extension:](https://addons.mozilla.org/en-GB/firefox/addon/vega-wallet-mainnet/)
-
-
-**Desktop Wallet**
-
-- [Download the app:](https://github.com/vegaprotocol/vegawallet-desktop/releases) On GitHub, download the desktop app for your operating system.
-
-- [Get started:](https://docs.vega.xyz/mainnet/tools/vega-wallet/desktop-app/getting-started) Read a guide on using the desktop app to connect an existing Vega wallet, create or restore a wallet and start interacting with your keys.
-
-
-<br>
+Afterwards, agree to the remaining pop-ups and you should eventually see a notice saying that you are **Successfully Connected**. You're now ready to deposit assets and use your new Vega wallet.
 
 ### Deposit Funds
 
-Follow these steps to deposit and fund your wallet for trading on Vega:
+After creating a the Vega wallet, go to [Vega Console](https://console.vega.xyz/), where you will be redirected to the MAINNET exchange, by default.
 
-!!! Note
-    Please ensure your wallet has sufficient balance, including ETH for gas fees 
+[![image](vega-deposit.png)](vega-deposit.png)
 
-[![image](metamask_deposit.gif)](metamask_deposit.gif)
+If you want to change to Fairground TESTNET, exit out of the pop-up and click the upper-left hand corner of the Vega exchange website to change the network. 
 
-**Steps:**
+[![image](vega-network.png)](vega-network.png)
 
-- Navigate to the **Deposit** button located on the right-hand side of the screen to begin the deposit process.
+Once you have selected your network, click the **Deposit** button in the pop-up above and connect your Ethereum wallet to approve and deposit eligible tokens to your new Vega wallet.
 
-- If it's your first time depositing a particular token, you'll need to approve it. Click **Approve** and then confirm this action in MetaMask.
+[![image](vega-deposit-3.png)](vega-deposit-3.png)
 
-- Choose the token you wish to deposit from the dropdown menu, enter the amount, and then click **Deposit** to proceed.
+## Connect Hummingbot to Vega
 
-- Wait for the blockchain to confirm the transaction. Once confirmed, your deposited balance will be visible in the **Order** section, ready for trading.
+After you have funded your Vega wallet, you can now connect Hummingbot and start running algo trading strategies. Since we used MetaMask Snap to connect Vega, we'll need two pieces of information: 
 
-<br>
+1. **Snap Key**: Vega public key or party id
+2. **Seed Phrase**
 
-## Install Hummingbot
+Let's go through how you can find these items:
 
-There are two main methods to install Hummingbot:
+### Get Snap Key
 
-### Docker
-
-For most new users, we recommend installing Hummingbot using Docker.
-
-- [Docker Quickstart Guide](https://hummingbot.org/academy-content/docker-installation-guide/)
-
-### Source
-
-We recommend installing Hummingbot from source if you meet any of the following criteria:
-
-- You want to customize or extend the Hummingbot codebase.
-- You want to build new components like connectors or strategies.
-- You want to learn how Hummingbot works at a deeper, technical level.
-
-Guides for various environments:
-
-  - [Linux](../../../installation/linux.md)
-  - [Windows](../../../installation/windows.md)
-  - [MacOS](../../../installation/mac.md)
-
-<br>
-
-## Connect your Vega Wallet to Hummingbot
-
-To connect your Vega Wallet to Hummingbot and unlock full trading capabilities, you need two important pieces of information: your **Snap Key** (also known as Vega Party ID) and your **wallet seed phrase**. Here's how you can find and use them:
-
-### Snap Key (Vega Party ID)
-
-After connecting your Vega Wallet, look for your **Snap Key** in the top right corner of the screen. The Snap Key is crucial as it acts as your **Vega Party ID**, which will be required when setting up the wallet connection in Hummingbot.
+After connecting your Vega Wallet, look for your **Snap Key** in the top right corner of the screen.
 
 [![image](snap_key.png)](snap_key.png)
 
-The Snap Key section, when clicked, automatically copies the address to your clipboard which you can then paste when prompted for the **Vega Party ID** in Hummingbot.
+The Snap Key 0 address should be the **Vega key** address where you deposited assets from your Ethereum wallet earlier. Click it to copy it to your clipboard which you can then paste when prompted for the **Vega public key (party id)** in Hummingbot.
 
 [![image](metamask_snap_02.gif)](metamask_snap_02.gif)
 
-### Metamask Wallet Seed Phrase (Secret Recovery Phrase)
+### Get Wallet Seed Phrase
 
-Your **wallet seed phrase** is a separate piece of information, typically a series of words provided when you initially set up your wallet. This phrase acts as a backup to access your wallet and should be kept secure and private. 
+Since we used Metamask Snap to connect to Vega, your private key will be the **seed phrase** of the Ethereum wallet used to establish the connection. When connecting your Vega Wallet to Hummingbot, you will be prompted to enter this seed phrase as part of the authentication and setup process. 
 
-When connecting your Vega Wallet to Hummingbot, you will be prompted to enter this seed phrase as part of the authentication and setup process.
+See this Metamask article to find the seed phrase: [How to reveal your Secret Recovery Phrase](https://support.metamask.io/privacy-and-security/how-to-reveal-your-secret-recovery-phrase/). Follow the steps in the article to fetch the seed phrase of you Etherum wallet.
 
-Here's how to get your **wallet seed phrase** from Metamask
+!!! warning
+    Your wallet seed phrase is extremely sensitive. Keep it confidential and never share it online or with anyone you don't trust. Always ensure you're in a secure and private environment when handling your seed phrase.
 
-![image](metamask-01.gif){: style="height:497px;width:296px"} &nbsp;&nbsp;&nbsp;&nbsp; ![image](metamask-02.gif){: style="height:497px;width:296px"}
+### Run Connect Command
 
-**Retrieving your wallet seed phrase from Metamask:**
+After you have both your Snap Key and Seed Phrase, you are ready to connect Hummingbot to Vega! Make sure to bookmark the [Vega connector](/exchanges/vega/) documentation page, which provides a handy reference.
 
-- Navigate to the three-dot menu at the top right and select **Settings** > **Security & Privacy**.
-- Choose **Reveal Secret Recovery Phrase**.
-- Confirm your identity by answering two security questions, then enter your Metamask password and click **Next**.
-- Press the **Hold to Reveal SRP** button to view your wallet seed phrase.
-
-
-**Security Notice:** Your wallet seed phrase is extremely sensitive. Keep it confidential and never share it online or with anyone you don't trust. Always ensure you're in a secure and private environment when handling your seed phrase.
-
-<br>
-
-### Hummingbot **connect** command
-
-The **connect** command lets you add your user credentials in order to connect to an exchange or protocol. For centralized exchanges, this command asks you for your API key, while blockchain protocols asks you for your private key.
-
-Hummingbot stores both API keys and private keys on the local machine in encrypted form, with the Hummingbot client password as the key.
+In the Hummingbot client, connect to **Vega mainnet** by running `connect vega_perpetual`. To connect to the **Vega Fairground testnet**, run `connect vega_perpetual_testnet`.
 
 [![image](connect_vega.gif)](connect_vega.gif)
 
-**Connect Vega Wallet**
+First, you will be prompted to enter your Vega public key - enter your Snap Key here. Then, enter your Wallet Seed Phrase.
 
-- To connect to **Vega mainnet** run the command below 
-
+If both credentials are valid, you should should see this message:
 ```
-connect vega_perpetual
-```
-
-- To connect to the **Vega testnet** or fairground run the command below
-
-```
-connect vega_perpetual_testnet
+You are now connected to vega_perpetual.
 ```
 
-- You will be prompted to enter your **Vega public key** first (Snap Key), followed by your **wallet seed phrase**. If both credentials are valid, you should get a message saying **You are now connected to vega_perpetual / testnet**
+To confirm the connection, run the `balance` command. Your asset balances should match the amount that you deposited into Vega.
 
-- To confirm the connection, you can run the balance command below to see if Hummingbot is able to pull the available balance from the exchange
+## Run Strategy
 
-```
-balance
-```
+Let's configure and run a strategy using the new Hummingbot StrategyV2 framework
 
-## Starting Your first script
+We'll be creating a configuration for [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v1.py) strategy controller. BollingerV1 is a simple directional strategy that uses [Bollinger Bands](/glossary/#bollinger-bands) as a signal to enter into long and short positions, each managed with a [PositionExecutor](/executors/positionexecutor/).
 
-In this example we'll show you how to use Vega with the newer Strategy V2 script with a directional trading controller. We'll be using the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) script and the [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v1.py) controller
+Then, we will run this controller configuration using the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) loader script.
+
+!!! tip
+    For more information on how to create and configure and run Strategy V2 Controllers, see [Walkthrough - StrategyV2 Controller](/v2-strategies/walkthrough-controller/)
 
 
-First let's configure our controller. Run the command below to create the controller config:
+### Create Controller Config
 
+First let's configure our BollingerV1 strategy. Run the command below to create the controller config:
 ```
 create --controller-config directional_trading.bollinger_v1
 ```
 
 [![image](image14.png)](image14.png)
 
-Follow the prompts and enter in the values for the controller config. You can always make changes to the config later. One important change you'll need to make is the **candles_connector** config since Vega does not currently support candles feed yet. 
+Follow the prompts and enter in your desired values, and save the controller config file. This file is located under the **/conf/controllers** folder. You can use any text editor or IDE like VSCode to open the YAML file and make changes. Any changes made to this file will apply to the running bot during the next refresh cycle.
 
-We'll use the candles feed from Binance Perpetual for example and since we're trading on the **ETHUSDT-USDT** pair we'll use the **ETH-USDT** trading pair on Binance Perpetual. 
+Note that:
 
-For reference here's an example controller config below: 
+* You'll need to use a different exchange (like Binance Futures) other than Vega for `candles_connector`, since Vega does not currently support [Candles](/v2-strategies/candles/) yet.
+* Trading pair symbols need to be defined correctly for each exchange. For Vega, we will use `ETHUSDT-USDT`, while we'll use the `ETH-USDT` trading pair on Binance Futures. 
 
-!!! Note
-    **Disclaimer**: The values shown below are provided as generic defaults and serve as a basic starting point for configuring your Hummingbot instance. Due to the highly dynamic and personal nature of trading, these settings may not be optimal for every user or market condition. It is crucial for users to perform their own research, consider their unique trading goals, risk tolerance, and market analysis to adjust these configurations accordingly. Always remember that trading involves risk, and it's important to experiment and optimize settings on a simulation or with small amounts before applying them to live markets. The following configurations are examples only and should be customized based on individual requirements and circumstances.
+For reference, here's a Vega-specific BollingerV1 config below that creates long and short positions of 20 USDT when the price is above or below the historical Bollinger Band midpoint:
 
-
-```bash
-id: 64GRtyHULWapPbm9i6fGM923Wk8zuQrGxTYjQwZtsJfr
+```yaml
+id: your-controller-id
 controller_name: bollinger_v1
 controller_type: directional_trading
 manual_kill_switch: null
@@ -235,33 +155,40 @@ bb_length: 100
 bb_std: 2.0
 bb_long_threshold: 0.5
 bb_short_threshold: 0.5
-
 ```
 
-The controller config YAML file is located under the **/conf/controllers** folder inside your Hummingbot folder. You can use any text editor or IDE like VSCode to open the YAML file and make changes. Any changes made to this file will apply to the running bot during the next refresh cycle. 
+### Configure Loader Script
 
-
-Next, we'll need to create the script config using the following command: 
-
+Now, let's configure our loader script. In Hummingbot, create the config for the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) loader script using the following command:
 ```
 create --script-config v2_generic_with_controllers
 ```
 
-You'll be prompted to enter the controller configuration, make sure to select the controller config we created earlier. 
-
+You'll be prompted to enter the controller configuration file name - select the controller config we created earlier.
 
 [![image](image3.png)](image3.png)
 
+Afterwards, save the loader script config file with a name like `conf_v2_generic_with_controllers_1.py`. The file, located in your **/conf/scripts** directory, looks like this:
 
-Once this is done, we can now start the bot using the below command: 
+```yaml
+markets: {}
+candles_config: []
+controllers_config:
+- conf_directional_trading.bollinger_v1_1.yml
+config_update_interval: 60
+script_file_name: v2_generic_with_controllers.py
+```
 
+For future strategies, it may be easier to modify or extend the `controllers_config` field in this file rather than creating a new loader script configuration from Hummingbot.
 
+### Start Script
+
+Now, we can run the loader script using the command below:
 ```
 start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
-
 ```
 
-Your bot should now be running and start placing orders. You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status
+Your bot should now be running. You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status.
 
 ```
 status
@@ -274,83 +201,19 @@ You can click on the log pane at the top right corner of the screen to hide it a
 [![image](image6.png)](image6.png)
 
 
-## Modifying the Script / Controller
+### Modifying the Strategy
 
-As mentioned above, you can edit the controller YAML file under the **conf/controllers** folder to make changes on-the-fly to the config values. You can also make changes to the script config file and add another controller for a different pair or perhaps use another controller like the **dman_v3** controller running a different pair. Here's how you would make changes: 
+As mentioned above, you can edit the controller YAML file under the **conf/controllers** folder to make changes on-the-fly to the config values. You can also make changes to the script config file and add another configuration for a different pair, or even another controller altogether.
 
-- Create your controller config first using the **create --controller-config** command, in the example below there is a new controller config named **conf_directional_trading.dman_v3_1.yml** based on the **dman_v3** controller and trading on the **SNX-USDT** pair
-
-- Edit the script config using a text editor (located under **/conf/scripts**) and add your new controller config to the script config file - 
-
-**Script Config File**
-
-```bash 
-markets: {}
-candles_config: []
-controllers_config:
-- conf_directional_trading.bollinger_v1_1.yml
-- conf_directional_trading.dman_v3_1.yml
-config_update_interval: 60
-script_file_name: v2_generic_with_controllers.py
-```
-
-**Controller Config File**
-
-```bash
-id: 8RsgZ4hdw2JjvLiz6ivVLWYRjh1vrJN8bTtv9fs4DWAV
-controller_name: dman_v3
-controller_type: directional_trading
-manual_kill_switch: null
-candles_config: []
-connector_name: vega_perpetual
-trading_pair: SNXUSDT-USDT
-executor_amount_quote: 100.0
-max_executors_per_side: 2
-cooldown_time: 300
-leverage: 20
-position_mode: HEDGE
-stop_loss: 0.03
-take_profit: 0.02
-time_limit: 2700
-take_profit_order_type: 2
-trailing_stop:
-  activation_price: 0.015
-  trailing_delta: 0.003
-candles_connector: binance_perpetual
-candles_trading_pair: SNX-USDT
-interval: 30m
-bb_length: 100
-bb_std: 2.0
-bb_long_threshold: 0.0
-bb_short_threshold: 1.0
-dca_spreads:
-- 0.001
-- 0.018
-- 0.15
-- 0.25
-dca_amounts_pct:
-- 0.25
-- 0.25
-- 0.25
-- 0.25
-dynamic_order_spread: false
-dynamic_target: false
-activation_bounds:
-- 1
+See [Controllers](/v2-strategies/controllers/) for examples of other strategies that you can run using the V2 loader script.
 
 
-```
-
-For more info on the **Strategy V2 Framework** check out the docs [here](../../../v2-strategies/index.md)
-
-
-<br>
-
-**Trading Pairs**
-
-See screenshot below for an example or refer to the following table which shows the available trading pairs on Vega and how they should be entered in Hummingbot strategies or scripts. 
+## Vega Trading Pairs
 
 [![image](image2.png)](image2.png)
+
+Refer to the following table which shows the available trading pairs on Vega and how they should be entered in Hummingbot strategies or scripts. 
+
 
 !!! Note 
     The trading pairs listed below may change over time, the information below is valid as of 4/10/2024
@@ -365,8 +228,7 @@ See screenshot below for an example or refer to the following table which shows 
 | SOL/USDT-PERP         | SOLUSDT-USDT        | | LDO/USDT-PERP            | LDOUSDT-USDT                   |
 |                       |                     | | SNX/USDT-PERP            | SNXUSDT-USDT                   |
 
-
-## Known Issues
+## Common Issues
 
 ??? info "vega_perpetual not ready"
     ```
@@ -466,29 +328,10 @@ See screenshot below for an example or refer to the following table which shows 
 
 - This is a known issue where the bot tries to close the position but is unable to capture the order amount - there should be a fix implemented soon. 
 
+## Vega Links
 
----
-
-**[Placeholder for additional Vega info]**
-
----
-
-## Additional Resources
-
-- Vega Mainnet: [Explore Markets](https://vegaprotocol.eth.limo/#/markets)
-
-- Vega Testnet: [Join the Testnet](https://vegafairground.eth.limo/)
-
-- Testnet Faucet: [Get Testnet Tokens](https://www.infura.io/faucet/sepolia)
-
-
-For a comprehensive list of Vega Wallet alternatives and more about Vega Snaps, visit the [Vega Wallet intro page](https://docs.vega.xyz/mainnet/tools/vega-wallet).
-
-
-**Snaps Resources:**
-
-- [Github](https://github.com/vegaprotocol/vega-snap) link to the source code for the Vega snap integration
-
-- [Metamask Snaps](https://metamask.io/snaps/) - link to documentation
-
-
+- [Vega Mainnet](https://vegaprotocol.eth.limo/#/markets)
+- [Vega Testnet](https://vegafairground.eth.limo/)
+- [Vega Faucet](https://www.infura.io/faucet/sepolia)
+- [Vega Metamask Snaps integration](https://github.com/vegaprotocol/vega-snap)
+- [Vega Wallet Docs](https://docs.vega.xyz/mainnet/tools/vega-wallet)
