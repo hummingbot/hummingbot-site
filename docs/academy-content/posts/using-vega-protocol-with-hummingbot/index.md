@@ -98,125 +98,114 @@ You are now connected to vega_perpetual.
 
 To confirm the connection, run the `balance` command. Your asset balances should match the amount that you deposited into Vega.
 
-## Run Strategy
+[![image](balance.png)](balance.png)
 
-Let's configure and run a strategy using the new Hummingbot StrategyV2 framework
+## Run Directional Strategy
 
-We'll be creating a configuration for [bollinger_v1.py](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v1.py) strategy controller. BollingerV1 is a simple directional strategy that uses [Bollinger Bands](/glossary/#bollinger-bands) as a signal to enter into long and short positions, each managed with a [PositionExecutor](/executors/positionexecutor/).
+Now, let's configure and run a sample algorithmic trading strategy on Vega - [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/feat/simple-v2-directional/scripts/v2_directional_rsi.py).
 
-Then, we will run this controller configuration using the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) loader script.
+This is a simple directional strategy that enters into long positions when the market is oversold (as measured by [RSI](https://en.wikipedia.org/wiki/Relative_strength_index)). Alternatively, if the market is overbought, the bot will enter into a short position. After a position is created, the strategy uses a [PositionExecutor](/v2-strategies/executors/positionexecutor/) to manage it.
 
-!!! tip
-    For more information on how to create and configure and run Strategy V2 Controllers, see [Walkthrough - StrategyV2 Controller](/v2-strategies/walkthrough-controller/)
+### Configure Script
 
-
-### Create Controller Config
-
-First let's configure our BollingerV1 strategy. Run the command below to create the controller config:
+First, let's create a Vega-specific configuration for this strategy. Run:
 ```
-create --controller-config directional_trading.bollinger_v1
+create --script v2_directional_rsi
 ```
 
-[![image](image14.png)](image14.png)
+[![image](config.png)](config.png)
 
-Follow the prompts and enter in your desired values, and save the controller config file. This file is located under the **/conf/controllers** folder. You can use any text editor or IDE like VSCode to open the YAML file and make changes. Any changes made to this file will apply to the running bot during the next refresh cycle.
+Follow the prompts and enter in your desired values, and save the file. This file is located under the **/conf/scripts** folder, and you can use any text editor or IDE like VSCode to open the YAML file and make changes to it.
 
 Note that:
 
-* You'll need to use a different exchange (like Binance Futures) other than Vega for `candles_connector`, since Vega does not currently support [Candles](/v2-strategies/candles/) yet.
-* Trading pair symbols need to be defined correctly for each exchange. For Vega, we will use `ETHUSDT-USDT`, while we'll use the `ETH-USDT` trading pair on Binance Futures. 
+* You'll need to use a different exchange (like Binance Futures) other than Vega for `candles_exchange`, since Vega does not currently support [Candles](/v2-strategies/candles/) yet.
+* Trading pair symbols need to be defined correctly for each exchange. For Vega, we will use `ETHUSDT-USDT`, while we'll use the `ETH-USDT` trading pair on Binance Futures.
+* This configuration sets 50 as both the RSI upper bound and lower bound to enter into a position as soon as the strategy starts. You may want to use different values.
 
-For reference, here's a Vega-specific BollingerV1 config below that creates long and short positions of 20 USDT when the price is above or below the historical Bollinger Band midpoint:
-
-```yaml
-id: your-controller-id
-controller_name: bollinger_v1
-controller_type: directional_trading
-manual_kill_switch: null
-candles_config: []
-connector_name: vega_perpetual
-trading_pair: ETHUSDT-USDT
-executor_amount_quote: 20
-max_executors_per_side: 1
-cooldown_time: 300
-leverage: 100
-position_mode: HEDGE
-stop_loss: 0.03
-take_profit: 0.02
-time_limit: 2700
-take_profit_order_type: 2
-trailing_stop:
-  activation_price: 0.015
-  trailing_delta: 0.003
-candles_connector: binance_perpetual
-candles_trading_pair: ETH-USDT
-interval: 3m
-bb_length: 100
-bb_std: 2.0
-bb_long_threshold: 0.5
-bb_short_threshold: 0.5
-```
-
-### Configure Loader Script
-
-Now, let's configure our loader script. In Hummingbot, create the config for the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) loader script using the following command:
-```
-create --script-config v2_generic_with_controllers
-```
-
-You'll be prompted to enter the controller configuration file name - select the controller config we created earlier.
-
-[![image](image3.png)](image3.png)
-
-Afterwards, save the loader script config file with a name like `conf_v2_generic_with_controllers_1.py`. The file, located in your **/conf/scripts** directory, looks like this:
+For reference, here's the Vega-specific config for this strategy:
 
 ```yaml
 markets: {}
 candles_config: []
-controllers_config:
-- conf_directional_trading.bollinger_v1_1.yml
+controllers_config: []
 config_update_interval: 60
-script_file_name: v2_generic_with_controllers.py
+script_file_name: v2_directional_rsi.py
+exchange: vega_perpetual
+trading_pair: ETH-USD
+candles_exchange: binance_perpetual
+candles_pair: ETH-USDT
+candles_interval: 1m
+candles_length: 60
+rsi_low: 50.0
+rsi_high: 50.0
+order_amount_quote: 30
+leverage: 10
+position_mode: ONEWAY
+stop_loss: 0.03
+take_profit: 0.01
+time_limit: 2700
 ```
-
-For future strategies, it may be easier to modify or extend the `controllers_config` field in this file rather than creating a new loader script configuration from Hummingbot.
 
 ### Start Script
 
-Now, we can run the loader script using the command below:
-```
-start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
-```
-
-Your bot should now be running. You can run the **status** command shown below or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status.
+Now, we can run the script using the `start` command:
 
 ```
-status
+start --script v2_directional_rsi.py --conf conf_rsi_vega.yml
 ```
 
-[![image](image5.png)](image5.png)
+[![image](logs.png)](logs.png)
 
-You can click on the log pane at the top right corner of the screen to hide it and see more status info
+The bot has entered into a short position. Afterwards, it placed a buy limit stop loss order.
 
-[![image](image6.png)](image6.png)
+You can run the status` press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status.
+
+[![image](status.png)](status.png)
 
 
-### Modifying the Strategy
+## Vega Data Nodes
 
-As mentioned above, you can edit the controller YAML file under the **conf/controllers** folder to make changes on-the-fly to the config values. You can also make changes to the script config file and add another configuration for a different pair, or even another controller altogether.
+In the logs above, note that the bot connects to the Vega Protocol endpoint <https://darling.network>. This is the Vega [Data Node](https://docs.vega.xyz/testnet/concepts/vega-chain/data-nodes) that streams market data to Hummingbot.
 
-See [Controllers](/v2-strategies/controllers/) for examples of other strategies that you can run using the V2 loader script.
+[![image](data-node.png)](data-node.png)
 
+
+### List of Data Nodes
+
+The Vega connector in Hummingbot maintains a list of the data nodes it uses in [vega_perpetual_constants.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/vega_perpetual/vega_perpetual_constants.py). By default, the Vega connector attempts to use the lowest-latency endpoint.
+
+To use your own data node, add the URL to the following sections of this file.
+
+```python
+PERPETUAL_API_ENDPOINTS = [
+    "https://darling.network/",
+    "https://graphqlvega.gpvalidator.com/",
+    "https://vega-data.bharvest.io/",
+    "https://vega-data.nodes.guru:3008/",
+    "https://vega-mainnet-data.commodum.io/",
+    "https://vega-mainnet.anyvalid.com/",
+    "https://vega.aurora-edge.com/",
+    "https://vega.mainnet.stakingcabin.com:3008/",
+]
+
+TESTNET_API_ENDPOINTS = [
+    "https://api.n00.testnet.vega.rocks/",
+    "https://api.n06.testnet.vega.rocks/",
+    "https://api.n07.testnet.vega.rocks/",
+    "https://api.n08.testnet.vega.rocks/",
+    "https://api.n09.testnet.vega.rocks/",
+    "https://api.n07.testnet.vega.xyz/",
+]
+```
+
+### Running a Data Node
+
+Using your own data node instead of one of the public nodes can offer significant latency benefits, but cost may be an issue. To help users decide whether to run their own data node, please see [Running a Vega Data Node](https://www.notion.so/hummingbot-foundation/Running-a-Vega-Data-Node-604e3d63e66d43ad8d9a3cfef1422092?pvs=4) for performance comparison and cost analysis of running a Vega data node with Hummingbot.
 
 ## Vega Trading Pairs
 
-[![image](image2.png)](image2.png)
-
-Refer to the following table which shows the available trading pairs on Vega and how they should be entered in Hummingbot strategies or scripts. 
-
-
-!!! Note 
-    The trading pairs listed below may change over time, the information below is valid as of 4/10/2024
+Here are various pairs on the Mainet and Vega networks and how to enter them into Hummingbot:
    
 | Mainnet Trading Pairs | Hummingbot          | | Fairground Trading Pairs | Hummingbot                     |
 |---------------------- |---------------------|-|--------------------------|--------------------------------|
