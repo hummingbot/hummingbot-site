@@ -132,7 +132,7 @@ controllers_config: []
 config_update_interval: 60
 script_file_name: v2_directional_rsi.py
 exchange: vega_perpetual
-trading_pair: ETH-USD
+trading_pair: ETHUSDT--USDT
 candles_exchange: binance_perpetual
 candles_pair: ETH-USDT
 candles_interval: 1m
@@ -159,7 +159,7 @@ start --script v2_directional_rsi.py --conf conf_rsi_vega.yml
 
 The bot has entered into a short position. Afterwards, it placed a buy limit stop loss order.
 
-You can run the status` press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the bot status.
+You can run `status` or press <kbd>CTRL</kbd> + <kbd>S</kbd> to check the real-time status of the bot:
 
 [![image](status.png)](status.png)
 
@@ -175,7 +175,7 @@ In the logs above, note that the bot connects to the Vega Protocol endpoint <htt
 
 The Vega connector in Hummingbot maintains a list of the data nodes it uses in [vega_perpetual_constants.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/derivative/vega_perpetual/vega_perpetual_constants.py). By default, the Vega connector attempts to use the lowest-latency endpoint.
 
-To use your own data node, add the URL to the following sections of this file.
+To use your own data node, replace the URLs in the following sections of this file with your own data node URL:
 
 ```python
 PERPETUAL_API_ENDPOINTS = [
@@ -189,13 +189,12 @@ PERPETUAL_API_ENDPOINTS = [
     "https://vega.mainnet.stakingcabin.com:3008/",
 ]
 
-TESTNET_API_ENDPOINTS = [
-    "https://api.n00.testnet.vega.rocks/",
-    "https://api.n06.testnet.vega.rocks/",
-    "https://api.n07.testnet.vega.rocks/",
-    "https://api.n08.testnet.vega.rocks/",
-    "https://api.n09.testnet.vega.rocks/",
-    "https://api.n07.testnet.vega.xyz/",
+PERPETUAL_GRPC_ENDPOINTS = [
+    "darling.network:3007",
+    "vega-data.bharvest.io:3007",
+    "vega-data.nodes.guru:3007",
+    "vega-mainnet.anyvalid.com:3007",
+    "vega.mainnet.stakingcabin.com:3007",
 ]
 ```
 
