@@ -50,10 +50,11 @@ sudo apt-get install docker-compose-plugin
 
 ## Clone Hummingbot Repo
 
-In your terminal, clone the Hummingbbot Githug repository:
+In your terminal, clone the Hummingbot Github repository:
 
 ```bash
 git clone https://github.com/hummingbot/hummingbot
+cd hummingbot
 ```
 
 ## Create Container
