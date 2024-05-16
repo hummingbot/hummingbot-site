@@ -19,25 +19,19 @@ create --script-config v2_directional_rsi.py
 
 ```
 
-When you use the `create --script-config` and press <kbd>SPACE</kbd> Hummingbot will display available scripts in the scripts folder, as shown below.
+When you enter the `create --script-config` command and press <kbd>SPACE</kbd> Hummingbot will display available scripts in the scripts folder, as shown below.
 
 [![Alt text](create-script-config.png)](create-script-config.png)
 
-If you don't see any scripts under the `/scripts` folder, run these commands in the terminal to make them appear: 
-
-```bash
-sudo chmod -R a+rw ./hummingbot_files
-docker cp hummingbot:/home/hummingbot/scripts-copy/. ./hummingbot_files/scripts/
-```
-
 Select the `v2_directional_rsi.py` script and press <kbd>ENTER</kbd>. 
+
+[![Alt text](create-script-config2.png)](create-script-config2.png)
+
+You will then be guided to configure the settings. At this stage, you may modify the options or simply hit <kbd>ENTER</kbd> to accept the default values. 
 
 [![Alt text](config-script.png)](config-script.png)
 
-You will then be guided to configure the settings. At this stage, you may modify the options or simply hit <kbd>ENTER</kbd> to accept the default values. After finalizing the configuration, name the config file and press <kbd>ENTER</kbd> to save it.
-
-[![Alt text](save-config.png)](save-config.png)
-
+Give the config a name and press press <kbd>ENTER</kbd> to save it.
 
 Once the config is saved we can now launch the script. Enter the command below to launch the script!
 
@@ -54,6 +48,9 @@ After pressing <kbd>ENTER</kbd> you should be able to see activity in the log pa
 ```
 status
 ```
+
+!!! tip "Default Configs"
+    Please note that the default values for the script config may not work for each and every exchange / scenario. You may need to tweak the script config in order for the bot to be able to place orders. If you encounter any issues check the log pane and the log files for more information on what the issue may be. 
 
 
 [![Alt text](script-status.png)](script-status.png)
