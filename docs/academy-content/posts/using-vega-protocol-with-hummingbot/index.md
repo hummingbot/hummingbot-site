@@ -81,9 +81,20 @@ See this Metamask article to find the seed phrase: [How to reveal your Secret Re
 !!! warning
     Your wallet seed phrase is extremely sensitive. Keep it confidential and never share it online or with anyone you don't trust. Always ensure you're in a secure and private environment when handling your seed phrase.
 
-### Run Connect Command
+### Install Hummingbot
 
 After you have both your Snap Key and Seed Phrase, you are ready to connect Hummingbot to Vega! Make sure to bookmark the [Vega connector](/exchanges/vega/) documentation page, which provides a handy reference.
+
+Now, install Hummingbot by following the [installation process](/installation/docker). The easiest way to get started is to clone the Github repo and launch the Docker image:
+
+```
+git clone https://github.com/hummingbot/hummingbot
+cd hummingbot
+docker compose up -d
+docker attach hummingbot
+```
+
+### Run Connect Command
 
 In the Hummingbot client, connect to **Vega mainnet** by running `connect vega_perpetual`. To connect to the **Vega Fairground testnet**, run `connect vega_perpetual_testnet`.
 
@@ -102,7 +113,7 @@ To confirm the connection, run the `balance` command. Your asset balances should
 
 ## Run Directional Strategy
 
-Now, let's configure and run a sample algorithmic trading strategy on Vega - [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/feat/simple-v2-directional/scripts/v2_directional_rsi.py).
+Now, let's configure and run a sample algorithmic trading strategy on Vega - [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py).
 
 This is a simple directional strategy that enters into long positions when the market is oversold (as measured by [RSI](https://en.wikipedia.org/wiki/Relative_strength_index)). Alternatively, if the market is overbought, the bot will enter into a short position. After a position is created, the strategy uses a [PositionExecutor](/v2-strategies/executors/positionexecutor/) to manage it.
 
@@ -132,7 +143,7 @@ controllers_config: []
 config_update_interval: 60
 script_file_name: v2_directional_rsi.py
 exchange: vega_perpetual
-trading_pair: ETHUSDT--USDT
+trading_pair: ETHUSDT-USDT
 candles_exchange: binance_perpetual
 candles_pair: ETH-USDT
 candles_interval: 1m

@@ -1,3 +1,6 @@
+!!! tip
+    Starting with [Hummingbot 2.0](https://lu.ma/ieyvhcft), you will be able to configure and deploy controllers using [Dashboard](/dashboard), the new entry point for Hummingbot users launching in June 2024!
+
 In this more complex example, the strategy logic is housed in a [Controller](./controllers/index.md), and the user generates a controller configuration that is run with a generic script, which acts as a controller loader.
 
 This allows users to run multiple configurations, as well as multiple controllers, in a single script.
@@ -10,7 +13,7 @@ Let's say we want to create a single bot that provides liquidity to two distinct
 
 Now, this can be handled in a single strategy using the [pmm_simple.py](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py) controller. 
 
-First, we will generate pair-specific configurations. Then, we can run these configurations all at once with the [v2_generic_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_generic_with_controllers.py) generic script.
+First, we will generate pair-specific configurations. Then, we can run these configurations all at once with the [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) generic script.
 
 
 ## Create the controller configs
@@ -66,7 +69,7 @@ conf_market_making.pmm_simple_2.yml
 Execute the command below to generate the script config file:
 
 ```
-create --script-config v2_generic_with_controllers
+create --script-config v2_with_controllers
 
 ```
 
@@ -74,7 +77,7 @@ Enter the file names of your controller configs, separated by commas:
 
 ```python
 Enter controller configurations >>> conf_market_making.pmm_simple_1.yml, conf_market_making.pmm_simple_2.yml
-Enter a new file name for your configuration >>> conf_v2_generic_with_controllers_1.yml
+Enter a new file name for your configuration >>> conf_v2_with_controllers_1.yml
 
 ```
 
@@ -89,7 +92,7 @@ Enter a new file name for your configuration >>> conf_v2_generic_with_controller
 Execute the command below to start the script:
 
 ```
-start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
+start --script v2_with_controllers.py --conf conf_v2_with_controllers_1.yml
 ```
 
 The bot should now be running and start placing orders for both pairs. Run the `status` command to see the bot status.
@@ -148,4 +151,3 @@ trailing_stop:
 Make the necessary changes you want here then press <kbd>CTRL</kbd> + <kbd>O</kbd> to save, then <kbd>CTRL</kbd> + <kbd>X</kbd> to exit. 
 
 If you edit and save changes to the controller config file, you'll see the spreads change on the next refresh, which is set by the `config_update_interval` parameter (default: 60 seconds).
-
