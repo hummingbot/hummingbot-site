@@ -15,7 +15,11 @@ tags:
 
 ## Introduction
 
-In this guide, we'll walk you through the detailed steps required to seamlessly set up a Vega Wallet, link it with Hummingbot, and start running powerful algo trading strategies on the Vega decentralized exchange. Let's get started!
+In this guide, we'll walk you through the detailed steps required to seamlessly set up a Vega Wallet, link it with Hummingbot, and start running powerful algo trading strategies on the Vega decentralized exchange. 
+
+Watch the guide on Youtube and let's get started!
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/kZM8YeRAb8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- more -->
 
