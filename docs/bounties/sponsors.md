@@ -23,6 +23,6 @@ See [Lifecycle of a Bounty](./lifecycle.md) for more information on the remainde
 In order to fund the bounty, the Sponsor should send the total bounty amount to a designated Foundation wallet:
 
 * **Ethereum Mainnet:** [0x60D581aEa0644e74df60c7555e5166d32665d6b6](https://etherscan.io/address/0x60d581aea0644e74df60c7555e5166d32665d6b6)  
-* **Binance Smart Chain:** [0xE517b826a26B439eCE92f3220628eC007049d915](https://bscscan.com/address/0xe517b826a26b439ece92f3220628c007049d915)
+* **Binance Smart Chain:** [0xE517b826a26B439eCE92f3220628eC007049d915](https://bscscan.com/address/0xE517b826a26B439eCE92f3220628eC007049d915)
 
 Since HBOT is an Ethereum ERC-20 token only, any HBOT bounties must be sent to the Ethereum Mainnet wallet.
