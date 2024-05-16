@@ -12,14 +12,14 @@ Bounties can be classified into one of the following types:
 
 | Task | Price Guidance (inclusive of 20% fee) |
 | --- | --- |
-| Add [Candles Feed](v2-strategies/data/) | 625 USDC |
+| Add [Candles Feed](../v2-strategies/data/index.md) | 625 USDC |
 | Add Custom [Data Feed](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed) | 750 USDC |
-| Add Spot [CEX Connector](/cex-connectors) | 3750 USDC |
-| Add Perp [CEX Connector](/cex-connectors) | 5000 USDC |
-| Add Spot [DEX Connector](/dex-connectors) | 3750 USDC |
-| Add Perp [DEX Connector](/dex-connectors) | 5000 USDC |
-| Add AMM-V2 [DEX Connector](/dex-connectors) | 3750 USDC |
-| Add AMM-V3 [DEX Connector]((/dex-connectors)) | 5000 USDC |
+| Add Spot [CEX Connector](../cex-connectors/index.md) | 3750 USDC |
+| Add Perp [CEX Connector](../cex-connectors/index.md) | 5000 USDC |
+| Add Spot [DEX Connector](../dex-connectors/index.md) | 3750 USDC |
+| Add Perp [DEX Connector](../dex-connectors/index.md) | 5000 USDC |
+| Add AMM-V2 [DEX Connector](../dex-connectors/index.md) | 3750 USDC |
+| Add AMM-V3 [DEX Connector](../dex-connectors/index.md) | 5000 USDC |
 | Upgrade DEX CLOB | 1250-3000 USDC |
 | Update Connector for API Change | 1250 USDC |
 | Add Custom Script | 625- 3125 USDC |

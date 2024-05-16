@@ -19,7 +19,7 @@ We work with the sponsor to define bounty scope, acceptance criteria and amount 
 The source of funding may be:
 
 * HBOT allocations in the **Connector Pots** tab of [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit#gid=2065823371)
-* Approved [Hummingbot Improvement Proposals]((https://hummingbot.org/governance/proposals/#hummingbot-improvement-proposals))
+* Approved [Hummingbot Improvement Proposals](https://hummingbot.org/governance/proposals/#hummingbot-improvement-proposals)
 * External sponsor funding
 
 The external sponsor sends the bounty amount to Foundation wallet, and we custody and pay the contributor after the pull request that fulfills the bounty has been merged to the `development` branch.
@@ -46,8 +46,8 @@ After the contributor has submitted the pull request (PR) addressing the issue, 
 
 For connectors, our engineering team uses following checklists in conducting reviews:
 
-* [Spot Connector Developer Checklist](/developers/connectors/spot-connector-checklist/)
-* [Perp Connector Developer Checklist](/developers/connectors/perp-connector-checklist/)
+* [Spot Connector Developer Checklist](../developers/connectors/spot-connector-checklist.md)
+* [Perp Connector Developer Checklist](../developers/connectors/perp-connector-checklist.md)
 
 ### 9. Test Pull Request
 

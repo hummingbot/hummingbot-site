@@ -29,7 +29,7 @@ The development of configurable scripts is already underway, as the initial [pul
 
 ### Add More Strategy Components
 
-Our focus will be on adding more smart components - which combine [Controllers](/v2-strategies/controllers/) with [Executor Handlers](/v2-strategies/executor-handlers/) - into the V2 framework, which will offer increased flexibility in strategy implementation. Key additions should include:
+Our focus will be on adding more smart components - which combine [Controllers](../../../v2-strategies/controllers/index.md) with Executor Handlers - into the V2 framework, which will offer increased flexibility in strategy implementation. Key additions should include:
 
 - **XEMM Component:** This component will allow users to place a limit order on one exchange and, upon its fulfillment, hedge the order at market price on another exchange.
 - **DCA Component:** Designed for dynamic trading, this component will manage multiple open orders with a global take profit and stop loss.

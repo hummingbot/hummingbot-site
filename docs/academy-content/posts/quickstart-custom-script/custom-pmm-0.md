@@ -23,7 +23,7 @@ Whether you're a beginner or an experienced trader, this guide should help you g
 
 ## Getting Started
 
-First, check out the [Installation](/installation/) section to install Hummingbot. You may install it using Docker (easiest for new users) or from source (best for developers).
+First, check out the [Installation](../../../installation/docker.md) section to install Hummingbot. You may install it using Docker (easiest for new users) or from source (best for developers).
 
 If you have questions or need help, join the [official Hummingbot Discord](https://discord.gg/hummingbot) and ask for help on the **#support** channel from our community.
 

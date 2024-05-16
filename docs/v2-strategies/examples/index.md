@@ -7,7 +7,7 @@
 
 The main logic in a V2 strategy is contained in the [Controller](../controllers), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles) and [Executors](../executors/) to implement the strategy logic.
 
-For users, their primary interface is the [V2 Script](../v2-scripts/), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
+For users, their primary interface is the [V2 Script](../index.md), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
 
 To generate a configuration file for a script, run:
 

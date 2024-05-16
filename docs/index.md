@@ -193,7 +193,7 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 # What strategies can you build with Hummingbot?
 
-### Learn how to design and code strategies like these in [Botcamp](/botcamp), the official training and membership program for the Hummingbot community.
+### Learn how to design and code strategies like these in [Botcamp](https://www.botcamp.xyz/), the official training and membership program for the Hummingbot community.
 
 <div class="grid cards" markdown>
 
@@ -213,7 +213,7 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 <br />
 
-[Join Botcamp](/botcamp){ .md-button .md-button--primary .centered }
+[Join Botcamp](https://www.botcamp.xyz/){ .md-button .md-button--primary .centered }
 
 ---
 
