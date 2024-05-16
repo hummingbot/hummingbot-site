@@ -46,6 +46,10 @@ Your API is now created. Please keep your Secret Key secure. It will not be show
 
 ### Add Keys to Hummingbot
 
+!!! tip "Trading Pairs"
+    Please note that not all trading pairs are available for trading by the MEXC API. For a list of trading pairs that are available please check this link - <https://www.mexc.com/user/openapi>
+
+
 From inside the Hummingbot client, run `connect mexc`:
 
 ```

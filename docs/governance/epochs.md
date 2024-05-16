@@ -60,7 +60,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 ## Epoch 6 (Q3 2023)
 
-**Recap**: [Epoch 6 Polls Recap](../blog/epoch-6-polls-recap/)
+**Recap**: [Epoch 6 Polls Recap](../blog/posts/epoch-6-polls-recap/index.md)
 
 **Approved Governance Changes**: [HGP-45](https://snapshot.org/#/hbot.eth/proposal/0x7807da661f09096db6aadb277051ed6defd580259fd8e503c2a77a83779a3fd5)
 
@@ -89,7 +89,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 ## Epoch 5 (Q2 2023)
 
-**Recap**: [Epoch 5 Polls Recap](../blog/epoch-5-polls-recap/)
+**Recap**: [Epoch 5 Polls Recap](../blog/posts/epoch-5-polls-recap/index.md)
 
 **Approved Governance Changes**: [HGP-43](https://snapshot.org/#/hbot.eth/proposal/0x63958a27907ef6efa072fc92566f91bcf5df7491523ffcc64ecb47f270df9bcd)
 
@@ -117,7 +117,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 ## Epoch 4 (Q2 2023)
 
-**Recap**: [Epoch 4 Polls Recap](../blog/epoch-4-polls-recap/)
+**Recap**: [Epoch 4 Polls Recap](../blog/posts/epoch-4-polls-recap/index.md)
 
 ### CEX Connectors
 
@@ -143,7 +143,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 ## Epoch 3 (Q1 2023)
 
-**Recap**: [Epoch 3 Polls Recap](../blog/epoch-3-polls-recap/)
+**Recap**: [Epoch 3 Polls Recap](../blog/posts/epoch-3-polls-recap/index.md)
 
 ### CEX Connectors
 

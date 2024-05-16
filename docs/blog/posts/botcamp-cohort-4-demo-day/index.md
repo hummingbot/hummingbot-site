@@ -10,7 +10,7 @@ categories:
 
 ![](cover.webp)
 
-We recently finished our **fourth cohort** of [Hummingbot Botcamp](https://hummingbot.org/botcamp?ref=blog.hummingbot.org) with Demo Day, where participants showcased the custom trading scripts they developed over the course of the Botcamp intensive 6-week online core course!
+We recently finished our **fourth cohort** of [Hummingbot Botcamp](https://www.botcamp.xyz) with Demo Day, where participants showcased the custom trading scripts they developed over the course of the Botcamp intensive 6-week online core course!
 
 The Botcamp participants in this cohort were a dynamic mix of enthusiastic software developers, enterprising startup founders, and adept quant traders, all keen on honing their own unique trading strategies and skills. Botcamp is a professional community with regular events, and numerous participants have forged strong bonds well beyond the program's duration.
 

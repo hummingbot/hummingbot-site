@@ -14,7 +14,7 @@ Hummingbot maintains connectors to the following types of platforms:
 
 Quarterly [Polls](/governance/polls) allow the Hummingbot community to rank the supported CEXs, DEXs and Chains in the codebase. This process allocates HBOT tokens toward connector maintenance, which are listed in the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing). The Foundation uses these allocations to assign developer [Bounties](/bounties) to address Github issues reported by users.
 
-Polls also decide which connectors should be included in the codebase for the next quarterly [Epoch](/goverance/epochs).
+Polls also decide which connectors should be included in the codebase for the next quarterly [Epoch](../goverance/epochs).
 
 ## Connector Standards
 

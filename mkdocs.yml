@@ -56,10 +56,10 @@ theme:
 
 plugins:
   - search
-  # - social:
-  #     cards_layout_options:
-  #       background_color: "#151819"
-  #       color: "#5FFFD7"
+  - social:
+      cards_layout_options:
+        background_color: "#151819"
+        color: "#5FFFD7"
   - blog:
       blog_dir: blog
       blog_toc: true
@@ -214,9 +214,9 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
-      - Walkthrough - StrategyV2 Script: v2-strategies/walkthrough.md 
-      - Walkthrough - StrategyV2 Controller: v2-strategies/walkthrough-controller.md 
-      - StrategyV2 Architecture: v2-strategies/index.md
+      - Walkthrough - Script: v2-strategies/walkthrough.md 
+      - Walkthrough - Controller: v2-strategies/walkthrough-controller.md 
+      - Architecture: v2-strategies/index.md
       - Scripts:
         - Scripts: scripts/index.md
         - Sample Scripts: scripts/examples.md
@@ -406,6 +406,6 @@ nav:
     - Sponsors & Backers: about/sponsors.md
     - Reported Volumes: reporting.md
     - History: about/history.md
-    - 📆 Calendar ↗️: https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204
+    - 📆 LinkTree ↗️: https://linktr.ee/hummingbot
   - Blog: 
     - blog/index.md

@@ -71,7 +71,7 @@ Discord users with the **`support-evaluator`** role may add a 1️⃣, 2️⃣ o
 
 Currently, the Foundation team manually tracks evaluated responses in the [Discord Support Program Tracker](https://docs.google.com/spreadsheets/d/1mI1evL-_BNbQtLL_gvblPJoYmnOm4zV0prSgo-7Klz8/edit?usp=sharing) and computes the weekly rewards earned by each support provider. We plan to automate this process in the future.
 
-At the end of the month, contributors will receive their total bounties earned, [either in USDC or HBOT](blog/launching-usdc-payouts-for-bounty-recipients/) based on the current preference they indicated in the onboarding form.
+At the end of the month, contributors will receive their total bounties earned, [either in USDC or HBOT](../launching-usdc-payouts-for-bounty-recipients/index.md) based on the current preference they indicated in the onboarding form.
 
 ---
 

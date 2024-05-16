@@ -21,6 +21,7 @@
 - **API Docs**: <https://www.okx.com/docs-v5/en/#overview>
 - **Fees**: <https://www.okx.com/fees>
 - **Supported Countries**: Not available
+- **OKX referral link:** <https://www.okx.com/join/1931920>
 
 ## 🔑 How to Connect
 

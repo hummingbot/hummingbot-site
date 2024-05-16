@@ -1,7 +1,7 @@
 # Hummingbot Foundation Governance
 
 !!! note
-    See [State of the Foundation 2024](../blog/state-of-the-foundation-2024/) for an update to this whitepaper.
+    See [State of the Foundation 2024](../blog/posts/state-of-the-foundation-2024/index.md) for an update to this whitepaper.
 
 *Originally posted on December 17, 2021*
 

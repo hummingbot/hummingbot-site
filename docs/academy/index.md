@@ -54,7 +54,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   [![](/academy-content/using-binance-with-hummingbot/cover.png)](/academy/content/using-binance-with-hummingbot/)
+-   [![](/academy-content/using-binance-with-hummingbot/cover.png)](/academy-content/using-binance-with-hummingbot/)
 
     ### [Using Binance with Hummingbot](/academy-content/using-binance-with-hummingbot/)
 
@@ -218,9 +218,9 @@ hide:
 
     ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
 
--   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+-   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](/academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
+    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](/academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/)
 
 </div>
 

@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Ascendex. When you use our software to trade on Ascendex, a custom API header tells Ascendex that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, just enter your API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with Ascendex. When you use our software to trade on Ascendex, a custom API header tells Ascendex that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Ascendex referral link](https://ascendex.com/register?inviteCode=UEIXNXKW) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -21,6 +21,7 @@
 - **API Docs**: <https://ascendex.github.io/ascendex-pro-api/>
 - **Fees**: <https://ascendex.com/en/support>
 - **Supported Countries**: <https://www.ascendex.com/support/10247584234521> 
+- **Ascendex referral link:** <https://ascendex.com/register?inviteCode=UEIXNXKW>
 
 ## 🔑 How to Connect
 

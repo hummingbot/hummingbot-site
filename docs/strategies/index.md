@@ -20,56 +20,48 @@ We encourage users to create their own custom strategies and/or extend the exist
 
 There are a variety of ways that Hummingbot strategies can be defined:
 
-* [Script](#script): A simple Python file that contains all strategy logic
-* [StrategyV2 Script](#strategyv2-script): A script that uses StrategyV2 components like Candles and Executors
-* [StrategyV2 Controller](#strategyv2-controller): Strategy logic is abstracted into a Controller, allowing a loader script to deploy and manage multiple Controller configurations
-* [Strategy V1](#strategy-v1): Legacy strategy templates that not customizable
+* [Simple Scripts](#scripts): A simple Python file that contains all strategy logic
+* [V2 Scripts](#v2-scripts): A script that uses StrategyV2 components like Candles and Executors
+* [V2 Controllers](#v2-controllers): Strategy logic is abstracted into a Controller, allowing a loader script to deploy and manage multiple Controller configurations
+* [V1 Strategies](#v1-strategies): Legacy strategy templates that not customizable
 
-### Script
+### Scripts
 
-[Scripts](/scripts) are the entry point for Hummingbot strategies. They can range in complexity from a simple script that perform a single automated action to a script that loads multiple StrategyV2 controller configurations. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
+[Scripts](/scripts) are the entry point for Hummingbot strategies. They can range in complexity from a simple script that perform a single automated action to one that loads multiple Controllers. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
 
-See [Sample Scripts](/scripts/examples) for a full list of the current scripts in the Hummingbot codebase. These examples show you how to:
+See [Sample Scripts](/scripts/examples) for a full list of the current scripts in the Hummingbot codebase.
 
-- Execute V2 strategies
-- Download order book data
-- Download historical candles data
-- Place orders
-- Use the rate oracle
-- Call exchange APIs
-- And much more!
+Check out this [quickstart guide](/academy-content/creating-a-custom-market-making-strategy/) to learn how to code a simple market making script.
 
-Check out this [quickstart guide](/academy-content/creating-a-custom-market-making-strategy/) to learn how to code a custom market making script.
-
-### StrategyV2 Script
+### V2 Scripts
 
 Scripts that use StrategyV2 components such as the Market Data Providers and Executors. Stores parameters in a script config file.
 
-Here are the StrategyV2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder:
+Here are the current V2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder:
 
 | Script | Description |
 |--------|-------------|
-| [v2_simple_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_simple_directional_rsi.py) | Directional strategy using the RSI indicator |
-| [v2_pmm_single_level.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_pmm_single_level.py) | Simple pure market making strategy using PositionExecutors |
-| [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
-| [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
-| [funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/funding_rate_arb.py) | Script that arbitrages funding rates across perpetual exchanges |
+| [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) | Generic script that loads one or more controller configurations |
+| [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py) | Directional strategy using the RSI indicator |
+| [v2_funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_funding_rate_arb.py) | Script that arbitrages funding rates across perpetual exchanges |
+| [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
+| [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
 
-For more info, see [Walkthrough - StrategyV2 Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
+For more info, see [Walkthrough - Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
 
-### StrategyV2 Controller
+### V2 Controllers
 
-Strategy logic is abstracted into a [Controller](../v2-strategies/controllers/index.md), allowing a loader script to deploy and manage multiple Controller configurations.
+Strategy logic is abstracted into a [Controller](../v2-strategies/controllers/index.md). You can use the [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) script to deploy one or more controller configurations, enabling you to run multiple bots more easily.
 
-For more info,, see [Walkthrough - StrategyV2 Controller](../v2-strategies/walkthrough-controller.md). This shows you how to run the pure market making strategy using a StrategyV2 Controller, which lets you scale your operation more easily.
+For more info, see [Walkthrough - Controller](../v2-strategies/walkthrough-controller.md), which shows you how to run a basic pure market making (PMM) strategy using a V2 Controller.
 
-### Strategy V1
+### V1 Strategies
 
 The original Hummingbot strategies offer structured templates for various strategies like pure market making and cross-exchange market making that let users configure parameters, but they are more rigid and less customizable than those built using the StrategyV2 framework.
 
-See [Strategy V1](../v1-strategies/index.md) for a list of these strategy templates.
+See [Strategies V1](../v1-strategies/index.md) for a list of these strategy templates.
 
-## Motivation for the StrategyV2 Framework
+## Motivation for the Strategy V2 Framework
 
 When it launched in 2019, Hummingbot pioneered the concept of configurable templates for algo trading strategies, such as market making strategies based on the Avellaneda & Stoikov paper.
 
