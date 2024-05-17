@@ -348,6 +348,7 @@ nav:
     - All Articles: academy/all.md
   - Certification:
     - Certification: certification/index.md
+    - Certifications List: certification/list.md
     - Botcamp ↗️: https://www.botcamp.xyz
     - Botcamp FAQ: botcamp/faq.md
   - Releases:
