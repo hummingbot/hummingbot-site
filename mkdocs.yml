@@ -56,6 +56,8 @@ theme:
 
 plugins:
   - search
+  - table-reader
+  - git-revision-date-localized
   - social:
       cards_layout_options:
         background_color: "#151819"
@@ -70,11 +72,8 @@ plugins:
       archive_toc: true
       categories_toc: true
       post_url_format: "{slug}"
-
   - tags:
       tags_file: academy/all.md
-  # - git-revision-date
-  # - mkdocs-video
 
 extra:
   homepage: https://hummingbot.org
@@ -133,8 +132,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.keys
   # - pymdownx.magiclink:
   #     user: hummingbot
@@ -347,8 +346,10 @@ nav:
     - Academy: academy/index.md
     - Latest Articles: academy-content/index.md
     - All Articles: academy/all.md
-  - Botcamp ↗️:
-    - Botcamp: https://www.botcamp.xyz
+  - Certification:
+    - Certification: certification/index.md
+    - Certifications List: certification/list.md
+    - Botcamp ↗️: https://www.botcamp.xyz
     - Botcamp FAQ: botcamp/faq.md
   - Releases:
     - Releases: release-notes/index.md
