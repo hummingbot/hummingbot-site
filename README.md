@@ -28,8 +28,9 @@ Install dependencies:
 ```bash
 pip install git+ssh://git@github.com/hummingbot/mkdocs-material-insiders  # fetch via SSH
 # pip install git+https://github.com/hummingbot/mkdocs-material-insiders.git  # fetch via SSH
-pip install mkdocs-git-revision-date-plugin mkdocs-video
+pip install mkdocs-git-revision-date-localized-plugin
 pip install pillow cairosvg
+pip install mkdocs-table-reader-plugin
 ```
 
 Run site locally at http://localhost:8000:
@@ -41,6 +42,22 @@ Build site:
 ```
 mkdocs build
 ```
+
+
+## Troubleshooting
+
+If you get this error, it means that the `cairosvg` package was installed, but the underlying `cairocffi` dependency couldn't find the installed library. 
+
+```
+no library called "cairo-2" was found
+no library called "cairo" was found
+no library called "libcairo-2" was found
+cannot load library 'libcairo.so.2': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo.so.2'
+cannot load library 'libcairo.2.dylib': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo.2.dylib'
+cannot load library 'libcairo-2.dll': error 0x7e.  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo-2.dll'
+```
+
+See [Troubleshooting] in the Mkdocs-Material site for how to resolve this issue for your operating system.
 
 ## Contributions
 
