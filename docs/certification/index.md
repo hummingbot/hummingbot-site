@@ -5,9 +5,9 @@ See [Certifications List](list.md) for the current list of certified developers.
 
 ## Certification Types
 
-### Hummingbot StrategyV2 Developer
+### Hummingbot Strategy V2 Developer
 
-The Hummingbot StrategyV2 Developer certification enables developers to demonstrate proficiency in creating and deploying professional-grade algorithmic trading strategies using the [Hummingbot StrategyV2 framework](/v2-strategies). Certified individuals possess the following skills:
+The Hummingbot Strategy V2 Developer certification enables developers to demonstrate proficiency in creating and deploying professional-grade algorithmic trading strategies using the [Hummingbot StrategyV2 framework](/v2-strategies). Certified individuals possess the following skills:
 
 - **Design and Code Custom Strategies:** Possess in-depth knowledge of the Hummingbot V2 framework, enabling them to design and implement custom trading algorithms tailored to specific market conditions and objectives.
 - **Familiarity with Hummingbot Codebase:** Have a thorough understanding of the Hummingbot codebase, allowing them to make modifications, optimize performance, and integrate new features.
@@ -63,7 +63,7 @@ Each individual or team member who presents a strategy during Demo Day can claim
 
 To receive a Cohort NFT, you must submit and present your strategy at your cohort's Demo Day.
 
-**Cohort MVS (1/1)**
+**Cohort MVP NFT (1/1)**
 
 In addition to the individual NFTs, a special **Most Valuable Strategy NFT** will be awarded to the top strategy as voted by the cohort participants. This unique NFT recognizes the standout project of the cohort, highlighting the exceptional skills and innovation of its creator.
 
@@ -71,9 +71,9 @@ In addition to the individual NFTs, a special **Most Valuable Strategy NFT** wil
 
 Achieving certification through our program offers numerous benefits that enhance professional profiles and career opportunities. Here are the key benefits:
 
-### PDF Certificate
+### Certificate
 
-Certified developers receive a PDF certificate, which serves as formal recognition of their skills and achievements. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
+Certified developers receive a uniquely designed certificate, which serves as formal recognition of their skills and achievements as a Hummingbot developer. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
 
 ### Certifications List
 
