@@ -39,10 +39,9 @@ hide:
 
     ---
 
-    Hummingbot is free and publicly available under the Apache 2.0 open source license, so you can use the code however you like!
+    Certification equips you with skills as a Hummingbot developer, empowering you to earn bounties and customize strategies for yourself and others.
 
-    [:octicons-arrow-right-24: How to Fork the Repo](/developers/forking/)
-
+    [:octicons-arrow-right-24: Get Certified](/certification/)
 
 </div>
 

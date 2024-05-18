@@ -75,17 +75,19 @@ Achieving certification through our program offers numerous benefits that enhanc
 
 ![](sample-certification.png)
 
-Certified developers receive a certificate serves as formal recognition of their skills and achievements as a Hummingbot developer. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
+Certified developers receive a certificate that serves as formal recognition of their skills and achievements as a Hummingbot developer. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
 
 ### Certifications List
 
 We maintain a [master list](list.md) of certified developers and information about their certifications on our website.
 
-### LinkedIn Badge
+### LinkedIn Certification
 
 ![](badge.png)
 
-Certified developers may add a badge to their LinkedIn profile, indicating to potential employers and professional connections that they have met the rigorous standards of our certification process.
+Certified developers may add an entry similar to the one above to the **Licenses & certifications** section of their LinkedIn profile, indicating to potential employers and professional connections that they have met the rigorous standards of our certification process.
+
+For more information about how to add this certification to your LinkedIn profile, see [the help article](https://www.linkedin.com/help/linkedin/answer/a567169) or [this walkthrough](https://www.linkedin.com/pulse/how-add-certification-linkedin-step-by-step-maia-digital-ltd/).
 
 ### Discord Badge
 
