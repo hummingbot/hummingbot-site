@@ -73,7 +73,9 @@ Achieving certification through our program offers numerous benefits that enhanc
 
 ### Certificate
 
-Certified developers receive a uniquely designed certificate, which serves as formal recognition of their skills and achievements as a Hummingbot developer. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
+![](sample-certification.png)
+
+Certified developers receive a certificate serves as formal recognition of their skills and achievements as a Hummingbot developer. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
 
 ### Certifications List
 
