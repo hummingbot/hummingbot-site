@@ -6,47 +6,35 @@ Welcome to the official website and documentation for Hummingbot and the Humming
 
 This documentation site uses [MkDocs](https://www.mkdocs.org/) documentation-focused static site engine, along with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, of which Hummingbot is a proud sponsor.
 
-The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of MkDocs-Material, which features experimental features like tags and social cards. For site editors, please request access to the CoinAlpha fork of the Insiders repo, so that you can deploy the site in your local development environment and Netlify.
+The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of MkDocs-Material, which features experimental features like tags and social cards. For site editors, please request access to the Hummingbot fork of the Insiders repo, so that you can deploy the site in your local development environment and Netlify.
 
-Create new `hummingbot-site` conda environment:
+### 1. Clone Repository and Navigate to Directory:
 ```
-conda create -n hummingbot-site
+git clone https://github.com/hummingbot-site.git
+cd hummingbot-site
 ```
 
-Activate new environment:
+### 2. Create Conda Environment and Install Dependencies:
+```
+make env_create
+```
+
+### 3. Activate the Isolated 'conda' Environment:
 ```
 conda activate hummingbot-site
 ```
 
-Install `pip`:
-
+### 4. Start the Local Docs Server
 ```
-conda install pip
-```
-
-Install dependencies:
-```bash
-pip install git+ssh://git@github.com/hummingbot/mkdocs-material-insiders  # fetch via SSH
-# pip install git+https://github.com/hummingbot/mkdocs-material-insiders.git  # fetch via SSH
-pip install mkdocs-git-revision-date-localized-plugin
-pip install pillow cairosvg
-pip install mkdocs-table-reader-plugin
+make run
 ```
 
-Run site locally at http://localhost:8000:
-```
-mkdocs serve
-```
-
-Build site:
-```
-mkdocs build
-```
+Now, the docs should be accessible locally at http://localhost:8000:
 
 
 ## Troubleshooting
 
-If you get this error, it means that the `cairosvg` package was installed, but the underlying `cairocffi` dependency couldn't find the installed library. 
+If you get the error below, it means that the `cairosvg` package was installed, but the underlying `cairocffi` dependency couldn't find the installed library. 
 
 ```
 no library called "cairo-2" was found
