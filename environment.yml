@@ -5,6 +5,8 @@ dependencies:
   # - mkdocs-material
   - pillow
   - cairosvg
+  - mkdocs-git-revision-date-localized-plugin
+  - mkdocs-table-reader-plugin
   - pip
   - pip:
     - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
