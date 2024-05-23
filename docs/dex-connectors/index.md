@@ -50,7 +50,6 @@ Here are the current DEX connectors in the codebase:
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway |
 | [Perpetual Protocol](../exchanges/perp.md) | AMM | Gateway |
 | [Quickswap](../exchanges/quickswap.md) | AMM | Gateway |
-| [Quipuswap](../exchanges/quipuswap.md) | AMM | Gateway
 | [Ref Finance](../exchanges/ref.md) | AMM | Gateway |
 | [Sushiswap](../exchanges/sushiswap.md) | AMM | Gateway |
 | [Tinyman](../exchanges/tinyman.md) | AMM | Gateway |
