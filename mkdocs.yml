@@ -301,7 +301,6 @@ nav:
         - Perpetual Protocol: exchanges/perp.md
         - Plenty: exchanges/plenty.md
         - Quickswap: exchanges/quickswap.md
-        - Quipuswap: exchanges/quipuswap.md
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
         - Tinyman: exchanges/tinyman.md
@@ -354,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 1.28.0: release-notes/1.28.0.md
     - 1.27.0: release-notes/1.27.0.md
     - 1.26.0: release-notes/1.26.0.md
     - 1.25.0: release-notes/1.25.0.md

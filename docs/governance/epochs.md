@@ -2,6 +2,62 @@ The Hummingbot Foundation is an experiment in creating a self-sustainable open s
 
 We iterate to improve upon this distribution process via **Epochs**. Each Epoch is a quarterly period that are basically long agile sprints, after which the Foundation and the community may propose changes for the next Epoch.
 
+## Epoch 8 (Q2 2024)
+
+**Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)
+
+Starting after epoch 7, Polls divide a fixed pool of HBOT between the connectors based on their pro-rata voting share. The Foundation assigns maintenance bounties to community developers for each connector using these amounts.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange and chain.
+
+### CEX Connectors
+
+**Poll**: [HGP-55](https://snapshot.org/#/hbot.eth/proposal/0x0febdd2d5e2a52c18c9990b803e314f3f8f3f6e01702936c422b03e2430ed2a0)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | OKX             | 402,145             |
+| 2    | Binance         | 219,839             |
+| 3    | Coinbase        | 214,477             |
+| 4    | Kraken          | 163,539             |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | OKX, Binance, Kraken, Coinbase, Kucoin, AscendEx, Bybit, Bitmart, Gate.io, Bitrue, MEXC, Phemex, Foxbit, Huobi, Bit.com, BTC Markets, NDAX, Bitfinex, Bitget, HitBTC |
+| ❌ | |
+
+### DEX Connectors
+
+**Poll**: [HGP-56](https://snapshot.org/#/hbot.eth/proposal/0x21a85fbc9297a3d67a31cbed9ce81351bfec7cceae227e1f4e15435b71729819)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | XRP Ledger      | 314,879             |
+| 2    | Uniswap         | 273,356             |
+| 3    | dYdX            | 245,675             |
+| 4    | Hyperliquid     | 166,090              |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | dYdX, Uniswap, XRP Ledger, Hyperliquid, Dexalot, Pancakeswap, Curve, Tinyman, TraderJoe, Polkadex, Vega, Sushiswap, Carbon, Quickswap, Injective Helix, Osmosis, Mad Meerkat, Plenty, Ref, Vertex, VVS, XSwap, Perpetual Protocol, Pangolin, OpenOcean |
+| ❌ | Quipuswap |
+
+### Chain Connectors
+
+**Poll**: [HGP-57](https://snapshot.org/#/hbot.eth/proposal/0x40db2e7c2846b73428a61f5c61cde9b823e2f7a19a1e58a6a1b76d51f55fca54)
+
+| Rank | Chain           | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Ethereum        | 400,000             |
+| 2    | XRP Ledger      | 278,261             |
+| 3    | Polygon         | 100,000             |
+| 4    | Injective       | 130,435             |
+
+| Inclusion Threshold Pass/Fail  | Chain Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Ethereum, XRP Ledger, Polygon, Injective, BNB Chain, Avalanche, Algorand, Cronos, Harmony, XDC Chain, NEAR, Tezos, Kujira, Cosmos, Osmosis  |
+| ❌ | |
+
 ## Epoch 7 (Q4 2023)
 
 **Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)
