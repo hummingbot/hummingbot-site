@@ -23,7 +23,7 @@ Today, Hummingbot is a bazaar-style open source project with many contributors a
 
 Each month, we livestream one or more community calls on our [Discord](https://discord.gg/hummingbot) server. Afterwards, we post recordings on our [YouTube](https://youtube.com/c/hummingbot) channel.
 
-Check out the [Hummingbot Calendar](https://www.notion.so/hummingbot-foundation/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204&pvs=4) for links to these monthly calls and other upcoming events.
+Check out the [Hummingbot Events Calendar](https://lu.ma/u/hummingbot) for links to these monthly calls and other upcoming events.
 
 ## Community Channels
 
@@ -45,7 +45,7 @@ We maintain and keep updated the following boards, sheets and other resources:
 
 * [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet maintained by the Foundation, this shows you the real-time HBOT circulating supply, approved proposals, active bounties, and HBOT distributions.
 
-* [Hummingbot Calendar](https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204): Upcoming release dates, monthly polls, community calls, and other events.
+* [Hummingbot Events Calendar](https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204): Upcoming release dates, monthly polls, community calls, and other events.
 
 * [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1): A public Github board for bug fixes and proposed enhancements with development bounties attached to them.
 
