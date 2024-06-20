@@ -167,7 +167,7 @@ nav:
       - Install from Source:
         - Linux: installation/linux.md
         - MacOS: installation/mac.md
-        - Windows: installation/windows.md
+        - Windows: installation/windows.md      
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
       - Other Repos:
@@ -182,6 +182,7 @@ nav:
           - Building Gateway Connectors: gateway/adding-dex-connectors.md
         - Dashboard: dashboard/index.md
         - Brokers: installation/broker.md
+    - Hummingbot Deploy: installation/hummingbot-deploy/index.md    
     - Using the Client:
       - Using the Client: client/index.md
       - User Interface: client/user-interface.md

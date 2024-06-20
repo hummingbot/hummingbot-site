@@ -1,12 +1,10 @@
 # Dashboard Quickstart using Hummingbot Deploy
 
-## Introduction
+## Welcome to the Hummingbot Dashboard quickstart guide
 
-Welcome to the Hummingbot Dashboard quickstart guide. In this tutorial, we'll guide you through installing the Dashboard, connecting your API keys, creating a strategy config and doing a quick backtest before deploying the bots using Hummingbot Deploy.
+In this tutorial, we'll guide you through installing all the needed services using Hummingbot Deploy, connecting your API keys, creating a strategy config and doing a quick backtest before deploying the bots all from within the **Hummingbot Dashboard**.
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/AbezIhb6iJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- more -->
+**(PLACEHOLDER FOR Dashboard Video)**
 
 ## Prerequisites
 
@@ -27,7 +25,7 @@ bash setup.sh
 It might take a while to load the dashboard for the first time. Once the dashboard is up, open a web browser and navigate to <https://localhost:8501> to view it.
 
 !!! note "Cloud Servers"
-    If you are using a cloud server or VPS just replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow connections to the necessary ports.  
+    If you are using a cloud server or VPS just replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow inbound connections to the necessary ports.  
 
 ## Add Credentials
 
@@ -41,19 +39,23 @@ On the menu on the left click `Credentials` to get to the Credentials page
 
 Let's go over the different sections below: 
 
-
 [![](./credentials-1.png)](./credentials-1.png)
 
-In this section, we will see the list of `accounts` and any API keys already registered to that account. In the screenshot above, we only have one `master_account` created and no credentials added yet. 
+In this section, we will see the list of `accounts` and any API keys already registered to that account. In the screenshot above, we only have one `master_account` created with one exchange API connected for `Kucoin`. 
 
 [![](./credentials-2.png)](./credentials-2.png)
 
-To **create** a new `account`, just enter the name of the account and then click `Create Account`. If you want to delete an account (this includes all API keys associated with it), select the account from the drop down list and click `Delete Account`. If you want to delete a  specific API key connected to an existing account, select the account from the list and then select the API credential and then click `Delete Credential`
+To **create** a new `account`, just enter the name of the account and then click `Create Account`. 
+
+If you want to `delete an account` (this includes all API keys associated with it), select the account from the drop down list and click `Delete Account`. 
+
+If you want to delete a specific API key connected to an existing account, select the account from the list and then select the API credential and then click `Delete Credential`
 
 [![](./credentials-3.png)](./credentials-3.png)
 
 To add API keys to our account, we add them in this section. Select the account we want the API keys to be associated with, select the `Connector` or `Exchange` and then enter the corresponding API keys and then click `Submit Credentials`
 
+If the API keys are valid, you should see them appear in the list under the `Available Accounts and Credentials` section at the top. For example, if you added API keys for Binance Perpetual under the master account you should see `binance_perpetual` listed under `master_account`
 
 ## Portfolio
 
@@ -79,43 +81,87 @@ Before we can deploy bots, we'll have to configure a controller. Under the Confi
 - SuperTrend V1
 - XEMM Controller
 
-Let's use the `PMM Simple` controller for now, 
+Let's use the `PMM Simple` controller for now and go through the different sections below:
 
 [![](./config.png)](./config.png)
 
 [![](./config-1.png)](./config-1.png)
 
+Under `Configurations`, if we uncheck the **"Use Default Configs"** box, this will display a drop down list of configs that we've previously configured. Since we don't have any previous configs, there won't be any in the list. 
+
 [![](./config-2.png)](./config-2.png)
+
+For `General Settings`, we can select the `Connector` or exchange we want to trade on, the `Trading Pair` and `Leverage`. For trading on spot markets we recommend setting `Leverage` to `1`. 
+
+We can also set the `Total amount of quote` which is how much we want to trade with (in USDT), `Position Mode` (ONE-WAY / HEDGE), as well as `Stop Loss Cooldown Time` which is the cool down time in minutes after stop loss is triggered and `Executor Refresh Time` which is your order refresh time.  
 
 [![](./config-3.png)](./config-3.png)
 
+Under `Executors Configuration`, we can set the the spread and amount for both buy and sell orders manually or we can choose from the following distributions:
+
+- GeoCustom
+- Geometric
+- Fibonacci
+- Logarithmic
+- Arithmetic
+- Linear
+
 [![](./config-4.png)](./config-4.png)
+
+For `Risk Management`, you can set your `Stop Loss`, `Take Profit`, `Time Limit`, `Trailing Stop Activation Price`, `Trailing Stop Delta` as well as the `Take Profit Order Type` (LIMIT / MARKET)
 
 [![](./config-5.png)](./config-5.png)
 
+In this section, `Executor Distribution` shows a graphical visualization of the order amount vs spread order distribution for both the buy and sell orders configured under the `Executors Configuration` section. 
+
 [![](./config-6.png)](./config-6.png)
 
+After making changes to the configuration above you can quickly run a backtest to test your strategy config. Just set the `start` and `end` date as well as the `Backtesting Resolution` (candles) and `Trade Cost` (fees) and then click the `Run Backtesting` button to see the results like the one below. 
+
+From here, you can still make changes to the configuration above and continue to run backtesting until you get the results you want. 
+
 [![](./config-7.png)](./config-7.png)
+
+Once you are done making the necessary changes to your strategy and are satisfied with the backtesting results you can give the config a name (or just use the defaults) and then click `Upload` to upload your config and make it available in the `Deploy` page. 
+
+If you make changes later on, the `Config Tag` will be incremented to a higher version so any new changes will always be saved to a config with a newer config tag version. However, if you change the `Config Tag` to a previous version, any new changes you made will overwrite the config for that previous version. 
 
 [![](./config-8.png)](./config-8.png)
 
 
 ## Deploying Bots
 
+After uploading your config, it will become available in the `Deploy V2` page and from here we can deploy bots based on those configs.
+
 [![](./deploy.png)](./deploy.png)
+
+Select the config you want to use from the list of `Available Configurations` and then give the instance a name, select the available Docker image from the drop down list (note you can use your own Docker image) and select the account that contains the API keys you want to use. 
+
+Once ready, click the `Launch Bot` button and this will create your instance with the selected config. You can view the running instance under the `Instances` page. 
+
+If you want to delete an existing config, you can do this by selecting the config then click the `Delete` button to remove the config from the list. 
 
 [![](./deploy-1.png)](./deploy-1.png)
 
 ## Manage Instances
 
+The `Instances` page will show all running instances (active or stopped). This page shows information like `Net PNL`, `Volume Traded`, `Liquidity Placed` etc for each instance. It will also show the current active controllers as well as the current config. 
+
+From here you can also view the `Error Logs` as well as `General Logs` so you can easily monitor the bot status without needing to attach to the instance manually.  
+
 [![](./instances.png)](./instances.png)
 
+To stop a running instance, check the box of the active controller and then click the `Stop` button. This is the recommended way to stop the instance as this will create orders to close the active positions if there are any. 
+
+If you click the `stop` icon in the top right hand corner this will send a stop command to the bot which will then cancel all active orders. 
 
 [![](./instances-1.png)](./instances-1.png)
 
-## Community Pages
+Dashboard appends `hummingbot` + the `current date & time` to the instance name that you specified. You can check the complete name of the bot in the top left hand corner right under `Local Instances`. If you need to manually attach to the Docker container in the terminal this would be the complete name. 
 
-## Conclusion and Next Steps
+In the above screenshot, the complete instance name is `hummingbot-new-bot-2024.06.20_03.55` so if we need to attach to this container using Docker we would open a terminal and do `docker attach hummingbot-new-bot-2024.06.20_03.55`
+
+Congratulations, you just created your first instance using the Hummingbot Dashboard!
 
 
 
