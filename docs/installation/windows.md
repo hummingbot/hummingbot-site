@@ -6,11 +6,6 @@ Watch the video:
 
 ## Prerequisites
 
-Supported versions:
-
-* Windows 10 or later
-* WSL 2
-
 ### Windows Subsystem for Linux 2 (WSL 2)
 
 Hummingbot is designed for Unix-based environment such as macOS or Linux, so Windows users should first install [Windows Subsystem for Linux 2 (WSL 2)](https://learn.microsoft.com/en-us/windows/wsl/install) before installing Hummingbot from source.
@@ -62,8 +57,42 @@ conda activate hummingbot
 
 ## Launch Hummingbot
 
+From inside the conda environment, run the following command to launch Hummingbot:
 ```
 ./start
 ```
 
+You should see the Hummingbot welcome screen:
 
+![welcome screen](/assets/img/welcome.png)
+
+To get started with Hummingbot, check out the following docs:
+
+* [Post Installation](post-installation.md)
+* [Basic Features](../client/)
+* [Quickstart Guide](../academy-content/posts/docker-installation-guide/0-index.md)
+* [Hummingbot FAQ](../faq.md)
+
+If you need to run DEX bots, install [Hummingbot Gateway](../gateway/index.md).
+
+## Other Useful Commands
+
+### Update Hummingbot to latest `master` release
+```
+git pull origin master
+```
+
+### Update Hummingbot to `development` branch
+```
+git pull origin development
+```
+
+### Removed compiled files
+```
+./clean
+```
+
+### Remove hummingbot conda environment
+```
+./uninstall
+```

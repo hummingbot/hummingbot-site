@@ -21,6 +21,7 @@ This guide shows you the basics of how to use the new Hummingbot Dashboard appli
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/a-kenMqRB00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!-- more -->
 
 ## What You Will Learn
 
