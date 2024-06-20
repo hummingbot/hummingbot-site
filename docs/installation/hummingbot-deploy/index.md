@@ -1,13 +1,3 @@
----
-date: 2024-06-20
-authors:
-  - foundation
-categories:
-  - Quickstart Guides
-tags:
-  - Quickstart - Using Hummingbot Deploy
----
-
 # Dashboard Quickstart using Hummingbot Deploy
 
 ## Introduction
@@ -16,11 +6,13 @@ Welcome to the Hummingbot Dashboard quickstart guide. In this tutorial, we'll gu
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/AbezIhb6iJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!-- more -->
+
 ## Prerequisites
 
 ### Docker Compose
 
-Before we can proceed, we need to make sure Docker is installed first. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as this already includes `Docker Compose` along with `Docker Engine` and `Docker CLI` all of which we will need for Dashboard to work.
+Before we can proceed, we need to make sure Docker is installed first. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as this already includes `Docker Compose` along with `Docker Engine` and `Docker CLI` all of which is needed for Dashboard to work.
 
 ## Installation
 
@@ -56,7 +48,7 @@ In this section, we will see the list of `accounts` and any API keys already reg
 
 [![](./credentials-2.png)](./credentials-2.png)
 
-In this section, we can `create` a new "account", delete any already existing accounts or delete an API key (credential) connected to an existing account. 
+To **create** a new `account`, just enter the name of the account and then click `Create Account`. If you want to delete an account (this includes all API keys associated with it), select the account from the drop down list and click `Delete Account`. If you want to delete a  specific API key connected to an existing account, select the account from the list and then select the API credential and then click `Delete Credential`
 
 [![](./credentials-3.png)](./credentials-3.png)
 
@@ -65,9 +57,13 @@ To add API keys to our account, we add them in this section. Select the account 
 
 ## Portfolio
 
+Once API keys are added you can view the tokens available and their allocation under the Portfolio page. You can filter out per account, exchange or token to give you more detail. 
+
 [![](./portfolio.png)](./portfolio.png)
 
 [![](./portfolio-1.png)](./portfolio-1.png)
+
+The table above shows the list of available tokens for the `Kucoin` exchange. The graphs below will show your `Portfoliio Evolution over Time` as well as `Token Value Evolution over time`
 
 [![](./portfolio-2.png)](./portfolio-2.png)
 
