@@ -2,7 +2,7 @@
 
 ## Welcome to the Hummingbot Dashboard quickstart guide
 
-In this tutorial, we'll guide you through installing all the needed services using Hummingbot Deploy, connecting your API keys, creating a strategy config and doing a quick backtest before deploying the bots all from within the **Hummingbot Dashboard**.
+In this tutorial, we'll guide you through installing all the necessary services using Hummingbot Deploy, connecting your API keys, creating a strategy configuration, and conducting a quick backtest before deploying the bots, all from within the Hummingbot Dashboard
 
 **(PLACEHOLDER FOR Dashboard Video)**
 
@@ -10,11 +10,11 @@ In this tutorial, we'll guide you through installing all the needed services usi
 
 ### Docker Compose
 
-Before we can proceed, we need to make sure Docker is installed first. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as this already includes `Docker Compose` along with `Docker Engine` and `Docker CLI` all of which is needed for Dashboard to work.
+Before proceeding, ensure Docker is installed. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as it includes `Docker Compose`, `Docker Engine`, and `Docker CLI`, all of which are needed for the Dashboard to work
 
 ## Installation
 
-To install Dashboard, we need to clone the `Hummingbot Deploy` repository which already contains the Compose file as well as the bash script which will automatically pull the latest images and start the necessary services / containers. Open a terminal and run the following commands:
+To install the Dashboard, clone the Hummingbot Deploy repository, which contains the Compose file and a bash script that automatically pulls the latest images and starts the necessary services/containers. Open a terminal and run the following commands:
 
 ```
 git clone https://github.com/hummingbot/hummingbot-deploy
@@ -25,13 +25,13 @@ bash setup.sh
 It might take a while to load the dashboard for the first time. Once the dashboard is up, open a web browser and navigate to <https://localhost:8501> to view it.
 
 !!! note "Cloud Servers"
-    If you are using a cloud server or VPS just replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow inbound connections to the necessary ports.  
+    If you are using a cloud server or VPS, replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow inbound connections to the necessary ports.  
 
 ## Add Credentials
 
-Credentials are your API keys which are needed for Hummingbot to be able to trade on an exchange. The Dashboard allows you to create and manage API keys under multiple accounts which are useful if you use multiple sub-accounts on an exchange - for example Kucoin. 
+Credentials are your API keys needed for Hummingbot to trade on an exchange. The Dashboard allows you to create and manage API keys under multiple accounts, which is useful if you use multiple sub-accounts on an exchange, for example, Kucoin.
 
-Let's say you have 3 Kucoin accounts and want the ability to switch between them when creating bots. The credentials page will allow you to do this since you have the option to select what account to use when deploying bots. 
+Let's say you have three Kucoin accounts and want the ability to switch between them when creating bots. The credentials page will allow you to do this since you can select which account to use when deploying bots.
 
 On the menu on the left click `Credentials` to get to the Credentials page
 
@@ -47,19 +47,19 @@ In this section, we will see the list of `accounts` and any API keys already reg
 
 To **create** a new `account`, just enter the name of the account and then click `Create Account`. 
 
-If you want to `delete an account` (this includes all API keys associated with it), select the account from the drop down list and click `Delete Account`. 
+If you want to `delete an account` (this includes all API keys associated with it), select the account from the drop-down list and then click `Delete Account`. 
 
 If you want to delete a specific API key connected to an existing account, select the account from the list and then select the API credential and then click `Delete Credential`
 
 [![](./credentials-3.png)](./credentials-3.png)
 
-To add API keys to our account, we add them in this section. Select the account we want the API keys to be associated with, select the `Connector` or `Exchange` and then enter the corresponding API keys and then click `Submit Credentials`
+To add API keys to our account, use this section. Select the account you want the API keys to be associated with, select the `Connector` or `Exchange`, enter the corresponding API keys, and then click `Submit Credentials`.
 
 If the API keys are valid, you should see them appear in the list under the `Available Accounts and Credentials` section at the top. For example, if you added API keys for Binance Perpetual under the master account you should see `binance_perpetual` listed under `master_account`
 
 ## Portfolio
 
-Once API keys are added you can view the tokens available and their allocation under the Portfolio page. You can filter out per account, exchange or token to give you more detail. 
+Once API keys are added, you can view the tokens available and their allocation under the Portfolio page. You can filter by account, exchange, or token to get more details. 
 
 [![](./portfolio.png)](./portfolio.png)
 
@@ -124,7 +124,7 @@ From here, you can still make changes to the configuration above and continue to
 
 Once you are done making the necessary changes to your strategy and are satisfied with the backtesting results you can give the config a name (or just use the defaults) and then click `Upload` to upload your config and make it available in the `Deploy` page. 
 
-If you make changes later on, the `Config Tag` will be incremented to a higher version so any new changes will always be saved to a config with a newer config tag version. However, if you change the `Config Tag` to a previous version, any new changes you made will overwrite the config for that previous version. 
+If you make changes later, the `Config Tag` will be incremented to a higher version, so any new changes will always be saved to a config with a newer config tag version. However, if you change the `Config Tag` to a previous version, any new changes you made will overwrite the config for that previous version.
 
 [![](./config-8.png)](./config-8.png)
 
@@ -162,7 +162,4 @@ Dashboard appends `hummingbot` + the `current date & time` to the instance name 
 In the above screenshot, the complete instance name is `hummingbot-new-bot-2024.06.20_03.55` so if we need to attach to this container using Docker we would open a terminal and do `docker attach hummingbot-new-bot-2024.06.20_03.55`
 
 Congratulations, you just created your first instance using the Hummingbot Dashboard!
-
-
-
 
