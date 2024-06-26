@@ -17,7 +17,7 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for defining and running multi-container Docker applications. [Docker Desktop](https://www.docker.com/products/docker-desktop/) already includes Docker Compose along with Docker Engine and Docker CLI, which are Compose prerequisites.
 
 !!! note "For Windows users"
-    To install Docker on Windows, [Windows Subsystem for Linux 2](https://learn.microsoft.com/en-us/windows/wsl/about) is needed. Follow [this link](https://learn.microsoft.com/en-us/windows/wsl/install) to install WSL2 on your Windows system. 
+    To install Hummingbot on Windows, you need to have Docker Desktop installed, set up Windows Subsystem for Linux 2 (WSL2), and install a Linux distribution like Ubuntu. Make sure to run the commands listed below from within an Ubuntu terminal and not from the Windows Command Prompt or PowerShell.
 
 
 ## Installation Process
