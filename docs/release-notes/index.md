@@ -1,5 +1,14 @@
 We generally release a new version of Hummingbot **every month**. See below for information about each release.
 
+## [2.00.0](./2.00.0/)
+
+*Released June 27, 2024*
+
+**Hummingbot**
+
+* Github: [`v2.00.0`](https://github.com/hummingbot/hummingbot/releases/tag/v2.00.0)
+* DockerHub: [`version-2.00.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-2.00.0) 
+
 ## [1.28.0](./1.28.0/)
 
 *Released May 27, 2024*

@@ -288,6 +288,7 @@ nav:
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
         - dYdX: exchanges/dydx.md
+        - Balancer: exchanges/balancer.md
         - Dexalot: exchanges/dexalot.md
         - Polkadex: exchanges/polkadex.md
         - Injective Helix: exchanges/injective.md
@@ -354,6 +355,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.00.0: release-notes/2.00.0.md
     - 1.28.0: release-notes/1.28.0.md
     - 1.27.0: release-notes/1.27.0.md
     - 1.26.0: release-notes/1.26.0.md

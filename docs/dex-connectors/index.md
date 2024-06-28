@@ -42,6 +42,7 @@ Here are the current DEX connectors in the codebase:
 | [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway | [Guide](/academy-content/using-dexalot-with-hummingbot)
 | [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |
 | [Curve](../exchanges/curve.md) | AMM | Gateway |
+| [Balancer](../exchanges/balancer.md) | AMM | Gateway |
 | [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |
 | [OpenOcean](../exchanges/openocean.md) | AMM | Gateway |
 | [Osmosis](../exchanges/osmosis.md) | AMM | Gateway | [Guide](/academy-content/using-osmosis-with-hummingbot)
