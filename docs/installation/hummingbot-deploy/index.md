@@ -17,8 +17,8 @@ Before proceeding, ensure Docker is installed. We recommend installing [Docker D
 To install the Dashboard, clone the Hummingbot Deploy repository, which contains the Compose file and a bash script that automatically pulls the latest images and starts the necessary services/containers. Open a terminal and run the following commands:
 
 ```
-git clone https://github.com/hummingbot/hummingbot-deploy
-cd hummingbot-deploy
+git clone https://github.com/hummingbot/deploy
+cd deploy
 bash setup.sh
 ```
 
