@@ -4,7 +4,7 @@
 
 In this tutorial, we'll guide you through installing all the necessary services using Hummingbot Deploy, connecting your API keys, creating a strategy configuration, and conducting a quick backtest before deploying the bots, all from within the Hummingbot Dashboard
 
-**(PLACEHOLDER FOR Dashboard Video)**
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/7eHiMPRBQLQ?si=S500sdA9ImhLxHhu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisites
 
