@@ -1,39 +1,52 @@
-# Dashboard Quickstart using Hummingbot Deploy
+## The new Hummingbot GUI
 
-## Welcome to the Hummingbot Dashboard quickstart guide
+In this tutorial, we'll guide you through installing Hummingbot 2.0, which provide an easy-to-use Dashboard app that helps you connect exchange credentials, create/backtest a strategy configuration, and deploy a fleet of bots!
 
-In this tutorial, we'll guide you through installing all the necessary services using Hummingbot Deploy, connecting your API keys, creating a strategy configuration, and conducting a quick backtest before deploying the bots, all from within the Hummingbot Dashboard
+Watch this video for an overview and walkthrough of the features in Hummingbot 2.0:
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/7eHiMPRBQLQ?si=S500sdA9ImhLxHhu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Prerequisites
+## Prerequisits: Docker
 
-### Docker Compose
-
-Before proceeding, ensure Docker is installed. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as it includes `Docker Compose`, `Docker Engine`, and `Docker CLI`, all of which are needed for the Dashboard to work
+Hummingbot 2.0 uses Docker Compose to install and manage dependencies. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as it includes `Docker Compose`, `Docker Engine`, and `Docker CLI`, all of which are needed for the Dashboard to work.
 
 ## Installation
 
-To install the Dashboard, clone the Hummingbot Deploy repository, which contains the Compose file and a bash script that automatically pulls the latest images and starts the necessary services/containers. Open a terminal and run the following commands:
+Clone the [Deploy repository](https://github.com/hummingbot/deploy), which contains the Docker Compose configuration file and a bash script that automatically pulls the latest images and starts the necessary services. 
 
-```
+Open a Terminal window and run the following commands:
+
+```bash
 git clone https://github.com/hummingbot/deploy
 cd deploy
 bash setup.sh
 ```
 
-It might take a while to load the dashboard for the first time. Once the dashboard is up, open a web browser and navigate to <https://localhost:8501> to view it.
+The setup script will pull the Docker images defined in repo's `docker-compose.yml` file and start them as new containers. It might take a while to pull the images for the first time.
+
+```bash
+[+] Running 7/7
+ ✔ Network deploy_emqx-bridge   Created
+ ✔ Volume "deploy_emqx-data"    Created
+ ✔ Volume "deploy_emqx-log"     Created
+ ✔ Volume "deploy_emqx-etc"     Created
+ ✔ Container dashboard          Started 
+ ✔ Container backend-api        Started 
+ ✔ Container hummingbot-broker  Started 
+```
+
+After all containers have started, access the Dashboard at <http://localhost:8501> in your browser.
 
 !!! note "Cloud Servers"
     If you are using a cloud server or VPS, replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow inbound connections to the necessary ports.  
 
-## Add Credentials
+## Adding Credentials
 
-Credentials are your API keys needed for Hummingbot to trade on an exchange. The Dashboard allows you to create and manage API keys under multiple accounts, which is useful if you use multiple sub-accounts on an exchange, for example, Kucoin.
+Credentials are your API keys needed for Hummingbot to trade on an exchange. The Dashboard allows you to create and manage API keys under multiple accounts, which is useful if you use multiple sub-accounts on a single exchange.
 
-Let's say you have three Kucoin accounts and want the ability to switch between them when creating bots. The credentials page will allow you to do this since you can select which account to use when deploying bots.
+Let's say you have three Kucoin accounts and want the ability to switch between them when creating bots. The Credentials page will allow you to do this since you can select which account to use when deploying bots.
 
-On the menu on the left click `Credentials` to get to the Credentials page
+On the menu on the left click `Credentials` to get to the Credentials page:
 
 [![](./credentials.png)](./credentials.png)
 
@@ -57,7 +70,7 @@ To add API keys to our account, use this section. Select the account you want th
 
 If the API keys are valid, you should see them appear in the list under the `Available Accounts and Credentials` section at the top. For example, if you added API keys for Binance Perpetual under the master account you should see `binance_perpetual` listed under `master_account`
 
-## Portfolio
+## Viewing Your Portfolio
 
 Once API keys are added, you can view the tokens available and their allocation under the Portfolio page. You can filter by account, exchange, or token to get more details. 
 
@@ -69,9 +82,9 @@ The table above shows the list of available tokens for the `Kucoin` exchange. Th
 
 [![](./portfolio-2.png)](./portfolio-2.png)
 
-## Generate Configs + Backtest
+## Configuring Strategies
 
-Before we can deploy bots, we'll have to configure a controller. Under the Config Generator section we have the following available controllers:
+Before we can deploy bots, we'll have to configure a Controller, which defines an algo trading strategy. Under the Config Generator section we have the following available controllers:
 
 - PMM Simple 
 - PMM Dynamic
@@ -116,7 +129,9 @@ In this section, `Executor Distribution` shows a graphical visualization of the 
 
 [![](./config-6.png)](./config-6.png)
 
-After making changes to the configuration above you can quickly run a backtest to test your strategy config. Just set the `start` and `end` date as well as the `Backtesting Resolution` (candles) and `Trade Cost` (fees) and then click the `Run Backtesting` button to see the results like the one below. 
+## Backtesting Strategies
+
+After making changes to the configuration above you can run a backtest to test your strategy configuration. Just set the `start` and `end` date as well as the `Backtesting Resolution` (candles) and `Trade Cost` (fees) and then click the `Run Backtesting` button to see the results like the one below. 
 
 From here, you can still make changes to the configuration above and continue to run backtesting until you get the results you want. 
 
@@ -129,7 +144,7 @@ If you make changes later, the `Config Tag` will be incremented to a higher vers
 [![](./config-8.png)](./config-8.png)
 
 
-## Deploying Bots
+## Deploying Instances
 
 After uploading your config, it will become available in the `Deploy V2` page and from here we can deploy bots based on those configs.
 
@@ -143,7 +158,7 @@ If you want to delete an existing config, you can do this by selecting the confi
 
 [![](./deploy-1.png)](./deploy-1.png)
 
-## Manage Instances
+## Managing Instances
 
 The `Instances` page will show all running instances (active or stopped). This page shows information like `Net PNL`, `Volume Traded`, `Liquidity Placed` etc for each instance. It will also show the current active controllers as well as the current config. 
 

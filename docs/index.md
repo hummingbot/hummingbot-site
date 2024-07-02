@@ -7,6 +7,18 @@ hide:
   - feedback
 ---
 
+# Install Hummingbot 2.0!
+
+  ```bash
+  git clone https://github.com/hummingbot/deploy.git
+  cd deploy
+  bash setup.sh
+  ```
+
+After all Docker containers have started, access the Dashboard at <http://localhost:8501> in your browser.
+
+---
+
 # What can you do with Hummingbot?
 
 <div class="grid cards wide" markdown>

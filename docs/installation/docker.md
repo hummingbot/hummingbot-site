@@ -20,7 +20,34 @@ Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for d
     To install Hummingbot on Windows, you need to have Docker Desktop installed, set up Windows Subsystem for Linux 2 (WSL2), and install a Linux distribution like Ubuntu. Make sure to run the commands listed below from within an Ubuntu terminal and not from the Windows Command Prompt or PowerShell.
 
 
-## Installation Process
+## Installation (Hummingbot 2.0)
+
+Starting with [Hummingbot release 2.0](/release-notes/2.0.0), the new [Deploy repo](https://github.com/hummingbot/deploy) helps you launch Dashboard and Backend-API to make creating and launching bots easier.
+
+```bash
+git clone https://github.com/hummingbot/deploy.git
+cd deploy
+bash setup.sh
+```
+
+The setup script will pull the Docker images defined in repo's `docker-compose.yml` file and start them as new containers:
+
+```bash
+[+] Running 7/7
+ ✔ Network deploy_emqx-bridge   Created
+ ✔ Volume "deploy_emqx-data"    Created
+ ✔ Volume "deploy_emqx-log"     Created
+ ✔ Volume "deploy_emqx-etc"     Created
+ ✔ Container dashboard          Started 
+ ✔ Container backend-api        Started 
+ ✔ Container hummingbot-broker  Started 
+```
+
+After all containers have started, access the Dashboard at <http://localhost:8501> in your browser.
+
+## Installation (Client Only)
+
+These instructions help you launch the standalone Hummingbot client.
 
 ### Clone Repo
 
@@ -30,6 +57,9 @@ Open a terminal and run the following commands to clone the Hummingbot Github re
   git clone https://github.com/hummingbot/hummingbot.git
   cd hummingbot
 ```
+gh repo clone hummingbot/deploy
+
+After all Docker containers have started, access the Dashboard at http://localhost:8501 in your browser.
 
 ### Launch Hummingbot Container
 

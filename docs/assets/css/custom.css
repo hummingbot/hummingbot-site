@@ -84,6 +84,12 @@
   border-color: var(--md-accent-fg-color);
 }
 
+/* typewriter */
+
+#typewriter {
+  color: var(--md-accent-fg-color);
+}
+
 /* header font */
 
 .md-header__topic:first-child {

@@ -1,6 +1,6 @@
 We generally release a new version of Hummingbot **every month**. See below for information about each release.
 
-## [2.00.0](./2.00.0/)
+## [2.0.0](./2.0.0/)
 
 *Released June 27, 2024*
 
