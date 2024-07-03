@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Hummingbot - the open source OS for crypto algo traders
+title: Hummingbot - the open source, community-owned framework for crypto market makers
 hide:
   - toc
   - navigation
