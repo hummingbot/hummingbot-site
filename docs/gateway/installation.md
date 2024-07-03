@@ -1,10 +1,13 @@
 The official Github repository for Gateway is <https://github.com/hummingbot/gateway>. Gateway is released monthly  with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
 
-## Install with Docker
+## Install with Docker 
 
-For most users, we recommend installing Hummingbot and Gateway using [Docker](/installation/docker/).
+For most users, this is the recommended install method for Hummingbot and Gateway
 
-Navigate to the hummingbot root folder in your terminal of if you haven't cloned the Hummingbot repo yet run the command below
+[![](./gateway.gif)](./gateway.gif)
+
+
+Navigate to the Hummingbot root folder in your terminal of if you haven't cloned the Hummingbot repo yet run the command below
 
 ```bash
 git clone https://github.com/hummingbot/hummingbot
@@ -13,7 +16,7 @@ cd hummingbot
 
 Modify [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) in the root folder using a text editor or IDE like [VSCode](https://code.visualstudio.com/).
 
-Uncomment the Gateway-related lines, except for the `environment` section:
+Uncomment the Gateway-related lines as shown below
 ```yaml
   gateway:
     container_name: "gateway"
@@ -25,28 +28,22 @@ Uncomment the Gateway-related lines, except for the `environment` section:
       - "./gateway_files/conf:/usr/src/app/conf"
       - "./gateway_files/logs:/usr/src/app/logs"
       - "./hummingbot_files/certs:/home/gateway/certs"
-  #  environment:
-  #    - GATEWAY_PASSPHRASE=a
+    environment:
+      - GATEWAY_PASSPHRASE=a
 ```
 
 ### Start instance 
 
-From the hummingbot root folder, run the following command in a terminal to pull the image and start the instance:
+From the Hummingbot root folder, run the following command in a terminal to start the instances and attach to it:
 
 ```
 docker compose up -d
+docker attach hummingbot
 ```
 
 ### Generate certs
 
-
-Attach to the `hummingbot` instance. 
-
-```
-docker attach hummingbot
-```
-
-Once Hummingbot starts up, run the following command within the Hummingbot terminal to generate the Gateway certificates:
+Once attached to Hummingbot, run the following command within the Hummingbot terminal to generate the Gateway certificates:
 
 ```
 gateway generate-certs
@@ -57,6 +54,12 @@ gateway generate-certs
 You'll be prompted to add a passphrase to encrypt the gateway certificates. This can be different from your Hummingbot login password. Take note of this gateway passphrase.
 
 Afterwards, run `exit` to exit Hummingbot.
+
+Back in the terminal, use the following command to stop and exit out of all containers:
+
+```
+docker compose down
+```
 
 ### Add passphrase to YAML file
 
@@ -83,13 +86,15 @@ You should now see `GATEWAY:ONLINE` in the upper-right hand corner.
 
 After Gateway is running, see [Testing](testing.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
 
-### Seeing Gateway logs
+### Check Gateway logs
 
-To attach to the `gateway` instance to see its logs, run:
+To see the logs from the `gateway` instance, run:
 
 ```
-docker attach gateway
+docker logs gateway
 ```
+
+---
 
 ## Install from Source
 
@@ -143,14 +148,12 @@ The `gateway-setup` script, located in the root Gateway directory, performs the 
 * Copies the default Gateway configuration files from `/src/templates` to `/conf/` folder
 * Copies the Hummingbot certificates into the `/certs/` folder.
 
-Enable permissions on setup script:
+Enable permissions and run setup script:
+
 ```
 chmod a+x gateway-setup.sh
-```
-
-Run setup script:
-```
 ./gateway-setup.sh
+
 ```
 
 When prompted, enter **certs_path** from the prior step:

@@ -109,14 +109,12 @@ extra:
 
 extra_css:
   - assets/css/custom.css
-  - assets/css/glide.core.css
-  - assets/css/glide.theme.css
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js
   - assets/js/mathjax.js
-  - assets/js/glide.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/typewriter.js
+  - https://unpkg.com/typewriter-effect@latest/dist/core.js
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -163,11 +161,12 @@ nav:
   - Docs:
     - Docs: docs/index.md
     - Installation:
+      - Hummingbot 2.0 Quickstart: installation/hummingbot-deploy/quickstart.md
       - Install via Docker: installation/docker.md
       - Install from Source:
         - Linux: installation/linux.md
         - MacOS: installation/mac.md
-        - Windows: installation/windows.md
+        - Windows: installation/windows.md      
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
       - Other Repos:
@@ -287,6 +286,7 @@ nav:
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
         - dYdX: exchanges/dydx.md
+        - Balancer: exchanges/balancer.md
         - Dexalot: exchanges/dexalot.md
         - Polkadex: exchanges/polkadex.md
         - Injective Helix: exchanges/injective.md
@@ -353,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.0.0: release-notes/2.0.0.md
     - 1.28.0: release-notes/1.28.0.md
     - 1.27.0: release-notes/1.27.0.md
     - 1.26.0: release-notes/1.26.0.md

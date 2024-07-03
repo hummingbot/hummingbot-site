@@ -2,12 +2,16 @@ The instructions below help you install a standalone Hummingbot instance from so
 
 ## Prerequisites
 
-* Ubuntu 20.04 / Ubuntu 22.04 (recommended)
-* Debian 10 / 11
-* Memory: 4 GB RAM per instance
-* Storage: 3 GB HDD space per instance
+### Cloud server or local machine
 
-### build-essentials
+| **Component**      | **Specification**                                     |
+|--------------------|-------------------------------------------------------|
+| **Operating System** | Linux x64 or ARM (Ubuntu 20.04+, Debian 10+)                   | 
+| **Memory**           | 4 GB RAM per instance                                 |
+| **Storage**          | 5 GB HDD space per instance                           |
+| **CPU**              | at least 1 vCPU per instance / controller             |
+
+### Update Dependencies
 
 On new Ubuntu instances, you may need to install the `build-essentials` package:
 
@@ -17,20 +21,16 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
 
 ### Miniconda / Anaconda
 
-Hummingbot requires Python 3 and other libraries. To manage these dependencies, Hummingbot uses `conda`, an open source environment manager for Python. You can install `conda` using either Miniconda or Anaconda. 
+Hummingbot uses `conda`, an open source environment manager to manage dependencies for Python. You can install `conda` using either [Miniconda](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links) or [Anaconda](https://www.anaconda.com/download/). 
 
 Download the installer for your environment and run it:
 
-* [Miniconda installer for Linux](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links)
-* [Anaconda installer for Linux](https://www.anaconda.com/download/)
-
-For example:
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.
+Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. 
 
 To make the changes take effect, close and then re-open your terminal window.
 

@@ -1,10 +1,22 @@
 ---
 template: home.html
-title: Hummingbot - the open source OS for crypto algo traders
+title: Hummingbot - the open source framework for crypto market makers
 hide:
   - toc
   - navigation
   - feedback
+---
+
+# Install Hummingbot 2.0!
+
+  ```bash
+  git clone https://github.com/hummingbot/deploy.git
+  cd deploy
+  bash setup.sh
+  ```
+
+After all Docker containers have started, access the Dashboard at <http://localhost:8501> in your browser.
+
 ---
 
 # What can you do with Hummingbot?
