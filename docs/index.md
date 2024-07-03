@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Hummingbot - the open source, community-owned framework for crypto market makers
+title: Hummingbot - the open source framework for crypto market makers
 hide:
   - toc
   - navigation
