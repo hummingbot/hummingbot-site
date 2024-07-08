@@ -13,6 +13,6 @@ Other repos include:
 - [__Gateway__](/gateway) API middleware for DEX connectors
 - [__Deploy Examples__](https://github.com/hummingbot/deploy-examples) Advanced Hummingbot Docker configuration for running multiple bots
 - [__Dashboard__](/dashboard) Community-maintained Hummingbot dashboards and apps
-- [__Brokers__](/installation/brokers): Bot orchestration module
+- [__Brokers__](../broker.md): Bot orchestration module
 
 </div>

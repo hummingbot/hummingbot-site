@@ -25,4 +25,4 @@
 
 * <https://goerlifaucet.com>
 * <https://testnetfaucet.io>
-* <https://www.coinbase.com/faucets/ethereum-goerli-faucet>
+

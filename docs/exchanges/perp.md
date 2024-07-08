@@ -44,7 +44,7 @@ The perp connector now uses wallet [pubKey] on ethereum-optimism
 
 - **ID**: `perpetualprotocol`
 - **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.perpetualprotocol-test.com/api>
+- **API Docs**: 
 - **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/perp>
 - **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/perp.yml>
 

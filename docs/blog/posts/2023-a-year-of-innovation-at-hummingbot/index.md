@@ -29,7 +29,7 @@ Key enhancements to connectors in 2023 included:
 
 - **Gold and Silver Connectors Revamp**: We upgraded the Gold and Silver connectors to the latest connector standards
 - **Market Order Support**: We added Market Orders support to Gold and Silver connectors.
-- **New Standard for CLOB DEX Connectors**: We added [Injective Helix](/exchanges/injective/), [Vertex](/exchanges/vertex), and [Hyperliquid](/excahnges/hyperliquid) as Python-based DEX connectors to the Hummingbot client, allowing for enhanced performance and efficiency.
+- **New Standard for CLOB DEX Connectors**: We added [Injective Helix](../../../exchanges/injective.md), Vertex, and [Hyperliquid](../../../exchanges/hyperliquid.md) as Python-based DEX connectors to the Hummingbot client, allowing for enhanced performance and efficiency.
 - ⚠️ **Lending/Staking Support**: However, we deferred supporting staking and withdrawal functionalities in favor of the V2 framework as per community interest.
 
 ## 2. Optimize Hummingbot Codebase
