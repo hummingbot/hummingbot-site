@@ -67,7 +67,7 @@ You should see the Hummingbot welcome screen:
 To get started with Hummingbot, check out the following docs:
 
 * [Post Installation](post-installation.md)
-* [Basic Features](../client/)
+* [Basic Features](../client/index.md)
 * [Quickstart Guide](../academy-content/posts/docker-installation-guide/0-index.md)
 * [Hummingbot FAQ](../faq.md)
 
