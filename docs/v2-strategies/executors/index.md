@@ -1,7 +1,15 @@
 
 ![executors](../diagrams/13.png)
 
-**Executors** in Hummingbot are self-managing components that handle the execution of orders according to predefined conditions set by **Controllers**, which, in turn, utilize data from the **MarketDataProvider** (Candles, Orderbook, Trades). Executors are tasked with managing the state of orders — initiating, refreshing, and canceling orders, as well as halting their own operation when certain conditions are met.
+**Executors** in Hummingbot are self-managing components that handle the execution of orders according to predefined conditions. Executors are tasked with managing the state of orders — initiating, refreshing, and canceling orders, as well as halting their own operation when certain conditions are met.
+
+## Background / Motivation
+
+Before having Executors, you had to build the management of your position into the strategy code. This has two drawbacks: first, it makes that code more complicated as decision logic and managing the execution is mixed, and second, you have to code things like limit exits, trailing stops, etc. over and over again (cannot be reused).
+
+This is where executors come into play. They encapsulate the logic of managing a position a certain way, the most simple one being the [Position Executor](positionexecutor.md), that basically opens a position and adds a take profit (either fixed or trailing) and a stop-loss (price and time-based possible).
+
+That is reusable logic that you never have to code yourself and can purely focus on the signals (so when to enter or exit). Of course, more advanced executors like the [DCA Executor](dcaexecutor.md) offer a lot more than that.
 
 ## **Types of Executors**
 
