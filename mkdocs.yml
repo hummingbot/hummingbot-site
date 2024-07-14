@@ -212,23 +212,24 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
-      - Walkthrough - Script: v2-strategies/walkthrough.md 
-      - Walkthrough - Controller: v2-strategies/walkthrough-controller.md 
       - Architecture: v2-strategies/index.md
       - Scripts:
         - Scripts: scripts/index.md
         - Sample Scripts: scripts/examples.md
         - Scripts Cheatsheat: scripts/cheatsheet.md
-      - Executors: 
-        - Executors: v2-strategies/executors/index.md   
+      - Executors:
+        - Executors: v2-strategies/executors/index.md
         - Position Executor: v2-strategies/executors/positionexecutor.md
         - DCA Executor: v2-strategies/executors/dcaexecutor.md
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
       - Controllers: v2-strategies/controllers/index.md
-      - Market Data Provider: v2-strategies/data/index.md
-      - Candles: v2-strategies/candles/index.md
+      - Market Data Provider:
+        - Market Data Provider: v2-strategies/data/index.md
+        - Candles: v2-strategies/candles/index.md
+      - Walkthrough - Script: v2-strategies/walkthrough.md
+      - Walkthrough - Controller: v2-strategies/walkthrough-controller.md
     - Strategies V1:
       - Strategies V1: v1-strategies/index.md
       - Pure Market Making: strategies/pure-market-making.md
