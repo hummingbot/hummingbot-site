@@ -87,9 +87,9 @@ The osmosis connector now uses wallet [Wallet Public Adress] on osmosis-mainnet
 _Integration to this DEX's swap pricing and execution endpoints_
 
 - **ID**: `osmosis_osmosis_mainnet`
-- **Connection Type**: REST via [Gateway](notion://www.notion.so/gateway)
+- **Connection Type**: REST via Gateway
 - **API Docs**: [https://docs.osmosis.zone/osmosis-core/guides/structure#retrieving-a-block](https://docs.osmosis.zone/osmosis-core/guides/structure#retrieving-a-block)
-- **Folder**: [https://github.com/hummingbot/gateway/tree/main/src/connectors/osmosis](https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswap)
+- **Folder**: https://github.com/hummingbot/gateway/tree/main/src/connectors/osmosis
 - **Default Configs**: [https://github.com/hummingbot/gateway/blob/main/src/templates/osmosis.yml](https://github.com/hummingbot/gateway/blob/main/src/templates/osmosis.yml)
 
 ### Endpoints

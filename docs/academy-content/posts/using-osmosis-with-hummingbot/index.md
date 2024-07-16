@@ -26,8 +26,8 @@ The Cosmos ecosystem is powered by the Inter-Blockchain Communication protocol (
 
 Stay up to date with Osmosis-specific wallet information on the Osmosis website and/or Docs:
 
-- [Osmosis Website - Supported Wallets](https://osmosis.zone/ecosystem)
-- [Osmosis Docs](https://docs.osmosis.zone/https://docs.osmosis.zone/overview/educate/getting-started#set-up-a-wallet)
+- [Osmosis Website - Supported Wallets](https://osmosis.zone/)
+- [Osmosis Docs](https://docs.osmosis.zone/)
 
 #### Leap Wallet (recommended)
 

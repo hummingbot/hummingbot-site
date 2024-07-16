@@ -125,7 +125,7 @@ We appreciate their support and are busy building the data infrastructure to pow
 
 ### Liquidity mining enables crypto to realize its potential
 
-Crypto allows anyone to create an asset that can be traded by anyone in the world. But whether it's a liquid global reserve currency like Libra, synthetic Tesla shares powered by [UMA Protocol](https://umaproject.org/), decentralized sports betting powered by [Augur](https://www.augur.net/), or digital cats and wizards issued by [Dapper Labs](https://www.dapperlabs.com/), these assets are only valuable if they are liquid.
+Crypto allows anyone to create an asset that can be traded by anyone in the world. But whether it's a liquid global reserve currency like Libra, synthetic Tesla shares powered by [UMA Protocol](https://umaproject.org/), decentralized sports betting powered by **Augur**, or digital cats and wizards issued by [Dapper Labs](https://www.dapperlabs.com/), these assets are only valuable if they are liquid.
 
 But until now, the long tail of crypto assets has faced an unfair disadvantage. Due to high costs, traditional market making services have generally been inaccessible to all but the largest, most well-funded projects and exchanges.
 

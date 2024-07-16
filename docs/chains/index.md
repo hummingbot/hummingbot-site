@@ -8,7 +8,7 @@ Each quarter, the [Chain Connector Poll](/governance/polls) allocates HBOT bount
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each chain.
 
-## List of DEX Connectors
+## List of DEX Chain Connectors
 
 Here are the current chain connectors in the codebase:
 
