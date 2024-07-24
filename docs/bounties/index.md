@@ -1,4 +1,4 @@
-Bounties are rewards (denominated in HBOT or USDC) given out to community members for work that improves Hummingbot, such as supporting users on Discord and fulfilling devlopment bounties. They are the primary mechanism used by Hummingbot Foundation to maintain the Hummingbot codebase and support the community.
+Bounties are rewards, denominated in Hummingbot Foundation's governance token HBOT and other tokens, that are given out to community members for work that improves Hummingbot, such as supporting users on Discord and fulfilling development bounties. They are the primary mechanism used by Hummingbot Foundation to maintain the Hummingbot codebase and support the community.
 
 ## External Bounties
 
