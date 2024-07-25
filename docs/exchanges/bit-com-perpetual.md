@@ -14,7 +14,7 @@
 
 - **Website**: <https://www.bit.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bit-com/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/bit_futures>
+- **CoinGecko**: 
 - **API Docs**: <https://www.bit.com/docs/en-us/linear_futures.html>
 - **Fees**: <https://helpcenter.bit.com/hc/en-us/articles/10740865746969-1-How-much-is-Spot-Trading-Fees->
 - **Supported Countries**: Not available

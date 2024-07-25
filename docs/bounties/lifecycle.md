@@ -55,8 +55,8 @@ We will also run a quality assurance (QA) process on the submission to evaluate 
 
 For connectors, our QA team uses following checklists in conducting reviews:
 
-* [Spot Connector QA Checklist](/developers/connectors/connectors/test/)
-* [Perp Connector QA Checklist](/developers/connectors/connectors/test-perp/)
+* [Spot Connector QA Checklist](../developers/connectors/test.md)
+* [Perp Connector QA Checklist](../developers/connectors/test-perp.md)
 
 ### 10. Merge Pull Request
 

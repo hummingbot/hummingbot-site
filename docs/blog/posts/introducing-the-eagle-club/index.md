@@ -48,7 +48,7 @@ To access the leaderboard, visit [here](https://miner.hummingbot.io/leaderboard)
 
 - [Hummingbot Miner app](https://miner.hummingbot.io)
 - [Liquidity mining live training sessions](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
-- [Active campaigns](https://support.hummingbot.io/hc/en-us/sections/900002130663-Campaigns)
+- [Active campaigns](https://support.hummingbot.io/miner/cminer-campaigns)
 - [Hummingbot Help Center](https://support.hummingbot.io)
 ---
 

@@ -100,4 +100,4 @@ Your contributions not only earn you rewards but also significantly contribute t
 
 ## Learn to Build Your Own Custom Strategies
 
-Join the [Hummingbot Botcamp](https://hummingbot.org/botcamp/), an intensive, 6-week developer bootcamp. You'll learn about crypto market making and quantitative trading using Hummingbot's open-source software.
+Join the [Hummingbot Botcamp](https://www.botcamp.xyz/), an intensive, 6-week developer bootcamp. You'll learn about crypto market making and quantitative trading using Hummingbot's open-source software.

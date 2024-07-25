@@ -11,6 +11,10 @@ categories:
 
 ![](cover.webp)
 
+!!! note "Update"
+    Starting in August 2024, Hummingbot Foundation bounties will be paid in HBOT by default, unless contributors indicate a preference for USDC in their onboarding form. If users select USDC, a 10% processing fee will be applied.
+
+
 Since the inception of the Hummingbot Foundation, we have paid out **282 bounties to 92 unique developer wallets**. Bounties have been an unqualified success in leveraging the global developer community to maintain the Hummingbot codebase by fixing bugs and adding key components.
 
 To continue on this path, we are excited to announce a new change to the Bounties process. Now, bounty recipients can choose whether to receive their payments in HBOT, our native governance token, or the USDC equivalent amount.

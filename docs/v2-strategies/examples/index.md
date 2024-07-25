@@ -94,7 +94,7 @@ The screenshot below show what is displayed when the `status` command is run:
 
 ### MACD-BB
 
-A directional strategy that combines [MACD](/indicators/#macd) and Bollinger Bands to generate long/short signals. This strategy uses MACD for trend identification and Bollinger Bands for volatility and price level analysis.
+A directional strategy that combines **MACD** and Bollinger Bands to generate long/short signals. This strategy uses MACD for trend identification and Bollinger Bands for volatility and price level analysis.
 
 **Code:**
 
