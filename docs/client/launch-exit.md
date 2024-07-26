@@ -4,38 +4,38 @@ This page contains information on launching and exiting the application, assumin
 
 ## Launch via Docker
 
-If you downloaded the helper script before, proceed to step 2.
+Check the list of running Docker containers
 
-1. Download `start.sh` helper script from Github using the command below.
+```
+docker ps -a
+```
 
-```Manual
-wget https://raw.githubusercontent.com/CoinAlpha/hummingbot/development/installation/docker-commands/start.sh
-chmod a+x start.sh
+Take note of the container name and use the following command to attach to it using the command below - 
+
+```
+docker attach [container_name]
 ```
 
 !!! tip
-    Run `ls` command from the terminal to check if the file is in your current directory.
+    If no containers are running, follow the steps below to create a Hummingbot instance.
 
-2. Run the following command inside the directory where the helper script is located:
 
-```Manual
-./start.sh
 ```
-
-![](/assets/img/launch-via-docker.gif)
-
-!!! tip
-    If no containers are running, follow the guide to creating a Hummingbot instance.
+git clone https://github.com/hummingbot/hummingbot
+cd hummingbot
+docker compose up -d
+```
+ 
 
 ## Launch from source
 
-1. Make sure the hummingbot conda environment is enabled.
+Make sure the hummingbot conda environment is enabled.
 
 ```Manual
 conda activate hummingbot
 ```
 
-2. In the `hummingbot` parent directory, run this command to launch the application:
+In the `hummingbot` parent directory, run this command to launch the application:
 
 ```Manual
 ./start

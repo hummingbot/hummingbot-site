@@ -57,9 +57,6 @@ Open a terminal and run the following commands to clone the Hummingbot Github re
   git clone https://github.com/hummingbot/hummingbot.git
   cd hummingbot
 ```
-gh repo clone hummingbot/deploy
-
-After all Docker containers have started, access the Dashboard at http://localhost:8501 in your browser.
 
 ### Launch Hummingbot Container
 
