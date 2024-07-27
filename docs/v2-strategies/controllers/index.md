@@ -4,6 +4,20 @@ The **Controller** plays a crucial role within Hummingbot's Strategy V2 framewor
 
 Users can now use controllers as sub-strategies allowing them to use multiple controllers in a single script or trade multiple pairs / configs in a single bot. 
 
+## Background / Motivation
+
+The main idea here is to have top-level reusable templates for certain types of strategies (e.g., directional, market making, arbitrage).
+
+What you do for e.g. directional trading always follows the same pattern: you have an indicator or a combination of indicators and at a certain point decide to pull the trigger and either enter a trade or exit one. 
+
+A Controller abstracts all that away from you so that you can purely focus on only the signal and configure the rest in a YAML file. This makes your strategy development much faster.
+
+### Multiple Controllers, Risk Management, ...
+
+A more advanced benefit of using controllers is that you can have multiple of them running in parallel, all orchestrated by a custom main strategy that does risk management, for example. This would enable you to run a portfolio of strategies and have centralized control over all sub-strategies (=Controllers).
+
+This, of course, is just one example, but it illustrates the power that you can have by utilizing all components together beyond just the template idea.
+
 ## Base Classes
 
 Currently, the controller base classes available are:
