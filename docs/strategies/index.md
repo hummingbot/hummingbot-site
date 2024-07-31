@@ -18,12 +18,12 @@ We encourage users to create their own custom strategies and/or extend the exist
 
 ## Flavors of Hummingbot Strategies
 
-There are a variety of ways that Hummingbot strategies can be defined:
+There are 2 current ways that Hummingbot strategies can be defined:
 
-* [Simple Scripts](#scripts): A simple Python file that contains all strategy logic
-* [V2 Scripts](#v2-scripts): A script that uses StrategyV2 components like Candles and Executors
+* [Scripts](#scripts): A simple Python file that contains all strategy logic. If the script uses StrategyV2 components (like Candles and Executors), then it is referred to as a "V2 Script"
 * [V2 Controllers](#v2-controllers): Strategy logic is abstracted into a Controller, allowing a loader script to deploy and manage multiple Controller configurations
-* [V1 Strategies](#v1-strategies): Legacy strategy templates that not customizable
+
+In the past, there were "V1 Strategies", which are legacy strategy templates that are less customizable. These were the original Hummingbot strategies and they are more rigid than those built using the StrategyV2 framework. See [Strategies V1](../v1-strategies/index.md) for a list of these old strategy templates.
 
 ### Scripts
 
@@ -33,9 +33,7 @@ See [Sample Scripts](/scripts/examples) for a full list of the current scripts i
 
 Check out this [quickstart guide](/academy-content/creating-a-custom-market-making-strategy/) to learn how to code a simple market making script.
 
-### V2 Scripts
-
-Scripts that use StrategyV2 components such as the Market Data Providers and Executors. Stores parameters in a script config file.
+Scripts that use StrategyV2 components such as the Market Data Providers and Executors are "V2 Scripts". Parameters are stored in a script config file.
 
 Here are the current V2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder:
 
@@ -54,12 +52,6 @@ For more info, see [Walkthrough - Script](../v2-strategies/walkthrough.md). This
 Strategy logic is abstracted into a [Controller](../v2-strategies/controllers/index.md). You can use the [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) script to deploy one or more controller configurations, enabling you to run multiple bots more easily.
 
 For more info, see [Walkthrough - Controller](../v2-strategies/walkthrough-controller.md), which shows you how to run a basic pure market making (PMM) strategy using a V2 Controller.
-
-### V1 Strategies
-
-The original Hummingbot strategies offer structured templates for various strategies like pure market making and cross-exchange market making that let users configure parameters, but they are more rigid and less customizable than those built using the StrategyV2 framework.
-
-See [Strategies V1](../v1-strategies/index.md) for a list of these strategy templates.
 
 ## Motivation for the Strategy V2 Framework
 
