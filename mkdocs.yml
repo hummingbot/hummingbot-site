@@ -161,7 +161,6 @@ nav:
   - Docs:
     - Docs: docs/index.md
     - Installation:
-      - Hummingbot 2.0 Quickstart: installation/hummingbot-deploy/quickstart.md
       - Install via Docker: installation/docker.md
       - Install from Source:
         - Linux: installation/linux.md
@@ -169,18 +168,9 @@ nav:
         - Windows: installation/windows.md      
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
-      - Other Repos:
-        - Other Repos: installation/repos/index.md
-        - Gateway:
-          - Gateway: gateway/index.md
-          - Installation: gateway/installation.md
-          - Testing Gateway: gateway/testing.md
-          - Setting up Gateway: gateway/setup.md
-          - Working with Tokens: gateway/tokens.md
-          - Running Strategies and Scripts: gateway/running-dex-bots.md
-          - Building Gateway Connectors: gateway/adding-dex-connectors.md
-        - Dashboard: dashboard/index.md
-        - Brokers: installation/broker.md
+    - Using Dashboard:
+      - Using Dashboard: dashboard/index.md
+      - Quickstart: installation/hummingbot-deploy/quickstart.md
     - Using the Client:
       - Using the Client: client/index.md
       - User Interface: client/user-interface.md
@@ -210,15 +200,20 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-    - Strategies V2:
-      - Strategies V2: strategies/index.md
-      - Walkthrough - Script: v2-strategies/walkthrough.md 
-      - Walkthrough - Controller: v2-strategies/walkthrough-controller.md 
-      - Architecture: v2-strategies/index.md
+    - Strategies:
+      - Strategies: strategies/index.md
+      - Architecture:
+        - Architecture: v2-strategies/index.md
+      - Guides:
+        - Quickstart: installation/hummingbot-deploy/quickstart.md
+        - Script Walkthrough: v2-strategies/walkthrough.md
+        - Controller Walkthrough: v2-strategies/walkthrough-controller.md
       - Scripts:
         - Scripts: scripts/index.md
         - Sample Scripts: scripts/examples.md
         - Scripts Cheatsheat: scripts/cheatsheet.md
+      - Market Data Provider: v2-strategies/data/index.md
+      - Candles: v2-strategies/candles/index.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
@@ -226,37 +221,36 @@ nav:
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
-      - Controllers: v2-strategies/controllers/index.md
-      - Market Data Provider: v2-strategies/data/index.md
-      - Candles: v2-strategies/candles/index.md
-    - Strategies V1:
-      - Strategies V1: v1-strategies/index.md
-      - Pure Market Making: strategies/pure-market-making.md
-      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-      - AMM Arbitrage: strategies/amm-arbitrage.md
-      - AMM-V3 LP: strategies/amm-v3-lp.md
-      - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Hedge: strategies/hedge.md
-      - Liquidity Mining: strategies/liquidity-mining.md
-      - Perpetual Market Making: strategies/perpetual-market-making.md
-      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - TWAP: strategies/twap.md
-      - PMM Strategy Configs:
-        - PMM Strategy Configs: strategy-configs/index.md
-        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-        - Order Levels: strategy-configs/order-levels.md
-        - Filled Order Delay: strategy-configs/filled-order-delay.md
-        - Hanging Orders: strategy-configs/hanging-orders.md
-        - Minimum Spread: strategy-configs/minimum-spread.md
-        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-        - Order Optimization: strategy-configs/order-optimization.md
-        - Inventory Skew: strategy-configs/inventory-skew.md
-        - Max Order Age: strategy-configs/max-order-age.md
-        - Order Override: strategy-configs/order-override.md
-        - Price Band: strategy-configs/price-band.md
-        - Price Source: strategy-configs/external-price-source.md
-        - Ping Pong: strategy-configs/ping-pong.md
+      - Controllers:
+        - Controllers: v2-strategies/data/index.md
+      - Strategies V1:
+        - Strategies V1: v1-strategies/index.md
+        - Pure Market Making: strategies/pure-market-making.md
+        - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+        - AMM-V3 LP: strategies/amm-v3-lp.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
+        - PMM Strategy Configs:
+          - PMM Strategy Configs: strategy-configs/index.md
+          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+          - Order Levels: strategy-configs/order-levels.md
+          - Filled Order Delay: strategy-configs/filled-order-delay.md
+          - Hanging Orders: strategy-configs/hanging-orders.md
+          - Minimum Spread: strategy-configs/minimum-spread.md
+          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+          - Order Optimization: strategy-configs/order-optimization.md
+          - Inventory Skew: strategy-configs/inventory-skew.md
+          - Max Order Age: strategy-configs/max-order-age.md
+          - Order Override: strategy-configs/order-override.md
+          - Price Band: strategy-configs/price-band.md
+          - Price Source: strategy-configs/external-price-source.md
+          - Ping Pong: strategy-configs/ping-pong.md
     - Connectors:
       - Connectors: exchanges/index.md
       - CEX Connectors:
@@ -339,6 +333,17 @@ nav:
         - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
         - Perp Connector QA Checklist:  developers/connectors/test-perp.md
         - Debugging & Testing Connectors: developers/connectors/debug.md
+    - Gateway:
+      - Gateway: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Setting up Gateway: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running Strategies and Scripts: gateway/running-dex-bots.md
+      - Building Gateway Connectors: gateway/adding-dex-connectors.md
+    - Other Repos:
+      - Other Repos: installation/repos/index.md
+      - Brokers: installation/broker.md
     - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
   - Academy:

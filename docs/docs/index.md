@@ -7,6 +7,24 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 !!! note
     If you're a developer looking to customize the software, consider installing Hummingbot from source. Here are detailed instructions for each operating system: [Linux](/installation/linux) | [Windows](/installation/windows) | [MacOS](/installation/mac)
 
+
+## Repos
+
+The Hummingbot codebase is comprised of various code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot).
+
+The primary Hummingbot code repositories are:
+
+<div class="grid cards" markdown>
+
+- [__Hummingbot__](/client) Core client and connectors
+- [__Dashboard__](/dashboard) Hummingbot 2.0 front-end user interface
+- [__Backend API__](https://github.com/hummingbot/deploy): Hummingbot 2.0 backend-end API
+- [__Deploy__](https://github.com/hummingbot/deploy) Docker deployment repo
+- [__Gateway__](/gateway) API middleware for DEX connectors
+- [__Brokers__](../broker.md): Bot orchestration module
+
+</div>
+
 ## [Strategies](/strategies)
 
 A Hummingbot strategy loads market data directly from centralized and decentralized exchanges, adaptable to the unique features of each trading venue's WebSocket/REST APIs and nodes, and executes logic defined by the strategy creator.

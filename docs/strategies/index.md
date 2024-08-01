@@ -21,19 +21,50 @@ We encourage users to create their own custom strategies and/or extend the exist
 There are 2 current ways that Hummingbot strategies can be defined:
 
 * [Scripts](#scripts): A simple Python file that contains all strategy logic. If the script uses StrategyV2 components (like Candles and Executors), then it is referred to as a "V2 Script"
-* [V2 Controllers](#v2-controllers): Strategy logic is abstracted into a Controller, allowing a loader script to deploy and manage multiple Controller configurations
 
-In the past, there were "V1 Strategies", which are legacy strategy templates that are less customizable. These were the original Hummingbot strategies and they are more rigid than those built using the StrategyV2 framework. See [Strategies V1](../v1-strategies/index.md) for a list of these old strategy templates.
+* [Controllers](#v2-controllers): Strategy logic is abstracted into a Controller, allowing a loader script to deploy and manage multiple Controller configurations
 
-### Scripts
+In the past, there were [V1 Strategies](#v1-strategies-legacy), which are legacy strategy templates that are less customizable. These were the original Hummingbot strategies and they are more rigid than those built using the StrategyV2 framework. See [Strategies V1](../v1-strategies/index.md) for a list of these old strategy templates.
+
+### Backwards compatibility
+
+One important information before we delve into the details of each strategy type and when to use which is to understand that they are all built on top of each other.
+
+If we have a quick look together at the inheritance hierarchy this becomes obvious:
+
+![](strategy-inheritance-hierarchy.png)
+
+* **V1 Strategies**: here you can see that `StrategyBase` is the Cython part and `StrategyPyBase` is the root for all Python based strategies
+* **Script Strategies**: `ScriptStrategyBase` builds on top of that and makes it a lot easier to create a simple strategy with nearly no code. This is still fully supported, but might be deprecated in the futures. Therefore it is highly recommended to use V2 Strategies for new implementations.
+* **V2 Scripts**: `StrategyV2Base` inherits from `ScriptStrategyBase` which makes it technically a Script Strategy, but uses Executors for order management instead of the `buy()` / `sell()` methods. Controllers extend that even further as additional components that are loosely couple via an event queue. 
+
+Please make sure to keep the structure in mind when you go through the docs for V2 Strategies as this helps you a lot in learning how to code your own custom strategies.
+
+### V1 Strategies (legacy)
+
+The original Hummingbot strategies offer structured templates for various strategies like pure market making and cross-exchange market making that let users configure parameters, but they are more rigid and less customizable than those built using the StrategyV2 framework.
+
+See [Strategies V1](../v1-strategies/index.md) for a list of these strategy templates.
+
+### Script Strategies
 
 [Scripts](/scripts) are the entry point for Hummingbot strategies. They can range in complexity from a simple script that perform a single automated action to one that loads multiple Controllers. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
-
-See [Sample Scripts](/scripts/examples) for a full list of the current scripts in the Hummingbot codebase.
 
 Check out this [quickstart guide](/academy-content/creating-a-custom-market-making-strategy/) to learn how to code a simple market making script.
 
 Scripts that use StrategyV2 components such as the Market Data Providers and Executors are "V2 Scripts". Parameters are stored in a script config file.
+
+#### Learning tip
+
+For the purpose of learning and to just get a first kind of hello-world strategy running this is the easiest starting point. 
+
+After that it is recommended to go to the next step and start with a V2 Script and understand the differences (like adding an Executor instead of calling `self.buy()` directly). This way ensures you understand the underlying principles and cope much easier with the added complexity.
+
+### V2 Scripts
+
+This can be thought of the natural evolution from pure Script Strategies that are easily configurable and use StrategyV2 components such as Executors and Market Data Providers.
+
+In the [V2 Architecture Overview](/v2-strategies) we dive deeper into the building blocks and also discuss when to use Controllers vs Scripts. 
 
 Here are the current V2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder:
 
@@ -48,6 +79,8 @@ Here are the current V2 scripts in the [`/scripts`](https://github.com/hummingbo
 For more info, see [Walkthrough - Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
 
 ### V2 Controllers
+
+Controllers are designed to add another layer of abstraction and circumvent the limit of Hummingbot to only run one strategy per bot instance. You can think of that as the most powerful and advanced setup that Hummingbot currently provides.
 
 Strategy logic is abstracted into a [Controller](../v2-strategies/controllers/index.md). You can use the [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) script to deploy one or more controller configurations, enabling you to run multiple bots more easily.
 
