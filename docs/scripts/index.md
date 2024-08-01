@@ -17,7 +17,25 @@ See [Script Examples](examples.md) for a list of the current sample scripts in t
 
 We welcome new sample script contributions from users! To submit a contribution, please follow the [Contribution Guidelines](../developers/contributions.md).
 
-## Script Configuration Files
+## V2 Scripts
+
+These can be thought of the natural evolution from pure Script Strategies that are easily configurable and use StrategyV2 components such as Executors and Market Data Providers.
+
+In the [V2 Architecture Overview](/v2-strategies) we dive deeper into the building blocks and also discuss when to use Controllers vs Scripts. 
+
+Here are the current V2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder:
+
+| Script | Description |
+|--------|-------------|
+| [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) | Generic script that loads one or more controller configurations |
+| [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py) | Directional strategy using the RSI indicator |
+| [v2_funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_funding_rate_arb.py) | Script that arbitrages funding rates across perpetual exchanges |
+| [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
+| [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
+
+For more info, see [Walkthrough - Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
+
+## Configuration Files
 
 Scripts can be created both with and without [config files](/client/config-files/).
 
@@ -41,8 +59,93 @@ Scripts that use the Strategy V2 framework inherit from the [StrategyV2Base](htt
 
 Other scripts, including simple examples and older scripts, inherit from the [ScriptStrategyBase](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/script_strategy_base.py) class. These scripts define their parameters in the script code and do not expose config parameters.
 
-## PMM Scripts (deprecated)
+## Script Architecture
 
-[PMM Scripts](/scripts/pmm-scripts/) were an early experiment to let users customize Hummingbot, but they can only be used with the Pure Market Making V1 strategy.
+[![](./diagrams/14.png)](./diagrams/14.png)
 
-While the [examples](https://github.com/hummingbot/hummingbot/tree/master/pmm_scripts) remain in the codebase, this feature are no longer maintained.
+The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class. 
+
+This script fetches data from the Market Data Provider and manages how each Executor behaves. Optionally, it can load a Controller to manage the stategy logic instead of defining it in within the script. Go through the [Walkthrough](./walkthrough.md) to learn how it works. 
+
+See [Sample Scripts](/v2-strategies/examples) for more examples of StrategyV2-compatible scripts.
+
+### Adding Config Parameters
+
+To add user-defined parameters to a StategyV2 script, add a configuration class that extends the `StrategyV2ConfigBase` class in [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class.  
+
+This defines a set of configuration parameters that are prompted to the user when they run `create` to generate the config file. Only questions marked `prompt_on_new` are displayed.
+
+Afterwards, these parameters are stored in a config file. The script checks this config file every `config_update_interval` (default: 60 seconds) and updates the parameters that it uses in-flight.
+
+```python
+class StrategyV2ConfigBase(BaseClientModel):
+    """
+    Base class for version 2 strategy configurations.
+    """
+    markets: Dict[str, Set[str]] = Field(
+        default="binance_perpetual.JASMY-USDT,RLC-USDT",
+        client_data=ClientFieldData(
+            prompt_on_new=True,
+            prompt=lambda mi: (
+                "Enter markets in format 'exchange1.tp1,tp2:exchange2.tp1,tp2':"
+            )
+        )
+    )
+    candles_config: List[CandlesConfig] = Field(
+        default="binance_perpetual.JASMY-USDT.1m.500:binance_perpetual.RLC-USDT.1m.500",
+        client_data=ClientFieldData(
+            prompt_on_new=True,
+            prompt=lambda mi: (
+                "Enter candle configs in format 'exchange1.tp1.interval1.max_records:"
+                "exchange2.tp2.interval2.max_records':"
+            )
+        )
+    )
+    controllers_config: List[str] = Field(
+        default=None,
+        client_data=ClientFieldData(
+            is_updatable=True,
+            prompt_on_new=True,
+            prompt=lambda mi: "Enter controller configurations (comma-separated file paths), leave it empty if none: "
+        ))
+    config_update_interval: int = Field(
+        default=60,
+        gt=0,
+        client_data=ClientFieldData(
+            prompt_on_new=False,
+            prompt=lambda mi: "Enter the config update interval in seconds (e.g. 60): ",
+        )
+    )
+```
+
+### `on_tick` Method
+
+This method acts as the strategy's heartbeat, is called regularly, and allows the strategy to adapt to new market conditions in real time.
+
+```python
+def on_tick(self):
+    for executor_handler in self.executor_handlers.values():
+        if executor_handler.status == ExecutorHandlerStatus.NOT_STARTED:
+            executor_handler.start()
+```
+
+### `format_status` Method
+
+This overrides the standard `status` function and provides a formatted string representing the current status of the strategy, including the name, trading pair, and status of each executor.
+
+Users can customize this function to display their custom strategy variables.
+
+```python
+def format_status(self) -> str:
+        if not self.ready_to_trade:
+            return "Market connectors are not ready."
+        lines = []
+        for trading_pair, executor_handler in self.executor_handlers.items():
+            lines.extend(
+                [f"Strategy: {executor_handler.controller.config.strategy_name} | Trading Pair: {trading_pair}",
+                 executor_handler.to_format_status()])
+        return "\n".join(lines)
+```
+
+!!! tip Learn to Develop Algo Trading Strategies
+    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](https://www.botcamp.xyz), which teaches you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.

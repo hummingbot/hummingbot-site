@@ -1,4 +1,21 @@
-Hummingbot is a local software client that helps you run trading strategies that automate the execution of orders and trades on various cryptocurrency exchanges and protocols. The Hummingbot architecture features modular components that can be maintained and extended by individual community members.
+Hummingbot is an open source Python-based framework that helps you run trading strategies that automate the execution of orders and trades on various cryptocurrency exchanges and protocols. 
+
+## Repos
+
+The Hummingbot framework features multiple code repositories and modular components that allow the codebase to be maintained and extended by individual community members. It is hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot).
+
+The main Hummingbot code repositories are:
+
+<div class="grid cards" markdown>
+
+- [__Hummingbot__](/client) Core command line client and exchange connectors
+- [__Deploy__](https://github.com/hummingbot/deploy) Docker deployment repo
+- [__Dashboard__](/dashboard) Hummingbot 2.0 front-end user interface
+- [__Backend API__](https://github.com/hummingbot/deploy): Hummingbot 2.0 back-end API
+- [__Gateway__](/gateway) API middleware for DEX connectors
+- [__Site__](https://github.com/hummingbot/deploy): This site - contributions welcome!
+
+</div>
 
 ## Installation
 
@@ -7,36 +24,19 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 !!! note
     If you're a developer looking to customize the software, consider installing Hummingbot from source. Here are detailed instructions for each operating system: [Linux](/installation/linux) | [Windows](/installation/windows) | [MacOS](/installation/mac)
 
-
-## Repos
-
-The Hummingbot codebase is comprised of various code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot).
-
-The primary Hummingbot code repositories are:
-
-<div class="grid cards" markdown>
-
-- [__Hummingbot__](/client) Core client and connectors
-- [__Dashboard__](/dashboard) Hummingbot 2.0 front-end user interface
-- [__Backend API__](https://github.com/hummingbot/deploy): Hummingbot 2.0 backend-end API
-- [__Deploy__](https://github.com/hummingbot/deploy) Docker deployment repo
-- [__Gateway__](/gateway) API middleware for DEX connectors
-- [__Brokers__](../broker.md): Bot orchestration module
-
-</div>
-
 ## [Strategies](/strategies)
 
 A Hummingbot strategy loads market data directly from centralized and decentralized exchanges, adaptable to the unique features of each trading venue's WebSocket/REST APIs and nodes, and executes logic defined by the strategy creator.
 
-To run a strategy, a user selects a script or strategy template, defines its input parameters in a [Config File](../client/config-files.md), and starts it with the `start` command in the Hummingbot client or via the command line.
+There are 2 current ways that Hummingbot strategies can be defined:
 
-- [Sample Scripts](../scripts/examples.md): Examples of basic and advanced strategy templates in the official codebase
+[Scripts](/scripts): Scripts are the entry point for all Hummingbot strategies. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors.
 
-- [Walkthrough](../v2-strategies/walkthrough.md): Learn how to run a simple directional strategy using Hummingbot
+They can range in complexity from a simple Python file that contains all strategy logic to a launcher script launches multiple Controllers, each defining a separate sub-strategy. 
 
-The new Hummingbot **StrategyV2** framework allows you to mix and match components, offering a modular approach to strategy creation and making the development process faster and more efficient.
-See [StrategyV2 Architecture](../v2-strategies/index.md) to learn how V2 components like Executors and Controllers work together.
+[Controllers](/v2-strategies/controllers): Controllers define a modularized strategy based on the Strategy V2 [architecture](/v2-strategies/), which makes them backtestable, allows them to access market data more efficiently, and lets them be deployable using Dashboard.
+
+In the past, there were [V1 Strategies](/v1-strategies/), which are legacy strategy templates that are less customizable. These were the original Hummingbot strategies and they are more rigid than those built using the StrategyV2 framework.
 
 ## [Connectors](/exchanges/)
 

@@ -168,9 +168,18 @@ nav:
         - Windows: installation/windows.md      
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
-    - Using Dashboard:
-      - Using Dashboard: dashboard/index.md
+    - Guides:
       - Quickstart: installation/hummingbot-deploy/quickstart.md
+      - Script Walkthrough: v2-strategies/walkthrough.md
+      - Controller Walkthrough: v2-strategies/walkthrough-controller.md
+    - Using the Dashboard:
+      - Using Dashboard: dashboard/index.md
+      - Adding Credentials: dashboard/credentials.md
+      - Viewing Portfolio: dashboard/portfolio.md
+      - Configuring Strategies: dashboard/portfolio.md
+      - Backtesting Strategies: dashboard/portfolio.md
+      - Deploying Instances: dashboard/deploy.md
+      - Managing Instances: dashboard/instances.md
     - Using the Client:
       - Using the Client: client/index.md
       - User Interface: client/user-interface.md
@@ -204,10 +213,6 @@ nav:
       - Strategies: strategies/index.md
       - Architecture:
         - Architecture: v2-strategies/index.md
-      - Guides:
-        - Quickstart: installation/hummingbot-deploy/quickstart.md
-        - Script Walkthrough: v2-strategies/walkthrough.md
-        - Controller Walkthrough: v2-strategies/walkthrough-controller.md
       - Scripts:
         - Scripts: scripts/index.md
         - Sample Scripts: scripts/examples.md
@@ -222,7 +227,7 @@ nav:
         - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
       - Controllers:
-        - Controllers: v2-strategies/data/index.md
+        - Controllers: v2-strategies/controllers/index.md
       - Strategies V1:
         - Strategies V1: v1-strategies/index.md
         - Pure Market Making: strategies/pure-market-making.md
@@ -333,16 +338,15 @@ nav:
         - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
         - Perp Connector QA Checklist:  developers/connectors/test-perp.md
         - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Gateway:
-      - Gateway: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running Strategies and Scripts: gateway/running-dex-bots.md
-      - Building Gateway Connectors: gateway/adding-dex-connectors.md
     - Other Repos:
-      - Other Repos: installation/repos/index.md
+      - Gateway:
+        - Gateway: gateway/index.md
+        - Installation: gateway/installation.md
+        - Testing Gateway: gateway/testing.md
+        - Setting up Gateway: gateway/setup.md
+        - Working with Tokens: gateway/tokens.md
+        - Running Strategies and Scripts: gateway/running-dex-bots.md
+        - Building Gateway Connectors: gateway/adding-dex-connectors.md
       - Brokers: installation/broker.md
     - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
