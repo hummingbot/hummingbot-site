@@ -7,7 +7,7 @@ See [Certifications List](list.md) for the current list of certified developers.
 
 ### Hummingbot Strategy V2 Developer
 
-The Hummingbot Strategy V2 Developer certification enables developers to demonstrate proficiency in creating and deploying professional-grade algorithmic trading strategies using the [Hummingbot StrategyV2 framework](/v2-strategies). Certified individuals possess the following skills:
+The Hummingbot Strategy V2 Developer certification enables developers to demonstrate proficiency in creating and deploying professional-grade algorithmic trading strategies using the [Hummingbot Strategy V2 framework](/v2-strategies). Certified individuals possess the following skills:
 
 - **Design and Code Custom Strategies:** Possess in-depth knowledge of the Hummingbot V2 framework, enabling them to design and implement custom trading algorithms tailored to specific market conditions and objectives.
 - **Familiarity with Hummingbot Codebase:** Have a thorough understanding of the Hummingbot codebase, allowing them to make modifications, optimize performance, and integrate new features.
@@ -15,7 +15,7 @@ The Hummingbot Strategy V2 Developer certification enables developers to demonst
 
 ### Hummingbot Market Maker
 
-Starting with [Cohort 8](https://www.botcamp.xyz/event/certified-market-maker-3/register) in August 2024, we will begin to offer the Hummingbot Market Maker certification.
+Starting with [Cohort 9](https://www.botcamp.xyz/event/certified-market-maker-3/register) in August 2024, we will begin to offer the Hummingbot Market Maker certification.
 
 This certification is designed to equip participants with the expertise necessary to execute market making strategies across centralized (CEX) and decentralized exchanges (DEX). Certified individuals possess the following skills:
 
@@ -25,7 +25,7 @@ This certification is designed to equip participants with the expertise necessar
 
 ### Hummingbot Script Developer
 
-*Replaced by Hummingbot StrategyV2 Developer certification starting in Cohort 6.* 
+*Replaced by Hummingbot Strategy V2 Developer certification starting in Cohort 6.* 
 
 The original certification offered by the initial Botcamp cohorts, the Hummingbot Script Developer certification focuses on creating custom algorithmic trading strategies using [Scripts](/scripts) that inherit from the `ScriptStrategyBase` class.
 

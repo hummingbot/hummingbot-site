@@ -273,7 +273,6 @@ nav:
         - BTC Markets: exchanges/btc-markets.md
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
-        - Coinbase Advanced Trade: exchanges/coinbase-advanced-trade.md
         - Foxbit: exchanges/foxbit.md
         - HitBTC: exchanges/hitbtc.md
         - Kraken: exchanges/kraken/index.md
