@@ -6,12 +6,6 @@
 * Configs: [/hummingbot/strategy/amm_arb/amm_arb_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_arb/amm_arb_config_map.py)
 * Maintainer: Hummingbot Foundation
 
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
-
-Core strategies are maintained and continually improved by Hummingbot Foundation. Foundation staff focuses on testing these strategies and rewards users who answer questions related to these strategies on Discord.
-
 ## 📝 Summary
 
 This strategy monitors prices between a trading pair (`market_1`) on a SPOT AMM DEX versus another trading pair (`market_2`) on another SPOT AMM CEX or SPOT CLOB DEX in order to identify arbitrage opportunities. It executes offsetting buy and sell orders in both markets in order to capture arbitrage opportunities with profitability higher than `min_profitability`, net of transaction costs, which include both blockchain transaction fees (gas) and exchange fees.

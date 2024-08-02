@@ -3,6 +3,8 @@ Scripts are the entry point for Hummingbot strategies. They enable Hummingbot us
 !!! note Restart Hummingbot
      Should your script run into an error, it's crucial that you exit Hummingbot entirely, correct or debug the faulty script, and then restart Hummingbot. The stop command won't rectify the issue in case of an error. To get back on track, a complete shutdown and subsequent relaunch of Hummingbot is required.
 
+For more info, see the [Script Walkthrough](/v2-strategies/walkthrough/). This detailed walkthrough shows you how to run a simple directional algo trading strategy.
+
 ## Script Examples
 
 See [Script Examples](examples.md) for a list of the current sample scripts in the Hummingbot codebase. These examples show you how to:
@@ -16,24 +18,6 @@ See [Script Examples](examples.md) for a list of the current sample scripts in t
 - And much more!
 
 We welcome new sample script contributions from users! To submit a contribution, please follow the [Contribution Guidelines](../developers/contributions.md).
-
-## V2 Scripts
-
-These can be thought of the natural evolution from pure Script Strategies that are easily configurable and use StrategyV2 components such as Executors and Market Data Providers.
-
-In the [V2 Architecture Overview](/v2-strategies) we dive deeper into the building blocks and also discuss when to use Controllers vs Scripts. 
-
-Here are the current V2 scripts in the [`/scripts`](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder:
-
-| Script | Description |
-|--------|-------------|
-| [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) | Generic script that loads one or more controller configurations |
-| [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py) | Directional strategy using the RSI indicator |
-| [v2_funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_funding_rate_arb.py) | Script that arbitrages funding rates across perpetual exchanges |
-| [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_twap_multiple_pairs.py) | Script that launches TWAPExecutors to buy/sell a block of tokens |
-| [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_xemm.py) | Script that launches XEMMExecutors to implement a cross-exchange market making strategy |
-
-For more info, see [Walkthrough - Script](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to use a StrategyV2 script to run a simple directional strategy.
 
 ## Configuration Files
 
@@ -147,5 +131,3 @@ def format_status(self) -> str:
         return "\n".join(lines)
 ```
 
-!!! tip Learn to Develop Algo Trading Strategies
-    To gain a deeper understanding of Hummingbot strategies along with access to the latest framework updates, sign up for [Botcamp](https://www.botcamp.xyz), which teaches you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.

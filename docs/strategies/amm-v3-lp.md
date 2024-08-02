@@ -4,13 +4,7 @@
 
 * Folder: [/hummingbot/strategy/amm_v3_lp](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/amm_v3_lp)
 * Configs: [amm_v3_lp_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_v3_lp/amm_v3_lp_config_map.py)
-* Maintainer: None
-
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
-
-Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+* Maintainer: Hummingbot Foundation
 
 ## 📝 Summary
 
