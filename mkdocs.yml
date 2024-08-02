@@ -176,8 +176,8 @@ nav:
       - Using Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
       - Viewing Portfolio: dashboard/portfolio.md
-      - Configuring Strategies: dashboard/portfolio.md
-      - Backtesting Strategies: dashboard/portfolio.md
+      - Configuring Strategies: dashboard/config.md
+      - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
     - Using the Client:
