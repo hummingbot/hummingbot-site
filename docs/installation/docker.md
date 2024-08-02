@@ -2,7 +2,7 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 
 ## Prerequisites
 
-### Cloud server or local machine
+### Cloud or local machine
 
 | **Component**      | **Specification**                                     |
 |--------------------|-------------------------------------------------------|
@@ -20,7 +20,7 @@ Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for d
     To install Hummingbot on Windows, you need to have Docker Desktop installed, set up Windows Subsystem for Linux 2 (WSL2), and install a Linux distribution like Ubuntu. Make sure to run the commands listed below from within an Ubuntu terminal and not from the Windows Command Prompt or PowerShell.
 
 
-## Installation (Hummingbot 2.0)
+## Installation (Dashboard)
 
 Starting with [Hummingbot release 2.0](/release-notes/2.0.0), the new [Deploy repo](https://github.com/hummingbot/deploy) helps you launch Dashboard and Backend-API to make creating and launching bots easier.
 

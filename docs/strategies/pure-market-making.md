@@ -6,12 +6,6 @@
 * Configs: [pure_market_making_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/pure_market_making/pure_market_making_config_map.py)
 * Maintainer: Hummingbot Foundation
 
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow)
-
-Core strategies are maintained and continually improved by Hummingbot Foundation. Foundation staff focuses on testing these strategies and rewards users who answer questions related to these strategies on Discord.
-
 ## 📝 Summary
 
 This strategy allows Hummingbot users to run a market making strategy on a single trading pair on a `spot` exchanges.

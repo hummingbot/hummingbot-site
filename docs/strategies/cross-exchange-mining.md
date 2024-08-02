@@ -6,12 +6,6 @@
 * Configs: [cross_exchange_mining_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_mining/cross_exchange_mining_config_map_pydantic.py)
 * Maintainer: [bsmeaton](https://github.com/bsmeaton)
 
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
-
-Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
-
 ## 📝 Summary
 
 The Cross Exchange Mining strategy creates buy or sell limit orders on a maker exchange at a spread wider than that of the taker exchange. Filling of the order on the maker exchange triggers a balancing of the portfolio on the taker exchange at an advantageous spread (The difference between the two spreads being equal to the `min_profitability`) thereby creating profit.

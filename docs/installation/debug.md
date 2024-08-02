@@ -39,6 +39,36 @@ This section will detail the necessary configuration / setup required to run the
 
 By executing the **Start Debugging** command which can be found under the **Run** menu at the top or pressing the <kbd>F5</kbd> key, the debugger will automatically attach itself to the Hummingbot process. The Hummingbot app will appear in the `integratedTerminal`. You may change this as desired.
 
+### Using VSCode with WSL2 (Windows)
+
+- Make sure you have [Visual Studio Code](https://code.visualstudio.com/) on the Windows side (not in WSL).
+
+!!! note 
+    When prompted to **Select Additional Tasks** during installation, be sure to check the **Add to PATH** option so you can easily open a folder in WSL using the `code` command.
+
+- Install the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+
+[![wsl](wsl.png)](wsl.png)
+
+
+**There are two ways you can open a remote folder / workspace**
+
+From the WSL Terminal:
+
+- Open a WSL terminal window (using the start menu item). For example, if you installed the `Ubuntu` distro then you can search for "Ubuntu" in the start menu. Or you can also type in `wsl` from the command prompt / PowerShell.
+
+- Navigate to the folder you want to open in VS Code, for example the `hummingbot` repo folder. 
+
+- Type `code .`  in the terminal. When doing this for the first time, you should see VS Code fetching components needed to run in WSL. This should only take a short while, and is only needed once.
+
+
+From VS Code:
+
+- Press <kbd>F1</kbd> then select **WSL: Connect to WSL** for the default distro or if you have multiple distros installed then select **WSL: Connect to WSL using Distro** to choose between your installed distros. 
+
+- Use the `File` menu to open your folder, for example the `hummingbot` folder if you already cloned the repo in the terminal. 
+
+
 ## PyCharm
 
 In the video below, Abel of CoinAlpha has shown how to debug a Script using Pycharm IDE.

@@ -13,48 +13,49 @@
 ## ℹ️ Exchange Info
 
 - **Website**: <https://www.coinbase.com/>
-- **Coinbase Advanced Trade is not listed - Exchange is the institutional trading platform for Coinbase**
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/coinbase-exchange/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/coinbase-exchange>
-- **API Docs**: <https://docs.cloud.coinbase.com/advanced-trade-api/docs>
-- **Fees**: <https://www.coinbase.com/advanced-fees> (Requires an account)
+- **API Docs**: <https://docs.pro.coinbase.com/>
+- **Fees**: <https://help.coinbase.com/en/pro/trading-and-funding/trading-rules-and-fees/fees>
 - **Supported Countries**: Available in 100+ countries
 
 ## 🔑 How to Connect
 
 ### Generate API Keys
-- From trading platform -> `More`-> `Advanced API` -> `Create API Key` -> `Trading Key`
-- Select permissions for the API key (e.g. `View` and `Trade`)
+
 
 ### Add Keys to Hummingbot
 
-From inside the Hummingbot client, run `connect coinbase_advanced_trade`:
+From inside the Hummingbot client, run `connect coinbase`:
 
 ```
-Enter your coinbase_advanced_trade API key >>>
-Enter your coinbase_advanced_trade secret key >>>
+Enter your coinbase API key >>>
+Enter your coinbase secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to coinbase_advanced_trade
+You are now connected to coinbase
 ```
 
 
 ## 🔀 Spot Connector
 *Integration to spot markets API endpoints*
 
-- **ID**: `coinbase_advanced_trade`
+- **ID**: `coinbase_pro`
 - **Connection Type**: WebSocket
-- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinbase_advanced_trade>
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/coinbase_pro>
 
 ### Order Types
 
 This connector supports the following `OrderType` constants:
 
-- `LIMIT` (`LIMIT_MAKER`: Coinbase rejection rate is high, currently same as `LIMIT`)
+- `LIMIT`
+- `LIMIT_MAKER`
 
 ### Paper Trading
 
-Not available
+Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect coinbase_paper_trade` instead of `connect coinbase`.
+
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.

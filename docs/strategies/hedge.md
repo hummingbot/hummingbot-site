@@ -6,12 +6,6 @@
 * Configs: [hedge_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/hedge/hedge_config_map_pydantic.py)
 * Maintainer: [leastchaos](https://github.com/leastchaos)
 
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
-
-Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
-
 ## 📝 Summary
 
 This strategy allows you to hedge a market making strategy by automatically opening an opposite positions on another `perp` exchange or `spot` exchange. Configs like `hedge_ratio` allow you to customize how much to hedge. Users are expected to run this strategy alongside another market making strategy.
