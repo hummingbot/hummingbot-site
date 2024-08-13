@@ -1,7 +1,7 @@
 ---
 date: 2024-07-14
 authors:
-  - community
+  - patrick
 categories:
   - Academy
 tags:
@@ -23,6 +23,8 @@ I'm honored and excited to have the opportunity to share this strategy with the 
 The integration of AI into trading strategies has opened up new possibilities for automation and efficiency. One particularly promising application is the automation of copy-trading based on messages from Discord channels. 
 
 Many trading groups on Discord have skilled traders whose signals can be highly profitable. However, manually acting on these signals is time-consuming and prone to errors. By leveraging AI, we can transform unstructured messages into actionable data, automating the entire process.
+
+<!-- more -->
 
 ## The Strategy
 
