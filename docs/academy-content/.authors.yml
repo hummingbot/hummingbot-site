@@ -33,3 +33,8 @@ authors:
     name: Community
     description: Contributor
     avatar: /assets/authors/community-2.webp
+
+  patrick:
+    name: Patrick Meier
+    description: Contributor
+    avatar: /assets/authors/patrick-meier.jpeg
