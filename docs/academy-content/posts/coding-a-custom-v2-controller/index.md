@@ -10,6 +10,8 @@ tags:
 
 # Coding a Custom V2 Controller for Future Liquidations on Binance
 
+![cover](cover.webp)
+
 *by Patrick Meier*
 
 In this article, we'll explore how to create a custom V2 Controller for Hummingbot to snipe future liquidations on Binance. We'll use a generic controller to demonstrate the correct usage and implementation of this strategy.

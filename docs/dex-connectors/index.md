@@ -49,7 +49,6 @@ Here are the current DEX connectors in the codebase:
 | [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway |
 | [Pangolin](../exchanges/pangolin.md) | AMM | Gateway |
 | [Plenty](../exchanges/plenty.md) | AMM | Gateway |
-| [Perpetual Protocol](../exchanges/perp.md) | AMM | Gateway |
 | [Quickswap](../exchanges/quickswap.md) | AMM | Gateway |
 | [Ref Finance](../exchanges/ref.md) | AMM | Gateway |
 | [Sushiswap](../exchanges/sushiswap.md) | AMM | Gateway |

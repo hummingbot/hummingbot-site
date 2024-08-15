@@ -10,6 +10,8 @@ tags:
 
 # Leveraging AI for Automated Copy-Trading on Discord
 
+![cover](cover.webp)
+
 *by Patrick Meier*
 
 In my previous article, [AI in Action: How LLMs Are Shaping Finance, Trading, and Software](https://www.linkedin.com/pulse/ai-action-how-llms-shaping-finance-trading-software-patrick-meier-eipae), I promised to explore a few ideas together with you. 

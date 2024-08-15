@@ -13,11 +13,11 @@ hide:
 
 -   #### :star: Featured
     
-    [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
+    [![](/academy-content/coding-a-custom-v2-controller/cover.webp)](/academy-content/coding-a-custom-v2-controller/)
 
-    ## [Introducing V2 Strategies](/blog/introducing-v2-strategies)
+    ## [Coding a Custom V2 Controller](/academy-content/coding-a-custom-v2-controller/)
 
-    Learn how to compose powerful algo strategies of any kind using Hummingbot's new strategy framework
+    Explore how to create a custom V2 Controller for Hummingbot
 
 -   #### :rocket: Most Popular
 
@@ -155,6 +155,10 @@ hide:
 -   [![](/academy-content/top-beginners-top-misconceptions-about-market-making/cover.webp)](/academy-content/top-beginner-misconceptions-about-market-making/)
 
     ### [Top Beginner Misconceptions about Market Making](/academy-content/top-beginner-misconceptions-about-market-making/)
+
+-   [![](/academy-content/discord-copy-trading-with-ai/cover.webp)](/academy-content/discord-copy-trading-with-ai/)
+
+    ### [Leveraging AI for Automated Copy-Trading on Discord](/academy-content/discord-copy-trading-with-ai)    
 
 </div>
 
