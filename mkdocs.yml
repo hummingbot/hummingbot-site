@@ -265,8 +265,8 @@ nav:
         - Kucoin: exchanges/kucoin/index.md
         - HTX: exchanges/huobi/index.md
         - AscendEx : exchanges/ascendex/index.md
-        - Bit.com: exchanges/bit-com-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
+        - Bitstamp: exchanges/bitstamp/index.md
         - Bitrue: exchanges/bitrue.md
         - Bitget: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart/index.md
@@ -274,12 +274,10 @@ nav:
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
         - Foxbit: exchanges/foxbit.md
-        - HitBTC: exchanges/hitbtc.md
         - Kraken: exchanges/kraken/index.md
         - MEXC: exchanges/mexc/index.md
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx/okx.md
-        - Phemex: exchanges/phemex-perpetual.md
         - Cube Exchange: exchanges/cube/index.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
@@ -296,12 +294,12 @@ nav:
         - Osmosis: exchanges/osmosis.md
         - Pancakeswap : exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
-        - Perpetual Protocol: exchanges/perp.md
         - Plenty: exchanges/plenty.md
         - Quickswap: exchanges/quickswap.md
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
         - Tinyman: exchanges/tinyman.md
+        - Telos: exchanges/telos.md
         - TraderJoe: exchanges/traderjoe.md
         - Uniswap : exchanges/uniswap.md
         - Vega: exchanges/vega.md
@@ -322,9 +320,9 @@ nav:
         - Harmony: chains/harmony.md
         - Injective: chains/injective.md
         - Kujira: chains/kujira.md
-        - NEAR: chains/near.md
         - XDC Chain: chains/xdc-chain.md
         - Tezos: chains/tezos.md
+        - Telos: chains/telos.md
         - XRP Ledger: chains/xrpl.md
       - Building Connectors:
         - Building Connectors: developers/connectors/index.md

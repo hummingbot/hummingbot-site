@@ -28,7 +28,6 @@ Here are the current CEX connectors in the codebase:
 | [Kucoin](../exchanges/kucoin/index.md) | CLOB | v2.1 | v2.1 | Yes
 | [HTX](../exchanges/huobi) | CLOB | v2.0 |  | No - market order type not supported
 | [AscendEx](../exchanges/ascendex/index.md) | CLOB | v2.0 |  | Yes - spot only
-| [Bitstamp](../exchanges/bitstamp/bitstamp.md) | CLOB | v2.1 |  | Yes
 | [OKX](../exchanges/okx/okx.md) | CLOB | v2.1 |  | Yes
 | [Coinbase](../exchanges/coinbase) | CLOB | v2.1 | | Yes
 | [Kraken](../exchanges/kraken) | CLOB | v1.0 |  | No
