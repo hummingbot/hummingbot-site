@@ -33,6 +33,7 @@ Here are the current CEX connectors in the codebase:
 | [Kraken](../exchanges/kraken) | CLOB | v1.0 |  | No
 | [BTC Markets](../exchanges/btc-markets.md) | CLOB | v2.0 |  | Yes - spot only
 | [FoxBit](../exchanges/foxbit) | CLOB | v2.0 |  | Yes - spot only
+| [Hashkey Global](../exchanges/hashkey/index.md) | CLOB | v2.1 | v2.1 | Yes
 | [Bitfinex](../exchanges/bitfinex.md) | CLOB | v1.0 | | no
 | [Bitget](../exchanges/bitget-perpetual.md) | CLOB |  | v2.0 | Yes - perp only
 | [MEXC](../exchanges/mexc) | CLOB | v2.0 |  | Yes - spot only |

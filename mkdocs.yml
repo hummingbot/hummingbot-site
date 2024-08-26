@@ -274,6 +274,7 @@ nav:
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
         - Foxbit: exchanges/foxbit.md
+        - Hashkey Global: exchanges/hashkey/index.md
         - Kraken: exchanges/kraken/index.md
         - MEXC: exchanges/mexc/index.md
         - NDAX: exchanges/ndax.md
