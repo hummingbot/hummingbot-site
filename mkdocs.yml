@@ -354,13 +354,14 @@ nav:
     - All Articles: academy/all.md
   - Certification:
     - Certification: certification/index.md
+    - Certification Process: certification/process.md
     - Certifications List: certification/list.md
     - Botcamp ↗️: https://www.botcamp.xyz
     - Botcamp FAQ: botcamp/faq.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
-    - 2.0.1: release-notes/2.0.1.md
+    - 2.1.0: release-notes/2.1.0.md
     - 2.0.0: release-notes/2.0.0.md
     - 1.28.0: release-notes/1.28.0.md
     - 1.27.0: release-notes/1.27.0.md
