@@ -19,6 +19,48 @@
 - **Fees**: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
 - **Supported Countries**: <https://help.dydx.exchange/en/articles/4798063-location-restrictions> 
 
+
+## ⚙️ Install Instructions
+
+At the moment there are some issues with dependencies and installing dydx can be a bit trickier due to some software conflicts. We've created these simple instructions to get you up and running quickly using either Docker or Source. 
+
+### Docker
+
+Open your `docker-compose.yml` file. This file is usually located in your Hummingbot project directory.
+
+Update the `image` line. Find the line that starts with `image:` under the `hummingbot` service. Change it to the following, depending on whether you are trying to run the `latest` or `development` branch. 
+
+For latest stable version:
+
+```bash
+image: hummingbot/hummingbot:latest_dydx
+```
+
+For development version:
+
+```bash
+image: hummingbot/hummingbot:development_dydx
+```
+
+
+### Source
+
+After cloning the Hummingbot repo, use the `--dydx ` flag when running the `install` command
+
+```bash
+./install --dydx
+```
+
+See below for the full commands: 
+
+```bash
+git clone https://github.com/hummingbot/hummingbot.git
+cd hummingbot
+./install --dydx
+conda activate hummingbot
+./compile
+```
+
 ## 🔑 How to Connect
 
 ### Generate API Keys

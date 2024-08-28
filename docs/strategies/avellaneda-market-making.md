@@ -6,12 +6,6 @@
 * Configs: [avellaneda_market_making_config_map_pydantic.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/avellaneda_market_making/avellaneda_market_making_config_map_pydantic.py)
 * Maintainer: None
 
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
-
-Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
-
 ## 📝 Summary
 
 This strategy implements a market making strategy described in the classic paper [High-frequency Trading in a Limit Order Book](https://people.orie.cornell.edu/sfs33/LimitOrderBook.pdf) written by Marco Avellaneda and Sasha Stoikov. It allows users to directly adjust the `risk_factor` (`gamma`) parameter described in the paper. It also features an order book liquidity estimator calculating the trading intensity parameters (`alpha` and `kappa`) automatically. Additionally, the strategy implements an order size adjustment algorithm and its `order_amount_shape_factor` (`eta`) parameter as described in [Optimal High-Frequency Market Making](http://stanford.edu/class/msande448/2018/Final/Reports/gr5.pdf). The strategy is implemented to be used either in fixed timeframes or to be ran indefinitely.

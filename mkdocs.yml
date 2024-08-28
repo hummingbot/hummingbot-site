@@ -161,7 +161,6 @@ nav:
   - Docs:
     - Docs: docs/index.md
     - Installation:
-      - Hummingbot 2.0 Quickstart: installation/hummingbot-deploy/quickstart.md
       - Install via Docker: installation/docker.md
       - Install from Source:
         - Linux: installation/linux.md
@@ -169,18 +168,18 @@ nav:
         - Windows: installation/windows.md      
       - Post-Installation: installation/post-installation.md
       - Using Debugger Tools: installation/debug.md
-      - Other Repos:
-        - Other Repos: installation/repos/index.md
-        - Gateway:
-          - Gateway: gateway/index.md
-          - Installation: gateway/installation.md
-          - Testing Gateway: gateway/testing.md
-          - Setting up Gateway: gateway/setup.md
-          - Working with Tokens: gateway/tokens.md
-          - Running Strategies and Scripts: gateway/running-dex-bots.md
-          - Building Gateway Connectors: gateway/adding-dex-connectors.md
-        - Dashboard: dashboard/index.md
-        - Brokers: installation/broker.md
+    - Guides:
+      - Quickstart: installation/hummingbot-deploy/quickstart.md
+      - Script Walkthrough: v2-strategies/walkthrough.md
+      - Controller Walkthrough: v2-strategies/walkthrough-controller.md
+    - Using Dashboard:
+      - Using Dashboard: dashboard/index.md
+      - Adding Credentials: dashboard/credentials.md
+      - Viewing Portfolio: dashboard/portfolio.md
+      - Configuring Strategies: dashboard/config.md
+      - Backtesting Strategies: dashboard/backtest.md
+      - Deploying Instances: dashboard/deploy.md
+      - Managing Instances: dashboard/instances.md
     - Using the Client:
       - Using the Client: client/index.md
       - User Interface: client/user-interface.md
@@ -212,13 +211,14 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
-      - Walkthrough - Script: v2-strategies/walkthrough.md 
-      - Walkthrough - Controller: v2-strategies/walkthrough-controller.md 
       - Architecture: v2-strategies/index.md
       - Scripts:
         - Scripts: scripts/index.md
         - Sample Scripts: scripts/examples.md
         - Scripts Cheatsheat: scripts/cheatsheet.md
+      - Market Data Provider:
+        - Market Data Provider: v2-strategies/data/index.md
+        - Candles: v2-strategies/candles/index.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
@@ -226,24 +226,13 @@ nav:
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
-      - Controllers: v2-strategies/controllers/index.md
-      - Market Data Provider: v2-strategies/data/index.md
-      - Candles: v2-strategies/candles/index.md
+      - Controllers:
+        - Controllers: v2-strategies/controllers/index.md
     - Strategies V1:
       - Strategies V1: v1-strategies/index.md
-      - Pure Market Making: strategies/pure-market-making.md
-      - Cross-Exchange Market Making: strategies/cross-exchange-market-making.md
-      - AMM Arbitrage: strategies/amm-arbitrage.md
-      - AMM-V3 LP: strategies/amm-v3-lp.md
-      - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Hedge: strategies/hedge.md
-      - Liquidity Mining: strategies/liquidity-mining.md
-      - Perpetual Market Making: strategies/perpetual-market-making.md
-      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - TWAP: strategies/twap.md
-      - PMM Strategy Configs:
-        - PMM Strategy Configs: strategy-configs/index.md
+      - Pure Market Making (PMM): strategies/pure-market-making.md
+      - PMM Configs:
+        - PMM Configs: strategy-configs/index.md
         - Add Transaction Costs: strategy-configs/add-transaction-costs.md
         - Order Levels: strategy-configs/order-levels.md
         - Filled Order Delay: strategy-configs/filled-order-delay.md
@@ -257,6 +246,16 @@ nav:
         - Price Band: strategy-configs/price-band.md
         - Price Source: strategy-configs/external-price-source.md
         - Ping Pong: strategy-configs/ping-pong.md
+      - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
+      - AMM Arbitrage: strategies/amm-arbitrage.md
+      - AMM-V3 LP: strategies/amm-v3-lp.md
+      - Avellaneda Market Making: strategies/avellaneda-market-making.md
+      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+      - Hedge: strategies/hedge.md
+      - Liquidity Mining: strategies/liquidity-mining.md
+      - Perpetual Market Making: strategies/perpetual-market-making.md
+      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+      - TWAP: strategies/twap.md
     - Connectors:
       - Connectors: exchanges/index.md
       - CEX Connectors:
@@ -266,22 +265,20 @@ nav:
         - Kucoin: exchanges/kucoin/index.md
         - HTX: exchanges/huobi/index.md
         - AscendEx : exchanges/ascendex/index.md
-        - Bit.com: exchanges/bit-com-perpetual.md
         - Bitfinex: exchanges/bitfinex.md
+        - Bitstamp: exchanges/bitstamp/index.md
         - Bitrue: exchanges/bitrue.md
         - Bitget: exchanges/bitget-perpetual.md
         - BitMart: exchanges/bitmart/index.md
         - BTC Markets: exchanges/btc-markets.md
         - Bybit: exchanges/bybit.md
         - Coinbase: exchanges/coinbase.md
-        - Coinbase Advanced Trade: exchanges/coinbase-advanced-trade.md
         - Foxbit: exchanges/foxbit.md
-        - HitBTC: exchanges/hitbtc.md
+        - Hashkey Global: exchanges/hashkey/index.md
         - Kraken: exchanges/kraken/index.md
         - MEXC: exchanges/mexc/index.md
         - NDAX: exchanges/ndax.md
         - OKX: exchanges/okx/okx.md
-        - Phemex: exchanges/phemex-perpetual.md
         - Cube Exchange: exchanges/cube/index.md
       - DEX Connectors:
         - DEX Connectors: dex-connectors/index.md
@@ -298,12 +295,12 @@ nav:
         - Osmosis: exchanges/osmosis.md
         - Pancakeswap : exchanges/pancakeswap.md
         - Pangolin: exchanges/pangolin.md
-        - Perpetual Protocol: exchanges/perp.md
         - Plenty: exchanges/plenty.md
         - Quickswap: exchanges/quickswap.md
         - Ref: exchanges/ref.md
         - Sushiswap: exchanges/sushiswap.md
         - Tinyman: exchanges/tinyman.md
+        - Telos: exchanges/telos.md
         - TraderJoe: exchanges/traderjoe.md
         - Uniswap : exchanges/uniswap.md
         - Vega: exchanges/vega.md
@@ -324,9 +321,9 @@ nav:
         - Harmony: chains/harmony.md
         - Injective: chains/injective.md
         - Kujira: chains/kujira.md
-        - NEAR: chains/near.md
         - XDC Chain: chains/xdc-chain.md
         - Tezos: chains/tezos.md
+        - Telos: chains/telos.md
         - XRP Ledger: chains/xrpl.md
       - Building Connectors:
         - Building Connectors: developers/connectors/index.md
@@ -339,6 +336,16 @@ nav:
         - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
         - Perp Connector QA Checklist:  developers/connectors/test-perp.md
         - Debugging & Testing Connectors: developers/connectors/debug.md
+    - Other Repos:
+      - Gateway:
+        - Gateway: gateway/index.md
+        - Installation: gateway/installation.md
+        - Testing Gateway: gateway/testing.md
+        - Setting up Gateway: gateway/setup.md
+        - Working with Tokens: gateway/tokens.md
+        - Running Strategies and Scripts: gateway/running-dex-bots.md
+        - Building Gateway Connectors: gateway/adding-dex-connectors.md
+      - Brokers: installation/broker.md
     - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
   - Academy:
@@ -347,12 +354,14 @@ nav:
     - All Articles: academy/all.md
   - Certification:
     - Certification: certification/index.md
+    - Certification Process: certification/process.md
     - Certifications List: certification/list.md
     - Botcamp ↗️: https://www.botcamp.xyz
     - Botcamp FAQ: botcamp/faq.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.0.1: release-notes/2.0.1.md
     - 2.0.0: release-notes/2.0.0.md
     - 1.28.0: release-notes/1.28.0.md
     - 1.27.0: release-notes/1.27.0.md

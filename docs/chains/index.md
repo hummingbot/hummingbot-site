@@ -25,6 +25,7 @@ Here are the current chain connectors in the codebase:
 | [Harmony](/chains/harmony) | EVM |
 | [Kujira](/chains/kujira) | Non-EVM |
 | [NEAR](/chains/near) | Non-EVM |
+| [Telos](/chains/telos) | Non-EVM |
 | [Tezos](/chains/tezos) | Non-EVM |
 | [XDC Chain](/chains/xdc-chain) |
 | [XRP Ledger](/chains/xrpl) | Non-EVM |

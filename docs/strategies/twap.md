@@ -6,12 +6,6 @@
 * Configs: [twap_config_map.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/twap/twap_config_map.py)
 * Maintainer: None
 
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
-
-Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
-
 ## 📝 Summary
 
 This strategy is a simple bot that places a series of limit orders on an exchange, while allowing users to control order size, price, and duration.

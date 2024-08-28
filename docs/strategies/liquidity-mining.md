@@ -4,13 +4,7 @@
 
 * Folder: [/hummingbot/strategy/liquidity_mining](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining)
 * Configs: [liquidity_mining_config_map.py](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy/liquidity_mining/liquidity_mining_config_map.py)
-* Maintainer: 
-
-## 🏆 Strategy Tier
-
-![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green)
-
-Community strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+* Maintainer: None
 
 ## 📝 Summary
 
