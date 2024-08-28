@@ -6,31 +6,27 @@ categories:
   - Announcements
 ---
 
-# Announcing the Release of the Updated dYdX V4 Connector in Hummingbot v2.1!
+# Announcing the New dYdX V4 Connector in Hummingbot!
 
 ![dYdX V4 Connector](dydx.png)
 
-We're thrilled to introduce the latest update to Hummingbot—our v2.1 release, featuring the brand-new dYdX V4 connector. This update enhances your trading experience by seamlessly integrating with the dYdX V4 API, bringing improved performance, stability, and additional features tailored for advanced market-making and algo trading strategies on the dYdX decentralized exchange.
+We're thrilled to introduce the brand-new dYdX V4 connector in the Hummingbot v2.0.1 release!, featuring the . This update seamlessly integrates Hummingbot with the dYdX V4 Chain, enabling users to run advanced market-making and algo trading strategies on dYdX!
+
+This release marks a significant milestone in the collaboration between the [Hummingbot Foundation](/about/) and the dYdX ecosystem. Earlier this year, we awarded a grant from the [dYdX Grants Program](https://dydxgrants.com/) to support the development of the dYdX V4 connector and to evangelize usage.
 
 <!-- more -->
 
-## Hummingbot Foundation x dYdX: A Collaborative Milestone
-
-This release marks a significant milestone in the collaboration between the [Hummingbot Foundation](/about/) and the dYdX ecosystem. Earlier this year, the Hummingbot Foundation was awarded a grant from the [dYdX Grants Program](https://dydxgrants.com/) to support the development of the dYdX V4 connector. This grant has enabled us to dedicate focused resources to ensure that our users can fully leverage the latest advancements in the dYdX protocol.
-
-The grant underscores dYdX's commitment to empowering its ecosystem through robust developer tools and community-driven innovation. We are proud to contribute to this initiative by providing a powerful and reliable connector that enhances the trading capabilities of our community.
-
-## Key Benefits of the dYdX V4 Connector
+## Key Benefits
 
 - **Access to a Leading Perp DEX**: This connector opens the door for thousands of market makers and algo traders who build on top of the Hummingbot framework to access and trade on dYdX, a leading decentralized perpetual contract exchange. This access empowers traders to tap into dYdX's deep liquidity and innovative trading features.
 - **Supported by the Latest Hummingbot V2 Framework**: The connector is fully integrated with the latest [Hummingbot V2 framework](/v2-strategies/), which includes powerful tools for backtesting and multi-bot deployment. This means traders can now optimize and deploy multiple trading strategies simultaneously, all while utilizing the advanced capabilities of the Hummingbot V2 infrastructure.
 - **Community-Driven Strategy Sharing**: The Hummingbot community now has the opportunity to develop and share dYdX-specific trading strategies and dashboard pages. This collaboration fosters innovation and helps traders leverage collective knowledge, making it easier to succeed on the dYdX platform.
 
-## 🛠️ Installation Instructions
+## Installation Instructions
 
-Due to some dependencies and potential software conflicts, installing the dYdX connector may be a bit more complex. However, we've simplified the process with clear instructions for both Docker and Source installations.
+Due to some dependency conflicts with other Hummingbot connectors, we have created a custom Docker image and custom scripts to help users install Hummingbot with dYdX.
 
-### Docker Installation
+### Docker
 
 1. **Open your `docker-compose.yml` file** (usually located in your Hummingbot project directory).
 2. **Update the image line** under the Hummingbot service:
@@ -43,7 +39,7 @@ Due to some dependencies and potential software conflicts, installing the dYdX c
         image: hummingbot/hummingbot:development_dydx
         ```
 
-### Source Installation
+### Source
 
 1. **Clone the Hummingbot repository**:
     ```bash
@@ -67,6 +63,8 @@ Due to some dependencies and potential software conflicts, installing the dYdX c
     ```
 
 ## Additional Resources
+
+This sponsorship underscores dYdX and Hummingbot's commitment to empowering the crypto ecosystem with robust tools for traders and developers. We are proud to contribute to this initiative by providing a powerful and reliable connector that enhances the trading capabilities of our community.
 
 For more detailed information on how to get started with the dYdX connector, please visit our [dYdX Connector Documentation](/exchanges/dydx/). We are also working on a more detailed connector guide and a YouTube tutorial video, which will be available shortly to help you maximize your trading experience on dYdX.
 
