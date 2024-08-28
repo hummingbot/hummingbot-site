@@ -244,6 +244,18 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 <div class="flex-container home">
   <div class="flex-item">
+    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/dydx-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/dydx-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/vega-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/vega-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
     <img src="/assets/logos/initialized-dark.png" class="dark-logo"/>
     <img src="/assets/logos/initialized-light.png" class="light-logo"/>
   </div>
@@ -254,14 +266,6 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
   <div class="flex-item">
     <img src="/assets/logos/bain-capital-dark.png" class="dark-logo"/>
     <img src="/assets/logos/bain-capital-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/vega-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/vega-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/1kx-dark.png" class="dark-logo"/>
