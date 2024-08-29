@@ -13,9 +13,9 @@ hide:
 
 -   #### :star: Featured
     
-    [![](/academy-content/coding-a-custom-v2-controller/cover.webp)](/academy-content/coding-a-custom-v2-controller/)
+    [![](/academy-content/coding-a-custom-v2-controller/cover.webp)](/academy-content/coding-a-custom-v2-controller-for-future-liquidations-on-binance/)
 
-    ## [Coding a Custom V2 Controller](/academy-content/coding-a-custom-v2-controller/)
+    ## [Coding a Custom V2 Controller](/academy-content/coding-a-custom-v2-controller-for-future-liquidations-on-binance/)
 
     Explore how to create a custom V2 Controller for Hummingbot
 
@@ -156,9 +156,9 @@ hide:
 
     ### [Top Beginner Misconceptions about Market Making](/academy-content/top-beginner-misconceptions-about-market-making/)
 
--   [![](/academy-content/discord-copy-trading-with-ai/cover.webp)](/academy-content/discord-copy-trading-with-ai/)
+-   [![](/academy-content/discord-copy-trading-with-ai/cover.webp)](/academy-content/leveraging-ai-for-automated-copy-trading-on-discord/)
 
-    ### [Leveraging AI for Automated Copy-Trading on Discord](/academy-content/discord-copy-trading-with-ai)    
+    ### [Leveraging AI for Automated Copy-Trading on Discord](/academy-content/leveraging-ai-for-automated-copy-trading-on-discord/)    
 
 </div>
 
