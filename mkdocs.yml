@@ -408,11 +408,11 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
     - Bounties: bounties/index.md
+    - Lifecyle of a Bounty: bounties/lifecycle.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+    - Bounty Pricing Guidance: bounties/prices.md
     - Bounty Sponsors Guide: bounties/sponsors.md
     - Bounty Contributors Guide: bounties/contributors.md
-    - Lifecyle of a Bounty: bounties/lifecycle.md
-    - Bounty Pricing Guidance: bounties/prices.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Governance:
     - Governance: governance/index.md
     - Polls: governance/polls.md
