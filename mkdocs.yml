@@ -325,17 +325,6 @@ nav:
         - Tezos: chains/tezos.md
         - Telos: chains/telos.md
         - XRP Ledger: chains/xrpl.md
-      - Building Connectors:
-        - Building Connectors: developers/connectors/index.md
-        - Exchange API Requirements: developers/connectors/build.md
-        - Connector Architecture: developers/connectors/architecture/index.md
-        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-        - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
-        - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
-        - Spot Connector QA Checklist: developers/connectors/test.md
-        - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
-        - Perp Connector QA Checklist:  developers/connectors/test-perp.md
-        - Debugging & Testing Connectors: developers/connectors/debug.md
     - Other Repos:
       - Gateway:
         - Gateway: gateway/index.md
@@ -344,14 +333,37 @@ nav:
         - Setting up Gateway: gateway/setup.md
         - Working with Tokens: gateway/tokens.md
         - Running Strategies and Scripts: gateway/running-dex-bots.md
-        - Building Gateway Connectors: gateway/adding-dex-connectors.md
       - Brokers: installation/broker.md
+    - Support: bounties/discord.md
     - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
   - Academy:
     - Academy: academy/index.md
     - Latest Articles: academy-content/index.md
     - All Articles: academy/all.md
+  - Developers:
+    - Developers: developers/index.md
+    - Contribution Guidelines: developers/contributions.md
+    - How to Fork Repos: developers/forking.md
+    - Building Connectors:
+      - Building CLOB Connectors: developers/connectors/index.md
+      - Exchange API Requirements: developers/connectors/build.md
+      - Connector Architecture: developers/connectors/architecture/index.md
+      - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
+      - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
+      - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
+      - Spot Connector QA Checklist: developers/connectors/test.md
+      - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
+      - Perp Connector QA Checklist:  developers/connectors/test-perp.md
+      - Debugging & Testing Connectors: developers/connectors/debug.md
+    - Building AMM Connectors: gateway/adding-dex-connectors.md
+    - Building Strategies: 
+      - Building Strategies: developers/strategies/index.md
+      - Key Concepts: developers/strategies/key-concepts.md
+      - Strategy Architecture: developers/strategies/architecture.md
+      - Strategy Configs: developers/strategies/config.md
+      - Tutorial: developers/strategies/tutorial.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Certification:
     - Certification: certification/index.md
     - Certification Process: certification/process.md
@@ -400,9 +412,6 @@ nav:
     - Bounty Contributors Guide: bounties/contributors.md
     - Lifecyle of a Bounty: bounties/lifecycle.md
     - Bounty Pricing Guidance: bounties/prices.md
-    - Contribution Guidelines: developers/contributions.md
-    - Forking the Repository: developers/forking.md
-    - Discord Support Program: bounties/discord.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Governance:
     - Governance: governance/index.md
@@ -417,6 +426,6 @@ nav:
     - Sponsors & Backers: about/sponsors.md
     - Reported Volumes: reporting.md
     - History: about/history.md
-    - 📆 LinkTree ↗️: https://linktr.ee/hummingbot
+    - 📆 Upcoming Events ↗️: https://lu.ma/hummingbot
   - Blog: 
     - blog/index.md
