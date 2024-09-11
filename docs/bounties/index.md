@@ -4,7 +4,7 @@ Hummingbot is a community-driven open source project that provides standardized 
 
 The Foundation utilizes HBOT-denominated bounties to fund the maintenance and development of the Hummingbot open source codebase.
 
-Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. See [Connector Bounties](/bounties/connectors.md) for more information.
+Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. See [External Bounties](/bounties/external.md) and [Lifecycle of a Bounty](./lifecycle.md)for more information.
 
 ## Bounties Board
 
@@ -27,9 +27,3 @@ The columns in the board include:
 * **Discord Leaderboard**: Leaderboard of users who earn HBOT for supporting the Discord community. See [Improvements to the Discord Support Program](/blog/improvements-to-the-discord-support-program) for more information.
 * **Connector Pots**: Lists available HBOT allocations for each CEX, DEX and Chain connector, determined by voting in [Polls](../governance/polls.md).
 * **Bounty Tracker**: Lists the status of in-progress and completed bounties
-
-## Bounties Process
-
-Hummingbot Foundation oversees the entire Bounties process, from working with sponsors to scope the bounty, finding and assigning the bounty to a qualified developer, performing engineering/QA review, and paying the developer. Since Bounties sprung out of an internal program that has rewarded 100+ unique contributors, the Foundation itself will continue to be an active sponsor of bounties.
-
-See [Lifecycle of a Bounty](./lifecycle.md) for more information.

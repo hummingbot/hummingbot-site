@@ -411,10 +411,10 @@ nav:
     - Bounties: bounties/index.md
     - External Bounties: bounties/external.md
     - Lifecyle of a Bounty: bounties/lifecycle.md
-    - Bounty Contributors Guide: bounties/contributors.md
-    - Completed Bounties: bounties/recent.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+    - Completed Bounties: bounties/completed.md
     - Bounties FAQ: bounties/faq.md
+    - Bounty Contributors Guide: bounties/contributors.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Governance:
     - Governance: governance/index.md
     - Polls: governance/polls.md
