@@ -363,6 +363,7 @@ nav:
       - Strategy Architecture: developers/strategies/architecture.md
       - Strategy Configs: developers/strategies/config.md
       - Tutorial: developers/strategies/tutorial.md
+    - Bounty Contributors Guide: bounties/contributors.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Certification:
     - Certification: certification/index.md
@@ -408,11 +409,12 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
     - Bounties: bounties/index.md
+    - External Bounties: bounties/external.md
     - Lifecyle of a Bounty: bounties/lifecycle.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-    - Bounty Pricing Guidance: bounties/prices.md
-    - Bounty Sponsors Guide: bounties/sponsors.md
     - Bounty Contributors Guide: bounties/contributors.md
+    - Completed Bounties: bounties/recent.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+    - Bounties FAQ: bounties/faq.md
   - Governance:
     - Governance: governance/index.md
     - Polls: governance/polls.md

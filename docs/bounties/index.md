@@ -2,19 +2,18 @@ Hummingbot is a community-driven open source project that provides standardized 
 
 ## What are Bounties?
 
-The Foundation utilizes bounties, denominated in both HBOT and other tokens, to fund the maintenance and development of Hummingbot exchange connectors and custom strategies for users.
+The Foundation utilizes HBOT-denominated bounties to fund the maintenance and development of the Hummingbot open source codebase.
 
-For external sponsors, Hummingbot Foundation manages bounties for a fee using the same process used to manage its own bounties. This offers a platform for exchanges, trading firms, and others seeking development work on exchange connectors, trading strategies, bug fixes, and related content/guides.
+Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. See [Connector Bounties](/bounties/connectors.md) for more information.
 
 ## Bounties Board
 
-![bounty](./bounty-board.png)
-
 [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1), a Kanban-style public Github project, is the source of truth for the status of all Hummingbot bounties, including both Foundation and community-created bounties.
+
+![bounty](./bounty-board.png)
 
 The columns in the board include:
 
-- **Potential**: Potential bounties that may be sponsored
 - **Open**: Open bounties that contributors can apply to work on
 - **Assigned**: Issue has been assigned to a contributor, who is expected to submit a pull request resolving it
 - **Submitted**: A pull request resolving the issue has been submitted by the assigned contributor
@@ -29,17 +28,8 @@ The columns in the board include:
 * **Connector Pots**: Lists available HBOT allocations for each CEX, DEX and Chain connector, determined by voting in [Polls](../governance/polls.md).
 * **Bounty Tracker**: Lists the status of in-progress and completed bounties
 
-## Lifecycle of a Bounty
+## Bounties Process
 
 Hummingbot Foundation oversees the entire Bounties process, from working with sponsors to scope the bounty, finding and assigning the bounty to a qualified developer, performing engineering/QA review, and paying the developer. Since Bounties sprung out of an internal program that has rewarded 100+ unique contributors, the Foundation itself will continue to be an active sponsor of bounties.
 
 See [Lifecycle of a Bounty](./lifecycle.md) for more information.
-
-## Bounty Wallets
-
-In order to fund the bounty, the Sponsor should send the total bounty amount to a designated Foundation wallet:
-
-* Ethereum Mainnet: 0x60D581aEa0644e74df60c7555e5166d32665d6b6
-* Binance Smart Chain: 0xE517b826a26B439eCE92f3220628eC007049d915
-
-Since HBOT is an Ethereum ERC-20 token only, any HBOT-denominated bounties must be sent to the Ethereum Mainnet wallet.
