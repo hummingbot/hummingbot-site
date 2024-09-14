@@ -70,6 +70,10 @@ hide:
 
     ### [Using Dexalot with Hummingbot](/academy-content/using-dexalot-with-hummingbot/)
 
+-   [![](/academy-content/posts/using-dydx-v4-with-hummingbot/cover.png)](/academy-content/using-dydx-v4-with-hummingbot/)
+
+    ### [Using dYdX v4 with Hummingbot](/academy-content/using-dydx-v4-with-hummingbot/)
+
 </div>
 
 ---
