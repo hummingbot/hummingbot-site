@@ -1,62 +1,49 @@
 ---
-date: 2024-09-05
+date: 2024-09-18
 authors:
   - foundation
 categories:
-  - Quickstart Guides
+  - Connector Guides
 tags:
-  - Guides
+  - Connector Guides
 ---
 
 # Using dYdX v4 with Hummingbot
 
-![cover](cover.webp)
+![cover](dydx-connector-guide.png)
 
+Welcome to the new dYdX v4 Hummingbot Connector Guide, your comprehensive resource for integrating and trading on dYdX's perpetual contracts using Hummingbot. Using the latest version of dYdX Chain based on the Cosmos SDK and Tendermint Proof-of-stake consensus protocol, dYdX v4 improves the trading experience with more seamless onboarding, enhanced security, and improved speed and performance!
 
-Welcome to the dYdX v4 Perpetual Complete Connector Guide, your comprehensive resource for integrating and trading on dYdX's perpetual contracts using Hummingbot. With its latest version, dYdX v4, the platform brings even more robust features, providing greater scalability, enhanced security, and improved performance.
-
-In this guide, we'll walk you through the process of setting up and optimizing your Hummingbot strategy to interact with dYdX v4 Perpetuals. Whether you're a seasoned algo-trader or just starting with automated strategies, this tutorial will give you the tools to leverage Hummingbot’s customizable trading bots on one of the most cutting-edge decentralized exchanges.
-
-Let’s dive into the step-by-step process and unlock the full potential of Hummingbot with dYdX v4!
+In this guide, we'll walk you through the process of integrating your dYdX account into Hummingbot and running a directional algorithmic trading bot. Let's dive in!
 
 <!-- more -->
 
-
-## Connect Wallet to dYdX
+## Connecting Your MetaMask Wallet to dYdX
 
 *Note: dYdX supports multiple wallets, but for this guide, we'll use **MetaMask**, one of the most popular Ethereum wallets. MetaMask allows users to interact with dYdX via its browser extension or mobile app.*
 
-### Connect MetaMask
+### Install MetaMask
 
 Ensure MetaMask is Installed and Set Up
 
-- If you haven’t already, download and install the MetaMask browser extension or mobile app.
-- Create a new wallet or import an existing one.
+If you haven’t already, download and install the [MetaMask](https://metamask.io/) browser extension or mobile app. Create a new wallet or import an existing one.
 
-Visit the dYdX Website
+### Connect Your Wallet to dYdX
 
-- Open your web browser and go to [https://dydx.exchange/](https://dydx.exchange/).
-
-Connect Your Wallet
-
-- On the dYdX homepage, click the **"Connect Wallet"** button, typically located in the top-right corner of the page.
+Open your web browser and go to [https://dydx.exchange/](https://dydx.exchange/). On the dYdX homepage, click the **"Connect Wallet"** button, typically located in the top-right corner of the page.
 
    [![image](1.png)](1.png)
 
-- From the list of available options, select **"MetaMask"**.
+From the list of available options, select **"MetaMask"**.
 
    [![image](2.png)](2.png)
 
-Authorize the Connection
-
-- MetaMask will open a pop-up asking you to confirm the connection. Review the details and click **"Connect"** or **"Confirm"**.
+MetaMask will open a pop-up asking you to confirm the connection.
 
    [![image](3.png)](3.png)  
    [![image](4.png)](4.png)
 
-Sign Transaction
-
-- After the wallet is connected, dYdX will prompt you to sign a message to generate the dYdX Chain Wallet. Once you’ve reviewed the details, click **"Sign"** or **"Confirm"**.
+After the wallet is connected, dYdX will prompt you to sign a message to generate the dYdX Chain Wallet.
 
    [![image](5.png)](5.png)  
    [![image](6.png)](6.png)
@@ -69,28 +56,29 @@ Once your wallet is connected, you will need to deposit USDC into your dYdX acco
 
 ### Get dYdX Chain Address
 
-- After connecting, locate your **dYdX Chain Address** in the wallet connection settings. Copy this address and store it securely for future reference.
+After connecting, locate your **dYdX Chain Address** in the wallet connection settings. Copy this address and store it securely for future reference.
 
    [![image](9.png)](9.png)
 
-### Get Secret Passphrase
+### Get dYdX Secret Phrase
 
-- To export your secret passphrase, go to the wallet connection settings dropdown and click **"Export Secret Phrase"**.
+To export your secret passphrase, go to the wallet connection settings dropdown and click **"Export Secret Phrase"**.
 
    [![image](10.png)](10.png)
 
-- A window will appear. Check the box to confirm that you understand the risks. There may be a short delay before the export button becomes available.
+A window will appear. Check the box to confirm that you understand the risks. There may be a short delay before the export button becomes available.
 
    [![image](11.png)](11.png)
 
-- Once available, copy the secret phrase and store it safely. You will need this phrase later to connect to Hummingbot.
+Once available, copy the secret phrase and store it safely in a secure location. You will need this phrase later to connect to Hummingbot.
 
 
-## Connect Hummingbot to dYdX
+## Using dYdX with Hummingbot Client
 
-At present, there are some dependency issues when installing Hummingbot for dYdX, which requires a few additional steps due to software conflicts. Below are simplified instructions to get you set up quickly, whether you're using Docker or Source.
+!!! note "Special dYdX Build"
+    Currently, there are dependency conflicts between the dYdX v4 connector and the other Hummingbot exchange connectors. For this reason, we maintain a dedicated build of Hummingbot that is optimized for use with dYdX v4. Below are simplified instructions to get you set up quickly, whether you're using Docker or Source.
 
-*Note: This method covers the standalone version (CLI) of Hummingbot. If you prefer to use the Dashboard to launch instances, you can skip this section and go to the Dashboard guide.*
+Below, we show you how to add your dYdX credentials to the command-line Hummingbot client. If you prefer to use dYdX v4 with the new Hummingbot Dashboard, go to [Using dYdX with Dashboard](#using-dydx-with-dashboard).
 
 ### Docker Setup
 
@@ -177,10 +165,7 @@ At present, there are some dependency issues when installing Hummingbot for dYdX
 
 ### Add Keys to Hummingbot
 
-To connect Hummingbot to dYdX's v4 perpetual market, you'll need the following:
-
-- **dYdX v4 secret passphrase** (24 words)
-- **dYdX v4 chain address** (starts with `dydx`)
+To connect Hummingbot to dYdX's v4 perpetual market, you'll need the dYdX v4 secret phrase and chain address from above.
 
  From within the Hummingbot client, run the following command to start the connection process:
 
@@ -195,7 +180,7 @@ To connect Hummingbot to dYdX's v4 perpetual market, you'll need the following:
    Enter your dYdX v4 chain address (starts with dydx) >>>
    ```
 
- If the credentials are correct, you’ll see the following confirmation message:
+ If the credentials are correct, you'll see the following confirmation message:
 
    ```bash
    You are now connected to dydx_v4_perpetual
@@ -211,7 +196,7 @@ To connect Hummingbot to dYdX's v4 perpetual market, you'll need the following:
 
 ### Run a Strategy
 
-For this example, we’ll use the **perpetual_market_making** strategy (v1).
+For this example, we'll use the **perpetual_market_making** strategy (v1).
 
  **Create a New Strategy**
 
@@ -286,7 +271,9 @@ For this example, we’ll use the **perpetual_market_making** strategy (v1).
 For more details on strategy configurations and additional options that are not covered during initial creation, refer to the [Perpetual Market Making](../../../strategies/perpetual-market-making.md) documentation.
 
 
-## Using dYdX with the Dashboard
+## Using dYdX with Hummingbot Dashboard
+
+Hummingbot Dashboard is a web-based interface for Hummingbot introduced recently in Hummingbot 2.0 that allows you to perform backtesting, visualize your portfolio, and deploy/manage multiple bots. Since each bot is a Docker instance of the standard Hummingbot client, you can use the same credentials and API keys as the CLI method above.
 
 ### Installation
 
@@ -381,7 +368,7 @@ Before running a bot, you need to generate a configuration. Head over to the **C
 After setting your config:
 
 1. Scroll down and click **Upload** to save your configuration to the BackendAPI.
-2. Note: Since dYdX doesn't provide a candles feed, backtesting for this strategy isn’t supported. If you're using a strategy that requires candle data, you'll need to configure a different exchange for your candles feed.
+2. Note: Since dYdX doesn't provide a candles feed, backtesting for this strategy isn't supported. If you're using a strategy that requires candle data, you'll need to configure a different exchange for your candles feed.
 
 Once uploaded, navigate to the **Deploy V2** page to launch your bot.
 
@@ -411,7 +398,7 @@ It also shows active controllers and the current configuration for each bot. You
 
 [![image](19.png)](19.png)
 
-#### Stopping Instances
+### Stopping Instances
 
 To stop a bot:
 
