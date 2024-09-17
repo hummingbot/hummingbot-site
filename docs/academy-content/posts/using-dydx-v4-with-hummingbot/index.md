@@ -196,58 +196,80 @@ To connect Hummingbot to dYdX's v4 perpetual market, you'll need the dYdX v4 sec
 
 ### Run a Strategy
 
-For this example, we'll use the **perpetual_market_making** strategy (v1).
+For this example, we'll use the [**bollinger_v1**](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/bollinger_v1.py) directional trading controller.
 
- **Create a New Strategy**
+ **Create a controller config**
 
-   Run the `create` command from within the Hummingbot client:
+   Run the `create` command from within the Hummingbot client to configure the controller:
 
    ```bash
-   create
+   create --controller-config directional_trading.bollinger_v1
    ```
 
- **Select the strategy:**
+ **Create the configuration:**
 
-   - Choose **perpetual_market_making** when prompted for the strategy type.
-   - Select **dydx_v4_perpetual** as the derivative connector exchange.
+   You will be prompted to provide various configuration parameters. Feel free to adjust the settings based on your preferences: 
 
+   - Select **dydx_v4_perpetual** as the name of the exchange you want to trade on.
+
+   ```
+   Enter the total amount in quote asset to use for trading >>>
+   Enter the name of the exchange to trade on >>> dydx_v4_perpetual
+   Enter the trading pair to trade on >>>
+   Enter the maximum number of executors per side >>>
+   Set the leverage to use for trading >>>
+   Enter the stop loss >>>
+   Enter the take profit >>>
+   Enter the time limit in seconds >>>
+   Enter the order type for taking profit >>>
+   Enter the trailing stop as activation_price, trailing delta >>> 
+   ```
+   
+   - When prompted for the connector with the candles data, make sure to select a different connector other than **dYdX** since it doesn't currently support candles feed.
+
+   ```
+   Enter the connector for the candles data, leave empty to use the same exchange as the connector:
+   Enter the trading pair for the candles data, leave empty to use the same trading pair as the connector:
+   
+   ```
    [![image](12.png)](12.png)
 
- **Configure the Strategy**
 
-   You will be prompted to provide various configuration parameters. Feel free to adjust the settings based on your preferences:
-
-   ```
-   Enter the trading pair you would like to provide liquidity on [exchange]:
-   How much leverage do you want to use?
-   Which position mode do you want to use? (One-way/Hedge):
-   How far away from the mid-price do you want to place the first bid order?
-   How far away from the mid-price do you want to place the first ask order?
-
-   How often do you want to cancel and replace bids and asks (in seconds)?
-   What is the amount of [base_asset] per order?
-   At what spread from the entry price do you want to place a short order to reduce position?
-   At what spread from the position entry price do you want to place a long order to reduce position?
-
-   At what spread from the position entry price do you want to place a stop-loss order?
-   How much time should pass before refreshing a stop-loss order that has not been executed? (in seconds):
-   How much buffer should be added to the stop-loss order price to account for slippage (Enter 1 for 1%)?
-   ```
+  - Once the configuration is done, give the controller config a name or use the default one:
 
    [![image](21.png)](21.png)
 
- **Start the Strategy**
+ **Create a script config**
 
-   Once the configuration is complete, give your strategy a name and hit <kbd>Enter</kbd>.
+   - Next we have to create the script config for the **v2_with_controllers** generic script to run our controller config.
 
-   To start the strategy, use the following command:
+   - To create the script config, use the following command:
 
    ```bash
-   start
+   create --script-config v2_with_controllers
    ```
 
-   [![image](22.png)](22.png)
+   [![image](script.png)](script.png)
 
+   - Make sure to enter the file name of the controller config we created earlier 
+
+   [![image](script2.png)](script2.png)
+
+   - Lastly, give the script config a name
+
+   [![image](script3.png)](script3.png)
+
+
+ **Start the strategy**
+
+   - To start the strategy, use the following command. Note - if your config file has a different file name then replace the config name below
+
+   ```bash
+   start --script v2_with_controllers.py --conf conf_v2_with_controllers_1.yml
+   ```
+
+   [![image](22.png)](22.png) 
+ 
  **Monitor the Strategy**
 
    You can monitor your bot by checking the logs for any errors and running the **status** command to view the current order status:
@@ -260,7 +282,7 @@ For this example, we'll use the **perpetual_market_making** strategy (v1).
 
  **Stop the Bot**
 
-   To stop the bot, use the **stop** command:
+   To stop the bot, use the **stop** command. Please note that the bot will need some time to create orders to close out the positions. 
 
    ```bash
    stop
@@ -268,7 +290,7 @@ For this example, we'll use the **perpetual_market_making** strategy (v1).
 
    [![image](24.png)](24.png)
 
-For more details on strategy configurations and additional options that are not covered during initial creation, refer to the [Perpetual Market Making](../../../strategies/perpetual-market-making.md) documentation.
+For more details on V2 Strategies or other available controllers, check out the Controllers section of [V2 Strategies](../../../v2-strategies/controllers/index.md) documentation. Please note that since dYdX only supports **one-way mode** some V2 Strategies that use Hedge mode may not work correctly with the controller.    
 
 
 ## Using dYdX with Hummingbot Dashboard
