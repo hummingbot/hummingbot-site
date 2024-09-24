@@ -337,10 +337,6 @@ nav:
     - Support: bounties/discord.md
     - Glossary: glossary/index.md
     - Troubleshooting: troubleshooting.md
-  - Academy:
-    - Academy: academy/index.md
-    - Latest Articles: academy-content/index.md
-    - All Articles: academy/all.md
   - Developers:
     - Developers: developers/index.md
     - Contribution Guidelines: developers/contributions.md
@@ -431,3 +427,7 @@ nav:
     - 📆 Upcoming Events ↗️: https://lu.ma/hummingbot
   - Blog: 
     - blog/index.md
+  - Academy:
+    - Academy: academy/index.md
+    - Latest Articles: academy-content/index.md
+    - All Articles: academy/all.md

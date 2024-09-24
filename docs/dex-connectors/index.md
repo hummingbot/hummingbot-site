@@ -1,62 +1,39 @@
-Decentralized exchange (DEX) connectors integrate into a decentralized or non-custodial exchange's WebSocket API, enabling standardized order placement/cancellation and order book/blockchain data fetching from the perspective of Hummingbot strategies.
+## What are AMM Connectors?
 
-There are two types of DEX connectors in Hummingbot:
+Automated Market Maker (AMM) connectors integrate into a decentralized exchange's Javascript SDK or smart contracts, enabling standardized transaction placement and blockchain data fetching from the perspective of Hummingbot strategies. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book and blockchain data, as well as sending and cancelling transactions and orders.
 
-* **Client**: Connectors that integrate to a DEX's WebSocket/REST API directly from the Hummingbot client
-* **Gateway**: Connectors that integrateto a DEX's smart contract or Javascript/Typescript SDK the [Gateway](/gateway) module (REST)
+AMM connectors allow users to create [Strategies](/strategies) and [Scripts](/scripts) that can operate on different decentralized exchanges without modification.
 
-We recommend that Central Limit Order Book (CLOB) exchanges utilize direct client connectors for improved speed and simplicity, while Automated Market Maker (AMM) exchanges should use Gateway as it is designed to interface with smart contracts.
+## AMM Connector Types
 
-## DEX Connector Governance
+Currently, Hummingbot supports AMM connectors that use REST-based interactions with blockchain networks and their automated market maker (AMM) and CLOB DEXs, intermediated by the [Gateway](/gateway) middleware. Each connector is a folder in [`src/connectors`](https://github.com/hummingbot/gateway/tree/main/src/connectors). See [AMM Connectors](/dex-connectors) for more information about AMM connectors.
+
+## AMM Connector Maintenance
+
+AMM connectors require ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as well as improvements to the Hummingbot connector standard.
+
+Hummingbot Foundation maintains each reference connector standard and utilizes a community-based maintenance process. We assign [Bounties](/bounties) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
+
+## AMM Connector Governance
+
+Each quarter, the [AMM Connector Poll](/governance/polls) allocates HBOT bounties toward the top AMM connectors and determines which connectors should be included in the codebase going forward.
 
 Connectors may be added by community members via [New Connector Proposals](/governance/proposals), which require a minimum HBOT balance to create.
 
-Each quarter, the [DEX Connector Poll](/governance/polls) allocates HBOT bounties toward the top CEX connectors and determines which connectors should be included in the codebase going forward.
-
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
-## DEX Connector Standards
+Polls also decide which connectors should be included in the codebase for the next quarterly [Epoch](../governance/epochs.md).
 
-Client DEX connectors should conform to the latest `spot` and `perp` connector standards. See [Building Connectors](/developers/connectors) for more information.
+## Building and Contributing AMM Connectors
 
-For Gateway DEX connectors to be compatible with Hummingbot strategies, they need to support the API endpoints required by the connector classes listed in [`/hummingbot/hummingbot/connector/gateway`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/gateway):
+For developers building and contributing AMM connectors, see the pages below for each connector standard:
 
-* `amm`
-* `amm_lp`
-* `amm_perpetual`
-* `clob_perp`
-* `clob_spot`
+* [Building AMM Connectors](/gateway/adding-dex-connectors)
 
-## List of DEX Connectors
+Developers may submit connectors for inclusion into the Hummingbot codebase via a [New Connector Proposal](/governance/proposals) that contains the link to a valid Github pull request. If the proposal is approved by HBOT holders, Hummingbot Foundation will review and merge the pull request into the codebase.
 
-Here are the current DEX connectors in the codebase:
+See [Contribution Guidelines](/developers/contributions/) for the process to get connectors and other pull requests merged into the codebase.
 
-| Exchange | Type | Connection | Connector Guide |
-|----------|------|------------|---|
-| [dYdX](../exchanges/dydx.md) | CLOB | Client |
-| [Hyperliquid](../exchanges/hyperliquid.md) | CLOB | Client | [Guide](/academy-content/using-hyperliquid-vaults-with-hummingbot)
-| [Injective Helix](../exchanges/injective.md) | CLOB | Client |
-| [Polkadex](../exchanges/polkadex.md) | CLOB | Client | [Guide](/academy-content/using-polkadex-with-hummingbot)
-| [Vega](../exchanges/vega.md) | CLOB | Client | [Guide](/academy-content/using-vega-protocol-with-hummingbot)
-| [Vertex](../exchanges/vertex.md) | CLOB | Client |
-| [Dexalot](../exchanges/dexalot.md) | CLOB | Gateway | [Guide](/academy-content/using-dexalot-with-hummingbot)
-| [XRP Ledger](../exchanges/xrpl.md) | CLOB | Gateway |
-| [Curve](../exchanges/curve.md) | AMM | Gateway |
-| [Balancer](../exchanges/balancer.md) | AMM | Gateway |
-| [Mad Meerkat](../exchanges/mad-meerkat.md) | AMM | Gateway |
-| [OpenOcean](../exchanges/openocean.md) | AMM | Gateway |
-| [Osmosis](../exchanges/osmosis.md) | AMM | Gateway | [Guide](/academy-content/using-osmosis-with-hummingbot)
-| [Pancakeswap](../exchanges/pancakeswap.md) | AMM | Gateway |
-| [Pangolin](../exchanges/pangolin.md) | AMM | Gateway |
-| [Plenty](../exchanges/plenty.md) | AMM | Gateway |
-| [Quickswap](../exchanges/quickswap.md) | AMM | Gateway |
-| [Ref Finance](../exchanges/ref.md) | AMM | Gateway |
-| [Sushiswap](../exchanges/sushiswap.md) | AMM | Gateway |
-| [Tinyman](../exchanges/tinyman.md) | AMM | Gateway |
-| [Telos](../exchanges/telos.md) | AMM | Gateway |
-| [TraderJoe](../exchanges/traderjoe.md) | AMM | Gateway |
-| [Uniswap](../exchanges/uniswap.md) | AMM | Gateway |
-| [VVS Finance](../exchanges/vvs.md) | AMM | Gateway |
-| [XSwap](../exchanges/xswap.md) | AMM | Gateway |
-| [Carbon](../exchanges/carbon.md) | AMM | Gateway |
+## AMM Connector Standards
 
+For AMM connectors in the Gateway module to be compatible with Hummingbot strategies, they need to support the API endpoints required by the connector classes listed in [`/hummingbot/hummingbot/connector/gateway`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/gateway).
