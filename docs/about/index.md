@@ -1,75 +1,57 @@
-[![org_structure](org_structure.png)](org_structure.png)
+[Established](/blog/introducing-the-hummingbot-foundation/) in October 2021, Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the [HBOT governance system](/blog/faq-on-hbot-and-hummingbot-governance/).
 
-Hummingbot is an open source framework for building high-frequency market making and algorithmic trading bots, maintained by [Hummingbot Foundation](./foundation.md) and supported by key [sponsors and backers](./sponsors.md).
+## Bylaws
 
-Our mission is to make sophisticated trading strategies and technology accessible to everyone and to level the playing field for traders around the globe Here are the core principles that underpin Hummingbot’s development:
+The primary purpose of Hummingbot Foundation is to enable a decentralized, bazaar-style model of software development for the Hummingbot codebase. The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
 
-* **Open Source**: The Hummingbot codebase is publicly available, auditable, and free
-* **Modular**: Hummingbot modules can be independently built, used, and maintained by community members
-* **Extensible**: Users can use Hummingbot to create any trading strategy on any exchange and blockchain
-* **All Levels**: Hummingbot is designed for use by individuals and professionals alike
+## Staff
 
-## History
+The Foundation maintain a lean, globally-distributed team who handle the day-to-day operations of maintaining the Hummingbot codebase and the Foundation governance system, such as:
 
-Hummingbot was originally built and open sourced by [CoinAlpha](https://coinalpha.com) in April 2019. Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies into a shared, community-maintained codebase. Read the original [Hummingbot whitepaper](/blog/hummingbot-whitepaper/) and the [origin story](/blog/from-hedge-fund-to-market-making-bot-the-hummingbot-origin-story/) blog post for more details.
+* Reviewing and merging pull requests
+* Administering monthly polls and elections
+* Maintaining the Snapshot voting system
+* Managing the Discord server
+* Assigning and managing developer bounties
+* Packaging monthly releases into Docker containers for various environments
+* Maintaining and updating the Hummingbot website and documentation site
 
-Later, the Hummingbot team wrote the [Liquidity Mining whitepaper](/blog/liquidity-mining-whitepaper/) that described an economic model for decentralized market making and subsequently launched the [Miner liquidity mining platform](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/).
+## Board of Directors
 
-In December 2021, CoinAlpha [spun off](/blog/introducing-the-hummingbot-foundation/) the Hummingbot Foundation as a new open source entity that maintains the Hummingbot Github repository and administers a decentralized, community-driven governance system utilizing the [HBOT token](/blog/introducing-the-hummingbot-governance-token-hbot/).
+The Board of Directors provides oversight over the Hummingbot Foundation and its day-to-day activities, along with managing the HBOT treasury.
 
-Today, Hummingbot is a bazaar-style open source project with many contributors and users around the world, both individual and professional.
+### Current Members
 
-## Community Calls
+Elected for a 12-month term in February 2024 in [HGP-54](https://snapshot.org/#/hbot.eth/proposal/0x2fc72475c6aef6f8a6261f197833d5a80f6ee3b2971455a17a2223a5ebfedf06), the Board is comprised of the following individuals:
 
-Each month, we livestream one or more community calls on our [Discord](https://discord.gg/hummingbot) server. Afterwards, we post recordings on our [YouTube](https://youtube.com/c/hummingbot) channel.
+| Name              | Hummingbot Discord Handle  | Ethereum Address |
+|-------------------|-----------------------------------------|-------------|
+| Brett Gibson      | brettdg | [eth:0x64b..4C3](https://etherscan.io/address/0x64b8457C3977a2f8ca7D7C00b0435aED27CA34C3)
+| Carlo Las Marias      | carlolm | [eth:0x03a..C79](https://etherscan.io/address/0x03aD70b7F9E577AE73a533470C2c65d537007C79)
+| Hoang La          | w0jak | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
+| Maxime Fages      | engineeredjoy | [eth:0xD58..527](https://etherscan.io/address/0xD582C19D593897aF38aa263dFFae151BfD42D527)
+| Michael Feng      | fengtality | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
 
-Check out the [Hummingbot Events Calendar](https://lu.ma/u/hummingbot) for links to these monthly calls and other upcoming events.
+### Role & Responsibilities
 
-## Community Channels
+The Board is an independent committee that oversees the day-to-day administration of the Hummingbot Foundation and manages the multi-signature wallet of the HBOT treasury.
 
-For security purposes, ensure that you use only the official channels below to access Hummingbot content and code:
+The Board conducts quarterly virtual board meetings to discuss Foundation progress and strategy. In addition, the Board regularly corresponds over group chat to handle multi-signature transactions related to HBOT distributions.
 
-* [Newsletter](https://hummingbot.substack.com): Our weekly newsletter contains news, upcoming events, and updates about contributions from the global Hummingbot community
-* [Discord](https://discord.gg/hummingbot): Discord is the primary hub for the Hummingbot community - announcements, user support, trading strategies, connectors, and other discussions. Official announcements are only posted in the **#announcements** channel.
-* [Youtube](https://www.youtube.com/c/hummingbot): Our YouTube account contains videos that teach you how to use Hummingbot, livestreams of community calls, and interviews with members of the Hummingbot community.
-* [Twitter](https://twitter.com/_hummingbot): We post regular news and updates on our Twitter account.
+### Requirements
 
-!!! danger "No DMs"
-    Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
+Serving on the Board is open to anyone in the Hummingbot community. As board members are elected by HBOT holders, board candidates should have some past experience with Hummingbot and its community.
 
-## Public Resources
+Since all transactions from the Foundation HBOT treasury require 3 out of 5 board signatures, board members should know how to manage a Gnosis multi-signature wallet.
 
-We maintain and keep updated the following boards, sheets and other resources:
+Per the Foundation bylaws, there is no salary for serving on the Board of Directors.
 
-* [Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52): A public dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report.
+### Election Process
 
-* [HBOT Tracker](https://docs.google.com/spreadsheets/u/2/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing): A public Google Sheet maintained by the Foundation, this shows you the real-time HBOT circulating supply, approved proposals, active bounties, and HBOT distributions.
+Hummingbot Foundation re-elects its Board of Directors every 12 months via Governance Proposal, following a process similar to that of other [Polls](/governance/polls):
 
-* [Hummingbot Events Calendar](https://hummingbot-foundation.notion.site/5c767683f80b45c4934aa8cf755a2ff5?v=4dd057ac162f49c9813e11cec0688204): Upcoming release dates, monthly polls, community calls, and other events.
+* **Nomination thread**: One month before the election, the Foundation will post a thread in [Discord](https://discord.gg/hummingbot) where past board members and anyone else can apply for a Board seat
 
-* [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1): A public Github board for bug fixes and proposed enhancements with development bounties attached to them.
+* **Election starts**: We will create the election as a [Hummingbot Governance Proposal](/governance/proposals) with everyone who applied via the Discord thread. Similar to other polls, this election uses Snapshot gasless voting and the quadratic voting allocation method.
 
-* [Pull Request Status](https://github.com/orgs/hummingbot/projects/1): A public Github board for active pull requests that are being voted on, reviewed, and merged.
-
-## Code Repositories
-
-All Hummingbot Foundation code is located in the official Github and DockerHub accounts. Below are the only code repositories used to release official versions of Hummingbot and to communicate news and updates to HBOT token holders. Please download Hummingbot and Hummingbot-related software from only these official sources.
-
-### Github
-
-The Foundation Github organization is located at <https://github.com/hummingbot>. Its repositories include:
-
-* [`hummingbot`](https://github.com/hummingbot/hummingbot): Hummingbot core client and CEX connectors
-* [`gateway`](https://github.com/hummingbot/gateway): DEX connector middleware
-* [`dashboard`](https://github.com/hummingbot/dashboard): Hummingbot Dashboard control center app
-- [`deploy-examples`](https://github.com/hummingbot/deploy-examples): Deployment example for multiple bots
-* [`hummingbot-site`](https://github.com/hummingbot/hummingbot-site): Hummingbot website and documentation site
-* [`awesome-hummingbot`](https://github.com/hummingbot/awesome-hummingbot): All the awesome Hummingbot links
-* [`community-tools`](https://github.com/hummingbot/community-tools): Tools and resources created by the Hummingbot community
-
-### DockerHub
-
-Our [DockerHub](https://hub.docker.com/r/hummingbot/) publishes Docker images for:
-
-  * `hummingbot`: `master` (latest) and `development` images of [Hummingbot](https://github.com/hummingbot/hummingbot) starting with version 1.5.0
-  * `gateway`: `main` (latest) and `development` images of [Gateway](https://github.com/hummingbot/gateway) starting with version 1.13.0
+* **Election ends**: The election ends in 1 week, and the top 5 vote-getters will be seated afterwards on the Board of Directors for a 1-year term.

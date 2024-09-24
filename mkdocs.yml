@@ -66,14 +66,6 @@ plugins:
       blog_dir: blog
       blog_toc: true
       post_url_format: "{slug}"
-  - blog:
-      blog_dir: academy-content
-      blog_toc: false
-      archive_toc: true
-      categories_toc: true
-      post_url_format: "{slug}"
-  - tags:
-      tags_file: academy/all.md
 
 extra:
   homepage: https://hummingbot.org
@@ -162,14 +154,12 @@ nav:
     - Docs: docs/index.md
     - Installation:
       - Install via Docker: installation/docker.md
-      - Install from Source:
-        - Linux: installation/linux.md
-        - MacOS: installation/mac.md
-        - Windows: installation/windows.md      
+      - Install from Source (Linux): installation/linux.md
+      - Install from Source (MacOS): installation/mac.md
+      - Install from Source (Windows): installation/windows.md      
       - Post-Installation: installation/post-installation.md
-      - Using Debugger Tools: installation/debug.md
-    - Quickstart:
-      - Quickstart: installation/hummingbot-deploy/quickstart.md
+    - Guides:
+      - Guides: guides/index.md
       - Script Walkthrough: v2-strategies/walkthrough.md
       - Controller Walkthrough: v2-strategies/walkthrough-controller.md
     - Strategies V2:
@@ -296,28 +286,39 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
-    - Dashboard:
-      - Dashboard: dashboard/index.md
+    - Hummingbot Dashboard:
+      - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
       - Viewing Portfolio: dashboard/portfolio.md
       - Configuring Strategies: dashboard/config.md
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Gateway:
-      - Gateway: gateway/index.md
+    - Gateway AMM Middleware:
+      - Gateway AMM Middleware: gateway/index.md
       - Installation: gateway/installation.md
       - Testing Gateway: gateway/testing.md
       - Setting up Gateway: gateway/setup.md
       - Working with Tokens: gateway/tokens.md
       - Running Strategies and Scripts: gateway/running-dex-bots.md
-    - Support: bounties/discord.md
+    - Training & Certification:
+      - Training & Certification: certification/index.md
+      - Certification Process: certification/process.md
+      - Certifications List: certification/list.md
+      - Botcamp ↗️: https://www.botcamp.xyz
+      - Botcamp FAQ: botcamp/faq.md
+    - Community:
+      - Community: community/index.md
+      - Earn HBOT by Answering Questions: community/support.md
+      - 📆 Upcoming Events ↗️: https://lu.ma/hummingbot
+    - FAQ: faq.md
     - Glossary: glossary/index.md
-    - Troubleshooting: troubleshooting.md
+    - Reported Volumes: reporting.md
   - Developers:
     - Developers: developers/index.md
     - Contribution Guidelines: developers/contributions.md
     - How to Fork Repos: developers/forking.md
+    - Using Debugger Tools: installation/debug.md
     - Building CLOB Connectors:
       - Building CLOB Connectors: developers/connectors/index.md
       - Exchange API Requirements: developers/connectors/build.md
@@ -337,14 +338,8 @@ nav:
       - Strategy Configs: developers/strategies/config.md
       - Tutorial: developers/strategies/tutorial.md
     - Brokers Module: installation/broker.md
-    - Earning Bounties: bounties/contributors.md
+    - How to Earn Bounties: bounties/contributors.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-  - Certification:
-    - Certification: certification/index.md
-    - Certification Process: certification/process.md
-    - Certifications List: certification/list.md
-    - Botcamp ↗️: https://www.botcamp.xyz
-    - Botcamp FAQ: botcamp/faq.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
@@ -381,28 +376,25 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
-  - Bounties: 
-    - Bounties: bounties/index.md
-    - External Bounties: bounties/external.md
-    - Lifecyle of a Bounty: bounties/lifecycle.md
-    - Completed Bounties: bounties/completed.md
-    - Bounties FAQ: bounties/faq.md
-    - Bounty Contributors Guide: bounties/contributors.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-  - Governance:
-    - Governance: governance/index.md
-    - Polls: governance/polls.md
-    - Proposals: governance/proposals.md
-    - Epochs: governance/epochs.md
-    - Whitepaper: governance/whitepaper.md
-  - About:
-    - About: about/index.md
-    - FAQ: faq.md
-    - Foundation: about/foundation.md
-    - Sponsors & Backers: about/sponsors.md
-    - Reported Volumes: reporting.md
-    - History: about/history.md
-    - 📆 Upcoming Events ↗️: https://lu.ma/hummingbot
+  - Foundation:
+    - Foundation: about/index.md
+    - About Us: about/foundation.md
+    - Sponsor Hummingbot: about/sponsors.md
+    - Support Hummingbot: about/support-hummingbot.md
+    - Governance:
+      - Governance: governance/index.md
+      - Polls: governance/polls.md
+      - Proposals: governance/proposals.md
+      - Epochs: governance/epochs.md
+      - Whitepaper: governance/whitepaper.md
+    - Bounties: 
+      - Bounties: bounties/index.md
+      - External Bounties: bounties/external.md
+      - Lifecyle of a Bounty: bounties/lifecycle.md
+      - Completed Bounties: bounties/completed.md
+      - Bounties FAQ: bounties/faq.md
+      - Bounty Contributors Guide: bounties/contributors.md
+      - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Blog: 
     - blog/index.md
   - Academy:

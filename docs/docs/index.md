@@ -1,22 +1,5 @@
 Hummingbot is an open source Python-based framework that helps you run trading strategies that automate the execution of orders and trades on various cryptocurrency exchanges and protocols. 
 
-## Core Repos
-
-The Hummingbot framework is comprised of multiple code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot), that are maintained by the Foundation alongside individual community members. All code is open sourced under the Apache 2.0 or MIT license.
-
-The main Hummingbot code repositories are:
-
-<div class="grid cards" markdown>
-
-- [__Hummingbot__](/client) Core command line client and exchange connectors
-- [__Deploy__](https://github.com/hummingbot/deploy) Docker deployment repo
-- [__Dashboard__](/dashboard) Hummingbot 2.0 front-end user interface
-- [__Backend API__](https://github.com/hummingbot/deploy): Hummingbot 2.0 back-end API
-- [__Gateway__](/gateway) API middleware for DEX connectors
-- [__Site__](https://github.com/hummingbot/deploy): This site - contributions welcome!
-
-</div>
-
 ## Installation
 
 We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase. Check out [Install via Docker](/installation/docker) for the basic process.
@@ -49,6 +32,26 @@ Each connector's code is contained in modularized folders in the Hummingbot and/
 - [DEX](/dex-connectors): Connectors to decentralized exchanges (DEX)
 
 - [Chains](/chains): Connectors to blockchains where DEXs operate
+
+
+## Official Code Repositories
+
+All Hummingbot Foundation code is maintained and stored in repositories in the official [Github](https://github.com/hummingbot) and [DockerHub](https://hub.docker.com/r/hummingbot/) organization accounts. These are the only code repositories used to release official versions of Hummingbot.  Please download Hummingbot and Hummingbot-related software from only these official sources.
+
+The Hummingbot framework is comprised of multiple code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot), that are maintained by the Foundation alongside individual community members. All code is open sourced under the Apache 2.0 or MIT license.
+
+The main Hummingbot code repositories are:
+
+<div class="grid cards" markdown>
+
+- [__Hummingbot__](/client) Core command line client and exchange connectors
+- [__Deploy__](https://github.com/hummingbot/deploy) Docker deployment repo
+- [__Dashboard__](/dashboard) Hummingbot 2.0 front-end user interface
+- [__Backend API__](https://github.com/hummingbot/deploy): Hummingbot 2.0 back-end API
+- [__Gateway__](/gateway) API middleware for DEX connectors
+- [__Site__](https://github.com/hummingbot/deploy): This site - contributions welcome!
+
+</div>
 
 ## Getting Help
 
