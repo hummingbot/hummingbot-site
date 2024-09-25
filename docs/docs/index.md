@@ -35,11 +35,11 @@ In the past, there were legacy strategy templates ([V1 Strategies](/v1-strategie
 
 ## Connectors
 
-Hummingbot [connectors](/exchanges/) standardize trading logic and order types across different types of exchanges and blockchain networks, so that strategies can access standardized methods that work across all connectors of that type.
+Hummingbot connectors standardize trading logic and order types across different types of exchanges and blockchain networks, so that strategies can access standardized methods that work across all connectors of that type.
 
 Each connector's code is contained in modularized folders in the Hummingbot and/or Gateway codebases:
 
-- [CLOB Connectors](/cex-connectors): Connectors to central limit order book (CLOB) centralized and decentralized exchanges
+- [CLOB Connectors](/exchanges/): Connectors to central limit order book (CLOB) centralized and decentralized exchanges
 - [AMM Connectors](/dex-connectors): Connectors to automated market maker (AMM) decentralized exchanges
 
 ## Official Code Repositories
