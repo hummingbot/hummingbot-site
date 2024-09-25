@@ -383,8 +383,8 @@ nav:
     - Foundation: about/index.md
     - HBOT Token: about/hbot.md
     - Board of Directors: about/board.md
-    - Sponsor Hummingbot: about/sponsors.md
-    - Support Hummingbot: about/support-hummingbot.md
+    - Sponsor & Supporters: about/sponsors.md
+    - Affiliate Program: about/affiliate.md
     - Governance:
       - Governance: governance/index.md
       - Polls: governance/polls.md

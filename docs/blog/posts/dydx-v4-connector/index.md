@@ -10,7 +10,7 @@ categories:
 
 ![dYdX V4 Connector](dydx.png)
 
-We're thrilled to introduce the brand-new dYdX V4 connector in the Hummingbot v2.0.1 release!, featuring the . This update seamlessly integrates Hummingbot with the dYdX V4 Chain, enabling users to run advanced market-making and algo trading strategies on dYdX!
+We're thrilled to introduce the brand-new dYdX V4 connector in the Hummingbot v2.0.1 release! This update integrates Hummingbot with the dYdX V4 Chain, enabling users to run advanced market-making and algo trading strategies on dYdX!
 
 This release marks a significant milestone in the collaboration between the [Hummingbot Foundation](/about/) and the dYdX ecosystem. Earlier this year, we awarded a grant from the [dYdX Grants Program](https://dydxgrants.com/) to support the development of the dYdX V4 connector and to evangelize usage.
 

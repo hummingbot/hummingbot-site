@@ -7,6 +7,10 @@ Hummingbot Foundation's purpose is to empower Hummingbot Governance Token (HBOT)
 * Allocate HBOT bounty budget toward the top connectors of each type 
 * Re-elect the foundation's Board of Directors each year
 
+!!! tip "Governance FAQ"
+    Learn more about the HBOT token and how the Hummingbot governance system works in this [HBOT governance FAQ](/blog/faq-on-hbot-and-hummingbot-governance/)!
+
+
 Pages in this section include:
 
 * [Polls](polls.md): Polls that let HBOT holders determine which connectors are included for the next Epoch

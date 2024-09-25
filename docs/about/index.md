@@ -1,4 +1,4 @@
-Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the [HBOT governance system](/blog/faq-on-hbot-and-hummingbot-governance/).
+Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the HBOT governance system.
 
 The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
 

@@ -8,6 +8,9 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 
 Read about HBOT in the [launch post](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md).
 
+!!! tip "HBOT Token FAQ"
+    Learn more about the HBOT token and how the Hummingbot governance system works in this [HBOT governance FAQ](/blog/faq-on-hbot-and-hummingbot-governance/)!
+
 
 ## Verified HBOT Data Sites and Markets
 
