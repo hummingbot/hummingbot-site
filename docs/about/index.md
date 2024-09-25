@@ -1,8 +1,25 @@
-[Established](/blog/introducing-the-hummingbot-foundation/) in October 2021, Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the [HBOT governance system](/blog/faq-on-hbot-and-hummingbot-governance/).
+Hummingbot Foundation is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by maintaining the open-source Hummingbot code repository and the [HBOT governance system](/blog/faq-on-hbot-and-hummingbot-governance/).
 
-## Bylaws
+The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
 
-The primary purpose of Hummingbot Foundation is to enable a decentralized, bazaar-style model of software development for the Hummingbot codebase. The official Foundation bylaws are located at: <https://hummingbot.org/bylaws.pdf>.
+## Mission
+
+Our mission is to make sophisticated trading strategies and technology accessible to everyone and to level the playing field for traders around the globe Here are the core principles that underpin Hummingbot’s development:
+
+* **Open Source**: The Hummingbot codebase is publicly available, auditable, and free
+* **Modular**: Hummingbot modules can be independently built, used, and maintained by community members
+* **Extensible**: Users can use Hummingbot to create any trading strategy on any exchange and blockchain
+* **All Levels**: Hummingbot is designed for use by individuals and professionals alike
+
+## History
+
+Hummingbot was originally built and open sourced by [CoinAlpha](https://coinalpha.com) in April 2019. Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies into a shared, community-maintained codebase. Read the original [Hummingbot whitepaper](/blog/hummingbot-whitepaper/) and the [origin story](/blog/from-hedge-fund-to-market-making-bot-the-hummingbot-origin-story/) blog post for more details.
+
+Later, the Hummingbot team wrote the [Liquidity Mining whitepaper](/blog/liquidity-mining-whitepaper/) that described an economic model for decentralized market making and subsequently launched the [Miner liquidity mining platform](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/).
+
+In December 2021, CoinAlpha [spun off](/blog/introducing-the-hummingbot-foundation/) the Hummingbot Foundation as a new open source entity that maintains the Hummingbot Github repository and administers a decentralized, community-driven governance system utilizing the [HBOT token](/blog/introducing-the-hummingbot-governance-token-hbot/).
+
+Today, Hummingbot is a bazaar-style open source project with many contributors and users around the world, both individual and professional.
 
 ## Staff
 
@@ -16,42 +33,3 @@ The Foundation maintain a lean, globally-distributed team who handle the day-to-
 * Packaging monthly releases into Docker containers for various environments
 * Maintaining and updating the Hummingbot website and documentation site
 
-## Board of Directors
-
-The Board of Directors provides oversight over the Hummingbot Foundation and its day-to-day activities, along with managing the HBOT treasury.
-
-### Current Members
-
-Elected for a 12-month term in February 2024 in [HGP-54](https://snapshot.org/#/hbot.eth/proposal/0x2fc72475c6aef6f8a6261f197833d5a80f6ee3b2971455a17a2223a5ebfedf06), the Board is comprised of the following individuals:
-
-| Name              | Hummingbot Discord Handle  | Ethereum Address |
-|-------------------|-----------------------------------------|-------------|
-| Brett Gibson      | brettdg | [eth:0x64b..4C3](https://etherscan.io/address/0x64b8457C3977a2f8ca7D7C00b0435aED27CA34C3)
-| Carlo Las Marias      | carlolm | [eth:0x03a..C79](https://etherscan.io/address/0x03aD70b7F9E577AE73a533470C2c65d537007C79)
-| Hoang La          | w0jak | [hoangla.eth](https://etherscan.io/address/0xB6B3140Eb3953BCE564f937948f98Ab5A8286a50)
-| Maxime Fages      | engineeredjoy | [eth:0xD58..527](https://etherscan.io/address/0xD582C19D593897aF38aa263dFFae151BfD42D527)
-| Michael Feng      | fengtality | [fengtality.eth](https://etherscan.io/address/0x9FA3156B802eA7ECFe55173Eafc296f509a28777)
-
-### Role & Responsibilities
-
-The Board is an independent committee that oversees the day-to-day administration of the Hummingbot Foundation and manages the multi-signature wallet of the HBOT treasury.
-
-The Board conducts quarterly virtual board meetings to discuss Foundation progress and strategy. In addition, the Board regularly corresponds over group chat to handle multi-signature transactions related to HBOT distributions.
-
-### Requirements
-
-Serving on the Board is open to anyone in the Hummingbot community. As board members are elected by HBOT holders, board candidates should have some past experience with Hummingbot and its community.
-
-Since all transactions from the Foundation HBOT treasury require 3 out of 5 board signatures, board members should know how to manage a Gnosis multi-signature wallet.
-
-Per the Foundation bylaws, there is no salary for serving on the Board of Directors.
-
-### Election Process
-
-Hummingbot Foundation re-elects its Board of Directors every 12 months via Governance Proposal, following a process similar to that of other [Polls](/governance/polls):
-
-* **Nomination thread**: One month before the election, the Foundation will post a thread in [Discord](https://discord.gg/hummingbot) where past board members and anyone else can apply for a Board seat
-
-* **Election starts**: We will create the election as a [Hummingbot Governance Proposal](/governance/proposals) with everyone who applied via the Discord thread. Similar to other polls, this election uses Snapshot gasless voting and the quadratic voting allocation method.
-
-* **Election ends**: The election ends in 1 week, and the top 5 vote-getters will be seated afterwards on the Board of Directors for a 1-year term.

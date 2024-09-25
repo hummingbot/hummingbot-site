@@ -30,21 +30,13 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 Polls also decide which connectors should be included in the codebase for the next quarterly [Epoch](../governance/epochs.md).
 
-## Building and Contributing Connectors
+## Building Connectors
 
-For developers building and contributing connectors, see the pages below for each connector standard:
+For developers building CLOB connectors, see the pages below:
 
 * [Building CLOB Spot Connectors](/developers/connectors/spot-connector-checklist)
-* [Building CLOB Perp Connectors](/developers/connectors/perp-connector-checklist)
-* [Building AMM Connectors](/gateway/adding-dex-connectors)
-
-Developers may submit connectors for inclusion into the Hummingbot codebase via a [New Connector Proposal](/governance/proposals) that contains the link to a valid Github pull request. If the proposal is approved by HBOT holders, Hummingbot Foundation will review and merge the pull request into the codebase.
-
-See [Contribution Guidelines](/developers/contributions/) for the process to get connectors and other pull requests merged into the codebase.
-
-## CLOB Connector Standards
-
-The Notion templates below summarize the file and functionalities needed to build the latest spot and perpetual connectors standards and support V2 Strategies:
-
 * [Spot Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Spot-Connector-v2-1-1cc43830938445c9974f43ef861d59f1)
+* [Building CLOB Perp Connectors](/developers/connectors/perp-connector-checklist)
 * [Perp Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Perp-Connector-v2-1-57d8391eb54c40929f77067355fd551e)
+
+See [Contribution Guidelines](/developers/contributions/) for the process to get your pull requests merged into the codebase.

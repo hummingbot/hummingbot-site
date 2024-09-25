@@ -4,8 +4,6 @@ authors:
   - foundation
 categories:
   - Quickstart Guides
-tags:
-  - Hummingbot Docker Quickstart Guide
 ---
 
 # Hummingbot Docker Quickstart Guide

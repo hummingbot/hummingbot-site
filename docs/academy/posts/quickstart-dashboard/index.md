@@ -1,4 +1,12 @@
-## The new Hummingbot Dashboard
+---
+date: 2024-08-01
+authors:
+  - foundation
+categories:
+  - Quickstart Guides
+---
+
+# Hummingbot Dashboard Quickstart Guide
 
 In this tutorial, we'll guide you through installing Hummingbot 2.0, which provide an easy-to-use Dashboard app that helps you connect exchange credentials, create/backtest a strategy configuration, and deploy a fleet of bots!
 

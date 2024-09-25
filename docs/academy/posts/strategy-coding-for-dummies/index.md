@@ -3,9 +3,6 @@ date: 2022-03-26
 authors:
   - community
 categories:
-  - Academy
-  - Engineering
-tags:
   - Community Posts
 ---
 

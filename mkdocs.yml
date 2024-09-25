@@ -66,6 +66,10 @@ plugins:
       blog_dir: blog
       blog_toc: true
       post_url_format: "{slug}"
+  - blog:
+      blog_dir: academy
+      blog_toc: false
+      post_url_format: "{slug}"
 
 extra:
   homepage: https://hummingbot.org
@@ -150,18 +154,14 @@ markdown_extensions:
 # Navigation
 nav:
   - Home: index.md
-  - Docs:
-    - Docs: docs/index.md
+  - Documentation:
+    - Documentation: docs/index.md
     - Installation:
       - Install via Docker: installation/docker.md
       - Install from Source (Linux): installation/linux.md
       - Install from Source (MacOS): installation/mac.md
       - Install from Source (Windows): installation/windows.md      
       - Post-Installation: installation/post-installation.md
-    - Guides:
-      - Guides: guides/index.md
-      - Script Walkthrough: v2-strategies/walkthrough.md
-      - Controller Walkthrough: v2-strategies/walkthrough-controller.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
       - Architecture: v2-strategies/index.md
@@ -309,11 +309,14 @@ nav:
       - Botcamp FAQ: botcamp/faq.md
     - Community:
       - Community: community/index.md
-      - Earn HBOT by Answering Questions: community/support.md
-      - 📆 Upcoming Events ↗️: https://lu.ma/hummingbot
+      - Discord Support Program: community/support.md
+      - Affiliate Program: about/affiliate.md
+      - Upcoming Events ↗️: https://lu.ma/hummingbot
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
+  - Academy:
+    - Academy: academy/index.md
   - Developers:
     - Developers: developers/index.md
     - Contribution Guidelines: developers/contributions.md
@@ -378,7 +381,8 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Foundation:
     - Foundation: about/index.md
-    - About Us: about/foundation.md
+    - HBOT Token: about/hbot.md
+    - Board of Directors: about/board.md
     - Sponsor Hummingbot: about/sponsors.md
     - Support Hummingbot: about/support-hummingbot.md
     - Governance:
@@ -397,7 +401,3 @@ nav:
       - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Blog: 
     - blog/index.md
-  - Academy:
-    - Academy: academy/index.md
-    - Latest Articles: academy-content/index.md
-    - All Articles: academy/all.md
