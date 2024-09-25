@@ -1,5 +1,3 @@
-# Botcamp Certification Process
-
 ## Summary
 
 The Hummingbot certification process is designed to be comprehensive and challenging, ensuring that participants have the skills to code and operate custom algorithmic trading strategies. This process is overseen by the core maintainers of the Hummingbot codebase.

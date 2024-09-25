@@ -67,13 +67,9 @@ plugins:
       blog_toc: true
       post_url_format: "{slug}"
   - blog:
-      blog_dir: academy-content
+      blog_dir: academy
       blog_toc: false
-      archive_toc: true
-      categories_toc: true
       post_url_format: "{slug}"
-  - tags:
-      tags_file: academy/all.md
 
 extra:
   homepage: https://hummingbot.org
@@ -158,57 +154,14 @@ markdown_extensions:
 # Navigation
 nav:
   - Home: index.md
-  - Docs:
-    - Docs: docs/index.md
+  - Documentation:
+    - Documentation: docs/index.md
     - Installation:
       - Install via Docker: installation/docker.md
-      - Install from Source:
-        - Linux: installation/linux.md
-        - MacOS: installation/mac.md
-        - Windows: installation/windows.md      
+      - Install from Source (Linux): installation/linux.md
+      - Install from Source (MacOS): installation/mac.md
+      - Install from Source (Windows): installation/windows.md      
       - Post-Installation: installation/post-installation.md
-      - Using Debugger Tools: installation/debug.md
-    - Guides:
-      - Quickstart: installation/hummingbot-deploy/quickstart.md
-      - Script Walkthrough: v2-strategies/walkthrough.md
-      - Controller Walkthrough: v2-strategies/walkthrough-controller.md
-    - Using Dashboard:
-      - Using Dashboard: dashboard/index.md
-      - Adding Credentials: dashboard/credentials.md
-      - Viewing Portfolio: dashboard/portfolio.md
-      - Configuring Strategies: dashboard/config.md
-      - Backtesting Strategies: dashboard/backtest.md
-      - Deploying Instances: dashboard/deploy.md
-      - Managing Instances: dashboard/instances.md
-    - Using the Client:
-      - Using the Client: client/index.md
-      - User Interface: client/user-interface.md
-      - Commands and Shortcuts: client/commands-shortcuts.md
-      - Launch/Exit Hummingbot: client/launch-exit.md
-      - Create/Delete Password: client/password.md
-      - Connect Exchange API Keys: client/connect.md
-      - Config Files: client/config-files.md
-      - Check Balances: client/balance.md
-      - Start Strategies and Scripts: client/start-stop.md
-      - Check Bot/Market Status: client/status.md
-      - Check Performance: client/history.md
-      - Find Log Files: client/log-files.md
-      - Export Trades/Keys: client/export.md
-      - Advanced Features:
-        - Adding Commands: developers/commands.md
-        - Balance Limit: global-configs/balance-limit.md
-        - Clock Tick Size: global-configs/clock-tick.md 
-        - Command Line Autostart: global-configs/strategy-autostart.md
-        - Color Settings: global-configs/color-settings.md
-        - Connect External Database: global-configs/external-db.md
-        - Debug Console: developers/debug.md
-        - Kill Switch: global-configs/kill-switch.md
-        - Market Data Collector: global-configs/data-collector.md
-        - Override Fees: global-configs/override-fees.md
-        - Paper Trade: global-configs/paper-trade.md
-        - Rate Oracle: strategy-configs/rate-oracle.md
-        - Rate Limits: global-configs/rate-limits-share-pct.md
-        - Telegram Integration: global-configs/telegram.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
       - Architecture: v2-strategies/index.md
@@ -256,108 +209,140 @@ nav:
       - Perpetual Market Making: strategies/perpetual-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
-    - Connectors:
-      - Connectors: exchanges/index.md
-      - CEX Connectors:
-        - CEX Connectors: cex-connectors/index.md
-        - Binance: exchanges/binance/index.md
-        - Gate.io: exchanges/gate-io/index.md
-        - Kucoin: exchanges/kucoin/index.md
-        - HTX: exchanges/huobi/index.md
-        - AscendEx : exchanges/ascendex/index.md
-        - Bitfinex: exchanges/bitfinex.md
-        - Bitstamp: exchanges/bitstamp/index.md
-        - Bitrue: exchanges/bitrue.md
-        - Bitget: exchanges/bitget-perpetual.md
-        - BitMart: exchanges/bitmart/index.md
-        - BTC Markets: exchanges/btc-markets.md
-        - Bybit: exchanges/bybit.md
-        - Coinbase: exchanges/coinbase.md
-        - Foxbit: exchanges/foxbit.md
-        - Hashkey Global: exchanges/hashkey/index.md
-        - Kraken: exchanges/kraken/index.md
-        - MEXC: exchanges/mexc/index.md
-        - NDAX: exchanges/ndax.md
-        - OKX: exchanges/okx/okx.md
-        - Cube Exchange: exchanges/cube/index.md
-      - DEX Connectors:
-        - DEX Connectors: dex-connectors/index.md
-        - dYdX: exchanges/dydx.md
-        - Balancer: exchanges/balancer.md
-        - Dexalot: exchanges/dexalot.md
-        - Polkadex: exchanges/polkadex.md
-        - Injective Helix: exchanges/injective.md
-        - Mad Meerkat: exchanges/mad-meerkat.md
-        - Curve: exchanges/curve.md
-        - Carbon: exchanges/carbon.md
-        - Hyperliquid: exchanges/hyperliquid.md
-        - OpenOcean: exchanges/openocean.md
-        - Osmosis: exchanges/osmosis.md
-        - Pancakeswap : exchanges/pancakeswap.md
-        - Pangolin: exchanges/pangolin.md
-        - Plenty: exchanges/plenty.md
-        - Quickswap: exchanges/quickswap.md
-        - Ref: exchanges/ref.md
-        - Sushiswap: exchanges/sushiswap.md
-        - Tinyman: exchanges/tinyman.md
-        - Telos: exchanges/telos.md
-        - TraderJoe: exchanges/traderjoe.md
-        - Uniswap : exchanges/uniswap.md
-        - Vega: exchanges/vega.md
-        - Vertex: exchanges/vertex.md
-        - VVS: exchanges/vvs.md
-        - XRP Ledger: exchanges/xrpl.md
-        - XSwap: exchanges/xswap.md
-      - Chain Connectors:
-        - Chain Connectors: chains/index.md
-        - Ethereum: chains/ethereum.md
-        - Avalanche: chains/avalanche.md
-        - Osmosis: chains/osmosis-chain.md
-        - Polygon: chains/polygon.md
-        - BNB Chain: chains/bnb-chain.md
-        - Algorand: chains/algorand.md
-        - Cronos: chains/cronos.md
-        - Cosmos: chains/cosmos.md
-        - Harmony: chains/harmony.md
-        - Injective: chains/injective.md
-        - Kujira: chains/kujira.md
-        - XDC Chain: chains/xdc-chain.md
-        - Tezos: chains/tezos.md
-        - Telos: chains/telos.md
-        - XRP Ledger: chains/xrpl.md
-      - Building Connectors:
-        - Building Connectors: developers/connectors/index.md
-        - Exchange API Requirements: developers/connectors/build.md
-        - Connector Architecture: developers/connectors/architecture/index.md
-        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-        - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
-        - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
-        - Spot Connector QA Checklist: developers/connectors/test.md
-        - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
-        - Perp Connector QA Checklist:  developers/connectors/test-perp.md
-        - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Other Repos:
-      - Gateway:
-        - Gateway: gateway/index.md
-        - Installation: gateway/installation.md
-        - Testing Gateway: gateway/testing.md
-        - Setting up Gateway: gateway/setup.md
-        - Working with Tokens: gateway/tokens.md
-        - Running Strategies and Scripts: gateway/running-dex-bots.md
-        - Building Gateway Connectors: gateway/adding-dex-connectors.md
-      - Brokers: installation/broker.md
+    - CLOB Connectors:
+      - CLOB Connectors: exchanges/index.md
+      - Binance: exchanges/binance/index.md
+      - AscendEx : exchanges/ascendex/index.md
+      - Bitfinex: exchanges/bitfinex.md
+      - Bitstamp: exchanges/bitstamp/index.md
+      - Bitrue: exchanges/bitrue.md
+      - Bitget: exchanges/bitget-perpetual.md
+      - BitMart: exchanges/bitmart/index.md
+      - Bybit: exchanges/bybit.md
+      - BTC Markets: exchanges/btc-markets.md
+      - Coinbase: exchanges/coinbase.md
+      - Cube: exchanges/cube/index.md
+      - Dexalot: exchanges/dexalot.md
+      - Foxbit: exchanges/foxbit.md
+      - dYdX: exchanges/dydx.md
+      - Gate.io: exchanges/gate-io/index.md
+      - Hashkey: exchanges/hashkey/index.md
+      - HyperLiquid: exchanges/hyperliquid.md
+      - HTX: exchanges/huobi/index.md
+      - Kraken: exchanges/kraken/index.md
+      - Kucoin: exchanges/kucoin/index.md
+      - Injective Helix: exchanges/injective.md
+      - Polkadex: exchanges/polkadex.md
+      - MEXC: exchanges/mexc/index.md
+      - NDAX: exchanges/ndax.md
+      - OKX: exchanges/okx/okx.md
+      - XRP Ledger: exchanges/xrpl.md
+    - AMM Connectors:
+      - AMM Connectors: dex-connectors/index.md
+      - Uniswap : exchanges/uniswap.md
+      - Balancer: exchanges/balancer.md
+      - Mad Meerkat: exchanges/mad-meerkat.md
+      - Curve: exchanges/curve.md
+      - Carbon: exchanges/carbon.md
+      - OpenOcean: exchanges/openocean.md
+      - Osmosis: exchanges/osmosis.md
+      - Pancakeswap : exchanges/pancakeswap.md
+      - Pangolin: exchanges/pangolin.md
+      - Plenty: exchanges/plenty.md
+      - Quickswap: exchanges/quickswap.md
+      - Ref: exchanges/ref.md
+      - Sushiswap: exchanges/sushiswap.md
+      - Tinyman: exchanges/tinyman.md
+      - Telos: exchanges/telos.md
+      - TraderJoe: exchanges/traderjoe.md
+      - VVS: exchanges/vvs.md
+      - XSwap: exchanges/xswap.md
+    - Hummingbot Client:
+      - Hummingbot Client: client/index.md
+      - User Interface: client/user-interface.md
+      - Commands and Shortcuts: client/commands-shortcuts.md
+      - Launch/Exit Hummingbot: client/launch-exit.md
+      - Create/Delete Password: client/password.md
+      - Connect Exchange API Keys: client/connect.md
+      - Config Files: client/config-files.md
+      - Check Balances: client/balance.md
+      - Start Strategies and Scripts: client/start-stop.md
+      - Check Bot/Market Status: client/status.md
+      - Check Performance: client/history.md
+      - Find Log Files: client/log-files.md
+      - Export Trades/Keys: client/export.md
+      - Advanced Features:
+        - Adding Commands: developers/commands.md
+        - Balance Limit: global-configs/balance-limit.md
+        - Clock Tick Size: global-configs/clock-tick.md 
+        - Command Line Autostart: global-configs/strategy-autostart.md
+        - Color Settings: global-configs/color-settings.md
+        - Connect External Database: global-configs/external-db.md
+        - Debug Console: developers/debug.md
+        - Kill Switch: global-configs/kill-switch.md
+        - Market Data Collector: global-configs/data-collector.md
+        - Override Fees: global-configs/override-fees.md
+        - Paper Trade: global-configs/paper-trade.md
+        - Rate Oracle: strategy-configs/rate-oracle.md
+        - Rate Limits: global-configs/rate-limits-share-pct.md
+        - Telegram Integration: global-configs/telegram.md
+    - Hummingbot Dashboard:
+      - Hummingbot Dashboard: dashboard/index.md
+      - Adding Credentials: dashboard/credentials.md
+      - Viewing Portfolio: dashboard/portfolio.md
+      - Configuring Strategies: dashboard/config.md
+      - Backtesting Strategies: dashboard/backtest.md
+      - Deploying Instances: dashboard/deploy.md
+      - Managing Instances: dashboard/instances.md
+    - Gateway AMM Middleware:
+      - Gateway AMM Middleware: gateway/index.md
+      - Installation: gateway/installation.md
+      - Testing Gateway: gateway/testing.md
+      - Setting up Gateway: gateway/setup.md
+      - Working with Tokens: gateway/tokens.md
+      - Running Strategies and Scripts: gateway/running-dex-bots.md
+    - Training & Certification:
+      - Training & Certification: certification/index.md
+      - Certification Process: certification/process.md
+      - Certifications List: certification/list.md
+      - Botcamp ↗️: https://www.botcamp.xyz
+      - Botcamp FAQ: botcamp/faq.md
+    - Community:
+      - Community: community/index.md
+      - Discord Support Program: community/support.md
+      - Affiliate Program: about/affiliate.md
+      - Upcoming Events ↗️: https://lu.ma/hummingbot
+    - FAQ: faq.md
     - Glossary: glossary/index.md
-    - Troubleshooting: troubleshooting.md
+    - Reported Volumes: reporting.md
   - Academy:
     - Academy: academy/index.md
-    - Latest Articles: academy-content/index.md
-    - All Articles: academy/all.md
-  - Certification:
-    - Certification: certification/index.md
-    - Certification Process: certification/process.md
-    - Certifications List: certification/list.md
-    - Botcamp ↗️: https://www.botcamp.xyz
-    - Botcamp FAQ: botcamp/faq.md
+  - Developers:
+    - Developers: developers/index.md
+    - Contribution Guidelines: developers/contributions.md
+    - How to Fork Repos: developers/forking.md
+    - Using Debugger Tools: installation/debug.md
+    - Building CLOB Connectors:
+      - Building CLOB Connectors: developers/connectors/index.md
+      - Exchange API Requirements: developers/connectors/build.md
+      - Connector Architecture: developers/connectors/architecture/index.md
+      - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
+      - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
+      - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
+      - Spot Connector QA Checklist: developers/connectors/test.md
+      - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
+      - Perp Connector QA Checklist:  developers/connectors/test-perp.md
+      - Debugging & Testing Connectors: developers/connectors/debug.md
+    - Building AMM Connectors: gateway/adding-dex-connectors.md
+    - Building Strategies: 
+      - Building Strategies: developers/strategies/index.md
+      - Key Concepts: developers/strategies/key-concepts.md
+      - Strategy Architecture: developers/strategies/architecture.md
+      - Strategy Configs: developers/strategies/config.md
+      - Tutorial: developers/strategies/tutorial.md
+    - Brokers Module: installation/broker.md
+    - How to Earn Bounties: bounties/contributors.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
@@ -394,29 +379,25 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
-  - Bounties: 
-    - Bounties: bounties/index.md
-    - Bounty Sponsors Guide: bounties/sponsors.md
-    - Bounty Contributors Guide: bounties/contributors.md
-    - Lifecyle of a Bounty: bounties/lifecycle.md
-    - Bounty Pricing Guidance: bounties/prices.md
-    - Contribution Guidelines: developers/contributions.md
-    - Forking the Repository: developers/forking.md
-    - Discord Support Program: bounties/discord.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
-  - Governance:
-    - Governance: governance/index.md
-    - Polls: governance/polls.md
-    - Proposals: governance/proposals.md
-    - Epochs: governance/epochs.md
-    - Whitepaper: governance/whitepaper.md
-  - About:
-    - About: about/index.md
-    - FAQ: faq.md
-    - Foundation: about/foundation.md
-    - Sponsors & Backers: about/sponsors.md
-    - Reported Volumes: reporting.md
-    - History: about/history.md
-    - 📆 LinkTree ↗️: https://linktr.ee/hummingbot
+  - Foundation:
+    - Foundation: about/index.md
+    - HBOT Token: about/hbot.md
+    - Board of Directors: about/board.md
+    - Sponsor & Supporters: about/sponsors.md
+    - Affiliate Program: about/affiliate.md
+    - Governance:
+      - Governance: governance/index.md
+      - Polls: governance/polls.md
+      - Proposals: governance/proposals.md
+      - Epochs: governance/epochs.md
+      - Whitepaper: governance/whitepaper.md
+    - Bounties: 
+      - Bounties: bounties/index.md
+      - External Bounties: bounties/external.md
+      - Lifecyle of a Bounty: bounties/lifecycle.md
+      - Completed Bounties: bounties/completed.md
+      - Bounties FAQ: bounties/faq.md
+      - Bounty Contributors Guide: bounties/contributors.md
+      - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Blog: 
     - blog/index.md
