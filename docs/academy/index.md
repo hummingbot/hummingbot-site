@@ -11,21 +11,23 @@ hide:
 
 <div class="grid cards" markdown>
     
--   [![](/academy-content/coding-a-custom-v2-controller/cover.webp)](/academy-content/coding-a-custom-v2-controller-for-future-liquidations-on-binance/)
+-   [![](/academy/coding-a-custom-v2-controller/cover.webp)](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
 
-    ### [Coding a Custom V2 Controller](/academy-content/coding-a-custom-v2-controller-for-future-liquidations-on-binance/)
+    ### [Coding a Custom V2 Controller](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
 
--   [![](/academy-content/using-hyperliquid-vaults-with-hummingbot/cover.png)](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
+-   [![](/academy/using-hyperliquid-vaults-with-hummingbot/cover.png)](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
 
-    ### [Using Hyperliquid Vaults](/academy-content/using-hyperliquid-vaults-with-hummingbot/)
+    ### [Funding Rate Arbitrage and Creating Vaults on Hyperliquid](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
 
--   [![](/academy-content/coding-a-custom-v2-controller/cover.webp)](/academy-content/quickstart-script/)
+-   [![](/academy/using-dydx-v4-with-hummingbot/dydx-connector-guide.png)](/academy/running-a-trading-bot-with-hummingbot-dashboard-on-dydx-v4/)
     
-    ### [Creating a Custom Market Making Strategy](/academy-content/creating-a-custom-market-making-strategy/)
+    ### [Running a Trading Bot with Hummingbot Dashboard on dYdX V4](/academy/running-a-trading-bot-with-hummingbot-dashboard-on-dydx-v4/)
 
--   [![](/academy-content/using-hyperliquid-vaults-with-hummingbot/cover.png)](/academy-content/quickstart-script/)
+-   [![](/academy/quickstart-dashboard/config-5.png)](/academy/hummingbot-dashboard-quickstart-guide/)
     
-    ### [dYdX Connector Guide](/academy-content/creating-a-custom-market-making-strategy/)
+    ### [Hummingbot Dashboard Quickstart Guide](/academy/hummingbot-dashboard-quickstart-guide/)
+
+
 
 </div>
 

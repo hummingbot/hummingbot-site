@@ -1,9 +1,9 @@
 HBOT holders can vote on four types of proposals:
 
-* [**Pull Request Proposal (PRP)**](#pull-request-proposals): To merge a non-Connector pull request into the Hummingbot codebase
 * [**New Connector Proposal (NCP)**](#new-connector-proposals): To add a new [Connector](../exchanges/index.md) to the Hummingbot codebase
 * [**Hummingbot Improvement Proposal (HIP)**](#hummingbot-improvement-proposals): To propose a [Bounty](../bounties/index.md)
 * [**Hummingbot Governance Proposal (HGP)**](#hummingbot-governance-proposals): To conduct [Polls](polls.md), elect Board of Directors, and implement other governance system changes
+* [**Pull Request Proposal (PRP)**](#pull-request-proposals): To merge a non-Connector pull request into the Hummingbot codebase
 
 Each proposal type has different parameters:
 
@@ -22,20 +22,6 @@ Each proposal type has different parameters:
     See the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current Quorum Percentage, which is based on the HBOT circulating supply.
 
 ## Types of Proposals
-
-### Pull Request Proposals
-
-* Pull Request Proposals (PRP) let HBOT holders **approve pull requests** for merge and inclusion into the Hummingbot codebase.
-* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a PRP at the Snapshot sub-space: <https://snapshot.org/#/hbot-prp.eth>.
-* A PRP links to a valid pull request in the Hummingbot code repository. See [Contribution Guidelines](../developers/contributions.md) for more information about the process of creating a valid pull request.
-* If the PRP is approved after the Vote Duration and the Quorum is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
-* During the review process, the Foundation will test the submitted pull request to ensure that it fulfills its stated intention, conduct a technical code review, check for conflicts with other parts of the Hummingbot codebase and security issues. If the review passes, the pull request is merged into the codebase.
-* If the PRP fails to meet the Approval Threshold, the Foundation will close the related pull request. However, the developer is free to create a new pull request and a new PRP at a subsequent date.
-
-To be considered valid, a PRP should contain the following fields (otherwise the Foundation may close it):
-
-* **Title**: Starts with `PRP` followed by count and summary (i.e. `PRP-100: [summary]`)
-* **Github Link**: Link to a [Github pull request](https://github.com/hummingbot/hummingbot/pulls), which should contain a detailed explanation of the changes proposed
 
 ### New Connector Proposals
 
@@ -80,3 +66,17 @@ To be considered valid, an HGP should contain the following fields:
 * **Title**: Starts with `HGP` followed by count and summary (i.e. `HGP-100: [summary]`)
 * **Description**: Detailed explanation of the proposed initiative or program
 * **HBOT Allocation** (if any): Proposed HBOT bounty amount
+
+### Pull Request Proposals
+
+* Pull Request Proposals (PRP) let HBOT holders **approve pull requests** for merge and inclusion into the Hummingbot codebase.
+* Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a PRP at the Snapshot sub-space: <https://snapshot.org/#/hbot-prp.eth>.
+* A PRP links to a valid pull request in the Hummingbot code repository. See [Contribution Guidelines](../developers/contributions.md) for more information about the process of creating a valid pull request.
+* If the PRP is approved after the Vote Duration and the Quorum is met, then the Foundation will begin the process of reviewing and merging the pull request into the codebase.
+* During the review process, the Foundation will test the submitted pull request to ensure that it fulfills its stated intention, conduct a technical code review, check for conflicts with other parts of the Hummingbot codebase and security issues. If the review passes, the pull request is merged into the codebase.
+* If the PRP fails to meet the Approval Threshold, the Foundation will close the related pull request. However, the developer is free to create a new pull request and a new PRP at a subsequent date.
+
+To be considered valid, a PRP should contain the following fields (otherwise the Foundation may close it):
+
+* **Title**: Starts with `PRP` followed by count and summary (i.e. `PRP-100: [summary]`)
+* **Github Link**: Link to a [Github pull request](https://github.com/hummingbot/hummingbot/pulls), which should contain a detailed explanation of the changes proposed

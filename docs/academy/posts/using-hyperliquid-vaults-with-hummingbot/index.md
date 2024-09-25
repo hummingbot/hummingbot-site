@@ -8,23 +8,21 @@ tags:
   - Connector Guides
 ---
 
-# Using Hyperliquid Vaults with Hummingbot
+# Funding Rate Arbitrage and Creating Vaults on Hyperliquid
 
 ![Cover](cover.png)
 
-## Introduction
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Ly8R5g3juxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Hyperliquid** is a cutting-edge trading exchange that has revolutionized the way individuals engage with digital assets. This exchange is renowned for its introduction of Hyperliquid Vaults, a novel concept that allows both individual traders to optimize their trading strategies and earn profits from their investments.
-
-This guide is designed to walk users through the process of utilizing **Hummingbot**, an automated trading bot, to trade on Hyperliquid Vaults, thereby automating their trading activities. By integrating Hummingbot into your trading routine, you can take advantage of its sophisticated algorithms to automate trade execution, manage risk, and potentially increase your profitability without the constant need for manual oversight. Whether you're aiming to optimize your trading strategy or simply wish to diversify your investment approach, this guide will provide you with the necessary steps and insights to effectively use Hummingbot on the Hyperliquid platform.
-
-<!-- more -->
 
 ## What Are Vaults?
 
 **Hyperliquid Vaults** serve as an exchange wallet where funds are used by an individual trader or automated market maker (`Vault Leader`). Anyone can deposit (`Vault Depositors`) in the vault and earn a share of the profits.
 
 The Hyperliquidity Provider (HLP) vault, operated by Hyperliquid, runs market-making strategies on each trading pair. Anyone can provide liquidity for HLP and share in the P&L of the vault. HLP doesn’t collect any fees directly, and its P&L is shared proportionally based on each depositor’s share of the vault. HLP is community-owned.
+
+<!-- more -->
+
 
 The minimum deposit to create a vault is 100 USDC.
 

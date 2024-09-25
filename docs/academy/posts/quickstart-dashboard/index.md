@@ -14,6 +14,8 @@ Watch this video for an overview and walkthrough of the features in Hummingbot 2
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/7eHiMPRBQLQ?si=S500sdA9ImhLxHhu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!-- more -->
+
 ## Prerequisites: Docker
 
 Hummingbot 2.0 uses Docker Compose to install and manage dependencies. We recommend installing [Docker Desktop](https://www.docker.com/products/docker-desktop/) as it includes `Docker Compose`, `Docker Engine`, and `Docker CLI`, all of which are needed for the Dashboard to work.

@@ -18,7 +18,7 @@ To prevent HBOT token holders from being scammed by fraudulent versions of the t
 - **Etherscan**: <https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/hummingbot>
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/hummingbot>
-- - **HBOT Tracker**: <https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing>
+- **HBOT Tracker**: <https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing>
 
 ### Markets
 

@@ -6,7 +6,7 @@ categories:
   - Community Posts
 ---
 
-# Coding a Custom V2 Controller for Future Liquidations on Binance
+# Coding a Liquidation Sniper V2 Strategy Controller
 
 ![cover](cover.webp)
 

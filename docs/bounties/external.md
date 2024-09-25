@@ -6,7 +6,7 @@ See [Lifecyle of a Bounty](./lifecycle.md) for more details on the overall proce
 
 
 !!! tip "Sponsoring Hummingbot Foundation"
-    For leading protocols and exchanges who wish to build a long-term relationship with the Hummingbot community, we also offer a [Foundation Sponsorship](/about/sponsors/index.md) option. For more information about this option, please email <operations@hummingbot.org> or reach out to a Foundation team member on Discord.
+    For leading protocols and exchanges who wish to build a long-term relationship with the Hummingbot community, we also offer a [Foundation Sponsorship](/about/sponsors/) option. For more information about this option, please email <operations@hummingbot.org> or reach out to a Foundation team member on Discord.
 
 
 ## Eligible Bounties

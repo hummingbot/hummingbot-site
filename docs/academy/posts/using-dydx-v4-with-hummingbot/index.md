@@ -8,7 +8,7 @@ tags:
   - Connector Guides
 ---
 
-# Using dYdX v4 with Hummingbot
+# Running a Trading Bot with Hummingbot Dashboard on dYdX V4
 
 ![cover](dydx-connector-guide.png)
 

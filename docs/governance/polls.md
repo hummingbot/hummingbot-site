@@ -7,36 +7,30 @@ Therefore, Polls allow HBOT holders to allocate maintenance bandwidth in the for
 !!! note
     Prior to [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738), polls ranked connectors into Gold, Silver, and Bronze tiers. Afterwards, Polls allocate HBOT bounties among the connectors based on their pro-rata voting share, subject tor with a maximum allocation cap.
 
-## Current Poll Parameters
+## Poll Parameters
 
 | Parameter                                       | Value              |
 |-------------------------------------------------|--------------------|
-| Connector Polls per Epoch                       | 3 (CEX, DEX, Chain)|
+| Connector Polls per Epoch                       | 3 (CLOB Spot, CLOB Perp, AMM)|
 | Bounty Allocation per Poll                      | 1,000,000 HBOT     |
 | Connectors Receiving Allocation                 | 4                  |
 | Bounty Allocation Cap                           | 800,000 HBOT       |
 | Connector Inclusion Threshold                   | 200,000 HBOT       |
 
 
-### Connector Polls per Epoch
+### Connector Polls
 
-Each quarterly [epoch](epochs.md), HBOT voters vote on **three (3)** types of Polls:
+Each quarterly [Epoch](epochs.md), HBOT voters vote on which connectors of each type should be included in the codebase, and how much HBOT maintenance bounty allocation should be assigned to each connector.
 
-* [CEX Connectors](../cex-connectors/index.md): Centralized exchanges like Binance, Kucoin, etc
-* [DEX Connectors](../dex-connectors/index.md): Decentralized exchanges like dYdX, Uniswap, etc
-* [Chain Connectors](../chains/index.md): Layer 1 blockchains such as Ethereum, BNB Chain, etc
+* **CLOB Spot**: Integrations to spot order book-based markets on centralized exchanges (CEXs) and decentralized exchanges (DEXs)
+* **CLOB Perp**: Integrations to perpetual futures order book-based markets on centralized exchanges (CEXs) and decentralized exchanges (DEXs)
+* **AMM**: Integrations to automated market maker (AMM) and concentrated liquidity market maker (CLMM) decentralized exchanges (DEXs) and blockchain protocols, intermediated by the [Gateway](/gateway) middleware.
 
-### Bounty Allocation per Poll
+See [Connector Types](/exchanges/#connector-types) for more information about the types of connectors.
+
+### Connector Pots
 
 Polls allocate a fixed pool of **1,000,000 HBOT** among the top exchanges for each Poll based on their pro-rata voting share. This per-exchange amount would be a public HBOT maintenance bounty allocation which the Foundation uses to fund bounties assigned to community developers for bug fixes and upgrades related to that exchange's Hummingbot connectors. 
-
-### Connectors Receiving Allocation
-
-For each poll, the top **four (4)** exchanges, ranked by number of HBOT votes, receive bounty allocations, based on their pro-rata voting share.
-
-### Bounty Allocation Cap
-
-The maximum allocation per exchange or chain is **800,000 HBOT**. 
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
@@ -50,4 +44,4 @@ During the first week of each quarter, the Foundation will create Hummingbot Gov
 
 Each poll lasts for 14 days, and any Ethereum wallet holding HBOT tokens at poll creation may vote. 1 HBOT token equals 1 vote.
 
-Afterwards, the Foundation will implement the approved changes in the subsequent monthly release.
+Afterwards, the Foundation will implement the approved changes in the subsequent release.
