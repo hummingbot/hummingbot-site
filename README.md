@@ -28,7 +28,7 @@ Install dependencies:
 ```bash
 pip install git+ssh://git@github.com/hummingbot/mkdocs-material-insiders  # fetch via SSH
 # pip install git+https://github.com/hummingbot/mkdocs-material-insiders.git  # fetch via SSH
-pip install mkdocs-git-revision-date-plugin mkdocs-video
+pip install mkdocs-git-revision-date-plugin mkdocs-charts-plugin
 pip install pillow cairosvg
 ```
 

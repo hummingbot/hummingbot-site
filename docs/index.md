@@ -7,15 +7,86 @@ hide:
   - feedback
 ---
 
-# Install Hummingbot 2.0!
+# How much volume does the Hummingbot community generate?
 
-  ```bash
-  git clone https://github.com/hummingbot/deploy.git
-  cd deploy
-  bash setup.sh
-  ```
+<div class="custom-metric">
+  <div class="metric-value">33.5B</div>
+  <div class="metric-label">Last 12M Reported Trade Volume</div>
+</div>
 
-After all Docker containers have started, access the Dashboard at <http://localhost:8501> in your browser.
+```vegalite
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Monthly USDT Volume",
+    "width": "container",
+    "height": 400,
+    "data": {
+      "values": [
+        {"date": "2023-09-15", "volume": 486622937.0597207},
+        {"date": "2023-10-15", "volume": 937200707.5059334},
+        {"date": "2023-11-15", "volume": 2508799386.868773},
+        {"date": "2023-12-15", "volume": 2397766942.158128},
+        {"date": "2024-01-15", "volume": 2358984706.9379473},
+        {"date": "2024-02-15", "volume": 6490279020.891341},
+        {"date": "2024-03-15", "volume": 5056300673.532455},
+        {"date": "2024-04-15", "volume": 2803765323.398611},
+        {"date": "2024-05-15", "volume": 3073736618.040254},
+        {"date": "2024-06-15", "volume": 3196767990.299173},
+        {"date": "2024-07-15", "volume": 2131640444.2422123},
+        {"date": "2024-08-15", "volume": 2009532310.070123}
+      ]
+    },
+    "mark": {"type": "bar", "color": "#5FFFD7"},
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": "Month",
+        "timeUnit": "yearmonth",
+        "axis": {
+          "format": "%b %Y",
+          "grid": false,
+          "labelFontSize": 12,
+          "titleFontSize": 16,
+          "titlePadding": 20,
+          "labelFont": "Satoshi",
+          "titleFont": "Satoshi"
+        }
+      },
+      "y": {
+        "field": "volume",
+        "type": "quantitative",
+        "title": "Reported Trading Volume (USD)",
+        "axis": {
+          "format": "~s",
+          "grid": false,
+          "labelFontSize": 12,
+          "titleFontSize": 16,
+          "titlePadding": 20,
+          "labelFont": "Satoshi",
+          "titleFont": "Satoshi",
+          "tickCount": 5
+        }
+      },
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "Month", "timeUnit": "yearmonth", "format": "%b %Y"},
+        {"field": "volume", "type": "quantitative", "title": "Volume", "format": ",.0f"}
+      ]
+    },
+    "config": {
+      "background": null,
+      "view": {
+        "stroke": null
+      },
+      "font": "Satoshi",
+      "title": {
+        "font": "Satoshi"
+      }
+    }
+}
+```
+
+### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the aggregated, anonymized trade volumes reported by Hummingbot instances.
 
 ---
 
@@ -173,7 +244,7 @@ Hummingbot revolutionized my crypto trading. Using advanced strategies, I develo
 
 <span class="quote">
 :material-format-quote-open:
-We’re big supporters of Hummingbot’s vision of open source algo trading. Their community of market makers has contributed significantly to the liquidity on Avalanche-based DEXs.
+We're big supporters of Hummingbot's vision of open source algo trading. Their community of market makers has contributed significantly to the liquidity on Avalanche-based DEXs.
 :material-format-quote-close:
 </span>
 <br/><br/><br/>
