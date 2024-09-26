@@ -91,9 +91,6 @@ hide:
 
 # Partners & Sponsors
 
-
-###  We are immensely grateful to the exchanges and protocols who support Hummingbot Foundation!¶
-
 <div class="exchange-grid">
   <div class="flex-item">
     <img src="/assets/logos/binance-dark.png" alt="Binance" class="dark-logo"/>
