@@ -235,7 +235,7 @@ nav:
       - dYdX: exchanges/dydx.md
       - Gate.io: exchanges/gate-io/index.md
       - Hashkey: exchanges/hashkey/index.md
-      - HyperLiquid: exchanges/hyperliquid.md
+      - Hyperliquid: exchanges/hyperliquid.md
       - HTX: exchanges/huobi/index.md
       - Kraken: exchanges/kraken/index.md
       - Kucoin: exchanges/kucoin/index.md

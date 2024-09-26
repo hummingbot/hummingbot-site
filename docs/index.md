@@ -283,13 +283,13 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
     ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
--   [![](/academy-content/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
+-   [![](/academy/using-hyperliquid-vaults-with-hummingbot/hlp.png)](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid//)
 
-    ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
+    ### [Funding Rate Arbitrage on Hyperliquid](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
 
--   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
+-   [![](/academy/coding-a-custom-v2-controller/cover.webp)](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
+    ### [Coding a Custom V2 Controller](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
 
 </div>
 
