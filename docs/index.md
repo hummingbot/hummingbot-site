@@ -132,14 +132,6 @@ hide:
 
 # Who uses Hummingbot?
 
-## :fontawesome-solid-arrows-turn-to-dots: Market Makers
-
-<div class="accent" markdown>
-
-### For many crypto market making firms, Hummingbot is the trusted starting point for creating secure, scalable algo trading solutions.
-
-</div>
-
 <div class="grid" markdown>
 
 <span class="quote">
@@ -147,11 +139,10 @@ hide:
 As the company that open-sourced Hummingbot, we're incredibly proud of how the community has embraced it. Today, we run bespoke strategies for our institutional clients using many custom Hummingbot instances.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/authors/carlo-las-marias.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author centered">Carlo Las Marias</a>
-<br/>
+<span class="role centered">Market Maker</span>
+<br />
 <a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.png" class="logo centered"></a>
 { .testimonial }
 
@@ -160,10 +151,9 @@ As the company that open-sourced Hummingbot, we're incredibly proud of how the c
 We started with Hummingbot as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. We still use it from time to time and enjoy their great documentation.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/brand/3jane-eugene.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <a href="https://www.linkedin.com/in/etartakovsky/" target="_blank" class="author centered">Eugene Tartakovsky</a>
+<span class="role centered">Market Maker</span>
 <br/>
 <a href="https://3jane.com/" target="_blank"><img src="/assets/brand/3jane-2.jpg" class="logo centered"></a>
 { .testimonial }
@@ -173,37 +163,30 @@ We started with Hummingbot as the foundation for our market-making business. The
 Hummingbot has served as a reliable base for us to build custom tools and strategies. It has many quality connectors and all components are well thought out, allowing us to flexibly modify the open source code.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/brand/enclave-jelle-buth.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <a href="https://www.linkedin.com/in/jelle-buth/" target="_blank" class="author centered">Jelle Buth</a>
+<span class="role centered">Market Maker</span>
 <br/>
 <a href="https://www.enflux.io/" target="_blank"><img src="/assets/brand/enclave.jpg" class="logo centered"></a>
 { .testimonial }
 
-</div>
-
-</br />
-
-## :fontawesome-solid-people-group: Algo Traders & Boutique Firms
-
-<div class="accent" markdown>
-
-### Algorithmic traders and boutique firms leverage Hummingbot for capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](strategies/amm-arbitrage.md) and earning liquidity mining rewards on [Hummingbot Miner](https://miner.hummingbot.io).
-
-</div>
-
-<div class="grid" markdown>
+<span class="quote">
+:material-format-quote-open:
+Hummingbot allowed me to run profitable strategies and generate $2 billion in trade volume. I can't recommend Hummingbot enough for any algo trader seeking a 0 to 1 platform.
+:material-format-quote-close:
+</span>
+<br/><br/>
+<a href="https://summitoperations.co/" target="_blank" class="author centered">Kollan</a>
+<span class="role centered">Prop Trader</span>
+{ .testimonial }
 
 <span class="quote">
 :material-format-quote-open:
-Hummingbot allowed me to launch a successful suite of trading strategies managing over $2 billion in trade volume. I can't recommend Hummingbot enough for any algo trader seeking a 0 to 1 platform.
+Hummingbot revolutionized my crypto trading. Using advanced strategies, I developed my own trading style and consistently ranked at the top of the Miner leaderboard for months.
 :material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/authors/kollan.png" class="headshot centered"/>
-<br/>
-<a href="https://summitoperations.co/" target="_blank" class="author centered">Kollan</a>
+<br/><br/>
+<a href="https://github.com/mlguys" target="_blank" class="author centered">Wojak</a>
+<span class="role centered">Prop Trader</span>
 { .testimonial }
 
 <span class="quote">
@@ -211,63 +194,10 @@ Hummingbot allowed me to launch a successful suite of trading strategies managin
 Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pure market making strategy. Based on my profitable strategies, I started an algo-trading startup in Saudi Arabia!
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/authors/hyder.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <span class="author centered">Hyder</span>
+<span class="role centered">Prop Trader</span>
 { .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-Hummingbot revolutionized my crypto trading. Using advanced strategies, I developed my own successful trading style and consistently ranked at the top of Hummingbot Miner's leaderboard for months.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/authors/wojak.png" class="headshot centered" />
-<br/>
-<a href="https://github.com/mlguys" target="_blank" class="author centered">Wojak</a>
-{ .testimonial }
-
-</div>
-
-</br />
-
-## :material-upload-network: Protocols & Token Projects
-
-<div class="accent" markdown>
-
-### Blockchain protocols harness Hummingbot to foster liquidity, catalyzing their ecosystems without the overhead of external market makers.
-
-</div>
-
-<div class="grid wide" markdown>
-
-<span class="quote">
-:material-format-quote-open:
-We're big supporters of Hummingbot's vision of open source algo trading. Their community of market makers has contributed significantly to the liquidity on Avalanche-based DEXs.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/brand/ava-labs-lydia.jpg" class="headshot centered" />
-<br/>
-<a href="https://www.linkedin.com/in/encycloplydia/" target="_blank" class="author centered">Lydia Chiu</a>
-<br/>
-<a href="https://www.avalabs.org/" target="_blank"><img src="/assets/brand/ava-labs.jpg" class="logo centered"></a>
-{ .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot connector enables our community to power liquidity for current and future projects on Harmony.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/brand/harmony-stephen.jpg" class="headshot centered" />
-<br/>
-<a href="https://www.linkedin.com/in/tsestephen/" target="_blank" class="author centered">Stephen Tse</a>
-<br/>
-<a href="https://www.harmony.one/" target="_blank"><img src="/assets/brand/harmony.jpg" class="logo centered"></a>
-{ .testimonial }
-
 
 </div>
 
@@ -301,12 +231,16 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 # A Global Algo Trader Community
 
-### The Hummingbot Foundation, a not-for-profit beacon, ensures the codebase's decentralized evolution, guided by the Hummingbot community and Governance Token (HBOT).
+![](/assets/img/globe.png)
 
-- [Foundation](/about): About the Foundation and our mission
-- [Community](/community): Join our global community of algo traders
-- [Governance](/governance): Decide how the Hummingbot framework evolves
-- [FAQ](/faq): Answers to common questions
+<div class="grid cards wide" markdown>
+
+- :material-information-outline: __[Foundation](/about)__: About the Foundation and our mission
+- :material-account-group: __[Community](/community)__: Join our global community of algo traders
+- :material-gavel: __[Governance](/governance)__: Decide how the Hummingbot framework evolves
+- :material-frequently-asked-questions: __[FAQ](/faq)__: Answers to common questions
+
+</div>
 
 ---
 

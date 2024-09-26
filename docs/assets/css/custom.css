@@ -296,6 +296,12 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   .logo:hover {
     opacity: 0.8;
   }
+
+  .role {
+    font-size: 0.9rem;
+    color: var(--md-default-fg-color--light);
+    /* margin-top: 0.5rem; */
+  }
 }
 
 /* Accent color */
