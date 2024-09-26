@@ -85,11 +85,16 @@ hide:
     }
 }
 ```
+### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the volume reported by all Hummingbot instances, broken down by exchange.
+
+---
+
+# Partners & Sponsors
 
 <div class="exchange-grid">
   <div class="flex-item">
-    <img src="/assets/logos/binance.png" alt="Binance" class="dark-logo"/>
-    <img src="/assets/logos/binance.png" alt="Binance" class="light-logo"/>
+    <img src="/assets/logos/binance-dark.png" alt="Binance" class="dark-logo"/>
+    <img src="/assets/logos/binance-light.png" alt="Binance" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
@@ -120,8 +125,6 @@ hide:
     <img src="/assets/logos/htx-logo-light.png" alt="HTX" class="light-logo"/>
   </div>
 </div>
-
-### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the anonymized trade volumes reported by Hummingbot instances, broken down by exchange.
 
 ---
 
@@ -275,47 +278,6 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 - :material-gavel: __[Governance](/governance)__: Decide how the Hummingbot framework evolves
 - :material-frequently-asked-questions: __[FAQ](/faq)__: Answers to common questions
 
-</div>
-
----
-
-# Sponsors & Partners
-
-### We are grateful to the exchanges, protocols, and companies who support our quest to **democratize high-frequency trading**!
-
-<div class="flex-container home">
-  <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/dydx-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/dydx-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/vega-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/vega-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/initialized-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/initialized-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/defiance-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/defiance-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/bain-capital-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/bain-capital-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/1kx-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/1kx-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/coinalpha-light.png" class="light-logo"/>
-  </div>
 </div>
 
 ---
