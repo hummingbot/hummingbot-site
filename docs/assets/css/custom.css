@@ -457,3 +457,39 @@ Causes a delay when opening search, not optimal */
     font-size: 0.9rem !important;
   }
 }
+
+
+/* Exchange Grid */
+.exchange-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.exchange-grid .flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exchange-grid img {
+  max-width: 100%;
+  height: auto;
+  padding: 0rem 1rem;
+}
+
+@media (max-width: 1200px) {
+  .exchange-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .exchange-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
