@@ -89,7 +89,7 @@ hide:
 
 ---
 
-# Partners & Sponsors
+# Our supporters and partners
 
 <div class="exchange-grid">
   <div class="flex-item">
@@ -121,8 +121,8 @@ hide:
     <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/vega-dark.png" alt="Vega" class="dark-logo"/>
-    <img src="/assets/logos/vega-light.png" alt="Vega" class="light-logo"/>
+    <img src="/assets/logos/coinalpha-dark.png" alt="CoinAlpha" class="dark-logo"/>
+    <img src="/assets/logos/coinalpha-light.png" alt="CoinAlpha" class="light-logo"/>
   </div>
 </div>
 
@@ -183,7 +183,7 @@ As the company that open-sourced Hummingbot, we're incredibly proud of how the c
 <a href="https://www.linkedin.com/in/jason-tomlinson-88b0b78/" target="_blank" class="author centered">Jason Tomlinson</a>
 <span class="role centered">Market Maker</span>
 <br />
-<a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.png" class="logo centered"></a>
+<a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.jpeg" class="logo centered"></a>
 { .testimonial }
 
 <span class="quote">
@@ -269,7 +269,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 ---
 
-# A Global Algo Trader Community
+# A global community of algo traders
 
 ![](/assets/img/globe.png)
 
@@ -283,9 +283,9 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 </div>
 
 ---
-# Stay Ahead with the Hummingbot newsletter
+# Get the Hummingbot newsletter
 
-### Published when each monthly release drops, our official newsletter has all the Hummingbot news, upcoming events, and contributions from the global Hummingbot community!
+### Published on when a new Hummingbot release drops, our official newsletter tells you about upcoming events and new contributions from the global Hummingbot community.
 
 <br />
 
