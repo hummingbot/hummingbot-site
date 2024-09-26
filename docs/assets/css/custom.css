@@ -400,6 +400,7 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
   .grid.two-thirds {
     grid-template-columns: 1fr; /* All items will stack on top of each other */
   }
+}
 
 /* Highlights text to link color */
 .text-highlight {
@@ -412,9 +413,41 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 }
 
 /* Fix mobile search with blurred header 
-   Causes a delay when opening search, not optimal */
-   [data-md-scrolllock] .md-header,
-   [data-md-scrolllock] .md-tabs {
-       -webkit-backdrop-filter: none !important;
-       backdrop-filter: none !important;
-   }
+Causes a delay when opening search, not optimal */
+[data-md-scrolllock] .md-header,
+[data-md-scrolllock] .md-tabs {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Custom Metrics Display */
+.md-typeset .custom-metric {
+  text-align: center !important;
+  padding: 2rem 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.md-typeset .custom-metric .metric-value {
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+  color: var(--md-primary-fg-color--dark) !important;
+  line-height: 1.2 !important;
+  font-family: 'Satoshi', sans-serif !important;
+}
+
+.md-typeset .custom-metric .metric-label {
+  font-size: 1rem !important;
+  color: var(--md-default-fg-color) !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .md-typeset .custom-metric .metric-value {
+    font-size: 3rem !important;
+  }
+  
+  .md-typeset .custom-metric .metric-label {
+    font-size: 0.9rem !important;
+  }
+}
