@@ -175,7 +175,7 @@ As the company that open-sourced Hummingbot, we're incredibly proud of how the c
 :material-format-quote-close:
 </span>
 <br/><br/>
-<a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author centered">Carlo Las Marias</a>
+<a href="https://www.linkedin.com/in/jason-tomlinson-88b0b78/" target="_blank" class="author centered">Jason Tomlinson</a>
 <span class="role centered">Market Maker</span>
 <br />
 <a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.png" class="logo centered"></a>
