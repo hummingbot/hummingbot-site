@@ -88,8 +88,8 @@ hide:
 
 <div class="exchange-grid">
   <div class="flex-item">
-    <img src="/assets/logos/binance.png" alt="Binance" class="dark-logo"/>
-    <img src="/assets/logos/binance.png" alt="Binance" class="light-logo"/>
+    <img src="/assets/logos/binance-dark.png" alt="Binance" class="dark-logo"/>
+    <img src="/assets/logos/binance-light.png" alt="Binance" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
