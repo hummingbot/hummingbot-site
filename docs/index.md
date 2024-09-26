@@ -86,7 +86,7 @@ hide:
 }
 ```
 
-### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the aggregated, anonymized trade volumes reported by Hummingbot instances.
+### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the anonymized trade volumes reported by Hummingbot instances, broken down by exchange.
 
 ---
 
@@ -299,17 +299,18 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 ---
 
-# A Global Nexus for Algo Traders
+# A Global Algo Trader Community
 
 ### The Hummingbot Foundation, a not-for-profit beacon, ensures the codebase's decentralized evolution, guided by the Hummingbot community and Governance Token (HBOT).
 
-- [About Us](/about): About the Foundation and our mission
-- [Governance](/governance): Decide how Hummingbot evolves
+- [Foundation](/about): About the Foundation and our mission
+- [Community](/community): Join our global community of algo traders
+- [Governance](/governance): Decide how the Hummingbot framework evolves
 - [FAQ](/faq): Answers to common questions
 
 ---
 
-# Sponsors & Backers
+# Sponsors & Partners
 
 ### We are grateful to the exchanges, protocols, and companies who support our quest to **democratize high-frequency trading**!
 
