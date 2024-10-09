@@ -4,7 +4,10 @@ Hummingbot is a community-driven open source project that provides standardized 
 
 The Foundation utilizes HBOT-denominated bounties to fund the maintenance and development of the Hummingbot open source codebase.
 
-Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. See [External Bounties](/bounties/external.md) and [Lifecycle of a Bounty](./lifecycle.md)for more information.
+Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. For more information, see:
+
+* [External Bounties](./external.md)
+* [Lifecycle of a Bounty](./lifecycle.md)
 
 ## Bounties Board
 

@@ -1,14 +1,14 @@
 ## What types of connector bounties will the Foundation handle?
 
-Only CLOB (Spot), CLOB (Perp), and AMM connectors.
+Integrations to exchanges that meet the [connector standards](/exchanges/) for CLOB (Spot), CLOB (Perp), and AMM connectors.
 
 ## What types of strategies bounties will the Foundation handle?
 
-Only [Controllers](/v2-strategies/controllers/index.md) for directional strategies and market making strategies.
+Custom algorithmic trading stratgies composed as a [Script](/scripts) or [Controller](/v2-strategies/controllers/index.md) - market making, arbitrage, directional, etc.
 
 ## Can multiple users fund a single bounty?
 
-Yes, multiple users can fund the same bounty.
+Yes, multiple users can fund the same bounty, but they must coordinate between themselves to ensure that the Foundation receives the bounty amounts in a timely manner.
 
 ## What does the preliminary check for new connectors entail?
 
@@ -16,7 +16,7 @@ Before users fund a new connector bounty, the Foundation's engineering team perf
 
 ## What tests do developer need to write?
 
-- CLOB connectors: unit tests
+- CLOB spot and perp connectors: unit tests
 - AMM connectors: curl tests, optional unit tests (in `test-bronze` folder)
 
 ## How can a developer get assigned to a bounty?

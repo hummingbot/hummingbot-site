@@ -285,7 +285,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 ---
 # Get the Hummingbot newsletter
 
-### Published on when a new Hummingbot release drops, our official newsletter tells you about upcoming events and new contributions from the global Hummingbot community.
+### Published when a new Hummingbot release drops (about every 2 months), our official newsletter tells you about upcoming events and new contributions from the global Hummingbot community.
 
 <br />
 
