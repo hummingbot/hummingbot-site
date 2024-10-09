@@ -402,8 +402,7 @@ nav:
     - Bounties: 
       - Bounties: bounties/index.md
       - External Bounties: bounties/external.md
-      - Lifecyle of a Bounty: bounties/lifecycle.md
-      - Completed Bounties: bounties/completed.md
+      - Lifecycle of a Bounty: bounties/lifecycle.md
       - Bounties FAQ: bounties/faq.md
       - Bounty Contributors Guide: bounties/contributors.md
       - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
