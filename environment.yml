@@ -5,8 +5,10 @@ dependencies:
   # - mkdocs-material
   - pillow
   - cairosvg
+  - mkdocs-table-reader-plugin
   - mkdocs-git-revision-date-localized-plugin
   - mkdocs-table-reader-plugin
+  - mkdocs-charts-plugin
   - pip
   - pip:
     - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
