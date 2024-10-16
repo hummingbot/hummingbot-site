@@ -58,16 +58,16 @@ After creating an API key, you can Edit or Delete your API keys under the Action
 ### Add Keys to Hummingbot
 
 ```
->>> connect ascendex
+>>> connect ascend_ex
 
-Enter your ascendex API key >>>
-Enter your ascendex secret key >>>
+Enter your ascend_ex API key >>>
+Enter your ascend_ex secret key >>>
 ```
 
 If connection is successful:
 
 ```
-You are now connected to ascendex
+You are now connected to ascend_ex
 ```
 
 ## 🔀 Spot Connector

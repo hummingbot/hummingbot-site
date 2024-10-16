@@ -244,6 +244,7 @@ nav:
       - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx/okx.md
+      - Vertex: exchanges/vertex.md
       - XRP Ledger: exchanges/xrpl.md
     - AMM Connectors:
       - AMM Connectors: dex-connectors/index.md
