@@ -14,4 +14,16 @@ Not only does Dashboard simplify the process of managing bots at scale, but it a
 
 ## Getting Started
 
-To get started, check out the [Hummingbot 2.0 Quickstart](/installation/hummingbot-deploy/quickstart/) guide, along with each page in the sidebar.
+To get started, check out the [Hummingbot Dashboard Quickstart](docs/hummingbot-site/docs/academy/posts/quickstart-dashboard/index.md) guide, or the links below with a short explanation of each page (also in the sidebar).
+
+- [Adding Credentials:](dashboard/credentials.md)
+
+- [Viewing Portfolio:](dashboard/portfolio.md)
+
+- [Configuring Strategies:](dashboard/config.md)
+
+- [Backtesting Strategies:](dashboard/backtest.md)
+
+- [Deploying Instances:](dashboard/deploy.md)
+
+- [Managing Instances:](dashboard/instances.md)
