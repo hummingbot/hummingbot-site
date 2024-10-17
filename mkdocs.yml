@@ -228,6 +228,7 @@ nav:
       - BitMart: exchanges/bitmart/index.md
       - Bybit: exchanges/bybit.md
       - BTC Markets: exchanges/btc-markets.md
+      - Chainflip: exchanges/chainflip/index.md
       - Coinbase: exchanges/coinbase.md
       - Cube: exchanges/cube/index.md
       - Dexalot: exchanges/dexalot.md
