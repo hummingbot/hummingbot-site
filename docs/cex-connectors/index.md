@@ -23,7 +23,7 @@ Here are the current CEX connectors in the codebase:
 
 | Exchange | Type | Spot Connector Standard | Perp Connector Standard | V2 Strategies Compatible | Connector Guide
 |----------|------|------|------------|-------------|---|
-| [Binance](../exchanges/binance/index.md) | CLOB | v2.1 | v2.1 | Yes | [Guide](/academy-content/using-binance-with-hummingbot)
+| [Tegro](../exchanges/tegro/index.md) | CLOB | v2.1 | v2.1 | Yes | [Guide](/academy-content/using-tegro-with-hummingbot)
 | [Gate.io](../exchanges/gate-io/index.md) | CLOB | v2.1 | v2.1 | Yes
 | [Kucoin](../exchanges/kucoin/index.md) | CLOB | v2.1 | v2.1 | Yes
 | [HTX](../exchanges/huobi) | CLOB | v2.0 |  | No - market order type not supported
@@ -42,3 +42,4 @@ Here are the current CEX connectors in the codebase:
 | [NDAX](../exchanges/ndax) | CLOB | v1.0 |  | No
 | [Cube](../exchanges/cube/index.md) | CLOB | v2.1 |  | Yes
 | [Bitstamp](../exchanges/bitstamp/index.md) | CLOB | v2.1 |  | Yes
+| [Tegro](../exchanges/tegro/index.md) | CLOB | v2.1 | v2.1 | Yes 
