@@ -1,9 +1,25 @@
 #!/bin/bash
 
-# Set the Datadog API key and application key before running the script
+# Instructions
+#
+# This script is used to fetch Hummingbot filled USDT volume data from Datadog and update the website with the latest data each month
+#
+# 1. Set the Datadog API key and application key before running the script
 # export DATADOG_API_KEY=<YOUR_API_KEY>
 # export DATADOG_APP_KEY=<YOUR_APP_KEY>
+#
+# 2. Run the script with the -f flag to save the output to a file
+# ./datadog-script.sh -f output.txt
+#
+# 3. Use AI to generate VegaLite JSON from the output file similar to the example in the docs/index.md file
+#
+# 4. Modify the VegaLite JSON in the docs/index.md file. Make sure to include the past 12 months of data only.
+# 
+# 5. Update the cumulative total in the docs/index.md file.
+#
+# 5. Delete the output.txt file, and then commit the changes and open a PR.
 
+# Script
 # Set the dashboard ID
 DASHBOARD_ID="6eq-2aj-ggn"
 

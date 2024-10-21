@@ -1,74 +1,56 @@
-# External Bounties
+If you are want to get a custom algorithmic strategy or Hummingbot connector built by a professional-grade developer, Hummingbot Foundation can help you navigate the entire development process. This includes:
 
-For the past two years, Hummingbot Foundation has been using the Bounties system internally to fund the development of Hummingbot and Gateway. We are now expanding this to external bounty sponsors to enable them to crowdsource development from the Hummingbot community developers for their connectors and strategies.
+- Posting the bounty on [Bounties Board](https://github.com/orgs/hummingbot/discussions/categories/bounties)
+- Assigning a qualified community developer and monitoring their progress
+- Reviewing the code to ensure the connector meets the acceptance criteria and other requirements
+- Performing automated and manual testing (quality assurance)
+- Paying the developer when the pull request is merged
 
-See [Lifecyle of a Bounty](./lifecycle.md) for more details on the overall process, and see [Completed Bounties](/bounties/completed.md) for an idea of the current all-in market rate for various types of bounties.
+To initiate the process, please post a create a new [Github Issue](https://github.com/hummingbot/hummingbot/issues/new/choose) and choose the **Bounty Request** template. You may also contact the Foundation team members on [Discord](https://discord.gg/hummingbot) to discuss your bounty.
 
+## Bounty Types
 
-!!! tip "Sponsoring Hummingbot Foundation"
-    For leading protocols and exchanges who wish to build a long-term relationship with the Hummingbot community, we also offer a [Foundation Sponsorship](/about/sponsors/) option. For more information about this option, please email <operations@hummingbot.org> or reach out to a Foundation team member on Discord.
-
-
-## Eligible Bounties
-
-To ensure consistency and quality, the Foundation currently only handles the following types of external bounties:
-
-### Issue Types
+Bounties can be classified into one of the following types:
 
 * 🐞 **Bug Fix**: Fix to a bug in the Hummingbot codebase
-* 🏦 **New Connector**: A new [connector](/exchanges/) in the Hummingbot or Gateway codebases
-* 🏦 **New Strategy**: A new [StrategyV2 Controller](/v2-strategies/controllers/index.md) (may not be open sourced)
-* 🚀 **Connector Upgrade**: Update or improvement to an exchange connector
-* 📺 **Connector Guides**: Guides that explain how to use an exchange connector
+* 🔗 **Connector**: A new exchange [connector](/exchanges/) that meets the current Hummingbot standard. Decentralized exchanges (DEX) are generally more complex and require more time to develop than centralized exchanges (CEX)
+* 📈 **Custom Strategy**: A new Hummingbot strategy - either a [Script](/scripts/) or [Controller](/v2-strategies/controllers)
+* 📊 **Candles Feed**: A new [candles feed](/v2-strategies/candles/) that fetches historical OHLCV data from an exchange
+* 📀 **Data Feed**: A new [data feed](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed) that fetches real-time market data from an exchange
+* 📝 **Connector Guide**: Documentation that explains how to get started with a new Hummingbot connector and running a strategy on it
+* 🔼 **Upgrade Connector**: Update to an existing connector in the Hummingbot codebase (due to API changes, Hummingbot standard updates, etc.)
 
-### Connector Types
+In addition, bounties may be:
 
-* CLOB spot
-* CLOB perp
-* AMM
+* **Open Source**: merged into the official Hummingbot codebase, or 
+* **Closed Source**: delivered as a private fork to the Sponsor
 
-### Strategy Types
+## Pricing Guidance
 
-* Directional V2 Controller
-* Market Making V2 Controller
+Below, we provide a suggested bounty amount for each task type. Note that these amounts are suggestions only, and are subject to change based on task complexity.
 
-### Open Source or Private
+| Task                                | Price (USDT/USDC)| Price (Pay in HBOT) |
+|-------------------------------------|------------------|---------------------|
+| Bug Fix                             | $125-625         | $110-550            |
+| Candles Feed                        | $625             | $550                |
+| Data Feed                           | $750             | $660                |
+| Custom Strategy (Script/Controller) | from $625        | from $550           |
+| Connector - CEX CLOB Spot           | $3,750           | $3,300              |
+| Connector - CEX CLOB Perp           | $5,000           | $4,400              |
+| Connector - DEX CLOB Spot           | $5,000           | $4,400              |
+| Connector - DEX CLOB Perp           | $6,250           | $5,500              |
+| Connector - DEX AMM (EVM)           | $3,750           | $3,300              |
+| Connector - DEX AMM (non-EVM)       | $5,000           | $4,400              |
+| Connector Guide                     | $625             | $550                |
+| Upgrade Connector                   | $1,250           | $1,100              |
 
-* Open Source: to be merged into the Hummingbot or Gateway codebase
-* Private: to be merged into a private fork of Hummingbot or Gateway
+## Processing Fee
 
-!!! note "Other Bounty Types"
-    To standardize the process of bounties, we currently do not have a process for non-standardized exchange connectors, custom scripts, and other types of bounties not listed above.
+Hummingbot Foundation charges Sponsors a fee for overseeing the entire lifecycle of a bounty: scoping the bounty, finding and assigning the bounty to a qualified contributor, performing engineering/QA review, and conducting payments. This saves you a lot of time and effort.
 
-## Services We Provide
+The standard processing fee is **20%**. If a sponsor submits a 1000 USDT total bounty, the fee is 200 USDT and the developer receives 800 USDT.
 
-### Bounty Management
-
-The Foundation can help sponsors navigate the entire process of getting a new connector or strategy built. This includes:
-
-- Posting the bounty on Github
-- Finding a qualified community developer
-- Monitoring the progress of the developer
-- Engineering review to ensure the connector meets the requirements for the connector type
-- Perform automated and manual testing of the connector to ensure it works as expected
-- Paying the developer upon merging the pull request to Hummingbot or a private repository
-
-For HBOT-denominated bounties, **90%** of the total bounty amount is paid out to the developer after the work has been completed, while the Foundation keeps the remaining **10%**. For stablecoin-denominated bounties, **80%** is paid out to the developer and **20%** is kept by the Foundation.
-
-### Connector Maintenance (new connectors only)
-
-The Foundation can also facilitate the governance and maintenance of an exchange connector after it has been built. To merge a connector into the Hummingbot codebase, a [New Connector Proposal](/governance/proposals) must be submitted and approved by the community. Quaterly voting in [Polls](/governance/polls) is required to keep the connector in the codebase. In addition, there
-may be bug fixes, API changes, and other user-reported issues that require maintenance.
-
-While sponsors always have the self-serve option to submit/approve a New Connector Proposal and handle maintenance, the Foundation can also facilitate the process. For a one-time $2000 fee, the Foundation can:
-
-- Create a New Connector Proposal
-- Announce the New Connector Proposal in Discord and coordinate community voting
-- If approved, merge the connector pull request into the codebase
-- Fund a 100,000 HBOT Connector Pot that can be used for maintenance bounties
-- Create maintenance bounties using funds from the Connector Pot to address user-reported issues
-
-After the Connector Pot has been depleted, sponsors may top up the pot with additional HBOT to continue having the Foundation facilitate maintenance of their connector.
+If the bounty is denominated in the [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb) token, the fee is **10%**. If a sponsor submits a 100,000 HBOT total bounty, the fee is 10,000 HBOT and the developer receives 90,000 HBOT.
 
 ## Bounty Wallets
 
