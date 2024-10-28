@@ -310,12 +310,6 @@ nav:
       - Setting up Gateway: gateway/setup.md
       - Working with Tokens: gateway/tokens.md
       - Running Strategies and Scripts: gateway/running-dex-bots.md
-    - Training & Certification:
-      - Training & Certification: certification/index.md
-      - Certification Process: certification/process.md
-      - Certifications List: certification/list.md
-      - Botcamp ↗️: https://www.botcamp.xyz
-      - Botcamp FAQ: botcamp/faq.md
     - Community:
       - Community: community/index.md
       - Discord Support Program: community/support.md
@@ -324,7 +318,11 @@ nav:
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
-  - Academy:
+  - Certification:
+    - Certification: certification/index.md
+    - Certifications List: certification/list.md
+    - Botcamp ↗️: https://www.botcamp.xyz
+    - Botcamp FAQ: botcamp/faq.md
     - Academy: academy/index.md
   - Developers:
     - Developers: developers/index.md
