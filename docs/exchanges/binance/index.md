@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Binance. When you use our software to trade on Binance, a custom API header tells Binance that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Binance referral link](https://www.binance.com/en/register?ref=FQQNNGCD) or [Binance Futures referral link](https://www.binance.com/en/futures/ref?code=hummingbot) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with Binance. When you use our software to trade on Binance, a custom API header tells Binance that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Binance referral link](https://accounts.binance.com/register?ref=CBWO4LU6) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -21,8 +21,7 @@
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/binance>
 - **Fees**: <https://www.binance.com/en/fee/schedule>
 - **Supported Countries**: <https://www.binance.com/en/support/faq/115003824812>
-- **Binance referral link:** <https://www.binance.com/en/register?ref=FQQNNGCD>
-- **Binance Futures referral link:** <https://www.binance.com/en/futures/ref?code=hummingbot>
+- **Binance referral link:** <https://accounts.binance.com/register?ref=CBWO4LU6>
 
 
 ## 🔑 How to Connect

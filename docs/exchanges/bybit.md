@@ -32,9 +32,9 @@
 
 - Navigate to the API Management tab and click on Create New Key.
 
-- Select either System-generated API Keys or Self-generated API Keys.
+- Select System-generated API Keys.
 
-- Select Connect to Third-Party Applications, select the third-party application from the drop-down menu, and name the API key.
+- Select API Transaction, and name the API key.
 
 - Set the permissions for the API key (e.g., account information, order placement, position information) and click on Submit
 

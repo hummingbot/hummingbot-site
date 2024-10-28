@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Kucoin. When you use our software to trade on Kucoin, a custom API header tells Kucoin that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Kucoin referral link](https://www.kucoin.com/ucenter/signup?rcode=272KvRf) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with Kucoin. When you use our software to trade on Kucoin, a custom API header tells Kucoin that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Kucoin referral link](https://www.kucoin.com/r/af/hummingbot) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -21,7 +21,7 @@
 - **API Docs**: <https://docs.kucoin.com>
 - **Fees**: <https://www.kucoin.com/vip/level>
 - **Supported Countries**: <https://www.kucoin.com/support/10247584234521> 
-- **Kucoin referral link:** <https://www.kucoin.com/ucenter/signup?rcode=272KvRf>
+- **Kucoin referral link:** <https://www.kucoin.com/r/af/hummingbot>
 
 ## 🔑 How to Connect
 

@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Gate.io. When you use our software to trade on Gate.io, a custom API header tells Gate.io that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Gate.io referral link](https://www.gate.io/signup/5868285) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with Gate.io. When you use our software to trade on Gate.io, a custom API header tells Gate.io that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Gate.io referral link](https://www.gate.io/referral/invite/HBOTGATE_0_103) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 
 ## 🛠 Connector Info
@@ -22,7 +22,7 @@
 - **API Docs**: <https://www.gate.io/docs/apiv4/en/index.html>
 - **Fees**: <https://www.gate.io/fee?>
 - **Supported Countries**: <https://www.gate.io/help/c2c/c2ctrade/21130/Which-Counties-Regions-are-supported-by-our-OTC-Services>
-- **Gate.io referral link:** <https://www.gate.io/signup/5868285>
+- **Gate.io referral link:** <https://www.gate.io/referral/invite/HBOTGATE_0_103>
 
 
 ## 🔑 How to Connect
