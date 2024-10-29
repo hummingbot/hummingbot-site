@@ -219,19 +219,18 @@ nav:
       - TWAP: strategies/twap.md
     - CLOB Connectors:
       - CLOB Connectors: exchanges/index.md
-      - Binance: exchanges/binance/index.md
       - AscendEx : exchanges/ascendex/index.md
+      - Binance: exchanges/binance/index.md
       - Bitfinex: exchanges/bitfinex.md
       - Bitstamp: exchanges/bitstamp/index.md
       - Bitrue: exchanges/bitrue.md
       - Bitget: exchanges/bitget-perpetual.md
-      - BitMart: exchanges/bitmart/index.md
+      - Bitmart: exchanges/bitmart/index.md
       - Bybit: exchanges/bybit.md
       - BTC Markets: exchanges/btc-markets.md
       - Coinbase: exchanges/coinbase.md
       - Cube: exchanges/cube/index.md
       - Dexalot: exchanges/dexalot.md
-      - Foxbit: exchanges/foxbit.md
       - dYdX: exchanges/dydx.md
       - Gate.io: exchanges/gate-io/index.md
       - Hashkey: exchanges/hashkey/index.md
@@ -244,12 +243,13 @@ nav:
       - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx/okx.md
+      - Tegro: exchanges/tegro.md
       - Vertex: exchanges/vertex.md
       - XRP Ledger: exchanges/xrpl.md
     - AMM Connectors:
       - AMM Connectors: dex-connectors/index.md
-      - Uniswap : exchanges/uniswap.md
       - Balancer: exchanges/balancer.md
+      - ETCSwap: exchanges/etcSwap.md
       - Mad Meerkat: exchanges/mad-meerkat.md
       - Curve: exchanges/curve.md
       - Carbon: exchanges/carbon.md
@@ -257,13 +257,12 @@ nav:
       - Osmosis: exchanges/osmosis.md
       - Pancakeswap : exchanges/pancakeswap.md
       - Pangolin: exchanges/pangolin.md
-      - Plenty: exchanges/plenty.md
       - Quickswap: exchanges/quickswap.md
-      - Ref: exchanges/ref.md
       - Sushiswap: exchanges/sushiswap.md
       - Tinyman: exchanges/tinyman.md
       - Telos: exchanges/telos.md
       - TraderJoe: exchanges/traderjoe.md
+      - Uniswap : exchanges/uniswap.md
       - VVS: exchanges/vvs.md
       - XSwap: exchanges/xswap.md
     - Hummingbot Client:
