@@ -12,7 +12,7 @@ repo_url: 'https://github.com/hummingbot/hummingbot'
 edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
 
 # Copyright
-copyright: Copyright &copy; 2023 Hummingbot Foundation
+copyright: Copyright &copy; 2024 Hummingbot Foundation
 
 # Configuration
 theme:
@@ -244,6 +244,7 @@ nav:
       - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx/okx.md
+      - Vertex: exchanges/vertex.md
       - XRP Ledger: exchanges/xrpl.md
     - AMM Connectors:
       - AMM Connectors: dex-connectors/index.md
@@ -309,12 +310,6 @@ nav:
       - Setting up Gateway: gateway/setup.md
       - Working with Tokens: gateway/tokens.md
       - Running Strategies and Scripts: gateway/running-dex-bots.md
-    - Training & Certification:
-      - Training & Certification: certification/index.md
-      - Certification Process: certification/process.md
-      - Certifications List: certification/list.md
-      - Botcamp ↗️: https://www.botcamp.xyz
-      - Botcamp FAQ: botcamp/faq.md
     - Community:
       - Community: community/index.md
       - Discord Support Program: community/support.md
@@ -323,7 +318,11 @@ nav:
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
-  - Academy:
+  - Certification:
+    - Certification: certification/index.md
+    - Certifications List: certification/list.md
+    - Botcamp ↗️: https://www.botcamp.xyz
+    - Botcamp FAQ: botcamp/faq.md
     - Academy: academy/index.md
   - Developers:
     - Developers: developers/index.md
@@ -354,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.1.0: release-notes/2.1.0.md
     - 2.0.1: release-notes/2.0.1.md
     - 2.0.0: release-notes/2.0.0.md
     - 1.28.0: release-notes/1.28.0.md
