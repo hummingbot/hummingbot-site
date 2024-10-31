@@ -16,11 +16,11 @@ The seventh cohort of Hummingbot Botcamp recently finished with a milestone Demo
 
 ### Cohort 7: Certified StrategyV2 Developer
 
-In Cohort 7, participants embarked on an intensive 5-week journey to become **Certified StrategyV2 Developers**. Throughout the program, they learned to design, code, and deploy custom algorithmic trading strategies using the [Strategy V2 Framework](/v2-strategies). The cohort culminated in a Demo Day, where participants presented their strategies and voted for the best ones.
+In Cohort 7, participants embarked on an intensive 5-week journey to become **Certified StrategyV2 Developers**. Throughout the program, they learned to design, code, and deploy custom algorithmic trading strategies using the [Strategy V2 Framework](./../../../v2-strategies/index.md). The cohort culminated in a Demo Day, where participants presented their strategies and voted for the best ones.
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/TAulqoSenmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-By completing the cohort, participants gained official recognition with [Hummingbot certification](/certification) to showcase their skills on social media and professional platforms. In addition, each Demo Day presenter received a limited edition [Cohort 7 NFT](https://opensea.io/assets/ethereum/0x59072271620d3528cb6d7565158b11492b25a4e5/1), commemorating their participation and achievement.
+By completing the cohort, participants gained official recognition with [Hummingbot certification](./../../../certification/index.md) to showcase their skills on social media and professional platforms. In addition, each Demo Day presenter received a limited edition [Cohort 7 NFT](https://opensea.io/assets/ethereum/0x59072271620d3528cb6d7565158b11492b25a4e5/1), commemorating their participation and achievement.
 
 ### Strategy Presentations
 
@@ -92,7 +92,7 @@ Cohort 7 Demo Day was a resounding success, and we are now accepting registratio
 
 Compared to prior Botcamp cohorts, this cohort will focus on market-making strategies on centralized and decentralized exchanges, rather than general algorithmic trading. This cohort will emphasize theory and deployment over coding, making it ideal for students without Python experience.
 
-Early bird registration ends soon. [Sign up on the Botcamp website](https://www.botcamp.xyz/event/certified-market-maker-3/register) and learn how to market make like the pros!
+Early bird registration ends soon. [Sign up on the Botcamp website](https://www.botcamp.xyz/) and learn how to market make like the pros!
 
 
 
