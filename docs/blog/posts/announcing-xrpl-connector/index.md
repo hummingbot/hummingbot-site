@@ -12,7 +12,7 @@ categories:
 
 Today, Hummingbot is excited to announce the release of a new connector to the XRP Ledger (XRPL), available in the latest [release 2.0](https://hummingbot.org/release-notes/2.0.0/). The XRP Ledger (XRPL) is a decentralized, layer 1 blockchain with reliability and stability proven for over a decade, trusted by businesses and builders globally for the efficient tokenization and exchange of crypto-native and real-world assets.
 
-Hummingbot 2.0 introduces the highly-anticipated [Dashboard](/installation/hummingbot-deploy/quickstart/), a new entry point that makes the platform more accessible and user-friendly. Dashboard allows users to easily create, backtest, and deploy their trading bots through an intuitive visual interface, streamlining the strategy configuration and bot management process and enhancing the overall user experience.
+Hummingbot 2.0 introduces the highly-anticipated [Dashboard](./../../../dashboard/index.md), a new entry point that makes the platform more accessible and user-friendly. Dashboard allows users to easily create, backtest, and deploy their trading bots through an intuitive visual interface, streamlining the strategy configuration and bot management process and enhancing the overall user experience.
 
 This new XRPL connector cements Hummingbot as the open source exchange API connector standard across both centralized and decentralized crypto exchanges. Hummingbot users can now leverage the robust and decentralized infrastructure of XRPL to enhance their crypto trading and market-making strategies.
 

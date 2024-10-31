@@ -235,7 +235,7 @@ nav:
       - Gate.io: exchanges/gate-io/index.md
       - Hashkey: exchanges/hashkey/index.md
       - Hyperliquid: exchanges/hyperliquid.md
-      - HTX: exchanges/huobi/index.md
+      - HTX: exchanges/htx/index.md
       - Kraken: exchanges/kraken/index.md
       - Kucoin: exchanges/kucoin/index.md
       - Injective Helix: exchanges/injective.md
@@ -243,7 +243,7 @@ nav:
       - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx/okx.md
-      - Tegro: exchanges/tegro.md
+      - Tegro: exchanges/tegro/index.md
       - Vertex: exchanges/vertex.md
       - XRP Ledger: exchanges/xrpl.md
     - AMM Connectors:
