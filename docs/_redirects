@@ -13,3 +13,4 @@
 /botcamp               https://www.botcamp.xyz          301
 /getting-started       /docs                            301
 /academy               /blog/category/academy           301
+/academy-content/*     /blog/:splat               301
