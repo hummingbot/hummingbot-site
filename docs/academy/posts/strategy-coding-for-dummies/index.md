@@ -4,6 +4,9 @@ authors:
   - community
 categories:
   - Community Posts
+  - Academy
+tags:
+  - Strategy Guides
 ---
 
 # Hummingbot V1 Strategy Coding for Dummies

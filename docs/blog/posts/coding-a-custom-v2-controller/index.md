@@ -4,6 +4,10 @@ authors:
   - community
 categories:
   - Community Posts
+  - Engineering
+  - Academy
+tags:
+  - Strategy Guides
 ---
 
 # Coding a Liquidation Sniper V2 Strategy Controller

@@ -3,7 +3,7 @@ date: 2024-10-08
 authors:
   - community
 categories:
-  - Connector Guides
+  - Academy
 tags:
   - Connector Guides
 ---
