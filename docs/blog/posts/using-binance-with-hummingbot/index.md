@@ -4,7 +4,6 @@ authors:
   - foundation
 categories:
   - Academy
-tags:
   - Connector Guides
 ---
 

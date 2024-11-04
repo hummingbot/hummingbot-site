@@ -4,8 +4,6 @@ authors:
   - community
 categories:
   - Academy
-tags:
-  - Market Making Basics
   - Community Posts
 ---
 
