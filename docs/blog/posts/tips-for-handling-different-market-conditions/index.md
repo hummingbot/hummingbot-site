@@ -4,7 +4,6 @@ authors:
   - community
 categories:
   - Academy
-tags:
   - Community Posts
 ---
 

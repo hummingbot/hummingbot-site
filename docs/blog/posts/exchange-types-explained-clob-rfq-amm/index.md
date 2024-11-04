@@ -4,8 +4,6 @@ authors:
   - carlo
 categories:
   - Academy
-tags:
-  - Crypto Exchange Landscape
 ---
 
 # Exchange Types Explained: CLOB, RFQ, AMM

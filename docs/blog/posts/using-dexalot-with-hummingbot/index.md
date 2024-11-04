@@ -4,8 +4,8 @@ authors:
   - community
 categories:
   - Academy
-tags:
   - Connector Guides
+  - Community Posts
 ---
 
 # Using Dexalot with Hummingbot
