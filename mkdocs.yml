@@ -58,6 +58,7 @@ plugins:
   - search
   - charts
   - table-reader
+  - macros
   - git-revision-date-localized
   - social:
       cards_layout_options:

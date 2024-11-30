@@ -4,35 +4,50 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 
 **Hummingbot Foundation does not rely on the sale of HBOT tokens.** The Foundation sustains its operations through fee share partnerships and sponsorships with top crypto exchanges. The Foundation does not sell HBOT to fund its operations.
 
-**Hummingbot Foundation will never issue or sell HBOT tokens.** The total supply of HBOT is fixed at 1,000,000,000 tokens, and all of the supply will be distributed to the community.
+**Hummingbot Foundation will never issue more HBOT tokens.** The total supply of HBOT was fixed at genesis at 1,000,000,000 tokens. The Foundation forsees no need to issue more HBOT tokens in the future, once all of the HBOT supply has been distributed to the community.
 
-Read about HBOT in the [launch post](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md).
-
-!!! tip "HBOT Token FAQ"
-    Learn more about the HBOT token and how the Hummingbot governance system works in this [HBOT governance FAQ](/blog/faq-on-hbot-and-hummingbot-governance/)!
+Learn more about the HBOT token in the [original launch post](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md) and [2023 FAQ update](/blog/faq-on-hbot-and-hummingbot-governance/).
 
 
-## Verified HBOT Data Sites and Markets
+## HBOT Metrics
 
-To prevent HBOT token holders from being scammed by fraudulent versions of the token, unverified pools/DEXs, or incorrect coin listings, below is a compilation of HBOT-related pages on reputable sources. This does not constitute investment advice or a recommendation for any platform or market listed below.
+| Metric | Value |
+|--------|--------|
+| Blockchain | Ethereum Mainnet |
+| Token Standard | ERC-20 |
+| Address | [0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb) |
+| Symbol | HBOT |
+| Name | Hummingbot Governance Token |
+| Total Supply (fixed at genesis) | 1,000,000,000 HBOT |
+| Circulating Supply | {{ circulating_supply() }} HBOT |
+| Current Price (CoinGecko) | ${{ hbot_price() }} |
+| Market Capitalization | ${{ market_cap() }} |
+| Fully Diluted Valuation | ${{ fully_diluted_value() }} |
 
-### Data Sites
+## HBOT Data Sites
 
-- **Etherscan**: <https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb>
-- **CoinGecko**: <https://www.coingecko.com/en/coins/hummingbot>
-- **CoinMarketCap**: <https://coinmarketcap.com/currencies/hummingbot>
-- **HBOT Tracker**: <https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing>
+These official HBOT data sites provide information about the HBOT token. No other data sites are officially supported or endorsed by the Hummingbot Foundation.
 
-### Markets
+| Platform | Link |
+|----------|------|
+| HBOT Tracker | <https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing> |
+| Etherscan | <https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb> |
+| CoinGecko | <https://www.coingecko.com/en/coins/hummingbot> |
+| CoinMarketCap | <https://coinmarketcap.com/currencies/hummingbot> |
 
-- **Uniswap USDC/HBOT pool**: <https://info.uniswap.org/#/pools/0x47541d068e1289297e1ef66277507116a26de860>
-- **Uniswap ETH/HBOT pool**: <https://info.uniswap.org/#/pools/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640>
-- **Bitrue HBOT/USDT market**: <https://www.bitrue.com/trade/hbot_usdt>
+## HBOT Markets
 
+These official HBOT markets enable trading and liquidity provision for the HBOT token. No other markets are officially supported or endorsed by the Hummingbot Foundation.
+
+| Exchange | Type | Pair | Link |
+|----------|------|------|------|
+| [Uniswap](/exchanges/uniswap) | V2 AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
+| [Uniswap](/exchanges/uniswap) | V3 AMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
+| [Bitrue](/exchanges/bitrue) | Spot CEX | HBOT/USDT | <https://www.bitrue.com/trade/hbot_usdt> |
 
 ## Voting with HBOT
 
-HBOT token holders can create and vote on various types of [Proposals](/governance/proposals), as well as quarterly [Polls](/governance/polls), to decide how to allocate bounties toward maintenance of various components in the Hummingbot codebase.
+HBOT token holders can create and vote on various types of [Proposals](/governance/proposals) to allocate HBOT bounties toward maintenance of various components in the Hummingbot codebase.
 
 All **proposal voting** occur on the offical Hummingbot [Snapshot](https://snapshot.org/#/hbot.eth), which features an off-chain, gas-less voting system that allows you to vote by signing messages using your HBOT token balance as of a certain block.
 
