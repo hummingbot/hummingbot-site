@@ -19,10 +19,10 @@ Learn more about the HBOT token in the [original launch post](../blog/posts/intr
 | Symbol | HBOT |
 | Name | Hummingbot Governance Token |
 | Total Supply (fixed at genesis) | 1,000,000,000 HBOT |
-| Circulating Supply | {{ circulating_supply() }} HBOT |
-| Current Price (CoinGecko) | ${{ hbot_price() }} |
-| Market Capitalization | ${{ market_cap() }} |
-| Fully Diluted Valuation | ${{ fully_diluted_value() }} |
+| Circulating Supply | <span id="circulating-supply">...</span> HBOT |
+| Current Price (CoinGecko) | $<span id="hbot-price">...</span> |
+| Market Capitalization | $<span id="market-cap">...</span> |
+| Fully Diluted Valuation | $<span id="fdv">...</span> |
 
 ## HBOT Data Sites
 

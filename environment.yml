@@ -9,8 +9,6 @@ dependencies:
   - mkdocs-git-revision-date-localized-plugin
   - mkdocs-table-reader-plugin
   - mkdocs-charts-plugin
-  - mkdocs-macros-plugin
-  - requests
   - pip
   - pip:
     - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
