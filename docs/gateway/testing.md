@@ -2,7 +2,7 @@ After the Gateway server is running, we recommend testing out the endpoints usin
 
 In addition, you can also run unit tests and manual test scripts if you have installed Gateway from source.
 
-These methods allows you to test out the endpoints and understand how Gateway works, before interacting with it through the Hummingbot client. This is an important step because you will likely need to configure your node provider, gas settings, wallet, and other dependencies in order to run DEX trading bots successfully, and understanding Gateway's behavior on a standalone basis helps tremendously.
+These methods allow you to test out the endpoints and understand how Gateway works, before interacting with it through the Hummingbot client. This is an important step because you will likely need to configure your node provider, gas settings, wallet, and other dependencies in order to run DEX trading bots successfully, and understanding Gateway's behavior on a standalone basis helps tremendously.
 
 ## Testing with Postman
 
@@ -20,7 +20,7 @@ First, go to **Settings** >> **Certificates** in Postman:
 
 [![](./postman-certs-1.png)](./postman-certs-1.png)
 
-In this view, eable the **CA Certificates** toggle, Then go to the **certs_path** folder location from [Installation - Generating Certs](/gateway/installation/#generate-certs). Add the `ca_cert.pem` from this folder to **PEM file** in Postman.
+In this view, enable the **CA Certificates** toggle, Then go to the **certs_path** folder location from [Installation - Generating Certs](/gateway/installation/#generate-certs). Add the `ca_cert.pem` from this folder to **PEM file** in Postman.
 
 [![](./postman-certs-2.png)](./postman-certs-2.png)
 
@@ -35,11 +35,11 @@ In the **Client Certificates** section, set the following:
 
 You can also find Postman collections and environments from the [/postman](https://github.com/hummingbot/gateway/tree/main/postman) folder in the Gateway repo.
 
-Import the GatewayAPI collection and the acccompanying Gateway environment into your Postman app in order to test the Gateway endpoints.
+Import the GatewayAPI collection and the accompanying Gateway environment into your Postman app in order to test the Gateway endpoints.
 
 ### Running tests
 
-After you have imported the collection and environment, test the various endpoints and change the request parameters to understand the their behavior. This will help you understand the speed/latency of each endpoint and configure important setting, especially your node provider, to match your trading style.
+After you have imported the collection and environment, test the various endpoints and change the request parameters to understand their behavior. This will help you understand the speed/latency of each endpoint and configure important settings, especially your node provider, to match your trading style.
 
 By convention, the POST requests have sample request payloads in the Body field, which allows you to run the same
 

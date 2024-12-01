@@ -42,7 +42,7 @@ hummingbot_gateway_compose
         ┣ logs
 ```
 
-The folder location and list file is defined in each blockchain's config file (i.e. `/conf/ethereum.yml`). It also defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL) for each network. Note that `URL`-based token lists may impact client latency, compared to accessing the Token List via `FILE`. 
+The folder location and list file are defined in each blockchain's config file (i.e. `/conf/ethereum.yml`). It also defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL) for each network. Note that `URL`-based token lists may impact client latency, compared to accessing the Token List via `FILE`. 
 
 Users are free to change this setting by configuring the `tokenListType` and `tokenListSource` parameters for each network - see [Updating config parameters](/gateway/setup/#updating-config-parameters) for more information.
 
@@ -55,9 +55,9 @@ Alternatively, you may add entries to the existing lists by following the conven
 
 ## Approving tokens
 
-On Ethereum and EVM-compatible chains, wallets need to **approve** other addresses (such as DEXs) before transferring tokens to them. You can inspect the **allowance** for a spender address to see how much of a specific token you can tranfer to it.
+On Ethereum and EVM-compatible chains, wallets need to **approve** other addresses (such as DEXs) before transferring tokens to them. You can inspect the **allowance** for a spender address to see how much of a specific token you can transfer to it.
 
-When you `start` a strategy or script, Gateway automatically checks whether both base and quote tokens are approved for the DEX that you are using. If they are not approved or if allowance is insufficient, you will see an log message like "Waiting for allowances.." and the strategy will not start.
+When you `start` a strategy or script, Gateway automatically checks whether both base and quote tokens are approved for the DEX that you are using. If they are not approved or if allowance is insufficient, you will see a log message like "Waiting for allowances.." and the strategy will not start.
 
 Here is how you can approve tokens:
 
@@ -101,13 +101,13 @@ Here is an example:
 
 ## Testnet faucets
 
-An testnet faucet is a tool that allows developers and users to obtain testnet ETH or other test assets for free. Testnet ETH is a cryptocurrency that is used exclusively for testing purposes on the Ethereum network and has no real-world value.
+A testnet faucet is a tool that allows developers and users to obtain testnet ETH or other test assets for free. Testnet ETH is a cryptocurrency that is used exclusively for testing purposes on the Ethereum network and has no real-world value.
 
 Using an Ethereum testnet faucet is a simple process that involves the following steps:
 
 1. Visit a faucet website for your [chain](/chains). For example, see [Ethereum](/chains/ethereum) for a list of testnet faucets.
 
-2. Enter your testnet wallet address where indicaated.
+2. Enter your testnet wallet address where indicated.
 
 3. Complete any additional verification steps: Depending on the testnet faucet you are using, you may be required to complete additional verification steps, such as solving a captcha or proving that you are not a robot.
 

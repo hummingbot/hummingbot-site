@@ -1,6 +1,6 @@
 # `osmosis`
 
-`osmosis` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to Osmoisis DEX on the Osmosis Blockchain.
+`osmosis` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to Osmosis DEX on the Osmosis Blockchain.
 
 ## 📁 Connector Info
 

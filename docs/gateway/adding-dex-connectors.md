@@ -4,7 +4,7 @@ We'll use the Uniswap and Pangolin connectors as examples to help guide you thro
 
 ## Requirements
 
-Introducing a connector into the Hummingbot codebase requires a mutual commitment from both the contributing developer as wel the Hummingbot Foundation team to maintain a high standard of code quality and software reliability.
+Introducing a connector into the Hummingbot codebase requires a mutual commitment from both the contributing developer as well as the Hummingbot Foundation team to maintain a high standard of code quality and software reliability.
 
 We encourage and welcome contributions from the community, subject to the guidelines and expectations outlined below:
 
