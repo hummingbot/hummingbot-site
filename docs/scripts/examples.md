@@ -18,9 +18,9 @@ This command auto-completes with scripts from the local `/scripts` directory tha
 start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]
 ```
 
-## Main Scripts
+## Starting Scripts
 
-The scripts below can be found in the root [/scripts](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder and are available to run from the Hummingbot client by default.
+All sample scripts below can be found in the root [/scripts](https://github.com/hummingbot/hummingbot/tree/development/scripts) folder and are available to run from the Hummingbot client by default.
 
 ### Simple PMM
 
@@ -46,6 +46,10 @@ The scripts below can be found in the root [/scripts](https://github.com/humming
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [1.10.0](../release-notes/1.10.0.md)
 * **Description**:  A simplified version of the [Cross Exchange Market Making](/strategies/cross-exchange-market-making/) strategy, this bot makes a market on the maker pair and hedges any filled trades in the taker pair. If the spread (difference between maker order price and taker hedge price) dips below `min_spread`, the bot refreshes the order
+
+## V2 Scripts
+
+These scripts are more complex and use StrategyV2 components such as Executors and the Market Data Provider.
 
 ### V2 Controller Loader
 

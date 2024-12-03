@@ -1,5 +1,5 @@
 !!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with OKX. When you use our software to trade on OKX, a custom API header tells OKX that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [OKX referral link](https://www.okx.com/join/1931920) and enter that account's API keys into Hummingbot! Thanks for your support! 🙏
+    Hummingbot Foundation has a fee share partnership with OKX. When you use our software to trade on OKX, a custom API header tells OKX that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [OKX referral link](https://www.okx.com/join/1931920269) and enter that account's API keys into Hummingbot! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -20,8 +20,7 @@
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/okx>
 - **API Docs**: <https://www.okx.com/docs-v5/en/#overview>
 - **Fees**: <https://www.okx.com/fees>
-- **Supported Countries**: Not available
-- **OKX referral link:** <https://www.okx.com/join/1931920>
+- **OKX referral link:** <https://www.okx.com/join/1931920269>
 
 ## 🔑 How to Connect
 

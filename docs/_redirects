@@ -1,11 +1,7 @@
-/maintenance/bugs       /governance/bounties            301
-/maintenance/*          /governance/:splat              301
-/developers/scripts/*   /scripts/:splat                 301
-/developers/gateway/*   /gateway/:splat                 301
 /exchanges/spot/*       /exchanges/:splat               301
 /gateway/exchanges/*    /exchanges/:splat               301
 /gateway/chains/*       /chains/:splat                  301
-/hbot                   /governance                     301
+/hbot                   /about/hbot                     301
 /news                   /blog                           301
 /installation           /installation/docker            301
 /installation/deploy    /installation/docker            301
@@ -13,7 +9,8 @@
 /installation/multiple-bots    /installation/orchestration   301
 /exchanges/gate_io_perpetual   /exchanges/gate_io       301
 /operation             /client                          301
-/community             /about                           301
-/governance/board      /about/foundation                301
+/governance/board      /about/board                     301
 /botcamp               https://www.botcamp.xyz          301
 /getting-started       /docs                            301
+/academy               /blog/category/academy           301
+/academy-content/*     /blog/:splat               301

@@ -1,37 +1,27 @@
-Bounties are rewards, denominated in Hummingbot Foundation's governance token HBOT and other tokens, that are given out to community members for work that improves Hummingbot, such as supporting users on Discord and fulfilling development bounties. They are the primary mechanism used by Hummingbot Foundation to maintain the Hummingbot codebase and support the community.
+Hummingbot is a community-driven open source project that provides standardized exchange connectors and a strategy framework that enables the development of custom algorithmic trading strategies that can run on any compatible exchange. While the Foundation maintains the core Hummingbot framework and the reference connectors for each type, the project relies on community developers to build and maintain other connectors, along with other modules.
 
-## External Bounties
+## What are Bounties?
 
-Hummingbot Foundation can also facilitate and manage external bounties for external sponsors for a fee using the same process. This offers a platform for exchanges, trading firms, and others seeking development work on exchange connectors, trading strategies, bug fixes, and related content/guides.
+The Foundation utilizes HBOT-denominated bounties to fund the maintenance and development of the Hummingbot open source codebase.
 
-The bounty process creates a win-win situation where the community benefits from the expertise of diverse contributors, while individuals have the opportunity to earn rewards for their contributions. The goal is to help the Foundation and users to improve Hummingbot with help of bounty sponsors and allocate HBOT bounties across the connectors that users vote for.
+Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. For more information, see:
 
-See the [Bounty Sponsors Guide](./contributors.md) for more information.
+* [External Bounties](./external.md)
+* [Lifecycle of a Bounty](./lifecycle.md)
 
-## For Contributors
-
-![bounty](./bounty-board.png)
+## Bounties Board
 
 [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1), a Kanban-style public Github project, is the source of truth for the status of all Hummingbot bounties, including both Foundation and community-created bounties.
 
+![bounty](./bounty-board.png)
+
 The columns in the board include:
 
-- **Potential**: Potential bounties that may be sponsored
 - **Open**: Open bounties that contributors can apply to work on
 - **Assigned**: Issue has been assigned to a contributor, who is expected to submit a pull request resolving it
 - **Submitted**: A pull request resolving the issue has been submitted by the assigned contributor
 - **Merged**: Pull request has been merged to the `development` branch (or published publicly in the case of content)
 - **Paid**: Contributor has been paid and the bounty is considered done
-
-See the [Bounty Contributors Guide](./contributors.md) to get started.
-
-## Bounties Process
-
-Hummingbot Foundation oversees the entire Bounties process, from working with sponsors to scope the bounty, finding and assigning the bounty to a qualified developer, performing engineering/QA review, and paying the developer. Since Bounties sprung out of an internal program that has rewarded 100+ unique contributors, the Foundation itself will continue to be an active sponsor of bounties.
-
-* [Lifecycle of a Bounty](./lifecycle.md)
-* [Bounty Pricing Guidance](./prices.md)
-* [Discord Support Program](./discord.md)
 
 ## HBOT Tracker
 

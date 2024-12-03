@@ -7,15 +7,126 @@ hide:
   - feedback
 ---
 
-# Install Hummingbot 2.0!
+# How much volume does the Hummingbot community generate?
 
-  ```bash
-  git clone https://github.com/hummingbot/deploy.git
-  cd deploy
-  bash setup.sh
-  ```
+<div class="custom-metric">
+  <div class="metric-value">34.5B</div>
+  <div class="metric-label">Last 12M Reported Trade Volume</div>
+</div>
 
-After all Docker containers have started, access the Dashboard at <http://localhost:8501> in your browser.
+```vegalite
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Monthly USDT Volume",
+    "width": "container",
+    "height": 400,
+    "data": {
+      "values": [
+        {"date": "2023-11-15", "volume": 2508799386.868773},
+        {"date": "2023-12-15", "volume": 2397766942.158128},
+        {"date": "2024-01-15", "volume": 2358984706.9379473},
+        {"date": "2024-02-15", "volume": 6490279020.891342},
+        {"date": "2024-03-15", "volume": 5056300673.532455},
+        {"date": "2024-04-15", "volume": 2803765323.398611},
+        {"date": "2024-05-15", "volume": 3073736618.0402546},
+        {"date": "2024-06-15", "volume": 3196767990.299173},
+        {"date": "2024-07-15", "volume": 2131640444.2422123},
+        {"date": "2024-08-15", "volume": 2009532310.070123},
+        {"date": "2024-09-15", "volume": 1119785879.8091574},
+        {"date": "2024-10-15", "volume": 1312240203.1848197}
+      ]
+    },
+    "mark": {"type": "bar", "color": "#5FFFD7"},
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": "Month",
+        "timeUnit": "yearmonth",
+        "axis": {
+          "format": "%b %Y",
+          "grid": false,
+          "labelFontSize": 12,
+          "titleFontSize": 16,
+          "titlePadding": 20,
+          "labelFont": "Satoshi",
+          "titleFont": "Satoshi"
+        }
+      },
+      "y": {
+        "field": "volume",
+        "type": "quantitative",
+        "title": "Reported Trading Volume ($ billions)",
+        "axis": {
+          "format": "~s",
+          "grid": false,
+          "labelFontSize": 12,
+          "titleFontSize": 16,
+          "titlePadding": 20,
+          "labelFont": "Satoshi",
+          "titleFont": "Satoshi",
+          "tickCount": 5
+        }
+      },
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "Month", "timeUnit": "yearmonth", "format": "%b %Y"},
+        {"field": "volume", "type": "quantitative", "title": "Volume", "format": ",.0f"}
+      ]
+    },
+    "config": {
+      "background": null,
+      "view": {
+        "stroke": null
+      },
+      "font": "Satoshi",
+      "title": {
+        "font": "Satoshi"
+      }
+    }
+}
+```
+### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the volume reported by all Hummingbot instances, broken down by exchange.
+
+---
+
+# Our supporters and partners
+
+<div class="exchange-grid">
+  <div class="flex-item">
+    <img src="/assets/logos/binance-dark.png" alt="Binance" class="dark-logo"/>
+    <img src="/assets/logos/binance-light.png" alt="Binance" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/okx-dark.png" alt="OKX" class="dark-logo"/>
+    <img src="/assets/logos/okx-light.png" alt="OKX" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/gate-dark.png" alt="Gate" class="dark-logo"/>
+    <img src="/assets/logos/gate-light.png" alt="Gate" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/kucoin-logo-dark.png" alt="Kucoin" class="dark-logo"/>
+    <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" alt="Hyperliquid" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/dydx-dark.png" alt="dYdX" class="dark-logo"/>
+    <img src="/assets/logos/dydx-light.png" alt="dYdX" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
+    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/coinalpha-dark.png" alt="CoinAlpha" class="dark-logo"/>
+    <img src="/assets/logos/coinalpha-light.png" alt="CoinAlpha" class="light-logo"/>
+  </div>
+</div>
+
+### See [Sponsors](/about/sponsors/) for more information on how to support Hummingbot Foundation.
 
 ---
 
@@ -61,14 +172,6 @@ After all Docker containers have started, access the Dashboard at <http://localh
 
 # Who uses Hummingbot?
 
-## :fontawesome-solid-arrows-turn-to-dots: Market Makers
-
-<div class="accent" markdown>
-
-### For many crypto market making firms, Hummingbot is the trusted starting point for creating secure, scalable algo trading solutions.
-
-</div>
-
 <div class="grid" markdown>
 
 <span class="quote">
@@ -76,12 +179,11 @@ After all Docker containers have started, access the Dashboard at <http://localh
 As the company that open-sourced Hummingbot, we're incredibly proud of how the community has embraced it. Today, we run bespoke strategies for our institutional clients using many custom Hummingbot instances.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/authors/carlo-las-marias.jpg" class="headshot centered" />
-<br/>
-<a href="https://www.linkedin.com/in/carlolm/" target="_blank" class="author centered">Carlo Las Marias</a>
-<br/>
-<a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.png" class="logo centered"></a>
+<br/><br/>
+<a href="https://www.linkedin.com/in/jason-tomlinson-88b0b78/" target="_blank" class="author centered">Jason Tomlinson</a>
+<span class="role centered">Market Maker</span>
+<br />
+<a href="https://coinalpha.com/" target="_blank"><img src="/assets/logos/coinalpha-dark.jpeg" class="logo centered"></a>
 { .testimonial }
 
 <span class="quote">
@@ -89,10 +191,9 @@ As the company that open-sourced Hummingbot, we're incredibly proud of how the c
 We started with Hummingbot as the foundation for our market-making business. Their WebSocket connector architecture is the most accessible in the market. We still use it from time to time and enjoy their great documentation.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/brand/3jane-eugene.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <a href="https://www.linkedin.com/in/etartakovsky/" target="_blank" class="author centered">Eugene Tartakovsky</a>
+<span class="role centered">Market Maker</span>
 <br/>
 <a href="https://3jane.com/" target="_blank"><img src="/assets/brand/3jane-2.jpg" class="logo centered"></a>
 { .testimonial }
@@ -102,37 +203,30 @@ We started with Hummingbot as the foundation for our market-making business. The
 Hummingbot has served as a reliable base for us to build custom tools and strategies. It has many quality connectors and all components are well thought out, allowing us to flexibly modify the open source code.
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/brand/enclave-jelle-buth.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <a href="https://www.linkedin.com/in/jelle-buth/" target="_blank" class="author centered">Jelle Buth</a>
+<span class="role centered">Market Maker</span>
 <br/>
 <a href="https://www.enflux.io/" target="_blank"><img src="/assets/brand/enclave.jpg" class="logo centered"></a>
 { .testimonial }
 
-</div>
-
-</br />
-
-## :fontawesome-solid-people-group: Algo Traders & Boutique Firms
-
-<div class="accent" markdown>
-
-### Algorithmic traders and boutique firms leverage Hummingbot for capturing cross-chain + cross-exchange arbitrage opportunities with the [AMM Arbitrage strategy](strategies/amm-arbitrage.md) and earning liquidity mining rewards on [Hummingbot Miner](https://miner.hummingbot.io).
-
-</div>
-
-<div class="grid" markdown>
+<span class="quote">
+:material-format-quote-open:
+Hummingbot allowed me to run profitable strategies and generate $2 billion in trade volume. I can't recommend Hummingbot enough for any algo trader seeking a 0 to 1 platform.
+:material-format-quote-close:
+</span>
+<br/><br/>
+<a href="https://summitoperations.co/" target="_blank" class="author centered">Kollan</a>
+<span class="role centered">Prop Trader</span>
+{ .testimonial }
 
 <span class="quote">
 :material-format-quote-open:
-Hummingbot allowed me to launch a successful suite of trading strategies managing over $2 billion in trade volume. I can't recommend Hummingbot enough for any algo trader seeking a 0 to 1 platform.
+Hummingbot revolutionized my crypto trading. Using advanced strategies, I developed my own trading style and consistently ranked at the top of the Miner leaderboard for months.
 :material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/authors/kollan.png" class="headshot centered"/>
-<br/>
-<a href="https://summitoperations.co/" target="_blank" class="author centered">Kollan</a>
+<br/><br/>
+<a href="https://github.com/mlguys" target="_blank" class="author centered">Wojak</a>
+<span class="role centered">Prop Trader</span>
 { .testimonial }
 
 <span class="quote">
@@ -140,63 +234,10 @@ Hummingbot allowed me to launch a successful suite of trading strategies managin
 Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pure market making strategy. Based on my profitable strategies, I started an algo-trading startup in Saudi Arabia!
 :material-format-quote-close:
 </span>
-<br/><br/><br/>
-<img src="/assets/authors/hyder.jpg" class="headshot centered" />
-<br/>
+<br/><br/>
 <span class="author centered">Hyder</span>
+<span class="role centered">Prop Trader</span>
 { .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-Hummingbot revolutionized my crypto trading. Using advanced strategies, I developed my own successful trading style and consistently ranked at the top of Hummingbot Miner's leaderboard for months.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/authors/wojak.png" class="headshot centered" />
-<br/>
-<a href="https://github.com/mlguys" target="_blank" class="author centered">Wojak</a>
-{ .testimonial }
-
-</div>
-
-</br />
-
-## :material-upload-network: Protocols & Token Projects
-
-<div class="accent" markdown>
-
-### Blockchain protocols harness Hummingbot to foster liquidity, catalyzing their ecosystems without the overhead of external market makers.
-
-</div>
-
-<div class="grid wide" markdown>
-
-<span class="quote">
-:material-format-quote-open:
-We’re big supporters of Hummingbot’s vision of open source algo trading. Their community of market makers has contributed significantly to the liquidity on Avalanche-based DEXs.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/brand/ava-labs-lydia.jpg" class="headshot centered" />
-<br/>
-<a href="https://www.linkedin.com/in/encycloplydia/" target="_blank" class="author centered">Lydia Chiu</a>
-<br/>
-<a href="https://www.avalabs.org/" target="_blank"><img src="/assets/brand/ava-labs.jpg" class="logo centered"></a>
-{ .testimonial }
-
-<span class="quote">
-:material-format-quote-open:
-Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot connector enables our community to power liquidity for current and future projects on Harmony.
-:material-format-quote-close:
-</span>
-<br/><br/><br/>
-<img src="/assets/brand/harmony-stephen.jpg" class="headshot centered" />
-<br/>
-<a href="https://www.linkedin.com/in/tsestephen/" target="_blank" class="author centered">Stephen Tse</a>
-<br/>
-<a href="https://www.harmony.one/" target="_blank"><img src="/assets/brand/harmony.jpg" class="logo centered"></a>
-{ .testimonial }
-
 
 </div>
 
@@ -212,13 +253,13 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
     ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
 
--   [![](/academy-content/directional-trading-with-macd-and-bollinger-bands/cover.webp)](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
+-   [![](/academy/using-hyperliquid-vaults-with-hummingbot/hlp.png)](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid//)
 
-    ### [Directional Trading with MACD and Bollinger Bands](/academy-content/directional-trading-with-macd-and-bollinger-bands/)
+    ### [Funding Rate Arbitrage on Hyperliquid](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
 
--   [![](/academy-content/technical-deep-dive-into-the-avellaneda-stoikov-strategy/cover.webp)](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
+-   [![](/academy/coding-a-custom-v2-controller/cover.webp)](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
 
-    ### [Technical Deep Dive into the Avellaneda & Stoikov Strategy](academy-content/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)
+    ### [Coding a Custom V2 Controller](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
 
 </div>
 
@@ -228,55 +269,23 @@ Hummingbot plays a pivotal role in Harmony's DeFi strategy. Our Hummingbot conne
 
 ---
 
-# A Global Nexus for Algo Traders
+# A global community of algo traders
 
-### The Hummingbot Foundation, a not-for-profit beacon, ensures the codebase's decentralized evolution, guided by the Hummingbot community and Governance Token (HBOT).
+![](/assets/img/globe.png)
 
-- [About Us](/about): About the Foundation and our mission
-- [Governance](/governance): Decide how Hummingbot evolves
-- [FAQ](/faq): Answers to common questions
+<div class="grid cards wide" markdown>
 
----
+- :material-information-outline: __[Foundation](/about)__: About the Foundation and our mission
+- :material-account-group: __[Community](/community)__: Join our global community of algo traders
+- :material-gavel: __[Governance](/governance)__: Decide how the Hummingbot framework evolves
+- :material-frequently-asked-questions: __[FAQ](/faq)__: Answers to common questions
 
-# Sponsors & Backers
-
-### We are grateful to the exchanges, protocols, and companies who support our quest to **democratize high-frequency trading**!
-
-<div class="flex-container home">
-  <div class="flex-item">
-    <img src="/assets/logos/initialized-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/initialized-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/defiance-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/defiance-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/bain-capital-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/bain-capital-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/vega-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/vega-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/1kx-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/1kx-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/coinalpha-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/coinalpha-light.png" class="light-logo"/>
-  </div>
 </div>
 
 ---
-# Stay Ahead with the Hummingbot newsletter
+# Get the Hummingbot newsletter
 
-### Published when each monthly release drops, our official newsletter has all the Hummingbot news, upcoming events, and contributions from the global Hummingbot community!
+### Published when a new Hummingbot release drops (about every 2 months), our official newsletter tells you about upcoming events and new contributions from the global Hummingbot community.
 
 <br />
 

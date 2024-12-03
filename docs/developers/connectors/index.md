@@ -9,8 +9,8 @@ See [Exchange API Requirements](/developers/connectors/build) for what the excha
 
 To gain a deeper understanding for how Hummingbot connectors work, we recommend reading the following engineering posts from Hummingbot's original technical founder:
 
-- [Hummingbot Architecture - Part 1](/academy-content/hummingbot-architecture---part-1/)
-- [Hummingbot Architecture - Part 2](/academy-content/hummingbot-architecture---part-2/)
+- [Hummingbot Architecture - Part 1](../../blog/posts/hummingbot-architecture-part-1/index.md)
+- [Hummingbot Architecture - Part 2](../../blog/posts/hummingbot-architecture-part-2/index.md)
 
 The following pages offer more details on various components and classes of a connector:
 

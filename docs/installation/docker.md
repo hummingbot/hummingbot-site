@@ -2,7 +2,7 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 
 ## Prerequisites
 
-### Cloud server or local machine
+### Cloud or local machine
 
 | **Component**      | **Specification**                                     |
 |--------------------|-------------------------------------------------------|
@@ -20,7 +20,7 @@ Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for d
     To install Hummingbot on Windows, you need to have Docker Desktop installed, set up Windows Subsystem for Linux 2 (WSL2), and install a Linux distribution like Ubuntu. Make sure to run the commands listed below from within an Ubuntu terminal and not from the Windows Command Prompt or PowerShell.
 
 
-## Installation (Hummingbot 2.0)
+## Installation (Dashboard)
 
 Starting with [Hummingbot release 2.0](/release-notes/2.0.0), the new [Deploy repo](https://github.com/hummingbot/deploy) helps you launch Dashboard and Backend-API to make creating and launching bots easier.
 
@@ -114,18 +114,21 @@ Afterwards, stop the instance with `docker compose down` and re-launch it with `
   <summary>Show Configuration</summary>
 
   ```yaml
-    gateway:
-      container_name: "gateway"
-      image: hummingbot/gateway:latest    
-      ports:
-        - "15888:15888"
-        - "8080:8080"
-      volumes:
-        - "./gateway_files/conf:/usr/src/app/conf"
-        - "./gateway_files/logs:/usr/src/app/logs"
-        - "./hummingbot_files/certs:/home/gateway/certs"
-      # environment:
-      #  - GATEWAY_PASSPHRASE=a
+
+  gateway:
+    container_name: gateway
+    image: hummingbot/gateway:latest
+    ports:
+      - "15888:15888"
+      - "8080:8080"
+    volumes:
+      - "./gateway_files/conf:/home/gateway/conf"
+      - "./gateway_files/logs:/home/gateway/logs"
+      - "./gateway_files/db:/home/gateway/db"
+      - "./certs:/home/gateway/certs"
+    environment:
+      - GATEWAY_PASSPHRASE=a
+
   ```
 </details>
 
@@ -139,56 +142,66 @@ This configuration launches two Hummingbot Docker instances with the container n
   <summary>Show Configuration</summary>
 
   ```yaml
-  services:
-    hummingbot-1:
-      container_name: hummingbot-1
-      image: hummingbot/hummingbot:latest
-      volumes:
-        - "./hummingbot_files/conf:/home/hummingbot/conf"
-        - "./hummingbot_files/conf/connectors:/home/hummingbot/conf/connectors"
-        - "./hummingbot_files/conf/strategies:/home/hummingbot/conf/strategies"
-        - "./hummingbot_files/logs:/home/hummingbot/logs"
-        - "./hummingbot_files/data:/home/hummingbot/data"
-        - "./hummingbot_files/scripts:/home/hummingbot/scripts"
-        - "./hummingbot_files/certs:/home/hummingbot/certs"
-      # environment:
-      #   - CONFIG_PASSWORD=a
-      logging:
-        driver: "json-file"
-        options:
-            max-size: "10m"
-            max-file: "5"
-      tty: true
-      stdin_open: true
-      network_mode: host
+services:
+  hummingbot:
+    container_name: hummingbot-1
+    image: hummingbot/hummingbot:latest
+    volumes:
+      - ./conf:/home/hummingbot/conf
+      - ./conf/connectors:/home/hummingbot/conf/connectors
+      - ./conf/strategies:/home/hummingbot/conf/strategies
+      - ./conf/controllers:/home/hummingbot/conf/controllers
+      - ./conf/scripts:/home/hummingbot/conf/scripts
+      - ./logs:/home/hummingbot/logs
+      - ./data:/home/hummingbot/data
+      - ./certs:/home/hummingbot/certs
+      - ./scripts:/home/hummingbot/scripts
+      - ./controllers:/home/hummingbot/controllers
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    tty: true
+    stdin_open: true
+    network_mode: host
+    #  environment:
+    #    - CONFIG_PASSWORD=a
+    #    - CONFIG_FILE_NAME=simple_pmm_example.py
+    #    - SCRIPT_CONFIG=conf_simple_pmm_example.yaml
 
-    hummingbot-2:
-      container_name: hummingbot-2
-      image: hummingbot/hummingbot:latest
-      volumes:
-        - "./hummingbot_files/conf:/home/hummingbot/conf"
-        - "./hummingbot_files/conf/connectors:/home/hummingbot/conf/connectors"
-        - "./hummingbot_files/conf/strategies:/home/hummingbot/conf/strategies"
-        - "./hummingbot_files/logs:/home/hummingbot/logs"
-        - "./hummingbot_files/data:/home/hummingbot/data"
-        - "./hummingbot_files/scripts:/home/hummingbot/scripts"
-        - "./hummingbot_files/certs:/home/hummingbot/certs"
-      # environment:
-      #   - CONFIG_PASSWORD=a
-      logging:
-        driver: "json-file"
-        options:
-          max-size: "10m"
-          max-file: "5"
-      tty: true
-      stdin_open: true
-      network_mode: host
+services:
+  hummingbot-2:
+    container_name: hummingbot-2
+    image: hummingbot/hummingbot:latest
+    volumes:
+      - ./conf:/home/hummingbot/conf
+      - ./conf/connectors:/home/hummingbot/conf/connectors
+      - ./conf/strategies:/home/hummingbot/conf/strategies
+      - ./conf/controllers:/home/hummingbot/conf/controllers
+      - ./conf/scripts:/home/hummingbot/conf/scripts
+      - ./logs:/home/hummingbot/logs
+      - ./data:/home/hummingbot/data
+      - ./certs:/home/hummingbot/certs
+      - ./scripts:/home/hummingbot/scripts
+      - ./controllers:/home/hummingbot/controllers
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    tty: true
+    stdin_open: true
+    network_mode: host
+    #  environment:
+    #    - CONFIG_PASSWORD=a
+    #    - CONFIG_FILE_NAME=simple_pmm_example.py
+    #    - SCRIPT_CONFIG=conf_simple_pmm_example.yaml
+
   ```
 </details>
 
-Note that the above configuration
-
- has both bots sharing the **hummingbot_files** folder, which is where configs, logs, and databases are stored. If you want to set a different folder for `hummingbot-2`, set `volumes` to a different folder path, such as **hummingbot_files_2**.
+Note that the above configuration has both bots sharing the **hummingbot** folder, which is where configs, logs, and databases are stored. If you want to set a different folder for `hummingbot-2`, set `volumes` to a different folder path, such as **hummingbot_files_2**.
 
 Attach to instance 1:
 
@@ -212,72 +225,83 @@ This configuration starts instances of Hummingbot, [Gateway](/gateway/), and [EM
   <summary>Show Configuration</summary>
 
   ```yaml
-  services:
-    hummingbot:
-      container_name: "hummingbot"
-      image: hummingbot/hummingbot:latest
-      volumes:
-        - "./hummingbot_files/conf:/conf"
-        - "./hummingbot_files/conf/connectors:/conf/connectors"
-        - "./hummingbot_files/conf/strategies:/conf/strategies"
-        - "./hummingbot_files/logs:/logs"
-        - "./hummingbot_files/data:/data"
-        - "./hummingbot_files/scripts:/scripts"
-        - "./hummingbot_files/certs:/certs"
-      # environment:
-      #   - CONFIG_PASSWORD=a
-      logging:
-        driver: "json-file"
-        options:
-            max-size: "10m"
-            max-file: "5"
-      tty: true
-      stdin_open: true
-      network_mode: host
+services:
+  hummingbot:
+    container_name: hummingbot
+    image: hummingbot/hummingbot:latest
+#    build: Uncomment this and comment image if you want to build it locally
+#      context: .
+#      dockerfile: Dockerfile
+    volumes:
+      - ./conf:/home/hummingbot/conf
+      - ./conf/connectors:/home/hummingbot/conf/connectors
+      - ./conf/strategies:/home/hummingbot/conf/strategies
+      - ./conf/controllers:/home/hummingbot/conf/controllers
+      - ./conf/scripts:/home/hummingbot/conf/scripts
+      - ./logs:/home/hummingbot/logs
+      - ./data:/home/hummingbot/data
+      - ./certs:/home/hummingbot/certs
+      - ./scripts:/home/hummingbot/scripts
+      - ./controllers:/home/hummingbot/controllers
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+    tty: true
+    stdin_open: true
+    network_mode: host
+    #  environment:
+    #    - CONFIG_PASSWORD=a
+    #    - CONFIG_FILE_NAME=simple_pmm_example.py
+    #    - SCRIPT_CONFIG=conf_simple_pmm_example.yaml
 
-    gateway:
-      container_name: "gateway"
-      image: hummingbot/gateway:latest
-      ports:
-        - "15888:15888"
-        - "8080:8080"
-      volumes:
-        - "./gateway_files/conf:/usr/src/app/conf"
-        - "./gateway_files/logs:/usr/src/app/logs"
-        - "./hummingbot_files/certs:/home/gateway/certs"
-      # environment:
-      #   - GATEWAY_PASSPHRASE=a
+  gateway:
+    container_name: gateway
+    image: hummingbot/gateway:latest
+    ports:
+      - "15888:15888"
+      - "8080:8080"
+    volumes:
+      - "./gateway_files/conf:/home/gateway/conf"
+      - "./gateway_files/logs:/home/gateway/logs"
+      - "./gateway_files/db:/home/gateway/db"
+      - "./certs:/home/gateway/certs"
+    environment:
+      - GATEWAY_PASSPHRASE=a
 
-    emqx:
-      container_name: "emqx"
-      image: emqx:5
-      restart: unless-stopped
-      environment:
-        - EMQX_NAME=emqx
-        - EMQX_LOADED_PLUGINS="emqx_recon,emqx_retainer,emqx_management,emqx_dashboard"
-      volumes:
-        - emqx-data:/opt/emqx/data
-        - emqx-log:/opt/emqx/log
-        - emqx-etc:/opt/emqx/etc
-      ports:
-        - "1883:1883"  # mqtt:tcp
-        - "8883:8883"  # mqtt:tcp:ssl
-        - "8083:8083"  # mqtt:ws
-        - "8084:8084"  # mqtt:ws:ssl
-        - "8081:8081"  # http:management
-        - "18083:18083"  # http:dashboard
-        - "61613:61613"  # web-stomp gateway
-      healthcheck:
-        test: ["CMD", "/opt/emqx/bin/emqx_ctl", "status"]
-        interval: 5s
-        timeout: 25s
-        retries: 5
+  emqx:
+    container_name: "emqx"
+    image: emqx:5
+    restart: unless-stopped
+    environment:
+      - EMQX_NAME=emqx
+      - EMQX_LOADED_PLUGINS="emqx_recon,emqx_retainer,emqx_management,emqx_dashboard"
+    volumes:
+      - emqx-data:/opt/emqx/data
+      - emqx-log:/opt/emqx/log
+      - emqx-etc:/opt/emqx/etc
+    ports:
+      - "1883:1883"    # MQTT TCP
+      - "8883:8883"    # MQTT TCP SSL
+      - "8083:8083"    # MQTT WebSocket
+      - "8084:8084"    # MQTT WebSocket SSL
+      - "8081:8081"    # HTTP Management API
+      - "18083:18083"  # HTTP Dashboard
+      - "61613:61613"  # Web-STOMP Gateway
+    healthcheck:
+      test: ["CMD", "/opt/emqx/bin/emqx_ctl", "status"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
 
-  volumes:
-    emqx-data: {}
-    emqx-log: {}
-    emqx-etc: {}
-  ```
+volumes:
+  emqx-data:
+  emqx-log:
+  emqx-etc:
+
+
+```
 </details>
 
 After starting the instance, follow the [Gateway instructions](/gateway/installation/) to generate certificates and set your Gateway passphrase.

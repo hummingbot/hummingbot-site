@@ -1,46 +1,44 @@
 ## Bounty Lifecycle
 
-### 1. Create Github Issue
+### 1. Sponsor Creates Github Issue
 
-Since all bounties reference as a Github issue, users should create [a new Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose)
+Since all bounties reference as a Github issue, users should create [a new Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose) and choose the **Bounty Request** template. The issue should contain the following information:
 
-### 2. Submit New Bounty Form
+* Issue Type
+* Bounty Type
+* Open Source or Private
+* Desired completion time
+* Acceptance criteria
+* Steps to reproduce (for bugs)
+* Bounty amount with denomination
 
-A prospective sponsor submits the [New Bounty Form](https://forms.gle/sZr86AzP26JyL2fZA) with a link to Github issue, bounty type, and budget.
+### 2. Sponsor Refines Bounty
 
-As another option, you can also create a new post in the Hummingbot Discord **#bounties** channel and provide the same information as in the New Bounty Form.
+Staff from the Hummingbot Foundation will review the bounty submission and provide feedback on the Github issue. To gather broader input, we encourage you toe engage with community members on Discord to refine the bounty scope and requirements. This collaborative approach helps ensure the bounty aligns with community needs and expectations.
 
-### 3. Scope Bounty
+### 3. Preliminary Check
 
-We work with the sponsor to define bounty scope, acceptance criteria and amount needed. See [Bounty Pricing Guidance](prices.md) for more information.
+To ensure the bounty is feasible, the Foundation performs a preliminary check of the exchange API documentation to ensure the exchange is compatible with Hummingbot's connector standards and has the necessary WebSocket/REST API endpoints to be integrated into Hummingbot.
 
-### 4. Fund Bounty
-
-The source of funding may be:
-
-* HBOT allocations in the **Connector Pots** tab of [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit#gid=2065823371)
-* Approved [Hummingbot Improvement Proposals](https://hummingbot.org/governance/proposals/#hummingbot-improvement-proposals)
-* External sponsor funding
+### 4. Sponsor Funds Bounty
 
 The external sponsor sends the bounty amount to Foundation wallet, and we custody and pay the contributor after the pull request that fulfills the bounty has been merged to the `development` branch.
 
-### 5. Post on Board
+See [Bounty Wallets](external.md/#bounty-wallets) the official Foundation addresses for bounties.
 
-We post the Bounty on [Bounties Board](https://github.com/orgs/hummingbot/projects/7), where any contributor can apply for assignment.
+### 5. Foundation Assigns Developer
 
-### 6. Assign Contributor
+We will post the Bounty on [Bounties Board](https://github.com/orgs/hummingbot/projects/7). Afterwards, anyone can apply to be assigned to the task by commenting on it with their Github handle. Once one or more qualified contributors have applied to work on a specific issue, we will evaluate the applicants based on their past experience with Hummingbot, as well as other relevant factors, and assign your bounty to a suitable contributor.
 
-After a bounty has been posted, anyone can apply to be assigned to the task by commenting on it with their Github handle. Once one or more qualified contributors have applied to work on a specific issue, we will evaluate the applicants based on their past experience with Hummingbot, as well as other relevant factors, and assign your bounty to a suitable contributor.
+### 6. Developer Begins Work
 
-See [Assignation Process](#assignation-process) below for more information.
+The developer begins work on the bounty and is expected to submit a pull request (PR) that addresses the issue.
 
-### 7. Monitor Contributor
+### 7. Foundation Monitors Progress
 
 We stay in constant contact with the contributor via comments in the bounty Github issue. Afterwards, the contributor is expected to deliver a pull request (PR) that fulfills the bounty. Note that we may re-assign the bounty if the assigned contributor is unresponsive or inactive for 7+ days, or if the submitted PR doesn’t address the acceptance criteria.
 
-See [Assignation Process](#assignation-process) below for more information on how bounties may be re-assigned.
-
-### 8. Review Pull Request
+### 8. Foundation Reviews PR
 
 After the contributor has submitted the pull request (PR) addressing the issue, we review it for engineering security and adherence to code standards. We will conduct an engineering code review to ensure that the proposed changes can be safely and seamlessly integrated into the existing codebase without causing any conflicts or compromising system integrity.
 
@@ -49,7 +47,7 @@ For connectors, our engineering team uses following checklists in conducting rev
 * [Spot Connector Developer Checklist](../developers/connectors/spot-connector-checklist.md)
 * [Perp Connector Developer Checklist](../developers/connectors/perp-connector-checklist.md)
 
-### 9. Test Pull Request
+### 9. Foundation Tests PR
 
 We will also run a quality assurance (QA) process on the submission to evaluate whether it fixes the issue and/or meets the acceptance criteria. We test the pull request to assess functionality, fulfillment of acceptance criteria, and UX impact. 
 
@@ -58,55 +56,13 @@ For connectors, our QA team uses following checklists in conducting reviews:
 * [Spot Connector QA Checklist](../developers/connectors/test.md)
 * [Perp Connector QA Checklist](../developers/connectors/test-perp.md)
 
-### 10. Merge Pull Request
+### 10. Foundation Merges PR
 
-If the pull request passes muster, we merge the pull request into the `development` branch of Hummingbot. This ensures that the proposed solution has met the required standards and has been thoroughly reviewed. 
+If the pull request passes muster, we merge the pull request into the `development` branch of Hummingbot. This ensures that the proposed solution has met the required standards and has been thoroughly reviewed.
 
-### 11. Release
+Afterwards, the code is merged to `master` and included in each monthly release. See [Release Process](../governance/releases.md) for more information.
 
-We conduct a thorough overall check using the `staging` branch to prevent breaking changes. Afterwards, the code is merged to `master` and included in each monthly release. 
+### 12. Foundation Pays Developer
 
-See [Release Process](../governance/releases.md) for more information.
+Developers are paid only after their code has been merged into the `development` branch or Hummingbot fork (in the case of private bounties). Afterwards, Foundation will include the bounty payment in its monthly bounty payout process and mark the bounty as **Paid** in both [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
 
-### 12. Pay Contributor
-
-After the bounty fix has been verified and published, we schedule the bounty for payment (net of our [Handling Fee](prices.md/#bounty-handling-fee)), and the Foundation will include the bounty payment in its monthly bounty payout process. 
-
-Afterwards, we will mark the bounty as Paid in both [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
-
-
-## Assignation Process
-
-Here is more information how the Foundation assigns and monitors bounty contributors. Each stage is a column in [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1).
-
-### Potential
-
-`POTENTIAL` bounties are Github issues that **not funded yet**.
-
-The Foundation or community members may suggest issues for the [board](https://github.com/orgs/hummingbot/projects/7/views/1), either in Github or Discord.
-
-Once there is funding for the bounty (either **Connector Pots** tab of [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit#gid=2065823371), [HIP](https://hummingbot.org/governance/proposals/#hummingbot-improvement-proposals), or community funding), the Foundation will mark the bounty as OPEN.
-
-### Open
-
-1. Any bounty in the `OPEN` column is not assigned. Contributors can leave a comment on Github ticket issue, such as “I want to be assigned for this bounty. Here is my experience...”
-2. The Foundation team assign qualified contributor based on prior Hummingbot and/or development experience.
-3. We will added: “[Contributor] has been assigned to this bounty” and change the bounty status from `OPEN` to `ASSIGNED`
-
-### Assigned
-
-Since the contributor is assigned to this bounty exclusively, they should continually inform on the progress over the next few days. 
-
-They are expected to promptly submit a pull request (PR) that resolve the bounty issue. Developers should review and follow contribution guidelines when submitting their pull request (https://hummingbot.org/developers/contributions/)
-
-Throughout the process, it's important to maintain regular communication with the Hummingbot Foundation team. We strongly encourage contributors to update the Github ticket with your progress, discussing any potential changes or roadblocks.
-
-### Re-assignation / Wont Fix
-
-Assigned contributors may get busy or realize they are incapable of solving the bounty. If the contributor lets us know or is unresponsive or inactive for 7+ days, the Foundation may unassign the contributor and open the bounty for others.
-
-In rare cases, the bounty contributor may discover that the issue is unresolvable. In these cases, the Foundation will append a `wont-fix` label to the issue and work with the sponsor and contributor to resolve the issue fairly. Potential causes for `wont-fix` issues are:
-
-  - Issue is out of Hummingbot scope
-  - Issue is caused by exchange API limitation (rate limits etc.)
-  - Issue is expected behavior

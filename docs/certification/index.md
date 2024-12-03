@@ -1,94 +1,70 @@
+Hummingbot certified market makers and strategy developers have successfully completed a [Hummingbot Botcamp](https://www.botcamp.xyz) cohort, demonstrating their ability to design, code, and present a custom trading strategy.
 
-Hummingbot Certified Developers are individuals who have successfully completed a [Hummingbot Botcamp](https://www.botcamp.xyz) cohort and demonstrated their ability to design, code, and present a custom trading strategy.
-
-See [Certifications List](list.md) for the current list of certified developers.
-
-## Certification Types
-
-### Hummingbot Strategy V2 Developer
-
-The Hummingbot Strategy V2 Developer certification enables developers to demonstrate proficiency in creating and deploying professional-grade algorithmic trading strategies using the [Hummingbot StrategyV2 framework](/v2-strategies). Certified individuals possess the following skills:
-
-- **Design and Code Custom Strategies:** Possess in-depth knowledge of the Hummingbot V2 framework, enabling them to design and implement custom trading algorithms tailored to specific market conditions and objectives.
-- **Familiarity with Hummingbot Codebase:** Have a thorough understanding of the Hummingbot codebase, allowing them to make modifications, optimize performance, and integrate new features.
-- **Deployment Expertise:** Are skilled in deploying and maintaining these strategies in a live trading environment, ensuring they run efficiently and effectively.
-
-### Hummingbot Market Maker
-
-Starting with [Cohort 8](https://www.botcamp.xyz/event/certified-market-maker-3/register) in August 2024, we will begin to offer the Hummingbot Market Maker certification.
-
-This certification is designed to equip participants with the expertise necessary to execute market making strategies across centralized (CEX) and decentralized exchanges (DEX). Certified individuals possess the following skills:
-
-- **Market Making Theory:** Have a solid grasp of market making principles and strategies, including order book dynamics, spread management, and risk mitigation techniques.
-- **CEX and DEX Proficiency:** Understand the nuances and technical requirements of both centralized and decentralized exchanges, enabling them to deploy strategies in diverse trading environments.
-- **Multiple Strategy Deployment:** Are adept at deploying and managing multiple market making strategies simultaneously, ensuring robust performance and liquidity provision in various markets.
-
-### Hummingbot Script Developer
-
-*Replaced by Hummingbot StrategyV2 Developer certification starting in Cohort 6.* 
-
-The original certification offered by the initial Botcamp cohorts, the Hummingbot Script Developer certification focuses on creating custom algorithmic trading strategies using [Scripts](/scripts) that inherit from the `ScriptStrategyBase` class.
-
-## Certification Process
-
-Overseen by the core maintainers of the Hummingbot codebase, the Hummingbot certification process is designed to be comprehensive and challenging, ensuring that participants have the skills to code and operate custom algo trading strategies.
-
-The process is centered around completing a [Hummingbot Botcamp](https://www.botcamp.xyz) cohort, which includes two main requirements and one optional requirement:
-
-### 1. Build a Custom Strategy with Hummingbot
-
-While each certification may have different requirements, developers are generally expected to design, code, run, and present a custom algorithmic trading strategy.
-
-This task requires a deep understanding of trading principles, coding proficiency, and the ability to implement and test strategies in a real-world environment. The goal is to create a rigorous process that showcases the participant's technical and analytical skills.
-
-### 2. Pass Review by Hummingbot Maintainers
-
-After completing their trading strategy, participants submit their strategy code and a brief video explaining the strategy thesis and showing it in action.
-
-Their work will be evaluate by Hummingbot maintainers based on the following criteria:
-
-- **Originality:** Uniqueness of the trading strategy
-- **Technical:** The quality of implementationa and use of Hummingbot framework components
-- **Effort:** Overall thoroughness and effort invested
-
-### 3. Present at Demo Day (NFT)
-
-While we accept submissions after a cohort ends to allow participants to attain certification in their own time, we highly encourage Botcamp participants to complete and present their strategies at Demo Day, the capstone event for each cohort.
-
-Watch their strategy presentations from past Demo Days on our [YouTube channel](https://www.youtube.com/watch?v=TAulqoSenmk&list=PLDwlNkL_4MMctOkqVHECwqw0rP885FzMy&index=1) to see the innovative trading strategies designed and coded by Hummingbot Certified Developers.
-
-**Cohort NFT (1/X)**
-
-Each individual or team member who presents a strategy during Demo Day can claim a limited edition **Botcamp Cohort NFT**, commemorating the hard work and the unique bonds formed within the cohort members.
-
-To receive a Cohort NFT, you must submit and present your strategy at your cohort's Demo Day.
-
-**Cohort MVP NFT (1/1)**
-
-In addition to the individual NFTs, a special **Most Valuable Strategy NFT** will be awarded to the top strategy as voted by the cohort participants. This unique NFT recognizes the standout project of the cohort, highlighting the exceptional skills and innovation of its creator.
+See [Certifications List](list.md) for current certified developers.
 
 ## Benefits of Certification
 
-Achieving certification through our program offers numerous benefits that enhance professional profiles and career opportunities. Here are the key benefits:
+![LinkedIn Badge](badge.png)
 
-### Certificate
+Earning your Hummingbot certificate offers several valuable benefits:
 
-![](sample-certification.png)
+1. **NFT Certificate**:
+   Upon completion of the certification process, you'll receive a unique certificate in the form of an Ethereum NFT. This serves as formal recognition of your skills and achievements in the Hummingbot ecosystem. Here are examples of the NFT certificates provided to a recent batch of Botcamp graduates: [Cohort 9 NFTs](https://opensea.io/assets/ethereum/0x59072271620d3528cb6d7565158b11492b25a4e5/2). The top strategy presenters in each cohort also receive an additional [Cohort MVP NFT](https://opensea.io/assets/ethereum/0x59072271620d3528cb6d7565158b11492b25a4e5/2).
 
-Certified developers receive a certificate that serves as formal recognition of their skills and achievements as a Hummingbot developer. This certificate can be shared with potential employers, clients, or educational institutions to highlight their expertise.
+2. **Certifications List**: 
+   Your name and credentials will be included in the [master list](list.md) of certified developers. This list is maintained on the Hummingbot website and serves as a public record of all certified developers. Being listed here can increase your visibility within the community and enhance your credibility as a Hummingbot developer to potential employers and bounty sponsors.
 
-### Certifications List
+3. **LinkedIn Certification**: 
+   You'll be able to add your Hummingbot certification to your LinkedIn profile, showcasing your skills on this professional networking platform. For more information on adding the certification to LinkedIn, see [LinkedIn's help article](https://www.linkedin.com/help/linkedin/answer/a567169) or [this walkthrough](https://www.linkedin.com/pulse/how-add-certification-linkedin-step-by-step-maia-digital-ltd/).
 
-We maintain a [master list](list.md) of certified developers and information about their certifications on our website.
+4. **Discord Badge**: 
+   You'll receive special certification badge(s) on the Hummingbot Discord server. This badge system integrates with Discord's role system, giving you special recognition within the Hummingbot community. It's a great way to showcase your expertise and connect with other certified developers.
 
-### LinkedIn Certification
+## Certification Tracks
 
-![](badge.png)
+### Hummingbot Market Maker
 
-Certified developers may add an entry similar to the one above to the **Licenses & certifications** section of their LinkedIn profile, indicating to potential employers and professional connections that they have met the rigorous standards of our certification process.
+Proficient in designing and running market making strategies using Hummingbot. Skills include:
 
-For more information about how to add this certification to your LinkedIn profile, see [the help article](https://www.linkedin.com/help/linkedin/answer/a567169) or [this walkthrough](https://www.linkedin.com/pulse/how-add-certification-linkedin-step-by-step-maia-digital-ltd/).
+- Market making theory
+- CEX and DEX proficiency
+- Production-grade strategy deployment
 
-### Discord Badge
+### Hummingbot Strategy Developer
 
-Certified developers receive a badge denoting their certification on our Discord server. Each certification has its own badge, and users may collect multiple badges. This allows them to stand out in the **#dev-wanted** channel and connect with other certified professionals.
+Proficient in creating and deploying professional-grade algorithmic trading strategies using the [Hummingbot Strategy V2 framework](/v2-strategies). Skills include:
+
+- Designing and coding custom strategies
+- Backtesting and live deployment
+- Familiarity with Hummingbot V2 framework
+
+## Certification Process
+
+The Hummingbot certification process is designed to be comprehensive and challenging, ensuring that participants have the skills to code and operate custom algorithmic trading strategies. This process is overseen by the core maintainers of the Hummingbot codebase.
+
+The certification process involves completing a [Hummingbot Botcamp](https://www.botcamp.xyz) cohort and submitting a strategy template and video for presentation at Demo Day.
+
+### 1. Submit Strategy Template and Video
+
+Depending on the certification track, developers are expected to:
+
+- Complete the strategy template for their chosen track
+- Record a brief video (3 minutes) explaining the strategy thesis and demonstrating it in action
+
+### 2. Pass Review by Hummingbot Maintainers
+
+After submitting their strategy template and video, Hummingbot maintainers will evaluate the work based on the following criteria:
+
+- **Effort**: Overall thoroughness and effort invested
+- **Technical**: Quality of implementation and use of Hummingbot framework components
+- **Presentation Quality**: Clarity and effectiveness of the video presentation
+
+### 3. Present at Demo Day
+
+After the review process, the accepted strategies are presented at Demo Day, the capstone event for each Botcamp cohort.
+
+- **Voting Process**: Attendees vote for the top strategy in each certification track.
+- **Certification NFT**: All presenters receive a limited edition Botcamp Certification NFT, recognizing their achievement.
+- **Cohort MVP NFT**: The top-voted strategy in each track is awarded a special Cohort MVP NFT, highlighting exceptional work.
+
+Past Demo Day presentations can be viewed on the [Hummingbot YouTube channel](https://www.youtube.com/watch?v=TAulqoSenmk&list=PLDwlNkL_4MMctOkqVHECwqw0rP885FzMy&index=1).

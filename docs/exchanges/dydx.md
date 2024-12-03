@@ -19,46 +19,91 @@
 - **Fees**: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
 - **Supported Countries**: <https://help.dydx.exchange/en/articles/4798063-location-restrictions> 
 
-## 🔑 How to Connect
+
+## ⚙️ Install Instructions
+
+At the moment there are some issues with dependencies and installing dydx can be a bit trickier due to some software conflicts. We've created these simple instructions to get you up and running quickly using either Docker or Source. 
+
+### Docker
+
+Open your `docker-compose.yml` file. This file is usually located in your Hummingbot project directory.
+
+Update the `image` line. Find the line that starts with `image:` under the `hummingbot` service. Change it to the following, depending on whether you are trying to run the `latest` or `development` branch. 
+
+For latest stable version:
+
+```bash
+image: hummingbot/hummingbot:latest_dydx
+```
+
+For development version:
+
+```bash
+image: hummingbot/hummingbot:development_dydx
+```
+
+
+### Source
+
+After cloning the Hummingbot repo, use the `--dydx ` flag when running the `install` command
+
+```bash
+./install --dydx
+```
+
+See below for the full commands: 
+
+```bash
+git clone https://github.com/hummingbot/hummingbot.git
+cd hummingbot
+./install --dydx
+conda activate hummingbot
+./compile
+```
+
+
+## 🔑 How to Connect to dYdX (v4)
 
 ### Generate API Keys
 
-Create API credentials and a STARK private key using the dYdX documentation:
+1. **Connect Your Wallet**: 
+   - Open the dYdX exchange platform and connect your wallet (e.g., MetaMask or another supported wallet). This will allow you to interact with the exchange and manage your funds.
 
-* [Recover Default API Credentials](https://dydxprotocol.github.io/v3-teacher/#recover-default-api-credentials)
-* [Derive StarkKey](https://help.dydx.exchange/en/articles/4797307-what-is-a-stark-key)
+2. **Deposit USDC**: 
+   - Once your wallet is connected, deposit USDC into your dYdX account. USDC is required for trading on the platform.
 
-Alternatively, you can follow these steps to get the required credentials:
+3. **Access Your Wallet Connection**:
+   - In the top right corner of the dYdX interface, locate and click on your wallet icon or address. This will open the wallet connection settings.
 
-1. From the dYdX exchange, right-click anywhere on your web browser, and select **Inspect** to open Developer Tools
-2. Go to Application > Local Storage > <https://trade.dydx.exchange>
-3. Select **STARK_KEY_PAIRS** and click the drop-down next to your wallet address to get the stark private key
-4. Select **API_KEY_PAIRS** and click the drop-down next to your wallet address to get the API key, secret key, and passphrase
+4. **Copy Your dYdX Chain Address**: 
+   - At the top of the wallet connection settings window, you’ll find your **dYdX Chain Address**. Copy this address and keep it secure for future reference.
+
+5. **Export Your Secret Phrase**: 
+   - Scroll down within the wallet connection settings to find the option that says **Export your secret phrase**. Click on it to reveal and securely save your **dYdX v4 Secret Phrase**. This phrase is essential for account recovery and authentication.
+
 
 ### Add Keys to Hummingbot
 
-You will need the following to connect Hummingbot to `dydx_perpetual`:
+You will need the following to connect Hummingbot to `dydx_v4_perpetual`:
 
-* API key
-* API secret key
-* Passphrase
-* Account number: set this value to `0`
-* Stark private key
+* dYdX v4 secret_passphrase (24 words)
+* dYdX v4 chain address (starts with dydx)
 
-From inside the Hummingbot client, run `connect dydx_perpetual` in Hummingbot in order to connect your wallet:
+From inside the Hummingbot client, run `connect dydx_v4_perpetual` in Hummingbot in order to connect your wallet:
 
 ```
-Enter your dydx_perpetual API key >>>
-Enter your dydx_perpetual secret key >>>
-Enter your dydx_perpetual passphrase >>>
+Enter your dydx v4 secret_phrase(24 words) >>>
+Enter your dydx_v4 chain address (starts with dydx)>>>
 ```
+
+
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*
 
-- **ID**: `dydx_perpetual`
+- **ID**: `dydx_v4_perpetual`
 - **Connection Type**: WebSocket
-- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_perpetual>
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative/dydx_v4_perpetual>
 
 ### Order Types
 
