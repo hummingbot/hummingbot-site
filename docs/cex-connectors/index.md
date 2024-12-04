@@ -43,3 +43,4 @@ Here are the current CEX connectors in the codebase:
 | [Cube](../exchanges/cube/index.md) | CLOB | v2.1 |  | Yes
 | [Bitstamp](../exchanges/bitstamp/index.md) | CLOB | v2.1 |  | Yes
 | [Tegro](../exchanges/tegro/index.md) | CLOB | v2.1 | v2.1 | Yes 
+| [BingX](../exchanges/bing_x/index.md)           | CLOB | v2.1 |  | Yes
