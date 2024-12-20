@@ -5,23 +5,24 @@
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ |
+| [🔀 Spot Connector](#spot-connector) | ✅ | Supports testnet
 | [🔀 Perp Connector](#perp-connector) | Not available
-| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
-| [📓 Connector Guide](/academy-content/using-dexalot-with-hummingbot/) | ✅ |
+|| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| [📓 Connector Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) | ✅ |
 
 ## ℹ️ Exchange Info
 
 - **Website**: <https://dexalot.com>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dexalot/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/dexalot>
-- **API Docs**: <https://docs.dexalot.com/>
+- **API Docs**: <https://docs.dexalot.com/en/apiv2/>
 - **Fees**: 
 
 ## 🔑 How to Connect
 
 !!! tip
-    See the [Dexalot Connector Guide](/academy-content/using-dexalot-with-hummingbot/) for step-by-step instructions.
+    See the [Dexalot Connector Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) for step-by-step instructions.
 
 Create a wallet on one of the supported networks below:
 
@@ -29,20 +30,18 @@ Create a wallet on one of the supported networks below:
 | ----- | -------- |
 | `avalanche` | `dexalot`
 
-From inside the Hummingbot client, run `gateway connect dexalot` in order to connect your wallet:
+From inside the Hummingbot client, run `connect dexalot` in order to connect your wallet:
 
 ```
-Which chain do you want dexalot to connect to? (avalanche) >>>
-Which network do you want dexalot to connect to? (dexalot)
-Enter your dexalot-avalanche-dexalot wallet private key >>>
+Enter your Dexalot private key >>>
+Enter your Dexalot wallet address >>>
 
-Enter your Dexalot API Key (you can request one from the Dexalot team) >>> 
 ```
 
 If connection is successful:
 
 ```
-The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
+You are now connected to Dexalot!
 ```
 
 
@@ -50,34 +49,21 @@ The dexalot connector now uses wallet [pubKey] on avalanche-dexalot
 *Integration to spot markets API endpoints*
 
 - **ID**: `dexalot`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.dexalot-test.com/api>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/dexalot>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/dexalot.yml>
+- **Connection Type**: Websocket
+- **API Docs**: <https://docs.dexalot.com/en/apiv2/>
+- **Folder**: <https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/dexalot>
 
-### Endpoints
 
-- `/clob/orders`
-- `/clob/batchOrders`
-- `/chain/balances`
-- `/chain/poll`
+### Order Types
 
-For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
+This connector supports the following `OrderType` constants:
 
-## 🕯 AMM Data Feed
-*Data feed of this exchange's real-time prices*
+- `LIMIT`
+- `LIMIT_MAKER`
+- `MARKET`
 
-- **ID**: `dexalot_[CHAIN]_[NETWORK]`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
+### Paper Trading
 
-### Usage
+This perp exchange offers a paper trading mode: 
 
-```python
-from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
-prices = AmmGatewayDataFeed(
-        connector_chain_network="dexalot_avalanche_dexalot",
-        trading_pairs={"WAVAX-USDC", "ALOT-USDC"},
-        order_amount_in_base=Decimal("1"),
-    )
-```
+Afer you create an account and create the API keys, you can enter them by using the `connect dexalot_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available spot strategies / scripts. 
