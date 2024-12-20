@@ -9,7 +9,7 @@ categories:
 
 # Hummingbot Dashboard Quickstart Guide
 
-In this tutorial, we'll guide you through installing Hummingbot 2.0, which provide an easy-to-use Dashboard app that helps you connect exchange credentials, create/backtest a strategy configuration, and deploy a fleet of bots!
+In this tutorial, we'll guide you through installing Hummingbot 2.0, which provides an easy-to-use Dashboard app that helps you connect exchange credentials, create/backtest a strategy configuration, and deploy a fleet of bots!
 
 Watch this video for an overview and walkthrough of the features in Hummingbot 2.0:
 
@@ -89,7 +89,7 @@ Once API keys are added, you can view the tokens available and their allocation 
 
 [![](./portfolio-1.png)](./portfolio-1.png)
 
-The table above shows the list of available tokens for the `Kucoin` exchange. The graphs below will show your `Portfoliio Evolution over Time` as well as `Token Value Evolution over time`
+The table above shows the list of available tokens for the `Kucoin` exchange. The graphs below will show your `Portfolio Evolution over Time` as well as `Token Value Evolution over time`
 
 [![](./portfolio-2.png)](./portfolio-2.png)
 
@@ -121,7 +121,7 @@ We can also set the `Total amount of quote` which is how much we want to trade w
 
 [![](./config-3.png)](./config-3.png)
 
-Under `Executors Configuration`, we can set the the spread and amount for both buy and sell orders manually or we can choose from the following distributions:
+Under `Executors Configuration`, we can set the spread and amount for both buy and sell orders manually or we can choose from the following distributions:
 
 - GeoCustom
 - Geometric
