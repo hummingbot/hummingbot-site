@@ -1,4 +1,4 @@
-The official Github repository for Gateway is <https://github.com/hummingbot/gateway>. Gateway is released monthly  with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
+The official Github repository for Gateway is <https://github.com/hummingbot/gateway>. Gateway is released monthly with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
 
 ## Install with Docker 
 
@@ -7,7 +7,7 @@ For most users, this is the recommended install method for Hummingbot and Gatewa
 [![](./gateway.gif)](./gateway.gif)
 
 
-Navigate to the Hummingbot root folder in your terminal of if you haven't cloned the Hummingbot repo yet run the command below
+Navigate to the Hummingbot root folder in your terminal or if you haven't cloned the Hummingbot repo yet run the command below
 
 ```bash
 git clone https://github.com/hummingbot/hummingbot
@@ -98,7 +98,7 @@ docker logs gateway
 
 ## Install from Source
 
-You can also install Gateway on a standalone basis and then link it to Hummingbot manually. These instructions assumes that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker.
+You can also install Gateway on a standalone basis and then link it to Hummingbot manually. These instructions assume that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker.
 
 ### Prerequisites
 

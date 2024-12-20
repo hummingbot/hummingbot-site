@@ -184,6 +184,7 @@ nav:
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
+        - Grid Executor: v2-strategies/executors/gridexecutor.md
         - DCA Executor: v2-strategies/executors/dcaexecutor.md
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: v2-strategies/executors/xemm-executor.md
@@ -352,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.2.0: release-notes/2.2.0.md
     - 2.1.0: release-notes/2.1.0.md
     - 2.0.1: release-notes/2.0.1.md
     - 2.0.0: release-notes/2.0.0.md
