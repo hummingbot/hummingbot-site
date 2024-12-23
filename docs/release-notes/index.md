@@ -2,7 +2,7 @@ We generally release a new version of Hummingbot **every month**. See below for 
 
 ## [2.2.0](./2.2.0/)
 
-*Released December 23, 2024*
+*Released December 26, 2024*
 
 **Hummingbot**
 
