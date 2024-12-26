@@ -42,3 +42,5 @@ User may also adjust the strategy based on market depth, volatility, and other m
 ## Other Controllers
 
 - [xemm_multiple_levels](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/xemm_multiple_levels.py)
+- [arbitrage_controller](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/arbitrage_controller.py)
+- [grid_strike](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/grid_strike.py)

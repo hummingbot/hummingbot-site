@@ -255,6 +255,7 @@ nav:
       - Mad Meerkat: exchanges/mad-meerkat.md
       - Curve: exchanges/curve.md
       - Carbon: exchanges/carbon.md
+      - Jupiter: exchanges/jupiter.md
       - OpenOcean: exchanges/openocean.md
       - Osmosis: exchanges/osmosis.md
       - Pancakeswap : exchanges/pancakeswap.md
