@@ -6,7 +6,7 @@ Welcome to the official website and documentation for Hummingbot and the Humming
 
 This documentation site uses [MkDocs](https://www.mkdocs.org/) documentation-focused static site engine, along with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, of which Hummingbot is a proud sponsor.
 
-The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of MkDocs-Material, which features experimental features like tags and social cards. For core site editors, please request access to the Insiders repo, so that you can deploy the site in your local development environment. You also comment out the following lines in `environment.yml`:
+The deployed site at https://hummingbot.org uses the [Insiders build](https://squidfunk.github.io/mkdocs-material/insiders/) of MkDocs-Material, which features experimental features like tags and social cards. 
 
 ```
   - pip:
@@ -16,6 +16,13 @@ The deployed site at https://hummingbot.org uses the [Insiders build](https://sq
 Create and activate new `hummingbot-site` conda environment using the environment file:
 ```bash
 conda env create -f environment.yml
+```
+
+For core site editors, please request access to the Insiders repo, so that you can deploy the site in your local development environment. You also comment out the following lines in `environment.yml`:
+
+```
+  - pip:
+    - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
 ```
 
 Activate the environment:
