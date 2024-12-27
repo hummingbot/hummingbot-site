@@ -14,7 +14,7 @@ Not only does Dashboard simplify the process of managing bots at scale, but it a
 
 ## Getting Started
 
-To get started, check out the [Hummingbot Dashboard Quickstart](docs/hummingbot-site/docs/academy/posts/quickstart-dashboard/index.md) guide, or the links below with a short explanation of each page (also in the sidebar).
+To get started, check out the [Hummingbot Dashboard Quickstart](../blog/posts/quickstart-dashboard/index.md) guide, or the links below with a short explanation of each page (also in the sidebar).
 
 - [Adding Credentials:](credentials.md)
 

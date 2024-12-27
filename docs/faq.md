@@ -20,7 +20,7 @@ With many connectors and strategies being added all the time, Hummingbot is a co
 
 ### How do people use Hummingbot?
 
-You can use Hummingbot to build any types of automated crypto trading bot, with the most common bot types being market making and arbitrage bots. Market making bots provide liquidity to a trading pair on an exchange, while arbitrage bots exploit price differences betweeen trading pairs on different exchanges.
+You can use Hummingbot to build any type of automated crypto trading bot, with the most common bot types being market making and arbitrage bots. Market making bots provide liquidity to a trading pair on an exchange, while arbitrage bots exploit price differences between trading pairs on different exchanges.
 
 Typically, users install the Docker image version on AWS or another cloud provider. Afterwards, they can add their API key or private keys to it, which allows them to configure and run one of Hummingbot's pre-built strategies on many different exchanges.
 
@@ -87,7 +87,7 @@ If you just want to get Gateway up and running alongside Hummingbot, following t
 
 Afterwards, follow the instructions at [Using Gateway with Hummingbot](gateway/setup.md).
 
-### What kinds of DEX bots can you building with Gateway?
+### What kinds of DEX bots can you build with Gateway?
 
 Currently, Hummingbot Gateway is ideal for bots that:
 
@@ -118,7 +118,7 @@ Speed and latency in DEX trading is heavily dependent on your connection to the 
 
 **1 - Use a node provider**
 
-This is the most common route. Gateway ships with [Ankr] as the default node provider, since theydon’t require API keys. See [default settings](https://github.com/hummingbot/gateway/tree/main/src/templates) for each chain.
+This is the most common route. Gateway ships with [Ankr] as the default node provider, since they don’t require API keys. See [default settings](https://github.com/hummingbot/gateway/tree/main/src/templates) for each chain.
 
 Providers include:
 
