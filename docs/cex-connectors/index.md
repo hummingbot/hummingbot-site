@@ -43,3 +43,4 @@ Here are the current CEX connectors in the codebase:
 | [OKX](../exchanges/okx/okx.md) | CLOB | v2.1 |  | Yes
 | [Tegro](../exchanges/tegro/index.md) | CLOB | v2.1 | v2.1 | Yes 
 | [Vertex](../exchanges/vertex.md) | CLOB | v2.1 |  | Yes
+| [BingX](../exchanges/bing_x/index.md)           | CLOB | v2.1 |  | Yes
