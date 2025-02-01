@@ -12,7 +12,7 @@ repo_url: 'https://github.com/hummingbot/hummingbot'
 edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
 
 # Copyright
-copyright: Copyright &copy; 2024 Hummingbot Foundation
+copyright: Copyright &copy; 2025 Hummingbot Foundation
 
 # Configuration
 theme:
@@ -223,7 +223,6 @@ nav:
       - CLOB Connectors: exchanges/index.md
       - AscendEx : exchanges/ascendex/index.md
       - Binance: exchanges/binance/index.md
-      - Bitfinex: exchanges/bitfinex.md
       - Bitstamp: exchanges/bitstamp/index.md
       - Bitrue: exchanges/bitrue.md
       - Bitget: exchanges/bitget-perpetual.md
@@ -354,6 +353,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.3.0: release-notes/2.3.0.md
     - 2.2.0: release-notes/2.2.0.md
     - 2.1.0: release-notes/2.1.0.md
     - 2.0.1: release-notes/2.0.1.md

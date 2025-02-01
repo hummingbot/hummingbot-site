@@ -23,23 +23,23 @@ Here are the current CEX connectors in the codebase:
 
 | Exchange | Type | Spot Connector Standard | Perp Connector Standard | V2 Strategies Compatible | Connector Guide
 |----------|------|------|------------|-------------|---|
-| [Binance](../exchanges/binance/index.md) | CLOB | v2.1 | v2.1 | Yes | [Guide](/academy-content/using-binance-with-hummingbot)
-| [Gate.io](../exchanges/gate-io/index.md) | CLOB | v2.1 | v2.1 | Yes
-| [Kucoin](../exchanges/kucoin/index.md) | CLOB | v2.1 | v2.1 | Yes
-| [HTX](../exchanges/huobi) | CLOB | v2.0 |  | No - market order type not supported
 | [AscendEx](../exchanges/ascendex/index.md) | CLOB | v2.0 |  | Yes - spot only
-| [OKX](../exchanges/okx/okx.md) | CLOB | v2.1 |  | Yes
-| [Coinbase](../exchanges/coinbase) | CLOB | v2.1 | | Yes
-| [Kraken](../exchanges/kraken) | CLOB | v1.0 |  | No
-| [BTC Markets](../exchanges/btc-markets.md) | CLOB | v2.0 |  | Yes - spot only
-| [FoxBit](../exchanges/foxbit) | CLOB | v2.0 |  | Yes - spot only
-| [Hashkey Global](../exchanges/hashkey/index.md) | CLOB | v2.1 | v2.1 | Yes
-| [Bitfinex](../exchanges/bitfinex.md) | CLOB | v1.0 | | no
-| [Bitget](../exchanges/bitget-perpetual.md) | CLOB |  | v2.0 | Yes - perp only
-| [MEXC](../exchanges/mexc) | CLOB | v2.0 |  | Yes - spot only |
-| [Bybit](../exchanges/bybit) | CLOB | v2.1 | v2.1 | Yes - but API needs update to v5
-| [Bitmart](../exchanges/bitmart/index.md) | CLOB | v2.1 |  | Yes - spot only 
-| [NDAX](../exchanges/ndax) | CLOB | v1.0 |  | No
-| [Cube](../exchanges/cube/index.md) | CLOB | v2.1 |  | Yes
+| [Binance](../exchanges/binance/index.md) | CLOB | v2.1 | v2.1 | Yes | [Guide](/academy-content/using-binance-with-hummingbot)
 | [Bitstamp](../exchanges/bitstamp/index.md) | CLOB | v2.1 |  | Yes
+| [Bitrue](../exchanges/bitrue.md) | CLOB | v2.1 |  | Yes
+| [Bitget](../exchanges/bitget-perpetual.md) | CLOB |  | v2.0 | Yes - perp only
+| [Bitmart](../exchanges/bitmart/index.md) | CLOB | v2.1 |  | Yes - spot only 
+| [Bybit](../exchanges/bybit) | CLOB | v2.1 | v2.1 | Yes
+| [BTC Markets](../exchanges/btc-markets.md) | CLOB | v2.0 |  | Yes - spot only
+| [Coinbase](../exchanges/coinbase) | CLOB | v2.1 | | Yes
+| [Cube](../exchanges/cube/index.md) | CLOB | v2.1 |  | Yes
+| [Gate.io](../exchanges/gate-io/index.md) | CLOB | v2.1 | v2.1 | Yes
+| [Hashkey Global](../exchanges/hashkey/index.md) | CLOB | v2.1 | v2.1 | Yes
+| [HTX](../exchanges/huobi) | CLOB | v2.0 |  | No - market order type not supported
+| [Kraken](../exchanges/kraken) | CLOB | v1.0 |  | No
+| [Kucoin](../exchanges/kucoin/index.md) | CLOB | v2.1 | v2.1 | Yes
+| [MEXC](../exchanges/mexc) | CLOB | v2.0 |  | Yes - spot only |
+| [NDAX](../exchanges/ndax) | CLOB | v1.0 |  | No
+| [OKX](../exchanges/okx/okx.md) | CLOB | v2.1 |  | Yes
 | [Tegro](../exchanges/tegro/index.md) | CLOB | v2.1 | v2.1 | Yes 
+| [Vertex](../exchanges/vertex.md) | CLOB | v2.1 |  | Yes
