@@ -10,7 +10,7 @@ hide:
 # How much volume does the Hummingbot community generate?
 
 <div class="custom-metric">
-  <div class="metric-value">34.5B</div>
+  <div class="metric-value">34.6B</div>
   <div class="metric-label">Last 12M Reported Trade Volume</div>
 </div>
 
@@ -22,9 +22,6 @@ hide:
     "height": 400,
     "data": {
       "values": [
-        {"date": "2023-11-15", "volume": 2508799386.868773},
-        {"date": "2023-12-15", "volume": 2397766942.158128},
-        {"date": "2024-01-15", "volume": 2358984706.9379473},
         {"date": "2024-02-15", "volume": 6490279020.891342},
         {"date": "2024-03-15", "volume": 5056300673.532455},
         {"date": "2024-04-15", "volume": 2803765323.398611},
@@ -33,7 +30,10 @@ hide:
         {"date": "2024-07-15", "volume": 2131640444.2422123},
         {"date": "2024-08-15", "volume": 2009532310.070123},
         {"date": "2024-09-15", "volume": 1119785879.8091574},
-        {"date": "2024-10-15", "volume": 1312240203.1848197}
+        {"date": "2024-10-15", "volume": 1312240203.1848197},
+        {"date": "2024-11-15", "volume": 2490000000},
+        {"date": "2024-12-15", "volume": 2980000000},
+        {"date": "2025-01-15", "volume": 2890000000}
       ]
     },
     "mark": {"type": "bar", "color": "#5FFFD7"},

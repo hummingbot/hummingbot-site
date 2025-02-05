@@ -66,3 +66,4 @@ We're thrilled to partner with leading industry exchanges to champion decentrali
 * [Gate.io](https://www.gate.io/signup/5868285)
 * [HTX](https://www.htx.com/)
 * [OKX](https://www.okx.com/)
+* [Bitmart](https://www.bitmart.com/)
