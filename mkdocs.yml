@@ -166,10 +166,9 @@ nav:
   - Documentation:
     - Documentation: docs/index.md
     - Installation:
+      - Installation: installation/index.md
       - Install via Docker: installation/docker.md
-      - Install from Source (Linux): installation/linux.md
-      - Install from Source (MacOS): installation/mac.md
-      - Install from Source (Windows): installation/windows.md      
+      - Install via Source: installation/source.md
       - Post-Installation: installation/post-installation.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
