@@ -7,9 +7,9 @@ It is designed to be modular and extensible, allowing users to automate any trad
 We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase. Check out [Install via Docker](/installation/docker) for the basic process.
 
 !!! note
-    If you're a developer looking to customize the software, consider installing Hummingbot from source. Here are detailed instructions for each operating system: [Linux](/installation/linux) | [Windows](/installation/windows) | [MacOS](/installation/mac)
+    If you're a developer looking to customize the software, consider installing Hummingbot from source. There are instructions for macOS, Linux and Windows - | [Source Installation](/installation/source) | 
 
-Afterwards, check out [Hummingbot Academy](/academy) for step-by-step tutorials on how to use Hummingbot.
+Afterwards, check out the [Hummingbot Blog](/blog) for blog posts and step-by-step tutorials on how to use Hummingbot.
 
 ## Ways to use Hummingbot
 

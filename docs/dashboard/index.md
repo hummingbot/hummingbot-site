@@ -6,7 +6,7 @@ With the 2024 release of Hummingbot 2.0, we are excited to introduce [Hummingbot
 
 Not only does Dashboard simplify the process of managing bots at scale, but it also is designed to be compatible with [Controllers](../v2-strategies/controllers/index.md), which users can use Dashboard to configure and backtest before deploying live.
 
-## Highlgihts
+## Highlights
 
 * **Accessible Framework**: Uses the [Streamlit](https://streamlit.io/) open source data visualization framework
 * **Backtestable Strategies**: Configure and [backtest](./backtest.md) strategy controllers
