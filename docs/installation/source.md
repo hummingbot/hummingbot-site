@@ -125,8 +125,6 @@ The tags for previous versions follow this format: `vx.x.x` (e.g., `v2.1.0`).
     - dYdX (Starkware)  
     - And [30+ others](/gateway/exchanges)  
 
-**Key Differences** → [Why Gateway?](/gateway/overview)  
-
 [Gateway](/gateway) acts as middleware that enables Hummingbot to interact with blockchain-based decentralized exchanges. To set up, follow the instructions in [Gateway - Installation](/gateway/installation) to generate certificates and connect Gateway to Hummingbot.
 
 
