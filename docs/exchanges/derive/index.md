@@ -91,7 +91,7 @@ You are now connected to derive
 
 - **ID**: `derive`
 - **Connection Type**: WebSocket
-- **API Docs**: <https://derive-docs.github.io/apidocs/spot/en/>
+- **API Docs**: <https://docs.derive.xyz>
 - **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/derive)** 
 
 ### Order Types
@@ -156,8 +156,14 @@ This connector supports the following position modes:
 
 - One-way
 
-### Paper Trading
+### Paper Trading (Derive Testnet)
 
-This perp exchange offers a paper trading mode: <https://testnet.derivefuture.com>
+This perp exchange offers a paper trading mode: <https://testnet.derive.xyz>
 
 Afer you create an account and create the API keys, you can enter them by using the `connect derive_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts.
+
+### Additional Information: Perp Connector
+
+- Note: Currently, Derive Exchange determines the applied leverage, and users cannot manually set it. However, users will see the updated leverage reflected accordingly.
+
+    ![API](derive-api10.png)
