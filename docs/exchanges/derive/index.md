@@ -166,4 +166,6 @@ Afer you create an account and create the API keys, you can enter them by using 
 
 - Note: Currently, Derive Exchange determines the applied leverage, and users cannot manually set it. However, users will see the updated leverage reflected accordingly.
 
+- Sample View
+
     ![API](derive-api10.png)
