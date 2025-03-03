@@ -231,6 +231,7 @@ nav:
       - BTC Markets: exchanges/btc-markets.md
       - Coinbase: exchanges/coinbase.md
       - Cube: exchanges/cube/index.md
+      - Derive: exchanges/derive.md
       - Dexalot: exchanges/dexalot.md
       - dYdX: exchanges/dydx.md
       - Gate.io: exchanges/gate-io/index.md
