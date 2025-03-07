@@ -354,6 +354,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.4.0: release-notes/2.4.0.md
     - 2.3.0: release-notes/2.3.0.md
     - 2.2.0: release-notes/2.2.0.md
     - 2.1.0: release-notes/2.1.0.md
