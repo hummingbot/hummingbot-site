@@ -17,11 +17,12 @@
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/derive/>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/derive>
 - **Fees**: <https://docs.derive.xyz/reference/fees-1>
+- **Supported Countries**: <https://www.derive.xyz/terms-of-use#:~:text=restricted%20region>
 - **Derive referral link:** <https://docs.derive.xyz/docs/referral-rewards-program>
 
 ## 🔑 About Rate Limits
 
-- Reach out to exchange in regards rate limits
+- The system enforces rate limits using a fixed window algorithm, replenishing the request allowance every 5 seconds to maintain system stability. Market makers can access higher rate limits upon request by contacting the support team.
 
     ![API](rate-limit-api1.png)
 
