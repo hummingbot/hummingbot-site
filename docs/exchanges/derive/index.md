@@ -165,8 +165,8 @@ Afer you create an account and create the API keys, you can enter them by using 
 
 ### Additional Information: Perp Connector
 
-- Note: Currently, Derive Exchange determines the applied leverage, and users cannot manually set Leverage. However, users will see the updated leverage reflected accordingly.
+- Note: Only for perps. Leverage of the position, defined as abs(notional) / collateral net of options.
+- **Derive Leverage:** <https://docs.derive.xyz/reference/private-get_positions#:~:text=leverage>
 
 - Sample View
-
     ![API](derive-api10.png)
