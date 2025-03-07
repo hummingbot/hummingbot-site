@@ -165,7 +165,7 @@ Afer you create an account and create the API keys, you can enter them by using 
 
 ### Additional Information: Perp Connector
 
-- Note: Currently, Derive Exchange determines the applied leverage, and users cannot manually set it. However, users will see the updated leverage reflected accordingly.
+- Note: Currently, Derive Exchange determines the applied leverage, and users cannot manually set Leverage. However, users will see the updated leverage reflected accordingly.
 
 - Sample View
 
