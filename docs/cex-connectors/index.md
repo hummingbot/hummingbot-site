@@ -25,6 +25,7 @@ Here are the current CEX connectors in the codebase:
 |----------|------|------|------------|-------------|---|
 | [AscendEx](../exchanges/ascendex/index.md) | CLOB | v2.0 |  | Yes - spot only
 | [Binance](../exchanges/binance/index.md) | CLOB | v2.1 | v2.1 | Yes | [Guide](/academy-content/using-binance-with-hummingbot)
+| [BingX](../exchanges/bing_x/index.md) | CLOB | v2.1 |  | Yes - spot only | [Guide](https://hummingbot.org/exchanges/bing_x/)
 | [Bitstamp](../exchanges/bitstamp/index.md) | CLOB | v2.1 |  | Yes
 | [Bitrue](../exchanges/bitrue.md) | CLOB | v2.1 |  | Yes
 | [Bitget](../exchanges/bitget-perpetual.md) | CLOB |  | v2.0 | Yes - perp only
@@ -43,4 +44,4 @@ Here are the current CEX connectors in the codebase:
 | [OKX](../exchanges/okx/okx.md) | CLOB | v2.1 |  | Yes
 | [Tegro](../exchanges/tegro/index.md) | CLOB | v2.1 | v2.1 | Yes 
 | [Vertex](../exchanges/vertex.md) | CLOB | v2.1 |  | Yes
-| [BingX](../exchanges/bing_x/index.md)           | CLOB | v2.1 |  | Yes
+          | CLOB | v2.1 |  | Yes
