@@ -17,11 +17,12 @@
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/derive/>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/derive>
 - **Fees**: <https://docs.derive.xyz/reference/fees-1>
+- **Supported Countries**: <https://www.derive.xyz/terms-of-use#:~:text=restricted%20region>
 - **Derive referral link:** <https://docs.derive.xyz/docs/referral-rewards-program>
 
 ## 🔑 About Rate Limits
 
-- Reach out to exchange in regards rate limits
+- The system enforces rate limits using a fixed window algorithm, replenishing the request allowance every 5 seconds to maintain system stability. Market makers can access higher rate limits upon request by contacting the support team.
 
     ![API](rate-limit-api1.png)
 
@@ -91,7 +92,7 @@ You are now connected to derive
 
 - **ID**: `derive`
 - **Connection Type**: WebSocket
-- **API Docs**: <https://derive-docs.github.io/apidocs/spot/en/>
+- **API Docs**: <https://docs.derive.xyz>
 - **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/derive)** 
 
 ### Order Types
@@ -156,8 +157,16 @@ This connector supports the following position modes:
 
 - One-way
 
-### Paper Trading
+### Paper Trading (Derive Testnet)
 
-This perp exchange offers a paper trading mode: <https://testnet.derivefuture.com>
+This perp exchange offers a paper trading mode: <https://testnet.derive.xyz>
 
 Afer you create an account and create the API keys, you can enter them by using the `connect derive_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts.
+
+### Additional Information: Perp Connector
+
+- Note: Only for perps. Leverage of the position, defined as abs(notional) / collateral net of options.
+- **Derive Leverage:** <https://docs.derive.xyz/reference/private-get_positions#:~:text=leverage>
+
+- Sample View
+    ![API](derive-api10.png)
