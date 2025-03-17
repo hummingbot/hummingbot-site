@@ -9,7 +9,7 @@
 | [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | |
-| [📓 Connector Guide](/academy-content/using-derive-with-hummingbot/) | ✅ | 
+| [📓 Connector Guide](../../blog/running-a-trading-bot-with-hummingbot-on-derive-perpetual/) | ✅ | 
 
 ## ℹ️ Exchange Info
 
