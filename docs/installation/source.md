@@ -10,18 +10,25 @@ This method is recommended for developers and users who need to modify Hummingbo
     ```bash
     xcode-select --install
     ```
-    **Miniconda**
+    **Anaconda**
+
+    **Graphical Installer** 
+    
+    On [anaconda.com/download](https://www.anaconda.com/download?utm_source=anacondadocs&utm_medium=documentation&utm_campaign=download&utm_content=installmacgraphical), register with Anaconda (if desired), and click  Download for Mac.
+
+
+    **Command Line**
 
     MacOS with Intel x86:
     ```bash
-    curl -o Miniconda3-latest-MacOSX-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-    bash Miniconda3-latest-MacOSX-x86_64.sh
+    curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-x86_64.sh
+    bash ~/Anaconda3-2024.10-1-MacOSX-x86_64.sh
     ```
 
     MacOS with Apple Silicon:
     ```bash
-    curl -o Miniconda3-latest-MacOSX-arm64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
-    bash Miniconda3-latest-MacOSX-arm64.sh
+    curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.sh
+    bash ~/Anaconda3-2024.10-1-MacOSX-arm64.sh
     ``` 
 
 === "Linux"
