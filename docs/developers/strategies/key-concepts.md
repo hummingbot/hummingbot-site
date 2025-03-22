@@ -29,8 +29,8 @@ To assist in the development of custom strategies, there are many overridable fu
 
 * `c_did_create_buy_order()`: called in response to an `order_created_event`
 * `c_did_create_sell_order()`: called in response to an `order_created_event`
-* `c_did_fail_order()`: called in response to an `order_filled_event`
-* `c_did_create_sell_order()`: called in response to an `order_failed_event`
+* `c_did_fill_order()`: called in response to an `order_filled_event`
+* `c_did_fail_order()`: called in response to an `order_failed_event`
 * `c_did_cancel_order()`: called in response to a `cancelled_event`
 * `c_did_expire_order()`: called in response to an `expired_event`
 * `c_did_complete_buy_order()`: called in response to an `order_completed_event`
