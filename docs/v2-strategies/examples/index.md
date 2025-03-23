@@ -20,7 +20,7 @@ The auto-complete for `[SCRIPT_FILE]` will only display the scripts in the local
 You will be prompted to define the strategy parameters, which are saved in a YAML file in the `conf/scripts` directory. Afterwards, you can run the script by specifying this config file:
 
 ```
-start --script [SCRIPT_FILE-conf [SCRIPT_CONFIG_FILE]`
+start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]
 ```
 
 The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the local `/conf/scripts` directory.
