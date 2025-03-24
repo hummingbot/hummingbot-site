@@ -6,50 +6,75 @@ This method is recommended for developers and users who need to modify Hummingbo
 ## Install Dependencies
 
 === "macOS"
-    **XCode Command Line Tools**
+    ### 🛠️ macOS Setup Instructions
+
+    #### ✅ Install Xcode Command Line Tools  
+    These are essential for compiling some Python dependencies.
+
     ```bash
     xcode-select --install
     ```
-    **Anaconda**
 
-    **Graphical Installer** 
+    #### ✅ Install Anaconda (Recommended for macOS)
+
+    !!! note
+        On non-Linux systems, we recommend using the full **Anaconda** distribution instead of lighter alternatives like **Miniconda**. **Anaconda** includes a broader set of preinstalled packages, which helps prevent dependency conflicts and installation errors commonly encountered with Miniconda.
     
-    On [anaconda.com/download](https://www.anaconda.com/download?utm_source=anacondadocs&utm_medium=documentation&utm_campaign=download&utm_content=installmacgraphical), register with Anaconda (if desired), and click  Download for Mac.
+    You can install Anaconda using either the graphical interface or the command line.
 
+    ### 🔹 Option 1: Graphical Installer (Beginner-Friendly)
 
-    **Command Line**
+    1. Visit [anaconda.com/download](https://www.anaconda.com/download?utm_source=anacondadocs&utm_medium=documentation&utm_campaign=download&utm_content=installmacgraphical)
+    2. Choose your version (Intel or Apple Silicon)
+    3. Click **Download for Mac**
+    4. Follow the installer prompts
 
-    MacOS with Intel x86:
+    ### 🔹 Option 2: Command Line Installer
+
+    Use this method if you're comfortable with the terminal.
+
+    **For macOS with Intel (x86):**
     ```bash
     curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-x86_64.sh
-    bash ~/Anaconda3-2024.10-1-MacOSX-x86_64.sh
+    bash Anaconda3-2024.10-1-MacOSX-x86_64.sh
     ```
 
-    MacOS with Apple Silicon:
+    **For macOS with Apple Silicon (M1/M2/M3):**
     ```bash
     curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.sh
-    bash ~/Anaconda3-2024.10-1-MacOSX-arm64.sh
-    ``` 
+    bash Anaconda3-2024.10-1-MacOSX-arm64.sh
+    ```
 
 === "Linux"
-    Install / Update Dependencies
+    ### 🐧 Linux Setup Instructions
+
+    #### ✅ Install/Update System Packages
     ```bash
     sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
     ```
-    Install Miniconda 
+
+    #### ✅ Install Miniconda
     ```bash
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh
     ```
 
 === "Windows"
-    Install WSL2 and Ubuntu using the following command. This may take a while to complete and might need to restart your computer.
-    
+    ### 🪟 Windows Setup Instructions
+
+    #### ✅ Install WSL2 and Ubuntu
+
+    This may take a while to complete and may require a system restart.
+
     ```bash
     wsl --install -d Ubuntu
     ```
+
+    Once the Ubuntu distribution is installed, open the Ubuntu terminal and follow the instructions in the Linux section to install the dependencies. 
+
     !!! note
-        Run all install commands below in an Ubuntu terminal, not Windows Command Prompt / PowerShell
+        Run all install commands below in an Ubuntu terminal, **not** Windows Command Prompt or PowerShell.
+
 
 
 ## Installation Steps 
