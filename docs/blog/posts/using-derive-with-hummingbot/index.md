@@ -7,17 +7,19 @@ categories:
   - Connector Guides
 ---
 
-# Running a Trading Bot with Hummingbot on Derive Perpetual
+# Running a Trading Bot with Hummingbot on Derive
 
-![cover](derive-connector-guide.webp)
+![cover](hummingbot-derive.webp)
 
-Welcome to the new Derive Hummingbot Connector Guide, your comprehensive resource for integrating and trading on Derive’s decentralized derivatives platform using Hummingbot. Powered by the innovative Derive Chain—built on the OP Stack for high throughput and low-cost settlements—Derive redefines onchain trading with seamless onboarding, robust self-custody, and advanced risk management for options, perpetuals, and structured products. 
+Welcome to the new Derive Hummingbot Connector Guide, your comprehensive resource for integrating and trading on Derive’s decentralized derivatives platform using Hummingbot. Powered by the innovative Derive Chain and built on the OP Stack for high throughput and low-cost settlements, Derive redefines onchain trading with seamless onboarding, robust self-custody, and advanced risk management for options, perpetuals, and structured products. 
 
 In this guide, we'll walk you through connecting your Derive account to Hummingbot and setting up an automated trading bot to harness these cutting-edge features. Let's dive in!
 
 <!-- more -->
 
-## Connecting Your MetaMask Wallet to Derive
+## Add Funds and Get Derive API Keys
+
+Before you can start trading on Derive using Hummingbot, you'll need to set up your wallet, connect it to the Derive platform, deposit funds, and configure your API access. This section walks you through these essential first steps to prepare your account for automated trading.
 
 *Derive supports multiple wallets such as Rabby Wallet, Coinbase wallet, Ledger etc, but for this guide, we'll use **MetaMask**, one of the most popular Ethereum wallets. MetaMask allows users to interact with Derive via its browser extension or mobile app.*
 
@@ -27,7 +29,7 @@ Ensure MetaMask is Installed and Set Up
 
 If you haven’t already, download and install the [MetaMask](https://metamask.io/) browser extension or mobile app. Create a new wallet or import an existing one.
 
-### Connect Your Wallet to Derive
+### Connect MetaMask Wallet to Derive
 
 Open your web browser and go to [https://derive.xyz/](https://derive.xyz/). On the Derive homepage, click the **"Connect Wallet"** button, typically located in the top-right corner of the page.
 
@@ -41,7 +43,7 @@ MetaMask will open a pop-up asking you to confirm the connection.
 
    [![image](3.png)](3.png)  
    
-After the wallet is connected, Derive will prompt you to sign a message to verify you are the owner of the Wallet.
+After the wallet is connected, Derive will prompt you to sign a message to verify you are the owner of the wallet.
 
    [![image](4.png)](4.png)
    [![image](5.png)](5.png)  
@@ -271,8 +273,8 @@ For this example, we'll use the [**bollinger_v1**](https://github.com/hummingbot
 
 
  **Start the strategy**
-
-   - To start the strategy, use the following command. Note - if your config file has a different file name then replace the config name below
+ 
+ To start the strategy, use the following command. Note - if your config file has a different file name then replace the config name below
 
    ```bash
    start --script v2_with_controllers.py --conf conf_v2_with_controllers_1.yml
@@ -310,12 +312,9 @@ For more details on V2 Strategies or other available controllers, check out the 
 
 - [Derive Rate Limit](https://docs.derive.xyz/reference/rate-limits) - The system enforces rate limits using a fixed window algorithm, replenishing the request allowance every 5 seconds to maintain system stability. Market makers can access higher rate limits upon request by contacting the support team. 
 
-## Additional Information: Perp Connector
+## Additional Information: Leverage
 
-**Note:**  
-This information applies **only to perpetual contracts (Perps)**.
-
-**Leverage** refers to the size of your position relative to the collateral you have provided. Specifically, it's calculated as:
+When using perpetual futures exchanges, **leverage** refers to the size of your position relative to the collateral you have provided. Specifically, it's calculated as:
 
 \[
 \text{Leverage} = \frac{\text{abs(Notional Value)}}{\text{Collateral (net of options)}}
