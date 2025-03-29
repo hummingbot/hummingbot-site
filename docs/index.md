@@ -89,7 +89,7 @@ hide:
 
 ---
 
-# Our supporters and partners
+# Sponsored by leading CEXs and DEXs
 
 <div class="exchange-grid">
   <div class="flex-item">
@@ -97,8 +97,16 @@ hide:
     <img src="/assets/logos/binance-light.png" alt="Binance" class="light-logo"/>
   </div>
   <div class="flex-item">
+    <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" alt="Hyperliquid" class="light-logo"/>
+  </div>
+  <div class="flex-item">
     <img src="/assets/logos/okx-dark.png" alt="OKX" class="dark-logo"/>
     <img src="/assets/logos/okx-light.png" alt="OKX" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
+    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/gate-dark.png" alt="Gate" class="dark-logo"/>
@@ -109,24 +117,12 @@ hide:
     <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-light.png" alt="Hyperliquid" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/dydx-dark.png" alt="dYdX" class="dark-logo"/>
-    <img src="/assets/logos/dydx-light.png" alt="dYdX" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
-    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/coinalpha-dark.png" alt="CoinAlpha" class="dark-logo"/>
-    <img src="/assets/logos/coinalpha-light.png" alt="CoinAlpha" class="light-logo"/>
+    <img src="/assets/logos/derive-dark.png" alt="CoinAlpha" class="dark-logo"/>
+    <img src="/assets/logos/derive-light.png" alt="CoinAlpha" class="light-logo"/>
   </div>
 </div>
 
-### See [Sponsors](/about/sponsors/) for more information on how to support Hummingbot Foundation.
+### See [Sponsors & Partners](/about/sponsors/) for how Hummingbot Foundation works with these institutions.
 
 ---
 
