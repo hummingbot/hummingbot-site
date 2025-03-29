@@ -391,24 +391,23 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
+  - Bounties: 
+    - Bounties: bounties/index.md
+    - External Bounties: bounties/external.md
+    - Lifecycle of a Bounty: bounties/lifecycle.md
+    - Bounties FAQ: bounties/faq.md
+    - Bounty Contributors Guide: bounties/contributors.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Foundation:
     - Foundation: about/index.md
     - HBOT Token: about/hbot.md
     - Board of Directors: about/board.md
-    - Sponsor & Supporters: about/sponsors.md
-    - Affiliate Program: about/affiliate.md
+    - Sponsors & Partners: about/sponsors.md
     - Governance:
       - Governance: governance/index.md
       - Polls: governance/polls.md
       - Proposals: governance/proposals.md
       - Epochs: governance/epochs.md
       - Whitepaper: governance/whitepaper.md
-    - Bounties: 
-      - Bounties: bounties/index.md
-      - External Bounties: bounties/external.md
-      - Lifecycle of a Bounty: bounties/lifecycle.md
-      - Bounties FAQ: bounties/faq.md
-      - Bounty Contributors Guide: bounties/contributors.md
-      - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Blog: 
     - blog/index.md
