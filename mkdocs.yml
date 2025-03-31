@@ -312,19 +312,19 @@ nav:
       - Setting up Gateway: gateway/setup.md
       - Working with Tokens: gateway/tokens.md
       - Running Strategies and Scripts: gateway/running-dex-bots.md
-    - Community:
-      - Community: community/index.md
-      - Discord Support Program: community/support.md
-      - Affiliate Program: about/affiliate.md
-      - Upcoming Events ↗️: https://lu.ma/hummingbot
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
-  - Certification:
-    - Certification: certification/index.md
-    - Certifications List: certification/list.md
-    - Botcamp ↗️: https://www.botcamp.xyz
-    - Botcamp FAQ: botcamp/faq.md
+  - Community:
+    - Community: community/index.md
+    - Discord Server: community/discord.md
+    - Rewards Programs and Competitions: community/rewards.md
+    - Certification Program:
+      - Certification: certification/index.md
+      - Certifications List: certification/list.md
+      - Botcamp ↗️: https://www.botcamp.xyz
+      - Botcamp FAQ: botcamp/faq.md
+    - Upcoming Events ↗️: https://lu.ma/hummingbot
   - Developers:
     - Developers: developers/index.md
     - Contribution Guidelines: developers/contributions.md
@@ -349,7 +349,7 @@ nav:
       - Strategy Configs: developers/strategies/config.md
       - Tutorial: developers/strategies/tutorial.md
     - Brokers Module: installation/broker.md
-    - Earning Bounties: bounties/contributors.md
+    - Earn Developer Bounties: bounties/contributors.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
