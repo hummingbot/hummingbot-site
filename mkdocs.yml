@@ -349,8 +349,7 @@ nav:
       - Strategy Configs: developers/strategies/config.md
       - Tutorial: developers/strategies/tutorial.md
     - Brokers Module: installation/broker.md
-    - How to Earn Bounties: bounties/contributors.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+    - Earning Bounties: bounties/contributors.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
@@ -393,10 +392,10 @@ nav:
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
     - Bounties: bounties/index.md
-    - External Bounties: bounties/external.md
     - Lifecycle of a Bounty: bounties/lifecycle.md
+    - Pricing & Payments: bounties/pricing.md
     - Bounties FAQ: bounties/faq.md
-    - Bounty Contributors Guide: bounties/contributors.md
+    - Contributors Guide: bounties/contributors.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Foundation:
     - Foundation: about/index.md

@@ -1,13 +1,3 @@
-If you are want to get a custom algorithmic strategy or Hummingbot connector built by a professional-grade developer, Hummingbot Foundation can help you navigate the entire development process. This includes:
-
-- Posting the bounty on [Bounties Board](https://github.com/orgs/hummingbot/discussions/categories/bounties)
-- Assigning a qualified community developer and monitoring their progress
-- Reviewing the code to ensure the connector meets the acceptance criteria and other requirements
-- Performing automated and manual testing (quality assurance)
-- Paying the developer when the pull request is merged
-
-To initiate the process, please post a create a new [Github Issue](https://github.com/hummingbot/hummingbot/issues/new/choose) and choose the **Bounty Request** template. You may also contact the Foundation team members on [Discord](https://discord.gg/hummingbot) to discuss your bounty.
-
 ## Bounty Types
 
 Bounties can be classified into one of the following types:
@@ -51,6 +41,22 @@ Hummingbot Foundation charges Sponsors a fee for overseeing the entire lifecycle
 The standard processing fee is **20%**. If a sponsor submits a 1000 USDT total bounty, the fee is 200 USDT and the developer receives 800 USDT.
 
 If the bounty is denominated in the [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb) token, the fee is **10%**. If a sponsor submits a 100,000 HBOT total bounty, the fee is 10,000 HBOT and the developer receives 90,000 HBOT.
+
+## Payment Denominations
+
+### Foundation Bounties
+Foundation bounties are priced in USD but paid in HBOT tokens. The conversion rate is based on the 30-day average trading price of HBOT at the time of payment. This approach ensures that contributors receive fair compensation regardless of short-term price fluctuations in the token.
+
+!!! note "Balancing HBOT"
+    To ensure that HBOT retains economic value, the Foundation strives to balance emissions from HBOT bounty distributions with periodic buybacks. Users can track both token distributions and purchases in the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) spreadsheet under the "HBOT Distributions" and "HBOT Purchases" tabs.
+
+### External Bounties
+External bounties are paid in the denomination (cryptocurrency) specified by the sponsor. The sponsor must place the full bounty amount in escrow with the Foundation before the bounty is posted. When the work is completed and approved, the Foundation distributes the payment to the contributor, minus a processing fee.
+
+- Standard processing fee: 20% for payments in USDT/USDC and other cryptocurrencies
+- Reduced processing fee: 10% for payments made in HBOT tokens
+
+For detailed information about processing fees and payment wallets, please refer to the [Pricing Guidance](./pricing.md) page.
 
 ## Bounty Wallets
 
