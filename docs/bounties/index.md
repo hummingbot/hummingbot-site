@@ -23,10 +23,8 @@ The columns in the board include:
 - **Merged**: Pull request has been merged to the `development` branch (or published publicly in the case of content)
 - **Paid**: Contributor has been paid and the bounty is considered done
 
-## HBOT Tracker
+## HBOT Purchases
 
-[HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) is a Google Sheet that contains a record of HBOT bounty allocations and distributions. Relevant tabs include:
+The Hummingbot Foundation maintains balance between HBOT supply and demand through periodic token buybacks. Since Foundation bounties are paid in HBOT tokens while external bounties may be funded in other currencies, the Foundation conducts regular market purchases of HBOT using proceeds from external bounty fees. This mechanism helps ensure that the overall distribution of HBOT tokens through bounty payments is balanced by market purchases, maintaining equilibrium between token supply and demand.
 
-* **Discord Leaderboard**: Leaderboard of users who earn HBOT for supporting the Discord community. See [Improvements to the Discord Support Program](/blog/improvements-to-the-discord-support-program) for more information.
-* **Connector Pots**: Lists available HBOT allocations for each CEX, DEX and Chain connector, determined by voting in [Polls](../governance/polls.md).
-* **Bounty Tracker**: Lists the status of in-progress and completed bounties
+Users can track both token distributions and purchases in the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) spreadsheet under the "HBOT Distributions" and "HBOT Purchases" tabs.
