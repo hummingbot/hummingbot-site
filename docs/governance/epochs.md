@@ -37,10 +37,10 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 | 3    | dYdX            | 245,675             |
 | 4    | Hyperliquid     | 166,090              |
 
-| Inclusion Threshold Pass/Fail  | Exchange Connector                                                                                                                                                                                                                                                |
-|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ✅ | dYdX, Uniswap, XRP Ledger, Hyperliquid, Dexalot, Pancakeswap, Curve, Tinyman, Hydration, TraderJoe, Polkadex, Vega, Sushiswap, Carbon, Quickswap, Injective Helix, Osmosis, Mad Meerkat, Plenty, Ref, Vertex, VVS, XSwap, Perpetual Protocol, Pangolin, OpenOcean |
-| ❌ | Quipuswap                                                                                                                                                                                                                                                         |
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | dYdX, Uniswap, XRP Ledger, Hyperliquid, Dexalot, Pancakeswap, Curve, Tinyman, TraderJoe, Polkadex, Vega, Sushiswap, Carbon, Quickswap, Injective Helix, Osmosis, Mad Meerkat, Plenty, Ref, Vertex, VVS, XSwap, Perpetual Protocol, Pangolin, OpenOcean |
+| ❌ | Quipuswap |
 
 ### Chain Connectors
 
@@ -93,10 +93,10 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 | 3    | XRP Ledger      | 103,582             |
 | 4    | Pancakeswap     | 85,993              |
 
-| Inclusion Threshold Pass/Fail  | Exchange Connector                                                                                                                                                                                                                             |
-|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ✅ | dYdX, Uniswap, XRP Ledger, Pancakeswap, Uniswap, Dexalot, TraderJoe, Polkadex, Mad Meerkat, Perpetual Protocol, Sushiswap, Tinyman, Hydration, Injective Helix, Quickswap, Vertex, Pangolin, Ref, XSwap, Hyperliquid, OpenOcean, Curve, Plenty |
-| ❌ |                                                                                                                                                                                                                                                |
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | dYdX, Uniswap, XRP Ledger, Pancakeswap, Uniswap, Dexalot, TraderJoe, Polkadex, Mad Meerkat, Perpetual Protocol, Sushiswap, Tinyman, Injective Helix, Quickswap, Vertex, Pangolin, Ref, XSwap, Hyperliquid, OpenOcean, Curve, Plenty |
+| ❌ | |
 
 ### Chain Connectors
 
@@ -129,10 +129,10 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 ### DEX Connectors
 
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)   | dYdX                                                                                                                                                                                     |
-|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white) | Dexalot, Polkadex, Injective Helix                                                                                                                                                       |
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green) | Uniswap, Pancakeswap, Sushiswap, Plenty, TraderJoe, Perpetual Protocol, Quickswap, OpenOcean, Pangolin, Mad Meerkat Finance, Ref Finance, Tinyman, Hydration, VVS Finance, XSwap, Vertex |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)   | dYdX |
+|-----------------------------------------------------------------------------------|------|
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white) | Dexalot, Polkadex, Injective Helix |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green) | Uniswap, Pancakeswap, Sushiswap, Plenty, TraderJoe, Perpetual Protocol, Quickswap, OpenOcean, Pangolin, Mad Meerkat Finance, Ref Finance, Tinyman, VVS Finance, XSwap, Vertex |
 
 ### Chain Connectors
 
@@ -158,10 +158,10 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 ### DEX Connectors
 
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)   | Uniswap                                                                                                                                                     |
-|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white) | dYdX, PancakeSwap, Dexalot                                                                                                                                  |
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green) | TraderJoe, Sushiswap, Pangolin, Tinyman, Hydration, Injective, Quickswap, Mad Meerkat Finance, Ref Finance, VVS Finance, XSwap, Defira, OpenOcean, Loopring |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=GOLD&color=yellow)   | Uniswap |
+|-----------------------------------------------------------------------------------|---------|
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=SILVER&color=white) | dYdX, PancakeSwap, Dexalot |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=BRONZE&color=green) | TraderJoe, Sushiswap, Pangolin, Tinyman, Injective, Quickswap, Mad Meerkat Finance, Ref Finance, VVS Finance, XSwap, Defira, OpenOcean, Loopring |
 
 ### Core Strategies
 
