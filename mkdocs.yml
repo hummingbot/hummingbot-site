@@ -262,6 +262,7 @@ nav:
       - Pangolin: exchanges/pangolin.md
       - Quickswap: exchanges/quickswap.md
       - Sushiswap: exchanges/sushiswap.md
+      - Hydration: exchanges/hydration.md
       - Tinyman: exchanges/tinyman.md
       - Telos: exchanges/telos.md
       - TraderJoe: exchanges/traderjoe.md
