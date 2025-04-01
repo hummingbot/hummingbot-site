@@ -218,9 +218,12 @@ nav:
       - Perpetual Market Making: strategies/perpetual-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
-    - CLOB Connectors:
-      - CLOB Connectors: exchanges/index.md
+    - Connectors:
+      - Connectors: exchanges/index.md
+      - CLOB Connectors: exchanges/clob.md
+      - DeFi Connectors: exchanges/defi.md
       - AscendEx : exchanges/ascendex/index.md
+      - Balancer: exchanges/balancer.md
       - Binance: exchanges/binance/index.md
       - Bitstamp: exchanges/bitstamp/index.md
       - Bitrue: exchanges/bitrue.md
@@ -229,11 +232,14 @@ nav:
       - Bitmart: exchanges/bitmart/index.md
       - Bybit: exchanges/bybit.md
       - BTC Markets: exchanges/btc-markets.md
+      - Carbon: exchanges/carbon.md
+      - Curve: exchanges/curve.md
       - Coinbase: exchanges/coinbase.md
       - Cube: exchanges/cube/index.md
       - Derive: exchanges/derive/index.md
       - Dexalot: exchanges/dexalot.md
       - dYdX: exchanges/dydx.md
+      - ETCSwap: exchanges/etcSwap.md
       - Gate.io: exchanges/gate-io/index.md
       - Hashkey: exchanges/hashkey/index.md
       - Hyperliquid: exchanges/hyperliquid.md
@@ -241,33 +247,23 @@ nav:
       - Kraken: exchanges/kraken/index.md
       - Kucoin: exchanges/kucoin/index.md
       - Injective Helix: exchanges/injective.md
+      - Jupiter: exchanges/jupiter.md
+      - Osmosis: exchanges/osmosis.md
+      - Mad Meerkat: exchanges/mad-meerkat.md
+      - Pancakeswap : exchanges/pancakeswap.md
       - Polkadex: exchanges/polkadex.md
+      - Quickswap: exchanges/quickswap.md
       - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
       - OKX: exchanges/okx/okx.md
-      - Tegro: exchanges/tegro/index.md
-      - Vertex: exchanges/vertex.md
-      - XRP Ledger: exchanges/xrpl.md
-    - AMM Connectors:
-      - AMM Connectors: dex-connectors/index.md
-      - Balancer: exchanges/balancer.md
-      - ETCSwap: exchanges/etcSwap.md
-      - Mad Meerkat: exchanges/mad-meerkat.md
-      - Curve: exchanges/curve.md
-      - Carbon: exchanges/carbon.md
-      - Jupiter: exchanges/jupiter.md
-      - OpenOcean: exchanges/openocean.md
-      - Osmosis: exchanges/osmosis.md
-      - Pancakeswap : exchanges/pancakeswap.md
-      - Pangolin: exchanges/pangolin.md
-      - Quickswap: exchanges/quickswap.md
       - Sushiswap: exchanges/sushiswap.md
+      - Tegro: exchanges/tegro/index.md
       - Tinyman: exchanges/tinyman.md
-      - Telos: exchanges/telos.md
       - TraderJoe: exchanges/traderjoe.md
       - Uniswap : exchanges/uniswap.md
+      - Vertex: exchanges/vertex.md
       - VVS: exchanges/vvs.md
-      - XSwap: exchanges/xswap.md
+      - XRP Ledger: exchanges/xrpl.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -305,13 +301,18 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Gateway AMM Middleware:
-      - Gateway AMM Middleware: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running Strategies and Scripts: gateway/running-dex-bots.md
+    - Gateway DEX Middleware:
+      - Gateway DEX Middleware: gateway/index.md
+      - Legacy (v2.2):
+        - Installation: gateway/legacy/installation.md
+        - Adding Connectors: gateway/legacy/adding-dex-connectors.md
+        - Sample Strategies: gateway/legacy/running-dex-bots.md
+      - New (v2.5+):
+        - Setup: gateway/setup.md
+        - Testing: gateway/testing/index.md
+        - Tokens: gateway/testing/tokens.md
+        - Architecture: coming-soon.md
+        - Schemas: coming-soon.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
@@ -341,7 +342,6 @@ nav:
       - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
       - Perp Connector QA Checklist:  developers/connectors/test-perp.md
       - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Building AMM Connectors: gateway/adding-dex-connectors.md
     - Building Strategies: 
       - Building Strategies: developers/strategies/index.md
       - Key Concepts: developers/strategies/key-concepts.md

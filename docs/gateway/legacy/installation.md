@@ -117,19 +117,21 @@ cd gateway
 
 Install Javascript dependencies:
 ```
-pnpm install
+yarn install
 ```
 
 Compile Typescript into Javascript:
 ```
-pnpm build
+yarn build
 ```
 
 Run Gateway
 
 ```
-pnpm start
+yarn start --passphrase=[PASSPHRASE]
 ```
+
+See below to generate certifications using the passphrase above.
 
 ### Generate certs
 

@@ -21,11 +21,9 @@ See [Chains](/chains) for a list of blockchains and their networks that Gateway 
 
 The [`hummingbot/connector/gateway`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/gateway) folder contains the sub-standards that are currently supported:
 
-  * amm
-  * amm_lp
-  * amm_perpetual
-  * clob_perp
-  * clob_spot
+  * SWAP
+  * AMM
+  * CLMM
 
 ## How to use Gateway
 
