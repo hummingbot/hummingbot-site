@@ -18,7 +18,7 @@
 - **CoinGecko**: <https://www.coingecko.com/en/coins/derive>
 - **Fees**: <https://docs.derive.xyz/reference/fees-1>
 - **Supported Countries**: <https://www.derive.xyz/terms-of-use#:~:text=restricted%20region>
-- **Derive referral link:** <https://docs.derive.xyz/docs/referral-rewards-program>
+- **Referral link:** <https://www.derive.xyz/invite/7SA0V>
 
 ## 🔑 About Rate Limits
 

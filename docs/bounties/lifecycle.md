@@ -36,7 +36,7 @@ The developer begins work on the bounty and is expected to submit a pull request
 
 ### 7. Foundation Monitors Progress
 
-We stay in constant contact with the contributor via comments in the bounty Github issue. Afterwards, the contributor is expected to deliver a pull request (PR) that fulfills the bounty. Note that we may re-assign the bounty if the assigned contributor is unresponsive or inactive for 7+ days, or if the submitted PR doesn’t address the acceptance criteria.
+We stay in constant contact with the contributor via comments in the bounty Github issue. Afterwards, the contributor is expected to deliver a pull request (PR) that fulfills the bounty. Note that we may re-assign the bounty if the assigned contributor is unresponsive or inactive for 7+ days, or if the submitted PR doesn't address the acceptance criteria.
 
 ### 8. Foundation Reviews PR
 
@@ -64,5 +64,7 @@ Afterwards, the code is merged to `master` and included in each monthly release.
 
 ### 12. Foundation Pays Developer
 
-Developers are paid only after their code has been merged into the `development` branch or Hummingbot fork (in the case of private bounties). Afterwards, Foundation will include the bounty payment in its monthly bounty payout process and mark the bounty as **Paid** in both [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
+Developers are paid only after their code has been merged into the `development` branch or Hummingbot fork (in the case of private bounties). For external bounties, developers are paid in the currency that was escrowed by the sponsor, which may be their native token, stablecoins, and/or HBOT. For Foundation bounties, developers are paid in HBOT tokens, with the USD amount converted based on the past 30-day average trading price.
+
+The Foundation will include the bounty payment in its monthly bounty payout process and mark the bounty as **Paid** in both [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) and [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing).
 

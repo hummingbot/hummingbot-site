@@ -7,11 +7,9 @@ hide:
   - feedback
 ---
 
-# How much volume does the Hummingbot community generate?
-
 <div class="custom-metric">
   <div class="metric-value">31.5B</div>
-  <div class="metric-label">Last 12M Reported Trade Volume</div>
+  <div class="metric-label">Volume traded by Hummingbot users in past 1 year</div>
 </div>
 
 ```vegalite
@@ -89,7 +87,7 @@ hide:
 
 ---
 
-# Our supporters and partners
+# Sponsored by Leading CEXs and DEXs
 
 <div class="exchange-grid">
   <div class="flex-item">
@@ -97,8 +95,16 @@ hide:
     <img src="/assets/logos/binance-light.png" alt="Binance" class="light-logo"/>
   </div>
   <div class="flex-item">
+    <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
+    <img src="/assets/logos/hyperliquid-light.png" alt="Hyperliquid" class="light-logo"/>
+  </div>
+  <div class="flex-item">
     <img src="/assets/logos/okx-dark.png" alt="OKX" class="dark-logo"/>
     <img src="/assets/logos/okx-light.png" alt="OKX" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
+    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/gate-dark.png" alt="Gate" class="dark-logo"/>
@@ -109,27 +115,34 @@ hide:
     <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-dark.png" alt="Hyperliquid" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-light.png" alt="Hyperliquid" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/dydx-dark.png" alt="dYdX" class="dark-logo"/>
-    <img src="/assets/logos/dydx-light.png" alt="dYdX" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
-    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/coinalpha-dark.png" alt="CoinAlpha" class="dark-logo"/>
-    <img src="/assets/logos/coinalpha-light.png" alt="CoinAlpha" class="light-logo"/>
+    <img src="/assets/logos/derive-dark.png" alt="CoinAlpha" class="dark-logo"/>
+    <img src="/assets/logos/derive-light.png" alt="CoinAlpha" class="light-logo"/>
   </div>
 </div>
 
-### See [Sponsors](/about/sponsors/) for more information on how to support Hummingbot Foundation.
+### See [Sponsors & Partners](/about/sponsors/) for how Hummingbot Foundation works with these institutions.
 
 ---
 
+# Build Powerful Strategies with the V2 Framework
+
+<div class="grid cards" markdown>
+
+-   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
+
+    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
+
+-   [![](/blog/using-hyperliquid-vaults-with-hummingbot/cover.png)](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
+
+    ### [Funding Rate Arbitrage on Hyperliquid](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
+
+-   [![](/blog/coding-a-custom-v2-controller/cover.webp)](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
+
+    ### [Coding a Liquidation Sniper Strategy](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
+
+</div>
+
+---
 # What can you do with Hummingbot?
 
 <div class="grid cards wide" markdown>
@@ -138,7 +151,7 @@ hide:
 
     ---
 
-    Design sophisticated market making, arbitrage, and directional strategies using our library of templates and script examples.
+    Design sophisticated market making, arbitrage, and directional strategies using the modular strategy framework
 
     [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
@@ -154,23 +167,23 @@ hide:
 
     ---
 
-    Backtest your strategies against historical data and deploy multiple instances with Dashboard, a new web-based user interface and control center.
+    Backtest your strategies against historical data and deploy multiple instances with Dashboard, a web-based command center for your bots.
 
-    [:octicons-arrow-right-24: Dashboard Docs](/dashboard)
+    [:octicons-arrow-right-24: Get Certified](/dashboard/)
 
--   :material-directions-fork:{ .lg .middle } __Fork, Customize, Innovate__
+-   :material-cash:{ .lg .middle } __Contribute and Earn__
 
     ---
 
-    Certification equips you with skills as a Hummingbot developer, empowering you to earn bounties and customize strategies for yourself and others.
+    Earn rewards by using and contributing to Hummingbot! Earn trading rewards, developer bounties, and other rewards for supporting the Discord community.
 
-    [:octicons-arrow-right-24: Get Certified](/certification/)
+    [:octicons-arrow-right-24: Earn Bounties](/community/rewards)
 
 </div>
 
 ---
 
-# Who uses Hummingbot?
+# Who runs Hummingbot?
 
 <div class="grid" markdown>
 
@@ -243,33 +256,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 ---
 
-# What strategies can you build with Hummingbot?
-
-### Learn how to design and code strategies like these in [Botcamp](https://www.botcamp.xyz/), the official training and membership program for the Hummingbot community.
-
-<div class="grid cards" markdown>
-
--   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
-
-    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
-
--   [![](/academy/using-hyperliquid-vaults-with-hummingbot/hlp.png)](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid//)
-
-    ### [Funding Rate Arbitrage on Hyperliquid](/academy/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
-
--   [![](/academy/coding-a-custom-v2-controller/cover.webp)](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
-
-    ### [Coding a Custom V2 Controller](/academy/coding-a-liquidation-sniper-v2-strategy-controller/)
-
-</div>
-
-<br />
-
-[Join Botcamp](https://www.botcamp.xyz/){ .md-button .md-button--primary .centered }
-
----
-
-# A global community of algo traders
+# A Global Community of Algo Traders
 
 ![](/assets/img/globe.png)
 

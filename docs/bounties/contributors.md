@@ -38,7 +38,7 @@ After submitting your PR, it will be tested by the Quality Assurance (QA) team. 
 
 ## Step 7: Get Paid
 
-Once your PR has been reviewed, tested, and approved, it will be merged into the `development` branch. After this happens, the bounty will be released, and you will receive your well-earned reward on a monthly basis! You can check the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the status of your bounty distribution.
+Once your PR has been reviewed, tested, and approved, it will be merged into the `development` branch. After this happens, the bounty will be released. For external bounties, you will be paid in the currency that was escrowed by the sponsor. For Foundation bounties, you will be paid in HBOT tokens based on the past 30-day average trading price. Payments are distributed on a monthly basis! You can check the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the status of your bounty distribution.
 
 ---
 

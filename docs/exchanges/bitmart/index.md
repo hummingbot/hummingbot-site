@@ -17,7 +17,7 @@
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bitmart>
 - **API Docs**: <https://www.bitmart.com/api-docs>
 - **Fees**: <https://www.bitmart.com/fee/en>
-- **Supported Countries**: Not available
+- **Referral link:** <https://www.bitmart.com/invite/Hummingbot/en>
 
 ## 🔑 How to Connect
 
