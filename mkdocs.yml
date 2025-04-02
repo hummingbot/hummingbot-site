@@ -221,7 +221,7 @@ nav:
     - Connectors:
       - Connectors: exchanges/index.md
       - CLOB Connectors: exchanges/clob.md
-      - DeFi Connectors: exchanges/defi.md
+      - Gateway Connectors: gateway/index.md
       - AscendEx : exchanges/ascendex/index.md
       - Balancer: exchanges/balancer.md
       - Binance: exchanges/binance/index.md
@@ -293,6 +293,21 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
+    - Gateway DEX Middleware:
+      - Gateway DEX Middleware: gateway/index.md
+      - New (v2.5+):
+        - New (v2.5+): gateway/new/index.md
+        - Installation & Setup: gateway/installation.md
+        - Connector Schemas: gateway/schemas.md
+        - Adding New Connectors: gateway/adding-connectors.md
+      - Legacy (v2.2):
+        - Legacy (v2.2): gateway/legacy/index.md
+        - Installation: gateway/legacy/installation.md
+        - Testing Gateway: gateway/legacy/testing/index.md
+        - Setting up Gateway: gateway/legacy/setup.md
+        - Working with Tokens: gateway/legacy/tokens/index.md
+        - Strategies & Scripts: gateway/legacy/running-dex-bots.md
+        - Adding Legacy Connectors: gateway/legacy/adding-dex-connectors.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
@@ -301,18 +316,6 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Gateway DEX Middleware:
-      - Gateway DEX Middleware: gateway/index.md
-      - Legacy (v2.2):
-        - Installation: gateway/legacy/installation.md
-        - Adding Connectors: gateway/legacy/adding-dex-connectors.md
-        - Sample Strategies: gateway/legacy/running-dex-bots.md
-      - New (v2.5+):
-        - Setup: gateway/setup.md
-        - Testing: gateway/testing/index.md
-        - Tokens: gateway/testing/tokens.md
-        - Architecture: coming-soon.md
-        - Schemas: coming-soon.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md

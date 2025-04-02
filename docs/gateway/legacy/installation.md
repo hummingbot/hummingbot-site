@@ -105,7 +105,7 @@ You can also install Gateway on a standalone basis and then link it to Hummingbo
 Install the following dependencies:
 
 - [NodeJS](https://nodejs.org/) (use 20.0.0 or higher)
-- [pnpm](https://pnpm.io/): run `npm install -g pnpm` after installing NodeJS
+- [Yarn](https://yarnpkg.com/): run `npm install -g yarn` after installing NodeJS
 
 ### Installation
 
@@ -188,7 +188,7 @@ Do you want to proceed? [Y/N] >>>
 Afterwards, start Gateway using the same **passphrase** that you used to generate the certs:
 
 ```
-$ pnpm start --passphrase=<passphrase>
+$ yarn start --passphrase=<passphrase>
 ```
 
 You should see Gateway running on the default port 15888:
@@ -202,4 +202,4 @@ Go back to your Hummingbot client or restart it if you have exited. In the upper
 
 [![](./gateway-status.png)](./gateway-status.png)
 
-After Gateway is running, see [Testing](testing.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
+After Gateway is running, see [Testing](testing/index.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
