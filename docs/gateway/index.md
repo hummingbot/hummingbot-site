@@ -11,6 +11,12 @@ Gateway manages interfacing with DEX connectors and exposes standard REST API en
 
 Essentially, Gateway is a light web server that enables Hummingbot to send and receive data from different blockchain protocols and provides an easier entry point for external devs to build connectors to other protocols.
 
+## New vs Legacy
+
+Starting in v2.3, Gateway is undergoing a large refactor, as approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). The refactor is intended to support a wider range of DEX architectures and simplify adding new connectors.
+
+For documentation on using new connectors, see [New (v2.5+)](/gateway/new/index.md). For documentation on using legacy connectors, see [Legacy](/legacy).
+
 ## Gateway Connector Maintenance
 
 Like other connectors, Gateway DEX connectors require ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as well as improvements to the Hummingbot connector standard.
