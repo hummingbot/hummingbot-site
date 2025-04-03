@@ -218,52 +218,50 @@ nav:
       - Perpetual Market Making: strategies/perpetual-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
-    - Connectors:
-      - Connectors: exchanges/index.md
-      - CLOB Connectors: exchanges/clob.md
-      - Gateway Connectors: gateway/index.md
+    - CLOB Connectors:
+      - CLOB Connectors: exchanges/index.md
+      - ⭐️ Bitmart: exchanges/bitmart/index.md
+      - ⭐️ Binance: exchanges/binance/index.md
+      - ⭐️ Derive: exchanges/derive/index.md
+      - ⭐️ dYdX: exchanges/dydx.md
+      - ⭐️ Gate.io: exchanges/gate-io/index.md
+      - ⭐️ HTX: exchanges/htx/index.md
+      - ⭐️ Hyperliquid: exchanges/hyperliquid.md
+      - ⭐️ Kucoin: exchanges/kucoin/index.md
+      - ⭐️ OKX: exchanges/okx/okx.md
+      - ⭐️ XRP Ledger: exchanges/xrpl.md
       - AscendEx : exchanges/ascendex/index.md
-      - Balancer: exchanges/balancer.md
-      - Binance: exchanges/binance/index.md
       - Bitstamp: exchanges/bitstamp/index.md
       - Bitrue: exchanges/bitrue.md
       - Bitget: exchanges/bitget-perpetual.md
       - BingX: exchanges/bing_x/index.md
-      - Bitmart: exchanges/bitmart/index.md
       - Bybit: exchanges/bybit.md
       - BTC Markets: exchanges/btc-markets.md
-      - Carbon: exchanges/carbon.md
-      - Curve: exchanges/curve.md
       - Coinbase: exchanges/coinbase.md
       - Cube: exchanges/cube/index.md
-      - Derive: exchanges/derive/index.md
       - Dexalot: exchanges/dexalot.md
-      - dYdX: exchanges/dydx.md
-      - ETCSwap: exchanges/etcSwap.md
-      - Gate.io: exchanges/gate-io/index.md
       - Hashkey: exchanges/hashkey/index.md
-      - Hyperliquid: exchanges/hyperliquid.md
-      - HTX: exchanges/htx/index.md
       - Kraken: exchanges/kraken/index.md
-      - Kucoin: exchanges/kucoin/index.md
       - Injective Helix: exchanges/injective.md
-      - Jupiter: exchanges/jupiter.md
-      - Osmosis: exchanges/osmosis.md
-      - Mad Meerkat: exchanges/mad-meerkat.md
-      - Pancakeswap : exchanges/pancakeswap.md
-      - Polkadex: exchanges/polkadex.md
-      - Quickswap: exchanges/quickswap.md
       - MEXC: exchanges/mexc/index.md
-      - NDAX: exchanges/ndax.md
-      - OKX: exchanges/okx/okx.md
-      - Sushiswap: exchanges/sushiswap.md
       - Tegro: exchanges/tegro/index.md
-      - Tinyman: exchanges/tinyman.md
-      - TraderJoe: exchanges/traderjoe.md
-      - Uniswap : exchanges/uniswap.md
       - Vertex: exchanges/vertex.md
-      - VVS: exchanges/vvs.md
-      - XRP Ledger: exchanges/xrpl.md
+    - Gateway Connectors:
+      - Gateway Connectors: exchanges/gateway/index.md
+      - Balancer: exchanges/gateway/balancer.md
+      - Carbon: exchanges/gateway/carbon.md
+      - Curve: exchanges/gateway/curve.md
+      - ETCSwap: exchanges/gateway/etcSwap.md
+      - Jupiter: exchanges/gateway/jupiter.md
+      - Osmosis: exchanges/gateway/osmosis.md
+      - Mad Meerkat: exchanges/gateway/mad-meerkat.md
+      - Pancakeswap: exchanges/gateway/pancakeswap.md
+      - Quickswap: exchanges/gateway/quickswap.md
+      - Sushiswap: exchanges/gateway/sushiswap.md
+      - Tinyman: exchanges/gateway/tinyman.md
+      - TraderJoe: exchanges/gateway/traderjoe.md
+      - Uniswap : exchanges/gateway/uniswap.md
+      - VVS: exchanges/gateway/vvs.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -296,16 +294,15 @@ nav:
     - Gateway DEX Middleware:
       - Gateway DEX Middleware: gateway/index.md
       - New (v2.5+):
-        - New (v2.5+): gateway/new/index.md
-        - Installation & Setup: gateway/installation.md
-        - Connector Schemas: gateway/schemas.md
-        - Adding New Connectors: gateway/adding-connectors.md
+        - Schemas: gateway/schemas.md
+        - Connector Walkthrough: gateway/walkthrough.md
+        - Installation & Setup ↗️: https://github.com/hummingbot/gateway/tree/core-2.5
       - Legacy (v2.2):
-        - Legacy (v2.2): gateway/legacy/index.md
         - Installation: gateway/legacy/installation.md
         - Testing Gateway: gateway/legacy/testing/index.md
         - Setting up Gateway: gateway/legacy/setup.md
         - Working with Tokens: gateway/legacy/tokens/index.md
+        - Supported Chains: gateway/legacy/chains/index.md
         - Strategies & Scripts: gateway/legacy/running-dex-bots.md
         - Adding Legacy Connectors: gateway/legacy/adding-dex-connectors.md
     - Hummingbot Dashboard:

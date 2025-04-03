@@ -1,11 +1,26 @@
-The official Github repository for Gateway is <https://github.com/hummingbot/gateway>. Gateway is released monthly with the same cadence as the [Hummingbot client](https://github.com/hummingbot/hummingbot), and it follows the same conventions for releases, contributions, etc.
+## New vs Legacy
+
+In the v2.3 release, Gateway started to undergo a large refactor, as approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). During this process, only certain reference connectors will be upgraded to the new architecture, while bounties funded by available Connector Pots will fund developer bounties to migrate other connectors.
+
+To enable users to use legacy connectors during the refactor, the Hummingbot `fix/gateway-2.2` branch is compatible with Gateway v2.2.0, the last version that contains all the legacy connectors. This branch will be kept updated with the Hummingbot `development` while the refactor is in progress.
+
+Hummingbot `fix/gateway-2.2` branch:
+
+* Github: <https://github.com/hummingbot/hummingbot/tree/fix/gateway-2.2>
+* DockerHub: <https://hub.docker.com/r/hummingbot/hummingbot/tags?name=gateway-2.2>
+
+Gateway `v2.2.0` branch:
+
+* Github: <https://github.com/hummingbot/gateway/tree/v2.2.0/src>
+* DockerHub: <https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.2.0>
+
+The instructions below use these versions.
 
 ## Install with Docker 
 
 For most users, this is the recommended install method for Hummingbot and Gateway
 
 [![](./gateway.gif)](./gateway.gif)
-
 
 Navigate to the Hummingbot root folder in your terminal or if you haven't cloned the Hummingbot repo yet run the command below
 
