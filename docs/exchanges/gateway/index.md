@@ -25,7 +25,9 @@ Like other connectors, Gateway DEX connectors require ongoing maintenance: fixin
 
 Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](/bounties) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
 
-Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
+Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which [blockchains and networks](/gateway/chains) that Gateway supports.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
 ## Adding New Gateway Connectors
 
@@ -35,21 +37,21 @@ New Gateway connectors may be contributed by community members via [New Connecto
 
 Here are the Gateway connectors in the codebase for the current [Epoch](/governance/epochs/).
 
-| Exchange | Chain Type | Legacy | New | Connector Types |
+| Exchange | Chain Type | Legacy | New | Connector Types | Guide |
 |----------|-------|--------|-----|------|
-| [Jupiter](./jupiter.md) | `solana` | | ✓ | `swap` |
-| [Meteora](./meteora.md) | `solana` | | ✓ | `clmm` |
-| [Raydium](./raydium.md) | `solana` | | ✓ | `clmm`, `amm` |
-| [Uniswap](./uniswap.md) | `ethereum` | | ✓ | `amm`, `amm_lp` |
-| [Pancakeswap](./pancakeswap.md) | `binance-smart-chain` | ✓ |  | `amm`, `amm_lp` |
-| [Balancer](./balancer.md) | `ethereum` | ✓ |  | `amm` |
-| [Carbon](./carbon.md) | `ethereum` | ✓ |  | `amm` |
-| [Curve](./curve.md) | `ethereum` | ✓ |  | `amm` |
-| [ETCSwap](./etcSwap.md) | `ethereum` | ✓ |  | `amm`, `amm_lp` |
-| [Mad Meerkat](./mad-meerkat.md) | `cronos` | ✓ |  | `amm` |
-| [Osmosis](./osmosis.md) | `osmosis` | ✓ |  | `amm` |
-| [Quickswap](./quickswap.md) | `polygon` | ✓ |  | `amm` |
-| [Sushiswap](./sushiswap.md) | `ethereum` | ✓ |  | `amm` |
-| [Tinyman](./tinyman.md) | `algorand` | ✓ |  | `amm` |
-| [TraderJoe](./traderjoe.md) | `avalanche` | ✓ |  | `amm` |
-| [VVS](./vvs.md) | `cronos` | ✓ |  | `amm` |
+| [Jupiter](./jupiter.md) | `solana` | | ✓ | `swap` | |
+| [Meteora](./meteora.md) | `solana` | | ✓ | `clmm` | |
+| [Raydium](./raydium.md) | `solana` | | ✓ | `clmm`, `amm` | |
+| [Uniswap](./uniswap.md) | `ethereum` | | ✓ | `amm`, `amm_lp` | |
+| [Pancakeswap](./pancakeswap.md) | `binance-smart-chain` | ✓ |  | `amm`, `amm_lp` | |
+| [Balancer](./balancer.md) | `ethereum` | ✓ |  | `amm` | |
+| [Carbon](./carbon.md) | `ethereum` | ✓ |  | `amm` | |
+| [Curve](./curve.md) | `ethereum` | ✓ |  | `amm` | |
+| [ETCSwap](./etcSwap.md) | `ethereum` | ✓ |  | `amm`, `amm_lp` | |
+| [Mad Meerkat](./mad-meerkat.md) | `cronos` | ✓ |  | `amm` | |
+| [Osmosis](./osmosis.md) | `osmosis` | ✓ |  | `amm` | [Guide](/blog/using-osmosis-with-hummingbot/) |
+| [Quickswap](./quickswap.md) | `polygon` | ✓ |  | `amm` | |
+| [Sushiswap](./sushiswap.md) | `ethereum` | ✓ |  | `amm` | |
+| [Tinyman](./tinyman.md) | `algorand` | ✓ |  | `amm` | |
+| [TraderJoe](./traderjoe.md) | `avalanche` | ✓ |  | `amm` | |
+| [VVS](./vvs.md) | `cronos` | ✓ |  | `amm` | |

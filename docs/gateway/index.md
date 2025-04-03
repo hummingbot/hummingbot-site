@@ -50,17 +50,26 @@ Each connector is a folder in [`src/connectors`](https://github.com/hummingbot/g
 
 To enable users to use legacy connectors during the refactor, the Hummingbot `fix/gateway-2.2` branch is compatible with Gateway v2.2.0, the last version that contains all the legacy connectors. This branch will be kept updated with the Hummingbot `development` branch while the refactor is in progress.
 
-Legacy Gateway supports a wide range of blockchain networks including Ethereum, Algorand, Avalanche, BNB Chain, Cosmos, Cronos, Ethereum Classic, Osmosis, Polygon, and Solana. Each chain connector integrates a Layer 1 blockchain and their networks into Gateway, enabling wallet access, node RPC interactions, and other support needed by DEXs.
-
 Follow the links below to install, configure and use Gateway Legacy:
 
 - [Installation](legacy/installation.md): How to install Gateway from source or via Docker, including detailed instructions for Docker Compose setup
 - [Testing with Postman](legacy/testing/index.md): How to test Gateway API endpoints on a standalone basis using Postman and other tools
-- [Supported Chains](legacy/chains/index.md): Overview of all blockchain networks supported by Gateway Legacy
 - [Using Gateway with Hummingbot](legacy/setup.md): How to send commands to Gateway from Hummingbot
 - [Working with Tokens](legacy/tokens/index.md): Adding tokens, approving tokens and getting testnet tokens
 - [Running DEX Bots](legacy/running-dex-bots.md): How to run the `amm-arb` strategy and scripts that use Gateway DEX connectors
 - [Adding Connectors](legacy/adding-dex-connectors.md): Developer guide for contributing new DEX connectors into the open source Gateway codebase
+
+## Supported Chains
+
+Each DEX utilizes a chain connector that integrates a Layer 1 blockchain and their networks into Gateway, enabling wallet access, node RPC interactions, and other support needed by tje DEX.
+
+Chain support in Gateway is determined by the decentralized exchanges (DEX) that HBOT holders vote to be included in the Hummingbot codebase in quarterly [Exchange Connector Polls](/governance/polls) for each [Epoch](/governance/epochs). The main chains and networks where each DEX is deployed will be supported in subsequent releases of Hummingbot and Gateway.
+
+Legacy Gateway (v2.2 and before) supported a wide range of chains and their networks including Ethereum, Algorand, Avalanche, BNB Chain, Cosmos, Cronos, Ethereum Classic, Osmosis, Polygon, and Solana. However, its inflexible route architecture tight coupling with the Hummingbot client made it difficult to support more types of trading interactions.
+
+The new version of Gateway (v2.5+) is more flexible and chain-agnostic. Initially, it supports only a few base chain architectures along with any network that is compatible with them, starting with networks based on the Solana and Ethereum-based virtual machines.
+
+See [Supported Chains](chains/index.md) the list of chains and their DEXs supported by Gateway.
 
 ## History
 
@@ -68,4 +77,3 @@ See the following blog posts from Hummingbot co-founder and original CTO Martin 
 
 * [Hummingbot Gateway V2 Architecture - Part 1](/blog/hummingbot-gateway-architecture---part-1/)
 * [Hummingbot Gateway V2 Architecture - Part 2](/blog/hummingbot-gateway-architecture---part-2/)
-
