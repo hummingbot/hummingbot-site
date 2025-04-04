@@ -246,8 +246,8 @@ nav:
       - MEXC: exchanges/mexc/index.md
       - Tegro: exchanges/tegro/index.md
       - Vertex: exchanges/vertex.md
-    - Gateway Connectors:
-      - Gateway Connectors: exchanges/gateway/index.md
+    - Gateway DEX Connectors:
+      - Gateway DEX Connectors: exchanges/gateway/index.md
       - Balancer: exchanges/gateway/balancer.md
       - Carbon: exchanges/gateway/carbon.md
       - Curve: exchanges/gateway/curve.md
@@ -293,11 +293,13 @@ nav:
         - Telegram Integration: global-configs/telegram.md
     - Gateway DEX Middleware:
       - Gateway DEX Middleware: gateway/index.md
-      - New (v2.5+):
-        - Schemas: gateway/schemas.md
-        - Connector Walkthrough: gateway/walkthrough.md
+      - Gateway New (v2.5+):
+        - Gateway New (v2.5+): gateway/new/index.md
         - Installation & Setup ↗️: https://github.com/hummingbot/gateway/tree/core-2.5
-      - Legacy (v2.2):
+        - Connector Schemas: gateway/schemas.md
+        - Connector Walkthrough: gateway/walkthrough.md
+      - Gateway Legacy (v2.2):
+        - Gateway Legacy (v2.2): gateway/legacy/index.md
         - Installation: gateway/legacy/installation.md
         - Testing Gateway: gateway/legacy/testing/index.md
         - Setting up Gateway: gateway/legacy/setup.md
