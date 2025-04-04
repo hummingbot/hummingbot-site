@@ -1,8 +1,11 @@
 ## What is Gateway?
 
-Hummingbot Gateway is open source API middleware that helps the Hummingbot client to connect to decentralized exchanges (DEX) on various blockchain networks. Gateway manages interfacing with DEX connectors and exposes standard REST API endpoints for trading and liquidity-related functionality on these DEXs.
+Hummingbot Gateway is open source API middleware that helps the Hummingbot client to connect to decentralized exchanges (DEX) on various blockchain networks. 
+
+A companion codebase to the Hummingbot, Gateway manages interfacing with DEX connectors and exposes standard REST API endpoints for trading and liquidity-related functionality on these DEXs, enabling Hummingbot to run strategies that operate across multiple CEX and DEXs.
 
 The [Gateway code repo](https://github.com/hummingbot/gateway) is open sourced under the Apache 2.0 license and updated using the same [release cycle](/release-notes) as the main Hummingbot client codebase.
+
 
 ## New vs Legacy
 

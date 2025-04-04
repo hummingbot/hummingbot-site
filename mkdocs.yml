@@ -248,11 +248,13 @@ nav:
       - Vertex: exchanges/vertex.md
     - Gateway DEX Connectors:
       - Gateway DEX Connectors: exchanges/gateway/index.md
+      - 🔼 Jupiter: exchanges/gateway/jupiter.md
+      - 🔼 Meteora: exchanges/gateway/meteora.md
+      - 🔼 Raydium: exchanges/gateway/raydium.md
       - Balancer: exchanges/gateway/balancer.md
       - Carbon: exchanges/gateway/carbon.md
       - Curve: exchanges/gateway/curve.md
       - ETCSwap: exchanges/gateway/etcSwap.md
-      - Jupiter: exchanges/gateway/jupiter.md
       - Osmosis: exchanges/gateway/osmosis.md
       - Mad Meerkat: exchanges/gateway/mad-meerkat.md
       - Pancakeswap: exchanges/gateway/pancakeswap.md
@@ -295,9 +297,9 @@ nav:
       - Gateway DEX Middleware: gateway/index.md
       - Gateway New (v2.5+):
         - Gateway New (v2.5+): gateway/new/index.md
-        - Installation & Setup ↗️: https://github.com/hummingbot/gateway/tree/core-2.5
-        - Connector Schemas: gateway/schemas.md
-        - Connector Walkthrough: gateway/walkthrough.md
+        - Installation & Setup: gateway/installation.md
+        - Configuration: gateway/configuration.md
+        - Schemas: gateway/schemas.md
       - Gateway Legacy (v2.2):
         - Gateway Legacy (v2.2): gateway/legacy/index.md
         - Installation: gateway/legacy/installation.md
@@ -308,7 +310,7 @@ nav:
         - Adding Legacy Connectors: gateway/legacy/adding-dex-connectors.md
       - Supported Chains: 
         - Supported Chains: gateway/chains/index.md
-        - Solana: gateway/chains/solana.md
+        - 🔼 Solana: gateway/chains/solana.md
         - Ethereum: gateway/chains/ethereum.md
         - Algorand: gateway/chains/algorand.md
         - Avalanche: gateway/chains/avalanche.md
