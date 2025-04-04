@@ -39,7 +39,7 @@ See [Building Connectors](/developers/connectors) for more information.
 
 ## Current CLOB Connectors
 
-Here are the CLOB connectors in the codebase for the current [Epoch](/governance/epochs/). Note that the Foundation prioritizes fixes for connectors from exchanges that are [sponsors or partners](/sponsors), so they tend to be more reliable and better maintained.
+Here are the CLOB connectors in the codebase for the current [Epoch](/governance/epochs/). Note that the Foundation prioritizes fixes for connectors from exchanges that are [sponsors or partners](/about/sponsors), so they tend to be more reliable and better maintained.
 
 | Exchange | Foundation Partner | Spot | Perp | Connector Guide |
 |----------|-------------------|------|------|----------------|

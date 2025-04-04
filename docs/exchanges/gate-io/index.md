@@ -1,5 +1,5 @@
-!!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Gate.io. When you use our software to trade on Gate.io, a custom API header tells Gate.io that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Gate.io referral link](https://www.gate.io/referral/invite/HBOTGATE_0_103) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+!!! tip "Foundation Partner"
+    Gate.io is an [exchange partner](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Gate.io, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Gate.io referral link](https://www.gate.io/referral/invite/HBOTGATE_0_103) and enter that account's API keys into Hummingbot and run bots! Thanks for your help! 🙏
 
 
 ## 🛠 Connector Info
