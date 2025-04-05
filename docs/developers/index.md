@@ -1,7 +1,6 @@
 This section is for developers looking to contribute to Hummingbot or extend its capabilities:
 
 * [Building CLOB Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
-* [Building AMM Connectors](/gateway/adding-dex-connectors): Build decentralized exchange (DEX) connectors
 * [Building Strategies](/developers/strategies): Create and customize your own Hummingbot strategies
 * [Adding Commands](/developers/commands): Create your own Hummingbot commands
 * [Using the Debug Console](/developers/debug): Inspect and modify Hummingbot's state at runtime

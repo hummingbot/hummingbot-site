@@ -55,7 +55,7 @@ optional arguments:
 
 ## Listing DEX connectors
 
-Running the `gateway list` command will list all available Gateway DEX connectors, the blockchains where they are supported, and their [Connector Tier](/exchanges/#connector-tiers), which determines the level of maintenance effort allocated to the connector.
+Running the `gateway list` command will list all available Gateway DEX connectors and the blockchains where they are supported.
 
 ```python
 >>> gateway list
@@ -201,4 +201,4 @@ The config has been updated.
 
 Since token symbols are not unique and may have duplicates on each network, it's very important to understand how symbols map to addresses for each chain/network. Also, you may also need to approve tokens before you can trade them.
 
-See [Working with Tokens](tokens.md) for more details.
+See [Working with Tokens](./tokens/index.md) for more details.

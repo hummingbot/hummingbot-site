@@ -1,5 +1,6 @@
-!!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with Binance. When you use our software to trade on Binance, a custom API header tells Binance that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Binance referral link](https://accounts.binance.com/register?ref=CBWO4LU6) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+!!! tip "Foundation Partner"
+    Binance is an [exchange partner](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Binance, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Binance referral link](https://accounts.binance.com/register?ref=CBWO4LU6) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+
 
 ## 🛠 Connector Info
 

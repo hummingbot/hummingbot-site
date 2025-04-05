@@ -41,8 +41,8 @@ These official HBOT markets enable trading and liquidity provision for the HBOT 
 
 | Exchange | Type | Pair | Link |
 |----------|------|------|------|
-| [Uniswap](/exchanges/uniswap) | V2 AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
-| [Uniswap](/exchanges/uniswap) | V3 AMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
+| [Uniswap](/exchanges/gateway/uniswap) | V2 AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
+| [Uniswap](/exchanges/gateway/uniswap) | V3 AMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
 | [Bitrue](/exchanges/bitrue) | Spot CEX | HBOT/USDT | <https://www.bitrue.com/trade/hbot_usdt> |
 
 ## Voting with HBOT

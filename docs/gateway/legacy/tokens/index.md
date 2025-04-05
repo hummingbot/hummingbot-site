@@ -27,7 +27,7 @@ identify the corresponding address.
 
 ## Where are lists stored?
 
-Starting in [v1.17.0](../release-notes/1.17.0.md), Token Lists for each chain are stored in the `/conf/lists` directory of the root Gateway directory. 
+Starting in [v1.17.0](/release-notes/1.17.0.md), Token Lists for each chain are stored in the `/conf/lists` directory of the root Gateway directory. 
 
 For the default Docker installation below, the lists are located in the `lists` folder:
 
@@ -44,7 +44,7 @@ hummingbot_gateway_compose
 
 The folder location and list file are defined in each blockchain's config file (i.e. `/conf/ethereum.yml`). It also defines a `tokenListType` (`FILE` or `URL`) and `tokenListSource` (path to the designated file or URL) for each network. Note that `URL`-based token lists may impact client latency, compared to accessing the Token List via `FILE`. 
 
-Users are free to change this setting by configuring the `tokenListType` and `tokenListSource` parameters for each network - see [Updating config parameters](/gateway/setup/#updating-config-parameters) for more information.
+Users are free to change this setting by configuring the `tokenListType` and `tokenListSource` parameters for each network - see [Updating config parameters](../setup.md) for more information.
 
 
 ## Adding tokens
@@ -80,11 +80,11 @@ Here is an example:
 
 Alternatively, you can call the `/evm/approve` endpoint directly from Postman. Afterwards, you can paste the `hash` value in the response in the `txHash` parameter in `network/poll` endpoint to check when the transaction is confirmed.
 
-[![](./postman-approve.png)](./postman-approve.png)
+[![](../testing/postman-approve.png)](../testing/postman-approve.png)
 
 After it's confirmed, you can use the `/evm/allowances` endpoint to check whether the approval was successful:
 
-[![](./postman-allowances.png)](./postman-allowances.png)
+[![](../testing/postman-allowances.png)](../testing/postman-allowances.png)
 
 
 ## Displaying tokens in `balance`
@@ -105,7 +105,7 @@ A testnet faucet is a tool that allows developers and users to obtain testnet ET
 
 Using an Ethereum testnet faucet is a simple process that involves the following steps:
 
-1. Visit a faucet website for your [chain](/chains). For example, see [Ethereum](/chains/ethereum) for a list of testnet faucets.
+1. Visit a faucet website for your [chain](../chains/index.md). For example, see [Ethereum](../chains/ethereum) for a list of testnet faucets.
 
 2. Enter your testnet wallet address where indicated.
 
