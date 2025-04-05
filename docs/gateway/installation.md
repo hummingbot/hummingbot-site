@@ -42,7 +42,7 @@ git clone https://github.com/hummingbot/gateway.git
 cd gateway
 ```
 
-2. Install Javascript dependencies and build
+1. Install and build Javascript dependencies defined in `package.json`:
 ```bash
 pnpm install
 pnpm build
@@ -78,7 +78,7 @@ Take note of the **certs_path** where they are stored. This is also stored as `c
 
 The `gateway-setup.sh` script, located in the root Gateway directory, performs the following actions:
 
-* Copies the default Gateway configuration files from `/src/templates` to `/conf/` folder
+* Copies the default Gateway [configuration](./configuration.md) files from `/src/templates` to `/conf/` folder
 * Copies the Hummingbot certificates into the `/certs/` folder.
 
 Run the script:
