@@ -81,17 +81,17 @@ After all containers have started, access the Dashboard at <http://localhost:850
 
 Once you've installed Dashboard, check out the [Hummingbot Dashboard Quickstart](../blog/posts/quickstart-dashboard/index.md) guide, or the links below with a short explanation of each page (also in the sidebar).
 
-- [Adding Credentials:](credentials.md)
+- [Adding Credentials:](../dashboard/credentials.md)
 
-- [Viewing Portfolio:](portfolio.md)
+- [Viewing Portfolio:](../dashboard/portfolio.md)
 
-- [Configuring Strategies:](config.md)
+- [Configuring Strategies:](../dashboard/config.md)
 
-- [Backtesting Strategies:](backtest.md)
+- [Backtesting Strategies:](../dashboard/backtest.md)
 
-- [Deploying Instances:](deploy.md)
+- [Deploying Instances:](../dashboard/deploy.md)
 
-- [Managing Instances:](instances.md)    
+- [Managing Instances:](../dashboard/instances.md)    
 
 
 ## Standalone Hummingbot
