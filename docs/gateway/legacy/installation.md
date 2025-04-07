@@ -32,7 +32,9 @@ cd hummingbot
 Next, modify the [`docker-compose.yml`](https://github.com/hummingbot/hummingbot/blob/master/docker-compose.yml) file in the hummingbot root folder using a text editor or IDE like [VSCode](https://code.visualstudio.com/).
 
 Make the following edits:
+
 - Update the Docker image tags for `hummingbot` and `gateway`.
+
 - Uncomment the Gateway section.
 
 ```yaml
@@ -69,7 +71,7 @@ docker attach hummingbot
 
 ### Generate Gateway certificates
 
-In the attached Hummingbot terminal, enter your desired password then run the following command to generate Gateway certificates. You’ll be prompted for a passphrase (it can match your Hummingbot password - or not).
+Within the Hummingbot terminal, set your password. Then, issue the command below to generate the Gateway certificates. You will be prompted for a passphrase for the certificate's private key. Note that this passphrase can be, but does not have to be, identical to your Hummingbot password.
 
 ```bash
 gateway generate-certs
@@ -95,7 +97,7 @@ Edit `docker-compose.yml` again to ensure the passphrase matches your previously
 
 ```yaml
 environment:
-  - GATEWAY_PASSPHRASE=<your_passphrase>
+  - GATEWAY_PASSPHRASE=a # Replace "a" with the passphrase that you set with the `gateway generate-certs` command
 ```
 
 Save your changes.

@@ -1,6 +1,5 @@
 /exchanges/spot/*       /exchanges/:splat               301
 /gateway/exchanges/*    /exchanges/:splat               301
-/gateway/chains/*       /chains/:splat                  301
 /hbot                   /about/hbot                     301
 /news                   /blog                           301
 /installation           /installation/docker            301
