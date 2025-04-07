@@ -308,18 +308,18 @@ nav:
         - Working with Tokens: gateway/legacy/tokens/index.md
         - Strategies & Scripts: gateway/legacy/running-dex-bots.md
         - Adding Legacy Connectors: gateway/legacy/adding-dex-connectors.md
-      - Supported Chains: 
-        - Supported Chains: gateway/chains/index.md
-        - 🔼 Solana: gateway/chains/solana.md
-        - Ethereum: gateway/chains/ethereum.md
-        - Algorand: gateway/chains/algorand.md
-        - Avalanche: gateway/chains/avalanche.md
-        - BNB Chain: gateway/chains/bnb-chain.md
-        - Cosmos: gateway/chains/cosmos.md
-        - Cronos: gateway/chains/cronos.md
-        - Ethereum Classic: gateway/chains/ethereum-classic.md
-        - Osmosis: gateway/chains/osmosis-chain.md
-        - Polygon: gateway/chains/polygon.md
+      - Supported Chains:
+        - Supported Chains: docs/gateway/chains/index.md
+        - 🔼 Solana: docs/gateway/chains/solana.md
+        - Ethereum: docs/gateway/chains/ethereum.md
+        - Algorand: docs/gateway/chains/algorand.md
+        - Avalanche: docs/gateway/chains/avalanche.md
+        - BNB Chain: docs/gateway/chains/bnb-chain.md
+        - Cosmos: docs/gateway/chains/cosmos.md
+        - Cronos: docs/gateway/chains/cronos.md
+        - Ethereum Classic: docs/gateway/chains/ethereum-classic.md
+        - Osmosis: docs/gateway/chains/osmosis-chain.md
+        - Polygon: docs/gateway/chains/polygon.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md

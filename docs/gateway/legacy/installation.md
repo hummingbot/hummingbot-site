@@ -41,7 +41,7 @@ Make the following edits:
 
     gateway:
     container_name: "gateway"
-    image: hummingbot/gateway:latest    
+    image: hummingbot/gateway:version-2.2.0    
     ports:
       - "15888:15888"
       - "8080:8080"
@@ -245,4 +245,4 @@ Go back to your Hummingbot client or restart it if you have exited. In the upper
 
 [![](./gateway-status.png)](./gateway-status.png)
 
-After Gateway is running, see [Testing](testing/index.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
+After Gateway is running, see [Testing Gateway](testing/index.md) to understand how to test the endpoints on a standalone basis before using it with Hummingbot.
