@@ -2,6 +2,10 @@
 
 `polygon` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Polygon blockchain.
 
+!!! note
+    This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
+
+
 ## 📁 Connector Info
 
 * Folder: [/gateway/src/chains/polygon](https://github.com/hummingbot/gateway/tree/main/src/chains/polygon)

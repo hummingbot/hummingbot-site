@@ -2,6 +2,174 @@ The Hummingbot Foundation is an experiment in creating a self-sustainable open s
 
 We iterate to improve upon this distribution process via **Epochs**. Each Epoch is a quarterly period that are basically long agile sprints, after which the Foundation and the community may propose changes for the next Epoch.
 
+## Epoch 11 (Q1 2025)
+
+**Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)
+
+Starting after epoch 7, Polls divide a fixed pool of HBOT between the connectors based on their pro-rata voting share. The Foundation assigns maintenance bounties to community developers for each connector using these amounts.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange and chain.
+
+### CLOB Spot Connectors
+
+**Poll**: [HGP-65](https://snapshot.box/#/s:hbot.eth/proposal/0xecbc89ab3868885c89a804b30579641850dda166b62e206d2eab009fd75e0bec)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | XRPL            | 309,091            |
+| 2    | Binance         | 248,485            | 
+| 3    | Gate.io         | 221,212            |
+| 4    | Kucoin          | 221,212            |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | XRPL, Binance, Gate.io, Kucoin, MEXC, Coinbase, Kraken, Ascend_ex, Injective v2, Bitrue, OKX, Bybit, Dexalot, Bitmart, Bitstamp, HTX, Cube, Vertex, NDAX, BTC Markets, Hashkey |
+| ❌ | Polkadex |
+
+### CLOB Perp Connectors
+
+**Poll**: [HGP-66](https://snapshot.box/#/s:hbot.eth/proposal/0x8c8e11817a26221b2f28b929f21e356a12d9fa07fa5c65164c9db901ea4d419a)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Kucoin Perpetual     | 252,485             |
+| 2    | Binance Perpetual    | 250,497             |
+| 3    | OKX Perpetual        | 250,497             |
+| 4    | Bybit Perpetual      | 246,521             |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Kucoin Perpetual, Binance Perpetual, OKX Perpetual, Bybit Perpetual, dYdX Perpetual, Hyperliquid Perpetual, Gate.io Perpetual, Bitget Perpetual, Injective Helix Perpetual, Hashkey Perpetual |
+| ❌ |  |
+
+### AMM Connector Poll
+
+**Poll**: [HGP-67](https://snapshot.box/#/s:hbot.eth/proposal/0xcc516b142e39731780916d4e234ff090cb84995899c2ae66c359ebe6bc4550ba)
+
+| Rank | Chain           | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Uniswap         | 292,746             |
+| 2    | Pancakeswap     | 285,449             |
+| 3    | Balancer        | 210,903             |
+| 4    | Curve           | 210,903             |
+
+| Inclusion Threshold Pass/Fail  | Chain Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Uniswap, Pancakeswap, Balancer, Curve, Sushiswap, Trader Joe, Quickswap, Mad Meerkat, Tinyman, VVS, Carbon, OpenOcean, Pangolin, XSwap  |
+| ❌ |  |
+
+## Epoch 10 (Q4 2024)
+
+**Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)
+
+Starting after epoch 7, Polls divide a fixed pool of HBOT between the connectors based on their pro-rata voting share. The Foundation assigns maintenance bounties to community developers for each connector using these amounts.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange and chain.
+
+### CLOB Spot Connectors
+
+**Poll**: [HGP-61](https://snapshot.box/#/s:hbot.eth/proposal/0x72aba49ec0d940d8cbdfb69a2e4f8408af2b9f1b0173526c523269755342d19d)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Coinbase        | 378,006             |
+| 2    | Bybit           | 254,295             | 
+| 3    | XRPL            | 233,676             |
+| 4    | Binance         | 134,023             |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Coinbase, Bybit, XRPL, Binance, OKX, Gate.io, Polkadex, Bitrue, MEXC, Injective, Ascendex, HTX, Kucoin, BitMart, NDAX, Vertex, BTC Markets, Kraken, Dexalot, Bitstamp, Cube |
+| ❌ | Bitfinex, FoxBit |
+
+### CLOB Perp Connectors
+
+**Poll**: [HGP-62](https://snapshot.box/#/s:hbot.eth/proposal/0x14528caecc4dc36e3a89c1a143b10cd97b2467b1a606e735deb5986a22648238)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Hyperliquid Perpetual     | 358,126             |
+| 2    | Bybit Perpetual           | 330,578             |
+| 3    | Binance Perpetual         | 159,779             |
+| 4    | dYdX Perpetual            | 151,518             |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Hyperliquid Perpetual, Bybit Perpetual, Binance Perpetual, dYdX Perpetual, OKX Perpetual, Injective Perpetual, Gate.io Perpetual, Bitget Perpetual, Kucoin Perpetual, Hashkey Perpetual |
+| ❌ |  |
+
+### AMM Connector Poll
+
+**Poll**: [HGP-63](https://snapshot.box/#/s:hbot.eth/proposal/0x1fb57fd581f39eed62b82646cfe7e1b45c2f3fc8adf7cee23729703f3252401e)
+
+| Rank | Chain           | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Uniswap         | 402,145             |
+| 2    | Curve           | 321,716             |
+| 3    | Pancakeswap     | 171,583             |
+| 4    | Tinyman         | 104,556             |
+
+| Inclusion Threshold Pass/Fail  | Chain Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Uniswap, Curve, Pancakeswap, Tinyman, Pangolin, Traderjoe, Mad Meerkat, VVS, Balancer, Sushiswap, Quickswap, OpenOcean, XSwap, Carbon, Plenty  |
+| ❌ | Plenty |
+
+## Epoch 9 (Q3 2024)
+
+**Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)
+
+Starting after epoch 7, Polls divide a fixed pool of HBOT between the connectors based on their pro-rata voting share. The Foundation assigns maintenance bounties to community developers for each connector using these amounts.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange and chain.
+
+### CEX Connectors
+
+**Poll**: [HGP-58](https://snapshot.box/#/s:hbot.eth/proposal/0x913ce9d9af0f1b5d510c1740099424cb60f612b52b05f4712f141d6eb73091b7)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Binance         | 230,161             |
+| 2    | OKX             | 272,943             | 
+| 3    | Kucoin          | 335,930             |
+| 4    | Coinbase        | 160,966             |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Binance, OKX, Kucoin, Coinbase, FoxBit, Kraken, Ascendex, Gate.io, Bitrue, MEXC, Bybit, HTX, Cube Exchange, BitMart, BTC Markets, Bitget, NDAX, Bitfinex, Phemex |
+| ❌ | Bit.com, HitBTC |
+
+### DEX Connectors
+
+**Poll**: [HGP-59](https://snapshot.box/#/s:hbot.eth/proposal/0x115de9e634de1385d3dae0efe2a52e2075fa7a72ef03cf976a49cf65c9076f9d)
+
+| Rank | Exchange        | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | Hyperliquid     | 272,401             |
+| 2    | XRP Ledger      | 254,480             |
+| 3    | Vega            | 245,675             |
+| 4    | Balancer        | 232,975              |
+
+| Inclusion Threshold Pass/Fail  | Exchange Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | Hyperliquid, XRP Ledger, Vega, Balancer, Uniswap, dYdX, Dexalot, Trader Joe, Pancakeswap, Polkadex, Curve, Osmosis, Injective Helix, Tinyman, Mad Meerkat, OpenOcean, Pangolin, Plenty, Ref, Vertex, VVS, XSwap, Quickswap, Sushiswap, Carbon, Perpetual Protocol |
+| ❌ |  |
+
+### Chain Connectors
+
+**Poll**: [HGP-60](https://snapshot.box/#/s:hbot.eth/proposal/0x763450dcb8164a56768f9f3c6df8c54d6b478cdb0d334f4d69c5bb5f4198f29d)
+
+| Rank | Chain           | New HBOT Allocation |
+|------| ----------------|---------------------|
+| 1    | XRP Ledger      | 400,000             |
+| 2    | Ethereum        | 278,261             |
+| 3    | Avalanche       | 100,000             |
+| 4    | Injective       | 130,435             |
+
+| Inclusion Threshold Pass/Fail  | Chain Connector |
+|-----------------------------------------------------------------------------------|---------|
+| ✅ | XRP Ledger, Ethereum, Avalanche, Injective, BNB Chain, Algorand, Harmony, Tezos, XDC Chain, Kujira, Osmosis, Polygon, Cosmos, Cronos, NEAR  |
+| ❌ | |
+
 ## Epoch 8 (Q2 2024)
 
 **Approved Governance Changes**: [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738)

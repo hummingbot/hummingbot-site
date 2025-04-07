@@ -1,5 +1,9 @@
 ## 📁 Connector Info
 
+!!! note
+    This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
+
+
 * Folder: [/gateway/src/chains/ethereum](https://github.com/hummingbot/gateway/tree/main/src/chains/ethereum)
 * Configs: [/gateway/src/templates/ethereum.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/ethereum.yml)
 

@@ -1,3 +1,8 @@
+
+!!! note
+    This connector is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
+
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Decentralized Exchange (DEX)
