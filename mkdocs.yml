@@ -244,6 +244,7 @@ nav:
       - Kraken: exchanges/kraken/index.md
       - Injective Helix: exchanges/injective.md
       - MEXC: exchanges/mexc/index.md
+      - NDAX: exchanges/ndax.md
       - Tegro: exchanges/tegro/index.md
       - Vertex: exchanges/vertex.md
     - Gateway DEX Connectors:
@@ -299,7 +300,9 @@ nav:
         - Gateway New (v2.5+): gateway/new/index.md
         - Installation & Setup: gateway/installation.md
         - Configuration: gateway/configuration.md
-        - Schemas: gateway/schemas.md
+        - Route Schemas: gateway/schemas.md
+        - Adding a New Connector: gateway/new-connector.md
+        - Sample Strategies: gateway/strategies.md
       - Gateway Legacy (v2.2):
         - Gateway Legacy (v2.2): gateway/legacy/index.md
         - Installation: gateway/legacy/installation.md
@@ -307,7 +310,6 @@ nav:
         - Setting up Gateway: gateway/legacy/setup.md
         - Working with Tokens: gateway/legacy/tokens/index.md
         - Strategies & Scripts: gateway/legacy/running-dex-bots.md
-        - Adding Legacy Connectors: gateway/legacy/adding-dex-connectors.md
       - Supported Chains:
         - Supported Chains: gateway/chains/index.md
         - 🔼 Solana: gateway/chains/solana.md

@@ -1,104 +1,161 @@
 Gateway implements standardized API schemas that define the request and response structure for different types of trading operations. These schemas ensure consistency across connectors and make it easier to integrate new DEXs into the Hummingbot ecosystem.
 
-## Current Connector Schemas
+## Chain Schemas
+
+Gateway provides standardized endpoints for interacting with different blockchain networks. Currently supported chains include Solana and Ethereum.
+
+### Chain Routes
+
+For each supported chain (`{chain_name}` = `solana` or `ethereum`), the following endpoints are available:
+
+#### GET `/{chain_name}/status`
+Gets the current status and health of the blockchain connection.
+
+#### GET `/{chain_name}/tokens`
+Retrieves information about available tokens on the network.
+
+#### POST `/{chain_name}/balances`
+Gets token balances for a specified wallet address.
+
+#### POST `/{chain_name}/poll`
+Polls for updates or transaction status on the network.
+
+#### POST `/{chain_name}/estimate-gas`
+Estimates the gas (transaction fee) for a transaction.
+
+## Connector Schemas
 
 Gateway currently supports the following connector schemas:
 
 * **Swap**: For taker-only DEXs and DEX aggregators
-* **AMM**: For Automated Market Maker DEXs (like Uniswap V2)
-* **CLMM**: For Concentrated Liquidity Market Maker DEXs (like Uniswap V3)
-
-Connectors that match these schemas should expose the routes below and import/use request and response types from each schema.
+* **AMM**: For Automated Market Maker DEXs (like Raydium Standard and Uniswap V2 pools)
+* **CLMM**: For Concentrated Liquidity Market Maker DEXs (like Raydium Concentrated and Uniswap V3 pools)
 
 The schema files are located in the [`src/schemas/trading-types`](https://github.com/hummingbot/gateway/tree/core-2.5/src/schemas/trading-types) directory of the Gateway repository.
 
-## Future Connector Schemas
+### GET /connectors
 
-Gateway's roadmap includes plans to expand functionality beyond the current types. While not yet implemented, future connector types may include:
+You can view all available connectors and their supported trading types by making a GET request to the `/connectors` endpoint:
+```json
+{
+  "connectors": [
+    {
+      "name": "jupiter",
+      "trading_types": [
+        "swap"
+      ],
+      "available_networks": [
+        {
+          "chain": "solana",
+          "networks": [
+            "mainnet-beta",
+            "devnet"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "raydium/amm",
+      "trading_types": [
+        "amm",
+        "swap"
+      ],
+      "available_networks": [
+        {
+          "chain": "solana",
+          "networks": [
+            "mainnet-beta",
+            "devnet"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "raydium/clmm",
+      "trading_types": [
+        "amm",
+        "swap"
+      ],
+      "available_networks": [
+        {
+          "chain": "solana",
+          "networks": [
+            "mainnet-beta",
+            "devnet"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
-- **Lend**: For lending and borrowing assets on DeFi lending protocols
-- **Stake**: For staking assets in various protocols
-- **Bridge**: For transferring assets between different blockchain networks
+### Swap Schema
 
-These additional connector types are still in the planning phase and will be developed as the Hummingbot ecosystem continues to evolve.
+All DEX connectors should implement the Swap schema, which defines endpoints for fetching price quotes and executing swaps.
 
-## Swap Schema
-
-All DEX connectors, including DEX aggregators like [Jupiter](https://jup.ag/), should implement the Swap schema, which defines endpoints for fetching price quotes and executing swaps.
 
 See [swap-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/swap-schema.ts) for details.
 
-### GET `/quote-swap`
+#### GET `/quote-swap`
 
 * Purpose: Get price quotes for swaps on taker-only DEXs and DEX aggregators
 * Request Type: `GetSwapQuoteRequest`
 * Response Type: `GetSwapQuoteResponse`
 
-### POST `/execute-swap`
+#### POST `/execute-swap`
 
 * Purpose: Execute swaps on taker-only DEXs and DEX aggregators
 * Request Type: `ExecuteSwapRequest`
 * Response Type: `ExecuteSwapResponse`
 
-## AMM Schema
+### AMM Schema
 
-The AMM schema, which extends the Swap schema, defines standard endpoints for quoting, swapping, and managing liquidity on AMM (Automated Market Maker) DEXs, like Raydium Standard pools.
+The AMM schema defines standard endpoints for managing liquidity positions on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard) and Uniswap V2 pools.
 
-See [amm-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/amm-schema.ts) for details.
+In addition to the Swap routes above, an AMM DEX connector should define the following additional routes. See [amm-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/amm-schema.ts) for details.
 
-### GET `/pool-info`
+#### GET `/pool-info`
 Gets information about a specific AMM pool including token addresses, fees, prices, and liquidity amounts. Request Type: `GetPoolInfoRequest`, Response Type: `PoolInfo`
 
-### GET `/quote-liquidity`
+#### GET `/quote-liquidity`
 Gets a quote for adding liquidity to an AMM pool, calculating the optimal token amounts based on current pool state. Request Type: `QuoteLiquidityRequest`, Response Type: `QuoteLiquidityResponse`
 
-### GET `/quote-swap`
-Gets a price quote for swapping tokens in an AMM pool, including expected output amount and price impact. Request Type: `GetSwapQuoteRequest`, Response Type: `GetSwapQuoteResponse`
-
-### POST `/execute-swap`
-Executes a token swap transaction in an AMM pool based on the quoted parameters. Request Type: `ExecuteSwapRequest`, Response Type: `ExecuteSwapResponse`
-
-### POST `/add-liquidity`
+#### POST `/add-liquidity`
 Adds liquidity to an AMM pool by depositing both base and quote tokens. Request Type: `AddLiquidityRequest`, Response Type: `AddLiquidityResponse`
 
-### POST `/remove-liquidity`
+#### POST `/remove-liquidity`
 Removes liquidity from an AMM pool and receives back both base and quote tokens. Request Type: `RemoveLiquidityRequest`, Response Type: `RemoveLiquidityResponse`
 
-## CLMM Schema
+### CLMM Schema
 
-The CLMM (Concentrated Liquidity Market Maker) schema defines endpoints for managing positions and liquidity in concentrated liquidity pools, like Raydium CLMM pools.
+The CLMM (Concentrated Liquidity Market Maker) schema defines endpoints for managing positions and liquidity in concentrated liquidity pools, like [Raydium Concentrated](https://raydium.io/liquidity-pools/?tab=concentrated) and Uniswap V3/V4 pools.
 
-See [clmm-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/clmm-schema.ts) for details.
+In addition to the Swap routes above, a CLMM DEX connector should define the following additional routes. See [clmm-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/clmm-schema.ts) for details.
 
-### GET `/pool-info`
+#### GET `/pool-info`
 Gets detailed information about a CLMM pool including token addresses, fees, current tick, and liquidity distribution. Request Type: `GetPoolInfoRequest`, Response Type: `PoolInfo`
 
-### GET `/positions-owned`
+#### GET `/positions-owned`
 Retrieves all liquidity positions owned by a specific wallet address in CLMM pools. Request Type: Not specified in schema, Response Type: Array of `PositionInfo`
 
-### GET `/position-info`
+#### GET `/position-info`
 Gets detailed information about a specific liquidity position including token amounts, fee earnings, and price range. Request Type: `GetPositionInfoRequest`, Response Type: `PositionInfo`
 
-### GET `/quote-position`
+#### GET `/quote-position`
 Gets a quote for opening a new liquidity position, calculating token amounts based on the specified price range. Request Type: `QuotePositionRequest`, Response Type: `QuotePositionResponse`
 
-### GET `/quote-swap`
-Gets a price quote for swapping tokens in a CLMM pool, calculating the optimal route through available liquidity. Request Type: `GetSwapQuoteRequest`, Response Type: `GetSwapQuoteResponse`
-
-### POST `/execute-swap`
-Executes a token swap transaction in a CLMM pool using concentrated liquidity ranges. Request Type: `ExecuteSwapRequest`, Response Type: `ExecuteSwapResponse`
-
-### POST `/open-position`
+#### POST `/open-position`
 Creates a new liquidity position in a CLMM pool with specified price range and token amounts. Request Type: `OpenPositionRequest`, Response Type: `OpenPositionResponse`
 
-### POST `/add-liquidity`
+#### POST `/add-liquidity`
 Adds more liquidity to an existing CLMM position within its current price range. Request Type: `AddLiquidityRequest`, Response Type: `AddLiquidityResponse`
 
-### POST `/remove-liquidity`
+#### POST `/remove-liquidity`
 Removes liquidity from an existing CLMM position, withdrawing tokens based on the specified percentage. Request Type: `RemoveLiquidityRequest`, Response Type: `RemoveLiquidityResponse`
 
-### POST `/collect-fees`
+#### POST `/collect-fees`
 Collects accumulated trading fees earned by a liquidity position in a CLMM pool. Request Type: `CollectFeesRequest`, Response Type: `CollectFeesResponse`
 
-### POST `/close-position`
+#### POST `/close-position`
 Closes an existing CLMM position, removing all remaining liquidity and collecting any unclaimed fees. Request Type: `ClosePositionRequest`, Response Type: `ClosePositionResponse`

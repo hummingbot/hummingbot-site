@@ -1,11 +1,11 @@
 Follow the links below to install, configure and use Gateway Legacy:
 
-- [Installation](legacy/installation.md): How to install Gateway from source or via Docker, including detailed instructions for Docker Compose setup
-- [Testing with Postman](legacy/testing/index.md): How to test Gateway API endpoints on a standalone basis using Postman and other tools
-- [Using Gateway with Hummingbot](legacy/setup.md): How to send commands to Gateway from Hummingbot
-- [Working with Tokens](legacy/tokens/index.md): Adding tokens, approving tokens and getting testnet tokens
-- [Running DEX Bots](legacy/running-dex-bots.md): How to run the `amm-arb` strategy and scripts that use Gateway DEX connectors
-- [Adding Connectors](legacy/adding-dex-connectors.md): Developer guide for contributing new DEX connectors into the open source Gateway codebase
+- [Installation](installation.md): How to install Gateway from source or via Docker, including detailed instructions for Docker Compose setup
+- [Testing with Postman](testing/index.md): How to test Gateway API endpoints on a standalone basis using Postman and other tools
+- [Using Gateway with Hummingbot](setup.md): How to send commands to Gateway from Hummingbot
+- [Working with Tokens](tokens/index.md): Adding tokens, approving tokens and getting testnet tokens
+- [Running DEX Bots](running-dex-bots.md): How to run the `amm-arb` strategy and scripts that use Gateway DEX connectors
+- [Adding Connectors](adding-dex-connectors.md): Developer guide for contributing new DEX connectors into the open source Gateway codebase
 
 ## Connector Structure
 

@@ -33,12 +33,12 @@ Afterwards, install pnpm:
 ```bash
 sudo npm install -g pnpm
 ```
-### Install and Setup Gateway
+### Install and Setup Gateway v2.5
 
-1. Clone the Gateway repo and navigate into the folder:
+1. Clone the `core-2.5` branch in the Gateway repo and navigate into the folder:
 ```bash
 # Clone repository
-git clone https://github.com/hummingbot/gateway.git
+git clone https://github.com/hummingbot/gateway.git -b core-2.5
 cd gateway
 ```
 
@@ -117,20 +117,17 @@ When installed from source, Gateway can be run in one of two modes:
 
 **Development Mode (HTTP)**
 
-   - Started with `--dev` flag: `pnpm start --passphrase=<PASSPHRASE> --dev`
-   - Exposes HTTP (unencrypted) REST endpoints at <http://localhost:15888>
+   - Started with `--dev` flag
+   - Exposes HTTP (unencrypted) REST endpoints
    - Interactive Swagger docs at <http://localhost:15888/docs>
    - Shows 🔴 indicator in logs
-   - Suitable for local development and testing
-   - **Warning**: Not secure for production use
 
 **Production Mode (HTTPS)**
 
-   - Started without `--dev` flag: `pnpm start --passphrase=<PASSPHRASE>`
-   - Exposes HTTPS (encrypted) REST endpoints at <https://localhost:15888>
-   - Shows 🟢 indicator in logs
+   - Started without `--dev` flag
+   - Exposes HTTPS (encrypted) REST endpoints
    - Required for connecting with Hummingbot
-   - Secure for production use
+   - Shows 🟢 indicator in logs
 
 Both modes require a passphrase for endpoints that handle wallet operations, but development mode allows unauthenticated access to read-only endpoints. 
 

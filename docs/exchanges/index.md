@@ -65,5 +65,6 @@ Here are the CLOB connectors in the codebase for the current [Epoch](/governance
 | [Hashkey Global](./hashkey/index.md) | | ✓ | ✓ |  |
 | [Kraken](./kraken/index.md) |  | ✓ |  |  |
 | [MEXC](./mexc/index.md) |  | ✓ |  |  |
+| [NDAX](./ndax.md) |  | ✓ |  |  |
 | [Tegro](./tegro/index.md) | | ✓ | ✓ |  |
 | [Vertex](./vertex.md) | | ✓ |  |  |

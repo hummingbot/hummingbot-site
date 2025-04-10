@@ -24,8 +24,13 @@ A route should be self-contained in its own file and contain both the route hand
 
 ## Connector Schemas
 
-Starting in release v2.5+, Gateway implements the following standards, which define the API request and response structure for each type of trading:
+Starting in release v2.5+, Gateway implements the following schemas, which define the API request and response structure for each type of trading:
 
-- **Swap**: Endpoints for fetching quote prices and executing swaps on taker-only DEXs and DEX aggregators, like [Jupiter](https://jup.ag/).
-- **AMM**: Endpoints for quoting, swapping, and adding/removing liquidity on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard) and Uniswap V2 pools.
-- **CLMM**: Endpoints for quoting, swapping, and adding/removing liquidity on CLMM (Concentrated Liquidity Market Maker) DEXs, like [Raydium Concentrated](https://raydium.io/liquidity-pools/?tab=concentrated) and Uniswap V3/V4 pools.
+Each schema defines a standardized interface that connectors must implement to be compatible with Hummingbot. This ensures consistency across different DEXs and makes it easier to integrate new protocols into the ecosystem.
+
+- **Swap**: Endpoints for quoting and executing swaps on DEXs and DEX aggregators, like [Jupiter](https://jup.ag/).
+- **AMM**: Endpoints for managing liquidity positions on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard) and Uniswap V2 pools.
+- **CLMM**: Endpoints for managing liquidity positions on CLMM (Concentrated Liquidity Market Maker) DEXs, like [Raydium Concentrated](https://raydium.io/liquidity-pools/?tab=concentrated) and Uniswap V3/V4 pools.
+
+For detailed information about each connector schema, including the specific endpoints, request types, and response types, please refer to the [Schemas](../schemas.md) documentation.
+

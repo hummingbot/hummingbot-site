@@ -162,9 +162,12 @@ clmm:
 
 *Coming soon*
 
-For now, refer to [Setting up Gateway](./legacy/setup.md) in the Gateway Legacy docs.
+!!! warning
+    Gateway commands in Hummingbot are currently being refactored as part of the Gateway v2.5+ modernization. For now, you may refer to [Setting up Gateway](./legacy/setup.md) in the Gateway Legacy docs.
 
 ### Changing Node Providers
+
+
 
 To change the RPC node provider for a blockchain network:
 
