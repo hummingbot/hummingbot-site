@@ -1,27 +1,8 @@
 # Sample Strategies Using Gateway Connectors
 
+> **Note**: This documentation is a work in progress and will be updated frequently as the Gateway connectors and strategies evolve. The examples shown here may change as new features are added or existing ones are modified.
+
 This page provides examples of strategies and scripts you can run in Hummingbot that utilize the new Gateway connectors. These examples demonstrate how to interact with various DEX protocols through Gateway.
-
-## AMM Arbitrage Strategy
-
-The AMM Arbitrage strategy (`amm_arb`) is one of the most popular strategies for testing Gateway functionality. It monitors prices between a trading pair on a DEX versus another trading pair on a CEX or another DEX to identify arbitrage opportunities.
-
-### Example Configuration
-
-```yaml
-template_version: 5
-strategy: amm_arb
-connector_1: uniswap_ethereum_goerli
-market_1: WETH-DAI
-connector_2: binance_paper_trade
-market_2: ETH-USDT
-min_profitability: 1.0
-market_1_slippage_buffer: 1.0
-market_2_slippage_buffer: 0.0
-concurrent_orders_submission: false
-debug_price_shim: false
-gateway_transaction_cancel_interval: 600
-```
 
 ## Sample Gateway Scripts
 
@@ -37,8 +18,8 @@ from decimal import Decimal
 
 # Initialize the data feed
 prices = AmmGatewayDataFeed(
-    connector_chain_network="uniswap_polygon_mainnet",
-    trading_pairs={"WETH-USDC", "WETH-DAI"},
+    connector_chain_network="raydium/clmm_solana_mainnet_beta",
+    trading_pairs={"SOL-USDC", "SOL-USDT"},
     order_amount_in_base=Decimal("1"),
 )
 
@@ -56,7 +37,7 @@ from decimal import Decimal
 
 # Initialize the data feed
 prices = AmmGatewayDataFeed(
-    connector_chain_network="raydium_solana_mainnet-beta",
+    connector_chain_network="raydium/clmm_solana_mainnet_beta",
     trading_pairs={"SOL-USDC"},
     order_amount_in_base=Decimal("1"),
 )
@@ -67,7 +48,7 @@ prices.start()
 
 ### CLMM Position Management
 
-The `clmm_manage_position.py` script (work in progress) will demonstrate how to manage concentrated liquidity positions on DEXs that support CLMM (Concentrated Liquidity Market Maker) like Raydium Concentrated and Uniswap V3.
+The `clmm_manage_position.py` script (work in progress) will demonstrate how to manage concentrated liquidity positions on Raydium Concentrated.
 
 ## V2 Strategies
 
@@ -80,8 +61,8 @@ Example configuration:
 ```python
 class ArbitrageWithSmartComponent(ScriptStrategyBase):
     # Parameters
-    exchange_pair_1 = ExchangePair(exchange="binance", trading_pair="MATIC-USDT")
-    exchange_pair_2 = ExchangePair(exchange="uniswap_polygon_mainnet", trading_pair="WMATIC-USDT")
+    exchange_pair_1 = ExchangePair(exchange="okx", trading_pair="SOL-USDT")
+    exchange_pair_2 = ExchangePair(exchange="raydium/clmm_solana_mainnet_beta", trading_pair="SOL-USDC")
     order_amount = Decimal("50")  # in base asset
     min_profitability = Decimal("0.004")
 ```
@@ -97,10 +78,10 @@ Example configuration:
 ```yaml
 template_version: 5
 strategy: amm_arb
-connector_1: uniswap_ethereum_goerli
-market_1: WETH-DAI
-connector_2: binance_paper_trade
-market_2: ETH-USDT
+connector_1: raydium/clmm_solana_mainnet_beta
+market_1: SOL-USDC
+connector_2: okx
+market_2: SOL-USDT
 min_profitability: 1.0
 market_1_slippage_buffer: 1.0
 market_2_slippage_buffer: 0.0
@@ -113,22 +94,12 @@ The Cross Exchange Market Making strategy has also been updated to use the Swap 
 
 ## Best Practices
 
-1. **Always approve tokens before running strategies**: Use `gateway approve-tokens [connector] [TOKENS]` to approve tokens for trading.
+1. **Check node connectivity**: Ensure your node provider is properly configured. Using a node provider with an API key is recommended for better reliability and performance.
 
-2. **Test on testnets first**: Use testnet DEX connectors (like Uniswap Goerli) and paper trading CEX connectors for initial testing.
+2. **Start with small amounts**: Test strategies with small amounts of capital first to verify functionality before scaling up.
 
-3. **Monitor gas costs**: Be aware of gas costs when trading on DEXs, especially during high network congestion.
+3. **Verify token symbols**: Make sure to use the correct token symbols and add them to your token list if they're not already included.
 
-4. **Check token allowances**: If your strategy is stuck with a message like `"[connector] is not ready. Please wait..."`, it likely needs token approvals.
+4. **Monitor gas costs**: Be aware of gas costs when trading on DEXs, especially during high network congestion.
 
 5. **Use appropriate slippage buffers**: Set higher slippage buffers for less liquid markets to account for price movement.
-
-## Troubleshooting
-
-If you encounter issues with your strategies:
-
-1. Check that your wallet is properly connected: `gateway list`
-2. Verify token approvals: `gateway approve-tokens [connector] [TOKENS]`
-3. Check your balances: `balance`
-4. Ensure you have sufficient native tokens (ETH, SOL, etc.) for gas fees
-5. Review the logs for specific error messages
