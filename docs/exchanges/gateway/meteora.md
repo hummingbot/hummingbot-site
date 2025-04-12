@@ -1,0 +1,82 @@
+# Meteora
+
+## ℹ️ Exchange Info
+
+- **Website**: <https://app.meteora.ag>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/meteora/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/meteora>
+- **SDK Docs**: <https://github.com/MeteoraAg/dlmm-sdk>
+
+## 🛠 Available Connectors
+
+| Connectors | Route Schemas | Notes | 
+| --------- | ------ | ----- |
+| `meteora/clmm` | Swap, CLMM | Supports Meteora DLMM pools |
+
+See [Route Schemas](/gateway/schemas) for more information about the endpoints defined by each connector.
+
+## 🔑 How to Connect
+
+!!! warning
+    This connection interface is likely to change in future releases as we continue to improve the Gateway architecture.
+
+Create a wallet on one of the supported networks below:
+
+| Chain | Networks | 
+| ----- | -------- |
+| `solana` | `mainnet-beta`, `devnet`
+
+From inside the Hummingbot client, run `gateway connect meteora/clmm`:
+
+```
+Which Solana network do you want meteora/clmm to connect to? (mainnet-beta) >>> mainnet-beta
+Enter your solana_mainnet-beta private key >>>>
+```
+
+If connection is successful:
+```
+The meteora/clmm connector now uses wallet [pubKey] on solana-mainnet-beta
+```
+
+## 🛠️ Connector Configs
+
+Upon Gateway setup, a default `meteora.yml` configuration file is created in your `conf` folder. Here's what each setting in the configuration means:
+
+```yaml
+# how much the execution price is allowed to move unfavorably from the trade
+# execution price. It uses a rational number for precision.
+allowedSlippage: '1/100'
+
+# predefined pools
+pools:
+  SOL-USDC: '5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6'
+  TRUMP-USDC: '9d9mb8kooFfaD3SctgZtkxQypkshx6ezhbKio89ixyy2'
+  JITOSOL-SOL: 'BoeMUkCLHchTD31HdXsbDExuZZfcUppSLpYtV3LZTH6U'
+  USDT-USDC: 'ARwi1S4DaiTG5DX7S4M4ZsrXqpMD1MrTmbu9ue2tpmEq'
+```
+
+### Slippage
+
+- Defines the price slippage allowed when quoting and executing a swap
+- `allowedSlippage: '1/100'` means 1% price movement allowed
+
+### Pool Addresses
+
+- These addresses are required for Hummingbot strategies to interact with the correct pools when trading on CLMM exchanges
+- Add your frequently used pairs to the configuration for easy access in strategies
+- Format: `TOKEN1-TOKEN2: 'pool_address'`
+- Example: `SOL-USDC: '5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6'`
+
+### DLMM Strategy
+
+When opening positions or adding liquidity to Meteora DLMM pools, you can specify a strategy type as an optional parameter. The default strategy is `SpotImbalanced` (0).
+
+Available Meteora DLMM strategy types:
+```
+    SpotImBalanced = 0,
+    CurveImBalanced = 1,
+    BidAskImBalanced = 2,
+    SpotBalanced = 3,
+    CurveBalanced = 4,
+    BidAskBalanced = 5
+```

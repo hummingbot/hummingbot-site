@@ -121,6 +121,9 @@ In addition to the Swap routes above, an AMM DEX connector should define the fol
 #### GET `/pool-info`
 Gets information about a specific AMM pool including token addresses, fees, prices, and liquidity amounts. Request Type: `GetPoolInfoRequest`, Response Type: `PoolInfo`
 
+#### GET `/position-info`
+Gets detailed information about a wallet's LP position in an AMM pool, including base and quote token amounts. Request Type: `GetPositionInfoRequest`, Response Type: `PositionInfo`
+
 #### GET `/quote-liquidity`
 Gets a quote for adding liquidity to an AMM pool, calculating the optimal token amounts based on current pool state. Request Type: `QuoteLiquidityRequest`, Response Type: `QuoteLiquidityResponse`
 
