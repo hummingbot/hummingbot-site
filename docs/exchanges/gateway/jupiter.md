@@ -1,72 +1,62 @@
+# Jupiter
+
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Aggregator
+* **Chain**: [Solana](/gateway/chains/solana)
+* **Available Networks**: `mainnet-beta`, `devnet`
 
-| Component | Status | Notes | 
+| Connectors | Route Schemas | Notes | 
 | --------- | ------ | ----- |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
-| [3️⃣ Range AMM Connector](#3-range-amm-connector) | Not Applicable |
-| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
+| `jupiter` | Swap | Jupiter DEX aggregator |
+
+See [Route Schemas](/gateway/schemas) for more information about the endpoints defined by each connector.
 
 ## ℹ️ Exchange Info
 
 - **Website**: <https://jup.ag>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/jupiter/>
-- **Fees**: See [this page](https://station.jup.ag/guides/general/faq#does-jupiter-swap-charge-any-fees)
+- **DefiLlama**: <https://defillama.com/protocol/jupiter>
+- **SDK Docs**: <https://dev.jup.ag/docs/swap-api/get-quote>
 
 ## 🔑 How to Connect
 
-Create a wallet on one of the supported networks below:
+!!! warning
+    This connection interface is likely to change in future releases as we continue to improve the Gateway architecture.
 
-| Chain | Networks | 
-| ----- | -------- |
-| `solana` | `mainnet-beta`, `devnet`
-
-From inside the Hummingbot client, run `gateway connect jupiter` in order to connect your wallet:
+From inside the Hummingbot client, run `gateway connect jupiter`:
 
 ```
-Which chain do you want jupiter to connect to? (solana) >>> 
-Which network do you want jupiter to connect to? (mainnet-beta, devnet) >>>
-Enter your jupiter-mainnet-beta private key >>>>
+Which Solana network do you want jupiter to connect to? (mainnet-beta) >>> mainnet-beta
+Enter your solana_mainnet-beta private key >>>>
 ```
 
-If connection is successful (solana-mainnet-beta):
+If connection is successful:
 ```
 The jupiter connector now uses wallet [pubKey] on solana-mainnet-beta
 ```
 
-## 2️⃣ AMM Connector
-*Integration to this DEX's swap pricing and execution endpoints*
+## ⚙️ Connector Configs
 
-- **ID**: `jupiter`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://station.jup.ag/docs/apis/swap-api>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/development/src/templates/jupiter.yml>
+* Connector Folder: [/gateway/src/connectors/jupiter](https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter)
+* Config Schema: [/gateway/src/services/schemas/jupiter-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/jupiter.yml)
 
-### Endpoints
+Upon Gateway setup, a default `jupiter.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/jupiter.yml) below:
 
-- `/amm/price`
-- `/amm/trade`
-- `/amm/estimateGas`
+```yaml
+# how much the execution price is allowed to move unfavorably from the trade
+# execution price. It uses a rational number for precision.
+allowedSlippage: '1/100'
 
-For more information, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
-
-## 🕯 AMM Data Feed
-*Data feed of this exchange's real-time prices*
-
-- **ID**: `jupiter_[CHAIN]_[NETWORK]`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
-
-### Usage
-
-```python
-from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
-prices = AmmGatewayDataFeed(
-        connector_chain_network="jupiter_solana_mainnet-beta",
-        trading_pairs={"SOL-USDC", "SOL-WIF"},
-        order_amount_in_base=Decimal("1"),
-    )
+# Priority level for swap transaction processing
+# Options: medium, high, veryHigh
+priorityLevel: 'veryHigh'
 ```
+
+### Slippage
+
+- Defines the price slippage allowed when quoting and executing a swap
+- `allowedSlippage: '1/100'` means 1% price movement allowed
+
+### Priority Level
+
+- Controls the transaction priority when executing swaps on Jupiter, subject to minimum and maximum fees defined in the [Solana](/gateway/chains/solana) config file
+- Available options: `medium` (standard priority), `high` (faster execution), and `veryHigh` (highest priority)

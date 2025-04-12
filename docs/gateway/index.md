@@ -13,7 +13,7 @@ Gateway is currently undergoing a large multi-release codebase refactoring, appr
 
 We will maintain two versions of Gateway throughout this transition period to ensure users can continue using all supported connectors while the migration progresses. Both versions are compatible with the latest upgrades and strategies in the Hummingbot client.
 
-- [New (v2.5+)](new/index.md): The latest version with a chain-agnostic design, supporting Swap, AMM, and CLMM connector types. This version is more flexible and designed for future expansion.
+- [New (v2.5+)](new/index.md): The latest version with flexible route schemas, supporting Swap, AMM, and CLMM connector types. This version is designed for future expansion.
 
 - [Legacy (v2.2)](legacy/index.md): The previous version that supports a wider range of chains and networks but with a more rigid architecture. This version will continue to be maintained while the refactor is in progress.
 

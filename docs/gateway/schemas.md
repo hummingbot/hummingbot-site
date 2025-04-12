@@ -2,27 +2,25 @@ Gateway implements standardized API schemas that define the request and response
 
 ## Chain Schemas
 
-Gateway provides standardized endpoints for interacting with different blockchain networks. 
+Gateway provides standardized endpoints for interacting with different blockchain networks. For each [supported chain](/gateway/chains), the following endpoints are available:
 
-For each supported chain (`{chain_name}` = `solana` or `ethereum`), the following endpoints are available:
-
-#### GET `/{chain_name}/status`
+#### GET `/status`
 * Request Type: `StatusRequest` - Contains `network` string
 * Response Type: `StatusResponse` - Contains chain info, network, RPC URL, current block number, and native currency
 
-#### GET `/{chain_name}/tokens`
+#### GET `/tokens`
 * Request Type: `TokensRequest` - Contains `network` string and optional `tokenSymbols` (string or array)
 * Response Type: `TokensResponse` - Contains array of token objects with symbol, address, decimals, and name
 
-#### POST `/{chain_name}/balances`
+#### POST `/balances`
 * Request Type: `BalanceRequest` - Contains `network`, `address`, and optional `tokenSymbols` array
 * Response Type: `BalanceResponse` - Contains record of token symbols to balance amounts
 
-#### POST `/{chain_name}/poll`
+#### POST `/poll`
 * Request Type: `PollRequest` - Contains `network` and `txHash` strings
 * Response Type: `PollResponse` - Contains transaction status, block info, fee, and optional error
 
-#### POST `/{chain_name}/estimate-gas`
+#### POST `/estimate-gas`
 * Request Type: `EstimateGasRequest` - Contains `chain`, `network`, and optional `gasLimit`
 * Response Type: `EstimateGasResponse` - Contains gas price, token, limit, and cost information
 

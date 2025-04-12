@@ -28,7 +28,7 @@ Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bount
 
 ## Adding New CLOB Connectors
 
-CLOB connectors may be contributed by community members via [New Connector Proposals](/governance/proposals), which require a minimum HBOT balance to create.
+CLOB connectors may be contributed by community members via [New Connector Proposals](/governance/proposals), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.
 
 The Notion templates below summarize the file and functionalities needed to build the latest spot and perpetual connectors standards and support V2 Strategies:
 

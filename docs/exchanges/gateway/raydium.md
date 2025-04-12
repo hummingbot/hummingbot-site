@@ -1,11 +1,7 @@
-## ℹ️ Exchange Info
+## 🛠 Connector Info
 
-- **Website**: <https://raydium.io>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/raydium/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/raydium>
-- **SDK Docs**: <https://github.com/raydium-io/raydium-sdk-V2>
-
-## 🛠 Available Connectors
+* **Chain**: [Solana](/gateway/chains/solana)
+* **Available Networks**: `mainnet-beta`, `devnet`
 
 | Connectors | Route Schemas | Notes | 
 | --------- | ------ | ----- |
@@ -14,18 +10,20 @@
 
 See [Route Schemas](/gateway/schemas) for more information about the endpoints defined by each connector.
 
+## ℹ️ Exchange Info
+
+- **Website**: <https://raydium.io>
+- **DefiLlama**: <https://defillama.com/protocol/raydium>
+- **DEXScreener**: <https://dexscreener.com/solana/raydium>
+- **GeckoTerminal**: <https://www.geckoterminal.com/solana/raydium/pools>
+- **SDK Docs**: <https://github.com/raydium-io/raydium-sdk-V2>
+
 ## 🔑 How to Connect
 
 !!! warning
     This connection interface is likely to change in future releases as we continue to improve the Gateway architecture.
 
-Create a wallet on one of the supported networks below:
-
-| Chain | Networks | 
-| ----- | -------- |
-| `solana` | `mainnet-beta`, `devnet`
-
-From inside the Hummingbot client, run `gateway connect raydium/clmm`:
+From inside the Hummingbot client, run `gateway connect raydium/clmm` or `gateway connect raydium/amm`:
 
 ```
 Which Solana network do you want raydium/clmm to connect to? (mainnet-beta) >>> mainnet-beta
@@ -37,9 +35,12 @@ If connection is successful:
 The raydium/clmm connector now uses wallet [pubKey] on solana-mainnet-beta
 ```
 
-## 🛠️ Connector Configs
+## ⚙️ Connector Configs
 
-Upon Gateway setup, a default `raydium.yml` configuration file is created in your `conf` folder. Here's what each setting in the configuration means:
+* Connector Folder: [/gateway/src/connectors/raydium](https://github.com/hummingbot/gateway/tree/development/src/connectors/raydium)
+* Config Schema: [/gateway/src/services/schemas/raydium-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/raydium.yml)
+
+Upon Gateway setup, a default `raydium.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/raydium.yml) below:
 
 ```yaml
 # AMM (Automated Market Maker) settings

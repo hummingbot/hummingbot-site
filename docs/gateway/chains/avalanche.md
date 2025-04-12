@@ -1,16 +1,12 @@
-# `avalanche`
-
-`avalanche` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Avalanche blockchain.
+`avalanche` is a [Chain](./index.md) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Avalanche blockchain.
 
 !!! note
     This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
 
-
-
 ## 📁 Connector Info
 
-* Folder: [/gateway/src/chains/avalanche](https://github.com/hummingbot/gateway/tree/main/src/chains/avalanche)
-* Configs: [/gateway/src/templates/avalanche.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/avalanche.yml)
+* Folder: [/gateway/src/chains/avalanche](https://github.com/hummingbot/gateway/tree/v2.2.0/src/chains/avalanche)
+* Configs: [/gateway/src/templates/avalanche.yml](https://github.com/hummingbot/gateway/tree/v2.2.0/src/templates/avalanche.yml)
 
 ## ℹ️ Chain Info
 

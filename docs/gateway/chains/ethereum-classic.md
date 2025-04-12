@@ -1,16 +1,12 @@
-# `ethereum-classic`
-
-`ethereum-classic` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the ethereum-classic Chain blockchain.
-
+`ethereum-classic` is a [Chain](./index.md) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the ethereum-classic Chain blockchain.
 
 !!! note
     This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
 
-
 ## 📁 Connector Info
 
-- Folder: [/gateway/src/chains/ethereum-classic](https://github.com/hummingbot/gateway/tree/main/src/chains/ethereum-classic)
-- Configs: [/gateway/src/templates/ethereum-classic.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/ethereum-classic.yml)
+- Folder: [/gateway/src/chains/ethereum-classic](https://github.com/hummingbot/gateway/tree/v2.2.0/src/chains/ethereum-classic)
+- Configs: [/gateway/src/templates/ethereum-classic.yml](https://github.com/hummingbot/gateway/tree/v2.2.0/src/templates/ethereum-classic.yml)
 
 ## ℹ️ Chain Info
 

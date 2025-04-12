@@ -1,15 +1,12 @@
-# `osmosis`
-
-`osmosis` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to Osmosis DEX on the Osmosis Blockchain.
+`osmosis` is a [Chain](./index.md) connector in Hummingbot Gateway that helps users connect to Osmosis DEX on the Osmosis Blockchain.
 
 !!! note
     This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
 
-
 ## 📁 Connector Info
 
-- Folder: [/gateway/src/chains/osmosis](https://github.com/hummingbot/gateway/tree/main/src/chains/osmosis)
-- Configs: [/gateway/src/templates/osmosis.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/osmosis.yml)
+- Folder: [/gateway/src/chains/osmosis](https://github.com/hummingbot/gateway/tree/v2.2.0/src/chains/osmosis)
+- Configs: [/gateway/src/templates/osmosis.yml](https://github.com/hummingbot/gateway/tree/v2.2.0/src/templates/osmosis.yml)
 
 !!! note "Osmosis utilizes Cosmos chain elements"
 The Osmosis chain was built using the Cosmos SDK as a base, though has evolved so far as to require a native chain connector instead of using the [Cosmos Chain](/chains/cosmos). Some Cosmos elements are still used.

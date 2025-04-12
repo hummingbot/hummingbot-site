@@ -1,11 +1,7 @@
-# `binance-smart-chain`
-
-`binance-smart-chain` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the BNB Chain blockchain.
-
+`binance-smart-chain` is a [Chain](./index.md) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the BNB Chain blockchain.
 
 !!! note
     This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
-
 
 ## 📁 Connector Info
 

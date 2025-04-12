@@ -1,13 +1,7 @@
-# Meteora
+## 🛠 Connector Info
 
-## ℹ️ Exchange Info
-
-- **Website**: <https://app.meteora.ag>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/meteora/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/meteora>
-- **SDK Docs**: <https://github.com/MeteoraAg/dlmm-sdk>
-
-## 🛠 Available Connectors
+* **Chain**: [Solana](/gateway/chains/solana)
+* **Available Networks**: `mainnet-beta`, `devnet`
 
 | Connectors | Route Schemas | Notes | 
 | --------- | ------ | ----- |
@@ -15,16 +9,18 @@
 
 See [Route Schemas](/gateway/schemas) for more information about the endpoints defined by each connector.
 
+## ℹ️ Exchange Info
+
+- **Website**: <https://app.meteora.ag>
+- **DefiLlama**: <https://defillama.com/protocol/meteora>
+- **DEXScreener**: <https://dexscreener.com/solana/meteora>
+- **GeckoTerminal**: <https://www.geckoterminal.com/solana/meteora/pools>
+- **SDK Docs**: <https://github.com/MeteoraAg/dlmm-sdk>
+
 ## 🔑 How to Connect
 
 !!! warning
     This connection interface is likely to change in future releases as we continue to improve the Gateway architecture.
-
-Create a wallet on one of the supported networks below:
-
-| Chain | Networks | 
-| ----- | -------- |
-| `solana` | `mainnet-beta`, `devnet`
 
 From inside the Hummingbot client, run `gateway connect meteora/clmm`:
 
@@ -38,9 +34,12 @@ If connection is successful:
 The meteora/clmm connector now uses wallet [pubKey] on solana-mainnet-beta
 ```
 
-## 🛠️ Connector Configs
+## ⚙️ Connector Configs
 
-Upon Gateway setup, a default `meteora.yml` configuration file is created in your `conf` folder. Here's what each setting in the configuration means:
+* Connector Folder: [/gateway/src/connectors/meteora](https://github.com/hummingbot/gateway/tree/development/src/connectors/meteora)
+* Config Schema: [/gateway/src/services/schemas/meteora-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/meteora.yml)
+
+Upon Gateway setup, a default `meteora.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/meteora.yml) below:
 
 ```yaml
 # how much the execution price is allowed to move unfavorably from the trade
@@ -67,7 +66,7 @@ pools:
 - Format: `TOKEN1-TOKEN2: 'pool_address'`
 - Example: `SOL-USDC: '5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6'`
 
-### DLMM Strategy
+### Strategy Type
 
 When opening positions or adding liquidity to Meteora DLMM pools, you can specify a strategy type as an optional parameter. The default strategy is `SpotImbalanced` (0).
 

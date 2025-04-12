@@ -1,16 +1,12 @@
-# `cronos`
-
-`cronos` is a [Chain](/chains) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Cronos blockchain.
-
+`cronos` is a [Chain](./index.md) connector in Hummingbot Gateway that helps users connect to DEXs on various networks on the Cronos blockchain.
 
 !!! note
     This chain is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../legacy/installation.md).
 
-
 ## 📁 Connector Info
 
-* Folder: [/gateway/src/chains/cronos](https://github.com/hummingbot/gateway/tree/main/src/chains/cronos)
-* Configs: [/gateway/src/templates/cronos.yml](https://github.com/hummingbot/gateway/tree/main/src/templates/cronos.yml)
+* Folder: [/gateway/src/chains/cronos](https://github.com/hummingbot/gateway/tree/v2.2.0/src/chains/cronos)
+* Configs: [/gateway/src/templates/cronos.yml](https://github.com/hummingbot/gateway/tree/v2.2.0/src/templates/cronos.yml)
 
 ## ℹ️ Chain Info
 

@@ -1,5 +1,3 @@
-# Adding a New DEX Connector
-
 This guide provides a comprehensive walkthrough for integrating a new decentralized exchange (DEX) connector into Hummingbot's Gateway middleware. We'll use the Raydium connector as an example to demonstrate the implementation process.
 
 ## Prerequisites
@@ -10,11 +8,11 @@ Before starting, ensure you have:
 2. Understanding of the DEX's protocol and SDK
 3. Understanding of the blockchain wallet and node architecture where the DEX resides
 4. Access to testnet/mainnet networks for testing
-5. Understanding of [Gateway's architecture](../new/index.md)
+5. Understanding of the [new Gateway architecture](./new/index.md)
 
 ## Requirements
 
-A connector must implement a set of routes that match one or more [Trading Schemas](./schemas.md). Connectors implementing these schemas must:
+A connector must implement a set of routes that match one or more [Schemas](./schemas.md). Connectors implementing these schemas must:
 
 1. Expose all required routes defined in the corresponding schema
 2. Import and use the request/response TypeScript types from the schema files
@@ -246,14 +244,14 @@ Add the new connector routes to Gateway's `app.ts`:
 { name: 'raydium/amm', description: 'Raydium AMM connector endpoints' },
 ```
 
-## 6. Perform manual testing
+## 6. Perform Manual Testing
 
 - Run in dev mode and test each route using the Swagger UI at <https://localhost:15888/docs>
 - Verify responses match schema definitions
 - Test with different tokens, pools, and amounts
 - Handle common errors with appropriate Fastify responses and error messages
 
-## 7. Add connector tests
+## 7. Add Unit Tests
 
 !!! warning
     Reference implementations coming soon
@@ -263,10 +261,20 @@ Add the new connector routes to Gateway's `app.ts`:
  - Ensure proper validation of inputs
  - Verify response formats
 
-## 8. Add documentation
+## 8. Add Documentation
 
- - Add a connector documentation page similar to [Raydium](/exchanges/gateway/raydium.md)
+ - Add a connector documentation page similar to [Raydium](/exchanges/gateway/raydium)
  - Include exchange-specific information on setting up wallets, accessing markets, etc
  - Describe configuration options and supported networks
  - Document known issues and custom endpoints
- - Provide usage examples
+ - Add the page to the list of Gateway DEXs in [`mkdoc.yml`](https://github.com/hummingbot/hummingbot-site/blob/main/mkdocs.yml)
+
+## 9. (Optional) Propose for Inclusion in Hummingbot
+
+New Gateway DEX connectors may be contributed by community members via [New Connector Proposals](/governance/proposals). To propose your connector for inclusion in the official Hummingbot codebase:
+
+1. Submit a pull request with your connector code to the [Hummingbot Gateway repository](https://github.com/hummingbot/gateway)
+2. Create a corresponding pull request to the [Hummingbot Site repository](https://github.com/hummingbot/hummingbot-site) with documentation for your connector
+3. Create a New Connector Proposal following the [governance](/governance/proposals) process, which requires a minimum HBOT token balance to submit
+
+If approved, the Hummingbot Foundation will review and merge your connector into the official codebase in a future release.

@@ -220,16 +220,16 @@ nav:
       - TWAP: strategies/twap.md
     - CLOB Connectors:
       - CLOB Connectors: exchanges/index.md
-      - ⭐️ Bitmart: exchanges/bitmart/index.md
-      - ⭐️ Binance: exchanges/binance/index.md
-      - ⭐️ Derive: exchanges/derive/index.md
-      - ⭐️ dYdX: exchanges/dydx.md
-      - ⭐️ Gate.io: exchanges/gate-io/index.md
-      - ⭐️ HTX: exchanges/htx/index.md
-      - ⭐️ Hyperliquid: exchanges/hyperliquid.md
-      - ⭐️ Kucoin: exchanges/kucoin/index.md
-      - ⭐️ OKX: exchanges/okx/okx.md
-      - ⭐️ XRP Ledger: exchanges/xrpl.md
+      - 🔥 Bitmart: exchanges/bitmart/index.md
+      - 🔥 Binance: exchanges/binance/index.md
+      - 🔥 Derive: exchanges/derive/index.md
+      - 🔥 dYdX: exchanges/dydx.md
+      - 🔥 Gate.io: exchanges/gate-io/index.md
+      - 🔥 HTX: exchanges/htx/index.md
+      - 🔥 Hyperliquid: exchanges/hyperliquid.md
+      - 🔥 Kucoin: exchanges/kucoin/index.md
+      - 🔥 OKX: exchanges/okx/index.md
+      - 🔥 XRP Ledger: exchanges/xrpl.md
       - AscendEx : exchanges/ascendex/index.md
       - Bitstamp: exchanges/bitstamp/index.md
       - Bitrue: exchanges/bitrue.md
@@ -301,7 +301,7 @@ nav:
         - Installation & Setup: gateway/installation.md
         - Configuration: gateway/configuration.md
         - Route Schemas: gateway/schemas.md
-        - Adding a New Connector: gateway/new-connector.md
+        - Adding a New Gateway DEX Connector: gateway/new-connector.md
         - Sample Strategies: gateway/strategies.md
       - Gateway Legacy (v2.2):
         - Gateway Legacy (v2.2): gateway/legacy/index.md
@@ -313,7 +313,7 @@ nav:
       - Supported Chains:
         - Supported Chains: gateway/chains/index.md
         - 🔼 Solana: gateway/chains/solana.md
-        - Ethereum: gateway/chains/ethereum.md
+        - 🔼 Ethereum: gateway/chains/ethereum.md
         - Algorand: gateway/chains/algorand.md
         - Avalanche: gateway/chains/avalanche.md
         - BNB Chain: gateway/chains/bnb-chain.md

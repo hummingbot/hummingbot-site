@@ -1,25 +1,12 @@
-## What are Gateway Connectors?
+## What are Gateway DEX Connectors?
 
 Gateway is API middleware that enables Hummingbot to send and receive data from different blockchain protocols and provides a standard interface for community developers to add connectors for common DeFi protocols.
 
-Gateway connectors establish and maintain connections to automated market maker (AMM) DEXs and other protocols on various blockchain networks, using the [Hummingbot Gateway](https://github.com/hummingbot/gateway) Typescript-based codebase, which interfaces with Javascript SDKs offered by various DEXs and exposes standard REST API endpoints for trading and liquidity provision-related actions on these DEXs.
+Gateway connectors establish and maintain connections to automated market maker (AMM) DEXs and other protocols on various blockchain networks, interfaces with their Javascript SDKs, and exposes standard REST API endpoints for trading and liquidity provision-related actions on these DEXs.
 
-## Gateway Connector Types
+See [Gateway](/gateway) for more information.
 
-The new Gateway connectors and Hummingbot clients (after release v2.5+) expose standard API endpoints for the following types of DEX trading types:
-
-- **Swap**: Endpoints for fetching quote prices and executing swaps on taker-only DEXs and DEX aggregators, like [Jupiter](https://jup.ag/).
-- **AMM**: Endpoints for quoting, swapping, and adding/removing liquidity on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard) and Uniswap V2 pools.
-- **CLMM**: Endpoints for quoting, swapping, and adding/removing liquidity on CLMM (Concentrated Liquidity Market Maker) DEXs, like [Raydium Concentrated](https://raydium.io/liquidity-pools/?tab=concentrated) and Uniswap V3/V4 pools.
-
-The legacy Gateway connectors (release v2.2) had the following trading types:
-
-- **AMM**: Endpoints for fetching quote prices and executing swaps on DEXs and DEX aggregators
-- **AMM_LP**: Endpoints for adding and removing liquidity on Uniswap V3 pools
-
-See [Gateway](/gateway) for more information about installing and using new vs legacy versions of Gateway.
-
-## Gateway Connector Maintenance and Governance
+## Gateway DEX Connector Maintenance and Governance
 
 Like other connectors, Gateway DEX connectors require ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as well as improvements to the Hummingbot connector standard.
 
@@ -29,11 +16,16 @@ Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bount
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
-## Adding New Gateway Connectors
+## Adding New Gateway DEX Connectors
 
-New Gateway connectors may be contributed by community members via [New Connector Proposals](/governance/proposals), which require a minimum HBOT balance to create. We recommend that only connectors compatible with the new Gateway architecture be submitted.
+New Gateway connectors may be contributed by community members via [New Connector Proposals](/governance/proposals), which require a pull request with the connector code to the Hummingbot Gateway Github repo, along with a minimum HBOT balance along to create.
 
-## Current Gateway Connectors
+If you're interested in contributing a new Gateway DEX connector, check out our [Adding a New Gateway DEX Connector](/gateway/new-connector/) guide. The guide uses the Raydium connectors as reference and walks through how to build your connector for compatibility with the Hummingbot client.
+
+## Current Gateway DEX Connectors
+
+!!! note
+    Gateway is currently undergoing a large multi-release codebase refactoring, approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). During this refactoring process, not all connectors are available in the new version, as they are being gradually migrated from the legacy architecture.
 
 Here are the Gateway connectors in the codebase for the current [Epoch](/governance/epochs/).
 
