@@ -210,7 +210,6 @@ nav:
         - Ping Pong: strategy-configs/ping-pong.md
       - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
       - AMM Arbitrage: strategies/amm-arbitrage.md
-      - AMM-V3 LP: strategies/amm-v3-lp.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
       - Cross-Exchange Mining: strategies/cross-exchange-mining.md
       - Hedge: strategies/hedge.md
@@ -220,54 +219,51 @@ nav:
       - TWAP: strategies/twap.md
     - CLOB Connectors:
       - CLOB Connectors: exchanges/index.md
+      - 🔥 Bitmart: exchanges/bitmart/index.md
+      - 🔥 Binance: exchanges/binance/index.md
+      - 🔥 Derive: exchanges/derive/index.md
+      - 🔥 dYdX: exchanges/dydx.md
+      - 🔥 Gate.io: exchanges/gate-io/index.md
+      - 🔥 HTX: exchanges/htx/index.md
+      - 🔥 Hyperliquid: exchanges/hyperliquid.md
+      - 🔥 Kucoin: exchanges/kucoin/index.md
+      - 🔥 OKX: exchanges/okx/index.md
+      - 🔥 XRP Ledger: exchanges/xrpl.md
       - AscendEx : exchanges/ascendex/index.md
-      - Binance: exchanges/binance/index.md
       - Bitstamp: exchanges/bitstamp/index.md
       - Bitrue: exchanges/bitrue.md
       - Bitget: exchanges/bitget-perpetual.md
       - BingX: exchanges/bing_x/index.md
-      - Bitmart: exchanges/bitmart/index.md
       - Bybit: exchanges/bybit.md
       - BTC Markets: exchanges/btc-markets.md
       - Coinbase: exchanges/coinbase.md
       - Cube: exchanges/cube/index.md
-      - Derive: exchanges/derive/index.md
       - Dexalot: exchanges/dexalot.md
-      - dYdX: exchanges/dydx.md
-      - Gate.io: exchanges/gate-io/index.md
       - Hashkey: exchanges/hashkey/index.md
-      - Hyperliquid: exchanges/hyperliquid.md
-      - HTX: exchanges/htx/index.md
       - Kraken: exchanges/kraken/index.md
-      - Kucoin: exchanges/kucoin/index.md
       - Injective Helix: exchanges/injective.md
-      - Polkadex: exchanges/polkadex.md
       - MEXC: exchanges/mexc/index.md
       - NDAX: exchanges/ndax.md
-      - OKX: exchanges/okx/okx.md
       - Tegro: exchanges/tegro/index.md
       - Vertex: exchanges/vertex.md
-      - XRP Ledger: exchanges/xrpl.md
-    - AMM Connectors:
-      - AMM Connectors: dex-connectors/index.md
-      - Balancer: exchanges/balancer.md
-      - ETCSwap: exchanges/etcSwap.md
-      - Mad Meerkat: exchanges/mad-meerkat.md
-      - Curve: exchanges/curve.md
-      - Carbon: exchanges/carbon.md
-      - Jupiter: exchanges/jupiter.md
-      - OpenOcean: exchanges/openocean.md
-      - Osmosis: exchanges/osmosis.md
-      - Pancakeswap : exchanges/pancakeswap.md
-      - Pangolin: exchanges/pangolin.md
-      - Quickswap: exchanges/quickswap.md
-      - Sushiswap: exchanges/sushiswap.md
-      - Tinyman: exchanges/tinyman.md
-      - Telos: exchanges/telos.md
-      - TraderJoe: exchanges/traderjoe.md
-      - Uniswap : exchanges/uniswap.md
-      - VVS: exchanges/vvs.md
-      - XSwap: exchanges/xswap.md
+    - Gateway DEX Connectors:
+      - Gateway DEX Connectors: exchanges/gateway/index.md
+      - 🔼 Jupiter: exchanges/gateway/jupiter.md
+      - 🔼 Meteora: exchanges/gateway/meteora.md
+      - 🔼 Raydium: exchanges/gateway/raydium.md
+      - Balancer: exchanges/gateway/balancer.md
+      - Carbon: exchanges/gateway/carbon.md
+      - Curve: exchanges/gateway/curve.md
+      - ETCSwap: exchanges/gateway/etcSwap.md
+      - Osmosis: exchanges/gateway/osmosis.md
+      - Mad Meerkat: exchanges/gateway/mad-meerkat.md
+      - Pancakeswap: exchanges/gateway/pancakeswap.md
+      - Quickswap: exchanges/gateway/quickswap.md
+      - Sushiswap: exchanges/gateway/sushiswap.md
+      - Tinyman: exchanges/gateway/tinyman.md
+      - TraderJoe: exchanges/gateway/traderjoe.md
+      - Uniswap : exchanges/gateway/uniswap.md
+      - VVS: exchanges/gateway/vvs.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -297,6 +293,34 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
+    - Gateway DEX Middleware:
+      - Gateway DEX Middleware: gateway/index.md
+      - Gateway New (v2.5+):
+        - Gateway New (v2.5+): gateway/new/index.md
+        - Installation & Setup: gateway/installation.md
+        - Configuration: gateway/configuration.md
+        - Route Schemas: gateway/schemas.md
+        - Adding a New Gateway DEX Connector: gateway/new-connector.md
+        - Sample Strategies: gateway/strategies.md
+      - Gateway Legacy (v2.2):
+        - Gateway Legacy (v2.2): gateway/legacy/index.md
+        - Installation: gateway/legacy/installation.md
+        - Testing Gateway: gateway/legacy/testing/index.md
+        - Setting up Gateway: gateway/legacy/setup.md
+        - Working with Tokens: gateway/legacy/tokens/index.md
+        - Strategies & Scripts: gateway/legacy/running-dex-bots.md
+      - Supported Chains:
+        - Supported Chains: gateway/chains/index.md
+        - 🔼 Solana: gateway/chains/solana.md
+        - 🔼 Ethereum: gateway/chains/ethereum.md
+        - Algorand: gateway/chains/algorand.md
+        - Avalanche: gateway/chains/avalanche.md
+        - BNB Chain: gateway/chains/bnb-chain.md
+        - Cosmos: gateway/chains/cosmos.md
+        - Cronos: gateway/chains/cronos.md
+        - Ethereum Classic: gateway/chains/ethereum-classic.md
+        - Osmosis: gateway/chains/osmosis-chain.md
+        - Polygon: gateway/chains/polygon.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
@@ -305,13 +329,6 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Gateway AMM Middleware:
-      - Gateway AMM Middleware: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running Strategies and Scripts: gateway/running-dex-bots.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
@@ -341,7 +358,6 @@ nav:
       - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
       - Perp Connector QA Checklist:  developers/connectors/test-perp.md
       - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Building AMM Connectors: gateway/adding-dex-connectors.md
     - Building Strategies: 
       - Building Strategies: developers/strategies/index.md
       - Key Concepts: developers/strategies/key-concepts.md
@@ -397,16 +413,16 @@ nav:
     - Bounties FAQ: bounties/faq.md
     - Contributors Guide: bounties/contributors.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+  - Governance:
+    - Governance: governance/index.md
+    - Polls: governance/polls.md
+    - Proposals: governance/proposals.md
+    - Epochs: governance/epochs.md
+    - Whitepaper: governance/whitepaper.md
   - Foundation:
     - Foundation: about/index.md
     - HBOT Token: about/hbot.md
     - Board of Directors: about/board.md
     - Sponsors & Partners: about/sponsors.md
-    - Governance:
-      - Governance: governance/index.md
-      - Polls: governance/polls.md
-      - Proposals: governance/proposals.md
-      - Epochs: governance/epochs.md
-      - Whitepaper: governance/whitepaper.md
   - Blog: 
     - blog/index.md

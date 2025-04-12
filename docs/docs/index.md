@@ -1,4 +1,4 @@
-Hummingbot is an community-driven, open source Python framework for building automated market making and algorithmic trading bots, maintained by [Hummingbot Foundation](../about/index.md).
+Hummingbot is an community-driven, open source Python framework for building automated market making and algorithmic trading bots, maintained by [Hummingbot Foundation](/about/index.md).
 
 It is designed to be modular and extensible, allowing users to automate any trading strategy on any exchange and blockchain.
 
@@ -6,20 +6,10 @@ It is designed to be modular and extensible, allowing users to automate any trad
 
 We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase. Check out [Install via Docker](/installation/docker) for the basic process.
 
-!!! note
-    If you're a developer looking to customize the software, consider installing Hummingbot from source. There are instructions for macOS, Linux and Windows - | [Source Installation](/installation/source) | 
+!!! note "For Developers"
+    If you're a developer looking to build custom strategies or exchange connectors, consider installing Hummingbot from source. There are instructions for macOS, Linux and Windows - see [Source Installation](/installation/source).
 
-Afterwards, check out the [Hummingbot Blog](/blog) for blog posts and step-by-step tutorials on how to use Hummingbot.
-
-## Ways to use Hummingbot
-
-Hummingbot started as a command line interface (CLI) tool, and the [Hummingbot Client](/client) is still the basic way to interact with the framework. 
-
-Today, there are also other ways to use Hummingbot:
-
-* [Dashboard](/dashboard): A web-based user interface for deploying multi-bot trading strategies
-* [Back-End API](https://github.com/hummingbot/backend-api): Backend API that exposes bot management endpoints for Dashboard and other  to interact with
-* [Quants Lab](https://github.com/hummingbot/quants-lab): A sandbox for users to test their trading ideas and strategies
+Afterwards, check out the **Academy** category in the [Hummingbot Blog](/blog/academy) for blog posts and step-by-step tutorials on how to use Hummingbot.
 
 ## Strategies
 
@@ -46,15 +36,23 @@ Each connector's code is contained in modularized folders in the Hummingbot and/
 
 All Hummingbot Foundation code is maintained and stored in repositories in the official [Github](https://github.com/hummingbot) and [DockerHub](https://hub.docker.com/r/hummingbot/) organization accounts. These are the only code repositories used to release official versions of Hummingbot.  Please download Hummingbot and Hummingbot-related software from only these official sources.
 
-The Hummingbot framework is comprised of multiple code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot), that are maintained by the Foundation alongside individual community members. All code is open sourced under the Apache 2.0 or MIT license.
+The Hummingbot framework is comprised of multiple code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot), that are maintained by the Foundation alongside individual community members. All code is open sourced under the Apache 2.0 or MIT licenses.
+
+Hummingbot started as a command line interface (CLI) tool, and the [Hummingbot Client](/client) is still the basic way to interact with the framework. 
+
+Today, the framework comprises companion modules to assist with other aspects of crypto algorithmic trading:
+
+* [Gateway](/gateway): Middleware to interact with AMM connectors and other DeFi protocols on various blockchains
+* [Dashboard](/dashboard): A web-based user interface for deploying multi-bot trading strategies
+* [Backend API](https://github.com/hummingbot/backend-api): Backend API that exposes bot management endpoints for Dashboard and others to interact with
+* [Quants-Lab](https://github.com/hummingbot/quants-lab): A sandbox for users to test their trading ideas and strategies
+
 
 ## Getting Help
 
 If you encounter issues or have questions, here’s how you can get assistance:
 
 - Consult our [FAQ](../faq.md), [Troubleshooting Guide](../troubleshooting.md), or [Glossary](../glossary.md).
-
-- Explore our [Academy](../academy/index.md) for free resources on algorithmic trading and market making.
 
 - To report bugs or suggest features, submit a [Github issue](https://github.com/hummingbot/hummingbot/issues/new/choose).
 

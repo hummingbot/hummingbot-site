@@ -1,3 +1,6 @@
+!!! tip "Foundation Sponsor"
+    Derive is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Derive, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Decentralized Exchange (**Dex**)
