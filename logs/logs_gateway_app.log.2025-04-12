@@ -1,5 +1,0 @@
-2025-04-12 06:59:10 | info | 	⚡️ Gateway version 2.4.0 starting at http://localhost:15888
-2025-04-12 06:59:10 | info | 	Checking for processes using port 15888...
-2025-04-12 06:59:10 | info | 	No process found using port 15888
-2025-04-12 06:59:10 | info | 	🔴 Running in development mode with (unsafe!) HTTP endpoints
-2025-04-12 06:59:10 | error | 	Failed to load token list: ENOENT: no such file or directory, open 'conf/lists/solana.json'
