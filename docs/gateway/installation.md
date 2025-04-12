@@ -35,10 +35,10 @@ sudo npm install -g pnpm
 ```
 ### Install and Setup Gateway v2.5
 
-1. Clone the `core-2.5` branch in the Gateway repo and navigate into the folder:
+1. Clone the `development` branch in the Gateway repo and navigate into the folder:
 ```bash
 # Clone repository
-git clone https://github.com/hummingbot/gateway.git -b core-2.5
+git clone https://github.com/hummingbot/gateway.git -b development
 cd gateway
 ```
 

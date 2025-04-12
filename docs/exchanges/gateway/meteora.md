@@ -37,7 +37,7 @@ The meteora/clmm connector now uses wallet [pubKey] on solana-mainnet-beta
 ## ⚙️ Connector Configs
 
 * Connector Folder: [/gateway/src/connectors/meteora](https://github.com/hummingbot/gateway/tree/development/src/connectors/meteora)
-* Config Schema: [/gateway/src/services/schemas/meteora-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/meteora.yml)
+* Config Schema: [/gateway/src/services/schema/meteora-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/meteora-schema.json)
 
 Upon Gateway setup, a default `meteora.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/meteora.yml) below:
 

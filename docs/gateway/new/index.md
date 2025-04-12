@@ -27,10 +27,10 @@ Gateway connectors are built on top of supported blockchain chains, creating a d
 3. **RPC Interactions**: Connectors leverage the chain module's established RPC connections to interact with blockchain nodes.
 4. **Network Configuration**: Chain modules handle network selection (mainnet, testnet) and other chain-specific configurations that connectors depend on.
 
-Each chain integration is contained in a sub-folder in the [`src/chains`](https://github.com/hummingbot/gateway/tree/core-2.5/src/connectors) folder. 
+Each chain integration is contained in a sub-folder in the [`src/chains`](https://github.com/hummingbot/gateway/tree/development/src/connectors) folder. 
 
 ## Connector Structure
 
-Each exchange integration is contained in a sub-folder in the [`src/connectors`](https://github.com/hummingbot/gateway/tree/core-2.5/src/connectors) folder. The exchange folder may connectors that fit different schemas, such as `/raydium/amm-routes` for the `raydium/amm` connector and `/raydium/clmm-routes` for the `raydium/clmm` connector.
+Each exchange integration is contained in a sub-folder in the [`src/connectors`](https://github.com/hummingbot/gateway/tree/development/src/connectors) folder. The exchange folder may connectors that fit different schemas, such as `/raydium/amm-routes` for the `raydium/amm` connector and `/raydium/clmm-routes` for the `raydium/clmm` connector.
 
 When developing a new connector, you must first ensure that Gateway supports the underlying blockchain. If your target DEX operates on an unsupported chain, you would need to implement both the chain and the connector modules.

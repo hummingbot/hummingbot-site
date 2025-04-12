@@ -22,7 +22,7 @@ A connector must implement a set of routes that match one or more [Schemas](./sc
 6. Add comprehensive unit tests
 7. Add detailed documentation
 
-For reference implementations, see existing connectors in the [`src/connectors`](https://github.com/hummingbot/gateway/tree/core-2.5/src/connectors) directory.
+For reference implementations, see existing connectors in the [`src/connectors`](https://github.com/hummingbot/gateway/tree/development/src/connectors) directory.
 
 ## 0. Install Gateway from Source
 
@@ -32,7 +32,7 @@ Afterwards, follow the steps below to develop a Gateway connector:
 
 ## 1. Create Configuration Template
 
-📁 **Folder** [`gateway/src/templates`](https://github.com/hummingbot/gateway/tree/core-2.5/src/templates)
+📁 **Folder** [`gateway/src/templates`](https://github.com/hummingbot/gateway/tree/development/src/templates)
 
 Create a template in the templates folder and name it `<exchange_name>.yml`. This file defines the configurations needed for connecting to the exchange.
 
@@ -63,7 +63,7 @@ clmm:
 
 ## 2. Create Configuration Schema
 
-📁 **Folder** [`gateway/src/services/schema`](https://github.com/hummingbot/gateway/tree/core-2.5/src/services/schema)
+📁 **Folder** [`gateway/src/services/schema`](https://github.com/hummingbot/gateway/tree/development/src/services/schema)
 
 Create a schema that validates your configuration template. Name it `<exchange_name>-schema.json`. This ensures type safety and validation of configuration values.
 
@@ -103,7 +103,7 @@ Example schema for Raydium:
 
 ## 3. Create Connector Files
 
-📁 **Folder** [`gateway/src/connectors`](https://github.com/hummingbot/gateway/tree/core-2.5/src/connectors)
+📁 **Folder** [`gateway/src/connectors`](https://github.com/hummingbot/gateway/tree/development/src/connectors)
 
 Create a new directory for your connector with the following structure:
 
@@ -220,7 +220,7 @@ For each route file:
 
 Update GET `/connectors` route:
 
-📁 **File** [`gateway/src/connectors/connector.routes.ts`](https://github.com/hummingbot/gateway/tree/core-2.5/src/connectors/connectors.routes.ts)
+📁 **File** [`gateway/src/connectors/connector.routes.ts`](https://github.com/hummingbot/gateway/tree/development/src/connectors/connectors.routes.ts)
 
 ```typescript
 {
@@ -237,7 +237,7 @@ Update GET `/connectors` route:
 
 Add the new connector routes to Gateway's `app.ts`:
 
-📁 **File** [`gateway/src/app.ts`](https://github.com/hummingbot/gateway/tree/core-2.5/src/app.ts)
+📁 **File** [`gateway/src/app.ts`](https://github.com/hummingbot/gateway/tree/development/src/app.ts)
 
 ```typescript
 { name: 'raydium/clmm', description: 'Raydium CLMM connector endpoints' },

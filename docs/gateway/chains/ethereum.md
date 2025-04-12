@@ -15,10 +15,9 @@
     In the new Gateway architecture, the Ethereum chain integration supports any Ethereum Virtual Machine (EVM)-compatible network, including both Layer 1 and Layer 2 blockchains. 
 
 * **Connector Folder**: [/gateway/src/chains/ethereum](https://github.com/hummingbot/gateway/tree/development/src/chains/ethereum)
-* **Config Schema**: [/gateway/src/services/schemas/raydium-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/raydium.yml)
-* **Configs**: [/gateway/src/templates/ethereum.yml](https://github.com/hummingbot/gateway/tree/development/src/templates/ethereum.yml)
+* **Config Schema**: [/gateway/src/services/schema/ethereum-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/ethereum-schema.json)
 
-Upon Gateway setup, a default `ethereum.yml` configuration file is created in your `conf` folder based on the template below:
+Upon Gateway setup, a default `ethereum.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/ethereum.yml) below:
 
 ```yaml
 networks:

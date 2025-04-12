@@ -11,8 +11,8 @@
 
 ## ⚙️ Chain Configs
 
-* Chain Folder: [/gateway/src/chains/solana](https://github.com/hummingbot/gateway/tree/development/src/chains/solana)
-* Config Schema: [/gateway/src/services/schemas/solana-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/solana.yml)
+* **Chain Folder**: [/gateway/src/chains/solana](https://github.com/hummingbot/gateway/tree/development/src/chains/solana)
+* **Config Schema**: [/gateway/src/services/schema/solana-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/solana-schema.json)
 
 Upon Gateway setup, a default `solana.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/solana.yml) below:
 

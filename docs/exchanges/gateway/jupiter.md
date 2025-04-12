@@ -37,7 +37,7 @@ The jupiter connector now uses wallet [pubKey] on solana-mainnet-beta
 ## ⚙️ Connector Configs
 
 * Connector Folder: [/gateway/src/connectors/jupiter](https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter)
-* Config Schema: [/gateway/src/services/schemas/jupiter-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/jupiter.yml)
+* Config Schema: [/gateway/src/services/schema/jupiter-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/jupiter-schema.json)
 
 Upon Gateway setup, a default `jupiter.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/jupiter.yml) below:
 

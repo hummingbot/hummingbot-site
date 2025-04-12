@@ -38,7 +38,7 @@ The raydium/clmm connector now uses wallet [pubKey] on solana-mainnet-beta
 ## ⚙️ Connector Configs
 
 * Connector Folder: [/gateway/src/connectors/raydium](https://github.com/hummingbot/gateway/tree/development/src/connectors/raydium)
-* Config Schema: [/gateway/src/services/schemas/raydium-schema.json](https://github.com/hummingbot/gateway/tree/development/src/templates/raydium.yml)
+* Config Schema: [/gateway/src/services/schema/raydium-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/raydium-schema.json)
 
 Upon Gateway setup, a default `raydium.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/raydium.yml) below:
 

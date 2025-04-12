@@ -32,7 +32,7 @@ Gateway currently supports the following connector schemas:
 * **AMM**: For Automated Market Maker DEXs (like Raydium Standard and Uniswap V2 pools)
 * **CLMM**: For Concentrated Liquidity Market Maker DEXs (like Raydium Concentrated and Uniswap V3 pools)
 
-The schema files are located in the [`src/schemas/trading-types`](https://github.com/hummingbot/gateway/tree/core-2.5/src/schemas/trading-types) directory of the Gateway repository.
+The schema files are located in the [`src/schemas/trading-types`](https://github.com/hummingbot/gateway/tree/development/src/schemas/trading-types) directory of the Gateway repository.
 
 ### GET /connectors
 
@@ -96,7 +96,7 @@ You can view all available connectors and their supported trading types by makin
 All DEX connectors should implement the Swap schema, which defines endpoints for fetching price quotes and executing swaps.
 
 
-See [swap-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/swap-schema.ts) for details.
+See [swap-schema](https://github.com/hummingbot/gateway/blob/development/src/schemas/trading-types/swap-schema.ts) for details.
 
 #### GET `/quote-swap`
 
@@ -114,7 +114,7 @@ See [swap-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schema
 
 The AMM schema defines standard endpoints for managing liquidity positions on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard) and Uniswap V2 pools.
 
-In addition to the Swap routes above, an AMM DEX connector should define the following additional routes. See [amm-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/amm-schema.ts) for details.
+In addition to the Swap routes above, an AMM DEX connector should define the following additional routes. See [amm-schema](https://github.com/hummingbot/gateway/blob/development/src/schemas/trading-types/amm-schema.ts) for details.
 
 #### GET `/pool-info`
 Gets information about a specific AMM pool including token addresses, fees, prices, and liquidity amounts. Request Type: `GetPoolInfoRequest`, Response Type: `PoolInfo`
@@ -135,7 +135,7 @@ Removes liquidity from an AMM pool and receives back both base and quote tokens.
 
 The CLMM (Concentrated Liquidity Market Maker) schema defines endpoints for managing positions and liquidity in concentrated liquidity pools, like [Raydium Concentrated](https://raydium.io/liquidity-pools/?tab=concentrated) and Uniswap V3/V4 pools.
 
-In addition to the Swap routes above, a CLMM DEX connector should define the following additional routes. See [clmm-schema](https://github.com/hummingbot/gateway/blob/core-2.5/src/schemas/trading-types/clmm-schema.ts) for details.
+In addition to the Swap routes above, a CLMM DEX connector should define the following additional routes. See [clmm-schema](https://github.com/hummingbot/gateway/blob/development/src/schemas/trading-types/clmm-schema.ts) for details.
 
 #### GET `/pool-info`
 Gets detailed information about a CLMM pool including token addresses, fees, current tick, and liquidity distribution. Request Type: `GetPoolInfoRequest`, Response Type: `PoolInfo`
