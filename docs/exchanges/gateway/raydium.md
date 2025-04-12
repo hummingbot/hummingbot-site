@@ -1,3 +1,6 @@
+!!! note
+    This connector has been upgraded to the **Gateway New (v2.5+)** standard and available in the current `development` branch. For installation instructions, refer to the [Installation & Setup](../../gateway/installation.md) page.
+    
 ## 🛠 Connector Info
 
 * **Chain**: [Solana](/gateway/chains/solana)

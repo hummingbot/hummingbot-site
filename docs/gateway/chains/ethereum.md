@@ -1,5 +1,5 @@
 !!! note
-    This chain has been upgraded to the **Gateway New (v2.5+)** architecture. For installation instructions, refer to the [Installation Guide](../installation.md).
+    This chain has been upgraded to the **Gateway New (v2.5+)** architecture and is available in the current `development` branch. For installation instructions, refer to the [Installation & Setup](../installation.md) page.
 
 ## ℹ️ Chain Info
 

@@ -43,7 +43,7 @@ Here are the CLOB connectors in the codebase for the current [Epoch](/governance
 
 | Exchange | Foundation Partner | Spot | Perp | Connector Guide |
 |----------|-------------------|------|------|----------------|
-| [Binance](./binance/index.md) | ✓ | ✓ | ✓ | [Guide](/academy-content/using-binance-with-hummingbot) |
+| [Binance](./binance/index.md) | ✓ | ✓ | ✓ | [Guide](/blog/using-binance-with-hummingbot) |
 | [Bitmart](./bitmart/index.md) | ✓ | ✓ | ✓ |  |
 | [Derive](./derive/index.md) | ✓ | ✓ | ✓ | [Guide](/blog/running-a-trading-bot-with-hummingbot-on-derive/) |
 | [dYdX](./dydx/index.md) | ✓ | | ✓ | [Guide](/blog/running-a-trading-bot-with-hummingbot-dashboard-on-dydx-v4/) |

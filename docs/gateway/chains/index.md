@@ -1,5 +1,7 @@
 Chain integrations add support for a Layer 1 blockchain and their Layer 2 networks into [Gateway](/gateway), enabling wallet access, node RPC interactions, and other support needed by DEXs supported by Gateway. Each chain integration is customized for a particular blockchain's idiosyncrasies to enable this level of standardization.
 
+See the chain section in [Route Schemas](/gateway/schemas) for detailed information about the standardized endpoints that each chain integration should define.
+
 ## New vs Legacy
 
 [Legacy Gateway](/gateway/legacy) (v2.2 and before) supported a wide range of chains and their networks including Ethereum, Algorand, Avalanche, BNB Chain, Cosmos, Cronos, Ethereum Classic, Osmosis, Polygon, and Solana. However, its inflexible route architecture tight coupling with the Hummingbot client made it difficult to support more types of trading interactions.
@@ -13,6 +15,8 @@ Chain support is determined by the decentralized exchanges (DEX) that HBOT holde
 New DEX connectors and their chains may be added by community members via [New Connector Proposals](/governance/proposals), which require a minimum HBOT balance to create.
 
 Here are the chains supported in the Gateway codebase for current [Epoch](/governance/epochs), and whether or not they have been upgraded to the new Gateway architecture.
+
+## Current Chains Supported
 
 | Base Chain | Networks | Legacy/New | DEXs Supported |
 |----------|----------|------------|-----------|

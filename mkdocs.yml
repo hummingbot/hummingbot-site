@@ -210,7 +210,6 @@ nav:
         - Ping Pong: strategy-configs/ping-pong.md
       - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
       - AMM Arbitrage: strategies/amm-arbitrage.md
-      - AMM-V3 LP: strategies/amm-v3-lp.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
       - Cross-Exchange Mining: strategies/cross-exchange-mining.md
       - Hedge: strategies/hedge.md
