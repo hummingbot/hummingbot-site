@@ -55,8 +55,8 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 | Inclusion Threshold Pass/Fail  | Chain Connector |
 |-----------------------------------------------------------------------------------|---------|
-| ✅ | Uniswap, Pancakeswap, Balancer, Curve, Sushiswap, Trader Joe, Quickswap, Mad Meerkat, Tinyman, VVS, Carbon, OpenOcean |
-| ❌ | Pangolin, XSSwap |
+| ✅ | Uniswap, Pancakeswap, Balancer, Curve, Sushiswap, Trader Joe, Quickswap, Mad Meerkat, Tinyman, VVS, Carbon |
+| ❌ | OpenOcean, Pangolin, XSSwap |
 
 ## Epoch 10 (Q4 2024)
 
