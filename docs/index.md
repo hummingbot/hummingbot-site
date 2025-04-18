@@ -120,7 +120,7 @@ hide:
   </div>
 </div>
 
-### See [Sponsors & Partners](/about/sponsors/) for how Hummingbot Foundation works with these institutions.
+### See [Exchanges](/exchanges/) for how Hummingbot Foundation works with these institutions.
 
 ---
 

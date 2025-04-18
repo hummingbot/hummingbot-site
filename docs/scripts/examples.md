@@ -47,6 +47,44 @@ All sample scripts below can be found in the root [/scripts](https://github.com/
 * **Release Added**: [1.10.0](../release-notes/1.10.0.md)
 * **Description**:  A simplified version of the [Cross Exchange Market Making](/strategies/cross-exchange-market-making/) strategy, this bot makes a market on the maker pair and hedges any filled trades in the taker pair. If the spread (difference between maker order price and taker hedge price) dips below `min_spread`, the bot refreshes the order
 
+### AMM Data Feed
+* **Code**: [amm_data_feed_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_data_feed_example.py)
+* **Author**: [fengtality](https://github.com/fengtality)
+* **Release Added**: [2.4.0](../release-notes/2.4.0.md)
+* **Description**: Demonstrates using `AmmGatewayDataFeed` in Hummingbot to fetch real-time price data from decentralized exchanges (DEXs) such as Uniswap (Ethereum) and Jupiter (Solana). The script initializes two AMM data feeds for specified trading pairs and displays their latest price data when ready.
+
+### AMM Price
+* **Code**: [amm_price_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py)
+* **Author**: [fengtality](https://github.com/fengtality)
+* **Release Added**: [2.5.0](../release-notes/2.5.0.md)
+* **Description**: Demonstrates fetching real-time quotes using the `GatewaySwap` connector within Hummingbot for decentralized exchanges (DEXs). The script retrieves swap prices for specified trading pairs, allowing users to easily integrate accurate pricing data from protocols like Jupiter on Solana.
+
+### AMM Trade
+* **Code**: [amm_trade_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py)
+* **Author**: [fengtality](https://github.com/fengtality)
+* **Release Added**: [2.5.0](../release-notes/2.5.0.md)
+* **Description**: Monitors real-time DEX prices using the `GatewaySwap` connector and automatically executes swaps once specified price thresholds are reached. The script allows users to configure conditions (price above or below a target) and handles trade execution seamlessly on decentralized exchanges like Jupiter on Solana or Uniswap on Ethereum.
+
+### CLMM Position Manager
+* **Code**: [clmm_manage_position](https://github.com/hummingbot/hummingbot/blob/development/scripts/clmm_manage_position.py)
+* **Author**: [fengtality](https://github.com/fengtality)
+* **Release Added**: [2.5.0](../release-notes/2.5.0.md)
+* **Description**: Actively monitors prices on a Concentrated Liquidity Market Maker (CLMM) pool via Gateway, opening a liquidity position when a specified target price is reached. The script manages the position dynamically, automatically closing it if the market moves outside the defined range for a certain duration, ensuring efficient liquidity management on pools like Meteora or Raydium on Solana.
+
+
+### Download Order Book and Trades
+* **Code**: [download_order_book_and_trades](https://github.com/hummingbot/hummingbot/blob/development/scripts/download_order_book_and_trades.py)
+* **Author**: [cardosofede](https://github.com/cardosofede)
+* **Release Added**: [2.3.0](../release-notes/2.3.0.md)
+* **Description**: Continuously captures and stores live trade data and order book snapshots for specified trading pairs from a selected exchange. This strategy writes data to daily `.txt` files in JSON format, ideal for market data analysis, backtesting, or creating custom datasets from exchanges like Binance using Hummingbot.
+
+### Wallet Hedge Example
+* **Code**: [wallet_hedge_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/wallet_hedge_example.py)
+* **Author**: [fengtality](https://github.com/fengtality)
+* **Release Added**: [2.4.0](../release-notes/2.4.0.md)
+* **Description**: Uses the `WalletTrackerDataFeed` to monitor on-chain wallet balances and automatically hedges any balance changes by placing market orders on a centralized exchange. Ideal for maintaining a neutral position between a wallet (e.g. on Ethereum Goerli) and an exchange like KuCoin, this strategy triggers buy/sell orders once the balance delta exceeds a defined threshold.
+
+
 ## V2 Scripts
 
 These scripts are more complex and use StrategyV2 components such as Executors and the Market Data Provider.
@@ -79,12 +117,6 @@ These scripts are more complex and use StrategyV2 components such as Executors a
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
 * **Description**: This script utilizes [TWAPExecutors](/v2-strategies/executors/twapexecutor/) to buy/sell a block of assets. 
 
-### V2 XEMM
-
-* **Code**: [v2_xemm.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_xemm.py)
-* **Author**:  [cardosofede](https://github.com/cardosofede)
-* **Release Added**: [1.27.0](../release-notes/1.27.0.md)
-* **Description**: This script utilizes [XEMMExecutors](/v2-strategies/executors/xemm-executor/) to implement a more streamlined version of the [Cross Exchange Market Making](/strategies/cross-exchange-market-making/) strategy.
 
 ## Other Scripts
 
