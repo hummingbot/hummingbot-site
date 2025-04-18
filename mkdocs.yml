@@ -170,6 +170,8 @@ nav:
       - Install via Docker: installation/docker.md
       - Install via Source: installation/source.md
       - Post-Installation: installation/post-installation.md
+    - Guides:
+      - Guides: guides/index.md
     - Scripts:
       - Scripts: scripts/index.md
       - Sample Scripts: scripts/examples.md
@@ -349,6 +351,7 @@ nav:
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
+    - Active Campaigns: community/campaigns.md
     - Rewards Programs and Competitions: community/rewards.md
     - Earn Bounties: bounties/contributors.md
     - Developer Resources:
