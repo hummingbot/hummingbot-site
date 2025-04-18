@@ -10,11 +10,11 @@ These guides will help you get started with Hummingbot using different interface
  Learn how to install Hummingbot 2.0 and use the Dashboard app to connect exchange credentials, create/backtest strategy configurations, and deploy a fleet of bots
 
 - **[Hummingbot Docker Quickstart Guide](https://hummingbot.org/blog/hummingbot-docker-quickstart-guide/)**  
- Step-by-step instructions to install and deploy Hummingbot using Docker, including setting up the interface and running your first algorithmic trading strateg.
+ Step-by-step instructions to install and deploy Hummingbot using Docker, including setting up the interface and running your first algorithmic trading strategy.
 
 <br>
 
-## 🔌 Connector Guide
+## 🔌 Connector Guides
 
 Integrate Hummingbot with various exchanges and platforms using these connector guides:
 
@@ -36,7 +36,7 @@ Integrate Hummingbot with various exchanges and platforms using these connector 
 
 <br>
 
-## 🧠 Strategy Developmet
+## 🧠 Strategy Development
 
 Enhance your trading strategies with advanced development guides
 
