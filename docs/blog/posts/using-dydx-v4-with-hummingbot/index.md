@@ -3,7 +3,6 @@ date: 2024-09-18
 authors:
   - foundation
 categories:
-  - Academy
   - Connector Guides
 ---
 

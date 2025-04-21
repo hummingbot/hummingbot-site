@@ -3,7 +3,6 @@ date: 2024-03-14
 authors:
   - community
 categories:
-  - Academy
   - Connector Guides
   - Community Posts
 ---

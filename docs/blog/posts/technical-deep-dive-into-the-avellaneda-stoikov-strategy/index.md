@@ -3,9 +3,6 @@ date: 2021-04-22
 authors:
   - coinalpha
 categories:
-  - Engineering
-  - Academy
-tags:
   - Strategy Guides
 ---
 

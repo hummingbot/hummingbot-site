@@ -3,8 +3,6 @@ date: 2023-04-21
 authors:
   - fede
 categories:
-  - Academy
-tags:
   - Strategy Guides
 ---
 

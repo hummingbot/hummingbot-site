@@ -15,7 +15,7 @@ In late 2021, Hummingbot Foundation was launched as an experimental decentralize
 
 In an industry perceived by outsiders to be zero-sum and mercenary, Hummingbot aimed to prove that crypto algorithmic trading could be **positive-sum**, given the proper incentive structure. Our mission is to give everyone access to free tools and knowledge that help them make money by doing the same basic job, providing liquidity and making markets more efficient, as the world's most secretive, sophisticated quantitative hedge funds. 
 
-It's been a long road filled with landmines and near-misses (like FTX!), but Hummingbot Foundation expects to be economically sustainable going forward, thanks to our [partnerships](/about/sponsors/) with leading exchanges and blockhain protocols. Economic viability allows the Foundation to focus on decentralizing governance and leveraging the community to expand the value of the Hummingbot codebase.
+It's been a long road filled with landmines and near-misses (like FTX!), but Hummingbot Foundation expects to be economically sustainable going forward, thanks to our [partnerships](/exchanges/) with leading exchanges and blockhain protocols. Economic viability allows the Foundation to focus on decentralizing governance and leveraging the community to expand the value of the Hummingbot codebase.
 
 ## Announcing Botcamp
 
