@@ -1,8 +1,16 @@
-Hummingbot Foundation works closely with leading centralized and decentralized exchanges to develop and maintain high-quality, standardized integrations, ensuring reliable integration with Hummingbot's extensive strategy library. Our dedicated team provides technical support, continuous quality assurance, and regular updates to maintain compatibility with exchange API changes.
+## Exchange Inclusion
+
+Hummingbot [connectors](/connectors) link its internal trading engine to different cryptocurrency exchanges via WebSocket and/or REST API. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book and blockchain data, as well as sending and cancelling transactions and orders.
+
+Since each exchange connector requires ongoing maintenance and may conflict with other connectors, the primary goal of the Hummingbot Foundation governance process is to let HBOT holders decide which exchanges are supported by the official Hummingbot codebase.
+
+HBOT holders may propose to add new exchanges to the Hummingbot codebase via [New Connector Proposals](/governance/proposals), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create. For existing connectors, quarterly [Exchange Connector Polls](/governance/polls) determines which exchanges should be included in future releases and allocates HBOT bounties toward the supported exchanges.
 
 ## Exchange Sponsors
 
- Sponsors benefit from exposure to Hummingbot's active trader community through our documentation, announcements, and communication channels. For more information about sponsorship opportunities, please contact Foundation team members via Discord.
+Exchanges may opt to sponsor the work of the not-for-profit Hummingbot Foundation. For these partners, we engage community developers to build and maintain high-quality, standardized connectors, ensuring reliable integration with Hummingbot's extensive strategy library. Our dedicated team provides oversight over the build process, continuous quality assurance, and assistance with the governance process.
+
+Sponsors benefit from exposure to Hummingbot's active trader community through our documentation, announcements, and communication channels. For more information about sponsorship opportunities, please contact Foundation team members via Discord or email <contact@hummingbot.org>.
 
 <div class="flex-container">
   <div class="flex-item">

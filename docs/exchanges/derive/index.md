@@ -1,9 +1,9 @@
 !!! tip "Foundation Sponsor"
-    Derive is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Derive, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+    Derive is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Derive, you're supporting the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Derive referral link](https://www.derive.xyz/invite/7SA0V). Thanks for your help! 🙏
 
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (**Dex**)
+- **Exchange Type**: Decentralized Exchange (**DEX**)
 - **Market Type**: Central Limit Order Book (**CLOB**)
 
 | Component | Status | Connector Version | V2 Strategies | Notes | 

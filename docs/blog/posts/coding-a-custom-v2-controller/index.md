@@ -4,9 +4,6 @@ authors:
   - community
 categories:
   - Community Posts
-  - Engineering
-  - Academy
-tags:
   - Strategy Guides
 ---
 
