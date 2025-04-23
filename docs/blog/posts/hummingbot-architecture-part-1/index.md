@@ -4,9 +4,6 @@ authors:
   - martin
 categories:
   - Engineering
-  - Academy
-tags:
-  - Hummingbot Technical Architecture 
 ---
 
 # Hummingbot Architecture - Part 1

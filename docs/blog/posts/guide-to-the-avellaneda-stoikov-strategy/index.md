@@ -3,8 +3,6 @@ date: 2021-04-13
 authors:
   - coinalpha
 categories:
-  - Academy
-tags:
   - Strategy Guides
 ---
 

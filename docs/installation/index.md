@@ -75,24 +75,6 @@ After all containers have started, access the Dashboard at <http://localhost:850
 !!! note "Cloud Servers"
     If you are using a cloud server or VPS, replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow inbound connections to the necessary ports.  
 
----
-
-## Dashboard Quickstart
-
-Once you've installed Dashboard, check out the [Hummingbot Dashboard Quickstart](../blog/posts/quickstart-dashboard/index.md) guide, or the links below with a short explanation of each page (also in the sidebar).
-
-- [Adding Credentials:](credentials.md)
-
-- [Viewing Portfolio:](portfolio.md)
-
-- [Configuring Strategies:](config.md)
-
-- [Backtesting Strategies:](backtest.md)
-
-- [Deploying Instances:](deploy.md)
-
-- [Managing Instances:](instances.md)    
-
 
 ## Standalone Hummingbot
 

@@ -1,3 +1,6 @@
+!!! tip "Foundation Sponsor"
+    Hyperliquid is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Hyperliquid, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Decentralized Exchange (**DEX**)
@@ -120,7 +123,7 @@ In a Hummingbot script, import `CandlesFactory` to create the candles that you w
 ```python
     from hummingbot.data_feed.candles_feed.candles_factory import CandlesFactory
     candles = CandlesFactory.get_candle(connector="hyperliquid",
-                                        trading_pair="ETH-USDT",
+                                        trading_pair="ETH-USDC",
                                         interval="1m", max_records=50)
 ```
 

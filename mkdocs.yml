@@ -170,13 +170,16 @@ nav:
       - Install via Docker: installation/docker.md
       - Install via Source: installation/source.md
       - Post-Installation: installation/post-installation.md
+    - Guides & Tutorials:
+      - Guides: guides/index.md
+    - Scripts:
+      - Scripts: scripts/index.md
+      - Sample Scripts: scripts/examples.md
+      - Script Walkthrough: v2-strategies/walkthrough.md
+      - Scripts Cheatsheat: scripts/cheatsheet.md
     - Strategies V2:
       - Strategies V2: strategies/index.md
       - Architecture: v2-strategies/index.md
-      - Scripts:
-        - Scripts: scripts/index.md
-        - Sample Scripts: scripts/examples.md
-        - Scripts Cheatsheat: scripts/cheatsheet.md
       - Market Data Provider:
         - Market Data Provider: v2-strategies/data/index.md
         - Candles: v2-strategies/candles/index.md
@@ -210,7 +213,6 @@ nav:
         - Ping Pong: strategy-configs/ping-pong.md
       - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
       - AMM Arbitrage: strategies/amm-arbitrage.md
-      - AMM-V3 LP: strategies/amm-v3-lp.md
       - Avellaneda Market Making: strategies/avellaneda-market-making.md
       - Cross-Exchange Mining: strategies/cross-exchange-mining.md
       - Hedge: strategies/hedge.md
@@ -218,56 +220,21 @@ nav:
       - Perpetual Market Making: strategies/perpetual-market-making.md
       - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
       - TWAP: strategies/twap.md
-    - CLOB Connectors:
-      - CLOB Connectors: exchanges/index.md
-      - AscendEx : exchanges/ascendex/index.md
-      - Binance: exchanges/binance/index.md
-      - Bitstamp: exchanges/bitstamp/index.md
-      - Bitrue: exchanges/bitrue.md
-      - Bitget: exchanges/bitget-perpetual.md
-      - BingX: exchanges/bing_x/index.md
-      - Bitmart: exchanges/bitmart/index.md
-      - Bybit: exchanges/bybit.md
-      - BTC Markets: exchanges/btc-markets.md
-      - Coinbase: exchanges/coinbase.md
-      - Cube: exchanges/cube/index.md
-      - Derive: exchanges/derive/index.md
-      - Dexalot: exchanges/dexalot.md
-      - dYdX: exchanges/dydx.md
-      - Gate.io: exchanges/gate-io/index.md
-      - Hashkey: exchanges/hashkey/index.md
-      - Hyperliquid: exchanges/hyperliquid.md
-      - HTX: exchanges/htx/index.md
-      - Kraken: exchanges/kraken/index.md
-      - Kucoin: exchanges/kucoin/index.md
-      - Injective Helix: exchanges/injective.md
-      - Polkadex: exchanges/polkadex.md
-      - MEXC: exchanges/mexc/index.md
-      - NDAX: exchanges/ndax.md
-      - OKX: exchanges/okx/okx.md
-      - Tegro: exchanges/tegro/index.md
-      - Vertex: exchanges/vertex.md
-      - XRP Ledger: exchanges/xrpl.md
-    - AMM Connectors:
-      - AMM Connectors: dex-connectors/index.md
-      - Balancer: exchanges/balancer.md
-      - ETCSwap: exchanges/etcSwap.md
-      - Mad Meerkat: exchanges/mad-meerkat.md
-      - Curve: exchanges/curve.md
-      - Carbon: exchanges/carbon.md
-      - Jupiter: exchanges/jupiter.md
-      - OpenOcean: exchanges/openocean.md
-      - Osmosis: exchanges/osmosis.md
-      - Pancakeswap : exchanges/pancakeswap.md
-      - Pangolin: exchanges/pangolin.md
-      - Quickswap: exchanges/quickswap.md
-      - Sushiswap: exchanges/sushiswap.md
-      - Tinyman: exchanges/tinyman.md
-      - Telos: exchanges/telos.md
-      - TraderJoe: exchanges/traderjoe.md
-      - Uniswap : exchanges/uniswap.md
-      - VVS: exchanges/vvs.md
-      - XSwap: exchanges/xswap.md
+    - Connectors:
+      - Connectors: connectors/index.md
+      - CLOB Connectors: connectors/clob.md
+      - Gateway DEX Connectors: connectors/gateway.md
+      - Building CLOB Connectors:
+        - Building CLOB Connectors: developers/connectors/index.md
+        - Exchange API Requirements: developers/connectors/build.md
+        - Connector Architecture: developers/connectors/architecture/index.md
+        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
+        - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
+        - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
+        - Spot Connector QA Checklist: developers/connectors/test.md
+        - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
+        - Perp Connector QA Checklist:  developers/connectors/test-perp.md
+      - Building Gateway DEX Connectors: gateway/new-connector.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -297,6 +264,33 @@ nav:
         - Rate Oracle: strategy-configs/rate-oracle.md
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
+    - Gateway DEX Middleware:
+      - Gateway DEX Middleware: gateway/index.md
+      - Gateway New (v2.5+):
+        - Gateway New (v2.5+): gateway/new/index.md
+        - Installation & Setup: gateway/installation.md
+        - Configuration: gateway/configuration.md
+        - Route Schemas: gateway/schemas.md
+        - Sample Strategies: gateway/strategies.md
+      - Gateway Legacy (v2.2):
+        - Gateway Legacy (v2.2): gateway/legacy/index.md
+        - Installation: gateway/legacy/installation.md
+        - Testing Gateway: gateway/legacy/testing/index.md
+        - Setting up Gateway: gateway/legacy/setup.md
+        - Working with Tokens: gateway/legacy/tokens/index.md
+        - Strategies & Scripts: gateway/legacy/running-dex-bots.md
+      - Supported Chains:
+        - Supported Chains: gateway/chains/index.md
+        - 🔼 Solana: gateway/chains/solana.md
+        - 🔼 Ethereum: gateway/chains/ethereum.md
+        - Algorand: gateway/chains/algorand.md
+        - Avalanche: gateway/chains/avalanche.md
+        - BNB Chain: gateway/chains/bnb-chain.md
+        - Cosmos: gateway/chains/cosmos.md
+        - Cronos: gateway/chains/cronos.md
+        - Ethereum Classic: gateway/chains/ethereum-classic.md
+        - Osmosis: gateway/chains/osmosis-chain.md
+        - Polygon: gateway/chains/polygon.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
@@ -305,54 +299,73 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Gateway AMM Middleware:
-      - Gateway AMM Middleware: gateway/index.md
-      - Installation: gateway/installation.md
-      - Testing Gateway: gateway/testing.md
-      - Setting up Gateway: gateway/setup.md
-      - Working with Tokens: gateway/tokens.md
-      - Running Strategies and Scripts: gateway/running-dex-bots.md
+    - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
     - Reported Volumes: reporting.md
+  - Exchanges:
+    - Exchanges: exchanges/index.md
+    - 🔥 Bitmart: exchanges/bitmart/index.md
+    - 🔥 Binance: exchanges/binance/index.md
+    - 🔥 Derive: exchanges/derive/index.md
+    - 🔥 dYdX: exchanges/dydx.md
+    - 🔥 Gate.io: exchanges/gate-io/index.md
+    - 🔥 HTX: exchanges/htx/index.md
+    - 🔥 Hyperliquid: exchanges/hyperliquid.md
+    - 🔥 Kucoin: exchanges/kucoin/index.md
+    - 🔥 OKX: exchanges/okx/index.md
+    - 🔥 XRP Ledger: exchanges/xrpl.md
+    - AscendEx : exchanges/ascendex/index.md
+    - Balancer: exchanges/gateway/balancer.md
+    - Bitstamp: exchanges/bitstamp/index.md
+    - Bitrue: exchanges/bitrue.md
+    - Bitget: exchanges/bitget-perpetual.md
+    - BingX: exchanges/bing_x/index.md
+    - Bybit: exchanges/bybit.md
+    - BTC Markets: exchanges/btc-markets.md
+    - Carbon: exchanges/gateway/carbon.md
+    - Coinbase: exchanges/coinbase.md
+    - Cube: exchanges/cube/index.md
+    - Curve: exchanges/gateway/curve.md
+    - Dexalot: exchanges/dexalot.md
+    - ETCSwap: exchanges/gateway/etcSwap.md
+    - Hashkey: exchanges/hashkey/index.md
+    - Injective Helix: exchanges/injective.md
+    - Jupiter: exchanges/gateway/jupiter.md
+    - Kraken: exchanges/kraken/index.md
+    - Meteora: exchanges/gateway/meteora.md
+    - MEXC: exchanges/mexc/index.md
+    - NDAX: exchanges/ndax.md
+    - Osmosis: exchanges/gateway/osmosis.md
+    - Mad Meerkat: exchanges/gateway/mad-meerkat.md
+    - Pancakeswap: exchanges/gateway/pancakeswap.md
+    - Raydium: exchanges/gateway/raydium.md
+    - Quickswap: exchanges/gateway/quickswap.md
+    - Sushiswap: exchanges/gateway/sushiswap.md
+    - Tinyman: exchanges/gateway/tinyman.md
+    - TraderJoe: exchanges/gateway/traderjoe.md
+    - Uniswap : exchanges/gateway/uniswap.md
+    - Tegro: exchanges/tegro/index.md
+    - Vertex: exchanges/vertex.md
+    - VVS: exchanges/gateway/vvs.md    
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
-    - Rewards Programs and Competitions: community/rewards.md
+    - Reward Programs: community/rewards.md
+    - Developer Resources:
+      - Developer Resources: developers/index.md
+      - Using Debugger Tools: installation/debug.md
+      - Debugging & Testing Connectors: developers/connectors/debug.md
     - Certification Program:
       - Certification: certification/index.md
       - Certifications List: certification/list.md
       - Botcamp ↗️: https://www.botcamp.xyz
       - Botcamp FAQ: botcamp/faq.md
     - Upcoming Events ↗️: https://lu.ma/hummingbot
-  - Developers:
-    - Developers: developers/index.md
-    - Contribution Guidelines: developers/contributions.md
-    - How to Fork Repos: developers/forking.md
-    - Using Debugger Tools: installation/debug.md
-    - Building CLOB Connectors:
-      - Building CLOB Connectors: developers/connectors/index.md
-      - Exchange API Requirements: developers/connectors/build.md
-      - Connector Architecture: developers/connectors/architecture/index.md
-      - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-      - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
-      - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
-      - Spot Connector QA Checklist: developers/connectors/test.md
-      - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
-      - Perp Connector QA Checklist:  developers/connectors/test-perp.md
-      - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Building AMM Connectors: gateway/adding-dex-connectors.md
-    - Building Strategies: 
-      - Building Strategies: developers/strategies/index.md
-      - Key Concepts: developers/strategies/key-concepts.md
-      - Strategy Architecture: developers/strategies/architecture.md
-      - Strategy Configs: developers/strategies/config.md
-      - Tutorial: developers/strategies/tutorial.md
-    - Brokers Module: installation/broker.md
-    - Earn Developer Bounties: bounties/contributors.md
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.5.0: release-notes/2.5.0.md
     - 2.4.0: release-notes/2.4.0.md
     - 2.3.0: release-notes/2.3.0.md
     - 2.2.0: release-notes/2.2.0.md
@@ -401,7 +414,6 @@ nav:
     - Foundation: about/index.md
     - HBOT Token: about/hbot.md
     - Board of Directors: about/board.md
-    - Sponsors & Partners: about/sponsors.md
     - Governance:
       - Governance: governance/index.md
       - Polls: governance/polls.md

@@ -1,5 +1,6 @@
-!!! tip "Support Hummingbot"
-    Hummingbot Foundation has a fee share partnership with HTX. When you use our software to trade on HTX, a custom API header tells Huobi that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Huobi referral link](https://www.htx.com.pk/invite/en-us/1h?invite_code=re4w9223) and enter that account's API keys into Hummingbot! Thanks for your support! 🙏
+!!! tip "Foundation Partner"
+    Huobi is an [exchange partner](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Huobi, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Huobi referral link](https://www.htx.com.pk/invite/en-us/1h?invite_code=re4w9223) and enter that account's API keys into Hummingbot and run bots! Thanks for your help! 🙏
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Centralized Exchange (**CEX**)

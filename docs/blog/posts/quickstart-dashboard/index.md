@@ -3,7 +3,6 @@ date: 2024-08-01
 authors:
   - foundation
 categories:
-  - Academy
   - Quickstart Guides
 ---
 
