@@ -29,7 +29,7 @@ Gateway provides standardized endpoints for interacting with different blockchai
 Gateway currently supports the following connector schemas:
 
 * **Swap**: For taker-only DEXs and DEX aggregators
-* **AMM**: For Automated Market Maker DEXs (like Raydium Standard and Uniswap V2 pools)
+* **AMM**: For Automated Market Maker DEXs (like Raydium Standard, Uniswap V2 pools, and Hydration)
 * **CLMM**: For Concentrated Liquidity Market Maker DEXs (like Raydium Concentrated and Uniswap V3 pools)
 
 The schema files are located in the [`src/schemas/trading-types`](https://github.com/hummingbot/gateway/tree/development/src/schemas/trading-types) directory of the Gateway repository.
@@ -86,6 +86,21 @@ You can view all available connectors and their supported trading types by makin
           ]
         }
       ]
+    },
+    {
+      "name": "hydration/amm",
+      "trading_types": [
+        "amm",
+        "swap"
+      ],
+      "available_networks": [
+        {
+          "chain": "polkadot",
+          "networks": [
+            "mainnet"
+          ]
+        }
+      ]
     }
   ]
 }
@@ -112,7 +127,7 @@ See [swap-schema](https://github.com/hummingbot/gateway/blob/development/src/sch
 
 ### AMM Schema
 
-The AMM schema defines standard endpoints for managing liquidity positions on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard) and Uniswap V2 pools.
+The AMM schema defines standard endpoints for managing liquidity positions on AMM (Automated Market Maker) DEXs, like [Raydium Standard](https://raydium.io/liquidity-pools/?tab=standard), Uniswap V2 pools, and [Hydration](https://app.hydration.net/liquidity/all-pools).
 
 In addition to the Swap routes above, an AMM DEX connector should define the following additional routes. See [amm-schema](https://github.com/hummingbot/gateway/blob/development/src/schemas/trading-types/amm-schema.ts) for details.
 
