@@ -11,7 +11,7 @@ Gateway schemas define standardized endpoints that chains and connectors must im
 Gateway currently supports the following connector schemas:
 
 * **Swap**: For taker-only DEXs and DEX aggregators.
-* **AMM**: For Automated Market Maker DEXs (like Raydium Standard and Uniswap V2 pools)
+* **AMM**: For Automated Market Maker DEXs (like Raydium Standard, Uniswap V2 pools, and Hydration)
 * **CLMM**: For Concentrated Liquidity Market Maker DEXs (like Raydium Concentrated and Uniswap V3 pools)
 
 The schema files are located in the [`src/schemas/trading-types`](https://github.com/hummingbot/gateway/tree/development/src/schemas/trading-types) directory of the Gateway repository.
@@ -27,6 +27,7 @@ Here are the Gateway connectors in the codebase for the current [Epoch](/governa
 
 | Exchange | Chain Type | Legacy | New | Connector Types | Guide |
 |----------|------------|--------|-----|----------------|-------|
+| [Hydration](/exchanges/gateway/hydration) | `polkadot` | | ✓ | `amm`, `swap` | |
 | [Jupiter](/exchanges/gateway/jupiter) | `solana` | | ✓ | `swap` | |
 | [Meteora](/exchanges/gateway/meteora) | `solana` | | ✓ | `clmm` | |
 | [Raydium](/exchanges/gateway/raydium) | `solana` | | ✓ | `clmm`, `amm` | |

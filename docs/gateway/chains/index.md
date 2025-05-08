@@ -6,7 +6,7 @@ See the chain section in [Route Schemas](/gateway/schemas) for detailed informat
 
 [Legacy Gateway](/gateway/legacy) (v2.2 and before) supported a wide range of chains and their networks including Ethereum, Algorand, Avalanche, BNB Chain, Cosmos, Cronos, Ethereum Classic, Osmosis, Polygon, and Solana. However, its inflexible route architecture tight coupling with the Hummingbot client made it difficult to support more types of trading interactions.
 
-The [new version](/gateway/new) of Gateway (v2.5+) is more flexible but initially supports only a few base chain architectures (Solana and Ethereum). The Ethereum chain integration now supports any EVM-compatible network, including other Layer 1 networks such as Avalanche, BNB Chain, and Polygon.
+The [new version](/gateway/new) of Gateway (v2.5+) is more flexible but initially supports only a few base chain architectures (Solana, Ethereum, and Polkadot). The Ethereum chain integration now supports any EVM-compatible network, including other Layer 1 networks such as Avalanche, BNB Chain, and Polygon. Polkadot supports Hydration parachain.
 
 ## What Determines Chain Inclusion?
 
@@ -20,6 +20,7 @@ Here are the chains supported in the Gateway codebase for current [Epoch](/gover
 
 | Base Chain | Networks | Legacy/New | DEXs Supported |
 |----------|----------|------------|-----------|
+| [Polkadot](polkadot.md) | mainnet | New | [Hydration](/exchanges/gateway/hydration) |
 | [Solana](solana.md) | mainnet-beta, devnet | New | [Jupiter](/exchanges/gateway/jupiter), [Meteora](/exchanges/gateway/meteora), [Raydium](/exchanges/gateway/raydium) |
 | [Ethereum](ethereum.md) | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | New | [Uniswap](/exchanges/gateway/uniswap), [Balancer](/exchanges/gateway/balancer), [Carbon](/exchanges/gateway/carbon), [Curve](/exchanges/gateway/curve), [Sushiswap](/exchanges/gateway/sushiswap) |
 | [Algorand](algorand.md) | mainnet, testnet | Legacy | [Tinyman](/exchanges/gateway/tinyman) |

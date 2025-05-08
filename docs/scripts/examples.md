@@ -51,19 +51,19 @@ All sample scripts below can be found in the root [/scripts](https://github.com/
 * **Code**: [amm_data_feed_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_data_feed_example.py)
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [2.4.0](../release-notes/2.4.0.md)
-* **Description**: Demonstrates using `AmmGatewayDataFeed` in Hummingbot to fetch real-time price data from decentralized exchanges (DEXs) such as Uniswap (Ethereum) and Jupiter (Solana). The script initializes two AMM data feeds for specified trading pairs and displays their latest price data when ready.
+* **Description**: Demonstrates using `AmmGatewayDataFeed` in Hummingbot to fetch real-time price data from decentralized exchanges (DEXs) such as Uniswap (Ethereum), Jupiter (Solana), and Hydration (Polkadot). The script initializes two AMM data feeds for specified trading pairs and displays their latest price data when ready.
 
 ### AMM Price
 * **Code**: [amm_price_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py)
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [2.5.0](../release-notes/2.5.0.md)
-* **Description**: Demonstrates fetching real-time quotes using the `GatewaySwap` connector within Hummingbot for decentralized exchanges (DEXs). The script retrieves swap prices for specified trading pairs, allowing users to easily integrate accurate pricing data from protocols like Jupiter on Solana.
+* **Description**: Demonstrates fetching real-time quotes using the `GatewaySwap` connector within Hummingbot for decentralized exchanges (DEXs). The script retrieves swap prices for specified trading pairs, allowing users to easily integrate accurate pricing data from protocols like Jupiter on Solana or Hydration on Polkadot.
 
 ### AMM Trade
 * **Code**: [amm_trade_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py)
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [2.5.0](../release-notes/2.5.0.md)
-* **Description**: Monitors real-time DEX prices using the `GatewaySwap` connector and automatically executes swaps once specified price thresholds are reached. The script allows users to configure conditions (price above or below a target) and handles trade execution seamlessly on decentralized exchanges like Jupiter on Solana or Uniswap on Ethereum.
+* **Description**: Monitors real-time DEX prices using the `GatewaySwap` connector and automatically executes swaps once specified price thresholds are reached. The script allows users to configure conditions (price above or below a target) and handles trade execution seamlessly on decentralized exchanges like Jupiter on Solana,  Uniswap on Ethereum or Hydration on Polkadot.
 
 ### CLMM Position Manager
 * **Code**: [clmm_manage_position](https://github.com/hummingbot/hummingbot/blob/development/scripts/clmm_manage_position.py)

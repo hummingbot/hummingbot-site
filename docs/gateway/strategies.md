@@ -18,7 +18,7 @@ The [Swap schema](/gateway/schemas/#swap-schema) defines standardized endpoints 
 
 ## AMM schema
 
-The [AMM schema](/gateway/schemas/#amm-schema) defines standardized endpoints for managing liquidity positions on Automated Market Maker (AMM) DEXs like Raydium Standard and Uniswap V2 pools. Sample strategies demonstrating AMM functionality will be available soon.
+The [AMM schema](/gateway/schemas/#amm-schema) defines standardized endpoints for managing liquidity positions on Automated Market Maker (AMM) DEXs like Raydium Standard, Uniswap V2 pools, and Hydration. Sample strategies demonstrating AMM functionality will be available soon.
 
 ## CLMM schema
 
