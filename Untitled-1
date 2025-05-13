@@ -1,0 +1,90 @@
+Hummingbot Newsletter - Apr 2025
+
+🚀 Shipped Hummingbot v2.5 | 🗳️ Exchange Governance Changes | ⭐️ New Derive Rewards Campaign | 🤖 Building MCP Server Livestreams
+
+🚀 Hummingbot v2.5.0 is Here!
+
+Hey Hummingbot community! We're excited to announce the release of v2.5.0, packed with major improvements and new features:
+
+✨ Major Updates:
+
+1. Python 3.12 Upgrade
+- Core environment upgraded to Python 3.12 for better performance
+- Streamlined Anaconda/Miniconda environment with native conda packages
+- Updated key libraries including Pydantic V2
+- Enhanced test suites using Python's asyncio framework
+
+2. PMM Controller & PositionsHeld
+- New Strategy V2 framework feature: PositionsHeld
+- Tracks global spot balances and perpetual positions
+- Enables sophisticated market making strategies with inventory-based price skewing
+- Modernized V2 version of Pure Market Making strategy
+
+3. Gateway Evolution
+- New architecture for Hummingbot-Gateway interaction
+- New schemas: Swap, AMM, and CLMM
+- Optimized for Solana DEX connectors and LP strategies
+- Maintains backward compatibility with legacy connectors
+
+For full details, check out the Hummingbot v2.5.0 release notes at <https://hummingbot.org/release-notes/2.5.0/>
+
+🗳️ Recent Governance Updates
+
+1. New Board of Directors Elected
+We're excited to announce the results of HGP-68, electing our Board of Directors for the 2025 cycle:
+
+- Brett Gibson (22.2M HBOT, 19.11%)
+- Federico Cardoso (19.3M HBOT, 16.65%)
+- Dolm Chen (18.9M HBOT, 16.27%)
+- Mike Hukiewitz (17.1M HBOT, 14.78%)
+- Michael Feng (16.9M HBOT, 14.58%)
+
+Congratulations to all elected members! 🎉
+
+2. Exchange Connector Polls Simplified
+In HGP-69, we've streamlined the exchange connector voting process:
+- Merged into a single quarterly "Exchange Connectors Poll"
+- HBOT holders now select exchanges rather than individual connector types
+- New minimum inclusion threshold: 400k HBOT
+
+📢 Important Notice: The Q2 Exchange Connectors Poll will be created in the next 2 weeks. Only HBOT balances as of the poll creation date will be eligible for voting.
+
+🔗 New Derive Rewards Campaign
+
+We're thrilled to announce an exclusive Incentives Campaign at Derive for the Hummingbot community! 🤖 🚀 
+
+Run a bot using the Derive connector and generate $150 in fees to earn 400 OP or equivalent. Limited to the first 20 eligible instances.
+
+Learn more: https://docs.derive.xyz/docs/hummingbot-x-derive-exchange-connector-campaign
+
+🔗 Join Our Monthly Community Call
+
+📅 Wednesday, April 30
+⏰ 3 PM UTC / 8 AM PST / 11 AM EST
+📍 Discord #community-video-calls channel
+📺 Available on YouTube after the call
+
+Agenda:
+- v2.5 release highlights and demos
+- Exchange governance updates
+- Bounty program updates
+- Top community issues discussion
+
+🍿 YouTube Livestream Series: Building MCP Server
+
+Following our successful March series on AI-based algo trading strategies, we're excited to announce our next livestream series: Building MCP Server using Hummingbot Back-end API.
+
+All sessions are recorded and available on the Hummingbot YouTube channel.
+
+👿 Security Reminder
+
+We've noticed increased scammer activity, particularly around fake HBOT token sales. Please remember:
+
+- We never DM users first
+- We never sell or airdrop HBOT tokens
+- The only way to get HBOT is by completing bounties
+- Report suspicious activity in our #scam-reports Discord channel
+
+Happy trading! 🤖
+
+Thanks for reading the Hummingbot Newsletter! Subscribe for free to get notified of each monthly release. 

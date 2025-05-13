@@ -1,5 +1,9 @@
 Hummingbot certified market makers and strategy developers have successfully completed a [Hummingbot Botcamp](https://www.botcamp.xyz) cohort, demonstrating their ability to design, code, and present a custom trading strategy.
 
+Watch the Demo Day video from the last cohort (Cohort 11):
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/8lglLz7tYgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 See [Certifications List](list.md) for current certified developers.
 
 ## Benefits of Certification
