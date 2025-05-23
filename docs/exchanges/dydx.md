@@ -15,12 +15,12 @@
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://dydx.exchange>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dydx/>
-- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx_perpetual>
-- **API Docs**: <https://dydxprotocol.github.io/v3-teacher/>
-- **Fees**: <https://help.dydx.exchange/en/articles/4800191-are-there-fees-to-using-dydx>
-- **Supported Countries**: <https://help.dydx.exchange/en/articles/4798063-location-restrictions> 
+- **Website**: <https://dydx.trade>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/dydx-v4/>
+- **CoinGecko**: <https://www.coingecko.com/en/exchanges/dydx-chain>
+- **API Docs**: <https://docs.dydx.exchange/api_integration-repositories>
+- **Fees**: <https://docs.dydx.exchange/introduction-trading_fees>
+- **Supported Countries**: <https://dydx.trade/terms> 
 
 
 ## ⚙️ Install Instructions
@@ -124,6 +124,6 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-This exchange offers a staging (testnet) mode: <https://trade.stage.dydx.exchange/portfolio/overview>
+This exchange offers a staging (testnet) mode: <https://v4.testnet.dydx.exchange/>
 
 While users can trade on testnet using the link above, it is not currently supported in Hummingbot.
