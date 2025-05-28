@@ -184,41 +184,57 @@ Requirements:
 
 Launch Hummingbot and use the `create --script-config simple_pmm` command to create the config for your Simple PMM script.
 
-
 [![controller](controller.png)](controller.png)
 
+This generates a default configuration file under the `conf/controllers/` folder. You can edit this file using your preferred IDE or text editor.
 
-This generates a default configuration file under the conf/controllers/ folder. You can edit this file in your preferred IDE or text editor.
+The initial default config will be different from the one below — you can update it with these values:
 
-Here is what the default config might look like:
-
-```bash
+```yaml
 script_file_name: simple_pmm.py
-exchange: binance_paper_trade
-trading_pair: ETH-USDT
-order_amount: 0.01
+exchange: xrpl
+trading_pair: XRP-RLUSD
+order_amount: 15
 bid_spread: 0.001
 ask_spread: 0.001
-order_refresh_time: 15
+order_refresh_time: 120
 price_type: mid
-
 ```
 
-Since we want to trade on the XRP Ledger, you will need to modify the values to match your XRPL setup. Below are the suggested settings:
+Below is an explanation of the configuration fields:
+
+| Field                | Value          | Description                                                                                     |
+| -------------------- | -------------- | ----------------------------------------------------------------------------------------------- |
+| `exchange`           | `xrpl`         | The exchange you want to trade on.                                                              |
+| `trading_pair`       | `XRP-RLUSD`    | The token pair you're trading, in base-quote format.                                            |
+| `order_amount`       | `15`           | The quantity of the base token (XRP) for each buy/sell order.                                   |
+| `bid_spread`         | `0.001` (0.1%) | The % below the reference price to place your **buy** order.                                    |
+| `ask_spread`         | `0.001` (0.1%) | The % above the reference price to place your **sell** order.                                   |
+| `order_refresh_time` | `120`          | Time in seconds before canceling and replacing existing orders.                                 |
+| `price_type`         | `mid`          | The price reference used to calculate bid/ask, typically the midpoint between best bid and ask. |
+
+What you're doing here is configuring a market-making strategy where you place:
+
+* A **buy order** 0.1% below the mid-market price, and
+
+* A **sell order** 0.1% above the mid-market price.
+
+These orders are refreshed every 120 seconds to stay aligned with the market.
+
+To view your open orders on-chain, you can use the following explorers:
+
+* [🔗 Sologenic DEX](https://dex.sologenic.org/)
+
+* [🔗 XMagnetic DEX](https://xmagnetic.dev/)
+
+If you need more help understanding how Hummingbot works or want to dive deeper into Hummingbot, you can visit the following documentation links:
+
+* [Hummingbot Client](../../../client/index.md)
+
+* [Guides and Tutorials](../../../guides/index.md)
 
 
-| Field                      | Updated Value           |
-| -------------------------- | ----------------- |
-| Exchange                   | `xrpl`            |
-| Trading pair               | `XRP-RLUSD`       |
-| Order amount (base)        | e.g. `15`        |
-| **Bid** and **ask** spread | e.g. `0.5%`       |
-| Order refresh time         | e.g. `60` seconds |
-| Price type                 | `mid`       |
-
-After making these changes, save the file (e.g., conf_simple_pmm_test-xrp-rlusd.yml) and you're ready to start the bot.
-
-## Start the bot
+### Start the bot
 
 ```bash
 start --script simple_pmm.py --conf conf_simple_pmm_test-xrp-rlusd.yml
@@ -228,5 +244,4 @@ It may take a few seconds to initialize. Watch the **log pane** to confirm that 
 
 [![status](status.png)](status.png)
 
-**Happy trading! If you run into issues, the Hummingbot Discord community is a great place to ask questions.**
-
+**Happy trading! If you run into issues, the [Hummingbot Discord](https://discord.gg/hummingbot) community is a great place to ask questions.**
