@@ -25,7 +25,7 @@ Chain support in Gateway is determined by the decentralized exchanges (DEX) that
 
 Legacy Gateway (v2.2 and before) supported a wide range of chains and their networks including Ethereum, Algorand, Avalanche, BNB Chain, Cosmos, Cronos, Ethereum Classic, Osmosis, Polygon, and Solana. However, its inflexible route architecture tight coupling with the Hummingbot client made it difficult to support more types of trading interactions.
 
-The new version of Gateway (v2.5+) is more flexible and chain-agnostic. Initially, it supports only a few base chain architectures along with any network that is compatible with them, starting with networks based on the Solana and Ethereum-based virtual machines.
+The new version of Gateway (v2.5+) is more flexible and chain-agnostic. Initially, it supports only a few base chain architectures along with any network that is compatible with them, starting with networks based on the Solana, Ethereum-based virtual machines, and Polkadot and its parachains.
 
 See [Supported Chains](chains/index.md) the list of chains and their DEXs supported by Gateway.
 
