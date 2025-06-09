@@ -3,7 +3,7 @@ We generally release a new version of Hummingbot **every month**. See below for 
 
 ## [2.6.0](./2.6.0/)
 
-*Released May 26, 2025*
+*Released June 9, 2025*
 
 | Repository | Description | GitHub Release | DockerHub Release |
 |------------|-------------|----------------|-------------------|

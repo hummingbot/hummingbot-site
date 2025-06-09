@@ -23,26 +23,22 @@ For comprehensive documentation, including detailed endpoint specifications, req
 !!! note
     Gateway is currently undergoing a large multi-release codebase refactoring, approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). During this refactoring process, not all connectors are available in the new version, as they are being gradually migrated from the legacy architecture.
 
-Here are the Gateway connectors in the codebase for the current [Epoch](/governance/epochs/).
+Here are the Gateway connectors in the codebase for the current [Epoch](/governance/epochs/). The **Updated** column shows whether the connector has been updated for the changes approvd in [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c)
 
-| Exchange | Chain Type | Legacy | New | Connector Types | Guide |
-|----------|------------|--------|-----|----------------|-------|
-| [Jupiter](/exchanges/gateway/jupiter) | `solana` | | ✓ | `swap` | |
-| [Meteora](/exchanges/gateway/meteora) | `solana` | | ✓ | `clmm` | |
-| [Raydium](/exchanges/gateway/raydium) | `solana` | | ✓ | `clmm`, `amm` | |
-| [Balancer](/exchanges/gateway/balancer) | `ethereum` | ✓ |  | `amm` | |
-| [Carbon](/exchanges/gateway/carbon) | `ethereum` | ✓ |  | `amm` | |
-| [Curve](/exchanges/gateway/curve) | `ethereum` | ✓ |  | `amm` | |
-| [ETCSwap](/exchanges/gateway/etcSwap) | `ethereum` | ✓ |  | `amm`, `amm_lp` | |
-| [Mad Meerkat](/exchanges/gateway/mad-meerkat) | `cronos` | ✓ |  | `amm` | |
-| [Osmosis](/exchanges/gateway/osmosis) | `osmosis` | ✓ |  | `amm` | [Guide](/blog/using-osmosis-with-hummingbot/) |
-| [Pancakeswap](/exchanges/gateway/pancakeswap) | `binance-smart-chain` | ✓ |  | `amm`, `amm_lp` | |
-| [Quickswap](/exchanges/gateway/quickswap) | `polygon` | ✓ |  | `amm` | |
-| [Sushiswap](/exchanges/gateway/sushiswap) | `ethereum` | ✓ |  | `amm` | |
-| [Tinyman](/exchanges/gateway/tinyman) | `algorand` | ✓ |  | `amm` | |
-| [TraderJoe](/exchanges/gateway/traderjoe) | `avalanche` | ✓ |  | `amm` | |
-| [Uniswap](/exchanges/gateway/uniswap) | `ethereum` | ✓ | | `amm`, `amm_lp` | |
-| [VVS](/exchanges/gateway/vvs) | `cronos` | ✓ |  | `amm` | |
+| Exchange | Chain Architecture | Updated? | Connector Types |
+|----------|-------|----------|-----------------|
+| [Jupiter](/exchanges/gateway/jupiter) | `solana` | ✓ | `swap` |
+| [Meteora](/exchanges/gateway/meteora) | `solana` | ✓ | `swap`, `clmm` |
+| [Raydium](/exchanges/gateway/raydium) | `solana` | ✓ | `swap`, `clmm`, `amm` |
+| [Uniswap](/exchanges/gateway/uniswap) | `ethereum` | ✓ | `swap`, `amm`, `clmm` |
+| [Balancer](/exchanges/gateway/balancer) | `ethereum` | | `swap`, `amm` |
+| [Carbon](/exchanges/gateway/carbon) | `ethereum` | | `swap`, `amm` |
+| [Curve](/exchanges/gateway/curve) | `ethereum` | | `swap`, `amm` |
+| [ETCSwap](/exchanges/gateway/etcSwap) | `ethereum` | | `swap`, `amm`, `clmm` |
+| [Pancakeswap](/exchanges/gateway/pancakeswap) | `ethereum` | | `swap`, `amm` |
+| [Quickswap](/exchanges/gateway/quickswap) | `ethereum` | | `amm` |
+| [Sushiswap](/exchanges/gateway/sushiswap) | `ethereum` | | `amm` |
+| [TraderJoe](/exchanges/gateway/traderjoe) | `ethereum` | | `amm` |
 
 ### Building Gateway DEX Connectors
 

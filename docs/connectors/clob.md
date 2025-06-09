@@ -26,7 +26,7 @@ Here are the CLOB connectors in the codebase for the current [Epoch](/governance
 | [HTX](./huobi/index.md) | ✓ | ✓ |  |  |
 | [Kucoin](./kucoin/index.md) | ✓ | ✓ | ✓ |  |
 | [OKX](./okx/index.md) | ✓ | ✓ | ✓ |  |
-| [XRPL](./xrpl.md) | ✓ | ✓ |  |  |
+| [XRPL](./xrpl.md) | ✓ | ✓ |  | [Guide](/blog/-using-xrp-ledger-with-hummingbot/) |
 | [AscendEx](./ascendex/index.md) |  | ✓ |  |  |
 | [BingX](./bing_x/index.md) | | ✓ |  | |
 | [Bitstamp](./bitstamp/index.md) |  | ✓ |  |  |
@@ -37,11 +37,9 @@ Here are the CLOB connectors in the codebase for the current [Epoch](/governance
 | [Coinbase](./coinbase.md) |  | ✓ |  |  |
 | [Cube](./cube/index.md) | | ✓ |  |  |
 | [Dexalot](./dexalot/index.md) | | ✓ | ✓ | [Guide](/blog/using-dexalot-with-hummingbot/) |
-| [Hashkey Global](./hashkey/index.md) | | ✓ | ✓ |  |
 | [Kraken](./kraken/index.md) |  | ✓ |  |  |
 | [MEXC](./mexc/index.md) |  | ✓ |  |  |
 | [NDAX](./ndax.md) |  | ✓ |  |  |
-| [Tegro](./tegro/index.md) | | ✓ | ✓ |  |
 | [Vertex](./vertex.md) | | ✓ |  |  |
 
 ### Building CLOB Connectors
