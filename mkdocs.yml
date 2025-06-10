@@ -329,7 +329,6 @@ nav:
     - Curve: exchanges/gateway/curve.md
     - Dexalot: exchanges/dexalot.md
     - ETCSwap: exchanges/gateway/etcSwap.md
-    - Hashkey: exchanges/hashkey/index.md
     - Injective Helix: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
     - Kraken: exchanges/kraken/index.md
@@ -337,17 +336,13 @@ nav:
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
     - Osmosis: exchanges/gateway/osmosis.md
-    - Mad Meerkat: exchanges/gateway/mad-meerkat.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Raydium: exchanges/gateway/raydium.md
     - Quickswap: exchanges/gateway/quickswap.md
     - Sushiswap: exchanges/gateway/sushiswap.md
-    - Tinyman: exchanges/gateway/tinyman.md
     - TraderJoe: exchanges/gateway/traderjoe.md
     - Uniswap : exchanges/gateway/uniswap.md
-    - Tegro: exchanges/tegro/index.md
     - Vertex: exchanges/vertex.md
-    - VVS: exchanges/gateway/vvs.md    
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
@@ -365,6 +360,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.6.0: release-notes/2.6.0.md
     - 2.5.0: release-notes/2.5.0.md
     - 2.4.0: release-notes/2.4.0.md
     - 2.3.0: release-notes/2.3.0.md
