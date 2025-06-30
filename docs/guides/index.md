@@ -57,6 +57,9 @@ See more examples in the [Connector Guides](/blog/category/connector-guides/) ca
 ## 🧙 Strategy Guides
 Enhance your trading strategies with advanced development guides:
 
+- **[How to configure a v2 strategy controller](/blog/how-to-configure-a-v2-strategy-controller-in-hummingbot/)**
+  This guide walks you through configuring and running V2 strategy controllers in Hummingbot to automate and optimize your trading strategies.
+
 - **[Coding a Liquidation Sniper V2 Strategy Controller](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)**
   Explore how to create a custom V2 Controller for Hummingbot to snipe future liquidations on Binance
 
