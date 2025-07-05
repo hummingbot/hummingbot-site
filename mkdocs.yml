@@ -115,6 +115,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6
   - assets/js/hbot-stats.js
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+  - assets/js/mermaid-init.js
 
 # Extensions
 markdown_extensions:
@@ -150,6 +152,9 @@ markdown_extensions:
         - name: vegalite
           class: vegalite
           format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -343,6 +348,12 @@ nav:
     - TraderJoe: exchanges/gateway/traderjoe.md
     - Uniswap : exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
+  - CodeBoarding:
+    - Project Overview: codeboarding/on_boarding.md
+    - Core Orchestration Engine (COE): codeboarding/Core_Orchestration_Engine_COE_.md
+    - Exchange Gateway Integration (EGI): codeboarding/Exchange_Gateway_Integration_EGI_.md
+    - Performance Reporting(PR): codeboarding/Performance_Reporting_PR_.md
+    - User Interface Configuration (UIC): codeboarding/User_Interface_Configuration_UIC_.md
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
