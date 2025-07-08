@@ -43,15 +43,26 @@ Hummingbot can automatically start the execution of a previously configured trad
      - HEADLESS_MODE=true  # Optional: Enable headless mode
    ```
 
-3. **Relaunch Hummingbot**
+3. **Deploy the Hummingbot container**
    ```bash
    docker compose up -d
    ```
 
-   When you attach to it, the strategy should already be running:
+   This will start Hummingbot in detached mode (running in the background).
+
+4. **View active containers**
+   ```bash
+   docker ps
+   ```
+
+   You should see your Hummingbot container running with the configured strategy.
+
+5. **Attach to the running container**
    ```bash
    docker attach hummingbot
    ```
+
+   When you attach, the strategy should already be running. To detach without stopping the container, use `Ctrl+P` followed by `Ctrl+Q`.
 
 ### Source Installation Autostart
 
