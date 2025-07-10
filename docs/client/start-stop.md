@@ -112,9 +112,13 @@ bin/hummingbot_quickstart.py --headless -p PASSWORD -f CONFIG_FILE_NAME [-c SCRI
 ```
 
 Where:
+
 - `--headless`: Enables headless mode
+
 - `-p PASSWORD`: Your Hummingbot password
+
 - `-f CONFIG_FILE_NAME`: Strategy config file (`.yml`) or script file (`.py`)
+
 - `-c SCRIPT_CONFIG`: (Optional) Configuration file for scripts
 
 #### Using Environment Variables
@@ -130,31 +134,45 @@ export SCRIPT_CONFIG=your_script_config.yml  # Optional for scripts
 
 ### Important Considerations for Headless Mode
 
-1. **MQTT is Required**: Without a CLI interface, MQTT is the only way to:
+**MQTT is Required**: Without a CLI interface, MQTT is the only way to:
+   
    - Monitor bot status and performance
+   
    - View logs and error messages
+   
    - Stop the bot or modify parameters
+   
    - Receive alerts and notifications
 
-2. **Use with Hummingbot API**: We strongly recommend using headless mode alongside the [Hummingbot API](https://github.com/hummingbot/backend-api) for:
+**Use with Hummingbot API**: We strongly recommend using headless mode alongside the [Hummingbot API](https://github.com/hummingbot/backend-api) for:
+   
    - Managing multiple bot instances
+   
    - Real-time monitoring and control
+   
    - Automated deployment and scaling
+   
    - Integration with other systems
 
-3. **Logging**: In headless mode, logs are still written to files, but you won't see them in real-time unless you're monitoring via MQTT or viewing log files directly.
+**Logging**: In headless mode, logs are still written to files, but you won't see them in real-time unless you're monitoring via MQTT or viewing log files directly.
 
 ### Autostart File Types
 
 You can auto-start either:
 
 - **Scripts**: Python files (`.py`) containing all strategy logic. Hummingbot looks for these in the `scripts` directory
+
 - **Strategies**: Configurable strategy templates with YAML config files (`.yml`). Hummingbot looks for these in the `conf/strategies` directory
 
 ### Best Practices for Unattended Trading
 
 1. **Test Thoroughly**: Always test your strategies in paper trading mode before running them unattended
+
 2. **Set Appropriate Limits**: Configure kill switches, balance limits, and other safety parameters
+
 3. **Monitor Regularly**: Even in headless/autostart mode, regularly check logs and performance
+
 4. **Use MQTT/API**: Set up proper monitoring through MQTT or Hummingbot API for real-time alerts
+
 5. **Secure Your System**: Ensure your deployment environment is secure, especially when running with autostart
+
