@@ -304,7 +304,8 @@ nav:
       - Managing Instances: dashboard/instances.md
     - Hummingbot API: 
       - Overview: hummingbot-api/index.md
-      - Hummingbot API Quickstart: hummingbot-api/quickstart.md
+      - Installation: hummingbot-api/installation.md
+      - Quickstart: hummingbot-api/quickstart.md
     - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md

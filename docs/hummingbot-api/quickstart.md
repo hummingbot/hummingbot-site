@@ -1,52 +1,16 @@
-This guide demonstrates how to install Hummingbot API and use it to add exchange credentials, view your portfolio, and place a market order.
+This guide demonstrates how to use Hummingbot API to add exchange credentials, view your portfolio, and place a market order.
 
 ## Prerequisites
 
-- Docker and Docker Compose installed
+- Hummingbot API installed and running (see [Installation Guide](/hummingbot-api/installation))
 - Exchange API keys (e.g., Binance)
-- Python 3.7+ installed
+- Python 3.7+ with `hummingbot-api-client` installed (optional)
 
-## Installation
+## Setup Python Client (Optional)
 
-### Install Hummingbot API
+If you want to use the Python client for the examples below:
 
-1. Clone the repository:
-```bash
-git clone https://github.com/hummingbot/hummingbot-api
-cd hummingbot-api
-```
-
-2. Run the setup script:
-```bash
-./setup.sh
-```
-
-The setup script will:
-- Prompt you to set API authentication credentials (username/password)
-- Configure the database and message broker connections
-- Create a `.env` file with all necessary configurations
-- Start required Docker containers (PostgreSQL, EMQX)
-- Pull the latest Hummingbot Docker image
-
-Default credentials if you press Enter: `admin` / `admin`
-
-3. Start the API service:
-```bash
-./run.sh
-```
-
-This script will start all services using Docker Compose:
-- **hummingbot-api**: The main API service (port 8000)
-- **postgres**: PostgreSQL database for storing trading data
-- **emqx**: MQTT message broker for real-time bot communication
-
-The API will be accessible at `http://localhost:8000`
-
-### Install Python Client (optional)
-
-The [Hummingbot API Client](https://github.com/hummingbot/hummingbot-api-client) is a Python library that provides a convenient interface for interacting with the Hummingbot API. It handles authentication, async operations, and provides typed methods for all API endpoints.
-
-1. Install the client via pip:
+1. Install the [Hummingbot API Client](https://github.com/hummingbot/hummingbot-api-client):
 ```bash
 pip install hummingbot-api-client
 ```

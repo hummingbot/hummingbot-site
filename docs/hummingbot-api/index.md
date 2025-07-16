@@ -71,7 +71,7 @@ graph TB
     classDef apiStyle fill:#00B1BB,stroke:#333,stroke-width:2px,color:#fff
     classDef botsStyle fill:#FFB700,stroke:#333,stroke-width:2px,color:#000
     
-    class DASH,CUSTOM,AI clientStyle
+    class DASH clientStyle
     class API,PG,MQTT apiStyle
     class BOTS botsStyle
 ```
@@ -87,14 +87,13 @@ graph TB
 
 ## Getting Started
 
-Check out our [Quickstart Guide](quickstart.md) for:
+- **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
+- **[Quickstart Guide](quickstart.md)** - Learn how to:
+    - Add exchange credentials
+    - View portfolio balances  
+    - Place your first market order
 
-- Step-by-step installation instructions
-- Adding exchange credentials
-- Viewing portfolio balances  
-- Placing your first market order
-
-The guide includes Docker setup and Python API client examples to get you trading in minutes.
+The guides include Docker setup and Python API client examples to get you trading in minutes.
 
 ## API Routers
 
