@@ -153,14 +153,35 @@ docker-compose down -v
 
 ### Port conflicts
 
-If port 8000 is already in use, modify the port in `docker-compose.yml`:
+If port `8000` is already in use on your system, you can change it by modifying the configuration depending on your setup:
+
+#### **Docker**
+
+Update the `ports` mapping in your `docker-compose.yml` file to use a different external port. For example, to use port `8001` instead:
 
 ```yaml
 services:
   hummingbot-api:
     ports:
-      - "8001:8000"  # Change to different port
+      - "8001:8000"  # Maps local port 8001 to container's port 8000
 ```
+
+#### **Running from Source**
+
+Edit the `./run.sh` script to include the `--port` flag in the `uvicorn` command. For example, to run on port `8001`:
+
+```bash
+if [[ "$1" == "--dev" ]]; then
+    echo "Running API from source..."
+    # Start dependencies and launch API with uvicorn
+    docker compose up emqx postgres -d
+    source "$(conda info --base)/etc/profile.d/conda.sh"
+    conda activate hummingbot-api
+    uvicorn main:app --reload --port 8001
+fi
+```
+
+Make sure the new port you choose is not already in use.
 
 ### Development issues
 
