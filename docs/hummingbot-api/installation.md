@@ -72,10 +72,10 @@ This will:
 ### 3. Start the API in development mode
 
 ```bash
-make run
+./run.sh --dev
 ```
 
-This runs the API using `uvicorn` with auto-reload enabled for development.
+This starts the Broker and Postgres DB containers and runs the API using `uvicorn` with auto-reload enabled for development.
 
 The API will be accessible at `http://localhost:8000`.
 
