@@ -22,7 +22,7 @@ Hummingbot API is a comprehensive RESTful API framework designed for managing tr
 
 ```mermaid
 graph TB
-    subgraph "Client Applications"
+    subgraph "Clients"
         direction LR
         CUSTOM[Custom Apps]
         DASH[Hummingbot<br/>Dashboard]
