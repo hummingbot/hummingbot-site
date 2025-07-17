@@ -64,6 +64,7 @@ make install
 ```
 
 This will:
+
 - Create a conda environment named `hummingbot-api`
 - Activate the environment
 - Install all required dependencies
@@ -199,6 +200,7 @@ make run
 ## Next Steps
 
 After installation, proceed to the [Quickstart Guide](/hummingbot-api/quickstart) to learn how to:
+
 - Add exchange credentials
 - View your portfolio
 - Place your first order
