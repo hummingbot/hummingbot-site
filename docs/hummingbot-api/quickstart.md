@@ -40,31 +40,37 @@ python hummingbot_api_demo.py
 
 ## List Available Exchanges
 
-Get a list of all available exchange connectors. Note that spot and perpetual markets are separate connectors (e.g., `hyperliquid` for spot and `hyperliquid` for perps).
+Get a list of all available exchange connectors. Note that spot and perpetual markets are separate connectors (e.g., `hyperliquid` for spot and `hyperliquid_perpetual` for perps).
 
 === "curl"
     
     ```bash
-    curl -X 'GET' \
-      'http://localhost:8000/connectors' \
+    curl -u admin:admin -X 'GET' \
+      'http://localhost:8000/connectors/' \
       -H 'accept: application/json'
     ```
-
 === "Python Client"
     
     ```python
     async def list_exchanges():
-        # Get all available connectors
-        connectors = await client.list_connectors()
-        
-        print("📋 Available exchanges/connectors:")
-        for connector in connectors:
-            print(f"  - {connector}")
-        
-        return connectors
-    
-    # Run the async function
-    connectors = asyncio.run(list_exchanges())
+      # Ensure the client is initialized
+      await client.init()
+      # Get all available connectors
+      connectors = await client.connectors.list_connectors()
+      print("📋 Available exchanges/connectors:")
+      for connector in connectors:
+          print(f"  - {connector}")
+      return connectors
+
+      # Run the async function and close the client after use
+    def main():
+      connectors = asyncio.run(list_exchanges())
+      # Close the client session
+      asyncio.run(client.close())
+      return connectors
+
+    if __name__ == "__main__":
+      main()
     ```
 
 **Response:**
@@ -81,7 +87,6 @@ Get a list of all available exchange connectors. Note that spot and perpetual ma
       "okx_perpetual",
     ]
     ```
-
 === "Python Client"
     
     ```
@@ -101,7 +106,7 @@ Before adding credentials, check what configuration fields are required for your
 === "curl"
     
     ```bash
-    curl -X 'GET' \
+    curl -u admin:admin -X 'GET' \
       'http://localhost:8000/connectors/hyperliquid/config-map' \
       -H 'accept: application/json'
     ```
@@ -111,7 +116,7 @@ Before adding credentials, check what configuration fields are required for your
     ```python
     async def get_connector_config():
         # Get required config fields for hyperliquid
-        config_fields = await client.get_connector_config_map("hyperliquid")
+        config_fields = await client.connectors.get_config_map("hyperliquid")
         
         print("📋 Required configuration fields for hyperliquid:")
         for field in config_fields:
@@ -171,12 +176,10 @@ For Hyperliquid:
 
 === "Python Client"
     
-    ```python
-    import asyncio
-    
+    ```python   
     async def add_exchange_account():
         # Add a Hyperliquid account
-        account = await client.add_account(
+        account = await client.accounts.add_account(
             name="master_account",
             exchange="hyperliquid",
             api_key="0x1234...abcd",  # Your public/vault address
@@ -218,12 +221,12 @@ For Hyperliquid:
 ## View Your Portfolio
 
 Check your portfolio balances across all connected exchanges:
-
+ 
 === "curl"
     
     ```bash
-    curl -X 'POST' \
-      'http://localhost:8000/portfolio/state' \
+    curl -u admin:admin -X 'POST' \
+      'http://localhost:8000/portfolio/state/' \
       -H 'accept: application/json' \
       -H 'Content-Type: application/json' \
       -d '{}'
@@ -234,7 +237,7 @@ Check your portfolio balances across all connected exchanges:
     ```python
     async def view_portfolio():
         # Get portfolio state
-        portfolio = await client.get_portfolio_state()
+        portfolio = await client.portfolio.get_state()
         
         print(f"\n📊 Portfolio Summary")
         
@@ -248,7 +251,6 @@ Check your portfolio balances across all connected exchanges:
                     print(f"      Price: ${balance['price']:.2f}")
                     print(f"      Value: ${balance['value']:.2f}")
                     print(f"      Available: {balance['available_units']}")
-    
     # Run the async function
     asyncio.run(view_portfolio())
     ```
@@ -294,37 +296,16 @@ Before placing orders, fetch the trading rules for your intended trading pair to
 === "curl"
     
     ```bash
-    curl -X 'GET' \
+    curl -u admin:admin -X 'GET' \
       'http://localhost:8000/connectors/hyperliquid/trading-rules?trading_pairs=HYPE-USDC' \
       -H 'accept: application/json'
     ```
-    
-    **Response (200 OK):**
-    ```json
-    {
-      "HYPE-USDC": {
-        "min_order_size": 0,
-        "max_order_size": 1e+56,
-        "min_price_increment": 0.0001,
-        "min_base_amount_increment": 0.01,
-        "min_quote_amount_increment": 1e-56,
-        "min_notional_size": 0,
-        "min_order_value": 0,
-        "max_price_significant_digits": 1e+56,
-        "supports_limit_orders": true,
-        "supports_market_orders": true,
-        "buy_order_collateral_token": "USDC",
-        "sell_order_collateral_token": "USDC"
-      }
-    }
-    ```
-
 === "Python Client"
     
     ```python
     async def get_trading_rules():
         # Get trading rules for HYPE-USDC
-        rules = await client.get_trading_rules(
+        rules = await client.connectors.get_trading_rules(
             connector="hyperliquid",
             trading_pairs=["HYPE-USDC"]
         )
@@ -339,11 +320,9 @@ Before placing orders, fetch the trading rules for your intended trading pair to
         print(f"  Supports Market Orders: {hype_rules['supports_market_orders']}")
         
         return rules
-    
-    # Run the async function
+      # Run the async function
     rules = asyncio.run(get_trading_rules())
     ```
-
 **Response:**
 
 === "curl"
@@ -386,8 +365,8 @@ Execute a limit sell order for HYPE:
 === "curl"
     
     ```bash
-    curl -X 'POST' \
-      'http://localhost:8000/trading/orders' \
+    curl -u admin:admin -X 'POST' \
+      'http://localhost:8000/trading/orders/' \
       -H 'accept: application/json' \
       -H 'Content-Type: application/json' \
       -d '{
@@ -401,28 +380,12 @@ Execute a limit sell order for HYPE:
       "position_action": "OPEN"
     }'
     ```
-    
-    **Response (201 Created):**
-    ```json
-    {
-      "order_id": "0x9d6b1d8150177dc65b5db4df70cbbbc4",
-      "account_name": "master_account",
-      "connector_name": "hyperliquid",
-      "trading_pair": "HYPE-USDC",
-      "trade_type": "SELL",
-      "amount": "1",
-      "order_type": "LIMIT",
-      "price": "47.1",
-      "status": "submitted"
-    }
-    ```
-
 === "Python Client"
     
     ```python
     async def place_limit_order():
         # Place a limit sell order
-        order = await client.create_order(
+        order = await client.trading.create_order(
             account_name="master_account",
             connector_name="hyperliquid",
             trading_pair="HYPE-USDC",
@@ -534,7 +497,7 @@ Here's a complete example that performs all three operations:
         try:
             # Step 1: Add exchange account
             print("🔑 Adding Exchange Account...")
-            account = await client.add_account(
+            account = await client.accounts.add_account(
                 name="master_account",
                 exchange="hyperliquid",
                 api_key="0x1234...abcd",  # Your public/vault address
@@ -548,7 +511,7 @@ Here's a complete example that performs all three operations:
             
             # Step 2: View portfolio
             print("\n📊 Fetching Portfolio...")
-            portfolio = await client.get_portfolio_state()
+            portfolio = await client.portfolio.get_state()
             print("Portfolio State:")
             for account, exchanges in portfolio.items():
                 for exchange, balances in exchanges.items():
@@ -557,8 +520,8 @@ Here's a complete example that performs all three operations:
             
             # Step 3: Get trading rules
             print("\n📏 Getting Trading Rules for HYPE-USDC...")
-            rules = await client.get_trading_rules(
-                connector="hyperliquid",
+            rules = await client.connectors.get_trading_rules(
+                connector_name="hyperliquid",
                 trading_pairs=["HYPE-USDC"]
             )
             hype_rules = rules["HYPE-USDC"]
@@ -567,7 +530,7 @@ Here's a complete example that performs all three operations:
             
             # Step 4: Place limit order
             print("\n💱 Placing Limit Order...")
-            order = await client.create_order(
+            order = await client.trading.create_order(
                 account_name="master_account",
                 connector_name="hyperliquid",
                 trading_pair="HYPE-USDC",
@@ -597,7 +560,7 @@ Here's a complete example that performs all three operations:
     Run the script:
     ```bash
     python hummingbot_api_demo.py
-    ```
+    ```     
 
 ## Next Steps
 
