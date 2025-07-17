@@ -43,7 +43,7 @@ Default credentials if you press Enter: `admin` / `admin`
 
 This pulls the required Docker images and runs Hummingbot API using Docker Compose and the configuration defined in the `docker-compose.yml` file.
 
-The API will be accessible at `http://localhost:8000`.
+The API will be accessible at `http://localhost:8000`. You can view the interactive Swagger UI documentation at `http://localhost:8000/docs`.
 
 ## Install from Source (for Developers)
 

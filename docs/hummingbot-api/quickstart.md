@@ -38,9 +38,121 @@ client = HummingbotAPIClient(
 python hummingbot_api_demo.py
 ```
 
+## List Available Exchanges
+
+Get a list of all available exchange connectors. Note that spot and perpetual markets are separate connectors (e.g., `hyperliquid` for spot and `hyperliquid` for perps).
+
+=== "curl"
+    
+    ```bash
+    curl -X 'GET' \
+      'http://localhost:8000/connectors' \
+      -H 'accept: application/json'
+    ```
+
+=== "Python Client"
+    
+    ```python
+    async def list_exchanges():
+        # Get all available connectors
+        connectors = await client.list_connectors()
+        
+        print("📋 Available exchanges/connectors:")
+        for connector in connectors:
+            print(f"  - {connector}")
+        
+        return connectors
+    
+    # Run the async function
+    connectors = asyncio.run(list_exchanges())
+    ```
+
+**Response:**
+
+=== "curl"
+    
+    ```json
+    [
+      "binance",
+      "binance_perpetual",
+      "hyperliquid",
+      "hyperliquid_perpetual",
+      "okx",
+      "okx_perpetual",
+    ]
+    ```
+
+=== "Python Client"
+    
+    ```
+    📋 Available exchanges/connectors:
+      - binance
+      - binance_perpetual
+      - hyperliquid
+      - hyperliquid_perpetual
+      - okx
+      - okx_perpetual
+    ```
+
+## Get Connector Configuration
+
+Before adding credentials, check what configuration fields are required for your connector:
+
+=== "curl"
+    
+    ```bash
+    curl -X 'GET' \
+      'http://localhost:8000/connectors/hyperliquid/config-map' \
+      -H 'accept: application/json'
+    ```
+
+=== "Python Client"
+    
+    ```python
+    async def get_connector_config():
+        # Get required config fields for hyperliquid
+        config_fields = await client.get_connector_config_map("hyperliquid")
+        
+        print("📋 Required configuration fields for hyperliquid:")
+        for field in config_fields:
+            print(f"  - {field}")
+        
+        return config_fields
+    
+    # Run the async function
+    config_fields = asyncio.run(get_connector_config())
+    ```
+
+**Response:**
+
+=== "curl"
+    
+    ```json
+    [
+      "hyperliquid_api_secret",
+      "use_vault",
+      "hyperliquid_api_key"
+    ]
+    ```
+
+=== "Python Client"
+    
+    ```
+    📋 Required configuration fields for hyperliquid:
+      - hyperliquid_api_secret
+      - use_vault
+      - hyperliquid_api_key
+    ```
+
 ## Add Exchange Credentials
 
-Add your exchange credentials to the API:
+Add your exchange credentials to the API. By default, only the `master_account` is created. You can add multiple accounts with different names if needed.
+
+For Hyperliquid:
+
+- `api_key`: Your Hyperliquid public address or vault address
+- `api_secret`: Your Arbitrum private key
+- `use_vault`: Set to `true` if using vault address, `false` for normal account
 
 === "curl"
     
@@ -49,10 +161,11 @@ Add your exchange credentials to the API:
       -u "admin:admin" \
       -H "Content-Type: application/json" \
       -d '{
-        "name": "binance_main",
-        "exchange": "binance",
-        "api_key": "your-binance-api-key",
-        "api_secret": "your-binance-api-secret"
+        "name": "master_account",
+        "exchange": "hyperliquid",
+        "api_key": "0x1234...abcd",
+        "api_secret": "your-arbitrum-private-key",
+        "use_vault": false
       }'
     ```
 
@@ -62,12 +175,13 @@ Add your exchange credentials to the API:
     import asyncio
     
     async def add_exchange_account():
-        # Add a Binance account
+        # Add a Hyperliquid account
         account = await client.add_account(
-            name="binance_main",
-            exchange="binance",
-            api_key="your-binance-api-key",
-            api_secret="your-binance-api-secret"
+            name="master_account",
+            exchange="hyperliquid",
+            api_key="0x1234...abcd",  # Your public/vault address
+            api_secret="your-arbitrum-private-key",
+            use_vault=False  # True if using vault address
         )
         
         print(f"✓ Account added: {account['name']}")
@@ -87,8 +201,8 @@ Add your exchange credentials to the API:
     ```json
     {
       "id": 1,
-      "name": "binance_main",
-      "exchange": "binance",
+      "name": "master_account",
+      "exchange": "hyperliquid",
       "created_at": "2025-07-16T10:30:00Z"
     }
     ```
@@ -96,9 +210,9 @@ Add your exchange credentials to the API:
 === "Python Client"
     
     ```
-    ✓ Account added: binance_main
+    ✓ Account added: master_account
       ID: 1
-      Exchange: binance
+      Exchange: hyperliquid
     ```
 
 ## View Your Portfolio
@@ -108,26 +222,32 @@ Check your portfolio balances across all connected exchanges:
 === "curl"
     
     ```bash
-    curl -X GET http://localhost:8000/portfolio/balances \
-      -u "admin:admin"
+    curl -X 'POST' \
+      'http://localhost:8000/portfolio/state' \
+      -H 'accept: application/json' \
+      -H 'Content-Type: application/json' \
+      -d '{}'
     ```
 
 === "Python Client"
     
     ```python
     async def view_portfolio():
-        # Get portfolio balances
-        portfolio = await client.get_portfolio()
+        # Get portfolio state
+        portfolio = await client.get_portfolio_state()
         
         print(f"\n📊 Portfolio Summary")
-        print(f"Total Value: ${portfolio['total_usd_value']:,.2f}")
-        print(f"\nToken Balances:")
         
-        for token, data in portfolio['token_balances'].items():
-            print(f"  {token}:")
-            print(f"    Amount: {data['total']}")
-            print(f"    USD Value: ${data['usd_value']:,.2f}")
-            print(f"    Percentage: {data['percentage']:.1f}%")
+        for account_name, exchanges in portfolio.items():
+            print(f"\n{account_name}:")
+            for exchange, balances in exchanges.items():
+                print(f"  {exchange}:")
+                for balance in balances:
+                    print(f"    {balance['token']}:")
+                    print(f"      Units: {balance['units']}")
+                    print(f"      Price: ${balance['price']:.2f}")
+                    print(f"      Value: ${balance['value']:.2f}")
+                    print(f"      Available: {balance['available_units']}")
     
     # Run the async function
     asyncio.run(view_portfolio())
@@ -139,18 +259,16 @@ Check your portfolio balances across all connected exchanges:
     
     ```json
     {
-      "total_usd_value": 10000.50,
-      "token_balances": {
-        "BTC": {
-          "total": 0.15,
-          "usd_value": 7500.00,
-          "percentage": 75.0
-        },
-        "USDT": {
-          "total": 2500.50,
-          "usd_value": 2500.50,
-          "percentage": 25.0
-        }
+      "master_account": {
+        "hyperliquid": [
+          {
+            "token": "USDC",
+            "units": 100.00,
+            "price": 1,
+            "value": 100.00,
+            "available_units": 100.00
+          }
+        ]
       }
     }
     ```
@@ -159,62 +277,71 @@ Check your portfolio balances across all connected exchanges:
     
     ```
     📊 Portfolio Summary
-    Total Value: $10,000.50
     
-    Token Balances:
-      BTC:
-        Amount: 0.15
-        USD Value: $7,500.00
-        Percentage: 75.0%
-      USDT:
-        Amount: 2500.5
-        USD Value: $2,500.50
-        Percentage: 25.0%
+    master_account:
+      hyperliquid:
+        USDC:
+          Units: 100.00
+          Price: $1.00
+          Value: $100.00
+          Available: 100.00
     ```
 
-## Place a Market Order
+## Get Trading Rules
 
-Execute a market buy order for BTC:
+Before placing orders, fetch the trading rules for your intended trading pair to understand order size limits and price increments:
 
 === "curl"
     
     ```bash
-    curl -X POST http://localhost:8000/trading/orders \
-      -u "admin:admin" \
-      -H "Content-Type: application/json" \
-      -d '{
-        "account_name": "binance_main",
-        "trading_pair": "BTC-USDT",
-        "order_type": "market",
-        "side": "buy",
-        "amount": 0.001
-      }'
+    curl -X 'GET' \
+      'http://localhost:8000/connectors/hyperliquid/trading-rules?trading_pairs=HYPE-USDC' \
+      -H 'accept: application/json'
+    ```
+    
+    **Response (200 OK):**
+    ```json
+    {
+      "HYPE-USDC": {
+        "min_order_size": 0,
+        "max_order_size": 1e+56,
+        "min_price_increment": 0.0001,
+        "min_base_amount_increment": 0.01,
+        "min_quote_amount_increment": 1e-56,
+        "min_notional_size": 0,
+        "min_order_value": 0,
+        "max_price_significant_digits": 1e+56,
+        "supports_limit_orders": true,
+        "supports_market_orders": true,
+        "buy_order_collateral_token": "USDC",
+        "sell_order_collateral_token": "USDC"
+      }
+    }
     ```
 
 === "Python Client"
     
     ```python
-    async def place_market_order():
-        # Place a market buy order
-        order = await client.create_order(
-            account_name="binance_main",
-            trading_pair="BTC-USDT",
-            order_type="market",
-            side="buy",
-            amount=0.001  # Buy 0.001 BTC
+    async def get_trading_rules():
+        # Get trading rules for HYPE-USDC
+        rules = await client.get_trading_rules(
+            connector="hyperliquid",
+            trading_pairs=["HYPE-USDC"]
         )
         
-        print(f"\n✅ Order Placed Successfully!")
-        print(f"  Order ID: {order['order_id']}")
-        print(f"  Status: {order['status']}")
-        print(f"  Side: {order['side']}")
-        print(f"  Amount: {order['amount']} BTC")
-        print(f"  Executed Price: ${order['executed_price']:,.2f}")
+        hype_rules = rules["HYPE-USDC"]
+        print("📏 Trading Rules for HYPE-USDC:")
+        print(f"  Min Order Size: {hype_rules['min_order_size']}")
+        print(f"  Max Order Size: {hype_rules['max_order_size']}")
+        print(f"  Min Price Increment: {hype_rules['min_price_increment']}")
+        print(f"  Min Base Amount Increment: {hype_rules['min_base_amount_increment']}")
+        print(f"  Supports Limit Orders: {hype_rules['supports_limit_orders']}")
+        print(f"  Supports Market Orders: {hype_rules['supports_market_orders']}")
         
-        return order
+        return rules
     
     # Run the async function
-    order = asyncio.run(place_market_order())
+    rules = asyncio.run(get_trading_rules())
     ```
 
 **Response:**
@@ -223,27 +350,114 @@ Execute a market buy order for BTC:
     
     ```json
     {
-      "order_id": "123456789",
-      "status": "filled",
-      "side": "buy",
-      "trading_pair": "BTC-USDT",
-      "order_type": "market",
-      "amount": 0.001,
-      "executed_amount": 0.001,
-      "executed_price": 50000.00,
-      "created_at": "2025-07-16T10:31:00Z"
+      "HYPE-USDC": {
+        "min_order_size": 0,
+        "max_order_size": 1e+56,
+        "min_price_increment": 0.0001,
+        "min_base_amount_increment": 0.01,
+        "min_quote_amount_increment": 1e-56,
+        "min_notional_size": 0,
+        "min_order_value": 0,
+        "max_price_significant_digits": 1e+56,
+        "supports_limit_orders": true,
+        "supports_market_orders": true,
+        "buy_order_collateral_token": "USDC",
+        "sell_order_collateral_token": "USDC"
+      }
     }
     ```
 
 === "Python Client"
     
     ```
-    ✅ Order Placed Successfully!
-      Order ID: 123456789
-      Status: filled
-      Side: buy
-      Amount: 0.001 BTC
-      Executed Price: $50,000.00
+    📏 Trading Rules for HYPE-USDC:
+      Min Order Size: 0
+      Max Order Size: 1e+56
+      Min Price Increment: 0.0001
+      Min Base Amount Increment: 0.01
+      Supports Limit Orders: True
+      Supports Market Orders: True
+    ```
+
+## Place a Limit Order
+
+Execute a limit sell order for HYPE:
+
+=== "curl"
+    
+    ```bash
+    curl -X 'POST' \
+      'http://localhost:8000/trading/orders' \
+      -H 'accept: application/json' \
+      -H 'Content-Type: application/json' \
+      -d '{
+      "account_name": "master_account",
+      "connector_name": "hyperliquid",
+      "trading_pair": "HYPE-USDC",
+      "trade_type": "SELL",
+      "amount": 1,
+      "order_type": "LIMIT",
+      "price": 47.1,
+      "position_action": "OPEN"
+    }'
+    ```
+    
+    **Response (201 Created):**
+    ```json
+    {
+      "order_id": "0x9d6b1d8150177dc65b5db4df70cbbbc4",
+      "account_name": "master_account",
+      "connector_name": "hyperliquid",
+      "trading_pair": "HYPE-USDC",
+      "trade_type": "SELL",
+      "amount": "1",
+      "order_type": "LIMIT",
+      "price": "47.1",
+      "status": "submitted"
+    }
+    ```
+
+=== "Python Client"
+    
+    ```python
+    async def place_limit_order():
+        # Place a limit sell order
+        order = await client.create_order(
+            account_name="master_account",
+            connector_name="hyperliquid",
+            trading_pair="HYPE-USDC",
+            trade_type="SELL",
+            amount=1,
+            order_type="LIMIT",
+            price=47.1,
+            position_action="OPEN"
+        )
+        
+        print(f"\n✅ Order Placed Successfully!")
+        print(f"  Order ID: {order['order_id']}")
+        print(f"  Status: {order['status']}")
+        print(f"  Connector: {order['connector_name']}")
+        print(f"  Trading Pair: {order['trading_pair']}")
+        print(f"  Type: {order['order_type']} {order['trade_type']}")
+        print(f"  Amount: {order['amount']} HYPE")
+        print(f"  Price: ${order['price']}")
+        
+        return order
+    
+    # Run the async function
+    order = asyncio.run(place_limit_order())
+    ```
+
+!!! warning "Geo-Restriction Error"
+    If you receive an error like:
+    ```json
+    {
+      "detail": "Failed to place trade: No order book exists for 'HYPE-USDC'."
+    }
+    ```
+    This may indicate you are geo-restricted from trading on the exchange. Check your API logs for more details:
+    ```bash
+    docker logs hummingbot-api
     ```
 
 ## Complete Example
@@ -259,10 +473,11 @@ Here's a complete example that performs all three operations:
       -u "admin:admin" \
       -H "Content-Type: application/json" \
       -d '{
-        "name": "binance_main",
-        "exchange": "binance",
-        "api_key": "your-binance-api-key",
-        "api_secret": "your-binance-api-secret"
+        "name": "master_account",
+        "exchange": "hyperliquid",
+        "api_key": "0x1234...abcd",
+        "api_secret": "your-arbitrum-private-key",
+        "use_vault": false
       }'
     
     # Wait for account sync
@@ -270,21 +485,34 @@ Here's a complete example that performs all three operations:
     
     # Step 2: View portfolio
     echo -e "\n📊 Fetching Portfolio..."
-    curl -X GET http://localhost:8000/portfolio/balances \
-      -u "admin:admin"
+    curl -X 'POST' \
+      'http://localhost:8000/portfolio/state' \
+      -H 'accept: application/json' \
+      -H 'Content-Type: application/json' \
+      -d '{}'
     
-    # Step 3: Place market order
-    echo -e "\n💱 Placing Market Order..."
-    curl -X POST http://localhost:8000/trading/orders \
-      -u "admin:admin" \
-      -H "Content-Type: application/json" \
+    # Step 3: Get trading rules for HYPE-USDC
+    echo -e "\n📏 Getting Trading Rules..."
+    curl -X 'GET' \
+      'http://localhost:8000/connectors/hyperliquid/trading-rules?trading_pairs=HYPE-USDC' \
+      -H 'accept: application/json'
+    
+    # Step 4: Place limit order
+    echo -e "\n💱 Placing Limit Order..."
+    curl -X 'POST' \
+      'http://localhost:8000/trading/orders' \
+      -H 'accept: application/json' \
+      -H 'Content-Type: application/json' \
       -d '{
-        "account_name": "binance_main",
-        "trading_pair": "BTC-USDT",
-        "order_type": "market",
-        "side": "buy",
-        "amount": 0.001
-      }'
+      "account_name": "master_account",
+      "connector_name": "hyperliquid",
+      "trading_pair": "HYPE-USDC",
+      "trade_type": "SELL",
+      "amount": 1,
+      "order_type": "LIMIT",
+      "price": 47.1,
+      "position_action": "OPEN"
+    }'
     ```
 
 === "Python Client"
@@ -307,10 +535,11 @@ Here's a complete example that performs all three operations:
             # Step 1: Add exchange account
             print("🔑 Adding Exchange Account...")
             account = await client.add_account(
-                name="binance_main",
-                exchange="binance",
-                api_key="your-binance-api-key",
-                api_secret="your-binance-api-secret"
+                name="master_account",
+                exchange="hyperliquid",
+                api_key="0x1234...abcd",  # Your public/vault address
+                api_secret="your-arbitrum-private-key",
+                use_vault=False  # True if using vault address
             )
             print(f"✓ Account '{account['name']}' added successfully!")
             
@@ -319,19 +548,39 @@ Here's a complete example that performs all three operations:
             
             # Step 2: View portfolio
             print("\n📊 Fetching Portfolio...")
-            portfolio = await client.get_portfolio()
-            print(f"Total Portfolio Value: ${portfolio['total_usd_value']:,.2f}")
+            portfolio = await client.get_portfolio_state()
+            print("Portfolio State:")
+            for account, exchanges in portfolio.items():
+                for exchange, balances in exchanges.items():
+                    for balance in balances:
+                        print(f"  {account}/{exchange}: {balance['units']:.2f} {balance['token']} (${balance['value']:.2f})")
             
-            # Step 3: Place market order
-            print("\n💱 Placing Market Order...")
-            order = await client.create_order(
-                account_name="binance_main",
-                trading_pair="BTC-USDT",
-                order_type="market",
-                side="buy",
-                amount=0.001
+            # Step 3: Get trading rules
+            print("\n📏 Getting Trading Rules for HYPE-USDC...")
+            rules = await client.get_trading_rules(
+                connector="hyperliquid",
+                trading_pairs=["HYPE-USDC"]
             )
-            print(f"✓ Order {order['order_id']} executed at ${order['executed_price']:,.2f}")
+            hype_rules = rules["HYPE-USDC"]
+            print(f"  Min Order Size: {hype_rules['min_order_size']}")
+            print(f"  Min Price Increment: {hype_rules['min_price_increment']}")
+            
+            # Step 4: Place limit order
+            print("\n💱 Placing Limit Order...")
+            order = await client.create_order(
+                account_name="master_account",
+                connector_name="hyperliquid",
+                trading_pair="HYPE-USDC",
+                trade_type="SELL",
+                amount=1,
+                order_type="LIMIT",
+                price=47.1,
+                position_action="OPEN"
+            )
+            print(f"✓ Order {order['order_id']} submitted")
+            print(f"  Status: {order['status']}")
+            print(f"  Type: {order['order_type']} {order['trade_type']}")
+            print(f"  Amount: {order['amount']} HYPE @ ${order['price']}")
             
         except Exception as e:
             print(f"❌ Error: {e}")
