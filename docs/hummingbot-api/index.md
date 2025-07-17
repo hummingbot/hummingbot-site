@@ -17,15 +17,6 @@ Hummingbot API is a comprehensive RESTful API framework designed for managing tr
 - 🎯 **Market data collection** for real-time and historical price feeds
 - 🔧 **Comprehensive bot orchestration** for managing multiple trading instances
 
-## Use Cases
-
-The Hummingbot API enables various trading applications:
-
-- **Custom OEMS**: Build your own trading order execution management system spanning multiple exchanges
-- **Trading Dashboards**: Build custom chat, web, and mobile interfaces for controlling bots
-- **AI-Powered Trading**: Integrate with LLMs for agentic trading workflows
-- **Risk Management Tools**: Build systems for monitoring and managing trading operations
-- **Market Data Feeds**: Create real-time price and historical candles feeds for use with different applications
 
 ## Architecture
 
@@ -40,12 +31,9 @@ graph TB
     
     subgraph "Hummingbot API"
         direction LR
-        subgraph " "
-            direction LR
-            API["FastAPI<br/>Server<br/>"]
-            PG[(PostgreSQL<br/>Database)]
-            MQTT[EMQX<br/>Message Broker]
-        end
+        API["FastAPI<br/>Server<br/>"]
+        PG[(PostgreSQL<br/>Database)]
+        MQTT[EMQX<br/>Message Broker]
     end
     
     subgraph "Bots"
@@ -53,7 +41,7 @@ graph TB
     end
     
     subgraph "Exchanges"
-        EX[Binance, Coinbase,<br/>OKX, Kraken, etc.]
+        EX[Binance, OKX,<br/>Hyperliquid, etc.]
     end
     
     %% Client connections using API Client
@@ -64,12 +52,12 @@ graph TB
     
     %% Exchange connections
     BOTS <-->|Trade & Data| EX
-    MQTT <-->|Trade & Data| EX
+    API <-->|Trade & Data| EX
     
     %% Apply theme colors
-    classDef clientStyle fill:#5FFFD7,stroke:#333,stroke-width:2px,color:#000
-    classDef apiStyle fill:#00B1BB,stroke:#333,stroke-width:2px,color:#fff
-    classDef botsStyle fill:#FFB700,stroke:#333,stroke-width:2px,color:#000
+    classDef clientStyle stroke:#5FFFD7,stroke-width:3px
+    classDef apiStyle stroke:#00B1BB,stroke-width:3px
+    classDef botsStyle stroke:#E549FF,stroke-width:3px
     
     class DASH clientStyle
     class API,PG,MQTT apiStyle
@@ -82,8 +70,19 @@ graph TB
     - FastAPI server providing RESTful API with HTTP Basic Authentication
     - PostgreSQL database for storing trading data, account info, and historical performance
     - EMQX message broker for real-time communication with bot instances
+- **Exchange Connectors**: Built-in connectors for major CEXs and DEXs - trading and data fetching is accessible directly through the Hummingbot API or via bots that it deploys
 - **Bot Instances**: Individual Hummingbot containers connected to different exchanges
 - **Docker Management**: Orchestrates multiple Hummingbot container instances
+
+## Use Cases
+
+The Hummingbot API enables various trading applications:
+
+- **Custom OEMS**: Build your own trading order execution management system spanning multiple exchanges
+- **Trading Dashboards**: Build custom chat, web, and mobile interfaces for controlling bots
+- **AI-Powered Trading**: Integrate with LLMs for agentic trading workflows
+- **Risk Management Tools**: Build systems for monitoring and managing trading operations
+- **Market Data Feeds**: Create real-time price and historical candles feeds for use with different applications
 
 ## Getting Started
 

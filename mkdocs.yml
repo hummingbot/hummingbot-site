@@ -302,7 +302,7 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Hummingbot API: 
+    - Hummingbot API ⭐️: 
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
