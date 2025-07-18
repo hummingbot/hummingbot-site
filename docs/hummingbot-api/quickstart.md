@@ -52,25 +52,33 @@ Get a list of all available exchange connectors. Note that spot and perpetual ma
 === "Python Client"
     
     ```python
-    async def list_exchanges():
-      # Ensure the client is initialized
-      await client.init()
-      # Get all available connectors
-      connectors = await client.connectors.list_connectors()
-      print("📋 Available exchanges/connectors:")
-      for connector in connectors:
-          print(f"  - {connector}")
-      return connectors
+    import asyncio
+    from hummingbot_api_client import HummingbotAPIClient
 
-      # Run the async function and close the client after use
+    # Create client instance
+    client = HummingbotAPIClient(
+        base_url="http://localhost:8000",
+        username="admin",
+        password="admin"
+    )
+
+    async def list_exchanges():
+        await client.init()
+        try:
+            connectors = await client.connectors.list_connectors()
+            print("\U0001F4CB Available exchanges/connectors:")
+            for connector in connectors:
+                print(f"  - {connector}")
+            return connectors
+        finally:
+            await client.close()
+
     def main():
-      connectors = asyncio.run(list_exchanges())
-      # Close the client session
-      asyncio.run(client.close())
-      return connectors
+        connectors = asyncio.run(list_exchanges())
+        return connectors
 
     if __name__ == "__main__":
-      main()
+        main()
     ```
 
 **Response:**
@@ -114,16 +122,28 @@ Before adding credentials, check what configuration fields are required for your
 === "Python Client"
     
     ```python
+    import asyncio
+    from hummingbot_api_client import HummingbotAPIClient
+
+    # Create client instance
+    client = HummingbotAPIClient(
+        base_url="http://localhost:8000",
+        username="admin",
+        password="admin"
+    )
+
     async def get_connector_config():
-        # Get required config fields for hyperliquid
-        config_fields = await client.connectors.get_config_map("hyperliquid")
-        
-        print("📋 Required configuration fields for hyperliquid:")
-        for field in config_fields:
-            print(f"  - {field}")
-        
-        return config_fields
-    
+        await client.init()
+        try:
+            # Get required config fields for hyperliquid
+            config_fields = await client.connectors.get_config_map("hyperliquid")
+            print("\U0001F4CB Required configuration fields for hyperliquid:")
+            for field in config_fields:
+                print(f"  - {field}")
+            return config_fields
+        finally:
+            await client.close()
+
     # Run the async function
     config_fields = asyncio.run(get_connector_config())
     ```
@@ -155,21 +175,19 @@ Add your exchange credentials to the API. By default, only the `master_account` 
 
 For Hyperliquid:
 
-- `api_key`: Your Hyperliquid public address or vault address
-- `api_secret`: Your Arbitrum private key
+- `hyperliquid_api_secret`: Your Hyperliquid public address or vault address
+- `hyperliquid_api_key`: Your API private key 
 - `use_vault`: Set to `true` if using vault address, `false` for normal account
 
 === "curl"
     
     ```bash
-    curl -X POST http://localhost:8000/accounts \
+    curl -X POST http://localhost:8000/accounts/add-credential/master_account/hyperliquid \
       -u "admin:admin" \
       -H "Content-Type: application/json" \
       -d '{
-        "name": "master_account",
-        "exchange": "hyperliquid",
-        "api_key": "0x1234...abcd",
-        "api_secret": "your-arbitrum-private-key",
+        "hyperliquid_api_key": "0x1234...abcd",
+        "hyperliquid_api_secret": "your-private-key",
         "use_vault": false
       }'
     ```
@@ -177,24 +195,34 @@ For Hyperliquid:
 === "Python Client"
     
     ```python   
-    async def add_exchange_account():
-        # Add a Hyperliquid account
-        account = await client.accounts.add_account(
-            name="master_account",
-            exchange="hyperliquid",
-            api_key="0x1234...abcd",  # Your public/vault address
-            api_secret="your-arbitrum-private-key",
-            use_vault=False  # True if using vault address
-        )
-        
-        print(f"✓ Account added: {account['name']}")
-        print(f"  ID: {account['id']}")
-        print(f"  Exchange: {account['exchange']}")
-        
-        return account
-    
+    import asyncio
+    from hummingbot_api_client import HummingbotAPIClient
+
+    # Create client instance
+    client = HummingbotAPIClient(
+        base_url="http://localhost:8000",
+        username="admin",
+        password="admin"
+    )
+
+    async def add_hyperliquid_credentials():
+        await client.init()
+        try:
+            data = {
+                "hyperliquid_api_key": "0x1234....abcde",  # Your public/vault address
+                "hyperliquid_api_secret": "your-api-private-key",
+                "use_vault": False  # True if using vault address
+            }
+            # Add credentials for hyperliquid to the 'master_account'
+            result = await client.accounts.add_credential("master_account", "hyperliquid", data)
+            print("\U0001F511 Added hyperliquid credentials:")
+            print(result)
+            return result
+        finally:
+            await client.close()
+
     # Run the async function
-    account = asyncio.run(add_exchange_account())
+    asyncio.run(add_hyperliquid_credentials())
     ```
 
 **Response:**
@@ -203,19 +231,15 @@ For Hyperliquid:
     
     ```json
     {
-      "id": 1,
-      "name": "master_account",
-      "exchange": "hyperliquid",
-      "created_at": "2025-07-16T10:30:00Z"
+      "message": "Connector credentials added successfully,
     }
     ```
 
 === "Python Client"
     
-    ```
-    ✓ Account added: master_account
-      ID: 1
-      Exchange: hyperliquid
+    ```json
+    🔑 Added hyperliquid credentials:
+    {'message': 'Connector credentials added successfully.'}
     ```
 
 ## View Your Portfolio
@@ -226,7 +250,7 @@ Check your portfolio balances across all connected exchanges:
     
     ```bash
     curl -u admin:admin -X 'POST' \
-      'http://localhost:8000/portfolio/state/' \
+      'http://localhost:8000/portfolio/state' \
       -H 'accept: application/json' \
       -H 'Content-Type: application/json' \
       -d '{}'
@@ -235,22 +259,35 @@ Check your portfolio balances across all connected exchanges:
 === "Python Client"
     
     ```python
+    import asyncio
+    from hummingbot_api_client import HummingbotAPIClient
+
+    # Create client instance
+    client = HummingbotAPIClient(
+        base_url="http://localhost:8000",
+        username="admin",
+        password="admin"
+    )
+
     async def view_portfolio():
-        # Get portfolio state
-        portfolio = await client.portfolio.get_state()
-        
-        print(f"\n📊 Portfolio Summary")
-        
-        for account_name, exchanges in portfolio.items():
-            print(f"\n{account_name}:")
-            for exchange, balances in exchanges.items():
-                print(f"  {exchange}:")
-                for balance in balances:
-                    print(f"    {balance['token']}:")
-                    print(f"      Units: {balance['units']}")
-                    print(f"      Price: ${balance['price']:.2f}")
-                    print(f"      Value: ${balance['value']:.2f}")
-                    print(f"      Available: {balance['available_units']}")
+        await client.init()
+        try:
+            # Get portfolio state
+            portfolio = await client.portfolio.get_state()
+            print(f"\n\U0001F4CA Portfolio Summary")
+            for account_name, exchanges in portfolio.items():
+                print(f"\n{account_name}:")
+                for exchange, balances in exchanges.items():
+                    print(f"  {exchange}:")
+                    for balance in balances:
+                        print(f"    {balance['token']}:")
+                        print(f"      Units: {balance['units']}")
+                        print(f"      Price: ${balance['price']:.2f}")
+                        print(f"      Value: ${balance['value']:.2f}")
+                        print(f"      Available: {balance['available_units']}")
+        finally:
+            await client.close()
+
     # Run the async function
     asyncio.run(view_portfolio())
     ```
@@ -303,25 +340,37 @@ Before placing orders, fetch the trading rules for your intended trading pair to
 === "Python Client"
     
     ```python
+    import asyncio
+    from hummingbot_api_client import HummingbotAPIClient
+
     async def get_trading_rules():
-        # Get trading rules for HYPE-USDC
-        rules = await client.connectors.get_trading_rules(
-            connector="hyperliquid",
-            trading_pairs=["HYPE-USDC"]
+        client = HummingbotAPIClient(
+            base_url="http://localhost:8000",
+            username="admin",
+            password="admin"
         )
-        
-        hype_rules = rules["HYPE-USDC"]
-        print("📏 Trading Rules for HYPE-USDC:")
-        print(f"  Min Order Size: {hype_rules['min_order_size']}")
-        print(f"  Max Order Size: {hype_rules['max_order_size']}")
-        print(f"  Min Price Increment: {hype_rules['min_price_increment']}")
-        print(f"  Min Base Amount Increment: {hype_rules['min_base_amount_increment']}")
-        print(f"  Supports Limit Orders: {hype_rules['supports_limit_orders']}")
-        print(f"  Supports Market Orders: {hype_rules['supports_market_orders']}")
-        
-        return rules
-      # Run the async function
-    rules = asyncio.run(get_trading_rules())
+        await client.init()
+        try:
+            # Get trading rules for HYPE-USDC
+            rules = await client.connectors.get_trading_rules(
+                connector_name="hyperliquid",
+                trading_pairs=["HYPE-USDC"]
+            )
+            hype_rules = rules["HYPE-USDC"]
+            print("\U0001F4CF Trading Rules for HYPE-USDC:")
+            print(f"  Min Order Size: {hype_rules['min_order_size']}")
+            print(f"  Max Order Size: {hype_rules['max_order_size']}")
+            print(f"  Min Price Increment: {hype_rules['min_price_increment']}")
+            print(f"  Min Base Amount Increment: {hype_rules['min_base_amount_increment']}")
+            print(f"  Supports Limit Orders: {hype_rules['supports_limit_orders']}")
+            print(f"  Supports Market Orders: {hype_rules['supports_market_orders']}")
+            return rules
+        finally:
+            await client.close()
+
+    # Run the async function
+    if __name__ == "__main__":
+        asyncio.run(get_trading_rules())
     ```
 **Response:**
 
@@ -366,7 +415,7 @@ Execute a limit sell order for HYPE:
     
     ```bash
     curl -u admin:admin -X 'POST' \
-      'http://localhost:8000/trading/orders/' \
+      'http://localhost:8000/trading/orders' \
       -H 'accept: application/json' \
       -H 'Content-Type: application/json' \
       -d '{
@@ -383,32 +432,44 @@ Execute a limit sell order for HYPE:
 === "Python Client"
     
     ```python
+    import asyncio
+    from hummingbot_api_client import HummingbotAPIClient
+
+    # Create client instance
+    client = HummingbotAPIClient(
+        base_url="http://localhost:8000",
+        username="admin",
+        password="admin"
+    )
+
     async def place_limit_order():
-        # Place a limit sell order
-        order = await client.trading.create_order(
-            account_name="master_account",
-            connector_name="hyperliquid",
-            trading_pair="HYPE-USDC",
-            trade_type="SELL",
-            amount=1,
-            order_type="LIMIT",
-            price=47.1,
-            position_action="OPEN"
-        )
-        
-        print(f"\n✅ Order Placed Successfully!")
-        print(f"  Order ID: {order['order_id']}")
-        print(f"  Status: {order['status']}")
-        print(f"  Connector: {order['connector_name']}")
-        print(f"  Trading Pair: {order['trading_pair']}")
-        print(f"  Type: {order['order_type']} {order['trade_type']}")
-        print(f"  Amount: {order['amount']} HYPE")
-        print(f"  Price: ${order['price']}")
-        
-        return order
-    
+        await client.init()
+        try:
+            # Place a limit sell order
+            order = await client.trading.place_order(
+                account_name="master_account",
+                connector_name="hyperliquid",
+                trading_pair="HYPE-USDC",
+                trade_type="SELL",
+                amount=1,
+                order_type="LIMIT",
+                price=47.1,
+                position_action="OPEN"
+            )
+            print(f"\n✅ Order Placed Successfully!")
+            print(f"  Order ID: {order['order_id']}")
+            print(f"  Status: {order['status']}")
+            print(f"  Connector: {order['connector_name']}")
+            print(f"  Trading Pair: {order['trading_pair']}")
+            print(f"  Type: {order['order_type']} {order['trade_type']}")
+            print(f"  Amount: {order['amount']} HYPE")
+            print(f"  Price: ${order['price']}")
+            return order
+        finally:
+            await client.close()
+
     # Run the async function
-    order = asyncio.run(place_limit_order())
+    asyncio.run(place_limit_order())
     ```
 
 !!! warning "Geo-Restriction Error"
@@ -430,52 +491,55 @@ Here's a complete example that performs all three operations:
 === "curl"
     
     ```bash
-    # Step 1: Add exchange account
     echo "🔑 Adding Exchange Account..."
-    curl -X POST http://localhost:8000/accounts \
+    curl -X POST "http://localhost:8000/accounts/add-account" \
+      -u "admin:admin" \
+      -H "Content-Type: application/json" \
+      -d '{"account_name": "master_account"}'
+
+    # Step 2: Add credentials for hyperliquid
+    curl -X POST "http://localhost:8000/accounts/add-credential/master_account/hyperliquid" \
       -u "admin:admin" \
       -H "Content-Type: application/json" \
       -d '{
-        "name": "master_account",
-        "exchange": "hyperliquid",
-        "api_key": "0x1234...abcd",
-        "api_secret": "your-arbitrum-private-key",
+        "hyperliquid_api_key": "0x1234...abcd",
+        "hyperliquid_api_secret": "your-arbitrum-private-key",
         "use_vault": false
       }'
-    
+
     # Wait for account sync
     sleep 2
-    
-    # Step 2: View portfolio
-    echo -e "\n📊 Fetching Portfolio..."
-    curl -X 'POST' \
-      'http://localhost:8000/portfolio/state' \
-      -H 'accept: application/json' \
-      -H 'Content-Type: application/json' \
+
+    # Step 3: View portfolio
+    echo -e "\n\U0001F4CA Fetching Portfolio..."
+    curl -X POST "http://localhost:8000/portfolio/state" \
+      -u "admin:admin" \
+      -H "accept: application/json" \
+      -H "Content-Type: application/json" \
       -d '{}'
-    
-    # Step 3: Get trading rules for HYPE-USDC
-    echo -e "\n📏 Getting Trading Rules..."
-    curl -X 'GET' \
-      'http://localhost:8000/connectors/hyperliquid/trading-rules?trading_pairs=HYPE-USDC' \
-      -H 'accept: application/json'
-    
-    # Step 4: Place limit order
-    echo -e "\n💱 Placing Limit Order..."
-    curl -X 'POST' \
-      'http://localhost:8000/trading/orders' \
-      -H 'accept: application/json' \
-      -H 'Content-Type: application/json' \
+
+    # Step 4: Get trading rules for HYPE-USDC
+    echo -e "\n\U0001F4CF Getting Trading Rules..."
+    curl -X GET "http://localhost:8000/connectors/hyperliquid/trading-rules?trading_pairs=HYPE-USDC" \
+      -u "admin:admin" \
+      -H "accept: application/json"
+
+    # Step 5: Place limit order
+    echo -e "\n\U0001F4B1 Placing Limit Order..."
+    curl -X POST "http://localhost:8000/trading/orders" \
+      -u "admin:admin" \
+      -H "accept: application/json" \
+      -H "Content-Type: application/json" \
       -d '{
-      "account_name": "master_account",
-      "connector_name": "hyperliquid",
-      "trading_pair": "HYPE-USDC",
-      "trade_type": "SELL",
-      "amount": 1,
-      "order_type": "LIMIT",
-      "price": 47.1,
-      "position_action": "OPEN"
-    }'
+        "account_name": "master_account",
+        "connector_name": "hyperliquid",
+        "trading_pair": "HYPE-USDC",
+        "trade_type": "SELL",
+        "amount": 1,
+        "order_type": "LIMIT",
+        "price": 47.1,
+        "position_action": "OPEN"
+      }'
     ```
 
 === "Python Client"
@@ -485,7 +549,7 @@ Here's a complete example that performs all three operations:
     ```python
     import asyncio
     from hummingbot_api_client import HummingbotAPIClient
-    
+
     async def main():
         # Initialize client
         client = HummingbotAPIClient(
@@ -493,23 +557,39 @@ Here's a complete example that performs all three operations:
             username="admin",
             password="admin"
         )
-        
+        await client.init()
         try:
             # Step 1: Add exchange account
             print("🔑 Adding Exchange Account...")
-            account = await client.accounts.add_account(
-                name="master_account",
-                exchange="hyperliquid",
-                api_key="0x1234...abcd",  # Your public/vault address
-                api_secret="your-arbitrum-private-key",
-                use_vault=False  # True if using vault address
+            try:
+                account = await client.accounts.add_account(
+                    account_name="master_account"
+                )
+                print(f"✓ Account '{account['account_name']}' added successfully!")
+            except Exception as e:
+                if "Account already exists" in str(e):
+                    print("ℹ️ Account already exists, continuing...")
+                else:
+                    raise
+
+            # Step 2: Add credentials for hyperliquid
+            print("\n🔑 Adding Hyperliquid Credentials...")
+            credentials = {
+                "hyperliquid_api_key": "0x1234...abcd",
+                "hyperliquid_api_secret": "your-arbitrum-private-key",
+                "use_vault": False
+            }
+            cred_result = await client.accounts.add_credential(
+                account_name="master_account",
+                connector_name="hyperliquid",
+                credentials=credentials
             )
-            print(f"✓ Account '{account['name']}' added successfully!")
-            
+            print(f"✓ Credentials added: {cred_result}")
+
             # Wait for account sync
             await asyncio.sleep(2)
-            
-            # Step 2: View portfolio
+
+            # Step 3: View portfolio
             print("\n📊 Fetching Portfolio...")
             portfolio = await client.portfolio.get_state()
             print("Portfolio State:")
@@ -517,8 +597,8 @@ Here's a complete example that performs all three operations:
                 for exchange, balances in exchanges.items():
                     for balance in balances:
                         print(f"  {account}/{exchange}: {balance['units']:.2f} {balance['token']} (${balance['value']:.2f})")
-            
-            # Step 3: Get trading rules
+
+            # Step 4: Get trading rules
             print("\n📏 Getting Trading Rules for HYPE-USDC...")
             rules = await client.connectors.get_trading_rules(
                 connector_name="hyperliquid",
@@ -527,10 +607,10 @@ Here's a complete example that performs all three operations:
             hype_rules = rules["HYPE-USDC"]
             print(f"  Min Order Size: {hype_rules['min_order_size']}")
             print(f"  Min Price Increment: {hype_rules['min_price_increment']}")
-            
-            # Step 4: Place limit order
+
+            # Step 5: Place limit order
             print("\n💱 Placing Limit Order...")
-            order = await client.trading.create_order(
+            order = await client.trading.place_order(
                 account_name="master_account",
                 connector_name="hyperliquid",
                 trading_pair="HYPE-USDC",
@@ -544,14 +624,12 @@ Here's a complete example that performs all three operations:
             print(f"  Status: {order['status']}")
             print(f"  Type: {order['order_type']} {order['trade_type']}")
             print(f"  Amount: {order['amount']} HYPE @ ${order['price']}")
-            
+
         except Exception as e:
             print(f"❌ Error: {e}")
-        
         finally:
-            # Clean up
             await client.close()
-    
+
     # Run the complete example
     if __name__ == "__main__":
         asyncio.run(main())
