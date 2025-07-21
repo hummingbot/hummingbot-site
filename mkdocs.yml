@@ -304,6 +304,7 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
+    - Architecture: architecture/overview.md
     - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
@@ -348,12 +349,6 @@ nav:
     - TraderJoe: exchanges/gateway/traderjoe.md
     - Uniswap : exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
-  - CodeBoarding:
-    - Project Overview: codeboarding/on_boarding.md
-    - Core Orchestration Engine (COE): codeboarding/Core_Orchestration_Engine_COE_.md
-    - Exchange Gateway Integration (EGI): codeboarding/Exchange_Gateway_Integration_EGI_.md
-    - Performance Reporting(PR): codeboarding/Performance_Reporting_PR_.md
-    - User Interface Configuration (UIC): codeboarding/User_Interface_Configuration_UIC_.md
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
