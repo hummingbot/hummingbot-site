@@ -8,7 +8,7 @@ hide:
 ---
 
 <div class="custom-metric">
-  <div class="metric-value">31.5B</div>
+  <div class="metric-value">25.0B</div>
   <div class="metric-label">Volume traded by Hummingbot users in past 1 year</div>
 </div>
 
@@ -20,18 +20,18 @@ hide:
     "height": 400,
     "data": {
       "values": [
-        {"date": "2024-03-15", "volume": 5056300673.532455},
-        {"date": "2024-04-15", "volume": 2803765323.398611},
-        {"date": "2024-05-15", "volume": 3073736618.0402546},
-        {"date": "2024-06-15", "volume": 3196767990.299173},
         {"date": "2024-07-15", "volume": 2131640444.2422123},
         {"date": "2024-08-15", "volume": 2009532310.070123},
         {"date": "2024-09-15", "volume": 1119785879.8091574},
         {"date": "2024-10-15", "volume": 1312240203.1848197},
-        {"date": "2024-11-15", "volume": 2490000000},
+        {"date": "2024-11-15", "volume": 2250000000},
         {"date": "2024-12-15", "volume": 2980000000},
         {"date": "2025-01-15", "volume": 2890000000},
-        {"date": "2025-02-15", "volume": 3180000000}
+        {"date": "2025-02-15", "volume": 3030000000},
+        {"date": "2025-03-15", "volume": 2610000000},
+        {"date": "2025-04-15", "volume": 1590000000},
+        {"date": "2025-05-15", "volume": 1490000000},
+        {"date": "2025-06-15", "volume": 1590000000}
       ]
     },
     "mark": {"type": "bar", "color": "#5FFFD7"},

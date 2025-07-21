@@ -305,6 +305,10 @@ nav:
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
     - Architecture: architecture/overview.md
+    - Hummingbot API ⭐️: 
+      - Overview: hummingbot-api/index.md
+      - Installation: hummingbot-api/installation.md
+      - Quickstart: hummingbot-api/quickstart.md
     - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
@@ -366,6 +370,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.7.0: release-notes/2.7.0.md
     - 2.6.1: release-notes/2.6.0.md
     - 2.5.0: release-notes/2.5.0.md
     - 2.4.0: release-notes/2.4.0.md
