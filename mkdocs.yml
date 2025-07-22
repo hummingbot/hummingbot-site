@@ -115,6 +115,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6
   - assets/js/hbot-stats.js
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+  - assets/js/mermaid-init.js
 
 # Extensions
 markdown_extensions:
@@ -302,6 +304,7 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
+    - Architecture: architecture/overview.md
     - Hummingbot API ⭐️: 
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
