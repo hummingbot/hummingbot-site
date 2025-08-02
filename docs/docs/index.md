@@ -9,7 +9,7 @@ We recommend installing Hummingbot using Docker if you want the simplest, easies
 !!! note "For Developers"
     If you're a developer looking to build custom strategies or exchange connectors, consider installing Hummingbot from source. There are instructions for macOS, Linux and Windows - see [Source Installation](/installation/source).
 
-Afterwards, check out the **Academy** category in the [Hummingbot Blog](/blog/academy) for blog posts and step-by-step tutorials on how to use Hummingbot.
+Afterwards, check out the **Academy** category in the [Hummingbot Blog](/blog/category/academy) for blog posts and step-by-step tutorials on how to use Hummingbot.
 
 ## Strategies
 
