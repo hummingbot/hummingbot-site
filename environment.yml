@@ -9,6 +9,7 @@ dependencies:
   - mkdocs-git-revision-date-localized-plugin
   - mkdocs-table-reader-plugin
   - mkdocs-charts-plugin
+  - libgfortran
   - pip
   - pip:
     - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
