@@ -35,7 +35,6 @@ Here are the Gateway connectors in the codebase for the current [Epoch](/governa
 | [Meteora](./meteora.md) | `solana` | | ✓ | `clmm` | |
 | [Raydium](./raydium.md) | `solana` | | ✓ | `clmm`, `amm` | |
 | [Balancer](./balancer.md) | `ethereum` | ✓ |  | `amm` | |
-| [Carbon](./carbon.md) | `ethereum` | ✓ |  | `amm` | |
 | [Curve](./curve.md) | `ethereum` | ✓ |  | `amm` | |
 | [ETCSwap](./etcSwap.md) | `ethereum` | ✓ |  | `amm`, `amm_lp` | |
 | [Mad Meerkat](./mad-meerkat.md) | `cronos` | ✓ |  | `amm` | |

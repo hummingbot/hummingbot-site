@@ -115,8 +115,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6
   - assets/js/hbot-stats.js
-  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
-  - assets/js/mermaid-init.js
 
 # Extensions
 markdown_extensions:
@@ -270,32 +268,13 @@ nav:
         - Rate Limits: global-configs/rate-limits-share-pct.md
         - Telegram Integration: global-configs/telegram.md
     - Gateway DEX Middleware:
-      - Gateway DEX Middleware: gateway/index.md
-      - Gateway New (v2.5+):
-        - Gateway New (v2.5+): gateway/new/index.md
-        - Installation & Setup: gateway/installation.md
-        - Configuration: gateway/configuration.md
-        - Route Schemas: gateway/schemas.md
-        - Sample Strategies: gateway/strategies.md
-      - Gateway Legacy (v2.2):
-        - Gateway Legacy (v2.2): gateway/legacy/index.md
-        - Installation: gateway/legacy/installation.md
-        - Testing Gateway: gateway/legacy/testing/index.md
-        - Setting up Gateway: gateway/legacy/setup.md
-        - Working with Tokens: gateway/legacy/tokens/index.md
-        - Strategies & Scripts: gateway/legacy/running-dex-bots.md
-      - Supported Chains:
-        - Supported Chains: gateway/chains/index.md
-        - 🔼 Solana: gateway/chains/solana.md
-        - 🔼 Ethereum: gateway/chains/ethereum.md
-        - Algorand: gateway/chains/algorand.md
-        - Avalanche: gateway/chains/avalanche.md
-        - BNB Chain: gateway/chains/bnb-chain.md
-        - Cosmos: gateway/chains/cosmos.md
-        - Cronos: gateway/chains/cronos.md
-        - Ethereum Classic: gateway/chains/ethereum-classic.md
-        - Osmosis: gateway/chains/osmosis-chain.md
-        - Polygon: gateway/chains/polygon.md
+      - Overview: gateway/index.md
+      - Installation & Setup: gateway/installation.md
+      - Configuration: gateway/configuration.md
+      - API Commands: gateway/commands.md
+      - Blockchain Support: gateway/chains.md
+      - DEX Connectors: gateway/connectors.md
+      - Strategies & Scripts: gateway/strategies.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
@@ -333,7 +312,6 @@ nav:
     - BingX: exchanges/bing_x/index.md
     - Bybit: exchanges/bybit.md
     - BTC Markets: exchanges/btc-markets.md
-    - Carbon: exchanges/gateway/carbon.md
     - Coinbase: exchanges/coinbase.md
     - Cube: exchanges/cube/index.md
     - Curve: exchanges/gateway/curve.md
@@ -345,7 +323,6 @@ nav:
     - Meteora: exchanges/gateway/meteora.md
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
-    - Osmosis: exchanges/gateway/osmosis.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Raydium: exchanges/gateway/raydium.md
     - Quickswap: exchanges/gateway/quickswap.md

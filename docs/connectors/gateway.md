@@ -32,7 +32,6 @@ Here are the Gateway connectors in the codebase for the current [Epoch](/governa
 | [Raydium](/exchanges/gateway/raydium) | `solana` | ✓ | `swap`, `clmm`, `amm` |
 | [Uniswap](/exchanges/gateway/uniswap) | `ethereum` | ✓ | `swap`, `amm`, `clmm` |
 | [Balancer](/exchanges/gateway/balancer) | `ethereum` | | `swap`, `amm` |
-| [Carbon](/exchanges/gateway/carbon) | `ethereum` | | `swap`, `amm` |
 | [Curve](/exchanges/gateway/curve) | `ethereum` | | `swap`, `amm` |
 | [ETCSwap](/exchanges/gateway/etcSwap) | `ethereum` | | `swap`, `amm`, `clmm` |
 | [Pancakeswap](/exchanges/gateway/pancakeswap) | `ethereum` | | `swap`, `amm` |
