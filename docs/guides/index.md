@@ -9,6 +9,9 @@ Get started with Hummingbot using different interfaces and installation methods:
 - **[Hummingbot Docker Quickstart Guide](/blog/hummingbot-docker-quickstart-guide/)**  
  Step-by-step instructions to install and deploy Hummingbot using Docker, including setting up the interface and running your first algorithmic trading strategy.
 
+- **[Hummingbot API Quickstart Guide](/hummingbot-api/quickstart/)**  
+ Learn how to use the Hummingbot API to add exchange credentials, view portfolio balances, and place your first market order using Docker setup and Python API client examples.
+
 ## 🎓 Hummingbot Academy
 
 Just getting started with crypto market making? Start your journey with these foundational articles about crypto algorithmic trading:
@@ -52,10 +55,16 @@ Learn how to setup and run Hummingbot on various CEXs and DEXs:
 - **[Running a Trading Bot with Hummingbot on Derive](/blog/running-a-trading-bot-with-hummingbot-on-derive/)**
   Comprehensive resource for integrating and trading on Derive's decentralized derivatives platform using Hummingbot
 
+- **[Trading on XRPL with Hummingbot](/blog/trading-on-xrpl-with-hummingbot/)**
+  Guide to setting up and trading on the XRP Ledger's decentralized exchange using Hummingbot
+
 See more examples in the [Connector Guides](/blog/category/connector-guides/) category in our blog.
 
 ## 🧙 Strategy Guides
 Enhance your trading strategies with advanced development guides:
+
+- **[How to configure a v2 strategy controller](/blog/how-to-configure-a-v2-strategy-controller-in-hummingbot/)**
+  This guide walks you through configuring and running V2 strategy controllers in Hummingbot to automate and optimize your trading strategies.
 
 - **[Coding a Liquidation Sniper V2 Strategy Controller](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)**
   Explore how to create a custom V2 Controller for Hummingbot to snipe future liquidations on Binance

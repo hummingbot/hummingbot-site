@@ -150,6 +150,9 @@ markdown_extensions:
         - name: vegalite
           class: vegalite
           format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -299,6 +302,10 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
+    - Hummingbot API ⭐️: 
+      - Overview: hummingbot-api/index.md
+      - Installation: hummingbot-api/installation.md
+      - Quickstart: hummingbot-api/quickstart.md
     - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
@@ -360,6 +367,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.7.0: release-notes/2.7.0.md
     - 2.6.1: release-notes/2.6.0.md
     - 2.5.0: release-notes/2.5.0.md
     - 2.4.0: release-notes/2.4.0.md
