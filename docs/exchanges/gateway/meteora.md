@@ -1,84 +1,276 @@
-!!! note
-    This connector has been upgraded to the **Gateway New (v2.5+)** standard and available in the current `development` branch. For installation instructions, refer to the [Installation & Setup](../../gateway/installation.md) page.
+# Meteora
 
-## 🛠 Connector Info
+## Overview
 
-* **Chain**: [Solana](/gateway/chains/solana)
-* **Available Networks**: `mainnet-beta`, `devnet`
+Meteora implements a Dynamic Liquidity Market Maker (DLMM) model using discrete price bins instead of continuous price curves, providing zero slippage within bins and dynamic fee adjustment.
 
-| Connectors | Route Schemas | Notes | 
-| --------- | ------ | ----- |
-| `meteora/clmm` | Swap, CLMM | Supports Meteora DLMM pools |
+**Chain:** Solana  
+**Trading Types:** CLMM  
+**Networks:** mainnet-beta, devnet
 
-See [Route Schemas](/gateway/schemas) for more information about the endpoints defined by each connector.
+## Features
 
-## ℹ️ Exchange Info
+- Bin-based liquidity concentration for precise pricing
+- Dynamic fee tiers that adjust with market volatility
+- Zero slippage within active bins
+- Flexible liquidity distribution strategies
+- Volatility-adjusted fee mechanism
+- Multiple position management per pool
 
-- **Website**: <https://app.meteora.ag>
-- **DefiLlama**: <https://defillama.com/protocol/meteora>
-- **DEXScreener**: <https://dexscreener.com/solana/meteora>
-- **GeckoTerminal**: <https://www.geckoterminal.com/solana/meteora/pools>
-- **SDK Docs**: <https://github.com/MeteoraAg/dlmm-sdk>
+## Configuration
 
-## 🔑 How to Connect
-
-!!! warning
-    This connection interface is likely to change in future releases as we continue to improve the Gateway architecture.
-
-From inside the Hummingbot client, run `gateway connect meteora/clmm`:
-
-```
-Which Solana network do you want meteora/clmm to connect to? (mainnet-beta) >>> mainnet-beta
-Enter your solana_mainnet-beta private key >>>>
-```
-
-If connection is successful:
-```
-The meteora/clmm connector now uses wallet [pubKey] on solana-mainnet-beta
-```
-
-## ⚙️ Connector Configs
-
-* Connector Folder: [/gateway/src/connectors/meteora](https://github.com/hummingbot/gateway/tree/development/src/connectors/meteora)
-* Config Schema: [/gateway/src/services/schema/meteora-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/meteora-schema.json)
-
-Upon Gateway setup, a default `meteora.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/meteora.yml) below:
+Configure Meteora settings in `/conf/connectors/meteora.yml`:
 
 ```yaml
-# how much the execution price is allowed to move unfavorably from the trade
-# execution price. It uses a rational number for precision.
-allowedSlippage: '1/100'
-
-# predefined pools
-pools:
-  SOL-USDC: '5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6'
-  TRUMP-USDC: '9d9mb8kooFfaD3SctgZtkxQypkshx6ezhbKio89ixyy2'
-  JITOSOL-SOL: 'BoeMUkCLHchTD31HdXsbDExuZZfcUppSLpYtV3LZTH6U'
-  USDT-USDC: 'ARwi1S4DaiTG5DX7S4M4ZsrXqpMD1MrTmbu9ue2tpmEq'
+allowedSlippage: 1.0
+gasLimitEstimate: 400000
+ttl: 30
+programId: "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo"
 ```
 
-### Slippage
+### Configuration Parameters
 
-- Defines the price slippage allowed when quoting and executing a swap
-- `allowedSlippage: '1/100'` means 1% price movement allowed
+- **allowedSlippage**: Maximum acceptable price slippage percentage
+- **gasLimitEstimate**: Estimated compute units for transactions
+- **ttl**: Time-to-live for quotes in seconds
+- **programId**: Meteora DLMM program ID (chain-specific)
 
-### Pool Addresses
+## DLMM Model Explained
 
-- These addresses are required for Hummingbot strategies to interact with the correct pools when trading on CLMM exchanges
-- Add your frequently used pairs to the configuration for easy access in strategies
-- Format: `TOKEN1-TOKEN2: 'pool_address'`
-- Example: `SOL-USDC: '5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6'`
+Meteora's Dynamic Liquidity Market Maker uses a bin-based approach:
 
-### Strategy Type
+1. **Price Bins**: Liquidity is organized into discrete price bins rather than continuous ranges
+2. **Zero Slippage**: Trades within a single bin experience zero price impact
+3. **Dynamic Fees**: Fees automatically adjust based on market volatility
+4. **Flexible Shapes**: LPs can create various liquidity distribution patterns
 
-When opening positions or adding liquidity to Meteora DLMM pools, you can specify a strategy type as an optional parameter. The default strategy is `SpotImbalanced` (0).
+## API Endpoints
 
-Available Meteora DLMM strategy types:
-```
-    SpotImBalanced = 0,
-    CurveImBalanced = 1,
-    BidAskImBalanced = 2,
-    SpotBalanced = 3,
-    CurveBalanced = 4,
-    BidAskBalanced = 5
-```
+### Pool Operations
+
+#### Get Pool Information
+`POST /connectors/meteora/clmm/pool-info`
+
+Returns detailed information about a specific DLMM pool.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `poolId`: Pool address
+
+**Response:**
+- Pool configuration and parameters
+- Current bin information
+- Fee tier and volatility data
+- Token reserves
+
+#### Fetch Available Pools
+`POST /connectors/meteora/clmm/fetch-pools`
+
+Lists available DLMM pools for a token pair.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `base`: Base token symbol
+- `quote`: Quote token symbol
+
+### Position Management
+
+#### List Owned Positions
+`POST /connectors/meteora/clmm/positions-owned`
+
+Returns all DLMM positions owned by an address.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `address`: Wallet address
+
+#### Get Position Information
+`POST /connectors/meteora/clmm/position-info`
+
+Returns detailed information about a specific position.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `positionId`: Position NFT address
+
+#### Quote New Position
+`POST /connectors/meteora/clmm/quote-position`
+
+Calculates parameters for opening a new position.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `poolId`: Pool address
+- `lowerBin`: Lower bin ID
+- `upperBin`: Upper bin ID
+- `baseAmount`: Base token amount
+- `quoteAmount`: Quote token amount
+
+#### Open Position
+`POST /connectors/meteora/clmm/open-position`
+
+Creates a new DLMM position with specified parameters.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `address`: Wallet address
+- `poolId`: Pool address
+- `lowerBin`: Lower bin ID
+- `upperBin`: Upper bin ID
+- `baseAmount`: Base token amount
+- `quoteAmount`: Quote token amount
+
+### Liquidity Operations
+
+#### Add Liquidity
+`POST /connectors/meteora/clmm/add-liquidity`
+
+Adds liquidity to an existing position.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `address`: Wallet address
+- `positionId`: Position NFT address
+- `baseAmount`: Additional base token amount
+- `quoteAmount`: Additional quote token amount
+
+#### Remove Liquidity
+`POST /connectors/meteora/clmm/remove-liquidity`
+
+Removes liquidity from a position.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `address`: Wallet address
+- `positionId`: Position NFT address
+- `liquidity`: Amount of liquidity to remove
+
+### Trading Operations
+
+#### Quote Swap
+`POST /connectors/meteora/clmm/quote-swap`
+
+Gets a quote for swapping tokens through DLMM pools.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `base`: Base token symbol
+- `quote`: Quote token symbol
+- `amount`: Trade amount
+- `side`: "BUY" or "SELL"
+
+#### Execute Swap
+`POST /connectors/meteora/clmm/execute-swap`
+
+Executes a swap through DLMM pools.
+
+**Request Parameters:**
+Same as quote-swap, plus:
+- `address`: Wallet address
+- `slippage`: Optional slippage override
+
+### Fee Management
+
+#### Collect Fees
+`POST /connectors/meteora/clmm/collect-fees`
+
+Collects earned fees from a position.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `address`: Wallet address
+- `positionId`: Position NFT address
+
+#### Close Position
+`POST /connectors/meteora/clmm/close-position`
+
+Closes a position and withdraws all liquidity and fees.
+
+**Request Parameters:**
+- `chain`: "solana"
+- `network`: Network name
+- `connector`: "meteora"
+- `address`: Wallet address
+- `positionId`: Position NFT address
+
+## Liquidity Strategies
+
+### Concentrated Strategy
+Focus liquidity in narrow bin ranges for maximum fee earning:
+- Set bins close to current price
+- Higher fee earnings when price is in range
+- Requires active management
+
+### Wide Range Strategy
+Distribute liquidity across many bins:
+- Lower fee concentration
+- Less rebalancing needed
+- Better for volatile pairs
+
+### Bid-Ask Strategy
+Place liquidity on both sides of current price:
+- Capture fees from both directions
+- Natural rebalancing as price moves
+- Good for range-bound markets
+
+## Best Practices
+
+1. **Bin Selection**:
+   - Tighter bins for stable pairs
+   - Wider bins for volatile pairs
+   - Consider fee tier when selecting range
+
+2. **Position Management**:
+   - Monitor bin activity regularly
+   - Rebalance when price moves out of range
+   - Collect fees periodically to compound
+
+3. **Risk Management**:
+   - Understand impermanent loss risks
+   - Diversify across multiple positions
+   - Use stop-loss strategies for volatile pairs
+
+## Technical Details
+
+- **GitHub**: [Gateway Meteora Connector](https://github.com/hummingbot/gateway/tree/development/src/connectors/meteora)
+- **Documentation**: [Meteora DLMM Docs](https://docs.meteora.ag/dlmm)
+- **Default Config**: [meteora.yml template](https://github.com/hummingbot/gateway/blob/development/src/templates/meteora.yml)
+
+## Troubleshooting
+
+### Common Issues
+
+**"Bin not found" errors:**
+- Verify bin IDs are valid for the pool
+- Check that bins have sufficient liquidity
+- Ensure bins are within valid range
+
+**Position creation failures:**
+- Check wallet has enough tokens and SOL
+- Verify bin range is valid
+- Ensure pool is active
+
+**Fee collection issues:**
+- Confirm fees have accrued
+- Check position is still open
+- Verify wallet permissions

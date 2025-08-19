@@ -1,6 +1,6 @@
 
 !!! note
-    This connector is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../../gateway/legacy/installation.md).
+    This connector is being migrated to the new Gateway architecture. Currently available in Gateway Legacy (v2.2) only. See [Gateway Installation](/gateway/installation) for setup instructions.
 
 
 ## 🛠 Connector Info

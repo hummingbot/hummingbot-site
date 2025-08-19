@@ -1,11 +1,11 @@
 !!! note
     This documentation is a work in progress and will be updated frequently as the Gateway connectors and strategies evolve. The examples shown here may change as new features are added or existing ones are modified.
 
-This page provides examples of Hummingbot strategies and scripts that utilize the [Gateway New](./new/index.md) connectors.
+This page provides examples of Hummingbot strategies and scripts that utilize the Gateway connectors.
 
 ## Swap schema
 
-The [Swap schema](/gateway/schemas/#swap-schema) defines standardized endpoints for basic token swapping functionality. Connectors that implement this schema allow Hummingbot to query prices and execute trades on DEXs. The following strategies can utilize connectors that implement the Swap schema:
+The Swap schema defines standardized endpoints for basic token swapping functionality. Connectors that implement this schema allow Hummingbot to query prices and execute trades on DEXs. The following strategies can utilize connectors that implement the Swap schema:
 
 | Strategy | Strategy Type | Notes |
 | -------- | ------------- | ----- |
@@ -18,11 +18,11 @@ The [Swap schema](/gateway/schemas/#swap-schema) defines standardized endpoints 
 
 ## AMM schema
 
-The [AMM schema](/gateway/schemas/#amm-schema) defines standardized endpoints for managing liquidity positions on Automated Market Maker (AMM) DEXs like Raydium Standard and Uniswap V2 pools. Sample strategies demonstrating AMM functionality will be available soon.
+The AMM schema defines standardized endpoints for managing liquidity positions on Automated Market Maker (AMM) DEXs like Raydium Standard and Uniswap V2 pools. Sample strategies demonstrating AMM functionality will be available soon.
 
 ## CLMM schema
 
-The [CLMM schema](/gateway/schemas/#clmm-schema) defines standardized endpoints for managing concentrated liquidity positions on DEXs like Raydium Concentrated and Uniswap V3 pools. The following strategies can utilize connectors that implement the CLMM schema:
+The CLMM schema defines standardized endpoints for managing concentrated liquidity positions on DEXs like Raydium Concentrated and Uniswap V3 pools. The following strategies can utilize connectors that implement the CLMM schema:
 
 | Strategy | Strategy Type | Notes |
 | -------- | ------------- | ----- |

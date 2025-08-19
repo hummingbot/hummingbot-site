@@ -111,14 +111,33 @@ Gateway is currently on version 2.8.0, featuring:
 
 The [Gateway repository](https://github.com/hummingbot/gateway) is open sourced under the Apache 2.0 license and follows the same [release cycle](/release-notes) as the main Hummingbot client.
 
+## Governance and Maintenance
+
+### Connector Maintenance
+
+Like other connectors, Gateway DEX connectors require ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as well as improvements to the Hummingbot connector standard.
+
+Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](/bounties) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
+
+Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
+
+### Refactoring Status
+
+!!! note
+    Gateway is currently undergoing a large multi-release codebase refactoring, approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). During this refactoring process, not all connectors are available in the new version, as they are being gradually migrated from the legacy architecture.
+
 ## Contributing
 
 Gateway is part of the open source Hummingbot project. Ways to contribute:
 
-- File issues at [GitHub Issues](https://github.com/hummingbot/gateway/issues)
-- Submit [pull requests](https://github.com/hummingbot/gateway/pulls)
-- Edit the [documentation](https://github.com/hummingbot/hummingbot-site/)
-- Vote in quarterly [polls](https://snapshot.org/#/hbot.eth) for new DEX support
+- **Add new connectors**: See [DEX Connectors](/gateway/connectors#adding-custom-connectors) for implementation guide
+- **Submit proposals**: New connectors may be contributed via [New Connector Proposals](/governance/proposals)
+- **File issues**: Report bugs at [GitHub Issues](https://github.com/hummingbot/gateway/issues)
+- **Submit pull requests**: Contribute code at [GitHub](https://github.com/hummingbot/gateway/pulls)
+- **Edit documentation**: Improve docs at [GitHub](https://github.com/hummingbot/hummingbot-site/)
+- **Vote in polls**: Participate in quarterly [polls](https://snapshot.org/#/hbot.eth) for new DEX support
 
 ## Resources
 

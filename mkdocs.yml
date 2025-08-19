@@ -226,7 +226,7 @@ nav:
     - Connectors:
       - Connectors: connectors/index.md
       - CLOB Connectors: connectors/clob.md
-      - Gateway DEX Connectors: connectors/gateway.md
+      - Gateway DEX Connectors: gateway/connectors.md
       - Building CLOB Connectors:
         - Building CLOB Connectors: developers/connectors/index.md
         - Exchange API Requirements: developers/connectors/build.md
@@ -237,7 +237,10 @@ nav:
         - Spot Connector QA Checklist: developers/connectors/test.md
         - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
         - Perp Connector QA Checklist:  developers/connectors/test-perp.md
-      - Building Gateway DEX Connectors: gateway/new-connector.md
+      - Building Gateway Connectors:
+        - Building Gateway Connectors: developers/gateway-connectors/index.md
+        - Connector Architecture: developers/gateway-connectors/architecture.md
+        - Testing Gateway Connectors: developers/gateway-connectors/testing.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -273,7 +276,7 @@ nav:
       - Configuration: gateway/configuration.md
       - API Commands: gateway/commands.md
       - Blockchain Support: gateway/chains.md
-      - DEX Connectors: gateway/connectors.md
+      - Gateway DEX Connectors: gateway/connectors.md
       - Strategies & Scripts: gateway/strategies.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
@@ -294,8 +297,8 @@ nav:
     - Reported Volumes: reporting.md
   - Exchanges:
     - Exchanges: exchanges/index.md
-    - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Binance: exchanges/binance/index.md
+    - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Derive: exchanges/derive/index.md
     - 🔥 dYdX: exchanges/dydx.md
     - 🔥 Gate.io: exchanges/gate-io/index.md
