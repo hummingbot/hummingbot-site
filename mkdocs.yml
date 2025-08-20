@@ -290,7 +290,6 @@ nav:
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
-    - Architecture: architecture/overview.md
     - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
