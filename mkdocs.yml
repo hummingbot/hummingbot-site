@@ -319,7 +319,7 @@ nav:
     - Curve: exchanges/gateway/curve.md
     - Dexalot: exchanges/dexalot.md
     - ETCSwap: exchanges/gateway/etcSwap.md
-    - Foxbit: exchanges/foxbit.md
+    - Foxbit: exchanges/foxbit/foxbit.md
     - Injective Helix: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
     - Kraken: exchanges/kraken/index.md
