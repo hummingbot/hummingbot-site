@@ -1,5 +1,5 @@
 !!! note
-    This connector is being migrated to the new Gateway architecture. Currently available in Gateway Legacy (v2.2) only. See [Gateway Installation](/gateway/installation) for setup instructions.
+    This connector need to be migrated to the new Gateway architecture. See [Legacy Connectors](/gateway/connectors/) for more information.
 
 ## 🛠 Connector Info
 

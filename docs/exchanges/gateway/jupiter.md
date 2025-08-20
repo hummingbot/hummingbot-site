@@ -1,165 +1,67 @@
 # Jupiter
 
-## Overview
+## 🛠 Connector Info
 
-Jupiter is Solana's leading DEX aggregator, providing best-price swaps by routing through multiple liquidity sources including Raydium, Orca, Meteora, and others.
+- **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/development/src/templates/jupiter.yml>
 
-**Chain:** Solana  
-**Trading Types:** Router  
-**Networks:** mainnet-beta, devnet
+| Component | Status | Notes | 
+| --------- | ------ | ----- |
+| Router Connector | ✅ | DEX Aggregator |
 
-## Features
+## ℹ️ Exchange Info
 
-- Automatic route optimization across all major Solana DEXs
-- Token list integration for verified tokens
-- Priority fee suggestions for faster transactions
-- Transaction versioning support (Legacy and V0)
-- MEV protection through direct routing
+- **Website**: <https://jup.ag>
+- **API Docs**: <https://station.jup.ag/docs/apis/swap-api>
+- **Chain**: Solana
+- **Networks**: `mainnet-beta`, `devnet`
+
+## 🔑 How to Connect
+
+Jupiter operates on Solana networks.
+
+| Chain | Networks | 
+| ----- | -------- |
+| `solana` | `mainnet-beta`, `devnet` |
+
+See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
 
 ## Configuration
 
-Configure Jupiter settings in `/conf/connectors/jupiter.yml`:
+Configure Jupiter settings in `/conf/connectors/jupiter.yml`.
 
+Below are the Jupiter configuration parameters and their default values:
 ```yaml
-allowedSlippage: 1.0  # Maximum slippage percentage
-gasLimitEstimate: 300000
-ttl: 30  # Quote time-to-live in seconds
-referrerAddress: null  # Optional referrer address for fees
+# Default slippage percentage for swaps (as a decimal, e.g., 1 = 1%)
+slippagePct: 1
+
+# Priority level for swap transaction processing
+# Options: medium, high, veryHigh
+priorityLevel: 'veryHigh'
+
+# Maximum priority fee in lamports (for dynamic priority fees)
+# Used when priorityLevel is set and no explicit priorityFeeLamports is provided
+maxLamports: 1000000
+
+# Restrict routing to only go through 1 market
+# Default: false (allows multi-hop routes for better prices)
+onlyDirectRoutes: false
+
+# Restrict routing through highly liquid intermediate tokens only
+# Default: true (for better price and stability)
+restrictIntermediateTokens: true
+
+# Jupiter API key (optional)
+# For free tier, leave empty (uses https://lite-api.jup.ag)
+# For paid plans, generate key at https://portal.jup.ag (uses https://api.jup.ag)
+apiKey: ''
 ```
 
-### Configuration Parameters
+## Router Endpoints
+*Jupiter DEX aggregator for optimal swap routing across Solana*
 
-- **allowedSlippage**: Maximum acceptable price slippage (e.g., 1.0 = 1%)
-- **gasLimitEstimate**: Estimated compute units for transactions
-- **ttl**: Time-to-live for quotes in seconds
-- **referrerAddress**: Optional address to receive referral fees
+- `/connectors/jupiter/router/quote-swap`
+- `/connectors/jupiter/router/execute-quote`
+- `/connectors/jupiter/router/execute-swap`
 
-## API Endpoints
-
-### Router Operations
-
-#### Get Quote and Swap
-`POST /connectors/jupiter/router/quote-swap`
-
-Gets an optimal swap quote and optionally executes it in one call.
-
-**Request Parameters:**
-- `chain`: "solana"
-- `network`: "mainnet-beta" or "devnet"
-- `connector`: "jupiter"
-- `address`: Wallet address
-- `base`: Base token symbol
-- `quote`: Quote token symbol
-- `amount`: Amount to trade (in base units)
-- `side`: "BUY" or "SELL"
-- `slippage`: Optional slippage override
-
-**Response:**
-- `base`/`quote`: Token symbols
-- `amount`: Input amount
-- `expectedOut`: Expected output amount
-- `price`: Execution price
-- `priceImpact`: Estimated price impact
-- `route`: Routing path details
-- `txHash`: Transaction hash (if executed)
-
-#### Execute Swap
-`POST /connectors/jupiter/router/execute-swap`
-
-Executes a swap directly without pre-fetching a quote.
-
-**Request Parameters:**
-Same as quote-swap
-
-**Response:**
-- Transaction details including hash and confirmation status
-
-#### Execute Quote
-`POST /connectors/jupiter/router/execute-quote`
-
-Executes a previously fetched quote.
-
-**Request Parameters:**
-- `chain`: "solana"
-- `network`: Network name
-- `connector`: "jupiter"
-- `address`: Wallet address
-- `quote`: Quote object from quote-swap
-
-**Response:**
-- Transaction execution details
-
-## Usage Examples
-
-### Basic Swap
-
-```python
-# Get quote for swapping 1 SOL to USDC
-response = gateway.quote_swap(
-    chain="solana",
-    network="mainnet-beta",
-    connector="jupiter",
-    address=wallet_address,
-    base="SOL",
-    quote="USDC",
-    amount="1.0",
-    side="SELL"
-)
-```
-
-### Execute with Custom Slippage
-
-```python
-# Execute swap with 0.5% slippage
-response = gateway.execute_swap(
-    chain="solana",
-    network="mainnet-beta",
-    connector="jupiter",
-    address=wallet_address,
-    base="USDC",
-    quote="SOL",
-    amount="100",
-    side="SELL",
-    slippage=0.005
-)
-```
-
-## Best Practices
-
-1. **Quote Freshness**: Jupiter quotes are valid for the TTL period (default 30 seconds). Execute quotes promptly to avoid slippage.
-
-2. **Slippage Settings**: 
-   - Use 0.5-1% for liquid pairs (SOL/USDC)
-   - Use 1-3% for medium liquidity pairs
-   - Use 3-5% for low liquidity or volatile pairs
-
-3. **Priority Fees**: Jupiter automatically suggests appropriate priority fees based on network congestion.
-
-4. **Error Handling**: Common errors include:
-   - "No route found" - No liquidity path exists
-   - "Slippage exceeded" - Price moved beyond tolerance
-   - "Insufficient balance" - Check token and SOL balances
-
-## Technical Details
-
-- **GitHub**: [Gateway Jupiter Connector](https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter)
-- **API Documentation**: [Jupiter V6 API](https://station.jup.ag/docs/apis/swap-api)
-- **Default Config**: [jupiter.yml template](https://github.com/hummingbot/gateway/blob/development/src/templates/jupiter.yml)
-
-## Troubleshooting
-
-### Common Issues
-
-**"No route found" errors:**
-- Verify tokens are valid on the selected network
-- Check that sufficient liquidity exists
-- Try smaller trade amounts
-
-**Transaction failures:**
-- Ensure wallet has enough SOL for fees
-- Increase slippage tolerance during volatile periods
-- Check compute unit limits in configuration
-
-**Quote expiration:**
-- Reduce time between quote and execution
-- Use execute-quote pattern for better reliability
+For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

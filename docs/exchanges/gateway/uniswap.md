@@ -2,14 +2,14 @@
 
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Automatic Market Maker (AMM) & Concentrated Liquidity Market Maker (CLMM)
+- **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/uniswap>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/development/src/templates/uniswap.yml>
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [🔀 Router Connector](#router-connector) | ✅ | Universal Router |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ | V2 Pools |
-| [3️⃣ CLMM Connector](#3-clmm-connector) | ✅ | V3 Pools |
+| [Router Connector](#router-connector) | ✅ | Universal Router |
+| [AMM Connector](#2-amm-connector) | ✅ | V2 Pools |
+| [CLMM Connector](#3-clmm-connector) | ✅ | V3 Pools |
 
 ## ℹ️ Exchange Info
 
@@ -17,99 +17,63 @@
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/uniswap-v3/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/uniswap>
 - **Fees**: <https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees>
+- **API Docs**: <https://docs.uniswap.org/sdk/v3/overview>
 
 ## 🔑 How to Connect
 
-Create a wallet on one of the supported networks below:
+Uniswap operates on Ethereum and EVM-compatible networks.
 
 | Chain | Networks | 
 | ----- | -------- |
 | `ethereum` | `mainnet`, `arbitrum`, `optimism`, `base`, `polygon`, `avalanche`, `bsc`, `celo`
 
-From inside the Hummingbot client, run `gateway connect uniswap` in order to connect your wallet:
-
-```
-Which chain do you want uniswap to connect to? (ethereum) >>> 
-Which network do you want uniswap to connect to? (mainnet, arbitrum, optimism, base, polygon, avalanche, bsc, celo) >>>
-Enter your ethereum-mainnet private key >>>>
-```
-
-If connection is successful:
-```
-The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
-```
+See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
 
 ## Configuration
 
-Configure Uniswap settings in `/conf/connectors/uniswap.yml`:
+Configure Uniswap settings in `/conf/connectors/uniswap.yml`.
 
+Below are the Uniswap configuration parameters and their default values:
 ```yaml
-allowedSlippage: 1.0
-gasLimitEstimate: 300000
-ttl: 600
-contractAddresses:
-  mainnet:
-    uniswapV2RouterAddress: "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
-    uniswapV3RouterAddress: "0xE592427A0AEce92De3Edee1F18E0157C05861564"
-    uniswapV3NftManagerAddress: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88"
-    universalRouterAddress: "0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD"
+# Global settings for Uniswap
+# Default slippage percentage for swaps (2%)
+slippagePct: 2
+
+# For each swap, the maximum number of hops to consider
+maximumHops: 4
 ```
 
-### Configuration Parameters
-
-- **allowedSlippage**: Maximum acceptable price slippage percentage
-- **gasLimitEstimate**: Estimated gas limit for transactions
-- **ttl**: Time-to-live for quotes in seconds
-- **contractAddresses**: Network-specific contract addresses
-
-## 🔀 Router Connector
+## Router Endpoints
 *Integration to Uniswap's Universal Router for optimal trade execution*
 
-- **ID**: `uniswap`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.uniswap.org/sdk/v3/overview>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswap>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml>
+- `/connectors/uniswap/router/quote-swap`
+- `/connectors/uniswap/router/execute-quote`
+- `/connectors/uniswap/router/execute-swap`
 
-### Endpoints
-
-- `/router/quote`
-- `/router/trade`
-- `/router/estimateGas`
-
-## 2️⃣ AMM Connector
+## AMM Endpoints
 *Integration to Uniswap V2 classic AMM pools*
 
-### Endpoints
+- `/connectors/uniswap/amm/quote-swap`
+- `/connectors/uniswap/amm/execute-swap`
+- `/connectors/uniswap/amm/pool-info`
+- `/connectors/uniswap/amm/position-info`
+- `/connectors/uniswap/amm/quote-liquidity`
+- `/connectors/uniswap/amm/add-liquidity`
+- `/connectors/uniswap/amm/remove-liquidity`
 
-- `/amm/price`
-- `/amm/trade`
-- `/amm/estimateGas`
-
-### Features
-- Classic constant product (x*y=k) pools
-- ERC-20 LP tokens
-- 0.3% default fee tier
-- Simple liquidity provision
-- Automatic rebalancing
-
-## 3️⃣ CLMM Connector
+## CLMM Endpoints
 *Integration to Uniswap V3 concentrated liquidity pools*
 
-### Endpoints
+- `/connectors/uniswap/clmm/quote-swap`
+- `/connectors/uniswap/clmm/execute-swap`
+- `/connectors/uniswap/clmm/pool-info`
+- `/connectors/uniswap/clmm/position-info`
+- `/connectors/uniswap/clmm/positions-owned`
+- `/connectors/uniswap/clmm/quote-position`
+- `/connectors/uniswap/clmm/open-position`
+- `/connectors/uniswap/clmm/close-position`
+- `/connectors/uniswap/clmm/add-liquidity`
+- `/connectors/uniswap/clmm/remove-liquidity`
+- `/connectors/uniswap/clmm/collect-fees`
 
-- `/clmm/pool-info`
-- `/clmm/pool-price`
-- `/clmm/pool-position` 
-- `/clmm/add-liquidity`
-- `/clmm/remove-liquidity`
-- `/clmm/collect-fees`
-
-### Features
-- Concentrated liquidity positions
-- Multiple fee tiers (0.01%, 0.05%, 0.3%, 1%)
-- Position NFTs (ERC-721)
-- Range orders capability
-- Up to 4000x capital efficiency
-
-For more info, run Gateway and go to <https:localhost:15888> in your browser to see detailed documentation for each endpoint.
+For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

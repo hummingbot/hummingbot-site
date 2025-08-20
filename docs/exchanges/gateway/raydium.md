@@ -2,13 +2,13 @@
 
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Automatic Market Maker (AMM) & Concentrated Liquidity Market Maker (CLMM)
+- **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/raydium>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/development/src/templates/raydium.yml>
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ | Standard V2 Pools |
-| [3️⃣ CLMM Connector](#3-clmm-connector) | ✅ | Concentrated Liquidity |
+| AMM Connector | ✅ | Standard V2 Pools |
+| CLMM Connector | ✅ | Concentrated Liquidity |
 
 ## ℹ️ Exchange Info
 
@@ -16,88 +16,53 @@
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/raydium/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/raydium>
 - **Fees**: <https://docs.raydium.io/raydium/trading/trade-and-swap>
+- **API Docs**: <https://docs.raydium.io/raydium/trading/trade-and-swap>
 
 ## 🔑 How to Connect
 
-Create a wallet on one of the supported networks below:
+Raydium operates on Solana networks.
 
 | Chain | Networks | 
 | ----- | -------- |
-| `solana` | `mainnet-beta`, `devnet`
+| `solana` | `mainnet-beta`, `devnet` |
 
-From inside the Hummingbot client, run `gateway connect raydium` in order to connect your wallet:
-
-```
-Which chain do you want raydium to connect to? (solana) >>> 
-Which network do you want raydium to connect to? (mainnet-beta, devnet) >>>
-Enter your solana-mainnet-beta private key >>>>
-```
-
-If connection is successful:
-```
-The raydium connector now uses wallet [pubKey] on solana-mainnet-beta
-```
+See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
 
 ## Configuration
 
-Configure Raydium settings in `/conf/connectors/raydium.yml`:
+Configure Raydium settings in `/conf/connectors/raydium.yml`.
 
+Below are the Raydium configuration parameters and their default values:
 ```yaml
-allowedSlippage: 1.0
-gasLimitEstimate: 500000
-ttl: 30
-programIds:
-  amm: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"
-  clmm: "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK"
+# Global settings for Raydium
+# Default slippage percentage for swaps (e.g., 1 = 1%)
+slippagePct: 1
 ```
 
-### Configuration Parameters
-
-- **allowedSlippage**: Maximum acceptable price slippage percentage
-- **gasLimitEstimate**: Estimated compute units for transactions
-- **ttl**: Time-to-live for quotes in seconds
-- **programIds**: Raydium program IDs for AMM and CLMM
-
-## 2️⃣ AMM Connector
+## AMM Endpoints
 *Integration to Raydium's Standard AMM pools*
 
-- **ID**: `raydium`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.raydium.io/raydium/trading/trade-and-swap>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/raydium>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/raydium.yml>
+- `/connectors/raydium/amm/quote-swap`
+- `/connectors/raydium/amm/execute-swap`
+- `/connectors/raydium/amm/pool-info`
+- `/connectors/raydium/amm/position-info`
+- `/connectors/raydium/amm/quote-liquidity`
+- `/connectors/raydium/amm/add-liquidity`
+- `/connectors/raydium/amm/remove-liquidity`
 
-### Endpoints
-
-- `/amm/price`
-- `/amm/trade`
-- `/amm/estimateGas`
-- `/amm/pool-info`
-
-### Features
-- Traditional x*y=k constant product pools
-- Simple LP token mechanism
-- Automatic 50/50 rebalancing
-- Pool-wide fee distribution
-- Single-click liquidity provision
-
-## 3️⃣ CLMM Connector
+## CLMM Endpoints
 *Integration to Raydium's Concentrated Liquidity pools*
 
-### Endpoints
+- `/connectors/raydium/clmm/quote-swap`
+- `/connectors/raydium/clmm/execute-swap`
+- `/connectors/raydium/clmm/pool-info`
+- `/connectors/raydium/clmm/position-info`
+- `/connectors/raydium/clmm/positions-owned`
+- `/connectors/raydium/clmm/quote-position`
+- `/connectors/raydium/clmm/open-position`
+- `/connectors/raydium/clmm/close-position`
+- `/connectors/raydium/clmm/add-liquidity`
+- `/connectors/raydium/clmm/remove-liquidity`
+- `/connectors/raydium/clmm/collect-fees`
 
-- `/clmm/pool-info`
-- `/clmm/pool-price`
-- `/clmm/pool-position`
-- `/clmm/add-liquidity`
-- `/clmm/remove-liquidity`
-- `/clmm/collect-fees`
-
-### Features
-- Custom price ranges for liquidity
-- Up to 500x capital efficiency
-- Position NFTs for tracking
-- Individual fee collection
-- Multiple positions per pool
-
-For more info, run Gateway and go to <https:localhost:15888> in your browser to see detailed documentation for each endpoint.
+For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.
