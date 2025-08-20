@@ -53,23 +53,17 @@ All sample scripts below can be found in the root [/scripts](https://github.com/
 * **Release Added**: [2.4.0](../release-notes/2.4.0.md)
 * **Description**: Demonstrates using `AmmGatewayDataFeed` in Hummingbot to fetch real-time price data from decentralized exchanges (DEXs) such as Uniswap (Ethereum) and Jupiter (Solana). The script initializes two AMM data feeds for specified trading pairs and displays their latest price data when ready.
 
-### AMM Price
-* **Code**: [amm_price_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py)
-* **Author**: [fengtality](https://github.com/fengtality)
-* **Release Added**: [2.5.0](../release-notes/2.5.0.md)
-* **Description**: Demonstrates fetching real-time quotes using the `GatewaySwap` connector within Hummingbot for decentralized exchanges (DEXs). The script retrieves swap prices for specified trading pairs, allowing users to easily integrate accurate pricing data from protocols like Jupiter on Solana.
-
 ### AMM Trade
-* **Code**: [amm_trade_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py)
+* **Code**: [amm_trade_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_trade_example.py)
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [2.5.0](../release-notes/2.5.0.md)
-* **Description**: Monitors real-time DEX prices using the `GatewaySwap` connector and automatically executes swaps once specified price thresholds are reached. The script allows users to configure conditions (price above or below a target) and handles trade execution seamlessly on decentralized exchanges like Jupiter on Solana or Uniswap on Ethereum.
+* **Description**: Monitors real-time DEX prices using the Gateway connector and automatically executes swaps once specified price thresholds are reached. The script allows users to configure conditions (price above or below a target) and handles trade execution seamlessly on decentralized exchanges like Jupiter on Solana or Uniswap on Ethereum.
 
-### CLMM Position Manager
-* **Code**: [clmm_manage_position](https://github.com/hummingbot/hummingbot/blob/development/scripts/clmm_manage_position.py)
+### LP Manage Position
+* **Code**: [lp_manage_position](https://github.com/hummingbot/hummingbot/blob/development/scripts/lp_manage_position.py)
 * **Author**: [fengtality](https://github.com/fengtality)
-* **Release Added**: [2.5.0](../release-notes/2.5.0.md)
-* **Description**: Actively monitors prices on a Concentrated Liquidity Market Maker (CLMM) pool via Gateway, opening a liquidity position when a specified target price is reached. The script manages the position dynamically, automatically closing it if the market moves outside the defined range for a certain duration, ensuring efficient liquidity management on pools like Meteora or Raydium on Solana.
+* **Release Added**: [2.8.0](../release-notes/2.8.0.md)
+* **Description**: Manages liquidity positions on AMM or CLMM pools via Gateway. The script monitors pool prices, opens a position when a target price is reached, and automatically closes the position if the price moves out of range for a specified duration. Supports both traditional AMM pools and concentrated liquidity pools on protocols like Raydium, Uniswap, and Meteora.
 
 
 ### Download Order Book and Trades

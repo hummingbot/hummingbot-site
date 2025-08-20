@@ -4,6 +4,8 @@ Gateway provides standardized connectors for interacting with decentralized exch
 
 ## Supported Connectors
 
+### Active Connectors (v2.8.0)
+
 | Protocol | Chain | Router | AMM | CLMM | Documentation |
 |----------|-------|--------|-----|------|---------------|
 | **[Jupiter](/exchanges/gateway/jupiter)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
@@ -12,52 +14,41 @@ Gateway provides standardized connectors for interacting with decentralized exch
 | **[Uniswap](/exchanges/gateway/uniswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | The original AMM DEX with V2, V3, and Universal Router |
 | **[0x](/exchanges/gateway/0x)** | Ethereum/EVM | ✅ | ❌ | ❌ | Professional-grade DEX aggregator with RFQ |
 
-## Trading Types Explained
+### Connectors Requiring Upgrade
 
-### Router (DEX Aggregators)
-Router connectors interface with DEX aggregators that find optimal swap routes across multiple liquidity sources. They don't manage liquidity positions but focus on executing trades at the best available prices.
+The following connectors are available in legacy versions but need to be upgraded to the v2.8.0 standard:
 
-**Key Features:**
-- Smart order routing across multiple DEXs
-- Gas optimization
-- MEV protection
-- Better price execution through route splitting
+| Protocol | Chain | Router | AMM | CLMM | Status | Bounty |
+|----------|-------|--------|-----|------|--------|--------|
+| **[PancakeSwap](/exchanges/gateway/pancakeswap)** | BNB Chain | ✅ | ✅ | ✅ | Needs v2.8 upgrade | [#7654](https://github.com/hummingbot/hummingbot/issues/7654) |
+| **[Balancer](/exchanges/gateway/balancer)** | Ethereum/EVM | ❌ | ✅ | ❌ | Needs v2.8 upgrade | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
+| **[Curve](/exchanges/gateway/curve)** | Ethereum/EVM | ❌ | ✅ | ❌ | Needs v2.8 upgrade | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
+| **[SushiSwap](/exchanges/gateway/sushiswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | Needs v2.8 upgrade | - |
+| **[QuickSwap](/exchanges/gateway/quickswap)** | Polygon | ❌ | ✅ | ✅ | Needs v2.8 upgrade | - |
+| **[TraderJoe](/exchanges/gateway/traderjoe)** | Avalanche | ❌ | ✅ | ✅ | Needs v2.8 upgrade | - |
+| **[ETCSwap](/exchanges/gateway/etcSwap)** | Ethereum Classic | ❌ | ✅ | ✅ | Needs v2.8 upgrade | - |
 
-### AMM (Automated Market Maker)
-AMM connectors work with traditional constant product (x*y=k) pools, commonly known as V2-style pools. Users can both trade and provide liquidity to earn fees.
+!!! note
+    The Gateway refactoring approved in [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c) has been completed with the v2.8.0 release. The new standard is now ready, and developers can help upgrade the legacy connectors listed above to the new architecture. Community developers can claim bounties for these upgrades where available.
 
-**Key Features:**
-- Simple liquidity provision with automatic 50/50 balancing
-- Single liquidity position per pool
-- Fees earned proportionally to liquidity share
-- No need to manage price ranges
-
-### CLMM (Concentrated Liquidity Market Maker)
-CLMM connectors support concentrated liquidity pools where liquidity providers can specify custom price ranges, improving capital efficiency.
-
-**Key Features:**
-- Custom price ranges for liquidity provision
-- Multiple positions per pool
-- Higher fee earnings within active price ranges
-- NFT-based position tracking
-- Active position management required
-
-## Base Schemas
+## Connector Schemas
 
 Gateway implements three standardized schemas that define the API structure for different trading types. Each connector must implement one or more of these schemas to ensure compatibility with Hummingbot.
 
 ### Router Schema
-For DEX aggregators and swap-only protocols. Focuses on finding optimal trade routes across multiple liquidity sources.
+For DEX aggregators and swap-only protocols. Focuses on quoting optimal trade routes across multiple liquidity sources and executing quotes.
 
-**Key Operations:**
+**Key Endpoints:**
+
 - `quote-swap`: Get optimal swap quote with routing details
 - `execute-swap`: Execute swap directly
 - `execute-quote`: Execute pre-fetched quote
 
 ### AMM Schema  
-For traditional Automated Market Maker pools with constant product (x*y=k) formulas.
+For traditional Automated Market Maker pools with constant product (x*y=k) formulas, such as Uniswap V2 and Raydium Standard Pools.
 
-**Key Operations:**
+**Key Endpoints:**
+
 - `pool-info`: Get pool reserves and pricing
 - `position-info`: Get current liquidity position details
 - `quote-liquidity`: Calculate liquidity provision amounts
@@ -65,9 +56,10 @@ For traditional Automated Market Maker pools with constant product (x*y=k) formu
 - `remove-liquidity`: Remove liquidity from pool
 
 ### CLMM Schema
-For Concentrated Liquidity Market Maker pools where liquidity providers can specify custom price ranges.
+For Concentrated Liquidity Market Maker pools where liquidity providers can specify custom price ranges such as Uniswap V3 and Raydium Concentrated Pools.
 
-**Key Operations:**
+**Key Endpoints:**
+
 - `positions-owned`: List all positions for an address
 - `quote-position`: Calculate position parameters for price range
 - `open-position`: Create new concentrated liquidity position
@@ -76,71 +68,6 @@ For Concentrated Liquidity Market Maker pools where liquidity providers can spec
 - `collect-fees`: Collect earned fees
 - `close-position`: Close position and withdraw all liquidity
 
-## Adding Custom Connectors
+## Building Custom Connectors
 
-To add support for a new DEX connector:
-
-1. **Choose the appropriate trading type(s)**:
-   - Router: For DEX aggregators
-   - AMM: For V2-style constant product pools
-   - CLMM: For concentrated liquidity pools
-
-2. **Create connector implementation**:
-   ```typescript
-   // src/connectors/mydex/mydex.ts
-   export class MyDex {
-     private static instances: Record<string, MyDex> = {};
-     
-     public static getInstance(chain: string, network: string): MyDex {
-       const key = `${chain}:${network}`;
-       if (!MyDex.instances[key]) {
-         MyDex.instances[key] = new MyDex(chain, network);
-       }
-       return MyDex.instances[key];
-     }
-   }
-   ```
-
-3. **Implement required methods** based on chosen trading types
-
-4. **Create route handlers** in appropriate subdirectories:
-   - `router-routes/` for Router operations
-   - `amm-routes/` for AMM operations
-   - `clmm-routes/` for CLMM operations
-
-5. **Add configuration files**:
-   - Create schema in `src/templates/namespace/mydex-schema.json`
-   - Create default config in `src/templates/connectors/mydex.yml`
-
-6. **Register the connector** in `src/connectors/connector.routes.ts`
-
-7. **Write tests** with minimum 75% coverage
-
-## Best Practices
-
-### For Traders
-- Always use appropriate slippage settings based on market volatility
-- Check gas estimates before executing large trades
-- Use `execute-quote` pattern when possible for better execution guarantees
-- Monitor transaction status using the `/poll` endpoint
-
-### For Liquidity Providers
-- Understand impermanent loss risks
-- For CLMM: Choose price ranges based on volatility and fee tiers
-- Regularly collect fees and rebalance positions
-- Monitor position performance and adjust ranges as needed
-
-### For Developers
-- Implement proper error handling for all connector methods
-- Use the standardized schemas for consistency
-- Cache pool and token data when appropriate
-- Implement retry logic for transient failures
-- Add comprehensive logging for debugging
-
-## Resources
-
-- [Gateway GitHub Repository](https://github.com/hummingbot/gateway)
-- [Gateway API Documentation](http://localhost:15888/docs) (when running)
-- [API Commands Reference](/gateway/commands)
-- [Hummingbot Documentation](https://docs.hummingbot.org)
-- [Discord Support](https://discord.gg/hummingbot)
+For detailed instructions on building custom Gateway DEX connectors, see [Building Gateway Connectors](/developers/gateway-connectors/).

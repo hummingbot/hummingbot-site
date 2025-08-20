@@ -5,6 +5,7 @@
 This guide walks you through the process of building new Gateway connectors for decentralized exchanges (DEXs). Gateway connectors enable Hummingbot to interact with blockchain-based trading protocols through a standardized REST API interface.
 
 Gateway supports three types of DEX connectors:
+
 - **Router**: DEX aggregators that find optimal swap routes
 - **AMM**: Traditional V2-style constant product pools
 - **CLMM**: Concentrated liquidity market makers with custom price ranges

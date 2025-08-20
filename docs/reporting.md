@@ -1,5 +1,5 @@
 
-See below for a real-time dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report:
+Hummingbot Foundation maintains a public, real-time dashboard of the aggregated, anonymized trade volumes that Hummingbot clients report, by exchange:
 
 <a href="https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52" target="_blank" class="md-button md-button--primary">:fontawesome-solid-chart-line: Hummingbot Reported Volumes</a>
 

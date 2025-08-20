@@ -1,3 +1,18 @@
+## Exchange Types
+
+Hummingbot supports three types of exchange connectors:
+
+### CLOB CEX Connectors
+CLOB (Central Limit Order Book) connectors integrate into centralized exchanges' WebSocket APIs, enabling standardized order placement/cancellation and order book data fetching from the perspective of Hummingbot strategies. These connectors work with traditional centralized exchanges that utilize a central limit order book model.
+
+### CLOB DEX Connectors  
+Decentralized exchanges that implement a central limit order book model on-chain, providing similar functionality to CEXs but with self-custody and on-chain settlement.
+
+### Gateway DEX Connectors
+Gateway connectors establish and maintain connections to automated market maker (AMM) DEXs and other protocols on various blockchain networks, interface with their JavaScript SDKs, and expose standard REST API endpoints for trading and liquidity provision-related actions on these DEXs.
+
+See [CLOB Connectors](/connectors/clob/) for a list of the current CLOB connectors in Hummingbot and [Gateway Connectors](/gateway/connectors/) for a list of supported Gateway DEX connectors.
+
 ## Exchange Inclusion
 
 Hummingbot [connectors](/connectors) link its internal trading engine to different cryptocurrency exchanges via WebSocket and/or REST API. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book and blockchain data, as well as sending and cancelling transactions and orders.

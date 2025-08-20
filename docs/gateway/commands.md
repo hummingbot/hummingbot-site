@@ -1,643 +1,690 @@
-# Gateway API Commands
+This guide covers how to use Gateway commands within the Hummingbot client. Gateway commands allow you to manage wallets, execute swaps, manage liquidity positions, and configure Gateway settings directly from Hummingbot.
 
-Gateway provides a comprehensive REST API for interacting with blockchain networks and decentralized exchanges. This page documents all available API endpoints organized by category.
+## Installation and Setup
 
-## Base URL
+Before using Gateway commands, you need to have Gateway installed and running. Follow the [Gateway Installation Guide](./installation.md) to set up Gateway using either Docker or from source.
 
-- **Development mode**: `http://localhost:15888`
-- **Production mode**: `https://localhost:15888`
-- **API Documentation**: Access interactive Swagger docs at `/docs`
+Once Gateway is running, you can verify the connection in Hummingbot:
 
-## Configuration Routes
+1. **Check the status indicator**: Look for `GATEWAY: 🟢 ONLINE` in the upper right corner of the Hummingbot client
+2. **Test the connection**: Run `gateway ping` to verify Gateway is accessible and chains are connected
+3. **Generate certificates** (if needed): Run `gateway generate-certs` to create SSL certificates for secure communication
 
-### GET `/config`
-Get configuration settings for a specific namespace or all configurations.
+If you see `GATEWAY: OFFLINE` in the upper right corner:
 
-**Query Parameters:**
-- `namespace` (optional): Configuration namespace (e.g., `server`, `ethereum-mainnet`, `solana-mainnet-beta`, `uniswap`)
+- Ensure Gateway is running (check Docker container or process)
+- Verify Gateway is running on the correct port (default: 15888)
+- Check that certificates match between Hummingbot and Gateway (if you are running in production mode)
+- Review Gateway logs for any error messages
 
-**Example Request:**
-```bash
-curl http://localhost:15888/config?namespace=solana-mainnet-beta
+## gateway --help
+
+To see all available Gateway commands and their descriptions:
+
+```
+>>> gateway --help
+usage:  gateway [-h] {allowance,approve,balance,config,connect,generate-certs,list,lp,ping,pool,swap,token} ...
+
+positional arguments:
+  {allowance,approve,balance,config,connect,generate-certs,list,lp,ping,pool,swap,token}
+    allowance           Check token allowances for ethereum connectors
+    approve             Approve token for use with ethereum connectors
+    balance             Check token balances
+    config              Show or update configuration
+    connect             Add a wallet for a chain
+    generate-certs      Create SSL certificate
+    list                List available connectors
+    lp                  Manage liquidity positions
+    ping                Test node and chain/network status
+    pool                View or update pool information
+    swap                Swap tokens
+    token               View or update token information
+
 ```
 
-### POST `/config/update`
-Update a specific configuration value.
+## gateway ping
 
-**Request Body:**
-```json
-{
-  "namespace": "solana-mainnet-beta",
-  "path": "maxFee",
-  "value": 0.01
-}
+Test the connection to Gateway and check node/chain status.
+
+```
+usage: gateway ping [-h] [chain]                                                                                                                                                   
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    chain       Specific chain to test (optional)
 ```
 
-### GET `/config/chains`
-Returns a list of available blockchain networks supported by Gateway.
+```
+>>> gateway ping
 
-**Response:**
-```json
-{
-  "chains": [
-    {
-      "chain": "ethereum",
-      "networks": ["mainnet", "arbitrum", "optimism", "base", "sepolia"]
-    },
-    {
-      "chain": "solana",
-      "networks": ["mainnet-beta", "devnet"]
-    }
-  ]
-}
+  Gateway service is online.                                                                                                                                                         
+                                                                                                                                                                                     
+  Testing network status for 2 chains...                                                                                                                                             
+                                                                                                                                                                                     
+  ethereum (base):                                                                                                                                                                   
+    - RPC URL: https://small-dimensional-pine.base-mainnet.quiknode.pro/d01204cade4fab5                                                                                              
+  2085cd0033c01bb2606a40c33                                                                                                                                                          
+    - Current Block: 34463843                                                                                                                                                        
+    - Native Currency: ETH                                                                                                                                                           
+    - Status: ✓ Connected                                                                                                                                                            
+                                                                                                                                                                                     
+  solana (mainnet-beta):                                                                                                                                                             
+    - RPC URL: https://dry-dawn-hill.solana-mainnet.quiknode.pro/41bbd7ad405c552f91cc92                                                                                              
+  8e044e5e04c66341d2                                                                                                                                                                 
+    - Current Block: 361378534                                                                                                                                                       
+    - Native Currency: SOL                                                                                                                                                           
+    - Status: ✓ Connected                            
 ```
 
-### GET `/config/connectors`
-Returns a list of available DEX connectors and their supported networks.
+## gateway list
 
-**Response:**
-```json
-{
-  "connectors": [
-    {
-      "name": "jupiter",
-      "trading_types": ["router"],
-      "chain": "solana",
-      "networks": ["mainnet-beta", "devnet"]
-    },
-    {
-      "name": "raydium",
-      "trading_types": ["amm", "clmm"],
-      "chain": "solana",
-      "networks": ["mainnet-beta", "devnet"]
-    }
-  ]
-}
+List all available chains, networks, and connectors.
+
+```
+usage: gateway list [-h]  
 ```
 
-### GET `/config/namespaces`
-Returns a list of all configuration namespaces available in Gateway.
+```
+>>> gateway list
 
-## Wallet Management Routes
-
-### GET `/wallet`
-Get all wallets across different chains.
-
-**Query Parameters:**
-- `showHardware` (boolean, default: true): Include hardware wallets in response
-
-**Response:**
-```json
-[
-  {
-    "chain": "solana",
-    "walletAddresses": ["7UX2i7SucgLMQcfZ75s3VXmZZY4YRUyJN9X1RgfMoDUi"],
-    "hardwareWalletAddresses": ["82SggYRE2Vo4jN4a2pk3aQ4SET4ctafZJGbowmCqyHx5"]
-  }
-]
+      +-------------+--------------+------------------------------------------------------------------+-------------------+                                                          
+      | connector   | chain_type   | networks                                                         | trading_types     |                                                          
+      |-------------+--------------+------------------------------------------------------------------+-------------------|                                                          
+      | jupiter     | solana       | devnet, mainnet-beta                                             | router            |                                                          
+      | meteora     | solana       | devnet, mainnet-beta                                             | clmm              |                                                          
+      | raydium     | solana       | devnet, mainnet-beta                                             | amm, clmm         |                                                          
+      | uniswap     | ethereum     | arbitrum, avalanche, base, bsc, celo, mainnet, optimism, polygon | amm, clmm, router |                                                          
+      | 0x          | ethereum     | arbitrum, avalanche, base, bsc, mainnet, optimism, polygon       | router            |                                                          
+      +-------------+--------------+------------------------------------------------------------------+-------------------+
 ```
 
-### POST `/wallet/add`
-Add a new wallet using a private key.
+## gateway connect
 
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "privateKey": "<your-private-key>",
-  "setDefault": true
-}
+Add a wallet for a specific chain. This is the primary way to connect your wallet to Gateway. After a wallet is successfully added, it automatically becomes the `defaultWallet` for that chain (ethereum or solana) in the Gateway configuration.
+
+```
+usage: gateway connect [-h] [chain]                                                                                                                                                
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    chain       Blockchain chain (e.g., ethereum, solana) 
 ```
 
-### POST `/wallet/add-hardware`
-Add a hardware wallet (Ledger).
+### Add regular wallet
+```
+>>> gateway connect ethereum
 
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "address": "82SggYRE2Vo4jN4a2pk3aQ4SET4ctafZJGbowmCqyHx5",
-  "setDefault": false
-}
+Select Option (1) Add Regular Wallet, (2) Add Hardware Wallet, (3) Exit [default: 3]: 1
+Enter your ethereum wallet private key: *********
 ```
 
-### DELETE `/wallet/remove`
-Remove a wallet by its address.
+### Add hardware wallet
+```
+>>> gateway connect ethereum
 
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "address": "7UX2i7SucgLMQcfZ75s3VXmZZY4YRUyJN9X1RgfMoDUi"
-}
+Select Option (1) Add Regular Wallet, (2) Add Hardware Wallet, (3) Exit [default: 3]: 2
+
+Enter your hardware wallet address >>> 0x123...abc
 ```
 
-### POST `/wallet/setDefault`
-Set a wallet as default for a specific chain.
+!!! note
+    The wallet you add becomes the default wallet for all operations on that chain. You can check which wallet is currently set as default by running `gateway config ethereum` or `gateway config solana`.
 
-**Request Body:**
-```json
-{
-  "chain": "ethereum",
-  "address": "0x742d35Cc6634C0532925a3b844Bc9e7595f2BDf8"
-}
+## gateway balance
+
+Check token balances for connected wallets.
+
+```
+usage: gateway balance [-h] [chain] [tokens]                                                                                                                                       
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    chain       Chain name (e.g., ethereum, solana)                                                                                                                                  
+    tokens      Comma-separated list of tokens to check (optional)                                                                                                                   
 ```
 
-## Token Management Routes
+```
+>>> gateway balance
 
-### GET `/tokens`
-List tokens from token lists with optional filtering.
+Updating gateway balances, please wait...                                                                                                                                          
+                                                                                                                                                                                     
+  Fetching balances for ethereum:base for tokens: all                                                                                                                                
+                                                                                                                                                                                     
+  Chain: ethereum                                                                                                                                                                    
+  Network: base                                                                                                                                                                      
+  Address: <ethereum-address>                                                                                                                                
+      Token Balance                                                                                                                                                                  
+        ETH  0.0154                                                                                                                                                                  
+       USDC 57.2579                                                                                                                                                                  
+       WETH  0.0188                                                                                                                                                                  
+                                                                                                                                                                                     
+  Fetching balances for solana:mainnet-beta for tokens: all                                                                                                                          
+                                                                                                                                                                                     
+  Chain: solana                                                                                                                                                                      
+  Network: mainnet-beta                                                                                                                                                              
+  Address: <solana-address>                                                                                                                              
+      Token    Balance                                                                                                                                                               
+       BONK 20508.7066                                                                                                                                                               
+        SOL     0.1413                                                                                                                                                               
+       USDC    27.9640
+```
+## gateway config
 
-**Query Parameters:**
-- `chain` (optional): Blockchain network (e.g., `ethereum`, `solana`)
-- `network` (optional): Network name (e.g., `mainnet`, `mainnet-beta`)
-- `search` (optional): Search term for filtering tokens
+View and update Gateway configuration settings.
 
-### POST `/tokens`
-Add a new token to a token list.
-
-**Request Body:**
-```json
-{
-  "chain": "ethereum",
-  "network": "mainnet",
-  "token": {
-    "name": "USD Coin",
-    "symbol": "USDC",
-    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-    "decimals": 6
-  }
-}
+```
+usage: gateway config [-h] [namespace] [action] [args ...]                                                                                                                         
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    namespace   Namespace (e.g., ethereum-mainnet, uniswap)                                                                                                                          
+    action      Action to perform (update)                                                                                                                                           
+    args        Additional arguments: <path> <value> for direct update
 ```
 
-### GET `/tokens/{symbolOrAddress}`
-Get a specific token by symbol or address.
+### View configuration
 
-### DELETE `/tokens/{address}`
-Remove a token from a token list by address.
+You may view the configuration for any **namespace**:
 
-## Pool Management Routes
+- chain: ethereum, solana, etc
+- network: ethereum-mainnet, solana-mainnet-beta, etc
+- connector: jupiter, uniswap, etc
 
-### GET `/pools`
-List all liquidity pools with optional filtering.
-
-**Query Parameters:**
-- `chain`: Blockchain network
-- `network`: Network name
-- `connector`: DEX connector name
-- `poolId` (optional): Specific pool ID
-
-### POST `/pools`
-Add a new liquidity pool.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "connector": "raydium",
-  "pool": {
-    "id": "pool_id",
-    "baseToken": "SOL",
-    "quoteToken": "USDC",
-    "fee": 0.003
-  }
-}
+```
+>>>  gateway config solana-mainnet-beta                                                                                                                                            
+                                                                                                                                                                                     
+  Gateway Configuration - namespace: solana-mainnet-beta:                                                                                                                            
+  nodeURL: https://dry-dawn-hill.solana-mainnet.quiknode.pro/41bbd7ad405c552f91cc928e044e5e04c66341d2                                                                                
+  nativeCurrencySymbol: SOL                                                                                                                                                          
+  defaultComputeUnits: 200000                                                                                                                                                        
+  confirmRetryInterval: 0.5                                                                                                                                                          
+  confirmRetryCount: 10                                                                                                                                                              
+  basePriorityFeePct: 90                                                                                                                                                             
+  minPriorityFeePerCU: 0.1
 ```
 
-### DELETE `/pools/{poolId}`
-Remove a pool from the list.
-
-## Chain-Specific Routes
-
-### Ethereum/EVM Routes (`/chains/ethereum`)
-
-#### GET `/chains/ethereum/status`
-Get chain connection status and current block number.
-
-**Query Parameters:**
-- `network`: Network name (e.g., `mainnet`, `arbitrum`)
-
-#### GET `/chains/ethereum/tokens`
-Get token information for specific tokens.
-
-**Query Parameters:**
-- `network`: Network name
-- `tokenSymbols`: Comma-separated token symbols
-
-#### POST `/chains/ethereum/balances`
-Get wallet token balances.
-
-**Request Body:**
-```json
-{
-  "network": "mainnet",
-  "address": "0x...",
-  "tokenSymbols": ["ETH", "USDC", "USDT"]
-}
+### Update configuration
+```
+>>>  gateway config solana-mainnet-beta update                                                                                                                                     
+                                                                                                                                                                                     
+  Current configuration for solana-mainnet-beta:                                                                                                                                     
+  nodeURL: https://api.mainnet-beta.solana.com                                                                              
+  nativeCurrencySymbol: SOL                                                                                                                                                          
+  defaultComputeUnits: 200000                                                                                                                                                        
+  confirmRetryInterval: 0.5                                                                                                                                                          
+  confirmRetryCount: 10                                                                                                                                                              
+  basePriorityFeePct: 90                                                                                                                                                             
+  minPriorityFeePerCU: 0.1                                                                                                                                                           
+                                                                                                                                                                                     
+  Available configuration paths: nodeURL, nativeCurrencySymbol, defaultComputeUnits, confirmRetryInterval, confirmRetryCount, basePriorityFeePct, minPriorityFeePerCU                
+                                                                                                                                                                                     
+  Enter configuration path (or 'exit' to cancel): nodeURL                                                                                                                            
+                                                                                                                                                                                     
+  Current value for 'nodeURL': https://api.mainnet-beta.solana.com                                                           v
+                                                                                                                                                                                     
+  Enter new value (or 'exit' to cancel):                                                                                                                                             
+                           
 ```
 
-#### POST `/chains/ethereum/allowances`
-Check ERC20 token allowances for a spender.
+Gateway will automatically restart after any configuration change.
 
-**Request Body:**
-```json
-{
-  "network": "mainnet",
-  "address": "0x...",
-  "spender": "0x...",
-  "tokenSymbols": ["USDC", "USDT"]
-}
+## gateway token
+
+View or manage tokens in the token lists.
+```
+usage: gateway token [-h] [symbol_or_address] [action]                                                                                                                             
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    symbol_or_address  Token symbol or address                                                                                                                                       
+    action             Action to perform (update)
 ```
 
-#### POST `/chains/ethereum/approve`
-Approve ERC20 token spending.
-
-**Request Body:**
-```json
-{
-  "network": "mainnet",
-  "address": "0x...",
-  "spender": "0x...",
-  "token": "USDC",
-  "amount": "1000000"
-}
+### Get token info
+```
+>>>  gateway token WETH                                                                                                                                                            
+                                                                                                                                                                                     
+  Searching for token 'WETH' across all chains' default networks...                                                                                                                  
+                                                                                                                                                                                     
+  Found tokens:                                                                                                                                                                      
+         chain network symbol          name                                    address  decimals                                                                                     
+      ethereum    base   WETH Wrapped Ether 0x4200000000000000000000000000000000000006        18
 ```
 
-#### POST `/chains/ethereum/wrap`
-Wrap native ETH to WETH.
+### Add token
 
-**Request Body:**
-```json
-{
-  "network": "mainnet",
-  "address": "0x...",
-  "amount": "1.5"
-}
+```
+>>  gateway token HERMES update                                                                                                                                                   
+                                                                                                                                                                                     
+  Enter chain (e.g., ethereum, solana): solana                                                                                                                                       
+                                                                                                                                                                                     
+  Token 'HERMES' not found. Let's add it to solana (mainnet-beta).                                                                                                                   
+                                                                                                                                                                                     
+  Enter token information:                                                                                                                                                           
+                                                                                                                                                                                     
+  Symbol [HERMES]:                                                                                                                                                                   
+                                                                                                                                                                                     
+  Name: HermesWizard                                                                                                                                                                 
+                                                                                                                                                                                     
+  Contract address: 24R8j15RDq3VoeRaSDFXMvSw4W7RLLZLdpTwK8ynx777                                                                                                                     
+                                                                                                                                                                                     
+  Decimals [18]: 9                                                                                                                                                                   
+                                                                                                                                                                                     
+  Token to add/update:                                                                                                                                                               
+  {                                                                                                                                                                                  
+    "symbol": "HERMES",                                                                                                                                                              
+    "name": "HermesWizard",                                                                                                                                                          
+    "address": "24R8j15RDq3VoeRaSDFXMvSw4W7RLLZLdpTwK8ynx777",                                                                                                                       
+    "decimals": 9                                                                                                                                                                    
+  }                                                                                                                                                                                  
+                                                                                                                                                                                     
+  Add/update this token? (Yes/No) >>> Yes                                                                                                                                            
+                                                                                                                                                                                     
+  Adding/updating token...                                                                                                                                                           
+  ✓ Token successfully added/updated!                                                                                                                                                
+                                                                                                                                                                                     
+  Restarting Gateway for changes to take effect...                                                                                                                                   
+  ✓ Gateway restarted successfully                                                                                                                                                   
+                                                                                                                                                                                     
+  You can now use 'gateway token HERMES' to view the token information.
+```  
+
+## gateway pool
+
+View and manage liquidity pool information.
+
+```
+usage: gateway pool [-h] [connector] [trading_pair] [action] [args ...]                                                                                                            
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    connector     Connector name/type (e.g., uniswap/amm)                                                                                                                            
+    trading_pair  Trading pair (e.g., ETH-USDC)                                                                                                                                      
+    action        Action to perform (update)                                                                                                                                         
+    args          Additional arguments: <address> for direct pool update  
 ```
 
-#### POST `/chains/ethereum/unwrap`
-Unwrap WETH to native ETH.
-
-**Request Body:**
-```json
-{
-  "network": "mainnet",
-  "address": "0x...",
-  "amount": "1.5"
-}
+### Get pool info
+```
+>>>  gateway pool raydium/amm SOL-USDC                                                                                                                                             
+                                                                                                                                                                                     
+  Fetching pool information for SOL-USDC on raydium/amm...                                                                                                                           
+                                                                                                                                                                                     
+  === Pool Information ===                                                                                                                                                           
+  Connector: raydium/amm                                                                                                                                                             
+  Trading Pair: SOL-USDC                                                                                                                                                             
+  Pool Type: amm                                                                                                                                                                     
+  Network: mainnet-beta                                                                                                                                                              
+  Base Token: SOL                                                                                                                                                                    
+  Quote Token: USDC                                                                                                                                                                  
+  Pool Address: 58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2
 ```
 
-#### POST `/chains/ethereum/poll`
-Poll transaction status by hash.
-
-**Request Body:**
-```json
-{
-  "network": "mainnet",
-  "txHash": "0x..."
-}
+### Add pool
+```
+>>>  gateway pool raydium/amm LIGHT-SOL update                                                                                                                                     
+                                                                                                                                                                                     
+  === Add Pool for LIGHT-SOL on raydium/amm ===                                                                                                                                      
+  Chain: solana                                                                                                                                                                      
+  Network: mainnet-beta                                                                                                                                                              
+                                                                                                                                                                                     
+  Pool 'LIGHT-SOL' not found. Let's add it to solana (mainnet-beta).                                                                                                                 
+                                                                                                                                                                                     
+  Enter pool information:                                                                                                                                                            
+                                                                                                                                                                                     
+  Pool contract address: 7YZEyZ3DuHQTmgmKwzuXMYG6SHD3sCWZ3mLkU7HuLrfC                                                                                                                
+                                                                                                                                                                                     
+  Pool to add:                                                                                                                                                                       
+  {                                                                                                                                                                                  
+    "address": "7YZEyZ3DuHQTmgmKwzuXMYG6SHD3sCWZ3mLkU7HuLrfC",                                                                                                                       
+    "baseSymbol": "LIGHT",                                                                                                                                                           
+    "quoteSymbol": "SOL",                                                                                                                                                            
+    "type": "amm"                                                                                                                                                                    
+  }                                                                                                                                                                                  
+                                                                                                                                                                                     
+  Add this pool? (Yes/No) >>> Yes                                                                                                                                                    
+                                                                                                                                                                                     
+  Adding pool...                                                                                                                                                                     
+  ✓ Pool successfully added!                                                                                                                                                         
+                                                                                                                                                                                     
+  Restarting Gateway for changes to take effect...                                                                                                                                   
+  ✓ Gateway restarted successfully                                                                                                                                                   
+                                                                                                                                                                                     
+  Pool has been added. You can view it with: gateway pool raydium/amm LIGHT-SOL
 ```
 
-#### POST `/chains/ethereum/estimate-gas`
-Estimate gas for a transaction.
+## gateway swap
 
-### Solana Routes (`/chains/solana`)
+Execute token swaps through DEX connectors.
 
-#### GET `/chains/solana/status`
-Get chain connection status and current slot.
-
-**Query Parameters:**
-- `network`: Network name (`mainnet-beta` or `devnet`)
-
-#### GET `/chains/solana/tokens`
-Get SPL token information.
-
-**Query Parameters:**
-- `network`: Network name
-- `tokenSymbols`: Comma-separated token symbols
-
-#### POST `/chains/solana/balances`
-Get wallet SPL token balances.
-
-**Request Body:**
-```json
-{
-  "network": "mainnet-beta",
-  "address": "7UX2i7SucgLMQcfZ75s3VXmZZY4YRUyJN9X1RgfMoDUi",
-  "tokenSymbols": ["SOL", "USDC", "RAY"]
-}
+```
+usage: gateway swap [-h] [connector] [args ...]                                                                                                                                    
+                                                                                                                                                                                     
+  positional arguments:                                                                                                                                                              
+    connector   Connector name/type (e.g., jupiter/router)                                                                                                                           
+    args        Arguments: [base-quote] [side] [amount]. Interactive mode if not all provided. Example: gateway swap uniswap ETH-USDC BUY 0.1                                        
+                                                                                                                                                                                     
+  options:                                                                                                                                                                           
+    -h, --help  show this help message and exit
 ```
 
-#### POST `/chains/solana/poll`
-Poll transaction status by signature.
+```
+>>>  gateway swap jupiter/router                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                       
+  Enter base token (symbol or address): SOL                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                       
+  Enter quote token (symbol or address): USDC                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                       
+  Enter amount to trade: 0.01                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                       
+  Enter side (BUY/SELL): BUY                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                       
+  Fetching swap quote for SOL-USDC from jupiter/router...                                                                                                                                                                                              
+                                                                                                                                                                                                                                                       
+  === Swap Transaction ===                                                                                                                                                                                                                             
+  Token In: SOL (EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v)                                                                                                                                                                                         
+  Token Out: USDC (So11111111111111111111111111111111111111112)                                                                                                                                                                                        
+                                                                                                                                                                                                                                                       
+  Price: 186.61700000000002 USDC/SOL                                                                                                                                                                                                                   
+  Slippage: 1%                                                                                                                                                                                                                                         
+  Price Impact: 0.00%                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                       
+  You will spend:                                                                                                                                                                                                                                      
+    Amount: 1.86617 USDC                                                                                                                                                                                                                               
+    Max Amount (w/ slippage): 1.8848317 USDC                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                       
+  You will receive:                                                                                                                                                                                                                                    
+    Amount: 0.01 SOL                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                       
+  Estimating transaction fees for solana mainnet-beta...                                                                                                                                                                                               
+                                                                                                                                                                                                                                                       
+  === Balance Impact After Swap ===                                                                                                                                                                                                                    
+  Wallet: 82SggY...yHx5                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                       
+  Token     Current Balance → After Transaction                                                                                                                                                                                                        
+  --------------------------------------------------                                                                                                                                                                                                   
+    SOL            0.141273 →       0.151248                                                                                                                                                                                                           
+    USDC          27.963970 →      26.097800                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                       
+  Transaction Fee Details:                                                                                                                                                                                                                             
+    Current Gas Price: 0.1000 lamports                                                                                                                                                                                                                 
+    Estimated Gas Cost: ~0.000025 SOL
 
-**Request Body:**
-```json
-{
-  "network": "mainnet-beta",
-  "txHash": "transaction_signature"
-}
+Do you want to execute this swap? (y/n) >>>
+
+Executing swap...                                                                                                                                                                                                                                    
+  Order created: buy-SOL-USDC-1755721261102151                                                                                                                                                                                                         
+  Monitoring transaction status...                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                       
+  ✓ Transaction completed successfully!                                                                                                                                                                                                                
+  Transaction hash: 5ToGDFBSALxAnY2nWjx1m1hNer9xp3bxg4dban1t5pefXHoaK41RiJJGxC7ZqLpy1nLx93DgZdtax8jqY3WzPwFa
 ```
 
-#### POST `/chains/solana/estimate-gas`
-Estimate transaction fees.
+## gateway lp
 
-## DEX Connector Routes
+Manage liquidity positions on AMM and CLMM pools.
 
-### Router Operations (DEX Aggregators)
-
-Router operations are available for DEX aggregators like Jupiter, 0x, and Uniswap Smart Order Router.
-
-#### POST `/connectors/{dex}/router/quote-swap`
-Get a swap quote from the DEX aggregator.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "base": "SOL",
-  "quote": "USDC",
-  "amount": "1.0",
-  "side": "SELL",
-  "slippage": 0.01
-}
+```
+usage: gateway lp [-h] [connector] [{add-liquidity,remove-liquidity,position-info,collect-fees}]                                                                                       
+                                                                                                                                                                                         
+  positional arguments:                                                                                                                                                                  
+    connector             Connector name/type (e.g., raydium/amm)                                                                                                                        
+    {add-liquidity,remove-liquidity,position-info,collect-fees}                                                                                                                          
+                          LP action to perform
 ```
 
-#### POST `/connectors/{dex}/router/execute-swap`
-Execute a swap without a pre-fetched quote.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "base": "SOL",
-  "quote": "USDC",
-  "amount": "1.0",
-  "side": "SELL",
-  "slippage": 0.01
-}
+### List positions
+```
+>>>  gateway lp raydium/amm position-info                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                         
+  === Liquidity Positions on raydium/amm ===                                                                                                                                                                                                                                                             
+  Chain: solana                                                                                                                                                                                                                                                                                          
+  Network: mainnet-beta                                                                                                                                                                                                                                                                                  
+  Wallet: 82SggY...yHx5                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                         
+  Enter trading pair (e.g., SOL-USDC): SOL-USDC                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                         
+  Fetching positions for SOL-USDC...                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                         
+  === AMM Position ===                                                                                                                                                                                                                                                                                   
+  Pool: 58oQCh...YQo2                                                                                                                                                                                                                                                                                    
+  Pair: SOL-USDC                                                                                                                                                                                                                                                                                         
+  Price: 186.849646 USDC/SOL                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                         
+  Holdings:                                                                                                                                                                                                                                                                                              
+    SOL: 0.009999                                                                                                                                                                                                                                                                                        
+    USDC: 1.868401                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                         
+  LP Tokens: 0.015601
 ```
 
-#### POST `/connectors/{dex}/router/execute-quote`
-Execute a pre-fetched quote (more efficient).
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "quoteId": "quote_id_from_quote_swap"
-}
+### Add liquidity
+```
+>>>  gateway lp raydium/amm add-liquidity                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                         
+  === Add Liquidity to raydium/amm ===                                                                                                                                                                                                                                                                   
+  Chain: solana                                                                                                                                                                                                                                                                                          
+  Network: mainnet-beta                                                                                                                                                                                                                                                                                  
+  Wallet: 82SggY...yHx5                                                                                                                                                                                                                                                                                  
+  Type: Standard AMM                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                         
+  Enter trading pair (e.g., SOL-USDC): SOL-USDC                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                         
+  Fetching pool information for SOL-USDC...                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                         
+  === Pool Information ===                                                                                                                                                                                                                                                                               
+  Pool Address: 58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2                                                                                                                                                                                                                                             
+  Current Price: 186.803554                                                                                                                                                                                                                                                                              
+  Fee: 0.0025%                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                         
+  Pool Reserves:                                                                                                                                                                                                                                                                                         
+    SOL: 46972.751032                                                                                                                                                                                                                                                                                    
+    USDC: 8774676.823955                                                                                                                                                                                                                                                                                 
+    TVL (in USDC): ~17549353.65                                                                                                                                                                                                                                                                          
+  Enter token amounts to add (press Enter to skip):                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                         
+  Amount of SOL (optional): 0.01                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                         
+  Amount of USDC (optional): 2                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                         
+  Calculating optimal token amounts...                                                                                                                                                                                                                                                                   
+  Note: Liquidity will be limited by base token amount                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                         
+  Token amounts to add:                                                                                                                                                                                                                                                                                  
+    SOL: 0.010000                                                                                                                                                                                                                                                                                        
+    USDC: 1.868497                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                         
+  Estimating transaction fees...                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                         
+  === Balance Impact After Adding Liquidity ===                                                                                                                                                                                                                                                          
+  Wallet: 82SggY...yHx5                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                         
+  Token     Current Balance → After Transaction                                                                                                                                                                                                                                                          
+  --------------------------------------------------                                                                                                                                                                                                                                                     
+    SOL            0.151259 →       0.141234                                                                                                                                                                                                                                                             
+    USDC          26.098180 →      24.229683                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                         
+  Transaction Fee Details:                                                                                                                                                                                                                                                                               
+    Current Gas Price: 0.1000 lamports                                                                                                                                                                                                                                                                   
+    Estimated Gas Cost: ~0.000025 SOL                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                         
+  Adding liquidity to pool at current price: 186.803554                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                         
+  Slippage tolerance: 1%                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                         
+  Do you want to add liquidity? (Yes/No) >>> Yes                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                         
+  Adding liquidity...                                                                                                                                                                                                                                                                                    
+  Transaction submitted. Order ID: range-SOL-USDC-1755722086328873                                                                                                                                                                                                                                       
+  Monitoring transaction status...                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                         
+  ✓ Transaction completed successfully!                                                                                                                                                                                                                                                                  
+  Transaction hash: 5g3hDfWdSVpsXTdrqF1HqPKh9bH8bqpQ3XBoZXqHrCJKsCXQkGRhCc1YaBWYB3MNwcgEHRwyN5qyuP9dvNiexCUL                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                         
+  ✓ Liquidity added successfully!                                                                                                                                                                                                                                                                        
+  Use 'gateway lp raydium/amm position-info' to view your position
 ```
 
-### AMM Operations (V2-style Pools)
-
-AMM operations are available for DEXs like Uniswap V2 and Raydium Standard pools.
-
-#### POST `/connectors/{dex}/amm/pool-info`
-Get detailed information about an AMM pool.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "poolId": "pool_address"
-}
+### Remove liquidity
+```
+>>>  gateway lp raydium/amm remove-liquidity                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                        
+  === Remove Liquidity from raydium/amm ===                                                                                                                                                                                                             
+  Chain: solana                                                                                                                                                                                                                                         
+  Network: mainnet-beta                                                                                                                                                                                                                                 
+  Wallet: 82SggY...yHx5                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                        
+  Enter trading pair (e.g., SOL-USDC): SOL-USDC                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                        
+  Fetching positions for SOL-USDC...                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                        
+  === AMM Position ===                                                                                                                                                                                                                                  
+  Pool: 58oQCh...YQo2                                                                                                                                                                                                                                   
+  Pair: SOL-USDC                                                                                                                                                                                                                                        
+  Price: 186.802435 USDC/SOL                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                        
+  Holdings:                                                                                                                                                                                                                                             
+    SOL: 0.010001                                                                                                                                                                                                                                       
+    USDC: 1.868167                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                        
+  LP Tokens: 0.015601                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                        
+  Selected position: 58oQCh...YQo2                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                        
+  Percentage to remove (0-100, default 100): 100                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                        
+  Removing 100.0% liquidity                                                                                                                                                                                                                             
+  You will receive:                                                                                                                                                                                                                                     
+    SOL: 0.010001                                                                                                                                                                                                                                       
+    USDC: 1.868167                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                        
+  Estimating transaction fees...                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                        
+  === Balance Impact After Removing Liquidity ===                                                                                                                                                                                                       
+  Wallet: 82SggY...yHx5                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                        
+  Token     Current Balance → After Transaction                                                                                                                                                                                                         
+  --------------------------------------------------                                                                                                                                                                                                    
+    SOL            0.141214 →       0.151189                                                                                                                                                                                                            
+    USDC          24.229877 →      26.098044                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                        
+  Transaction Fee Details:                                                                                                                                                                                                                              
+    Current Gas Price: 0.1000 lamports                                                                                                                                                                                                                  
+    Estimated Gas Cost: ~0.000025 SOL                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                        
+  Do you want to remove 100.0% liquidity? (Yes/No) >>> Yes                                                                                                                                                                                              
+                                                                                                                                                                                                                                                        
+  Removing liquidity...                                                                                                                                                                                                                                 
+  Transaction submitted. Order ID: range-SOL-USDC-1755722234730374                                                                                                                                                                                      
+  Monitoring transaction status...                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                        
+  ✓ Transaction completed successfully!                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                        
+  ✓ 100.0% liquidity removed successfully!
 ```
 
-#### POST `/connectors/{dex}/amm/position-info`
-Get information about a liquidity position.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "poolId": "pool_address"
-}
+### Collect fees
+```
+>>>  gateway lp raydium/clmm collect-fees                                                                                                                                              
+                                                                                                                                                                                         
+  === Collect Fees from raydium/clmm ===                                                                                                                                                 
+  Chain: solana                                                                                                                                                                          
+  Network: mainnet-beta                                                                                                                                                                  
+  Wallet: 82SggY...yHx5                                                                                                                                                                  
+                                                                                                                                                                                         
+  Enter trading pair (e.g., SOL-USDC): SOL-USDC                                                                                                                                          
+                                                                                                                                                                                         
+  Fetching positions for SOL-USDC...
 ```
 
-#### POST `/connectors/{dex}/amm/quote-swap`
-Get a swap quote from an AMM pool.
+## gateway approve
 
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "poolId": "pool_address",
-  "base": "SOL",
-  "quote": "USDC",
-  "amount": "1.0",
-  "side": "SELL"
-}
+Approve ERC-20 tokens for use with DEX connectors (Ethereum only).
+
+```
+usage: gateway approve [-h] [connector] [token]                                                                                                                                        
+                                                                                                                                                                                         
+  positional arguments:                                                                                                                                                                  
+    connector   Connector name/type (e.g., jupiter/router)                                                                                                                               
+    token       Token symbol to approve (e.g., WETH)
 ```
 
-#### POST `/connectors/{dex}/amm/execute-swap`
-Execute a swap through an AMM pool.
-
-#### POST `/connectors/{dex}/amm/quote-liquidity`
-Get a quote for adding/removing liquidity.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "poolId": "pool_address",
-  "baseAmount": "10.0",
-  "quoteAmount": "1000.0"
-}
+```
+>>>  gateway approve uniswap/amm CBBTC                                                                                                                                                 
+                                                                                                                                                                                         
+  Fetching uniswap/amm allowance for CBBTC...                                                                                                                                            
+                                                                                                                                                                                         
+  === Approve Transaction ===                                                                                                                                                            
+  Connector: uniswap/amm                                                                                                                                                                 
+  Network: ethereum base                                                                                                                                                                 
+  Wallet: 0xDA50...6684                                                                                                                                                                  
+                                                                                                                                                                                         
+  Token to approve:                                                                                                                                                                      
+    Symbol: CBBTC                                                                                                                                                                        
+    Address: Unknown                                                                                                                                                                     
+    Current Allowance: 0                                                                                                                                                                 
+                                                                                                                                                                                         
+  Estimating transaction fees for ethereum base...                                                                                                                                       
+                                                                                                                                                                                         
+  === Balance Impact After Approval ===                                                                                                                                                  
+  Wallet: 0xDA50...6684                                                                                                                                                                  
+                                                                                                                                                                                         
+  Token     Current Balance → After Transaction                                                                                                                                          
+  --------------------------------------------------                                                                                                                                     
+    CBBTC          0.000000                                                                                                                                                              
+    ETH            0.015378 →       0.015348                                                                                                                                             
+                                                                                                                                                                                         
+  Transaction Fee Details:                                                                                                                                                               
+    Current Gas Price: 0.1000 gwei                                                                                                                                                       
+    Estimated Gas Cost: ~0.000030 ETH                                                                                                                                                    
+                                                                                                                                                                                         
+  Do you want to proceed with the approval? (Yes/No) >>> Yes                                                                                                                             
+                                                                                                                                                                                         
+  Approving CBBTC for uniswap/amm...                                                                                                                                                     
+                                                                                                                                                                                         
+  Submitting approval for CBBTC...                                                                                                                                                       
+  Approval submitted for CBBTC. Order ID: approve-cbbtc-1755722519391857                                                                                                                 
+  Monitoring transaction status...                                                                                                                                                       
+                                                                                                                                                                                         
+  ⚠ Transaction completed with state: OrderState.PENDING_APPROVAL
 ```
 
-#### POST `/connectors/{dex}/amm/add-liquidity`
-Add liquidity to an AMM pool.
+## gateway allowance
 
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "poolId": "pool_address",
-  "baseAmount": "10.0",
-  "quoteAmount": "1000.0",
-  "slippage": 0.01
-}
+Check token allowances for DEX connectors (Ethereum only).
+
+```
+usage: gateway allowance [-h] [connector]                                                                                                                                              
+                                                                                                                                                                                         
+  positional arguments:                                                                                                                                                                  
+    connector   Ethereum connector name/type (e.g., uniswap/amm)
 ```
 
-#### POST `/connectors/{dex}/amm/remove-liquidity`
-Remove liquidity from an AMM pool.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "poolId": "pool_address",
-  "percentage": 50
-}
+```
+>>>  gateway allowance uniswap/amm                                                                                                                                                     
+  Checking token allowances, please wait...                                                                                                                                              
+                                                                                                                                                                                         
+  Connector: uniswap/amm                                                                                                                                                                 
+  Chain: ethereum                                                                                                                                                                        
+  Network: base                                                                                                                                                                          
+  Wallet: 0xDA50C69342216b538Daf06FfECDa7363E0B96684                                                                                                                                     
+       Symbol       Address Allowance                                                                                                                                                    
+         AAVE 0x6370...814b Unlimited                                                                                                                                                    
+        CBBTC 0xcbB7...33Bf         0                                                                                                                                                    
+          DAI 0x50c5...B0Cb Unlimited                                                                                                                                                    
+         LINK 0x88fb...e196 Unlimited                                                                                                                                                    
+         USDC 0x8335...2913 Unlimited                                                                                                                                                    
+         USDT 0xfde4...9bb2         0                                                                                                                                                    
+      VIRTUAL 0x0b3e...7e1b Unlimited                                                                                                                                                    
+         WETH 0x4200...0006 Unlimited 
 ```
 
-### CLMM Operations (V3-style Concentrated Liquidity)
+## gateway generate-certs
 
-CLMM operations are available for DEXs like Uniswap V3, Raydium CLMM, and Meteora DLMM.
-
-#### POST `/connectors/{dex}/clmm/pool-info`
-Get information about a concentrated liquidity pool.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "poolId": "pool_address"
-}
+Generate SSL certificates for secure Gateway communication.
+```
+usage: gateway generate-certs [-h]
 ```
 
-#### POST `/connectors/{dex}/clmm/positions-owned`
-Get all positions owned by a wallet.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address"
-}
+```
+>>>  gateway generate-certs                                                                                                                                                            
+                                                                                                                                                                                         
+  Enter pass phrase to generate Gateway SSL certifications  >>> *****                                                                                                                    
+  Gateway SSL certification files are created in /Users/feng/hummingbot/certs.
 ```
 
-#### POST `/connectors/{dex}/clmm/position-info`
-Get detailed information about a specific position.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "positionId": "position_nft_id"
-}
-```
-
-#### POST `/connectors/{dex}/clmm/quote-position`
-Get a quote for opening a new position.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "poolId": "pool_address",
-  "lowerPrice": "95.0",
-  "upperPrice": "105.0",
-  "baseAmount": "10.0"
-}
-```
-
-#### POST `/connectors/{dex}/clmm/open-position`
-Open a new concentrated liquidity position.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "poolId": "pool_address",
-  "lowerPrice": "95.0",
-  "upperPrice": "105.0",
-  "baseAmount": "10.0",
-  "quoteAmount": "1000.0"
-}
-```
-
-#### POST `/connectors/{dex}/clmm/add-liquidity`
-Add liquidity to an existing position.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "positionId": "position_nft_id",
-  "baseAmount": "5.0",
-  "quoteAmount": "500.0"
-}
-```
-
-#### POST `/connectors/{dex}/clmm/remove-liquidity`
-Remove liquidity from a position.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "positionId": "position_nft_id",
-  "percentage": 25
-}
-```
-
-#### POST `/connectors/{dex}/clmm/collect-fees`
-Collect accumulated trading fees.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "positionId": "position_nft_id"
-}
-```
-
-#### POST `/connectors/{dex}/clmm/close-position`
-Close a position and withdraw all liquidity.
-
-**Request Body:**
-```json
-{
-  "chain": "solana",
-  "network": "mainnet-beta",
-  "address": "wallet_address",
-  "positionId": "position_nft_id"
-}
-```
-
-## Error Handling
-
-All endpoints return standard HTTP status codes:
-
-- `200 OK`: Request successful
-- `400 Bad Request`: Invalid request parameters
-- `404 Not Found`: Resource not found
-- `500 Internal Server Error`: Server error
-
-Error responses include a message field:
-```json
-{
-  "error": "Error message",
-  "message": "Detailed error description"
-}
-```
-
-## Rate Limiting
-
-Gateway implements rate limiting to prevent abuse:
-- Default: 100 requests per minute per IP
-- Configurable in `server.yml`
-
-## Authentication
-
-In production mode (HTTPS), Gateway requires SSL certificates that match those used by the Hummingbot client. The passphrase used to encrypt wallets must be provided when starting Gateway.
+Afterwards, run `pnpm run setup` from the Gateway root directory to copy these certificates to Gateway.

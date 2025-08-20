@@ -2,12 +2,12 @@ We generally release a new version of Hummingbot **every month**. See below for 
 
 ## [2.8.0](./2.8.0/)
 
-*Released August 20, 2025*
+*Released August 21, 2025*
 
 | Repository | Description | GitHub Release | DockerHub Release |
 |------------|-------------|----------------|-------------------|
 | [Hummingbot](https://github.com/hummingbot/hummingbot) | Core Client | [`v2.8.0`](https://github.com/hummingbot/hummingbot/releases/tag/v2.8.0) | [`version-2.8.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-2.8.0) |
-| [Gateway](https://github.com/hummingbot/gateway) | DEX Middleware | [`v2.8.0`](https://github.com/hummingbot/gateway/releases/tag/v2.7.0) | [`version-2.8.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.8.0) |
+| [Gateway](https://github.com/hummingbot/gateway) | DEX Middleware | [`v2.8.0`](https://github.com/hummingbot/gateway/releases/tag/v2.8.0) | [`version-2.8.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.8.0) |
 
 
 ## [2.7.0](./2.7.0/)

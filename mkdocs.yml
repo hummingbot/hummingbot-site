@@ -173,19 +173,21 @@ nav:
       - Install via Docker: installation/docker.md
       - Install via Source: installation/source.md
       - Post-Installation: installation/post-installation.md
-    - Guides & Tutorials:
+    - Guides:
       - Guides: guides/index.md
-    - Scripts:
-      - Scripts: scripts/index.md
-      - Sample Scripts: scripts/examples.md
-      - Script Walkthrough: v2-strategies/walkthrough.md
-      - Scripts Cheatsheat: scripts/cheatsheet.md
-    - Strategies V2:
-      - Strategies V2: strategies/index.md
+    - Strategies:
+      - Strategies: strategies/index.md
       - Architecture: v2-strategies/index.md
+      - Scripts:
+        - Scripts: scripts/index.md
+        - Sample Scripts: scripts/examples.md
+        - Script Walkthrough: v2-strategies/walkthrough.md
+        - Scripts Cheatsheat: scripts/cheatsheet.md
       - Market Data Provider:
         - Market Data Provider: v2-strategies/data/index.md
         - Candles: v2-strategies/candles/index.md
+      - Controllers:
+        - Controllers: v2-strategies/controllers/index.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
@@ -194,35 +196,33 @@ nav:
         - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: v2-strategies/executors/xemm-executor.md
         - TWAP Executor: v2-strategies/executors/twapexecutor.md
-      - Controllers:
-        - Controllers: v2-strategies/controllers/index.md
-    - Strategies V1:
-      - Strategies V1: v1-strategies/index.md
-      - Pure Market Making (PMM): strategies/pure-market-making.md
-      - PMM Configs:
-        - PMM Configs: strategy-configs/index.md
-        - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-        - Order Levels: strategy-configs/order-levels.md
-        - Filled Order Delay: strategy-configs/filled-order-delay.md
-        - Hanging Orders: strategy-configs/hanging-orders.md
-        - Minimum Spread: strategy-configs/minimum-spread.md
-        - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-        - Order Optimization: strategy-configs/order-optimization.md
-        - Inventory Skew: strategy-configs/inventory-skew.md
-        - Max Order Age: strategy-configs/max-order-age.md
-        - Order Override: strategy-configs/order-override.md
-        - Price Band: strategy-configs/price-band.md
-        - Price Source: strategy-configs/external-price-source.md
-        - Ping Pong: strategy-configs/ping-pong.md
-      - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
-      - AMM Arbitrage: strategies/amm-arbitrage.md
-      - Avellaneda Market Making: strategies/avellaneda-market-making.md
-      - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-      - Hedge: strategies/hedge.md
-      - Liquidity Mining: strategies/liquidity-mining.md
-      - Perpetual Market Making: strategies/perpetual-market-making.md
-      - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-      - TWAP: strategies/twap.md
+      - Strategies V1:
+        - Strategies V1: v1-strategies/index.md
+        - Pure Market Making (PMM): strategies/pure-market-making.md
+        - PMM Configs:
+          - PMM Configs: strategy-configs/index.md
+          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
+          - Order Levels: strategy-configs/order-levels.md
+          - Filled Order Delay: strategy-configs/filled-order-delay.md
+          - Hanging Orders: strategy-configs/hanging-orders.md
+          - Minimum Spread: strategy-configs/minimum-spread.md
+          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
+          - Order Optimization: strategy-configs/order-optimization.md
+          - Inventory Skew: strategy-configs/inventory-skew.md
+          - Max Order Age: strategy-configs/max-order-age.md
+          - Order Override: strategy-configs/order-override.md
+          - Price Band: strategy-configs/price-band.md
+          - Price Source: strategy-configs/external-price-source.md
+          - Ping Pong: strategy-configs/ping-pong.md
+        - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/amm-arbitrage.md
+        - Avellaneda Market Making: strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
+        - Hedge: strategies/hedge.md
+        - Liquidity Mining: strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/twap.md
     - Connectors:
       - Connectors: connectors/index.md
       - CLOB Connectors: connectors/clob.md
@@ -241,6 +241,7 @@ nav:
         - Building Gateway Connectors: developers/gateway-connectors/index.md
         - Connector Architecture: developers/gateway-connectors/architecture.md
         - Testing Gateway Connectors: developers/gateway-connectors/testing.md
+      - Debugging & Testing Connectors: developers/connectors/debug.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -255,28 +256,28 @@ nav:
       - Check Performance: client/history.md
       - Find Log Files: client/log-files.md
       - Export Trades/Keys: client/export.md
-      - Advanced Features:
-        - Adding Commands: developers/commands.md
-        - Balance Limit: global-configs/balance-limit.md
-        - Clock Tick Size: global-configs/clock-tick.md 
-        - Command Line Autostart: global-configs/strategy-autostart.md
-        - Color Settings: global-configs/color-settings.md
-        - Connect External Database: global-configs/external-db.md
-        - Debug Console: developers/debug.md
-        - Kill Switch: global-configs/kill-switch.md
-        - Market Data Collector: global-configs/data-collector.md
-        - Override Fees: global-configs/override-fees.md
-        - Paper Trade: global-configs/paper-trade.md
-        - Rate Oracle: strategy-configs/rate-oracle.md
-        - Rate Limits: global-configs/rate-limits-share-pct.md
-        - Telegram Integration: global-configs/telegram.md
+      - Adding Commands: developers/commands.md
+      - Balance Limit: global-configs/balance-limit.md
+      - Clock Tick Size: global-configs/clock-tick.md 
+      - Command Line Autostart: global-configs/strategy-autostart.md
+      - Color Settings: global-configs/color-settings.md
+      - Connect External Database: global-configs/external-db.md
+      - Debug Console: developers/debug.md
+      - Kill Switch: global-configs/kill-switch.md
+      - Market Data Collector: global-configs/data-collector.md
+      - Override Fees: global-configs/override-fees.md
+      - Paper Trade: global-configs/paper-trade.md
+      - Rate Oracle: strategy-configs/rate-oracle.md
+      - Rate Limits: global-configs/rate-limits-share-pct.md
+      - Telegram Integration: global-configs/telegram.md
+      - Using Debugger Tools: installation/debug.md
     - Gateway DEX Middleware:
       - Overview: gateway/index.md
       - Installation & Setup: gateway/installation.md
       - Configuration: gateway/configuration.md
-      - API Commands: gateway/commands.md
-      - Blockchain Support: gateway/chains.md
-      - Gateway DEX Connectors: gateway/connectors.md
+      - Commands: gateway/commands.md
+      - Chains: gateway/chains.md
+      - DEX Connectors: gateway/connectors.md
       - Strategies & Scripts: gateway/strategies.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
@@ -286,16 +287,15 @@ nav:
       - Backtesting Strategies: dashboard/backtest.md
       - Deploying Instances: dashboard/deploy.md
       - Managing Instances: dashboard/instances.md
-    - Hummingbot API ⭐️: 
+    - Hummingbot API: 
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
-    - Broker Module: installation/broker.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
-    - Reported Volumes: reporting.md
   - Exchanges:
     - Exchanges: exchanges/index.md
+    - Reported Volumes: reporting.md
     - 🔥 Binance: exchanges/binance/index.md
     - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Derive: exchanges/derive/index.md
@@ -337,15 +337,10 @@ nav:
     - Community: community/index.md
     - Discord Server: community/discord.md
     - Reward Programs: community/rewards.md
-    - Developer Resources:
-      - Developer Resources: developers/index.md
-      - Using Debugger Tools: installation/debug.md
-      - Debugging & Testing Connectors: developers/connectors/debug.md
-    - Certification Program:
-      - Certification: certification/index.md
-      - Certifications List: certification/list.md
-      - Botcamp ↗️: https://www.botcamp.xyz
-      - Botcamp FAQ: botcamp/faq.md
+    - Certification: certification/index.md
+    - Certifications List: certification/list.md
+    - Botcamp ↗️: https://www.botcamp.xyz
+    - Botcamp FAQ: botcamp/faq.md
     - Upcoming Events ↗️: https://lu.ma/hummingbot
   - Releases:
     - Releases: release-notes/index.md
@@ -400,13 +395,12 @@ nav:
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Foundation:
     - Foundation: about/index.md
-    - HBOT Token: about/hbot.md
     - Board of Directors: about/board.md
-    - Governance:
-      - Governance: governance/index.md
-      - Polls: governance/polls.md
-      - Proposals: governance/proposals.md
-      - Epochs: governance/epochs.md
-      - Whitepaper: governance/whitepaper.md
+    - HBOT Token: about/hbot.md
+    - Governance: governance/index.md
+    - Polls: governance/polls.md
+    - Proposals: governance/proposals.md
+    - Epochs: governance/epochs.md
+    - Whitepaper: governance/whitepaper.md
   - Blog: 
     - blog/index.md

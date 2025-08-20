@@ -2,7 +2,7 @@ Gateway uses a modular configuration system that allows you to customize various
 
 ## Configuration Overview
 
-Gateway's configuration system consists of YAML files located in the `/conf` directory, along with the `/conf/lists` folder that contains token mappings for each blockchain network.
+Gateway's configuration system consists of YAML files located in the `/conf` directory, along with JSON files for tokens and pools organized by chain and connector.
 
 The initial configuration files are created automatically using the default templates in `/src/templates` when you run the setup script during [installation](./installation.md).
 
@@ -14,6 +14,8 @@ The `/conf/` folder contains the following types of configuration files:
 2. **Server Configuration** (`server.yml`): Controls Gateway server behavior
 3. **Chain Configurations** (e.g., `solana.yml`): Define blockchain network settings
 4. **Connector Configurations** (e.g., `raydium.yml`): Configure DEX-specific settings
+5. **Token Lists** (`/conf/tokens/{chain}/{network}.json`): Token definitions for each network
+6. **Pool Lists** (`/conf/pools/{connector}.json`): Liquidity pool definitions for each DEX connector
 
 ### Root Configuration
 
@@ -82,19 +84,15 @@ transactionDbPath: 'transaction.level'
 
 ### Chain Configuration
 
-Chain configuration files (e.g., `solana.yml`) define chain-specific settings for specific blockchain networks. These may include node URLs, token lists, and transaction parameters.
+Chain configuration files (e.g., `solana.yml`) define chain-specific settings for blockchain networks, including node URLs and transaction parameters.
 
 ```yaml
 networks:
   mainnet-beta:
     nodeURL: https://dry-dawn-hill.solana-mainnet.quiknode.pro/41bbd7ad405c552f91cc928e044e5e04c66341d2
-    tokenListType: FILE
-    tokenListSource: conf/lists/solana.json
     nativeCurrencySymbol: SOL
   devnet:
     nodeURL: https://api.devnet.solana.com
-    tokenListType: FILE
-    tokenListSource: conf/lists/solana-devnet.json
     nativeCurrencySymbol: SOL
 
 # Default compute units for a transaction used to estimate gasPrice
@@ -119,42 +117,28 @@ retryIntervalMs: 500
 retryCount: 10
 ```
 
+!!! note
+    Token lists are no longer specified in chain configuration files. They are now stored separately in `/conf/tokens/{chain}/{network}.json`
+
 
 ### Connector Configuration
 
-Connector configuration files (e.g., `raydium.yml`) define settings for specific DEX connectors, including slippage tolerance and predefined liquidity pools.
+Connector configuration files (e.g., `raydium.yml`) define settings for specific DEX connectors, primarily slippage tolerance settings.
 
 ```yaml
 # settings for AMM routes
 amm:
   # how much the execution price is allowed to move unfavorably
   allowedSlippage: '1/100'
-  # predefined pools
-  pools:
-    RAY-SOL: 'AVs9TA4nWDzfPJE9gGVNJMVhcQy3V9PGazuz33BfG2RA'
-    SOL-USDC: '58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2'
-    RAY-USDC: '6UmmUiYoBjSrhakAobJw8BvkmJtDVxaeBtbt7rxWo1mg'
-    WIF-SOL: 'EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx'
-    POPCAT-SOL: 'FRhB8L7Y9Qq41qZXYLtC2nw8An1RJfLLxRF2x9RwLLMo'
-    SOL-TRUMP: 'HKuJrP5tYQLbEUdjKwjgnHs2957QKjR2iWhJKTtMa1xs'
-    LAYER-USDC: 'G6drsaPCR3pxsEmSTAc81kW1EL3kFAFwtSAkzUZXmgH3'
 
 # settings for CLMM routes
 clmm:
   # how much the execution price is allowed to move unfavorably
   allowedSlippage: '1/100'
-  # predefined pools
-  pools:
-    SOL-USDC: '3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv'
-    RAY-USDC: '61R1ndXxvsWXXkWSyNkCxnzwd3zUNB8Q2ibmkiLPC8ht'
-    SOL-USDT: '3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF'
-    SOL-RAY: '2AXXcN6oN9bBT5owwmTH53C7QHUXvhLeu718Kqt8rvY2'
-    USDC-USDT: 'BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU'
-    SOL-JITOSOL: '2uoKbPEidR7KAMYtY4x7xdkHXWqYib5k4CutJauSL3Mc'
-    SOL-TRUMP: 'GQsPr4RJk9AZkkfWHud7v4MtotcxhaYzZHdsPCg9vNvW'
-    LAYER-USDC: 'G6drsaPCR3pxsEmSTAc81kW1EL3kFAFwtSAkzUZXmgH3'
-    TRUMP-USDC: '7XzVsjqTebULfkUofTDH5gDdZDmxacPmPuTfHa1n9kuh'
 ```
+
+!!! note
+    Pool definitions are no longer stored in connector configuration files. They are now stored separately in `/conf/pools/{connector}.json`
 
 ## Common Configuration Tasks
 
@@ -167,21 +151,61 @@ clmm:
 
 ### Changing Node Providers
 
+To change the RPC node provider for a blockchain network, you can either edit the configuration file directly or use Gateway commands.
 
+#### Using Gateway Commands
 
-To change the RPC node provider for a blockchain network:
+```
+>>> gateway config set
 
-1. Open the corresponding chain configuration file (e.g., `solana.yml`)
-2. Locate the `nodeURL` field under the desired network
-3. Replace the URL with your preferred node provider's URL
+Which namespace? >>> solana
+Which network? >>> mainnet-beta
+Which setting? >>> nodeURL
+New value >>> https://your-preferred-node-provider.com/your-api-key
+
+Successfully updated solana mainnet-beta nodeURL
+Gateway restart required for changes to take effect
+```
+
+#### Editing Configuration Files
+
+1. Navigate to the network configuration folder (e.g., `/conf/chains/solana/`)
+2. Open the specific network file (e.g., `mainnet-beta.yml`)
+3. Locate the `nodeURL` field and replace it with your preferred node provider's URL
 4. Save the file and restart Gateway
 
-Example:
+Example for Solana mainnet (`/conf/chains/solana/mainnet-beta.yml`):
 ```yaml
-networks:
-  mainnet-beta:
-    nodeURL: https://your-preferred-node-provider.com/your-api-key
-    # other settings...
+nodeURL: https://your-preferred-node-provider.com/your-api-key
+nativeCurrencySymbol: SOL
+
+# Default compute units for a transaction
+# This sets the compute unit limit for transactions when not specified by the user
+defaultComputeUnits: 200000
+
+# Confirmation polling interval in seconds
+# How often to check if a submitted transaction has been confirmed (inner retry loop)
+confirmRetryInterval: 0.5
+
+# Number of confirmation polling attempts
+# How many times to poll for confirmation before considering the transaction unconfirmed
+confirmRetryCount: 10
+
+# Floor percentile of recent priority fee samples used to estimate gasPrice for a transaction
+# Use the Nth percentile of recent priority fees as the base fee (90 = 90th percentile)
+basePriorityFeePct: 90
+
+# Minimum priority fee per compute unit in lamports
+# This sets the floor for priority fees to ensure transactions are processed (default: 0.1 lamports/CU)
+minPriorityFeePerCU: 0.1
+```
+
+Example for Ethereum mainnet (`/conf/chains/ethereum/mainnet.yml`):
+```yaml
+chainID: 1
+nodeURL: https://your-preferred-node-provider.com/your-api-key
+nativeCurrencySymbol: ETH
+minGasPrice: 0.1
 ```
 
 ### Adding Tokens
@@ -189,46 +213,82 @@ networks:
 !!! tip
     The new Gateway endpoints accept addresses for `baseToken` and `quoteToken` in addition to symbols, so you should be able to use addresses directly before adding their symbols into the network's token list.
 
-Gateway handles the mapping of symbols to the valid token addresses for each network using the [Token Lists](https://tokenlists.org/) standard, which is an open specification for organizing token metadata that helps users avoid scams and find legitimate tokens across different networks.
+Gateway uses standardized token lists organized by chain and network. Each network has its own token list file that contains metadata for all supported tokens on that network.
 
-To add new tokens to your configuration:
+#### Using Gateway Commands
 
-1. Navigate to the `/conf/lists` folder
-2. Open the appropriate list file that matches the `tokenListSource` in the chain config file (e.g., `solana.json` for Solana `mainnet-beta`)
-3. Add a new token entry following the existing format below
+```
+>>> gateway token add
+
+Which chain? >>> solana
+Which network? >>> mainnet-beta
+Token symbol >>> AI16Z
+Token name >>> ai16z
+Token address >>> HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC
+Token decimals >>> 9
+
+Successfully added AI16Z to solana mainnet-beta token list
+```
+
+#### Editing Token Files
+
+1. Navigate to the `/conf/tokens/{chain}/` folder (e.g., `/conf/tokens/solana/`)
+2. Open the appropriate network file (e.g., `mainnet-beta.json` for Solana mainnet)
+3. Add a new token entry to the array following the existing format below
 4. Make sure that the resulting file is still valid JSON!
 5. Save the file and restart Gateway
 
 ```json
-  {
-    "chainId": 101,
-    "name": "ai16z",
-    "symbol": "AI16Z",
-    "address": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
-    "decimals": 9
-  },
+{
+  "chainId": 101,
+  "name": "ai16z",
+  "symbol": "AI16Z",
+  "address": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+  "decimals": 9
+}
 ```
 
-See [Working with Tokens](./legacy/tokens/index.md) in the Gateway Legacy docs for more information.
+The token list structure follows the [Token Lists](https://tokenlists.org/) standard, which helps users avoid scams and find legitimate tokens across different networks.
 
 ### Adding Pools
 
-Each AMM and CLMM DEX may have different pools for the same trading pair, with varying parameters like fee tier and bin step. You can define addresses for various base-quote symbol pairs in the connector config file.
+Each AMM and CLMM DEX may have different pools for the same trading pair, with varying parameters like fee tier and bin step. Gateway now stores pool definitions in dedicated JSON files for each DEX connector.
 
-To add new liquidity pools to a DEX connector:
+#### Using Gateway Commands
 
-1. Open the connector configuration file (e.g., `raydium.yml`)
-2. Locate the `pools` section under the appropriate protocol type
-3. Add a new entry with the token pair as the key and the pool address as the value
-4. Save the file and restart Gateway
-
-Example:
-```yaml
-amm:
-  pools:
-    # existing pools...
-    WIF-SOL: 'EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx'
 ```
+>>> gateway pool add
+
+Which connector? >>> raydium
+Pool type (amm/clmm) >>> amm
+Network >>> mainnet-beta
+Base token symbol >>> WIF
+Quote token symbol >>> SOL
+Pool address >>> EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx
+
+Successfully added WIF-SOL pool to raydium configuration
+```
+
+#### Editing Pool Files
+
+1. Navigate to the `/conf/pools/` folder
+2. Open the connector's pool file (e.g., `raydium.json`)
+3. Add a new pool entry to the array following the existing format
+4. Make sure that the resulting file is still valid JSON!
+5. Save the file and restart Gateway
+
+Example pool entry:
+```json
+{
+  "type": "amm",
+  "network": "mainnet-beta",
+  "baseSymbol": "WIF",
+  "quoteSymbol": "SOL",
+  "address": "EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx"
+}
+```
+
+For CLMM pools, use `"type": "clmm"` instead. The pool file structure allows you to specify different pools for different networks and trading types (AMM vs CLMM) within the same connector.
 
 ### Updating Configurations
 

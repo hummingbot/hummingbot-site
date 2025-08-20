@@ -9,8 +9,8 @@
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.0  | Yes | |
 | [🔀 Perp Connector](#perp-connector) | Not available |
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  |
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  |
+| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available  |
+| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available  |
 
 
 ## ℹ️ Exchange Info

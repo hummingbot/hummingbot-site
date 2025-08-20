@@ -2,38 +2,36 @@
 
 ## What is Gateway?
 
-Hummingbot Gateway is a versatile API server that standardizes interactions with blockchain networks and decentralized exchanges (DEXs). It acts as a middleware layer, providing a unified interface for performing actions like checking balances, executing trades, and managing wallets across different protocols.
+Hummingbot Gateway is a Typescript-based API server that standardizes interactions with blockchain networks and decentralized exchanges (DEXs). It acts as a middleware layer, providing a unified interface for performing actions like checking balances, executing trades, and managing wallets across different protocols.
 
-Gateway is a companion service to the [Hummingbot client](https://github.com/hummingbot/hummingbot), exposing standardized REST API endpoints for trading and liquidity-related functionality on DEXs. This enables Hummingbot to run strategies that operate across both centralized (CEX) and decentralized exchanges seamlessly.
+Gateway is a companion service to the Python-based [Hummingbot client](https://github.com/hummingbot/hummingbot), exposing standardized REST API endpoints for trading and liquidity-related functionality on DEXs. This enables Hummingbot to run strategies that operate across both centralized (CEX) and decentralized exchanges seamlessly.
 
-## Documentation Guide
+## In This Section
 
 - **[Installation & Setup](installation.md)**: Complete installation guide for source and Docker
 - **[Configuration](configuration.md)**: How to configure chains, connectors, and settings
-- **[API Commands](commands.md)**: Comprehensive reference of all API endpoints
-- **[Blockchain Support](chains.md)**: Detailed information about supported chains
-- **[DEX Connectors](connectors.md)**: Guide to all supported DEX protocols
+- **[Commands](commands.md)**: Comprehensive reference of all Gateway-related Hummingbot commands
+- **[Chains](chains.md)**: Detailed information about supported chains
+- **[DEX Connectors](connectors.md)**: Guide to all supported DEX in Gateway
 - **[Strategies & Scripts](strategies.md)**: Using Gateway with Hummingbot strategies
 
 ## Key Features
 
 - **Standardized REST API**: Consistent endpoints for interacting with blockchains (Ethereum, Solana) and DEXs
-- **Three Trading Types**: Router (DEX aggregators), AMM (V2-style pools), and CLMM (V3-style concentrated liquidity)
+- **DEX SDK Integration**: Interfaces with TypeScript/JavaScript DEX SDKs to provide standardized endpoints across different protocols
+- **Connector Sub-Types**: Router (DEX aggregators), AMM (V2-style pools), and CLMM (V3-style concentrated liquidity)
 - **Modular Architecture**: Clear separation of concerns with distinct modules for chains, connectors, configuration, and wallet management
-- **TypeScript-based**: Leverages the TypeScript ecosystem and popular libraries like Fastify, Ethers.js, and Solana/web3.js
-- **Security**: Built-in rate limiting and encrypted wallet storage
+- **Hardware Wallet Support**: Built-in support for hardware wallets and encrypted storage for regular wallets
 - **Extensible**: Easily extended with new chains and connectors
 
-## Supported Networks and DEXs
+## Supported Chains and Networks
 
-### Blockchain Networks
-
-| Chain | Networks | Description |
+| Chain Architecture | Networks | Description |
 |-------|----------|-------------|
-| **Ethereum/EVM** | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains |
-| **Solana** | mainnet-beta, devnet | High-performance blockchain with sub-second finality |
+| **Ethereum** | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains |
+| **Solana** | mainnet-beta, devnet | Solana and SVM-compatible chains |
 
-### DEX Protocols
+## Supported DEXs
 
 | Protocol | Chain | Router | AMM | CLMM | Description |
 |----------|-------|--------|-----|------|-------------|
@@ -43,13 +41,13 @@ Gateway is a companion service to the [Hummingbot client](https://github.com/hum
 | **Uniswap** | Ethereum/EVM | ✅ | ✅ | ✅ | Complete V2, V3, and Smart Order Router |
 | **0x** | Ethereum/EVM | ✅ | ❌ | ❌ | Professional DEX aggregator with RFQ system |
 
-### Trading Types Explained
+### Connector Schemas
 
 - **Router**: DEX aggregators that find optimal swap routes across multiple liquidity sources, maximizing execution quality by splitting trades across multiple pools and protocols
 - **AMM** (Automated Market Maker): Traditional V2-style constant product pools using the x*y=k formula, where liquidity is distributed uniformly across the entire price range, making it simpler but less capital efficient
 - **CLMM** (Concentrated Liquidity Market Maker): V3-style pools that allow liquidity providers to concentrate their capital within custom price ranges, dramatically improving capital efficiency and enabling better pricing for traders
 
-For detailed implementation guides and examples for each trading type, see [DEX Connectors](connectors.md).
+For detailed implementation guides and examples for each schema, see [DEX Connectors](connectors.md).
 
 ## Installation
 

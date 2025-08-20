@@ -28,53 +28,75 @@ Below are the available commands in the current Hummingbot release.
 
 ## Gateway Commands
 
+Gateway v2.8.0 introduces comprehensive commands for managing wallets, executing swaps, and managing liquidity positions on decentralized exchanges. For detailed usage and examples, see the [Gateway Commands Reference](/gateway/commands).
+
 | Command           | Function                                                      |
 | ----------------- | ------------------------------------------------------------- |
-| `config`          | View or update gateway configuration                          |
-| `connect`         | Start the current bot                                         |
-| `connector-tokens`| Report token balances for gateway connectors                  |
-| `generate-certs`  | Create ssl certificate for gateway                            |
-| `list`            | Shows a list of all available gateway connectors and their tiers  |
-| `status`          | Check status of gateway docker instance                       |
-| `test-connection` | Ping gateway api server                                       |
+| `allowance`       | Check token allowances for Ethereum connectors                |
+| `approve`         | Approve token for use with Ethereum connectors                |
+| `balance`         | Check token balances for connected wallets                    |
+| `config`          | View or update Gateway configuration                          |
+| `connect`         | Add a wallet for a specific chain                             |
+| `generate-certs`  | Create SSL certificate for Gateway                            |
+| `list`            | List available chains, networks, and connectors               |
+| `lp`              | Manage liquidity positions on AMM and CLMM pools              |
+| `ping`            | Test connection to Gateway and check node/chain status        |
+| `pool`            | View or update pool information                               |
+| `swap`            | Execute token swaps through DEX connectors                    |
+| `token`           | View or update token information                              |
 
-Users can also use `gateway -h` this will print out the different commands you can use with gateway.
-
-```
->>> gateway -h
-usage: gateway [-h] {config,connect,connector-tokens,generate-certs,status,test-connection} ...
-
-positional arguments: {config,connect,connector-tokens,generate-certs,status,test-connection}
-
-config              View or update gateway configuration
-connect             Create/view connection info on gateway connector
-connector-tokens    Report token balances for gateway connectors
-generate-certs      Create ssl certificate for gateway
-test-connection     Ping gateway api server
-
-optional arguments:
--h, --help          show this help message and exit
+Users can also use `gateway --help` to see all available commands:
 
 ```
+>>> gateway --help
+usage:  gateway [-h] {allowance,approve,balance,config,connect,generate-certs,list,lp,ping,pool,swap,token} ...
 
-Gateway help command can also be used this way `gateway [command]-h`
+positional arguments:
+  {allowance,approve,balance,config,connect,generate-certs,list,lp,ping,pool,swap,token}
+    allowance           Check token allowances for ethereum connectors
+    approve             Approve token for use with ethereum connectors
+    balance             Check token balances
+    config              Show or update configuration
+    connect             Add a wallet for a chain
+    generate-certs      Create SSL certificate
+    list                List available connectors
+    lp                  Manage liquidity positions
+    ping                Test node and chain/network status
+    pool                View or update pool information
+    swap                Swap tokens
+    token               View or update token information
+
+options:
+  -h, --help            show this help message and exit
+```
+
+Gateway help command can also be used with specific commands:
 
 ```
->>> gateway config -h
-usage: gateway config [-h]
+>>> gateway swap --help
+usage: gateway swap [-h] [connector] [args ...]
 
+positional arguments:
+  connector   Connector name/type (e.g., jupiter/router)
+  args        Arguments: [base-quote] [side] [amount]
+
+options:
+  -h, --help  show this help message and exit
 ```
 
-It can also be used with a different command:
+It can also be used with other commands:
 
 ```
->>> gateway connector-tokens -h
-usage: gateway connector-tokens [-h] [connector_chain_network] [new_tokens]
+>>> gateway lp --help
+usage: gateway lp [-h] [connector] [{add-liquidity,remove-liquidity,position-info,collect-fees}]
 
-positional arguements:
-connector_chain_network  Name of connector you want to edit reported tokens for
-new_tokens             Report balance of these tokens
+positional arguments:
+  connector             Connector name/type (e.g., raydium/amm)
+  {add-liquidity,remove-liquidity,position-info,collect-fees}
+                        LP action to perform
 
+options:
+  -h, --help            show this help message and exit
 ```
 
 ## Docker Commands

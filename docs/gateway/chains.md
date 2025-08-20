@@ -1,5 +1,3 @@
-# Gateway Blockchain Support
-
 Gateway provides standardized access to multiple blockchain networks, enabling wallet management, transaction execution, and node RPC interactions. Each chain integration is customized to handle the specific requirements and features of that blockchain.
 
 ## Supported Chains
@@ -8,128 +6,88 @@ Gateway currently supports two major blockchain architectures:
 
 | Base Chain | Architecture | Networks | Description |
 |------------|--------------|----------|-------------|
-| **Ethereum** | EVM | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains using Ethers.js |
-| **Solana** | SVM | mainnet-beta, devnet | Solana blockchain using @solana/web3.js |
+| **Ethereum** | EVM | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains |
+| **Solana** | SVM | mainnet-beta, devnet | Solana and SVM-compatible chains |
 
-## Ethereum & EVM Networks
+## Ethereum
 
-### Overview
-Gateway's Ethereum integration supports the Ethereum mainnet and all EVM-compatible chains. These chains share the same basic architecture, allowing for unified handling of wallets, transactions, and smart contract interactions.
+Gateway's Ethereum integration supports the Ethereum mainnet and all EVM-compatible Layer 1 and Layer 2 blockchains as **networks**. These networks share the same basic architecture, allowing for unified handling of wallets, transactions, and smart contract interactions.
 
-### Supported Networks
+### Ethereum Mainnet
 
-#### Ethereum Mainnet
 - **Network ID:** mainnet
 - **Chain ID:** 1
 - **Native Token:** ETH
-- **Block Time:** ~12 seconds
-- **Consensus:** Proof of Stake
 
-#### Layer 2 Networks
+### Arbitrum
 
-**Arbitrum**
 - **Network ID:** arbitrum
 - **Chain ID:** 42161
 - **Native Token:** ETH
-- **Block Time:** ~0.25 seconds
-- **Technology:** Optimistic Rollup
 
-**Optimism**
+### Optimism
+
 - **Network ID:** optimism
 - **Chain ID:** 10
 - **Native Token:** ETH
-- **Block Time:** ~2 seconds
-- **Technology:** Optimistic Rollup
 
-**Base**
+### Base
 - **Network ID:** base
 - **Chain ID:** 8453
 - **Native Token:** ETH
-- **Block Time:** ~2 seconds
-- **Technology:** OP Stack (Optimistic Rollup)
 
-**Polygon**
+### Polygon
 - **Network ID:** polygon
 - **Chain ID:** 137
 - **Native Token:** MATIC
-- **Block Time:** ~2 seconds
-- **Technology:** Proof of Stake sidechain
 
-#### Other EVM Chains
+### Binance Smart Chain (BSC)
 
-**Binance Smart Chain (BSC)**
 - **Network ID:** bsc
 - **Chain ID:** 56
 - **Native Token:** BNB
-- **Block Time:** ~3 seconds
-- **Consensus:** Proof of Staked Authority
 
-**Avalanche C-Chain**
+### Avalanche C-Chain
+
 - **Network ID:** avalanche
 - **Chain ID:** 43114
 - **Native Token:** AVAX
-- **Block Time:** ~2 seconds
-- **Consensus:** Avalanche Consensus
 
-**Celo**
+### Celo
+
 - **Network ID:** celo
 - **Chain ID:** 42220
 - **Native Token:** CELO
-- **Block Time:** ~5 seconds
-- **Consensus:** Proof of Stake
 
-#### Testnets
+### Sepolia (Testnet)
 
-**Sepolia**
 - **Network ID:** sepolia
 - **Chain ID:** 11155111
-- **Native Token:** SepoliaETH
-- **Purpose:** Ethereum testnet for development
+- **Native Token:** ETH
 
-### Configuration
+### Chain Configuration
 
-Each EVM network can be configured in Gateway through YAML configuration files:
+Each chain and network can be configured in Gateway through YAML configuration files:
 
-#### Chain Configuration
-Location: `/conf/chains/ethereum.yml`
+- Template: `/src/templates/chains/ethereum.yml`
+- User Configs Location: `/conf/chains/ethereum.yml`
+
 ```yaml
-timeout: 10000
-gasLimitTransaction: 3000000
-manualGasPrice: 100  # in Gwei
-gasPriceRefreshInterval: 60
-nativeCurrencySymbol: "ETH"
+defaultNetwork: mainnet
+defaultWallet: '<ethereum-wallet-address>'
 ```
 
-#### Network-Specific Configuration
-Location: `/conf/chains/ethereum/{network}.yml`
+### Network Configuration
 
-Example for Ethereum mainnet (`/conf/chains/ethereum/mainnet.yml`):
+- Template: `/src/templates/chains/ethereum.yml`
+- User Configs : `/conf/chains/ethereum/mainnet.yml`
+
 ```yaml
-nodeURL: "https://eth-mainnet.g.alchemy.com/v2/YOUR_API_KEY"
-chainId: 1
-tokenListType: "FILE"
-tokenListSource: "/conf/tokens/ethereum/mainnet.json"
-nativeCurrencySymbol: "ETH"
-gasPriceRefreshInterval: 60
+chainID: 1
+nodeURL: https://eth.llamarpc.com
+nativeCurrencySymbol: ETH
+minGasPrice: 0.1
 ```
-
-### EVM-Specific Features
-
-#### Token Standards
-- **ERC-20:** Fungible tokens (USDC, USDT, etc.)
-- **ERC-721:** Non-fungible tokens (NFTs)
-- **ERC-1155:** Multi-token standard
-
-#### Gas Management
-- Dynamic gas price estimation
-- EIP-1559 support (base fee + priority fee)
-- Manual gas price override option
-- Gas limit configuration per transaction type
-
-#### Smart Contract Interactions
-- Token approvals for DEX trading
-- Wrapping/unwrapping native tokens (ETH ↔ WETH)
-- Multi-call support for batch operations
 
 ### API Endpoints
 
@@ -147,40 +105,35 @@ All EVM chains share the same API structure:
 
 ## Solana
 
-### Overview
-Gateway's Solana integration provides access to the Solana blockchain, a high-performance blockchain supporting parallel transaction processing and sub-second finality.
+Gateway's Solana integration provides access to the Solana blockchain and other networks that utilize the Solana Virtual Machine.
 
-### Supported Networks
+### Mainnet Beta
 
-#### Mainnet Beta
 - **Network ID:** mainnet-beta
 - **Native Token:** SOL
-- **Block Time:** ~400ms
-- **Consensus:** Proof of History + Proof of Stake
-- **TPS Capacity:** 65,000+ theoretical
 
-#### Devnet
+### Devnet (Testnet)
+
 - **Network ID:** devnet
-- **Native Token:** SOL (test tokens)
-- **Purpose:** Development and testing
-- **Faucet:** Available for free test tokens
+- **Native Token:** SOL
 
-### Configuration
+### Chain Configuration
 
-#### Chain Configuration
-Location: `/conf/chains/solana.yml`
+Each chain and network can be configured in Gateway through YAML configuration files:
+
+- Template: `/src/templates/chains/solana.yml`
+- User Configs Location: `/conf/chains/solana.yml`
+
 ```yaml
-timeout: 30000
-retryCount: 3
-commitment: "confirmed"
-skipPreflight: false
-maxFee: 0.01  # in SOL
+defaultNetwork: mainnet-beta
+defaultWallet: '<solana-wallet-address>'
 ```
 
-#### Network-Specific Configuration
-Location: `/conf/chains/solana/{network}.yml`
+### Network Configuration
 
-Example for mainnet-beta (`/conf/chains/solana/mainnet-beta.yml`):
+- Template: `/src/templates/chains/solana.yml`
+- User Configs: `/conf/chains/solana/mainnet-beta.yml`
+
 ```yaml
 nodeURL: "https://api.mainnet-beta.solana.com"
 commitment: "confirmed"
@@ -190,27 +143,9 @@ maxFee: 0.01
 priorityFee: 0.00001
 ```
 
-### Solana-Specific Features
-
-#### Token Program
-- **SPL Tokens:** Solana's token standard
-- **Token-2022:** Enhanced token program with additional features
-- **Associated Token Accounts:** Automatic token account management
-
-#### Transaction Features
-- **Versioned Transactions:** Support for lookup tables
-- **Priority Fees:** Dynamic fee prioritization
-- **Compute Units:** Customizable compute budget
-- **Transaction Size:** 1232 bytes maximum
-
-#### Account Model
-- **Program Derived Addresses (PDAs)**
-- **Rent-exempt accounts**
-- **Account ownership model**
-
 ### API Endpoints
 
-Solana chains use these endpoints:
+All Solana networks share the same API structure:
 
 - `GET /chains/solana/status` - Chain connection and slot status
 - `GET /chains/solana/tokens` - SPL token information
@@ -220,241 +155,149 @@ Solana chains use these endpoints:
 
 ## Chain Schema
 
-Gateway implements a standardized schema for chain operations across all supported blockchains.
+Gateway implements a standardized schema for chain operations across all supported blockchains. These schemas define the structure of requests and responses for common blockchain operations.
 
-### Common Operations
-
-#### Status Check
+### Status Check
 Returns chain connection status and current block/slot information.
 
-**Request:**
+**Request Schema:**
 ```json
 {
-  "network": "mainnet"
+  "network": "string (optional)" // Network identifier (e.g., "mainnet", "mainnet-beta")
 }
 ```
 
-**Response:**
+**Response Schema:**
 ```json
 {
-  "chain": "ethereum",
-  "network": "mainnet",
-  "rpcUrl": "https://eth-mainnet.g.alchemy.com/v2/...",
-  "currentBlockNumber": 18500000,
-  "nativeCurrency": "ETH"
+  "chain": "string",           // Chain name (e.g., "ethereum", "solana")
+  "network": "string",         // Network identifier
+  "rpcUrl": "string",          // Current RPC endpoint
+  "currentBlockNumber": 12345, // Current block number or slot
+  "nativeCurrency": "string"   // Native token symbol (e.g., "ETH", "SOL")
 }
 ```
 
-#### Token Information
+### Token Information
 Retrieves token metadata including addresses and decimals.
 
-**Request:**
+**Request Schema:**
 ```json
 {
-  "network": "mainnet",
-  "tokenSymbols": ["USDC", "USDT"]
+  "network": "string (optional)",           // Network identifier
+  "tokenSymbols": "string | string[] (optional)" // Single symbol or array of symbols/addresses
 }
 ```
 
-**Response:**
+**Response Schema:**
 ```json
 {
   "tokens": [
     {
-      "symbol": "USDC",
-      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-      "decimals": 6,
-      "name": "USD Coin"
+      "symbol": "string",   // Token symbol
+      "address": "string",  // Token contract address
+      "decimals": 6,        // Token decimals
+      "name": "string"      // Token full name
     }
   ]
 }
 ```
 
-#### Balance Query
+### Balance Query
 Fetches wallet balances for native and specified tokens.
 
-**Request:**
+**Request Schema:**
 ```json
 {
-  "network": "mainnet",
-  "address": "0x...",
-  "tokenSymbols": ["ETH", "USDC"]
+  "network": "string (optional)",      // Network identifier
+  "address": "string (optional)",      // Wallet address to query
+  "tokens": ["string"] (optional)",    // Array of token symbols or addresses
+  "fetchAll": false                    // Fetch all tokens in wallet, not just those in token list
 }
 ```
 
-**Response:**
+**Response Schema:**
 ```json
 {
   "balances": {
-    "ETH": "1.5",
-    "USDC": "1000.0"
+    "TOKEN_SYMBOL": 1234.56  // Token symbol/address as key, balance as number
   }
 }
 ```
 
-## Adding New Chains
+### Transaction Polling
+Polls the status of a submitted transaction.
 
-Gateway's modular architecture makes it easy to add support for new blockchains.
+**Request Schema:**
+```json
+{
+  "network": "string (optional)",         // Network identifier
+  "signature": "string",                  // Transaction signature/hash
+  "tokens": ["string"] (optional)",       // Token symbols/addresses for balance change calculation
+  "walletAddress": "string (optional)"    // Wallet address for balance change calculation
+}
+```
 
-### For EVM-Compatible Chains
+**Response Schema:**
+```json
+{
+  "currentBlock": 12345,              // Current block number
+  "signature": "string",              // Transaction signature
+  "txBlock": 12340 | null,            // Block where transaction was included
+  "txStatus": 0 | 1 | -1,             // 0=PENDING, 1=CONFIRMED, -1=FAILED
+  "fee": 0.001 | null,                // Transaction fee paid
+  "tokenBalanceChanges": {            // Optional: token balance changes
+    "TOKEN": 100.5                    // Change amount for each token
+  },
+  "txData": {} | null,                // Additional transaction data
+  "error": "string (optional)"        // Error message if failed
+}
+```
 
-Adding a new EVM-compatible chain is straightforward:
+### Gas/Fee Estimation
+Estimates transaction fees for the network.
+
+**Request Schema:**
+```json
+{
+  "network": "string (optional)"  // Network identifier
+}
+```
+
+**Response Schema:**
+```json
+{
+  "feePerComputeUnit": 0.000001,  // Fee per compute unit or gas unit
+  "denomination": "string",       // Unit denomination ("lamports" for Solana, "gwei" for Ethereum)
+  "computeUnits": 200000,          // Default compute units/gas limit used for calculation
+  "feeAsset": "string",            // Native currency symbol (ETH, SOL, etc.)
+  "fee": 0.002,                    // Total estimated fee using default limits
+  "timestamp": 1234567890          // Unix timestamp of estimate
+}
+```
+
+### Transaction Status Enum
+All chains use a standardized transaction status enum:
+
+- `0` = **PENDING**: Transaction submitted but not yet confirmed
+- `1` = **CONFIRMED**: Transaction successfully confirmed on-chain
+- `-1` = **FAILED**: Transaction failed or was rejected
+
+## Adding New Networks
+
+Gateway's modular architecture makes it easy to add support for new EVM- and SVM-based blockchain networks.
 
 1. **Create network configuration file:**
    ```yaml
    # /conf/chains/ethereum/mynetwork.yml
    nodeURL: "https://rpc.mynetwork.com"
    chainId: 12345
-   tokenListType: "FILE"
-   tokenListSource: "/conf/tokens/ethereum/mynetwork.json"
    nativeCurrencySymbol: "MYT"
+   minGasPrice: 0.1
    ```
 
 2. **Add token list:**
-   Create `/conf/tokens/ethereum/mynetwork.json` with supported tokens
+Create `/conf/tokens/ethereum/mynetwork.json` with supported tokens
 
-3. **Update chain configuration:**
-   Add network to `/conf/chains/ethereum.yml` if needed
-
-4. **Restart Gateway** to load the new configuration
-
-### For Non-EVM Chains
-
-Adding support for a new blockchain architecture requires:
-
-1. **Create chain implementation:**
-   ```typescript
-   // src/chains/mychain/mychain.ts
-   export class MyChain extends ChainBase {
-     // Implement required methods
-   }
-   ```
-
-2. **Implement required methods:**
-   - `getWallet(address: string)`
-   - `getBalance(address: string)`
-   - `getTokens(tokenSymbols: string[])`
-   - `getStatus()`
-
-3. **Create route handlers:**
-   Define API endpoints in `src/chains/mychain/routes/`
-
-4. **Add configuration schemas:**
-   - Chain schema: `src/templates/namespace/mychain-schema.json`
-   - Network schemas for each supported network
-
-5. **Register the chain:**
-   Add to `src/chains/chain.routes.ts`
-
-## Network Requirements
-
-### RPC Node Providers
-
-Gateway requires reliable RPC endpoints for blockchain interaction. Recommended providers:
-
-#### Ethereum/EVM
-- **Alchemy:** High reliability, free tier available
-- **Infura:** Ethereum-focused, robust infrastructure
-- **QuickNode:** Multi-chain support
-- **Ankr:** Decentralized node infrastructure
-- **Public RPCs:** Available but less reliable
-
-#### Solana
-- **Official RPC:** https://api.mainnet-beta.solana.com
-- **Helius:** Enhanced APIs and websockets
-- **QuickNode:** Low latency endpoints
-- **Triton:** RPC pool with load balancing
-
-### Performance Considerations
-
-#### Connection Pooling
-Gateway maintains persistent connections to RPC endpoints for better performance.
-
-#### Request Batching
-Multiple RPC calls can be batched to reduce latency and improve throughput.
-
-#### Caching
-Token metadata and static data are cached to minimize RPC calls.
-
-#### Rate Limiting
-Gateway respects RPC provider rate limits and implements retry logic.
-
-## Security Considerations
-
-### Private Key Management
-- Keys are encrypted at rest using AES-256
-- Passphrase required for wallet operations
-- Hardware wallet support via Ledger
-
-### RPC Security
-- Use HTTPS endpoints only
-- Validate RPC responses
-- Implement request timeouts
-- Monitor for RPC errors and failures
-
-### Transaction Security
-- Simulate transactions before execution
-- Implement slippage protection
-- Validate gas prices against recent blocks
-- Check token approvals before trades
-
-## Troubleshooting
-
-### Common Issues
-
-**"Cannot connect to RPC" errors:**
-- Verify RPC URL is correct
-- Check API key if using provider service
-- Test RPC endpoint directly with curl
-- Verify network configuration
-
-**"Insufficient balance" errors:**
-- Check wallet has enough native token for gas
-- Verify token balances for trades
-- Account for gas costs in calculations
-
-**"Transaction failed" errors:**
-- Check gas limit and gas price
-- Verify contract addresses
-- Review transaction simulation results
-- Check for contract-specific requirements
-
-**"Invalid chain ID" errors:**
-- Verify chain ID in configuration
-- Ensure wallet is on correct network
-- Check RPC endpoint matches network
-
-### Debugging Tools
-
-#### Logs
-Check Gateway logs for detailed error messages:
-```bash
-tail -f logs/gateway_app.log
-```
-
-#### RPC Testing
-Test RPC endpoints directly:
-```bash
-# Ethereum
-curl -X POST -H "Content-Type: application/json" \
-  --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' \
-  YOUR_RPC_URL
-
-# Solana
-curl -X POST -H "Content-Type: application/json" \
-  --data '{"jsonrpc":"2.0","id":1,"method":"getSlot"}' \
-  YOUR_RPC_URL
-```
-
-## Resources
-
-### Documentation
-- [Ethereum JSON-RPC Specification](https://ethereum.org/en/developers/docs/apis/json-rpc/)
-- [Solana RPC Methods](https://docs.solana.com/api/http)
-- [Gateway GitHub Repository](https://github.com/hummingbot/gateway)
-
-### Developer Tools
-- [Etherscan](https://etherscan.io) - Ethereum blockchain explorer
-- [Solscan](https://solscan.io) - Solana blockchain explorer
-- [Tenderly](https://tenderly.co) - Transaction simulation
-- [Foundry](https://getfoundry.sh) - EVM development framework
+3. **Update connectors**
+Update each supported connector's configuration file (i.e. `uniswap.config.ts`) to include the new network
