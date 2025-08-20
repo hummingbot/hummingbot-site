@@ -278,7 +278,7 @@ nav:
       - Commands: gateway/commands.md
       - Chains: gateway/chains.md
       - DEX Connectors: gateway/connectors.md
-      - Strategies & Scripts: gateway/strategies.md
+      - Strategies & Snippets: gateway/strategies.md
     - Hummingbot Dashboard:
       - Hummingbot Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md

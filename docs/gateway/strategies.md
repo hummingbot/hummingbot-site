@@ -1,6 +1,4 @@
-# Gateway Strategies and Scripts
-
-Gateway enables sophisticated trading strategies on decentralized exchanges through Hummingbot. This page lists available Gateway-compatible strategies and scripts.
+Gateway enables sophisticated trading strategies on decentralized exchanges through Hummingbot. This page lists available Gateway-compatible strategies/scripts along with commonly used code snippets.
 
 ## Available Scripts and Strategies
 
@@ -23,41 +21,81 @@ The following code snippets demonstrate common Gateway operations in Hummingbot 
 ### Data Feed
 
 ```python
-# Code snippet for connecting to Gateway data feeds
-# and receiving real-time price updates from DEX pools
+amm_data_feed = AmmGatewayDataFeed(
+            connector="jupiter/router",
+            trading_pairs={"SOL-USDC","JUP-USDC"}
+            order_amount_in_base=Decimal("1.0")
+        )
 ```
 
 ### Connect Market
 
 ```python
-# Code snippet for establishing connection to a Gateway market
-# and initializing the connector
+@classmethod
+def init_markets(cls):
+        cls.markets = {"jupiter/router": {"SOL-USDC"}}
+
+def __init__(self, connectors: Dict[str, ConnectorBase]):
+        super().__init__(connectors)
 ```
 
 ### Get Price
 
 ```python
-# Code snippet for fetching current prices from Gateway
-# including mid price, best bid/ask, and pool reserves
+current_price = await self.connectors["jupiter/router"].get_quote_price(
+                    trading_pair="SOL-USDC",
+                    is_buy=True,
+                    amount=Decimal("1.0"),
+                )
+```
+
+### Get Balance
+```python
+connector = self.connectors["jupiter/router"]
+await connector.update_balances(on_interval=False)
+balance = connector.get_balance("SOL")
 ```
 
 ### Place Order
 
 ```python
-# Code snippet for executing swaps through Gateway
-# including quote fetching and transaction submission
+connector = self.connectors["jupiter/router"]
+order_id = connector.place_order(
+                    is_buy=True,
+                    trading_pair="SOL-USDC",
+                    amount=Decimal("1.0"),
+                    price=current_price,
+                )
+```
+
+### Get LP Position Info
+
+```python
+position_info = await self.connectors["jupiter/router"].get_position_info(
+                    trading_pair="SOL-USDC",
+                    position_address="<position-address>"
+                )
 ```
 
 ### Add Liquidity
 
 ```python
-# Code snippet for adding liquidity to AMM or CLMM pools
-# including position creation and token approval
+order_id = self.connectors["meteora/clmm"].add_liquidity(
+                    trading_pair="SOL-USDC",
+                    price=current_price,
+                    upper_width_pct=10.0,
+                    lower_width_pct=10.0,
+                    base_token_amount=0.1,
+                    quote_token_amount=20,
+                )
 ```
 
 ### Remove Liquidity
 
 ```python
-# Code snippet for removing liquidity from existing positions
-# including partial and full withdrawals
+order_id = self.connectors["meteora/clmm"].remove_liquidity(
+                    trading_pair="SOL-USDC",
+                    position_address="<position-address>"
+                )
 ```
+

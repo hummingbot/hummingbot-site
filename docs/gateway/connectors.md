@@ -4,32 +4,32 @@ Gateway provides standardized connectors for interacting with decentralized exch
 
 ## Supported Connectors
 
-### Active Connectors (v2.8.0)
+!!! note
+    The Gateway refactoring approved in [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c) has been completed with the v2.8.0 release. The new standard is now ready, and developers can help upgrade the legacy connectors to the new architecture. Community developers can claim bounties for these upgrades where available.
 
-| Protocol | Chain | Router | AMM | CLMM | Documentation |
+### Active Connectors
+
+| Protocol | Chain | Router | AMM | CLMM | Description |
 |----------|-------|--------|-----|------|---------------|
 | **[Jupiter](/exchanges/gateway/jupiter)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
 | **[Meteora](/exchanges/gateway/meteora)** | Solana | ❌ | ❌ | ✅ | Dynamic Liquidity Market Maker (DLMM) |
 | **[Raydium](/exchanges/gateway/raydium)** | Solana | ❌ | ✅ | ✅ | Full-featured DEX with AMM and CLMM |
 | **[Uniswap](/exchanges/gateway/uniswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | The original AMM DEX with V2, V3, and Universal Router |
-| **[0x](/exchanges/gateway/0x)** | Ethereum/EVM | ✅ | ❌ | ❌ | Professional-grade DEX aggregator with RFQ |
 
-### Connectors Requiring Upgrade
+### Legacy Connectors
 
 The following connectors are available in legacy versions but need to be upgraded to the v2.8.0 standard:
 
-| Protocol | Chain | Router | AMM | CLMM | Status | Bounty |
-|----------|-------|--------|-----|------|--------|--------|
-| **[PancakeSwap](/exchanges/gateway/pancakeswap)** | BNB Chain | ✅ | ✅ | ✅ | Needs v2.8 upgrade | [#7654](https://github.com/hummingbot/hummingbot/issues/7654) |
-| **[Balancer](/exchanges/gateway/balancer)** | Ethereum/EVM | ❌ | ✅ | ❌ | Needs v2.8 upgrade | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
-| **[Curve](/exchanges/gateway/curve)** | Ethereum/EVM | ❌ | ✅ | ❌ | Needs v2.8 upgrade | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
-| **[SushiSwap](/exchanges/gateway/sushiswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | Needs v2.8 upgrade | - |
-| **[QuickSwap](/exchanges/gateway/quickswap)** | Polygon | ❌ | ✅ | ✅ | Needs v2.8 upgrade | - |
-| **[TraderJoe](/exchanges/gateway/traderjoe)** | Avalanche | ❌ | ✅ | ✅ | Needs v2.8 upgrade | - |
-| **[ETCSwap](/exchanges/gateway/etcSwap)** | Ethereum Classic | ❌ | ✅ | ✅ | Needs v2.8 upgrade | - |
+| Protocol | Chain | Router | AMM | CLMM | Bounty |
+|----------|-------|--------|-----|------|--------|
+| **[PancakeSwap](/exchanges/gateway/pancakeswap)** | BNB Chain | ✅ | ✅ | ✅ | [#7654](https://github.com/hummingbot/hummingbot/issues/7654) |
+| **[Balancer](/exchanges/gateway/balancer)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
+| **[Curve](/exchanges/gateway/curve)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
+| **[SushiSwap](/exchanges/gateway/sushiswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | - |
+| **[QuickSwap](/exchanges/gateway/quickswap)** | Polygon | ❌ | ✅ | ✅ | - |
+| **[TraderJoe](/exchanges/gateway/traderjoe)** | Avalanche | ❌ | ✅ | ✅ | - |
+| **[ETCSwap](/exchanges/gateway/etcSwap)** | Ethereum Classic | ❌ | ✅ | ✅ | - |
 
-!!! note
-    The Gateway refactoring approved in [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c) has been completed with the v2.8.0 release. The new standard is now ready, and developers can help upgrade the legacy connectors listed above to the new architecture. Community developers can claim bounties for these upgrades where available.
 
 ## Connector Schemas
 
