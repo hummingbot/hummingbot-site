@@ -10,7 +10,7 @@ Once Gateway is running, you can verify the connection in Hummingbot:
 2. **Test the connection**: Run `gateway ping` to verify Gateway is accessible and chains are connected
 3. **Generate certificates** (if needed): Run `gateway generate-certs` to create SSL certificates for secure communication
 
-If you see `GATEWAY: OFFLINE` in the upper right corner:
+If you see `GATEWAY: 🔴 OFFLINE` in the upper right corner:
 
 - Ensure Gateway is running (check Docker container or process)
 - Verify Gateway is running on the correct port (default: 15888)
