@@ -56,7 +56,7 @@ Bronze CEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](./3.png)
 
-The DEX Connectors poll places [decentralized exchange connectors](../../../dex-connectors/index.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. 
+The DEX Connectors poll places [decentralized exchange connectors](/gateway/connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. 
 
 The poll received 18 distinct votes, for a total of 46 million HBOT voting power spent: [DEX Connectors Poll](https://snapshot.org/#/hbot.eth/proposal/0x5fe34c66cefc6438070332d2ab0d807447a9c175eb5e975e5a9a7023cb3c5c83)
 

@@ -30,7 +30,7 @@ Hummingbot connectors standardize trading logic and order types across different
 Each connector's code is contained in modularized folders in the Hummingbot and/or Gateway codebases:
 
 - [CLOB Connectors](/exchanges/): Connectors to central limit order book (CLOB) centralized and decentralized exchanges
-- [AMM Connectors](/dex-connectors): Connectors to automated market maker (AMM) decentralized exchanges
+- [AMM DEX Connectors](/gateway/connectors): Connectors to automated market maker (AMM) decentralized exchanges and aggregators
 
 ## Official Code Repositories
 
@@ -44,8 +44,9 @@ Today, the framework comprises companion modules to assist with other aspects of
 
 * [Gateway](/gateway): Middleware to interact with AMM connectors and other DeFi protocols on various blockchains
 * [Dashboard](/dashboard): A web-based user interface for deploying multi-bot trading strategies
-* [Backend API](https://github.com/hummingbot/backend-api): Backend API that exposes bot management endpoints for Dashboard and others to interact with
-* [Quants-Lab](https://github.com/hummingbot/quants-lab): A sandbox for users to test their trading ideas and strategies
+* [Hummingbot API](https://github.com/hummingbot/hummingbot-api): Comprehensive API that exposes trading and bot deployment endpoints for Dashboard and other clients
+* [Hummingbot MCP](https://github.com/hummingbot/mcp): Model Context Protocol (MCP) server that lets you use AI assistants to interact with Humnminbot API
+* [Quants Lab](https://github.com/hummingbot/quants-lab): A sandbox for users to conduct research and backtest trading strategies using Python notebooks
 
 
 ## Getting Help

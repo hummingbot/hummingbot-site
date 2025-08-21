@@ -152,7 +152,7 @@ Run `gateway connect osmosis` and follow the prompts to add a trading wallet to 
 
 ## Run a Strategy
 
-To begin trading, a strategy must be configured. The two strategies supported natively by the Osmosis connector are [**amm_arb**](https://hummingbot.org/strategies/amm-arbitrage/) and [**amm_v3_lp**](https://hummingbot.org/strategies/amm-v3-lp/).
+To begin trading, a strategy must be configured. The two strategies supported natively by the Osmosis connector are [**amm_arb**](/strategies/amm-arbitrage/) and **amm_v3_lp**.
 
 ### Prepare
 

@@ -10,7 +10,7 @@ categories:
 
 ![](cover.png)
 
-Every quarter, Hummingbot Foundation organizes [Polls](https://hummingbot.org/governance/polls/), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
+Every quarter, Hummingbot Foundation organizes [Polls](/governance/polls/), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
 
 This week, we completed the Epoch 5 polls, which prioritize exchanges and strategies, in the Hummingbot codebase for the July, August, and September releases.
 
@@ -29,7 +29,7 @@ Below, we summarize the results of the Epoch 5 Polls and outline the changes we'
 
 ![](./CEX-Connectors-Epoch-5.png)
 
-The CEX Connectors poll places [centralized exchange connectors](https://hummingbot.org/cex-connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the July-September 2023 release cycles.
+The CEX Connectors poll places [centralized exchange connectors](/connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the July-September 2023 release cycles.
 
 The poll received 30 distinct votes, for a total of 90 million HBOT voting power spent.
 
@@ -53,7 +53,7 @@ Bronze CEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](./3.png)
 
-The DEX Connectors poll places [decentralized exchange connectors](https://hummingbot.org/gateway/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the July-September 2023 release cycles. The poll received 23 distinct votes, for a total of 77 million HBOT voting power spent.
+The DEX Connectors poll places [decentralized exchange connectors](/gateway/connectors/) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the July-September 2023 release cycles. The poll received 23 distinct votes, for a total of 77 million HBOT voting power spent.
 
 [DEX Connectors Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x70299258a513ab4fb7ad4dd106947fd017848470fc8ce63ba4eb41b91d0d755c)
 
@@ -75,17 +75,17 @@ Bronze DEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ![](./4.png)
 
-The Core Strategies poll defines which [strategies](https://hummingbot.org/strategies/) should be Core (officially maintained by the Foundation) versus Community (maintained by community members or not maintained). There were 22 unique votes in the poll, and the total number of HBOT voting power tallied was 75 million.
+The Core Strategies poll defines which [strategies](/strategies/) should be Core (officially maintained by the Foundation) versus Community (maintained by community members or not maintained). There were 22 unique votes in the poll, and the total number of HBOT voting power tallied was 75 million.
 
 [Core Strategies Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x65f6af77e8731827c0f19251b2c6e0346230205fe3c6e34294b3981dfb0f3f77)
 
 **Core:**
 
-[AMM Arbitrage](https://hummingbot.org/strategies/amm-arbitrage/)
+[AMM Arbitrage](/strategies/amm-arbitrage/)
 
-[Pure Market Making (PMM)](https://hummingbot.org/strategies/pure-market-making/)
+[Pure Market Making (PMM)](/strategies/pure-market-making/)
 
-[Cross Exchange Market Making (XEMM)](https://hummingbot.org/strategies/cross-exchange-market-making/)
+[Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/)
 
 Hummingbot Foundation will be the official maintainer for these strategies, prioritize updates and fixes to them, and maintain their documentation pages. The Foundation also supports Core strategies by running long-term testing bots for them and providing HBOT rewards to users who answer community questions related to them.
 

@@ -12,7 +12,7 @@ categories:
 
 As we are assembling the roadmap for the new year, it's important to reflect on the strides Hummingbot has made from an engineering standpoint in 2023. 
 
-In the [2023 Technical Roadmap](https://hummingbot.org/blog/hummingbot-2023-technical-roadmap/), we defined 4 key goals:
+In the [2023 Technical Roadmap](/blog/hummingbot-2023-technical-roadmap/), we defined 4 key goals:
 
 1. **Expand Top Exchange Connectors:** Update connectors to latest standards, support market orders and lending/staking
 2. **Optimize Hummingbot codebase:** Streamline maintenance and move Gateway DEX connectors into a separate repo
@@ -43,7 +43,7 @@ To streamline operations, we accomplished two important objectives in 2023:
 
 ![](./v2-framework.png)
 
-In 2023, we greatly expanded the scripting capabilities in Hummingbot by adding the [V2 Strategy Framework](https://hummingbot.org/v2-strategies/), which marked a revolutionary leap forward for Hummingbot:
+In 2023, we greatly expanded the scripting capabilities in Hummingbot by adding the [V2 Strategy Framework](/v2-strategies/), which marked a revolutionary leap forward for Hummingbot:
 
 - **Introduction of Controllers and Executor Handlers:** This enables running “sub-strategies” in the same Hummingbot instances and encapsulates the trading logic into a controller, which makes scaling the system easier.
 - **Candles Feed**: Introduction of technical indicators via the `pandas_ta` library, enriching data-driven decision-making.ki

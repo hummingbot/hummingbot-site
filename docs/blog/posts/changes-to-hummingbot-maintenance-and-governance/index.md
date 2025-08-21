@@ -32,7 +32,7 @@ In addition, we have shipped [11 Hummingbot releases](https://docs.hummingbot.or
 - The new [Scripts module](https://docs.hummingbot.org/scripts/) that allows you to create customizable, lightweight strategies that utilize the full power of Hummingbot
 - Upgrades, fixes, and improvements to many exchange connectors in Hummingbot.
 
-Finally, we're incredibly excited about [Botcamp](https://hummingbot.org/botcamp/), our new developer bootcamp that teaches participants how to design and create their own custom algo trading strategies using Scripts. We're currently in the midst of the first official, sold-out cohort and plan to offer more capacity next year.
+Finally, we're incredibly excited about [Botcamp](/botcamp/), our new developer bootcamp that teaches participants how to design and create their own custom algo trading strategies using Scripts. We're currently in the midst of the first official, sold-out cohort and plan to offer more capacity next year.
 
 ## Lessons learned
 

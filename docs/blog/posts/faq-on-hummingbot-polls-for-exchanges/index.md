@@ -36,7 +36,7 @@ After the voting process, both centralized exchange (CEX) connectors and decentr
 
 To boost their ranking in upcoming polls, exchanges can have various options to gather more voters:
 
-- **Hold and vote HBOT**: HBOT is a governance token that allows holders to vote gaslessly using their wallet balance. See [this page](https://hummingbot.org/faq/#hbot-token) for more information on how to acquire and vote HBOT.
+- **Hold and vote HBOT**: HBOT is a governance token that allows holders to vote gaslessly using their wallet balance. See [this page](/faq/#hbot-token) for more information on how to acquire and vote HBOT.
 - **Campaign for your exchange on Discord**: Join our [Discord](https://discord.com/invite/hummingbot?ref=blog.hummingbot.org) and post and engage with the community, where members can post comments and engage in discussions about the poll topic. One example of an exchange that was successful in doing this was OpenOcean in the Epoch 1 poll.
 
 ![](./Screen-Shot-2023-01-20-at-9.16.43-AM.png)
