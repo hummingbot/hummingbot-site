@@ -1,4 +1,6 @@
-Scripts are the entry point for Hummingbot strategies. They enable Hummingbot users to build customized strategies using the [Strategy V2](/strategies) framework, and access the full power of Hummingbot exchange connectors in a few lines of Python code.
+Scripts are the entry point for Hummingbot strategies. Standalone scripts let new users automate basic trading actions and implement simple versions of Humminggbot strategies.
+
+They also enable Hummingbot users to build customized strategies using the [Strategy V2](/strategies) framework, and access the full power of Hummingbot exchange connectors in a few lines of Python code.
 
 !!! note Restart Hummingbot
      Should your script run into an error, it's crucial that you exit Hummingbot entirely, correct or debug the faulty script, and then restart Hummingbot. The stop command won't rectify the issue in case of an error. To get back on track, a complete shutdown and subsequent relaunch of Hummingbot is required.

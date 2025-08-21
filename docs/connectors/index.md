@@ -12,7 +12,7 @@ See [CLOB Connectors](./clob.md) for a list of the current CLOB connectors in Hu
 
 Gateway connectors establish and maintain connections to automated market maker (AMM) DEXs and other protocols on various blockchain networks, interfaces with their Javascript SDKs, and exposes standard REST API endpoints for trading and liquidity provision-related actions on these DEXs.
 
-See [Gateway Connectors](./gateway.md) for a list of the current Gateway connectors in Hummingbot, and see [Gateway](/gateway) for more information about the Gateway API middleware.
+See [Gateway](/gateway) for comprehensive documentation about Gateway, including supported DEX connectors, API commands, and configuration.
 
 ## Connector Maintenance
 

@@ -1,97 +1,79 @@
-
-!!! note
-    This connector is available in **Gateway Legacy (v2.2)**. For installation instructions, refer to the [Installation Guide](../../gateway/legacy/installation.md).
+# Uniswap
 
 ## 🛠 Connector Info
 
-- **Exchange Type**: Decentralized Exchange (DEX)
-- **Market Type**: Automatic Market Maker (AMM)
+- **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/uniswap>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/development/src/templates/uniswap.yml>
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
-| [3️⃣ Range AMM Connector](#3-range-amm-connector) | ✅ |
-| [🕯 AMM Data Feed](#amm-data-feed) | ✅ |
+| [Router Connector](#router-connector) | ✅ | Universal Router |
+| [AMM Connector](#2-amm-connector) | ✅ | V2 Pools |
+| [CLMM Connector](#3-clmm-connector) | ✅ | V3 Pools |
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://uniswap.org>
-- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/uniswap/>
+- **Website**: <https://app.uniswap.org>
+- **CoinMarketCap**: <https://coinmarketcap.com/exchanges/uniswap-v3/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/uniswap>
-- **Fees**: <https://docs.uniswap.org/concepts/protocol/fees>
+- **Fees**: <https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees>
+- **API Docs**: <https://docs.uniswap.org/sdk/v3/overview>
 
 ## 🔑 How to Connect
 
-Create a wallet on one of the supported networks below:
+Uniswap operates on Ethereum and EVM-compatible networks.
 
 | Chain | Networks | 
 | ----- | -------- |
-| `ethereum` | `mainnet`, `arbitrum_one`, `optimism`, `goerli`
-| `polygon` | `mainnet`, `mumbai`
+| `ethereum` | `mainnet`, `arbitrum`, `optimism`, `base`, `polygon`, `avalanche`, `bsc`, `celo`
 
-From inside the Hummingbot client, run `gateway connect uniswap` in order to connect your wallet:
+See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
 
+## Configuration
+
+Configure Uniswap settings in `/conf/connectors/uniswap.yml`.
+
+Below are the Uniswap configuration parameters and their default values:
+```yaml
+# Global settings for Uniswap
+# Default slippage percentage for swaps (2%)
+slippagePct: 2
+
+# For each swap, the maximum number of hops to consider
+maximumHops: 4
 ```
-Which chain do you want uniswap to connect to? (ethereum, polygon) >>> 
-Which network do you want uniswap to connect to? (mainnet, goerli, arbitrum_one) >>>
-Enter your ethereum-mainnet private key >>>>
-```
 
-If connection is successful (ethereum-mainnet):
-```
-The uniswap connector now uses wallet [pubKey] on ethereum-mainnet
-```
+## Router Endpoints
+*Integration to Uniswap's Universal Router for optimal trade execution*
 
-## 2️⃣ AMM Connector
-*Integration to this DEX's swap pricing and execution endpoints*
+- `/connectors/uniswap/router/quote-swap`
+- `/connectors/uniswap/router/execute-quote`
+- `/connectors/uniswap/router/execute-swap`
 
-- **ID**: `uniswap`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.uniswap.org/sdk/v2/overview>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswap>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml>
+## AMM Endpoints
+*Integration to Uniswap V2 classic AMM pools*
 
-### Endpoints
+- `/connectors/uniswap/amm/quote-swap`
+- `/connectors/uniswap/amm/execute-swap`
+- `/connectors/uniswap/amm/pool-info`
+- `/connectors/uniswap/amm/position-info`
+- `/connectors/uniswap/amm/quote-liquidity`
+- `/connectors/uniswap/amm/add-liquidity`
+- `/connectors/uniswap/amm/remove-liquidity`
 
-- `/amm/price`
-- `/amm/trade`
-- `/amm/estimateGas`
+## CLMM Endpoints
+*Integration to Uniswap V3 concentrated liquidity pools*
 
-For more info, run Gateway and go to https:localhost:8080 in your browser to see detailed documentation for each endpoint.
+- `/connectors/uniswap/clmm/quote-swap`
+- `/connectors/uniswap/clmm/execute-swap`
+- `/connectors/uniswap/clmm/pool-info`
+- `/connectors/uniswap/clmm/position-info`
+- `/connectors/uniswap/clmm/positions-owned`
+- `/connectors/uniswap/clmm/quote-position`
+- `/connectors/uniswap/clmm/open-position`
+- `/connectors/uniswap/clmm/close-position`
+- `/connectors/uniswap/clmm/add-liquidity`
+- `/connectors/uniswap/clmm/remove-liquidity`
+- `/connectors/uniswap/clmm/collect-fees`
 
-## 3️⃣ Range AMM Connector
-*Integration to this DEX's concentrated liquidity range provision endpoints*
-
-- **ID**: `uniswaplp`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **API Docs**: <https://docs.uniswap.org/sdk/v3/overview>
-- **Folder**: <https://github.com/hummingbot/gateway/tree/main/src/connectors/uniswap>
-- **Default Configs**: <https://github.com/hummingbot/gateway/blob/main/src/templates/uniswap.yml>
-
-### Endpoints
-
-- `/amm/liquidity/price`
-- `/amm/liquidity/add`
-- `/amm/liquidity/remove`
-- `/amm/liquidity/position`
-- `/amm/liquidity/collect_fees`
-
-For more info, run Gateway and go to <https:localhost:8080> in your browser to see detailed documentation for each endpoint.
-
-## 🕯 AMM Data Feed
-*Data feed of this exchange's real-time prices*
-
-- **ID**: `uniswap_[CHAIN]_[NETWORK]`
-- **Connection Type**: REST via [Gateway](/gateway)
-- **Folder**: <https://github.com/hummingbot/hummingbot/blob/master/hummingbot/data_feed/amm_gateway_data_feed.py>
-
-### Usage
-
-```python
-from hummingbot.data_feed.amm_gateway_data_feed import AmmGatewayDataFeed
-prices = AmmGatewayDataFeed(
-        connector_chain_network="uniswap_polygon_mainnet",
-        trading_pairs={"WETH-USDC", "WETH-DAI"},
-        order_amount_in_base=Decimal("1"),
-    )
-```
+For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

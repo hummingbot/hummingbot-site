@@ -1,63 +1,67 @@
-!!! note
-    This connector has been upgraded to the **Gateway New (v2.5+)** standard and available in the current `development` branch. For installation instructions, refer to the [Installation & Setup](../../gateway/installation.md) page.
+# Jupiter
 
 ## 🛠 Connector Info
 
-* **Chain**: [Solana](/gateway/chains/solana)
-* **Available Networks**: `mainnet-beta`, `devnet`
+- **Folder**: <https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter>
+- **Default Configs**: <https://github.com/hummingbot/gateway/blob/development/src/templates/jupiter.yml>
 
-| Connectors | Route Schemas | Notes | 
+| Component | Status | Notes | 
 | --------- | ------ | ----- |
-| `jupiter` | Swap | Jupiter DEX aggregator |
-
-See [Route Schemas](/gateway/schemas) for more information about the endpoints defined by each connector.
+| Router Connector | ✅ | DEX Aggregator |
 
 ## ℹ️ Exchange Info
 
 - **Website**: <https://jup.ag>
-- **DefiLlama**: <https://defillama.com/protocol/jupiter>
-- **SDK Docs**: <https://dev.jup.ag/docs/swap-api/get-quote>
+- **API Docs**: <https://station.jup.ag/docs/apis/swap-api>
+- **Chain**: Solana
+- **Networks**: `mainnet-beta`, `devnet`
 
 ## 🔑 How to Connect
 
-!!! warning
-    This connection interface is likely to change in future releases as we continue to improve the Gateway architecture.
+Jupiter operates on Solana networks.
 
-From inside the Hummingbot client, run `gateway connect jupiter`:
+| Chain | Networks | 
+| ----- | -------- |
+| `solana` | `mainnet-beta`, `devnet` |
 
-```
-Which Solana network do you want jupiter to connect to? (mainnet-beta) >>> mainnet-beta
-Enter your solana_mainnet-beta private key >>>>
-```
+See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
 
-If connection is successful:
-```
-The jupiter connector now uses wallet [pubKey] on solana-mainnet-beta
-```
+## Configuration
 
-## ⚙️ Connector Configs
+Configure Jupiter settings in `/conf/connectors/jupiter.yml`.
 
-* Connector Folder: [/gateway/src/connectors/jupiter](https://github.com/hummingbot/gateway/tree/development/src/connectors/jupiter)
-* Config Schema: [/gateway/src/services/schema/jupiter-schema.json](https://github.com/hummingbot/gateway/tree/development/src/services/schema/jupiter-schema.json)
-
-Upon Gateway setup, a default `jupiter.yml` configuration file matching the schema is created in your `conf` folder based on the [template](https://github.com/hummingbot/gateway/tree/development/src/templates/jupiter.yml) below:
-
+Below are the Jupiter configuration parameters and their default values:
 ```yaml
-# how much the execution price is allowed to move unfavorably from the trade
-# execution price. It uses a rational number for precision.
-allowedSlippage: '1/100'
+# Default slippage percentage for swaps (as a decimal, e.g., 1 = 1%)
+slippagePct: 1
 
 # Priority level for swap transaction processing
 # Options: medium, high, veryHigh
 priorityLevel: 'veryHigh'
+
+# Maximum priority fee in lamports (for dynamic priority fees)
+# Used when priorityLevel is set and no explicit priorityFeeLamports is provided
+maxLamports: 1000000
+
+# Restrict routing to only go through 1 market
+# Default: false (allows multi-hop routes for better prices)
+onlyDirectRoutes: false
+
+# Restrict routing through highly liquid intermediate tokens only
+# Default: true (for better price and stability)
+restrictIntermediateTokens: true
+
+# Jupiter API key (optional)
+# For free tier, leave empty (uses https://lite-api.jup.ag)
+# For paid plans, generate key at https://portal.jup.ag (uses https://api.jup.ag)
+apiKey: ''
 ```
 
-### Slippage
+## Router Endpoints
+*Jupiter DEX aggregator for optimal swap routing across Solana*
 
-- Defines the price slippage allowed when quoting and executing a swap
-- `allowedSlippage: '1/100'` means 1% price movement allowed
+- `/connectors/jupiter/router/quote-swap`
+- `/connectors/jupiter/router/execute-quote`
+- `/connectors/jupiter/router/execute-swap`
 
-### Priority Level
-
-- Controls the transaction priority when executing swaps on Jupiter, subject to minimum and maximum fees defined in the [Solana](/gateway/chains/solana) config file
-- Available options: `medium` (standard priority), `high` (faster execution), and `veryHigh` (highest priority)
+For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

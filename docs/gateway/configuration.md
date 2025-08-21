@@ -2,7 +2,7 @@ Gateway uses a modular configuration system that allows you to customize various
 
 ## Configuration Overview
 
-Gateway's configuration system consists of YAML files located in the `/conf` directory, along with the `/conf/lists` folder that contains token mappings for each blockchain network.
+Gateway's configuration system consists of YAML files located in the `/conf` directory, along with JSON files for tokens and pools organized by chain and connector.
 
 The initial configuration files are created automatically using the default templates in `/src/templates` when you run the setup script during [installation](./installation.md).
 
@@ -14,6 +14,8 @@ The `/conf/` folder contains the following types of configuration files:
 2. **Server Configuration** (`server.yml`): Controls Gateway server behavior
 3. **Chain Configurations** (e.g., `solana.yml`): Define blockchain network settings
 4. **Connector Configurations** (e.g., `raydium.yml`): Configure DEX-specific settings
+5. **Token Lists** (`/conf/tokens/{chain}/{network}.json`): Token definitions for each network
+6. **Pool Lists** (`/conf/pools/{connector}.json`): Liquidity pool definitions for each DEX connector
 
 ### Root Configuration
 
@@ -82,106 +84,192 @@ transactionDbPath: 'transaction.level'
 
 ### Chain Configuration
 
-Chain configuration files (e.g., `solana.yml`) define chain-specific settings for specific blockchain networks. These may include node URLs, token lists, and transaction parameters.
+Chain configuration files (e.g., `/conf/chains/solana.yml`) now contain only the default network and wallet settings for each blockchain.
 
 ```yaml
-networks:
-  mainnet-beta:
-    nodeURL: https://dry-dawn-hill.solana-mainnet.quiknode.pro/41bbd7ad405c552f91cc928e044e5e04c66341d2
-    tokenListType: FILE
-    tokenListSource: conf/lists/solana.json
-    nativeCurrencySymbol: SOL
-  devnet:
-    nodeURL: https://api.devnet.solana.com
-    tokenListType: FILE
-    tokenListSource: conf/lists/solana-devnet.json
-    nativeCurrencySymbol: SOL
-
-# Default compute units for a transaction used to estimate gasPrice
-defaultComputeUnits: 200000
-
-# Floor percentile of recent priority fee samples used to estimate gasPrice for a transaction
-basePriorityFeePct: 90
-
-# Multiplier for increasing priority fee on retry
-priorityFeeMultiplier: 2
-
-# Maximum priority fee in SOL
-maxPriorityFee: 0.01
-
-# Minimum priority fee in SOL
-minPriorityFee: 0.0001
-
-# Retry interval in milliseconds
-retryIntervalMs: 500
-
-# Number of retry attempts
-retryCount: 10
+defaultNetwork: mainnet-beta
+defaultWallet: '<solana-wallet-address>'
 ```
+
+When you connect a wallet using `gateway connect`, it automatically becomes the `defaultWallet` for that chain. The `defaultNetwork` determines which network configuration Gateway uses by default for that chain.
+
+!!! note
+    Network-specific configurations are now stored in separate files under `/conf/chains/{chain}/{network}.yml`
 
 
 ### Connector Configuration
 
-Connector configuration files (e.g., `raydium.yml`) define settings for specific DEX connectors, including slippage tolerance and predefined liquidity pools.
+Connector configuration files (e.g., `/conf/connectors/jupiter.yml`) define settings specific to each DEX connector, including slippage tolerance, routing preferences, and API configurations.
+
+#### Example: Jupiter Configuration
 
 ```yaml
-# settings for AMM routes
-amm:
-  # how much the execution price is allowed to move unfavorably
-  allowedSlippage: '1/100'
-  # predefined pools
-  pools:
-    RAY-SOL: 'AVs9TA4nWDzfPJE9gGVNJMVhcQy3V9PGazuz33BfG2RA'
-    SOL-USDC: '58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2'
-    RAY-USDC: '6UmmUiYoBjSrhakAobJw8BvkmJtDVxaeBtbt7rxWo1mg'
-    WIF-SOL: 'EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx'
-    POPCAT-SOL: 'FRhB8L7Y9Qq41qZXYLtC2nw8An1RJfLLxRF2x9RwLLMo'
-    SOL-TRUMP: 'HKuJrP5tYQLbEUdjKwjgnHs2957QKjR2iWhJKTtMa1xs'
-    LAYER-USDC: 'G6drsaPCR3pxsEmSTAc81kW1EL3kFAFwtSAkzUZXmgH3'
+# Default slippage percentage for swaps (as a decimal, e.g., 1 = 1%)
+slippagePct: 1
 
-# settings for CLMM routes
-clmm:
-  # how much the execution price is allowed to move unfavorably
-  allowedSlippage: '1/100'
-  # predefined pools
-  pools:
-    SOL-USDC: '3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv'
-    RAY-USDC: '61R1ndXxvsWXXkWSyNkCxnzwd3zUNB8Q2ibmkiLPC8ht'
-    SOL-USDT: '3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF'
-    SOL-RAY: '2AXXcN6oN9bBT5owwmTH53C7QHUXvhLeu718Kqt8rvY2'
-    USDC-USDT: 'BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU'
-    SOL-JITOSOL: '2uoKbPEidR7KAMYtY4x7xdkHXWqYib5k4CutJauSL3Mc'
-    SOL-TRUMP: 'GQsPr4RJk9AZkkfWHud7v4MtotcxhaYzZHdsPCg9vNvW'
-    LAYER-USDC: 'G6drsaPCR3pxsEmSTAc81kW1EL3kFAFwtSAkzUZXmgH3'
-    TRUMP-USDC: '7XzVsjqTebULfkUofTDH5gDdZDmxacPmPuTfHa1n9kuh'
+# Priority level for swap transaction processing
+# Options: medium, high, veryHigh
+priorityLevel: 'veryHigh'
+
+# Maximum priority fee in lamports (for dynamic priority fees)
+# Used when priorityLevel is set and no explicit priorityFeeLamports is provided
+maxLamports: 1000000
+
+# Restrict routing to only go through 1 market
+# Default: false (allows multi-hop routes for better prices)
+onlyDirectRoutes: false
+
+# Restrict routing through highly liquid intermediate tokens only
+# Default: true (for better price and stability)
+restrictIntermediateTokens: true
+
+# Jupiter API key (optional)
+# For free tier, leave empty (uses https://lite-api.jup.ag)
+# For paid plans, generate key at https://portal.jup.ag (uses https://api.jup.ag)
+apiKey: ''
+```
+
+**Configuration Options Explained:**
+
+- **`slippagePct`**: Maximum acceptable price slippage for trades. If the execution price deviates more than this percentage from the quoted price, the transaction will fail.
+
+- **`priorityLevel`**: Controls transaction priority on Solana. Higher priority levels result in faster confirmation but cost more in fees. Set to `veryHigh` for time-sensitive trades.
+
+- **`maxLamports`**: Caps the maximum priority fee to prevent excessive costs during network congestion. 1,000,000 lamports = 0.001 SOL.
+
+- **`onlyDirectRoutes`**: When `true`, restricts swaps to direct pools only (no intermediate tokens). This can reduce price impact but may result in worse pricing or failed routes for less liquid pairs.
+
+- **`restrictIntermediateTokens`**: When `true`, only routes through major tokens (SOL, USDC, USDT) as intermediates. This increases reliability and reduces price impact risks.
+
+- **`apiKey`**: Optional API key for Jupiter's paid tier. The free tier (lite-api) is suitable for most users, while the paid tier offers higher rate limits and additional features.
+
+### Network Configuration
+
+Network configuration files (e.g., `/conf/chains/solana/mainnet-beta.yml`) contain the detailed settings for each blockchain network, including RPC endpoints and transaction parameters.
+
+#### Example: Solana mainnet-beta Configuration
+
+```yaml
+nodeURL: https://api.mainnet-beta.solana.com
+nativeCurrencySymbol: SOL
+
+# Default compute units for a transaction
+# This sets the compute unit limit for transactions when not specified by the user
+defaultComputeUnits: 200000
+
+# Confirmation polling interval in seconds
+# How often to check if a submitted transaction has been confirmed (inner retry loop)
+confirmRetryInterval: 0.5
+
+# Number of confirmation polling attempts
+# How many times to poll for confirmation before considering the transaction unconfirmed
+confirmRetryCount: 10
+
+# Floor percentile of recent priority fee samples used to estimate gasPrice for a transaction
+# Use the Nth percentile of recent priority fees as the base fee (90 = 90th percentile)
+basePriorityFeePct: 90
+
+# Minimum priority fee per compute unit in lamports
+# This sets the floor for priority fees to ensure transactions are processed (default: 0.1 lamports/CU)
+minPriorityFeePerCU: 0.1
+```
+
+You can view the current configuration for any network using Gateway commands:
+
+```
+>>> gateway config solana-mainnet-beta
+
+Gateway Configuration - namespace: solana-mainnet-beta:
+nodeURL: https://dry-dawn-hill.solana-mainnet.quiknode.pro/41bbd7ad405c552f91cc928e044e5e04c66341d2
+nativeCurrencySymbol: SOL
+defaultComputeUnits: 200000
+confirmRetryInterval: 0.5
+confirmRetryCount: 10
+basePriorityFeePct: 90
+minPriorityFeePerCU: 0.1
+```
+
+To update any network setting, use `gateway config [namespace] update`:
+
+```
+>>> gateway config solana-mainnet-beta update
+
+Available configuration paths: nodeURL, nativeCurrencySymbol, defaultComputeUnits, confirmRetryInterval, confirmRetryCount, basePriorityFeePct, minPriorityFeePerCU
+
+Enter configuration path (or 'exit' to cancel): nodeURL
+Current value for 'nodeURL': https://api.mainnet-beta.solana.com
+Enter new value (or 'exit' to cancel): https://your-preferred-node-provider.com/your-api-key
 ```
 
 ## Common Configuration Tasks
 
-### Gateway Commands in Hummingbot
-
-*Coming soon*
-
-!!! warning
-    Gateway commands in Hummingbot are currently being refactored as part of the Gateway v2.5+ modernization. For now, you may refer to [Setting up Gateway](./legacy/setup.md) in the Gateway Legacy docs.
-
 ### Changing Node Providers
 
+To change the RPC node provider for a blockchain network, you can either use Gateway commands or edit the configuration files directly.
 
+#### Using Gateway Commands
 
-To change the RPC node provider for a blockchain network:
+```
+>>> gateway config solana-mainnet-beta update
 
-1. Open the corresponding chain configuration file (e.g., `solana.yml`)
-2. Locate the `nodeURL` field under the desired network
-3. Replace the URL with your preferred node provider's URL
+Current configuration for solana-mainnet-beta:
+nodeURL: https://api.mainnet-beta.solana.com
+nativeCurrencySymbol: SOL
+defaultComputeUnits: 200000
+confirmRetryInterval: 0.5
+confirmRetryCount: 10
+basePriorityFeePct: 90
+minPriorityFeePerCU: 0.1
+
+Available configuration paths: nodeURL, nativeCurrencySymbol, defaultComputeUnits, confirmRetryInterval, confirmRetryCount, basePriorityFeePct, minPriorityFeePerCU
+
+Enter configuration path (or 'exit' to cancel): nodeURL
+Current value for 'nodeURL': https://api.mainnet-beta.solana.com
+Enter new value (or 'exit' to cancel): https://your-preferred-node-provider.com/your-api-key
+
+Successfully updated nodeURL
+Gateway will restart automatically for changes to take effect
+```
+
+#### Editing Configuration Files
+
+1. Navigate to the network configuration folder (e.g., `/conf/chains/solana/`)
+2. Open the specific network file (e.g., `mainnet-beta.yml`)
+3. Locate the `nodeURL` field and replace it with your preferred node provider's URL
 4. Save the file and restart Gateway
 
-Example:
+Example for Solana mainnet (`/conf/chains/solana/mainnet-beta.yml`):
 ```yaml
-networks:
-  mainnet-beta:
-    nodeURL: https://your-preferred-node-provider.com/your-api-key
-    # other settings...
+nodeURL: https://your-preferred-node-provider.com/your-api-key
+nativeCurrencySymbol: SOL
+
+# Default compute units for a transaction
+# This sets the compute unit limit for transactions when not specified by the user
+defaultComputeUnits: 200000
+
+# Confirmation polling interval in seconds
+# How often to check if a submitted transaction has been confirmed (inner retry loop)
+confirmRetryInterval: 0.5
+
+# Number of confirmation polling attempts
+# How many times to poll for confirmation before considering the transaction unconfirmed
+confirmRetryCount: 10
+
+# Floor percentile of recent priority fee samples used to estimate gasPrice for a transaction
+# Use the Nth percentile of recent priority fees as the base fee (90 = 90th percentile)
+basePriorityFeePct: 90
+
+# Minimum priority fee per compute unit in lamports
+# This sets the floor for priority fees to ensure transactions are processed (default: 0.1 lamports/CU)
+minPriorityFeePerCU: 0.1
+```
+
+Example for Ethereum mainnet (`/conf/chains/ethereum/mainnet.yml`):
+```yaml
+chainID: 1
+nodeURL: https://your-preferred-node-provider.com/your-api-key
+nativeCurrencySymbol: ETH
+minGasPrice: 0.1
 ```
 
 ### Adding Tokens
@@ -189,46 +277,124 @@ networks:
 !!! tip
     The new Gateway endpoints accept addresses for `baseToken` and `quoteToken` in addition to symbols, so you should be able to use addresses directly before adding their symbols into the network's token list.
 
-Gateway handles the mapping of symbols to the valid token addresses for each network using the [Token Lists](https://tokenlists.org/) standard, which is an open specification for organizing token metadata that helps users avoid scams and find legitimate tokens across different networks.
+Gateway uses standardized token lists organized by chain and network. Each network has its own token list file that contains metadata for all supported tokens on that network.
 
-To add new tokens to your configuration:
+#### Using Gateway Commands
 
-1. Navigate to the `/conf/lists` folder
-2. Open the appropriate list file that matches the `tokenListSource` in the chain config file (e.g., `solana.json` for Solana `mainnet-beta`)
-3. Add a new token entry following the existing format below
+```
+>>  gateway token HERMES update                                                                                                                                                   
+                                                                                                                                                                                     
+  Enter chain (e.g., ethereum, solana): solana                                                                                                                                       
+                                                                                                                                                                                     
+  Token 'HERMES' not found. Let's add it to solana (mainnet-beta).                                                                                                                   
+                                                                                                                                                                                     
+  Enter token information:                                                                                                                                                           
+                                                                                                                                                                                     
+  Symbol [HERMES]:                                                                                                                                                                   
+                                                                                                                                                                                     
+  Name: HermesWizard                                                                                                                                                                 
+                                                                                                                                                                                     
+  Contract address: 24R8j15RDq3VoeRaSDFXMvSw4W7RLLZLdpTwK8ynx777                                                                                                                     
+                                                                                                                                                                                     
+  Decimals [18]: 9                                                                                                                                                                   
+                                                                                                                                                                                     
+  Token to add/update:                                                                                                                                                               
+  {                                                                                                                                                                                  
+    "symbol": "HERMES",                                                                                                                                                              
+    "name": "HermesWizard",                                                                                                                                                          
+    "address": "24R8j15RDq3VoeRaSDFXMvSw4W7RLLZLdpTwK8ynx777",                                                                                                                       
+    "decimals": 9                                                                                                                                                                    
+  }                                                                                                                                                                                  
+                                                                                                                                                                                     
+  Add/update this token? (Yes/No) >>> Yes                                                                                                                                            
+                                                                                                                                                                                     
+  Adding/updating token...                                                                                                                                                           
+  ✓ Token successfully added/updated!                                                                                                                                                
+                                                                                                                                                                                     
+  Restarting Gateway for changes to take effect...                                                                                                                                   
+  ✓ Gateway restarted successfully                                                                                                                                                   
+                                                                                                                                                                                     
+  You can now use 'gateway token HERMES' to view the token information.
+```
+
+#### Editing Token Files
+
+1. Navigate to the `/conf/tokens/{chain}/` folder (e.g., `/conf/tokens/solana/`)
+2. Open the appropriate network file (e.g., `mainnet-beta.json` for Solana mainnet)
+3. Add a new token entry to the array following the existing format below
 4. Make sure that the resulting file is still valid JSON!
 5. Save the file and restart Gateway
 
 ```json
-  {
-    "chainId": 101,
-    "name": "ai16z",
-    "symbol": "AI16Z",
-    "address": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
-    "decimals": 9
-  },
+{
+  "chainId": 101,
+  "name": "ai16z",
+  "symbol": "AI16Z",
+  "address": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC",
+  "decimals": 9
+}
 ```
 
-See [Working with Tokens](./legacy/tokens/index.md) in the Gateway Legacy docs for more information.
+The token list structure follows the [Token Lists](https://tokenlists.org/) standard, which helps users avoid scams and find legitimate tokens across different networks.
 
 ### Adding Pools
 
-Each AMM and CLMM DEX may have different pools for the same trading pair, with varying parameters like fee tier and bin step. You can define addresses for various base-quote symbol pairs in the connector config file.
+Each AMM and CLMM DEX may have different pools for the same trading pair, with varying parameters like fee tier and bin step. Gateway now stores pool definitions in dedicated JSON files for each DEX connector.
 
-To add new liquidity pools to a DEX connector:
+#### Using Gateway Commands
 
-1. Open the connector configuration file (e.g., `raydium.yml`)
-2. Locate the `pools` section under the appropriate protocol type
-3. Add a new entry with the token pair as the key and the pool address as the value
-4. Save the file and restart Gateway
-
-Example:
-```yaml
-amm:
-  pools:
-    # existing pools...
-    WIF-SOL: 'EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx'
 ```
+>>>  gateway pool raydium/amm LIGHT-SOL update                                                                                                                                     
+                                                                                                                                                                                     
+  === Add Pool for LIGHT-SOL on raydium/amm ===                                                                                                                                      
+  Chain: solana                                                                                                                                                                      
+  Network: mainnet-beta                                                                                                                                                              
+                                                                                                                                                                                     
+  Pool 'LIGHT-SOL' not found. Let's add it to solana (mainnet-beta).                                                                                                                 
+                                                                                                                                                                                     
+  Enter pool information:                                                                                                                                                            
+                                                                                                                                                                                     
+  Pool contract address: 7YZEyZ3DuHQTmgmKwzuXMYG6SHD3sCWZ3mLkU7HuLrfC                                                                                                                
+                                                                                                                                                                                     
+  Pool to add:                                                                                                                                                                       
+  {                                                                                                                                                                                  
+    "address": "7YZEyZ3DuHQTmgmKwzuXMYG6SHD3sCWZ3mLkU7HuLrfC",                                                                                                                       
+    "baseSymbol": "LIGHT",                                                                                                                                                           
+    "quoteSymbol": "SOL",                                                                                                                                                            
+    "type": "amm"                                                                                                                                                                    
+  }                                                                                                                                                                                  
+                                                                                                                                                                                     
+  Add this pool? (Yes/No) >>> Yes                                                                                                                                                    
+                                                                                                                                                                                     
+  Adding pool...                                                                                                                                                                     
+  ✓ Pool successfully added!                                                                                                                                                         
+                                                                                                                                                                                     
+  Restarting Gateway for changes to take effect...                                                                                                                                   
+  ✓ Gateway restarted successfully                                                                                                                                                   
+                                                                                                                                                                                     
+  Pool has been added. You can view it with: gateway pool raydium/amm LIGHT-SOL
+```
+
+#### Editing Pool Files
+
+1. Navigate to the `/conf/pools/` folder
+2. Open the connector's pool file (e.g., `raydium.json`)
+3. Add a new pool entry to the array following the existing format
+4. Make sure that the resulting file is still valid JSON!
+5. Save the file and restart Gateway
+
+Example pool entry:
+```json
+{
+  "type": "amm",
+  "network": "mainnet-beta",
+  "baseSymbol": "WIF",
+  "quoteSymbol": "SOL",
+  "address": "EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx"
+}
+```
+
+For CLMM pools, use `"type": "clmm"` instead. The pool file structure allows you to specify different pools for different networks and trading types (AMM vs CLMM) within the same connector.
 
 ### Updating Configurations
 

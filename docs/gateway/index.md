@@ -1,37 +1,104 @@
+# Hummingbot Gateway
+
 ## What is Gateway?
 
-Hummingbot Gateway is open source API middleware that helps the Hummingbot client to connect to decentralized exchanges (DEX) on various blockchain networks. 
+Hummingbot Gateway is a Typescript-based API server that standardizes interactions with blockchain networks and decentralized exchanges (DEXs). It acts as a middleware layer, providing a unified interface for performing actions like checking balances, executing trades, and managing wallets across different protocols.
 
-A companion codebase to the Hummingbot, Gateway manages interfacing with DEX connectors and exposes standard REST API endpoints for trading and liquidity-related functionality on these DEXs, enabling Hummingbot to run strategies that operate across multiple CEX and DEXs.
+Gateway is a companion service to the Python-based [Hummingbot client](https://github.com/hummingbot/hummingbot), exposing standardized REST API endpoints for trading and liquidity-related functionality on DEXs. This enables Hummingbot to run strategies that operate across both centralized (CEX) and decentralized exchanges seamlessly.
 
-The [Gateway code repo](https://github.com/hummingbot/gateway) is open sourced under the Apache 2.0 license and updated using the same [release cycle](/release-notes) as the main Hummingbot client codebase.
+## In This Section
 
+- **[Installation & Setup](installation.md)**: Complete installation guide for source and Docker
+- **[Configuration](configuration.md)**: How to configure chains, connectors, and settings
+- **[Commands](commands.md)**: Comprehensive reference of all Gateway-related Hummingbot commands
+- **[Chains](chains.md)**: Detailed information about supported chains
+- **[DEX Connectors](connectors.md)**: Guide to all supported DEX in Gateway
+- **[Strategies & Scripts](strategies.md)**: Using Gateway with Hummingbot strategies
 
-## New vs Legacy
+## Key Features
 
-Gateway is currently undergoing a large multi-release codebase refactoring, approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). During this refactoring process, not all connectors are available in the new version, as they are being gradually migrated from the legacy architecture. 
+- **Standardized REST API**: Consistent endpoints for interacting with blockchains (Ethereum, Solana) and DEXs
+- **DEX SDK Integration**: Interfaces with TypeScript/JavaScript DEX SDKs to provide standardized endpoints across different protocols
+- **Connector Sub-Types**: Router (DEX aggregators), AMM (V2-style pools), and CLMM (V3-style concentrated liquidity)
+- **Modular Architecture**: Clear separation of concerns with distinct modules for chains, connectors, configuration, and wallet management
+- **Hardware Wallet Support**: Built-in support for hardware wallets and encrypted storage for regular wallets
+- **Extensible**: Easily extended with new chains and connectors
 
-We will maintain two versions of Gateway throughout this transition period to ensure users can continue using all supported connectors while the migration progresses. Both versions are compatible with the latest upgrades and strategies in the Hummingbot client.
+## Supported Chains and Networks
 
-- [New (v2.5+)](new/index.md): The latest version with flexible route schemas, supporting Swap, AMM, and CLMM connector types. This version is designed for future expansion.
+| Chain Architecture | Networks | Description |
+|-------|----------|-------------|
+| **Ethereum** | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains |
+| **Solana** | mainnet-beta, devnet | Solana and SVM-compatible chains |
 
-- [Legacy (v2.2)](legacy/index.md): The previous version that supports a wider range of chains and networks but with a more rigid architecture. This version will continue to be maintained while the refactor is in progress.
+## Supported DEXs
 
-## Supported Chains
+| Protocol | Chain | Router | AMM | CLMM | Description |
+|----------|-------|--------|-----|------|-------------|
+| **Jupiter** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
+| **Meteora** | Solana | ❌ | ❌ | ✅ | Dynamic Liquidity Market Maker (DLMM) |
+| **Raydium** | Solana | ❌ | ✅ | ✅ | Full-featured DEX with V2 AMM and V3 CLMM |
+| **Uniswap** | Ethereum/EVM | ✅ | ✅ | ✅ | Complete V2, V3, and Smart Order Router |
+| **0x** | Ethereum/EVM | ✅ | ❌ | ❌ | Professional DEX aggregator with RFQ system |
 
-Each DEX utilizes a chain connector that integrates a Layer 1 blockchain and their networks into Gateway, enabling wallet access, node RPC interactions, and other support needed by tje DEX.
+### Connector Schemas
 
-Chain support in Gateway is determined by the decentralized exchanges (DEX) that HBOT holders vote to be included in the Hummingbot codebase in quarterly [Exchange Connector Polls](/governance/polls) for each [Epoch](/governance/epochs). The main chains and networks where each DEX is deployed will be supported in subsequent releases of Hummingbot and Gateway.
+- **Router**: DEX aggregators that find optimal swap routes across multiple liquidity sources, maximizing execution quality by splitting trades across multiple pools and protocols
+- **AMM** (Automated Market Maker): Traditional V2-style constant product pools using the x*y=k formula, where liquidity is distributed uniformly across the entire price range, making it simpler but less capital efficient
+- **CLMM** (Concentrated Liquidity Market Maker): V3-style pools that allow liquidity providers to concentrate their capital within custom price ranges, dramatically improving capital efficiency and enabling better pricing for traders
 
-Legacy Gateway (v2.2 and before) supported a wide range of chains and their networks including Ethereum, Algorand, Avalanche, BNB Chain, Cosmos, Cronos, Ethereum Classic, Osmosis, Polygon, and Solana. However, its inflexible route architecture tight coupling with the Hummingbot client made it difficult to support more types of trading interactions.
+For detailed implementation guides and examples for each schema, see [DEX Connectors](connectors.md).
 
-The new version of Gateway (v2.5+) is more flexible and chain-agnostic. Initially, it supports only a few base chain architectures along with any network that is compatible with them, starting with networks based on the Solana and Ethereum-based virtual machines.
+## Installation
 
-See [Supported Chains](chains/index.md) the list of chains and their DEXs supported by Gateway.
+Gateway can be installed alongside [Hummingbot](https://github.com/hummingbot/hummingbot) to enable trading on AMM DEXs, or as a standalone API server. For detailed installation instructions, see [Installation & Setup](installation.md).
+
+When running Gateway in `DEV` mode, access the interactive Swagger API documentation at: <http://localhost:15888/docs>
+
+## Architecture
+
+Gateway follows a modular architecture with clear separation of concerns:
+
+```
+/src
+├── chains/               # Blockchain-specific implementations
+│   └── {chain}/         # Each blockchain (ethereum, solana, etc.)
+├── connectors/           # DEX-specific implementations
+│   ├── {dex}/           # Each DEX connector directory
+│   │   ├── router-routes/   # DEX aggregator operations
+│   │   ├── amm-routes/      # AMM pool operations
+│   │   └── clmm-routes/     # Concentrated liquidity operations
+├── services/             # Core services (config, logging, tokens)
+├── schemas/              # API request/response schemas
+├── templates/            # Base classes and interfaces for connectors
+├── tokens/               # Token lists and metadata
+├── pools/                # Liquidity pool configurations
+└── wallet/               # Wallet management
+```
+
+## Governance and Maintenance
+
+Like other connectors, Gateway DEX connectors require ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as well as improvements to the Hummingbot connector standard.
+
+Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](/bounties) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
+
+Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
+
+See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
+
+## Contributing
+
+Gateway is part of the open source Hummingbot project. Ways to contribute:
+
+- **Build new connectors**: See [DEX Connectors](/developers/gateway-connectors/) for implementation guide
+- **File issues**: Report bugs at [GitHub Issues](https://github.com/hummingbot/gateway/issues)
+- **Submit pull requests**: Contribute code at [GitHub](https://github.com/hummingbot/gateway/pulls)
+- **Edit documentation**: Improve docs at [GitHub](https://github.com/hummingbot/hummingbot-site/)
+- **Vote in polls**: Participate in [polls](https://snapshot.org/#/hbot.eth) to vote on which DEXs are supported
 
 ## History
 
-See the following blog posts from Hummingbot co-founder and original CTO Martin Kou for more information about Gateway's history, background, and intended developer experience:
+For more information about Gateway's history and architecture decisions, see:
 
 * [Hummingbot Gateway V2 Architecture - Part 1](/blog/hummingbot-gateway-architecture---part-1/)
 * [Hummingbot Gateway V2 Architecture - Part 2](/blog/hummingbot-gateway-architecture---part-2/)

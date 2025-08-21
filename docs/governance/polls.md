@@ -11,32 +11,29 @@ Therefore, Polls allow HBOT holders to allocate maintenance bandwidth in the for
 
 | Parameter                                       | Value              |
 |-------------------------------------------------|--------------------|
-| Connector Polls per Epoch                       | 3 (CLOB Spot, CLOB Perp, AMM)|
-| Bounty Allocation per Poll                      | 1,000,000 HBOT     |
-| Connectors Receiving Allocation                 | 4                  |
-| Bounty Allocation Cap                           | 800,000 HBOT       |
-| Connector Inclusion Threshold                   | 200,000 HBOT       |
+| Connector Polls per Epoch                       | 3 (CLOB CEX, CLOB DEX, Gateway DEX)|
+| Connector Inclusion Threshold                   | 400,000 HBOT       |
 
 
 ### Connector Polls
 
 Each quarterly [Epoch](epochs.md), HBOT voters vote on which connectors of each type should be included in the codebase, and how much HBOT maintenance bounty allocation should be assigned to each connector.
 
-* **CLOB Spot**: Integrations to spot order book-based markets on centralized exchanges (CEXs) and decentralized exchanges (DEXs)
-* **CLOB Perp**: Integrations to perpetual futures order book-based markets on centralized exchanges (CEXs) and decentralized exchanges (DEXs)
-* **AMM**: Integrations to automated market maker (AMM) and concentrated liquidity market maker (CLMM) decentralized exchanges (DEXs) and blockchain protocols, intermediated by the [Gateway](/gateway) middleware.
+* **CLOB CEX**: Integrations to centralized exchanges (CEXs) with order book-based spot and perpetual futures markets
+* **CLOB DEX**: Integrations to decentralized exchanges (DEXs) with order book-based spot and perpetual futures markets
+* **Gateway DEX**: Integrations to automated market maker (AMM) and concentrated liquidity market maker (CLMM) decentralized exchanges (DEXs) and blockchain protocols, intermediated by the [Gateway](/gateway) middleware.
 
-See [Connector Types](/exchanges/#connector-types) for more information about the types of connectors.
+See [Connectors](/connectors/) for more information about the types of connectors.
 
 ### Connector Pots
 
-Polls allocate a fixed pool of **1,000,000 HBOT** among the top exchanges for each Poll based on their pro-rata voting share. This per-exchange amount would be a public HBOT maintenance bounty allocation which the Foundation uses to fund bounties assigned to community developers for bug fixes and upgrades related to that exchange's Hummingbot connectors. 
+Polls allocate a fixed pool of 3,000,000 HBOT (1,000,000 HBOT per poll) among the top exchanges for each Poll based on their pro-rata voting share. This per-exchange amount would be a public HBOT maintenance bounty allocation which the Foundation uses to fund bounties assigned to community developers for bug fixes and upgrades related to that exchange's Hummingbot connectors. 
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
 ### Connector Inclusion Threshold
 
-In each Poll, a connector needs to receive at least **200,000 HBOT** in aggregate votes. Otherwise, the exchange's connectors will be removed from the Hummingbot codebase in the following monthly release.
+In each Poll, a connector needs to receive at least **400,000 HBOT** in aggregate votes. Otherwise, the exchange's connectors will be removed from the Hummingbot codebase in the following monthly release.
 
 ## Polls Process
 

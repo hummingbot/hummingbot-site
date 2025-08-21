@@ -5,6 +5,49 @@ There are two main ways to install Gateway:
 1. **Docker Installation** (Recommended for most users)
 2. **Source Installation** (For developers and advanced users)
 
+## Install with Docker
+
+This assumes that you want to use Gateway alongside Hummingbot to enable DEX trading. The Docker process enables seamless communication between the two services.
+
+1 - Navigate to your Hummingbot directory
+
+2 - Edit `docker-compose.yml` and uncomment the Gateway-related lines:
+```yaml
+  gateway:
+   restart: always
+   container_name: gateway
+   image: hummingbot/gateway:latest
+   ports:
+     - "15888:15888"
+   volumes:
+     - "./gateway-files/conf:/home/gateway/conf"
+     - "./gateway-files/logs:/home/gateway/logs"
+     - "./certs:/home/gateway/certs"
+   environment:
+     - GATEWAY_PASSPHRASE=admin
+     - DEV=true
+```
+
+3 - Start both services
+```bash
+docker compose up -d
+
+[+] Running 3/3
+ ✔ Network hummingbot_default  Created                                                                                                                                              0.0s 
+ ✔ Container hummingbot        Started                                                                                                                                              0.2s 
+ ✔ Container gateway           Started
+```
+
+4 - Attach to Hummingbot
+```
+docker attach hummingbot
+```
+
+After setting your password, you should see `Gateway: 🟢 ONLINE` in the upper right corner.
+
+!!! note
+    By default, Gateway runs in development mode (`DEV=true`) which uses HTTP for easier setup. For production environments requiring HTTPS, set `DEV=false` and ensure certificates are properly configured.
+
 ## Install from Source
 
 You can install Gateway on a standalone basis and then link it to Hummingbot manually. These instructions assume that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker. See [Installation](/installation) for how to install Hummingbot.
@@ -33,113 +76,93 @@ Afterwards, install pnpm:
 ```bash
 sudo npm install -g pnpm
 ```
-### Install and Setup Gateway v2.5
 
-1. Clone the `development` branch in the Gateway repo and navigate into the folder:
+### Install and Setup Gateway
+
+1. Clone the Gateway repo and navigate into the folder:
 ```bash
 # Clone repository
-git clone https://github.com/hummingbot/gateway.git -b development
+git clone https://github.com/hummingbot/gateway.git
 cd gateway
 ```
 
-1. Install and build Javascript dependencies defined in `package.json`:
+2. Install and build Javascript dependencies defined in `package.json`:
 ```bash
 pnpm install
 pnpm build
 ```
 
-### Generate Certificates
-
-Hummingbot and Gateway use SSL certificates for secure communication. These self-signed certificates create an encrypted connection between the Hummingbot client and Gateway, ensuring that:
-
-1. All data transmitted between Hummingbot and Gateway is encrypted
-2. The client can verify it's connecting to the legitimate Gateway instance
-3. Gateway can authenticate requests coming from authorized Hummingbot clients
-
-The certificate system uses a public/private key pair where:
-
-- The client and server each have their own certificate and private key
-- They exchange public certificates to establish trust
-- All subsequent communications are encrypted and authenticated
-
-This security layer is essential since Gateway handles sensitive operations like wallet management and trade execution on decentralized exchanges.
-
-To generate certificates, start your Hummingbot [client](/client). After entering your password, run `gateway generate-certs`:
-
-[![](./legacy/generate-certs.png)](./legacy/generate-certs.png)
-
-Enter a secure **passphrase**, and write it down. Hummingbot will generate self-signed certificates that a server can use to authenticate its connection with this client.
-
-Take note of the **certs_path** where they are stored. This is also stored as `certs_path` in the Hummingbot's `conf_client.yml`, the global configuration file in the `/conf/` directory.
-
-[![](./legacy/certs-path.png)](./legacy/certs-path.png)
-
 ### Run Setup Script
 
-The `gateway-setup.sh` script, located in the root Gateway directory, performs the following actions:
-
-* Copies the default Gateway [configuration](./configuration.md) files from `/src/templates` to `/conf/` folder
-* Copies the Hummingbot certificates into the `/certs/` folder.
+The `gateway-setup.sh` script, located in the root Gateway directory, copies the default Gateway [configuration](./configuration.md) files from `/src/templates` to `/conf/` folder.
 
 Run the script:
 ```bash
 pnpm run setup
 ```
 
-When prompted, enter **certs_path** from the prior step:
+The script will prompt you to select which configurations to update:
 
-```
-ℹ️ Confirm if this is correct:
+- `server.yml` - Gateway server configuration
+- `chains/` - Chain and network configurations
+- `connectors/` - DEX connector configurations
+- `tokens/` - Token lists for each chain/network
+- `pools/` - Pool lists for each DEX connector
 
-            Copy configs FROM: [/folder]/gateway/src/templates
-              Copy configs TO: [/folder]/gateway/conf
+For a fresh installation, select all options. The script will preserve any existing wallet configurations and `defaultWallet` settings.
 
-              Copy certs FROM: [/folder]/hummingbot/certs
-                Copy certs TO: [/folder]/gateway/certs
+### Optional: Generate Certificates
 
-Do you want to proceed? [Y/N] >>> 
-```
+!!! note
+    Certificate generation is optional. By default, Gateway runs in development mode (HTTP) which doesn't require certificates. You only need certificates if you want to run Gateway in production mode (HTTPS).
 
-Afterwards, you can start Gateway in **development** or **production** mode.
+If you want to enable HTTPS mode for secure communication:
 
-##  Install with Docker
+1. Start your Hummingbot [client](/client) and run `gateway generate-certs`
+2. Enter a secure passphrase when prompted
+3. Note the **certs_path** where certificates are stored
+4. When running `pnpm run setup`, choose to link certificates and provide the path
 
-*Coming soon.*
+To connect Hummingbot to Gateway running in HTTPS mode, set `gateway_use_ssl: true` in Hummingbot's `conf_client.yml`.
 
 ## Running Gateway
 
 ### Development vs Production Modes
 
-When installed from source, Gateway can be run in one of two modes:
+Gateway can run in one of two modes:
 
-!!! note
-    The Docker version of Gateway only runs in **Production (HTTPS)** mode since it is designed to be used alongside the Hummingbot client.
+**Development Mode (HTTP)** - Default
 
-**Development Mode (HTTP)**
-
-   - Started with `--dev` flag
+   - Started with `--dev` flag or by default
    - Exposes HTTP (unencrypted) REST endpoints
    - Interactive Swagger docs at <http://localhost:15888/docs>
    - Shows 🔴 indicator in logs
+   - Compatible with Hummingbot when `gateway_use_ssl: false` in `conf_client.yml`
 
-**Production Mode (HTTPS)**
+**Production Mode (HTTPS)** - Optional
 
    - Started without `--dev` flag
    - Exposes HTTPS (encrypted) REST endpoints
-   - Required for connecting with Hummingbot
+   - Requires SSL certificates
    - Shows 🟢 indicator in logs
+   - Compatible with Hummingbot when `gateway_use_ssl: true` in `conf_client.yml`
 
-Both modes require a passphrase for endpoints that handle wallet operations, but development mode allows unauthenticated access to read-only endpoints. 
+!!! note
+    HTTPS is no longer required to connect to Hummingbot. By default, both Gateway and Hummingbot are configured to use HTTP for easier setup. You can change the `gateway_use_ssl` setting in Hummingbot's `conf_client.yml` to switch between HTTP and HTTPS modes.
 
-### Development
+### Development Mode (Default)
 
-For development (HTTP mode), run:
+For development mode (HTTP), which is now the default and works with Hummingbot:
 ```bash
 pnpm start --passphrase=<PASSPHRASE> --dev
 ```
 
-While the passphrase is not needed for read-only routes, it is still needed for endpoints that require encrypting or decrypting wallets.
+Or simply:
+```bash
+pnpm start --passphrase=<PASSPHRASE>
+```
 
+The passphrase is required for endpoints that handle wallet operations.
 
 If the server has started successfully, you should see:
 ```bash
@@ -151,7 +174,7 @@ bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
 ██║   ██║██╔══██║   ██║   ██╔══╝  ██║███╗██║██╔══██║  ╚██╔╝  
 ╚██████╔╝██║  ██║   ██║   ███████╗╚███╔███╔╝██║  ██║   ██║   
  ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝
-2025-04-04 10:09:59 | info | 	⚡️ Gateway version 2.5.0 starting at http://localhost:15888
+2025-04-04 10:09:59 | info | 	⚡️ Gateway version 2.8.0 starting at http://localhost:15888
 2025-04-04 10:09:59 | info | 	Checking for processes using port 15888...
 2025-04-04 10:09:59 | info | 	No process found using port 15888
 2025-04-04 10:09:59 | info | 	🔴 Running in development mode with (unsafe!) HTTP endpoints
@@ -161,18 +184,16 @@ bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
 2025-04-04 10:09:59 | info | 	📓 Documentation available at http://localhost:15888/docs
 ```
 
-### Production
+### Production Mode (Optional)
 
-For production mode (HTTPS), which is required to connect to Hummingbot:
+For production mode (HTTPS), which requires SSL certificates:
 
-1. You must set a secure passphrase that will be used for authentication
-2. SSL certificates must be properly configured for secure communication
-3. The certificates need to be generated using the Hummingbot client (see "Generating Certificates" section below)
-4. Both Hummingbot and Gateway must use the same certificates for successful connection
+1. Ensure SSL certificates are properly configured (see "Optional: Generate Certificates" section above)
+2. Set `gateway_use_ssl: true` in Hummingbot's `conf_client.yml`
+3. Run Gateway without the `--dev` flag:
 
-See below for how to setting the passphrase and generate certificates. Afterwards, run:
 ```bash
-pnpm start --passphrase=<PASSPHRASE>
+pnpm start --passphrase=<PASSPHRASE> --prod
 ```
 
 If the server has started successfully, you should see:
@@ -185,7 +206,7 @@ bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
 ██║   ██║██╔══██║   ██║   ██╔══╝  ██║███╗██║██╔══██║  ╚██╔╝  
 ╚██████╔╝██║  ██║   ██║   ███████╗╚███╔███╔╝██║  ██║   ██║   
  ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝
-2025-04-04 10:12:32 | info | 	⚡️ Gateway version 2.5.0 starting at https://localhost:15888
+2025-04-04 10:12:32 | info | 	⚡️ Gateway version 2.8.0 starting at https://localhost:15888
 2025-04-04 10:12:32 | info | 	Checking for processes using port 15888...
 2025-04-04 10:12:32 | info | 	No process found using port 15888
 2025-04-04 10:12:32 | info | 	🟢 Running in secured mode with behind HTTPS endpoints
@@ -195,9 +216,17 @@ bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
 2025-04-04 10:12:33 | info | 	📓 Documentation available at https://localhost:15888/docs
 ```
 
-Go back to your Hummingbot client or restart it if you have exited. In the upper right corner, you should see **GATEWAY: ONLINE** if your Hummingbot client is connected to Gateway.
+### Connecting to Hummingbot
+
+Once Gateway is running, go back to your Hummingbot client or restart it if you have exited. In the upper right corner, you should see **GATEWAY: 🟢 ONLINE** if your Hummingbot client is successfully connected to Gateway.
 
 [![](./legacy/gateway-status.png)](./legacy/gateway-status.png)
+
+If you see **GATEWAY: OFFLINE**, check that:
+
+1. Gateway is running on port 15888
+2. The `gateway_use_ssl` setting in Hummingbot's `conf_client.yml` matches your Gateway mode (false for HTTP, true for HTTPS)
+3. If using HTTPS, certificates are properly configured in both Gateway and Hummingbot
 
 
 ## Interactive Swagger Docs

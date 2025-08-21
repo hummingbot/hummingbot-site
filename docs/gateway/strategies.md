@@ -1,29 +1,101 @@
-!!! note
-    This documentation is a work in progress and will be updated frequently as the Gateway connectors and strategies evolve. The examples shown here may change as new features are added or existing ones are modified.
+Gateway enables sophisticated trading strategies on decentralized exchanges through Hummingbot. This page lists available Gateway-compatible strategies/scripts along with commonly used code snippets.
 
-This page provides examples of Hummingbot strategies and scripts that utilize the [Gateway New](./new/index.md) connectors.
+## Available Scripts and Strategies
 
-## Swap schema
+The following table lists Gateway-compatible scripts and strategies available in the Hummingbot repository. All links point to the development branch where the latest versions are maintained.
 
-The [Swap schema](/gateway/schemas/#swap-schema) defines standardized endpoints for basic token swapping functionality. Connectors that implement this schema allow Hummingbot to query prices and execute trades on DEXs. The following strategies can utilize connectors that implement the Swap schema:
+| Name | Type | Description | Supported Schemas |
+|------|------|-------------|-------------------|
+| [AMM Data Feed Example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_data_feed_example.py) | Script | Fetches real-time price data and monitors pool reserves from AMM pools | Router, AMM, CLMM |
+| [AMM Trade Example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_trade_example.py) | Script | Executes token swaps on AMM and CLMM pools with configurable parameters | Router, AMM, CLMM |
+| [LP Manage Position](https://github.com/hummingbot/hummingbot/blob/development/scripts/lp_manage_position.py) | Script | Manages liquidity positions including adding, removing, and collecting fees | AMM, CLMM |
+| [AMM Arbitrage](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/strategy/amm_arb) | V1 Strategy | Arbitrage between CEX and DEX markets | Router, AMM, CLMMuter |
+| [Cross Exchange Market Making](https://github.com/hummingbot/hummingbot/tree/development/hummingbot/strategy/cross_exchange_market_making) | V1 Strategy | Market making with Gateway connector as taker market | Router, AMM, CLMM |
+| [Arbitrage Controller](https://github.com/hummingbot/hummingbot/blob/development/controllers/generic/arbitrage_controller.py) | V2 Controller | Creates ArbitrageExecutors between two markets | Router, AMM, CLMM |
+| [XEMM Controller](https://github.com/hummingbot/hummingbot/blob/development/controllers/generic/xemm_controller.py) | V2 Controller | Creates XEMMExecutors between two markets | Router, AMM, CLMM |
 
-| Strategy | Strategy Type | Notes |
-| -------- | ------------- | ----- |
-| [AMM Price Example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_price_example.py) | Script | Fetches current price from a Gateway connector |
-| [AMM Trade Example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_trade_example.py) | Script | Triggers a swap execution when prices reach a certain level |
-| [AMM Data Feed Example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_data_feed_example.py) | Script | Creates a price feed using a Gateway connector |
-| [Arbitrage Controller](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/arbitrage_controller.py) | V2 | Creates [ArbitrageExecutors](/v2-strategies/executors/arbitrage-executor/) between two markets |
-| [AMM Arbitrage](/strategies/amm-arbitrage/) | V1 | |
-| [Cross Exchange Market Making](/strategies/cross-exchange-market-making/) | V1 | | Gateway connector can be used as taker market
+## Code Snippets
 
-## AMM schema
+The following code snippets demonstrate common Gateway operations in Hummingbot scripts and strategies.
 
-The [AMM schema](/gateway/schemas/#amm-schema) defines standardized endpoints for managing liquidity positions on Automated Market Maker (AMM) DEXs like Raydium Standard and Uniswap V2 pools. Sample strategies demonstrating AMM functionality will be available soon.
+### Data Feed
 
-## CLMM schema
+```python
+amm_data_feed = AmmGatewayDataFeed(
+            connector="jupiter/router",
+            trading_pairs={"SOL-USDC","JUP-USDC"}
+            order_amount_in_base=Decimal("1.0")
+        )
+```
 
-The [CLMM schema](/gateway/schemas/#clmm-schema) defines standardized endpoints for managing concentrated liquidity positions on DEXs like Raydium Concentrated and Uniswap V3 pools. The following strategies can utilize connectors that implement the CLMM schema:
+### Connect Market
 
-| Strategy | Strategy Type | Notes |
-| -------- | ------------- | ----- |
-| [CLMM Manage Position](https://github.com/hummingbot/hummingbot/blob/development/scripts/clmm_manage_position.py) | Script | Demonstrates how to manage concentrated liquidity positions |
+```python
+@classmethod
+def init_markets(cls):
+        cls.markets = {"jupiter/router": {"SOL-USDC"}}
+
+def __init__(self, connectors: Dict[str, ConnectorBase]):
+        super().__init__(connectors)
+```
+
+### Get Price
+
+```python
+current_price = await self.connectors["jupiter/router"].get_quote_price(
+                    trading_pair="SOL-USDC",
+                    is_buy=True,
+                    amount=Decimal("1.0"),
+                )
+```
+
+### Get Balance
+```python
+connector = self.connectors["jupiter/router"]
+await connector.update_balances(on_interval=False)
+balance = connector.get_balance("SOL")
+```
+
+### Place Order
+
+```python
+connector = self.connectors["jupiter/router"]
+order_id = connector.place_order(
+                    is_buy=True,
+                    trading_pair="SOL-USDC",
+                    amount=Decimal("1.0"),
+                    price=current_price,
+                )
+```
+
+### Get LP Position Info
+
+```python
+position_info = await self.connectors["jupiter/router"].get_position_info(
+                    trading_pair="SOL-USDC",
+                    position_address="<position-address>"
+                )
+```
+
+### Add Liquidity
+
+```python
+order_id = self.connectors["meteora/clmm"].add_liquidity(
+                    trading_pair="SOL-USDC",
+                    price=current_price,
+                    upper_width_pct=10.0,
+                    lower_width_pct=10.0,
+                    base_token_amount=0.1,
+                    quote_token_amount=20,
+                )
+```
+
+### Remove Liquidity
+
+```python
+order_id = self.connectors["meteora/clmm"].remove_liquidity(
+                    trading_pair="SOL-USDC",
+                    position_address="<position-address>"
+                )
+```
+

@@ -20,7 +20,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 New Gateway connectors may be contributed by community members via [New Connector Proposals](/governance/proposals), which require a pull request with the connector code to the Hummingbot Gateway Github repo, along with a minimum HBOT balance along to create.
 
-If you're interested in contributing a new Gateway DEX connector, check out our [Adding a New Gateway DEX Connector](/gateway/new-connector/) guide. The guide uses the Raydium connectors as reference and walks through how to build your connector for compatibility with the Hummingbot client.
+If you're interested in contributing a new Gateway DEX connector, see the [DEX Connectors](/gateway/connectors#adding-custom-connectors) documentation which provides guidance on implementing the standardized trading types and creating compatible connectors.
 
 ## Current Gateway DEX Connectors
 
@@ -35,7 +35,6 @@ Here are the Gateway connectors in the codebase for the current [Epoch](/governa
 | [Meteora](./meteora.md) | `solana` | | ✓ | `clmm` | |
 | [Raydium](./raydium.md) | `solana` | | ✓ | `clmm`, `amm` | |
 | [Balancer](./balancer.md) | `ethereum` | ✓ |  | `amm` | |
-| [Carbon](./carbon.md) | `ethereum` | ✓ |  | `amm` | |
 | [Curve](./curve.md) | `ethereum` | ✓ |  | `amm` | |
 | [ETCSwap](./etcSwap.md) | `ethereum` | ✓ |  | `amm`, `amm_lp` | |
 | [Mad Meerkat](./mad-meerkat.md) | `cronos` | ✓ |  | `amm` | |
