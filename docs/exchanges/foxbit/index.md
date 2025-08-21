@@ -1,5 +1,3 @@
-# `foxbit`
-
 ## 🛠 Connector Info
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
