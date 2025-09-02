@@ -108,102 +108,27 @@ graph TB
     class API,BOTS hbStyle
 ```
 
-## Prerequisites
+## Getting Started
 
-Before using the Hummingbot MCP Server, you need:
+Ready to build AI trading agents with Hummingbot? Follow these steps:
 
-1. **Python 3.11+** installed on your system
-2. **Running Hummingbot API Server** - See [Hummingbot API Installation](/hummingbot-api/installation/)
-3. **Valid API credentials** for the Hummingbot API server
-4. **AI Assistant** supporting MCP (Claude CLI, Gemini CLI, etc.)
+1. **[Install the MCP Server](/mcp/installation/)** - Set up development or production environment
+2. **[Explore Available Tools](/mcp/tools/)** - Learn about trading and portfolio management capabilities  
+3. **Configure your AI assistant** - Connect Claude, Gemini, or other MCP-compatible AI
+4. **Start trading conversations** - Let AI manage your portfolio automatically
 
-## Installation
+## Quick Overview
 
-### Development Setup (using uv)
+The MCP server provides comprehensive trading capabilities through these tool categories:
 
-1. **Clone the repository**:
-```bash
-git clone https://github.com/hummingbot/mcp.git
-cd mcp
-```
+### 🏦 **Account & Portfolio Management**
+Monitor balances, track performance, and analyze portfolio allocation across all connected exchanges.
 
-2. **Install dependencies**:
-```bash
-uv sync
-```
+### 📊 **Order & Position Management** 
+Execute trades, manage orders, and control positions programmatically with AI oversight.
 
-3. **Configure environment**:
-```bash
-cp .env.example .env
-# Edit .env with your Hummingbot API credentials
-```
-
-4. **Run the server**:
-```bash
-uv run mcp
-```
-
-### Production Setup (using Docker)
-
-1. **Pull the official Docker image**:
-```bash
-docker pull hummingbot/mcp-server:latest
-```
-
-2. **Create environment configuration**:
-```bash
-# Create .env file with your configuration
-cat > .env << EOF
-HUMMINGBOT_API_URL=http://your-api-server:8000
-HUMMINGBOT_API_USERNAME=your-username
-HUMMINGBOT_API_PASSWORD=your-password
-EOF
-```
-
-3. **Run the container**:
-```bash
-docker run --env-file .env -p 3000:3000 hummingbot/mcp-server:latest
-```
-
-## Configuration
-
-Configure the MCP server by setting the following environment variables:
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `HUMMINGBOT_API_URL` | URL of your Hummingbot API server | `http://localhost:8000` |
-| `HUMMINGBOT_API_USERNAME` | API username | Required |
-| `HUMMINGBOT_API_PASSWORD` | API password | Required |
-| `MCP_SERVER_PORT` | Port for MCP server | `3000` |
-| `LOG_LEVEL` | Logging level | `INFO` |
-
-## Available Tools
-
-The MCP server exposes the following tools to AI assistants:
-
-### Account Tools
-- `get_accounts` - List all connected exchange accounts
-- `get_account_balance` - Get balance for specific account
-
-### Portfolio Tools  
-- `get_portfolio_balances` - View aggregated portfolio across all exchanges
-- `get_portfolio_performance` - Analyze portfolio performance metrics
-
-### Trading Tools
-- `place_order` - Execute buy/sell orders
-- `cancel_order` - Cancel existing orders
-- `get_open_orders` - View active orders
-- `get_order_history` - Review past orders
-
-### Position Tools
-- `get_positions` - View open positions
-- `close_position` - Close specific position
-- `get_position_history` - Review position history
-
-### Market Data Tools
-- `get_ticker` - Get current price data
-- `get_orderbook` - Access order book depth
-- `get_funding_rates` - Monitor perpetual funding rates
+### 📈 **Market Data & Analysis**
+Access real-time prices, funding rates, and order book data for informed decision making.
 
 ## Usage with AI Assistants
 
@@ -264,27 +189,6 @@ AI: Reports actions taken and updated portfolio status
 - **Trading Limits**: Set appropriate position sizes and risk limits in your strategies
 - **Monitoring**: Regularly monitor AI trading activity and set up alerts for unusual behavior
 
-## Troubleshooting
-
-### Common Issues
-
-1. **Connection Failed**
-   - Verify Hummingbot API server is running
-   - Check API credentials in .env file
-   - Confirm network connectivity
-
-2. **Authentication Error** 
-   - Verify username/password in configuration
-   - Check API server authentication settings
-
-3. **Tool Not Found**
-   - Ensure MCP server is properly configured in AI assistant
-   - Verify server is running and accessible
-
-### Debugging
-
-Enable debug logging by setting `LOG_LEVEL=DEBUG` in your environment configuration.
-
 ## Development
 
 ### Contributing
@@ -308,14 +212,3 @@ async def my_custom_tool(parameter: str) -> str:
     # Your implementation here
     return result
 ```
-
-## Related Resources
-
-- [Hummingbot API Documentation](/hummingbot-api/) - Core API server
-- [MCP Specification](https://spec.modelcontextprotocol.io/) - Official MCP documentation  
-- [Claude CLI](https://github.com/anthropics/claude-cli) - AI assistant supporting MCP
-- [YouTube Tutorial](https://www.youtube.com/watch?v=Q-wSWxx_zIk) - Build AI Trading Agents tutorial
-
----
-
-*The Hummingbot MCP Server represents the next evolution in AI-powered trading, enabling seamless integration between advanced language models and professional trading infrastructure.*

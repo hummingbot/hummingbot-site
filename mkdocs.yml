@@ -293,6 +293,8 @@ nav:
       - Quickstart: hummingbot-api/quickstart.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
+      - Installation: mcp/installation.md
+      - Tools Reference: mcp/tools.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
   - Exchanges:
