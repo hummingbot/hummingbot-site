@@ -7,87 +7,16 @@ hide:
   - feedback
 ---
 
-<div class="custom-metric">
-  <div class="metric-value">25.0B</div>
-  <div class="metric-label">Volume traded by Hummingbot users in past 1 year</div>
-</div>
+# Many Individuals and Institutions Run Hummingbot
 
-```vegalite
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Monthly USDT Volume",
-    "width": "container",
-    "height": 400,
-    "data": {
-      "values": [
-        {"date": "2024-07-15", "volume": 2131640444.2422123},
-        {"date": "2024-08-15", "volume": 2009532310.070123},
-        {"date": "2024-09-15", "volume": 1119785879.8091574},
-        {"date": "2024-10-15", "volume": 1312240203.1848197},
-        {"date": "2024-11-15", "volume": 2250000000},
-        {"date": "2024-12-15", "volume": 2980000000},
-        {"date": "2025-01-15", "volume": 2890000000},
-        {"date": "2025-02-15", "volume": 3030000000},
-        {"date": "2025-03-15", "volume": 2610000000},
-        {"date": "2025-04-15", "volume": 1590000000},
-        {"date": "2025-05-15", "volume": 1490000000},
-        {"date": "2025-06-15", "volume": 1590000000}
-      ]
-    },
-    "mark": {"type": "bar", "color": "#5FFFD7"},
-    "encoding": {
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "title": "Month",
-        "timeUnit": "yearmonth",
-        "axis": {
-          "format": "%b %Y",
-          "grid": false,
-          "labelFontSize": 12,
-          "titleFontSize": 16,
-          "titlePadding": 20,
-          "labelFont": "Satoshi",
-          "titleFont": "Satoshi"
-        }
-      },
-      "y": {
-        "field": "volume",
-        "type": "quantitative",
-        "title": "Reported Trading Volume ($ billions)",
-        "axis": {
-          "format": "~s",
-          "grid": false,
-          "labelFontSize": 12,
-          "titleFontSize": 16,
-          "titlePadding": 20,
-          "labelFont": "Satoshi",
-          "titleFont": "Satoshi",
-          "tickCount": 5
-        }
-      },
-      "tooltip": [
-        {"field": "date", "type": "temporal", "title": "Month", "timeUnit": "yearmonth", "format": "%b %Y"},
-        {"field": "volume", "type": "quantitative", "title": "Volume", "format": ",.0f"}
-      ]
-    },
-    "config": {
-      "background": null,
-      "view": {
-        "stroke": null
-      },
-      "font": "Satoshi",
-      "title": {
-        "font": "Satoshi"
-      }
-    }
-}
-```
-### See [Hummingbot Reported Volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) for a real-time dashboard of the volume reported by all Hummingbot instances, broken down by exchange.
+![Reported Volumes](/assets/img/reported-volumes-light.png#only-light)
+![Reported Volumes](/assets/img/reported-volumes-dark.png#only-dark)
+
+### See [Reporting](/reporting/) for a real-time dashboard of the volume reported by all Hummingbot instances, filterable by exchange and version.
 
 ---
 
-# Sponsored by Leading CEXs and DEXs
+# Sponsored by Leading Exchanges and Protocols
 
 <div class="exchange-grid">
   <div class="flex-item">
@@ -124,66 +53,47 @@ hide:
 
 ---
 
-# Build Powerful Strategies with the V2 Framework
-
-<div class="grid cards" markdown>
-
--   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
-
-    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
-
--   [![](/blog/using-hyperliquid-vaults-with-hummingbot/cover.png)](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
-
-    ### [Funding Rate Arbitrage on Hyperliquid](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
-
--   [![](/blog/coding-a-custom-v2-controller/cover.webp)](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
-
-    ### [Coding a Liquidation Sniper Strategy](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
-
-</div>
-
----
 # What can you do with Hummingbot?
 
 <div class="grid cards wide" markdown>
 
--   :material-format-paint:{ .lg .middle } __Craft Cutting-Edge Strategies__
+-   :material-format-paint:{ .lg .middle } __Run Professional Trading Strategies__
 
     ---
 
-    Design sophisticated market making, arbitrage, and directional strategies using the modular strategy framework
+    Users run or extend professional strategies such as market making, arbitrage, and directional trading using the modular strategy framework
 
     [:octicons-arrow-right-24: Strategy Docs](/strategies/)
 
--   :material-upload-network:{ .lg .middle } __Seamless Exchange Integration__
+-   :material-upload-network:{ .lg .middle } __Connect Your Exchange to Hummingbot__
 
     ---
 
-    Hummingbot establishes a direct WebSocket connection with many exchanges, including DEXs on L1/L2 blockchain networks.
+    Exchanges can integrate with Hummingbot's 40,000+ trading community through our bounty-driven connector development program.
 
-    [:octicons-arrow-right-24: Connector Docs](/exchanges/)
+    [:octicons-arrow-right-24: Connector Bounties](/bounties/)
 
--   :material-satellite-uplink:{ .lg .middle } __Backtest and Deploy with Ease__
-
-    ---
-
-    Backtest your strategies against historical data and deploy multiple instances with Dashboard, a web-based command center for your bots.
-
-    [:octicons-arrow-right-24: Get Certified](/dashboard/)
-
--   :material-cash:{ .lg .middle } __Contribute and Earn__
+-   :material-satellite-uplink:{ .lg .middle } __Manage and Deploy with Ease__
 
     ---
 
-    Earn rewards by using and contributing to Hummingbot! Earn trading rewards, developer bounties, and other rewards for supporting the Discord community.
+    Deploy and manage multiple bot instances using Dashboard, a graphical web-based interface that serves as your command center for all trading operations.
 
-    [:octicons-arrow-right-24: Earn Bounties](/community/rewards)
+    [:octicons-arrow-right-24: Dashboard Docs](/dashboard/)
+
+-   :material-robot:{ .lg .middle } __Build AI Trading Agents__
+
+    ---
+
+    Connect AI assistants like Claude and Gemini to Hummingbot using our MCP Server for automated trading, portfolio management, and market analysis.
+
+    [:octicons-arrow-right-24: MCP Server Docs](/mcp/)
 
 </div>
 
 ---
 
-# Who runs Hummingbot?
+# Who Runs Hummingbot?
 
 <div class="grid" markdown>
 
@@ -251,6 +161,38 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 <span class="author centered">Hyder</span>
 <span class="role centered">Prop Trader</span>
 { .testimonial }
+
+</div>
+
+---
+
+# Hummingbot ❤️ Academic Research
+
+<div style="text-align: center;">
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5066176" target="_blank">
+<img src="/assets/img/market-making-crypto.png" alt="Market Making in Crypto" style="max-width: 50%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+</a>
+</div>
+
+### Hummingbot Foundation collaborates with leading academic institutions like Cornell Financial Engineering and supports them in using the open source Hummingbot framework for data collection and research.
+
+---
+
+# Build Powerful V2 Strategies
+
+<div class="grid cards" markdown>
+
+-   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
+
+    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
+
+-   [![](/blog/using-hyperliquid-vaults-with-hummingbot/cover.png)](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
+
+    ### [Funding Rate Arbitrage on Hyperliquid](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
+
+-   [![](/blog/coding-a-custom-v2-controller/cover.webp)](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
+
+    ### [Coding a Liquidation Sniper Strategy](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
 
 </div>
 

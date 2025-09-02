@@ -1,39 +1,112 @@
-Hummingbot is a community-driven open source project that provides standardized exchange connectors and a strategy framework that enables the development of custom algorithmic trading strategies that can run on any compatible exchange. While the Foundation maintains the core Hummingbot framework and the reference connectors for each type, the project relies on community developers to build and maintain other connectors, along with other modules.
+# Connector Bounties
 
-## What are Bounties?
+## Overview
 
-The Foundation utilizes bounties to fund the maintenance and development of the Hummingbot open source codebase. Bounties are tasks with associated rewards that community developers can claim and complete to earn HBOT tokens. These bounties cover various aspects of the project, including bug fixes, new connectors, strategy development, documentation, and codebase improvements.
+Connector bounties enable community developers to build and maintain exchange connectors for Hummingbot through a flexible, transparent bounty system. The Hummingbot Foundation manages this process, connecting exchanges with skilled developers from our 40,000+ trading community.
 
-Bounties are categorized by type (Bug Fix, Connector, Custom Strategy, etc.) and have suggested pricing guidelines based on complexity and effort required. For example, a simple bug fix might be valued at $125-625, while developing a complex DEX CLOB Perpetual connector could earn up to $6,250. See [Pricing & Payments](./pricing.md) for detailed information on bounty valuations, fees, and payment methods.
+This documentation provides information for:
+- **Exchanges** looking to integrate with Hummingbot
+- **Developers** interested in earning bounties by building connectors
 
-Community developers can browse available bounties on the [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1), apply to work on them, and submit their completed work for review. Once approved and merged, developers receive the bounty payment in HBOT tokens. This system creates a sustainable ecosystem where community members are incentivized to contribute to the project's growth and maintenance.
+## How It Works
 
-If you're interested in contributing to Hummingbot by working on bounties, see [Lifecycle of a Bounty](./lifecycle.md) for a detailed walkthrough of the process from application to payment, and check out the [Bounty Contributors Guide](./contributors.md) for best practices.
+The bounty system creates a sustainable ecosystem where:
 
-## External Bounties
+1. **Exchanges** fund connector development and maintenance
+2. **Foundation** manages the bounty lifecycle and quality assurance
+3. **Developers** build and maintain connectors for competitive compensation
+4. **Community** gains access to more trading venues
 
-Using the same process, Hummingbot Foundation also manages bounties for external sponsors seeking to build and maintain their own exchange connectors. For more information, see:
+## For Exchanges
 
-If you are want to get a custom algorithmic strategy or Hummingbot connector built by a professional-grade developer, Hummingbot Foundation can help you navigate the entire development process. This includes:
+### Bounty Management Service
 
-- Posting the bounty on [Bounties Board](https://github.com/orgs/hummingbot/discussions/categories/bounties)
-- Assigning a qualified community developer and monitoring their progress
-- Reviewing the code to ensure the connector meets the acceptance criteria and other requirements
-- Performing automated and manual testing (quality assurance)
-- Paying the developer when the pull request is merged
+Get your exchange integrated with Hummingbot through our comprehensive bounty management service. Email us at <operations@hummingbot.org> or contact Foundation team members on [Hummingbot Discord](https://discord.gg/hummingbot) to learn more. Sign the [Bounty Escrow Agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e) and escrow the funds to formalize the engagement.
 
-To initiate the process, please post a create a new [Github Issue](https://github.com/hummingbot/hummingbot/issues/new/choose) and choose the **Bounty Request** template. You may also contact the Foundation team members on [Discord](https://discord.gg/hummingbot) to discuss your bounty.
+**Connector Development Includes:**
 
-## Bounties Board
+- Professional development by vetted community developers
+- Support for all standard connector types
+- Full testing and quality assurance
+- Integration into official Hummingbot codebase
 
-[Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1), a Kanban-style public Github project, is the source of truth for the status of all Hummingbot bounties, including both Foundation and community-created bounties.
+**1 Year of Maintenance and Governance:**
+
+- Bug fixes via bounty system
+- API update compatibility
+- Ongoing technical support
+- [New Connector Proposal](/governance/proposals/) governance support
+- Quarterly voting in [Polls](/governance/polls) to maintain connector in codebase
+
+**Marketing Benefits:**
+
+- Announcements on Hummingbot channels (15K+ Discord, 15K+ Twitter)
+- Connector documentation and guides (10K+ monthly website visitors)
+- Educational videos on Hummingbot YouTube (10K+ subscribers)
+
+### Why Choose Bounty Management?
+
+- **Professional**: Vetted developers with Foundation oversight
+- **Comprehensive**: Includes maintenance and governance
+- **Community Access**: Reach thousands of active traders
+- **Transparent**: Public development process on GitHub
+
+**Payment Wallets:**
+
+- **Ethereum**: `0x60D581aEa0644e74df60c7555e5166d32665d6b6`
+- **BSC**: `0xE517b826a26B439eCE92f3220628eC007049d915`  
+- **Solana**: `5bhQNYaDEwEqjcjsuRJRuGyqbchzcDtYK49e593Wuc8i`
+
+[View Bounty Lifecycle →](./lifecycle.md){: .md-button .md-button--primary }
+
+## For Developers
+
+Earn HBOT and USDC bounties for building new exchange integrations and resolving issues in existing connectors:
+
+- **Market-Rate Compensation**: Competitive bounty payments
+- **Flexible Work**: Choose bounties matching your skills and schedule
+- **Community Recognition**: Contribute to leading trading platform
+- **Skill Development**: Work with cutting-edge trading technology
+
+Become an expert in building and maintaining one or more connector types:
+
+- **CLOB CEX**: Centralized exchange spot trading connectors
+- **CLOB DEX**: Decentralized derivatives platforms  
+- **Gateway AMM**: Automated market makers and DeFi protocols
+
+See [Building CLOB Connectors](/developers/connectors) and [Building Gateway connectors](/developers/gateway-connectors/) for more information.
+
+### Bounty Workflow
+
+1. **Browse Open Bounties**: Check the [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1)
+2. **Apply**: Comment on GitHub issues to express interest
+3. **Get Assigned**: Foundation assigns bounties to qualified developers
+4. **Develop**: Complete the work according to specifications
+5. **Submit PR**: Create pull request for review
+6. **Get Paid**: Receive payment after merge
+
+- **Open**: Available for applications
+- **Assigned**: Developer working on bounty
+- **Submitted**: PR awaiting review
+- **Merged**: Code integrated into codebase
+- **Paid**: Compensation distributed
+
+[View Open Bounties →](https://github.com/orgs/hummingbot/projects/7/views/1){: .md-button .md-button--primary }
+[Contributors Guide →](./contributors.md){: .md-button }
+
+### Bounties Board
 
 ![bounty](./bounty-board.png)
 
-The columns in the board include:
+The [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) is the central hub for all connector bounty activity. It provides transparency into:
 
-- **Open**: Open bounties that contributors can apply to work on
-- **Assigned**: Issue has been assigned to a contributor, who is expected to submit a pull request resolving it
-- **Submitted**: A pull request resolving the issue has been submitted by the assigned contributor
-- **Merged**: Pull request has been merged to the `development` branch (or published publicly in the case of content)
-- **Paid**: Contributor has been paid and the bounty is considered done
+- Available bounties and their rewards
+- Active development progress
+- Completed work and payments
+- Developer assignments and performance
+
+## Learn More
+
+- [Bounty Lifecycle](./lifecycle.md) - Detailed process flow
+- [Contributors Guide](./contributors.md) - For developers
+- [FAQ](./faq.md) - Common questions

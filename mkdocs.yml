@@ -291,11 +291,15 @@ nav:
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
+    - Hummingbot MCP:
+      - Overview: mcp/index.md
+      - Installation: mcp/installation.md
+      - Tools Reference: mcp/tools.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
   - Exchanges:
     - Exchanges: exchanges/index.md
-    - Reported Volumes: reporting.md
+    - Reporting: reporting.md
     - 🔥 Binance: exchanges/binance/index.md
     - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Derive: exchanges/derive/index.md
@@ -333,15 +337,12 @@ nav:
     - TraderJoe: exchanges/gateway/traderjoe.md
     - Uniswap : exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
-  - Community:
-    - Community: community/index.md
-    - Discord Server: community/discord.md
-    - Reward Programs: community/rewards.md
-    - Certification: certification/index.md
-    - Certifications List: certification/list.md
-    - Botcamp ↗️: https://www.botcamp.xyz
-    - Botcamp FAQ: botcamp/faq.md
-    - Upcoming Events ↗️: https://lu.ma/hummingbot
+  - Bounties: 
+    - Connector Bounties: bounties/index.md
+    - Bounty Lifecycle: bounties/lifecycle.md
+    - Contributors Guide: bounties/contributors.md
+    - Bounties FAQ: bounties/faq.md
+    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
@@ -386,13 +387,15 @@ nav:
     - 1.1.0: release-notes/1.1.0.md
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
-  - Bounties: 
-    - Bounties: bounties/index.md
-    - Lifecycle of a Bounty: bounties/lifecycle.md
-    - Pricing & Payments: bounties/pricing.md
-    - Bounties FAQ: bounties/faq.md
-    - Contributors Guide: bounties/contributors.md
-    - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
+  - Community:
+    - Community: community/index.md
+    - Discord Server: community/discord.md
+    - Reward Programs: community/rewards.md
+    - Certification: certification/index.md
+    - Certifications List: certification/list.md
+    - Botcamp ↗️: https://www.botcamp.xyz
+    - Botcamp FAQ: botcamp/faq.md
+    - Upcoming Events ↗️: https://lu.ma/hummingbot
   - Foundation:
     - Foundation: about/index.md
     - Board of Directors: about/board.md

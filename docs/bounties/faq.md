@@ -1,42 +1,158 @@
-## What types of connector bounties will the Foundation handle?
+# Frequently Asked Questions
 
-Integrations to exchanges that meet the [connector standards](/exchanges/) for CLOB (Spot), CLOB (Perp), and AMM connectors.
+## For Exchanges
 
-## What types of strategies bounties will the Foundation handle?
+### What is Bounty Management?
 
-Custom algorithmic trading stratgies composed as a [Script](/scripts) or [Controller](/v2-strategies/controllers/index.md) - market making, arbitrage, directional, etc.
+Bounty Management is a $10,000 service where Hummingbot Foundation oversees the complete development and maintenance of your exchange connector through community bounties. This includes 1 year of governance and maintenance support.
 
-## Can multiple users fund a single bounty?
+### What connector types are included?
 
-Yes, multiple users can fund the same bounty, but they must coordinate between themselves to ensure that the Foundation receives the bounty amounts in a timely manner.
+The $10,000 fee covers ALL connector sub-types your exchange supports:
 
-## What does the preliminary check for new connectors entail?
+- **CLOB Exchanges**: Spot and/or Perpetual connectors
+- **AMM/DEX**: Router, AMM, and/or CLMM connectors via Gateway
 
-Before users fund a new connector bounty, the Foundation's engineering team performs a preliminary check of the exchange API documentation to ensure the exchange is compatible with Hummingbot's connector standards and has the necessary WebSocket/REST API endpoints to be integrated into Hummingbot.
+### How long does development take?
 
-## What tests do developer need to write?
+Total timeline is 4-8 weeks:
 
-- CLOB spot and perp connectors: unit tests
-- AMM connectors: curl tests, optional unit tests (in `test-bronze` folder)
+- **Assignment**: 1-2 weeks (finding and vetting qualified developers)
+- **Development**: 2 weeks (experienced developers can typically build a connector quickly using existing templates and documentation)
+- **Testing & QA**: 1-2 weeks  
+- **Release**: 1-2 weeks (inclusion in official monthly release)
 
-## How can a developer get assigned to a bounty?
+### What if the connector isn't delivered?
 
-Any bounty in the `OPEN` column on [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) is not assigned. Contributors can leave a comment on Github ticket issue, such as "I want to be assigned for this bounty. Here is my experience..."
+Full refund guarantee if:
 
-After a quorum of developers have indicated interest in the bounty, the Foundation will assign a contributor, taking into account their [certification](/certification) status, past bounty contribution experience, and Github track record.
+- No qualified developer assigned within 60 days
+- Developer fails to deliver within agreed timeframe
+- Connector fails QA testing after reasonable attempts
+- Foundation unable to reassign bounty within 90 days
 
-On the Github issue, we will added: "[Contributor] has been assigned to this bounty" and change the bounty status from `OPEN` to `ASSIGNED`
+### What's included in 1-year maintenance?
 
-## Can a developer be assigned to multiple bounties?
+- Bug identification and fixes via bounty system
+- API update compatibility
+- New Connector Proposal governance
+- Quarterly Snapshot voting participation
+- Marketing support and documentation
 
-No, a developer can only be assigned to one bounty at a time, unless they have alredy submitted a PR for the current bounty and the PR is under review.
+### How does payment work?
 
-## If a bounty takes too long or the work is unsatisfactory, can the developer be replaced?
+- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e)
+- Transfer $10,000 via crypto or wire
+- Foundation handles all developer payments
+- Annual renewal: $2,000/year (waived if fee share exceeds $200/month)
 
-After assignment, we expect the developer to continually inform the Foundation team on the progress. If the developer is unresponsive or inactive for 7+ days, the Foundation may unassign the developer and open the bounty for others.
+## For Developers
 
-In rare cases, the bounty contributor may discover that the issue is unresolvable. In these cases, the Foundation will append a `wont-fix` label to the issue and refund all or part of the bounty amount, depending on the extent of work completed.
+### What bounties are available?
 
-## What currency are bounties paid in?
+All bounties focus on exchange connector development:
 
-External bounties (funded by sponsors) are paid in the currency that the sponsor escrowed with the Foundation. Foundation bounties are paid in HBOT tokens, with the USD amount converted to HBOT based on the past 30-day average trading price.
+- **New connectors**: Complete exchange integrations for different connector types
+- **Bug fixes**: Resolve issues and edge cases in existing connectors
+- **API updates**: Maintain compatibility with exchange changes
+- **Feature enhancements**: Add new capabilities and improvements
+- **Documentation**: Create and update technical guides
+
+### How do I get assigned?
+
+1. Complete [Contributor Form](https://forms.gle/uArBWsSqCYHBWTcz9)
+2. Browse [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1)
+3. Comment on issue with experience and timeline
+4. Foundation evaluates and assigns
+
+### What are the requirements?
+
+**CLOB Connectors:**
+
+- Python programming skills
+- WebSocket/REST API experience
+- Trading systems understanding
+- Previous Hummingbot work preferred
+
+**AMM Connectors:**
+
+- TypeScript/JavaScript proficiency
+- Blockchain/Web3 development
+- Smart contract knowledge
+- DeFi protocol understanding
+
+### Can I work on multiple bounties?
+
+No, developers can only be assigned one active bounty at a time. Exception: if your PR is under review, you may be assigned a new bounty.
+
+### How does payment work?
+
+- **Timeline**: Within 30 days of PR merge
+- **Currency**: USDC/USDT for exchange-funded, HBOT for Foundation bounties
+- **Tracking**: Available in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing)
+
+### What if I can't complete a bounty?
+
+If you're unable to complete:
+
+- Communicate immediately with Foundation
+- Bounty may be reassigned to another developer
+- 7+ days unresponsive results in automatic reassignment
+
+## Technical Questions
+
+### What are connector standards?
+
+All connectors must implement standardized interfaces and functionality as outlined in our developer documentation:
+
+- [Building CLOB Connectors](/developers/connectors/) - Comprehensive guide for spot and perpetual connectors
+- [Perpetual Connector Checklist](/developers/connectors/perp-connector-checklist/) - Detailed requirements and API specifications
+- [Spot-Perpetual Arbitrage Strategy](/strategies/spot-perpetual-arbitrage/) - Example of connector integration with trading strategies
+
+### What testing is required?
+
+**CLOB connectors:**
+
+- Comprehensive unit tests
+- Integration tests with strategies
+- Performance benchmarks
+
+**AMM connectors:**
+
+- Curl tests for functionality
+- Optional unit tests
+- Gas optimization verification
+
+### How does code review work?
+
+Foundation reviews for:
+
+- Code quality and standards
+- Security best practices
+- Integration compatibility
+- Performance optimization
+- Documentation completeness
+
+### What support is provided?
+
+- Weekly progress check-ins
+- Technical guidance
+- Exchange contact facilitation
+- Testing environment access
+- Code review feedback
+
+## Governance Questions
+
+### How does NCP approval work?
+
+1. A New Connector Proposal is created
+2. 7 days Snapshot voting
+3. Requires >50% approval with sufficient HBOT quorum
+4. Foundation manages entire process for Bounty Management clients
+
+### What happens after governance approval?
+
+- Connector included in monthly release
+- Added to supported exchanges list
+- Documentation published
+- Marketing announcement

@@ -1,45 +1,164 @@
-As an open source project, Hummingbot thrives on the contributions of developers around the world. Through its bounty system, developers are incentivized to solve issues and implement enhancements that push the boundaries of the platform. If you are a developer interested in participating in a Hummingbot bounty, here are the steps you need to follow.
+# Developer Guide
 
-## Step 1: Fill Out the New Bounty Contributor Form
+This guide is for developers interested in earning bounties by building and maintaining exchange connectors for Hummingbot.
 
-Before you can participate in a Hummingbot bounty, all contributors need to fill out the [New Bounty Contributor Form](https://forms.gle/uArBWsSqCYHBWTcz9). This is necessary for Hummingbot Foundation to stay in compliance with financial regulations.
+## Getting Started
 
-After you submit the form and are approved, the Hummingbot Foundation team will grant you a **support-contributor** and/or **bounty-contributor** label in Discord.
+### Step 1: Complete Application
 
-## Step 2: Check the Bounties Board
+Fill out the [New Bounty Contributor Form](https://forms.gle/uArBWsSqCYHBWTcz9) for compliance. After approval, you'll receive:
 
-After you become a contributor, you can start browsing for available bounties. The [Bounties Board](https://github.com/orgs/hummingbot/projects/7) will contain a list of open issues or enhancements, along with the bounty amount associated with each task. Choose a task that aligns with your skills and interests.
+- **bounty-contributor** label in Discord
+- Access to contributor channels
+- Ability to apply for bounties
 
-## Step 3: Express Interest in a Bounty
+### Step 2: Browse Available Bounties
 
-After choosing a bounty, you need to notify the Hummingbot community that you want to work on it by commenting on the Github issue. If it's your first time contributing, please explain your development background and experience with Hummingbot.
+Visit the [Bounties Board](https://github.com/orgs/hummingbot/projects/7) to find connector bounties.
 
-This step is crucial as it prevents multiple developers from working on the same issue simultaneously.
+## Types of Bounties
 
-## Step 4: Get Assigned
+### New Connector Development
 
-Once you've expressed your interest, you will be assigned the bounty by the Hummingbot Foundation. This formalizes your commitment to working on the issue and you are now expected to submit a pull request (PR).
+Build complete exchange integrations:
 
-Throughout the process of working on the bounty, it's important to maintain regular communication with the Hummingbot Foundation team. This includes updating them on your progress, asking for help when needed, and discussing any potential changes or roadblocks.
+- **CLOB CEX**: Centralized exchange spot and perpetual connectors
+- **CLOB DEX**: Decentralized exchange spot and perpetual connectors
+- **Gateway AMM**: Automated market makers and DeFi protocols
 
-## Step 5: Submit the Pull Request
+### Maintenance Bounties
 
-Once you've completed your work, you need to submit a pull request (PR) to the Hummingbot repository. Ensure that you're pointing the PR to the Hummingbot `development` branch, and follow rest of the [Contribution Guidelines](/developers/contributions).
+Comprehensive connector maintenance including:
 
-Additionally, reference the Github bounty issue number in the PR description, which helps the team understand which issue the PR is addressing.
+- **Bug fixes**: Resolve issues and edge cases
+- **API updates**: Maintain compatibility with exchange changes
+- **Feature enhancements**: Add new functionality and improvements
+- **Documentation**: Update guides and technical documentation
 
-In your PR, you should clearly summarize the changes you've made and how they address the bounty issue. This will allow the Hummingbot Foundation team and the community to review and test your work effectively.
+## Application Process
 
-After you've checked all these points, submit your PR. This allows your work to be reviewed, critiqued, and ultimately integrated into the Hummingbot codebase if it meets the project's standards.
+### How to Apply
 
-## Step 6: Make Necessary Changes After Testing
+Comment on the GitHub issue with:
 
-After submitting your PR, it will be tested by the Quality Assurance (QA) team. If they find any issues or areas for improvement, they will provide feedback. You should be ready to make any necessary changes or adjustments to your work based on this feedback.
+- Your background and experience
+- Technical expertise (Python for CLOB, TypeScript for AMM)
+- Portfolio of previous work
+- Estimated completion timeline
+- Any clarification questions
 
-## Step 7: Get Paid
+### Selection Criteria
 
-Once your PR has been reviewed, tested, and approved, it will be merged into the `development` branch. After this happens, the bounty will be released. For external bounties, you will be paid in the currency that was escrowed by the sponsor. For Foundation bounties, you will be paid in HBOT tokens based on the past 30-day average trading price. Payments are distributed on a monthly basis! You can check the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the status of your bounty distribution.
+Foundation evaluates based on:
 
----
+- Technical competence
+- Past Hummingbot contributions
+- Communication skills
+- Realistic timelines
 
-Participating in a Hummingbot bounty is a fantastic way to contribute to a vibrant open-source project, improve your skills, and earn rewards. So, start today, and happy coding!
+## Development Requirements
+
+### CLOB Connectors
+
+- Order management (place, cancel, modify)
+- WebSocket market data streaming
+- Authentication and security
+- Error handling and reconnection
+- Rate limit management
+- Comprehensive testing
+
+### AMM Connectors
+
+- Smart contract integration
+- Wallet connectivity
+- Token/pool queries
+- Swap execution
+- Gas optimization
+- Transaction monitoring
+
+### Development Standards
+
+- Follow [Connector Development Guidelines](/developers/connectors/)
+- Use established coding patterns
+- Implement error handling
+- Add test coverage
+- Document your code
+- Provide regular updates
+
+## Submission Process
+
+### Pull Request Requirements
+
+Point PR to `development` branch with:
+
+- Reference to bounty issue number
+- Clear summary of changes
+- Evidence of testing
+- Updated documentation
+- Passing linting and style checks
+
+### Code Review
+
+Your PR will be reviewed for:
+
+- Functionality and acceptance criteria
+- Code quality and standards
+- Security and error handling
+- Performance optimization
+- Integration compatibility
+
+### QA Testing
+
+Foundation QA uses:
+
+- [Spot Connector QA Checklist](../developers/connectors/test.md)
+- [Perp Connector QA Checklist](../developers/connectors/test-perp.md)
+
+
+Testing covers:
+
+- Order lifecycle
+- Market data accuracy
+- Error handling
+- Performance metrics
+- Strategy compatibility
+
+## Payment Information
+
+### Payment Timeline
+
+- Processed within 30 days after PR merge
+- Monthly distribution cycles
+- Tracked in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing)
+
+### Payment Methods
+
+- **USDC/USDT**: Exchange-funded bounties
+- **HBOT tokens**: Foundation bounties (30-day average price)
+- **Processing fee**: 20% for stablecoins, 10% for HBOT
+
+## Support Resources
+
+### Documentation
+
+- [Connector Development Guide](/developers/connectors/)
+- [Spot Connector Checklist](../developers/connectors/spot-connector-checklist.md)
+- [Perp Connector Checklist](../developers/connectors/perp-connector-checklist.md)
+- [Testing Guidelines](../developers/connectors/test.md)
+
+### Community Support
+
+- **Discord**: #developer channel
+- **GitHub**: Discussions and issues
+- **Foundation team**: Direct support for assigned bounties
+
+## Important Notes
+
+- Developers can only work on one bounty at a time
+- Regular progress updates expected (7+ days inactive may result in reassignment)
+- Foundation provides weekly check-ins and technical guidance
+- All connectors must meet Hummingbot standards
+
+[View Open Bounties →](https://github.com/orgs/hummingbot/projects/7/views/1){: .md-button .md-button--primary }
+[Complete Contributor Form →](https://forms.gle/uArBWsSqCYHBWTcz9){: .md-button }
+[Join Discord →](https://discord.gg/hummingbot){: .md-button }
