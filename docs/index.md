@@ -53,7 +53,7 @@ hide:
 
 ---
 
-# What can you do with Hummingbot?
+# What Can You Build with Hummingbot?
 
 <div class="grid cards wide" markdown>
 
@@ -93,7 +93,7 @@ hide:
 
 ---
 
-# Who Runs Hummingbot?
+# Market Maker Testimonials
 
 <div class="grid" markdown>
 
@@ -166,7 +166,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 ---
 
-# Hummingbot ❤️ Academic Research
+# <div style="text-align: center;">Hummingbot ❤️ Academic Research</div>
 
 <div style="text-align: center;">
 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5066176" target="_blank">
@@ -174,7 +174,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 </a>
 </div>
 
-### Hummingbot Foundation collaborates with leading academic institutions like Cornell Financial Engineering and supports them in using the open source Hummingbot framework for data collection and research.
+### Hummingbot Foundation collaborates with leading academic institutions like Cornell University and supports them in using the open source Hummingbot framework for data collection and research.
 
 ---
 
