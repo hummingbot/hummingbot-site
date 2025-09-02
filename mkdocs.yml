@@ -291,11 +291,13 @@ nav:
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
+    - Hummingbot MCP:
+      - Overview: mcp/index.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
   - Exchanges:
     - Exchanges: exchanges/index.md
-    - Reported Volumes: reporting.md
+    - Reporting: reporting.md
     - 🔥 Binance: exchanges/binance/index.md
     - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Derive: exchanges/derive/index.md
@@ -387,11 +389,15 @@ nav:
     - 1.0.1: release-notes/1.0.1.md
     - 1.0.0: release-notes/1.0.0.md
   - Bounties: 
-    - Bounties: bounties/index.md
-    - Lifecycle of a Bounty: bounties/lifecycle.md
+    - Connector Bounties: bounties/index.md
+    - Why Connect: bounties/why-connect.md
+    - How to Connect: bounties/how-to-connect.md
+    - Bounty Process: bounties/process.md
     - Pricing & Payments: bounties/pricing.md
-    - Bounties FAQ: bounties/faq.md
+    - Bounty Lifecycle: bounties/lifecycle.md
     - Contributors Guide: bounties/contributors.md
+    - Bounties FAQ: bounties/faq.md
+    - Escrow Agreement: bounties/escrow-agreement.md
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Foundation:
     - Foundation: about/index.md

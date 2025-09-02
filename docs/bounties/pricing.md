@@ -1,69 +1,145 @@
-## Bounty Types
+# Connector Bounty Pricing
 
-Bounties can be classified into one of the following types:
+All bounties managed by Hummingbot Foundation are focused on building and maintaining exchange connectors.
 
-* 🐞 **Bug Fix**: Fix to a bug in the Hummingbot codebase
-* 🔗 **Connector**: A new exchange [connector](/exchanges/) that meets the current Hummingbot standard. Decentralized exchanges (DEX) are generally more complex and require more time to develop than centralized exchanges (CEX)
-* 📈 **Custom Strategy**: A new Hummingbot strategy - either a [Script](/scripts/) or [Controller](/v2-strategies/controllers)
-* 📊 **Candles Feed**: A new [candles feed](/v2-strategies/candles/) that fetches historical OHLCV data from an exchange
-* 📀 **Data Feed**: A new [data feed](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/data_feed) that fetches real-time market data from an exchange
-* 📝 **Connector Guide**: Documentation that explains how to get started with a new Hummingbot connector and running a strategy on it
-* 🔼 **Upgrade Connector**: Update to an existing connector in the Hummingbot codebase (due to API changes, Hummingbot standard updates, etc.)
+## Bounty Management Service
 
-In addition, bounties may be:
+### Complete Package - $10,000
+For exchanges seeking professional connector integration:
 
-* **Open Source**: merged into the official Hummingbot codebase, or 
-* **Closed Source**: delivered as a private fork to the Sponsor
+- **Development**: All connector types your exchange supports
+- **Testing**: Comprehensive QA and integration testing  
+- **Governance**: NCP creation and community approval
+- **Maintenance**: 1 year of bug fixes and API updates
+- **Marketing**: Announcements and documentation
 
-## Pricing Guidance
+### Annual Renewal - $2,000/year
+- Continued maintenance via bounty system
+- Ongoing governance support
+- **Waived** if affiliate revenue exceeds $200/month
 
-Below, we provide a suggested bounty amount for each task type. Note that these amounts are suggestions only, and are subject to change based on task complexity.
+## Individual Connector Bounties
 
-| Task                                | Price (USDT/USDC)| Price (Pay in HBOT) |
-|-------------------------------------|------------------|---------------------|
-| Bug Fix                             | $125-625         | $110-550            |
-| Candles Feed                        | $625             | $550                |
-| Data Feed                           | $750             | $660                |
-| Custom Strategy (Script/Controller) | from $625        | from $550           |
-| Connector - CEX CLOB Spot           | $3,750           | $3,300              |
-| Connector - CEX CLOB Perp           | $5,000           | $4,400              |
-| Connector - DEX CLOB Spot           | $5,000           | $4,400              |
-| Connector - DEX CLOB Perp           | $6,250           | $5,500              |
-| Connector - DEX AMM (EVM)           | $3,750           | $3,300              |
-| Connector - DEX AMM (non-EVM)       | $5,000           | $4,400              |
-| Connector Guide                     | $625             | $550                |
-| Upgrade Connector                   | $1,250           | $1,100              |
+Bounties posted to the [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) for developers:
 
-## Processing Fee
+### New Connector Development
+| Connector Type | Bounty Amount | Payment |
+|---------------|---------------|---------|
+| CLOB CEX Spot | $3,750 | Market rate |
+| CLOB CEX Perpetual | $5,000 | Market rate |
+| CLOB DEX Spot | $5,000 | Market rate |
+| CLOB DEX Perpetual | $6,250 | Market rate |
+| DEX AMM (EVM) | $3,750 | Market rate |
+| DEX AMM (non-EVM) | $5,000 | Market rate |
 
-Hummingbot Foundation charges Sponsors a fee for overseeing the entire lifecycle of a bounty: scoping the bounty, finding and assigning the bounty to a qualified contributor, performing engineering/QA review, and conducting payments. This saves you a lot of time and effort.
+### Connector Maintenance
+| Task Type | Bounty Range | Frequency |
+|-----------|--------------|-----------|
+| Bug fixes | $125-625 | As needed |
+| API updates | $500-1,250 | Quarterly |
+| New features | $400-800 | On demand |
+| Documentation | $100-250 | Per update |
+| Optimizations | $250-500 | Periodic |
 
-The standard processing fee is **20%**. If a sponsor submits a 1000 USDT total bounty, the fee is 200 USDT and the developer receives 800 USDT.
+## Payment Methods
 
-If the bounty is denominated in the [HBOT](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb) token, the fee is **10%**. If a sponsor submits a 100,000 HBOT total bounty, the fee is 10,000 HBOT and the developer receives 90,000 HBOT.
+### For Exchanges (Bounty Management)
+- **Cryptocurrency**: Direct transfer to Foundation wallets
+- **Traditional**: Escrow agreement with wire transfer
 
-## Payment Denominations
+### For Developers (Individual Bounties)
+- **HBOT Tokens**: 10% processing fee discount
+- **USDC/USDT**: Standard market rates
+- **Processing Fee**: 20% (10% for HBOT payments)
 
-### Foundation Bounties
-Foundation bounties are priced in USD but paid in HBOT tokens. The conversion rate is based on the 30-day average trading price of HBOT at the time of payment. This approach ensures that contributors receive fair compensation regardless of short-term price fluctuations in the token.
+## Payment Wallets
 
-!!! note "Balancing HBOT"
-    To ensure that HBOT retains economic value, the Foundation strives to balance emissions from HBOT bounty distributions with periodic buybacks. Users can track both token distributions and purchases in the [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) spreadsheet under the "HBOT Distributions" and "HBOT Purchases" tabs.
+### Bounty Management Funding
+- **Ethereum Mainnet**: `0x60D581aEa0644e74df60c7555e5166d32665d6b6`
+- **Binance Smart Chain**: `0xE517b826a26B439eCE92f3220628eC007049d915`
+- **Solana**: `5bhQNYaDEwEqjcjsuRJRuGyqbchzcDtYK49e593Wuc8i`
 
-### External Bounties
-External bounties are paid in the denomination (cryptocurrency) specified by the sponsor. The sponsor must place the full bounty amount in escrow with the Foundation before the bounty is posted. When the work is completed and approved, the Foundation distributes the payment to the contributor, minus a processing fee.
+### Developer Payments
+HBOT payments (ERC-20 only):
+- **Ethereum Mainnet**: `0x60D581aEa0644e74df60c7555e5166d32665d6b6`
 
-- Standard processing fee: 20% for payments in USDT/USDC and other cryptocurrencies
-- Reduced processing fee: 10% for payments made in HBOT tokens
+## Bounty Lifecycle Costs
 
-For detailed information about processing fees and payment wallets, please refer to the [Pricing Guidance](./pricing.md) page.
+### For Bounty Management Service
 
-## Bounty Wallets
+**Phase 1: Development** (4-6 weeks)
+- Developer assignment and oversight
+- Code review and quality assurance
+- Integration testing
 
-In order to fund the bounty, sponsors should send the total bounty amount to a designated Foundation wallet:
+**Phase 2: Governance** (2-3 weeks)  
+- New Connector Proposal creation
+- Community voting management
+- Release coordination
 
-* Ethereum Mainnet: [0x60D581aEa0644e74df60c7555e5166d32665d6b6](https://etherscan.io/address/0x60D581aEa0644e74df60c7555e5166d32665d6b6)
-* Binance Smart Chain: [0xE517b826a26B439eCE92f3220628eC007049d915](https://bscscan.com/address/0xE517b826a26B439eCE92f3220628eC007049d915)
-* Solana: [5bhQNYaDEwEqjcjsuRJRuGyqbchzcDtYK49e593Wuc8i](https://solscan.io/account/5bhQNYaDEwEqjcjsuRJRuGyqbchzcDtYK49e593Wuc8i)
+**Phase 3: Maintenance** (12 months)
+- Bug identification and bounty posting
+- API update coordination
+- Performance monitoring
+- Community support
 
-Since HBOT is an Ethereum ERC-20 token only, any HBOT-denominated bounties must be sent to the Ethereum Mainnet wallet.
+## Cost Comparison
+
+| Approach | Initial Cost | Year 1 Total | Maintenance |
+|----------|-------------|--------------|-------------|
+| **DIY** | $0 | Internal dev costs | Self-managed |
+| **Bounty Management** | $10,000 | $10,000 | Included |
+| **Sponsorship** | $50,000+ | $50,000+ | Premium support |
+
+## Value Proposition
+
+### $10,000 Bounty Management vs DIY
+- **No development hiring** required
+- **Professional oversight** included  
+- **Guaranteed delivery** or refund
+- **Community integration** managed
+- **Ongoing maintenance** covered
+
+### ROI Calculation
+With 100+ new traders generating $10M monthly volume:
+- Trading fees at 0.1% = $10,000/month
+- ROI payback in 1 month
+- 12x return in first year
+
+## Payment Terms
+
+### Bounty Management
+- **50% upfront**: Secures developer assignment
+- **50% on delivery**: Final payment on merger
+
+### Individual Bounties  
+- **100% on completion**: Paid when PR is merged
+- **30-day payment**: Standard processing time
+- **Escrow protected**: Funds secured until delivery
+
+## Refund Policy
+
+### Full Refund Conditions
+- No qualified developer assigned within 60 days
+- Developer fails to deliver within agreed timeframe  
+- Connector fails QA testing after remediation attempts
+- Foundation unable to reassign within 90 days
+
+### Partial Refunds
+- Not applicable - fixed pricing model
+- Either full delivery or full refund
+
+## Next Steps
+
+### For Exchanges
+Ready to start Bounty Management for your connector?
+
+[View Integration Options →](./how-to-connect.md){: .md-button .md-button--primary }
+[Review Process →](./process.md){: .md-button }
+[Sign Escrow Agreement →](./escrow-agreement.md){: .md-button }
+
+### For Developers
+Want to earn bounties building connectors?
+
+[Browse Open Bounties →](https://github.com/orgs/hummingbot/projects/7/views/1){: .md-button .md-button--primary }
+[Contributors Guide →](./contributors.md){: .md-button }

@@ -1,80 +1,193 @@
-## Exchange Types
+# Exchanges
 
-Hummingbot supports three types of exchange connectors:
+## What Exchanges Connect to Hummingbot?
 
-### CLOB CEX Connectors
-CLOB (Central Limit Order Book) connectors integrate into centralized exchanges' WebSocket APIs, enabling standardized order placement/cancellation and order book data fetching from the perspective of Hummingbot strategies. These connectors work with traditional centralized exchanges that utilize a central limit order book model.
+Hummingbot is open source software that helps you create and deploy crypto trading bots across 50+ exchanges. The project has **14.3k GitHub stars** and **3.9k forks**, representing one of the most active trading bot communities.
 
-### CLOB DEX Connectors  
-Decentralized exchanges that implement a central limit order book model on-chain, providing similar functionality to CEXs but with self-custody and on-chain settlement.
+### Supported Exchange Types
 
-### Gateway DEX Connectors
-Gateway connectors establish and maintain connections to automated market maker (AMM) DEXs and other protocols on various blockchain networks, interface with their JavaScript SDKs, and expose standard REST API endpoints for trading and liquidity provision-related actions on these DEXs.
+| Exchange Type | Description | Features | View Connectors |
+|---------------|-------------|----------|-----------------|
+| **🏛️ CLOB CEX** | **Central Limit Order Book**<br>Traditional centralized exchanges | • Spot & derivatives trading<br>• WebSocket streaming<br>• Sub-second execution | [30+ CEX Connectors →](/connectors/clob/) |
+| **📊 CLOB DEX** | **Decentralized Order Books**<br>On-chain exchanges with CEX-like functionality | • Self-custody trading<br>• On-chain settlement<br>• Transparent order matching | [DEX CLOB Connectors →](/connectors/clob/) |
+| **🔄 AMM DEX** | **Automated Market Makers**<br>DeFi protocols via Gateway integration | • Liquidity provision<br>• Multi-chain support<br>• Smart contract interaction | [20+ AMM Connectors →](/gateway/connectors/) |
 
-See [CLOB Connectors](/connectors/clob/) for a list of the current CLOB connectors in Hummingbot and [Gateway Connectors](/gateway/connectors/) for a list of supported Gateway DEX connectors.
+### Featured Exchanges
 
-## Exchange Inclusion
+**Major CEX**: Binance, Coinbase, OKX, Gate.io, KuCoin, Bybit  
+**Leading DEX**: Hyperliquid, dYdX, Uniswap, PancakeSwap, Raydium
 
-Hummingbot [connectors](/connectors) link its internal trading engine to different cryptocurrency exchanges via WebSocket and/or REST API. They standardize interactions with the idiosyncratic APIs offered by these platforms, for purposes such as gathering order book and blockchain data, as well as sending and cancelling transactions and orders.
+[View All Supported Exchanges →](/connectors/)
 
-Since each exchange connector requires ongoing maintenance and may conflict with other connectors, the primary goal of the Hummingbot Foundation governance process is to let HBOT holders decide which exchanges are supported by the official Hummingbot codebase.
+### Real-Time Usage Data
 
-HBOT holders may propose to add new exchanges to the Hummingbot codebase via [New Connector Proposals](/governance/proposals), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create. For existing connectors, quarterly [Exchange Connector Polls](/governance/polls) determines which exchanges should be included in future releases and allocates HBOT bounties toward the supported exchanges.
+See live trading activity across all exchanges via our public dashboard:
 
-## Exchange Sponsors
+![Reported Volumes](../assets/img/reported-volumes-light.png#only-light)
+![Reported Volumes](../assets/img/reported-volumes-dark.png#only-dark)
 
-Exchanges may opt to sponsor the work of the not-for-profit Hummingbot Foundation. For these partners, we engage community developers to build and maintain high-quality, standardized connectors, ensuring reliable integration with Hummingbot's extensive strategy library. Our dedicated team provides oversight over the build process, continuous quality assurance, and assistance with the governance process.
+The [Reported Volumes](/reporting/) dashboard shows real-time, aggregated trading data from Hummingbot instances worldwide, including both official releases and community forks. This transparent data helps exchanges understand actual usage patterns and trading volume.
 
-Sponsors benefit from exposure to Hummingbot's active trader community through our documentation, announcements, and communication channels. For more information about sponsorship opportunities, please contact Foundation team members via Discord or email <contact@hummingbot.org>.
+[View Live Dashboard →](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52)
 
-<div class="flex-container">
-  <div class="flex-item">
-    <img src="/assets/logos/xrpl-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/xrpl-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/dydx-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/dydx-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/derive-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/derive-light.png" class="light-logo"/>
-  </div>
-</div>
+---
 
-- [**XRPL**](https://xrpl.org/): The XRP Ledger (XRPL) is a decentralized, public blockchain that enables fast, low-cost transactions between accounts with both central limit order book (CLOB) and automatic market maker (AMM) exchange functionality built into the ledger. The XRPL connector in Hummingbot enables sophisticated trading and liquidity provision strategies on one of the longest-running blockchain platforms. [Connector Guide](/blog/hummingbot-unveils-new-connector-to-xrp-ledger-in-version-20/)
+## Why Exchanges Connect to Hummingbot
 
-- [**Hyperliquid**](https://hyperliquid.xyz/): Hyperliquid has partnered with Hummingbot Foundation to show the power of democratized, algorithmic access to markets. Hyperliquid is an order book spot and perpetual futures DEX that aims to do everything the best CEXs do, but on-chain. Their unique [Vaults](https://app.hyperliquid.xyz/vaults) allow users to run stake-able liquidity provision strategies. [Announcement](https://twitter.com/_hummingbot/status/1768690918557970846).
+### 📊 Access Global Liquidity Providers
 
-- [**Derive**](https://derive.fi/): Derive is a decentralized exchange aggregator that provides users with the best prices across multiple DEXs. By partnering with Hummingbot Foundation, Derive enables users to access deep liquidity across multiple DEXs and execute trades with minimal price impact. The Derive connector in Hummingbot allows users to implement sophisticated trading strategies while leveraging Derive's aggregation capabilities. [Connector Guide](/blog/posts/using-derive-with-hummingbot/).
+- **40,000+ active traders** using Hummingbot worldwide
+- **$2B+ monthly volume** across connected exchanges
+- **Professional market makers** providing 24/7 liquidity
+- **Sophisticated strategies** improving price discovery
 
-- [**dYdX**](https://dydx.exchange/): dYdX is a decentralized exchange (DEX) built on its own purpose-built blockchain that offers perpetual futures trading with deep liquidity and low latency. The dYdX v4 connector in Hummingbot enables users to implement sophisticated derivatives trading strategies while maintaining full custody of their assets. [Announcement](/blog/announcing-the-new-dydx-v4-connector-in-hummingbot/).
+### 🚀 Proven Growth Results
 
-To learn more about sponsorship opportunities & benefits, contact Hummingbot Foundation via Discord or email operations at hummingbot.org.
+Exchanges that integrate Hummingbot see significant growth:
 
-## Exchange Partners
+- **100-500 new traders** in the first month
+- **$10M-100M** additional monthly volume
+- **50% reduction** in average spreads
+- **3x increase** in order book depth
 
-We're thrilled to partner with leading industry exchanges to champion decentralized, community-driven market making through strategic fee-share agreements. Our exchange partners share a portion of user-generated fees with the Foundation, at zero cost to users. We are grateful for their support of open source algorithmic trading, where innovation, community, and opportunity collide.
+### 🛠️ Professional Trading Infrastructure
 
-When you sign up for an account with our partner exchanges using the Hummingbot referral link, you will receive a rebate on your trading fees!
+Give your users access to:
+- **20+ built-in strategies** (market making, arbitrage, etc.)
+- **Custom strategy development** framework
+- **Advanced order types** and execution logic
+- **Risk management** and portfolio tools
 
-| Exchange | Your Fee Rebate | Referral Link |
-|----------|----------------|---------------|
-| Binance  | 10%           | [Sign Up](https://accounts.binance.com/register?ref=CBWO4LU6) |
-| Gate.io  | 20%           | [Sign Up](https://www.gate.io/referral/invite/HBOTGATE_0_103) |
-| Kucoin   | 20%           | [Sign Up](https://www.kucoin.com/r/af/hummingbot) |
-| OKX      | 20%           | [Sign Up](https://www.okx.com/join/1931920269) |
-| HTX      | 20%           | [Sign Up](https://www.htx.com.pk/invite/en-us/1h?invite_code=re4w9223) |
-| Bitmart  | 10%           | [Sign Up](https://www.bitmart.com/invite/Hummingbot/en) |
+[Learn More About Benefits →](/connector-bounties/why-connect.md){: .md-button }
 
-## How exchange partnerships work
+---
 
-When you sign up for an account using our referral links, a portion of your trading fees are rebated back to Hummingbot Foundation. Every time you use Hummingbot to submit an order, it sends an HTTP request to the API of the exchange. The exchange then identifies that the HTTP request for the order is coming from a user who is using the Hummingbot codebase, it checks for the metadata in the HTTP request for a Hummingbot identifier. If the identifier is present, the exchange knows that the order is coming from a Hummingbot user and will rebate a portion of the trading fees to us.
- 
-## Why should you support us?
+## How to Connect Your Exchange to Hummingbot
 
-These partnerships help sustain the Hummingbot Foundation's mission to keep our platform open source and free, while providing you with trading fee rebates at no additional cost. It's a win-win arrangement that supports both our users and the continued development of Hummingbot.
+| Option | Cost | Timeline | Features | Learn More |
+|--------|------|----------|----------|------------|
+| **🔧 DIY Integration** | Free | 2-4 weeks | • Full control & customization<br>• Self-maintenance required | [Learn More →](/bounties/how-to-connect.md#option-1-diy-do-it-yourself) |
+| **💎 Connector Bounty** | $10,000 | 4-8 weeks | • Vetted developer builds connector<br>• 1 year maintenance included | [Get Started →](/bounties/) |
+| **🏆 Strategic Sponsorship** | $50,000+ | Custom | • Priority development<br>• Custom features & strategies<br>• Co-marketing campaigns | [Learn More →](/bounties/how-to-connect.md#option-3-strategic-sponsorship) |
+
+---
+
+## Current Exchange Partners
+
+### 🏆 Exchange Sponsors
+
+Leading exchanges partnering with Hummingbot Foundation for strategic integration:
+
+- **XRPL**: XRP Ledger CLOB & AMM integration
+- **Hyperliquid**: Onchain perpetuals leader  
+- **dYdX**: Decentralized derivatives exchange
+- **Derive**: DEX aggregator platform
+
+### 🤝 Fee-Share Partners
+
+Exchanges supporting open-source development through revenue sharing:
+
+| Exchange | User Benefit | Hummingbot Users | Monthly Volume |
+|----------|-------------|------------------|----------------|
+| **Binance** | 10% fee rebate | 10,000+ | $2B+ |
+| **Gate.io** | 20% fee rebate | 3,000+ | $500M+ |
+| **KuCoin** | 20% fee rebate | 2,500+ | $300M+ |
+| **OKX** | 20% fee rebate | 2,000+ | $400M+ |
+| **HTX** | 20% fee rebate | 1,500+ | $200M+ |
+| **Bitmart** | 10% fee rebate | 1,000+ | $100M+ |
+
+---
+
+## Exchange Governance
+
+Hummingbot uses a transparent, community-driven governance process:
+
+### New Connector Proposals (NCPs)
+- Exchanges can propose new connectors
+- Community votes on inclusion
+- Requires 200,000 HBOT stake
+- 7-day voting period
+
+### Quarterly Connector Polls
+- Community votes on which exchanges to support
+- Allocates maintenance resources
+- Ensures connector quality
+- Removes inactive connectors
+
+[Learn About Governance →](/governance/){: .md-button }
+
+---
+
+## Technical Integration
+
+### API Requirements
+
+**For CEX Connectors:**
+- REST API for orders and balances
+- WebSocket for market data streaming
+- Standard authentication (API key/secret)
+- Testnet/sandbox environment
+
+**For DEX Connectors:**
+- EVM-compatible or custom chain SDK
+- Web3 wallet integration
+- Smart contract ABIs
+- RPC endpoint access
+
+### Connector Standards
+
+All Hummingbot connectors implement:
+- Standardized order management
+- Unified balance tracking
+- Consistent error handling
+- Performance monitoring
+- Security best practices
+
+[View Technical Docs →](/developers/connectors/){: .md-button }
+
+---
+
+## Success Metrics
+
+### What Makes a Successful Integration?
+
+Track your connector's success through:
+
+**Adoption Metrics:**
+- Active users (target: 100+ in month 1)
+- Trading volume (target: $10M+ monthly)
+- Strategy diversity (5+ strategies used)
+- Geographic distribution
+
+**Technical Metrics:**
+- API reliability (99.9% uptime)
+- Order latency (<200ms average)
+- Market data accuracy
+- Error rate (<0.1%)
+
+**Community Metrics:**
+- Discord engagement
+- GitHub issues/PRs
+- Documentation views
+- Video tutorial views
+
+---
+
+## Get Started Today
+
+### For Exchanges Ready to Connect
+
+| Contact Method | Description | Link |
+|----------------|-------------|------|
+| **💬 Schedule a Call** | Discuss integration needs with our team | [Book Meeting](https://calendly.com/hummingbot/exchange-integration) |
+| **📧 Email Us** | Get detailed information about connector options | [Contact Team](mailto:partnerships@hummingbot.org) |
+| **💎 Start Bounty** | Begin the $10k connector bounty process | [Get Started](/bounties/) |
+
+### Quick Links
+
+- [Connector Bounties Overview](/bounties/)
+- [Why Connect to Hummingbot](/bounties/why-connect.md)
+- [Integration Options](/bounties/how-to-connect.md)
+- [Technical Documentation](/developers/connectors/)
+- [Join Discord Community](https://discord.gg/hummingbot)
+
