@@ -69,9 +69,9 @@ hide:
 
     ---
 
-    Hummingbot establishes a direct WebSocket connection with many exchanges, including DEXs on L1/L2 blockchain networks.
+    Exchanges can integrate with Hummingbot's 40,000+ trading community through our bounty-driven connector development program.
 
-    [:octicons-arrow-right-24: Connector Docs](/connectors/)
+    [:octicons-arrow-right-24: Connector Bounties](/bounties/)
 
 -   :material-satellite-uplink:{ .lg .middle } __Manage and Deploy with Ease__
 
@@ -169,16 +169,16 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 # Hummingbot ❤️ Academic Research
 
 <div style="text-align: center;">
-<img src="/assets/img/market-making-crypto.png" alt="Market Making in Crypto" style="max-width: 50%; height: auto;">
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5066176" target="_blank">
+<img src="/assets/img/market-making-crypto.png" alt="Market Making in Crypto" style="max-width: 50%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+</a>
 </div>
 
-### Hummingbot Foundation collaborates with leading academic institutions like Cornell and supports them in using Hummingbot for data collection and research purposes.
-
-[:octicons-link-external-16: Read the Cornell Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5066176){ .md-button .md-button--primary target="_blank" }
+### Hummingbot Foundation collaborates with leading academic institutions like Cornell Financial Engineering and supports them in using the open source Hummingbot framework for data collection and research.
 
 ---
 
-# Build Powerful Strategies with the V2 Framework
+# Build Powerful V2 Strategies
 
 <div class="grid cards" markdown>
 

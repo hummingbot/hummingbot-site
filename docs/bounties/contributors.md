@@ -1,94 +1,74 @@
-# Connector Bounty Contributors
+# Developer Guide
 
-Developers can earn market-rate compensation building and maintaining exchange connectors for Hummingbot. All connector bounties are focused on integrating exchanges with the Hummingbot trading platform.
+This guide is for developers interested in earning bounties by building and maintaining exchange connectors for Hummingbot.
 
-## What Are Connector Bounties?
+## Getting Started
 
-Connector bounties are tasks posted to the [Bounties Board](https://github.com/orgs/hummingbot/projects/7) for:
-- **New connector development**: Build complete exchange integrations
-- **Connector maintenance**: Fix bugs and implement updates
-- **Feature enhancements**: Add new capabilities to existing connectors
-- **Documentation**: Create guides for connector usage
+### Step 1: Complete Application
 
-All bounties are funded either by:
-- **Exchanges** through the Bounty Management service ($10,000 packages)
-- **Foundation** for community-requested improvements
+Fill out the [New Bounty Contributor Form](https://forms.gle/uArBWsSqCYHBWTcz9) for compliance. After approval, you'll receive:
 
-## Step 1: Complete Contributor Application
-
-Before participating in connector bounties, fill out the [New Bounty Contributor Form](https://forms.gle/uArBWsSqCYHBWTcz9). This ensures compliance with financial regulations.
-
-After approval, you'll receive:
 - **bounty-contributor** label in Discord
-- Access to contributor-only channels
+- Access to contributor channels
 - Ability to apply for bounties
 
-## Step 2: Browse Available Connector Bounties
+### Step 2: Browse Available Bounties
 
-Visit the [Bounties Board](https://github.com/orgs/hummingbot/projects/7) to find available connector bounties. Each bounty includes:
+Visit the [Bounties Board](https://github.com/orgs/hummingbot/projects/7) to find connector bounties.
 
-### Bounty Information
-- **Exchange name** and type (CEX/DEX)
-- **Connector type** (CLOB Spot/Perp, AMM, etc.)
-- **Technical requirements**
-- **Acceptance criteria**
-- **Bounty amount** (market rate)
-- **Expected timeline**
+## Types of Bounties
 
-### Typical Connector Bounties
-- **CLOB CEX Spot**: $3,750
-- **CLOB CEX Perpetual**: $5,000  
-- **CLOB DEX Spot**: $5,000
-- **CLOB DEX Perpetual**: $6,250
-- **AMM Connector**: $3,750-5,000
-- **Bug fixes**: $125-625
-- **API updates**: $500-1,250
+### New Connector Development
 
-## Step 3: Apply for a Bounty
+Build complete exchange integrations:
 
-To apply for a connector bounty, comment on the GitHub issue with:
+- **CLOB CEX**: Centralized exchange spot and perpetual connectors
+- **CLOB DEX**: Decentralized exchange spot and perpetual connectors
+- **Gateway AMM**: Automated market makers and DeFi protocols
 
-### Required Information
-- **Your background**: Experience with similar connectors
-- **Technical expertise**: Python (CLOB) or TypeScript (AMM)
-- **Portfolio**: Links to previous Hummingbot contributions
-- **Timeline**: Estimated completion date
-- **Questions**: Any clarifications needed
+### Maintenance Bounties
 
-### What Foundation Looks For
-- Previous Hummingbot connector experience
-- Understanding of exchange APIs
-- WebSocket/REST API development skills
-- Clean coding practices
-- Reliable communication
+Comprehensive connector maintenance including:
 
-## Step 4: Get Assigned
+- **Bug fixes**: Resolve issues and edge cases
+- **API updates**: Maintain compatibility with exchange changes
+- **Feature enhancements**: Add new functionality and improvements
+- **Documentation**: Update guides and technical documentation
 
-Foundation evaluates applications based on:
-- **Technical competence**: Ability to deliver quality code
-- **Past contributions**: Track record with Hummingbot
-- **Communication**: Responsiveness and clarity
-- **Timeline**: Realistic delivery estimates
+## Application Process
 
-Once assigned, you'll receive:
-- Access to bounty-specific Discord channel
-- Technical documentation and resources
-- Direct contact with Foundation team
-- Clear acceptance criteria
+### How to Apply
 
-## Step 5: Develop the Connector
+Comment on the GitHub issue with:
 
-### Development Requirements
+- Your background and experience
+- Technical expertise (Python for CLOB, TypeScript for AMM)
+- Portfolio of previous work
+- Estimated completion timeline
+- Any clarification questions
 
-**For CLOB Connectors:**
-- Implement order management (place, cancel, modify)
+### Selection Criteria
+
+Foundation evaluates based on:
+
+- Technical competence
+- Past Hummingbot contributions
+- Communication skills
+- Realistic timelines
+
+## Development Requirements
+
+### CLOB Connectors
+
+- Order management (place, cancel, modify)
 - WebSocket market data streaming
 - Authentication and security
 - Error handling and reconnection
 - Rate limit management
 - Comprehensive testing
 
-**For AMM Connectors:**
+### AMM Connectors
+
 - Smart contract integration
 - Wallet connectivity
 - Token/pool queries
@@ -96,120 +76,88 @@ Once assigned, you'll receive:
 - Gas optimization
 - Transaction monitoring
 
-### Development Best Practices
+### Development Standards
+
 - Follow [Connector Development Guidelines](/developers/connectors/)
 - Use established coding patterns
-- Implement comprehensive error handling
-- Add thorough test coverage
-- Document your code clearly
-- Regular progress updates
+- Implement error handling
+- Add test coverage
+- Document your code
+- Provide regular updates
 
-### Foundation Support
-- Weekly check-ins via Discord
-- Technical guidance and code review
-- API documentation assistance
-- Testing environment access
-- Issue resolution support
+## Submission Process
 
-## Step 6: Submit Pull Request
+### Pull Request Requirements
 
-### PR Requirements
-Point your PR to the `development` branch and include:
-- **Reference**: Bounty issue number in description
-- **Summary**: Clear explanation of changes made
-- **Testing**: Evidence of thorough testing
-- **Documentation**: Updated guides and examples
-- **Code quality**: Passes all linting and style checks
+Point PR to `development` branch with:
 
-### Code Review Process
+- Reference to bounty issue number
+- Clear summary of changes
+- Evidence of testing
+- Updated documentation
+- Passing linting and style checks
+
+### Code Review
+
 Your PR will be reviewed for:
-- **Functionality**: Meets acceptance criteria
-- **Code quality**: Follows Hummingbot standards
-- **Security**: Proper authentication and error handling
-- **Performance**: Efficient order execution and data handling
-- **Integration**: Works with existing Hummingbot strategies
 
-## Step 7: QA Testing
+- Functionality and acceptance criteria
+- Code quality and standards
+- Security and error handling
+- Performance optimization
+- Integration compatibility
 
-Foundation QA team will test your connector using:
+### QA Testing
+
+Foundation QA uses:
+
 - [Spot Connector QA Checklist](../developers/connectors/test.md)
 - [Perp Connector QA Checklist](../developers/connectors/test-perp.md)
 
-### Testing Areas
-- **Order lifecycle**: Place, fill, cancel orders
-- **Market data**: Price feeds and order book accuracy
-- **Error handling**: Network issues and API errors
-- **Performance**: Latency and resource usage
-- **Integration**: Compatibility with trading strategies
 
-If issues are found, you'll receive specific feedback and be expected to implement fixes promptly.
+Testing covers:
 
-## Step 8: Payment Processing
+- Order lifecycle
+- Market data accuracy
+- Error handling
+- Performance metrics
+- Strategy compatibility
+
+## Payment Information
 
 ### Payment Timeline
-- **After PR merge**: Payment processed within 30 days
-- **Monthly payouts**: Distributed on monthly basis
-- **Payment tracking**: Available in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing)
+
+- Processed within 30 days after PR merge
+- Monthly distribution cycles
+- Tracked in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing)
 
 ### Payment Methods
-- **USDC/USDT**: For exchange-funded bounties
-- **HBOT tokens**: For Foundation bounties (30-day average price)
-- **Processing fee**: 20% for USDC/USDT, 10% for HBOT
 
-### Payment Requirements
-- Completed contributor form
-- Merged PR to development branch
-- Passed QA testing
-- Valid payment information
+- **USDC/USDT**: Exchange-funded bounties
+- **HBOT tokens**: Foundation bounties (30-day average price)
+- **Processing fee**: 20% for stablecoins, 10% for HBOT
 
-## Ongoing Opportunities
-
-### Maintenance Bounties
-After building a connector, you may be assigned:
-- **Bug fixes**: Issues reported by users
-- **API updates**: Compatibility with exchange changes
-- **Feature enhancements**: New functionality requests
-- **Performance optimization**: Speed and efficiency improvements
-
-### Career Development
-Successful connector developers often:
-- Become trusted maintainers of multiple exchanges
-- Lead larger integration projects
-- Join Foundation as contractor contributors
-- Build relationships with exchange partnerships
-
-## Technical Resources
+## Support Resources
 
 ### Documentation
+
 - [Connector Development Guide](/developers/connectors/)
 - [Spot Connector Checklist](../developers/connectors/spot-connector-checklist.md)
 - [Perp Connector Checklist](../developers/connectors/perp-connector-checklist.md)
 - [Testing Guidelines](../developers/connectors/test.md)
 
 ### Community Support
-- **Discord**: #developer channel for technical questions
-- **GitHub**: Discussions for development feedback
+
+- **Discord**: #developer channel
+- **GitHub**: Discussions and issues
 - **Foundation team**: Direct support for assigned bounties
-- **Peer developers**: Connector contributor community
 
-## Success Tips
+## Important Notes
 
-### For New Contributors
-- Start with simpler CEX spot connectors
-- Study existing connector implementations
-- Ask questions early and often
-- Test thoroughly on testnet first
-- Maintain regular communication
-
-### For Experienced Developers
-- Consider complex DEX integrations
-- Lead connector upgrade projects
-- Mentor new contributors
-- Contribute to technical standards
-
-## Getting Started
-
-Ready to earn bounties building exchange connectors?
+- Developers can only work on one bounty at a time
+- Regular progress updates expected (7+ days inactive may result in reassignment)
+- Foundation provides weekly check-ins and technical guidance
+- All connectors must meet Hummingbot standards
 
 [View Open Bounties →](https://github.com/orgs/hummingbot/projects/7/views/1){: .md-button .md-button--primary }
 [Complete Contributor Form →](https://forms.gle/uArBWsSqCYHBWTcz9){: .md-button }
