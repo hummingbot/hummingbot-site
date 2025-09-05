@@ -36,9 +36,13 @@ Before installing the Hummingbot MCP Server, ensure you have:
 | `HUMMINGBOT_API_USERNAME` | API username | `admin` |
 | `HUMMINGBOT_API_PASSWORD` | API password | `password` |
 
+!!! Important
+     If you have Hummingbot API running locally, you might need to set the `HUMMINGBOT_API_URL` to `http://host.docker.internal:8000` instead of `http://localhost:8000` so that the Docker container can access your local API server 
 
-**Note: If you have Hummingbot API running locally, you might need to set the API_URL to `http://host.docker.internal:8000` instead of `http://localhost:8000`**
 
+After entering your username and password, make sure to click the checkbox at the end of the row to save your changes in the Docker Desktop UI.
+
+![alt text](save.png)
 
 ### Connect an MCP Client
 
