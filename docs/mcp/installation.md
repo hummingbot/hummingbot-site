@@ -10,90 +10,103 @@ Before installing the Hummingbot MCP Server, ensure you have:
 2. **Running Hummingbot API Server** - See [Hummingbot API Installation](/hummingbot-api/installation/)
 3. **Valid API credentials** for the Hummingbot API server
 4. **AI Assistant** supporting MCP (Claude CLI, Gemini CLI, etc.)
+5. **Docker Desktop** installed 
 
-## Development Setup
 
-### Using uv (Recommended)
+## Docker MCP Catalog
 
-The fastest way to get started for development:
+- Open Docker Desktop and go to "MCP Toolkit" > "Catalog."
 
-1. **Clone the repository**:
-```bash
-git clone https://github.com/hummingbot/mcp.git
-cd mcp
-```
+- Browse or search for the Hummingbot MCP server
 
-2. **Install dependencies**:
-```bash
-uv sync
-```
+![toolkit](toolkit.png)
 
-3. **Configure environment**:
-```bash
-cp .env.example .env
-# Edit .env with your Hummingbot API credentials
-```
+- Click the plus icon to install the Hummingbot MCP server 
 
-4. **Run the server**:
-```bash
-uv run mcp
-```
+- Navigate to the "Configuration" tab for the Hummingbot MCP server
 
-### Using pip
+![alt text](config.png)
 
-If you prefer using pip:
 
-1. **Clone the repository**:
-```bash
-git clone https://github.com/hummingbot/mcp.git
-cd mcp
-```
-
-2. **Create virtual environment**:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**:
-```bash
-pip install -r requirements.txt
-```
-
-4. **Configure environment**:
-```bash
-cp .env.example .env
-# Edit .env file with your configuration
-```
-
-5. **Run the server**:
-```bash
-python -m mcp
-```
-
-## Install via Source or Docker
-
-### Source Installation
-
-Install from source code for development and customization:
-
-Follow the [Development Setup](#development-setup) instructions above.
-
-### Docker Installation
-
-*Docker installation guide coming soon.*
-
-## Configuration
-
-Configure the MCP server using environment variables:
-
-### Required Configuration
+- Set the following **environment variables** for the MCP server to reach your Hummingbot API:
 
 | Variable | Description | Example |
-|----------|-------------|---------|
-| `HUMMINGBOT_API_URL` | URL of your Hummingbot API server | `http://localhost:8000` |
+|---|---|---|
+| `HUMMINGBOT_API_URL` | URL of the Hummingbot API endpoint | `http://localhost:8000` |
 | `HUMMINGBOT_API_USERNAME` | API username | `admin` |
-| `HUMMINGBOT_API_PASSWORD` | API password | `password123` |
+| `HUMMINGBOT_API_PASSWORD` | API password | `password` |
+
+
+**Note: If you have Hummingbot API running locally, you might need to set the API_URL to `http://host.docker.internal:8000` instead of `http://localhost:8000`**
+
+
+### Connect an MCP Client
+
+- After installing and configuring the Hummmingbot MCP server, you can connect them to MCP clients
+
+- In Docker Desktop, select **MCP Toolkit** and select the **Clients** tab
+
+![alt text](client.png)
+
+- Find the client you wish to connect (e.g., Claude Desktop, Cursor, VS Code).
+
+- Click "Connect" to establish the connection. 
+
+**For other clients not listed,  you can connect them by specifying the following command:**
+
+```
+docker mcp gateway run
+
+```
+
+**OR** manually add the Docker MCP Toolkit as a server
+
+```
+"mcp": {
+  "servers": {
+    "MCP_DOCKER": {
+      "command": "docker",
+      "args": [
+        "mcp",
+        "gateway",
+        "run"
+      ],
+      "type": "stdio"
+    }
+  }
+}
+```
+
+
+## JSON MCP integration
+
+- If you don't have Docker Desktop installed (Linux CLI only), then you can manually add the Hummingbot MCP manually by adding the below to the `mcp.json` file of your AI Assistant. 
+
+- Note that you'll still need to have `docker` working as well. 
+
+
+```json
+{
+  "mcpServers": {
+    "hummingbot-mcp-docker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--network", "host",
+        "-e", "HUMMINGBOT_API_URL=http://localhost:8000",
+        "-e", "HUMMINGBOT_USERNAME=admin",
+        "-e", "HUMMINGBOT_PASSWORD=admin",
+        "hummingbot/hummingbot-mcp:latest"
+      ],
+      "description": "Hummingbot MCP server for interacting with Hummingbot API"
+    }
+  }
+}
+```
+
+
 
 ### Optional Configuration
 
@@ -104,86 +117,6 @@ Configure the MCP server using environment variables:
 | `REQUEST_TIMEOUT` | API request timeout in seconds | `30` |
 | `MAX_RETRIES` | Maximum API retry attempts | `3` |
 
-### Configuration File
-
-Create a `.env` file in your project directory:
-
-```bash
-# Hummingbot API Configuration
-HUMMINGBOT_API_URL=http://localhost:8000
-HUMMINGBOT_API_USERNAME=admin
-HUMMINGBOT_API_PASSWORD=your-secure-password
-
-# MCP Server Configuration
-MCP_SERVER_PORT=3000
-LOG_LEVEL=INFO
-
-# Optional Settings
-REQUEST_TIMEOUT=30
-MAX_RETRIES=3
-```
-
-## AI Assistant Integration
-
-### Claude CLI Setup
-
-1. **Install Claude CLI**:
-```bash
-npm install -g @anthropic-ai/claude-cli
-```
-
-2. **Configure MCP server** in your Claude configuration (`~/.claude/config.json`):
-```json
-{
-  "mcpServers": {
-    "hummingbot": {
-      "command": "uv",
-      "args": ["run", "mcp"],
-      "cwd": "/path/to/hummingbot-mcp"
-    }
-  }
-}
-```
-
-3. **Start Claude with MCP**:
-```bash
-claude --mcp
-```
-
-### Alternative Configuration Methods
-
-**Using Python directly**:
-```json
-{
-  "mcpServers": {
-    "hummingbot": {
-      "command": "python",
-      "args": ["-m", "mcp"],
-      "cwd": "/path/to/hummingbot-mcp",
-      "env": {
-        "HUMMINGBOT_API_URL": "http://localhost:8000"
-      }
-    }
-  }
-}
-```
-
-**Using Docker**:
-*Configuration example coming soon.*
-
-## Verification
-
-### Test MCP Server
-
-1. **Check server health**:
-```bash
-curl http://localhost:3000/health
-```
-
-2. **Verify API connection**:
-```bash
-curl -X POST http://localhost:3000/test-connection
-```
 
 ### Test with AI Assistant
 
@@ -196,30 +129,6 @@ AI: "I'll check your portfolio balances using the Hummingbot MCP server..."
 
 ## Troubleshooting
 
-### Common Installation Issues
-
-**1. Python Version Error**
-```bash
-# Check Python version
-python --version
-# Ensure you have Python 3.11+
-```
-
-**2. Missing Dependencies**
-```bash
-# Reinstall dependencies
-uv sync --force
-# or
-pip install -r requirements.txt --force-reinstall
-```
-
-**3. Permission Issues**
-```bash
-# Fix permissions on Unix systems
-sudo chown -R $USER:$USER /path/to/mcp
-chmod +x scripts/*
-```
-
 ### Connection Issues
 
 **1. API Server Not Reachable**
@@ -228,33 +137,10 @@ chmod +x scripts/*
 - Test network connectivity
 
 **2. Authentication Failures**
-- Verify username/password in .env file
+- Verify username / password provided or in `.env` file
 - Check API server authentication settings
 - Ensure credentials are properly formatted
 
-**3. Port Conflicts**
-```bash
-# Check if port 3000 is in use
-lsof -i :3000
-# Use alternative port
-export MCP_SERVER_PORT=3001
-```
-
-### Docker Issues
-
-*Docker troubleshooting guide coming soon.*
-
-## Updating
-
-### Development Environment
-```bash
-cd mcp
-git pull origin main
-uv sync
-```
-
-### Docker Environment
-*Docker update instructions coming soon.*
 
 ## Next Steps
 
