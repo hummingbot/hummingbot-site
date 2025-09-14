@@ -37,13 +37,14 @@ These official HBOT data sites provide information about the HBOT token. No othe
 
 ## HBOT Markets
 
-These official HBOT markets enable trading and liquidity provision for the HBOT token. No other markets are officially supported or endorsed by the Hummingbot Foundation.
+The HBOT token can be traded across multiple decentralized and centralized exchanges where users can buy, sell, and provide liquidity. The Hummingbot Foundation maintains LP positions and runs Hummingbot instances in these markets to ensure efficient price discovery and minimize slippage for traders.
 
-| Exchange | Type | Pair | Link |
+| Exchange | Type | Market | Link |
 |----------|------|------|------|
-| [Uniswap](/exchanges/gateway/uniswap) | V2 AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
-| [Uniswap](/exchanges/gateway/uniswap) | V3 AMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
-| [Bitrue](/exchanges/bitrue) | Spot CEX | HBOT/USDT | <https://www.bitrue.com/trade/hbot_usdt> |
+| [Uniswap](/exchanges/gateway/uniswap) | CLMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
+| [Uniswap](/exchanges/gateway/uniswap) | CLMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0x47541D068e1289297e1ef66277507116A26DE860> |
+| [Uniswap](/exchanges/gateway/uniswap) | AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
+| [Bitrue](/exchanges/bitrue) | CLOB Spot CEX | HBOT/USDT | <https://www.bitrue.com/trade/hbot_usdt> |
 
 ## Voting with HBOT
 
