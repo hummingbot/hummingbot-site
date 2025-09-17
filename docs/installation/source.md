@@ -18,7 +18,7 @@ This method is recommended for developers and users who need to modify Hummingbo
     #### ✅ Install Anaconda (Recommended for macOS)
 
     !!! note
-        On non-Linux systems, we recommend using the full **Anaconda** distribution instead of lighter alternatives like **Miniconda**. **Anaconda** includes a broader set of preinstalled packages, which helps prevent dependency conflicts and installation errors commonly encountered with Miniconda.
+        We recommend using the full **Anaconda** distribution instead of lighter alternatives like **Miniconda**. **Anaconda** includes a broader set of preinstalled packages, which helps prevent dependency conflicts and installation errors commonly encountered with Miniconda.
     
     You can install Anaconda using either the graphical interface or the command line.
 
@@ -50,13 +50,13 @@ This method is recommended for developers and users who need to modify Hummingbo
 
     #### ✅ Install/Update System Packages
     ```bash
-    sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
+    sudo apt update && sudo apt upgrade -y && sudo apt install -y gcc build-essential
     ```
 
-    #### ✅ Install Miniconda
+    #### ✅ Install Anaconda
     ```bash
-    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    bash Miniconda3-latest-Linux-x86_64.sh
+    curl -O https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh
+    bash ~/Anaconda3-2025.06-0-Linux-x86_64.sh
     ```
 
 === "Windows"
