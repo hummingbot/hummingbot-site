@@ -11,4 +11,3 @@ Advanced features allow you to further control and customize Hummingbot:
 - [Paper Trading](./paper-trade)
 - [Rate Limits Share Pct](./rate-limits-share-pct)
 - [Rate Oracle](/strategy-configs/rate-oracle/)
-- [Telegram Integration](./telegram)

@@ -33,4 +33,3 @@ Advanced features in Hummingbot for quant traders and developers.
 - [Override Fees](/global-configs/override-fees)
 - [Rate Limits Share Pct](/global-configs/rate-limits-share-pct)
 - [Rate Oracle](/strategy-configs/rate-oracle/)
-- [Telegram Integration](/global-configs/telegram)
