@@ -53,6 +53,64 @@ hide:
 
 ---
 
+# Hummingbot Github Repositories
+
+### The Hummingbot framework contains multiple repositories that help you with various aspects of algorithmic trading. All code is open sourced under the Apache 2.0 license and supported by a vibrant global community of developers and traders.
+
+<div class="grid cards wide" markdown>
+
+-   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
+
+    ---
+
+    A robust trading engine featuring connectors to numerous exchanges and a wide array of strategy frameworks.
+
+    [:octicons-arrow-right-24: Documentation](/client/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot)
+
+-   :octicons-mark-github-16:{ .lg .middle } __Gateway__
+
+    ---
+
+    Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
+
+    [:octicons-arrow-right-24: Documentation](/gateway/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway)
+
+-   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
+
+    ---
+
+    A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
+
+    [:octicons-arrow-right-24: Documentation](/hummingbot-api/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
+
+-   :octicons-mark-github-16:{ .lg .middle } __Hummingbot MCP__
+
+    ---
+
+    Model Context Protocol server that enables AI assistants like Claude and Gemini to utilize the Hummingbot API.
+
+    [:octicons-arrow-right-24: Documentation](/mcp/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
+
+-   :octicons-mark-github-16:{ .lg .middle } __Dashboard__
+
+    ---
+
+    Web-based graphical interface for the Hummingbot API that lets you configure and deploy multiple Hummingbot instances.
+
+    [:octicons-arrow-right-24: Documentation](/dashboard/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/dashboard)
+
+-   :octicons-mark-github-16:{ .lg .middle } __Quants Lab__
+
+    ---
+
+    Python framework for quantitative trading research with data collection, backtesting, and automated task scheduling.
+
+    [:octicons-arrow-right-24: Documentation](/quants-lab/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/quants-lab)
+
+</div>
+
+---
+
 # What Can You Build with Hummingbot?
 
 <div class="grid cards wide" markdown>
@@ -77,17 +135,17 @@ hide:
 
     ---
 
-    Deploy and manage multiple bot instances using Dashboard, a graphical web-based interface that serves as your command center for all trading operations.
+    Deploy and manage multiple bot instances easily using Hummingbot API, a command center for all your algo trading operations.
 
-    [:octicons-arrow-right-24: Dashboard Docs](/dashboard/)
+    [:octicons-arrow-right-24: Hummingbot API Docs](/hummingbot-api/)
 
--   :material-robot:{ .lg .middle } __Build AI Trading Agents__
+-   :material-flask:{ .lg .middle } __Fetch Market Data and Backtest__
 
     ---
 
-    Connect AI assistants like Claude and Gemini to Hummingbot using our MCP Server for automated trading, portfolio management, and market analysis.
+    Use Quants Lab for quantitative trading research, data collection, backtesting, and automated task scheduling.
 
-    [:octicons-arrow-right-24: MCP Server Docs](/mcp/)
+    [:octicons-arrow-right-24: Quants Lab Docs](/quants-lab/)
 
 </div>
 

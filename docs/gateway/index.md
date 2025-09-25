@@ -1,5 +1,3 @@
-# Hummingbot Gateway
-
 ## What is Gateway?
 
 Hummingbot Gateway is a Typescript-based API server that standardizes interactions with blockchain networks and decentralized exchanges (DEXs). It acts as a middleware layer, providing a unified interface for performing actions like checking balances, executing trades, and managing wallets across different protocols.
@@ -23,23 +21,6 @@ Gateway is a companion service to the Python-based [Hummingbot client](https://g
 - **Modular Architecture**: Clear separation of concerns with distinct modules for chains, connectors, configuration, and wallet management
 - **Hardware Wallet Support**: Built-in support for hardware wallets and encrypted storage for regular wallets
 - **Extensible**: Easily extended with new chains and connectors
-
-## Supported Chains and Networks
-
-| Chain Architecture | Networks | Description |
-|-------|----------|-------------|
-| **Ethereum** | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains |
-| **Solana** | mainnet-beta, devnet | Solana and SVM-compatible chains |
-
-## Supported DEXs
-
-| Protocol | Chain | Router | AMM | CLMM | Description |
-|----------|-------|--------|-----|------|-------------|
-| **Jupiter** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
-| **Meteora** | Solana | ❌ | ❌ | ✅ | Dynamic Liquidity Market Maker (DLMM) |
-| **Raydium** | Solana | ❌ | ✅ | ✅ | Full-featured DEX with V2 AMM and V3 CLMM |
-| **Uniswap** | Ethereum/EVM | ✅ | ✅ | ✅ | Complete V2, V3, and Smart Order Router |
-| **0x** | Ethereum/EVM | ✅ | ❌ | ❌ | Professional DEX aggregator with RFQ system |
 
 ### Connector Schemas
 

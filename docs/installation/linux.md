@@ -16,7 +16,7 @@ The instructions below help you install a standalone Hummingbot instance from so
 On new Ubuntu instances, you may need to install the `build-essentials` package:
 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install -y build-essential
+sudo apt update && sudo apt upgrade -y && sudo apt install -y gcc build-essential
 ```
 
 ### Miniconda / Anaconda

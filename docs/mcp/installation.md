@@ -2,6 +2,8 @@
 
 This guide covers the installation and setup of the Hummingbot MCP Server for different environments and use cases.
 
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Ex27d6vtjVQ?si=rL331015e1ICXd0W" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prerequisites
 
 Before installing the Hummingbot MCP Server, ensure you have:
