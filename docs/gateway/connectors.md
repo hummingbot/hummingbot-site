@@ -12,9 +12,10 @@ Gateway provides standardized connectors for interacting with decentralized exch
 | Protocol | Chain | Router | AMM | CLMM | Description |
 |----------|-------|--------|-----|------|---------------|
 | **[Jupiter](/exchanges/gateway/jupiter)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
-| **[Meteora](/exchanges/gateway/meteora)** | Solana | ❌ | ❌ | ✅ | Dynamic Liquidity Market Maker (DLMM) |
-| **[Raydium](/exchanges/gateway/raydium)** | Solana | ❌ | ✅ | ✅ | Full-featured DEX with AMM and CLMM |
-| **[Uniswap](/exchanges/gateway/uniswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | The original AMM DEX with V2, V3, and Universal Router |
+| **[Meteora](/exchanges/gateway/meteora)** | Solana | ❌ | ❌ | ✅ | Supports for Dynamic Liquidity Market Maker (DLMM) |
+| **[Raydium](/exchanges/gateway/raydium)** | Solana | ❌ | ✅ | ✅ | Supports for Standard and Concentrated Pools |
+| **[Uniswap](/exchanges/gateway/uniswap)** | Ethereum | ✅ | ✅ | ✅ | Support for V2, V3, and Universal Router |
+| **[PancakeSwap](/exchanges/gateway/pancakeswap)** | Ethereum/BNB | ✅ | ✅ | ✅ | Support for V2, V3, and Smart Router |
 
 ### Legacy Connectors
 
@@ -22,7 +23,6 @@ The following connectors are available in legacy versions but need to be upgrade
 
 | Protocol | Chain | Router | AMM | CLMM | Bounty |
 |----------|-------|--------|-----|------|--------|
-| **[PancakeSwap](/exchanges/gateway/pancakeswap)** | BNB Chain | ✅ | ✅ | ✅ | [#7654](https://github.com/hummingbot/hummingbot/issues/7654) |
 | **[Balancer](/exchanges/gateway/balancer)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
 | **[Curve](/exchanges/gateway/curve)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
 | **[SushiSwap](/exchanges/gateway/sushiswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | - |

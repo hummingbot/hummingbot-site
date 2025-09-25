@@ -1,69 +1,22 @@
 Gateway provides standardized access to multiple blockchain networks, enabling wallet management, transaction execution, and node RPC interactions. Each chain integration is customized to handle the specific requirements and features of that blockchain.
 
-## Supported Chains
-
-Gateway currently supports two major blockchain architectures:
-
-| Base Chain | Architecture | Networks | Description |
-|------------|--------------|----------|-------------|
-| **Ethereum** | EVM | mainnet, arbitrum, optimism, base, sepolia, bsc, avalanche, celo, polygon | Ethereum and EVM-compatible chains |
-| **Solana** | SVM | mainnet-beta, devnet | Solana and SVM-compatible chains |
+Gateway currently supports the following blockchain architectures:
 
 ## Ethereum
 
 Gateway's Ethereum integration supports the Ethereum mainnet and all EVM-compatible Layer 1 and Layer 2 blockchains as **networks**. These networks share the same basic architecture, allowing for unified handling of wallets, transactions, and smart contract interactions.
 
-### Ethereum Mainnet
-
-- **Network ID:** mainnet
-- **Chain ID:** 1
-- **Native Token:** ETH
-
-### Arbitrum
-
-- **Network ID:** arbitrum
-- **Chain ID:** 42161
-- **Native Token:** ETH
-
-### Optimism
-
-- **Network ID:** optimism
-- **Chain ID:** 10
-- **Native Token:** ETH
-
-### Base
-- **Network ID:** base
-- **Chain ID:** 8453
-- **Native Token:** ETH
-
-### Polygon
-- **Network ID:** polygon
-- **Chain ID:** 137
-- **Native Token:** MATIC
-
-### Binance Smart Chain (BSC)
-
-- **Network ID:** bsc
-- **Chain ID:** 56
-- **Native Token:** BNB
-
-### Avalanche C-Chain
-
-- **Network ID:** avalanche
-- **Chain ID:** 43114
-- **Native Token:** AVAX
-
-### Celo
-
-- **Network ID:** celo
-- **Chain ID:** 42220
-- **Native Token:** CELO
-
-### Sepolia (Testnet)
-
-- **Network ID:** sepolia
-- **Chain ID:** 11155111
-- **Native Token:** ETH
+| Network      | Description               | Chain ID   | Native Token |
+|--------------|---------------------------|------------|--------------|
+| mainnet      | Ethereum Mainnet          | 1          | ETH          |
+| arbitrum     | Arbitrum One              | 42161      | ETH          |
+| optimism     | Optimism                  | 10         | ETH          |
+| base         | Base                      | 8453       | ETH          |
+| polygon      | Polygon                   | 137        | MATIC        |
+| bsc          | BNB Chain                 | 56         | BNB          |
+| avalanche    | Avalanche C-Chain         | 43114      | AVAX         |
+| celo         | Celo                      | 42220      | CELO         |
+| sepolia      | Sepolia (Testnet)         | 11155111   | ETH          |
 
 ### Chain Configuration
 
@@ -107,15 +60,10 @@ All EVM chains share the same API structure:
 
 Gateway's Solana integration provides access to the Solana blockchain and other networks that utilize the Solana Virtual Machine.
 
-### Mainnet Beta
-
-- **Network ID:** mainnet-beta
-- **Native Token:** SOL
-
-### Devnet (Testnet)
-
-- **Network ID:** devnet
-- **Native Token:** SOL
+| Network      | Description                | Native Token |
+|--------------|----------------------------|--------------|
+| mainnet-beta | Solana Mainnet             | SOL          |
+| devnet       | Solana Devnet (Testnet)    | SOL          |
 
 ### Chain Configuration
 

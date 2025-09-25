@@ -57,44 +57,50 @@ Determine which trading types your DEX supports:
 
 ### Step 2: Create Connector Class
 
-Create the main connector class with singleton pattern:
+Create the main connector class - reference **Uniswap** if you are building an Ethereum-based DEX connector and **Raydium** if you are building a Solana-based DEX connector.
 
 ```typescript
 // src/connectors/mydex/mydex.ts
-import { ConnectorBase } from '../../services/connector-base';
-
-export class MyDex extends ConnectorBase {
+export class MyDex {
   private static instances: Record<string, MyDex> = {};
-  private chain: string;
-  private network: string;
-  
-  private constructor(chain: string, network: string) {
-    super(chain, network);
-    this.chain = chain;
-    this.network = network;
+  public solana: Solana; // or Ethereum
+  public sdk: MyDEXSDK;
+  public config: MyDexConfig.RootConfig;
+ 
+  private constructor() {
+    this.config = MyDexConfig.config;
+    this.txVersion = TxVersion.V0;
   }
-  
-  public static getInstance(chain: string, network: string): MyDex {
-    const key = `${chain}:${network}`;
-    if (!MyDex.instances[key]) {
-      MyDex.instances[key] = new MyDex(chain, network);
+
+  // Gets singleton instance
+  public static getInstance(network: string): MyDex {
+    if (!MyDex._instances) {
+      MyDex._instances = {};
     }
-    return MyDex.instances[key];
+
+    if (!MyDex._instances[network]) {
+      const instance = new MyDex();
+      await instance.init(network);
+      MyDex._instances[network] = instance;
+    }
+
+    return MyDex._instances[network];
   }
-  
-  // Core initialization
-  public async init(): Promise<void> {
-    // Initialize SDK, load contracts, etc.
-  }
-  
-  // Required: Get connector name
-  public get name(): string {
-    return 'mydex';
-  }
-  
-  // Required: Get router/factory address
-  public get routerAddress(): string {
-    return this.config.routerAddress;
+
+  // Initializes instance
+  private async init(network: string) {
+    try {
+      this.solana = await Solana.getInstance(network);
+      this.sdk = await MyDEXSDK.load({
+        connection: this.solana.connection,
+        blockhashCommitment: 'confirmed',
+      });
+
+      logger.info('MyDEX initialized successfully');
+    } catch (error) {
+      logger.error('MyDEX initialization failed:', error);
+      throw error;
+    }
   }
 }
 ```
@@ -253,35 +259,17 @@ Create configuration files for your connector:
 {
   "type": "object",
   "properties": {
-    "allowedSlippage": {
+    "slippagePct": {
       "type": "number",
       "description": "Maximum slippage percentage",
       "default": 1.0
     },
-    "gasLimitEstimate": {
+    "customParam": {
       "type": "number",
-      "description": "Estimated gas limit",
-      "default": 300000
+      "description": "Custom parameter",
     },
-    "ttl": {
-      "type": "number",
-      "description": "Quote time-to-live in seconds",
-      "default": 30
-    },
-    "contractAddresses": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-z]+$": {
-          "type": "object",
-          "properties": {
-            "routerAddress": { "type": "string" },
-            "factoryAddress": { "type": "string" }
-          }
-        }
-      }
-    }
   },
-  "required": ["allowedSlippage", "gasLimitEstimate", "ttl"]
+  "required": ["slippagePct"]
 }
 ```
 
@@ -290,16 +278,7 @@ Create configuration files for your connector:
 ```yaml
 # src/templates/connectors/mydex.yml
 allowedSlippage: 1.0
-gasLimitEstimate: 300000
-ttl: 30
-
-contractAddresses:
-  mainnet:
-    routerAddress: '0x...'
-    factoryAddress: '0x...'
-  testnet:
-    routerAddress: '0x...'
-    factoryAddress: '0x...'
+customParam: 300000
 ```
 
 ### Step 6: Register the Connector

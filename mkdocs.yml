@@ -188,7 +188,7 @@ nav:
         - Candles: v2-strategies/candles/index.md
       - Controllers:
         - Controllers: v2-strategies/controllers/index.md
-        - grid_strike: v2-strategies/controllers/grid_strike.md
+        # - grid_strike: v2-strategies/controllers/grid_strike.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
@@ -279,15 +279,8 @@ nav:
       - Commands: gateway/commands.md
       - Chains: gateway/chains.md
       - DEX Connectors: gateway/connectors.md
+      - RPC Providers: gateway/rpc.md
       - Strategies & Snippets: gateway/strategies.md
-    - Hummingbot Dashboard:
-      - Hummingbot Dashboard: dashboard/index.md
-      - Adding Credentials: dashboard/credentials.md
-      - Viewing Portfolio: dashboard/portfolio.md
-      - Configuring Strategies: dashboard/config.md
-      - Backtesting Strategies: dashboard/backtest.md
-      - Deploying Instances: dashboard/deploy.md
-      - Managing Instances: dashboard/instances.md
     - Hummingbot API: 
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
@@ -296,6 +289,16 @@ nav:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
       - Tools Reference: mcp/tools.md
+    - Dashboard:
+      - Dashboard: dashboard/index.md
+      - Adding Credentials: dashboard/credentials.md
+      - Viewing Portfolio: dashboard/portfolio.md
+      - Configuring Strategies: dashboard/config.md
+      - Backtesting Strategies: dashboard/backtest.md
+      - Deploying Instances: dashboard/deploy.md
+      - Managing Instances: dashboard/instances.md
+    - Quants Lab:
+      - Quants Lab: quants-lab/index.md
     - FAQ: faq.md
     - Glossary: glossary/index.md
   - Exchanges:
