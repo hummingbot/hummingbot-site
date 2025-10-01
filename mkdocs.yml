@@ -188,7 +188,7 @@ nav:
         - Candles: v2-strategies/candles/index.md
       - Controllers:
         - Controllers: v2-strategies/controllers/index.md
-        # - grid_strike: v2-strategies/controllers/grid_strike.md
+        - grid_strike: v2-strategies/controllers/grid_strike.md
       - Executors: 
         - Executors: v2-strategies/executors/index.md   
         - Position Executor: v2-strategies/executors/positionexecutor.md
