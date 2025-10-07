@@ -28,6 +28,26 @@ Just getting started with crypto market making? Start your journey with these fo
 Take your skills to the next level in [Hummingbot Botcamp](https://botcamp.xyz), the official training and certification program for Hummingbot.
 
 
+## 🧙 Strategy Guides
+
+Check out the [Strategy Guides](/blog/category/strategy-guides/) category in our blog for step-by-step guides in setting up various Hummingbot strategies:
+
+- **[Strategy Guide: Grid Strike](/blog/strategy-guide-grid-strike/)**
+  This guide walks you through setting up the Grid Strike strategy that sets a long or short grid of orders. Works on both spot or perp exchanges.
+
+- **[How to Configure V2 Strategies](/blog/how-to-configure-a-v2-strategy-controller-in-hummingbot/)**
+  This guide walks you through configuring and running V2 strategy controllers in Hummingbot to automate and optimize your trading strategies.
+
+- **[Coding a Custom Liquidation Strategy](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)**
+  Explore how to create a custom V2 Controller for Hummingbot to snipe future liquidations on Binance
+
+- **[Directional Trading with MACD and Bollinger Bands](/blog/directional-trading-with-macd-and-bollinger-bands/)**
+  Learn how to implement a directional trading strategy using MACD and Bollinger Bands technical indicators for trend identification and entry/exit signals
+
+- **[Technical Deep Dive into the Avellaneda & Stoikov Strategy](/blog/technical-deep-dive-into-the-avellaneda--stoikov-strategy/)**
+  Comprehensive analysis of the mathematical model behind the Avellaneda & Stoikov paper and how it's implemented in Hummingbot
+
+
 ## 📺 YouTube Playlists
 Watch and learn from our curated video content:
 
@@ -59,19 +79,3 @@ Learn how to setup and run Hummingbot on various CEXs and DEXs:
   Guide to setting up and trading on the XRP Ledger's decentralized exchange using Hummingbot
 
 See more examples in the [Connector Guides](/blog/category/connector-guides/) category in our blog.
-
-## 🧙 Strategy Guides
-Enhance your trading strategies with advanced development guides:
-
-- **[How to configure a v2 strategy controller](/blog/how-to-configure-a-v2-strategy-controller-in-hummingbot/)**
-  This guide walks you through configuring and running V2 strategy controllers in Hummingbot to automate and optimize your trading strategies.
-
-- **[Coding a Liquidation Sniper V2 Strategy Controller](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)**
-  Explore how to create a custom V2 Controller for Hummingbot to snipe future liquidations on Binance
-
-- **[Directional Trading with MACD and Bollinger Bands](/blog/directional-trading-with-macd-and-bollinger-bands/)**
-  Learn how to implement a directional trading strategy using MACD and Bollinger Bands technical indicators for trend identification and entry/exit signals
-
-- **[Technical Deep Dive into the Avellaneda & Stoikov Strategy](/blog/technical-deep-dive-into-the-avellaneda--stoikov-strategy/)**
-  Comprehensive analysis of the mathematical model behind the Avellaneda & Stoikov paper and how it's implemented in Hummingbot
-  
