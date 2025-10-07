@@ -240,9 +240,9 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 <div class="grid cards" markdown>
 
--   [![](/blog/introducing-v2-strategies/cover.png)](/blog/introducing-v2-strategies)
+-   [![](/blog/strategy-guide-grid-strike/long-grid.png)](/blog/strategy-guide-grid-strike)
 
-    ### [Introducing V2 Strategies](/blog/introducing-v2-strategies)
+    ### [Strategy Guide: Grid Strike](/blog/strategy-guide-grid-strike)
 
 -   [![](/blog/using-hyperliquid-vaults-with-hummingbot/cover.png)](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
 
