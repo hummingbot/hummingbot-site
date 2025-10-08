@@ -8,16 +8,6 @@ The Hummingbot Model Context Protocol (MCP) Server enables AI assistants like Cl
 
 The MCP Server acts as a bridge between AI language models and the Hummingbot trading platform, enabling programmatic interaction with cryptocurrency trading infrastructure. This allows AI assistants to manage trading operations, analyze portfolios, and execute strategies on behalf of users.
 
-## Tutorial Videos
-
-### Part 1: Introduction to Hummingbot MCP Server
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/OSmCkA6BdyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Part 2: Building AI Trading Agents 
-
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Q-wSWxx_zIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## What is Model Context Protocol (MCP)?
 
 Model Context Protocol is an open standard that enables AI assistants to securely interact with external systems and data sources. In the context of Hummingbot, MCP allows AI models to:
@@ -63,6 +53,7 @@ The Hummingbot MCP Server provides the following capabilities:
 - Track funding rates across perpetual exchanges
 - Identify arbitrage opportunities
 - Monitor funding rate changes over time
+
 
 ## Architecture
 
@@ -157,7 +148,7 @@ Claude: I'll check your portfolio balances using the Hummingbot MCP server...
 
 ### Gemini CLI
 
-Similar configuration process for Gemini CLI - refer to Google's documentation for MCP setup.
+The configuration process for Gemini CLI - refer to Google's documentation for MCP setup or check out [Gemini CLI Installation](/mcp/installation/#gemini-cli) 
 
 ## Example Workflows
 
@@ -181,6 +172,22 @@ AI: "Close all positions with unrealized losses over 5%"
 MCP: Analyzes open positions and closes those meeting criteria  
 AI: Reports actions taken and updated portfolio status
 ```
+
+### OpenAI Codex
+
+See [Codex CLI Installation](/mcp/installation/#codex-cli) for setup.
+
+## Related Videos
+
+### AMA: Hummingbot API + MCP
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/jpRJQgj7V9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Introduction to Hummingbot MCP Server
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/OSmCkA6BdyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Q-wSWxx_zIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Security Considerations
 
