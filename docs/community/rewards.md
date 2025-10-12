@@ -6,6 +6,19 @@ This page lists third-party programs and trading competitions that utilize Hummi
 
 Discover currently active rewards campaigns available for Hummingbot users. Participate, trade, and earn exclusive rewards!
 
+### XRPLiquid
+
+XRPLiquid is a decentralized liquidity network that rewards traders for providing liquidity on the XRP Ledger. This platform is managed by [Botcamp](https://www.botcamp.xyz), Hummingbot's educational affiliate company. Season 1 launched in June 2025 with a $100,000 reward pool.
+
+Users can earn weekly XRP rewards by trading on supported AMM markets or running automated Hummingbot market making strategies 24/7. The platform aims to prove that incentivized communities can provide better liquidity than any single institution.
+
+- **Rewards**: Weekly XRP distributions from reward pool
+- **Season 1 Pool**: $100,000
+- **Earning Methods**: AMM trading or running Hummingbot strategies
+- **Platform**: XRP Ledger (XRPL)
+
+For more information, visit: [xrpliquid.com](https://xrpliquid.com)
+
 ### Hummmingbot Miner
 
 Hummingbot Miner is a platform operated by Hummingbot's original parent company [CoinAlpha](https://coinalpha.com) where users can earn rewards by providing liquidity to specific tokens on centralized exchanges. The program has been running since March 2020 and has paid out over $640k in rewards to 2000+ users.
