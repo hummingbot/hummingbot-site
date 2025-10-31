@@ -104,26 +104,21 @@ Edit the `settings.json` file
 Add MCP server configuration:
 
    ```json
-   {
-     "mcpServers": {
-       "hummingbot-mcp": {
-         "command": "docker",
-         "args": [
-           "run", "-i", "--rm",
-           "--network", "host",
-           "-e", "HUMMINGBOT_API_URL",
-           "-e", "HUMMINGBOT_USERNAME",
-           "-e", "HUMMINGBOT_PASSWORD",
-           "hummingbot/hummingbot-mcp:latest"
-         ],
-         "env": {
-           "HUMMINGBOT_API_URL": "http://localhost:8000",
-           "HUMMINGBOT_USERNAME": "admin",
-           "HUMMINGBOT_PASSWORD": "admin"
-         }
-       }
-     }
-   }
+{
+  "mcpServers": {
+    "hummingbot-mcp-docker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--network", "host",
+        "-v", "hummingbot_mcp:/root/.hummingbot_mcp",
+        "hummingbot/hummingbot-mcp:development"
+      ]
+    }
+  }
+}
    ```
 
 Open Gemini and verify the connection by running:
@@ -168,21 +163,16 @@ Edit `config.toml`:
 Add the MCP server configuration:
 
    ```toml
-   [mcp_servers.hummingbot-mcp]
-   command = "docker"
-   args = [
-     "run", "-i", "--rm",
-     "--network", "host",
-     "-e", "HUMMINGBOT_API_URL",
-     "-e", "HUMMINGBOT_USERNAME",
-     "-e", "HUMMINGBOT_PASSWORD",
-     "hummingbot/hummingbot-mcp:latest"
-   ]
-
-   [mcp_servers.hummingbot-mcp.env]
-   HUMMINGBOT_API_URL = "http://localhost:8000"
-   HUMMINGBOT_USERNAME = "admin"
-   HUMMINGBOT_PASSWORD = "admin"
+  [mcp_servers.hummingbot-mcp-docker]
+  command = "docker"
+  args = [
+    "run",
+    "--rm",
+    "-i",
+    "--network", "host",
+    "-v", "hummingbot_mcp:/root/.hummingbot_mcp",
+    "hummingbot/hummingbot-mcp:development"
+  ]
    ```
 
 Run Codex and and verify the connection by running:

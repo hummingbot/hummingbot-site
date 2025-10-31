@@ -349,6 +349,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
     - 2.8.0: release-notes/2.8.0.md
     - 2.7.0: release-notes/2.7.0.md
