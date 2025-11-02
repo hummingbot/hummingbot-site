@@ -317,7 +317,7 @@ nav:
     - Balancer: exchanges/gateway/balancer.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
-    - Bitget: exchanges/bitget-perpetual.md
+    - Bitget: exchanges/bitget/index.md
     - BingX: exchanges/bing_x/index.md
     - Bybit: exchanges/bybit.md
     - BTC Markets: exchanges/btc-markets.md
