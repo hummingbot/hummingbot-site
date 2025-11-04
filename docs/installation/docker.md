@@ -189,6 +189,7 @@ image: hummingbot/hummingbot:version-2.0.0
     **If you used the [recommended Hummingbot API installation](#installation-recommended-hummingbot-api)**, Gateway is managed directly through the API - no separate installation required!
 
     Use natural language commands via MCP:
+
     - "Start Gateway in development mode with passphrase 'admin'"
     - "Check Gateway status"
     - "Stop Gateway"
@@ -197,6 +198,7 @@ image: hummingbot/hummingbot:version-2.0.0
 
 !!! warning "Gateway Required for DEX Trading"
     Gateway is essential to trade on these supported decentralized exchanges:
+
     - Uniswap (Ethereum)
     - PancakeSwap (BNB Chain)
     - Trader Joe (Avalanche)

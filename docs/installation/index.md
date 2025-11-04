@@ -72,12 +72,14 @@ The setup script will:
 ### What Gets Installed
 
 **Core services** (always installed):
+
 - ✅ **Hummingbot API** (port 8000) - REST API backend
 - ✅ **PostgreSQL** - Database for trading data
 - ✅ **EMQX** - Message broker for real-time communication
 - ✅ **Swagger UI** (port 8000/docs) - API documentation
 
 **Optional services** (enable during setup):
+
 - 🤖 **MCP Server** - For AI assistant integration
 - 📊 **Dashboard** (port 8501) - Web interface
 
