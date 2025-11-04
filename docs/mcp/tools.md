@@ -231,6 +231,210 @@ AI: "Find negative funding rate opportunities for BTC"
 4. Monitors and manages positions automatically
 ```
 
+## Gateway Tools
+
+### `manage_gateway_container`
+Start, stop, or check Gateway container status.
+
+```python
+# Start Gateway
+manage_gateway_container(
+    action="start",
+    config={
+        "passphrase": "admin",
+        "image": "hummingbot/gateway:latest",
+        "port": 15888
+    }
+)
+
+# Check status
+manage_gateway_container(action="get_status")
+
+# View logs
+manage_gateway_container(action="get_logs", tail=100)
+
+# Restart
+manage_gateway_container(action="restart")
+
+# Stop
+manage_gateway_container(action="stop")
+```
+
+### `manage_gateway_config`
+Manage chains, networks, tokens, connectors, pools, and wallets.
+
+```python
+# List supported chains
+manage_gateway_config(resource_type="chains", action="list")
+
+# List networks
+manage_gateway_config(resource_type="networks", action="list")
+
+# Get specific network
+manage_gateway_config(
+    resource_type="networks",
+    action="get",
+    network_id="solana-mainnet-beta"
+)
+
+# List tokens on network
+manage_gateway_config(
+    resource_type="tokens",
+    action="list",
+    network_id="solana-mainnet-beta",
+    search="USDC"  # Optional search filter
+)
+
+# Add token
+manage_gateway_config(
+    resource_type="tokens",
+    action="add",
+    network_id="solana-mainnet-beta",
+    token_address="EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    token_symbol="USDC",
+    token_decimals=6,
+    token_name="USD Coin"
+)
+
+# Add wallet
+manage_gateway_config(
+    resource_type="wallets",
+    action="add",
+    chain="solana",
+    private_key="your_private_key"
+)
+
+# List DEX connectors
+manage_gateway_config(resource_type="connectors", action="list")
+
+# List pools
+manage_gateway_config(
+    resource_type="pools",
+    action="list",
+    connector_name="meteora",
+    network="mainnet-beta"
+)
+```
+
+### `manage_gateway_swaps`
+
+Quote and execute swaps on DEX routers like [Jupiter](/exchanges/gateway/jupiter/).
+
+```python
+# Get quote
+manage_gateway_swaps(
+    action="quote",
+    connector="jupiter",
+    network="solana-mainnet-beta",
+    trading_pair="SOL-USDC",
+    side="BUY",  # or "SELL"
+    amount="1.0",  # Amount of base token
+    slippage_pct="1.0"
+)
+
+# Execute swap
+manage_gateway_swaps(
+    action="execute",
+    connector="jupiter",
+    network="solana-mainnet-beta",
+    trading_pair="SOL-USDC",
+    side="BUY",
+    amount="1.0",
+    slippage_pct="1.0",
+    wallet_address="your_wallet_address"  # Optional
+)
+
+# Search swap history
+manage_gateway_swaps(
+    action="search",
+    search_connector="jupiter",
+    search_network="solana-mainnet-beta",
+    status="CONFIRMED",  # SUBMITTED, CONFIRMED, FAILED
+    limit=50
+)
+
+# Check transaction status
+manage_gateway_swaps(
+    action="get_status",
+    transaction_hash="your_tx_hash"
+)
+```
+
+### `explore_gateway_clmm_pools`
+Browse concentrated liquidity pools.
+
+```python
+# List pools
+explore_gateway_clmm_pools(
+    action="list_pools",
+    connector="meteora",
+    page=0,
+    limit=50,
+    search_term="SOL",  # Optional filter
+    sort_key="volume",  # volume, tvl, feetvlratio
+    order_by="desc",
+    include_unknown=True,
+    detailed=False  # Set True for more columns
+)
+
+# Get specific pool info
+explore_gateway_clmm_pools(
+    action="get_pool_info",
+    connector="meteora",
+    network="solana-mainnet-beta",
+    pool_address="pool_address_here"
+)
+```
+
+### `manage_gateway_clmm_positions`
+Open, close, collect fees from concentrated liquidity positions.
+
+```python
+# Open position
+manage_gateway_clmm_positions(
+    action="open_position",
+    connector="meteora",
+    network="solana-mainnet-beta",
+    pool_address="pool_address",
+    lower_price="150",
+    upper_price="250",
+    base_token_amount="1.0",  # Optional
+    quote_token_amount="200",  # Optional
+    slippage_pct="1.0",
+    wallet_address="your_wallet",  # Optional
+    extra_params={"strategyType": 0}  # Connector-specific
+)
+
+# Get positions for wallet/pool
+manage_gateway_clmm_positions(
+    action="get_positions",
+    connector="meteora",
+    network="solana-mainnet-beta",
+    pool_address="pool_address",
+    wallet_address="your_wallet"
+)
+
+# Collect fees
+manage_gateway_clmm_positions(
+    action="collect_fees",
+    connector="meteora",
+    network="solana-mainnet-beta",
+    position_address="position_nft_address",
+    wallet_address="your_wallet"
+)
+
+# Close position
+manage_gateway_clmm_positions(
+    action="close_position",
+    connector="meteora",
+    network="solana-mainnet-beta",
+    position_address="position_nft_address",
+    wallet_address="your_wallet"
+)
+```
+
+---
+
 ## Tool Response Formats
 
 All tools return structured JSON responses that AI assistants can parse and present to users in natural language. The MCP server handles the technical API interactions while the AI provides user-friendly explanations and recommendations.

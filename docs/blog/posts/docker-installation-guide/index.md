@@ -15,13 +15,13 @@ This brief guide will introduce you to the process of installing and deploying H
 
 ## What You Will Learn
 
-1. [**Install Docker**](1-installation.md): Step-by-step instructions to installing Docker and Docker Compose,
+1. **Install Docker**: Step-by-step instructions to installing Docker and Docker Compose,
 
-2. [**Hummingbot Interface**](2-hb-interface.md): Uncover the essentials of the Hummingbot interface, including layout and navigation.
+2. **Hummingbot Interface**: Uncover the essentials of the Hummingbot interface, including layout and navigation.
 
-3. [**Running a Script**](3-run-script.md): Learn how to run an algo trading strategy as a Hummingbot script.
+3. **Running a Script**: Learn how to run an algo trading strategy as a Hummingbot script.
 
-4. [**Connecting API Keys**](4-api-keys.md): Master the crucial process of integrating API keys with Hummingbot, ensuring secure API-based bot trading across various exchanges.
+4. **Connecting API Keys**: Master the crucial process of integrating API keys with Hummingbot, ensuring secure API-based bot trading across various exchanges.
 
 <!-- more -->
 

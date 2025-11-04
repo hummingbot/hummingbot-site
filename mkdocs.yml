@@ -284,6 +284,7 @@ nav:
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
+      - API Routers: hummingbot-api/routers.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
@@ -317,7 +318,7 @@ nav:
     - Balancer: exchanges/gateway/balancer.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
-    - Bitget: exchanges/bitget-perpetual.md
+    - Bitget: exchanges/bitget/index.md
     - BingX: exchanges/bing_x/index.md
     - Bybit: exchanges/bybit.md
     - BTC Markets: exchanges/btc-markets.md
@@ -349,6 +350,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: governance/releases.md
+    - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
     - 2.8.0: release-notes/2.8.0.md
     - 2.7.0: release-notes/2.7.0.md

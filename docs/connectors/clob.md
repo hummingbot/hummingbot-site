@@ -18,29 +18,29 @@ Here are the CLOB connectors in the codebase for the current [Epoch](/governance
 
 | Exchange                                | Foundation Partner | Spot | Perp | Connector Guide |
 |-----------------------------------------|-------------------|------|------|----------------|
-| [Binance](./binance/index.md)           | ✓ | ✓ | ✓ | [Guide](/blog/using-binance-with-hummingbot) |
-| [Bitmart](./bitmart/index.md)           | ✓ | ✓ | ✓ |  |
-| [Derive](./derive/index.md)             | ✓ | ✓ | ✓ | [Guide](/blog/running-a-trading-bot-with-hummingbot-on-derive/) |
-| [dYdX](./dydx/index.md)                 | ✓ | | ✓ | [Guide](/blog/running-a-trading-bot-with-hummingbot-dashboard-on-dydx-v4/) |
-| [Gate.io](./gate-io/index.md)           | ✓ | ✓ | ✓ |  |
-| [HTX](./huobi/index.md)                 | ✓ | ✓ |  |  |
-| [Kucoin](./kucoin/index.md)             | ✓ | ✓ | ✓ |  |
-| [OKX](./okx/index.md)                   | ✓ | ✓ | ✓ |  |
-| [XRPL](./xrpl.md)                       | ✓ | ✓ |  | [Guide](/blog/-using-xrp-ledger-with-hummingbot/) |
-| [AscendEx](./ascendex/index.md)         |  | ✓ |  |  |
-| [BingX](./bing_x/index.md)              | | ✓ |  | |
-| [Bitstamp](./bitstamp/index.md)         |  | ✓ |  |  |
-| [Bitrue](./bitrue.md)                   |  | ✓ |  |  |
-| [Bitget](./bitget-perpetual.md)         |  |  | ✓ |  |
-| [Bybit](./bybit.md)                     | | ✓ | ✓ |  |
-| [BTC Markets](./btc-markets.md)         |  | ✓ |  |  |
-| [Coinbase](./coinbase.md)               |  | ✓ |  |  |
-| [Cube](./cube/index.md)                 | | ✓ |  |  |
-| [Dexalot](./dexalot/index.md)           | | ✓ | ✓ | [Guide](/blog/using-dexalot-with-hummingbot/) |
-| [Kraken](./kraken/index.md)             |  | ✓ |  |  |
-| [MEXC](./mexc/index.md)                 |  | ✓ |  |  |
-| [NDAX](./ndax.md)                       |  | ✓ |  |  |
-| [Vertex](./vertex.md)                   | | ✓ |  |  |
+| [Binance](../exchanges/binance/index.md)           | ✓ | ✓ | ✓ | [Guide](/blog/using-binance-with-hummingbot) |
+| [Bitmart](../exchanges/bitmart/index.md)           | ✓ | ✓ | ✓ |  |
+| [Derive](../exchanges/derive/index.md)             | ✓ | ✓ | ✓ | [Guide](/blog/running-a-trading-bot-with-hummingbot-on-derive/) |
+| [dYdX](../exchanges/dydx/index.md)                 | ✓ | | ✓ | [Guide](/blog/running-a-trading-bot-with-hummingbot-dashboard-on-dydx-v4/) |
+| [Gate.io](../exchanges/gate-io/index.md)           | ✓ | ✓ | ✓ |  |
+| [HTX](../exchanges/huobi/index.md)                 | ✓ | ✓ |  |  |
+| [Kucoin](../exchanges/kucoin/index.md)             | ✓ | ✓ | ✓ |  |
+| [OKX](../exchanges/okx/index.md)                   | ✓ | ✓ | ✓ |  |
+| [XRPL](../exchanges/xrpl.md)                       | ✓ | ✓ |  | [Guide](/blog/-using-xrp-ledger-with-hummingbot/) |
+| [AscendEx](../exchanges/ascendex/index.md)         |  | ✓ |  |  |
+| [BingX](../exchanges/bing_x/index.md)              | | ✓ |  | |
+| [Bitstamp](../exchanges/bitstamp/index.md)         |  | ✓ |  |  |
+| [Bitrue](../exchanges/bitrue.md)                   |  | ✓ |  |  |
+| [Bitget](../exchanges/bitget/index.md)         | ✓ | ✓ | ✓ |  |
+| [Bybit](../exchanges/bybit.md)                     | | ✓ | ✓ |  |
+| [BTC Markets](../exchanges/btc-markets.md)         |  | ✓ |  |  |
+| [Coinbase](../exchanges/coinbase.md)               |  | ✓ |  |  |
+| [Cube](../exchanges/cube/index.md)                 | | ✓ |  |  |
+| [Dexalot](../exchanges/dexalot/index.md)           | | ✓ | ✓ | [Guide](/blog/using-dexalot-with-hummingbot/) |
+| [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
+| [MEXC](../exchanges/mexc/index.md)                 |  | ✓ |  |  |
+| [NDAX](../exchanges/ndax.md)                       |  | ✓ |  |  |
+| [Vertex](../exchanges/vertex.md)                   | | ✓ |  |  |
 | [Foxbit](../exchanges/foxbit/foxbit.md) | | ✓ |  |  |
 
 ### Building CLOB Connectors

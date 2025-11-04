@@ -144,7 +144,7 @@ export SCRIPT_CONFIG=your_script_config.yml  # Optional for scripts
    
    - Receive alerts and notifications
 
-**Use with Hummingbot API**: We strongly recommend using headless mode alongside the [Hummingbot API](https://github.com/hummingbot/backend-api) for:
+**Use with Hummingbot API**: We strongly recommend using headless mode alongside the [Hummingbot API](https://github.com/hummingbot/hummingbot-api) for:
    
    - Managing multiple bot instances
    

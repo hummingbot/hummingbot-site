@@ -1,10 +1,12 @@
-# Hummingbot V2 + Dashboard
+# Hummingbot Installation
 
-**Hummingbot 2.0** now features a Dashboard GUI, replacing the traditional CLI for a more intuitive experience. 
+**The official and recommended way to run Hummingbot** is through the [Hummingbot API](https://github.com/hummingbot/hummingbot-api), which provides a comprehensive trading platform with three ways to interact:
 
-The **recommended** installation method, especially for new users, is **Hummingbot + Dashboard**, allowing you to easily create, backtest, and deploy strategies. 
+- 🤖 **MCP (AI Assistant)** - Control your trading with Claude, ChatGPT, or Gemini using natural language
+- 📊 **Dashboard** - Visual web interface for bot management and monitoring
+- 🔧 **Swagger UI** - Full REST API access for developers and power users
 
-Other standalone installation options like [Docker](docker.md) and [Source](source.md) are still available.
+For other installation options, see [Docker](docker.md) (client only) and [Source](source.md) (for developers).
 
 ## System Requirements
 
@@ -47,34 +49,64 @@ Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for d
     Ubuntu Terminal (Start Menu → Ubuntu)  
     
 
-## Installation Steps
+## Quick Start (Recommended: Hummingbot API)
 
-[Hummingbot Deploy](https://github.com/hummingbot/deploy) is a dedicated repo that allows users to quickly deploy Hummingbot using the Dashboard as the front end UI. The compose file spins up containers for the [Dashboard](https://github.com/hummingbot/dashboard), [Backend-API](https://github.com/hummingbot/backend-api) as well as the **Hummingbot Broker**.
+The [Hummingbot API](https://github.com/hummingbot/hummingbot-api) is the official and recommended installation method, providing MCP AI assistant integration, Dashboard web interface, and full REST API access.
 
-```bash
-git clone https://github.com/hummingbot/deploy.git
-cd deploy
-bash setup.sh
-```
+### Installation
 
-The setup script will pull the Docker images defined in repo's `docker-compose.yml` file and start them as new containers:
+Clone the repository and run the setup script:
 
 ```bash
-[+] Running 7/7
- ✔ Network deploy_emqx-bridge   Created
- ✔ Volume "deploy_emqx-data"    Created
- ✔ Volume "deploy_emqx-log"     Created
- ✔ Volume "deploy_emqx-etc"     Created
- ✔ Container dashboard          Started 
- ✔ Container backend-api        Started 
- ✔ Container hummingbot-broker  Started 
+git clone https://github.com/hummingbot/hummingbot-api.git
+cd hummingbot-api
+chmod +x setup.sh
+./setup.sh
 ```
 
-After all containers have started, access the Dashboard at <http://localhost:8501> in your browser.
+The setup script will:
+
+- Prompt you for credentials (default: `admin`/`admin`)
+- Ask if you want to enable Dashboard (optional web interface)
+- Start all required Docker containers
+
+### What Gets Installed
+
+**Core services** (always installed):
+
+- ✅ **Hummingbot API** (port 8000) - REST API backend
+- ✅ **PostgreSQL** - Database for trading data
+- ✅ **EMQX** - Message broker for real-time communication
+- ✅ **Swagger UI** (port 8000/docs) - API documentation
+
+**Optional services** (enable during setup):
+
+- 📊 **Dashboard** (port 8501) - Web interface
+
+### Access Your Platform
+
+After setup completes:
+
+- **Swagger UI**: <http://localhost:8000/docs> (always available)
+- **Dashboard**: <http://localhost:8501> (if enabled)
 
 !!! note "Cloud Servers"
-    If you are using a cloud server or VPS, replace `localhost` with the IP of your server. You may need to edit the firewall rules to allow inbound connections to the necessary ports.  
+    If you are using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections to the necessary ports.
 
+### Connect an AI Assistant (Optional)
+
+After setup, you can connect AI assistants to control Hummingbot with natural language.
+
+See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
+
+- **Claude Code** (recommended) - One-line CLI setup
+- **Gemini CLI** - Google's AI terminal agent
+- **Codex CLI** - OpenAI's coding assistant
+- **Claude Desktop** - GUI application
+- **Docker MCP Catalog** - Visual setup via Docker Desktop
+
+!!! warning "Deploy Repo is now deprecated"
+    The [Deploy](https://github.com/hummingbot/deploy) repository is being deprecated in favor of the Hummingbot API installation above. Existing users should migrate to the Hummingbot API for continued support and new features.  
 
 ## Standalone Hummingbot
 
