@@ -13,7 +13,8 @@
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://pancakeswap.finance>
+- **Website (EVM)**: <https://pancakeswap.finance>
+- **Website (Solana)**: <https://solana.pancakeswap.finance/>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/pancakeswap/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/pancakeswap>
 - **Fees**: <https://docs.pancakeswap.finance/products/pancakeswap-exchange/pancakeswap-pools#trading-fees>
@@ -21,13 +22,37 @@
 
 ## 🔑 How to Connect
 
-PancakeSwap operates on BNB Chain and other EVM-compatible networks.
+PancakeSwap operates on multiple blockchain networks including EVM-compatible chains and Solana.
 
 | Chain | Networks |
 | ----- | -------- |
-| `ethereum` | 'bsc', 'mainnet', 'arbitrum', 'base'
+| `ethereum` | `bsc`, `mainnet`, `arbitrum`, `base` |
+| `solana` | `mainnet-beta`, `devnet` |
 
-See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
+### EVM Chains
+
+For EVM-based networks (BNB Chain, Ethereum, Arbitrum, Base), see [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
+
+### Solana
+
+For Solana networks, you'll need to configure a Solana wallet. PancakeSwap on Solana uses the same concentrated liquidity (CLMM) technology as V3 pools on EVM chains.
+
+**To connect your Solana wallet:**
+
+1. Run the Gateway connect command:
+```
+gateway connect solana
+```
+
+2. Follow the prompts to either:
+   - Import an existing wallet using your private key
+   - Generate a new Solana wallet
+
+3. Select your network:
+   - `mainnet-beta` for production trading
+   - `devnet` for testing
+
+The connector includes automatic WSOL (Wrapped SOL) handling and full support for Token-2022 standard tokens and NFT position tracking.
 
 ## Configuration
 

@@ -1,6 +1,19 @@
 Hummingbot Gateway is an API/CLI client that exposes standardized REST endpoints to interact with blockchain networks and decentralized exchanges (DEXs). It provides a language-agnostic approach to interacting with these protocols through a unified interface.
 
-There are two main ways to install Gateway:
+!!! tip "New: Manage Gateway via Hummingbot API"
+    **If you installed Hummingbot using the [recommended Hummingbot API method](/installation/docker/#installation-recommended-hummingbot-api)**, you can manage Gateway directly through the API - no separate installation needed!
+
+    The Hummingbot API includes the `manage_gateway_container` tool that handles Gateway lifecycle:
+
+    - **Start Gateway**: Via MCP with "Start Gateway in development mode with passphrase 'admin'"
+    - **Check Status**: "Check Gateway status"
+    - **Restart/Stop**: Manage Gateway without manual Docker commands
+
+    See the [Hummingbot API documentation](https://github.com/hummingbot/hummingbot-api) for more details on Gateway management through the API.
+
+    The methods below are for **standalone Gateway installation** (without Hummingbot API).
+
+There are two main ways to install Gateway standalone:
 
 1. **Docker Installation** (Recommended for most users)
 2. **Source Installation** (For developers and advanced users)
