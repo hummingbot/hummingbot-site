@@ -103,7 +103,8 @@ Edit the `settings.json` file
 
 Add MCP server configuration:
 
-   ```json
+```json
+
 {
   "mcpServers": {
     "hummingbot-mcp-docker": {
@@ -114,12 +115,13 @@ Add MCP server configuration:
         "-i",
         "--network", "host",
         "-v", "hummingbot_mcp:/root/.hummingbot_mcp",
-        "hummingbot/hummingbot-mcp:development"
+        "hummingbot/hummingbot-mcp:latest"
       ]
     }
   }
 }
-   ```
+
+```
 
 Open Gemini and verify the connection by running:
 
@@ -162,7 +164,8 @@ Edit `config.toml`:
 
 Add the MCP server configuration:
 
-   ```toml
+```toml
+
   [mcp_servers.hummingbot-mcp-docker]
   command = "docker"
   args = [
@@ -171,9 +174,10 @@ Add the MCP server configuration:
     "-i",
     "--network", "host",
     "-v", "hummingbot_mcp:/root/.hummingbot_mcp",
-    "hummingbot/hummingbot-mcp:development"
+    "hummingbot/hummingbot-mcp:latest"
   ]
-   ```
+
+```
 
 Run Codex and and verify the connection by running:
 
