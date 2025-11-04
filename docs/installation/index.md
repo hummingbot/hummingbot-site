@@ -106,13 +106,8 @@ See the **[MCP Installation Guide](/mcp/installation/)** for complete instructio
 - **Claude Desktop** - GUI application
 - **Docker MCP Catalog** - Visual setup via Docker Desktop
 
----
-
-## Legacy: Deploy Repository (Deprecated)
-
-!!! warning "Deprecated"
+!!! warning "Deploy Repo is now deprecated"
     The [Deploy](https://github.com/hummingbot/deploy) repository is being deprecated in favor of the Hummingbot API installation above. Existing users should migrate to the Hummingbot API for continued support and new features.  
-
 
 ## Standalone Hummingbot
 

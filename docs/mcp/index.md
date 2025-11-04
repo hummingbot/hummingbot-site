@@ -179,6 +179,10 @@ See [Codex CLI Installation](/mcp/installation/#codex-cli) for setup.
 
 ## Related Videos
 
+### Building AI Crypto Trading Agents with Claude Code & Hummingbot
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/eq8EfiOEcFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### AMA: Hummingbot API + MCP
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/jpRJQgj7V9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
