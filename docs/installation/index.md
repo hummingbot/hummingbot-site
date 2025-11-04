@@ -65,8 +65,9 @@ chmod +x setup.sh
 ```
 
 The setup script will:
+
 - Prompt you for credentials (default: `admin`/`admin`)
-- Ask if you want to enable optional services (MCP, Dashboard)
+- Ask if you want to enable Dashboard (optional web interface)
 - Start all required Docker containers
 
 ### What Gets Installed
@@ -80,7 +81,6 @@ The setup script will:
 
 **Optional services** (enable during setup):
 
-- 🤖 **MCP Server** - For AI assistant integration
 - 📊 **Dashboard** (port 8501) - Web interface
 
 ### Access Your Platform
@@ -89,14 +89,13 @@ After setup completes:
 
 - **Swagger UI**: <http://localhost:8000/docs> (always available)
 - **Dashboard**: <http://localhost:8501> (if enabled)
-- **MCP**: Connect Claude, ChatGPT, or Gemini (if enabled)
 
 !!! note "Cloud Servers"
     If you are using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections to the necessary ports.
 
 ### Connect an AI Assistant (Optional)
 
-If you enabled MCP during setup, you can connect AI assistants to control Hummingbot with natural language.
+After setup, you can connect AI assistants to control Hummingbot with natural language.
 
 See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
 

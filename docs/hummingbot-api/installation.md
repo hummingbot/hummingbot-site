@@ -35,7 +35,6 @@ The script will prompt you for:
    - API username and password
 
 2. **Optional Services**:
-   - **MCP server**: For AI assistant integration
    - **Dashboard**: For web-based visual interface
 
 3. **Gateway**: Optional passphrase for DEX trading
@@ -51,7 +50,6 @@ The script will prompt you for:
 
 **Optional services** (enable during setup):
 
-- 🤖 **MCP Server** - For AI assistant integration
 - 📊 **Dashboard** (port 8501) - Web interface
 
 ### After Setup
@@ -59,13 +57,16 @@ The script will prompt you for:
 **1. Access Swagger UI** (Default)
 
 The API documentation is immediately available:
+
 - URL: http://localhost:8000/docs
 - Use the username/password you configured
 - Test all API endpoints directly
 
-**2. Connect AI Assistant** (If MCP Enabled)
+**2. Connect AI Assistant** (Optional)
 
-If you enabled MCP, see the **[MCP Installation Guide](/mcp/installation/)** for instructions on connecting:
+After setup, you can connect AI assistants to control Hummingbot with natural language.
+
+See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
 
 - **Claude Code** (recommended) - One-line CLI setup
 - **Gemini CLI** - Google's AI terminal agent
@@ -75,6 +76,7 @@ If you enabled MCP, see the **[MCP Installation Guide](/mcp/installation/)** for
 **3. Access Dashboard** (If Enabled)
 
 If you enabled Dashboard during setup:
+
 - URL: http://localhost:8501
 - Use the same username/password from setup
 

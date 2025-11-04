@@ -51,11 +51,11 @@ chmod +x setup.sh
 ```
 
 This single command sets up:
+
 - **Hummingbot API** (port 8000) - Core trading backend
-- **MCP Server** - AI assistant integration
-- **Dashboard** (port 8501) - Web interface
 - **PostgreSQL** - Database for trading data
 - **EMQX Broker** - Message broker for real-time bot communication
+- **Dashboard** (port 8501) - Web interface (optional)
 
 ### Connect an AI Assistant (Optional)
 
