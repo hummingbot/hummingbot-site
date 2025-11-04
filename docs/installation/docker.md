@@ -57,26 +57,21 @@ This single command sets up:
 - **PostgreSQL** - Database for trading data
 - **EMQX Broker** - Message broker for real-time bot communication
 
-### Connect Claude Code (Recommended)
+### Connect an AI Assistant (Optional)
 
-After setup completes, connect Claude Code with one command:
+After setup, you can connect AI assistants to control Hummingbot with natural language.
 
-```bash
-claude mcp add --transport stdio hummingbot -- docker run --rm -i -e HUMMINGBOT_API_URL=http://host.docker.internal:8000 -v hummingbot_mcp:/root/.hummingbot_mcp hummingbot/hummingbot-mcp:latest
-```
+See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
 
-Then use natural language in your terminal:
-
-- "Show me my portfolio balances"
-- "Create a market making strategy for ETH-USDT on Binance"
-- "What are my open positions?"
-- "Start Gateway in development mode for DEX trading"
-
-For other AI assistants (Claude Desktop, ChatGPT, Gemini), see the [Hummingbot API README](https://github.com/hummingbot/hummingbot-api).
+- **Claude Code** (recommended) - One-line CLI setup
+- **Gemini CLI** - Google's AI terminal agent
+- **Codex CLI** - OpenAI's coding assistant
+- **Claude Desktop** - GUI application
+- **Docker MCP Catalog** - Visual setup via Docker Desktop
 
 #### Alternative Access Methods
 
-Instead of (or in addition to) Claude Code:
+Instead of (or in addition to) AI assistants:
 
 - **Dashboard**: http://localhost:8501 (if enabled during setup)
 - **Swagger UI**: http://localhost:8000/docs (always available)
