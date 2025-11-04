@@ -54,6 +54,20 @@ The Hummingbot MCP Server provides the following capabilities:
 - Identify arbitrage opportunities
 - Monitor funding rate changes over time
 
+### 🌐 Gateway & DEX Trading
+- Manage Gateway container lifecycle (start, stop, restart)
+- Configure chains, networks, tokens, and wallets
+- Execute swaps on DEX routers (Jupiter, 0x)
+- Discover and analyze CLMM (concentrated liquidity) pools
+- Open and manage liquidity positions
+- Collect fees from active positions
+
+### 🔄 Multiple Server Support
+- Connect to multiple Hummingbot API instances simultaneously
+- Manage trading across different environments (production, staging, dev)
+- Switch between servers seamlessly in conversation
+- Unified interface for multi-instance portfolio management
+
 
 ## Architecture
 
@@ -123,32 +137,21 @@ Access real-time prices, funding rates, and order book data for informed decisio
 
 ## Usage with AI Assistants
 
-### Claude CLI
+The Hummingbot MCP Server works with various AI assistants. See the **[Installation Guide](/mcp/installation/)** for detailed setup instructions for:
 
-1. **Install Claude CLI** following [Anthropic's guide](https://github.com/anthropics/claude-cli)
+- **Claude Code** (CLI) - Recommended for developers
+- **Claude Desktop** - GUI application
+- **Gemini CLI** - Google's AI assistant
+- **Codex CLI** - OpenAI's coding assistant
 
-2. **Configure MCP server** in your Claude configuration:
-```json
-{
-  "mcpServers": {
-    "hummingbot": {
-      "command": "uv",
-      "args": ["run", "mcp"],
-      "cwd": "/path/to/hummingbot-mcp"
-    }
-  }
-}
-```
+### Example Trading Conversation
 
-3. **Start trading conversation**:
+Once configured, you can interact naturally with your AI assistant:
+
 ```
 You: Show me my portfolio balances across all exchanges
-Claude: I'll check your portfolio balances using the Hummingbot MCP server...
+AI Assistant: I'll check your portfolio balances using the Hummingbot MCP server...
 ```
-
-### Gemini CLI
-
-The configuration process for Gemini CLI - refer to Google's documentation for MCP setup or check out [Gemini CLI Installation](/mcp/installation/#gemini-cli) 
 
 ## Example Workflows
 
@@ -169,13 +172,9 @@ AI: Confirms execution and provides trade summary
 ### Risk Management
 ```
 AI: "Close all positions with unrealized losses over 5%"
-MCP: Analyzes open positions and closes those meeting criteria  
+MCP: Analyzes open positions and closes those meeting criteria
 AI: Reports actions taken and updated portfolio status
 ```
-
-### OpenAI Codex
-
-See [Codex CLI Installation](/mcp/installation/#codex-cli) for setup.
 
 ## Related Videos
 

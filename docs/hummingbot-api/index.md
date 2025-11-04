@@ -1,21 +1,27 @@
 # Hummingbot API
 
+**The central hub for running Hummingbot trading bots** - now with AI assistant integration via MCP (Model Context Protocol).
+
 !!! note "Repository Update"
     The `backend-api` has been **renamed to `hummingbot-api`**, marking a major revamp of the codebase with improvements in architecture, modularity, and developer experience.
 
-## Overview
-
-Hummingbot API is a comprehensive RESTful API framework designed for managing trading operations across multiple exchanges. It allows individual traders and teams to deploy custom, private servers for trade execution, portfolio management, and data collection, bot deployment, and other use cases.
+A comprehensive RESTful API framework for managing trading operations across multiple exchanges. The Hummingbot API provides a centralized platform to aggregate all your trading functionalities, from basic account management to sophisticated automated trading strategies.
 
 **GitHub Repository**: [github.com/hummingbot/hummingbot-api](https://github.com/hummingbot/hummingbot-api)
 
-## Key Features
+## What is Hummingbot API?
 
-- ⚙️ **Standardized and production-ready** API for managing bots, executing trades, and monitoring multi-exchange portfolios
-- 🔄 **Expanded capabilities** including direct trading, portfolio rebalancing, and account management — all via API
-- 📊 **Real-time monitoring** of portfolio performance across multiple exchanges
-- 🎯 **Market data collection** for real-time and historical price feeds
-- 🔧 **Comprehensive bot orchestration** for managing multiple trading instances
+The Hummingbot API is designed to be your central hub for trading operations, offering:
+
+- **🤖 AI Assistant Integration**: Control your trading with natural language via MCP (Claude, ChatGPT, Gemini)
+- **Multi-Exchange Account Management**: Create and manage multiple trading accounts across different exchanges
+- **Portfolio Monitoring**: Real-time balance tracking and portfolio distribution analysis
+- **Trade Execution**: Execute trades, manage orders, and monitor positions across all your accounts
+- **Automated Trading**: Deploy and control Hummingbot instances with automated strategies
+- **Strategy Management**: Add, configure, and manage trading strategies in real-time
+- **Complete Flexibility**: Build any trading product on top of this robust API framework
+
+Whether you're building a trading dashboard, implementing algorithmic strategies, or creating a comprehensive trading platform, the Hummingbot API provides all the tools you need.
 
 
 ## Architecture
@@ -74,6 +80,49 @@ graph TB
 - **Bot Instances**: Individual Hummingbot containers connected to different exchanges
 - **Docker Management**: Orchestrates multiple Hummingbot container instances
 
+## 🎯 Ways to Interact with Hummingbot API
+
+Choose the method that best fits your workflow:
+
+### 1. 🔧 Swagger UI - API Documentation (Default)
+**Interactive REST API documentation and testing**
+
+- **Best for**: Developers and power users who want full control
+- **Advantages**:
+  - Complete API access - all endpoints available
+  - Direct endpoint testing
+  - Integration development
+  - No additional setup required
+- **Setup**: Automatically available after running setup
+- **Access**: <http://localhost:8000/docs>
+
+### 2. 🤖 MCP - AI Assistant (Optional)
+**Natural language trading commands through Claude, ChatGPT, or Gemini**
+
+- **Best for**: Users who prefer conversational interaction
+- **Advantages**:
+  - Natural language commands
+  - Full access to all API features
+  - Contextual help and explanations
+  - Complex multi-step operations made simple
+  - Progressive credential setup with `setup_connector` tool
+- **Setup**: See [MCP Installation Guide](/mcp/installation/)
+- **Examples**:
+  - First-time: "Set up my Solana wallet" → Guides through credential setup
+  - Trading: "What's the price to swap 0.01 SOL for USDC? Execute the trade"
+
+### 3. 📊 Dashboard - Web Interface (Optional)
+**Visual interface for common operations**
+
+- **Best for**: Users who prefer graphical interfaces
+- **Advantages**:
+  - Intuitive visual workflows
+  - Real-time charts and graphs
+  - Quick access to common tasks
+- **Limitations**: Not all API functions available (focused on core features)
+- **Setup**: Enable during installation
+- **Access**: <http://localhost:8501>
+
 ## Use Cases
 
 The Hummingbot API enables various trading applications:
@@ -89,98 +138,76 @@ The Hummingbot API enables various trading applications:
 - **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
 - **[Quickstart Guide](quickstart.md)** - Learn how to:
     - Add exchange credentials
-    - View portfolio balances  
+    - View portfolio balances
     - Place your first market order
 
 The guides include Docker setup and Python API client examples to get you trading in minutes.
 
-## API Routers
+## API Endpoints
 
-The Hummingbot API provides the following key routers:
+The Hummingbot API is organized into functional routers covering:
 
-### 🐳 Docker Management
-Manage Docker containers and instances running Hummingbot
+- 🐳 **Docker Management** - Container lifecycle and orchestration
+- 💳 **Account Management** - Multi-exchange account configuration
+- 🔌 **Connector Discovery** - Exchange connector information
+- 📊 **Portfolio Management** - Real-time portfolio tracking and analytics
+- 💹 **Trading Operations** - Order execution and position management
+- 🤖 **Bot Orchestration** - Deploy and manage trading bots
+- 📋 **Strategy Management** - Controllers and scripts
+- 📊 **Market Data** - Real-time and historical market data
+- 🔄 **Backtesting** - Strategy testing with historical data
+- 📈 **Archived Bot Analytics** - Historical bot performance analysis
+- 🌐 **Gateway** - Gateway container and DEX infrastructure management
+- 🔄 **Gateway Swaps** - DEX swap execution and monitoring
+- 💧 **Gateway CLMM** - Concentrated liquidity position management
 
-- `GET /docker/running` - Check if Docker daemon is running
-- `GET /docker/available-images` - List available Docker images
-- `GET /docker/active-containers` - Get all running containers
-- `POST /docker/pull-image` - Pull new Docker images
-- `POST /docker/start-container/{name}` - Start a container
-- `POST /docker/stop-container/{name}` - Stop a container
-- `POST /docker/remove-container/{name}` - Remove container and archive data
-
-### 💼 Account Management
-Handle exchange account credentials and configurations
-
-- `GET /accounts` - List all trading accounts
-- `POST /accounts` - Create new trading account
-- `PUT /accounts/{id}` - Update account credentials
-- `DELETE /accounts/{id}` - Delete trading account
-- `GET /accounts/{id}/balances` - Get account balances
-
-### 🔌 Connector Discovery
-Discover and manage available exchange connectors
-
-- `GET /connectors` - List all available connectors
-- `GET /connectors/{name}` - Get connector details
-- `GET /connectors/{name}/trading-rules` - Get trading rules and limits
-- `GET /connectors/{name}/markets` - List supported trading pairs
-
-### 📊 Portfolio Management
-Monitor and analyze portfolio performance across exchanges
-
-- `GET /portfolio/balances` - Get aggregated portfolio balances
-- `GET /portfolio/performance` - Get portfolio performance metrics
-- `GET /portfolio/distribution` - Get token distribution analysis
-- `GET /portfolio/history` - Get historical portfolio data
-
-### 💱 Trading Operations
-Execute trades, manage orders, and monitor positions
-
-- `POST /trading/orders` - Place new order
-- `GET /trading/orders` - List active orders
-- `DELETE /trading/orders/{id}` - Cancel order
-- `GET /trading/positions` - Get open positions
-- `GET /trading/history` - Get trade history
-- `POST /trading/close-position` - Close a position
-
-### 📈 Strategy Management
-Configure and deploy trading strategies with real-time updates
-
-- `GET /controllers` - List available strategy controllers
-- `POST /controllers/{name}/deploy` - Deploy strategy controller
-- `PUT /controllers/{id}/config` - Update strategy parameters
-- `GET /scripts` - List available trading scripts
-- `POST /scripts/run` - Execute trading script
-
-### 📉 Market Data
-Access real-time and historical market data
-
-- `GET /market-data/ticker/{pair}` - Get current ticker data
-- `GET /market-data/orderbook/{pair}` - Get order book snapshot
-- `GET /market-data/candles/{pair}` - Get historical candles
-- `GET /market-data/trades/{pair}` - Get recent trades
-- `WS /market-data/stream` - Real-time market data stream
-
-### 🤖 Bot Orchestration
-Deploy, configure, and manage multiple bot instances
-
-- `GET /bot-orchestration/bots` - List all bot instances
-- `POST /bot-orchestration/deploy` - Deploy new bot
-- `PUT /bot-orchestration/bots/{id}/config` - Update bot configuration
-- `POST /bot-orchestration/bots/{id}/start` - Start bot
-- `POST /bot-orchestration/bots/{id}/stop` - Stop bot
-- `GET /bot-orchestration/bots/{id}/status` - Get bot status
-
-### 🧪 Backtesting
-Run strategy backtests with historical data
-
-- `POST /backtesting/run` - Start new backtest
-- `GET /backtesting/results/{id}` - Get backtest results
-- `GET /backtesting/metrics/{id}` - Get performance metrics
-- `POST /backtesting/optimize` - Run parameter optimization
+For detailed endpoint documentation, see the **[API Routers Guide](routers.md)**.
 
 
+
+## System Dependencies
+
+The platform includes these essential services:
+
+### PostgreSQL Database
+Stores all trading data including:
+
+- Orders and trade history
+- Account states and balances
+- Positions and funding payments
+- Performance metrics
+
+**Note:** The database is automatically initialized using environment variables. The included `init-db.sql` serves as a safety net.
+
+### EMQX Message Broker
+Enables real-time communication with trading bots:
+
+- Receives live updates from running bots
+- Sends commands to control bot execution
+- Handles real-time data streaming
+
+## Configuration
+
+### Environment Variables
+Key configuration options available in `.env`:
+
+- **CONFIG_PASSWORD**: Encrypts API keys and credentials
+- **USERNAME/PASSWORD**: API authentication credentials
+- **BROKER_HOST/PORT**: EMQX message broker settings
+- **DATABASE_URL**: PostgreSQL connection string
+- **ACCOUNT_UPDATE_INTERVAL**: Balance update frequency (minutes)
+- **AWS_API_KEY/AWS_SECRET_KEY**: S3 archiving (optional)
+- **BANNED_TOKENS**: Comma-separated list of tokens to exclude
+- **LOGFIRE_TOKEN**: Observability and monitoring (production)
+
+### Bot Instance Structure
+Each bot maintains its own isolated environment:
+```
+bots/instances/hummingbot-{name}/
+├── conf/           # Configuration files
+├── data/           # Bot databases and state
+└── logs/           # Execution logs
+```
 
 ## Authentication
 

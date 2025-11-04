@@ -284,6 +284,7 @@ nav:
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
+      - API Routers: hummingbot-api/routers.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
