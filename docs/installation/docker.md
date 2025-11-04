@@ -57,50 +57,29 @@ This single command sets up:
 - **PostgreSQL** - Database for trading data
 - **EMQX Broker** - Message broker for real-time bot communication
 
-### Connect an AI Assistant (Recommended)
+### Connect Claude Code (Recommended)
 
-After setup completes, connect an AI assistant for natural language trading:
+After setup completes, connect Claude Code with one command:
 
-#### Claude Desktop (Recommended)
+```bash
+claude mcp add --transport stdio hummingbot -- docker run --rm -i -e HUMMINGBOT_API_URL=http://host.docker.internal:8000 -v hummingbot_mcp:/root/.hummingbot_mcp hummingbot/hummingbot-mcp:latest
+```
 
-1. **Install Claude Desktop**
-   Download from [https://claude.ai/download](https://claude.ai/download)
+Then use natural language in your terminal:
 
-2. **Configure the MCP Server**
-   Open (or create) your Claude Desktop config file:
+- "Show me my portfolio balances"
+- "Create a market making strategy for ETH-USDT on Binance"
+- "What are my open positions?"
+- "Start Gateway in development mode for DEX trading"
 
-   === "macOS"
-       `~/Library/Application Support/Claude/claude_desktop_config.json`
+For other AI assistants (Claude Desktop, ChatGPT, Gemini), see the [Hummingbot API README](https://github.com/hummingbot/hummingbot-api).
 
-   === "Windows"
-       `%APPDATA%\Claude\claude_desktop_config.json`
+#### Alternative Access Methods
 
-3. **Add Hummingbot MCP configuration:**
-   ```json
-   {
-     "mcpServers": {
-       "hummingbot": {
-         "command": "docker",
-         "args": ["run", "--rm", "-i", "-e", "HUMMINGBOT_API_URL=http://host.docker.internal:8000", "-v", "hummingbot_mcp:/root/.hummingbot_mcp", "hummingbot/hummingbot-mcp:latest"]
-       }
-     }
-   }
-   ```
+Instead of (or in addition to) Claude Code:
 
-4. **Restart Claude Desktop**
-
-5. **Start trading with natural language!**
-   - "Show me my portfolio balances"
-   - "Create a market making strategy for ETH-USDT on Binance"
-   - "What are my open positions?"
-   - "Start Gateway in development mode for DEX trading"
-
-#### Alternative: Dashboard or API
-
-Instead of (or in addition to) MCP:
-
-- **Dashboard**: http://localhost:8501
-- **Swagger UI**: http://localhost:8000/docs
+- **Dashboard**: http://localhost:8501 (if enabled during setup)
+- **Swagger UI**: http://localhost:8000/docs (always available)
 
 ### What You Get
 

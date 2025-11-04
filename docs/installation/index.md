@@ -94,27 +94,22 @@ After setup completes:
 !!! note "Cloud Servers"
     If you are using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections to the necessary ports.
 
-### Connect an AI Assistant (Optional)
+### Connect Claude Code (Optional)
 
-If you enabled MCP during setup, you can connect an AI assistant:
+If you enabled MCP during setup, connect Claude Code with one command:
 
-**Claude Desktop:**
-1. Install [Claude Desktop](https://claude.ai/download)
-2. Add to config file (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS):
-   ```json
-   {
-     "mcpServers": {
-       "hummingbot": {
-         "command": "docker",
-         "args": ["run", "--rm", "-i", "-e", "HUMMINGBOT_API_URL=http://host.docker.internal:8000", "-v", "hummingbot_mcp:/root/.hummingbot_mcp", "hummingbot/hummingbot-mcp:latest"]
-       }
-     }
-   }
-   ```
-3. Restart Claude Desktop
-4. Start trading: "Show me my portfolio balances"
+```bash
+claude mcp add --transport stdio hummingbot -- docker run --rm -i -e HUMMINGBOT_API_URL=http://host.docker.internal:8000 -v hummingbot_mcp:/root/.hummingbot_mcp hummingbot/hummingbot-mcp:latest
+```
 
-📚 **Full Documentation**: [Hummingbot API README](https://github.com/hummingbot/hummingbot-api)
+Then use natural language in your terminal:
+
+- "Show me my portfolio balances"
+- "Create a market making strategy for ETH-USDT on Binance"
+- "What are my open positions?"
+- "Start Gateway in development mode for DEX trading"
+
+For other AI assistants (Claude Desktop, ChatGPT, Gemini), see the [Hummingbot API README](https://github.com/hummingbot/hummingbot-api).
 
 ---
 
