@@ -1,49 +1,82 @@
-# Installation
+# Hummingbot API Installation
 
-This guide covers all available installation methods for Hummingbot API.
+**The central hub for running Hummingbot trading bots** - now with AI assistant integration via MCP (Model Context Protocol).
+
+The Hummingbot API provides a comprehensive trading platform with three ways to interact:
+
+1. **🤖 MCP (AI Assistant)** - Control your trading with Claude, ChatGPT, or Gemini using natural language
+2. **📊 Dashboard** - Visual web interface for bot management and monitoring
+3. **🔧 Swagger UI** - Full REST API access for developers and power users
 
 ## Prerequisites
 
-- Docker and Docker Compose installed (for Docker installation)
-- Python 3.10+ and Conda (for source installation)
-- Exchange API keys for trading
+- **Docker** and Docker Compose installed
+- **Git** for cloning the repository
+- Python 3.10+ and Conda (for source installation only)
+- Exchange API keys (can be added after installation)
 
-## Install with Docker (Recommended)
+## Quick Start (Docker - Recommended)
 
-The easiest way to get started with Hummingbot API is using Docker.
-
-### 1. Clone the repository
+Clone the repository and run the setup script:
 
 ```bash
-git clone https://github.com/hummingbot/hummingbot-api
+git clone https://github.com/hummingbot/hummingbot-api.git
 cd hummingbot-api
-```
-
-### 2. Run the setup script
-
-```bash
+chmod +x setup.sh
 ./setup.sh
 ```
 
-The setup script will:
+### Setup Process
 
-- Prompt you to set API authentication credentials (username/password)
-- Configure the database and message broker connections
-- Create a `.env` file with all necessary configurations
-- Start required Docker containers (PostgreSQL, EMQX)
-- Pull the latest Hummingbot Docker image
+The script will prompt you for:
 
-Default credentials if you press Enter: `admin` / `admin`
+1. **Credentials** (required):
+   - Config password (for encrypting bot credentials)
+   - API username and password
 
-### 3. Start the API
+2. **Optional Services**:
+   - **MCP server**: For AI assistant integration
+   - **Dashboard**: For web-based visual interface
 
-```bash
-./run.sh
-```
+3. **Gateway**: Optional passphrase for DEX trading
 
-This pulls the required Docker images and runs Hummingbot API using Docker Compose and the configuration defined in the `docker-compose.yml` file.
+### What Gets Installed
 
-The API will be accessible at `http://localhost:8000`. You can view the interactive Swagger UI documentation at `http://localhost:8000/docs`.
+**Core services** (always installed):
+
+- ✅ **Hummingbot API** (port 8000) - REST API backend
+- ✅ **PostgreSQL** - Database for trading data
+- ✅ **EMQX** - Message broker for real-time communication
+- ✅ **Swagger UI** (port 8000/docs) - API documentation
+
+**Optional services** (enable during setup):
+
+- 🤖 **MCP Server** - For AI assistant integration
+- 📊 **Dashboard** (port 8501) - Web interface
+
+### After Setup
+
+**1. Access Swagger UI** (Default)
+
+The API documentation is immediately available:
+- URL: http://localhost:8000/docs
+- Use the username/password you configured
+- Test all API endpoints directly
+
+**2. Connect AI Assistant** (If MCP Enabled)
+
+If you enabled MCP, see the **[MCP Installation Guide](/mcp/installation/)** for instructions on connecting:
+
+- **Claude Code** (recommended) - One-line CLI setup
+- **Gemini CLI** - Google's AI terminal agent
+- **Codex CLI** - OpenAI's coding assistant
+- **Claude Desktop** - GUI application
+
+**3. Access Dashboard** (If Enabled)
+
+If you enabled Dashboard during setup:
+- URL: http://localhost:8501
+- Use the same username/password from setup
 
 ## Install from Source (for Developers)
 
