@@ -2,8 +2,6 @@
 
 This guide shows you how to connect AI assistants to the Hummingbot API using the MCP (Model Context Protocol) server.
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/Ex27d6vtjVQ?si=rL331015e1ICXd0W" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## 📋 Prerequisites
 
 Before starting, ensure you have:
@@ -31,8 +29,8 @@ Add the MCP server with one command:
 claude mcp add --transport stdio hummingbot -- docker run --rm -i -e HUMMINGBOT_API_URL=http://host.docker.internal:8000 -v hummingbot_mcp:/root/.hummingbot_mcp hummingbot/hummingbot-mcp:latest
 ```
 
-!!! note "Local API URL"
-    If your Hummingbot API is running locally, always use `http://host.docker.internal:8000` instead of `http://localhost:8000`
+!!! note "Local Hummingbot API URL"
+    If you installed Hummingbot API from source and it's running locally outside of Docker, use `http://localhost:8000` instead of `http://host.docker.internal:8000`
 
 #### Start Trading
 
@@ -44,8 +42,6 @@ Use natural language in your terminal:
 "What are my open positions?"
 "Start Gateway in development mode for DEX trading"
 ```
-
----
 
 ### Gemini CLI
 
@@ -95,8 +91,6 @@ Install Gemini CLI: [Official Guide](https://github.com/google-gemini/gemini-cli
    ```
 
    ✅ You should see `hummingbot` in the output.
-
----
 
 ### Codex CLI
 
@@ -219,6 +213,7 @@ Once configured, test with these commands:
 **Problem**: MCP server won't connect
 
 **Solutions**:
+
 - Ensure Hummingbot API is running: `docker ps | grep hummingbot-api`
 - Use `http://host.docker.internal:8000` not `http://localhost:8000` for local setups
 - Verify Docker is running
@@ -228,6 +223,7 @@ Once configured, test with these commands:
 **Problem**: "Invalid credentials" or similar errors
 
 **Solutions**:
+
 - Check username/password in `.env` file
 - Ensure credentials match what you configured during setup
 - Verify API is accessible: `curl -u admin:admin http://localhost:8000/`
@@ -237,6 +233,7 @@ Once configured, test with these commands:
 **Problem**: Docker-related errors
 
 **Solutions**:
+
 - Restart Docker Desktop
 - Check Docker has network access
 - On Linux, ensure user is in `docker` group
@@ -250,7 +247,3 @@ After successful installation:
 1. **Explore Tools**: See [MCP Tools](/mcp/tools/) for available capabilities
 2. **Try Examples**: Review [Example Workflows](/mcp/#example-workflows)
 3. **Security**: Read [Security Guidelines](/mcp/#security-considerations)
-
----
-
-📢 **Need help?** Join our [Discord community](https://discord.gg/hummingbot) or visit the [GitHub repository](https://github.com/hummingbot/mcp).
