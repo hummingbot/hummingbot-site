@@ -87,4 +87,4 @@ The Beta Bot Battle was a comprehensive learning journey:
 
 ## Upcoming Bot Battles
 
-The Beta Bot Battle was a testament to our community's skill and commitment. While this edition served as a precursor to monthly Bot Battles that are reserved for [Botcamp](/botcamp) members, we're excited about opening certain future editions to the overall Hummingbot community.
+The Beta Bot Battle was a testament to our community's skill and commitment. While this edition served as a precursor to monthly Bot Battles that are reserved for [Botcamp](https://www.botcamp.xyz/) members, we're excited about opening certain future editions to the overall Hummingbot community.

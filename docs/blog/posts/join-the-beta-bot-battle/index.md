@@ -16,7 +16,7 @@ Hummingbot community!
 
 Whether you're a seasoned quant trader or just dipping your toes into the world of crypto bots, this competition is tailor-made for you! Compete with other bot-runners, see how your strategy stacks up, and win prizes!
 
-This Beta Bot Battle is a test run for the monthly bot trading competitions that will be a major component of [Botcamp](/botcamp) starting in October. While the Botcamp competitions will be reserved exclusively for Botcamp members, we are opening up this beta competition to any Hummingbot user!
+This Beta Bot Battle is a test run for the monthly bot trading competitions that will be a major component of [Botcamp](https://www.botcamp.xyz/) starting in October. While the Botcamp competitions will be reserved exclusively for Botcamp members, we are opening up this beta competition to any Hummingbot user!
 
 <!-- more -->
 

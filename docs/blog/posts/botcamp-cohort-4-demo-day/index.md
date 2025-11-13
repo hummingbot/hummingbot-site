@@ -34,7 +34,7 @@ Run this script in Hummingbot (development branch): `start --script 1overN_portf
 
 ![](image_2.jpg)
 
-Alex created a simpler version of the [Spot-Perpetual Arbitrage](/strategies/spot-perpetual-arbitrage/) strategy, since the original strategy was found to have certain issues, including executing redundant trades. To address these issues and cater to those who lean towards a script-based format, the original code has been reformatted and improved. Now, users who favor a script-based approach can implement the strategy more efficiently.
+Alex created a simpler version of the [Spot-Perpetual Arbitrage](../../../strategies/spot-perpetual-arbitrage.md) strategy, since the original strategy was found to have certain issues, including executing redundant trades. To address these issues and cater to those who lean towards a script-based format, the original code has been reformatted and improved. Now, users who favor a script-based approach can implement the strategy more efficiently.
 
 ![](image_3.jpg)
 

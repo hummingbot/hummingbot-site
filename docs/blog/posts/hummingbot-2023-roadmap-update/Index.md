@@ -10,7 +10,7 @@ categories:
 
 ![](cover.png)
 
-In December, we shared our ambitious [technical roadmap](../hummingbot-roadmap-q2-2021/index.md) for 2023, detailing the features and improvements we planned to introduce throughout the year. Today, we are excited to provide an update on the progress we've made, the milestones we've reached, and the exciting plans we have for the remainder of the year.
+In December, we shared our ambitious [technical roadmap](../hummingbot-2023-technical-roadmap/index.md) for 2023, detailing the features and improvements we planned to introduce throughout the year. Today, we are excited to provide an update on the progress we've made, the milestones we've reached, and the exciting plans we have for the remainder of the year.
 
 ## What's Been Shipped
 
@@ -18,7 +18,7 @@ We are proud to have completed several key items from our roadmap:
 
 <!-- more -->
 
-1. Expanded Hummingbot to directional strategies by introducing the [Candles Feed](../../../v2-strategies/candles-feed.md) OHLCV generator and the [PositionExecutor Smart Component](../../../v2-strategies/executors.md), enhancing the efficiency and flexibility of our trading algorithms
+1. Expanded Hummingbot to directional strategies by introducing the [Candles Feed](../../../v2-strategies/candles/index.md) OHLCV generator and the [PositionExecutor Smart Component](../../../v2-strategies/executors/index.md), enhancing the efficiency and flexibility of our trading algorithms
 2. Introduced the [Orchestration Module](../../../installation/broker.md) to simplify the management of multiple trading bots and strategies, which is being developed by a community team
 3. Revamped the installation process using Docker Compose and introduced the new [Deploy Examples](https://github.com/hummingbot/deploy-examples) repo
 4. Grew the [library of custom Script examples](https://github.com/hummingbot/hummingbot/tree/master/scripts), providing users with more tools and resources to create their own custom trading strategies

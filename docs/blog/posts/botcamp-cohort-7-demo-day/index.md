@@ -88,7 +88,7 @@ The audience, including Hummingbot Foundation staff, participated in voting to r
 
 ![](cohort-9.png)
 
-Cohort 7 Demo Day was a resounding success, and we are now accepting registrations for the next public cohort of Botcamp, which will offer the new [Hummingbot Market Maker certification](/certification/#hummingbot-market-maker)!
+Cohort 7 Demo Day was a resounding success, and we are now accepting registrations for the next public cohort of Botcamp, which will offer the new [Hummingbot Market Maker certification](../../../certification/index.md)!
 
 Compared to prior Botcamp cohorts, this cohort will focus on market-making strategies on centralized and decentralized exchanges, rather than general algorithmic trading. This cohort will emphasize theory and deployment over coding, making it ideal for students without Python experience.
 

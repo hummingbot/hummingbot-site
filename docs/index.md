@@ -9,10 +9,10 @@ hide:
 
 # Many Individuals and Institutions Run Hummingbot
 
-![Reported Volumes](/assets/img/reported-volumes-light.png#only-light)
-![Reported Volumes](/assets/img/reported-volumes-dark.png#only-dark)
+![Reported Volumes](./assets/img/reported-volumes-light.png#only-light)
+![Reported Volumes](./assets/img/reported-volumes-dark.png#only-dark)
 
-### See [Reporting](/reporting/) for a real-time dashboard of the volume reported by all Hummingbot instances, filterable by exchange and version.
+### See [Reporting](./reporting.md) for a real-time dashboard of the volume reported by all Hummingbot instances, filterable by exchange and version.
 
 ---
 
@@ -49,7 +49,7 @@ hide:
   </div>
 </div>
 
-### See [Exchanges](/exchanges/) for how Hummingbot Foundation works with these institutions.
+### See [Exchanges](./exchanges/index.md) for how Hummingbot Foundation works with these institutions.
 
 ---
 
@@ -65,7 +65,7 @@ hide:
 
     A robust trading engine featuring connectors to numerous exchanges and a wide array of strategy frameworks.
 
-    [:octicons-arrow-right-24: Documentation](/client/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot)
+    [:octicons-arrow-right-24: Documentation](./client/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Gateway__
 
@@ -73,7 +73,7 @@ hide:
 
     Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
 
-    [:octicons-arrow-right-24: Documentation](/gateway/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway)
+    [:octicons-arrow-right-24: Documentation](./gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
 
@@ -81,7 +81,7 @@ hide:
 
     A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
 
-    [:octicons-arrow-right-24: Documentation](/hummingbot-api/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
+    [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot MCP__
 
@@ -89,7 +89,7 @@ hide:
 
     Model Context Protocol server that enables AI assistants like Claude and Gemini to utilize the Hummingbot API.
 
-    [:octicons-arrow-right-24: Documentation](/mcp/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
+    [:octicons-arrow-right-24: Documentation](./mcp/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Dashboard__
 
@@ -97,7 +97,7 @@ hide:
 
     Web-based graphical interface for the Hummingbot API that lets you configure and deploy multiple Hummingbot instances.
 
-    [:octicons-arrow-right-24: Documentation](/dashboard/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/dashboard)
+    [:octicons-arrow-right-24: Documentation](./dashboard/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/dashboard)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Quants Lab__
 
@@ -105,7 +105,7 @@ hide:
 
     Python framework for quantitative trading research with data collection, backtesting, and automated task scheduling.
 
-    [:octicons-arrow-right-24: Documentation](/quants-lab/) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/quants-lab)
+    [:octicons-arrow-right-24: Documentation](./quants-lab/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/quants-lab)
 
 </div>
 
@@ -121,7 +121,7 @@ hide:
 
     Users run or extend professional strategies such as market making, arbitrage, and directional trading using the modular strategy framework
 
-    [:octicons-arrow-right-24: Strategy Docs](/strategies/)
+    [:octicons-arrow-right-24: Strategy Docs](./strategies/index.md)
 
 -   :material-upload-network:{ .lg .middle } __Connect Your Exchange to Hummingbot__
 
@@ -129,7 +129,7 @@ hide:
 
     Exchanges can integrate with Hummingbot's 40,000+ trading community through our bounty-driven connector development program.
 
-    [:octicons-arrow-right-24: Connector Bounties](/bounties/)
+    [:octicons-arrow-right-24: Connector Bounties](./bounties/index.md)
 
 -   :material-satellite-uplink:{ .lg .middle } __Manage and Deploy with Ease__
 
@@ -137,7 +137,7 @@ hide:
 
     Deploy and manage multiple bot instances easily using Hummingbot API, a command center for all your algo trading operations.
 
-    [:octicons-arrow-right-24: Hummingbot API Docs](/hummingbot-api/)
+    [:octicons-arrow-right-24: Hummingbot API Docs](./hummingbot-api/index.md)
 
 -   :material-flask:{ .lg .middle } __Fetch Market Data and Backtest__
 
@@ -145,7 +145,7 @@ hide:
 
     Use Quants Lab for quantitative trading research, data collection, backtesting, and automated task scheduling.
 
-    [:octicons-arrow-right-24: Quants Lab Docs](/quants-lab/)
+    [:octicons-arrow-right-24: Quants Lab Docs](./quants-lab/index.md)
 
 </div>
 
@@ -240,17 +240,17 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 <div class="grid cards" markdown>
 
--   [![](/blog/strategy-guide-grid-strike/long-grid.png)](/blog/strategy-guide-grid-strike)
+-   [![](./blog/posts/strategy-guide-grid-strike/long-grid.png)](./blog/posts/strategy-guide-grid-strike/index.md)
 
-    ### [Strategy Guide: Grid Strike](/blog/strategy-guide-grid-strike)
+    ### [Strategy Guide: Grid Strike](./blog/posts/strategy-guide-grid-strike/index.md)
 
--   [![](/blog/using-hyperliquid-vaults-with-hummingbot/cover.png)](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
+-   [![](./blog/posts/using-hyperliquid-vaults-with-hummingbot/cover.png)](./blog/posts/using-hyperliquid-vaults-with-hummingbot/index.md)
 
-    ### [Funding Rate Arbitrage on Hyperliquid](/blog/funding-rate-arbitrage-and-creating-vaults-on-hyperliquid/)
+    ### [Funding Rate Arbitrage on Hyperliquid](./blog/posts/using-hyperliquid-vaults-with-hummingbot/index.md)
 
--   [![](/blog/coding-a-custom-v2-controller/cover.webp)](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
+-   [![](./blog/posts/coding-a-custom-v2-controller/cover.webp)](./blog/posts/coding-a-custom-v2-controller/index.md)
 
-    ### [Coding a Liquidation Sniper Strategy](/blog/coding-a-liquidation-sniper-v2-strategy-controller/)
+    ### [Coding a Liquidation Sniper Strategy](./blog/posts/coding-a-custom-v2-controller/index.md)
 
 </div>
 
@@ -258,14 +258,14 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 # A Global Community of Algo Traders
 
-![](/assets/img/globe.png)
+![](./assets/img/globe.png)
 
 <div class="grid cards wide" markdown>
 
-- :material-information-outline: __[Foundation](/about)__: About the Foundation and our mission
-- :material-account-group: __[Community](/community)__: Join our global community of algo traders
-- :material-gavel: __[Governance](/governance)__: Decide how the Hummingbot framework evolves
-- :material-frequently-asked-questions: __[FAQ](/faq)__: Answers to common questions
+- :material-information-outline: __[Foundation](./about/index.md)__: About the Foundation and our mission
+- :material-account-group: __[Community](./community/index.md)__: Join our global community of algo traders
+- :material-gavel: __[Governance](./governance/index.md)__: Decide how the Hummingbot framework evolves
+- :material-frequently-asked-questions: __[FAQ](./faq.md)__: Answers to common questions
 
 </div>
 
