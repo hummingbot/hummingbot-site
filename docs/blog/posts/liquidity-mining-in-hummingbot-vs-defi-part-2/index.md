@@ -149,6 +149,6 @@ To learn more about liquidity mining, see below:
 
 - [Hummingbot discord community and 24/7 support](https://discord.hummingbot.io)
 - [Hummingbot Miner’s app: current liquidity mining campaigns](https://miner.hummingbot.io/markets)
-- [Hummingbot quick start](../quickstart-dashboard/0-index.md)
-- [Liquidity mining quick start](../quickstart-liquidity-mining/0-index.md)
+- [Hummingbot quick start](../quickstart-dashboard/index.md)
+- [Liquidity mining quick start](../introducing-liquidity-mining-a-marketplace-for-market-makers/index.md)
 - Follow [@hummingbot_io](https://twitter.com/hummingbot_io) on Twitter and sign-up for our [our newsletter](https://hummingbot.substack.com/) to stay up to date on new campaigns and product developments

@@ -1,11 +1,11 @@
 Scripts are the entry point for Hummingbot strategies. Standalone scripts let new users automate basic trading actions and implement simple versions of Humminggbot strategies.
 
-They also enable Hummingbot users to build customized strategies using the [Strategy V2](/strategies) framework, and access the full power of Hummingbot exchange connectors in a few lines of Python code.
+They also enable Hummingbot users to build customized strategies using the [Strategy V2](../strategies/index.md) framework, and access the full power of Hummingbot exchange connectors in a few lines of Python code.
 
 !!! note Restart Hummingbot
      Should your script run into an error, it's crucial that you exit Hummingbot entirely, correct or debug the faulty script, and then restart Hummingbot. The stop command won't rectify the issue in case of an error. To get back on track, a complete shutdown and subsequent relaunch of Hummingbot is required.
 
-For more info, see the [Script Walkthrough](/v2-strategies/walkthrough/). This detailed walkthrough shows you how to run a simple directional algo trading strategy.
+For more info, see the [Script Walkthrough](../v2-strategies/walkthrough.md). This detailed walkthrough shows you how to run a simple directional algo trading strategy.
 
 ## Script Examples
 
@@ -23,7 +23,7 @@ We welcome new sample script contributions from users! To submit a contribution,
 
 ## Configuration Files
 
-Scripts can be created both with and without [config files](/client/config-files/).
+Scripts can be created both with and without [config files](../client/config-files.md).
 
 To create a configuration file for your script, execute:
 
@@ -47,13 +47,13 @@ Other scripts, including simple examples and older scripts, inherit from the [Sc
 
 ## Script Architecture
 
-[![](./diagrams/14.png)](./diagrams/14.png)
+[![](../v2-strategies/diagrams/14.png)](../v2-strategies/diagrams/14.png)
 
 The entry point for StrategyV2 is a Hummingbot script that inherits from the [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py) class. 
 
-This script fetches data from the Market Data Provider and manages how each Executor behaves. Optionally, it can load a Controller to manage the stategy logic instead of defining it in within the script. Go through the [Walkthrough](./walkthrough.md) to learn how it works. 
+This script fetches data from the Market Data Provider and manages how each Executor behaves. Optionally, it can load a Controller to manage the stategy logic instead of defining it in within the script. Go through the [Walkthrough](../v2-strategies/walkthrough.md) to learn how it works. 
 
-See [Sample Scripts](/v2-strategies/examples) for more examples of StrategyV2-compatible scripts.
+See [Sample Scripts](../v2-strategies/examples/index.md) for more examples of StrategyV2-compatible scripts.
 
 ### Adding Config Parameters
 

@@ -1,4 +1,4 @@
-*Originally published in the Hummingbot blog: [part 1](https://blog.hummingbot.org/2021-03-hummingbot-architecture/), [part 2](https://blog.hummingbot.org/2021-05-hummingbot-architecture-part2/)*
+*Originally published in the Hummingbot blog: [part 1](../blog/posts/hummingbot-architecture-part-1/index.md), [part 2](../blog/posts/hummingbot-architecture-part-2/index.md)*
 
 ## Introduction
 
@@ -81,7 +81,7 @@ You can compare this to trading libraries that don't provide order tracking - tr
 
 For example, in the Binance exchange connector [`binance_exchange.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/connector/exchange/binance/binance_exchange.py), you can find the order tracking logic in `BinanceExchange.c_start_tracking_order()` and `BinanceExchange.c_stop_tracking_order()`. These functions are typically called when orders are being created, cancelled, and also when order status updates arrive from the exchange API.
 
-![](/assets/img/architecture-order-tracking.webp)
+![](../assets/img/architecture-order-tracking.webp)
 
 ### Graceful Degradation and Reliability
 
@@ -91,7 +91,7 @@ Let's say we are in a period of really busy trading in Binance, and Binance API 
 
 Since there is no guarantee the exchange API would give us a response to an order creation API call at the time - we have no reliable way of knowing whether the order has been placed or not in the market. If you look into the `BinanceExchange.create_order()` function, you'll find that the exchange connector starts tracking the order before it is submitted to the exchange API.
 
-![](/assets/img/architecture-order-tracking-1.webp)
+![](../assets/img/architecture-order-tracking-1.webp)
 
 This is done to make sure Hummingbot would not forget about the order in case the `self.query_api()` call (which follows immediately) times out or fails, but the order was actually placed into the exchange.
 
@@ -103,7 +103,7 @@ Besides exchange instability and the need handle them gracefully, the other aspe
 
 Hummingbot market connectors are designed to use the lowest latency data source, which is web socket on most centralized exchanges, that is available. Let's take a look at the Binance market connector as an example again. Specifically, let's take a look at the `BinanceAPIOrderBookDataSource` in `hummingbot.connector.exchange.binance.binance_api_order_book_data_source`.
 
-![](/assets/img/architecture-low-latency.webp)
+![](../assets/img/architecture-low-latency.webp)
 
 ## Gateway
 
@@ -113,11 +113,11 @@ Hummingbot solves this problem via the Gateway middleware component, which can b
 
 Take the Balancer DEX connector for example. Almost all of the operations in the connector - whether it is getting market data like order prices, fetching the wallet balance or making orders - go through the `BalancerConnector._api_request()` method. When you look into the method, you'll find it's really just delegating all the work to a Gateway API endpoint.
 
-![](/assets/img/architecture-gateway-api.webp)
+![](../assets/img/architecture-gateway-api.webp)
 
 For example, here is how the `balancer/sell` API endpoint is implemented in Gateway:
 
-![](/assets/img/architecture-gateway-api2.webp)
+![](../assets/img/architecture-gateway-api2.webp)
 
 **References:**
 
@@ -139,7 +139,7 @@ You can imagine strategy objects are watching the markets like a movie, where ea
 
 Let's take a look at the `c_tick()` function of the Avellaneda & Stoikov market making strategy in Hummingbot, below:
 
-![](/assets/img/architecture-avellaneda.webp)
+![](../assets/img/architecture-avellaneda.webp)
 
 Here is an overview of what the strategy is doing every second - after it's been properly initialized.
 
@@ -169,7 +169,7 @@ These lines executes the order proposals generated from the logic above - sendin
 
 If you do a manual trace of the `get_price()` or `get_mid_price()` functions in the Avellaneda & Stoikov strategy code, you'll find it leads to `OrderBook.c_get_price()` in the module `hummingbot.core.data_type.order_book`.
 
-![](/assets/img/architecture-getprice.webp)
+![](../assets/img/architecture-getprice.webp)
 
 The `OrderBook` class tracks the real-time order book, including depth on both sides, trades and prices, on live exchanges. Each market pair in an exchange market will have one order book. Since trailing indicators often depend on price and order book depths as their fundamental inputs, order book information is often among first inputs to be read by a strategy in every `c_tick()` iteration.
 
@@ -179,13 +179,13 @@ Sophisticated strategies often need some trailing indicators from the market, in
 
 Let's take a look at how it collects new samples from the strategy code. For every call to `c_tick()`, `c_collect_market_variables()` would send the newest price to `self._avg_vol` via `self._avg_vol.add_sample(price)`.
 
-![](/assets/img/architecture-avi.webp)
+![](../assets/img/architecture-avi.webp)
 
 When you look into the relevant code for calculating the values of the trailing indicator, you'll find that `AverageVolatilityIndicator` stores a fixed number of samples of prices and outputs a smoothed standard deviation statistic of the prices in the window.
 
-![](/assets/img/architecture-avi2.webp)
+![](../assets/img/architecture-avi2.webp)
 
-![](/assets/img/architecture-avi3.webp)
+![](../assets/img/architecture-avi3.webp)
 
 If you want to write your own custom indicators, you can do so by inheriting from `BaseTrailingIndicator` just like the above, and writing your own sampling and calculation logic.
 
@@ -195,13 +195,13 @@ When you are writing a new connector, or a new strategy - it is critical to be a
 
 The Hummingbot debug console is disabled by default. It needs to be enabled by editing `conf/conf_global.py` and setting debug_console to `true`:
 
-![](/assets/img/architecture-telegram.webp)
+![](../assets/img/architecture-telegram.webp)
 
 Once that has been set, you will be able to telnet to `localhost:8211` to access an interactive Python console that has access to the same memory space as the live Hummingbot instance. You can, for example, examine the live properties from the currently running strategy object and look at the active orders it has made and is tracking.
 
-![](/assets/img/architecture-debug5.webp)
+![](../assets/img/architecture-debug5.webp)
 
-Read more about the [Debug Console](/developers/debug/).
+Read more about the [Debug Console](../developers/debug.md).
 
 ## Hummingbot Pro Preview
 
@@ -213,8 +213,8 @@ A big reason for using Cython within Hummingbot is high performance backtesting.
 
 Here are some preview images of the kind of output you can get from Hummingbot Pro backtesting simulations.
 
-![](/assets/img/architecture-ofc1.webp)
+![](../assets/img/architecture-ofc1.webp)
 
-![](/assets/img/architecture-ofc2.webp)
+![](../assets/img/architecture-ofc2.webp)
 
 Hummingbot Pro will be a paid service for professional traders and hedge funds, with launch planned for Q4 2021.

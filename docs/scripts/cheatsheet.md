@@ -9,7 +9,7 @@ Watch the full video that accompanies this page:
 
 ## Getting started
 
-- Follow the [Installation](/installation) docs for your environment
+- Follow the [Installation](../installation/index.md) docs for your environment
 - Code your script inside the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder
 - Run your script with `start --script [SCRIPT NAME]`
 
@@ -93,12 +93,11 @@ self.notify_hb_app_with_timestamp(msg)
 ```
 
 !!! tip
-    If you have the [Telegram integration](/global-configs/telegram/) activated, you will receive the notifications there too.
+    If you have the [Telegram integration](../global-configs/telegram.md) activated, you will receive the notifications there too.
 
 ### Status
 
 - When you run the `status` command in the app, you will receive the information that is coded under the method `format_status`
-- You can override this method in your script to show any information that you want. Check out [Quickstart - Exercise 3](../getting-started/custom-script/custom-pmm-3.md) for an example.
 - By default, the format status shows the balances and active orders. Check the implementation in [`ScriptStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/script_strategy_base.py).
 
 ## Connectors

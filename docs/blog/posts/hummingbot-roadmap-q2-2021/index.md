@@ -12,7 +12,7 @@ categories:
 
 Two years ago, we decided to open source the technology stack that powered our quant hedge fund and launch Hummingbot. Back then, everyone thought we were crazy, stupid, or both.
 
-Today, [Hummingbot](https://github.com/hummingbot/hummingbot) has become the leading open source trading bot project in crypto, with 12,000+ Discord community members, 1,700+ stars, 700+ forks, and 80 contributors. With integrations to [20+ exchanges](../../../exchanges/index.md) and an expanding list of [protocols](/gateway/connectors/), Hummingbot helps both individual and professional quant traders all over the world skip the low-level drudgery of building and maintaining integrations to centralized and decentralized exchanges alike.
+Today, [Hummingbot](https://github.com/hummingbot/hummingbot) has become the leading open source trading bot project in crypto, with 12,000+ Discord community members, 1,700+ stars, 700+ forks, and 80 contributors. With integrations to [20+ exchanges](../../../exchanges/index.md) and an expanding list of [protocols](../../../gateway/connectors.md), Hummingbot helps both individual and professional quant traders all over the world skip the low-level drudgery of building and maintaining integrations to centralized and decentralized exchanges alike.
 
 <!-- more -->
 
@@ -52,7 +52,7 @@ We expect AscendEx liquidity mining campaigns on Hummingbot Miner to start in Ju
 
 ## Other Hummingbot initiatives in Q2
 
-**Avellaneda market making**: We recently released [a new market making strategy](../../../academy-content/posts/guide-to-the-avellaneda-stoikov-strategy/index.md) based on the classic [Avellaneda-Stoikov market making paper](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf). Because this strategy has a more theoretically sound and academically rigorous foundation, we aim to make this strategy the initial strategy used by new Hummingbot market makers.
+**Avellaneda market making**: We recently released [a new market making strategy](../guide-to-the-avellaneda-stoikov-strategy/index.md) based on the classic [Avellaneda-Stoikov market making paper](https://www.math.nyu.edu/~avellane/HighFrequencyTrading.pdf). Because this strategy has a more theoretically sound and academically rigorous foundation, we aim to make this strategy the initial strategy used by new Hummingbot market makers.
 
 In the next few releases, we plan to port commonly used features from `pure_market_making` to `avellenada_market_making`, as well as move Avellaneda's inventory risk model into the `liquidity_mining` strategy.
 

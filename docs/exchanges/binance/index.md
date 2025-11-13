@@ -1,5 +1,5 @@
 !!! tip "Foundation Partner"
-    Binance is an [exchange partner](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Binance, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Binance referral link](https://accounts.binance.com/register?ref=CBWO4LU6) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Binance is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Binance, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Binance referral link](https://accounts.binance.com/register?ref=CBWO4LU6) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 
 ## 🛠 Connector Info
@@ -13,7 +13,7 @@
 | [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ |
-| [📓 Connector Guide](/academy-content/using-binance-with-hummingbot/) | ✅ | 
+| [📓 Connector Guide](../../blog/posts/using-binance-with-hummingbot/index.md) | ✅ | 
 
 ## ℹ️ Exchange Info
 
@@ -28,7 +28,7 @@
 ## 🔑 How to Connect
 
 !!! tip
-    See the [Binance Connector Guide](/academy-content/using-binance-with-hummingbot/) for details on create API keys on Binance.
+    See the [Binance Connector Guide](../../blog/posts/using-binance-with-hummingbot/index.md/) for details on create API keys on Binance.
 
 From inside the Hummingbot client, run `connect binance`:
 
@@ -63,9 +63,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect binance_paper_trade` instead of `connect binance`.
+Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect binance_paper_trade` instead of `connect binance`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*

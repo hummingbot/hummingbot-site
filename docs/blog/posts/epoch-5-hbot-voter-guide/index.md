@@ -10,7 +10,7 @@ categories:
 
 ![](cover.webp)
 
-Hummingbot Foundation's quarterly [Polls](/governance/polls/) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
+Hummingbot Foundation's quarterly [Polls](../../../governance/polls.md) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
 
 But more importantly, polls have also allowed our community to decide which exchange connectors should be included in the Hummingbot codebase and how they should be prioritized. There are now 44 CEX and DEX connectors in the Hummingbot codebase, and each new connector requires maintenance, testing, and documentation time that imposes a cost on the overall Hummingbot user base.
 
@@ -47,7 +47,7 @@ Exchanges ranked #2, #3, #4 are the Silver exchanges. The Foundation will be the
 
 Exchanges that receive at least 100,000 HBOT Minimum Voting Power are the Bronze exchanges for the next epoch and remain in the codebase, while exchanges that don't meet this threshold will have their connectors removed from the official codebase.
 
-Here are the 26 [CEX Connector](/connectors/) nominees for Epoch 5:
+Here are the 26 [CEX Connector](../../../connectors/index.md) nominees for Epoch 5:
 
 - AltMarkets
 - [AscendEx](https://ascendex.com/register?inviteCode=UEIXNXKW) (Epoch 4 Silver)
@@ -84,7 +84,7 @@ Nominees for the DEX Connector poll are the decentralized exchange (DEX) connect
 
 Similar to the one above, this poll also lets the community pick the Gold, Silver, and Bronze exchanges for Epoch 5, while exchanges that receive less than 100,000 HBOT Minimum Voting Power will have their connectors removed from the official codebase.
 
-Here are the 19 [DEX Connectors](/gateway/connectors/) nominees for Epoch 5:
+Here are the 19 [DEX Connectors](../../../gateway/connectors.md) nominees for Epoch 5:
 
 - Uniswap (Epoch 4 Gold)
 - DeFi Kingdoms
@@ -108,23 +108,23 @@ Here are the 19 [DEX Connectors](/gateway/connectors/) nominees for Epoch 5:
 
 ## Core Strategies Poll
 
-The Core Strategies poll selects the top 3 [strategies](/strategies/) in the Hummingbot codebase, which are maintained by Hummingbot Foundation. We will run these strategies to test Hummingbot ad fund bounties to fix bugs discovered during the next Epoch.
+The Core Strategies poll selects the top 3 [strategies](../../../strategies/index.md) in the Hummingbot codebase, which are maintained by Hummingbot Foundation. We will run these strategies to test Hummingbot ad fund bounties to fix bugs discovered during the next Epoch.
 
 Strategies that receive more than 100,000 HBOT Minimum Voting Power are Community Strategies and not maintained by the Foundation, while those that receive less will be removed from the codebase.
 
 Here are the Core Strategies nominees for Epoch 5:
 
-- [AMM-Arbitrage](/strategies/amm-arbitrage/) (Epoch 4 Core)
-- [Avellaneda Market Making](/strategies/avellaneda-market-making/)
-- [Cross-Exchange Market Making](/strategies/cross-exchange-market-making/) (Epoch 4 Core)
-- [Cross-Exchange Mining](/strategies/cross-exchange-mining/)
-- [Hedge](/strategies/hedge/)
-- [Liquidity Mining](/strategies/liquidity-mining/)
-- [Perpetual Market Making](/strategies/perpetual-market-making/)
-- [Pure Market Making](/strategies/pure-market-making/) (Epoch 4 Core)
-- [Spot Perpetual Arbitrage](/strategies/spot-perpetual-arbitrage/)
-- [TWAP](/strategies/twap/)
-- [AMM-V3 LP](/v1-strategies/) (Epoch 4 Core)
+- [AMM-Arbitrage](../../../strategies/amm-arbitrage.md) (Epoch 4 Core)
+- [Avellaneda Market Making](../../../strategies/avellaneda-market-making.md)
+- [Cross-Exchange Market Making](../../../strategies/cross-exchange-market-making.md) (Epoch 4 Core)
+- [Cross-Exchange Mining](../../../strategies/cross-exchange-mining.md)
+- [Hedge](../../../strategies/hedge.md)
+- [Liquidity Mining](../../../strategies/liquidity-mining.md)
+- [Perpetual Market Making](../../../strategies/perpetual-market-making.md)
+- [Pure Market Making](../../../strategies/pure-market-making.md) (Epoch 4 Core)
+- [Spot Perpetual Arbitrage](../../../strategies/spot-perpetual-arbitrage.md)
+- [TWAP](../../../strategies/twap.md)
+- [AMM-V3 LP](../../../v1-strategies/index.md) (Epoch 4 Core)
 
 ---
 

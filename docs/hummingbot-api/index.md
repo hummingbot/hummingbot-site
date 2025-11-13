@@ -106,7 +106,7 @@ Choose the method that best fits your workflow:
   - Contextual help and explanations
   - Complex multi-step operations made simple
   - Progressive credential setup with `setup_connector` tool
-- **Setup**: See [MCP Installation Guide](/mcp/installation/)
+- **Setup**: See [MCP Installation Guide](../mcp/installation.md)
 - **Examples**:
   - First-time: "Set up my Solana wallet" → Guides through credential setup
   - Trading: "What's the price to swap 0.01 SOL for USDC? Execute the trade"
@@ -219,7 +219,7 @@ The API uses HTTP Basic Authentication:
 
 ## API Client
 
-A modern, asynchronous Python client is available for interacting with the Hummingbot API. This client is used by the [Hummingbot Dashboard](/dashboard/) as the interface layer for all API communications.
+A modern, asynchronous Python client is available for interacting with the Hummingbot API. This client is used by the [Hummingbot Dashboard](../dashboard/index.md) as the interface layer for all API communications.
 
 - **GitHub**: [hummingbot-api-client](https://github.com/hummingbot/hummingbot-api-client)
 - **PyPI**: [pypi.org/project/hummingbot-api-client](https://pypi.org/project/hummingbot-api-client/)
@@ -256,6 +256,6 @@ order = await client.create_order(
 
 ## Related Resources
 
-- [Hummingbot Dashboard](/dashboard/) - Web-based interface built on top of Hummingbot API
+- [Hummingbot Dashboard](../dashboard/index.md) - Web-based interface built on top of Hummingbot API
 - [API Client Documentation](https://github.com/hummingbot/hummingbot-api-client) - Python client library
-- [Hummingbot Client](/client/) - Core trading engine
+- [Hummingbot Client](../client/index.md) - Core trading engine

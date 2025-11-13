@@ -73,9 +73,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect hashkey_paper_trade` instead of `connect hashkey`.
+Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect hashkey_paper_trade` instead of `connect hashkey`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*
@@ -99,6 +99,6 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect hashkey_perpetual_paper_trade` instead of `connect hashkey_perpetual`.
+Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect hashkey_perpetual_paper_trade` instead of `connect hashkey_perpetual`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.

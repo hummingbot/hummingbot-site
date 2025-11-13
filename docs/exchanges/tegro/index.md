@@ -53,6 +53,6 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect tegro_paper_trade` instead of `connect tegro`.
+Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect tegro_paper_trade` instead of `connect tegro`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.

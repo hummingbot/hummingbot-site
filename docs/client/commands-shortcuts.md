@@ -28,7 +28,7 @@ Below are the available commands in the current Hummingbot release.
 
 ## Gateway Commands
 
-Gateway v2.8.0 introduces comprehensive commands for managing wallets, executing swaps, and managing liquidity positions on decentralized exchanges. For detailed usage and examples, see the [Gateway Commands Reference](/gateway/commands).
+Gateway v2.8.0 introduces comprehensive commands for managing wallets, executing swaps, and managing liquidity positions on decentralized exchanges. For detailed usage and examples, see the [Gateway Commands Reference](../gateway/commands.md).
 
 | Command           | Function                                                      |
 | ----------------- | ------------------------------------------------------------- |
@@ -174,11 +174,11 @@ To highlight, hold <kbd>SHIFT</kbd> + LMB (left mouse button) and drag across th
 !!! note
     To select text on macOS, you may need to enable the **Allow Mouse Reporting** option by pressing <kbd>⌘</kbd> + <kbd>R</kbd> or selecting **View > Allow Mouse Reporting** in the menu bar.
 
-![allowmouse](/assets/img/allow_mouse_reporting.png)
+![allowmouse](../assets/img/allow_mouse_reporting.png)
 
 Then you should be able to select text by holding `LMB` (left mouse button) and drag. You can also hold down `⌥ + shift` to select specific lines like the image below.
 
-![highlightmacos](/assets/img/highlight_macos.png)
+![highlightmacos](../assets/img/highlight_macos.png)
 
 When accessing Hummingbot on a Linux cloud server through `ssh` using a macOS terminal, hold down the `Option ⌥` key or `⌥ + ⌘` to highlight text.
 
@@ -191,13 +191,13 @@ When accessing Hummingbot on a Linux cloud server through `ssh` using a macOS te
 
 To use this shortcut, check this box by doing a right-click on the title bar at the top of the Hummingbot window, then select **Properties**.
 
-![](/assets/img/properties_windows.png)
+![](../assets/img/properties_windows.png)
 
 ## Adding New Commands
 
 Currently, Hummingbot supports the following commands:
 
-[![Supported Commands](/assets/img/all-commands.png)](/assets/img/all-commands.png)
+[![Supported Commands](../assets/img/all-commands.png)](../assets/img/all-commands.png)
 
 Depending on the usage of the hummingbot client, you may need to add new commands to the client. This is done by adding a new command class to the `hummingbot/client/command` directory.
 
@@ -209,7 +209,7 @@ The new class should have a function called `command_name` which will be ran whe
 
 Add the new class to the `__init__.py` file in the `hummingbot/client/command` directory and add any necessary imports to the `__init__.py` file.
 
-[![__init__.py File](/assets/img/command-init.png)](/assets/img/command-init.png)
+[![__init__.py File](../assets/img/command-init.png)](../assets/img/command-init.png)
 
 The last step is to add any other functions that the new command class may need.
 

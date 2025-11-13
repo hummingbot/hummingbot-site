@@ -5,7 +5,7 @@
 
 ## Running V2 Strategies
 
-The main logic in a V2 strategy is contained in the [Controller](../controllers), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles) and [Executors](../executors/) to implement the strategy logic.
+The main logic in a V2 strategy is contained in the [Controller](../controllers/index.md), which inherits from a base class like Directional or Market Making, that orchestrates various smart components like [Candles](../candles/index.md) and [Executors](../executors/index.md) to implement the strategy logic.
 
 For users, their primary interface is the [V2 Script](../index.md), a file that defines the configuration parameters and serves as the bridge between the user and the strategy.
 
@@ -30,16 +30,16 @@ The auto-complete for `[SCRIPT_CONFIG_FILE]` will display config files in the lo
 
 Directional strategies inherit from the [DirectionalTrading](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/directional_trading/directional_trading_controller_base.py) strategy base class.
 
-In their controller's `get_processed_data` function, a directional strategy uses technical indicators derived from [Candles](/v2-strategies/data/) to define thresholds which trigger long and short conditions using the `signal` parameter:
+In their controller's `get_processed_data` function, a directional strategy uses technical indicators derived from [Candles](../data/index.md) to define thresholds which trigger long and short conditions using the `signal` parameter:
 
-* `1`: Long [Position Executor](/v2-strategies/executors/#positionexecutor) is created
-* `-1`: Short [Position Executor](/v2-strategies/executors/#positionexecutor) is created
+* `1`: Long [Position Executor](../executors/positionexecutor.md) is created
+* `-1`: Short [Position Executor](../executors/positionexecutor.md) is created
 
 Here are the current V2 directional strategies:
 
 ### Bollinger V1
 
-A simple directional strategy using [Bollinger Band Percent (BBP)](/glossary/#bollinger-bands). BBP measures an asset's price relative to its upper and lower Bollinger Bands, and this strategy uses the current BBP to construct long/short signals.
+A simple directional strategy using [Bollinger Band Percent (BBP)](../../glossary/index.md). BBP measures an asset's price relative to its upper and lower Bollinger Bands, and this strategy uses the current BBP to construct long/short signals.
 
 **Code:**
 
@@ -202,7 +202,7 @@ start --script v2_trend_follower_v1_config.py --conf [SCRIPT_CONFIG_FILE]
 
 ## Market Making Strategies
 
-Market making strategies create and manage a set of [Position Executors](/v2-strategies/executors/#positionexecutor) that place orders around a fixed mid price. They inherit from the [MarketMaking](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/market_making/market_making_controller_base.py) strategy base class. 
+Market making strategies create and manage a set of [Position Executors](../executors/positionexecutor.md) that place orders around a fixed mid price. They inherit from the [MarketMaking](https://github.com/hummingbot/hummingbot/blob/e30406a2d41f1f9c741c29f449f477ab9ad7e4e5/hummingbot/smart_components/strategy_frameworks/market_making/market_making_controller_base.py) strategy base class. 
 
 ### DmanV1
 

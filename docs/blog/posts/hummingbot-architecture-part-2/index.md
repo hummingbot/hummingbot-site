@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-In the last article - [Hummingbot Architecture - Part 1](/academy-content/hummingbot-architecture---part-1/) - of this series, we've discussed the design motivations behind Hummingbot, the clock and the market connectors. Today, we'll be discussing the architecture behind trading strategies - the very component that decides Hummingbot trades with your money. We will also discuss how you can diagnose problems and debug Hummingbot in live trading.
+In the last article - [Hummingbot Architecture - Part 1](../hummingbot-architecture-part-1/index.md) - of this series, we've discussed the design motivations behind Hummingbot, the clock and the market connectors. Today, we'll be discussing the architecture behind trading strategies - the very component that decides Hummingbot trades with your money. We will also discuss how you can diagnose problems and debug Hummingbot in live trading.
 
 <!-- more -->
 

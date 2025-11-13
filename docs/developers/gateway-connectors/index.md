@@ -482,12 +482,12 @@ Before submitting your connector:
 1. **Test locally**: Run Gateway with your connector and test all operations
 2. **Create examples**: Add sample scripts showing connector usage
 3. **Submit PR**: Create pull request to [Gateway repository](https://github.com/hummingbot/gateway)
-4. **Governance proposal**: Submit [New Connector Proposal](/governance/proposals) if required
+4. **Governance proposal**: Submit [New Connector Proposal](../../governance/proposals.md) if required
 
 ## Resources
 
 - [Gateway GitHub Repository](https://github.com/hummingbot/gateway)
-- [Gateway API Documentation](/gateway/commands)
+- [Gateway API Documentation](../../gateway/commands.md)
 - [Connector Schemas](https://github.com/hummingbot/gateway/tree/development/src/schemas)
 - [Example Connectors](https://github.com/hummingbot/gateway/tree/development/src/connectors)
 - [Discord Support](https://discord.gg/hummingbot)

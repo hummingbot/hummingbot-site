@@ -475,7 +475,7 @@ This system ensures at least 2 open slots in each exchange type for new addition
 
 ### Core Strategies
 
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow) | [Pure Market Making (PMM)](/strategies/pure-market-making/), [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/), [AMM Arbitrage](/strategies/amm-arbitrage/) |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow) | [Pure Market Making (PMM)](../strategies/pure-market-making.md), [Cross Exchange Market Making (XEMM)](../strategies/cross-exchange-market-making.md), [AMM Arbitrage](../strategies/amm-arbitrage.md) |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | ![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green) | Avellaneda Market Making, Liquidity Mining, Perpetual Market Making, Spot Perpetual Arbitrage, UniswapV3 LP, Cross-Exchange Mining, TWAP, Hedge |
 
@@ -501,7 +501,7 @@ This system ensures at least 2 open slots in each exchange type for new addition
 
 ### Core Strategies
 
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow) | [Pure Market Making (PMM)](/strategies/pure-market-making/), [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/), [AMM Arbitrage](/strategies/amm-arbitrage/) |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow) | [Pure Market Making (PMM)](../strategies/pure-market-making.md), [Cross Exchange Market Making (XEMM)](../strategies/cross-exchange-market-making.md), [AMM Arbitrage](../strategies/amm-arbitrage.md) |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | ![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green) | Perpetual Market Making, Spot Perpetual Arbitrage, Hedge, Avellaneda Market Making, Liquidity Mining, Cross-Exchange Mining, UniswapV3 LP |
 
@@ -527,7 +527,7 @@ This system ensures at least 2 open slots in each exchange type for new addition
 
 ### Core Strategies
 
-| ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow) | [Pure Market Making (PMM)](/strategies/pure-market-making/), [Cross Exchange Market Making (XEMM)](/strategies/cross-exchange-market-making/), [AMM Arbitrage](/strategies/amm-arbitrage/) |
+| ![](https://img.shields.io/static/v1?label=Hummingbot&message=CORE&color=yellow) | [Pure Market Making (PMM)](../strategies/pure-market-making.md), [Cross Exchange Market Making (XEMM)](../strategies/cross-exchange-market-making.md), [AMM Arbitrage](../strategies/amm-arbitrage.md) |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | ![](https://img.shields.io/static/v1?label=Hummingbot&message=COMMUNITY&color=green) | Avellaneda Market Making, UniswapV3 LP, Hedge, Cross-Exchange Mining, Perpetual Market Making, Aroon Oscillator, Liquidity Mining, TWAP, Spot Perpetual Arbitrage |
 
@@ -540,7 +540,7 @@ This system ensures at least 2 open slots in each exchange type for new addition
 After Epoch 2, the Foundation conducted a [retrospective](https://blog.hummingbot.org/hummingbots-2023-governance-roadmap/) and decided to enact the following changes to improve the governance process:
 
 - Change epoch cadence to from bi-annually to quarterly
-- Start [Polls](/governance/polls/) to make HBOT governance easier
+- Start [Polls](./polls.md) to make HBOT governance easier
 - Cease setting per-epoch HBOT distribution targets
 
 ---

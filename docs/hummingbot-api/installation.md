@@ -66,7 +66,7 @@ The API documentation is immediately available:
 
 After setup, you can connect AI assistants to control Hummingbot with natural language.
 
-See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
+See the **[MCP Installation Guide](../mcp/installation.md)** for complete instructions on connecting:
 
 - **Claude Code** (recommended) - One-line CLI setup
 - **Gemini CLI** - Google's AI terminal agent
@@ -371,7 +371,7 @@ make run
 
 ## Next Steps
 
-After installation, proceed to the [Quickstart Guide](/hummingbot-api/quickstart) to learn how to:
+After installation, proceed to the [Quickstart Guide](quickstart.md) to learn how to:
 
 - Add exchange credentials
 - View your portfolio

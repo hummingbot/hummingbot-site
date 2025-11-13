@@ -2,7 +2,7 @@ This guide demonstrates how to use Hummingbot API to add exchange credentials, v
 
 ## Prerequisites
 
-- Hummingbot API installed and running (see [Installation Guide](/hummingbot-api/installation))
+- Hummingbot API installed and running (see [Installation Guide](installation.md))
 - Exchange API keys (e.g., Binance)
 - Python 3.7+ with `hummingbot-api-client` installed (optional)
 
@@ -644,9 +644,9 @@ Here's a complete example that performs all three operations:
 
 Now that you've completed the quickstart, explore more advanced features:
 
-- **[Bot Management](/hummingbot-api/#bot-orchestration)**: Deploy and manage multiple trading bots
-- **[Strategy Configuration](/hummingbot-api/#strategy-management)**: Configure and deploy trading strategies
-- **[Market Data](/hummingbot-api/#market-data)**: Access real-time and historical market data
-- **[Backtesting](/hummingbot-api/#backtesting)**: Test your strategies with historical data
+- **[Bot Management](index.md#bot-orchestration)**: Deploy and manage multiple trading bots
+- **[Strategy Configuration](index.md#strategy-management)**: Configure and deploy trading strategies
+- **[Market Data](index.md#market-data)**: Access real-time and historical market data
+- **[Backtesting](index.md#backtesting)**: Test your strategies with historical data
 
 For the complete API reference, visit the [API documentation](http://localhost:8000/docs) when your API is running.

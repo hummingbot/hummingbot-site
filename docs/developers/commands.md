@@ -2,7 +2,7 @@
 
 Currently, Hummingbot supports the following commands:
 
-[![Supported Commands](/assets/img/all-commands.png)](/assets/img/all-commands.png)
+[![Supported Commands](../assets/img/all-commands.png)](../assets/img/all-commands.png)
 
 Depending on the usage of the hummingbot client, you may need to add new commands to the client. This is done by adding a new command class to the `hummingbot/client/command` directory. 
 
@@ -14,7 +14,7 @@ The new class should have a function called `command_name` which will be ran whe
 
 Add the new class to the `__init__.py` file in the `hummingbot/client/command` directory and add any necessary imports to the `__init__.py` file.
 
-[![__init__.py File](/assets/img/command-init.png)](/assets/img/command-init.png)
+[![__init__.py File](../assets/img/command-init.png)](../assets/img/command-init.png)
 
 The last step is to add any other functions that the new command class may need. 
 
@@ -52,4 +52,4 @@ command_shortcuts:
 !!! note
     Custom made commands can only be used once a strategy has been imported.
 
-![Custom Script Instructions](/assets/img/script-command.gif)
+![Custom Script Instructions](../assets/img/script-command.gif)

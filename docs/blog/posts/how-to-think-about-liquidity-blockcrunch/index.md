@@ -24,7 +24,7 @@ This discrepancy impacts issuers in various ways:
 Liquidity's advantages are universal. For new tokens, liquidity is crucial as investors seek to buy or sell. Illiquidity undermines market confidence in fair pricing. A 20% bid-ask spread, for instance, means a loss of 20% in value immediately upon purchase. This situation deters trading activity.
 
 ### What are the Negative Effects of Illiquidity?
-Launching an asset without sufficient market-making infrastructure leads to a dysfunctional market and depressed asset prices. My experience in finance, which I detailed in a previous [blog post](../../../academy-content/posts/the-thin-crust-of-liquidity/index.md), supports this view.
+Launching an asset without sufficient market-making infrastructure leads to a dysfunctional market and depressed asset prices. My experience in finance, which I detailed in a previous [blog post](../the-thin-crust-of-liquidity/index.md), supports this view.
 
 While markets can become liquid independently, especially when fundamental frameworks for asset evaluation exist, today’s crypto market, driven by technical factors like supply and demand, benefits significantly from market makers. They play a vital role in reducing bid-ask spreads and facilitating efficient price discovery.
 

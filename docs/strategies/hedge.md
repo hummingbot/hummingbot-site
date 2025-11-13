@@ -10,7 +10,7 @@
 
 This strategy allows you to hedge a market making strategy by automatically opening an opposite positions on another `perp` exchange or `spot` exchange. Configs like `hedge_ratio` allow you to customize how much to hedge. Users are expected to run this strategy alongside another market making strategy.
 
-This strategy was the winning submission in the [dYdX hackathon](https://blog.hummingbot.org/dydx-bounty-winner-announcement/).
+This strategy was the winning submission in the **dYdX hackathon**
 
 ## 🏦 Exchanges supported
 

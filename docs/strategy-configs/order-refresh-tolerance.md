@@ -31,7 +31,7 @@ Imagine you are trading the `ETH-USDT` asset pair on an exchange with a starting
 
 ### Sample market
 
-![Sample Market: ETH-USDT](/assets/img/order_refresh_tolerance_sample_market.png)
+![Sample Market: ETH-USDT](../assets/img/order_refresh_tolerance_sample_market.png)
 
 ### Configuration
 

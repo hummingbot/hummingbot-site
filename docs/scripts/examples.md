@@ -6,7 +6,7 @@ In the Hummingbot client, run a script with:
 start --script [SCRIPT NAME]
 ```
 
-Scripts can be created both with and without [config files](/client/config-files/). To create a configuration file for your script, execute:
+Scripts can be created both with and without [config files](../client/config-files.md). To create a configuration file for your script, execute:
 
 ```shell
 create --script-config [SCRIPT_FILE]
@@ -45,7 +45,7 @@ All sample scripts below can be found in the root [/scripts](https://github.com/
 * **Code**: [simple_xemm](https://github.com/hummingbot/hummingbot/blob/development/scripts/simple_xemm.py)
 * **Author**: [fengtality](https://github.com/fengtality)
 * **Release Added**: [1.10.0](../release-notes/1.10.0.md)
-* **Description**:  A simplified version of the [Cross Exchange Market Making](/strategies/cross-exchange-market-making/) strategy, this bot makes a market on the maker pair and hedges any filled trades in the taker pair. If the spread (difference between maker order price and taker hedge price) dips below `min_spread`, the bot refreshes the order
+* **Description**:  A simplified version of the [Cross Exchange Market Making](../strategies/cross-exchange-market-making.md) strategy, this bot makes a market on the maker pair and hedges any filled trades in the taker pair. If the spread (difference between maker order price and taker hedge price) dips below `min_spread`, the bot refreshes the order
 
 ### AMM Data Feed
 * **Code**: [amm_data_feed_example](https://github.com/hummingbot/hummingbot/blob/development/scripts/amm_data_feed_example.py)
@@ -88,14 +88,14 @@ These scripts are more complex and use StrategyV2 components such as Executors a
 * **Code**:  [v2_with_controllers](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_generic_with_controllers.py)
 * **Author**:  [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
-* **Description**: This script provides a template for launching [Controllers](/v2-strategies/controllers) that implement specific sub-strategies. This strategy is flexible and can be adapted to various trading scenarios by implementing custom controllers.
+* **Description**: This script provides a template for launching [Controllers](../v2-strategies/controllers/index.md) that implement specific sub-strategies. This strategy is flexible and can be adapted to various trading scenarios by implementing custom controllers.
 
 ### V2 Directional RSI
 
 * **Code**: [v2_directional_rsi](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py)
 * **Author**: [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
-* **Description**: This utilizes RSI indicators to generate buy or sell signals based on predefined RSI thresholds. It utilizes [PositionExecutors](/v2-strategies/executors/positionexecutor/) to manage positions with stop-loss and take-profit levels defined by a triple barrier logic.
+* **Description**: This utilizes RSI indicators to generate buy or sell signals based on predefined RSI thresholds. It utilizes [PositionExecutors](../v2-strategies/executors/positionexecutor.md) to manage positions with stop-loss and take-profit levels defined by a triple barrier logic.
 
 ### V2 Funding Rate Arbitrage
 
@@ -109,7 +109,7 @@ These scripts are more complex and use StrategyV2 components such as Executors a
 * **Code**: [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_twap_multiple_pairs.py)
 * **Author**: [cardosofede](https://github.com/cardosofede)
 * **Release Added**: [1.26.0](../release-notes/1.26.0.md)
-* **Description**: This script utilizes [TWAPExecutors](/v2-strategies/executors/twapexecutor/) to buy/sell a block of assets. 
+* **Description**: This script utilizes [TWAPExecutors](../v2-strategies/executors/twapexecutor.md) to buy/sell a block of assets. 
 
 
 ## Other Scripts
@@ -118,7 +118,7 @@ Other example scripts can be found in sub-folders in the [scripts folder](https:
 
 * Basic: Scripts that peform basic operations (good for beginner script developers)
 * Community: Strategies created by Botcamp participants
-* Gateway: Scripts that utilize [Gateway](/gateway)
+* Gateway: Scripts that utilize [Gateway](../gateway/index.md)
 * Utility: Scripts that fetch data, screen markets, and perform other functions
 
 To make a script available to run inside Hummingbot, copy or move the file into the root `/scripts` folder. For example:

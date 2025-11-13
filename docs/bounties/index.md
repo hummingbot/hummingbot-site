@@ -35,8 +35,8 @@ Get your exchange integrated with Hummingbot through our comprehensive bounty ma
 - Bug fixes via bounty system
 - API update compatibility
 - Ongoing technical support
-- [New Connector Proposal](/governance/proposals/) governance support
-- Quarterly voting in [Polls](/governance/polls) to maintain connector in codebase
+- [New Connector Proposal](../governance/proposals.md/) governance support
+- Quarterly voting in [Polls](../governance/polls.md) to maintain connector in codebase
 
 **Marketing Benefits:**
 
@@ -74,7 +74,7 @@ Become an expert in building and maintaining one or more connector types:
 - **CLOB DEX**: Decentralized derivatives platforms  
 - **Gateway AMM**: Automated market makers and DeFi protocols
 
-See [Building CLOB Connectors](/developers/connectors) and [Building Gateway connectors](/developers/gateway-connectors/) for more information.
+See [Building CLOB Connectors](../developers/connectors/index.md) and [Building Gateway connectors](../developers/gateway-connectors/index.md) for more information.
 
 ### Bounty Workflow
 

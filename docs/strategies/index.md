@@ -12,7 +12,7 @@ A Hummingbot strategy loads market data directly from centralized and decentrali
 
 Each [clock tick](../global-configs/clock-tick.md), a strategy loads real-time order book snapshots, user balances, order status and other real-time data from trading pairs on these venues and executes the logic defined in the strategy, parametrized by a pre-defined user configuration.
 
-To run a strategy, a user selects a strategy template, defines its input parameters in a [Config File](../client/config-files.md), and starts it with the `start` command in the Hummingbot client or via the command line with [Strategy Autostart](/global-configs/strategy-autostart/).
+To run a strategy, a user selects a strategy template, defines its input parameters in a [Config File](../client/config-files.md), and starts it with the `start` command in the Hummingbot client or via the command line with [Strategy Autostart](../global-configs/strategy-autostart.md).
 
 ## Strategies V2
 
@@ -20,9 +20,9 @@ Starting in 2023, Hummingbot Foundation began to iteratively introduce a new fra
 
 There are two current ways that Hummingbot strategies can be defined:
 
-[Scripts](/scripts): A simple Python file that contains all strategy logic. We recommend starting with a script if you want a simple way to prototype your strategy.
+[Scripts](../scripts/index.md): A simple Python file that contains all strategy logic. We recommend starting with a script if you want a simple way to prototype your strategy.
 
-[Controllers](/v2-strategies/controllers/): Strategy logic is abstracted into a Controller, which may use Executors and other components for greater modularization. Controllers can be backtested and deployed using Dashboard, and a single loader Script may deploy and manage multiple Controller configurations.
+[Controllers](../v2-strategies/controllers/index.md): Strategy logic is abstracted into a Controller, which may use Executors and other components for greater modularization. Controllers can be backtested and deployed using Dashboard, and a single loader Script may deploy and manage multiple Controller configurations.
 
 Controllers are designed to add another layer of abstraction and circumvent the limit of Hummingbot to only run one strategy per bot instance. You can think of that as the most powerful and advanced setup that Hummingbot currently provides.
 
@@ -47,6 +47,6 @@ Users can access these strategy templates at the [Strategies V1](../v1-strategie
 
 ## Learn Algo Trading and Market Making
 
-To gain a deeper understanding of Hummingbot strategies along with access to the latest Hummingbot framework updates, check out [Botcamp](https://www.botcamp.xyz), the official training and [certification](/certification) for Hummingbot.
+To gain a deeper understanding of Hummingbot strategies along with access to the latest Hummingbot framework updates, check out [Botcamp](https://www.botcamp.xyz), the official training and [certification](../certification/index.md) for Hummingbot.
 
 Operated by the people behind Hummingbot Foundation, Botcamp offers bootcamps and courses that teach you how to design and deploy advanced algo trading and market making strategies using Hummingbot's Strategy V2 framework.

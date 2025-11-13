@@ -85,9 +85,9 @@ See this Metamask article to find the seed phrase: [How to reveal your Secret Re
 
 ### Install Hummingbot
 
-After you have both your Snap Key and Seed Phrase, you are ready to connect Hummingbot to Vega! Make sure to bookmark the [Vega connector](/exchanges/vega/) documentation page, which provides a handy reference.
+After you have both your Snap Key and Seed Phrase, you are ready to connect Hummingbot to Vega! Make sure to bookmark the Vega connector documentation page, which provides a handy reference.
 
-Now, install Hummingbot by following the [installation process](/installation/docker). The easiest way to get started is to clone the Github repo and launch the Docker image:
+Now, install Hummingbot by following the [installation process](../../../installation/docker.md). The easiest way to get started is to clone the Github repo and launch the Docker image:
 
 ```
 git clone https://github.com/hummingbot/hummingbot
@@ -117,7 +117,7 @@ To confirm the connection, run the `balance` command. Your asset balances should
 
 Now, let's configure and run a sample algorithmic trading strategy on Vega - [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py).
 
-This is a simple directional strategy that enters into long positions when the market is oversold (as measured by [RSI](https://en.wikipedia.org/wiki/Relative_strength_index)). Alternatively, if the market is overbought, the bot will enter into a short position. After a position is created, the strategy uses a [PositionExecutor](/v2-strategies/executors/positionexecutor/) to manage it.
+This is a simple directional strategy that enters into long positions when the market is oversold (as measured by [RSI](https://en.wikipedia.org/wiki/Relative_strength_index)). Alternatively, if the market is overbought, the bot will enter into a short position. After a position is created, the strategy uses a [PositionExecutor](../../../v2-strategies/executors/positionexecutor.md) to manage it.
 
 ### Configure Script
 
@@ -132,7 +132,7 @@ Follow the prompts and enter in your desired values, and save the file. This fil
 
 Note that:
 
-* You'll need to use a different exchange (like Binance Futures) other than Vega for `candles_exchange`, since Vega does not currently support [Candles](/v2-strategies/candles/) yet.
+* You'll need to use a different exchange (like Binance Futures) other than Vega for `candles_exchange`, since Vega does not currently support [Candles](../../../v2-strategies/candles/index.md) yet.
 * Trading pair symbols need to be defined correctly for each exchange. For Vega, we will use `ETHUSDT-USDT`, while we'll use the `ETH-USDT` trading pair on Binance Futures.
 * This configuration sets 50 as both the RSI upper bound and lower bound to enter into a position as soon as the strategy starts. You may want to use different values.
 

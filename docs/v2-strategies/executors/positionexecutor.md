@@ -28,7 +28,7 @@ Key Configs:
 
 Example:
 
-![](./triple_barrier.png)
+![triple barrier](triple_barrier.png)
 
 The [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/13aab912ea297a70e52f560cc7239400a1204aa6/hummingbot/smart_components/executors/position_executor/position_executor.py) class implements the [Triple Barrier Method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html) popularized in Martin Prado's famous book [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086).
 
@@ -46,7 +46,7 @@ Additionally, `PositionExecutor` also contains a **Trailing Stop** mechanism, wh
 The `PositionExecutor` class is designed to work on both spot and perpetual exchanges, allowing you to write strategies that be used on either type:
 
 * On perpetual exchanges, they apply the take-profit and stop-loss levels described below to manage a long or short position after it has been created.
-* On spot exchanges, they place take-profit and stop-loss orders to manage an order after it has been filled. This is similar to [Hanging Orders](/strategy-configs/hanging-orders/) but on an individual order level.
+* On spot exchanges, they place take-profit and stop-loss orders to manage an order after it has been filled. This is similar to [Hanging Orders](../../strategy-configs/hanging-orders.md) but on an individual order level.
 
 
 ### Configuration

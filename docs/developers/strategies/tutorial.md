@@ -10,9 +10,9 @@ By the end of this tutorial, you should:
 
 ## Getting started
 
-Follow the instructions in [Installation](/installation) and install Hummingbot **from source**. If the installation was successful, you should see the Hummingbot welcome screen afterwards:
+Follow the instructions in [Installation](../../installation/source.md) and install Hummingbot **from source**. If the installation was successful, you should see the Hummingbot welcome screen afterwards:
 
-![](/assets/img/welcome.gif)
+![](../../assets/img/welcome.gif)
 
 ## Create a strategy
 
@@ -36,7 +36,7 @@ Next, go into the folder and create the four files that we need for our strategy
 touch __init__.py limit_order_config_map.py limit_order.py start.py
 ```
 
-Each of these files has a specific purpose and naming convention. See the [Developer Tutorial](/developers/contributions/) to learn more about the file structure and naming conventions for different strategies. 
+Each of these files has a specific purpose and naming convention. See the [Developer Tutorial](../../developers/contributions.md) to learn more about the file structure and naming conventions for different strategies. 
 
 Lastly, we also need to create a strategy configuration template, which defines the user-configurable parameters defined by the strategy. Like the strategy files and folders, the template file name also follows a convention. 
 
@@ -235,7 +235,7 @@ Your Hummingbot UI comprises three sections:
 2. logger
 3. the input interface
 
-![](/assets/img/hummingbot_ui.png)
+![](../../assets/img/hummingbot_ui.png)
 
 ### Create the strategy
 Follow the steps below to use the strategy we have created.
@@ -250,14 +250,14 @@ Follow the steps below to use the strategy we have created.
 
 Run `start` to run your bot in paper trading mode. You should see the following log messages:
 
-![](/assets/img/limit_order_output.png)
+![](../../assets/img/limit_order_output.png)
 
 You can also run the `history` command to see the results of the trade:
 
-![](/assets/img/limit_order_history.png)
+![](../../assets/img/limit_order_history.png)
 
 ## Conclusion
 
 Congratulations - you have just created your first trading bot! This bot is very simple but should provide the foundation for you to experiment further. Can you prompt the user to change the order amount or trade type, or chain a series of trades?
 
-Before you know it, you will be creating complex trading strategies combining different exchanges with Hummingbot! To learn more about creating Hummingbot strategies, check out our [Developer Tutorial](/developers/contributions/).
+Before you know it, you will be creating complex trading strategies combining different exchanges with Hummingbot! To learn more about creating Hummingbot strategies, check out our [Developer Tutorial](../../developers/contributions.md).

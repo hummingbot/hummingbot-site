@@ -1,5 +1,5 @@
 !!! note
-    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](../../gateway/index.md), see [Building Gateway Connectors](../../gateway/connectors.md).
     
 ## API requirements
 
@@ -107,7 +107,7 @@ A tracker class has to be created for the connector (subclass of `UserStreamTrac
 
 ### Connector
 
-Subclass of `ExchangeBase` (for exchange connectors) or `ConnectorBase` (for [Gateway](../../gateway/adding-dex-connectors.md) connectors).
+Subclass of `ExchangeBase` (for exchange connectors) or `ConnectorBase` (for [Gateway](../../gateway/connectors.md) connectors).
 
 It should include:
 

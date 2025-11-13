@@ -1,7 +1,7 @@
 Hummingbot Gateway is an API/CLI client that exposes standardized REST endpoints to interact with blockchain networks and decentralized exchanges (DEXs). It provides a language-agnostic approach to interacting with these protocols through a unified interface.
 
 !!! tip "New: Manage Gateway via Hummingbot API"
-    **If you installed Hummingbot using the [recommended Hummingbot API method](/installation/docker/#installation-recommended-hummingbot-api)**, you can manage Gateway directly through the API - no separate installation needed!
+    **If you installed Hummingbot using the [recommended Hummingbot API method](../installation/docker.md#installation-recommended-hummingbot-api)**, you can manage Gateway directly through the API - no separate installation needed!
 
     The Hummingbot API includes the `manage_gateway_container` tool that handles Gateway lifecycle:
 
@@ -63,7 +63,7 @@ After setting your password, you should see `Gateway: 🟢 ONLINE` in the upper 
 
 ## Install from Source
 
-You can install Gateway on a standalone basis and then link it to Hummingbot manually. These instructions assume that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker. See [Installation](/installation) for how to install Hummingbot.
+You can install Gateway on a standalone basis and then link it to Hummingbot manually. These instructions assume that you have already installed Hummingbot on the machine where you are installing Gateway, either from source or via Docker. See [Installation](../installation/index.md) for how to install Hummingbot.
 
 ### Install Prerequisites
 
@@ -131,7 +131,7 @@ For a fresh installation, select all options. The script will preserve any exist
 
 If you want to enable HTTPS mode for secure communication:
 
-1. Start your Hummingbot [client](/client) and run `gateway generate-certs`
+1. Start your Hummingbot [client](../client/index.md) and run `gateway generate-certs`
 2. Enter a secure passphrase when prompted
 3. Note the **certs_path** where certificates are stored
 4. When running `pnpm run setup`, choose to link certificates and provide the path
@@ -233,7 +233,6 @@ bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
 
 Once Gateway is running, go back to your Hummingbot client or restart it if you have exited. In the upper right corner, you should see **GATEWAY: 🟢 ONLINE** if your Hummingbot client is successfully connected to Gateway.
 
-[![](./legacy/gateway-status.png)](./legacy/gateway-status.png)
 
 If you see **GATEWAY: OFFLINE**, check that:
 

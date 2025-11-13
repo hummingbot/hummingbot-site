@@ -3,10 +3,10 @@
 
 The most important components to understand are:
 
-* [**Script**](./scripts/index.md): Entry point for all strategies, this Python file orchestrates the strategy. It may be a simple file that contains all strategy logic, or one that loads one or more Controllers.
-* [**Market Data Provider**](./data/index.md): Single point of access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
-* [**Executor**](./executors/index.md): Manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
-* [**Controller**](./controllers/index.md): Defines a trading strategy based on a strategy controller base class, i.e. Directional or Market Making.
+* [**Script**](../scripts/index.md): Entry point for all strategies, this Python file orchestrates the strategy. It may be a simple file that contains all strategy logic, or one that loads one or more Controllers.
+* [**Market Data Provider**](data/index.md): Single point of access to exchange market data such as historical OHCLV [Candles](./candles/index.md), order book data, and trades.
+* [**Executor**](executors/index.md): Manages orders and positions based on pre-defined user settings, ensuring that orders are placed, modified, or canceled according to the strategy's instructions.
+* [**Controller**](controllers/index.md): Defines a trading strategy based on a strategy controller base class, i.e. Directional or Market Making.
 
 ## Inheritance
 

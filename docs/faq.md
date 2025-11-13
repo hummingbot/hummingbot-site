@@ -36,7 +36,7 @@ Since Hummingbot is an open, modular codebase, many developers and professional 
 
 ### Why did you make Hummingbot available to the general public?
 
-As we wrote in the original [Hummingbot whitepaper](/blog/hummingbot-whitepaper), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
+As we wrote in the original [Hummingbot whitepaper](./blog/posts/hummingbot-whitepaper/index.md), market making is an important function critical to organic, efficient markets that should be decentralized to prevent the concentration risk that exists in traditional finance.
 
 Later, we pioneered the concept of **decentralized market making** by writing the [Liquidity Mining whitepaper](https://hummingbot.io/liquidity-mining.pdf) and built the first such platform: [Hummingbot Miner](https://miner.hummingbot.io). Miner has turned into a successful, standalone business that provides liquidity to hundreds of tokens across multiple exchanges, powered by thousands of individual market makers running Hummingbot.
 
@@ -48,7 +48,7 @@ Market making is the act of simultaneously creating buy and sell orders for an a
 
 Market makers play an important role in providing liquidity to financial markets, especially in the highly fragmented cryptocurrency industry. While large professional market makers fight over the most actively traded pairs on the highest volume exchanges, there exists a massive **long tail of smaller markets** who also need liquidity: tokens outside the top 10, smaller exchanges, decentralized exchanges, and new blockchains.
 
-See [What is market making?](academy-content/posts/what-is-market-making/index.md) for more information.
+See [What is market making?](./blog/posts/what-is-market-making/index.md) for more information.
 
 ### How does Hummingbot store my private keys and API keys?
 
@@ -62,7 +62,7 @@ Hummingbot is a free software, so you can download, install, and run it for free
 
 Transactions from Hummingbot are normal transactions conducted on exchanges; therefore when operating Hummingbot, you would be subject to each exchange’s fees (e.g. maker, taker, and withdrawal fees), as you would if you were trading on that exchange normally (i.e. without Hummingbot).
 
-There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](exchanges/index.md).
+There is no minimum amount of assets to use Hummingbot, but users should pay heed to exchange-specific minimum order sizes. We include links to the exchange's minimum order size page. This can be found in each exchange's page in [Exchange Connectors](./exchanges/index.md)
 
 ## Gateway middleware
 
@@ -71,21 +71,21 @@ There is no minimum amount of assets to use Hummingbot, but users should pay hee
 
 ### What is Gateway?
 
-[Hummingbot Gateway](gateway/index.md) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
+[Hummingbot Gateway](./gateway/index.md) is API middleware that helps Hummingbot clients interact with decentralized exchanges (DEXs) on various blockchain networks. It:
 
 * Standardizes DEX API endpoints
 * Manages interactions with node providers, and
 * Utilizes Javascript-based DEX SDKs
 
-Similar to Hummingbot client, Gateway is open source under the Apache 2.0 license. Community developers can contribute DEX and blockchain connectors to the Gateway codebase via [Pull Request Proposals](/governance/proposals/#pull-request-proposals).
+Similar to Hummingbot client, Gateway is open source under the Apache 2.0 license. Community developers can contribute DEX and blockchain connectors to the Gateway codebase via [Pull Request Proposals](./governance/proposals.md).
 
 ### How do I use Gateway with Hummingbot?
 
 If you want to understand how Gateway works, install the standalone Gateway repository: <https://github.com/hummingbot/gateway>
 
-If you just want to get Gateway up and running alongside Hummingbot, following the [Install with Docker](gateway/installation.md#install-with-docker) process is the easiest method.
+If you just want to get Gateway up and running alongside Hummingbot, following the [Install with Docker](./gateway/installation.md) process is the easiest method.
 
-Afterwards, follow the instructions at [Using Gateway with Hummingbot](gateway/setup.md).
+Afterwards, follow the instructions at [Using Gateway with Hummingbot](./gateway/installation.md).
 
 ### What kinds of DEX bots can you build with Gateway?
 
@@ -109,7 +109,7 @@ Here are some helpful articles and videos:
 * [Getting started with Metamask](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask): Metamask is the current industry standard for wallets, which you use will interact with blockchains
 * [Intro to Ethereum](https://ethereum.org/en/developers/docs/intro-to-ethereum/): Great guide from OpenZeppelin that explains how Ethereum works today (aimed at developers)
 * [What Is Uniswap and How Does It Work?](https://academy.binance.com/en/articles/what-is-uniswap-and-how-does-it-work): Binance Academy article that explain Uniswap and AMMs in general.
-* [Comparing liquidity mining options in DeFi vs. Hummingbot](https://blog.hummingbot.org/2020-08-liquidity-mining-hummingbot-vs-defi/): This CoinAlpha blog post explains how liquidity mining is similar in DeFi and CeFi
+* [Comparing liquidity mining options in DeFi vs. Hummingbot](./blog/posts/liquidity-mining-in-hummingbot-vs-defi/index.md): This CoinAlpha blog post explains how liquidity mining is similar in DeFi and CeFi
 * [Uniswap V3 Explained](https://www.youtube.com/watch?v=ClWR1570UQw): Other DEXs like TraderJoe, SushiSwap, and PancakeSwap are starting to emulate Uniswap V3. Watch this video to understand how Uniswap V3 works.
 
 ### How do node providers and mempool services work?
@@ -144,7 +144,7 @@ While this is infeasible on Solana or BNB Chain, this is possible on Ethereum an
 
 ### How do I use Hummingbot on a AMM DEX like Uniswap?
 
-Check out the [`amm-arb`](/strategies/amm-arbitrage) or [`amm-v3-lp`](/strategies/amm-v3-lp) strategies.
+Check out the [`amm-arb`](./strategies/amm-arbitrage.md) or amm-v3-lp strategies.
 
 ## Hummingbot Foundation
 
@@ -225,15 +225,15 @@ Please see Reputable Sources for information about venues where HBOT may be trad
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](/governance/epochs). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](./governance/epochs.md). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
-See [Hummingbot Governance Proposals](/governance/proposals) for more information on the categories of HBOT grants.
+See [Hummingbot Governance Proposals](./governance/proposals.md) for more information on the categories of HBOT grants.
 
 ### I was an early user of Hummingbot. Am I eligible to claim HBOT tokens?
 
 The Hummingbot Foundation is grateful to everyone who has used Hummingbot, found bugs, and contributed to the codebase in the past. However, for the Retroactive Distribution, the Foundation decided to allocate tokens only to two types of historical activity: 1) Github code contributors and 2) users of the Hummingbot Miner platform. We chose these two types because past activity can be verified through public commit history and Miner API keys, respectively.
 
-Other than those listed in the [HBOT announcement](blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md), there are no other eligible HBOT recipients.
+Other than those listed in the [HBOT announcement](./blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md), there are no other eligible HBOT recipients.
 
 ### What if I accidentally used an exchange address to claim HBOT tokens?
 

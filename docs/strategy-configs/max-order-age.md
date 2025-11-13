@@ -10,7 +10,7 @@ To reconfigure, run the command `config max_order_age` and set the desired value
 
 The `max_order_age` parameter allows you to set a specific duration when resetting your order's age. It refreshes your orders and automatically creates an order based on the spread and movement of the market. Also, hanging orders remain as hanging orders.
 
-![](/assets/img/config.gif)
+![](../assets/img/config.gif)
 
 ## Sample configuration
 
@@ -23,7 +23,7 @@ max_order_age : 20.0
 order_refresh_time : 60.0
 ```
 
-![](/assets/img/max-order-age.png)
+![](../assets/img/max-order-age.png)
 
 ### Max order age with order refresh tolerance
 
@@ -38,7 +38,7 @@ order_refresh_tolerance_pct: 0.1
 order_refresh_time : 60.0
 ```
 
-![](/assets/img/order-refresh-tolerance.png)
+![](../assets/img/order-refresh-tolerance.png)
 
 The orders are not canceling because it is within the 0.1% order refresh tolerance percentage even though the order refresh time is 30 seconds.
 
@@ -52,11 +52,11 @@ max_order_age: 15.0
 order_refresh_time : 30.0
 ```
 
-![](/assets/img/different-config.png)
+![](../assets/img/different-config.png)
 
 The `max_order_age` parameter tried to refresh the order but `order_refresh_tolerance_pct` kicked in. That's why the order was canceled, and the bot created a new order because it reached the threshold of 0.02%.
 
-![](/assets/img/different-config2.png)
+![](../assets/img/different-config2.png)
 
 ### Max order age with hanging orders
 
@@ -70,7 +70,7 @@ max_order_age: 30
 hanging_order_enabled: True
 ```
 
-![](/assets/img/max_order_hanging_order.gif)
+![](../assets/img/max_order_hanging_order.gif)
 
 The hanging orders were not canceled and were only refreshed when `max_order_age` was triggered.
 

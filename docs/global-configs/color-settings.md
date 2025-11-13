@@ -2,7 +2,7 @@
 
 Starting with version 0.45, we added new global configuration parameters that allows users to customize the client's background colors.
 
-![New Hummingbot UI](/assets/img/new-ui-1.png)
+![New Hummingbot UI](../assets/img/new-ui-1.png)
 
 1. `top-pane`
 2. `output-pane`

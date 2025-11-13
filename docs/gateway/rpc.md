@@ -1,6 +1,6 @@
 ## Overview
 
-Starting with [v2.9.0](/release-notes/2.9.0), deep integrations with leading RPC providers like Helius and Infura are available to optimize speed and reduce latency for DEX trading.
+Starting with [v2.9.0](../release-notes/2.9.0.md), deep integrations with leading RPC providers like Helius and Infura are available to optimize speed and reduce latency for DEX trading.
 
 The RPC provider controls your bot's connection to the blockchain network, which is crucial in DEX trading because it directly impacts the speed, reliability, and security of your transactions. A robust node connection ensures:
 

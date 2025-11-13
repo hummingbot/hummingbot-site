@@ -15,7 +15,7 @@ Run `status` command or CTRL+S to show the bot's current status. The output may 
 
 The `status --live` command displays the real-time status of the bot.
 
-![](/assets/img/status-live.gif)
+![](../assets/img/status-live.gif)
 
 !!! note
     Currently, this feature works on all strategies except `liquidity mining` strategy.
@@ -37,13 +37,13 @@ By default, the `order_book` command displays the top 5 bid/ask prices and volum
 
 Run `order_book --live --lines 20` to show the top 20 bid/ask and volume in real-time.
 
-![](/assets/img/orderbook-live-lines.gif)
+![](../assets/img/orderbook-live-lines.gif)
 
 ## View market ticker prices
 
 The `ticker` command displays the market prices, specifically the best bid, best ask, mid price, and last trade price.
 
-![](/assets/img/ticker-command.png)
+![](../assets/img/ticker-command.png)
 
 **Optional arguments**
 
