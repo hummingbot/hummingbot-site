@@ -113,7 +113,7 @@ Given the right market conditions and the right `risk_factor`, it's possible tha
 
 In setting the `risk_factor` it's important to observe the reservation price in regards to the mid price. If the user wishes the spread between these two prices to be wider, the risk factor should be set to a higher value. The further away the reservation price is from the mid price, the more aggressive the strategy is in pursuing its target portfolio allocation, because orders on one side will be far more likely to be filled than on the other.
 
-![Figure 1: Risk factor adjustment flow chart ](/assets/img/avellaneda_risk_factor.svg)
+![Figure 1: Risk factor adjustment flow chart ](../assets/img/avellaneda_risk_factor.svg)
 
 #### ETA (Order size adjustment)
 
@@ -127,7 +127,7 @@ Users have an option to layer orders on both sides. If more than 1 `order_levels
 
 ### Trading logic flow
 
-![Figure 2: Strategy flow chart](/assets/img/avellaneda.svg)
+![Figure 2: Strategy flow chart](../assets/img/avellaneda.svg)
 
 | Step                               | Meaning                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------|

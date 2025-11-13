@@ -11,11 +11,11 @@ Gateway provides standardized connectors for interacting with decentralized exch
 
 | Protocol | Chain | Router | AMM | CLMM | Description |
 |----------|-------|--------|-----|------|---------------|
-| **[Jupiter](/exchanges/gateway/jupiter)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
-| **[Meteora](/exchanges/gateway/meteora)** | Solana | ❌ | ❌ | ✅ | Supports for Dynamic Liquidity Market Maker (DLMM) |
-| **[Raydium](/exchanges/gateway/raydium)** | Solana | ❌ | ✅ | ✅ | Supports for Standard and Concentrated Pools |
-| **[Uniswap](/exchanges/gateway/uniswap)** | Ethereum | ✅ | ✅ | ✅ | Support for V2, V3, and Universal Router |
-| **[PancakeSwap](/exchanges/gateway/pancakeswap)** | Ethereum/BNB | ✅ | ✅ | ✅ | Support for V2, V3, and Smart Router |
+| **[Jupiter](../exchanges/gateway/jupiter.md)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
+| **[Meteora](../exchanges/gateway/meteora.md)** | Solana | ❌ | ❌ | ✅ | Supports for Dynamic Liquidity Market Maker (DLMM) |
+| **[Raydium](../exchanges/gateway/raydium.md)** | Solana | ❌ | ✅ | ✅ | Supports for Standard and Concentrated Pools |
+| **[Uniswap](../exchanges/gateway/uniswap.md)** | Ethereum | ✅ | ✅ | ✅ | Support for V2, V3, and Universal Router |
+| **[PancakeSwap](../exchanges/gateway/pancakeswap.md)** | Ethereum/BNB | ✅ | ✅ | ✅ | Support for V2, V3, and Smart Router |
 
 ### Legacy Connectors
 
@@ -23,12 +23,12 @@ The following connectors are available in legacy versions but need to be upgrade
 
 | Protocol | Chain | Router | AMM | CLMM | Bounty |
 |----------|-------|--------|-----|------|--------|
-| **[Balancer](/exchanges/gateway/balancer)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
-| **[Curve](/exchanges/gateway/curve)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
-| **[SushiSwap](/exchanges/gateway/sushiswap)** | Ethereum/EVM | ✅ | ✅ | ✅ | - |
-| **[QuickSwap](/exchanges/gateway/quickswap)** | Polygon | ❌ | ✅ | ✅ | - |
-| **[TraderJoe](/exchanges/gateway/traderjoe)** | Avalanche | ❌ | ✅ | ✅ | - |
-| **[ETCSwap](/exchanges/gateway/etcSwap)** | Ethereum Classic | ❌ | ✅ | ✅ | - |
+| **[Balancer](../exchanges/gateway/balancer.md)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
+| **[Curve](../exchanges/gateway/curve.md)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
+| **[SushiSwap](../exchanges/gateway/sushiswap.md)** | Ethereum/EVM | ✅ | ✅ | ✅ | - |
+| **[QuickSwap](../exchanges/gateway/quickswap.md)** | Polygon | ❌ | ✅ | ✅ | - |
+| **[TraderJoe](../exchanges/gateway/traderjoe.md)** | Avalanche | ❌ | ✅ | ✅ | - |
+| **[ETCSwap](../exchanges/gateway/etcSwap.md)** | Ethereum Classic | ❌ | ✅ | ✅ | - |
 
 
 ## Connector Schemas
@@ -70,4 +70,4 @@ For Concentrated Liquidity Market Maker pools where liquidity providers can spec
 
 ## Building Custom Connectors
 
-For detailed instructions on building custom Gateway DEX connectors, see [Building Gateway Connectors](/developers/gateway-connectors/).
+For detailed instructions on building custom Gateway DEX connectors, see [Building Gateway Connectors](../developers/connectors/index.md).

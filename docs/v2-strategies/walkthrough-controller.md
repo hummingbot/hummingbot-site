@@ -1,5 +1,5 @@
 !!! tip
-    Starting with [Hummingbot 2.0](https://lu.ma/ieyvhcft), you will be able to configure and deploy controllers using [Dashboard](/dashboard), the new entry point for Hummingbot users launching in June 2024!
+    Starting with [Hummingbot 2.0](https://lu.ma/ieyvhcft), you will be able to configure and deploy controllers using [Dashboard](../dashboard/index.md), the new entry point for Hummingbot users launching in June 2024!
 
 In this more complex example, the strategy logic is housed in a [Controller](./controllers/index.md), and the user generates a controller configuration that is run with a generic script, which acts as a controller loader.
 
@@ -20,7 +20,7 @@ First, we will generate pair-specific configurations. Then, we can run these con
 
 The initial step involves generating a separate controller configuration for each trading pair.
 
-[![controller](../diagrams/15.png)](../diagrams/15.png)
+[![controller](diagrams/15.png)](diagrams/15.png)
 
 Execute the command below to generate the controller config:
 
@@ -63,7 +63,7 @@ conf_market_making.pmm_simple_2.yml
 
 ## Create the generic script config
 
-[![script-config](../diagrams/16.png)](../diagrams/16.png)
+[![script-config](diagrams/16.png)](diagrams/16.png)
 
 
 Execute the command below to generate the script config file:
@@ -87,7 +87,7 @@ Enter a new file name for your configuration >>> conf_v2_with_controllers_1.yml
 
 ## Start the script 
 
-[![script-config](../diagrams/17.png)](../diagrams/17.png)
+[![script-config](diagrams/17.png)](diagrams/17.png)
 
 Execute the command below to start the script:
 
@@ -101,7 +101,7 @@ The bot should now be running and start placing orders for both pairs. Run the `
 status --live
 ```
 
-[![status](../diagrams/20.png)](../diagrams/20.png)
+[![status](diagrams/20.png)](diagrams/20.png)
 
 ## Changing configs
 

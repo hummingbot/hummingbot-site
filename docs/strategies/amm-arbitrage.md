@@ -35,8 +35,3 @@ This strategy monitors prices between a trading pair (`market_1`) on a SPOT AMM 
 
 See [Trading logic](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/amm_arb/amm_arb.py) to understand how the strategy works.
 
-## ℹ️ More Resources
-
-:fontawesome-solid-book: [How to arbitrage AMMs like Uniswap and Balancer](https://blog.hummingbot.org/2020-12-amm-arbitrage-uniswap-balancer/): Learn how you can Arbitrage AMMs with our strategy
-
-:fontawesome-solid-book: [Quickstart Guide for amm_arb (deprecated)](https://docs.hummingbot.org/gateway/setup/): This guide will walk you through the installation and launch of the new `amm_arb` strategy

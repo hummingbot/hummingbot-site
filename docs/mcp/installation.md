@@ -6,7 +6,7 @@ This guide shows you how to connect AI assistants to the Hummingbot API using th
 
 Before starting, ensure you have:
 
-1. **Hummingbot API Server** running ([Installation Guide](/installation/docker/#installation-recommended-hummingbot-api))
+1. **Hummingbot API Server** running ([Installation Guide](../installation/docker.md#installation-recommended-hummingbot-api))
 2. **Docker** installed and running
 3. **API credentials** (username/password from setup)
 4. **An AI Assistant** - Claude Code, Gemini CLI, Codex CLI, or Claude Desktop
@@ -244,6 +244,6 @@ Once configured, test with these commands:
 
 After successful installation:
 
-1. **Explore Tools**: See [MCP Tools](/mcp/tools/) for available capabilities
-2. **Try Examples**: Review [Example Workflows](/mcp/#example-workflows)
-3. **Security**: Read [Security Guidelines](/mcp/#security-considerations)
+1. **Explore Tools**: See [MCP Tools](./tools.md) for available capabilities
+2. **Try Examples**: Review [Example Workflows](./index.md#example-workflows)
+3. **Security**: Read [Security Guidelines](./index.md#security-considerations)

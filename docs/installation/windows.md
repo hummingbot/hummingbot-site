@@ -21,7 +21,7 @@ To troubleshoot WSL issues, see this [link](https://learn.microsoft.com/en-us/wi
 
 Search for "Powershell" on the start menu, right-click and "run as admin"
 
-![Powershell start](/assets/img/wsl-powershell.png)
+![Powershell start](../assets/img/wsl-powershell.png)
 
 **2. Run the Install WSL commmand**
 
@@ -41,7 +41,7 @@ Note that the first time WSL is executed, you will be asked to create a new defa
 
 Alternatively, after WSL is installed, search for **Ubuntu** in the Windows Store and install it as an app in the Start menu. That way, you don't have to run Powershell every time you use Hummingbot.
 
-![Powershell distros](/assets/img/wsl-distros.png)
+![Powershell distros](../assets/img/wsl-distros.png)
 
 ## Install Hummingbot
 
@@ -64,11 +64,11 @@ From inside the conda environment, run the following command to launch Hummingbo
 
 You should see the Hummingbot welcome screen:
 
-![welcome screen](/assets/img/welcome.png)
+![welcome screen](../assets/img/welcome.png)
 
 To get started with Hummingbot, check out the following docs:
 
-* [Post Installation](post-installation.md)
+* [Post Installation](./post-installation.md)
 * [Basic Features](../client/index.md)
 * [Quickstart Guide](../dashboard/index.md)
 * [Hummingbot FAQ](../faq.md)

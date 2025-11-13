@@ -1,5 +1,5 @@
 !!! note
-    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](../../gateway/index.md), see [Building Gateway Connectors](../../gateway/connectors.md).
     
 This section will break down some ways to debug and test the code. You are not required to use these options during your development process, but they will greatly help you in it.
 
@@ -170,7 +170,7 @@ The Hummingbot app will appear in the `integratedTerminal`. You may change this 
 
 Similarly, for PyCharm, you want to set up the debug configurations, as seen in the screenshot below.
 
-![PyCharmDebugConfiguration](/assets/img/pycharm-debug-configurations.png)
+![PyCharmDebugConfiguration](../../assets/img/pycharm-debug-configurations.png)
 
 For debugging it is neccessary that `Gevent compatible` in `Python Debugger` settings is enabled. See
 [Stackoverflow Q&A](https://stackoverflow.com/questions/39371676/debugger-times-out-at-collecting-data).

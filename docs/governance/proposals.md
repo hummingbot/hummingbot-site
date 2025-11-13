@@ -55,8 +55,8 @@ To be considered valid, a HIP should contain the following fields (otherwise the
 
 ### Hummingbot Governance Proposals
 
-* Hummingbot Governance Proposals (HGP) are generally used by the Foundation to **conduct regular polls** that allow HBOT holders to decide which [Connectors](../exchanges/index.md)) should be retained and prioritized in future Hummingbot releases.
-* The Foundation also uses HGP to elects its [Board of Directors](/about/#board-of-directors) every year.
+* Hummingbot Governance Proposals (HGP) are generally used by the Foundation to **conduct regular polls** that allow HBOT holders to decide which [Connectors](../exchanges/index.md) should be retained and prioritized in future Hummingbot releases.
+* The Foundation also uses HGP to elects its [Board of Directors](../about/board.md) every year.
 * HGPs can also be used to propose changes to the Foundation governance system
 * Any wallet with a HBOT balance that meets Minimum HBOT Balance with can create a HGP at the main Snapshot space: <https://snapshot.org/#/hbot.eth>.
 * Before creating an HGP, we recommend creating a thread in [Discord](https://discord.gg/hummingbot) under the **#proposals** channel to gauge whether the requested HBOT amount is appropriate.

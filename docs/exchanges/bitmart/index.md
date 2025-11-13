@@ -1,5 +1,5 @@
 !!! tip "Foundation Partner"
-    Bitmart is an [exchange partner](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Bitmart, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Bitmart referral link](https://www.bitmart.com/invite/Hummingbot/en) and enter that account's API keys into Hummingbot and run bots! Thanks for your help! 🙏
+    Bitmart is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Bitmart, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Bitmart referral link](https://www.bitmart.com/invite/Hummingbot/en) and enter that account's API keys into Hummingbot and run bots! Thanks for your help! 🙏
 
 ## 🛠 Connector Info
 
@@ -80,9 +80,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect bitmart_paper_trade` instead of `connect bitmart`.
+Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect bitmart_paper_trade` instead of `connect bitmart`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*
@@ -107,6 +107,6 @@ This connector supports the following position modes:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect bitmart_paper_trade` instead of `connect bitmart_perpetual`.
+Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect bitmart_paper_trade` instead of `connect bitmart_perpetual`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.

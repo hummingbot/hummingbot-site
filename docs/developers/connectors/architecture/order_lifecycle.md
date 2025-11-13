@@ -1,11 +1,11 @@
 !!! note
-    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](/gateway), see [Building Gateway Connectors](/gateway/adding-dex-connectors).
+    The information below are for developers building `spot` and `perp` connectors that integrate directly into the Hummingbot client. For information on developing `gateway` connectors that use [Gateway](../../../gateway/index.md), see [Building Gateway Connectors](../../../gateway/connectors.md).
 
 Exchange connectors track status updates of all orders created in Hummingbot and emit events on status updates of its orders for the strategy modules. Be careful when implementing a new exchange connector to ensure all the status updates and emitted events adhere to the semantics defined by Hummingbot.
 
 ## Order Lifecycle Flowchart
 
-[![Figure 1: Order lifecycle flowchart](/assets/img/connector-order-lifecycle.svg)](/assets/img/connector-order-lifecycle.svg)
+[![Figure 1: Order lifecycle flowchart](../../../assets/img/connector-order-lifecycle.svg)](../../../assets/img/connector-order-lifecycle.svg)
 
 ## Creating an Order
 

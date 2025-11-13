@@ -6,13 +6,13 @@ Below, we provide a walkthrough to illustrate the StrategyV2 framework, which we
 
 In this example, we'll show you how to configure and run a simple directional trading strategy using the [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py) starter script.
 
-This strategy executes trades on a spot or perpetual exchange based on the RSI signals from the [Market Data Provider](/v2-strategies/data/), creating buy actions when the RSI is below a low threshold (indicating oversold conditions) and sell actions when the RSI is above a high threshold (indicating overbought conditions).  
+This strategy executes trades on a spot or perpetual exchange based on the RSI signals from the [Market Data Provider](./data/index.md), creating buy actions when the RSI is below a low threshold (indicating oversold conditions) and sell actions when the RSI is above a high threshold (indicating overbought conditions).  
 
-After each trade, the strategy utilizes the [Position Executor](/v2-strategies/executors/positionexecutor/) component, which uses a triple barrier configuration to manage the P&L of the position or filled order.
+After each trade, the strategy utilizes the [Position Executor](executors/positionexecutor.md) component, which uses a triple barrier configuration to manage the P&L of the position or filled order.
 
 ## Create script config
 
-[![script config](../diagrams/21.png)](../diagrams/21.png)
+[![script config](diagrams/21.png)](diagrams/21.png)
 
 First, let's create a script config file that defines the key strategy parameters.
 
@@ -43,7 +43,7 @@ Enter a new file name for your configuration >> conf_v2_directional_rsi_1.yml
 
 ## Run the script 
 
-[![controller](../diagrams/22.png)](../diagrams/22.png)
+[![controller](diagrams/22.png)](diagrams/22.png)
 
 Execute the command below to start the script:
 
@@ -55,14 +55,14 @@ The strategy makes a series of market checks and initializes the market data pro
 
 ## Check status and performance
 
-Run the [Status](/client/status/) command to see the status (asset balances, active orders and positions) of the running strategy:
+Run the [Status](../client/status.md) command to see the status (asset balances, active orders and positions) of the running strategy:
 
-[![status](../diagrams/23.png)](../diagrams/23.png)
+[![status](diagrams/23.png)](diagrams/23.png)
 
-After there have been trades, you can use the [History](/client/history) to see your bot's performance.
+After there have been trades, you can use the [History](../client/history.md) to see your bot's performance.
 
 ## Next steps
 
-We encourage you check out [Dashboard](/dashboard), the new entry point for Hummingbot users that will be officially launched at the [Hummingbot 2.0 launch event](https://lu.ma/ieyvhcft).
+We encourage you check out [Dashboard](../dashboard/index.md), the new entry point for Hummingbot users that will be officially launched at the [Hummingbot 2.0 launch event](https://lu.ma/ieyvhcft).
 
-Also, see [Walkthrough - Controller](./walkthrough-controller.md) to learn how to run scripts that deploy strategies as [Controllers](/v2-strategies/controllers).
+Also, see [Walkthrough - Controller](./walkthrough-controller.md) to learn how to run scripts that deploy strategies as [Controllers](controllers/index.md).

@@ -41,8 +41,6 @@ With the position open, the bot will scan the prices on both connectors, and onc
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [How to Use the New Spot-perpetual Arbitrage Strategy](https://blog.hummingbot.org/2021-03-spot-perpetual-protocol-guide/): Learn how the spot-perpetual arbitrage strategy works and how you can make use of it.
 
 :fontawesome-brands-youtube: [Spot-Perpetual Arbitrage Strategy Demo | Hummingbot Live](https://www.youtube.com/watch?v=hJPmAy-Ellk): A live demo on how you can set parameters to run the spot-perpetual arbitrage strategy
 
-*Check out [Hummingbot Academy](../../../quickstart/index.md) for more resources related to this strategy and others!*

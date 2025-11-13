@@ -70,7 +70,7 @@ Make a clear pull request from your fork and branch to the upstream development 
 
 It is important to check **Allow edits by maintainers** for the Hummingbot team to update your branch with `development` whenever needed.
 
-![Creating a pull request](/assets/img/pull-request-sample.png)
+![Creating a pull request](../assets/img/pull-request-sample.png)
 
 If the development team requests changes, you should make more commits to your branch to address these, then follow this process again from rebasing onwards.
 
@@ -78,7 +78,7 @@ Once you get back here, make a comment requesting a further review, and someone 
 
 ### **7. Create a proposal in Snapshot ⚡️**
 
-If you want your contribution to be reviewed, merged into the official Hummingbot codebase and included in ongoing monthly releases, you need to get a [Proposal](/governance/proposals) approved.
+If you want your contribution to be reviewed, merged into the official Hummingbot codebase and included in ongoing monthly releases, you need to get a [Proposal](../governance/proposals.md) approved.
 
 Create a new proposal in the appropriate Snapshot sub-space following the instructions on the Proposals page. Make sure that you have at least 200,000 HBOT to create a New Connector Proposal, or 1 HBOT for a Pull Request Proposal. The voting period is 7 days and the HBOT holders will decide if your proposal will be accepted or rejected.
 

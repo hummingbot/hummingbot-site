@@ -7,7 +7,7 @@ See the following repos for more information:
 * [Brokers](https://github.com/hummingbot/brokers): Various deployment examples using Docker Compose
 * [Remote client](https://github.com/hummingbot/hbot-remote-client-py): Package that implements a remote client for Hummingbot in Python.
 
-Watch the February 2023 [community call](/#community-calls) that contains a demo of this feature:
+Watch the February 2023 community call that contains a demo of this feature:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O64Br_gMPhM" title="Bot Orchestration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -15,7 +15,7 @@ Watch the February 2023 [community call](/#community-calls) that contains a demo
 
 ## Phase I
 
-*Released in [v1.12.0](/release-notes/1.12.0/)*
+*Released in [v1.12.0](../release-notes/1.12.0.md)*
 
 - Interface to execute remote commands: `Start` , `Stop` , `Import` , `Config strategy`, `Balance` , `Change balance limits`
 - All these commands can be called using an unified web application that also receives the following information from the bots - `Heartbeat - Status`, `PNL - History`
@@ -23,7 +23,7 @@ Watch the February 2023 [community call](/#community-calls) that contains a demo
 
 ## Phase II
 
-*Released in [v1.14.0](/release-notes/1.14.0/)*
+*Released in [v1.14.0](../release-notes/1.14.0.md)*
 
 In this Phase, an event and data layer will be integrated into the Hummingbot codebase to support receiving and handling remote events via the message broker (MQTT), such as the case of TradingView signals.
 

@@ -8,7 +8,7 @@ Hummingbot stores both API keys and private keys on the local machine in encrypt
 1. Enter API and secret keys when prompted
 1. Other exchanges may require additional details such as account ID, exchange address, etc.
 
-See [Exchanges](/exchanges) for more information about how to create API keys for each exchange.
+See [Exchanges](../exchanges/index.md) for more information about how to create API keys for each exchange.
 
 !!! warning "Only enable Read and Trade access"
     For security reasons, Hummingbot does not support deposit and withdrawal functionality. Therefore, we recommend using only **read + trade** enabled API keys. It is not necessary to enable **withdraw**, **transfer**, or anything equivalent to retrieving assets from your wallet.

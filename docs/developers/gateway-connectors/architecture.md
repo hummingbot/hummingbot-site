@@ -472,7 +472,7 @@ try {
 
 ## Resources
 
-- [Gateway Architecture Overview](/gateway)
+- [Gateway Architecture Overview](../../gateway/index.md)
 - [Schema Definitions](https://github.com/hummingbot/gateway/tree/development/src/schemas)
 - [Example Implementations](https://github.com/hummingbot/gateway/tree/development/src/connectors)
-- [Testing Guidelines](/developers/gateway-connectors/testing)
+- [Testing Guidelines](../../developers/gateway-connectors/testing.md)

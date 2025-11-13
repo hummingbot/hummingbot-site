@@ -56,6 +56,6 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect vertex_testnet` instead of `connect vertex`.
+Access the [Paper Trade](../global-configs/paper-trade.md) version of this connector by running `connect vertex_testnet` instead of `connect vertex`.
 
 

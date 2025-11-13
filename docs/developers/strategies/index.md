@@ -6,13 +6,13 @@ We will start by building simple strategies that build upon one another. This sh
 
 ## Tutorial
 
-The [tutorial](./tutorial) teaches you how to create a Hummingbot strategy that executes a simple limit order.
+The [tutorial](./tutorial.md) teaches you how to create a Hummingbot strategy that executes a simple limit order.
 
 ## Guides
 
-* [Key Concepts](./key-concepts): Basic overview and structure of what goes into a Hummingbot strategy
+* [Key Concepts](./key-concepts.md): Basic overview and structure of what goes into a Hummingbot strategy
 * [Get Started](tutorial.md): Create a simple strategy that executes a limit order
-* [Define Configs](./config): Define configuration parameters
+* [Define Configs](./config.md): Define configuration parameters
 * [Hanging Orders Tracker](../../strategy-configs/hanging-orders.md): Learn how to use the hanging order tracker in your strategy
 
 <!-- 

@@ -1,20 +1,20 @@
 # User Interface Guide
 
-![Hummingbot CLI](/assets/img/userinterface-hummingbot.gif)
+![Hummingbot CLI](../assets/img/userinterface-hummingbot.gif)
 
 The CLI is divided into five panes:
 
 * **Input pane (lower left)**: Where users enter commands
 
-![Hummingbot CLI](/assets/img/input-pane.gif)
+![Hummingbot CLI](../assets/img/input-pane.gif)
 
 * **Output pane (upper left)**: Prints the output of the user's commands
 
-![Hummingbot CLI](/assets/img/output-pane.gif)
+![Hummingbot CLI](../assets/img/output-pane.gif)
 
 * **Log pane (right)**: Log messages
 
-![Log Pane](/assets/img/log-messages.gif)
+![Log Pane](../assets/img/log-messages.gif)
 
 * **Top navigation bar**: Displays the status/information of the following items
 
@@ -24,13 +24,13 @@ The CLI is divided into five panes:
 
       * **Strategy:**
           
-          * Hummingbot has different strategy configurations that can be used for trading or liquidity mining. Currently we are moving away from strategy based config in favor of scripts. See the quick start guide for scripts [here](../quickstart/index.md)
+          * Hummingbot has different strategy configurations that can be used for trading or liquidity mining. Currently we are moving away from strategy based config in favor of scripts. 
           
       * **Strategy_file:**
           
           * Displays the current in use `strategy` or `script` file
 
-![Top Navigation](/assets/img/top-nav.gif)
+![Top Navigation](../assets/img/top-nav.gif)
 
 * **Bottom navigation bar**: Displays the information of the following items
 
@@ -49,7 +49,7 @@ The CLI is divided into five panes:
       * Duration
         * Duration of the trading session
 
-![Bottom Navigation](/assets/img/bottom-nav.gif)
+![Bottom Navigation](../assets/img/bottom-nav.gif)
 
 ## Show and hide log pane
 
@@ -58,7 +58,7 @@ The log pane on the right can be shown or hidden in two ways:
 1. Click the `log pane` button in the upper right hand corner
 2. Press <kbd>CTRL</kbd> + <kbd>T</kbd> shortcut on your keyboard
 
-![Hide Log Pane](/assets/img/hide-log-pane.gif)
+![Hide Log Pane](../assets/img/hide-log-pane.gif)
 
 ## Tabs
 
@@ -75,9 +75,9 @@ Use the tabs by simply inputting a command associated with the tabs feature.
 
 Upon using the `order_book` command and any suffix it will open a tab automatically.
 
-![opening tabs](/assets/img/tab-opening.png)
+![opening tabs](../assets/img/tab-opening.png)
 
-![showing tab](/assets/img/leftpane.png)
+![showing tab](../assets/img/leftpane.png)
 
 ### Closing a tab
 
@@ -85,13 +85,13 @@ Simply click on the `x` at the top right corner or inputting `parameter_name --c
 
 One option to close the tab is by clicking on the `x` next to `order_book`
 
-![closing tabs](/assets/img/closing-of-tabs.png)
+![closing tabs](../assets/img/closing-of-tabs.png)
 
 Alternatively, you can remove the new tab by inputting the `order_book --close` command to close the tab
 
-![alternative closing tabs](/assets/img/name-of-parameter.png)
+![alternative closing tabs](../assets/img/name-of-parameter.png)
 
-![closed tabs](/assets/img/closed-tabs.png)
+![closed tabs](../assets/img/closed-tabs.png)
 
 ## Keyboard shortcuts
 
@@ -139,11 +139,11 @@ To highlight, hold <kbd>SHIFT</kbd> + LMB (left mouse button) and drag across th
 !!! note
     To select text on macOS, you may need to enable the **Allow Mouse Reporting** option by pressing <kbd>⌘</kbd> + <kbd>R</kbd> or selecting **View > Allow Mouse Reporting** in the menu bar.
 
-![allowmouse](/assets/img/allow_mouse_reporting.png)
+![allowmouse](../assets/img/allow_mouse_reporting.png)
 
 Then you should be able to select text by holding `LMB` (left mouse button) and drag. You can also hold down <kbd>⌥</kbd> + <kbd>shift</kbd> to select specific lines like the image below.
 
-![highlightmacos](/assets/img/highlight_macos.png)
+![highlightmacos](../assets/img/highlight_macos.png)
 
 When accessing Hummingbot on a Linux cloud server through `ssh` using a macOS terminal, hold down the <kbd>Option ⌥</kbd> key or <kbd>⌥</kbd> + <kbd>⌘</kbd> to highlight text.
 
@@ -156,4 +156,4 @@ When accessing Hummingbot on a Linux cloud server through `ssh` using a macOS te
 
 To use this shortcut, check this box by doing a right-click on the title bar at the top of the Hummingbot window, then select **Properties**.
 
-![](/assets/img/properties_windows.png)
+![](../assets/img/properties_windows.png)

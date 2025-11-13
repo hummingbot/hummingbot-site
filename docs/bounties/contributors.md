@@ -78,7 +78,7 @@ Foundation evaluates based on:
 
 ### Development Standards
 
-- Follow [Connector Development Guidelines](/developers/connectors/)
+- Follow [Connector Development Guidelines](../developers/connectors/index.md)
 - Use established coding patterns
 - Implement error handling
 - Add test coverage
@@ -141,7 +141,7 @@ Testing covers:
 
 ### Documentation
 
-- [Connector Development Guide](/developers/connectors/)
+- [Connector Development Guide](../developers/connectors/index.md)
 - [Spot Connector Checklist](../developers/connectors/spot-connector-checklist.md)
 - [Perp Connector Checklist](../developers/connectors/perp-connector-checklist.md)
 - [Testing Guidelines](../developers/connectors/test.md)

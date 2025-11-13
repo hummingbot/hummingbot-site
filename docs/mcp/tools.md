@@ -318,7 +318,7 @@ manage_gateway_config(
 
 ### `manage_gateway_swaps`
 
-Quote and execute swaps on DEX routers like [Jupiter](/exchanges/gateway/jupiter/).
+Quote and execute swaps on DEX routers like [Jupiter](../exchanges/gateway/jupiter.md).
 
 ```python
 # Get quote

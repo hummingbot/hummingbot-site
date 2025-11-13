@@ -1,9 +1,9 @@
 This section is for developers looking to contribute to Hummingbot or extend its capabilities:
 
-* [Building CLOB Connectors](/developers/connectors): Build centralized exchange (CEX) connectors
-* [Building Strategies](/developers/strategies): Create and customize your own Hummingbot strategies
-* [Adding Commands](/developers/commands): Create your own Hummingbot commands
-* [Using the Debug Console](/developers/debug): Inspect and modify Hummingbot's state at runtime
+* [Building CLOB Connectors](../developers/connectors/index.md): Build centralized exchange (CEX) connectors
+* [Building Strategies](../developers/strategies/index.md): Create and customize your own Hummingbot strategies
+* [Adding Commands](../developers/commands.md): Create your own Hummingbot commands
+* [Using the Debug Console](../developers/debug.md): Inspect and modify Hummingbot's state at runtime
 
 ## Getting Help
 
@@ -25,7 +25,7 @@ Hummingbot relies heavily on community maintainers to keep the project up-to-dat
 - Creating new connectors
 - Enhancing existing strategies
 
-If you're interested in contributing to Hummingbot and earning bounties, check out our [Bounty Contributors Guide](/bounties/contributors/). This guide provides detailed information on:
+If you're interested in contributing to Hummingbot and earning bounties, check out our [Bounty Contributors Guide](../bounties/contributors.md). This guide provides detailed information on:
 
 - How to claim and work on bounties
 - Submission requirements
@@ -37,4 +37,4 @@ By participating in bounties, you not only earn HBOT rewards but also contribute
 
 Hummingbot is an open source project intended to provide a base layer infrastructure for users to customize and build their own trading strategies and add new exchange connectors. We welcome code contributions. 
 
-See [Contribution Guidelines](/developers/contributions) for more information.
+See [Contribution Guidelines](../developers/contributions.md) for more information.

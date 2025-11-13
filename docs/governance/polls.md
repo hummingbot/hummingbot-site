@@ -21,9 +21,9 @@ Each quarterly [Epoch](epochs.md), HBOT voters vote on which connectors of each 
 
 * **CLOB CEX**: Integrations to centralized exchanges (CEXs) with order book-based spot and perpetual futures markets
 * **CLOB DEX**: Integrations to decentralized exchanges (DEXs) with order book-based spot and perpetual futures markets
-* **Gateway DEX**: Integrations to automated market maker (AMM) and concentrated liquidity market maker (CLMM) decentralized exchanges (DEXs) and blockchain protocols, intermediated by the [Gateway](/gateway) middleware.
+* **Gateway DEX**: Integrations to automated market maker (AMM) and concentrated liquidity market maker (CLMM) decentralized exchanges (DEXs) and blockchain protocols, intermediated by the [Gateway](../gateway/index.md) middleware.
 
-See [Connectors](/connectors/) for more information about the types of connectors.
+See [Connectors](../connectors/index.md) for more information about the types of connectors.
 
 ### Connector Pots
 

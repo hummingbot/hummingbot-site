@@ -1,4 +1,4 @@
-[![StrategyBase class relations](/assets/img/strategy-uml.svg)](/assets/img/strategy-uml.svg)
+[![StrategyBase class relations](../../assets/img/strategy-uml.svg)](../../assets/img/strategy-uml.svg)
 
 All strategy classes are derived from the [`StrategyBase`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class, which is derived from the [`TimeIterator`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/strategy_base.pyx) class.
 
@@ -121,7 +121,7 @@ Cancels an active order from a market.
 
 Each `StrategyBase` object comes with an internal attribute `_sb_order_tracker`, which is an [`OrderTracker`](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/order_tracker.pyx) object. The `OrderTracker` object is responsible for tracking all active and in-flight orders created by the `StrategyBase` object, and also all in-flight order cancels.
 
-![StrategyBase and order tracker](/assets/img/strategy-order-tracker.svg)
+![StrategyBase and order tracker](../../assets/img/strategy-order-tracker.svg)
 
 When writing or modifying a strategy module, you can use the built-in `OrderTracker` object to query the active or in-flight orders / cancels you currently have. It's useful for preventing issuing duplicate orders or order cancels.
 
