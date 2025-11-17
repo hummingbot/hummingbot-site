@@ -182,7 +182,7 @@ nav:
         - Scripts: scripts/index.md
         - Sample Scripts: scripts/examples.md
         - Script Walkthrough: v2-strategies/walkthrough.md
-        - Scripts Cheatsheat: scripts/cheatsheet.md
+        - Scripts Cheatsheet: scripts/cheatsheet.md
       - Market Data Provider:
         - Market Data Provider: v2-strategies/data/index.md
         - Candles: v2-strategies/candles/index.md

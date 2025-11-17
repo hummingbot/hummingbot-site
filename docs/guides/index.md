@@ -41,7 +41,7 @@ Check out the [Strategy Guides](../blog/category/strategy-guides.md) category in
 - **[Coding a Custom Liquidation Strategy](../blog/posts/coding-a-custom-v2-controller/index.md)**
   Explore how to create a custom V2 Controller for Hummingbot to snipe future liquidations on Binance
 
-- **[Directional Trading with MACD and Bollinger Bands](../blog/posts/directional-trading-experiment/Index.md)**
+- **[Directional Trading with MACD and Bollinger Bands](../blog/posts/directional-trading-experiment/index.md)**
   Learn how to implement a directional trading strategy using MACD and Bollinger Bands technical indicators for trend identification and entry/exit signals
 
 - **[Technical Deep Dive into the Avellaneda & Stoikov Strategy](../blog/posts/technical-deep-dive-into-the-avellaneda-stoikov-strategy/index.md)**
