@@ -10,7 +10,7 @@ categories:
 
 ![](cover.jpg)
 
-Every quarter, Hummingbot Foundation organizes [Polls](../../../governance/polls.md), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
+Every quarter, Hummingbot Foundation organizes [Polls](../../../about/polls.md), an on-going initiative that lets HBOT holders decide how the Foundation allocates its engineering bandwidth and developer bounties across the components in the Hummingbot codebase.
 
 This week, we completed the Epoch 4 polls, which prioritizes exchanges and strategies, and issues in the Hummingbot codebase for the April, May, and June releases.
 

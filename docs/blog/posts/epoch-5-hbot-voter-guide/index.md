@@ -10,7 +10,7 @@ categories:
 
 ![](cover.webp)
 
-Hummingbot Foundation's quarterly [Polls](../../../governance/polls.md) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
+Hummingbot Foundation's quarterly [Polls](../../../about/polls.md) have successfully driven greater participation in Hummingbot governance. Last quarter, each poll received 30+ votes and 20+ million HBOT voting power allocated!
 
 But more importantly, polls have also allowed our community to decide which exchange connectors should be included in the Hummingbot codebase and how they should be prioritized. There are now 44 CEX and DEX connectors in the Hummingbot codebase, and each new connector requires maintenance, testing, and documentation time that imposes a cost on the overall Hummingbot user base.
 

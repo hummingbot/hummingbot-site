@@ -74,7 +74,7 @@ Running the `exit` command cancels all outstanding orders and exit the Hummingbo
 
 ## Updating Hummingbot
 
-Once a month, we publish an official [release](../governance/releases.md) of Hummingbot and Hummingbot Gateway, marked by code release on Github and DockerHub and the publication of the [release notes](../release-notes/index.md).
+Once a month, we publish an official [release](../release-notes/releases.md) of Hummingbot and Hummingbot Gateway, marked by code release on Github and DockerHub and the publication of the [release notes](../release-notes/index.md).
 
 Subscribe to the [Hummingbot Newletter](https://hummingbot.substack.com/) to get notified when a new release ships.
 

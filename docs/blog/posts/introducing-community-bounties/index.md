@@ -35,7 +35,7 @@ The Community Bounties program is designed to streamline the process of funding 
 
 The first step in the process involves defining the bounty type, which can either be Open Source (to be merged into the official Hummingbot codebase) or Private (for a private Hummingbot fork and not included in open source codebase).
 
-Bounties should also be classified as Bug Fix, Enhancement, New Connector, New Strategy, or New Script. It is important to note that Open Source bounties (except for Bug Fixes) require community approval via the [Hummingbot Improvement Proposal](../../../governance/proposals.md) before acceptance, whereas Private bounties and Open Source bounties for Bug Fixes do not require voting.
+Bounties should also be classified as Bug Fix, Enhancement, New Connector, New Strategy, or New Script. It is important to note that Open Source bounties (except for Bug Fixes) require community approval via the [Hummingbot Improvement Proposal](../../../about/proposals.md) before acceptance, whereas Private bounties and Open Source bounties for Bug Fixes do not require voting.
 
 The Sponsor, either the Hummingbot Foundation or a community member, should post a thread in the `#community-bounties` Discord channel describing the issue. Developers interested in working on the bounty can post in the thread to ask questions.
 

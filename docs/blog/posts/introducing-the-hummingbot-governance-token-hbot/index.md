@@ -70,7 +70,7 @@ The HBOT Token has no monetary or economic value. The sole use case for HBOT Tok
 
 All pull requests, or proposed code changes to the Github code repository, will need to be submitted as a Pull Request Proposal and be approved by HBOT holders in order to be merged into the codebase and included in an official release.
 
-See the [Hummingbot Foundation Governance whitepaper](../../../governance/whitepaper.md) for more details.
+See the [Hummingbot Foundation Governance whitepaper](../../../about/whitepaper.md) for more details.
 
 In addition, HBOT token holders will be able to appoint members of the Hummingbot Foundation’s Board of Directors. One of the first planned Governance Proposals (Q1 2022) will allow HBOT token holders to confirm the members of the interim Board of Directors or otherwise appoint an alternative Board.
 
@@ -187,7 +187,7 @@ The Hummingbot Foundation plans to maintain some flexibility on the precise timi
 
 The Hummingbot Foundation plans to use [Snapshot](https://snapshot.org) as the primary governance system for all proposals. Voting is expected to commence in mid-to-late January 2022 with the Hummingbot 1.0 release. All proposals and voting can be found on the official Hummingbot Snapshot hosted at [https://snapshot.org/#/hbot.eth](https://snapshot.org/#/hbot.eth).
 
-See the [Hummingbot Foundation Governance whitepaper](../../../governance/whitepaper.md) for additional details about the governance process, such as proposal types, minim token balance requirements, and quorum/approval thresholds.
+See the [Hummingbot Foundation Governance whitepaper](../../../about/whitepaper.md) for additional details about the governance process, such as proposal types, minim token balance requirements, and quorum/approval thresholds.
 
 ### Voting Delegation
 

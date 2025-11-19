@@ -63,7 +63,7 @@ Like other connectors, Gateway DEX connectors require ongoing maintenance: fixin
 
 Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](../bounties/index.md) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
 
-Each quarter, [Exchange Connector Polls](../governance/polls.md) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
+Each quarter, [Exchange Connector Polls](../about/polls.md) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 

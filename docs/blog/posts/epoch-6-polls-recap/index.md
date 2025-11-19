@@ -10,7 +10,7 @@ categories:
 
 ![](cover.png)
 
-Every quarter, Hummingbot Foundation organizes [Polls](../../../governance/polls.md), a quarterly process that lets HBOT holders vote on how the Foundation distributes its maintenance resources and bounty budgets across the 50+ CEX, DEX, and blockchain network connectors in the Hummingbot codebase.
+Every quarter, Hummingbot Foundation organizes [Polls](../../../about/polls.md), a quarterly process that lets HBOT holders vote on how the Foundation distributes its maintenance resources and bounty budgets across the 50+ CEX, DEX, and blockchain network connectors in the Hummingbot codebase.
 
 This week, we completed the Epoch 6 polls which decide which connectors will be included in the Hummingbot codebase for the October, November, and December 2023 releases.
 

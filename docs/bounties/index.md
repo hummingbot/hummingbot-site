@@ -35,8 +35,8 @@ Get your exchange integrated with Hummingbot through our comprehensive bounty ma
 - Bug fixes via bounty system
 - API update compatibility
 - Ongoing technical support
-- [New Connector Proposal](../governance/proposals.md/) governance support
-- Quarterly voting in [Polls](../governance/polls.md) to maintain connector in codebase
+- [New Connector Proposal](../about/proposals.md/) governance support
+- Quarterly voting in [Polls](../about/polls.md) to maintain connector in codebase
 
 **Marketing Benefits:**
 

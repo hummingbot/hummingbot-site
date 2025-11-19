@@ -24,6 +24,6 @@ Hummingbot Foundation maintains certain reference connectors to maintain an upda
 
 Hummingbot Foundation governance lets HBOT holders which exchanges are supported by the open source codebase.
 
-New connectors may be contributed by community members via [New Connector Proposals](../governance/proposals.md), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.
+New connectors may be contributed by community members via [New Connector Proposals](../about/proposals.md), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.
 
-For existing connectors, quarterly [Exchange Connector Polls](../governance/polls.md) allocates HBOT bounties toward top exchanges and determines which exchanges should be included in the codebase going forward. See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
+For existing connectors, quarterly [Exchange Connector Polls](../about/polls.md) allocates HBOT bounties toward top exchanges and determines which exchanges should be included in the codebase going forward. See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.

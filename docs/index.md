@@ -264,7 +264,7 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 - :material-information-outline: __[Foundation](./about/index.md)__: About the Foundation and our mission
 - :material-account-group: __[Community](./community/index.md)__: Join our global community of algo traders
-- :material-gavel: __[Governance](./governance/index.md)__: Decide how the Hummingbot framework evolves
+- :material-gavel: __[Governance](./about/governance.md.md)__: Decide how the Hummingbot framework evolves
 - :material-frequently-asked-questions: __[FAQ](./faq.md)__: Answers to common questions
 
 </div>

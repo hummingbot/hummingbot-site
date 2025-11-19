@@ -37,7 +37,7 @@ Key enhancements to connectors in 2023 included:
 To streamline operations, we accomplished two important objectives in 2023:
 
 - **Gateway Separation**: We moved the [Gateway](https://github.com/hummingbot/gateway) DEX connectors into a separate Github repo, allowing for more agile development, although bandwidth limitations indicated a need for community involvement in 2024.
-- **Codebase Streamlining**: We streamlined maintenance by removing connectors that did not meet the [Inclusion Threshold](../../../governance/polls.md) in quarterly Polls.
+- **Codebase Streamlining**: We streamlined maintenance by removing connectors that did not meet the [Inclusion Threshold](../../../about/polls.md) in quarterly Polls.
 
 ## 3. Expand Scripts Framework
 

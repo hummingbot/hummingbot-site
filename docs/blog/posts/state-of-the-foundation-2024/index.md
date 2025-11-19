@@ -16,7 +16,7 @@ As 2023 winds to a close, [reported volumes](https://p.datadoghq.com/sb/a96a744f
 
 ![](./volumes.png)
 
-Since it has been two eventful years have passed since the inception of the Hummingbot Foundation and the issuance of the HBOT token, we wanted to update the [original Hummingbot Foundation whitepaper](../../../governance/whitepaper.md). Specifically, this post has three objectives:
+Since it has been two eventful years have passed since the inception of the Hummingbot Foundation and the issuance of the HBOT token, we wanted to update the [original Hummingbot Foundation whitepaper](../../../about/whitepaper.md). Specifically, this post has three objectives:
 
 1. Provide a retrospective on the Foundation’s journey over the past two years,
 2. Propose changes to the Hummingbot governance system, and;
@@ -32,7 +32,7 @@ In October 2021, CoinAlpha [established the Hummingbot Foundation](../introducin
 
 Subsequently, the Foundation [issued the Hummingbot Governance Token (HBOT) token](https://www.notion.so/State-of-the-Foundation-2024-518124200f9e4f788f1d067bfe3ab196?pvs=21) and formally incepted a dedicated team in December 2021.
 
-Starting from the [v1.0.0 release](../../../release-notes/1.0.0.md), the Foundation team has assumed the responsibility of maintaining Hummingbot code repositories and websites, reviewing pull requests, and shipping official monthly releases.
+Starting from the **v1.0.0** release, the Foundation team has assumed the responsibility of maintaining Hummingbot code repositories and websites, reviewing pull requests, and shipping official monthly releases.
 
 ## Inspiration: Linux
 
@@ -46,7 +46,7 @@ The Foundation aims to overcome this challenge by enabling key stakeholders of t
 
 ![flywheel.png](./flywheel.png)
 
-As described in the [Hummingbot Foundation whitepaper](../../../governance/whitepaper.md), the key stakeholders of the Hummingbot ecosystem are:
+As described in the [Hummingbot Foundation whitepaper](../../../about/whitepaper.md), the key stakeholders of the Hummingbot ecosystem are:
 
 - **Exchanges:** centralized or decentralized exchanges, blockchain protocols, and other projects that benefit from Hummingbot usage and connectivity
 - **Contributors:** individual developers and firms that build and maintain Hummingbot components
@@ -101,7 +101,7 @@ The Hummingbot governance system allows HBOT holders to decide which CEX, DEX, a
 Over the past two years, the Hummingbot governance system has evolved to make HBOT voting more efficient, decentralized, and impactful. Some notable changes include:
 
 * Termination of [Delegation](../end-of-hbot-delegation/index.md) to foster greater decentralization of participation
-* Introduction of quarterly [Polls](../../../governance/polls.md) to allow HBOT holders decide which connectors should be included and how maintenance bounties should be allocated toward them
+* Introduction of quarterly [Polls](../../../about/polls.md) to allow HBOT holders decide which connectors should be included and how maintenance bounties should be allocated toward them
 * Addition of fixed [Bounty Allocations](../../../bounties/index.md) to the top vote-getting connectors
 
 Based on the current level of activity on [Bounties Board](https://github.com/orgs/hummingbot/projects/7), developer demand for bounties remains strong, and the bottleneck lies more with assigning and managing bounties by the Foundation team than with developers picking them up.
@@ -115,7 +115,7 @@ Based on the current level of activity on [Bounties Board](https://github.com/or
 | Merged        | 6             |
 | Paid/Closed   | 94            |
 
-Bounties have been used to fund specific tasks that improve the usability and functionality of an exchange or chain connector. While the Hummingbot Foundation will proactively create bounties for its partners and sponsors, any HBOT holder may [propose](../../../governance/proposals.md) new bounties.
+Bounties have been used to fund specific tasks that improve the usability and functionality of an exchange or chain connector. While the Hummingbot Foundation will proactively create bounties for its partners and sponsors, any HBOT holder may [propose](../../../about/proposals.md) new bounties.
 
 ![](./bounties.jpg)
 

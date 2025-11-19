@@ -14,7 +14,7 @@ These connector standards allow users to create [Strategies](../strategies/index
 
 ### Current CLOB Connectors
 
-Here are the CLOB connectors in the codebase for the current [Epoch](../governance/epochs.md). Note that the Foundation prioritizes fixes for connectors from exchanges that are [sponsors or partners](../about/sponsors.md), so they tend to be more reliable and better maintained.
+Here are the CLOB connectors in the codebase for the current [Epoch](../about/epochs.md). Note that the Foundation prioritizes fixes for connectors from exchanges that are [sponsors or partners](../about/sponsors.md), so they tend to be more reliable and better maintained.
 
 | Exchange                                | Foundation Partner | Spot | Perp | Connector Guide |
 |-----------------------------------------|-------------------|------|------|----------------|
@@ -52,4 +52,4 @@ The Notion templates below summarize the file and functionalities needed to buil
 
 See [Building Connectors](../developers/connectors/index.md) for more information.
 
-If the exchange is not yet supported by Hummingbot, you can submit a governance proposal for it to be included. New connectors may be contributed by community members via [New Connector Proposals](../governance/proposals.md), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.
+If the exchange is not yet supported by Hummingbot, you can submit a governance proposal for it to be included. New connectors may be contributed by community members via [New Connector Proposals](../about/proposals.md), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.

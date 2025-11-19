@@ -349,7 +349,7 @@ nav:
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Releases:
     - Releases: release-notes/index.md
-    - Release Process: governance/releases.md
+    - Release Process: release-notes/releases.md
     - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
     - 2.8.0: release-notes/2.8.0.md
@@ -362,37 +362,6 @@ nav:
     - 2.1.0: release-notes/2.1.0.md
     - 2.0.1: release-notes/2.0.1.md
     - 2.0.0: release-notes/2.0.0.md
-    - 1.28.0: release-notes/1.28.0.md
-    - 1.27.0: release-notes/1.27.0.md
-    - 1.26.0: release-notes/1.26.0.md
-    - 1.25.0: release-notes/1.25.0.md
-    - 1.24.0: release-notes/1.24.0.md
-    - 1.23.0: release-notes/1.23.0.md
-    - 1.22.0: release-notes/1.22.0.md
-    - 1.21.0: release-notes/1.21.0.md
-    - 1.20.0: release-notes/1.20.0.md
-    - 1.19.0: release-notes/1.19.0.md
-    - 1.18.0: release-notes/1.18.0.md
-    - 1.17.0: release-notes/1.17.0.md
-    - 1.16.0: release-notes/1.16.0.md
-    - 1.15.0: release-notes/1.15.0.md
-    - 1.14.0: release-notes/1.14.0.md
-    - 1.13.0: release-notes/1.13.0.md 
-    - 1.12.0: release-notes/1.12.0.md
-    - 1.11.0: release-notes/1.11.0.md
-    - 1.10.0: release-notes/1.10.0.md
-    - 1.9.0: release-notes/1.9.0.md
-    - 1.8.0: release-notes/1.8.0.md
-    - 1.7.0: release-notes/1.7.0.md
-    - 1.6.0: release-notes/1.6.0.md
-    - 1.5.0: release-notes/1.5.0.md
-    - 1.4.0: release-notes/1.4.0.md
-    - 1.3.0: release-notes/1.3.0.md
-    - 1.2.0: release-notes/1.2.0.md
-    - 1.1.1: release-notes/1.1.1.md
-    - 1.1.0: release-notes/1.1.0.md
-    - 1.0.1: release-notes/1.0.1.md
-    - 1.0.0: release-notes/1.0.0.md
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
@@ -404,10 +373,10 @@ nav:
     - Foundation: about/index.md
     - Board of Directors: about/board.md
     - HBOT Token: about/hbot.md
-    - Governance: governance/index.md
-    - Polls: governance/polls.md
-    - Proposals: governance/proposals.md
-    - Epochs: governance/epochs.md
-    - Whitepaper: governance/whitepaper.md
+    - Governance: about/governance.md
+    - Polls: about/polls.md
+    - Proposals: about/proposals.md
+    - Epochs: about/epochs.md
+    - Whitepaper: about/whitepaper.md
   - Blog: 
     - blog/index.md

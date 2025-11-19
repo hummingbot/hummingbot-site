@@ -40,9 +40,9 @@ You can choose from three integration options to get an official Hummingbot conn
 
 ### 🔧 DIY Governance
 
-Build your own connector following other connectors in the `development` branch of Hummingbot's open source framework. Then, create a [New Connector Proposal](../governance/proposals.md) along with a valid, comprehensive pull request containing the connector code. 
+Build your own connector following other connectors in the `development` branch of Hummingbot's open source framework. Then, create a [New Connector Proposal](../about/proposals.md) along with a valid, comprehensive pull request containing the connector code. 
 
-You'll need some [HBOT tokens](../governance/index.md) to create a proposal, and you'll be responsible for ongoing maintenance updates and periodic voting to keep your connector included in ongoing releases of Hummingbot.
+You'll need some [HBOT tokens](../about/governance.md) to create a proposal, and you'll be responsible for ongoing maintenance updates and periodic voting to keep your connector included in ongoing releases of Hummingbot.
 
 ### 💎 Bounty Management
 
@@ -94,7 +94,7 @@ Hummingbot uses a transparent, community-driven governance process that lets [HB
 - Limits number of exchanges by type
 - Removes inactive connectors
 
-[Learn About Governance →](../governance/index.md){: .md-button }
+[Learn About Governance →](../about/governance.md){: .md-button }
 
 ## Connector Development
 

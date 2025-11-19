@@ -15,7 +15,7 @@ Watch the February 2023 community call that contains a demo of this feature:
 
 ## Phase I
 
-*Released in [v1.12.0](../release-notes/1.12.0.md)*
+*Released in **v1.12.0**
 
 - Interface to execute remote commands: `Start` , `Stop` , `Import` , `Config strategy`, `Balance` , `Change balance limits`
 - All these commands can be called using an unified web application that also receives the following information from the bots - `Heartbeat - Status`, `PNL - History`
@@ -23,7 +23,7 @@ Watch the February 2023 community call that contains a demo of this feature:
 
 ## Phase II
 
-*Released in [v1.14.0](../release-notes/1.14.0.md)*
+*Released in **v1.14.0**
 
 In this Phase, an event and data layer will be integrated into the Hummingbot codebase to support receiving and handling remote events via the message broker (MQTT), such as the case of TradingView signals.
 
