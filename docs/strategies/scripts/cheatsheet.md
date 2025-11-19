@@ -93,7 +93,7 @@ self.notify_hb_app_with_timestamp(msg)
 ```
 
 !!! tip
-    If you have the [Telegram integration](../global-configs/telegram.md) activated, you will receive the notifications there too.
+    If you have the Telegram integration activated, you will receive the notifications there too.
 
 ### Status
 
