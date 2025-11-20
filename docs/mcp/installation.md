@@ -139,6 +139,9 @@ Install Codex CLI: [Official Guide](https://github.com/openai/codex)
 
    ✅ Codex should detect the Hummingbot MCP server.
 
+![codex](codex-1.png)
+
+
 ---
 
 ## 🖥️ Install via Docker MCP Catalog
