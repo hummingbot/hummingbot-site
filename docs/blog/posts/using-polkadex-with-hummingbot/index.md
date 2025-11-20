@@ -110,9 +110,9 @@ We recommend installing Hummingbot from source if you meet any of the following 
 
 Guides for various environments:
 
-  - [Linux](../../../installation/linux.md)
-  - [Windows](../../../installation/windows.md)
-  - [MacOS](../../../installation/mac.md)
+  - [Linux](../../../installation/index.md)
+  - [Windows](../../../installation/index.md)
+  - [MacOS](../../../installation/index.md)
 
 
 ## Connect your Polkadex Wallet to Hummingbot

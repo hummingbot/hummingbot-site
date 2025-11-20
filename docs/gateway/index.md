@@ -71,7 +71,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 Gateway is part of the open source Hummingbot project. Ways to contribute:
 
-- **Build new connectors**: See [DEX Connectors](../developers/gateway-connectors/index.md) for implementation guide
+- **Build new connectors**: See [DEX Connectors](../connectors/gateway-connectors/index.md) for implementation guide
 - **File issues**: Report bugs at [GitHub Issues](https://github.com/hummingbot/gateway/issues)
 - **Submit pull requests**: Contribute code at [GitHub](https://github.com/hummingbot/gateway/pulls)
 - **Edit documentation**: Improve docs at [GitHub](https://github.com/hummingbot/hummingbot-site/)

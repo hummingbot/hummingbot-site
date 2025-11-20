@@ -18,18 +18,18 @@ Basic features in Hummingbot.
 - [Start and Stop Strategy](./start-stop.md)
 - [Check Bot and Market Status](./status.md)
 - [Check Trading Performance](./history.md)
-- [Paper Trading Mode](../global-configs/paper-trade.md)
+- [Paper Trading Mode](./global-configs/paper-trade.md)
 
 ## Advanced Features
 
 Advanced features in Hummingbot for quant traders and developers.
 
-- [Auto-start from Command Line](../global-configs/strategy-autostart.md)
-- [Balance Limit](../global-configs/balance-limit.md)
-- [Clock Tick Size](../global-configs/clock-tick.md)
-- [Color Settings](../global-configs/color-settings.md)
-- [Connect External Database](../global-configs/external-db.md)
-- [Kill Switch](../global-configs/kill-switch.md)
-- [Override Fees](../global-configs/override-fees.md)
-- [Rate Limits Share Pct](../global-configs/rate-limits-share-pct.md)
-- [Rate Oracle](../strategy-configs/rate-oracle.md)
+- [Auto-start from Command Line](./global-configs/strategy-autostart.md)
+- [Balance Limit](./global-configs/balance-limit.md)
+- [Clock Tick Size](./global-configs/clock-tick.md)
+- [Color Settings](./global-configs/color-settings.md)
+- [Connect External Database](./global-configs/external-db.md)
+- [Kill Switch](./global-configs/kill-switch.md)
+- [Override Fees](./global-configs/override-fees.md)
+- [Rate Limits Share Pct](./global-configs/rate-limits-share-pct.md)
+- [Rate Oracle](../strategies/v1-strategies/strategy-configs/rate-oracle.md)

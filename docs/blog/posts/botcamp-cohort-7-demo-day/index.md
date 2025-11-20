@@ -16,7 +16,7 @@ The seventh cohort of Hummingbot Botcamp recently finished with a milestone Demo
 
 ### Cohort 7: Certified StrategyV2 Developer
 
-In Cohort 7, participants embarked on an intensive 5-week journey to become **Certified StrategyV2 Developers**. Throughout the program, they learned to design, code, and deploy custom algorithmic trading strategies using the [Strategy V2 Framework](./../../../v2-strategies/index.md). The cohort culminated in a Demo Day, where participants presented their strategies and voted for the best ones.
+In Cohort 7, participants embarked on an intensive 5-week journey to become **Certified StrategyV2 Developers**. Throughout the program, they learned to design, code, and deploy custom algorithmic trading strategies using the [Strategy V2 Framework](../../../strategies/v2-strategies/index.md). The cohort culminated in a Demo Day, where participants presented their strategies and voted for the best ones.
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/TAulqoSenmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

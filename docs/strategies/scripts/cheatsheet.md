@@ -9,7 +9,7 @@ Watch the full video that accompanies this page:
 
 ## Getting started
 
-- Follow the [Installation](../installation/index.md) docs for your environment
+- Follow the [Installation](../../installation/index.md) docs for your environment
 - Code your script inside the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder
 - Run your script with `start --script [SCRIPT NAME]`
 

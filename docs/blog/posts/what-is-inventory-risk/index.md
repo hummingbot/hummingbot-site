@@ -198,7 +198,7 @@ That way, his total spread is still the same (1%), but his buy offers now have a
 
 Hummingbot has a built-in script function, where you can create your own custom strategy, and the bot will adjust the parameters based on any strategy you want.
 
-All you need is know how to code on Python, create a .py file integrated with Humminbot code base, and activate the script through config script_enabled command (you can find more information about scripts [here](../../../scripts/index.md).
+All you need is know how to code on Python, create a .py file integrated with Humminbot code base, and activate the script through config script_enabled command (you can find more information about scripts [here](../../../strategies/scripts/index.md).
 
 You could even create a script that replicates an Automated Market Making logic, as [this reddit user asked](https://www.reddit.com/r/Hummingbot/comments/j6u8x0/amm_on_hummingbot/).
 

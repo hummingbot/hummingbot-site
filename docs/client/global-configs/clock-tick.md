@@ -1,6 +1,6 @@
 # Clock tick size
 
-Starting with version [**1.8.0**](../release-notes/index.md), the `tick_size` is now added as a variable in the ClientConfigMap, this means that you will be able to change the value of the tick size in the `conf_client.yml` file or by running `config tick_size` from within Hummingbot.
+Starting with version [**1.8.0**](../../release-notes/index.md), the `tick_size` is now added as a variable in the ClientConfigMap, this means that you will be able to change the value of the tick size in the `conf_client.yml` file or by running `config tick_size` from within Hummingbot.
 
 ## How it works
 

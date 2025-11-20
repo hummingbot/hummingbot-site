@@ -21,15 +21,15 @@ Here what we expect to deliver from a technical standpoint in 2024:
 
 ![](v2-framework.png)
 
-The new [V2 Strategies](../../../v2-strategies/index.md) framework has been a game-changer in strategy composability, and we are committed to expanding its capabilities.
+The new [V2 Strategies](../../../strategies/v2-strategies/index.md) framework has been a game-changer in strategy composability, and we are committed to expanding its capabilities.
 
 ### Make Scripts Configurable
 
-The development of configurable scripts is already underway, as the initial [pull request](https://github.com/hummingbot/hummingbot/pull/6741) has been merged into `development`. This feature will allow for easier deployment and customization of complex strategies, significantly simplifying user configurability while maintaining the flexibility of [Scripts](../../../scripts/index.md).
+The development of configurable scripts is already underway, as the initial [pull request](https://github.com/hummingbot/hummingbot/pull/6741) has been merged into `development`. This feature will allow for easier deployment and customization of complex strategies, significantly simplifying user configurability while maintaining the flexibility of [Scripts](../../../strategies/scripts/index.md).
 
 ### Add More Strategy Components
 
-Our focus will be on adding more smart components - which combine [Controllers](../../../v2-strategies/controllers/index.md) with Executor Handlers - into the V2 framework, which will offer increased flexibility in strategy implementation. Key additions should include:
+Our focus will be on adding more smart components - which combine [Controllers](../../../strategies/v2-strategies/controllers/index.md) with Executor Handlers - into the V2 framework, which will offer increased flexibility in strategy implementation. Key additions should include:
 
 - **XEMM Component:** This component will allow users to place a limit order on one exchange and, upon its fulfillment, hedge the order at market price on another exchange.
 - **DCA Component:** Designed for dynamic trading, this component will manage multiple open orders with a global take profit and stop loss.

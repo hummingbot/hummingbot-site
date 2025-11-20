@@ -75,9 +75,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](../global-configs/paper-trade.md) version of this connector by running `connect bybit_paper_trade` instead of `connect bybit`.
+Access the [Paper Trade](../client/global-configs/paper-trade.md) version of this connector by running `connect bybit_paper_trade` instead of `connect bybit`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../global-configs/paper-trade.md#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../client/global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*

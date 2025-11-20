@@ -70,4 +70,4 @@ For Concentrated Liquidity Market Maker pools where liquidity providers can spec
 
 ## Building Custom Connectors
 
-For detailed instructions on building custom Gateway DEX connectors, see [Building Gateway Connectors](../developers/connectors/index.md).
+For detailed instructions on building custom Gateway DEX connectors, see [Building Gateway Connectors](../connectors/gateway-connectors/index.md).

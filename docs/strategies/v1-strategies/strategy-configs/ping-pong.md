@@ -19,7 +19,7 @@ Would you like to use the ping pong feature and alternate between buy and sell o
 
 The ping pong strategy tries to keep buys and sells balanced by only creating orders on the opposite side of an order that is filled. It will keep on creating orders on the opposite side of the filled order as long as `ping_pong` is set to enabled. For example:
 
-![](../assets/img/ping-pong-mode.png)
+![](../../../assets/img/ping-pong-mode.png)
 
 Because the buy order from period 1 was filled, the bot stops placing buy orders, and only places sell orders (periods 2-4). Only when a sell order is eventually filled (period 4) that's the time that it will resume creating both buy and sell orders (period 5).
 

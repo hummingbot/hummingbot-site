@@ -198,7 +198,7 @@ nav:
         - TWAP Executor: strategies/v2-strategies/executors/twapexecutor.md
       - Strategies V1:
         - Strategies V1: strategies/v1-strategies/index.md
-        - Pure Market Making (PMM): strategies/pure-market-making.md
+        - Pure Market Making (PMM): strategies/v1-strategies/pure-market-making.md
         - PMM Configs:
           - PMM Configs: strategies/v1-strategies/strategy-configs/index.md
           - Add Transaction Costs: strategies/v1-strategies/strategy-configs/add-transaction-costs.md
@@ -228,20 +228,20 @@ nav:
       - CLOB Connectors: connectors/clob.md
       - Gateway DEX Connectors: gateway/connectors.md
       - Building CLOB Connectors:
-        - Building CLOB Connectors: developers/connectors/index.md
-        - Exchange API Requirements: developers/connectors/build.md
-        - Connector Architecture: developers/connectors/architecture/index.md
-        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-        - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
-        - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
-        - Spot Connector QA Checklist: developers/connectors/test.md
-        - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
-        - Perp Connector QA Checklist:  developers/connectors/test-perp.md
+        - Building CLOB Connectors: connectors/connectors/index.md
+        - Exchange API Requirements: connectors/connectors/build.md
+        - Connector Architecture: connectors/connectors/architecture/index.md
+        - Order Lifecycle and Market Events: connectors/connectors/architecture/order_lifecycle.md
+        - Handling Rate Limits with API Throttler: connectors/connectors/api_throttler.md
+        - Spot Connector Developer Checklist: connectors/connectors/spot-connector-checklist.md
+        - Spot Connector QA Checklist: connectors/connectors/test.md
+        - Perp Connector Developer Checklist: connectors/connectors/perp-connector-checklist.md
+        - Perp Connector QA Checklist:  connectors/connectors/test-perp.md
       - Building Gateway Connectors:
-        - Building Gateway Connectors: developers/gateway-connectors/index.md
-        - Connector Architecture: developers/gateway-connectors/architecture.md
-        - Testing Gateway Connectors: developers/gateway-connectors/testing.md
-      - Debugging & Testing Connectors: developers/connectors/debug.md
+        - Building Gateway Connectors: connectors/gateway-connectors/index.md
+        - Connector Architecture: connectors/gateway-connectors/architecture.md
+        - Testing Gateway Connectors: connectors/gateway-connectors/testing.md
+      - Debugging & Testing Connectors: connectors/connectors/debug.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -256,13 +256,13 @@ nav:
       - Check Performance: client/history.md
       - Find Log Files: client/log-files.md
       - Export Trades/Keys: client/export.md
-      - Adding Commands: developers/commands.md
+      - Adding Commands: client/commands-shortcuts.md
       - Balance Limit: client/global-configs/balance-limit.md
       - Clock Tick Size: client/global-configs/clock-tick.md 
       - Command Line Autostart: client/global-configs/strategy-autostart.md
       - Color Settings: client/global-configs/color-settings.md
       - Connect External Database: client/global-configs/external-db.md
-      - Debug Console: developers/debug.md
+      - Debug Console: client/debug-console.md
       - Kill Switch: client/global-configs/kill-switch.md
       - Market Data Collector: client/global-configs/data-collector.md
       - Override Fees: client/global-configs/override-fees.md
@@ -270,7 +270,7 @@ nav:
       - Rate Oracle: strategies/v1-strategies/strategy-configs/rate-oracle.md
       - Rate Limits: client/global-configs/rate-limits-share-pct.md
       # - Telegram Integration: global-configs/telegram.md
-      - Using Debugger Tools: installation/debug.md
+      - Using Debugger Tools: connectors/connectors/debug.md
     - Gateway DEX Middleware:
       - Overview: gateway/index.md
       - Installation & Setup: gateway/installation.md

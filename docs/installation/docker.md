@@ -132,7 +132,7 @@ You should now see the Hummingbot welcome screen:
 To get started with Hummingbot, check out the following pages and guides:
 
 * [Basic Features](../client/index.md)
-* [V2 Strategy Walkthough](../v2-strategies/walkthrough.md)
+* [V2 Strategy Walkthough](../strategies/v2-strategies/walkthrough.md)
 * [Hummingbot FAQ](../faq.md)
 
 ## Dev Branch | Older Versions

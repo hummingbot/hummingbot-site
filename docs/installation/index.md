@@ -136,9 +136,3 @@ See the **[MCP Installation Guide](../mcp/installation.md)** for complete instru
 
 </div>
 
-!!! note "Need help deciding?"
-    See [Installation Overview](./install-overview.md) for comparison of different methods.
-
-
-
-

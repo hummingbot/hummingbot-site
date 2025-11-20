@@ -10,7 +10,7 @@ Currently, Hummingbot supports two CLOB connector standards, each which define h
 
 * **CLOB Perp**: WebSocket-based connectors to an exchange's perpetual futures order book-based markets. Each connector is a folder in the [`hummingbot/connector/derivative`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative) folder. By convention, these connector names end in `_perpetual`.
 
-These connector standards allow users to create [Strategies](../strategies/index.md) and [Scripts](../scripts/index.md) that can operate on different spot and perpetual markets without modification.
+These connector standards allow users to create [Strategies](../strategies/index.md) and [Scripts](../strategies/scripts/index.md) that can operate on different spot and perpetual markets without modification.
 
 ### Current CLOB Connectors
 
@@ -50,6 +50,6 @@ The Notion templates below summarize the file and functionalities needed to buil
 * [Spot Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Spot-Connector-v2-1-1cc43830938445c9974f43ef861d59f1): Use this template to build `CLOB spot` connectors that conform 
 * [Perp Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Perp-Connector-v2-1-57d8391eb54c40929f77067355fd551e): Use this template to build `CLOB perp` connectors that conform 
 
-See [Building Connectors](../developers/connectors/index.md) for more information.
+See [Building Connectors](../connectors/connectors/build.md) for more information.
 
 If the exchange is not yet supported by Hummingbot, you can submit a governance proposal for it to be included. New connectors may be contributed by community members via [New Connector Proposals](../about/proposals.md), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.

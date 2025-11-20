@@ -39,7 +39,7 @@ Here are the current V2 directional strategies:
 
 ### Bollinger V1
 
-A simple directional strategy using [Bollinger Band Percent (BBP)](../../glossary/index.md). BBP measures an asset's price relative to its upper and lower Bollinger Bands, and this strategy uses the current BBP to construct long/short signals.
+A simple directional strategy using [Bollinger Band Percent (BBP)](../../../glossary/index.md). BBP measures an asset's price relative to its upper and lower Bollinger Bands, and this strategy uses the current BBP to construct long/short signals.
 
 **Code:**
 

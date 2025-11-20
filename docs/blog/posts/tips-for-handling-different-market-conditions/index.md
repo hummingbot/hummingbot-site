@@ -33,7 +33,7 @@ For example, let's imagine that we determined the market was ranging between 0.9
 
 ## **Order Levels**
 
-By incorporating more advanced features such as [order_levels](../../../strategy-configs/order-levels.md) and [order_level_spread](../../../strategy-configs/order-levels.md), one could place additional orders at wider spreads in an attempt to capture more volatile moments that exceed the first order level. The [order_level_amount](../../../strategy-configs/order-levels.md) parameter can either increase or decrease the subsequent order size after the first level. This can be used according to one's risk appetite. For example, one may be willing to purchase 100 assets at a tighter spread, but is willing to purchase an additional 150 assets at a wider spread as this is less risky.
+By incorporating more advanced features such as [order_levels](../../../strategies/v1-strategies/strategy-configs/order-levels.md) and [order_level_spread](../../../strategies/v1-strategies/strategy-configs/order-levels.md), one could place additional orders at wider spreads in an attempt to capture more volatile moments that exceed the first order level. The [order_level_amount](../../../strategies/v1-strategies/strategy-configs/order-levels.md) parameter can either increase or decrease the subsequent order size after the first level. This can be used according to one's risk appetite. For example, one may be willing to purchase 100 assets at a tighter spread, but is willing to purchase an additional 150 assets at a wider spread as this is less risky.
 
 On the other hand, by reducing the original spreads and setting 2 additional order_levels, one could accomplish capturing spread, volatility, and possibly increase their traded volume. Unfortunately, these tighter spreads come with increased risk appetite. See the sample configs
 
@@ -57,7 +57,7 @@ Therefore, if someone is attempting to capture spread in a trending market, one 
 
 By default, after an order is filled, Hummingbot immediately replaces the orders on the book. This can be useful in certain situations, however, in times of volatility, this could quickly lead to inventory shifting too far to one side or the other.
 
-Increasing the [filled_order_delay](../../../strategy-configs/filled-order-delay.md) parameter places a delay between a filled order and when the next order is placed. By increasing the filled_order_delay parameter, it reduces the risk of filling too many orders on one side or the other.
+Increasing the [filled_order_delay](../../../strategies/v1-strategies/strategy-configs/filled-order-delay.md) parameter places a delay between a filled order and when the next order is placed. By increasing the filled_order_delay parameter, it reduces the risk of filling too many orders on one side or the other.
 
 For example, the market is currently in a downtrend; Let us assume we are applying more sell pressure with tighter spreads. If the market suddenly starts to correct to the upside, it quickly fills our ask orders.
 

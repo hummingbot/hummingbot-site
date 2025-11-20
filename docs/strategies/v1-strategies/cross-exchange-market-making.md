@@ -80,7 +80,7 @@ Here's a high-level view of the logical flow of the order creation and adjustmen
 
 The cross exchange market making strategy regularly refreshes the limit orders it has on the maker side market by regularly cancelling old orders (or waiting for existing order to expire), and creating new limit orders. This process ensures the limit orders it has on the maker side are always of the correct and profitable prices.
 
-![Figure 1: Order creation and adjustment flow chart](../assets/img/xemm-flowchart-1.svg)
+![Figure 1: Order creation and adjustment flow chart](../../assets/img/xemm-flowchart-1.svg)
 
 The entry point of this logic flow is the `c_process_market_pair()` function in [`cross_exchange_market_making.pyx`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
@@ -88,7 +88,7 @@ The entry point of this logic flow is the `c_process_market_pair()` function in 
 
 The cancel order flow regularly monitors all active limit orders on the maker side, to ensure they are all valid and profitable over time. If any active limit order becomes invalid (e.g. because the asset balance changed) or becomes unprofitable (due to market price changes), then it should cancel such orders.
 
-![Figure 2: Cancel order flow chart](../assets/img/xemm-flowchart-2.svg)
+![Figure 2: Cancel order flow chart](../../assets/img/xemm-flowchart-2.svg)
 
 #### Active order cancellation setting
 
@@ -139,7 +139,7 @@ After all the active orders on make side have been checked, the strategy will pr
 
 After going through the cancel order flow, the cross exchange market making strategy would check and re-create any missing limit orders on the maker side.
 
-![Figure 3: Cancel order flow chart](../assets/img/xemm-flowchart-3.svg)
+![Figure 3: Cancel order flow chart](../../assets/img/xemm-flowchart-3.svg)
 
 The logic inside the create order flow is relatively straightforward. It checks whether there are existing bid and ask orders on the maker side. If any of the orders are missing, it will check whether it is profitable to create one at the moment. If it's profitable to create the missing orders, it will calculate the optimal pricing and size and create those orders.
 
@@ -149,7 +149,7 @@ The logic of the create order flow can be found in the function `c_check_and_cre
 
 The cross exchange market making strategy would always immediately hedge any order fills from the maker side, regardless of how profitable the hedge is at the moment. The rationale is, it is more useful to minimize unnecessary exposure to further market risks for the users, than to wait speculatively for a profitable moment to hedge the maker order fill - which may never come.
 
-![Figure 4: Hedging order fills flow chart](../assets/img/xemm-flowchart-4.svg)
+![Figure 4: Hedging order fills flow chart](../../assets/img/xemm-flowchart-4.svg)
 
 The logic of the hedging order fill flow can be found in the function `c_did_fill_order()` and `c_check_and_hedge_orders()` in [`cross_exchange_market_making.py`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/cross_exchange_market_making/cross_exchange_market_making.py).
 
@@ -162,7 +162,7 @@ Another difference is dependence of transaction fees on currrent gas fees. There
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is cross exchange market making?](../blog/posts/what-is-cross-exchange-market-making/index.md)
+:fontawesome-solid-book: [What is cross exchange market making?](../../blog/posts/what-is-cross-exchange-market-making/index.md)
 
 :fontawesome-brands-youtube: [Cross Exchange Market Making with Jelle](https://www.youtube.com/watch?v=fEoEAbPoBGA)
 

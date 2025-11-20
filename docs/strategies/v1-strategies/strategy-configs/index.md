@@ -1,4 +1,4 @@
-Below are configurable variables that are available in the [Pure Market Making strategy](../strategies/pure-market-making.md). They give you more control over how your market making bot behaves.
+Below are configurable variables that are available in the [Pure Market Making strategy](../pure-market-making.md). They give you more control over how your market making bot behaves.
 
 ## How to configure
 

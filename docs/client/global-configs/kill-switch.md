@@ -1,4 +1,4 @@
-Automatically stops the bot when it reaches a certain performance threshold, which can be either positive or negative. This feature uses the same performance calculation methodology as the [history](../client/history.md) command.
+Automatically stops the bot when it reaches a certain performance threshold, which can be either positive or negative. This feature uses the same performance calculation methodology as the [history](../history.md) command.
 
 ```
 Select your kill-switch mode (kill_switch_enabled/kill_switch_disabled)  >>>

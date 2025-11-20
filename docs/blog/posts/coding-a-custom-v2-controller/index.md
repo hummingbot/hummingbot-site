@@ -398,7 +398,7 @@ Here you see the result using all the default values. A file named `conf_generic
 
 In the last and final step we need to create a very simple configuration for the generic strategy (shipped with Hummingbot) to actually run the controller. 
 
-If you are unsure about the reason for this, just read the docs: [Strategies V2 Architecture](../../../v2-strategies/index.md)
+If you are unsure about the reason for this, just read the docs: [Strategies V2 Architecture](../../../strategies/v2-strategies/index.md)
 
 #### Create the strategy configuration
 

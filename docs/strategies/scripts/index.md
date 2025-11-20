@@ -1,6 +1,6 @@
 Scripts are the entry point for Hummingbot strategies. Standalone scripts let new users automate basic trading actions and implement simple versions of Humminggbot strategies.
 
-They also enable Hummingbot users to build customized strategies using the [Strategy V2](../strategies/index.md) framework, and access the full power of Hummingbot exchange connectors in a few lines of Python code.
+They also enable Hummingbot users to build customized strategies using the [Strategy V2](../v2-strategies/index.md) framework, and access the full power of Hummingbot exchange connectors in a few lines of Python code.
 
 !!! note Restart Hummingbot
      Should your script run into an error, it's crucial that you exit Hummingbot entirely, correct or debug the faulty script, and then restart Hummingbot. The stop command won't rectify the issue in case of an error. To get back on track, a complete shutdown and subsequent relaunch of Hummingbot is required.
@@ -19,11 +19,11 @@ See [Script Examples](examples.md) for a list of the current sample scripts in t
 - Call exchange APIs
 - And much more!
 
-We welcome new sample script contributions from users! To submit a contribution, please follow the [Contribution Guidelines](../developers/contributions.md).
+We welcome new sample script contributions from users! To submit a contribution, please follow the [Contribution Guidelines](../../community/contributions.md).
 
 ## Configuration Files
 
-Scripts can be created both with and without [config files](../client/config-files.md).
+Scripts can be created both with and without [config files](../../client/config-files.md).
 
 To create a configuration file for your script, execute:
 

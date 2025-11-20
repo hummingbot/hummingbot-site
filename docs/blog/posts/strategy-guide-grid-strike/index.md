@@ -9,9 +9,9 @@ tags:
 
 # Strategy Guide: Grid Strike 
 
-**Grid Strike** (`grid_strike`) is a [Controller](../../../v2-strategies/controllers/index.md) in Hummingbot's StrategyV2 framework that automatically places a grid of buy or sell orders within a set price range.
+**Grid Strike** (`grid_strike`) is a [Controller](../../../strategies/v2-strategies/controllers/index.md) in Hummingbot's StrategyV2 framework that automatically places a grid of buy or sell orders within a set price range.
 
-Unlike [basic grid strategies](https://www.binance.com/en/square/post/24240367765730), Grid Strike utilizes [Executors](../../../v2-strategies/executors/index.md) which dynamically manage each order level with configurable take profit and stop loss settings. This means every position opened by the strategy is automatically monitored and closed according to your risk parameters. It can be configured to move with the market trend —- either up or down -- letting you adapt the strategy to changing market conditions.
+Unlike [basic grid strategies](https://www.binance.com/en/square/post/24240367765730), Grid Strike utilizes [Executors](../../../strategies/v2-strategies/executors/index.md) which dynamically manage each order level with configurable take profit and stop loss settings. This means every position opened by the strategy is automatically monitored and closed according to your risk parameters. It can be configured to move with the market trend —- either up or down -- letting you adapt the strategy to changing market conditions.
 
 This guide explains how the Grid Strike strategy works and helps you decide when to use it. You'll learn how to configure and run the strategyt, as well as the key concepts and how to set it up for trending markets.
 
@@ -57,7 +57,7 @@ See [Strategy Configuration](#strategy-configuration) below for an in-depth guid
 
 ### Create Script Config 
 
-Once you are satisfied with your Grid Strike configuration, add the name of the file to the [Loader Script](../../../scripts/examples.md#v2-controller-loader):
+Once you are satisfied with your Grid Strike configuration, add the name of the file to the [Loader Script](../../../strategies/scripts/examples.md#v2-controller-loader):
 
 ```
 create --script-config v2_with_controllers
@@ -176,7 +176,7 @@ Make sure to set the most important parameters like:
 
 ![](./triple_barrier.png)
 
-Grid Strike creates Grid Executors that implement the Triple Barrier Method, similar to [Position Executors](../../../v2-strategies/executors/positionexecutor.md). Set these parameters to define how each order is managed if it is filled:
+Grid Strike creates Grid Executors that implement the Triple Barrier Method, similar to [Position Executors](../../../strategies/v2-strategies/executors/positionexecutor.md). Set these parameters to define how each order is managed if it is filled:
 
 | Setting | Meaning |
 | --- | --- |

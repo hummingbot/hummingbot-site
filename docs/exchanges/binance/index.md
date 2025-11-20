@@ -28,7 +28,7 @@
 ## 🔑 How to Connect
 
 !!! tip
-    See the [Binance Connector Guide](../../blog/posts/using-binance-with-hummingbot/index.md/) for details on create API keys on Binance.
+    See the [Binance Connector Guide](../../blog/posts/using-binance-with-hummingbot/index.md) for details on create API keys on Binance.
 
 From inside the Hummingbot client, run `connect binance`:
 
@@ -63,9 +63,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](../../global-configs/paper-trade.md) version of this connector by running `connect binance_paper_trade` instead of `connect binance`.
+Access the [Paper Trade](../../client/global-configs/paper-trade.md) version of this connector by running `connect binance_paper_trade` instead of `connect binance`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../global-configs/paper-trade.md#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../client/global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*

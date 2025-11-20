@@ -55,14 +55,14 @@ The strategy makes a series of market checks and initializes the market data pro
 
 ## Check status and performance
 
-Run the [Status](../client/status.md) command to see the status (asset balances, active orders and positions) of the running strategy:
+Run the [Status](../../client/status.md) command to see the status (asset balances, active orders and positions) of the running strategy:
 
 [![status](diagrams/23.png)](diagrams/23.png)
 
-After there have been trades, you can use the [History](../client/history.md) to see your bot's performance.
+After there have been trades, you can use the [History](../../client/history.md) to see your bot's performance.
 
 ## Next steps
 
-We encourage you check out [Dashboard](../dashboard/index.md), the new entry point for Hummingbot users that will be officially launched at the [Hummingbot 2.0 launch event](https://lu.ma/ieyvhcft).
+We encourage you check out [Dashboard](../../dashboard/index.md), the new entry point for Hummingbot users that will be officially launched at the [Hummingbot 2.0 launch event](https://lu.ma/ieyvhcft).
 
 Also, see [Walkthrough - Controller](./walkthrough-controller.md) to learn how to run scripts that deploy strategies as [Controllers](controllers/index.md).

@@ -74,7 +74,7 @@ Become an expert in building and maintaining one or more connector types:
 - **CLOB DEX**: Decentralized derivatives platforms  
 - **Gateway AMM**: Automated market makers and DeFi protocols
 
-See [Building CLOB Connectors](../developers/connectors/index.md) and [Building Gateway connectors](../developers/gateway-connectors/index.md) for more information.
+See [Building CLOB Connectors](../connectors/connectors/index.md) and [Building Gateway connectors](../connectors/gateway-connectors/index.md) for more information.
 
 ### Bounty Workflow
 

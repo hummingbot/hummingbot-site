@@ -1,4 +1,4 @@
-![](../assets/img/market-data-table.png)
+![](../../assets/img/market-data-table.png)
 
 Hummingbot can collect real-time market data in the background for the trading pairs that are initialized in the running strategy.
 

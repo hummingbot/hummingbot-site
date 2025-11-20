@@ -38,7 +38,7 @@ Mostly due to fees, the result was total P&L of -4.84 USDT. While not the outcom
 
 ## What Changed in October: Using a V2 Strategy
 
-Fast forward to October, and I wanted to test out the new V2 strategy framework, notable for creating [Executors](../../../v2-strategies/executors/index.md) instead of orders. This innovative approach is based on the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html), a concept from [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
+Fast forward to October, and I wanted to test out the new V2 strategy framework, notable for creating [Executors](../../../strategies/v2-strategies/executors/index.md) instead of orders. This innovative approach is based on the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html), a concept from [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
 
 V2 Strategies differ from their predecessors in several key ways:
 

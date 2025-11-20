@@ -78,7 +78,7 @@ Foundation evaluates based on:
 
 ### Development Standards
 
-- Follow [Connector Development Guidelines](../developers/connectors/index.md)
+- Follow [Connector Development Guidelines](../connectors/connectors/index.md)
 - Use established coding patterns
 - Implement error handling
 - Add test coverage
@@ -111,8 +111,8 @@ Your PR will be reviewed for:
 
 Foundation QA uses:
 
-- [Spot Connector QA Checklist](../developers/connectors/test.md)
-- [Perp Connector QA Checklist](../developers/connectors/test-perp.md)
+- [Spot Connector QA Checklist](../connectors/connectors/test.md)
+- [Perp Connector QA Checklist](../connectors/connectors/test-perp.md)
 
 
 Testing covers:
@@ -141,10 +141,10 @@ Testing covers:
 
 ### Documentation
 
-- [Connector Development Guide](../developers/connectors/index.md)
-- [Spot Connector Checklist](../developers/connectors/spot-connector-checklist.md)
-- [Perp Connector Checklist](../developers/connectors/perp-connector-checklist.md)
-- [Testing Guidelines](../developers/connectors/test.md)
+- [Connector Development Guide](../connectors/connectors/index.md)
+- [Spot Connector Checklist](../connectors/connectors/spot-connector-checklist.md)
+- [Perp Connector Checklist](../connectors/connectors/perp-connector-checklist.md)
+- [Testing Guidelines](../connectors/connectors/test.md)
 
 ### Community Support
 

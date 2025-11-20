@@ -114,17 +114,17 @@ Strategies that receive more than 100,000 HBOT Minimum Voting Power are Communit
 
 Here are the Core Strategies nominees for Epoch 5:
 
-- [AMM-Arbitrage](../../../strategies/amm-arbitrage.md) (Epoch 4 Core)
-- [Avellaneda Market Making](../../../strategies/avellaneda-market-making.md)
-- [Cross-Exchange Market Making](../../../strategies/cross-exchange-market-making.md) (Epoch 4 Core)
-- [Cross-Exchange Mining](../../../strategies/cross-exchange-mining.md)
-- [Hedge](../../../strategies/hedge.md)
-- [Liquidity Mining](../../../strategies/liquidity-mining.md)
-- [Perpetual Market Making](../../../strategies/perpetual-market-making.md)
-- [Pure Market Making](../../../strategies/pure-market-making.md) (Epoch 4 Core)
-- [Spot Perpetual Arbitrage](../../../strategies/spot-perpetual-arbitrage.md)
-- [TWAP](../../../strategies/twap.md)
-- [AMM-V3 LP](../../../v1-strategies/index.md) (Epoch 4 Core)
+- [AMM-Arbitrage](../../../strategies/v1-strategies/amm-arbitrage.md) (Epoch 4 Core)
+- [Avellaneda Market Making](../../../strategies/v1-strategies/avellaneda-market-making.md)
+- [Cross-Exchange Market Making](../../../strategies/v1-strategies/cross-exchange-market-making.md) (Epoch 4 Core)
+- [Cross-Exchange Mining](../../../strategies/v1-strategies/cross-exchange-mining.md)
+- [Hedge](../../../strategies/v1-strategies/hedge.md)
+- [Liquidity Mining](../../../strategies/v1-strategies/liquidity-mining.md)
+- [Perpetual Market Making](../../../strategies/v1-strategies/perpetual-market-making.md)
+- [Pure Market Making](../../../strategies/v1-strategies/pure-market-making.md) (Epoch 4 Core)
+- [Spot Perpetual Arbitrage](../../../strategies/v1-strategies/spot-perpetual-arbitrage.md)
+- [TWAP](../../../strategies/v1-strategies/twap.md)
+- [AMM-V3 LP](../../../strategies/index.md) (Epoch 4 Core)
 
 ---
 

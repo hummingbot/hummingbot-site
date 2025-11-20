@@ -72,11 +72,11 @@ The Core Strategies poll defines which strategies should be Core (officially mai
 
 **Core:**
 
-[Pure Market Making (PMM)](../../../strategies/pure-market-making.md)
+[Pure Market Making (PMM)](../../../strategies/v1-strategies/pure-market-making.md)
 
-[Cross Exchange Market Making (XEMM)](../../../strategies/cross-exchange-market-making.md)
+[Cross Exchange Market Making (XEMM)](../../../strategies/v1-strategies/cross-exchange-market-making.md)
 
-[AMM Arbitrage](../../../strategies/amm-arbitrage.md)
+[AMM Arbitrage](../../../strategies/v1-strategies/amm-arbitrage.md)
 
 Hummingbot Foundation will be the official maintainer for these strategies, prioritize updates and fixes to them, and maintain their documentation pages. The Foundation also supports Core strategies by running long-term testing bots for them and providing HBOT rewards to users who answer community questions related to them.
 

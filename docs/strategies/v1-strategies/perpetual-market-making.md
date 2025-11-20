@@ -65,7 +65,7 @@ The `perpetual_market_making` strategy works in a similar fashion as the `pure_m
 
 On every tick the strategy creates new opening orders and existing orders are being cancelled. If an outstanding order is filled, the strategy then has to manage the position.
 
-![Figure 1: General strategy flow chart](../assets/img/perp_mm-flowchart-1.svg)
+![Figure 1: General strategy flow chart](../../assets/img/perp_mm-flowchart-1.svg)
 
 ### Order Placement
 
@@ -78,13 +78,13 @@ It's also possible to place multiple orders on each side in price layers as defi
 
 The strategy can be restricted to trade only within a specific price band, defined by the `price_ceiling` and `price_floor` parameters. If the mid price is outside of this interval, no orders will be created, only cancelled.
 
-![Figure 2: Order creation and adjustment flow chart](../assets/img/perp_mm-flowchart-2.svg)
+![Figure 2: Order creation and adjustment flow chart](../../assets/img/perp_mm-flowchart-2.svg)
 
 ### Position Management
 
 New opening orders are not being placed if one or more of existing opening orders were filled and the strategy holds a position. In that case, the position(s) is being evaluated on every tick whether to close it or not, and whether to either take a profit or a loss. These decisions are controlled by parameters `long_profit_taking_spread`, `short_profit_taking_spread` and `stop_loss_spread`.
 
-![Figure 3: Position management flow chart](../assets/img/perp_mm-flowchart-3.svg)
+![Figure 3: Position management flow chart](../../assets/img/perp_mm-flowchart-3.svg)
 
 ## ℹ️ More Resources
 

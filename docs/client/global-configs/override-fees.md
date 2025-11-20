@@ -8,7 +8,7 @@ By default, Hummingbot uses the default fees of the exchange. However, if you're
     when the instance was created.
 
 
-![](../assets/img/fees-override.png)
+![](../../assets/img/fees-override.png)
 
 !!! note
     Exit and restart Hummingbot for the changes to take effect.

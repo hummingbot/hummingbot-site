@@ -17,7 +17,7 @@ V2 strategies bring unparalleled modularity, real-time adaptability, and backtes
 
 ## Revolutionizing Strategy Design with Modularity and Flexibility
 
-[V2 Strategies](../../../v2-strategies/index.md) marks a departure from the more rigid structure of V1 strategies. It's crafted to enable users to create powerful, custom strategies, even those who may not have extensive Python programming experience.
+[V2 Strategies](../../../strategies/v2-strategies/index.md) marks a departure from the more rigid structure of V1 strategies. It's crafted to enable users to create powerful, custom strategies, even those who may not have extensive Python programming experience.
 
 Key Features:
 
@@ -33,10 +33,10 @@ Key Features:
 
 An ecosystem of interconnected components let users customize their V2 Strategies:
 
-* [V2 Script](../../../v2-strategies/index.md): This serves as the strategy's blueprint, outlining its configuration and interacting seamlessly with other components.
-* [Controller](../../../v2-strategies/controllers/index.md): Acting as the strategy's command center, the Controller interprets input from the V2 Script and steers the overall strategy. It manages Executors, which are crucial for order and position management.
-* [Candles](../../../v2-strategies/candles/index.md): Providing a structured snapshot of market data, Candles are pivotal in generating analytical indicators for market analysis.
-* [Executors](../../../v2-strategies/executors/index.md): These components autonomously manage orders and positions, ensuring alignment with the strategy's directives.
+* [V2 Script](../../../strategies/v2-strategies/index.md): This serves as the strategy's blueprint, outlining its configuration and interacting seamlessly with other components.
+* [Controller](../../../strategies/v2-strategies/controllers/index.md): Acting as the strategy's command center, the Controller interprets input from the V2 Script and steers the overall strategy. It manages Executors, which are crucial for order and position management.
+* [Candles](../../../strategies/v2-strategies/candles/index.md): Providing a structured snapshot of market data, Candles are pivotal in generating analytical indicators for market analysis.
+* [Executors](../../../strategies/v2-strategies/executors/index.md): These components autonomously manage orders and positions, ensuring alignment with the strategy's directives.
 
 
 ## Performance of V2 Strategies in Live Trading

@@ -61,9 +61,9 @@ For advanced users who are comfortable using command line interface, installing 
 
 Guides for various environments:
 
-- [Linux](../../../installation/linux.md)
-- [Windows](../../../installation/windows.md)
-- [MacOS](../../../installation/mac.md)
+- [Linux](../../../installation/index.md)
+- [Windows](../../../installation/index.md)
+- [MacOS](../../../installation/index.md)
 
 <br>
 
@@ -152,7 +152,7 @@ Run `gateway connect osmosis` and follow the prompts to add a trading wallet to 
 
 ## Run a Strategy
 
-To begin trading, a strategy must be configured. The two strategies supported natively by the Osmosis connector are [**amm_arb**](../../../strategies/amm-arbitrage.md) and **amm_v3_lp**.
+To begin trading, a strategy must be configured. The two strategies supported natively by the Osmosis connector are [**amm_arb**](../../../strategies/v1-strategies/amm-arbitrage.md) and **amm_v3_lp**.
 
 ### Prepare
 

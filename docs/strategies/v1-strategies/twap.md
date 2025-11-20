@@ -10,7 +10,7 @@
 
 This strategy is a simple bot that places a series of limit orders on an exchange, while allowing users to control order size, price, and duration.
 
-We recommend this strategy as a starting point for developers looking to build their own strategies, and it is used as reference for articles in [Developer Reference: Strategies](../developers/strategies/index.md).
+We recommend this strategy as a starting point for developers looking to build their own strategies, and it is used as reference for articles in [Developer Reference: Strategies](../v2-strategies/index.md).
 
 ## 🏦 Exchanges supported
 
@@ -54,7 +54,7 @@ The TWAP strategy divides a large user order into chunks according to the follow
 * number of individual orders
 * time delay between orders
 
-![Figure 1: Processing orders](../assets/img/TWAP_1.svg)
+![Figure 1: Processing orders](../../assets/img/TWAP_1.svg)
 
 The orders are then split into tradable (quantized) amounts and executed sequentially with the indicated time delay in between orders. There is no time delay before the first order. Because only one order is placed in a clock tick, a state machine is needed to emit multiple orders over different clock ticks. To see the executed orders, type history into the command prompt.
 
@@ -74,7 +74,7 @@ Custom state variables can be added to the strategy by setting variables in the 
 * `self._quantity_remaining` : Indicates the quantity of order left to be placed as individual orders. This state variable is updated after each order is placed and persisted throughout until the order is done processing.
 * `self._first_order` : Indicates whether the current individual order is the first order.
 
-![Figure 2: Placing orders](../assets/img/TWAP_2.svg)
+![Figure 2: Placing orders](../../assets/img/TWAP_2.svg)
 
 TWAP processes orders when there is a remaining order quantity & the specified time_delay has passed. Specifically, some of the key elements in utilizing the remaining order quantity and time_delay are detailed below:
 
@@ -92,6 +92,6 @@ TWAP processes orders when there is a remaining order quantity & the specified t
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [Strategy coding for dummies](../blog/posts/strategy-coding-for-dummies/index.md): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
+:fontawesome-solid-book: [Strategy coding for dummies](../../blog/posts/strategy-coding-for-dummies/index.md): This article is a blog post submission from our of our users. It is not directly related to TWAP strategy, but it demos how you can write a custom script for cross exchange market making strategy
 
 

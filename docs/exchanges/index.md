@@ -109,7 +109,7 @@ CLOB (Central Limit Order Book) connectors provide WebSocket and REST-based inte
 - Compatible with V2 Strategies framework
 - Comprehensive testing and QA process
 
-[Build CLOB Connectors →](../developers/connectors/index.md){: .md-button }
+[Build CLOB Connectors →](../connectors/connectors/build.md){: .md-button }
 
 ### Gateway Connectors (AMM/DEX)
 
@@ -122,7 +122,7 @@ Gateway connectors enable interaction with decentralized protocols through a sta
 - Support for liquidity provision
 - Hardware wallet compatibility
 
-[Build Gateway Connectors →](../developers/gateway-connectors/index.md){: .md-button }
+[Build Gateway Connectors →](../connectors/gateway-connectors/index.md){: .md-button }
 
 ## For Exchanges Ready to Connect
 

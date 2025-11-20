@@ -17,11 +17,11 @@ A Hummingbot [strategy](../strategies/index.md) automates an algorithmic trading
 
 As of the 2.0 release, the framework offers two ways to create Hummingbot strategies:
 
-* [Scripts](../scripts/index.md): Scripts are the entry point for all Hummingbot strategies. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors. They can range in complexity from a simple Python file that contains all strategy logic to a launcher script launches multiple Controllers, each defining a separate sub-strategy. 
+* [Scripts](../strategies/scripts/index.md): Scripts are the entry point for all Hummingbot strategies. A script's `on_tick` method defines the actions taken each clock tick, and it provides access to core Hummingbot components like connectors. They can range in complexity from a simple Python file that contains all strategy logic to a launcher script launches multiple Controllers, each defining a separate sub-strategy. 
 
-* [Controllers](../v2-strategies/controllers/index.md): Controllers define a modularized strategy using components such as Executors, enabling backtesting and faciliates multi-bot deployment using Dashboard.
+* [Controllers](../strategies/v2-strategies/controllers/index.md): Controllers define a modularized strategy using components such as Executors, enabling backtesting and faciliates multi-bot deployment using Dashboard.
 
-In the past, there were legacy strategy templates ([V1 Strategies](../v1-strategies/index.md)), the original Hummingbot strategies that are more rigid and less customizable than those built using the new Strategy V2 framework.
+In the past, there were legacy strategy templates ([V1 Strategies](../strategies/v1-strategies/index.md)), the original Hummingbot strategies that are more rigid and less customizable than those built using the new Strategy V2 framework.
 
 ## Connectors
 

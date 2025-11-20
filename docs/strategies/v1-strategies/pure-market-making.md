@@ -78,7 +78,7 @@ The built-in pure market making strategy in Hummingbot periodically requests lim
 
 Here's a high level view of the logic flow inside the built-in pure market making strategy.
 
-![Figure 5: Pure market making strategy logical flowchart](../assets/img/pure-mm-flowchart.svg)
+![Figure 5: Pure market making strategy logical flowchart](../../assets/img/pure-mm-flowchart.svg)
 
 The pure market making strategy operates in a tick-by-tick manner. Each tick is typically 1 second, although it can be programmatically modified to longer or shorter durations.
 
@@ -108,7 +108,7 @@ This cycle of order creation and order cancellation will repeat again and again 
 
 ## ℹ️ More Resources
 
-:fontawesome-solid-book: [What is market making?](../blog/posts/what-is-market-making/index.md): A blog post that explains the basics of market making.
+:fontawesome-solid-book: [What is market making?](../../blog/posts/what-is-market-making/index.md): A blog post that explains the basics of market making.
 
 :fontawesome-brands-youtube: [How to set up a simple pure market making bot on Binance](https://www.youtube.com/watch?v=La7E6uudOYY): Learn how to create pure market making bot on Binance exchange.
 
