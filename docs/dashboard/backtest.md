@@ -8,7 +8,7 @@ This feature provides crucial insights into how a strategy would have performed 
 
 - Before backtesting a strategy, you need to configure it. In this example, we'll use the **PMM Simple** controller with the **Binance** connector, trading the **BTC-USDT** pair.
 
-[![backtest](backtest-1.png)](backtest-1.png)
+![Configuring the PMM Simple controller for backtesting](backtest-1.png)
 
 
 - **Select Connector:** Choose the exchange (e.g., Binance).
@@ -24,12 +24,12 @@ This feature provides crucial insights into how a strategy would have performed 
 
 - With your configuration set, navigate to the backtesting section. Specify the **Start Date** and **End Date** for the historical data, the time interval for the **Backtesting Resolution**, and the **Trade Cost** percentage. Click the **Run Backtesting** button to initiate the process.
 
-[![backtest](backtest-2.png)](backtest-2.png)
+![Backtesting results showing net PNL, max drawdown, and total volume](backtest-2.png)
 
 
 - The backtesting results will generate in a few seconds, providing you with a comprehensive overview. Here's an example of what you might see: 
 
-[![backtest](backtest.png)](backtest.png)
+![Graphical representation of backtesting results including candlestick chart and PNL quote chart](backtest.png)
 
 **Backtesting Metrics**:
 
@@ -60,7 +60,7 @@ This feature provides crucial insights into how a strategy would have performed 
 
 ## Upload Config to Backend API
 
-[![backtest](backtest-3.png)](backtest-3.png)
+![Uploading the configured strategy to the backend API](backtest-3.png)
 
 - Create a name for the current config
 

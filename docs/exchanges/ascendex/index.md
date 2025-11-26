@@ -87,9 +87,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect ascendex_paper_trade` instead of `connect ascendex`.
+Access the [Paper Trade](../../client/global-configs/paper-trade.md) version of this connector by running `connect ascendex_paper_trade` instead of `connect ascendex`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../client/global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🕯 Spot Candles Feed
 *Collect historical OHCLV data from this exchange's spot markets*

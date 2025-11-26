@@ -40,7 +40,7 @@ Now, let's get you registered on Polkadex:
 
 ![](image3a.png)
 
-![](!image3b.png)
+![](image3b.png)
 
 ## Register Your Funding Account
 
@@ -98,7 +98,7 @@ There are two main methods to install Hummingbot:
 
 For most new users, we recommend installing Hummingbot using Docker.
 
-- [Docker Quickstart Guide](/academy-content/docker-installation-guide/)
+- [Docker Quickstart Guide](../docker-installation-guide/index.md)
 
 ### Source
 
@@ -110,9 +110,9 @@ We recommend installing Hummingbot from source if you meet any of the following 
 
 Guides for various environments:
 
-  - [Linux](../../../installation/linux.md)
-  - [Windows](../../../installation/windows.md)
-  - [MacOS](../../../installation/mac.md)
+  - [Linux](../../../installation/index.md)
+  - [Windows](../../../installation/index.md)
+  - [MacOS](../../../installation/index.md)
 
 
 ## Connect your Polkadex Wallet to Hummingbot

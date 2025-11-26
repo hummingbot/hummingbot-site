@@ -288,7 +288,7 @@ For this example, we'll use the [**bollinger_v1**](https://github.com/hummingbot
 
    [![image](24.png)](24.png)
 
-For more details on V2 Strategies or other available controllers, check out the Controllers section of [V2 Strategies](../../../v2-strategies/controllers/index.md) documentation. Please note that since dYdX only supports **one-way mode** some V2 Strategies that use Hedge mode may not work correctly with the controller.    
+For more details on V2 Strategies or other available controllers, check out the Controllers section of [V2 Strategies](../../../strategies/v2-strategies/controllers/index.md) documentation. Please note that since dYdX only supports **one-way mode** some V2 Strategies that use Hedge mode may not work correctly with the controller.    
 
 
 ## Using dYdX with Hummingbot Dashboard
@@ -302,15 +302,15 @@ Hummingbot Dashboard is a web-based interface for Hummingbot introduced recently
    First, clone the Hummingbot deployment repository to your local machine:
 
    ```bash
-   git clone https://github.com/hummingbot/deploy
+   git clone https://github.com/hummingbot/hummingbot-api
    ```
 
- **Navigate to the Deployment Directory**
+ **Navigate to the Hummingbot API Directory**
 
-   Change your working directory to the newly cloned `deploy` folder:
+   Change your working directory to the newly cloned `hummingbot-api` folder:
 
    ```bash
-   cd deploy
+   cd hummingbot-api
    ```
 
  **Run the Setup Script**

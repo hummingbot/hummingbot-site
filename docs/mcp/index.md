@@ -117,8 +117,8 @@ graph TB
 
 Ready to build AI trading agents with Hummingbot? Follow these steps:
 
-1. **[Install the MCP Server](/mcp/installation/)** - Set up development or production environment
-2. **[Explore Available Tools](/mcp/tools/)** - Learn about trading and portfolio management capabilities  
+1. **[Install the MCP Server](./installation.md)** - Set up development or production environment
+2. **[Explore Available Tools](./tools.md)** - Learn about trading and portfolio management capabilities  
 3. **Configure your AI assistant** - Connect Claude, Gemini, or other MCP-compatible AI
 4. **Start trading conversations** - Let AI manage your portfolio automatically
 
@@ -137,7 +137,7 @@ Access real-time prices, funding rates, and order book data for informed decisio
 
 ## Usage with AI Assistants
 
-The Hummingbot MCP Server works with various AI assistants. See the **[Installation Guide](/mcp/installation/)** for detailed setup instructions for:
+The Hummingbot MCP Server works with various AI assistants. See the **[Installation Guide](./installation.md)** for detailed setup instructions for:
 
 - **Claude Code** (CLI) - Recommended for developers
 - **Claude Desktop** - GUI application

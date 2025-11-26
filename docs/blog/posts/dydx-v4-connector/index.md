@@ -12,14 +12,14 @@ categories:
 
 We're thrilled to introduce the brand-new dYdX V4 connector in the Hummingbot v2.0.1 release! This update integrates Hummingbot with the dYdX V4 Chain, enabling users to run advanced market-making and algo trading strategies on dYdX!
 
-This release marks a significant milestone in the collaboration between the [Hummingbot Foundation](/about/) and the dYdX ecosystem. Earlier this year, we awarded a grant from the [dYdX Grants Program](https://dydxgrants.com/) to support the development of the dYdX V4 connector and to evangelize usage.
+This release marks a significant milestone in the collaboration between the [Hummingbot Foundation](../../../about/index.md) and the dYdX ecosystem. Earlier this year, we awarded a grant from the [dYdX Grants Program](https://dydxgrants.com/) to support the development of the dYdX V4 connector and to evangelize usage.
 
 <!-- more -->
 
 ## Key Benefits
 
 - **Access to a Leading Perp DEX**: This connector opens the door for thousands of market makers and algo traders who build on top of the Hummingbot framework to access and trade on dYdX, a leading decentralized perpetual contract exchange. This access empowers traders to tap into dYdX's deep liquidity and innovative trading features.
-- **Supported by the Latest Hummingbot V2 Framework**: The connector is fully integrated with the latest [Hummingbot V2 framework](/v2-strategies/), which includes powerful tools for backtesting and multi-bot deployment. This means traders can now optimize and deploy multiple trading strategies simultaneously, all while utilizing the advanced capabilities of the Hummingbot V2 infrastructure.
+- **Supported by the Latest Hummingbot V2 Framework**: The connector is fully integrated with the latest [Hummingbot V2 framework](../../../strategies/v2-strategies/index.md), which includes powerful tools for backtesting and multi-bot deployment. This means traders can now optimize and deploy multiple trading strategies simultaneously, all while utilizing the advanced capabilities of the Hummingbot V2 infrastructure.
 - **Community-Driven Strategy Sharing**: The Hummingbot community now has the opportunity to develop and share dYdX-specific trading strategies and dashboard pages. This collaboration fosters innovation and helps traders leverage collective knowledge, making it easier to succeed on the dYdX platform.
 
 ## Installation Instructions
@@ -66,7 +66,7 @@ Due to some dependency conflicts with other Hummingbot connectors, we have creat
 
 This sponsorship underscores dYdX and Hummingbot's commitment to empowering the crypto ecosystem with robust tools for traders and developers. We are proud to contribute to this initiative by providing a powerful and reliable connector that enhances the trading capabilities of our community.
 
-For more detailed information on how to get started with the dYdX connector, please visit our [dYdX Connector Documentation](/exchanges/dydx/). We are also working on a more detailed connector guide and a YouTube tutorial video, which will be available shortly to help you maximize your trading experience on dYdX.
+For more detailed information on how to get started with the dYdX connector, please visit our [dYdX Connector Documentation](../../../exchanges/dydx.md). We are also working on a more detailed connector guide and a YouTube tutorial video, which will be available shortly to help you maximize your trading experience on dYdX.
 
 We hope this update empowers you to make the most of the advanced trading opportunities on dYdX. Happy trading! 🚀
 

@@ -1,5 +1,5 @@
 !!! tip "Foundation Sponsor"
-    dYdX is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on dYdX, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+    dYdX is a [sponsor](../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on dYdX, you're supporting the Foundation and our mission to democratize algo trading with open source software.
 
 ## 🛠 Connector Info
 

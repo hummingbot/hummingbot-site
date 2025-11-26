@@ -61,7 +61,7 @@ This single command sets up:
 
 After setup, you can connect AI assistants to control Hummingbot with natural language.
 
-See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
+See the **[MCP Installation Guide](../mcp/installation.md)** for complete instructions on connecting:
 
 - **Claude Code** (recommended) - One-line CLI setup
 - **Gemini CLI** - Google's AI terminal agent
@@ -127,13 +127,13 @@ The `-d` flag runs Hummingbot in detached mode. Attach to it by running the comm
 
 You should now see the Hummingbot welcome screen:
 
-![welcome screen](/assets/img/welcome.png)
+![welcome screen](../assets/img/welcome.png)
 
 To get started with Hummingbot, check out the following pages and guides:
 
-* [Basic Features](/client/)
-* [V2 Strategy Walkthough](/v2-strategies/walkthrough/)
-* [Hummingbot FAQ](/faq/)
+* [Basic Features](../client/index.md)
+* [V2 Strategy Walkthough](../strategies/v2-strategies/walkthrough.md)
+* [Hummingbot FAQ](../faq.md)
 
 ## Dev Branch | Older Versions
 
@@ -177,8 +177,8 @@ image: hummingbot/hummingbot:version-2.0.0
     - PancakeSwap (BNB Chain)
     - Trader Joe (Avalanche)
     - dYdX (Starkware)
-    - And [30+ others](/gateway/exchanges)
+    - And [30+ others](../gateway/connectors.md)
 
-[Gateway](/gateway) acts as middleware that enables Hummingbot to interact with blockchain-based decentralized exchanges.
+[Gateway](../gateway/index.md) acts as middleware that enables Hummingbot to interact with blockchain-based decentralized exchanges.
 
-**For standalone client users**: If you installed the [standalone Hummingbot client](#installation-client-only-advanced) (not the Hummingbot API), follow the instructions in [Gateway - Installation](/gateway/installation) to install Gateway separately.
+**For standalone client users**: If you installed the [standalone Hummingbot client](#installation-client-only-advanced) (not the Hummingbot API), follow the instructions in [Gateway - Installation](../gateway/installation.md) to install Gateway separately.

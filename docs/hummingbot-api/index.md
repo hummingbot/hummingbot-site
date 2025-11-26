@@ -9,6 +9,16 @@ A comprehensive RESTful API framework for managing trading operations across mul
 
 **GitHub Repository**: [github.com/hummingbot/hummingbot-api](https://github.com/hummingbot/hummingbot-api)
 
+## Getting Started
+
+- **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
+- **[Quickstart Guide](quickstart.md)** - Learn how to:
+    - Add exchange credentials
+    - View portfolio balances
+    - Place your first market order
+
+The guides include Docker setup and Python API client examples to get you trading in minutes.
+
 ## What is Hummingbot API?
 
 The Hummingbot API is designed to be your central hub for trading operations, offering:
@@ -82,36 +92,9 @@ graph TB
 
 ## 🎯 Ways to Interact with Hummingbot API
 
-Choose the method that best fits your workflow:
+For new users, we strongly recommend using the **Dashboard** for a visual and intuitive experience. For developers and advanced users, the **Swagger UI** and **MCP** provide more direct access to the API.
 
-### 1. 🔧 Swagger UI - API Documentation (Default)
-**Interactive REST API documentation and testing**
-
-- **Best for**: Developers and power users who want full control
-- **Advantages**:
-  - Complete API access - all endpoints available
-  - Direct endpoint testing
-  - Integration development
-  - No additional setup required
-- **Setup**: Automatically available after running setup
-- **Access**: <http://localhost:8000/docs>
-
-### 2. 🤖 MCP - AI Assistant (Optional)
-**Natural language trading commands through Claude, ChatGPT, or Gemini**
-
-- **Best for**: Users who prefer conversational interaction
-- **Advantages**:
-  - Natural language commands
-  - Full access to all API features
-  - Contextual help and explanations
-  - Complex multi-step operations made simple
-  - Progressive credential setup with `setup_connector` tool
-- **Setup**: See [MCP Installation Guide](/mcp/installation/)
-- **Examples**:
-  - First-time: "Set up my Solana wallet" → Guides through credential setup
-  - Trading: "What's the price to swap 0.01 SOL for USDC? Execute the trade"
-
-### 3. 📊 Dashboard - Web Interface (Optional)
+### 1. 📊 Dashboard - Web Interface (Recommended for New Users)
 **Visual interface for common operations**
 
 - **Best for**: Users who prefer graphical interfaces
@@ -123,6 +106,33 @@ Choose the method that best fits your workflow:
 - **Setup**: Enable during installation
 - **Access**: <http://localhost:8501>
 
+### 2. 🔧 Swagger UI - API Documentation
+**Interactive REST API documentation and testing**
+
+- **Best for**: Developers and power users who want full control
+- **Advantages**:
+  - Complete API access - all endpoints available
+  - Direct endpoint testing
+  - Integration development
+  - No additional setup required
+- **Setup**: Automatically available after running setup
+- **Access**: <http://localhost:8000/docs>
+
+### 3. 🤖 MCP - AI Assistant
+**Natural language trading commands through Claude, ChatGPT, or Gemini**
+
+- **Best for**: Users who prefer conversational interaction
+- **Advantages**:
+  - Natural language commands
+  - Full access to all API features
+  - Contextual help and explanations
+  - Complex multi-step operations made simple
+  - Progressive credential setup with `setup_connector` tool
+- **Setup**: See [MCP Installation Guide](../mcp/installation.md)
+- **Examples**:
+  - First-time: "Set up my Solana wallet" → Guides through credential setup
+  - Trading: "What's the price to swap 0.01 SOL for USDC? Execute the trade"
+
 ## Use Cases
 
 The Hummingbot API enables various trading applications:
@@ -132,16 +142,6 @@ The Hummingbot API enables various trading applications:
 - **AI-Powered Trading**: Integrate with LLMs for agentic trading workflows
 - **Risk Management Tools**: Build systems for monitoring and managing trading operations
 - **Market Data Feeds**: Create real-time price and historical candles feeds for use with different applications
-
-## Getting Started
-
-- **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
-- **[Quickstart Guide](quickstart.md)** - Learn how to:
-    - Add exchange credentials
-    - View portfolio balances
-    - Place your first market order
-
-The guides include Docker setup and Python API client examples to get you trading in minutes.
 
 ## API Endpoints
 
@@ -219,7 +219,7 @@ The API uses HTTP Basic Authentication:
 
 ## API Client
 
-A modern, asynchronous Python client is available for interacting with the Hummingbot API. This client is used by the [Hummingbot Dashboard](/dashboard/) as the interface layer for all API communications.
+A modern, asynchronous Python client is available for interacting with the Hummingbot API. This client is used by the [Hummingbot Dashboard](../dashboard/index.md) as the interface layer for all API communications.
 
 - **GitHub**: [hummingbot-api-client](https://github.com/hummingbot/hummingbot-api-client)
 - **PyPI**: [pypi.org/project/hummingbot-api-client](https://pypi.org/project/hummingbot-api-client/)
@@ -256,6 +256,6 @@ order = await client.create_order(
 
 ## Related Resources
 
-- [Hummingbot Dashboard](/dashboard/) - Web-based interface built on top of Hummingbot API
+- [Hummingbot Dashboard](../dashboard/index.md) - Web-based interface built on top of Hummingbot API
 - [API Client Documentation](https://github.com/hummingbot/hummingbot-api-client) - Python client library
-- [Hummingbot Client](/client/) - Core trading engine
+- [Hummingbot Client](../client/index.md) - Core trading engine

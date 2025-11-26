@@ -76,8 +76,8 @@ Developer submits PR with:
 
 Foundation engineers review using:
 
-- [Spot Connector Checklist](../developers/connectors/spot-connector-checklist.md)
-- [Perp Connector Checklist](../developers/connectors/perp-connector-checklist.md)
+- [Spot Connector Checklist](../connectors/connectors/spot-connector-checklist.md)
+- [Perp Connector Checklist](../connectors/connectors/perp-connector-checklist.md)
 
 
 Focus areas:
@@ -90,8 +90,8 @@ Focus areas:
 
 QA team performs testing using:
 
-- [Spot QA Checklist](../developers/connectors/test.md)
-- [Perp QA Checklist](../developers/connectors/test-perp.md)
+- [Spot QA Checklist](../connectors/connectors/test.md)
+- [Perp QA Checklist](../connectors/connectors/test-perp.md)
 
 
 Testing includes:

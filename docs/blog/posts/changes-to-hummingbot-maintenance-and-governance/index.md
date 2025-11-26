@@ -7,7 +7,7 @@ categories:
 ---
 # Changes to Hummingbot Maintenance and Governance
 
-![cover](cover.jpg))
+![cover](cover.jpg)
 
 Almost exactly one year ago, Hummingbot Foundation [launched the HBOT token](../introducing-the-hummingbot-foundation/index.md) as an experiment in decentralized governance over a publicly shared, community maintained open source project.
 
@@ -32,7 +32,7 @@ In addition, we have shipped [11 Hummingbot releases](https://docs.hummingbot.or
 - The new [Scripts module](https://docs.hummingbot.org/scripts/) that allows you to create customizable, lightweight strategies that utilize the full power of Hummingbot
 - Upgrades, fixes, and improvements to many exchange connectors in Hummingbot.
 
-Finally, we're incredibly excited about [Botcamp](/botcamp/), our new developer bootcamp that teaches participants how to design and create their own custom algo trading strategies using Scripts. We're currently in the midst of the first official, sold-out cohort and plan to offer more capacity next year.
+Finally, we're incredibly excited about [Botcamp](https://www.botcamp.xyz/), our new developer bootcamp that teaches participants how to design and create their own custom algo trading strategies using Scripts. We're currently in the midst of the first official, sold-out cohort and plan to offer more capacity next year.
 
 ## Lessons learned
 
@@ -63,7 +63,6 @@ Each poll will allow HBOT holders to allocate their voting power across various 
 
 We believe this process will allow us to allocate our scarce maintenance bandwidth toward the exchanges that the community uses and trusts the most. Similarly, we hope that this process that ensure that we are improving the strategies and fixing the issues that they care about the most.
 
-![](./iStock-925497548.jpg)
 
 ## Poll types
 

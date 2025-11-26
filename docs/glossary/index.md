@@ -40,7 +40,7 @@ To fully understand the MACD indicator, it is first necessary to break down each
 2. **The Signal Line**: The Signal Line is an EMA of the MACD Line described in Component 1. The trader can choose what period length EMA to use for the Signal Line however 9 is the most common.
 3. **The MACD Histogram**: As time advances, the difference between the MACD Line and Signal Line will continually differ. The MACD histogram takes that difference and plots it into an easily readable histogram. The difference between the two lines oscillates around a Zero Line.
 
-![](./macd.png)
+
 
 **Parameters used in V2 Strategies:**
 

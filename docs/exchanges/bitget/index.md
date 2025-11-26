@@ -1,3 +1,6 @@
+!!! tip "Foundation Partner"
+    Bitget is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Bitget, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Bitget referral link](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
@@ -18,6 +21,7 @@
 - **API Docs**: <https://www.bitget.com/api-doc/common/intro>
 - **Fees**: <https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget>
 - **Supported Countries**: Not available
+- **Bitget referral link:** <https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0>
 
 ## 🔑 How to Connect
 

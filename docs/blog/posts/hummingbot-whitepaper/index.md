@@ -10,7 +10,7 @@ categories:
 
 ![](cover.png)
 
-This summary encapsulates the original [Hummingbot whitepaper](/hummingbot.pdf), authored by CoinAlpha Inc. in 2018, before the project's launch. The whitepaper is a seminal document that outlines the theoretical and practical frameworks for an open-source market-making bot.
+This summary encapsulates the original [Hummingbot whitepaper](../../../hummingbot.pdf), authored by CoinAlpha Inc. in 2018, before the project's launch. The whitepaper is a seminal document that outlines the theoretical and practical frameworks for an open-source market-making bot.
 
 <!-- more -->
 

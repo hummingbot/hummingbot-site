@@ -22,13 +22,13 @@ Hummingbot 2.0 uses Docker Compose to install and manage dependencies. We recomm
 
 ## Installation
 
-Clone the [Deploy repository](https://github.com/hummingbot/deploy), which contains the Docker Compose configuration file and a bash script that automatically pulls the latest images and starts the necessary services. 
+Clone the [Hummingbot API repository](https://github.com/hummingbot/hummingbot-api), which contains the Docker Compose configuration file and a bash script that automatically pulls the latest images and starts the necessary services. 
 
 Open a Terminal window and run the following commands:
 
 ```bash
-git clone https://github.com/hummingbot/deploy
-cd deploy
+git clone https://github.com/hummingbot/hummingbot-api
+cd hummingbot-api
 bash setup.sh
 ```
 
@@ -196,7 +196,7 @@ Authentication is disabled by default. To enable Dashboard Authentication please
 
 The dashboard uses `admin` and `abc` as the default username and password respectively. It's strongly recommended to change these credentials for enhanced security.:
 
-- For Docker, navigate to the `deploy` folder or `dashboard` folder if using Source and open the `credentials.yml` file.
+- For Docker, navigate to the `hummingbot-api` folder or `dashboard` folder if using Source and open the `credentials.yml` file.
 - Add or modify the current username / password and save the changes afterward
   
   ```
@@ -219,7 +219,7 @@ The dashboard uses `admin` and `abc` as the default username and password respec
 ### Docker
 
 - Ensure the dashboard container is not running.
-- Open the `docker-compose.yml` file within the `deploy` folder using a text editor.
+- Open the `docker-compose.yml` file within the `hummingbot-api` folder using a text editor.
 - Locate the environment variable `AUTH_SYSTEM_ENABLED` under the dashboard service configuration.
   
   ```

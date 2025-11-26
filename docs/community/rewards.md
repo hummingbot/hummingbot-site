@@ -54,6 +54,6 @@ For more information, visit: [Dexalot Incentive Program](https://docs.dexalot.co
 The Hummingbot community has organized various trading competitions that focus on specific trading pairs, offer prize pools in HBOT tokens and other cryptocurrencies, and include both performance-based rewards and strategy write-up prizes.
 
 - [Chinese community trading competition (2025)](https://zhuanlan.zhihu.com/p/30092012974)
-- [Botcamp Bot Battle (2023)](/blog/retrospective-on-the-october-2023-bot-battle/)
-- [Gate.io trading competition (2022)](/blog/gateio-trading-competition-results-and-retrospective/)
+- [Botcamp Bot Battle (2023)](../blog/posts/beta-bot-battle-results-and-roundup/index.md)
+- [Gate.io trading competition (2022)](../blog/posts/gate-io-trading-competition-results-and-retrospective/index.md)
 

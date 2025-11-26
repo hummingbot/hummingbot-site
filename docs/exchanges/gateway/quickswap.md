@@ -1,5 +1,5 @@
 !!! note
-    This connector need to be migrated to the new Gateway architecture. See [Legacy Connectors](/gateway/connectors/) for more information.
+    This connector need to be migrated to the new Gateway architecture. See [Legacy Connectors](../../gateway/connectors.md) for more information.
 
 ## 🛠 Connector Info
 

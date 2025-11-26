@@ -177,71 +177,71 @@ nav:
       - Guides: guides/index.md
     - Strategies:
       - Strategies: strategies/index.md
-      - Architecture: v2-strategies/index.md
+      - Architecture: strategies/v2-strategies/index.md
       - Scripts:
-        - Scripts: scripts/index.md
-        - Sample Scripts: scripts/examples.md
-        - Script Walkthrough: v2-strategies/walkthrough.md
-        - Scripts Cheatsheat: scripts/cheatsheet.md
+        - Scripts: strategies/scripts/index.md
+        - Sample Scripts: strategies/scripts/examples.md
+        - Script Walkthrough: strategies/v2-strategies/walkthrough.md
+        - Scripts Cheatsheet: strategies/scripts/cheatsheet.md
       - Market Data Provider:
-        - Market Data Provider: v2-strategies/data/index.md
-        - Candles: v2-strategies/candles/index.md
+        - Market Data Provider: strategies/v2-strategies/data/index.md
+        - Candles: strategies/v2-strategies/candles/index.md
       - Controllers:
-        - Controllers: v2-strategies/controllers/index.md
+        - Controllers: strategies/v2-strategies/controllers/index.md
       - Executors: 
-        - Executors: v2-strategies/executors/index.md   
-        - Position Executor: v2-strategies/executors/positionexecutor.md
-        - Grid Executor: v2-strategies/executors/gridexecutor.md
-        - DCA Executor: v2-strategies/executors/dcaexecutor.md
-        - Arbitrage Executor: v2-strategies/executors/arbitrage-executor.md
-        - XEMM Executor: v2-strategies/executors/xemm-executor.md
-        - TWAP Executor: v2-strategies/executors/twapexecutor.md
+        - Executors: strategies/v2-strategies/executors/index.md   
+        - Position Executor: strategies/v2-strategies/executors/positionexecutor.md
+        - Grid Executor: strategies/v2-strategies/executors/gridexecutor.md
+        - DCA Executor: strategies/v2-strategies/executors/dcaexecutor.md
+        - Arbitrage Executor: strategies/v2-strategies/executors/arbitrage-executor.md
+        - XEMM Executor: strategies/v2-strategies/executors/xemm-executor.md
+        - TWAP Executor: strategies/v2-strategies/executors/twapexecutor.md
       - Strategies V1:
-        - Strategies V1: v1-strategies/index.md
-        - Pure Market Making (PMM): strategies/pure-market-making.md
+        - Strategies V1: strategies/v1-strategies/index.md
+        - Pure Market Making (PMM): strategies/v1-strategies/pure-market-making.md
         - PMM Configs:
-          - PMM Configs: strategy-configs/index.md
-          - Add Transaction Costs: strategy-configs/add-transaction-costs.md
-          - Order Levels: strategy-configs/order-levels.md
-          - Filled Order Delay: strategy-configs/filled-order-delay.md
-          - Hanging Orders: strategy-configs/hanging-orders.md
-          - Minimum Spread: strategy-configs/minimum-spread.md
-          - Order Refresh Tolerance: strategy-configs/order-refresh-tolerance.md
-          - Order Optimization: strategy-configs/order-optimization.md
-          - Inventory Skew: strategy-configs/inventory-skew.md
-          - Max Order Age: strategy-configs/max-order-age.md
-          - Order Override: strategy-configs/order-override.md
-          - Price Band: strategy-configs/price-band.md
-          - Price Source: strategy-configs/external-price-source.md
-          - Ping Pong: strategy-configs/ping-pong.md
-        - Cross-Exchange Market Making (XEMM): strategies/cross-exchange-market-making.md
-        - AMM Arbitrage: strategies/amm-arbitrage.md
-        - Avellaneda Market Making: strategies/avellaneda-market-making.md
-        - Cross-Exchange Mining: strategies/cross-exchange-mining.md
-        - Hedge: strategies/hedge.md
-        - Liquidity Mining: strategies/liquidity-mining.md
-        - Perpetual Market Making: strategies/perpetual-market-making.md
-        - Spot Perpetual Arbitrage: strategies/spot-perpetual-arbitrage.md
-        - TWAP: strategies/twap.md
+          - PMM Configs: strategies/v1-strategies/strategy-configs/index.md
+          - Add Transaction Costs: strategies/v1-strategies/strategy-configs/add-transaction-costs.md
+          - Order Levels: strategies/v1-strategies/strategy-configs/order-levels.md
+          - Filled Order Delay: strategies/v1-strategies/strategy-configs/filled-order-delay.md
+          - Hanging Orders: strategies/v1-strategies/strategy-configs/hanging-orders.md
+          - Minimum Spread: strategies/v1-strategies/strategy-configs/minimum-spread.md
+          - Order Refresh Tolerance: strategies/v1-strategies/strategy-configs/order-refresh-tolerance.md
+          - Order Optimization: strategies/v1-strategies/strategy-configs/order-optimization.md
+          - Inventory Skew: strategies/v1-strategies/strategy-configs/inventory-skew.md
+          - Max Order Age: strategies/v1-strategies/strategy-configs/max-order-age.md
+          - Order Override: strategies/v1-strategies/strategy-configs/order-override.md
+          - Price Band: strategies/v1-strategies/strategy-configs/price-band.md
+          - Price Source: strategies/v1-strategies/strategy-configs/external-price-source.md
+          - Ping Pong: strategies/v1-strategies/strategy-configs/ping-pong.md
+        - Cross-Exchange Market Making (XEMM): strategies/v1-strategies/cross-exchange-market-making.md
+        - AMM Arbitrage: strategies/v1-strategies/amm-arbitrage.md
+        - Avellaneda Market Making: strategies/v1-strategies/avellaneda-market-making.md
+        - Cross-Exchange Mining: strategies/v1-strategies/cross-exchange-mining.md
+        - Hedge: strategies/v1-strategies/hedge.md
+        - Liquidity Mining: strategies/v1-strategies/liquidity-mining.md
+        - Perpetual Market Making: strategies/v1-strategies/perpetual-market-making.md
+        - Spot Perpetual Arbitrage: strategies/v1-strategies/spot-perpetual-arbitrage.md
+        - TWAP: strategies/v1-strategies/twap.md
     - Connectors:
       - Connectors: connectors/index.md
       - CLOB Connectors: connectors/clob.md
       - Gateway DEX Connectors: gateway/connectors.md
       - Building CLOB Connectors:
-        - Building CLOB Connectors: developers/connectors/index.md
-        - Exchange API Requirements: developers/connectors/build.md
-        - Connector Architecture: developers/connectors/architecture/index.md
-        - Order Lifecycle and Market Events: developers/connectors/architecture/order_lifecycle.md
-        - Handling Rate Limits with API Throttler: developers/connectors/api_throttler.md
-        - Spot Connector Developer Checklist: developers/connectors/spot-connector-checklist.md
-        - Spot Connector QA Checklist: developers/connectors/test.md
-        - Perp Connector Developer Checklist: developers/connectors/perp-connector-checklist.md
-        - Perp Connector QA Checklist:  developers/connectors/test-perp.md
+        - Building CLOB Connectors: connectors/connectors/index.md
+        - Exchange API Requirements: connectors/connectors/build.md
+        - Connector Architecture: connectors/connectors/architecture/index.md
+        - Order Lifecycle and Market Events: connectors/connectors/architecture/order_lifecycle.md
+        - Handling Rate Limits with API Throttler: connectors/connectors/api_throttler.md
+        - Spot Connector Developer Checklist: connectors/connectors/spot-connector-checklist.md
+        - Spot Connector QA Checklist: connectors/connectors/test.md
+        - Perp Connector Developer Checklist: connectors/connectors/perp-connector-checklist.md
+        - Perp Connector QA Checklist:  connectors/connectors/test-perp.md
       - Building Gateway Connectors:
-        - Building Gateway Connectors: developers/gateway-connectors/index.md
-        - Connector Architecture: developers/gateway-connectors/architecture.md
-        - Testing Gateway Connectors: developers/gateway-connectors/testing.md
-      - Debugging & Testing Connectors: developers/connectors/debug.md
+        - Building Gateway Connectors: connectors/gateway-connectors/index.md
+        - Connector Architecture: connectors/gateway-connectors/architecture.md
+        - Testing Gateway Connectors: connectors/gateway-connectors/testing.md
+      - Debugging & Testing Connectors: connectors/connectors/debug.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - User Interface: client/user-interface.md
@@ -256,21 +256,19 @@ nav:
       - Check Performance: client/history.md
       - Find Log Files: client/log-files.md
       - Export Trades/Keys: client/export.md
-      - Adding Commands: developers/commands.md
-      - Balance Limit: global-configs/balance-limit.md
-      - Clock Tick Size: global-configs/clock-tick.md 
-      - Command Line Autostart: global-configs/strategy-autostart.md
-      - Color Settings: global-configs/color-settings.md
-      - Connect External Database: global-configs/external-db.md
-      - Debug Console: developers/debug.md
-      - Kill Switch: global-configs/kill-switch.md
-      - Market Data Collector: global-configs/data-collector.md
-      - Override Fees: global-configs/override-fees.md
-      - Paper Trade: global-configs/paper-trade.md
-      - Rate Oracle: strategy-configs/rate-oracle.md
-      - Rate Limits: global-configs/rate-limits-share-pct.md
+      - Balance Limit: client/global-configs/balance-limit.md
+      - Clock Tick Size: client/global-configs/clock-tick.md 
+      - Command Line Autostart: client/global-configs/strategy-autostart.md
+      - Color Settings: client/global-configs/color-settings.md
+      - Connect External Database: client/global-configs/external-db.md
+      - Debug Console: client/debug-console.md
+      - Kill Switch: client/global-configs/kill-switch.md
+      - Market Data Collector: client/global-configs/data-collector.md
+      - Override Fees: client/global-configs/override-fees.md
+      - Paper Trade: client/global-configs/paper-trade.md
+      - Rate Oracle: strategies/v1-strategies/strategy-configs/rate-oracle.md
+      - Rate Limits: client/global-configs/rate-limits-share-pct.md
       # - Telegram Integration: global-configs/telegram.md
-      - Using Debugger Tools: installation/debug.md
     - Gateway DEX Middleware:
       - Overview: gateway/index.md
       - Installation & Setup: gateway/installation.md
@@ -349,7 +347,7 @@ nav:
     - Bounties Board ↗️: https://github.com/orgs/hummingbot/projects/7/views/1
   - Releases:
     - Releases: release-notes/index.md
-    - Release Process: governance/releases.md
+    - Release Process: release-notes/releases.md
     - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
     - 2.8.0: release-notes/2.8.0.md
@@ -362,52 +360,21 @@ nav:
     - 2.1.0: release-notes/2.1.0.md
     - 2.0.1: release-notes/2.0.1.md
     - 2.0.0: release-notes/2.0.0.md
-    - 1.28.0: release-notes/1.28.0.md
-    - 1.27.0: release-notes/1.27.0.md
-    - 1.26.0: release-notes/1.26.0.md
-    - 1.25.0: release-notes/1.25.0.md
-    - 1.24.0: release-notes/1.24.0.md
-    - 1.23.0: release-notes/1.23.0.md
-    - 1.22.0: release-notes/1.22.0.md
-    - 1.21.0: release-notes/1.21.0.md
-    - 1.20.0: release-notes/1.20.0.md
-    - 1.19.0: release-notes/1.19.0.md
-    - 1.18.0: release-notes/1.18.0.md
-    - 1.17.0: release-notes/1.17.0.md
-    - 1.16.0: release-notes/1.16.0.md
-    - 1.15.0: release-notes/1.15.0.md
-    - 1.14.0: release-notes/1.14.0.md
-    - 1.13.0: release-notes/1.13.0.md 
-    - 1.12.0: release-notes/1.12.0.md
-    - 1.11.0: release-notes/1.11.0.md
-    - 1.10.0: release-notes/1.10.0.md
-    - 1.9.0: release-notes/1.9.0.md
-    - 1.8.0: release-notes/1.8.0.md
-    - 1.7.0: release-notes/1.7.0.md
-    - 1.6.0: release-notes/1.6.0.md
-    - 1.5.0: release-notes/1.5.0.md
-    - 1.4.0: release-notes/1.4.0.md
-    - 1.3.0: release-notes/1.3.0.md
-    - 1.2.0: release-notes/1.2.0.md
-    - 1.1.1: release-notes/1.1.1.md
-    - 1.1.0: release-notes/1.1.0.md
-    - 1.0.1: release-notes/1.0.1.md
-    - 1.0.0: release-notes/1.0.0.md
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
     - Reward Programs: community/rewards.md
-    - Certification: certification/index.md
-    - Certifications List: certification/list.md
+    - Certification: community/certification.md
+    - Certifications List: community/list.md
     - Botcamp ↗️: https://www.botcamp.xyz
   - Foundation:
     - Foundation: about/index.md
     - Board of Directors: about/board.md
     - HBOT Token: about/hbot.md
-    - Governance: governance/index.md
-    - Polls: governance/polls.md
-    - Proposals: governance/proposals.md
-    - Epochs: governance/epochs.md
-    - Whitepaper: governance/whitepaper.md
+    - Governance: about/governance.md
+    - Polls: about/polls.md
+    - Proposals: about/proposals.md
+    - Epochs: about/epochs.md
+    - Whitepaper: about/whitepaper.md
   - Blog: 
     - blog/index.md

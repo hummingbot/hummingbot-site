@@ -57,5 +57,5 @@ We have created a new Developers section on our [Discord chat server](https://di
 
 ### Developer Hub (coming soon!)
 
-We are working on a developer hub, an expanded version of the [Developer Manual](../../../developers/index.md) and other resources for developers on the Hummingbot website. We hope that this hub will provide a one-stop shop for any developer looking to build on top of Hummingbot.
+We are working on a developer hub, an expanded version of the Developer Manual and other resources for developers on the Hummingbot website. We hope that this hub will provide a one-stop shop for any developer looking to build on top of Hummingbot.
 
