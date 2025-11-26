@@ -256,7 +256,6 @@ nav:
       - Check Performance: client/history.md
       - Find Log Files: client/log-files.md
       - Export Trades/Keys: client/export.md
-      - Adding Commands: client/commands-shortcuts.md
       - Balance Limit: client/global-configs/balance-limit.md
       - Clock Tick Size: client/global-configs/clock-tick.md 
       - Command Line Autostart: client/global-configs/strategy-autostart.md
@@ -270,7 +269,6 @@ nav:
       - Rate Oracle: strategies/v1-strategies/strategy-configs/rate-oracle.md
       - Rate Limits: client/global-configs/rate-limits-share-pct.md
       # - Telegram Integration: global-configs/telegram.md
-      - Using Debugger Tools: connectors/connectors/debug.md
     - Gateway DEX Middleware:
       - Overview: gateway/index.md
       - Installation & Setup: gateway/installation.md

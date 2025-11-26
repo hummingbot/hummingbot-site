@@ -1,6 +1,8 @@
 # Install from Source
 
-This method is recommended for developers and users who need to modify Hummingbot's source code. Most users should prefer [Docker installation](docker.md).
+!!! warning "For Developers Only"
+    This method is recommended for developers and users who need to modify Hummingbot's source code. It does **not** install the Hummingbot API or Dashboard. Most users should prefer the **[main installation guide](./index.md)**.
+
 
 
 ## Install Dependencies

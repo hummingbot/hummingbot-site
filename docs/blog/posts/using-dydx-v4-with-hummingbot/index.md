@@ -302,15 +302,15 @@ Hummingbot Dashboard is a web-based interface for Hummingbot introduced recently
    First, clone the Hummingbot deployment repository to your local machine:
 
    ```bash
-   git clone https://github.com/hummingbot/deploy
+   git clone https://github.com/hummingbot/hummingbot-api
    ```
 
- **Navigate to the Deployment Directory**
+ **Navigate to the Hummingbot API Directory**
 
-   Change your working directory to the newly cloned `deploy` folder:
+   Change your working directory to the newly cloned `hummingbot-api` folder:
 
    ```bash
-   cd deploy
+   cd hummingbot-api
    ```
 
  **Run the Setup Script**

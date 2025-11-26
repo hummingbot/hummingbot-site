@@ -53,11 +53,43 @@ hide:
 
 ---
 
+# New to Hummingbot? Start Here!
+
+<div class="grid cards wide" markdown>
+
+-   :octicons-rocket-16:{ .lg .middle } __Getting Started Guide__
+
+    ---
+
+    The easiest way to start with Hummingbot is to use the **Hummingbot API** and **Dashboard**. This guide will walk you through the installation and setup process.
+
+    [:octicons-arrow-right-24: Read the Installation Guide](./installation/index.md)
+
+</div>
+
+---
+
 # Hummingbot Github Repositories
 
 ### The Hummingbot framework contains multiple repositories that help you with various aspects of algorithmic trading. All code is open sourced under the Apache 2.0 license and supported by a vibrant global community of developers and traders.
 
 <div class="grid cards wide" markdown>
+
+-   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
+
+    ---
+
+    A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
+
+    [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
+
+-   :octicons-mark-github-16:{ .lg .middle } __Dashboard__
+
+    ---
+
+    Web-based graphical interface for the Hummingbot API that lets you configure and deploy multiple Hummingbot instances.
+
+    [:octicons-arrow-right-24: Documentation](./dashboard/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/dashboard)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
 
@@ -75,14 +107,6 @@ hide:
 
     [:octicons-arrow-right-24: Documentation](./gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway)
 
--   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
-
-    ---
-
-    A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
-
-    [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
-
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot MCP__
 
     ---
@@ -90,14 +114,6 @@ hide:
     Model Context Protocol server that enables AI assistants like Claude and Gemini to utilize the Hummingbot API.
 
     [:octicons-arrow-right-24: Documentation](./mcp/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
-
--   :octicons-mark-github-16:{ .lg .middle } __Dashboard__
-
-    ---
-
-    Web-based graphical interface for the Hummingbot API that lets you configure and deploy multiple Hummingbot instances.
-
-    [:octicons-arrow-right-24: Documentation](./dashboard/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/dashboard)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Quants Lab__
 
