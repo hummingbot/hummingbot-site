@@ -78,6 +78,7 @@ Exchanges supporting open-source development through revenue sharing:
 - [**OKX**](https://www.okx.com/)
 - [**HTX**](https://www.htx.com/)
 - [**Bitmart**](https://www.bitmart.com/)
+- [**Bitget**](https://www.bitget.com/)
 
 ## Exchange Governance
 
