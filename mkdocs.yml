@@ -305,6 +305,7 @@ nav:
     - Exchanges: exchanges/index.md
     - Reporting: reporting.md
     - 🔥 Binance: exchanges/binance/index.md
+    - 🔥 Bitget: exchanges/bitget/index.md
     - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Derive: exchanges/derive/index.md
     - 🔥 dYdX: exchanges/dydx.md
@@ -318,7 +319,6 @@ nav:
     - Balancer: exchanges/gateway/balancer.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
-    - Bitget: exchanges/bitget/index.md
     - BingX: exchanges/bing_x/index.md
     - Bybit: exchanges/bybit.md
     - BTC Markets: exchanges/btc-markets.md
