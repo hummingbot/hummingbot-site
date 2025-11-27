@@ -66,6 +66,7 @@ Leading exchanges partnering with Hummingbot Foundation for strategic integratio
 - [**Hyperliquid**](https://hyperliquid.xyz/)
 - [**dYdX**](https://dydx.exchange/)
 - [**Derive**](https://www.derive.fi/)
+- [**Bitget**](https://www.bitget.com/)
 
 ### 🤝 Fee-Share Partners
 
