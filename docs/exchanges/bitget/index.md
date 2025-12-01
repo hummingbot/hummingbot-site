@@ -15,19 +15,19 @@
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://www.bitget.com/>
+- **Website**: [https://www.bitget.com/](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0)
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/bitget/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bitget>
 - **API Docs**: <https://www.bitget.com/api-doc/common/intro>
 - **Fees**: <https://www.bitget.com/academy/en/article-details/Fee-Structure-and-Fee-Calculations-on-Bitget>
 - **Supported Countries**: Not available
-- **Bitget referral link:** <https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0>
+- **Referral link:** <https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0>
 
 ## 🔑 How to Connect
 
 ### Generate API Keys
 
-1. Go to [Bitget Exchange](https://www.bitget.com) and log in or create a new account.
+1. Go to [Bitget Exchange](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0) and log in or create a new account.
 
 2. Go to the API Management page at https://www.bitget.com/account/newapi.
 
