@@ -47,7 +47,6 @@ We will apply the changes to your bounty denomination preference to future weekl
 
 On each weekly Friday bounty distribution, we will use the [HBOT/USD price on CoinGecko](https://www.coingecko.com/en/coins/hummingbot) and average each price over the 7 prior calendar days to determine the HBOT Conversion Rate:
 
-![](./HBOT-Price-Chart-at-Coingecko-1.png)
 
 For bounty recipients who choose to receive in USDC, we will apply the HBOT Conversion Rate to their total HBOT payout to calculate the USDC equivalent payout amount. For bounty recipients who choose to receive in HBOT or have not updated their bounty denomination preference, we will still continue to make payouts in HBOT.
 

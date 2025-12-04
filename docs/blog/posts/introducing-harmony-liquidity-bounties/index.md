@@ -21,7 +21,7 @@ For the first Liquidity Bounty, we have partnered with our friends at [Harmony P
 
 Liquidity is necessary for any publicly traded asset. Buyers and sellers want to transact at a fair price in a deep, orderly market with little slippage. In the modern financial world, providers of liquidity (i.e. **market makers**) are dominated by quantitative hedge funds and trading firms who have the infrastructure and intelligence to deploy sophisticated algorithms at scale.
 
-We've written before about the [small-cap liquidity crisis](../../../academy-content/posts/the-thin-crust-of-liquidity/index.md) in equities, in which smaller stocks can't attract liquidity because the large trading firms focus on market making for the largest stocks on the most liquid trading venues.
+We've written before about the [small-cap liquidity crisis](../the-thin-crust-of-liquidity/index.md) in equities, in which smaller stocks can't attract liquidity because the large trading firms focus on market making for the largest stocks on the most liquid trading venues.
 
 Liquidity is an even bigger problem in the fragmented world of crypto. There are relatively few quantitative trading firms with the technical sophistication to do algorithmic market making, so they can charge issuers up to $50,000 per month and require them to put up millions in inventory. This is unaffordable for the vast majority of token issuers.
 
@@ -47,7 +47,7 @@ Anyone who is eligible to trade the token can now compete with others to earn ex
 
 We take **compliance** extremely seriously. Liquidity bounty participants need to opt into data collection, which allows us to verify their trading activity against our internal exchange data feeds and prevent reporting of fake volume. In addition, we will run proprietary algorithms to detect wash trading, spoofing, and other bad practices.
 
-Liquidity bounties also help token issuers **boost liquidity across multiple exchanges**. Hummingbot is an open source platform with connectors to both centralized and decentralized exchanges, and we will work with our liquidity bounty partners to prioritize the venues where their tokens trade. Since users can run Hummingbot's [cross-exchange market making strategy](../../../strategies/cross-exchange-market-making.md) in order to port liquidity from one exchange to another, token issuers should see greater price stability and more even liquidity across the exchange landscape.
+Liquidity bounties also help token issuers **boost liquidity across multiple exchanges**. Hummingbot is an open source platform with connectors to both centralized and decentralized exchanges, and we will work with our liquidity bounty partners to prioritize the venues where their tokens trade. Since users can run Hummingbot's [cross-exchange market making strategy](../../../strategies/v1-strategies/cross-exchange-market-making.md) in order to port liquidity from one exchange to another, token issuers should see greater price stability and more even liquidity across the exchange landscape.
 
 ## Announcing ONE Makers, the liquidity bounty for Harmony Protocol
 

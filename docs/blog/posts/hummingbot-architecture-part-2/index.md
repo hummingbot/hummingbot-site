@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-In the last article - [Hummingbot Architecture - Part 1](/academy-content/hummingbot-architecture---part-1/) - of this series, we've discussed the design motivations behind Hummingbot, the clock and the market connectors. Today, we'll be discussing the architecture behind trading strategies - the very component that decides Hummingbot trades with your money. We will also discuss how you can diagnose problems and debug Hummingbot in live trading.
+In the last article - [Hummingbot Architecture - Part 1](../hummingbot-architecture-part-1/index.md) - of this series, we've discussed the design motivations behind Hummingbot, the clock and the market connectors. Today, we'll be discussing the architecture behind trading strategies - the very component that decides Hummingbot trades with your money. We will also discuss how you can diagnose problems and debug Hummingbot in live trading.
 
 <!-- more -->
 
@@ -92,7 +92,7 @@ The Hummingbot debug console is disabled by default. It needs to be enabled by e
 Once that has been set, you will be able to telnet to `localhost:8211` to access an interactive Python console that has access to the same memory space as the live Hummingbot instance. You can, for example, examine the live properties from the currently running strategy object and look at the active orders it has made and is tracking.
 ![](./debug5.png)
 
-You can read more about the debug console from [Hummingbot documentation](../../../developers/debug.md).
+You can read more about the debug console from [Hummingbot documentation](../../../connectors/connectors/debug.md).
 
 ### Discord Channels
 

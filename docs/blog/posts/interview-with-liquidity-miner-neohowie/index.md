@@ -88,6 +88,6 @@ For beginners, my advice is to start small but start. Having some investment in 
 - [Hummingbot Help Center](https://support.hummingbot.io/)
 - [Liquidity mining free trainings](https://www.eventbrite.com/e/learn-to-use-hummingbot-crypto-market-making-live-training-session-tickets-100968806418)
 - [Liquidity mining whitepaper](https://coinalpha.com/liquidity-mining-policy)
-- [Getting started](../../../getting-started/liquidity-mining/index.md)
+
 
 For exchanges and projects interested in learning more about liquidity mining, please contact us at [partnerships@hummingbot.io](mailto:partnerships@hummingbot.io).

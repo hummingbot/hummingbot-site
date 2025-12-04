@@ -10,7 +10,7 @@ These configuration files created and used by Hummingbot are saved in the [`/con
 
 ## Script config files
 
-Starting in v1.24.0, [Scripts](/scripts) can define a `ScriptConfig` class that defines configuration parameters that users can store in a YAML file.
+Starting in v1.24.0, [Scripts](../strategies/scripts/index.md) can define a `ScriptConfig` class that defines configuration parameters that users can store in a YAML file.
 
 ```python
 class DManV3ScriptConfig(BaseClientModel):
@@ -47,7 +47,7 @@ Run `start` with both `--script` and `--conf` flags to run a script with a confi
 
 ## Controller config files
 
-The StrategyV2 framework abstracts strategy logic into [Controllers](/v2-strategies/controllers/). Each controller defines the config parameters that it accepts.
+The StrategyV2 framework abstracts strategy logic into [Controllers](../strategies/v2-strategies/controllers/index.md). Each controller defines the config parameters that it accepts.
 
 ### Creating controller config files
 
@@ -76,28 +76,28 @@ start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_contro
 
 ## Strategy V1 config files
 
-The original Hummingbot [V1 strategies](/v1-strategies) also allowed users to define config files.
+The original Hummingbot [V1 strategies](../strategies/v1-strategies/index.md) also allowed users to define config files.
 
 ### Creating Strategy V1 config files
 
-Run `create` command without the `--script-config` flag to create a [Strategy V1](/v1-strategies) config file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
+Run `create` command without the `--script-config` flag to create a [Strategy V1](../strategies/v1-strategies/index.md) file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
 
 Next, answer the prompts to configure your bot's behavior depending on the strategy you want to use.
 
 The last prompt will ask you to enter a name for the config file. You can also specify the name of your file at the beginning by running `create [file_name]` command.
 
-![](/assets/img/create-file-name.png)
+![](../assets/img/create-file-name.png)
 
 ### Import an existing config file
 
 1. Run `import` command
 2. Enter the name of your strategy config file
 
-![](/assets/img/import-command.png)
+![](../assets/img/import-command.png)
 
 You can also skip the prompt by running `import [file_name]` command.
 
-![](/assets/img/import-file-name.png)
+![](../assets/img/import-file-name.png)
 
 **Sample usage**
 

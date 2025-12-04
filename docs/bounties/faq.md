@@ -105,9 +105,9 @@ If you're unable to complete:
 
 All connectors must implement standardized interfaces and functionality as outlined in our developer documentation:
 
-- [Building CLOB Connectors](/developers/connectors/) - Comprehensive guide for spot and perpetual connectors
-- [Perpetual Connector Checklist](/developers/connectors/perp-connector-checklist/) - Detailed requirements and API specifications
-- [Spot-Perpetual Arbitrage Strategy](/strategies/spot-perpetual-arbitrage/) - Example of connector integration with trading strategies
+- [Building CLOB Connectors](../connectors/connectors/build.md) - Comprehensive guide for spot and perpetual connectors
+- [Perpetual Connector Checklist](../connectors/connectors/perp-connector-checklist.md) - Detailed requirements and API specifications
+- [Spot-Perpetual Arbitrage Strategy](../strategies/v1-strategies/spot-perpetual-arbitrage.md) - Example of connector integration with trading strategies
 
 ### What testing is required?
 

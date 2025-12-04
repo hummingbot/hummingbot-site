@@ -11,7 +11,7 @@ categories:
 
 ![cover](cover.png)
 
-After [a year of significant milestones in 2023](/blog/2023-a-year-of-innovation-at-hummingbot/), we're excited to announce the 2024 Hummingbot technical roadmap! Our plans are geared towards enhancing the usability, functionality, and scalability of our platform. Building on the emergence of the V2 framework, we are excited to introduce a range of innovative features that will redefine algorithmic trading for our users. 
+After [a year of significant milestones in 2023](../2023-a-year-of-innovation-at-hummingbot/index.md), we're excited to announce the 2024 Hummingbot technical roadmap! Our plans are geared towards enhancing the usability, functionality, and scalability of our platform. Building on the emergence of the V2 framework, we are excited to introduce a range of innovative features that will redefine algorithmic trading for our users. 
 
 Here what we expect to deliver from a technical standpoint in 2024:
 
@@ -21,15 +21,15 @@ Here what we expect to deliver from a technical standpoint in 2024:
 
 ![](v2-framework.png)
 
-The new [V2 Strategies](/v2-strategies/) framework has been a game-changer in strategy composability, and we are committed to expanding its capabilities.
+The new [V2 Strategies](../../../strategies/v2-strategies/index.md) framework has been a game-changer in strategy composability, and we are committed to expanding its capabilities.
 
 ### Make Scripts Configurable
 
-The development of configurable scripts is already underway, as the initial [pull request](https://github.com/hummingbot/hummingbot/pull/6741) has been merged into `development`. This feature will allow for easier deployment and customization of complex strategies, significantly simplifying user configurability while maintaining the flexibility of [Scripts](/scripts/).
+The development of configurable scripts is already underway, as the initial [pull request](https://github.com/hummingbot/hummingbot/pull/6741) has been merged into `development`. This feature will allow for easier deployment and customization of complex strategies, significantly simplifying user configurability while maintaining the flexibility of [Scripts](../../../strategies/scripts/index.md).
 
 ### Add More Strategy Components
 
-Our focus will be on adding more smart components - which combine [Controllers](../../../v2-strategies/controllers/index.md) with Executor Handlers - into the V2 framework, which will offer increased flexibility in strategy implementation. Key additions should include:
+Our focus will be on adding more smart components - which combine [Controllers](../../../strategies/v2-strategies/controllers/index.md) with Executor Handlers - into the V2 framework, which will offer increased flexibility in strategy implementation. Key additions should include:
 
 - **XEMM Component:** This component will allow users to place a limit order on one exchange and, upon its fulfillment, hedge the order at market price on another exchange.
 - **DCA Component:** Designed for dynamic trading, this component will manage multiple open orders with a global take profit and stop loss.
@@ -66,7 +66,7 @@ To ensure that the Hummingbot codebase is set up well for the long-term, here ar
 
 ### Streamline Connector Maintenance
 
-In our quest to continually refine Hummingbot, we're focusing on elevating our connectors' efficiency and functionality. This year, we plan to upgrade connectors using the new HBOT bounty allocation system implemented in [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738). Going forward, HBOT holders can allocate bounties to each [connector](/exchanges/) which are used to align them with the latest spot and perpetual connector standards. 
+In our quest to continually refine Hummingbot, we're focusing on elevating our connectors' efficiency and functionality. This year, we plan to upgrade connectors using the new HBOT bounty allocation system implemented in [HGP-50](https://snapshot.org/#/hbot.eth/proposal/0xc13f3b9fdaded22d1ce0b5528c9146fb2a762c41deed88e6c64e798465414738). Going forward, HBOT holders can allocate bounties to each [connector](../../../exchanges/index.md) which are used to align them with the latest spot and perpetual connector standards. 
 
 Crucial to this initiative is the development of a detailed, configurable specification for all connectors. This specification will delineate key operational parameters such as the frequency of RESTful requests for updating orders, funding rates, and other vital data. By standardizing and optimizing these aspects, we aim to enhance the performance and reliability of Hummingbot connectors, ultimately providing a more robust and seamless trading experience for our users.
 

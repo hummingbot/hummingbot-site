@@ -17,7 +17,7 @@ V2 strategies bring unparalleled modularity, real-time adaptability, and backtes
 
 ## Revolutionizing Strategy Design with Modularity and Flexibility
 
-[V2 Strategies](/v2-strategies) marks a departure from the more rigid structure of V1 strategies. It's crafted to enable users to create powerful, custom strategies, even those who may not have extensive Python programming experience.
+[V2 Strategies](../../../strategies/v2-strategies/index.md) marks a departure from the more rigid structure of V1 strategies. It's crafted to enable users to create powerful, custom strategies, even those who may not have extensive Python programming experience.
 
 Key Features:
 
@@ -33,17 +33,17 @@ Key Features:
 
 An ecosystem of interconnected components let users customize their V2 Strategies:
 
-* [V2 Script](/v2-strategies): This serves as the strategy's blueprint, outlining its configuration and interacting seamlessly with other components.
-* [Controller](/v2-strategies/controllers): Acting as the strategy's command center, the Controller interprets input from the V2 Script and steers the overall strategy. It manages Executors, which are crucial for order and position management.
-* [Candles](/v2-strategies/data/): Providing a structured snapshot of market data, Candles are pivotal in generating analytical indicators for market analysis.
-* [Executors](/v2-strategies/executors/): These components autonomously manage orders and positions, ensuring alignment with the strategy's directives.
+* [V2 Script](../../../strategies/v2-strategies/index.md): This serves as the strategy's blueprint, outlining its configuration and interacting seamlessly with other components.
+* [Controller](../../../strategies/v2-strategies/controllers/index.md): Acting as the strategy's command center, the Controller interprets input from the V2 Script and steers the overall strategy. It manages Executors, which are crucial for order and position management.
+* [Candles](../../../strategies/v2-strategies/candles/index.md): Providing a structured snapshot of market data, Candles are pivotal in generating analytical indicators for market analysis.
+* [Executors](../../../strategies/v2-strategies/executors/index.md): These components autonomously manage orders and positions, ensuring alignment with the strategy's directives.
 
 
 ## Performance of V2 Strategies in Live Trading
 
 The true test of any framework's efficacy is its performance in the live market. We've taken the V2 Strategy Framework for a spin, and the initial results are promising. Our CTO Fede recently deployed the a V2 market making strategy in the recent Bot Battle and generated a 50%+ return over the three-day period, highlighting the potential of these strategies to adapt and thrive.
 
-His strategy traded across 3 markets on Binance Futures and generated a positive P%L in each market. Here was one such market analyzed using the Strategy Performance page in [Dashboard](/dashboard):
+His strategy traded across 3 markets on Binance Futures and generated a positive P%L in each market. Here was one such market analyzed using the Strategy Performance page in [Dashboard](../../../dashboard/index.md):
 
 ![Trading Strategy Results](./performance-1.jpg)
 
@@ -55,7 +55,7 @@ These results, backed by data, serve as a testament to the capabilities inherent
 
 ![](./botcamp-nov-7.png)
 
-To dive deeper into the world of V2 Strategies and stay abreast of the latest developments, we invite you to enroll in [Botcamp](/botcamp). With three live events every month, this program is designed to teach you the intricacies of designing, backtesting, and deploying V2 Strategies, ensuring you are well-equipped to navigate the evolving landscape of algorithmic trading with Hummingbot.
+To dive deeper into the world of V2 Strategies and stay abreast of the latest developments, we invite you to enroll in [Botcamp](https://www.botcamp.xyz/). With three live events every month, this program is designed to teach you the intricacies of designing, backtesting, and deploying V2 Strategies, ensuring you are well-equipped to navigate the evolving landscape of algorithmic trading with Hummingbot.
 
 ---
 

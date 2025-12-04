@@ -18,7 +18,7 @@ Controllers allow you to handle multiple trading strategies or trading pairs wit
 
 <!-- more -->
 
-[![controller](../../../v2-strategies/diagrams/11.png)](../../../v2-strategies/diagrams/11.png)
+[![controller](../../../strategies/v2-strategies/diagrams/11.png)](../../../strategies/v2-strategies/diagrams/11.png)
 
 ## Example Scenario
 
@@ -33,7 +33,7 @@ Previously, you'd need multiple bots for this. But with Hummingbot’s V2 Contro
 
 ### Step 1: Create Controller Configurations
 
-[![controller](../../../v2-strategies/diagrams/15.png)](../../../v2-strategies/diagrams/15.png)
+[![controller](../../../strategies/v2-strategies/diagrams/15.png)](../../../strategies/v2-strategies/diagrams/15.png)
 
 To set up your controllers, run the following command:
 
@@ -89,7 +89,7 @@ These files will be located at:
 
 ### Step 2: Create the Generic Script
 
-[![controller](../../../v2-strategies/diagrams/16.png)](../../../v2-strategies/diagrams/16.png)
+[![controller](../../../strategies/v2-strategies/diagrams/16.png)](../../../strategies/v2-strategies/diagrams/16.png)
 
 Now, create a generic script to run both controller configurations simultaneously:
 
@@ -121,7 +121,7 @@ Check its status using:
 status --live
 ```
 
-[![controller](../../../v2-strategies/diagrams/20.png)](../../../v2-strategies/diagrams/20.png)
+[![controller](../../../strategies/v2-strategies/diagrams/20.png)](../../../strategies/v2-strategies/diagrams/20.png)
 
 ## Making Dynamic Updates
 

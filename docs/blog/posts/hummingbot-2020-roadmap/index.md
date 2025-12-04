@@ -123,7 +123,7 @@ In the first half of 2020, we will conduct user research to determine the best f
 
 One of Hummingbot's design goals is to be **market-agnostic**: a single client that can support algorithmic trading on all types of financial markets. Thus far, we have concentrated on integrating with order book-based spot exchanges, both centralized and decentralized.
 
-In 2020, we plan to add more diverse market types. As we wrote in this [blog post](../../../academy-content/posts/exchange-types-explained-clob-rfq-amm/index.md), there are other exchange models such as RFQ and AMM markets. In addition, we plan to integrate with exchanges that offer margin trading, futures, and perpetual swap products.
+In 2020, we plan to add more diverse market types. As we wrote in this [blog post](../exchange-types-explained-clob-rfq-amm/index.md), there are other exchange models such as RFQ and AMM markets. In addition, we plan to integrate with exchanges that offer margin trading, futures, and perpetual swap products.
 
 #### Support data science workflows
 

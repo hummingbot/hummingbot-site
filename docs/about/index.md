@@ -13,11 +13,11 @@ Our mission is to make sophisticated trading strategies and technology accessibl
 
 ## History
 
-Hummingbot was originally built and open sourced by [CoinAlpha](https://coinalpha.com) in April 2019. Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies into a shared, community-maintained codebase. Read the original [Hummingbot whitepaper](/blog/hummingbot-whitepaper/) and the [origin story](/blog/from-hedge-fund-to-market-making-bot-the-hummingbot-origin-story/) blog post for more details.
+Hummingbot was originally built and open sourced by [CoinAlpha](https://coinalpha.com) in April 2019. Hummingbot pioneered a modular architecture that allowed external developers to contribute new exchange connectors and trading strategies into a shared, community-maintained codebase. Read the original [Hummingbot whitepaper](../blog/posts/hummingbot-whitepaper/index.md) and the [origin story](../blog/posts/from-hedge-fund-to-market-making-bot-the-hummingbot-origin-story/index.md) blog post for more details.
 
-Later, the Hummingbot team wrote the [Liquidity Mining whitepaper](/blog/liquidity-mining-whitepaper/) that described an economic model for decentralized market making and subsequently launched the [Miner liquidity mining platform](/blog/introducing-liquidity-mining-a-marketplace-for-market-makers/).
+Later, the Hummingbot team wrote the [Liquidity Mining whitepaper](../blog/posts/liquidity-mining-whitepaper/index.md) that described an economic model for decentralized market making and subsequently launched the [Miner liquidity mining platform](../blog/posts/liquidity-mining-launch/index.md).
 
-In December 2021, CoinAlpha [spun off](/blog/introducing-the-hummingbot-foundation/) the Hummingbot Foundation as a new open source entity that maintains the Hummingbot Github repository and administers a decentralized, community-driven governance system utilizing the [HBOT token](/blog/introducing-the-hummingbot-governance-token-hbot/).
+In December 2021, CoinAlpha [spun off](../blog/posts/introducing-the-hummingbot-foundation/index.md) the Hummingbot Foundation as a new open source entity that maintains the Hummingbot Github repository and administers a decentralized, community-driven governance system utilizing the [HBOT token](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md).
 
 Today, Hummingbot is a bazaar-style open source project with many contributors and users around the world, both individual and professional.
 

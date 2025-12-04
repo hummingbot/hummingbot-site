@@ -28,10 +28,10 @@ Per the Foundation bylaws, there is no salary for serving on the Board of Direct
 
 ## Election Process
 
-Hummingbot Foundation re-elects its Board of Directors every 12 months via Governance Proposal, following a process similar to that of other [Polls](/governance/polls):
+Hummingbot Foundation re-elects its Board of Directors every 12 months via Governance Proposal, following a process similar to that of other [Polls](./polls.md):
 
 * **Nomination thread**: One month before the election, the Foundation will post a thread in [Discord](https://discord.gg/hummingbot) where past board members and anyone else can apply for a Board seat
 
-* **Election starts**: We will create the election as a [Hummingbot Governance Proposal](/governance/proposals) with everyone who applied via the Discord thread. Similar to other polls, this election uses Snapshot gasless voting and the quadratic voting allocation method.
+* **Election starts**: We will create the election as a [Hummingbot Governance Proposal](./proposals.md) with everyone who applied via the Discord thread. Similar to other polls, this election uses Snapshot gasless voting and the quadratic voting allocation method.
 
 * **Election ends**: The election ends in 1 week, and the top 5 vote-getters will be seated afterwards on the Board of Directors for a 1-year term.

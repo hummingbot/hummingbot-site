@@ -1,5 +1,5 @@
 !!! tip "Foundation Sponsor"
-    Derive is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on Derive, you're supporting the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Derive referral link](https://www.derive.xyz/invite/7SA0V). Thanks for your help! 🙏
+    Derive is a [sponsor](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Derive, you're supporting the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Derive referral link](https://www.derive.xyz/invite/7SA0V). Thanks for your help! 🙏
 
 ## 🛠 Connector Info
 
@@ -12,7 +12,7 @@
 | [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | Supports testnet
 | [🕯 Spot Candles Feed](#spot-candles-feed) | | 
 | [🕯 Perp Candles Feed](#perp-candles-feed) | |
-| [📓 Connector Guide](../../blog/running-a-trading-bot-with-hummingbot-on-derive-perpetual/) | ✅ | 
+| [📓 Connector Guide](../../blog/posts/using-derive-with-hummingbot/index.md) | ✅ | 
 
 ## ℹ️ Exchange Info
 
@@ -154,9 +154,9 @@ This connector supports the following `OrderType` constants:
 
 ### Paper Trading
 
-Access the [Paper Trade](/global-configs/paper-trade/) version of this connector by running `connect derive_paper_trade` instead of `connect derive`.
+Access the [Paper Trade](../../client/global-configs/paper-trade.md) version of this connector by running `connect derive_paper_trade` instead of `connect derive`.
 
-If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](/global-configs/paper-trade/#adding-exchanges) for more information.
+If this is not available by default, you can configure Hummingbot to add this paper trade exchange. See [Adding Exchanges](../../client/global-configs/paper-trade.md#adding-exchanges) for more information.
 
 ## 🔀 Perp Connector
 *Integration to perpetual futures markets API endpoints*

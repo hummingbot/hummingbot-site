@@ -1,12 +1,44 @@
+# Hummingbot API Quickstart
+
 This guide demonstrates how to use Hummingbot API to add exchange credentials, view your portfolio, and place a market order.
 
-## Prerequisites
+!!! tip "New to Hummingbot?"
+    We recommend following the **[Dashboard Quickstart](#dashboard-quickstart)** for a user-friendly graphical interface. The Developer Quickstart is for users who are comfortable with the command line and Python.
 
-- Hummingbot API installed and running (see [Installation Guide](/hummingbot-api/installation))
-- Exchange API keys (e.g., Binance)
+## Dashboard Quickstart
+
+The Hummingbot Dashboard provides a user-friendly interface to interact with the Hummingbot API.
+
+### 1. Add Exchange Credentials
+
+- Navigate to the **Credentials** page in the Dashboard.
+- Select your account, choose the exchange, and enter your API keys.
+- For a detailed guide, see the [Dashboard Credentials documentation](../dashboard/credentials.md).
+
+### 2. View Your Portfolio
+
+- Navigate to the **Portfolio** page to see your balances across all connected exchanges.
+- For a detailed guide, see the [Dashboard Portfolio documentation](../dashboard/portfolio.md).
+
+### 3. Configure a Strategy and Deploy a Bot
+
+- Navigate to the **Config Generator** page to create and backtest a strategy.
+- Navigate to the **Deploy V2** page to deploy a new bot.
+- For a detailed guide, see the [Dashboard Config and Deploy documentation](../dashboard/config.md).
+
+---
+
+## Developer Quickstart
+
+This guide is for developers and advanced users who want to interact with the Hummingbot API directly using `curl` or the Python client.
+
+### Prerequisites
+
+- Hummingbot API installed and running (see [Installation Guide](installation.md))
+- Exchange API keys. For more information, see this [guide on API keys](https://support.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072).
 - Python 3.7+ with `hummingbot-api-client` installed (optional)
 
-## Setup Python Client (Optional)
+### Setup Python Client (Optional)
 
 If you want to use the Python client for the examples below:
 
@@ -38,7 +70,7 @@ client = HummingbotAPIClient(
 python hummingbot_api_demo.py
 ```
 
-## List Available Exchanges
+### List Available Exchanges
 
 Get a list of all available exchange connectors. Note that spot and perpetual markets are separate connectors (e.g., `hyperliquid` for spot and `hyperliquid_perpetual` for perps).
 
@@ -107,7 +139,7 @@ Get a list of all available exchange connectors. Note that spot and perpetual ma
       - okx_perpetual
     ```
 
-## Get Connector Configuration
+### Get Connector Configuration
 
 Before adding credentials, check what configuration fields are required for your connector:
 
@@ -169,7 +201,7 @@ Before adding credentials, check what configuration fields are required for your
       - hyperliquid_api_key
     ```
 
-## Add Exchange Credentials
+### Add Exchange Credentials
 
 Add your exchange credentials to the API. By default, only the `master_account` is created. You can add multiple accounts with different names if needed.
 
@@ -242,7 +274,7 @@ For Hyperliquid:
     {'message': 'Connector credentials added successfully.'}
     ```
 
-## View Your Portfolio
+### View Your Portfolio
 
 Check your portfolio balances across all connected exchanges:
  
@@ -326,7 +358,7 @@ Check your portfolio balances across all connected exchanges:
           Available: 100.00
     ```
 
-## Get Trading Rules
+### Get Trading Rules
 
 Before placing orders, fetch the trading rules for your intended trading pair to understand order size limits and price increments:
 
@@ -407,7 +439,7 @@ Before placing orders, fetch the trading rules for your intended trading pair to
       Supports Market Orders: True
     ```
 
-## Place a Limit Order
+### Place a Limit Order
 
 Execute a limit sell order for HYPE:
 
@@ -484,7 +516,7 @@ Execute a limit sell order for HYPE:
     docker logs hummingbot-api
     ```
 
-## Complete Example
+### Complete Example
 
 Here's a complete example that performs all three operations:
 
@@ -644,9 +676,9 @@ Here's a complete example that performs all three operations:
 
 Now that you've completed the quickstart, explore more advanced features:
 
-- **[Bot Management](/hummingbot-api/#bot-orchestration)**: Deploy and manage multiple trading bots
-- **[Strategy Configuration](/hummingbot-api/#strategy-management)**: Configure and deploy trading strategies
-- **[Market Data](/hummingbot-api/#market-data)**: Access real-time and historical market data
-- **[Backtesting](/hummingbot-api/#backtesting)**: Test your strategies with historical data
+- **[Bot Management](../dashboard/instances.md)**: Deploy and manage multiple trading bots
+- **[Strategy Configuration](../dashboard/config.md)**: Configure and deploy trading strategies
+- **[Market Data](../hummingbot-api/index.md#market-data)**: Access real-time and historical market data
+- **[Backtesting](../dashboard/backtest.md)**: Test your strategies with historical data
 
 For the complete API reference, visit the [API documentation](http://localhost:8000/docs) when your API is running.

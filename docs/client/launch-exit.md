@@ -41,10 +41,10 @@ In the `hummingbot` parent directory, run this command to launch the application
 ./start
 ```
 
-![](/assets/img/launch-from-source.gif)
+![](../assets/img/launch-from-source.gif)
 
 !!! tip
-    As of version [1.19.0](/release-notes/1.19.0/), use `./start` command to launch hummingbot from source. [Read more](https://github.com/hummingbot/hummingbot/issues/6513)
+    As of version **1.19.0**, use `./start` command to launch hummingbot from source. [Read more](https://github.com/hummingbot/hummingbot/issues/6513)
 
 ## Exit Hummingbot
 

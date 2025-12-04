@@ -12,7 +12,7 @@ tags:
 
 ![cover](cover.webp)
 
-**2023 Update: Discover Vik's journey in [Botcamp](/botcamp)!**
+**2023 Update: Discover Vik's journey in [Botcamp](https://www.botcamp.xyz/)!**
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/rFq0Add0qJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

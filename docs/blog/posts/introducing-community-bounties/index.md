@@ -13,7 +13,7 @@ Launching a new process that connects skilled community developers with stakehol
 
 ![](cover.png)
 
-Last year, we introduced the [Bounties](/bounties/) process, which has successfully addressed numerous issues and funded vital technical improvements in the Hummingbot codebase. Bounties have been $HBOT-denominated rewards provided by the Foundation to developers for resolving bugs or adding enhancements (such as new connectors, strategies, etc.) to the Hummingbot codebase. Given its significant impact and cost-effectiveness, we believe it's time to expand the Bounties program to the broader Hummingbot ecosystem.
+Last year, we introduced the [Bounties](../../../bounties/index.md) process, which has successfully addressed numerous issues and funded vital technical improvements in the Hummingbot codebase. Bounties have been $HBOT-denominated rewards provided by the Foundation to developers for resolving bugs or adding enhancements (such as new connectors, strategies, etc.) to the Hummingbot codebase. Given its significant impact and cost-effectiveness, we believe it's time to expand the Bounties program to the broader Hummingbot ecosystem.
 
 Here are the milestones that Bounties have achieved:
 
@@ -35,7 +35,7 @@ The Community Bounties program is designed to streamline the process of funding 
 
 The first step in the process involves defining the bounty type, which can either be Open Source (to be merged into the official Hummingbot codebase) or Private (for a private Hummingbot fork and not included in open source codebase).
 
-Bounties should also be classified as Bug Fix, Enhancement, New Connector, New Strategy, or New Script. It is important to note that Open Source bounties (except for Bug Fixes) require community approval via the [Hummingbot Improvement Proposal](/governance/proposals/) before acceptance, whereas Private bounties and Open Source bounties for Bug Fixes do not require voting.
+Bounties should also be classified as Bug Fix, Enhancement, New Connector, New Strategy, or New Script. It is important to note that Open Source bounties (except for Bug Fixes) require community approval via the [Hummingbot Improvement Proposal](../../../about/proposals.md) before acceptance, whereas Private bounties and Open Source bounties for Bug Fixes do not require voting.
 
 The Sponsor, either the Hummingbot Foundation or a community member, should post a thread in the `#community-bounties` Discord channel describing the issue. Developers interested in working on the bounty can post in the thread to ask questions.
 

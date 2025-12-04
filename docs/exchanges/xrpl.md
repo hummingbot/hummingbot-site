@@ -1,5 +1,5 @@
 !!! tip "Foundation Sponsor"
-    XRP Ledger (XRPL) is a [sponsor](/about/sponsors) of Hummingbot Foundation, so when you use Hummingbot to run bots on XRPL, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+    XRP Ledger (XRPL) is a [sponsor](../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on XRPL, you're supporting the Foundation and our mission to democratize algo trading with open source software.
 
 ## 🛠 Connector Info
 

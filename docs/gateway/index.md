@@ -61,9 +61,9 @@ Gateway follows a modular architecture with clear separation of concerns:
 
 Like other connectors, Gateway DEX connectors require ongoing maintenance: fixing bugs, addressing user issues, and keeping up with updates to both the exchange/blockchain API as well as improvements to the Hummingbot connector standard.
 
-Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](/bounties) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
+Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](../bounties/index.md) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
 
-Each quarter, [Exchange Connector Polls](/governance/polls) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
+Each quarter, [Exchange Connector Polls](../about/polls.md) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
@@ -71,7 +71,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 Gateway is part of the open source Hummingbot project. Ways to contribute:
 
-- **Build new connectors**: See [DEX Connectors](/developers/gateway-connectors/) for implementation guide
+- **Build new connectors**: See [DEX Connectors](../connectors/gateway-connectors/index.md) for implementation guide
 - **File issues**: Report bugs at [GitHub Issues](https://github.com/hummingbot/gateway/issues)
 - **Submit pull requests**: Contribute code at [GitHub](https://github.com/hummingbot/gateway/pulls)
 - **Edit documentation**: Improve docs at [GitHub](https://github.com/hummingbot/hummingbot-site/)
@@ -81,5 +81,5 @@ Gateway is part of the open source Hummingbot project. Ways to contribute:
 
 For more information about Gateway's history and architecture decisions, see:
 
-* [Hummingbot Gateway V2 Architecture - Part 1](/blog/hummingbot-gateway-architecture---part-1/)
-* [Hummingbot Gateway V2 Architecture - Part 2](/blog/hummingbot-gateway-architecture---part-2/)
+* [Hummingbot Gateway V2 Architecture - Part 1](../blog/posts/hummingbot-gateway-architecture-part-1/index.md)
+* [Hummingbot Gateway V2 Architecture - Part 2](../blog/posts/hummingbot-gateway-architecture-part-2/index.md)

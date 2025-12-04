@@ -44,6 +44,6 @@ Getting started is easy:
 2. Click the "Sign Up" link to create your account using our referral code.
 3. Start trading and earning rebates!
 
-For detailed instructions on how to join each exchange's program, please refer to our [Affiliate Program documentation](/about/affiliate).
+For detailed instructions on how to join each exchange's program, please refer to our [Affiliate Program documentation](../../../about/index.md).
 
 The Hummingbot Affiliate Program represents another step in our commitment to creating value for our community while ensuring the sustainability of the Hummingbot project. By participating, you're not only reducing your trading costs but also contributing to the growth and development of the open-source tools you use. Happy trading!

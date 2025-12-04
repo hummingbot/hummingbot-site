@@ -10,11 +10,11 @@ categories:
 
 ![](cover.png)
 
-With the release of a new [connector guide](./../../../academy/posts/using-vega-protocol-with-hummingbot/index.md) for the Vega [DEX connector](/exchanges/vega), we are thrilled to officially welcome [Vega Protocol](https://vega.xyz) as a sponsor and partner of Hummingbot Foundation! 
+With the release of a new [connector guide](../using-vega-protocol-with-hummingbot/index.md) for the Vega DEX connector, we are thrilled to officially welcome [Vega Protocol](https://vega.xyz) as a sponsor and partner of Hummingbot Foundation! 
 
 As an open source foundation dedicated to democratizing algo trading, Hummingbot Foundation seeks to align with like-minded  organizations. We've known the Vega founding team since 2019 (an eternity in crypto!) and share their commitment to decentralized, permissionless trading. Built on a Layer 1 blockchain designed for derivatives trading, Vega Protocol stands out with its permissionless market creation feature, which enables any participant to launch a new market (trading pair) through governance.
 
-That's why we're excited to warmly introduce Vega as a new Hummingbot Foundation [sponsor](/about/sponsors), which will support our efforts to maintain the Vega integration to Hummingbot and educate our respective communities on how to use it!
+That's why we're excited to warmly introduce Vega as a new Hummingbot Foundation [sponsor](../../../about/index.md), which will support our efforts to maintain the Vega integration to Hummingbot and educate our respective communities on how to use it!
 
 <!-- more -->
 
@@ -35,9 +35,9 @@ Over the next few months, we plan to work with Vega Protocol to help new users s
 * Running bots on Vega and analyzing their performance
 * Designing custom dashboards and screeners for Vega
 
-For instance, we just released the [Vega Connector Guide](/academy-content/using-vega-protocol-with-hummingbot), in which we detail creating a Vega wallet, adding credentials to Hummingbot, and how to configure Vega-compatible scripts.
+For instance, we just released the [Vega Connector Guide](../using-vega-protocol-with-hummingbot/index.md), in which we detail creating a Vega wallet, adding credentials to Hummingbot, and how to configure Vega-compatible scripts.
 
-![Vega Connector Guide](/academy-content/using-vega-protocol-with-hummingbot/cover.png)
+![Vega Connector Guide](../using-vega-protocol-with-hummingbot/index.md)
 
 
 

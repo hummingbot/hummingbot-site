@@ -232,9 +232,7 @@ Now your Binance API keys are connected to Hummingbot. Repeat these steps for ot
 
 ## What's Next?
 
-![](botcamp-live-session.png)
-
-If you're serious about delving deeper and enhancing your trading bot capabilities, consider [Botcamp](/botcamp/), a professional training program for market makers and algo traders. This comprehensive program combines new content modules and live sessions each month to help you understand the intricacies of the market. You'll learn to create and backtest market making strategies, directional trading, and other strategies using Dashboard. 
+If you're serious about delving deeper and enhancing your trading bot capabilities, consider [Botcamp](https://www.botcamp.xyz/), a professional training program for market makers and algo traders. This comprehensive program combines new content modules and live sessions each month to help you understand the intricacies of the market. You'll learn to create and backtest market making strategies, directional trading, and other strategies using Dashboard. 
 
 Most importantly, you'll gain hands-on experience with Bot Battles, Botcamp's monthly bot trading competitions. It's a great opportunity to measure your progress and learn from others. In addition, joining the Botcamp community allows you to expand your professional network, form teams to compete together, and share insights.
 

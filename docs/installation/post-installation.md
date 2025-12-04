@@ -19,7 +19,7 @@ Here is what each folder contains:
 
 - `/conf`: General folder for configuration files
 
-- `/conf/connectors`: Exchange API keys encrypted by your [password](/client/password/)
+- `/conf/connectors`: Exchange API keys encrypted by your [password](../client/password.md)
 
 - `/conf/strategies`: Strategy config files that you can `create` and `import`
 
@@ -62,7 +62,7 @@ Afterwards, from the root directory, run this command:
 ./start
 ```
 
-![](/assets/img/launch-from-source.gif)
+![](../assets/img/launch-from-source.gif)
 
 
 ## Exiting Hummingbot
@@ -74,7 +74,7 @@ Running the `exit` command cancels all outstanding orders and exit the Hummingbo
 
 ## Updating Hummingbot
 
-Once a month, we publish an official [release](/governance/releases) of Hummingbot and Hummingbot Gateway, marked by code release on Github and DockerHub and the publication of the [release notes](/release-notes).
+Once a month, we publish an official [release](../release-notes/releases.md) of Hummingbot and Hummingbot Gateway, marked by code release on Github and DockerHub and the publication of the [release notes](../release-notes/index.md).
 
 Subscribe to the [Hummingbot Newletter](https://hummingbot.substack.com/) to get notified when a new release ships.
 
@@ -82,7 +82,7 @@ Subscribe to the [Hummingbot Newletter](https://hummingbot.substack.com/) to get
 
 Users of the Docker version of Hummingbot can update their instances to the latest image, which is updated with each release (e.g. `hummingbot/hummingbot:latest`).
 
-See [Useful Docker Commands](/installation/docker/#useful-docker-commands) for how to manage your containers. For example, you can update the Compose project for the latest images:
+See [Useful Docker Commands](./docker.md#useful-docker-commands) for how to manage your containers. For example, you can update the Compose project for the latest images:
 
 ```
 docker pull hummingbot/hummingbot
@@ -125,7 +125,7 @@ To exit the screen (detach), press <kbd>Ctrl</kbd> + <kbd>A</kbd> then <kbd>Ctrl
 
 To list all running instances, use `screen -ls`.
 
-![List Screen Instances](/assets/img/screen.png)
+![List Screen Instances](../assets/img/screen.png)
 
 Log back into the screen by using either `screen` or `screen -r $NAME` to open a specific instance.
 

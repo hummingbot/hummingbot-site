@@ -6,7 +6,7 @@ The Hummingbot Governance Token (HBOT) is a standard ERC-20 Ethereum token that 
 
 **Hummingbot Foundation will never issue more HBOT tokens.** The total supply of HBOT was fixed at genesis at 1,000,000,000 tokens. The Foundation forsees no need to issue more HBOT tokens in the future, once all of the HBOT supply has been distributed to the community.
 
-Learn more about the HBOT token in the [original launch post](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md) and [2023 FAQ update](/blog/faq-on-hbot-and-hummingbot-governance/).
+Learn more about the HBOT token in the [original launch post](../blog/posts/introducing-the-hummingbot-governance-token-hbot/index.md) and [2023 FAQ update](../blog/posts/faq-on-hbot-and-hummingbot-governance/index.md).
 
 
 ## HBOT Metrics
@@ -41,14 +41,14 @@ The HBOT token can be traded across multiple decentralized and centralized excha
 
 | Exchange | Type | Market | Link |
 |----------|------|------|------|
-| [Uniswap](/exchanges/gateway/uniswap) | CLMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
-| [Uniswap](/exchanges/gateway/uniswap) | CLMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0x47541D068e1289297e1ef66277507116A26DE860> |
-| [Uniswap](/exchanges/gateway/uniswap) | AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
-| [Bitrue](/exchanges/bitrue) | CLOB Spot CEX | HBOT/USDT | <https://www.bitrue.com/trade/hbot_usdt> |
+| [Uniswap](../exchanges/gateway/uniswap.md) | CLMM DEX | HBOT/ETH | <https://app.uniswap.org/explore/pools/ethereum/0x3aB72a32810Cf72bdE4Aa0191Dd7702f50dE0F64> |
+| [Uniswap](../exchanges/gateway/uniswap.md) | CLMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0x47541D068e1289297e1ef66277507116A26DE860> |
+| [Uniswap](../exchanges/gateway/uniswap.md) | AMM DEX | HBOT/USDC | <https://app.uniswap.org/explore/pools/ethereum/0xfe0c0Da86A1768F9721FF4Ccba984E5DAA21E395> |
+| [Bitrue](../exchanges/bitrue.md) | CLOB Spot CEX | HBOT/USDT | <https://www.bitrue.com/trade/hbot_usdt> |
 
 ## Voting with HBOT
 
-HBOT token holders can create and vote on various types of [Proposals](/governance/proposals) to allocate HBOT bounties toward maintenance of various components in the Hummingbot codebase.
+HBOT token holders can create and vote on various types of [Proposals](./proposals.md) to allocate HBOT bounties toward maintenance of various components in the Hummingbot codebase.
 
 All **proposal voting** occur on the offical Hummingbot [Snapshot](https://snapshot.org/#/hbot.eth), which features an off-chain, gas-less voting system that allows you to vote by signing messages using your HBOT token balance as of a certain block.
 

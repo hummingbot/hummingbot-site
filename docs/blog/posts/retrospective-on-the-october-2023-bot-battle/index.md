@@ -38,7 +38,7 @@ Mostly due to fees, the result was total P&L of -4.84 USDT. While not the outcom
 
 ## What Changed in October: Using a V2 Strategy
 
-Fast forward to October, and I wanted to test out the new V2 strategy framework, notable for creating [Executors](../../../v2-strategies/executors.md) instead of orders. This innovative approach is based on the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html), a concept from [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
+Fast forward to October, and I wanted to test out the new V2 strategy framework, notable for creating [Executors](../../../strategies/v2-strategies/executors/index.md) instead of orders. This innovative approach is based on the [triple barrier method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html), a concept from [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086) by Martin Prado.
 
 V2 Strategies differ from their predecessors in several key ways:
 
@@ -126,4 +126,4 @@ As we gear up for future competitions, I remain committed to the iterative proce
 
 For the next Bot Battle, I plan to deploy a V2 strategy in a spot exchange. market, since the goal of the V2 framework is to allow traders to run the same strategies on both spot and perpetual exchanges. I'll be sure to share my strategy and results, continuing the tradition of transparency and collective growth within the Hummingbot community.
 
-To get involved and learn how to master V2 strategies, sign up for [Botcamp](/botcamp)!
+To get involved and learn how to master V2 strategies, sign up for [Botcamp](https://www.botcamp.xyz/)!

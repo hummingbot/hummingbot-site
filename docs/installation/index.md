@@ -1,5 +1,8 @@
 # Hummingbot Installation
 
+!!! tip "New to Hummingbot?"
+    We recommend starting with the **[Hummingbot API](#quick-start-recommended-hummingbot-api)**, which provides a user-friendly Dashboard for managing your bots.
+
 **The official and recommended way to run Hummingbot** is through the [Hummingbot API](https://github.com/hummingbot/hummingbot-api), which provides a comprehensive trading platform with three ways to interact:
 
 - 🤖 **MCP (AI Assistant)** - Control your trading with Claude, ChatGPT, or Gemini using natural language
@@ -93,11 +96,18 @@ After setup completes:
 !!! note "Cloud Servers"
     If you are using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections to the necessary ports.
 
+### Next Steps
+
+After successfully installing the Hummingbot API, here are some next steps to get you started:
+
+- **[Hummingbot API Quickstart Guide](../hummingbot-api/quickstart.md)**: Learn how to add exchange credentials, view your portfolio, and place your first market order.
+- **[Hummingbot Dashboard](../dashboard/index.md)**: Use the graphical interface to manage your bots.
+
 ### Connect an AI Assistant (Optional)
 
 After setup, you can connect AI assistants to control Hummingbot with natural language.
 
-See the **[MCP Installation Guide](/mcp/installation/)** for complete instructions on connecting:
+See the **[MCP Installation Guide](../mcp/installation.md)** for complete instructions on connecting:
 
 - **Claude Code** (recommended) - One-line CLI setup
 - **Gemini CLI** - Google's AI terminal agent
@@ -108,7 +118,9 @@ See the **[MCP Installation Guide](/mcp/installation/)** for complete instructio
 !!! warning "Deploy Repo is now deprecated"
     The [Deploy](https://github.com/hummingbot/deploy) repository is being deprecated in favor of the Hummingbot API installation above. Existing users should migrate to the Hummingbot API for continued support and new features.  
 
-## Standalone Hummingbot
+## Alternative Installation Methods
+
+For advanced users and developers, we offer the following installation methods:
 
 <div class="grid cards" markdown>
 
@@ -119,7 +131,7 @@ See the **[MCP Installation Guide](/mcp/installation/)** for complete instructio
     - 🐳 Containerized environment  
     - 🛡️ Simplest, easiest setup   
     - 🔄 Deploy multiple instances  
-    - **Recommended for most users**
+    - **For running the client as a standalone application**
 
     [Install via Docker →](./docker.md)
 
@@ -130,15 +142,9 @@ See the **[MCP Installation Guide](/mcp/installation/)** for complete instructio
     - 💻 Developer-friendly setup  
     - 🔧 Modify core codebase  
     - 🧪 Test unreleased features  
-    - **For advanced users**
+    - **For developers and contributors**
 
     [Install from Source →](./source.md)
 
 </div>
-
-!!! note "Need help deciding?"
-    See [Installation Overview](./install-overview.md) for comparison of different methods.
-
-
-
 

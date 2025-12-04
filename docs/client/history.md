@@ -8,7 +8,7 @@ Trades are saved locally in a .csv file located in the `data` folder which you c
 
 Optional argument `--precision` specifies the number of decimal values.
 
-![](/assets/img/history.png)
+![](../assets/img/history.png)
 
 This block below shows the calculation for some of the values displayed in the history output.
 
@@ -110,6 +110,6 @@ From the above example, for the Return% is -3.075/-35.89 = -9.76%
 
 The **Return %** (bottom navbar) matches the calculated return on **History** after the last trade, see following screenshot:
 
-![ ](/assets/img/same_return.png)
+![ ](../assets/img/same_return.png)
 
 
