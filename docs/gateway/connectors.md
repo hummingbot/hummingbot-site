@@ -14,6 +14,7 @@ Gateway provides standardized connectors for interacting with decentralized exch
 | **[Jupiter](../exchanges/gateway/jupiter.md)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
 | **[Meteora](../exchanges/gateway/meteora.md)** | Solana | ❌ | ❌ | ✅ | Supports for Dynamic Liquidity Market Maker (DLMM) |
 | **[Raydium](../exchanges/gateway/raydium.md)** | Solana | ❌ | ✅ | ✅ | Supports for Standard and Concentrated Pools |
+| **[Orca](../exchanges/gateway/orca.md)** | Solana | ❌ | ❌ | ✅ | Supports Standard CLMM Pools |
 | **[Uniswap](../exchanges/gateway/uniswap.md)** | Ethereum | ✅ | ✅ | ✅ | Support for V2, V3, and Universal Router |
 | **[PancakeSwap](../exchanges/gateway/pancakeswap.md)** | Ethereum/BNB | ✅ | ✅ | ✅ | Support for V2, V3, and Smart Router |
 

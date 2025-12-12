@@ -283,6 +283,13 @@ nav:
       - Installation: hummingbot-api/installation.md
       - Quickstart: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
+    - Condor:
+      - Overview: condor/index.md
+      - Installation: condor/installation.md
+      - Commands: condor/commands.md
+      - Usage Guide: condor/usage.md
+      - test1: condor/api.md
+      - test2: condor/test.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
@@ -333,6 +340,7 @@ nav:
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
+    - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
     - Quickswap: exchanges/gateway/quickswap.md
     - Sushiswap: exchanges/gateway/sushiswap.md
@@ -348,6 +356,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.11.0: release-notes/2.11.0.md
     - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
     - 2.8.0: release-notes/2.8.0.md

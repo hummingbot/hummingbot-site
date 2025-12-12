@@ -28,6 +28,63 @@
 !!! tip
     See the [Hyperliquid Vault Guide](../blog/posts/using-hyperliquid-vaults-with-hummingbot/index.md) for more details on how to use Hyperliquid VauLts.
 
+
+### New: Hyperliquid API Key Support
+
+Hummingbot now supports **API key authentication** for both the `hyperliquid` (spot) and `hyperliquid_perpetual` (perp) connectors, in addition to the existing **Arbitrum wallet + private key** mode. 
+
+This lets you trade and manage positions using API key / secret credentials generated from the Hyperliquid web interface. 
+
+You can choose whichever auth method best fits your setup and security preferences when configuring the connector in Hummingbot.
+
+### How to Create Hyperliquid API Keys
+
+Follow these steps to create API keys on Hyperliquid:
+
+1. **Open the Hyperliquid API page**
+
+    - Log in to your Hyperliquid account.
+
+    - In the top menu, go to **More → API**, or open: <https://app.hyperliquid.xyz/API>. 
+
+2. **Create an API wallet**
+
+    - Enter a **name** for your API wallet (e.g. `hummingbot`).
+
+    - Paste your **main account wallet address** (the wallet you connected to Hyperliquid). 
+
+    - Click **Generate** to create the API wallet, then click **Authorize API Wallet** when prompted. 
+
+3. **Configure API settings and save the private key**
+
+    - In **Days Valid**, choose your desired validity (many guides recommend **MAX** / 180 days, if available). 
+
+    - Copy the **Private Key** shown on the screen and store it in a secure password manager. This key functions as your **API secret** for bots.
+
+    - Click **Authorize** and sign the transaction in your wallet to finalize the API wallet. Note: you may need to have funds deposited before authorization succeeds. 
+
+4. **Get your account wallet address**
+
+    - In the top-right corner of the Hyperliquid app, click your **email / wallet address** next to the Deposit button.
+
+    - Copy your **Account Wallet Address** from this menu. This is your main / master account address, which bots often need alongside the API key.  
+
+    - In most bot integrations, you only need the **Account Wallet Address**, not the separate **API Wallet Address**. 
+
+5. **Store your credentials safely**
+
+    - Keep the following in a secure place:
+
+        - **Account Wallet Address** (main account / master account)
+
+        - **API public key / wallet address** (if shown)
+
+        - **API private key / secret**
+
+    - Never share your **private key / secret** with anyone, and do not paste it into untrusted tools. 
+
+Once you have these values, you can supply them to Hummingbot when using API key authentication for the Hyperliquid connectors.    
+
 ### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect hyperliquid` in Hummingbot in order to connect your wallet:
