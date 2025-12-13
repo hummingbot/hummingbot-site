@@ -286,10 +286,8 @@ nav:
     - Condor:
       - Overview: condor/index.md
       - Installation: condor/installation.md
-      - Commands: condor/commands.md
-      - Usage Guide: condor/usage.md
-      - test1: condor/api.md
-      - test2: condor/test.md
+      # - Commands: condor/commands.md
+      # - Usage Guide: condor/usage.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
