@@ -53,7 +53,7 @@ There are two main methods to install Hummingbot:
 
 The **recommended** method for installing Hummingbot is using Docker.
 
-- [Docker Quickstart Guide](./../../../installation/docker.md)
+- [Installation Guide](../../../installation/index.md)
 
 ### Source
 

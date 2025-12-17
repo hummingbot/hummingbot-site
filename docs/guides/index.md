@@ -1,16 +1,20 @@
 This page serves as a comprehensive resource hub for learning about algorithmic trading with Hummingbot. With content for new crypto traders to advanced quant developers, you'll find step-by-step guides, Youtube videos, and other content to help you master crypto market making!
 
 ## 🚀 Quickstart Guides
-Get started with Hummingbot using different interfaces and installation methods:
 
-- **[Hummingbot Dashboard Quickstart Guide](../blog/posts/quickstart-dashboard/index.md)**  
- Learn how to install Hummingbot 2.0 and use the Dashboard app to connect exchange credentials, create/backtest strategy configurations, and deploy a fleet of bots
+Get started with Hummingbot using different installation methods:
 
-- **[Hummingbot Docker Quickstart Guide](../blog/posts/docker-installation-guide/index.md)**  
- Step-by-step instructions to install and deploy Hummingbot using Docker, including setting up the interface and running your first algorithmic trading strategy.
+- **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)**
+  Step-by-step guide to install and run the Hummingbot Client using Docker. Best for local usage, learning Hummingbot, and running V1 strategies.
 
-- **[Hummingbot API Quickstart Guide](../hummingbot-api/quickstart.md)**  
- Learn how to use the Hummingbot API to add exchange credentials, view portfolio balances, and place your first market order using Docker setup and Python API client examples.
+- **[Hummingbot API Quickstart](../installation/hummingbot-api.md)**
+  Install Hummingbot API for multi-bot management, cloud deployments, and modern interfaces like Condor (Telegram) and MCP (AI agents).
+
+- **[Hummingbot API Developer Guide](../hummingbot-api/quickstart.md)**
+  Learn how to use the Hummingbot API directly with curl or the Python client to add credentials, view portfolios, and place orders.
+
+- **[Dashboard Quickstart Guide](../blog/posts/quickstart-dashboard/index.md)** *(deprecated)*
+  Learn how to use the Dashboard app to connect exchange credentials and deploy bots. Note: Dashboard is being deprecated in favor of Condor.
 
 ## 🎓 Hummingbot Academy
 

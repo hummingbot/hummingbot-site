@@ -22,22 +22,17 @@ Clone the repository and run the setup script:
 ```bash
 git clone https://github.com/hummingbot/hummingbot-api.git
 cd hummingbot-api
-chmod +x setup.sh
-./setup.sh
+make setup
+make deploy
 ```
 
 ### Setup Process
 
 The script will prompt you for:
 
-1. **Credentials** (required):
+**Credentials** (required):
    - Config password (for encrypting bot credentials)
    - API username and password
-
-2. **Optional Services**:
-   - **Dashboard**: For web-based visual interface
-
-3. **Gateway**: Optional passphrase for DEX trading
 
 ### What Gets Installed
 
@@ -48,9 +43,6 @@ The script will prompt you for:
 - ✅ **EMQX** - Message broker for real-time communication
 - ✅ **Swagger UI** (port 8000/docs) - API documentation
 
-**Optional services** (enable during setup):
-
-- 📊 **Dashboard** (port 8501) - Web interface
 
 ### After Setup
 
@@ -73,12 +65,6 @@ See the **[MCP Installation Guide](../mcp/installation.md)** for complete instru
 - **Codex CLI** - OpenAI's coding assistant
 - **Claude Desktop** - GUI application
 
-**3. Access Dashboard** (If Enabled)
-
-If you enabled Dashboard during setup:
-
-- URL: <http://localhost:8501>
-- Use the same username/password from setup
 
 ## Install from Source (for Developers)
 
@@ -89,8 +75,14 @@ If you're developing or contributing to Hummingbot API, you can install from sou
 ```bash
 git clone https://github.com/hummingbot/hummingbot-api
 cd hummingbot-api
-./setup.sh
+make setup
 ```
+
+The setup script will prompt you for:
+
+**Credentials** (required):
+   - Config password (for encrypting bot credentials)
+   - API username and password
 
 ### 2. Install dependencies
 
@@ -108,7 +100,8 @@ This will:
 ### 3. Start the API in development mode
 
 ```bash
-./run.sh --dev
+docker compose up emqx postgres -d
+conda activate hummingbot-api && uvicorn main:app --reload
 ```
 
 This starts the Broker and Postgres DB containers and runs the API using `uvicorn` with auto-reload enabled for development.
@@ -371,7 +364,7 @@ make run
 
 ## Next Steps
 
-After installation, proceed to the [Quickstart Guide](quickstart.md) to learn how to:
+After installation, proceed to the [Developer Guide](quickstart.md) to learn how to:
 
 - Add exchange credentials
 - View your portfolio

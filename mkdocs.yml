@@ -169,10 +169,10 @@ nav:
   - Documentation:
     - Documentation: docs/index.md
     - Installation:
-      - Installation: installation/index.md
-      - Install via Docker: installation/docker.md
-      - Install via Source: installation/source.md
-      - Post-Installation: installation/post-installation.md
+      - Overview: installation/index.md
+      - Hummingbot Client Quickstart: installation/hummingbot-client.md
+      - Hummingbot API Quickstart: installation/hummingbot-api.md
+      - Updating to New Versions: installation/update.md
     - Guides:
       - Guides: guides/index.md
     - Strategies:
@@ -244,6 +244,7 @@ nav:
       - Debugging & Testing Connectors: connectors/connectors/debug.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
+      - Installation: client/installation.md
       - User Interface: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
       - Launch/Exit Hummingbot: client/launch-exit.md
@@ -281,8 +282,13 @@ nav:
     - Hummingbot API: 
       - Overview: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
-      - Quickstart: hummingbot-api/quickstart.md
+      - Developer Guide: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
+    - Condor:
+      - Overview: condor/index.md
+      - Installation: condor/installation.md
+      # - Commands: condor/commands.md
+      # - Usage Guide: condor/usage.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
@@ -333,6 +339,7 @@ nav:
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
+    - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
     - Quickswap: exchanges/gateway/quickswap.md
     - Sushiswap: exchanges/gateway/sushiswap.md
@@ -348,6 +355,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.11.0: release-notes/2.11.0.md
     - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
     - 2.8.0: release-notes/2.8.0.md

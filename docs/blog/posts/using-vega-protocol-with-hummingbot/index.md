@@ -87,7 +87,7 @@ See this Metamask article to find the seed phrase: [How to reveal your Secret Re
 
 After you have both your Snap Key and Seed Phrase, you are ready to connect Hummingbot to Vega! Make sure to bookmark the Vega connector documentation page, which provides a handy reference.
 
-Now, install Hummingbot by following the [installation process](../../../installation/docker.md). The easiest way to get started is to clone the Github repo and launch the Docker image:
+Now, install Hummingbot by following the [installation process](../../../installation/index.md). The easiest way to get started is to clone the Github repo and launch the Docker image:
 
 ```
 git clone https://github.com/hummingbot/hummingbot

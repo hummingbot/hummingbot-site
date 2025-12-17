@@ -12,7 +12,7 @@ A comprehensive RESTful API framework for managing trading operations across mul
 ## Getting Started
 
 - **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
-- **[Quickstart Guide](quickstart.md)** - Learn how to:
+- **[Developer Guide](quickstart.md)** - Learn how to:
     - Add exchange credentials
     - View portfolio balances
     - Place your first market order
@@ -41,41 +41,41 @@ graph TB
     subgraph "Clients"
         direction LR
         CUSTOM[Custom Apps]
-        DASH[Hummingbot<br/>Dashboard]
+        CONDOR[Condor<br/>Telegram Bot]
         AI[AI Agents]
     end
-    
+
     subgraph "Hummingbot API"
         direction LR
         API["FastAPI<br/>Server<br/>"]
         PG[(PostgreSQL<br/>Database)]
         MQTT[EMQX<br/>Message Broker]
     end
-    
+
     subgraph "Bots"
         BOTS[Hummingbot<br/>Instances]
     end
-    
+
     subgraph "Exchanges"
         EX[Binance, OKX,<br/>Hyperliquid, etc.]
     end
-    
+
     %% Client connections using API Client
-    DASH -->|Hummingbot API Client| API
-        
+    CONDOR -->|Hummingbot API Client| API
+
     %% Bot connections
     BOTS <-->|Commands & Updates| MQTT
-    
+
     %% Exchange connections
     BOTS <-->|Trade & Data| EX
     API <-->|Trade & Data| EX
-    
+
     %% Apply theme colors
     classDef clientStyle stroke:#5FFFD7,stroke-width:3px
     classDef apiStyle stroke:#00B1BB,stroke-width:3px
     classDef botsStyle stroke:#E549FF,stroke-width:3px
-    
-    class DASH clientStyle
+
+    class CONDOR clientStyle
     class API,PG,MQTT apiStyle
     class BOTS botsStyle
 ```
@@ -92,19 +92,19 @@ graph TB
 
 ## 🎯 Ways to Interact with Hummingbot API
 
-For new users, we strongly recommend using the **Dashboard** for a visual and intuitive experience. For developers and advanced users, the **Swagger UI** and **MCP** provide more direct access to the API.
+For new users, we strongly recommend using **Condor** for a mobile-friendly Telegram experience. For developers and advanced users, the **Swagger UI** and **MCP** provide more direct access to the API.
 
-### 1. 📊 Dashboard - Web Interface (Recommended for New Users)
-**Visual interface for common operations**
+### 1. 📱 Condor - Telegram Interface (Recommended for New Users)
+**Mobile and desktop control via Telegram**
 
-- **Best for**: Users who prefer graphical interfaces
+- **Best for**: Users who want to monitor and control bots on the go
 - **Advantages**:
-  - Intuitive visual workflows
-  - Real-time charts and graphs
-  - Quick access to common tasks
-- **Limitations**: Not all API functions available (focused on core features)
-- **Setup**: Enable during installation
-- **Access**: <http://localhost:8501>
+  - Access from any device with Telegram
+  - Real-time notifications and alerts
+  - Quick commands for common operations
+  - No web browser required
+- **Setup**: See [Condor Installation](../condor/installation.md)
+- **Access**: Your personal Telegram bot
 
 ### 2. 🔧 Swagger UI - API Documentation
 **Interactive REST API documentation and testing**
@@ -219,7 +219,7 @@ The API uses HTTP Basic Authentication:
 
 ## API Client
 
-A modern, asynchronous Python client is available for interacting with the Hummingbot API. This client is used by the [Hummingbot Dashboard](../dashboard/index.md) as the interface layer for all API communications.
+A modern, asynchronous Python client is available for interacting with the Hummingbot API. This client is used by [Condor](../condor/index.md) and other interfaces as the interface layer for all API communications.
 
 - **GitHub**: [hummingbot-api-client](https://github.com/hummingbot/hummingbot-api-client)
 - **PyPI**: [pypi.org/project/hummingbot-api-client](https://pypi.org/project/hummingbot-api-client/)
@@ -256,6 +256,6 @@ order = await client.create_order(
 
 ## Related Resources
 
-- [Hummingbot Dashboard](../dashboard/index.md) - Web-based interface built on top of Hummingbot API
+- [Condor](../condor/index.md) - Telegram interface for Hummingbot API
 - [API Client Documentation](https://github.com/hummingbot/hummingbot-api-client) - Python client library
 - [Hummingbot Client](../client/index.md) - Core trading engine

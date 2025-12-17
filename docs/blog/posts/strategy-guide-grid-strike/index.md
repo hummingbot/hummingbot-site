@@ -38,7 +38,7 @@ This guide explains how the Grid Strike strategy works and helps you decide when
 
 Before you run Grid Strike, make sure you have Hummingbot installed, either:
  
-* [**Hummingbot Client**](../../../client/index.md): See [Docker Installation](../../../installation/docker.md) or [Source Installation](../../../installation/docker.md) to get started
+* [**Hummingbot Client**](../../../client/index.md): See [Installation Guide](../../../installation/index.md) or [Source Installation](../../../client/installation.md#source-installation) to get started
 * [**Hummingbot API + Dashboard**](../../../hummingbot-api/index.md): See the [Hummingbot Dashboard Quickstart Guide](../quickstart-dashboard/index.md) for a guide with step-by-step setup instructions
 
 ### Create Controller Config 
