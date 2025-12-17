@@ -100,8 +100,8 @@ This will:
 ### 3. Start the API in development mode
 
 ```bash
-conda activate hummingbot-api
-make run
+docker compose up emqx postgres -d
+conda activate hummingbot-api && uvicorn main:app --reload
 ```
 
 This starts the Broker and Postgres DB containers and runs the API using `uvicorn` with auto-reload enabled for development.

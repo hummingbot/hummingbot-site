@@ -11,9 +11,9 @@ For most releases where the configuration schema hasn't changed, follow these st
 ### Hummingbot API
 
 ```bash
-cd hummingbot-api
-git pull origin main
-./setup.sh
+docker compose down hummingbot-api
+docker pull hummingbot/hummingbot-api:latest
+docker compose up hummingbot-api -d
 ```
 
 ### Hummingbot Client
@@ -71,21 +71,33 @@ The main configuration schemas reside in:
 
 ### Hummingbot API
 
-Hummingbot API uses the same `gateway_files` directory as Gateway for configuration.
+Hummingbot API uses the same `gateway-files` directory as Gateway for configuration.
 
 ```bash
 cd hummingbot-api
 
 # Back up configs (optional)
-cp -r gateway_files gateway_files.backup
+cp -r gateway-files gateway-files.backup
 
 # Remove legacy configs
-rm -rf gateway_files
-
-# Update and re-run setup
-git pull origin main
-./setup.sh
+rm -rf gateway-files
 ```
+
+**Docker**
+
+```bash
+docker compose down hummingbot-api
+docker pull hummingbot/hummingbot-api:latest
+docker compose up hummingbot-api -d
+```
+
+**Source:** 
+```bash
+git pull origin main
+docker compose up emqx postgres -d
+conda activate hummingbot-api && uvicorn main:app --reload
+```
+
 
 ### Hummingbot Client
 
@@ -110,7 +122,7 @@ docker compose up -d
 cd hummingbot
 
 # Remove legacy environment
-conda env remove --name hummingbot
+conda env remove -n hummingbot -y
 
 # Back up config (optional)
 cp conf/conf_client.yml conf/conf_client.yml.backup

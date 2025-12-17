@@ -49,9 +49,13 @@ chmod +x setup.sh
 
 The setup script will:
 
-1. Prompt you for credentials (default: `admin`/`admin`)
-2. Ask if you want to enable Dashboard (optional web interface)
-3. Pull and start all required Docker containers
+Prompt you for credentials (default: `admin`/`admin`)
+
+Start all services
+
+```bash
+make deploy
+```
 
 ## Access Your Platform
 
