@@ -1,150 +1,93 @@
-# Hummingbot Installation
+# Installation Overview
 
-!!! tip "New to Hummingbot?"
-    We recommend starting with the **[Hummingbot API](#quick-start-recommended-hummingbot-api)**, which provides a user-friendly Dashboard for managing your bots.
+The Hummingbot ecosystem consists of several repositories that work together to provide a complete algorithmic trading platform. This page provides an overview of each component and links to their installation guides.
 
-**The official and recommended way to run Hummingbot** is through the [Hummingbot API](https://github.com/hummingbot/hummingbot-api), which provides a comprehensive trading platform with three ways to interact:
+## Hummingbot Ecosystem
 
-- 🤖 **MCP (AI Assistant)** - Control your trading with Claude, ChatGPT, or Gemini using natural language
-- 📊 **Dashboard** - Visual web interface for bot management and monitoring
-- 🔧 **Swagger UI** - Full REST API access for developers and power users
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        User Interfaces                          │
+├───────────────────┬─────────────────────┬───────────────────────┤
+│      Condor       │         MCP         │       Dashboard       │
+│   (Telegram UI)   │     (AI Agents)     │ (Web UI, deprecated)  │
+└─────────┬─────────┴──────────┬──────────┴───────────┬───────────┘
+          │                    │                      │
+          └────────────────────┼──────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                        Hummingbot API                           │
+│              REST API for bot management & trading              │
+└─────────────────────────────────────────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────────┐
+│       Core Components (can be run standalone without API)       │
+│                                                                 │
+│  ┌─────────────────────────────┐   ┌─────────────────────────┐  │
+│  │     Hummingbot Client       │──►│         Gateway         │  │
+│  │   (CLI, CLOB Connectors)    │   │   (AMM DEX Connectors)  │  │
+│  └─────────────────────────────┘   └─────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
 
-For other installation options, see [Docker](docker.md) (client only) and [Source](source.md) (for developers).
 
-## System Requirements
-
-### **Cloud server or local machine** 
-
-| **Component**        | **Specifications**                                     |
-|----------------------|-------------------------------------------------------|
-| **Operating System** | Linux x64 or ARM (Ubuntu 20.04+, Debian 10+)          | 
-| **Memory**           | 4 GB RAM per instance                                 |
-| **Storage**          | 5 GB HDD space per instance                           |
-| **CPU**              | at least 1 vCPU per instance / controller             |
-
-
-### **Docker Compose**
-
-Hummingbot uses [Docker Compose](https://docs.docker.com/compose/), a tool for defining and running multi-container Docker applications. 
-
-=== "macOS"
-    Install Docker Desktop from the [official Docker website](https://docs.docker.com/desktop/install/mac-install/)
-    
-
-=== "Linux"
-    1. **Desktop Users**:  
-       Install Docker Desktop from [official site](https://docs.docker.com/desktop/install/linux-install/)
-    
-    2. **Headless Servers** (VPS like AWS EC2 or Digital Ocean):  
-       ```bash
-       curl -fsSL https://get.docker.com -o get-docker.sh
-       sh get-docker.sh
-       ```
-    
-
-=== "Windows"
-    !!! note "Prerequisites"
-        - Docker Desktop installed  
-        - WSL2 enabled  
-        - Ubuntu distribution installed
-    
-    **Always run commands in:**  
-    Ubuntu Terminal (Start Menu → Ubuntu)  
-    
-
-## Quick Start (Recommended: Hummingbot API)
-
-The [Hummingbot API](https://github.com/hummingbot/hummingbot-api) is the official and recommended installation method, providing MCP AI assistant integration, Dashboard web interface, and full REST API access.
-
-### Installation
-
-Clone the repository and run the setup script:
-
-```bash
-git clone https://github.com/hummingbot/hummingbot-api.git
-cd hummingbot-api
-chmod +x setup.sh
-./setup.sh
+┌─────────────────────────────────────────────────────────────────┐
+│                         Quants Lab                              │
+│        Standalone research environment for backtesting,         │
+│             data collection, and strategy analysis              │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-The setup script will:
+## Repository Overview
 
-- Prompt you for credentials (default: `admin`/`admin`)
-- Ask if you want to enable Dashboard (optional web interface)
-- Start all required Docker containers
+| Repository | Description | Installation | Quickstart |
+|------------|-------------|--------------|------------|
+| [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [Installation](../hummingbot-api/installation.md) | [Quickstart](./hummingbot-api.md) |
+| [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Installation](../client/installation.md) | [Quickstart](./hummingbot-client.md) |
+| [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | [Installation](../gateway/installation.md) | - |
+| [**Condor**](https://github.com/hummingbot/condor) | Telegram bot for monitoring and controlling Hummingbot instances | [Installation](../condor/installation.md) | - |
+| [**MCP Server**](https://github.com/hummingbot/mcp) | Connects AI assistants (Claude, Gemini, ChatGPT) to Hummingbot | [Installation](../mcp/installation.md) | - |
+| [**Dashboard**](https://github.com/hummingbot/dashboard) | Web-based UI for bot management (deprecated, use Condor) | [GitHub](https://github.com/hummingbot/dashboard) | [Quickstart](../blog/posts/quickstart-dashboard/index.md) |
+| [**Quants Lab**](https://github.com/hummingbot/quants-lab) | Research environment for backtesting and strategy analysis | [GitHub](https://github.com/hummingbot/quants-lab) | - |
 
-### What Gets Installed
+## Recommended Paths
 
-**Core services** (always installed):
+### Hummingbot Client
 
-- ✅ **Hummingbot API** (port 8000) - REST API backend
-- ✅ **PostgreSQL** - Database for trading data
-- ✅ **EMQX** - Message broker for real-time communication
-- ✅ **Swagger UI** (port 8000/docs) - API documentation
+The legacy CLI-based trading client. Best for:
 
-**Optional services** (enable during setup):
+- **Getting started** - Most users begin here to learn Hummingbot
+- **Local usage** - Running on your local machine
+- **V1 strategies** - Pure Market Making, Cross-Exchange Market Making, etc.
+- **Single instance** - Running one bot at a time
 
-- 📊 **Dashboard** (port 8501) - Web interface
+[**Hummingbot Client Quickstart →**](./hummingbot-client.md)
 
-### Access Your Platform
+### Hummingbot API
 
-After setup completes:
+The modern REST API backend for managing multiple bots. Best for:
 
-- **Swagger UI**: <http://localhost:8000/docs> (always available)
-- **Dashboard**: <http://localhost:8501> (if enabled)
+- **Multiple instances** - Deploy and manage many bots simultaneously
+- **Production environments** - Running on cloud servers (AWS, Digital Ocean, etc.)
+- **Modern interfaces** - Use Condor (Telegram) or AI agents via MCP
+- **Portfolio management** - Track balances across all exchanges in one place
 
-!!! note "Cloud Servers"
-    If you are using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections to the necessary ports.
+[**Hummingbot API Quickstart →**](./hummingbot-api.md)
 
-### Next Steps
+### Developers
 
-After successfully installing the Hummingbot API, here are some next steps to get you started:
+For developers who want to add/customize exchange connectors, extend strategies, or otherwise modify the Hummingbot codebase:
 
-- **[Hummingbot API Quickstart Guide](../hummingbot-api/quickstart.md)**: Learn how to add exchange credentials, view your portfolio, and place your first market order.
-- **[Hummingbot Dashboard](../dashboard/index.md)**: Use the graphical interface to manage your bots.
+**Source Installation**
 
-### Connect an AI Assistant (Optional)
+- [Hummingbot Client from Source](../client/installation.md#source-installation) - Install the core trading client for development
+- [Gateway from Source](../gateway/installation.md#source-installation) - Install the DEX connector middleware for development
 
-After setup, you can connect AI assistants to control Hummingbot with natural language.
+**Building Connectors**
 
-See the **[MCP Installation Guide](../mcp/installation.md)** for complete instructions on connecting:
+- [Building CLOB Connectors](../connectors/connectors/index.md) - Add new CEX/DEX order book connectors to Hummingbot Client
+- [Building Gateway Connectors](../connectors/gateway-connectors/index.md) - Add new AMM DEX connectors to Gateway
 
-- **Claude Code** (recommended) - One-line CLI setup
-- **Gemini CLI** - Google's AI terminal agent
-- **Codex CLI** - OpenAI's coding assistant
-- **Claude Desktop** - GUI application
-- **Docker MCP Catalog** - Visual setup via Docker Desktop
+**API Development**
 
-!!! warning "Deploy Repo is now deprecated"
-    The [Deploy](https://github.com/hummingbot/deploy) repository is being deprecated in favor of the Hummingbot API installation above. Existing users should migrate to the Hummingbot API for continued support and new features.  
-
-## Alternative Installation Methods
-
-For advanced users and developers, we offer the following installation methods:
-
-<div class="grid cards" markdown>
-
--   __[Docker Installation](./docker.md)__
-
-    ---
-    
-    - 🐳 Containerized environment  
-    - 🛡️ Simplest, easiest setup   
-    - 🔄 Deploy multiple instances  
-    - **For running the client as a standalone application**
-
-    [Install via Docker →](./docker.md)
-
--   __[Source Installation](./source.md)__
-
-    ---
-    
-    - 💻 Developer-friendly setup  
-    - 🔧 Modify core codebase  
-    - 🧪 Test unreleased features  
-    - **For developers and contributors**
-
-    [Install from Source →](./source.md)
-
-</div>
-
+- [Hummingbot API Developer Guide](../hummingbot-api/quickstart.md) - Use the REST API with curl or Python client

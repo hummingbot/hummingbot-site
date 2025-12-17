@@ -6,7 +6,7 @@ This guide shows you how to connect AI assistants to the Hummingbot API using th
 
 Before starting, ensure you have:
 
-1. **Hummingbot API Server** running ([Installation Guide](../installation/docker.md#installation-recommended-hummingbot-api))
+1. **Hummingbot API Server** running ([Hummingbot API Quickstart](../installation/hummingbot-api.md))
 2. **Docker** installed and running
 3. **API credentials** (username/password from setup)
 4. **An AI Assistant** - Claude Code, Gemini CLI, Codex CLI, or Claude Desktop

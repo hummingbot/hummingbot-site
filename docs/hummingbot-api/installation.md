@@ -364,7 +364,7 @@ make run
 
 ## Next Steps
 
-After installation, proceed to the [Quickstart Guide](quickstart.md) to learn how to:
+After installation, proceed to the [Developer Guide](quickstart.md) to learn how to:
 
 - Add exchange credentials
 - View your portfolio

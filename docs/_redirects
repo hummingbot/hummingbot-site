@@ -2,8 +2,10 @@
 /gateway/exchanges/*    /exchanges/:splat               301
 /hbot                   /about/hbot                     301
 /news                   /blog                           301
-/installation           /installation/docker            301
-/installation/deploy    /installation/docker            301
+/installation/docker    /installation/hummingbot-client 301
+/installation/deploy    /installation/hummingbot-api    301
+/installation/source    /installation/hummingbot-client 301
+/installation/post-installation    /installation/hummingbot-client 301
 /installation/orchestration    /installation/broker     301
 /installation/multiple-bots    /installation/orchestration   301
 /exchanges/gate_io_perpetual   /exchanges/gate_io       301

@@ -1,7 +1,7 @@
 Hummingbot Gateway is an API/CLI client that exposes standardized REST endpoints to interact with blockchain networks and decentralized exchanges (DEXs). It provides a language-agnostic approach to interacting with these protocols through a unified interface.
 
 !!! tip "New: Manage Gateway via Hummingbot API"
-    **If you installed Hummingbot using the [recommended Hummingbot API method](../installation/docker.md#installation-recommended-hummingbot-api)**, you can manage Gateway directly through the API - no separate installation needed!
+    **If you installed Hummingbot using the [Hummingbot API Quickstart](../installation/hummingbot-api.md)**, you can manage Gateway directly through the API - no separate installation needed!
 
     The Hummingbot API includes the `manage_gateway_container` tool that handles Gateway lifecycle:
 

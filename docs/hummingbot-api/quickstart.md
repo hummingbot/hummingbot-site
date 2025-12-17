@@ -1,36 +1,6 @@
-# Hummingbot API Quickstart
+# Hummingbot API Developer Guide
 
-This guide demonstrates how to use Hummingbot API to add exchange credentials, view your portfolio, and place a market order.
-
-!!! tip "New to Hummingbot?"
-    We recommend following the **[Dashboard Quickstart](#dashboard-quickstart)** for a user-friendly graphical interface. The Developer Quickstart is for users who are comfortable with the command line and Python.
-
-## Dashboard Quickstart
-
-The Hummingbot Dashboard provides a user-friendly interface to interact with the Hummingbot API.
-
-### 1. Add Exchange Credentials
-
-- Navigate to the **Credentials** page in the Dashboard.
-- Select your account, choose the exchange, and enter your API keys.
-- For a detailed guide, see the [Dashboard Credentials documentation](../dashboard/credentials.md).
-
-### 2. View Your Portfolio
-
-- Navigate to the **Portfolio** page to see your balances across all connected exchanges.
-- For a detailed guide, see the [Dashboard Portfolio documentation](../dashboard/portfolio.md).
-
-### 3. Configure a Strategy and Deploy a Bot
-
-- Navigate to the **Config Generator** page to create and backtest a strategy.
-- Navigate to the **Deploy V2** page to deploy a new bot.
-- For a detailed guide, see the [Dashboard Config and Deploy documentation](../dashboard/config.md).
-
----
-
-## Developer Quickstart
-
-This guide is for developers and advanced users who want to interact with the Hummingbot API directly using `curl` or the Python client.
+This guide demonstrates how to use the Hummingbot API directly using `curl` or the Python client. It covers adding exchange credentials, viewing your portfolio, and placing orders.
 
 ### Prerequisites
 

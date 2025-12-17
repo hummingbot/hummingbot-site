@@ -70,7 +70,7 @@ There are two main methods to install Hummingbot:
 
 For most new users, we recommend installing Hummingbot using Docker.
 
-- [Docker Quickstart Guide](../../../installation/docker.md)
+- [Installation Guide](../../../installation/index.md)
 
 **Source**
 

@@ -12,7 +12,7 @@ A comprehensive RESTful API framework for managing trading operations across mul
 ## Getting Started
 
 - **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
-- **[Quickstart Guide](quickstart.md)** - Learn how to:
+- **[Developer Guide](quickstart.md)** - Learn how to:
     - Add exchange credentials
     - View portfolio balances
     - Place your first market order
