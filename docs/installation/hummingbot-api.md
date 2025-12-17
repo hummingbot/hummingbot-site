@@ -1,6 +1,8 @@
 # Hummingbot API Quickstart
 
-The [Hummingbot API](https://github.com/hummingbot/hummingbot-api) provides a REST API backend for managing multiple Hummingbot instances, portfolios, and trading operations. It's ideal for production deployments on cloud servers.
+This guide walks you through deploying the Hummingbot API on a cloud server and setting up Condor for Telegram-based control.
+
+For source installation, API endpoints, and advanced configuration, see [Hummingbot API Documentation](../hummingbot-api/index.md).
 
 ## What You'll Set Up
 
@@ -13,28 +15,53 @@ This setup is best for managing multiple bot instances on a cloud server (AWS, D
 
 ## Prerequisites
 
-### Install Docker
+Hummingbot API is designed to run on a Linux-based cloud server for 24/7 operation. We recommend using a VPS from providers like AWS, Google Cloud, or Digital Ocean.
 
-=== "macOS"
-    Install Docker Desktop from the [official Docker website](https://docs.docker.com/desktop/install/mac-install/)
+### System Requirements
 
-=== "Linux"
-    **Desktop Users:**
-    Install Docker Desktop from [official site](https://docs.docker.com/desktop/install/linux-install/)
+| **Component**        | **Specifications**                                     |
+|----------------------|-------------------------------------------------------|
+| **Operating System** | Linux x64 or ARM (Ubuntu 20.04+, Debian 10+)          |
+| **Memory**           | 4 GB RAM minimum                                       |
+| **Storage**          | 10 GB SSD                                              |
+| **CPU**              | 2 vCPUs minimum                                        |
 
-    **Headless Servers** (VPS like AWS EC2 or Digital Ocean):
+### Cloud Server Setup
+
+=== "AWS EC2"
+    1. Launch an EC2 instance with **Ubuntu 22.04 LTS**
+    2. Choose instance type: **t3.medium** (2 vCPU, 4 GB RAM) or larger
+    3. Configure security group to allow inbound traffic on ports **22** (SSH), **8000** (API), and **8501** (Dashboard)
+    4. Connect via SSH:
     ```bash
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sh get-docker.sh
+    ssh -i your-key.pem ubuntu@your-instance-ip
     ```
 
-=== "Windows"
-    !!! note "Prerequisites"
-        - Docker Desktop installed
-        - WSL2 enabled
-        - Ubuntu distribution installed
+=== "Google Cloud"
+    1. Create a Compute Engine VM with **Ubuntu 22.04 LTS**
+    2. Choose machine type: **e2-medium** (2 vCPU, 4 GB RAM) or larger
+    3. Configure firewall rules to allow TCP ports **22**, **8000**, and **8501**
+    4. Connect via SSH:
+    ```bash
+    gcloud compute ssh your-instance-name
+    ```
 
-    **Always run commands in:** Ubuntu Terminal (Start Menu → Ubuntu)
+=== "Digital Ocean"
+    1. Create a Droplet with **Ubuntu 22.04 LTS**
+    2. Choose size: **Basic $24/mo** (2 vCPU, 4 GB RAM) or larger
+    3. Connect via SSH:
+    ```bash
+    ssh root@your-droplet-ip
+    ```
+
+### Install Docker
+
+Once connected to your server, install Docker:
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
 
 ## Installation
 
@@ -59,15 +86,16 @@ make deploy
 
 ## Access Your Platform
 
-After setup completes:
+After setup completes, you can interact with Hummingbot API through:
 
-| Interface | URL | Description |
-|-----------|-----|-------------|
-| **Swagger UI** | <http://localhost:8000/docs> | Interactive API documentation (always available) |
-| **Dashboard** | <http://localhost:8501> | Web interface (if enabled during setup) |
+| Interface | Description |
+|-----------|-------------|
+| **Condor** | Telegram bot for mobile/desktop control (setup below) |
+| **MCP** | Connect AI assistants like Claude, ChatGPT, Gemini ([setup guide](../mcp/installation.md)) |
+| **Swagger UI** | Interactive API docs at <http://localhost:8000/docs> |
 
 !!! note "Cloud Servers"
-    If using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections to ports 8000 and 8501.
+    If using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections on port **8000**.
 
 ## Add Condor Telegram Interface
 
@@ -113,45 +141,3 @@ docker compose up -d
 4. Use `/config` → **Gateway** to enable DEX trading (optional)
 
 For detailed Condor usage, see [Condor Documentation](../condor/index.md).
-
-## Other Interfaces
-
-- **[MCP Server](../mcp/installation.md)** - Connect AI assistants (Claude, Gemini, ChatGPT) to control Hummingbot
-- **[Dashboard](../dashboard/index.md)** - Web interface (deprecated, use Condor instead)
-
-## Start Trading
-
-- **[Developer Guide](../hummingbot-api/quickstart.md)** - Use the REST API directly with curl or Python client
-
-## Troubleshooting
-
-### Check Container Status
-
-```bash
-docker compose ps
-```
-
-### View Logs
-
-```bash
-docker compose logs -f hummingbot-api
-```
-
-### Restart Services
-
-```bash
-docker compose down
-docker compose up -d
-```
-
-### Reset Installation
-
-To start fresh, remove all containers and volumes:
-
-```bash
-docker compose down -v
-./setup.sh
-```
-
-!!! warning "Deploy Repo Deprecated"
-    The [Deploy](https://github.com/hummingbot/deploy) repository is deprecated. Use Hummingbot API instead.
