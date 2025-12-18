@@ -57,13 +57,21 @@ hide:
 
 <div class="grid cards wide" markdown>
 
--   :octicons-rocket-16:{ .lg .middle } __Getting Started Guide__
+-   :octicons-terminal-16:{ .lg .middle } __Hummingbot Client Quickstart Guide__
 
     ---
 
-    The easiest way to start with Hummingbot is to use the **Hummingbot API** and **Dashboard**. This guide will walk you through the installation and setup process.
+    Install the **Hummingbot Client** locally using Docker. Best for learning Hummingbot and running a single bot instance.
 
-    [:octicons-arrow-right-24: Read the Installation Guide](./installation/index.md)
+    [:octicons-arrow-right-24: Hummingbot Client Quickstart](./installation/hummingbot-client.md)
+
+-   :octicons-rocket-16:{ .lg .middle } __Hummingbot API Quickstart Guide__
+
+    ---
+
+    Deploy **Hummingbot API** on a cloud server and control it with **Condor** (Telegram). Best for managing multiple bots in production.
+
+    [:octicons-arrow-right-24: Hummingbot API Quickstart](./installation/hummingbot-api.md)
 
 </div>
 
@@ -72,6 +80,35 @@ hide:
 # Hummingbot Github Repositories
 
 ### The Hummingbot framework contains multiple repositories that help you with various aspects of algorithmic trading. All code is open sourced under the Apache 2.0 license and supported by a vibrant global community of developers and traders.
+
+```mermaid
+graph TB
+    subgraph "User Interfaces"
+        CONDOR[Condor<br/>Telegram Bot]
+        MCP[MCP<br/>AI Agents]
+    end
+
+    subgraph "Server"
+        API[Hummingbot API]
+    end
+
+    subgraph "Core Components"
+        CLIENT[Hummingbot Client]
+        GATEWAY[Gateway]
+    end
+
+    subgraph "Research"
+        QUANTS[Quants Lab]
+        HBLIB[Hummingbot Library]
+    end
+
+    CONDOR --> API
+    MCP --> API
+    API --> CLIENT
+    API --> GATEWAY
+    CLIENT <--> GATEWAY
+    QUANTS --> HBLIB
+```
 
 <div class="grid cards wide" markdown>
 
@@ -83,13 +120,13 @@ hide:
 
     [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
 
--   :octicons-mark-github-16:{ .lg .middle } __Dashboard__
+-   :octicons-mark-github-16:{ .lg .middle } __Condor__
 
     ---
 
-    Web-based graphical interface for the Hummingbot API that lets you configure and deploy multiple Hummingbot instances.
+    Telegram bot for monitoring and controlling Hummingbot instances from mobile and desktop.
 
-    [:octicons-arrow-right-24: Documentation](./dashboard/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/dashboard)
+    [:octicons-arrow-right-24: Documentation](./condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
 
@@ -129,41 +166,45 @@ hide:
 
 # What Can You Build with Hummingbot?
 
+### Watch Botcamp students present their custom trading strategies built with Hummingbot:
+
 <div class="grid cards wide" markdown>
 
--   :material-format-paint:{ .lg .middle } __Run Professional Trading Strategies__
+-   :material-chart-line:{ .lg .middle } __TradingView Webhook Strategy__
 
     ---
 
-    Users run or extend professional strategies such as market making, arbitrage, and directional trading using the modular strategy framework
+    <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/AtNbnrZ5VFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    [:octicons-arrow-right-24: Strategy Docs](./strategies/index.md)
+    [:octicons-arrow-right-24: View Strategy](https://www.botcamp.xyz/strategies/cohort-12-tradingviewhummingbot-webhook-trading-strategy)
 
--   :material-upload-network:{ .lg .middle } __Connect Your Exchange to Hummingbot__
-
-    ---
-
-    Exchanges can integrate with Hummingbot's 40,000+ trading community through our bounty-driven connector development program.
-
-    [:octicons-arrow-right-24: Connector Bounties](./bounties/index.md)
-
--   :material-satellite-uplink:{ .lg .middle } __Manage and Deploy with Ease__
+-   :material-chart-line:{ .lg .middle } __Memecoin Algorithmic Trading Strategy__
 
     ---
 
-    Deploy and manage multiple bot instances easily using Hummingbot API, a command center for all your algo trading operations.
+    <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/QlPPU26QMYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    [:octicons-arrow-right-24: Hummingbot API Docs](./hummingbot-api/index.md)
+    [:octicons-arrow-right-24: View Strategy](https://www.botcamp.xyz/strategies/cohort-11-leader-follower-directional-divergence)
 
--   :material-flask:{ .lg .middle } __Fetch Market Data and Backtest__
+-   :material-chart-line:{ .lg .middle } __Solana DEX Dynamic Rebalancing Strategy__
 
     ---
 
-    Use Quants Lab for quantitative trading research, data collection, backtesting, and automated task scheduling.
+    <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/s6FcUU-p7a8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    [:octicons-arrow-right-24: Quants Lab Docs](./quants-lab/index.md)
+    [:octicons-arrow-right-24: View Strategy](https://www.botcamp.xyz/strategies/cohort-9-shamu-dynamic-clmm-strategy-on-orca)
+
+-   :material-chart-line:{ .lg .middle } __Binance Futures Liquidation Sniper__
+
+    ---
+
+    <iframe style="width:100%; min-height:200px;" src="https://www.youtube.com/embed/pFERDd7OC0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    [:octicons-arrow-right-24: View Strategy](https://www.botcamp.xyz/strategies/cohort-7-liquidation-sniper)
 
 </div>
+
+[:octicons-mortar-board-16: Learn More at Botcamp](https://botcamp.xyz){ .md-button .md-button--primary }
 
 ---
 

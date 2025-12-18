@@ -35,6 +35,10 @@ The Hummingbot ecosystem consists of several repositories that work together to 
 │                         Quants Lab                              │
 │        Standalone research environment for backtesting,         │
 │             data collection, and strategy analysis              │
+│                               │                                 │
+│                               ▼                                 │
+│                      Hummingbot Library                         │
+│          Python package for data and backtesting tools          │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
