@@ -72,11 +72,11 @@ The goal is to create a streamlined governance system that empowers the communit
 
 All major decisions that impact the Hummingbot Foundation and the open source Github repositories it maintains under [github.com/hummingbot](https://github.com/hummingbot), including but not limited to:
 
-- **Adding a connector** for a new CEX, DEX, or blockchain network (proposal must include a link to the pull request). Example: [NCP-19: Add Coinbase Advanced Trade Connector](https://snapshot.org/#/hbot-ncp.eth/proposal/0x01022a516c3536d015e21b28e90204a7dbc4a65b42c0e2d568847509f7531e6a)
-- **Funding a bounty** to improve the codebase - fixing bugs, adding connectors, adding strategies, etc (may be retroactive). Example: [HIP-51: Bounty to build Kraken Spot Connector](https://snapshot.org/#/hbot-ip.eth/proposal/0x750af518b682603bec2ca1ce597501d4bbad851eb9b8735da61efa4a50e0b2f4)
+- **Adding a connector** for a new CEX, DEX, or blockchain network (proposal must include a link to the pull request). Example: [NCP-25: Add Foxbit Exchange Connector](https://snapshot.org/#/hbot-ncp.eth/proposal/0x01022a516c3536d015e21b28e90204a7dbc4a65b42c0e2d568847509f7531e6a)
+- **Funding a bounty** to improve the codebase - fixing bugs, adding connectors, adding strategies, etc (may be retroactive). Example: [HIP-36: Bounty to Build OKX Perp connector](https://snapshot.org/#/hbot-ip.eth/proposal/0x750af518b682603bec2ca1ce597501d4bbad851eb9b8735da61efa4a50e0b2f4)
 - **Removing a connector** for an existing exchange or blockchain network
-- **Implementing programmatic $HBOT buy-backs** or other token-related initiatives. Example: [HGP-50: Implement Programmatic HBOT Buybacks](https://snapshot.org/#/hbot.eth/proposal/0xea307fdf9c8d6dd7e7d4a4b317d4fc04b03f8052eb32cdaa2ebe7c4e890cb7a9)
-- **Electing Board of Directors** annually. Example: [HGP-53: Elect 2024 Board of Directors](https://snapshot.org/#/hbot.eth/proposal/0x209bd5f5f02ae546ed10dab63d95c0681d2b0a555ad006534f6c616bbdbde142)
+- **Implementing programmatic $HBOT buy-backs** or other token-related initiatives.
+- **Electing Board of Directors** annually.
 
 | Parameter | Value |
 |-----------|-------|
