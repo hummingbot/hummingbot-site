@@ -1,7 +1,7 @@
 ---
 date: 2025-12-22
 authors:
-  - foundation
+  - mike
 categories:
   - Governance
 ---
@@ -10,7 +10,9 @@ categories:
 
 ![](cover.png)
 
-The vesting period for all HBOT token holders has now ended, including all CoinAlpha investors, Foundation team members, and CoinAlpha team members. At full vesting, circulating supply stands at 666,576,768 HBOT, with the Foundation holding the remaining 333.4M HBOT tokens in treasury. If you need to claim your tokens from the vesting contract, see [How to use your HBOT TokenVesting contract](https://hummingbot-foundation.notion.site/How-to-use-your-HBOT-TokenVesting-contract-1e653c0c510245a584b32f99ab347cd0).
+*By [Michael Feng](https://x.com/fengtality), co-founder of Hummingbot*
+
+The vesting period for all HBOT token holders has now ended, including all CoinAlpha investors, Foundation team members, and CoinAlpha team members. Fully vested, HBOT's circulating supply stands at 666,576,768 HBOT, with the Foundation holding the remaining 333.4M HBOT tokens in treasury. If you need to claim your tokens from the vesting contract, see [How to use your HBOT TokenVesting contract](https://hummingbot-foundation.notion.site/How-to-use-your-HBOT-TokenVesting-contract-1e653c0c510245a584b32f99ab347cd0).
 
 From the start, the Hummingbot Foundation's goal has been to create a sustainable open source project that earns revenues from exchanges and pays community maintainers to build and maintain connectors to their platforms, as outlined in the original [Hummingbot Foundation whitepaper](../../../about/whitepaper.md).
 
@@ -22,7 +24,7 @@ The Foundation's primary role is to coordinate the ongoing maintenance and impro
 
 ## The Long Journey to Financial Sustainability
 
-In [State of the Foundation 2024](../state-of-the-foundation-2024/index.md), we reported that the Foundation had not yet achieved financial sustainability, with net losses in both 2022 and 2023. However, our approach of keeping operational expenses low while improving the codebase to drive usage into exchange connectors is now bearing fruit.
+In [State of the Foundation 2024](../state-of-the-foundation-2024/index.md), I reported that the Foundation had not yet achieved financial sustainability, with net losses in both 2022 and 2023. However, our approach of keeping operational expenses low while improving the codebase to drive usage into exchange connectors is now bearing fruit.
 
 | End of Year | Total Revenues | Total Expenses | Net Income |
 |-------------|----------------|----------------|------------|
@@ -47,7 +49,7 @@ Currently, HBOT holders must navigate four different proposal types, each with t
 
 ![](governance-current.png)
 
-As shown above, we currently maintain:
+As shown above, the Foundation currently maintains:
 
 - **Pull Request Proposals (PRP)** - hbot-prp.eth
 - **New Connector Proposals (NCP)** - hbot-ncp.eth
@@ -66,7 +68,7 @@ The diagram below illustrates the proposed simplification, with elements being r
 
 ### 1. Consolidate to Single Proposal Type (HGP)
 
-The goal is to create a streamlined governance system that empowers the community to make key decisions efficiently. We propose eliminating PRPs, NCPs, and HIPs, leaving only **Hummingbot Governance Proposals (HGP)** as the single proposal type. All governance decisions would go through the main [hbot.eth](https://snapshot.org/#/hbot.eth) Snapshot space.
+The goal is to create a streamlined governance system that empowers the community to make key decisions efficiently. I propose eliminating PRPs, NCPs, and HIPs, leaving only **Hummingbot Governance Proposals (HGP)** as the single proposal type. All governance decisions would go through the main [hbot.eth](https://snapshot.org/#/hbot.eth) Snapshot space.
 
 All major decisions that impact the Hummingbot Foundation and the open source Github repositories it maintains under [github.com/hummingbot](https://github.com/hummingbot), including but not limited to:
 
@@ -141,6 +143,6 @@ The Board's main role would be approving an **annual budget** for Foundation ope
 
 ## Next Steps
 
-We will present these proposed changes at the next monthly community call and create a discussion thread in the **#proposals** channel on [Discord](https://discord.gg/hummingbot). Following the 2-day discussion period, the proposal will be created on Snapshot for voting.
+I will present these proposed changes at the next monthly community call and create a discussion thread in the **#proposals** channel on [Discord](https://discord.gg/hummingbot). Following the 2-day discussion period, the proposal will be created on Snapshot for voting.
 
-Our goal is to build an easy-to-use governance system that empowers HBOT holders to steer the direction of Hummingbot. If this proposal passes, the current system with 4 proposal types, 4 Snapshot spaces, and quarterly polls would be replaced by a single **Hummingbot Governance Proposal (HGP)** type. HBOT holders would have the power to add or remove exchange and blockchain connectors, fund bounties to improve the codebase, implement programmatic buy-backs and other token initiatives, and elect the Board of Directors who approve the Foundation's annual budget.
+My goal is to build an easy-to-use governance system that empowers HBOT holders to steer the direction of Hummingbot. If this proposal passes, the current system with 4 proposal types, 4 Snapshot spaces, and quarterly polls would be replaced by a single **Hummingbot Governance Proposal (HGP)** type. HBOT holders would have the power to add or remove exchange and blockchain connectors, fund bounties to improve the codebase, implement programmatic buy-backs and other token initiatives, and elect the Board of Directors who approve the Foundation's annual budget.
