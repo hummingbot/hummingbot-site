@@ -93,32 +93,17 @@ Monitor and manage all your Hummingbot trading bots.
 
 **Actions Available:**
 
-1. **View Bot**
-   - Select bot from list
-   - See all controllers and metrics
-   
-2. **View Controller**
-   - Click controller name
-   - See detailed performance
-   - View charts (Grid Strike only)
-   
-3. **Edit Controller** (Grid Strike)
-   - Click "📝 Edit"
-   - Modify parameters field-by-field
-   - Bulk edit with `key=value` format
-   
-4. **Stop/Start Controller**
-   - Quick stop from bot detail
-   - Start inactive controllers
-   
-5. **View Logs**
-   - Click "📝 Logs"
-   - See recent bot activity
-   - Refresh for updates
+- **View Bot**: Select bot from list to see all controllers and metrics
 
-6. **Stop Bot**
-   - Click "🛑 Stop Bot"
-   - Confirm to archive
+- **View Controller**: Click controller name to see detailed performance and view charts (Grid Strike only)
+
+- **Edit Controller** (Grid Strike): Click "📝 Edit" to modify parameters field-by-field or bulk edit with `key=value` format
+
+- **Stop/Start Controller**: Quick stop from bot detail or start inactive controllers
+
+- **View Logs**: Click "📝 Logs" to see recent bot activity and refresh for updates
+
+- **Stop Bot**: Click "🛑 Stop Bot" and confirm to archive
 
 #### Usage Examples
 
