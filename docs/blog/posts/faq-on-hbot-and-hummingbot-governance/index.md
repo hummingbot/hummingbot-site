@@ -53,7 +53,7 @@ In essence, acquiring HBOT tokens is an investment in the future trajectory of t
 
 **Voting on Polls and Proposals:**
 
-* **Connector Voting**: One of the primary utilities of the HBOT token is the ability to vote in quarterly [Polls](../../../about/polls.md) on which Centralized Exchanges (CEX), Decentralized Exchanges (DEX), and Chain Connectors are integrated and supported within the Hummingbot codebase. As the crypto landscape evolves, it's essential to keep the Hummingbot platform updated with the most demanded and relevant connectors. HBOT token holders can weigh in on this.
+* **Connector Voting**: One of the primary utilities of the HBOT token is the ability to vote on [Hummingbot Governance Proposals (HGP)](../../../about/proposals.md) that determine which Centralized Exchanges (CEX), Decentralized Exchanges (DEX), and Chain Connectors are integrated and supported within the Hummingbot codebase. As the crypto landscape evolves, it's essential to keep the Hummingbot platform updated with the most demanded and relevant connectors. HBOT token holders can weigh in on this.
 
 * **Governance System Parameters**: Apart from connectors, there are several other governance decisions to be made, such as bounty allocations for specific connectors and adjusting the connector inclusion thresholds. By holding HBOT, you can voice your opinions on these matters and help steer the ecosystem in a direction that best aligns with your preferences.
 

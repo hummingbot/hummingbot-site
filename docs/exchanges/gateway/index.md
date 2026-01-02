@@ -12,13 +12,13 @@ Like other connectors, Gateway DEX connectors require ongoing maintenance: fixin
 
 Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](../../bounties/index.md) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
 
-Each quarter, [Exchange Connector Polls](../../about/polls.md) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which [blockchains and networks](../../gateway/chains.md) that Gateway supports.
+The community can propose changes to connector maintenance, bounty allocations, and connector removals through [Hummingbot Governance Proposals (HGP)](../../about/proposals.md). This process also determines which [blockchains and networks](../../gateway/chains.md) that Gateway supports.
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
 ## Adding New Gateway DEX Connectors
 
-New Gateway connectors may be contributed by community members via [New Connector Proposals](../../about/proposals.md), which require a pull request with the connector code to the Hummingbot Gateway Github repo, along with a minimum HBOT balance along to create.
+New Gateway connectors may be contributed by community members via [Hummingbot Governance Proposals (HGP)](../../about/proposals.md), which require a pull request with the connector code to the Hummingbot Gateway Github repo, along with a minimum HBOT balance to create.
 
 If you're interested in contributing a new Gateway DEX connector, see the [DEX Connectors](../../gateway/connectors.md#adding-custom-connectors) documentation which provides guidance on implementing the standardized trading types and creating compatible connectors.
 
@@ -27,7 +27,7 @@ If you're interested in contributing a new Gateway DEX connector, see the [DEX C
 !!! note
     Gateway is currently undergoing a large multi-release codebase refactoring, approved in proposal [NCP-22](https://snapshot.box/#/s:hbot-ncp.eth/proposal/0x5cc3540ee219787d5c842bc1ccdb11aab46203bb7f0be658b6b40858501a8e4c). During this refactoring process, not all connectors are available in the new version, as they are being gradually migrated from the legacy architecture.
 
-Here are the Gateway connectors in the codebase for the current [Epoch](../../about/epochs.md).
+Here are the Gateway connectors currently in the codebase.
 
 | Exchange | Chain Type | Legacy | New | Connector Types | Guide |
 |----------|------------|--------|-----|----------------|-------|

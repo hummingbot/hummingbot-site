@@ -51,7 +51,7 @@ Here is an overview of the process to get a new connector merged into the codeba
 
 1. Fork the [Hummingbot](https://github.com/hummingbot/hummingbot) or [Gateway](https://github.com/hummingbot/gateway) repositories and add a `spot` or `perp` connector that fulfills the respective requirements above.
 2. Submit a pull request with the connector to the `development` branch in Github, following the [Contribution Guidelines](../../community/contributions.md).
-3. Submit a [New Connector Proposal](../../about/proposals.md) in the [Hummingbot NCP Snapshot](https://snapshot.org/#/hbot-ncp.eth)
+3. Submit a [Hummingbot Governance Proposal (HGP)](../../about/proposals.md) on [Snapshot](https://snapshot.org/#/hbot.eth)
 
 ## Additional Resources
 

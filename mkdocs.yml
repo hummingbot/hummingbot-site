@@ -173,6 +173,7 @@ nav:
       - Hummingbot Client Quickstart: installation/hummingbot-client.md
       - Hummingbot API Quickstart: installation/hummingbot-api.md
       - Updating to New Versions: installation/update.md
+      - Bot Orchestration: installation/broker.md
     - Guides:
       - Guides: guides/index.md
     - Strategies:
@@ -188,6 +189,9 @@ nav:
         - Candles: strategies/v2-strategies/candles/index.md
       - Controllers:
         - Controllers: strategies/v2-strategies/controllers/index.md
+        - Controller Walkthrough: strategies/v2-strategies/walkthrough-controller.md
+      - Examples:
+        - Examples: strategies/v2-strategies/examples/index.md
       - Executors: 
         - Executors: strategies/v2-strategies/executors/index.md   
         - Position Executor: strategies/v2-strategies/executors/positionexecutor.md
@@ -287,8 +291,7 @@ nav:
     - Condor:
       - Overview: condor/index.md
       - Installation: condor/installation.md
-      # - Commands: condor/commands.md
-      # - Usage Guide: condor/usage.md
+      - Commands: condor/commands.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
@@ -304,6 +307,7 @@ nav:
     - Quants Lab:
       - Quants Lab: quants-lab/index.md
     - FAQ: faq.md
+    - Troubleshooting: troubleshooting.md
     - Glossary: glossary/index.md
   - Exchanges:
     - Exchanges: exchanges/index.md
@@ -346,6 +350,7 @@ nav:
     - TraderJoe: exchanges/gateway/traderjoe.md
     - Uniswap : exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
+    - Gateway DEX: exchanges/gateway/index.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
     - Bounty Lifecycle: bounties/lifecycle.md
@@ -371,18 +376,19 @@ nav:
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
+    - Contribution Guidelines: community/contributions.md
     - Reward Programs: community/rewards.md
     - Certification: community/certification.md
     - Certifications List: community/list.md
     - Botcamp ↗️: https://www.botcamp.xyz
+    - Botcamp FAQ: botcamp/faq.md
   - Foundation:
     - Foundation: about/index.md
     - Board of Directors: about/board.md
+    - Sponsors: about/sponsors.md
     - HBOT Token: about/hbot.md
     - Governance: about/governance.md
-    - Polls: about/polls.md
     - Proposals: about/proposals.md
-    - Epochs: about/epochs.md
     - Whitepaper: about/whitepaper.md
   - Blog: 
     - blog/index.md

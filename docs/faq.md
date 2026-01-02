@@ -77,7 +77,7 @@ There is no minimum amount of assets to use Hummingbot, but users should pay hee
 * Manages interactions with node providers, and
 * Utilizes Javascript-based DEX SDKs
 
-Similar to Hummingbot client, Gateway is open source under the Apache 2.0 license. Community developers can contribute DEX and blockchain connectors to the Gateway codebase via [Pull Request Proposals](./about/proposals.md).
+Similar to Hummingbot client, Gateway is open source under the Apache 2.0 license. Community developers can contribute DEX and blockchain connectors to the Gateway codebase via [Hummingbot Governance Proposals (HGP)](./about/proposals.md).
 
 ### How do I use Gateway with Hummingbot?
 
@@ -225,7 +225,7 @@ Please see Reputable Sources for information about venues where HBOT may be trad
 
 ### How does the Foundation plan to distribute remaining HBOT tokens?
 
-The Foundation plans to distribute the remaining 36 million tokens (36% of total supply) to Hummingbot users over the 4 years after inception across fixed [Epochs](./about/epochs.md). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
+The Foundation plans to distribute the remaining tokens to Hummingbot users through [governance-approved proposals](./about/proposals.md). The goal is to distribute tokens to developers who contribute improvements to the codebase, and users of the Hummingbot software on connected exchanges and market making platforms.
 
 See [Hummingbot Governance Proposals](./about/proposals.md) for more information on the categories of HBOT grants.
 

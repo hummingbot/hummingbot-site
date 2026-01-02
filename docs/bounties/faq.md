@@ -35,8 +35,7 @@ Full refund guarantee if:
 
 - Bug identification and fixes via bounty system
 - API update compatibility
-- New Connector Proposal governance
-- Quarterly Snapshot voting participation
+- Governance Proposal support for connector management
 - Marketing support and documentation
 
 ### How does payment work?
@@ -143,12 +142,13 @@ Foundation reviews for:
 
 ## Governance Questions
 
-### How does NCP approval work?
+### How does HGP approval work?
 
-1. A New Connector Proposal is created
-2. 7 days Snapshot voting
-3. Requires >50% approval with sufficient HBOT quorum
-4. Foundation manages entire process for Bounty Management clients
+1. Discussion starts in Discord #proposals channel (2+ days)
+2. Hummingbot Governance Proposal (HGP) is created on Snapshot
+3. 3-day voting period
+4. Requires >50% approval with 5,000,000 HBOT quorum
+5. Foundation manages entire process for Bounty Management clients
 
 ### What happens after governance approval?
 

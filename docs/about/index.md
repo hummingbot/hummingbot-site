@@ -26,7 +26,7 @@ Today, Hummingbot is a bazaar-style open source project with many contributors a
 The Foundation maintain a lean, globally-distributed team who handle the day-to-day operations of maintaining the Hummingbot codebase and the Foundation governance system, such as:
 
 * Reviewing and merging pull requests
-* Administering monthly polls and elections
+* Administering governance proposals and elections
 * Maintaining the Snapshot voting system
 * Managing the Discord server
 * Assigning and managing developer bounties

@@ -1,9 +1,7 @@
 # Hummingbot Foundation Governance
 
 !!! note
-    See [State of the Foundation 2024](../blog/posts/state-of-the-foundation-2024/index.md) for an update to this whitepaper.
-
-*Originally posted on December 17, 2021*
+    This whitepaper was originally posted on December 17, 2021. See [State of the Foundation 2024](../blog/posts/state-of-the-foundation-2024/index.md) for a prior update. As of January 2, 2025, the governance system has been simplified - see [Proposals](proposals.md) for the current governance process.
 
 ## Overview
 The Hummingbot Foundation (the “Foundation”) is a not-for-profit organization established in the Cayman Islands. The Foundation’s mission is to democratize high-frequency trading by enabling decentralized maintenance and community governance over the open-source Hummingbot code repository.
@@ -26,7 +24,7 @@ The Hummingbot Foundation’s primary role is to coordinate the ongoing maintena
 
 ![](./flywheel.png)
 
-* **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. [Polls](polls.md) define the level of maintenance that the Foundation spends on each connector.
+* **Exchanges** are centralized or decentralized exchanges, blockchain protocols, other other organizations who enter into fee share and/or other referral agreements with Hummingbot Foundation based on user trading volume. [Proposals](proposals.md) define the level of maintenance that the Foundation spends on each connector.
 
 * **Contributors** are individual developers and firms that build and maintain Hummingbot components. Contributors submit their work as pull requests to the official Github repository, and they are paid [bounties](../bounties/index.md) when that work has been merged and included in an official release. Bounties may be funded by either Hummingbot Foundation or other community members.
 

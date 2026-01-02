@@ -63,7 +63,7 @@ Like other connectors, Gateway DEX connectors require ongoing maintenance: fixin
 
 Hummingbot Foundation maintains certain reference connectors as the standard and utilizes a community-based maintenance process. We assign [Bounties](../bounties/index.md) to community developers to upgrade and fix bugs for each exchange's connectors in the codebase.
 
-Each quarter, [Exchange Connector Polls](../about/polls.md) allocates HBOT bounties toward the top CEX connectors and determines which exchange connectors should be included in the codebase going forward. This process also determines which blockchains and networks that Gateway supports.
+The community can propose changes to connector maintenance, bounty allocations, and connector removals through [Hummingbot Governance Proposals (HGP)](../about/proposals.md). This process also determines which blockchains and networks that Gateway supports.
 
 See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreadsheets/d/1UNAumPMnXfsghAAXrfKkPGRH9QlC8k7Cu1FGQVL1t0M/edit?usp=sharing) for the current allocations for each exchange.
 
@@ -75,7 +75,7 @@ Gateway is part of the open source Hummingbot project. Ways to contribute:
 - **File issues**: Report bugs at [GitHub Issues](https://github.com/hummingbot/gateway/issues)
 - **Submit pull requests**: Contribute code at [GitHub](https://github.com/hummingbot/gateway/pulls)
 - **Edit documentation**: Improve docs at [GitHub](https://github.com/hummingbot/hummingbot-site/)
-- **Vote in polls**: Participate in [polls](https://snapshot.org/#/hbot.eth) to vote on which DEXs are supported
+- **Vote on proposals**: Participate in [governance proposals](https://snapshot.org/#/hbot.eth) to vote on which DEXs are supported
 
 ## History
 
