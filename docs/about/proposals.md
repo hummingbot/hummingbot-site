@@ -66,31 +66,31 @@ To be considered valid, an HGP should contain the following fields:
 
 ## Common Proposal Types
 
-### Code Changes
+### Adding Connectors
 
-For pull requests to the Hummingbot codebase:
+For adding new exchange or blockchain connectors to the codebase:
 
-* Link to the pull request with a detailed explanation of the changes
+* Include a link to the pull request with the connector code
+* Explain why this connector benefits the Hummingbot community
 * The Foundation will conduct a technical code review and security audit before merging
 * New connectors should include unit test coverage
 
-### Bounties
+### Removing Connectors
 
-For proposing development bounties:
+For removing existing connectors from the codebase:
+
+* Explain the rationale for removal (e.g., low usage, maintenance burden, security concerns, exchange shutdown)
+* The Foundation will remove the connector in the next release if approved
+
+### Proposing HBOT Bounties
+
+For proposing development bounties funded with HBOT:
 
 * Describe the improvement or feature needed
 * Specify the proposed HBOT bounty amount
 * Optionally name a specific developer to assign the bounty to
 * If no developer is named, the Foundation will publicize the bounty to the community
 
-### Connector Management
-
-For adding or removing connectors from the codebase:
-
-* Explain why the connector should be added or removed
-* For additions, include a link to the pull request with the connector code
-* For removals, explain the rationale (e.g., low usage, maintenance burden, security concerns)
-
-### Board Elections
+### Electing Board of Directors
 
 The Foundation conducts annual Board of Directors elections via HGP. See [Board of Directors](board.md) for details on the election process.
