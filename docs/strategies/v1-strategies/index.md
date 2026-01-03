@@ -11,7 +11,7 @@ Strategies utilize the standardized trading interfaces exposed by exchange and p
 
 ## List of V1 Strategies
 
-Strategies have passed the Minimum Voting Power Threshold in the latest Poll and are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
+These strategies are included in each monthly release. They are not maintained by Hummingbot Foundation but may be maintained by a community member.
 
 | Strategy                                                      | Description |
 |---------------------------------------------------------------|-------------|

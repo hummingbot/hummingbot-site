@@ -56,7 +56,7 @@ As shown above, the Foundation currently maintains:
 - **Improvement Proposals (HIP)** - hbot-ip.eth
 - **Governance Proposals (HGP)** - hbot.eth
 
-In addition, HBOT holders are expected to participate in quarterly [Polls](../../../about/polls.md) to determine which connectors are included in the codebase. Each quarter, there are three separate polls (CLOB CEX, CLOB DEX, and Gateway DEX), each lasting 14 days.
+In addition, HBOT holders are expected to participate in quarterly Polls to determine which connectors are included in the codebase. Each quarter, there are three separate polls (CLOB CEX, CLOB DEX, and Gateway DEX), each lasting 14 days.
 
 This fragmentation creates overhead for voters, makes governance harder to follow, and dilutes participation across multiple spaces.
 

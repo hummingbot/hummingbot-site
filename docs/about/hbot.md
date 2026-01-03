@@ -48,16 +48,9 @@ The HBOT token can be traded across multiple decentralized and centralized excha
 
 ## Voting with HBOT
 
-HBOT token holders can create and vote on various types of [Proposals](./proposals.md) to allocate HBOT bounties toward maintenance of various components in the Hummingbot codebase.
+HBOT token holders can create and vote on [Hummingbot Governance Proposals (HGP)](./proposals.md) to approve pull requests, allocate HBOT bounties, manage connectors, and make other governance decisions.
 
-All **proposal voting** occur on the offical Hummingbot [Snapshot](https://snapshot.org/#/hbot.eth), which features an off-chain, gas-less voting system that allows you to vote by signing messages using your HBOT token balance as of a certain block.
-
-Below are the respective Snapshots for each proposal type:
-
-* Hummingbot Governance Proposals: <https://snapshot.org/#/hbot.eth>
-* Hummingbot Improvement Proposals: <https://snapshot.org/#/hbot-ip.eth>
-* New Connector Proposals: <https://snapshot.org/#/hbot-ncp.eth>
-* Pull Request Proposals: <https://snapshot.org/#/hbot-prp.eth>
+All **proposal voting** occurs on the official Hummingbot [Snapshot](https://snapshot.org/#/hbot.eth), which features an off-chain, gas-less voting system that allows you to vote by signing messages using your HBOT token balance as of a certain block.
 
 <a href="https://snapshot.org/#/hbot.eth" target="_blank" class="md-button md-button--primary">Vote with HBOT</a>
 

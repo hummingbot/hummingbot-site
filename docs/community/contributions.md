@@ -76,15 +76,15 @@ If the development team requests changes, you should make more commits to your b
 
 Once you get back here, make a comment requesting a further review, and someone will look at your code again. If it addresses the requests, it will get merged. Else, repeat the process.
 
-### **7. Create a proposal in Snapshot ⚡️**
+### **7. Create a proposal in Snapshot**
 
-If you want your contribution to be reviewed, merged into the official Hummingbot codebase and included in ongoing monthly releases, you need to get a [Proposal](../about/proposals.md) approved.
+If you want your contribution to be reviewed, merged into the official Hummingbot codebase and included in ongoing monthly releases, you need to get a [Hummingbot Governance Proposal (HGP)](../about/proposals.md) approved.
 
-Create a new proposal in the appropriate Snapshot sub-space following the instructions on the Proposals page. Make sure that you have at least 200,000 HBOT to create a New Connector Proposal, or 1 HBOT for a Pull Request Proposal. The voting period is 7 days and the HBOT holders will decide if your proposal will be accepted or rejected.
+Create a new proposal on the [hbot.eth Snapshot space](https://snapshot.org/#/hbot.eth) following the instructions on the Proposals page. You'll need at least 200,000 HBOT to create a proposal. Start a discussion in the #proposals channel on Discord for at least 2 days before creating the Snapshot vote. The voting period is 3 days and HBOT holders will decide if your proposal will be accepted or rejected.
 
 ### **8. Code review**
 
-Once the PRP is approved, your code will be tested by the QA team and if pass all the test Tech Review DAO will review the code.
+Once the proposal is approved, your code will be tested by the QA team and reviewed for technical quality.
 
 Fix any changes requested by your reviewer, fix issues raised by a tester, and push your fixes as a single new commit.
 

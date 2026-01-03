@@ -34,15 +34,15 @@ You can choose from three integration options to get an official Hummingbot conn
 
 | Option | Cost | Features |
 |--------|------|----------|
-| **🔧 DIY Governance** | Free | • Build your own connector<br>• Submit New Connector Proposal<br>• Self-maintenance required |
+| **🔧 DIY Governance** | Free | • Build your own connector<br>• Submit Governance Proposal<br>• Self-maintenance required |
 | **💎 Bounty Management** | $10,000 | • Professional bounty oversight<br>• 1 year maintenance included<br>• Foundation manages process |
 | **🏆 Sponsor Foundation** | $50,000+ | • Comprehensive partnership<br>• Priority development<br>• Custom features |
 
 ### 🔧 DIY Governance
 
-Build your own connector following other connectors in the `development` branch of Hummingbot's open source framework. Then, create a [New Connector Proposal](../about/proposals.md) along with a valid, comprehensive pull request containing the connector code. 
+Build your own connector following other connectors in the `development` branch of Hummingbot's open source framework. Then, create a [Hummingbot Governance Proposal (HGP)](../about/proposals.md) along with a valid, comprehensive pull request containing the connector code. 
 
-You'll need some [HBOT tokens](../about/governance.md) to create a proposal, and you'll be responsible for ongoing maintenance updates and periodic voting to keep your connector included in ongoing releases of Hummingbot.
+You'll need some [HBOT tokens](../about/governance.md) to create a proposal, and you'll be responsible for ongoing maintenance updates to keep your connector included in ongoing releases of Hummingbot.
 
 ### 💎 Bounty Management
 
@@ -82,19 +82,16 @@ Exchanges supporting open-source development through revenue sharing:
 
 ## Exchange Governance
 
-Hummingbot uses a transparent, community-driven governance process that lets [HBOT] holders decide which exchanges the codebase should support:
+Hummingbot uses a transparent, community-driven governance process that lets HBOT holders decide which exchanges the codebase should support:
 
-### New Connector Proposals (NCPs)
-- Exchanges can propose new connectors
-- Community votes on inclusion
-- Requires 200,000 HBOT stake
-- 7-day voting period
+### Hummingbot Governance Proposals (HGP)
 
-### Quarterly Connector Polls
-- Community votes on which exchanges to support
-- Allocates maintenance resources
-- Limits number of exchanges by type
-- Removes inactive connectors
+All governance decisions flow through a unified proposal system:
+
+- **New connectors**: Propose adding new exchange connectors
+- **Connector management**: Propose bounty allocations or connector removals
+- **Requires 200,000 HBOT**: Minimum balance to create a proposal
+- **5-day process**: 2+ day discussion, 3-day voting period
 
 [Learn About Governance →](../about/governance.md){: .md-button }
 
