@@ -343,6 +343,7 @@ nav:
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
+    - Pacifica: exchanges/pacifica/index.md
     - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
     - Quickswap: exchanges/gateway/quickswap.md
