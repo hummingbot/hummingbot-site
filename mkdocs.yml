@@ -290,8 +290,6 @@ nav:
       - API Routers: hummingbot-api/routers.md
     - Condor:
       - Overview: condor/index.md
-      - Installation: condor/installation.md
-      - Commands: condor/commands.md
     - Hummingbot MCP:
       - Overview: mcp/index.md
       - Installation: mcp/installation.md
@@ -360,6 +358,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.12.0: release-notes/2.12.0.md
     - 2.11.0: release-notes/2.11.0.md
     - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md

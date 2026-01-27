@@ -84,7 +84,7 @@ hide:
 ```mermaid
 graph TB
     subgraph "User Interfaces"
-        CONDOR[Condor<br/>Telegram Bot]
+        CONDOR[Condor]
         MCP[MCP<br/>AI Agents]
     end
 
@@ -97,17 +97,11 @@ graph TB
         GATEWAY[Gateway]
     end
 
-    subgraph "Research"
-        QUANTS[Quants Lab]
-        HBLIB[Hummingbot Library]
-    end
-
     CONDOR --> API
     MCP --> API
     API --> CLIENT
     API --> GATEWAY
     CLIENT <--> GATEWAY
-    QUANTS --> HBLIB
 ```
 
 <div class="grid cards wide" markdown>

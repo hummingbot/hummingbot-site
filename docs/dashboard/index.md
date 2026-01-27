@@ -1,13 +1,13 @@
 ## Overview
 
+!!! warning "Deprecation Notice"
+    A new browser-based dashboard built on the [Condor](../condor/index.md) architecture will replace this Streamlit-based dashboard. The new version will provide a modern web interface with the same functionality as the Condor Telegram bot.
+
 [Hummingbot Dashboard](https://github.com/hummingbot/dashboard) is an open-source graphical interface designed to help users manage their portfolios across multiple exchanges, configure and backtest strategies, and deploy and manage multiple Hummingbot instances efficiently.
 
 Starting with v2.7.0, Dashboard is powered by the new [Hummingbot API](../hummingbot-api/index.md) and [Hummingbot API Client](https://github.com/hummingbot/hummingbot-api-client), providing a robust and scalable architecture for managing trading operations at scale.
 
 Dashboard simplifies bot management and is fully compatible with [Controllers](../strategies/v2-strategies/controllers/index.md), allowing users to configure and backtest strategies before deploying them live.
-
-!!! note "Documentation Update"
-    All dashboard pages have been updated to work with the new API architecture. Detailed documentation for each page will be added soon.
 
 ## Highlights
 

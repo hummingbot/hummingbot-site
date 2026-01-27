@@ -17,53 +17,7 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 
 ## Quick Start (Docker - Recommended)
 
-Clone the repository and run the setup script:
-
-```bash
-git clone https://github.com/hummingbot/hummingbot-api.git
-cd hummingbot-api
-make setup
-make deploy
-```
-
-### Setup Process
-
-The script will prompt you for:
-
-**Credentials** (required):
-   - Config password (for encrypting bot credentials)
-   - API username and password
-
-### What Gets Installed
-
-**Core services** (always installed):
-
-- ✅ **Hummingbot API** (port 8000) - REST API backend
-- ✅ **PostgreSQL** - Database for trading data
-- ✅ **EMQX** - Message broker for real-time communication
-- ✅ **Swagger UI** (port 8000/docs) - API documentation
-
-
-### After Setup
-
-**1. Access Swagger UI** (Default)
-
-The API documentation is immediately available:
-
-- URL: <http://localhost:8000/docs>
-- Use the username/password you configured
-- Test all API endpoints directly
-
-**2. Connect AI Assistant** (Optional)
-
-After setup, you can connect AI assistants to control Hummingbot with natural language.
-
-See the **[MCP Installation Guide](../mcp/installation.md)** for complete instructions on connecting:
-
-- **Claude Code** (recommended) - One-line CLI setup
-- **Gemini CLI** - Google's AI terminal agent
-- **Codex CLI** - OpenAI's coding assistant
-- **Claude Desktop** - GUI application
+See the [Hummingbot API Quickstart](../installation/hummingbot-api.md) for step-by-step installation instructions, including cloud server setup and Condor configuration.
 
 
 ## Install from Source (for Developers)

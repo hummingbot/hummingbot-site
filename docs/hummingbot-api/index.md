@@ -11,13 +11,9 @@ A comprehensive RESTful API framework for managing trading operations across mul
 
 ## Getting Started
 
-- **[Installation Guide](installation.md)** - Complete installation instructions for Docker and source installation
-- **[Developer Guide](quickstart.md)** - Learn how to:
-    - Add exchange credentials
-    - View portfolio balances
-    - Place your first market order
-
-The guides include Docker setup and Python API client examples to get you trading in minutes.
+- **[Quickstart](../installation/hummingbot-api.md)** - One-line install to get Hummingbot API running with Condor
+- **[Developer Guide](quickstart.md)** - Learn how to use the API directly with curl or Python to add credentials, view portfolios, and place orders
+- **[Source Installation](installation.md)** - For developers who want to modify the codebase
 
 ## What is Hummingbot API?
 
@@ -103,7 +99,7 @@ For new users, we strongly recommend using **Condor** for a mobile-friendly Tele
   - Real-time notifications and alerts
   - Quick commands for common operations
   - No web browser required
-- **Setup**: See [Condor Installation](../condor/installation.md)
+- **Setup**: See [Hummingbot API Quickstart](../installation/hummingbot-api.md#add-condor-telegram-interface)
 - **Access**: Your personal Telegram bot
 
 ### 2. 🔧 Swagger UI - API Documentation
