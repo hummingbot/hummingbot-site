@@ -44,15 +44,15 @@ The Hummingbot ecosystem consists of several repositories that work together to 
 
 ## Repository Overview
 
-| Repository | Description | Installation | Quickstart |
-|------------|-------------|--------------|------------|
-| [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [Installation](../hummingbot-api/installation.md) | [Quickstart](./hummingbot-api.md) |
-| [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Installation](../client/installation.md) | [Quickstart](./hummingbot-client.md) |
-| [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | [Installation](../gateway/installation.md) | - |
-| [**Condor**](https://github.com/hummingbot/condor) | Telegram bot for monitoring and controlling Hummingbot instances | [Installation](../condor/installation.md) | - |
-| [**MCP Server**](https://github.com/hummingbot/mcp) | Connects AI assistants (Claude, Gemini, ChatGPT) to Hummingbot | [Installation](../mcp/installation.md) | - |
-| [**Dashboard**](https://github.com/hummingbot/dashboard) | Web-based UI for bot management (deprecated, use Condor) | [GitHub](https://github.com/hummingbot/dashboard) | [Quickstart](../blog/posts/quickstart-dashboard/index.md) |
-| [**Quants Lab**](https://github.com/hummingbot/quants-lab) | Research environment for backtesting and strategy analysis | [GitHub](https://github.com/hummingbot/quants-lab) | - |
+| Repository | Description | Quickstart | Source Install |
+|------------|-------------|------------|----------------|
+| [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [Quickstart](./hummingbot-api.md) | [Source](../hummingbot-api/installation.md) |
+| [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Quickstart](./hummingbot-client.md) | [Source](../client/installation.md) |
+| [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | - | [Installation](../gateway/installation.md) |
+| [**Condor**](https://github.com/hummingbot/condor) | Telegram bot for monitoring and controlling Hummingbot instances | [via API Quickstart](./hummingbot-api.md) | [Source](../condor/installation.md) |
+| [**MCP Server**](https://github.com/hummingbot/mcp) | Connects AI assistants (Claude, Gemini, ChatGPT) to Hummingbot | - | [Installation](../mcp/installation.md) |
+| [**Dashboard**](https://github.com/hummingbot/dashboard) | Web-based UI for bot management (deprecated, use Condor) | - | [GitHub](https://github.com/hummingbot/dashboard) |
+| [**Quants Lab**](https://github.com/hummingbot/quants-lab) | Research environment for backtesting and strategy analysis | - | [GitHub](https://github.com/hummingbot/quants-lab) |
 
 ## Recommended Paths
 

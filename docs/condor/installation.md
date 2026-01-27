@@ -2,47 +2,9 @@
 
 This guide outlines the steps to install and deploy Condor.
 
-!!! tip "Important"
-    **Docker is the recommended installation method** for most users as it handles all dependencies automatically. The Source/Conda method is intended for developers or advanced users who need to modify the code.
-
-
-## ✅ Prerequisites
-
-Before you begin, ensure you have the following ready:
-
-*   **Docker** & **Docker Compose** (for Docker method).
-*   **Python 3.11+** & **Conda** (for Source method).
-*   A running **Hummingbot API** instance.
-*   A **Telegram Bot Token** from [@BotFather](https://t.me/botfather).
-
 ## 🐳 Option 1: Docker (Recommended)
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/hummingbot/condor.git
-cd condor
-```
-
-### 2. Configure Environment
-
-Run the setup script to generate your `.env` file.
-
-```bash
-./setup-environment.sh
-```
-
-**Required Inputs:**
-
-*   `TELEGRAM_TOKEN`: Your bot token.
-
-*   `AUTHORIZED_USERS`: Comma-separated list of allowed Telegram User IDs (e.g., `123456789,987654321`).
-
-### 3. Launch Condor
-
-```bash
-docker compose up -d
-```
+The easiest way to install Condor is via the [Hummingbot API Quickstart](../installation/hummingbot-api.md), which installs both Hummingbot API and Condor together.
 
 ## 🐍 Option 2: Source (Developers)
 

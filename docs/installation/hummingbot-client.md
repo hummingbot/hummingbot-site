@@ -45,13 +45,14 @@ git clone https://github.com/hummingbot/hummingbot.git
 cd hummingbot
 ```
 
-## Step 2: Start Hummingbot
+## Step 2: Setup and Deploy
 
 ```bash
-docker compose up -d
+make setup
+make deploy
 ```
 
-This downloads the latest Hummingbot image and starts it in the background.
+The `make setup` command configures your environment (and optionally enables Gateway for DEX trading). The `make deploy` command downloads the latest Hummingbot image and starts it in the background.
 
 ## Step 3: Attach to Hummingbot
 
@@ -173,6 +174,22 @@ After setting your password, you should see **Gateway: ONLINE** in the upper rig
 - [Create a Strategy](../strategies/index.md) - Start trading
 - [Updating to New Versions](./update.md) - Keep your installation current
 
+## Source Installation
+
+For developers or users who prefer running from source, use the refactored Makefile commands:
+
+```bash
+git clone https://github.com/hummingbot/hummingbot.git
+cd hummingbot
+make install
+make run
+```
+
+* `make install` creates and configures the conda environment
+* `make run` starts the Hummingbot client (supports same arguments as the old `./start` script, e.g., `make run -p -f strategy.yml`)
+
+For detailed source installation options, see [Client Installation](../client/installation.md).
+
 ## Need More Options?
 
-For source installation, development setup, or advanced configuration, see the detailed [Client Installation](../client/installation.md) page.
+For development setup or advanced configuration, see the detailed [Client Installation](../client/installation.md) page.

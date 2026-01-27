@@ -15,7 +15,7 @@ This setup is best for managing multiple bot instances on a cloud server (AWS, D
 
 ## Prerequisites
 
-Hummingbot API is designed to run on a Linux-based cloud server for 24/7 operation. We recommend using a VPS from providers like AWS, Google Cloud, or Digital Ocean.
+Hummingbot API can be installed on any Mac or Linux-based system. For long-running bot operation, we recommend deploying to a cloud server (AWS, Google Cloud, Digital Ocean, etc.) for 24/7 uptime.
 
 ### System Requirements
 
@@ -65,24 +65,32 @@ sh get-docker.sh
 
 ## Installation
 
-Clone the repository and run the setup script:
+=== "One-Line Install (Recommended)"
 
-```bash
-git clone https://github.com/hummingbot/hummingbot-api.git
-cd hummingbot-api
-chmod +x setup.sh
-./setup.sh
-```
+    Run this single command to install Hummingbot API:
+
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/main/setup.sh | bash -s -- --api
+    ```
+
+    This will clone the repository, prompt you for credentials, and start all services automatically.
+
+=== "Manual Install"
+
+    Clone the repository, run the setup script, and deploy:
+
+    ```bash
+    git clone https://github.com/hummingbot/hummingbot-api.git
+    cd hummingbot-api
+    ./setup.sh
+    make deploy
+    ```
 
 The setup script will:
 
-Prompt you for credentials (default: `admin`/`admin`)
-
-Start all services
-
-```bash
-make deploy
-```
+1. Prompt you for API credentials (default: `admin`/`admin`)
+2. Generate the `.env` configuration file
+3. Start all services via Docker Compose
 
 ## Access Your Platform
 
