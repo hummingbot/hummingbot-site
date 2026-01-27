@@ -275,7 +275,7 @@ nav:
       - Rate Limits: client/global-configs/rate-limits-share-pct.md
       # - Telegram Integration: global-configs/telegram.md
     - Gateway DEX Middleware:
-      - Overview: gateway/index.md
+      - Gateway DEX Middleware: gateway/index.md
       - Installation & Setup: gateway/installation.md
       - Configuration: gateway/configuration.md
       - Commands: gateway/commands.md
@@ -284,16 +284,16 @@ nav:
       - RPC Providers: gateway/rpc.md
       - Strategies & Snippets: gateway/strategies.md
     - Hummingbot API: 
-      - Overview: hummingbot-api/index.md
+      - Hummingbot API: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Developer Guide: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
-    - Condor:
-      - Overview: condor/index.md
     - Hummingbot MCP:
-      - Overview: mcp/index.md
+      - Hummingbot MCP: mcp/index.md
       - Installation: mcp/installation.md
       - Tools Reference: mcp/tools.md
+    - Condor:
+      - Condor: condor/index.md
     - Dashboard:
       - Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
