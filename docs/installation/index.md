@@ -46,6 +46,7 @@ The Hummingbot ecosystem consists of several repositories that work together to 
 
 | Repository | Description | Quickstart | Source Install |
 |------------|-------------|------------|----------------|
+| [**Deploy**](https://github.com/hummingbot/deploy) | One-line installation scripts for Hummingbot components | [Deploy Guide](./deploy.md) | - |
 | [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [Quickstart](./hummingbot-api.md) | [Source](../hummingbot-api/installation.md) |
 | [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Quickstart](./hummingbot-client.md) | [Source](../client/installation.md) |
 | [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | - | [Installation](../gateway/installation.md) |
