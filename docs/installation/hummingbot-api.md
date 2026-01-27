@@ -292,9 +292,6 @@ See the [MCP Installation Guide](../mcp/installation.md) for setup instructions.
 
 Access the interactive API documentation at <http://localhost:8000/docs> to explore and test all available endpoints directly in your browser.
 
-!!! note "Cloud Servers"
-    If using a cloud server or VPS, replace `localhost` with your server's IP address. Configure firewall rules to allow inbound connections on port **8000**.
-
 ## Troubleshooting
 
 ### Docker Not Running

@@ -86,48 +86,33 @@ graph TB
 - **Bot Instances**: Individual Hummingbot containers connected to different exchanges
 - **Docker Management**: Orchestrates multiple Hummingbot container instances
 
-## 🎯 Ways to Interact with Hummingbot API
+## Ways to Interact with Hummingbot API
 
 For new users, we strongly recommend using **Condor** for a mobile-friendly Telegram experience. For developers and advanced users, the **Swagger UI** and **MCP** provide more direct access to the API.
 
-### 1. 📱 Condor - Telegram Interface (Recommended for New Users)
-**Mobile and desktop control via Telegram**
+### Condor
+
+Mobile and desktop control via Telegram.
 
 - **Best for**: Users who want to monitor and control bots on the go
-- **Advantages**:
-  - Access from any device with Telegram
-  - Real-time notifications and alerts
-  - Quick commands for common operations
-  - No web browser required
-- **Setup**: See [Hummingbot API Quickstart](../installation/hummingbot-api.md#add-condor-telegram-interface)
-- **Access**: Your personal Telegram bot
+- **Advantages**: Access from any device with Telegram, real-time notifications, quick commands for common operations
+- **Setup**: See [Hummingbot API Quickstart](../installation/hummingbot-api.md)
 
-### 2. 🔧 Swagger UI - API Documentation
-**Interactive REST API documentation and testing**
+### Swagger UI
+
+Interactive REST API documentation and testing.
 
 - **Best for**: Developers and power users who want full control
-- **Advantages**:
-  - Complete API access - all endpoints available
-  - Direct endpoint testing
-  - Integration development
-  - No additional setup required
-- **Setup**: Automatically available after running setup
+- **Advantages**: Complete API access, direct endpoint testing, integration development
 - **Access**: <http://localhost:8000/docs>
 
-### 3. 🤖 MCP - AI Assistant
-**Natural language trading commands through Claude, ChatGPT, or Gemini**
+### MCP
+
+Natural language trading commands through Claude, ChatGPT, or Gemini.
 
 - **Best for**: Users who prefer conversational interaction
-- **Advantages**:
-  - Natural language commands
-  - Full access to all API features
-  - Contextual help and explanations
-  - Complex multi-step operations made simple
-  - Progressive credential setup with `setup_connector` tool
+- **Advantages**: Natural language commands, full access to all API features, complex multi-step operations made simple
 - **Setup**: See [MCP Installation Guide](../mcp/installation.md)
-- **Examples**:
-  - First-time: "Set up my Solana wallet" → Guides through credential setup
-  - Trading: "What's the price to swap 0.01 SOL for USDC? Execute the trade"
 
 ## Use Cases
 
