@@ -50,6 +50,40 @@ Condor is installed automatically when you run the [Hummingbot API Quickstart](.
 
 ![Condor Servers](./condor-servers.png)
 
+## Setting Default Server
+
+After adding a server, you need to set it as your default server. Click on the server name in the `/servers` list to view its details and set it as default.
+
+![API Servers List](./condor-add-default-server.png)
+
+Once set as default, the server will show a crown icon in the list and display "Your default server" in the details view.
+
+![Default Server Details](./condor-added-default-server.png)
+
+## Adding Keys
+
+Use `/keys` to add your exchange API credentials. This allows Condor to access your exchange accounts for trading and portfolio monitoring.
+
+![API Keys Menu](./add-keys.png)
+
+1. Run `/keys` to open the credentials menu
+2. Select **Perpetual** or **Spot** depending on the exchange type
+3. Choose the exchange you want to configure
+4. Enter the required credentials (API key, secret, and any exchange-specific options)
+
+![Configure Exchange](./add-keys-hyperliquid-perp.png)
+
+See [Connecting to Exchanges](../client/connect.md) for details on creating API keys for each exchange.
+
+!!! warning "Only enable Read and Trade access"
+    For security reasons, we recommend using only **read + trade** enabled API keys. Do not enable withdraw or transfer permissions.
+
+After adding your keys, run `/portfolio` to view your balances across all connected exchanges.
+
+![Portfolio Details](./portfolio.png)
+
+## Commands
+
 Once connected, you can use these commands:
 
 | Command | Description |
