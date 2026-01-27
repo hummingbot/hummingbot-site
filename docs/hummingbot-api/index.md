@@ -99,7 +99,7 @@ For new users, we strongly recommend using **Condor** for a mobile-friendly Tele
   - Real-time notifications and alerts
   - Quick commands for common operations
   - No web browser required
-- **Setup**: See [Condor Installation](../condor/installation.md)
+- **Setup**: See [Hummingbot API Quickstart](../installation/hummingbot-api.md#add-condor-telegram-interface)
 - **Access**: Your personal Telegram bot
 
 ### 2. 🔧 Swagger UI - API Documentation

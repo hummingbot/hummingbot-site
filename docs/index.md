@@ -84,7 +84,7 @@ hide:
 ```mermaid
 graph TB
     subgraph "User Interfaces"
-        CONDOR[Condor<br/>Telegram Bot]
+        CONDOR[Condor]
         MCP[MCP<br/>AI Agents]
     end
 
