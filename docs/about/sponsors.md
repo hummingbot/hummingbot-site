@@ -13,23 +13,11 @@ The Foundation works closely with leading crypto companies and protocols to deve
     <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
     <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
   </div>
-  <div class="flex-item">
-    <img src="/assets/logos/dydx-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/dydx-light.png" class="light-logo"/>
-  </div>
-  <div class="flex-item">
-    <img src="/assets/logos/derive-dark.png" class="dark-logo"/>
-    <img src="/assets/logos/derive-light.png" class="light-logo"/>
-  </div>
 </div>
 
 - [**XRPL**](https://xrpl.org/): The XRP Ledger (XRPL) is a decentralized, public blockchain that enables fast, low-cost transactions between accounts with both central limit order book (CLOB) and automatic market maker (AMM) exchange functionality built into the ledger. The XRPL connector in Hummingbot enables sophisticated trading and liquidity provision strategies on one of the longest-running blockchain platforms. [Connector Guide](../blog/posts/announcing-xrpl-connector/index.md)
 
 - [**Hyperliquid**](https://hyperliquid.xyz/): Hyperliquid has partnered with Hummingbot Foundation to show the power of democratized, algorithmic access to markets. Hyperliquid is an order book spot and perpetual futures DEX that aims to do everything the best CEXs do, but on-chain. Their unique [Vaults](https://app.hyperliquid.xyz/vaults) allow users to run stake-able liquidity provision strategies. [Announcement](https://twitter.com/_hummingbot/status/1768690918557970846).
-
-- [**Derive**](https://derive.fi/): Derive is a decentralized exchange aggregator that provides users with the best prices across multiple DEXs. By partnering with Hummingbot Foundation, Derive enables users to access deep liquidity across multiple DEXs and execute trades with minimal price impact. The Derive connector in Hummingbot allows users to implement sophisticated trading strategies while leveraging Derive's aggregation capabilities. [Connector Guide](../blog/posts/using-derive-with-hummingbot/index.md).
-
-- [**dYdX**](https://dydx.exchange/): dYdX is a decentralized exchange (DEX) built on its own purpose-built blockchain that offers perpetual futures trading with deep liquidity and low latency. The dYdX v4 connector in Hummingbot enables users to implement sophisticated derivatives trading strategies while maintaining full custody of their assets. [Announcement](../blog/posts/dydx-v4-connector/index.md).
 
 ## Exchange Partners
 
@@ -45,8 +33,9 @@ When you sign up for an account with our partner exchanges using the Hummingbot 
 | OKX      | 20%           | [Sign Up](https://www.okx.com/join/1931920269) |
 | HTX      | 20%           | [Sign Up](https://www.htx.com.pk/invite/en-us/1h?invite_code=re4w9223) |
 | Bitmart  | 10%           | [Sign Up](https://www.bitmart.com/invite/Hummingbot/en) |
+| Bitget   | TBD           | [Sign Up](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0) |
 
-### How exchange partnerships Work
+### How exchange partnerships work
 
 When you sign up for an account using our referral links, a portion of your trading fees are rebated back to Hummingbot Foundation. Every time you use Hummingbot to submit an order, it sends an HTTP request to the API of the exchange. The exchange then identifies that the HTTP request for the order is coming from a user who is using the Hummingbot codebase, it checks for the metadata in the HTTP request for a Hummingbot identifier. If the identifier is present, the exchange knows that the order is coming from a Hummingbot user and will rebate a portion of the trading fees to us.
  

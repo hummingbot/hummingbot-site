@@ -43,10 +43,6 @@ hide:
     <img src="/assets/logos/kucoin-logo-dark.png" alt="Kucoin" class="dark-logo"/>
     <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
   </div>
-  <div class="flex-item">
-    <img src="/assets/logos/derive-dark.png" alt="CoinAlpha" class="dark-logo"/>
-    <img src="/assets/logos/derive-light.png" alt="CoinAlpha" class="light-logo"/>
-  </div>
 </div>
 
 ### See [Exchanges](./exchanges/index.md) for how Hummingbot Foundation works with these institutions.
