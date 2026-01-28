@@ -462,8 +462,8 @@ Causes a delay when opening search, not optimal */
 /* Exchange Grid */
 .exchange-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
   align-items: center;
   justify-items: center;
   padding-top: 0;
@@ -484,7 +484,7 @@ Causes a delay when opening search, not optimal */
 
 @media (max-width: 1200px) {
   .exchange-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
