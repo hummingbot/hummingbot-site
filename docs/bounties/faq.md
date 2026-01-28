@@ -4,11 +4,15 @@
 
 ### What is Bounty Management?
 
-Bounty Management is a $10,000 service where Hummingbot Foundation oversees the complete development and maintenance of your exchange connector through community bounties. This includes 1 year of governance and maintenance support.
+Bounty Management is a service where Hummingbot Foundation oversees the complete development and maintenance of your exchange connector through community bounties. This includes 1 year of governance and maintenance support.
+
+### How much does it cost?
+
+The full cost ranges from $10,000 to $25,000 depending on the complexity of the exchange API and scope of integration.
 
 ### What connector types are included?
 
-The $10,000 fee covers ALL connector sub-types your exchange supports:
+The fee covers ALL connector sub-types your exchange supports:
 
 - **CLOB Exchanges**: Spot and/or Perpetual connectors
 - **AMM/DEX**: Router, AMM, and/or CLMM connectors via Gateway
@@ -41,7 +45,7 @@ Full refund guarantee if:
 ### How does payment work?
 
 - Sign [escrow agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e)
-- Transfer $10,000 via crypto or wire
+- Transfer fee via crypto or wire
 - Foundation handles all developer payments
 - Annual renewal: $2,000/year (waived if fee share exceeds $200/month)
 
