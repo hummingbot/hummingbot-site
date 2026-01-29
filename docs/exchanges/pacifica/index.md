@@ -6,7 +6,7 @@
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | Not available |
-| [🔀 Perp Connector](#perp-connector) | ✅ |
+| [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | Not available |
 | [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ |
 
@@ -99,9 +99,38 @@ This connector supports the following position modes:
 
 - One-way
 
-### Paper Trading
+### Rate Oracle
 
-There's testnet available, but connector doesn't support the testnet. Regular paper trading on mainnet is still possible.
+The connector comes with its own rate oracle implementation. You can use it by using the following command:
+
+```
+config rate_oracle_source pacifica_perpetual
+```
+
+Make sure to set global token name to `USDC` as `USDC` is the main quote token for trading on Pacifica
+
+```
+config global_token.global_token_name USDC
+```
+
+### Paper Trading (Pacifica Testnet)
+
+This perp exchange offers a paper trading mode: <https://test-app.pacifica.fi/>
+
+> [!NOTE]
+> Please note that Testnet is a separate environment from Mainnet. It has different URL, different balances and you would need to generate new API keys (Agent Wallet) for it.
+> [More about Agent Wallets](https://docs.pacifica.fi/api-documentation/api/signing/api-agent-keys)
+>
+> You would also need to connect a **Solana Devnet Wallet**.
+> To trade on Testnet, you need **USDP** (Pacifica's testing token). You can get it from the [Pacifica Faucet](https://test-app.pacifica.fi/faucet).
+> To enable the **Deposit** button and fund your account with USDP, you might need to enter an invitation code at [Pacifica Referral](https://test-app.pacifica.fi/referral).
+> Note: Claiming from the Pacifica Faucet requires some **SOL** on your Devnet wallet for transaction fees. You can get Devnet SOL from the [Solana Faucet](https://faucet.solana.com/).
+
+After you create an account and create the API keys, you can enter them by using the `connect pacifica_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts.
+
+```
+connect pacifica_perpetual_testnet
+```
 
 ## 🕯 Perp Candles Feed
 
