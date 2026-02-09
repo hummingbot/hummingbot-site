@@ -49,12 +49,13 @@ For a quick Docker-based setup, see the [Hummingbot Client Quickstart](../instal
 
 ### Install and Run
 
-Clone the repository and start the container:
+Clone the repository and run setup:
 
 ```bash
 git clone https://github.com/hummingbot/hummingbot.git
 cd hummingbot
-docker compose up -d
+make setup
+make deploy
 ```
 
 Attach to the running container:
@@ -71,7 +72,8 @@ You should see the Hummingbot welcome screen:
 
 | Command | Description |
 |---------|-------------|
-| `docker compose up -d` | Start Hummingbot in background |
+| `make setup` | Configure environment (prompts for Gateway) |
+| `make deploy` | Start Hummingbot in background |
 | `docker attach hummingbot` | Attach to running instance |
 | `docker compose down` | Stop Hummingbot |
 | `docker compose logs -f` | View logs |

@@ -46,9 +46,9 @@ You'll need some [HBOT tokens](../about/governance.md) to create a proposal, and
 
 ### 💎 Bounty Management
 
-Have a professional community developer build and maintain your connector through our Bounty Management service for **$10,000**. This comprehensive package includes full connector development for all supported trading types (spot, perpetuals, AMM), plus one year of maintenance and governance support. The Foundation handles developer assignment, code review, testing, and community approval processes. 
+Have a professional community developer build and maintain your connector through our Bounty Management service, starting at **$10,000**. This comprehensive package includes full connector development for all supported trading types (spot, perpetuals, AMM), plus one year of maintenance and governance support. The Foundation handles developer assignment, code review, testing, and community approval processes. We offer a full refund if the connector isn't successfully merged into the codebase within a prescribed amount of time.
 
-See [Bounties](../bounties/index.md) for more information or review the [Bounty Escrow Agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e).
+See [Bounties](../bounties/index.md) for more information.
 
 ### 🏆 Sponsor the Foundation
 
@@ -58,35 +58,19 @@ This premium option includes dedicated engineering resources, custom content dev
 
 ## Current Foundation Partners
 
-### 🏆 Exchange Sponsors
-
-Leading exchanges partnering with Hummingbot Foundation for strategic integration:
-
-- [**XRPL**](https://xrpl.org/)
-- [**Hyperliquid**](https://hyperliquid.xyz/)
-- [**dYdX**](https://dydx.exchange/)
-- [**Derive**](https://www.derive.fi/)
-- [**Bitget**](https://www.bitget.com/)
-
-### 🤝 Fee-Share Partners
-
-Exchanges supporting open-source development through revenue sharing:
-
 - [**Binance**](https://www.binance.com/)
-- [**Gate.io**](https://www.gate.io/)
-- [**KuCoin**](https://www.kucoin.com/)
-- [**OKX**](https://www.okx.com/)
-- [**HTX**](https://www.htx.com/)
 - [**Bitmart**](https://www.bitmart.com/)
 - [**Bitget**](https://www.bitget.com/)
+- [**Gate.io**](https://www.gate.io/)
+- [**Hyperliquid**](https://hyperliquid.xyz/)
+- [**HTX**](https://www.htx.com/)
+- [**Kucoin**](https://www.kucoin.com/)
+- [**OKX**](https://www.okx.com/)
+- [**XRPL**](https://xrpl.org/)
 
 ## Exchange Governance
 
-Hummingbot uses a transparent, community-driven governance process that lets HBOT holders decide which exchanges the codebase should support:
-
-### Hummingbot Governance Proposals (HGP)
-
-All governance decisions flow through a unified proposal system:
+Hummingbot uses a transparent, community-driven governance process that lets HBOT holders decide which exchanges the codebase should support. All governance decisions flow through a unified proposals process:
 
 - **New connectors**: Propose adding new exchange connectors
 - **Connector management**: Propose bounty allocations or connector removals

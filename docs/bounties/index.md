@@ -5,6 +5,7 @@
 Connector bounties enable community developers to build and maintain exchange connectors for Hummingbot through a flexible, transparent bounty system. The Hummingbot Foundation manages this process, connecting exchanges with skilled developers from our 40,000+ trading community.
 
 This documentation provides information for:
+
 - **Exchanges** looking to integrate with Hummingbot
 - **Developers** interested in earning bounties by building connectors
 

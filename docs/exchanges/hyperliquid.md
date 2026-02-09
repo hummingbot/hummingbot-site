@@ -166,6 +166,30 @@ This perp exchange offers a paper trading mode: <https://app.hyperliquid-testnet
 
 Afer you create an account and create the API keys, you can enter them by using the `connect hyperliquid_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
 
+### HIP-3 Markets (Builder-Deployed Perpetuals)
+
+Hyperliquid Improvement Proposal 3 (HIP-3) enables permissionless creation of perpetual futures markets by builders. These markets expand the available trading pairs beyond the core validator-operated perpetuals. When trading HIP-3 markets with Hummingbot:
+
+**Key Considerations:**
+
+- **Margin Mode**: HIP-3 markets require **isolated margin only** (no cross margin). Each position's margin is separate.
+- **Asset ID**: HIP-3 assets use different asset IDs than standard perpetuals. Configure your trading pairs according to the HIP-3 asset naming conventions.
+- **Trading API**: The trading API for HIP-3 perpetuals is unified with other HyperCore actions, so existing Hummingbot configurations work the same way.
+
+**Fees:**
+
+- Standard HIP-3 fees are approximately **2x the fees** of validator-operated perpetuals
+- **Growth mode discounts** can reduce taker fees by over 90% (from 0.045% to as low as 0.0045%)
+- Fee tiers apply across all assets (including HIP-3) based on your rolling 14-day volume
+
+**Trading Tips:**
+
+- HIP-3 markets may have lower liquidity compared to core perpetuals - consider adjusting spread and order size parameters accordingly
+- Monitor funding rates and liquidation parameters, as these are set by individual market deployers
+- Verify the trading pair is correctly configured using the Hyperliquid API before running strategies
+
+For more details, see the [Hyperliquid HIP-3 documentation](https://hyperliquid.gitbook.io/hyperliquid-docs). 
+
 ## 🕯 Spot Candles Feed
 *OHLCV candles data collector from spot markets*
 

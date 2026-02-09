@@ -4,10 +4,13 @@ It is designed to be modular and extensible, allowing users to automate any trad
 
 ## Getting Started
 
-We recommend installing Hummingbot using Docker if you want the simplest, easiest installation method and don't need to modify the Hummingbot codebase. Check out [Installation](../installation/index.md) for the basic process.
+Choose your path based on your needs:
+
+- **[Hummingbot API Quickstart](../installation/hummingbot-api.md)** - Recommended for cloud deployments, multi-bot management, and modern interfaces (Condor, MCP)
+- **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)** - Best for local usage, learning Hummingbot, and running single bot instances
 
 !!! note "For Developers"
-    If you're a developer looking to build custom strategies or exchange connectors, consider installing Hummingbot from source. There are instructions for macOS, Linux and Windows - see [Source Installation](../client/installation.md#source-installation).
+    If you're a developer looking to build custom strategies or exchange connectors, see [Source Installation](../client/installation.md#source-installation) for Hummingbot Client or [Hummingbot API Installation](../hummingbot-api/installation.md) for the API.
 
 Afterwards, check out the **Academy** category in the [Hummingbot Blog](../blog/category/academy.md) for blog posts and step-by-step tutorials on how to use Hummingbot.
 

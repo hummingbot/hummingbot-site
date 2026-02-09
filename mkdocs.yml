@@ -275,7 +275,7 @@ nav:
       - Rate Limits: client/global-configs/rate-limits-share-pct.md
       # - Telegram Integration: global-configs/telegram.md
     - Gateway DEX Middleware:
-      - Overview: gateway/index.md
+      - Gateway DEX Middleware: gateway/index.md
       - Installation & Setup: gateway/installation.md
       - Configuration: gateway/configuration.md
       - Commands: gateway/commands.md
@@ -284,18 +284,16 @@ nav:
       - RPC Providers: gateway/rpc.md
       - Strategies & Snippets: gateway/strategies.md
     - Hummingbot API: 
-      - Overview: hummingbot-api/index.md
+      - Hummingbot API: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
       - Developer Guide: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
-    - Condor:
-      - Overview: condor/index.md
-      - Installation: condor/installation.md
-      - Commands: condor/commands.md
     - Hummingbot MCP:
-      - Overview: mcp/index.md
+      - Hummingbot MCP: mcp/index.md
       - Installation: mcp/installation.md
       - Tools Reference: mcp/tools.md
+    - Condor:
+      - Condor: condor/index.md
     - Dashboard:
       - Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
@@ -315,16 +313,13 @@ nav:
     - 🔥 Binance: exchanges/binance/index.md
     - 🔥 Bitget: exchanges/bitget/index.md
     - 🔥 Bitmart: exchanges/bitmart/index.md
-    - 🔥 Derive: exchanges/derive/index.md
-    - 🔥 dYdX: exchanges/dydx.md
     - 🔥 Gate.io: exchanges/gate-io/index.md
-    - 🔥 HTX: exchanges/htx/index.md
     - 🔥 Hyperliquid: exchanges/hyperliquid.md
+    - 🔥 HTX: exchanges/htx/index.md
     - 🔥 Kucoin: exchanges/kucoin/index.md
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
-    - AscendEx : exchanges/ascendex/index.md
-    - Balancer: exchanges/gateway/balancer.md
+    - AscendEx: exchanges/ascendex/index.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
     - BingX: exchanges/bing_x/index.md
@@ -332,9 +327,9 @@ nav:
     - BTC Markets: exchanges/btc-markets.md
     - Coinbase: exchanges/coinbase.md
     - Cube: exchanges/cube/index.md
-    - Curve: exchanges/gateway/curve.md
+    - Derive: exchanges/derive/index.md
     - Dexalot: exchanges/dexalot.md
-    - ETCSwap: exchanges/gateway/etcSwap.md
+    - dYdX: exchanges/dydx.md
     - Foxbit: exchanges/foxbit/index.md
     - Injective Helix: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
@@ -346,12 +341,8 @@ nav:
     - Pacifica: exchanges/pacifica/index.md
     - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
-    - Quickswap: exchanges/gateway/quickswap.md
-    - Sushiswap: exchanges/gateway/sushiswap.md
-    - TraderJoe: exchanges/gateway/traderjoe.md
     - Uniswap : exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
-    - Gateway DEX: exchanges/gateway/index.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
     - Bounty Lifecycle: bounties/lifecycle.md
@@ -361,6 +352,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.12.0: release-notes/2.12.0.md
     - 2.11.0: release-notes/2.11.0.md
     - 2.10.0: release-notes/2.10.0.md
     - 2.9.0: release-notes/2.9.0.md
@@ -374,6 +366,37 @@ nav:
     - 2.1.0: release-notes/2.1.0.md
     - 2.0.1: release-notes/2.0.1.md
     - 2.0.0: release-notes/2.0.0.md
+    - 1.28.0: release-notes/1.28.0.md
+    - 1.27.0: release-notes/1.27.0.md
+    - 1.26.0: release-notes/1.26.0.md
+    - 1.25.0: release-notes/1.25.0.md
+    - 1.24.0: release-notes/1.24.0.md
+    - 1.23.0: release-notes/1.23.0.md
+    - 1.22.0: release-notes/1.22.0.md
+    - 1.21.0: release-notes/1.21.0.md
+    - 1.20.0: release-notes/1.20.0.md
+    - 1.19.0: release-notes/1.19.0.md
+    - 1.18.0: release-notes/1.18.0.md
+    - 1.17.0: release-notes/1.17.0.md
+    - 1.16.0: release-notes/1.16.0.md
+    - 1.15.0: release-notes/1.15.0.md
+    - 1.14.0: release-notes/1.14.0.md
+    - 1.13.0: release-notes/1.13.0.md
+    - 1.12.0: release-notes/1.12.0.md
+    - 1.11.0: release-notes/1.11.0.md
+    - 1.10.0: release-notes/1.10.0.md
+    - 1.9.0: release-notes/1.9.0.md
+    - 1.8.0: release-notes/1.8.0.md
+    - 1.7.0: release-notes/1.7.0.md
+    - 1.6.0: release-notes/1.6.0.md
+    - 1.5.0: release-notes/1.5.0.md
+    - 1.4.0: release-notes/1.4.0.md
+    - 1.3.0: release-notes/1.3.0.md
+    - 1.2.0: release-notes/1.2.0.md
+    - 1.1.1: release-notes/1.1.1.md
+    - 1.1.0: release-notes/1.1.0.md
+    - 1.0.1: release-notes/1.0.1.md
+    - 1.0.0: release-notes/1.0.0.md
   - Community:
     - Community: community/index.md
     - Discord Server: community/discord.md
