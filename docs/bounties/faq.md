@@ -28,9 +28,9 @@ The fee covers ALL connector sub-types your exchange supports:
 
 ### What if the connector isn't delivered?
 
-Full refund if connector is not successfully built and integrated within 90 days due to:
+Full refund if connector is not successfully built within 90 days due to:
 
-- No pull request meeting acceptance criteria passes QA after reasonable remediation attempts
+- QA Failure: Pull request fails to meet acceptance criteria after remediation attempts
 - Technical incompatibility or exchange API issues preventing completion
 
 Refund requests processed within 14 business days of validation.
