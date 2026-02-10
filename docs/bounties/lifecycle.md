@@ -27,7 +27,7 @@ After review, Foundation quotes a price for the Bounty Management service rangin
 
 Exchange proceeds with quoted service:
 
-- Sign [escrow agreement (template)](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e)
+- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e)
 - Transfer funds via crypto or wire
 - 90-day delivery guarantee with full refund if not completed
 - 1 year maintenance included
