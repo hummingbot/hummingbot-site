@@ -170,7 +170,7 @@ Foundation manages ongoing bounties for:
 
 ## Timeline Summary
 
-**Typical: 8-12 weeks | Guaranteed: 90 days or full refund**
+**Typical: 7-12 weeks | Guaranteed: 90 days or full refund**
 
 - Assignment: 1-2 weeks (finding and vetting qualified developers)
 - Development: 4-6 weeks
