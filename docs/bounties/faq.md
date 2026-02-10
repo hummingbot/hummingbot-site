@@ -44,7 +44,7 @@ Refund requests processed within 14 business days of validation.
 
 ### How does payment work?
 
-- Sign [escrow agreement (template)](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e)
+- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e)
 - Transfer fee via crypto or wire
 - Foundation handles all developer payments
 - Annual renewal: $2,000/year (waived if fee share exceeds $200/month)
