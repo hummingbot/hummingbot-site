@@ -320,6 +320,7 @@ nav:
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
     - AscendEx: exchanges/ascendex/index.md
+    - Aevo: exchanges/aevo/index.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
     - BingX: exchanges/bing_x/index.md
@@ -340,7 +341,7 @@ nav:
     - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
-    - Uniswap : exchanges/gateway/uniswap.md
+    - Uniswap: exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
