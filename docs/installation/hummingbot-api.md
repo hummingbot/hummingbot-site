@@ -95,10 +95,6 @@ Enter your Telegram User ID (you will be the admin).
 (Tip: Message @userinfobot on Telegram to get your ID)
 Admin User ID: 123456789
 
-Enter your OpenAI API Key (optional, for AI features).
-Press Enter to skip if not using AI features.
-OpenAI API Key:
-
 ✅ .env file created successfully!
 ✅ config.yml created successfully!
 
@@ -230,7 +226,7 @@ Installation Summary:
 
 Next Steps:
 [INFO] 1. Open Telegram and start a chat with @my_condor_bot
-[INFO] 2. Use /config command to add Hummingbot API servers and manage access
+[INFO] 2. Use /servers command to add Hummingbot API servers and manage access
 [INFO] 3. Check Condor status: cd /Users/feng/tmp/tmp/condor && docker compose ps
 
 Management Commands:

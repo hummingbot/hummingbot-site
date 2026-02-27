@@ -114,10 +114,11 @@ Open your browser and navigate to:
 
 The installation creates a `.env` file with your configuration. You can modify these settings:
 
-- `API_USERNAME` and `API_PASSWORD`: API authentication credentials
-- `DATABASE_URL`: PostgreSQL connection string
-- `MQTT_HOST`, `MQTT_PORT`: EMQX message broker settings
-- `HUMMINGBOT_IMAGE`: Docker image to use for bots
+- `USERNAME` and `PASSWORD`: API authentication credentials (used by clients to authenticate with the API)
+- `CONFIG_PASSWORD`: Password used to encrypt bot credentials at rest
+- `DATABASE_URL`: PostgreSQL connection string (use `localhost` when running from source, `hummingbot-postgres` in Docker)
+- `BROKER_HOST`, `BROKER_PORT`: EMQX message broker settings (use `localhost` when running from source)
+- `GATEWAY_URL`: Gateway URL for DEX connectivity (default: `http://localhost:15888`)
 
 ## Troubleshooting
 
@@ -291,7 +292,7 @@ Make sure the new port you choose is not already in use.
 - **Solution**: Verify the API container is running: `docker ps | grep hummingbot-api`
 
 **Issue**: Authentication fails
-- **Solution**: Check your USERNAME and PASSWORD in the `.env` file
+- **Solution**: Check `USERNAME` and `PASSWORD` in the `.env` file match what you pass as credentials
 
 **Issue**: Old bot data causing conflicts
 - **Solution**: Clean up old volumes: `docker compose down -v` (⚠️ deletes data)

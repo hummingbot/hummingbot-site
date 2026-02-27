@@ -26,7 +26,12 @@ The simplest way to connect AI assistants using command-line tools.
 Add the MCP server with one command:
 
 ```bash
-claude mcp add --transport stdio hummingbot -- docker run --rm -i -e HUMMINGBOT_API_URL=http://host.docker.internal:8000 -v hummingbot_mcp:/root/.hummingbot_mcp hummingbot/hummingbot-mcp:latest
+claude mcp add --transport stdio hummingbot -- docker run --rm -i \
+  -e HUMMINGBOT_API_URL=http://host.docker.internal:8000 \
+  -e HUMMINGBOT_USERNAME=admin \
+  -e HUMMINGBOT_PASSWORD=admin \
+  -v hummingbot_mcp:/root/.hummingbot_mcp \
+  hummingbot/hummingbot-mcp:latest
 ```
 
 !!! note "Local Hummingbot API URL"
@@ -72,10 +77,10 @@ Install Gemini CLI: [Official Guide](https://github.com/google-gemini/gemini-cli
        "hummingbot": {
          "command": "docker",
          "args": [
-           "run",
-           "--rm",
-           "-i",
+           "run", "--rm", "-i",
            "-e", "HUMMINGBOT_API_URL=http://host.docker.internal:8000",
+           "-e", "HUMMINGBOT_USERNAME=admin",
+           "-e", "HUMMINGBOT_PASSWORD=admin",
            "-v", "hummingbot_mcp:/root/.hummingbot_mcp",
            "hummingbot/hummingbot-mcp:latest"
          ]
@@ -122,10 +127,10 @@ Install Codex CLI: [Official Guide](https://github.com/openai/codex)
    [mcp_servers.hummingbot]
    command = "docker"
    args = [
-     "run",
-     "--rm",
-     "-i",
+     "run", "--rm", "-i",
      "-e", "HUMMINGBOT_API_URL=http://host.docker.internal:8000",
+     "-e", "HUMMINGBOT_USERNAME=admin",
+     "-e", "HUMMINGBOT_PASSWORD=admin",
      "-v", "hummingbot_mcp:/root/.hummingbot_mcp",
      "hummingbot/hummingbot-mcp:latest"
    ]
@@ -163,8 +168,8 @@ Install Codex CLI: [Official Guide](https://github.com/openai/codex)
    | Variable | Value |
    |----------|-------|
    | `HUMMINGBOT_API_URL` | `http://host.docker.internal:8000` |
-   | `HUMMINGBOT_API_USERNAME` | `admin` (or your username) |
-   | `HUMMINGBOT_API_PASSWORD` | `admin` (or your password) |
+   | `HUMMINGBOT_USERNAME` | `admin` (or your username) |
+   | `HUMMINGBOT_PASSWORD` | `admin` (or your password) |
 
 5. Click the **checkbox** to save
    ![save](save.png)
