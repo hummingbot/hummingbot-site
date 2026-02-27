@@ -7,7 +7,7 @@ This page outlines the complete lifecycle of connector bounties from initial con
 ### 1. Initial Contact
 Exchange reaches out via Discord or email to discuss connector integration needs. Foundation schedules introduction call to understand requirements.
 
-### 2. Technical Review
+### 2. Technical Review & Pricing
 
 Foundation reviews exchange API documentation to confirm:
 
@@ -16,13 +16,20 @@ Foundation reviews exchange API documentation to confirm:
 - WebSocket/REST API capabilities
 - Development complexity assessment
 
+After review, Foundation quotes a price for the Bounty Management service ranging from **$10,000 to $25,000** depending on scope. Factors that affect pricing include:
+
+- **Exchange API robustness**: Well-documented, stable APIs reduce development effort
+- **Connectors required**: Spot only vs Perp only vs Spot + Perp
+- **CEX vs DEX**: DEX integrations may involve additional complexity
+- **New vs established exchange**: Newer exchanges typically require more development work
+
 ### 3. Bounty Management Agreement
 
-Exchange proceeds with $10,000 service:
+Exchange proceeds with quoted service:
 
-- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e)
+- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e)
 - Transfer funds via crypto or wire
-- Receive timeline (4-8 weeks total)
+- 90-day delivery guarantee with full refund if not completed
 - 1 year maintenance included
 
 ### 4. Bounty Creation
@@ -139,7 +146,7 @@ Upon approval:
 - Marked as "Paid" on board
 
 ### Exchange Payments
-- $10,000 upfront via escrow
+- $10,000-$25,000 upfront via escrow (based on scope)
 - Covers all development bounties
 - Includes 1 year maintenance
 
@@ -157,15 +164,16 @@ Foundation manages ongoing bounties for:
 ### Year 2+ - Renewal Options
 
 - Continue management: $2,000/year
-- Affiliate offset: Waived if >$200/month revenue
+- Affiliate offset: Waived if affiliate revenue >$200/month
 - Self-maintenance: Exchange takes over
+- Foundation provides 60-day renewal notice before expiration
 
 ## Timeline Summary
 
-**Total: 4-8 weeks**
+**Typical: 7-12 weeks | Guaranteed: 90 days or full refund**
 
 - Assignment: 1-2 weeks (finding and vetting qualified developers)
-- Development: 2 weeks (experienced developers can typically build a connector quickly using existing templates and documentation)
+- Development: 4-6 weeks
 - Testing & QA: 1-2 weeks
 - Release Inclusion: 1-2 weeks
 
@@ -178,4 +186,12 @@ Foundation ensures quality through:
 - Exchange validation
 - Community feedback
 - Developer reassignment if needed
-- Refund policy for non-delivery
+
+## Refund Guarantee
+
+Full refund if connector is not successfully built within 90 days due to:
+
+- QA Failure: Pull request fails to meet acceptance criteria after remediation attempts
+- Technical incompatibility or exchange API issues preventing completion
+
+Refund requests processed within 14 business days of validation.

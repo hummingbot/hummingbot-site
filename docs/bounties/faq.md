@@ -19,21 +19,21 @@ The fee covers ALL connector sub-types your exchange supports:
 
 ### How long does development take?
 
-Total timeline is 4-8 weeks:
+**Typical: 7-12 weeks | Guaranteed: 90 days or full refund**
 
 - **Assignment**: 1-2 weeks (finding and vetting qualified developers)
-- **Development**: 2 weeks (experienced developers can typically build a connector quickly using existing templates and documentation)
-- **Testing & QA**: 1-2 weeks  
+- **Development**: 4-6 weeks
+- **Testing & QA**: 1-2 weeks
 - **Release**: 1-2 weeks (inclusion in official monthly release)
 
 ### What if the connector isn't delivered?
 
-Full refund guarantee if:
+Full refund if connector is not successfully built within 90 days due to:
 
-- No qualified developer assigned within 60 days
-- Developer fails to deliver within agreed timeframe
-- Connector fails QA testing after reasonable attempts
-- Foundation unable to reassign bounty within 90 days
+- QA Failure: Pull request fails to meet acceptance criteria after remediation attempts
+- Technical incompatibility or exchange API issues preventing completion
+
+Refund requests processed within 14 business days of validation.
 
 ### What's included in 1-year maintenance?
 
@@ -44,7 +44,7 @@ Full refund guarantee if:
 
 ### How does payment work?
 
-- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e)
+- Sign [escrow agreement](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e)
 - Transfer fee via crypto or wire
 - Foundation handles all developer payments
 - Annual renewal: $2,000/year (waived if fee share exceeds $200/month)

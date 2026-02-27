@@ -22,7 +22,7 @@ The bounty system creates a sustainable ecosystem where:
 
 ### Bounty Management Service
 
-Get your exchange integrated with Hummingbot through our comprehensive bounty management service. Email us at <operations@hummingbot.org> or contact Foundation team members on [Hummingbot Discord](https://discord.gg/hummingbot) to learn more. Sign the [Bounty Escrow Agreement](https://hummingbot-foundation.notion.site/Bounty-Escrow-Agreement-1eac9b8ea4f780d19afee59abed1fe1e) and escrow the funds to formalize the engagement.
+Get your exchange integrated with Hummingbot through our comprehensive bounty management service. Email us at <operations@hummingbot.org> or contact Foundation team members on [Hummingbot Discord](https://discord.gg/hummingbot) to learn more. Sign the [Bounty Escrow Agreement](https://hummingbot-foundation.notion.site/Connector-Bounty-Escrow-Agreement-template-1eac9b8ea4f780d19afee59abed1fe1e) and escrow the funds to formalize the engagement.
 
 **Connector Development Includes:**
 
