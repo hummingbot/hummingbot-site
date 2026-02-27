@@ -14,7 +14,7 @@
 | [🕯 Perp Candles Feed](#perp-candles-feed) | Not available |                  |
 
 ## ℹ️ Exchange Info
-- **Website**: <https://xrpl.org/>
+- **Website**: <https://xrpl.org>
 - **CoinMarketCap**: <https://coinmarketcap.com/currencies/xrp/>
 - **CoinGecko**: <https://www.coingecko.com/en/coins/xrp>
 - **API Docs**: <https://xrpl.org/docs.html>
@@ -469,9 +469,9 @@ custom_markets:
     quote_issuer: ''
 ```
 
-- You can find token information like issuer or currency code at <https://xrpl.services/tokens>
+- You can find token information like issuer and currency code at <https://bithomp.com/en/tokens> and <https://xrpl.services/tokens>
 - See more pairs on Gatehub: <https://gatehub.net/markets>
-- Top 10 traded pairs on Sologenics: <https://sologenic.org/market-index>
+- Top 10 traded pairs on Sologenic: <https://sologenic.org/market-index>
     - SOLO/XRP
     - CORE/XRP
     - RPR/XRP
@@ -482,6 +482,7 @@ custom_markets:
     - RLS/XRP
     - XRDOGE/XRP
     - XMEME/XRP
+- Top 10 AMM pairs on Bithomp: <https://bithomp.com/en/amms>
 
 
 ## 🔀 Spot Connector
