@@ -28,6 +28,8 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [OKX](../exchanges/okx/index.md)                   | ✓ | ✓ | ✓ |  |
 | [XRPL](../exchanges/xrpl.md)                       | ✓ | ✓ |  | [Guide](../blog/posts/using-xrpl-with-hummingbot/index.md) |
 | [AscendEx](../exchanges/ascendex/index.md)         |  | ✓ |  |  |
+| [Aevo](../exchanges/aevo/index.md)         |  | ✓ |  |  |
+| [Backpack](../exchanges/backpack/index.md)         |  | ✓ | ✓ |  |
 | [BingX](../exchanges/bing_x/index.md)              | | ✓ |  | |
 | [Bitstamp](../exchanges/bitstamp/index.md)         |  | ✓ |  |  |
 | [Bitrue](../exchanges/bitrue.md)                   |  | ✓ |  |  |
@@ -40,6 +42,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
 | [MEXC](../exchanges/mexc/index.md)                 |  | ✓ |  |  |
 | [NDAX](../exchanges/ndax.md)                       |  | ✓ |  |  |
+| [Pacifica](../exchanges/pacifica.md)                       |  |  | ✓ |  |
 | [Vertex](../exchanges/vertex.md)                   | | ✓ |  |  |
 | [Foxbit](../exchanges/foxbit/index.md) | | ✓ |  |  |
 
