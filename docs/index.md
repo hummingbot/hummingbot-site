@@ -142,6 +142,14 @@ graph TB
 
     [:octicons-arrow-right-24: Documentation](./mcp/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
 
+-   :octicons-tools-16:{ .lg .middle } __Hummingbot Skills__
+
+    ---
+
+    AI agent skills for managing Hummingbot — deploy bots, find arbitrage/XEMM opportunities, manage LP positions, and get status updates via Telegram or Discord.
+
+    [:octicons-arrow-right-24: Documentation](./mcp/skills.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/skills)
+
 -   :octicons-mark-github-16:{ .lg .middle } __Quants Lab__
 
     ---

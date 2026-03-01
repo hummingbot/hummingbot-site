@@ -14,8 +14,10 @@ Unlike MCP (which requires a running server), skills work with any AI assistant 
 | [`lp-agent`](https://github.com/hummingbot/skills/tree/main/skills/lp-agent) | LP position management for CLMM pools (Meteora, Raydium) with visualization and export |
 | [`hummingbot-deploy`](https://github.com/hummingbot/skills/tree/main/skills/hummingbot-deploy) | Deploy and manage Hummingbot API stack via Docker |
 | [`hummingbot-developer`](https://github.com/hummingbot/skills/tree/main/skills/hummingbot-developer) | Developer workflow: install, build, and run the full stack from source |
+| [`hummingbot-heartbeat`](https://github.com/hummingbot/skills/tree/main/skills/hummingbot-heartbeat) | Hourly Hummingbot status updates (API, Gateway, bots, portfolio) delivered to Telegram or Discord |
 | [`connectors-available`](https://github.com/hummingbot/skills/tree/main/skills/connectors-available) | Discover and test available exchange connectors |
-| [`find-arbitrage-opps`](https://github.com/hummingbot/skills/tree/main/skills/find-arbitrage-opps) | Scan for arbitrage opportunities across connected exchanges |
+| [`find-arbitrage-opps`](https://github.com/hummingbot/skills/tree/main/skills/find-arbitrage-opps) | Scan for arbitrage opportunities across CEX and DEX exchanges (Jupiter, Uniswap, PancakeSwap) |
+| [`find-xemm-opps`](https://github.com/hummingbot/skills/tree/main/skills/find-xemm-opps) | Find Cross-Exchange Market Making opportunities via order book depth analysis and auto-generate strategy configs |
 
 ## Environment Variables
 
@@ -151,3 +153,71 @@ my-skill/
 `SKILL.md` defines the skill's commands in YAML frontmatter and provides instructions the AI agent follows when a command is invoked. See the [hummingbot/skills repository](https://github.com/hummingbot/skills) for examples.
 
 To contribute a skill, open a pull request against the `main` branch of [hummingbot/skills](https://github.com/hummingbot/skills).
+
+---
+
+## find-arbitrage-opps Skill
+
+The `find-arbitrage-opps` skill scans for price discrepancies across CEX and DEX exchanges, including on-chain liquidity via Gateway.
+
+**Features:**
+
+- Compares prices across all connected CEX connectors in parallel
+- **DEX support** via `--dex` flag: queries Jupiter (Solana), Uniswap (Ethereum), and PancakeSwap (BSC) through Hummingbot Gateway
+- Smart chain-aware routing — Jupiter only queried for Solana tokens, Uniswap/PancakeSwap for Ethereum/BSC tokens
+- Regional exchange filtering: `btc_markets` (AU-only) and `ndax` (CA-only) excluded by default with opt-in flags
+- Outlier filtering (±20% from median) to remove stale or erroneous prices
+
+**Usage:**
+
+```bash
+# CEX only
+python scripts/find_arb_opps.py --base SOL --quote USDC
+
+# Include DEX (Jupiter + Uniswap + PancakeSwap)
+python scripts/find_arb_opps.py --base ETH --quote USDC --dex
+
+# Filter to specific connectors
+python scripts/find_arb_opps.py --base BTC --quote USDT --connectors binance,kraken,coinbase
+```
+
+---
+
+## find-xemm-opps Skill
+
+The `find-xemm-opps` skill identifies optimal exchange pairs for Cross-Exchange Market Making (XEMM) by analyzing live order book depth.
+
+**What is XEMM?**
+
+XEMM involves quoting on one exchange (maker) while hedging fills on another (taker). Best opportunities exist where:
+
+- **Maker side**: wide bid-ask spread + shallow book = room to profit from quotes
+- **Taker side**: tight spread + deep book = cheap and liquid hedge
+
+**Features:**
+
+- Fetches order book snapshots (depth 20) from all connectors in parallel
+- Scores each exchange pair by: mid-price gap, spread ratio, depth ratio, and order book balance (B/A ratio)
+- Penalizes imbalanced books (B/A > 2.0 or < 0.5) to filter risky opportunities
+- Auto-suggests `xemm_multiple_levels` profitability levels based on taker spread
+- `--create-config` flag saves a ready-to-deploy controller config to Hummingbot API
+
+**Usage:**
+
+```bash
+# Scan for XEMM opportunities
+python scripts/find_xemm_opps.py --base SOL --quote USDT,USDC
+
+# Scan and auto-create a controller config
+python scripts/find_xemm_opps.py --base ETH --quote USDT \
+  --connectors binance,okx,kraken,mexc \
+  --create-config --total-amount 500 --config-name my_eth_xemm
+```
+
+**Environment variables:**
+
+```bash
+export HUMMINGBOT_API_URL=http://localhost:8000
+export API_USER=admin
+export API_PASS=admin
+```
