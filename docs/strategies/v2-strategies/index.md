@@ -19,15 +19,16 @@ Examples: `PositionExecutor`, `DCAExecutor`, `GridExecutor`, `TWAPExecutor`, `XE
 
 [**Scripts**](../scripts/index.md) and [**Controllers**](controllers/index.md) are **long-running processes** that start Docker containers and run continuously until stopped. They are suited for strategies that need to monitor markets, adapt over time, or manage multiple executors in parallel.
 
-- **Scripts** (inheriting from `StrategyV2Base`) are the entry point. Started via `start --script <file>` in the Hummingbot client. All V2 scripts now inherit from `StrategyV2Base`.
-- **Controllers** define reusable sub-strategies (directional, market making, or generic). They are not started directly — instead, a special controller-launcher script (`v2_with_controllers.py`) loads one or more controllers and runs them inside a single bot instance. This allows deploying multiple independent strategies in one container.
+- **Scripts** (inheriting from `StrategyV2Base`) are the entry point for simple, self-contained strategies. Started via `start --script <file>` in the Hummingbot client. Scripts are ideal for **testing, learning, and prototyping** — all logic lives in one file and is easy to read and modify. All V2 scripts now inherit from `StrategyV2Base`.
+- **Controllers** are production-grade, modular sub-strategies designed for **advanced and long-running deployments**. They are not started directly — a special launcher script (`v2_with_controllers.py`) loads one or more controllers into a single bot instance, enabling multiple independent strategies to run in parallel. Controllers are more configurable, testable, and reusable than scripts.
 
 !!! tip "When to use each"
     | Use case | Component |
     |----------|-----------|
     | One-time order workflow (entry, exit, hedge) | **Executor** (via API) |
-    | Simple custom strategy or research | **Script** |
-    | Production multi-strategy deployment | **Controllers** via `v2_with_controllers` script |
+    | Learning, testing, or simple one-off strategy | **Script** |
+    | Production deployment with advanced logic | **Controller** via `v2_with_controllers` script |
+    | Multiple strategies running simultaneously | **Multiple Controllers** in one container |
     | LP position with auto-rebalancing | **LP Executor** + `lp_rebalancer` controller |
 
 ### Market Data Provider
