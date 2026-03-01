@@ -200,6 +200,7 @@ nav:
         - Arbitrage Executor: strategies/v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: strategies/v2-strategies/executors/xemm-executor.md
         - TWAP Executor: strategies/v2-strategies/executors/twapexecutor.md
+        - LP Executor: strategies/v2-strategies/executors/index.md
       - Strategies V1:
         - Strategies V1: strategies/v1-strategies/index.md
         - Pure Market Making (PMM): strategies/v1-strategies/pure-market-making.md
