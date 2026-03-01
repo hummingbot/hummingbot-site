@@ -69,6 +69,14 @@ hide:
 
     [:octicons-arrow-right-24: Hummingbot API Quickstart](./installation/hummingbot-api.md)
 
+-   :octicons-tools-16:{ .lg .middle } __Hummingbot Skills__
+
+    ---
+
+    AI agent skills for managing Hummingbot from any AI assistant — deploy bots, scan for arb/XEMM opportunities, manage LP positions, and receive status updates in Telegram or Discord.
+
+    [:octicons-arrow-right-24: Skills Documentation](./mcp/skills.md)
+
 </div>
 
 ---
