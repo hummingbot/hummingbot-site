@@ -51,6 +51,11 @@ gateway connect solana
 
 The connector includes automatic WSOL (Wrapped SOL) handling and support for the Token-2022 standard.
 
+**v2.13.0 Updates:**
+
+- **Token-2022 position close**: CLMM position closing now uses Token-2022 instructions, enabling full rent recovery when closing LP positions (PR [#600](https://github.com/hummingbot/gateway/pull/600))
+- **On-chain pool pricing**: Pool prices now use live on-chain whirlpool data instead of potentially stale Orca API data, improving accuracy for LP rebalancing decisions (PR [#603](https://github.com/hummingbot/gateway/pull/603))
+
 ## Configuration
 
 Configure Orca settings in `/conf/connectors/orca.yml`.

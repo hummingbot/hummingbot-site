@@ -40,6 +40,16 @@ The LP Executor manages the full lifecycle of an LP position:
 | `rebalance_threshold` | % price move that triggers rebalance |
 | `rebalance_seconds` | Minimum seconds between rebalances |
 
+### Tracking LP Performance
+
+The `lphistory` command in the Hummingbot client shows a summary of all closed LP positions, including fees earned, P&L, and rebalance events:
+
+```
+>>> lphistory
+```
+
+This is useful for evaluating the performance of `lp_rebalancer` strategies over time.
+
 ### Usage via Hummingbot API
 
 Use the [`lp-agent`](../../../mcp/skills.md) skill or call the API directly:
