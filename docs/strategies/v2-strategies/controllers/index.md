@@ -1,8 +1,16 @@
 ![](../diagrams/10.png)
 
-The **Controller** plays a crucial role within Hummingbot's Strategy V2 framework, serving as the orchestrator of the strategy's overall behavior. It interfaces with the `MarketDataProvider`, which includes OrderBook, Trades, and Candles, and forwards a series of `ExecutorActions` to the main strategy. The strategy then evaluates these actions, deciding to execute them based on its overarching rules and guidelines.
+**Controllers** are the production-grade building block of the Strategy V2 framework. They define reusable, modular sub-strategies that are more configurable and robust than standalone scripts — ideal for long-running deployments and multi-strategy setups.
 
-Users can now use controllers as sub-strategies allowing them to use multiple controllers in a single script or trade multiple pairs / configs in a single bot. 
+A controller interfaces with the `MarketDataProvider` (OrderBook, Trades, Candles) and emits `ExecutorActions` that instruct the parent script to create or stop executors. Controllers are **not started directly** — they are loaded by the special [`v2_with_controllers.py`](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) script, which can run multiple controllers simultaneously in a single bot instance.
+
+!!! tip "Controllers vs Scripts"
+    Use **controllers** when you need:
+    - Multiple strategies running in parallel (e.g., market making on 5 pairs)
+    - Production-grade, config-driven deployments
+    - Strategy logic that's reusable and independently testable
+
+    Use **scripts** for simpler, single-pair strategies or when learning the framework. 
 
 ## Base Classes
 
