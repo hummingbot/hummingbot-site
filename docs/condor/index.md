@@ -91,7 +91,7 @@ Once connected, you can use these commands:
 | `/start` | Welcome message and server status |
 | `/portfolio` | View detailed portfolio breakdown |
 | `/bots` | Check status of all trading bots |
-| `/executors` | Create and manage Position, Grid, DCA, TWAP, and LP executors |
+| `/executors` | Create and manage Position, Grid, DCA, TWAP, XEMM, and LP executors — includes guided Position Executor wizard with stop-loss, take-profit, and trailing stops *(enhanced in v2.13.0)* |
 | `/trade` | Unified trading - CEX limit/market orders and DEX swaps |
 | `/lp` | Liquidity pool management - view positions, pools, and explorer |
 | `/routines` | Run configurable Python scripts |

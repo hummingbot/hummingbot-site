@@ -44,3 +44,4 @@ User may also adjust the strategy based on market depth, volatility, and other m
 - [xemm_multiple_levels](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/xemm_multiple_levels.py)
 - [arbitrage_controller](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/arbitrage_controller.py)
 - [grid_strike](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/grid_strike.py)
+- [lp_rebalancer](https://github.com/hummingbot/hummingbot/blob/development/controllers/generic/lp_rebalancer.py) *(new in v2.13.0)* — Automated liquidity provision on CLMM DEXs. Manages LP positions via the `lp_executor`, auto-rebalancing when price moves out of range.

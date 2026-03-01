@@ -497,3 +497,12 @@ custom_markets:
 This connector supports the following `OrderType` constants:
 
 - `LIMIT`
+
+## 📡 v2.13.0 Connector Updates
+
+The XRPL connector was significantly refactored in v2.13.0:
+
+- **Polling-based user stream**: Replaced WebSocket subscriptions with periodic polling of account transaction history, improving reliability in unstable network conditions
+- **Enhanced deduplication**: Robust state tracking prevents duplicate transaction processing
+- **Worker pool integration**: Uses `XRPLWorkerPoolManager` for efficient query execution
+- **New example scripts**: See [`xrpl_arb_example.py`](https://github.com/hummingbot/hummingbot/blob/development/scripts/xrpl_arb_example.py) and [`xrpl_liquidity_example.py`](https://github.com/hummingbot/hummingbot/blob/development/scripts/xrpl_liquidity_example.py) for arbitrage and AMM liquidity management examples

@@ -149,9 +149,14 @@ Network configuration files (e.g., `/conf/chains/solana/mainnet-beta.yml`) conta
 
 #### Example: Solana mainnet-beta Configuration
 
+!!! tip "v2.13.0: `defaultNetworks` parameter"
+    Gateway v2.13.0 adds an optional `defaultNetworks` parameter to chain configs. When set, balance queries are scoped to only those networks, improving performance by avoiding unnecessary RPC calls to unused networks.
+
 ```yaml
 nodeURL: https://api.mainnet-beta.solana.com
 nativeCurrencySymbol: SOL
+defaultNetworks:
+  - mainnet-beta
 
 # Default compute units for a transaction
 # This sets the compute unit limit for transactions when not specified by the user

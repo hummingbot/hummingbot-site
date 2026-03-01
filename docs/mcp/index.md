@@ -44,6 +44,16 @@ You: What's the funding rate on ETH perpetual?
 AI: Let me check the current funding rate...
 ```
 
+```
+You: Open a long position on SOL-USDT with a 2% stop loss and 5% take profit
+AI: I'll create a Position Executor with those parameters...
+```
+
+```
+You: Add liquidity to the SOL-USDC pool on Meteora with $500, auto-rebalancing when out of range
+AI: I'll create an LP Executor with the lp_rebalancer controller...
+```
+
 ## Getting Started
 
 1. **[Install the MCP Server](./installation.md)** - Set up and connect to your AI assistant
