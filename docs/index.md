@@ -69,6 +69,14 @@ hide:
 
     [:octicons-arrow-right-24: Hummingbot API Quickstart](./installation/hummingbot-api.md)
 
+-   :octicons-tools-16:{ .lg .middle } __Hummingbot Skills__
+
+    ---
+
+    AI agent skills for managing Hummingbot from any AI assistant — deploy bots, scan for arb/XEMM opportunities, manage LP positions, and receive status updates in Telegram or Discord.
+
+    [:octicons-arrow-right-24: Skills Documentation](./mcp/skills.md)
+
 </div>
 
 ---
@@ -141,6 +149,14 @@ graph TB
     Model Context Protocol server that enables AI assistants like Claude and Gemini to utilize the Hummingbot API.
 
     [:octicons-arrow-right-24: Documentation](./mcp/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
+
+-   :octicons-tools-16:{ .lg .middle } __Hummingbot Skills__
+
+    ---
+
+    AI agent skills for managing Hummingbot — deploy bots, find arbitrage/XEMM opportunities, manage LP positions, and get status updates via Telegram or Discord.
+
+    [:octicons-arrow-right-24: Documentation](./mcp/skills.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/skills)
 
 -   :octicons-mark-github-16:{ .lg .middle } __Quants Lab__
 

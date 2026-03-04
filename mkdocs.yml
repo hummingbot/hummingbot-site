@@ -200,6 +200,7 @@ nav:
         - Arbitrage Executor: strategies/v2-strategies/executors/arbitrage-executor.md
         - XEMM Executor: strategies/v2-strategies/executors/xemm-executor.md
         - TWAP Executor: strategies/v2-strategies/executors/twapexecutor.md
+        - LP Executor: strategies/v2-strategies/executors/index.md
       - Strategies V1:
         - Strategies V1: strategies/v1-strategies/index.md
         - Pure Market Making (PMM): strategies/v1-strategies/pure-market-making.md
@@ -288,10 +289,11 @@ nav:
       - Installation: hummingbot-api/installation.md
       - Developer Guide: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
-    - Hummingbot MCP:
+    - Hummingbot MCP & Skills:
       - Hummingbot MCP: mcp/index.md
       - Installation: mcp/installation.md
       - Tools Reference: mcp/tools.md
+      - Skills: mcp/skills.md
     - Condor:
       - Condor: condor/index.md
     - Dashboard:
@@ -320,6 +322,8 @@ nav:
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
     - AscendEx: exchanges/ascendex/index.md
+    - Aevo: exchanges/aevo/index.md
+    - Backpack: exchanges/backpack/index.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
     - BingX: exchanges/bing_x/index.md
@@ -338,9 +342,10 @@ nav:
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
+    - Pacifica: exchanges/pacifica/index.md
     - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
-    - Uniswap : exchanges/gateway/uniswap.md
+    - Uniswap: exchanges/gateway/uniswap.md
     - Vertex: exchanges/vertex.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
@@ -351,6 +356,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.13.0: release-notes/2.13.0.md
     - 2.12.0: release-notes/2.12.0.md
     - 2.11.0: release-notes/2.11.0.md
     - 2.10.0: release-notes/2.10.0.md

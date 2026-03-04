@@ -435,6 +435,71 @@ manage_gateway_clmm_positions(
 
 ---
 
+## Executor Tools *(new in v2.13.0)*
+
+These tools allow AI assistants to create, manage, and monitor trading executors directly via the Hummingbot API. Executors automate finite trading workflows (open a position, run a grid, provide liquidity) and can be created without a running bot.
+
+### `create_executor`
+Create a new trading executor of any supported type.
+
+**Parameters:**
+- `executor_type` (string): One of `position`, `dca`, `grid`, `twap`, `xemm`, `lp`
+- `config` (object): Executor-specific configuration (exchange, trading pair, amount, etc.)
+
+**Returns:** Executor ID and initial status
+
+**Example Usage:**
+```
+AI: "Open a long position on SOL-USDT with a 2% stop loss and 5% take profit"
+AI: "Create a DCA buy order on ETH-USDT, 5 levels, $100 each, 1% spacing"
+AI: "Add liquidity to the SOL-USDC Meteora pool, auto-rebalancing when out of range"
+```
+
+### `stop_executor`
+Stop a running executor and optionally close its associated positions.
+
+**Parameters:**
+- `executor_id` (string): ID of the executor to stop
+
+**Returns:** Confirmation and final executor state
+
+### `get_executor_logs`
+Retrieve logs for a specific executor (ring buffer of recent events).
+
+**Parameters:**
+- `executor_id` (string): Executor ID to fetch logs for
+
+**Returns:** List of log entries with timestamps
+
+### `list_executors`
+List all active and recently completed executors.
+
+**Returns:** Array of executor objects with type, status, P&L, and config
+
+**Example Usage:**
+```
+AI: "Show me all my active trading executors"
+AI: "Which executors are currently profitable?"
+```
+
+### `get_executor_types`
+List all available executor types and their configuration schemas.
+
+**Returns:** Supported executor types with required config fields
+
+### Executor Type Configs
+
+| Executor | Use Case |
+|----------|----------|
+| `position` | Open/manage a directional position with stop-loss, take-profit, trailing stop |
+| `dca` | Dollar-cost average into a position across multiple price levels |
+| `grid` | Grid trading within a defined price range |
+| `twap` | Time-weighted order execution to minimize market impact |
+| `xemm` | Cross-exchange market making between maker and taker exchanges |
+| `lp` | Automated liquidity provision on CLMM DEXs (Meteora, Orca, Raydium) |
+
+---
+
 ## Tool Response Formats
 
 All tools return structured JSON responses that AI assistants can parse and present to users in natural language. The MCP server handles the technical API interactions while the AI provides user-friendly explanations and recommendations.

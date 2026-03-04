@@ -106,3 +106,8 @@ This connector supports the following `OrderType` constants:
 This connector supports the following position modes:
 
 - One-way
+
+
+## 📡 v2.13.0 Connector Updates
+
+- **Injective SDK upgraded to v1.13** (PR [#8017](https://github.com/hummingbot/hummingbot/pull/8017)): Brings compatibility with the latest Injective chain improvements and API changes. Update your Hummingbot installation to pick up the new SDK version.

@@ -168,12 +168,24 @@ Afer you create an account and create the API keys, you can enter them by using 
 
 ### HIP-3 Markets (Builder-Deployed Perpetuals)
 
-Hyperliquid Improvement Proposal 3 (HIP-3) enables permissionless creation of perpetual futures markets by builders. These markets expand the available trading pairs beyond the core validator-operated perpetuals. When trading HIP-3 markets with Hummingbot:
+Hyperliquid Improvement Proposal 3 (HIP-3) enables permissionless creation of perpetual futures markets by builders. These markets expand the available trading pairs beyond the core validator-operated perpetuals.
+
+**Trading Pair Format**
+
+HIP-3 markets use a namespaced format: `ISSUER:ASSET-QUOTE`. The issuer prefix identifies the builder who deployed the market. For example:
+
+```
+XYZ:TSLA-USD
+XYZ:AAPL-USD
+ABC:NVDA-USD
+```
+
+To find available HIP-3 markets, use the Hyperliquid API or search the [Hyperliquid app](https://app.hyperliquid.xyz). In Hummingbot, enter the full `ISSUER:ASSET-QUOTE` string as your `trading_pair`.
 
 **Key Considerations:**
 
 - **Margin Mode**: HIP-3 markets require **isolated margin only** (no cross margin). Each position's margin is separate.
-- **Asset ID**: HIP-3 assets use different asset IDs than standard perpetuals. Configure your trading pairs according to the HIP-3 asset naming conventions.
+- **Asset ID**: HIP-3 assets are identified by their full `issuer:asset` name — use the exact string from the Hyperliquid API.
 - **Trading API**: The trading API for HIP-3 perpetuals is unified with other HyperCore actions, so existing Hummingbot configurations work the same way.
 
 **Fees:**

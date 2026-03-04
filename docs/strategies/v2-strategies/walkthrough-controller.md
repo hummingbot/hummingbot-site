@@ -1,6 +1,6 @@
 
 !!! tip
-    Starting with [Hummingbot 2.0](https://lu.ma/ieyvhcft), you will be able to configure and deploy controllers using [Dashboard](../../dashboard/index.md), the new entry point for Hummingbot users launching in June 2024!
+    You can configure and deploy controllers using the [Hummingbot API](../../hummingbot-api/index.md) and manage them via [Condor](../../condor/index.md) (Telegram) or [Hummingbot MCP](../../mcp/index.md) (AI assistants).
 
 In this more complex example, the strategy logic is housed in a [Controller](../v2-strategies/controllers/index.md), and the user generates a controller configuration that is run with a generic script, which acts as a controller loader.
 

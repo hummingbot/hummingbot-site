@@ -121,6 +121,22 @@ Deploy, configure, and manage multiple bot instances:
 
 Manage trading strategies with two complementary systems:
 
+### Executors (`/executors`)
+Create and manage individual strategy executors:
+
+- Create, stop, and monitor executors of any type
+- Retrieve per-executor logs via ring buffer
+- Query available executor types and config templates
+
+**Key Endpoints:**
+
+- `GET /executors` - List all active executors
+- `POST /executors/create` - Create a new executor (position, dca, grid, twap, xemm, lp)
+- `POST /executors/{id}/stop` - Stop a running executor
+- `GET /executors/{id}/logs` - Stream executor logs *(new in v2.13.0)*
+- `GET /executors/types/available` - List registered executor types *(new in v2.13.0)*
+- `GET /executors/types/lp_executor/config` - Get LP executor config template *(new in v2.13.0)*
+
 ### Controllers (`/controllers`)
 Manage V2 strategy controllers:
 

@@ -110,7 +110,9 @@ This connector supports the following position modes:
 
 This perp exchange offers a paper trading mode: <https://testnet.binancefuture.com>
 
-Afer you create an account and create the API keys, you can enter them by using the `connect binance_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts. 
+Afer you create an account and create the API keys, you can enter them by using the `connect binance_perpetual_testnet` command within the Hummingbot client. Once connected, you should be able to use the testnet with the available perpetual strategies / scripts.
+
+**v2.13.0 Update:** Added support for Binance's `TRADIFI_PERPETUAL` contract type, which covers commodity and equity perpetuals (e.g., gold, oil, stock index futures). These markets use the same `binance_perpetual` connector — simply use the appropriate trading pair symbol. (PR [#8010](https://github.com/hummingbot/hummingbot/pull/8010))
 
 ## 🕯 Spot Candles Feed
 *OHLCV candles data collector from spot markets*

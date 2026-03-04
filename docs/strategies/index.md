@@ -18,23 +18,24 @@ To run a strategy, a user selects a strategy template, defines its input paramet
 
 Starting in 2023, Hummingbot Foundation began to iteratively introduce a new framework, called **Strategy V2**. The new framework allows you to build powerful, dynamic strategies using Lego-like components. **We highly recommend using the V2 Framework for all new strategies due to its enhanced modularity, flexibility, and scalability.** To learn more, check out [Architecture](../strategies/v2-strategies/index.md).
 
-There are two current ways that Hummingbot strategies can be defined within the V2 Framework:
+There are three core V2 components. Understanding how they differ helps you choose the right one:
 
-[Scripts](../strategies/scripts/index.md): A simple Python file that contains all strategy logic. We recommend starting with a script if you want a simple way to prototype your strategy.
+**[Executors](../strategies/v2-strategies/executors/index.md)** automate a discrete trading workflow — they manage orders for a specific task (e.g., open a position, execute a grid, provide liquidity) and are designed to **start and finish**. Executors can be created directly via the Hummingbot API without a running script. They are the building blocks that controllers orchestrate.
 
-[Controllers](../strategies/v2-strategies/controllers/index.md): Strategy logic is abstracted into a Controller, which may use Executors and other components for greater modularization. Controllers can be backtested and deployed using Dashboard, and a single loader Script may deploy and manage multiple Controller configurations.
+**[Scripts](../strategies/scripts/index.md)** are simple Python files that contain all strategy logic in one place. All scripts now inherit from `StrategyV2Base`, giving them access to Executors and the Market Data Provider. Scripts are **ideal for learning, testing, and prototyping** simple strategies. Started with `start --script <file>` in the Hummingbot client.
 
-Controllers are designed to add another layer of abstraction and circumvent the limit of Hummingbot to only run one strategy per bot instance. You can think of that as the most powerful and advanced setup that Hummingbot currently provides.
+**[Controllers](../strategies/v2-strategies/controllers/index.md)** are **production-grade**, modular sub-strategies loaded by the `v2_with_controllers.py` script. A single bot instance can run multiple controllers simultaneously — each trading different pairs or using different logic. Controllers are more configurable, reusable, and suited for advanced long-running deployments.
 
-This table may help you decide whether to use a Script or Controller for your strategy:
+This table may help you decide which component to use:
 
-| Script                                                                | Controller                                                                 |
-|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| The strategy is relatively simple                                                    | You want to manage the risk and diversify your portfolio in different controllers           |
-| The logic is very standard across different trading pairs                             | The strategy is complex and you want to isolate the decision making                         |
-| The strategy only trades on one trading pair                                          | You want to try multiple configs in the same bot                                            |
-| You are getting started with Executors and you want a simple way to code your strategy | The strategy trades on multiple trading pairs                                               |
-| Prototype a strategy                                                                  | You are familiar with the Strategy V2 and how the controllers interact with it              |
+| Use case | Component |
+|----------|-----------|
+| One-time trading task (entry, DCA, hedge) | **Executor** (via API) |
+| Learning the framework or prototyping | **Script** |
+| Simple single-pair production strategy | **Script** |
+| Complex strategy with multiple pairs or configs | **Controller** |
+| Multiple independent strategies in one bot | **Multiple Controllers** |
+| Automated LP with auto-rebalancing | **LP Executor** + `lp_rebalancer` controller |
 
 ## Legacy Strategies: V1 Framework
 

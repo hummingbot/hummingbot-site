@@ -1,14 +1,74 @@
 # Start and Stop Strategy
 
+## Creating a V2 Strategy Config
+
+Before starting a V2 strategy or controller, you need to create a config file using the `create` command.
+
+### V2 Script Config
+
+To create a config for a V2 script (located in `scripts/`):
+
+```
+create --v2-config <script_name>
+```
+
+**Example:**
+```
+create --v2-config simple_pmm_v2
+```
+
+This prompts you for strategy parameters and saves the config to `conf/scripts/`.
+
+### Controller Config
+
+To create a config for a controller (located in `controllers/`):
+
+```
+create --controller-config <controller_name>
+```
+
+**Example:**
+```
+create --controller-config generic.lp_rebalancer
+```
+
+This prompts you for controller parameters and saves the config to `conf/controllers/`.
+
 ## Starting a strategy
 
-After creating or importing a config file, use the `start` command to run the strategy.
+### V2 Strategy (Recommended)
+
+To start a V2 strategy or controller using a config file:
+
+```
+start --v2 <config_file_name>
+```
+
+**Example:**
+```
+start --v2 conf_simple_pmm_v2_config_1.yml
+```
+
+The config file must exist in `conf/scripts/` (for V2 scripts) or `conf/controllers/` (for controllers).
 
 ![](../assets/img/start-command.gif)
 
+### V1 Strategy (Legacy)
+
+For classic V1 strategies (Pure Market Making, XEMM, etc.), use `import` to load a config file first, then `start`:
+
+```
+import
+start
+```
+
 ## Stop a running strategy
 
-Run `stop` command to stop the running strategy. Doing this will also cancel all active orders.
+Run `stop` to stop the running strategy and cancel all active orders.
+
+```
+stop
+```
 
 ![](../assets/img/stop-command.png)
 

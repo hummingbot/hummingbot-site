@@ -91,10 +91,11 @@ Once connected, you can use these commands:
 | `/start` | Welcome message and server status |
 | `/portfolio` | View detailed portfolio breakdown |
 | `/bots` | Check status of all trading bots |
-| `/trade` | Unified trading - CEX orders and DEX swaps |
-| `/lp` | Liquidity pool management |
+| `/executors` | Create and manage Position, Grid, DCA, TWAP, XEMM, and LP executors — includes guided Position Executor wizard with stop-loss, take-profit, and trailing stops *(enhanced in v2.13.0)* |
+| `/trade` | Unified trading - CEX limit/market orders and DEX swaps |
+| `/lp` | Liquidity pool management - view positions, pools, and explorer |
 | `/routines` | Run configurable Python scripts |
 | `/servers` | Manage Hummingbot API servers |
 | `/keys` | Configure exchange API credentials |
-| `/gateway` | Deploy Gateway for DEX trading |
+| `/gateway` | Deploy and configure Gateway for DEX trading |
 | `/admin` | Admin panel - manage users and access |

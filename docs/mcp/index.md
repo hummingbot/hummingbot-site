@@ -1,3 +1,12 @@
+# Hummingbot MCP & Skills
+
+This section covers two ways to connect AI assistants to Hummingbot:
+
+- **[MCP Server](./index.md)** — A running server that implements the [Model Context Protocol](https://modelcontextprotocol.io), letting Claude, Gemini, and ChatGPT control your trading infrastructure via natural language
+- **[Skills](./skills.md)** — Self-contained agent capabilities installable via `npx`, providing commands and scripts for any AI agent framework including [OpenClaw](https://openclaw.ai)
+
+---
+
 # Hummingbot MCP Server
 
 The Hummingbot MCP Server is an interface to [Hummingbot API](../hummingbot-api/index.md) that enables AI assistants like Claude, Gemini, and ChatGPT to control your trading infrastructure using natural language.
@@ -35,10 +44,21 @@ You: What's the funding rate on ETH perpetual?
 AI: Let me check the current funding rate...
 ```
 
+```
+You: Open a long position on SOL-USDT with a 2% stop loss and 5% take profit
+AI: I'll create a Position Executor with those parameters...
+```
+
+```
+You: Add liquidity to the SOL-USDC pool on Meteora with $500, auto-rebalancing when out of range
+AI: I'll create an LP Executor with the lp_rebalancer controller...
+```
+
 ## Getting Started
 
 1. **[Install the MCP Server](./installation.md)** - Set up and connect to your AI assistant
 2. **[Explore Available Tools](./tools.md)** - Learn about the trading and portfolio management tools
+3. **[Browse Skills](./skills.md)** - Install agent skills for OpenClaw, Claude Code, and other frameworks
 
 ## Supported AI Assistants
 
