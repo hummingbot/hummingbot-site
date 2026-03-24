@@ -143,21 +143,27 @@ flowchart TB
 - Human-maintained connectors ensure reliability and correctness
 - MCP Protocol bridges the two layers cleanly
 
-## Agent Folder Structure
+## Agent Structure
 
-Each Condor Agent is self-contained in a simple folder:
+Each Condor Agent is a **folder**. Inside that folder, an **agent** defines the strategy and an **session** records everything that happens when it runs.
 
 ```
 agents/
 └── {agent_id}/
-    ├── strategy.md      # Strategy definition (YAML frontmatter + instructions)
-    ├── journal.md       # Persistent memory (learnings, state, recent actions)
-    └── tracker.md       # Quantitative history (ticks, executors, snapshots)
+    ├── strategy.md          # Strategy definition (YAML frontmatter + Markdown instructions)
+    └── sessions/
+        └── {session_id}/
+            ├── journal.md   # Persistent memory — learnings, current state, recent actions
+            ├── tracker.md   # Quantitative history — ticks, executors, snapshots
+            └── snapshots/
+                ├── tick-001.md
+                ├── tick-002.md
+                └── ...
 ```
 
-### strategy.md — Define the Behavior
+### The Agent: strategy.md
 
-The strategy file is the heart of the agent. YAML frontmatter sets configuration; Markdown instructions tell the LLM how to reason:
+The strategy file defines *what the agent does*. YAML frontmatter sets configuration and risk limits; Markdown instructions tell the LLM how to reason, what data to use, and what actions are permitted:
 
 ```yaml
 ---
@@ -188,9 +194,9 @@ Provide concentrated liquidity on Meteora CLMM pools for trending tokens.
 ...
 ```
 
-### journal.md — Persistent Memory
+### The Session: journal.md
 
-The journal maintains the agent's working memory across ticks. It captures what the agent has learned, its current state, and what it did recently:
+Each time an agent runs, it creates a session. The journal is the session's working memory — it captures learnings that persist across ticks, the agent's current state, and a log of recent actions:
 
 ```markdown
 # Journal - lp-agent-001
@@ -209,11 +215,11 @@ Wallet: 0.18 SOL | Positions: 4 active | Net PnL: +6.42 SOL
 - **#27** (14:03) Created WIF-SOL LP — Trending token, good volume
 ```
 
-Learnings are automatically deduplicated, recency-prioritized, and kept under 4KB so they fit efficiently in every prompt.
+Learnings are automatically deduplicated, recency-prioritized, and kept under 4KB to fit efficiently in every prompt.
 
-### tracker.md — Quantitative History
+### The Session: tracker.md
 
-The tracker provides structured data for risk management, backtesting, and performance analysis:
+The tracker provides structured quantitative history for risk management, analysis, and backtesting:
 
 ```markdown
 # Tracker - lp-agent-001
@@ -228,6 +234,10 @@ The tracker provides structured data for risk management, backtesting, and perfo
 ## Snapshots
 - 2026-03-19 14:05 | pnl=$+6.42 | volume=$234 | open=4 | exposure=$200
 ```
+
+### The Session: Snapshots
+
+Every tick, the agent writes a full snapshot of its state to `snapshots/tick-NNN.md`. Snapshots are the complete record of what the agent observed, decided, and did at each point in time — useful for debugging, auditing, and backtesting.
 
 ## Risk Management
 
