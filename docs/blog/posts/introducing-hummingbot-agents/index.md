@@ -11,13 +11,15 @@ categories:
 
 ![cover](cover.webp)
 
-We're excited to introduce **Condor Agents**, an open source standard for building autonomous trading agents. Similar to [Agent Skills](https://agentskills.io/home) for general-purpose AI agents, Condor Agents provides a standardized way to create, run, and share trading agents that can execute across centralized and decentralized exchanges.
+Algorithmic trading bots are fast and consistent—but rigid. They follow pre-programmed rules and break when markets change. Large language models are flexible and adaptive—but lack the precision and reliability needed to execute real trades.
+
+**Condor Agents** bridges this gap: an open source standard for building autonomous trading agents that combine LLM-powered reasoning with deterministic, auditable trade execution.
 
 <!-- more -->
 
 ## What is a Trading Agent?
 
-A trading agent is an autonomous software system that makes trading decisions and executes trades on behalf of a user. Unlike traditional algorithmic trading bots that follow rigid, pre-programmed rules, a modern trading agent leverages large language models (LLMs) to:
+A trading agent is an autonomous software system that makes trading decisions and executes trades on behalf of a user. Unlike traditional algorithmic bots that follow rigid rules, a trading agent leverages large language models (LLMs) to:
 
 - **Interpret market conditions** using natural language understanding
 - **Adapt strategies** based on changing market dynamics
@@ -26,46 +28,23 @@ A trading agent is an autonomous software system that makes trading decisions an
 
 Trading agents represent the next evolution of automated trading—combining the speed and consistency of algorithmic execution with the flexibility and reasoning capabilities of AI.
 
-## Why Define an Open Source Standard for Trading Agents?
+## The Core Problem: Probabilistic vs. Deterministic
 
-Building trading agents from scratch presents significant challenges. An open source standard addresses these by establishing clear boundaries and best practices:
+The most critical challenge in trading agent design is that **LLMs and trade execution have fundamentally different requirements**:
 
-### Separating Probabilistic from Deterministic
+- **LLMs are probabilistic**: the same input may produce different outputs. This is a feature for reasoning—but a bug for execution.
+- **Trade execution must be deterministic**: the same instruction must always produce the same result, every time.
 
-The most critical architectural decision in trading agent design is separating:
+Mixing these two concerns is the root cause of most trading agent failures—unpredictable behavior, unexpected actions, and hard-to-audit logic.
 
-- **Probabilistic Layer (Agent)**: The LLM-powered decision-making process that interprets market conditions, reasons about strategy, and decides what actions to take. This is inherently non-deterministic—the same inputs may produce different outputs.
+Condor Agents solves this by **strictly separating the two layers**:
 
-- **Deterministic Layer (Execution)**: The trade execution infrastructure that reliably converts decisions into orders. Given the same instruction, it must always produce the same result.
+| Layer | Role | Technology |
+|-------|------|------------|
+| **Probabilistic (Agent)** | Interprets market conditions, reasons about strategy, decides what to do | LLM (Claude, GPT, Gemini) |
+| **Deterministic (Execution)** | Converts decisions into orders with reliability and auditability | Hummingbot API |
 
 By cleanly separating these concerns, you can audit, test, and improve each layer independently.
-
-### Security
-
-Trading involves real capital, making security paramount:
-
-- **Open source code** enables public audits of agent behavior
-- **Standardized execution** prevents unexpected or malicious actions
-- **Clear boundaries** between what the AI can and cannot do
-- **Risk guardrails** that cannot be bypassed by the agent
-
-### Community
-
-An open standard enables a thriving ecosystem:
-
-- **Share strategies** as portable, documented agent definitions
-- **Learn from others** by studying community-submitted agents
-- **Improve together** through shared learnings and best practices
-- **Build on proven patterns** rather than starting from scratch
-
-### Data Retention
-
-Trading agents need persistent memory to improve over time:
-
-- **Journal files** capture learnings across sessions
-- **Snapshots** record state at every tick for analysis
-- **Trackers** maintain quantitative history for backtesting
-- **Human-readable formats** (Markdown) enable easy inspection
 
 ## The Trading Agentic Loop
 
@@ -103,7 +82,7 @@ Each tick through the loop is **user-defined in Markdown**—the strategy file s
 
 **Condor** is the harness purpose-built for running Condor Agents. It orchestrates the agentic loop, manages agent state, and connects to execution infrastructure.
 
-The key innovation is the clean separation between:
+The architecture follows a simple principle: the agent thinks **vertically** (sequential ticks through time), while execution spreads **horizontally** (across trading venues):
 
 ```mermaid
 flowchart TB
@@ -150,27 +129,23 @@ flowchart TB
     style VENUES fill:#0a1628,stroke:#e94560
 ```
 
-### The Vertical Loop (Probabilistic)
+**The Vertical Loop (Probabilistic)** runs sequentially tick by tick:
 
-The agentic loop runs **vertically**—a sequential cycle that ticks through time:
+- Strategy behavior is user-defined in `strategy.md`
+- The journal captures learnings that accumulate over time
+- Full state is snapshotted every tick for analysis and debugging
+- Any compatible LLM (Claude, GPT, Gemini) powers the reasoning
 
-- **User-defined in Markdown**: Strategy behavior specified in `strategy.md`
-- **Persistent memory**: Journal captures learnings that improve the agent over time
-- **Snapshots every tick**: Complete state recorded for analysis and debugging
-- **LLM-powered reasoning**: Decisions made by any compatible model (Claude, GPT, Gemini)
+**The Horizontal Network (Deterministic)** connects to trading venues:
 
-### The Horizontal Network (Deterministic)
-
-The execution layer spreads **horizontally**—a web of connections to trading venues:
-
-- **Hummingbot API** provides standardized access to 50+ exchanges
-- **Deterministic execution**: Same instruction always produces same result
-- **Human-maintained connectors** ensure reliability and correctness
-- **MCP Protocol** bridges the probabilistic and deterministic layers
+- Hummingbot API provides standardized access to 50+ exchanges
+- Same instruction always produces same result—no surprises
+- Human-maintained connectors ensure reliability and correctness
+- MCP Protocol bridges the two layers cleanly
 
 ## Agent Folder Structure
 
-Each Condor Agent is defined by a simple folder structure:
+Each Condor Agent is self-contained in a simple folder:
 
 ```
 agents/
@@ -180,9 +155,9 @@ agents/
     └── tracker.md       # Quantitative history (ticks, executors, snapshots)
 ```
 
-### Strategy File
+### strategy.md — Define the Behavior
 
-The strategy file defines the agent's trading behavior using YAML frontmatter and markdown instructions:
+The strategy file is the heart of the agent. YAML frontmatter sets configuration; Markdown instructions tell the LLM how to reason:
 
 ```yaml
 ---
@@ -213,9 +188,9 @@ Provide concentrated liquidity on Meteora CLMM pools for trending tokens.
 ...
 ```
 
-### Journal: Persistent Memory
+### journal.md — Persistent Memory
 
-The journal maintains the agent's working memory across ticks:
+The journal maintains the agent's working memory across ticks. It captures what the agent has learned, its current state, and what it did recently:
 
 ```markdown
 # Journal - lp-agent-001
@@ -234,9 +209,11 @@ Wallet: 0.18 SOL | Positions: 4 active | Net PnL: +6.42 SOL
 - **#27** (14:03) Created WIF-SOL LP — Trending token, good volume
 ```
 
-### Tracker: Quantitative History
+Learnings are automatically deduplicated, recency-prioritized, and kept under 4KB so they fit efficiently in every prompt.
 
-The tracker provides structured data for analysis and risk management:
+### tracker.md — Quantitative History
+
+The tracker provides structured data for risk management, backtesting, and performance analysis:
 
 ```markdown
 # Tracker - lp-agent-001
@@ -254,7 +231,7 @@ The tracker provides structured data for analysis and risk management:
 
 ## Risk Management
 
-Every agent includes built-in risk guardrails:
+Every agent includes a built-in Risk Engine that validates both pre-tick conditions and individual tool calls, preventing agents from exceeding configured limits:
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
@@ -266,57 +243,36 @@ Every agent includes built-in risk guardrails:
 | `max_cost_per_day_usd` | $5 | Daily LLM cost limit |
 | `cooldown_after_loss_sec` | 300 | Pause after hitting loss limit |
 
-The Risk Engine validates both pre-tick conditions and individual tool calls, preventing agents from exceeding configured limits.
+## Why an Open Standard?
 
-## Self-Improvement Through Learnings
+Defining Condor Agents as an open standard—not just a product—creates compounding benefits:
 
-One of the most powerful features is the agent's ability to learn from experience. As agents encounter issues, they record learnings that persist across sessions:
+**Security**: Open source code enables public audits. Clear boundaries define what the AI can and cannot do. Risk guardrails cannot be bypassed by the agent.
 
-- **Automatic Deduplication**: Similar learnings are merged to prevent prompt bloat
-- **Recency Priority**: Recent learnings appear first in the agent's context
-- **Compact Format**: Learnings stay under 4KB to fit efficiently in prompts
+**Community**: Agents become portable and shareable. Traders can publish strategies, learn from each other's approaches, and build on proven patterns rather than starting from scratch.
 
-Example learnings from a live LP agent:
-
-- Token addresses must match exactly between GeckoTerminal and pool_info
-- Meteora DLMM positions require tighter ranges than standard CLMM
-- Some pools have high fees that offset LP returns—check fee tier first
-- Position rebalancing during high volatility leads to impermanent loss
-
-## Dependencies
-
-Condor Agents integrates with the Hummingbot ecosystem:
-
-- **[Hummingbot Skills](/skills)**: Reusable capabilities for market data, portfolio management, and trading operations
-- **[Hummingbot MCP Server](/mcp-server)**: Model Context Protocol server for AI assistant integration
-- **[Hummingbot API](/api)**: REST API for programmatic trading and executor management
-
-## Why Build with Condor Agents?
-
-| Benefit | Description |
-|---------|-------------|
-| **Security** | Open source, auditable code with deterministic execution |
-| **Reliability** | Human-maintained connectors ensure consistent behavior |
-| **Scale** | Manage 100+ trading agents from a single API |
-| **Speed** | Cython-optimized execution under the hood |
-| **Efficiency** | MCP server reduces AI token usage with structured responses |
-| **Connectors** | Access to 50+ CEXs and DEXs |
-| **Community** | Build using templates submitted by other traders |
+**Ecosystem**: A standard interface means tools, dashboards, and integrations can be built once and work with any agent. The Hummingbot ecosystem—50+ exchange connectors, MCP server, API—plugs in out of the box.
 
 ## Getting Started
 
-To create your first Condor Agent:
+Condor Agents integrates with the Hummingbot ecosystem:
 
-1. **Install Condor**: Set up the Condor harness and Hummingbot API
-2. **Create Strategy**: Define your trading strategy in a `.md` file
-3. **Configure Risk Limits**: Set appropriate guardrails for your agent
-4. **Run Agent**: Start the tick engine to begin autonomous trading
+- **[Hummingbot API](/hummingbot-api)**: REST API for programmatic trading and executor management
+- **[Hummingbot MCP Server](/mcp)**: Model Context Protocol server for AI assistant integration
+- **[Hummingbot Skills](/skills)**: Reusable capabilities for market data, portfolio management, and trading operations
 
-Check out our [Condor Agents documentation](/agents) for detailed guides and example strategies.
+To create your first agent:
+
+1. **Install**: Set up [Condor](/condor) and [Hummingbot API](/hummingbot-api/installation)
+2. **Create** a strategy folder with `strategy.md`, `journal.md`, and `tracker.md`
+3. **Configure** risk limits in the YAML frontmatter
+4. **Run** the tick engine to begin autonomous trading
+
+See the [Condor Agents documentation](/condor) for detailed guides and example strategies.
 
 ## What's Next
 
-We're actively developing the Condor Agents standard with plans for:
+We're actively developing the standard with plans for:
 
 - **Agent Templates**: Community-submitted strategies for various trading styles
 - **Backtesting Integration**: Test agents against historical data before deployment
