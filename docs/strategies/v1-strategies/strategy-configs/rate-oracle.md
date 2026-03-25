@@ -1,5 +1,8 @@
 This new feature provides real time, most up-to-date exchange rate on any given token or currency from a reliable and trustworthy data source.
 
+!!! note "Hummingbot API router"
+    If you are using Hummingbot API, see the dedicated `/rate-oracle` endpoints in [API Routers](../../../hummingbot-api/routers.md) for programmatic source/config/rate management.
+
 !!! note
     Use rate oracle with the [cross exchange market making](../cross-exchange-market-making.md) and arbitrage strategies.
 
