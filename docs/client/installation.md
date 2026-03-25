@@ -226,7 +226,7 @@ hummingbot/
 |--------|-------------|
 | `/conf/connectors` | Exchange API keys encrypted by your [password](./password.md) |
 | `/conf/strategies` | Strategy configs created with `create` command |
-| `/conf/scripts` | Script configs created with `create --script-config` |
+| `/conf/scripts` | Script configs created with `create --v2-config` |
 | `/logs` | Log files from your trading sessions |
 | `/data` | SQLite databases and CSV trade history |
 | `/scripts` | Add custom scripts here for use with `start` command |

@@ -14,7 +14,7 @@ create --v2-config <script_name>
 
 **Example:**
 ```
-create --v2-config simple_pmm_v2
+create --v2-config simple_pmm
 ```
 
 This prompts you for strategy parameters and saves the config to `conf/scripts/`.
@@ -29,7 +29,7 @@ create --controller-config <controller_name>
 
 **Example:**
 ```
-create --controller-config generic.lp_rebalancer
+create --controller-config generic.lp_rebalancer.lp_rebalancer
 ```
 
 This prompts you for controller parameters and saves the config to `conf/controllers/`.
@@ -46,10 +46,10 @@ start --v2 <config_file_name>
 
 **Example:**
 ```
-start --v2 conf_simple_pmm_v2_config_1.yml
+start --v2 conf_simple_pmm_1.yml
 ```
 
-The config file must exist in `conf/scripts/` (for V2 scripts) or `conf/controllers/` (for controllers).
+The config file must exist in `conf/scripts/`. It must include `script_file_name` pointing at the script to run (for example `simple_pmm.py`). Controller-based runs use the `v2_with_controllers` loader; see [Controller Walkthrough](../strategies/v2-strategies/walkthrough-controller.md).
 
 ![](../assets/img/start-command.gif)
 
@@ -98,8 +98,10 @@ Hummingbot can automatically start the execution of a previously configured trad
    ```yaml
    environment:
      - CONFIG_PASSWORD=password
-     - CONFIG_FILE_NAME=simple_pmm_example.py
-     - SCRIPT_CONFIG=conf_simple_pmm_example_config_1.yml  # Optional for scripts
+     # V2 script or controller loader: YAML in conf/scripts (maps to quickstart --v2)
+     - SCRIPT_CONFIG=conf_v2_with_controllers_1.yml
+     # Classic V1 strategy: YAML file name in conf/strategies (maps to quickstart -f)
+     # - CONFIG_FILE_NAME=pure_market_making.yml
      - HEADLESS_MODE=true  # Optional: Enable headless mode
    ```
 
@@ -137,17 +139,21 @@ Hummingbot can automatically start the execution of a previously configured trad
 Use the following command:
 
 ```bash
-bin/hummingbot_quickstart.py -p CONFIG_PASSWORD -f SCRIPT_FILE_NAME [-c CONFIG_FILE_NAME] [--headless]
+# V2 script or controller loader (YAML in conf/scripts)
+bin/hummingbot_quickstart.py -p CONFIG_PASSWORD --v2 CONFIG_YML [--headless]
+
+# Legacy V1 strategy (YAML in conf/strategies)
+bin/hummingbot_quickstart.py -p CONFIG_PASSWORD -f STRATEGY_CONFIG_YML [--headless]
 ```
 
 **Example:**
 
 ```bash
-# Regular mode with autostart
-bin/hummingbot_quickstart.py -p mypassword -f simple_pmm_example.py -c conf_simple_pmm_example_config_1.yml
+# V2: autostart using a script config under conf/scripts
+bin/hummingbot_quickstart.py -p mypassword --v2 conf_simple_pmm_1.yml
 
-# Headless mode with autostart
-bin/hummingbot_quickstart.py -p mypassword -f simple_pmm_example.py -c conf_simple_pmm_example_config_1.yml --headless
+# V1: autostart using a strategy config under conf/strategies
+bin/hummingbot_quickstart.py -p mypassword -f conf_pure_mm_1.yml --headless
 ```
 
 ## Headless Mode
@@ -168,7 +174,7 @@ Hummingbot can run in headless mode, which allows the bot to operate without the
 #### Using Command Line Arguments
 
 ```bash
-bin/hummingbot_quickstart.py --headless -p PASSWORD -f CONFIG_FILE_NAME [-c SCRIPT_CONFIG]
+bin/hummingbot_quickstart.py --headless -p PASSWORD [--v2 V2_CONFIG_YML | -f V1_STRATEGY_YML]
 ```
 
 Where:
@@ -177,9 +183,9 @@ Where:
 
 - `-p PASSWORD`: Your Hummingbot password
 
-- `-f CONFIG_FILE_NAME`: Strategy config file (`.yml`) or script file (`.py`)
+- `--v2 V2_CONFIG_YML`: V2 script config file name in `conf/scripts/` (same as the CLI `start --v2` argument)
 
-- `-c SCRIPT_CONFIG`: (Optional) Configuration file for scripts
+- `-f V1_STRATEGY_YML`: V1 strategy config file name in `conf/strategies/`
 
 #### Using Environment Variables
 
@@ -188,8 +194,8 @@ You can also use environment variables, which is especially useful for Docker de
 ```bash
 export HEADLESS_MODE=true
 export CONFIG_PASSWORD=your_password
-export CONFIG_FILE_NAME=your_strategy.yml
-export SCRIPT_CONFIG=your_script_config.yml  # Optional for scripts
+export CONFIG_FILE_NAME=your_v1_strategy.yml  # V1 only: conf/strategies
+export SCRIPT_CONFIG=your_v2_script_config.yml  # V2: conf/scripts (optional; same as --v2)
 ```
 
 ### Important Considerations for Headless Mode

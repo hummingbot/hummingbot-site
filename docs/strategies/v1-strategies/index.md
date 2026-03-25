@@ -24,7 +24,6 @@ These strategies are included in each monthly release. They are not maintained b
 | [liquidity_mining](../v1-strategies/liquidity-mining.md)                        | Provide liquidity on multiple pairs using a single base or quote token |
 | [perpetual_market_making](../v1-strategies/perpetual-market-making.md)          | Community| Market-making strategy for perpetual swap markets |
 | [spot_perpetual_arbitrage](../v1-strategies/spot-perpetual-arbitrage.md)        | Exploits price differences between spot and perpetual swap exchanges |
-| [twap](../v1-strategies/twap.md)                                                | Places a batch of limit orders over a period of time |
 
 
 ## Contributing Strategies

@@ -22,7 +22,7 @@ There are three core V2 components. Understanding how they differ helps you choo
 
 **[Executors](../strategies/v2-strategies/executors/index.md)** automate a discrete trading workflow — they manage orders for a specific task (e.g., open a position, execute a grid, provide liquidity) and are designed to **start and finish**. Executors can be created directly via the Hummingbot API without a running script. They are the building blocks that controllers orchestrate.
 
-**[Scripts](../strategies/scripts/index.md)** are simple Python files that contain all strategy logic in one place. All scripts now inherit from `StrategyV2Base`, giving them access to Executors and the Market Data Provider. Scripts are **ideal for learning, testing, and prototyping** simple strategies. Started with `start --script <file>` in the Hummingbot client.
+**[Scripts](../strategies/scripts/index.md)** are simple Python files that contain all strategy logic in one place. All scripts now inherit from `StrategyV2Base`, giving them access to Executors and the Market Data Provider. Scripts are **ideal for learning, testing, and prototyping** simple strategies. After you create a YAML config with `create --v2-config`, start with `start --v2 <config_file_name.yml>` in the Hummingbot client.
 
 **[Controllers](../strategies/v2-strategies/controllers/index.md)** are **production-grade**, modular sub-strategies loaded by the `v2_with_controllers.py` script. A single bot instance can run multiple controllers simultaneously — each trading different pairs or using different logic. Controllers are more configurable, reusable, and suited for advanced long-running deployments.
 

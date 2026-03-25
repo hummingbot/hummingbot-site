@@ -2,7 +2,7 @@
 
 **Controllers** are the production-grade building block of the Strategy V2 framework. They define reusable, modular sub-strategies that are more configurable and robust than standalone scripts — ideal for long-running deployments and multi-strategy setups.
 
-A controller interfaces with the `MarketDataProvider` (OrderBook, Trades, Candles) and emits `ExecutorActions` that instruct the parent script to create or stop executors. Controllers are **not started directly** — they are loaded by the special [`v2_with_controllers.py`](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_with_controllers.py) script, which can run multiple controllers simultaneously in a single bot instance.
+A controller interfaces with the `MarketDataProvider` (OrderBook, Trades, Candles) and emits `ExecutorActions` that instruct the parent script to create or stop executors. Controllers are **not started directly** — they are loaded by the special [`v2_with_controllers.py`](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_with_controllers.py) script, which can run multiple controllers simultaneously in a single bot instance.
 
 !!! tip "Controllers vs Scripts"
     Use **controllers** when you need:
@@ -14,42 +14,41 @@ A controller interfaces with the `MarketDataProvider` (OrderBook, Trades, Candle
 
 ## Base Classes
 
-Currently, the controller base classes available are:
+Controller base classes live under [`hummingbot/strategy_v2/controllers/`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy_v2/controllers):
 
-* [controller_base.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/smart_components/controllers/controller_base.py): Defines `ControllerBase`
-* [directional_trading_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/directional_trading_controller_base.py): Designed for indicator-based directional strategies, inherits from `ControllerBase`
-* [market_making_controller_base.py](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/smart_components/controllers/market_making_controller_base.py): Designed for two-side market making strategies, inherits from `ControllerBase`
+* [controller_base.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/controllers/controller_base.py): Defines `ControllerBase`
+* [directional_trading_controller_base.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/controllers/directional_trading_controller_base.py): Indicator-based directional strategies, inherits from `ControllerBase`
+* [market_making_controller_base.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/controllers/market_making_controller_base.py): Two-sided market making, inherits from `ControllerBase`
+
+Implementations live under the top-level [`/controllers`](https://github.com/hummingbot/hummingbot/tree/master/controllers) directory in the repo. The CLI name is the path with `/` replaced by `.` (for example `market_making.pmm_simple`, `generic.lp_rebalancer.lp_rebalancer`).
 
 ## Directional Trading Controllers
 
-These strategies aim to profit from predicting the market's direction (up or down) and takes positions based on signals indicating the future price movement.
+These strategies aim to profit from predicting the market direction and take positions based on signals.
 
-Suitable for strategies that rely on market trends, momentum, or other indicators predicting price movements. 
-
-Customizing signal generation (`get_signal`) allows users to change various analytical models to generate trade signals and determine the conditions under which trades should be executed or stopped.
-
-- [bollinger_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/bollinger_v1.py)
-- [macd_bb_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/macd_bb_v1.py)
-- [trend_follower_v1](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/trend_follower_v1.py)
-- [dman_v3](https://github.com/hummingbot/hummingbot/blob/development/controllers/directional_trading/dman_v3.py)
+- [bollinger_v1](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v1.py)
+- [bollinger_v2](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollinger_v2.py)
+- [bollingrid](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/bollingrid.py)
+- [macd_bb_v1](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/macd_bb_v1.py)
+- [supertrend_v1](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/supertrend_v1.py)
+- [ai_livestream](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/ai_livestream.py)
+- [dman_v3](https://github.com/hummingbot/hummingbot/blob/master/controllers/directional_trading/dman_v3.py)
 
 ## Market Making Controllers
 
-These strategies provide liquidity by placing buy and sell orders near the current market price, aiming to profit from the spread between these orders.
-
-Customization involves defining how price levels are selected (`get_levels_to_execute`), how orders are priced and sized (`get_price_and_amount`), and when orders should be refreshed or stopped early.
-
-User may also adjust the strategy based on market depth, volatility, and other market conditions to optimize spread and order placement.
-
-- [pmm_simple](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_simple.py)
-- [pmm_dynamic](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/pmm_dynamic.py)
-- [dman_maker](https://github.com/hummingbot/hummingbot/blob/development/controllers/market_making/dman_maker.py)
+- [pmm_simple](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/pmm_simple.py)
+- [pmm_dynamic](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/pmm_dynamic.py)
 - [dman_maker_v2](https://github.com/hummingbot/hummingbot/blob/master/controllers/market_making/dman_maker_v2.py)
-
 
 ## Other Controllers
 
 - [xemm_multiple_levels](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/xemm_multiple_levels.py)
 - [arbitrage_controller](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/arbitrage_controller.py)
 - [grid_strike](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/grid_strike.py)
-- [lp_rebalancer](https://github.com/hummingbot/hummingbot/blob/development/controllers/generic/lp_rebalancer.py) *(new in v2.13.0)* — Automated liquidity provision on CLMM DEXs. Manages LP positions via the `lp_executor`, auto-rebalancing when price moves out of range.
+- [multi_grid_strike](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/multi_grid_strike.py)
+- [stat_arb](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/stat_arb.py)
+- [hedge_asset](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/hedge_asset.py)
+- [pmm_v1](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/pmm_v1.py)
+- [pmm_mister](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/pmm_mister.py)
+- [quantum_grid_allocator](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/quantum_grid_allocator.py)
+- [lp_rebalancer](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/lp_rebalancer/lp_rebalancer.py) *(new in v2.13.0)* — Automated liquidity provision on CLMM DEXs. The Python package is `controllers/generic/lp_rebalancer/`; the CLI name is `generic.lp_rebalancer.lp_rebalancer`.

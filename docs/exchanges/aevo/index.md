@@ -13,6 +13,7 @@
 ## ℹ️ Exchange Info
 
 - **Website**: <https://app.aevo.xyz/>
+- **Aevo referral link:** <https://app.aevo.xyz/r/Dour-Darkened-Cohen>
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/aevo/?type=perpetual>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/aevo>
 - **API Docs**: <https://api-docs.aevo.xyz/reference/overview>

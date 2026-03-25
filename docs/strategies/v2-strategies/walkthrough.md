@@ -4,11 +4,9 @@ Below, we provide a walkthrough to illustrate the StrategyV2 framework, which we
 
 ## What we'll cover
 
-In this example, we'll show you how to configure and run a simple directional trading strategy using the [v2_directional_rsi.py](https://github.com/hummingbot/hummingbot/blob/development/scripts/v2_directional_rsi.py) starter script.
+In this example, we'll show you how to configure and run a simple market-making script using [`simple_pmm.py`](https://github.com/hummingbot/hummingbot/blob/master/scripts/simple_pmm.py).
 
-This strategy executes trades on a spot or perpetual exchange based on the RSI signals from the [Market Data Provider](./data/index.md), creating buy actions when the RSI is below a low threshold (indicating oversold conditions) and sell actions when the RSI is above a high threshold (indicating overbought conditions).  
-
-After each trade, the strategy utilizes the [Position Executor](executors/positionexecutor.md) component, which uses a triple barrier configuration to manage the P&L of the position or filled order.
+This strategy places bid and ask limit orders around the mid (or last trade) price on a single trading pair. Every `order_refresh_time` seconds it cancels and replaces those orders using parameters you set in the script config.
 
 ## Create script config
 
@@ -19,26 +17,15 @@ First, let's create a script config file that defines the key strategy parameter
 Launch Hummingbot and execute the command below to generate your script configuration:
 
 ```shell
-create --script-config v2_directional_rsi
+create --v2-config simple_pmm
 ```
 
 This command auto-completes with the subset of configurable scripts from the local `/scripts` directory.
 
-You'll be prompted to specify the strategy parameters, which are then saved in a YAML file within the `conf/scripts` directory:
+You'll be prompted to specify the strategy parameters, which are then saved in a YAML file within the `conf/scripts` directory. The exact prompts depend on how the script defines its config class; typical values include exchange, trading pair, spreads, and order size.
 
 ```python
-Exchange where the bot will trade >> hyperliquid_perpetual
-Trading pair where the bot will trade >> ETH-USD
-Candles exchange used to calculate RSI >> binance_perpetual
-Candles trading pair used to calculate RSI >> ETH-USDT
-Candle interval (e.g. 1m for 1 minute) >> 1m
-Number of candles used to calculate RSI (e.g. 60) >> 60
-RSI lower bound to enter long position (e.g. 30) >> 30
-RSI upper bound to enter short position (e.g. 70) >> 70
-Order amount in quote asset >> 30
-Leverage (e.g. 10 for 10x) >> 10
-Position mode (HEDGE/ONEWAY) >> ONEWAY
-Enter a new file name for your configuration >> conf_v2_directional_rsi_1.yml
+Enter a new file name for your configuration >> conf_simple_pmm_1.yml
 ```
 
 ## Run the script 
@@ -48,10 +35,10 @@ Enter a new file name for your configuration >> conf_v2_directional_rsi_1.yml
 Execute the command below to start the script:
 
 ```shell
-start --script v2_directional_rsi.py --conf conf_v2_directional_rsi_1.yml
+start --v2 conf_simple_pmm_1.yml
 ```
 
-The strategy makes a series of market checks and initializes the market data provider. Afterwards, it should start placing orders for both pairs. 
+Hummingbot loads the YAML from `conf/scripts`, reads `script_file_name` inside it to find the script, and starts the strategy. You should see the bot begin placing and refreshing orders according to your parameters.
 
 ## Check status and performance
 

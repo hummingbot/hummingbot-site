@@ -227,7 +227,7 @@ nav:
         - Liquidity Mining: strategies/v1-strategies/liquidity-mining.md
         - Perpetual Market Making: strategies/v1-strategies/perpetual-market-making.md
         - Spot Perpetual Arbitrage: strategies/v1-strategies/spot-perpetual-arbitrage.md
-        - TWAP: strategies/v1-strategies/twap.md
+        - TWAP (removed): strategies/v1-strategies/twap.md
     - Connectors:
       - Connectors: connectors/index.md
       - CLOB Connectors: connectors/clob.md
