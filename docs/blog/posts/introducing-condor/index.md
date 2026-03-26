@@ -57,7 +57,11 @@ This matters more than it might seem. As AI trading agents become more capable, 
 
 These aren't hypothetical. As agents gain the ability to execute real trades autonomously, they become high-value targets for exactly this kind of supply chain attack.
 
-Hummingbot Foundation's response is straightforward:
+The most effective defense against these attacks is an integrated system built and maintained by a single trusted source — not a patchwork of third-party plugins and unofficial CLIs.
+
+Condor is that integrated system. The agent harness, execution layer, skills, and CLI all come from Hummingbot Foundation and are designed to work together. There's no need to install unverified plugins or source tools from unknown repositories. The attack surface is smaller by design.
+
+Hummingbot Foundation's commitment:
 
 - **Auditable code**: Everything is open source and publicly reviewable. No hidden logic, no black boxes.
 - **Verified skills**: Skills published through official Hummingbot channels are reviewed before distribution.
