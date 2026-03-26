@@ -143,7 +143,7 @@ Condor's architecture enables **session continuity across interfaces**. The `~/c
 
 ## Usage
 
-The `/agent` command lets you connect your LLM of choice and build Trading Agents. This feature is still a work in progress—see the [Condor documentation](/condor) for the latest usage instructions.
+The `/agent` command lets you connect your LLM of choice and build Trading Agents. This featu re is still a work in progress—see the [Condor documentation](/condor) for the latest usage instructions.
 
 ## What's Next
 
