@@ -49,13 +49,24 @@ Autonomous agents that control real capital need to be trustworthy. When an agen
 
 That's why Condor is built and maintained by [Hummingbot Foundation](https://hummingbot.org), a non-profit organization whose sole mission is to make professional trading tools accessible to everyone. We don't have investors to answer to or profit motives that conflict with users. Our incentive is simple: build the best, most trustworthy open source trading infrastructure possible.
 
-This means:
+This matters more than it might seem. As AI trading agents become more capable, they've also become a target. We've already seen a new class of attacks emerge:
+
+- **Malicious skills**: Agent skill marketplaces can distribute plugins that appear legitimate but silently exfiltrate API keys, redirect withdrawals, or manipulate trade execution.
+- **Compromised CLIs**: Unofficial CLI tools distributed via PyPI, npm, or GitHub forks can contain backdoors that activate when connected to a live exchange account.
+- **Prompt injection**: Malicious content embedded in market data or chat messages can hijack an agent's reasoning and instruct it to take unauthorized actions.
+
+These aren't hypothetical. As agents gain the ability to execute real trades autonomously, they become high-value targets for exactly this kind of supply chain attack.
+
+Hummingbot Foundation's response is straightforward:
 
 - **Auditable code**: Everything is open source and publicly reviewable. No hidden logic, no black boxes.
+- **Verified skills**: Skills published through official Hummingbot channels are reviewed before distribution.
 - **Community governance**: Major decisions are made through on-chain governance by HBOT token holders, not by a small executive team.
 - **Stable maintenance**: The Foundation has maintained Hummingbot connectors and infrastructure for over 6 years. Condor benefits from the same long-term commitment.
 
-In a world where AI agents are increasingly trusted with real assets, having a non-profit foundation as the steward of that infrastructure matters.
+In a world where AI agents are increasingly trusted with real assets, the steward of that infrastructure matters. Use official sources. Verify what you install.
+
+**Always use the official Condor release from [github.com/hummingbot/condor](https://github.com/hummingbot/condor).**
 
 We're defining Trading Agents as an open standard — a specification for how autonomous trading systems should be structured, how they manage context and provision it to LLMs, and how they interact with data collection and trade execution infrastructure. The standard enables:
 
