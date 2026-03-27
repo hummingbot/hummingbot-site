@@ -117,8 +117,13 @@ The installation creates a `.env` file with your configuration. You can modify t
 - `USERNAME` and `PASSWORD`: API authentication credentials (used by clients to authenticate with the API)
 - `CONFIG_PASSWORD`: Password used to encrypt bot credentials at rest
 - `DATABASE_URL`: PostgreSQL connection string (use `localhost` when running from source, `hummingbot-postgres` in Docker)
-- `BROKER_HOST`, `BROKER_PORT`: EMQX message broker settings (use `localhost` when running from source)
+- `BROKER_HOST`, `BROKER_PORT`, `BROKER_USERNAME`, `BROKER_PASSWORD`: EMQX message broker settings (use `localhost` when running from source)
 - `GATEWAY_URL`: Gateway URL for DEX connectivity (default: `http://localhost:15888`)
+- `MARKET_DATA_CLEANUP_INTERVAL`: Seconds between market data feed cleanup runs
+- `MARKET_DATA_FEED_TIMEOUT`: Seconds before an idle market data feed is closed
+- `MARKET_DATA_CANDLES_READY_TIMEOUT`: Seconds to wait for candle feed readiness
+- `DEBUG_MODE`: Set to `true` to disable HTTP Basic Auth in local development
+- `LOGFIRE_ENVIRONMENT`: Logfire environment tag (`dev` by default)
 
 ## Troubleshooting
 

@@ -95,4 +95,4 @@ On the screenshot below, a buy order has been successfully filled and after orde
 
 ## Displaying token symbols in `balance`
 
-You can use the `gateway connector-tokens` command to include tokens in the `balance` command. See [Working with Tokens](../gateway/configuration.md) for more information.
+You can use Gateway `gateway token` commands to view or update token metadata used with DEX connectors. See [Working with Tokens](../gateway/configuration.md) for more information.
