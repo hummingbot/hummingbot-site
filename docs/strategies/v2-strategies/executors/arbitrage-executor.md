@@ -1,6 +1,6 @@
 **ArbitrageExecutor:** Specialized in controlling profitability between two markets, such as between centralized exchanges (CEX) and decentralized exchanges (DEX), optimizing for arbitrage opportunities.
 
-The [ArbitrageExecutor](https://github.com/hummingbot/hummingbot/blob/13aab912ea297a70e52f560cc7239400a1204aa6/hummingbot/smart_components/executors/arbitrage_executor/arbitrage_executor.py) class is a specialized component within Hummingbot designed for capitalizing on price discrepancies between different markets or exchanges by automating the process of simultaneously executes buy and sell orders on two distinct markets, aiming to exploit arbitrage opportunities for profit.
+The [ArbitrageExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/executors/arbitrage_executor/arbitrage_executor.py) class is a specialized component within Hummingbot designed for capitalizing on price discrepancies between different markets or exchanges by automating the process of simultaneously executes buy and sell orders on two distinct markets, aiming to exploit arbitrage opportunities for profit.
 
 - **Efficiency**: Automates the complex process of identifying and executing arbitrage opportunities.
 - **Speed**: Executes buy and sell orders simultaneously to capture fleeting arbitrage opportunities.
@@ -17,7 +17,7 @@ Upon initialization, the `ArbitrageExecutor` performs the following actions:
 
 ### Sample Script
 
-Below, we show code snippets from the [Arbitrage with Smart Component](https://github.com/hummingbot/hummingbot/blob/13aab912ea297a70e52f560cc7239400a1204aa6/scripts/archived_scripts/examples_using_smart_components/arbitrage_with_smart_component.py) script, which provides an example of how to use the ArbitrageExecutor.
+Below, we show illustrative code patterns for `ArbitrageExecutor`. For the current implementation, see [arbitrage_executor.py](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/executors/arbitrage_executor/arbitrage_executor.py) and the [arbitrage_controller](https://github.com/hummingbot/hummingbot/blob/master/controllers/generic/arbitrage_controller.py) in the repo.
 
 You can define the two markets to arbitrage, the order amount, and the arbitrage profitability threshold.
 

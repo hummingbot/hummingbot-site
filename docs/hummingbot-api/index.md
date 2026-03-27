@@ -174,12 +174,16 @@ Key configuration options available in `.env`:
 
 - **CONFIG_PASSWORD**: Encrypts API keys and credentials
 - **USERNAME/PASSWORD**: API authentication credentials
-- **BROKER_HOST/PORT**: EMQX message broker settings
+- **BROKER_HOST/PORT/USERNAME/PASSWORD**: EMQX message broker settings
 - **DATABASE_URL**: PostgreSQL connection string
 - **ACCOUNT_UPDATE_INTERVAL**: Balance update frequency (minutes)
+- **MARKET_DATA_CLEANUP_INTERVAL**: Seconds between feed cleanup runs
+- **MARKET_DATA_FEED_TIMEOUT**: Idle timeout before a feed is closed
+- **MARKET_DATA_CANDLES_READY_TIMEOUT**: Max seconds to wait for candle feed readiness
+- **GATEWAY_URL**: Gateway service URL (default: `http://localhost:15888`)
+- **DEBUG_MODE**: Disable HTTP Basic Auth for local development
+- **LOGFIRE_ENVIRONMENT**: Observability environment tag (default: `dev`)
 - **AWS_API_KEY/AWS_SECRET_KEY**: S3 archiving (optional)
-- **BANNED_TOKENS**: Comma-separated list of tokens to exclude
-- **LOGFIRE_TOKEN**: Observability and monitoring (production)
 
 ### Bot Instance Structure
 Each bot maintains its own isolated environment:

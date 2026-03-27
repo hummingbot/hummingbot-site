@@ -11,7 +11,7 @@ Watch the full video that accompanies this page:
 
 - Follow the [Installation](../../installation/index.md) docs for your environment
 - Code your script inside the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) folder
-- Run your script with `start --script [SCRIPT NAME]`
+- Create a YAML config with `create --v2-config [SCRIPT_NAME]`, then run `start --v2 [CONFIG_FILE].yml` (file under `conf/scripts`)
 
 ## Scripts basics
 

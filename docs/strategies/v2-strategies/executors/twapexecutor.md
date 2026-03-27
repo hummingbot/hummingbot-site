@@ -37,7 +37,7 @@ The **TWAPExecutor** is an implementation of a Time-Weighted Average Price (TWAP
 
 ### Example Script
 
-The [v2_twap_multiple_pairs.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_twap_multiple_pairs.py) example script defining the **TWAPMultiplePairs** strategy class shows how to use the **TWAPExecutor** within a broader Hummingbot strategy context, specifically for executing TWAP (Time-Weighted Average Price) trades across multiple trading pairs simultaneously. This script illustrates the setup and orchestration required to utilize the TWAPExecutor functionality within a strategy that can be deployed in Hummingbot. 
+Use **TWAPExecutor** from a Strategy V2 script or controller: configure `TWAPExecutor` / `TWAPExecutorConfig` in code or via the Hummingbot API. There is no separate sample script named `v2_twap_multiple_pairs.py` in the current `scripts/` folder; refer to the executor class and API docs below. 
 
 ```python
 class TWAPMultiplePairsConfig(StrategyV2ConfigBase):

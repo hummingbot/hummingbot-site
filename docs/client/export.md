@@ -14,9 +14,7 @@ API keys:
 binance_api_key:
 binance_api_secret:
 
-Ethereum wallets:
-Public address:
-Private key:
+# Additional decrypted values (wallets, other secrets) appear here depending on your setup.
 
 ```
 

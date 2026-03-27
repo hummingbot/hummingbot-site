@@ -20,11 +20,9 @@ Below are the available commands in the current Hummingbot release.
 | `exit`            | Exit and cancel all outstanding orders                        |
 | `export`          | Export your bot's trades or private keys                      |
 | `ticker`          | Show market ticker of current order book                      |
-| `pmm_script`      | Send command to running PMM script instance                   |
-| `previous`        | Imports the last strategy used                                |
 | `rate`            | Show rate of a given trading pair                             |
-| `order_book`      | Displays the top 5 bid/ask prices and volume                  |
-| `tab_example`     | Display hello world                                           |
+| `lphistory`       | See LP position history and performance                       |
+| `mqtt`            | Manage the MQTT broker bridge (`start`, `stop`, `restart`)   |
 
 ## Gateway Commands
 

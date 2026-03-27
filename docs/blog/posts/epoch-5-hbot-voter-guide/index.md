@@ -123,7 +123,7 @@ Here are the Core Strategies nominees for Epoch 5:
 - [Perpetual Market Making](../../../strategies/v1-strategies/perpetual-market-making.md)
 - [Pure Market Making](../../../strategies/v1-strategies/pure-market-making.md) (Epoch 4 Core)
 - [Spot Perpetual Arbitrage](../../../strategies/v1-strategies/spot-perpetual-arbitrage.md)
-- [TWAP](../../../strategies/v1-strategies/twap.md)
+- [TWAP Executor](../../../strategies/v2-strategies/executors/twapexecutor.md) (V1 TWAP strategy removed)
 - [AMM-V3 LP](../../../strategies/index.md) (Epoch 4 Core)
 
 ---

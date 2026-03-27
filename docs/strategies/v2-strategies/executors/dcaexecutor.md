@@ -28,7 +28,7 @@ Key Configs:
 - `order_type`: Defines the type of orders to be placed (default is LIMIT).
 
 
-The [DCAExecutor](https://github.com/hummingbot/hummingbot/blob/feat/position_executor_refactor/hummingbot/smart_components/executors/dca_executor/dca_executor.py) class implements a Dollar Cost Averaging strategy, which is a popular method for mitigating the impact of volatility by spreading purchases or sales over time.
+The [DCAExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/executors/dca_executor/dca_executor.py) class implements a Dollar Cost Averaging strategy, which is a popular method for mitigating the impact of volatility by spreading purchases or sales over time.
 
 The DCA strategy is simple yet effective, involving the execution of orders at regular intervals regardless of the asset's price. This approach can lead to a lower average cost per share or unit over time, making it a favored strategy for long-term investors.
 
