@@ -113,7 +113,7 @@ Condor provides AI-mediated trading tools—a free, open source alternative to p
 
 - **Trading Agents**: Build autonomous agents that execute strategies over time with persistent state
 - **Trading tools**: Portfolio management, order execution, and position tracking via Hummingbot API
-- **Risk management**: Built-in guardrails that prevent agents from exceeding configured limits
+- **Secure isolation**: Agents only access the `~/condor` folder, and each bot runs in a separate container
 
 ### Why Telegram?
 
