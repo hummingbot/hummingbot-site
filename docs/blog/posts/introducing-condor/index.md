@@ -172,7 +172,35 @@ Condor's architecture enables **session continuity across interfaces**. The `~/c
 
 ## Usage
 
-The `/agent` command lets you connect your LLM of choice and build Trading Agents. This featu re is still a work in progress—see the [Condor documentation](/condor) for the latest usage instructions.
+### Menu
+
+After you start Condor and message your bot on Telegram, you'll see a menu of available commands:
+
+![](menu.png)
+
+The menu provides access to all of Condor's capabilities:
+
+- **/portfolio**: View detailed portfolio breakdown across all connected exchanges
+- **/bots**: Check status of all running trading bots
+- **/new_bot**: Create and configure new bot instances
+- **/executors**: Deploy and manage trading executors
+- **/trade**: Unified trading interface for CEX orders and DEX swaps
+- **/lp**: Liquidity pool management for AMMs
+- **/routines**: Run configurable Python scripts on a schedule
+- **/agent**: Chat with AI trading assistant
+- **/agent_trading**: Create and manage autonomous trading agents
+- **/servers**: Manage Hummingbot API server connections
+- **/keys**: Configure exchange API credentials
+- **/gateway**: Deploy Gateway for DEX trading
+- **/admin**: Admin panel for managing users and access
+
+### The /agent Command
+
+The `/agent` command connects your LLM to Hummingbot API via [MCP tools](/mcp). Anything you can do through the menu commands, you can do through natural conversation with the agent.
+
+![](agent.png)
+
+The agent can also help you build, deploy, and manage Trading Agents—see the [Condor documentation](/condor) for the latest usage instructions.
 
 ## What's Next
 
