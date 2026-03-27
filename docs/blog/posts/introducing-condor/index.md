@@ -9,7 +9,7 @@ categories:
 
 # Introducing Condor: The Open Source Harness for Trading Agents
 
-![cover](cover.png)
+![cover](cover.jpg)
 
 We're excited to introduce **[Condor](/condor)**, an open source harness for building and running autonomous Trading Agents. Condor connects LLM-powered decision-making to deterministic trade execution via the Hummingbot API, enabling traders to deploy AI agents that can observe markets, reason about strategy, and execute trades across 50+ exchanges and blockchains.
 
