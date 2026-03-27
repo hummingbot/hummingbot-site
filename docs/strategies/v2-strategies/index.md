@@ -17,9 +17,9 @@ Examples: `PositionExecutor`, `DCAExecutor`, `GridExecutor`, `TWAPExecutor`, `XE
 
 ### Scripts and Controllers
 
-[**Scripts**](../scripts/index.md) and [**Controllers**](controllers/index.md) are **long-running processes** that start Docker containers and run continuously until stopped. They are suited for strategies that need to monitor markets, adapt over time, or manage multiple executors in parallel.
+[**Scripts**](../scripts/index.md) and [**Controllers**](controllers/index.md) are **long-running processes** inside the Hummingbot client that run continuously until stopped. They are suited for strategies that need to monitor markets, adapt over time, or manage multiple executors in parallel.
 
-- **Scripts** (inheriting from `StrategyV2Base`) are the entry point for simple, self-contained strategies. Started via `start --script <file>` in the Hummingbot client. Scripts are ideal for **testing, learning, and prototyping** — all logic lives in one file and is easy to read and modify. All V2 scripts now inherit from `StrategyV2Base`.
+- **Scripts** (inheriting from `StrategyV2Base`) are the entry point for simple, self-contained strategies. Create a config with `create --v2-config`, then start via `start --v2 <config_file_name.yml>`. Scripts are ideal for **testing, learning, and prototyping** — all logic lives in one file and is easy to read and modify. All V2 scripts now inherit from `StrategyV2Base`.
 - **Controllers** are production-grade, modular sub-strategies designed for **advanced and long-running deployments**. They are not started directly — a special launcher script (`v2_with_controllers.py`) loads one or more controllers into a single bot instance, enabling multiple independent strategies to run in parallel. Controllers are more configurable, testable, and reusable than scripts.
 
 !!! tip "When to use each"

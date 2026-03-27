@@ -26,7 +26,7 @@ The initial step involves generating a separate controller configuration for eac
 Execute the command below to generate the controller config:
 
 ```shell
-create --controller-config market.making.pmm_simple
+create --controller-config market_making.pmm_simple
 ```
 
 ```shell
@@ -70,7 +70,7 @@ conf_market_making.pmm_simple_2.yml
 Execute the command below to generate the script config file:
 
 ```
-create --script-config v2_with_controllers
+create --v2-config v2_with_controllers
 
 ```
 
@@ -93,7 +93,7 @@ Enter a new file name for your configuration >>> conf_v2_with_controllers_1.yml
 Execute the command below to start the script:
 
 ```
-start --script v2_with_controllers.py --conf conf_v2_with_controllers_1.yml
+start --v2 conf_v2_with_controllers_1.yml
 ```
 
 The bot should now be running and start placing orders for both pairs. Run the `status` command to see the bot status.

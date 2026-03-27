@@ -26,7 +26,7 @@ This is an optional feature, and more basic scripts may elect to hardcode their 
 
 ### Creating script config files
 
-To create a configuration file for a compatible, run the `create` command and add the `--script-config` flag. 
+To create a configuration file for a compatible script, run the `create` command and add the `--v2-config` flag. 
 
 In the auto-complete dropdown, only the configurable scripts located in the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
 folder will be shown.
@@ -41,7 +41,7 @@ The last prompt will ask you to enter a name for the config file, which is saved
 
 ### Starting configurable scripts
 
-Run `start` with both `--script` and `--conf` flags to run a script with a configuration file.
+Run `start --v2 <config_file_name.yml>` to run a script with a configuration file from `conf/scripts` (for example, `start --v2 conf_simple_pmm_1.yml`).
 
 ![](./start-script-config.png)
 
@@ -51,7 +51,7 @@ The StrategyV2 framework abstracts strategy logic into [Controllers](../strategi
 
 ### Creating controller config files
 
-To create a controller configuration file, run the `create` command and add the `-controller-config` flag. 
+To create a controller configuration file, run the `create` command and add the `--controller-config` flag. 
 
 In the auto-complete dropdown, the controllers in each sub-folder in the [/controllers](https://github.com/hummingbot/hummingbot/tree/master/controllers) 
 folder will be shown.
@@ -62,16 +62,19 @@ The last prompt will ask you to enter a name for the config file, which is saved
 
 ### Starting controller configs
 
-To start a controller configuration, define the configuration file of the [`v2_generic_with_controllers.py`](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_generic_with_controllers.py) loader script:
+To run controllers, use the [`v2_with_controllers.py`](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_with_controllers.py) loader script. Create a script config for it, then start with `start --v2`:
 
 ```
-create --script-config v2_generic_with_controllers
+create --v2-config v2_with_controllers
 ```
 
-Afterwards, start the loader script by running:
+Afterwards, start the loader by running:
+
 ```
-start --script v2_generic_with_controllers.py --conf conf_v2_generic_with_controllers_1.yml
+start --v2 conf_v2_with_controllers_1.yml
 ```
+
+See the [Controller Walkthrough](../strategies/v2-strategies/walkthrough-controller.md) for the full flow (controller configs plus loader).
 
 
 ## Strategy V1 config files
@@ -80,7 +83,7 @@ The original Hummingbot [V1 strategies](../strategies/v1-strategies/index.md) al
 
 ### Creating Strategy V1 config files
 
-Run `create` command without the `--script-config` flag to create a [Strategy V1](../strategies/v1-strategies/index.md) file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
+Run `create` command without the `--v2-config` flag to create a [Strategy V1](../strategies/v1-strategies/index.md) file. The autocomplete command will display a list of the available V1 strategies, each one a folder in the [/hummingbot/strategy](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/strategy) folder.
 
 Next, answer the prompts to configure your bot's behavior depending on the strategy you want to use.
 

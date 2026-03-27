@@ -233,7 +233,7 @@ For Hyperliquid:
     
     ```json
     {
-      "message": "Connector credentials added successfully,
+      "message": "Connector credentials added successfully."
     }
     ```
 
@@ -494,10 +494,9 @@ Here's a complete example that performs all three operations:
     
     ```bash
     echo "🔑 Adding Exchange Account..."
-    curl -X POST "http://localhost:8000/accounts/add-account" \
+    curl -X POST "http://localhost:8000/accounts/add-account?account_name=master_account" \
       -u "admin:admin" \
-      -H "Content-Type: application/json" \
-      -d '{"account_name": "master_account"}'
+      -H "accept: application/json"
 
     # Step 2: Add credentials for hyperliquid
     curl -X POST "http://localhost:8000/accounts/add-credential/master_account/hyperliquid" \

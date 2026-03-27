@@ -1,6 +1,6 @@
 Scripts are Python files that serve as the entry point for Hummingbot strategies. They are ideal for **learning, testing, and simple strategies** — all logic lives in one file and is easy to understand and modify.
 
-All scripts now inherit from [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py), giving them full access to Executors, the Market Data Provider, and candle feeds. A script is started with `start --script <file>` in the Hummingbot client.
+All scripts now inherit from [StrategyV2Base](https://github.com/hummingbot/hummingbot/blob/development/hummingbot/strategy/strategy_v2_base.py), giving them full access to Executors, the Market Data Provider, and candle feeds. After you create a YAML config with `create --v2-config <script_name>`, start the script with `start --v2 <config_file_name.yml>` (config files live in `conf/scripts`).
 
 For **production-grade, multi-pair, or long-running strategies**, consider using [Controllers](../v2-strategies/controllers/index.md) via the `v2_with_controllers.py` script instead.
 
@@ -34,16 +34,16 @@ Scripts can be created both with and without [config files](../../client/config-
 To create a configuration file for your script, execute:
 
 ```shell
-create --script-config [SCRIPT_FILE]
+create --v2-config [SCRIPT_NAME]
 ```
 
 This command auto-completes with scripts from the local `/scripts` directory that are configurable. You'll be prompted to specify strategy parameters, which are then saved in a YAML file within the `conf/scripts` directory. To run the script, use:
 
 ```shell
-start --script [SCRIPT_FILE] --conf [SCRIPT_CONFIG_FILE]
+start --v2 [SCRIPT_CONFIG_FILE]
 ```
 
-Auto-complete will suggest config files from the local `/conf/scripts` directory.
+Use the YAML file name under `conf/scripts` (for example, `conf_simple_pmm_1.yml`). Auto-complete will suggest config files from that directory.
 
 ## Base Classes
 
