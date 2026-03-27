@@ -70,18 +70,11 @@ curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/refs/heads/main/s
 ### What the Installation Script Does
 
 The `setup.sh` script performs the following actions:
+
 - Clones the Condor repository from source.
 - Runs Condor's internal `setup-environment.sh` script, which installs necessary Python dependencies (including `uv`) and interactively prompts you for your Telegram Bot Token and User ID.
 - Launches Condor within a detached `tmux` session.
 - Optionally installs AI CLI tools such as Gemini CLI and Claude Code for seamless Agent Client Protocol (ACP) integration.
-
-### Managing Your Condor Session
-
-Once installed and running, you can manage your Condor session using `tmux`:
-- **Attach to session**: `tmux attach -t condor`
-- **Detach from session**: Press `Ctrl+B` then `D`
-- **Stop Condor**: `tmux kill-session -t condor`
-- **Restart Condor**: Navigate to the Condor directory (e.g., `cd condor`) and run `source setup-environment.sh`
 
 During installation, you'll need to provide:
 
@@ -99,6 +92,15 @@ During installation, you'll need to provide:
 
 1. Open the link above or search for `@userinfobot` in Telegram
 2. Send `/start` - it will reply with your User ID (a number like `123456789`)
+
+### Managing Your Condor Session
+
+Once installed and running, you can manage your Condor session using `tmux`:
+
+- **Attach to session**: `tmux attach -t condor`
+- **Detach from session**: Press `Ctrl+B` then `D`
+- **Stop Condor**: `tmux kill-session -t condor`
+- **Restart Condor**: Navigate to the Condor directory (e.g., `cd condor`) and run `source setup-environment.sh`
 
 ## Connect To Hummingbot API Server
 
