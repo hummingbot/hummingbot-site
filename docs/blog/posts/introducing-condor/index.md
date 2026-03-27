@@ -149,21 +149,7 @@ After you start Condor and message your bot on Telegram, you'll see a menu of av
 
 ![](menu.png)
 
-The menu provides access to all of Condor's capabilities:
-
-- **/portfolio**: View detailed portfolio breakdown across all connected exchanges
-- **/bots**: Check status of all running trading bots
-- **/new_bot**: Create and configure new bot instances
-- **/executors**: Deploy and manage trading executors
-- **/trade**: Unified trading interface for CEX orders and DEX swaps
-- **/lp**: Liquidity pool management for AMMs
-- **/routines**: Run configurable Python scripts on a schedule
-- **/agent**: Chat with AI trading assistant
-- **/agent_trading**: Create and manage autonomous trading agents
-- **/servers**: Manage Hummingbot API server connections
-- **/keys**: Configure exchange API credentials
-- **/gateway**: Deploy Gateway for DEX trading
-- **/admin**: Admin panel for managing users and access
+Most users start with `/start` to check server status, then `/keys` to configure exchange API credentials, and `/portfolio` to verify their balances are loading correctly.
 
 ### The /agent Command
 
