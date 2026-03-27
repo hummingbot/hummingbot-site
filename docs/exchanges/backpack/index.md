@@ -10,9 +10,8 @@
 
 ## ℹ️ Exchange Info
 
-- **Website**: <https://backpack.exchange/join/1tvdqfkk>
+- **Website**: [https://backpack.exchange](https://backpack.exchange/join/1tvdqfkk)
 - **Backpack referral link:** <https://backpack.exchange/join/1tvdqfkk>
-- **X-Broker-Id:** `2200`
 - **CoinMarketCap**: <https://coinmarketcap.com/exchanges/backpack-exchange/>
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/backpack-exchange>
 - **Fees**: <https://support.backpack.exchange/exchange/trading/trading-fees>
