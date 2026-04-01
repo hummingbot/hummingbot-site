@@ -608,6 +608,177 @@ The Risk Engine (`condor/trading_agent/risk.py`) validates:
 
 ---
 
+## PositionSummary Calculation
+
+The `PositionHold.get_position_summary(mid_price)` method (lines 87-134 in `executor_orchestrator.py`) converts internal state to a standardized `PositionSummary`. Understanding this calculation is key to understanding how all position types—spot, perp, and LP—are normalized for reporting.
+
+### The Calculation Flow
+
+```python
+def get_position_summary(self, mid_price: Decimal) -> PositionSummary:
+    # Step 1: Calculate breakeven prices for each side
+    buy_breakeven = buy_amount_quote / buy_amount_base  # avg buy price
+    sell_breakeven = sell_amount_quote / sell_amount_base  # avg sell price
+
+    # Step 2: Calculate matched volume (trades that offset each other)
+    matched_amount_base = min(buy_amount_base, sell_amount_base)
+
+    # Step 3: Calculate realized P&L from matched trades
+    realized_pnl = (sell_breakeven - buy_breakeven) × matched_amount_base
+
+    # Step 4: Calculate net position
+    net_amount_base = buy_amount_base - sell_amount_base
+    is_net_long = net_amount_base >= 0
+
+    # Step 5: Calculate unrealized P&L for remaining position
+    if is_net_long:
+        remaining_quote = buy_amount_quote - (matched × buy_breakeven)
+        breakeven = remaining_quote / net_amount_base
+        unrealized_pnl = (mid_price - breakeven) × net_amount_base
+    else:
+        remaining_quote = sell_amount_quote - (matched × sell_breakeven)
+        breakeven = remaining_quote / abs(net_amount_base)
+        unrealized_pnl = (breakeven - mid_price) × abs(net_amount_base)
+```
+
+### How Spot/Perp Orders Are Normalized
+
+Spot and perp executors (OrderExecutor, PositionExecutor) use `InFlightOrder.to_json()` to populate `held_position_orders`:
+
+```python
+# From InFlightOrder.to_json() (lines 257-280)
+{
+    "client_order_id": "abc123",          # Deduplication key
+    "trade_type": "BUY",                  # Determines position side
+    "executed_amount_base": "10.5",       # Actual base traded
+    "executed_amount_quote": "1575.00",   # Actual quote traded
+    "cumulative_fee_paid_quote": "1.58",  # Fees in quote
+    "leverage": "5",                      # For perps
+    "position": 1,                        # OPEN=1, CLOSE=2 for perps
+}
+```
+
+These values map directly to the PositionHold tracking:
+- `trade_type="BUY"` → accumulates to `buy_amount_base/quote`
+- `trade_type="SELL"` → accumulates to `sell_amount_base/quote`
+
+### How LP Positions Are Normalized
+
+LP positions work differently—they provide **liquidity** rather than making **trades**. The LP executor normalizes LP activity to match the standard format:
+
+```python
+# From lp_executor._store_lp_operation() (lines 611-631)
+{
+    "client_order_id": tx_hash,           # Deduplication: transaction signature
+    "trade_type": "BUY",                  # Based on config.side (exposure intent)
+    "executed_amount_base": 10.0,         # Base tokens in position
+    "executed_amount_quote": 1650.0,      # VALUE: base × price + quote
+    "cumulative_fee_paid_quote": 0.5,     # Transaction fees
+
+    # LP-specific fields (not used by PositionHold)
+    "lp_position": True,
+    "current_amount_base": 10.0,          # Actual base tokens
+    "current_amount_quote": 150.0,        # Actual quote tokens
+}
+```
+
+**Key normalization**: `executed_amount_quote = base_amount × mid_price + quote_amount`
+
+This converts the LP position's **two-token value** into a single quote value for consistent aggregation:
+
+```
+LP Position: 10 SOL + 150 USDC (price = 150 USDC/SOL)
+  executed_amount_base = 10
+  executed_amount_quote = 10 × 150 + 150 = 1650 USDC (total value)
+
+PositionHold sees this as:
+  BUY 10 SOL worth 1650 USDC
+  Breakeven = 1650 / 10 = 165 USDC/SOL
+```
+
+This means LP positions are treated as **directional exposure** to the base asset, allowing them to be aggregated with spot positions on the same trading pair.
+
+### How Perp HEDGE Mode Is Handled
+
+Perpetual markets in HEDGE mode track long and short positions separately. The `_determine_position_side()` method (lines 480-497) handles this:
+
+```python
+def _determine_position_side(self, executor_info: ExecutorInfo):
+    is_perpetual = "_perpetual" in executor_info.connector_name
+
+    if position_mode == PositionMode.HEDGE:
+        # CLOSE actions use opposite side for proper tracking
+        if position_action == PositionAction.CLOSE:
+            return opposite_side(config.side)
+        return config.side
+
+    return config.side  # ONEWAY mode: everything nets together
+```
+
+**Example in HEDGE mode**:
+
+```
+Executor 1: SELL (short) 100 SOL, position_action=OPEN
+  → Tracked as SELL position: sell_amount_base += 100
+
+Executor 2: BUY 100 SOL, position_action=CLOSE (closing the short)
+  → position_side flips to SELL (opposite of BUY)
+  → Tracked in same SELL bucket: sell reductions accounted
+
+Result: The short position is properly closed in the SELL bucket
+```
+
+In **ONEWAY mode**, buys and sells net against each other regardless of position_action, matching how the exchange handles it.
+
+### PositionSummary for Each Position Type
+
+**Spot Position**:
+```
+PositionHold: binance, SOL-USDT
+  buy_amount_base=100, buy_amount_quote=15000
+  sell_amount_base=0, sell_amount_quote=0
+
+PositionSummary (at mid_price=152):
+  side=BUY, amount=100
+  breakeven_price=150.00
+  unrealized_pnl_quote=200.00  # (152-150)×100
+  realized_pnl_quote=0
+```
+
+**Perp Position** (ONEWAY mode with partial close):
+```
+PositionHold: binance_perpetual, SOL-USDT
+  buy_amount_base=100, buy_amount_quote=15000  # Long 100 @ 150
+  sell_amount_base=50, sell_amount_quote=8000   # Closed 50 @ 160
+
+PositionSummary (at mid_price=155):
+  matched=50, realized_pnl=(160-150)×50=500
+  remaining=50 (long), breakeven=140 (remaining cost basis)
+  unrealized_pnl_quote=(155-140)×50=750
+```
+
+**LP Position** (normalized to spot-like accounting):
+```
+LP at open: 10 SOL + 1500 USDC (price=150)
+  executed_amount_quote = 10×150 + 1500 = 3000 (total value)
+
+PositionHold: meteora, SOL-USDC
+  buy_amount_base=10, buy_amount_quote=3000
+  → breakeven = 300 USDC/SOL (value representation)
+
+At mid_price=155:
+  unrealized_pnl = (155 - 300) × 10 = -1450 ❌ INCORRECT
+```
+
+**Important caveat**: The LP normalization creates a **virtual breakeven** that doesn't represent actual trading. LP P&L should be calculated directly via `get_net_pnl_quote()` which computes:
+```
+LP P&L = (current_value + fees_earned) - initial_value - tx_fees
+```
+
+The `PositionSummary` aggregation works well for spot/perp positions that involve actual trades. For LP positions, the normalized values enable portfolio-wide exposure tracking, but **LP-specific P&L** comes from the executor's own calculation.
+
+---
+
 ## Standardized Reporting
 
 The data structures are defined in `hummingbot/strategy_v2/executors/data_types.py`.
