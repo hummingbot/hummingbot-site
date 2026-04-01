@@ -41,6 +41,9 @@ trading_pair = "SOL-USDT"
 |------|---------|-------------|
 | `BUY` | Long the base asset | Price increases |
 | `SELL` | Short the base asset | Price decreases |
+| `RANGE` | LP position (two-token) | Fees earned > impermanent loss |
+
+`TradeType.RANGE` (value 3) is used for LP positions. Combined with the `lp_position: true` flag, it triggers LP-specific two-token P&L calculation within `PositionHold`.
 
 ---
 
@@ -240,13 +243,31 @@ The Position Hold maintains **at most one position** per `(connector_name, tradi
 
 When executors complete with `keep_position=True`, they populate `held_position_orders` in `get_custom_info()`. The aggregation logic uses these fields:
 
+**Common fields (all position types)**:
+
 | Field | Type | Description |
 |-------|------|-------------|
-| `trade_type` | string | `"BUY"` or `"SELL"` — determines position side |
-| `executed_amount_base` | float | Amount of base token acquired/sold |
-| `executed_amount_quote` | float | Quote value (base × price) |
+| `trade_type` | string | `"BUY"`, `"SELL"`, or `"RANGE"` (LP positions) |
+| `executed_amount_base` | float | Base token amount (or total VALUE in base for LP) |
+| `executed_amount_quote` | float | Quote value (or total VALUE in quote for LP) |
 | `cumulative_fee_paid_quote` | float | Fees paid in quote currency |
 | `client_order_id` | string | Unique ID for deduplication |
+
+**LP-specific fields** (when `trade_type="RANGE"`):
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `lp_position` | bool | `True` for LP positions |
+| `lp_type` | int | `1`=ADD, `2`=REMOVE, `3`=COLLECT |
+| `position_address` | string | On-chain position address (deduplication key) |
+| `initial_amount_base` | float | Original base tokens deposited |
+| `initial_amount_quote` | float | Original quote tokens deposited |
+| `current_amount_base` | float | Current base tokens after price drift |
+| `current_amount_quote` | float | Current quote tokens after price drift |
+| `base_fee` | float | Accumulated base fees earned |
+| `quote_fee` | float | Accumulated quote fees earned |
+
+For LP positions: `executed_amount_quote / executed_amount_base = add_price`
 
 ### How Amounts Are Calculated Per Executor
 
@@ -454,7 +475,7 @@ When B_b = S_b:
 
 ## LP Position Accounting
 
-LP positions have additional fields and different P&L mechanics:
+LP positions have additional fields and different P&L mechanics. Unlike spot/perp positions that use BUY/SELL tracking, LP positions use a **snapshot-based approach** with two-token accounting.
 
 ### LP Position State
 
@@ -462,12 +483,12 @@ LP positions have additional fields and different P&L mechanics:
 |-------|-------------|
 | `connector_name` | DEX connector |
 | `pool_address` | On-chain pool |
-| `position_address` | Position NFT (CLMM) |
+| `position_address` | Position NFT (CLMM) - also used as deduplication key |
 | `trading_pair` | Pool market |
 | `lower_price` | Range lower bound (CLMM) |
 | `upper_price` | Range upper bound (CLMM) |
-| `base_amount` | Current base in position |
-| `quote_amount` | Current quote in position |
+| `base_amount` | Current base in position (drifted) |
+| `quote_amount` | Current quote in position (drifted) |
 | `initial_base_amount` | Base at open |
 | `initial_quote_amount` | Quote at open |
 | `add_mid_price` | Market price at open |
@@ -479,8 +500,8 @@ LP positions have additional fields and different P&L mechanics:
 **Initial value** (at position open):
 $$V_{\text{init}} = (\text{initial\_base} \times p_{\text{add}}) + \text{initial\_quote}$$
 
-**Current value**:
-$$V_{\text{curr}} = (\text{base\_amount} \times p_c) + \text{quote\_amount}$$
+**Current value** (accounts for price drift):
+$$V_{\text{curr}} = (\text{current\_base} \times p_c) + \text{current\_quote}$$
 
 **Fees earned**:
 $$\text{fees} = (\text{base\_fee} \times p_c) + \text{quote\_fee}$$
@@ -493,30 +514,74 @@ This captures:
 - Fee accumulation (positive)
 - Transaction costs (negative)
 
-### LP Position Updates (RangePositionUpdate)
+### LP Position Snapshot
 
-LP positions track individual operations (ADD/REMOVE) similar to how perp executors track trades via `TradeUpdate` events. Each operation uses `tx_hash` as the deduplication key.
+When an LP executor terminates with `keep_position=True`, it stores a **single snapshot** of the position state. This differs from spot/perp positions which track individual BUY/SELL trades.
 
-**Implementation** (see `lp_executor._store_lp_operation()`):
+**Key design decisions**:
+
+1. **`position_address` as deduplication key**: LP positions use the on-chain position address (e.g., NFT mint for CLMM) as `client_order_id` for deduplication
+2. **`lp_position: true`**: Flag that triggers LP-specific P&L calculation in `PositionHold`
+3. **Total value fields**: `executed_amount_base/quote` represent total position VALUE (not just token amounts)
+4. **Token breakdown**: `initial_amount_base/quote` store the original deposited token amounts
+5. **`LPType` enum**: Uses `lp_type` field with values ADD=1, REMOVE=2, COLLECT=3
+
+**Key relationship**: `executed_amount_quote / executed_amount_base = add_price`
+
+**Implementation** (see `lp_executor._store_held_position()`):
 ```python
+# Total position value in both denominations
+executed_amount_quote = initial_base * add_price + initial_quote  # Value in quote
+executed_amount_base = initial_base + initial_quote / add_price   # Value in base
+
 self._held_position_orders.append({
-    "client_order_id": tx_hash,  # Deduplication key (like trade_id for perps)
-    "order_id": order_id,
-    "exchange_order_id": tx_hash,
-    "order_action": "ADD" | "REMOVE",  # Operation type
-    "executed_amount_base": float(base_amount),
-    "executed_amount_quote": float(base_amount * mid_price + quote_amount),
-    ...
+    # position_address as deduplication key
+    "client_order_id": self.lp_position_state.position_address,
+    "trading_pair": self.config.trading_pair,
+    "trade_type": TradeType.RANGE.name,  # Treated as BUY for value tracking
+    "price": float(add_price),
+
+    # Total position value at inception
+    "executed_amount_base": executed_amount_base,
+    "executed_amount_quote": executed_amount_quote,
+    "cumulative_fee_paid_quote": tx_fee_quote,
+
+    # LP-specific fields
+    "lp_position": True,
+    "lp_type": LPType.ADD.value,
+    "position_address": self.lp_position_state.position_address,
+
+    # Original token breakdown
+    "initial_amount_base": float(initial_base),
+    "initial_amount_quote": float(initial_quote),
+
+    # Current drifted amounts (for P&L: current_value calculation)
+    "current_amount_base": float(self.lp_position_state.base_amount),
+    "current_amount_quote": float(self.lp_position_state.quote_amount),
+
+    # Fees earned
+    "base_fee": float(self.lp_position_state.base_fee),
+    "quote_fee": float(self.lp_position_state.quote_fee),
 })
 ```
+
+### LPType Enum
+
+| Value | Name | Description |
+|-------|------|-------------|
+| 1 | `ADD` | Liquidity added to position (snapshot at close) |
+| 2 | `REMOVE` | Liquidity removed from position |
+| 3 | `COLLECT` | Fees collected without position change |
+
+### RangePositionUpdate Database Table
 
 LP positions are stored in the `RangePositionUpdate` database table via connector events. See `hummingbot/model/range_position_update.py`:
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `hb_id` | Text | Order ID (e.g., `"range-SOL-USDC-..."`) |
-| `tx_hash` | Text | Transaction signature (deduplication key) |
-| `position_address` | Text | LP position NFT address |
+| `tx_hash` | Text | Transaction signature |
+| `position_address` | Text | LP position NFT address (deduplication key) |
 | `order_action` | Text | `"ADD"`, `"REMOVE"`, or `"COLLECT"` |
 | `trading_pair` | Text | e.g., `"SOL-USDC"` |
 | `market` | Text | Connector name (e.g., `"meteora/clmm"`) |
@@ -530,20 +595,6 @@ LP positions are stored in the `RangePositionUpdate` database table via connecto
 | `trade_fee_in_quote` | Float | Transaction fee in quote |
 | `position_rent` | Float | SOL rent paid (ADD only) |
 | `position_rent_refunded` | Float | SOL rent refunded (REMOVE only) |
-
-**Order Actions**:
-
-| Action | Description | When |
-|--------|-------------|------|
-| `ADD` | Liquidity added to position | Position opened or increased |
-| `REMOVE` | Liquidity removed from position | Position closed or decreased |
-| `COLLECT` | Fees collected without position change | Fee harvesting (future) |
-
-**Deduplication**: When aggregating LP positions, use `tx_hash` instead of `order_id` to deduplicate updates:
-```python
-# For LP positions, track by transaction signature
-self.tx_hashes.add(update.tx_hash)  # Instead of order_ids
-```
 
 ---
 
@@ -664,61 +715,67 @@ These values map directly to the PositionHold tracking:
 
 ### How LP Positions Are Normalized
 
-LP positions work differently—they provide **liquidity** rather than making **trades**. The LP executor maps operations to spot-like accounting:
+LP positions work differently—they provide **liquidity** rather than making **trades**. LP positions are detected by the `lp_position: true` flag and trigger LP-specific P&L calculation within `PositionHold`.
 
-| Operation | trade_type | Meaning |
-|-----------|------------|---------|
-| `ADD` | `"BUY"` | Depositing tokens = buying into the LP position |
-| `REMOVE` | `"SELL"` | Withdrawing tokens = selling out of the LP position |
-| `COLLECT` | `"BUY"` | Fees collected = additional value received |
+**Key differences from spot/perp positions**:
+
+| Aspect | Spot/Perp | LP |
+|--------|-----------|-----|
+| `trade_type` | `"BUY"` or `"SELL"` | `"RANGE"` (treated as BUY) |
+| Deduplication key | `client_order_id` | `position_address` |
+| Detection | Default | `lp_position: true` flag |
+| P&L calculation | `(price - breakeven) × amount` | `current_value - add_value + fees` |
 
 ```python
-# From lp_executor._store_lp_operation()
-# trade_type derived from order_action, not config.side
-if order_action == "ADD":
-    trade_type = "BUY"
-elif order_action == "REMOVE":
-    trade_type = "SELL"
-else:  # COLLECT
-    trade_type = "BUY"
-
+# From lp_executor._store_held_position()
 {
-    "client_order_id": tx_hash,           # Deduplication: transaction signature
-    "trade_type": trade_type,             # BUY for ADD, SELL for REMOVE
-    "order_action": "ADD" | "REMOVE",     # Operation type
-    "executed_amount_base": 10.0,         # Base tokens in operation
-    "executed_amount_quote": 1650.0,      # VALUE: base × price + quote
+    "client_order_id": position_address,  # Deduplication: position NFT address
+    "trade_type": "RANGE",                # Treated as BUY for value tracking
+    "lp_position": True,                  # Triggers LP P&L calculation
+    "lp_type": 1,                         # LPType.ADD.value
+
+    # Total position value at inception
+    "executed_amount_base": 20.0,         # VALUE in base: initial_base + initial_quote/price
+    "executed_amount_quote": 3000.0,      # VALUE in quote: initial_base × price + initial_quote
     "cumulative_fee_paid_quote": 0.5,     # Transaction fees
 
-    # LP-specific fields
-    "lp_position": True,
-    "current_amount_base": 10.0,          # Actual base tokens
-    "current_amount_quote": 150.0,        # Actual quote tokens
+    # Original token breakdown
+    "initial_amount_base": 10.0,          # Actual base deposited
+    "initial_amount_quote": 1500.0,       # Actual quote deposited
+    "position_address": "...",
+
+    # Current drifted amounts (for current_value calculation)
+    "current_amount_base": 8.5,           # Current base after drift
+    "current_amount_quote": 1800.0,       # Current quote after drift
+
+    # Fees earned
+    "base_fee": 0.1,
+    "quote_fee": 15.0,
 }
 ```
 
-**Key normalization**: `executed_amount_quote = base_amount × mid_price + quote_amount`
-
-This converts the LP position's **two-token value** into a single quote value, enabling P&L calculation:
+**LP P&L calculation** (within `PositionHold._get_lp_position_summary()`):
 
 ```
-ADD: 10 SOL + 1500 USDC @ price 150
-  trade_type = "BUY"
-  executed_amount_quote = 10 × 150 + 1500 = 3000 (total value deposited)
-  → buy_amount_base = 10, buy_amount_quote = 3000
-  → add_breakeven = 3000 / 10 = 300 (value per base unit)
+Initial deposit: 10 SOL + 1500 USDC @ price 150
+  add_value = buy_amount_quote = 3000
 
-REMOVE: 6 SOL + 2220 USDC @ price 180 (after drift + fees earned)
-  trade_type = "SELL"
-  executed_amount_quote = 6 × 180 + 2220 = 3300 (total value withdrawn)
-  → sell_amount_base = 6, sell_amount_quote = 3300
-  → remove_breakeven = 3300 / 6 = 550 (value per base unit)
+Price moves to 180, position drifts to 8.5 SOL + 1800 USDC
+Fees earned: 0.1 SOL + 15 USDC
+
+current_value = 8.5 × 180 + 1800 = 3330
+fees_earned = 0.1 × 180 + 15 = 33
+TX fees paid: 2 USDC
 
 P&L Calculation:
-  matched = min(10, 6) = 6
-  realized_pnl = (550 - 300) × 6 = +1500 USDT (gain from LP)
-  remaining = 4 base units still in position
+  unrealized_pnl = current_value - add_value + fees_earned - tx_fees
+  unrealized_pnl = 3330 - 3000 + 33 - 2 = +361 USDC
 ```
+
+This approach correctly handles:
+- **Price drift**: LP positions shift between base and quote as price moves
+- **Two-token accounting**: Tracks base and quote amounts independently
+- **Fee accumulation**: Fees in both tokens converted to quote at current price
 
 ### How Perp HEDGE Mode Is Handled
 
@@ -779,31 +836,33 @@ PositionSummary (at mid_price=155):
   unrealized_pnl_quote=(155-140)×50=750
 ```
 
-**LP Position** (using `LPPositionHold` with two-token accounting):
+**LP Position** (using `PositionHold` with LP-specific two-token accounting):
 ```
-LPPositionHold: meteora, SOL-USDC
+PositionHold: meteora, SOL-USDC (is_lp_position=True)
 
-ADD: 10 SOL + 1500 USDC @ price 150
-  add_base_total = 10, add_quote_total = 1500
-  add_value_quote = 10 × 150 + 1500 = 3000
-  current_base = 10, current_quote = 1500
+Snapshot stored when executor closes with keep_position=True:
+  Initial deposit: 10 SOL + 1500 USDC @ price 150
+    add_value_quote = 10 × 150 + 1500 = 3000
 
-Price moves to 180, position drifts to 6 SOL + 2100 USDC
+  Current state (after price drift to 180): 8.5 SOL + 1800 USDC
+    current_base = 8.5, current_quote = 1800
 
-REMOVE: 6 SOL + 2100 USDC @ price 180 (with 20 USDC fees)
-  remove_value_quote = 6 × 180 + 2100 = 3180
-  fees_quote_total = 20
+  Fees earned: 0.1 SOL + 15 USDC
+    fees_base = 0.1, fees_quote = 15
+
+  TX fees paid: 2 USDC (gas costs)
 
 PositionSummary (at mid_price=180):
-  Position closed (current_base = current_quote = 0)
-  realized_pnl = 3180 + 20 - 3000 - tx_fees = +200 USDC
+  current_value = 8.5 × 180 + 1800 = 3330
+  fees_value = 0.1 × 180 + 15 = 33
+  unrealized_pnl = 3330 - 3000 + 33 - 2 = +361 USDC
 ```
 
-LP positions use the `LPPositionHold` class (see `executor_orchestrator.py`) which provides proper two-token accounting:
-- Tracks ADD/REMOVE/COLLECT operations separately
+LP positions use `PositionHold` with LP-specific fields (see `executor_orchestrator.py`) which provides proper two-token accounting:
+- Detects LP via `lp_position: true` flag
+- Stores both initial amounts and current drifted amounts (`current_amount_base/quote`)
 - Handles single-sided positions (zero base or zero quote)
-- Converts fees to quote at current price
-- Calculates breakeven as the price where `current_value = net_deposited`
+- Converts fees to quote at current price for P&L calculation
 
 ---
 
@@ -991,13 +1050,21 @@ LP executor states reflect the position lifecycle:
 
 ## Implementation Notes
 
-1. **Snapshot on close**: Position data is captured at executor completion, not tracked in real-time. The `held_position_orders` array is populated when the executor terminates.
+1. **Snapshot on close**: Position data is captured at executor completion, not tracked in real-time. The `held_position_orders` array is populated when the executor terminates with `keep_position=True`.
 
-2. **No ongoing fee tracking**: Neither perp funding rates nor LP fee earnings are tracked continuously in `positions_held`. Fees are captured at position close.
+2. **LP position snapshot**: LP executors store a single snapshot with both initial amounts (`executed_amount_base/quote`) and current drifted amounts (`current_amount_base/quote`). This enables accurate P&L calculation: `add_value` from initial amounts, `current_value` from drifted amounts.
 
-3. **Gateway validation**: Swap and LP executors skip connector validation when `GATEWAY_CONNECTORS` is empty (API context), deferring validation to Gateway at execution time.
+3. **No ongoing fee tracking**: Neither perp funding rates nor LP fee earnings are tracked continuously in `positions_held`. Fees are captured at position close.
 
-4. **Deduplication**: Each position entry uses `client_order_id` (or `tx_hash` for LP) to prevent duplicate aggregation when the same executor is processed multiple times.
+4. **Gateway validation**: Swap and LP executors skip connector validation when `GATEWAY_CONNECTORS` is empty (API context), deferring validation to Gateway at execution time.
+
+5. **Deduplication by position type**:
+   - **Spot/Perp**: Uses `client_order_id` to prevent duplicate aggregation
+   - **LP positions**: Uses `position_address` (on-chain position NFT) as the deduplication key
+
+6. **LP detection by flag**:
+   - `lp_position: false` (default) → Standard BUY/SELL P&L calculation
+   - `lp_position: true` → LP-specific two-token P&L calculation
 
 ---
 
@@ -1007,10 +1074,12 @@ LP executor states reflect the position lifecycle:
 |---------|------------|
 | **Position** | Agent's exposure to a market, keyed by `(connector_name, trading_pair)` |
 | **Position Hold** | Set of all positions for an agent (virtual portfolio) |
+| **PositionHold** | Unified accounting class for all position types (spot, perp, LP) |
 | **Executor** | Trading operation that creates/modifies positions |
 | **Breakeven** | Volume-weighted average entry price |
 | **Unrealized P&L** | Mark-to-market value of open positions |
 | **Realized P&L** | Locked-in P&L from matched buys/sells |
 | **keep_position** | Whether executor adds to Position Hold or closes out |
+| **lp_position flag** | Triggers LP-specific two-token P&L calculation in PositionHold |
 
-The framework ensures consistent accounting across spot, perp, and LP positions, with clear flow from executor activity to position state to P&L measurement.
+The framework ensures consistent accounting across spot, perp, and LP positions, with clear flow from executor activity to position state to P&L measurement. `PositionHold` handles all position types—LP positions are detected via the `lp_position` flag and use two-token P&L calculation (`current_value - add_value + fees`).

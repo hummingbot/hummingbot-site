@@ -301,6 +301,7 @@ nav:
       - Executors: condor/executors.md
       - Bots: condor/bots.md
       - Routines: condor/routines.md
+      - Extensions: condor/extensions.md
     - Dashboard:
       - Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
