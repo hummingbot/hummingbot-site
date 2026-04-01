@@ -664,18 +664,33 @@ These values map directly to the PositionHold tracking:
 
 ### How LP Positions Are Normalized
 
-LP positions work differently—they provide **liquidity** rather than making **trades**. The LP executor normalizes LP activity to match the standard format:
+LP positions work differently—they provide **liquidity** rather than making **trades**. The LP executor maps operations to spot-like accounting:
+
+| Operation | trade_type | Meaning |
+|-----------|------------|---------|
+| `ADD` | `"BUY"` | Depositing tokens = buying into the LP position |
+| `REMOVE` | `"SELL"` | Withdrawing tokens = selling out of the LP position |
+| `COLLECT` | `"BUY"` | Fees collected = additional value received |
 
 ```python
-# From lp_executor._store_lp_operation() (lines 611-631)
+# From lp_executor._store_lp_operation()
+# trade_type derived from order_action, not config.side
+if order_action == "ADD":
+    trade_type = "BUY"
+elif order_action == "REMOVE":
+    trade_type = "SELL"
+else:  # COLLECT
+    trade_type = "BUY"
+
 {
     "client_order_id": tx_hash,           # Deduplication: transaction signature
-    "trade_type": "BUY",                  # Based on config.side (exposure intent)
-    "executed_amount_base": 10.0,         # Base tokens in position
+    "trade_type": trade_type,             # BUY for ADD, SELL for REMOVE
+    "order_action": "ADD" | "REMOVE",     # Operation type
+    "executed_amount_base": 10.0,         # Base tokens in operation
     "executed_amount_quote": 1650.0,      # VALUE: base × price + quote
     "cumulative_fee_paid_quote": 0.5,     # Transaction fees
 
-    # LP-specific fields (not used by PositionHold)
+    # LP-specific fields
     "lp_position": True,
     "current_amount_base": 10.0,          # Actual base tokens
     "current_amount_quote": 150.0,        # Actual quote tokens
@@ -684,19 +699,26 @@ LP positions work differently—they provide **liquidity** rather than making **
 
 **Key normalization**: `executed_amount_quote = base_amount × mid_price + quote_amount`
 
-This converts the LP position's **two-token value** into a single quote value for consistent aggregation:
+This converts the LP position's **two-token value** into a single quote value, enabling P&L calculation:
 
 ```
-LP Position: 10 SOL + 150 USDC (price = 150 USDC/SOL)
-  executed_amount_base = 10
-  executed_amount_quote = 10 × 150 + 150 = 1650 USDC (total value)
+ADD: 10 SOL + 1500 USDC @ price 150
+  trade_type = "BUY"
+  executed_amount_quote = 10 × 150 + 1500 = 3000 (total value deposited)
+  → buy_amount_base = 10, buy_amount_quote = 3000
+  → add_breakeven = 3000 / 10 = 300 (value per base unit)
 
-PositionHold sees this as:
-  BUY 10 SOL worth 1650 USDC
-  Breakeven = 1650 / 10 = 165 USDC/SOL
+REMOVE: 6 SOL + 2220 USDC @ price 180 (after drift + fees earned)
+  trade_type = "SELL"
+  executed_amount_quote = 6 × 180 + 2220 = 3300 (total value withdrawn)
+  → sell_amount_base = 6, sell_amount_quote = 3300
+  → remove_breakeven = 3300 / 6 = 550 (value per base unit)
+
+P&L Calculation:
+  matched = min(10, 6) = 6
+  realized_pnl = (550 - 300) × 6 = +1500 USDT (gain from LP)
+  remaining = 4 base units still in position
 ```
-
-This means LP positions are treated as **directional exposure** to the base asset, allowing them to be aggregated with spot positions on the same trading pair.
 
 ### How Perp HEDGE Mode Is Handled
 
@@ -757,25 +779,31 @@ PositionSummary (at mid_price=155):
   unrealized_pnl_quote=(155-140)×50=750
 ```
 
-**LP Position** (normalized to spot-like accounting):
+**LP Position** (using `LPPositionHold` with two-token accounting):
 ```
-LP at open: 10 SOL + 1500 USDC (price=150)
-  executed_amount_quote = 10×150 + 1500 = 3000 (total value)
+LPPositionHold: meteora, SOL-USDC
 
-PositionHold: meteora, SOL-USDC
-  buy_amount_base=10, buy_amount_quote=3000
-  → breakeven = 300 USDC/SOL (value representation)
+ADD: 10 SOL + 1500 USDC @ price 150
+  add_base_total = 10, add_quote_total = 1500
+  add_value_quote = 10 × 150 + 1500 = 3000
+  current_base = 10, current_quote = 1500
 
-At mid_price=155:
-  unrealized_pnl = (155 - 300) × 10 = -1450 ❌ INCORRECT
+Price moves to 180, position drifts to 6 SOL + 2100 USDC
+
+REMOVE: 6 SOL + 2100 USDC @ price 180 (with 20 USDC fees)
+  remove_value_quote = 6 × 180 + 2100 = 3180
+  fees_quote_total = 20
+
+PositionSummary (at mid_price=180):
+  Position closed (current_base = current_quote = 0)
+  realized_pnl = 3180 + 20 - 3000 - tx_fees = +200 USDC
 ```
 
-**Important caveat**: The LP normalization creates a **virtual breakeven** that doesn't represent actual trading. LP P&L should be calculated directly via `get_net_pnl_quote()` which computes:
-```
-LP P&L = (current_value + fees_earned) - initial_value - tx_fees
-```
-
-The `PositionSummary` aggregation works well for spot/perp positions that involve actual trades. For LP positions, the normalized values enable portfolio-wide exposure tracking, but **LP-specific P&L** comes from the executor's own calculation.
+LP positions use the `LPPositionHold` class (see `executor_orchestrator.py`) which provides proper two-token accounting:
+- Tracks ADD/REMOVE/COLLECT operations separately
+- Handles single-sided positions (zero base or zero quote)
+- Converts fees to quote at current price
+- Calculates breakeven as the price where `current_value = net_deposited`
 
 ---
 
