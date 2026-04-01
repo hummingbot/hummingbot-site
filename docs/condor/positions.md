@@ -93,6 +93,41 @@ The Position Hold contains three position types:
 
 Spot and perp positions share the same data structure—the type is determined by the connector name. LP positions have additional fields for AMM/CLMM mechanics.
 
+### Perpetual Position Modes
+
+Perpetual connectors support different position modes that affect tracking:
+
+| Mode | Description | Position Tracking |
+|------|-------------|-------------------|
+| `ONEWAY` | Single position per trading pair | BUY and SELL orders net against each other |
+| `HEDGE` | Separate long and short positions | Positions tracked separately by side |
+
+**How position side is determined** (see `executor_orchestrator.py:_determine_position_side()`):
+
+```python
+def _determine_position_side(self, executor_info: ExecutorInfo) -> Optional[TradeType]:
+    is_perpetual = "_perpetual" in executor_info.connector_name
+    if not is_perpetual:
+        return None  # Spot markets don't have position sides
+
+    position_mode = market.position_mode
+    if position_mode == PositionMode.HEDGE:
+        # In hedge mode, CLOSE action uses opposite side
+        if executor_info.config.position_action == PositionAction.CLOSE:
+            return TradeType.BUY if executor_info.config.side == TradeType.SELL else TradeType.SELL
+        return executor_info.config.side
+
+    return executor_info.config.side  # ONEWAY mode
+```
+
+**Perp-specific config fields**:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `side` | TradeType | BUY or SELL |
+| `position_action` | PositionAction | `OPEN` or `CLOSE` (default: OPEN) |
+| `leverage` | int | Position leverage (default: 1) |
+
 ---
 
 ## Position State
@@ -142,7 +177,7 @@ The breakeven price is the volume-weighted average entry price.
 
 ## Executor → Position Flow
 
-Executors are the source of all position changes. When an executor terminates, its trading activity flows into the Position Hold.
+Executors are the source of all position changes. When an executor terminates with `keep_position=True`, it uses `CloseType.POSITION_HOLD` and populates `held_position_orders` in its custom info. The executor orchestrator aggregates these into `PositionHold` objects.
 
 ```mermaid
 flowchart TB
@@ -200,6 +235,45 @@ New breakeven:
 ```
 
 The Position Hold maintains **at most one position** per `(connector_name, trading_pair)` key.
+
+### Position Data Structure
+
+When executors complete with `keep_position=True`, they populate `held_position_orders` in `get_custom_info()`. The aggregation logic uses these fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `trade_type` | string | `"BUY"` or `"SELL"` — determines position side |
+| `executed_amount_base` | float | Amount of base token acquired/sold |
+| `executed_amount_quote` | float | Quote value (base × price) |
+| `cumulative_fee_paid_quote` | float | Fees paid in quote currency |
+| `client_order_id` | string | Unique ID for deduplication |
+
+### How Amounts Are Calculated Per Executor
+
+**OrderExecutor** (spot/perp orders):
+```python
+# From order fills via TradeUpdate events
+executed_amount_base = sum(fill_base_amount)
+executed_amount_quote = sum(fill_quote_amount)
+```
+
+**SwapExecutor** (Gateway AMM swaps):
+```python
+# From completed order
+executed_amount_base = order.executed_amount_base
+executed_amount_quote = executed_amount_base * executed_price
+```
+
+**LPExecutor** (concentrated liquidity):
+```python
+# From LP position state at close
+executed_amount_base = lp_position_state.base_amount
+executed_amount_quote = base_amount * current_price  # VALUE for aggregation
+# Actual quote tokens available via:
+current_amount_quote = lp_position_state.quote_amount
+```
+
+**Note**: For LP positions, `executed_amount_quote` is the **value** of the base position in quote terms (for aggregation consistency), not the actual quote tokens.
 
 ---
 
@@ -289,6 +363,21 @@ When an executor terminates:
 | Active Executor | ✓ (tracked live) | Partial (if scaled out) |
 | Position Hold | ✓ (mark-to-market) | ✓ (from matched trades) |
 | Closed (keep_position: false) | — | ✓ (final) |
+
+### Close Types
+
+Executors terminate with one of these close types:
+
+| CloseType | Description |
+|-----------|-------------|
+| `COMPLETED` | Executor finished normally, no position held |
+| `POSITION_HOLD` | Executor finished with position kept open (`keep_position: true`) |
+| `TAKE_PROFIT` | Price reached take profit target |
+| `STOP_LOSS` | Price reached stop loss limit |
+| `TIME_LIMIT` | Maximum duration exceeded |
+| `TRAILING_STOP` | Trailing stop triggered after activation |
+| `EARLY_STOP` | Manually stopped (may or may not hold position) |
+| `FAILED` | Executor failed after max retries |
 
 ---
 
@@ -403,6 +492,58 @@ This captures:
 - Price movement impact (can be negative = impermanent loss)
 - Fee accumulation (positive)
 - Transaction costs (negative)
+
+### LP Position Updates (RangePositionUpdate)
+
+LP positions track individual operations (ADD/REMOVE) similar to how perp executors track trades via `TradeUpdate` events. Each operation uses `tx_hash` as the deduplication key.
+
+**Implementation** (see `lp_executor._store_lp_operation()`):
+```python
+self._held_position_orders.append({
+    "client_order_id": tx_hash,  # Deduplication key (like trade_id for perps)
+    "order_id": order_id,
+    "exchange_order_id": tx_hash,
+    "order_action": "ADD" | "REMOVE",  # Operation type
+    "executed_amount_base": float(base_amount),
+    "executed_amount_quote": float(base_amount * mid_price + quote_amount),
+    ...
+})
+```
+
+LP positions are stored in the `RangePositionUpdate` database table via connector events. See `hummingbot/model/range_position_update.py`:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `hb_id` | Text | Order ID (e.g., `"range-SOL-USDC-..."`) |
+| `tx_hash` | Text | Transaction signature (deduplication key) |
+| `position_address` | Text | LP position NFT address |
+| `order_action` | Text | `"ADD"`, `"REMOVE"`, or `"COLLECT"` |
+| `trading_pair` | Text | e.g., `"SOL-USDC"` |
+| `market` | Text | Connector name (e.g., `"meteora/clmm"`) |
+| `lower_price` | Float | Position lower bound |
+| `upper_price` | Float | Position upper bound |
+| `mid_price` | Float | Current price at time of event |
+| `base_amount` | Float | Base token amount added/removed |
+| `quote_amount` | Float | Quote token amount added/removed |
+| `base_fee` | Float | Base fee collected |
+| `quote_fee` | Float | Quote fee collected |
+| `trade_fee_in_quote` | Float | Transaction fee in quote |
+| `position_rent` | Float | SOL rent paid (ADD only) |
+| `position_rent_refunded` | Float | SOL rent refunded (REMOVE only) |
+
+**Order Actions**:
+
+| Action | Description | When |
+|--------|-------------|------|
+| `ADD` | Liquidity added to position | Position opened or increased |
+| `REMOVE` | Liquidity removed from position | Position closed or decreased |
+| `COLLECT` | Fees collected without position change | Fee harvesting (future) |
+
+**Deduplication**: When aggregating LP positions, use `tx_hash` instead of `order_id` to deduplicate updates:
+```python
+# For LP positions, track by transaction signature
+self.tx_hashes.add(update.tx_hash)  # Instead of order_ids
+```
 
 ---
 
@@ -618,6 +759,46 @@ Final:
 
 Wallet: 1000 - 1400 + 1750 = 1350 USDT (+350 profit) ✓
 ```
+
+---
+
+## State Machines
+
+### Swap Executor States
+
+```
+NOT_STARTED → EXECUTING → COMPLETED/FAILED
+```
+
+The swap executor has a simple linear lifecycle—it submits the swap and waits for completion.
+
+### LP Executor States
+
+```
+NOT_ACTIVE → OPENING → IN_RANGE → CLOSING → COMPLETE
+                ↓
+          OUT_OF_RANGE (rebalancing)
+```
+
+LP executor states reflect the position lifecycle:
+- `NOT_ACTIVE`: Initial state before position opened
+- `OPENING`: Transaction submitted to add liquidity
+- `IN_RANGE`: Position active, price within range
+- `OUT_OF_RANGE`: Price moved outside position range (may trigger rebalance)
+- `CLOSING`: Transaction submitted to remove liquidity
+- `COMPLETE`: Position fully closed
+
+---
+
+## Implementation Notes
+
+1. **Snapshot on close**: Position data is captured at executor completion, not tracked in real-time. The `held_position_orders` array is populated when the executor terminates.
+
+2. **No ongoing fee tracking**: Neither perp funding rates nor LP fee earnings are tracked continuously in `positions_held`. Fees are captured at position close.
+
+3. **Gateway validation**: Swap and LP executors skip connector validation when `GATEWAY_CONNECTORS` is empty (API context), deferring validation to Gateway at execution time.
+
+4. **Deduplication**: Each position entry uses `client_order_id` (or `tx_hash` for LP) to prevent duplicate aggregation when the same executor is processed multiple times.
 
 ---
 
