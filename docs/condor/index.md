@@ -1,9 +1,22 @@
 **Condor** is an open source harness for building and running autonomous **Trading Agents**. It connects LLM-powered decision-making to deterministic trade execution via the [Hummingbot API](../hummingbot-api/index.md), enabling traders to deploy AI agents that can observe markets, reason about strategy, and execute trades across 50+ exchanges and blockchains.
 
+Condor is the reference implementation of the [Trading Agents Standard](trading-agents-standard.md), an open specification for autonomous trading systems.
+
 !!! note "Active Development"
     Condor is in active development. Join the [#condor-feedback](https://discord.gg/hummingbot) channel in Discord to share feedback and help shape the future of autonomous trading.
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/SVBdmJTZB2M?si=H15J1_Sk4ec3M7D8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Trading Agents Standard
+
+The [Trading Agents Standard](trading-agents-standard.md) defines how autonomous trading agents are structured:
+
+| Component | Description | Documentation |
+|-----------|-------------|---------------|
+| [Positions](positions.md) | Virtual portfolio tracking spot, LP, and perp positions | Active vs closed, position limits |
+| [Executors](executors.md) | Self-contained trading operations with standardized P&L | Types, lifecycle, keep_position |
+| [Bots](bots.md) | Docker containers for long-running automation | Scripts, controllers |
+| [Routines](routines.md) | Deterministic workflows shared across agents | Indicators, webhooks, alerts |
 
 ## Why Use Condor?
 

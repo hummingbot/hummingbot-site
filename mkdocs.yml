@@ -296,6 +296,11 @@ nav:
       - Skills: mcp/skills.md
     - Condor:
       - Condor: condor/index.md
+      - Trading Agents Standard: condor/trading-agents-standard.md
+      - Positions: condor/positions.md
+      - Executors: condor/executors.md
+      - Bots: condor/bots.md
+      - Routines: condor/routines.md
     - Dashboard:
       - Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
