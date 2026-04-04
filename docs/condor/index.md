@@ -1,9 +1,22 @@
 **Condor** is an open source harness for building and running autonomous **Trading Agents**. It connects LLM-powered decision-making to deterministic trade execution via the [Hummingbot API](../hummingbot-api/index.md), enabling traders to deploy AI agents that can observe markets, reason about strategy, and execute trades across 50+ exchanges and blockchains.
 
+Condor is the reference implementation of the [Trading Agents Standard](trading-agents-standard.md), an open specification for autonomous trading systems.
+
 !!! note "Active Development"
     Condor is in active development. Join the [#condor-feedback](https://discord.gg/hummingbot) channel in Discord to share feedback and help shape the future of autonomous trading.
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/SVBdmJTZB2M?si=H15J1_Sk4ec3M7D8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Trading Agents Standard
+
+The [Trading Agents Standard](trading-agents-standard.md) defines how autonomous trading agents are structured:
+
+| Component | Description | Documentation |
+|-----------|-------------|---------------|
+| [Positions](positions.md) | Virtual portfolio tracking spot, LP, and perp positions | Active vs closed, position limits |
+| [Executors](executors.md) | Self-contained trading operations with standardized P&L | Types, lifecycle, keep_position |
+| [Bots](bots.md) | Docker containers for long-running automation | Scripts, controllers |
+| [Routines](routines.md) | Deterministic workflows shared across agents | Indicators, webhooks, alerts |
 
 ## Why Use Condor?
 
@@ -61,7 +74,22 @@ This architecture enables **session continuity across interfaces**. The `~/condo
 
 ## Installation
 
-Condor is installed automatically when you run the [Hummingbot API Quickstart](../installation/hummingbot-api.md). During installation, you'll need to provide:
+To install Condor, run the following command. This script handles the source installation and deploys Condor in a detached `tmux` session.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/refs/heads/main/setup.sh | bash
+```
+
+### What the Installation Script Does
+
+The `setup.sh` script performs the following actions:
+
+- Clones the Condor repository from source.
+- Runs Condor's internal `setup-environment.sh` script, which installs necessary Python dependencies (including `uv`) and interactively prompts you for your Telegram Bot Token and User ID.
+- Launches Condor within a detached `tmux` session.
+- Optionally installs AI CLI tools such as Gemini CLI and Claude Code for seamless Agent Client Protocol (ACP) integration.
+
+During installation, you'll need to provide:
 
 **Create a Telegram Bot:**
 
@@ -77,6 +105,15 @@ Condor is installed automatically when you run the [Hummingbot API Quickstart](.
 
 1. Open the link above or search for `@userinfobot` in Telegram
 2. Send `/start` - it will reply with your User ID (a number like `123456789`)
+
+### Managing Your Condor Session
+
+Once installed and running, you can manage your Condor session using `tmux`:
+
+- **Attach to session**: `tmux attach -t condor`
+- **Detach from session**: Press `Ctrl+B` then `D`
+- **Stop Condor**: `tmux kill-session -t condor`
+- **Restart Condor**: Navigate to the Condor directory (e.g., `cd condor`) and run `source setup-environment.sh`
 
 ## Connect To Hummingbot API Server
 
