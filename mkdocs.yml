@@ -328,6 +328,7 @@ nav:
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
     - AscendEx: exchanges/ascendex/index.md
+    - Architect: exchanges/architect/index.md
     - Aevo: exchanges/aevo/index.md
     - Backpack: exchanges/backpack/index.md
     - Bitstamp: exchanges/bitstamp/index.md
@@ -340,6 +341,7 @@ nav:
     - Derive: exchanges/derive/index.md
     - Dexalot: exchanges/dexalot.md
     - dYdX: exchanges/dydx.md
+    - Evedex: exchanges/evedex/index.md
     - Foxbit: exchanges/foxbit/index.md
     - Injective: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
