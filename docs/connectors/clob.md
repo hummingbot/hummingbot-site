@@ -46,6 +46,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [NDAX](../exchanges/ndax.md)                       |  | ✓ |  |  |
 | [Pacifica](../exchanges/pacifica/index.md)             |  |  | ✓ |  |
 | [Decibel](../exchanges/decibel/index.md)               |  |  | ✓ |  |
+| [GRVT](../exchanges/grvt/index.md)                     |  |  | ✓ |  |
 | [Vertex](../exchanges/vertex.md)                   | | ✓ |  |  |
 | [Foxbit](../exchanges/foxbit/index.md) | | ✓ |  |  |
 
