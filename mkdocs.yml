@@ -343,6 +343,7 @@ nav:
     - dYdX: exchanges/dydx.md
     - Evedex: exchanges/evedex/index.md
     - Foxbit: exchanges/foxbit/index.md
+    - GRVT: exchanges/grvt/index.md
     - Injective: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
     - Kraken: exchanges/kraken/index.md
