@@ -11,16 +11,11 @@ For security purposes, ensure that you use only the official channels below to a
 * [YouTube](https://www.youtube.com/c/hummingbot): Our YouTube account contains videos that teach you how to use Hummingbot, livestreams of community calls, and interviews with members of the Hummingbot community.
 * [Twitter](https://twitter.com/_hummingbot): We post regular news and updates on our Twitter account.
 
-## Hummingbot Live
+## The Bot Pod
 
-Each week, we livestream **Hummingbot Live** on YouTube. Every Friday at 8am PST / 3pm UTC, Hummingbot core maintainers Mike and Fede go live to:
+Introducing **The Bot Pod** — a weekly deep-dive into AI-powered crypto trading from the maintainers of Hummingbot.
 
-- Demo new features and strategies
-- Answer your trading questions
-- Share tips and tricks for better bot performance
-- Deep dive into quantitative trading concepts
-
-Join us on our [YouTube channel](https://www.youtube.com/c/hummingbot) to catch these weekly sessions live or watch the recordings later.
+Episode highlights and transcripts can be found at [hummingbot.substack.com](https://hummingbot.substack.com/) and the full playlist is available on [YouTube](https://www.youtube.com/playlist?list=PLDwlNkL_4MMergHsZTLFoOqzbNJ2T6A7J).
 
 ## Community Calls
 
