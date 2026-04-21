@@ -17,11 +17,7 @@ Introducing **The Bot Pod** — a weekly deep-dive into AI-powered crypto tradin
 
 Episode highlights and transcripts can be found at [hummingbot.substack.com](https://hummingbot.substack.com/) and the full playlist is available on [YouTube](https://www.youtube.com/playlist?list=PLDwlNkL_4MMergHsZTLFoOqzbNJ2T6A7J).
 
-## Community Calls
-
-Each month, we livestream one or more community calls on our [Discord](https://discord.gg/hummingbot) server. Afterwards, we post recordings on our [YouTube](https://youtube.com/c/hummingbot) channel.
-
-Check out the [Hummingbot Events Calendar](https://lu.ma/u/hummingbot) for links to these monthly calls and other upcoming events.
+After each release, we cover new features and community updates in a dedicated episode.
 
 !!! danger "No DMs"
     Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
