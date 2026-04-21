@@ -9,7 +9,7 @@ categories:
 
 # Introducing Condor: The Open Source Harness for Trading Agents
 
-![cover](cover.jpg)
+![cover](cover.png)
 
 We're excited to introduce **[Condor](https://condor.hummingbot.org)**, an open source harness that connects LLMs to the Hummingbot trading infrastructure. Condor lets you use natural language to execute trades, run trading bots, and deploy autonomous trading agents across 50+ exchanges and blockchains.
 
@@ -17,25 +17,54 @@ We're excited to introduce **[Condor](https://condor.hummingbot.org)**, an open 
 
 ## The Condor Harness
 
-Condor is an open source AI agent harness, similar to [OpenClaw](https://github.com/anthropics/openClaw). Just as OpenClaw helps you create and manage agents that automate personal productivity tasks, Condor helps you perform trading tasks using natural language.
+Condor is an open source AI agent harness, similar to [OpenClaw](https://github.com/anthropics/openClaw). Just as OpenClaw helps you create and manage agents that automate personal productivity tasks, Condor helps you create and manage agents that automate trading tasks, as well perform trades using natural language.
+
+### Motivation
+
+When Hummingbot launched in 2019, it democratized market making. For the first time, individual traders and small firms could run the same strategies that professional market makers use on Wall Street.
+
+![](interface.png)
+
+But there was a ceiling. As traders grew their operations — more exchanges, more chains, more clients, more capital — they hit the limits of what a single person could manage. Monitoring bots, adjusting parameters, responding to market conditions, handling edge cases: these tasks don't scale.
+
+**Condor removes that ceiling.** Where Hummingbot gives a person the ability to run an algorithmic trading bot, Condor lets one person manage a *swarm* of autonomous agents — each observing markets, adapting to conditions, and executing strategies independently.
+
+### Security
+
+Autonomous agents that control real capital need to be secure and trustworthy. As AI trading agents become more capable, they've also become targets for supply chain attacks — malicious skills, compromised scripts, and dependency injection. The most effective defense is an integrated system built and maintained by a single trusted source.
+
+Condor is that system. It's built and maintained by [Hummingbot Foundation](https://hummingbot.org), a non-profit organization whose revenue is linked to usage of the Hummingbot open source software across our connected exchanges. Our incentive is simple: build the best, most trustworthy open source trading infrastructure possible.
+
+The Foundation safeguards against supply chain attacks through strict guidelines on library dependencies and continual review to minimize attack surface. For example, the recent [Hummingbot v2.14 release](/release-notes/2.14.0) removed Axios, a recently compromised HTTP library, from Gateway.
+
+Unlike broader agent frameworks, Condor strictly separates reasoning from execution. This two-layer architecture provides key advantages:
+
+- **Speed**: Deterministic systems handle time-critical trades (stop-losses, take-profits) without LLM latency
+- **Efficiency**: Deterministic code handles routine operations, reducing token consumption significantly
+- **Security**: The execution layer constrains what an AI agent can actually perform
+- **Standardization**: One unified interface across 50+ exchanges and blockchains eliminates API complexity
+
+### Capabilities
 
 Condor provides AI-mediated trading tools—a free, open source alternative to products like [Binance AI Pro](https://www.binance.com/en/academy/articles/binance-ai-pro-guide-what-it-is-and-how-to-use-it). It integrates with LLMs (Claude, GPT, Gemini, etc.) to help you:
 
-### 1. Execute Trades
+![](condor.png)
+
+#### 1. Execute Trades
 
 Use natural language to place orders, swap tokens, and manage positions across centralized and decentralized exchanges. Query your portfolio, check balances, and analyze market data—all through conversation.
 
-### 2. Run Trading Bots
+#### 2. Run Trading Bots
 
 Deploy and manage the same [Hummingbot scripts and controllers](/strategies/v2-strategies/controllers) that power algorithmic trading strategies. Each bot runs in a Docker container with its own configuration, and you can monitor logs, adjust parameters, and stop/start bots through the Condor interface.
 
-### 3. Run Condor Agents
+#### 3. Run Trading Agents
 
-Build and deploy autonomous **Condor Agents** that observe markets, reason about strategy, and execute trades independently. Condor Agents combine LLM-powered decision-making with deterministic trade execution, enabling a single person to manage a swarm of agents.
+Build and deploy autonomous **Trading Agents** that observe markets, reason about strategy, and execute trades independently. Trading Agents combine LLM-powered decision-making with deterministic trade execution, enabling a single person to manage a swarm of agents.
 
 See the [Condor documentation](https://condor.hummingbot.org) for installation instructions.
 
-### Commands
+### Telegram Interface
 
 After you start Condor and message your bot on Telegram, you'll see a menu of available commands:
 
@@ -49,46 +78,38 @@ Key commands include:
 - `/keys`: Manage exchange API credentials securely
 - `/portfolio`: View balances across all connected exchanges
 - `/bots`: List and manage running Hummingbot bot containers
-- `/agents`: List, create, and deploy Condor Agents
+- `/agents`: List, create, and deploy Trading Agents
 
-### Agent Mode
+Telegram offers several advantages as a trading interface: cross-device continuity between mobile and desktop, rich message formatting with inline buttons, real-time notifications for trade alerts, and team access by adding multiple user IDs.
 
-The `/agent` command connects your LLM to Hummingbot API via [MCP tools](/mcp). Anything you can do through the menu commands, you can do through natural conversation with the agent.
+### Web Dashboard
 
-![](agent.png)
+For users who prefer a browser-based experience, Condor provides a web dashboard. Run `/web` in Telegram to get a secure login link:
 
-In agent mode, you can:
+```
+🌐 Web Dashboard
 
-- Query your portfolio and positions across exchanges
-- Execute trades and manage orders
-- Build, configure, and deploy Condor Agents
-- Analyze market data and get trading insights
+Open this link in your browser:
+http://localhost:8088/login?token=XSNKl6bjWKGce-mcCYSWWgcyC5EvgzFrFqgCGIIop0s
 
-The agent can help you build CTAs from scratch—describe your strategy in natural language, and it will create the agent.md file with appropriate configs and limits.
+Link valid for 5 minutes.
+```
 
-### Interfaces
+![](web-dashboard.png)
 
-Telegram offers several advantages as a trading interface:
+The dashboard offers:
 
-- **Cross-device continuity**: Seamlessly switch between mobile and desktop while managing your agents
-- **Trading UI**: Rich message formatting, inline buttons, and real-time notifications for trade alerts
-- **Team access**: Run one Condor instance and add multiple user IDs to enable team-based trading
+- **Portfolio**: Track balances and positions across connected exchanges
+- **Trading**: Execute orders, view order books, and manage positions
+- **Executors**: Create, monitor, and stop automated trading executors
+- **Agents**: Monitor agent sessions, review performance snapshots, and examine learnings
+- **Bots**: Launch, monitor, and manage trading bots
 
-For users who prefer a browser-based experience, Condor also provides a web dashboard for monitoring agents, viewing session journals, and managing configurations.
+The dashboard maintains synchronized state with Telegram—start a trade on one platform and monitor it on the other.
 
-## Condor Agents
+## Trading Agents
 
-A **Condor Agent** is an autonomous software system that makes trading decisions and executes trades on behalf of a user. Unlike traditional algorithmic bots that follow rigid, pre-programmed rules, a Condor Agent uses large language models to interpret market conditions, adapt to changing dynamics, and learn from experience.
-
-### Why Condor Agents?
-
-![](interface.png)
-
-When Hummingbot launched in 2019, it democratized market making. For the first time, individual traders and small firms could run the same strategies that professional market makers use on Wall Street.
-
-But there was a ceiling. As traders grew their operations — more exchanges, more chains, more clients, more capital — they hit the limits of what a single person could manage. Monitoring bots, adjusting parameters, responding to market conditions, handling edge cases: these tasks don't scale.
-
-**Condor Agents remove that ceiling.** Where Hummingbot gives a person the ability to run an algorithmic trading bot, Condor Agents let one person manage a *swarm* of autonomous agents — each observing markets, adapting to conditions, and executing strategies independently.
+A **Trading Agent** is an autonomous software system that makes trading decisions and executes trades on behalf of a user. Unlike traditional algorithmic bots that follow rigid, pre-programmed rules, a Trading Agent uses large language models to interpret market conditions, adapt to changing dynamics, and learn from experience.
 
 ### Probabilistic vs. Deterministic
 
@@ -106,15 +127,17 @@ Condor solves this by **strictly separating the two layers**:
 | **Probabilistic (Agent)** | Interprets market conditions, reasons about strategy, decides what to do | LLM (Claude, GPT, Gemini) |
 | **Deterministic (Execution)** | Converts decisions into orders with reliability and auditability | Hummingbot API |
 
+**The Execution Layer** provides deterministic infrastructure via [Hummingbot API](/hummingbot-api): data collection across 50+ exchanges, connectors to spot/perp/AMM exchanges plus Solana and EVM networks, configurable [executors](https://condor.hummingbot.org/executors/overview) that manage positions with precise parameters, and bot management for long-running strategies. The same instruction always produces the same result.
+
+**The Agentic Layer** is probabilistic—given identical market conditions, the agent might reason differently. This variability enables adaptation and nuanced judgment. Each tick, the agent fetches market data, loads its learnings and context, reasons about strategy within defined limits, then executes decisions and records results.
+
 By cleanly separating these concerns, you can audit, test, and improve each layer independently.
 
-### The OODA Framework
+### Agent Builder Mode
 
-Condor Agents follow an iterative process based on the [**OODA loop**](https://en.wikipedia.org/wiki/OODA_loop), a decision-making framework developed by military strategist John Boyd for fighter pilots.
+Trading Agents follow an iterative process based on the [**OODA loop**](https://en.wikipedia.org/wiki/OODA_loop), a decision-making framework developed by military strategist John Boyd for fighter pilots. Fighter pilots use OODA to make split-second decisions in dynamic, adversarial environments. Markets share similar characteristics: incomplete information, adversarial participants, and a premium on speed and adaptability.
 
 ![](jet.webp)
-
-Fighter pilots use OODA to make split-second decisions in dynamic, adversarial environments. Markets share similar characteristics: incomplete information, adversarial participants, and a premium on speed and adaptability.
 
 ```mermaid
 flowchart LR
@@ -122,49 +145,31 @@ flowchart LR
     A --> O
 ```
 
-In trading terms:
-
-- **Observe**: Gather market data—order books, positions, balances
-- **Orient**: Interpret the data in context of strategy and history
-- **Decide**: Determine which orders to place, modify, or cancel
-- **Act**: Execute the orders reliably
-
 The key insight: **different phases have different requirements**. Observe and Act must be deterministic—fetching data and placing orders should produce consistent results. Orient and Decide benefit from probabilistic reasoning—interpreting complex situations and weighing tradeoffs is where LLMs excel.
 
-### Two Layers
+The `/agent` command enters Agent Builder mode, which connects your LLM to Hummingbot API via [MCP tools](/mcp). Agent Builder mode guides you through creating a Trading Agent using this framework:
 
-**The Execution Layer** handles Observe and Act. The [Hummingbot API](/hummingbot-api) provides deterministic infrastructure:
+![](agent-builder.png)
 
-- **Data collection**: Order books, candles, balances, and positions across 50+ exchanges
-- **Market access**: Connectors to spot, perp, and AMM exchanges, plus Solana and EVM networks
-- **Trade execution**: Configurable [executors](https://condor.hummingbot.org/executors/overview) that manage positions with precise parameters
-- **Bot management**: Deploy and manage containerized bots for long-running strategies
+- **Observe**: Define what data your agent needs—order books, candles, positions, balances, funding rates
+- **Orient**: Build routines to process the data—custom indicators, signal generators, market filters
+- **Decide**: Hand decision-making logic to the LLM—strategy rules, entry/exit conditions, position sizing
+- **Act**: Use Hummingbot API to execute actions reliably—place orders, manage positions, deploy executors
 
-The execution layer is predictable—the same instruction always produces the same result.
+Describe your strategy in natural language, and Agent Builder will create the `agent.md` file with appropriate configs and limits.
 
-**The Agentic Layer** handles Orient and Decide. Each tick through the OODA loop:
+### The Trading Agent Standard
 
-1. **Observe**: Fetch portfolio state and market data via Hummingbot API
-2. **Orient**: Load the agent's learnings, session journal, and configs to build context
-3. **Decide**: The LLM reasons about strategy within the bounds of defined limits
-4. **Act**: Execute decisions via MCP tools, then record results and update learnings
+We're defining the **Trading Agent** as an open standard — a specification for how autonomous trading systems should be structured. The standard enables:
 
-This layer is probabilistic—given identical market conditions, the agent might reason differently. This variability enables adaptation and nuanced judgment.
-
-The [Hummingbot MCP Server](/mcp) and [Hummingbot Skills](/mcp/skills) bridge the two layers, giving the LLM structured access to execution capabilities while maintaining clear boundaries.
-
-### The Condor Agent Standard
-
-We're defining the **Condor Agent** as an open standard — a specification for how autonomous trading systems should be structured. The standard enables:
-
-- **Portability**: Condor Agents are defined as structured Markdown files. Move them, share them, version them with git.
+- **Portability**: Trading Agents are defined as structured Markdown files. Move them, share them, version them with git.
 - **Auditability**: Every session logs each turn as a structured snapshot and appends key decisions to a human-readable journal.
-- **Interoperability**: Any LLM can power the reasoning layer. While Condor Agents use Hummingbot API as the execution layer, support for other execution frameworks is possible.
+- **Interoperability**: Any LLM can power the reasoning layer. While Trading Agents use Hummingbot API as the execution layer, support for other execution frameworks is possible.
 
-Each Condor Agent is a directory in `~/condor/agents/` containing structured Markdown files:
+Each Trading Agent is a directory in `~/condor/trading-agents/` containing structured Markdown files:
 
 ```
-~/condor/agents/grid-trader/
+~/condor/trading-agents/grid-trader/
 ├── agent.md          # Definition: configs, limits, and instructions
 ├── learnings.md      # Persistent knowledge across sessions
 └── sessions/
@@ -223,15 +228,7 @@ Every agent includes a built-in Risk Engine that validates both pre-tick conditi
 | `max_cost_per_day_usd` | $5 | Daily LLM cost limit |
 | `cooldown_after_loss_sec` | 300 | Pause after hitting loss limit |
 
-See the full [Condor Agents](https://condor.hummingbot.org/condor-agents/overview) documentation for detailed information on [Positions](https://condor.hummingbot.org/condor-agents/positions), [Executors](https://condor.hummingbot.org/executors/overview), [Bots](https://condor.hummingbot.org/bots/overview), and [Routines](https://condor.hummingbot.org/routines/overview).
-
-## Building Trust
-
-Condor is built and maintained by [Hummingbot Foundation](https://hummingbot.org), a non-profit organization. The Foundation's revenue is linked to usage of the Hummingbot open source software across our connected exchanges, so our incentive is simple: build the best, most trustworthy open source trading infrastructure possible.
-
-Autonomous agents that control real capital need to be trustworthy. As AI trading agents become more capable, they've also become targets for supply chain attacks — malicious skills, compromised scripts, and dependency injection.
-
-The most effective defense is an integrated system built and maintained by a single trusted source. Condor is that system: the agent harness, execution layer, and skills all come from Hummingbot Foundation and are designed to work together.
+See the full [Trading Agents](https://condor.hummingbot.org/trading-agents/overview) documentation for detailed information on [Positions](https://condor.hummingbot.org/trading-agents/positions), [Executors](https://condor.hummingbot.org/executors/overview), [Bots](https://condor.hummingbot.org/bots/overview), and [Routines](https://condor.hummingbot.org/routines/overview).
 
 ## What's Next
 
@@ -242,16 +239,16 @@ Condor is in active development. On the roadmap:
 - **Multi-agent coordination**: Run multiple agents that share insights and learnings
 - **Enhanced web dashboard**: Full-featured browser interface for agent management
 
-The next cohort of [Hummingbot Botcamp](https://www.botcamp.xyz/cohorts/cohort13/landing) will teach users how to build Condor Agents.
+The next cohort of [Hummingbot Botcamp](https://www.botcamp.xyz/cohorts/cohort13/landing) will teach users how to build Trading Agents.
 
 ## Get Started
 
-Install Condor using the [Condor Quickstart](/installation/condor), which deploys everything you need: the Hummingbot API server, Gateway for DEX trading, and Condor as a Telegram bot.
+Ready to try Condor? Follow the [Getting Started Guide](https://condor.hummingbot.org/getting-started/overview) to install Condor and deploy your first agent.
 
 Condor is in active development. Share feedback and contribute ideas:
 
-- **Public**: Join the [#condor-feedback](https://discord.gg/hummingbot) channel on Discord
-- **Private focus group**: DM a Foundation team member on Discord to join
+- **Discord**: Join the [#condor-feedback](https://discord.gg/hummingbot) channel for discussion
+- **GitHub**: Create issues in the [Condor repo](https://github.com/hummingbot/condor/issues) for bugs and enhancements
 
 ---
 
