@@ -61,21 +61,13 @@ hide:
 
     [:octicons-arrow-right-24: Hummingbot Client Quickstart](./installation/hummingbot-client.md)
 
--   :octicons-rocket-16:{ .lg .middle } __Hummingbot API Quickstart Guide__
+-   :octicons-rocket-16:{ .lg .middle } __Condor Quickstart Guide__
 
     ---
 
-    Deploy **Hummingbot API** on a cloud server and control it with **Condor** (Telegram). Best for managing multiple bots in production.
+    Deploy **Condor** to build and run autonomous **Trading Agents** via Telegram. Best for managing multiple bots in production.
 
-    [:octicons-arrow-right-24: Hummingbot API Quickstart](./installation/hummingbot-api.md)
-
--   :octicons-tools-16:{ .lg .middle } __Hummingbot Skills__
-
-    ---
-
-    AI agent skills for managing Hummingbot from any AI assistant — deploy bots, scan for arb/XEMM opportunities, manage LP positions, and receive status updates in Telegram or Discord.
-
-    [:octicons-arrow-right-24: Skills Documentation](./mcp/skills.md)
+    [:octicons-arrow-right-24: Condor Quickstart](./installation/condor.md)
 
 </div>
 

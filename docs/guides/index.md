@@ -7,8 +7,8 @@ Get started with Hummingbot using different installation methods:
 - **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)**
   Step-by-step guide to install and run the Hummingbot Client using Docker. Best for local usage, learning Hummingbot, and running V1 strategies.
 
-- **[Hummingbot API Quickstart](../installation/hummingbot-api.md)**
-  Install Hummingbot API for multi-bot management, cloud deployments, and modern interfaces like Condor (Telegram) and MCP (AI agents).
+- **[Condor Quickstart](../installation/condor.md)**
+  Install Condor for Trading Agents, multi-bot management, cloud deployments, and modern interfaces like Telegram and MCP (AI agents).
 
 - **[Hummingbot API Developer Guide](../hummingbot-api/quickstart.md)**
   Learn how to use the Hummingbot API directly with curl or the Python client to add credentials, view portfolios, and place orders.
@@ -34,7 +34,7 @@ Take your skills to the next level in [Hummingbot Botcamp](https://botcamp.xyz),
 
 ## 🧙 Strategy Guides
 
-Check out the [Strategy Guides](../blog/category/strategy-guides.md) category in our blog for step-by-step guides in setting up various Hummingbot strategies:
+Check out the [Strategy Guides](../blog/category/strategy-guides) category in our blog for step-by-step guides in setting up various Hummingbot strategies:
 
 - **[Strategy Guide: Grid Strike](../blog/posts/strategy-guide-grid-strike/index.md)**
   This guide walks you through setting up the Grid Strike strategy that sets a long or short grid of orders. Works on both spot or perp exchanges.
@@ -82,4 +82,4 @@ Learn how to setup and run Hummingbot on various CEXs and DEXs:
 - **[Trading on XRPL with Hummingbot](../blog/posts/using-xrpl-with-hummingbot/index.md)**
   Guide to setting up and trading on the XRP Ledger's decentralized exchange using Hummingbot
 
-See more examples in the [Connector Guides](../blog/category/connector-guides.md) category in our blog.
+See more examples in the [Connector Guides](../blog/category/connector-guides) category in our blog.

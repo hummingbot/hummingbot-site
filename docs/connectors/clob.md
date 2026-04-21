@@ -21,6 +21,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Binance](../exchanges/binance/index.md)           | ✓ | ✓ | ✓ | [Guide](../blog/posts/using-binance-with-hummingbot/index.md) |
 | [Bitmart](../exchanges/bitmart/index.md)           | ✓ | ✓ | ✓ |  |
 | [Derive](../exchanges/derive/index.md)             | ✓ | ✓ | ✓ | [Guide](../blog/posts/using-derive-with-hummingbot/index.md) |
+| [Evedex](../exchanges/evedex/index.md)             |  |  | ✓ |  |
 | [dYdX](../exchanges/dydx.md)                 | ✓ | | ✓ | [Guide](../blog/posts/dydx-v4-connector/index.md) |
 | [Gate.io](../exchanges/gate-io/index.md)           | ✓ | ✓ | ✓ |  |
 | [HTX](../exchanges/htx/index.md)                 | ✓ | ✓ |  |  |
@@ -28,6 +29,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [OKX](../exchanges/okx/index.md)                   | ✓ | ✓ | ✓ |  |
 | [XRPL](../exchanges/xrpl.md)                       | ✓ | ✓ |  | [Guide](../blog/posts/using-xrpl-with-hummingbot/index.md) |
 | [AscendEx](../exchanges/ascendex/index.md)         |  | ✓ |  |  |
+| [Architect](../exchanges/architect/index.md)       |  |  | ✓ |  |
 | [Aevo](../exchanges/aevo/index.md)         |  | ✓ |  |  |
 | [Backpack](../exchanges/backpack/index.md)         |  | ✓ | ✓ |  |
 | [BingX](../exchanges/bing_x/index.md)              | | ✓ |  | |
@@ -42,7 +44,9 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
 | [MEXC](../exchanges/mexc/index.md)                 |  | ✓ |  |  |
 | [NDAX](../exchanges/ndax.md)                       |  | ✓ |  |  |
-| [Pacifica](../exchanges/pacifica.md)                       |  |  | ✓ |  |
+| [Pacifica](../exchanges/pacifica/index.md)             |  |  | ✓ |  |
+| [Decibel](../exchanges/decibel/index.md)               |  |  | ✓ |  |
+| [GRVT](../exchanges/grvt/index.md)                     |  |  | ✓ |  |
 | [Vertex](../exchanges/vertex.md)                   | | ✓ |  |  |
 | [Foxbit](../exchanges/foxbit/index.md) | | ✓ |  |  |
 

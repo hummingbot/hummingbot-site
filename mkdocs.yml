@@ -171,7 +171,7 @@ nav:
     - Installation:
       - Overview: installation/index.md
       - Hummingbot Client Quickstart: installation/hummingbot-client.md
-      - Hummingbot API Quickstart: installation/hummingbot-api.md
+      - Condor Quickstart: installation/condor.md
       - Updating to New Versions: installation/update.md
       - Bot Orchestration: installation/broker.md
     - Guides:
@@ -294,14 +294,7 @@ nav:
       - Installation: mcp/installation.md
       - Tools Reference: mcp/tools.md
       - Skills: mcp/skills.md
-    - Condor:
-      - Condor: condor/index.md
-      - Trading Agents Standard: condor/trading-agents-standard.md
-      - Positions: condor/positions.md
-      - Executors: condor/executors.md
-      - Bots: condor/bots.md
-      - Routines: condor/routines.md
-      - Extensions: condor/extensions.md
+    - Condor: condor/index.md
     - Dashboard:
       - Dashboard: dashboard/index.md
       - Adding Credentials: dashboard/credentials.md
@@ -328,6 +321,7 @@ nav:
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
     - AscendEx: exchanges/ascendex/index.md
+    - Architect: exchanges/architect/index.md
     - Aevo: exchanges/aevo/index.md
     - Backpack: exchanges/backpack/index.md
     - Bitstamp: exchanges/bitstamp/index.md
@@ -340,7 +334,9 @@ nav:
     - Derive: exchanges/derive/index.md
     - Dexalot: exchanges/dexalot.md
     - dYdX: exchanges/dydx.md
+    - Evedex: exchanges/evedex/index.md
     - Foxbit: exchanges/foxbit/index.md
+    - GRVT: exchanges/grvt/index.md
     - Injective: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
     - Kraken: exchanges/kraken/index.md
@@ -349,6 +345,7 @@ nav:
     - NDAX: exchanges/ndax.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Pacifica: exchanges/pacifica/index.md
+    - Decibel: exchanges/decibel/index.md
     - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
     - Uniswap: exchanges/gateway/uniswap.md
@@ -362,6 +359,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.14.0: release-notes/2.14.0.md
     - 2.13.0: release-notes/2.13.0.md
     - 2.12.0: release-notes/2.12.0.md
     - 2.11.0: release-notes/2.11.0.md
@@ -412,11 +410,11 @@ nav:
     - Community: community/index.md
     - Discord Server: community/discord.md
     - Contribution Guidelines: community/contributions.md
-    - Reward Programs: community/rewards.md
     - Certification: community/certification.md
     - Certifications List: community/list.md
     - Botcamp ↗️: https://www.botcamp.xyz
     - Botcamp FAQ: botcamp/faq.md
+    - XRPLiquid: community/rewards.md
   - Foundation:
     - Foundation: about/index.md
     - Board of Directors: about/board.md
