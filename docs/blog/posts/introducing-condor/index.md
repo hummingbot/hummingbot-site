@@ -1,5 +1,5 @@
 ---
-date: 2026-03-27
+date: 2026-04-21
 authors:
   - foundation
 categories:
@@ -230,7 +230,7 @@ The next cohort of [Hummingbot Botcamp](https://www.botcamp.xyz/cohorts/cohort13
 
 ## Get Started
 
-Install Condor using the [Hummingbot API Quickstart](/installation/condor), which deploys everything you need: the Hummingbot API server, Gateway for DEX trading, and Condor as a Telegram bot.
+Install Condor using the [Condor Quickstart](/installation/condor), which deploys everything you need: the Hummingbot API server, Gateway for DEX trading, and Condor as a Telegram bot.
 
 Condor is in active development. Share feedback and contribute ideas:
 
