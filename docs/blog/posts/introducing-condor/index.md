@@ -49,7 +49,7 @@ We're defining the **Condor Trading Agent (CTA)** as an open standard — a spec
 - **Auditability**: Every CTA session logs each turn as a structured snapshot and appends key decisions to a human-readable journal. No black boxes.
 - **Interoperability**: Any LLM (Claude, Codex, Gemini, Kimi, etc) can power the reasoning layer for CTAs. While CTAs created in Condor use Hummingbot API as the execution layer, support for other execution frameworks is possible.
 
-See the full [Trading Agents](https://docs.hummingbot.org/condor/trading-agents/overview) documentation for detailed information on [Positions](https://docs.hummingbot.org/condor/trading-agents/inventory), [Executors](https://docs.hummingbot.org/condor/executors/overview), [Bots](https://docs.hummingbot.org/condor/bots/overview), and [Routines](https://docs.hummingbot.org/condor/routines/overview).
+See the full [Trading Agents](https://condor.hummingbot.org/trading-agents/overview) documentation for detailed information on [Positions](https://condor.hummingbot.org/trading-agents/inventory), [Executors](https://condor.hummingbot.org/executors/overview), [Bots](https://condor.hummingbot.org/bots/overview), and [Routines](https://condor.hummingbot.org/routines/overview).
 
 ## Condor Trading Agents
 
@@ -100,12 +100,12 @@ The execution layer is predictable—the same instruction always produces the sa
 
 This layer is probabilistic—given identical market conditions, the agent might reason differently. This variability enables adaptation, nuanced judgment, and the potential for CTAs to improve over time through techniques like [autoresearch](https://github.com/karpathy/autoresearch).
 
-The [Hummingbot MCP Server](/mcp) and [Hummingbot Skills](/skills) bridge the two layers, giving the LLM structured access to execution capabilities while maintaining clear boundaries.
+The [Hummingbot MCP Server](/mcp) and [Hummingbot Skills](/mcp/skills) bridge the two layers, giving the LLM structured access to execution capabilities while maintaining clear boundaries.
 
 The execution layer is built on two key abstractions:
 
-- **[Positions](https://docs.hummingbot.org/condor/trading-agents/inventory)**: A virtual portfolio tracking spot, LP, and perp positions—enabling agent isolation and standardized performance measurement
-- **[Executors](https://docs.hummingbot.org/condor/executors/overview)**: Self-contained trading operations (Position, Grid, LP, DCA, TWAP) with standardized P&L reporting in quote currency
+- **[Positions](https://condor.hummingbot.org/trading-agents/inventory)**: A virtual portfolio tracking spot, LP, and perp positions—enabling agent isolation and standardized performance measurement
+- **[Executors](https://condor.hummingbot.org/executors/overview)**: Self-contained trading operations (Position, Grid, LP, DCA, TWAP) with standardized P&L reporting in quote currency
 
 ### The CTA Standard
 
@@ -169,9 +169,9 @@ Condor is an open source AI agent harness, similar to [OpenClaw](https://github.
 Condor provides AI-mediated trading tools—a free, open source alternative to products like [Binance AI Pro](https://www.binance.com/en/academy/articles/binance-ai-pro-guide-what-it-is-and-how-to-use-it):
 
 - **CTAs**: Build and deploy autonomous CTAs that execute strategies over time with persistent state
-- **[Executors](https://docs.hummingbot.org/condor/trading-agents/executors)**: Self-contained trading operations with standardized P&L tracking
-- **[Bots](https://docs.hummingbot.org/condor/bots/overview)**: Docker containers running Hummingbot scripts and controllers for long-running automation
-- **[Routines](https://docs.hummingbot.org/condor/routines/overview)**: Deterministic workflows (custom indicators, webhooks, alerts) shared across agents
+- **[Executors](https://condor.hummingbot.org/trading-agents/executors)**: Self-contained trading operations with standardized P&L tracking
+- **[Bots](https://condor.hummingbot.org/bots/overview)**: Docker containers running Hummingbot scripts and controllers for long-running automation
+- **[Routines](https://condor.hummingbot.org/routines/overview)**: Deterministic workflows (custom indicators, webhooks, alerts) shared across agents
 - **Secure isolation**: Agents only access the `~/condor` folder, and each bot runs in a separate container
 
 See the [Condor documentation](/condor) for installation instructions.
@@ -230,7 +230,7 @@ The next cohort of [Hummingbot Botcamp](https://www.botcamp.xyz/cohorts/cohort13
 
 ## Get Started
 
-Install Condor using the [Hummingbot API Quickstart](/installation/hummingbot-api), which deploys everything you need: the Hummingbot API server, Gateway for DEX trading, and Condor as a Telegram bot.
+Install Condor using the [Hummingbot API Quickstart](/installation/condor), which deploys everything you need: the Hummingbot API server, Gateway for DEX trading, and Condor as a Telegram bot.
 
 Condor is in active development. Share feedback and contribute ideas:
 

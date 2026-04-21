@@ -12,7 +12,7 @@ Choose your path based on your needs:
 !!! note "For Developers"
     If you're a developer looking to build custom strategies or exchange connectors, see [Source Installation](../client/installation.md#source-installation) for Hummingbot Client or [Hummingbot API Installation](../hummingbot-api/installation.md) for the API.
 
-Afterwards, check out the **Academy** category in the [Hummingbot Blog](../blog/category/academy.md) for blog posts and step-by-step tutorials on how to use Hummingbot.
+Afterwards, check out the **Academy** category in the [Hummingbot Blog](../blog/category/academy) for blog posts and step-by-step tutorials on how to use Hummingbot.
 
 ## Strategies
 
