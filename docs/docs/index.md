@@ -6,7 +6,7 @@ It is designed to be modular and extensible, allowing users to automate any trad
 
 Choose your path based on your needs:
 
-- **[Hummingbot API Quickstart](../installation/hummingbot-api.md)** - Recommended for cloud deployments, multi-bot management, and modern interfaces (Condor, MCP)
+- **[Condor Quickstart](../installation/condor.md)** - Recommended for Trading Agents, cloud deployments, multi-bot management, and modern interfaces (Telegram, MCP)
 - **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)** - Best for local usage, learning Hummingbot, and running single bot instances
 
 !!! note "For Developers"

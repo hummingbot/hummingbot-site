@@ -11,7 +11,7 @@ A comprehensive RESTful API framework for managing trading operations across mul
 
 ## Getting Started
 
-- **[Quickstart](../installation/hummingbot-api.md)** - One-line install to get Hummingbot API running with Condor
+- **[Quickstart](../installation/condor.md)** - Install Condor with Hummingbot API backend
 - **[Developer Guide](quickstart.md)** - Learn how to use the API directly with curl or Python to add credentials, view portfolios, and place orders
 - **[Source Installation](installation.md)** - For developers who want to modify the codebase
 
@@ -96,7 +96,7 @@ Mobile and desktop control via Telegram.
 
 - **Best for**: Users who want to monitor and control bots on the go
 - **Advantages**: Access from any device with Telegram, real-time notifications, quick commands for common operations
-- **Setup**: See [Hummingbot API Quickstart](../installation/hummingbot-api.md)
+- **Setup**: See [Condor Quickstart](../installation/condor.md)
 
 ### Swagger UI
 

@@ -49,7 +49,7 @@ We're defining the **Condor Trading Agent (CTA)** as an open standard — a spec
 - **Auditability**: Every CTA session logs each turn as a structured snapshot and appends key decisions to a human-readable journal. No black boxes.
 - **Interoperability**: Any LLM (Claude, Codex, Gemini, Kimi, etc) can power the reasoning layer for CTAs. While CTAs created in Condor use Hummingbot API as the execution layer, support for other execution frameworks is possible.
 
-See the full [Trading Agents Standard](/condor/trading-agents-standard) specification for detailed documentation on [Positions](/condor/positions), [Executors](/condor/executors), [Bots](/condor/bots), and [Routines](/condor/routines).
+See the full [Trading Agents](https://docs.hummingbot.org/condor/trading-agents/overview) documentation for detailed information on [Positions](https://docs.hummingbot.org/condor/trading-agents/inventory), [Executors](https://docs.hummingbot.org/condor/executors/overview), [Bots](https://docs.hummingbot.org/condor/bots/overview), and [Routines](https://docs.hummingbot.org/condor/routines/overview).
 
 ## Condor Trading Agents
 
@@ -104,8 +104,8 @@ The [Hummingbot MCP Server](/mcp) and [Hummingbot Skills](/skills) bridge the tw
 
 The execution layer is built on two key abstractions:
 
-- **[Positions](/condor/positions)**: A virtual portfolio tracking spot, LP, and perp positions—enabling agent isolation and standardized performance measurement
-- **[Executors](/condor/executors)**: Self-contained trading operations (Position, Grid, LP, Swap, Order) with standardized P&L reporting in quote currency
+- **[Positions](https://docs.hummingbot.org/condor/trading-agents/inventory)**: A virtual portfolio tracking spot, LP, and perp positions—enabling agent isolation and standardized performance measurement
+- **[Executors](https://docs.hummingbot.org/condor/executors/overview)**: Self-contained trading operations (Position, Grid, LP, DCA, TWAP) with standardized P&L reporting in quote currency
 
 ### The CTA Standard
 
@@ -169,9 +169,9 @@ Condor is an open source AI agent harness, similar to [OpenClaw](https://github.
 Condor provides AI-mediated trading tools—a free, open source alternative to products like [Binance AI Pro](https://www.binance.com/en/academy/articles/binance-ai-pro-guide-what-it-is-and-how-to-use-it):
 
 - **CTAs**: Build and deploy autonomous CTAs that execute strategies over time with persistent state
-- **[Executors](/condor/executors)**: Self-contained trading operations with standardized P&L tracking
-- **[Bots](/condor/bots)**: Docker containers running Hummingbot scripts and controllers for long-running automation
-- **[Routines](/condor/routines)**: Deterministic workflows (custom indicators, webhooks, alerts) shared across agents
+- **[Executors](https://docs.hummingbot.org/condor/trading-agents/executors)**: Self-contained trading operations with standardized P&L tracking
+- **[Bots](https://docs.hummingbot.org/condor/bots/overview)**: Docker containers running Hummingbot scripts and controllers for long-running automation
+- **[Routines](https://docs.hummingbot.org/condor/routines/overview)**: Deterministic workflows (custom indicators, webhooks, alerts) shared across agents
 - **Secure isolation**: Agents only access the `~/condor` folder, and each bot runs in a separate container
 
 See the [Condor documentation](/condor) for installation instructions.

@@ -17,7 +17,7 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 
 ## Quick Start (Docker - Recommended)
 
-See the [Hummingbot API Quickstart](../installation/hummingbot-api.md) for step-by-step installation instructions, including cloud server setup and Condor configuration.
+See the [Condor Quickstart](../installation/condor.md) for step-by-step installation instructions.
 
 
 ## Install from Source (for Developers)

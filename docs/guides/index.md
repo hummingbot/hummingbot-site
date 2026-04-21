@@ -7,8 +7,8 @@ Get started with Hummingbot using different installation methods:
 - **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)**
   Step-by-step guide to install and run the Hummingbot Client using Docker. Best for local usage, learning Hummingbot, and running V1 strategies.
 
-- **[Hummingbot API Quickstart](../installation/hummingbot-api.md)**
-  Install Hummingbot API for multi-bot management, cloud deployments, and modern interfaces like Condor (Telegram) and MCP (AI agents).
+- **[Condor Quickstart](../installation/condor.md)**
+  Install Condor for Trading Agents, multi-bot management, cloud deployments, and modern interfaces like Telegram and MCP (AI agents).
 
 - **[Hummingbot API Developer Guide](../hummingbot-api/quickstart.md)**
   Learn how to use the Hummingbot API directly with curl or the Python client to add credentials, view portfolios, and place orders.
