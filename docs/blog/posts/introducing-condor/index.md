@@ -55,6 +55,24 @@ See the full [Trading Agents](https://condor.hummingbot.org/trading-agents/overv
 
 The CTA architecture separates what LLMs do well—reasoning under uncertainty—from what traditional software does well—reliable, repeatable execution.
 
+### Probabilistic vs. Deterministic
+
+The most critical challenge in trading agent design is that **LLMs and trade execution have fundamentally different requirements**:
+
+- **LLMs are probabilistic**: the same input may produce different outputs. This is a feature for reasoning—but a bug for execution.
+- **Trade execution must be deterministic**: the same instruction must always produce the same result, every time.
+
+Mixing these two concerns is the root cause of most trading agent failures—unpredictable behavior, unexpected actions, and hard-to-audit logic.
+
+Condor solves this by **strictly separating the two layers**:
+
+| Layer | Role | Technology |
+|-------|------|------------|
+| **Probabilistic (Agent)** | Interprets market conditions, reasons about strategy, decides what to do | LLM (Claude, GPT, Gemini) |
+| **Deterministic (Execution)** | Converts decisions into orders with reliability and auditability | Hummingbot API |
+
+By cleanly separating these concerns, you can audit, test, and improve each layer independently.
+
 ### The OODA Framework
 
 CTAs follow an iterative process based on the [**OODA loop**](https://en.wikipedia.org/wiki/OODA_loop), a decision-making framework developed by military strategist John Boyd for fighter pilots.
@@ -161,6 +179,20 @@ Maintain a grid of limit orders around the current price...
 - **snapshots/**: Point-in-time captures of full agent state for debugging and replay.
 
 This architecture enables **session continuity across interfaces**. The `~/condor` directory stores all CTA state, and Condor uses ACP (Agent Communication Protocol) to connect to your LLM. Start a conversation on Telegram, continue in Claude Code, switch to the web dashboard—same session, same state, same history.
+
+### Risk Management
+
+Every agent includes a built-in Risk Engine that validates both pre-tick conditions and individual tool calls, preventing agents from exceeding configured limits:
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `max_position_size_quote` | $500 | Maximum size per position |
+| `max_daily_loss_quote` | $50 | Daily loss limit |
+| `max_drawdown_pct` | 10% | Maximum drawdown from peak |
+| `max_open_executors` | 5 | Maximum concurrent positions |
+| `max_single_order_quote` | $100 | Maximum single order size |
+| `max_cost_per_day_usd` | $5 | Daily LLM cost limit |
+| `cooldown_after_loss_sec` | 300 | Pause after hitting loss limit |
 
 ## The Condor Harness
 
