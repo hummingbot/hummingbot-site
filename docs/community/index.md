@@ -13,7 +13,9 @@ For security purposes, ensure that you use only the official channels below to a
 
 ## The Bot Pod
 
-Introducing **The Bot Pod** — a weekly deep-dive into AI-powered crypto trading from the maintainers of Hummingbot.
+**The Bot Pod** is a weekly podcast by the co-maintainers of Hummingbot, Michael Feng and Federico Cardoso.
+
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/O93R_ddB-8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Episode highlights and transcripts can be found at [hummingbot.substack.com](https://hummingbot.substack.com/) and the full playlist is available on [YouTube](https://www.youtube.com/playlist?list=PLDwlNkL_4MMergHsZTLFoOqzbNJ2T6A7J).
 
