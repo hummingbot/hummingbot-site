@@ -3,9 +3,9 @@
 **Condor** is an open source harness for building and running autonomous **Trading Agents**. It connects LLM-powered decision-making to deterministic trade execution via the [Hummingbot API](../hummingbot-api/index.md), enabling traders to deploy AI agents that can observe markets, reason about strategy, and execute trades across 50+ exchanges and blockchains.
 
 !!! note "Full Documentation"
-    The complete Condor documentation has moved to a dedicated site. Visit **[docs.hummingbot.org/condor](https://docs.hummingbot.org/condor)** for full installation guides, Trading Agents Standard specification, and API reference.
+    The complete Condor documentation has moved to a dedicated site. Visit **[condor.hummingbot.org](https://condor.hummingbot.org)** for full installation guides, Trading Agents Standard specification, and API reference.
 
-<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/SVBdmJTZB2M?si=H15J1_Sk4ec3M7D8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/O93R_ddB-8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is Condor?
 
@@ -41,7 +41,7 @@ This script clones the repository, installs dependencies, and prompts you for yo
 
 | Resource | Link |
 |----------|------|
-| Full Documentation | [docs.hummingbot.org/condor](https://docs.hummingbot.org/condor) |
+| Full Documentation | [condor.hummingbot.org](https://condor.hummingbot.org) |
 | GitHub Repository | [github.com/hummingbot/condor](https://github.com/hummingbot/condor) |
 | Discord Support | [#condor-feedback](https://discord.gg/hummingbot) |
 | Hummingbot API | [Hummingbot API Docs](../hummingbot-api/index.md) |
