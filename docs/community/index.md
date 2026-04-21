@@ -19,7 +19,7 @@ For security purposes, ensure that you use only the official channels below to a
 
 Episode highlights and transcripts can be found at [hummingbot.substack.com](https://hummingbot.substack.com/) and the full playlist is available on [YouTube](https://www.youtube.com/playlist?list=PLDwlNkL_4MMergHsZTLFoOqzbNJ2T6A7J).
 
-After each release, we cover new features and community updates in a dedicated episode.
+After each release, we cover new features and community updates in an episode.
 
 !!! danger "No DMs"
     Hummingbot Foundation team members will never initiate direct messages to users. If a random user imitating the core team or any of the community members sends you a DM don't hesitate to report it in our official Discord channel.
