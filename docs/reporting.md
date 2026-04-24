@@ -2,37 +2,7 @@ Hummingbot Foundation maintains a public, real-time dashboard that provides tran
 
 ## Reported Volumes Dashboard
 
-![Reported Volumes](./assets/img/reported-volumes-light.png#only-light)
-![Reported Volumes](./assets/img/reported-volumes-dark.png#only-dark)
-
-[**View Live Dashboard →**](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52){: .md-button .md-button--primary }
-
-The Reported Volumes dashboard provides comprehensive, real-time metrics including:
-
-## What the Reported Volumes Dashboard Shows
-
-### Exchange Connector Usage
-
-- **Total volume by exchange**: Ranked list of all connected exchanges
-- **Active instances**: Number of live Hummingbot clients per exchange
-- **Version distribution**: Usage across different Hummingbot releases
-
-### Version Insights
-
-- **Release adoption**: How quickly users upgrade to new versions
-- **Fork tracking**: Community-maintained versions and modifications
-- **Feature utilization**: Which Hummingbot capabilities drive the most volume
-
-### Interactive Filters
-
-You can customize the view using several controls:
-
-![Dashboard Controls](./toggles.png)
-
-- **Exchange filter**: Focus on specific exchanges or compare subsets
-- **Version filter**: Analyze adoption of different Hummingbot releases
-- **Timespan selector**: View data from 1 day to 6 months
-- **Dark/light mode**: Optimal viewing for any environment
+[**View Live Dashboard →**](https://reporting.hummingbot.org){: .md-button .md-button--primary }
 
 ## Data Transparency
 
