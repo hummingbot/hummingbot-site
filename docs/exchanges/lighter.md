@@ -75,7 +75,7 @@ Public Key: <your_public_key>
 
 - **ID**: `lighter`
 - **Connection Type**: WebSocket
-- **API Docs**: <https://github.com/elliottech/lighter-python/tree/main/docs>
+- **API Docs**: <https://apidocs.lighter.xyz/docs/get-started>
 - **[Github Folder](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange/lighter)**
 
 ### Order Types
