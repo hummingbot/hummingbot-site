@@ -340,6 +340,7 @@ nav:
     - Injective: exchanges/injective.md
     - Jupiter: exchanges/gateway/jupiter.md
     - Kraken: exchanges/kraken/index.md
+    - Lighter: exchanges/lighter.md
     - Meteora: exchanges/gateway/meteora.md
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
