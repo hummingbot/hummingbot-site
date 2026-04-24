@@ -12,7 +12,7 @@ hide:
 ![Reported Volumes](./assets/img/reported-volumes-light.png#only-light)
 ![Reported Volumes](./assets/img/reported-volumes-dark.png#only-dark)
 
-### See [Reporting](./reporting.md) for a real-time dashboard of the volume reported by all Hummingbot instances, filterable by exchange and version.
+### See [Reporting](https://reporting.hummingbot.org) for a real-time dashboard of the volume reported by all Hummingbot instances, filterable by exchange and version.
 
 ---
 
