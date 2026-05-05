@@ -12,4 +12,4 @@ dependencies:
   - libgfortran
   - pip
   - pip:
-    - git+ssh://git@github.com/hummingbot/mkdocs-material-insiders
+    - mkdocs-material
