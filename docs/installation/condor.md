@@ -9,10 +9,7 @@ For full installation instructions, see the Condor documentation:
 ## Quick Install
 
 ```bash
-git clone https://github.com/hummingbot/condor.git
-cd condor
-make install
-make run
+curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/main/setup.sh | bash
 ```
 
 The install script will prompt for:

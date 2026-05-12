@@ -32,7 +32,7 @@ Where Hummingbot lets one person do the work of a team, Condor lets one person m
 Install Condor with a single command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/refs/heads/main/setup.sh | bash
+curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/main/setup.sh | bash
 ```
 
 This script clones the repository, installs dependencies, and prompts you for your Telegram Bot Token and User ID to configure the Telegram interface.
