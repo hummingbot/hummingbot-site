@@ -19,26 +19,20 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 
 See the [Condor Quickstart](../installation/condor.md) for step-by-step installation instructions.
 
+For private access over Tailscale (VPS, remote clients, MCP), see **[Tailscale](tailscale.md)**.
 
 ## Install from Source (for Developers)
 
 If you're developing or contributing to Hummingbot API, you can install from source.
 
-### 1. Clone and setup
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/hummingbot/hummingbot-api
 cd hummingbot-api
-make setup
 ```
 
-The setup script will prompt you for:
-
-**Credentials** (required):
-   - Config password (for encrypting bot credentials)
-   - API username and password
-
-### 2. Install dependencies
+### 2. Install
 
 ```bash
 make install
@@ -46,19 +40,17 @@ make install
 
 This will:
 
-- Create a conda environment named `hummingbot-api`
-- Activate the environment
-- Install all required dependencies
-- Set up pre-commit hooks
+- Create a conda environment named `hummingbot-api` (if it does not already exist)
+- Install pre-commit hooks
+- Run `setup.sh`, which creates `.env` and prompts for **API username**, **API password**, and **config password** (for encrypting exchange keys)
 
-### 3. Start the API in development mode
+### 3. Run in development mode
 
 ```bash
-docker compose up emqx postgres -d
-conda activate hummingbot-api && uvicorn main:app --reload
+make run
 ```
 
-This starts the Broker and Postgres DB containers and runs the API using `uvicorn` with auto-reload enabled for development.
+This starts the EMQX and Postgres containers, then runs the API with `uvicorn` and auto-reload enabled.
 
 The API will be accessible at `http://localhost:8000`.
 

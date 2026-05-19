@@ -287,6 +287,7 @@ nav:
     - Hummingbot API: 
       - Hummingbot API: hummingbot-api/index.md
       - Installation: hummingbot-api/installation.md
+      - Tailscale: hummingbot-api/tailscale.md
       - Developer Guide: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
     - Hummingbot MCP & Skills:
