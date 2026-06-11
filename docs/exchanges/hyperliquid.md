@@ -1,5 +1,5 @@
 !!! tip "Foundation Sponsor"
-    Hyperliquid is a [sponsor](../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Hyperliquid, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+    Hyperliquid is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Binance, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Hyperliquid referral link](https://app.hyperliquid.xyz/join/HUMMINGBOT) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -22,6 +22,7 @@
 - **API Docs**: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api>
 - **Fees**: <https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees>
 - **Supported Countries**: Not available
+- **Hyperliquid referral link:** <https://app.hyperliquid.xyz/join/HUMMINGBOT>
 
 ## 🔑 How to Connect
 
