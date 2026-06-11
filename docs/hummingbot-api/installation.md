@@ -17,81 +17,32 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 
 ## Quick Start (Docker - Recommended)
 
-See the [Condor Quickstart](../installation/condor.md) for step-by-step installation instructions.
-
-
-## Install from Source (for Developers)
-
-If you're developing or contributing to Hummingbot API, you can install from source.
-
-### 1. Clone and setup
+Use this when you are deploying **Hummingbot API** on its own machine (for example a **VPS** or another **remote server**), or any time you **only** need the API and database stack and **not** Condor. **Docker** must be installed and running on that server before you run the command:
 
 ```bash
-git clone https://github.com/hummingbot/hummingbot-api
-cd hummingbot-api
-make setup
+curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/main/setup.sh | bash -s -- --hummingbot-api
 ```
 
-The setup script will prompt you for:
+The installer clones the **`hummingbot-api`** repository (next to where you ran the command), runs **`make setup`**, pulls the latest images, and runs **`make deploy`**. That **starts all Docker services** for you—the API, PostgreSQL, and EMQX (MQTT broker)—so you normally do **not** need to start containers by hand.
+
+The setup script may prompt you for:
 
 **Credentials** (required):
-   - Config password (for encrypting bot credentials)
-   - API username and password
 
-### 2. Install dependencies
+- API username and password (HTTP Basic Auth for the REST API)
+- Config password (used to encrypt bot credentials at rest)
 
-```bash
-make install
-```
-
-This will:
-
-- Create a conda environment named `hummingbot-api`
-- Activate the environment
-- Install all required dependencies
-- Set up pre-commit hooks
-
-### 3. Start the API in development mode
+If the script finishes but something did not come up (for example Docker was not running, or a step failed), open a terminal, go into the API folder the script created, and run:
 
 ```bash
-docker compose up emqx postgres -d
-conda activate hummingbot-api && uvicorn main:app --reload
+cd hummingbot-api
+make setup
+make deploy
 ```
 
-This starts the Broker and Postgres DB containers and runs the API using `uvicorn` with auto-reload enabled for development.
+That applies your `.env` again and brings the full stack up with Docker Compose.
 
 The API will be accessible at `http://localhost:8000`.
-
-## Install Python Client
-
-The [Hummingbot API Client](https://github.com/hummingbot/hummingbot-api-client) is a Python library that provides a convenient interface for interacting with the Hummingbot API.
-
-### Install via pip
-
-```bash
-pip install hummingbot-api-client
-```
-
-### Basic usage
-
-```python
-import asyncio
-from hummingbot_api_client import HummingbotAPIClient
-
-# Create client instance
-client = HummingbotAPIClient(
-    base_url="http://localhost:8000",
-    username="admin",
-    password="admin"
-)
-
-# Use the client
-async def main():
-    accounts = await client.list_accounts()
-    print(accounts)
-
-asyncio.run(main())
-```
 
 ## Verify Installation
 
@@ -112,215 +63,98 @@ Open your browser and navigate to:
 
 ## Configuration
 
-The installation creates a `.env` file with your configuration. You can modify these settings:
+The installer creates a **`.env`** file inside **`hummingbot-api/`**. Edit it, then run **`make deploy`** again so containers pick up changes.
 
-- `USERNAME` and `PASSWORD`: API authentication credentials (used by clients to authenticate with the API)
-- `CONFIG_PASSWORD`: Password used to encrypt bot credentials at rest
-- `DATABASE_URL`: PostgreSQL connection string (use `localhost` when running from source, `hummingbot-postgres` in Docker)
-- `BROKER_HOST`, `BROKER_PORT`, `BROKER_USERNAME`, `BROKER_PASSWORD`: EMQX message broker settings (use `localhost` when running from source)
-- `GATEWAY_URL`: Gateway URL for DEX connectivity (default: `http://localhost:15888`)
-- `MARKET_DATA_CLEANUP_INTERVAL`: Seconds between market data feed cleanup runs
-- `MARKET_DATA_FEED_TIMEOUT`: Seconds before an idle market data feed is closed
-- `MARKET_DATA_CANDLES_READY_TIMEOUT`: Seconds to wait for candle feed readiness
-- `DEBUG_MODE`: Set to `true` to disable HTTP Basic Auth in local development
-- `LOGFIRE_ENVIRONMENT`: Logfire environment tag (`dev` by default)
+Common variables (see **`config.py`** in the [hummingbot-api](https://github.com/hummingbot/hummingbot-api) repo for the full list and nested settings):
+
+- **`USERNAME`** / **`PASSWORD`** — HTTP Basic Auth for the REST API  
+- **`CONFIG_PASSWORD`** — encrypts bot credential files at rest  
+- **`DATABASE_URL`** — PostgreSQL connection string. When the API runs **inside Docker**, `docker-compose.yml` overrides this to use the Compose service hostname **`postgres`** (not the container name `hummingbot-postgres`). For **`make run`** on your host against Compose-backed Postgres, use **`localhost`** in `.env`.  
+- **`BROKER_*`** — EMQX / MQTT. Compose overrides **`BROKER_HOST`** to **`emqx`** for the API container; keep **`localhost`** in `.env` for local dev with **`make run`**.  
+- **`GATEWAY_URL`** — Hummingbot Gateway (default `http://localhost:15888`).  
+- **`DEBUG_MODE`** — set to `true` only for **local** development to disable API Basic Auth (**never** in production).
+
+Optional tuning (market-data intervals, Logfire, AWS, etc.) maps to nested settings in **`config.py`** (for example `MARKET_DATA_*`). Prefer defaults unless you have a specific need.
 
 ## Troubleshooting
 
-### Database Connection Issues
+### Database (PostgreSQL)
 
-If you encounter PostgreSQL database connection errors (such as "role 'hbot' does not exist" or "database 'hummingbot_api' does not exist"), use the automated fix script:
+1. **Check services** (from `hummingbot-api/`):
 
-```bash
-chmod +x fix-database.sh
-./fix-database.sh
-```
-
-This script will:
-1. Check if PostgreSQL is running
-2. Verify that the `hbot` user and `hummingbot_api` database exist
-3. Automatically fix any missing configuration
-4. Test the connection to ensure everything works
-
-#### "role 'postgres' does not exist" Error
-
-If you see errors like `FATAL: role "postgres" does not exist` in the PostgreSQL logs:
-
-**Cause**: The PostgreSQL container is configured to create only the `hbot` user (via `POSTGRES_USER=hbot`). The default `postgres` superuser is NOT created. This error occurs when something tries to connect using the default `postgres` username.
-
-**Solutions**:
-
-1. **Always specify the correct user** when connecting:
    ```bash
-   # Correct - use hbot user
+   docker compose ps
+   docker compose logs -f postgres
+   docker compose logs -f hummingbot-api
+   ```
+
+2. **Connect with the right user** — the image creates user **`hbot`** and database **`hummingbot_api`** (`POSTGRES_USER` / `POSTGRES_DB` in `docker-compose.yml`). Use:
+
+   ```bash
    docker exec -it hummingbot-postgres psql -U hbot -d hummingbot_api
-
-   # Incorrect - tries to use 'postgres' user (doesn't exist)
-   docker exec -it hummingbot-postgres psql
    ```
 
-2. **If you need the postgres superuser** (not recommended), you can create it:
-   ```bash
-   docker exec -it hummingbot-postgres psql -U hbot -d postgres -c "CREATE ROLE postgres WITH SUPERUSER LOGIN PASSWORD 'your-password';"
-   ```
+   If you run `docker exec ... psql` **without** `-U hbot`, PostgreSQL may try the **`postgres`** role and you can see **`role "postgres" does not exist`** — that is expected; always pass **`-U hbot`**.
 
-3. **Complete database reset** (⚠️ deletes all data):
+3. **Full reset** (⚠️ deletes Postgres volume data):
+
    ```bash
+   cd hummingbot-api
    docker compose down -v
-   ./setup.sh
+   make deploy
    ```
 
-#### Manual Database Verification
+   Recreate **`.env`** with **`make setup`** first if you need new credentials.
 
-If you prefer to check manually:
+There is **no** `fix-database.sh` in the current **hummingbot-api** tree; use the commands above.
+
+### EMQX (MQTT broker)
+
+Service **`emqx`**, container name **`hummingbot-broker`**:
 
 ```bash
-# Check if containers are running
-docker ps | grep -E "hummingbot-postgres|hummingbot-broker"
-
-# Check PostgreSQL logs
-docker logs hummingbot-postgres
-
-# Verify database connection (use hbot user, not postgres)
-docker exec -it hummingbot-postgres psql -U hbot -d hummingbot_api
-
-# List all database users
-docker exec -it hummingbot-postgres psql -U hbot -d postgres -c "\du"
-```
-
-#### "database 'hbot' does not exist" During Setup
-
-If you see this error during `./setup.sh`:
-
-```
-⚠️  Database initialization may be incomplete. Running manual initialization...
-psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  database "hbot" does not exist
-❌ Failed to initialize database.
-```
-
-**Cause**: The setup script tried to connect to a database named `hbot` (the username) instead of `hummingbot_api` (the actual database name). This was a bug in older versions of setup.sh.
-
-**Solution**:
-
-1. **Update setup.sh**: Pull the latest version with the fix:
-   ```bash
-   git pull origin main
-   ```
-
-2. **Or manually fix the database**:
-   ```bash
-   # The database already exists, just verify it
-   docker exec hummingbot-postgres psql -U hbot -d postgres -c "\l"
-
-   # You should see 'hummingbot_api' in the list
-   # Test connection
-   docker exec hummingbot-postgres psql -U hbot -d hummingbot_api -c "SELECT version();"
-   ```
-
-3. **If database doesn't exist**, run the fix script:
-   ```bash
-   chmod +x fix-database.sh
-   ./fix-database.sh
-   ```
-
-**Prevention**: This issue is fixed in the latest version of setup.sh. The script now correctly specifies `-d postgres` when running manual initialization.
-
-#### Complete Database Reset
-
-If you need to start fresh (⚠️ this will delete all data):
-
-```bash
-# Stop all containers and remove volumes
-docker compose down -v
-
-# Restart setup
-./setup.sh
-```
-
-### EMQX Broker Issues
-
-If bots can't connect to the broker:
-
-```bash
-# Check EMQX status
 docker logs hummingbot-broker
-
-# Restart EMQX
 docker compose restart emqx
-
-# Access EMQX dashboard (if needed)
-# http://localhost:18083
-# Default credentials: admin/public
 ```
 
-### Port Conflicts
+Dashboard: [http://localhost:18083](http://localhost:18083) (default login is often **`admin`** / **`public`** — confirm in EMQX docs).
 
-If port `8000` is already in use on your system, you can change it by modifying the configuration depending on your setup:
+### Port `8000` already in use
 
-#### **Docker**
-
-Update the `ports` mapping in your `docker-compose.yml` file to use a different external port. For example, to use port `8001` instead:
+**Docker:** in `docker-compose.yml`, change the published port for `hummingbot-api`, e.g.:
 
 ```yaml
 services:
   hummingbot-api:
     ports:
-      - "8001:8000"  # Maps local port 8001 to container's port 8000
+      - "8001:8000"
 ```
 
-#### **Running from Source**
+**`make run` (dev):** this repo does **not** ship a `run.sh`. The **`Makefile`** `run` target starts Postgres + EMQX then runs **`uvicorn main:app --reload`**. To use another port, add **`--port 8001`** to that `uvicorn` line or run Uvicorn yourself after `docker compose up emqx postgres -d`.
 
-Edit the `./run.sh` script to include the `--port` flag in the `uvicorn` command. For example, to run on port `8001`:
+### Common issues
 
-```bash
-if [[ "$1" == "--dev" ]]; then
-    echo "Running API from source..."
-    # Start dependencies and launch API with uvicorn
-    docker compose up emqx postgres -d
-    source "$(conda info --base)/etc/profile.d/conda.sh"
-    conda activate hummingbot-api
-    uvicorn main:app --reload --port 8001
-fi
-```
+| Symptom | What to try |
+|--------|----------------|
+| API or DB errors | `docker compose ps` and `docker compose logs` for **`hummingbot-api`** and **`postgres`** |
+| Broker / bots cannot connect | `docker compose restart emqx`; check **`hummingbot-broker`** logs |
+| Cannot open `http://localhost:8000` | `docker ps` and confirm **`hummingbot-api`** is **running** |
+| HTTP auth fails | Match **`USERNAME`** / **`PASSWORD`** in `.env` to what clients send |
+| Stale or corrupt data | `docker compose down -v` then **`make deploy`** (⚠️ wipes DB volume) |
 
-Make sure the new port you choose is not already in use.
-
-### Common Issues
-
-**Issue**: API won't start - "Database connection failed"
-- **Solution**: Run `./fix-database.sh` to repair the database configuration
-
-**Issue**: Bot containers won't start
-- **Solution**: Check Docker daemon is running and you have sufficient resources
-
-**Issue**: Can't access API at localhost:8000
-- **Solution**: Verify the API container is running: `docker ps | grep hummingbot-api`
-
-**Issue**: Authentication fails
-- **Solution**: Check `USERNAME` and `PASSWORD` in the `.env` file match what you pass as credentials
-
-**Issue**: Old bot data causing conflicts
-- **Solution**: Clean up old volumes: `docker compose down -v` (⚠️ deletes data)
-
-### Development Issues
-
-For source installation issues:
+### Development (`make install` / `make run`)
 
 ```bash
-# Clean conda environment
 make uninstall
 make install
-
-# Check logs
 make run
 ```
 
-## Support & Documentation
+## Support & documentation
 
-- **API Documentation**: Available at <http://localhost:8000/docs> when running
-- **Detailed Examples**: Check the `CLAUDE.md` file for comprehensive API usage examples
-- **Issues**: Report bugs and feature requests through the project's issue tracker
-- **Database Troubleshooting**: Use `./fix-database.sh` for automated fixes
+- **Interactive API docs:** [http://localhost:8000/docs](http://localhost:8000/docs) when the stack is running  
+- **Repository README:** [hummingbot-api](https://github.com/hummingbot/hummingbot-api)  
+- **Issues:** [github.com/hummingbot/hummingbot-api/issues](https://github.com/hummingbot/hummingbot-api/issues)  
 
 ## Next Steps
 

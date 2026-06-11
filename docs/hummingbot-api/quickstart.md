@@ -4,9 +4,50 @@ This guide demonstrates how to use the Hummingbot API directly using `curl` or t
 
 ### Prerequisites
 
-- Hummingbot API installed and running (see [Installation Guide](installation.md))
-- Exchange API keys. For more information, see this [guide on API keys](https://support.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072).
-- Python 3.7+ with `hummingbot-api-client` installed (optional)
+- **[Miniconda or Anaconda](https://docs.conda.io/en/latest/miniconda.html)** — `conda` must be on your `PATH` (the `Makefile` uses it for `make install` / `make run`).
+- **Docker** and **Docker Compose** — `make run` starts **EMQX** and **PostgreSQL** in Docker, then runs the API on your machine with **Uvicorn**.
+- **Exchange API keys** — only needed when you call trading endpoints; see this [Binance API keys guide](https://support.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072) as an example.
+- **`hummingbot-api-client`** (optional) — for the Python examples later in this guide; install with `pip` in any Python 3.12+ environment, or use the conda env after `make install`.
+
+## Install from Source (for developers)
+
+Use this when you are **contributing** to [hummingbot-api](https://github.com/hummingbot/hummingbot-api) or running the API **on your host** with hot reload (not the all-in-Docker `make deploy` path).
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/hummingbot/hummingbot-api.git
+cd hummingbot-api
+```
+
+### 2. Install dependencies (`make install`)
+
+```bash
+make install
+```
+
+This will:
+
+- Create the **`hummingbot-api`** conda environment from **`environment.yml`** (currently **Python 3.12** and project dependencies)
+- Install **pre-commit** hooks
+- Run **`make setup`**, which executes **`./setup.sh`** and creates **`.env`** (API user/password, database URL for local Postgres, broker settings, etc.)
+
+You do **not** need to run **`make setup`** separately first — **`make install`** already invokes it at the end.
+
+### 3. Start the stack in development mode (`make run`)
+
+```bash
+make run
+```
+
+**`make run`** starts **Postgres** and **EMQX** in the background (Docker), then launches the API on your machine with **live reload**—when you change Python code, the server restarts automatically. You do not need to run **`conda activate`** yourself; the command uses the **`hummingbot-api`** conda environment for you.
+
+Requirements before this step:
+
+- **Docker** is installed and the daemon is running.
+- **`.env`** exists (from step 2). For local dev, **`DATABASE_URL`** should point at **Postgres on `localhost`** (the default from **`setup.sh`** is correct while EMQX/Postgres are published on localhost).
+
+The API will be available at **http://localhost:8000** (Swagger at **http://localhost:8000/docs**).
 
 ### Setup Python Client (Optional)
 
