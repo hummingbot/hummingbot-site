@@ -105,6 +105,38 @@ apiKey: YOUR_INFURA_API_KEY
 useWebSocket: false
 ```
 
+### Chainstack
+
+[Chainstack](https://chainstack.com/) is a multi-chain RPC provider covering both EVM networks and Solana. Unlike URL-templated providers, Chainstack uses **API-driven node discovery** — Gateway calls the Chainstack Platform API at startup and routes traffic to a node you have already deployed in your Chainstack project.
+
+**Chainstack Supported Networks:**
+
+| Chain    | Networks                                                                  |
+|----------|---------------------------------------------------------------------------|
+| ethereum | mainnet, arbitrum, polygon, optimism, base, avalanche, bsc, celo, sepolia |
+| solana   | mainnet-beta, devnet                                                      |
+
+Chainstack supports 50+ protocols on the platform. The networks above are the ones currently routable through Gateway; as Gateway adds support for new chains, Chainstack coverage extends without additional configuration.
+
+**Adding Chainstack API Key:**
+
+1. Deploy a node for your target network at the [Chainstack console](https://console.chainstack.com/). Chainstack discovery requires a running node to route to.
+
+2. Create an API key at [console.chainstack.com/user/settings/api-keys](https://console.chainstack.com/user/settings/api-keys).
+
+3. Run `gateway config apiKeys update` and set the value for `chainstack`. Alternatively, modify the file `conf/apiKeys.yml` and restart Gateway.
+
+4. Run `gateway config ethereum update` and/or `gateway config solana update` and change `rpcProvider` from `url` to `chainstack`. Alternatively, modify the files `conf/chains/ethereum.yml` / `conf/chains/solana.yml` and restart Gateway.
+
+**Chainstack Configuration:**
+
+Adjust these settings in your `conf/rpc/chainstack.yml` file as needed for your deployment.
+
+```yaml
+# Optional: pin a specific node ID. When empty, the first running node matching the active chain/network is used.
+preferredNodeId: ''
+```
+
 ## Troubleshooting
 
 #### Provider Not Connecting
