@@ -11,7 +11,7 @@ Connectors are standardized API integrations that enable Hummingbot to communica
 | Exchange Type | Description | Sample Connector |
 |---------------|-------------|------------------|
 | **🏛️ CLOB CEX** | Centralized exchanges with spot & perpetual futures trading in central limit order book (CLOB) markets | [Binance →](./binance/index.md) |
-| **📊 CLOB DEX** | On-chain, non-custodial spot and perp exchanges CLOB markets | [Hyperliquid →](hyperliquid.md) |
+| **📊 CLOB DEX** | On-chain, non-custodial spot and perp exchanges CLOB markets | [Hyperliquid →](hyperliquid.md), [Lighter →](lighter.md) |
 | **🔄 Gateway DEX** | AMM decentralized exchanges and aggregators via Gateway | [Uniswap →](./gateway/uniswap.md) |
 
 * [All CLOB Connectors →](../connectors/clob.md) 
