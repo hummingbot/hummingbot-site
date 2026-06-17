@@ -12,7 +12,7 @@ repo_url: 'https://github.com/hummingbot/hummingbot'
 edit_uri: 'https://github.com/hummingbot/hummingbot-site/blob/master/'
 
 # Copyright
-copyright: Copyright &copy; 2025 Hummingbot Foundation
+copyright: Copyright &copy; 2026 Hummingbot Foundation
 
 # Configuration
 theme:
@@ -74,7 +74,7 @@ plugins:
 
 extra:
   homepage: https://hummingbot.org
-  generator: true
+  generator: false
   analytics:
     provider: google
     property: G-DVHHGW7W9R
@@ -313,19 +313,19 @@ nav:
   - Exchanges:
     - Exchanges: exchanges/index.md
     - Reporting: reporting.md
+    - 🔥 Backpack: exchanges/backpack/index.md
     - 🔥 Binance: exchanges/binance/index.md
     - 🔥 Bitget: exchanges/bitget/index.md
     - 🔥 Bitmart: exchanges/bitmart/index.md
+    - 🔥 Derive: exchanges/derive/index.md
     - 🔥 Gate.io: exchanges/gate-io/index.md
     - 🔥 Hyperliquid: exchanges/hyperliquid.md
-    - 🔥 HTX: exchanges/htx/index.md
     - 🔥 Kucoin: exchanges/kucoin/index.md
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
     - AscendEx: exchanges/ascendex/index.md
     - Architect: exchanges/architect/index.md
     - Aevo: exchanges/aevo/index.md
-    - Backpack: exchanges/backpack/index.md
     - Bitstamp: exchanges/bitstamp/index.md
     - Bitrue: exchanges/bitrue.md
     - BingX: exchanges/bing_x/index.md
@@ -333,7 +333,7 @@ nav:
     - BTC Markets: exchanges/btc-markets.md
     - Coinbase: exchanges/coinbase.md
     - Cube: exchanges/cube/index.md
-    - Derive: exchanges/derive/index.md
+    - HTX: exchanges/htx/index.md
     - Dexalot: exchanges/dexalot.md
     - dYdX: exchanges/dydx.md
     - Evedex: exchanges/evedex/index.md

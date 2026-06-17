@@ -1,3 +1,6 @@
+!!! tip "Foundation Partner"
+    Backpack is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Backpack, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Backpack referral link](https://backpack.exchange/join/1tvdqfkk) and enter that account's API keys into Hummingbot and run bots! Thanks for your help! 🙏
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Centralized Exchange (**CEX**)
