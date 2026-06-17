@@ -44,10 +44,11 @@
 }
 
 /* buttons */
+/* Secondary buttons: green (hero color) outline, matching the hero CTA. */
 .md-typeset .md-button {
-  color: var(--md-typeset-color);
+  color: var(--hb-hero-color);
   background: none;
-  border: 1px solid var(--pg-light-border);
+  border: 1px solid var(--hb-hero-color);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px -1px;
 }
@@ -327,6 +328,71 @@ header[class="md-header md-header--shadow"], nav[class="md-tabs"] {
 }
 
 /* Logo Grids */
+/* Home - GitHub repo cards (2x2 on non-mobile) */
+
+.md-typeset .grid.cards.repo-cards > ul,
+.md-typeset .grid.cards.repo-cards {
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .grid.cards.repo-cards > ul,
+  .md-typeset .grid.cards.repo-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.repo-stars {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 999px;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Home - summary metric cards */
+
+.stat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem;
+}
+.stat-card {
+  flex: 1 1 200px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 12px;
+  background: var(--md-code-bg-color);
+  text-decoration: none !important;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--hb-hero-color, #5fffd7);
+}
+.stat-card .stat-value {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--md-default-fg-color);
+}
+.stat-card .stat-label {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;

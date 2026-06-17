@@ -115,6 +115,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6
   - assets/js/hbot-stats.js
+  - assets/js/repo-stars.js
 
 # Extensions
 markdown_extensions:
