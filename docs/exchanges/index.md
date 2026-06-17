@@ -11,7 +11,7 @@ Connectors are standardized API integrations that enable Hummingbot to communica
 | Exchange Type | Description | Sample Connector |
 |---------------|-------------|------------------|
 | **🏛️ CLOB CEX** | Centralized exchanges with spot & perpetual futures trading in central limit order book (CLOB) markets | [Binance →](./binance/index.md) |
-| **📊 CLOB DEX** | On-chain, non-custodial spot and perp exchanges CLOB markets | [Hyperliquid →](hyperliquid.md) |
+| **📊 CLOB DEX** | On-chain, non-custodial spot and perp exchanges CLOB markets | [Hyperliquid →](hyperliquid.md), [Lighter →](lighter.md) |
 | **🔄 Gateway DEX** | AMM decentralized exchanges and aggregators via Gateway | [Uniswap →](./gateway/uniswap.md) |
 
 * [All CLOB Connectors →](../connectors/clob.md) 
@@ -21,12 +21,26 @@ Connectors are standardized API integrations that enable Hummingbot to communica
 
 See live trading activity across all exchanges via our public dashboard:
 
-![Reported Volumes](../assets/img/reported-volumes-light.png#only-light)
-![Reported Volumes](../assets/img/reported-volumes-dark.png#only-dark)
+<div class="stat-grid">
+  <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
+    <span class="stat-value">$36B</span>
+    <span class="stat-label">Total Trade Volume</span>
+  </a>
+  <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
+    <span class="stat-value">100K+</span>
+    <span class="stat-label">Hummingbot Instances</span>
+  </a>
+  <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
+    <span class="stat-value">300+</span>
+    <span class="stat-label">Connectors</span>
+  </a>
+</div>
+
+<p style="opacity:.7; font-size:.8rem; margin-top:.4rem;">Aggregated trade volume reported by Hummingbot instances — tracked since Jan 2025.</p>
 
 The [Reported Volumes](../reporting.md) dashboard shows real-time, aggregated trading data from Hummingbot instances worldwide, including both official releases and community forks. This transparent data helps exchanges understand actual usage patterns and trading volume.
 
-[View Live Dashboard →](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52)
+[View Live Dashboard →](https://reporting.hummingbot.org)
 
 ## How to Add a Hummingbot Connector
 
@@ -58,12 +72,13 @@ This premium option includes dedicated engineering resources, custom content dev
 
 ## Current Foundation Partners
 
+- [**Backpack**](https://backpack.exchange/)
 - [**Binance**](https://www.binance.com/)
 - [**Bitmart**](https://www.bitmart.com/)
 - [**Bitget**](https://www.bitget.com/)
+- [**Derive**](https://www.derive.xyz/)
 - [**Gate.io**](https://www.gate.io/)
 - [**Hyperliquid**](https://hyperliquid.xyz/)
-- [**HTX**](https://www.htx.com/)
 - [**Kucoin**](https://www.kucoin.com/)
 - [**OKX**](https://www.okx.com/)
 - [**XRPL**](https://xrpl.org/)

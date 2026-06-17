@@ -1,5 +1,5 @@
 !!! tip "Foundation Sponsor"
-    Hyperliquid is a [sponsor](../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Hyperliquid, you're supporting the Foundation and our mission to democratize algo trading with open source software.
+    Hyperliquid is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Hyperliquid, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Hyperliquid referral link](https://app.hyperliquid.xyz/join/HUMMINGBOT) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 
@@ -22,6 +22,29 @@
 - **API Docs**: <https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api>
 - **Fees**: <https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees>
 - **Supported Countries**: Not available
+- **Hyperliquid referral link:** <https://app.hyperliquid.xyz/join/HUMMINGBOT>
+
+## 🏷 Builder Code
+
+Per **HGP-87**, Hummingbot uses Hyperliquid's [builder codes](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/builder-codes) to attribute the orders it submits to the Hummingbot Foundation builder address `0x10BA451e6439Efc6a17dc20d21121Aa838100705`. How it's applied depends on what you run:
+
+| You run | Builder fee | What it does |
+| ------- | ----------- | ------------ |
+| **Hummingbot client** | **0 bps** | Attribution only — every mainnet order is tagged as Hummingbot-originated, but **no builder fee** is charged. This is the default baked into the connector. |
+| **Condor AI Harness** | **1 bps** | A **1 bps builder fee** on fill notional goes to **Hummingbot Foundation** to support maintenance of Condor. |
+
+### Hummingbot client (0 bps, attribution only)
+
+The Hummingbot connectors ([PR #8265](https://github.com/hummingbot/hummingbot/pull/8265)) attach the Foundation builder field to **every mainnet order automatically at a 0 bps fee rate** — you don't configure anything, and nothing extra is charged. The connector never invokes an approval action. The builder field is **omitted on testnet and on vault orders** by design.
+
+### Condor AI Harness (1 bps, funds Condor maintenance)
+
+When you connect Hyperliquid in **Condor**, you sign two messages with your wallet:
+
+1. **ApproveAgent** — authorizes a trade-only agent wallet that Condor generates. Your real private key never leaves your wallet.
+2. **ApproveBuilderFee** — approves the `0x10BA…705` builder code at a maximum of **1 bps**, so fills can carry the builder fee that funds Condor's upkeep.
+
+The 1 bps fee is enforced by the Hummingbot API image that Condor runs, not by your wallet — signing `ApproveBuilderFee` only authorizes the fee so fills can be attributed. Running the Hummingbot client directly remains **0 bps (attribution only)**.
 
 ## 🔑 How to Connect
 

@@ -1,6 +1,6 @@
 ## Overview
 
-Starting with [v2.9.0](../release-notes/2.9.0.md), deep integrations with leading RPC providers like Helius and Infura are available to optimize speed and reduce latency for DEX trading.
+Starting with [v2.9.0](../release-notes/2.9.0.md), deep integrations with leading RPC providers like Helius and Infura are available to optimize speed and reduce latency for DEX trading. [v2.15.0](../release-notes/2.15.0.md) adds Chainstack as a cross-chain provider for both Solana and EVM networks.
 
 The RPC provider controls your bot's connection to the blockchain network, which is crucial in DEX trading because it directly impacts the speed, reliability, and security of your transactions. A robust node connection ensures:
 
@@ -14,6 +14,8 @@ The RPC provider controls your bot's connection to the blockchain network, which
 When you set up Gateway initially, the standard `nodeURL` for each network uses default public RPC endpoints. 
 
 By adding an API key from a RPC provider (as shown below), you will override the default `nodeURL` for each supported network, ensuring more reliable and performant blockchain connectivity. This step is essential for optimal DEX trading performance.
+
+All RPC provider API keys are stored centrally in `conf/apiKeys.yml`. After adding a key, set `rpcProvider` to the provider's name in the relevant chain config (`conf/chains/solana.yml` or `conf/chains/ethereum.yml`).
 
 Run `gateway ping` to check your current network and node connection:
 
@@ -53,22 +55,19 @@ solana (mainnet-beta):
 
 1. Create a free account at [Helius](https://helius.dev/) to get your API key
 
-2. Run `gateway config helius update` and add the API key. Alternatively, modify the file `conf/rpc/helius.yml` and restart Gateway.
+2. Run `gateway config apiKeys update` and set the `helius` value. Alternatively, modify the file `conf/apiKeys.yml` and restart Gateway.
 
 3. Run `gateway config solana update` and change `rpcProvider` from `url` to `helius`. Alternatively, modify the file `conf/chains/solana.yml` and restart Gateway.
 
 **Helius Configuration**
 
-Adjust these settings in your `conf/rpc/helius.yml` file as needed for your deployment.
+Set your Helius API key in the centralized `conf/apiKeys.yml` file:
 
 ```yaml
-helius:
-  apiKey: YOUR_HELIUS_API_KEY
-  useWebSocketRPC: false
-  useSender: false
-  regionCode: slc
-  jitoTipSOL: 0.001
+helius: 'YOUR_HELIUS_API_KEY'
 ```
+
+When Helius is the active provider, Gateway automatically uses its WebSocket endpoint for faster transaction confirmation monitoring.
 
 ### Infura
 
@@ -91,19 +90,50 @@ helius:
 
 1. Create a free account at [Infura](https://app.infura.io/) to get your API key
 
-2. Run `gateway config infura update` and add the API key. Alternatively, modify the file `conf/rpc/infura.yml` and restart Gateway.
+2. Run `gateway config apiKeys update` and set the `infura` value. Alternatively, modify the file `conf/apiKeys.yml` and restart Gateway.
 
 3. Run `gateway config ethereum update` and change `rpcProvider` from `url` to `infura`. Alternatively, modify the file `conf/chains/ethereum.yml` and restart Gateway.
 
 **Infura Configuration:**
 
-
-Adjust these settings in your `conf/rpc/infura.yml` file as needed for your deployment.
+Set your Infura API key in the centralized `conf/apiKeys.yml` file:
 
 ```yaml
-apiKey: YOUR_INFURA_API_KEY
-useWebSocket: false
+infura: 'YOUR_INFURA_API_KEY'
 ```
+
+### Chainstack
+
+[Chainstack](https://chainstack.com/) is a multi-chain RPC provider covering both EVM networks and Solana. Unlike URL-templated providers, Chainstack uses **API-driven node discovery** — Gateway calls the Chainstack Platform API at startup and routes traffic to a node you have already deployed in your Chainstack project.
+
+**Chainstack Supported Networks:**
+
+| Chain    | Networks                                                                  |
+|----------|---------------------------------------------------------------------------|
+| ethereum | mainnet, arbitrum, polygon, optimism, base, avalanche, bsc, celo, sepolia |
+| solana   | mainnet-beta, devnet                                                      |
+
+Chainstack supports 50+ protocols on the platform. The networks above are the ones currently routable through Gateway; as Gateway adds support for new chains, Chainstack coverage extends without additional configuration.
+
+**Adding Chainstack API Key:**
+
+1. Deploy a node for your target network at the [Chainstack console](https://console.chainstack.com/). Chainstack discovery requires a running node to route to.
+
+2. Create an API key at [console.chainstack.com/user/settings/api-keys](https://console.chainstack.com/user/settings/api-keys).
+
+3. Run `gateway config apiKeys update` and set the value for `chainstack`. Alternatively, modify the file `conf/apiKeys.yml` and restart Gateway.
+
+4. Run `gateway config ethereum update` and/or `gateway config solana update` and change `rpcProvider` from `url` to `chainstack`. Alternatively, modify the files `conf/chains/ethereum.yml` / `conf/chains/solana.yml` and restart Gateway.
+
+**Chainstack Configuration:**
+
+Set your Chainstack API key in the centralized `conf/apiKeys.yml` file:
+
+```yaml
+chainstack: 'YOUR_CHAINSTACK_API_KEY'
+```
+
+No additional configuration is required. Gateway automatically discovers and routes to the first running node in your Chainstack project that matches the active chain and network.
 
 ## Troubleshooting
 

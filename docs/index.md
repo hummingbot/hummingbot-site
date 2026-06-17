@@ -9,8 +9,22 @@ hide:
 
 # Many Individuals and Institutions Run Hummingbot
 
-![Reported Volumes](./assets/img/reported-volumes-light.png#only-light)
-![Reported Volumes](./assets/img/reported-volumes-dark.png#only-dark)
+<div class="stat-grid">
+  <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
+    <span class="stat-value">$36B</span>
+    <span class="stat-label">Total Trade Volume</span>
+  </a>
+  <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
+    <span class="stat-value">100K+</span>
+    <span class="stat-label">Hummingbot Instances</span>
+  </a>
+  <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
+    <span class="stat-value">300+</span>
+    <span class="stat-label">Connectors</span>
+  </a>
+</div>
+
+<p style="text-align:center; opacity:.7; font-size:.8rem; margin-top:.4rem;">Aggregated trade volume reported by Hummingbot instances — tracked since Jan 2025.</p>
 
 ### See [Reporting](https://reporting.hummingbot.org) for a real-time dashboard of the volume reported by all Hummingbot instances, filterable by exchange and version.
 
@@ -49,30 +63,6 @@ hide:
 
 ---
 
-# New to Hummingbot? Start Here!
-
-<div class="grid cards wide" markdown>
-
--   :octicons-terminal-16:{ .lg .middle } __Hummingbot Client Quickstart Guide__
-
-    ---
-
-    Install the **Hummingbot Client** locally using Docker. Best for learning Hummingbot and running a single bot instance.
-
-    [:octicons-arrow-right-24: Hummingbot Client Quickstart](./installation/hummingbot-client.md)
-
--   :octicons-rocket-16:{ .lg .middle } __Condor Quickstart Guide__
-
-    ---
-
-    Deploy **Condor** to build and run autonomous **Trading Agents** via Telegram. Best for managing multiple bots in production.
-
-    [:octicons-arrow-right-24: Condor Quickstart](./installation/condor.md)
-
-</div>
-
----
-
 # Hummingbot Github Repositories
 
 ### The Hummingbot framework contains multiple repositories that help you with various aspects of algorithmic trading. All code is open sourced under the Apache 2.0 license and supported by a vibrant global community of developers and traders.
@@ -100,23 +90,7 @@ graph TB
     CLIENT <--> GATEWAY
 ```
 
-<div class="grid cards wide" markdown>
-
--   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
-
-    ---
-
-    A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
-
-    [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api)
-
--   :octicons-mark-github-16:{ .lg .middle } __Condor__
-
-    ---
-
-    Telegram bot for monitoring and controlling Hummingbot instances from mobile and desktop.
-
-    [:octicons-arrow-right-24: Documentation](./condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor)
+<div class="grid cards repo-cards" id="repo-cards" markdown>
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
 
@@ -124,7 +98,7 @@ graph TB
 
     A robust trading engine featuring connectors to numerous exchanges and a wide array of strategy frameworks.
 
-    [:octicons-arrow-right-24: Documentation](./client/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot)
+    [:octicons-arrow-right-24: Documentation](./client/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot) <span class="repo-stars" data-repo="hummingbot/hummingbot">:octicons-star-16: —</span>
 
 -   :octicons-mark-github-16:{ .lg .middle } __Gateway__
 
@@ -132,31 +106,23 @@ graph TB
 
     Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
 
-    [:octicons-arrow-right-24: Documentation](./gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway)
+    [:octicons-arrow-right-24: Documentation](./gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway) <span class="repo-stars" data-repo="hummingbot/gateway">:octicons-star-16: —</span>
 
--   :octicons-mark-github-16:{ .lg .middle } __Hummingbot MCP__
-
-    ---
-
-    Model Context Protocol server that enables AI assistants like Claude and Gemini to utilize the Hummingbot API.
-
-    [:octicons-arrow-right-24: Documentation](./mcp/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/mcp)
-
--   :octicons-tools-16:{ .lg .middle } __Hummingbot Skills__
+-   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
 
     ---
 
-    AI agent skills for managing Hummingbot — deploy bots, find arbitrage/XEMM opportunities, manage LP positions, and get status updates via Telegram or Discord.
+    A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
 
-    [:octicons-arrow-right-24: Documentation](./mcp/skills.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/skills)
+    [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api) <span class="repo-stars" data-repo="hummingbot/hummingbot-api">:octicons-star-16: —</span>
 
--   :octicons-mark-github-16:{ .lg .middle } __Quants Lab__
+-   :octicons-mark-github-16:{ .lg .middle } __Condor__
 
     ---
 
-    Python framework for quantitative trading research with data collection, backtesting, and automated task scheduling.
+    Telegram bot for monitoring and controlling Hummingbot instances from mobile and desktop.
 
-    [:octicons-arrow-right-24: Documentation](./quants-lab/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/quants-lab)
+    [:octicons-arrow-right-24: Documentation](./condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
 
 </div>
 
@@ -291,23 +257,25 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 ---
 
-# Build Powerful V2 Strategies
+# Latest Blog Posts
 
 <div class="grid cards" markdown>
 
--   [![](./blog/posts/strategy-guide-grid-strike/long-grid.png)](./blog/posts/strategy-guide-grid-strike/index.md)
+-   [![](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/cover.png)](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
 
-    ### [Strategy Guide: Grid Strike](./blog/posts/strategy-guide-grid-strike/index.md)
+    ### [Securing Condor and Hummingbot API with Tailscale](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
 
--   [![](./blog/posts/using-hyperliquid-vaults-with-hummingbot/cover.png)](./blog/posts/using-hyperliquid-vaults-with-hummingbot/index.md)
+-   [![](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/cover.png)](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/index.md)
 
-    ### [Funding Rate Arbitrage on Hyperliquid](./blog/posts/using-hyperliquid-vaults-with-hummingbot/index.md)
+    ### [Trading on GRVT with Hummingbot](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/index.md)
 
--   [![](./blog/posts/coding-a-custom-v2-controller/cover.webp)](./blog/posts/coding-a-custom-v2-controller/index.md)
+-   [![](./blog/posts/introducing-condor/cover.png)](./blog/posts/introducing-condor/index.md)
 
-    ### [Coding a Liquidation Sniper Strategy](./blog/posts/coding-a-custom-v2-controller/index.md)
+    ### [Introducing Condor: The Open Source Harness for Trading Agents](./blog/posts/introducing-condor/index.md)
 
 </div>
+
+[:octicons-arrow-right-24: Read the Blog](./blog/index.md){ .md-button .md-button--primary }
 
 ---
 
@@ -325,10 +293,11 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 </div>
 
 ---
-# Get the Hummingbot newsletter
+# Stay Connected
 
-### Published when a new Hummingbot release drops (about every 2 months), our official newsletter tells you about upcoming events and new contributions from the global Hummingbot community.
+### Get the official newsletter (published when a new Hummingbot release drops, about every 2 months) for upcoming events and new contributions, and join our Discord to chat with the global Hummingbot community.
 
 <br />
 
 [:octicons-download-16: Get the Newsletter](https://hummingbot.substack.com/){ .md-button .md-button--primary }
+[:fontawesome-brands-discord: Join Discord](https://discord.gg/hummingbot){ .md-button }

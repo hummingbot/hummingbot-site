@@ -14,6 +14,7 @@ A comprehensive RESTful API framework for managing trading operations across mul
 - **[Quickstart](../installation/condor.md)** - Install Condor with Hummingbot API backend
 - **[Developer Guide](quickstart.md)** - Learn how to use the API directly with curl or Python to add credentials, view portfolios, and place orders
 - **[Source Installation](installation.md)** - For developers who want to modify the codebase
+- **[Tailscale](tailscale.md)** - Private tailnet access for Docker and source installs (no public port 8000)
 
 ## What is Hummingbot API?
 
