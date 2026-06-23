@@ -15,7 +15,7 @@ After setup, your devices can reach the API at **`http://hummingbot-api:8000`** 
 - A **stable name** (`hummingbot-api`) instead of remembering IP addresses
 - **No need** to expose the API on your VPS public firewall for normal use
 
-Tailscale handles the network. You still need a **strong API username and password**, and **`DEBUG_MODE=false`** in `.env`.
+Tailscale handles the network. You still need a **strong API username and password**.
 
 ## Setup (Docker — most users)
 
@@ -81,13 +81,12 @@ If that returns a response, the API is reachable on your private network.
 | Name `hummingbot-api` does not work | Enable **MagicDNS** in [Tailscale DNS settings](https://login.tailscale.com/admin/dns) |
 | Auth key rejected | Key must start with `tskey-auth-`; generate a new one if it expired |
 | Connection refused | On the server, run `make tailscale-status` and `make deploy` again |
-| Login fails (401) | Use the same username/password as in the API `.env`; set `DEBUG_MODE=false` |
+| Login fails (401) | Use the same username/password as in the API `.env` |
 | Still reachable on public IP | Remove port **8000** from your cloud provider’s firewall / security group |
 
 ## Security reminders
 
 - Use **strong** API and config passwords during setup
-- Keep **`DEBUG_MODE=false`** on any server
 - Do not share your Tailscale auth key
 
 ---

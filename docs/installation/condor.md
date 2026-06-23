@@ -16,6 +16,7 @@ The install script will prompt for:
 
 - **Telegram Bot Token**: Create one via [@BotFather](https://t.me/botfather)
 - **Telegram User ID**: Get yours via [@userinfobot](https://t.me/userinfobot)
+- **Tailscale** (for production): When asked about securing the connection to Hummingbot API, answer **`y`** — see [Hummingbot API Tailscale guide](../hummingbot-api/tailscale.md)
 
 ## What Gets Installed
 
@@ -38,4 +39,5 @@ The install script will prompt for:
 
 - [Condor Documentation](https://condor.hummingbot.org) - Full guides for Trading Agents, executors, and more
 - [Hummingbot API Reference](../hummingbot-api/index.md) - API endpoints and developer guide
+- [Hummingbot API — Tailscale](../hummingbot-api/tailscale.md) - Recommended for production (private API access)
 - [MCP Installation](../mcp/installation.md) - Connect AI assistants to Hummingbot API

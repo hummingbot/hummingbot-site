@@ -11,6 +11,8 @@ This section covers two ways to connect AI assistants to Hummingbot:
 
 The Hummingbot MCP Server is an interface to [Hummingbot API](../hummingbot-api/index.md) that enables AI assistants like Claude, Gemini, and ChatGPT to control your trading infrastructure using natural language.
 
+Treat MCP as a privileged control plane: for production, run Hummingbot API behind **[Tailscale](../hummingbot-api/tailscale.md)** so it is not reachable on a public IP.
+
 **GitHub Repository**: [github.com/hummingbot/mcp](https://github.com/hummingbot/mcp)
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/eq8EfiOEcFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

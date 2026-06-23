@@ -4,7 +4,7 @@ This page summarizes the current Hummingbot API routers and endpoint patterns.
 
 ## Request/Response Conventions
 
-- **Authentication:** All routes use HTTP Basic Auth. In local development, `DEBUG_MODE=true` disables auth.
+- **Authentication:** All routes use HTTP Basic Auth.
 - **Pagination:** Search/list endpoints commonly return:
 
 ```json
