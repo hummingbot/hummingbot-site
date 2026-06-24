@@ -8,12 +8,22 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 2. **📊 Dashboard** - Visual web interface for bot management and monitoring
 3. **🔧 Swagger UI** - Full REST API access for developers and power users
 
+!!! warning "Secure your API before going live"
+    Hummingbot API can place orders, read balances, and manage bots. **Do not expose port 8000 on a public IP** for production use.
+
+    AI assistants (MCP, Condor agents, and similar tools) make this surface area easier to reach—and easier to misuse if the API is reachable from the open internet. Automated scanners and credential attacks against trading APIs are common on cloud VPSes.
+
+    **For production deployments, enable [Tailscale](tailscale.md) during setup** (answer **`y`** when prompted). Tailscale puts your API on a private encrypted network so only your devices can connect—whether the API runs on a VPS or on the same machine as Condor. Strong API passwords are required, but **network isolation is what keeps production setups off the public attack surface**.
+
+    For a full walkthrough with Condor, see the [Tailscale security guide](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md).
+
 ## Prerequisites
 
 - **Docker** and Docker Compose installed
 - **Git** for cloning the repository
 - Python 3.10+ and Conda (for source installation only)
 - Exchange API keys (can be added after installation)
+- **[Tailscale](https://tailscale.com) account** (free tier is enough) — **required for production**; create an [auth key](https://login.tailscale.com/admin/settings/keys) and enable [MagicDNS](https://login.tailscale.com/admin/dns) before you install
 
 ## Quick Start (Docker - Recommended)
 
@@ -32,6 +42,15 @@ The setup script may prompt you for:
 - API username and password (HTTP Basic Auth for the REST API)
 - Config password (used to encrypt bot credentials at rest)
 
+**Tailscale** (required for production):
+
+- When asked **Use Tailscale for secure private networking?**, answer **`y`**
+- Paste your **`tskey-auth-...`** key from the [Tailscale admin console](https://login.tailscale.com/admin/settings/keys)
+- The default hostname is **`hummingbot-api`** (MagicDNS)—clients on your tailnet reach the API at `http://hummingbot-api:8000`
+
+!!! note "Same machine is fine"
+    Tailscale works when API and Condor run on **one host**. You still get a stable hostname and avoid publishing port 8000 publicly. See [Tailscale setup details](tailscale.md).
+
 If the script finishes but something did not come up (for example Docker was not running, or a step failed), open a terminal, go into the API folder the script created, and run:
 
 ```bash
@@ -42,7 +61,7 @@ make deploy
 
 That applies your `.env` again and brings the full stack up with Docker Compose.
 
-The API will be accessible at `http://localhost:8000`.
+On the **same machine** as the installer, the API is available at `http://localhost:8000`. On your **tailnet**, use `http://hummingbot-api:8000` with your API username and password.
 
 ## Verify Installation
 
@@ -50,16 +69,31 @@ Once installed, you can verify the API is running:
 
 ### Check API health
 
+On the host:
+
 ```bash
 curl http://localhost:8000/health
+```
+
+If Tailscale is enabled, confirm the sidecar joined your tailnet:
+
+```bash
+cd hummingbot-api
+make tailscale-status
+```
+
+From another device on the same Tailscale account:
+
+```bash
+curl -u YOUR_USERNAME:YOUR_PASSWORD http://hummingbot-api:8000/health
 ```
 
 ### Access API documentation
 
 Open your browser and navigate to:
 
-- Interactive API docs: `http://localhost:8000/docs`
-- Alternative API docs: `http://localhost:8000/redoc`
+- Interactive API docs: `http://localhost:8000/docs` (on the host) or `http://hummingbot-api:8000/docs` (from a tailnet device)
+- Alternative API docs: `http://localhost:8000/redoc` or `http://hummingbot-api:8000/redoc`
 
 ## Configuration
 
@@ -72,7 +106,6 @@ Common variables (see **`config.py`** in the [hummingbot-api](https://github.com
 - **`DATABASE_URL`** — PostgreSQL connection string. When the API runs **inside Docker**, `docker-compose.yml` overrides this to use the Compose service hostname **`postgres`** (not the container name `hummingbot-postgres`). For **`make run`** on your host against Compose-backed Postgres, use **`localhost`** in `.env`.  
 - **`BROKER_*`** — EMQX / MQTT. Compose overrides **`BROKER_HOST`** to **`emqx`** for the API container; keep **`localhost`** in `.env` for local dev with **`make run`**.  
 - **`GATEWAY_URL`** — Hummingbot Gateway (default `http://localhost:15888`).  
-- **`DEBUG_MODE`** — set to `true` only for **local** development to disable API Basic Auth (**never** in production).
 
 Optional tuning (market-data intervals, Logfire, AWS, etc.) maps to nested settings in **`config.py`** (for example `MARKET_DATA_*`). Prefer defaults unless you have a specific need.
 
@@ -140,6 +173,8 @@ services:
 | Broker / bots cannot connect | `docker compose restart emqx`; check **`hummingbot-broker`** logs |
 | Cannot open `http://localhost:8000` | `docker ps` and confirm **`hummingbot-api`** is **running** |
 | HTTP auth fails | Match **`USERNAME`** / **`PASSWORD`** in `.env` to what clients send |
+| Cannot reach API via Tailscale | Enable **MagicDNS**; run **`make tailscale-status`**; see [Tailscale troubleshooting](tailscale.md#common-issues) |
+| API still reachable on public IP | Remove port **8000** from your cloud provider firewall / security group |
 | Stale or corrupt data | `docker compose down -v` then **`make deploy`** (⚠️ wipes DB volume) |
 
 ### Development (`make install` / `make run`)
@@ -163,3 +198,5 @@ After installation, proceed to the [Developer Guide](quickstart.md) to learn how
 - Add exchange credentials
 - View your portfolio
 - Place your first order
+
+For production deployments, review [Tailscale](tailscale.md) and confirm port **8000** is not open on your public firewall.

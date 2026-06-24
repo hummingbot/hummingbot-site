@@ -7,7 +7,6 @@ For exact callable tool names and schemas in your environment, inspect the MCP s
 ## Authentication and Security
 
 - All MCP operations map to Hummingbot API routes that are protected by HTTP Basic Auth.
-- In local development only, `DEBUG_MODE=true` may disable API auth.
 - Treat MCP as a privileged interface: never expose credentials in prompts or logs.
 
 ## Core MCP Capability Groups

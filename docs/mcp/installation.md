@@ -6,10 +6,13 @@ This guide shows you how to connect AI assistants to the Hummingbot API using th
 
 Before starting, ensure you have:
 
-1. **Hummingbot API Server** running ([Condor Quickstart](../installation/condor.md))
+1. **Hummingbot API Server** running ([Condor Quickstart](../installation/condor.md) or [API Installation](../hummingbot-api/installation.md))
 2. **Docker** installed and running
 3. **API credentials** (username/password from setup)
 4. **An AI Assistant** - Claude Code, Gemini CLI, Codex CLI, or Claude Desktop
+
+!!! note "Secure the API in production"
+    MCP gives AI assistants direct access to trading operations. If Hummingbot API runs on a VPS or any network-reachable host, use **[Tailscale](../hummingbot-api/tailscale.md)** so the API is not exposed on a public IP.
 
 ---
 

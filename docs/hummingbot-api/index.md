@@ -9,12 +9,17 @@ A comprehensive RESTful API framework for managing trading operations across mul
 
 **GitHub Repository**: [github.com/hummingbot/hummingbot-api](https://github.com/hummingbot/hummingbot-api)
 
+!!! warning "Production security"
+    Hummingbot API controls live trading. With **MCP**, **Condor agents**, and other AI tools now common, a reachable API is a high-value target—automated scans, brute-force attempts, and misconfigured clients can all lead to unauthorized trades.
+
+    **Use [Tailscale](tailscale.md) for production** so the API stays on a private network (no public port 8000). HTTP Basic Auth is always on, but **Tailscale is the recommended way to keep the API off the public internet**, including when Condor and the API run on the same machine.
+
 ## Getting Started
 
-- **[Quickstart](../installation/condor.md)** - Install Condor with Hummingbot API backend
-- **[Developer Guide](quickstart.md)** - Learn how to use the API directly with curl or Python to add credentials, view portfolios, and place orders
-- **[Source Installation](installation.md)** - For developers who want to modify the codebase
-- **[Tailscale](tailscale.md)** - Private tailnet access for Docker and source installs (no public port 8000)
+- **[Installation](installation.md)** — Docker setup; **enable Tailscale when prompted for production**
+- **[Tailscale](tailscale.md)** — Private tailnet access (recommended for VPS and remote Condor)
+- **[Developer Guide](quickstart.md)** — Use the API with curl or Python to add credentials, view portfolios, and place orders
+- **[Condor Quickstart](../installation/condor.md)** — Install Condor with Hummingbot API backend
 
 ## What is Hummingbot API?
 
@@ -182,7 +187,6 @@ Key configuration options available in `.env`:
 - **MARKET_DATA_FEED_TIMEOUT**: Idle timeout before a feed is closed
 - **MARKET_DATA_CANDLES_READY_TIMEOUT**: Max seconds to wait for candle feed readiness
 - **GATEWAY_URL**: Gateway service URL (default: `http://localhost:15888`)
-- **DEBUG_MODE**: Disable HTTP Basic Auth for local development
 - **LOGFIRE_ENVIRONMENT**: Observability environment tag (default: `dev`)
 - **AWS_API_KEY/AWS_SECRET_KEY**: S3 archiving (optional)
 
@@ -202,6 +206,8 @@ The API uses HTTP Basic Authentication:
 - Configure username and password during setup
 - Include credentials in the Authorization header for all requests
 - Example: `Authorization: Basic <base64-encoded-credentials>`
+
+For production, pair strong credentials with **[Tailscale](tailscale.md)** so clients connect over a private tailnet instead of a public IP. See the [Tailscale security guide](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md) for a full walkthrough.
 
 ## API Client
 
@@ -243,5 +249,6 @@ order = await client.create_order(
 ## Related Resources
 
 - [Condor](../condor/index.md) - Telegram interface for Hummingbot API
+- [Tailscale](tailscale.md) - Recommended private access for production
 - [API Client Documentation](https://github.com/hummingbot/hummingbot-api-client) - Python client library
 - [Hummingbot Client](../client/index.md) - Core trading engine

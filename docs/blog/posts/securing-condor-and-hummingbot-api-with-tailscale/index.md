@@ -45,7 +45,7 @@ Hummingbot API is a powerful control plane. When it is reachable from the open i
 | **Bot manipulation** | Running bots could be stopped, reconfigured, or used in ways you did not intend |
 | **Data exposure** | Trade history, balances, and strategy details could leak |
 
-Many incidents are not “Hollywood hacking”—they come from **default passwords**, **debug mode left on**, or **port 8000 left open** on a cloud VM.
+Many incidents are not “Hollywood hacking”—they come from **default passwords** or **port 8000 left open** on a cloud VM.
 
 !!! warning "Real trading capital is at stake"
     Condor and Hummingbot API are built for live trading. Treat API access with the same care you would give to exchange API keys.
@@ -56,32 +56,17 @@ Many incidents are not “Hollywood hacking”—they come from **default passwo
 
 Before or alongside Tailscale, follow these basics. They take a few minutes and greatly reduce risk.
 
-### 1. Turn debug mode off
-
-Hummingbot API can run with **`DEBUG_MODE=true`**, which **disables HTTP Basic Authentication** so developers can test locally. That is convenient on your laptop—and **dangerous** on any machine reachable from a network.
-
-In your `hummingbot-api/.env` file, set:
-
-```bash
-DEBUG_MODE=false
-```
-
-Restart the API after changing `.env` (for Docker: `make deploy` or `docker compose up -d` from the API directory).
-
-!!! tip "How to tell if auth is off"
-    If you can open `http://your-server:8000/docs` in a browser **without** being asked for a username and password, debug mode may still be enabled. Fix that before going live.
-
-### 2. Use a strong API username and password
+### 1. Use a strong API username and password
 
 During setup, the installer prompts you to create API credentials. Choose a unique username and a long, random password, and store them in a password manager.
 
 Condor stores these credentials in its server configuration (via `/servers` in Telegram). Anyone who can read that config can call your API—another reason to keep the API off the public internet.
 
-### 3. Use a strong config password
+### 2. Use a strong config password
 
 The **`CONFIG_PASSWORD`** in `.env` encrypts exchange API keys and other secrets inside Hummingbot. Use a strong value and do not share it.
 
-### 4. Do not expose unnecessary ports on your VPS
+### 3. Do not expose unnecessary ports on your VPS
 
 If you host the API on a **VPS**, confirm that **port 8000** (and any other ports you do not intend to publish) are **not** reachable from the public internet. Providers handle this differently: platforms like **AWS** often block inbound traffic by default until you add a security-group rule, while other VPS offerings may ship with a permissive firewall already in place.
 
@@ -92,7 +77,7 @@ Check both:
 
 If the API should only be reached over Tailscale, there should be **no** public inbound rule for port 8000.
 
-### 5. Prefer a private network channel (Tailscale)
+### 4. Prefer a private network channel (Tailscale)
 
 Even with auth enabled, exposing port **8000** on a public IP invites automated scans and brute-force attempts. **Tailscale** puts your machines on a **private network** (called a **tailnet**) so Condor can reach the API at an address like `http://hummingbot-api:8000` **without** publishing the API to the world.
 
@@ -230,7 +215,6 @@ The wizard sets in `.env`:
 TAILSCALE_ENABLED=true
 TAILSCALE_AUTH_KEY=tskey-auth-...
 TAILSCALE_HOSTNAME=hummingbot-api
-DEBUG_MODE=false
 ```
 
 You will also set a strong **`USERNAME`**, **`PASSWORD`**, and **`CONFIG_PASSWORD`**—do not keep defaults on a production server.
@@ -382,7 +366,7 @@ Both machines must use the **same Tailscale account** (same tailnet). Auth keys 
 | **Auth key rejected** | Key must start with `tskey-auth-`; check expiry in Tailscale admin; generate a new key |
 | **`hummingbot-api` does not resolve** | Enable **MagicDNS** in Tailscale admin → DNS |
 | **Condor: connection refused** | On API server: `make tailscale-status`; ensure `make deploy` used the Tailscale compose overlay |
-| **Auth error in Condor** | Match username/password in `/servers` with API `.env`; ensure `DEBUG_MODE=false` on server |
+| **Auth error in Condor** | Match username/password in `/servers` with API `.env` |
 | **Only one peer in `tailscale status`** | Run `sudo tailscale up --authkey=...` on the missing machine; same Tailscale account |
 | **API works on server but not from Condor** | Confirm Condor machine’s Tailscale is connected; try `ping hummingbot-api` |
 
@@ -400,7 +384,7 @@ docker compose logs hummingbot-tailscale
 
 | Step | Action |
 |------|--------|
-| 1 | Set **`DEBUG_MODE=false`** and use **strong passwords** |
+| 1 | Use **strong API and config passwords** |
 | 2 | Create a **Tailscale** account, enable **MagicDNS**, and create an **auth key** |
 | 3 | On the API server: **install script** (`--hummingbot-api`) → enable Tailscale (deploy runs automatically; use **`make deploy`** only after a manual clone + **`make setup`**) |
 | 4 | On the Condor machine: **install script** → connect via Tailscale → verify **`/servers`** |
