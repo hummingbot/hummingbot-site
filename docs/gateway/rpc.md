@@ -1,6 +1,6 @@
 ## Overview
 
-Starting with [v2.9.0](../release-notes/2.9.0.md), deep integrations with leading RPC providers like Helius and Infura are available to optimize speed and reduce latency for DEX trading. [v2.15.0](../release-notes/2.15.0.md) adds Chainstack as a cross-chain provider for both Solana and EVM networks.
+Starting with [v2.9.0](../release-notes/2.9.0.md), deep integrations with leading RPC providers like Helius and Infura are available to optimize speed and reduce latency for DEX trading. [v2.15.1](../release-notes/2.15.1.md) adds Chainstack as a cross-chain provider for both Solana and EVM networks.
 
 The RPC provider controls your bot's connection to the blockchain network, which is crucial in DEX trading because it directly impacts the speed, reliability, and security of your transactions. A robust node connection ensures:
 

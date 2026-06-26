@@ -1,13 +1,13 @@
 We generally release a new version of Hummingbot **every month**. See below for information about each release.
 
-## [2.15.0](2.15.0.md)
+## [2.15.1](2.15.1.md)
 
-*Released June 17, 2026*
+*Released June 22, 2026*
 
 | Repository | Description | GitHub Release | DockerHub Release |
 |------------|-------------|----------------|-------------------|
 | [Hummingbot](https://github.com/hummingbot/hummingbot) | Core Client | [`v2.15.0`](https://github.com/hummingbot/hummingbot/releases/tag/v2.15.0) | [`version-2.15.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-2.15.0) |
-| [Gateway](https://github.com/hummingbot/gateway) | DEX Middleware | [`v2.15.0`](https://github.com/hummingbot/gateway/releases/tag/v2.15.0) | [`version-2.15.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.15.0) |
+| [Gateway](https://github.com/hummingbot/gateway) | DEX Middleware | [`v2.15.1`](https://github.com/hummingbot/gateway/releases/tag/v2.15.1) | [`version-2.15.1`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.15.1) |
 
 
 ## [2.14.0](2.14.0.md)
