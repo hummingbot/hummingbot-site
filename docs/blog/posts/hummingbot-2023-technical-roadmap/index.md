@@ -14,7 +14,7 @@ categories:
 
 ## From bot to framework
 
-Since it was launched in 2019, the open source [Hummingbot](https://github.com/hummingbot/hummingbot?ref=blog.hummingbot.org) software client has grown and evolved considerably. 
+Since it was launched in 2019, the open source [Hummingbot](https://github.com/hummingbot/hummingbot) software client has grown and evolved considerably. 
 
 <!-- more -->
 
@@ -23,20 +23,20 @@ Originally a simple market making bot that only supported a few exchanges, today
 
 ![](image_1.jpg)
 
-With hundreds of daily active users who [generate millions in volume](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52?ref=blog.hummingbot.org) and [provide liquidity to many tokens](https://miners.hummingbot.io/?ref=blog.hummingbot.org), the Hummingbot community is a small but powerful global army of quant traders and developers who use and maintain this shared community-owned codebase.
+With hundreds of daily active users who [generate millions in volume](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) and [provide liquidity to many tokens](https://miners.hummingbot.io/), the Hummingbot community is a small but powerful global army of quant traders and developers who use and maintain this shared community-owned codebase.
 
 Hummingbot has evolved from a simple market market making bot into a extensible software framework that allows you to build and execute powerful, cross-venue algorithmic trading strategies. 
 
 We've been amazed at what our community has been able to build with Hummingbot. The users who consistently rank at the top of the Hummingbot Miner leaderboard are mostly running customized Hummingbot forks. 
 
-Therefore, our overall goal at Hummingbot Foundation next year is to grow the population of technical Hummingbot users who can customize and create their own strategies via [Scripts](https://docs.hummingbot.org/scripts?ref=blog.hummingbot.org), instead of just running the off-the-shelf strategy templates. 
+Therefore, our overall goal at Hummingbot Foundation next year is to grow the population of technical Hummingbot users who can customize and create their own strategies via [Scripts](https://hummingbot.org/strategies/scripts/), instead of just running the off-the-shelf strategy templates. 
 
 2023 technical priorities
 
 
 ![](image_2.jpg)
 
-Source: [Andy Holmes](https://unsplash.com/photos/rCbdp8VCYhQ?ref=blog.hummingbot.org)
+Source: [Andy Holmes](https://unsplash.com/photos/rCbdp8VCYhQ)
 
 ### 1. Expand functionality of top exchange connectors
 
@@ -61,7 +61,7 @@ In addition, since a simpler codebase will be easier to maintain, we will reasse
 
 ### 3. Expand Scripts framework
 
-[Hummingbot Botcamp](https://hummingbot.org/botcamp?ref=blog.hummingbot.org)'s first cohorts are showing that the real power of Hummingbot is allowing people to build simple, powerful custom trading strategies using Scripts. With the most recent release, there are now [13 Script examples in the open source codebase](https://github.com/hummingbot/hummingbot/tree/master/scripts?ref=blog.hummingbot.org) and we plan to each more each month.
+[Hummingbot Botcamp](https://www.botcamp.xyz)'s first cohorts are showing that the real power of Hummingbot is allowing people to build simple, powerful custom trading strategies using Scripts. With the most recent release, there are now [13 Script examples in the open source codebase](https://github.com/hummingbot/hummingbot/tree/master/scripts) and we plan to each more each month.
 
 Next year, we plan to expand Scripts by:
 
@@ -85,13 +85,13 @@ Many of the traders and Hummingbot developers are interested in add indicators t
 
 Currently, the only way to do this with Hummingbot right now is using trailing indicators (per-tick price data collected by the bot), but this solution is not suitable for candlestick indicators, since you have to get historical data to construct the OHLCs needed.
 
-That�s why one of the projects will be the OHLC Generator, that will allow users to initialize their strategies with multiple OHLCs (time or volume based). In addition, we plan to support third-party library like [ta-lib](https://github.com/mrjbq7/ta-lib?ref=blog.hummingbot.org) so that users can compute and create various indicators.
+That�s why one of the projects will be the OHLC Generator, that will allow users to initialize their strategies with multiple OHLCs (time or volume based). In addition, we plan to support third-party library like [ta-lib](https://github.com/mrjbq7/ta-lib) so that users can compute and create various indicators.
 
 **Make scripts configurable**
 
-One of the benefits of [Strategies](https://docs.hummingbot.org/strategies?ref=blog.hummingbot.org) is that you define configuration `.yml` files that allow users to change parameters through the CLI or by editing the file. However, the downside is that Strategies require you to add a lot of boilerplate code, such as writing the `start.py` file and defining the initialization of the strategy.
+One of the benefits of [Strategies](https://hummingbot.org/strategies/) is that you define configuration `.yml` files that allow users to change parameters through the CLI or by editing the file. However, the downside is that Strategies require you to add a lot of boilerplate code, such as writing the `start.py` file and defining the initialization of the strategy.
 
-On the other hand, [Scripts](https://docs.hummingbot.org/scripts?ref=blog.hummingbot.org) allow users to easily create strategies in a single file, but currently don't allow users to define a configuration file. To get the best of both worlds, we plan to define a new class of Strategies/Scripts that will work with a configuration file and with the simple, Python-based user experience of the existing Scripts.  
+On the other hand, [Scripts](https://hummingbot.org/strategies/scripts/) allow users to easily create strategies in a single file, but currently don't allow users to define a configuration file. To get the best of both worlds, we plan to define a new class of Strategies/Scripts that will work with a configuration file and with the simple, Python-based user experience of the existing Scripts.  
 
 
 ### 4. Support external modules like Orchestration
@@ -107,7 +107,7 @@ A few months ago, the community awarded a 2M HBOT bounty to two community develo
 
 The proposed solution includes a web interface where the user can see all the bots that are running, the performance of each one and also will be able to execute all the supported commands that the client has right now (start, stop, change strategy, etc). The implementation includes a Broker like (MQTT, Kafka, RabitMQ, etc) that will allow the communications between this Web Application and each client.
 
-The team has submitted a [draft pull request](https://github.com/hummingbot/hummingbot/pull/5945?ref=blog.hummingbot.org) and anyone in the community is free to test it and leave feedback on the Github PR!
+The team has submitted a [draft pull request](https://github.com/hummingbot/hummingbot/pull/5945) and anyone in the community is free to test it and leave feedback on the Github PR!
 
 We plan to keep the core Hummingbot codebase lightweight and work with community teams to support external modules like orchestration. If there are teams that want to design and maintain similar external components that work with Hummingbot, please let us know.
 
@@ -116,7 +116,7 @@ The road to Hummingbot 2.0
 
 ![](image_3.jpg)
 
-Source: [Karsten Wurth](https://unsplash.com/photos/rafblRbne3o?ref=blog.hummingbot.org)
+Source: [Karsten Wurth](https://unsplash.com/photos/rafblRbne3o)
 
 As Hummingbot evolves into a powerful cross-venue algorithmic trading strategy creation framework, we believe there should be a milestone release called Hummingbot 2.0 at some point in the future, possibly at the end of 2023. 
 

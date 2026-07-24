@@ -38,25 +38,25 @@ Users operate Hummingbot through an interactive command line interface:
 
 #### Hummingbot's command line interface
 
-![Hummingbot command line interface](./hummingbot-cli.png)
+![Hummingbot command line interface](hummingbot-cli.png)
 
 For an explanation of the CLI and a summary of commands, visit the [Hummingbot documentation](../../../client/user-interface.md).
 
 #### Initializing and configuring Hummingbot
 
-![Configuring Hummingbot](./hummingbot-config.gif)
+![Configuring Hummingbot](hummingbot-config.gif)
 
 Hummingbot is initialized and configured through a step-by-step command line interface (see [Client](../../../client/index.md) for a full example).
 
 #### Automatically posting and adjusting orders
 
-![Market making in real time](./hummingbot-ddex.gif)
+![Market making in real time](hummingbot-ddex.gif)
 
 The above image shows Hummingbot automatically placing and adjusting orders on an exchange. Using the same Ethereum wallet, users can see their Hummingbot orders being placed and adjusted in the exchange's website.
 
 ### 0x Collaboration
 
-![Hummingbot + 0x](./hummingbot_0x.png)
+![Hummingbot + 0x](hummingbot_0x.png)
 
 Hummingbot has formed strategic alliances with several well-known decentralized finance (DeFi) projects. We received a development grant from [0x](https://0x.org), a leading open-source protocol for decentralized exchanges, to support the 0x ecosystem with Hummingbot.
 
@@ -68,7 +68,7 @@ Hummingbot has formed strategic alliances with several well-known decentralized 
 
 ### Become a Hummingbot partner 🤝
 
-![Exchange partners](./hummingbot-exchanges.png)
+![Exchange partners](hummingbot-exchanges.png)
 
 We’re establishing partnerships with additional cryptocurrency exchanges (both centralized and decentralized) to integrate with Hummingbot. We’re also seeking out crypto funds and token issuers who are interested in professional deployments of Hummingbot.
 

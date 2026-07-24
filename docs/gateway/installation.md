@@ -107,7 +107,7 @@ pnpm build
 
 ### Run Setup Script
 
-The `gateway-setup.sh` script, located in the root Gateway directory, copies the default Gateway [configuration](./configuration.md) files from `/src/templates` to `/conf/` folder.
+The `gateway-setup.sh` script, located in the root Gateway directory, copies the default Gateway [configuration](configuration.md) files from `/src/templates` to `/conf/` folder.
 
 Run the script:
 ```bash
@@ -243,7 +243,7 @@ If you see **GATEWAY: OFFLINE**, check that:
 
 ## Interactive Swagger Docs
 
-![swagger](./swagger.png)
+![swagger](swagger.png)
 
 Gateway provides interactive API documentation through Swagger UI when running in development mode. This interface allows you to:
 

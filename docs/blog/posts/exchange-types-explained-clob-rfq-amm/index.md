@@ -23,9 +23,9 @@ Exchanges perform the fundamental role in free markets of bringing together and 
 
 | Exchange Types | Examples |
 |---|---|
-| [**Central Limit Order Book (CLOB)**](#central-limit-order-book-clob)<br/><br/><small>Most commonly used exchange methodology</small><br/><br/><small>Exchange collects orders from market makers and then publishes an aggregate order book</small><br/><br/><small>Orders are made available for other parties (“takers”) to accept the terms and transact</small><br/><br/> | <small>NYSE, CBOT, Coinbase, Binance, EtherDelta, DDEX, Radar Relay</small> |
+| [**Central Limit Order Book (CLOB)**](#central-limit-order-book-clob-exchanges)<br/><br/><small>Most commonly used exchange methodology</small><br/><br/><small>Exchange collects orders from market makers and then publishes an aggregate order book</small><br/><br/><small>Orders are made available for other parties (“takers”) to accept the terms and transact</small><br/><br/> | <small>NYSE, CBOT, Coinbase, Binance, EtherDelta, DDEX, Radar Relay</small> |
 | [**Request for Quotation (RFQ)**](#request-for-quotation-rfq-exchanges)<br/><br/><small>Pricing on demand: A taker initiates a transaction by querying a known set of market makers with a specific demand (e.g. “buy 10 ETH”)</small><br/><br/><small>Taker receives a quote from each, and decides which (if any) to accept</small><br/><br/> | <small>Airswap, Kyber</small> |
-| [**AMM**](#automated-exchange)<br/><br/><small>A form of exchange enabled by blockchain technology where an exchange smart contract calculates prices using a predetermined formula referencing the contract’s inventory of assets</small><br/><br/><small>This requires third party actors (arbitrageurs) to keep asset prices in-line with other markets</small><br/><br/> | <small>Bancor, Uniswap</small> |
+| [**AMM**](#automated-market-makers-amm)<br/><br/><small>A form of exchange enabled by blockchain technology where an exchange smart contract calculates prices using a predetermined formula referencing the contract’s inventory of assets</small><br/><br/><small>This requires third party actors (arbitrageurs) to keep asset prices in-line with other markets</small><br/><br/> | <small>Bancor, Uniswap</small> |
 
 
 
@@ -34,11 +34,11 @@ We also discuss the degrees of decentralization of each methodology.  CLOB excha
 
 ### Central Limit Order Book (CLOB) Exchanges
 
-![CLOB exchanges](./clob-exchanges.png)
+![CLOB exchanges](clob-exchanges.png)
 
 Central limit order books are the most widely used exchange methodology.  If you have transacted on Coinbase, Binance, Kraken, or any centralized exchange, you have transacted on a CLOB.  Not limited to digital asset exchanges, this methodology is also used by traditional exchanges such as the New York Stock Exchange (NYSE) and Chicago Board of Trade (CBOT), which trades commodity futures. This method of exchange is rooted in the “trading pits” associated with the early days of Wall Street and commodities markets: chaotic, crowded venues with people yelling and shouting orders.
 
-![An exchange from the past](./traders.png)
+![An exchange from the past](traders.png)
 
 #### Coordinating buyers and sellers on a CLOB exchange
 
@@ -49,7 +49,7 @@ Central limit order books are the most widely used exchange methodology.  If you
 
 #### CLOB explained in pictures
 
-![(Open the image in a new tab to expand it)](./CLOB-exchange.png)
+![(Open the image in a new tab to expand it)](CLOB-exchange.png)
 
 #### Order matching on a CLOB exchange
 
@@ -81,7 +81,7 @@ However, these exchanges still control the information of the order book, mainta
 
 ### Request for Quotation (RFQ) Exchanges
 
-![RFQ Exchanges](./airswap-kyber.png)
+![RFQ Exchanges](airswap-kyber.png)
 
 Request for quotation is a common practice used in daily life and business and can simply be thought of as price comparison shopping or pricing on demand. Some activities involving RFQs include:
 
@@ -99,7 +99,7 @@ One distinction of an RFQ type of business process is that you will typically kn
 
 In RFQs, the role of the exchange operator (or smart contract) is to organize and keep track of quotation providers for a taker, assist in the coordination of requesting and receiving quotes, and finally provide a method for effecting (settling) the transaction once agreed.
 
-![(RFQ)](./rfq-exchange.png)
+![(RFQ)](rfq-exchange.png)
 
 ### RFQ and decentralization
 
@@ -112,15 +112,15 @@ In practice, technical complexities must be overcome to fully enable more widesp
 
 ## Automated Market Makers (AMM)
 
-![AMMs](./bancor-uniswap.png)
+![AMMs](bancor-uniswap.png)
 
 A relatively new form of exchange that has emerged in the cryptocurrency markets is the automated exchange such as Bancor and Uniswap. These exchanges do away with order books altogether and instead use a smart contract and its inventory to determine prices for exchange. 
 
-![Determining purchase price on a constant product market maker](./automated-mm.png)
+![Determining purchase price on a constant product market maker](automated-mm.png)
 
 To understand numerically how automated market maker pricing works, this [spreadsheet](http://bit.ly/2VhceZT) may be helpful.
 
-![Example](./constant-product-mm.png)
+![Example](constant-product-mm.png)
 
 ### AMMs and decentralization
 

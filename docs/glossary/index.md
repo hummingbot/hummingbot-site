@@ -13,7 +13,7 @@ Bollinger Bands (BB) are a widely popular technical analysis instrument created 
 
 The SMA then serves as a base for the Upper and Lower Bands, which are used as a way to measure volatility by observing the relationship between the Bands and price. Typically the Upper and Lower Bands are set a number of standard deviations away from the SMA (The Middle Line).
 
-![](./bollinger.png)
+![](bollinger.png)
 
 **Parameters used in V2 Strategies:**
 

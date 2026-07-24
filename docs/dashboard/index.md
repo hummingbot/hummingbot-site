@@ -12,8 +12,8 @@ Dashboard simplifies bot management and is fully compatible with [Controllers](.
 ## Highlights
 
 * **Accessible Framework**: Uses the [Streamlit](https://streamlit.io/) open source data visualization framework
-* **Backtestable Strategies**: Configure and [backtest](./backtest.md) strategy controllers
-* **Multi-Bot Deployment**: [Deploy](./deploy.md) and [manage](./instances.md) multiple bot instances and monitor their real-time performance
+* **Backtestable Strategies**: Configure and [backtest](backtest.md) strategy controllers
+* **Multi-Bot Deployment**: [Deploy](deploy.md) and [manage](instances.md) multiple bot instances and monitor their real-time performance
 * **API-Powered**: Built on top of the new Hummingbot API for reliable bot management
 
 ## Getting Started

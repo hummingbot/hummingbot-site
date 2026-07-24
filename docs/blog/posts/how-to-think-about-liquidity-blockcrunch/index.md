@@ -37,7 +37,7 @@ However, the burgeoning **#DeFi** (decentralized finance) space, with new instru
 
 The continuous emergence of decentralized financial assets and a fragmented exchange landscape will perpetuate inefficiencies and arbitrage opportunities.
 
-![](./image1.jpg)
+![](image1.jpg)
 
 ### What Types of Markets are Best for Hummingbot Users?
 Major market makers in crypto, such as Jump Trading and DRW Cumberland, focus on highly liquid pairs on large exchanges, like BTC/USDT on Binance or ETH/USD on Coinbase. Conversely, **long tail markets**, like WETH/DAI on Radar Relay, remain underserved due to a lack of smaller market makers. These markets present ideal opportunities for Hummingbot users for two reasons:

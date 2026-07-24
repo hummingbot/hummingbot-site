@@ -23,7 +23,7 @@ Over the 7-week trial period, the community generated a total of 618 responses, 
 
 Based on these impressive results, we have proposed 2 million HBOT rewards to continue the Discord Support Program for the next 12 months. This will include a weekly cycle of 80,000 HBOT to be distributed, with a maximum of 12,000 HBOT that any participant can earn.
 
-:bulb: [[HGP-28] Discord Support Program 2023 - New Proposal at Snapshot](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0xa1cc46fe9a3a917519dfef444f6a228d316c11eb0d211659763f8cba15340f27)
+:bulb: [[HGP-28] Discord Support Program 2023 - New Proposal at Snapshot](https://snapshot.org/?#/hbot.eth/proposal/0xa1cc46fe9a3a917519dfef444f6a228d316c11eb0d211659763f8cba15340f27)
 
 We strongly encourage our community members to help cast their vote on this proposal as it will greatly impact both our new and existing users by providing more support and assistance with their questions and challenges encountered as they navigate the Hummingbot ecosystem.
 

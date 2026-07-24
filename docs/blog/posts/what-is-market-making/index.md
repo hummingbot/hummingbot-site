@@ -142,7 +142,7 @@ Over time, add another parameter and do more testing and watch how all the piece
 
 You are not going to find a cookie cutter, ready-to-use, one-size-fits-all and always profitable strategy/parameters just simply lying around, but after some time, you will start to understand the good and the bad of each **strategy**, and after experimenting with some of them will find one that fits your goals.
 
-> 🐦 On Hummingbot, you can combine different settings in different ways using the `config` command to build a wide variety of strategies. Check out the [pure market making reference guide](https://docs.hummingbot.org/strategies/pure-market-making/) to see what each parameter is used for.
+> 🐦 On Hummingbot, you can combine different settings in different ways using the `config` command to build a wide variety of strategies. Check out the [pure market making reference guide](https://hummingbot.org/strategies/v1-strategies/pure-market-making/) to see what each parameter is used for.
 
 ### Automated trading and market making
 

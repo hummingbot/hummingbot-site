@@ -2,7 +2,7 @@ This guide covers how to use Gateway commands within the Hummingbot client. Gate
 
 ## Installation and Setup
 
-Before using Gateway commands, you need to have Gateway installed and running. Follow the [Gateway Installation Guide](./installation.md) to set up Gateway using either Docker or from source.
+Before using Gateway commands, you need to have Gateway installed and running. Follow the [Gateway Installation Guide](installation.md) to set up Gateway using either Docker or from source.
 
 Once Gateway is running, you can verify the connection in Hummingbot:
 

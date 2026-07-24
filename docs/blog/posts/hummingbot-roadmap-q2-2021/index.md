@@ -30,7 +30,7 @@ Please see below for more information on the initiatives we plan to ship over th
 
 ## New Hummingbot connector: Uniswap V3
 
-![](./uniswap-v3.jpg)
+![](uniswap-v3.jpg)
 
 We are excited to announce an upcoming new Hummingbot connector that supports [Uniswap V3](https://uniswap.org/blog/uniswap-v3/), along with a new strategy `uniswap_v3_lp` that lets Uniswap liquidity providers dynamically maintain their positions as market conditions change.
 
@@ -40,7 +40,7 @@ The first version of this connector and strategy, which we expect to ship shortl
 
 ## New Hummingbot Miner exchange: AscendEx
 
-![](./ascendex-bitmax.png)
+![](ascendex-bitmax.png)
 
 Since Hummingbot Miner has to collect and process large amounts of order book data coming from many different users simultaneously, supporting additional exchanges involves a large amount of engineering work. 
 
@@ -64,7 +64,7 @@ In order to continue adding exchanges, we need to refactor the existing connecto
 
 We have partnered with Gitcoin to support the [OpenDeFi hackathon](https://gitcoin.co/hackathon/open-defi/onboard) going on now, so you can win bounties for creating Hummingbot strategies!
 
-![](./open-defi.jpg)
+![](open-defi.jpg)
 
 ## Other Hummingbot Miner initiatives in Q2
 
@@ -80,4 +80,4 @@ Some of these API endpoints are already being used by the `liquidity_mining` str
 
 Below is an early design of the new Market view:
 
-![](./redesign.png)
+![](redesign.png)

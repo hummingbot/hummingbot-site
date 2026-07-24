@@ -46,7 +46,7 @@ Additionally, `PositionExecutor` also contains a **Trailing Stop** mechanism, wh
 The `PositionExecutor` class is designed to work on both spot and perpetual exchanges, allowing you to write strategies that be used on either type:
 
 * On perpetual exchanges, they apply the take-profit and stop-loss levels described below to manage a long or short position after it has been created.
-* On spot exchanges, they place take-profit and stop-loss orders to manage an order after it has been filled. This is similar to [Hanging Orders](../../../strategies/v1-strategies/strategy-configs/hanging-orders.md) but on an individual order level.
+* On spot exchanges, they place take-profit and stop-loss orders to manage an order after it has been filled. This is similar to [Hanging Orders](../../v1-strategies/strategy-configs/hanging-orders.md) but on an individual order level.
 
 
 ### Configuration
@@ -67,7 +67,7 @@ triple_barrier_confs = TripleBarrierConf(
 
 Activated when the price moves against the position beyond a specified threshold.
 
-![](./stop_loss.png)
+![](stop_loss.png)
 
 
 
@@ -75,14 +75,14 @@ Activated when the price moves against the position beyond a specified threshold
 
 Triggered when the price reaches a pre-set level that represents a desired profit.
 
-![](./take_profit.png)
+![](take_profit.png)
 
 
 #### Time Limit
 
 When the time limit is reached, the position will be closed or an opposing trade will be executed.
 
-![](./time_limit.png)
+![](time_limit.png)
 
 #### Trailing Stop
 
@@ -91,7 +91,7 @@ The trailing stop evaluates the position after a certain time has passed and may
 - `trailing_stop_activation_price_delta`: The price movement required to activate a trailing stop.
 - `trailing_stop_trailing_delta`: The distance maintained behind the price as a trailing stop, which adjusts as the price moves favorably.
 
-![](./trailing_stop.png)
+![](trailing_stop.png)
 
 
 ### Execution Flow

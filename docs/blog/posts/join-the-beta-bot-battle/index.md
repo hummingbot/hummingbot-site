@@ -8,7 +8,7 @@ categories:
 
 # ⚔️ Join the Beta Bot Battle!
 
-![](./bird-battle.jpg)
+![](bird-battle.jpg)
 
 
 Hey there, bot runners! We're super excited to announce the first **Bot Battle**, a 48-hour trading competition for the 

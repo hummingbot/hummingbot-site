@@ -5,7 +5,10 @@ This page serves as a comprehensive resource hub for learning about algorithmic 
 Get started with Hummingbot using different installation methods:
 
 - **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)**
-  Step-by-step guide to install and run the Hummingbot Client using Docker. Best for local usage, learning Hummingbot, and running V1 strategies.
+  Install with Docker and run bots via the [`hbot` CLI](../client/hbot-cli.md). Best for local usage and single-bot automation.
+
+- **[`hbot` CLI](../client/hbot-cli.md)**
+  Full reference for the recommended non-interactive command line — commands, Docker modes, exit codes, and scripting.
 
 - **[Condor Quickstart](../installation/condor.md)**
   Install Condor for Trading Agents, multi-bot management, cloud deployments, and modern interfaces like Telegram and MCP (AI agents).
@@ -34,7 +37,7 @@ Take your skills to the next level in [Hummingbot Botcamp](https://botcamp.xyz),
 
 ## 🧙 Strategy Guides
 
-Check out the [Strategy Guides](../blog/category/strategy-guides) category in our blog for step-by-step guides in setting up various Hummingbot strategies:
+Check out the [Strategy Guides](https://hummingbot.org/blog/category/strategy-guides) category in our blog for step-by-step guides in setting up various Hummingbot strategies:
 
 - **[Strategy Guide: Grid Strike](../blog/posts/strategy-guide-grid-strike/index.md)**
   This guide walks you through setting up the Grid Strike strategy that sets a long or short grid of orders. Works on both spot or perp exchanges.
@@ -82,4 +85,4 @@ Learn how to setup and run Hummingbot on various CEXs and DEXs:
 - **[Trading on XRPL with Hummingbot](../blog/posts/using-xrpl-with-hummingbot/index.md)**
   Guide to setting up and trading on the XRP Ledger's decentralized exchange using Hummingbot
 
-See more examples in the [Connector Guides](../blog/category/connector-guides) category in our blog.
+See more examples in the [Connector Guides](https://hummingbot.org/blog/category/connector-guides) category in our blog.

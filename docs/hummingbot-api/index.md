@@ -132,23 +132,27 @@ The Hummingbot API enables various trading applications:
 
 ## API Endpoints
 
-The Hummingbot API is organized into functional routers covering:
+The Hummingbot API (**v1.0.1**) is organized into functional routers covering:
 
 - 🐳 **Docker Management** - Container lifecycle and orchestration
-- 💳 **Account Management** - Multi-exchange account configuration
+- 💳 **Account Management** - Multi-exchange account configuration and Gateway wallets
 - 🔌 **Connector Discovery** - Exchange connector information
 - 📊 **Portfolio Management** - Real-time portfolio tracking and analytics
 - 💹 **Trading Operations** - Order execution and position management
-- 🤖 **Bot Orchestration** - Deploy and manage trading bots
-- 📋 **Strategy Management** - Controllers and scripts
-- 📊 **Market Data** - Real-time and historical market data
-- 🔄 **Backtesting** - Strategy testing with historical data
+- 📈 **Market Data** - Candles, tickers, cross-rates, order books, and pool prices
+- 🤖 **Bot Orchestration** - Deploy, start/stop, and archive trading bots
+- ⚙️ **Executors** - In-process executor management (including `lp_executor`)
+- 📋 **Strategy Management** - Controllers and scripts with live config updates
+- 🔄 **Backtesting** - Sync and async strategy backtesting
 - 📈 **Archived Bot Analytics** - Historical bot performance analysis
-- 🌐 **Gateway** - Gateway container and DEX infrastructure management
+- 🌐 **Gateway** - Gateway container, networks, tokens, pools, and RPC keys
 - 🔄 **Gateway Swaps** - DEX swap execution and monitoring
 - 💧 **Gateway CLMM** - Concentrated liquidity position management
+- 💾 **Storage** - Bot directory disk usage
+- 🖥️ **System** - Host CPU/RAM/disk metrics
+- 🔌 **WebSocket** - Real-time market data and executor streaming
 
-For detailed endpoint documentation, see the **[API Routers Guide](routers.md)**.
+For detailed endpoint documentation, see the **[API Routers Guide](routers.md)** or interactive Swagger at `http://localhost:8000/docs`.
 
 
 
@@ -178,15 +182,16 @@ Enables real-time communication with trading bots:
 ### Environment Variables
 Key configuration options available in `.env`:
 
-- **CONFIG_PASSWORD**: Encrypts API keys and credentials
-- **USERNAME/PASSWORD**: API authentication credentials
+- **USERNAME/PASSWORD**: API Basic Auth credentials
+- **CONFIG_PASSWORD**: Encrypts connector credentials and Gateway mTLS passphrase
 - **BROKER_HOST/PORT/USERNAME/PASSWORD**: EMQX message broker settings
 - **DATABASE_URL**: PostgreSQL connection string
+- **GATEWAY_URL**: Gateway service URL — must use **`https://`** (default: `https://localhost:15888`; Docker: `https://gateway:15888`)
 - **ACCOUNT_UPDATE_INTERVAL**: Balance update frequency (minutes)
-- **MARKET_DATA_CLEANUP_INTERVAL**: Seconds between feed cleanup runs
-- **MARKET_DATA_FEED_TIMEOUT**: Idle timeout before a feed is closed
-- **MARKET_DATA_CANDLES_READY_TIMEOUT**: Max seconds to wait for candle feed readiness
-- **GATEWAY_URL**: Gateway service URL (default: `http://localhost:15888`)
+- **MARKET_DATA_***: Feed cleanup, timeouts, WebSocket heartbeat, and ticker refresh intervals
+- **CORS_ALLOW_ORIGINS / CORS_ALLOW_ORIGIN_REGEX**: Trusted browser origins (localhost-only by default)
+- **TAILSCALE_ENABLED / TAILSCALE_AUTH_KEY / TAILSCALE_HOSTNAME**: Private tailnet access
+- **BANNED_TOKENS**: Tokens excluded from portfolio calculations
 - **LOGFIRE_ENVIRONMENT**: Observability environment tag (default: `dev`)
 - **AWS_API_KEY/AWS_SECRET_KEY**: S3 archiving (optional)
 
@@ -201,11 +206,15 @@ bots/instances/hummingbot-{name}/
 
 ## Authentication
 
-The API uses HTTP Basic Authentication:
+The API uses HTTP Basic Authentication on all REST routes except `GET /`:
 
-- Configure username and password during setup
+- Configure username and password during setup (`USERNAME` / `PASSWORD` in `.env`)
 - Include credentials in the Authorization header for all requests
 - Example: `Authorization: Basic <base64-encoded-credentials>`
+
+WebSocket routes (`/ws/market-data`, `/ws/executors`) accept the same credentials via header, `?token=`, or `?username=&password=` query params.
+
+`CONFIG_PASSWORD` encrypts stored connector keys and doubles as the Gateway mTLS passphrase — use a strong, unique value in production.
 
 For production, pair strong credentials with **[Tailscale](tailscale.md)** so clients connect over a private tailnet instead of a public IP. See the [Tailscale security guide](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md) for a full walkthrough.
 

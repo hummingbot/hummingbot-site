@@ -30,7 +30,7 @@ The following scripts are present in current releases (names without `.py` for `
 
 ### V2 orchestration
 
-* **v2_with_controllers** — [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_with_controllers.py): Loads one or more [Controllers](../../strategies/v2-strategies/controllers/index.md). See [Controller Walkthrough](../../strategies/v2-strategies/walkthrough-controller.md).
+* **v2_with_controllers** — [v2_with_controllers.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_with_controllers.py): Loads one or more [Controllers](../v2-strategies/controllers/index.md). See [Controller Walkthrough](../v2-strategies/walkthrough-controller.md).
 * **v2_funding_rate_arb** — [v2_funding_rate_arb.py](https://github.com/hummingbot/hummingbot/blob/master/scripts/v2_funding_rate_arb.py): Funding-rate arbitrage workflow.
 
 ### XRPL

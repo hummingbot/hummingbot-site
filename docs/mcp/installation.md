@@ -255,6 +255,6 @@ Once configured, test with these commands:
 
 After successful installation:
 
-1. **Explore Tools**: See [MCP Tools](./tools.md) for available capabilities
-2. **Try Examples**: Review [Example Workflows](./index.md#example-workflows)
-3. **Security**: Read [Security Guidelines](./index.md#security-considerations)
+1. **Explore Tools**: See [MCP Tools](tools.md) for available capabilities
+2. **Try Examples**: Review [Example Workflows](index.md#example-conversations)
+3. **Security**: Read [Security Guidelines](../hummingbot-api/tailscale.md)

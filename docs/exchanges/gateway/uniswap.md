@@ -7,9 +7,9 @@
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [Router Connector](#router-connector) | ✅ | Universal Router |
-| [AMM Connector](#2-amm-connector) | ✅ | V2 Pools |
-| [CLMM Connector](#3-clmm-connector) | ✅ | V3 Pools |
+| [Router Connector](#router-endpoints) | ✅ | Universal Router |
+| [AMM Connector](#amm-endpoints) | ✅ | V2 Pools |
+| [CLMM Connector](#clmm-endpoints) | ✅ | V3 Pools |
 
 ## ℹ️ Exchange Info
 

@@ -23,7 +23,7 @@ Polls have enabled us to differentiate and improve the top exchange connectors. 
 - Support for market orders and other order types
 - Content bounties that show strategies run on these venues
 
-In addition, we have funded a [bounty](https://github.com/hummingbot/gateway/issues/112?ref=blog.hummingbot.org) to significantly revamp the Gold DEX connector (Uniswap) and will fund matching bounties for Silver DEX connectors afterwards.
+In addition, we have funded a [bounty](https://github.com/hummingbot/gateway/issues/112) to significantly revamp the Gold DEX connector (Uniswap) and will fund matching bounties for Silver DEX connectors afterwards.
 
 ---
 
@@ -31,7 +31,7 @@ To help HBOT holders decide how to vote for Epoch 5, we summarize each new propo
 
 ## Epoch 5 Governance Changes Proposal
 
-To start, please vote on [this proposal](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0xe2dd81f481f6bd84d207a7a4453c5ae820a5c2b64dab63ae746f8ce38a47a434) that proposes two changes to the governance system:
+To start, please vote on [this proposal](https://snapshot.org/?#/hbot.eth/proposal/0xe2dd81f481f6bd84d207a7a4453c5ae820a5c2b64dab63ae746f8ce38a47a434) that proposes two changes to the governance system:
 
 - Allocates **7M HBOT** to fund previously allocated bounties and new ones for Epoch 5 bounties
 - Adds a **New Connector Proposal** type that imposes a 200,000 HBOT minimum balance to propose new CEX/DEX connectors.
@@ -76,7 +76,7 @@ Here are the 26 [CEX Connector](../../../connectors/index.md) nominees for Epoch
 - Phemex
 - Whitebit
 
-This poll and the other below will be created in [Snapshot](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth) on Wednesday June 28, and voting will be open for 7 days.
+This poll and the other below will be created in [Snapshot](https://snapshot.org/?#/hbot.eth) on Wednesday June 28, and voting will be open for 7 days.
 
 ## DEX Connectors Poll
 
@@ -128,4 +128,4 @@ Here are the Core Strategies nominees for Epoch 5:
 
 ---
 
-The polls above will be created in [Snapshot](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth) on Wednesday June 28, and voting will be open for 7 days, so vote now!
+The polls above will be created in [Snapshot](https://snapshot.org/?#/hbot.eth) on Wednesday June 28, and voting will be open for 7 days, so vote now!

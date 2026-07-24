@@ -25,14 +25,14 @@ Below, we shed more light on their similarities and differences and explain why 
 
 Funded by an Ethereum Foundation grant, Uniswap is truly decentralized with no token or company behind it. Uniswap also boasts a simple yet intuitive user interface. Because of these factors, it has grown into an indispensable public utility within the Ethereum ecosystem:
 
-![ETH locked in Uniswap: https://mikemcdonald.github.io/eth-defi/](./uniswap-chart.png)
+![ETH locked in Uniswap: https://mikemcdonald.github.io/eth-defi/](uniswap-chart.png)
 
 Many great articles already [describe Uniswap](https://medium.com/scalar-capital/uniswap-a-unique-exchange-f4ef44f807bf), analyze its profitability, and explain the theory behind automated market makers. 
 
 
 While rehashing those articles is outside the scope of this post, we note that there are three types of users in the Uniswap ecosystem:
 
-![The 3 types of Uniswap users](./uniswap-roles.png)
+![The 3 types of Uniswap users](uniswap-roles.png)
 
 * **Traders**: users who use Uniswap to swap tokens
 * **Liquidity providers**: users who provide the token reserves used by Uniswap to facilitate trades. These users earn fees charged on each swap (currently 0.3%).
@@ -48,7 +48,7 @@ Finally, both Hummingbot and Uniswap are **open source**. In a world where malic
 
 ### How are Hummingbot and Uniswap different?
 
-![User interfaces: Hummingbot (left) vs Uniswap (right)](./interfaces.png)
+![User interfaces: Hummingbot (left) vs Uniswap (right)](interfaces.png)
 
 From a side-by-side comparison of the user interfaces, it's clear that Hummingbot and Uniswap target two different types of liquidity providers:
 * Hummingbot is for **power users** (developers, quants, and active traders) who value configurability, flexibility, and control

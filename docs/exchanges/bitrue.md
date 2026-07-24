@@ -6,9 +6,9 @@
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | Not available | 
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| 🔀 Perp Connector | Not available | 
+| 🕯 Spot Candles Feed | Not available | 
+| 🕯 Perp Candles Feed | Not available | 
 
 ## ℹ️ Exchange Info
 

@@ -55,7 +55,7 @@ You can auto-start either a V2 script config or a V1 strategy config:
 
 * **V2:** `SCRIPT_CONFIG` points to a file in `conf/scripts/` (must include `script_file_name` for the entry script).
 
-* **V1:** `CONFIG_FILE_NAME` points to a file in `conf/strategies/`. See [Strategies](https://docs.hummingbot.org/strategies/) for V1 templates. 
+* **V1:** `CONFIG_FILE_NAME` points to a file in `conf/strategies/`. See [Strategies](https://hummingbot.org/strategies/) for V1 templates. 
 
 **Relaunch Hummingbot**
 
@@ -119,6 +119,6 @@ Where:
 
 More information on strategy can be found in [Strategy](../../strategies/index.md).
 
-More information on configuration file name can be found in [Configuring Hummingbot](../../client/config-files.md).
+More information on configuration file name can be found in [Configuring Hummingbot](../config-files.md).
 
 More information on password can be found in [Create a secure password](../password.md).

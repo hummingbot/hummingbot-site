@@ -1,3 +1,6 @@
+!!! warning "Connector Removed"
+    The **Vertex** connector was removed from Hummingbot in [PR #8376](https://github.com/hummingbot/hummingbot/pull/8376) (post-v2.15.0). The Vertex protocol has shut down. This page is kept for historical reference.
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Decentralized Exchange (**DEX**)
@@ -6,8 +9,8 @@
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | Not available
-| [🕯 AMM Data Feed](#amm-data-feed) | Not available
+| 🔀 Perp Connector | Not available
+| 🕯 AMM Data Feed | Not available
 
 ## ℹ️ Exchange Info
 

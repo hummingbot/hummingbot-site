@@ -1,5 +1,5 @@
 !!! tip "Foundation Sponsor"
-    Hyperliquid is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Hyperliquid, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Hyperliquid referral link](https://app.hyperliquid.xyz/join/HUMMINGBOT) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
+    Hyperliquid is an [exchange partner](../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Hyperliquid, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To enable this, create an account using our [Hyperliquid referral link](https://app.hyperliquid.xyz/join/HUMMINGBOT) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
 ## 🛠 Connector Info
 

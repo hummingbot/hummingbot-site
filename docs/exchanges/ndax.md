@@ -6,9 +6,9 @@
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v1.0 | No | |
-| [🔀 Perp Connector](#perp-connector) | Not built |
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built  | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built  | 
+| 🔀 Perp Connector | Not built |
+| 🕯 Spot Candles Feed | Not built  | 
+| 🕯 Perp Candles Feed | Not built  | 
 
 ## ℹ️ Exchange Info
 

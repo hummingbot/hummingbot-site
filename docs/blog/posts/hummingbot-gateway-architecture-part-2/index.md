@@ -12,7 +12,7 @@ categories:
 
 *by Martin Kou*
 
-**Update (February 2023):** Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
+**Update (February 2023):** Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
 
 Introduction
 ------------
@@ -173,7 +173,7 @@ After the initial public release of Gateway v2, we will establish a rotating "of
 
 ### Availability and Timeline
 
-**Update (February 2023):**Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
+**Update (February 2023):**Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
 
 At the time this blog post is written, Gateway v2 is prototype, pre-alpha software, so our priority is to build a production-ready architecture that offers extensible support for Uniswap-style AMMs on EVM-compatible chains.
 

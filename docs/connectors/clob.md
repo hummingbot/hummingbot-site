@@ -28,7 +28,6 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Kucoin](../exchanges/kucoin/index.md)             | ✓ | ✓ | ✓ |  |
 | [OKX](../exchanges/okx/index.md)                   | ✓ | ✓ | ✓ |  |
 | [XRPL](../exchanges/xrpl.md)                       | ✓ | ✓ |  | [Guide](../blog/posts/using-xrpl-with-hummingbot/index.md) |
-| [AscendEx](../exchanges/ascendex/index.md)         |  | ✓ |  |  |
 | [Architect](../exchanges/architect/index.md)       |  |  | ✓ |  |
 | [Aevo](../exchanges/aevo/index.md)         |  | ✓ |  |  |
 | [Backpack](../exchanges/backpack/index.md)         |  | ✓ | ✓ |  |
@@ -39,7 +38,6 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Bybit](../exchanges/bybit.md)                     | | ✓ | ✓ |  |
 | [BTC Markets](../exchanges/btc-markets.md)         |  | ✓ |  |  |
 | [Coinbase](../exchanges/coinbase.md)               |  | ✓ |  |  |
-| [Cube](../exchanges/cube/index.md)                 | | ✓ |  |  |
 | [Dexalot](../exchanges/dexalot.md)           | | ✓ | ✓ | [Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) |
 | [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
 | [Lighter](../exchanges/lighter.md)                 |  | ✓ | ✓ |  |
@@ -48,7 +46,6 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Pacifica](../exchanges/pacifica/index.md)             |  |  | ✓ |  |
 | [Decibel](../exchanges/decibel/index.md)               |  |  | ✓ |  |
 | [GRVT](../exchanges/grvt/index.md)                     |  |  | ✓ |  |
-| [Vertex](../exchanges/vertex.md)                   | | ✓ |  |  |
 | [Foxbit](../exchanges/foxbit/index.md) | | ✓ |  |  |
 
 ### Building CLOB Connectors
@@ -58,6 +55,6 @@ The Notion templates below summarize the file and functionalities needed to buil
 * [Spot Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Spot-Connector-v2-1-1cc43830938445c9974f43ef861d59f1): Use this template to build `CLOB spot` connectors that conform 
 * [Perp Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Perp-Connector-v2-1-57d8391eb54c40929f77067355fd551e): Use this template to build `CLOB perp` connectors that conform 
 
-See [Building Connectors](../connectors/connectors/build.md) for more information.
+See [Building Connectors](connectors/build.md) for more information.
 
 If the exchange is not yet supported by Hummingbot, you can submit a governance proposal for it to be included. New connectors may be contributed by community members via [Hummingbot Governance Proposals (HGP)](../about/proposals.md), which require a pull request with the connector code to the Hummingbot Github repo, along with a minimum HBOT balance to create.

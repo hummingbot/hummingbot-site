@@ -16,7 +16,7 @@ This week, we completed the Epoch 5 polls, which prioritize exchanges and strate
 
 <!-- more -->
 
-Starting from Epoch 5, we will be implementing two changes as outlined in the approved [HGP-43](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x63958a27907ef6efa072fc92566f91bcf5df7491523ffcc64ecb47f270df9bcd) proposal. Here are the summarized details:
+Starting from Epoch 5, we will be implementing two changes as outlined in the approved [HGP-43](https://snapshot.org/?#/hbot.eth/proposal/0x63958a27907ef6efa072fc92566f91bcf5df7491523ffcc64ecb47f270df9bcd) proposal. Here are the summarized details:
 
 - **HBOT Allocation for Epoch 5 Bounties**: We will allocate 7 million HBOT for Epoch 5 bounties. This allocation ensures sufficient funding for currently designated bounties and accommodates the introduction of new bounties throughout Epoch 5.
 - **Introduction of a New Connector Proposal Type**: We're adding a new proposal type for pull requests that aim to introduce new CEX or DEX connectors to the Hummingbot or Hummingbot Gateway codebases. The proposal also stipulates a minimum balance of 200,000 HBOT for creators of new connectors.
@@ -27,13 +27,13 @@ Below, we summarize the results of the Epoch 5 Polls and outline the changes we'
 
 ## CEX Connectors
 
-![](./CEX-Connectors-Epoch-5.png)
+![](CEX-Connectors-Epoch-5.png)
 
 The CEX Connectors poll places [centralized exchange connectors](../../../connectors/index.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the July-September 2023 release cycles.
 
 The poll received 30 distinct votes, for a total of 90 million HBOT voting power spent.
 
-[CEX Connectors Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x231e942b5f23b406d409f2b12319891ab3c92605e367f75e56015061e905d56e)
+[CEX Connectors Poll](https://snapshot.org/?#/hbot.eth/proposal/0x231e942b5f23b406d409f2b12319891ab3c92605e367f75e56015061e905d56e)
 
 Here are the results by tier:
 
@@ -51,11 +51,11 @@ Bronze CEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ## DEX Connectors
 
-![](./3.png)
+![](3.png)
 
 The DEX Connectors poll places [decentralized exchange connectors](../../../gateway/connectors.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the July-September 2023 release cycles. The poll received 23 distinct votes, for a total of 77 million HBOT voting power spent.
 
-[DEX Connectors Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x70299258a513ab4fb7ad4dd106947fd017848470fc8ce63ba4eb41b91d0d755c)
+[DEX Connectors Poll](https://snapshot.org/?#/hbot.eth/proposal/0x70299258a513ab4fb7ad4dd106947fd017848470fc8ce63ba4eb41b91d0d755c)
 
 Here are the results by tier:
 
@@ -63,7 +63,7 @@ Here are the results by tier:
 
 Similar to the CEX Connectors, Hummingbot Foundation will treat the Gold DEX Connector as the "gold standard" and map all of its swap and liquidity provision endpoints and support instances on all major chains.
 
-**Silver:** [dYdX](https://dydx.exchange/?ref=blog.hummingbot.org), [Pancakeswap](https://pancakeswap.finance/?ref=blog.hummingbot.org), [Dexalot](https://app.dexalot.com/trade/?ref=blog.hummingbot.org)
+**Silver:** [dYdX](https://dydx.exchange/), [Pancakeswap](https://pancakeswap.finance/), [Dexalot](https://app.dexalot.com/trade/)
 
 For Silver DEXs, the Foundation utilizes HBOT developer bounties to fund improvements and fixes.
 
@@ -73,11 +73,11 @@ Bronze DEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ## Core Strategies
 
-![](./4.png)
+![](4.png)
 
 The Core Strategies poll defines which [strategies](../../../strategies/index.md) should be Core (officially maintained by the Foundation) versus Community (maintained by community members or not maintained). There were 22 unique votes in the poll, and the total number of HBOT voting power tallied was 75 million.
 
-[Core Strategies Poll](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x65f6af77e8731827c0f19251b2c6e0346230205fe3c6e34294b3981dfb0f3f77)
+[Core Strategies Poll](https://snapshot.org/?#/hbot.eth/proposal/0x65f6af77e8731827c0f19251b2c6e0346230205fe3c6e34294b3981dfb0f3f77)
 
 **Core:**
 
@@ -105,4 +105,4 @@ We appreciate your understanding and continued support in this decision. Our goa
 
 Overall, we are excited about the continued support by the votes from the community, and we are excited to continue fleshing out Poll-based governance in the future!
 
-![](./teamwork-business-human-resources-2.jpg)
+![](teamwork-business-human-resources-2.jpg)

@@ -4,7 +4,7 @@ Gateway uses a modular configuration system that allows you to customize various
 
 Gateway's configuration system consists of YAML files located in the `/conf` directory, along with JSON files for tokens and pools organized by chain and connector.
 
-The initial configuration files are created automatically using the default templates in `/src/templates` when you run the setup script during [installation](./installation.md).
+The initial configuration files are created automatically using the default templates in `/src/templates` when you run the setup script during [installation](installation.md).
 
 ### Configuration Structure
 

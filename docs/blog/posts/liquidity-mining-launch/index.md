@@ -76,7 +76,7 @@ You can also read more about calculation methodology in the blog [Demystifying L
 
 ### Quick start for liquidity mining
 
-1. Install [Hummingbot](https://docs.hummingbot.org/) and configure it to trade in Binance.com
+1. Install [Hummingbot](https://hummingbot.org) and configure it to trade in Binance.com
 2. Create **read-only** API keys for your Binance account
 3. Sign up and register on [Hummingbot miners](https://miners.hummingbot.io)
     - Connect your Ethereum wallet (where rewards are to be paid)

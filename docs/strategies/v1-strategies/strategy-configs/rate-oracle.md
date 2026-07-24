@@ -1,7 +1,7 @@
 This new feature provides real time, most up-to-date exchange rate on any given token or currency from a reliable and trustworthy data source.
 
-!!! note "Hummingbot API router"
-    If you are using Hummingbot API, see the dedicated `/rate-oracle` endpoints in [API Routers](../../../hummingbot-api/routers.md) for programmatic source/config/rate management.
+!!! note "Hummingbot API"
+    If you are using Hummingbot API, use the `/market-data/rates` and `/market-data/tickers` endpoints for programmatic rate queries. See [API Routers](../../../hummingbot-api/routers.md).
 
 !!! note
     Use rate oracle with the [cross exchange market making](../cross-exchange-market-making.md) and arbitrage strategies.
@@ -10,12 +10,14 @@ This new feature provides real time, most up-to-date exchange rate on any given 
 
 ### `rate_oracle_source`
 
-The source where you want to pull data from, it can either be Binance, Coingecko, Kucoin or Ascendex. Please take note that using Coingecko will have a 30-second delay due to their API rate limit.
+The source where you want to pull data from. Available sources include Binance, CoinGecko, CoinCap, Gate.io, KuCoin, Backpack, Coinbase Advanced Trade, Hyperliquid, Derive, MEXC, Dexalot, and others supported by your Hummingbot version. Using CoinGecko may introduce a short delay due to API rate limits.
 
 ```
-What source do you want rate oracle to pull data from? (binance, coingecko, kucoin, ascend_ex)"
+What source do you want rate oracle to pull data from? (binance, coingecko, gate_io, kucoin, ...)"
 >>>
 ```
+
+Run `config rate_oracle_source` in the client to see the full list for your install.
 
 ### `global_token.global_token_name`
 
@@ -36,7 +38,7 @@ What is your default display token symbol? (e.g. $, €)
 ```
 
 !!! tip Changing oracle sources
-    If you happen to `start` the bot and produce the error `Oracle rate is not available`, or ff the `rate_oracle_source` fails to show any price reference on your pair, you may change the `oracle_source` by running `config rate_oracle_source` and switch between Binance, Coingecko, Kucoin or Ascendex.
+    If you happen to `start` the bot and produce the error `Oracle rate is not available`, or if the `rate_oracle_source` fails to show any price reference on your pair, you may change the source by running `config rate_oracle_source` and selecting another supported exchange (for example Gate.io, Binance, or CoinGecko).
 
 ![](../../../assets/img/oracle-error.png)
 

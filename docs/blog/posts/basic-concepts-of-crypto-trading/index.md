@@ -33,14 +33,14 @@ The order book is **very liquid** when a great amount of orders is stored in eac
 
 A **limit order** is an order that you place on the order book with a specific limit price. The limit price is determined by you. The trade will only be executed if the market price reaches your limit price (or better). Therefore, you may use limit orders to buy at a lower price or to sell at a higher price than the current market price.
 
-[What is a Limit Order?](https://academy.binance.com/en/articles/what-is-a-limit-order?ref=blog.hummingbot.org)
-[Limit Order Video](https://www.youtube.com/watch?v=pQMKqnzmydk&ref=blog.hummingbot.org)
+[What is a Limit Order?](https://academy.binance.com/en/articles/what-is-a-limit-order)
+[Limit Order Video](https://www.youtube.com/watch?v=pQMKqnzmydk)
 
 #### Market orders
 
 A **market order** lets you purchase or sell a financial asset instantly at best price currently available. Market orders take prices from limit orders on the order book. This means you can’t be 100% sure of the price you will get. Slippage can occur when you get a price different from what you expected.
 
-[What is a Market Order?](https://academy.binance.com/en/articles/what-is-a-market-order?ref=blog.hummingbot.org)
+[What is a Market Order?](https://academy.binance.com/en/articles/what-is-a-market-order)
 [Market Order Video](https://www.youtube.com/watch?v=pQMKqnzmydk&amp;feature=emb_imp_woyt)
 
 ### Bid-ask spread
@@ -49,7 +49,7 @@ A **market order** lets you purchase or sell a financial asset instantly at best
 
 *Depth Chart of the buy (green) and sell (red) orders*
 
-*Source: [Bid-ask spread](https://river.com/learn/terms/b/bid-ask-spread/?ref=blog.hummingbot.org)*
+*Source: [Bid-ask spread](https://river.com/learn/terms/b/bid-ask-spread/)*
 
 The bid-ask spread is the difference between the highest price a buyer is willing to pay for an asset and the lowest price a seller is willing to accept. These prices are reflected as bids and asks on an order book, placed by market makers as limit orders.
 
@@ -86,7 +86,7 @@ where |x| is the sign of abosulte value.
 
 Slippage is financial loss during trading as a result of market inefficiencies and illiquidity. Slippage occurs when an illiquid market experiences a sudden, large change in demand or supply, resulting in losses for the buyer or seller.
 
-[Learn more about slippage](https://river.com/learn/terms/s/slippage/?ref=blog.hummingbot.org)
+[Learn more about slippage](https://river.com/learn/terms/s/slippage/)
 
 
 
@@ -152,23 +152,23 @@ In cryptocurrency, the term “trading pairs” describes a trade between one ty
 
 With ETH/BTC you can buy Ethereum with Bitcoin, or sell Ethereum for Bitcoin.
 
-[What are "Trading Pairs" in Cryptocurrency?](https://cryptocurrencyfacts.com/what-are-trading-pairs-in-cryptocurrency/?ref=blog.hummingbot.org)
+[What are "Trading Pairs" in Cryptocurrency?](https://cryptocurrencyfacts.com/what-are-trading-pairs-in-cryptocurrency/)
 
 ### Base and Quote Assets
 
 ![Base and Quote Assets image](image_4.jpg)
 
-[Currency pairs: base and quote currencies, and types of pairs.](https://fbs.com/analytics/guidebooks/currency-pairs-base-and-quote-currencies-majors-and-crosses-15?ref=blog.hummingbot.org)
+[Currency pairs: base and quote currencies, and types of pairs.](https://fbs.com/analytics/guidebooks/currency-pairs-base-and-quote-currencies-majors-and-crosses-15)
 
 ### Minimum order size
 
 Minimum order size is the smallest amount of cryptocurrency that you can buy or sell in the exchange.
 
-[Trading Rules | Binance](https://www.binance.com/en/trade-rule?ref=blog.hummingbot.org)
+[Trading Rules | Binance](https://www.binance.com/en/trade-rule)
 
 Hummingbot's minimum order size is denominated in base asset. If a certain exchange uses quote asset in their list of minimum order size, you may also find this crypto converter calculator useful.
 
-[Cryptocurrency Converter and Calculator Tool | CoinMarketCap](https://coinmarketcap.com/converter/?ref=blog.hummingbot.org)
+[Cryptocurrency Converter and Calculator Tool | CoinMarketCap](https://coinmarketcap.com/converter/)
 
 ### Figuring out minimum order size with Postman
 
@@ -183,7 +183,7 @@ Some exchanges have no web pages where you can view the minimum order size. For 
 
 Whenever you execute trades (taking an order or when someone fills your orders) there are corresponding fees deducted from the total amount. Fees vary from exchanges.
 
-[Fee Schedule | Binance](https://www.binance.com/en/fee/schedule?ref=blog.hummingbot.org)
+[Fee Schedule | Binance](https://www.binance.com/en/fee/schedule)
 
 ### Stable Coins, Fiat Currencies and ERC20 Tokens
 
@@ -231,7 +231,7 @@ Now, we can get into some practical tips on crypto trading in general as an intr
 - Analyze market trends and indicators
 - Choose your strategy
 
-[How to trade crypto: an introduction by trader Tsalkapone](https://www.notion.so/How-to-trade-crypto-an-introduction-by-trader-Tsalkapone-42f0aa9be23f421a9bc2906e7e218323?ref=blog.hummingbot.org)
+[How to trade crypto: an introduction by trader Tsalkapone](https://www.notion.so/How-to-trade-crypto-an-introduction-by-trader-Tsalkapone-42f0aa9be23f421a9bc2906e7e218323)
 
 ## Helpful Tasks
 

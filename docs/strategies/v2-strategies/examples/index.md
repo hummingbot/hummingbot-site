@@ -64,7 +64,7 @@ create --controller-config directional_trading.bollinger_v1
 
 **Status**
 
-[![](./status-bollinger.png)](./status-bollinger.png)
+[![](status-bollinger.png)](./status-bollinger.png)
 
 
 ### MACD-BB
@@ -105,7 +105,7 @@ create --controller-config directional_trading.macd_bb_v1
 
 **Status**
 
-[![](./status-macdbb.png)](./status-macdbb.png)
+[![](status-macdbb.png)](./status-macdbb.png)
 
 
 ## Market Making Strategies
@@ -148,4 +148,4 @@ create --controller-config directional_trading.dman_v3
 
 **Status**
 
-[![](./status-dmanv3.png)](./status-dmanv3.png)
+[![](status-dmanv3.png)](./status-dmanv3.png)

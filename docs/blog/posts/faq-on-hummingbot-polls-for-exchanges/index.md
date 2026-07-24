@@ -21,8 +21,8 @@ See the [Governance](../../../about/governance.md) documentation to learn more a
 
 ## After a Poll, how are exchange ranked?
 
-![](./Epoch-3-Polls-Recap.jpg)
-![](./3-1.png)
+![](Epoch-3-Polls-Recap.jpg)
+![](3-1.png)
 
 After the voting process, both centralized exchange (CEX) connectors and decentralized exchange (DEX) connectors are ranked into 3 tiers:
 
@@ -37,9 +37,9 @@ After the voting process, both centralized exchange (CEX) connectors and decentr
 To boost their ranking in upcoming polls, exchanges can have various options to gather more voters:
 
 - **Hold and vote HBOT**: HBOT is a governance token that allows holders to vote gaslessly using their wallet balance. See [this page](../../../faq.md) for more information on how to acquire and vote HBOT.
-- **Campaign for your exchange on Discord**: Join our [Discord](https://discord.com/invite/hummingbot?ref=blog.hummingbot.org) and post and engage with the community, where members can post comments and engage in discussions about the poll topic. One example of an exchange that was successful in doing this was OpenOcean in the Epoch 1 poll.
+- **Campaign for your exchange on Discord**: Join our [Discord](https://discord.com/invite/hummingbot) and post and engage with the community, where members can post comments and engage in discussions about the poll topic. One example of an exchange that was successful in doing this was OpenOcean in the Epoch 1 poll.
 
-![](./Screen-Shot-2023-01-20-at-9.16.43-AM.png)
+![](Screen-Shot-2023-01-20-at-9.16.43-AM.png)
 
 - **Hire CoinAlpha as maintainer**: As our sister company, CoinAlpha provides products and services built on top of Hummingbot for instutional clients. They build and maintain CEX and DEX connectors (helping the exchange to make sure that the connector is up-to-date and working correctly), and they also help exchanges navigate the Foundation governance process (gathering votes on the exchange's behalf to increase the chances of the exchange being selected).
 

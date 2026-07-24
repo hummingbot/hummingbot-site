@@ -196,7 +196,7 @@ While paper trading in Hummingbot doesn't require API keys, live trading does. T
  
 First, you need to generate API keys from the exchange you wish to connect. Each exchange has its own setup process.
 
-In this example, we'll connect **Binance API** keys. Head over to the [Binance Connector Docs](https://docs.hummingbot.org/exchanges/binance/#generate-api-keys) for instructions on how to generate API keys for [Binance](../../../exchanges/binance/index.md).
+In this example, we'll connect **Binance API** keys. Head over to the [Binance Connector Docs](https://hummingbot.org/exchanges/binance/#generate-api-keys) for instructions on how to generate API keys for [Binance](../../../exchanges/binance/index.md).
 
 Check the [Connectors list](../../../exchanges/index.md) for a list of exchanges that are currently integrated with Hummingbot
 

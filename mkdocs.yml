@@ -250,6 +250,7 @@ nav:
       - Debugging & Testing Connectors: connectors/connectors/debug.md
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
+      - hbot CLI: client/hbot-cli.md
       - Installation: client/installation.md
       - User Interface: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
@@ -323,7 +324,6 @@ nav:
     - 🔥 Kucoin: exchanges/kucoin/index.md
     - 🔥 OKX: exchanges/okx/index.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
-    - AscendEx: exchanges/ascendex/index.md
     - Architect: exchanges/architect/index.md
     - Aevo: exchanges/aevo/index.md
     - Bitstamp: exchanges/bitstamp/index.md
@@ -332,7 +332,6 @@ nav:
     - Bybit: exchanges/bybit.md
     - BTC Markets: exchanges/btc-markets.md
     - Coinbase: exchanges/coinbase.md
-    - Cube: exchanges/cube/index.md
     - HTX: exchanges/htx/index.md
     - Dexalot: exchanges/dexalot.md
     - dYdX: exchanges/dydx.md
@@ -352,7 +351,6 @@ nav:
     - Orca: exchanges/gateway/orca.md
     - Raydium: exchanges/gateway/raydium.md
     - Uniswap: exchanges/gateway/uniswap.md
-    - Vertex: exchanges/vertex.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
     - Bounty Lifecycle: bounties/lifecycle.md
@@ -362,6 +360,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.16.0: release-notes/2.16.0.md
     - 2.15.1: release-notes/2.15.1.md
     - 2.14.0: release-notes/2.14.0.md
     - 2.13.0: release-notes/2.13.0.md

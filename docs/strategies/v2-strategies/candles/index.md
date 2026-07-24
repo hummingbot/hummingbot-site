@@ -1,4 +1,4 @@
-![](./candles-a.jpg)
+![](candles-a.jpg)
 
 Candles allow user to compose a trailing window of real-time market data in OHLCV (Open, High, Low, Close, Volume) form from certain supported exchanges.
 

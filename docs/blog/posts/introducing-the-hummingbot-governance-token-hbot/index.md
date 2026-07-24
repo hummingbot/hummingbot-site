@@ -43,7 +43,7 @@ This activity also benefits exchanges connected to Hummingbot. Based on income f
 
 As community maintainers enable the Hummingbot ecosystem to scale, we expect maintenance costs to grow linearly with the number of connectors and strategies. However, we expect volume and fees accruing to the Foundation to rise exponentially as more individuals and professionals use Hummingbot, further enhancing the Foundation’s projected sustainability.
 
-![](./hbot-economics.png)
+![](hbot-economics.png)
 
 This sustainability allows CoinAlpha to hand over control over the Hummingbot codebase to its community. We are proud to announce that the next release will be the official Hummingbot 1.0.0 release in January.
 
@@ -54,7 +54,7 @@ Starting with this 1.0.0 release, Hummingbot users and community members will be
 The Hummingbot Governance Token (HBOT) has been deployed to the Ethereum blockchain with the following details:
 
 - **Issuer**: Hummingbot Foundation
-- **Contract Address**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb?ref=blog.hummingbot.org))
+- **Contract Address**: `0xE5097D9baeAFB89f9bcB78C9290d545dB5f9e9CB` ([Etherscan](https://etherscan.io/token/0xe5097d9baeafb89f9bcb78c9290d545db5f9e9cb))
 - **Name**: Hummingbot Governance Token
 - **Symbol**: HBOT
 - **Total Supply**: 1,000,000,000
@@ -80,7 +80,7 @@ HBOT token holders do not have any financial rights or any claims to the assets 
 
 The goal of the HBOT distribution plan is to disseminate HBOT tokens into the hands of stewards who have the long-term goal of expanding the Hummingbot project. With this in mind, the Hummingbot Foundation has authorized the distribution of HBOT tokens and future plans as follows:
 
-![](./Screen_Shot_2021-12-17_at_11.10.27_AM.png)
+![](Screen_Shot_2021-12-17_at_11.10.27_AM.png)
 
 We believe that this distribution plan ensures that existing stakeholders, who have been involved in the Hummingbot development process, have experience with the software and codebase, and have expertise in related fields to market-making bots (in trading, markets, and software development) will have a say in the future governance of Hummingbot. Meanwhile, future code contributors will also be engaged and have the opportunity to participate in Hummingbot governance.
 
@@ -157,7 +157,7 @@ The only official site where recipients can claim tokens is located at https://c
 
 After login, the Claim Site will display a user’s token allocation (if any), and users will be able to input an Ethereum wallet address where they would like to receive their HBOT tokens.
 
-![](./hbot-claim-site.png)
+![](hbot-claim-site.png)
 
 ## How to Access the Claim Site
 

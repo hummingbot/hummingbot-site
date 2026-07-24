@@ -35,7 +35,7 @@ Autonomous agents that control real capital need to be secure and trustworthy. A
 
 Condor is that system. It's built and maintained by [Hummingbot Foundation](https://hummingbot.org), a non-profit organization whose revenue is linked to usage of the Hummingbot open source software across our connected exchanges. Our incentive is simple: build the best, most trustworthy open source trading infrastructure possible.
 
-The Foundation safeguards against supply chain attacks through strict guidelines on library dependencies and continual review to minimize attack surface. For example, the recent [Hummingbot v2.14 release](/release-notes/2.14.0) removed Axios, a recently compromised HTTP library, from Gateway.
+The Foundation safeguards against supply chain attacks through strict guidelines on library dependencies and continual review to minimize attack surface. For example, the recent [Hummingbot v2.14 release](../../../release-notes/2.14.0.md) removed Axios, a recently compromised HTTP library, from Gateway.
 
 Unlike broader agent frameworks, Condor strictly separates reasoning from execution. This two-layer architecture provides key advantages:
 
@@ -56,7 +56,7 @@ Use natural language to place orders, swap tokens, and manage positions across c
 
 #### 2. Run Trading Bots
 
-Deploy and manage the same [Hummingbot scripts and controllers](/strategies/v2-strategies/controllers) that power algorithmic trading strategies. Each bot runs in a Docker container with its own configuration, and you can monitor logs, adjust parameters, and stop/start bots through the Condor interface.
+Deploy and manage the same [Hummingbot scripts and controllers](../../../strategies/v2-strategies/controllers/index.md) that power algorithmic trading strategies. Each bot runs in a Docker container with its own configuration, and you can monitor logs, adjust parameters, and stop/start bots through the Condor interface.
 
 #### 3. Run Trading Agents
 
@@ -127,7 +127,7 @@ Condor solves this by **strictly separating the two layers**:
 | **Probabilistic (Agent)** | Interprets market conditions, reasons about strategy, decides what to do | LLM (Claude, GPT, Gemini) |
 | **Deterministic (Execution)** | Converts decisions into orders with reliability and auditability | Hummingbot API |
 
-**The Execution Layer** provides deterministic infrastructure via [Hummingbot API](/hummingbot-api): data collection across 50+ exchanges, connectors to spot/perp/AMM exchanges plus Solana and EVM networks, configurable [executors](https://condor.hummingbot.org/executors/overview) that manage positions with precise parameters, and bot management for long-running strategies. The same instruction always produces the same result.
+**The Execution Layer** provides deterministic infrastructure via [Hummingbot API](../../../hummingbot-api/index.md): data collection across 50+ exchanges, connectors to spot/perp/AMM exchanges plus Solana and EVM networks, configurable [executors](https://condor.hummingbot.org/executors/overview) that manage positions with precise parameters, and bot management for long-running strategies. The same instruction always produces the same result.
 
 **The Agentic Layer** is probabilistic—given identical market conditions, the agent might reason differently. This variability enables adaptation and nuanced judgment. Each tick, the agent fetches market data, loads its learnings and context, reasons about strategy within defined limits, then executes decisions and records results.
 
@@ -147,7 +147,7 @@ flowchart LR
 
 The key insight: **different phases have different requirements**. Observe and Act must be deterministic—fetching data and placing orders should produce consistent results. Orient and Decide benefit from probabilistic reasoning—interpreting complex situations and weighing tradeoffs is where LLMs excel.
 
-The `/agent` command enters Agent Builder mode, which connects your LLM to Hummingbot API via [MCP tools](/mcp). Agent Builder mode guides you through creating a Trading Agent using this framework:
+The `/agent` command enters Agent Builder mode, which connects your LLM to Hummingbot API via [MCP tools](../../../mcp/index.md). Agent Builder mode guides you through creating a Trading Agent using this framework:
 
 ![](agent-builder.png)
 

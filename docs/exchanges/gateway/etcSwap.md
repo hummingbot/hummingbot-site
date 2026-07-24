@@ -8,8 +8,8 @@
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [2️⃣ AMM Connector](#2-amm-connector) | ✅ |
-| [3️⃣ Range AMM Connector](#3-range-amm-connector) | ✅ |
+| 2️⃣ AMM Connector | ✅ |
+| 3️⃣ Range AMM Connector | ✅ |
 
 ## ℹ️ Exchange Info
 

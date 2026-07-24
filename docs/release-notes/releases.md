@@ -2,8 +2,8 @@ Changes to the Hummingbot and Hummingbot Gateway codebases are made through [pul
 
 Only the following pull requests will be reviewed:
 
-* [Approved proposals](../about/proposals): Approved PRPs and pull requests to claim bounties approved by HIPs
-* [Bug fixes](../bounties/index): Fixes to outstanding bugs
+* [Approved proposals](../about/proposals.md): Approved PRPs and pull requests to claim bounties approved by HIPs
+* [Bug fixes](../bounties/index.md): Fixes to outstanding bugs
 
 ## Pull Request Status Board
 
@@ -26,7 +26,7 @@ After a pull request has been approved, it will go through the following develop
 
 ## Branches
 
-[![PRP code merge workflow](../assets/img/pull request proposal workflow.png)](../assets/img/pull request proposal workflow.png)
+[![PRP code merge workflow](../assets/img/pull%20request%20proposal%20workflow.png)](../assets/img/pull%20request%20proposal%20workflow.png)
 
 The Hummingbot code repository has three main branches related to the development cycle of each monthly release:
 

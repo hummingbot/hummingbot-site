@@ -6,9 +6,9 @@
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | Supports testnet
-| [🔀 Perp Connector](#perp-connector) | Not available
-|| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| 🔀 Perp Connector | Not available
+|| 🕯 Spot Candles Feed | Not available | 
+| 🕯 Perp Candles Feed | Not available | 
 | [📓 Connector Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) | ✅ |
 
 ## ℹ️ Exchange Info

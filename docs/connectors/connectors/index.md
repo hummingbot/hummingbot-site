@@ -3,7 +3,7 @@
 
 ## Exchange API Requirements
 
-See [Exchange API Requirements](../../connectors/connectors/build.md) for what the exchange API requirements needed to support the latest Hummingbot spot and perp connector standards.
+See [Exchange API Requirements](build.md) for what the exchange API requirements needed to support the latest Hummingbot spot and perp connector standards.
 
 ## Building Connectors
 
@@ -14,26 +14,26 @@ To gain a deeper understanding for how Hummingbot connectors work, we recommend 
 
 The following pages offer more details on various components and classes of a connector:
 
-- [Connector Architecture](../../connectors/connectors/architecture/index.md): Overview of how a connector works
-- [Order Lifecycle and Market Events](../../connectors/connectors/architecture/order_lifecycle.md): How a connector handles the lifecycle of an order
-- [Handling Rate Limits with API Throttler](../../connectors/connectors/api_throttler.md): Using the `AsyncThrottler` class to handle exchange rate limits
-- [Debug and Testing Connectors](../../connectors/connectors/debug.md): Various ways to test and debug a connector
+- [Connector Architecture](architecture/index.md): Overview of how a connector works
+- [Order Lifecycle and Market Events](architecture/order_lifecycle.md): How a connector handles the lifecycle of an order
+- [Handling Rate Limits with API Throttler](api_throttler.md): Using the `AsyncThrottler` class to handle exchange rate limits
+- [Debug and Testing Connectors](debug.md): Various ways to test and debug a connector
 
 ## Spot Connectors
 
 Spot connectors provide WebSocket and REST-based integrations to spot order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/exchange`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/exchange) folder.
 
 * [Spot Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Spot-Connector-v2-1-1cc43830938445c9974f43ef861d59f1): Use this template to build `spot` connectors that conform to the latest standard, which allows the connector to be used with [V2 Strategies](../../strategies/v2-strategies/index.md). 
-* [Spot Connector Developer Checklist](../../connectors/connectors/spot-connector-checklist.md): Similar to the Notion Template, this page provides a checklist of the key steps and the main components and functionalities of each class
-* [Spot Connector QA Checklist](../../connectors/connectors/test.md): Our QA team will conducts these tests before approving `spot` connectors
+* [Spot Connector Developer Checklist](spot-connector-checklist.md): Similar to the Notion Template, this page provides a checklist of the key steps and the main components and functionalities of each class
+* [Spot Connector QA Checklist](test.md): Our QA team will conducts these tests before approving `spot` connectors
 
 ## Perp Connectors
 
 Perp connectors provide WebSocket and REST-based integrations to perpetual futures order book-based markets offered by an exchange, which may be centralized (CEX) or decentralized (DEX). Each connector is a folder in the [`hummingbot/connector/derivative`](https://github.com/hummingbot/hummingbot/tree/master/hummingbot/connector/derivative) folder. By convention, these connector names end in `_perpetual`.
 
 * [Perp Connector v2.1 Notion Template](https://hummingbot-foundation.notion.site/Perp-Connector-v2-1-57d8391eb54c40929f77067355fd551e): Use this template to build `perp` connectors that conform to the latest standard, which allows the connector to be used with [V2 Strategies](../../strategies/v2-strategies/index.md).
-* [Perp Connector Developer Checklist](../../connectors/connectors/perp-connector-checklist.md): Similar to the Notion Template, this page provides a checklist of the key steps and the main components and functionalities of each class
-* [Perp Connector QA Checklist](../../connectors/connectors/test-perp.md): Our QA team will conducts these tests before approving `perp` connectors
+* [Perp Connector Developer Checklist](perp-connector-checklist.md): Similar to the Notion Template, this page provides a checklist of the key steps and the main components and functionalities of each class
+* [Perp Connector QA Checklist](test-perp.md): Our QA team will conducts these tests before approving `perp` connectors
 
 ## Contributing Connectors
 

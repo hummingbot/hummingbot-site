@@ -23,7 +23,7 @@ In addition, this strategy bridges the disparate worlds of centralized order boo
 
 ### How celo-arb works
 
-![](./celo-arb.png)
+![](celo-arb.png)
 
 Celo is a new Layer 1 blockchain that is building a new global financial system centered around an algorithmic stablecoin called cUSD. We are huge fans of Celo because they share the ultimate mission as Hummingbot: giving financial superpowers to everyone, no matter where they live or how much money they have. 
 

@@ -27,7 +27,7 @@ The objective of this article is to help you understand:
 
 If you already understand how [arbitrage](../what-is-arbitrage/index.md) and [pure market making](../what-is-inventory-risk/index.md) work, cross-exchange market making ("XEMM") becomes really simple: it's simply a hybrid of the two.
 
-![](./guitars.jpg)
+![](guitars.jpg)
 
 
 ### So what is cross-exchange market making?
@@ -77,7 +77,7 @@ A financial environment where the same asset is traded in different marketplaces
 
 This can be easily noticed by looking at the differences between bid and ask prices offered on each order book, as can be seen on the screenshot of the BTC/USDT order book on two different exchanges at the moment in time:
 
-![](./image2.png)
+![](image2.png)
 
 Bid prices:
 
@@ -129,7 +129,7 @@ One way to address this operational inefficiency is to maintain an inventory on 
 
 This might sound contradictory to what was explained in the above examples since one of the goals of the **cross-exchange market making** strategy is to avoid exposure to inventory risk, but let me explain it further.
 
-![](./image3.png)
+![](image3.png)
 
 The figure above shows the state of the market maker's account at the moment he starts the operation. As you can see, he begins with a total inventory of 20 units of the Token A, split across two exchanges.
 
@@ -139,7 +139,7 @@ This will allow the trader to create a position on the Exchange B order book, lo
 
 Now, let's see what happens the moment his sell offer is taken by another buyer:
 
-![](./image4.png)
+![](image4.png)
 
 At the exact moment his maker order is filled on the Exchange B, he will become a taker of the Best Offer on Exchange A.  As you can see in the figure above, the total amount of Token A on both exchanges is still the same (20), while his total USD balance has increased by $1.
 
@@ -181,7 +181,7 @@ As mentioned above, there is a lot of fragmentation in the cryptocurrency market
 
 Let's take a look, for example, at Travala (AVA) the most traded token on Binance DEX, and compare its bid-ask market spread with the centralized Binance.com, as shown on [Coingecko](https://www.coingecko.com/pt/moedas/travala#markets):
 
-![](./image5.png)
+![](image5.png)
 
 Binance DEX has less liquidity and lower trade volume than Binance.com which is reflected in a bid-ask spread on Binance DEX that is nearly 5x that on Binance.com.
 
@@ -202,7 +202,7 @@ With today's article, we presented all three strategies that can be implemented 
 
 Here is a comparison between these strategies:
 
-![](./image6.png)
+![](image6.png)
 
 There is still a lot more content planned for the Hummingbot Academy that will cover the details and inner workings of each one, helping you find and create a strategy that fits better with your trading plans, so make sure to check our blog for updates every week.
 

@@ -14,7 +14,7 @@ categories:
 
 As 2023 winds to a close, [reported volumes](https://p.datadoghq.com/sb/a96a744f5-a15479d77992ccba0d23aecfd4c87a52) from Hummingbot clients have reached an all-time high of **$140M per day**. Widespread usage of Hummingbot across **114 exchange venues** spanning both official releases and unofficial forks shows that Hummingbot is becoming the industry standard for market maker connectivity.
 
-![](./volumes.png)
+![](volumes.png)
 
 Since it has been two eventful years have passed since the inception of the Hummingbot Foundation and the issuance of the HBOT token, we wanted to update the [original Hummingbot Foundation whitepaper](../../../about/whitepaper.md). Specifically, this post has three objectives:
 
@@ -44,7 +44,7 @@ However, the challenge for bazaar-style open source projects often lies in scali
 
 The Foundation aims to overcome this challenge by enabling key stakeholders of the Hummingbot ecosystem to govern how it evolves using the [HBOT token](https://www.coingecko.com/en/coins/hummingbot). In accordance with budget allocation decisions made by HBOT holders via [Snapshot proposals](https://snapshot.org/#/hbot.eth), the Foundation distributes HBOT tokens as compensation to maintainers and contributors, thus disseminating the token broadly throughout the Hummingbot user community.
 
-![flywheel.png](./flywheel.png)
+![flywheel.png](flywheel.png)
 
 As described in the [Hummingbot Foundation whitepaper](../../../about/whitepaper.md), the key stakeholders of the Hummingbot ecosystem are:
 
@@ -71,9 +71,9 @@ To build a durable, long-lasting organization that can balance the needs of thes
 
 Since the majority of the Foundation's revenues come from fee share partnerships with exchanges, revenues have dropped sharply since 2022 due to the crypto bear market.
 
-![](./2022.png)
+![](2022.png)
 
-![](./2023.png)
+![](2023.png)
 
 In response, the Foundation has reduced headcount and made operations more efficient, while still being able to maintain a consistent velocity of releases and supporting new exchange and protocol connector partnerships.
 
@@ -117,7 +117,7 @@ Based on the current level of activity on [Bounties Board](https://github.com/or
 
 Bounties have been used to fund specific tasks that improve the usability and functionality of an exchange or chain connector. While the Hummingbot Foundation will proactively create bounties for its partners and sponsors, any HBOT holder may [propose](../../../about/proposals.md) new bounties.
 
-![](./bounties.jpg)
+![](bounties.jpg)
 
 ---
 

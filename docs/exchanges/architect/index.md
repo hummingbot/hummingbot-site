@@ -5,7 +5,7 @@
 
 | Component | Status | Notes            | 
 | --------- | ------ |------------------|
-| [🔀 Spot Connector](#spot-connector) | Not available |
+| 🔀 Spot Connector | Not available |
 | [🔀 Perp Connector](#perp-connector) | ✅ | Supports sandbox |
 
 ## ℹ️ Exchange Info

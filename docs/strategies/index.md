@@ -1,6 +1,6 @@
 ## What is a Hummingbot Strategy?
 
-![](../strategies/v2-strategies/diagrams/8.png)
+![](v2-strategies/diagrams/8.png)
 
 Like a computer program, an algorithmic trading strategy is a set of automated processes that executes repeatedly:
 
@@ -16,15 +16,15 @@ To run a strategy, a user selects a strategy template, defines its input paramet
 
 ## Recommended Strategies: V2 Framework
 
-Starting in 2023, Hummingbot Foundation began to iteratively introduce a new framework, called **Strategy V2**. The new framework allows you to build powerful, dynamic strategies using Lego-like components. **We highly recommend using the V2 Framework for all new strategies due to its enhanced modularity, flexibility, and scalability.** To learn more, check out [Architecture](../strategies/v2-strategies/index.md).
+Starting in 2023, Hummingbot Foundation began to iteratively introduce a new framework, called **Strategy V2**. The new framework allows you to build powerful, dynamic strategies using Lego-like components. **We highly recommend using the V2 Framework for all new strategies due to its enhanced modularity, flexibility, and scalability.** To learn more, check out [Architecture](v2-strategies/index.md).
 
 There are three core V2 components. Understanding how they differ helps you choose the right one:
 
-**[Executors](../strategies/v2-strategies/executors/index.md)** automate a discrete trading workflow — they manage orders for a specific task (e.g., open a position, execute a grid, provide liquidity) and are designed to **start and finish**. Executors can be created directly via the Hummingbot API without a running script. They are the building blocks that controllers orchestrate.
+**[Executors](v2-strategies/executors/index.md)** automate a discrete trading workflow — they manage orders for a specific task (e.g., open a position, execute a grid, provide liquidity) and are designed to **start and finish**. Executors can be created directly via the Hummingbot API without a running script. They are the building blocks that controllers orchestrate.
 
-**[Scripts](../strategies/scripts/index.md)** are simple Python files that contain all strategy logic in one place. All scripts now inherit from `StrategyV2Base`, giving them access to Executors and the Market Data Provider. Scripts are **ideal for learning, testing, and prototyping** simple strategies. After you create a YAML config with `create --v2-config`, start with `start --v2 <config_file_name.yml>` in the Hummingbot client.
+**[Scripts](scripts/index.md)** are simple Python files that contain all strategy logic in one place. All scripts now inherit from `StrategyV2Base`, giving them access to Executors and the Market Data Provider. Scripts are **ideal for learning, testing, and prototyping** simple strategies. After you create a YAML config with `create --v2-config`, start with `start --v2 <config_file_name.yml>` in the Hummingbot client.
 
-**[Controllers](../strategies/v2-strategies/controllers/index.md)** are **production-grade**, modular sub-strategies loaded by the `v2_with_controllers.py` script. A single bot instance can run multiple controllers simultaneously — each trading different pairs or using different logic. Controllers are more configurable, reusable, and suited for advanced long-running deployments.
+**[Controllers](v2-strategies/controllers/index.md)** are **production-grade**, modular sub-strategies loaded by the `v2_with_controllers.py` script. A single bot instance can run multiple controllers simultaneously — each trading different pairs or using different logic. Controllers are more configurable, reusable, and suited for advanced long-running deployments.
 
 This table may help you decide which component to use:
 
@@ -43,7 +43,7 @@ When it launched in 2019, Hummingbot pioneered the concept of configurable templ
 
 These V1 strategies are still supported for users who prefer them or need to maintain older bots. However, new development and features are primarily focused on the V2 framework.
 
-Users can access these legacy strategy templates at the [Strategies V1](../strategies/v1-strategies/index.md) page.
+Users can access these legacy strategy templates at the [Strategies V1](v1-strategies/index.md) page.
 
 ## Learn Algo Trading and Market Making
 

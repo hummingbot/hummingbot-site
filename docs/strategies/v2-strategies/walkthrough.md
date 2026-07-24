@@ -52,4 +52,4 @@ After there have been trades, you can use the [History](../../client/history.md)
 
 We encourage you check out [Dashboard](../../dashboard/index.md), the new entry point for Hummingbot users that will be officially launched at the [Hummingbot 2.0 launch event](https://lu.ma/ieyvhcft).
 
-Also, see [Walkthrough - Controller](./walkthrough-controller.md) to learn how to run scripts that deploy strategies as [Controllers](controllers/index.md).
+Also, see [Walkthrough - Controller](walkthrough-controller.md) to learn how to run scripts that deploy strategies as [Controllers](controllers/index.md).

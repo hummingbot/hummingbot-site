@@ -2,7 +2,7 @@
 !!! tip
     You can configure and deploy controllers using the [Hummingbot API](../../hummingbot-api/index.md) and manage them via [Condor](../../condor/index.md) (Telegram) or [Hummingbot MCP](../../mcp/index.md) (AI assistants).
 
-In this more complex example, the strategy logic is housed in a [Controller](../v2-strategies/controllers/index.md), and the user generates a controller configuration that is run with a generic script, which acts as a controller loader.
+In this more complex example, the strategy logic is housed in a [Controller](controllers/index.md), and the user generates a controller configuration that is run with a generic script, which acts as a controller loader.
 
 This allows users to run multiple configurations, as well as multiple controllers, in a single script.
 

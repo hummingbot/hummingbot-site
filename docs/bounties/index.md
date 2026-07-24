@@ -57,7 +57,7 @@ Get your exchange integrated with Hummingbot through our comprehensive bounty ma
 - **BSC**: `0xE517b826a26B439eCE92f3220628eC007049d915`  
 - **Solana**: `5bhQNYaDEwEqjcjsuRJRuGyqbchzcDtYK49e593Wuc8i`
 
-[View Bounty Lifecycle →](./lifecycle.md){: .md-button .md-button--primary }
+[View Bounty Lifecycle →](lifecycle.md){: .md-button .md-button--primary }
 
 ## For Developers
 
@@ -92,11 +92,11 @@ See [Building CLOB Connectors](../connectors/connectors/index.md) and [Building 
 - **Paid**: Compensation distributed
 
 [View Open Bounties →](https://github.com/orgs/hummingbot/projects/7/views/1){: .md-button .md-button--primary }
-[Contributors Guide →](./contributors.md){: .md-button }
+[Contributors Guide →](contributors.md){: .md-button }
 
 ### Bounties Board
 
-![bounty](./bounty-board.png)
+![bounty](bounty-board.png)
 
 The [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) is the central hub for all connector bounty activity. It provides transparency into:
 
@@ -107,6 +107,6 @@ The [Bounties Board](https://github.com/orgs/hummingbot/projects/7/views/1) is t
 
 ## Learn More
 
-- [Bounty Lifecycle](./lifecycle.md) - Detailed process flow
-- [Contributors Guide](./contributors.md) - For developers
-- [FAQ](./faq.md) - Common questions
+- [Bounty Lifecycle](lifecycle.md) - Detailed process flow
+- [Contributors Guide](contributors.md) - For developers
+- [FAQ](faq.md) - Common questions

@@ -15,3 +15,7 @@
 /getting-started       /docs                            301
 /academy               /blog/category/academy           301
 /academy-content/*     /blog/:splat               301
+/blog/posts/technical-roadmap-2023/    /blog/posts/hummingbot-2023-technical-roadmap/    301
+/blog/posts/hummingbot-dashboard-community-project/    /blog/posts/kicking-off-the-hummingbot-dashboard-community-project/    301
+/blog/posts/epoch-3-polls/    /blog/posts/epoch-3-polls-recap/    301
+/blog/posts/changes-to-hummingbot-maintenance-and-governance-processes/    /blog/posts/changes-to-hummingbot-maintenance-and-governance/    301

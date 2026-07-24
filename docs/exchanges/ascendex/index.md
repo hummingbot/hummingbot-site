@@ -1,3 +1,6 @@
+!!! warning "Connector Removed"
+    The **AscendEx** connector was removed from Hummingbot in [PR #8376](https://github.com/hummingbot/hummingbot/pull/8376) (post-v2.15.0). AscendEx has closed down. This page is kept for historical reference.
+
 !!! tip "Support Hummingbot"
     Hummingbot Foundation has a fee share partnership with Ascendex. When you use our software to trade on Ascendex, a custom API header tells Ascendex that the trade was executed using Hummingbot, so they share a portion of your fees with us, at no cost to you. To support us, create an account using our [Ascendex referral link](https://ascendex.com/register?inviteCode=UEIXNXKW) and enter that account's API keys into Hummingbot and run bots! Thanks for your support! 🙏
 
@@ -9,9 +12,9 @@
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.0 | Yes | Supports `MARKET` order type
-| [🔀 Perp Connector](#perp-connector) | Not built | | |API only allows institutional accounts |
+| 🔀 Perp Connector | Not built | | |API only allows institutional accounts |
 | [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ |
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not built |
+| 🕯 Perp Candles Feed | Not built |
 
 ## ℹ️ Exchange Info
 

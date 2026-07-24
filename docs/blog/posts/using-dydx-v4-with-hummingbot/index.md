@@ -76,7 +76,7 @@ Once available, copy the secret phrase and store it safely in a secure location.
 !!! note "Special dYdX Build"
     Currently, there are dependency conflicts between the dYdX v4 connector and the other Hummingbot exchange connectors. For this reason, we maintain a dedicated build of Hummingbot that is optimized for use with dYdX v4. Below are simplified instructions to get you set up quickly, whether you're using Docker or Source.
 
-Below, we show you how to add your dYdX credentials to the command-line Hummingbot client. If you prefer to use dYdX v4 with the new Hummingbot Dashboard, go to [Using dYdX with Dashboard](#using-dydx-with-dashboard).
+Below, we show you how to add your dYdX credentials to the command-line Hummingbot client. If you prefer to use dYdX v4 with the new Hummingbot Dashboard, go to [Using dYdX with Dashboard](#using-dydx-with-hummingbot-dashboard).
 
 ### Docker Setup
 
