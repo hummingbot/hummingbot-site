@@ -29,6 +29,8 @@
 
 Log in to your lighter account and navigate to [Homepage](https://lighter.xyz).
 
+1. **Log in** to your Lighter account at <https://app.lighter.xyz/>.
+
 [![Screen 1](ligher-login-1.png)](ligher-login-1.png)
 
 [![Screen 2](ligher-login-2.png)](ligher-login-2.png)
@@ -39,19 +41,31 @@ Log in to your lighter account and navigate to [Homepage](https://lighter.xyz).
 
 Click **Create New API Key**.
 
+2. In the top menu, go to **Tools -> API Keys**.
+
 [![Settings page](settings-1.png)](settings-1.png)
 
 Configure your API key:
 
-- Select Generate New Api Key
+3. Click **Generate API Key** and enter your desired **API Key Index**.
+
+    !!! note
+        Indexes 0-3 are reserved (Desktop and Mobile). You can create up to 251 keys per account using **indexes 4-254**.
 
 [![Lighter Apikey generation](ligher-apikey.png)](ligher-apikey.png)
 
 **Step 3**
 
-- Select Generate
+4. Click **Generate**, then **sign the request** in your connected wallet.
 
 [![Lighter Apikey Creation](ligher-key-creation.png)](ligher-key-creation.png)
+
+5. The dashboard will display your **API Key Index**, **Public Key**, and **Private Key**.
+
+    !!! warning
+        Save your **Private Key** somewhere safe immediately - it is only shown once. Only use it in trusted environments.
+
+    - Remember your **API Key Index** - you will need it when connecting.
 
 - Click Confirm if using metamask
 
@@ -61,8 +75,16 @@ Configure your API key:
 
 [![Lighter Apikey Creation](ligher-key-created.png)](ligher-key-created.png)
 
-**Step 4**
+Your **Account Index** is required to connect. To find it:
 
+- Click your wallet address in the **top-right corner** of the Lighter app.
+- Click **Explorer** - your Account Index will be shown on the account page.
+- Alternatively, open the explorer directly at <https://app.lighter.xyz/explorer> and search using your L1 wallet address.
+
+!!! note
+    The same API keys can be used for both spot and perpetual trading.
+
+**Step 4**
 Go to asset page after making deposit
 
 [![Asset Configuration](ligher-asset-1.png)](ligher-asset-1.png)
@@ -155,3 +177,7 @@ This connector supports the following `OrderType` constants:
 This connector supports the following position modes:
 
 - One-way
+
+### Paper Trading
+
+This exchange offers a testnet environment. After creating an account and API keys on the Lighter testnet, connect using `connect lighter_perpetual_testnet` inside the Hummingbot client.
