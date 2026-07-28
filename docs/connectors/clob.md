@@ -40,6 +40,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Coinbase](../exchanges/coinbase.md)               |  | ✓ |  |  |
 | [Dexalot](../exchanges/dexalot.md)           | | ✓ | ✓ | [Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) |
 | [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
+| [Lambdaplex](../exchanges/lambdaplex.md) | | ✓     | | | 
 | [Lighter](../exchanges/lighter.md)                 |  | ✓ | ✓ |  |
 | [MEXC](../exchanges/mexc/index.md)                 |  | ✓ |  |  |
 | [NDAX](../exchanges/ndax.md)                       |  | ✓ |  |  |
