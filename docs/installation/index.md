@@ -32,7 +32,7 @@ graph TB
 | [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [via Condor](condor.md) | [Source](../hummingbot-api/installation.md) |
 | [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Quickstart](hummingbot-client.md) | [Source](../client/installation.md) |
 | [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | - | [Installation](../gateway/installation.md) |
-| [**Condor**](https://github.com/hummingbot/condor) | Telegram bot for monitoring and controlling Hummingbot instances | [Quickstart](condor.md) | [Docs](https://condor.hummingbot.org) |
+| [**Condor**](https://github.com/hummingbot/condor) | AI harness for building and running agentic strategies and bot instances | [Quickstart](condor.md) | [Docs](https://condor.hummingbot.org) |
 
 ## Recommended Paths
 
@@ -49,12 +49,12 @@ The legacy CLI-based trading client. Best for:
 
 ### Condor
 
-The modern Telegram-based interface for Trading Agents. Best for:
+The AI harness for building and running agentic strategies and bot instances. Best for:
 
 - **Trading Agents** - Build and run autonomous trading agents
 - **Multiple instances** - Deploy and manage many bots simultaneously
 - **Production environments** - Running on cloud servers (AWS, Digital Ocean, etc.)
-- **Modern interfaces** - Control via Telegram or AI agents via MCP
+- **Modern interfaces** - Control via Telegram or the web dashboard
 
 [**Condor Quickstart →**](condor.md)
 

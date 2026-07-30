@@ -1,6 +1,6 @@
 # Condor Quickstart
 
-**Condor** is a Telegram-based interface for managing Trading Agents and executing trades across centralized and decentralized exchanges. It uses the Hummingbot API as its execution backend.
+**Condor** is an open source harness for building and running autonomous **Trading Agents**. It connects LLM-powered decision-making to deterministic trade execution via the [Hummingbot API](../hummingbot-api/index.md), enabling traders to deploy AI agents that can observe markets, reason about strategy, and execute trades across 50+ exchanges and blockchains.
 
 For full installation instructions, see the Condor documentation:
 
@@ -22,7 +22,7 @@ The install script will prompt for:
 
 | Component | Description |
 |-----------|-------------|
-| **Condor** | Telegram bot for monitoring and control |
+| **Condor** | AI harness with Telegram bot and web dashboard |
 | **Hummingbot API** | REST API backend (port 8000) |
 | **PostgreSQL** | Database for trading data |
 | **EMQX** | Message broker for bot communication |
