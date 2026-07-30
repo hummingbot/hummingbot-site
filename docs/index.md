@@ -65,6 +65,14 @@ hide:
     <img src="/assets/logos/backpack-dark.png" alt="Backpack" class="dark-logo"/>
     <img src="/assets/logos/backpack-light.png" alt="Backpack" class="light-logo"/>
   </div>
+  <div class="flex-item">
+    <img src="/assets/logos/orca-dark.png" alt="Orca" class="dark-logo"/>
+    <img src="/assets/logos/orca-light.png" alt="Orca" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/meteora-dark.png" alt="Meteora" class="dark-logo"/>
+    <img src="/assets/logos/meteora-light.png" alt="Meteora" class="light-logo"/>
+  </div>
 </div>
 
 ### See [Exchanges](exchanges/index.md) for how Hummingbot Foundation works with these institutions.

@@ -528,7 +528,7 @@ Causes a delay when opening search, not optimal */
 /* Exchange Grid */
 .exchange-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px 40px;
   align-items: center;
   justify-items: center;
