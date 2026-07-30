@@ -72,25 +72,35 @@ On first use, `hbot` prompts for a keystore password (or read it from `HBOT_PASS
 export HBOT_PASSWORD='your-secure-password'   # optional: avoid prompts in scripts
 ```
 
-## Step 4: Connect an Exchange
+## Step 4: Run a Paper Trading Strategy
+
+Run your first bot with the `simple_pmm` market making script on a **paper trade** connector — it simulates trading against live Binance market data, so **no API keys are required**:
 
 ```bash
-hbot connect binance --fields    # see required key fields
-hbot connect binance             # add API keys
-hbot balance                     # confirm balances
-```
-
-## Step 5: Create and Run a Strategy
-
-```bash
-# Create a V2 controller config
-hbot create pmm_simple --name conf_eth.yml \
-  --set connector_name=binance --set trading_pair=ETH-USDT
+# Create a config for the simple_pmm script
+hbot create simple_pmm --name conf_eth.yml \
+  --set exchange=binance_paper_trade --set trading_pair=ETH-USDT
 
 # Start and monitor
 hbot start
 hbot status
 hbot logs -f
+```
+
+`hbot status` shows your simulated balances and the live bid/ask maker orders the bot maintains.
+
+## Step 5: Connect a Live Exchange
+
+When you're ready to trade with real funds, add your exchange API keys and re-create the config with a live connector:
+
+```bash
+hbot connect binance --fields    # see required key fields
+hbot connect binance             # add API keys
+hbot balance                     # confirm balances
+
+hbot create simple_pmm --name conf_eth_live.yml \
+  --set exchange=binance --set trading_pair=ETH-USDT
+hbot start --replace
 ```
 
 Common commands: `hbot stop`, `hbot history`, `hbot config`. See the [`hbot` CLI guide](../client/hbot-cli.md) for the full command reference.
