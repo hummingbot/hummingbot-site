@@ -6,9 +6,8 @@ The Hummingbot ecosystem consists of several repositories that work together to 
 
 ```mermaid
 graph TB
-    subgraph "User Interfaces"
+    subgraph "AI Harness"
         CONDOR[Condor]
-        MCP[MCP<br/>AI Agents]
     end
 
     subgraph "Server"
@@ -21,7 +20,6 @@ graph TB
     end
 
     CONDOR --> API
-    MCP --> API
     API --> CLIENT
     API --> GATEWAY
     CLIENT <--> GATEWAY
@@ -35,10 +33,6 @@ graph TB
 | [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Quickstart](hummingbot-client.md) | [Source](../client/installation.md) |
 | [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | - | [Installation](../gateway/installation.md) |
 | [**Condor**](https://github.com/hummingbot/condor) | Telegram bot for monitoring and controlling Hummingbot instances | [Quickstart](condor.md) | [Docs](https://condor.hummingbot.org) |
-| [**MCP Server**](https://github.com/hummingbot/mcp) | Connects AI assistants (Claude, Gemini, ChatGPT) to Hummingbot | - | [Installation](../mcp/installation.md) |
-| [**Skills**](https://github.com/hummingbot/skills) | Agent skills for AI assistants to manage strategies, executors, and infrastructure | - | [GitHub](https://github.com/hummingbot/skills) |
-| [**Dashboard**](https://github.com/hummingbot/dashboard) | Web-based UI for bot management (deprecated, use Condor) | - | [GitHub](https://github.com/hummingbot/dashboard) |
-| [**Quants Lab**](https://github.com/hummingbot/quants-lab) | Research environment for backtesting and strategy analysis | - | [GitHub](https://github.com/hummingbot/quants-lab) |
 
 ## Recommended Paths
 

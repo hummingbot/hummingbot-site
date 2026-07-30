@@ -25,7 +25,7 @@ Uniswap operates on Ethereum and EVM-compatible networks.
 
 | Chain | Networks | 
 | ----- | -------- |
-| `ethereum` | `mainnet`, `arbitrum`, `optimism`, `base`, `polygon`, `avalanche`, `bsc`, `celo`
+| `ethereum` | `mainnet`, `arbitrum`, `optimism`, `base`, `polygon`, `avalanche`, `bsc`, `celo`, `unichain`, `robinhoodchain`
 
 See [Gateway Connect](../../gateway/commands.md#gateway-connect) for instructions on connecting your wallet to Gateway.
 

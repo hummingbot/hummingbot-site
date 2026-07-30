@@ -11,15 +11,15 @@ hide:
 
 <div class="stat-grid">
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">$36B</span>
+    <span class="stat-value">$47B+</span>
     <span class="stat-label">Total Trade Volume</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">100K+</span>
+    <span class="stat-value">111K+</span>
     <span class="stat-label">Hummingbot Instances</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">300+</span>
+    <span class="stat-value">318</span>
     <span class="stat-label">Connectors</span>
   </a>
 </div>
@@ -57,6 +57,14 @@ hide:
     <img src="/assets/logos/kucoin-logo-dark.png" alt="Kucoin" class="dark-logo"/>
     <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
   </div>
+  <div class="flex-item">
+    <img src="/assets/logos/bitget-dark.png" alt="Bitget" class="dark-logo"/>
+    <img src="/assets/logos/bitget-light.png" alt="Bitget" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/backpack-dark.png" alt="Backpack" class="dark-logo"/>
+    <img src="/assets/logos/backpack-light.png" alt="Backpack" class="light-logo"/>
+  </div>
 </div>
 
 ### See [Exchanges](exchanges/index.md) for how Hummingbot Foundation works with these institutions.
@@ -69,9 +77,8 @@ hide:
 
 ```mermaid
 graph TB
-    subgraph "User Interfaces"
+    subgraph "AI Harness"
         CONDOR[Condor]
-        MCP[MCP<br/>AI Agents]
     end
 
     subgraph "Server"
@@ -84,7 +91,6 @@ graph TB
     end
 
     CONDOR --> API
-    MCP --> API
     API --> CLIENT
     API --> GATEWAY
     CLIENT <--> GATEWAY

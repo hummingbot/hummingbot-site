@@ -8,11 +8,13 @@ For source installation or detailed configuration options, see [Client Installat
 
 By the end of this guide, you'll have:
 
-- **Hummingbot Client** — algorithmic trading bot for centralized exchanges (CEX)
-- **`hbot` CLI** — recommended non-interactive command line for running bots
+- **Hummingbot Client + `hbot` CLI** — algorithmic trading bot for centralized exchanges (CEX), with `hbot` as the recommended non-interactive command line for running bots
 - **Gateway** (optional) — middleware for trading on decentralized exchanges (DEX) like Uniswap, PancakeSwap, and Raydium
 
 This setup is best for running a single bot instance on your local machine or learning how Hummingbot works.
+
+!!! tip "`hbot`: a new entry point into the Hummingbot engine"
+    Introduced in v2.16.0, `hbot` drives the same Hummingbot engine as the classic interactive client, but through a non-interactive command line — making it suitable for scripts, CI, and agent-driven workflows. See the [`hbot` CLI](../client/hbot-cli.md) reference for all commands.
 
 ## Prerequisites
 

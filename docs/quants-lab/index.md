@@ -1,5 +1,8 @@
 # Quants Lab
 
+!!! warning "Not Actively Maintained"
+    Quants Lab is no longer actively maintained by Hummingbot Foundation, but the open source [repo](https://github.com/hummingbot/quants-lab) remains available and usable. For scheduled research, screening, and reporting workflows, we recommend [Condor](../condor/index.md) **routines** — deterministic workflows for indicators, webhooks, and alerts.
+
 Quants Lab contains interactive notebooks and task schedulers for quantitative trading research and development. It provides comprehensive tools for data collection, backtesting, strategy development, and automated task management.
 
 **GitHub Repository**: [github.com/hummingbot/quants-lab](https://github.com/hummingbot/quants-lab)

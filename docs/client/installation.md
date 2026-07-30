@@ -56,6 +56,13 @@ git clone https://github.com/hummingbot/hummingbot.git
 cd hummingbot
 make setup
 make deploy
+make link-cli
+```
+
+`make link-cli` adds the [`hbot`](hbot-cli.md) command to your host, so you can run and monitor the bot non-interactively:
+
+```bash
+hbot --version
 ```
 
 Attach to the running container:
@@ -74,6 +81,7 @@ You should see the Hummingbot welcome screen:
 |---------|-------------|
 | `make setup` | Configure environment (prompts for Gateway) |
 | `make deploy` | Start Hummingbot in background |
+| `make link-cli` | Add the [`hbot`](hbot-cli.md) command to your host |
 | `docker attach hummingbot` | Attach to running instance |
 | `docker compose down` | Stop Hummingbot |
 | `docker compose logs -f` | View logs |

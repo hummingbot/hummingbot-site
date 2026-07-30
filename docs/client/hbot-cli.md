@@ -7,32 +7,35 @@ The classic **interactive client** (`docker attach hummingbot`) is still availab
 !!! note "Gateway / DEX workflows"
     `hbot` does **not** include `gateway` commands yet. For DEX wallet setup, swaps, and LP management, use the [interactive client's Gateway commands](commands-shortcuts.md#gateway-commands) or [Hummingbot API](../hummingbot-api/index.md).
 
-## Install
+## Add `hbot` command
 
-=== "Docker (recommended)"
+First install Hummingbot itself — see the [Hummingbot Client Quickstart](../installation/hummingbot-client.md) or [Client Installation](installation.md) for Docker and source instructions.
 
-    ```bash
-    git clone https://github.com/hummingbot/hummingbot.git
-    cd hummingbot
-    make setup
-    make deploy
-    make link-cli    # installs the host `hbot` command
-    hbot --version
-    ```
+Then, from your `hummingbot` folder, add the `hbot` command to your host with:
 
-    `make link-cli` installs a wrapper that runs `hbot` inside the Docker container via `docker exec`. Your `conf/`, `data/`, and `logs/` directories are bind-mounted into the container.
+```bash
+make link-cli
+```
 
-=== "Source"
+This creates a symlink named `hbot` (in `/usr/local/bin` or `~/.local/bin`, whichever is writable) pointing to `bin/hbot-host` in your Hummingbot folder — a wrapper that dispatches commands to your source conda env or the Docker container. To use a different location, pass `make link-cli HBOT_BIN=$HOME/.local/bin`.
 
-    ```bash
-    git clone https://github.com/hummingbot/hummingbot.git
-    cd hummingbot
-    make install     # creates conda env + compiles extensions
-    conda activate hummingbot
-    hbot --version
-    ```
+For source installs, `hbot` is also available directly inside the conda env (`conda activate hummingbot`) without linking.
 
-    For development, `make run` still launches the **interactive** client. Use `hbot` directly for the non-interactive CLI.
+**Check the link** — verify `hbot` resolves to the install you intend, especially if you have multiple Hummingbot folders:
+
+```bash
+which hbot               # symlink location, e.g. /usr/local/bin/hbot
+ls -l "$(which hbot)"    # should point to <your hummingbot folder>/bin/hbot-host
+hbot --version
+```
+
+If it points at the wrong folder, re-run `make link-cli` from the correct one to repoint it.
+
+**Remove the link:**
+
+```bash
+rm "$(which hbot)"
+```
 
 ## Quickstart
 

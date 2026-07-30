@@ -11,26 +11,17 @@ Gateway provides standardized connectors for interacting with decentralized exch
 
 | Protocol | Chain | Router | AMM | CLMM | Description |
 |----------|-------|--------|-----|------|---------------|
-| **[Jupiter](../exchanges/gateway/jupiter.md)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana |
+| **[Jupiter](../exchanges/gateway/jupiter.md)** | Solana | ✅ | ❌ | ❌ | Leading DEX aggregator on Solana (default router) |
+| **[Titan](../exchanges/gateway/jupiter.md#other-solana-routers)** | Solana | ✅ | ❌ | ❌ | Solana swap router (new in v2.16.0) |
+| **[DFlow](../exchanges/gateway/jupiter.md#other-solana-routers)** | Solana | ✅ | ❌ | ❌ | Solana swap router (new in v2.16.0) |
+| **[OKX DEX](../exchanges/gateway/jupiter.md#other-solana-routers)** | Solana | ✅ | ❌ | ❌ | Solana swap router (new in v2.16.0) |
 | **[Meteora](../exchanges/gateway/meteora.md)** | Solana | ❌ | ❌ | ✅ | Supports for Dynamic Liquidity Market Maker (DLMM) |
 | **[Raydium](../exchanges/gateway/raydium.md)** | Solana | ❌ | ✅ | ✅ | Supports for Standard and Concentrated Pools |
 | **[Orca](../exchanges/gateway/orca.md)** | Solana | ❌ | ❌ | ✅ | Supports Standard CLMM Pools |
 | **[Uniswap](../exchanges/gateway/uniswap.md)** | Ethereum | ✅ | ✅ | ✅ | Support for V2, V3, and Universal Router |
 | **[PancakeSwap](../exchanges/gateway/pancakeswap.md)** | Ethereum/BNB | ✅ | ✅ | ✅ | Support for V2, V3, and Smart Router |
 
-### Legacy Connectors
-
-The following connectors are available in legacy versions but need to be upgraded to the v2.8.0 standard:
-
-| Protocol | Chain | Router | AMM | CLMM | Bounty |
-|----------|-------|--------|-----|------|--------|
-| **[Balancer](../exchanges/gateway/balancer.md)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7653](https://github.com/hummingbot/hummingbot/issues/7653) |
-| **[Curve](../exchanges/gateway/curve.md)** | Ethereum/EVM | ❌ | ✅ | ❌ | [#7652](https://github.com/hummingbot/hummingbot/issues/7652) |
-| **[SushiSwap](../exchanges/gateway/sushiswap.md)** | Ethereum/EVM | ✅ | ✅ | ✅ | - |
-| **[QuickSwap](../exchanges/gateway/quickswap.md)** | Polygon | ❌ | ✅ | ✅ | - |
-| **[TraderJoe](../exchanges/gateway/traderjoe.md)** | Avalanche | ❌ | ✅ | ✅ | - |
-| **[ETCSwap](../exchanges/gateway/etcSwap.md)** | Ethereum Classic | ❌ | ✅ | ✅ | - |
-
+The `swapProvider` setting in each network's configuration determines which router serves the unified `/trading/swap` endpoints. See [How to Change Routers](../exchanges/gateway/jupiter.md#how-to-change-routers) for switching between Solana routers.
 
 ## Connector Schemas
 
