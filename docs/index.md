@@ -66,6 +66,10 @@ hide:
     <img src="/assets/logos/backpack-light.png" alt="Backpack" class="light-logo"/>
   </div>
   <div class="flex-item">
+    <img src="/assets/logos/derive-dark.png" alt="Derive" class="dark-logo"/>
+    <img src="/assets/logos/derive-light.png" alt="Derive" class="light-logo"/>
+  </div>
+  <div class="flex-item">
     <img src="/assets/logos/orca-dark.png" alt="Orca" class="dark-logo"/>
     <img src="/assets/logos/orca-light.png" alt="Orca" class="light-logo"/>
   </div>

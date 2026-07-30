@@ -41,7 +41,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [Dexalot](../exchanges/dexalot.md)           | | ✓ | ✓ | [Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) |
 | [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
 | [Lambdaplex](../exchanges/lambdaplex.md) | | ✓     | | | 
-| [Lighter](../exchanges/lighter.md)                 |  | ✓ | ✓ |  |
+| [Lighter](../exchanges/lighter/index.md)                 |  | ✓ | ✓ |  |
 | [MEXC](../exchanges/mexc/index.md)                 |  | ✓ |  |  |
 | [NDAX](../exchanges/ndax.md)                       |  | ✓ |  |  |
 | [Pacifica](../exchanges/pacifica/index.md)             |  |  | ✓ |  |
