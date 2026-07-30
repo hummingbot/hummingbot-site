@@ -98,6 +98,14 @@ graph TB
 
 <div class="grid cards repo-cards" id="repo-cards" markdown>
 
+-   :octicons-mark-github-16:{ .lg .middle } __Condor__
+
+    ---
+
+    AI harness for building and running agentic strategies and bot instances.
+
+    [:octicons-arrow-right-24: Documentation](condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
+
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
 
     ---
@@ -105,14 +113,6 @@ graph TB
     A robust trading engine featuring connectors to numerous exchanges and a wide array of strategy frameworks.
 
     [:octicons-arrow-right-24: Documentation](client/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot) <span class="repo-stars" data-repo="hummingbot/hummingbot">:octicons-star-16: —</span>
-
--   :octicons-mark-github-16:{ .lg .middle } __Gateway__
-
-    ---
-
-    Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
-
-    [:octicons-arrow-right-24: Documentation](gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway) <span class="repo-stars" data-repo="hummingbot/gateway">:octicons-star-16: —</span>
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
 
@@ -122,13 +122,13 @@ graph TB
 
     [:octicons-arrow-right-24: Documentation](hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api) <span class="repo-stars" data-repo="hummingbot/hummingbot-api">:octicons-star-16: —</span>
 
--   :octicons-mark-github-16:{ .lg .middle } __Condor__
+-   :octicons-mark-github-16:{ .lg .middle } __Gateway__
 
     ---
 
-    AI harness for building and running agentic strategies and bot instances.
+    Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
 
-    [:octicons-arrow-right-24: Documentation](condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
+    [:octicons-arrow-right-24: Documentation](gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway) <span class="repo-stars" data-repo="hummingbot/gateway">:octicons-star-16: —</span>
 
 </div>
 

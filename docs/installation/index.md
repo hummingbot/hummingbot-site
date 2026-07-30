@@ -29,10 +29,10 @@ graph TB
 
 | Repository | Description | Quickstart | Source Install |
 |------------|-------------|------------|----------------|
-| [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [via Condor](condor.md) | [Source](../hummingbot-api/installation.md) |
-| [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Quickstart](hummingbot-client.md) | [Source](../client/installation.md) |
-| [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | - | [Installation](../gateway/installation.md) |
 | [**Condor**](https://github.com/hummingbot/condor) | AI harness for building and running agentic strategies and bot instances | [Quickstart](condor.md) | [Docs](https://condor.hummingbot.org) |
+| [**Hummingbot Client**](https://github.com/hummingbot/hummingbot) | Core trading client with CLI interface for CEX trading | [Quickstart](hummingbot-client.md) | [Source](../client/installation.md) |
+| [**Hummingbot API**](https://github.com/hummingbot/hummingbot-api) | REST API backend for managing bots, portfolios, and trading | [via Condor](condor.md) | [Source](../hummingbot-api/installation.md) |
+| [**Gateway**](https://github.com/hummingbot/gateway) | DEX middleware for Uniswap, PancakeSwap, Raydium, and 30+ DEXs | - | [Installation](../gateway/installation.md) |
 
 ## Recommended Paths
 
