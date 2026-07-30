@@ -103,6 +103,26 @@ hbot create simple_pmm --name conf_eth_live.yml \
 hbot start --replace
 ```
 
+## Step 6: Run a Strategy Controller
+
+[Controllers](../strategies/v2-strategies/controllers/index.md) are reusable V2 strategies whose settings can be tuned **live** while the bot runs. Create and run the `pmm_simple` controller on your connected exchange:
+
+```bash
+# Create a V2 controller config
+hbot create pmm_simple --name conf_eth_controller.yml \
+  --set connector_name=binance --set trading_pair=ETH-USDT
+
+# Start and monitor
+hbot start --replace
+hbot status
+
+# Tune settings live (applies in ~10 seconds)
+hbot config buy_spreads 0.002
+```
+
+!!! note
+    Controllers require a live exchange connection — paper trade connectors are not currently supported by the V2 controller framework.
+
 Common commands: `hbot stop`, `hbot history`, `hbot config`. See the [`hbot` CLI guide](../client/hbot-cli.md) for the full command reference.
 
 ## Interactive Client (alternative)
