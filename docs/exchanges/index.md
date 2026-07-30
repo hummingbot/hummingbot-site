@@ -49,7 +49,7 @@ You can choose from three integration options to get an official Hummingbot conn
 | Option | Cost | Features |
 |--------|------|----------|
 | **🔧 DIY Governance** | Free | • Build your own connector<br>• Submit Governance Proposal<br>• Self-maintenance required |
-| **💎 Bounty Management** | $10,000 | • Professional bounty oversight<br>• 1 year maintenance included<br>• Foundation manages process |
+| **💎 Bounty Management** | $10,000+ | • Professional bounty oversight<br>• 1 year maintenance included<br>• Foundation manages process |
 | **🏆 Sponsor Foundation** | $50,000+ | • Comprehensive partnership<br>• Priority development<br>• Custom features |
 
 ### 🔧 DIY Governance
