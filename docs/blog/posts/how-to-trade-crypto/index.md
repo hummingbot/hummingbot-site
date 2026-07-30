@@ -57,13 +57,13 @@ Another variable for a better trading environment is the **variety of coins**. I
 
 A nice spot place to check for these factors can be found in the following link:
 
-[CoinMarketCap – Exchanges ranking](https://coinmarketcap.com/rankings/exchanges/?ref=blog.hummingbot.org)
+[CoinMarketCap – Exchanges ranking](https://coinmarketcap.com/rankings/exchanges/)
 
 As we live in the Age of Information I strongly recommend you do a deep research when it comes to exchanges. Read thoroughly, if possible, their terms and conditions of service, watch for the small print, check the supported funding methods of each exchange and whether the exchange offers a debit/credit card. Furthermore, verify the legitimacy of trading crypto assets in your country and whether the exchange has law limitations or your profits are susceptible to taxation. Take into consideration that some exchanges may require identification documents to allow you withdrawals or trading.
 
-[Forbes – Best Crypto Exchanges](https://www.forbes.com/advisor/investing/best-crypto-exchanges/?ref=blog.hummingbot.org)
+[Forbes – Best Crypto Exchanges](https://www.forbes.com/advisor/investing/best-crypto-exchanges/)
 
-[Forbes – Cryptocurrency Taxes Advisor](https://www.forbes.com/advisor/taxes/cryptocurrency-taxes/?ref=blog.hummingbot.org)
+[Forbes – Cryptocurrency Taxes Advisor](https://www.forbes.com/advisor/taxes/cryptocurrency-taxes/)
 
 
 ### **Step 2: Determine your trading method**
@@ -109,21 +109,21 @@ If you decide to invest, rather than trade, in crypto you might consider taking 
 - Project timeline
 - Team and advisors
 
-[Whitepaper](https://www.investopedia.com/terms/w/whitepaper.asp?ref=blog.hummingbot.org) is not a crypto terminology and is actually a marketing tool written as sales and marketing documents to entice or persuade potential customers to learn more about or purchase a particular product, service, technology, or methodology.
+[Whitepaper](https://www.investopedia.com/terms/w/whitepaper.asp) is not a crypto terminology and is actually a marketing tool written as sales and marketing documents to entice or persuade potential customers to learn more about or purchase a particular product, service, technology, or methodology.
 
-[Here](https://bitcoin.org/bitcoin.pdf?ref=blog.hummingbot.org) you will find the iconic Bitcoin’s whitepaper.
+[Here](https://bitcoin.org/bitcoin.pdf) you will find the iconic Bitcoin’s whitepaper.
 
-So, a whitepaper is a document presenting a coin’s purpose (problem and solution) and basically, its existence lies in persuading potential customers to invest in it. Is this more important than the market trend? Well, the whitepaper is important to evaluate how strong the purpose of the coin is in terms of attracting new investors. Also, it gives you critical information about the technology behind it, who is backing the project, and who is the creator. Remember talking about XRP previously? A part of its [popularity](https://www.forbes.com/advisor/investing/what-is-ripple-xrp/?ref=blog.hummingbot.org) is attributed to its [whitepaper](https://ripple.com/files/ripple_consensus_whitepaper.pdf?ref=blog.hummingbot.org).
+So, a whitepaper is a document presenting a coin’s purpose (problem and solution) and basically, its existence lies in persuading potential customers to invest in it. Is this more important than the market trend? Well, the whitepaper is important to evaluate how strong the purpose of the coin is in terms of attracting new investors. Also, it gives you critical information about the technology behind it, who is backing the project, and who is the creator. Remember talking about XRP previously? A part of its [popularity](https://www.forbes.com/advisor/investing/what-is-ripple-xrp/) is attributed to its [whitepaper](https://ripple.com/files/ripple_consensus_whitepaper.pdf).
 
 When it comes to the market trend, an investor wants to see the market moving like this:
 
 ![Market Trend](image_1.jpg)
 
-When tracking a coin, an investor should always pay attention to the big picture of the price. The price should be assessed in longer periods of time (3 months, 6 months, or a year) as the investor doesn't really care about the current price but whether the price is [uptrend](https://www.investopedia.com/terms/u/uptrend.asp?ref=blog.hummingbot.org) over time.
+When tracking a coin, an investor should always pay attention to the big picture of the price. The price should be assessed in longer periods of time (3 months, 6 months, or a year) as the investor doesn't really care about the current price but whether the price is [uptrend](https://www.investopedia.com/terms/u/uptrend.asp) over time.
 
 On the other hand, a trader uses more versatile techniques to “decipher” the market indicators of a coin. The trading technique is based on the strategy the trader uses.
 
-Generally, a trader prefers a volatile market with uptrends and [downtrends](https://www.investopedia.com/terms/d/downtrend.asp?ref=blog.hummingbot.org) occurring during the day and tries to find the best time to sell or buy. A trader wants to see a market moving like this:
+Generally, a trader prefers a volatile market with uptrends and [downtrends](https://www.investopedia.com/terms/d/downtrend.asp) occurring during the day and tries to find the best time to sell or buy. A trader wants to see a market moving like this:
 
 ![Trader's Market Trend](image_2.jpg)
 
@@ -143,27 +143,27 @@ Analyzing marketing indicators and trends may answer these questions and increas
 
 Generally speaking, the analysis is divided into two big categories: **Fundamental** and **Technical** analysis.
 
-[Fundamental analysis](https://www.investopedia.com/terms/f/fundamentalanalysis.asp?ref=blog.hummingbot.org) looks at the intrinsic value of an asset by evaluating its financial statements and variables while [Technical analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp?ref=blog.hummingbot.org) is the forecasting of future price movements by analyzing past market data, primarily prices and volume.
+[Fundamental analysis](https://www.investopedia.com/terms/f/fundamentalanalysis.asp) looks at the intrinsic value of an asset by evaluating its financial statements and variables while [Technical analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp) is the forecasting of future price movements by analyzing past market data, primarily prices and volume.
 
-[Marketing indicators](https://www.investopedia.com/terms/m/market_indicators.asp?ref=blog.hummingbot.org) are a subset of technical indicators and are typically comprised of formulas and ratios. They are often represented in the form of lines, areas, or shapes in a diagram but can also be expressed via numbers. [Trend analysis](https://www.investopedia.com/terms/t/trendanalysis.asp?ref=blog.hummingbot.org) is the technique that attempts to predict future price movements based on historical observed data and depends on marketing indicators.
+[Marketing indicators](https://www.investopedia.com/terms/m/market_indicators.asp) are a subset of technical indicators and are typically comprised of formulas and ratios. They are often represented in the form of lines, areas, or shapes in a diagram but can also be expressed via numbers. [Trend analysis](https://www.investopedia.com/terms/t/trendanalysis.asp) is the technique that attempts to predict future price movements based on historical observed data and depends on marketing indicators.
 
 Whereas trend analysis is often criticized as a bad technical analysis from the aspect that history does not necessarily need to repeat itself and the past does not predict the future, it can come in handy when you are dealing with pricing movements in short periods of time.
 
-Two of the most used indicators for trend analysis are [Relative Strength Index](https://www.investopedia.com/terms/r/rsi.asp?ref=blog.hummingbot.org) (RSI) and [Moving Average](https://www.investopedia.com/terms/m/movingaverage.asp?ref=blog.hummingbot.org) (MA).
+Two of the most used indicators for trend analysis are [Relative Strength Index](https://www.investopedia.com/terms/r/rsi.asp) (RSI) and [Moving Average](https://www.investopedia.com/terms/m/movingaverage.asp) (MA).
 
-The **relative strength index (RSI)** is a [momentum indicator](https://www.investopedia.com/investing/momentum-and-relative-strength-index/?ref=blog.hummingbot.org) used in technical analysis that measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset. The RSI is displayed as an oscillator (a line graph that moves between two extremes) and can have a reading from 0 to 100.
+The **relative strength index (RSI)** is a [momentum indicator](https://www.investopedia.com/investing/momentum-and-relative-strength-index/) used in technical analysis that measures the magnitude of recent price changes to evaluate overbought or oversold conditions in the price of a stock or other asset. The RSI is displayed as an oscillator (a line graph that moves between two extremes) and can have a reading from 0 to 100.
 
-**Moving average** is a calculation used to analyze data points by creating a series of averages of different subsets of the full data set. Moving average (MA) is a stock indicator that is commonly used in [technical analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp?ref=blog.hummingbot.org). In trend analysis, the most famous technique to assess moving averages is [Moving average convergence divergence](https://www.investopedia.com/terms/m/macd.asp?ref=blog.hummingbot.org) (MACD), that shows the relationship between two moving averages of a security’s price. Another essential marketing indicator based on moving averages is [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp?ref=blog.hummingbot.org), which is extremely popular among traders in the crypto market.
+**Moving average** is a calculation used to analyze data points by creating a series of averages of different subsets of the full data set. Moving average (MA) is a stock indicator that is commonly used in [technical analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp). In trend analysis, the most famous technique to assess moving averages is [Moving average convergence divergence](https://www.investopedia.com/terms/m/macd.asp) (MACD), that shows the relationship between two moving averages of a security’s price. Another essential marketing indicator based on moving averages is [Bollinger Bands](https://www.investopedia.com/terms/b/bollingerbands.asp), which is extremely popular among traders in the crypto market.
 
 Most of the indicators are based on historical data and math equations derived from two simple data: **Price** and **trading volume**. When it comes to these two numbers things are easy. Higher trading volume means higher stability and credibility, and lower trading volume means higher volatility. Higher price means sell, and lower price means buy.
 
-One of the most useful price charts is the [candlestick chart](https://www.investopedia.com/trading/candlestick-charting-what-is-it/?ref=blog.hummingbot.org). A candlestick chart displays the market’s open, high, low, and close price for a specified period of time, the lowest being one minute.
+One of the most useful price charts is the [candlestick chart](https://www.investopedia.com/trading/candlestick-charting-what-is-it/). A candlestick chart displays the market’s open, high, low, and close price for a specified period of time, the lowest being one minute.
 
 ![Candlestick Chart](image_5.jpg)
 
 The candlestick has a wide part, which is called the “read body”. This part represents the price range between the open and the close price of a specific period of time. When the real body is filled in black (or green or other color), it means the close was lower than the open. If the real body is empty (or red or other color), it means the close was higher than the open. The colors may be altered by traders based on their trading platform.
 
-The candlestick charts form patterns that may indicate bearish behavior (downtrend) or bullish behavior (uptrend). [Bearish and bullish](https://www.investopedia.com/insights/digging-deeper-bull-and-bear-markets/?ref=blog.hummingbot.org) are terms that are used to express a downtrend or an uptrend market behavior respectively and are widely used terms among market articles and traders. Learning how to break down [candlestick patterns](https://www.investopedia.com/articles/active-trading/092315/5-most-powerful-candlestick-patterns.asp?ref=blog.hummingbot.org) is a substantial criterion in understanding the market trends and putting you in a better trading position.
+The candlestick charts form patterns that may indicate bearish behavior (downtrend) or bullish behavior (uptrend). [Bearish and bullish](https://www.investopedia.com/insights/digging-deeper-bull-and-bear-markets/) are terms that are used to express a downtrend or an uptrend market behavior respectively and are widely used terms among market articles and traders. Learning how to break down [candlestick patterns](https://www.investopedia.com/articles/active-trading/092315/5-most-powerful-candlestick-patterns.asp) is a substantial criterion in understanding the market trends and putting you in a better trading position.
 
 ![Candlestick Chart](image_6.jpg)
 
@@ -176,7 +176,7 @@ Many traders out there are both market makers and takers. When they see a tradin
 
 
 ### Step 6: Choose your strategy
-So, you have picked your trading pair, you have evaluated the indicators and assessed the trend analysis. The last step before you begin making or taking orders is to choose the strategy you plan to follow. Your strategy will vary based on the indicators of a certain period of time and change throughout your trading journey depending on market volatility and trends. But you should have a strategy structure made up in your mind and impose it when the circumstances are met. You don’t want to be that trader who doesn’t know what to do when a [flash crash](https://www.investopedia.com/terms/f/flash-crash.asp?ref=blog.hummingbot.org) occurs.
+So, you have picked your trading pair, you have evaluated the indicators and assessed the trend analysis. The last step before you begin making or taking orders is to choose the strategy you plan to follow. Your strategy will vary based on the indicators of a certain period of time and change throughout your trading journey depending on market volatility and trends. But you should have a strategy structure made up in your mind and impose it when the circumstances are met. You don’t want to be that trader who doesn’t know what to do when a [flash crash](https://www.investopedia.com/terms/f/flash-crash.asp) occurs.
 
 There are many strategies one may use to trade and anyone can build his own strategy. Some of the most popular strategies are the following:
 
@@ -188,7 +188,7 @@ Cryptomarket caps are small enough that they can be manipulated by a single big 
 
 - **Scalping**
 
-[Scalping](https://www.investopedia.com/articles/trading/05/scalping.asp?ref=blog.hummingbot.org) is a trading style that specializes in profiting off of small [price changes](https://www.investopedia.com/terms/p/price-change.asp?ref=blog.hummingbot.org) and making a fast profit off reselling. In day trading, scalping is a term for a strategy to prioritize making high volumes off small profits. A scalper may enter a market with one or many orders, make a profit and quickly exit before a fluctuation changes the market’s sentiment on a coin.
+[Scalping](https://www.investopedia.com/articles/trading/05/scalping.asp) is a trading style that specializes in profiting off of small [price changes](https://www.investopedia.com/terms/p/price-change.asp) and making a fast profit off reselling. In day trading, scalping is a term for a strategy to prioritize making high volumes off small profits. A scalper may enter a market with one or many orders, make a profit and quickly exit before a fluctuation changes the market’s sentiment on a coin.
 
 ![Scalping](image_9.jpg)
 
@@ -200,7 +200,7 @@ Arbitrage refers to the strategy under which a trader buys an asset in one marke
 
 - **High-Frequency Trading (HFT) and trading bots**
 
-[HFT](https://www.investopedia.com/terms/h/high-frequency-trading.asp?ref=blog.hummingbot.org) is a kind of algorithmic trading strategy used by [quant traders](https://www.investopedia.com/articles/active-trading/112614/steps-becoming-quant-trader.asp?ref=blog.hummingbot.org). The strategy involves developing algorithms that usually result in the creation of trading bots that help quickly enter, trade, and exit a crypto asset. Developing such bots needs an understanding of complex market concepts and a strong knowledge of mathematics behind market indicators and economics, as well as a certain level of coding skills. If you don’t qualify, though, to build a trading bot you may use a built one. There are many trading bots out there, free and paid, that do a decent job trading on your behalf. These bots are usually customizable to accommodate the user’s strategy. Once the user has completed the bot’s configuration he can use it to trade automatically, monitoring periodically its performance. [Hummingbot](https://docs.hummingbot.org/) is also an open source trading bot that runs on any crypto exchange, centralized or decentralized, offering the user the option to automatically trade using a large variety of strategies or the capability to build his own.
+[HFT](https://www.investopedia.com/terms/h/high-frequency-trading.asp) is a kind of algorithmic trading strategy used by [quant traders](https://www.investopedia.com/articles/active-trading/112614/steps-becoming-quant-trader.asp). The strategy involves developing algorithms that usually result in the creation of trading bots that help quickly enter, trade, and exit a crypto asset. Developing such bots needs an understanding of complex market concepts and a strong knowledge of mathematics behind market indicators and economics, as well as a certain level of coding skills. If you don’t qualify, though, to build a trading bot you may use a built one. There are many trading bots out there, free and paid, that do a decent job trading on your behalf. These bots are usually customizable to accommodate the user’s strategy. Once the user has completed the bot’s configuration he can use it to trade automatically, monitoring periodically its performance. [Hummingbot](https://hummingbot.org) is also an open source trading bot that runs on any crypto exchange, centralized or decentralized, offering the user the option to automatically trade using a large variety of strategies or the capability to build his own.
 
 ![Trading Bots](image_11.jpg)
 

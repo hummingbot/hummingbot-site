@@ -8,6 +8,7 @@ For exact callable tool names and schemas in your environment, inspect the MCP s
 
 - All MCP operations map to Hummingbot API routes that are protected by HTTP Basic Auth.
 - Treat MCP as a privileged interface: never expose credentials in prompts or logs.
+- For production, run the API behind [Tailscale](../hummingbot-api/tailscale.md) so MCP clients connect over a private network.
 
 ## Core MCP Capability Groups
 
@@ -18,7 +19,7 @@ Typical operations:
 - List accounts (`GET /accounts/`)
 - Add/delete account (`POST /accounts/add-account`, `POST /accounts/delete-account`)
 - Add/delete connector credentials (`POST /accounts/add-credential/...`, `POST /accounts/delete-credential/...`)
-- Manage Gateway wallets
+- Manage Gateway wallets (`GET /accounts/gateway/wallets`, `POST /accounts/gateway/add-wallet`, `POST /accounts/gateway/wallet/set-default`)
 
 ### Portfolio
 
@@ -45,25 +46,20 @@ Typical operations:
 
 Typical operations:
 
-- Prices, candles, historical candles, order book, price-for-volume
-- Funding info
+- Prices, candles, historical candles, order book helpers, VWAP estimates
+- Tickers and cross-rates (`GET /market-data/tickers`, `POST /market-data/rates`, `GET /market-data/rate/{trading_pair}`)
+- Funding info, pool prices, order book feed diagnostics/restart
 - Active feed/status settings
-
-### Rate Oracle
-
-Typical operations:
-
-- List sources
-- Get/update oracle config
-- Fetch single or batch rates
 
 ### Bot Orchestration
 
 Typical operations:
 
-- Start/stop named bots
+- Start/stop named bots; deploy V2 scripts and controllers
 - Query bot status/history and MQTT health
-- Retrieve run records and aggregate stats
+- Controller performance (latest/history)
+- Bot-run records, stats, and deletion
+- Stop-and-archive workflows
 
 ### Executors
 
@@ -71,7 +67,8 @@ Typical operations:
 
 - Create executor (`POST /executors/`)
 - Search/filter executors (`POST /executors/search`)
-- Summary/performance/logs/positions
+- Summary, performance, logs, positions
+- List executor types and config schemas (`GET /executors/types/available`, `GET /executors/types/{type}/config`)
 - Stop executor (`POST /executors/{executor_id}/stop`)
 
 ### Scripts and Controllers
@@ -80,24 +77,42 @@ Typical operations:
 
 - List/get/create/update/delete script/controller files
 - List/get/create/update/delete YAML configs
-- Fetch config templates
+- Fetch and validate config templates
+- Live controller config updates on running bots
+
+### Backtesting
+
+Typical operations:
+
+- Synchronous backtest (`POST /backtesting/run`)
+- Async backtest tasks (`POST /backtesting/tasks`, poll `GET /backtesting/tasks/{task_id}`)
 
 ### Gateway and DEX
 
 Typical operations:
 
 - Gateway container lifecycle (`/gateway/start|stop|restart|status|logs`)
-- Gateway config/connectors/tokens/pools/wallets
-- Swap quote/execute
-- CLMM pools/positions/liquidity actions
-- Raw Gateway passthrough via `/gateway-proxy/{path}`
+- Network/token/pool CRUD (`/gateway/networks/...`)
+- RPC provider API keys (`/gateway/apiKeys`)
+- Swap quote/execute and swap history (`/gateway/swap/...`, `/gateway/swaps/...`)
+- CLMM open/add/remove/close/collect-fees (`/gateway/clmm/...`)
 
-### Archived Bots
+Gateway uses **HTTPS + mTLS**; there is no `/gateway-proxy` passthrough router.
+
+### Archived Bots, Storage, and System
 
 Typical operations:
 
-- Read archived DB status, summary, performance
-- Query trades/orders/controllers/positions from archived runs
+- Read archived DB status, summary, performance, trades, orders, executors, positions
+- Disk usage for bot directories (`GET /storage/`)
+- Host resource metrics (`GET /system/resources`)
+
+### WebSocket Streaming
+
+MCP may expose WebSocket-backed streaming for market data and executors:
+
+- `WS /ws/market-data` — candles, order book, trades
+- `WS /ws/executors` — executor summaries, performance, positions, bot status, logs
 
 ## Pagination and Error Model
 
@@ -112,9 +127,9 @@ Typical operations:
 }
 ```
 
-- Common API-level errors surfaced through MCP: `400`, `404`, `500`, `503`.
+- Common API-level errors surfaced through MCP: `400`, `401`, `404`, `422`, `500`, `503`.
 
 ## Best Practice
 
 - Prefer MCP tool discovery over hardcoding tool names in prompts or automation.
-- When in doubt, cross-check endpoint behavior in [API Routers](../hummingbot-api/routers.md).
+- When in doubt, cross-check endpoint behavior in [API Routers](../hummingbot-api/routers.md) or live Swagger at `/docs`.

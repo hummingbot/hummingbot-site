@@ -8,7 +8,7 @@ categories:
 
 # Introducing the Hummingbot Affiliate Program
 
-![](./cover.webp)
+![](cover.webp)
 
 We're excited to announce the launch of our new Affiliate Program, allowing Hummingbot users to earn rebates on their trading fees while supporting the Foundation's work.
 

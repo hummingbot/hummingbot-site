@@ -6,7 +6,7 @@
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | Supports `MARKET` and `LIMIT` order types
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built |
+| 🕯 Spot Candles Feed | Not built |
 
 ## ℹ️ Exchange Info
 

@@ -15,15 +15,15 @@ These strategies are included in each monthly release. They are not maintained b
 
 | Strategy                                                      | Description |
 |---------------------------------------------------------------|-------------|
-| [pure_market_making](../v1-strategies/pure-market-making.md)                    | Hummingbot's original single-pair market making strategy |
-| [cross_exchange_market_making](../v1-strategies/cross-exchange-market-making.md)| Market making strategy that mitigates inventory risk by hedging on another exchange |
-| [amm_arb](../v1-strategies/amm-arbitrage.md)                                    | Arbitrage strategy that exploits price differences between AMM DEXs and other exchanges |
-| [avellaneda_market_making](../v1-strategies/avellaneda-market-making.md)        | Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
-| [cross_exchange_mining](../v1-strategies/cross-exchange-mining.md)              | Community-maintained mod of Cross Exchange Market Making strategy |
-| [hedge](../v1-strategies/hedge.md)                                              | Hedges spot exchange inventory risk using perpetual swaps |
-| [liquidity_mining](../v1-strategies/liquidity-mining.md)                        | Provide liquidity on multiple pairs using a single base or quote token |
-| [perpetual_market_making](../v1-strategies/perpetual-market-making.md)          | Community| Market-making strategy for perpetual swap markets |
-| [spot_perpetual_arbitrage](../v1-strategies/spot-perpetual-arbitrage.md)        | Exploits price differences between spot and perpetual swap exchanges |
+| [pure_market_making](pure-market-making.md)                    | Hummingbot's original single-pair market making strategy |
+| [cross_exchange_market_making](cross-exchange-market-making.md)| Market making strategy that mitigates inventory risk by hedging on another exchange |
+| [amm_arb](amm-arbitrage.md)                                    | Arbitrage strategy that exploits price differences between AMM DEXs and other exchanges |
+| [avellaneda_market_making](avellaneda-market-making.md)        | Single-pair market making strategy based on the classic Avellaneda-Stoikov paper  |
+| [cross_exchange_mining](cross-exchange-mining.md)              | Community-maintained mod of Cross Exchange Market Making strategy |
+| [hedge](hedge.md)                                              | Hedges spot exchange inventory risk using perpetual swaps |
+| [liquidity_mining](liquidity-mining.md)                        | Provide liquidity on multiple pairs using a single base or quote token |
+| [perpetual_market_making](perpetual-market-making.md)          | Community| Market-making strategy for perpetual swap markets |
+| [spot_perpetual_arbitrage](spot-perpetual-arbitrage.md)        | Exploits price differences between spot and perpetual swap exchanges |
 
 
 ## Contributing Strategies

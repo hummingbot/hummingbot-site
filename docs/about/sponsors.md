@@ -13,11 +13,23 @@ The Foundation works closely with leading crypto companies and protocols to deve
     <img src="/assets/logos/hyperliquid-dark.png" class="dark-logo"/>
     <img src="/assets/logos/hyperliquid-light.png" class="light-logo"/>
   </div>
+  <div class="flex-item">
+    <img src="/assets/logos/bitget-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/bitget-light.png" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/backpack-dark.png" class="dark-logo"/>
+    <img src="/assets/logos/backpack-light.png" class="light-logo"/>
+  </div>
 </div>
 
 - [**XRPL**](https://xrpl.org/): The XRP Ledger (XRPL) is a decentralized, public blockchain that enables fast, low-cost transactions between accounts with both central limit order book (CLOB) and automatic market maker (AMM) exchange functionality built into the ledger. The XRPL connector in Hummingbot enables sophisticated trading and liquidity provision strategies on one of the longest-running blockchain platforms. [Connector Guide](../blog/posts/announcing-xrpl-connector/index.md)
 
 - [**Hyperliquid**](https://hyperliquid.xyz/): Hyperliquid has partnered with Hummingbot Foundation to show the power of democratized, algorithmic access to markets. Hyperliquid is an order book spot and perpetual futures DEX that aims to do everything the best CEXs do, but on-chain. Their unique [Vaults](https://app.hyperliquid.xyz/vaults) allow users to run stake-able liquidity provision strategies. [Announcement](https://twitter.com/_hummingbot/status/1768690918557970846).
+
+- [**Bitget**](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0): Bitget is a leading global crypto exchange offering spot and perpetual futures markets, supported in Hummingbot via the [Bitget spot and perpetual connectors](../exchanges/bitget/index.md). Sign up with our [referral link](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0) to support the Foundation.
+
+- [**Backpack**](https://backpack.exchange/join/1tvdqfkk): Backpack is a regulated crypto exchange offering spot and perpetual futures trading, supported in Hummingbot via the [Backpack connector](../exchanges/backpack/index.md). Sign up with our [referral link](https://backpack.exchange/join/1tvdqfkk) to support the Foundation.
 
 ## Exchange Partners
 
@@ -34,6 +46,7 @@ When you sign up for an account with our partner exchanges using the Hummingbot 
 | HTX      | 20%           | [Sign Up](https://www.htx.com.pk/invite/en-us/1h?invite_code=re4w9223) |
 | Bitmart  | 10%           | [Sign Up](https://www.bitmart.com/invite/Hummingbot/en) |
 | Bitget   | TBD           | [Sign Up](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0) |
+| Backpack | TBD           | [Sign Up](https://backpack.exchange/join/1tvdqfkk) |
 
 ### How exchange partnerships work
 

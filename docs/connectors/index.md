@@ -6,7 +6,7 @@ Connectors are packages of code that link Hummingbot's internal trading engine w
 
 CLOB (Central Limit Order Book) connectors integrate into a CLOB exchange's WebSocket API, enabling standardized order placement/cancellation and order book data fetching from the perspective of Hummingbot strategies. These connectors work with both centralized exchanges (CEX) and decentralized exchanges (DEX) that utilize a central limit order book model. 
 
-See [CLOB Connectors](./clob.md) for a list of the current CLOB connectors in Hummingbot
+See [CLOB Connectors](clob.md) for a list of the current CLOB connectors in Hummingbot
 
 ## Gateway DEX Connectors
 

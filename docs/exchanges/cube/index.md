@@ -1,3 +1,6 @@
+!!! warning "Connector Removed"
+    The **Cube** connector was removed from Hummingbot in [PR #8376](https://github.com/hummingbot/hummingbot/pull/8376) (post-v2.15.0). Cube is no longer viable due to negligible trading volume on major pairs. This page is kept for historical reference.
+
 ## 🛠 Connector Info
 
 - **Exchange Type**: Centralized Exchange (CEX)
@@ -6,7 +9,7 @@
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | Supports `MARKET` order type
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not built | 
+| 🕯 Spot Candles Feed | Not built | 
 
 ## ℹ️ Exchange Info
 

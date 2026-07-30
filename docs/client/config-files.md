@@ -31,11 +31,11 @@ To create a configuration file for a compatible script, run the `create` command
 In the auto-complete dropdown, only the configurable scripts located in the [/scripts](https://github.com/hummingbot/hummingbot/tree/master/scripts) 
 folder will be shown.
 
-![](./create-script-config-autocomplete.png)
+![](create-script-config-autocomplete.png)
 
 Afterwards, you will be presented with prompts and default values defined in the config class above.
 
-![](./create-script-config.png)
+![](create-script-config.png)
 
 The last prompt will ask you to enter a name for the config file, which is saved in `conf/scripts`.
 
@@ -43,7 +43,7 @@ The last prompt will ask you to enter a name for the config file, which is saved
 
 Run `start --v2 <config_file_name.yml>` to run a script with a configuration file from `conf/scripts` (for example, `start --v2 conf_simple_pmm_1.yml`).
 
-![](./start-script-config.png)
+![](start-script-config.png)
 
 ## Controller config files
 

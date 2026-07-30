@@ -23,7 +23,7 @@ Last week we published the [first article](../what-is-market-making/index.md) of
 
 <!-- more -->
 
-Here at **Hummingbot Academy** our goal is to help you learn more about **market making** and **arbitrage**, and how to use our [free open-source robot](https://docs.hummingbot.org) to implement your own strategy.
+Here at **Hummingbot Academy** our goal is to help you learn more about **market making** and **arbitrage**, and how to use our [free open-source robot](https://hummingbot.org) to implement your own strategy.
 
 
 ### But what is arbitrage?

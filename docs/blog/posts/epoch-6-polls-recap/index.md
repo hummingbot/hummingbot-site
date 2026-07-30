@@ -30,7 +30,7 @@ Below, we summarize the results of the Epoch 6 Polls and outline the changes we'
 
 ## CEX Connectors
 
-![](./2.png)
+![](2.png)
 
 The CEX Connectors poll places [centralized exchange connectors](../../../connectors/index.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles.
 
@@ -54,7 +54,7 @@ Bronze CEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ## DEX Connectors
 
-![](./3.png)
+![](3.png)
 
 The DEX Connectors poll places [decentralized exchange connectors](../../../gateway/connectors.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. 
 
@@ -78,7 +78,7 @@ Bronze DEX connectors are not maintained by Hummingbot Foundation, but may be ma
 
 ## Chain Connectors
 
-![](./4.png)
+![](4.png)
 
 New for Epoch 6, the Chain Connectors poll places [Layer 1 blockchains](../../../gateway/chains.md) into Gold, Silver and Bronze tiers, which define the level of maintenance that the Foundation spends on each connector for the October-December 2023 release cycles. There were 16 unique votes in the poll, and the total number of HBOT voting power tallied was 46 million.
 

@@ -251,6 +251,7 @@ nav:
     - Hummingbot Client:
       - Hummingbot Client: client/index.md
       - Installation: client/installation.md
+      - hbot CLI: client/hbot-cli.md
       - User Interface: client/user-interface.md
       - Commands and Shortcuts: client/commands-shortcuts.md
       - Launch/Exit Hummingbot: client/launch-exit.md
@@ -291,11 +292,6 @@ nav:
       - Tailscale: hummingbot-api/tailscale.md
       - Developer Guide: hummingbot-api/quickstart.md
       - API Routers: hummingbot-api/routers.md
-    - Hummingbot MCP & Skills:
-      - Hummingbot MCP: mcp/index.md
-      - Installation: mcp/installation.md
-      - Tools Reference: mcp/tools.md
-      - Skills: mcp/skills.md
     - Condor: condor/index.md
     - Dashboard:
       - Dashboard: dashboard/index.md
@@ -316,43 +312,41 @@ nav:
     - 🔥 Backpack: exchanges/backpack/index.md
     - 🔥 Binance: exchanges/binance/index.md
     - 🔥 Bitget: exchanges/bitget/index.md
-    - 🔥 Bitmart: exchanges/bitmart/index.md
     - 🔥 Derive: exchanges/derive/index.md
     - 🔥 Gate.io: exchanges/gate-io/index.md
     - 🔥 Hyperliquid: exchanges/hyperliquid.md
     - 🔥 Kucoin: exchanges/kucoin/index.md
+    - 🔥 Meteora: exchanges/gateway/meteora.md
     - 🔥 OKX: exchanges/okx/index.md
+    - 🔥 Orca: exchanges/gateway/orca.md
     - 🔥 XRP Ledger: exchanges/xrpl.md
-    - AscendEx: exchanges/ascendex/index.md
-    - Architect: exchanges/architect/index.md
     - Aevo: exchanges/aevo/index.md
-    - Bitstamp: exchanges/bitstamp/index.md
-    - Bitrue: exchanges/bitrue.md
+    - Architect: exchanges/architect/index.md
     - BingX: exchanges/bing_x/index.md
-    - Bybit: exchanges/bybit.md
+    - Bitrue: exchanges/bitrue.md
+    - Bitstamp: exchanges/bitstamp/index.md
     - BTC Markets: exchanges/btc-markets.md
+    - Bybit: exchanges/bybit.md
     - Coinbase: exchanges/coinbase.md
-    - Cube: exchanges/cube/index.md
-    - HTX: exchanges/htx/index.md
+    - Decibel: exchanges/decibel/index.md
     - Dexalot: exchanges/dexalot.md
     - dYdX: exchanges/dydx.md
     - Evedex: exchanges/evedex/index.md
     - Foxbit: exchanges/foxbit/index.md
+    - Gemini: exchanges/gemini.md
     - GRVT: exchanges/grvt/index.md
+    - HTX: exchanges/htx/index.md
     - Injective: exchanges/injective.md
-    - Jupiter: exchanges/gateway/jupiter.md
+    - Jupiter & Solana Routers: exchanges/gateway/jupiter.md
     - Kraken: exchanges/kraken/index.md
-    - Lighter: exchanges/lighter.md
-    - Meteora: exchanges/gateway/meteora.md
+    - Lambdaplex: exchanges/lambdaplex.md
+    - Lighter: exchanges/lighter/index.md
     - MEXC: exchanges/mexc/index.md
     - NDAX: exchanges/ndax.md
-    - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Pacifica: exchanges/pacifica/index.md
-    - Decibel: exchanges/decibel/index.md
-    - Orca: exchanges/gateway/orca.md
+    - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Raydium: exchanges/gateway/raydium.md
     - Uniswap: exchanges/gateway/uniswap.md
-    - Vertex: exchanges/vertex.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
     - Bounty Lifecycle: bounties/lifecycle.md
@@ -362,6 +356,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.16.0: release-notes/2.16.0.md
     - 2.15.1: release-notes/2.15.1.md
     - 2.14.0: release-notes/2.14.0.md
     - 2.13.0: release-notes/2.13.0.md

@@ -688,7 +688,7 @@ Now that you've completed the quickstart, explore more advanced features:
 
 - **[Bot Management](../dashboard/instances.md)**: Deploy and manage multiple trading bots
 - **[Strategy Configuration](../dashboard/config.md)**: Configure and deploy trading strategies
-- **[Market Data](../hummingbot-api/index.md#market-data)**: Access real-time and historical market data
+- **[Market Data](index.md#api-endpoints)**: Access real-time and historical market data
 - **[Backtesting](../dashboard/backtest.md)**: Test your strategies with historical data
 
 For the complete API reference, visit the [API documentation](http://localhost:8000/docs) when your API is running.

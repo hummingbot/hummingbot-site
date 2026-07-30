@@ -2,7 +2,7 @@
 
 ## What Are Exchange Connectors?
 
-Hummingbot is open source software that helps you create and deploy crypto trading bots across 50+ exchanges. The project has **14k+ GitHub stars** and **3.9k+ forks**, representing one of the most active trading bot communities.
+Hummingbot is open source software that helps you create and deploy crypto trading bots across 50+ exchanges. The project has **19.3k+ GitHub stars** and **4.8k+ forks** as of July 2026, representing one of the most active trading bot communities.
 
 Connectors are standardized API integrations that enable Hummingbot to communicate with different exchanges. Each connector implements a common interface for order management, balance tracking, and market data streaming, allowing strategies to work seamlessly across multiple exchanges.
 
@@ -10,9 +10,9 @@ Connectors are standardized API integrations that enable Hummingbot to communica
 
 | Exchange Type | Description | Sample Connector |
 |---------------|-------------|------------------|
-| **🏛️ CLOB CEX** | Centralized exchanges with spot & perpetual futures trading in central limit order book (CLOB) markets | [Binance →](./binance/index.md) |
-| **📊 CLOB DEX** | On-chain, non-custodial spot and perp exchanges CLOB markets | [Hyperliquid →](hyperliquid.md), [Lighter →](lighter.md) |
-| **🔄 Gateway DEX** | AMM decentralized exchanges and aggregators via Gateway | [Uniswap →](./gateway/uniswap.md) |
+| **🏛️ CLOB CEX** | Centralized exchanges with spot & perpetual futures trading in central limit order book (CLOB) markets | [Binance →](binance/index.md) |
+| **📊 CLOB DEX** | On-chain, non-custodial spot and perp exchanges CLOB markets | [Hyperliquid →](hyperliquid.md), [Lighter →](lighter/index.md) |
+| **🔄 Gateway DEX** | AMM decentralized exchanges and aggregators via Gateway | [Uniswap →](gateway/uniswap.md) |
 
 * [All CLOB Connectors →](../connectors/clob.md) 
 * [All Gateway DEX Connectors →](../gateway/connectors.md)
@@ -23,15 +23,15 @@ See live trading activity across all exchanges via our public dashboard:
 
 <div class="stat-grid">
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">$36B</span>
+    <span class="stat-value">$47B+</span>
     <span class="stat-label">Total Trade Volume</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">100K+</span>
+    <span class="stat-value">111K+</span>
     <span class="stat-label">Hummingbot Instances</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">300+</span>
+    <span class="stat-value">318</span>
     <span class="stat-label">Connectors</span>
   </a>
 </div>
@@ -49,7 +49,7 @@ You can choose from three integration options to get an official Hummingbot conn
 | Option | Cost | Features |
 |--------|------|----------|
 | **🔧 DIY Governance** | Free | • Build your own connector<br>• Submit Governance Proposal<br>• Self-maintenance required |
-| **💎 Bounty Management** | $10,000 | • Professional bounty oversight<br>• 1 year maintenance included<br>• Foundation manages process |
+| **💎 Bounty Management** | $10,000+ | • Professional bounty oversight<br>• 1 year maintenance included<br>• Foundation manages process |
 | **🏆 Sponsor Foundation** | $50,000+ | • Comprehensive partnership<br>• Priority development<br>• Custom features |
 
 ### 🔧 DIY Governance
@@ -74,7 +74,6 @@ This premium option includes dedicated engineering resources, custom content dev
 
 - [**Backpack**](https://backpack.exchange/)
 - [**Binance**](https://www.binance.com/)
-- [**Bitmart**](https://www.bitmart.com/)
 - [**Bitget**](https://www.bitget.com/)
 - [**Derive**](https://www.derive.xyz/)
 - [**Gate.io**](https://www.gate.io/)

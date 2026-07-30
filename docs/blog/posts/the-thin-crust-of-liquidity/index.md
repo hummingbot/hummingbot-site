@@ -12,7 +12,7 @@ tags:
 
 ### The role of market makers and importance of liquidity in the crypto industry
 
-![](./cover.webp)
+![](cover.webp)
 
 
 **Eric Noll** was getting frustrated. It was November 2011, and the senior Nasdaq executive was struggling to explain to a mostly disinterested House of Representatives panel why the changing stock exchange landscape was wreaking havoc for smaller public companies:
@@ -31,7 +31,7 @@ But while tokenization enables an asset to be freely tradeable, it does not auto
 
 ## What happens when you list an illiquid asset?
 
-![Forest owned by Phaunos Timber Fund](./forest.jpg)
+![Forest owned by Phaunos Timber Fund](forest.jpg)
 
 It happens that I'm intimately familiar with what transpires after an illiquid asset becomes freely tradable. In 2009, I worked for [Phaunos Timber Fund](http://www.phaunostimber.com/), a private equity fund that invested in timberland. Timberland is a niche asset class favored by endowments and pension funds because of its stable, bond-like return profile, but deals are typically $100 million+ with a 20-year duration (trees take a long time to grow).
 
@@ -69,7 +69,7 @@ For a top market making firm, focusing on the largest and most liquid
 
 ## Crypto's liquidity desert
 
-![](./bone-dry.jpg)
+![](bone-dry.jpg)
 
 The fragmented crypto exchange landscape and lack of market standards like [FIX protocol](https://en.wikipedia.org/wiki/Financial_Information_eXchange) has created an even more extreme version of the small-cap liquidity crisis experienced in equities.
 
@@ -79,7 +79,7 @@ For the long tail of coins, as well as newly launched exchanges, their markets a
 
 Fragmentation of liquidity across exchanges also increases risk of a **flash crash**, which occurs when a large market sell order clears out all the top buy offers in the order book and significantly moves the price downward. On exchanges which allow for margin trading, these price resets may trigger margin calls that force further selling, creating a cascading effect that pushes price toward zero. The 2017 Coinbase Pro flash crash led the exchange to refund millions in losses for affected traders, terminate their margin trading program, and implement additional circuit breakers.
 
-![GDAX flash crash in real time](./gdax.gif)
+![GDAX flash crash in real time](gdax.gif)
 *The Coinbase Pro flash crash in real-time, July 2017*
 
 Just as in equities, the crypto liquidity crisis stems from **a dearth of market makers**. Professional market making firms seek markets where they can earn the highest profits while incurring the least inventory risk. Firms like DRW Cumberland and Jump Trading focus on top markets like the BTC/USD trading pair on BitMex, where $1 billion in volume changes hands in a single day. They have little incentive to perform the deep technical integration and maintain the requisite inventory of illiquid assets required to provide liquidity to niche markets such as the [ZRX/ETH trading pair on Radar Relay](https://app.radarrelay.com/ZRX/WETH) or the Ethereum gas futures market on Veil.

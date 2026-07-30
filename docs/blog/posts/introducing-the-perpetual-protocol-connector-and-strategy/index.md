@@ -13,7 +13,7 @@ categories:
 
 We're thrilled to announce a new partnership with [Perpetual Protocol](https://perp.com/), an Ethereum-based decentralized exchange of perpetual contracts for any asset. With this partnership, Hummingbot users will be able to earn arbitrage profits from reconciling price differences between Perpetual markets and spot markets.
 
-The Perp connector is included with the [v0.37.0](https://docs.hummingbot.org/release-notes/) release of Hummingbot that will be shipped on March 8, 2021, along with a new perpetual-to-spot arbitrage strategy.
+The Perp connector is included with the [v0.37.0](https://hummingbot.org/release-notes/) release of Hummingbot that will be shipped on March 8, 2021, along with a new perpetual-to-spot arbitrage strategy.
 
 Since we launched the perpetual market making strategy, a new strategy to exploit arbitrage profits between perpetual and spot markets has been highly requested by our community. This new strategy allows users to arbitrage price differences between the perpetual contracts exchanges, such as [perp.exchange](https://perp.exchange/) powered by Perpetual Protocol and Binance Futures, and other Hummingbot supported spot exchanges such as Binance, Coinbase Pro, and Huobi.
 

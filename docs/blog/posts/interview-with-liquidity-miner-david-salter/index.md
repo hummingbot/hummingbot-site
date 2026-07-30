@@ -44,7 +44,7 @@ I aim for profits between 0.5% and 3%, as evidenced by both the profitability ca
 
 The community on platforms like Discord is a mix of highly technical and less technical individuals. The support provided by the staff is remarkable and greatly appreciated.
 
-![](./club.jpg)
+![](club.jpg)
 
 ### Did you encounter any challenges during the setup or configuration process?
 
@@ -68,7 +68,7 @@ I also use Cryptowatch for market analysis. For news, Feedly and News Now are my
 
 Not really. My initial foray into crypto in July 2017 was influenced by the hype cycle. I've since learned to detach emotionally and focus on technical analysis and specific projects I believe in.
 
-![](./wave.jpeg)
+![](wave.jpeg)
 
 ### What key lessons have you learned from trading with Hummingbot?
 

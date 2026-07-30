@@ -16,7 +16,10 @@ Gateway's Ethereum integration supports the Ethereum mainnet and all EVM-compati
 | bsc          | BNB Chain                 | 56         | BNB          |
 | avalanche    | Avalanche C-Chain         | 43114      | AVAX         |
 | celo         | Celo                      | 42220      | CELO         |
+| unichain     | Unichain                  | 130        | ETH          |
+| robinhoodchain | Robinhood Chain         | 4663       | ETH          |
 | sepolia      | Sepolia (Testnet)         | 11155111   | ETH          |
+| robinhoodchain-testnet | Robinhood Chain (Testnet) | 46630 | ETH        |
 
 ### Chain Configuration
 

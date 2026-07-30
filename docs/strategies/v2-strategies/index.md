@@ -33,7 +33,7 @@ Examples: `PositionExecutor`, `DCAExecutor`, `GridExecutor`, `TWAPExecutor`, `XE
 
 ### Market Data Provider
 
-[**Market Data Provider**](data/index.md): Single point of access to exchange market data — historical OHLCV [Candles](./candles/index.md), order book data, and trades. Used by both scripts and controllers to make trading decisions.
+[**Market Data Provider**](data/index.md): Single point of access to exchange market data — historical OHLCV [Candles](candles/index.md), order book data, and trades. Used by both scripts and controllers to make trading decisions.
 
 ## Inheritance
 
@@ -47,5 +47,5 @@ All V2 components are built on the same base class hierarchy:
 
 ## Strategy Guides
 
-Check out [Walkthrough - Script](./walkthrough.md) and [Walkthrough - Controller](./walkthrough-controller.md) to learn how to create strategies.
+Check out [Walkthrough - Script](walkthrough.md) and [Walkthrough - Controller](walkthrough-controller.md) to learn how to create strategies.
 

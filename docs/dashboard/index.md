@@ -1,7 +1,7 @@
 ## Overview
 
-!!! warning "Deprecation Notice"
-    A new browser-based dashboard built on the [Condor](../condor/index.md) architecture will replace this Streamlit-based dashboard. The new version will provide a modern web interface with the same functionality as the Condor Telegram bot.
+!!! warning "Not Actively Maintained"
+    This Streamlit-based dashboard is no longer actively maintained by Hummingbot Foundation, but the open source [repo](https://github.com/hummingbot/dashboard) remains available and usable. We recommend [Condor](../condor/index.md) instead, which provides the same functionality through its web dashboard and Telegram bot, along with **routines** for automated workflows.
 
 [Hummingbot Dashboard](https://github.com/hummingbot/dashboard) is an open-source graphical interface designed to help users manage their portfolios across multiple exchanges, configure and backtest strategies, and deploy and manage multiple Hummingbot instances efficiently.
 
@@ -12,8 +12,8 @@ Dashboard simplifies bot management and is fully compatible with [Controllers](.
 ## Highlights
 
 * **Accessible Framework**: Uses the [Streamlit](https://streamlit.io/) open source data visualization framework
-* **Backtestable Strategies**: Configure and [backtest](./backtest.md) strategy controllers
-* **Multi-Bot Deployment**: [Deploy](./deploy.md) and [manage](./instances.md) multiple bot instances and monitor their real-time performance
+* **Backtestable Strategies**: Configure and [backtest](backtest.md) strategy controllers
+* **Multi-Bot Deployment**: [Deploy](deploy.md) and [manage](instances.md) multiple bot instances and monitor their real-time performance
 * **API-Powered**: Built on top of the new Hummingbot API for reliable bot management
 
 ## Getting Started

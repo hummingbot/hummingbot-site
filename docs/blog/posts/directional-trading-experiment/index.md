@@ -50,18 +50,18 @@ By merging these indicators, we seek to pinpoint potential mean reversion points
 
 Our strategy employs the Directional Framework, which combines two novel features in Hummingbot: [Candles Feed](../../../strategies/v2-strategies/candles/index.md) and [PositionExecutor](../../../strategies/v2-strategies/executors/positionexecutor.md).
 
-![](./Screen-Shot-2023-04-21-at-3.04.45-PM.png)
+![](Screen-Shot-2023-04-21-at-3.04.45-PM.png)
 
 These components enhance the creation of custom indicators and self-executing positions, leading to a more efficient trading strategy.
 
 1. **CandlesFeed**: This feature enables the generation of custom indicators using historical and real-time exchange data. In our experiment, CandlesFeed calculates the MACD and Bollinger Bands values, forming our custom indicator that signals potential mean reversion points.
 2. **PositionExecutor**: This tool enables Hummingbot to execute positions autonomously based on custom indicator signals. It manages Long and Short positions, considering the decision rules derived from the %BB and MACD histogram values, and the current MACD line value. Integrated with the [Triple Barrier Method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html) from [Advances in Financial Machine Learning](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089?ref=hummingbot.org), our strategy effectively manages positions while maintaining a defined risk profile.
 
-![](./Screen-Shot-2023-04-21-at-3.04.54-PM-1.png)
+![](Screen-Shot-2023-04-21-at-3.04.54-PM-1.png)
 
 We set dynamic Take Profit and Stop Loss based on the standard deviation of the last 100 periods, multiplied by 1.5 for TP and 0.75 for SL, adapting to market conditions. The time limit was established at 55 minutes.
 
-The [strategy code](https://gist.github.com/cardosofede/54d31cae1d9bb0e6d70ead6191ca05d6?ref=blog.hummingbot.org) is available for further customization.
+The [strategy code](https://gist.github.com/cardosofede/54d31cae1d9bb0e6d70ead6191ca05d6) is available for further customization.
 
 ## Selecting the Right Market
 
@@ -78,7 +78,7 @@ Binance Futures, a Gold connector in Hummingbot, ensures high-standard maintenan
 
 ## Performance Analysis
 
-![](./Untitled.png)
+![](Untitled.png)
 
 - **Start Date**: 03/11/2023 | **End Date**: 03/22/2023
 - **Total Uptime**: 11 days, 16:42:14
@@ -90,7 +90,7 @@ During this 11-day experiment, our bot maintained a low-risk profile with minima
 
 ## Participate and Earn Rewards
 
-We're pleased to announce that by contributing your Strategy Experiments, you're eligible for rewards from our 1 million HBOT token pool, allocated through the [HGP-33: Event & Content Incentives 2023](https://snapshot.org/?ref=blog.hummingbot.org#/hbot.eth/proposal/0x743f6d94a36dd4a70ab0bb64648c229f538ae0ff3ddd56da0fe47d90d2d920f7) governance proposal.
+We're pleased to announce that by contributing your Strategy Experiments, you're eligible for rewards from our 1 million HBOT token pool, allocated through the [HGP-33: Event & Content Incentives 2023](https://snapshot.org/?#/hbot.eth/proposal/0x743f6d94a36dd4a70ab0bb64648c229f538ae0ff3ddd56da0fe47d90d2d920f7) governance proposal.
 
 To participate, contact our community manager Carlito in public channels like #general or #content on our [official Discord](https://discord.gg/hummingbot)!
 

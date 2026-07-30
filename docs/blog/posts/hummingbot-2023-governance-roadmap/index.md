@@ -57,7 +57,7 @@ The regular monthly Polls process that we will start in January is designed to c
 
 ### 3. Let users earn HBOT for valuable community work
 
-One of the success stories from our many governance experiments during 2022 was [Bounties](https://docs.hummingbot.org/bounties/). Since starting the program in August, we have awarded more than 40 developer bounties to 20+ unique community developers.
+One of the success stories from our many governance experiments during 2022 was [Bounties](https://hummingbot.org/bounties/). Since starting the program in August, we have awarded more than 40 developer bounties to 20+ unique community developers.
 
 We found that when work can be structured into a composable package, such as fixing a bug that can be clearly reproduced or upgrading an exchange connector for which an existing template already exists, community developer bounties can be a great solution. However, when the objective is less clear or the work is ill-defined, involving external developers devolves into a project management nightmare.
 
@@ -65,7 +65,7 @@ The main lesson that we have learned is to create well-defined bounties that rew
 
 One change from 2022 we plan to implement are vesting contracts for developer bounties. We plan to begin vesting developer bounties over a 3-year period, in order to align the incentives of the developer with the growth of the Hummingbot community.
 
-In addition, the [Community Incentives experiment](https://snapshot.org/?ref=blog.hummingbot.org#/hbot-ip.eth/proposal/0x588779179d0229db7de2de9e231f3baafb1fcdbde16bcc93bf34b65280e36a1a) seems to be a great way to ensure Discord support, so we plan to expand that program.
+In addition, the [Community Incentives experiment](https://snapshot.org/?#/hbot-ip.eth/proposal/0x588779179d0229db7de2de9e231f3baafb1fcdbde16bcc93bf34b65280e36a1a) seems to be a great way to ensure Discord support, so we plan to expand that program.
 
 **Sub-goals:**
 
@@ -89,7 +89,7 @@ In Q1 2023, we plan to engage with centralized exchanges to make the HBOT token 
 
 ## Epoch 3 Changes
 
-![](./brett-jordan-g_hBWtgmDWU-unsplash.jpg)
+![](brett-jordan-g_hBWtgmDWU-unsplash.jpg)
 
 ### Epochs will be quarterly rather than semi-annually
 
@@ -106,9 +106,9 @@ We don’t want to create a forced incentive to give away HBOT. Rather, our goal
 
 The first set of polls will occur from January 4 to 11, 2023:
 
-- CEX Connectors: Rank [CEX connectors](https://docs.hummingbot.org/exchanges/?ref=blog.hummingbot.org) gold/silver/bronze or remove from codebase
-- DEX Connectors: Rank [DEX connectors](https://docs.hummingbot.org/gateway/?ref=blog.hummingbot.org) gold/silver/bronze or remove from codebase
-- Core Strategies: Rank [Strategies](https://docs.hummingbot.org/strategies/?ref=blog.hummingbot.org) core/community or remove from codebase
+- CEX Connectors: Rank [CEX connectors](https://hummingbot.org/exchanges/) gold/silver/bronze or remove from codebase
+- DEX Connectors: Rank [DEX connectors](https://hummingbot.org/gateway/) gold/silver/bronze or remove from codebase
+- Core Strategies: Rank [Strategies](https://hummingbot.org/strategies/) core/community or remove from codebase
 - Priority Issues: Prioritize 5 Github issues or pull requests
 
 By holding Polls at the same week every month afterwards and making the experience fun, competitive, and engaging for the community, we hope that, over time, HBOT holders will see the tremendous impact that their votes can have.

@@ -9,7 +9,7 @@ categories:
 
 # Introducing V2 Strategies
 
-![](./cover.png)
+![](cover.png)
 
 We are excited to formally introduce the V2 Strategy Framework! After months of testing by us and our community, we are confident that using this new framework to design and deploy strategies will improve your algo trading P&L!
 
@@ -29,7 +29,7 @@ Key Features:
 
 ## Architectural Breakdown: The Building Blocks of V2 Strategies
 
-![](./architecture.png)
+![](architecture.png)
 
 An ecosystem of interconnected components let users customize their V2 Strategies:
 
@@ -45,15 +45,15 @@ The true test of any framework's efficacy is its performance in the live market.
 
 His strategy traded across 3 markets on Binance Futures and generated a positive P%L in each market. Here was one such market analyzed using the Strategy Performance page in [Dashboard](../../../dashboard/index.md):
 
-![Trading Strategy Results](./performance-1.jpg)
+![Trading Strategy Results](performance-1.jpg)
 
-![Binance Futures PnL](./performance-0.jpg)
+![Binance Futures PnL](performance-0.jpg)
 
 These results, backed by data, serve as a testament to the capabilities inherent in the V2 Strategy Framework. It's a clear indication that with the right tools and approach, the strategies you build can dynamically align with market movements to capture opportunities.
 
 ## Mastering V2 Strategies: Join Botcamp
 
-![](./botcamp-nov-7.png)
+![](botcamp-nov-7.png)
 
 To dive deeper into the world of V2 Strategies and stay abreast of the latest developments, we invite you to enroll in [Botcamp](https://www.botcamp.xyz/). With three live events every month, this program is designed to teach you the intricacies of designing, backtesting, and deploying V2 Strategies, ensuring you are well-equipped to navigate the evolving landscape of algorithmic trading with Hummingbot.
 

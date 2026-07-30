@@ -51,13 +51,13 @@ Liquidity bounties also help token issuers **boost liquidity across multiple exc
 
 ## Announcing ONE Makers, the liquidity bounty for Harmony Protocol
 
-![](./harmony-hummingbot.jpeg)
+![](harmony-hummingbot.jpeg)
 
 We're incredibly pumped to be working with our close friends at [Harmony Protocol](https://harmony.one/) for the first liquidity bounty. A fast and scalable Layer 1 protocol, Harmony has a strong technical team from Google, Apple, and Amazon who is laser-focused on shipping product. Less than a year after launching, they are already live on mainnet with real working dApps that offer seamless UX while maintaining core state on a sharded blockchain.
 
 But I think the secret to their success lies in their dedication to growing a large, global community that values technical rigor. Harmony began as a weekly gathering of former Googlers and friends who got together to discuss academic research into machine learning and blockchain. In fact, it was at one of these gatherings in early 2017 that Carlo, Martin, and I all met and started CoinAlpha, the company behind Hummingbot.
 
-![Harmony, Hummingbot, and friends at a 2017 meetup](./tgi.jpg)
+![Harmony, Hummingbot, and friends at a 2017 meetup](tgi.jpg)
 
 Today, the Harmony community spans the globe. Reflecting the highly technical nature of the team and the project, there is a disproportionate number of developers, data scientists, and others with the technical acumen to run algorithmic trading software like Hummingbot, which makes Harmony the ideal initial partner for Liquidity Bounties.
 

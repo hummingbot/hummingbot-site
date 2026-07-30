@@ -1,5 +1,8 @@
 # Orca
 
+!!! tip "Hackathon Sponsor"
+    Orca is a sponsor of the [Agent Builders Cup](../../release-notes/2.16.0.md#agent-builders-cup-hackathon), a Hummingbot strategy hackathon with a \$20,000 total prize pool. Build an agent that trades on Orca and apply to the Orca team at [botcamp.xyz/hackathons](https://www.botcamp.xyz/hackathons)!
+
 ## 🛠 Connector Info
 
   - **Folder**: [https://github.com/hummingbot/gateway/tree/development/src/connectors/orca](https://github.com/hummingbot/gateway/tree/development/src/connectors/orca)

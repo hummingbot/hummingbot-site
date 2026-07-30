@@ -29,7 +29,7 @@ We are proud to have completed several key items from our roadmap:
 To ensure transparency and keep our community informed, we have created a public GitHub project called [Hummingbot Roadmap](https://github.com/orgs/hummingbot/projects/12).
 
 
-![](./Screen-Shot-2023-05-02-at-3.00.20-PM.png)
+![](Screen-Shot-2023-05-02-at-3.00.20-PM.png)
 
 Here, you can track our progress and plans for the year. You can click on each card to expand it and see details about the tasks entailed.
 

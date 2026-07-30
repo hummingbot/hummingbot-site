@@ -50,7 +50,7 @@ There have been a number of blogs and studies into "<u>impermanent loss</u>, try
 
 The analyses typically show a chart that looks like the following:
 
-![](./image1.png)
+![](image1.png)
 
 *Source: [Uniswap: A Good Deal for Liquidity Providers?](https://medium.com/@pintail/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2)*
 
@@ -64,7 +64,7 @@ Once trading occurs resulting in prices moving up or down (movement along the x-
 
 **Hard to measure performance**: monitoring profits and benchmarking for a liquidity provider is not so straight forward. If the asset price moves higher, the pool value goes up.  Below is another way of looking at the liquidity pool value; rather than looking at the change only (from above), the following graph shows the absolute value of the pool (blue) after 200 simulated trades, compared to the value of the original assets (red) if there were no trades (i.e. HODL):
 
-![](./image3.png)
+![](image3.png)
 
 When prices go up, many liquidity providers may be happy their portfolio value increased, and they may not realize or focus on the fact that actually the value of their assets would be *even higher* had they not done anything.  If asset price goes down, well… just blame it on the market.  Doing something versus not doing something just gets lost in the broader move in the market!  Also, some liquidity providers may just trust that the 0.3% is enough compensation and better than “doing nothing”, but in reality as already mentioned, the 0.3% protocol fee is likely insufficient to compensate liquidity providers for just about any asset with any price volatility (i.e. any asset other than a stable coin).
 
@@ -72,7 +72,7 @@ When prices go up, many liquidity providers may be happy their portfolio value i
 
 **Token rewards**:  OK so the above rationale is probably not compelling for the majroity general public.  So now we’re getting to the real reason AMM protocols have exploded in the past few months.  It comes down to…*cold hard cash*. Or rather, **token rewards**.
 
-![](./image5.jpg)
+![](image5.jpg)
 
 AMMs really blew up when protocols like [Balancer](https://balancer.finance/) and [Curve.Fi](http://curve.Fi) introduced liquidity mining rewards. In addition to the protocol trade fees, liquidity providers received a generous allocation of protocol tokens, which compensated for impermanent loss, and then some. The generous liquidity mining incentives made it so that liquidity providers no longer really had to think too much about impermanent loss.
 
@@ -83,7 +83,7 @@ AMMs really blew up when protocols like [Balancer](https://balancer.finance/) an
 
 #### Hummingbot Miner: liquidity mining for centralized exchanges
 
-![](./image2.jpg)
+![](image2.jpg)
 
 [Hummingbot Miner](https://miners.hummingbot.io) is our platform where we enable token issuers and exchanges to fund rewards pools that can be earned by market makers and traders for providing liquidity and order book depth for specific tokens. Unlike the AMMs, our platform is not a smart contract protocol; it is trading data infrastructure that enables _**liquidity mining on centralized exchanges.**_
 

@@ -25,7 +25,7 @@ Liquidity mining's objective is to align the interests of market makers (the liq
 
 In order to align risk and reward, there are three main parameters that we use in liquidity mining to determine market maker compensation: (1) time: placing orders in the order book consistently over time, (2) spreads, and (3) order sizes. Our rewards methodology rewards market makers more for placing orders consistently over time in the order book, placing orders with tighter spreads and with larger sizes:
 
-![](./rewards-allocation-chart.png)
+![](rewards-allocation-chart.png)
 
 *Figure 1: Rewards allocation based on time, spreads, and order size*
 
@@ -53,7 +53,7 @@ This methodology also inherently rewards market makers who continue to make orde
 
 In our [liquidity mining whitepaper](../../../liquidity-mining.pdf), we introduced the spread density function ρ(s) for spread s (Equation 1) as a way of mapping spreads to rewards:
 
-![](./spread-density-function-graph.png)
+![](spread-density-function-graph.png)
 
 *Figure 2: Spread density function: weighting spreads for reward allocation*
 
@@ -77,15 +77,15 @@ Market maker compensation is set in direct proportion to the market maker’s or
 
 We first determine the base for reward allocation, which is the sum of all miners’ placed order sizes weighted by the spread factor. For all orders and all miners:
 
-![](./2-total-snapshot-weight.png)
+![](2-total-snapshot-weight.png)
 
 This value is used as the base for determining each individual miner’s allocation. The miner’s allocation (Equation 4) is the proportion of the miner’s own order weights (Equation 3) to the total snapshot order weight:
 
-![](./3_4-miners-allocation.png)
+![](3_4-miners-allocation.png)
 
 Finally, the miner’s compensation for the snapshot period is the amount of rewards available for that period weighted by the miner’s reward allocation percentage:
 
-![](./5-miners-reward.png)
+![](5-miners-reward.png)
 
 ## Economic Comparison: Annualized Return
 
@@ -96,15 +96,15 @@ Since market making requires inventory (quote currency required to place bid ord
 
 In liquidity mining, we calculate this return for every period and display a live rate (the most recently calculated rate); since each period is only for a short period of time (e.g. 1 minute), we also display a time series to show trends and changes in this rate over longer periods of time.
 
-![](./6_7-liquidity-mining-return.png)
+![](6_7-liquidity-mining-return.png)
 
 Specifically for one minute snapshots, the annualized return would be:
 
-![](./8-annualized-return.png)
+![](8-annualized-return.png)
 
 This annualized return can then be used to directly compare the economics of liquidity mining vs. HOLDing (0% return), staking, and lending. In the simulation-based analysis in the [liquidity mining whitepaper](../../../liquidity-mining.pdf), we showed that users could potentially earn 10-50% from liquidity mining.
 
 Ultimately the market and levels of participation will determine the equilibrium rates, but our Hummingbot Miners web app will show users real-time rates of return available from running Hummingbot in various markets so that they can decide to participate when rates are attractive vis-a-vis alternative uses of inventory.
 
-![](./8-markets-view.png)
+![](8-markets-view.png)
 

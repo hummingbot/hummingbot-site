@@ -7,8 +7,8 @@
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | Supports testnet
 | [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available | 
-| [🕯 Perp Candles Feed](#perp-candles-feed) | Not available | 
+| 🕯 Spot Candles Feed | Not available | 
+| 🕯 Perp Candles Feed | Not available | 
 
 ## ℹ️ Exchange Info
 

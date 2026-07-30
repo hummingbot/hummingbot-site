@@ -46,12 +46,12 @@ We have created a [public calendar](https://calendar.google.com/calendar/embed?s
 
 ### Important changes by release
 
-We release a new version of Hummingbot every 4 weeks, and we are constantly improving and refactoring the codebase. Starting with the [v0.30.0 release notes](https://docs.hummingbot.org/release-notes/), we now include sections that communicate relevant information for developers.
+We release a new version of Hummingbot every 4 weeks, and we are constantly improving and refactoring the codebase. Starting with the [v0.30.0 release notes](https://hummingbot.org/release-notes/), we now include sections that communicate relevant information for developers.
 
 
 ### New dev channels in Discord
 
-![](./discord.png)
+![](discord.png)
 
 We have created a new Developers section on our [Discord chat server](https://discord.hummingbot.io) with channels for different topics. Please ask your technical questions there, and our team will do our best to get them answered!
 

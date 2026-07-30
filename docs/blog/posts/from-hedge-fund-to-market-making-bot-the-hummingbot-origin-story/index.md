@@ -45,13 +45,13 @@ I was fortunate to get into an engineering master's program at Stanford, so I qu
 
 My friend Max and I started a company called [doxIQ](https://www.crunchbase.com/organization/doxiq), which used computer vision to extract tables and other structured data from PDF files.  Eventually doxIQ was acquired by Nitro, a larger PDF company. After the acquisition, both Max and I joined Nitro, where I led product management and he led research engineering. In 2017, I caught the startup bug again and ended up leaving Nitro and started CoinAlpha.
 
-![image1](./image1.jpg)
+![image1](image1.jpg)
 
 ## How did Feng and his co-founders start CoinAlpha?
 
 I remember Max telling me in 2013, “Hey you gotta look into this Bitcoin thing!” I remember initially thinking that it was all pointless and just a scam; clearly I was very bearish. In fact, I think I posted on my Facebook feed something like *“How do I find a way to short this thing?”*
 
-![facebook-short-btc](./facebook-short-btc.png)
+![facebook-short-btc](facebook-short-btc.png)
 
 It wasn't until the Ethereum whitepaper came out in 2014 that I really started paying attention. I realized that smart contracts had the ability to put financial products like derivatives, loans and everything else on the blockchain, which could make a more efficient, transparent and open system. Having experienced the 2008 financial crisis firsthand, I knew that one of the things that exacerbated the collapse was the fact that no one knew what their exposure to Lehman Brothers truly was.
 
@@ -82,7 +82,7 @@ While we flew to Washington DC and explained to the SEC what we were trying to d
 
 ## Reflections on blockchain-based funds
 
-![image4](./image4.jpg)
+![image4](image4.jpg)
 
 Even before the SEC settlement, we had realized that this initial direction of creating blockchain-based funds was probably a bit too early for the market. Since we had already decided to pivot, it was a natural outcome to close our hedge fund.
 
@@ -128,7 +128,7 @@ Since Hummingbot users can earn arbitrage profits by
 
 ## Why open source Hummingbot rather than use it ourselves?
 
-![image3](./image3.jpg)
+![image3](image3.jpg)
 
 Hummingbot is an experiment; **no one has ever created an open-source market making bot of this scale before**, primarily because most quant funds and other professional trading firms are very secretive and for every bit of IP they produce, they want to keep it in-house.
 

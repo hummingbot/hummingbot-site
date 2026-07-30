@@ -1,6 +1,6 @@
 See below for reference docs that help you create Scripts that inherit from the [`ScriptStrategy`](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy/script_strategy_base.py) base class.
 
-This Script Strategies Cheatsheet is also available in [PDF form](./cheatsheet.pdf).
+This Script Strategies Cheatsheet is also available in [PDF form](cheatsheet.pdf).
 
 Watch the full video that accompanies this page:
 

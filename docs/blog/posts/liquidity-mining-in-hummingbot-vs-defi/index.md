@@ -12,7 +12,7 @@ tags:
 
 ![cover](cover.jpg)
 
-The need for liquidity is as constant a theme in the cryptocurrency market as are death and taxes.  However, as we have previously written in other blogs (such as [this one](../../../blog/posts/introducing-liquidity-mining-a-marketplace-for-market-makers/index.md), the way in which token issuers and exchanges procure market making in the crypto market is broken.  The reliance on high cost, price gouging crypto market makers is just not sustainable or scalable. This led us to propose the [concept of liquidity mining](http://bit.ly/liquiditymining) and launch the [Hummingbot Miners](https://miners.hummingbot.io) platform for decentralized and crowd-sourced market making.
+The need for liquidity is as constant a theme in the cryptocurrency market as are death and taxes.  However, as we have previously written in other blogs (such as [this one](../introducing-liquidity-mining-a-marketplace-for-market-makers/index.md), the way in which token issuers and exchanges procure market making in the crypto market is broken.  The reliance on high cost, price gouging crypto market makers is just not sustainable or scalable. This led us to propose the [concept of liquidity mining](http://bit.ly/liquiditymining) and launch the [Hummingbot Miners](https://miners.hummingbot.io) platform for decentralized and crowd-sourced market making.
 
 We have been encouraged to see other projects experiment with community-based liquidity provision, most notably in DeFi with automated market makers (AMM).  Whether it’s called “liquidity mining” or “yield farming”, there has been a surge in activity in DeFi as protocols such as Compound, Synthetix, Balancer, Ampleforth, and Loopring aim to propel wider market adoption by rewarding their communities for providing liquidity.
 
@@ -25,14 +25,14 @@ With this heightened interest in liquidity mining, we explain in this blog how o
 We first begin with defining the goal.  There are several metrics that are generally associated with the concept of “liquidity”, such as traded volume, bid-ask spread, and slippage.  What these metrics aim to do is to quantify _**how easily and how efficiently**_ an asset is traded.
 
 Below is an example of two order books with similar characteristics: same mid-price, best bid/ask prices, bid-ask spread.  However, they differ in that Asset B’s order book has 5x the liquidity (order book depth) of Asset A’s, i.e. for each price level, Asset B’s order book has 5x more orders than Asset A’s.  The graphs and summary table below show the impact of a taker buy order to buy the same quantity (500) of each token on each order book.  The blue bars represent the ask orders consumed by such an order:
-![](./Asset-A-&-Asset-B.JPG)
-![](./Asset-A-&-Asset-B-Computation.JPG)
+![](Asset-A-&-Asset-B.JPG)
+![](Asset-A-&-Asset-B-Computation.JPG)
 
 Because Asset B is more liquid and has more order book depth: (1) I get a lower weighted average price (100.5 vs. 101.1, or $50,250 total spend vs $50,550) to buy 500 tokens which is closer to the mid-price, and in this example, is also the same as the best-ask price, and (2) mid-price is less affected (from 100 to 100.25 vs. 100.5) by the trade, which means the order book can absorb more trading with less price volatility.
 
 Even though both assets started at the same price (same mid-price, best bid/ask price, bid-ask spread), ultimately it is more expensive for me to purchase my target amount of Asset A because Asset A’s order book is thinner, less liquid, and less able to accommodate my trade amount.  Similarly, if I subsequently want to sell my 500 of holdings, again I get a worse price for selling Asset A:
-![](./Asset-A-&-Asset-B-2.JPG)
-![](./Asset-A-&-Asset-B-Computation-2.JPG)
+![](Asset-A-&-Asset-B-2.JPG)
+![](Asset-A-&-Asset-B-Computation-2.JPG)
 
 I am able to sell 500 of asset A and B and I receive an additional $300 for Asset B.  After the buy and sell transactions, I have incurred a loss of $1,100 for trading Asset A (spent $50,550 to buy and received $49,450 to sell) and only $500 for trading Asset B (purchased for $50,250 and sold for $49,750).  I incurred a lower friction cost to transact in Asset B.  As an investment, the price of Asset A will have to rise more than Asset B’s just to overcome the additional friction cost due to the lower liquidity.
 
@@ -52,7 +52,7 @@ _**Lack of liquidity can lead to exchange delistings**_: exchanges typically req
 
 In the example above, “providing liquidity” means creating maker / limit orders that add to order book depth.  By adding maker orders to populate an order book, liquidity providers perform the vital function of absorbing taker orders and facilitating trading for other market participants.  Traditionally, providing liquidity, or market making, was predominantly or entirely done by specialized actors: professional market makers, crypto funds, and, in some cases, exchanges themselves.
 
-In our whitepaper [Liquidity Mining](../../../blog/posts/liquidity-mining-whitepaper/index.md), we coined the term “liquidity mining”, which refers to a crowd-sourced, decentralized alternative to providing liquidity.  Rather than relying on specialized traders, liquidity mining sources liquidity from a network of actors, which may include a token issuer’s own community, other groups of traders such as the Hummingbot community, or, more broadly, members of the general trading/token-holding public.  Since market making is risky and requires the deployment/tying up of assets, liquidity mining needs to provide an incentive mechanism in order to solicit participation.
+In our whitepaper [Liquidity Mining](../liquidity-mining-whitepaper/index.md), we coined the term “liquidity mining”, which refers to a crowd-sourced, decentralized alternative to providing liquidity.  Rather than relying on specialized traders, liquidity mining sources liquidity from a network of actors, which may include a token issuer’s own community, other groups of traders such as the Hummingbot community, or, more broadly, members of the general trading/token-holding public.  Since market making is risky and requires the deployment/tying up of assets, liquidity mining needs to provide an incentive mechanism in order to solicit participation.
 
 While Hummingbot liquidity mining focuses on getting decentralized market makers to make markets on central limit order books (i.e., centralized and decentralized exchanges), protocols such as [Uniswap](https://uniswap.exchange), [Balancer](https://balancer.finance), and [Curve](https://curve.fi) also get decentralized liquidity providers to facilitate liquidity by contributing assets for use by automated market makers.
 
@@ -73,7 +73,7 @@ Hummingbot coined the term “liquidity mining” in a [whitepaper](../../../liq
 However, prior to this, there had been other experiments with incentivizing communities to provide liquidity:
 * Trading competitions on centralized exchanges like Binance, Huobi, and HitBTC were the predecessor to these.  The competitions typically rewarded users based on volume traded.
 * Synthetic’s Uniswap liquidity incentive campaign in spring 2019
-* Hummingbot’s [ONE Makers liquidity bounty program](../../../blog/posts/introducing-harmony-liquidity-bounties/index.md) for Harmony Protocol in summer 2019, our "liquidity bounties" pilot for liquidity mining.
+* Hummingbot’s [ONE Makers liquidity bounty program](../introducing-harmony-liquidity-bounties/index.md) for Harmony Protocol in summer 2019, our "liquidity bounties" pilot for liquidity mining.
 
 Subsequently in March 2020, we launched our new Hummingbot Miners platform, our implementation of liquidity mining as we outlined in our whitepaper for which we have already ran campaigns for 8 token issuers.
 
@@ -93,15 +93,15 @@ Uniswap was the first widely adopted automated market maker, though there were o
 
 The mechanics of an AMM is actually quite simple; below is a numerical example of a Uniswap-style contract (for reference, see this [AMM spreadsheet](https://bit.ly/amm-calc)).  We start out with a contract to trade two assets, Asset A and Asset B.  A liquidity provider (or group of liquidity miners in aggregate) have deposited 100 tokens of Asset A and 200 tokens of Asset B.  Uniswap is a “constant product market maker”, which means that the exchange rate used in trading is determined such that the product of the quantities of Asset A and Asset B should be equal before and after any trade.  In this example, the starting product is 20,000:
 
-![](./amm-1.jpg)
+![](amm-1.jpg)
 
 The following table illustrates the impact of a trader that trades Asset B (deposits 1 unit of Asset B into the contract) in exchange for receiving (withdrawing from the contract) some amount of Asset A:
 
-![](./amm-2.jpg)
+![](amm-2.jpg)
 
 The amount of Asset A that the trader receives is simply determined by a mathematical formula:
 
-![](./amm-eq.png)
+![](amm-eq.png)
 
 The AMM just solves for the amount of Asset A post trade that would keep the left and right sides of the equation equal, which in this case is 99.504.  As a result, the trader receives 0.496 of Asset A, which is the difference between the 100 starting balance and the 99.504 required new balance.
 
@@ -124,7 +124,7 @@ Similar to Uniswap, other liquidity mining protocols/campaigns such as Balance, 
 Balancer also differs from Uniswap in that it allows for multiple assets (up to 8) to be included and used in a single liquidity pool.
 
 ### Order book liquidity mining
-![](./Miners_App.JPG)
+![](Miners_App.JPG)
 
 Our liquidity mining platform [Hummingbot Miners](https://miners.hummingbot.io) is a form of liquidity mining that is not based on smart contracts.  Rather than relying on smart contracts, we use data systems and infrastructure to measure liquidity provider’s trading activity and contributions to liquidity on existing trading venues, i.e. centralized and decentralized exchanges.  While this is materially more complex than an AMM, the benefits are significantly more flexibility with wider-reaching applicability.  For example, this form of liquidity mining can be applied to centralized exchanges (in addition to DEXes), while incentive mechanisms can be customized to reward for specific actions by traders.  In addition, miners are engaging in a traditional form of market making, creating bid and ask orders on an exchange order book to create order book depth.
 
@@ -132,7 +132,7 @@ In order to enable this form of liquidity mining, we have developed two main com
 
 1. **the Hummingbot software client**: an open-source trading bot with tools and trading strategies that allows anyone to act as a market maker.
 
-![](./Hummingbot.JPG)	
+![](Hummingbot.JPG)	
 	
 2. **Liquidity mining infrastructure**: data collection and analysis infrastructure that allows us to track and analyze orders created by liquidity miners in order to administer incentive and rewards mechanisms.
 
@@ -148,4 +148,4 @@ The end result is that rewards are designed to reward actions that create benefi
 
 #### Summary comparison of liquidity mining alternatives
 
-![](./comparison.jpg)
+![](comparison.jpg)

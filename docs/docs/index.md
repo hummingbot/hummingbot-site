@@ -6,13 +6,13 @@ It is designed to be modular and extensible, allowing users to automate any trad
 
 Choose your path based on your needs:
 
-- **[Condor Quickstart](../installation/condor.md)** - Recommended for Trading Agents, cloud deployments, multi-bot management, and modern interfaces (Telegram, MCP)
-- **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)** - Best for local usage, learning Hummingbot, and running single bot instances
+- **[Condor Quickstart](../installation/condor.md)** - Recommended for Trading Agents, cloud deployments, multi-bot management, and modern interfaces (Telegram, web dashboard)
+- **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)** - Best for local usage, learning Hummingbot, and running single bot instances with [`hbot`](../client/hbot-cli.md)
 
 !!! note "For Developers"
-    If you're a developer looking to build custom strategies or exchange connectors, see [Source Installation](../client/installation.md#source-installation) for Hummingbot Client or [Hummingbot API Installation](../hummingbot-api/installation.md) for the API.
+    If you're a developer looking to build custom strategies or exchange connectors, see [Source Installation](../client/installation.md) for Hummingbot Client or [Hummingbot API Installation](../hummingbot-api/installation.md) for the API.
 
-Afterwards, check out the **Academy** category in the [Hummingbot Blog](../blog/category/academy) for blog posts and step-by-step tutorials on how to use Hummingbot.
+Afterwards, check out the **Academy** category in the [Hummingbot Blog](../academy/index.md) for blog posts and step-by-step tutorials on how to use Hummingbot.
 
 ## Strategies
 
@@ -41,14 +41,14 @@ All Hummingbot Foundation code is maintained and stored in repositories in the o
 
 The Hummingbot framework is comprised of multiple code repositories, hosted on the [Hummingbot Foundation Github](https://github.com/hummingbot), that are maintained by the Foundation alongside individual community members. All code is open sourced under the Apache 2.0 or MIT licenses.
 
-Hummingbot started as a command line interface (CLI) tool, and the [Hummingbot Client](../client/index.md) is still the basic way to interact with the framework. 
+Hummingbot started as a command line interface (CLI) tool. The recommended entry point is now **[`hbot`](../client/hbot-cli.md)** for automation and scripts; the [interactive client](../client/index.md) remains available for manual use and Gateway/DEX workflows. 
 
 Today, the framework comprises companion modules to assist with other aspects of crypto algorithmic trading:
 
 * [Gateway](../gateway/index.md): Middleware to interact with AMM connectors and other DeFi protocols on various blockchains
 * [Dashboard](../dashboard/index.md): A web-based user interface for deploying multi-bot trading strategies
 * [Hummingbot API](https://github.com/hummingbot/hummingbot-api): Comprehensive API that exposes trading and bot deployment endpoints for Dashboard and other clients
-* [Hummingbot MCP](https://github.com/hummingbot/mcp): Model Context Protocol (MCP) server that lets you use AI assistants to interact with Humnminbot API
+* [Hummingbot MCP](https://github.com/hummingbot/mcp): Model Context Protocol (MCP) server that lets you use AI assistants to interact with Hummingbot API
 * [Quants Lab](https://github.com/hummingbot/quants-lab): A sandbox for users to conduct research and backtest trading strategies using Python notebooks
 
 

@@ -25,7 +25,7 @@ Today, we are excited to official launch [Hummingbot Dashboard](https://github.c
 
 Dashboard is the one of the final pieces in the Hummingbot landscape. Hummingbot Foundation now maintain five open source code repositories, each serving a different technical role in the ecosystem:
 
-![](./Screen-Shot-2023-06-14-at-4.18.40-PM.png)
+![](Screen-Shot-2023-06-14-at-4.18.40-PM.png)
 
  - [Hummingbot client](https://github.com/hummingbot/hummingbot): Python engine that automates a trading process (bot)
  - [Gateway](https://github.com/hummingbot/gateway): Typescript middleware that helps bots connect to DEXs and blockchains
@@ -37,7 +37,7 @@ Dashboard is the one of the final pieces in the Hummingbot landscape. Hummingbot
 
 Best of all, everything is open source and free!
 
-![](./Screen-Shot-2023-06-14-at-9.06.43-PM.png)
+![](Screen-Shot-2023-06-14-at-9.06.43-PM.png)
 Early prototype of the Bot Orchestration dashboard
 
 ## Dashboard Roadmap
@@ -71,7 +71,7 @@ Achieving this vision would be impossible without the support of the global Humm
 
 That's why we are launching Hummingbot Dashboard as a community project, one that Foundation engineers will build in tandem with independent community developers from Day 1.
 
-Dashboard is well-suited to be a community project because each dashboard is its own folder. Since dashboards entail design and user research, we need more than just engineers involved. In addition, the [Streamlit](https://streamlit.io/?ref=blog.hummingbot.org) framework provides an easy way to create nice-looking dashboard in Python.
+Dashboard is well-suited to be a community project because each dashboard is its own folder. Since dashboards entail design and user research, we need more than just engineers involved. In addition, the [Streamlit](https://streamlit.io/) framework provides an easy way to create nice-looking dashboard in Python.
 
 To demonstrate our commitment to building Dashboard in public, we will livestream regular sprint planning calls on Discord and invite the community to participate and give feedback. A number of community members have already indicated interest in joining the initial Dashboard developer group, so we have scheduled the first kickoff call as a public Discord event for next week.
 

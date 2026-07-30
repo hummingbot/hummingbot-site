@@ -20,7 +20,7 @@ This guide explains how the Grid Strike strategy works and helps you decide when
 
 ## Strategy Overview
 
-![](./long-grid.png)
+![](long-grid.png)
 
 - **Grid-based Order Placement:** The strategy lets you place either a **Long Grid** or a **Short Grid** that places buy/sell orders across a defined price range
 - **Automated Risk Management:** Each side utilizes Grid Executors that automatically manages the risk of each position with configurable take profit, stop loss, and time limits
@@ -38,7 +38,7 @@ This guide explains how the Grid Strike strategy works and helps you decide when
 
 Before you run Grid Strike, make sure you have Hummingbot installed, either:
  
-* [**Hummingbot Client**](../../../client/index.md): See [Installation Guide](../../../installation/index.md) or [Source Installation](../../../client/installation.md#source-installation) to get started
+* [**Hummingbot Client**](../../../client/index.md): See [Installation Guide](../../../installation/index.md) or [Source Installation](../../../client/installation.md) to get started
 * [**Hummingbot API + Dashboard**](../../../hummingbot-api/index.md): See the [Hummingbot Dashboard Quickstart Guide](../quickstart-dashboard/index.md) for a guide with step-by-step setup instructions
 
 ### Create Controller Config 
@@ -57,7 +57,7 @@ See [Strategy Configuration](#strategy-configuration) below for an in-depth guid
 
 ### Create Script Config 
 
-Once you are satisfied with your Grid Strike configuration, add the name of the file to the [Loader Script](../../../strategies/scripts/examples.md#v2-controller-loader):
+Once you are satisfied with your Grid Strike configuration, add the name of the file to the [Loader Script](../../../strategies/scripts/examples.md#v2-orchestration):
 
 ```
 create --script-config v2_with_controllers
@@ -97,7 +97,7 @@ When you start the Grid Strike strategy, it first looks at your configuration to
 
 Run the `status` command (or `status --live` for constant refresh) to get an in-depth overview of the strategy performance:
 
-[![image-1.png](./image-1.png)](./image-1.png)
+[![image-1.png](image-1.png)](./image-1.png)
 
 When an order gets filled and opens a position, the Triple Barrier system immediately takes over to manage that specific trade. This system acts a personal risk manager for each filled order or position: it will automatically close the position if it reaches the `take_profit` or if it moves from the set `stop_loss` against you. This happens automatically without you having to watch the screen. 
 
@@ -144,7 +144,7 @@ triple_barrier_config:
 
 ### Key Parameters
 
-[![](./long-grid-order-executor.png)](./long-grid-order-executor.png)
+[![](long-grid-order-executor.png)](./long-grid-order-executor.png)
 
 Here are some of the most important settings:
 
@@ -174,7 +174,7 @@ Make sure to set the most important parameters like:
 
 ### Triple Barrier Parameters
 
-![](./triple_barrier.png)
+![](triple_barrier.png)
 
 Grid Strike creates Grid Executors that implement the Triple Barrier Method, similar to [Position Executors](../../../strategies/v2-strategies/executors/positionexecutor.md). Set these parameters to define how each order is managed if it is filled:
 
@@ -240,7 +240,7 @@ Your final grid will be a balance of these three factors. The bot will create th
 
 ### Long vs Short Grids
 
-[![](./long-vs-short-grids.png)](./long-vs-short-grids.png)
+[![](long-vs-short-grids.png)](./long-vs-short-grids.png)
 
 Think of Grid Strike as a way to “ride the wave” of a trend:
 

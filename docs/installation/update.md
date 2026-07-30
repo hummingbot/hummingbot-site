@@ -1,6 +1,6 @@
 # Updating to New Versions
 
-Hummingbot Foundation actively maintains all repositories in the Hummingbot ecosystem and ships versioned releases of Hummingbot Client and Gateway monthly. These releases work with user interfaces like Condor and MCP, add new exchange connectors and strategies, and include bug fixes and API updates.
+Hummingbot Foundation actively maintains all repositories in the Hummingbot ecosystem and ships versioned releases of Hummingbot Client and Gateway monthly. These releases work with the Condor AI harness, add new exchange connectors and strategies, and include bug fixes and API updates.
 
 This page shows you how to update your installation to the latest version.
 

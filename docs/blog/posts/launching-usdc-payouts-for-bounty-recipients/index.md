@@ -35,7 +35,7 @@ As part of this transition, we are making it easy for you to choose how you'd li
 
 In the [AML Policy form](https://forms.gle/ZDKtkSLF7VSGYMBo9) that you fill out to earn HBOT bounties, there is now an option to receive your bounties in either HBOT or USDC:
 
-![](./Preferred-Bounty-Denomination.png)
+![](Preferred-Bounty-Denomination.png)
 
 Please ensure you complete this form accurately, as this will determine how your bounty rewards are processed and distributed.
 

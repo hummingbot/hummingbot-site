@@ -5,9 +5,9 @@
 
 | Component | Status | Notes | 
 | --------- | ------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | Not available |
+| 🔀 Spot Connector | Not available |
 | [🔀 Perp Connector](#perp-connector) | ✅ | Supports testnet |
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available |
+| 🕯 Spot Candles Feed | Not available |
 | [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ |
 
 ## ℹ️ Exchange Info

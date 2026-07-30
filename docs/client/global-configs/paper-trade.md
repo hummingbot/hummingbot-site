@@ -6,21 +6,20 @@ This feature allows users to test Hummingbot and simulate trading strategies wit
 
 ## Adding Exchanges
 
-Users can now add paper exchanges by adding the exchange of choice in `conf_client.yml`. Previously, it was only available for AscendEX, Binance, Gate io, and Kucoin. Users can find `conf_client.yml` in `hummingbot/conf/conf_client.yml`
+Users can add paper exchanges by listing them under `paper_trade_exchanges` in `conf_client.yml`. By default, paper trade is enabled for Binance, KuCoin, Kraken, and Gate.io. You can find `conf_client.yml` at `hummingbot/conf/conf_client.yml`.
 
-Add the paper trade exchange, for example kraken, to conf_client.yml:
+Add a paper trade exchange, for example Kraken, to `conf_client.yml`:
 
 ```
 paper_trade:
-  paper_trade_exchange:
+  paper_trade_exchanges:
     - binance
     - kucoin
-    - ascend_ex
-    - gate_io
     - kraken
+    - gate_io
 ```
 
-In the Hummingbot client, kraken_paper_trade should now be available when you select an exchange:
+In the Hummingbot client, `kraken_paper_trade` should now be available when you select an exchange:
 
 Enter your maker spot connector >>> kraken_paper_trade
 
@@ -41,21 +40,20 @@ To choose a different connector and go live, simply choose the exchange name wit
 
 ## Adding Paper Trade Balance
 
-By default, the paper trade account has the following tokens and balances which you can see when you run the `balance paper` command.
+By default, the paper trade account has the following tokens and balances, which you can see when you run the `balance paper` command.
 
 ```
 >>>  balance paper
 Paper account balances:
     Asset    Balance
-      DAI  1000.0000
-      ETH    10.0000
-      ONE  1000.0000
-     TUSD  1000.0000
-     USDC  1000.0000
-     USDQ  1000.0000
-     USDT  1000.0000
-     WETH    10.0000
-      ZRX  1000.0000
+      BTC     1.0000
+     DOGE 1000000.0000
+      ETH    20.0000
+     HBOT 10000000.0000
+      SOL   100.0000
+     USDC 100000.0000
+     USDT 100000.0000
+     WETH    20.0000
 ```
 
 When adding balances, specify the asset and balance you want by running this command `balance paper [asset] [amount]`.
@@ -70,14 +68,13 @@ Paper balance for BTC token set to 0.5
 Paper account balances:
     Asset    Balance
       BTC     0.5000
-      DAI  1000.0000
-      ETH    10.0000
-      ONE  1000.0000
-     TUSD  1000.0000
-     USDC  1000.0000
-     USDQ  1000.0000
-     USDT  1000.0000
-     WETH    10.0000
-      ZRX  1000.0000
+     DOGE 1000000.0000
+      ETH    20.0000
+     HBOT 10000000.0000
+      SOL   100.0000
+     USDC 100000.0000
+     USDT 100000.0000
+     WETH    20.0000
 ```
 
+You can also set default balances in `conf_client.yml` under `paper_trade.paper_trade_account_balance`.

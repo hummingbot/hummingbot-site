@@ -1,9 +1,9 @@
 document$.subscribe(() => {
     const instance = new Typewriter('#typewriter', {
         strings: [
-            'market makers', 
+            'market makers',
             'algo traders',
-            'liquidity miners',
+            'AI agents',
             'quant developers',
             'bot traders',
             'researchers',

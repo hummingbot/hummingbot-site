@@ -20,7 +20,7 @@ As one of the biggest investors of our time once said:
 
 "Risk comes from not knowing what you're doing." ~ Warren Buffett
 
-![Source: https://www.azquotes.com/quote/40644](./image3.png)
+![Source: https://www.azquotes.com/quote/40644](image3.png)
 
 All kinds of financial operations have varying degrees of risk, and market making is no different.
 
@@ -60,7 +60,7 @@ For example, let’s assume that you currently own 0.46820424 BTC and 14.6426 ET
 
 **Day 1 Inventory**
 
-![](./table1.PNG)
+![](table1.PNG)
 
 On the first day, the current value of your assets is $10,000. Even though you don't actually own any USD and only own BTC and ETH, you have the ability to convert your BTC and ETH to $10,000 at current market prices.
 
@@ -70,7 +70,7 @@ If you haven’t traded (HODL!), on day 2 you would still have the same amount o
 
 **Day 2 Inventory**
 
-![](./table2.PNG)
+![](table2.PNG)
 
 However, since the USD prices for these assets changed, the **inventory value** has gone down to $9,761.38. The BTC value went up, while the ETH value went down.
 
@@ -86,7 +86,7 @@ In contrast, a market maker tries to increase portfolio value over time by captu
 
 As I mentioned in the [first academy article](../what-is-market-making/index.md), the ideal situation for a market maker is when the price is moving without a trend:
 
-![](./image6.png)
+![](image6.png)
 
 When prices are trading within a range, the more likely a market maker's buys and sells being filled with equal frequency, and the more likely the market maker is able to accumulate incremental profits.
 
@@ -94,7 +94,7 @@ The trouble begins when the prices start to trend in one direction.
 
 For example, if the price starts to trend downward, his buy orders will start to be filled, but not the sell orders:
 
-![](./image8.png)
+![](image8.png)
 
 _Source: Our community member @Christian Feldmann_
 
@@ -130,7 +130,7 @@ Using `config inventory_skew_enabled` the bot will change the `order_amount` on 
 
 The target proportion of each asset on the inventory can be defined through the command `config inventory_target_base_pct` and how much the inventory can deviate from this proportion using `config inventory_range_multiplier`.
 
-![Inventory Image](./image4.png)
+![Inventory Image](image4.png)
 
 As can be seen above, there is more BTC than USDT on the inventory, and the bot is selling more than buying.
 
@@ -138,7 +138,7 @@ This parameter can be used as inventory protection, for example, if the market m
 
 Also, it is particularly useful, if you are trading a non-USD pair, (ETH-BTC for example), where the trader can evaluate the value of each asset paired with USD, and adjust the inventory skewness, if you think one of the assets will have a higher value in the future.
 
-![Inventory Image](./image9.png)
+![Inventory Image](image9.png)
 
 > Inventory skew is like an ongoing pendulum balancing act; once a trader accumulates more of one asset, Hummingbot adjusts order sizes (smaller buys, larger sells) to try to get back to the target holding amount, and vice versa.
 
@@ -152,13 +152,13 @@ For example, with a filled_order_delay = 300 when an order created by the bot is
 
 This helps to manage periods when prices are trending. For example, in the diagram below, in a case when prices are trending down, bid orders keep getting filled once orders are refreshed.
 
-![Inventory Image](./image10.png)
+![Inventory Image](image10.png)
 
 If this is repeated and continues to go on, the market maker could quickly end up accumulating large amounts of the asset within a matter of just a few order refresh cycles. In the example above, the trader has bought assets 5 times.
 
 By introducing a delay between filled orders and placing new orders, this spaces out orders and dampens the potential accumulation of assets, allowing for some time for price trends to stabilize.
 
-![Inventory Image](./image1.png)
+![Inventory Image](image1.png)
 
 You can see above, since the bid order in period 1 was filled, the bot didn’t place orders in periods 2, 3, and 4.  So in this downward price trend, the bot only bought twice (periods 1 and 5) whereas when filled order delay was not enabled, the bot would have bought in all five periods.
 
@@ -166,7 +166,7 @@ You can see above, since the bid order in period 1 was filled, the bot didn’t 
 
 Hanging orders is a function that instructs Hummingbot to treat buys and corresponding sell orders created at the same time as a pairing.  If one side gets filled, the bot keeps the other side of the pairing outstanding, creating the opportunity and possibility for that side to eventually get filled:
 
-![Inventory Image](./image7.png)
+![Inventory Image](image7.png)
 
 In the example above, the buy order for period 1 was filled. But since hanging orders mode was enabled, the original sell order from period 1 is not canceled during the refresh cycle (period 2) and remains outstanding. Meanwhile, the bot continues its operation of creating new orders (see periods 2 through 5). In the example, prices changed direction, and eventually at some point in the time, the hanging sell order was filled, around period 5.
 
@@ -176,7 +176,7 @@ The benefit of this strategy is that it creates the possibility of the pairings 
 
 The ping pong strategy is another strategy that tries to keep buys and sells balanced. It does so by creating orders only on the opposite side of an order that has been filled. For example:
 
-![Inventory Image](./image5.png)
+![Inventory Image](image5.png)
 
 Because the buy order from period 1 was filled, the bot stops placing buy orders and only places sell orders (periods 2-4).  Only when a sell order is eventually filled (period 4) will the bot resume creating both buy and sell orders (period 5).
 

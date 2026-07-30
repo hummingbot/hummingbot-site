@@ -7,9 +7,9 @@
 
 | Component | Status | Notes |
 | --------- | ------ | ----- |
-| [Router Connector](#router-connector) | ✅ | Smart Router |
-| [AMM Connector](#amm-connector) | ✅ | V2 Pools |
-| [CLMM Connector](#clmm-connector) | ✅ | V3 Pools |
+| [Router Connector](#router-endpoints) | ✅ | Smart Router |
+| [AMM Connector](#amm-endpoints) | ✅ | V2 Pools |
+| [CLMM Connector](#clmm-endpoints) | ✅ | V3 Pools |
 
 ## ℹ️ Exchange Info
 

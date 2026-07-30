@@ -16,7 +16,7 @@ tags:
 
 During the past nine months since we launched liquidity mining, we witnessed great participation from our ever-increasing miner community. Together, we’ve reached one milestone after another. In this post, we introduce one of our top liquidity miners, MrBig1964, to you. Hope you can learn something from him!
 
-![](./User_profile.png)
+![](User_profile.png)
 
 MrBig1964 is one of our Eagle Club members, who has been trading cryptocurrency and Forex for years. In his interview, he emphasizes the compounding effect of daily small profits (0.6-0.7% in his case) and suggests fellow traders do stay calm and do not be greedy. 
 

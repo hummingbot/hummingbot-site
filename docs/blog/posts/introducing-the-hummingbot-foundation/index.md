@@ -49,7 +49,7 @@ At CoinAlpha, the company behind the [Hummingbot open source project](https://gi
 
 In December 2018, we published a [whitepaper](../hummingbot-whitepaper/index.md) describing plans to build an open source tool called Hummingbot to "decentralize market making" and make available to everyone professional-grade algorithms and tooling previously available only to Wall Street hedge funds.
 
-![](./Screen_Shot_2021-10-01_at_1.38.58_PM.png)
+![](Screen_Shot_2021-10-01_at_1.38.58_PM.png)
 
 How market making works (source: [Hummingbot whitepaper](../hummingbot-whitepaper/index.md))
 
@@ -73,7 +73,7 @@ Over the past two years, our engineering and QA teams together with the open sou
 
 Despite being a small startup, CoinAlpha was able to devote these resources to Hummingbot because of **liquidity mining**, a model for decentralized, community-driven market making that we pioneered.
 
-![](./Screen_Shot_2021-10-01_at_1.54.19_PM.png)
+![](Screen_Shot_2021-10-01_at_1.54.19_PM.png)
 
 Liquidity mining creates a 2-sided marketplace for liquidity (source: [liquidity mining whitepaper](../liquidity-mining-whitepaper/index.md))
 
@@ -81,7 +81,7 @@ When we wrote the original liquidity mining whitepaper, the crypto liquidity ind
 
 In response, we built [Hummingbot Miner](https://miner.hummingbot.io/), a platform that lets token issuers and exchanges source liquidity from a decentralized community of Hummingbot users who run market making bots using their own capital. Since its inception in March 2020, Miner has been used by 3,300+ individual market makers to fill over $2.5 billion in trade volume for 84 token issuers.
 
-![](./fov.jpg)
+![](fov.jpg)
 
 *Hummingbot Miner filled trade volume since inception*
 
@@ -116,7 +116,7 @@ The Foundation’s primary role is to coordinate the ongoing maintenance and imp
 
 CoinAlpha will continue to maintain certain parts of the codebase, in addition to providing core maintenance services to the Foundation. However, our main focus will now shift to operating and developing Hummingbot Miner as well as other businesses that support the Hummingbot ecosystem.
 
-![](./All-hands_meeting_-_Oct_2021.png)
+![](All-hands_meeting_-_Oct_2021.png)
 
 ## Sustainability
 

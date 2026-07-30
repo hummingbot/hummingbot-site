@@ -21,7 +21,7 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 
 - **Docker** and Docker Compose installed
 - **Git** for cloning the repository
-- Python 3.10+ and Conda (for source installation only)
+- Python 3.12+ and Conda (for source installation only)
 - Exchange API keys (can be added after installation)
 - **[Tailscale](https://tailscale.com) account** (free tier is enough) — **required for production**; create an [auth key](https://login.tailscale.com/admin/settings/keys) and enable [MagicDNS](https://login.tailscale.com/admin/dns) before you install
 
@@ -67,13 +67,15 @@ On the **same machine** as the installer, the API is available at `http://localh
 
 Once installed, you can verify the API is running:
 
-### Check API health
+### Check API status
 
 On the host:
 
 ```bash
-curl http://localhost:8000/health
+curl http://localhost:8000/
 ```
+
+You should receive a JSON response such as `{"name":"Hummingbot API","version":"1.0.1","status":"running"}`.
 
 If Tailscale is enabled, confirm the sidecar joined your tailnet:
 
@@ -85,7 +87,7 @@ make tailscale-status
 From another device on the same Tailscale account:
 
 ```bash
-curl -u YOUR_USERNAME:YOUR_PASSWORD http://hummingbot-api:8000/health
+curl -u YOUR_USERNAME:YOUR_PASSWORD http://hummingbot-api:8000/
 ```
 
 ### Access API documentation

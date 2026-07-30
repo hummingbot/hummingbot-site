@@ -2,16 +2,19 @@
 
 This guide walks you through installing the Hummingbot Client using Docker, the simplest method for most users.
 
-For source installation or detailed configuration options, see [Client Installation](../client/installation.md).
+For source installation or detailed configuration options, see [Client Installation](../client/installation.md). For the full `hbot` reference, see [`hbot` CLI](../client/hbot-cli.md).
 
 ## What You'll Set Up
 
 By the end of this guide, you'll have:
 
-- **Hummingbot Client** - CLI-based trading bot for centralized exchanges (CEX)
-- **Gateway** (optional) - Middleware for trading on decentralized exchanges (DEX) like Uniswap, PancakeSwap, and Raydium
+- **Hummingbot Client + `hbot` CLI** — algorithmic trading bot for centralized exchanges (CEX), with `hbot` as the recommended non-interactive command line for running bots
+- **Gateway** (optional) — middleware for trading on decentralized exchanges (DEX) like Uniswap, PancakeSwap, and Raydium
 
 This setup is best for running a single bot instance on your local machine or learning how Hummingbot works.
+
+!!! tip "`hbot`: a new entry point into the Hummingbot engine"
+    Introduced in v2.16.0, `hbot` drives the same Hummingbot engine as the classic interactive client, but through a non-interactive command line — making it suitable for scripts, CI, and agent-driven workflows. See the [`hbot` CLI](../client/hbot-cli.md) reference for all commands.
 
 ## Prerequisites
 
@@ -50,11 +53,87 @@ cd hummingbot
 ```bash
 make setup
 make deploy
+make link-cli
 ```
 
-The `make setup` command configures your environment (and optionally enables Gateway for DEX trading). The `make deploy` command downloads the latest Hummingbot image and starts it in the background.
+The `make setup` command configures your environment (and optionally enables Gateway for DEX trading). `make deploy` downloads the latest Hummingbot image and starts it. `make link-cli` installs the `hbot` command on your host, which runs commands inside the container.
 
-## Step 3: Attach to Hummingbot
+Verify the install:
+
+```bash
+hbot --version
+```
+
+## Step 3: Set Your Password
+
+On first use, `hbot` prompts for a keystore password (or read it from `HBOT_PASSWORD` / `--password-stdin`). This password encrypts your exchange API keys — the same password used by the interactive client.
+
+```bash
+export HBOT_PASSWORD='your-secure-password'   # optional: avoid prompts in scripts
+```
+
+## Step 4: Run a Paper Trading Strategy
+
+Run your first bot with the `simple_pmm` market making script on a **paper trade** connector — it simulates trading against live Binance market data, so **no API keys are required**:
+
+```bash
+# Create a config for the simple_pmm script
+hbot create simple_pmm --name conf_btc.yml \
+  --set exchange=binance_paper_trade --set trading_pair=BTC-USDT
+
+# Start and monitor
+hbot start
+hbot status
+hbot logs -f
+```
+
+`hbot status` shows your simulated balances and the live bid/ask maker orders the bot maintains.
+
+## Step 5: Connect a Live Exchange
+
+When you're ready to trade with real funds, add your exchange API keys and re-create the config with a live connector:
+
+```bash
+hbot connect binance --fields    # see required key fields
+hbot connect binance             # add API keys
+hbot balance                     # confirm balances
+
+hbot create simple_pmm --name conf_btc_live.yml \
+  --set exchange=binance --set trading_pair=BTC-USDT
+hbot start --replace
+```
+
+## Step 6: Run a Strategy Controller
+
+[Controllers](../strategies/v2-strategies/controllers/index.md) are reusable V2 strategies whose settings can be tuned **live** while the bot runs. Create and run the `pmm_mister` controller on your connected exchange:
+
+```bash
+# Create a V2 controller config
+hbot create pmm_mister --name conf_btc_controller.yml \
+  --set connector_name=binance --set trading_pair=BTC-USDT
+
+# Start and monitor
+hbot start --replace
+hbot status
+
+# Tune settings live (applies in ~10 seconds)
+hbot config buy_spreads 0.002
+```
+
+Or create the config and start the bot in one step with `hbot deploy`:
+
+```bash
+hbot deploy pmm_mister --set connector_name=binance --set trading_pair=BTC-USDT
+```
+
+!!! note
+    Controllers require a live exchange connection — paper trade connectors are not currently supported by the V2 controller framework.
+
+Common commands: `hbot stop`, `hbot history`, `hbot config`. See the [`hbot` CLI guide](../client/hbot-cli.md) for the full command reference.
+
+## Interactive Client (alternative)
+
+If you prefer the classic full-screen UI, attach to the running container:
 
 ```bash
 docker attach hummingbot
@@ -64,42 +143,13 @@ You should see the Hummingbot welcome screen:
 
 ![welcome screen](../assets/img/welcome.png)
 
-## Step 4: Set Your Password
+On first launch, create a password and use familiar commands like `connect`, `create`, and `start`. The interactive client includes **Gateway commands** for DEX workflows that are not yet available in `hbot`.
 
-On first launch, you'll be prompted to create a password. This password encrypts your exchange API keys and other sensitive data.
+Press <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd> to detach without stopping the bot.
 
-## Step 5: Connect an Exchange
-
-Use the `connect` command to add your exchange API keys:
-
-```
-connect binance
-```
-
-Follow the prompts to enter your API key and secret.
-
-## Common Commands
-
-| Command | Description |
-|---------|-------------|
-| `connect [exchange]` | Add exchange API keys |
-| `balance` | View your balances |
-| `create` | Create a new strategy |
-| `start` | Start a strategy |
-| `stop` | Stop the current strategy |
-| `exit` | Exit Hummingbot |
+See [Commands and Shortcuts](../client/commands-shortcuts.md) for the interactive command list.
 
 ## Managing Your Instance
-
-### Detach Without Stopping
-
-Press <kbd>Ctrl</kbd> + <kbd>P</kbd> then <kbd>Ctrl</kbd> + <kbd>Q</kbd> to return to your terminal while keeping Hummingbot running.
-
-### Re-attach
-
-```bash
-docker attach hummingbot
-```
 
 ### Stop Hummingbot
 
@@ -113,7 +163,11 @@ docker compose down
 docker compose down
 docker pull hummingbot/hummingbot:latest
 docker compose up -d
+make link-cli    # re-link if needed
+hbot update --check
 ```
+
+For Docker updates, `hbot update` prints the `docker compose pull && docker compose up -d` commands to run on the host.
 
 ## Gateway for DEX Trading
 
@@ -169,10 +223,11 @@ After setting your password, you should see **Gateway: ONLINE** in the upper rig
 
 ## Next Steps
 
-- [Basic Features](../client/index.md) - Learn the Hummingbot CLI commands
-- [Connect to Exchanges](../client/connect.md) - Add your exchange credentials
-- [Create a Strategy](../strategies/index.md) - Start trading
-- [Updating to New Versions](./update.md) - Keep your installation current
+- [`hbot` CLI](../client/hbot-cli.md) — full command reference
+- [Basic Features](../client/index.md) — client documentation hub
+- [Connect to Exchanges](../client/connect.md) — adding credentials
+- [Create a Strategy](../strategies/index.md) — start trading
+- [Updating to New Versions](update.md) — keep your installation current
 
 ## Source Installation
 
@@ -182,11 +237,13 @@ For developers or users who prefer running from source, use the refactored Makef
 git clone https://github.com/hummingbot/hummingbot.git
 cd hummingbot
 make install
-make run
+conda activate hummingbot
+hbot --version
 ```
 
 * `make install` creates and configures the conda environment
-* `make run` starts the Hummingbot client (supports same arguments as the old `./start` script, e.g., `make run -p -f strategy.yml`)
+* `hbot` is available directly in the conda env for non-interactive use
+* `make run` starts the **interactive** client (e.g. `make run -p -f strategy.yml`)
 
 For detailed source installation options, see [Client Installation](../client/installation.md).
 

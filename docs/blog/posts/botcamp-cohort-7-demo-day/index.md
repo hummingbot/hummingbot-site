@@ -20,7 +20,7 @@ In Cohort 7, participants embarked on an intensive 5-week journey to become **Ce
 
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/TAulqoSenmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-By completing the cohort, participants gained official recognition with [Hummingbot certification](./../../../community/certification.md) to showcase their skills on social media and professional platforms. In addition, each Demo Day presenter received a limited edition [Cohort 7 NFT](https://opensea.io/assets/ethereum/0x59072271620d3528cb6d7565158b11492b25a4e5/1), commemorating their participation and achievement.
+By completing the cohort, participants gained official recognition with [Hummingbot certification](../../../community/certification.md) to showcase their skills on social media and professional platforms. In addition, each Demo Day presenter received a limited edition [Cohort 7 NFT](https://opensea.io/assets/ethereum/0x59072271620d3528cb6d7565158b11492b25a4e5/1), commemorating their participation and achievement.
 
 ### Strategy Presentations
 

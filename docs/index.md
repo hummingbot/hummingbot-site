@@ -11,15 +11,15 @@ hide:
 
 <div class="stat-grid">
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">$36B</span>
+    <span class="stat-value">$47B+</span>
     <span class="stat-label">Total Trade Volume</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">100K+</span>
+    <span class="stat-value">111K+</span>
     <span class="stat-label">Hummingbot Instances</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">300+</span>
+    <span class="stat-value">318</span>
     <span class="stat-label">Connectors</span>
   </a>
 </div>
@@ -57,9 +57,29 @@ hide:
     <img src="/assets/logos/kucoin-logo-dark.png" alt="Kucoin" class="dark-logo"/>
     <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
   </div>
+  <div class="flex-item">
+    <img src="/assets/logos/bitget-dark.png" alt="Bitget" class="dark-logo"/>
+    <img src="/assets/logos/bitget-light.png" alt="Bitget" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/backpack-dark.png" alt="Backpack" class="dark-logo"/>
+    <img src="/assets/logos/backpack-light.png" alt="Backpack" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/derive-dark.png" alt="Derive" class="dark-logo"/>
+    <img src="/assets/logos/derive-light.png" alt="Derive" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/orca-dark.png" alt="Orca" class="dark-logo"/>
+    <img src="/assets/logos/orca-light.png" alt="Orca" class="light-logo"/>
+  </div>
+  <div class="flex-item">
+    <img src="/assets/logos/meteora-dark.png" alt="Meteora" class="dark-logo"/>
+    <img src="/assets/logos/meteora-light.png" alt="Meteora" class="light-logo"/>
+  </div>
 </div>
 
-### See [Exchanges](./exchanges/index.md) for how Hummingbot Foundation works with these institutions.
+### See [Exchanges](exchanges/index.md) for how Hummingbot Foundation works with these institutions.
 
 ---
 
@@ -69,9 +89,8 @@ hide:
 
 ```mermaid
 graph TB
-    subgraph "User Interfaces"
+    subgraph "AI Harness"
         CONDOR[Condor]
-        MCP[MCP<br/>AI Agents]
     end
 
     subgraph "Server"
@@ -84,7 +103,6 @@ graph TB
     end
 
     CONDOR --> API
-    MCP --> API
     API --> CLIENT
     API --> GATEWAY
     CLIENT <--> GATEWAY
@@ -92,21 +110,21 @@ graph TB
 
 <div class="grid cards repo-cards" id="repo-cards" markdown>
 
+-   :octicons-mark-github-16:{ .lg .middle } __Condor__
+
+    ---
+
+    AI harness for building and running agentic strategies and bot instances.
+
+    [:octicons-arrow-right-24: Documentation](condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
+
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
 
     ---
 
     A robust trading engine featuring connectors to numerous exchanges and a wide array of strategy frameworks.
 
-    [:octicons-arrow-right-24: Documentation](./client/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot) <span class="repo-stars" data-repo="hummingbot/hummingbot">:octicons-star-16: —</span>
-
--   :octicons-mark-github-16:{ .lg .middle } __Gateway__
-
-    ---
-
-    Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
-
-    [:octicons-arrow-right-24: Documentation](./gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway) <span class="repo-stars" data-repo="hummingbot/gateway">:octicons-star-16: —</span>
+    [:octicons-arrow-right-24: Documentation](client/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot) <span class="repo-stars" data-repo="hummingbot/hummingbot">:octicons-star-16: —</span>
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot API__
 
@@ -114,15 +132,15 @@ graph TB
 
     A comprehensive API server that provides a centralized platform for executing trades, fetching data, and deploying Hummingbot instances.
 
-    [:octicons-arrow-right-24: Documentation](./hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api) <span class="repo-stars" data-repo="hummingbot/hummingbot-api">:octicons-star-16: —</span>
+    [:octicons-arrow-right-24: Documentation](hummingbot-api/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/hummingbot-api) <span class="repo-stars" data-repo="hummingbot/hummingbot-api">:octicons-star-16: —</span>
 
--   :octicons-mark-github-16:{ .lg .middle } __Condor__
+-   :octicons-mark-github-16:{ .lg .middle } __Gateway__
 
     ---
 
-    Telegram bot for monitoring and controlling Hummingbot instances from mobile and desktop.
+    Middleware that helps Hummingbot clients connect to DEXs and land transactions on various blockchain networks.
 
-    [:octicons-arrow-right-24: Documentation](./condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
+    [:octicons-arrow-right-24: Documentation](gateway/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/gateway) <span class="repo-stars" data-repo="hummingbot/gateway">:octicons-star-16: —</span>
 
 </div>
 
@@ -261,34 +279,34 @@ Since 2021, I've been a dedicated user of Hummingbot, primarily utilizing the pu
 
 <div class="grid cards" markdown>
 
--   [![](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/cover.png)](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
+-   [![](blog/posts/securing-condor-and-hummingbot-api-with-tailscale/cover.png)](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
 
-    ### [Securing Condor and Hummingbot API with Tailscale](./blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
+    ### [Securing Condor and Hummingbot API with Tailscale](blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
 
--   [![](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/cover.png)](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/index.md)
+-   [![](blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/cover.png)](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/index.md)
 
-    ### [Trading on GRVT with Hummingbot](./blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/index.md)
+    ### [Trading on GRVT with Hummingbot](blog/posts/trading-on-grvt-with-hummingbot-complete-bot-development-guide/index.md)
 
--   [![](./blog/posts/introducing-condor/cover.png)](./blog/posts/introducing-condor/index.md)
+-   [![](blog/posts/introducing-condor/cover.png)](./blog/posts/introducing-condor/index.md)
 
-    ### [Introducing Condor: The Open Source Harness for Trading Agents](./blog/posts/introducing-condor/index.md)
+    ### [Introducing Condor: The Open Source Harness for Trading Agents](blog/posts/introducing-condor/index.md)
 
 </div>
 
-[:octicons-arrow-right-24: Read the Blog](./blog/index.md){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: Read the Blog](blog/index.md){ .md-button .md-button--primary }
 
 ---
 
 # A Global Community of Algo Traders
 
-![](./assets/img/globe.png)
+![](assets/img/globe.png)
 
 <div class="grid cards wide" markdown>
 
-- :material-information-outline: __[Foundation](./about/index.md)__: About the Foundation and our mission
-- :material-account-group: __[Community](./community/index.md)__: Join our global community of algo traders
-- :material-gavel: __[Governance](./about/governance.md)__: Decide how the Hummingbot framework evolves
-- :material-frequently-asked-questions: __[FAQ](./faq.md)__: Answers to common questions
+- :material-information-outline: __[Foundation](about/index.md)__: About the Foundation and our mission
+- :material-account-group: __[Community](community/index.md)__: Join our global community of algo traders
+- :material-gavel: __[Governance](about/governance.md)__: Decide how the Hummingbot framework evolves
+- :material-frequently-asked-questions: __[FAQ](faq.md)__: Answers to common questions
 
 </div>
 

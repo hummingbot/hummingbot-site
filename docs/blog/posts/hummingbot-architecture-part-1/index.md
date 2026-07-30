@@ -20,7 +20,7 @@ In this blog post, we will discuss some of the key architectural features in Hum
 
 ## History and Motivation
 
-![](./history-motivation-cover.jpg)
+![](history-motivation-cover.jpg)
 
 Before Hummingbot became an open source project, it was a proprietary quant trading bot used for trading cryptocurrencies around 2017 and 2018, called Falcon. At that time, Falcon was built with off-the-shelf open source components. However, a few problems quickly surfaced with such an approach:
 
@@ -63,7 +63,7 @@ Before Hummingbot became an open source project, it was a proprietary quant trad
 
 ## The Clock
 
-![](./clock-cover.jpg)
+![](clock-cover.jpg)
 
 The `Clock` class, from the `hummingbot.core.clock` module, is the central component that drives all activities and actions of other major Hummingbot components - such as the market connectors and strategies.
 
@@ -82,7 +82,7 @@ References:
 
 ## Market connectors
 
-![](./market-connector-cover.jpg)
+![](market-connector-cover.jpg)
 
 Market connectors handle all the network operations between cryptocurrency exchanges, and strategy objects on Hummingbot side that make trading decisions.
 
@@ -104,7 +104,7 @@ You can compare this to trading libraries that don't provide order tracking - tr
 
 In the Binance exchange connector for example, you can find the order tracking logic in `BinanceExchange.c_start_tracking_order()` and `BinanceExchange.c_stop_tracking_order()`. These functions are typically called when orders are being created, cancelled, and also when order status updates arrive from the exchange API.
 
-![](./order-tracking.png)
+![](order-tracking.png)
 
 ### Graceful Degradation and Reliability
 
@@ -114,7 +114,7 @@ Let's say we are in a period of really busy trading in Binance, and Binance API 
 
 Since there is no guarantee the exchange API would give us a response to an order creation API call at the time - we have no reliable way of knowing whether the order has been placed or not in the  market. If you look into the `BinanceExchange.create_order()` function, you'll find that the exchange connector starts tracking the order before it is submitted to the exchange API.
 
-![](./order-tracking-1.png)
+![](order-tracking-1.png)
 
 This is done to make sure Hummingbot would not forget about the order in case the `self.query_api()` call (which follows immediately) times out or fails, but the order was actually placed into the exchange.
 
@@ -126,7 +126,7 @@ Besides exchange instability and the need handle them gracefully, the other aspe
 
 Hummingbot market connectors are designed to use the lowest latency data source, which is web socket on most centralized exchanges, that is available. Let's take a look at the Binance market connector as an example again. Specifically, let's take a look at the `BinanceAPIOrderBookDataSource` in `hummingbot.connector.exchange.binance.binance_api_order_book_data_source`.
 
-![](./low-latency.png)
+![](low-latency.png)
 
 The code above shows how the Binance market connector receives order book change messages from Binance via websocket for calculating order book depth and prices. This means strategy objects depending on the Binance market connector would be able to see real time prices and order book depth, as opposed to delayed market snapshots.
 
@@ -138,11 +138,11 @@ Hummingbot solves this problem via the Gateway API architecture. The Gateway API
 
 Take the Balancer DEX connector for example. Almost all of the operations in the connector - whether it is getting market data like order prices, fetching the wallet balance or making orders - go through the `BalancerConnector._api_request()` method. When you look into the method, you'll find it's really just delegating all the work to a Gateway API endpoint.
 
-![](./gateway-api.png)
+![](gateway-api.png)
 
 The Gateway API source code can be found in our gateway-api repository (https://github.com/hummingbot/gateway). For example, here is how the balancer/sell API endpoint is implemented on the Gateway API side.
 
-![](./gateway-api2.png)
+![](gateway-api2.png)
 
 References:
 

@@ -36,11 +36,11 @@ Avellaneda & Stoikov propose formulas aiding market makers in addressing these c
 
 **Reservation price:**
 
-![Reservation Price](./reservation_price.png)
+![Reservation Price](reservation_price.png)
 
 **Optimal bid & ask spread:**
 
-![Optimal spread](./optimal_spread.png)
+![Optimal spread](optimal_spread.png)
 
 Where,
 
@@ -62,11 +62,11 @@ Traditional market making involves symmetrical bid and ask orders around the mar
 
 For example, in a BTC-USDT downtrend using a symmetrical strategy, the market maker ends up accumulating BTC, decreasing the total inventory value.
 
-![Downtrend](./btc_downtrend.png)
+![Downtrend](btc_downtrend.png)
 
 Avellaneda & Stoikov's approach calculates a new reference price for order placement, considering:
 
-![Reservation Price](./reservation_price.png)
+![Reservation Price](reservation_price.png)
 
 #### Inventory Position Deviation (q)
 
@@ -100,7 +100,7 @@ Market volatility (σ) also influences the reservation price but is not a trader
 
 The model's second aspect focuses on the optimal order book positioning for profitability.
 
-![Optimal spread](./optimal_spread.png)
+![Optimal spread](optimal_spread.png)
 
 Here, the reservation price factors (γ and (T-t)) reappear, with the addition of:
 
@@ -121,7 +121,7 @@ The model's execution logic is straightforward:
 
 This dynamic is illustrated below:
 
-![Price dynamic](./strategy_in_action.png)
+![Price dynamic](strategy_in_action.png)
 
 The calculated reservation price (green line) often deviates from the market mid-price (blue line). The reservation price adjusts based on inventory, influencing order placement relative to the mid-price.
 
@@ -146,27 +146,27 @@ For each, the associated Hummingbot parameter is:
 
 Creating the strategy in Hummingbot involves the `create` command and specifying `avellaneda_market_making` as the strategy name.
 
-![](./config_1.png)
+![](config_1.png)
 
 After selecting the exchange and trading pair, decide whether to let Hummingbot calculate the risk factor and order book depth.
 
-![](./config_2.png)
+![](config_2.png)
 
 Set your maximum and minimum desired spreads, which define the limits for the calculated optimal spread.
 
-![](./config_3.png)
+![](config_3.png)
 
 The risk aversion parameter dictates your inventory risk preference. A value close to 1 indicates a conservative approach.
 
-![](./config_4.png)
+![](config_4.png)
 
 Finally, specify your inventory target percentage, determining how much of your total inventory should be in the base asset.
 
-![](./config_5.png)
+![](config_5.png)
 
 Additional configurations in Hummingbot include `closing_time` (session duration) and `volatility_buffer_size` (data timeframe for volatility calculation).
 
-![](./all_config.png)
+![](all_config.png)
 
 
 ## Final Thoughts

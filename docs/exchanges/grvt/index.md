@@ -7,8 +7,8 @@
 | --------- | ------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | Not available |
 | [🔀 Perp Connector](#perp-connector) | ✅ | Uses API key authentication with Trading ID |
-| [🕯 Spot Candles Feed](#spot-candles-feed) | Not available |
-| [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ |
+| 🕯 Spot Candles Feed | Not available |
+| 🕯 Perp Candles Feed | ✅ |
 
 ## ℹ️ Exchange Info
 

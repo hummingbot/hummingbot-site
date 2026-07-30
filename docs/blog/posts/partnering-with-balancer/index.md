@@ -20,7 +20,7 @@ This new strategy allows allows users to arbitrage price differences between aut
 
 ## How it works
 
-![Sample arbitage trade between Balancer and Binance](./2.jpg)
+![Sample arbitage trade between Balancer and Binance](2.jpg)
 
 The new `amm-arb` strategy lets you exploit the differences between AMMs like Balancer and order book exchanges like Binance. Extending the `celo-arb` strategy [released](../introducing-the-celo-arbitrage-bot/index.md) a few months ago, `amm-arb` uses a new, simpler design that works with any AMM protocol, on both Ethereum and non-Ethereum chains!
 
@@ -30,7 +30,7 @@ You could constantly refresh your browser and make calculations in a spreasheet 
 
 ## Highly customizable
 
-![Control every aspect of your gas settings](./ethgasstation.png)
+![Control every aspect of your gas settings](ethgasstation.png)
 
 Gas optimization is an important part of Ethereum trading, and the `amm-arb` strategy allows you to customize exactly how you handle gas, using either dynamic gas prices from [ETH Gas Station](https://ethgasstation.info/) or manual gas levels.
 

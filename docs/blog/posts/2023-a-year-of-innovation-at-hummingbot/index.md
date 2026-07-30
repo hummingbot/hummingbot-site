@@ -41,7 +41,7 @@ To streamline operations, we accomplished two important objectives in 2023:
 
 ## 3. Expand Scripts Framework
 
-![](./v2-framework.png)
+![](v2-framework.png)
 
 In 2023, we greatly expanded the scripting capabilities in Hummingbot by adding the [V2 Strategy Framework](../../../strategies/v2-strategies/index.md), which marked a revolutionary leap forward for Hummingbot:
 

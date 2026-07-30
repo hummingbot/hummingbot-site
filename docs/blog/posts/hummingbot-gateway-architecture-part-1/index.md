@@ -13,7 +13,7 @@ tags:
 
 *by Martin Kou*
 
-**Update (February 2023):** Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway?ref=blog.hummingbot.org). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
+**Update (February 2023):** Hummingbot Gateway v2 is now available as a standalone Github repository: [https://github.com/hummingbot/gateway](https://github.com/hummingbot/gateway). Most of the functionality listed in this post has now been implemented, and we welcome contributions from the community.
 
 Introduction
 ------------

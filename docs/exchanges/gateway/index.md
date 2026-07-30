@@ -20,7 +20,7 @@ See the **Connector Pots** tab in [HBOT Tracker](https://docs.google.com/spreads
 
 New Gateway connectors may be contributed by community members via [Hummingbot Governance Proposals (HGP)](../../about/proposals.md), which require a pull request with the connector code to the Hummingbot Gateway Github repo, along with a minimum HBOT balance to create.
 
-If you're interested in contributing a new Gateway DEX connector, see the [DEX Connectors](../../gateway/connectors.md#adding-custom-connectors) documentation which provides guidance on implementing the standardized trading types and creating compatible connectors.
+If you're interested in contributing a new Gateway DEX connector, see the [DEX Connectors](../../gateway/connectors.md#building-custom-connectors) documentation which provides guidance on implementing the standardized trading types and creating compatible connectors.
 
 ## Current Gateway DEX Connectors
 
@@ -31,14 +31,14 @@ Here are the Gateway connectors currently in the codebase.
 
 | Exchange | Chain Type | Legacy | New | Connector Types | Guide |
 |----------|------------|--------|-----|----------------|-------|
-| [Jupiter](./jupiter.md) | `solana` | | ✓ | `swap` | |
-| [Meteora](./meteora.md) | `solana` | | ✓ | `clmm` | |
-| [Raydium](./raydium.md) | `solana` | | ✓ | `clmm`, `amm` | |
-| [Balancer](./balancer.md) | `ethereum` | ✓ |  | `amm` | |
-| [Curve](./curve.md) | `ethereum` | ✓ |  | `amm` | |
-| [ETCSwap](./etcSwap.md) | `ethereum` | ✓ |  | `amm`, `amm_lp` | |
-| [Pancakeswap](./pancakeswap.md) | `binance-smart-chain` | ✓ |  | `amm`, `amm_lp` | |
-| [Quickswap](./quickswap.md) | `polygon` | ✓ |  | `amm` | |
-| [Sushiswap](./sushiswap.md) | `ethereum` | ✓ |  | `amm` | |
-| [TraderJoe](./traderjoe.md) | `avalanche` | ✓ |  | `amm` | |
-| [Uniswap](./uniswap.md) | `ethereum` | ✓ | | `amm`, `amm_lp` | |
+| [Jupiter](jupiter.md) | `solana` | | ✓ | `swap` | |
+| [Meteora](meteora.md) | `solana` | | ✓ | `clmm` | |
+| [Raydium](raydium.md) | `solana` | | ✓ | `clmm`, `amm` | |
+| [Balancer](balancer.md) | `ethereum` | ✓ |  | `amm` | |
+| [Curve](curve.md) | `ethereum` | ✓ |  | `amm` | |
+| [ETCSwap](etcSwap.md) | `ethereum` | ✓ |  | `amm`, `amm_lp` | |
+| [Pancakeswap](pancakeswap.md) | `binance-smart-chain` | ✓ |  | `amm`, `amm_lp` | |
+| [Quickswap](quickswap.md) | `polygon` | ✓ |  | `amm` | |
+| [Sushiswap](sushiswap.md) | `ethereum` | ✓ |  | `amm` | |
+| [TraderJoe](traderjoe.md) | `avalanche` | ✓ |  | `amm` | |
+| [Uniswap](uniswap.md) | `ethereum` | ✓ | | `amm`, `amm_lp` | |

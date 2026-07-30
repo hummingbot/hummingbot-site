@@ -18,7 +18,7 @@ For a quick Docker-based setup, see the [Hummingbot Client Quickstart](../instal
 | Method | Best For | Requirements |
 |--------|----------|--------------|
 | **[Docker](#docker-installation)** | Quick setup, isolated environment | Docker installed |
-| **[Source](#source-installation)** | Developers, code modifications | Python, Anaconda |
+| **Source** | Developers, code modifications | Python, Anaconda |
 
 ---
 
@@ -56,6 +56,13 @@ git clone https://github.com/hummingbot/hummingbot.git
 cd hummingbot
 make setup
 make deploy
+make link-cli
+```
+
+`make link-cli` adds the [`hbot`](hbot-cli.md) command to your host, so you can run and monitor the bot non-interactively:
+
+```bash
+hbot --version
 ```
 
 Attach to the running container:
@@ -74,6 +81,7 @@ You should see the Hummingbot welcome screen:
 |---------|-------------|
 | `make setup` | Configure environment (prompts for Gateway) |
 | `make deploy` | Start Hummingbot in background |
+| `make link-cli` | Add the [`hbot`](hbot-cli.md) command to your host |
 | `docker attach hummingbot` | Attach to running instance |
 | `docker compose down` | Stop Hummingbot |
 | `docker compose logs -f` | View logs |
@@ -224,7 +232,7 @@ hummingbot/
 
 | Folder | Description |
 |--------|-------------|
-| `/conf/connectors` | Exchange API keys encrypted by your [password](./password.md) |
+| `/conf/connectors` | Exchange API keys encrypted by your [password](password.md) |
 | `/conf/strategies` | Strategy configs created with `create` command |
 | `/conf/scripts` | Script configs created with `create --v2-config` |
 | `/logs` | Log files from your trading sessions |
@@ -293,7 +301,7 @@ See [Gateway Installation](../gateway/installation.md) for setup instructions.
 
 ## Next Steps
 
-- [Basic Features](./index.md) - Learn the Hummingbot CLI
+- [Basic Features](index.md) - Learn the Hummingbot CLI
 - [V2 Strategy Walkthrough](../strategies/v2-strategies/walkthrough.md) - Create your first strategy
 - [Hummingbot FAQ](../faq.md) - Common questions
 - [Updating to New Versions](../installation/update.md) - Update your installation

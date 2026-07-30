@@ -8,8 +8,6 @@ categories:
 
 # Using Injective Helix with Hummingbot
 
-<!-- ![cover](injective-connector-guide.png) -->
-
 *by [Emerald](https://github.com/peterwilli)*
 
 Welcome to the Injective Helix Hummingbot Connector Guide, your comprehensive resource for integrating and trading on Injective's decentralized exchange using Hummingbot. Injective Helix leverages the Injective Protocol, a decentralized layer-1 blockchain, to offer fast and secure trading with minimal fees.

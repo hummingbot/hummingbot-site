@@ -1,8 +1,35 @@
 # Commands and Shortcuts
 
-## Hummingbot Commands
+Hummingbot has **two CLI surfaces**:
 
-Below are the available commands in the current Hummingbot release.
+| Interface | Best for | Docs |
+| --- | --- | --- |
+| **`hbot`** (recommended) | Automation, scripts, agents, headless servers | [`hbot` CLI](hbot-cli.md) |
+| **Interactive client** | Learning, manual trading, Gateway/DEX commands | This page |
+
+## `hbot` commands
+
+See the full [`hbot` CLI reference](hbot-cli.md) for install, quickstart, Docker modes, exit codes, and password handling. Summary:
+
+| Command | Function |
+| --- | --- |
+| `connect` | List connections or add API keys |
+| `balance` | Display balances (perps include positions) |
+| `create` | Create a strategy config |
+| `import` | Load an existing config |
+| `config` | Show/edit global and strategy settings |
+| `deploy` | Create/load config and start in one step |
+| `start` | Start the bot |
+| `stop` | Stop the bot |
+| `status` | Bot run state and live status |
+| `logs` | Tail log files |
+| `history` | Performance history |
+| `doctor` | Install health check |
+| `update` | Update Hummingbot software |
+
+## Interactive client commands
+
+Below are the commands available inside the interactive client (`docker attach hummingbot` or `make run`).
 
 | Command           | Function                                                      |
 | ----------------- | ------------------------------------------------------------- |

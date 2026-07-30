@@ -528,8 +528,8 @@ Causes a delay when opening search, not optimal */
 /* Exchange Grid */
 .exchange-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 40px;
   align-items: center;
   justify-items: center;
   padding-top: 0;
@@ -544,13 +544,15 @@ Causes a delay when opening search, not optimal */
 
 .exchange-grid img {
   max-width: 100%;
+  max-height: 44px;
+  width: auto;
   height: auto;
   padding: 0rem 1rem;
 }
 
 @media (max-width: 1200px) {
   .exchange-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
