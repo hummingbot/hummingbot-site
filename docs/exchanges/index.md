@@ -23,15 +23,15 @@ See live trading activity across all exchanges via our public dashboard:
 
 <div class="stat-grid">
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">$36B</span>
+    <span class="stat-value">$47B+</span>
     <span class="stat-label">Total Trade Volume</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">100K+</span>
+    <span class="stat-value">111K+</span>
     <span class="stat-label">Hummingbot Instances</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">300+</span>
+    <span class="stat-value">318</span>
     <span class="stat-label">Connectors</span>
   </a>
 </div>
