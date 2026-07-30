@@ -105,11 +105,11 @@ hbot start --replace
 
 ## Step 6: Run a Strategy Controller
 
-[Controllers](../strategies/v2-strategies/controllers/index.md) are reusable V2 strategies whose settings can be tuned **live** while the bot runs. Create and run the `pmm_simple` controller on your connected exchange:
+[Controllers](../strategies/v2-strategies/controllers/index.md) are reusable V2 strategies whose settings can be tuned **live** while the bot runs. Create and run the `pmm_mister` controller on your connected exchange:
 
 ```bash
 # Create a V2 controller config
-hbot create pmm_simple --name conf_btc_controller.yml \
+hbot create pmm_mister --name conf_btc_controller.yml \
   --set connector_name=binance --set trading_pair=BTC-USDT
 
 # Start and monitor
