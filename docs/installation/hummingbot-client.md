@@ -78,8 +78,8 @@ Run your first bot with the `simple_pmm` market making script on a **paper trade
 
 ```bash
 # Create a config for the simple_pmm script
-hbot create simple_pmm --name conf_eth.yml \
-  --set exchange=binance_paper_trade --set trading_pair=ETH-USDT
+hbot create simple_pmm --name conf_btc.yml \
+  --set exchange=binance_paper_trade --set trading_pair=BTC-USDT
 
 # Start and monitor
 hbot start
@@ -98,8 +98,8 @@ hbot connect binance --fields    # see required key fields
 hbot connect binance             # add API keys
 hbot balance                     # confirm balances
 
-hbot create simple_pmm --name conf_eth_live.yml \
-  --set exchange=binance --set trading_pair=ETH-USDT
+hbot create simple_pmm --name conf_btc_live.yml \
+  --set exchange=binance --set trading_pair=BTC-USDT
 hbot start --replace
 ```
 
@@ -109,8 +109,8 @@ hbot start --replace
 
 ```bash
 # Create a V2 controller config
-hbot create pmm_simple --name conf_eth_controller.yml \
-  --set connector_name=binance --set trading_pair=ETH-USDT
+hbot create pmm_simple --name conf_btc_controller.yml \
+  --set connector_name=binance --set trading_pair=BTC-USDT
 
 # Start and monitor
 hbot start --replace
