@@ -126,7 +126,7 @@ graph TB
 
     ---
 
-    Telegram bot for monitoring and controlling Hummingbot instances from mobile and desktop.
+    AI harness for building and running agentic strategies and bot instances.
 
     [:octicons-arrow-right-24: Documentation](condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
 
