@@ -2,7 +2,7 @@
 
 ## What Are Exchange Connectors?
 
-Hummingbot is open source software that helps you create and deploy crypto trading bots across 50+ exchanges. The project has **14k+ GitHub stars** and **3.9k+ forks**, representing one of the most active trading bot communities.
+Hummingbot is open source software that helps you create and deploy crypto trading bots across 50+ exchanges. The project has **19.3k+ GitHub stars** and **4.8k+ forks** as of July 2026, representing one of the most active trading bot communities.
 
 Connectors are standardized API integrations that enable Hummingbot to communicate with different exchanges. Each connector implements a common interface for order management, balance tracking, and market data streaming, allowing strategies to work seamlessly across multiple exchanges.
 
