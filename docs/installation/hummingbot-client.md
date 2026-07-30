@@ -120,6 +120,12 @@ hbot status
 hbot config buy_spreads 0.002
 ```
 
+Or create the config and start the bot in one step with `hbot deploy`:
+
+```bash
+hbot deploy pmm_mister --set connector_name=binance --set trading_pair=BTC-USDT
+```
+
 !!! note
     Controllers require a live exchange connection — paper trade connectors are not currently supported by the V2 controller framework.
 
