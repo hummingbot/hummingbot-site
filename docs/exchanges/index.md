@@ -74,7 +74,6 @@ This premium option includes dedicated engineering resources, custom content dev
 
 - [**Backpack**](https://backpack.exchange/)
 - [**Binance**](https://www.binance.com/)
-- [**Bitmart**](https://www.bitmart.com/)
 - [**Bitget**](https://www.bitget.com/)
 - [**Derive**](https://www.derive.xyz/)
 - [**Gate.io**](https://www.gate.io/)
