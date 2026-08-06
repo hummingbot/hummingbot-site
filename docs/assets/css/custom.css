@@ -550,6 +550,27 @@ Causes a delay when opening search, not optimal */
   padding: 0rem 1rem;
 }
 
+/* Per-logo size normalization: source files have different internal
+   padding, so a uniform max-height renders them at different visual sizes */
+.exchange-grid img[src*="binance"] {
+  max-height: 60px;
+}
+.exchange-grid img[src*="gate"] {
+  max-height: 66px;
+}
+.exchange-grid img[src*="hyperliquid"] {
+  max-height: 30px;
+}
+.exchange-grid img[src*="okx"] {
+  max-height: 33px;
+}
+.exchange-grid img[src*="derive"] {
+  max-height: 38px;
+}
+.exchange-grid img[src*="meteora"] {
+  max-height: 32px;
+}
+
 @media (max-width: 1200px) {
   .exchange-grid {
     grid-template-columns: repeat(2, 1fr);

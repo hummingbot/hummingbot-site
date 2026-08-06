@@ -46,8 +46,8 @@ hide:
     <img src="/assets/logos/okx-light.png" alt="OKX" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
-    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
+    <img src="/assets/logos/bitget-dark.png" alt="Bitget" class="dark-logo"/>
+    <img src="/assets/logos/bitget-light.png" alt="Bitget" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/gate-dark.png" alt="Gate" class="dark-logo"/>
@@ -58,8 +58,8 @@ hide:
     <img src="/assets/logos/kucoin-logo-light.png" alt="Kucoin" class="light-logo"/>
   </div>
   <div class="flex-item">
-    <img src="/assets/logos/bitget-dark.png" alt="Bitget" class="dark-logo"/>
-    <img src="/assets/logos/bitget-light.png" alt="Bitget" class="light-logo"/>
+    <img src="/assets/logos/xrpl-dark.png" alt="XRPL" class="dark-logo"/>
+    <img src="/assets/logos/xrpl-light.png" alt="XRPL" class="light-logo"/>
   </div>
   <div class="flex-item">
     <img src="/assets/logos/backpack-dark.png" alt="Backpack" class="dark-logo"/>
