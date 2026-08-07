@@ -24,7 +24,9 @@
 
 ### Create and fund a XRPL Wallet
 
-* Please follow the steps in this guide to create a XRPL wallet: [Ripple - Create wallet](https://xrpl.org/)
+!!! tip "Step-by-step guide"
+    See [Using XRP Ledger with Hummingbot](../blog/posts/using-xrpl-with-hummingbot/index.md) for a full walkthrough on creating a wallet, connecting it to Hummingbot, and running a strategy.
+
 * Make sure you fund your wallet with enough XRP and tokens for trading
 
 | Chain    | Networks             |
