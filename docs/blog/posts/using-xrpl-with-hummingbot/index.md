@@ -42,6 +42,8 @@ Visit the official XRPL Testnet Faucet:
 
 Select `Testnet` from the dropdown and click **Generate Testnet Credentials**.
 
+The faucet labels this as a testnet wallet, but the address and secret key are standard XRPL credentials — the same keys also work on **mainnet**. Testnet only funds the account with test XRP; it does not limit where you can use the wallet.
+
 [![Faucet Screenshot](faucet.webp)](faucet.webp)
 
 Copy the **Wallet Address** and **Secret Key** somewhere safe.
