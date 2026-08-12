@@ -82,55 +82,78 @@ If the limit is crossed, a **`429 Too Many Requests`** response is returned.
 
 ## 🔑 How to Connect
 
-### Generate API Keys
+Use the same credential set for both connectors:
 
-- Connect
+| Hummingbot prompt | What to enter | Notes |
+| --- | --- | --- |
+| Wallet address (`api_key`) | **Derive wallet address** (smart-contract wallet shown in the Derive UI) | **Not** your MetaMask / signer EOA address |
+| Wallet private key (`api_secret`) | **Session key** private key | **Not** the MetaMask / owner private key |
+| Subaccount ID (`sub_id`) | Numeric ID of a **funded** subaccount | Recommended for bots (see below) |
+| Account type (`account_type`) | `trader` or `market_maker` | Matches the client prompt |
+
+Validated against Derive’s API via Hummingbot (`derive` spot and `derive_perpetual`). Wrong wallet address or owner key typically fails with HTTP **403** on `private/get_subaccount`.
+
+### 1. Connect your owner wallet and fund Derive
+
+1. Open [https://www.derive.xyz](https://www.derive.xyz) and connect your owner wallet (e.g. MetaMask).
+2. Complete any sign-in / ownership verification prompts.
+3. Deposit funds (USDC is common; funding rails may include bridging from networks such as Base — Derive itself runs on **Derive Chain**, not Base).
 
     ![API](derive-api2.png)
 
-- Click Home tab
+### 2. Create a subaccount (recommended)
+
+1. In the Derive UI, open account / subaccount settings.
+2. Create a dedicated **subaccount** for bot trading (e.g. `Sub1`).
+3. Transfer the balance you want the bot to use onto that subaccount.
+4. Copy the **Subaccount ID** (numeric).
+
+**Why a subaccount?**  
+Hummingbot can connect to the main account ID, but **spot** (`derive`) often shows an **empty balance** on main even when a subaccount is funded. Perp (`derive_perpetual`) may still show main-account balances depending on where funds sit. For bots, always prefer a **funded subaccount** and confirm with `balance` after connecting.
+
+### 3. Register a session key
+
+1. Open **Home**, then **Developers**.
 
     ![API](derive-api3.png)
 
-- Click Developers tab
-
-    ![API](derive-api3.png)
-
-- Register your session KEY (i.e your public address e.g metamask)
+2. Click **Register Session Key**.
 
     ![API](derive-api4.png)
 
-- Input a Name and your public address
+3. Enter a name and register the session key (confirm the signature in your owner wallet).
 
     ![API](derive-api5.png)
 
-- Click Register button to exit. Now you can use your new Session Key.
+4. Save the **session key private key** securely. This is the value Hummingbot asks for as “wallet private key”.
 
     ![API](derive-api6.png)
 
-### Add Keys to Hummingbot
+!!! warning "Session key ≠ owner (MetaMask) private key"
+    Hummingbot’s secret field must be the **session key** private key from Developers.
 
-From inside the Hummingbot client, run `connect derive`:
+    Using the MetaMask / owner EOA private key was tested and **does not work** (API returns **403** on `get_subaccount`). Do not export or paste your main wallet key into Hummingbot for Derive.
 
-- Input a Derive address as Derive Wallet address
+### 4. Collect the Derive wallet address
+
+In the Derive UI, copy the **Derive wallet** address (the smart-contract / trading wallet Derive shows for the account).
 
     ![API](derive-api8.png)
 
-- Input your Subaccount ID
-  
-    ![API](derive-api7.png)
+- **Correct:** Derive wallet address  
+- **Incorrect:** MetaMask / Rabby / Ledger owner address (signer EOA)
+
+### 5. Add keys in Hummingbot
+
+#### Spot — `derive`
 
 ```
 >>> connect derive
 
 Enter Your Derive Wallet address >>>
-
 Enter your wallet private key >>>
-
 Enter your Subaccount ID >>>
-
 Enter your Derive Account Type (trader/market_maker) >>>
-
 ```
 
 If connection is successful:
@@ -138,6 +161,48 @@ If connection is successful:
 ```
 You are now connected to derive
 ```
+
+#### Perpetual — `derive_perpetual`
+
+```
+>>> connect derive_perpetual
+
+Enter Your DerivePerpetual Wallet address >>>
+Enter your wallet private key >>>
+Enter your Subaccount ID >>>
+Enter your Derive Account Type (trader/market_maker) >>>
+```
+
+If connection is successful:
+
+```
+You are now connected to derive_perpetual
+```
+
+Same values work for both connectors (wallet address, session key, subaccount ID, account type).
+
+### 6. Verify
+
+```
+>>> balance
+```
+
+Confirm the balances match the **subaccount** you configured.  
+If balances are empty: check you used the Derive wallet (not the EOA), the session key (not the owner key), and the subaccount ID that actually holds funds.
+
+### Troubleshooting
+
+| Symptom | Likely cause | Fix |
+| --- | --- | --- |
+| Connect fails / `403` on `get_subaccount` | `api_key` is signer/MetaMask EOA, or secret is owner key | Use **Derive wallet** + **session key** |
+| Connected but **spot** balance empty | Main account ID, or funds only on another subaccount | Use funded **subaccount** ID; move funds there |
+| Connected, unexpected balances | Wrong subaccount ID | Re-check ID in Derive UI vs `connect` input |
+| Account type confusion | Client offers `trader` / `market_maker` | Use one of those. Other strings may still connect for balance reads but are not the supported prompt values |
+
+### Account type
+
+Enter **`trader`** or **`market_maker`** as shown by the client.  
+Market makers can request higher rate limits from Derive support (see rate limits above).
 
 ## 🔀 Spot Connector
 *Integration to spot markets API endpoints*
@@ -170,15 +235,7 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 ### Usage
 
-From inside the Hummingbot client, run `connect derive_perpetual`:
-
-- Input a Derive address as DerivePerpetual Wallet address
-
-    ![API](derive-api8.png)
-
-- Input your Subaccount ID
-  
-    ![API](derive-api7.png)
+See [How to Connect](#how-to-connect) above for the full credential walkthrough. Summary:
 
 ```
 >>> connect derive_perpetual
@@ -187,14 +244,9 @@ Enter Your DerivePerpetual Wallet address >>>
 Enter your wallet private key >>>
 Enter your Subaccount ID >>>
 Enter your Derive Account Type (trader/market_maker) >>>
-
 ```
 
-If connection is successful:
-
-```
-You are now connected to derive_perpetual
-```
+Use the **Derive wallet address**, **session key** private key, and a **funded subaccount ID**.
 
 ### Order Types
 

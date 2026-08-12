@@ -53,35 +53,41 @@ Check both boxes if you read through and agree with the terms and then "Agree an
 
 ### Deposit Funds
 
-Once your wallet is connected, you will need to deposit tokens into your Derive account. Deposit USDC, ETH, BTC and other tokens to start trading options and perps. Make sure you have enough balance to cover at least the minimum trading amount + fees. 
+Once your wallet is connected, deposit tokens into your Derive account (USDC is common for perps and spot). Funding may involve bridging from another network (for example Base USDC) onto **Derive Chain** — Derive is its own chain, not Base.
+
+Make sure the balance you intend to trade sits on the **subaccount** you will connect in Hummingbot (see next step), with enough to cover minimum order size and fees.
 
    [![image](7.png)](7.png)
 
+### Create a Subaccount (recommended)
+
+1. In the Derive UI, open your account / subaccount settings.
+2. Create a dedicated subaccount for the bot (for example `Sub1`).
+3. Transfer trading funds onto that subaccount.
+4. Copy the numeric **Subaccount ID**.
+
+Hummingbot can connect using the main account ID, but on **spot** (`derive`) the main account often shows an **empty balance** even when a subaccount is funded. Prefer a funded subaccount for bots and verify with `balance` after connecting.
+
 ### Register Session Key
 
-After connecting, click the Developers link on the left side of the page. If you don't see it, go back to the Home page and then click Developers. Click Register Session Key and then enter in your Metamask Wallet's public address. You'll need to confirm the signature request in Metamask. 
+After connecting, open **Developers** (from Home if needed). Click **Register Session Key**, complete registration, and confirm the signature in MetaMask (or your owner wallet).
 
    [![image](8.png)](8.png)
-   [![image](9.png)](9.png) 
+   [![image](9.png)](9.png)
 
-Once this is done, take note of a couple things which we will need to connect Hummingbot, the first one is the **Derive Wallet address** and second is the **Subaccount ID**
+Save the **session key private key** in a secure place. Hummingbot’s “wallet private key” prompt expects this **session key**, not your MetaMask owner key.
 
-   [![image](10.png)](10.png) 
+Also note:
 
-### Get Metamask wallet private key
+- **Derive wallet address** — the smart-contract / trading wallet shown in the Derive UI (not your MetaMask address)
+- **Subaccount ID** — the funded subaccount from the previous step
 
-- Click on the three dots next to your account and then Account Details
+   [![image](10.png)](10.png)
 
-- On the Account Details page, click "Show Private Key"
+!!! warning "Do not use your MetaMask private key as the Hummingbot secret"
+    Exporting the MetaMask / owner EOA private key and pasting it into Hummingbot **does not work** for Derive (API returns **403** on `get_subaccount`).
 
-- Enter your wallet password and click "Confirm"
-
-- Click on Hold to reveal Private Key to display your private key 
-
-   [![image](11.png)](11.png)
-
- 
-Once available, copy the private key and store it safely in a secure location. You will need this key later to connect to Hummingbot.
+    Use only the **session key** private key from Derive → Developers.
 
 
 ## Using Derive with Hummingbot Client
@@ -176,35 +182,57 @@ The following instructions guide you through adding your Derive credentials to t
 
 ### Add Keys to Hummingbot
 
-To connect Hummingbot to Derive's perpetual market, you'll need Derive wallet address, the Subaccount ID and your Metamask wallet private key.
+To connect Hummingbot to Derive (spot or perpetual), you need:
 
- From within the Hummingbot client, run the following command to start the connection process:
+| Prompt | Value |
+| --- | --- |
+| Wallet address | **Derive wallet address** (UI smart-contract wallet — not MetaMask) |
+| Wallet private key | **Session key** private key (from Developers — not MetaMask owner key) |
+| Subaccount ID | Funded **subaccount** numeric ID |
+| Account type | `trader` or `market_maker` |
 
-   ```bash
-   connect derive_perpetual
-   ```
+#### Perpetual (`derive_perpetual`)
 
- You will be prompted to enter your credentials:
+From within the Hummingbot client:
 
-   ```
-    Enter Your DerivePerpetual Wallet address >>>
-    Enter your wallet private key >>>
-    Enter your Subaccount ID >>>
-   ```
+```bash
+connect derive_perpetual
+```
 
- If the credentials are correct, you'll see the following confirmation message:
+You will be prompted:
 
-   ```bash
-   You are now connected to derive_perpetual
-   ```
+```
+Enter Your DerivePerpetual Wallet address >>>
+Enter your wallet private key >>>
+Enter your Subaccount ID >>>
+Enter your Derive Account Type (trader/market_maker) >>>
+```
 
- To verify the connection, run the **balance** command within the Hummingbot client to check if the displayed balance matches your Derive account:
+On success:
 
-   ```bash
-   balance
-   ```
+```bash
+You are now connected to derive_perpetual
+```
+
+#### Spot (`derive`)
+
+```bash
+connect derive
+```
+
+Use the **same** Derive wallet address, session key, subaccount ID, and account type.
+
+#### Verify
+
+```bash
+balance
+```
+
+Confirm balances match the subaccount you configured.
 
    [![image](balance.png)](balance.png)
+
+If connect fails with a `403` / `get_subaccount` error, you almost certainly used the signer EOA as the wallet address or the owner private key instead of the session key. If connect succeeds but spot balance is empty, switch to the funded subaccount ID.
 
 ### Run a Strategy
 
