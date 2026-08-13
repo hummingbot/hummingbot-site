@@ -116,7 +116,7 @@ graph TB
 
     AI harness for building and running agentic strategies and bot instances.
 
-    [:octicons-arrow-right-24: Documentation](condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
+    [:octicons-arrow-right-24: Documentation](condor/index.md) · [:octicons-mark-github-16: GitHub](https://github.com/hummingbot/condor) · [:octicons-comment-discussion-16: Feedback](https://forms.gle/7NpG3RtgfLrmpUNY8) <span class="repo-stars" data-repo="hummingbot/condor">:octicons-star-16: —</span>
 
 -   :octicons-mark-github-16:{ .lg .middle } __Hummingbot Client__
 

@@ -11,6 +11,8 @@ categories:
 !!! warning "Deprecation Notice"
     Hummingbot Dashboard is deprecated. We recommend using [Condor](../../../installation/condor.md) instead — a Telegram and web-based interface for managing Hummingbot bots. See the [Condor documentation](../../../condor/index.md) for more details.
 
+--8<-- "docs/includes/condor-feedback.md"
+
 In this tutorial, we'll guide you through installing the Hummingbot Dashboard app, which helps you connect exchange credentials, create/backtest a strategy configuration, and deploy a fleet of bots!
 
 Watch this video for an overview and walkthrough of the features in Hummingbot 2.0:

@@ -5,6 +5,8 @@
 !!! note "Full Documentation"
     The complete Condor documentation has moved to a dedicated site. Visit **[condor.hummingbot.org](https://condor.hummingbot.org)** for full installation guides, Trading Agents Standard specification, and API reference.
 
+--8<-- "docs/includes/condor-feedback.md"
+
 <iframe style="width:100%; min-height:400px;" src="https://www.youtube.com/embed/O93R_ddB-8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What is Condor?
@@ -43,5 +45,6 @@ This script clones the repository, installs dependencies, and prompts you for yo
 |----------|------|
 | Full Documentation | [condor.hummingbot.org](https://condor.hummingbot.org) |
 | GitHub Repository | [github.com/hummingbot/condor](https://github.com/hummingbot/condor) |
+| Give Feedback | [2-minute survey](https://forms.gle/7NpG3RtgfLrmpUNY8) |
 | Discord Support | [#condor-feedback](https://discord.gg/hummingbot) |
 | Hummingbot API | [Hummingbot API Docs](../hummingbot-api/index.md) |

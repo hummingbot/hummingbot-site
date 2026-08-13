@@ -22,6 +22,8 @@ This guide explains **why exposing the API is risky**, **simple steps you can ta
 
 <!-- more -->
 
+--8<-- "docs/includes/condor-feedback.md"
+
 ## Who is this guide for?
 
 You do **not** need to be a networking expert. This article is written for traders and operators who:
@@ -397,6 +399,7 @@ Tailscale is not a substitute for strong API credentials—but together they giv
 ## Further reading
 
 - [Condor documentation](https://condor.hummingbot.org)
+- [Give Condor feedback](https://forms.gle/7NpG3RtgfLrmpUNY8) — 2-minute survey that shapes the roadmap
 - [Hummingbot API documentation](https://hummingbot.org/hummingbot-api/)
 - [Hummingbot API installation](https://hummingbot.org/hummingbot-api/installation/)
 - [Condor README — Secure Connection via Tailscale](https://github.com/hummingbot/condor)
