@@ -6,6 +6,11 @@ For full installation instructions, see the Condor documentation:
 
 [:material-arrow-right: **Condor Documentation**](https://condor.hummingbot.org){ .md-button .md-button--primary }
 
+!!! tip "Help shape Condor"
+    Got Condor running? Tell us how install went, what's confusing, and what you need next. The survey takes **2 minutes** and directly shapes what we build next.
+
+    **[Take the 2-minute survey →](https://forms.gle/7NpG3RtgfLrmpUNY8)**
+
 ## Quick Install
 
 ```bash
@@ -38,6 +43,7 @@ The install script will prompt for:
 ## Learn More
 
 - [Condor Documentation](https://condor.hummingbot.org) - Full guides for Trading Agents, executors, and more
+- [Give Feedback](https://forms.gle/7NpG3RtgfLrmpUNY8) - 2-minute survey that shapes the Condor roadmap
 - [Hummingbot API Reference](../hummingbot-api/index.md) - API endpoints and developer guide
 - [Hummingbot API — Tailscale](../hummingbot-api/tailscale.md) - Recommended for production (private API access)
 - [MCP Installation](../mcp/installation.md) - Connect AI assistants to Hummingbot API

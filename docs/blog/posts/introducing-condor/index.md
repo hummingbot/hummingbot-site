@@ -15,6 +15,8 @@ We're excited to introduce **[Condor](https://condor.hummingbot.org)**, an open 
 
 <!-- more -->
 
+--8<-- "docs/includes/condor-feedback.md"
+
 ## The Condor Harness
 
 Condor is an open source AI agent harness, similar to [OpenClaw](https://github.com/anthropics/openClaw). Just as OpenClaw helps you create and manage agents that automate personal productivity tasks, Condor helps you create and manage agents that automate trading tasks, as well perform trades using natural language.
@@ -247,6 +249,7 @@ Ready to try Condor? Follow the [Getting Started Guide](https://condor.hummingbo
 
 Condor is in active development. Share feedback and contribute ideas:
 
+- **Survey**: [Take the 2-minute Condor survey](https://forms.gle/7NpG3RtgfLrmpUNY8) — it directly shapes what we build next
 - **Discord**: Join the [#condor-feedback](https://discord.gg/hummingbot) channel for discussion
 - **GitHub**: Create issues in the [Condor repo](https://github.com/hummingbot/condor/issues) for bugs and enhancements
 

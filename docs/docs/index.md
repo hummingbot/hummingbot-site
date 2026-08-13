@@ -9,6 +9,8 @@ Choose your path based on your needs:
 - **[Condor Quickstart](../installation/condor.md)** - Recommended for Trading Agents, cloud deployments, multi-bot management, and modern interfaces (Telegram, web dashboard)
 - **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)** - Best for local usage, learning Hummingbot, and running single bot instances with [`hbot`](../client/hbot-cli.md)
 
+--8<-- "docs/includes/condor-feedback.md"
+
 !!! note "For Developers"
     If you're a developer looking to build custom strategies or exchange connectors, see [Source Installation](../client/installation.md) for Hummingbot Client or [Hummingbot API Installation](../hummingbot-api/installation.md) for the API.
 
