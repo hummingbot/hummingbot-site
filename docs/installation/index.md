@@ -60,6 +60,8 @@ The AI harness for building and running agentic strategies and bot instances. Be
 
 For full documentation, see [condor.hummingbot.org](https://condor.hummingbot.org).
 
+--8<-- "docs/includes/condor-feedback.md"
+
 ### Developers
 
 For developers who want to add/customize exchange connectors, extend strategies, or otherwise modify the Hummingbot codebase:
