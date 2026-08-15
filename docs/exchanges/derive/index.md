@@ -84,37 +84,51 @@ If the limit is crossed, a **`429 Too Many Requests`** response is returned.
 
 ### Generate API Keys
 
-- Click **Connect** at upper right side
+Open [https://www.derive.xyz](https://www.derive.xyz). Derive supports wallets such as **MetaMask**, Rabby, Coinbase Wallet, and Ledger.
+
+- Click **Connect** at the upper right side of the page
 
     ![API](derive-api2.png)
 
-- At top left, click **Hamburger** icon to open side bar, click **Developers**, click **Register Session Key**
+- In the wallet picker, select the wallet you want to use (for example, **MetaMask**)
+- Approve the connection in your wallet. Your wallet extension or app will open a pop-up asking you to connect this site — click **Connect** or **Approve**
+- Sign the message Derive sends to verify you own the wallet
+- If prompted, review the terms, check the agreement boxes, and click **Agree and Continue**
+
+Your wallet address should now appear in the top-right corner.
+
+- At top left, click **Hamburger** icon to open the side bar, click **Developers**, click **Register Session Key**
 
     ![API](derive-api3.png)
 
-- Enter **Name**, Click **Generate** button, click **Copy** icon of private key, Select **Admin** for Scope, Click **Register** button
+- Enter **Name**, click **Generate**, click the **Copy** icon of the private key, select **Admin** for Scope, then click **Register**
 
     ![API](derive-api4.png)
 
 !!! note "Important"
-    Keep private key safe & secure. Create a new session key if it is lost or compromised.
+    Keep the private key safe and secure. Create a new session key if it is lost or compromised.
 
-- Click **Confirm** at Metamask pop-up form
+- Approve the registration in your wallet. Your wallet (for example, MetaMask) will show a signature request — click **Confirm** or **Sign** to finish registering the session key
 
 
 ### Add Keys to Condor in Web Dashboard
 
+You need four values from Derive: **Wallet address**, **Session Key** (private key), **Subaccount ID**, and **Account Type**.
+
 - Install Condor using [Condor Quickstart](https://hummingbot.org/installation/condor/)
 
-- In Telegram Condor bot, type `/keys` at message field and press **Enter**, then click **Open Dashboard**
+- In the Telegram Condor bot, open the credentials dashboard:
+    - Tap the **menu** button (bottom left), then tap **`/keys`**, **or**
+    - Type `/keys` in the message field and press **Enter**
+    - Click **Open Dashboard**
 
    ![image](14.png)
 
-- Click **+ Add API Key**
+- In the dashboard, open the **API Keys** tab and click **+ Add API Key**
 
    ![image](15.png)
 
-- Click **Perpetual**
+- Click **Perpetual** (use **Spot** instead if you are connecting the `derive` spot connector)
 
    ![image](16.png)
 
@@ -122,10 +136,33 @@ If the limit is crossed, a **`429 Too Many Requests`** response is returned.
 
    ![image](17.png)
 
-- Input **Derive Wallet address**, **Session Key**, **Subaccount ID**, and **Account Type**.  
-  Click **Add Credential**
+- Fill in the form. The dashboard field names do not match Derive's labels — use this mapping:
+
+    | Dashboard field | Enter this |
+    | --- | --- |
+    | **derive_perpetual_api_key** | Derive **Wallet** address |
+    | **derive_perpetual_api_secret** | **Session Key** private key (copied when you registered the key) |
+    | **sub_id** | **Subaccount ID** |
+    | **account_type** | **SM** or **PM2** |
+
+    Click **Add Credential**
 
    ![image](18.png)
+
+**Where to copy each value on Derive**
+
+- **Wallet address:** open the **Hamburger** menu → **Developers** → click the **Copy** icon next to **Wallet** (not **Signer**)
+
+    ![API](derive-api8.png)
+
+- **Session Key:** the private key you copied in [Generate API Keys](#generate-api-keys). It is shown only once.
+
+- **Subaccount ID:** open the **Hamburger** menu → **Subaccounts** → copy the **ID** of the account you want to trade with
+
+    ![API](derive-api10.png)
+
+!!! tip "Recommended"
+    Create a **new subaccount** so balances are fetched and displayed correctly for both spot and perpetual. In **Subaccounts**, click **Create Subaccount**, enter a **Name**, select **Standard Margin**, then click **Enable Trading**.
 
 !!! note "Account Type"
     Use one of the following values:
