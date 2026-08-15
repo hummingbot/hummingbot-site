@@ -84,52 +84,130 @@ If the limit is crossed, a **`429 Too Many Requests`** response is returned.
 
 ### Generate API Keys
 
-- Connect
+Open [https://www.derive.xyz](https://www.derive.xyz). Derive supports wallets such as **MetaMask**, Rabby, Coinbase Wallet, and Ledger.
+
+- Click **Connect** at the upper right side of the page
 
     ![API](derive-api2.png)
 
-- Click Home tab
+- In the wallet picker, select the wallet you want to use (for example, **MetaMask**)
+- Approve the connection in your wallet. Your wallet extension or app will open a pop-up asking you to connect this site — click **Connect** or **Approve**
+- Sign the message Derive sends to verify you own the wallet
+- If prompted, review the terms, check the agreement boxes, and click **Agree and Continue**
+
+Your wallet address should now appear in the top-right corner.
+
+- At top left, click **Hamburger** icon to open the side bar, click **Developers**, click **Register Session Key**
 
     ![API](derive-api3.png)
 
-- Click Developers tab
-
-    ![API](derive-api3.png)
-
-- Register your session KEY (i.e your public address e.g metamask)
+- Enter **Name**, click **Generate**, click the **Copy** icon of the private key, select **Admin** for Scope, then click **Register**
 
     ![API](derive-api4.png)
 
-- Input a Name and your public address
+!!! note "Important"
+    Keep the private key safe and secure. Create a new session key if it is lost or compromised.
 
-    ![API](derive-api5.png)
+- Approve the registration in your wallet. Your wallet (for example, MetaMask) will show a signature request — click **Confirm** or **Sign** to finish registering the session key
 
-- Click Register button to exit. Now you can use your new Session Key.
 
-    ![API](derive-api6.png)
+### Add Keys to Condor in Web Dashboard
+
+You need four values from Derive: **Wallet address**, **Session Key** (private key), **Subaccount ID**, and **Account Type**.
+
+- Install Condor using [Condor Quickstart](https://hummingbot.org/installation/condor/)
+
+- In the Telegram Condor bot, open the credentials dashboard:
+    - Tap the **menu** button (bottom left), then tap **`/keys`**, **or**
+    - Type `/keys` in the message field and press **Enter**
+    - Click **Open Dashboard**
+
+   ![image](14.png)
+
+- In the dashboard, open the **API Keys** tab and click **+ Add API Key**
+
+   ![image](15.png)
+
+- Click **Perpetual** (use **Spot** instead if you are connecting the `derive` spot connector)
+
+   ![image](16.png)
+
+- Click **derive_perpetual**
+
+   ![image](17.png)
+
+- Fill in the form. The dashboard field names do not match Derive's labels — use this mapping:
+
+    | Dashboard field | Enter this |
+    | --- | --- |
+    | **derive_perpetual_api_key** | Derive **Wallet** address |
+    | **derive_perpetual_api_secret** | **Session Key** private key (copied when you registered the key) |
+    | **sub_id** | **Subaccount ID** |
+    | **account_type** | **SM** or **PM2** |
+
+    Click **Add Credential**
+
+   ![image](18.png)
+
+**Where to copy each value on Derive**
+
+- **Wallet address:** open the **Hamburger** menu → **Developers** → click the **Copy** icon next to **Wallet** (not **Signer**)
+
+    ![API](derive-api8.png)
+
+- **Session Key:** the private key you copied in [Generate API Keys](#generate-api-keys). It is shown only once.
+
+- **Subaccount ID:** open the **Hamburger** menu → **Subaccounts** → copy the **ID** of the account you want to trade with
+
+    ![API](derive-api10.png)
+
+!!! tip "Recommended"
+    Create a **new subaccount** so balances are fetched and displayed correctly for both spot and perpetual. In **Subaccounts**, click **Create Subaccount**, enter a **Name**, select **Standard Margin**, then click **Enable Trading**.
+
+!!! note "Account Type"
+    Use one of the following values:
+
+    | Value | Meaning | Typical use |
+    | --- | --- | --- |
+    | **SM** | Standard Margin | Spot and perpetual trading |
+    | **PM2** | Portfolio Margin | Multiple options and perps |
 
 ### Add Keys to Hummingbot
 
 From inside the Hummingbot client, run `connect derive`:
 
-- Input a Derive address as Derive Wallet address
+- Input a Derive Wallet address
 
     ![API](derive-api8.png)
 
+- Input a Session Private Key
+
+    ![API](12.png)
+
 - Input your Subaccount ID
   
-    ![API](derive-api7.png)
+    ![API](derive-api10.png)
+
+- Input **SM** or **PM2** for Account Type
+
+!!! note "Account Type"
+    Use one of the following values:
+
+    | Value | Meaning | Typical use |
+    | --- | --- | --- |
+    | **SM** | Standard Margin | Spot and perpetual trading |
+    | **PM2** | Portfolio Margin | Multiple options and perps |
 
 ```
 >>> connect derive
 
 Enter Your Derive Wallet address >>>
 
-Enter your wallet private key >>>
+Enter your session private key >>>
 
 Enter your Subaccount ID >>>
 
-Enter your Derive Account Type (trader/market_maker) >>>
+Enter your Derive Account Type (SM/PM2) >>>
 
 ```
 
@@ -172,21 +250,29 @@ If this is not available by default, you can configure Hummingbot to add this pa
 
 From inside the Hummingbot client, run `connect derive_perpetual`:
 
-- Input a Derive address as DerivePerpetual Wallet address
+- In Developers at sidebar, click **Copy** icon of Wallet
 
     ![API](derive-api8.png)
 
-- Input your Subaccount ID
-  
-    ![API](derive-api7.png)
+- In Subaccounts at sidebar, click **Create Subaccount** button
 
+!!! tip "Recommended"
+    Create a **new subaccount** so balances are fetched and displayed correctly for both spot and perpetual.
+
+- In Create Subaccount Form, enter **Name**, select **Standard Margin**, click **Enable Trading** button
+
+    ![API](derive-api9.png)
+
+- Copy the **ID** of the newly created Subaccount, & paste into Hummingbot client.
+  
+    ![API](derive-api10.png)
 ```
 >>> connect derive_perpetual
 
 Enter Your DerivePerpetual Wallet address >>>
-Enter your wallet private key >>>
+Enter your Session private key >>>
 Enter your Subaccount ID >>>
-Enter your Derive Account Type (trader/market_maker) >>>
+Enter your Derive Account Type (SM/PM2) >>>
 
 ```
 
@@ -222,4 +308,4 @@ Afer you create an account and create the API keys, you can enter them by using 
 - **Derive Leverage:** <https://docs.derive.xyz/reference/private-get_positions#:~:text=leverage>
 
 - Sample View
-    ![API](derive-api10.png)
+    ![API](derive-api11.png)

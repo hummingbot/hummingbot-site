@@ -20,74 +20,141 @@ In this guide, we'll walk you through connecting your Derive account to Hummingb
 
 Before you can start trading on Derive using Hummingbot, you'll need to set up your wallet, connect it to the Derive platform, deposit funds, and configure your API access. This section walks you through these essential first steps to prepare your account for automated trading.
 
-*Derive supports multiple wallets such as Rabby Wallet, Coinbase wallet, Ledger etc, but for this guide, we'll use **MetaMask**, one of the most popular Ethereum wallets. MetaMask allows users to interact with Derive via its browser extension or mobile app.*
+These steps match the [Derive exchange connector docs](../../../exchanges/derive/index.md#how-to-connect). Derive supports wallets such as **MetaMask**, Rabby, Coinbase Wallet, and Ledger. This guide uses **MetaMask** as the example.
 
 ### Install MetaMask
 
-Ensure MetaMask is Installed and Set Up
-
 If you haven’t already, download and install the [MetaMask](https://metamask.io/) browser extension or mobile app. Create a new wallet or import an existing one.
 
-### Connect MetaMask Wallet to Derive
+### Connect Wallet to Derive
 
-Open your web browser and go to [https://derive.xyz/](https://derive.xyz/). On the Derive homepage, click the **"Connect Wallet"** button, typically located in the top-right corner of the page.
+Open [https://www.derive.xyz](https://www.derive.xyz) (or [https://app.derive.xyz/](https://app.derive.xyz/)). Click **Connect** at the upper right side of the page.
 
-   [![image](1.png)](1.png)
+   ![API](1.png)
 
-From the list of available options, select **"MetaMask"**.
+- In the wallet picker, select the wallet you want to use (for example, **MetaMask**)
 
-   [![image](2.png)](2.png)
+   ![API](2.png)
 
-MetaMask will open a pop-up asking you to confirm the connection.
+- Approve the connection in your wallet. Your wallet extension or app will open a pop-up asking you to connect this site — click **Connect** or **Approve**
 
-   [![image](3.png)](3.png)  
-   
-After the wallet is connected, Derive will prompt you to sign a message to verify you are the owner of the wallet.
+   ![API](3.png)
 
-   [![image](4.png)](4.png)
-   [![image](5.png)](5.png)  
+- Sign the message Derive sends to verify you own the wallet
 
-Check both boxes if you read through and agree with the terms and then "Agree and Continue"
+   ![API](4.png)
+   ![API](5.png)
 
-   [![image](6.png)](6.png)
+- If prompted, review the terms, check the agreement boxes, and click **Agree and Continue**
+
+   ![API](6.png)
+
+Your wallet address should now appear in the top-right corner.
 
 ### Deposit Funds
 
-Once your wallet is connected, you will need to deposit tokens into your Derive account. Deposit USDC, ETH, BTC and other tokens to start trading options and perps. Make sure you have enough balance to cover at least the minimum trading amount + fees. 
+Once your wallet is connected, deposit tokens into your Derive account. Deposit USDC, ETH, BTC, and other tokens to start trading options and perps. Make sure you have enough balance to cover at least the minimum trading amount plus fees.
 
-   [![image](7.png)](7.png)
+   ![API](7.png)
 
 ### Register Session Key
 
-After connecting, click the Developers link on the left side of the page. If you don't see it, go back to the Home page and then click Developers. Click Register Session Key and then enter in your Metamask Wallet's public address. You'll need to confirm the signature request in Metamask. 
+- At the top left, click the **Hamburger** icon to open the side bar, click **Developers**, then click **Register Session Key**
 
-   [![image](8.png)](8.png)
-   [![image](9.png)](9.png) 
+   ![API](8.png)
 
-Once this is done, take note of a couple things which we will need to connect Hummingbot, the first one is the **Derive Wallet address** and second is the **Subaccount ID**
+- Enter **Name**, click **Generate**, click the **Copy** icon of the private key, select **Admin** for Scope, then click **Register**
 
-   [![image](10.png)](10.png) 
+   ![API](9.png)
 
-### Get Metamask wallet private key
+!!! note "Important"
+    Keep the private key safe and secure. Create a new session key if it is lost or compromised.
 
-- Click on the three dots next to your account and then Account Details
+- Approve the registration in your wallet. Your wallet (for example, MetaMask) will show a signature request — click **Confirm** or **Sign** to finish registering the session key
 
-- On the Account Details page, click "Show Private Key"
+### Create New Subaccount
 
-- Enter your wallet password and click "Confirm"
+!!! tip "Recommended"
+    Create a **new subaccount** so balances are fetched and displayed correctly for both spot and perpetual.
 
-- Click on Hold to reveal Private Key to display your private key 
+- In the side bar, click **Subaccounts**, then click **Create Subaccount**
+- In the Create Subaccount form, enter a **Name**, select **Standard Margin**, then click **Enable Trading**
 
-   [![image](11.png)](11.png)
+   ![API](a10.png)
 
- 
-Once available, copy the private key and store it safely in a secure location. You will need this key later to connect to Hummingbot.
+- Copy the **ID** of the newly created subaccount. You will paste this into Condor or the Hummingbot client.
 
+You need four values from Derive: **Wallet address**, **Session Key** (private key), **Subaccount ID**, and **Account Type**.
+
+**Where to copy each value on Derive**
+
+- **Wallet address:** open the **Hamburger** menu → **Developers** → click the **Copy** icon next to **Wallet** (not **Signer**)
+
+   ![API](a11.png)
+
+- **Session Key:** the private key you copied when registering the session key. It is shown only once.
+
+   ![API](a12.png)
+
+- **Subaccount ID:** open the **Hamburger** menu → **Subaccounts** → copy the **ID** of the account you want to trade with
+
+   ![API](a13.png)
+
+!!! note "Account Type"
+    Use one of the following values:
+
+    | Value | Meaning | Typical use |
+    | --- | --- | --- |
+    | **SM** | Standard Margin | Spot and perpetual trading |
+    | **PM2** | Portfolio Margin | Multiple options and perps |
+
+## Using Derive with Condor
+
+You need four values from Derive: **Wallet address**, **Session Key** (private key), **Subaccount ID**, and **Account Type**.
+
+- Install Condor using [Condor Quickstart](https://hummingbot.org/installation/condor/)
+
+- In the Telegram Condor bot, open the credentials dashboard:
+    - Tap the **menu** button (bottom left), then tap **`/keys`**, **or**
+    - Type `/keys` in the message field and press **Enter**
+    - Click **Open Dashboard**
+
+   ![API](a14.png)
+
+- In the dashboard, open the **API Keys** tab and click **+ Add API Key**
+
+   ![API](a15.png)
+
+- Click **Perpetual** (use **Spot** instead if you are connecting the `derive` spot connector)
+
+   ![API](a16.png)
+
+- Click **derive_perpetual**
+
+   ![API](a17.png)
+
+- Fill in the form. The dashboard field names do not match Derive's labels — use this mapping:
+
+    | Dashboard field | Enter this |
+    | --- | --- |
+    | **derive_perpetual_api_key** | Derive **Wallet** address |
+    | **derive_perpetual_api_secret** | **Session Key** private key (copied when you registered the key) |
+    | **sub_id** | **Subaccount ID** |
+    | **account_type** | **SM** or **PM2** |
+
+    Click **Add Credential**
+
+   ![API](a18.png)
+
+!!! note "Account Type"
+    Use one of the following values:
+
+    | Value | Meaning | Typical use |
+    | --- | --- | --- |
+    | **SM** | Standard Margin | Spot and perpetual trading |
+    | **PM2** | Portfolio Margin | Multiple options and perps |
 
 ## Using Derive with Hummingbot Client
-
-!!! note "Dashboard Compatibility Notice"
-    Derive is currently not available via the Hummingbot Dashboard due to dependency conflicts within the Hummingbot Library. Until this is resolved, please follow the instructions below to set up Derive using the standalone command-line client (Docker or Source installation).
 
 The following instructions guide you through adding your Derive credentials to the standalone Hummingbot command-line client.
 
@@ -176,35 +243,45 @@ The following instructions guide you through adding your Derive credentials to t
 
 ### Add Keys to Hummingbot
 
-To connect Hummingbot to Derive's perpetual market, you'll need Derive wallet address, the Subaccount ID and your Metamask wallet private key.
+To connect Hummingbot to Derive, you'll need the same four values:
 
- From within the Hummingbot client, run the following command to start the connection process:
+- **Derive Wallet address** — copy **Wallet** on the Developers page, not **Signer**
+- **Session Key** private key — the key shown once when you registered it, not your MetaMask / owner key
+- **Subaccount ID** — prefer a funded subaccount
+- **Account Type**: `SM` or `PM2`
 
-   ```bash
-   connect derive_perpetual
+From inside the Hummingbot client, run `connect derive_perpetual` for perpetual markets, or `connect derive` for spot:
+
+   ```
+   >>> connect derive_perpetual
+
+   Enter Your DerivePerpetual Wallet address >>>
+   Enter your session private key >>>
+   Enter your Subaccount ID >>>
+   Enter your Derive Account Type (SM/PM2) >>>
    ```
 
- You will be prompted to enter your credentials:
+!!! note "Account Type"
+    Use one of the following values:
+
+    | Value | Meaning | Typical use |
+    | --- | --- | --- |
+    | **SM** | Standard Margin | Spot and perpetual trading |
+    | **PM2** | Portfolio Margin | Multiple options and perps |
+
+If the credentials are correct, you'll see:
 
    ```
-    Enter Your DerivePerpetual Wallet address >>>
-    Enter your wallet private key >>>
-    Enter your Subaccount ID >>>
-   ```
-
- If the credentials are correct, you'll see the following confirmation message:
-
-   ```bash
    You are now connected to derive_perpetual
    ```
 
- To verify the connection, run the **balance** command within the Hummingbot client to check if the displayed balance matches your Derive account:
+To verify the connection, run **balance** and check that it matches your Derive account:
 
-   ```bash
+   ```
    balance
    ```
 
-   [![image](balance.png)](balance.png)
+   ![API](balance.png)
 
 ### Run a Strategy
 
@@ -244,12 +321,12 @@ For this example, we'll use the [**bollinger_v1**](https://github.com/hummingbot
    Enter the trading pair for the candles data, leave empty to use the same trading pair as the connector:
    
    ```
-   [![image](12.png)](12.png)
+   ![API](12.png)
 
 
   - Once the configuration is done, give the controller config a name or use the default one:
 
-   [![image](13.png)](13.png)
+   ![API](13.png)
 
  **Create a script config**
 
@@ -263,12 +340,12 @@ For this example, we'll use the [**bollinger_v1**](https://github.com/hummingbot
 
    - Make sure to enter the file name of the controller config we created earlier 
 
-   [![image](14.png)](14.png)
+   ![API](14.png)
 
 
    - Lastly, give the script config a name
 
-   [![image](15.png)](15.png)
+   ![API](15.png)
 
 
  **Start the strategy**
@@ -279,7 +356,7 @@ For this example, we'll use the [**bollinger_v1**](https://github.com/hummingbot
    start --script v2_with_controllers.py --conf conf_v2_with_controllers_1.yml
    ```
 
-   [![image](16.png)](16.png) 
+   ![API](16.png) 
  
 **Monitor the Strategy**  
 
@@ -291,7 +368,7 @@ This strategy is designed to **place a buy order when the price approaches the l
    status
    ```
 
-   [![image](status.png)](status.png)
+   ![API](status.png)
 
  **Stop the Bot**
 
@@ -301,7 +378,7 @@ This strategy is designed to **place a buy order when the price approaches the l
    stop
    ```
 
-   [![image](17.png)](17.png)
+   ![API](17.png)
 
 For more details on V2 Strategies or other available controllers, check out the Controllers section of [V2 Strategies](../../../strategies/v2-strategies/controllers/index.md) documentation. Please note that since Derive only supports **one-way mode** some V2 Strategies that use Hedge mode may not work correctly with the controller.    
 
