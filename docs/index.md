@@ -36,7 +36,7 @@ hide:
 
 [:material-robot: I want AI to help me trade](condor/index.md){ .md-button }
 [:material-cog: I want full manual control](installation/hummingbot-client.md){ .md-button }
-[:material-map: See the full Learning Path](docs/learning-path.md){ .md-button .md-button--primary }
+[:material-map: See the full Learning Path](docs/index.md#getting-started){ .md-button .md-button--primary }
 
 </div>
 
