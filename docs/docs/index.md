@@ -4,7 +4,11 @@ It is designed to be modular and extensible, allowing users to automate any trad
 
 ## Getting Started
 
-Choose your path based on your needs:
+New here? The **[Learning Path](learning-path.md)** finds the setup and reading order that matches your experience level and use case—including whether you need [Tailscale](../hummingbot-api/tailscale.md) (only for remote/multi-machine deployments, not local testing).
+
+[:octicons-arrow-right-24: Find Your Path](learning-path.md){ .md-button .md-button--primary }
+
+Or jump straight in:
 
 - **[Condor Quickstart](../installation/condor.md)** - Recommended for Trading Agents, cloud deployments, multi-bot management, and modern interfaces (Telegram, web dashboard)
 - **[Hummingbot Client Quickstart](../installation/hummingbot-client.md)** - Best for local usage, learning Hummingbot, and running single bot instances with [`hbot`](../client/hbot-cli.md)

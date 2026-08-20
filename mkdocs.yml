@@ -169,6 +169,7 @@ nav:
   - Home: index.md
   - Documentation:
     - Documentation: docs/index.md
+    - Learning Path: docs/learning-path.md
     - Installation:
       - Overview: installation/index.md
       - Hummingbot Client Quickstart: installation/hummingbot-client.md

@@ -25,6 +25,17 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 - Exchange API keys (can be added after installation)
 - **[Tailscale](https://tailscale.com) account** (free tier is enough) — **required for production**; create an [auth key](https://login.tailscale.com/admin/settings/keys) and enable [MagicDNS](https://login.tailscale.com/admin/dns) before you install
 
+## Do I Need Tailscale?
+
+| Situation | Tailscale needed? |
+|-----------|--------------------|
+| Testing locally on one machine | No |
+| Same VPS, API and clients together | Optional, still recommended |
+| Different machines (for example, laptop + VPS) | **Yes** |
+| A team or multiple devices need access | **Yes** |
+
+If you're just testing locally, skip ahead—the Quick Start below works without Tailscale. See [Tailscale](tailscale.md) for setup when you need it.
+
 ## Quick Start (Docker - Recommended)
 
 Use this when you are deploying **Hummingbot API** on its own machine (for example a **VPS** or another **remote server**), or any time you **only** need the API and database stack and **not** Condor. **Docker** must be installed and running on that server before you run the command:
