@@ -76,7 +76,22 @@ On the **same machine** as the installer, the API is available at `http://localh
 
 ## Verify Installation
 
-Once installed, you can verify the API is running:
+### Run the doctor
+
+From `hummingbot-api/`:
+
+```bash
+make doctor
+```
+
+One read-only pass over the whole install: Docker and Compose, `.env` (including
+credentials still left at well-known defaults), the `hummingbot-api`,
+`hummingbot-broker` and `hummingbot-postgres` containers, which ports are sitting
+on a public interface, Tailscale's tailnet **and** serve status, and whether the
+API actually answers an authenticated request. It names the fix for anything it
+finds and exits non-zero only when something is genuinely broken.
+
+The manual checks below are the same things, one at a time.
 
 ### Check API status
 
@@ -119,10 +134,14 @@ Common variables (see **`config.py`** in the [hummingbot-api](https://github.com
 - **`DATABASE_URL`** — PostgreSQL connection string. When the API runs **inside Docker**, `docker-compose.yml` overrides this to use the Compose service hostname **`postgres`** (not the container name `hummingbot-postgres`). For **`make run`** on your host against Compose-backed Postgres, use **`localhost`** in `.env`.  
 - **`BROKER_*`** — EMQX / MQTT. Compose overrides **`BROKER_HOST`** to **`emqx`** for the API container; keep **`localhost`** in `.env` for local dev with **`make run`**.  
 - **`GATEWAY_URL`** — Hummingbot Gateway (default `http://localhost:15888`).  
+- **`API_BIND_HOST`** — which host interface Docker publishes the API's port 8000 on. `setup.sh` writes **`127.0.0.1`** when Tailscale is enabled and **`0.0.0.0`** otherwise. Leave it at `127.0.0.1` for any Tailscale deploy: `tailscale serve` is what makes port 8000 reachable on the tailnet, so publishing it on every interface as well just puts it back on the public attack surface. `make doctor` fails this check if the two disagree.  
 
 Optional tuning (market-data intervals, Logfire, AWS, etc.) maps to nested settings in **`config.py`** (for example `MARKET_DATA_*`). Prefer defaults unless you have a specific need.
 
 ## Troubleshooting
+
+Start with `make doctor` from `hummingbot-api/` — it covers most of the cases
+below and points at the fix. The sections here go deeper when it does not.
 
 ### Database (PostgreSQL)
 
@@ -165,6 +184,17 @@ docker compose restart emqx
 
 Dashboard: [http://localhost:18083](http://localhost:18083) (default login is often **`admin`** / **`public`** — confirm in EMQX docs).
 
+PostgreSQL (`5432`) and every EMQX port (`1883`, `8883`, `8083`, `8084`, `8081`,
+`18083`, `61613`) are published on **`127.0.0.1` only**. Nothing external needs
+them: the API reaches them over the `emqx-bridge` Docker network, and bot
+containers run with `network_mode: host` so `127.0.0.1` is their loopback too.
+The dashboard link above therefore works from the API host and nowhere else —
+tunnel in over SSH or your tailnet if you need it remotely.
+
+If `make doctor` reports these ports on all interfaces, the running stack
+predates that change: `make deploy` recreates the containers with the
+loopback-only bindings.
+
 ### Port `8000` already in use
 
 **Docker:** in `docker-compose.yml`, change the published port for `hummingbot-api`, e.g.:
@@ -173,8 +203,11 @@ Dashboard: [http://localhost:18083](http://localhost:18083) (default login is of
 services:
   hummingbot-api:
     ports:
-      - "8001:8000"
+      - "${API_BIND_HOST:-0.0.0.0}:8001:8000"
 ```
+
+Keep the `${API_BIND_HOST:-0.0.0.0}` prefix — dropping it publishes the API on
+every interface regardless of your Tailscale setting.
 
 **`make run` (dev):** this repo does **not** ship a `run.sh`. The **`Makefile`** `run` target starts Postgres + EMQX then runs **`uvicorn main:app --reload`**. To use another port, add **`--port 8001`** to that `uvicorn` line or run Uvicorn yourself after `docker compose up emqx postgres -d`.
 

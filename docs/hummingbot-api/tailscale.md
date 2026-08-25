@@ -64,7 +64,18 @@ On the **API server**:
 make tailscale-status
 ```
 
-You should see **`hummingbot-api`** in the list.
+You should see **`hummingbot-api`** in the peer list, **and** port `8000` listed
+under the `tailscale serve` status printed below it. Both matter: joining the
+tailnet is not the same as being reachable on it. With `API_BIND_HOST=127.0.0.1`
+(what setup writes whenever Tailscale is enabled), `tailscale serve` is the only
+thing forwarding the tailnet's port 8000 to the API.
+
+For the full picture — containers, ports, credentials, tailnet and serve status
+in one pass — run:
+
+```bash
+make doctor
+```
 
 From **another device** on Tailscale (replace with your username and password):
 
@@ -80,14 +91,21 @@ If that returns a response, the API is reachable on your private network.
 |---------|----------|
 | Name `hummingbot-api` does not work | Enable **MagicDNS** in [Tailscale DNS settings](https://login.tailscale.com/admin/dns) |
 | Auth key rejected | Key must start with `tskey-auth-`; generate a new one if it expired |
-| Connection refused | On the server, run `make tailscale-status` and `make deploy` again |
+| Connection refused | On the server, run `make doctor` — it distinguishes "not on the tailnet" from "on the tailnet but port 8000 is not proxied" |
+| `tailscale status` looks fine but nothing connects | Port 8000 is not being served. Confirm `tailscale-serve.json` is mounted into the sidecar, then `make deploy` again |
 | Login fails (401) | Use the same username/password as in the API `.env` |
 | Still reachable on public IP | Remove port **8000** from your cloud provider’s firewall / security group |
 
 ## Security reminders
 
-- Use **strong** API and config passwords during setup
+- Use **strong** API and config passwords during setup. `make doctor` fails the
+  check if `PASSWORD` or `CONFIG_PASSWORD` is left at a well-known default.
 - Do not share your Tailscale auth key
+- Leave **`API_BIND_HOST=127.0.0.1`** in `.env`. Setting it back to `0.0.0.0`
+  publishes port 8000 on every interface *in addition to* the tailnet, which
+  undoes most of what Tailscale is here for.
+- PostgreSQL and EMQX are published on loopback only and never need to be on
+  the tailnet.
 
 ---
 
@@ -100,7 +118,7 @@ If that returns a response, the API is reachable on your private network.
     docker compose -f docker-compose.yml -f docker-compose.tailscale.yml up -d
     ```
 
-    A **Tailscale sidecar** container (`hummingbot-tailscale`) joins your tailnet. The API container is unchanged; clients on the tailnet reach port 8000 via the host’s Tailscale interface.
+    A **Tailscale sidecar** container (`hummingbot-tailscale`) joins your tailnet with `network_mode: host`. `setup.sh` also writes `API_BIND_HOST=127.0.0.1` to `.env`, so the API's port 8000 is published on loopback only. The sidecar's declarative serve config (`tailscale-serve.json`, mounted as `TS_SERVE_CONFIG`) forwards the tailnet IP's `:8000` to `127.0.0.1:8000` — that forward is what makes the API reachable, and it is why the API ends up on the tailnet *and nowhere else*.
 
     For **source / dev**, `make run` connects Tailscale on the host (if enabled), then starts EMQX, Postgres, and `uvicorn --reload`.
 
@@ -111,6 +129,7 @@ If that returns a response, the API is reachable on your private network.
     | `TAILSCALE_ENABLED` | `true` to enable Tailscale in `make deploy` / `make run` |
     | `TAILSCALE_AUTH_KEY` | Auth key (`tskey-auth-...`) |
     | `TAILSCALE_HOSTNAME` | MagicDNS name (default: `hummingbot-api`) |
+    | `API_BIND_HOST` | Host interface Docker publishes port 8000 on. `127.0.0.1` when Tailscale is enabled, `0.0.0.0` otherwise |
 
     ### Source install
 
@@ -137,7 +156,8 @@ If that returns a response, the API is reachable on your private network.
     |--------|----------|
     | `make deploy` | Docker stack; Tailscale overlay when enabled |
     | `make run` | Dev mode with optional Tailscale |
-    | `make tailscale-status` | Shows `tailscale status` |
+    | `make tailscale-status` | Shows `tailscale status` **and** `tailscale serve status` |
+    | `make doctor` | Read-only check of deps, `.env`, containers, port exposure, Tailscale and API auth |
 
     ### Logs
 
