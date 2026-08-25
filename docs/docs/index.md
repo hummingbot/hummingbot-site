@@ -26,6 +26,7 @@ New here? Use the guide below to find the product, experience level, and reading
 | Level | Goal | Reading path | Time |
 |-------|------|---------------|------|
 | Beginner | Get Condor running and place your first AI-assisted trade | [Condor Quickstart](../installation/condor.md) → [Telegram](https://condor.hummingbot.org/getting-started/telegram) → [First Agent](https://condor.hummingbot.org/getting-started/first-agent) | ~30–45 min |
+| Beginner, no Telegram | Same, driven entirely from the browser dashboard | [Condor Quickstart](../installation/condor.md#telegram-or-local) (Local mode) → [Web Dashboard](https://condor.hummingbot.org/getting-started/web-dashboard) → [First Agent](https://condor.hummingbot.org/getting-started/first-agent) | ~30–45 min |
 | Intermediate | Add real credentials, run Bots/Executors alongside Agents, track P&L | [Credentials](https://condor.hummingbot.org/getting-started/credentials) → [Web Dashboard](https://condor.hummingbot.org/getting-started/web-dashboard) → [Bots vs. Executors vs. Routines](https://condor.hummingbot.org/learning-path#what-do-you-want-condor-to-do) → [Sessions](https://condor.hummingbot.org/getting-started/sessions) | ~1–2 hrs |
 | Advanced | Deploy remotely/production, manage multiple agents, secure with Tailscale | [Tailscale setup](../hummingbot-api/tailscale.md) → [Trading Agents Architecture](https://condor.hummingbot.org/trading-agents/architecture) → [Agent Builder](https://condor.hummingbot.org/trading-agents/agent-builder) | ~2–4 hrs |
 
@@ -43,11 +44,19 @@ For the full Condor-specific breakdown, see the [Condor Learning Path](https://c
 
 1. **AI trades for me, starting today** — [Condor Quickstart](../installation/condor.md) → [Telegram](https://condor.hummingbot.org/getting-started/telegram) → [First Agent](https://condor.hummingbot.org/getting-started/first-agent)
 2. **Test everything locally before risking capital** — [Condor Quickstart](../installation/condor.md) (local, **no Tailscale needed**) or [Client paper trading](../installation/hummingbot-client.md#step-4-run-a-paper-trading-strategy)
-3. **Run a proven market-making strategy with full manual control** — [Hummingbot Client Quickstart](../installation/hummingbot-client.md) → [Strategies](../strategies/index.md)
-4. **Deploy to a VPS/cloud server for 24/7 uptime** — [Hummingbot API Installation](../hummingbot-api/installation.md) → [Tailscale](../hummingbot-api/tailscale.md) (**required**) → [Securing Condor and Hummingbot API with Tailscale](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
-5. **Manage multiple bots or agents across a team** — [Condor](https://condor.hummingbot.org) + [Hummingbot API](../hummingbot-api/index.md), remote/Tailscale deployment
-6. **Build a custom strategy or connector** — [Strategies](../strategies/index.md) → [Building CLOB Connectors](../connectors/connectors/index.md) → [Building Gateway Connectors](../connectors/gateway-connectors/index.md)
-7. **Automate alerts/reports without LLM or API cost** — [Routines (Condor)](https://condor.hummingbot.org/routines/overview) or [Market Data Collector (Client)](../client/global-configs/data-collector.md)
+3. **Use Condor without a Telegram account** — [Condor Quickstart → Local mode](../installation/condor.md#telegram-or-local), then drive everything from the [web dashboard](https://condor.hummingbot.org/getting-started/web-dashboard)
+4. **Run a proven market-making strategy with full manual control** — [Hummingbot Client Quickstart](../installation/hummingbot-client.md) → [Strategies](../strategies/index.md)
+5. **Deploy to a VPS/cloud server for 24/7 uptime** — [Hummingbot API Installation](../hummingbot-api/installation.md) → [Tailscale](../hummingbot-api/tailscale.md) (**required**) → [Securing Condor and Hummingbot API with Tailscale](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md)
+6. **Manage multiple bots or agents across a team** — [Condor](https://condor.hummingbot.org) + [Hummingbot API](../hummingbot-api/index.md), remote/Tailscale deployment
+7. **Build a custom strategy or connector** — [Strategies](../strategies/index.md) → [Building CLOB Connectors](../connectors/connectors/index.md) → [Building Gateway Connectors](../connectors/gateway-connectors/index.md)
+8. **Automate alerts/reports without LLM or API cost** — [Routines (Condor)](https://condor.hummingbot.org/routines/overview) or [Market Data Collector (Client)](../client/global-configs/data-collector.md)
+
+### Did it install correctly?
+
+Both Condor and Hummingbot API ship a `make doctor` — a read-only check of
+dependencies, configuration, credentials, port exposure, Tailscale, and whether
+the two can actually reach and authenticate with each other. Run it from each
+repo's directory after installing, and any time something stops working.
 
 ### Do I need Tailscale?
 
