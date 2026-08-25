@@ -63,9 +63,20 @@ repo's directory after installing, and any time something stops working.
 | Situation | Tailscale needed? |
 |-----------|--------------------|
 | Testing locally, Condor and Hummingbot API on one machine | No |
-| Same VPS, both services together | Optional, still recommended |
+| Same VPS, both services together | **Yes** — unless you set `API_BIND_HOST=127.0.0.1` |
 | Different machines (for example, laptop + VPS) | **Yes** |
 | Team or multiple devices need access | **Yes** |
+
+!!! warning "Same VPS is not the same as local"
+    When you decline Tailscale, Hummingbot API's setup writes `API_BIND_HOST=0.0.0.0`,
+    and Docker publishes port **8000 on every interface** — including the VPS's public IP.
+    Docker's published ports are also *not* blocked by `ufw`: its rules are evaluated
+    before ufw's, so `ufw deny 8000` leaves the port reachable unless you write
+    `DOCKER-USER` rules yourself.
+
+    If every client really is on that same VPS, you do not need a tailnet — set
+    `API_BIND_HOST=127.0.0.1` in `.env` and `make deploy`. Otherwise, use Tailscale.
+    Either way, `make doctor` warns when port 8000 is on a public interface.
 
 See [Tailscale](../hummingbot-api/tailscale.md) for setup, or the [full walkthrough](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md) for security context and screenshots.
 

@@ -30,9 +30,20 @@ The Hummingbot API provides a comprehensive trading platform with three ways to 
 | Situation | Tailscale needed? |
 |-----------|--------------------|
 | Testing locally on one machine | No |
-| Same VPS, API and clients together | Optional, still recommended |
+| Same VPS, API and clients together | **Yes** — unless you set `API_BIND_HOST=127.0.0.1` |
 | Different machines (for example, laptop + VPS) | **Yes** |
 | A team or multiple devices need access | **Yes** |
+
+!!! warning "Same VPS is not the same as local"
+    When you decline Tailscale, Hummingbot API's setup writes `API_BIND_HOST=0.0.0.0`,
+    and Docker publishes port **8000 on every interface** — including the VPS's public IP.
+    Docker's published ports are also *not* blocked by `ufw`: its rules are evaluated
+    before ufw's, so `ufw deny 8000` leaves the port reachable unless you write
+    `DOCKER-USER` rules yourself.
+
+    If every client really is on that same VPS, you do not need a tailnet — set
+    `API_BIND_HOST=127.0.0.1` in `.env` and `make deploy`. Otherwise, use Tailscale.
+    Either way, `make doctor` warns when port 8000 is on a public interface.
 
 If you're just testing locally, skip ahead—the Quick Start below works without Tailscale. See [Tailscale](tailscale.md) for setup when you need it.
 
