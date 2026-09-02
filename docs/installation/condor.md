@@ -72,19 +72,32 @@ A read-only pass over dependencies, `.env` and `config.yml`, the AI model, wheth
 
 ## Keeping It Updated
 
-In Telegram, **`/update`** (admin only) checks both Condor and the Hummingbot API
-next to it, shows how far behind each is and what changed, and can update either
-or both — API first when you do both, so Condor reconnects afterwards. Condor
-also checks hourly on its own and messages the admin when an update lands
-(`UPDATE_CHECK_INTERVAL` in `.env`; `0` disables it).
+Updating is admin-only and available from both surfaces, over one shared engine:
+**`/update`** in Telegram and **Settings → Updates** in the web dashboard. They
+are two views of the same run — start it in one and watch it finish in the other
+— so a **Local mode** install with no Telegram bot updates from the dashboard
+panel without needing one.
 
-!!! note "Local mode updates by hand"
-    `/update` and its notifications are Telegram-only, so an install running
-    without a bot has no way to reach either:
+It reports what Condor and the Hummingbot API are each running (for the API,
+both its git checkout and its container image), then a preflight of blockers
+with a way out where one exists, and warnings that never refuse.
+
+Condor also checks in the background and tells the admin when something falls
+behind — once per update rather than once per check, with a next step each
+surface can actually take. `UPDATE_CHECK_INTERVAL` in `.env` tunes it (seconds,
+default `3600`; `0` disables).
+
+!!! note "An update asks you to relaunch"
+    It lands the code, syncs dependencies and rebuilds the dashboard, then stops
+    and asks you to restart it yourself:
 
     ```bash
-    cd condor && git pull && make install && make restart
+    cd condor && make restart
     ```
+
+    Condor is rarely the top of its own process tree — `make run`, a shell
+    wrapper, a supervisor — so re-execing itself would race the parent into
+    bringing a second Condor up on the same port and token.
 
 ## Learn More
 
