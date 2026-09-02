@@ -70,6 +70,22 @@ A read-only pass over dependencies, `.env` and `config.yml`, the AI model, wheth
 | API | `http://localhost:8000` | REST API |
 | Swagger | `http://localhost:8000/docs` | API documentation |
 
+## Keeping It Updated
+
+In Telegram, **`/update`** (admin only) checks both Condor and the Hummingbot API
+next to it, shows how far behind each is and what changed, and can update either
+or both — API first when you do both, so Condor reconnects afterwards. Condor
+also checks hourly on its own and messages the admin when an update lands
+(`UPDATE_CHECK_INTERVAL` in `.env`; `0` disables it).
+
+!!! note "Local mode updates by hand"
+    `/update` and its notifications are Telegram-only, so an install running
+    without a bot has no way to reach either:
+
+    ```bash
+    cd condor && git pull && make install && make restart
+    ```
+
 ## Learn More
 
 - [Condor Documentation](https://condor.hummingbot.org) - Full guides for Trading Agents, executors, and more
