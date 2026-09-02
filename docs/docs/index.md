@@ -63,20 +63,21 @@ repo's directory after installing, and any time something stops working.
 | Situation | Tailscale needed? |
 |-----------|--------------------|
 | Testing locally, Condor and Hummingbot API on one machine | No |
-| Same VPS, both services together | **Yes** — unless you set `API_BIND_HOST=127.0.0.1` |
+| Same VPS, both services together | **No** — the API binds `127.0.0.1` by default; still worth it if anything needs off-box access |
 | Different machines (for example, laptop + VPS) | **Yes** |
 | Team or multiple devices need access | **Yes** |
 
-!!! warning "Same VPS is not the same as local"
-    When you decline Tailscale, Hummingbot API's setup writes `API_BIND_HOST=0.0.0.0`,
-    and Docker publishes port **8000 on every interface** — including the VPS's public IP.
-    Docker's published ports are also *not* blocked by `ufw`: its rules are evaluated
-    before ufw's, so `ufw deny 8000` leaves the port reachable unless you write
-    `DOCKER-USER` rules yourself.
+!!! warning "Installed before the API's port lockdown? Check it"
+    Hummingbot API used to publish port **8000 on every interface**, including a VPS's
+    public IP. It now binds `127.0.0.1` by default, and so do Postgres and the EMQX
+    broker — but an existing stack keeps its old bindings until the containers are
+    recreated. Run `make deploy`, then `make doctor`, which flags any of those ports
+    still on a public interface.
 
-    If every client really is on that same VPS, you do not need a tailnet — set
-    `API_BIND_HOST=127.0.0.1` in `.env` and `make deploy`. Otherwise, use Tailscale.
-    Either way, `make doctor` warns when port 8000 is on a public interface.
+    To widen it deliberately, set `API_BIND` in `.env` — prefer a specific interface over
+    `0.0.0.0`. Docker's published ports are *not* blocked by `ufw`: its rules are evaluated
+    before ufw's, so `ufw deny 8000` leaves a widened port reachable unless you write
+    `DOCKER-USER` rules. Close it in your cloud provider's firewall instead.
 
 See [Tailscale](../hummingbot-api/tailscale.md) for setup, or the [full walkthrough](../blog/posts/securing-condor-and-hummingbot-api-with-tailscale/index.md) for security context and screenshots.
 
