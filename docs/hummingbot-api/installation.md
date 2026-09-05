@@ -210,12 +210,11 @@ broker's well-known `admin` / `public` default is gone.
     ACL (`emqx/acl.conf`) refuses every topic outside `hbot/#` and
     `hummingbot-api/response/#`.
 
-    **Upgrading an existing deployment takes two extra steps.** EMQX only
-    imports the bootstrap file for accounts it does not already have, so
-    changing `BROKER_PASSWORD` or `BROKER_DASHBOARD_PASSWORD` in `.env` does
-    nothing until `make emqx-auth-reset` recreates the state volume. And bot
-    instances with the old empty MQTT credentials baked into `conf_client.yml`
-    need redeploying before they can reconnect.
+    **Upgrading an existing deployment breaks running bots until you redeploy
+    them**, and changing a broker password in `.env` does nothing until
+    `make emqx-auth-reset` recreates the state volume. Both are covered in
+    [Broker Security Update](broker-security.md), along with what to do if your
+    broker was reachable from the internet.
 
 Run **`make emqx-audit`** to print the broker's listeners, auth, authorization,
 ACL and any rule-engine rules, actions, connectors or bridges. That last part is
