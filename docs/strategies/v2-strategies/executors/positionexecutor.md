@@ -1,6 +1,6 @@
 **PositionExecutor:** Manages opening and closing positions of equal amounts, ensuring the portfolio remains balanced ± the position's profit or loss. It's applicable in both perpetual and spot markets, requiring pre-ownership of the asset for spot markets.
 
-The **PositionExecutor** uses a configuration object, **PositionExecutorConfig**, to manage an order after it is placed, following the [Triple Barrier Method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html). This configuration sets pre-defined stop loss, take profit, time limit, and trailing stop parameters.
+The **PositionExecutor** uses a configuration object, **PositionExecutorConfig**, to manage an order after it is placed, following the [Triple Barrier Method](#the-triple-barrier-method). This configuration sets pre-defined stop loss, take profit, time limit, and trailing stop parameters.
 
 
 ```python
@@ -30,15 +30,32 @@ Example:
 
 ![triple barrier](triple_barrier.png)
 
-The [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/executors/position_executor/position_executor.py) class implements the [Triple Barrier Method](https://www.mlfinlab.com/en/latest/labeling/tb_meta_labeling.html) popularized in Martin Prado's famous book [Advances in Financial Machine Learning](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086).
+### The Triple Barrier Method
 
-The triple barrier method is a structured approach to position management, where three "barriers" determine the outcome of a trade:
+The triple barrier method is a structured approach to position management. Every
+position is opened with its exit conditions already decided, expressed as three
+"barriers". Whichever one the price reaches first ends the trade:
 
-* **Stop Loss**: Caps the potential loss on a position.
-* **Take Profit**: Secures profits by specifying a target exit price.
-* **Time Limit**: Restricts the duration a trade can remain open, adding a temporal dimension to the exit strategy.
+* **Take profit** — an upper barrier at a target price. Reaching it first closes the position at a profit.
+* **Stop loss** — a lower barrier at a maximum acceptable loss. Reaching it first closes the position at a loss.
+* **Time limit** — a vertical barrier. If neither price barrier is touched within the configured duration, the position is closed anyway.
 
-Additionally, `PositionExecutor` also contains a **Trailing Stop** mechanism, which dynamically adjusts the stop loss level as favorable price movements occur.
+The two price barriers are horizontal lines on a price chart and the time limit
+is a vertical one, which is where the name comes from. The point of the third
+barrier is that a position which is neither winning nor losing still has capital
+and risk committed to it; the time limit forces a decision instead of letting it
+sit open indefinitely.
+
+The method was popularized in *Advances in Financial Machine Learning* by Marcos
+López de Prado (Wiley, 2018, ISBN 978-1-119-48208-6), where it is used to label
+training data for machine-learning models. Hummingbot uses the same structure
+for live execution: the barriers are exit conditions rather than labels.
+
+Hummingbot adds a fourth control on top of the three barriers — a **trailing
+stop**, which moves the stop-loss level up behind a favorable price rather than
+leaving it fixed. It is described [below](#trailing-stop).
+
+The [PositionExecutor](https://github.com/hummingbot/hummingbot/blob/master/hummingbot/strategy_v2/executors/position_executor/position_executor.py) class is the implementation.
 
 
 ### Spot vs Perpetual Behavior

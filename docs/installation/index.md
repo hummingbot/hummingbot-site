@@ -36,6 +36,8 @@ graph TB
 
 ## Recommended Paths
 
+Not sure which fits your use case? See the [Learning Path](../docs/index.md#getting-started) for routes based on experience level and specific goals (running an AI agent, deploying to production, building a connector, etc.).
+
 ### Hummingbot Client
 
 The legacy CLI-based trading client. Best for:

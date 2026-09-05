@@ -7,8 +7,8 @@
 | --------- | ------ | ----------------- |  ------------ | ----- |
 | [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | Supports `MARKET` order type
 | [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | Supports testnet
-| [🕯 Spot Candles Feed](#spot-candles-feed) | ✅ |
-| [🕯 Perp Candles Feed](#perp-candles-feed) | ✅ |
+| 🕯 Spot Candles Feed | ✅ |
+| 🕯 Perp Candles Feed | ✅ |
 
 
 ## ℹ️ Exchange Info

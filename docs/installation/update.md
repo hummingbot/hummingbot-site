@@ -57,6 +57,21 @@ pnpm start --dev --passphrase=PASSPHRASE
 
 ---
 
+## Broker Authentication (Hummingbot API)
+
+!!! danger "This update stops existing bots from reconnecting"
+    The EMQX broker now requires authentication, where it previously accepted
+    anonymous connections. Bot instances created before the change have empty
+    MQTT credentials written into their `conf_client.yml` and **must be
+    redeployed** — restarting them is not enough. Changing a broker password in
+    `.env` also does nothing until `make emqx-auth-reset` recreates the state
+    volume.
+
+    If your broker was reachable from the internet — port `1883` used to be
+    published on `0.0.0.0` — updating is not sufficient on its own.
+
+    Full instructions: **[Broker Security Update](../hummingbot-api/broker-security.md)**
+
 ## Updates with Configuration Changes
 
 Some releases include changes to configuration file schemas. When this happens, existing configuration files are incompatible and must be removed before updating. Check the [release notes](../release-notes/index.md) for your target version to see if configuration changes are required.

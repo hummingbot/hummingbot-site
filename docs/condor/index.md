@@ -37,7 +37,17 @@ Install Condor with a single command:
 curl -fsSL https://raw.githubusercontent.com/hummingbot/deploy/main/setup.sh | bash
 ```
 
-This script clones the repository, installs dependencies, and prompts you for your Telegram Bot Token and User ID to configure the Telegram interface.
+This script clones the repository, installs dependencies, and asks how you want
+to drive Condor:
+
+- **Telegram** (recommended) — it prompts for your Telegram Bot Token and User ID
+- **Local** — no Telegram at all; the web dashboard runs on that machine at
+  `http://localhost:8088` with no login and a loopback-only bind
+
+It then walks you through Tailscale, your AI model, and the Hummingbot API
+connection. See [Condor Quickstart](../installation/condor.md) for the full
+prompt-by-prompt walkthrough, and run `make doctor` afterwards to verify the
+install.
 
 ## Resources
 
