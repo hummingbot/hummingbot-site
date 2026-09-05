@@ -193,6 +193,7 @@ Replaces the former `/rate-oracle` router. Tickers and cross-rates use a shared 
 | `GET` | `/executors/types/available` | List available executor types |
 | `GET` | `/executors/types/{executor_type}/config` | Get config schema for an executor type |
 | `GET` | `/executors/positions/summary` | Summary of held positions across executors |
+| `GET` | `/executors/positions/orphaned` | Terminated executors that may still own an on-chain position |
 | `GET` | `/executors/positions/{connector_name}/{trading_pair}` | Position detail for a connector/pair |
 | `DELETE` | `/executors/positions/{connector_name}/{trading_pair}` | Clear a tracked position |
 
@@ -279,6 +280,7 @@ Gateway communication uses **HTTPS + mTLS**. Set `GATEWAY_URL=https://localhost:
 | --- | --- | --- |
 | `POST` | `/gateway/swap/quote` | Get DEX swap quote |
 | `POST` | `/gateway/swap/execute` | Execute DEX swap |
+| `POST` | `/gateway/swap/execute-quote` | Execute a quote from `/swap/quote` by its `quote_id` |
 | `GET` | `/gateway/swaps/{transaction_hash}/status` | Poll swap transaction status |
 | `POST` | `/gateway/swaps/search` | Search swap history |
 | `GET` | `/gateway/swaps/summary` | Aggregate swap statistics |
@@ -296,7 +298,26 @@ Gateway communication uses **HTTPS + mTLS**. Set `GATEWAY_URL=https://localhost:
 | `POST` | `/gateway/clmm/collect-fees` | Collect fees from a position |
 | `POST` | `/gateway/clmm/positions_owned` | List owned CLMM positions |
 | `GET` | `/gateway/clmm/positions/{position_address}/events` | Get position event history |
+| `POST` | `/gateway/clmm/quote-position` | Quote a candidate position before opening or adding |
+| `POST` | `/gateway/clmm/create-pool` | Create a new (empty) CLMM pool |
+| `GET` | `/gateway/clmm/position-info` | Get a single CLMM position by address |
 | `POST` | `/gateway/clmm/positions/search` | Search CLMM positions |
+
+### Gateway AMM (`/gateway`)
+
+Full-range (constant-product) liquidity, parallel to the CLMM router above.
+
+| Method | Path | Description |
+| --- | --- | --- |
+| `GET` | `/gateway/amm/pool-info` | Pool reserves, price and base fee, by pool address |
+| `GET` | `/gateway/amm/position-info` | A wallet's aggregate liquidity in a pool, plus a per-position breakdown |
+| `POST` | `/gateway/amm/positions-owned` | List a wallet's AMM positions across pools (Meteora DAMM v2 only) |
+| `POST` | `/gateway/amm/quote-liquidity` | Quote a two-sided liquidity deposit |
+| `POST` | `/gateway/amm/add-liquidity` | Add two-sided liquidity to a pool |
+| `POST` | `/gateway/amm/remove-liquidity` | Remove liquidity from a pool |
+| `POST` | `/gateway/amm/create-pool` | Create and seed a new AMM pool |
+| `POST` | `/gateway/amm/events/search` | Search recorded AMM liquidity writes, newest first |
+| `POST` | `/gateway/amm/positions/search` | Search tracked AMM positions, newest first |
 
 ## 🗄️ Archived Bots (`/archived-bots`)
 
