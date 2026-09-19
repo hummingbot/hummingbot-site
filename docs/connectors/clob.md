@@ -39,6 +39,7 @@ Here are the CLOB connectors currently in the codebase. Note that the Foundation
 | [BTC Markets](../exchanges/btc-markets.md)         |  | ✓ |  |  |
 | [Coinbase](../exchanges/coinbase.md)               |  | ✓ |  |  |
 | [Dexalot](../exchanges/dexalot.md)           | | ✓ | ✓ | [Guide](../blog/posts/using-dexalot-with-hummingbot/index.md) |
+| [Kalshi](../exchanges/kalshi/index.md)             |  |  | ✓ |  |
 | [Kraken](../exchanges/kraken/index.md)             |  | ✓ |  |  |
 | [Lambdaplex](../exchanges/lambdaplex.md) | | ✓     | | | 
 | [Lighter](../exchanges/lighter/index.md)                 |  | ✓ | ✓ |  |
