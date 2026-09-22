@@ -339,6 +339,7 @@ nav:
     - HTX: exchanges/htx/index.md
     - Injective: exchanges/injective.md
     - Jupiter & Solana Routers: exchanges/gateway/jupiter.md
+    - Kalshi: exchanges/kalshi/index.md
     - Kraken: exchanges/kraken/index.md
     - Lambdaplex: exchanges/lambdaplex.md
     - Lighter: exchanges/lighter/index.md
@@ -357,6 +358,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.17.0: release-notes/2.17.0.md
     - 2.16.0: release-notes/2.16.0.md
     - 2.15.1: release-notes/2.15.1.md
     - 2.14.0: release-notes/2.14.0.md
