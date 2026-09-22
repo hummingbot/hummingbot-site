@@ -108,7 +108,7 @@ Check the Kalshi UI or [BTC contract specs](https://help.kalshi.com/en/articles/
 
 Default Hummingbot fee schema is the **base volume tier**: **5 bps maker / 12 bps taker**, charged on **USD notional** (not posted margin), on both open and close. Higher volume tiers are cheaper — see [Perps Fees Explained](https://help.kalshi.com/en/articles/16071417-perps-fees-explained).
 
-Funding is separate from fees. Payments settle every **8 hours** (12:00 AM, 8:00 AM, and 4:00 PM ET). The connector polls funding history on that cadence.
+Funding is separate from fees. Payments settle every **8 hours** (12:00 AM, 8:00 AM, and 4:00 PM ET). The connector polls funding payments every 10 minutes, so a payment appears shortly after it settles.
 
 ### Close orders (`reduce_only`)
 
