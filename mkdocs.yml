@@ -54,6 +54,9 @@ theme:
     # - content.tooltips
     # - search.highlight
 
+hooks:
+  - hooks/botcamp_url.py
+
 plugins:
   - search
   - charts
@@ -74,6 +77,7 @@ plugins:
 
 extra:
   homepage: https://hummingbot.org
+  botcamp_url: https://dev.botcamp.xyz
   generator: false
   analytics:
     provider: google
