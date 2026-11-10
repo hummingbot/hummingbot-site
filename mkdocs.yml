@@ -77,7 +77,7 @@ plugins:
 
 extra:
   homepage: https://hummingbot.org
-  botcamp_url: https://dev.botcamp.xyz
+  botcamp_url: https://www.botcamp.xyz
   generator: false
   analytics:
     provider: google
