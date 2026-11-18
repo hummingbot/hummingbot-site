@@ -362,6 +362,7 @@ nav:
   - Releases:
     - Releases: release-notes/index.md
     - Release Process: release-notes/releases.md
+    - 2.18.0: release-notes/2.18.0.md
     - 2.17.0: release-notes/2.17.0.md
     - 2.16.0: release-notes/2.16.0.md
     - 2.15.1: release-notes/2.15.1.md

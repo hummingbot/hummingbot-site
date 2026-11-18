@@ -1,5 +1,9 @@
-!!! tip "Foundation Partner"
-    Bitmart is an [exchange partner](../../about/sponsors.md) of Hummingbot Foundation, so when you use Hummingbot to run bots on Bitmart, a portion of your fees goes to support the Foundation and our mission to democratize algo trading with open source software. To help support us, create an account using our [Bitmart referral link](https://www.bitmart.com/invite/Hummingbot/en) and enter that account's API keys into Hummingbot and run bots! Thanks for your help! 🙏
+!!! warning "BitMart has ceased trading"
+    BitMart announced the [orderly cessation of its operations](https://bitmart.zendesk.com/hc/en-us/articles/53544595916059-Important-Notice-Regarding-the-Orderly-Cessation-of-BitMart-Operations) on July 26, 2026. New registrations, deposits, new orders and API trading were phased out from that date, and **all spot, futures and other trading services stopped on August 26, 2026 at 01:00 UTC**. BitMart plans to end platform operations on January 31, 2027 at 15:59 UTC; withdrawals go through BitMart's own process.
+
+    BitMart's later [restructuring proposal](https://bitmart.zendesk.com/hc/en-us/articles/56571281537051-Announcement-on-BitMart-s-Initial-Indicative-Proposal-and-Roadmap) makes any restart of the business conditional on funding. It is not a confirmation that trading will resume.
+
+    Do not create a BitMart account or deposit funds to run Hummingbot. The `bitmart` and `bitmart_perpetual` connectors cannot trade while the exchange is closed, and the instructions below are kept for historical reference only.
 
 ## 🛠 Connector Info
 
@@ -8,8 +12,8 @@
 
 | Component | Status | Connector Version | V2 Strategies | Notes | 
 | --------- | ------ | ----------------- |  ------------ | ----- |
-| [🔀 Spot Connector](#spot-connector) | ✅ | v2.1 | Yes | |
-| [🔀 Perp Connector](#perp-connector) | ✅ | v2.1 | Yes | |
+| [🔀 Spot Connector](#spot-connector) | ⛔ | v2.1 | Yes | Exchange ceased trading Aug 26, 2026 |
+| [🔀 Perp Connector](#perp-connector) | ⛔ | v2.1 | Yes | Exchange ceased trading Aug 26, 2026 |
 | 🕯 Spot Candles Feed | Not built  | 
 | 🕯 Perp Candles Feed | Not built  | 
 
@@ -20,9 +24,11 @@
 - **CoinGecko**: <https://www.coingecko.com/en/exchanges/bitmart>
 - **API Docs**: <https://www.bitmart.com/api-docs>
 - **Fees**: <https://www.bitmart.com/fee/en>
-- **Referral link:** <https://www.bitmart.com/invite/Hummingbot/en>
 
 ## 🔑 How to Connect
+
+!!! note "Historical"
+    These steps describe how to connect while BitMart was operating. They no longer work now that trading has stopped.
 
 ### Generate API Keys
 
