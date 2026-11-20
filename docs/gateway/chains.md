@@ -94,6 +94,16 @@ maxFee: 0.01
 priorityFee: 0.00001
 ```
 
+### Sending Transactions
+
+Starting with [v2.18.0](../release-notes/2.18.0.md#solana-sends-preflight-and-rebroadcast), Gateway simulates every Solana transaction before sending it and rebroadcasts it every 2 seconds until it confirms or its blockhash expires.
+
+| Response | Meaning | Safe to retry? |
+|----------|---------|----------------|
+| `400` with the program's reason | Preflight refused the transaction. Nothing was sent and no fee was paid. | Yes, after fixing the cause |
+| `429 RATE_LIMITED` | The RPC rate-limited the request before the transaction was broadcast. | Yes |
+| `504 TRANSACTION_TIMEOUT` with a signature | The transaction was broadcast but not confirmed in time. It may still land. | Check the signature first |
+
 ### API Endpoints
 
 All Solana networks share the same API structure:
@@ -101,6 +111,9 @@ All Solana networks share the same API structure:
 - `GET /chains/solana/status` - Chain connection and slot status
 - `GET /chains/solana/tokens` - SPL token information
 - `POST /chains/solana/balances` - Wallet SOL and token balances
+- `GET /chains/solana/transactions` - A wallet's recent activity, classified (mainnet-beta only)
+- `POST /chains/solana/wrap` - Wrap SOL
+- `POST /chains/solana/unwrap` - Unwrap to SOL
 - `POST /chains/solana/poll` - Poll transaction status
 - `POST /chains/solana/estimate-gas` - Estimate transaction fees
 
@@ -123,7 +136,7 @@ Returns chain connection status and current block/slot information.
 {
   "chain": "string",           // Chain name (e.g., "ethereum", "solana")
   "network": "string",         // Network identifier
-  "rpcUrl": "string",          // Current RPC endpoint
+  "rpcUrl": "string",          // Current RPC endpoint, scheme and host only (the path and any API key are removed)
   "currentBlockNumber": 12345, // Current block number or slot
   "nativeCurrency": "string"   // Native token symbol (e.g., "ETH", "SOL")
 }
@@ -171,10 +184,75 @@ Fetches wallet balances for native and specified tokens.
 ```json
 {
   "balances": {
-    "TOKEN_SYMBOL": 1234.56  // Token symbol/address as key, balance as number
-  }
+    "USDC": 1234.56          // Key follows the request (see below), balance as number
+  },
+  "tokens": [
+    {
+      "key": "USDC",         // The name this balance has in "balances"
+      "symbol": "USDC",      // Token symbol where known, otherwise null
+      "address": "string",   // Token address; null for the native currency
+      "balance": 1234.56
+    }
+  ]
 }
 ```
+
+Starting with [v2.18.0](../release-notes/2.18.0.md#balances-keyed-by-what-you-asked-for), each balance is keyed by the name it was requested with:
+
+| Request | Key in `balances` |
+|---------|-------------------|
+| A symbol (`USDC`) | The token list symbol |
+| An address or mint | That address, exactly as sent |
+| `tokens` omitted | Each token's symbol |
+
+Use the `tokens` list to find the symbol and address behind any key.
+
+Native and wrapped tokens are separate balances on every chain. `SOL` and `ETH` return the native balance. `WSOL`, `WETH`, or the wrapped token's address return the wrapped token balance.
+
+### Wallet Activity
+Returns a wallet's recent transactions, each classified by what it did. Added in v2.18.0 for Solana `mainnet-beta`; other networks and chains are not supported.
+
+`GET /chains/solana/transactions`
+
+**Request Schema (query parameters):**
+```json
+{
+  "network": "string (optional)",   // Must be "mainnet-beta"
+  "address": "string",              // Wallet whose activity to read
+  "limit": 25,                      // Signatures to inspect, newest first (1-100)
+  "before": "string (optional)",    // A signature; pass the previous page's cursor to page back
+  "includeOther": false             // Also return transactions that are neither a known DEX call nor a balance change
+}
+```
+
+**Response Schema:**
+```json
+{
+  "network": "string",
+  "address": "string",
+  "transactions": [
+    {
+      "signature": "string",
+      "slot": 12345,
+      "blockTime": 1234567890 | null,
+      "ok": true,                     // false if the transaction failed on-chain
+      "kind": "string",               // close_position | remove_liquidity | collect_fees | add_liquidity |
+                                      // open_position | swap | withdraw | deposit | other
+      "protocol": "string | null",    // e.g. "meteora/clmm", "raydium/amm", "jupiter/router"
+      "actions": [],                  // Every DEX instruction recognised in the transaction
+      "changes": [                    // What the wallet's balances did, fee excluded
+        { "mint": "string", "symbol": "string | null", "decimals": 6, "amount": "string" }
+      ],
+      "feeLamports": 5000 | null
+    }
+  ],
+  "scanned": 25,                      // Signatures inspected
+  "cursor": "string | null"           // Pass as "before" for the next page
+}
+```
+
+!!! note
+    Each request reads one transaction per signature inspected, so a `limit` of 100 makes about 100 RPC calls. Use a dedicated [RPC provider](rpc.md) if you call this route often.
 
 ### Transaction Polling
 Polls the status of a submitted transaction.

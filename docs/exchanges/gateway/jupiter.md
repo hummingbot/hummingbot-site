@@ -57,6 +57,8 @@ restrictIntermediateTokens: true
 apiKey: ''
 ```
 
+Starting with v2.18.0, a rejected `apiKey` (a `401` from Jupiter) is reported as an API key error. It was previously reported as "no route found".
+
 ## Other Solana Routers
 
 Starting with Gateway v2.16.0, three additional Solana router connectors implement the same Router schema as Jupiter:
@@ -71,7 +73,7 @@ Each router has its own configuration file in `/conf/connectors/` (e.g. `titan.y
 
 ### How to Change Routers
 
-The `swapProvider` setting in the Solana network configuration determines which router Gateway uses for the unified `/trading/swap` endpoints. The default is `jupiter/router`.
+The `swapProvider` setting in the Solana network configuration determines which router Gateway uses for the unified `/trading/router` endpoints when a request names no `connector`. The default is `jupiter/router`.
 
 To change it, edit `swapProvider` in `/conf/chains/solana/mainnet-beta.yml` and restart Gateway:
 
@@ -89,8 +91,10 @@ gateway config solana-mainnet-beta update swapProvider titan/router
 ## Router Endpoints
 *Jupiter DEX aggregator for optimal swap routing across Solana*
 
-- `/connectors/jupiter/router/quote-swap`
-- `/connectors/jupiter/router/execute-quote`
-- `/connectors/jupiter/router/execute-swap`
+Since [v2.17.0](../../release-notes/2.17.0.md#unified-trading-route-surface), Gateway serves every connector through the unified `/trading` routes. Pass `connector=jupiter` and `chainNetwork` (for example `solana-mainnet-beta`) with each request.
+
+- `/trading/router/quote-swap`
+- `/trading/router/execute-quote`
+- `/trading/router/execute-swap`
 
 For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

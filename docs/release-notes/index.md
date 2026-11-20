@@ -8,7 +8,7 @@ We generally release a new version of Hummingbot **every month**. See below for 
 | Repository | Description | GitHub Release | DockerHub Release |
 |------------|-------------|----------------|-------------------|
 | [Hummingbot](https://github.com/hummingbot/hummingbot) | Core Client | [`v2.18.0`](https://github.com/hummingbot/hummingbot/releases/tag/v2.18.0) | [`version-2.18.0`](https://hub.docker.com/r/hummingbot/hummingbot/tags?name=version-2.18.0) |
-| [Gateway](https://github.com/hummingbot/gateway) | DEX Middleware | [`v2.17.0`](https://github.com/hummingbot/gateway/releases/tag/v2.17.0) | [`version-2.17.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.17.0) |
+| [Gateway](https://github.com/hummingbot/gateway) | DEX Middleware | [`v2.18.0`](https://github.com/hummingbot/gateway/releases/tag/v2.18.0) | [`version-2.18.0`](https://hub.docker.com/r/hummingbot/gateway/tags?name=version-2.18.0) |
 
 
 ## [2.17.0](2.17.0.md)

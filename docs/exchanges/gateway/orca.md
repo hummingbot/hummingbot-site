@@ -59,6 +59,10 @@ The connector includes automatic WSOL (Wrapped SOL) handling and support for the
 - **Token-2022 position close**: CLMM position closing now uses Token-2022 instructions, enabling full rent recovery when closing LP positions (PR [#600](https://github.com/hummingbot/gateway/pull/600))
 - **On-chain pool pricing**: Pool prices now use live on-chain whirlpool data instead of potentially stale Orca API data, improving accuracy for LP rebalancing decisions (PR [#603](https://github.com/hummingbot/gateway/pull/603))
 
+**v2.18.0 Updates:**
+
+- **Missing TVL is `null`**: `tvlUsdc` and `yieldOverTvl` in `pool-info`, and `tvl` in `fetch-pools`, are `null` when Orca does not report them. They used to be 0, which read as an empty pool
+
 ## Configuration
 
 Configure Orca settings in `/conf/connectors/orca.yml`.
@@ -78,16 +82,18 @@ maximumHops: 4
 
 *Integration to Orca Whirlpools (concentrated liquidity)*
 
-  - `/connectors/orca/clmm/quote-swap`
-  - `/connectors/orca/clmm/execute-swap`
-  - `/connectors/orca/clmm/pool-info`
-  - `/connectors/orca/clmm/position-info`
-  - `/connectors/orca/clmm/positions-owned`
-  - `/connectors/orca/clmm/quote-position`
-  - `/connectors/orca/clmm/open-position`
-  - `/connectors/orca/clmm/close-position`
-  - `/connectors/orca/clmm/add-liquidity`
-  - `/connectors/orca/clmm/remove-liquidity`
-  - `/connectors/orca/clmm/collect-fees`
+Since [v2.17.0](../../release-notes/2.17.0.md#unified-trading-route-surface), Gateway serves every connector through the unified `/trading` routes. Pass `connector=orca` and `chainNetwork` (for example `solana-mainnet-beta`) with each request.
+
+- `/trading/clmm/quote-swap`
+- `/trading/clmm/execute-swap`
+- `/trading/clmm/pool-info`
+- `/trading/clmm/position-info`
+- `/trading/clmm/positions-owned`
+- `/trading/clmm/quote-liquidity`
+- `/trading/clmm/open`
+- `/trading/clmm/close`
+- `/trading/clmm/add`
+- `/trading/clmm/remove`
+- `/trading/clmm/collect-fees`
 
 For more info, run Gateway in development mode and go to [http://localhost:15888](https://www.google.com/search?q=http://localhost:15888) in your browser to see detailed documentation for each endpoint.
