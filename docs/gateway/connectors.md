@@ -21,9 +21,11 @@ Gateway provides standardized connectors for interacting with decentralized exch
 | **[Uniswap](../exchanges/gateway/uniswap.md)** | Ethereum | ✅ | ✅ | ✅ | Support for V2, V3, and Universal Router |
 | **[PancakeSwap](../exchanges/gateway/pancakeswap.md)** | Ethereum/BNB | ✅ | ✅ | ✅ | Support for V2, V3, and Smart Router |
 
-The `swapProvider` setting in each network's configuration determines which router serves the unified `/trading/swap` endpoints. See [How to Change Routers](../exchanges/gateway/jupiter.md#how-to-change-routers) for switching between Solana routers.
+The `swapProvider` setting in each network's configuration determines which router serves the unified `/trading/router` endpoints when no `connector` is given. See [How to Change Routers](../exchanges/gateway/jupiter.md#how-to-change-routers) for switching between Solana routers.
 
 ## Connector Schemas
+
+All connectors are served through the unified routes `/trading/{router,amm,clmm}/*`, with the connector passed as the `connector` parameter.
 
 Gateway implements three standardized schemas that define the API structure for different trading types. Each connector must implement one or more of these schemas to ensure compatibility with Hummingbot.
 
@@ -44,8 +46,8 @@ For traditional Automated Market Maker pools with constant product (x*y=k) formu
 - `pool-info`: Get pool reserves and pricing
 - `position-info`: Get current liquidity position details
 - `quote-liquidity`: Calculate liquidity provision amounts
-- `add-liquidity`: Add liquidity to pool
-- `remove-liquidity`: Remove liquidity from pool
+- `add`: Add liquidity to pool
+- `remove`: Remove liquidity from pool
 
 ### CLMM Schema
 For Concentrated Liquidity Market Maker pools where liquidity providers can specify custom price ranges such as Uniswap V3 and Raydium Concentrated Pools.
@@ -53,12 +55,12 @@ For Concentrated Liquidity Market Maker pools where liquidity providers can spec
 **Key Endpoints:**
 
 - `positions-owned`: List all positions for an address
-- `quote-position`: Calculate position parameters for price range
-- `open-position`: Create new concentrated liquidity position
-- `add-liquidity`: Add liquidity to existing position
-- `remove-liquidity`: Remove liquidity from position
+- `quote-liquidity`: Calculate position parameters for price range
+- `open`: Create new concentrated liquidity position
+- `add`: Add liquidity to existing position
+- `remove`: Remove liquidity from position
 - `collect-fees`: Collect earned fees
-- `close-position`: Close position and withdraw all liquidity
+- `close`: Close position and withdraw all liquidity
 
 ## Building Custom Connectors
 

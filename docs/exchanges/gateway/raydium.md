@@ -39,30 +39,41 @@ Below are the Raydium configuration parameters and their default values:
 slippagePct: 1
 ```
 
+## v2.18.0 Updates
+
+- **On-chain pool data**: AMM and CPMM pool info, quotes, and positions are read from chain instead of the Raydium API. An AMM quote makes 6 to 8 RPC calls, so use a dedicated [RPC provider](../../gateway/rpc.md) for frequent quoting.
+- **Price impact**: AMM `priceImpactPct` was about 100x too high on SELL and wrong on BUY. Both are fixed. CPMM pools still report 0.
+- **Exact liquidity**: CLMM `liquidity` is returned as a decimal string, so large values are no longer rounded.
+- **Add liquidity (AMM v4)**: the side that does not limit the deposit may spend up to `slippagePct` more than the amount you pass.
+
+See the [v2.18.0 release notes](../../release-notes/2.18.0.md#connector-updates_1) for the PRs.
+
 ## AMM Endpoints
 *Integration to Raydium's Standard AMM pools*
 
-- `/connectors/raydium/amm/quote-swap`
-- `/connectors/raydium/amm/execute-swap`
-- `/connectors/raydium/amm/pool-info`
-- `/connectors/raydium/amm/position-info`
-- `/connectors/raydium/amm/quote-liquidity`
-- `/connectors/raydium/amm/add-liquidity`
-- `/connectors/raydium/amm/remove-liquidity`
+Since [v2.17.0](../../release-notes/2.17.0.md#unified-trading-route-surface), Gateway serves every connector through the unified `/trading` routes. Pass `connector=raydium` and `chainNetwork` (for example `solana-mainnet-beta`) with each request.
+
+- `/trading/amm/quote-swap`
+- `/trading/amm/execute-swap`
+- `/trading/amm/pool-info`
+- `/trading/amm/position-info`
+- `/trading/amm/quote-liquidity`
+- `/trading/amm/add`
+- `/trading/amm/remove`
 
 ## CLMM Endpoints
 *Integration to Raydium's Concentrated Liquidity pools*
 
-- `/connectors/raydium/clmm/quote-swap`
-- `/connectors/raydium/clmm/execute-swap`
-- `/connectors/raydium/clmm/pool-info`
-- `/connectors/raydium/clmm/position-info`
-- `/connectors/raydium/clmm/positions-owned`
-- `/connectors/raydium/clmm/quote-position`
-- `/connectors/raydium/clmm/open-position`
-- `/connectors/raydium/clmm/close-position`
-- `/connectors/raydium/clmm/add-liquidity`
-- `/connectors/raydium/clmm/remove-liquidity`
-- `/connectors/raydium/clmm/collect-fees`
+- `/trading/clmm/quote-swap`
+- `/trading/clmm/execute-swap`
+- `/trading/clmm/pool-info`
+- `/trading/clmm/position-info`
+- `/trading/clmm/positions-owned`
+- `/trading/clmm/quote-liquidity`
+- `/trading/clmm/open`
+- `/trading/clmm/close`
+- `/trading/clmm/add`
+- `/trading/clmm/remove`
+- `/trading/clmm/collect-fees`
 
 For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.
