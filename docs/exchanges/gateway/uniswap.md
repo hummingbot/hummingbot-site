@@ -43,37 +43,43 @@ slippagePct: 2
 maximumHops: 4
 ```
 
+## v2.18.0 Updates
+
+- **Close position gas**: closing a CLMM position estimates its gas and adds a margin, instead of using a fixed 400,000 that some positions exceeded. If the contract would reject the close, Gateway answers `400` with the contract's reason. If the node cannot be reached, it answers `503`. In both cases nothing is sent (PR [#709](https://github.com/hummingbot/gateway/pull/709))
+
 ## Router Endpoints
 *Integration to Uniswap's Universal Router for optimal trade execution*
 
-- `/connectors/uniswap/router/quote-swap`
-- `/connectors/uniswap/router/execute-quote`
-- `/connectors/uniswap/router/execute-swap`
+Since [v2.17.0](../../release-notes/2.17.0.md#unified-trading-route-surface), Gateway serves every connector through the unified `/trading` routes. Pass `connector=uniswap` and `chainNetwork` (for example `ethereum-mainnet`) with each request.
+
+- `/trading/router/quote-swap`
+- `/trading/router/execute-quote`
+- `/trading/router/execute-swap`
 
 ## AMM Endpoints
 *Integration to Uniswap V2 classic AMM pools*
 
-- `/connectors/uniswap/amm/quote-swap`
-- `/connectors/uniswap/amm/execute-swap`
-- `/connectors/uniswap/amm/pool-info`
-- `/connectors/uniswap/amm/position-info`
-- `/connectors/uniswap/amm/quote-liquidity`
-- `/connectors/uniswap/amm/add-liquidity`
-- `/connectors/uniswap/amm/remove-liquidity`
+- `/trading/amm/quote-swap`
+- `/trading/amm/execute-swap`
+- `/trading/amm/pool-info`
+- `/trading/amm/position-info`
+- `/trading/amm/quote-liquidity`
+- `/trading/amm/add`
+- `/trading/amm/remove`
 
 ## CLMM Endpoints
 *Integration to Uniswap V3 concentrated liquidity pools*
 
-- `/connectors/uniswap/clmm/quote-swap`
-- `/connectors/uniswap/clmm/execute-swap`
-- `/connectors/uniswap/clmm/pool-info`
-- `/connectors/uniswap/clmm/position-info`
-- `/connectors/uniswap/clmm/positions-owned`
-- `/connectors/uniswap/clmm/quote-position`
-- `/connectors/uniswap/clmm/open-position`
-- `/connectors/uniswap/clmm/close-position`
-- `/connectors/uniswap/clmm/add-liquidity`
-- `/connectors/uniswap/clmm/remove-liquidity`
-- `/connectors/uniswap/clmm/collect-fees`
+- `/trading/clmm/quote-swap`
+- `/trading/clmm/execute-swap`
+- `/trading/clmm/pool-info`
+- `/trading/clmm/position-info`
+- `/trading/clmm/positions-owned`
+- `/trading/clmm/quote-liquidity`
+- `/trading/clmm/open`
+- `/trading/clmm/close`
+- `/trading/clmm/add`
+- `/trading/clmm/remove`
+- `/trading/clmm/collect-fees`
 
 For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

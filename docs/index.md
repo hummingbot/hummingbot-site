@@ -11,15 +11,15 @@ hide:
 
 <div class="stat-grid">
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">$47B+</span>
+    <span class="stat-value">$110B+</span>
     <span class="stat-label">Total Trade Volume</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">111K+</span>
+    <span class="stat-value">132K+</span>
     <span class="stat-label">Hummingbot Instances</span>
   </a>
   <a class="stat-card" href="https://reporting.hummingbot.org" target="_blank">
-    <span class="stat-value">318</span>
+    <span class="stat-value">408</span>
     <span class="stat-label">Connectors</span>
   </a>
 </div>

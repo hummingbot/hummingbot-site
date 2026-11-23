@@ -26,17 +26,19 @@ Gateway service is online.
 Testing network status for 2 chains... 
 
 ethereum (mainnet):
-- RPC URL: https://mainnet.infura.io/v3/<api-key>
+- RPC URL: https://mainnet.infura.io
 - Current Block: 23440952
 - Native Currency: ETH
 - Status: ✓ Connected
 
 solana (mainnet-beta): 
-- RPC URL: https://mainnet.helius-rpc.com/?api-key=<api-key>
+- RPC URL: https://mainnet.helius-rpc.com
 - Current Block: 369194830
 - Native Currency: SOL
 - Status: ✓ Connected
 ```
+
+Starting with [v2.18.0](../release-notes/2.18.0.md), Gateway shows an RPC URL as scheme and host only, in `gateway ping`, the status route, and its logs, so your provider API key is never displayed.
 
 ## Supported Providers
 
@@ -71,7 +73,7 @@ When Helius is the active provider, Gateway automatically uses its WebSocket end
 
 ### Infura
 
-[Infura](https://www.infura.io/), a division of Metamask, is a leading RPC provider for EVM-based networks.
+[Infura](https://www.infura.io/), a division of Metamask, is a leading RPC provider for EVM-based networks. Starting with v2.18.0, the same API key also works for Solana.
 
 **Infura Supported Networks:**
 
@@ -85,6 +87,8 @@ When Helius is the active provider, Gateway automatically uses its WebSocket end
 | ethereum   | celo              | 42220               |
 | ethereum   | polygon           | 137                 |
 | ethereum   | sepolia           | 11155111            |
+| solana     | mainnet-beta      | -                   |
+| solana     | devnet            | -                   |
 
 **Adding Infura API Key:**
 
@@ -94,6 +98,8 @@ When Helius is the active provider, Gateway automatically uses its WebSocket end
 
 3. Run `gateway config ethereum update` and change `rpcProvider` from `url` to `infura`. Alternatively, modify the file `conf/chains/ethereum.yml` and restart Gateway.
 
+4. To use Infura for Solana as well, run `gateway config solana update` and change `rpcProvider` to `infura`. Alternatively, modify the file `conf/chains/solana.yml` and restart Gateway.
+
 **Infura Configuration:**
 
 Set your Infura API key in the centralized `conf/apiKeys.yml` file:
@@ -101,6 +107,8 @@ Set your Infura API key in the centralized `conf/apiKeys.yml` file:
 ```yaml
 infura: 'YOUR_INFURA_API_KEY'
 ```
+
+Infura serves Solana over HTTPS only, so Gateway confirms Solana transactions by polling rather than over a WebSocket.
 
 ### Chainstack
 

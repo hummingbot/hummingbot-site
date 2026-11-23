@@ -50,20 +50,27 @@ slippagePct: 1
 strategyType: 0
 ```
 
+## v2.18.0 Updates
+
+- **Position listing errors**: `positions-owned` reports the RPC error when the read fails, instead of returning an empty list
+- **Wide range cleanup**: when a wide DLMM open fails on its first liquidity chunk, Gateway closes the empty position it created
+
 ## CLMM Endpoints
 *Integration to Meteora's Dynamic Liquidity Market Maker (DLMM)*
 
-- `/connectors/meteora/clmm/quote-swap`
-- `/connectors/meteora/clmm/execute-swap`
-- `/connectors/meteora/clmm/fetch-pools`
-- `/connectors/meteora/clmm/pool-info`
-- `/connectors/meteora/clmm/position-info`
-- `/connectors/meteora/clmm/positions-owned`
-- `/connectors/meteora/clmm/quote-position`
-- `/connectors/meteora/clmm/open-position`
-- `/connectors/meteora/clmm/close-position`
-- `/connectors/meteora/clmm/add-liquidity`
-- `/connectors/meteora/clmm/remove-liquidity`
-- `/connectors/meteora/clmm/collect-fees`
+Since [v2.17.0](../../release-notes/2.17.0.md#unified-trading-route-surface), Gateway serves every connector through the unified `/trading` routes. Pass `connector=meteora` and `chainNetwork` (for example `solana-mainnet-beta`) with each request.
+
+- `/trading/clmm/quote-swap`
+- `/trading/clmm/execute-swap`
+- `/trading/clmm/fetch-pools`
+- `/trading/clmm/pool-info`
+- `/trading/clmm/position-info`
+- `/trading/clmm/positions-owned`
+- `/trading/clmm/quote-liquidity`
+- `/trading/clmm/open`
+- `/trading/clmm/close`
+- `/trading/clmm/add`
+- `/trading/clmm/remove`
+- `/trading/clmm/collect-fees`
 
 For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.

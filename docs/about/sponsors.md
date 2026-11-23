@@ -44,7 +44,6 @@ When you sign up for an account with our partner exchanges using the Hummingbot 
 | Kucoin   | 20%           | [Sign Up](https://www.kucoin.com/r/af/hummingbot) |
 | OKX      | 20%           | [Sign Up](https://www.okx.com/join/1931920269) |
 | HTX      | 20%           | [Sign Up](https://www.htx.com.pk/invite/en-us/1h?invite_code=re4w9223) |
-| Bitmart  | 10%           | [Sign Up](https://www.bitmart.com/invite/Hummingbot/en) |
 | Bitget   | TBD           | [Sign Up](https://www.bitget.com/expressly?channelCode=v9cb&vipCode=26rr&languageType=0) |
 | Backpack | TBD           | [Sign Up](https://backpack.exchange/join/1tvdqfkk) |
 
