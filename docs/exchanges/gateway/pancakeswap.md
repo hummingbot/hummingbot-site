@@ -52,7 +52,12 @@ gateway connect solana
    - `mainnet-beta` for production trading
    - `devnet` for testing
 
-The connector includes automatic WSOL (Wrapped SOL) handling and full support for Token-2022 standard tokens and NFT position tracking.
+The connector includes automatic WSOL (Wrapped SOL) handling and full support for Token-2022 standard tokens and NFT position tracking. On Solana, use `connector=pancakeswap-sol`.
+
+**v2.18.0 Updates:**
+
+- **Withdrawals without a wrapped-SOL account**: removing liquidity, collecting fees, and closing a position no longer fail when the wallet has no wrapped-SOL token account. Gateway creates the token accounts it needs in the same transaction (PR [#745](https://github.com/hummingbot/gateway/pull/745))
+- **Preflight and rebroadcast**: PancakeSwap transactions on Solana go through the same [send path](../../gateway/chains.md#sending-transactions) as every other Solana connector
 
 ## Configuration
 
@@ -71,34 +76,36 @@ maximumHops: 4
 ## Router Endpoints
 *Integration to PancakeSwap's Smart Router for optimal trade execution*
 
-- `/connectors/pancakeswap/router/quote-swap`
-- `/connectors/pancakeswap/router/execute-quote`
-- `/connectors/pancakeswap/router/execute-swap`
+Since [v2.17.0](../../release-notes/2.17.0.md#unified-trading-route-surface), Gateway serves every connector through the unified `/trading` routes. Pass `connector=pancakeswap` and `chainNetwork` (for example `ethereum-mainnet`) with each request.
+
+- `/trading/router/quote-swap`
+- `/trading/router/execute-quote`
+- `/trading/router/execute-swap`
 
 ## AMM Endpoints
 *Integration to PancakeSwap V2 classic AMM pools*
 
-- `/connectors/pancakeswap/amm/quote-swap`
-- `/connectors/pancakeswap/amm/execute-swap`
-- `/connectors/pancakeswap/amm/pool-info`
-- `/connectors/pancakeswap/amm/position-info`
-- `/connectors/pancakeswap/amm/quote-liquidity`
-- `/connectors/pancakeswap/amm/add-liquidity`
-- `/connectors/pancakeswap/amm/remove-liquidity`
+- `/trading/amm/quote-swap`
+- `/trading/amm/execute-swap`
+- `/trading/amm/pool-info`
+- `/trading/amm/position-info`
+- `/trading/amm/quote-liquidity`
+- `/trading/amm/add`
+- `/trading/amm/remove`
 
 ## CLMM Endpoints
 *Integration to PancakeSwap V3 concentrated liquidity pools*
 
-- `/connectors/pancakeswap/clmm/quote-swap`
-- `/connectors/pancakeswap/clmm/execute-swap`
-- `/connectors/pancakeswap/clmm/pool-info`
-- `/connectors/pancakeswap/clmm/position-info`
-- `/connectors/pancakeswap/clmm/positions-owned`
-- `/connectors/pancakeswap/clmm/quote-position`
-- `/connectors/pancakeswap/clmm/open-position`
-- `/connectors/pancakeswap/clmm/close-position`
-- `/connectors/pancakeswap/clmm/add-liquidity`
-- `/connectors/pancakeswap/clmm/remove-liquidity`
-- `/connectors/pancakeswap/clmm/collect-fees`
+- `/trading/clmm/quote-swap`
+- `/trading/clmm/execute-swap`
+- `/trading/clmm/pool-info`
+- `/trading/clmm/position-info`
+- `/trading/clmm/positions-owned`
+- `/trading/clmm/quote-liquidity`
+- `/trading/clmm/open`
+- `/trading/clmm/close`
+- `/trading/clmm/add`
+- `/trading/clmm/remove`
+- `/trading/clmm/collect-fees`
 
 For more info, run Gateway in development mode and go to <http://localhost:15888> in your browser to see detailed documentation for each endpoint.
