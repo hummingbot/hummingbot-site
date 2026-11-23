@@ -352,6 +352,7 @@ nav:
     - Pacifica: exchanges/pacifica/index.md
     - Pancakeswap: exchanges/gateway/pancakeswap.md
     - Raydium: exchanges/gateway/raydium.md
+    - Reya: exchanges/reya/index.md
     - Uniswap: exchanges/gateway/uniswap.md
   - Bounties: 
     - Connector Bounties: bounties/index.md
