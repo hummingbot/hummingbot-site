@@ -3,7 +3,7 @@ We generally release a new version of Hummingbot **every month**. See below for 
 
 ## [2.18.0](2.18.0.md)
 
-*Released November 18, 2026*
+*Released November 20, 2026*
 
 | Repository | Description | GitHub Release | DockerHub Release |
 |------------|-------------|----------------|-------------------|
